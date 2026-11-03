@@ -7,7 +7,7 @@ AccessibilityServer
 
 **繼承：** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+用於螢幕閱讀器支援的伺服器介面。
 
 .. rst-class:: classref-reftable-group
 
@@ -190,7 +190,7 @@ enum **AccessibilityRole**: :ref:`🔗<enum_AccessibilityServer_AccessibilityRol
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_UNKNOWN** = ``0``
 
-Unknown or custom role.
+未知角色或自訂角色。
 
 .. _class_AccessibilityServer_constant_ROLE_DEFAULT_BUTTON:
 
@@ -198,7 +198,7 @@ Unknown or custom role.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_DEFAULT_BUTTON** = ``1``
 
-Default dialog button element.
+預設對話框按鈕元素。
 
 .. _class_AccessibilityServer_constant_ROLE_AUDIO:
 
@@ -206,7 +206,7 @@ Default dialog button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_AUDIO** = ``2``
 
-Audio player element.
+音訊播放器元素。
 
 .. _class_AccessibilityServer_constant_ROLE_VIDEO:
 
@@ -214,7 +214,7 @@ Audio player element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_VIDEO** = ``3``
 
-Video player element.
+影片播放器元素。
 
 .. _class_AccessibilityServer_constant_ROLE_STATIC_TEXT:
 
@@ -222,7 +222,7 @@ Video player element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_STATIC_TEXT** = ``4``
 
-Non-editable text label.
+不可編輯的文字標籤。
 
 .. _class_AccessibilityServer_constant_ROLE_CONTAINER:
 
@@ -230,7 +230,7 @@ Non-editable text label.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CONTAINER** = ``5``
 
-Container element. Elements with this role are used for internal structure and ignored by screen readers.
+容器元素。帶有該角色的元素用於內部結構，會被螢幕閱讀器忽略。
 
 .. _class_AccessibilityServer_constant_ROLE_PANEL:
 
@@ -238,7 +238,7 @@ Container element. Elements with this role are used for internal structure and i
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_PANEL** = ``6``
 
-Panel container element.
+面板容器元素。
 
 .. _class_AccessibilityServer_constant_ROLE_BUTTON:
 
@@ -246,7 +246,7 @@ Panel container element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_BUTTON** = ``7``
 
-Button element.
+按鈕元素。
 
 .. _class_AccessibilityServer_constant_ROLE_LINK:
 
@@ -254,7 +254,7 @@ Button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LINK** = ``8``
 
-Link element.
+連結元素。
 
 .. _class_AccessibilityServer_constant_ROLE_CHECK_BOX:
 
@@ -262,7 +262,7 @@ Link element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CHECK_BOX** = ``9``
 
-Check box element.
+核取方塊元素。
 
 .. _class_AccessibilityServer_constant_ROLE_RADIO_BUTTON:
 
@@ -270,7 +270,7 @@ Check box element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_RADIO_BUTTON** = ``10``
 
-Radio button element.
+選項按鈕元素。
 
 .. _class_AccessibilityServer_constant_ROLE_CHECK_BUTTON:
 
@@ -278,7 +278,7 @@ Radio button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CHECK_BUTTON** = ``11``
 
-Check button element.
+復選按鈕元素。
 
 .. _class_AccessibilityServer_constant_ROLE_SCROLL_BAR:
 
@@ -286,7 +286,7 @@ Check button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SCROLL_BAR** = ``12``
 
-Scroll bar element.
+捲動條元素。
 
 .. _class_AccessibilityServer_constant_ROLE_SCROLL_VIEW:
 
@@ -294,7 +294,7 @@ Scroll bar element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SCROLL_VIEW** = ``13``
 
-Scroll container element.
+捲動容器元素。
 
 .. _class_AccessibilityServer_constant_ROLE_SPLITTER:
 
@@ -302,7 +302,7 @@ Scroll container element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SPLITTER** = ``14``
 
-Container splitter handle element.
+容器拆分器控點元素。
 
 .. _class_AccessibilityServer_constant_ROLE_SLIDER:
 
@@ -310,7 +310,7 @@ Container splitter handle element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SLIDER** = ``15``
 
-Slider element.
+滑塊元素。
 
 .. _class_AccessibilityServer_constant_ROLE_SPIN_BUTTON:
 
@@ -318,7 +318,7 @@ Slider element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SPIN_BUTTON** = ``16``
 
-Spin box element.
+數字輸入框元素。
 
 .. _class_AccessibilityServer_constant_ROLE_PROGRESS_INDICATOR:
 
@@ -326,7 +326,7 @@ Spin box element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_PROGRESS_INDICATOR** = ``17``
 
-Progress indicator element.
+進度指示元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_FIELD:
 
@@ -334,7 +334,7 @@ Progress indicator element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_FIELD** = ``18``
 
-Editable text field element.
+可編輯文字框元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MULTILINE_TEXT_FIELD:
 
@@ -342,7 +342,7 @@ Editable text field element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MULTILINE_TEXT_FIELD** = ``19``
 
-Multiline editable text field element.
+多行可編輯文字框元素。
 
 .. _class_AccessibilityServer_constant_ROLE_COLOR_PICKER:
 
@@ -350,7 +350,7 @@ Multiline editable text field element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_COLOR_PICKER** = ``20``
 
-Color picker element.
+取色器元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TABLE:
 
@@ -358,7 +358,7 @@ Color picker element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TABLE** = ``21``
 
-Table element.
+表格元素。
 
 .. _class_AccessibilityServer_constant_ROLE_CELL:
 
@@ -366,7 +366,7 @@ Table element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CELL** = ``22``
 
-Table/tree cell element.
+表格/樹中的單元格元素。
 
 .. _class_AccessibilityServer_constant_ROLE_ROW:
 
@@ -374,7 +374,7 @@ Table/tree cell element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_ROW** = ``23``
 
-Table/tree row element.
+表格/樹中的行元素。
 
 .. _class_AccessibilityServer_constant_ROLE_ROW_GROUP:
 
@@ -382,7 +382,7 @@ Table/tree row element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_ROW_GROUP** = ``24``
 
-Table/tree row group element.
+表格/樹中的行分組元素。
 
 .. _class_AccessibilityServer_constant_ROLE_ROW_HEADER:
 
@@ -390,7 +390,7 @@ Table/tree row group element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_ROW_HEADER** = ``25``
 
-Table/tree row header element.
+表格/樹中的行頭元素。
 
 .. _class_AccessibilityServer_constant_ROLE_COLUMN_HEADER:
 
@@ -398,7 +398,7 @@ Table/tree row header element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_COLUMN_HEADER** = ``26``
 
-Table/tree column header element.
+表格/樹中的列頭元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TREE:
 
@@ -406,7 +406,7 @@ Table/tree column header element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TREE** = ``27``
 
-Tree view element.
+樹檢視元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TREE_ITEM:
 
@@ -414,7 +414,7 @@ Tree view element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TREE_ITEM** = ``28``
 
-Tree view item element.
+樹檢視項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_LIST:
 
@@ -422,7 +422,7 @@ Tree view item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LIST** = ``29``
 
-List element.
+清單元素。
 
 .. _class_AccessibilityServer_constant_ROLE_LIST_ITEM:
 
@@ -430,7 +430,7 @@ List element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LIST_ITEM** = ``30``
 
-List item element.
+清單項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_LIST_BOX:
 
@@ -438,7 +438,7 @@ List item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LIST_BOX** = ``31``
 
-List view element.
+清單檢視元素。
 
 .. _class_AccessibilityServer_constant_ROLE_LIST_BOX_OPTION:
 
@@ -446,7 +446,7 @@ List view element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LIST_BOX_OPTION** = ``32``
 
-List view item element.
+清單檢視項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TAB_BAR:
 
@@ -454,7 +454,7 @@ List view item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TAB_BAR** = ``33``
 
-Tab bar element.
+分頁欄元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TAB:
 
@@ -462,7 +462,7 @@ Tab bar element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TAB** = ``34``
 
-Tab bar item element.
+分頁欄項目元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TAB_PANEL:
 
@@ -470,7 +470,7 @@ Tab bar item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TAB_PANEL** = ``35``
 
-Tab panel element.
+分頁面板元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MENU_BAR:
 
@@ -478,7 +478,7 @@ Tab panel element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU_BAR** = ``36``
 
-Menu bar element.
+選單欄元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MENU:
 
@@ -486,7 +486,7 @@ Menu bar element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU** = ``37``
 
-Popup menu element.
+彈出選單元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MENU_ITEM:
 
@@ -494,7 +494,7 @@ Popup menu element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU_ITEM** = ``38``
 
-Popup menu item element.
+彈出選單項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MENU_ITEM_CHECK_BOX:
 
@@ -502,7 +502,7 @@ Popup menu item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU_ITEM_CHECK_BOX** = ``39``
 
-Popup menu check button item element.
+彈出選單復選按鈕選單項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_MENU_ITEM_RADIO:
 
@@ -510,7 +510,7 @@ Popup menu check button item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU_ITEM_RADIO** = ``40``
 
-Popup menu radio button item element.
+彈出選單選項按鈕選單項元素。
 
 .. _class_AccessibilityServer_constant_ROLE_IMAGE:
 
@@ -518,7 +518,7 @@ Popup menu radio button item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_IMAGE** = ``41``
 
-Image element.
+影像元素。
 
 .. _class_AccessibilityServer_constant_ROLE_WINDOW:
 
@@ -526,7 +526,7 @@ Image element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_WINDOW** = ``42``
 
-Window element.
+視窗元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TITLE_BAR:
 
@@ -534,7 +534,7 @@ Window element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TITLE_BAR** = ``43``
 
-Embedded window title bar element.
+內嵌視窗標題欄元素。
 
 .. _class_AccessibilityServer_constant_ROLE_DIALOG:
 
@@ -542,7 +542,7 @@ Embedded window title bar element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_DIALOG** = ``44``
 
-Dialog window element.
+對話框視窗元素。
 
 .. _class_AccessibilityServer_constant_ROLE_TOOLTIP:
 
@@ -550,7 +550,7 @@ Dialog window element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TOOLTIP** = ``45``
 
-Tooltip element.
+工具提示元素。
 
 .. _class_AccessibilityServer_constant_ROLE_REGION:
 
@@ -558,7 +558,7 @@ Tooltip element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_REGION** = ``46``
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Region/landmark元素。螢幕閱讀器可以使用地標導航在區域之間進行跳轉。
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_RUN:
 
@@ -566,9 +566,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_RUN** = ``47``
 
-Unifor text run.
+統一文字執行塊。
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+注意：此角色用於內部文字元素，不應手動分配給節點。
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ enum **AccessibilityPopupType**: :ref:`🔗<enum_AccessibilityServer_Accessibili
 
 :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>` **POPUP_MENU** = ``0``
 
-Popup menu.
+彈出選單元素。
 
 .. _class_AccessibilityServer_constant_POPUP_LIST:
 
@@ -594,7 +594,7 @@ Popup menu.
 
 :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>` **POPUP_LIST** = ``1``
 
-Popup list.
+彈出清單。
 
 .. _class_AccessibilityServer_constant_POPUP_TREE:
 
@@ -602,7 +602,7 @@ Popup list.
 
 :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>` **POPUP_TREE** = ``2``
 
-Popup tree view.
+彈出樹檢視。
 
 .. _class_AccessibilityServer_constant_POPUP_DIALOG:
 
@@ -610,7 +610,7 @@ Popup tree view.
 
 :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>` **POPUP_DIALOG** = ``3``
 
-Popup dialog.
+彈出對話框。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ enum **AccessibilityFlags**: :ref:`🔗<enum_AccessibilityServer_AccessibilityFl
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_HIDDEN** = ``0``
 
-Element is hidden for accessibility tools.
+元素對無障礙工具隱藏。
 
 .. _class_AccessibilityServer_constant_FLAG_MULTISELECTABLE:
 
@@ -636,7 +636,7 @@ Element is hidden for accessibility tools.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_MULTISELECTABLE** = ``1``
 
-Element supports multiple item selection.
+元素支援多項選擇。
 
 .. _class_AccessibilityServer_constant_FLAG_REQUIRED:
 
@@ -644,7 +644,7 @@ Element supports multiple item selection.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_REQUIRED** = ``2``
 
-Element require user input.
+元素要求使用者輸入。
 
 .. _class_AccessibilityServer_constant_FLAG_VISITED:
 
@@ -652,7 +652,7 @@ Element require user input.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_VISITED** = ``3``
 
-Element is a visited link.
+元素為已存取連結。
 
 .. _class_AccessibilityServer_constant_FLAG_BUSY:
 
@@ -660,7 +660,7 @@ Element is a visited link.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_BUSY** = ``4``
 
-Element content is not ready (e.g. loading).
+元素內容未就緒（例如正在載入）。
 
 .. _class_AccessibilityServer_constant_FLAG_MODAL:
 
@@ -668,7 +668,7 @@ Element content is not ready (e.g. loading).
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_MODAL** = ``5``
 
-Element is modal window.
+元素為模態視窗。
 
 .. _class_AccessibilityServer_constant_FLAG_TOUCH_PASSTHROUGH:
 
@@ -676,7 +676,7 @@ Element is modal window.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_TOUCH_PASSTHROUGH** = ``6``
 
-Element allows touches to be passed through when a screen reader is in touch exploration mode.
+螢幕閱讀器處於觸摸探索模式時，元素允許觸摸事件穿透。
 
 .. _class_AccessibilityServer_constant_FLAG_READONLY:
 
@@ -684,7 +684,7 @@ Element allows touches to be passed through when a screen reader is in touch exp
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_READONLY** = ``7``
 
-Element is text field with selectable but read-only text.
+元素是文字框，包含可選擇但只讀的文字。
 
 .. _class_AccessibilityServer_constant_FLAG_DISABLED:
 
@@ -692,7 +692,7 @@ Element is text field with selectable but read-only text.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_DISABLED** = ``8``
 
-Element is disabled.
+元素已停用。
 
 .. _class_AccessibilityServer_constant_FLAG_CLIPS_CHILDREN:
 
@@ -700,7 +700,7 @@ Element is disabled.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_CLIPS_CHILDREN** = ``9``
 
-Element clips children.
+元素會裁剪子級。
 
 .. rst-class:: classref-item-separator
 
@@ -718,7 +718,7 @@ enum **AccessibilityAction**: :ref:`🔗<enum_AccessibilityServer_AccessibilityA
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_CLICK** = ``0``
 
-Single click action, callback argument is not set.
+按一下動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_FOCUS:
 
@@ -726,7 +726,7 @@ Single click action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_FOCUS** = ``1``
 
-Focus action, callback argument is not set.
+聚焦動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_BLUR:
 
@@ -734,7 +734,7 @@ Focus action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_BLUR** = ``2``
 
-Blur action, callback argument is not set.
+散焦動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_COLLAPSE:
 
@@ -742,7 +742,7 @@ Blur action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_COLLAPSE** = ``3``
 
-Collapse action, callback argument is not set.
+折疊動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_EXPAND:
 
@@ -750,7 +750,7 @@ Collapse action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_EXPAND** = ``4``
 
-Expand action, callback argument is not set.
+展開動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_DECREMENT:
 
@@ -758,7 +758,7 @@ Expand action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_DECREMENT** = ``5``
 
-Decrement action, callback argument is not set.
+下調動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_INCREMENT:
 
@@ -766,7 +766,7 @@ Decrement action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_INCREMENT** = ``6``
 
-Increment action, callback argument is not set.
+上調動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_HIDE_TOOLTIP:
 
@@ -774,7 +774,7 @@ Increment action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_HIDE_TOOLTIP** = ``7``
 
-Hide tooltip action, callback argument is not set.
+隱藏工具提示動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_SHOW_TOOLTIP:
 
@@ -782,7 +782,7 @@ Hide tooltip action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SHOW_TOOLTIP** = ``8``
 
-Show tooltip action, callback argument is not set.
+顯示工具提示動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_SET_TEXT_SELECTION:
 
@@ -790,15 +790,15 @@ Show tooltip action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SET_TEXT_SELECTION** = ``9``
 
-Set text selection action, callback argument is set to :ref:`Dictionary<class_Dictionary>` with the following keys:
+文字選區動作，回呼參數被設定為 :ref:`Dictionary<class_Dictionary>`\ ，帶有以下鍵：
 
-- ``"start_element"`` accessibility element of the selection start.
+- ``"start_element"`` 選區起點的無障礙元素。
 
-- ``"start_char"`` character offset relative to the accessibility element of the selection start.
+- ``"start_char"`` 相對於選區起點無障礙元素的字元偏移量。
 
-- ``"end_element"`` accessibility element of the selection end.
+- ``"end_element"`` 選區終點的無障礙元素。
 
-- ``"end_char"`` character offset relative to the accessibility element of the selection end.
+- ``"end_char"`` 相對於選區終點無障礙元素的字元偏移量。
 
 .. _class_AccessibilityServer_constant_ACTION_REPLACE_SELECTED_TEXT:
 
@@ -806,7 +806,7 @@ Set text selection action, callback argument is set to :ref:`Dictionary<class_Di
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_REPLACE_SELECTED_TEXT** = ``10``
 
-Replace text action, callback argument is set to :ref:`String<class_String>` with the replacement text.
+替換文字動作，回呼參數被設定為 :ref:`String<class_String>`\ ，表示替換後的文字。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_BACKWARD:
 
@@ -814,7 +814,7 @@ Replace text action, callback argument is set to :ref:`String<class_String>` wit
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_BACKWARD** = ``11``
 
-Scroll backward action, callback argument is not set.
+向後捲動動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_DOWN:
 
@@ -822,7 +822,7 @@ Scroll backward action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_DOWN** = ``12``
 
-Scroll down action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+向下捲動動作，回呼參數被設定為 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`\ 。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_FORWARD:
 
@@ -830,7 +830,7 @@ Scroll down action, callback argument is set to :ref:`AccessibilityScrollUnit<en
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_FORWARD** = ``13``
 
-Scroll forward action, callback argument is not set.
+向前捲動動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_LEFT:
 
@@ -838,7 +838,7 @@ Scroll forward action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_LEFT** = ``14``
 
-Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+向左捲動動作，回呼參數被設定為 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`\ 。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_RIGHT:
 
@@ -846,7 +846,7 @@ Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<en
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_RIGHT** = ``15``
 
-Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+向右捲動動作，回呼參數被設定為 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`\ 。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_UP:
 
@@ -854,7 +854,7 @@ Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<e
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_UP** = ``16``
 
-Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+向上捲動動作，回呼參數被設定為 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`\ 。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_INTO_VIEW:
 
@@ -862,7 +862,7 @@ Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_INTO_VIEW** = ``17``
 
-Scroll into view action, callback argument is set to :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>`.
+捲動至檢視動作，回呼參數被設定為 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>`\ 。
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_TO_POINT:
 
@@ -870,7 +870,7 @@ Scroll into view action, callback argument is set to :ref:`AccessibilityScrollHi
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_TO_POINT** = ``18``
 
-Scroll to point action, callback argument is set to :ref:`Vector2<class_Vector2>` with the relative point coordinates.
+捲動至點動作，回呼參數被設定為 :ref:`Vector2<class_Vector2>`\ ，表示點的相對座標。
 
 .. _class_AccessibilityServer_constant_ACTION_SET_SCROLL_OFFSET:
 
@@ -878,7 +878,7 @@ Scroll to point action, callback argument is set to :ref:`Vector2<class_Vector2>
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SET_SCROLL_OFFSET** = ``19``
 
-Set scroll offset action, callback argument is set to :ref:`Vector2<class_Vector2>` with the scroll offset.
+設定捲動偏移量動作，回呼參數被設定為 :ref:`Vector2<class_Vector2>`\ ，表示捲動偏移量。
 
 .. _class_AccessibilityServer_constant_ACTION_SET_VALUE:
 
@@ -886,7 +886,7 @@ Set scroll offset action, callback argument is set to :ref:`Vector2<class_Vector
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SET_VALUE** = ``20``
 
-Set value action, callback argument is set to :ref:`String<class_String>` or number with the new value.
+設值動作，回呼參數被設定為 :ref:`String<class_String>` 或數字，表示新值。
 
 .. _class_AccessibilityServer_constant_ACTION_SHOW_CONTEXT_MENU:
 
@@ -894,7 +894,7 @@ Set value action, callback argument is set to :ref:`String<class_String>` or num
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SHOW_CONTEXT_MENU** = ``21``
 
-Show context menu action, callback argument is not set.
+顯示情境選單動作，不設定回呼參數。
 
 .. _class_AccessibilityServer_constant_ACTION_CUSTOM:
 
@@ -902,7 +902,7 @@ Show context menu action, callback argument is not set.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_CUSTOM** = ``22``
 
-Custom action, callback argument is set to the integer action ID.
+自訂動作，回呼參數被設定為整數動作 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -920,7 +920,7 @@ enum **AccessibilityLiveMode**: :ref:`🔗<enum_AccessibilityServer_Accessibilit
 
 :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>` **LIVE_OFF** = ``0``
 
-Indicates that updates to the live region should not be presented.
+表示不應展示對即時區域的更新。
 
 .. _class_AccessibilityServer_constant_LIVE_POLITE:
 
@@ -928,7 +928,7 @@ Indicates that updates to the live region should not be presented.
 
 :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>` **LIVE_POLITE** = ``1``
 
-Indicates that updates to the live region should be presented at the next opportunity (for example at the end of speaking the current sentence).
+表示對即時區域的更新應在下次機會時展示（例如講完目前句子後）。
 
 .. _class_AccessibilityServer_constant_LIVE_ASSERTIVE:
 
@@ -936,7 +936,7 @@ Indicates that updates to the live region should be presented at the next opport
 
 :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>` **LIVE_ASSERTIVE** = ``2``
 
-Indicates that updates to the live region have the highest priority and should be presented immediately.
+表示對即時區域的更新具有最高優先級，應立即展示。
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ enum **AccessibilityScrollUnit**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_ITEM** = ``0``
 
-The amount by which to scroll. A single item of a list, line of text.
+要捲動的量度。清單中的單個項目，一行文字。
 
 .. _class_AccessibilityServer_constant_SCROLL_UNIT_PAGE:
 
@@ -962,7 +962,7 @@ The amount by which to scroll. A single item of a list, line of text.
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_PAGE** = ``1``
 
-The amount by which to scroll. A single page.
+要捲動的量度。單頁。
 
 .. rst-class:: classref-item-separator
 
@@ -980,7 +980,7 @@ enum **AccessibilityScrollHint**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_TOP_LEFT** = ``0``
 
-A preferred position for the node scrolled into view. Top-left edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的左上邊緣。
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_BOTTOM_RIGHT:
 
@@ -988,7 +988,7 @@ A preferred position for the node scrolled into view. Top-left edge of the scrol
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_BOTTOM_RIGHT** = ``1``
 
-A preferred position for the node scrolled into view. Bottom-right edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的右下邊緣。
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_TOP_EDGE:
 
@@ -996,7 +996,7 @@ A preferred position for the node scrolled into view. Bottom-right edge of the s
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_TOP_EDGE** = ``2``
 
-A preferred position for the node scrolled into view. Top edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的頂部邊緣。
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_BOTTOM_EDGE:
 
@@ -1004,7 +1004,7 @@ A preferred position for the node scrolled into view. Top edge of the scroll con
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_BOTTOM_EDGE** = ``3``
 
-A preferred position for the node scrolled into view. Bottom edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的底部邊緣。
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_LEFT_EDGE:
 
@@ -1012,7 +1012,7 @@ A preferred position for the node scrolled into view. Bottom edge of the scroll 
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_LEFT_EDGE** = ``4``
 
-A preferred position for the node scrolled into view. Left edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的左部邊緣。
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_RIGHT_EDGE:
 
@@ -1020,7 +1020,7 @@ A preferred position for the node scrolled into view. Left edge of the scroll co
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_RIGHT_EDGE** = ``5``
 
-A preferred position for the node scrolled into view. Right edge of the scroll container.
+節點捲動到檢視的首選位置。捲動容器的右部邊緣。
 
 .. rst-class:: classref-section-separator
 
@@ -1037,9 +1037,9 @@ A preferred position for the node scrolled into view. Right edge of the scroll c
 
 :ref:`RID<class_RID>` **create_element**\ (\ window_id\: :ref:`int<class_int>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`\ ) :ref:`🔗<class_AccessibilityServer_method_create_element>`
 
-Creates a new, empty accessibility element resource.
+新建空的無障礙元素資源。
 
-\ **Note:** An accessibility element is created and freed automatically for each :ref:`Node<class_Node>`. In general, this function should not be called manually.
+\ **注意：**\ 每個 :ref:`Node<class_Node>` 都會自動建立並釋放無障礙元素。一般來說不應手動呼叫該函式。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ Creates a new, empty accessibility element resource.
 
 :ref:`RID<class_RID>` **create_sub_element**\ (\ parent_rid\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`, insert_pos\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_element>`
 
-Creates a new, empty accessibility sub-element resource. Sub-elements can be used to provide accessibility information for objects which are not :ref:`Node<class_Node>`\ s, such as list items, table cells, or menu items. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+新建空的無障礙子元素資源。子元素可用於為非 :ref:`Node<class_Node>` 物件提供無障礙資訊，例如清單項、表格單元格或選單項。子元素在父元素被釋放時會自動釋放，也可以通過 :ref:`free_element()<class_AccessibilityServer_method_free_element>` 方法提前釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+從塑形文字緩衝區新建一個空的無障礙存取子元素。子元素在父元素釋放時會自動釋放，也可以提前使用 :ref:`free_element()<class_AccessibilityServer_method_free_element>` 方法釋放。
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+如果 ``is_last_line`` 為 ``true``\ ，則不會在文字內容末尾新增換行符。對於多行文字欄位的最後一行和單行文字欄位，應設定為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1077,7 +1077,7 @@ If ``is_last_line`` is ``true``, no trailing newline is appended to the text con
 
 :ref:`Variant<class_Variant>` **element_get_meta**\ (\ id\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_AccessibilityServer_method_element_get_meta>`
 
-Returns the metadata of the accessibility element ``id``.
+回傳無障礙元素 ``id`` 的中繼資料。
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Returns the metadata of the accessibility element ``id``.
 
 |void| **element_set_meta**\ (\ id\: :ref:`RID<class_RID>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_AccessibilityServer_method_element_set_meta>`
 
-Sets the metadata of the accessibility element ``id`` to ``meta``.
+將無障礙元素 ``id`` 的中繼資料設定為 ``meta``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Sets the metadata of the accessibility element ``id`` to ``meta``.
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+釋放由 :ref:`create_element()<class_AccessibilityServer_method_create_element>`\ 、\ :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` 或 :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>` 建立的無障礙元素 ``id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1113,7 +1113,7 @@ Frees the accessibility element ``id`` created by :ref:`create_element()<class_A
 
 :ref:`RID<class_RID>` **get_window_root**\ (\ window_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AccessibilityServer_method_get_window_root>`
 
-Returns the main accessibility element of the OS native window.
+回傳作業系統原生視窗的主要無障礙元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1125,7 +1125,7 @@ Returns the main accessibility element of the OS native window.
 
 :ref:`bool<class_bool>` **has_element**\ (\ id\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_AccessibilityServer_method_has_element>`
 
-Returns ``true`` if ``id`` is a valid accessibility element.
+如果 ``id`` 是有效的無障礙元素，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Returns ``true`` if ``id`` is a valid accessibility element.
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) |const| :ref:`🔗<class_AccessibilityServer_method_is_supported>`
 
-Returns ``true`` if screen reader is support by this implementation.
+如果該實作支援螢幕閱讀器，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1149,11 +1149,11 @@ Returns ``true`` if screen reader is support by this implementation.
 
 |void| **set_window_focused**\ (\ window_id\: :ref:`int<class_int>`, focused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_set_window_focused>`
 
-Sets the window focused state for assistive apps.
+設定輔助應用的視窗聚焦狀態。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 該方法在 Linux、macOS 和 Windows 上實作。
 
-\ **Note:** Advanced users only! :ref:`Window<class_Window>` objects call this method automatically.
+\ **注意：**\ 僅限進階使用者！\ :ref:`Window<class_Window>` 物件會自動呼叫此方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1165,11 +1165,11 @@ Sets the window focused state for assistive apps.
 
 |void| **set_window_rect**\ (\ window_id\: :ref:`int<class_int>`, rect_out\: :ref:`Rect2<class_Rect2>`, rect_in\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_AccessibilityServer_method_set_window_rect>`
 
-Sets window outer (with decorations) and inner (without decorations) bounds for assistive apps.
+設定輔助應用的視窗外部邊界（帶裝飾）和內部邊界（不帶裝飾）。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 該方法在 Linux、macOS 和 Windows 上實作。
 
-\ **Note:** Advanced users only! :ref:`Window<class_Window>` objects call this method automatically.
+\ **注意：**\ 僅限進階使用者！\ :ref:`Window<class_Window>` 物件會自動呼叫此方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1181,7 @@ Sets window outer (with decorations) and inner (without decorations) bounds for 
 
 |void| **update_add_action**\ (\ id\: :ref:`RID<class_RID>`, action\: :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_action>`
 
-Adds a callback for the accessibility action (action which can be performed by using a special screen reader command or buttons on the Braille display), and marks this action as supported. The action callback receives one :ref:`Variant<class_Variant>` argument, which value depends on action type.
+新增無障礙動作的回呼（可以通過使用特殊的螢幕閱讀器命令或盲文顯示器上的按鈕執行的動作），並將該動作標記為支援。動作回呼接收一個 :ref:`Variant<class_Variant>` 參數，取值由動作型別決定。
 
 .. rst-class:: classref-item-separator
 
@@ -1193,9 +1193,9 @@ Adds a callback for the accessibility action (action which can be performed by u
 
 |void| **update_add_child**\ (\ id\: :ref:`RID<class_RID>`, child_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_child>`
 
-Adds a child accessibility element.
+新增子級無障礙元素。
 
-\ **Note:** :ref:`Node<class_Node>` children and sub-elements are added to the child list automatically.
+\ **注意：**\ :ref:`Node<class_Node>` 子節點和子元素會自動新增至子級清單。
 
 .. rst-class:: classref-item-separator
 
@@ -1207,7 +1207,7 @@ Adds a child accessibility element.
 
 |void| **update_add_custom_action**\ (\ id\: :ref:`RID<class_RID>`, action_id\: :ref:`int<class_int>`, action_description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_custom_action>`
 
-Adds support for a custom accessibility action. ``action_id`` is passed as an argument to the callback of :ref:`ACTION_CUSTOM<class_AccessibilityServer_constant_ACTION_CUSTOM>` action.
+新增對自訂無障礙動作的支援。\ ``action_id`` 會作為參數傳遞給 :ref:`ACTION_CUSTOM<class_AccessibilityServer_constant_ACTION_CUSTOM>` 動作的回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -1219,7 +1219,7 @@ Adds support for a custom accessibility action. ``action_id`` is passed as an ar
 
 |void| **update_add_related_controls**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_controls>`
 
-Adds an element that is controlled by this element.
+新增由該元素控制的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1231,7 +1231,7 @@ Adds an element that is controlled by this element.
 
 |void| **update_add_related_described_by**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_described_by>`
 
-Adds an element that describes this element.
+新增描述該元素的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1243,7 +1243,7 @@ Adds an element that describes this element.
 
 |void| **update_add_related_details**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_details>`
 
-Adds an element that details this element.
+新增補充該元素的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1255,7 +1255,7 @@ Adds an element that details this element.
 
 |void| **update_add_related_flow_to**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_flow_to>`
 
-Adds an element that this element flow into.
+新增該元素流入的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ Adds an element that this element flow into.
 
 |void| **update_add_related_labeled_by**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_labeled_by>`
 
-Adds an element that labels this element.
+新增作為該元素標籤的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1279,9 +1279,9 @@ Adds an element that labels this element.
 
 |void| **update_add_related_radio_group**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_radio_group>`
 
-Adds an element that is part of the same radio group.
+新增同一單選組中的元素。
 
-\ **Note:** This method should be called on each element of the group, using all other elements as ``related_id``.
+\ **注意：**\ 單選組中的每個元素都應該呼叫該方法，使用其他元素作為 ``related_id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1293,7 +1293,7 @@ Adds an element that is part of the same radio group.
 
 |void| **update_set_active_descendant**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_active_descendant>`
 
-Adds an element that is an active descendant of this element.
+新增該元素的活動派生元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1305,7 +1305,7 @@ Adds an element that is an active descendant of this element.
 
 |void| **update_set_background_color**\ (\ id\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_background_color>`
 
-Sets element background color.
+設定元素的背景色。
 
 .. rst-class:: classref-item-separator
 
@@ -1317,7 +1317,7 @@ Sets element background color.
 
 |void| **update_set_bounds**\ (\ id\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_bounds>`
 
-Sets element bounding box, relative to the node position.
+設定元素的邊界框，相對於節點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Sets element bounding box, relative to the node position.
 
 |void| **update_set_braille_label**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_label>`
 
-Sets element accessibility label for Braille display.
+為盲文顯示設定元素的無障礙標籤。
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ Sets element accessibility label for Braille display.
 
 |void| **update_set_braille_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_role_description>`
 
-Sets element accessibility role description for Braille display.
+為盲文顯示器設定元素的無障礙角色描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1353,7 +1353,7 @@ Sets element accessibility role description for Braille display.
 
 |void| **update_set_checked**\ (\ id\: :ref:`RID<class_RID>`, checekd\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_checked>`
 
-Sets element checked state.
+設定元素的復選狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ Sets element checked state.
 
 |void| **update_set_classname**\ (\ id\: :ref:`RID<class_RID>`, classname\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_classname>`
 
-Sets element class name.
+設定元素的類別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1377,7 +1377,7 @@ Sets element class name.
 
 |void| **update_set_color_value**\ (\ id\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_color_value>`
 
-Sets element color value.
+設定元素的顏色值。
 
 .. rst-class:: classref-item-separator
 
@@ -1389,7 +1389,7 @@ Sets element color value.
 
 |void| **update_set_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_description>`
 
-Sets element accessibility description.
+設定元素的無障礙描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1401,7 +1401,7 @@ Sets element accessibility description.
 
 |void| **update_set_error_message**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_error_message>`
 
-Sets an element which contains an error message for this element.
+設定包含該元素錯誤訊息的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ Sets an element which contains an error message for this element.
 
 |void| **update_set_extra_info**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_extra_info>`
 
-Sets element accessibility extra information added to the element name.
+設定為元素名新增的元素無障礙額外資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -1425,7 +1425,7 @@ Sets element accessibility extra information added to the element name.
 
 |void| **update_set_flag**\ (\ id\: :ref:`RID<class_RID>`, flag\: :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_flag>`
 
-Sets element flag.
+設定元素的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -1437,7 +1437,7 @@ Sets element flag.
 
 |void| **update_set_focus**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_focus>`
 
-Sets currently focused element.
+設定目前聚焦的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1449,7 +1449,7 @@ Sets currently focused element.
 
 |void| **update_set_foreground_color**\ (\ id\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_foreground_color>`
 
-Sets element foreground color.
+設定元素的前景色。
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ Sets element foreground color.
 
 |void| **update_set_in_page_link_target**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_in_page_link_target>`
 
-Sets target element for the link.
+設定連結的目標元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Sets target element for the link.
 
 |void| **update_set_language**\ (\ id\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_language>`
 
-Sets element text language.
+設定元素的文字語言。
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Sets element text language.
 
 |void| **update_set_list_item_count**\ (\ id\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_count>`
 
-Sets number of items in the list.
+設定清單中的項目數。
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Sets number of items in the list.
 
 |void| **update_set_list_item_expanded**\ (\ id\: :ref:`RID<class_RID>`, expanded\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_expanded>`
 
-Sets list/tree item expanded status.
+設定清單項/樹項目的展開狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1509,7 +1509,7 @@ Sets list/tree item expanded status.
 
 |void| **update_set_list_item_index**\ (\ id\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_index>`
 
-Sets the position of the element in the list.
+設定元素在清單中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1521,7 +1521,7 @@ Sets the position of the element in the list.
 
 |void| **update_set_list_item_level**\ (\ id\: :ref:`RID<class_RID>`, level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_level>`
 
-Sets the hierarchical level of the element in the list.
+設定元素在清單中的層級。
 
 .. rst-class:: classref-item-separator
 
@@ -1533,7 +1533,7 @@ Sets the hierarchical level of the element in the list.
 
 |void| **update_set_list_item_selected**\ (\ id\: :ref:`RID<class_RID>`, selected\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_selected>`
 
-Sets list/tree item selected status.
+設定清單項/樹項目的選中狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1545,7 +1545,7 @@ Sets list/tree item selected status.
 
 |void| **update_set_list_orientation**\ (\ id\: :ref:`RID<class_RID>`, vertical\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_orientation>`
 
-Sets the orientation of the list elements.
+設定清單元素的朝向。
 
 .. rst-class:: classref-item-separator
 
@@ -1557,7 +1557,7 @@ Sets the orientation of the list elements.
 
 |void| **update_set_live**\ (\ id\: :ref:`RID<class_RID>`, live\: :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_live>`
 
-Sets the priority of the live region updates.
+設定即時區域更新的優先級。
 
 .. rst-class:: classref-item-separator
 
@@ -1569,7 +1569,7 @@ Sets the priority of the live region updates.
 
 |void| **update_set_member_of**\ (\ id\: :ref:`RID<class_RID>`, group_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_member_of>`
 
-Sets the element to be a member of the group.
+將元素設定為分組的成員。
 
 .. rst-class:: classref-item-separator
 
@@ -1581,7 +1581,7 @@ Sets the element to be a member of the group.
 
 |void| **update_set_name**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_name>`
 
-Sets element accessibility name.
+設定元素的無障礙名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1593,7 +1593,7 @@ Sets element accessibility name.
 
 |void| **update_set_next_on_line**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_next_on_line>`
 
-Sets next element on the line.
+設定位於同一行的下一個元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ Sets next element on the line.
 
 |void| **update_set_num_jump**\ (\ id\: :ref:`RID<class_RID>`, jump\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_num_jump>`
 
-Sets numeric value jump.
+設定數值的跳變。
 
 .. rst-class:: classref-item-separator
 
@@ -1617,7 +1617,7 @@ Sets numeric value jump.
 
 |void| **update_set_num_range**\ (\ id\: :ref:`RID<class_RID>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_num_range>`
 
-Sets numeric value range.
+設定數值的範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,7 +1629,7 @@ Sets numeric value range.
 
 |void| **update_set_num_step**\ (\ id\: :ref:`RID<class_RID>`, step\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_num_step>`
 
-Sets numeric value step.
+設定數值的步長。
 
 .. rst-class:: classref-item-separator
 
@@ -1641,7 +1641,7 @@ Sets numeric value step.
 
 |void| **update_set_num_value**\ (\ id\: :ref:`RID<class_RID>`, position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_num_value>`
 
-Sets numeric value.
+設定數值。
 
 .. rst-class:: classref-item-separator
 
@@ -1653,7 +1653,7 @@ Sets numeric value.
 
 |void| **update_set_placeholder**\ (\ id\: :ref:`RID<class_RID>`, placeholder\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_placeholder>`
 
-Sets placeholder text.
+設定佔位文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1665,7 +1665,7 @@ Sets placeholder text.
 
 |void| **update_set_popup_type**\ (\ id\: :ref:`RID<class_RID>`, popup\: :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_popup_type>`
 
-Sets popup type for popup buttons.
+設定彈出按鈕的彈出型別。
 
 .. rst-class:: classref-item-separator
 
@@ -1677,7 +1677,7 @@ Sets popup type for popup buttons.
 
 |void| **update_set_previous_on_line**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_previous_on_line>`
 
-Sets previous element on the line.
+設定位於同一行的上一個元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1689,7 +1689,7 @@ Sets previous element on the line.
 
 |void| **update_set_role**\ (\ id\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_role>`
 
-Sets element accessibility role.
+設定元素的無障礙角色。
 
 .. rst-class:: classref-item-separator
 
@@ -1701,7 +1701,7 @@ Sets element accessibility role.
 
 |void| **update_set_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_role_description>`
 
-Sets element accessibility role description text.
+設定元素的無障礙角色描述文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1713,7 +1713,7 @@ Sets element accessibility role description text.
 
 |void| **update_set_scroll_x**\ (\ id\: :ref:`RID<class_RID>`, position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_scroll_x>`
 
-Sets scroll bar x position.
+設定捲動條 X 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1725,7 +1725,7 @@ Sets scroll bar x position.
 
 |void| **update_set_scroll_x_range**\ (\ id\: :ref:`RID<class_RID>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_scroll_x_range>`
 
-Sets scroll bar x range.
+設定捲動條 X 範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -1737,7 +1737,7 @@ Sets scroll bar x range.
 
 |void| **update_set_scroll_y**\ (\ id\: :ref:`RID<class_RID>`, position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_scroll_y>`
 
-Sets scroll bar y position.
+設定捲動條 Y 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1749,7 +1749,7 @@ Sets scroll bar y position.
 
 |void| **update_set_scroll_y_range**\ (\ id\: :ref:`RID<class_RID>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_scroll_y_range>`
 
-Sets scroll bar y range.
+設定捲動條 Y 範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -1761,7 +1761,7 @@ Sets scroll bar y range.
 
 |void| **update_set_shortcut**\ (\ id\: :ref:`RID<class_RID>`, shortcut\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_shortcut>`
 
-Sets the list of keyboard shortcuts used by element.
+設定元素使用的鍵盤快捷鍵清單。
 
 .. rst-class:: classref-item-separator
 
@@ -1773,7 +1773,7 @@ Sets the list of keyboard shortcuts used by element.
 
 |void| **update_set_state_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_state_description>`
 
-Sets human-readable description of the current checked state.
+設定目前復選狀態的人類可讀描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1785,7 +1785,7 @@ Sets human-readable description of the current checked state.
 
 |void| **update_set_table_cell_position**\ (\ id\: :ref:`RID<class_RID>`, row_index\: :ref:`int<class_int>`, column_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_cell_position>`
 
-Sets cell position in the table.
+設定單元格在表格中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1797,7 +1797,7 @@ Sets cell position in the table.
 
 |void| **update_set_table_cell_span**\ (\ id\: :ref:`RID<class_RID>`, row_span\: :ref:`int<class_int>`, column_span\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_cell_span>`
 
-Sets cell row/column span.
+設定單元格的跨行/跨列。
 
 .. rst-class:: classref-item-separator
 
@@ -1809,7 +1809,7 @@ Sets cell row/column span.
 
 |void| **update_set_table_column_count**\ (\ id\: :ref:`RID<class_RID>`, count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_column_count>`
 
-Sets number of columns in the table.
+設定表格中的列數。
 
 .. rst-class:: classref-item-separator
 
@@ -1821,7 +1821,7 @@ Sets number of columns in the table.
 
 |void| **update_set_table_column_index**\ (\ id\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_column_index>`
 
-Sets position of the column.
+設定列的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1833,7 +1833,7 @@ Sets position of the column.
 
 |void| **update_set_table_row_count**\ (\ id\: :ref:`RID<class_RID>`, count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_row_count>`
 
-Sets number of rows in the table.
+設定表格中的行數。
 
 .. rst-class:: classref-item-separator
 
@@ -1845,7 +1845,7 @@ Sets number of rows in the table.
 
 |void| **update_set_table_row_index**\ (\ id\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_table_row_index>`
 
-Sets position of the row in the table.
+設定行在表格中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1857,7 +1857,7 @@ Sets position of the row in the table.
 
 |void| **update_set_text_align**\ (\ id\: :ref:`RID<class_RID>`, align\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_align>`
 
-Sets element text alignment.
+設定元素的文字對齊。
 
 .. rst-class:: classref-item-separator
 
@@ -1869,7 +1869,7 @@ Sets element text alignment.
 
 |void| **update_set_text_decorations**\ (\ id\: :ref:`RID<class_RID>`, underline\: :ref:`bool<class_bool>`, strikethrough\: :ref:`bool<class_bool>`, overline\: :ref:`bool<class_bool>`, color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 1)\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_decorations>`
 
-Sets text underline/overline/strikethrough.
+設定文字的底線、上划線、刪除線。
 
 .. rst-class:: classref-item-separator
 
@@ -1881,7 +1881,7 @@ Sets text underline/overline/strikethrough.
 
 |void| **update_set_text_orientation**\ (\ id\: :ref:`RID<class_RID>`, vertical\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_orientation>`
 
-Sets text orientation.
+設定文字朝向。
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Sets text orientation.
 
 |void| **update_set_text_selection**\ (\ id\: :ref:`RID<class_RID>`, text_start_id\: :ref:`RID<class_RID>`, start_char\: :ref:`int<class_int>`, text_end_id\: :ref:`RID<class_RID>`, end_char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_selection>`
 
-Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` should be elements created by :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Character offsets are relative to the corresponding element.
+設定文字欄位中的文字選區。\ ``text_start_id`` 和 ``text_end_id`` 應當是由 :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>` 建立的元素。字元偏移量是相對於相應元素的。
 
 .. rst-class:: classref-item-separator
 
@@ -1905,7 +1905,7 @@ Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` sho
 
 |void| **update_set_tooltip**\ (\ id\: :ref:`RID<class_RID>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_tooltip>`
 
-Sets tooltip text.
+設定工具提示文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1917,7 +1917,7 @@ Sets tooltip text.
 
 |void| **update_set_transform**\ (\ id\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_transform>`
 
-Sets element 2D transform.
+設定元素的 2D 變換。
 
 .. rst-class:: classref-item-separator
 
@@ -1929,7 +1929,7 @@ Sets element 2D transform.
 
 |void| **update_set_url**\ (\ id\: :ref:`RID<class_RID>`, url\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_url>`
 
-Sets link URL.
+設定連結 URL。
 
 .. rst-class:: classref-item-separator
 
@@ -1941,7 +1941,7 @@ Sets link URL.
 
 |void| **update_set_value**\ (\ id\: :ref:`RID<class_RID>`, value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_value>`
 
-Sets element text value.
+設定元素文字值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

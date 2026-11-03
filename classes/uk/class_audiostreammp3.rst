@@ -138,16 +138,19 @@ AudioStreamMP3
 
  Ви можете завантажити файл, не імпортуючи його заздалегідь, використовуючи наведений нижче фрагмент коду. Майте на увазі, що цей фрагмент завантажує весь файл у пам’ять і може бути не ідеальним для великих файлів (сотні мегабайт або більше).
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     func load_mp3(шлях):
          var file = FileAccess.open(path, FileAccess.READ)
          var sound = AudioStreamMP3.new()
          sound.data = file.get_buffer(file.get_length())
          return sound
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     public AudioStreamMP3 LoadMP3(string path)
      {
          using var file = FileAccess.Open(path, FileAccess.ModeFlags.Read);
@@ -155,7 +158,8 @@ AudioStreamMP3
          sound.Data = file.GetBuffer(file.GetLength());
          return sound;
      }
-    [/csharp][/codeblocks]
+
+
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 

@@ -12,54 +12,54 @@ int
 說明
 ----
 
-Signed 64-bit integer type. This means that it can take values from ``-2^63`` to ``2^63 - 1``, i.e. from ``-9223372036854775808`` to ``9223372036854775807``. When it exceeds these bounds, it will wrap around.
+帶符號 64 位元整數型別。這意味著它能夠接受從 ``-2^63`` 到 ``2^63 - 1`` 的值，即從 ``-9223372036854775808`` 到 ``9223372036854775807``\ 。超出這個範圍後，值會繞回到另一端。
 
-\ **int**\ s can be automatically converted to :ref:`float<class_float>`\ s when necessary, for example when passing them as arguments in functions. The :ref:`float<class_float>` will be as close to the original integer as possible.
+\ **int** 可以在需要時自動轉換為 :ref:`float<class_float>`\ ，例如在作為函式的參數傳遞的時候。\ :ref:`float<class_float>` 會盡可能與原始整數接近。
 
-Likewise, :ref:`float<class_float>`\ s can be automatically converted into **int**\ s. This will truncate the :ref:`float<class_float>`, discarding anything after the floating-point.
+類似地，\ :ref:`float<class_float>` 可以自動轉換為 **int**\ 。這樣會截斷該 :ref:`float<class_float>`\ ，丟棄小數點之後的部分。
 
-\ **Note:** In a boolean context, an **int** will evaluate to ``false`` if it equals ``0``, and to ``true`` otherwise.
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var x: int = 1 # x is 1
-    x = 4.2 # x is 4, because 4.2 gets truncated
-    var max_int = 9223372036854775807 # Biggest value an int can store
-    max_int += 1 # max_int is -9223372036854775808, because it wrapped around
-
- .. code-tab:: csharp
-
-    int x = 1; // x is 1
-    x = (int)4.2; // x is 4, because 4.2 gets truncated
-    // We use long below, because GDScript's int is 64-bit while C#'s int is 32-bit.
-    long maxLong = 9223372036854775807; // Biggest value a long can store
-    maxLong++; // maxLong is now -9223372036854775808, because it wrapped around.
-
-    // Alternatively with C#'s 32-bit int type, which has a smaller maximum value.
-    int maxInt = 2147483647; // Biggest value an int can store
-    maxInt++; // maxInt is now -2147483648, because it wrapped around
-
-
-
-You can use the ``0b`` literal for binary representation, the ``0x`` literal for hexadecimal representation, and the ``_`` symbol to separate long numbers and improve readability.
+\ **注意：**\ 布林環境中會將等於 ``0`` 的 **int** 評估為 ``false``\ ，其他值則為 ``true``\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var x = 0b1001 # x is 9
-    var y = 0xF5 # y is 245
-    var z = 10_000_000 # z is 10000000
+    var x: int = 1 # x 為 1
+    x = 4.2 # x 為 4，因為 4.2 發生了截斷
+    var max_int = 9223372036854775807 # int 所能儲存的最大值
+    max_int += 1 # max_int 現在是 -9223372036854775808，因為它繞到了另一端
 
  .. code-tab:: csharp
 
-    int x = 0b1001; // x is 9
-    int y = 0xF5; // y is 245
-    int z = 10_000_000; // z is 10000000
+    int x = 1; // x 為 1
+    x = (int)4.2; // x 為 4，因為 4.2 發生了截斷
+    // 下面使用 long，因為 GDScript 的 int 為 64 位元，而 C# 的 int 為 32 位元。
+    long maxLong = 9223372036854775807; // long 所能儲存的最大值
+    maxLong++; // maxLong 現在是 -9223372036854775808，因為它繞到了另一端。
+
+    // 也可以使用 C# 的 32 位元 int 型別，最大值較小。
+    int maxInt = 2147483647; // int 所能儲存的最大值
+    maxInt++; // maxInt 現在是 -2147483648，因為它繞到了另一端。
+
+
+
+你可以使用 ``0b`` 字面量書寫二進位值，使用 ``0x`` 字面量書寫十六進位值，使用 ``_`` 符號分隔較長的數字，提升可讀性。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var x = 0b1001 # x 為 9
+    var y = 0xF5 # y 為 245
+    var z = 10_000_000 # z 為 10000000
+
+ .. code-tab:: csharp
+
+    int x = 0b1001; // x 為 9
+    int y = 0xF5; // y 為 245
+    int z = 10_000_000; // z 為 10000000
 
 
 
@@ -296,7 +296,7 @@ You can use the ``0b`` literal for binary representation, the ``0x`` literal for
 ::
 
     var flags = 0b101
-    # 檢查是否啟用了第一或第二個比特位。
+    # 檢查是否啟用了第一或第二個位元位。
     if flags & 0b011:
         do_stuff() # 會執行這一行。
 
@@ -322,7 +322,7 @@ You can use the ``0b`` literal for binary representation, the ``0x`` literal for
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_int_operator_mul_Quaternion>`
 
-將 :ref:`Quaternion<class_Quaternion>` 的每個分量乘以該 **int**\ 。此操作本身沒有意義，但可以用作更大表達式的一部分。
+將 :ref:`Quaternion<class_Quaternion>` 的每個分量乘以該 **int**\ 。此操作本身沒有意義，但可以用作更大運算式的一部分。
 
 .. rst-class:: classref-item-separator
 

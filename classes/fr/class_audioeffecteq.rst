@@ -18,9 +18,9 @@ Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6
 Description
 -----------
 
-An "equalizer" gives you control over the gain of frequencies in the entire spectrum, by allowing their adjustment through bands. A band is a point in the frequency spectrum, and each band means a division of the spectrum that can be adjusted.
+Un égalisateur vous donne contrôle sur le gain des fréquences dans tout le spectre, en permettant leur ajustement à travers des bandes. Une bande est un point dans le spectre de fréquence, et chaque bande représente une division du spectre qui peut être ajusté.
 
-Use equalizers to compensate for existing deficiencies in the audio, make room for other elements, or remove undesirable frequencies. AudioEffectEQs are useful on the Master bus to balance the entire mix or give it more character. They are also useful when a game is run on a mobile device, to adjust the mix to that kind of speakers (it can be disabled when headphones are plugged in).
+Utilisez-le pour compenser les défauts existantes dans l'audio, faire de la place à d'autres éléments, ou supprimer des fréquences indésirables. Les AudioEffectEQs sont utiles sur le bus Maître pour maîtriser complètement un mix et lui donner plus de caractère. Ils sont également utiles quand un jeu est exécuté sur un appareil mobile, pour ajuster le mix à ce type de haut-parleurs (il peut être désactivé lorsque des écouteurs sont branchés).
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

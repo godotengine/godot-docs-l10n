@@ -272,7 +272,7 @@ Añade un vértice al array de índices si se utilizan vértices indexados. No e
 
 |void| **add_triangle_fan**\ (\ vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), colors\: :ref:`PackedColorArray<class_PackedColorArray>` = PackedColorArray(), uv2s\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), normals\: :ref:`PackedVector3Array<class_PackedVector3Array>` = PackedVector3Array(), tangents\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] = []\ ) :ref:`🔗<class_SurfaceTool_method_add_triangle_fan>`
 
-Inserta un triangulo fan hecho de un array de datos en la :ref:`Mesh<class_Mesh>` que se está construyendo.
+Inserta un abanico de triángulos hecho de un array de datos en la :ref:`Mesh<class_Mesh>` que se está construyendo.
 
 Requiere que el tipo primitivo se establezca en :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
 

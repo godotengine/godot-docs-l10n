@@ -490,7 +490,7 @@ Restituisce ``true`` se l'oggetto del chiamabile esiste e ha un nome di metodo v
 
 |void| **rpc**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_rpc>`
 
-Eseguisce una RPC (Chiamata di procedura remota) su tutti i peer connessi. Questo è utilizzato per il multiplayer e normalmente non è disponibile, a meno che la funzione richiamata non sia stata contrassegnata come *RPC* (usando :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` o :ref:`Node.rpc_config()<class_Node_method_rpc_config>`). Chiamare questo metodo su funzioni non supportate genererà un errore. Vedi :ref:`Node.rpc()<class_Node_method_rpc>`.
+Esegue una RPC (Chiamata di procedura remota) su tutti i peer connessi. Questo è utilizzato per il multiplayer e normalmente non è disponibile, a meno che la funzione richiamata non sia stata contrassegnata come *RPC* (usando :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` o :ref:`Node.rpc_config()<class_Node_method_rpc_config>`). Chiamare questo metodo su funzioni non supportate genererà un errore. Vedi :ref:`Node.rpc()<class_Node_method_rpc>`.
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Eseguisce una RPC (Chiamata di procedura remota) su tutti i peer connessi. Quest
 
 |void| **rpc_id**\ (\ peer_id\: :ref:`int<class_int>`, ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_rpc_id>`
 
-Eseguisce una RPC (Chiamata di procedura remota) su un ID peer specifico (vedi la documentazione sul multiplayer per riferimento). Questo è utilizzato per il multiplayer e normalmente non è disponibile, a meno che la funzione richiamata non sia stata contrassegnata come *RPC* (usando :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` o :ref:`Node.rpc_config()<class_Node_method_rpc_config>`). Chiamare questo metodo su funzioni non supportate genererà un errore. Vedi :ref:`Node.rpc()<class_Node_method_rpc>`.
+Esegue una RPC (Chiamata di procedura remota) su un ID peer specifico (vedi la documentazione sul multiplayer per riferimento). Questo è utilizzato per il multiplayer e normalmente non è disponibile, a meno che la funzione richiamata non sia stata contrassegnata come *RPC* (usando :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` o :ref:`Node.rpc_config()<class_Node_method_rpc_config>`). Chiamare questo metodo su funzioni non supportate genererà un errore. Vedi :ref:`Node.rpc()<class_Node_method_rpc>`.
 
 .. rst-class:: classref-item-separator
 

@@ -31,7 +31,7 @@ Tutorial
 
 - :doc:`Risolvere i problemi di fisica <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `Demo 3D "Truck Town" <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo 3D "Truck Town" <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

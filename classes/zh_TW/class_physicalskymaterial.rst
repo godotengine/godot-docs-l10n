@@ -14,9 +14,9 @@ PhysicalSkyMaterial
 說明
 ----
 
-The **PhysicalSkyMaterial** uses the Preetham analytic daylight model to draw a sky based on physical properties. This results in a substantially more realistic sky than the :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, but it is slightly slower and less flexible.
+該 **PhysicalSkyMaterial** 使用 Preetham 解析日光模型，根據物理屬性繪製一個天空。這會產生比 :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>` 更加逼真的天空，但速度稍慢且靈活性較差。
 
-The **PhysicalSkyMaterial** only supports one sun. The color, energy, and direction of the sun are taken from the first :ref:`DirectionalLight3D<class_DirectionalLight3D>` in the scene tree.
+該 **PhysicalSkyMaterial** 僅支援一個太陽。太陽的顏色、能量和方向，取自場景樹中的第一個 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。
 
 .. rst-class:: classref-reftable-group
 

@@ -7,14 +7,14 @@ GDExtension
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Una biblioteca nativa para GDExtension.
+Una librería nativa para GDExtension.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-El tipo de recurso **GDExtension** representa una `biblioteca compartida <https://en.wikipedia.org/wiki/Shared_library>`__ que puede ampliar la funcionalidad del motor. El singleton :ref:`GDExtensionManager<class_GDExtensionManager>` es responsable de cargar, recargar y descargar los recursos **GDExtension**.
+El tipo de recurso **GDExtension** representa una `librería compartida <https://en.wikipedia.org/wiki/Shared_library>`__ que puede ampliar la funcionalidad del motor. El singleton :ref:`GDExtensionManager<class_GDExtensionManager>` es responsable de cargar, recargar y descargar los recursos **GDExtension**.
 
 \ **Nota:** GDExtension no es un lenguaje de scripting y no tiene relación con los recursos :ref:`GDScript<class_GDScript>`.
 
@@ -86,7 +86,7 @@ La biblioteca se inicializa al mismo tiempo que las clases relacionadas con la e
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_EDITOR** = ``3``
 
-La biblioteca se inicializa al mismo tiempo que las clases del editor del motor. Solo ocurre al cargar la GDExtension en el editor.
+La librería se inicializa al mismo tiempo que las clases del editor del motor. Solo ocurre al cargar la GDExtension en el editor.
 
 .. rst-class:: classref-section-separator
 

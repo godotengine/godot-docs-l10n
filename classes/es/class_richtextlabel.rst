@@ -1951,7 +1951,7 @@ Añade una etiqueta ``[fgcolor]`` a la pila de etiquetas.
 
 |void| **push_font**\ (\ font\: :ref:`Font<class_Font>`, font_size\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RichTextLabel_method_push_font>`
 
-Añade una etiqueta ``[font]`` a la pila de etiquetas. Anula las fuentes predeterminadas durante su duración.
+Añade una etiqueta ``[font]`` a la pila de etiquetas. Sobrescribe las fuentes predeterminadas durante su duración.
 
 Si se pasa ``0`` a ``font_size``, se utilizará el tamaño de fuente predeterminado existente.
 
@@ -1965,7 +1965,7 @@ Si se pasa ``0`` a ``font_size``, se utilizará el tamaño de fuente predetermin
 
 |void| **push_font_size**\ (\ font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RichTextLabel_method_push_font_size>`
 
-Añade una etiqueta ``[font_size]`` a la pila de etiquetas. Anula el tamaño de fuente predeterminado durante su duración.
+Añade una etiqueta ``[font_size]`` a la pila de etiquetas. Sobrescribe el tamaño de fuente predeterminado durante su duración.
 
 .. rst-class:: classref-item-separator
 
@@ -2089,7 +2089,7 @@ Añade una etiqueta ``[outline_color]`` a la pila de etiquetas. Añade un contor
 
 |void| **push_outline_size**\ (\ outline_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RichTextLabel_method_push_outline_size>`
 
-Añade una etiqueta ``[outline_size]`` a la pila de etiquetas. Anula el tamaño predeterminado del contorno del texto durante su duración.
+Añade una etiqueta ``[outline_size]`` a la pila de etiquetas. Sobrescribe el tamaño predeterminado del contorno del texto durante su duración.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2263,7 @@ Establece el color de una celda de la tabla. Se pueden especificar colores separ
 
 |void| **set_cell_size_override**\ (\ min_size\: :ref:`Vector2<class_Vector2>`, max_size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RichTextLabel_method_set_cell_size_override>`
 
-Establece las anulaciones de tamaño mínimo y máximo para una celda de la tabla.
+Establece las sobrescrituras de tamaño mínimo y máximo para una celda de la tabla.
 
 .. rst-class:: classref-item-separator
 
@@ -2430,7 +2430,7 @@ Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al 
 
 El tamaño del contorno del texto.
 
-\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_RichTextLabel_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
+\ **Nota:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_RichTextLabel_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

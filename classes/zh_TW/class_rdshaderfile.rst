@@ -66,7 +66,7 @@ RDShaderFile
 - |void| **set_base_error**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_base_error**\ (\ )
 
-基礎編譯錯誤消息，如果非空，表示與特定著色器階段無關的錯誤。如果為空，著色器編譯也不一定成功（請檢查 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` 的各種錯誤消息成員）。
+基礎編譯錯誤訊息，如果非空，表示與特定著色器階段無關的錯誤。如果為空，著色器編譯也不一定成功（請檢查 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` 的各種錯誤訊息成員）。
 
 .. rst-class:: classref-section-separator
 

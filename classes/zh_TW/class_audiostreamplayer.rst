@@ -331,7 +331,7 @@ enum **MixTarget**: :ref:`🔗<enum_AudioStreamPlayer_MixTarget>`
 
 音量（dB），為 :ref:`stream<class_AudioStreamPlayer_property_stream>` 音量的偏移量。
 
-\ **注意：** 若需在分貝與線性能量間轉換，可使用 :ref:`volume_linear<class_AudioStreamPlayer_property_volume_linear>`\ ，或 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` / :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>`\ 。
+\ **注意：** 若需在分貝與線效能量間轉換，可使用 :ref:`volume_linear<class_AudioStreamPlayer_property_volume_linear>`\ ，或 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` / :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>`\ 。
 
 .. rst-class:: classref-item-separator
 

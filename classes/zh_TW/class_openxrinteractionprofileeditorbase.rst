@@ -9,14 +9,14 @@ OpenXRInteractionProfileEditorBase
 
 **被繼承：** :ref:`OpenXRInteractionProfileEditor<class_OpenXRInteractionProfileEditor>`
 
-Base class for editing interaction profiles.
+對互動設定進行編輯的基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This is a base class for interaction profile editors used by the OpenXR action map editor. It can be used to create bespoke editors for specific interaction profiles.
+這是 OpenXR 動作映射編輯器所使用的互動設定編輯器的基底類別。可以用來建立針對特定的互動設定的自訂編輯器。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ This is a base class for interaction profile editors used by the OpenXR action m
 
 |void| **setup**\ (\ action_map\: :ref:`OpenXRActionMap<class_OpenXRActionMap>`, interaction_profile\: :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>`\ ) :ref:`🔗<class_OpenXRInteractionProfileEditorBase_method_setup>`
 
-Setup this editor for the provided ``action_map`` and ``interaction_profile``.
+使用給定的動作映射 ``action_map`` 和互動設定 ``interaction_profile`` 設定該編輯器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,13 +14,13 @@ Script base que puede ser usado para añadir funciones de extensión al editor.
 Descripción
 ----------------------
 
-Scripts extending this class and implementing its :ref:`_run()<class_EditorScript_private_method__run>` method can be executed from the Script Editor's **File > Run** menu option (or by pressing :kbd:`Ctrl + Shift + X`) while the editor is running. This is useful for adding custom in-editor functionality to Godot. For more complex additions, consider using :ref:`EditorPlugin<class_EditorPlugin>`\ s instead.
+Los scripts que extienden esta clase e implementan su método :ref:`_run()<class_EditorScript_private_method__run>` pueden ser ejecutados desde la opción del menú **Archivo > Ejecutar** del editor de scripts (o presionando :kbd:`Ctrl + Shift + X`) mientras el editor está funcionando. Esto es útil para añadir funcionalidad personalizada en el editor a Godot. Para adiciones más complejas, considera la posibilidad de usar :ref:`EditorPlugin<class_EditorPlugin>` en su lugar.
 
-If a script extending this class also has a global class name, it will be included in the editor's command palette.
+Si un script que extiende esta clase también tiene un nombre de clase global, se incluirá en la paleta de comandos del editor.
 
-\ **Note:** Extending scripts need to have ``tool`` mode enabled.
+\ **Nota:** Los scripts de extensión necesitan tener el modo ``tool`` habilitado.
 
-\ **Example:** Running the following script prints "Hello from the Godot Editor!":
+\ **Ejemplo:** Al ejecutar el siguiente script se imprime "¡Hola desde el editor de Godot!":
 
 
 .. tabs::
@@ -31,7 +31,7 @@ If a script extending this class also has a global class name, it will be includ
     extends EditorScript
 
     func _run():
-        print("Hello from the Godot Editor!")
+        print("¡Hola desde el editor de Godot!")
 
  .. code-tab:: csharp
 
@@ -42,13 +42,13 @@ If a script extending this class also has a global class name, it will be includ
     {
         public override void _Run()
         {
-            GD.Print("Hello from the Godot Editor!");
+            GD.Print("¡Hola desde el editor de Godot!");
         }
     }
 
 
 
-\ **Note:** EditorScript is :ref:`RefCounted<class_RefCounted>`, meaning it is destroyed when nothing references it. This can cause errors during asynchronous operations if there are no references to the script.
+\ **Nota:** EditorScript es :ref:`RefCounted<class_RefCounted>`, lo que significa que se destruye cuando nada lo referencia. Esto puede causar errores durante operaciones asíncronas si no quedan referencias al script.
 
 .. rst-class:: classref-reftable-group
 

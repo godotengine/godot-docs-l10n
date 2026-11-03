@@ -14,13 +14,13 @@ TileSetScenesCollectionSource
 說明
 ----
 
-When placed on a :ref:`TileMapLayer<class_TileMapLayer>`, tiles from **TileSetScenesCollectionSource** will automatically instantiate an associated scene at the cell's position in the TileMapLayer.
+當放置在 :ref:`TileMapLayer<class_TileMapLayer>` 上時，來自 **TileSetScenesCollectionSource** 的圖塊將自動在 TileMapLayer 中單元格的位置上實例化相關場景。
 
-Scenes are instantiated as children of the :ref:`TileMapLayer<class_TileMapLayer>` after it enters the tree, at the end of the frame (their creation is deferred). If you add/remove a scene tile in the :ref:`TileMapLayer<class_TileMapLayer>` that is already inside the tree, the :ref:`TileMapLayer<class_TileMapLayer>` will automatically instantiate/free the scene accordingly.
+\ :ref:`TileMapLayer<class_TileMapLayer>` 進入樹後，會在影格末尾將這些場景實例化為其子節點（延遲建立）。如果在 :ref:`TileMapLayer<class_TileMapLayer>` 中新增/移除已經在樹內的場景圖塊，\ :ref:`TileMapLayer<class_TileMapLayer>` 將自動實例化/釋放相應的場景。
 
-\ **Note:** Scene tiles all occupy one tile slot and instead use alternate tile ID to identify scene index. :ref:`TileSetSource.get_tiles_count()<class_TileSetSource_method_get_tiles_count>` will always return ``1``. Use :ref:`get_scene_tiles_count()<class_TileSetScenesCollectionSource_method_get_scene_tiles_count>` to get a number of scenes in a **TileSetScenesCollectionSource**.
+\ **注意：**\ 場景圖塊佔用同一個圖塊槽，使用備用圖塊 ID 來標識場景索引。\ :ref:`TileSetSource.get_tiles_count()<class_TileSetSource_method_get_tiles_count>` 將始終回傳 ``1``\ 。使用 :ref:`get_scene_tiles_count()<class_TileSetScenesCollectionSource_method_get_scene_tiles_count>` 取得 **TileSetScenesCollectionSource** 中的場景數量。
 
-Use this code if you want to find the scene path at a given tile in :ref:`TileMapLayer<class_TileMapLayer>`:
+如果想在 :ref:`TileMapLayer<class_TileMapLayer>` 中尋找給定圖塊的場景路徑，請使用此程式碼：
 
 
 .. tabs::
@@ -32,7 +32,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
         var scene_source = tile_map_layer.tile_set.get_source(source_id)
         if scene_source is TileSetScenesCollectionSource:
             var alt_id = tile_map_layer.get_cell_alternative_tile(Vector2i(x, y))
-            # The assigned PackedScene.
+            # 分配的 PackedScene。
             var scene = scene_source.get_scene_tile_scene(alt_id)
 
  .. code-tab:: csharp
@@ -44,7 +44,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
         if (source is TileSetScenesCollectionSource sceneSource)
         {
             int altId = tileMapLayer.GetCellAlternativeTile(new Vector2I(x, y));
-            // The assigned PackedScene.
+            // 分配的 PackedScene。
             PackedScene scene = sceneSource.GetSceneTileScene(altId);
         }
     }
@@ -220,7 +220,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 |void| **set_scene_tile_scene**\ (\ id\: :ref:`int<class_int>`, packed_scene\: :ref:`PackedScene<class_PackedScene>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_set_scene_tile_scene>`
 
-Assigns a :ref:`PackedScene<class_PackedScene>` resource to the scene tile with ``id``. This will fail if the scene does not extend :ref:`CanvasItem<class_CanvasItem>`, as positioning properties are needed to place the scene on the :ref:`TileMapLayer<class_TileMapLayer>`.
+將 :ref:`PackedScene<class_PackedScene>` 資源分配給 ID 為 ``id`` 的場景圖塊。如果該場景擴充的不是 :ref:`CanvasItem<class_CanvasItem>` 則會失敗，因為將場景放置到 :ref:`TileMapLayer<class_TileMapLayer>` 上需要位置屬性。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

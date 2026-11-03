@@ -7,16 +7,16 @@ AudioEffectSpectrumAnalyzer
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
+建立一個 :ref:`AudioEffectInstance<class_AudioEffectInstance>`\ ，用於執行頻率分析並公開結果，以便進行即時存取。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
+計算音訊訊號的傅里葉變換。該效果不會改變音訊本身。可用於建立即時音訊視覺化效果，例如頻譜圖。
 
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
+該資源設定了一個 :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`\ ，會在執行時執行實際的分析工作。要使用該效果，需要使用 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 取得實例。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_Audi
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 - `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -126,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzer_FFTSize>`
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-The length of the buffer to keep, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.1 to 4.
+要保留的緩衝區長度，單位為秒。值越大，資料保留時間越長，但所需的記憶體也越多。取值範圍為 0.1 至 4。
 
 .. rst-class:: classref-item-separator
 

@@ -186,7 +186,7 @@ enum **InternalImportCategory**: :ref:`🔗<enum_EditorScenePostImportPlugin_Int
 
 |void| **_get_internal_import_options**\ (\ category\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>`
 
-覆蓋以新增內部匯入選項。這些將出現在 3D 場景匯入對話方塊中。通過 :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` 和 :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>` 新增選項。
+覆蓋以新增內部匯入選項。這些將出現在 3D 場景匯入對話框中。通過 :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` 和 :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>` 新增選項。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ enum **InternalImportCategory**: :ref:`🔗<enum_EditorScenePostImportPlugin_Int
 
 :ref:`Variant<class_Variant>` **_get_internal_option_update_view_required**\ (\ category\: :ref:`int<class_int>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_internal_option_update_view_required>`
 
-Should return ``true`` if the 3D view of the import dialog needs to update when changing the given option.
+回傳在選項已更改時是否需要更新匯入對話框的 3D 檢視，若更新則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Should return ``true`` if the 3D view of the import dialog needs to update when 
 
 :ref:`Variant<class_Variant>` **_get_internal_option_visibility**\ (\ category\: :ref:`int<class_int>`, for_animation\: :ref:`bool<class_bool>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_internal_option_visibility>`
 
-Should return ``true`` to show the given option, ``false`` to hide the given option, or ``null`` to ignore.
+顯示給定的選項應回傳 ``true``\ ，隱藏給定的選項應回傳 ``false``\ ，忽略應回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Should return ``true`` to show the given option, ``false`` to hide the given opt
 
 :ref:`Variant<class_Variant>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, for_animation\: :ref:`bool<class_bool>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_option_visibility>`
 
-Should return ``true`` to show the given option, ``false`` to hide the given option, or ``null`` to ignore.
+顯示給定的選項應回傳 ``true``\ ，隱藏給定的選項應回傳 ``false``\ ，忽略應回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Should return ``true`` to show the given option, ``false`` to hide the given opt
 
 |void| **_post_process**\ (\ scene\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__post_process>`
 
-Post-process the scene. This function is called after the final scene has been configured.
+對場景進行後期處理。該方法會在最終場景設定完成後呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -258,9 +258,9 @@ Post-process the scene. This function is called after the final scene has been c
 
 |void| **_pre_process**\ (\ scene\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__pre_process>`
 
-Pre-process the scene. This function is called right after the scene format loader loaded the scene and no changes have been made.
+對場景進行預處理。場景格式載入器載入場景後會立即呼叫該函式，此時尚未進行任何更改。
 
-Pre-process may be used to adjust internal import options in the ``"nodes"``, ``"meshes"``, ``"animations"`` or ``"materials"`` keys inside ``get_option_value("_subresources")``.
+預處理可用於調整 ``"nodes"``\ 、\ ``"meshes"``\ 、\ ``"animations"``\ 、\ ``"materials"`` 等內部匯入選項，這些欄位位於 ``get_option_value("_subresources")`` 中。
 
 .. rst-class:: classref-item-separator
 

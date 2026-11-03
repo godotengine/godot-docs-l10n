@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+Если минимальный размер элемента управления превысит его текущий размер по соответствующей оси, он увеличится влево или вверх.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+Если минимальный размер элемента управления превысит его текущий размер по соответствующей оси, он будет увеличиваться вправо или вниз.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+Размер элемента будет увеличиваться в обоих направлениях одинаково, чтобы компенсировать изменение его минимального размера, если он превысит текущий размер.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Управляет направлением роста элемента управления по горизонтальной оси, если его минимальный горизонтальный размер превышает текущий размер, поскольку элемент управления всегда должен иметь размер не меньше минимального.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Управляет направлением роста элемента управления по вертикальной оси, если его минимальный вертикальный размер превышает текущий размер, поскольку элемент управления всегда должен иметь размер не меньше минимального.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,9 +4151,9 @@ Godot вызывает этот метод для получения данны�
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Аннулирует кэш максимального размера в этом узле и в родительских узлах до верхнего уровня. Предназначен для использования с :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` при изменении возвращаемого значения. Установка :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` напрямую автоматически вызывает этот метод.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
-\ **Примечание:** Вызов этого метода также вызывает :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`, поскольку на суммарный минимальный размер может повлиять изменение максимального размера.
+\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 
 .. rst-class:: classref-item-separator
 

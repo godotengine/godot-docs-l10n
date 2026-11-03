@@ -7,18 +7,18 @@ AudioEffectReverb
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a reverberation audio effect to an audio bus.
+向音訊總線新增一個混響音訊效果。
 
-Emulates an echo by playing a blurred version of the input audio.
+通過播放輸入音訊的模糊化版本來模擬回聲。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+“混響”效果會持續播放輸入音訊，並隨著時間推移逐漸衰減。它可以模擬不同空間中的聲音，從小房間到大洞穴。
 
-See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
+另見 :ref:`AudioEffectDelay<class_AudioEffectDelay>` 以瞭解不模糊的回聲型別。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type o
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 - `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -77,7 +77,7 @@ See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type o
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
+定義虛擬房間牆壁的反射程度。反射性越強，混響中包含的高頻成分就越多。取值範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Defines how reflective the imaginary room's walls are. The more reflective, the 
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
+原始音訊的音量比例。設為 0 時，僅輸出修改後的音訊。取值範圍是 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ The volume ratio of the original audio. At 0, only the modified audio is outputt
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
+高通濾波器允許高於特定截止閾值的頻率通過，並對低於該截止閾值的頻率進行衰減。取值範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ High-pass filter allows frequencies higher than a certain cutoff threshold and a
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
+早期反射副本的增益。值越高，早期反射副本越響，且持續回響的時間越長。數值範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Gain of early reflection copies. At higher values, early reflection copies are l
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
+原始音訊與混響訊號的早期反射之間的時間間隔，單位為毫秒。取值範圍為 20 至 500。
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Time between the original audio and the early reflections of the reverb signal, 
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
+加寬或收窄混響尾音的立體聲像。值為 1 時，完全拓寬。取值範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Va
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
+修改後的音訊的音量比率。為 0 時，僅輸出原始音訊。取值範圍為 0 到 1。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

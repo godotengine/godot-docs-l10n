@@ -9,14 +9,14 @@ StreamPeerSocket
 
 **被繼承：** :ref:`StreamPeerTCP<class_StreamPeerTCP>`, :ref:`StreamPeerUDS<class_StreamPeerUDS>`
 
-Abstract base class for interacting with socket streams.
+用於與套接字流互動的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-StreamPeerSocket is an abstract base class that defines common behavior for socket-based streams.
+StreamPeerSocket 是一個抽象基底類別，定義了基於套接字的流的通用行為。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerSocket_Status>`
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_NONE** = ``0``
 
-The initial status of the **StreamPeerSocket**. This is also the status after disconnecting.
+**StreamPeerSocket** 的初始狀態。這也是斷開連接後的狀態。
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTING:
 
@@ -63,7 +63,7 @@ The initial status of the **StreamPeerSocket**. This is also the status after di
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTING** = ``1``
 
-A status representing a **StreamPeerSocket** that is connecting to a host.
+表示 **StreamPeerSocket** 正在連接到主機的狀態。
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTED:
 
@@ -71,7 +71,7 @@ A status representing a **StreamPeerSocket** that is connecting to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTED** = ``2``
 
-A status representing a **StreamPeerSocket** that is connected to a host.
+表示 **StreamPeerSocket** 已連接到主機的狀態。
 
 .. _class_StreamPeerSocket_constant_STATUS_ERROR:
 
@@ -79,7 +79,7 @@ A status representing a **StreamPeerSocket** that is connected to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_ERROR** = ``3``
 
-A status representing a **StreamPeerSocket** in error state.
+表示 **StreamPeerSocket** 處於錯誤狀態的狀態。
 
 .. rst-class:: classref-section-separator
 
@@ -108,7 +108,7 @@ A status representing a **StreamPeerSocket** in error state.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **get_status**\ (\ ) |const| :ref:`🔗<class_StreamPeerSocket_method_get_status>`
 
-Returns the status of the connection.
+回傳連接的狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Returns the status of the connection.
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_StreamPeerSocket_method_poll>`
 
-Polls the socket, updating its state. See :ref:`get_status()<class_StreamPeerSocket_method_get_status>`.
+輪詢套接字，更新其狀態。見 :ref:`get_status()<class_StreamPeerSocket_method_get_status>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

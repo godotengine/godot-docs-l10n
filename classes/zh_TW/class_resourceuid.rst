@@ -14,9 +14,9 @@ ResourceUID
 說明
 ----
 
-Resource UIDs (Unique IDentifiers) allow the engine to keep references between resources intact, even if files are renamed or moved. They can be accessed with ``uid://``.
+資源 UID（Unique IDentifier，唯一標識符）可以使引擎保持資源之間參照關係的完整性，即使檔案發生重新命名或移動。可以使用 ``uid://`` 存取。
 
-\ **ResourceUID** keeps track of all registered resource UIDs in a project, generates new UIDs, and converts between their string and integer representations.
+\ **ResourceUID** 能夠追蹤專案中所有已注冊的資源 UID，生成新的 UID，也能夠將標識符在字串表示和整數表示之間進行轉換。
 
 .. rst-class:: classref-reftable-group
 
@@ -114,7 +114,7 @@ Resource UIDs (Unique IDentifiers) allow the engine to keep references between r
 
 :ref:`int<class_int>` **create_id_for_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceUID_method_create_id_for_path>`
 
-Like :ref:`create_id()<class_ResourceUID_method_create_id>`, but the UID is seeded with the provided ``path`` and project name. UIDs generated for that path will be always the same within the current project.
+與 :ref:`create_id()<class_ResourceUID_method_create_id>` 型別，但是 UID 會使用 ``path`` 路徑和專案名稱設定隨機數種子。在目前專案中為該路徑生成的 UID 始終相同。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ Like :ref:`create_id()<class_ResourceUID_method_create_id>`, but the UID is seed
 
 :ref:`String<class_String>` **ensure_path**\ (\ path_or_uid\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceUID_method_ensure_path>`
 
-Returns a path, converting ``path_or_uid`` if necessary. Fails and returns an empty string if an invalid UID is provided.
+返迴路徑，必要時轉換 ``path_or_uid``\ 。如果提供了無效的 UID，則操作失敗並回傳空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Returns a path, converting ``path_or_uid`` if necessary. Fails and returns an em
 
 :ref:`String<class_String>` **path_to_uid**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceUID_method_path_to_uid>`
 
-Converts the provided resource ``path`` to a UID. Returns the unchanged path if it has no associated UID.
+將 ``path`` 中提供的資來源路徑轉換為 UID。如果沒有與之關聯的 UID 則會原樣回傳該路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Converts the provided resource ``path`` to a UID. Returns the unchanged path if 
 
 :ref:`String<class_String>` **uid_to_path**\ (\ uid\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceUID_method_uid_to_path>`
 
-Converts the provided ``uid`` to a path. Prints an error if the UID is invalid.
+將 ``uid`` 轉換為路徑。如果該 UID 無效則輸出錯誤。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

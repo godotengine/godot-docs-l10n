@@ -18,7 +18,7 @@ CylinderShape3D
 
 \ **注意：**\ 圓柱體碰撞形狀有若干已知的問題。建議改用 :ref:`CapsuleShape3D<class_CapsuleShape3D>` 或 :ref:`BoxShape3D<class_BoxShape3D>`\ 。
 
-\ **性能：**\ **CylinderShape3D** 可以快速檢查碰撞，但比 :ref:`CapsuleShape3D<class_CapsuleShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 和 **CylinderShape3D** 慢。
+\ **效能：**\ **CylinderShape3D** 可以快速檢查碰撞，但比 :ref:`CapsuleShape3D<class_CapsuleShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 和 **CylinderShape3D** 慢。
 
 .. rst-class:: classref-introduction-group
 

@@ -9,14 +9,14 @@ XRNode3D
 
 **被繼承：** :ref:`XRAnchor3D<class_XRAnchor3D>`, :ref:`XRController3D<class_XRController3D>`
 
-A 3D node that has its position automatically updated by the :ref:`XRServer<class_XRServer>`.
+位置由 :ref:`XRServer<class_XRServer>` 自動更新的 3D 節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node can be bound to a specific pose of an :ref:`XRPositionalTracker<class_XRPositionalTracker>` and will automatically have its :ref:`Node3D.transform<class_Node3D_property_transform>` updated by the :ref:`XRServer<class_XRServer>`. Nodes of this type must be added as children of the :ref:`XROrigin3D<class_XROrigin3D>` node.
+這個節點可以綁定到 :ref:`XRPositionalTracker<class_XRPositionalTracker>` 的某個姿勢，\ :ref:`XRServer<class_XRServer>` 會自動更新其 :ref:`Node3D.transform<class_Node3D_property_transform>`\ 。這類節點必須新增為 :ref:`XROrigin3D<class_XROrigin3D>` 節點的子節點。
 
 .. rst-class:: classref-introduction-group
 
@@ -117,7 +117,7 @@ Godot 定義了許多標準姿勢名稱，例如 ``aim`` 和 ``grip``\ ，但也
 - |void| **set_show_when_tracked**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_show_when_tracked**\ (\ )
 
-Enables showing the node when tracking starts, and hiding the node when tracking is lost.
+啟用在追蹤開始時顯示節點，並在追蹤丟失時隱藏節點。
 
 .. rst-class:: classref-item-separator
 
@@ -189,17 +189,17 @@ Godot 定義了許多標準追蹤器，例如 ``left_hand`` 和 ``right_hand``\ 
 
 |void| **trigger_haptic_pulse**\ (\ action_name\: :ref:`String<class_String>`, frequency\: :ref:`float<class_float>`, amplitude\: :ref:`float<class_float>`, duration_sec\: :ref:`float<class_float>`, delay_sec\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRNode3D_method_trigger_haptic_pulse>`
 
-Triggers a haptic pulse on a device associated with this interface.
+在與該介面關聯的裝置上觸發觸覺脈衝。
 
-\ ``action_name`` is the name of the action for this pulse.
+\ ``action_name`` 是該脈衝的操作名稱。
 
-\ ``frequency`` is the frequency of the pulse, set to ``0.0`` to have the system use a default frequency.
+\ ``frequency`` 是該脈衝的頻率，設定為 ``0.0`` 可讓系統使用預設頻率。
 
-\ ``amplitude`` is the amplitude of the pulse between ``0.0`` and ``1.0``.
+\ ``amplitude`` 是介於 ``0.0`` 和 ``1.0`` 之間的脈衝幅度。
 
-\ ``duration_sec`` is the duration of the pulse in seconds.
+\ ``duration_sec`` 是脈衝的持續時間（單位為秒）。
 
-\ ``delay_sec`` is a delay in seconds before the pulse is given.
+\ ``delay_sec`` 是發出脈衝之前的延遲（單位為秒）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

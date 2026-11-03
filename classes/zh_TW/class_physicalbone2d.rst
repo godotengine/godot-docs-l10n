@@ -164,7 +164,7 @@ PhysicalBone2D
 
 :ref:`Joint2D<class_Joint2D>` **get_joint**\ (\ ) |const| :ref:`🔗<class_PhysicalBone2D_method_get_joint>`
 
-如果存在，則返回第一個 :ref:`Joint2D<class_Joint2D>` 子節點。主要是輔助函式，用於簡化對 **PhysicalBone2D** 所自動配置的 :ref:`Joint2D<class_Joint2D>` 的獲取。
+如果存在，則返回第一個 :ref:`Joint2D<class_Joint2D>` 子節點。主要是輔助函式，用於簡化對 **PhysicalBone2D** 所自動配置的 :ref:`Joint2D<class_Joint2D>` 的取得。
 
 .. rst-class:: classref-item-separator
 

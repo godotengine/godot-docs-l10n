@@ -7,7 +7,7 @@ GLTFTexture
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-GLTFTexture represents a texture in a glTF file.
+GLTFTexture 代表 glTF 檔案中的紋理。
 
 .. rst-class:: classref-introduction-group
 
@@ -50,7 +50,7 @@ GLTFTexture represents a texture in a glTF file.
 - |void| **set_sampler**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sampler**\ (\ )
 
-紋理取樣器的 ID，在對圖像進行取樣時使用。如果為 -1，則使用預設的紋理取樣器（線性篩選，並在兩個軸上重複環繞）。
+紋理取樣器的 ID，在對影像進行取樣時使用。如果為 -1，則使用預設的紋理取樣器（線性篩選，並在兩個軸上重複環繞）。
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ GLTFTexture represents a texture in a glTF file.
 - |void| **set_src_image**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_src_image**\ (\ )
 
-與該紋理關聯的圖像索引，見 :ref:`GLTFState.get_images()<class_GLTFState_method_get_images>`\ 。如果為 -1，則該紋理未與圖像相關聯。
+與該紋理關聯的影像索引，見 :ref:`GLTFState.get_images()<class_GLTFState_method_get_images>`\ 。如果為 -1，則該紋理未與影像相關聯。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

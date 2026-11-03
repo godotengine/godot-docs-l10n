@@ -7,16 +7,16 @@ CanvasTexture
 
 **繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於 2D 算繪的紋理，帶有可選的法線和鏡面貼圖。
+用於 2D 渲染的紋理，帶有可選的法線和鏡面貼圖。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**CanvasTexture** is an alternative to :ref:`ImageTexture<class_ImageTexture>` for 2D rendering. It allows using normal maps and specular maps in any node that inherits from :ref:`CanvasItem<class_CanvasItem>`. **CanvasTexture** also allows overriding the texture's filter and repeat mode independently of the node's properties (or the project settings).
+**CanvasTexture** 是用於 2D 渲染的 :ref:`ImageTexture<class_ImageTexture>` 的替代品。它允許在任何繼承自 :ref:`CanvasItem<class_CanvasItem>` 的節點中使用法線貼圖和鏡面貼圖。\ **CanvasTexture** 還允許獨立於節點的屬性（或專案設定）覆蓋紋理的過濾模式和重複模式。
 
-\ **Note:** **CanvasTexture** cannot be used in 3D. It will not display correctly when applied to any :ref:`VisualInstance3D<class_VisualInstance3D>`, such as :ref:`Sprite3D<class_Sprite3D>` or :ref:`Decal<class_Decal>`. For physically-based materials in 3D, use :ref:`BaseMaterial3D<class_BaseMaterial3D>` instead.
+\ **注意：**\ **CanvasTexture** 不能在 3D 中使用。當套用至任何 :ref:`VisualInstance3D<class_VisualInstance3D>`\ ，例如 :ref:`Sprite3D<class_Sprite3D>` 或 :ref:`Decal<class_Decal>` 時，它將無法正確顯示。對於 3D 中基於物理的材質，請改用 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -124,7 +124,7 @@ CanvasTexture
 - |void| **set_specular_shininess**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular_shininess**\ (\ )
 
-用於 :ref:`Light2D<class_Light2D>` 鏡面反射的鏡面指數。更高的值會產生更有光澤或更加“濕潤”的外觀，反射變得更局部，且整體上不太明顯。預設值為 ``1.0`` ，將完全禁用鏡面反射。只有在 :ref:`Light2D<class_Light2D>` 影響到這個 **CanvasTexture** 時才會有可見的效果。
+用於 :ref:`Light2D<class_Light2D>` 鏡面反射的鏡面指數。更高的值會產生更有光澤或更加“濕潤”的外觀，反射變得更區域，且整體上不太明顯。預設值為 ``1.0`` ，將完全停用鏡面反射。只有在 :ref:`Light2D<class_Light2D>` 影響到這個 **CanvasTexture** 時才會有可見的效果。
 
 .. rst-class:: classref-item-separator
 

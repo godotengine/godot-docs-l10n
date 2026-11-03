@@ -23,7 +23,7 @@ Un nodo usado como hijo de un padre :ref:`VehicleBody3D<class_VehicleBody3D>` pa
 Tutoriales
 --------------------
 
-- `Demo de Ciudad de Camioness en 3D <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo de Ciudad de Camioness en 3D <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

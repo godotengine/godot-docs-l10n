@@ -177,7 +177,7 @@ El modo de blendshape.
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Sobrescribe el :ref:`AABB<class_AABB>` con uno definido por usuario para el uso con el tronco(frustum). Especialmente util para evitar inesperadas selecciones cuando se use un shader a vertices desplazados.
+Sobrescribe el :ref:`AABB<class_AABB>` con uno definido por usuario para el uso con el tronco (frustum). Especialmente útil para evitar inesperadas selecciones cuando se use un shader a vértices desplazados.
 
 .. rst-class:: classref-item-separator
 
@@ -229,13 +229,13 @@ Crea una nueva superficie. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_
 
 Las superficies se crean para ser renderizadas usando un ``primitive``, que puede ser cualquiera de los valores definidos en :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-El argumento ``arrays`` es un arreglo de arreglos. Cada uno de los elementos :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` contiene un arreglo con parte de los datos de la malla para esta superficie, según se describe en el miembro correspondiente de :ref:`ArrayType<enum_Mesh_ArrayType>`, o ``null`` si no se utiliza en la superficie. Por ejemplo, ``arrays[0]`` es el arreglo de vértices. Este primer sub-arreglo de vértices siempre es obligatorio; los demás son opcionales. Agregar un arreglo de índices coloca esta superficie en "modo índice", donde los arreglos de vértices y otros se usan como fuentes de datos y el arreglo de índices define el orden de los vértices. Todos los sub-arreglos deben tener la misma longitud que el arreglo de vértices (o ser un múltiplo exacto de la longitud del arreglo de vértices, cuando múltiples elementos de un sub-arreglo corresponden a un solo vértice) o estar vacíos, excepto :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` si se utiliza.
+El argumento ``arrays`` es un array de arrays. Cada uno de los :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elementos contiene un array con parte de los datos de la malla para esta superficie, según se describe en el miembro correspondiente de :ref:`ArrayType<enum_Mesh_ArrayType>`, o ``null`` si no se utiliza en la superficie. Por ejemplo, ``arrays[0]`` es el array de vértices. Este primer sub-array de vértices siempre es obligatorio; los demás son opcionales. Añadir un array de índices coloca esta superficie en "modo índice", donde los arrays de vértices y otros se usan como fuentes de datos y el array de índices define el orden de los vértices. Todos los sub-arrays deben tener la misma longitud que el array de vértices (o ser un múltiplo exacto de la longitud del array de vértices, cuando múltiples elementos de un sub-array corresponden a un solo vértice) o estar vacíos, excepto :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` si se utiliza.
 
-El argumento ``blend_shapes`` es un arreglo de datos de vértices para cada blend shape. Cada elemento es un arreglo con la misma estructura que ``arrays``, pero :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` se establecen únicamente si están presentes en ``arrays`` y todas las demás entradas son ``null``.
+El argumento ``blend_shapes`` es un array de datos de vértices para cada blend shape. Cada elemento es un array con la misma estructura que ``arrays``, pero :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` se establecen si y solo si están establecidos en ``arrays`` y todas las demás entradas son ``null``.
 
-El argumento ``lods`` es un diccionario con claves :ref:`float<class_float>` y valores :ref:`PackedInt32Array<class_PackedInt32Array>`. Cada entrada del diccionario representa un nivel LOD de la superficie, donde el valor es el arreglo :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` que se utilizará para ese nivel LOD y la clave es aproximadamente proporcional a la distancia a la que se usará el LOD. Es decir, aumentar la clave de un LOD también aumenta la distancia a la que los objetos deben estar de la cámara antes de usar ese LOD.
+El argumento ``lods`` es un diccionario con claves :ref:`float<class_float>` y valores :ref:`PackedInt32Array<class_PackedInt32Array>`. Cada entrada del diccionario representa un nivel LOD de la superficie, donde el valor es el array :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` que se utilizará para ese nivel LOD y la clave es aproximadamente proporcional a la distancia a la que comienza a utilizarse el LOD. Es decir, aumentar la clave de un LOD también aumenta la distancia que deben tener los objetos respecto de la cámara antes de utilizarse ese LOD.
 
-El argumento ``flags`` es la operación OR a nivel de bits de, según se necesite: un valor de :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` desplazado a la izquierda por ``ARRAY_FORMAT_CUSTOMn_SHIFT`` para cada canal personalizado en uso, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+El argumento ``flags`` es la operación OR a nivel de bits de los siguientes valores, según se necesite: un valor de :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` desplazado a la izquierda por ``ARRAY_FORMAT_CUSTOMn_SHIFT`` para cada canal personalizado en uso, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
 \ **Nota:** Al usar índices, se recomienda emplear únicamente puntos, líneas o triángulos.
 
@@ -285,7 +285,7 @@ Devuelve el número de formas de mezcla que el **ArrayMesh** posee.
 
 :ref:`StringName<class_StringName>` **get_blend_shape_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_get_blend_shape_name>`
 
-Devuelve el nombre de la forma de mezcla de este indice.
+Devuelve el nombre de la forma de mezcla de este índice.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Devuelve el nombre de la forma de mezcla de este indice.
 
 :ref:`Error<enum_@GlobalScope_Error>` **lightmap_unwrap**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, texel_size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ArrayMesh_method_lightmap_unwrap>`
 
-Performs a UV unwrap on the **ArrayMesh** to prepare the mesh for lightmapping.
+Realiza un desenvolvimiento UV en el **ArrayMesh** para preparar la malla para el mapeo de luces.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Regenera las tangentes para cada una de las superficies del **ArrayMesh**.
 
 |void| **set_blend_shape_name**\ (\ index\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ArrayMesh_method_set_blend_shape_name>`
 
-Establece el nombre de la blendshape en este indice.
+Establece el nombre de la blendshape en este índice.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ Establece el nombre de la blendshape en este indice.
 
 :ref:`int<class_int>` **surface_find_by_name**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_find_by_name>`
 
-Devuelve el indice de la primer superficie con este nombre mantenido dentro de este **ArrayMesh**. Si no es encontrado, -1 es devuelto.
+Devuelve el índice de la primera superficie con este nombre mantenido dentro de este **ArrayMesh**. Si no es encontrado, -1 es devuelto.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ Devuelve el indice de la primer superficie con este nombre mantenido dentro de e
 
 :ref:`int<class_int>` **surface_get_array_index_len**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_array_index_len>`
 
-Devuelve la longitud en indices del array de indices de la superificie solicitada( ver :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+Devuelve la longitud en índices del array de índices de la superificie solicitada (ver :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Devuelve la longitud en indices del array de indices de la superificie solicitad
 
 :ref:`int<class_int>` **surface_get_array_len**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_array_len>`
 
-Devuelve la longitud en vertices del array de vertice en la superficie solicitada (ver\ :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+Devuelve la longitud en vértices del array de vértices en la superficie solicitada (ver\ :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
 
 .. rst-class:: classref-item-separator
 

@@ -79,7 +79,7 @@ Descripciones de Métodos
 
 Crea una configuración de cliente TLS que valida los certificados y sus nombres comunes (nombres de dominio completos).
 
-Puedes especificar una ``trusted_chain`` personalizada de autoridades de certificación ( la lista de CA por defecto se usará si ``null``), y opcionalmente proporcionar un ``common_name_override`` si esperas que el certificado tenga un nombre común diferente al FQDN del servidor.
+Puedes especificar una ``trusted_chain`` personalizada de autoridades de certificación (la lista de CA por defecto se usará si ``null``), y opcionalmente proporcionar un ``common_name_override`` si esperas que el certificado tenga un nombre común diferente al FQDN del servidor.
 
 \ **Nota:** En la plataforma Web, la verificación TLS siempre se aplica contra la lista de CA del navegador web. Esto se considera una característica de seguridad.
 

@@ -21,7 +21,7 @@ ResourceImporterBitMap
 教學
 ----
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`匯入影像 <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 

@@ -7,18 +7,18 @@ Texture2DArray
 
 **繼承：** :ref:`ImageTextureLayered<class_ImageTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-由多個獨立圖像構成的單個紋理資源。每個圖像的尺寸和 mipmap 級別數都相同。
+由多個獨立影像構成的單個紋理資源。每個影像的尺寸和 mipmap 級別數都相同。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A Texture2DArray is different from a Texture3D: The Texture2DArray does not support trilinear interpolation between the :ref:`Image<class_Image>`\ s, i.e. no blending. See also :ref:`Cubemap<class_Cubemap>` and :ref:`CubemapArray<class_CubemapArray>`, which are texture arrays with specialized cubemap functions.
+Texture2DArray 與 Texture3D 不同：Texture2DArray 不支援在 :ref:`Image<class_Image>` 之間進行三線性插值，即不會進行混合。另見 :ref:`Cubemap<class_Cubemap>` 和 :ref:`CubemapArray<class_CubemapArray>`\ ，這些紋理陣列具有針對立方體貼圖設計的函式。
 
-A Texture2DArray is also different from an :ref:`AtlasTexture<class_AtlasTexture>`: In a Texture2DArray, all images are treated separately. In an atlas, the regions (i.e. the single images) can be of different sizes. Furthermore, you usually need to add a padding around the regions, to prevent accidental UV mapping to more than one region. The same goes for mipmapping: Mipmap chains are handled separately for each layer. In an atlas, the slicing has to be done manually in the fragment shader.
+Texture2DArray 與 :ref:`AtlasTexture<class_AtlasTexture>` 也不同：Texture2DArray 中的圖形都是單獨處理的。而在圖集中，區域（即單張影像）的大小可以不同。此外，你通常會需要圍繞區域新增邊距，防止 UV 映射意外進入多個區域。多級漸遠紋理 mipmap 也是一樣：每一層的 mipmap 鏈都是單獨處理的。而在圖集中，需要在片段著色器中手動切片。
 
-To create such a texture file yourself, reimport your image files using the Godot Editor import presets. To create a Texture2DArray from code, use :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` on an instance of the Texture2DArray class.
+要自己建立這樣的紋理檔案，請使用 Godot 編輯器匯入預設重新匯入影像檔案。要使用程式碼建立 Texture2DArray，請對 Texture2DArray 類的實例使用 :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>`\ 。
 
 .. rst-class:: classref-reftable-group
 

@@ -16,9 +16,9 @@ Utilizado por el editor para ampliar su funcionalidad.
 Descripción
 ----------------------
 
-Plugins are used by the editor to extend functionality. The most common types of plugins are those which edit a given node or resource type, import plugins and export plugins. See also :ref:`EditorScript<class_EditorScript>` to add functions to the editor.
+Los plugins son utilizados por el editor para extender su funcionalidad. Los tipos más comunes de plugins son aquellos que editan un nodo o tipo de recurso dado, los plugins de importación y los plugins de exportación. Véase también :ref:`EditorScript<class_EditorScript>` para añadir funciones al editor.
 
-\ **Note:** Some names in this class contain "left" or "right" (e.g. :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`). These APIs assume left-to-right layout, and would be backwards when using right-to-left layout. These names are kept for compatibility reasons.
+\ **Nota:** Algunos nombres en esta clase contienen "left" o "right" (ej. :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`). Estas API asumen un diseño de izquierda a derecha, y estarían al revés al usar un diseño de derecha a izquierda. Estos nombres se mantienen por razones de compatibilidad.
 
 .. rst-class:: classref-introduction-group
 
@@ -369,7 +369,7 @@ Sección inferior del inspector.
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_PROJECT_SETTING_TAB_LEFT** = ``10``
 
-Tab of Project Settings dialog, to the left of other tabs.
+Pestaña del diálogo de Configuración del proyecto, a la izquierda de otras pestañas.
 
 .. _class_EditorPlugin_constant_CONTAINER_PROJECT_SETTING_TAB_RIGHT:
 
@@ -403,7 +403,7 @@ El panel está cerrado.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-Dock slot, left side, upper-left (empty in default layout).
+Ranura del panel, lado izquierdo, superior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BL:
 
@@ -411,7 +411,7 @@ Dock slot, left side, upper-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-Dock slot, left side, bottom-left (empty in default layout).
+Ranura del panel, lado izquierdo, inferior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UR:
 
@@ -419,7 +419,7 @@ Dock slot, left side, bottom-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-Dock slot, left side, upper-right (in default layout includes Scene and Import docks).
+Ranura del panel, lado izquierdo, superior derecha (en la distribución predeterminada incluye los paneles de Escena e Importación).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BR:
 
@@ -427,7 +427,7 @@ Dock slot, left side, upper-right (in default layout includes Scene and Import d
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-Dock slot, left side, bottom-right (in default layout includes FileSystem dock).
+Ranura del panel, lado izquierdo, inferior derecha (en la distribución predeterminada incluye el panel de Sistema de archivos).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -435,7 +435,7 @@ Dock slot, left side, bottom-right (in default layout includes FileSystem dock).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-Dock slot, right side, upper-left (in default layout includes Inspector, Node, and History docks).
+Ranura del panel, lado derecho, superior izquierda (en la distribución predeterminada incluye los paneles de Inspector, Nodo e Historial).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -443,7 +443,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Node, a
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-Dock slot, right side, bottom-left (empty in default layout).
+Ranura del panel, lado derecho, inferior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -451,7 +451,7 @@ Dock slot, right side, bottom-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-Dock slot, right side, upper-right (empty in default layout).
+Ranura del panel, lado derecho, superior derecha (vacía en la distribución predeterminada).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -459,7 +459,7 @@ Dock slot, right side, upper-right (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
 
-Dock slot, right side, bottom-right (empty in default layout).
+Ranura del panel, lado derecho, inferior derecha (vacía en la distribución predeterminada).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_BOTTOM:
 
@@ -852,11 +852,11 @@ Esto es para los editores que editan objetos basados en scripts. Puede devolver 
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
-Override this method in your plugin to return a :ref:`Texture2D<class_Texture2D>` in order to give it an icon.
+Sobrescribe este método en tu plugin para que devuelva una :ref:`Texture2D<class_Texture2D>` que se utilizará como icono.
 
-For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+En los plugins de la pantalla principal, el icono aparece en la parte superior de la pantalla, a la derecha de los botones «2D», «3D», «Script», «Juego» y «Tienda de assets».
 
-Ideally, the plugin icon should be white with a transparent background and 16×16 pixels in size.
+Lo ideal es que el icono del plugin sea blanco, tenga un fondo transparente y mida 16 × 16 píxeles.
 
 
 .. tabs::
@@ -864,18 +864,18 @@ Ideally, the plugin icon should be white with a transparent background and 16×1
  .. code-tab:: gdscript
 
     func _get_plugin_icon():
-        # You can use a custom icon:
+        # Puedes utilizar un icono personalizado:
         return preload("res://addons/my_plugin/my_plugin_icon.svg")
-        # Or use a built-in icon:
+        # O utilizar un icono integrado:
         return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
  .. code-tab:: csharp
 
     public override Texture2D _GetPluginIcon()
     {
-        // You can use a custom icon:
+        // Puedes utilizar un icono personalizado:
         return ResourceLoader.Load<Texture2D>("res://addons/my_plugin/my_plugin_icon.svg");
-        // Or use a built-in icon:
+        // O utilizar un icono integrado:
         return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
     }
 
@@ -1294,9 +1294,9 @@ See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>
 
 |void| **add_inspector_plugin**\ (\ plugin\: :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_inspector_plugin>`
 
-Registers a new :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`. Inspector plugins are used to extend :ref:`EditorInspector<class_EditorInspector>` and provide custom configuration tools for your object's properties.
+Registra un nuevo :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`. Los plugins del inspector se utilizan para ampliar :ref:`EditorInspector<class_EditorInspector>` y proporcionar herramientas de configuración personalizadas para las propiedades de tus objetos.
 
-\ **Note:** Always use :ref:`remove_inspector_plugin()<class_EditorPlugin_method_remove_inspector_plugin>` to remove the registered :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` when your **EditorPlugin** is disabled to prevent leaks and an unexpected behavior.
+\ **Nota:** Utiliza siempre :ref:`remove_inspector_plugin()<class_EditorPlugin_method_remove_inspector_plugin>` para eliminar el :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` registrado cuando se desactive tu **EditorPlugin**, a fin de evitar fugas de memoria y comportamientos inesperados.
 
 
 .. tabs::
@@ -1307,7 +1307,7 @@ Registers a new :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`. Inspe
     var inspector_plugin = MyInspectorPlugin.new()
 
     func _enter_tree():
-        add_inspector_plugin(inspector_plugin)
+        (inspector_plugin)
 
     func _exit_tree():
         remove_inspector_plugin(inspector_plugin)

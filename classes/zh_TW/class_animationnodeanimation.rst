@@ -104,7 +104,7 @@ enum **PlayMode**: :ref:`🔗<enum_AnimationNodeAnimation_PlayMode>`
 - |void| **set_advance_on_start**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_advance_on_start**\ (\ )
 
-若為 ``true``\ ，當收到自開頭播放動畫的請求時，第一幀僅進行處理但不渲染，播放將自下一幀開始。
+若為 ``true``\ ，當收到自開頭播放動畫的請求時，第一影格僅進行處理但不渲染，播放將自下一影格開始。
 
 另請參閱 :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` 的注意事項。
 
@@ -216,9 +216,9 @@ enum **PlayMode**: :ref:`🔗<enum_AnimationNodeAnimation_PlayMode>`
 - |void| **set_timeline_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeline_length**\ (\ )
 
-The length of the custom timeline.
+自訂時間軸的長度。
 
-If :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` is ``true``, scales the animation to this length.
+若 :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` 為 ``true``\ ，就會將動畫縮放至此長度。
 
 .. rst-class:: classref-item-separator
 

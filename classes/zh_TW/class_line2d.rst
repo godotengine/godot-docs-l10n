@@ -14,7 +14,7 @@ Line2D
 說明
 ----
 
-該節點繪製一條 2D 折線，即由線段連接的多個點組成的形狀。\ **Line2D** 不是數學折線，即線段不是無限細的。它的目的是算繪，它可以著色，也可以選擇紋理。
+該節點繪製一條 2D 折線，即由線段連接的多個點組成的形狀。\ **Line2D** 不是數學折線，即線段不是無限細的。它的目的是渲染，它可以著色，也可以選擇紋理。
 
 \ **警告：**\ 某些配置可能無法很好地繪製，例如非常銳利的角度。在這些情況下，節點使用後備繪製邏輯來看起來不錯。
 
@@ -178,7 +178,7 @@ enum **LineTextureMode**: :ref:`🔗<enum_Line2D_LineTextureMode>`
 
 :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **LINE_TEXTURE_NONE** = ``0``
 
-獲取紋理的左側圖元並在整個線條上算繪它。
+取得紋理的左側圖元並在整個線條上渲染它。
 
 .. _class_Line2D_constant_LINE_TEXTURE_TILE:
 
@@ -216,9 +216,9 @@ enum **LineTextureMode**: :ref:`🔗<enum_Line2D_LineTextureMode>`
 - |void| **set_antialiased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_antialiased**\ (\ )
 
-如果為 ``true``\ ，則線條的邊界將使用抗鋸齒。
+如果為 ``true``\ ，則線條的邊界將使用反鋸齒。
 
-\ **注意：**\ Line2D 在使用抗鋸齒時，不會通過批次處理來加速。
+\ **注意：**\ Line2D 在使用反鋸齒時，不會通過批次處理來加速。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ enum **LineTextureMode**: :ref:`🔗<enum_Line2D_LineTextureMode>`
 - |void| **set_begin_cap_mode**\ (\ value\: :ref:`LineCapMode<enum_Line2D_LineCapMode>`\ )
 - :ref:`LineCapMode<enum_Line2D_LineCapMode>` **get_begin_cap_mode**\ (\ )
 
-The style of the beginning of the polyline, if :ref:`closed<class_Line2D_property_closed>` is ``false``.
+:ref:`closed<class_Line2D_property_closed>` 為 ``false`` 時的折線開頭樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ The style of the beginning of the polyline, if :ref:`closed<class_Line2D_propert
 - |void| **set_end_cap_mode**\ (\ value\: :ref:`LineCapMode<enum_Line2D_LineCapMode>`\ )
 - :ref:`LineCapMode<enum_Line2D_LineCapMode>` **get_end_cap_mode**\ (\ )
 
-The style of the end of the polyline, if :ref:`closed<class_Line2D_property_closed>` is ``false``.
+:ref:`closed<class_Line2D_property_closed>` 為 ``false`` 時的折線末端樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ The style of the end of the polyline, if :ref:`closed<class_Line2D_property_clos
 - |void| **set_gradient**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_gradient**\ (\ )
 
-從頭到尾貫穿整條線的漸變色。如果設定了漸變，則不會使用預設顏色。
+漸變是從頭到尾貫穿整條線繪製的。如果該屬性被設定，則 :ref:`default_color<class_Line2D_property_default_color>` 不會被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ The style of the end of the polyline, if :ref:`closed<class_Line2D_property_clos
 - |void| **set_joint_mode**\ (\ value\: :ref:`LineJointMode<enum_Line2D_LineJointMode>`\ )
 - :ref:`LineJointMode<enum_Line2D_LineJointMode>` **get_joint_mode**\ (\ )
 
-The style of the connections between segments of the polyline.
+折線段之間的連接樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ The style of the connections between segments of the polyline.
 - |void| **set_points**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_points**\ (\ )
 
-折線的點，以局部 2D 座標解釋。線段在此陣列中的相鄰點之間繪製。
+折線的點，以區域 2D 座標解釋。線段在此陣列中的相鄰點之間繪製。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -360,7 +360,7 @@ The style of the connections between segments of the polyline.
 - |void| **set_round_precision**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_round_precision**\ (\ )
 
-用於圓角接頭和帽的平滑度。值越高，邊角越平滑，但算繪和更新的要求更高。
+用於圓角接頭和帽的平滑度。值越高，邊角越平滑，但渲染和更新的要求更高。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ The style of the connections between segments of the polyline.
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-The texture used for the polyline. Uses :ref:`texture_mode<class_Line2D_property_texture_mode>` for drawing style.
+用於折線的紋理。使用 :ref:`texture_mode<class_Line2D_property_texture_mode>` 作為繪圖樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ The texture used for the polyline. Uses :ref:`texture_mode<class_Line2D_property
 - |void| **set_texture_mode**\ (\ value\: :ref:`LineTextureMode<enum_Line2D_LineTextureMode>`\ )
 - :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **get_texture_mode**\ (\ )
 
-The style to render the :ref:`texture<class_Line2D_property_texture>` of the polyline.
+渲染該折線的 :ref:`texture<class_Line2D_property_texture>` 的樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ The style to render the :ref:`texture<class_Line2D_property_texture>` of the pol
 - |void| **set_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve**\ (\ )
 
-The polyline's width curve. The width of the polyline over its length will be equivalent to the value of the width curve over its domain. The width curve should be a unit :ref:`Curve<class_Curve>`.
+該折線的寬度曲線。該折線在其長度上的寬度將等於寬度曲線在其域上的值。寬度曲線應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -462,9 +462,9 @@ The polyline's width curve. The width of the polyline over its length will be eq
 
 |void| **add_point**\ (\ position\: :ref:`Vector2<class_Vector2>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Line2D_method_add_point>`
 
-在指定的位置 ``position`` 新增一個點，該位置相對於該線段自身的位置。新的點會被加入到點的列表末尾。
+在指定的位置 ``position`` 新增一個點，該位置相對於該線段自身的位置。如果未提供 ``index``\ ，則新的點將被新增到點陣列的末尾。
 
-如果給出 ``index``\ ，則將新點插入到由索引 ``index`` 標識的已有點之前。從 ``index`` 開始的每個已有點都會進一步向下移動點列表。索引必須大於或等於 ``0``\ ，並且不得超過線段中已有點的數量。請參閱 :ref:`get_point_count()<class_Line2D_method_get_point_count>`\ 。
+如果給出 ``index``\ ，則將新點插入到由索引 ``index`` 標識的已有點之前。該新點之後的點的索引增加 1。提供的 ``index`` 不得超過折線中已有點的數量。請參閱 :ref:`get_point_count()<class_Line2D_method_get_point_count>`\ 。
 
 .. rst-class:: classref-item-separator
 

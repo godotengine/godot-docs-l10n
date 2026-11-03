@@ -7,14 +7,14 @@ FramebufferCacheRD
 
 **繼承：** :ref:`Object<class_Object>`
 
-Framebuffer cache manager for Rendering Device based renderers.
+基於渲染裝置的渲染器的影格緩衝區快取管理器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Framebuffer cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a framebuffer and reuse it in subsequent calls for as long as the used textures exists. Framebuffers will automatically be cleaned up when dependent objects are freed.
+基於 :ref:`RenderingDevice<class_RenderingDevice>` 的渲染器的影格緩衝區快取管理器。提供一種建立影格緩衝區並在後續呼叫中重用它（只要使用的紋理存在）的方法。當相依性的物件被釋放時，影格緩衝區將被自動清理。
 
 .. rst-class:: classref-reftable-group
 
@@ -43,7 +43,7 @@ Framebuffer cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-base
 
 :ref:`RID<class_RID>` **get_cache_multipass**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], passes\: :ref:`Array<class_Array>`\[:ref:`RDFramebufferPass<class_RDFramebufferPass>`\], views\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_FramebufferCacheRD_method_get_cache_multipass>`
 
-Creates, or obtains a cached, framebuffer. ``textures`` lists textures accessed. ``passes`` defines the subpasses and texture allocation, if left empty a single pass is created and textures are allocated depending on their usage flags. ``views`` defines the number of views used when rendering.
+建立或取得快取的影格緩衝區。\ ``textures`` 列出存取的紋理。\ ``passes`` 定義子通道和紋理分配，如果留空，則會建立單個通道並根據其使用標誌分配紋理。\ ``views`` 定義渲染時使用的檢視數量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

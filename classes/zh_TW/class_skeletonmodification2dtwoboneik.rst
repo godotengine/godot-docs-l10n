@@ -84,7 +84,7 @@ TwoBoneIK 適用於手臂、腿部，其實任何能夠用兩根骨頭彎向某�
 - |void| **set_flip_bend_direction**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flip_bend_direction**\ (\ )
 
-If ``true``, the bones in the modification will bend outward as opposed to inwards when contracting. If ``false``, the bones will bend inwards when contracting.
+如果為 ``true``\ ，則該修改中的骨骼在收縮時將向外彎曲，而不是向內彎曲。如果為 ``false``\ ，則骨骼在收縮時會向內彎曲。
 
 .. rst-class:: classref-item-separator
 

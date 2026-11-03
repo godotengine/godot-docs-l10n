@@ -9,7 +9,7 @@ Window
 
 **被繼承：** :ref:`AcceptDialog<class_AcceptDialog>`, :ref:`Popup<class_Popup>`
 
-所有視窗、對話方塊、彈出框的基底類別。
+所有視窗、對話框、彈出框的基底類別。
 
 .. rst-class:: classref-introduction-group
 
@@ -18,16 +18,16 @@ Window
 
 建立視窗的節點。視窗可以是原生系統視窗，也可以是嵌入到其他 **Window** 中的視窗（見 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`\ ）。
 
-運作時，\ **Window** 不會在請求關閉時自動關閉。你需要使用 :ref:`close_requested<class_Window_signal_close_requested>` 訊號手動處理（適用於點擊關閉按鈕和點擊快顯視窗外部）。
+運作時，\ **Window** 不會在請求關閉時自動關閉。你需要使用 :ref:`close_requested<class_Window_signal_close_requested>` 訊號手動處理（適用於點選關閉按鈕和點選快顯視窗外部）。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+- :doc:`HDR輸出 <../tutorials/rendering/hdr_output>`
 
-- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+- `多視窗演示 <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -350,7 +350,7 @@ Window
 
 **close_requested**\ (\ ) :ref:`🔗<class_Window_signal_close_requested>`
 
-按下該 **Window** 的關閉按鈕或啟用 :ref:`popup_window<class_Window_property_popup_window>` 並且使用者在視窗外點擊時發出。
+按下該 **Window** 的關閉按鈕或啟用 :ref:`popup_window<class_Window_property_popup_window>` 並且使用者在視窗外點選時發出。
 
 這個訊號可以用來處理視窗的關閉，例如將其連接到 :ref:`hide()<class_Window_method_hide>`\ 。
 
@@ -364,9 +364,9 @@ Window
 
 **dpi_changed**\ (\ ) :ref:`🔗<class_Window_signal_dpi_changed>`
 
-Emitted when the **Window**'s DPI changes as a result of OS-level changes (e.g. moving the window from a Retina display to a lower resolution one).
+該 **Window** 的 DPI 由於作業系統層級的更改而發生更改時發出（例如將該視窗從 Retina 螢幕移動到了更低解析度的螢幕）。
 
-\ **Note:** Only implemented on macOS and Linux (Wayland).
+\ **注意：**\ 僅在 macOS 和 Linux（Wayland）上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Emitted when the **Window**'s DPI changes as a result of OS-level changes (e.g. 
 
 **files_dropped**\ (\ files\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_Window_signal_files_dropped>`
 
-Emitted when files are dragged from the OS file manager and dropped in the game window. The argument is a list of file paths.
+將檔案從作業系統檔案管理器拖放到遊戲視窗時發出。參數為檔案路徑清單。
 
 ::
 
@@ -388,7 +388,7 @@ Emitted when files are dragged from the OS file manager and dropped in the game 
     func on_files_dropped(files):
         print(files)
 
-\ **Note:** This signal only works with native windows, i.e. the main window and **Window**-derived nodes when :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is disabled in the main viewport.
+\ **注意：**\ 該訊號僅對原生視窗有效，即主視窗及主視埠停用 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 時的 **Window** 派生節點。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ Emitted when files are dragged from the OS file manager and dropped in the game 
 
 **nonclient_window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_nonclient_window_input>`
 
-Emitted when the mouse event is received by the custom decoration area defined by :ref:`nonclient_area<class_Window_property_nonclient_area>`, and normal input to the window is blocked (such as when it has an exclusive child opened). ``event``'s position is in the embedder's coordinate system.
+當 :ref:`nonclient_area<class_Window_property_nonclient_area>` 定義的自訂裝飾區域接收到滑鼠事件並且視窗的正常輸入被阻止時（例如，當視窗打開一個獨佔子視窗時）發出。\ ``event`` 的位置位於嵌入器的座標系中。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Emitted when the mouse event is received by the custom decoration area defined b
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
+當 :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 回傳的輸出最大線性值發生變化時發出。當啟用或停用 HDR 輸出，以及視窗的任何 HDR 輸出亮度值發生變化時，例如，當玩家調整螢幕亮度設定或將視窗移動到不同的螢幕時，就會發生。\ ``output_max_linear_value`` 是新值。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Emitted when the output max linear value returned by :ref:`get_output_max_linear
 
 **title_changed**\ (\ ) :ref:`🔗<class_Window_signal_title_changed>`
 
-Emitted when window title bar text is changed.
+當視窗標題欄文字發生變化時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ Emitted when window title bar text is changed.
 
 **window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_window_input>`
 
-該 **Window** 持有焦點並收到任何輸入時發出，會把收到的事件作為參數傳入。該事件如果存在位置屬性，該位置使用嵌入器的坐標系。
+該 **Window** 持有焦點並收到任何輸入時發出，會把收到的事件作為參數傳入。該事件如果存在位置屬性，該位置使用嵌入器的座標系。
 
 .. rst-class:: classref-section-separator
 
@@ -579,15 +579,15 @@ enum **Mode**: :ref:`🔗<enum_Window_Mode>`
 
 :ref:`Mode<enum_Window_Mode>` **MODE_FULLSCREEN** = ``3``
 
-Full screen mode with full multi-window support.
+具有完整多視窗支援的全螢幕模式。
 
-Full screen window covers the entire display area of a screen and has no decorations. The display's video mode is not changed.
+全螢幕視窗覆蓋螢幕的整個顯示區域，且沒有任何裝飾。顯示的影片模式沒有更改。
 
-\ **On Android:** This enables immersive mode.
+\ **在 Android 上：**\ 將啟用沈浸模式。
 
-\ **On macOS:** A new desktop is used to display the running project.
+\ **在 macOS 上：**\ 使用新桌面來顯示正在執行的專案。
 
-\ **Note:** Regardless of the platform, enabling full screen will change the window size to match the monitor's size. Therefore, make sure your project supports :doc:`multiple resolutions <../tutorials/rendering/multiple_resolutions>` when enabling full screen mode.
+\ **注意：**\ 無論平台如何，啟用全螢幕都會更改視窗大小以匹配顯示器的大小。因此，請確保你的專案在啟用全螢幕模式時支援\ :doc:`多種解析度 <../tutorials/rendering/multiple_resolutions>`\ 。
 
 .. _class_Window_constant_MODE_EXCLUSIVE_FULLSCREEN:
 
@@ -595,23 +595,23 @@ Full screen window covers the entire display area of a screen and has no decorat
 
 :ref:`Mode<enum_Window_Mode>` **MODE_EXCLUSIVE_FULLSCREEN** = ``4``
 
-A single window full screen mode. This mode has less overhead, but only one window can be open on a given screen at a time (opening a child window or application switching will trigger a full screen transition).
+單視窗全螢幕模式。這種模式開銷較小，但一次只能在給定螢幕上打開一個視窗（打開子視窗或切換應用程式會觸發全螢幕過渡）。
 
-Full screen window covers the entire display area of a screen and has no border or decorations. The display's video mode is not changed.
+全螢幕視窗會覆蓋螢幕的整個顯示區域，沒有邊框或裝飾。顯示影片模式沒有改變。
 
-\ **Note:** This mode might not work with screen recording software.
+\ **注意：**\ 該模式下錄屏軟體可能無法正常工作。
 
-\ **On Android:** This enables immersive mode.
+\ **在 Android 上：**\ 將啟用沈浸模式。
 
-\ **On Windows:** Depending on video driver, full screen transition might cause screens to go black for a moment.
+\ **在 Windows 上：**\ 取決於影片驅動程式，全螢幕過渡可能會導致螢幕暫時變黑。
 
-\ **On macOS:** A new desktop is used to display the running project. Exclusive full screen mode prevents Dock and Menu from showing up when the mouse pointer is hovering the edge of the screen.
+\ **在 macOS 上：**\ 一個新的桌面用於顯示正在執行的專案。當滑鼠指針懸停在螢幕邊緣時，獨佔全螢幕模式會阻止 Dock 和 Menu 出現。
 
-\ **On Linux (X11):** Exclusive full screen mode bypasses compositor.
+\ **在 Linux（X11）上：**\ 獨佔全螢幕模式會繞過合成器。
 
-\ **On Linux (Wayland):** Equivalent to :ref:`MODE_FULLSCREEN<class_Window_constant_MODE_FULLSCREEN>`.
+\ **在 Linux（Wayland）上：**\ 等價於 :ref:`MODE_FULLSCREEN<class_Window_constant_MODE_FULLSCREEN>`\ 。
 
-\ **Note:** Regardless of the platform, enabling full screen will change the window size to match the monitor's size. Therefore, make sure your project supports :doc:`multiple resolutions <../tutorials/rendering/multiple_resolutions>` when enabling full screen mode.
+\ **注意：**\ 無論平台如何，啟用全螢幕都會更改視窗大小以匹配顯示器的大小。因此，確保你的專案在啟用全螢幕模式時支援\ :doc:`多個解析度 <../tutorials/rendering/multiple_resolutions>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+該視窗不能通過拖動其調整大小的控點來調整大小。仍然可以使用 :ref:`size<class_Window_property_size>` 來調整視窗的大小。全螢幕視窗會忽略該標誌。用 :ref:`unresizable<class_Window_property_unresizable>` 設定。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS、Windows 和嵌入式視窗上實作。
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -639,9 +639,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+該視窗沒有原生標題欄和其他裝飾。全螢幕視窗會忽略該標誌。由 :ref:`borderless<class_Window_property_borderless>` 設定。
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **注意：**\ 該標誌已在 Linux（X11/Wayland）、macOS、Windows 和嵌入式視窗上實作。
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -649,9 +649,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+該視窗懸浮在所有其他視窗之上。全螢幕視窗會忽略該標誌。由 :ref:`always_on_top<class_Window_property_always_on_top>` 設定。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS、Windows 和嵌入式視窗上實作。
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -659,11 +659,11 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
+視窗背景可以透明。使用 :ref:`transparent<class_Window_property_transparent>` 設定。
 
-\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 或視窗的 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 設定為 ``false``\ ，則該標誌無效。
 
-\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **注意：**\ 透明支援已在 Linux（X11/Wayland）、macOS、Windows 和嵌入式視窗上實作。
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -671,9 +671,9 @@ The window background can be transparent. Set with :ref:`transparent<class_Windo
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+視窗無法被聚焦。無焦點視窗會忽略除滑鼠點選之外的所有輸入。由 :ref:`unfocusable<class_Window_property_unfocusable>` 設定。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS、Windows 和嵌入式視窗上實作。
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -681,9 +681,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
+視窗是選單或 :ref:`OptionButton<class_OptionButton>` 下拉選單的一部分。視窗可見時，該標誌無法更改。活動彈出視窗將獨佔地接收所有輸入，但不會搶佔其父視窗的焦點。當使用者點選彈出視窗外部或切換應用程式時，彈出視窗會自動關閉。彈出視窗必須已設定瞬態父視窗（參見 :ref:`transient<class_Window_property_transient>`\ ）。
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
+\ **注意：**\ 該標誌已在 Linux（X11/Wayland）、macOS、Windows 和嵌入式 :ref:`Popup<class_Popup>` 視窗中實作。
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -691,11 +691,11 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+視窗內容擴充到視窗的整個大小。與無邊框視窗不同，邊框被保留，可以用來調整視窗的大小，標題欄透明，但帶有最小化/最大化/關閉按鈕。可通過 :ref:`extend_to_title<class_Window_property_extend_to_title>` 設定。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌在嵌入式視窗中無效。
 
-\ **Note:** This flag is implemented only on macOS.
+\ **注意：**\ 該標誌僅在 macOS 上實作。
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -703,11 +703,11 @@ Window content is expanded to the full size of the window. Unlike borderless win
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+所有滑鼠事件都被傳遞到同一應用程式的底層視窗。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌在嵌入式視窗中無效。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS 和 Windows 上實作。
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -715,11 +715,11 @@ All mouse events are passed to the underlying window of the same application.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_SHARP_CORNERS** = ``8``
 
-Window style is overridden, forcing sharp corners.
+覆蓋視窗樣式，強制尖角。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌對嵌入式視窗無效。
 
-\ **Note:** This flag is implemented only on Windows (11).
+\ **注意：**\ 該標誌僅在 Windows（11）上實作。
 
 .. _class_Window_constant_FLAG_EXCLUDE_FROM_CAPTURE:
 
@@ -727,13 +727,13 @@ Window style is overridden, forcing sharp corners.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXCLUDE_FROM_CAPTURE** = ``9``
 
-Windows is excluded from screenshots taken by :ref:`DisplayServer.screen_get_image()<class_DisplayServer_method_screen_get_image>`, :ref:`DisplayServer.screen_get_image_rect()<class_DisplayServer_method_screen_get_image_rect>`, and :ref:`DisplayServer.screen_get_pixel()<class_DisplayServer_method_screen_get_pixel>`.
+在 :ref:`DisplayServer.screen_get_image()<class_DisplayServer_method_screen_get_image>`\ 、\ :ref:`DisplayServer.screen_get_image_rect()<class_DisplayServer_method_screen_get_image_rect>` 和 :ref:`DisplayServer.screen_get_pixel()<class_DisplayServer_method_screen_get_pixel>` 的截圖中排除該視窗。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌對嵌入式視窗無效。
 
-\ **Note:** This flag is implemented on macOS and Windows (10, 20H1).
+\ **注意：**\ 該標誌在 macOS 和 Windows（10、20H1）上實作。
 
-\ **Note:** Setting this flag will prevent standard screenshot methods from capturing a window image, but does **NOT** guarantee that other apps won't be able to capture an image. It should not be used as a DRM or security measure.
+\ **注意：**\ 設定該標誌會阻止標準截屏方法捕獲到視窗影像，但\ **無法**\ 保證其他應用無法捕獲影像。不應用作 DRM 和安全措施。
 
 .. _class_Window_constant_FLAG_POPUP_WM_HINT:
 
@@ -741,11 +741,11 @@ Windows is excluded from screenshots taken by :ref:`DisplayServer.screen_get_ima
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+向視窗管理器發出訊號，表明該視窗應該是實作定義的“彈出視窗” （通常是浮動、無邊框、不可平鋪且不可移動的子視窗）。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌在嵌入式視窗中無效。
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **注意：**\ 該標誌已在 Linux（Wayland）上實作。
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -753,11 +753,11 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+停用視窗最小化按鈕。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌在嵌入式視窗中無效。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS 和 Windows 上實作。
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -765,11 +765,11 @@ Window minimize button is disabled.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+停用視窗最大化按鈕。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 該標誌在嵌入式視窗中無效。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 該標誌已在 Linux（X11）、macOS 和 Windows 上實作。
 
 .. _class_Window_constant_FLAG_MAX:
 
@@ -795,7 +795,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+不會為了匹配 **Window** 的大小而對內容進行縮放（\ :ref:`content_scale_size<class_Window_property_content_scale_size>` 將被忽略）。
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -803,7 +803,7 @@ The content will not be scaled to match the **Window**'s size (:ref:`content_sca
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_CANVAS_ITEMS** = ``1``
 
-會將內容按照目標大小算繪。比 :ref:`CONTENT_SCALE_MODE_VIEWPORT<class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT>` 更消耗性能，但結果更佳。
+會將內容按照目標大小渲染。比 :ref:`CONTENT_SCALE_MODE_VIEWPORT<class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT>` 更消耗效能，但結果更佳。
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT:
 
@@ -811,7 +811,7 @@ The content will not be scaled to match the **Window**'s size (:ref:`content_sca
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_VIEWPORT** = ``2``
 
-會將內容按照原始大小算繪，然後再縮放到目標大小。比 :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` 性能更高，但會導致圖像的圖元化。
+會將內容按照原始大小渲染，然後再縮放到目標大小。比 :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` 效能更高，但會導致影像的圖元化。
 
 .. rst-class:: classref-item-separator
 
@@ -837,7 +837,7 @@ enum **ContentScaleAspect**: :ref:`🔗<enum_Window_ContentScaleAspect>`
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_KEEP** = ``1``
 
-會保留內容的縱橫比。如果目標大小與原始大小的縱橫比不同，則會將圖像居中，左右兩側會出現黑條。
+會保留內容的縱橫比。如果目標大小與原始大小的縱橫比不同，則會將影像居中，左右兩側會出現黑條。
 
 .. _class_Window_constant_CONTENT_SCALE_ASPECT_KEEP_WIDTH:
 
@@ -937,7 +937,7 @@ enum **LayoutDirection**: :ref:`🔗<enum_Window_LayoutDirection>`
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_SYSTEM_LOCALE** = ``4``
 
-Automatic layout direction, determined from the system locale.
+自動版面配置方向，根據系統區域設定確定。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_MAX:
 
@@ -945,7 +945,7 @@ Automatic layout direction, determined from the system locale.
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_MAX** = ``5``
 
-Represents the size of the :ref:`LayoutDirection<enum_Window_LayoutDirection>` enum.
+代表 :ref:`LayoutDirection<enum_Window_LayoutDirection>` 列舉的大小。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_LOCALE:
 
@@ -1046,7 +1046,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 
 - 節點進入場景樹。
 
-\ **注意：**\ 為了優化性能，此節點在場景樹之外發生更改時不會發送此通知。取而代之的是，當節點進入場景樹時會均勻套用所有主題項的更新。
+\ **注意：**\ 為了最佳化效能，此節點在場景樹之外發生更改時不會發送此通知。取而代之的是，當節點進入場景樹時會均勻套用所有主題項的更新。
 
 .. rst-class:: classref-section-separator
 
@@ -1068,7 +1068,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_accessibility_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_accessibility_description**\ (\ )
 
-The human-readable node description that is reported to assistive apps.
+報告給輔助應用的人類可讀節點描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1085,7 @@ The human-readable node description that is reported to assistive apps.
 - |void| **set_accessibility_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_accessibility_name**\ (\ )
 
-The human-readable node name that is reported to assistive apps.
+報告給輔助應用的人類可讀節點名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1172,7 +1172,7 @@ The human-readable node name that is reported to assistive apps.
 - |void| **set_content_scale_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_content_scale_factor**\ (\ )
 
-Specifies the base scale of **Window**'s content when its :ref:`size<class_Window_property_size>` is equal to :ref:`content_scale_size<class_Window_property_content_scale_size>`. See also :ref:`Viewport.get_stretch_transform()<class_Viewport_method_get_stretch_transform>`.
+指定當 :ref:`size<class_Window_property_size>` 等於 :ref:`content_scale_size<class_Window_property_content_scale_size>` 時 **Window** 內容的基礎比例。另見 :ref:`Viewport.get_stretch_transform()<class_Viewport_method_get_stretch_transform>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1206,11 +1206,11 @@ Specifies the base scale of **Window**'s content when its :ref:`size<class_Windo
 - |void| **set_content_scale_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_content_scale_size**\ (\ )
 
-The content's base size in "virtual" pixels. Not to be confused with :ref:`size<class_Window_property_size>`, which sets the actual window's physical size in pixels. If set to a value greater than ``0`` and :ref:`content_scale_mode<class_Window_property_content_scale_mode>` is set to a value other than :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, the **Window**'s content will be scaled when the window is resized to a different size. Higher values will make the content appear *smaller*, as it will be able to fit more of the project in view. On the root **Window**, this is set to match :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` by default.
+內容的基礎大小，單位為“虛擬”像素。請勿與 :ref:`size<class_Window_property_size>` 混淆，後者設定的是視窗的實際物理大小，單位為像素。如果設定為大於 ``0`` 的值且 :ref:`content_scale_mode<class_Window_property_content_scale_mode>` 設為除 :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>` 以外的值，則當將視窗調整為不同大小時，\ **Window** 的內容將被縮放。更高的值會讓內容看起來\ *更小*\ ，因為它可以在檢視中容納更多的專案內容。在根 **Window** 上，預設情況下，將被設定與 :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` 相匹配。
 
-For example, when using :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` and :ref:`content_scale_size<class_Window_property_content_scale_size>` set to ``Vector2i(1280, 720)``, using a window size of ``2560×1440`` will make 2D elements appear at double their original size, as the content is scaled by a factor of ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
+例如，當使用 :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` 並將 :ref:`content_scale_size<class_Window_property_content_scale_size>` 設定為 ``Vector2i(1280, 720)`` 時，使用 ``2560×1440`` 的視窗大小將使 2D 元素顯示為其原始大小的兩倍，因為內容按 ``2.0`` 的倍數縮放（\ ``2560.0 / 1280.0 = 2.0``\ ，\ ``1440.0 / 720.0 = 2.0``\ ）。
 
-See `the Base size section of the Multiple resolutions documentation <../tutorials/rendering/multiple_resolutions.html#base-size>`__ for details.
+有關詳細資訊，見 `多解析度文件的基本大小部分 <../tutorials/rendering/multiple_resolutions.html#base-size>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1261,11 +1261,11 @@ See `the Base size section of the Multiple resolutions documentation <../tutoria
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** is excluded from screenshots taken by :ref:`DisplayServer.screen_get_image()<class_DisplayServer_method_screen_get_image>`, :ref:`DisplayServer.screen_get_image_rect()<class_DisplayServer_method_screen_get_image_rect>`, and :ref:`DisplayServer.screen_get_pixel()<class_DisplayServer_method_screen_get_pixel>`.
+如果為 ``true``\ ，則會在 :ref:`DisplayServer.screen_get_image()<class_DisplayServer_method_screen_get_image>`\ 、\ :ref:`DisplayServer.screen_get_image_rect()<class_DisplayServer_method_screen_get_image_rect>`\ 、\ :ref:`DisplayServer.screen_get_pixel()<class_DisplayServer_method_screen_get_pixel>` 的截圖中排除該 **Window**\ 。
 
-\ **Note:** This property is implemented on macOS and Windows.
+\ **注意：**\ 該屬性在 macOS 和 Windows 上實作。
 
-\ **Note:** Enabling this setting will prevent standard screenshot methods from capturing a window image, but does **NOT** guarantee that other apps won't be able to capture an image. It should not be used as a DRM or security measure.
+\ **注意：**\ 設定該標誌會阻止標準截屏方法捕獲到視窗影像，但\ **無法**\ 保證其他應用無法捕獲影像。不應用作 DRM 和安全措施。
 
 .. rst-class:: classref-item-separator
 
@@ -1322,7 +1322,7 @@ If ``true``, the **Window** is excluded from screenshots taken by :ref:`DisplayS
 - |void| **set_force_native**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_native**\ (\ )
 
-If ``true``, native window will be used regardless of parent viewport and project settings.
+如果為 ``true``\ ，則無論父視埠及專案設定如何都會使用原生視窗。
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1339,7 @@ If ``true``, native window will be used regardless of parent viewport and projec
 - |void| **set_hdr_output_requested**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hdr_output_requested**\ (\ )
 
-If ``true``, requests HDR output for the **Window**, falling back to SDR if not supported, and automatically switching between HDR and SDR as the window moves between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of this **Window** must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+如果為 ``true``\ ，則請求該 **Window** 進行 HDR 輸出（若不支援則回退至 SDR），並在視窗在不同螢幕間移動、螢幕功能變更或系統設定修改時，自動在 HDR 與 SDR 之間切換。這將在內部強制主 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 啟用。該 **Window** 的所有其他 :ref:`SubViewport<class_SubViewport>` 必須啟用其 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 屬性才能生成 HDR 輸出。
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ If ``true``, requests HDR output for the **Window**, falling back to SDR if not 
 - |void| **set_initial_position**\ (\ value\: :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>`\ )
 - :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **get_initial_position**\ (\ )
 
-Specifies the initial type of position for the **Window**.
+指定該 **Window** 的初始位置型別。
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1373,7 @@ Specifies the initial type of position for the **Window**.
 - |void| **set_keep_title_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_title_visible**\ (\ )
 
-If ``true``, the **Window** width is expanded to keep the title bar text fully visible.
+如果為 ``true``\ ，則該 **Window** 寬度被擴充以保持標題欄文字完全可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1409,11 +1409,11 @@ If ``true``, the **Window** width is expanded to keep the title bar text fully v
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window**'s maximize button is disabled.
+如果為 ``true``\ ，則停用該 **Window** 的最大化按鈕。
 
-\ **Note:** If both minimize and maximize buttons are disabled, buttons are fully hidden, and only close button is visible.
+\ **注意：**\ 如果最小化和最大化按鈕都被停用，則這兩個按鈕將完全隱藏，僅顯示關閉按鈕。
 
-\ **Note:** This property is implemented only on macOS and Windows.
+\ **注意：**\ 該屬性僅在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1449,11 +1449,11 @@ If ``true``, the **Window**'s maximize button is disabled.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window**'s minimize button is disabled.
+如果為 ``true``\ ，則停用該 **Window** 的最小化按鈕。
 
-\ **Note:** If both minimize and maximize buttons are disabled, buttons are fully hidden, and only close button is visible.
+\ **注意：**\ 如果最小化和最大化按鈕都被停用，則這兩個按鈕將完全隱藏，僅顯示關閉按鈕。
 
-\ **Note:** This property is implemented only on macOS and Windows.
+\ **注意：**\ 該屬性僅在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1474,7 +1474,7 @@ If ``true``, the **Window**'s minimize button is disabled.
 
 \ **注意：**\ 在 Windows 和 Linux 上，全屏與獨佔全屏是不同的模式。
 
-\ **注意：**\ 這個方法僅對原生視窗有效，即主視窗和禁用主視口 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 時的 **Window** 衍生節點。
+\ **注意：**\ 這個方法僅對原生視窗有效，即主視窗和停用主視埠 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 時的 **Window** 衍生節點。
 
 .. rst-class:: classref-item-separator
 
@@ -1512,42 +1512,42 @@ If ``true``, the **Window**'s minimize button is disabled.
 - |void| **set_mouse_passthrough_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_mouse_passthrough_polygon**\ (\ )
 
-Sets a polygonal region of the window which accepts mouse events. Mouse events outside the region will be passed through.
+設定視窗的一個接受滑鼠事件的多邊形區域。該區域外的滑鼠事件將被傳遞出去。
 
-Passing an empty array will disable passthrough support (all mouse events will be intercepted by the window, which is the default behavior).
+傳遞一個空陣列將停用穿透支援（所有滑鼠事件將被視窗攔截，這是預設行為）。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Set region, using Path2D node.
+    # 設定區域，使用 Path2D 節點。
     $Window.mouse_passthrough_polygon = $Path2D.curve.get_baked_points()
 
-    # Set region, using Polygon2D node.
+    # 設定區域，使用 Polygon2D 節點。
     $Window.mouse_passthrough_polygon = $Polygon2D.polygon
 
-    # Reset region to default.
+    # 重設區域為預設值。
     $Window.mouse_passthrough_polygon = []
 
  .. code-tab:: csharp
 
-    // Set region, using Path2D node.
+    // 設定區域，使用 Path2D 節點。
     GetNode<Window>("Window").MousePassthroughPolygon = GetNode<Path2D>("Path2D").Curve.GetBakedPoints();
 
-    // Set region, using Polygon2D node.
+    // 設定區域，使用 Polygon2D 節點。
     GetNode<Window>("Window").MousePassthroughPolygon = GetNode<Polygon2D>("Polygon2D").Polygon;
 
-    // Reset region to default.
+    // 重設區域為預設值。
     GetNode<Window>("Window").MousePassthroughPolygon = [];
 
 
 
-\ **Note:** This property is ignored if :ref:`mouse_passthrough<class_Window_property_mouse_passthrough>` is set to ``true``.
+\ **注意：**\ 如果 :ref:`mouse_passthrough<class_Window_property_mouse_passthrough>` 設定為 ``true``\ ，則忽略此屬性。
 
-\ **Note:** On Windows, the portion of a window that lies outside the region is not drawn, while on Linux (X11) and macOS it is.
+\ **注意：**\ 在 Windows 上，位於區域外的視窗部分不會被繪製，而在 Linux (X11) 和 macOS 上則會被繪製。
 
-\ **Note:** This property is implemented on Linux (X11), macOS and Windows.
+\ **注意：**\ 該屬性在 Linux (X11)、macOS 和 Windows 上實作。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -1566,7 +1566,7 @@ Passing an empty array will disable passthrough support (all mouse events will b
 - |void| **set_nonclient_area**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_nonclient_area**\ (\ )
 
-If set, defines the window's custom decoration area which will receive mouse input, even if normal input to the window is blocked (such as when it has an exclusive child opened). See also :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
+如果設定，則定義視窗的自訂裝飾區域，該區域將接收滑鼠輸入，即使對視窗的正常輸入被阻止（例如，當它打開一個獨佔子視窗時）。另見 :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1600,7 +1600,7 @@ If set, defines the window's custom decoration area which will receive mouse inp
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** will signal to the window manager that it is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+如果為 ``true``\ ，則 **Window** 會向視窗管理器發出訊號，告知該視窗應為實作定義的“彈出視窗”（通常是懸浮、無邊框、無法平鋪、無法移動的子視窗）。
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ If ``true``, the **Window** will signal to the window manager that it is suppose
 
 該視窗的位置，單位為圖元。
 
-如果 :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` 為 ``false``\ ，則該位置使用螢幕絕對座標。通常適用於編輯器外掛程式。如果該設置項為 ``true``\ ，則該視窗的位置使用其父 :ref:`Viewport<class_Viewport>` 中的座標。
+如果 :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` 為 ``false``\ ，則該位置使用螢幕絕對座標。通常適用於編輯器外掛程式。如果該設定項為 ``true``\ ，則該視窗的位置使用其父 :ref:`Viewport<class_Viewport>` 中的座標。
 
 \ **注意：**\ 這個屬性僅在 :ref:`initial_position<class_Window_property_initial_position>` 為 :ref:`WINDOW_INITIAL_POSITION_ABSOLUTE<class_Window_constant_WINDOW_INITIAL_POSITION_ABSOLUTE>` 時有效。
 
@@ -1638,11 +1638,11 @@ If ``true``, the **Window** will signal to the window manager that it is suppose
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** will override the OS window style to display sharp corners.
+如果為 ``true``\ ，則 **Window** 會覆蓋作業系統視窗樣式，顯示尖角。
 
-\ **Note:** This property is implemented only on Windows (11).
+\ **注意：**\ 這個屬性僅在 Windows（11）上實作。
 
-\ **Note:** This property only works with native windows.
+\ **注意：**\ 這個屬性僅對原生視窗有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ If ``true``, the **Window** will override the OS window style to display sharp c
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
+視窗大小，單位為像素。另見 :ref:`content_scale_size<class_Window_property_content_scale_size>`\ ，它不會設定視窗的物理大小，但會影響縮放相對於目前 :ref:`content_scale_mode<class_Window_property_content_scale_mode>` 的工作方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1748,7 +1748,7 @@ The window's size in pixels. See also :ref:`content_scale_size<class_Window_prop
 - |void| **set_transient_to_focused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_transient_to_focused**\ (\ )
 
-If ``true``, and the **Window** is :ref:`transient<class_Window_property_transient>`, this window will (at the time of becoming visible) become transient to the currently focused window instead of the immediate parent window in the hierarchy. Note that the transient parent is assigned at the time this window becomes visible, so changing it afterwards has no effect until re-shown.
+如果為 ``true`` 並且 **Window** 啟用了 :ref:`transient<class_Window_property_transient>`\ ，則該視窗（在變為可見時）會變為目前聚焦視窗的暫時視窗，而不是層級結構中直接父視窗的暫時視窗。請注意，暫時父級是在視窗變為可見時賦值的，所以如果在顯示之後進行更改，則需要等到再次顯示才會生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1765,11 +1765,11 @@ If ``true``, and the **Window** is :ref:`transient<class_Window_property_transie
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window**'s background can be transparent. This is best used with embedded windows.
+如果為 ``true``\ ，則 **Window** 的背景可以是透明的。最好用在嵌入式視窗中。
 
-\ **Note:** Transparency support is implemented on Linux, macOS and Windows, but availability might vary depending on GPU driver, display manager, and compositor capabilities.
+\ **注意：**\ 透明度支援已在 Linux、macOS 和 Windows 上實作，但可用性可能因 GPU 驅動程式、顯示管理器和合成器的能力而異。
 
-\ **Note:** This property has no effect if :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` is set to ``false``.
+\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 被設定為 ``false``\ ，則這個屬性無效。
 
 .. rst-class:: classref-item-separator
 
@@ -1803,7 +1803,7 @@ If ``true``, the **Window**'s background can be transparent. This is best used w
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the window can't be resized.
+如果為 ``true``\ ，則視窗無法調整大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1856,7 +1856,7 @@ If ``true``, the window can't be resized.
 
 :ref:`Vector2<class_Vector2>` **_get_contents_minimum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Window_private_method__get_contents_minimum_size>`
 
-可以被使用者重寫的虛方法。在匯出完成後被呼叫。
+需要使用者實作的虛方法。能夠覆蓋 :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>` 的回傳值。
 
 .. rst-class:: classref-item-separator
 
@@ -1868,7 +1868,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Window_method_add_theme_color_override>`
 
-為名為 ``name`` 的主題 :ref:`Color<class_Color>` 建立本地覆蓋項。為控制項獲取主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>` 移除。
+為名為 ``name`` 的主題 :ref:`Color<class_Color>` 建立本地覆蓋項。為控制項取得主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>` 移除。
 
 詳情請參閱 :ref:`get_theme_color()<class_Window_method_get_theme_color>` 和 :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>`\ 。
 
@@ -1882,7 +1882,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_constant_override>`
 
-為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>` 移除。
+為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>` 移除。
 
 另見 :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`\ 。
 
@@ -1896,7 +1896,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Window_method_add_theme_font_override>`
 
-為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>` 移除。
+為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>` 移除。
 
 另見 :ref:`get_theme_font()<class_Window_method_get_theme_font>`\ 。
 
@@ -1910,7 +1910,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_font_size_override>`
 
-為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>` 移除。
+為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>` 移除。
 
 另見 :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`\ 。
 
@@ -1924,7 +1924,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Window_method_add_theme_icon_override>`
 
-為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>` 移除。
+為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>` 移除。
 
 另見 :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`\ 。
 
@@ -1938,7 +1938,7 @@ If ``true``, the window can't be resized.
 
 |void| **add_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_Window_method_add_theme_stylebox_override>`
 
-為名為 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 建立本地覆蓋項。為控制項獲取主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>` 移除。
+為名為 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 建立本地覆蓋項。為控制項取得主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>` 移除。
 
 詳情請參閱 :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebox>` 和 :ref:`Control.add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>`\ 。
 
@@ -2000,9 +2000,9 @@ If ``true``, the window can't be resized.
 
 :ref:`Vector2<class_Vector2>` **get_contents_minimum_size**\ (\ ) |const| :ref:`🔗<class_Window_method_get_contents_minimum_size>`
 
-Returns the combined minimum size from the child :ref:`Control<class_Control>` nodes of the window. Use :ref:`child_controls_changed()<class_Window_method_child_controls_changed>` to update it when child nodes have changed.
+回傳該視窗子 :ref:`Control<class_Control>` 節點合併最小大小。請在子節點發生改變時使用 :ref:`child_controls_changed()<class_Window_method_child_controls_changed>` 進行更新。
 
-The value returned by this method can be overridden with :ref:`_get_contents_minimum_size()<class_Window_private_method__get_contents_minimum_size>`.
+這個方法的回傳值可以使用 :ref:`_get_contents_minimum_size()<class_Window_private_method__get_contents_minimum_size>` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -2026,7 +2026,7 @@ The value returned by this method can be overridden with :ref:`_get_contents_min
 
 :ref:`Window<class_Window>` **get_focused_window**\ (\ ) |static| :ref:`🔗<class_Window_method_get_focused_window>`
 
-Returns the focused window.
+回傳聚焦視窗。
 
 .. rst-class:: classref-item-separator
 
@@ -2050,9 +2050,9 @@ Returns the focused window.
 
 :ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed in this window, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. The :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes.
+返回該視窗中可顯示的線性顏色分量的最大值，無論 SDR 還是 HDR 輸出。如果未啟用或不支援 HDR，則返回 ``1.0``\ 。每當此值發生變化時，都會發出 :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 訊號。
 
-This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. When using this maximum linear value in your project, it should only be used to present colors directly to the screen without tonemapping and without influencing lighting, post-processing effects, or surrounding color. The following is an example that produces the brightest purple color that the screen can produce:
+該值用於色調映射和其他 :ref:`Environment<class_Environment>` 效果，以確保明亮的顏色在該視窗可顯示的範圍內呈現。在專案中使用此最大線性值時，僅應將其用於直接在螢幕上顯示顏色，而不進行色調映射，也不影響光照、後期處理效果或周圍顏色。以下範例顯示了螢幕可生成的最亮紫色：
 
 
 .. tabs::
@@ -2060,30 +2060,30 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
  .. code-tab:: gdscript
 
     func _process(_delta):
-        # output_max_linear_value may change often, so do this every frame.
+        # output_max_linear_value 可能經常改變，所以需要每影格執行。
         var max_linear_value = get_window().get_output_max_linear_value()
-        # Replace this with your color:
+        # 替換成你的 顏色：
         var original_color = Color.PURPLE
-        # Normalize to max_linear_value to produce the brightest color possible,
-        # regardless of SDR or HDR output:
+        # 將數值正規化到最大線性值，以產生盡可能亮的顏色，
+        # 無論是 SDR 還是 HDR 輸出：
         var bright_color = normalize_color(original_color, max_linear_value)
 
 
     func normalize_color(srgb_color, max_linear_value = 1.0):
-        # Color must be linear-encoded to use math operations.
+        # 要進行數學運算，顏色必須進行線性編碼。
         var linear_color = srgb_color.srgb_to_linear()
         var max_rgb_value = maxf(linear_color.r, maxf(linear_color.g, linear_color.b))
         var brightness_scale = max_linear_value / max_rgb_value
         linear_color *= brightness_scale
-        # Undo changes to the alpha channel, which should not be modified.
+        # 復原對 Alpha 通道的更改，該通道不應被修改。
         linear_color.a = srgb_color.a
-        # Convert back to nonlinear sRGB encoding, which is required for Color in
-        # Godot unless stated otherwise.
+        # 轉換回非線性 sRGB 編碼，除非另有說明，否則 Godot 中的顏色設定
+        # 需要使用非線性 sRGB 編碼。
         return linear_color.linear_to_srgb()
 
 
 
-\ **Note:** You will need to convert sRGB colors to linear before multiplying by this value to get correct results.
+\ **注意：**\ 需要將 sRGB 顏色轉換為線性顏色，然後再乘以該值以獲得正確的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -2095,9 +2095,9 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
 
 :ref:`Vector2i<class_Vector2i>` **get_position_with_decorations**\ (\ ) |const| :ref:`🔗<class_Window_method_get_position_with_decorations>`
 
-Returns the window's position including its border.
+回傳該視窗的位置，包括邊框。
 
-\ **Note:** If :ref:`visible<class_Window_property_visible>` is ``false``, this method returns the same value as :ref:`position<class_Window_property_position>`.
+\ **注意：**\ 如果 :ref:`visible<class_Window_property_visible>` 為 ``false``\ ，則該方法回傳的位置與 :ref:`position<class_Window_property_position>` 一致。
 
 .. rst-class:: classref-item-separator
 
@@ -2109,9 +2109,9 @@ Returns the window's position including its border.
 
 :ref:`Vector2i<class_Vector2i>` **get_size_with_decorations**\ (\ ) |const| :ref:`🔗<class_Window_method_get_size_with_decorations>`
 
-Returns the window's size including its border.
+回傳該視窗的大小，包括邊框。
 
-\ **Note:** If :ref:`visible<class_Window_property_visible>` is ``false``, this method returns the same value as :ref:`size<class_Window_property_size>`.
+\ **注意：**\ 如果 :ref:`visible<class_Window_property_visible>` 為 ``false``\ ，則該方法回傳的大小與 :ref:`size<class_Window_property_size>` 一致。
 
 .. rst-class:: classref-item-separator
 
@@ -2477,7 +2477,7 @@ Returns the window's size including its border.
 
 :ref:`bool<class_bool>` **is_layout_rtl**\ (\ ) |const| :ref:`🔗<class_Window_method_is_layout_rtl>`
 
-Returns ``true`` if the layout is right-to-left.
+如果版面配置是從右至左的，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2513,7 +2513,7 @@ Returns ``true`` if the layout is right-to-left.
 
 |void| **move_to_center**\ (\ ) :ref:`🔗<class_Window_method_move_to_center>`
 
-Centers the window in the current screen. If the window is embedded, it is centered in the embedder :ref:`Viewport<class_Viewport>` instead.
+將視窗居中顯示在目前螢幕中。如果視窗是嵌入式的，則會改為在嵌入器 :ref:`Viewport<class_Viewport>` 中居中顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2539,13 +2539,13 @@ Centers the window in the current screen. If the window is embedded, it is cente
 
 |void| **popup**\ (\ rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_Window_method_popup>`
 
-Shows the **Window** and makes it transient (see :ref:`transient<class_Window_property_transient>`). If ``rect`` is provided, it will be set as the **Window**'s size. Fails if called on the main window.
+顯示該 **Window** 並將其設定為暫時視窗（見 :ref:`transient<class_Window_property_transient>`\ ）。如果提供了 ``rect``\ ，則會將其設為 **Window** 的大小。對主視窗呼叫時會失敗。
 
-If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` is ``true`` (single-window mode), ``rect``'s coordinates are global and relative to the main window's top-left corner (excluding window decorations). If ``rect``'s position coordinates are negative, the window will be located outside the main window and may not be visible as a result.
+如果 :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` 為 ``true``\ （單視窗模式），\ ``rect`` 使用全域座標系，相對於主視窗的左上角（不含視窗的裝飾）。如果 ``rect`` 的位置座標為負數，則該視窗位於主視窗之外，因此可能不可見。
 
-If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` is ``false`` (multi-window mode), ``rect``'s coordinates are global and relative to the top-left corner of the leftmost screen. If ``rect``'s position coordinates are negative, the window will be placed at the top-left corner of the screen.
+如果 :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` 為 ``false``\ （多視窗模式），\ ``rect`` 使用全域座標系，相對於最左側螢幕的左上角。如果 ``rect`` 的位置座標為負數，則該視窗會被放置在該螢幕的左上角。
 
-\ **Note:** ``rect`` must be in global coordinates if specified.
+\ **注意：**\ 存在相關說明時，\ ``rect`` 必須使用全域座標。
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2599,7 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_exclusive**\ (\ from_node\: :ref:`Node<class_Node>`, rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_Window_method_popup_exclusive>`
 
-嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup()<class_Window_method_popup>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
+嘗試將該對話框的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup()<class_Window_method_popup>`\ 。對話框目前必須沒有父節點，否則該方法會失敗。
 
 另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
@@ -2613,7 +2613,7 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_exclusive_centered**\ (\ from_node\: :ref:`Node<class_Node>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered>`
 
-嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered()<class_Window_method_popup_centered>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
+嘗試將該對話框的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered()<class_Window_method_popup_centered>`\ 。對話框目前必須沒有父節點，否則該方法會失敗。
 
 另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
@@ -2627,7 +2627,7 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_exclusive_centered_clamped**\ (\ from_node\: :ref:`Node<class_Node>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered_clamped>`
 
-嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
+嘗試將該對話框的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。對話框目前必須沒有父節點，否則該方法會失敗。
 
 另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
@@ -2641,7 +2641,7 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_exclusive_centered_ratio**\ (\ from_node\: :ref:`Node<class_Node>`, ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered_ratio>`
 
-嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_ratio()<class_Window_method_popup_centered_ratio>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
+嘗試將該對話框的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_ratio()<class_Window_method_popup_centered_ratio>`\ 。對話框目前必須沒有父節點，否則該方法會失敗。
 
 另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
@@ -2655,7 +2655,7 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_exclusive_on_parent**\ (\ from_node\: :ref:`Node<class_Node>`, parent_rect\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Window_method_popup_exclusive_on_parent>`
 
-嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_on_parent()<class_Window_method_popup_on_parent>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
+嘗試將該對話框的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_on_parent()<class_Window_method_popup_on_parent>`\ 。對話框目前必須沒有父節點，否則該方法會失敗。
 
 另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
@@ -2825,9 +2825,9 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the **Window**. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+設定 **Window** 在任務欄或程式塢（Dock）圖示上進度條的型別和狀態。關於可能的取值以及每種模式的具體表現，請查閱 :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ 。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法僅在 Windows 和 macOS 系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -2839,11 +2839,11 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the **Wi
 
 |void| **set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the **Window** if it does not exist, sets the progress of the icon.
+如果該 **Window** 尚未存在，則在其任務欄/程式塢圖示上建立一個進度條，並設定圖示的進度。
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` 作為相對百分比值，範圍從 ``0.0``\ （最低）到 ``1.0``\ （最高）。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法僅在 Windows 和 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -2893,7 +2893,7 @@ Creates a progress bar on the taskbar/dock icon of the **Window** if it does not
 
 |void| **start_drag**\ (\ ) :ref:`🔗<class_Window_method_start_drag>`
 
-Starts an interactive drag operation on the window, using the current mouse position. Call this method when handling a mouse button being pressed to simulate a pressed event on the window's title bar. Using this method allows the window to participate in space switching, tiling, and other system features.
+在視窗上啟動互動式拖動操作，使用目前滑鼠位置。處理滑鼠按鈕按下事件時呼叫該方法可以模擬在視窗標題欄上按下的事件。使用該方法可以使視窗參與空間切換、平鋪等系統功能。
 
 .. rst-class:: classref-item-separator
 
@@ -2905,7 +2905,7 @@ Starts an interactive drag operation on the window, using the current mouse posi
 
 |void| **start_resize**\ (\ edge\: :ref:`WindowResizeEdge<enum_DisplayServer_WindowResizeEdge>`\ ) :ref:`🔗<class_Window_method_start_resize>`
 
-Starts an interactive resize operation on the window, using the current mouse position. Call this method when handling a mouse button being pressed to simulate a pressed event on the window's edge.
+在視窗上啟動互動式調整大小操作，使用目前滑鼠位置。處理滑鼠按鈕按下事件時呼叫該方法可以模擬在視窗邊緣上按下的事件。
 
 .. rst-class:: classref-section-separator
 
@@ -2946,7 +2946,7 @@ Starts an interactive resize operation on the window, using the current mouse po
 
 :ref:`int<class_int>` **close_h_offset** = ``18`` :ref:`🔗<class_Window_theme_constant_close_h_offset>`
 
-Horizontal position offset of the close button, relative to the end of the title bar, towards the beginning of the title bar.
+關閉按鈕的水平位置偏移，相對於標題欄的末端，朝向標題欄的開頭。
 
 .. rst-class:: classref-item-separator
 
@@ -2958,7 +2958,7 @@ Horizontal position offset of the close button, relative to the end of the title
 
 :ref:`int<class_int>` **close_v_offset** = ``24`` :ref:`🔗<class_Window_theme_constant_close_v_offset>`
 
-Vertical position offset of the close button, relative to the bottom of the title bar, towards the top of the title bar.
+關閉按鈕的垂直位置偏移，相對於標題欄的底部，朝向標題欄的頂部。
 
 .. rst-class:: classref-item-separator
 

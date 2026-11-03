@@ -157,9 +157,9 @@ sRGB 色彩空間。
 - |void| **set_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_colors**\ (\ )
 
-Gradient's colors as a :ref:`PackedColorArray<class_PackedColorArray>`.
+漸變的顏色，型別為 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
-\ **Note:** Setting this property updates all colors at once. To update any color individually use :ref:`set_color()<class_Gradient_method_set_color>`.
+\ **注意：**\ 設定該屬性會一次性更新所有顏色。單獨更改某個顏色請使用 :ref:`set_color()<class_Gradient_method_set_color>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -178,9 +178,9 @@ Gradient's colors as a :ref:`PackedColorArray<class_PackedColorArray>`.
 - |void| **set_interpolation_color_space**\ (\ value\: :ref:`ColorSpace<enum_Gradient_ColorSpace>`\ )
 - :ref:`ColorSpace<enum_Gradient_ColorSpace>` **get_interpolation_color_space**\ (\ )
 
-The color space used to interpolate between points of the gradient. It does not affect the returned colors, which will always use nonlinear sRGB encoding.
+用於在漸變點之間進行插值的色彩空間。不影響回傳的顏色，回傳的顏色始終使用非線性 sRGB 編碼。
 
-\ **Note:** This setting has no effect when :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` is set to :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
+\ **注意：**\ :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` 為 :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>` 時該設定無效。
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The color space used to interpolate between points of the gradient. It does not 
 - |void| **set_interpolation_mode**\ (\ value\: :ref:`InterpolationMode<enum_Gradient_InterpolationMode>`\ )
 - :ref:`InterpolationMode<enum_Gradient_InterpolationMode>` **get_interpolation_mode**\ (\ )
 
-The algorithm used to interpolate between points of the gradient.
+用於在漸變點之間進行插值的算法。
 
 .. rst-class:: classref-item-separator
 
@@ -214,9 +214,9 @@ The algorithm used to interpolate between points of the gradient.
 - |void| **set_offsets**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_offsets**\ (\ )
 
-Gradient's offsets as a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
+漸變的偏移量，型別為 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
-\ **Note:** Setting this property updates all offsets at once. To update any offset individually use :ref:`set_offset()<class_Gradient_method_set_offset>`.
+\ **注意：**\ 設定該屬性會一次性更新所有偏移量。單獨更改某個偏移量請使用 :ref:`set_offset()<class_Gradient_method_set_offset>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -309,7 +309,7 @@ Gradient's offsets as a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
 
 :ref:`Color<class_Color>` **sample**\ (\ offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Gradient_method_sample>`
 
-Returns the interpolated color specified by ``offset``. ``offset`` should be between ``0.0`` and ``1.0`` (inclusive). Using a value lower than ``0.0`` will return the same color as ``0.0``, and using a value higher than ``1.0`` will return the same color as ``1.0``. If your input value is not within this range, consider using :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>` on the input value with output values set to ``0.0`` and ``1.0``.
+回傳偏移量 ``offset`` 插值後的顏色。\ ``offset`` 應當在 ``0.0`` 和 ``1.0`` 之間（含兩端）。取值小於 ``0.0`` 回傳的顏色與 ``0.0`` 相同，取值大於 ``1.0`` 回傳的顏色與 ``1.0`` 相同。輸入值不在該範圍內時，請考慮對輸入值使用 :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>`\ ，將輸出值設為 ``0.0`` 和 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 

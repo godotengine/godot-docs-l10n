@@ -14,7 +14,7 @@ StyleBoxEmpty
 說明
 ----
 
-空的 :ref:`StyleBox<class_StyleBox>`\ ，可以用來代替預設樣式，什麼都不顯示（例如能夠“禁用”\ ``focus`` 樣式）。
+空的 :ref:`StyleBox<class_StyleBox>`\ ，可以用來代替預設樣式，什麼都不顯示（例如能夠“停用”\ ``focus`` 樣式）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,9 +14,9 @@ ClassDB
 說明
 ----
 
-Provides access to metadata stored for every available engine class.
+提供對引擎中所有可用類的中繼資料的存取。
 
-\ **Note:** Script-defined classes with ``class_name`` are not part of **ClassDB**, so they will not return reflection data such as a method or property list. However, :ref:`GDExtension<class_GDExtension>`-defined classes *are* part of **ClassDB**, so they will return reflection data.
+\ **注意：**\ 腳本使用 ``class_name`` 定義的類並不屬於 **ClassDB**\ ，因此不會回傳方法清單、屬性清單等反射資料。不過 :ref:`GDExtension<class_GDExtension>` 定義的類\ *屬於* **ClassDB**\ ，因此會回傳反射資料。
 
 .. rst-class:: classref-reftable-group
 
@@ -109,7 +109,7 @@ enum **APIType**: :ref:`🔗<enum_ClassDB_APIType>`
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_CORE** = ``0``
 
-Native Core class type.
+原生核心型別。
 
 .. _class_ClassDB_constant_API_EDITOR:
 
@@ -117,7 +117,7 @@ Native Core class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EDITOR** = ``1``
 
-Native Editor class type.
+原生編輯器型別。
 
 .. _class_ClassDB_constant_API_EXTENSION:
 
@@ -125,7 +125,7 @@ Native Editor class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EXTENSION** = ``2``
 
-GDExtension class type.
+GDExtension 型別。
 
 .. _class_ClassDB_constant_API_EDITOR_EXTENSION:
 
@@ -133,7 +133,7 @@ GDExtension class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EDITOR_EXTENSION** = ``3``
 
-GDExtension Editor class type.
+GDExtension 編輯器型別。
 
 .. _class_ClassDB_constant_API_NONE:
 
@@ -141,7 +141,7 @@ GDExtension Editor class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_NONE** = ``4``
 
-Unknown class type.
+未知型別。
 
 .. rst-class:: classref-section-separator
 
@@ -170,7 +170,7 @@ Unknown class type.
 
 :ref:`Variant<class_Variant>` **class_call_static**\ (\ class\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_ClassDB_method_class_call_static>`
 
-Calls a static method on a class.
+呼叫類的靜態方法。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Calls a static method on a class.
 
 :ref:`APIType<enum_ClassDB_APIType>` **class_get_api_type**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_api_type>`
 
-Returns the API type of the specified ``class``.
+回傳 ``class`` 類的 API 型別。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Returns the API type of the specified ``class``.
 
 :ref:`int<class_int>` **class_get_method_argument_count**\ (\ class\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_method_argument_count>`
 
-Returns the number of arguments of the method ``method`` of ``class`` or its ancestry if ``no_inheritance`` is ``false``.
+如果 ``no_inheritance`` 為 ``false``\ ，則回傳 ``class`` 或其祖先的方法 ``method`` 的參數數量。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ Returns the number of arguments of the method ``method`` of ``class`` or its anc
 
 :ref:`Variant<class_Variant>` **class_get_property_default_value**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property_default_value>`
 
-Returns the default value of ``property`` of ``class`` or its ancestor classes.
+回傳 ``class`` 或其祖先類的 ``property`` 的預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns the default value of ``property`` of ``class`` or its ancestor classes.
 
 :ref:`StringName<class_StringName>` **class_get_property_getter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_getter>`
 
-Returns the getter method name of ``property`` of ``class``.
+回傳 ``class`` 類中 ``property`` 屬性的 getter 方法名。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Returns the getter method name of ``property`` of ``class``.
 
 :ref:`StringName<class_StringName>` **class_get_property_setter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_setter>`
 
-Returns the setter method name of ``property`` of ``class``.
+回傳 ``class`` 類中 ``property`` 屬性的 setter 方法名。
 
 .. rst-class:: classref-item-separator
 
@@ -436,9 +436,9 @@ Returns the setter method name of ``property`` of ``class``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_class_list**\ (\ ) |const| :ref:`🔗<class_ClassDB_method_get_class_list>`
 
-Returns the names of all engine classes available.
+回傳引擎中所有可用類的名稱。
 
-\ **Note:** Script-defined classes with ``class_name`` are not included in this list. Use :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` to get a list of script-defined classes instead.
+\ **注意：**\ 清單中不包含腳本使用 ``class_name`` 定義的類。請使用 :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` 取得腳本定義的類的清單。
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ Returns the names of all engine classes available.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_inheriters_from_class**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_get_inheriters_from_class>`
 
-Returns the names of all engine classes that directly or indirectly inherit from ``class``.
+回傳引擎中所有直接或間接繼承自 ``class`` 的類的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns the names of all engine classes that directly or indirectly inherit from
 
 :ref:`bool<class_bool>` **is_class_enum_bitfield**\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_enum_bitfield>`
 
-Returns whether ``class`` (or its ancestor classes if ``no_inheritance`` is ``false``) has an enum called ``enum`` that is a bitfield.
+回傳類 ``class`` 是否有名為 ``enum`` 的位域列舉（如果 ``no_inheritance`` 為 ``false`` 則還會檢查其祖類）。
 
 .. rst-class:: classref-item-separator
 

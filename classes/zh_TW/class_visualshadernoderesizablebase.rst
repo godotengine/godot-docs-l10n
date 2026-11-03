@@ -16,7 +16,7 @@ VisualShaderNodeResizableBase
 說明
 ----
 
-可調整大小的節點上有一個控制柄，使用者能夠根據需要調整其大小。
+可調整大小的節點上有一個控點，使用者能夠根據需要調整其大小。
 
 .. rst-class:: classref-reftable-group
 

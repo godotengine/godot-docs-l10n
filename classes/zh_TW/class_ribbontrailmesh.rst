@@ -100,7 +100,7 @@ enum **Shape**: :ref:`🔗<enum_RibbonTrailMesh_Shape>`
 - |void| **set_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve**\ (\ )
 
-Determines the size of the ribbon along its length. The size of a particular section segment is obtained by multiplying the baseline :ref:`size<class_RibbonTrailMesh_property_size>` by the value of this curve at the given distance. For values smaller than ``0``, the faces will be inverted. Should be a unit :ref:`Curve<class_Curve>`.
+決定條帶沿長度的大小。通過將基礎大小 :ref:`size<class_RibbonTrailMesh_property_size>` 乘以這條曲線上給定位置對應的值，就可以得到分節上某一段的大小。如果得到的值小於 ``0``\ ，則對應的面會被翻轉。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_section_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_section_segments**\ (\ )
 
-條帶中一節的段數。每一段的大小是根據對 :ref:`curve<class_RibbonTrailMesh_property_curve>` 的取樣確定的。更高的值會生成更細緻的條帶，但以性能為代價。
+條帶中一節的段數。每一段的大小是根據對 :ref:`curve<class_RibbonTrailMesh_property_curve>` 的取樣確定的。更高的值會生成更細緻的條帶，但以效能為代價。
 
 .. rst-class:: classref-item-separator
 

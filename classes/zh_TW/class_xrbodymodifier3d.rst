@@ -9,18 +9,18 @@ XRBodyModifier3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node for driving body meshes from :ref:`XRBodyTracker<class_XRBodyTracker>` data.
+用於從 :ref:`XRBodyTracker<class_XRBodyTracker>` 資料驅動身體網格的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node uses body tracking data from an :ref:`XRBodyTracker<class_XRBodyTracker>` to pose the skeleton of a body mesh.
+該節點使用來自 :ref:`XRBodyTracker<class_XRBodyTracker>` 的身體追蹤資料來設定身體網格的骨架。
 
-Positioning of the body is performed by creating an :ref:`XRNode3D<class_XRNode3D>` ancestor of the body mesh driven by the same :ref:`XRBodyTracker<class_XRBodyTracker>`.
+身體的定位是通過建立由相同 :ref:`XRBodyTracker<class_XRBodyTracker>` 驅動的身體網格的 :ref:`XRNode3D<class_XRNode3D>` 祖先來執行的。
 
-The body tracking position-data is scaled by :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` when applied to the skeleton, which can be used to adjust the tracked body to match the scale of the body model.
+身體追蹤位置資料在套用至骨架時由 :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` 縮放，可用於調整追蹤的身體以匹配身體模型的縮放。
 
 .. rst-class:: classref-introduction-group
 
@@ -66,7 +66,7 @@ flags **BodyUpdate**: :ref:`🔗<enum_XRBodyModifier3D_BodyUpdate>`
 
 :ref:`BodyUpdate<enum_XRBodyModifier3D_BodyUpdate>` **BODY_UPDATE_UPPER_BODY** = ``1``
 
-The skeleton's upper body joints are updated.
+骨架的上半身關節已更新。
 
 .. _class_XRBodyModifier3D_constant_BODY_UPDATE_LOWER_BODY:
 
@@ -74,7 +74,7 @@ The skeleton's upper body joints are updated.
 
 :ref:`BodyUpdate<enum_XRBodyModifier3D_BodyUpdate>` **BODY_UPDATE_LOWER_BODY** = ``2``
 
-The skeleton's lower body joints are updated.
+骨架的下半身關節已更新。
 
 .. _class_XRBodyModifier3D_constant_BODY_UPDATE_HANDS:
 
@@ -82,7 +82,7 @@ The skeleton's lower body joints are updated.
 
 :ref:`BodyUpdate<enum_XRBodyModifier3D_BodyUpdate>` **BODY_UPDATE_HANDS** = ``4``
 
-The skeleton's hand joints are updated.
+骨架的手部關節已更新。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRBodyModifier3D_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` **BONE_UPDATE_FULL** = ``0``
 
-The skeleton's bones are fully updated (both position and rotation) to match the tracked bones.
+骨架的骨骼完全更新（位置和旋轉）以匹配追蹤的骨骼。
 
 .. _class_XRBodyModifier3D_constant_BONE_UPDATE_ROTATION_ONLY:
 
@@ -108,7 +108,7 @@ The skeleton's bones are fully updated (both position and rotation) to match the
 
 :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` **BONE_UPDATE_ROTATION_ONLY** = ``1``
 
-The skeleton's bones are only rotated to align with the tracked bones, preserving bone length.
+骨架的骨骼僅旋轉以與追蹤的骨骼對齊，從而保留骨骼長度。
 
 .. _class_XRBodyModifier3D_constant_BONE_UPDATE_MAX:
 
@@ -116,7 +116,7 @@ The skeleton's bones are only rotated to align with the tracked bones, preservin
 
 :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` **BONE_UPDATE_MAX** = ``2``
 
-Represents the size of the :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` enum.
+代表 :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -138,7 +138,7 @@ Represents the size of the :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` e
 - |void| **set_body_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_body_tracker**\ (\ )
 
-The name of the :ref:`XRBodyTracker<class_XRBodyTracker>` registered with :ref:`XRServer<class_XRServer>` to obtain the body tracking data from.
+注冊到 :ref:`XRServer<class_XRServer>` 的 :ref:`XRBodyTracker<class_XRBodyTracker>` 的名稱，可從中取得身體追蹤資料。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ The name of the :ref:`XRBodyTracker<class_XRBodyTracker>` registered with :ref:`
 - |void| **set_body_update**\ (\ value\: |bitfield|\[:ref:`BodyUpdate<enum_XRBodyModifier3D_BodyUpdate>`\]\ )
 - |bitfield|\[:ref:`BodyUpdate<enum_XRBodyModifier3D_BodyUpdate>`\] **get_body_update**\ (\ )
 
-Specifies the body parts to update.
+指定要更新的身體部位。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Specifies the body parts to update.
 - |void| **set_bone_update**\ (\ value\: :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>`\ )
 - :ref:`BoneUpdate<enum_XRBodyModifier3D_BoneUpdate>` **get_bone_update**\ (\ )
 
-Specifies the type of updates to perform on the bones.
+指定要在骨骼上執行的更新型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -162,11 +162,11 @@ EditorInspectorPlugin
 
 |void| **add_property_editor**\ (\ property\: :ref:`String<class_String>`, editor\: :ref:`Control<class_Control>`, add_to_end\: :ref:`bool<class_bool>` = false, label\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_EditorInspectorPlugin_method_add_property_editor>`
 
-Adds a property editor for an individual property. The ``editor`` control must extend :ref:`EditorProperty<class_EditorProperty>`.
+為單個屬性新增屬性編輯器。\ ``editor`` 控制項必須繼承自 :ref:`EditorProperty<class_EditorProperty>`\ 。
 
-There can be multiple property editors for a property. If ``add_to_end`` is ``true``, this newly added editor will be displayed after all the other editors of the property whose ``add_to_end`` is ``false``. For example, the editor uses this parameter to add an "Edit Region" button for :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` below the regular :ref:`Rect2<class_Rect2>` editor.
+同一個屬性可以有多個屬性編輯器。如果 ``add_to_end`` 為 ``true`` 新新增的編輯器會顯示在該屬性所有 ``add_to_end`` 為 ``false`` 的編輯器之後。例如，\ :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` 普通 :ref:`Rect2<class_Rect2>` 編輯器下面的“編輯區域”按鈕就是使用這個參數新增的。
 
-\ ``label`` can be used to choose a custom label for the property editor in the inspector. If left empty, the label is computed from the name of the property instead.
+可以使用 ``label`` 選擇該屬性編輯器在屬性檢視器中的自訂標籤。留空時則會根據屬性的名稱來計算標籤。
 
 .. rst-class:: classref-item-separator
 

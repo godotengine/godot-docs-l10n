@@ -14,83 +14,83 @@ PackedScene
 說明
 ----
 
-A simplified interface to a scene file. Provides access to operations and checks that can be performed on the scene resource itself.
+場景檔案的簡化介面。提供可以對場景資源本身進行的操作和檢查。
 
-Can be used to save a node to a file. When saving, the node as well as all the nodes it owns get saved (see :ref:`Node.owner<class_Node_property_owner>` property).
+可以用來將某個節點儲存到檔案中。儲存時，會將該節點和它所擁有的所有節點一起儲存（見 :ref:`Node.owner<class_Node_property_owner>` 屬性）。
 
-\ **Note:** The node doesn't need to own itself.
+\ **注意：**\ 該節點不必自我擁有。
 
-\ **Example:** Load a saved scene:
+\ **範例：**\ 載入已儲存的場景：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Use load() instead of preload() if the path isn't known at compile-time.
+    # 如果路徑在編譯期不可知，請使用 load() 而不是 preload()。
     var scene = preload("res://scene.tscn").instantiate()
-    # Add the node as a child of the node the script is attached to.
+    # 將該節點新增為腳本附加節點的子節點。
     add_child(scene)
 
  .. code-tab:: csharp
 
-    // C# has no preload, so you have to always use ResourceLoader.Load<PackedScene>().
+    // C# 沒有 preload，所以你使用的永遠是 ResourceLoader.Load<PackedScene>()。
     var scene = ResourceLoader.Load<PackedScene>("res://scene.tscn").Instantiate();
-    // Add the node as a child of the node the script is attached to.
+    // 將該節點新增為腳本附加節點的子節點。
     AddChild(scene);
 
 
 
-\ **Example:** Save a node with different owners. The following example creates 3 objects: :ref:`Node2D<class_Node2D>` (``node``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) and :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``collision`` is a child of ``body`` which is a child of ``node``. Only ``body`` is owned by ``node`` and :ref:`pack()<class_PackedScene_method_pack>` will therefore only save those two nodes, but not ``collision``.
+\ **範例：**\ 儲存不同所有者的節點。下面的例子會建立 3 個物件：\ :ref:`Node2D<class_Node2D>`\ （\ ``node``\ ）、\ :ref:`RigidBody2D<class_RigidBody2D>`\ （\ ``body``\ ）、\ :ref:`CollisionObject2D<class_CollisionObject2D>`\ （\ ``collision``)）。\ ``node`` 的下一級是 ``body``\ ，再下一級是 ``collision``\ 。只有 ``body`` 被 ``node`` 擁有，因此 :ref:`pack()<class_PackedScene_method_pack>` 只會儲存兩個節點，不會儲存 ``collision``\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Create the objects.
+    # 建立物件。
     var node = Node2D.new()
     var body = RigidBody2D.new()
     var collision = CollisionShape2D.new()
 
-    # Create the object hierarchy.
+    # 建立物件架構。
     body.add_child(collision)
     node.add_child(body)
 
-    # Change owner of `body`, but not of `collision`.
+    # 修改 `body` 的擁有者，但不修改 `collision` 的擁有者。
     body.owner = node
     var scene = PackedScene.new()
 
-    # Only `node` and `body` are now packed.
+    # 只會打包 `node` 和 `body`。
     var result = scene.pack(node)
     if result == OK:
         var error = ResourceSaver.save(scene, "res://path/name.tscn")  # Or "user://..."
         if error != OK:
-            push_error("An error occurred while saving the scene to disk.")
+            push_error("將場景儲存到磁碟時出錯。")
 
  .. code-tab:: csharp
 
-    // Create the objects.
+    // 建立物件。
     var node = new Node2D();
     var body = new RigidBody2D();
     var collision = new CollisionShape2D();
 
-    // Create the object hierarchy.
+    // 建立物件架構。
     body.AddChild(collision);
     node.AddChild(body);
 
-    // Change owner of `body`, but not of `collision`.
+    // 修改 `body` 的擁有者，但不修改 `collision` 的擁有者。
     body.Owner = node;
     var scene = new PackedScene();
 
-    // Only `node` and `body` are now packed.
+    // 只會打包 `node` 和 `body`。
     Error result = scene.Pack(node);
     if (result == Error.Ok)
     {
         Error error = ResourceSaver.Save(scene, "res://path/name.tscn"); // Or "user://..."
         if (error != Error.Ok)
         {
-            GD.PushError("An error occurred while saving the scene to disk.");
+            GD.PushError("將場景儲存到磁碟時出錯。");
         }
     }
 
@@ -201,7 +201,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`SceneState<class_SceneState>` **get_state**\ (\ ) |const| :ref:`🔗<class_PackedScene_method_get_state>`
 
-Returns the :ref:`SceneState<class_SceneState>` representing the scene file contents.
+回傳代表場景檔案內容的 :ref:`SceneState<class_SceneState>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the :ref:`SceneState<class_SceneState>` representing the scene file cont
 
 :ref:`Error<enum_@GlobalScope_Error>` **pack**\ (\ path\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_PackedScene_method_pack>`
 
-Packs the ``path`` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See :ref:`Node.owner<class_Node_property_owner>`.
+將 ``path`` 節點及其所有子節點打包到該 **PackedScene** 中。所有現有資料都將被清除。請參閱 :ref:`Node.owner<class_Node_property_owner>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

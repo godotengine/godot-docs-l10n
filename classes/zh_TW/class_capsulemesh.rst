@@ -54,9 +54,9 @@ CapsuleMesh
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-Total height of the capsule mesh (including the hemispherical ends).
+膠囊體網格的總高度（包括半球形末端）。
 
-\ **Note:** The :ref:`height<class_CapsuleMesh_property_height>` of a capsule must be at least twice its :ref:`radius<class_CapsuleMesh_property_radius>`. Otherwise, the capsule becomes a circle. If the :ref:`height<class_CapsuleMesh_property_height>` is less than twice the :ref:`radius<class_CapsuleMesh_property_radius>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`height<class_CapsuleMesh_property_height>` 必須至少為其 :ref:`radius<class_CapsuleMesh_property_radius>` 的兩倍。否則，膠囊體將變為圓形。如果 :ref:`height<class_CapsuleMesh_property_height>` 小於 :ref:`radius<class_CapsuleMesh_property_radius>` 的兩倍，則屬性將調整為有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Total height of the capsule mesh (including the hemispherical ends).
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-Radius of the capsule mesh.
+膠囊體網格的半徑。
 
-\ **Note:** The :ref:`radius<class_CapsuleMesh_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_CapsuleMesh_property_height>`. Otherwise, the capsule becomes a circle. If the :ref:`radius<class_CapsuleMesh_property_radius>` is greater than half of the :ref:`height<class_CapsuleMesh_property_height>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`radius<class_CapsuleMesh_property_radius>` 不能大於其 :ref:`height<class_CapsuleMesh_property_height>` 的一半。否則，膠囊體將變成圓形。如果 :ref:`radius<class_CapsuleMesh_property_radius>` 大於 :ref:`height<class_CapsuleMesh_property_height>` 的一半，則屬性將調整為有效值。
 
 .. rst-class:: classref-item-separator
 

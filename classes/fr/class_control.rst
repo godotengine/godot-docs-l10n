@@ -448,7 +448,7 @@ Signaux
 
 **maximum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_maximum_size_changed>`
 
-Emitted when the node's maximum size changes.
+Émis quand la taille maximale du nœud change.
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +647,7 @@ Empêche le contrôle de recevoir l'entrée de la souris. :ref:`get_mouse_filter
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_ENABLED** = ``2``
 
-Allows the control to receive mouse input, depending on the :ref:`mouse_filter<class_Control_property_mouse_filter>`. This can be used to ignore the parent's :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` will return the :ref:`mouse_filter<class_Control_property_mouse_filter>`.
+Permet au contrôle de recevoir l'entrée de la souris, en fonction de :ref:`mouse_filter<class_Control_property_mouse_filter>`. Cela peut être utilisé pour ignorer le :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` du parent. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` renverra :ref:`mouse_filter<class_Control_property_mouse_filter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2203,9 +2203,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_pivot_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset**\ (\ )
 
-By default, the node's pivot is its top-left corner. When you change its :ref:`rotation<class_Control_property_rotation>` or :ref:`scale<class_Control_property_scale>`, it will rotate or scale around this pivot.
+Par défaut, le pivot du nœud est son coin supérieur gauche. Lorsque vous modifiez sa :ref:`rotation<class_Control_property_rotation>` ou son échelle :ref:`scale<class_Control_property_scale>`, il tournera ou se redimensionnera autour de ce pivot.
 
-The actual offset is the combined value of this property and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
+Le décalage actuel est la valeur combinée de cette propriété et de :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2639,9 +2639,9 @@ Redéfinissez cette méthode pour renvoyer une description facilement lisible de
 
 :ref:`int<class_int>` **_get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_cursor_shape>`
 
-Virtual method to be implemented by the user. Returns the cursor shape for the position ``at_position`` in the control's local coordinates, which will typically be used while hovering over this control. See :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
+Méthode virtuelle à implémenter par l'utilisateur. Renvoie la forme du curseur pour la position ``at_position`` dans les coordonnées locales du contrôle, ce qui apparaîtra généralement lorsque le curseur reste sur ce contrôle. Voir :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
 
-If not overridden, defaults to :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
+Si cette méthode n'est pas redéfinie, la valeur par défaut est :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2690,13 +2690,13 @@ Un aperçu suivant la souris représentant les données peut être défini avec 
 
 :ref:`Vector2<class_Vector2>` **_get_maximum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_maximum_size>`
 
-Virtual method to be implemented by the user. Returns the maximum size for this control. Alternative to :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` for controlling maximum size via code. The actual maximum size will be the max value of these two (in each axis separately).
+Méthode virtuelle à implémenter par l'utilisateur. Renvoie la taille maximale de ce contrôle. Cette taille peut aussi être contrôlée avec :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` via le code. L'actuelle taille maximale sera le maximum de ces deux valeurs (sur chaque axe séparément).
 
-If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+Si non redéfinie, la valeur par défaut est :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
-\ **Note:** This method will not be called when the script is attached to a **Control** node that already overrides its maximum size (e.g. :ref:`ScrollContainer<class_ScrollContainer>`).
+\ **Note :** Cette méthode n'est pas appelée quand le script est attaché à un nœud **Control** qui redéfinit lui-même sa taille maximale (ex. :ref:`ScrollContainer<class_ScrollContainer>`).
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when implementing this method, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Note :** Il est recommandé d'utiliser :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` au lieu de :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` lors de l'implémentation de cette méthode, car le premier respecte les limites de taille maximale lors du calcul de la taille minimale, alors que le second ne le fait pas.
 
 .. rst-class:: classref-item-separator
 
@@ -3231,9 +3231,9 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`CursorShape<enum_Control_CursorShape>` **get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_cursor_shape>`
 
-Returns the mouse cursor shape for this control when hovered over ``at_position`` in local coordinates. For most controls, this is the same as :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, but some built-in controls implement more complex logic.
+Renvoie la forme du curseur de la souris pour ce contrôle lorsque survolé à la position ``at_position`` dans les coordonnées locales. Pour la plupart des contrôles, cela est identique à :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, mais certains contrôles intégrés implémentent une logique plus complexe.
 
-You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` to implement custom behavior for this method.
+Vous pouvez redéfinir :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` pour implémenter un comportement personnalisé pour cette méthode.
 
 .. rst-class:: classref-item-separator
 
@@ -3562,11 +3562,11 @@ Voir :ref:`get_theme_color()<class_Control_method_get_theme_color>` pour plus de
 
 :ref:`String<class_String>` **get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_tooltip>`
 
-Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. By default, it returns :ref:`tooltip_text<class_Control_property_tooltip_text>`.
+Renvoie le texte d'info-bulle pour la position ``at_position`` dans les coordonnées locales du contrôle, qui apparaîtra généralement lorsque le curseur reste sur ce contrôle. Par défaut, cela renvoie :ref:`tooltip_text<class_Control_property_tooltip_text>`.
 
-You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` to implement custom behavior for this method.
+Cette méthode peut être redéfinie pour personnaliser son comportement. Voir :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>`.
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **Note :** Si cette méthode renvoie une :ref:`String<class_String>` vide et :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` n'est pas redéfinie, aucune info-bulle n'est affichée.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,7 +4151,7 @@ Si ``keep_offsets`` vaut ``true``, les ancres du contrôle sont mis à jour au l
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
 \ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 

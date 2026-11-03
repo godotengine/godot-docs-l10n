@@ -17,9 +17,9 @@ MultiplayerAPIExtension
 說明
 ----
 
-This class can be used to extend or replace the default :ref:`MultiplayerAPI<class_MultiplayerAPI>` implementation via script or extensions.
+該類可用於通過腳本或擴充來擴充或替換預設的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 實作。
 
-The following example extend the default implementation (:ref:`SceneMultiplayer<class_SceneMultiplayer>`) by logging every RPC being made, and every object being configured for replication.
+下面的例子通過記錄每一個正在進行的 RPC 和為複製而設定的每一個物件，擴充預設的實作（\ :ref:`SceneMultiplayer<class_SceneMultiplayer>`\ ）。
 
 
 .. tabs::
@@ -29,11 +29,11 @@ The following example extend the default implementation (:ref:`SceneMultiplayer<
     extends MultiplayerAPIExtension
     class_name LogMultiplayer
 
-    # We want to extend the default SceneMultiplayer.
+    # 我們想擴充預設的 SceneMultiplayer。
     var base_multiplayer = SceneMultiplayer.new()
 
     func _init():
-        # Just passthrough base signals (copied to var to avoid cyclic reference)
+        # 僅傳遞基本訊號（複製到 var 以避免循環參照）
         var cts = connected_to_server
         var cf = connection_failed
         var sd = server_disconnected
@@ -48,28 +48,28 @@ The following example extend the default implementation (:ref:`SceneMultiplayer<
     func _poll():
         return base_multiplayer.poll()
 
-    # Log RPC being made and forward it to the default multiplayer.
+    # 記錄正在進行的 RPC 並將其轉發到預設的多人遊戲。
     func _rpc(peer: int, object: Object, method: StringName, args: Array) -> Error:
-        print("Got RPC for %d: %s::%s(%s)" % [peer, object, method, args])
+        print("取得用於 %d 的 RPC：%s::%s(%s)" % [peer, object, method, args])
         return base_multiplayer.rpc(peer, object, method, args)
 
-    # Log configuration add. E.g. root path (nullptr, NodePath), replication (Node, Spawner|Synchronizer), custom.
+    # 記錄設定新增。例如，根路徑（nullptr、NodePath），複製（Node、Spawner|Synchronizer），自訂。
     func _object_configuration_add(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
-            print("Adding synchronization configuration for %s. Synchronizer: %s" % [object, config])
+            print("新增用於 %s 的同步設定。同步器：%s" % [object, config])
         elif config is MultiplayerSpawner:
-            print("Adding node %s to the spawn list. Spawner: %s" % [object, config])
+            print("將節點 %s 新增到出生清單。出生器：%s" % [object, config])
         return base_multiplayer.object_configuration_add(object, config)
 
-    # Log configuration remove. E.g. root path (nullptr, NodePath), replication (Node, Spawner|Synchronizer), custom.
+    # 記錄設定移除。例如，根路徑（nullptr、NodePath），複製（Node、Spawner|Synchronizer），自訂。
     func _object_configuration_remove(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
-            print("Removing synchronization configuration for %s. Synchronizer: %s" % [object, config])
+            print("移除用於 %s 的同步設定。同步器：%s" % [object, config])
         elif config is MultiplayerSpawner:
-            print("Removing node %s from the spawn list. Spawner: %s" % [object, config])
+            print("將節點 %s 從出生清單移除。出生器：%s" % [object, config])
         return base_multiplayer.object_configuration_remove(object, config)
 
-    # These can be optional, but in our case we want to extend SceneMultiplayer, so forward everything.
+    # 這些可以是可選的，但在我們的例子中，我們想要擴充 SceneMultiplayer，所以轉發所有內容。
     func _set_multiplayer_peer(p_peer: MultiplayerPeer):
         base_multiplayer.multiplayer_peer = p_peer
 
@@ -87,7 +87,7 @@ The following example extend the default implementation (:ref:`SceneMultiplayer<
 
 
 
-Then in your main scene or in an autoload call :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>` to start using your custom :ref:`MultiplayerAPI<class_MultiplayerAPI>`:
+然後在你的主場景或在自動載入中呼叫 :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>`\ ，以開始使用你的自訂 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ ：
 
 
 .. tabs::
@@ -96,12 +96,12 @@ Then in your main scene or in an autoload call :ref:`SceneTree.set_multiplayer()
 
     # autoload.gd
     func _enter_tree():
-        # Sets our custom multiplayer as the main one in SceneTree.
+        # 將我們的自訂多人遊戲設定為 SceneTree 中的主要的多人遊戲。
         get_tree().set_multiplayer(LogMultiplayer.new())
 
 
 
-Native extensions can alternatively use the :ref:`MultiplayerAPI.set_default_interface()<class_MultiplayerAPI_method_set_default_interface>` method during initialization to configure themselves as the default implementation.
+原生擴充也可以在初始化期間，使用 :ref:`MultiplayerAPI.set_default_interface()<class_MultiplayerAPI_method_set_default_interface>` 方法將自己設定為預設實作。
 
 .. rst-class:: classref-reftable-group
 

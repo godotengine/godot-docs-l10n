@@ -87,7 +87,7 @@ EditorFileSystem
 
 **resources_reimporting**\ (\ resources\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_EditorFileSystem_signal_resources_reimporting>`
 
-Emitted before a resource is reimported.
+在重新匯入資源之前觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Emitted before a resource is reimported.
 
 :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>` **get_filesystem**\ (\ ) :ref:`🔗<class_EditorFileSystem_method_get_filesystem>`
 
-獲取根目錄物件。
+取得根目錄物件。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Emitted before a resource is reimported.
 
 :ref:`bool<class_bool>` **is_importing**\ (\ ) |const| :ref:`🔗<class_EditorFileSystem_method_is_importing>`
 
-Returns ``true`` if resources are currently being imported.
+如果資源目前正在被匯入，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

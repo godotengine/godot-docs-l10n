@@ -23,7 +23,7 @@ Un nœud utilisé comme enfant d'un :ref:`VehicleBody3D<class_VehicleBody3D>` pa
 Tutoriels
 ------------------
 
-- `Démo 3D « Truck Town » <https://godotengine.org/asset-library/asset/2752>`__
+- `Démo 3D « Truck Town » <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

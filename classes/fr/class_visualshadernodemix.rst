@@ -97,7 +97,7 @@ Un type de vecteur 4D.
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scalar type.
+Les ports ``a`` et ``b`` utilisent un type vecteur 4D. Le port ``weight`` utilise un type scalaire.
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_MAX:
 

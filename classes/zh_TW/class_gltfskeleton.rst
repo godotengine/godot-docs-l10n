@@ -146,7 +146,7 @@ GLTFSkeleton
 
 :ref:`Dictionary<class_Dictionary>` **get_godot_bone_node**\ (\ ) :ref:`🔗<class_GLTFSkeleton_method_get_godot_bone_node>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Godot converts skeleton bones to glTF nodes.
+回傳將骨架的骨骼索引映射到 glTF 節點索引的 :ref:`Dictionary<class_Dictionary>`\ 。匯入時不使用該屬性，僅在匯出時設定。在 glTF 檔案中，骨骼是一種節點，因此 Godot 將骨架中的骨骼轉換為 glTF 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Returns a :ref:`Dictionary<class_Dictionary>` that maps skeleton bone indices to
 
 |void| **set_godot_bone_node**\ (\ godot_bone_node\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GLTFSkeleton_method_set_godot_bone_node>`
 
-Sets a :ref:`Dictionary<class_Dictionary>` that maps skeleton bone indices to the indices of glTF nodes. This property is unused during import, and only set during export. In a glTF file, a bone is a node, so Godot converts skeleton bones to glTF nodes.
+設定將骨架的骨骼索引映射到 glTF 節點索引的 :ref:`Dictionary<class_Dictionary>`\ 。匯入時不使用該屬性，僅在匯出時設定。在 glTF 檔案中，骨骼是一種節點，因此 Godot 將骨架中的骨骼轉換為 glTF 節點。
 
 .. rst-class:: classref-item-separator
 

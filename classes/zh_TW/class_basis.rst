@@ -12,29 +12,29 @@ Basis
 說明
 ----
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+**Basis** 內建 :ref:`Variant<class_Variant>` 型別是一個 3×3 `矩陣 <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__\ ，用來表示 3D 旋轉、縮放與剪切。它通常用於 :ref:`Transform3D<class_Transform3D>` 中。
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+\ **Basis** 由 3 個軸向量組成，每個向量代表矩陣的一個直行（column）：\ :ref:`x<class_Basis_property_x>`\ 、\ :ref:`y<class_Basis_property_y>` 和 :ref:`z<class_Basis_property_z>`\ 。每個軸的長度（\ :ref:`Vector3.length()<class_Vector3_method_length>`\ ）會影響基底的縮放，所有軸的方向則共同決定旋轉。這些軸通常彼此垂直；若單獨旋轉其中一個軸，基底就會產生剪切。將具有剪切效果的基底套用至 3D 模型，會使模型變形。
 
-A **Basis** is:
+\ **Basis** 可以具有下列性質：
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **正交**\ ：各軸彼此垂直。
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **正規化**\ ：每個軸的長度皆為 ``1.0``\ 。
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **等比例**\ ：所有軸的長度相同（參閱 :ref:`get_scale()<class_Basis_method_get_scale>`\ ）。
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **正交正規化**\ ：同時滿足正交與正規化，因此只能表示旋轉（參閱 :ref:`orthonormalized()<class_Basis_method_orthonormalized>`\ ）。
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **共形**\ ：同時滿足正交與等比例，確保不會造成扭曲。
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+基本介紹請參閱 :doc:`矩陣與變換 <../tutorials/math/matrices_and_transforms>`\ 教學。
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **注意：**\ Godot 使用\ `右手座標系 <https://en.wikipedia.org/wiki/Right-hand_rule>`__\ ，這是常見的標準。\ :ref:`Camera3D<class_Camera3D>` 等內建型別採用的方向慣例是 -Z 軸朝前、+X 軸朝右、+Y 軸朝上、+Z 軸朝後。其他物件可能採用不同的方向慣例。詳情請參閱 `3D 素材方向慣例 <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__\ 教學。
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **注意：**\ 基底矩陣對外以\ `直行優先（column-major） <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__\ 的順序公開，與 OpenGL 相同；但內部儲存方式是橫列優先（row-major），與 DirectX 相同。
 
-\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
+\ **注意：**\ 在布林運算情境中，等於 :ref:`IDENTITY<class_Basis_constant_IDENTITY>` 的基底會被視為 ``false``\ ；否則一律視為 ``true``\ 。
 
 .. note::
 
@@ -329,9 +329,9 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 :ref:`Basis<class_Basis>` **Basis**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ )
 
-建構一個僅表示旋轉的 **Basis**\ ，其旋轉為：繞 ``axis`` 轉動 ``angle`` 弧度。 ``axis`` 必須是正規化向量。
+構造僅表示旋轉的 **Basis**\ ，給定的 ``angle`` 以弧度為單位，表示圍繞 ``axis`` 軸的旋轉量。這個軸必須是正規化的向量。
 
-\ **注意：** 這等同於對 :ref:`IDENTITY<class_Basis_constant_IDENTITY>` 呼叫 :ref:`rotated()<class_Basis_method_rotated>`\ 。若需同時指定多個軸向角度，請改用 :ref:`from_euler()<class_Basis_method_from_euler>`\ 。
+\ **注意：**\ 與對 :ref:`IDENTITY<class_Basis_constant_IDENTITY>` 基使用 :ref:`rotated()<class_Basis_method_rotated>` 一致。多角度旋轉請改用 :ref:`from_euler()<class_Basis_method_from_euler>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -370,13 +370,13 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 :ref:`float<class_float>` **determinant**\ (\ ) |const| :ref:`🔗<class_Basis_method_determinant>`
 
-Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this basis's matrix. For advanced math, this number can be used to determine a few attributes:
+回傳基矩陣的 `determinant <https://en.wikipedia.org/wiki/Determinant>`__ 。在高等數學中，這個數可以用來確定一些性質：
 
-- If the determinant is exactly ``0.0``, the basis is not invertible (see :ref:`inverse()<class_Basis_method_inverse>`).
+- 如果行列式為 ``0.0``\ ，則基不可逆（見 :ref:`inverse()<class_Basis_method_inverse>`\ ）。
 
-- If the determinant is a negative number, the basis represents a negative scale.
+- 如果行列式為負數，則基表示負縮放。
 
-\ **Note:** If the basis's scale is the same for every axis, its determinant is always that scale by the power of 3.
+\ **注意：**\ 如果基的每個軸縮放都相同，那麼這個行列式始終為 3 的該縮放次冪。
 
 .. rst-class:: classref-item-separator
 
@@ -388,34 +388,34 @@ Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this 
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+根據給定的 :ref:`Vector3<class_Vector3>` 構造 **Basis**\ ，這個向量為 `歐拉角 <https://zh.wikipedia.org/zh-cn/%E6%AC%A7%E6%8B%89%E8%A7%92>`__\ ，單位為弧度。
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` 應包含圍繞 :ref:`x<class_Basis_property_x>` 軸的角度（俯仰）；
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` 應包含圍繞 :ref:`y<class_Basis_property_y>` 軸的角度（偏擺）；
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` 應包含圍繞 :ref:`z<class_Basis_property_z>` 軸的角度（翻滾）。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a Basis whose z axis points down.
+    # 建立 Z 軸向下的 Basis。
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
+    print(my_basis.z) # 輸出 (0.0, -1.0, 0.0)
 
  .. code-tab:: csharp
 
-    // Creates a Basis whose z axis points down.
+    // 建立 Z 軸向下的 Basis。
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Prints (0, -1, 0)
+    GD.Print(myBasis.Z); // 輸出 (0.0, -1.0, 0.0)
 
 
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the local Y axis (yaw), then local X (pitch), and lastly local Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>` to decompose a rotation, this order is reversed.
+連續旋轉的順序可以通過 ``order`` 修改（見 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常數）。在 Godot 中，歐拉角總是採用內旋順序。預設使用內旋 YXZ 約定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：基首先圍繞區域 Y 軸旋轉（偏擺），然後圍繞區域 X 軸旋轉（俯仰），最後圍繞區域 Z 軸旋轉（翻滾）。當使用相對的方法 :ref:`get_euler()<class_Basis_method_get_euler>` 來分解旋轉時，這個順序是反轉的。
 
 .. rst-class:: classref-item-separator
 
@@ -460,21 +460,21 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
+以 :ref:`Vector3<class_Vector3>` 的形式回傳基的旋轉向量，這個向量為 `歐拉角 <https://zh.wikipedia.org/zh-cn/%E6%AC%A7%E6%8B%89%E8%A7%92>`__\ ，單位為弧度。回傳值中：
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` 包含圍繞 :ref:`x<class_Basis_property_x>` 軸的角度（俯仰）。
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` 包含圍繞 :ref:`y<class_Basis_property_y>` 軸的角度（偏擺）。
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` 包含圍繞 :ref:`z<class_Basis_property_z>` 軸的角度（翻滾）。
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>` to compose a rotation, this order is reversed.
+連續旋轉的順序可以通過 ``order`` 修改（見 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常數）。在 Godot 中，歐拉角總是採用內旋順序。預設使用內旋 YXZ 約定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：由於正在進行分解操作，首先計算圍繞區域 Z 軸的旋轉（翻滾），然後計算圍繞區域 X 軸的旋轉（俯仰），最後計算圍繞區域 Y 軸旋轉（偏擺）。當使用相對的方法 :ref:`from_euler()<class_Basis_method_from_euler>` 來構成旋轉時，順序會反轉。
 
-\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ **注意：**\ 該方法只對\ *標準正交基*\ 回傳正確的值（見 :ref:`orthonormalized()<class_Basis_method_orthonormalized>`\ ）。
 
-\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
+\ **注意：**\ 歐拉角更符合直覺，但是並不適合 3D 數學。因此請考慮改用回傳 :ref:`Quaternion<class_Quaternion>` 的 :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`\ 。
 
-\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
+\ **注意：**\ 在屬性檢視器面板中，基的旋轉通常是以歐拉角的形式顯示的（單位為度），與 :ref:`Node3D.rotation<class_Node3D_property_rotation>` 屬性相同。
 
 .. rst-class:: classref-item-separator
 
@@ -590,7 +590,7 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
 
-Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
+如果該基是單位正交的，則回傳 ``true``\ 。單位正交的基既是\ *正交的*\ （軸彼此垂直），又是\ *正規化的*\ （各軸的長度均為 ``1.0``\ ）。該方法在物理計算過程中特別有用。
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *ort
 
  .. code-tab:: gdscript
 
-    # 每幀旋轉此 Node3D
+    # 每影格旋轉此 Node3D
     func _process(delta):
         basis = basis.rotated(Vector3.UP, TAU * delta)
         basis = basis.rotated(Vector3.RIGHT, TAU * delta)
@@ -637,7 +637,7 @@ Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *ort
 
  .. code-tab:: csharp
 
-    // 每幀旋轉此 Node3D
+    // 每影格旋轉此 Node3D
     public override void _Process(double delta)
     {
         Basis = Basis.Rotated(Vector3.Up, Mathf.Tau * (float)delta)
@@ -735,9 +735,9 @@ Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *ort
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
+回傳該基，其中每個軸都按給定的 ``scale`` 中的相應分量縮放。
 
-The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
+該基矩陣的列乘以 ``scale`` 的分量。該操作是區域縮放（相對於自身）。
 
 
 .. tabs::
@@ -751,9 +751,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
     )
     my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
-    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
-    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
+    print(my_basis.x) # 輸出 (0.0, 0.0, 0.0)
+    print(my_basis.y) # 輸出 (4.0, 4.0, 4.0)
+    print(my_basis.z) # 輸出 (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -764,9 +764,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
     );
     myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // Prints (0, 0, 0)
-    GD.Print(myBasis.Y); // Prints (4, 4, 4)
-    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
+    GD.Print(myBasis.X); // 輸出 (0, 0, 0)
+    GD.Print(myBasis.Y); // 輸出 (4, 4, 4)
+    GD.Print(myBasis.Z); // 輸出 (-6, -6, -6)
 
 
 
@@ -780,9 +780,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **slerp**\ (\ to\: :ref:`Basis<class_Basis>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Basis_method_slerp>`
 
-以球面線性插值（SLERP）方式，依 ``weight`` 在此基底與 ``to`` 之間插值。兩者都應只表示旋轉。
+使用 ``to`` 基在給定 ``weight`` 的情況下執行球面線性插值。該基和 ``to`` 兩者都應該代表一個旋轉。
 
-\ **範例：** 使用 :ref:`Tween<class_Tween>` 在一段時間內平滑地將 :ref:`Node3D<class_Node3D>` 旋轉到目標基底：
+\ **範例：**\ 使用 :ref:`Tween<class_Tween>` 隨時間平滑地將 :ref:`Node3D<class_Node3D>` 旋轉到目標基：
 
 ::
 
@@ -950,7 +950,7 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Basis_operator_mul_float>`
 
-將此 **Basis** 所有分量乘以指定 :ref:`float<class_float>`\ ，等比例改變三軸尺寸。
+將 **Basis** 的所有分量乘以給定的 :ref:`float<class_float>`\ 。這會均勻地影響該基矩陣的縮放，並通過 ``right`` 值調整所有 3 個軸的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -962,7 +962,7 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Basis_operator_mul_int>`
 
-將此 **Basis** 所有分量乘以指定 :ref:`int<class_int>`\ ，等比例改變三軸尺寸。
+將該 **Basis** 的所有分量乘以給定的 :ref:`int<class_int>`\ 。這會均勻地影響該基的縮放，並通過 ``right`` 值調整所有 3 個軸的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -974,7 +974,7 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Basis_operator_div_float>`
 
-將此 **Basis** 所有分量除以指定 :ref:`float<class_float>`\ ，等比例改變三軸尺寸。
+將 **Basis** 的所有分量除以給定的 :ref:`float<class_float>`\ 。這會均勻地影響該基的縮放，並通過 ``right`` 值調整所有 3 個軸的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -986,7 +986,7 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Basis_operator_div_int>`
 
-將此 **Basis** 所有分量除以指定 :ref:`int<class_int>`\ ，等比例改變三軸尺寸。
+將 **Basis** 的所有分量除以給定的 :ref:`int<class_int>`\ 。這會均勻地影響該基的縮放，並通過 ``right`` 值調整所有 3 個軸的大小。
 
 .. rst-class:: classref-item-separator
 

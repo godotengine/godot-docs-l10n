@@ -349,7 +349,7 @@ Augmenter cette valeur améliorera la simulation résultante, mais peut affecter
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-The SoftBody3D's mass.
+La masse du SoftBody3D.
 
 .. rst-class:: classref-section-separator
 

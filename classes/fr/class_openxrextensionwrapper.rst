@@ -755,7 +755,7 @@ Add additional data structures to composition layers created by :ref:`OpenXRComp
 
 :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` **get_openxr_api**\ (\ ) :ref:`🔗<class_OpenXRExtensionWrapper_method_get_openxr_api>`
 
-Returns the created :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, which can be used to access the OpenXR API.
+Renvoie l':ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` créée, qui peut être utilisée pour accéder à l'API OpenXR.
 
 .. rst-class:: classref-item-separator
 

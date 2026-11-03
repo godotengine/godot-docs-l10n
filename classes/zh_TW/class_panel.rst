@@ -23,7 +23,7 @@ Panel
 
 - `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
 
-- `Hierarchical Finite State Machine Demo <https://godotengine.org/asset-library/asset/2714>`__
+- `分層有限狀態機演示 <https://godotengine.org/asset-library/asset/2714>`__
 
 .. rst-class:: classref-reftable-group
 

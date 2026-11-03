@@ -2169,7 +2169,7 @@ Devuelve el kerning para el par de glifos.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **font_get_kerning_list**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_kerning_list>`
 
-Devuelve una lista de anulaciones de kerning.
+Devuelve una lista de sobrescrituras de kerning.
 
 .. rst-class:: classref-item-separator
 
@@ -2193,7 +2193,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``lang
 
 :ref:`PackedStringArray<class_PackedStringArray>` **font_get_language_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_font_get_language_support_overrides>`
 
-Devuelve una lista de anulaciones de soporte de idiomas.
+Devuelve una lista de sobrescrituras de soporte de idiomas.
 
 .. rst-class:: classref-item-separator
 
@@ -2349,7 +2349,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``scri
 
 :ref:`PackedStringArray<class_PackedStringArray>` **font_get_script_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_font_get_script_support_overrides>`
 
-Devuelve una lista de anulaciones de compatibilidad de scripts.
+Devuelve una lista de sobrescrituras de compatibilidad de scripts.
 
 .. rst-class:: classref-item-separator
 
@@ -3687,7 +3687,7 @@ Devuelve el tamaño de fuente de la secuencia de texto de ``index`` (en orden vi
 
 :ref:`Vector2i<class_Vector2i>` **shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+Devuelve el rango de glifos del segmento de texto ``index`` (en orden visual).
 
 .. rst-class:: classref-item-separator
 

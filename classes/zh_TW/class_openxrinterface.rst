@@ -16,7 +16,7 @@ OpenXR 介面。
 
 OpenXR 介面允許 Godot 與 OpenXR 運作時進行互動，並使建立 XR 體驗和遊戲成為可能。
 
-由於 OpenXR 的需要，該介面的工作方式與其他基於外掛程式的 XR 介面略有不同。它需要在 Godot 啟動時被初始化。若需要啟用 OpenXR，相關設定可以在遊戲專案設定中的 XR 標題下找到。你確實需要標記一個視口以與 XR 一起使用，以便 Godot 知道應該將哪個算繪結果輸出到頭戴式裝置。
+由於 OpenXR 的需要，該介面的工作方式與其他基於外掛程式的 XR 介面略有不同。它需要在 Godot 啟動時被初始化。若需要啟用 OpenXR，相關設定可以在遊戲專案設定中的 XR 標題下找到。你確實需要標記一個視埠以與 XR 一起使用，以便 Godot 知道應該將哪個渲染結果輸出到頭戴式裝置。
 
 .. rst-class:: classref-introduction-group
 
@@ -118,7 +118,7 @@ OpenXR 介面允許 Godot 與 OpenXR 運作時進行互動，並使建立 XR 體
 
 **cpu_level_changed**\ (\ sub_domain\: :ref:`int<class_int>`, from_level\: :ref:`int<class_int>`, to_level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRInterface_signal_cpu_level_changed>`
 
-Informs the device CPU performance level has changed in the specified subdomain.
+告知裝置 CPU 效能等級已在指定子域中發生改變。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Informs the device CPU performance level has changed in the specified subdomain.
 
 **gpu_level_changed**\ (\ sub_domain\: :ref:`int<class_int>`, from_level\: :ref:`int<class_int>`, to_level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRInterface_signal_gpu_level_changed>`
 
-Informs the device GPU performance level has changed in the specified subdomain.
+告知裝置 GPU 效能等級已在指定子域中發生改變。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Informs the device GPU performance level has changed in the specified subdomain.
 
 **instance_exiting**\ (\ ) :ref:`🔗<class_OpenXRInterface_signal_instance_exiting>`
 
-Informs our OpenXR instance is exiting.
+通知我們的 OpenXR 實例正在退出。
 
 .. rst-class:: classref-item-separator
 
@@ -166,9 +166,9 @@ Informs our OpenXR instance is exiting.
 
 **refresh_rate_changed**\ (\ refresh_rate\: :ref:`float<class_float>`\ ) :ref:`🔗<class_OpenXRInterface_signal_refresh_rate_changed>`
 
-Informs the user the HMD refresh rate has changed.
+通知使用者 HMD 刷新率發生了變化。
 
-\ **Note:** Only emitted if XR runtime supports the refresh rate extension.
+\ **注意：**\ 僅在 XR 執行時支援刷新率擴充時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Informs the user the HMD refresh rate has changed.
 
 **session_focussed**\ (\ ) :ref:`🔗<class_OpenXRInterface_signal_session_focussed>`
 
-Informs our OpenXR session now has focus, for example output is sent to the HMD and we're receiving XR input.
+通知我們的 OpenXR 會話現在獲得了焦點，例如輸出發送到了 HMD，我們正在獲得 XR 輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Informs our OpenXR session now has focus, for example output is sent to the HMD 
 
 **session_loss_pending**\ (\ ) :ref:`🔗<class_OpenXRInterface_signal_session_loss_pending>`
 
-Informs our OpenXR session is in the process of being lost.
+通知我們的 OpenXR 會話正處於丟失過程中。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Informs our OpenXR session is in the process of being lost.
 
 **session_synchronized**\ (\ ) :ref:`🔗<class_OpenXRInterface_signal_session_synchronized>`
 
-Informs our OpenXR session has been synchronized.
+通知我們的 OpenXR 會話已經同步。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Informs our OpenXR session has been synchronized.
 
 **session_visible**\ (\ ) :ref:`🔗<class_OpenXRInterface_signal_session_visible>`
 
-Informs our OpenXR session is now visible, for example output is sent to the HMD but we don't receive XR input.
+通知我們的 OpenXR 會話現在可見，例如輸出發送到了 HMD，但是我們還收不到 XR 輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ Informs our OpenXR session is now visible, for example output is sent to the HMD
 
 **user_presence_changed**\ (\ is_user_present\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRInterface_signal_user_presence_changed>`
 
-Signal emitted when the user presence value changes.
+當使用者在場狀態值發生改變時發出訊號。
 
-\ **Note:** This signal will not be emitted during application startup and application shutdown. Developers should assume user presence is gained on startup and lost on shutdown.
+\ **注意：** 在應用程式啟動和關閉期間不會發出此訊號。開發者應假設使用者在啟動時獲得在場狀態，在關閉時失去在場狀態。
 
 .. rst-class:: classref-section-separator
 
@@ -277,7 +277,7 @@ enum **SessionState**: :ref:`🔗<enum_OpenXRInterface_SessionState>`
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_UNKNOWN** = ``0``
 
-The state of the session is unknown, we haven't tried setting up OpenXR yet.
+會話的狀態未知，我們尚未設定 OpenXR。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_IDLE:
 
@@ -285,7 +285,7 @@ The state of the session is unknown, we haven't tried setting up OpenXR yet.
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_IDLE** = ``1``
 
-The initial state after the OpenXR session is created or after the session is destroyed.
+OpenXR 會話建立和銷毀後的初始狀態。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_READY:
 
@@ -293,7 +293,7 @@ The initial state after the OpenXR session is created or after the session is de
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_READY** = ``2``
 
-OpenXR is ready to begin our session. :ref:`session_begun<class_OpenXRInterface_signal_session_begun>` is emitted when we change to this state.
+OpenXR 已準備好開始會話。進入該狀態時會發出 :ref:`session_begun<class_OpenXRInterface_signal_session_begun>`\ 。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_SYNCHRONIZED:
 
@@ -301,7 +301,7 @@ OpenXR is ready to begin our session. :ref:`session_begun<class_OpenXRInterface_
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_SYNCHRONIZED** = ``3``
 
-The application has synched its frame loop with the runtime but we're not rendering anything. :ref:`session_synchronized<class_OpenXRInterface_signal_session_synchronized>` is emitted when we change to this state.
+應用已將其影格循環與執行時同步，但尚未進行渲染。進入該狀態時會發出 :ref:`session_synchronized<class_OpenXRInterface_signal_session_synchronized>`\ 。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_VISIBLE:
 
@@ -309,9 +309,9 @@ The application has synched its frame loop with the runtime but we're not render
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_VISIBLE** = ``4``
 
-The application has synched its frame loop with the runtime and we're rendering output to the user, however we receive no user input. :ref:`session_visible<class_OpenXRInterface_signal_session_visible>` is emitted when we change to this state.
+應用已將其影格循環與執行時同步，且正在向使用者渲染輸出，但未收到使用者輸入。進入該狀態時會發出 :ref:`session_visible<class_OpenXRInterface_signal_session_visible>`\ 。
 
-\ **Note:** This is the current state just before we get the focused state, whenever the user opens a system menu, switches to another application, or takes off their headset.
+\ **注意：**\ 這是取得焦點狀態前的那個狀態，出現在使用者打開系統選單、切換到其他應用、摘下頭戴裝置等情況。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_FOCUSED:
 
@@ -319,9 +319,9 @@ The application has synched its frame loop with the runtime and we're rendering 
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_FOCUSED** = ``5``
 
-The application has synched its frame loop with the runtime, we're rendering output to the user and we're receiving XR input. :ref:`session_focussed<class_OpenXRInterface_signal_session_focussed>` is emitted when we change to this state.
+應用已將其影格循環與執行時同步，且正在向使用者渲染輸出並接收使用者輸入。進入該狀態時會發出 :ref:`session_focussed<class_OpenXRInterface_signal_session_focussed>`\ 。
 
-\ **Note:** This is the state OpenXR will be in when the user can fully interact with your game.
+\ **注意：**\ 這是使用者能夠與遊戲完整互動時 OpenXR 所處的狀態。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_STOPPING:
 
@@ -329,7 +329,7 @@ The application has synched its frame loop with the runtime, we're rendering out
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_STOPPING** = ``6``
 
-Our session is being stopped. :ref:`session_stopping<class_OpenXRInterface_signal_session_stopping>` is emitted when we change to this state.
+會話已停止。進入該狀態時會發出 :ref:`session_stopping<class_OpenXRInterface_signal_session_stopping>`\ 。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_LOSS_PENDING:
 
@@ -337,7 +337,7 @@ Our session is being stopped. :ref:`session_stopping<class_OpenXRInterface_signa
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_LOSS_PENDING** = ``7``
 
-The session is about to be lost. :ref:`session_loss_pending<class_OpenXRInterface_signal_session_loss_pending>` is emitted when we change to this state.
+會話即將丟失。進入該狀態時會發出 :ref:`session_loss_pending<class_OpenXRInterface_signal_session_loss_pending>`\ 。
 
 .. _class_OpenXRInterface_constant_SESSION_STATE_EXITING:
 
@@ -345,7 +345,7 @@ The session is about to be lost. :ref:`session_loss_pending<class_OpenXRInterfac
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_EXITING** = ``8``
 
-The OpenXR instance is about to be destroyed and we're exiting. :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>` is emitted when we change to this state.
+OpenXR 實例即將被銷毀，正在退出。更改為該狀態時會發出 :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ enum **HandMotionRange**: :ref:`🔗<enum_OpenXRInterface_HandMotionRange>`
 
 :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>` **HAND_MOTION_RANGE_UNOBSTRUCTED** = ``0``
 
-Full hand range, if user closes their hands, we make a full fist.
+全手範圍，如果使用者握緊雙手，我們會握緊拳頭。
 
 .. _class_OpenXRInterface_constant_HAND_MOTION_RANGE_CONFORM_TO_CONTROLLER:
 
@@ -405,7 +405,7 @@ Full hand range, if user closes their hands, we make a full fist.
 
 :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>` **HAND_MOTION_RANGE_CONFORM_TO_CONTROLLER** = ``1``
 
-Conform to controller, if user closes their hands, the tracked data conforms to the shape of the controller.
+符合控制器，如果使用者合上手，則追蹤的資料符合控制器的形狀。
 
 .. _class_OpenXRInterface_constant_HAND_MOTION_RANGE_MAX:
 
@@ -413,7 +413,7 @@ Conform to controller, if user closes their hands, the tracked data conforms to 
 
 :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>` **HAND_MOTION_RANGE_MAX** = ``2``
 
-Maximum value for the motion range enum.
+運動範圍列舉的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ enum **HandTrackedSource**: :ref:`🔗<enum_OpenXRInterface_HandTrackedSource>`
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_UNKNOWN** = ``0``
 
-The source of hand tracking data is unknown (the extension is likely unsupported).
+手部追蹤資料的來源未知（該擴充可能不受支援）。
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_UNOBSTRUCTED:
 
@@ -439,7 +439,7 @@ The source of hand tracking data is unknown (the extension is likely unsupported
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_UNOBSTRUCTED** = ``1``
 
-The source of hand tracking is unobstructed, this means that an accurate method of hand tracking is used, e.g. optical hand tracking, data gloves, etc.
+手部追蹤的來源是暢通的，這意味著使用了準確的手部追蹤方法，例如光學手部追蹤、資料手套等。
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_CONTROLLER:
 
@@ -447,7 +447,7 @@ The source of hand tracking is unobstructed, this means that an accurate method 
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_CONTROLLER** = ``2``
 
-The source of hand tracking is a controller, bone positions are inferred from controller inputs.
+手部追蹤的來源是控制器，骨骼位置是根據控制器輸入推斷的。
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_MAX:
 
@@ -455,7 +455,7 @@ The source of hand tracking is a controller, bone positions are inferred from co
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_MAX** = ``3``
 
-Represents the size of the :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` enum.
+代表 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ enum **HandJoints**: :ref:`🔗<enum_OpenXRInterface_HandJoints>`
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_INDEX_METACARPAL** = ``6``
 
-Index finger metacarpal joint.
+食指掌骨關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_INDEX_PROXIMAL:
 
@@ -529,7 +529,7 @@ Index finger metacarpal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_INDEX_PROXIMAL** = ``7``
 
-Index finger phalanx proximal joint.
+食指指骨近端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_INDEX_INTERMEDIATE:
 
@@ -537,7 +537,7 @@ Index finger phalanx proximal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_INDEX_INTERMEDIATE** = ``8``
 
-Index finger phalanx intermediate joint.
+食指指骨中間關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_INDEX_DISTAL:
 
@@ -545,7 +545,7 @@ Index finger phalanx intermediate joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_INDEX_DISTAL** = ``9``
 
-Index finger phalanx distal joint.
+食指指骨遠端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_INDEX_TIP:
 
@@ -553,7 +553,7 @@ Index finger phalanx distal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_INDEX_TIP** = ``10``
 
-Index finger tip joint.
+食指指尖關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MIDDLE_METACARPAL:
 
@@ -561,7 +561,7 @@ Index finger tip joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MIDDLE_METACARPAL** = ``11``
 
-Middle finger metacarpal joint.
+中指掌骨關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MIDDLE_PROXIMAL:
 
@@ -569,7 +569,7 @@ Middle finger metacarpal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MIDDLE_PROXIMAL** = ``12``
 
-Middle finger phalanx proximal joint.
+中指指骨近端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MIDDLE_INTERMEDIATE:
 
@@ -577,7 +577,7 @@ Middle finger phalanx proximal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MIDDLE_INTERMEDIATE** = ``13``
 
-Middle finger phalanx intermediate joint.
+中指指骨中間關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MIDDLE_DISTAL:
 
@@ -585,7 +585,7 @@ Middle finger phalanx intermediate joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MIDDLE_DISTAL** = ``14``
 
-Middle finger phalanx distal joint.
+中指指骨遠端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MIDDLE_TIP:
 
@@ -593,7 +593,7 @@ Middle finger phalanx distal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MIDDLE_TIP** = ``15``
 
-Middle finger tip joint.
+中指指尖關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_RING_METACARPAL:
 
@@ -601,7 +601,7 @@ Middle finger tip joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_RING_METACARPAL** = ``16``
 
-Ring finger metacarpal joint.
+無名指掌骨關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_RING_PROXIMAL:
 
@@ -609,7 +609,7 @@ Ring finger metacarpal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_RING_PROXIMAL** = ``17``
 
-Ring finger phalanx proximal joint.
+無名指指骨近端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_RING_INTERMEDIATE:
 
@@ -617,7 +617,7 @@ Ring finger phalanx proximal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_RING_INTERMEDIATE** = ``18``
 
-Ring finger phalanx intermediate joint.
+無名指指骨中間關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_RING_DISTAL:
 
@@ -625,7 +625,7 @@ Ring finger phalanx intermediate joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_RING_DISTAL** = ``19``
 
-Ring finger phalanx distal joint.
+無名指指骨遠端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_RING_TIP:
 
@@ -633,7 +633,7 @@ Ring finger phalanx distal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_RING_TIP** = ``20``
 
-Ring finger tip joint.
+無名指指尖關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LITTLE_METACARPAL:
 
@@ -641,7 +641,7 @@ Ring finger tip joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_LITTLE_METACARPAL** = ``21``
 
-Pinky finger metacarpal joint.
+小指掌骨關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LITTLE_PROXIMAL:
 
@@ -649,7 +649,7 @@ Pinky finger metacarpal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_LITTLE_PROXIMAL** = ``22``
 
-Pinky finger phalanx proximal joint.
+小指指骨近端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LITTLE_INTERMEDIATE:
 
@@ -657,7 +657,7 @@ Pinky finger phalanx proximal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_LITTLE_INTERMEDIATE** = ``23``
 
-Pinky finger phalanx intermediate joint.
+小指指骨中間關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LITTLE_DISTAL:
 
@@ -665,7 +665,7 @@ Pinky finger phalanx intermediate joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_LITTLE_DISTAL** = ``24``
 
-Pinky finger phalanx distal joint.
+小指指骨遠端關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LITTLE_TIP:
 
@@ -673,7 +673,7 @@ Pinky finger phalanx distal joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_LITTLE_TIP** = ``25``
 
-Pinky finger tip joint.
+小指指尖關節。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_MAX:
 
@@ -681,7 +681,7 @@ Pinky finger tip joint.
 
 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` **HAND_JOINT_MAX** = ``26``
 
-Represents the size of the :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` enum.
+代表 :ref:`HandJoints<enum_OpenXRInterface_HandJoints>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ enum **PerfSettingsLevel**: :ref:`🔗<enum_OpenXRInterface_PerfSettingsLevel>`
 
 :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>` **PERF_SETTINGS_LEVEL_POWER_SAVINGS** = ``0``
 
-The application has entered a non-XR section (head-locked / static screen), during which power savings are to be prioritized.
+應用程式進入了非 XR 段落（鎖定頭部或靜態螢幕），在此期間節能優先。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_LEVEL_SUSTAINED_LOW:
 
@@ -707,7 +707,7 @@ The application has entered a non-XR section (head-locked / static screen), duri
 
 :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>` **PERF_SETTINGS_LEVEL_SUSTAINED_LOW** = ``1``
 
-The application has entered a low and stable complexity section, during which reducing power is more important than occasional late rendering frames.
+應用程式進入了穩定且低複雜度的段落，在此期間降低能耗比偶爾推遲渲染影格更重要。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_LEVEL_SUSTAINED_HIGH:
 
@@ -715,7 +715,7 @@ The application has entered a low and stable complexity section, during which re
 
 :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>` **PERF_SETTINGS_LEVEL_SUSTAINED_HIGH** = ``2``
 
-The application has entered a high or dynamic complexity section, during which the XR Runtime strives for consistent XR compositing and frame rendering within a thermally sustainable range.
+應用程式進入了動態且高複雜度的段落，在此期間 XR 執行時會努力在熱量可持續範圍內實現一致的 XR 合成和影格渲染。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_LEVEL_BOOST:
 
@@ -723,7 +723,7 @@ The application has entered a high or dynamic complexity section, during which t
 
 :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>` **PERF_SETTINGS_LEVEL_BOOST** = ``3``
 
-The application has entered a section with very high complexity, during which the XR Runtime is allowed to step up beyond the thermally sustainable range.
+應用程式進入了極高複雜度的段落，在此期間 XR 執行時允許越過熱量可持續範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -741,7 +741,7 @@ enum **PerfSettingsSubDomain**: :ref:`🔗<enum_OpenXRInterface_PerfSettingsSubD
 
 :ref:`PerfSettingsSubDomain<enum_OpenXRInterface_PerfSettingsSubDomain>` **PERF_SETTINGS_SUB_DOMAIN_COMPOSITING** = ``0``
 
-The compositing performance within the runtime has reached a new level.
+執行時的合成效能達到了新的等級。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_SUB_DOMAIN_RENDERING:
 
@@ -749,7 +749,7 @@ The compositing performance within the runtime has reached a new level.
 
 :ref:`PerfSettingsSubDomain<enum_OpenXRInterface_PerfSettingsSubDomain>` **PERF_SETTINGS_SUB_DOMAIN_RENDERING** = ``1``
 
-The application rendering performance has reached a new level.
+應用程式的渲染效能達到了新的等級。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_SUB_DOMAIN_THERMAL:
 
@@ -757,7 +757,7 @@ The application rendering performance has reached a new level.
 
 :ref:`PerfSettingsSubDomain<enum_OpenXRInterface_PerfSettingsSubDomain>` **PERF_SETTINGS_SUB_DOMAIN_THERMAL** = ``2``
 
-The temperature of the device has reached a new level.
+裝置的溫度達到了新的等級。
 
 .. rst-class:: classref-item-separator
 
@@ -775,7 +775,7 @@ enum **PerfSettingsNotificationLevel**: :ref:`🔗<enum_OpenXRInterface_PerfSett
 
 :ref:`PerfSettingsNotificationLevel<enum_OpenXRInterface_PerfSettingsNotificationLevel>` **PERF_SETTINGS_NOTIF_LEVEL_NORMAL** = ``0``
 
-The sub-domain has reached a level where no further actions other than currently applied are necessary.
+子域已達到除了目前採取的措施外不再需要進一步行動的水平。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_NOTIF_LEVEL_WARNING:
 
@@ -783,7 +783,7 @@ The sub-domain has reached a level where no further actions other than currently
 
 :ref:`PerfSettingsNotificationLevel<enum_OpenXRInterface_PerfSettingsNotificationLevel>` **PERF_SETTINGS_NOTIF_LEVEL_WARNING** = ``1``
 
-The sub-domain has reached an early warning level where the application should start proactive mitigation actions.
+子域已達到預警水平，應用程式應該開始採取主動的緩解措施。
 
 .. _class_OpenXRInterface_constant_PERF_SETTINGS_NOTIF_LEVEL_IMPAIRED:
 
@@ -791,7 +791,7 @@ The sub-domain has reached an early warning level where the application should s
 
 :ref:`PerfSettingsNotificationLevel<enum_OpenXRInterface_PerfSettingsNotificationLevel>` **PERF_SETTINGS_NOTIF_LEVEL_IMPAIRED** = ``2``
 
-The sub-domain has reached a critical level where the application should start drastic mitigation actions.
+子域已達到危急水平，應用程式應該開始採取嚴厲的緩解措施。
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_NONE** = ``0``
 
-No flags are set.
+沒有標誌被設定。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_ORIENTATION_VALID:
 
@@ -817,7 +817,7 @@ No flags are set.
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_ORIENTATION_VALID** = ``1``
 
-If set, the orientation data is valid, otherwise, the orientation data is unreliable and should not be used.
+如果設定，則方向資料有效；否則，方向資料不可靠，且不應被使用。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_ORIENTATION_TRACKED:
 
@@ -825,7 +825,7 @@ If set, the orientation data is valid, otherwise, the orientation data is unreli
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_ORIENTATION_TRACKED** = ``2``
 
-If set, the orientation data comes from tracking data, otherwise, the orientation data contains predicted data.
+如果設定，則方向資料來自追蹤資料；否則，該方向封包含預測資料。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_POSITION_VALID:
 
@@ -833,7 +833,7 @@ If set, the orientation data comes from tracking data, otherwise, the orientatio
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_POSITION_VALID** = ``4``
 
-If set, the positional data is valid, otherwise, the positional data is unreliable and should not be used.
+如果設定，則位置資料有效；否則，該位置資料不可靠，且不應被使用。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_POSITION_TRACKED:
 
@@ -841,7 +841,7 @@ If set, the positional data is valid, otherwise, the positional data is unreliab
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_POSITION_TRACKED** = ``8``
 
-If set, the positional data comes from tracking data, otherwise, the positional data contains predicted data.
+如果設定，則位置資料來自追蹤資料；否則，該位置封包含預測資料。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_LINEAR_VELOCITY_VALID:
 
@@ -849,7 +849,7 @@ If set, the positional data comes from tracking data, otherwise, the positional 
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_LINEAR_VELOCITY_VALID** = ``16``
 
-If set, our linear velocity data is valid, otherwise, the linear velocity data is unreliable and should not be used.
+如果設定，則線速度資料有效；否則，線速度資料不可靠，且不應被使用。
 
 .. _class_OpenXRInterface_constant_HAND_JOINT_ANGULAR_VELOCITY_VALID:
 
@@ -857,7 +857,7 @@ If set, our linear velocity data is valid, otherwise, the linear velocity data i
 
 :ref:`HandJointFlags<enum_OpenXRInterface_HandJointFlags>` **HAND_JOINT_ANGULAR_VELOCITY_VALID** = ``32``
 
-If set, our angular velocity data is valid, otherwise, the angular velocity data is unreliable and should not be used.
+如果設定，則角速度資料是有效的；否則，角速度資料不可靠，且不應被使用。
 
 .. rst-class:: classref-section-separator
 
@@ -896,7 +896,7 @@ If set, our angular velocity data is valid, otherwise, the angular velocity data
 - |void| **set_foveation_dynamic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_dynamic**\ (\ )
 
-If ``true``, enables dynamic foveation adjustment. The interface must be initialized before this is accessible. If enabled, foveation will automatically be adjusted between low and :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
+如果為 ``true``\ ，則啟用動態注視點調整。該介面必須在存取該功能之前初始化。如果啟用，注視點將在“低”和\ :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`\ 之間自動調整。
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ If ``true``, enables dynamic foveation adjustment. The interface must be initial
 - |void| **set_foveation_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_foveation_level**\ (\ )
 
-The foveation level, from ``0`` (off) to ``3`` (high). The interface must be initialized before this is accessible.
+注視點層級，從 ``0``\ （關閉）到 ``3``\ （高）。該介面必須在存取該功能之前初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ The foveation level, from ``0`` (off) to ``3`` (high). The interface must be ini
 - |void| **set_foveation_with_subsampled_images**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_with_subsampled_images**\ (\ )
 
-If ``true``, enables subsampled images with foveation, which can provide a performance boost on Vulkan.
+如果設定為 ``true``\ ，將啟用帶注視點渲染（foveation）的子取樣影像，這可以在 Vulkan 圖形介面上帶來效能提升。
 
 .. rst-class:: classref-item-separator
 
@@ -947,7 +947,7 @@ If ``true``, enables subsampled images with foveation, which can provide a perfo
 - |void| **set_render_target_size_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_render_target_size_multiplier**\ (\ )
 
-目前 HMD 的算繪大小乘數。必須在接觸初始化之前設定。
+目前 HMD 的渲染大小乘數。必須在接觸初始化之前設定。
 
 .. rst-class:: classref-item-separator
 
@@ -964,9 +964,9 @@ If ``true``, enables subsampled images with foveation, which can provide a perfo
 - |void| **set_vrs_min_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_min_radius**\ (\ )
 
-The minimum radius around the focal point where full quality is guaranteed if VRS is used as a percentage of screen size.
+如果 VRS 用作螢幕大小的百分比，則焦點周圍可保證完全品質的最小半徑。
 
-\ **Note:** Mobile and Forward+ renderers only. Requires :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
+\ **注意：**\ 僅限 Mobile 和 Forward+ 渲染器。需要將 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 設定為 :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -983,9 +983,9 @@ The minimum radius around the focal point where full quality is guaranteed if VR
 - |void| **set_vrs_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_strength**\ (\ )
 
-The strength used to calculate the VRS density map. The greater this value, the more noticeable VRS is. This improves performance at the cost of quality.
+用於計算 VRS 密度圖的強度。該值越大，VRS 越明顯。這會以犧牲品質為代價來提高效能。
 
-\ **Note:** Mobile and Forward+ renderers only. Requires :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
+\ **注意：**\ 僅限 Mobile 和 Forward+ 渲染器。需要將 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 設定為 :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -1014,7 +1014,7 @@ The strength used to calculate the VRS density map. The greater this value, the 
 
 :ref:`Array<class_Array>` **get_available_display_refresh_rates**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_available_display_refresh_rates>`
 
-Returns a list of display refresh rates supported by the current HMD. Only returned if this feature is supported by the OpenXR runtime and after the interface has been initialized.
+回傳目前頭戴式顯示器支援的顯示刷新率清單。僅當 OpenXR 執行時支援該功能且介面已被初始化後才會回傳。
 
 .. rst-class:: classref-item-separator
 
@@ -1042,7 +1042,7 @@ Returns a list of display refresh rates supported by the current HMD. Only retur
 
 **已棄用：** Use :ref:`XRHandTracker.get_hand_joint_flags()<class_XRHandTracker_method_get_hand_joint_flags>` obtained from :ref:`XRServer.get_tracker()<class_XRServer_method_get_tracker>` instead.
 
-If handtracking is enabled, returns flags that inform us of the validity of the tracking data.
+如果啟用了手動追蹤，則回傳通知我們追蹤資料有效性的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -1112,7 +1112,7 @@ If handtracking is enabled, returns flags that inform us of the validity of the 
 
 **已棄用：** Use :ref:`XRHandTracker.hand_tracking_source<class_XRHandTracker_property_hand_tracking_source>` obtained from :ref:`XRServer.get_tracker()<class_XRServer_method_get_tracker>` instead.
 
-If handtracking is enabled and hand tracking source is supported, gets the source of the hand tracking data for ``hand``.
+如果啟用了手部追蹤並且支援手部追蹤源，則取得 ``hand`` 的手部追蹤資料源。
 
 .. rst-class:: classref-item-separator
 
@@ -1136,7 +1136,7 @@ If handtracking is enabled and hand tracking source is supported, gets the sourc
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **get_session_state**\ (\ ) :ref:`🔗<class_OpenXRInterface_method_get_session_state>`
 
-Returns the current state of our OpenXR session.
+回傳 OpenXR 會話的目前狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1160,9 +1160,9 @@ Returns the current state of our OpenXR session.
 
 :ref:`bool<class_bool>` **is_eye_gaze_interaction_supported**\ (\ ) :ref:`🔗<class_OpenXRInterface_method_is_eye_gaze_interaction_supported>`
 
-Returns the capabilities of the eye gaze interaction extension.
+回傳眼睛注視互動擴充的功能。
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **注意：**\ 這僅在 OpenXR 被初始化後回傳一個有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ Returns the capabilities of the eye gaze interaction extension.
 
 :ref:`bool<class_bool>` **is_foveation_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_foveation_supported>`
 
-Returns ``true`` if OpenXR's foveation extension is supported. The interface must be initialized before this returns a valid value.
+如果支援 OpenXR 的注視點擴充，則回傳 ``true``\ 。該介面必須在該方法回傳有效值之前初始化。
 
-\ **Note:** When using the Vulkan rendering driver, :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` must be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>` to support foveation.
+\ **注意：**\ 使用 Vulkan 渲染驅動程式時，必須將 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 設定為 :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>` 才能支援注視點。
 
 .. rst-class:: classref-item-separator
 
@@ -1188,9 +1188,9 @@ Returns ``true`` if OpenXR's foveation extension is supported. The interface mus
 
 :ref:`bool<class_bool>` **is_hand_interaction_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_hand_interaction_supported>`
 
-Returns ``true`` if OpenXR's hand interaction profile is supported and enabled.
+如果支援並啟用了 OpenXR 的手部互動設定檔案，則回傳 ``true``\ 。
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **注意：**\ 僅在初始化 OpenXR 後才回傳有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -1202,9 +1202,9 @@ Returns ``true`` if OpenXR's hand interaction profile is supported and enabled.
 
 :ref:`bool<class_bool>` **is_hand_tracking_supported**\ (\ ) :ref:`🔗<class_OpenXRInterface_method_is_hand_tracking_supported>`
 
-Returns ``true`` if OpenXR's hand tracking is supported and enabled.
+如果支援且已啟用 OpenXR 的手部追蹤，則回傳 ``true``\ 。
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **注意：**\ 這僅在 OpenXR 已被初始化後回傳一個有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -1216,9 +1216,9 @@ Returns ``true`` if OpenXR's hand tracking is supported and enabled.
 
 :ref:`bool<class_bool>` **is_user_presence_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_presence_supported>`
 
-Returns ``true`` if OpenXR's user presence extension is supported and enabled.
+如果 OpenXR 的使用者存在（user presence）擴充受支援且已啟用，則回傳 ``true``\ 。
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **注意：** 此方法只有在 OpenXR 初始化完成之後，才會回傳有效的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1230,7 +1230,7 @@ Returns ``true`` if OpenXR's user presence extension is supported and enabled.
 
 :ref:`bool<class_bool>` **is_user_present**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_present>`
 
-Returns ``true`` if system has detected the presence of a user in the XR experience.
+如果系統檢測到使用者在 XR（擴充現實）體驗中處於“在場”狀態，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1254,7 +1254,7 @@ Returns ``true`` if system has detected the presence of a user in the XR experie
 
 |void| **set_cpu_level**\ (\ level\: :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>`\ ) :ref:`🔗<class_OpenXRInterface_method_set_cpu_level>`
 
-Sets the CPU performance level of the OpenXR device.
+設定 OpenXR 裝置的 CPU 效能等級。
 
 .. rst-class:: classref-item-separator
 
@@ -1266,7 +1266,7 @@ Sets the CPU performance level of the OpenXR device.
 
 |void| **set_gpu_level**\ (\ level\: :ref:`PerfSettingsLevel<enum_OpenXRInterface_PerfSettingsLevel>`\ ) :ref:`🔗<class_OpenXRInterface_method_set_gpu_level>`
 
-Sets the GPU performance level of the OpenXR device.
+設定 OpenXR 裝置的 GPU 效能等級。
 
 .. rst-class:: classref-item-separator
 

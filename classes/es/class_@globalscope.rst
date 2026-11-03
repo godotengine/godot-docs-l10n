@@ -566,7 +566,7 @@ Alineación vertical superior, generalmente para clases de texto.
 
 :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **VERTICAL_ALIGNMENT_CENTER** = ``1``
 
-Alineación central vertical, normalmente para clases de texto.Alineacion central vertical, generalmente usada para clases derivadas de texto.
+Alineación central vertical, generalmente usada para clases derivadas de texto.
 
 .. _class_@GlobalScope_constant_VERTICAL_ALIGNMENT_BOTTOM:
 
@@ -730,7 +730,7 @@ Especifica que los ángulos de Euler deben estar en orden XZY. Al componer, las 
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Especifica que los ángulos de Euler deben estar en orden YXZ . Al componer, las rotaciones suceden sobre los ejes Y, X, Z, en ese orden. Al descomponer, el orden se invierte, primero Z, luego X y, por último, Y.
+Especifica que los ángulos de Euler deben estar en orden YXZ. Al componer, las rotaciones suceden sobre los ejes Y, X, Z, en ese orden. Al descomponer, el orden se invierte, primero Z, luego X y, por último, Y.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -738,7 +738,7 @@ Especifica que los ángulos de Euler deben estar en orden YXZ . Al componer, las
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Especifica que los ángulos de Euler deben estar en orden YZX . Al componer, las rotaciones suceden sobre los ejes Y, Z, X, en ese orden. Al descomponer, el orden se invierte, primero X, luego Z y, por último, Y.
+Especifica que los ángulos de Euler deben estar en orden YZX. Al componer, las rotaciones suceden sobre los ejes Y, Z, X, en ese orden. Al descomponer, el orden se invierte, primero X, luego Z y, por último, Y.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -868,7 +868,7 @@ Tecla Imprimir Pantalla.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SYSREQ** = ``4194315``
 
-Tecla Peticion de Sistema.
+Tecla petición de sistema.
 
 .. _class_@GlobalScope_constant_KEY_CLEAR:
 
@@ -1308,7 +1308,7 @@ Tecla Resta(-) del teclado numérico.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_KP_PERIOD** = ``4194436``
 
-Tecla . decimal(.) del teclado numérico.
+Tecla . decimal (.) del teclado numérico.
 
 .. _class_@GlobalScope_constant_KEY_KP_ADD:
 
@@ -1444,7 +1444,7 @@ Tecla de Adelante.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_STOP** = ``4194378``
 
-Tecla reproduccion parar.
+Tecla de parada de reproducción.
 
 .. _class_@GlobalScope_constant_KEY_REFRESH:
 
@@ -1492,7 +1492,7 @@ Tecla de reproducción multimedia.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MEDIASTOP** = ``4194389``
 
-Tecla reproduccion parar.
+Tecla de parada de reproducción.
 
 .. _class_@GlobalScope_constant_KEY_MEDIAPREVIOUS:
 
@@ -3726,76 +3726,76 @@ Indica que el valor de la propiedad es un objeto codificado como ID de objeto, c
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
+Si una propiedad es :ref:`String<class_String>`, indica que la propiedad representa un tipo particular (clase). Esto permite seleccionar un tipo desde el diálogo de creación. La propiedad almacenará el tipo seleccionado como una string.
 
-If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
+Si una propiedad es :ref:`Array<class_Array>`, indica al editor cómo mostrar los elementos. ``hint_string`` debe codificar tipos anidados usando ``":"`` y ``"/"``.
 
-If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
+Si una propiedad es :ref:`Dictionary<class_Dictionary>`, indica al editor cómo mostrar los elementos. ``hint_string`` es lo mismo que :ref:`Array<class_Array>`, con un ``";"`` separando la clave y el valor.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Array of elem_type.
+    # Array de elem_type.
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # Two-dimensional array of elem_type (array of arrays of elem_type).
+    # Array bidimensional de elem_type (array de arrays de elem_type).
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
+    # Array tridimensional de elem_type (array de arrays de arrays de elem_type).
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // Array of elemType.
+    // Array de elemType.
     hintString = $"{elemType:D}:";
     hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Two-dimensional array of elemType (array of arrays of elemType).
+    // Array bidimensional de elemType (array de arrays de elemType).
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
+    // Array tridimensional de elemType (array de arrays de arrays de elemType).
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **Examples:**\ 
+\ **Ejemplos:**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # Array of integers.
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
+    hint_string = "%d:" % [TYPE_INT] # Array de enteros.
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array de enteros (en el rango de 1 a 10).
+    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array de enteros (una enumeración).
+    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array de enteros (una enumeración).
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array de strings (rutas de archivos).
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array de texturas.
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Array bidimensional de floats.
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Array bidimensional de strings multilínea.
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Array bidimensional de floats (en rango de -1 a 1).
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array bidimensional de texturas.
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array de enteros (en rango de 1 a 10).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array de enteros (una enumeración).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array de enteros (una enumeración).
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array de strings (rutas de archivos).
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array de texturas.
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Array bidimensional de floats.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Array bidimensional de strings multilínea.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Array bidimensional de floats (en rango de -1 a 1).
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array bidimensional de texturas.
 
 
 
-\ **Note:** The trailing colon is required for properly detecting built-in types.
+\ **Nota:** Los dos puntos finales son necesarios para detectar correctamente los tipos integrados.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -4142,7 +4142,7 @@ Si la propiedad tiene ``nil`` como valor predeterminado, su tipo será :ref:`Var
 
 La propiedad es el recuento de elementos de un array de propiedades, es decir, una lista de grupos de propiedades relacionadas. Las propiedades definidas con este uso también necesitan un campo específico ``class_name`` en forma de ``label,prefix``. El campo también puede incluir opciones adicionales separadas por comas:
 
-- ``page_size=N``: Anula :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` para este array.
+- ``page_size=N``: Sobrescribe :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` para este array.
 
 - ``add_button_text=text``: El texto que se muestra en el botón "Añadir elemento".
 
@@ -4180,7 +4180,7 @@ Al duplicar un recurso con :ref:`Resource.duplicate()<class_Resource_method_dupl
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_HIGH_END_GFX** = ``2097152``
 
-La propiedad solo se muestra en el editor si se admiten renderizadores modernos (se excluye el método de renderizado de compatibilidad).
+La propiedad solo se muestra en el editor si se admiten renderizadores modernos (se excluye el método de renderizado Compatibility).
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_NODE_PATH_FROM_SCENE_ROOT:
 
@@ -4868,7 +4868,7 @@ Operador OR lógico (``or`` o ``||``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_XOR** = ``22``
 
-Operador XOR lógico ( no implementado en GDScript).
+Operador lógico XOR (no implementado en GDScript).
 
 .. _class_@GlobalScope_constant_OP_NOT:
 
@@ -5836,7 +5836,7 @@ Restringe el ``value``, devolviendo una :ref:`Variant<class_Variant>` no menor q
 
 \ **Nota:** Para mejor seguridad de tipo, utiliza :ref:`clampf()<class_@GlobalScope_method_clampf>`, :ref:`clampi()<class_@GlobalScope_method_clampi>`, :ref:`Vector2.clamp()<class_Vector2_method_clamp>`, :ref:`Vector3.clamp()<class_Vector3_method_clamp>`, :ref:`Vector3i.clamp()<class_Vector3i_method_clamp>`, :ref:`Vector4.clamp()<class_Vector4_method_clamp>`, :ref:`Vector4i.clamp()<class_Vector4i_method_clamp>`, o :ref:`Color.clamp()<class_Color_method_clamp>` (Actualmente no compatible con este método).
 
-\ **Nota:** Cuando utilices esto en vectores *no* realizará restricción de componentes, y elegirá ``min`` si ``value < min`` or ``max`` si ``value > max``. Para realizar restrición de componentes utiliza los metodos listados arriba.
+\ **Nota:** Cuando utilices esto en vectores *no* realizará restricción de componentes, y elegirá ``min`` si ``value < min`` or ``max`` si ``value > max``. Para realizar restrición de componentes utiliza los métodos listados arriba.
 
 .. rst-class:: classref-item-separator
 
@@ -5948,7 +5948,7 @@ Realiza una interpolación cúbica entre dos valores de rotación con la ruta m�
 
 Realiza una interpolación cúbica entre dos valores rotacionales por el camino más corto definido por el factor definido en los valores ``weight`` con ``pre`` y ``post``. Véase también :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
-Puede realizar una interpolación mas suave usando valores del tiempo en comparación con :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>`.
+Puede realizar una interpolación más suave usando valores del tiempo en comparación con :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6090,7 +6090,7 @@ Véase también: :ref:`ceil()<class_@GlobalScope_method_ceil>`, :ref:`round()<cl
 
 Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el número entero de mayor tamaño que no sea superior a ``x``.
 
-Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`float<class_float>`.
+Una versión con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6104,7 +6104,7 @@ Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`
 
 Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el número entero de mayor tamaño que no sea superior a ``x``.
 
-Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`int<class_int>`.
+Una versión con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`int<class_int>`.
 
 \ **Nota:** Esta función *no* es la misma que ``int(x)``, la cual redondea hacia 0.
 
@@ -6723,7 +6723,7 @@ Convierte uno o más argumentos de cualquier tipo a string de la mejor manera po
 
 
 
-\ **Note:** Considera usar :ref:`push_error()<class_@GlobalScope_method_push_error>` y :ref:`push_warning()<class_@GlobalScope_method_push_warning>` para imprimir mensajes de error y advertencia en lugar de :ref:`print()<class_@GlobalScope_method_print>` o :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. Esto los distingue de los mensajes de impresión utilizados para fines de depuración, mientras que también muestra un seguimiento de la pila cuando se imprime un error o una advertencia. Véase también :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>` y :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`.
+\ **Nota:** Considera usar :ref:`push_error()<class_@GlobalScope_method_push_error>` y :ref:`push_warning()<class_@GlobalScope_method_push_warning>` para imprimir mensajes de error y advertencia en lugar de :ref:`print()<class_@GlobalScope_method_print>` o :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. Esto los distingue de los mensajes de impresión utilizados para fines de depuración, mientras que también muestra un seguimiento de la pila cuando se imprime un error o una advertencia. Véase también :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>` y :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7107,7 +7107,7 @@ Devuelve un entero aleatorio con signo de 32 bits en el rango de ``from`` hasta 
 
 Aleatorizar la semilla (o el estado interno) del generador de números aleatorios. Es una implementación actual que utiliza un número basado en el tiempo del dispositivo.
 
-\ **Nota:** Esta función es llamada automáticamente cuando se ejecuta el proyecto. Si se necesita arreglar la semilla para mas consistencia o reproducir resultados, usa :ref:`seed()<class_@GlobalScope_method_seed>` para inicializar el generador de números aleatorios.
+\ **Nota:** Esta función es llamada automáticamente cuando se ejecuta el proyecto. Si se necesita arreglar la semilla para más consistencia o reproducir resultados, usa :ref:`seed()<class_@GlobalScope_method_seed>` para inicializar el generador de números aleatorios.
 
 .. rst-class:: classref-item-separator
 
@@ -7125,7 +7125,7 @@ Mapea un ``value`` en un rango de ``[istart, istop]`` a ``[ostart, ostop]``. Vé
 
     remap(75, 0, 100, -1, 1) #Devuelve 0.5
 
-Para casos mas complejos en donde se requieran multiples rangos, considera utilizar :ref:`Curve<class_Curve>` o :ref:`Gradient<class_Gradient>` en su lugar.
+Para casos más complejos en donde se requieran multiples rangos, considera utilizar :ref:`Curve<class_Curve>` o :ref:`Gradient<class_Gradient>` en su lugar.
 
 \ **Nota:** Si ``istart == istop``, el valor devuelto es indefinido (probablemente NaN, INF, o -INF).
 
@@ -7201,9 +7201,9 @@ Véase también :ref:`floor()<class_@GlobalScope_method_floor>`, :ref:`ceil()<cl
 
 :ref:`float<class_float>` **roundf**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_roundf>`
 
-Redondea ``x`` al número entero mas cercano, con los casos intermedios redondeados a partir de 0.
+Redondea ``x`` al número entero más cercano, con los casos intermedios redondeados a partir de 0.
 
-Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>` , retorna un :ref:`float<class_float>`.
+Es una versión de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>`, retorna un :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7215,9 +7215,9 @@ Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_roun
 
 :ref:`int<class_int>` **roundi**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_roundi>`
 
-Redondea ``x`` al número entero mas cercano, con los casos intermedios redondeados a partir de 0.
+Redondea ``x`` al número entero más cercano, con los casos intermedios redondeados a partir de 0.
 
-Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>` , retorna un :ref:`int<class_int>`.
+Es una versión de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>`, retorna un :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7326,7 +7326,7 @@ Devuelve ``-1`` si ``x`` es un valor negativo, ``1`` si ``x`` es positivo y ``0`
 
 :ref:`float<class_float>` **sin**\ (\ angle_rad\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_sin>`
 
-Devuelve el seno de un angulo ``angle_rad`` en radianes.
+Devuelve el seno de un ángulo ``angle_rad`` en radianes.
 
 ::
 

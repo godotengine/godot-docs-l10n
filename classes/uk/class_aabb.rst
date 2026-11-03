@@ -273,9 +273,11 @@ AABB
 
 Повертає ``true``, якщо ця обмежувальна рамка *повністю* охоплює рамку ``with``. Краї обох коробок включені.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var a = AABB(Vector3(0, 0, 0), Vector3(4, 4, 4))
     var b = AABB(Vector3(1, 1, 1), Vector3(3, 3, 3))
     var c = AABB(Vector3(2, 2, 2), Vector3(8, 8, 8))
@@ -283,8 +285,9 @@ AABB
     print(a.encloses(a)) # Виводить true
     print(a.encloses(b)) # Виводить true
     print(a.encloses(c)) # Виводить false
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var a = new Aabb(new Vector3(0, 0, 0), new Vector3(4, 4, 4));
     var b = new Aabb(new Vector3(1, 1, 1), new Vector3(3, 3, 3));
     var c = new Aabb(new Vector3(2, 2, 2), new Vector3(8, 8, 8));
@@ -292,7 +295,8 @@ AABB
     GD.Print(a.Encloses(a)); // Виводить True
     GD.Print(a.Encloses(b)); // Виводить True
     GD.Print(a.Encloses(c)); // Виводить False
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-item-separator
 

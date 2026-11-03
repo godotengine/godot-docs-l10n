@@ -14,13 +14,13 @@ Objeto ligero utilizado para animación de propósito general a través de scrip
 Descripción
 ----------------------
 
-Tweens are mostly useful for animations requiring a numerical property to be interpolated over a range of values. The name *tween* comes from *in-betweening*, an animation technique where you specify *keyframes* and the computer interpolates the frames that appear between them. Animating something with a **Tween** is called tweening.
+Los interpoladores (tweens) son útiles principalmente para animaciones que requieren que se interpole una propiedad numérica en un rango de valores. El nombre *tween* proviene de *in-betweening*, una técnica de animación en la que se especifican *fotogramas clave* y el ordenador interpola los fotogramas que aparecen entre ellos. Animar algo con un **Tween** se llama tweening.
 
-\ **Tween** is more suited than :ref:`AnimationPlayer<class_AnimationPlayer>` for animations where you don't know the final values in advance. For example, interpolating a dynamically-chosen camera zoom value is best done with a **Tween**; it would be difficult to do the same thing with an :ref:`AnimationPlayer<class_AnimationPlayer>` node. Tweens are also more light-weight than :ref:`AnimationPlayer<class_AnimationPlayer>`, so they are very much suited for simple animations or general tasks that don't require visual tweaking provided by the editor. They can be used in a "fire-and-forget" manner for some logic that normally would be done by code. You can e.g. make something shoot periodically by using a looped :ref:`CallbackTweener<class_CallbackTweener>` with a delay.
+Un **Tween** es más adecuado que :ref:`AnimationPlayer<class_AnimationPlayer>` para animaciones en las que no se conocen los valores finales de antemano. Por ejemplo, la interpolación de un valor de zoom de cámara elegido dinámicamente se realiza mejor con un **Tween**; sería difícil hacer lo mismo con un nodo :ref:`AnimationPlayer<class_AnimationPlayer>`. Los tweens también son más ligeros que :ref:`AnimationPlayer<class_AnimationPlayer>`, por lo que son muy adecuados para animaciones simples o tareas generales que no requieren ajustes visuales proporcionados por el editor. Se pueden utilizar sin necesidad de gestionar después su ejecución para alguna lógica que normalmente se llevaría a cabo mediante código. Por ejemplo, se puede hacer que algo se active periódicamente mediante un :ref:`CallbackTweener<class_CallbackTweener>` en bucle con un retraso.
 
-A **Tween** can be created by using either :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` or :ref:`Node.create_tween()<class_Node_method_create_tween>`. **Tween**\ s created manually (i.e. by using ``Tween.new()``) are invalid and can't be used for tweening values.
+Se puede crear un **Tween** mediante :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` o :ref:`Node.create_tween()<class_Node_method_create_tween>`. Los **Tween** creados manualmente (es decir, mediante ``Tween.new()``) no son válidos y no se pueden utilizar para interpolar valores.
 
-A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the **Tween** object, using :ref:`tween_property()<class_Tween_method_tween_property>`, :ref:`tween_interval()<class_Tween_method_tween_interval>`, :ref:`tween_callback()<class_Tween_method_tween_callback>`, :ref:`tween_method()<class_Tween_method_tween_method>`, :ref:`tween_subtween()<class_Tween_method_tween_subtween>`, or :ref:`tween_await()<class_Tween_method_tween_await>`:
+Una animación mediante interpolación se crea agregando objetos :ref:`Tweener<class_Tweener>` al objeto **Tween**, utilizando :ref:`tween_property()<class_Tween_method_tween_property>`, :ref:`tween_interval()<class_Tween_method_tween_interval>`, :ref:`tween_callback()<class_Tween_method_tween_callback>`, :ref:`tween_method()<class_Tween_method_tween_method>`, :ref:`tween_subtween()<class_Tween_method_tween_subtween>` o :ref:`tween_await()<class_Tween_method_tween_await>`:
 
 
 .. tabs::
@@ -28,8 +28,8 @@ A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the *
  .. code-tab:: gdscript
 
     var tween = get_tree().create_tween()
-    tween.tween_property($Sprite, "modulate", Color.RED, 1.0)
-    tween.tween_property($Sprite, "scale", Vector2(), 1.0)
+    tween.tween_property($Sprite, "modulate", Color.RED, 1)
+    tween.tween_property($Sprite, "scale", Vector2(), 1)
     tween.tween_callback($Sprite.queue_free)
 
  .. code-tab:: csharp
@@ -41,9 +41,9 @@ A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the *
 
 
 
-This sequence will make the ``$Sprite`` node turn red, then shrink, before finally calling :ref:`Node.queue_free()<class_Node_method_queue_free>` to free the sprite. :ref:`Tweener<class_Tweener>`\ s are executed one after another by default. This behavior can be changed using :ref:`parallel()<class_Tween_method_parallel>` and :ref:`set_parallel()<class_Tween_method_set_parallel>`.
+Esta secuencia hará que el nodo ``$Sprite`` se vuelva rojo, luego se encoja y, por último, llame al método :ref:`Node.queue_free()<class_Node_method_queue_free>` para liberar el sprite. Los :ref:`Tweener<class_Tweener>` se ejecutan uno tras otro de manera predeterminada. Este comportamiento se puede cambiar usando :ref:`parallel()<class_Tween_method_parallel>` y :ref:`set_parallel()<class_Tween_method_set_parallel>`.
 
-When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` methods, a chained method call can be used to tweak the properties of this :ref:`Tweener<class_Tweener>`. For example, if you want to set a different transition type in the above example, you can use :ref:`set_trans()<class_Tween_method_set_trans>`:
+Cuando se crea un :ref:`Tweener<class_Tweener>` con uno de los métodos ``tween_*``, se puede encadenar una llamada a un método para modificar las propiedades de este :ref:`Tweener<class_Tweener>`. Por ejemplo, si deseas establecer un tipo de transición diferente en el ejemplo anterior, puedes utilizar :ref:`set_trans()<class_Tween_method_set_trans>`:
 
 
 .. tabs::
@@ -51,8 +51,8 @@ When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` meth
  .. code-tab:: gdscript
 
     var tween = get_tree().create_tween()
-    tween.tween_property($Sprite, "modulate", Color.RED, 1.0).set_trans(Tween.TRANS_SINE)
-    tween.tween_property($Sprite, "scale", Vector2(), 1.0).set_trans(Tween.TRANS_BOUNCE)
+    tween.tween_property($Sprite, "modulate", Color.RED, 1).set_trans(Tween.TRANS_SINE)
+    tween.tween_property($Sprite, "scale", Vector2(), 1).set_trans(Tween.TRANS_BOUNCE)
     tween.tween_callback($Sprite.queue_free)
 
  .. code-tab:: csharp
@@ -64,7 +64,7 @@ When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` meth
 
 
 
-Most of the **Tween** methods can be chained this way too. In the following example the **Tween** is bound to the running script's node and a default transition is set for its :ref:`Tweener<class_Tweener>`\ s:
+La mayoría de los métodos de **Tween** también se pueden encadenar de esta manera. En el siguiente ejemplo, el **Tween** está vinculado al nodo del script en ejecución y se establece una transición predeterminada para sus :ref:`Tweener<class_Tweener>`:
 
 
 .. tabs::
@@ -72,8 +72,8 @@ Most of the **Tween** methods can be chained this way too. In the following exam
  .. code-tab:: gdscript
 
     var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_ELASTIC)
-    tween.tween_property($Sprite, "modulate", Color.RED, 1.0)
-    tween.tween_property($Sprite, "scale", Vector2(), 1.0)
+    tween.tween_property($Sprite, "modulate", Color.RED, 1)
+    tween.tween_property($Sprite, "scale", Vector2(), 1)
     tween.tween_callback($Sprite.queue_free)
 
  .. code-tab:: csharp
@@ -85,7 +85,7 @@ Most of the **Tween** methods can be chained this way too. In the following exam
 
 
 
-Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
+Otro uso interesante de **Tween** es animar conjuntos arbitrarios de objetos:
 
 
 .. tabs::
@@ -94,7 +94,7 @@ Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
 
     var tween = create_tween()
     for sprite in get_children():
-        tween.tween_property(sprite, "position", Vector2(0, 0), 1.0)
+        tween.tween_property(sprite, "position", Vector2(0, 0), 1)
 
  .. code-tab:: csharp
 
@@ -104,9 +104,9 @@ Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
 
 
 
-In the example above, all children of a node are moved one after another to position ``(0, 0)``.
+En el ejemplo anterior, todos los hijos de un nodo se mueven uno tras otro a la posición ``(0, 0)``.
 
-You should avoid using more than one **Tween** per object's property. If two or more tweens animate one property at the same time, the last one created will take priority and assign the final value. If you want to interrupt and restart an animation, consider assigning the **Tween** to a variable:
+Debe evitar usar más de un **Tween** por propiedad del objeto. Si dos o más interpolaciones animan una propiedad al mismo tiempo, la última creada tendrá prioridad y asignará el valor final. Si deseas interrumpir y reiniciar una animación, considera asignar el **Tween** a una variable:
 
 
 .. tabs::
@@ -116,7 +116,7 @@ You should avoid using more than one **Tween** per object's property. If two or 
     var tween
     func animate():
         if tween:
-            tween.kill() # Abort the previous animation.
+            tween.kill() # Cancela la animación anterior
         tween = create_tween()
 
  .. code-tab:: csharp
@@ -126,19 +126,19 @@ You should avoid using more than one **Tween** per object's property. If two or 
     public void Animate()
     {
         if (_tween != null)
-            _tween.Kill(); // Abort the previous animation
+            _tween.Kill(); // Cancela la animación anterior
         _tween = CreateTween();
     }
 
 
 
-Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accepts a :ref:`TransitionType<enum_Tween_TransitionType>` constant, and refers to the way the timing of the animation is handled (see `easings.net <https://easings.net/>`__ for some examples). The second accepts an :ref:`EaseType<enum_Tween_EaseType>` constant, and controls where the ``trans_type`` is applied to the interpolation (in the beginning, the end, or both). If you don't know which transition and easing to pick, you can try different :ref:`TransitionType<enum_Tween_TransitionType>` constants with :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`, and use the one that looks best.
+Algunos :ref:`Tweener<class_Tweener>` usan transiciones y suavizados. El tipo de transición acepta una constante :ref:`TransitionType<enum_Tween_TransitionType>` y hace referencia a la forma en que se maneja el tiempo de la animación (véase `easings.net <https://easings.net/>`__ para ver algunos ejemplos). El tipo de suavizado acepta una constante :ref:`EaseType<enum_Tween_EaseType>` y controla dónde se aplica ``trans_type`` a la interpolación (al principio, al final o en ambos). Si no sabes qué transición y suavizado elegir, puedes probar diferentes constantes :ref:`TransitionType<enum_Tween_TransitionType>` con :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>` y usar la que se vea mejor.
 
-\ `Tween easing and transition types cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
+\ `Guía de referencia sobre los tipos de transiciones y suavizado de interpolaciones <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
 
-\ **Note:** Tweens are not designed to be reused and trying to do so results in an undefined behavior. Create a new Tween for each animation and every time you replay an animation from start. Keep in mind that Tweens start immediately, so only create a Tween when you want to start animating.
+\ **Nota:** Las interpolaciones no están diseñadas para reutilizarse y, si se intenta hacerlo, se obtendrá un comportamiento indefinido. Crea una nueva interpolación para cada animación y cada vez que vuelvas a reproducir una animación desde el principio. Ten en cuenta que las interpolaciones comienzan inmediatamente, así que crea una interpolación solo cuando quieras empezar a animar.
 
-\ **Note:** The tween is processed after all of the nodes in the current frame, i.e. node's :ref:`Node._process()<class_Node_private_method__process>` method would be called before the tween (or :ref:`Node._physics_process()<class_Node_private_method__physics_process>` depending on the value passed to :ref:`set_process_mode()<class_Tween_method_set_process_mode>`).
+\ **Nota:** El objeto **Tween** se procesa después de todos los nodos del fotograma actual, es decir, el método :ref:`Node._process()<class_Node_private_method__process>` del nodo se llamaría antes que la interpolación (o :ref:`Node._physics_process()<class_Node_private_method__physics_process>`, según el valor que se pase a :ref:`set_process_mode()<class_Tween_method_set_process_mode>`).
 
 .. rst-class:: classref-reftable-group
 

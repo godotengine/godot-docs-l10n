@@ -67,7 +67,7 @@ Default value of this parameter, which will be used if not set externally. :ref:
 - |void| **set_default_value_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_value_enabled**\ (\ )
 
-If ``true``, the node will have a custom default value.
+Si ``true``, le nœud aura une valeur par défaut personnalisée.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

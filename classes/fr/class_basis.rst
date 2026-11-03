@@ -595,7 +595,7 @@ Renvoie ``true`` si cette base est finie, en appelant :ref:`@GlobalScope.is_fini
 
 :ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
 
-Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
+Renvoie ``true`` si cette base est conforme. Une base conforme est à la fois *orthogonale* (les axes sont perpendiculaires les uns aux autres) et *uniforme* (la longueur de tout les axes est ``1.0``). Cette méthode peut être particulièrement utile lors des calculs de physique.
 
 .. rst-class:: classref-item-separator
 

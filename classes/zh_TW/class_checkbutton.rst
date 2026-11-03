@@ -17,7 +17,7 @@ CheckButton
 說明
 ----
 
-**CheckButton** 是一種顯示為勾選欄位的切換按鈕。它在功能上類似於 :ref:`CheckBox<class_CheckBox>`\ ，但外觀不同。為了遵循既定的 UX 模式，建議在切換後會\ **立即**\ 生效時使用 **CheckButton**\ 。例如，如果切換後立即啟用/禁用設定而無需使用者按下確認按鈕時，就可以使用它。
+**CheckButton** 是一種顯示為勾選欄位的切換按鈕。它在功能上類似於 :ref:`CheckBox<class_CheckBox>`\ ，但外觀不同。為了遵循既定的 UX 模式，建議在切換後會\ **立即**\ 生效時使用 **CheckButton**\ 。例如，如果切換後立即啟用/停用設定而無需使用者按下確認按鈕時，就可以使用它。
 
 另見 :ref:`BaseButton<class_BaseButton>`\ ，其中包含與該節點相關的通用屬性和方法。
 
@@ -82,7 +82,7 @@ CheckButton
 
 :ref:`Color<class_Color>` **button_checked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckButton_theme_color_button_checked_color>`
 
-The color of the checked icon when the checkbox is pressed.
+勾選圖示的顏色，該 :ref:`CheckBox<class_CheckBox>` 被按下時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ The color of the checked icon when the checkbox is pressed.
 
 :ref:`Color<class_Color>` **button_unchecked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckButton_theme_color_button_unchecked_color>`
 
-The color of the unchecked icon when the checkbox is not pressed.
+未勾選圖示的顏色，該 :ref:`CheckBox<class_CheckBox>` 未被按下時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`int<class_int>` **check_v_offset** = ``0`` :ref:`🔗<class_CheckButton_theme_constant_check_v_offset>`
 
-算繪切換圖示時使用的垂直偏移量（單位：圖元）。
+渲染切換圖示時使用的垂直偏移量（單位：圖元）。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled** :ref:`🔗<class_CheckButton_theme_icon_checked_disabled>`
 
-切換圖示，該 **CheckButton** 被勾選且被禁用時顯示（用於從左至右佈局）。
+切換圖示，該 **CheckButton** 被勾選且被停用時顯示（用於從左至右佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled_mirrored** :ref:`🔗<class_CheckButton_theme_icon_checked_disabled_mirrored>`
 
-切換圖示，該 **CheckButton** 被勾選且被禁用時顯示（用於從右至左佈局）。
+切換圖示，該 **CheckButton** 被勾選且被停用時顯示（用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled** :ref:`🔗<class_CheckButton_theme_icon_unchecked_disabled>`
 
-切換圖示，該 **CheckButton** 未勾選且被禁用時顯示（用於從左至右佈局）。
+切換圖示，該 **CheckButton** 未勾選且被停用時顯示（用於從左至右佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled_mirrored** :ref:`🔗<class_CheckButton_theme_icon_unchecked_disabled_mirrored>`
 
-切換圖示，該 **CheckButton** 未勾選且被禁用時顯示（用於從右至左佈局）。
+切換圖示，該 **CheckButton** 未勾選且被停用時顯示（用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 

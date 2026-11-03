@@ -284,7 +284,7 @@ Si ``reset`` es ``true``, la animación se reproduce desde el principio.
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_stop>`
 
-Para la animación en ejecucion.
+Para la animación en ejecución.
 
 .. rst-class:: classref-item-separator
 

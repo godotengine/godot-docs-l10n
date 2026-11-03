@@ -59,7 +59,7 @@ WorkerThreadPool
 
 以上程式碼要求 ``enemies`` 陣列中的元素個數在多執行緒部分執行時保持不變。
 
-\ **注意：**\ 如果分佈到多個執行緒執行的工作在計算方面的開銷並不大，那麼使用這個單例可能對性能有負面影響。
+\ **注意：**\ 如果分佈到多個執行緒執行的工作在計算方面的開銷並不大，那麼使用這個單例可能對效能有負面影響。
 
 .. rst-class:: classref-introduction-group
 
@@ -113,13 +113,13 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **add_group_task**\ (\ action\: :ref:`Callable<class_Callable>`, elements\: :ref:`int<class_int>`, tasks_needed\: :ref:`int<class_int>` = -1, high_priority\: :ref:`bool<class_bool>` = false, description\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WorkerThreadPool_method_add_group_task>`
 
-Adds ``action`` as a group task to be executed by the worker threads. The :ref:`Callable<class_Callable>` will be called a number of times based on ``elements``, with the first thread calling it with the value ``0`` as a parameter, and each consecutive execution incrementing this value by 1 until it reaches ``element - 1``.
+將 ``action`` 新增為分組任務，讓多個工作執行緒執行。該 :ref:`Callable<class_Callable>` 的呼叫次數由 ``elements`` 決定，第一個呼叫的執行緒使用 ``0`` 作為參數，後續執行時會將其加 1，直到變為 ``element - 1``\ 。
 
-The number of threads the task is distributed to is defined by ``tasks_needed``, where the default value ``-1`` means it is distributed to all worker threads. ``high_priority`` determines if the task has a high priority or a low priority (default). You can optionally provide a ``description`` to help with debugging.
+任務分布的執行緒數由 ``tasks_needed`` 定義，預設值 ``-1`` 表示分布到所有工作執行緒。\ ``high_priority`` 決定的是任務具有高優先級還是低優先級（預設）。你還可以選擇提供 ``description`` 作為描述資訊，方便除錯。
 
-Returns a group task ID that can be used by other methods.
+回傳分組任務 ID，可用於其他方法。
 
-\ **Warning:** Every task must be waited for completion using :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` or :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` at some point so that any allocated resources inside the task can be cleaned up.
+\ **警告：**\ 每個任務都必須在某處使用 :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` 或 :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` 等待完成，從而清理任務中分配的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ Returns a group task ID that can be used by other methods.
 
 :ref:`int<class_int>` **add_task**\ (\ action\: :ref:`Callable<class_Callable>`, high_priority\: :ref:`bool<class_bool>` = false, description\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WorkerThreadPool_method_add_task>`
 
-Adds ``action`` as a task to be executed by a worker thread. ``high_priority`` determines if the task has a high priority or a low priority (default). You can optionally provide a ``description`` to help with debugging.
+將 ``action`` 新增為分組任務，讓單個工作執行緒執行。\ ``high_priority`` 決定的是任務具有高優先級還是低優先級（預設）。你還可以選擇提供 ``description`` 作為描述資訊，方便除錯。
 
-Returns a task ID that can be used by other methods.
+回傳任務 ID，可用於其他方法。
 
-\ **Warning:** Every task must be waited for completion using :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` or :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` at some point so that any allocated resources inside the task can be cleaned up.
+\ **警告：**\ 每個任務都必須在某處使用 :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` 或 :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` 等待完成，從而清理任務中分配的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Returns a task ID that can be used by other methods.
 
 :ref:`int<class_int>` **get_caller_group_id**\ (\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_caller_group_id>`
 
-Returns the task group ID of the current thread calling this method, or ``-1`` if invalid or the current thread is not part of a task group.
+回傳呼叫該方法的目前執行緒的任務組 ID，如果無效或目前執行緒不屬於任何任務組，則回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,11 +159,11 @@ Returns the task group ID of the current thread calling this method, or ``-1`` i
 
 :ref:`int<class_int>` **get_caller_task_id**\ (\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_caller_task_id>`
 
-Returns the task ID of the current thread calling this method, or ``-1`` if the task is a group task, invalid or the current thread is not part of the thread pool (e.g. the main thread).
+回傳呼叫該方法的目前執行緒的任務 ID，如果任務是組任務、無效或目前執行緒不屬於執行緒池（例如為主執行緒），則回傳 ``-1``\ 。
 
-Can be used by a task to get its own task ID, or to determine whether the current code is running inside the worker thread pool.
+任務可以用該方法取得其自身的任務 ID 或確定目前程式碼是否在工作執行緒池中執行。
 
-\ **Note:** Group tasks have their own IDs, so this method will return ``-1`` for group tasks.
+\ **注意：**\ 分組任務有其自己的 ID，因此該方法對於分組任務將回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,9 +189,9 @@ Can be used by a task to get its own task ID, or to determine whether the curren
 
 :ref:`bool<class_bool>` **is_group_task_completed**\ (\ group_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_is_group_task_completed>`
 
-Returns ``true`` if the group task with the given ID is completed.
+如果 ID 對應的分組任務已完成，則回傳 ``true``\ 。
 
-\ **Note:** You should only call this method between adding the group task and awaiting its completion.
+\ **注意：**\ 只應該在新增分組任務之後、等待完成之前呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ Returns ``true`` if the group task with the given ID is completed.
 
 :ref:`bool<class_bool>` **is_task_completed**\ (\ task_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_is_task_completed>`
 
-Returns ``true`` if the task with the given ID is completed.
+如果 ID 對應的任務已完成，則回傳 ``true``\ 。
 
-\ **Note:** You should only call this method between adding the task and awaiting its completion.
+\ **注意：**\ 只應該在新增分組任務之後、等待完成之前呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -229,13 +229,13 @@ Returns ``true`` if the task with the given ID is completed.
 
 :ref:`Error<enum_@GlobalScope_Error>` **wait_for_task_completion**\ (\ task_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WorkerThreadPool_method_wait_for_task_completion>`
 
-Pauses the thread that calls this method until the task with the given ID is completed.
+暫停呼叫該方法的執行緒，直到給定 ID 對應的任務完成。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the task could be successfully awaited.
+如果能夠成功等待任務，則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
 
-Returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if a task with the passed ID does not exist (maybe because it was already awaited and disposed of).
+如果不存在與傳入 ID 對應的任務（可能已被等待或處理），則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-Returns :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if the call is made from another running task and, due to task scheduling, there's potential for deadlocking (e.g., the task to await may be at a lower level in the call stack and therefore can't progress). This is an advanced situation that should only matter when some tasks depend on others (in the current implementation, the tricky case is a task trying to wait on an older one).
+如果其他正在執行的任務呼叫了該方法，並且由於任務調度的原因，存在死鎖的可能性（例如，要等待的任務可能位於呼叫堆疊中的較低層級，因此不能繼續），則回傳 :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>`\ 。這是比較進階的情況，只有任務之間存在相依性關係（在目前實作中，棘手的情況是嘗試等待較舊任務的任務）時才會出現。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

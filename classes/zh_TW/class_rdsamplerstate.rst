@@ -76,9 +76,9 @@ RDSamplerState
 - |void| **set_anisotropy_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_anisotropy_max**\ (\ )
 
-取樣時能夠使用的最大各向異性。僅在 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true`` 時有效。值越高，傾斜角度下得到的取樣越銳利，但性能開銷也越大（由於顯存頻寬的原因）。這個值可能受到使用的圖形硬體的限制。大多數圖形硬體最多僅支援 ``16.0``\ 。
+取樣時能夠使用的最大各向異性。僅在 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true`` 時有效。值越高，傾斜角度下得到的取樣越銳利，但效能開銷也越大（由於顯存頻寬的原因）。這個值可能受到使用的圖形硬體的限制。大多數圖形硬體最多僅支援 ``16.0``\ 。
 
-如果 :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>` 為 ``1.0``\ ，則會強制禁用各向異性，即便 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true``\ 。
+如果 :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>` 為 ``1.0``\ ，則會強制停用各向異性，即便 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ RDSamplerState
 - |void| **set_border_color**\ (\ value\: :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>`\ )
 - :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **get_border_color**\ (\ )
 
-對取樣器範圍外進行取樣，並且 :ref:`repeat_u<class_RDSamplerState_property_repeat_u>`\ 、\ :ref:`repeat_v<class_RDSamplerState_property_repeat_v>` 或 :ref:`repeat_w<class_RDSamplerState_property_repeat_w>` 的模式禁用了重複時，返回的邊框顏色。
+對取樣器範圍外進行取樣，並且 :ref:`repeat_u<class_RDSamplerState_property_repeat_u>`\ 、\ :ref:`repeat_v<class_RDSamplerState_property_repeat_v>` 或 :ref:`repeat_w<class_RDSamplerState_property_repeat_w>` 的模式停用了重複時，返回的邊框顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ RDSamplerState
 - |void| **set_enable_compare**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_compare**\ (\ )
 
-如果為 ``true``\ ，則返回值基於 :ref:`compare_op<class_RDSamplerState_property_compare_op>` 定義的比較運算。這種做法基於硬體，因此比手動在著色器中執行要快。例如，算繪陰影貼圖時就會對陰影取樣器的深度值進行比較運算。
+如果為 ``true``\ ，則返回值基於 :ref:`compare_op<class_RDSamplerState_property_compare_op>` 定義的比較運算。這種做法基於硬體，因此比手動在著色器中執行要快。例如，渲染陰影貼圖時就會對陰影取樣器的深度值進行比較運算。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ RDSamplerState
 - |void| **set_mag_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_mag_filter**\ (\ )
 
-The sampler's magnification filter. It is the filtering method used when sampling texels that appear bigger than on-screen pixels.
+取樣器的放大過濾器。如果取樣的紋素比螢幕像素顯示得大，就會使用這個過濾方法。
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The sampler's magnification filter. It is the filtering method used when samplin
 - |void| **set_min_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_min_filter**\ (\ )
 
-The sampler's minification filter. It is the filtering method used when sampling texels that appear smaller than on-screen pixels.
+取樣器的縮小過濾器。如果取樣的紋素比螢幕像素顯示得小，就會使用這個過濾方法。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ Mipmap 使用的篩選方法。
 - |void| **set_unnormalized_uvw**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_unnormalized_uvw**\ (\ )
 
-If ``true``, the texture will be sampled with coordinates ranging from 0 to the texture's resolution. Otherwise, the coordinates will be normalized and range from 0 to 1.
+如果為 ``true``\ ，則紋理將使用範圍從 0 到紋理解析度的座標進行取樣。否則，座標將被正規化，範圍從 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -317,6 +317,8 @@ If ``true``, the texture will be sampled with coordinates ranging from 0 to the 
 - :ref:`bool<class_bool>` **get_use_anisotropy**\ (\ )
 
 如果為 ``true``\ ，則執行各向異性取樣。
+
+請參閱 :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

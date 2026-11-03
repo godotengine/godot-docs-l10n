@@ -163,7 +163,7 @@ enum **StateMachineType**: :ref:`🔗<enum_AnimationNodeStateMachine_StateMachin
 - |void| **set_allow_transition_to_self**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_transition_to_self**\ (\ )
 
-若為 ``true``\ ，則可使用 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 傳送回目前狀態；若在該方法中啟用重設選項，動畫將重新播放。若為 ``false``\ ，傳送到自身狀態時不會發生任何事。
+如果為 ``true``\ ，允許使用 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 傳送到目前狀態。當在 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 中啟用重設選項時，動畫將重新啟動。如果為 ``false``\ ，傳送到目前狀態時不會發生任何事情。
 
 .. rst-class:: classref-item-separator
 

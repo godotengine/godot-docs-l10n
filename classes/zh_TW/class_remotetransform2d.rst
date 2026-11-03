@@ -16,7 +16,7 @@ RemoteTransform2D 會將自己的 :ref:`Transform2D<class_Transform2D>` 推送�
 
 RemoteTransform2D 會將自己的 :ref:`Transform2D<class_Transform2D>` 推送到場景中另一個衍生自 :ref:`CanvasItem<class_CanvasItem>` 的節點（稱為遠端節點）。
 
-可以設定更新另一個節點的位置、旋轉和/或比例。可以使用全域座標，也可以使用局部座標。
+可以設定更新另一個節點的位置、旋轉和/或比例。可以使用全域座標，也可以使用區域座標。
 
 .. rst-class:: classref-reftable-group
 

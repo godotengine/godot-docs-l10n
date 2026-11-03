@@ -196,7 +196,7 @@ The joystick is always visible.
 
 :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **VISIBILITY_WHEN_TOUCHED** = ``1``
 
-The joystick is only visible when being touched.
+Le joystick est seulement visible lorsqu'il est touché.
 
 .. rst-class:: classref-section-separator
 
@@ -218,7 +218,7 @@ Descriptions des propriétés
 - |void| **set_action_down**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_down**\ (\ )
 
-The action to trigger when the joystick is moved down.
+L'action à déclencher quand le joystick est déplacé vers le bas.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ The action to trigger when the joystick is moved down.
 - |void| **set_action_left**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_left**\ (\ )
 
-The action to trigger when the joystick is moved left.
+L'action à déclencher quand le joystick est déplacé vers la gauche.
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ The action to trigger when the joystick is moved left.
 - |void| **set_action_right**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_right**\ (\ )
 
-The action to trigger when the joystick is moved right.
+L'action à déclencher quand le joystick est déplacé vers la droite.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ The action to trigger when the joystick is moved right.
 - |void| **set_action_up**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_up**\ (\ )
 
-The action to trigger when the joystick is moved up.
+L'action à déclencher quand le joystick est déplacé vers le haut.
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ Descriptions des propriétés du thème
 
 :ref:`StyleBox<class_StyleBox>` **normal_joystick** :ref:`🔗<class_VirtualJoystick_theme_style_normal_joystick>`
 
-Base joystick :ref:`StyleBox<class_StyleBox>`.
+:ref:`StyleBox<class_StyleBox>` de base du joystick.
 
 .. rst-class:: classref-item-separator
 

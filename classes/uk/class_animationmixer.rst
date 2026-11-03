@@ -831,9 +831,11 @@ AnimationMixer за замовчуванням має глобальну біб�
 
  Наприклад, якщо в попередньому кадрі відтворюється анімація лише з одним ключем ``Quaternion(0, 0, 0, 1)``, а потім анімація лише з одним ключем ``Quaternion(0, 0,707, 0, 0,707)`` відтворюється в наступному кадрі, різницю можна обчислити наступним чином:
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var prev_root_motion_rotation_accumulator:
 
     func _process(delta):
@@ -843,7 +845,8 @@ AnimationMixer за замовчуванням має глобальну біб�
          змінна різниця: Quaternion = prev_root_motion_rotation_accumulator.inverse() * current_root_motion_rotation_accumulator
          prev_root_motion_rotation_accumulator = current_root_motion_rotation_accumulator
          transform.basis *= Basis(difference)
-    [/gdscript][/codeblocks]
+
+
 
  Однак, якщо анімація повторюється, може статися ненавмисна дискретна зміна, тому це корисно лише для деяких простих випадків використання.
 

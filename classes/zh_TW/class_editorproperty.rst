@@ -175,7 +175,7 @@ EditorProperty
 
 **property_favorited**\ (\ property\: :ref:`StringName<class_StringName>`, favorited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_favorited>`
 
-Emit it if you want to mark a property as favorited, making it appear at the top of the inspector.
+請在想要將屬性標記為收藏時發出，會讓屬性顯示在屬性檢視器開頭。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Emit it if you want to mark a property as favorited, making it appear at the top
 
 **property_overridden**\ (\ ) :ref:`🔗<class_EditorProperty_signal_property_overridden>`
 
-Emitted when a setting override for the current project is requested.
+請求對目前專案的設定進行覆蓋時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Emitted when a setting override for the current project is requested.
 - |void| **set_name_split_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_name_split_ratio**\ (\ )
 
-Space distribution ratio between the label and the editing field.
+標籤和編輯框之間的空間佔比。
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +535,9 @@ Space distribution ratio between the label and the editing field.
 
 :ref:`Object<class_Object>` **get_edited_object**\ (\ ) :ref:`🔗<class_EditorProperty_method_get_edited_object>`
 
-Returns the edited object.
+回傳編輯的物件。
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **注意：**\ 如果編輯器尚未與屬性關聯則會回傳 ``null``\ 。不過能夠\ *保證*\ 在 :ref:`_update_property()<class_EditorProperty_private_method__update_property>` 和 :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>` 中該值非 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Returns the edited object.
 
 :ref:`StringName<class_StringName>` **get_edited_property**\ (\ ) |const| :ref:`🔗<class_EditorProperty_method_get_edited_property>`
 
-Returns the edited property. If your editor is for a single property (added via :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`), then this will return the property.
+回傳編輯的屬性。如果你的編輯器適用於單個屬性（通過 :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>` 新增），那麼就會回傳該屬性。
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **注意：**\ 如果編輯器尚未與屬性關聯則會回傳 ``null``\ 。不過能夠\ *保證*\ 在 :ref:`_update_property()<class_EditorProperty_private_method__update_property>` 和 :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>` 中該值非 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Returns the edited property. If your editor is for a single property (added via 
 
 :ref:`bool<class_bool>` **is_selected**\ (\ ) |const| :ref:`🔗<class_EditorProperty_method_is_selected>`
 
-Returns ``true`` if property is drawn as selected. Used by the inspector.
+如果屬性以未選中的形式繪製，則回傳 ``true``\ 。由屬性檢視器使用。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Returns ``true`` if property is drawn as selected. Used by the inspector.
 
 |void| **set_label_reference**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_label_reference>`
 
-Used by the inspector, set to a control that will be used as a reference to calculate the size of the label.
+由屬性檢視器使用，設為計算標籤大小時用作參考的控制項。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Used by the inspector, set to a control that will be used as a reference to calc
 
 |void| **set_object_and_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorProperty_method_set_object_and_property>`
 
-Assigns object and property to edit.
+分配要編輯的物件和屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ Assigns object and property to edit.
 
 |void| **update_property**\ (\ ) :ref:`🔗<class_EditorProperty_method_update_property>`
 
-Forces a refresh of the property display.
+強制刷新屬性顯示。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

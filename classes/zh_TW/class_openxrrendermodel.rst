@@ -7,16 +7,16 @@ OpenXRRenderModel
 
 **繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-This node will display an OpenXR render model.
+該節點會顯示 OpenXR 渲染模型。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node will display an OpenXR render model by accessing the associated GLTF and processes all animation data (if supported by the XR runtime).
+該節點會顯示 OpenXR 渲染模型，存取與之關聯的 GLTF 並處理所有動畫資料（需要 XR 執行時支援）。
 
-Render models were introduced to allow showing the correct model for the controller (or other device) the user has in hand, since the OpenXR action map does not provide information about the hardware used by the user. Note that while the controller (or device) can be somewhat inferred by the bound action map profile, this is a dangerous approach as the user may be using hardware not known at time of development and OpenXR will simply simulate an available interaction profile.
+引入渲染模型是為了正確顯示使用者手中控制器（或其他裝置）的模型，因為 OpenXR 動作映射並不會提供使用者所使用的硬體的資訊。請注意，雖然可以根據綁定的動作映射設定從一定程度上推測控制器（或裝置），這種做法並不安全，因為使用者所使用的可能是開發時未知的硬體，此時 OpenXR 就會模擬可用的互動設定。
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ Render models were introduced to allow showing the correct model for the control
 
 **render_model_top_level_path_changed**\ (\ ) :ref:`🔗<class_OpenXRRenderModel_signal_render_model_top_level_path_changed>`
 
-Emitted when the top level path of this render model has changed.
+渲染模型的頂層路徑發生改變時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -79,7 +79,7 @@ Emitted when the top level path of this render model has changed.
 - |void| **set_render_model**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_render_model**\ (\ )
 
-The render model RID for the render model to load, as returned by :ref:`OpenXRRenderModelExtension.render_model_create()<class_OpenXRRenderModelExtension_method_render_model_create>` or :ref:`OpenXRRenderModelExtension.render_model_get_all()<class_OpenXRRenderModelExtension_method_render_model_get_all>`.
+要載入的渲染模型的 RID，由 :ref:`OpenXRRenderModelExtension.render_model_create()<class_OpenXRRenderModelExtension_method_render_model_create>` 或 :ref:`OpenXRRenderModelExtension.render_model_get_all()<class_OpenXRRenderModelExtension_method_render_model_get_all>` 回傳。
 
 .. rst-class:: classref-section-separator
 
@@ -96,7 +96,7 @@ The render model RID for the render model to load, as returned by :ref:`OpenXRRe
 
 :ref:`String<class_String>` **get_top_level_path**\ (\ ) |const| :ref:`🔗<class_OpenXRRenderModel_method_get_top_level_path>`
 
-Returns the top level path related to this render model.
+回傳與該渲染模型相關的頂層路徑。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

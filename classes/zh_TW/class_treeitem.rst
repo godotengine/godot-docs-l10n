@@ -303,7 +303,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>` **CELL_MODE_STRING** = ``0``
 
-Cell shows a string label, optionally with an icon. When editable, the text can be edited using a :ref:`LineEdit<class_LineEdit>`, or a :ref:`TextEdit<class_TextEdit>` popup if :ref:`set_edit_multiline()<class_TreeItem_method_set_edit_multiline>` is used.
+單元格顯示字串標籤，可以帶圖示。單元格可編輯時，文字可以使用 :ref:`LineEdit<class_LineEdit>` 進行編輯，如果使用了 :ref:`set_edit_multiline()<class_TreeItem_method_set_edit_multiline>` 則會使用 :ref:`TextEdit<class_TextEdit>` 彈框進行編輯。
 
 .. _class_TreeItem_constant_CELL_MODE_CHECK:
 
@@ -311,7 +311,7 @@ Cell shows a string label, optionally with an icon. When editable, the text can 
 
 :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>` **CELL_MODE_CHECK** = ``1``
 
-Cell shows a checkbox, optionally with text and an icon. The checkbox can be pressed, released, or indeterminate (via :ref:`set_indeterminate()<class_TreeItem_method_set_indeterminate>`). The checkbox can't be clicked unless the cell is editable.
+單元格顯示核取方塊，可以帶文字和圖示。核取方塊可以處於勾選、未勾選以及未定狀態（使用 :ref:`set_indeterminate()<class_TreeItem_method_set_indeterminate>`\ ）。單元格可編輯時才能夠點選核取方塊。
 
 .. _class_TreeItem_constant_CELL_MODE_RANGE:
 
@@ -319,9 +319,9 @@ Cell shows a checkbox, optionally with text and an icon. The checkbox can be pre
 
 :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>` **CELL_MODE_RANGE** = ``2``
 
-Cell shows a numeric range. When editable, it can be edited using a range slider. Use :ref:`set_range()<class_TreeItem_method_set_range>` to set the value and :ref:`set_range_config()<class_TreeItem_method_set_range_config>` to configure the range.
+單元格顯示數字範圍。可編輯時，該數字可以使用範圍滑塊編輯。設值請使用 :ref:`set_range()<class_TreeItem_method_set_range>`\ ，設定範圍請使用 :ref:`set_range_config()<class_TreeItem_method_set_range_config>`\ 。
 
-This cell can also be used in a text dropdown mode when you assign a text with :ref:`set_text()<class_TreeItem_method_set_text>`. Separate options with a comma, e.g. ``"Option1,Option2,Option3"``.
+如果使用 :ref:`set_text()<class_TreeItem_method_set_text>` 設定文字，該單元格也可以處於文字下拉框模式。請使用英文逗號分隔選項，例如 ``"選項甲,選項乙,選項丙"``\ 。
 
 .. _class_TreeItem_constant_CELL_MODE_ICON:
 
@@ -329,7 +329,7 @@ This cell can also be used in a text dropdown mode when you assign a text with :
 
 :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>` **CELL_MODE_ICON** = ``3``
 
-Cell shows an icon. It can't be edited nor display text. The icon is always centered within the cell.
+單元格顯示圖示。無法編輯和顯示文字。圖示始終在單元格內居中。
 
 .. _class_TreeItem_constant_CELL_MODE_CUSTOM:
 
@@ -337,9 +337,9 @@ Cell shows an icon. It can't be edited nor display text. The icon is always cent
 
 :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>` **CELL_MODE_CUSTOM** = ``4``
 
-Cell shows as a clickable button. It will display an arrow similar to :ref:`OptionButton<class_OptionButton>`, but doesn't feature a dropdown (for that you can use :ref:`CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>`). Clicking the button emits the :ref:`Tree.item_edited<class_Tree_signal_item_edited>` signal. The button is flat by default, you can use :ref:`set_custom_as_button()<class_TreeItem_method_set_custom_as_button>` to display it with a :ref:`StyleBox<class_StyleBox>`.
+單元格顯示可點選的按鈕。單元格會顯示一個類似於 :ref:`OptionButton<class_OptionButton>` 的箭頭，但是不帶下拉框（如果對此有需要請使用 :ref:`CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>`\ ）。點選按鈕會發出 :ref:`Tree.item_edited<class_Tree_signal_item_edited>` 訊號。按鈕預設是扁平的，可以使用 :ref:`set_custom_as_button()<class_TreeItem_method_set_custom_as_button>` 為其設定 :ref:`StyleBox<class_StyleBox>`\ 。
 
-This mode also supports custom drawing using :ref:`set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+該模式還支援通過使用 :ref:`set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>` 進行自訂繪製。
 
 .. rst-class:: classref-section-separator
 
@@ -395,7 +395,7 @@ This mode also supports custom drawing using :ref:`set_custom_draw_callback()<cl
 - |void| **set_disable_folding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folding_disabled**\ (\ )
 
-如果為 ``true``\ ，則這個 TreeItem 禁用折疊。
+如果為 ``true``\ ，則這個 TreeItem 停用折疊。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ This mode also supports custom drawing using :ref:`set_custom_draw_callback()<cl
 
 |void| **add_button**\ (\ column\: :ref:`int<class_int>`, button\: :ref:`Texture2D<class_Texture2D>`, id\: :ref:`int<class_int>` = -1, disabled\: :ref:`bool<class_bool>` = false, tooltip_text\: :ref:`String<class_String>` = "", description\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_TreeItem_method_add_button>`
 
-Adds a button with :ref:`Texture2D<class_Texture2D>` ``button`` to the end of the cell at column ``column``. The ``id`` is used to identify the button in the according :ref:`Tree.button_clicked<class_Tree_signal_button_clicked>` signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling :ref:`get_button_count()<class_TreeItem_method_get_button_count>` immediately before this method. Optionally, the button can be ``disabled`` and have a ``tooltip_text``. ``description`` is used as the button description for assistive apps.
+在 ``column`` 列的末尾新增一個帶有 :ref:`Texture2D<class_Texture2D>` ``button`` 的按鈕。\ ``id`` 用於在 :ref:`Tree.button_clicked<class_Tree_signal_button_clicked>` 訊號中標識按鈕，可以與按鈕索引不同。如果未指定，則使用下一個可用索引，可以在此方法之前呼叫 :ref:`get_button_count()<class_TreeItem_method_get_button_count>` 來取得該索引。另外，該按鈕還可以通過 ``disabled`` 停用、通過 ``tooltip_text`` 設定工具提示。\ ``description`` 是輔助應用的按鈕描述。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Adds a button with :ref:`Texture2D<class_Texture2D>` ``button`` to the end of th
 
 |void| **clear_buttons**\ (\ ) :ref:`🔗<class_TreeItem_method_clear_buttons>`
 
-Removes all buttons from all columns of this item.
+移除該項目所有列中的所有按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -541,7 +541,7 @@ Removes all buttons from all columns of this item.
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_auto_translate_mode**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_auto_translate_mode>`
 
-Returns the column's auto translate mode.
+回傳該列的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Returns the column's auto translate mode.
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
+回傳給定 ``column`` 的自動換行修剪標誌。預設情況下，\ :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` 和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` 均已啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ Returns the autowrap trim flags for the given ``column``. By default, both :ref:
 
 :ref:`Color<class_Color>` **get_button_color**\ (\ column\: :ref:`int<class_int>`, id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_button_color>`
 
-Returns the color of the button with ID ``id`` in column ``column``. If the specified button does not exist, returns :ref:`Color.BLACK<class_Color_constant_BLACK>`.
+回傳列 ``column`` 中 ID 為 ``id`` 的按鈕的顏色。如果指定的按鈕不存在，則回傳 :ref:`Color.BLACK<class_Color_constant_BLACK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +723,7 @@ Returns the color of the button with ID ``id`` in column ``column``. If the spec
 
 :ref:`Callable<class_Callable>` **get_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_draw_callback>`
 
-Returns the custom callback of column ``column``.
+回傳列 ``column`` 的自訂回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Returns the custom callback of column ``column``.
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+回傳給定列的自訂 :ref:`StyleBox<class_StyleBox>`\ ，用於繪製背景。
 
 .. rst-class:: classref-item-separator
 
@@ -771,7 +771,7 @@ Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw t
 
 :ref:`String<class_String>` **get_description**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_description>`
 
-Returns the given column's description for assistive apps.
+回傳給定列為輔助應用提供的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -831,7 +831,7 @@ Returns the given column's description for assistive apps.
 
 :ref:`Color<class_Color>` **get_icon_modulate**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_icon_modulate>`
 
-返回調變列的圖示的 :ref:`Color<class_Color>` 顏色。
+返回呼變列的圖示的 :ref:`Color<class_Color>` 顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -843,7 +843,7 @@ Returns the given column's description for assistive apps.
 
 :ref:`Texture2D<class_Texture2D>` **get_icon_overlay**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_icon_overlay>`
 
-Returns the given column's icon overlay :ref:`Texture2D<class_Texture2D>`.
+回傳給定列的圖示覆蓋 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -903,7 +903,7 @@ Returns the given column's icon overlay :ref:`Texture2D<class_Texture2D>`.
 
 :ref:`TreeItem<class_TreeItem>` **get_next**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_get_next>`
 
-Returns the next sibling TreeItem in the tree or a ``null`` object if there is none.
+回傳樹中的下一個同級 TreeItem，如果沒有則回傳 ``null`` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +943,7 @@ Returns the next sibling TreeItem in the tree or a ``null`` object if there is n
 
 :ref:`TreeItem<class_TreeItem>` **get_parent**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_get_parent>`
 
-Returns the parent TreeItem or a ``null`` object if there is none.
+回傳父級 TreeItem，如果沒有則回傳 ``null`` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ Returns the parent TreeItem or a ``null`` object if there is none.
 
 :ref:`TreeItem<class_TreeItem>` **get_prev**\ (\ ) :ref:`🔗<class_TreeItem_method_get_prev>`
 
-Returns the previous sibling TreeItem in the tree or a ``null`` object if there is none.
+回傳樹中的前一個同級 TreeItem，如果沒有則回傳 ``null`` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -1019,7 +1019,7 @@ Returns the previous sibling TreeItem in the tree or a ``null`` object if there 
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_structured_text_bidi_override>`
 
-Returns the BiDi algorithm override set for this cell.
+回傳為該單元格設定的 BiDi 算法覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1031,7 +1031,7 @@ Returns the BiDi algorithm override set for this cell.
 
 :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_structured_text_bidi_override_options>`
 
-Returns the additional BiDi options set for this cell.
+回傳為該單元格設定的附加 BiDi 選項。
 
 .. rst-class:: classref-item-separator
 
@@ -1043,7 +1043,7 @@ Returns the additional BiDi options set for this cell.
 
 :ref:`String<class_String>` **get_suffix**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_suffix>`
 
-獲取顯示在列值後面的後綴字串。
+取得顯示在列值後面的後綴字串。
 
 .. rst-class:: classref-item-separator
 
@@ -1091,7 +1091,7 @@ Returns the additional BiDi options set for this cell.
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_text_overrun_behavior>`
 
-返回給定列 ``column`` 的文字自動換行模式。預設為 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`\ 。
+回傳當給定 ``column`` 中文字超出項目的邊界矩形時的裁剪行為。預設情況下它是 :ref:`TextServer.OVERRUN_TRIM_ELLIPSIS<class_TextServer_constant_OVERRUN_TRIM_ELLIPSIS>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1127,7 +1127,7 @@ Returns the additional BiDi options set for this cell.
 
 :ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
 
-Returns ``true`` if this **TreeItem** is allowed to accept children.
+如果這個 **TreeItem** 被允許擁有子節點，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1153,7 +1153,7 @@ Returns ``true`` if this **TreeItem** is allowed to accept children.
 
 :ref:`bool<class_bool>` **is_button_disabled**\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_is_button_disabled>`
 
-如果給定列 ``column`` 上索引為 ``button_index`` 的按鈕被禁用，則返回 ``true``\ 。
+如果給定列 ``column`` 上索引為 ``button_index`` 的按鈕被停用，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1177,7 +1177,7 @@ Returns ``true`` if this **TreeItem** is allowed to accept children.
 
 :ref:`bool<class_bool>` **is_custom_set_as_button**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_is_custom_set_as_button>`
 
-Returns ``true`` if the cell was made into a button with :ref:`set_custom_as_button()<class_TreeItem_method_set_custom_as_button>`.
+如果使用 :ref:`set_custom_as_button()<class_TreeItem_method_set_custom_as_button>` 將該單元格變成了按鈕，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1249,7 +1249,7 @@ Returns ``true`` if the cell was made into a button with :ref:`set_custom_as_but
 
 :ref:`bool<class_bool>` **is_visible_in_tree**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_visible_in_tree>`
 
-Returns ``true`` if :ref:`visible<class_TreeItem_property_visible>` is ``true`` and all its ancestors are also visible.
+如果 :ref:`visible<class_TreeItem_property_visible>` 為 ``true`` 並且所有祖級項目也都可見，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Returns ``true`` if :ref:`visible<class_TreeItem_property_visible>` is ``true`` 
 
 |void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+選中給定的 ``column`` 列。如果 ``set_as_cursor`` 為 ``true``\ ，則 :ref:`Tree<class_Tree>` 的游標將移動到此項（僅在 :ref:`Tree.select_mode<class_Tree_property_select_mode>` 設定為 :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 時有效）。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+設定 **TreeItem** 是否允許擁有子節點。
 
 .. rst-class:: classref-item-separator
 
@@ -1339,9 +1339,9 @@ Sets **TreeItem**'s ability to accept children.
 
 |void| **set_auto_translate_mode**\ (\ column\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_TreeItem_method_set_auto_translate_mode>`
 
-Sets the given column's auto translate mode to ``mode``.
+將給定列的自動翻譯模式設為 ``mode``\ 。
 
-All columns use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` by default, which uses the same auto translate mode as the :ref:`Tree<class_Tree>` itself.
+所有列都預設使用 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`\ ，即使用與 :ref:`Tree<class_Tree>` 相同的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ All columns use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_
 
 |void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
 
-Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
+設定給定 ``column`` 的自動換行修剪標誌。這些標誌控制換行行的首尾空白是否被修剪。設定為 ``0`` 以停用所有修剪。
 
 .. rst-class:: classref-item-separator
 
@@ -1401,7 +1401,7 @@ Sets the autowrap trim flags for the given ``column``. These flags control wheth
 
 |void| **set_button_description**\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_button_description>`
 
-Sets the given column's button description at index ``button_index`` for assistive apps.
+設定給定列中索引為 ``button_index`` 的按鈕為輔助應用提供的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ Sets the given column's button description at index ``button_index`` for assisti
 
 |void| **set_button_disabled**\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_button_disabled>`
 
-如果為 ``true``\ ，則禁用給定列 ``column`` 中索引為 ``button_index`` 的按鈕。
+如果為 ``true``\ ，則停用給定列 ``column`` 中索引為 ``button_index`` 的按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -1437,7 +1437,7 @@ Sets the given column's button description at index ``button_index`` for assisti
 
 |void| **set_cell_mode**\ (\ column\: :ref:`int<class_int>`, mode\: :ref:`TreeCellMode<enum_TreeItem_TreeCellMode>`\ ) :ref:`🔗<class_TreeItem_method_set_cell_mode>`
 
-Sets the given column's cell mode to ``mode``. This determines how the cell is displayed and edited.
+將給定列的單元格模式設定為 ``mode``\ 。決定了單元格的顯示和編輯方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Sets the given column's cell mode to ``mode``. This determines how the cell is d
 
 |void| **set_custom_as_button**\ (\ column\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_as_button>`
 
-Makes a cell with :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` display as a non-flat button with a :ref:`StyleBox<class_StyleBox>`.
+讓 :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 的單元格顯示為使用 :ref:`StyleBox<class_StyleBox>` 的非扁平按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -1485,9 +1485,9 @@ Makes a cell with :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTO
 
 |void| **set_custom_bg_color**\ (\ column\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, just_outline\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TreeItem_method_set_custom_bg_color>`
 
-Sets the given column's custom background color and whether to just use it as an outline.
+設定給定列的自訂背景顏色，以及是否只將其用作輪廓。
 
-\ **Note:** If a custom :ref:`StyleBox<class_StyleBox>` is set, the background color will be drawn behind it.
+\ **注意：**\ 如果設定了自訂 :ref:`StyleBox<class_StyleBox>`\ ，則背景顏色將繪製在其後方。
 
 .. rst-class:: classref-item-separator
 
@@ -1513,9 +1513,9 @@ Sets the given column's custom background color and whether to just use it as an
 
 **已棄用：** Use :ref:`set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>` instead.
 
-Sets the given column's custom draw callback to the ``callback`` method on ``object``.
+將給定列的自訂繪製回呼設定為 ``object`` 上的 ``callback`` 方法。
 
-The method named ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+名為 ``callback`` 的方法應接受兩個參數：被繪製的 **TreeItem** 及其作為一個 :ref:`Rect2<class_Rect2>` 的位置和大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1527,11 +1527,11 @@ The method named ``callback`` should accept two arguments: the **TreeItem** that
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
+設定指定列的自訂繪製回呼函式。如果想清除自訂回呼，傳入一個空的 :ref:`Callable<class_Callable>`\ （即 ``Callable()``\ ）即可。要使用這個功能，該單元格必須處於 :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`\ （自訂單元格模式）。
 
-The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+其中的 ``callback``\ （回呼函式）需要接收兩個參數：一個是正在被繪製的 **TreeItem**\ （樹節點項），另一個是它的位置和大小（以 :ref:`Rect2<class_Rect2>` 的形式提供）。
 
-To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
+如果你想在原生樣式之上繪製自訂內容，請使用 :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1567,9 +1567,9 @@ To draw custom content over the native style, please use :ref:`Tree.get_custom_d
 
 |void| **set_custom_stylebox**\ (\ column\: :ref:`int<class_int>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_stylebox>`
 
-Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+設定給定列的自訂 :ref:`StyleBox<class_StyleBox>`\ ，用於繪製背景。
 
-\ **Note:** If a custom background color is set, the :ref:`StyleBox<class_StyleBox>` will be drawn in front of it.
+\ **注意：**\ 如果設定了自訂背景顏色，則該 :ref:`StyleBox<class_StyleBox>` 將繪製在它之前。
 
 .. rst-class:: classref-item-separator
 
@@ -1581,7 +1581,7 @@ Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the 
 
 |void| **set_description**\ (\ column\: :ref:`int<class_int>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_description>`
 
-Sets the given column's description for assistive apps.
+設定給定列為輔助應用提供的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ Sets the given column's description for assistive apps.
 
 |void| **set_expand_right**\ (\ column\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_expand_right>`
 
-如果 ``enable`` 為 ``true``\ ，則給定的列 ``column`` 向右擴展。
+如果 ``enable`` 為 ``true``\ ，則給定的列 ``column`` 向右擴充。
 
 .. rst-class:: classref-item-separator
 
@@ -1631,7 +1631,7 @@ Sets the given column's description for assistive apps.
 
 |void| **set_icon**\ (\ column\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TreeItem_method_set_icon>`
 
-Sets the given cell's icon :ref:`Texture2D<class_Texture2D>`. If the cell is in :ref:`CELL_MODE_ICON<class_TreeItem_constant_CELL_MODE_ICON>` mode, the icon is displayed in the center of the cell. Otherwise, the icon is displayed before the cell's text. :ref:`CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` does not display an icon.
+設定給定單元格的圖示 :ref:`Texture2D<class_Texture2D>`\ 。如果單元格處於 :ref:`CELL_MODE_ICON<class_TreeItem_constant_CELL_MODE_ICON>` 模式，則會在單元格的中心顯示圖示。否則圖示在單元格文字之前顯示。\ :ref:`CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` 不顯示圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ Sets the given cell's icon :ref:`Texture2D<class_Texture2D>`. If the cell is in 
 
 |void| **set_icon_overlay**\ (\ column\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TreeItem_method_set_icon_overlay>`
 
-Sets the given cell's icon overlay :ref:`Texture2D<class_Texture2D>`. The cell has to be in :ref:`CELL_MODE_ICON<class_TreeItem_constant_CELL_MODE_ICON>` mode, and icon has to be set. Overlay is drawn on top of icon, in the bottom left corner.
+設定給定單元格的圖示覆蓋 :ref:`Texture2D<class_Texture2D>`\ 。單元格必須處於 :ref:`CELL_MODE_ICON<class_TreeItem_constant_CELL_MODE_ICON>` 模式且必須設定圖示。覆蓋項繪製在圖示之上，位於左下角。
 
 .. rst-class:: classref-item-separator
 
@@ -1705,7 +1705,7 @@ Sets the given cell's icon overlay :ref:`Texture2D<class_Texture2D>`. The cell h
 
 |void| **set_language**\ (\ column\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_language>`
 
-Sets the language code of the given ``column``'s text to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+將給定 ``column`` 的文字的語言程式碼設定為 ``language``\ 。用於斷行和文字塑形算法。如果 ``language`` 為空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1717,7 +1717,7 @@ Sets the language code of the given ``column``'s text to ``language``. This is u
 
 |void| **set_metadata**\ (\ column\: :ref:`int<class_int>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_TreeItem_method_set_metadata>`
 
-設定給定列的中繼資料，之後可用 :ref:`get_metadata()<class_TreeItem_method_get_metadata>` 進行檢索。例如，這可用於存儲對原始資料的引用。
+設定給定列的中繼資料，之後可用 :ref:`get_metadata()<class_TreeItem_method_get_metadata>` 進行檢索。例如，這可用於儲存對原始資料的引用。
 
 .. rst-class:: classref-item-separator
 
@@ -1767,7 +1767,7 @@ Sets the language code of the given ``column``'s text to ``language``. This is u
 
 |void| **set_structured_text_bidi_override**\ (\ column\: :ref:`int<class_int>`, parser\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ ) :ref:`🔗<class_TreeItem_method_set_structured_text_bidi_override>`
 
-Set BiDi algorithm override for the structured text. Has effect for cells that display text.
+為結構化文字設定 BiDi 算法覆蓋。對顯示文字的單元格有影響。
 
 .. rst-class:: classref-item-separator
 
@@ -1779,7 +1779,7 @@ Set BiDi algorithm override for the structured text. Has effect for cells that d
 
 |void| **set_structured_text_bidi_override_options**\ (\ column\: :ref:`int<class_int>`, args\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_TreeItem_method_set_structured_text_bidi_override_options>`
 
-Set additional options for BiDi override. Has effect for cells that display text.
+設定 BiDi 覆蓋的附加選項。對顯示文字的單元格有效果。
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ Set additional options for BiDi override. Has effect for cells that display text
 
 |void| **set_text_alignment**\ (\ column\: :ref:`int<class_int>`, text_alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ ) :ref:`🔗<class_TreeItem_method_set_text_alignment>`
 
-Sets the given column's text alignment to ``text_alignment``.
+將給定列的文字對齊方式設定為 ``text_alignment``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1839,7 +1839,7 @@ Sets the given column's text alignment to ``text_alignment``.
 
 |void| **set_text_overrun_behavior**\ (\ column\: :ref:`int<class_int>`, overrun_behavior\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ ) :ref:`🔗<class_TreeItem_method_set_text_overrun_behavior>`
 
-設定文字超出專案的邊界矩形時的裁剪行為。所有模式的說明見 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ 。
+設定當文字超出給定 ``column`` 中項目的邊界矩形時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -1863,7 +1863,7 @@ Sets the given column's text alignment to ``text_alignment``.
 
 |void| **uncollapse_tree**\ (\ ) :ref:`🔗<class_TreeItem_method_uncollapse_tree>`
 
-Uncollapses all **TreeItem**\ s necessary to reveal this **TreeItem**, i.e. all ancestor **TreeItem**\ s.
+展開顯示該 **TreeItem** 所需的所有 **TreeItem**\ ，即所有祖先 **TreeItem**\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

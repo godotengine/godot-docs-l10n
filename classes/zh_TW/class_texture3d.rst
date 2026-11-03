@@ -9,7 +9,7 @@ Texture3D
 
 **被繼承：** :ref:`CompressedTexture3D<class_CompressedTexture3D>`, :ref:`ImageTexture3D<class_ImageTexture3D>`, :ref:`NoiseTexture3D<class_NoiseTexture3D>`, :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`, :ref:`Texture3DRD<class_Texture3DRD>`
 
-Base class for 3-dimensional textures.
+三維紋理的基底類別。
 
 .. rst-class:: classref-introduction-group
 
@@ -18,7 +18,7 @@ Base class for 3-dimensional textures.
 
 :ref:`ImageTexture3D<class_ImageTexture3D>` 和 :ref:`CompressedTexture3D<class_CompressedTexture3D>` 的基底類別。無法直接使用，但包含所有訪問衍生資源型別所需的函式。\ **Texture3D** 是所有三維紋理型別的基底類別。另見 :ref:`TextureLayered<class_TextureLayered>`\ 。
 
-所有圖像都需要有相同的寬度、高度和 mipmap 層數。
+所有影像都需要有相同的寬度、高度和 mipmap 層數。
 
 要自己建立這樣的紋理檔，請使用 Godot 編輯器的匯入預設重新匯入你的影像檔。
 
@@ -181,7 +181,7 @@ Base class for 3-dimensional textures.
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_format>`
 
-Returns the current format being used by this texture.
+回傳該紋理目前所使用的格式。
 
 .. rst-class:: classref-item-separator
 

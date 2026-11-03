@@ -17,11 +17,11 @@ DirectionalLight2D
 說明
 ----
 
-A directional light is a type of :ref:`Light2D<class_Light2D>` node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene (for example: to model sunlight or moonlight).
+平行光是一種 :ref:`Light2D<class_Light2D>` 節點，模擬覆蓋整個場景的無數平行光線。可用於遠離場景的強光（例如：模擬日光或月光）。
 
-Light is emitted in the +Y direction of the node's global basis. For an unrotated light, this means that the light is emitted downwards. The position of the node is ignored; only the basis is used to determine light direction.
+光線沿節點全域基的 +Y 方向發射。對於未旋轉的燈光，這意味著光線向下發射。節點的位置會被忽略；只有基被用於確定光線方向
 
-\ **Note:** **DirectionalLight2D** does not support light cull masks (but it supports shadow cull masks). It will always light up 2D nodes, regardless of the 2D node's :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`.
+\ **注意：**\ **DirectionalLight2D** 不支援燈光剔除遮罩（但支援陰影剔除遮罩）。它會忽略 2D 節點的 :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`\ ，始終點亮 2D 節點。
 
 .. rst-class:: classref-introduction-group
 
@@ -81,7 +81,7 @@ Light is emitted in the +Y direction of the node's global basis. For an unrotate
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-物件在其陰影被剔除前與相機中心的最大距離（單位：圖元）。降低這個值可以防止位於相機外部的物件投射陰影（同時還可以提高性能）。\ :ref:`Camera2D.zoom<class_Camera2D_property_zoom>` 不被 :ref:`max_distance<class_DirectionalLight2D_property_max_distance>` 考慮在內，這意味著在較高的縮放值下，當縮放到一個給定的點時，陰影會更快地淡出。
+物件在其陰影被剔除前與相機中心的最大距離（單位：圖元）。降低這個值可以防止位於相機外部的物件投射陰影（同時還可以提高效能）。\ :ref:`Camera2D.zoom<class_Camera2D_property_zoom>` 不被 :ref:`max_distance<class_DirectionalLight2D_property_max_distance>` 考慮在內，這意味著在較高的縮放值下，當縮放到一個給定的點時，陰影會更快地淡出。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

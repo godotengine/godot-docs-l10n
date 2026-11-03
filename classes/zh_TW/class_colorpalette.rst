@@ -7,14 +7,14 @@ ColorPalette
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A resource class for managing a palette of colors, which can be loaded and saved using :ref:`ColorPicker<class_ColorPicker>`.
+用於管理調色板的資源類，可以用 :ref:`ColorPicker<class_ColorPicker>` 來載入和儲存。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The **ColorPalette** resource is designed to store and manage a collection of colors. This resource is useful in scenarios where a predefined set of colors is required, such as for creating themes, designing user interfaces, or managing game assets. The built-in :ref:`ColorPicker<class_ColorPicker>` control can also make use of **ColorPalette** without additional code.
+**ColorPalette** 資源可用於儲存和管理顏色的合集。常用於需要一組預設顏色的場景，例如建立主題、設計使用者介面、管理遊戲素材等。內建的 :ref:`ColorPicker<class_ColorPicker>` 控制項無需額外編寫程式碼就可以使用 **ColorPalette**\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -48,7 +48,7 @@ The **ColorPalette** resource is designed to store and manage a collection of co
 - |void| **set_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_colors**\ (\ )
 
-A :ref:`PackedColorArray<class_PackedColorArray>` containing the colors in the palette.
+包含調色板中顏色的 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 

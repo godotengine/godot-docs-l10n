@@ -14,9 +14,9 @@ CurveXYZTexture
 說明
 ----
 
-A 1D texture where the red, green, and blue color channels correspond to points on 3 unit :ref:`Curve<class_Curve>` resources. Compared to using separate :ref:`CurveTexture<class_CurveTexture>`\ s, this further simplifies the task of saving curves as image files.
+一維紋理，紅、綠、藍通道分別對應 3 條單位 :ref:`Curve<class_Curve>` 資源上的點。與使用單獨的 :ref:`CurveTexture<class_CurveTexture>` 相比，可以簡化將曲線儲存為影像檔案的任務。
 
-If you only need to store one curve within a single texture, use :ref:`CurveTexture<class_CurveTexture>` instead. See also :ref:`GradientTexture1D<class_GradientTexture1D>` and :ref:`GradientTexture2D<class_GradientTexture2D>`.
+如果你只需要在單張紋理中儲存一條曲線，請改用 :ref:`CurveTexture<class_CurveTexture>`\ 。另見 :ref:`GradientTexture1D<class_GradientTexture1D>` 和 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -58,7 +58,7 @@ If you only need to store one curve within a single texture, use :ref:`CurveText
 - |void| **set_curve_x**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_x**\ (\ )
 
-The :ref:`Curve<class_Curve>` that is rendered onto the texture's red channel. Should be a unit :ref:`Curve<class_Curve>`.
+渲染到該紋理紅色通道上的 :ref:`Curve<class_Curve>`\ 。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ The :ref:`Curve<class_Curve>` that is rendered onto the texture's red channel. S
 - |void| **set_curve_y**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_y**\ (\ )
 
-The :ref:`Curve<class_Curve>` that is rendered onto the texture's green channel. Should be a unit :ref:`Curve<class_Curve>`.
+渲染到該紋理綠色通道上的 :ref:`Curve<class_Curve>`\ 。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ The :ref:`Curve<class_Curve>` that is rendered onto the texture's green channel.
 - |void| **set_curve_z**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_z**\ (\ )
 
-The :ref:`Curve<class_Curve>` that is rendered onto the texture's blue channel. Should be a unit :ref:`Curve<class_Curve>`.
+渲染到該紋理藍色通道上的 :ref:`Curve<class_Curve>`\ 。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 

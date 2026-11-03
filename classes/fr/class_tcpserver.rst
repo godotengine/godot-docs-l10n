@@ -49,7 +49,7 @@ Descriptions des méthodes
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_TCPServer_method_get_local_port>`
 
-Returns the local port this server is listening to.
+Renvoie le port local que ce serveur écoute.
 
 .. rst-class:: classref-item-separator
 

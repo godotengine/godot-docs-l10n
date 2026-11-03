@@ -7,14 +7,14 @@ UniformSetCacheRD
 
 **繼承：** :ref:`Object<class_Object>`
 
-Uniform set cache manager for Rendering Device based renderers.
+基於渲染裝置的渲染器的 uniform 集快取管理器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Uniform set cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a uniform set and reuse it in subsequent calls for as long as the uniform set exists. Uniform set will automatically be cleaned up when dependent objects are freed.
+用於基於 :ref:`RenderingDevice<class_RenderingDevice>` 的渲染器的 uniform 集快取管理器。提供一種建立 uniform 集並在它存在期間的後續呼叫中重用它的方法。當相依性物件被釋放時，uniform 集將自動被清理。
 
 .. rst-class:: classref-reftable-group
 
@@ -43,7 +43,7 @@ Uniform set cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-base
 
 :ref:`RID<class_RID>` **get_cache**\ (\ shader\: :ref:`RID<class_RID>`, set\: :ref:`int<class_int>`, uniforms\: :ref:`Array<class_Array>`\[:ref:`RDUniform<class_RDUniform>`\]\ ) |static| :ref:`🔗<class_UniformSetCacheRD_method_get_cache>`
 
-Creates/returns a cached uniform set based on the provided uniforms for a given shader.
+根據給定著色器提供的 uniform 建立/回傳快取的 uniform 集。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

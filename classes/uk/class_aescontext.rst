@@ -16,9 +16,11 @@ AESContext
 
 Цей клас містить контекстну інформацію, необхідну для операцій шифрування та дешифрування за допомогою AES (Advanced Encryption Standard). Підтримуються режими AES-ECB і AES-CBC.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     extends Node
 
     var aes = AESContext.new()
@@ -48,8 +50,9 @@ AESContext
          aes.finish()
          # Перевірити CBC
          assert(decrypted == data.to_utf8_buffer())
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     using Godot;
     using System.Diagnostics;
 
@@ -85,7 +88,8 @@ AESContext
              Debug.Assert(decrypted == data.ToUtf8Buffer());
          }
      }
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-reftable-group
 

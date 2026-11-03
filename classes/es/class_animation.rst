@@ -307,7 +307,7 @@ El método rastrea las funciones de llamada con argumentos dados por clave.
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_BEZIER** = ``6``
 
-Las pistas de Bezier se usan para interpolar un valor usando curvas personalizadas. También se pueden utilizar para animar sub-propiedades de vectores y colores (por ejemplo, el valor alfa de un :ref:`Color<class_Color>`).
+Las pistas de Bézier se usan para interpolar un valor usando curvas personalizadas. También se pueden utilizar para animar subpropiedades de vectores y colores (por ejemplo, el valor alfa de un :ref:`Color<class_Color>`).
 
 .. _class_Animation_constant_TYPE_AUDIO:
 
@@ -553,7 +553,7 @@ Devuelve ``true`` si la pista de captura está incluida. Este es un valor de sol
 
 La duración total de la animación (en segundos).
 
-\ **Nota:** La longitud no está delimitada por la última clave, ya que ésta puede estar antes o después del final para asegurar una correcta interpolación y bucle.
+\ **Nota:** La longitud no está delimitada por la última clave, ya que esta puede estar antes o después del final para asegurar una correcta interpolación y bucle.
 
 .. rst-class:: classref-item-separator
 
@@ -778,7 +778,7 @@ Establece si la pista se combinará con otras animaciones. Si es ``true``, el vo
 
 :ref:`Vector2<class_Vector2>` **bezier_track_get_key_in_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_in_handle>`
 
-Devuelve el "in handle" de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista Bezier.
+Devuelve el «in handle» de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +790,7 @@ Devuelve el "in handle" de la clave identificada por ``key_idx``. El ``track_idx
 
 :ref:`Vector2<class_Vector2>` **bezier_track_get_key_out_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_out_handle>`
 
-Devuelve el "out handle" de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista Bezier.
+Devuelve el «out handle» de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +802,7 @@ Devuelve el "out handle" de la clave identificada por ``key_idx``. El ``track_id
 
 :ref:`float<class_float>` **bezier_track_get_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_value>`
 
-Devuelve el valor de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista Bezier.
+Devuelve el valor de la clave identificada por ``key_idx``. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -814,9 +814,9 @@ Devuelve el valor de la clave identificada por ``key_idx``. El ``track_idx`` deb
 
 :ref:`int<class_int>` **bezier_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, value\: :ref:`float<class_float>`, in_handle\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), out_handle\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_Animation_method_bezier_track_insert_key>`
 
-Inserta una clave de pista Bezier en el ``time`` dado en segundos. El ``track_idx`` debe ser el índice de una pista Bezier.
+Inserta una clave de pista de Bézier en el ``time`` dado en segundos. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
-\ ``in_handle`` es el peso del lado izquierdo del punto de la curva Bezier añadido, ``out_handle`` es el del lado derecho, mientras que ``value`` es el valor actual en este punto.
+\ ``in_handle`` es el peso del lado izquierdo del punto de la curva de Bézier añadido, ``out_handle`` es el del lado derecho, mientras que ``value`` es el valor actual en este punto.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ Inserta una clave de pista Bezier en el ``time`` dado en segundos. El ``track_id
 
 :ref:`float<class_float>` **bezier_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_interpolate>`
 
-Devuelve el valor interpolado en el ``time`` dado (en segundos). El ``track_idx`` debe ser el índice de una pista Bezier.
+Devuelve el valor interpolado en el ``time`` dado (en segundos). El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Devuelve el valor interpolado en el ``time`` dado (en segundos). El ``track_idx`
 
 |void| **bezier_track_set_key_in_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, in_handle\: :ref:`Vector2<class_Vector2>`, balanced_value_time_ratio\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_in_handle>`
 
-Establece el "in handle" de la clave identificada por ``key_idx`` al valor ``in_handle``. El ``track_idx`` debe ser el índice de una pista Bezier.
+Establece el «in handle» de la clave identificada por ``key_idx`` al valor ``in_handle``. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +852,7 @@ Establece el "in handle" de la clave identificada por ``key_idx`` al valor ``in_
 
 |void| **bezier_track_set_key_out_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, out_handle\: :ref:`Vector2<class_Vector2>`, balanced_value_time_ratio\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_out_handle>`
 
-Establece el "out handle" de la clave identificada por ``key_idx`` al valor ``out_handle``. El ``track_idx`` debe ser el índice de una pista Bezier.
+Establece el «out handle» de la clave identificada por ``key_idx`` al valor ``out_handle``. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Establece el "out handle" de la clave identificada por ``key_idx`` al valor ``ou
 
 |void| **bezier_track_set_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_value>`
 
-Establece el valor de la clave identificada por ``key_idx`` al valor dado. El ``track_idx`` debe ser el índice de una pista Bezier.
+Establece el valor de la clave identificada por ``key_idx`` al valor dado. El ``track_idx`` debe ser el índice de una pista de Bézier.
 
 .. rst-class:: classref-item-separator
 

@@ -1174,7 +1174,7 @@ Relación de escala del icono cuando :ref:`icon_expand_mode<class_LineEdit_prope
 - |void| **set_secret**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_secret**\ (\ )
 
-Si es ``true``, cada carácter se sustituye por el carácter secreto (véase :ref:`secret_character<class_LineEdit_property_secret_character>`).
+Si es ``true``, cada carácter se reemplaza por el carácter secreto (véase :ref:`secret_character<class_LineEdit_property_secret_character>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1891,7 +1891,7 @@ Espacio horizontal mínimo para el texto (sin contar el botón de borrar y los m
 
 El tamaño del contorno del texto.
 
-\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
+\ **Nota:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

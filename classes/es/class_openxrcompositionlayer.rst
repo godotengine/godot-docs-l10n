@@ -143,7 +143,7 @@ enum **MipmapMode**: :ref:`🔗<enum_OpenXRCompositionLayer_MipmapMode>`
 
 Desactiva el mipmapping.
 
-\ **Nota:** El mipmapping solo se puede desactivar en el renderizador de Compatibilidad.
+\ **Nota:** El mipmapping solo se puede desactivar en el renderizador Compatibility.
 
 .. _class_OpenXRCompositionLayer_constant_MIPMAP_MODE_NEAREST:
 
@@ -211,7 +211,7 @@ Repite la textura infinitamente, reflejándola en cada repetición.
 
 Refleja la textura una vez y luego fija la textura al color de su borde.
 
-\ **Nota:** Este modo de ajuste no está disponible en el renderizador de Compatibilidad.
+\ **Nota:** Este modo de ajuste no está disponible en el renderizador Compatibility.
 
 .. rst-class:: classref-item-separator
 

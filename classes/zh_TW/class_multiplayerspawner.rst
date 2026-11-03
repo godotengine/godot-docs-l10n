@@ -19,7 +19,7 @@ MultiplayerSpawner
 
 可出生的場景可以在編輯器中或通過程式碼配置（參閱 :ref:`add_spawnable_scene()<class_MultiplayerSpawner_method_add_spawnable_scene>`\ ）。
 
-還支援通過在所有對等體上呼叫 :ref:`spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ ，通過 :ref:`spawn()<class_MultiplayerSpawner_method_spawn>` 自定義節點出生。
+還支援通過在所有對等體上呼叫 :ref:`spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ ，通過 :ref:`spawn()<class_MultiplayerSpawner_method_spawn>` 自訂節點出生。
 
 在內部，\ **MultiplayerSpawner** 使用 :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` 來通知出生， 需將出生的節點作為 ``object``\ ，並將其自身作為 ``configuration`` 傳入；並使用 :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` 以類似的方式通知消失。
 
@@ -74,7 +74,7 @@ MultiplayerSpawner
 
 **despawned**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_MultiplayerSpawner_signal_despawned>`
 
-Emitted when a spawnable scene or custom spawn was despawned by the multiplayer authority. Only called on remote peers.
+當可生成場景或自訂生成被多人遊戲授權端消除時發出。只在遠端對等端上呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Emitted when a spawnable scene or custom spawn was despawned by the multiplayer 
 
 **spawned**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_MultiplayerSpawner_signal_spawned>`
 
-Emitted when a spawnable scene or custom spawn was spawned by the multiplayer authority. Only called on remote peers.
+當可生成場景或自訂生成被多人遊戲授權端生成時發出。只在遠端對等端上呼叫。
 
 .. rst-class:: classref-section-separator
 
@@ -108,9 +108,9 @@ Emitted when a spawnable scene or custom spawn was spawned by the multiplayer au
 - |void| **set_spawn_function**\ (\ value\: :ref:`Callable<class_Callable>`\ )
 - :ref:`Callable<class_Callable>` **get_spawn_function**\ (\ )
 
-Method called on all peers when a custom :ref:`spawn()<class_MultiplayerSpawner_method_spawn>` is requested by the authority. Will receive the ``data`` parameter, and should return a :ref:`Node<class_Node>` that is not in the scene tree.
+當自訂 :ref:`spawn()<class_MultiplayerSpawner_method_spawn>` 被授權端請求時，在所有對等端上呼叫的方法。將接收 ``data`` 參數，並且應該回傳一個不在場景樹中的 :ref:`Node<class_Node>`\ 。
 
-\ **Note:** The returned node should **not** be added to the scene with :ref:`Node.add_child()<class_Node_method_add_child>`. This is done automatically.
+\ **注意：**\ 回傳的節點\ **不**\ 應該用 :ref:`Node.add_child()<class_Node_method_add_child>` 新增到場景中。這是自動完成的。
 
 .. rst-class:: classref-item-separator
 
@@ -127,9 +127,9 @@ Method called on all peers when a custom :ref:`spawn()<class_MultiplayerSpawner_
 - |void| **set_spawn_limit**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spawn_limit**\ (\ )
 
-Maximum number of nodes allowed to be spawned by this spawner. Includes both spawnable scenes and custom spawns.
+該出生器允許出生的最大節點數。包括可出生場景和自訂出生。
 
-When set to ``0`` (the default), there is no limit.
+當設定為 ``0``\ （預設值）時，沒有限制。
 
 .. rst-class:: classref-item-separator
 

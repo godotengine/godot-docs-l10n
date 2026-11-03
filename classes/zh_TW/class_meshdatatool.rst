@@ -14,9 +14,9 @@ MeshDataTool
 說明
 ----
 
-MeshDataTool 提供對 :ref:`Mesh<class_Mesh>` 中各個頂點的存取。它允許使用者讀取和編輯網格的頂點數據。它還建立了一系列面和邊。
+MeshDataTool 提供對 :ref:`Mesh<class_Mesh>` 中各個頂點的存取。它允許使用者讀取和編輯網格的頂點資料。它還建立了一系列面和邊。
 
-要使用 MeshDataTool，請使用 :ref:`create_from_surface()<class_MeshDataTool_method_create_from_surface>` 載入一個網格。完成數據編輯後，使用 :ref:`commit_to_surface()<class_MeshDataTool_method_commit_to_surface>` 將資料提交到一個網格。
+要使用 MeshDataTool，請使用 :ref:`create_from_surface()<class_MeshDataTool_method_create_from_surface>` 載入一個網格。完成資料編輯後，使用 :ref:`commit_to_surface()<class_MeshDataTool_method_commit_to_surface>` 將資料提交到一個網格。
 
 下面是如何使用 MeshDataTool 的範例。
 
@@ -249,9 +249,9 @@ MeshDataTool 提供對 :ref:`Mesh<class_Mesh>` 中各個頂點的存取。它允
 
 :ref:`int<class_int>` **get_edge_vertex**\ (\ idx\: :ref:`int<class_int>`, vertex\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_edge_vertex>`
 
-Returns the index of the specified ``vertex`` connected to the edge at index ``idx``.
+回傳連接到索引為 ``idx`` 的邊的頂點 ``vertex`` 的索引。
 
-\ ``vertex`` can only be ``0`` or ``1``, as edges are composed of two vertices.
+\ ``vertex`` 只能是 ``0`` 或 ``1``\ ，因為一條邊由兩個頂點組成。
 
 .. rst-class:: classref-item-separator
 
@@ -275,9 +275,9 @@ Returns the index of the specified ``vertex`` connected to the edge at index ``i
 
 :ref:`int<class_int>` **get_face_edge**\ (\ idx\: :ref:`int<class_int>`, edge\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_edge>`
 
-Returns the edge associated with the face at index ``idx``.
+回傳與索引為 ``idx`` 的面相關聯的邊。
 
-\ ``edge`` argument must be either ``0``, ``1``, or ``2`` because a face only has three edges.
+\ ``edge`` 參數只能是 ``0``\ 、\ ``1`` 或 ``2``\ ，因為一個面只有三條邊。
 
 .. rst-class:: classref-item-separator
 
@@ -313,22 +313,22 @@ Returns the edge associated with the face at index ``idx``.
 
 :ref:`int<class_int>` **get_face_vertex**\ (\ idx\: :ref:`int<class_int>`, vertex\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_vertex>`
 
-Returns the specified vertex index of the given face.
+回傳給定面的指定頂點索引。
 
-\ ``vertex`` must be either ``0``, ``1``, or ``2`` because faces contain three vertices.
+\ ``vertex`` 必須為 ``0``\ 、\ ``1`` 或 ``2``\ ，因為一個麵包含三個頂點。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var index = mesh_data_tool.get_face_vertex(0, 1) # Gets the index of the second vertex of the first face.
+    var index = mesh_data_tool.get_face_vertex(0, 1) # 取得第一個面的第二個頂點的索引。
     var position = mesh_data_tool.get_vertex(index)
     var normal = mesh_data_tool.get_vertex_normal(index)
 
  .. code-tab:: csharp
 
-    int index = meshDataTool.GetFaceVertex(0, 1); // Gets the index of the second vertex of the first face.
+    int index = meshDataTool.GetFaceVertex(0, 1); // 取得第一個面的第二個頂點的索引。
     Vector3 position = meshDataTool.GetVertex(index);
     Vector3 normal = meshDataTool.GetVertexNormal(index);
 
@@ -344,7 +344,7 @@ Returns the specified vertex index of the given face.
 
 :ref:`int<class_int>` **get_format**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_format>`
 
-Returns the :ref:`Mesh<class_Mesh>`'s format as a combination of the :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` flags. For example, a mesh containing both vertices and normals would return a format of ``3`` because :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` is ``1`` and :ref:`Mesh.ARRAY_FORMAT_NORMAL<class_Mesh_constant_ARRAY_FORMAT_NORMAL>` is ``2``.
+將 :ref:`Mesh<class_Mesh>` 的格式回傳為 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` 標誌的組合。例如，包含頂點和法線的網格將回傳為 ``3`` 的格式，因為 :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` 是 ``1``\ ，而 :ref:`Mesh.ARRAY_FORMAT_NORMAL<class_Mesh_constant_ARRAY_FORMAT_NORMAL>` 是 ``2``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -608,9 +608,9 @@ Returns the :ref:`Mesh<class_Mesh>`'s format as a combination of the :ref:`Array
 
 |void| **set_vertex_tangent**\ (\ idx\: :ref:`int<class_int>`, tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_tangent>`
 
-Sets the tangent of the given vertex.
+設定給定頂點的切線。
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **注意：**\ 儘管 ``tangent`` 是一個 :ref:`Plane<class_Plane>`\ ，但它並不直接表示切平面。它的 :ref:`Plane.x<class_Plane_property_x>`\ 、\ :ref:`Plane.y<class_Plane_property_y>` 和 :ref:`Plane.z<class_Plane_property_z>` 表示切向量，而 :ref:`Plane.d<class_Plane_property_d>` 應該為 ``-1`` 或 ``1``\ 。另見 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`\ 。
 
 .. rst-class:: classref-item-separator
 

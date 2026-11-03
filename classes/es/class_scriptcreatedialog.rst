@@ -7,7 +7,7 @@ ScriptCreateDialog
 
 **Hereda:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Cuadro de diálogo emergente del editor Godot para crear nuevos archivos :ref:`Script<class_Script>`.
+Cuadro de diálogo emergente del editor de Godot para crear nuevos archivos :ref:`Script<class_Script>`.
 
 .. rst-class:: classref-introduction-group
 

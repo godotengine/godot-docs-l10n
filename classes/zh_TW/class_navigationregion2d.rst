@@ -136,7 +136,7 @@ NavigationRegion2D
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-決定該 **NavigationRegion2D** 是啟用還是禁用。
+決定該 **NavigationRegion2D** 是啟用還是停用。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ NavigationRegion2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-When pathfinding enters this region's navigation mesh from another regions navigation mesh the :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
+當尋路從另一個區塊的導覽網格進入該區塊的導覽網格時，\ :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` 值將被加到路徑距離，以確定最短路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ When pathfinding enters this region's navigation mesh from another regions navig
 - |void| **set_travel_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_travel_cost**\ (\ )
 
-When pathfinding moves inside this region's navigation mesh the traveled distances are multiplied with :ref:`travel_cost<class_NavigationRegion2D_property_travel_cost>` for determining the shortest path.
+當尋路在該區塊的導覽網格內移動時，將行進距離乘以 :ref:`travel_cost<class_NavigationRegion2D_property_travel_cost>` 以確定最短路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ When pathfinding moves inside this region's navigation mesh the traveled distanc
 
 |void| **bake_navigation_polygon**\ (\ on_thread\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_NavigationRegion2D_method_bake_navigation_polygon>`
 
-烘焙 :ref:`NavigationPolygon<class_NavigationPolygon>`\ 。如果 ``on_thread`` 設定為 ``true``\ （預設），則烘焙將在單獨的線程上完成。
+烘焙 :ref:`NavigationPolygon<class_NavigationPolygon>`\ 。如果 ``on_thread`` 設定為 ``true``\ （預設），則烘焙將在單獨的執行緒上完成。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ When pathfinding moves inside this region's navigation mesh the traveled distanc
 
 :ref:`Rect2<class_Rect2>` **get_bounds**\ (\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_get_bounds>`
 
-Returns the axis-aligned rectangle for the region's transformed navigation mesh.
+回傳區塊中變換後的導覽網格對應的軸對齊矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ Returns the axis-aligned rectangle for the region's transformed navigation mesh.
 
 **已棄用：** Use :ref:`get_rid()<class_NavigationRegion2D_method_get_rid>` instead.
 
-Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+回傳 :ref:`NavigationServer2D<class_NavigationServer2D>` 上該區塊的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer2D
 
 :ref:`bool<class_bool>` **is_baking**\ (\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_is_baking>`
 
-Returns ``true`` when the :ref:`NavigationPolygon<class_NavigationPolygon>` is being baked on a background thread.
+當 :ref:`NavigationPolygon<class_NavigationPolygon>` 正在後台執行緒上烘焙時，回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` when the :ref:`NavigationPolygon<class_NavigationPolygon>` is b
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationRegion2D_method_set_navigation_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

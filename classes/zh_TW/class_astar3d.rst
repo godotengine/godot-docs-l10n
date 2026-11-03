@@ -162,7 +162,7 @@ A\*（A Star）是一種用於路徑尋找（pathfinding）與圖遍歷（graph 
 - |void| **set_neighbor_filter_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_neighbor_filter_enabled**\ (\ )
 
-If ``true`` enables the filtering of neighbors via :ref:`_filter_neighbor()<class_AStar3D_private_method__filter_neighbor>`.
+如果為 ``true``\ ，則啟用通過 :ref:`_filter_neighbor()<class_AStar3D_private_method__filter_neighbor>` 過濾鄰接點。
 
 .. rst-class:: classref-section-separator
 
@@ -207,9 +207,9 @@ If ``true`` enables the filtering of neighbors via :ref:`_filter_neighbor()<clas
 
 :ref:`bool<class_bool>` **_filter_neighbor**\ (\ from_id\: :ref:`int<class_int>`, neighbor_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar3D_private_method__filter_neighbor>`
 
-Called when neighboring point enters processing and if :ref:`neighbor_filter_enabled<class_AStar3D_property_neighbor_filter_enabled>` is ``true``. If ``true`` is returned the point will not be processed.
+進入鄰接處理且 :ref:`neighbor_filter_enabled<class_AStar3D_property_neighbor_filter_enabled>` 為 ``true`` 時呼叫。如果回傳 ``true``\ ，則不會處理對應的點。
 
-Note that this function is hidden in the default **AStar3D** class.
+請注意，這個函式在預設的 **AStar3D** 類中是隱藏的。
 
 .. rst-class:: classref-item-separator
 
@@ -331,9 +331,9 @@ Note that this function is hidden in the default **AStar3D** class.
 
 :ref:`int<class_int>` **get_closest_point**\ (\ to_position\: :ref:`Vector3<class_Vector3>`, include_disabled\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_AStar3D_method_get_closest_point>`
 
-回傳最接近 ``to_position`` 的點之 ID，可選擇是否納入已停用的點。若點池為空則回傳 ``-1``\ 。
+回傳距離 ``to_position`` 最近的點的 ID，可以選擇將停用的點考慮在內。如果點池中沒有點，則回傳 ``-1``\ 。
 
-\ **注意：** 若有多個點同樣最接近，將回傳最小 ID 的點，以確保結果一致。
+\ **注意：**\ 如果有多個點距離 ``to_position`` 最近，則回傳 ID 最小的那個點，以保證結果的確定性。
 
 .. rst-class:: classref-item-separator
 
@@ -380,13 +380,13 @@ Note that this function is hidden in the default **AStar3D** class.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar3D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar3D between the given points. The array is ordered from the starting point to the ending point of the path.
+回傳一個陣列，其中包含構成 AStar3D 在給定點之間找到的路徑中的點的 ID。陣列從路徑的起點到終點排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 點被停用，則回傳一個空陣列（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 點未被停用，沒有能夠到達目標的有效路徑，並且 ``allow_partial_path`` 為\ ``true``\ ，則回傳能夠到達的最接近目標點的路徑。
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+\ **注意：**\ 如果 ``allow_partial_path`` 為 ``true`` 並且 ``to_id`` 處於停用狀態，搜尋耗時可能異常地大。
 
 
 .. tabs::
@@ -395,7 +395,7 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
 
     var astar = AStar3D.new()
     astar.add_point(1, Vector3(0, 0, 0))
-    astar.add_point(2, Vector3(0, 1, 0), 1) # Default weight is 1
+    astar.add_point(2, Vector3(0, 1, 0), 1) # 預設權重為 1
     astar.add_point(3, Vector3(1, 1, 0))
     astar.add_point(4, Vector3(2, 0, 0))
 
@@ -404,24 +404,24 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
     astar.connect_points(4, 3, false)
     astar.connect_points(1, 4, false)
 
-    var res = astar.get_id_path(1, 3) # Returns [1, 2, 3]
+    var res = astar.get_id_path(1, 3) # 回傳 [1, 2, 3]
 
  .. code-tab:: csharp
 
     var astar = new AStar3D();
     astar.AddPoint(1, new Vector3(0, 0, 0));
-    astar.AddPoint(2, new Vector3(0, 1, 0), 1); // Default weight is 1
+    astar.AddPoint(2, new Vector3(0, 1, 0), 1); // 預設權重為 1
     astar.AddPoint(3, new Vector3(1, 1, 0));
     astar.AddPoint(4, new Vector3(2, 0, 0));
     astar.ConnectPoints(1, 2, false);
     astar.ConnectPoints(2, 3, false);
     astar.ConnectPoints(4, 3, false);
     astar.ConnectPoints(1, 4, false);
-    long[] res = astar.GetIdPath(1, 3); // Returns [1, 2, 3]
+    long[] res = astar.GetIdPath(1, 3); // 回傳 [1, 2, 3]
 
 
 
-If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
+如果將第 2 個點的權重更改為 3，則結果將改為 ``[1, 4, 3]``\ ，因為現在即使距離更長，但通過第 4 點也比通過第 2 點“更容易”。
 
 .. rst-class:: classref-item-separator
 
@@ -511,15 +511,15 @@ If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]``
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar3D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by AStar3D between the given points. The array is ordered from the starting point to the ending point of the path.
+回傳一個陣列，其中包含 AStar3D 在給定點之間找到的路徑中的點。陣列從路徑的起點到終點進行排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 點被停用，則回傳一個空陣列（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 點未被停用，沒有通往目標的有效路徑並且 ``allow_partial_path`` 為 ``true``\ ，則會回傳通往距離目標最近的可達點的路徑。
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **注意：**\ 該方法不是執行緒安全的，同一時間只能有一個 :ref:`Thread<class_Thread>` 使用。請考慮使用 :ref:`Mutex<class_Mutex>` 來確保執行緒獨佔存取，避免競態條件。
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+另外，如果 ``allow_partial_path`` 為 ``true`` 並且 ``to_id`` 處於停用狀態，搜尋耗時可能異常地大。
 
 .. rst-class:: classref-item-separator
 

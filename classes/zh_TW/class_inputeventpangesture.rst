@@ -14,9 +14,9 @@ InputEventPanGesture
 說明
 ----
 
-Stores information about pan gestures. A pan gesture is performed when the user swipes the touch screen with two fingers. It's typically used for panning/scrolling.
+儲存與平移手勢相關的資訊。使用者在觸摸屏上滑動雙指，就執行了平移手勢。一般用於平移/捲動。
 
-\ **Note:** On Android, this requires the :ref:`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>` project setting to be enabled.
+\ **注意：**\ 在 Android 上，這需要啟用 :ref:`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>` 專案設定。
 
 .. rst-class:: classref-introduction-group
 

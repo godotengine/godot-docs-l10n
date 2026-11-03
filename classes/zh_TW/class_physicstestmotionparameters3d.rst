@@ -81,7 +81,7 @@ PhysicsTestMotionParameters3D
 - |void| **set_exclude_bodies**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude_bodies**\ (\ )
 
-可選的物體 :ref:`RID<class_RID>` 陣列，會排除與這些物體的碰撞。請使用 :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` 來獲取與衍生自 :ref:`CollisionObject3D<class_CollisionObject3D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
+可選的物體 :ref:`RID<class_RID>` 陣列，會排除與這些物體的碰撞。請使用 :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` 來取得與衍生自 :ref:`CollisionObject3D<class_CollisionObject3D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 

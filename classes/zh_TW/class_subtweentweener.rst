@@ -7,16 +7,16 @@ SubtweenTweener
 
 **繼承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Runs a :ref:`Tween<class_Tween>` nested within another :ref:`Tween<class_Tween>`.
+在一個 :ref:`Tween<class_Tween>` 中巢狀執行另一個 :ref:`Tween<class_Tween>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**SubtweenTweener** is used to execute a :ref:`Tween<class_Tween>` as one step in a sequence defined by another :ref:`Tween<class_Tween>`. See :ref:`Tween.tween_subtween()<class_Tween_method_tween_subtween>` for more usage information.
+**SubtweenTweener** 可以將執行某個 :ref:`Tween<class_Tween>` 設為另一個 :ref:`Tween<class_Tween>` 所定義序列中的一個步驟。更多用法資訊見 :ref:`Tween.tween_subtween()<class_Tween_method_tween_subtween>`\ 。
 
-\ **Note:** :ref:`Tween.tween_subtween()<class_Tween_method_tween_subtween>` is the only correct way to create **SubtweenTweener**. Any **SubtweenTweener** created manually will not function correctly.
+\ **注意：**\ 建立 **SubtweenTweener** 的唯一正確方法是 :ref:`Tween.tween_subtween()<class_Tween_method_tween_subtween>`\ 。任何手動建立的 **SubtweenTweener** 都無法正常工作。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Runs a :ref:`Tween<class_Tween>` nested within another :ref:`Tween<class_Tween>`
 
 :ref:`SubtweenTweener<class_SubtweenTweener>` **set_delay**\ (\ delay\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SubtweenTweener_method_set_delay>`
 
-Sets the time in seconds after which the **SubtweenTweener** will start running the subtween. By default there's no delay.
+設定該 **SubtweenTweener** 開始執行子補間的時間，單位為秒。預設無延遲。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

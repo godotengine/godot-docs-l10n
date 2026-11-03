@@ -14,7 +14,7 @@ Theme
 說明
 ----
 
-用於樣式化/皮膚化 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 節點的資源。控制項可以使用本地的主題覆蓋項進行單獨的風格化（見 :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>`\ ），而主題資源則能夠儲存這些設定，在所有同型別的控制項之間實作共用（例如將所有 :ref:`Button<class_Button>` 都設定為相同的風格）。主題資源可以在整個專案上使用，但你也可以為單獨的一個控件節點分支設定不同的主題資源。為某個控制項節點分配的主題資源不僅會對它自己生效，也會對它的所有直接和間接子節點生效（只要控制項鏈沒有中斷）。
+用於樣式化/皮膚化 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 節點的資源。控制項可以使用本地的主題覆蓋項進行單獨的風格化（見 :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>`\ ），而主題資源則能夠儲存這些設定，在所有同型別的控制項之間實作共用（例如將所有 :ref:`Button<class_Button>` 都設定為相同的風格）。主題資源可以在整個專案上使用，但你也可以為單獨的一個控制項節點分支設定不同的主題資源。為某個控制項節點分配的主題資源不僅會對它自己生效，也會對它的所有直接和間接子節點生效（只要控制項鏈沒有中斷）。
 
 專案範圍的主題請使用 :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>` 設定，這樣專案中的所有控制項就都能夠使用。
 
@@ -291,7 +291,7 @@ enum **DataType**: :ref:`🔗<enum_Theme_DataType>`
 - |void| **set_default_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_default_font**\ (\ )
 
-該主題資源的預設字形。嘗試獲取字形資源時，如果該主題中不存在或者為無效狀態，則會用它作為預設值。如果預設字形也缺失或無效，則會使用引擎的退回值（見 :ref:`ThemeDB.fallback_font<class_ThemeDB_property_fallback_font>`\ ）。
+該主題資源的預設字形。嘗試取得字形資源時，如果該主題中不存在或者為無效狀態，則會用它作為預設值。如果預設字形也缺失或無效，則會使用引擎的退回值（見 :ref:`ThemeDB.fallback_font<class_ThemeDB_property_fallback_font>`\ ）。
 
 請使用 :ref:`has_default_font()<class_Theme_method_has_default_font>` 來檢查該值是否有效。
 
@@ -310,9 +310,9 @@ enum **DataType**: :ref:`🔗<enum_Theme_DataType>`
 - |void| **set_default_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_default_font_size**\ (\ )
 
-The default font size of this theme resource. Used as the default value when trying to fetch a font size value that doesn't exist in this theme or is in invalid state. If the default font size is also missing or invalid, the engine fallback value is used (see :ref:`ThemeDB.fallback_font_size<class_ThemeDB_property_fallback_font_size>`).
+該主題資源的預設字型大小。嘗試取得字型大小時，如果該主題中不存在或者為無效狀態，則會用它作為預設值。如果預設字型大小也缺失或無效，則會使用引擎的回退值（見 :ref:`ThemeDB.fallback_font_size<class_ThemeDB_property_fallback_font_size>`\ ）。
 
-Values below ``1`` are invalid and can be used to unset the property. Use :ref:`has_default_font_size()<class_Theme_method_has_default_font_size>` to check if this value is valid.
+小於 ``1`` 的值無效，可用於清除對該屬性的設定。請使用 :ref:`has_default_font_size()<class_Theme_method_has_default_font_size>` 來檢查該值是否有效。
 
 .. rst-class:: classref-section-separator
 
@@ -481,7 +481,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_color_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_color_list>`
 
-返回為 ``theme_type`` 型別定義的 :ref:`Color<class_Color>` 屬性的名稱列表。請使用 :ref:`get_color_type_list()<class_Theme_method_get_color_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的 :ref:`Color<class_Color>` 屬性的名稱列表。請使用 :ref:`get_color_type_list()<class_Theme_method_get_color_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_color_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_color_type_list>`
 
-返回 :ref:`Color<class_Color>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回 :ref:`Color<class_Color>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_constant_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_constant_list>`
 
-返回為 ``theme_type`` 型別定義的常數屬性的名稱列表。請使用 :ref:`get_constant_type_list()<class_Theme_method_get_constant_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的常數屬性的名稱列表。請使用 :ref:`get_constant_type_list()<class_Theme_method_get_constant_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_constant_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_constant_type_list>`
 
-返回常數屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回常數屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_font_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_font_list>`
 
-返回為 ``theme_type`` 型別定義的 :ref:`Font<class_Font>` 屬性的名稱列表。請使用 :ref:`get_font_type_list()<class_Theme_method_get_font_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的 :ref:`Font<class_Font>` 屬性的名稱列表。請使用 :ref:`get_font_type_list()<class_Theme_method_get_font_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_font_size_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_font_size_list>`
 
-返回為 ``theme_type`` 型別定義的字形大小屬性的名稱列表。請使用 :ref:`get_font_size_type_list()<class_Theme_method_get_font_size_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的字形大小屬性的名稱列表。請使用 :ref:`get_font_size_type_list()<class_Theme_method_get_font_size_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_font_size_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_font_size_type_list>`
 
-返回字形大小屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回字形大小屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_font_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_font_type_list>`
 
-返回 :ref:`Font<class_Font>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回 :ref:`Font<class_Font>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_icon_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_icon_list>`
 
-返回為 ``theme_type`` 型別定義的圖示屬性的名稱列表。請使用 :ref:`get_icon_type_list()<class_Theme_method_get_icon_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的圖示屬性的名稱列表。請使用 :ref:`get_icon_type_list()<class_Theme_method_get_icon_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_icon_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_icon_type_list>`
 
-返回圖示屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回圖示屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_stylebox_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_stylebox_list>`
 
-返回為 ``theme_type`` 型別定義的 :ref:`StyleBox<class_StyleBox>` 屬性的名稱列表。請使用 :ref:`get_stylebox_type_list()<class_Theme_method_get_stylebox_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的 :ref:`StyleBox<class_StyleBox>` 屬性的名稱列表。請使用 :ref:`get_stylebox_type_list()<class_Theme_method_get_stylebox_type_list>` 取得可能的主題型別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_stylebox_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_stylebox_type_list>`
 
-返回 :ref:`StyleBox<class_StyleBox>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回 :ref:`StyleBox<class_StyleBox>` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_theme_item_list**\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_theme_item_list>`
 
-返回為 ``theme_type`` 型別定義的 ``data_type`` 屬性的名稱列表。請使用 :ref:`get_theme_item_type_list()<class_Theme_method_get_theme_item_type_list>` 獲取可能的主題型別名稱。
+返回為 ``theme_type`` 型別定義的 ``data_type`` 屬性的名稱列表。請使用 :ref:`get_theme_item_type_list()<class_Theme_method_get_theme_item_type_list>` 取得可能的主題型別名稱。
 
 \ **注意：**\ 這個方法類似於呼叫相應的資料型別特定方法，但可以用於更通用邏輯。
 
@@ -729,7 +729,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_theme_item_type_list**\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`\ ) |const| :ref:`🔗<class_Theme_method_get_theme_item_type_list>`
 
-返回 ``data_type`` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 獲取所有主題型別。
+返回 ``data_type`` 屬性的所有唯一主題型別名稱的列表。請使用 :ref:`get_type_list()<class_Theme_method_get_type_list>` 取得所有主題型別。
 
 \ **注意：**\ 這個方法類似於呼叫相應的資料型別特定方法，但可以用於更通用邏輯。
 
@@ -743,7 +743,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_type_list>`
 
-返回所有唯一主題型別名稱的列表。獲取單一資料型別的唯一主題型別列表請使用對應的 ``get_*_type_list`` 方法。
+返回所有唯一主題型別名稱的列表。取得單一資料型別的唯一主題型別列表請使用對應的 ``get_*_type_list`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -849,9 +849,9 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`bool<class_bool>` **has_font**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Theme_method_has_font>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``name`` 的 :ref:`Font<class_Font>` 屬性，則返回 ``true``\ 。
+若存在由 ``name`` 和 ``theme_type`` 定義的 :ref:`Font<class_Font>` 屬性，或已設定預設主題字型（請參閱 :ref:`has_default_font()<class_Theme_method_has_default_font>`\ ），則回傳 ``true``\ 。
 
-不存在時返回 ``false``\ 。定義請使用 :ref:`set_font()<class_Theme_method_set_font>`\ 。
+若兩者都不存在，則回傳 ``false``\ 。請使用 :ref:`set_font()<class_Theme_method_set_font>` 定義此屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -863,9 +863,9 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`bool<class_bool>` **has_font_size**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Theme_method_has_font_size>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``name`` 的字形大小屬性，則返回 ``true``\ 。
+若存在由 ``name`` 和 ``theme_type`` 定義的字型大小屬性，或已設定預設主題字型大小（請參閱 :ref:`has_default_font_size()<class_Theme_method_has_default_font_size>`\ ），則回傳 ``true``\ 。
 
-不存在時返回 ``false``\ 。定義請使用 :ref:`set_font_size()<class_Theme_method_set_font_size>`\ 。
+若兩者都不存在，則回傳 ``false``\ 。請使用 :ref:`set_font_size()<class_Theme_method_set_font_size>` 定義此屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -905,11 +905,11 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 :ref:`bool<class_bool>` **has_theme_item**\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Theme_method_has_theme_item>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``name`` 的主題屬性，則返回 ``true``\ 。
+若存在名稱為 ``name``\ 、主題型別為 ``theme_type``\ 、資料型別為 ``data_type`` 的主題屬性，則回傳 ``true``\ 。
 
-不存在時返回 ``false``\ 。定義請使用 :ref:`set_theme_item()<class_Theme_method_set_theme_item>`\ 。
+不存在時則回傳 ``false``\ 。請使用 :ref:`set_theme_item()<class_Theme_method_set_theme_item>` 定義此屬性。
 
-\ **注意：**\ 這個方法類似於呼叫相應的資料型別特定方法，但可以用於更通用邏輯。
+\ **注意：**\ 此方法相當於呼叫對應資料型別的專用方法，但可用於更通用的邏輯。
 
 .. rst-class:: classref-item-separator
 
@@ -959,7 +959,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_color**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_color>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`Color<class_Color>` 屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`Color<class_Color>` 屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_color()<class_Theme_method_has_color>` 檢查是否存在，使用 :ref:`clear_color()<class_Theme_method_clear_color>` 移除現有屬性。
 
@@ -973,7 +973,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_constant**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_constant>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的常數屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的常數屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_constant()<class_Theme_method_has_constant>` 檢查是否存在，使用 :ref:`clear_constant()<class_Theme_method_clear_constant>` 移除現有屬性。
 
@@ -987,7 +987,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_font**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_font>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`Font<class_Font>` 屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`Font<class_Font>` 屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_font()<class_Theme_method_has_font>` 檢查是否存在，使用 :ref:`clear_font()<class_Theme_method_clear_font>` 移除現有屬性。
 
@@ -1001,7 +1001,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_font_size**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_font_size>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的字形大小屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的字形大小屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_font_size()<class_Theme_method_has_font_size>` 檢查是否存在，使用 :ref:`clear_font_size()<class_Theme_method_clear_font_size>` 移除現有屬性。
 
@@ -1015,7 +1015,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_icon**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_icon>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的圖示屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的圖示屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_icon()<class_Theme_method_has_icon>` 檢查是否存在，使用 :ref:`clear_icon()<class_Theme_method_clear_icon>` 移除現有屬性。
 
@@ -1029,7 +1029,7 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_stylebox**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_stylebox>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`StyleBox<class_StyleBox>` 屬性，則將其重命名為 ``name``\ 。
+如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的 :ref:`StyleBox<class_StyleBox>` 屬性，則將其重新命名為 ``name``\ 。
 
 不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_stylebox()<class_Theme_method_has_stylebox>` 檢查是否存在，使用 :ref:`clear_stylebox()<class_Theme_method_clear_stylebox>` 移除現有屬性。
 
@@ -1043,11 +1043,11 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_theme_item**\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_theme_item>`
 
-如果主題型別 ``theme_type`` 中存在名為 ``old_name`` 的主題屬性，則將其重命名為 ``name``\ 。
+若存在名稱為 ``old_name``\ 、主題型別為 ``theme_type``\ 、資料型別為 ``data_type`` 的主題屬性，則將它重新命名為 ``name``\ 。
 
-不存在時失敗，新名稱已存在時也會失敗。請使用 :ref:`has_theme_item()<class_Theme_method_has_theme_item>` 檢查是否存在，使用 :ref:`clear_theme_item()<class_Theme_method_clear_theme_item>` 移除現有屬性。
+若屬性不存在，或新名稱已被同類屬性使用，則失敗。請使用 :ref:`has_theme_item()<class_Theme_method_has_theme_item>` 檢查屬性是否存在，並使用 :ref:`clear_theme_item()<class_Theme_method_clear_theme_item>` 移除現有屬性。
 
-\ **注意：**\ 這個方法類似於呼叫相應的資料型別特定方法，但可以用於更通用邏輯。
+\ **注意：**\ 此方法相當於呼叫對應資料型別的專用方法，但可用於更通用的邏輯。
 
 .. rst-class:: classref-item-separator
 
@@ -1059,9 +1059,9 @@ Values below ``1`` are invalid and can be used to unset the property. Use :ref:`
 
 |void| **rename_type**\ (\ old_theme_type\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_type>`
 
-Renames the theme type ``old_theme_type`` to ``theme_type``, if the old type exists and the new one doesn't exist.
+將舊的主題型別 ``old_theme_type`` 重新命名為 ``theme_type``\ ，要求舊型別存在且新型別不存在。
 
-\ **Note:** Renaming a theme type to an empty name or a variation to a type associated with a built-in class removes type variation connections in a way that cannot be undone by reversing the rename alone.
+\ **注意：**\ 如果將主題型別重新命名為空的名稱，或者是與內建類關聯的型別變體，就會移除型別變體連接，且無法再單單通過重新命名進行復原。
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1145,7 @@ Renames the theme type ``old_theme_type`` to ``theme_type``, if the old type exi
 
 |void| **set_theme_item**\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Theme_method_set_theme_item>`
 
-建立或改變由名稱 ``name`` 和主題型別 ``theme_type`` 定義的主題屬性的值。移除該屬性請使用 :ref:`clear_theme_item()<class_Theme_method_clear_theme_item>`\ 。
+建立或改變由名稱 ``name`` 和主題型別 ``theme_type``\ 、資料型別為 ``data_type`` 定義的主題屬性的值。移除該屬性請使用 :ref:`clear_theme_item()<class_Theme_method_clear_theme_item>`\ 。
 
 如果 ``value`` 的型別不被 ``data_type`` 所接受，則失敗。
 

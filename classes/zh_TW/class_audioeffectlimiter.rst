@@ -9,18 +9,18 @@ AudioEffectLimiter
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a soft-clip limiter audio effect to an audio bus.
+向音訊總線新增一個軟削波限制器音訊效果。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
+“限制器”是一種旨在防止音訊訊號超過特定的音量閾值的音訊效果，其工作原理通常是通過降低音量或對音訊進行“軟削波”來實現的。強烈建議在主總線上新增一個限制器，以防止當音量超過 0 分貝時發生削波。
 
-Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+軟削波會在音量峰值略低於音量閾值時開始削減峰值，並隨著輸入音量的增強而逐漸增強效果，從而使峰值永遠不會超過閾值。
 
-If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+如果需要硬削波，請考慮 :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<clas
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<clas
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
+波形的最大允許值，單位是分貝。數值範圍從 -20 到 -0.1。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
+調整受限波形的音量，單位為分貝。取值範圍為 0 到 6。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
+該屬性對音訊無效。由於該限制器效果已被棄用，請改用 :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
+限制器開始生效的音量閾值電平，單位為分貝。取值範圍為 -30 到 0。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

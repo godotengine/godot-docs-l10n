@@ -103,7 +103,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_convex_hull_approximation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_convex_hull_approximation**\ (\ )
 
-If ``true``, uses approximation for computing convex hulls.
+如果為 ``true``\ ，則在計算凸包時使用近似計算。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ If ``true``, uses approximation for computing convex hulls.
 - |void| **set_normalize_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_normalize_mesh**\ (\ )
 
-If ``true``, normalizes the mesh before applying the convex decomposition.
+如果為 ``true``\ ，則會在應用凸分解前將網格正規化。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ If ``true``, normalizes the mesh before applying the convex decomposition.
 - |void| **set_plane_downsampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_plane_downsampling**\ (\ )
 
-控制搜索“最佳”裁剪平面的顆粒度。範圍從 ``1`` 到 ``16``\ 。
+控制搜尋“最佳”裁剪平面的顆粒度。範圍從 ``1`` 到 ``16``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If ``true``, normalizes the mesh before applying the convex decomposition.
 - |void| **set_project_hull_vertices**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_project_hull_vertices**\ (\ )
 
-If ``true``, projects output convex hull vertices onto the original source mesh to increase floating-point accuracy of the results.
+如果為 ``true``\ ，則專案會將凸包頂點輸出到該源網格之上，提高結果的浮點數精度。
 
 .. rst-class:: classref-item-separator
 

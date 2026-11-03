@@ -16,7 +16,7 @@ SphereShape3D
 
 3D 球體形狀，旨在用於物理學。通常用於為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。
 
-\ **性能：**\ **SphereShape3D** 可以快速偵測碰撞。比 :ref:`BoxShape3D<class_BoxShape3D>`\ 、\ :ref:`CapsuleShape3D<class_CapsuleShape3D>`\ 、\ :ref:`CylinderShape3D<class_CylinderShape3D>` 快。
+\ **效能：**\ **SphereShape3D** 可以快速偵測碰撞。比 :ref:`BoxShape3D<class_BoxShape3D>`\ 、\ :ref:`CapsuleShape3D<class_CapsuleShape3D>`\ 、\ :ref:`CylinderShape3D<class_CylinderShape3D>` 快。
 
 .. rst-class:: classref-introduction-group
 

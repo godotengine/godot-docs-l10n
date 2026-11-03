@@ -9,14 +9,14 @@ OpenXRSpatialComponentPlaneAlignmentList
 
 **繼承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries plane alignment result data.
+用於儲存查詢平面對齊結果資料的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object for storing the queries plane alignment result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用於呼叫 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 時儲存查詢平面對齊結果資料的物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ enum **PlaneAlignment**: :ref:`🔗<enum_OpenXRSpatialComponentPlaneAlignmentLis
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_UPWARD** = ``0``
 
-Plane is facing upward.
+平面面朝上。
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD:
 
@@ -59,7 +59,7 @@ Plane is facing upward.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD** = ``1``
 
-Plane is facing downwards.
+平面面朝下。
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_VERTICAL:
 
@@ -67,7 +67,7 @@ Plane is facing downwards.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_VERTICAL** = ``2``
 
-Plane is vertically aligned.
+平面垂直對齊。
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_ARBITRARY:
 
@@ -75,7 +75,7 @@ Plane is vertically aligned.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_ARBITRARY** = ``3``
 
-Plane has an arbitrary alignment.
+平面具有任意方向。
 
 .. rst-class:: classref-section-separator
 
@@ -92,7 +92,7 @@ Plane has an arbitrary alignment.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPlaneAlignmentList_method_get_plane_alignment>`
 
-Returns the plane alignment for the parent entity at this ``index``.
+回傳該 ``index`` 處父實體的平面對齊方式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

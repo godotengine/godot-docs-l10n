@@ -98,7 +98,7 @@ EditorSelection
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_selected_nodes**\ (\ ) :ref:`🔗<class_EditorSelection_method_get_selected_nodes>`
 
-Returns the list of selected nodes.
+回傳所選節點的清單。
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ Returns the list of selected nodes.
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_top_selected_nodes**\ (\ ) :ref:`🔗<class_EditorSelection_method_get_top_selected_nodes>`
 
-Returns the list of top selected nodes only, excluding any children. This is useful for performing transform operations (moving them, rotating, etc.).
+回傳僅包含頂層選定節點的清單，不包括任何子節點。適用於執行變換操作（移動、旋轉等）。
 
-For example, if there is a node A with a child B and a sibling C, then selecting all three will cause this method to return only A and C. Changing the global transform of A will affect the global transform of B, so there is no need to change B separately.
+例如節點 A 有一個子節點 B、一個同級節點 C，如果選中這三個節點，那麼該方法只會回傳 A 和 C。更改 A 的全域變換將影響 B 的全域變換，因此不需要單獨更改 B。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ For example, if there is a node A with a child B and a sibling C, then selecting
 
 **已棄用：** Use :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>` instead.
 
-Returns the list of top selected nodes only, excluding any children. This is useful for performing transform operations (moving them, rotating, etc.). See :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`.
+回傳僅包含頂層選定節點的清單，不包括任何子節點。適用於執行變換操作（移動、旋轉等）。見 :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`\ 。
 
 .. rst-class:: classref-item-separator
 

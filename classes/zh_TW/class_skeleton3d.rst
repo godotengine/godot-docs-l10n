@@ -14,11 +14,11 @@ Skeleton3D
 說明
 ----
 
-**Skeleton3D** provides an interface for managing a hierarchy of bones, including pose, rest and animation (see :ref:`Animation<class_Animation>`). It can also use ragdoll physics.
+**Skeleton3D** 提供了管理骨骼層級結構的介面，包括姿勢、放鬆姿勢和動畫（見 :ref:`Animation<class_Animation>`\ ）。它還可以使用布娃娃物理。
 
-The overall transform of a bone with respect to the skeleton is determined by bone pose. Bone rest defines the initial transform of the bone pose.
+骨骼相對於骨架的整體變換由骨骼的姿勢決定。骨骼的放鬆姿勢定義的是骨骼姿勢的初始變換。
 
-Note that "global pose" below refers to the overall transform of the bone with respect to skeleton, so it is not the actual global/world transform of the bone.
+請注意，下文的“全域姿勢”是指骨骼相對於骨架的整體變換，因此並不是骨骼的實際全域/世界變換。
 
 .. rst-class:: classref-introduction-group
 
@@ -166,7 +166,7 @@ Note that "global pose" below refers to the overall transform of the bone with r
 
 **bone_enabled_changed**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton3D_signal_bone_enabled_changed>`
 
-Emitted when the bone at ``bone_idx`` is toggled with :ref:`set_bone_enabled()<class_Skeleton3D_method_set_bone_enabled>`. Use :ref:`is_bone_enabled()<class_Skeleton3D_method_is_bone_enabled>` to check the new value.
+當使用 :ref:`set_bone_enabled()<class_Skeleton3D_method_set_bone_enabled>` 切換 ``bone_idx`` 處的骨骼時發出。使用 :ref:`is_bone_enabled()<class_Skeleton3D_method_is_bone_enabled>` 來檢查新值。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Emitted when the bone at ``bone_idx`` is toggled with :ref:`set_bone_enabled()<c
 
 **bone_list_changed**\ (\ ) :ref:`🔗<class_Skeleton3D_signal_bone_list_changed>`
 
-Emitted when the list of bones changes, such as when calling :ref:`add_bone()<class_Skeleton3D_method_add_bone>`, :ref:`set_bone_parent()<class_Skeleton3D_method_set_bone_parent>`, :ref:`unparent_bone_and_rest()<class_Skeleton3D_method_unparent_bone_and_rest>`, or :ref:`clear_bones()<class_Skeleton3D_method_clear_bones>`.
+骨骼清單發生改變時發出，例如當呼叫 :ref:`add_bone()<class_Skeleton3D_method_add_bone>`\ 、\ :ref:`set_bone_parent()<class_Skeleton3D_method_set_bone_parent>`\ 、\ :ref:`unparent_bone_and_rest()<class_Skeleton3D_method_unparent_bone_and_rest>`\ 、\ :ref:`clear_bones()<class_Skeleton3D_method_clear_bones>` 時。
 
 .. rst-class:: classref-item-separator
 
@@ -190,9 +190,9 @@ Emitted when the list of bones changes, such as when calling :ref:`add_bone()<cl
 
 **pose_updated**\ (\ ) :ref:`🔗<class_Skeleton3D_signal_pose_updated>`
 
-Emitted when the pose is updated.
+姿勢發生更改時發出。
 
-\ **Note:** During the update process, this signal is not fired, so modification by :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` is not detected.
+\ **注意：**\ 更新過程中不會發出該訊號，因此不會檢測到 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的修改。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Emitted when the pose is updated.
 
 **rest_updated**\ (\ ) :ref:`🔗<class_Skeleton3D_signal_rest_updated>`
 
-Emitted when the rest is updated.
+更新放鬆姿勢時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Emitted when the rest is updated.
 
 **show_rest_only_changed**\ (\ ) :ref:`🔗<class_Skeleton3D_signal_show_rest_only_changed>`
 
-Emitted when the value of :ref:`show_rest_only<class_Skeleton3D_property_show_rest_only>` changes.
+當 :ref:`show_rest_only<class_Skeleton3D_property_show_rest_only>` 的值改變時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -228,9 +228,9 @@ Emitted when the value of :ref:`show_rest_only<class_Skeleton3D_property_show_re
 
 **skeleton_updated**\ (\ ) :ref:`🔗<class_Skeleton3D_signal_skeleton_updated>`
 
-Emitted when the final pose has been calculated will be applied to the skin in the update process.
+當最終姿勢計算完成後發出，將在更新過程中套用至皮膚。
 
-This means that all :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` processing is complete. In order to detect the completion of the processing of each :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, use :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
+這意味著所有 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 處理都已完成。為了檢測每個 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 處理的完成情況，請使用 :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -253,7 +253,7 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 :ref:`ModifierCallbackModeProcess<enum_Skeleton3D_ModifierCallbackModeProcess>` **MODIFIER_CALLBACK_MODE_PROCESS_PHYSICS** = ``0``
 
-Set a flag to process modification during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
+在物理影格期間處理修改的標誌（見 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。
 
 .. _class_Skeleton3D_constant_MODIFIER_CALLBACK_MODE_PROCESS_IDLE:
 
@@ -261,7 +261,7 @@ Set a flag to process modification during physics frames (see :ref:`Node.NOTIFIC
 
 :ref:`ModifierCallbackModeProcess<enum_Skeleton3D_ModifierCallbackModeProcess>` **MODIFIER_CALLBACK_MODE_PROCESS_IDLE** = ``1``
 
-Set a flag to process modification during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
+在處理影格期間處理修改的標誌（見 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
 
 .. _class_Skeleton3D_constant_MODIFIER_CALLBACK_MODE_PROCESS_MANUAL:
 
@@ -269,7 +269,7 @@ Set a flag to process modification during process frames (see :ref:`Node.NOTIFIC
 
 :ref:`ModifierCallbackModeProcess<enum_Skeleton3D_ModifierCallbackModeProcess>` **MODIFIER_CALLBACK_MODE_PROCESS_MANUAL** = ``2``
 
-Do not process modification. Use :ref:`advance()<class_Skeleton3D_method_advance>` to process the modification manually.
+不處理修改。請使用 :ref:`advance()<class_Skeleton3D_method_advance>` 手動處理修改。
 
 .. rst-class:: classref-section-separator
 
@@ -286,7 +286,7 @@ Do not process modification. Use :ref:`advance()<class_Skeleton3D_method_advance
 
 **NOTIFICATION_UPDATE_SKELETON** = ``50`` :ref:`🔗<class_Skeleton3D_constant_NOTIFICATION_UPDATE_SKELETON>`
 
-Notification received when this skeleton's pose needs to be updated. In that case, this is called only once per frame in a deferred process.
+骨架的姿勢需要更新時收到的通知。每影格只會通過延遲處理呼叫一次。
 
 .. rst-class:: classref-section-separator
 
@@ -310,9 +310,9 @@ Notification received when this skeleton's pose needs to be updated. In that cas
 
 **已棄用：** 此屬性可能在未來版本中變更或移除。
 
-If you follow the recommended workflow and explicitly have :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` as a child of **Skeleton3D**, you can control whether it is affected by raycasting without running :ref:`physical_bones_start_simulation()<class_Skeleton3D_method_physical_bones_start_simulation>`, by its :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>`.
+如果你遵循推薦的工作流程並明確將 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` 作為 **Skeleton3D** 的子項，則可以通過其 :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` 來控制它是否受到射線投射的影響，而無需執行 :ref:`physical_bones_start_simulation()<class_Skeleton3D_method_physical_bones_start_simulation>`\ 。
 
-However, for old (deprecated) configurations, **Skeleton3D** has an internal virtual :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` for compatibility. This property controls the internal virtual :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`'s :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>`.
+但是，對於舊的（已棄用的）設定，為了相容性，\ **Skeleton3D** 有一個內部虛擬的 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`\ 。該屬性控制內部虛擬的 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` 的 :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ However, for old (deprecated) configurations, **Skeleton3D** has an internal vir
 - |void| **set_modifier_callback_mode_process**\ (\ value\: :ref:`ModifierCallbackModeProcess<enum_Skeleton3D_ModifierCallbackModeProcess>`\ )
 - :ref:`ModifierCallbackModeProcess<enum_Skeleton3D_ModifierCallbackModeProcess>` **get_modifier_callback_mode_process**\ (\ )
 
-Sets the processing timing for the Modifier.
+設定修改器的處理時機。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Sets the processing timing for the Modifier.
 - |void| **set_show_rest_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_show_rest_only**\ (\ )
 
-If ``true``, forces the bones in their default rest pose, regardless of their values. In the editor, this also prevents the bones from being edited.
+如果為 ``true``\ ，則無論其值如何，強制骨骼處於預設放鬆姿勢。在編輯器中，這也會阻止骨骼被編輯。
 
 .. rst-class:: classref-section-separator
 
@@ -382,9 +382,9 @@ If ``true``, forces the bones in their default rest pose, regardless of their va
 
 :ref:`int<class_int>` **add_bone**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Skeleton3D_method_add_bone>`
 
-Adds a new bone with the given name. Returns the new bone's index, or ``-1`` if this method fails.
+新增具有給定名稱的新骨骼。回傳新骨骼的索引，如果該方法失敗，則回傳 ``-1``\ 。
 
-\ **Note:** Bone names should be unique, non empty, and cannot include the ``:`` and ``/`` characters.
+\ **注意：**\ 骨骼名稱應該是唯一的、非空的，並且不能包含 ``:`` 和 ``/`` 字元。
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ Adds a new bone with the given name. Returns the new bone's index, or ``-1`` if 
 
 |void| **advance**\ (\ delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Skeleton3D_method_advance>`
 
-Manually advance the child :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s by the specified time (in seconds).
+手動將子 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 推進指定的時間（單位為秒）。
 
-\ **Note:** The ``delta`` is temporarily accumulated in the **Skeleton3D**, and the deferred process uses the accumulated value to process the modification.
+\ **注意：**\ **Skeleton3D** 中會暫時累積 ``delta``\ ，推遲的處理會使用累積值處理修改。
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ Manually advance the child :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 
 
 :ref:`int<class_int>` **find_bone**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_find_bone>`
 
-Returns the bone index that matches ``name`` as its name. Returns ``-1`` if no bone with this name exists.
+回傳與 ``name`` 匹配的骨骼索引。如果不存在具有該名稱的骨骼，則回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Returns the bone index that matches ``name`` as its name. Returns ``-1`` if no b
 
 **已棄用：** This method should only be called internally.
 
-Force updates the bone transforms/poses for all bones in the skeleton.
+強制更新該骨架中所有骨骼的變換/姿勢。
 
 .. rst-class:: classref-item-separator
 
@@ -488,7 +488,7 @@ Force updates the bone transforms/poses for all bones in the skeleton.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_bone_children**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_children>`
 
-Returns an array containing the bone indexes of all the child node of the passed in bone, ``bone_idx``.
+回傳一個陣列，其中包含傳入骨骼 ``bone_idx`` 的所有子節點的骨骼索引。
 
 .. rst-class:: classref-item-separator
 
@@ -512,9 +512,9 @@ Returns an array containing the bone indexes of all the child node of the passed
 
 :ref:`Transform3D<class_Transform3D>` **get_bone_global_pose**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_global_pose>`
 
-Returns the overall transform of the specified bone, with respect to the skeleton. Being relative to the skeleton frame, this is not the actual "global" transform of the bone.
+回傳指定骨骼相對於骨架的整體變換。相對於骨架影格，這不是骨骼的實際“全域”變換。
 
-\ **Note:** This is the global pose you set to the skeleton in the process, the final global pose can get overridden by modifiers in the deferred process, if you want to access the final global pose, use :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
+\ **注意：**\ 這是你在 process 期間為骨架設定的全域姿勢，最終全域姿勢可能會被延遲 process 期間的修改器覆蓋，如果你想存取最終全域姿勢，請使用 :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Returns the overall transform of the specified bone, with respect to the skeleto
 
 :ref:`Variant<class_Variant>` **get_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_meta>`
 
-Returns the metadata with the given ``key`` for the bone at index ``bone_idx``.
+回傳索引為 ``bone_idx`` 的骨骼的給定 ``key`` 對應的中繼資料。
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ Returns the metadata with the given ``key`` for the bone at index ``bone_idx``.
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_bone_meta_list**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_meta_list>`
 
-Returns the list of all metadata keys for the bone at index ``bone_idx``.
+回傳索引為 ``bone_idx`` 的骨骼中所有中繼資料的鍵名。
 
 .. rst-class:: classref-item-separator
 
@@ -616,9 +616,9 @@ Returns the list of all metadata keys for the bone at index ``bone_idx``.
 
 :ref:`Transform3D<class_Transform3D>` **get_bone_pose**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_pose>`
 
-Returns the pose transform of the specified bone.
+回傳指定骨骼的姿勢變換。
 
-\ **Note:** This is the pose you set to the skeleton in the process, the final pose can get overridden by modifiers in the deferred process, if you want to access the final pose, use :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
+\ **注意：**\ 這是你在 process 期間為骨架設定的姿勢，最終姿勢可能會被延遲 process 期間的修改器覆蓋，如果你想存取最終姿勢，請使用\ :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -630,7 +630,7 @@ Returns the pose transform of the specified bone.
 
 :ref:`Vector3<class_Vector3>` **get_bone_pose_position**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_pose_position>`
 
-Returns the pose position of the bone at ``bone_idx``. The returned :ref:`Vector3<class_Vector3>` is in the local coordinate space of the **Skeleton3D** node.
+回傳骨骼在 ``bone_idx``\ 處的姿勢位置。回傳的 :ref:`Vector3<class_Vector3>` 位於 **Skeleton3D** 節點的區域座標空間中。
 
 .. rst-class:: classref-item-separator
 
@@ -642,7 +642,7 @@ Returns the pose position of the bone at ``bone_idx``. The returned :ref:`Vector
 
 :ref:`Quaternion<class_Quaternion>` **get_bone_pose_rotation**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_pose_rotation>`
 
-Returns the pose rotation of the bone at ``bone_idx``. The returned :ref:`Quaternion<class_Quaternion>` is local to the bone with respect to the rotation of any parent bones.
+回傳 ``bone_idx`` 處骨骼的姿勢旋轉。回傳的 :ref:`Quaternion<class_Quaternion>` 是區域於該骨骼的，且相對於任何父骨骼的旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ Returns the pose rotation of the bone at ``bone_idx``. The returned :ref:`Quater
 
 :ref:`Vector3<class_Vector3>` **get_bone_pose_scale**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_pose_scale>`
 
-Returns the pose scale of the bone at ``bone_idx``.
+回傳 ``bone_idx`` 骨骼的姿勢縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -678,9 +678,9 @@ Returns the pose scale of the bone at ``bone_idx``.
 
 :ref:`StringName<class_StringName>` **get_concatenated_bone_names**\ (\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_concatenated_bone_names>`
 
-Returns all bone names concatenated with commas (``,``) as a single :ref:`StringName<class_StringName>`.
+回傳將所有骨骼名稱用英文逗號（\ ``,``\ ）連接得到的 :ref:`StringName<class_StringName>`\ 。
 
-It is useful to set it as a hint for the enum property.
+可以用作列舉屬性的提示。
 
 .. rst-class:: classref-item-separator
 
@@ -704,7 +704,7 @@ It is useful to set it as a hint for the enum property.
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_version>`
 
-返回骨骼層次結構在該骨架中更改的次數，包括重命名。
+返回骨骼層次結構在該骨架中更改的次數，包括重新命名。
 
 骨架版本沒有被序列化：只能在 Skeleton3D 的單個實例中使用。
 
@@ -720,7 +720,7 @@ It is useful to set it as a hint for the enum property.
 
 :ref:`bool<class_bool>` **has_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_has_bone_meta>`
 
-Returns ``true`` if the bone at index ``bone_idx`` has metadata with the given ``key``.
+如果索引為 ``bone_idx`` 的骨骼具有給定 ``key`` 的中繼資料，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -854,7 +854,7 @@ Returns ``true`` if the bone at index ``bone_idx`` has metadata with the given `
 
 |void| **set_bone_enabled**\ (\ bone_idx\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_enabled>`
 
-如果為 ``false`` 則為位於 ``bone_idx`` 的骨骼禁用姿勢，如果為 ``true`` 則啟用該骨骼姿勢。
+如果為 ``false`` 則為位於 ``bone_idx`` 的骨骼停用姿勢，如果為 ``true`` 則啟用該骨骼姿勢。
 
 .. rst-class:: classref-item-separator
 
@@ -866,9 +866,9 @@ Returns ``true`` if the bone at index ``bone_idx`` has metadata with the given `
 
 |void| **set_bone_global_pose**\ (\ bone_idx\: :ref:`int<class_int>`, pose\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_global_pose>`
 
-Sets the global pose transform, ``pose``, for the bone at ``bone_idx``.
+為 ``bone_idx`` 處的骨骼設定全域姿勢變換 ``pose``\ 。
 
-\ **Note:** If other bone poses have been changed, this method executes a dirty poses recalculation and will cause performance to deteriorate. If you know that multiple global poses will be applied, consider using :ref:`set_bone_pose()<class_Skeleton3D_method_set_bone_pose>` with precalculation.
+\ **注意：**\ 如果其他骨骼姿勢已更改，該方法將執行一個髒的姿勢重新計算，並會導致效能下降。如果你知道將應用多個全域姿勢，請考慮使用帶預計算的 :ref:`set_bone_pose()<class_Skeleton3D_method_set_bone_pose>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -898,7 +898,7 @@ Sets the global pose transform, ``pose``, for the bone at ``bone_idx``.
 
 |void| **set_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_meta>`
 
-Sets the metadata with the given ``key`` to ``value`` for the bone at index ``bone_idx``.
+在索引為 ``bone_idx`` 的骨骼的中繼資料中，將鍵為 ``key`` 的值設定為 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ Sets the metadata with the given ``key`` to ``value`` for the bone at index ``bo
 
 |void| **set_bone_name**\ (\ bone_idx\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_name>`
 
-Sets the bone name, ``name``, for the bone at ``bone_idx``.
+將索引號為 ``bone_idx`` 的骨骼的名稱設定為 ``name``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -936,7 +936,7 @@ Sets the bone name, ``name``, for the bone at ``bone_idx``.
 
 |void| **set_bone_pose**\ (\ bone_idx\: :ref:`int<class_int>`, pose\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_pose>`
 
-Sets the pose transform, ``pose``, for the bone at ``bone_idx``.
+將索引號為 ``bone_idx`` 的骨骼的姿勢變換設定為 ``pose``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -948,7 +948,7 @@ Sets the pose transform, ``pose``, for the bone at ``bone_idx``.
 
 |void| **set_bone_pose_position**\ (\ bone_idx\: :ref:`int<class_int>`, position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_pose_position>`
 
-Sets the pose position of the bone at ``bone_idx`` to ``position``. ``position`` is a :ref:`Vector3<class_Vector3>` describing a position local to the **Skeleton3D** node.
+將 ``bone_idx`` 處的骨骼姿勢位置設定為 ``position``\ 。\ ``position`` 是一個 :ref:`Vector3<class_Vector3>`\ ，描述區域於 **Skeleton3D** 節點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -960,7 +960,7 @@ Sets the pose position of the bone at ``bone_idx`` to ``position``. ``position``
 
 |void| **set_bone_pose_rotation**\ (\ bone_idx\: :ref:`int<class_int>`, rotation\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_pose_rotation>`
 
-Sets the pose rotation of the bone at ``bone_idx`` to ``rotation``. ``rotation`` is a :ref:`Quaternion<class_Quaternion>` describing a rotation in the bone's local coordinate space with respect to the rotation of any parent bones.
+將 ``bone_idx`` 處骨骼的姿勢旋轉設定為 ``rotation``\ 。\ ``rotation`` 是一個 :ref:`Quaternion<class_Quaternion>`\ ，描述該骨骼區域座標空間中相對於任何父骨骼的旋轉的旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ Sets the pose rotation of the bone at ``bone_idx`` to ``rotation``. ``rotation``
 
 |void| **set_bone_pose_scale**\ (\ bone_idx\: :ref:`int<class_int>`, scale\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_pose_scale>`
 
-Sets the pose scale of the bone at ``bone_idx`` to ``scale``.
+將 ``bone_idx`` 處骨骼的姿勢縮放設定為 ``scale``\ 。
 
 .. rst-class:: classref-item-separator
 

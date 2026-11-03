@@ -128,7 +128,7 @@ High-pass filter allows frequencies higher than a certain cutoff threshold and a
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
+Ganancia de las copias de reflexión temprana. Con valores más altos, las copias de reflexión temprana suenan más fuertes y resuenan durante más tiempo. El valor puede variar de 0 a 1.
 
 .. rst-class:: classref-item-separator
 

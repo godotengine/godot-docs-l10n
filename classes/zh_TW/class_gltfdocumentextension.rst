@@ -16,11 +16,11 @@ GLTFDocumentExtension
 說明
 ----
 
-Extends the functionality of the :ref:`GLTFDocument<class_GLTFDocument>` class by allowing you to run arbitrary code at various stages of glTF import or export.
+通過允許你在 glTF 匯入或匯出的各個階段執行任意程式碼，來擴充 :ref:`GLTFDocument<class_GLTFDocument>` 類的功能。
 
-To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
+要使用它，請建立一個繼承自 GLTFDocumentExtension 的新類，覆寫（override）任何你需要的方法，建立該類的實例，然後使用 :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>` 方法進行注冊。
 
-\ **Note:** All GLTFDocumentExtension classes are duplicated when beginning the import or export process. Except for configuration values, these classes must be stateless in order to function properly. If you need to store data, use the ``set_additional_data`` and ``get_additional_data`` methods in :ref:`GLTFState<class_GLTFState>` or :ref:`GLTFNode<class_GLTFNode>`.
+\ **注意：** 所有 GLTFDocumentExtension 類在開始匯入或匯出流程時都會被複製（duplication）。除了設定值之外，這些類必須是無狀態的（stateless）才能正常工作。如果你需要儲存資料，請使用 :ref:`GLTFState<class_GLTFState>` 或 :ref:`GLTFNode<class_GLTFNode>` 中的 ``set_additional_data`` 和 ``get_additional_data`` 方法。
 
 .. rst-class:: classref-introduction-group
 
@@ -102,9 +102,9 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 |void| **_convert_scene_node**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, scene_node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__convert_scene_node>`
 
-Part of the export process. This method is run after :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` and before :ref:`_export_post_convert()<class_GLTFDocumentExtension_private_method__export_post_convert>`.
+匯出過程的一部分。該方法在 :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` 之後、\ :ref:`_export_post_convert()<class_GLTFDocumentExtension_private_method__export_post_convert>` 之前執行。
 
-Runs when converting the data from a Godot scene node. This method can be used to process the Godot scene node data into a format that can be used by :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>`.
+在轉換來自 Godot 場景節點的資料時執行。該方法可用於將 Godot 場景節點的資料處理成可以被 :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>` 使用的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -116,9 +116,9 @@ Runs when converting the data from a Godot scene node. This method can be used t
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_export_get_property_list**\ (\ root_node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_get_property_list>`
 
-Runs prior to the export process. This method is run before :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` when exporting a scene from the editor, or it may not be run at all in other situations.
+在匯出過程之前執行。在編輯器中匯出場景時，該方法會在 :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` 之前執行；但在其他情況下可能完全不執行。
 
-Unlike the rest of the export methods, this does not run when calling a :ref:`GLTFDocument<class_GLTFDocument>`'s export methods in sequence with everything else, but rather runs before that entire process occurs, allowing configuration to occur beforehand, potentially minutes or hours in advance of :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. This allows extensions to decide which properties to show in the editor export settings dialog based on the contents of the scene, hiding any settings that are not relevant for that scene. The ``root_node`` parameter may be ``null``, in which case all properties should be shown.
+與其餘的匯出方法不同，這不會在按順序呼叫 :ref:`GLTFDocument<class_GLTFDocument>` 的匯出方法時執行，而是在整個過程發生之前執行，從而允許預先進行設定，可能比 :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` 提前數分鐘或數小時。這允許擴充根據場景的內容決定在編輯器匯出設定對話框中顯示哪些屬性，並隱藏對該場景不相關的任何設定。\ ``root_node`` 參數可能為 ``null``\ ，此時應顯示所有屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -130,9 +130,9 @@ Unlike the rest of the export methods, this does not run when calling a :ref:`GL
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_node**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, json\: :ref:`Dictionary<class_Dictionary>`, node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_node>`
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` and before :ref:`_export_post()<class_GLTFDocumentExtension_private_method__export_post>`. If this **GLTFDocumentExtension** is used for exporting images, this runs after :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>`.
+匯出過程的一部分。該方法在 :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之後、\ :ref:`_export_post()<class_GLTFDocumentExtension_private_method__export_post>` 之前執行。如果該 **GLTFDocumentExtension** 用於匯出影像，則會在 :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之後執行。
 
-This method can be used to modify the final JSON of each node. Data should be primarily stored in ``gltf_node`` prior to serializing the JSON, but the original Godot :ref:`Node<class_Node>` is also provided if available. ``node`` may be ``null`` if not available, such as when exporting glTF data not generated from a Godot scene.
+該方法可用於修改每個節點的最終 JSON。在序列化 JSON 之前，資料應主要被儲存在 ``gltf_node`` 中，但如果原始 Godot :ref:`Node<class_Node>` 可用，它也將被提供。\ ``node`` 不可用時可能為 ``null``\ ，例如匯出不是從 Godot 場景生成的 glTF 資料的場合。
 
 .. rst-class:: classref-item-separator
 
@@ -144,11 +144,11 @@ This method can be used to modify the final JSON of each node. Data should be pr
 
 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` **_export_object_model_property**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, node_path\: :ref:`NodePath<class_NodePath>`, godot_node\: :ref:`Node<class_Node>`, gltf_node_index\: :ref:`int<class_int>`, target_object\: :ref:`Object<class_Object>`, target_depth\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_object_model_property>`
 
-Part of the export process. Allows GLTFDocumentExtension classes to provide mappings for properties of nodes in the Godot scene tree, to JSON pointers to glTF properties, as defined by the glTF object model.
+匯出過程的一部分。允許 GLTFDocumentExtension 類為 Godot 場景樹中節點的屬性提供映射，映射到 glTF 屬性的 JSON 指針，這些屬性由 glTF 物件模型定義。
 
-Returns a :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` instance that defines how the property should be mapped. If your extension can't handle the property, return ``null`` or an instance without any JSON pointers (see :ref:`GLTFObjectModelProperty.has_json_pointers()<class_GLTFObjectModelProperty_method_has_json_pointers>`). You should use :ref:`GLTFObjectModelProperty.set_types()<class_GLTFObjectModelProperty_method_set_types>` to set the types, and set the JSON pointer(s) using the :ref:`GLTFObjectModelProperty.json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` property.
+回傳 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` 實例，定義屬性的映射方式。如果你的擴充無法處理該屬性，請回傳 ``null`` 或回傳一個沒有任何 JSON 指針的實例（見 :ref:`GLTFObjectModelProperty.has_json_pointers()<class_GLTFObjectModelProperty_method_has_json_pointers>`\ ）。你應當使用 :ref:`GLTFObjectModelProperty.set_types()<class_GLTFObjectModelProperty_method_set_types>` 來設定型別，通過 :ref:`GLTFObjectModelProperty.json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` 屬性設定 JSON 指針。
 
-The parameters provide context for the property, including the NodePath, the Godot node, the GLTF node index, and the target object. The ``target_object`` will be equal to ``godot_node`` if no sub-object can be found, otherwise it will point to a sub-object. For example, if the path is ``^"A/B/C/MeshInstance3D:mesh:surface_0/material:emission_intensity"``, it will get the node, then the mesh, and then the material, so ``target_object`` will be the :ref:`Material<class_Material>` resource, and ``target_depth`` will be 2 because 2 levels were traversed to get to the target.
+參數為屬性提供了情境，包括 NodePath、Godot 節點、GLTF 節點索引和目標物件。如果沒有找到子物件，則 ``target_object`` 等於 ``godot_node``\ ，否則將指向子物件。例如路徑為 ``^"A/B/C/MeshInstance3D:mesh:surface_0/material:emission_intensity"`` 時，會首先取得節點，然後是網格，接著是材質，因此 ``target_object`` 就是 :ref:`Material<class_Material>` 資源，而 ``target_depth`` 則為 2，因為到達目標時經過了 2 個層級。
 
 .. rst-class:: classref-item-separator
 
@@ -160,9 +160,9 @@ The parameters provide context for the property, including the NodePath, the God
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_post**\ (\ state\: :ref:`GLTFState<class_GLTFState>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_post>`
 
-Part of the export process. This method is run last, after all other parts of the export process.
+匯出過程的一部分。該方法在最後執行，在匯出過程的所有其他部分之後。
 
-This method can be used to modify the final JSON of the generated glTF file.
+該方法可用於修改生成的 glTF 檔案的最終 JSON。
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ This method can be used to modify the final JSON of the generated glTF file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_post_convert**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, root\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_post_convert>`
 
-Part of the export process. This method is run after :ref:`_convert_scene_node()<class_GLTFDocumentExtension_private_method__convert_scene_node>` and before :ref:`_export_preserialize()<class_GLTFDocumentExtension_private_method__export_preserialize>`.
+匯出過程的一部分。該方法在 :ref:`_convert_scene_node()<class_GLTFDocumentExtension_private_method__convert_scene_node>` 之後、\ :ref:`_export_preserialize()<class_GLTFDocumentExtension_private_method__export_preserialize>` 之前執行。
 
-This method can be used to modify the converted node data structures before serialization with any additional data from the scene tree.
+該方法可用於在序列化之前修改轉換後的節點資料結構，可以使用來自場景樹的任何額外資料。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +188,9 @@ This method can be used to modify the converted node data structures before seri
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_preflight**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, root\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_preflight>`
 
-Part of the export process. This method is run first, before all other parts of the export process.
+匯出過程的一部分。該方法是最先執行的，在匯出過程的所有其他部分之前。
 
-The return value is used to determine if this **GLTFDocumentExtension** instance should be used for exporting a given glTF file. If :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, the export will use this **GLTFDocumentExtension** instance. If not overridden, :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` is returned.
+回傳值用於確定該 **GLTFDocumentExtension** 實例是否應該用於匯出一個給定的 glTF 檔案。如果為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，則匯出將使用該 **GLTFDocumentExtension** 實例。如果沒有重寫則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -202,9 +202,9 @@ The return value is used to determine if this **GLTFDocumentExtension** instance
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_preserialize**\ (\ state\: :ref:`GLTFState<class_GLTFState>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_preserialize>`
 
-Part of the export process. This method is run after :ref:`_export_post_convert()<class_GLTFDocumentExtension_private_method__export_post_convert>` and before :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>`.
+匯出過程的一部分。該方法在 :ref:`_export_post_convert()<class_GLTFDocumentExtension_private_method__export_post_convert>` 之後、\ :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之前執行。
 
-This method can be used to alter the state before performing serialization. It runs every time when generating a buffer with :ref:`GLTFDocument.generate_buffer()<class_GLTFDocument_method_generate_buffer>` or writing to the file system with :ref:`GLTFDocument.write_to_filesystem()<class_GLTFDocument_method_write_to_filesystem>`.
+該方法可用於在執行序列化之前更改狀態。每次使用 :ref:`GLTFDocument.generate_buffer()<class_GLTFDocument_method_generate_buffer>` 生成緩衝區或使用 :ref:`GLTFDocument.write_to_filesystem()<class_GLTFDocument_method_write_to_filesystem>` 寫入檔案系統時，都會執行該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -216,11 +216,11 @@ This method can be used to alter the state before performing serialization. It r
 
 :ref:`Node3D<class_Node3D>` **_generate_scene_node**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, scene_parent\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__generate_scene_node>`
 
-Part of the import process. This method is run after :ref:`_import_pre_generate()<class_GLTFDocumentExtension_private_method__import_pre_generate>` and before :ref:`_import_node()<class_GLTFDocumentExtension_private_method__import_node>`.
+匯入過程的一部分。該方法在 :ref:`_import_pre_generate()<class_GLTFDocumentExtension_private_method__import_pre_generate>` 之後、\ :ref:`_import_node()<class_GLTFDocumentExtension_private_method__import_node>` 之前執行。
 
-Runs when generating a Godot scene node from a GLTFNode. The returned node will be added to the scene tree. Multiple nodes can be generated in this step if they are added as a child of the returned node.
+當從 GLTFNode 生成 Godot 場景節點時執行。回傳的節點將被新增到場景樹中。如果將多個節點新增為回傳節點的子節點，則可以在該步驟中生成這些節點。
 
-\ **Note:** The ``scene_parent`` parameter may be ``null`` if this is the single root node.
+\ **注意：**\ 如果這是單個根節點，則 ``scene_parent`` 參數可以為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Runs when generating a Godot scene node from a GLTFNode. The returned node will 
 
 :ref:`String<class_String>` **_get_image_file_extension**\ (\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__get_image_file_extension>`
 
-傳回用於將映像資料儲存到的檔案副檔名，例如\ ``".png"``\ 。如果已定義，則使用此副檔名時處理圖像，並且圖像保存到單獨的檔案中，圖像位元組將被複製到具有此副檔名的檔案中。如果設定了此選項，則應該有一個\ :ref:`ResourceImporter<class_ResourceImporter>` 類別能夠匯入該檔案。如果未定義或為空時，Godot 會將影像儲存為 PNG 檔案。
+傳回用於將映像資料儲存到的檔案副檔名，例如\ ``".png"``\ 。如果已定義，則使用此副檔名時處理影像，並且影像保存到單獨的檔案中，影像位元組將被複製到具有此副檔名的檔案中。如果設定了此選項，則應該有一個\ :ref:`ResourceImporter<class_ResourceImporter>` 類別能夠匯入該檔案。如果未定義或為空時，Godot 會將影像儲存為 PNG 檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -258,9 +258,9 @@ Runs when generating a Godot scene node from a GLTFNode. The returned node will 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_supported_extensions**\ (\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__get_supported_extensions>`
 
-Part of the import process. This method is run after :ref:`_import_preflight()<class_GLTFDocumentExtension_private_method__import_preflight>` and before :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>`.
+匯入過程的一部分。該方法在 :ref:`_import_preflight()<class_GLTFDocumentExtension_private_method__import_preflight>` 之後、\ :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之前執行。
 
-Returns an array of the glTF extensions supported by this GLTFDocumentExtension class. This is used to validate if a glTF file with required extensions can be loaded.
+回傳一個陣列，元素為該 GLTFDocumentExtension 類支援的 glTF 擴充。用於驗證是否可以載入具有所需副檔名的 glTF 檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -272,9 +272,9 @@ Returns an array of the glTF extensions supported by this GLTFDocumentExtension 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_node**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, json\: :ref:`Dictionary<class_Dictionary>`, node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_node>`
 
-匯入過程的一部分。該方法在 :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>` 之後 :ref:`_import_post()<class_GLTFDocumentExtension_private_method__import_post>` 之前運作。
+匯入過程的一部分。該方法在 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之後 :ref:`_import_post()<class_GLTFDocumentExtension_private_method__import_post>` 之前執行。
 
-該方法可用於對每個生成的 Godot 場景節點進行修改。
+該方法可用於對生成的每個 Godot 場景節點進行修改。
 
 .. rst-class:: classref-item-separator
 
@@ -286,11 +286,11 @@ Returns an array of the glTF extensions supported by this GLTFDocumentExtension 
 
 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` **_import_object_model_property**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, split_json_pointer\: :ref:`PackedStringArray<class_PackedStringArray>`, partial_paths\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_object_model_property>`
 
-Part of the import process. Allows GLTFDocumentExtension classes to provide mappings for JSON pointers to glTF properties, as defined by the glTF object model, to properties of nodes in the Godot scene tree.
+匯入過程的一部分。該功能允許 GLTFDocumentExtension 類為 JSON 指針提供映射到 glTF 屬性，這些屬性由 glTF 物件模型定義，並映射到 Godot 場景樹中節點的屬性。
 
-Returns a :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` instance that defines how the property should be mapped. If your extension can't handle the property, return ``null`` or an instance without any NodePaths (see :ref:`GLTFObjectModelProperty.has_node_paths()<class_GLTFObjectModelProperty_method_has_node_paths>`). You should use :ref:`GLTFObjectModelProperty.set_types()<class_GLTFObjectModelProperty_method_set_types>` to set the types, and :ref:`GLTFObjectModelProperty.append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>` function is useful for most simple cases.
+回傳 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` 實例，定義屬性的映射方式。如果擴充無法處理該屬性，請回傳 ``null`` 或一個沒有任何 NodePath 的實例（見 :ref:`GLTFObjectModelProperty.has_node_paths()<class_GLTFObjectModelProperty_method_has_node_paths>`\ ）。你應當使用 :ref:`GLTFObjectModelProperty.set_types()<class_GLTFObjectModelProperty_method_set_types>` 來設定型別，\ :ref:`GLTFObjectModelProperty.append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>` 函式在大多數簡單情況下非常有用。
 
-In many cases, ``partial_paths`` will contain the start of a path, allowing the extension to complete the path. For example, for ``/nodes/3/extensions/MY_ext/prop``, Godot will pass you a NodePath that leads to node 3, so the GLTFDocumentExtension class only needs to resolve the last ``MY_ext/prop`` part of the path. In this example, the extension should check ``split.size() > 4 and split[0] == "nodes" and split[2] == "extensions" and split[3] == "MY_ext"`` at the start of the function to check if this JSON pointer applies to it, then it can use ``partial_paths`` and handle ``split[4]``.
+在許多情況下，\ ``partial_paths`` 包含了路徑的起始部分，允許擴充來補全路徑。例如對於 ``/nodes/3/extensions/MY_ext/prop``\ ，Godot 會傳遞給你一個指向節點 3 的 NodePath，因此 GLTFDocumentExtension 類只需解析路徑最後的 ``MY_ext/prop`` 部分。在這個例子中，擴充應在函式開始時檢查 ``split.size() > 4 and split[0] == "nodes" and split[2] == "extensions" and split[3] == "MY_ext"``\ ，確認該 JSON 指針是否適用，然後可以使用 ``partial_paths`` 並處理 ``split[4]``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -316,9 +316,9 @@ In many cases, ``partial_paths`` will contain the start of a path, allowing the 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_post_parse**\ (\ state\: :ref:`GLTFState<class_GLTFState>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_post_parse>`
 
-Part of the import process. This method is run after :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>` and before :ref:`_import_pre_generate()<class_GLTFDocumentExtension_private_method__import_pre_generate>`.
+匯入過程的一部分。該方法在 :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之後、\ :ref:`_import_pre_generate()<class_GLTFDocumentExtension_private_method__import_pre_generate>` 之前執行。
 
-This method can be used to modify any of the data imported so far after parsing each node, but before generating the scene or any of its nodes.
+該方法可用於在解析後、生成節點並執行最終的各節點匯入步驟之前，修改到目前為止匯入的任何資料。
 
 .. rst-class:: classref-item-separator
 
@@ -330,9 +330,9 @@ This method can be used to modify any of the data imported so far after parsing 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_pre_generate**\ (\ state\: :ref:`GLTFState<class_GLTFState>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_pre_generate>`
 
-Part of the import process. This method is run after :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>` and before :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>`.
+匯入過程的一部分。該方法在 :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>` 之後、\ :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前執行。
 
-This method can be used to modify or read from any of the processed data structures, before generating the nodes and then running the final per-node import step.
+該方法可用於在解析後、生成節點並執行最終的各節點匯入步驟之前，修改到目前為止匯入的任何資料。
 
 .. rst-class:: classref-item-separator
 
@@ -344,9 +344,9 @@ This method can be used to modify or read from any of the processed data structu
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_preflight**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, extensions\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_preflight>`
 
-Part of the import process. This method is run first, before all other parts of the import process.
+匯入過程的一部分。該方法是最先執行的，在匯入過程的所有其他部分之前。
 
-The return value is used to determine if this **GLTFDocumentExtension** instance should be used for importing a given glTF file. If :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, the import will use this **GLTFDocumentExtension** instance. If not overridden, :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` is returned.
+回傳值用於確定該 **GLTFDocumentExtension** 實例是否應該用於匯入一個給定的 glTF 檔案。如果為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，則匯入將使用該 **GLTFDocumentExtension** 實例。如果沒有重寫則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -358,9 +358,9 @@ The return value is used to determine if this **GLTFDocumentExtension** instance
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_image_data**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, image_data\: :ref:`PackedByteArray<class_PackedByteArray>`, mime_type\: :ref:`String<class_String>`, ret_image\: :ref:`Image<class_Image>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__parse_image_data>`
 
-Part of the import process. This method is run after :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>` and before :ref:`_parse_texture_json()<class_GLTFDocumentExtension_private_method__parse_texture_json>`.
+匯入過程的一部分。該方法在 :ref:`_parse_node_extensions()<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之後、\ :ref:`_parse_texture_json()<class_GLTFDocumentExtension_private_method__parse_texture_json>` 之前執行。
 
-Runs when parsing image data from a glTF file. The data could be sourced from a separate file, a URI, or a buffer, and then is passed as a byte array.
+解析 glTF 檔案中的影像資料時會執行該方法。資料可以來自單獨的檔案、URI 或緩衝區，然後作為位元組陣列傳遞。
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +372,9 @@ Runs when parsing image data from a glTF file. The data could be sourced from a 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_node_extensions**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, extensions\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__parse_node_extensions>`
 
-匯入過程的一部分。該方法在 :ref:`_get_supported_extensions()<class_GLTFDocumentExtension_private_method__get_supported_extensions>` 之後和 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前運作。
+匯入過程的一部分。該方法在 :ref:`_get_supported_extensions()<class_GLTFDocumentExtension_private_method__get_supported_extensions>` 之後和 :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>` 之前執行。
 
-在解析 GLTFNode 的節點擴充時運作。該方法可用於將擴充 JSON 資料，處理成可被 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 使用的格式。該返回值應該是 :ref:`Error<enum_@GlobalScope_Error>` 列舉中的一個成員。
+在解析 GLTFNode 的節點擴充時執行。該方法可用於將擴充 JSON 資料，處理成可被 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 使用的格式。該回傳值應該是 :ref:`Error<enum_@GlobalScope_Error>` 列舉中的一個成員。
 
 .. rst-class:: classref-item-separator
 
@@ -386,9 +386,9 @@ Runs when parsing image data from a glTF file. The data could be sourced from a 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_texture_json**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, texture_json\: :ref:`Dictionary<class_Dictionary>`, ret_gltf_texture\: :ref:`GLTFTexture<class_GLTFTexture>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__parse_texture_json>`
 
-Part of the import process. This method is run after :ref:`_parse_image_data()<class_GLTFDocumentExtension_private_method__parse_image_data>` and before :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>`.
+匯入過程的一部分。該方法在 :ref:`_parse_image_data()<class_GLTFDocumentExtension_private_method__parse_image_data>` 之後、\ :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前執行。
 
-Runs when parsing the texture JSON from the glTF textures array. This can be used to set the source image index to use as the texture.
+該方法在解析 glTF 紋理陣列中的紋理 JSON 時執行。可以使用該方法設定作為紋理使用的源影像索引。
 
 .. rst-class:: classref-item-separator
 
@@ -400,9 +400,9 @@ Runs when parsing the texture JSON from the glTF textures array. This can be use
 
 :ref:`Error<enum_@GlobalScope_Error>` **_save_image_at_path**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, image\: :ref:`Image<class_Image>`, file_path\: :ref:`String<class_String>`, image_format\: :ref:`String<class_String>`, lossy_quality\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__save_image_at_path>`
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` and before :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>`.
+匯出過程的一部分。該方法在 :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之後、\ :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之前執行。
 
-This method is run when saving images separately from the glTF file. When images are embedded, :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+該方法在將影像單獨儲存到 glTF 檔案時執行。當影像為嵌入影像時會改為執行 :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>`\ 。請注意，這些方法僅在選擇該 **GLTFDocumentExtension** 作為影像匯出器時執行。
 
 .. rst-class:: classref-item-separator
 
@@ -414,11 +414,11 @@ This method is run when saving images separately from the glTF file. When images
 
 :ref:`PackedByteArray<class_PackedByteArray>` **_serialize_image_to_bytes**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, image\: :ref:`Image<class_Image>`, image_dict\: :ref:`Dictionary<class_Dictionary>`, image_format\: :ref:`String<class_String>`, lossy_quality\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>`
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` and before :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>`.
+匯出過程的一部分。該方法在 :ref:`_get_saveable_image_formats()<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之後、\ :ref:`_serialize_texture_json()<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之前執行。
 
-This method is run when embedding images in the glTF file. When images are saved separately, :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>` runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+該方法在將影像嵌入到 glTF 檔案時執行。當影像單獨儲存時，將改為執行 :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>`\ 。請注意，這些方法僅在選擇該 **GLTFDocumentExtension** 作為影像匯出器時執行。
 
-This method must set the image MIME type in the ``image_dict`` with the ``"mimeType"`` key. For example, for a PNG image, it would be set to ``"image/png"``. The return value must be a :ref:`PackedByteArray<class_PackedByteArray>` containing the image data.
+該方法必須在 ``image_dict`` 中使用 ``"mimeType"`` 鍵設定影像的 MIME 型別。例如對於 PNG 影像，應該設定為 ``"image/png"``\ 。回傳值必須是一個包含影像資料的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 

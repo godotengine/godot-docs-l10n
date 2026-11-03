@@ -14,11 +14,11 @@ UDPServer
 說明
 ----
 
-A simple server that opens a UDP socket and returns connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` upon receiving new packets. See also :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
+簡易伺服器，會打開 UDP 套接字，並在收到新封包時回傳已連接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 。另見 :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ 。
 
-After starting the server (:ref:`listen()<class_UDPServer_method_listen>`), you will need to :ref:`poll()<class_UDPServer_method_poll>` it at regular intervals (e.g. inside :ref:`Node._process()<class_Node_private_method__process>`) for it to process new packets, delivering them to the appropriate :ref:`PacketPeerUDP<class_PacketPeerUDP>`, and taking new connections.
+伺服器啟動後（\ :ref:`listen()<class_UDPServer_method_listen>`\ ），你需要呼叫 :ref:`poll()<class_UDPServer_method_poll>` 按照一定的間隔輪詢（例如在 :ref:`Node._process()<class_Node_private_method__process>` 中）才能處理新封包、將它們傳遞給合適的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 、取得新連接。
 
-Below a small example of how it can be used:
+下面是簡單的用法範例：
 
 
 .. tabs::
@@ -36,19 +36,19 @@ Below a small example of how it can be used:
         server.listen(4242)
 
     func _process(delta):
-        server.poll() # Important!
+        server.poll() # 重要！
         if server.is_connection_available():
             var peer = server.take_connection()
             var packet = peer.get_packet()
-            print("Accepted peer: %s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
-            print("Received data: %s" % [packet.get_string_from_utf8()])
-            # Reply so it knows we received the message.
+            print("接受對等端：%s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
+            print("接收到資料：%s" % [packet.get_string_from_utf8()])
+            # 進行回復，這樣對方就知道我們收到了訊息。
             peer.put_packet(packet)
-            # Keep a reference so we can keep contacting the remote peer.
+            # 保持參照，這樣我們就能繼續與遠端對等端聯繫。
             peers.append(peer)
 
         for i in range(0, peers.size()):
-            pass # Do something with the connected peers.
+            pass # 針對已連接的對等端進行操作。
 
  .. code-tab:: csharp
 
@@ -68,21 +68,21 @@ Below a small example of how it can be used:
 
         public override void _Process(double delta)
         {
-            _server.Poll(); // Important!
+            _server.Poll(); // 重要！
             if (_server.IsConnectionAvailable())
             {
                 PacketPeerUdp peer = _server.TakeConnection();
                 byte[] packet = peer.GetPacket();
-                GD.Print($"Accepted Peer: {peer.GetPacketIP()}:{peer.GetPacketPort()}");
-                GD.Print($"Received Data: {packet.GetStringFromUtf8()}");
-                // Reply so it knows we received the message.
+                GD.Print($"接受對等端：{peer.GetPacketIP()}:{peer.GetPacketPort()}");
+                GD.Print($"接收到資料：{packet.GetStringFromUtf8()}");
+                // 進行回復，這樣對方就知道我們收到了訊息。
                 peer.PutPacket(packet);
-                // Keep a reference so we can keep contacting the remote peer.
+                // 保持參照，這樣我們就能繼續與遠端對等端聯繫。
                 _peers.Add(peer);
             }
             foreach (var peer in _peers)
             {
-                // Do something with the peers.
+                // 針對已連接的對等端進行操作。
             }
         }
     }
@@ -106,10 +106,10 @@ Below a small example of how it can be used:
 
     func _process(delta):
         if !connected:
-            # Try to contact server
-            udp.put_packet("The answer is... 42!".to_utf8_buffer())
+            # 嘗試連接伺服器
+            udp.put_packet("答案是……42！".to_utf8_buffer())
         if udp.get_available_packet_count() > 0:
-            print("Connected: %s" % udp.get_packet().get_string_from_utf8())
+            print("已連接：%s" % udp.get_packet().get_string_from_utf8())
             connected = true
 
  .. code-tab:: csharp
@@ -131,12 +131,12 @@ Below a small example of how it can be used:
         {
             if (!_connected)
             {
-                // Try to contact server
-                _udp.PutPacket("The Answer Is..42!".ToUtf8Buffer());
+                // 嘗試聯繫伺服器
+                _udp.PutPacket("答案是……42！".ToUtf8Buffer());
             }
             if (_udp.GetAvailablePacketCount() > 0)
             {
-                GD.Print($"Connected: {_udp.GetPacket().GetStringFromUtf8()}");
+                GD.Print($"已連接：{_udp.GetPacket().GetStringFromUtf8()}");
                 _connected = true;
             }
         }
@@ -265,7 +265,7 @@ Below a small example of how it can be used:
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_UDPServer_method_poll>`
 
-Call this method at regular intervals (e.g. inside :ref:`Node._process()<class_Node_private_method__process>`) to process new packets. Any packet from a known address/port pair will be delivered to the appropriate :ref:`PacketPeerUDP<class_PacketPeerUDP>`, while any packet received from an unknown address/port pair will be added as a pending connection (see :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>` and :ref:`take_connection()<class_UDPServer_method_take_connection>`). The maximum number of pending connections is defined via :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`.
+定期呼叫這個方法（例如在 :ref:`Node._process()<class_Node_private_method__process>` 中）處理新封包。來自已知位址、連接埠對的封包將被傳遞到相應的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ，任何從未知位址、連接埠對收到的封包將被新增為待定的連接（見 :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`\ 、\ :ref:`take_connection()<class_UDPServer_method_take_connection>`\ ）。待定連接的最大數量由 :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>` 定義。
 
 .. rst-class:: classref-item-separator
 

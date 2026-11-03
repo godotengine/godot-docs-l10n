@@ -7,7 +7,7 @@ OpenXRFutureExtension
 
 **Hereda:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-La extensión OpenXR Future permite el uso de APIs asíncronas.
+La extensión OpenXR Future permite el uso de API asíncronas.
 
 .. rst-class:: classref-introduction-group
 

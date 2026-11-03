@@ -14,9 +14,9 @@ UPNP
 說明
 ----
 
-This class can be used to discover compatible :ref:`UPNPDevice<class_UPNPDevice>`\ s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
+這個類可以用來在本機網路中發現相容的 :ref:`UPNPDevice<class_UPNPDevice>`\ （UPNP 裝置），並對它們執行命令，比如管理連接埠映射（用於連接埠轉發 / NAT 穿透）以及查詢本機和遠端網路的 IP 位址。需要注意的是，這個類中的方法都是同步的，並且會阻塞（卡住）呼叫它的執行緒。
 
-To forward a specific port (here ``7777``, note both :ref:`discover()<class_UPNP_method_discover>` and :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` can return errors that should be checked):
+要轉發一個特定的連接埠（這裡是 ``7777``\ ，注意 :ref:`discover()<class_UPNP_method_discover>` 和 :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` 都有可能回傳錯誤，程式碼中應該對這些錯誤進行檢查）：
 
 ::
 
@@ -34,10 +34,10 @@ To close a specific port (e.g. after you have finished using it):
 
 ::
 
-    # Emitted when UPnP port mapping setup is completed (regardless of success or failure).
+    # 當 UPnP 連接埠映射設定完成時發出該訊號（無論成功還是失敗）。
     signal upnp_completed(error)
 
-    # Replace this with your own server port number between 1024 and 65535.
+    # 請將其替換為你自己的伺服器連接埠號（範圍在 1024 到 65535 之間）。
     const SERVER_PORT = 3928
     var thread = null
 
@@ -61,24 +61,24 @@ To close a specific port (e.g. after you have finished using it):
         thread.start(_upnp_setup.bind(SERVER_PORT))
 
     func _exit_tree():
-        # Wait for thread finish here to handle game exit while the thread is running.
+        # 在此處等待執行緒執行完畢，以便線上程仍在執行時妥善處理遊戲退出。
         thread.wait_to_finish()
 
-\ **Terminology:** In the context of UPnP networking, "gateway" (or "internet gateway device", short IGD) refers to network devices that allow computers in the local network to access the internet ("wide area network", WAN). These gateways are often also called "routers".
+\ **術語說明：** 在 UPnP 網路的語境中，“網關”（或稱“互連網網關裝置”，簡稱 IGD）指的是那些允許本機網路中的電腦存取互連網（即“廣域網”，WAN）的網路裝置。這些網關通常也被稱為“路由器”。
 
-\ **Pitfalls:**\ 
+\ **常見陷阱：**\ 
 
-- As explained above, these calls are blocking and shouldn't be run on the main thread, especially as they can block for multiple seconds at a time. Use threading!
+正如上文所述，這些呼叫都是阻塞式的，因此不應該在主執行緒上執行，尤其是考慮到它們可能會一次性卡住好幾秒鐘。請務必使用多執行緒！
 
-- Networking is physical and messy. Packets get lost in transit or get filtered, addresses, free ports and assigned mappings change, and devices may leave or join the network at any time. Be mindful of this, be diligent when checking and handling errors, and handle these gracefully if you can: add clear error UI, timeouts and re-try handling.
+網路環境是物理層面的，且充滿了各種不確定性。封包在傳輸中可能會丟失或被過濾，IP 位址、空閒連接埠以及已分配的映射關係隨時可能發生變化，裝置也可能隨時加入或離開網路。請務必考慮到這些因素，在檢查和處理錯誤時要格外仔細；如果可能的話，請優雅地應對這些問題：提供清晰的錯誤提示介面（UI），並設定超時與重試機制。
 
-- Port mappings may change (and be removed) at any time, and the remote/external IP address of the gateway can change likewise. You should consider re-querying the external IP and try to update/refresh the port mapping periodically (for example, every 5 minutes and on networking failures).
+連接埠映射隨時可能發生變化（甚至被移除），同樣地，網關的遠端/外部 IP 位址也可能發生改變。你應該考慮定期重新查詢外部 IP，並嘗試更新/刷新連接埠映射（例如，每隔 5 分鐘以及在發生網路故障時進行更新）。
 
-- Not all devices support UPnP, and some users disable UPnP support. You need to handle this (e.g. documenting and requiring the user to manually forward ports, or adding alternative methods of NAT traversal, like a relay/mirror server, or NAT hole punching, STUN/TURN, etc.).
+並非所有的裝置都支援 UPnP，而且有些使用者會主動停用 UPnP 功能。你需要對此做好應對準備（例如，在文件中說明並讓使用者手動轉發連接埠，或者加入其他替代的 NAT 穿透方法，比如使用中繼/鏡像伺服器、NAT 打洞、STUN/TURN 等）。
 
-- Consider what happens on mapping conflicts. Maybe multiple users on the same network would like to play your game at the same time, or maybe another application uses the same port. Make the port configurable, and optimally choose a port automatically (re-trying with a different port on failure).
+請考慮發生映射衝突時會發生甚麼。也許同一個網路下的多個使用者想要同時玩你的遊戲，或者也許有其他應用程式佔用了同一個連接埠。請將連接埠設定為可設定的，並且最好能自動選擇一個連接埠（在失敗時嘗試使用不同的連接埠進行重試）。
 
-\ **Further reading:** If you want to know more about UPnP (and the Internet Gateway Device (IGD) and Port Control Protocol (PCP) specifically), `Wikipedia <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ is a good first stop, the specification can be found at the `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ and Godot's implementation is based on the `MiniUPnP client <https://github.com/miniupnp/miniupnp>`__.
+\ **拓展閱讀：** 如果你想瞭解更多關於 UPnP（特別是互連網網關裝置 IGD 和連接埠控制協議 PCP）的資訊，\ `維基百科 <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ 是一個不錯的入門站點；相關規範可以在 `開放連接基金會（Open Connectivity Foundation） <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ 找到；而 Godot 的實作則是基於 `MiniUPnP 用戶端 <https://github.com/miniupnp/miniupnp>`__\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -157,7 +157,7 @@ UPNP 命令或發現成功。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NOT_AUTHORIZED** = ``1``
 
-未授權在 :ref:`UPNPDevice<class_UPNPDevice>` 上使用該命令。當使用者在其路由器上禁用 UPNP 時，可能會被返回。
+未授權在 :ref:`UPNPDevice<class_UPNPDevice>` 上使用該命令。當使用者在其路由器上停用 UPNP 時，可能會被返回。
 
 .. _class_UPNP_constant_UPNP_RESULT_PORT_MAPPING_NOT_FOUND:
 
@@ -181,7 +181,7 @@ UPNP 命令或發現成功。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NO_SUCH_ENTRY_IN_ARRAY** = ``4``
 
-No such entry in array. May be returned if a given port, protocol combination is not found on a :ref:`UPNPDevice<class_UPNPDevice>`.
+陣列中沒有此條目。可能在 :ref:`UPNPDevice<class_UPNPDevice>` 上沒有找到給定的連接埠、協議組合時回傳。
 
 .. _class_UPNP_constant_UPNP_RESULT_ACTION_FAILED:
 
@@ -458,7 +458,7 @@ HTTP 錯誤。
 
 :ref:`int<class_int>` **add_port_mapping**\ (\ port\: :ref:`int<class_int>`, port_internal\: :ref:`int<class_int>` = 0, desc\: :ref:`String<class_String>` = "", proto\: :ref:`String<class_String>` = "UDP", duration\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_UPNP_method_add_port_mapping>`
 
-新增對應，針對給定的協議 ``proto``\ （\ ``"TCP"`` 或 ``"UDP"``\ ，預設為 UDP），將預設閘道器（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）上的外部埠 ``port``\ （在 1 到 65535 之間，不過推薦使用 1024 以上的埠）對應到本機上的內部埠 ``port_internal``\ 。如果該閘道上已經存在給定的埠與協議的組合，這個方法會嘗試進行覆蓋。如果不希望如此，你可以使用 :ref:`get_gateway()<class_UPNP_method_get_gateway>` 手動獲取閘道，獲取到後呼叫其 :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` 方法。請注意，使用 UPnP 轉發公認埠（1024 以下）在有些裝置上可能會失敗。
+新增對應，針對給定的協議 ``proto``\ （\ ``"TCP"`` 或 ``"UDP"``\ ，預設為 UDP），將預設閘道器（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）上的外部埠 ``port``\ （在 1 到 65535 之間，不過推薦使用 1024 以上的埠）對應到本機上的內部埠 ``port_internal``\ 。如果該閘道上已經存在給定的埠與協議的組合，這個方法會嘗試進行覆蓋。如果不希望如此，你可以使用 :ref:`get_gateway()<class_UPNP_method_get_gateway>` 手動取得閘道，取得到後呼叫其 :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` 方法。請注意，使用 UPnP 轉發公認埠（1024 以下）在有些裝置上可能會失敗。
 
 如果埠的對應已存在，有些閘道裝置可能會對其進行更新，有些則會因為衝突而拒絕這個命令，尤其當現有埠對應不是由 UPnP 建立的，或者指向的是別的網路位址（或裝置）的時候。
 
@@ -466,7 +466,7 @@ HTTP 錯誤。
 
 描述（\ ``desc``\ ）會顯示在一些路由器的管理介面上，可以用來識別新增對應的程序。
 
-對應的租賃時長 ``duration`` 可以通過指定秒數來限定。預設的 ``0`` 表示沒有時長，即永久租賃，有些裝置只支援這種永久租賃。請注意，無論是否永久都只是一種請求，閘道仍然可以隨時移除對應（通常發生在重啟閘道後外部 IP 地址發生變化時，也有些型號會在對應不再活動，即若干分鐘無流量時移除）。如果非 ``0``\ （永久），技術規格所允許的範圍是 ``120``\ （2 分鐘）到 ``86400`` 秒（24 小時）。
+對應的租賃時長 ``duration`` 可以通過指定秒數來限定。預設的 ``0`` 表示沒有時長，即永久租賃，有些裝置只支援這種永久租賃。請注意，無論是否永久都只是一種請求，閘道仍然可以隨時移除對應（通常發生在重新啟動閘道後外部 IP 地址發生變化時，也有些型號會在對應不再活動，即若干分鐘無流量時移除）。如果非 ``0``\ （永久），技術規格所允許的範圍是 ``120``\ （2 分鐘）到 ``86400`` 秒（24 小時）。
 
 可能的返回值見 :ref:`UPNPResult<enum_UPNP_UPNPResult>`\ 。
 
@@ -556,7 +556,7 @@ HTTP 錯誤。
 
 :ref:`String<class_String>` **query_external_address**\ (\ ) |const| :ref:`🔗<class_UPNP_method_query_external_address>`
 
-返回預設閘道器的外部 :ref:`IP<class_IP>` 位址字串（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）。錯誤時返回空字符串。
+返回預設閘道器的外部 :ref:`IP<class_IP>` 位址字串（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）。錯誤時返回空字串。
 
 .. rst-class:: classref-item-separator
 

@@ -16,13 +16,13 @@ Resource
 說明
 ----
 
-Resource is the base class for all Godot-specific resource types, serving primarily as data containers. Since they inherit from :ref:`RefCounted<class_RefCounted>`, resources are reference-counted and freed when no longer in use. They can also be nested within other resources, and saved on disk. :ref:`PackedScene<class_PackedScene>`, one of the most common :ref:`Object<class_Object>`\ s in a Godot project, is also a resource, uniquely capable of storing and instantiating the :ref:`Node<class_Node>`\ s it contains as many times as desired.
+資源是所有 Godot 特定資源型別的基底類別，主要作為資料容器。因為資源繼承自 :ref:`RefCounted<class_RefCounted>`\ ，所以進行了參照計數，不再使用時會被釋放。資源也可以巢狀到其他資源里、儲存到磁碟上。\ :ref:`PackedScene<class_PackedScene>` 也是一種資源，它是 Godot 專案中最常用的 :ref:`Object<class_Object>` 之一，獨特的能力是可以將若干 :ref:`Node<class_Node>` 儲存起來、隨意進行實例化。
 
-In GDScript, resources can loaded from disk by their :ref:`resource_path<class_Resource_property_resource_path>` using :ref:`@GDScript.load()<class_@GDScript_method_load>` or :ref:`@GDScript.preload()<class_@GDScript_method_preload>`.
+在 GDScript 中，可以根據 :ref:`resource_path<class_Resource_property_resource_path>` 從磁碟上載入資源，使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 或 :ref:`@GDScript.preload()<class_@GDScript_method_preload>` 即可。
 
-The engine keeps a global cache of all loaded resources, referenced by paths (see :ref:`ResourceLoader.has_cached()<class_ResourceLoader_method_has_cached>`). A resource will be cached when loaded for the first time and removed from cache once all references are released. When a resource is cached, subsequent loads using its path will return the cached reference.
+引擎會維護所有已載入資源的全域快取，可以根據路徑參照資源（見 :ref:`ResourceLoader.has_cached()<class_ResourceLoader_method_has_cached>`\ ）。資源會在首次載入時快取，所有參照釋放後就會從快取中移除。如果快取中存在某個資源，那麼後續使用其路徑進行載入的時候回傳的就是快取中的參照。
 
-\ **Note:** In C#, resources will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free resources that are no longer in use. This means that unused resources will remain in memory for a while before being removed.
+\ **注意：**\ 在 C# 中，資源不再被使用後並不會立即被釋放。相反，垃圾回收將定期執行，並釋放不再使用的資源。這意味著未使用的資源在被刪除之前會在記憶體中保留一段時間。
 
 .. rst-class:: classref-introduction-group
 
@@ -128,7 +128,7 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 **已棄用：** This signal is only emitted when the resource is created. Override :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>` instead.
 
-Emitted by a newly duplicated resource with :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` set to ``true``.
+由新複製的 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 為 ``true`` 的資源發出。
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
+完全不會複製任何子資源（subresources）。即使在執行深度複製時，這也非常有用，因為它能讓所有的陣列和字典都被成功複製，但裡面的元素依然指向原本的那些資源。
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -159,7 +159,7 @@ No subresources at all are duplicated. This is useful even in a deep duplication
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_INTERNAL** = ``1``
 
-Only subresources without a path or with a scene-local path will be duplicated.
+僅複製不具備路徑的子資源以及使用場景在地化路徑的子資源。
 
 .. _class_Resource_constant_DEEP_DUPLICATE_ALL:
 
@@ -167,7 +167,7 @@ Only subresources without a path or with a scene-local path will be duplicated.
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_ALL** = ``2``
 
-Every subresource found will be duplicated, even if it has a non-local path. In other words, even potentially big resources stored separately will be duplicated.
+複製所有子資源，即便使用的是非本機路徑。換句話說，即便是單獨儲存的大型資源也會複製。
 
 .. rst-class:: classref-section-separator
 
@@ -252,13 +252,13 @@ Every subresource found will be duplicated, even if it has a non-local path. In 
 - |void| **set_scene_unique_id**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_unique_id**\ (\ )
 
-A unique identifier relative to this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a :ref:`PackedScene<class_PackedScene>`. If the resource is not inside a scene, this property is empty by default.
+一個相對於該資源所屬場景的唯一標識符。如果留空，當此資源被儲存在一個 :ref:`PackedScene<class_PackedScene>`\ （打包場景）中時，ID 將會被自動生成。如果該資源不屬於任何場景，此屬性預設為空。
 
-\ **Note:** When the :ref:`PackedScene<class_PackedScene>` is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
+\ **注意：** 當儲存 :ref:`PackedScene<class_PackedScene>` 時，如果同一場景中的多個資源使用了相同的 ID，只有場景層級中最早出現的那個資源會保留原 ID。其他重複的資源會被分配由 :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>` 方法生成的新 ID。
 
-\ **Note:** Setting this property does not emit the :ref:`changed<class_Resource_signal_changed>` signal.
+\ **注意：** 設定此屬性不會觸發 :ref:`changed<class_Resource_signal_changed>`\ （已更改）訊號。
 
-\ **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
+\ **警告：** 在設定時，該 ID 必須僅由字母、數字和底線組成。否則設定將失敗，並預設回退為一個隨機生成的 ID。
 
 .. rst-class:: classref-section-separator
 
@@ -287,7 +287,7 @@ A unique identifier relative to this resource's scene. If left empty, the ID is 
 
 |void| **_reset_state**\ (\ ) |virtual| :ref:`🔗<class_Resource_private_method__reset_state>`
 
-For resources that store state in non-exported properties, such as via :ref:`Object._validate_property()<class_Object_private_method__validate_property>` or :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, this method must be implemented to clear them.
+如果資源在未匯出的屬性中儲存狀態，例如通過 :ref:`Object._validate_property()<class_Object_private_method__validate_property>` 或 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 儲存，則必須實作該方法進行狀態的清空。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ For resources that store state in non-exported properties, such as via :ref:`Obj
 
 |void| **_set_path_cache**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Resource_private_method__set_path_cache>`
 
-Override this method to execute additional logic after :ref:`set_path_cache()<class_Resource_method_set_path_cache>` is called on this object.
+可以覆蓋此方法，從而在物件的 :ref:`set_path_cache()<class_Resource_method_set_path_cache>` 被呼叫後執行額外的邏輯。
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ Override this method to execute additional logic after :ref:`set_path_cache()<cl
 
 |void| **_setup_local_to_scene**\ (\ ) |virtual| :ref:`🔗<class_Resource_private_method__setup_local_to_scene>`
 
-Override this method to customize the newly duplicated resource created from :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, if the original's :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true``.
+如果原始資源的 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 被設定為 ``true``\ ，則覆蓋該方法可以自訂從 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 建立的新複製的資源。
 
-\ **Example:** Set a random ``damage`` value to every local resource from an instantiated scene:
+\ **範例：**\ 為實例化場景中的每個本機資源設定隨機 ``damage`` 值：
 
 ::
 
@@ -334,7 +334,7 @@ Override this method to customize the newly duplicated resource created from :re
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy_from_resource**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_Resource_method_copy_from_resource>`
 
-Copies the data from ``resource`` into this resource. Both resources must share the same class.
+將資料從 ``resource`` 複製到此資源中。兩個資源必須屬於同一類別（class）。
 
 .. rst-class:: classref-item-separator
 
@@ -346,21 +346,21 @@ Copies the data from ``resource`` into this resource. Both resources must share 
 
 :ref:`Resource<class_Resource>` **duplicate**\ (\ deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Resource_method_duplicate>`
 
-Duplicates this resource, returning a new resource with its ``export``\ ed or :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` properties copied from the original.
+製作該資源的副本，回傳資源中，\ ``export`` 的屬性以及 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 的屬性都會從原始資源中複製。
 
-If ``deep`` is ``false``, a **shallow** copy is returned: nested :ref:`Array<class_Array>`, :ref:`Dictionary<class_Dictionary>`, and **Resource** properties are not duplicated and are shared with the original resource.
+如果 ``deep`` 為 ``false``\ ，則會回傳\ **淺拷貝**\ ：巢狀的 :ref:`Array<class_Array>`\ 、\ :ref:`Dictionary<class_Dictionary>`\ 、\ **Resource** 屬性不會發生複製，與原資源共享。
 
-If ``deep`` is ``true``, a **deep** copy is returned: all nested arrays, dictionaries, and packed arrays are also duplicated (recursively). Any **Resource** found inside will only be duplicated if it's local, like :ref:`DEEP_DUPLICATE_INTERNAL<class_Resource_constant_DEEP_DUPLICATE_INTERNAL>` used with :ref:`duplicate_deep()<class_Resource_method_duplicate_deep>`.
+如果 ``deep`` 為 ``true``\ ，則會回傳\ **深拷貝**\ ：巢狀的陣列、字典和緊縮陣列都會發生（遞歸）複製。內部的 **Resource** 只會在本機時進行複製，類似於對 :ref:`duplicate_deep()<class_Resource_method_duplicate_deep>` 使用 :ref:`DEEP_DUPLICATE_INTERNAL<class_Resource_constant_DEEP_DUPLICATE_INTERNAL>`\ 。
 
-The following exceptions apply:
+例外如下：
 
-- Subresource properties with the :ref:`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE>` flag are always duplicated (recursively or not, depending on ``deep``).
+- 帶有 :ref:`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE>` 標誌的子資源屬性始終會被複製（是否遞歸取決於 ``deep``\ ）。
 
-- Subresource properties with the :ref:`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE>` flag are never duplicated.
+- 帶有 :ref:`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE>` 標誌的子資源屬性始終不會被複製。
 
-\ **Note:** For custom resources, this method will fail if :ref:`Object._init()<class_Object_private_method__init>` has been defined with required parameters.
+\ **注意：**\ 對於自訂資源，如果定義 :ref:`Object._init()<class_Object_private_method__init>` 時使用了必填的參數，則此方法會失敗。
 
-\ **Note:** When duplicating with ``deep`` set to ``true``, each resource found, including the one on which this method is called, will be only duplicated once and referenced as many times as needed in the duplicate. For instance, if you are duplicating resource A that happens to have resource B referenced twice, you'll get a new resource A' referencing a new resource B' twice.
+\ **注意：**\ 複製時如果將 ``deep`` 設定為 ``true``\ ，則在複製過程中發現的每個資源，包括呼叫該方法的資源，都只會發生一次複製，在副本中可以對其存在多次參照。例如你複製的資源 A 里正好對資源 B 存在兩個參照，那麼新的資源 A' 就會參照新的資源 B' 兩次。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ The following exceptions apply:
 
 :ref:`Resource<class_Resource>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` = 1\ ) |const| :ref:`🔗<class_Resource_method_duplicate_deep>`
 
-Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+深度複製該資源，就像傳遞 ``true`` 時 :ref:`duplicate()<class_Resource_method_duplicate>` 一樣，並對子資源的處理方式進行額外控制。
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`String<class_String>` **generate_scene_unique_id**\ (\ ) |static| :ref:`🔗<class_Resource_method_generate_scene_unique_id>`
 
-Generates a unique identifier for a resource to be contained inside a :ref:`PackedScene<class_PackedScene>`, based on the current date, time, and a random value. The returned string is only composed of letters (``a`` to ``y``) and numbers (``0`` to ``8``). See also :ref:`resource_scene_unique_id<class_Resource_property_resource_scene_unique_id>`.
+根據目前日期、時間和隨機值，為要包含在 :ref:`PackedScene<class_PackedScene>` 中的資源生成唯一標識符。回傳的字串僅由字母（\ ``a`` 到 ``y``\ ）和數字（\ ``0`` 到 ``8``\ ）組成。另見 :ref:`resource_scene_unique_id<class_Resource_property_resource_scene_unique_id>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -418,9 +418,9 @@ Generates a unique identifier for a resource to be contained inside a :ref:`Pack
 
 :ref:`String<class_String>` **get_id_for_path**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Resource_method_get_id_for_path>`
 
-From the internal cache for scene-unique IDs, returns the ID of this resource for the scene at ``path``. If there is no entry, an empty string is returned. Useful to keep scene-unique IDs the same when implementing a VCS-friendly custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
+根據場景唯一 ID 的內部快取，回傳位於 ``path`` 的場景中該資源的 ID。如果沒有對應的條目則回傳空字串。適用於擴充 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 實作對版本控制系統友好的自訂資源格式時保持場景唯一 ID 一致。
 
-\ **Note:** This method is only implemented when running in an editor context. At runtime, it returns an empty string.
+\ **注意：**\ 該方法僅在執行於編輯器情境時實作。執行時回傳空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ From the internal cache for scene-unique IDs, returns the ID of this resource fo
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_Resource_method_get_rid>`
 
-返回該資源的 :ref:`RID<class_RID>`\ （或者空的 RID）。許多資源（如 :ref:`Texture2D<class_Texture2D>`\ 、\ :ref:`Mesh<class_Mesh>` 等）是存儲在伺服器（\ :ref:`DisplayServer<class_DisplayServer>`\ 、\ :ref:`RenderingServer<class_RenderingServer>` 等）中的資源的高級抽象，所以這個函式將返回原始的 :ref:`RID<class_RID>`\ 。
+返回該資源的 :ref:`RID<class_RID>`\ （或者空的 RID）。許多資源（如 :ref:`Texture2D<class_Texture2D>`\ 、\ :ref:`Mesh<class_Mesh>` 等）是儲存在伺服器（\ :ref:`DisplayServer<class_DisplayServer>`\ 、\ :ref:`RenderingServer<class_RenderingServer>` 等）中的資源的進階抽象，所以這個函式將返回原始的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ From the internal cache for scene-unique IDs, returns the ID of this resource fo
 
 :ref:`bool<class_bool>` **is_built_in**\ (\ ) |const| :ref:`🔗<class_Resource_method_is_built_in>`
 
-Returns ``true`` if the resource is saved on disk as a part of another resource's file.
+如果資源是作為其他資源檔案中的一部分儲存到磁碟上的，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Returns ``true`` if the resource is saved on disk as a part of another resource'
 
 |void| **reset_state**\ (\ ) :ref:`🔗<class_Resource_method_reset_state>`
 
-Makes the resource clear its non-exported properties. See also :ref:`_reset_state()<class_Resource_private_method__reset_state>`. Useful when implementing a custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
+清空資源中未匯出的屬性。另見 :ref:`_reset_state()<class_Resource_private_method__reset_state>`\ 。適合在通過擴充 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 實作自訂資源格式時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -480,9 +480,9 @@ Makes the resource clear its non-exported properties. See also :ref:`_reset_stat
 
 |void| **set_id_for_path**\ (\ path\: :ref:`String<class_String>`, id\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_set_id_for_path>`
 
-In the internal cache for scene-unique IDs, sets the ID of this resource to ``id`` for the scene at ``path``. If ``id`` is empty, the cache entry for ``path`` is cleared. Useful to keep scene-unique IDs the same when implementing a VCS-friendly custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
+場景唯一 ID 的內部快取，針對位於 ``path`` 的場景將該資源的 ID 設定為 ``id``\ 。如果 ``id`` 為空，則會清空 ``path`` 對應的快取條目。適用於擴充 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 實作對版本控制系統友好的自訂資源格式時保持場景唯一 ID 一致。
 
-\ **Note:** This method is only implemented when running in an editor context.
+\ **注意：**\ 該方法僅在執行於編輯器情境時實作。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ In the internal cache for scene-unique IDs, sets the ID of this resource to ``id
 
 |void| **set_path_cache**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_set_path_cache>`
 
-Sets the resource's path to ``path`` without involving the resource cache. Useful for handling :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` values when implementing a custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
+將資源的路徑設定為 ``path``\ ，不涉及資源快取。適用於擴充 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 實作自訂資源格式時處理 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Sets the resource's path to ``path`` without involving the resource cache. Usefu
 
 **已棄用：** This method should only be called internally.
 
-Calls :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>`. If :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true``, this method is automatically called from :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` by the newly duplicated resource within the scene instance.
+呼叫 :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>`\ 。如果 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 為 ``true``\ ，則場景實例中新複製的資源會自動從 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 中呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Calls :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_t
 
 |void| **take_over_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_take_over_path>`
 
-將 :ref:`resource_path<class_Resource_property_resource_path>` 設定為 ``path``\ ，可能會覆蓋這個路徑對應的已有緩存條目。後續嘗試通過路徑載入覆蓋後的資源時，會返回這個資源。
+將 :ref:`resource_path<class_Resource_property_resource_path>` 設定為 ``path``\ ，可能會覆蓋這個路徑對應的已有快取條目。後續嘗試通過路徑載入覆蓋後的資源時，會返回這個資源。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

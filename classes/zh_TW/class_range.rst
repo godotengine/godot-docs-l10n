@@ -97,7 +97,7 @@ Range 是代表特定範圍內數位的控制項的抽象基底類別，能夠�
 
 :ref:`value<class_Range_property_value>` 更改時發出。在 :ref:`Slider<class_Slider>` 上使用時，會在拖動時連續呼叫（可能是每一影格）。如果在連接到 :ref:`value_changed<class_Range_signal_value_changed>` 的函式中執行昂貴的操作，請考慮使用\ *去除抖動* :ref:`Timer<class_Timer>` 來減少呼叫該函式的頻率。
 
-\ **注意：**\ 與 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 等訊號不同，當直接通過程式碼設置 ``value`` 時，\ :ref:`value_changed<class_Range_signal_value_changed>` 仍會發出。
+\ **注意：**\ 與 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 等訊號不同，當直接通過程式碼設定 ``value`` 時，\ :ref:`value_changed<class_Range_signal_value_changed>` 仍會發出。
 
 .. rst-class:: classref-section-separator
 
@@ -153,7 +153,7 @@ Range 是代表特定範圍內數位的控制項的抽象基底類別，能夠�
 - |void| **set_exp_ratio**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ratio_exp**\ (\ )
 
-If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or equal to ``0``, :ref:`value<class_Range_property_value>` will be represented exponentially rather than linearly.
+如果為 ``true``\ ，並且 :ref:`min_value<class_Range_property_min_value>` 大於等於 ``0``\ ，則 :ref:`value<class_Range_property_value>` 將以指數方式而不是線性方式表示。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or 
 - |void| **set_page**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_page**\ (\ )
 
-Page size. Used mainly for :ref:`ScrollBar<class_ScrollBar>`. A :ref:`ScrollBar<class_ScrollBar>`'s grabber length is the :ref:`ScrollBar<class_ScrollBar>`'s size multiplied by :ref:`page<class_Range_property_page>` over the difference between :ref:`min_value<class_Range_property_min_value>` and :ref:`max_value<class_Range_property_max_value>`.
+頁面大小。主要用於 :ref:`ScrollBar<class_ScrollBar>`\ （捲動條）。捲動條滑塊（grabber）的長度，等於捲動條的總尺寸乘以 :ref:`page<class_Range_property_page>`\ （頁面大小），再除以 :ref:`min_value<class_Range_property_min_value>`\ （最小值）與 :ref:`max_value<class_Range_property_max_value>`\ （最大值）之差。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Page size. Used mainly for :ref:`ScrollBar<class_ScrollBar>`. A :ref:`ScrollBar<
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-If greater than ``0.0``, :ref:`value<class_Range_property_value>` will always be rounded to a multiple of this property's value above :ref:`min_value<class_Range_property_min_value>`. For example, if :ref:`min_value<class_Range_property_min_value>` is ``0.1`` and step is ``0.2``, then :ref:`value<class_Range_property_value>` is limited to ``0.1``, ``0.3``, ``0.5``, and so on. If :ref:`rounded<class_Range_property_rounded>` is also ``true``, :ref:`value<class_Range_property_value>` will first be rounded to a multiple of this property's value, then rounded to the nearest integer.
+如果大於 ``0.0``\ ，\ :ref:`value<class_Range_property_value>` 將總是被四捨五入為大於 :ref:`min_value<class_Range_property_min_value>` 的該屬性的倍數。例如，如果 :ref:`min_value<class_Range_property_min_value>` 為 ``0.1``\ ，步長為 ``0.2``\ ，則 :ref:`value<class_Range_property_value>` 被限制為 ``0.1``\ 、\ ``0.3``\ 、\ ``0.5``\ ，依此類推。如果 :ref:`rounded<class_Range_property_rounded>` 也是 ``true``\ ，\ :ref:`value<class_Range_property_value>` 將首先被四捨五入為這個屬性的倍數，然後捨入為最近的整數。
 
 .. rst-class:: classref-item-separator
 

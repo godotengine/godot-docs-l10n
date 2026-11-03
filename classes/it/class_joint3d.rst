@@ -23,7 +23,7 @@ Classe base astratta per tutti i giunti nella fisica 3D. I giunti 3D uniscono du
 Tutorial
 ----------------
 
-- `Demo 3D "Truck Town" <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo 3D "Truck Town" <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

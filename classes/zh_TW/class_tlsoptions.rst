@@ -77,11 +77,11 @@ TLSOptions 是對 :ref:`StreamPeerTLS<class_StreamPeerTLS>` 和 :ref:`PacketPeer
 
 :ref:`TLSOptions<class_TLSOptions>` **client**\ (\ trusted_chain\: :ref:`X509Certificate<class_X509Certificate>` = null, common_name_override\: :ref:`String<class_String>` = ""\ ) |static| :ref:`🔗<class_TLSOptions_method_client>`
 
-Creates a TLS client configuration which validates certificates and their common names (fully qualified domain names).
+建立 TLS 用戶端設定，驗證憑證及其通用名稱（完整域名）。
 
-You can specify a custom ``trusted_chain`` of certification authorities (the default CA list will be used if ``null``), and optionally provide a ``common_name_override`` if you expect the certificate to have a common name other than the server FQDN.
+你可以指定自訂的憑證頒發機構信任鏈 ``trusted_chain``\ （如果為 ``null`` 則使用預設 CA 清單）。如果你希望憑證擁有伺服器 FQDN 之外的通用名稱，還可以提供通用名稱覆蓋 ``common_name_override``\ 。
 
-\ **Note:** On the Web platform, TLS verification is always enforced against the CA list of the web browser. This is considered a security feature.
+\ **注意：**\ 在 Web 平台上，TLS 驗證始終強制使用 Web 瀏覽器的 CA 清單。這是一種安全特性。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ You can specify a custom ``trusted_chain`` of certification authorities (the def
 
 :ref:`String<class_String>` **get_common_name_override**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_common_name_override>`
 
-Returns the common name (domain name) override specified when creating with :ref:`client()<class_TLSOptions_method_client>`.
+回傳使用 :ref:`client()<class_TLSOptions_method_client>` 建立時指定的通用名（域名）覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Returns the common name (domain name) override specified when creating with :ref
 
 :ref:`X509Certificate<class_X509Certificate>` **get_own_certificate**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_own_certificate>`
 
-Returns the :ref:`X509Certificate<class_X509Certificate>` specified when creating with :ref:`server()<class_TLSOptions_method_server>`.
+回傳使用 :ref:`server()<class_TLSOptions_method_server>` 建立時指定的 :ref:`X509Certificate<class_X509Certificate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Returns the :ref:`X509Certificate<class_X509Certificate>` specified when creatin
 
 :ref:`CryptoKey<class_CryptoKey>` **get_private_key**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_private_key>`
 
-Returns the :ref:`CryptoKey<class_CryptoKey>` specified when creating with :ref:`server()<class_TLSOptions_method_server>`.
+回傳使用 :ref:`server()<class_TLSOptions_method_server>` 建立時指定的 :ref:`CryptoKey<class_CryptoKey>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Returns the :ref:`CryptoKey<class_CryptoKey>` specified when creating with :ref:
 
 :ref:`X509Certificate<class_X509Certificate>` **get_trusted_ca_chain**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_trusted_ca_chain>`
 
-Returns the CA :ref:`X509Certificate<class_X509Certificate>` chain specified when creating with :ref:`client()<class_TLSOptions_method_client>` or :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+回傳使用 :ref:`client()<class_TLSOptions_method_client>` 或 :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` 建立時使用的 CA :ref:`X509Certificate<class_X509Certificate>` 鏈。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Returns the CA :ref:`X509Certificate<class_X509Certificate>` chain specified whe
 
 :ref:`bool<class_bool>` **is_server**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_is_server>`
 
-Returns ``true`` if created with :ref:`server()<class_TLSOptions_method_server>`, ``false`` otherwise.
+如果是通過 :ref:`server()<class_TLSOptions_method_server>` 建立的則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Returns ``true`` if created with :ref:`server()<class_TLSOptions_method_server>`
 
 :ref:`bool<class_bool>` **is_unsafe_client**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_is_unsafe_client>`
 
-Returns ``true`` if created with :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>`, ``false`` otherwise.
+如果是通過 :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` 建立的則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 

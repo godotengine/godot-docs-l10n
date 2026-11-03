@@ -14,7 +14,7 @@ Engine
 說明
 ----
 
-The **Engine** singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others. It also stores information about the current build of Godot, such as the current version.
+**Engine** 單例使你可以查詢和修改專案的執行時參數，例如每秒影格數，時間縮放等。它還儲存有關 Godot 目前建置的資訊，例如目前版本。
 
 .. rst-class:: classref-reftable-group
 
@@ -124,17 +124,17 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 - |void| **set_max_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_fps**\ (\ )
 
-The maximum number of frames that can be rendered every second (FPS). A value of ``0`` means the framerate is uncapped.
+每秒可渲染的最大影格數（FPS）。值為 ``0`` 表示影格速率不受限制。
 
-Limiting the FPS can be useful to reduce the host machine's power consumption, which reduces heat, noise emissions, and improves battery life.
+限制 FPS 會對降低主機功耗很有協助，可以減少熱量、噪音排放並延長電池壽命。
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled** or **Adaptive**, the setting takes precedence and the max FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 **Enabled** 或 **Adaptive** ，則該設定將被優先考慮，並且最大 FPS 數不能超過顯示器的刷新率。另見 :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`\ 。
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled**, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit a few frames lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 **Enabled**\ ，在啟用了可變刷新率（G-Sync/FreeSync）的顯示器上，使用比顯示器刷新率低幾影格的 FPS 限制，將\ `減少輸入延遲，同時可以避免撕裂 <https://blurbusters.com/howto-low-lag-vsync-on/>`__\ 。在較高的刷新率下，應增大影格率限制與顯示器刷新率之間的差值，以確保有足夠的影格數來彌補計時誤差。在這種情況下，影格率限制值的最佳公式為 ``r - (r * r) / 3600.0``\ ，其中 ``r`` 是顯示器的刷新率。
 
-\ **Note:** The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project's logic and rendering.
+\ **注意：**\ 如果CPU或GPU跟不上專案的邏輯和渲染，則每秒的實際影格數可能仍低於該值。
 
-\ **Note:** If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Disabled**, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 **Disabled**\ ，則與無上限的影格率相比，將 FPS 限制為可以在系統上持續達到的較高值，可以減少輸入滯後。由於這是通過確保 GPU 負載低於 100% 來實現的，因此這種延遲減少僅在 GPU 瓶頸場景中有效，在 CPU 瓶頸場景中無效。
 
 .. rst-class:: classref-item-separator
 
@@ -151,9 +151,9 @@ If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_p
 - |void| **set_max_physics_steps_per_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_physics_steps_per_frame**\ (\ )
 
-The maximum number of physics steps that can be simulated each rendered frame.
+每個渲染影格所能模擬的最大物理迭代數。
 
-\ **Note:** The default value is tuned to prevent expensive physics simulations from triggering even more expensive simulations indefinitely. However, the game will appear to slow down if the rendering FPS is less than ``1 / max_physics_steps_per_frame`` of :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. This occurs even if ``delta`` is consistently used in physics calculations. To avoid this, increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if you have increased :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **注意：**\ 調整預設值是為了防止昂貴的物理模擬無限期地觸發更昂貴的模擬。然而，如果渲染 FPS 小於 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 的 ``1 / max_physics_steps_per_frame``\ ，遊戲看上去會是降速的。即便在物理計算中始終使用 ``delta`` 也一樣會發生。要避免這種情況，如果已經增大了 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，而且遠大於其預設值，那麼建議將 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 也調大。
 
 .. rst-class:: classref-item-separator
 
@@ -170,11 +170,11 @@ The maximum number of physics steps that can be simulated each rendered frame.
 - |void| **set_physics_jitter_fix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_physics_jitter_fix**\ (\ )
 
-How much physics ticks are synchronized with real time. If ``0`` or less, the ticks are fully synchronized. Higher values cause the in-game clock to deviate more from the real clock, but they smooth out framerate jitters.
+有多少物理滴答與實際時間同步。如果為 ``0`` 或更少，則滴答完全同步。較高的值會導致遊戲中的時鐘與真即時鐘的偏差更大，但它們可以平滑影格率抖動。
 
-\ **Note:** The default value of ``0.5`` should be good enough for most cases; values above ``2`` could cause the game to react to dropped frames with a noticeable delay and are not recommended.
+\ **注意：**\ 預設值 ``0.5`` 對於大多數情況來說應該足夠了；高於 ``2`` 的值可能會導致遊戲對掉影格做出反應並出現明顯的延遲，因此不推薦使用。
 
-\ **Note:** When using a custom physics interpolation solution, or within a network game, it's recommended to disable the physics jitter fix by setting this property to ``0``.
+\ **注意：**\ 當使用自訂物理插值解決方案或在網路遊戲中時，建議通過將該屬性設定為 ``0`` 來停用物理抖動修復。
 
 .. rst-class:: classref-item-separator
 
@@ -191,15 +191,15 @@ How much physics ticks are synchronized with real time. If ``0`` or less, the ti
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+每秒執行的固定迭代次數。用於控制物理仿真和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的執行頻率。
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+CPU 使用率大致與物理週期頻率成正比。然而，在週期頻率非常低（通常低於 30）的情況下，物理行為可能會出現異常。在低週期頻率下，輸入響應也會變得遲鈍，因為輸入被注冊到系統和系統在下一個物理週期做出響應之間會存在延遲。較高的週期頻率可以提供更精確的物理模擬，尤其對於快速移動的物體而言。例如，賽車遊戲可以通過將週期頻率提高到高於預設的 60 來獲得更好的效果。
 
-See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+另見 :ref:`max_fps<class_Engine_property_max_fps>` 和 :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
 
-\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **注意：**\ 每個渲染影格最多只能模擬 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 個物理週期。如果為了追趕渲染，需要在每個渲染影格中模擬更多物理週期，遊戲看上去會是降速的（即便在物理計算中始終使用 ``delta``\ ）。因此，如果增大了 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，而且遠大於預設值，那麼建議將 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 也調大。
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **注意：**\ 如果你將 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 的值更改為不是 ``60`` 的倍數的值，請考慮啟用\ :doc:`物理插值 <../tutorials/physics/interpolation/index>`\ 。使用物理插值可以避免顯示器刷新率和物理更新速率不完全匹配時出現的畫面抖動。
 
 .. rst-class:: classref-item-separator
 
@@ -216,11 +216,11 @@ See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings
 - |void| **set_print_error_messages**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_printing_error_messages**\ (\ )
 
-If ``false``, stops printing error and warning messages to the console and editor Output log. This can be used to hide error and warning messages during unit test suite runs. This property is equivalent to the :ref:`ProjectSettings.application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>` project setting.
+如果為 ``false``\ ，則停止向控制台和編輯器輸出記錄輸出錯誤和警告訊息。這可用於在單元測試套件執行期間隱藏錯誤和警告訊息。該屬性等效於 :ref:`ProjectSettings.application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>` 專案設定。
 
-\ **Note:** This property does not impact the editor's Errors tab when running a project from the editor.
+\ **注意：**\ 從編輯器執行專案時，該屬性不會影響編輯器的“錯誤”分頁。
 
-\ **Warning:** If set to ``false`` anywhere in the project, important error messages may be hidden even if they are emitted from other scripts. In a ``@tool`` script, this will also impact the editor itself. Do *not* report bugs before ensuring error messages are enabled (as they are by default).
+\ **警告：**\ 如果在專案的任何地方將該項設定為 ``false``\ ，則重要的錯誤訊息可能會被隱藏，即使它們是從其他腳本發出的。在 ``@tool`` 腳本中，這也會影響編輯器本身。在確保錯誤訊息被啟用（預設情況下）之前，\ *不*\ 要報告錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ If ``false``, stops printing error and warning messages to the console and edito
 - |void| **set_print_to_stdout**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_printing_to_stdout**\ (\ )
 
-If ``false``, stops printing messages (for example using :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>`) to the console, log files, and editor Output log. This property is equivalent to the :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>` project setting.
+如果 ``false``\ ，則會阻止將訊息（例如使用 :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>`\ ）輸出到控制台、記錄檔和編輯器的“輸出”記錄中。該屬性相當於專案設定 :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`\ 。
 
-\ **Note:** This does not stop printing errors or warnings produced by scripts to the console or log files, for more details see :ref:`print_error_messages<class_Engine_property_print_error_messages>`.
+\ **注意：**\ 該屬性並不會阻止將腳本產生的錯誤和警告輸出到控制台或記錄檔，詳見 :ref:`print_error_messages<class_Engine_property_print_error_messages>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -256,15 +256,15 @@ If ``false``, stops printing messages (for example using :ref:`@GlobalScope.prin
 - |void| **set_time_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_scale**\ (\ )
 
-The speed multiplier at which the in-game clock updates, compared to real time. For example, if set to ``2.0`` the game runs twice as fast, and if set to ``0.5`` the game runs half as fast.
+遊戲內部時鐘更新的速度乘數，相對於真即時間。例如設定為 ``2.0`` 就會讓遊戲以二倍速執行，設定為 ``0.5`` 就會讓遊戲以一半的速度執行。
 
-This value affects :ref:`Timer<class_Timer>`, :ref:`SceneTreeTimer<class_SceneTreeTimer>`, and all other simulations that make use of ``delta`` time (such as :ref:`Node._process()<class_Node_private_method__process>` and :ref:`Node._physics_process()<class_Node_private_method__physics_process>`).
+這個值會影響 :ref:`Timer<class_Timer>`\ 、\ :ref:`SceneTreeTimer<class_SceneTreeTimer>` 以及其他使用 ``delta`` 時間進行的仿真（例如 :ref:`Node._process()<class_Node_private_method__process>` 和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ ）。
 
-\ **Note:** It's recommended to keep this property above ``0.0``, as the game may behave unexpectedly otherwise.
+\ **注意：**\ 建議讓這個屬性保持大於 ``0.0``\ ，否則可能導致遊戲產生意外的行為。
 
-\ **Note:** This does not affect audio playback speed. Use :ref:`AudioServer.playback_speed_scale<class_AudioServer_property_playback_speed_scale>` to adjust audio playback speed independently of :ref:`time_scale<class_Engine_property_time_scale>`.
+\ **注意：**\ 這個屬性不會影響音訊的播放。請使用 :ref:`AudioServer.playback_speed_scale<class_AudioServer_property_playback_speed_scale>` 來調整音訊播放的速度，配合 :ref:`time_scale<class_Engine_property_time_scale>`\ 。
 
-\ **Note:** This does not automatically adjust :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. With values above ``1.0`` physics simulation may become less precise, as each physics tick will stretch over a larger period of engine time. If you're modifying :ref:`time_scale<class_Engine_property_time_scale>` to speed up simulation by a large factor, consider also increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to make the simulation more reliable.
+\ **注意：**\ 這個屬性不會自動調整 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。大於 ``1.0`` 時可能導致物理仿真精度的下降，因為每個物理週期都會被拉伸到覆蓋引擎中的一大段時間。修改 :ref:`time_scale<class_Engine_property_time_scale>` 大幅加速仿真速度時，請考慮同時增大 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，讓仿真更可靠。
 
 .. rst-class:: classref-section-separator
 
@@ -281,13 +281,13 @@ This value affects :ref:`Timer<class_Timer>`, :ref:`SceneTreeTimer<class_SceneTr
 
 :ref:`Array<class_Array>`\[:ref:`ScriptBacktrace<class_ScriptBacktrace>`\] **capture_script_backtraces**\ (\ include_variables\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Engine_method_capture_script_backtraces>`
 
-Captures and returns backtraces from all registered script languages.
+捕獲並回傳所有注冊腳本語言的追蹤資訊。
 
-By default, the returned :ref:`ScriptBacktrace<class_ScriptBacktrace>` will only contain stack frames in editor builds and debug builds. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+預設情況下，回傳的 :ref:`ScriptBacktrace<class_ScriptBacktrace>` 僅在編輯器建置和除錯建置中包含堆疊影格。要在發佈建置中也啟用，就需要啟用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
-If ``include_variables`` is ``true``, the backtrace will also include the names and values of any global variables (e.g. autoload singletons) at the point of the capture, as well as local variables and class member variables at each stack frame. This will however will only be respected when running the game with a debugger attached, like when running the game from the editor. To enable it for export builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_local_variables<class_ProjectSettings_property_debug/settings/gdscript/always_track_local_variables>`.
+如果 ``include_variables`` 為 ``true``\ ，則追蹤資訊中還包括捕獲時的所有全域變數（例如自動載入的單例）的名稱和值，以及各個堆疊影格中的區域變數和類成員變數。不過這個參數只有在執行遊戲時附加了除錯器的情況下才會生效，例如從編輯器執行遊戲。要在匯出建置中也啟用此功能，就需要啟用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_local_variables<class_ProjectSettings_property_debug/settings/gdscript/always_track_local_variables>`\ 。
 
-\ **Warning:** When ``include_variables`` is ``true``, any captured variables can potentially (e.g. with GDScript backtraces) be their actual values, including any object references. This means that storing such a :ref:`ScriptBacktrace<class_ScriptBacktrace>` will prevent those objects from being deallocated, so it's generally recommended not to do so.
+\ **警告：**\ 當 ``include_variables`` 為 ``true`` 時，捕獲的變數可能是變數中的實際值（例如 GDScript 的追蹤資訊），包含物件參照。這意味著儲存這樣的 :ref:`ScriptBacktrace<class_ScriptBacktrace>` 會阻止這些物件的釋放，因此通常不建議這麼做。
 
 .. rst-class:: classref-item-separator
 
@@ -299,11 +299,11 @@ If ``include_variables`` is ``true``, the backtrace will also include the names 
 
 :ref:`String<class_String>` **get_architecture_name**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_architecture_name>`
 
-Returns the name of the CPU architecture the Godot binary was built for. Possible return values include ``"x86_64"``, ``"x86_32"``, ``"arm64"``, ``"arm32"``, ``"rv64"``, ``"ppc64"``, ``"loongarch64"``, ``"wasm64"``, and ``"wasm32"``.
+回傳建置 Godot 二進位檔案所針對的 CPU 架構的名稱。可能的回傳值有 ``"x86_64"``\ 、\ ``"x86_32"``\ 、\ ``"arm64"``\ 、\ ``"arm32"``\ 、\ ``"rv64"``\ 、\ ``"ppc64"``\ 、\ ``"loongarch64"``\ 、\ ``"wasm64"`` 和 ``"wasm32"``\ 。
 
-To detect whether the current build is 64-bit, or the type of architecture, don't use the architecture name. Instead, use :ref:`OS.has_feature()<class_OS_method_has_feature>` to check for the ``"64"`` feature tag, or tags such as ``"x86"`` or ``"arm"``. See the :doc:`Feature Tags <../tutorials/export/feature_tags>` documentation for more details.
+檢測目前建置是否為 64 位元或檢測架構型別時請勿使用架構名稱進行判斷。請使用 :ref:`OS.has_feature()<class_OS_method_has_feature>`\ ，檢測 ``"64"`` 特性標籤，或者 ``"x86"``\ 、\ ``"arm"`` 等標籤。詳見\ :doc:`《特性標籤》 <../tutorials/export/feature_tags>`\ 文件。
 
-\ **Note:** This method does *not* return the name of the system's CPU architecture (like :ref:`OS.get_processor_name()<class_OS_method_get_processor_name>`). For example, when running an ``x86_32`` Godot binary on an ``x86_64`` system, the returned value will still be ``"x86_32"``.
+\ **注意：**\ 該方法\ *不回傳*\ 系統 CPU 架構的名稱（如 :ref:`OS.get_processor_name()<class_OS_method_get_processor_name>`\ ）。例如在 ``x86_64`` 系統上執行 ``x86_32`` Godot 二進位檔案時，回傳值仍為 ``"x86_32"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ To detect whether the current build is 64-bit, or the type of architecture, don'
 
 :ref:`Dictionary<class_Dictionary>` **get_author_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_author_info>`
 
-Returns the engine author information as a :ref:`Dictionary<class_Dictionary>`, where each entry is an :ref:`Array<class_Array>` of strings with the names of notable contributors to the Godot Engine: ``lead_developers``, ``founders``, ``project_managers``, and ``developers``.
+以 :ref:`Dictionary<class_Dictionary>` 形式回傳引擎作者資訊，其中每個條目都是一個字串 :ref:`Array<class_Array>`\ ，其中包含 Godot 引擎著名貢獻者的姓名：\ ``lead_developers``\ 、\ ``founders``\ 、\ ``project_managers`` 和 ``developers``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -327,15 +327,15 @@ Returns the engine author information as a :ref:`Dictionary<class_Dictionary>`, 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_copyright_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_copyright_info>`
 
-Returns an :ref:`Array<class_Array>` of dictionaries with copyright information for every component of Godot's source code.
+回傳包含 Godot 原始碼元件版權資訊的字典的 :ref:`Array<class_Array>`\ 。
 
-Every :ref:`Dictionary<class_Dictionary>` contains a ``name`` identifier, and a ``parts`` array of dictionaries. It describes the component in detail with the following entries:
+每個 :ref:`Dictionary<class_Dictionary>` 中都包含了名稱標識符 ``name`` 以及另一個字典陣列 ``parts``\ 。後者詳細描述了對應的元件，包含的欄位如下：
 
-- ``files`` - :ref:`Array<class_Array>` of file paths from the source code affected by this component;
+- ``files`` - 受到該元件影響的原始碼檔案路徑 :ref:`Array<class_Array>`\ ；
 
-- ``copyright`` - :ref:`Array<class_Array>` of owners of this component;
+- ``copyright`` - 該元件的所有者 :ref:`Array<class_Array>`\ ；
 
-- ``license`` - The license applied to this component (such as "`Expat <https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants>`__" or "`CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>`__").
+- ``license`` - 該元件適用的協議（例如 "`Expat <https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants>`__" 或 "`CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>`__"）。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Every :ref:`Dictionary<class_Dictionary>` contains a ``name`` identifier, and a 
 
 :ref:`Dictionary<class_Dictionary>` **get_donor_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_donor_info>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` of categorized donor names. Each entry is an :ref:`Array<class_Array>` of strings:
+回傳分類捐贈者姓名的 :ref:`Dictionary<class_Dictionary>`\ 。每個條目都是一個字串 :ref:`Array<class_Array>`\ ：
 
 {``platinum_sponsors``, ``gold_sponsors``, ``silver_sponsors``, ``bronze_sponsors``, ``mini_sponsors``, ``gold_donors``, ``silver_donors``, ``bronze_donors``}
 
@@ -361,9 +361,9 @@ Returns a :ref:`Dictionary<class_Dictionary>` of categorized donor names. Each e
 
 :ref:`int<class_int>` **get_frames_drawn**\ (\ ) :ref:`🔗<class_Engine_method_get_frames_drawn>`
 
-Returns the total number of frames drawn since the engine started.
+回傳自引擎啟動以來繪製的影格的總數。
 
-\ **Note:** On headless platforms, or if rendering is disabled with ``--disable-render-loop`` via command line, this method always returns ``0``. See also :ref:`get_process_frames()<class_Engine_method_get_process_frames>`.
+\ **注意：**\ 在無頭平台上，或者如果通過命令行使用 ``--disable-render-loop`` 停用渲染，則該方法始終回傳 ``0``\ 。請參閱 :ref:`get_process_frames()<class_Engine_method_get_process_frames>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Returns the total number of frames drawn since the engine started.
 
 :ref:`float<class_float>` **get_frames_per_second**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_frames_per_second>`
 
-Returns the average frames rendered every second (FPS), also known as the framerate.
+回傳每秒渲染的平均影格數（FPS），也被稱為影格速率。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ Returns the average frames rendered every second (FPS), also known as the framer
 
 :ref:`Dictionary<class_Dictionary>` **get_license_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_license_info>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` of licenses used by Godot and included third party components. Each entry is a license name (such as "`Expat <https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants>`__") and its associated text.
+回傳 Godot 和包含的第三方元件使用的許可證的 :ref:`Dictionary<class_Dictionary>`\ 。每個條目都是一個許可證名稱（例如 "`Expat <https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants>`__"）及其關聯的文字。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ Returns a :ref:`Dictionary<class_Dictionary>` of licenses used by Godot and incl
 
 :ref:`String<class_String>` **get_license_text**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_license_text>`
 
-Returns the full Godot license text.
+回傳完整的 Godot 許可證文字。
 
 .. rst-class:: classref-item-separator
 
@@ -411,9 +411,9 @@ Returns the full Godot license text.
 
 :ref:`MainLoop<class_MainLoop>` **get_main_loop**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_main_loop>`
 
-Returns the instance of the :ref:`MainLoop<class_MainLoop>`. This is usually the main :ref:`SceneTree<class_SceneTree>` and is the same as :ref:`Node.get_tree()<class_Node_method_get_tree>`.
+回傳該 :ref:`MainLoop<class_MainLoop>` 的實例。這通常是主 :ref:`SceneTree<class_SceneTree>` 並且與 :ref:`Node.get_tree()<class_Node_method_get_tree>` 相同。
 
-\ **Note:** The type instantiated as the main loop can changed with :ref:`ProjectSettings.application/run/main_loop_type<class_ProjectSettings_property_application/run/main_loop_type>`.
+\ **注意：**\ 作為主循環的實例化型別可以通過 :ref:`ProjectSettings.application/run/main_loop_type<class_ProjectSettings_property_application/run/main_loop_type>` 更改。
 
 .. rst-class:: classref-item-separator
 
@@ -425,9 +425,9 @@ Returns the instance of the :ref:`MainLoop<class_MainLoop>`. This is usually the
 
 :ref:`int<class_int>` **get_physics_frames**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_physics_frames>`
 
-Returns the total number of frames passed since the engine started. This number is increased every **physics frame**. See also :ref:`get_process_frames()<class_Engine_method_get_process_frames>`.
+回傳自引擎啟動以來經過的總影格數。這個數字每個\ **物理影格**\ 都會增加。另見 :ref:`get_process_frames()<class_Engine_method_get_process_frames>`\ 。
 
-This method can be used to run expensive logic less often without relying on a :ref:`Timer<class_Timer>`:
+該方法可用於在不相依性 :ref:`Timer<class_Timer>` 的情況下，減少執行昂貴的邏輯的次數：
 
 
 .. tabs::
@@ -436,7 +436,7 @@ This method can be used to run expensive logic less often without relying on a :
 
     func _physics_process(_delta):
         if Engine.get_physics_frames() % 2 == 0:
-            pass # Run expensive logic only once every 2 physics frames here.
+            pass # 此處每 2 個物理影格僅執行一次昂貴的邏輯。
 
  .. code-tab:: csharp
 
@@ -446,7 +446,7 @@ This method can be used to run expensive logic less often without relying on a :
 
         if (Engine.GetPhysicsFrames() % 2 == 0)
         {
-            // Run expensive logic only once every 2 physics frames here.
+            // 此處每 2 個物理影格僅執行一次昂貴的邏輯。
         }
     }
 
@@ -462,7 +462,7 @@ This method can be used to run expensive logic less often without relying on a :
 
 :ref:`float<class_float>` **get_physics_interpolation_fraction**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_physics_interpolation_fraction>`
 
-返回算繪影格時目前物理週期中的分數。可用於實作固定的時間步插值。
+返回渲染影格時目前物理週期中的分數。可用於實作固定的時間步插值。
 
 .. rst-class:: classref-item-separator
 
@@ -474,9 +474,9 @@ This method can be used to run expensive logic less often without relying on a :
 
 :ref:`int<class_int>` **get_process_frames**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_process_frames>`
 
-Returns the total number of frames passed since the engine started. This number is increased every **process frame**, regardless of whether the render loop is enabled. See also :ref:`get_frames_drawn()<class_Engine_method_get_frames_drawn>` and :ref:`get_physics_frames()<class_Engine_method_get_physics_frames>`.
+回傳自引擎啟動以來經過的總影格數，無論渲染循環是否啟用，每個\ **處理影格**\ 都會增加該數字。另見 :ref:`get_frames_drawn()<class_Engine_method_get_frames_drawn>` 和 :ref:`get_physics_frames()<class_Engine_method_get_physics_frames>`\ 。
 
-This method can be used to run expensive logic less often without relying on a :ref:`Timer<class_Timer>`:
+此方法可用於在不依賴 :ref:`Timer<class_Timer>` 的情況下，減少執行昂貴的邏輯的次數：
 
 
 .. tabs::
@@ -485,7 +485,7 @@ This method can be used to run expensive logic less often without relying on a :
 
     func _process(_delta):
         if Engine.get_process_frames() % 5 == 0:
-            pass # Run expensive logic only once every 5 process (render) frames here.
+            pass # 此處每 5 個處理（渲染）影格僅執行一次昂貴的邏輯。
 
  .. code-tab:: csharp
 
@@ -495,7 +495,7 @@ This method can be used to run expensive logic less often without relying on a :
 
         if (Engine.GetProcessFrames() % 5 == 0)
         {
-            // Run expensive logic only once every 5 process (render) frames here.
+            // 此處每 5 個處理（渲染）影格僅執行一次昂貴的邏輯。
         }
     }
 
@@ -511,7 +511,7 @@ This method can be used to run expensive logic less often without relying on a :
 
 :ref:`ScriptLanguage<class_ScriptLanguage>` **get_script_language**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Engine_method_get_script_language>`
 
-Returns an instance of a :ref:`ScriptLanguage<class_ScriptLanguage>` with the given ``index``.
+回傳給定索引 ``index`` 處的 :ref:`ScriptLanguage<class_ScriptLanguage>` 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +535,9 @@ Returns an instance of a :ref:`ScriptLanguage<class_ScriptLanguage>` with the gi
 
 :ref:`Object<class_Object>` **get_singleton**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Engine_method_get_singleton>`
 
-Returns the global singleton with the given ``name``, or ``null`` if it does not exist. Often used for plugins. See also :ref:`has_singleton()<class_Engine_method_has_singleton>` and :ref:`get_singleton_list()<class_Engine_method_get_singleton_list>`.
+回傳具有給定 ``name`` 的全域單例，如果不存在則回傳 ``null``\ 。常用於外掛。另見 :ref:`has_singleton()<class_Engine_method_has_singleton>` and :ref:`get_singleton_list()<class_Engine_method_get_singleton_list>`\ 。
 
-\ **Note:** Global singletons are not the same as autoloaded nodes, which are configurable in the project settings.
+\ **注意：**\ 全域單例與自動載入的節點不同，後者可以在專案設定中進行設定。
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns the global singleton with the given ``name``, or ``null`` if it does not
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_singleton_list**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_singleton_list>`
 
-Returns a list of names of all available global singletons. See also :ref:`get_singleton()<class_Engine_method_get_singleton>`.
+回傳所有可用全域單例的名稱清單。另見 :ref:`get_singleton()<class_Engine_method_get_singleton>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,29 +561,29 @@ Returns a list of names of all available global singletons. See also :ref:`get_s
 
 :ref:`Dictionary<class_Dictionary>` **get_version_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_version_info>`
 
-Returns the current engine version information as a :ref:`Dictionary<class_Dictionary>` containing the following entries:
+以包含以下條目的 :ref:`Dictionary<class_Dictionary>` 形式回傳目前引擎版本資訊：
 
-- ``major`` - Major version number as an int;
+- ``major`` - 主要版本號為一個 int；
 
-- ``minor`` - Minor version number as an int;
+- ``minor`` - 次要版本號為一個 int；
 
-- ``patch`` - Patch version number as an int;
+- ``patch`` - 補丁版本號為一個 int；
 
-- ``hex`` - Full version encoded as a hexadecimal int with one byte (2 hex digits) per number (see example below);
+- ``hex`` - 完整版本被編碼為一個十六進位 int，每個數字一個位元組（2 個十六進位數字）（參見下面的範例）；
 
-- ``status`` - Status (such as "beta", "rc1", "rc2", "stable", etc.) as a String;
+- ``status`` - 狀態（例如“beta”、“rc1”、“rc2”、“stable” 等）為一串字串；
 
-- ``build`` - Build name (e.g. "custom_build") as a String;
+- ``build`` - 建置名稱（例如 “custom_build”）為一串字串；
 
-- ``hash`` - Full Git commit hash as a String;
+- ``hash`` - 完整的 Git 提交雜湊為一串字串；
 
-- ``timestamp`` - Holds the Git commit date UNIX timestamp in seconds as an int, or ``0`` if unavailable;
+- ``timestamp`` - 以秒為單位，以 int 形式儲存 Git 提交日期 UNIX 時間戳記，如果不可用，則儲存為 ``0``\ ；
 
-- ``string`` - ``major``, ``minor``, ``patch``, ``status``, and ``build`` in a single String.
+- ``string`` - 將 ``major`` + ``minor`` + ``patch`` + ``status`` + ``build`` 儲存在單個字串中。
 
-The ``hex`` value is encoded as follows, from left to right: one byte for the major, one byte for the minor, one byte for the patch version. For example, "3.1.12" would be ``0x03010C``.
+\ ``hex`` 值的編碼方式如下，從左到右：主版本對應一位元組，次版本對應一位元組，補丁版本對應一位元組。例如，“3.1.12”將是 ``0x03010C``\ 。
 
-\ **Note:** The ``hex`` value is still an :ref:`int<class_int>` internally, and printing it will give you its decimal representation, which is not particularly meaningful. Use hexadecimal literals for quick version comparisons from code:
+\ **注意：**\ ``hex`` 值內部還是一個 :ref:`int<class_int>`\ ，輸出出來就是它的十進位表示，沒有特別的意義。使用十六進位文字從程式碼中快速比較版本：
 
 
 .. tabs::
@@ -591,19 +591,19 @@ The ``hex`` value is encoded as follows, from left to right: one byte for the ma
  .. code-tab:: gdscript
 
     if Engine.get_version_info().hex >= 0x040100:
-        pass # Do things specific to version 4.1 or later.
+        pass # 執行特定於版本 4.1 或更高版本的操作。
     else:
-        pass # Do things specific to versions before 4.1.
+        pass # 執行特定於 4.1 之前版本的操作。
 
  .. code-tab:: csharp
 
     if ((int)Engine.GetVersionInfo()["hex"] >= 0x040100)
     {
-        // Do things specific to version 4.1 or later.
+        // 執行特定於版本 4.1 或更高版本的操作。
     }
     else
     {
-        // Do things specific to versions before 4.1.
+        // 執行特定於 4.1 之前版本的操作。
     }
 
 
@@ -618,7 +618,7 @@ The ``hex`` value is encoded as follows, from left to right: one byte for the ma
 
 :ref:`String<class_String>` **get_write_movie_path**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_write_movie_path>`
 
-Returns the path to the :ref:`MovieWriter<class_MovieWriter>`'s output file, or an empty string if the engine wasn't started in Movie Maker mode. The default path can be changed in :ref:`ProjectSettings.editor/movie_writer/movie_file<class_ProjectSettings_property_editor/movie_writer/movie_file>`.
+回傳 :ref:`MovieWriter<class_MovieWriter>` 的輸出檔案的路徑，如果引擎未在 Movie Maker 模式下啟動，則回傳一個空字串。該預設路徑可以在 :ref:`ProjectSettings.editor/movie_writer/movie_file<class_ProjectSettings_property_editor/movie_writer/movie_file>` 中更改。
 
 .. rst-class:: classref-item-separator
 
@@ -630,28 +630,28 @@ Returns the path to the :ref:`MovieWriter<class_MovieWriter>`'s output file, or 
 
 :ref:`bool<class_bool>` **has_singleton**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Engine_method_has_singleton>`
 
-Returns ``true`` if a singleton with the given ``name`` exists in the global scope. See also :ref:`get_singleton()<class_Engine_method_get_singleton>`.
+如果全域範圍記憶體在具有給定 ``name`` 的單例，則回傳 ``true``\ 。另見 :ref:`get_singleton()<class_Engine_method_get_singleton>`\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(Engine.has_singleton("OS"))          # Prints true
-    print(Engine.has_singleton("Engine"))      # Prints true
-    print(Engine.has_singleton("AudioServer")) # Prints true
-    print(Engine.has_singleton("Unknown"))     # Prints false
+    print(Engine.has_singleton("OS"))          # 輸出 true
+    print(Engine.has_singleton("Engine"))      # 輸出 true
+    print(Engine.has_singleton("AudioServer")) # 輸出 true
+    print(Engine.has_singleton("Unknown"))     # 輸出 false
 
  .. code-tab:: csharp
 
-    GD.Print(Engine.HasSingleton("OS"));          // Prints True
-    GD.Print(Engine.HasSingleton("Engine"));      // Prints True
-    GD.Print(Engine.HasSingleton("AudioServer")); // Prints True
-    GD.Print(Engine.HasSingleton("Unknown"));     // Prints False
+    GD.Print(Engine.HasSingleton("OS"));          // 輸出 True
+    GD.Print(Engine.HasSingleton("Engine"));      // 輸出 True
+    GD.Print(Engine.HasSingleton("AudioServer")); // 輸出 True
+    GD.Print(Engine.HasSingleton("Unknown"));     // 輸出 False
 
 
 
-\ **Note:** Global singletons are not the same as autoloaded nodes, which are configurable in the project settings.
+\ **注意：**\ 全域單例與自動載入的節點不同，後者可以在專案設定中進行設定。
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Returns ``true`` if a singleton with the given ``name`` exists in the global sco
 
 :ref:`bool<class_bool>` **is_editor_hint**\ (\ ) |const| :ref:`🔗<class_Engine_method_is_editor_hint>`
 
-Returns ``true`` if the script is currently running inside the editor, otherwise returns ``false``. This is useful for ``@tool`` scripts to conditionally draw editor helpers, or prevent accidentally running "game" code that would affect the scene state while in the editor:
+如果腳本目前正在編輯器中執行，則回傳 ``true``\ ，否則回傳 ``false``\ 。這對於 ``@tool`` 腳本很有用，可以有條件地繪製編輯器助手，或者防止在編輯器中意外執行會影響場景狀態的“遊戲”程式碼：
 
 
 .. tabs::
@@ -684,9 +684,9 @@ Returns ``true`` if the script is currently running inside the editor, otherwise
 
 
 
-See :doc:`Running code in the editor <../tutorials/plugins/running_code_in_the_editor>` in the documentation for more information.
+有關詳細資訊，請參閱文件中的\ :doc:`《在編輯器中執行程式碼》 <../tutorials/plugins/running_code_in_the_editor>`\ 。
 
-\ **Note:** To detect whether the script is running on an editor *build* (such as when pressing :kbd:`F5`), use :ref:`OS.has_feature()<class_OS_method_has_feature>` with the ``"editor"`` argument instead. ``OS.has_feature("editor")`` evaluate to ``true`` both when the script is running in the editor and when running the project from the editor, but returns ``false`` when run from an exported project.
+\ **注意：**\ 要檢測腳本是否在編輯器\ *建置*\ 上執行（例如，當按 :kbd:`F5` 時），請改用 :ref:`OS.has_feature()<class_OS_method_has_feature>` 和 ``"editor"`` 參數。\ ``OS.has_feature("editor")`` 將在編輯器中執行腳本和從編輯器執行專案時，被評估為 ``true``\ ；但當從匯出的專案執行時，它將被評估為 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -698,7 +698,7 @@ See :doc:`Running code in the editor <../tutorials/plugins/running_code_in_the_e
 
 :ref:`bool<class_bool>` **is_embedded_in_editor**\ (\ ) |const| :ref:`🔗<class_Engine_method_is_embedded_in_editor>`
 
-Returns ``true`` if the engine is running embedded in the editor. This is useful to prevent attempting to update window mode or window flags that are not supported when running the project embedded in the editor.
+如果引擎在編輯器中嵌入執行則回傳 ``true``\ 。可以用來防止在專案嵌入編輯器中執行時嘗試更新不支援的視窗模式或視窗標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -710,20 +710,20 @@ Returns ``true`` if the engine is running embedded in the editor. This is useful
 
 :ref:`bool<class_bool>` **is_in_physics_frame**\ (\ ) |const| :ref:`🔗<class_Engine_method_is_in_physics_frame>`
 
-Returns ``true`` if the engine is inside the fixed physics process step of the main loop.
+如果引擎位於主循環的固定物理處理步驟內，則回傳 ``true``\ 。
 
 ::
 
     func _enter_tree():
-        # Depending on when the node is added to the tree,
-        # prints either "true" or "false".
+        # 根據節點新增到樹中的時間，
+        # 輸出 “true” 或 “false”。
         print(Engine.is_in_physics_frame())
 
     func _process(delta):
-        print(Engine.is_in_physics_frame()) # Prints false
+        print(Engine.is_in_physics_frame()) # 輸出 false
 
     func _physics_process(delta):
-        print(Engine.is_in_physics_frame()) # Prints true
+        print(Engine.is_in_physics_frame()) # 輸出 true
 
 .. rst-class:: classref-item-separator
 
@@ -735,15 +735,15 @@ Returns ``true`` if the engine is inside the fixed physics process step of the m
 
 :ref:`Error<enum_@GlobalScope_Error>` **register_script_language**\ (\ language\: :ref:`ScriptLanguage<class_ScriptLanguage>`\ ) :ref:`🔗<class_Engine_method_register_script_language>`
 
-Registers a :ref:`ScriptLanguage<class_ScriptLanguage>` instance to be available with ``ScriptServer``.
+注冊一個 :ref:`ScriptLanguage<class_ScriptLanguage>` 實例，供 ``ScriptServer`` 使用。
 
-Returns:
+回傳：
 
-- :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success;
+- :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 表示成功；
 
-- :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` if ``ScriptServer`` has reached the limit and cannot register any new language;
+- :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` 表示 ``ScriptServer`` 已達到限制，無法注冊任何新語言；
 
-- :ref:`@GlobalScope.ERR_ALREADY_EXISTS<class_@GlobalScope_constant_ERR_ALREADY_EXISTS>` if ``ScriptServer`` already contains a language with similar extension/name/type.
+- :ref:`@GlobalScope.ERR_ALREADY_EXISTS<class_@GlobalScope_constant_ERR_ALREADY_EXISTS>` 表示 ``ScriptServer`` 已經包含一個具有相似副檔名/名稱/型別的語言。
 
 .. rst-class:: classref-item-separator
 
@@ -755,7 +755,7 @@ Returns:
 
 |void| **register_singleton**\ (\ name\: :ref:`StringName<class_StringName>`, instance\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_Engine_method_register_singleton>`
 
-Registers the given :ref:`Object<class_Object>` ``instance`` as a singleton, available globally under ``name``. Useful for plugins.
+將給定的 :ref:`Object<class_Object>` ``instance`` 注冊為單例，在名稱 ``name`` 下全域可用。對於外掛很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -767,13 +767,13 @@ Registers the given :ref:`Object<class_Object>` ``instance`` as a singleton, ava
 
 :ref:`Error<enum_@GlobalScope_Error>` **unregister_script_language**\ (\ language\: :ref:`ScriptLanguage<class_ScriptLanguage>`\ ) :ref:`🔗<class_Engine_method_unregister_script_language>`
 
-Unregisters the :ref:`ScriptLanguage<class_ScriptLanguage>` instance from ``ScriptServer``.
+從 ``ScriptServer`` 注銷該 :ref:`ScriptLanguage<class_ScriptLanguage>` 實例。
 
-Returns:
+回傳：
 
-- :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success;
+- :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 表示成功；
 
-- :ref:`@GlobalScope.ERR_DOES_NOT_EXIST<class_@GlobalScope_constant_ERR_DOES_NOT_EXIST>` if the language is not registered in ``ScriptServer``.
+- :ref:`@GlobalScope.ERR_DOES_NOT_EXIST<class_@GlobalScope_constant_ERR_DOES_NOT_EXIST>` 表示該語言尚未在 ``ScriptServer`` 中注冊。
 
 .. rst-class:: classref-item-separator
 
@@ -785,7 +785,7 @@ Returns:
 
 |void| **unregister_singleton**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Engine_method_unregister_singleton>`
 
-Removes the singleton registered under ``name``. The singleton object is *not* freed. Only works with user-defined singletons registered with :ref:`register_singleton()<class_Engine_method_register_singleton>`.
+移除在 ``name`` 下注冊的單例。該單例物件\ *不會*\ 被釋放。僅適用於使用 :ref:`register_singleton()<class_Engine_method_register_singleton>` 注冊的使用者定義的單例。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

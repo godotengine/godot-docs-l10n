@@ -17,9 +17,9 @@ DirectionalLight3D
 說明
 ----
 
-A directional light is a type of :ref:`Light3D<class_Light3D>` node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene to model sunlight or moonlight.
+平行光是一種 :ref:`Light3D<class_Light3D>` 節點，它可以模擬覆蓋整個場景的無限數量的平行光線。它用於距離場景較遠的強光，以模擬日光或月光。
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`). The position of the node is ignored; only the basis is used to determine light direction.
+光線沿節點全域基的 -Z 方向發射。對於未旋轉的光源，這意味著光線向前發射，照亮 3D 模型的正面（參見 :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` 和 :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`\ ）。節點的位置會被忽略；只有基被用於確定光線方向。
 
 .. rst-class:: classref-introduction-group
 
@@ -79,7 +79,7 @@ enum **ShadowMode**: :ref:`🔗<enum_DirectionalLight3D_ShadowMode>`
 
 :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **SHADOW_ORTHOGONAL** = ``0``
 
-從正交的角度算繪整個場景的陰影圖。這是最快的定向陰影模式。可能會導致近距離物體的陰影更模糊。
+從正交的角度渲染整個場景的陰影圖。這是最快的定向陰影模式。可能會導致近距離物體的陰影更模糊。
 
 .. _class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS:
 
@@ -87,7 +87,7 @@ enum **ShadowMode**: :ref:`🔗<enum_DirectionalLight3D_ShadowMode>`
 
 :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **SHADOW_PARALLEL_2_SPLITS** = ``1``
 
-將視錐體分成2個區域，每個區域都有自己的陰影貼圖。這種陰影模式是 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 和 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 在性能上的折衷。
+將視錐體分成2個區域，每個區域都有自己的陰影貼圖。這種陰影模式是 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 和 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 在效能上的折衷。
 
 .. _class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS:
 
@@ -113,7 +113,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_LIGHT_AND_SKY** = ``0``
 
-使燈光在場景照明和天空算繪中都可見。
+使燈光在場景照明和天空渲染中都可見。
 
 .. _class_DirectionalLight3D_constant_SKY_MODE_LIGHT_ONLY:
 
@@ -151,7 +151,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 - |void| **set_blend_splits**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_blend_splits_enabled**\ (\ )
 
-如果為 ``true``\ ，會犧牲陰影的細節，換取分割區域之間更平滑的過渡。啟用陰影混合分割同時也會帶來一些性能消耗。當 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 為 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 時會被忽略。
+如果為 ``true``\ ，會犧牲陰影的細節，換取分割區域之間更平滑的過渡。啟用陰影混合分割同時也會帶來一些效能消耗。當 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 為 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 時會被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-陰影分割的最大距離。將這個值增大會讓定向陰影在更遠處可見，代價是整體的陰影細節降低和性能（因為算繪定向陰影時需要包含更多的物體）。
+陰影分割的最大距離。將這個值增大會讓定向陰影在更遠處可見，代價是整體的陰影細節降低和效能（因為渲染定向陰影時需要包含更多的物體）。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 - |void| **set_shadow_mode**\ (\ value\: :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>`\ )
 - :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **get_shadow_mode**\ (\ )
 
-The light's shadow rendering algorithm.
+燈光的陰影渲染算法。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The light's shadow rendering algorithm.
 - |void| **set_sky_mode**\ (\ value\: :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>`\ )
 - :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **get_sky_mode**\ (\ )
 
-Whether this **DirectionalLight3D** is visible in the sky, in the scene, or both in the sky and in the scene.
+設定該 **DirectionalLight3D** 是僅在天空中可見，僅在場景中可見，還是在天空和場景中均可見。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -11,14 +11,14 @@ OpenXRSpatialCapabilityConfigurationBaseHeader
 
 **被繼承：** :ref:`OpenXRSpatialCapabilityConfigurationAnchor<class_OpenXRSpatialCapabilityConfigurationAnchor>`, :ref:`OpenXRSpatialCapabilityConfigurationAprilTag<class_OpenXRSpatialCapabilityConfigurationAprilTag>`, :ref:`OpenXRSpatialCapabilityConfigurationAruco<class_OpenXRSpatialCapabilityConfigurationAruco>`, :ref:`OpenXRSpatialCapabilityConfigurationMicroQrCode<class_OpenXRSpatialCapabilityConfigurationMicroQrCode>`, :ref:`OpenXRSpatialCapabilityConfigurationPlaneTracking<class_OpenXRSpatialCapabilityConfigurationPlaneTracking>`, :ref:`OpenXRSpatialCapabilityConfigurationQrCode<class_OpenXRSpatialCapabilityConfigurationQrCode>`
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers.
+用於 OpenXR 空間能力設定標頭的包裝器基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers. This class needs to be implemented for each capability configuration structure usable within OpenXR's spatial entities system.
+OpenXR 空間功能設定標頭的包裝器基底類別。對於 OpenXR 空間實體系統中可用的每種功能設定結構，都需要實作該基底類別。
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Wrapper base class for OpenXR Spatial Capability Configuration headers. This cla
 
 :ref:`int<class_int>` **_get_configuration**\ (\ ) |virtual| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`
 
-Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial capability configuration data. The memory for this struct should remain accessible as long as this object remains instantiated.
+回傳一個指向包含空間能力設定資料的結構的指針（編碼為 ``int64_t`` 型別）。只要該物件仍然存在，該結構所佔用的記憶體就應該保持可存取狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial cap
 
 :ref:`bool<class_bool>` **_has_valid_configuration**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`
 
-Return ``true`` if this object contains a valid configuration that can be retrieved when calling :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
+如果該物件包含有效的設定，並且可以通過呼叫 :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>` 方法檢索該設定，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ Return ``true`` if this object contains a valid configuration that can be retrie
 
 :ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
 
-Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+取得指向 ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` 結構體的指針。
 
-\ **Note:** This method is intended to be used from GDExtensions.
+\ **注意：** 此方法旨在供 GDExtension（GD擴充）使用。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
 
 :ref:`bool<class_bool>` **has_valid_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_has_valid_configuration>`
 
-Returns ``true`` if this object contains a valid configuration that can be used when calling :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`.
+如果該物件包含可用於呼叫 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 的有效設定，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

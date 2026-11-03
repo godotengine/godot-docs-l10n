@@ -65,7 +65,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeRemap_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_2D_SCALAR** = ``2``
 
-The ``value`` port uses a 2D vector type, while the ``input min``, ``input max``, ``output min``, and ``output max`` ports use a floating-point scalar type.
+``value`` 連接埠使用 2D 向量型別，而 ``input min``\ 、\ ``input max``\ 、\ ``output min``\ 、\ ``output max`` 連接埠使用浮點數標量型別。
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_3D:
 
@@ -81,7 +81,7 @@ The ``value`` port uses a 2D vector type, while the ``input min``, ``input max``
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-The ``value`` port uses a 3D vector type, while the ``input min``, ``input max``, ``output min``, and ``output max`` ports use a floating-point scalar type.
+``value`` 連接埠使用 3D 向量型別，而 ``input min``\ 、\ ``input max``\ 、\ ``output min``\ 、\ ``output max`` 連接埠使用浮點數標量型別。
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_4D:
 
@@ -97,7 +97,7 @@ The ``value`` port uses a 3D vector type, while the ``input min``, ``input max``
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-The ``value`` port uses a 4D vector type, while the ``input min``, ``input max``, ``output min``, and ``output max`` ports use a floating-point scalar type.
+``value`` 連接埠使用 4D 向量型別，而 ``input min``\ 、\ ``input max``\ 、\ ``output min``\ 、\ ``output max`` 連接埠使用浮點數標量型別。
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_MAX:
 

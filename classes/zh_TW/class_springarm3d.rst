@@ -21,7 +21,7 @@ SpringArm3D
 教學
 ----
 
-- :doc:`Third-person camera with spring arm <../tutorials/3d/spring_arm>`
+- :doc:`使用彈簧臂製作的第三人稱相機 <../tutorials/3d/spring_arm>`
 
 .. rst-class:: classref-reftable-group
 
@@ -79,7 +79,7 @@ SpringArm3D
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The layers against which the collision check will be done. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+碰撞檢測的目標層。更多資訊請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 

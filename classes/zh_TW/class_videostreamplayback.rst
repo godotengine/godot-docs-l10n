@@ -105,7 +105,7 @@ VideoStreamPlayback
 
 :ref:`float<class_float>` **_get_playback_position**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_playback_position>`
 
-返回目前播放時間戳記。獲取 :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` 時會被調用。
+返回目前播放時間戳記。取得 :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` 時會被調用。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ VideoStreamPlayback
 
 |void| **_play**\ (\ ) |virtual| :ref:`🔗<class_VideoStreamPlayback_private_method__play>`
 
-Called in response to :ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_property_autoplay>` or :ref:`VideoStreamPlayer.play()<class_VideoStreamPlayer_method_play>`. Note that manual playback may also invoke :ref:`_stop()<class_VideoStreamPlayback_private_method__stop>` multiple times before this method is called. :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` should return ``true`` once playing.
+:ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_property_autoplay>` 或 :ref:`VideoStreamPlayer.play()<class_VideoStreamPlayer_method_play>` 時會被呼叫。請注意，手動播放在這個方法被呼叫前也可能多次呼叫 :ref:`_stop()<class_VideoStreamPlayback_private_method__stop>`\ 。開始播放後 :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` 就應該回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Called in response to :ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_p
 
 |void| **_stop**\ (\ ) |virtual| :ref:`🔗<class_VideoStreamPlayback_private_method__stop>`
 
-Stops playback. May be called multiple times before :ref:`_play()<class_VideoStreamPlayback_private_method__play>`, or in response to :ref:`VideoStreamPlayer.stop()<class_VideoStreamPlayer_method_stop>`. :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` should return ``false`` once stopped.
+停止播放。可能在 :ref:`_play()<class_VideoStreamPlayback_private_method__play>` 多次呼叫，也可能與 :ref:`VideoStreamPlayer.stop()<class_VideoStreamPlayer_method_stop>` 對應。停止後 :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` 應回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Stops playback. May be called multiple times before :ref:`_play()<class_VideoStr
 
 |void| **_update**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_VideoStreamPlayback_private_method__update>`
 
-Ticks video playback for ``delta`` seconds. Called every frame as long as both :ref:`_is_paused()<class_VideoStreamPlayback_private_method__is_paused>` and :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` return ``true``.
+將影片播放推進 ``delta`` 秒。只要 :ref:`_is_paused()<class_VideoStreamPlayback_private_method__is_paused>` 和 :ref:`_is_playing()<class_VideoStreamPlayback_private_method__is_playing>` 回傳 ``true``\ ，就會為每一影格呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Ticks video playback for ``delta`` seconds. Called every frame as long as both :
 
 :ref:`int<class_int>` **mix_audio**\ (\ num_frames\: :ref:`int<class_int>`, buffer\: :ref:`PackedFloat32Array<class_PackedFloat32Array>` = PackedFloat32Array(), offset\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_VideoStreamPlayback_method_mix_audio>`
 
-從陣列中的索引 ``offset`` 開始，從 ``buffer`` 算繪 ``num_frames`` 個音訊影格（每影格 :ref:`_get_channels()<class_VideoStreamPlayback_private_method__get_channels>` 個浮點數）。返回算繪的音訊影格數，如果出錯則返回 -1。
+從陣列中的索引 ``offset`` 開始，從 ``buffer`` 渲染 ``num_frames`` 個音訊影格（每影格 :ref:`_get_channels()<class_VideoStreamPlayback_private_method__get_channels>` 個浮點數）。返回渲染的音訊影格數，如果出錯則返回 -1。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

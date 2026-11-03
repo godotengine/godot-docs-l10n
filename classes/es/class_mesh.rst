@@ -202,7 +202,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_COLOR** = ``3``
 
-:ref:`PackedColorArray<class_PackedColorArray>` de colores de vertices.
+:ref:`PackedColorArray<class_PackedColorArray>` de colores de vértices.
 
 .. _class_Mesh_constant_ARRAY_TEX_UV:
 
@@ -274,9 +274,9 @@ Contiene el canal de color personalizado 3. :ref:`PackedByteArray<class_PackedBy
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_INDEX** = ``12``
 
-:ref:`PackedInt32Array<class_PackedInt32Array>` of integers used as indices referencing vertices, colors, normals, tangents, and textures. All of those arrays must have the same number of elements as the vertex array. No index can be beyond the vertex array size. When this index array is present, it puts the function into "index mode," where the index selects the *i*'th vertex, normal, tangent, color, UV, etc. This means if you want to have different normals or colors along an edge, you have to duplicate the vertices.
+:ref:`PackedInt32Array<class_PackedInt32Array>` de enteros utilizados como índices referenciando vértices, colores, normales, tangentes y texturas. Todos estos arrays deben tener el mismo número de elemento que el array de vértices. Ningun índice puede ser mayor que el tamaño del array de vértices. Cuando el array de índices está presente, coloca la función en "modo índice", donde el índice selecciona en *i* enésimo vértice, normal, tangente, color, UV, etc. Esto significa que si tu quieres tener diferentes normales o colores alrededor de un borde, tu tienes que duplicar los vértices.
 
-For triangles, the index array is interpreted as triples, referring to the vertices of each triangle. For lines, the index array is in pairs indicating the start and end of each line.
+Para triángulos, el array de índices es interpretado como triple, referenciando a los vértices de cada triángulo. Para líneas, el array de índices está emparejado indicando el inicio y final de cada línea.
 
 .. _class_Mesh_constant_ARRAY_MAX:
 

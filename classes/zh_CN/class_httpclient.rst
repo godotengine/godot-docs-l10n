@@ -570,7 +570,7 @@ HTTP 状态码 ``409 Conflict``\ 。请求无法完成，原因与是目标资�
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_GONE** = ``410``
 
-HTTP 状态码 ``410 Gone``\ 。目标资源在原始服务器上已不复存在，并且可能永远如此。
+HTTP 状态码 ``410 Gone``\ 。目标资源在源服务器上已不再可用，并且该状态很可能是永久性的。
 
 .. _class_HTTPClient_constant_RESPONSE_LENGTH_REQUIRED:
 

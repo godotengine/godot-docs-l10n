@@ -90,7 +90,7 @@ PhysicsPointQueryParameters3D
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-查詢將偵測的實體層（作為位元遮罩）。預設情況下，會偵測所有碰撞層。有關詳細信息，請參閱文件中的 `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+查詢將偵測的實體層（作為位元遮罩）。預設情況下，會偵測所有碰撞層。有關詳細資訊，請參閱文件中的 `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -107,9 +107,9 @@ PhysicsPointQueryParameters3D
 - |void| **set_exclude**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude**\ (\ )
 
-The list of object :ref:`RID<class_RID>`\ s that will be excluded from collisions. Use :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`CollisionObject3D<class_CollisionObject3D>`-derived node.
+將被排除在碰撞之外的物件的 :ref:`RID<class_RID>` 清單。請使用 :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` 來取得與派生自 :ref:`CollisionObject3D<class_CollisionObject3D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
+\ **注意：**\ 回傳的陣列為副本，對其進行的修改不會更新原有屬性。更新時，請先修改回傳的陣列，然後將其重新賦值回該屬性。
 
 .. rst-class:: classref-item-separator
 

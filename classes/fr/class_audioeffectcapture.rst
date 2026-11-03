@@ -83,9 +83,9 @@ Descriptions des propriétés
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+Longueur du buffer circulaire interne, en secondes. Les valeurs plus élevées garderont les données plus longtemps, mais nécessitent plus de mémoire. La valeur peut aller de 0.01 à 10.
 
-\ **Note:** Setting the buffer length will have no effect if already initialized.
+\ **Note :** Définir la longueur du buffer n'aura aucun effet s'il est déjà initialisé.
 
 .. rst-class:: classref-section-separator
 

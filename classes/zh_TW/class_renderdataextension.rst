@@ -7,14 +7,14 @@ RenderDataExtension
 
 **繼承：** :ref:`RenderData<class_RenderData>` **<** :ref:`Object<class_Object>`
 
-This class allows for a RenderData implementation to be made in GDExtension.
+該類允許在 GDExtension 中實作 RenderData。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This class allows for a RenderData implementation to be made in GDExtension.
+該類允許在 GDExtension 中實作 RenderData。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ This class allows for a RenderData implementation to be made in GDExtension.
 
 :ref:`RID<class_RID>` **_get_camera_attributes**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderDataExtension_private_method__get_camera_attributes>`
 
-Implement this in GDExtension to return the :ref:`RID<class_RID>` for the implementation's camera attributes object.
+在 GDExtension 中實作它以回傳實作的相機屬性物件的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Implement this in GDExtension to return the :ref:`RID<class_RID>` for the implem
 
 :ref:`RID<class_RID>` **_get_environment**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderDataExtension_private_method__get_environment>`
 
-Implement this in GDExtension to return the :ref:`RID<class_RID>` of the implementation's environment object.
+在 GDExtension 中實作它以回傳實作的環境物件的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Implement this in GDExtension to return the :ref:`RID<class_RID>` of the impleme
 
 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **_get_render_scene_buffers**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderDataExtension_private_method__get_render_scene_buffers>`
 
-Implement this in GDExtension to return the implementation's :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object.
+在 GDExtension 中實作它以回傳實作的 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Implement this in GDExtension to return the implementation's :ref:`RenderSceneBu
 
 :ref:`RenderSceneData<class_RenderSceneData>` **_get_render_scene_data**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderDataExtension_private_method__get_render_scene_data>`
 
-Implement this in GDExtension to return the implementation's :ref:`RenderSceneDataExtension<class_RenderSceneDataExtension>` object.
+在 GDExtension 中實作它以回傳實作的 :ref:`RenderSceneDataExtension<class_RenderSceneDataExtension>` 物件。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -16,11 +16,11 @@ Adds a soft-clip limiter audio effect to an audio bus.
 Description
 -----------
 
-A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
+Un limiteur est semblable à un compresseur, mais il est moins flexible et conçu pour limiter le son au delà d'un certain seuil de décibels donné. L'ajout d'un limiteur dans le bus "Master" est toujours recommandé pour réduire les effets de la coupure quand le volume dépasse 0 dB.
 
-Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+La coupure douce commence à réduire les pics un peu en dessous du seuil et augmente progressivement son effet puisque le niveau d'entrée augmente de sorte que le seuil n'est jamais dépassé.
 
-If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+Si les coupures durs sont voulus, considérez :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -103,7 +103,7 @@ Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
+Cette propriété n'a aucun effet sur l'audio. Utilisez :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` à la place car cet effet Limiteur est obsolète.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
+Le seuil du niveau de volume à partir duquel le limiteur commence à être actif, en décibels. La valeur peut aller de -30 à 0.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

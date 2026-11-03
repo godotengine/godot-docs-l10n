@@ -16,7 +16,7 @@ CapsuleShape3D
 
 3D 膠囊形狀，旨在用於物理學。通常用於為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。
 
-\ **性能：**\ **CapsuleShape3D** 可以快速檢查碰撞。比 :ref:`CylinderShape3D<class_CylinderShape3D>` 快，但比 :ref:`SphereShape3D<class_SphereShape3D>` 和 :ref:`BoxShape3D<class_BoxShape3D>` 慢。
+\ **效能：**\ **CapsuleShape3D** 可以快速檢查碰撞。比 :ref:`CylinderShape3D<class_CylinderShape3D>` 快，但比 :ref:`SphereShape3D<class_SphereShape3D>` 和 :ref:`BoxShape3D<class_BoxShape3D>` 慢。
 
 .. rst-class:: classref-introduction-group
 
@@ -61,9 +61,9 @@ CapsuleShape3D
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The capsule's full height, including the hemispheres.
+膠囊體的總高度，包括半球。
 
-\ **Note:** The :ref:`height<class_CapsuleShape3D_property_height>` of a capsule must be at least twice its :ref:`radius<class_CapsuleShape3D_property_radius>`. Otherwise, the capsule becomes a sphere. If the :ref:`height<class_CapsuleShape3D_property_height>` is less than twice the :ref:`radius<class_CapsuleShape3D_property_radius>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`height<class_CapsuleShape3D_property_height>` 必須至少為其 :ref:`radius<class_CapsuleShape3D_property_radius>` 的兩倍。否則，膠囊體將變為球體。如果 :ref:`height<class_CapsuleShape3D_property_height>` 小於 :ref:`radius<class_CapsuleShape3D_property_radius>` 的兩倍，則屬性將調整為有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ The capsule's full height, including the hemispheres.
 - |void| **set_mid_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mid_height**\ (\ )
 
-The capsule's height, excluding the hemispheres. This is the height of the central cylindrical part in the middle of the capsule, and is the distance between the centers of the two hemispheres. This is a wrapper for :ref:`height<class_CapsuleShape3D_property_height>`.
+膠囊的高度，不包括兩個半球。這是膠囊中間圓柱部分的高度，即兩個半球球心之間的距離。這是對 :ref:`height<class_CapsuleShape3D_property_height>` 的封裝。
 
 .. rst-class:: classref-item-separator
 
@@ -97,9 +97,9 @@ The capsule's height, excluding the hemispheres. This is the height of the centr
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The capsule's radius.
+膠囊體的半徑。
 
-\ **Note:** The :ref:`radius<class_CapsuleShape3D_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_CapsuleShape3D_property_height>`. Otherwise, the capsule becomes a sphere. If the :ref:`radius<class_CapsuleShape3D_property_radius>` is greater than half of the :ref:`height<class_CapsuleShape3D_property_height>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`radius<class_CapsuleShape3D_property_radius>` 不能大於其 :ref:`height<class_CapsuleShape3D_property_height>` 的一半。否則，膠囊體將變為球體。如果 :ref:`radius<class_CapsuleShape3D_property_radius>` 大於 :ref:`height<class_CapsuleShape3D_property_height>` 的一半，則屬性將調整為有效值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

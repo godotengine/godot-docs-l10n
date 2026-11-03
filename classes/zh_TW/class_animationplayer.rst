@@ -303,7 +303,7 @@ enum **AnimationMethodCallMode**: :ref:`🔗<enum_AnimationPlayer_AnimationMetho
 
 目前正在播放的動畫鍵值。若未播放任何動畫，則為空字串。變更此值不會重新啟動動畫。更多播放方式請參閱 :ref:`play()<class_AnimationPlayer_method_play>`\ 。
 
-\ **注意：** 雖然此屬性會出現在屬性檢視器中，但並非用於編輯，且不會存入場景檔。主要用途是取得當前播放的動畫，以及供動畫播放軌內部使用。詳見 :ref:`Animation<class_Animation>`\ 。
+\ **注意：** 雖然此屬性會出現在屬性檢視器中，但並非用於編輯，且不會存入場景檔。主要用途是取得目前播放的動畫，以及供動畫播放軌內部使用。詳見 :ref:`Animation<class_Animation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ enum **AnimationMethodCallMode**: :ref:`🔗<enum_AnimationPlayer_AnimationMetho
 
 :ref:`bool<class_bool>` **is_animation_active**\ (\ ) |const| :ref:`🔗<class_AnimationPlayer_method_is_animation_active>`
 
-Returns ``true`` if the an animation is currently active. An animation is active if it was played by calling :ref:`play()<class_AnimationPlayer_method_play>` and was not finished yet, or was stopped by calling :ref:`stop()<class_AnimationPlayer_method_stop>`.
+若目前有動畫處於活動狀態則回傳 ``true``\ 。動畫在通過呼叫 :ref:`play()<class_AnimationPlayer_method_play>` 方法開始播放且尚未播放完畢時，又或者通過呼叫 :ref:`stop()<class_AnimationPlayer_method_stop>` 方法被停止時，均視為活動狀態。
 
-This can be used to check whether an animation is currently paused or stopped.
+此方法可用於檢查動畫目前是處於暫停狀態還是已停止狀態。
 
 ::
 
@@ -662,7 +662,7 @@ This can be used to check whether an animation is currently paused or stopped.
 
 |void| **pause**\ (\ ) :ref:`🔗<class_AnimationPlayer_method_pause>`
 
-暫停當前播放的動畫。\ :ref:`current_animation_position<class_AnimationPlayer_property_current_animation_position>` 會被保留；呼叫 :ref:`play()<class_AnimationPlayer_method_play>` 或 :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>` 而不帶參數，或帶與 :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>` 相同的動畫名稱，即可繼續播放。
+暫停目前播放的動畫。\ :ref:`current_animation_position<class_AnimationPlayer_property_current_animation_position>` 會被保留；呼叫 :ref:`play()<class_AnimationPlayer_method_play>` 或 :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>` 而不帶參數，或帶與 :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>` 相同的動畫名稱，即可繼續播放。
 
 另見 :ref:`stop()<class_AnimationPlayer_method_stop>`\ 。
 
@@ -815,7 +815,7 @@ This can be used to check whether an animation is currently paused or stopped.
 
 |void| **seek**\ (\ seconds\: :ref:`float<class_float>`, update\: :ref:`bool<class_bool>` = false, update_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationPlayer_method_seek>`
 
-將動畫跳至 ``seconds`` 秒位置。若 ``update`` 為 ``true``\ ，動畫會立即更新；否則將於處理時更新。當前影格到 ``seconds`` 之間的事件會被略過。
+將動畫跳至 ``seconds`` 秒位置。若 ``update`` 為 ``true``\ ，動畫會立即更新；否則將於處理時更新。目前影格到 ``seconds`` 之間的事件會被略過。
 
 若 ``update_only`` 為 ``true``\ ，方法／音訊／動畫播放軌將不會被處理。
 
@@ -885,7 +885,7 @@ This can be used to check whether an animation is currently paused or stopped.
 
 |void| **set_section**\ (\ start_time\: :ref:`float<class_float>` = -1, end_time\: :ref:`float<class_float>` = -1\ ) :ref:`🔗<class_AnimationPlayer_method_set_section>`
 
-變更正在播放區段的起始與結束時間，當前播放位置會被限制在新區段內。詳見 :ref:`play_section()<class_AnimationPlayer_method_play_section>`\ 。
+變更正在播放區段的起始與結束時間，目前播放位置會被限制在新區段內。詳見 :ref:`play_section()<class_AnimationPlayer_method_play_section>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -897,7 +897,7 @@ This can be used to check whether an animation is currently paused or stopped.
 
 |void| **set_section_with_markers**\ (\ start_marker\: :ref:`StringName<class_StringName>` = &"", end_marker\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationPlayer_method_set_section_with_markers>`
 
-變更正在播放區段的起始與結束標記，當前播放位置會被限制在新區段內。詳見 :ref:`play_section_with_markers()<class_AnimationPlayer_method_play_section_with_markers>`\ 。
+變更正在播放區段的起始與結束標記，目前播放位置會被限制在新區段內。詳見 :ref:`play_section_with_markers()<class_AnimationPlayer_method_play_section_with_markers>`\ 。
 
 若參數為空，區段將使用動畫的開頭或結尾；若兩者皆空，代表未設定區段。
 
@@ -911,7 +911,7 @@ This can be used to check whether an animation is currently paused or stopped.
 
 |void| **stop**\ (\ keep_state\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationPlayer_method_stop>`
 
-停止當前播放的動畫，並將動畫位置重設為 ``0``\ 、\ ``custom_speed`` 重設為 ``1.0``\ 。另見 :ref:`pause()<class_AnimationPlayer_method_pause>`\ 。
+停止目前播放的動畫，並將動畫位置重設為 ``0``\ 、\ ``custom_speed`` 重設為 ``1.0``\ 。另見 :ref:`pause()<class_AnimationPlayer_method_pause>`\ 。
 
 若 ``keep_state`` 為 ``true``\ ，動畫狀態不會在畫面上更新。
 

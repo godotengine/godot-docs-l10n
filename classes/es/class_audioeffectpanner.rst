@@ -7,9 +7,9 @@ AudioEffectPanner
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a panner audio effect to an audio bus.
+Añade un efecto de panoramización a un bus de audio.
 
-Pans the sound left or right.
+Desplaza el sonido hacia la izquierda o la derecha.
 
 .. rst-class:: classref-introduction-group
 
@@ -61,7 +61,7 @@ Descripciones de Propiedades
 - |void| **set_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan**\ (\ )
 
-Pan position. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Posición de paneo. Los valores negativos panean el sonido a la izquierda, los positivos a la derecha. El valor puede variar de -1 a 1.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

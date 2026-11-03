@@ -166,7 +166,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
+Devuelve ``true`` si un **bool** es ``true`` y el otro **bool** es ``false``. Equivale a un XOR lógico (NEQ).
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
+Devuelve ``true`` si el **bool** de la izquierda es ``false`` y ``right`` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
+Devuelve ``true`` si el **bool** de la izquierda es ``true`` y ``right`` es ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

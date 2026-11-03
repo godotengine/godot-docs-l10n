@@ -7,18 +7,18 @@ XRCamera3D
 
 **繼承：** :ref:`Camera3D<class_Camera3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A camera node which automatically positions itself based on XR tracking data.
+一個根據 XR 追蹤資料自動定位自身的相機節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A camera node which automatically positions itself based on XR tracking data.
+一個根據 XR 追蹤資料自動定位自身的相機節點。
 
-In contrast to :ref:`XRController3D<class_XRController3D>`, the render thread has access to more up-to-date tracking data, and the location of the **XRCamera3D** node can lag a few milliseconds behind what is used for rendering.
+與 :ref:`XRController3D<class_XRController3D>` 相比，渲染執行緒能夠存取更新的追蹤資料，因此 **XRCamera3D** 節點的位置可能會比用於渲染的位置滯後幾毫秒。
 
-\ **Note:** If :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` is ``true``, most of the camera properties are overridden by the active :ref:`XRInterface<class_XRInterface>`. The only properties that can be trusted are the near and far planes.
+\ **注意：** 如果 :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` 為 ``true``\ ，則大多數相機屬性都會被啟用的 :ref:`XRInterface<class_XRInterface>` 重寫。唯一可信的屬性是近裁面和遠裁面。
 
 .. rst-class:: classref-introduction-group
 

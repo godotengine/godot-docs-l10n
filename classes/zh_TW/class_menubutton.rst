@@ -10,14 +10,14 @@ MenuButton
 
 **繼承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-點擊後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。
+點選後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-點擊後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。可以使用 ``get_popup().add_item("功能表專案名稱")`` 在這個 :ref:`PopupMenu<class_PopupMenu>` 中建立新的功能表專案，也可以直接從 Godot 編輯器的屬性檢視器中建立。
+點選後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。可以使用 ``get_popup().add_item("功能表專案名稱")`` 在這個 :ref:`PopupMenu<class_PopupMenu>` 中建立新的功能表專案，也可以直接從 Godot 編輯器的屬性檢視器中建立。
 
 另見 :ref:`BaseButton<class_BaseButton>`\ ，提供了與該節點相關的常用屬性和方法。
 
@@ -122,9 +122,9 @@ MenuButton
 
 :ref:`int<class_int>` **popup/item_{index}/checkable** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+索引為 ``index`` 的可勾選選單項的型別。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/checked** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+如果設定為 ``true``\ ，那麼位於 ``index`` 位置的選項就會被勾選。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍在 ``0 到 item_count - 1`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ If ``true``, the item at ``index`` is checked.
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果為 ``true``\ ，則停用位於 ``index`` 處的項目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_MenuButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+位於 ``index`` 處的項目的圖示。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+索引為 ``index`` 的選單項的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果為 ``true``\ ，則索引為 ``index`` 的選單項是一個分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+位於 ``index`` 處的項目的文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ The text of the item at ``index``.
 - |void| **set_switch_on_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_switch_on_hover**\ (\ )
 
-If ``true``, when the cursor hovers above another **MenuButton** within the same parent which also has :ref:`switch_on_hover<class_MenuButton_property_switch_on_hover>` enabled, it will close the current **MenuButton** and open the other one.
+如果為 ``true``\ ，當游標懸停在同一父級中也啟用了 :ref:`switch_on_hover<class_MenuButton_property_switch_on_hover>` 的另一個 **MenuButton** 上方時，它將關閉目前的 **MenuButton** 並打開另一個。
 
 .. rst-class:: classref-section-separator
 
@@ -256,7 +256,7 @@ If ``true``, when the cursor hovers above another **MenuButton** within the same
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuButton_method_set_disable_shortcuts>`
 
-如果為 ``true``\ ，快捷方式將被禁用，無法用於觸發按鈕。
+如果為 ``true``\ ，快捷方式將被停用，無法用於觸發按鈕。
 
 .. rst-class:: classref-item-separator
 

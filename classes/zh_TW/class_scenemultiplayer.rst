@@ -22,7 +22,7 @@ SceneMultiplayer
 
 \ **注意：**\ 高階多人遊戲 API 協議屬於實作細節，並不打算提供給非 Godot 伺服器使用。對協議的更改可能不會進行提前通知。
 
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署之前，請務必在安卓導出預設中開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署之前，請務必在安卓匯出預設中開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
 
 .. rst-class:: classref-reftable-group
 
@@ -111,7 +111,7 @@ SceneMultiplayer
 
 **peer_packet**\ (\ id\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_packet>`
 
-當這個 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 收到帶有自定義資料（見 :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`\ ）的 ``packet`` 時發出。ID 是發送封包的對等體的對等體 ID。
+當這個 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 收到帶有自訂資料（見 :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`\ ）的 ``packet`` 時發出。ID 是發送封包的對等體的對等體 ID。
 
 .. rst-class:: classref-section-separator
 
@@ -152,7 +152,7 @@ SceneMultiplayer
 - |void| **set_auth_callback**\ (\ value\: :ref:`Callable<class_Callable>`\ )
 - :ref:`Callable<class_Callable>` **get_auth_callback**\ (\ )
 
-The callback to execute when receiving authentication data sent via :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>`. If the :ref:`Callable<class_Callable>` is empty (default), peers will be automatically accepted as soon as they connect.
+當通過 :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>` 接收身份驗證資料時要執行的回呼函式。如果 :ref:`Callable<class_Callable>` 為空（預設），對等方將在連接後立即自動接受。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ The callback to execute when receiving authentication data sent via :ref:`send_a
 - |void| **set_auth_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auth_timeout**\ (\ )
 
-If set to a value greater than ``0.0``, the maximum duration in seconds peers can stay in the authenticating state, after which the authentication will automatically fail. See the :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>` and :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` signals.
+如果將其設定為大於 ``0.0`` 的值，則對等方可以停留在正在驗證狀態的最長時間，單位為秒，之後身份驗證將自動失敗。見 :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>` 和 :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` 訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_server_relay_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_server_relay_enabled**\ (\ )
 
-啟用或禁用伺服器功能，該功能通知使用者端其他對等體的連接/斷開，並在它們之間轉發消息。當此選項為 ``false`` 時，使用者端將不會自動收到其他對等體的通知，也無法通過伺服器向它們發送封包。
+啟用或停用伺服器功能，該功能通知使用者端其他對等體的連接/斷開，並在它們之間轉發訊息。當此選項為 ``false`` 時，使用者端將不會自動收到其他對等體的通知，也無法通過伺服器向它們發送封包。
 
 \ **注意：**\ 在其他對等體連接時更改此選項可能會導致意外行為。
 
@@ -289,7 +289,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`Error<enum_@GlobalScope_Error>` **complete_auth**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_method_complete_auth>`
 
-完成對由 ``id`` 標識的遠端對等體的身份驗證步驟。遠端端也完成身份驗證之後，將會為這個對等體發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` 訊號。不會再從此對等體接收到身份驗證消息。
+完成對由 ``id`` 標識的遠端對等體的身份驗證步驟。遠端端也完成身份驗證之後，將會為這個對等體發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` 訊號。不會再從此對等體接收到身份驗證訊息。
 
 如果對等體在完成身份驗證之前斷開連接，無論是由於網路問題、\ :ref:`auth_timeout<class_SceneMultiplayer_property_auth_timeout>` 過期還是手動呼叫 :ref:`disconnect_peer()<class_SceneMultiplayer_method_disconnect_peer>`\ ，都會發出 :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` 訊號，而不是 :ref:`MultiplayerAPI.peer_disconnected<class_MultiplayerAPI_signal_peer_disconnected>` 訊號。
 
@@ -327,7 +327,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`Error<enum_@GlobalScope_Error>` **send_auth**\ (\ id\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_SceneMultiplayer_method_send_auth>`
 
-將指定的 ``data`` 作為身份驗證消息的一部分發送到由 ``id`` 標識的遠端對等方。這可用於驗證對等方，並控制何時發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ （並接受遠端對等方作為連接的對等方之一）。
+將指定的 ``data`` 作為身份驗證訊息的一部分發送到由 ``id`` 標識的遠端對等方。這可用於驗證對等方，並控制何時發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ （並接受遠端對等方作為連接的對等方之一）。
 
 .. rst-class:: classref-item-separator
 

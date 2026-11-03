@@ -7,14 +7,14 @@ VScrollBar
 
 **繼承：** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-垂直捲動條，從頂部（最小）滾動到底部（最大）。
+垂直捲動條，從頂部（最小）捲動到底部（最大）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-垂直捲動條，通常用於為超出控制項可見高度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控件，從頂部（最小）滾動到底部（最大）。注意，滾動方向和 :ref:`VSlider<class_VSlider>` 相反。
+垂直捲動條，通常用於為超出控制項可見高度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控制項，從頂部（最小）捲動到底部（最大）。注意，捲動方向和 :ref:`VSlider<class_VSlider>` 相反。
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +59,9 @@ VScrollBar
 
 :ref:`int<class_int>` **padding_left** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_left>`
 
-Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素左側與 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之間的內邊距。
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要應用垂直內邊距，請改為修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的頂部/底部內容邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -73,9 +73,9 @@ Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_sty
 
 :ref:`int<class_int>` **padding_right** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_right>`
 
-Padding between the right of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素右側與 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之間的內邊距。
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要應用垂直內邊距，請改為修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的頂部/底部內容邊距。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

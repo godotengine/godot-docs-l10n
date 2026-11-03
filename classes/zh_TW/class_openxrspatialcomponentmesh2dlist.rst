@@ -9,14 +9,14 @@ OpenXRSpatialComponentMesh2DList
 
 **繼承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries mesh2d result data.
+用於儲存查詢 mesh2d 結果資料的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用於儲存呼叫 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 時查詢到的 2D 網格結果資料的物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpat
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_indices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_indices>`
 
-Returns the mesh indices for the entity at this ``index``.
+回傳該 ``index`` 處實體的網格索引。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the mesh indices for the entity at this ``index``.
 
 :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_transform>`
 
-Returns the transform for positioning our mesh for the entity at this ``index``.
+回傳用於定位該 ``index`` 處實體的網格的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Returns the transform for positioning our mesh for the entity at this ``index``.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_vertices>`
 
-Returns the mesh vertices for the entity at this ``index``.
+回傳該 ``index`` 處實體的網格頂點。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

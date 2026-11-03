@@ -145,7 +145,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_MONO** = ``1``
 
-此介面可以與正常的算繪輸出一起工作（非基於 HMD 的 AR）。
+此介面可以與正常的渲染輸出一起工作（非基於 HMD 的 AR）。
 
 .. _class_XRInterface_constant_XR_STEREO:
 
@@ -153,7 +153,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_STEREO** = ``2``
 
-該介面支援立體算繪。
+該介面支援立體渲染。
 
 .. _class_XRInterface_constant_XR_QUAD:
 
@@ -161,7 +161,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_QUAD** = ``4``
 
-該介面支援四邊形算繪（Godot 尚不支援）。
+該介面支援四邊形渲染（Godot 尚不支援）。
 
 .. _class_XRInterface_constant_XR_VR:
 
@@ -185,7 +185,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_EXTERNAL** = ``32``
 
-該介面輸出至外部裝置。如果使用的是主視口，則螢幕上的輸出是未經修改的左眼或右眼緩衝區（如果視口大小未更改至與 :ref:`get_render_target_size()<class_XRInterface_method_get_render_target_size>` 相同的縱橫比，則會進行拉伸）。使用單獨的視口節點能夠將主視口讓出來做別的事情。
+該介面輸出至外部裝置。如果使用的是主視埠，則螢幕上的輸出是未經修改的左眼或右眼緩衝區（如果視埠大小未更改至與 :ref:`get_render_target_size()<class_XRInterface_method_get_render_target_size>` 相同的縱橫比，則會進行拉伸）。使用單獨的視埠節點能夠將主視埠讓出來做別的事情。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ enum **PlayAreaMode**: :ref:`🔗<enum_XRInterface_PlayAreaMode>`
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_STAGE** = ``4``
 
-Same as :ref:`XR_PLAY_AREA_ROOMSCALE<class_XRInterface_constant_XR_PLAY_AREA_ROOMSCALE>` but origin point is fixed to the center of the physical space. In this mode, system-level recentering may be disabled, requiring the use of :ref:`XRServer.center_on_hmd()<class_XRServer_method_center_on_hmd>`.
+與 :ref:`XR_PLAY_AREA_ROOMSCALE<class_XRInterface_constant_XR_PLAY_AREA_ROOMSCALE>` 相同，但是原點固定在物理空間的中心。在這個模式下，可能會停用通過 :ref:`XRServer.center_on_hmd()<class_XRServer_method_center_on_hmd>` 進行的系統層級的中心重定位。
 
 .. _class_XRInterface_constant_XR_PLAY_AREA_CUSTOM:
 
@@ -293,7 +293,7 @@ Same as :ref:`XR_PLAY_AREA_ROOMSCALE<class_XRInterface_constant_XR_PLAY_AREA_ROO
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_CUSTOM** = ``2147483647``
 
-Custom play area set by a GDExtension.
+GDExtension 設定的自訂游玩區域。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ enum **VRSTextureFormat**: :ref:`🔗<enum_XRInterface_VRSTextureFormat>`
 
 :ref:`VRSTextureFormat<enum_XRInterface_VRSTextureFormat>` **XR_VRS_TEXTURE_FORMAT_UNIFIED** = ``0``
 
-The texture format is the same as returned by :ref:`XRVRS.make_vrs_texture()<class_XRVRS_method_make_vrs_texture>`.
+紋理格式與 :ref:`XRVRS.make_vrs_texture()<class_XRVRS_method_make_vrs_texture>` 回傳的格式相同。
 
 .. _class_XRInterface_constant_XR_VRS_TEXTURE_FORMAT_FRAGMENT_SHADING_RATE:
 
@@ -353,7 +353,7 @@ The texture format is the same as returned by :ref:`XRVRS.make_vrs_texture()<cla
 
 :ref:`VRSTextureFormat<enum_XRInterface_VRSTextureFormat>` **XR_VRS_TEXTURE_FORMAT_FRAGMENT_SHADING_RATE** = ``1``
 
-The texture format is the same as expected by the Vulkan ``VK_KHR_fragment_shading_rate`` extension.
+紋理格式與 Vulkan ``VK_KHR_fragment_shading_rate`` 擴充所期望的格式相同。
 
 .. _class_XRInterface_constant_XR_VRS_TEXTURE_FORMAT_FRAGMENT_DENSITY_MAP:
 
@@ -361,7 +361,7 @@ The texture format is the same as expected by the Vulkan ``VK_KHR_fragment_shadi
 
 :ref:`VRSTextureFormat<enum_XRInterface_VRSTextureFormat>` **XR_VRS_TEXTURE_FORMAT_FRAGMENT_DENSITY_MAP** = ``2``
 
-The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_density_map`` extension.
+紋理格式與 Vulkan ``VK_EXT_fragment_density_map`` 擴充所期望的格式相同。
 
 .. rst-class:: classref-section-separator
 
@@ -475,7 +475,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 
 :ref:`StringName<class_StringName>` **get_name**\ (\ ) |const| :ref:`🔗<class_XRInterface_method_get_name>`
 
-Returns the name of this interface (``"OpenXR"``, ``"OpenVR"``, ``"OpenHMD"``, ``"ARKit"``, etc.).
+回傳該介面的名稱（\ ``"OpenXR"``\ 、\ ``"OpenVR"``\ 、\ ``"OpenHMD"``\ 、\ ``"ARKit"`` 等）。
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +487,7 @@ Returns the name of this interface (``"OpenXR"``, ``"OpenVR"``, ``"OpenHMD"``, `
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_play_area**\ (\ ) |const| :ref:`🔗<class_XRInterface_method_get_play_area>`
 
-Returns an array of vectors that represent the physical play area mapped to the virtual space around the :ref:`XROrigin3D<class_XROrigin3D>` point. The points form a convex polygon that can be used to react to or visualize the play area. This returns an empty array if this feature is not supported or if the information is not yet available.
+回傳一個向量陣列，表示映射到 :ref:`XROrigin3D<class_XROrigin3D>` 點周圍的虛擬空間的物理游玩區域。這些點形成一個凸多邊形，可被用於對游玩區域做出反應或視覺化。如果該功能不受支援或資訊尚不可用，則回傳一個空陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Vector2<class_Vector2>` **get_render_target_size**\ (\ ) :ref:`🔗<class_XRInterface_method_get_render_target_size>`
 
-返回在VR平臺套用鏡頭失真等內容之前算繪的中間結果的解析度。
+返回在VR平臺套用鏡頭失真等內容之前渲染的中間結果的解析度。
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) :ref:`🔗<class_XRInterface_method_get_view_count>`
 
-返回該裝置算繪所需的視圖數量。1 代表單目平面視圖，2 代表雙目立體視圖。
+返回該裝置渲染所需的視圖數量。1 代表單目平面視圖，2 代表雙目立體視圖。
 
 .. rst-class:: classref-item-separator
 
@@ -589,15 +589,15 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`bool<class_bool>` **initialize**\ (\ ) :ref:`🔗<class_XRInterface_method_initialize>`
 
-呼叫它來初始化這個介面。被初始化的第一個介面被識別為主介面，它將用於算繪輸出。
+呼叫它來初始化這個介面。被初始化的第一個介面被識別為主介面，它將用於渲染輸出。
 
-初始化想要使用的介面後，需要啟用視口的 AR/VR 模式，並且算繪應該開始。
+初始化想要使用的介面後，需要啟用視埠的 AR/VR 模式，並且渲染應該開始。
 
-\ **注意：**\ 對於任何使用 Godot 主輸出的裝置，例如移動 VR，必須在主視口上啟用 XR 模式。
+\ **注意：**\ 對於任何使用 Godot 主輸出的裝置，例如移動 VR，必須在主視埠上啟用 XR 模式。
 
-如果為處理自己輸出的平臺（例如 OpenVR）執行該操作，則 Godot 將只顯示一隻眼睛而不會在螢幕上失真。或者，可以將單獨的視口節點新增到場景並在該視口上啟用 AR/VR。它將被用於輸出到 HMD，讓你可以在主視窗中自由地做任何你喜歡的事情，例如使用單獨的相機作為旁觀者相機或算繪完全不同的東西。
+如果為處理自己輸出的平臺（例如 OpenVR）執行該操作，則 Godot 將只顯示一隻眼睛而不會在螢幕上失真。或者，可以將單獨的視埠節點新增到場景並在該視埠上啟用 AR/VR。它將被用於輸出到 HMD，讓你可以在主視窗中自由地做任何你喜歡的事情，例如使用單獨的相機作為旁觀者相機或渲染完全不同的東西。
 
-雖然目前未使用，但可以啟動其他介面。如果想追蹤來自其他平臺的控制器，可能會希望這樣做。但是，此時只有一個介面可以算繪到 HMD。
+雖然目前未使用，但可以啟動其他介面。如果想追蹤來自其他平臺的控制器，可能會希望這樣做。但是，此時只有一個介面可以渲染到 HMD。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 **已棄用：** Check if :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` is :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`, instead.
 
-Returns ``true`` if passthrough is enabled.
+如果已啟用穿透，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Returns ``true`` if passthrough is enabled.
 
 **已棄用：** Check that :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is supported using :ref:`get_supported_environment_blend_modes()<class_XRInterface_method_get_supported_environment_blend_modes>`, instead.
 
-Returns ``true`` if this interface supports passthrough.
+如果該介面支援穿透，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -649,11 +649,11 @@ Returns ``true`` if this interface supports passthrough.
 
 :ref:`bool<class_bool>` **set_environment_blend_mode**\ (\ mode\: :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>`\ ) :ref:`🔗<class_XRInterface_method_set_environment_blend_mode>`
 
-Sets the active environment blend mode.
+設定活動的環境混合模式。
 
-\ ``mode`` is the environment blend mode starting with the next frame.
+\ ``mode`` 是從下一影格開始的環境混合模式。
 
-\ **Note:** Not all runtimes support all environment blend modes, so it is important to check this at startup. For example:
+\ **注意：**\ 並非所有執行時都支援全部的環境混合模式，因此在啟動時檢查這一點很重要。例如：
 
 ::
 
@@ -679,9 +679,9 @@ Sets the active environment blend mode.
 
 :ref:`bool<class_bool>` **set_play_area_mode**\ (\ mode\: :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>`\ ) :ref:`🔗<class_XRInterface_method_set_play_area_mode>`
 
-Sets the active play area mode, will return ``false`` if the mode can't be used with this interface.
+設定活動的游玩區域模式，如果該模式不能與該介面一起使用，將回傳 ``false``\ 。
 
-\ **Note:** Changing this after the interface has already been initialized can be jarring for the player, so it's recommended to recenter on the HMD with :ref:`XRServer.center_on_hmd()<class_XRServer_method_center_on_hmd>` (if switching to :ref:`XR_PLAY_AREA_STAGE<class_XRInterface_constant_XR_PLAY_AREA_STAGE>`) or make the switch during a scene change.
+\ **注意：**\ 在介面初始化後更改該設定可能會讓玩家感到不舒服，因此建議使用 :ref:`XRServer.center_on_hmd()<class_XRServer_method_center_on_hmd>` 在 HMD 上重新居中（如果切換到 :ref:`XR_PLAY_AREA_STAGE<class_XRInterface_constant_XR_PLAY_AREA_STAGE>`\ ）或在場景改變時進行切換。
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ Sets the active play area mode, will return ``false`` if the mode can't be used 
 
 啟動穿透，如果無法啟動則會返回 ``false``\ 。
 
-\ **注意：**\ XR 所使用的視口必須有透明背景，否則穿透可能無法正確算繪。
+\ **注意：**\ XR 所使用的視埠必須有透明背景，否則穿透可能無法正確渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -735,19 +735,19 @@ Sets the active play area mode, will return ``false`` if the mode can't be used 
 
 |void| **trigger_haptic_pulse**\ (\ action_name\: :ref:`String<class_String>`, tracker_name\: :ref:`StringName<class_StringName>`, frequency\: :ref:`float<class_float>`, amplitude\: :ref:`float<class_float>`, duration_sec\: :ref:`float<class_float>`, delay_sec\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRInterface_method_trigger_haptic_pulse>`
 
-Triggers a haptic pulse on a device associated with this interface.
+在與該介面相關聯的裝置上觸發一次觸覺脈衝。
 
-\ ``action_name`` is the name of the action for this pulse.
+\ ``action_name`` 是該脈衝的動作名稱。
 
-\ ``tracker_name`` is optional and can be used to direct the pulse to a specific device provided that device is bound to this haptic.
+\ ``tracker_name`` 是可選的，可用於將脈衝引導至特定裝置，前提是該裝置被綁定到該觸覺。
 
-\ ``frequency`` is the frequency of the pulse, set to ``0.0`` to have the system use a default frequency.
+\ ``frequency`` 是脈衝的頻率，設定為 ``0.0`` 可讓系統使用預設頻率。
 
-\ ``amplitude`` is the amplitude of the pulse between ``0.0`` and ``1.0``.
+\ ``amplitude`` 是介於 ``0.0`` 和 ``1.0`` 之間的脈衝幅度。
 
-\ ``duration_sec`` is the duration of the pulse in seconds.
+\ ``duration_sec`` 是脈衝的持續時間（單位為秒）。
 
-\ ``delay_sec`` is a delay in seconds before the pulse is given.
+\ ``delay_sec`` 是發出脈衝之前的延遲（單位為秒）。
 
 .. rst-class:: classref-item-separator
 

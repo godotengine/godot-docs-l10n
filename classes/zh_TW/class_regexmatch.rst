@@ -7,7 +7,7 @@ RegExMatch
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-包含 :ref:`RegEx<class_RegEx>` 搜索的結果。
+包含 :ref:`RegEx<class_RegEx>` 搜尋的結果。
 
 .. rst-class:: classref-introduction-group
 
@@ -103,7 +103,7 @@ RegExMatch
 
 - :ref:`String<class_String>` **get_subject**\ (\ )
 
-與搜索模式一起使用的源字串，以找到這個配對結果。
+與搜尋模式一起使用的源字串，以找到這個配對結果。
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ RegExMatch
 
 :ref:`int<class_int>` **get_end**\ (\ name\: :ref:`Variant<class_Variant>` = 0\ ) |const| :ref:`🔗<class_RegExMatch_method_get_end>`
 
-返回源字串中配對的結束位置。捕獲組的結束位置可以通過提供其組號的整數或其字符串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個運算式。
+返回源字串中配對的結束位置。捕獲組的結束位置可以通過提供其組號的整數或其字串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個運算式。
 
 如果該組沒有配對或不存在，則返回 -1。
 
@@ -146,7 +146,7 @@ RegExMatch
 
 :ref:`int<class_int>` **get_start**\ (\ name\: :ref:`Variant<class_Variant>` = 0\ ) |const| :ref:`🔗<class_RegExMatch_method_get_start>`
 
-返回源字串中配對的起始位置。捕獲組的起始位置可以通過提供它的組號作為一個整數或它的字串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個表達式。
+返回源字串中配對的起始位置。捕獲組的起始位置可以通過提供它的組號作為一個整數或它的字串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個運算式。
 
 如果組沒有配對或不存在，返回 -1。
 

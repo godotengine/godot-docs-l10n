@@ -9,16 +9,16 @@ XRFaceTracker
 
 **繼承：** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A tracked face.
+追蹤的面部。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An instance of this object represents a tracked face and its corresponding blend shapes. The blend shapes come from the `Unified Expressions <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes>`__ standard, and contain extended details and visuals for each blend shape. Additionally the `Tracking Standard Comparison <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/overview>`__ page documents the relationship between Unified Expressions and other standards.
+該物件的實例表示追蹤的面部及其相應的混合形狀。混合形狀來自\ `統一表情 <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes>`__\ 標準，並包含每個混合形狀的擴充細節和視覺效果。此外，\ `追蹤標準比較 <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/overview>`__\ 頁面記錄了統一表情和其他標準之間的關係。
 
-As face trackers are turned on they are registered with the :ref:`XRServer<class_XRServer>`.
+當面部追蹤器打開時，它們會在 :ref:`XRServer<class_XRServer>` 中注冊。
 
 .. rst-class:: classref-introduction-group
 
@@ -76,7 +76,7 @@ enum **BlendShapeEntry**: :ref:`🔗<enum_XRFaceTracker_BlendShapeEntry>`
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_OUT_RIGHT** = ``0``
 
-Right eye looks outwards.
+右眼向外看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_IN_RIGHT:
 
@@ -84,7 +84,7 @@ Right eye looks outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_IN_RIGHT** = ``1``
 
-Right eye looks inwards.
+右眼向內看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_UP_RIGHT:
 
@@ -92,7 +92,7 @@ Right eye looks inwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_UP_RIGHT** = ``2``
 
-Right eye looks upwards.
+右眼向上看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_DOWN_RIGHT:
 
@@ -100,7 +100,7 @@ Right eye looks upwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_DOWN_RIGHT** = ``3``
 
-Right eye looks downwards.
+右眼向下看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_OUT_LEFT:
 
@@ -108,7 +108,7 @@ Right eye looks downwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_OUT_LEFT** = ``4``
 
-Left eye looks outwards.
+左眼向外看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_IN_LEFT:
 
@@ -116,7 +116,7 @@ Left eye looks outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_IN_LEFT** = ``5``
 
-Left eye looks inwards.
+左眼向內看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_UP_LEFT:
 
@@ -124,7 +124,7 @@ Left eye looks inwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_UP_LEFT** = ``6``
 
-Left eye looks upwards.
+左眼向上看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_LOOK_DOWN_LEFT:
 
@@ -132,7 +132,7 @@ Left eye looks upwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_LOOK_DOWN_LEFT** = ``7``
 
-Left eye looks downwards.
+左眼向下看。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CLOSED_RIGHT:
 
@@ -140,7 +140,7 @@ Left eye looks downwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CLOSED_RIGHT** = ``8``
 
-Closes the right eyelid.
+閉上右眼瞼。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CLOSED_LEFT:
 
@@ -148,7 +148,7 @@ Closes the right eyelid.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CLOSED_LEFT** = ``9``
 
-Closes the left eyelid.
+閉上左眼瞼。
 
 .. _class_XRFaceTracker_constant_FT_EYE_SQUINT_RIGHT:
 
@@ -156,7 +156,7 @@ Closes the left eyelid.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_SQUINT_RIGHT** = ``10``
 
-Squeezes the right eye socket muscles.
+收縮右眼眶肌肉。
 
 .. _class_XRFaceTracker_constant_FT_EYE_SQUINT_LEFT:
 
@@ -164,7 +164,7 @@ Squeezes the right eye socket muscles.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_SQUINT_LEFT** = ``11``
 
-Squeezes the left eye socket muscles.
+收縮左眼眶肌肉。
 
 .. _class_XRFaceTracker_constant_FT_EYE_WIDE_RIGHT:
 
@@ -172,7 +172,7 @@ Squeezes the left eye socket muscles.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_WIDE_RIGHT** = ``12``
 
-Right eyelid widens beyond relaxed.
+右眼瞼睜大得超出了放鬆範圍。
 
 .. _class_XRFaceTracker_constant_FT_EYE_WIDE_LEFT:
 
@@ -180,7 +180,7 @@ Right eyelid widens beyond relaxed.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_WIDE_LEFT** = ``13``
 
-Left eyelid widens beyond relaxed.
+左眼瞼睜大得超出了放鬆範圍。
 
 .. _class_XRFaceTracker_constant_FT_EYE_DILATION_RIGHT:
 
@@ -188,7 +188,7 @@ Left eyelid widens beyond relaxed.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_DILATION_RIGHT** = ``14``
 
-Dilates the right eye pupil.
+擴張右瞳孔。
 
 .. _class_XRFaceTracker_constant_FT_EYE_DILATION_LEFT:
 
@@ -196,7 +196,7 @@ Dilates the right eye pupil.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_DILATION_LEFT** = ``15``
 
-Dilates the left eye pupil.
+擴張左瞳孔。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CONSTRICT_RIGHT:
 
@@ -204,7 +204,7 @@ Dilates the left eye pupil.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CONSTRICT_RIGHT** = ``16``
 
-Constricts the right eye pupil.
+收縮右瞳孔。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CONSTRICT_LEFT:
 
@@ -212,7 +212,7 @@ Constricts the right eye pupil.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CONSTRICT_LEFT** = ``17``
 
-Constricts the left eye pupil.
+收縮左瞳孔。
 
 .. _class_XRFaceTracker_constant_FT_BROW_PINCH_RIGHT:
 
@@ -220,7 +220,7 @@ Constricts the left eye pupil.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_PINCH_RIGHT** = ``18``
 
-Right eyebrow pinches in.
+右眉毛向內收縮。
 
 .. _class_XRFaceTracker_constant_FT_BROW_PINCH_LEFT:
 
@@ -228,7 +228,7 @@ Right eyebrow pinches in.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_PINCH_LEFT** = ``19``
 
-Left eyebrow pinches in.
+左眉毛向內收縮。
 
 .. _class_XRFaceTracker_constant_FT_BROW_LOWERER_RIGHT:
 
@@ -236,7 +236,7 @@ Left eyebrow pinches in.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_LOWERER_RIGHT** = ``20``
 
-Outer right eyebrow pulls down.
+右眉毛外側下拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_LOWERER_LEFT:
 
@@ -244,7 +244,7 @@ Outer right eyebrow pulls down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_LOWERER_LEFT** = ``21``
 
-Outer left eyebrow pulls down.
+左眉毛外側下拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_INNER_UP_RIGHT:
 
@@ -252,7 +252,7 @@ Outer left eyebrow pulls down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_INNER_UP_RIGHT** = ``22``
 
-Inner right eyebrow pulls up.
+右眉毛內側上拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_INNER_UP_LEFT:
 
@@ -260,7 +260,7 @@ Inner right eyebrow pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_INNER_UP_LEFT** = ``23``
 
-Inner left eyebrow pulls up.
+左眉毛內側上拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_OUTER_UP_RIGHT:
 
@@ -268,7 +268,7 @@ Inner left eyebrow pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_OUTER_UP_RIGHT** = ``24``
 
-Outer right eyebrow pulls up.
+右眉毛外側上拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_OUTER_UP_LEFT:
 
@@ -276,7 +276,7 @@ Outer right eyebrow pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_OUTER_UP_LEFT** = ``25``
 
-Outer left eyebrow pulls up.
+左眉毛外側上拉。
 
 .. _class_XRFaceTracker_constant_FT_NOSE_SNEER_RIGHT:
 
@@ -284,7 +284,7 @@ Outer left eyebrow pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NOSE_SNEER_RIGHT** = ``26``
 
-Right side face sneers.
+右臉譏笑。
 
 .. _class_XRFaceTracker_constant_FT_NOSE_SNEER_LEFT:
 
@@ -292,7 +292,7 @@ Right side face sneers.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NOSE_SNEER_LEFT** = ``27``
 
-Left side face sneers.
+左臉譏笑。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_DILATION_RIGHT:
 
@@ -300,7 +300,7 @@ Left side face sneers.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_DILATION_RIGHT** = ``28``
 
-Right side nose canal dilates.
+右側鼻腔擴張。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_DILATION_LEFT:
 
@@ -308,7 +308,7 @@ Right side nose canal dilates.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_DILATION_LEFT** = ``29``
 
-Left side nose canal dilates.
+左側鼻腔擴張。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_CONSTRICT_RIGHT:
 
@@ -316,7 +316,7 @@ Left side nose canal dilates.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_CONSTRICT_RIGHT** = ``30``
 
-Right side nose canal constricts.
+右側鼻腔收縮。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_CONSTRICT_LEFT:
 
@@ -324,7 +324,7 @@ Right side nose canal constricts.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_CONSTRICT_LEFT** = ``31``
 
-Left side nose canal constricts.
+左側鼻腔收縮。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SQUINT_RIGHT:
 
@@ -332,7 +332,7 @@ Left side nose canal constricts.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SQUINT_RIGHT** = ``32``
 
-Raises the right side cheek.
+抬升右側面頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SQUINT_LEFT:
 
@@ -340,7 +340,7 @@ Raises the right side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SQUINT_LEFT** = ``33``
 
-Raises the left side cheek.
+抬升左側面頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_PUFF_RIGHT:
 
@@ -348,7 +348,7 @@ Raises the left side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_PUFF_RIGHT** = ``34``
 
-Puffs the right side cheek.
+鼓起右側面頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_PUFF_LEFT:
 
@@ -356,7 +356,7 @@ Puffs the right side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_PUFF_LEFT** = ``35``
 
-Puffs the left side cheek.
+鼓起左側面頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SUCK_RIGHT:
 
@@ -364,7 +364,7 @@ Puffs the left side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SUCK_RIGHT** = ``36``
 
-Sucks in the right side cheek.
+吸進右側臉頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SUCK_LEFT:
 
@@ -372,7 +372,7 @@ Sucks in the right side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SUCK_LEFT** = ``37``
 
-Sucks in the left side cheek.
+吸進左側面頰。
 
 .. _class_XRFaceTracker_constant_FT_JAW_OPEN:
 
@@ -380,7 +380,7 @@ Sucks in the left side cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_OPEN** = ``38``
 
-Opens jawbone.
+張開頜骨。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_CLOSED:
 
@@ -388,7 +388,7 @@ Opens jawbone.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_CLOSED** = ``39``
 
-Closes the mouth.
+閉上嘴巴。
 
 .. _class_XRFaceTracker_constant_FT_JAW_RIGHT:
 
@@ -396,7 +396,7 @@ Closes the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_RIGHT** = ``40``
 
-Pushes jawbone right.
+下頜骨右移。
 
 .. _class_XRFaceTracker_constant_FT_JAW_LEFT:
 
@@ -404,7 +404,7 @@ Pushes jawbone right.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_LEFT** = ``41``
 
-Pushes jawbone left.
+下頜骨左移。
 
 .. _class_XRFaceTracker_constant_FT_JAW_FORWARD:
 
@@ -412,7 +412,7 @@ Pushes jawbone left.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_FORWARD** = ``42``
 
-Pushes jawbone forward.
+下頜骨前移。
 
 .. _class_XRFaceTracker_constant_FT_JAW_BACKWARD:
 
@@ -420,7 +420,7 @@ Pushes jawbone forward.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_BACKWARD** = ``43``
 
-Pushes jawbone backward.
+下頜骨後移。
 
 .. _class_XRFaceTracker_constant_FT_JAW_CLENCH:
 
@@ -428,7 +428,7 @@ Pushes jawbone backward.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_CLENCH** = ``44``
 
-Flexes jaw muscles.
+彎曲下頜肌肉。
 
 .. _class_XRFaceTracker_constant_FT_JAW_MANDIBLE_RAISE:
 
@@ -436,7 +436,7 @@ Flexes jaw muscles.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_JAW_MANDIBLE_RAISE** = ``45``
 
-Raises the jawbone.
+抬高下頜骨。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_UPPER_RIGHT:
 
@@ -444,7 +444,7 @@ Raises the jawbone.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_UPPER_RIGHT** = ``46``
 
-Upper right lip part tucks in the mouth.
+右上唇部分塞入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_UPPER_LEFT:
 
@@ -452,7 +452,7 @@ Upper right lip part tucks in the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_UPPER_LEFT** = ``47``
 
-Upper left lip part tucks in the mouth.
+左上唇部分塞入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_LOWER_RIGHT:
 
@@ -460,7 +460,7 @@ Upper left lip part tucks in the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_LOWER_RIGHT** = ``48``
 
-Lower right lip part tucks in the mouth.
+右下唇部分塞入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_LOWER_LEFT:
 
@@ -468,7 +468,7 @@ Lower right lip part tucks in the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_LOWER_LEFT** = ``49``
 
-Lower left lip part tucks in the mouth.
+左下唇部分塞入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_CORNER_RIGHT:
 
@@ -476,7 +476,7 @@ Lower left lip part tucks in the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_CORNER_RIGHT** = ``50``
 
-Right lip corner folds into the mouth.
+右唇角折入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_CORNER_LEFT:
 
@@ -484,7 +484,7 @@ Right lip corner folds into the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_CORNER_LEFT** = ``51``
 
-Left lip corner folds into the mouth.
+左唇角折入嘴中。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_UPPER_RIGHT:
 
@@ -492,7 +492,7 @@ Left lip corner folds into the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_UPPER_RIGHT** = ``52``
 
-Upper right lip part pushes into a funnel.
+右上唇部分推成漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_UPPER_LEFT:
 
@@ -500,7 +500,7 @@ Upper right lip part pushes into a funnel.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_UPPER_LEFT** = ``53``
 
-Upper left lip part pushes into a funnel.
+左上唇部分推成漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_LOWER_RIGHT:
 
@@ -508,7 +508,7 @@ Upper left lip part pushes into a funnel.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_LOWER_RIGHT** = ``54``
 
-Lower right lip part pushes into a funnel.
+右下唇部分推成漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_LOWER_LEFT:
 
@@ -516,7 +516,7 @@ Lower right lip part pushes into a funnel.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_LOWER_LEFT** = ``55``
 
-Lower left lip part pushes into a funnel.
+左下唇部分推成漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_UPPER_RIGHT:
 
@@ -524,7 +524,7 @@ Lower left lip part pushes into a funnel.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_UPPER_RIGHT** = ``56``
 
-Upper right lip part pushes outwards.
+右上唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_UPPER_LEFT:
 
@@ -532,7 +532,7 @@ Upper right lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_UPPER_LEFT** = ``57``
 
-Upper left lip part pushes outwards.
+左上唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_LOWER_RIGHT:
 
@@ -540,7 +540,7 @@ Upper left lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_LOWER_RIGHT** = ``58``
 
-Lower right lip part pushes outwards.
+右下唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_LOWER_LEFT:
 
@@ -548,7 +548,7 @@ Lower right lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_LOWER_LEFT** = ``59``
 
-Lower left lip part pushes outwards.
+左下唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_UP_RIGHT:
 
@@ -556,7 +556,7 @@ Lower left lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_UP_RIGHT** = ``60``
 
-Upper right part of the lip pulls up.
+右上唇部分向上拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_UP_LEFT:
 
@@ -564,7 +564,7 @@ Upper right part of the lip pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_UP_LEFT** = ``61``
 
-Upper left part of the lip pulls up.
+左上唇部分向上拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LOWER_DOWN_RIGHT:
 
@@ -572,7 +572,7 @@ Upper left part of the lip pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LOWER_DOWN_RIGHT** = ``62``
 
-Lower right part of the lip pulls up.
+右下唇部分向上拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LOWER_DOWN_LEFT:
 
@@ -580,7 +580,7 @@ Lower right part of the lip pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LOWER_DOWN_LEFT** = ``63``
 
-Lower left part of the lip pulls up.
+左下唇部分向上拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_DEEPEN_RIGHT:
 
@@ -588,7 +588,7 @@ Lower left part of the lip pulls up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_DEEPEN_RIGHT** = ``64``
 
-Upper right lip part pushes in the cheek.
+右上唇部分推入臉頰。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_DEEPEN_LEFT:
 
@@ -596,7 +596,7 @@ Upper right lip part pushes in the cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_DEEPEN_LEFT** = ``65``
 
-Upper left lip part pushes in the cheek.
+左上唇部分推入臉頰。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_RIGHT:
 
@@ -604,7 +604,7 @@ Upper left lip part pushes in the cheek.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_RIGHT** = ``66``
 
-Moves upper lip right.
+上嘴唇向右移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_LEFT:
 
@@ -612,7 +612,7 @@ Moves upper lip right.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_LEFT** = ``67``
 
-Moves upper lip left.
+上嘴唇向左移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LOWER_RIGHT:
 
@@ -620,7 +620,7 @@ Moves upper lip left.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LOWER_RIGHT** = ``68``
 
-Moves lower lip right.
+下嘴唇向右移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LOWER_LEFT:
 
@@ -628,7 +628,7 @@ Moves lower lip right.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LOWER_LEFT** = ``69``
 
-Moves lower lip left.
+下嘴唇向左移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_CORNER_PULL_RIGHT:
 
@@ -636,7 +636,7 @@ Moves lower lip left.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_CORNER_PULL_RIGHT** = ``70``
 
-Right lip corner pulls diagonally up and out.
+右唇角斜向上拉出。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_CORNER_PULL_LEFT:
 
@@ -644,7 +644,7 @@ Right lip corner pulls diagonally up and out.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_CORNER_PULL_LEFT** = ``71``
 
-Left lip corner pulls diagonally up and out.
+左唇角斜向上拉出。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_CORNER_SLANT_RIGHT:
 
@@ -652,7 +652,7 @@ Left lip corner pulls diagonally up and out.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_CORNER_SLANT_RIGHT** = ``72``
 
-Right corner lip slants up.
+右唇角上翹。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_CORNER_SLANT_LEFT:
 
@@ -660,7 +660,7 @@ Right corner lip slants up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_CORNER_SLANT_LEFT** = ``73``
 
-Left corner lip slants up.
+左唇角上翹。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_FROWN_RIGHT:
 
@@ -668,7 +668,7 @@ Left corner lip slants up.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_FROWN_RIGHT** = ``74``
 
-Right corner lip pulls down.
+右唇角向下拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_FROWN_LEFT:
 
@@ -676,7 +676,7 @@ Right corner lip pulls down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_FROWN_LEFT** = ``75``
 
-Left corner lip pulls down.
+左唇角向下拉。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_STRETCH_RIGHT:
 
@@ -684,7 +684,7 @@ Left corner lip pulls down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_STRETCH_RIGHT** = ``76``
 
-Mouth corner lip pulls out and down.
+嘴角唇部向外拉並向下。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_STRETCH_LEFT:
 
@@ -692,7 +692,7 @@ Mouth corner lip pulls out and down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_STRETCH_LEFT** = ``77``
 
-Mouth corner lip pulls out and down.
+嘴角唇部向外拉並向下。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_DIMPLE_RIGHT:
 
@@ -700,7 +700,7 @@ Mouth corner lip pulls out and down.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_DIMPLE_RIGHT** = ``78``
 
-Right lip corner is pushed backwards.
+右唇角向後推。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_DIMPLE_LEFT:
 
@@ -708,7 +708,7 @@ Right lip corner is pushed backwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_DIMPLE_LEFT** = ``79``
 
-Left lip corner is pushed backwards.
+左唇角向後推。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_RAISER_UPPER:
 
@@ -716,7 +716,7 @@ Left lip corner is pushed backwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_RAISER_UPPER** = ``80``
 
-Raises and slightly pushes out the upper mouth.
+上額抬起並稍微向外推出。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_RAISER_LOWER:
 
@@ -724,7 +724,7 @@ Raises and slightly pushes out the upper mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_RAISER_LOWER** = ``81``
 
-Raises and slightly pushes out the lower mouth.
+下額抬起並稍微向外推出。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_PRESS_RIGHT:
 
@@ -732,7 +732,7 @@ Raises and slightly pushes out the lower mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_PRESS_RIGHT** = ``82``
 
-Right side lips press and flatten together vertically.
+右側嘴唇垂直壓扁。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_PRESS_LEFT:
 
@@ -740,7 +740,7 @@ Right side lips press and flatten together vertically.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_PRESS_LEFT** = ``83``
 
-Left side lips press and flatten together vertically.
+左側嘴唇垂直壓扁。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_TIGHTENER_RIGHT:
 
@@ -748,7 +748,7 @@ Left side lips press and flatten together vertically.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_TIGHTENER_RIGHT** = ``84``
 
-Right side lips squeeze together horizontally.
+右側嘴唇水平擠壓在一起。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_TIGHTENER_LEFT:
 
@@ -756,7 +756,7 @@ Right side lips squeeze together horizontally.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_TIGHTENER_LEFT** = ``85``
 
-Left side lips squeeze together horizontally.
+左側嘴唇水平擠壓在一起。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_OUT:
 
@@ -764,7 +764,7 @@ Left side lips squeeze together horizontally.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_OUT** = ``86``
 
-Tongue visibly sticks out of the mouth.
+舌頭明顯伸出嘴外。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_UP:
 
@@ -772,7 +772,7 @@ Tongue visibly sticks out of the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_UP** = ``87``
 
-Tongue points upwards.
+舌尖朝上。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_DOWN:
 
@@ -780,7 +780,7 @@ Tongue points upwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_DOWN** = ``88``
 
-Tongue points downwards.
+舌尖朝下。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_RIGHT:
 
@@ -788,7 +788,7 @@ Tongue points downwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_RIGHT** = ``89``
 
-Tongue points right.
+舌尖朝右。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_LEFT:
 
@@ -796,7 +796,7 @@ Tongue points right.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_LEFT** = ``90``
 
-Tongue points left.
+舌尖朝左。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_ROLL:
 
@@ -804,7 +804,7 @@ Tongue points left.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_ROLL** = ``91``
 
-Sides of the tongue funnel, creating a roll.
+舌頭兩側呈漏斗形，形成捲曲。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_BLEND_DOWN:
 
@@ -812,7 +812,7 @@ Sides of the tongue funnel, creating a roll.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_BLEND_DOWN** = ``92``
 
-Tongue arches up then down inside the mouth.
+舌頭在口腔內向上彎曲，然後向下彎曲。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_CURL_UP:
 
@@ -820,7 +820,7 @@ Tongue arches up then down inside the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_CURL_UP** = ``93``
 
-Tongue arches down then up inside the mouth.
+舌頭在口腔內向下彎曲，然後向上彎曲。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_SQUISH:
 
@@ -828,7 +828,7 @@ Tongue arches down then up inside the mouth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_SQUISH** = ``94``
 
-Tongue squishes together and thickens.
+舌頭擠壓在一起並變厚。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_FLAT:
 
@@ -836,7 +836,7 @@ Tongue squishes together and thickens.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_FLAT** = ``95``
 
-Tongue flattens and thins out.
+舌頭變平並且變薄。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_TWIST_RIGHT:
 
@@ -844,7 +844,7 @@ Tongue flattens and thins out.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_TWIST_RIGHT** = ``96``
 
-Tongue tip rotates clockwise, with the rest following gradually.
+舌尖順時針旋轉，其餘部分逐漸跟隨。
 
 .. _class_XRFaceTracker_constant_FT_TONGUE_TWIST_LEFT:
 
@@ -852,7 +852,7 @@ Tongue tip rotates clockwise, with the rest following gradually.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_TONGUE_TWIST_LEFT** = ``97``
 
-Tongue tip rotates counter-clockwise, with the rest following gradually.
+舌尖逆時針旋轉，其餘部分逐漸跟隨。
 
 .. _class_XRFaceTracker_constant_FT_SOFT_PALATE_CLOSE:
 
@@ -860,7 +860,7 @@ Tongue tip rotates counter-clockwise, with the rest following gradually.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_SOFT_PALATE_CLOSE** = ``98``
 
-Inner mouth throat closes.
+口腔內喉嚨閉合。
 
 .. _class_XRFaceTracker_constant_FT_THROAT_SWALLOW:
 
@@ -868,7 +868,7 @@ Inner mouth throat closes.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_THROAT_SWALLOW** = ``99``
 
-The Adam's apple visibly swallows.
+喉結明顯吞咽。
 
 .. _class_XRFaceTracker_constant_FT_NECK_FLEX_RIGHT:
 
@@ -876,7 +876,7 @@ The Adam's apple visibly swallows.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NECK_FLEX_RIGHT** = ``100``
 
-Right side neck visibly flexes.
+右側頸部明顯彎曲。
 
 .. _class_XRFaceTracker_constant_FT_NECK_FLEX_LEFT:
 
@@ -884,7 +884,7 @@ Right side neck visibly flexes.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NECK_FLEX_LEFT** = ``101``
 
-Left side neck visibly flexes.
+左側頸部明顯彎曲。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CLOSED:
 
@@ -892,7 +892,7 @@ Left side neck visibly flexes.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CLOSED** = ``102``
 
-Closes both eye lids.
+閉上雙眼。
 
 .. _class_XRFaceTracker_constant_FT_EYE_WIDE:
 
@@ -900,7 +900,7 @@ Closes both eye lids.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_WIDE** = ``103``
 
-Widens both eye lids.
+睜大雙眼。
 
 .. _class_XRFaceTracker_constant_FT_EYE_SQUINT:
 
@@ -908,7 +908,7 @@ Widens both eye lids.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_SQUINT** = ``104``
 
-Squints both eye lids.
+眯上雙眼。
 
 .. _class_XRFaceTracker_constant_FT_EYE_DILATION:
 
@@ -916,7 +916,7 @@ Squints both eye lids.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_DILATION** = ``105``
 
-Dilates both pupils.
+擴張雙瞳。
 
 .. _class_XRFaceTracker_constant_FT_EYE_CONSTRICT:
 
@@ -924,7 +924,7 @@ Dilates both pupils.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_EYE_CONSTRICT** = ``106``
 
-Constricts both pupils.
+收縮雙瞳。
 
 .. _class_XRFaceTracker_constant_FT_BROW_DOWN_RIGHT:
 
@@ -932,7 +932,7 @@ Constricts both pupils.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_DOWN_RIGHT** = ``107``
 
-Pulls the right eyebrow down and in.
+將右眉向下拉並向內拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_DOWN_LEFT:
 
@@ -940,7 +940,7 @@ Pulls the right eyebrow down and in.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_DOWN_LEFT** = ``108``
 
-Pulls the left eyebrow down and in.
+將左眉向下拉並向內拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_DOWN:
 
@@ -948,7 +948,7 @@ Pulls the left eyebrow down and in.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_DOWN** = ``109``
 
-Pulls both eyebrows down and in.
+將雙眉向下拉並向內拉。
 
 .. _class_XRFaceTracker_constant_FT_BROW_UP_RIGHT:
 
@@ -956,7 +956,7 @@ Pulls both eyebrows down and in.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_UP_RIGHT** = ``110``
 
-Right brow appears worried.
+右眉作發愁狀。
 
 .. _class_XRFaceTracker_constant_FT_BROW_UP_LEFT:
 
@@ -964,7 +964,7 @@ Right brow appears worried.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_UP_LEFT** = ``111``
 
-Left brow appears worried.
+左眉作發愁狀。
 
 .. _class_XRFaceTracker_constant_FT_BROW_UP:
 
@@ -972,7 +972,7 @@ Left brow appears worried.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_BROW_UP** = ``112``
 
-Both brows appear worried.
+雙眉作發愁狀。
 
 .. _class_XRFaceTracker_constant_FT_NOSE_SNEER:
 
@@ -980,7 +980,7 @@ Both brows appear worried.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NOSE_SNEER** = ``113``
 
-Entire face sneers.
+滿臉冷笑。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_DILATION:
 
@@ -988,7 +988,7 @@ Entire face sneers.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_DILATION** = ``114``
 
-Both nose canals dilate.
+兩側鼻腔擴張。
 
 .. _class_XRFaceTracker_constant_FT_NASAL_CONSTRICT:
 
@@ -996,7 +996,7 @@ Both nose canals dilate.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_NASAL_CONSTRICT** = ``115``
 
-Both nose canals constrict.
+兩側鼻腔收縮。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_PUFF:
 
@@ -1004,7 +1004,7 @@ Both nose canals constrict.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_PUFF** = ``116``
 
-Puffs both cheeks.
+鼓起雙頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SUCK:
 
@@ -1012,7 +1012,7 @@ Puffs both cheeks.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SUCK** = ``117``
 
-Sucks in both cheeks.
+吸進雙頰。
 
 .. _class_XRFaceTracker_constant_FT_CHEEK_SQUINT:
 
@@ -1020,7 +1020,7 @@ Sucks in both cheeks.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_CHEEK_SQUINT** = ``118``
 
-Raises both cheeks.
+抬起雙頰。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_UPPER:
 
@@ -1028,7 +1028,7 @@ Raises both cheeks.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_UPPER** = ``119``
 
-Tucks in the upper lips.
+收攏上唇。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK_LOWER:
 
@@ -1036,7 +1036,7 @@ Tucks in the upper lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK_LOWER** = ``120``
 
-Tucks in the lower lips.
+收攏下唇。
 
 .. _class_XRFaceTracker_constant_FT_LIP_SUCK:
 
@@ -1044,7 +1044,7 @@ Tucks in the lower lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_SUCK** = ``121``
 
-Tucks in both lips.
+收攏雙唇。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_UPPER:
 
@@ -1052,7 +1052,7 @@ Tucks in both lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_UPPER** = ``122``
 
-Funnels in the upper lips.
+上唇呈漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL_LOWER:
 
@@ -1060,7 +1060,7 @@ Funnels in the upper lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL_LOWER** = ``123``
 
-Funnels in the lower lips.
+下唇呈漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_FUNNEL:
 
@@ -1068,7 +1068,7 @@ Funnels in the lower lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_FUNNEL** = ``124``
 
-Funnels in both lips.
+雙唇呈漏斗狀。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_UPPER:
 
@@ -1076,7 +1076,7 @@ Funnels in both lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_UPPER** = ``125``
 
-Upper lip part pushes outwards.
+上唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER_LOWER:
 
@@ -1084,7 +1084,7 @@ Upper lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER_LOWER** = ``126``
 
-Lower lip part pushes outwards.
+下唇部分向外推。
 
 .. _class_XRFaceTracker_constant_FT_LIP_PUCKER:
 
@@ -1092,7 +1092,7 @@ Lower lip part pushes outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_LIP_PUCKER** = ``127``
 
-Lips push outwards.
+雙唇向外推。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_UPPER_UP:
 
@@ -1100,7 +1100,7 @@ Lips push outwards.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_UPPER_UP** = ``128``
 
-Raises the upper lips.
+抬起上唇。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LOWER_DOWN:
 
@@ -1108,7 +1108,7 @@ Raises the upper lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LOWER_DOWN** = ``129``
 
-Lowers the lower lips.
+降低下唇。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_OPEN:
 
@@ -1116,7 +1116,7 @@ Lowers the lower lips.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_OPEN** = ``130``
 
-Mouth opens, revealing teeth.
+張嘴，露出牙齒。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_RIGHT:
 
@@ -1124,7 +1124,7 @@ Mouth opens, revealing teeth.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_RIGHT** = ``131``
 
-Moves mouth right.
+嘴巴向右移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_LEFT:
 
@@ -1132,7 +1132,7 @@ Moves mouth right.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_LEFT** = ``132``
 
-Moves mouth left.
+嘴巴向左移。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SMILE_RIGHT:
 
@@ -1140,7 +1140,7 @@ Moves mouth left.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SMILE_RIGHT** = ``133``
 
-Right side of the mouth smiles.
+嘴巴右側作微笑狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SMILE_LEFT:
 
@@ -1148,7 +1148,7 @@ Right side of the mouth smiles.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SMILE_LEFT** = ``134``
 
-Left side of the mouth smiles.
+嘴巴左側作微笑狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SMILE:
 
@@ -1156,7 +1156,7 @@ Left side of the mouth smiles.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SMILE** = ``135``
 
-Mouth expresses a smile.
+嘴巴作微笑狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SAD_RIGHT:
 
@@ -1164,7 +1164,7 @@ Mouth expresses a smile.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SAD_RIGHT** = ``136``
 
-Right side of the mouth expresses sadness.
+嘴巴右側作悲傷狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SAD_LEFT:
 
@@ -1172,7 +1172,7 @@ Right side of the mouth expresses sadness.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SAD_LEFT** = ``137``
 
-Left side of the mouth expresses sadness.
+嘴巴左側作悲傷狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_SAD:
 
@@ -1180,7 +1180,7 @@ Left side of the mouth expresses sadness.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_SAD** = ``138``
 
-Mouth expresses sadness.
+嘴巴作悲傷狀。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_STRETCH:
 
@@ -1188,7 +1188,7 @@ Mouth expresses sadness.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_STRETCH** = ``139``
 
-Mouth stretches.
+嘴巴伸長。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_DIMPLE:
 
@@ -1196,7 +1196,7 @@ Mouth stretches.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_DIMPLE** = ``140``
 
-Lip corners dimple.
+唇角有酒窩。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_TIGHTENER:
 
@@ -1204,7 +1204,7 @@ Lip corners dimple.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_TIGHTENER** = ``141``
 
-Mouth tightens.
+嘴巴收緊。
 
 .. _class_XRFaceTracker_constant_FT_MOUTH_PRESS:
 
@@ -1212,7 +1212,7 @@ Mouth tightens.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MOUTH_PRESS** = ``142``
 
-Mouth presses together.
+嘴巴緊貼在一起。
 
 .. _class_XRFaceTracker_constant_FT_MAX:
 
@@ -1220,7 +1220,7 @@ Mouth presses together.
 
 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` **FT_MAX** = ``143``
 
-Represents the size of the :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` enum.
+代表 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -1242,7 +1242,7 @@ Represents the size of the :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEn
 - |void| **set_blend_shapes**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_blend_shapes**\ (\ )
 
-The array of face blend shape weights with indices corresponding to the :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` enum.
+面部混合形狀權重陣列，其索引對應於 :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>` 列舉。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -1261,7 +1261,7 @@ The array of face blend shape weights with indices corresponding to the :ref:`Bl
 
 :ref:`float<class_float>` **get_blend_shape**\ (\ blend_shape\: :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>`\ ) |const| :ref:`🔗<class_XRFaceTracker_method_get_blend_shape>`
 
-Returns the requested face blend shape weight.
+回傳請求的面部混合形狀權重。
 
 .. rst-class:: classref-item-separator
 
@@ -1273,7 +1273,7 @@ Returns the requested face blend shape weight.
 
 |void| **set_blend_shape**\ (\ blend_shape\: :ref:`BlendShapeEntry<enum_XRFaceTracker_BlendShapeEntry>`, weight\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRFaceTracker_method_set_blend_shape>`
 
-Sets a face blend shape weight.
+設定面部混合形狀權重。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

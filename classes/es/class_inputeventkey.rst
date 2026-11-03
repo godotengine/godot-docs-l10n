@@ -291,7 +291,7 @@ Devuelve una representación :ref:`String<class_String>` de la :ref:`keycode<cla
 
 :ref:`String<class_String>` **as_text_location**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_location>`
 
-Returns a :ref:`String<class_String>` representation of the event's :ref:`location<class_InputEventKey_property_location>`. This will be a blank string if the event is not specific to a location.
+Devuelve una representación en forma de :ref:`String<class_String>` de la :ref:`location<class_InputEventKey_property_location>`. Será una string vacía si el evento no está vinculado a una ubicación específica.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Returns a :ref:`String<class_String>` representation of the event's :ref:`locati
 
 :ref:`String<class_String>` **as_text_physical_keycode**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_physical_keycode>`
 
-Returns a :ref:`String<class_String>` representation of the event's :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` and modifiers.
+Devuelve una representación en forma de :ref:`String<class_String>` del :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` y los modificadores del evento.
 
 .. rst-class:: classref-item-separator
 

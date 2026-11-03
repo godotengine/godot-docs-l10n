@@ -7,20 +7,20 @@ VisualShaderNodeIf
 
 **繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Outputs a 3D vector based on the result of a floating-point comparison within the visual shader graph.
+根據視覺化著色器圖中浮點比較的結果輸出 3D 向量。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This visual shader node has six input ports:
+這個視覺化著色器節點有六個輸入連接埠：
 
-- Port **1** and **2** provide the two floating-point numbers ``a`` and ``b`` that will be compared.
+- 連接埠 **1** 和連接埠 **2** 提供的是需要比較的兩個浮點數 ``a`` 和 ``b``\ 。
 
-- Port **3** is the tolerance, which allows similar floating-point numbers to be considered equal.
+- 連接埠 **3** 是公差，能夠將相似的浮點數認定為相等。
 
-- Ports **4**, **5**, and **6** are the possible outputs, returned if ``a == b``, ``a > b``, or ``a < b`` respectively.
+- 連接埠 **4**\ 、\ **5**\ 、\ **6** 是可能的輸出，分別是 ``a == b``\ 、\ ``a > b``\ 、\ ``a < b`` 時的回傳值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

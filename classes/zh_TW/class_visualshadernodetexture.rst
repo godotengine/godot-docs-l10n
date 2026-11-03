@@ -61,7 +61,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_SCREEN** = ``1``
 
-使用目前視口的紋理作為源。
+使用目前視埠的紋理作為源。
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_2D_TEXTURE:
 
@@ -85,7 +85,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_DEPTH** = ``4``
 
-使用在深度預處理過程中捕獲的深度紋理。只有在使用深度預處理時才可用（即在空間著色器和 forward_plus 或 gl_compatibility 算繪器中）。
+使用在深度預處理過程中捕獲的深度紋理。只有在使用深度預處理時才可用（即在空間著色器和 forward_plus 或 gl_compatibility 渲染器中）。
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_PORT:
 
@@ -101,7 +101,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_3D_NORMAL** = ``6``
 
-使用在深度預處理過程中捕獲的法線緩衝區。只有在法線粗糙度緩衝區可用時才可用（即在空間著色器和 forward_plus 算繪器中）。
+使用在深度預處理過程中捕獲的法線緩衝區。只有在法線粗糙度緩衝區可用時才可用（即在空間著色器和 forward_plus 渲染器中）。
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_ROUGHNESS:
 
@@ -109,7 +109,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_ROUGHNESS** = ``7``
 
-使用在深度預處理過程中捕獲的粗糙度緩衝區。僅當法線粗糙度緩衝區可用時才可用（即在空間著色器和 forward_plus 算繪器中）。
+使用在深度預處理過程中捕獲的粗糙度緩衝區。僅當法線粗糙度緩衝區可用時才可用（即在空間著色器和 forward_plus 渲染器中）。
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_MAX:
 
@@ -143,7 +143,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTexture_TextureType>`
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_COLOR** = ``1``
 
-Adds ``source_color`` as hint to the uniform declaration for proper conversion from nonlinear sRGB encoding to linear encoding.
+將 ``source_color`` 作為提示新增到 uniform 聲明中，以便將非線性 sRGB 編碼正確轉換為線性編碼。
 
 .. _class_VisualShaderNodeTexture_constant_TYPE_NORMAL_MAP:
 
@@ -181,7 +181,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_source**\ (\ value\: :ref:`Source<enum_VisualShaderNodeTexture_Source>`\ )
 - :ref:`Source<enum_VisualShaderNodeTexture_Source>` **get_source**\ (\ )
 
-Determines the source for the lookup.
+決定要查詢的源。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Determines the source for the lookup.
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **get_texture_type**\ (\ )
 
-Specifies the type of the texture if :ref:`source<class_VisualShaderNodeTexture_property_source>` is set to :ref:`SOURCE_TEXTURE<class_VisualShaderNodeTexture_constant_SOURCE_TEXTURE>`.
+如果 :ref:`source<class_VisualShaderNodeTexture_property_source>` 為 :ref:`SOURCE_TEXTURE<class_VisualShaderNodeTexture_constant_SOURCE_TEXTURE>`\ ，則指定紋理的型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

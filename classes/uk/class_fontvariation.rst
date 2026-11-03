@@ -307,11 +307,11 @@ FontVariation
 - |void| **set_variation_opentype**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_variation_opentype**\ (\ )
 
-Координація варіаційних кодів Font OpenType. Більш детальна інформація: [url=https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg]{/url]
+Координати варіацій шрифту OpenType. Докладніше: `Теги варіацій OpenType <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__.
 
-[b]Примітка:[/b] Ця [Дикаційна] використовує теги OpenType як ключі. Сортування осей можна визначити як за тегами ([int], наприклад [code]0x77678674[/code]) і імен ([String], наприклад [code]wght[/code]). Деякі осі можуть бути доступні кількома іменами. Наприклад, [code]wght[/code] відноситься до тієї ж осі, як [code] вага[/code]. Теги на іншому руці унікальний. Щоб конвертувати між іменами та тегами, скористайтеся [method TextServer.name_to_tag] та [method посібник.tag_to_name].
+\ **Примітка:** Цей :ref:`Dictionary<class_Dictionary>` використовує теги OpenType як ключі. Осі варіацій можна ідентифікувати як за тегами (:ref:`int<class_int>`, наприклад, ``0x77678674``), так і за іменами (:ref:`String<class_String>`, наприклад, ``wght``). Деякі осі можуть бути доступні під кількома іменами. Наприклад, ``wght`` позначає ту саму вісь, що й ``weight``. Теги, з іншого боку, є унікальними. Для перетворення між назвами та тегами використовуйте :ref:`TextServer.name_to_tag()<class_TextServer_method_name_to_tag>` та :ref:`TextServer.tag_to_name()<class_TextServer_method_tag_to_name>`.
 
-[b]Примітка:[/b] Щоб отримати доступні варіації осей шрифту, скористайтеся [method Font.get_supported_variation_list].
+\ **Примітка:** Щоб отримати доступні осі варіацій шрифту, використовуйте :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`.
 
 .. rst-class:: classref-item-separator
 

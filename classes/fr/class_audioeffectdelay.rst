@@ -16,9 +16,9 @@ Emulates an echo by playing the input audio back after a period of time.
 Description
 -----------
 
-A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+Joue le signal d'entrée après une période de temps. Le signal retardé peut être joué plusieurs fois pour créer un écho qui s'amortit dans le temps. Les effets de retard vont d'un subtil écho à un mélange prononcé de sons précédents avec les nouveaux sons.
 
-See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
+Voir aussi :ref:`AudioEffectReverb<class_AudioEffectReverb>` pour un écho continu et flou.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

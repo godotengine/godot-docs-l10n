@@ -17,7 +17,7 @@ CanvasModulate
 說明
 ----
 
-**CanvasModulate** 將一種色調套用於一張畫布上的所有節點。一張畫布只有一個可用於為畫布著色，但 :ref:`CanvasLayer<class_CanvasLayer>` 可用於獨立算繪事物。
+**CanvasModulate** 將一種色調套用於一張畫布上的所有節點。一張畫布只有一個可用於為畫布著色，但 :ref:`CanvasLayer<class_CanvasLayer>` 可用於獨立渲染事物。
 
 .. rst-class:: classref-introduction-group
 

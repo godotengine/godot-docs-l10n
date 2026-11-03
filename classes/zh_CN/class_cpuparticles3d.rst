@@ -238,7 +238,7 @@ CPUParticles3D
 
 **finished**\ (\ ) :ref:`🔗<class_CPUParticles3D_signal_finished>`
 
-当所有活动粒子完成处理时发出。当 :ref:`one_shot<class_CPUParticles3D_property_one_shot>` 被禁用时，粒子将连续处理，因此它永远不会触发。
+所有活动粒子完成处理后发出。禁用 :ref:`one_shot<class_CPUParticles3D_property_one_shot>` 时将持续处理粒子，因此该信号永远不会发出。
 
 .. rst-class:: classref-section-separator
 

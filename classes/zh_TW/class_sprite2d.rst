@@ -120,9 +120,9 @@ Sprite2D
 - |void| **set_centered**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_centered**\ (\ )
 
-If ``true``, texture is centered.
+如果為 ``true``\ ，則會將紋理居中。
 
-\ **Note:** For games with a pixel art aesthetic, textures may appear deformed when centered. This is caused by their position being between pixels. To prevent this, set this property to ``false``, or consider enabling :ref:`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` and :ref:`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
+\ **注意：**\ 像素風遊戲中，紋理在居中後可能會變形。這是因為此時紋理的位置在兩個像素之間。要避免這種情況，請將該屬性設為 ``false``\ ，或者考慮啟用 :ref:`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` 和 :ref:`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ If ``true``, texture is centered.
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-Current frame to display from sprite sheet. :ref:`hframes<class_Sprite2D_property_hframes>` or :ref:`vframes<class_Sprite2D_property_vframes>` must be greater than 1. This property is automatically adjusted when :ref:`hframes<class_Sprite2D_property_hframes>` or :ref:`vframes<class_Sprite2D_property_vframes>` are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to ``0``.
+目前顯示的精靈表中的影格。\ :ref:`hframes<class_Sprite2D_property_hframes>` 和 :ref:`vframes<class_Sprite2D_property_vframes>` 必須大於 1。\ :ref:`hframes<class_Sprite2D_property_hframes>` 或 :ref:`vframes<class_Sprite2D_property_vframes>` 發生變化時會自動調整該屬性，讓它在視覺上保持指向同一影格（同一行、同一列）。 如果無法保持，則會重設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Current frame to display from sprite sheet. :ref:`hframes<class_Sprite2D_propert
 - |void| **set_hframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hframes**\ (\ )
 
-The number of columns in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite2D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite2D_property_frame>` is reset to ``0``.
+精靈表中的列數。該屬性發生變化時會對 :ref:`frame<class_Sprite2D_property_frame>` 進行調整，在視覺上維持相同的影格（同一行、同一列）。如果無法維持，則會將 :ref:`frame<class_Sprite2D_property_frame>` 重設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ The number of columns in the sprite sheet. When this property is changed, :ref:`
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The texture's drawing offset.
+紋理繪製偏移。
 
-\ **Note:** When you increase :ref:`offset<class_Sprite2D_property_offset>`.y in Sprite2D, the sprite moves downward on screen (i.e., +Y is down).
+\ **注意：**\ 在 Sprite2D 中增大 :ref:`offset<class_Sprite2D_property_offset>`.y 會讓精靈在螢幕上向下移動（即 +Y 朝下）。
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ The texture's drawing offset.
 - |void| **set_region_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_region_enabled**\ (\ )
 
-If ``true``, texture is cut from a larger atlas texture. See :ref:`region_rect<class_Sprite2D_property_region_rect>`.
+如果為 ``true``\ ，則會從更大的圖集紋理上裁剪出紋理。見 :ref:`region_rect<class_Sprite2D_property_region_rect>`\ 。
 
-\ **Note:** When using a custom :ref:`Shader<class_Shader>` on a **Sprite2D**, the ``UV`` shader built-in will refer to the entire texture space. Use the ``REGION_RECT`` built-in to get the currently visible region defined in :ref:`region_rect<class_Sprite2D_property_region_rect>` instead. See :doc:`CanvasItem shaders <../tutorials/shaders/shader_reference/canvas_item_shader>` for details.
+\ **注意：**\ 對 **Sprite2D** 使用自訂 :ref:`Shader<class_Shader>` 時，著色器內建的 ``UV`` 指的是完整紋理空間。請使用內建的 ``REGION_RECT`` 取得 :ref:`region_rect<class_Sprite2D_property_region_rect>` 中定義的目前可見區域。詳見《\ :doc:`CanvasItem 著色器 <../tutorials/shaders/shader_reference/canvas_item_shader>`\ 》。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ If ``true``, texture is cut from a larger atlas texture. See :ref:`region_rect<c
 - |void| **set_region_filter_clip_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_region_filter_clip_enabled**\ (\ )
 
-If ``true``, the area outside of the :ref:`region_rect<class_Sprite2D_property_region_rect>` is clipped to avoid bleeding of the surrounding texture pixels. :ref:`region_enabled<class_Sprite2D_property_region_enabled>` must be ``true``.
+如果為 ``true``\ ，則會裁剪 :ref:`region_rect<class_Sprite2D_property_region_rect>` 之外的區域，避免周圍紋理像素的出血現象。\ :ref:`region_enabled<class_Sprite2D_property_region_enabled>` 必須為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ If ``true``, the area outside of the :ref:`region_rect<class_Sprite2D_property_r
 - |void| **set_vframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vframes**\ (\ )
 
-The number of rows in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite2D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite2D_property_frame>` is reset to ``0``.
+精靈表中的行數。該屬性發生變化時會對 :ref:`frame<class_Sprite2D_property_frame>` 進行調整，在視覺上維持相同的影格（同一行、同一列）。如果無法維持，則會將 :ref:`frame<class_Sprite2D_property_frame>` 重設為 ``0``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -330,9 +330,9 @@ The number of rows in the sprite sheet. When this property is changed, :ref:`fra
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_Sprite2D_method_get_rect>`
 
-Returns a :ref:`Rect2<class_Rect2>` representing the Sprite2D's boundary in local coordinates.
+回傳代表該 Sprite2D 邊界的 :ref:`Rect2<class_Rect2>`\ ，使用區域座標。
 
-\ **Example:** Detect if the Sprite2D was clicked:
+\ **範例：**\ 檢測該 Sprite2D 是否被點選：
 
 
 .. tabs::
@@ -342,7 +342,7 @@ Returns a :ref:`Rect2<class_Rect2>` representing the Sprite2D's boundary in loca
     func _input(event):
         if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
             if get_rect().has_point(to_local(event.position)):
-                print("A click!")
+                print("我點！")
 
  .. code-tab:: csharp
 
@@ -354,7 +354,7 @@ Returns a :ref:`Rect2<class_Rect2>` representing the Sprite2D's boundary in loca
             {
                 if (GetRect().HasPoint(ToLocal(inputEventMouse.Position)))
                 {
-                    GD.Print("A click!");
+                    GD.Print("我點！");
                 }
             }
         }
@@ -372,7 +372,7 @@ Returns a :ref:`Rect2<class_Rect2>` representing the Sprite2D's boundary in loca
 
 :ref:`bool<class_bool>` **is_pixel_opaque**\ (\ pos\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Sprite2D_method_is_pixel_opaque>`
 
-Returns ``true`` if the pixel at the given position is opaque, ``false`` otherwise. Also returns ``false`` if the given position is out of bounds or this sprite's :ref:`texture<class_Sprite2D_property_texture>` is ``null``. ``pos`` is in local coordinates.
+如果給定位置的像素不透明，則回傳 ``true``\ ，否則回傳 ``false``\ 。如果給定位置超出範圍或該精靈的 :ref:`texture<class_Sprite2D_property_texture>` 為 ``null``\ ，也會回傳 ``false``\ 。\ ``pos`` 為區域座標。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

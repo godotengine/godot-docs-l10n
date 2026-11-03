@@ -14,7 +14,7 @@ VisualShaderNodeTransformCompose
 說明
 ----
 
-Creates a 4×4 transform matrix using four vectors of type ``vec3``. Each vector is one row in the matrix and the last column is a ``vec4(0, 0, 0, 1)``.
+使用四個型別為 ``vec3`` 的向量建立一個 4×4 變換矩陣。每個向量是矩陣中的一行，最後一列是一個 ``vec4(0, 0, 0, 1)``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -111,7 +111,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_X** = ``1``
 
-在 ``x`` 中使用局部差分的導數。
+在 ``x`` 中使用區域差分的導數。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_FUNC_Y:
 
@@ -119,7 +119,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_Y** = ``2``
 
-在 ``y`` 中使用局部差分的導數。
+在 ``y`` 中使用區域差分的導數。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_FUNC_MAX:
 
@@ -191,7 +191,7 @@ enum **Precision**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_Precision>`
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **get_function**\ (\ )
 
-A derivative function type.
+導數函式的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ A derivative function type.
 - |void| **set_precision**\ (\ value\: :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>`\ )
 - :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **get_precision**\ (\ )
 
-Sets the level of precision to use for the derivative function. When using the Compatibility renderer, this setting has no effect.
+設定用於導數函式的精度層級。使用 Compatibility 渲染器時此設定無效。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

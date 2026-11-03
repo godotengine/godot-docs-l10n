@@ -7,14 +7,14 @@ XRVRS
 
 **繼承：** :ref:`Object<class_Object>`
 
-Helper class for XR interfaces that generates VRS images.
+XR 介面用於生成 VRS 影像的輔助類。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This class is used by various XR interfaces to generate VRS textures that can be used to speed up rendering.
+各種 XR 介面使用該類來生成可用於加速渲染的 VRS 紋理。
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ This class is used by various XR interfaces to generate VRS textures that can be
 - |void| **set_vrs_min_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_min_radius**\ (\ )
 
-The minimum radius around the focal point where full quality is guaranteed if VRS is used as a percentage of screen size.
+如果 VRS 用作螢幕尺寸大小的百分比，則焦點周圍可保證完整品質的最小半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ The minimum radius around the focal point where full quality is guaranteed if VR
 - |void| **set_vrs_render_region**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_vrs_render_region**\ (\ )
 
-The render region that the VRS texture will be scaled to when generated.
+生成時 VRS 紋理縮放至的渲染區域。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ The render region that the VRS texture will be scaled to when generated.
 - |void| **set_vrs_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_strength**\ (\ )
 
-The strength used to calculate the VRS density map. The greater this value, the more noticeable VRS is.
+計算 VRS 密度圖時使用的強度。該值越大，VRS 越明顯。
 
 .. rst-class:: classref-section-separator
 
@@ -115,9 +115,9 @@ The strength used to calculate the VRS density map. The greater this value, the 
 
 :ref:`RID<class_RID>` **make_vrs_texture**\ (\ target_size\: :ref:`Vector2<class_Vector2>`, eye_foci\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_XRVRS_method_make_vrs_texture>`
 
-Generates the VRS texture based on a render ``target_size`` adjusted by our VRS tile size. For each eyes focal point passed in ``eye_foci`` a layer is created. Focal point should be in NDC.
+根據由我們的 VRS 圖塊大小調整的渲染 ``target_size`` 生成 VRS 紋理。對於傳入 ``eye_foci`` 的每個眼睛焦點，都會建立一個層。焦點應位於 NDC 中。
 
-The result will be cached, requesting a VRS texture with unchanged parameters and settings will return the cached RID.
+結果將被快取，請求具有不變參數和設定的 VRS 紋理將回傳該快取的 RID。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

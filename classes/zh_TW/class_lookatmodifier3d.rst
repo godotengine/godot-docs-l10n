@@ -7,16 +7,16 @@ LookAtModifier3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-The **LookAtModifier3D** rotates a bone to look at a target.
+**LookAtModifier3D** 會旋轉骨骼，讓它看向某個目標。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` rotates a bone to look at a target. This is helpful for moving a character's head to look at the player, rotating a turret to look at a target, or any other case where you want to make a bone rotate towards something quickly and easily.
+該 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 會旋轉骨骼，讓它看向某個目標。適用於讓角色的頭部看向玩家、讓炮塔看向目標等需要讓骨骼簡單快速地旋轉到指向某個物體的情況。
 
-When applying multiple **LookAtModifier3D**\ s, the **LookAtModifier3D** assigned to the parent bone must be put above the **LookAtModifier3D** assigned to the child bone in the list in order for the child bone results to be correct.
+應用多個 **LookAtModifier3D** 時，分配給父骨骼的 **LookAtModifier3D** 在清單中必須放在分配給子骨骼的 **LookAtModifier3D** 上方，這樣才能讓子骨骼得到正確的結果。
 
 .. rst-class:: classref-reftable-group
 
@@ -125,7 +125,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 :ref:`OriginFrom<enum_LookAtModifier3D_OriginFrom>` **ORIGIN_FROM_SELF** = ``0``
 
-The bone rest position of the bone specified in :ref:`bone<class_LookAtModifier3D_property_bone>` is used as origin.
+使用 :ref:`bone<class_LookAtModifier3D_property_bone>` 所指定骨骼的放鬆位置作為原點。
 
 .. _class_LookAtModifier3D_constant_ORIGIN_FROM_SPECIFIC_BONE:
 
@@ -133,9 +133,9 @@ The bone rest position of the bone specified in :ref:`bone<class_LookAtModifier3
 
 :ref:`OriginFrom<enum_LookAtModifier3D_OriginFrom>` **ORIGIN_FROM_SPECIFIC_BONE** = ``1``
 
-The bone global pose position of the bone specified in :ref:`origin_bone<class_LookAtModifier3D_property_origin_bone>` is used as origin.
+使用 :ref:`origin_bone<class_LookAtModifier3D_property_origin_bone>` 所指定骨骼的全域姿勢位置作為原點。
 
-\ **Note:** It is recommended that you select only the parent bone unless you are familiar with the bone processing process. The specified bone pose at the time the **LookAtModifier3D** is processed is used as a reference. In other words, if you specify a child bone and the **LookAtModifier3D** causes the child bone to move, the rendered result and direction will not match.
+\ **注意：**\ 除非你熟悉骨骼的處理流程，否則建議只選擇父級骨骼。指定骨骼姿勢在處理 **LookAtModifier3D** 時會用作參考。換句話說，如果你指定的是子級骨骼，而 **LookAtModifier3D** 導致該子級骨骼發生移動，那麼渲染結果會與方向不一致。
 
 .. _class_LookAtModifier3D_constant_ORIGIN_FROM_EXTERNAL_NODE:
 
@@ -143,9 +143,9 @@ The bone global pose position of the bone specified in :ref:`origin_bone<class_L
 
 :ref:`OriginFrom<enum_LookAtModifier3D_OriginFrom>` **ORIGIN_FROM_EXTERNAL_NODE** = ``2``
 
-The global position of the :ref:`Node3D<class_Node3D>` specified in :ref:`origin_external_node<class_LookAtModifier3D_property_origin_external_node>` is used as origin.
+使用 :ref:`origin_external_node<class_LookAtModifier3D_property_origin_external_node>` 所指定的 :ref:`Node3D<class_Node3D>` 的全域位置作為原點。
 
-\ **Note:** Same as :ref:`ORIGIN_FROM_SPECIFIC_BONE<class_LookAtModifier3D_constant_ORIGIN_FROM_SPECIFIC_BONE>`, when specifying a :ref:`BoneAttachment3D<class_BoneAttachment3D>` with a child bone assigned, the rendered result and direction will not match.
+\ **注意：**\ 與 :ref:`ORIGIN_FROM_SPECIFIC_BONE<class_LookAtModifier3D_constant_ORIGIN_FROM_SPECIFIC_BONE>` 相同，如果指定的是分配了子級骨骼的 :ref:`BoneAttachment3D<class_BoneAttachment3D>`\ ，那麼渲染結果會與方向不一致。
 
 .. rst-class:: classref-section-separator
 
@@ -167,7 +167,7 @@ The global position of the :ref:`Node3D<class_Node3D>` specified in :ref:`origin
 - |void| **set_bone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone**\ (\ )
 
-Index of the :ref:`bone_name<class_LookAtModifier3D_property_bone_name>` in the parent :ref:`Skeleton3D<class_Skeleton3D>`.
+父級 :ref:`Skeleton3D<class_Skeleton3D>` 中 :ref:`bone_name<class_LookAtModifier3D_property_bone_name>` 的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Index of the :ref:`bone_name<class_LookAtModifier3D_property_bone_name>` in the 
 - |void| **set_bone_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_bone_name**\ (\ )
 
-The bone name of the :ref:`Skeleton3D<class_Skeleton3D>` that the modification will operate on.
+:ref:`Skeleton3D<class_Skeleton3D>` 中要執行修改的骨骼名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -201,13 +201,13 @@ The bone name of the :ref:`Skeleton3D<class_Skeleton3D>` that the modification w
 - |void| **set_duration**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_duration**\ (\ )
 
-The duration of the time-based interpolation. Interpolation is triggered at the following cases:
+基於時間的插值的持續時間。插值的觸發條件有：
 
-- When the target node is changed
+- 目標節點發生改變
 
-- When an axis is flipped due to angle limitation
+- 由於角度限制導致軸發生翻轉
 
-\ **Note:** The flipping occurs when the target is outside the angle limitation and the internally computed secondary rotation axis of the forward vector is flipped. Visually, it occurs when the target is outside the angle limitation and crosses the plane of the :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>` and :ref:`primary_rotation_axis<class_LookAtModifier3D_property_primary_rotation_axis>`.
+\ **注意：**\ 翻轉的時機是目標超出角度限制範圍，前進向量的內部次旋轉軸發生翻轉。視覺上，發生的時機是目標超出角度限制範圍，越過 :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>` 和 :ref:`primary_rotation_axis<class_LookAtModifier3D_property_primary_rotation_axis>` 構成的平面。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ The duration of the time-based interpolation. Interpolation is triggered at the 
 - |void| **set_ease_type**\ (\ value\: :ref:`EaseType<enum_Tween_EaseType>`\ )
 - :ref:`EaseType<enum_Tween_EaseType>` **get_ease_type**\ (\ )
 
-The ease type of the time-based interpolation. See also :ref:`EaseType<enum_Tween_EaseType>`.
+基於時間的插值的緩動型別。另見 :ref:`EaseType<enum_Tween_EaseType>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ The ease type of the time-based interpolation. See also :ref:`EaseType<enum_Twee
 - |void| **set_forward_axis**\ (\ value\: :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>`\ )
 - :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **get_forward_axis**\ (\ )
 
-The forward axis of the bone. This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` modifies the bone so that this axis points toward the :ref:`target_node<class_LookAtModifier3D_property_target_node>`.
+骨骼的前進軸。該 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 對骨骼進行的修改會讓該軸指向 :ref:`target_node<class_LookAtModifier3D_property_target_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ The forward axis of the bone. This :ref:`SkeletonModifier3D<class_SkeletonModifi
 - |void| **set_origin_bone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_origin_bone**\ (\ )
 
-Index of the :ref:`origin_bone_name<class_LookAtModifier3D_property_origin_bone_name>` in the parent :ref:`Skeleton3D<class_Skeleton3D>`.
+父級 :ref:`Skeleton3D<class_Skeleton3D>` 中 :ref:`origin_bone_name<class_LookAtModifier3D_property_origin_bone_name>` 的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Index of the :ref:`origin_bone_name<class_LookAtModifier3D_property_origin_bone_
 - |void| **set_origin_bone_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_origin_bone_name**\ (\ )
 
-If :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` is :ref:`ORIGIN_FROM_SPECIFIC_BONE<class_LookAtModifier3D_constant_ORIGIN_FROM_SPECIFIC_BONE>`, the bone global pose position specified for this is used as origin.
+如果 :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` 為 :ref:`ORIGIN_FROM_SPECIFIC_BONE<class_LookAtModifier3D_constant_ORIGIN_FROM_SPECIFIC_BONE>`\ ，則會將指定的骨骼全域姿勢位置用作原點。
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ If :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` is :ref:`ORIG
 - |void| **set_origin_external_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_origin_external_node**\ (\ )
 
-If :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` is :ref:`ORIGIN_FROM_EXTERNAL_NODE<class_LookAtModifier3D_constant_ORIGIN_FROM_EXTERNAL_NODE>`, the global position of the :ref:`Node3D<class_Node3D>` specified for this is used as origin.
+如果 :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` 為 :ref:`ORIGIN_FROM_EXTERNAL_NODE<class_LookAtModifier3D_constant_ORIGIN_FROM_EXTERNAL_NODE>`\ ，則會將指定的 :ref:`Node3D<class_Node3D>` 的全域位置用作原點。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ If :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` is :ref:`ORIG
 - |void| **set_origin_from**\ (\ value\: :ref:`OriginFrom<enum_LookAtModifier3D_OriginFrom>`\ )
 - :ref:`OriginFrom<enum_LookAtModifier3D_OriginFrom>` **get_origin_from**\ (\ )
 
-This value determines from what origin is retrieved for use in the calculation of the forward vector.
+該值決定了計算前進向量時從哪裡取得原點。
 
 .. rst-class:: classref-item-separator
 
@@ -326,9 +326,9 @@ This value determines from what origin is retrieved for use in the calculation o
 - |void| **set_origin_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_origin_offset**\ (\ )
 
-The offset of the bone pose origin. Matching the origins by offset is useful for cases where multiple bones must always face the same direction, such as the eyes.
+骨骼姿勢原點的偏移。通過偏移量來對齊原點常用於多個骨骼必須始終朝向同一方向的情況，例如眼球。
 
-\ **Note:** This value indicates the local position of the object set in :ref:`origin_from<class_LookAtModifier3D_property_origin_from>`.
+\ **注意：**\ 該值表示的是 :ref:`origin_from<class_LookAtModifier3D_property_origin_from>` 中設定的物件的區域位置。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ The offset of the bone pose origin. Matching the origins by offset is useful for
 - |void| **set_origin_safe_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_origin_safe_margin**\ (\ )
 
-If the target passes through too close to the origin than this value, time-based interpolation is used even if the target is within the angular limitations, to prevent the angular velocity from becoming too high.
+如果目標經過原點的距離小於該值，即使目標在角度限制範圍內，也會使用基於時間的插值，從而防止角速度過高。
 
 .. rst-class:: classref-item-separator
 
@@ -362,9 +362,9 @@ If the target passes through too close to the origin than this value, time-based
 - |void| **set_primary_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`primary_limit_angle<class_LookAtModifier3D_property_primary_limit_angle>`. It provides non-linear (b-spline) interpolation, let it feel more resistance the more it rotate to the edge limit. This is useful for simulating the limits of human motion.
+開始對 :ref:`primary_limit_angle<class_LookAtModifier3D_property_primary_limit_angle>` 執行阻尼的閾值。提供的是非線性（B 樣條）插值，會使得在旋轉到邊緣限制時感受到更多的阻力。適用於模擬人類運動的限制。
 
-If ``1.0``, no damping is performed. If ``0.0``, damping is always performed.
+如果為 ``1.0`` 則不執行阻尼。如果為 ``0.0`` 則始終執行阻尼。
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ If ``1.0``, no damping is performed. If ``0.0``, damping is always performed.
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``true`` 時，主旋轉的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ The limit angle of the primary rotation when :ref:`symmetry_limitation<class_Loo
 - |void| **set_primary_negative_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`primary_negative_limit_angle<class_LookAtModifier3D_property_primary_negative_limit_angle>`.
+開始對 :ref:`primary_negative_limit_angle<class_LookAtModifier3D_property_primary_negative_limit_angle>` 執行阻尼的閾值。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ The threshold to start damping for :ref:`primary_negative_limit_angle<class_Look
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``false`` 時，主旋轉負方向的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ The limit angle of negative side of the primary rotation when :ref:`symmetry_lim
 - |void| **set_primary_positive_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`primary_positive_limit_angle<class_LookAtModifier3D_property_primary_positive_limit_angle>`.
+開始對 :ref:`primary_positive_limit_angle<class_LookAtModifier3D_property_primary_positive_limit_angle>` 執行阻尼的閾值。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ The threshold to start damping for :ref:`primary_positive_limit_angle<class_Look
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``false`` 時，主旋轉正方向的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ The limit angle of positive side of the primary rotation when :ref:`symmetry_lim
 - |void| **set_primary_rotation_axis**\ (\ value\: :ref:`Axis<enum_Vector3_Axis>`\ )
 - :ref:`Axis<enum_Vector3_Axis>` **get_primary_rotation_axis**\ (\ )
 
-The axis of the first rotation. This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` works by compositing the rotation by Euler angles to prevent to rotate the :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+主旋轉軸。該 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 會使用歐拉角對旋轉進行合成，防止圍繞 :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>` 旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ The axis of the first rotation. This :ref:`SkeletonModifier3D<class_SkeletonModi
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+相對（Relative）選項。如果設為 ``true``\ ，旋轉將基於目前姿態（pose）進行疊加；如果設為 ``false``\ ，旋轉將基於初始姿態（rest）進行計算。這意味著會用 **LookAtModifier3D** 的計算結果直接替換掉目前的姿態。
 
-\ **Note:** This option affects the base angle for :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Since the **LookAtModifier3D** relies strongly on Euler rotation, the axis that determines the limitation and the actual rotation are strongly tied together.
+\ **注意：** 此選項會影響 :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`\ （使用角度限制）的基準角度。由於 **LookAtModifier3D** 嚴重相依性歐拉角（Euler rotation）來進行計算，因此決定限制範圍的軸向與實際發生的旋轉是緊密綁定的。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`secondary_limit_angle<class_LookAtModifier3D_property_secondary_limit_angle>`.
+開始對 :ref:`secondary_limit_angle<class_LookAtModifier3D_property_secondary_limit_angle>` 執行阻尼的閾值。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ The threshold to start damping for :ref:`secondary_limit_angle<class_LookAtModif
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``true`` 時，次旋轉的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_L
 - |void| **set_secondary_negative_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`secondary_negative_limit_angle<class_LookAtModifier3D_property_secondary_negative_limit_angle>`.
+開始對 :ref:`secondary_negative_limit_angle<class_LookAtModifier3D_property_secondary_negative_limit_angle>` 執行阻尼的閾值。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ The threshold to start damping for :ref:`secondary_negative_limit_angle<class_Lo
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``false`` 時，次旋轉負方向的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ The limit angle of negative side of the secondary rotation when :ref:`symmetry_l
 - |void| **set_secondary_positive_damp_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_damp_threshold**\ (\ )
 
-The threshold to start damping for :ref:`secondary_positive_limit_angle<class_LookAtModifier3D_property_secondary_positive_limit_angle>`.
+開始對 :ref:`secondary_positive_limit_angle<class_LookAtModifier3D_property_secondary_positive_limit_angle>` 執行阻尼的閾值。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ The threshold to start damping for :ref:`secondary_positive_limit_angle<class_Lo
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+當 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 為 ``false`` 時，次旋轉正方向的限制角度，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +604,9 @@ The limit angle of positive side of the secondary rotation when :ref:`symmetry_l
 - |void| **set_symmetry_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limitation_symmetry**\ (\ )
 
-If ``true``, the limitations are spread from the bone symmetrically.
+如果 ``true``\ ，則限制對稱地分布在骨骼兩側。
 
-If ``false``, the limitation can be specified separately for each side of the bone rest.
+如果 ``false``\ ，則可以為骨骼放鬆時的每一側單獨指定限制。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ If ``false``, the limitation can be specified separately for each side of the bo
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-The :ref:`NodePath<class_NodePath>` to the node that is the target for the look at modification. This node is what the modification will rotate the bone to.
+朝向修改的目標節點的 :ref:`NodePath<class_NodePath>`\ 。該節點是修改時骨骼旋轉的目標。
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +640,7 @@ The :ref:`NodePath<class_NodePath>` to the node that is the target for the look 
 - |void| **set_transition_type**\ (\ value\: :ref:`TransitionType<enum_Tween_TransitionType>`\ )
 - :ref:`TransitionType<enum_Tween_TransitionType>` **get_transition_type**\ (\ )
 
-The transition type of the time-based interpolation. See also :ref:`TransitionType<enum_Tween_TransitionType>`.
+基於時間的插值的過渡型別。另見 :ref:`TransitionType<enum_Tween_TransitionType>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -657,11 +657,11 @@ The transition type of the time-based interpolation. See also :ref:`TransitionTy
 - |void| **set_use_angle_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_angle_limitation**\ (\ )
 
-If ``true``, limits the amount of rotation. For example, this helps to prevent a character's neck from rotating 360 degrees.
+如果為 ``true`` 則會限制旋轉量。例如，可以協助防止角色的脖子發生 360 度旋轉。
 
-\ **Note:** As with :ref:`AnimationTree<class_AnimationTree>` blending, interpolation is provided that favors :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` or :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` depends on the :ref:`relative<class_LookAtModifier3D_property_relative>` option. This means that interpolation does not select the shortest path in some cases.
+\ **注意：**\ 與 :ref:`AnimationTree<class_AnimationTree>` 混合一樣，插值會根據 :ref:`relative<class_LookAtModifier3D_property_relative>` 選項優先選擇 :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` 或 :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>`\ 。這意味著插值在某些情況下不會選擇最短路徑。
 
-\ **Note:** Some values for :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (such as :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`, and :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) may exceed the limitations. If interpolation occurs while overshooting the limitations, the result might not respect the bone rest.
+\ **注意：**\ 某些 :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` 的取值可能會超出限制（例如 :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`\ 、\ :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`\ 、\ :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`\ ）。如果在超出限制時發生插值，結果可能不會遵循骨骼的放鬆姿勢。
 
 .. rst-class:: classref-item-separator
 
@@ -678,7 +678,7 @@ If ``true``, limits the amount of rotation. For example, this helps to prevent a
 - |void| **set_use_secondary_rotation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_secondary_rotation**\ (\ )
 
-If ``true``, provides rotation by two axes.
+如果為 ``true`` 就能夠使用兩個轉軸。
 
 .. rst-class:: classref-section-separator
 
@@ -695,7 +695,7 @@ If ``true``, provides rotation by two axes.
 
 :ref:`float<class_float>` **get_interpolation_remaining**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_get_interpolation_remaining>`
 
-Returns the remaining seconds of the time-based interpolation.
+回傳基於時間的插值的剩餘秒數。
 
 .. rst-class:: classref-item-separator
 
@@ -707,9 +707,9 @@ Returns the remaining seconds of the time-based interpolation.
 
 :ref:`bool<class_bool>` **is_interpolating**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_is_interpolating>`
 
-Returns ``true`` if time-based interpolation is running. If ``true``, it is equivalent to :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` returning ``0.0``.
+如果正在執行基於時間的插值則回傳 ``true``\ 。如果為 ``true``\ ，則等價於 :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` 回傳 ``0.0``\ 。
 
-This is useful to determine whether a **LookAtModifier3D** can be removed safely.
+適用於確定是否能夠安全移除 **LookAtModifier3D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -721,9 +721,9 @@ This is useful to determine whether a **LookAtModifier3D** can be removed safely
 
 :ref:`bool<class_bool>` **is_target_within_limitation**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_is_target_within_limitation>`
 
-Returns whether the target is within the angle limitations. It is useful for unsetting the :ref:`target_node<class_LookAtModifier3D_property_target_node>` when the target is outside of the angle limitations.
+回傳目標是否在角度限制範圍內。適用於在目標超出角度限制範圍後將 :ref:`target_node<class_LookAtModifier3D_property_target_node>` 清空。
 
-\ **Note:** The value is updated after :ref:`SkeletonModifier3D._process_modification()<class_SkeletonModifier3D_private_method__process_modification>`. To retrieve this value correctly, we recommend using the signal :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
+\ **注意：**\ 該值在 :ref:`SkeletonModifier3D._process_modification()<class_SkeletonModifier3D_private_method__process_modification>` 之後更新。為了取得正確的值，我們建議使用 :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` 訊號。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

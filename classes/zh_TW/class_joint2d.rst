@@ -16,7 +16,7 @@ Joint2D
 說明
 ----
 
-Abstract base class for all joints in 2D physics. 2D joints bind together two physics bodies (:ref:`node_a<class_Joint2D_property_node_a>` and :ref:`node_b<class_Joint2D_property_node_b>`) and apply a constraint.
+2D 物理中所有關節的抽象基底類別。2D 關節能夠將兩個物理體（\ :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>`\ ）綁定在一起並施加約束。
 
 .. rst-class:: classref-reftable-group
 
@@ -68,9 +68,9 @@ Abstract base class for all joints in 2D physics. 2D joints bind together two ph
 - |void| **set_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bias**\ (\ )
 
-When :ref:`node_a<class_Joint2D_property_node_a>` and :ref:`node_b<class_Joint2D_property_node_b>` move in different directions the :ref:`bias<class_Joint2D_property_bias>` controls how fast the joint pulls them back to their original position. The lower the :ref:`bias<class_Joint2D_property_bias>` the more the two bodies can pull on the joint.
+當 :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>` 向不同方向移動時，\ :ref:`bias<class_Joint2D_property_bias>` 控制關節將它們拉回到原始位置的速度。\ :ref:`bias<class_Joint2D_property_bias>` 越低，兩個實體對該關節的拉力就越大。
 
-When set to ``0``, the default value from :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>` is used.
+當被設定為 ``0`` 時，使用來自 :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>` 的預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ When set to ``0``, the default value from :ref:`ProjectSettings.physics/2d/solve
 - |void| **set_exclude_nodes_from_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_nodes_from_collision**\ (\ )
 
-If ``true``, the two bodies bound together do not collide with each other.
+如果為 ``true``\ ，則綁定在一起的兩個物體不會相互碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ If ``true``, the two bodies bound together do not collide with each other.
 - |void| **set_node_a**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_a**\ (\ )
 
-Path to the first body (A) attached to the joint. The node must inherit :ref:`PhysicsBody2D<class_PhysicsBody2D>`.
+連接到關節的第一個物體（A）的路徑。該節點必須繼承自 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Path to the first body (A) attached to the joint. The node must inherit :ref:`Ph
 - |void| **set_node_b**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_b**\ (\ )
 
-Path to the second body (B) attached to the joint. The node must inherit :ref:`PhysicsBody2D<class_PhysicsBody2D>`.
+連接到關節的第二個物體（B）的路徑。該節點必須繼承自 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -138,7 +138,7 @@ Path to the second body (B) attached to the joint. The node must inherit :ref:`P
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_Joint2D_method_get_rid>`
 
-Returns the joint's internal :ref:`RID<class_RID>` from the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
+從 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 回傳關節的內部 :ref:`RID<class_RID>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

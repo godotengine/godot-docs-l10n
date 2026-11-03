@@ -33,7 +33,7 @@ Tweener 是執行特定動畫化的工作的物件，例如，在給定的時間
 
 **finished**\ (\ ) :ref:`🔗<class_Tweener_signal_finished>`
 
-Emitted when the **Tweener** has just finished its job or became invalid (e.g. due to a freed object).
+當該 **Tweener** 剛剛完成其任務或失效（例如物件被釋放）時觸發。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

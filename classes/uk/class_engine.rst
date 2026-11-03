@@ -387,7 +387,7 @@ Engine
 
 :ref:`Dictionary<class_Dictionary>` **get_license_info**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_license_info>`
 
-Повернутися до :ref:`Dictionary<class_Dictionary>` ліцензій, які використовуються Godot і включені до сторонніх компонентів. Кожен запис - це назва ліцензії (наприклад, url=https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants]Expat/url) та його асоційований текст.
+Повертає :ref:`Dictionary<class_Dictionary>` ліцензій, що використовуються Godot та включеними компонентами сторонніх розробників. Кожен запис складається з назви ліцензії (наприклад, «\ `Expat <https://en.wikipedia.org/wiki/MIT_License#Ambiguity_and_variants>`__\ ») та відповідного тексту.
 
 .. rst-class:: classref-item-separator
 

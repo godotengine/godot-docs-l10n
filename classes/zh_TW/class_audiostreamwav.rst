@@ -330,9 +330,9 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`AudioStreamWAV<class_AudioStreamWAV>` **load_from_buffer**\ (\ stream_data\: :ref:`PackedByteArray<class_PackedByteArray>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_AudioStreamWAV_method_load_from_buffer>`
 
-從給定緩衝區建立新的 **AudioStreamWAV** 實例，緩衝區內容必須為 WAV 資料。
+從給定緩衝區新建 **AudioStreamWAV** 實例。緩衝區中必須包含 WAV 資料。
 
-\ ``options`` 的鍵和值對應 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 的屬性，其用法與 :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>` 相同。
+\ ``options`` 中的鍵值對與 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 的屬性對應。\ ``options`` 的用法與 :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>` 一致。
 
 .. rst-class:: classref-item-separator
 
@@ -375,9 +375,9 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_wav**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AudioStreamWAV_method_save_to_wav>`
 
-將 AudioStreamWAV 另存為 WAV 檔至 ``path``\ 。使用 IMA ADPCM 或 Quite OK Audio 的樣本無法保存。
+將 AudioStreamWAV 作為 WAV 檔案儲存到 ``path``\ 。無法儲存 IMA ADPCM 或 Quite OK Audio 格式的樣本。
 
-\ **注意：** 若路徑缺少副檔名，系統會自動附加 ``.wav``\ 。
+\ **注意：**\ 如果缺少 ``.wav`` 副檔名，則會自動將其追加到 ``path``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

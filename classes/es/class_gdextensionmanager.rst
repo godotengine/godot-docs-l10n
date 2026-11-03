@@ -14,7 +14,7 @@ Proporciona acceso a la funcionalidad de GDExtension.
 Descripción
 ----------------------
 
-GDExtensionManager carga, inicializa y realiza un seguimiento de todas las bibliotecas :ref:`GDExtension<class_GDExtension>` disponibles en el proyecto.
+GDExtensionManager carga, inicializa y realiza un seguimiento de todas las librerías :ref:`GDExtension<class_GDExtension>` disponibles en el proyecto.
 
 \ **Nota:** No se preocupe por GDExtension a menos que sepa lo que está haciendo.
 

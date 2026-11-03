@@ -16,7 +16,7 @@ Descripción
 
 Los nodos hijos :ref:`CanvasItem<class_CanvasItem>` de un **CanvasGroup** se dibujan como un objeto único. Permite, por ejemplo, dibujar nodos 2D traslúcidos superpuestos sin que las secciones solapadas sean más opacas de lo previsto (establece la propiedad :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` en el **CanvasGroup** para lograr este efecto).
 
-\ **Nota:** El **CanvasGroup** utiliza un shader personalizado para leer desde el backbuffer y dibujar a sus hijos. Asignar un :ref:`Material<class_Material>` al **CanvasGroup** anula el shader integrado. Para duplicar el comportamiento del shader integrado en un :ref:`Shader<class_Shader>` personalizado, utiliza lo siguiente:
+\ **Nota:** El **CanvasGroup** utiliza un shader personalizado para leer desde el backbuffer y dibujar a sus hijos. Asignar un :ref:`Material<class_Material>` al **CanvasGroup** sobrescribe el shader integrado. Para duplicar el comportamiento del shader integrado en un :ref:`Shader<class_Shader>` personalizado, utiliza lo siguiente:
 
 ::
 

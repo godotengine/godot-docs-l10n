@@ -104,9 +104,9 @@ Godot 編輯器的腳本編輯器。
 
 |void| **clear_docs_from_script**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_method_clear_docs_from_script>`
 
-Removes the documentation for the given ``script``.
+移除 ``script`` 腳本的文件。
 
-\ **Note:** This should be called whenever the script is changed to keep the open documentation state up to date.
+\ **注意：**\ 每當腳本發生更改時都應呼叫該方法，從而保持打開文件的狀態為最新。
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ Removes the documentation for the given ``script``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_close_file>`
 
-Closes the file at the given ``path``, discarding any unsaved changes.
+關閉給定 ``path`` 路徑處的檔案，並丟棄任何未儲存的更改。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>` if the file is not found.
+操作成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果未找到該檔案，則回傳 :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :re
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_breakpoints**\ (\ ) :ref:`🔗<class_ScriptEditor_method_get_breakpoints>`
 
-Returns array of breakpoints.
+回傳斷點陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns array of breakpoints.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_files**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_unsaved_files>`
 
-Returns an array of file paths of scripts with unsaved changes open in the editor.
+回傳一個陣列，包含目前在編輯器中打開且有未儲存更改的腳本的檔案路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -204,29 +204,29 @@ Returns an array of file paths of scripts with unsaved changes open in the edito
 
 |void| **goto_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_goto_help>`
 
-Opens help for the given topic. The ``topic`` is an encoded string that controls which class, method, constant, signal, annotation, property, or theme item should be focused.
+打開指定主題的協助。\ ``topic`` 是一個編碼字串，用於控制哪個類、方法、常數、訊號、注解、屬性或主題項應該被關注。
 
-The supported ``topic`` formats include ``class_name:class``, ``class_method:class:method``, ``class_constant:class:constant``, ``class_signal:class:signal``, ``class_annotation:class:@annotation``, ``class_property:class:property``, and ``class_theme_item:class:item``, where ``class`` is the class name, ``method`` is the method name, ``constant`` is the constant name, ``signal`` is the signal name, ``annotation`` is the annotation name, ``property`` is the property name, and ``item`` is the theme item.
+支援的 ``topic`` 格式包括 ``class_name:class``\ 、\ ``class_method:class:method``\ 、\ ``class_constant:class:constant``\ 、\ ``class_signal:class:signal``\ 、\ ``class_annotation:class:@annotation``\ 、\ ``class_property:class:property`` 和 ``class_theme_item:class:item``\ ，其中 ``class`` 為類別名稱，\ ``method`` 為方法名，\ ``constant`` 為常數名，\ ``signal`` 為訊號名，\ ``annotation`` 為注解名，\ ``property`` 為屬性名，\ ``item`` 為主題項。
 
 ::
 
-    # Shows help for the Node class.
+    # 顯示 Node 類的協助。
     class_name:Node
-    # Shows help for the global min function.
-    # Global objects are accessible in the `@GlobalScope` namespace, shown here.
+    # 顯示全域 min 函式的協助。
+    # 全域物件可在 `@GlobalScope` 命名空間中存取，如下所示。
     class_method:@GlobalScope:min
-    # Shows help for get_viewport in the Node class.
+    # 顯示 Node 類中 get_viewport 的協助。
     class_method:Node:get_viewport
-    # Shows help for the Input constant MOUSE_BUTTON_MIDDLE.
+    # 顯示輸入常數 MOUSE_BUTTON_MIDDLE 的協助。
     class_constant:Input:MOUSE_BUTTON_MIDDLE
-    # Shows help for the BaseButton signal pressed.
+    # 顯示 BaseButton 訊號 pressed 的協助。
     class_signal:BaseButton:pressed
-    # Shows help for the CanvasItem property visible.
+    # 顯示 CanvasItem 屬性 visible 的協助。
     class_property:CanvasItem:visible
-    # Shows help for the GDScript annotation export.
-    # Annotations should be prefixed with the `@` symbol in the descriptor, as shown here.
+    # 顯示 GDScript 注解 export 的協助。
+    # 注解應在描述符中以 `@` 符號為前綴，如下所示。
     class_annotation:@GDScript:@export
-    # Shows help for the GraphNode theme item named panel_selected.
+    # 顯示名為 panel_selected 的 GraphNode 主題項的協助。
     class_theme_item:GraphNode:panel_selected
 
 .. rst-class:: classref-item-separator
@@ -251,7 +251,7 @@ The supported ``topic`` formats include ``class_name:class``, ``class_method:cla
 
 |void| **open_script_create_dialog**\ (\ base_name\: :ref:`String<class_String>`, base_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_open_script_create_dialog>`
 
-打開建立腳本對話方塊。腳本將擴充 ``base_name``\ 。檔副檔名可以從 ``base_path`` 中省略，會根據所選擇的指令碼語言新增。
+打開建立腳本對話框。腳本將擴充 ``base_name``\ 。檔副檔名可以從 ``base_path`` 中省略，會根據所選擇的指令碼語言新增。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ The supported ``topic`` formats include ``class_name:class``, ``class_method:cla
 
 |void| **reload_open_files**\ (\ ) :ref:`🔗<class_ScriptEditor_method_reload_open_files>`
 
-Reloads all currently opened files. This should be used when opened files are changed outside of the script editor. The user may be prompted to resolve file conflicts, see :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
+重新載入所有目前打開的檔案。當在腳本編輯器外部修改了已打開的檔案時，應使用此功能。系統可能會提示使用者解決檔案衝突，請參閱 :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Reloads all currently opened files. This should be used when opened files are ch
 
 |void| **save_all_scripts**\ (\ ) :ref:`🔗<class_ScriptEditor_method_save_all_scripts>`
 
-Saves all open scripts.
+儲存所有已打開的腳本。
 
 .. rst-class:: classref-item-separator
 
@@ -315,9 +315,9 @@ Saves all open scripts.
 
 |void| **update_docs_from_script**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_method_update_docs_from_script>`
 
-Updates the documentation for the given ``script``.
+為 ``script`` 腳本更新文件。
 
-\ **Note:** This should be called whenever the script is changed to keep the open documentation state up to date.
+\ **注意：**\ 每當腳本發生更改時都應呼叫該方法，從而保持打開文件的狀態為最新。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

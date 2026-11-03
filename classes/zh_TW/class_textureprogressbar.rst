@@ -163,7 +163,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE** = ``8``
 
-將節點變成徑向條形。\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 從中心徑向填充，順時針和逆時針擴展。參閱\ :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`\ 、\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>`\ 和\ :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 來控制條形填充的方式。
+將節點變成徑向條形。\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 從中心徑向填充，順時針和逆時針擴充。參閱\ :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`\ 、\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>`\ 和\ :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 來控制條形填充的方式。
 
 .. rst-class:: classref-section-separator
 
@@ -202,7 +202,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_nine_patch_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_nine_patch_stretch**\ (\ )
 
-If ``true``, Godot treats the bar's textures like in :ref:`NinePatchRect<class_NinePatchRect>`. Use the ``stretch_margin_*`` properties like :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` to set up the nine patch's 3×3 grid. When using a radial :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>`, this setting will only enable stretching for :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`, while :ref:`texture_under<class_TextureProgressBar_property_texture_under>` and :ref:`texture_over<class_TextureProgressBar_property_texture_over>` will be treated like in :ref:`NinePatchRect<class_NinePatchRect>`.
+如果為 ``true``\ ，Godot 會像在 :ref:`NinePatchRect<class_NinePatchRect>` 中那樣處理進度條的紋理。請使用 :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` 等 ``stretch_margin_*`` 屬性來設定九宮格的 3×3 網格。當使用徑向的 :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 時，該設定將為 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 啟用拉伸，\ :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 和 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 則進行類似於 :ref:`NinePatchRect<class_NinePatchRect>` 的處理。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ If ``true``, Godot treats the bar's textures like in :ref:`NinePatchRect<class_N
 - |void| **set_radial_center_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_radial_center_offset**\ (\ )
 
-Offsets :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`.
+:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 為 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 時， :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的偏移。
 
-\ **Note:** The effective radial center always stays within the :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` bounds. If you need to move it outside the texture's bounds, modify the :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` to contain additional empty space where needed.
+\ **注意：**\ 有效的徑向中心始終保持在 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的範圍內。如果需要將其移動到紋理的邊界之外，請修改 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ ，讓該紋理包含所需的額外空白空間。
 
 .. rst-class:: classref-item-separator
 
@@ -238,9 +238,9 @@ Offsets :ref:`texture_progress<class_TextureProgressBar_property_texture_progres
 - |void| **set_fill_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fill_degrees**\ (\ )
 
-Upper limit for the fill of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`. When the node's ``value`` is equal to its ``max_value``, the texture fills up to this angle.
+:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 為 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 時， :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的填充上限。當節點的 ``value`` 等於其 ``max_value`` 時，則紋理將會填充到這個角度。
 
-See :ref:`Range.value<class_Range_property_value>`, :ref:`Range.max_value<class_Range_property_max_value>`.
+見 :ref:`Range.value<class_Range_property_value>`\ 、\ :ref:`Range.max_value<class_Range_property_max_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ See :ref:`Range.value<class_Range_property_value>`, :ref:`Range.max_value<class_
 - |void| **set_radial_initial_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radial_initial_angle**\ (\ )
 
-Starting angle for the fill of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`. When the node's ``value`` is equal to its ``min_value``, the texture doesn't show up at all. When the ``value`` increases, the texture fills and tends towards :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`.
+:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 為 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 時，\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 填充的起始角度。當節點的 ``value`` 等於其 ``min_value`` 時，紋理根本不會顯示出來。當 ``value`` 增加時，紋理填充並趨向於 :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 。
 
-\ **Note:** :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` is wrapped between ``0`` and ``360`` degrees (inclusive).
+\ **注意：**\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` 會在 ``0`` 到 ``360`` 度之間環繞（包含兩端）。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Starting angle for the fill of :ref:`texture_progress<class_TextureProgressBar_p
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-The height of the 9-patch's bottom row. A margin of 16 means the 9-slice's bottom corners and side will have a height of 16 pixels. You can set all 4 margin values individually to create panels with non-uniform borders. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
+九宮格底部一行的高度。邊距為 16 意味著九宮格的底角和側面將有 16 像素的高度。你可以單獨設定所有 4 個邊距值，來建立邊框不均一的面板。僅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ The height of the 9-patch's bottom row. A margin of 16 means the 9-slice's botto
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-The width of the 9-patch's left column. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
+九宮格左側一列的寬度。僅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ The width of the 9-patch's left column. Only effective if :ref:`nine_patch_stret
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-The width of the 9-patch's right column. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
+九宮格右側一列的寬度。僅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ The width of the 9-patch's right column. Only effective if :ref:`nine_patch_stre
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-The height of the 9-patch's top row. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
+九宮格頂部一行的高度。僅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ The height of the 9-patch's top row. Only effective if :ref:`nine_patch_stretch<
 - |void| **set_tint_over**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_over**\ (\ )
 
-Multiplies the color of the bar's :ref:`texture_over<class_TextureProgressBar_property_texture_over>` texture. The effect is similar to :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`, except it only affects this specific texture instead of the entire node.
+將與該進度條的 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 紋理的顏色相乘。其效果類似於 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` ，只是它只影響這個特定的紋理，而不是整個節點。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ Multiplies the color of the bar's :ref:`texture_over<class_TextureProgressBar_pr
 - |void| **set_tint_progress**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_progress**\ (\ )
 
-Multiplies the color of the bar's :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` texture.
+將與該進度條的 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 紋理的顏色相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ Multiplies the color of the bar's :ref:`texture_progress<class_TextureProgressBa
 - |void| **set_tint_under**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_under**\ (\ )
 
-Multiplies the color of the bar's :ref:`texture_under<class_TextureProgressBar_property_texture_under>` texture.
+將與該進度條的 :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 紋理的顏色相乘。
 
 .. rst-class:: classref-section-separator
 

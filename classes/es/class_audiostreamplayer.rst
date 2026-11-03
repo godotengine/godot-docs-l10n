@@ -170,7 +170,7 @@ Descripciones de Propiedades
 - |void| **set_autoplay**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoplay_enabled**\ (\ )
 
-If ``true``, this node calls :ref:`play()<class_AudioStreamPlayer_method_play>` when entering the tree.
+Si es ``true``, este nodo llama a :ref:`play()<class_AudioStreamPlayer_method_play>` al entrar en el árbol.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ El tipo de reproducción del reproductor de flujo. Si se establece un valor dist
 - |void| **set_playing**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_playing**\ (\ )
 
-If ``true``, this node is playing sounds. Setting this property has the same effect as :ref:`play()<class_AudioStreamPlayer_method_play>` and :ref:`stop()<class_AudioStreamPlayer_method_stop>`.
+Si es ``true``, este nodo está reproduciendo sonidos. Establecer esta propiedad tiene el mismo efecto que :ref:`play()<class_AudioStreamPlayer_method_play>` y :ref:`stop()<class_AudioStreamPlayer_method_stop>`.
 
 .. rst-class:: classref-item-separator
 

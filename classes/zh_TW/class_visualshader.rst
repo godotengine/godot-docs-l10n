@@ -186,7 +186,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
 
-A shader used to process blit calls to a DrawableTexture.
+用於處理向 DrawableTexture 發起的位塊傳送（blit）呼叫的著色器。
 
 .. _class_VisualShader_constant_TYPE_MAX:
 
@@ -327,7 +327,7 @@ Varying 的型別為 :ref:`Transform2D<class_Transform2D>`\ 。
 
 **NODE_ID_INVALID** = ``-1`` :ref:`🔗<class_VisualShader_constant_NODE_ID_INVALID>`
 
-Indicates an invalid **VisualShader** node.
+表示無效的 **VisualShader** 節點。
 
 .. _class_VisualShader_constant_NODE_ID_OUTPUT:
 
@@ -335,7 +335,7 @@ Indicates an invalid **VisualShader** node.
 
 **NODE_ID_OUTPUT** = ``0`` :ref:`🔗<class_VisualShader_constant_NODE_ID_OUTPUT>`
 
-Indicates an output node of **VisualShader**.
+表示 **VisualShader** 的輸出節點。
 
 .. rst-class:: classref-section-separator
 
@@ -359,7 +359,7 @@ Indicates an output node of **VisualShader**.
 
 **已棄用：** This property does nothing and always equals to zero.
 
-Deprecated.
+已棄用。
 
 .. rst-class:: classref-section-separator
 
@@ -400,7 +400,7 @@ Deprecated.
 
 |void| **attach_node_to_frame**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`, frame\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_attach_node_to_frame>`
 
-Attaches the given node to the given frame.
+將給定的節點附加到給定的框。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ Attaches the given node to the given frame.
 
 |void| **detach_node_from_frame**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_detach_node_from_frame>`
 
-Detaches the given node from the frame it is attached to.
+將給定節點與其所附加的框分離。
 
 .. rst-class:: classref-item-separator
 

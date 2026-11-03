@@ -14,7 +14,7 @@ VisualShaderNodeGlobalExpression
 說明
 ----
 
-自訂Godot著色器語言運算式，位於生成的著色器之上。你可以在內部放置各種函式定義，以便以後在\ :ref:`VisualShaderNodeExpression<class_VisualShaderNodeExpression>`\ 中呼叫，這些函式被注入到主著色器函數中。你還可以宣告varyings、uniforms 和全域常數。
+自訂Godot著色器語言運算式，位於生成的著色器之上。你可以在內部放置各種函式定義，以便以後在\ :ref:`VisualShaderNodeExpression<class_VisualShaderNodeExpression>`\ 中呼叫，這些函式被注入到主著色器函式中。你還可以宣告varyings、uniforms 和全域常數。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

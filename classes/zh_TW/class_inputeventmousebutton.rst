@@ -17,9 +17,9 @@ InputEventMouseButton
 說明
 ----
 
-Stores information about mouse click events. See :ref:`Node._input()<class_Node_private_method__input>`.
+儲存與滑鼠點選事件相關的資訊。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
 
-\ **Note:** On Wear OS devices, rotary input is mapped to :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_UP<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_UP>` and :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_DOWN>`. This can be changed to :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_LEFT>` and :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_RIGHT>` with the :ref:`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>` setting.
+\ **注意：**\ 在 Wear OS 裝置上，旋鈕輸入會被映射到 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_UP<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_UP>` 和 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_DOWN>`\ 。可以使用 :ref:`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>` 設定將其修改為 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_LEFT>` 和 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_RIGHT>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -104,7 +104,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_double_click**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_click**\ (\ )
 
-如果為 ``true``\ ，則滑鼠按鍵的狀態是按兩下。
+如果為 ``true``\ ，則滑鼠按鍵的狀態是雙擊。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_factor**\ (\ )
 
-事件的數量（或 delta）。當用於高精度滾動事件時，這表示滾動量（垂直或水平）。這只在一些平臺上被支援；報告的靈敏度因平臺不同而不同。如果不支援，可能是\ ``0``\ 。
+事件的數量（或 delta）。當用於高精度捲動事件時，這表示捲動量（垂直或水平）。這只在一些平臺上被支援；報告的靈敏度因平臺不同而不同。如果不支援，可能是\ ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-如果為 ``true``\ ，滑鼠按鍵的狀態為按下。如果為 ``false``\ ，鼠標按鈕的狀態被釋放。
+如果為 ``true``\ ，滑鼠按鍵的狀態為按下。如果為 ``false``\ ，滑鼠按鈕的狀態被釋放。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

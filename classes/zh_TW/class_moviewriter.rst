@@ -14,25 +14,25 @@ MovieWriter
 說明
 ----
 
-Godot can record videos with non-real-time simulation. Like the ``--fixed-fps`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, this forces the reported ``delta`` in :ref:`Node._process()<class_Node_private_method__process>` functions to be identical across frames, regardless of how long it actually took to render the frame. This can be used to record high-quality videos with perfect frame pacing regardless of your hardware's capabilities.
+Godot 能夠使用非即時模擬技術錄制影片。與 ``--fixed-fps`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 類似，會強制讓 :ref:`Node._process()<class_Node_private_method__process>` 等函式每一影格都收到相同的 ``delta``\ ，無論實際渲染花費了多長的時間。這個技術可用於錄制高畫質的影片，無論你的硬體效能如何，影格率始終都是恆定的。
 
-Godot has 3 built-in **MovieWriter**\ s:
+Godot 內建的 **MovieWriter** 有 3 個：
 
-- OGV container with Theora for video and Vorbis for audio (``.ogv`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`ProjectSettings.editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` and :ref:`ProjectSettings.editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>`. The resulting file can be viewed in Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` and most video players, but not web browsers as they don't support Theora.
+- 使用 Theora 影片和 Vorbis 音訊的 OVG 容器（檔案副檔名為 ``.ogv``\ ）。有損壓縮、檔案大小中等、編碼速度快。有損壓縮品質可以通過修改 :ref:`ProjectSettings.editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 和 :ref:`ProjectSettings.editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>` 來調整。生成的檔案在 Godot 中可以使用 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，也可以使用大多數影片播放器查看，但是無法在網頁瀏覽器中查看，因為它們不支援 Theora。
 
-- AVI container with MJPEG for video and uncompressed audio (``.avi`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`ProjectSettings.editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>`. The resulting file can be viewed in most video players, but it must be converted to another format for viewing on the web or by Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`. MJPEG does not support transparency. AVI output is currently limited to a file of 4 GB in size at most.
+- 使用 MJPEG 影片和未壓縮音訊的 AVI 容器（檔案副檔名為 ``.avi``\ ）。有損壓縮、檔案大小中等、編碼速度較快。有損壓縮品質可以通過修改 :ref:`ProjectSettings.editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 來調整。生成的檔案可以使用大多數影片播放器查看，但如果要在 Web 上查看或者用 Godot 的 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，則必須先進行格式的轉換。MJPEG 不支援透明度。AVI 輸出的檔案目前最多為 4 GB 大小。
 
-- PNG image sequence for video and WAV for audio (``.png`` file extension). Lossless compression, large file sizes, slow encoding. Designed to be encoded to a video file with another tool such as `FFmpeg <https://ffmpeg.org/>`__ after recording. Transparency is currently not supported, even if the root viewport is set to be transparent.
+- 影片使用 PNG 影像序列、音訊使用 WAV（檔案副檔名為 ``.png``\ ）。無損壓縮、檔案大小較大、編碼速度較慢。旨在錄制後使用 `FFmpeg <https://ffmpeg.org/>`__ 等其他工具編碼為影片檔案。目前不支援透明度，即便將根視埠設為透明。
 
-If you need to encode to a different format or pipe a stream through third-party software, you can extend the **MovieWriter** class to create your own movie writers. This should typically be done using GDExtension for performance reasons.
+如果你需要編碼為其他格式，或者將流匯入到第三方軟體中，你可以擴充 **MovieWriter** 類，建立自己的影片錄制器。出於效能考慮，一般應該使用 GDExtension 實現。
 
-\ **Editor usage:** A default movie file path can be specified in :ref:`ProjectSettings.editor/movie_writer/movie_file<class_ProjectSettings_property_editor/movie_writer/movie_file>`. Alternatively, for running single scenes, a ``movie_file`` metadata can be added to the root node, specifying the path to a movie file that will be used when recording that scene. Once a path is set, click the video reel icon in the top-right corner of the editor to enable Movie Maker mode, then run any scene as usual. The engine will start recording as soon as the splash screen is finished, and it will only stop recording when the engine quits. Click the video reel icon again to disable Movie Maker mode. Note that toggling Movie Maker mode does not affect project instances that are already running.
+\ **編輯器使用：**\ 預設影片檔案路徑可以在 :ref:`ProjectSettings.editor/movie_writer/movie_file<class_ProjectSettings_property_editor/movie_writer/movie_file>` 指定。或者在執行單個場景時，也可以在根節點上新增中繼資料 ``movie_file``\ ，可以指定錄制該場景時所使用的影片檔案路徑。設定路徑後，請點選編輯器右上角的電影膠卷圖示，啟動 Movie Maker 模式，然後和平常一樣執行場景即可。引擎會在啟動畫面結束後開始錄制，只會在引擎退出時停止錄制。再次點選電影膠卷圖示可以停用 Movie Maker 模式。請注意，Movie Maker 模式的開關不會影響正在執行的專案實例。
 
-\ **Note:** MovieWriter is available for use in both the editor and exported projects, but it is *not* designed for use by end users to record videos while playing. Players wishing to record gameplay videos should install tools such as `OBS Studio <https://obsproject.com/>`__ or `SimpleScreenRecorder <https://www.maartenbaert.be/simplescreenrecorder/>`__ instead.
+\ **注意：**\ MovieWriter 既可以在編輯器中使用，也可以在匯出的專案中使用，但這個功能\ *不應*\ 用來讓最終使用者錄制遊戲影片。希望錄制遊戲影片的玩家應該安裝 `OBS Studio <https://obsproject.com/>`__ 或 `SimpleScreenRecorder <https://www.maartenbaert.be/simplescreenrecorder/>`__ 等工具。
 
-\ **Note:** MJPEG support (``.avi`` file extension) depends on the ``jpg`` module being enabled at compile time (default behavior).
+\ **注意：**\ MJPEG 支援（(``.avi`` 檔案副檔名）取決於 ``jpg`` 模組，需要在編譯時啟用（預設行為）。
 
-\ **Note:** OGV support (``.ogv`` file extension) depends on the ``theora`` module being enabled at compile time (default behavior). Theora compression is only available in editor binaries.
+\ **注意：**\ OGV 支援（(``.ogv`` 檔案副檔名）取決於 ``theora`` 模組，需要在編譯時啟用（預設行為）。Theora 壓縮僅在編輯器二進位檔案中可用。
 
 .. rst-class:: classref-reftable-group
 
@@ -99,7 +99,7 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_supported_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__get_supported_extensions>`
 
-Returns the list of supported filename extensions for movies written with this **MovieWriter**.
+回傳此 **MovieWriter** 在生成（寫入）影片時所支援的檔名副檔名清單。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Returns the list of supported filename extensions for movies written with this *
 
 :ref:`Error<enum_@GlobalScope_Error>` **_write_frame**\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const void*``\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_frame>`
 
-在每個算繪的影格結束時被呼叫。應寫入 ``frame_image`` 和 ``audio_frame_block`` 函式參數。
+在每個渲染的影格結束時被呼叫。應寫入 ``frame_image`` 和 ``audio_frame_block`` 函式參數。
 
 .. rst-class:: classref-item-separator
 

@@ -205,9 +205,9 @@ enum **RotationMode**: :ref:`🔗<enum_PathFollow3D_RotationMode>`
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance from the first vertex, considering 0.0 as the first vertex and 1.0 as the last. This is just another way of expressing the progress within the path, as the progress supplied is multiplied internally by the path's length.
+到第一個頂點的距離，將 0.0 作為第一個頂點，1.0 作為最後一個頂點。這只是表示路徑內偏移量的另一種方式，提供的偏移量在內部會與路徑的長度相乘。
 
-It can be set or get only if the **PathFollow3D** is the child of a :ref:`Path3D<class_Path3D>` which is part of the scene tree, and that this :ref:`Path3D<class_Path3D>` has a :ref:`Curve3D<class_Curve3D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+\ **PathFollow3D** 為場景樹中 :ref:`Path3D<class_Path3D>` 的子節點時才能夠設定和取得，該 :ref:`Path3D<class_Path3D>` 中還需要存在長度非零的 :ref:`Curve3D<class_Curve3D>`\ 。否則設定該欄位會輸出錯誤，取得該欄位則會回傳 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -18,19 +18,11 @@ Descripción
 
 Un "filtro" controla la ganancia de las frecuencias utilizando :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` como umbral de frecuencia. Los filtros pueden ayudar a dar espacio a cada sonido y crear efectos interesantes.
 
-
-
 Existen diferentes tipos de filtros que heredan de esta clase:
-
-
 
 Filtros de estantería: :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` y :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
 
-
-
 Filtros pasa banda y de rechazo de banda: :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` y :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
-
-
 
 Filtros pasa bajos y pasa altos: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` y :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
 
@@ -145,7 +137,7 @@ Umbral de frecuencia para el filtro, en Hz. El valor puede oscilar entre 1 y 205
 - |void| **set_db**\ (\ value\: :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>`\ )
 - :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **get_db**\ (\ )
 
-Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`), also known as the "order" of the filter. Higher orders have a more aggressive cutoff.
+Inclinación de la curva de corte en dB por octava (el doble de la frecuencia por encima de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` o la mitad de la frecuencia por debajo de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`), también conocida como el «orden» del filtro. Los órdenes más altos tienen un corte más pronunciado.
 
 .. rst-class:: classref-item-separator
 

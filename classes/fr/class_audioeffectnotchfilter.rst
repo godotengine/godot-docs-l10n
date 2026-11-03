@@ -7,7 +7,7 @@ AudioEffectNotchFilter
 
 **Hérite de :** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a notch filter to an audio bus.
+Ajoute un filtre notch (type de filtre coupe-bande) à un bus audio.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,11 +14,11 @@ Proporciona métodos para generar números pseudoaleatorios.
 Descripción
 ----------------------
 
-RandomNumberGenerator is a class for generating pseudo-random numbers. It currently uses `PCG32 <https://www.pcg-random.org/>`__.
+RandomNumberGenerator es una clase para generar números pseudoaleatorios. Actualmente usa `PCG32 <https://www.pcg-random.org/>`__.
 
-\ **Note:** The underlying algorithm is an implementation detail and should not be depended upon.
+\ **Nota:** El algoritmo subyacente es un detalle de implementación y no se debe depender de él.
 
-To generate a random float number (within a given range) based on a time-dependent seed:
+Para generar un número float aleatorio (dentro de un rango dado) a partir de una semilla dependiente del tiempo:
 
 ::
 

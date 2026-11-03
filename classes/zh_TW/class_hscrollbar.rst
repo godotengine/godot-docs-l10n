@@ -7,14 +7,14 @@ HScrollBar
 
 **繼承：** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-水平捲軸，從左側（最小）滾動到右側（最大）。
+水平捲軸，從左側（最小）捲動到右側（最大）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-水平捲軸，通常用於為超出控制項可見寬度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控件，從左側（最小）滾動到右側（最大）。
+水平捲軸，通常用於為超出控制項可見寬度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控制項，從左側（最小）捲動到右側（最大）。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +45,9 @@ HScrollBar
 
 :ref:`int<class_int>` **padding_bottom** = ``0`` :ref:`🔗<class_HScrollBar_theme_constant_padding_bottom>`
 
-Padding between the bottom of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素底部與 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之間的內邊距。
 
-\ **Note:** To apply horizontal padding, modify the left/right content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要應用水平內邊距，請改為修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的左右內容邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -59,9 +59,9 @@ Padding between the bottom of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_s
 
 :ref:`int<class_int>` **padding_top** = ``0`` :ref:`🔗<class_HScrollBar_theme_constant_padding_top>`
 
-Padding between the top of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素頂部與 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之間的內邊距。
 
-\ **Note:** To apply horizontal padding, modify the left/right content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要應用水平內邊距，請改為修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的左右內容邊距。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -120,7 +120,7 @@ ScrollContainer
 
 **scroll_ended**\ (\ ) :ref:`🔗<class_ScrollContainer_signal_scroll_ended>`
 
-使用觸控事件\ *拖曳可滾動區域*\ 時滾動停止時發出。拖曳滾動條時\ *不會*\ 發出此訊號，使用滑鼠滾輪滾動或使用鍵盤/遊戲手把事件滾動。
+使用觸控事件\ *拖動可捲動區域*\ 時捲動停止時發出。拖動捲動條時\ *不會*\ 發出此訊號，使用滑鼠滾輪捲動或使用鍵盤/遊戲手把事件捲動。
 
 \ **注意：**\ 此訊號僅在啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 時在 Android 或 iOS 或桌面/Web 平台上發出。
 
@@ -134,7 +134,7 @@ ScrollContainer
 
 **scroll_started**\ (\ ) :ref:`🔗<class_ScrollContainer_signal_scroll_started>`
 
-透過觸控事件\ *拖曳可捲動區域*\ 時開始捲動時發出。拖曳滾動條時\ *不會*\ 發出此訊號，使用滑鼠滾輪滾動或使用鍵盤/遊戲手把事件滾動。
+透過觸控事件\ *拖動可捲動區域*\ 時開始捲動時發出。拖動捲動條時\ *不會*\ 發出此訊號，使用滑鼠滾輪捲動或使用鍵盤/遊戲手把事件捲動。
 
 \ **注意：**\ 此訊號僅在啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 時在 Android 或 iOS 或桌面/Web 平台上發出。
 
@@ -159,7 +159,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_DISABLED** = ``0``
 
-禁用滾動，捲軸不可見。
+停用捲動，捲軸不可見。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_AUTO:
 
@@ -167,7 +167,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_AUTO** = ``1``
 
-啟用滾動，捲軸僅在需要時可見，即容器的內容比容器大時。
+啟用捲動，捲軸僅在需要時可見，即容器的內容比容器大時。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_SHOW_ALWAYS:
 
@@ -175,7 +175,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_SHOW_ALWAYS** = ``2``
 
-啟用滾動，捲軸始終可見。
+啟用捲動，捲軸始終可見。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_SHOW_NEVER:
 
@@ -183,7 +183,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_SHOW_NEVER** = ``3``
 
-啟用滾動，捲軸隱藏。
+啟用捲動，捲軸隱藏。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_RESERVE:
 
@@ -191,7 +191,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_RESERVE** = ``4``
 
-Combines :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>` and :ref:`SCROLL_MODE_SHOW_ALWAYS<class_ScrollContainer_constant_SCROLL_MODE_SHOW_ALWAYS>`. The scrollbar is only visible if necessary, but the content size is adjusted as if it was always visible. It's useful for ensuring that content size stays the same regardless if the scrollbar is visible.
+:ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>` 和 :ref:`SCROLL_MODE_SHOW_ALWAYS<class_ScrollContainer_constant_SCROLL_MODE_SHOW_ALWAYS>` 的結合。僅在必要時顯示捲動條，但是會按照捲動條始終顯示來調整內容的大小。適合需要保證無論捲動條是否可見，內容大小都保持一致的場合。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_MAXIMIZE_FIRST:
 
@@ -199,7 +199,7 @@ Combines :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_MAXIMIZE_FIRST** = ``5``
 
-Behaves like :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, but makes the **ScrollContainer** report a minimum size based on its content (limited by :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` when set on the corresponding axis). This allows it to grow first and only start scrolling once constrained.
+其行為類似於 :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`\ ，但會使 **ScrollContainer** 根據其內容報告一個最小尺寸（受對應軸向上設定的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 限制）。這允許容器優先擴充自身，僅在空間受限時才開始出現捲動條。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+捲動提示將永遠不會顯示。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 
@@ -225,7 +225,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_ALL** = ``1``
 
-Scroll hints will be shown at the top and bottom (if vertical), or left and right (if horizontal).
+捲動提示將顯示在頂部和底部（如果是垂直的），或左側和右側（如果是水平的）。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_TOP_AND_LEFT:
 
@@ -233,7 +233,7 @@ Scroll hints will be shown at the top and bottom (if vertical), or left and righ
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_TOP_AND_LEFT** = ``2``
 
-Scroll hints will be shown at the top (if vertical), or the left (if horizontal).
+捲動提示將顯示在頂部（如果是垂直的），或左側（如果是水平的）。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_BOTTOM_AND_RIGHT:
 
@@ -241,7 +241,7 @@ Scroll hints will be shown at the top (if vertical), or the left (if horizontal)
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM_AND_RIGHT** = ``3``
 
-Scroll hints will be shown at the bottom (if horizontal), or the right (if horizontal).
+捲動提示將顯示在底部（如果是水平的），或右側（如果是垂直的）。
 
 .. rst-class:: classref-section-separator
 
@@ -263,7 +263,7 @@ Scroll hints will be shown at the bottom (if horizontal), or the right (if horiz
 - |void| **set_draw_focus_border**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_focus_border**\ (\ )
 
-If ``true``, :ref:`focus<class_ScrollContainer_theme_style_focus>` is drawn when the ScrollContainer or one of its descendant nodes is focused.
+如果為 ``true``\ ，則當 ScrollContainer 或其子節點獲得焦點時會繪製 :ref:`focus<class_ScrollContainer_theme_style_focus>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +280,7 @@ If ``true``, :ref:`focus<class_ScrollContainer_theme_style_focus>` is drawn when
 - |void| **set_follow_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_focus**\ (\ )
 
-如果為 ``true``\ ，則 ScrollContainer 將自動滾動到獲得焦點的子項（包括間接子項）以確保它們完全可見。
+如果為 ``true``\ ，則 ScrollContainer 將自動捲動到獲得焦點的子項（包括間接子項）以確保它們完全可見。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ If ``true``, :ref:`focus<class_ScrollContainer_theme_style_focus>` is drawn when
 - |void| **set_horizontal_scroll_mode**\ (\ value\: :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>`\ )
 - :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **get_horizontal_scroll_mode**\ (\ )
 
-Controls whether horizontal scrollbar can be used and when it should be visible.
+控制水平捲動條是否可用、應該何時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Controls whether horizontal scrollbar can be used and when it should be visible.
 - |void| **set_deadzone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_deadzone**\ (\ )
 
-觸摸滾動的死區。較低的死區使滾動更加敏感。
+觸摸捲動的死區。較低的死區使捲動更加敏感。
 
 .. rst-class:: classref-item-separator
 
@@ -331,9 +331,9 @@ Controls whether horizontal scrollbar can be used and when it should be visible.
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+捲動提示（指示內容可以向特定方向捲動的指示器）的顯示方式。
 
-\ **Note:** Hints won't be shown if the content can be scrolled both vertically and horizontally.
+\ **注意：**\ 如果內容可以同時在垂直和水平方向捲動，則不會顯示提示。
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_h_scroll**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_h_scroll**\ (\ )
 
-目前的水平滾動值。
+目前的水平捲動值。
 
 \ **注意：**\ 如果在 :ref:`Node._ready()<class_Node_private_method__ready>` 函式或之前設定該值，則需要用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 包裹，因為捲軸的 :ref:`Range.max_value<class_Range_property_max_value>` 此時尚未初始化。
 
@@ -374,9 +374,9 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_scroll_horizontal_by_default**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_horizontal_by_default**\ (\ )
 
-If ``true``, the mouse wheel scrolls the view horizontally, and holding :kbd:`Shift` scrolls vertically.
+如果設定為 ``true``\ ，滑鼠滾輪將水平捲動檢視，而按住 :kbd:`Shift` 鍵則進行垂直捲動。
 
-If ``false`` (default), the mouse wheel scrolls the view vertically, and holding :kbd:`Shift` scrolls horizontally.
+如果設定為 ``false``\ （預設），滑鼠滾輪將垂直捲動檢視，而按住 :kbd:`Shift` 鍵則進行水平捲動。
 
 .. rst-class:: classref-item-separator
 
@@ -393,7 +393,7 @@ If ``false`` (default), the mouse wheel scrolls the view vertically, and holding
 - |void| **set_horizontal_custom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_horizontal_custom_step**\ (\ )
 
-覆蓋點擊內部捲軸的水平增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
+覆蓋點選內部捲軸的水平增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ If ``false`` (default), the mouse wheel scrolls the view vertically, and holding
 - |void| **set_vertical_custom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vertical_custom_step**\ (\ )
 
-覆蓋點擊內部捲軸的垂直增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
+覆蓋點選內部捲軸的垂直增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ If ``false`` (default), the mouse wheel scrolls the view vertically, and holding
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+如果為 ``true``\ ，則捲動提示紋理將平鋪而不是拉伸。見 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 - |void| **set_vertical_scroll_mode**\ (\ value\: :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>`\ )
 - :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **get_vertical_scroll_mode**\ (\ )
 
-Controls whether vertical scrollbar can be used and when it should be visible.
+控制垂直捲動條是否可用、應該何時可見。
 
 .. rst-class:: classref-section-separator
 
@@ -487,7 +487,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 確保給定的 ``control`` 控制項可見（必須是 ScrollContainer 的直接或間接子節點）。會被 :ref:`follow_focus<class_ScrollContainer_property_follow_focus>` 使用。
 
-\ **注意：**\ 這不適用於在同一影格內剛剛新增的節點。如果想滾動到一個新新增的子節點，就必須使用 :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` 等待至下一影格：
+\ **注意：**\ 這不適用於在同一影格內剛剛新增的節點。如果想捲動到一個新新增的子節點，就必須使用 :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` 等待至下一影格：
 
 ::
 
@@ -507,7 +507,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 返回該 **ScrollContainer** 的水平捲軸 :ref:`HScrollBar<class_HScrollBar>`\ 。
 
-\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想禁用或隱藏捲軸，可以使用 :ref:`horizontal_scroll_mode<class_ScrollContainer_property_horizontal_scroll_mode>`\ 。
+\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想停用或隱藏捲軸，可以使用 :ref:`horizontal_scroll_mode<class_ScrollContainer_property_horizontal_scroll_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 返回該 **ScrollContainer** 的垂直捲動條 :ref:`VScrollBar<class_VScrollBar>`\ 。
 
-\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想禁用或隱藏捲軸，可以使用 :ref:`vertical_scroll_mode<class_ScrollContainer_property_vertical_scroll_mode>`\ 。
+\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想停用或隱藏捲軸，可以使用 :ref:`vertical_scroll_mode<class_ScrollContainer_property_vertical_scroll_mode>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -538,7 +538,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 :ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+用於調制 :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` 紋理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 :ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+用於調制 :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` 紋理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_h_separation>`
 
-The space between the ScrollContainer's vertical scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+ScrollContainer 的垂直捲動條與其內容之間的間距，單位為像素。如果內容的最小大小大於 ScrollContainer 的大小，則不會新增任何間距。
 
 .. rst-class:: classref-item-separator
 
@@ -574,7 +574,7 @@ The space between the ScrollContainer's vertical scroll bar and its content, in 
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_v_separation>`
 
-The space between the ScrollContainer's horizontal scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+ScrollContainer 的水平捲動條與其內容之間的間距，單位為像素。如果內容的最小大小大於 ScrollContainer 的大小，則不會新增任何間距。
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+當內容仍可水平捲動時將顯示的指示器。請參閱 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+當內容仍可垂直捲動時將顯示的指示器。請參閱 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ The indicator that will be shown when the content can still be scrolled vertical
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_ScrollContainer_theme_style_focus>`
 
-The focus border :ref:`StyleBox<class_StyleBox>` of the **ScrollContainer**. Only used if :ref:`draw_focus_border<class_ScrollContainer_property_draw_focus_border>` is ``true``.
+**ScrollContainer** 的聚焦邊框 :ref:`StyleBox<class_StyleBox>`\ 。僅在 :ref:`draw_focus_border<class_ScrollContainer_property_draw_focus_border>` 為 ``true`` 時使用。
 
 .. rst-class:: classref-item-separator
 

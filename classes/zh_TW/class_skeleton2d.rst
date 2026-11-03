@@ -119,7 +119,7 @@ Skeleton2D
 
 :ref:`Transform2D<class_Transform2D>` **get_bone_local_pose_override**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton2D_method_get_bone_local_pose_override>`
 
-返回骨骼 ``bone_idx`` 的局部姿勢覆蓋變換。
+返回骨骼 ``bone_idx`` 的區域姿勢覆蓋變換。
 
 .. rst-class:: classref-item-separator
 
@@ -155,11 +155,11 @@ Skeleton2D
 
 |void| **set_bone_local_pose_override**\ (\ bone_idx\: :ref:`int<class_int>`, override_pose\: :ref:`Transform2D<class_Transform2D>`, strength\: :ref:`float<class_float>`, persistent\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Skeleton2D_method_set_bone_local_pose_override>`
 
-為 ``bone_idx`` 處的骨骼設定局部姿勢變換 ``override_pose``\ 。
+為 ``bone_idx`` 處的骨骼設定區域姿勢變換 ``override_pose``\ 。
 
 \ ``strength`` 是套用姿勢時將使用的插值強度，\ ``persistent`` 決定是否會保持套用的姿勢。
 
-\ **注意：**\ 姿勢變換需要是相對於 ``bone_idx`` 處的 :ref:`Bone2D<class_Bone2D>` 節點的局部變換！
+\ **注意：**\ 姿勢變換需要是相對於 ``bone_idx`` 處的 :ref:`Bone2D<class_Bone2D>` 節點的區域變換！
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ RDFramebufferPass
 
 該類包含框架緩衝區通道的附件描述列表。每個點都有一個指向先前提供的紋理附件列表的索引。
 
-多通道框架緩衝區，可以優化移動裝置中的某些配置；在桌面裝置上，它們幾乎沒有優勢。
+多通道框架緩衝區，可以最佳化移動裝置中的某些配置；在桌面裝置上，它們幾乎沒有優勢。
 
 這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
@@ -113,7 +113,7 @@ RDFramebufferPass
 - |void| **set_input_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_input_attachments**\ (\ )
 
-用於多通道框架緩衝區（不止一個算繪通道）。將一個附件轉換為一個輸入。確保還在 :ref:`RDUniform<class_RDUniform>` 中為 uniform 集正確提供它。
+用於多通道框架緩衝區（不止一個渲染通道）。將一個附件轉換為一個輸入。確保還在 :ref:`RDUniform<class_RDUniform>` 中為 uniform 集正確提供它。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 

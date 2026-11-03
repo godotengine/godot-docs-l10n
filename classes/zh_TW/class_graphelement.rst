@@ -127,7 +127,7 @@ GraphElement
 
 **raise_request**\ (\ ) :ref:`🔗<class_GraphElement_signal_raise_request>`
 
-當 GraphNode 被要求顯示在其他節點之上時觸發。在 GraphNode 獲得焦點時觸發，即滑鼠點擊進入。
+當 GraphNode 被要求顯示在其他節點之上時觸發。在 GraphNode 獲得焦點時觸發，即滑鼠點選進入。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ GraphElement
 
 **resize_end**\ (\ new_size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphElement_signal_resize_end>`
 
-Emitted when releasing the mouse button after dragging the resizer handle (see :ref:`resizable<class_GraphElement_property_resizable>`).
+拖動調整大小控點後釋放滑鼠按鈕時發出（見 :ref:`resizable<class_GraphElement_property_resizable>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Emitted when releasing the mouse button after dragging the resizer handle (see :
 
 **resize_request**\ (\ new_size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphElement_signal_resize_request>`
 
-當 GraphNode 被要求調整大小時發出。在拖動調整器手柄時發生（見 :ref:`resizable<class_GraphElement_property_resizable>`\ ）。
+當 GraphNode 被要求調整大小時發出。在拖動調整器控點時發生（見 :ref:`resizable<class_GraphElement_property_resizable>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -190,7 +190,7 @@ Emitted when releasing the mouse button after dragging the resizer handle (see :
 - |void| **set_position_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position_offset**\ (\ )
 
-GraphNode 的偏移量，相對於 :ref:`GraphEdit<class_GraphEdit>` 的滾動偏移量。
+GraphNode 的偏移量，相對於 :ref:`GraphEdit<class_GraphEdit>` 的捲動偏移量。
 
 \ **注意：**\ 不能直接使用位置偏移，因為 :ref:`GraphEdit<class_GraphEdit>` 是一個 :ref:`Container<class_Container>`\ 。
 
@@ -209,9 +209,9 @@ GraphNode 的偏移量，相對於 :ref:`GraphEdit<class_GraphEdit>` 的滾動�
 - |void| **set_resizable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_resizable**\ (\ )
 
-If ``true``, the user can resize the GraphElement.
+如果為 ``true``\ ，則使用者可以調整 GraphElement 的大小。
 
-\ **Note:** Dragging the handle will only emit the :ref:`resize_request<class_GraphElement_signal_resize_request>` and :ref:`resize_end<class_GraphElement_signal_resize_end>` signals, the GraphElement needs to be resized manually.
+\ **注意：**\ 拖動控點只會發出 :ref:`resize_request<class_GraphElement_signal_resize_request>` 和 :ref:`resize_end<class_GraphElement_signal_resize_end>` 訊號，GraphElement 需要手動調整大小。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ If ``true``, the user can resize the GraphElement.
 - |void| **set_scaling_menus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scaling_menus**\ (\ )
 
-If ``true``, :ref:`PopupMenu<class_PopupMenu>`\ s that are descendants of the GraphElement are scaled with the :ref:`GraphEdit<class_GraphEdit>` zoom.
+如果為 ``true``\ ，則作為該 GraphElement 後代的 :ref:`PopupMenu<class_PopupMenu>` 會隨著 :ref:`GraphEdit<class_GraphEdit>` 的縮放而縮放。
 
 .. rst-class:: classref-item-separator
 

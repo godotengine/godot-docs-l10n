@@ -73,7 +73,7 @@ EngineProfiler
 
 |void| **_toggle**\ (\ enable\: :ref:`bool<class_bool>`, options\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_EngineProfiler_private_method__toggle>`
 
-啟用/禁用分析器時呼叫，提供了一組選項 ``options``\ 。
+啟用/停用分析器時呼叫，提供了一組選項 ``options``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

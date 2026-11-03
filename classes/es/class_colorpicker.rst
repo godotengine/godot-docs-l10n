@@ -618,7 +618,7 @@ Descripciones de las propiedades del tema
 
 :ref:`Color<class_Color>` **focused_not_editing_cursor_color** = ``Color(1, 1, 1, 0.275)`` :ref:`🔗<class_ColorPicker_theme_color_focused_not_editing_cursor_color>`
 
-Color del rectángulo o círculo dibujado cuando una parte de la forma del selector está enfocada pero no se puede editar mediante el teclado o el mando. Se muestra *sobre* la forma del selector, por lo que se debe utilizar un color parcialmente transparente para garantizar que la forma del selector siga siendo visible.
+Color del rectángulo o círculo dibujado cuando una parte de la forma del selector está enfocada, pero no se puede editar mediante el teclado o el joypad. Se muestra *sobre* la forma del selector, por lo que se debe utilizar un color parcialmente transparente para garantizar que la forma del selector siga siendo visible.
 
 .. rst-class:: classref-item-separator
 
@@ -630,7 +630,7 @@ Color del rectángulo o círculo dibujado cuando una parte de la forma del selec
 
 :ref:`int<class_int>` **center_slider_grabbers** = ``1`` :ref:`🔗<class_ColorPicker_theme_constant_center_slider_grabbers>`
 
-Anula la propiedad de tema :ref:`Slider.center_grabber<class_Slider_theme_constant_center_grabber>` de los deslizadores.
+Sobrescribe la propiedad de tema :ref:`Slider.center_grabber<class_Slider_theme_constant_center_grabber>` de los deslizadores.
 
 .. rst-class:: classref-item-separator
 

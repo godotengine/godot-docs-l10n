@@ -10,14 +10,14 @@ FoldableGroup
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A group of foldable containers that doesn't allow more than one container to be expanded at a time.
+一組可折疊容器，不允許同一時間有超過一個容器處於展開狀態。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A group of :ref:`FoldableContainer<class_FoldableContainer>`-derived nodes. Only one container can be expanded at a time.
+一組派生自 :ref:`FoldableContainer<class_FoldableContainer>` 的節點的分組。同一時間只能有一個容器處於展開狀態。
 
 .. rst-class:: classref-reftable-group
 
@@ -62,7 +62,7 @@ A group of :ref:`FoldableContainer<class_FoldableContainer>`-derived nodes. Only
 
 **expanded**\ (\ container\: :ref:`FoldableContainer<class_FoldableContainer>`\ ) :ref:`🔗<class_FoldableGroup_signal_expanded>`
 
-Emitted when one of the containers of the group is expanded.
+當該組中的某個容器被展開時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -84,7 +84,7 @@ Emitted when one of the containers of the group is expanded.
 - |void| **set_allow_folding_all**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_folding_all**\ (\ )
 
-If ``true``, it is possible to fold all containers in this FoldableGroup.
+如果為 ``true``\ ，則可以折疊 FoldableGroup 中的所有容器。
 
 .. rst-class:: classref-section-separator
 
@@ -101,7 +101,7 @@ If ``true``, it is possible to fold all containers in this FoldableGroup.
 
 :ref:`Array<class_Array>`\[:ref:`FoldableContainer<class_FoldableContainer>`\] **get_containers**\ (\ ) |const| :ref:`🔗<class_FoldableGroup_method_get_containers>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`FoldableContainer<class_FoldableContainer>`\ s that have this as their FoldableGroup (see :ref:`FoldableContainer.foldable_group<class_FoldableContainer_property_foldable_group>`). This is equivalent to :ref:`ButtonGroup<class_ButtonGroup>` but for FoldableContainers.
+回傳一個 :ref:`Array<class_Array>`\ ，其中的元素是使用該 FoldableGroup 的 :ref:`FoldableContainer<class_FoldableContainer>`\ （見 :ref:`FoldableContainer.foldable_group<class_FoldableContainer_property_foldable_group>`\ ）。等價於 :ref:`ButtonGroup<class_ButtonGroup>`\ ，但適用於 FoldableContainer。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns an :ref:`Array<class_Array>` of :ref:`FoldableContainer<class_FoldableCo
 
 :ref:`FoldableContainer<class_FoldableContainer>` **get_expanded_container**\ (\ ) |const| :ref:`🔗<class_FoldableGroup_method_get_expanded_container>`
 
-Returns the current expanded container.
+回傳目前展開的容器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

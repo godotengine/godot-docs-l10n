@@ -120,7 +120,7 @@ El número de modificaciones en la pila.
 - |void| **set_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_strength**\ (\ )
 
-La fuerza de interpolación de las modificaciones en la pila. Un valor de ``0`` hará que las modificaciones no se apliquen, una fuerza de ``0.5`` hará que se apliquen a la mitad, y una fuerza de ``1`` permitirá que las modificaciones se apliquen por completo y anulen las poses de :ref:`Skeleton2D<class_Skeleton2D>` :ref:`Bone2D<class_Bone2D>`.
+La fuerza de interpolación de las modificaciones en la pila. Un valor de ``0`` hará que las modificaciones no se apliquen, una fuerza de ``0.5`` hará que se apliquen a la mitad, y una fuerza de ``1`` permitirá que las modificaciones se apliquen por completo y sobrescriban las poses de :ref:`Skeleton2D<class_Skeleton2D>` :ref:`Bone2D<class_Bone2D>`.
 
 .. rst-class:: classref-section-separator
 

@@ -7,16 +7,16 @@ OptimizedTranslation
 
 **繼承：** :ref:`Translation<class_Translation>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An optimized translation.
+經過最佳化的翻譯。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An optimized translation. Uses real-time compressed translations, which results in very small dictionaries.
+最佳化後的翻譯。它使用即時壓縮翻譯，因此生成的字典非常小。
 
-This class does not store the untranslated strings for optimization purposes. Therefore, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` always returns an empty array, and :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` always returns ``0``.
+出於最佳化目的，該類不儲存未翻譯的字串。因此，\ :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` 始終回傳一個空陣列，而 :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` 始終回傳 ``0``\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,11 +45,11 @@ This class does not store the untranslated strings for optimization purposes. Th
 
 :ref:`bool<class_bool>` **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource. Returns ``true`` if successful.
+根據給定的 :ref:`Translation<class_Translation>`\ （翻譯）資源，生成並設定一套最佳化後的翻譯。如果操作成功，則回傳 ``true``\ 。
 
-\ **Note:** Messages in ``from`` should not use context or plural forms.
+\ **注意：** ``from`` 中的訊息不應使用情境（context）或複數形式。
 
-\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
+\ **注意：** 此方法旨在編輯器內使用。在匯出的專案（即打包發佈後的遊戲或應用）中呼叫它不會產生任何效果。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

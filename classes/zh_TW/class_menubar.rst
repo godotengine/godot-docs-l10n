@@ -7,14 +7,14 @@ MenuBar
 
 **繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMenu>` child.
+水平選單欄，會為每個 :ref:`PopupMenu<class_PopupMenu>` 型別的子節點建立一個選單。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMenu>` child. New items are created by adding :ref:`PopupMenu<class_PopupMenu>`\ s to this node. Item title is determined by :ref:`Window.title<class_Window_property_title>`, or node name if :ref:`Window.title<class_Window_property_title>` is empty. Item title can be overridden using :ref:`set_menu_title()<class_MenuBar_method_set_menu_title>`.
+水平選單欄，會為每個 :ref:`PopupMenu<class_PopupMenu>` 型別的子節點建立一個選單。通過新增 :ref:`PopupMenu<class_PopupMenu>` 節點來建立新的項目。項目的標題由 :ref:`Window.title<class_Window_property_title>` 決定，如果 :ref:`Window.title<class_Window_property_title>` 為空則使用節點的名稱。可以使用 :ref:`set_menu_title()<class_MenuBar_method_set_menu_title>` 覆蓋項目標題。
 
 .. rst-class:: classref-reftable-group
 
@@ -163,7 +163,7 @@ A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMe
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -180,11 +180,11 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_prefer_global_menu**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_prefer_global_menu**\ (\ )
 
-If ``true``, **MenuBar** will use system global menu when supported.
+如果為 ``true``\ ，則系統支援全域選單時 **MenuBar** 會使用全域選單。
 
-\ **Note:** If ``true`` and global menu is supported, this node is not displayed, has zero size, and all its child nodes except :ref:`PopupMenu<class_PopupMenu>`\ s are inaccessible.
+\ **注意：**\ 如果為 ``true`` 且支援全域選單，則不會顯示該節點，其大小為零，\ :ref:`PopupMenu<class_PopupMenu>` 外的所有子節點都無法存取。
 
-\ **Note:** This property overrides the value of the :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` property of the child nodes.
+\ **注意：**\ 該屬性會覆蓋子節點的 :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ If ``true``, **MenuBar** will use system global menu when supported.
 - |void| **set_start_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_start_index**\ (\ )
 
-Position order in the global menu to insert **MenuBar** items at. All menu items in the **MenuBar** are always inserted as a continuous range. Menus with lower :ref:`start_index<class_MenuBar_property_start_index>` are inserted first. Menus with :ref:`start_index<class_MenuBar_property_start_index>` equal to ``-1`` are inserted last.
+在全域選單中插入 **MenuBar** 項目的位置順序。\ **MenuBar** 中的所有選單項都始終會作為連續的範圍插入。\ :ref:`start_index<class_MenuBar_property_start_index>` 較低的選單會優先插入。\ :ref:`start_index<class_MenuBar_property_start_index>` 等於 ``-1`` 的選單會最後插入。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 :ref:`bool<class_bool>` **is_menu_disabled**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_disabled>`
 
-Returns ``true`` if the menu item is disabled.
+如果選單項被停用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns ``true`` if the menu item is disabled.
 
 :ref:`bool<class_bool>` **is_menu_hidden**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_hidden>`
 
-Returns ``true`` if the menu item is hidden.
+如果選單項被隱藏，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` if the menu item is hidden.
 
 :ref:`bool<class_bool>` **is_native_menu**\ (\ ) |const| :ref:`🔗<class_MenuBar_method_is_native_menu>`
 
-Returns ``true`` if the current system's global menu is supported and used by this **MenuBar**.
+如果目前系統的全域選單受支援且被該 **MenuBar** 使用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuBar_method_set_disable_shortcuts>`
 
-如果為 ``true``\ ，快捷方式將被禁用，無法用於觸發按鈕。
+如果為 ``true``\ ，快捷方式將被停用，無法用於觸發按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_menu_disabled**\ (\ menu\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuBar_method_set_menu_disabled>`
 
-為 ``true`` 時，功能表專案為禁用狀態。
+為 ``true`` 時，功能表專案為停用狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_MenuBar_theme_color_font_disabled_color>`
 
-功能表專案處於禁用狀態時使用的文字 :ref:`Color<class_Color>`\ 。
+功能表專案處於停用狀態時使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_focus_color>`
 
-功能表專案處於聚焦狀態時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。禁用、懸停和按下狀態優先於這個顏色。
+功能表專案處於聚焦狀態時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。停用、懸停和按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **disabled** :ref:`🔗<class_MenuBar_theme_style_disabled>`
 
-功能表專案處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+功能表專案處於停用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **disabled_mirrored** :ref:`🔗<class_MenuBar_theme_style_disabled_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+該 :ref:`OptionButton<class_OptionButton>` 處於停用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 

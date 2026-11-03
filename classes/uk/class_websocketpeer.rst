@@ -14,11 +14,11 @@ WebSocketPeer
 Опис
 --------
 
-Цей клас представляє з'єднання WebSocket і може використовуватися як клієнт WebSocket (сумісний з RFC 6455) або як віддалений вузол сервера WebSocket.
+Цей клас представляє з’єднання WebSocket і може використовуватися як клієнт WebSocket (відповідно до `RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__) або як віддалений партнер сервера WebSocket.
 
-Ви можете надсилати бінарні кадри WebSocket за допомогою методу :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, а текстові кадри WebSocket - за допомогою методу :ref:`send()<class_WebSocketPeer_method_send>` (надавати перевагу текстовим кадрам під час взаємодії з текстовим API). Ви можете перевірити тип кадру останнього пакета за допомогою методу :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
+Ви можете надсилати бінарні фрейми WebSocket за допомогою :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, а текстові фрейми WebSocket — за допомогою :ref:`send()<class_WebSocketPeer_method_send>` (під час взаємодії з текстовим API краще використовувати текстові фрейми). Тип фрейму останнього пакета можна перевірити за допомогою :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
 
-Щоб запустити клієнт WebSocket, спочатку викличте метод ``connect_to_url``, а потім регулярно викликайте метод ``poll`` (наприклад, під час процесу :ref:`Node<class_Node>`). Ви можете запитувати стан сокета за допомогою методу :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, отримувати кількість пакетів, що очікують обробки, за допомогою методу :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, та отримувати їх за допомогою методу :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
+Щоб запустити клієнт WebSocket, спочатку викличте :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, а потім регулярно викликайте :ref:`poll()<class_WebSocketPeer_method_poll>` (наприклад, під час роботи процесу :ref:`Node<class_Node>`). Ви можете перевірити стан сокета за допомогою :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, отримати кількість пакетів, що очікують на обробку, за допомогою :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, а також отримати їх за допомогою :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
 
 
 .. tabs::
@@ -30,26 +30,26 @@ WebSocketPeer
     var socket = WebSocketPeer.new()
 
     func _ready():
-        socket.connect_to_url("wss://example.com")
+     socket.connect_to_url("wss://example.com")
 
     func _process(delta):
-        socket.poll()
-        var state = socket.get_ready_state()
-        if state == WebSocketPeer.STATE_OPEN:
-            while socket.get_available_packet_count():
-                print("Packet: ", socket.get_packet())
-        elif state == WebSocketPeer.STATE_CLOSING:
-            # Keep polling to achieve proper close.
-            pass
-        elif state == WebSocketPeer.STATE_CLOSED:
-            var code = socket.get_close_code()
-            var reason = socket.get_close_reason()
-            print("WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
-            set_process(false) # Stop processing.
+     socket.poll()
+     var state = socket.get_ready_state()
+     if state == WebSocketPeer.STATE_OPEN:
+     while socket.get_available_packet_count():
+                print("Пакет: ", socket.get_packet())
+     elif state == WebSocketPeer.STATE_CLOSING:
+     # Продовжуємо опитування, щоб забезпечити правильне закриття.
+     pass
+     elif state == WebSocketPeer.STATE_CLOSED:
+     var code = socket.get_close_code()
+     var reason = socket.get_close_reason()
+            print("WebSocket закрито з кодом: %d, причина %s. Очищення: %s" % [code, reason, code != -1])
+     set_process(false) # Припинити обробку.
 
 
 
-Щоб використовувати вузол як частину сервера WebSocket, зверніться до :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` та онлайн-посібника.
+Щоб використовувати цей пір як частину сервера WebSocket, див. :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` та онлайн-посібник.
 
 .. rst-class:: classref-reftable-group
 

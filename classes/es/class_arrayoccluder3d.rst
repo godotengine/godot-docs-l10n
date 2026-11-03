@@ -14,9 +14,9 @@ Forma poligonal 3D para usar con la técnica "occlusion culling" en :ref:`Occlud
 Descripción
 ----------------------
 
-**ArrayOccluder3D** stores an arbitrary 3D polygon shape that can be used by the engine's occlusion culling system. This is analogous to :ref:`ArrayMesh<class_ArrayMesh>`, but for occluders.
+**ArrayOccluder3D** almacena una forma poligonal 3D arbitraria que puede utilizar el sistema de oclusión selectiva del motor. Esto es análogo a :ref:`ArrayMesh<class_ArrayMesh>`, pero para oclusores.
 
-See :ref:`OccluderInstance3D<class_OccluderInstance3D>`'s documentation for instructions on setting up occlusion culling.
+Véase la documentación de :ref:`OccluderInstance3D<class_OccluderInstance3D>` para obtener instrucciones sobre cómo configurar la oclusión selectiva.
 
 .. rst-class:: classref-introduction-group
 

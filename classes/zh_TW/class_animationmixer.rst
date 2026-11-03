@@ -162,9 +162,9 @@ AnimationMixer
 
 **animation_started**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationMixer_signal_animation_started>`
 
-Notifies when an animation starts playing.
+動畫開始播放時通知。
 
-\ **Note:** This signal is not emitted if an animation is looping.
+\ **注意：**\ 如果動畫正在循環播放，則不會發出該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ enum **AnimationCallbackModeDiscrete**: :ref:`🔗<enum_AnimationMixer_Animation
 
 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE** = ``1``
 
-當混合 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 或 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 與 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 時，前兩者具有優先權。這是 :ref:`AnimationPlayer<class_AnimationPlayer>` 的預設行為。
+將 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 或 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 軌道值與 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 軌道值混合時，\ :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 或 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 軌道值優先。這是 :ref:`AnimationPlayer<class_AnimationPlayer>` 的預設行為。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS:
 
@@ -387,7 +387,7 @@ enum **AnimationCallbackModeDiscrete**: :ref:`🔗<enum_AnimationMixer_Animation
 
 但若與 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 混合，則會考慮多種結果。\ :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` 可明確指定，詳見 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`\ 。
 
-為了讓混合結果更自然，建議設為 :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>`\ ，於混合時每幀都更新。其他設定主要為相容性，若無混合則可用，但否則可能產生異常畫面。
+為了讓混合結果更自然，建議設為 :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>`\ ，於混合時每影格都更新。其他設定主要為相容性，若無混合則可用，但否則可能產生異常畫面。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ AnimationMixer 預設具有鍵為空字串的全域動畫庫。若要將動畫�
 
 |void| **capture**\ (\ name\: :ref:`StringName<class_StringName>`, duration\: :ref:`float<class_float>`, trans_type\: :ref:`TransitionType<enum_Tween_TransitionType>` = 0, ease_type\: :ref:`EaseType<enum_Tween_EaseType>` = 0\ ) :ref:`🔗<class_AnimationMixer_method_capture>`
 
-若 ``name`` 指定的動畫軌道具有 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 選項，會將軌道路徑所指物件的當前值快取；若已存在快取則覆蓋舊快取。
+若 ``name`` 指定的動畫軌道具有 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 選項，會將軌道路徑所指物件的目前值快取；若已存在快取則覆蓋舊快取。
 
 之後在 ``duration`` 指定的時間內於播放過程中與目前的動畫混合結果插值，效果如同交叉淡入。
 
@@ -762,7 +762,7 @@ AnimationMixer 預設具有鍵為空字串的全域動畫庫。若要將動畫�
 
 當需要保留動畫初始鍵值時相當有用。
 
-例如，若前一幀播放僅含 ``Vector3(0, 0, 0)`` 的動畫，而下一幀播放僅含 ``Vector3(1, 0, 1)`` 的動畫，可如下計算兩者差異：
+例如，若前一影格播放僅含 ``Vector3(0, 0, 0)`` 的動畫，而下一影格播放僅含 ``Vector3(1, 0, 1)`` 的動畫，可如下計算兩者差異：
 
 
 .. tabs::
@@ -829,7 +829,7 @@ AnimationMixer 預設具有鍵為空字串的全域動畫庫。若要將動畫�
 
 此方法亦可用於需要保留動畫初始鍵值的情況。
 
-例如，若前一幀播放僅含 ``Quaternion(0, 0, 0, 1)`` 的動畫，而下一幀播放僅含 ``Quaternion(0, 0.707, 0, 0.707)`` 的動畫，可如下計算差異：
+例如，若前一影格播放僅含 ``Quaternion(0, 0, 0, 1)`` 的動畫，而下一影格播放僅含 ``Quaternion(0, 0.707, 0, 0.707)`` 的動畫，可如下計算差異：
 
 
 .. tabs::
@@ -898,7 +898,7 @@ AnimationMixer 預設具有鍵為空字串的全域動畫庫。若要將動畫�
 
 取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 縮放軌道的混合值，返回可於其他位置使用之 :ref:`Vector3<class_Vector3>`\ 。
 
-例如，若前一幀播放僅含 ``Vector3(1, 1, 1)`` 的動畫，而下一幀播放僅含 ``Vector3(2, 2, 2)`` 的動畫，可如下計算差異：
+例如，若前一影格播放僅含 ``Vector3(1, 1, 1)`` 的動畫，而下一影格播放僅含 ``Vector3(2, 2, 2)`` 的動畫，可如下計算差異：
 
 
 .. tabs::

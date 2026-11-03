@@ -1513,7 +1513,7 @@ Establece el color personalizado de la columna dada.
 
 **Obsoleto:** Use :ref:`set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>` instead.
 
-Establece la callback de dibujo personalizado de la columna dada al método ``callback`` en ``object``.
+Establece el callback de dibujo personalizado de la columna dada al método ``callback`` en ``object``.
 
 El método llamado ``callback`` debe aceptar dos argumentos: el **TreeItem** que se dibuja y su posición y tamaño como un :ref:`Rect2<class_Rect2>`.
 
@@ -1527,11 +1527,11 @@ El método llamado ``callback`` debe aceptar dos argumentos: el **TreeItem** que
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
+Establece el callback de dibujo personalizado de la columna dada. Utiliza un :ref:`Callable<class_Callable>` vacío (``Callable()``) para borrar el callback personalizado. La celda debe estar en :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` para usar esta función.
 
-The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+El ``callback`` debe aceptar dos argumentos: el **TreeItem** que se dibuja y su posición y tamaño mediante un :ref:`Rect2<class_Rect2>`.
 
-To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
+Para dibujar contenido personalizado sobre el estilo nativo, utiliza :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
 
 .. rst-class:: classref-item-separator
 

@@ -9,14 +9,14 @@ SocketServer
 
 **被繼承：** :ref:`TCPServer<class_TCPServer>`, :ref:`UDSServer<class_UDSServer>`
 
-An abstract class for servers based on sockets.
+基於套接字的伺服器的抽象類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A socket server.
+套接字伺服器。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ A socket server.
 
 :ref:`bool<class_bool>` **is_connection_available**\ (\ ) |const| :ref:`🔗<class_SocketServer_method_is_connection_available>`
 
-如果有連接可供獲取，則返回 ``true``\ 。
+如果有連接可供取得，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ A socket server.
 
 :ref:`StreamPeerSocket<class_StreamPeerSocket>` **take_socket_connection**\ (\ ) :ref:`🔗<class_SocketServer_method_take_socket_connection>`
 
-If a connection is available, returns a StreamPeerSocket with the connection.
+如果連接可用，則回傳帶有該連接的 StreamPeerSocket。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

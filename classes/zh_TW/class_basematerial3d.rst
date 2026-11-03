@@ -9,14 +9,14 @@ BaseMaterial3D
 
 **被繼承：** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
 
-用於定義網格 3D 算繪屬性的抽象基底類別。
+用於定義網格 3D 渲染屬性的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-此類別提供一個預設材質，具備多種算繪功能與屬性，無須撰寫著色器程式。詳情請見下方教學。
+此類別提供一個預設材質，具備多種渲染功能與屬性，無須撰寫著色器程式。詳情請見下方教學。
 
 .. rst-class:: classref-introduction-group
 
@@ -534,7 +534,7 @@ enum **TextureFilter**: :ref:`🔗<enum_BaseMaterial3D_TextureFilter>`
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``3``
 
-紋理在最近 4 像素與最近 2 層 mipmap 間皆進行插值（或僅取最近 mipmap，依設定而定），近看與遠看皆平滑；一般建議使用此模式。
+紋理過濾在最近的 4 個像素和最近的 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來平滑，從遠處看起來也平滑。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -542,7 +542,7 @@ enum **TextureFilter**: :ref:`🔗<enum_BaseMaterial3D_TextureFilter>`
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``4``
 
-依表面與鏡頭角度選取最鄰近像素並於兩層 mipmap 間插值（或僅取最近 mipmap），近看帶像素感，遠看平滑。各向異性篩選可提升與鏡頭幾乎平行表面的貼圖品質，效能稍降；程度可在 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 調整。
+紋理過濾從最近的像素讀取並根據表面和相機檢視之間的角度在 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來像素化，從遠處看起來平滑。各向異性過濾提高了幾乎與相機位於一條線上的表面上的紋理品質，但速度稍慢。各向異性過濾層級可以通過調整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 來改變。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -550,7 +550,7 @@ enum **TextureFilter**: :ref:`🔗<enum_BaseMaterial3D_TextureFilter>`
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-在最鄰近 4 像素與 2 層 mipmap 間插值，並依表面與鏡頭角度最佳化；近遠皆平滑。各向異性篩選能改善斜視角貼圖品質但稍慢，可於 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 設定等級。
+紋理過濾在最近的 4 個像素之間進行混合，並基於表面與相機檢視之間的角度在 2 個多級漸遠紋理之間進行混合 （或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來平滑，從遠處看起來也平滑。各向異性過濾提高了幾乎與相機位於一條線的表面上的紋理品質，但速度稍慢。各向異性過濾層級可以通過調整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 來改變。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_MAX:
 
@@ -602,7 +602,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_DISABLED** = ``0``
 
-該材質將不使用透明度。算繪最快。
+該材質將不使用透明度。渲染最快。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA:
 
@@ -610,7 +610,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA** = ``1``
 
-該材質將使用紋理的 Alpha 值作為透明度。算繪最慢，並會停用陰影投射。
+該材質將使用紋理的 Alpha 值作為透明度。渲染最慢，並會停用陰影投射。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_SCISSOR:
 
@@ -618,7 +618,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_SCISSOR** = ``2``
 
-該材質會將所有低於閾值的值截斷，其餘部分保持不透明。不透明部分會在深度預通道中算繪。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。
+該材質會將所有低於閾值的值截斷，其餘部分保持不透明。不透明部分會在深度預通道中渲染。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_HASH:
 
@@ -626,7 +626,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_HASH** = ``3``
 
-該材質會將所有低於空間確定性閾值的值截斷，其餘部分保持不透明。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。Alpha 雜湊適合於頭髮算繪。
+該材質會將所有低於空間確定性閾值的值截斷，其餘部分保持不透明。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。Alpha 雜湊適合於頭髮渲染。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_DEPTH_PRE_PASS:
 
@@ -660,7 +660,7 @@ enum **ShadingMode**: :ref:`🔗<enum_BaseMaterial3D_ShadingMode>`
 
 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **SHADING_MODE_UNSHADED** = ``0``
 
-該物件不會接收陰影。算繪速度最快，但會停用與光源的所有互動。
+該物件不會接收陰影。渲染速度最快，但會停用與光源的所有互動。
 
 .. _class_BaseMaterial3D_constant_SHADING_MODE_PER_PIXEL:
 
@@ -874,7 +874,7 @@ enum **AlphaAntiAliasing**: :ref:`🔗<enum_BaseMaterial3D_AlphaAntiAliasing>`
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_OFF** = ``0``
 
-停用此材質的 Alpha 抗鋸齒。
+停用此材質的 Alpha 反鋸齒。
 
 .. _class_BaseMaterial3D_constant_ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE:
 
@@ -882,7 +882,7 @@ enum **AlphaAntiAliasing**: :ref:`🔗<enum_BaseMaterial3D_AlphaAntiAliasing>`
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE** = ``1``
 
-啟用 AlphaToCoverage。材質中的 Alpha 值會傳遞到抗鋸齒取樣遮罩中。
+啟用 AlphaToCoverage。材質中的 Alpha 值會傳遞到反鋸齒取樣遮罩中。
 
 .. _class_BaseMaterial3D_constant_ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE_AND_TO_ONE:
 
@@ -890,7 +890,7 @@ enum **AlphaAntiAliasing**: :ref:`🔗<enum_BaseMaterial3D_AlphaAntiAliasing>`
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE_AND_TO_ONE** = ``2``
 
-啟用 AlphaToCoverage，並將所有非零 Alpha 值強制為 ``1``\ 。材質中的 Alpha 值會傳遞到抗鋸齒取樣遮罩中。
+啟用 AlphaToCoverage，並將所有非零 Alpha 值強制為 ``1``\ 。材質中的 Alpha 值會傳遞到反鋸齒取樣遮罩中。
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +944,7 @@ enum **DepthTest**: :ref:`🔗<enum_BaseMaterial3D_DepthTest>`
 
 :ref:`DepthTest<enum_BaseMaterial3D_DepthTest>` **DEPTH_TEST_DEFAULT** = ``0``
 
-Depth test will discard the pixel if it is behind other pixels.
+深度測試會丟棄位於其他像素後面的像素。
 
 .. _class_BaseMaterial3D_constant_DEPTH_TEST_INVERTED:
 
@@ -952,7 +952,7 @@ Depth test will discard the pixel if it is behind other pixels.
 
 :ref:`DepthTest<enum_BaseMaterial3D_DepthTest>` **DEPTH_TEST_INVERTED** = ``1``
 
-Depth test will discard the pixel if it is in front of other pixels. Useful for stencil effects.
+深度測試會丟棄位於其他像素前面的像素。適用於範本效果。
 
 .. rst-class:: classref-item-separator
 
@@ -1020,9 +1020,9 @@ enum **Flags**: :ref:`🔗<enum_BaseMaterial3D_Flags>`
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_SRGB_VERTEX_COLOR** = ``2``
 
-Vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+頂點顏色被認為以非線性 sRGB 編碼儲存，並在渲染期間轉換為線性編碼。另見 :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`\ 。
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods.
+\ **注意：**\ 僅在使用 Forward+ 和移動渲染方式時有效。
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_POINT_SIZE:
 
@@ -1102,7 +1102,7 @@ Vertex colors are considered to be stored in nonlinear sRGB encoding and are con
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_FORCE_SRGB** = ``12``
 
-Forces the shader to convert albedo from nonlinear sRGB encoding to linear encoding. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+強制著色器將反照率從非線性 sRGB 編碼轉換為線性編碼。另見 :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_DONT_RECEIVE_SHADOWS:
 
@@ -1158,7 +1158,7 @@ Forces the shader to convert albedo from nonlinear sRGB encoding to linear encod
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_PARTICLE_TRAILS_MODE** = ``19``
 
-啟用 :ref:`GPUParticles3D<class_GPUParticles3D>` 尾跡所需的著色器部分。需配合具蒙皮的網格（如 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>`\ 、\ :ref:`TubeTrailMesh<class_TubeTrailMesh>`\ ）。若在非 :ref:`GPUParticles3D<class_GPUParticles3D>` 材質上啟用，將導致算繪錯誤。
+啟用 :ref:`GPUParticles3D<class_GPUParticles3D>` 尾跡所需的著色器部分。需配合具蒙皮的網格（如 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>`\ 、\ :ref:`TubeTrailMesh<class_TubeTrailMesh>`\ ）。若在非 :ref:`GPUParticles3D<class_GPUParticles3D>` 材質上啟用，將導致渲染錯誤。
 
 .. _class_BaseMaterial3D_constant_FLAG_ALBEDO_TEXTURE_MSDF:
 
@@ -1166,7 +1166,7 @@ Forces the shader to convert albedo from nonlinear sRGB encoding to linear encod
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_MSDF** = ``20``
 
-啟用多通道 SDF（Signed Distance Field）算繪著色器。
+啟用多通道 SDF（Signed Distance Field）渲染著色器。
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_FOG:
 
@@ -1466,7 +1466,7 @@ enum **StencilMode**: :ref:`🔗<enum_BaseMaterial3D_StencilMode>`
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_DISABLED** = ``0``
 
-Disables stencil operations.
+停用範本運算。
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_OUTLINE:
 
@@ -1474,9 +1474,9 @@ Disables stencil operations.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_OUTLINE** = ``1``
 
-Stencil preset which applies an outline to the object.
+範本預設，為物體新增輪廓。
 
-\ **Note:** Requires a :ref:`Material.next_pass<class_Material_property_next_pass>` material which will be automatically applied. Any manual changes made to :ref:`Material.next_pass<class_Material_property_next_pass>` will be lost when the stencil properties are modified or the scene is reloaded. To safely apply a :ref:`Material.next_pass<class_Material_property_next_pass>` material on a material that uses stencil presets, use :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` instead.
+\ **注意：**\ 需要自動應用 :ref:`Material.next_pass<class_Material_property_next_pass>` 材質。修改範本屬性或重新載入場景時，對 :ref:`Material.next_pass<class_Material_property_next_pass>` 的手動更改會丟失。要安全地對使用範本預設的材質應用 :ref:`Material.next_pass<class_Material_property_next_pass>` 材質，請改用 :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>`\ 。
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_XRAY:
 
@@ -1484,9 +1484,9 @@ Stencil preset which applies an outline to the object.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_XRAY** = ``2``
 
-Stencil preset which shows a silhouette of the object behind walls.
+範本預設，為牆後的物體顯示剪影。
 
-\ **Note:** Requires a :ref:`Material.next_pass<class_Material_property_next_pass>` material which will be automatically applied. Any manual changes made to :ref:`Material.next_pass<class_Material_property_next_pass>` will be lost when the stencil properties are modified or the scene is reloaded. To safely apply a :ref:`Material.next_pass<class_Material_property_next_pass>` material on a material that uses stencil presets, use :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` instead.
+\ **注意：**\ 需要自動應用 :ref:`Material.next_pass<class_Material_property_next_pass>` 材質。修改範本屬性或重新載入場景時，對 :ref:`Material.next_pass<class_Material_property_next_pass>` 的手動更改會丟失。要安全地對使用範本預設的材質應用 :ref:`Material.next_pass<class_Material_property_next_pass>` 材質，請改用 :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>`\ 。
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_CUSTOM:
 
@@ -1494,7 +1494,7 @@ Stencil preset which shows a silhouette of the object behind walls.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_CUSTOM** = ``3``
 
-Enables stencil operations without a preset.
+啟用範本運算，但不使用預設。
 
 .. rst-class:: classref-item-separator
 
@@ -1512,7 +1512,7 @@ enum **StencilFlags**: :ref:`🔗<enum_BaseMaterial3D_StencilFlags>`
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_READ** = ``1``
 
-The material will only be rendered where it passes a stencil comparison with existing stencil buffer values.
+材質僅當其通過與現有範本緩衝區值的範本比較時才會被渲染。
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE:
 
@@ -1520,7 +1520,7 @@ The material will only be rendered where it passes a stencil comparison with exi
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE** = ``2``
 
-The material will write the reference value to the stencil buffer where it passes the depth test.
+材質通過深度測試時會將參考值寫入範本緩衝區。
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE_DEPTH_FAIL:
 
@@ -1528,7 +1528,7 @@ The material will write the reference value to the stencil buffer where it passe
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE_DEPTH_FAIL** = ``4``
 
-The material will write the reference value to the stencil buffer where it fails the depth test.
+材質未通過深度測試時會將參考值寫入範本緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -1546,7 +1546,7 @@ enum **StencilCompare**: :ref:`🔗<enum_BaseMaterial3D_StencilCompare>`
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_ALWAYS** = ``0``
 
-Always passes the stencil test.
+始終通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_LESS:
 
@@ -1554,7 +1554,7 @@ Always passes the stencil test.
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_LESS** = ``1``
 
-Passes the stencil test when the reference value is less than the existing stencil value.
+當參考值小於現有範本值時，通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_EQUAL:
 
@@ -1562,7 +1562,7 @@ Passes the stencil test when the reference value is less than the existing stenc
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_EQUAL** = ``2``
 
-Passes the stencil test when the reference value is equal to the existing stencil value.
+當參考值等於現有範本值時，通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_LESS_OR_EQUAL:
 
@@ -1570,7 +1570,7 @@ Passes the stencil test when the reference value is equal to the existing stenci
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_LESS_OR_EQUAL** = ``3``
 
-Passes the stencil test when the reference value is less than or equal to the existing stencil value.
+當參考值小於或等於現有範本值時，通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_GREATER:
 
@@ -1578,7 +1578,7 @@ Passes the stencil test when the reference value is less than or equal to the ex
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_GREATER** = ``4``
 
-Passes the stencil test when the reference value is greater than the existing stencil value.
+當參考值大於現有範本值時，通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_NOT_EQUAL:
 
@@ -1586,7 +1586,7 @@ Passes the stencil test when the reference value is greater than the existing st
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_NOT_EQUAL** = ``5``
 
-Passes the stencil test when the reference value is not equal to the existing stencil value.
+當參考值不等於現有範本值時，通過範本測試。
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_GREATER_OR_EQUAL:
 
@@ -1594,7 +1594,7 @@ Passes the stencil test when the reference value is not equal to the existing st
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_GREATER_OR_EQUAL** = ``6``
 
-Passes the stencil test when the reference value is greater than or equal to the existing stencil value.
+當參考值大於或等於現有範本值時，通過範本測試。
 
 .. rst-class:: classref-section-separator
 
@@ -1654,9 +1654,9 @@ Passes the stencil test when the reference value is greater than or equal to the
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, forces a conversion of the :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` from nonlinear sRGB encoding to linear encoding. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+如果為 ``true``\ ，則強制將 :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` 從非線性 sRGB 編碼轉換為線性編碼。另見 :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`\ 。
 
-This should only be enabled when needed (typically when using a :ref:`ViewportTexture<class_ViewportTexture>` as :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>`). If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``true`` when it shouldn't be, the texture will appear to be too dark. If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``false`` when it shouldn't be, the texture will appear to be too bright.
+該屬性應該只在需要時啟用（通常在使用 :ref:`ViewportTexture<class_ViewportTexture>` 作為 :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` 時）。如果 :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` 在不應該的情況下為 ``true``\ ，則紋理會顯得太暗。如果 :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` 在不應該的情況下為 ``false``\ ，則紋理會顯得太亮。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-啟用多通道 Signed Distance Field 算繪著色器。可透過 :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` 與 :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` 調整 MSDF 參數。
+啟用多通道 Signed Distance Field 渲染著色器。可透過 :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` 與 :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` 調整 MSDF 參數。
 
 .. rst-class:: classref-item-separator
 
@@ -1690,7 +1690,7 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-在 Alpha 通道上套用抗鋸齒的臨界值。
+在 Alpha 通道上套用反鋸齒的臨界值。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-要套用的 Alpha 抗鋸齒類型。
+要套用的 Alpha 反鋸齒類型。
 
 .. rst-class:: classref-item-separator
 
@@ -1741,7 +1741,7 @@ Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
 - |void| **set_alpha_scissor_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_scissor_threshold**\ (\ )
 
-Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。若遠處材質顯得過於不透明，嘗試調高 :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`\ ；若遠處材質消失，嘗試調低此值。
+Alpha 剪刀將丟棄值的閾值。較高的值將導致更多像素被丟棄。如果材質在遠處變得太不透明，請嘗試增加 :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`\ 。如果材質在遠處消失，請嘗試降低 :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1968,13 +1968,13 @@ Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-指定各像素環境光平均入射方向的紋理。\ :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` 僅使用紅、綠通道；藍與 Alpha 通道會被忽略。讀取到的法線方向會以網格的表面法線為基準旋轉。
+用於指定給定像素的入射環境光平均方向的紋理。\ :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` 只使用紅色和綠色通道；會忽略藍色和 alpha 通道。從 :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` 讀取的法線是圍繞 :ref:`Mesh<class_Mesh>` 所提供的表面法線的進行朝向的。
 
-\ **注意：** 彎曲法線貼圖與一般法線貼圖不同，烘焙時需使用 **餘弦分布** 才能正確運作。
+\ **注意：**\ 彎曲法線貼圖與常規法線貼圖不同。烘焙彎曲法線貼圖時，請確保使用\ **余弦分布**\ ，彎曲法線貼圖才能正常工作。
 
-\ **注意：** 網格需同時具備法線與切線資料，否則算繪結果將異常。若使用 :ref:`SurfaceTool<class_SurfaceTool>` 建立幾何，可透過 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 與 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 自動產生。
+\ **注意：**\ 該網格必須在其頂點資料中同時定義法線和切線。否則法線貼圖將無法正確渲染，只會使整個表面變暗。如果使用 :ref:`SurfaceTool<class_SurfaceTool>` 建立幾何體，可以使用 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 和 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 分別自動生成法線和切線。
 
-\ **注意：** Godot 期望貼圖採用 X+、Y+、Z+ 座標系，詳見 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
+\ **注意：**\ Godot 期望彎曲法線貼圖使用 X+、Y+、Z+ 座標系。比較流行的引擎所期望的法線貼圖座標系見\ `這個頁面 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1991,7 +1991,7 @@ Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-若為 ``true``\ ，公告板算繪時仍保留網格原有縮放；否則縮放會被忽略。僅於 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` 非 :ref:`BILLBOARD_DISABLED<class_BaseMaterial3D_constant_BILLBOARD_DISABLED>` 時適用。
+若為 ``true``\ ，公告板渲染時仍保留網格原有縮放；否則縮放會被忽略。僅於 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` 非 :ref:`BILLBOARD_DISABLED<class_BaseMaterial3D_constant_BILLBOARD_DISABLED>` 時適用。
 
 .. rst-class:: classref-item-separator
 
@@ -2029,7 +2029,7 @@ Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。
 
 材質的混合模式。
 
-\ **注意：** 除 ``Mix`` 以外的模式都會將物件強制進入透明算繪流程。
+\ **注意：** 除 ``Mix`` 以外的模式都會將物件強制進入透明渲染流程。
 
 .. rst-class:: classref-item-separator
 
@@ -2063,7 +2063,7 @@ Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-若為 ``true``\ ，啟用清漆算繪，於照明中加入透明次通道產生額外高光，使材質看起來像有一層光滑或霧面的透明塗層。
+若為 ``true``\ ，啟用清漆渲染，於照明中加入透明次通道產生額外高光，使材質看起來像有一層光滑或霧面的透明塗層。
 
 \ **注意：** 若材質的 :ref:`shading_mode<class_BaseMaterial3D_property_shading_mode>` 為 :ref:`SHADING_MODE_UNSHADED<class_BaseMaterial3D_constant_SHADING_MODE_UNSHADED>`\ ，則不會顯示清漆效果。
 
@@ -2152,9 +2152,9 @@ Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-Determines which comparison operator is used when testing depth.
+決定深度測試時使用的比較運算符。
 
-\ **Note:** Changing :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` to a non-default value only has a visible effect when used on a transparent material, or a material that has :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` set to :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
+\ **注意：**\ 將 :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` 設為非預設值只有用於透明材質、\ :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` 為 :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>` 的材質時才有可見的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2241,9 +2241,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-指定細節覆蓋逐像素法線的紋理。\ :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` 僅使用紅、綠通道；藍與 Alpha 通道會被忽略。讀取到的法線方向會以網格表面法線為基準旋轉。
+用於指定細節覆蓋層逐像素法線的紋理。\ :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` 紋理只使用紅色和綠色通道；會忽略藍色和 alpha 通道。從 :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` 讀取的法線是圍繞 :ref:`Mesh<class_Mesh>` 所提供的表面法線的進行朝向的。
 
-\ **注意：** Godot 期望使用 X+、Y+、Z+ 座標系，可參考 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
+\ **注意：**\ Godot 期望法線貼圖使用 X+、Y+、Z+ 座標系。比較流行的引擎所期望的法線貼圖座標系見\ `這個頁面 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2345,7 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-若為 ``true``\ ，即使全域設定已停用，也依然關閉此材質的鏡面遮蔽。
+如果為 ``true`` 則停用鏡面反射遮蔽，即便 :ref:`ProjectSettings.rendering/reflections/specular_occlusion/enabled<class_ProjectSettings_property_rendering/reflections/specular_occlusion/enabled>` 為 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2362,9 +2362,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_distance_fade_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_max_distance**\ (\ )
 
-物件呈現完全不透明時的距離。
+物體看起來完全不透明的距離。
 
-\ **注意：** 若 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 小於 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`\ ，行為將反轉：物件會在 max_distance 開始淡出，並於到達 min_distance 時完全消失。
+\ **注意：**\ 如果 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 小於 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`\ ，則行為相反。物體將在 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 處開始逐漸消失，並在到達 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 時完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2381,9 +2381,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_distance_fade_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_min_distance**\ (\ )
 
-物件開始變得可見的距離；若距離小於此值，物件將不可見。
+物體開始變得可見的距離。如果物體的距離小於這個距離，它將是不可見的。
 
-\ **注意：** 若 min_distance 大於 max_distance，行為將反轉：物件會在 max_distance 開始淡出，並於到達 min_distance 時完全消失。
+\ **注意：**\ 如果 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 大於 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>`\ ，則行為將相反。物體將在 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 處開始逐漸消失，並在到達 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 時完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2625,7 +2625,7 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-若為 ``true``\ ，啟用高度貼圖（亦稱視差貼圖或深度貼圖），另見 :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`\ 。此功能對 GPU 耗費較高，僅應用於視覺差異顯著的材質。
+若為 ``true``\ ，啟用高度貼圖（亦稱視差貼圖或深度貼圖），另見 :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`\ 。此功能對 GPU 耗費較高，僅套用至視覺差異顯著的材質。
 
 \ **注意：** 若同一材質啟用了三平面貼圖（\ :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>`\ ），則不支援高度貼圖，\ :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` 會被忽略。
 
@@ -2680,7 +2680,7 @@ Determines which comparison operator is used when testing depth.
 
 若設為 ``true``\ ，則把高度圖紋理視為深度圖，亮部會顯得「較低」，暗部則顯得較高。
 
-此選項用於相容某些為 Godot 3.x 製作的材質；若在 Godot 3.x 導入時已使用「Invert」反轉深度圖，則無需啟用，並應讓 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 維持 ``false``\ 。
+此選項用於相容某些為 Godot 3.x 製作的材質；若在 Godot 3.x 匯入時已使用「Invert」反轉深度圖，則無需啟用，並應讓 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 維持 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2735,9 +2735,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_heightmap_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_heightmap_scale**\ (\ )
 
-控制視差效果強度的高度圖縮放（參見 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`\ ）。預設值使最高點（255）看起來比最低點（0）高 5 cm。提高此值可加深立體感，但在斜視或移動鏡頭時可能產生偽影。設定為負值可反轉視差方向，這與 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 的紋理反轉不同──材質同時會顯得「更靠近」鏡頭。一般建議保持為正值。
+用於視差效果的高度圖縮放（參見 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`\ ）。調整預設值，使最高點（值 = 255）看起來比最低點（值 = 0）高 5 釐米。較高的值會導致更深的外觀，但可能會導致從傾斜角度查看材質時出現偽影，尤其是在相機移動時。負值可用於反轉視差效果，但這與使用 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 反轉紋理不同，因為材質也會看起來“更接近”相機。在大多數情況下，\ :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` 應保持為正值。
 
-\ **注意：**\ 如高度圖效果異常，可嘗試調整 :ref:`heightmap_flip_binormal<class_BaseMaterial3D_property_heightmap_flip_binormal>` 與 :ref:`heightmap_flip_tangent<class_BaseMaterial3D_property_heightmap_flip_tangent>`\ 。另見 :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` 以了解製作高度圖的建議，因為製圖方式亦會影響 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`\ 。
+\ **注意：**\ 如果忽略這個值後高度圖效果看起來很奇怪，請嘗試調整 :ref:`heightmap_flip_binormal<class_BaseMaterial3D_property_heightmap_flip_binormal>` 和 :ref:`heightmap_flip_tangent<class_BaseMaterial3D_property_heightmap_flip_tangent>`\ 。另見 :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` 以取得有關創作高度圖紋理的建議，因為創作高度圖紋理的方式會影響 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` 的行為方式。
 
 .. rst-class:: classref-item-separator
 
@@ -2792,9 +2792,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_specular**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular**\ (\ )
 
-調整鏡面反射強度。鏡面反射由場景反射與來自光源的鏡面亮斑組成；若設為 ``0.0`` 則完全不顯示鏡面反射。這與 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` 模式不同，後者僅停用光源亮斑。
+調整鏡面反射的強度。鏡面反射由場景反射和鏡面波瓣組成，鏡面波瓣是從光源反射的亮點。當設定為 ``0.0`` 時，鏡面反射將不可見。這與 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` 不同，因為 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` 僅適用於來自光源的鏡面波瓣。
 
-\ **注意：**\ 與 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 不同，此值不遵守能量守恆，通常建議保持 ``0.5``\ 。另見 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
+\ **注意：**\ 與 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 不同，這能量不守恆的，所以在大多數情況下應將其保留在 ``0.5``\ 。另見 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2930,13 +2930,13 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-指定每個圖元法線的紋理。\ :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` 僅使用紅、綠通道；藍色與 Alpha 會被忽略。讀取到的法線以 :ref:`Mesh<class_Mesh>` 提供的表面法線為基準旋轉。
+用於指定給定像素的法線的紋理。\ :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` 只使用紅色和綠色通道；會忽略藍色和 alpha 通道。從 :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` 讀取的法線是圍繞 :ref:`Mesh<class_Mesh>` 所提供的表面法線的進行朝向的。
 
-\ **注意：**\ 網格頂點必須同時具有法線與切線，否則法線貼圖只會使表面變暗而無法正常顯示。若使用 :ref:`SurfaceTool<class_SurfaceTool>` 產生幾何，可呼叫 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 與 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 自動生成。
+\ **注意：**\ 該網格必須在其頂點資料中同時定義法線和切線。否則法線貼圖將無法正確渲染，只會使整個表面變暗。如果使用 :ref:`SurfaceTool<class_SurfaceTool>` 建立幾何體，可以使用 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 和 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 分別自動生成法線和切線。
 
-\ **注意：** Godot 期望使用 X+、Y+、Z+ 座標系，可參考 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
+\ **注意：**\ Godot 期望法線貼圖使用 X+、Y+、Z+ 座標系。比較流行的引擎所期望的法線貼圖座標系見\ `這個頁面 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__\ 。
 
-\ **注意：**\ 若 :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` 為 ``true``\ ，\ :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 會繪製在 :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>`\ *之下*\ ；如需相反效果，請改用 :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>`\ 。
+\ **注意：**\ 如果 :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` 為 ``true``\ ，則 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 紋理將在 :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` *下方*\ 繪製。要在 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 紋理\ *之上*\ 顯示法線貼圖，請改用 :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2970,7 +2970,7 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-粒子圖集的水平影格數；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
+粒子精靈表中的水平影格數。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2987,7 +2987,7 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_particles_anim_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_anim_loop**\ (\ )
 
-若設為 ``true``\ ，粒子動畫將循環播放；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
+如果為 ``true``\ ，則循環粒子動畫。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3004,7 +3004,7 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-粒子圖集的垂直影格數；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
+粒子精靈表中的垂直影格數。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3318,7 +3318,7 @@ Determines which comparison operator is used when testing depth.
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The primary color of the stencil effect.
+範本效果的主顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ The primary color of the stencil effect.
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The comparison operator to use for stencil masking operations.
+範本遮罩運算所使用的比較運算符。
 
 .. rst-class:: classref-item-separator
 
@@ -3356,7 +3356,7 @@ The comparison operator to use for stencil masking operations.
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The flags dictating how the stencil operation behaves.
+控制範本運算行為的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3375,7 @@ The flags dictating how the stencil operation behaves.
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The stencil effect mode.
+範本效果模式。
 
 .. rst-class:: classref-item-separator
 
@@ -3394,7 +3394,7 @@ The stencil effect mode.
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The outline thickness for :ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_constant_STENCIL_MODE_OUTLINE>`.
+:ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_constant_STENCIL_MODE_OUTLINE>` 的輪廓粗細。
 
 .. rst-class:: classref-item-separator
 
@@ -3413,7 +3413,7 @@ The outline thickness for :ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_consta
 
 **實驗性：** May be affected by future rendering pipeline changes.
 
-The stencil reference value (0-255). Typically a power of 2.
+範本參考值（0-255）。通常是 2 的冪。
 
 .. rst-class:: classref-item-separator
 
@@ -3432,7 +3432,7 @@ The stencil reference value (0-255). Typically a power of 2.
 
 如果 ``true``\ ，則啟用次表面散射。模擬光線將穿透物體表面、發生散射並最終逸出的效果。次表面散射品質由 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>` 控制。
 
-\ **注意：** 在具有透明背景的視口（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）上不支援次表面散射。
+\ **注意：** 在具有透明背景的視埠（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）上不支援次表面散射。
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3449,7 @@ The stencil reference value (0-255). Typically a power of 2.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-若設為 ``true``\ ，次表面散射會啟用專為人類皮膚優化的模式，例如增強紅色通道。
+若設為 ``true``\ ，次表面散射會啟用專為人類皮膚最佳化的模式，例如增強紅色通道。
 
 .. rst-class:: classref-item-separator
 
@@ -3882,9 +3882,9 @@ The stencil reference value (0-255). Typically a power of 2.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. If ``false``, vertex colors are considered to be stored in linear encoding and are rendered as-is. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+如果為 ``true``\ ，則頂點顏色被認為以非線性 sRGB 編碼儲存，並在渲染期間被轉換為線性編碼。如果為 ``false``\ ，則頂點顏色被認為以線性編碼儲存，並按原樣渲染。另見 :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`\ 。
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 僅在使用 Forward+ 和移動渲染方式時有效，不支援相容模式。
 
 .. rst-class:: classref-item-separator
 
@@ -3935,7 +3935,7 @@ If ``true``, vertex colors are considered to be stored in nonlinear sRGB encodin
 
 :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_feature>`
 
-Returns ``true`` if the specified ``feature`` is enabled.
+如果指定的 ``feature`` 已啟用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Returns ``true`` if the specified ``feature`` is enabled.
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_flag>`
 
-Returns ``true`` if the specified ``flag`` is enabled.
+如果指定的 ``flag`` 已啟用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3959,7 +3959,7 @@ Returns ``true`` if the specified ``flag`` is enabled.
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified texture ``param``.
+回傳與指定紋理參數 ``param`` 關聯的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3971,7 +3971,7 @@ Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified text
 
 |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_feature>`
 
-If ``enable`` is ``true``, enables the specified ``feature``. Many features that are available in **BaseMaterial3D** need to be enabled before use. This way, the cost for using the feature is only incurred when specified. Features can also be enabled by setting their corresponding property to ``true``.
+如果 ``enable`` 設定為 ``true``\ ，則啟用指定的 ``feature``\ 。\ **BaseMaterial3D** 中的許多功能都需要在使用前啟用。這樣，僅在指定時才會產生使用該功能的成本。也可以通過將其對應的屬性設定為 ``true`` 來啟用功能。
 
 .. rst-class:: classref-item-separator
 
@@ -3983,7 +3983,7 @@ If ``enable`` is ``true``, enables the specified ``feature``. Many features that
 
 |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_flag>`
 
-If ``enable`` is ``true``, enables the specified ``flag``. Flags are optional behavior that can be turned on and off. Only one flag can be enabled at a time with this function, the flag enumerators cannot be bit-masked together to enable or disable multiple flags at once. Flags can also be enabled by setting their corresponding property to ``true``.
+如果 ``enable`` 為 ``true``\ ，則啟用指定的 ``flag``\ 。標誌是可以打開和關閉的可選行為。使用該函式一次只能啟用一個標誌，不能將標誌列舉值像位元遮罩一樣進行合併，一次啟用或停用多個標誌。也可以通過將相應屬性設定為 ``true`` 來啟用標誌。
 
 .. rst-class:: classref-item-separator
 

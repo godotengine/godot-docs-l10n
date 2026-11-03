@@ -156,7 +156,7 @@ Configura este conjunto de acciones con nuestras acciones predeterminadas.
 
 :ref:`OpenXRActionSet<class_OpenXRActionSet>` **find_action_set**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_find_action_set>`
 
-Retrieve an action set by name.
+Obtiene un conjunto de acciones por nombre.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Encuentre un perfil de interacción por su nombre (ruta).
 
 :ref:`OpenXRActionSet<class_OpenXRActionSet>` **get_action_set**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_action_set>`
 
-Retrieve the action set at this index.
+Obtiene el conjunto de acciones en este índice.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Retrieve the action set at this index.
 
 :ref:`int<class_int>` **get_action_set_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_action_set_count>`
 
-Retrieve the number of actions sets in our action map.
+Obtiene el número de conjuntos de acciones en nuestro mapa de acciones.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Get the interaction profile at this index.
 
 :ref:`int<class_int>` **get_interaction_profile_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_interaction_profile_count>`
 
-Retrieve the number of interaction profiles in our action map.
+Obtiene el número de perfiles de interacción en nuestro mapa de acciones.
 
 .. rst-class:: classref-item-separator
 

@@ -25,7 +25,7 @@ CharacterBody2D
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
 - :doc:`運動學角色（2D） <../tutorials/physics/kinematic_character_2d>`
 
@@ -225,7 +225,7 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody2D_PlatformOnLeave>`
 
 如果為 ``false``\ （預設），則該物體在下坡時會移動得更快，在上坡時會移動得更慢。
 
-如果為 ``true``\ ，則無論坡度如何，該物體在地面上都會以相同的速度移動。請注意，你需要使用 :ref:`floor_snap_length<class_CharacterBody2D_property_floor_snap_length>` 以恒定速度粘著至向下的斜坡。
+如果為 ``true``\ ，則無論坡度如何，該物體在地面上都會以相同的速度移動。請注意，你需要使用 :ref:`floor_snap_length<class_CharacterBody2D_property_floor_snap_length>` 以恒定速度黏著至向下的斜坡。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody2D_PlatformOnLeave>`
 - |void| **set_max_slides**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_slides**\ (\ )
 
-Maximum number of times the body can change direction before it stops when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Must be greater than zero.
+呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時，物體在停止之前可以改變方向的最大次數。必須大於零。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Maximum number of times the body can change direction before it stops when calli
 - |void| **set_motion_mode**\ (\ value\: :ref:`MotionMode<enum_CharacterBody2D_MotionMode>`\ )
 - :ref:`MotionMode<enum_CharacterBody2D_MotionMode>` **get_motion_mode**\ (\ )
 
-Sets the motion mode which defines the behavior of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+設定運動模式，定義 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 的行為。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Sets the motion mode which defines the behavior of :ref:`move_and_slide()<class_
 - |void| **set_platform_on_leave**\ (\ value\: :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>`\ )
 - :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>` **get_platform_on_leave**\ (\ )
 
-Sets the behavior to apply when you leave a moving platform. By default, to be physically accurate, when you leave the last platform velocity is applied.
+設定離開移動平台時要應用的行為。為了達到物理準確，預設會應用你離開時最後的平台速度。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Sets the behavior to apply when you leave a moving platform. By default, to be p
 - |void| **set_wall_min_slide_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wall_min_slide_angle**\ (\ )
 
-Minimum angle (in radians) where the body is allowed to slide when it encounters a wall. The default value equals 15 degrees. This property only affects movement when :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` is :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>`.
+物體遇到牆面時允許發生滑動的最小角度（單位為弧度）。預設值等於 15 度。只有在 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` 為 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 時該屬性才會影響運動。
 
 .. rst-class:: classref-section-separator
 
@@ -487,7 +487,7 @@ Minimum angle (in radians) where the body is allowed to slide when it encounters
 
 :ref:`float<class_float>` **get_floor_angle**\ (\ up_direction\: :ref:`Vector2<class_Vector2>` = Vector2(0, -1)\ ) |const| :ref:`🔗<class_CharacterBody2D_method_get_floor_angle>`
 
-Returns the floor's collision angle at the last collision point according to ``up_direction``, which is :ref:`Vector2.UP<class_Vector2_constant_UP>` by default. This value is always positive and only valid after calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` and when :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` returns ``true``.
+回傳地板在最近一次碰撞點的碰撞角度，依據為 ``up_direction``\ ，預設為 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。該值始終為正數，只有在呼叫了 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 並且 :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` 回傳值為 ``true`` 時才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -499,9 +499,9 @@ Returns the floor's collision angle at the last collision point according to ``u
 
 :ref:`Vector2<class_Vector2>` **get_floor_normal**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_get_floor_normal>`
 
-Returns the collision normal of the floor at the last collision point. Only valid after calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` and when :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` returns ``true``.
+回傳最近一次碰撞點的地面法線。只有在呼叫了 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 並且 :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` 回傳值為 ``true`` 時才有效。
 
-\ **Warning:** The collision normal is not always the same as the surface normal.
+\ **警告：**\ 碰撞法線並不總是與表面法線相同。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Returns the collision normal of the floor at the last collision point. Only vali
 
 :ref:`Vector2<class_Vector2>` **get_last_motion**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_get_last_motion>`
 
-返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時施加給該 **CharacterBody2D** 的最後一次運動。如果發生了滑動，則該移動可以拆分為多次運動，此方法返回的是最後一次，可用於獲取目前的移動方向。
+返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時施加給該 **CharacterBody2D** 的最後一次運動。如果發生了滑動，則該移動可以拆分為多次運動，此方法返回的是最後一次，可用於取得目前的移動方向。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Returns the collision normal of the floor at the last collision point. Only vali
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+如發生碰撞則回傳一個 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ 。回傳值包含了最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 期間發生的最後一次碰撞的資訊。若無碰撞發生，則回傳 ``null``\ 。另見 :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -573,9 +573,9 @@ Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody2D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`.
+回傳 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ ，包含最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時發生的碰撞資訊。因為單次呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 可能發生多次碰撞，所以你必須指定碰撞索引，範圍為 0 到 (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1)。另見 :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`\ 。
 
-\ **Example:** Iterate through the collisions with a ``for`` loop:
+\ **範例：**\ 使用 ``for`` 循環遍歷碰撞：
 
 
 .. tabs::
@@ -583,15 +583,15 @@ Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contain
  .. code-tab:: gdscript
 
     for i in get_slide_collision_count():
-        var collision = get_slide_collision(i)
-        print("Collided with: ", collision.get_collider().name)
+    var collision = get_slide_collision(i)
+    print("碰到了：", collision.get_collider().name)
 
  .. code-tab:: csharp
 
     for (int i = 0; i < GetSlideCollisionCount(); i++)
     {
         KinematicCollision2D collision = GetSlideCollision(i);
-        GD.Print("Collided with: ", (collision.GetCollider() as Node).Name);
+        GD.Print("碰到了：", (collision.GetCollider() as Node).Name);
     }
 
 
@@ -618,9 +618,9 @@ Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contain
 
 :ref:`Vector2<class_Vector2>` **get_wall_normal**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_get_wall_normal>`
 
-Returns the collision normal of the wall at the last collision point. Only valid after calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` and when :ref:`is_on_wall()<class_CharacterBody2D_method_is_on_wall>` returns ``true``.
+回傳最近一次碰撞點的牆面法線。只有在呼叫了 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 並且 :ref:`is_on_wall()<class_CharacterBody2D_method_is_on_wall>` 回傳值為 ``true`` 時才有效。
 
-\ **Warning:** The collision normal is not always the same as the surface normal.
+\ **警告：**\ 碰撞法線並不總是與表面法線相同。
 
 .. rst-class:: classref-item-separator
 
@@ -704,17 +704,17 @@ Returns the collision normal of the wall at the last collision point. Only valid
 
 :ref:`bool<class_bool>` **move_and_slide**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_move_and_slide>`
 
-Moves the body based on :ref:`velocity<class_CharacterBody2D_property_velocity>`. If the body collides with another, it will slide along the other body (by default only on floor) rather than stop immediately. If the other body is a **CharacterBody2D** or :ref:`RigidBody2D<class_RigidBody2D>`, it will also be affected by the motion of the other body. You can use this to make moving and rotating platforms, or to make nodes push other nodes.
+根據 :ref:`velocity<class_CharacterBody2D_property_velocity>` 移動該物體。該物體如果與其他物體發生碰撞，則會沿著對方滑動（預設只在地板上滑動），不會立即停止移動。如果對方是 **CharacterBody2D** 或 :ref:`RigidBody2D<class_RigidBody2D>`\ ，還會受到對方運動的影響。可以用於製作移動、旋轉的平台，也可用於推動其他節點。
 
-This method should be used in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (or in a method called by :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), as it uses the physics step's ``delta`` value automatically in calculations. Otherwise, the simulation will run at an incorrect speed.
+該方法在計算時會自動使用物理步驟的 ``delta``\ ，所以應當在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ （或 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 中呼叫的方法）中使用。否則執行仿真會使用錯誤的速度。
 
-Modifies :ref:`velocity<class_CharacterBody2D_property_velocity>` if a slide collision occurred. To get the latest collision call :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`, for detailed information about collisions that occurred, use :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+發生滑動碰撞時會改變 :ref:`velocity<class_CharacterBody2D_property_velocity>`\ 。要取得最後一次碰撞，請呼叫 :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`\ ，要取得碰撞的更多資訊，請使用 :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`\ 。
 
-When the body touches a moving platform, the platform's velocity is automatically added to the body motion. If a collision occurs due to the platform's motion, it will always be first in the slide collisions.
+該物體接觸到移動平台時，平台的速度會自動加入到該物體的運動中。平台運動所造成的碰撞始終為所有滑動碰撞中的第一個。
 
-The general behavior and available properties change according to the :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
+通用行為和可用屬性會根據 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` 發生改變。
 
-Returns ``true`` if the body collided, otherwise, returns ``false``.
+如果該物體發生了碰撞，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

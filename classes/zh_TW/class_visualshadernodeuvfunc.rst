@@ -49,7 +49,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeUVFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeUVFunc_Function>` **FUNC_PANNING** = ``0``
 
-使用 ``scale`` 和 ``offset`` 值對 ``uv`` 進行平移，使用的公式如下：\ ``uv = uv + offset * scale``\ 。\ ``uv`` 端口預設連接至內建的 ``UV``\ 。
+使用 ``scale`` 和 ``offset`` 值對 ``uv`` 進行平移，使用的公式如下：\ ``uv = uv + offset * scale``\ 。\ ``uv`` 連接埠預設連接至內建的 ``UV``\ 。
 
 .. _class_VisualShaderNodeUVFunc_constant_FUNC_SCALING:
 
@@ -87,7 +87,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeUVFunc_Function>`
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeUVFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeUVFunc_Function>` **get_function**\ (\ )
 
-A function to be applied to the texture coordinates.
+要對紋理座標應用的函式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

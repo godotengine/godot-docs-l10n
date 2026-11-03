@@ -9,20 +9,20 @@ CanvasLayer
 
 **被繼承：** :ref:`ParallaxBackground<class_ParallaxBackground>`
 
-用於 2D 場景中的物件的獨立算繪的節點。
+用於 2D 場景中的物件的獨立渲染的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-:ref:`CanvasItem<class_CanvasItem>`-derived nodes that are direct or indirect children of a **CanvasLayer** will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index ``0``, so a **CanvasLayer** with index ``-1`` will be drawn below, and a **CanvasLayer** with index ``1`` will be drawn above. This order will hold regardless of the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` of the nodes within each layer.
+**CanvasLayer** 的直接或間接子節點中，派生自 :ref:`CanvasItem<class_CanvasItem>` 的節點會在該圖層中進行繪製。圖層是定義繪製順序的數字索引。預設 2D 場景使用的索引為 ``0``\ ，因此索引為 ``-1`` 的 **CanvasLayer** 會在下方繪製，而索引為 ``1`` 的 **CanvasLayer** 會在上方繪製。無論節點在圖層中的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 是多少，這一順序都成立。
 
-\ **CanvasLayer**\ s can be hidden and they can also optionally follow the viewport. This makes them useful for HUDs like health bar overlays (on layers ``1`` and higher) or backgrounds (on layers ``-1`` and lower).
+\ **CanvasLayer** 可以隱藏，也可以跟隨視埠。因此常用於血條等 HUD（位於 ``1`` 或更高的圖層上）和背景（位於 ``-1`` 或更低的圖層上）。
 
-\ **Note:** Embedded :ref:`Window<class_Window>`\ s are placed on layer ``1024``. :ref:`CanvasItem<class_CanvasItem>`\ s on layers ``1025`` and higher appear in front of embedded windows.
+\ **注意：**\ 嵌入式 :ref:`Window<class_Window>` 位於 ``1024`` 圖層。位於 ``1025`` 或更高圖層的 :ref:`CanvasItem<class_CanvasItem>` 會顯示在嵌入式視窗之上。
 
-\ **Note:** Each **CanvasLayer** is drawn on one specific :ref:`Viewport<class_Viewport>` and cannot be shared between multiple :ref:`Viewport<class_Viewport>`\ s, see :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`. When using multiple :ref:`Viewport<class_Viewport>`\ s, for example in a split-screen game, you need to create an individual **CanvasLayer** for each :ref:`Viewport<class_Viewport>` you want it to be drawn on.
+\ **注意：**\ 每個 **CanvasLayer** 都是在一個特定的 :ref:`Viewport<class_Viewport>` 中繪製的，不能在多個 :ref:`Viewport<class_Viewport>` 之間共享，見 :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`\ 。使用多個 :ref:`Viewport<class_Viewport>` 時，例如分屏遊戲中，你需要為每個想要繪製的 :ref:`Viewport<class_Viewport>` 建立一個單獨的 **CanvasLayer**\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -118,7 +118,7 @@ CanvasLayer
 - |void| **set_custom_viewport**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_custom_viewport**\ (\ )
 
-分配給該 **CanvasLayer** 的自訂 :ref:`Viewport<class_Viewport>` 節點。如果為 ``null``\ ，則使用預設的視口。
+分配給該 **CanvasLayer** 的自訂 :ref:`Viewport<class_Viewport>` 節點。如果為 ``null``\ ，則使用預設的視埠。
 
 .. rst-class:: classref-item-separator
 
@@ -135,9 +135,9 @@ CanvasLayer
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_viewport**\ (\ )
 
-If enabled, the **CanvasLayer** maintains its position in world space. If disabled, the **CanvasLayer** stays in a fixed position on the screen.
+啟用時，\ **CanvasLayer** 會保持在世界空間中的位置。停用時，\ **CanvasLayer** 會保持在螢幕上的某個固定位置。
 
-Together with :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, this can be used for a pseudo-3D effect.
+與 :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>` 配合可以實現偽 3D 效果。
 
 .. rst-class:: classref-item-separator
 
@@ -171,11 +171,11 @@ Together with :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_view
 - |void| **set_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer**\ (\ )
 
-Layer index for draw order. Lower values are drawn behind higher values.
+畫布層的索引，用於確定繪製順序。索引值小的畫布層繪製在索引值大的畫布層後面。
 
-\ **Note:** If multiple CanvasLayers have the same layer index, :ref:`CanvasItem<class_CanvasItem>` children of one CanvasLayer are drawn behind the :ref:`CanvasItem<class_CanvasItem>` children of the other CanvasLayer. Which CanvasLayer is drawn in front is non-deterministic.
+\ **注意：**\ 如果多個 CanvasLayer 的畫布層索引相同，一個 CanvasLayer 的 :ref:`CanvasItem<class_CanvasItem>` 子節點都會繪製在另一個 CanvasLayer 的 :ref:`CanvasItem<class_CanvasItem>` 子節點之後。哪個 CanvasLayer 畫在前面並不一定。
 
-\ **Note:** The layer index should be between :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` and :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusive). Any other value will wrap around.
+\ **注意：**\ 畫布層索引應當在 :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` 和 :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` 之間（含兩端）。其他值都會發生環繞。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Layer index for draw order. Lower values are drawn behind higher values.
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-返回從 **CanvasLayer** 坐標系到 :ref:`Viewport<class_Viewport>` 坐標系的變換。
+返回從 **CanvasLayer** 座標系到 :ref:`Viewport<class_Viewport>` 座標系的變換。
 
 .. rst-class:: classref-item-separator
 

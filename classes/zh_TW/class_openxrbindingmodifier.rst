@@ -9,14 +9,14 @@ OpenXRBindingModifier
 
 **被繼承：** :ref:`OpenXRActionBindingModifier<class_OpenXRActionBindingModifier>`, :ref:`OpenXRIPBindingModifier<class_OpenXRIPBindingModifier>`
 
-Binding modifier base class.
+綁定修改器基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Binding modifier base class. Subclasses implement various modifiers that alter how an OpenXR runtime processes inputs.
+綁定修改器基底類別。子類別會實作各種修改器，改變 OpenXR 執行時對輸入的處理方式。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Binding modifier base class. Subclasses implement various modifiers that alter h
 
 :ref:`String<class_String>` **_get_description**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_OpenXRBindingModifier_private_method__get_description>`
 
-Return the description of this class that is used for the title bar of the binding modifier editor.
+回傳該類的描述，會顯示在綁定修改器編輯器的標題欄。
 
 .. rst-class:: classref-item-separator
 
@@ -59,9 +59,9 @@ Return the description of this class that is used for the title bar of the bindi
 
 :ref:`PackedByteArray<class_PackedByteArray>` **_get_ip_modification**\ (\ ) |virtual| |required| :ref:`🔗<class_OpenXRBindingModifier_private_method__get_ip_modification>`
 
-Returns the data that is sent to OpenXR when submitting the suggested interacting bindings this modifier is a part of.
+回傳在提交該修改器所涉及的互動綁定時發送給 OpenXR 的資料。
 
-\ **Note:** This must be data compatible with an ``XrBindingModificationBaseHeaderKHR`` structure.
+\ **注意：**\ 這必須是與 ``XrBindingModificationBaseHeaderKHR`` 結構相容的資料。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -111,11 +111,11 @@ SyntaxHighlighter
 
 :ref:`Dictionary<class_Dictionary>` **get_line_syntax_highlighting**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SyntaxHighlighter_method_get_line_syntax_highlighting>`
 
-Returns the syntax highlighting data for the line at index ``line``. If the line is not cached, calls :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` first to calculate the data.
+回傳索引為 ``line`` 的行的語法醒目標示資料。如果尚未快取該行，則會先呼叫 :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` 來計算相關資料。
 
-Each entry is a column number containing a nested :ref:`Dictionary<class_Dictionary>`. The column number denotes the start of a region, the region will end if another region is found, or at the end of the line. The nested :ref:`Dictionary<class_Dictionary>` contains the data for that region. Currently only the key ``"color"`` is supported.
+每個條目都是將列號映射到巢狀的 :ref:`Dictionary<class_Dictionary>`\ 。列號代表區域的開始位置，目前區域在遇到其他區域或行尾時結束。巢狀的 :ref:`Dictionary<class_Dictionary>` 中包含該區域的資料，目前僅支援 ``color`` 欄位。
 
-\ **Example:** Possible return value. This means columns ``0`` to ``4`` should be red, and columns ``5`` to the end of the line should be green:
+\ **範例：**\ 可能的回傳值，表示第 ``0`` 列到第 ``4`` 列應當為紅色，第 ``5`` 列至行尾應當為綠色：
 
 ::
 

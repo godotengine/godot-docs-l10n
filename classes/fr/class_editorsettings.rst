@@ -7032,7 +7032,7 @@ The script editor's color for string placeholders, such as ``%s`` and ``{_}``. R
 
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/symbol_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/symbol_color>`
 
-The script editor's color for operators (``( ) [ ] { } + - * /``, ...).
+La couleur de l'éditeur de script pour les opérateurs (``( ) [ ] { } + - * /``, ...).
 
 .. rst-class:: classref-item-separator
 

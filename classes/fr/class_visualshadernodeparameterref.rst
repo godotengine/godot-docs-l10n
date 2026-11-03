@@ -14,7 +14,7 @@ Une référence à un :ref:`VisualShaderNodeParameter<class_VisualShaderNodePara
 Description
 -----------
 
-Creating a reference to a :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` allows you to reuse this parameter in different shaders or shader stages easily.
+Créer une référence à un :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` vous permet de réutiliser ce paramètres dans différents shaders ou étapes du shader facilement.
 
 .. rst-class:: classref-reftable-group
 
@@ -48,7 +48,7 @@ Descriptions des propriétés
 - |void| **set_parameter_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_parameter_name**\ (\ )
 
-The name of the parameter which this reference points to.
+Le nom du paramètre vers lequel cette référence pointe.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

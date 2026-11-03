@@ -25,7 +25,7 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 Tutoriales
 --------------------
 
-- :doc:`Árbol de Escenas <../tutorials/scripting/scene_tree>`
+- :doc:`Árbol de escenas <../tutorials/scripting/scene_tree>`
 
 - :doc:`Múltiples resoluciones <../tutorials/rendering/multiple_resolutions>`
 
@@ -426,9 +426,9 @@ La raíz de la escena que se está editando actualmente en el editor. Suele ser 
 - |void| **set_multiplayer_poll_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multiplayer_poll_enabled**\ (\ )
 
-If ``true`` (default value), enables automatic polling of the :ref:`MultiplayerAPI<class_MultiplayerAPI>` for this SceneTree during :ref:`process_frame<class_SceneTree_signal_process_frame>`.
+Si es ``true``, (valor por defecto), habilita el sondeo automático de la :ref:`MultiplayerAPI<class_MultiplayerAPI>` para este árbol de escenas durante :ref:`idle_frame<class_SceneTree_signal_idle_frame>`.
 
-If ``false``, you need to manually call :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` to process network packets and deliver RPCs. This allows running RPCs in a different loop (e.g. physics, thread, specific time step) and for manual :ref:`Mutex<class_Mutex>` protection when accessing the :ref:`MultiplayerAPI<class_MultiplayerAPI>` from threads.
+Si es ``false``, necesita llamar manualmente al :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` para procesar los paquetes de red y entregar los RPCs/RSETs. Esto permite ejecutar RPCs/RSETs en un bucle diferente (por ejemplo, física, hilo, paso de tiempo específico) y para la protección manual :ref:`Mutex<class_Mutex>` cuando se accede a la :ref:`MultiplayerAPI<class_MultiplayerAPI>` desde los hilos.
 
 .. rst-class:: classref-item-separator
 

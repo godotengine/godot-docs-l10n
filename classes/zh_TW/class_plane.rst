@@ -12,9 +12,9 @@ Plane
 說明
 ----
 
-Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal>` is the normal of the plane (a, b, c normalized), and :ref:`d<class_Plane_property_d>` is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
+表示一個正規化的平面方程。\ :ref:`normal<class_Plane_property_normal>`\ （法線）是該平面的法線（即 a, b, c 經過正規化後的向量），而 :ref:`d<class_Plane_property_d>` 是從原點到該平面的距離（沿著“法線”的方向）。平面的“上方（Over）”或“上面（Above）”被認為是法線所指向的那一側。
 
-\ **Note:** In a boolean context, a plane will evaluate to ``false`` if all its components equal ``0``. Otherwise, a plane will always evaluate to ``true``.
+\ **注意：** 在布林值情境中，如果一個平面的所有分量都等於 ``0``\ ，它將被評估為 ``false``\ 。否則，平面將始終被評估為 ``true``\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -167,9 +167,9 @@ Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal
 
 :ref:`float<class_float>` **d** = ``0.0`` :ref:`🔗<class_Plane_property_d>`
 
-The distance from the origin to the plane, expressed in terms of :ref:`normal<class_Plane_property_normal>` (according to its direction and magnitude). Actual absolute distance from the origin to the plane can be calculated as ``abs(d) / normal.length()`` (if :ref:`normal<class_Plane_property_normal>` has zero length then this **Plane** does not represent a valid plane).
+從原點到平面的距離，按照 :ref:`normal<class_Plane_property_normal>` 取值（根據其方向和長度）。原點與平面的實際絕對距離可以通過 ``abs(d) / normal.length()`` 計算（如果 :ref:`normal<class_Plane_property_normal>` 長度為零，則該 **Plane** 表示的不是有效平面）。
 
-In the scalar equation of the plane ``ax + by + cz = d``, this is ``d``, while the ``(a, b, c)`` coordinates are represented by the :ref:`normal<class_Plane_property_normal>` property.
+在平面 ``ax + by + cz = d`` 的標量方程中，這是 ``d``\ ，而 ``(a, b, c)`` 座標由 :ref:`normal<class_Plane_property_normal>` 屬性表示。
 
 .. rst-class:: classref-item-separator
 
@@ -181,9 +181,9 @@ In the scalar equation of the plane ``ax + by + cz = d``, this is ``d``, while t
 
 :ref:`Vector3<class_Vector3>` **normal** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Plane_property_normal>`
 
-The normal of the plane, typically a unit vector. Shouldn't be a zero vector as **Plane** with such :ref:`normal<class_Plane_property_normal>` does not represent a valid plane.
+該平面的法線，通常為單位向量。不應該為零向量，因為 :ref:`normal<class_Plane_property_normal>` 為零的 **Plane** 代表的不是有效平面。
 
-In the scalar equation of the plane ``ax + by + cz = d``, this is the vector ``(a, b, c)``, where ``d`` is the :ref:`d<class_Plane_property_d>` property.
+在平面 ``ax + by + cz = d`` 的標量方程中，這是向量 ``(a, b, c)``\ ，其中 ``d`` 是 :ref:`d<class_Plane_property_d>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -470,9 +470,9 @@ In the scalar equation of the plane ``ax + by + cz = d``, this is the vector ``(
 
 :ref:`Plane<class_Plane>` **operator ***\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Plane_operator_mul_Transform3D>`
 
-Inversely transforms (multiplies) the **Plane** by the given :ref:`Transform3D<class_Transform3D>` transformation matrix.
+將 **Plane** 逆向變換（乘以）給定的 :ref:`Transform3D<class_Transform3D>` 變換矩陣。
 
-\ ``plane * transform`` is equivalent to ``transform.affine_inverse() * plane``. See :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`.
+\ ``plane * transform`` 相當於 ``transform.affine_inverse() * plane``\ 。請參閱 :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 

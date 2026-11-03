@@ -9,14 +9,14 @@ OpenXRSpatialContextPersistenceConfig
 
 **繼承：** :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for spatial persistence.
+空間持久性設定標頭。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` as the next parameter to create a spatial context with spatial persistence capabilities.
+用於空間持久化的設定標頭。將其作為下一個參數傳遞給 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 方法即可建立具有空間持久化功能的空間情境。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEn
 
 |void| **add_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`
 
-Adds a persistence context to this configuration. You must add at least one persistence context to create a valid configuration. You can create a persistence context by calling :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
+將持久化情境新增到該設定中。必須新增至少一個持久化情境才能建立一個有效的設定。可以通過呼叫 :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` 來建立持久化情境。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Adds a persistence context to this configuration. You must add at least one pers
 
 :ref:`Array<class_Array>` **get_persistence_contexts**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_get_persistence_contexts>`
 
-Gets the persistence context(s) (as :ref:`RID<class_RID>`\ s) received by :ref:`add_persistence_context()<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`.
+取得由 :ref:`add_persistence_context()<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>` 方法接收到的持久化情境（persistence context）（以 :ref:`RID<class_RID>` 的形式回傳）。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Gets the persistence context(s) (as :ref:`RID<class_RID>`\ s) received by :ref:`
 
 |void| **remove_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_remove_persistence_context>`
 
-Removes a persistence context.
+移除持久化情境。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

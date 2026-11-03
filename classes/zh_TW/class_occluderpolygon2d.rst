@@ -53,7 +53,7 @@ enum **CullMode**: :ref:`🔗<enum_OccluderPolygon2D_CullMode>`
 
 :ref:`CullMode<enum_OccluderPolygon2D_CullMode>` **CULL_DISABLED** = ``0``
 
-禁用剔除。見 :ref:`cull_mode<class_OccluderPolygon2D_property_cull_mode>`\ 。
+停用剔除。見 :ref:`cull_mode<class_OccluderPolygon2D_property_cull_mode>`\ 。
 
 .. _class_OccluderPolygon2D_constant_CULL_CLOCKWISE:
 
@@ -125,7 +125,7 @@ enum **CullMode**: :ref:`🔗<enum_OccluderPolygon2D_CullMode>`
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-A :ref:`Vector2<class_Vector2>` array with the index for polygon's vertices positions.
+具有多邊形頂點位置索引的 :ref:`Vector2<class_Vector2>` 陣列。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 

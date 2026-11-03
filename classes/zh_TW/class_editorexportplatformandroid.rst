@@ -16,7 +16,7 @@ EditorExportPlatformAndroid
 
 - :doc:`為 Android 匯出 <../tutorials/export/exporting_for_android>`
 
-- :doc:`Gradle builds for Android <../tutorials/export/android_gradle_build>`
+- :doc:`適用於 Android 的 Gradle 建置 <../tutorials/export/android_gradle_build>`
 
 - :doc:`編輯器外掛程式文件索引 <../tutorials/platform/index>`
 
@@ -505,7 +505,7 @@ EditorExportPlatformAndroid
 
 :ref:`String<class_String>` **command_line/extra_args** :ref:`🔗<class_EditorExportPlatformAndroid_property_command_line/extra_args>`
 
-A list of additional command line arguments, separated by space, which the exported project will receive when started.
+附加命令行參數的清單，以空白分隔，匯出的專案將在啟動時收到該清單。
 
 .. rst-class:: classref-item-separator
 
@@ -517,9 +517,9 @@ A list of additional command line arguments, separated by space, which the expor
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformAndroid_property_custom_template/debug>`
 
-Path to an APK file to use as a custom export template for debug exports. If left empty, default template is used.
+用作除錯匯出的自訂匯出範本的 APK 檔案的路徑。如果留空，則使用預設範本。
 
-\ **Note:** This is only used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is disabled.
+\ **注意：**\ 僅當 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` 被停用時才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -531,9 +531,9 @@ Path to an APK file to use as a custom export template for debug exports. If lef
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformAndroid_property_custom_template/release>`
 
-Path to an APK file to use as a custom export template for release exports. If left empty, default template is used.
+用作發佈匯出的自訂匯出範本的 APK 檔案的路徑。如果留空，則使用預設範本。
 
-\ **Note:** This is only used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is disabled.
+\ **注意：**\ 僅當 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` 被停用時才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -545,11 +545,11 @@ Path to an APK file to use as a custom export template for release exports. If l
 
 :ref:`bool<class_bool>` **gesture/swipe_to_dismiss** :ref:`🔗<class_EditorExportPlatformAndroid_property_gesture/swipe_to_dismiss>`
 
-If ``true``, `Swipe to dismiss <https://developer.android.com/design/ui/wear/guides/components/swipe-to-dismiss>`__ will be enabled.
+如果為 ``true``\ ，則會啟用\ `滑動關閉 <https://developer.android.com/design/ui/wear/guides/components/swipe-to-dismiss>`__\ 功能。
 
-This functionality is intended for smartwatches and is generally ignored on standard Android devices. However, some devices may not ignore it. Therefore, it is recommended to keep this feature disabled for standard Android apps to avoid unexpected behavior.
+該功能適用於智能手錶，在標準 Android 裝置上通常會被忽略。不過部分裝置也可能不會忽略。因此，建議在標準 Android 應用中停用該功能，避免意外行為。
 
-\ **Note:** This is ``false`` by default. To enable this behavior, :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is required.
+\ **注意：**\ 預設為 ``false``\ 。啟用該行為需要 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ This functionality is intended for smartwatches and is generally ignored on stan
 
 :ref:`String<class_String>` **gradle_build/android_source_template** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/android_source_template>`
 
-Path to a ZIP file holding the source for the export template used in a Gradle build. If left empty, the default template is used.
+儲存 Gradle 建置中使用的匯出範本源的 ZIP 檔案的路徑。如果留空，則使用預設範本。
 
 .. rst-class:: classref-item-separator
 
@@ -573,11 +573,11 @@ Path to a ZIP file holding the source for the export template used in a Gradle b
 
 :ref:`bool<class_bool>` **gradle_build/compress_native_libraries** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/compress_native_libraries>`
 
-If ``true``, native libraries are compressed when performing a Gradle build.
+如果為 ``true``\ ，則執行 Gradle 建置時會壓縮原生庫。
 
-\ **Note:** While enabling compression can reduce the size of the binary, it may result in slower application startup because the native libraries must be extracted before use, rather than being loaded directly.
+\ **注意：**\ 啟用壓縮能夠減小二進位檔案的體積，但是可能導致應用程式啟動變慢，因為原生庫必須先要解壓才能使用，無法直接載入。
 
-If you're distributing your app via the Play Store, it's generally recommended to keep this option ``false``, see `official documentation <https://developer.android.com/build/releases/past-releases/agp-3-6-0-release-notes#extractNativeLibs>`__.
+如果通過 Play Store 分發應用，通常建議將該選項保持為 ``false``\ ，見\ `官方文件 <https://developer.android.com/build/releases/past-releases/agp-3-6-0-release-notes#extractNativeLibs>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -589,13 +589,13 @@ If you're distributing your app via the Play Store, it's generally recommended t
 
 :ref:`Dictionary<class_Dictionary>` **gradle_build/custom_theme_attributes** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/custom_theme_attributes>`
 
-A dictionary of custom theme attributes to include in the exported Android project. Each entry defines a theme attribute name and its value, and will be added to the **GodotAppMainTheme**.
+一個包含在匯出的 Android 項目中的自訂主題屬性字典。每個條目定義了一個主題屬性名稱及其對應的值，這些屬性會被新增到 **GodotAppMainTheme**\ （Godot 應用主主題）中。
 
-For example, the key ``android:windowSwipeToDismiss`` with the value ``false`` is resolved to ``<item name="android:windowSwipeToDismiss">false</item>``.
+例如，鍵 key ``android:windowSwipeToDismiss`` 搭配值 ``false``\ ，在匯出時會被解析為 ``<item name="android:windowSwipeToDismiss">false</item>``\ 。
 
-\ **Note:** To add a custom attribute to the **GodotAppSplashTheme**, prefix the attribute name with ``[splash]``.
+\ **注意：** 如果想給 **GodotAppSplashTheme**\ （Godot 應用啟動頁主題）新增自訂屬性，需要在屬性名稱前加上 ``[splash]`` 前綴。
 
-\ **Note:** Reserved attributes configured via other export options or project settings cannot be overridden by ``custom_theme_attributes`` and are skipped during export.
+\ **注意：** 那些已經通過其他匯出選項或項目設定設定過的保留屬性，無法通過 ``custom_theme_attributes`` 進行覆蓋，匯出時會被自動跳過。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ For example, the key ``android:windowSwipeToDismiss`` with the value ``false`` i
 
 :ref:`int<class_int>` **gradle_build/export_format** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/export_format>`
 
-Application export format (\*.apk or \*.aab).
+應用程式匯出格式（\*.apk 或 \*.aab）。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Application export format (\*.apk or \*.aab).
 
 :ref:`String<class_String>` **gradle_build/gradle_build_directory** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/gradle_build_directory>`
 
-Path to the Gradle build directory. If left empty, then ``res://android`` will be used.
+Gradle 建置目錄的路徑。如果留空，則將使用 ``res://android``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Path to the Gradle build directory. If left empty, then ``res://android`` will b
 
 :ref:`String<class_String>` **gradle_build/min_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`
 
-Minimum Android API level required for the application to run (used during Gradle build). See `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
+執行該應用所需的最低 Android API 等級（Gradle 建置時使用）。見 `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Minimum Android API level required for the application to run (used during Gradl
 
 :ref:`String<class_String>` **gradle_build/target_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/target_sdk>`
 
-The Android API level on which the application is designed to run (used during Gradle build). See `android:targetSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
+該應用設計執行的 Android API 等級（Gradle 建置時使用）。見 `android:targetSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -769,7 +769,7 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **launcher_icons/adaptive_background_432x432** :ref:`🔗<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`
 
-Background layer of the application adaptive icon file. See `Design adaptive icons <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__.
+自適應圖示檔案的背景層。見\ `《設計自適應圖示》 <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -781,7 +781,7 @@ Background layer of the application adaptive icon file. See `Design adaptive ico
 
 :ref:`String<class_String>` **launcher_icons/adaptive_foreground_432x432** :ref:`🔗<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`
 
-Foreground layer of the application adaptive icon file. See `Design adaptive icons <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__.
+自適應圖示檔案的前景層。見\ `《設計自適應圖示》 <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ Foreground layer of the application adaptive icon file. See `Design adaptive ico
 
 :ref:`String<class_String>` **launcher_icons/adaptive_monochrome_432x432** :ref:`🔗<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_monochrome_432x432>`
 
-Monochrome layer of the application adaptive icon file. See `Design adaptive icons <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__.
+自適應圖示檔案的單色層。見\ `《設計自適應圖示》 <https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +817,7 @@ Monochrome layer of the application adaptive icon file. See `Design adaptive ico
 
 :ref:`int<class_int>` **package/app_category** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/app_category>`
 
-Application category for the Google Play Store. Only define this if your application fits one of the categories well. See `android:appCategory <https://developer.android.com/guide/topics/manifest/application-element#appCategory>`__.
+Google Play 商店的應用程式類別。請在應用程式完全符合某個類別時定義。見 `android:appCategory <https://developer.android.com/guide/topics/manifest/application-element#appCategory>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -829,7 +829,7 @@ Application category for the Google Play Store. Only define this if your applica
 
 :ref:`bool<class_bool>` **package/exclude_from_recents** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/exclude_from_recents>`
 
-If ``true``, task initiated by main activity will be excluded from the list of recently used applications. See `android:excludeFromRecents <https://developer.android.com/guide/topics/manifest/activity-element#exclude>`__.
+如果為 ``true``\ ，則主 Activity 啟動的任務將從最近使用的應用程式清單中排除。請參閱 `android:excludeFromRecents <https://developer.android.com/guide/topics/manifest/activity-element#exclude>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -853,7 +853,7 @@ If ``true``, task initiated by main activity will be excluded from the list of r
 
 :ref:`bool<class_bool>` **package/retain_data_on_uninstall** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/retain_data_on_uninstall>`
 
-If ``true``, when the user uninstalls an app, a prompt to keep the app's data will be shown. See `android:hasFragileUserData <https://developer.android.com/guide/topics/manifest/application-element#fragileuserdata>`__.
+如果為 ``true``\ ，當使用者卸載應用程式時，將顯示保留應用程式資料的提示。請參閱 `android:hasFragileUserData <https://developer.android.com/guide/topics/manifest/application-element#fragileuserdata>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -877,7 +877,7 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`bool<class_bool>` **package/show_in_android_tv** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/show_in_android_tv>`
 
-如果為 ``true``\ ，對話方塊將顯示出隱藏檔。
+如果為 ``true``\ ，對話框將顯示出隱藏檔。
 
 .. rst-class:: classref-item-separator
 
@@ -915,13 +915,13 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`String<class_String>` **package/unique_name** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/unique_name>`
 
-Unique application identifier in a reverse-DNS format. The reverse DNS format should preferably match a domain name you control, but this is not strictly required. For instance, if you own ``example.com``, your package unique name should preferably be of the form ``com.example.mygame``. This identifier can only contain lowercase alphanumeric characters (``a-z``, and ``0-9``), underscores (``_``), and periods (``.``). Each component of the reverse DNS format must start with a letter: for instance, ``com.example.8game`` is not valid.
+唯一應用程式標識符，使用反向 DNS 格式。這個反向 DNS 格式的標識符應該最好和你控制的域名相匹配，但也並不是硬性要求。例如你擁有 ``example.com`` 的話，包的唯一名稱就最好應該是 ``com.example.mygame`` 這種格式。這個標識符只能包含小寫字母（\ ``a-z``\ ）、數字（\ ``0-9``\ ）、底線（\ ``_``\ ）、英文句號（\ ``.``\ ）。反向 DNS 格式中的每個部分都必須以字母開頭：比如 ``com.example.8game`` 就是無效的。
 
-If ``$genname`` is present in the value, it will be replaced by the project name converted to lowercase. If there are invalid characters in the project name, they will be stripped. If all characters in the project name are stripped, ``$genname`` is replaced by ``noname``.
+如果標識符中包含 ``$genname``\ ，那麼這個字串就會被替換為小寫的專案名稱。專案名稱包含的無效的字元都會被剝除。如果專案名稱里的字元都會被剝除，那麼 ``$genname`` 就會被替換為 ``noname``\ 。
 
-\ **Note:** Changing the package name will cause the package to be considered as a new package, with its own installation and data paths. The new package won't be usable to update existing installations.
+\ **注意：**\ 包名發生變化會導致系統認為這是一個新的包，擁有獨立的安裝路徑和資料路徑。無法用新的包更新已安裝的應用。
 
-\ **Note:** When publishing to Google Play, the package name must be *globally* unique. This means no other apps published on Google Play must be using the same package name as yours. Otherwise, you'll be prevented from publishing your app on Google Play.
+\ **注意：**\ 發佈到 Google Play 時，包名必須是\ *全域*\ 唯一的。你的包名不能和 Google Play 上已發佈的其他 APP 相同。否則你的應用無法在 Google Play 上發佈。
 
 .. rst-class:: classref-item-separator
 
@@ -981,7 +981,7 @@ If ``$genname`` is present in the value, it will be replaced by the project name
 
 :ref:`bool<class_bool>` **permissions/access_media_location** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_media_location>`
 
-Allows an application to access any geographic locations persisted in the user's shared collection. See `ACCESS_MEDIA_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_MEDIA_LOCATION>`__.
+允許應用程式存取使用者共享合集中儲存的任何地理位置。見 `ACCESS_MEDIA_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_MEDIA_LOCATION>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1245,7 +1245,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/bluetooth_privileged** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bluetooth_privileged>`
 
-允許套用程式在無需使用者互動的情況下配對藍牙裝置，並允許或禁止存取電話簿或消息。見 `BLUETOOTH_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_PRIVILEGED>`__\ 。
+允許套用程式在無需使用者互動的情況下配對藍牙裝置，並允許或禁止存取電話簿或訊息。見 `BLUETOOTH_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_PRIVILEGED>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1257,7 +1257,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/brick** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/brick>`
 
-能夠禁用該裝置（非常危險！）必須要求此許可權。
+能夠停用該裝置（非常危險！）必須要求此許可權。
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/control_location_updates** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/control_location_updates>`
 
-允許啟用/禁用無線電的位置更新通知。見 `CONTROL_LOCATION_UPDATES <https://developer.android.com/reference/android/Manifest.permission#CONTROL_LOCATION_UPDATES>`__\ 。
+允許啟用/停用無線電的位置更新通知。見 `CONTROL_LOCATION_UPDATES <https://developer.android.com/reference/android/Manifest.permission#CONTROL_LOCATION_UPDATES>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/disable_keyguard** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/disable_keyguard>`
 
-如果鍵盤保護不安全，則允許套用程式禁用它。見 `DISABLE_KEYGUARD <https://developer.android.com/reference/android/Manifest.permission#DISABLE_KEYGUARD>`__\ 。
+如果鍵盤保護不安全，則允許套用程式停用它。見 `DISABLE_KEYGUARD <https://developer.android.com/reference/android/Manifest.permission#DISABLE_KEYGUARD>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/global_search** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/global_search>`
 
-用於內容提供者，以允許全域搜索系統存取其資料。見 `GLOBAL_SEARCH <https://developer.android.com/reference/android/Manifest.permission#GLOBAL_SEARCH>`__\ 。
+用於內容提供者，以允許全域搜尋系統存取其資料。見 `GLOBAL_SEARCH <https://developer.android.com/reference/android/Manifest.permission#GLOBAL_SEARCH>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1691,7 +1691,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/inject_events** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/inject_events>`
 
-允許套用程式將使用者事件（按鍵、觸摸、軌跡球）注入事件流並將它們傳遞到任意窗口。
+允許套用程式將使用者事件（按鍵、觸摸、軌跡球）注入事件流並將它們傳遞到任意視窗。
 
 .. rst-class:: classref-item-separator
 
@@ -1835,7 +1835,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/manage_media** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_media>`
 
-Allows an application to modify and delete media files on this device or any connected storage device without user confirmation. Applications must already be granted the ``READ_EXTERNAL_STORAGE`` or ``MANAGE_EXTERNAL_STORAGE`` permissions for this permission to take effect. See `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
+允許應用程式在未經使用者確認的情況下修改和刪除該裝置或任何已連接的儲存裝置上的媒體檔案。應用程式必須已獲得 ``READ_EXTERNAL_STORAGE`` 或 ``MANAGE_EXTERNAL_STORAGE`` 權限，該權限才能生效。請參閱 `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1933,7 +1933,7 @@ Allows an application to modify and delete media files on this device or any con
 
 **已棄用：** Deprecated in API level 15.
 
-Allows an application to make its activities persistent.
+允許應用程式使其 activity 持久化。
 
 .. rst-class:: classref-item-separator
 
@@ -1945,7 +1945,7 @@ Allows an application to make its activities persistent.
 
 :ref:`bool<class_bool>` **permissions/post_notifications** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/post_notifications>`
 
-Allows an application to post notifications. Added in API level 33. See `Notification runtime permission <https://developer.android.com/develop/ui/views/notifications/notification-permission>`__.
+允許應用程式發送通知。新增於 API 等級 33。見\ `通知執行時權限 <https://developer.android.com/develop/ui/views/notifications/notification-permission>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1959,7 +1959,7 @@ Allows an application to post notifications. Added in API level 33. See `Notific
 
 **已棄用：** Deprecated in API level 29.
 
-Allows an application to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether. See `PROCESS_OUTGOING_CALLS <https://developer.android.com/reference/android/Manifest.permission#PROCESS_OUTGOING_CALLS>`__.
+允許應用程式查看撥出呼叫期間撥打的號碼，並可以選擇將呼叫重新導向到其他號碼或完全中止呼叫。見 `PROCESS_OUTGOING_CALLS <https://developer.android.com/reference/android/Manifest.permission#PROCESS_OUTGOING_CALLS>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2009,7 +2009,7 @@ Allows an application to see the number being dialed during an outgoing call wit
 
 **已棄用：** Deprecated in API level 33.
 
-Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE>`__.
+允許應用程式從外部儲存中讀取資料。見 `READ_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2033,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_history_bookmarks** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_history_bookmarks>`
 
-允許套用程式讀取（但不能寫入）使用者的流覽歷史記錄和書簽。
+允許套用程式讀取（但不能寫入）使用者的流覽歷史記錄和書籤。
 
 .. rst-class:: classref-item-separator
 
@@ -2069,7 +2069,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_media_audio** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_media_audio>`
 
-Allows an application to read audio files from external storage. See `READ_MEDIA_AUDIO <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_AUDIO>`__.
+允許應用程式從外部儲存讀取音訊檔案。見 `READ_MEDIA_AUDIO <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_AUDIO>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2081,7 +2081,7 @@ Allows an application to read audio files from external storage. See `READ_MEDIA
 
 :ref:`bool<class_bool>` **permissions/read_media_images** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_media_images>`
 
-Allows an application to read image files from external storage. See `READ_MEDIA_IMAGES <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_IMAGES>`__.
+允許應用程式從外部儲存讀取影像檔案。見 `READ_MEDIA_IMAGES <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_IMAGES>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2093,7 +2093,7 @@ Allows an application to read image files from external storage. See `READ_MEDIA
 
 :ref:`bool<class_bool>` **permissions/read_media_video** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_media_video>`
 
-Allows an application to read video files from external storage. See `READ_MEDIA_VIDEO <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_VIDEO>`__.
+允許應用程式從外部儲存讀取影片檔案。見 `READ_MEDIA_VIDEO <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_VIDEO>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2105,7 +2105,7 @@ Allows an application to read video files from external storage. See `READ_MEDIA
 
 :ref:`bool<class_bool>` **permissions/read_media_visual_user_selected** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_media_visual_user_selected>`
 
-Allows an application to read image or video files from external storage that a user has selected via the permission prompt photo picker. See `READ_MEDIA_VISUAL_USER_SELECTED <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_VISUAL_USER_SELECTED>`__.
+允許應用程式從外部儲存讀取影像或影片檔案，這些檔案由使用者在權限彈窗的照片拾取器中選定。見 `READ_MEDIA_VISUAL_USER_SELECTED <https://developer.android.com/reference/android/Manifest.permission#READ_MEDIA_VISUAL_USER_SELECTED>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2141,7 +2141,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_sms>`
 
-允許套用程式讀取 SMS 消息。見 `READ_SMS <https://developer.android.com/reference/android/Manifest.permission#READ_SMS>`__\ 。
+允許套用程式讀取 SMS 訊息。見 `READ_SMS <https://developer.android.com/reference/android/Manifest.permission#READ_SMS>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2225,7 +2225,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_mms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_mms>`
 
-允許套用程式監聽收到的 MMS 消息。見 `RECEIVE_MMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_MMS>`__\ 。
+允許套用程式監聽收到的 MMS 訊息。見 `RECEIVE_MMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_MMS>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2249,7 +2249,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_wap_push** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_wap_push>`
 
-允許套用程式接收 WAP 推送消息。見 `RECEIVE_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_WAP_PUSH>`__\ 。
+允許套用程式接收 WAP 推送訊息。見 `RECEIVE_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_WAP_PUSH>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2489,7 +2489,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/status_bar** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/status_bar>`
 
-允許套用程式對狀態列及其圖示進行打開、關閉、禁用等操作。見 `STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#STATUS_BAR>`__\ 。
+允許套用程式對狀態列及其圖示進行打開、關閉、停用等操作。見 `STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#STATUS_BAR>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2789,7 +2789,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`Color<class_Color>` **screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/background_color>`
 
-The background color used for the root window. By default it's :ref:`Color.BLACK<class_Color_constant_BLACK>`.
+根視窗使用的背景顏色。預設為 :ref:`Color.BLACK<class_Color_constant_BLACK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2801,9 +2801,9 @@ The background color used for the root window. By default it's :ref:`Color.BLACK
 
 :ref:`bool<class_bool>` **screen/edge_to_edge** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/edge_to_edge>`
 
-If ``true``, this makes the navigation and status bars translucent and allows the application content to extend edge to edge.
+如果為 ``true``\ ，則導航欄和狀態欄將變為半透明，並允許應用程式內容從一邊延伸到另一邊。
 
-\ **Note:** You should ensure that none of the application content is occluded by system elements by using the :ref:`DisplayServer.get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>` and :ref:`DisplayServer.get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>` methods.
+\ **注意：**\ 你應該使用 :ref:`DisplayServer.get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>` 和 :ref:`DisplayServer.get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>` 方法，以確保應用程式的內容不會被系統元素遮擋。
 
 .. rst-class:: classref-item-separator
 
@@ -2815,7 +2815,7 @@ If ``true``, this makes the navigation and status bars translucent and allows th
 
 :ref:`bool<class_bool>` **screen/immersive_mode** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/immersive_mode>`
 
-If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window_set_mode()<class_DisplayServer_method_window_set_mode>` to change this at runtime.
+如果為 ``true`` 則隱藏導航欄及狀態欄。執行時更改請設定 :ref:`DisplayServer.window_set_mode()<class_DisplayServer_method_window_set_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2875,9 +2875,9 @@ If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformAndroid_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+如果為 ``true``\ ，則著色器將被編譯並嵌入到應用程式中。此選項僅當使用 Forward+ 或 Mobile 渲染器時才受支援。
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **注意：**\ 匯出為專用伺服器時，由於不執行渲染，著色器烘焙器將始終被停用。
 
 .. rst-class:: classref-item-separator
 
@@ -2889,11 +2889,11 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`Color<class_Color>` **splash_screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/background_color>`
 
-The background color used for the system splash screen window.
+用於系統啟動閃屏（Splash Screen）視窗的背景顏色。
 
-If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+如果沒有設定，它將回退使用 :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>` 的顏色。
 
-\ **Note:** This is only applied if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled.
+\ **注意：** 此設定僅在啟用了 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ （使用 Gradle 建置）時才會生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2905,9 +2905,9 @@ If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432
 
 :ref:`String<class_String>` **splash_screen/branding_image** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/branding_image>`
 
-System splash screen branding image file. If left empty, no branding image will be used. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+系統啟動屏的品牌影像檔案。如果留空，則不會使用任何品牌影像。具體尺寸規範請參閱 `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__\ （啟動屏尺寸文件）。
 
-\ **Note:** Can be used to set an image to be shown at the bottom of the splash screen.
+\ **注意：** 此項可用於設定顯示在啟動屏底部的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ System splash screen branding image file. If left empty, no branding image will 
 
 :ref:`bool<class_bool>` **splash_screen/disable_godot_boot_splash** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/disable_godot_boot_splash>`
 
-If ``true``, Godot's boot splash will not be shown, and the system boot splash will remain visible for a longer time, until the mainloop starts.
+如果設為 ``true``\ ，Godot 自帶的啟動畫面將不會顯示，而系統的啟動畫面會保持可見更長時間，直到主循環（mainloop）正式啟動。
 
 .. rst-class:: classref-item-separator
 
@@ -2931,9 +2931,9 @@ If ``true``, Godot's boot splash will not be shown, and the system boot splash w
 
 :ref:`String<class_String>` **splash_screen/icon** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/icon>`
 
-System splash screen icon file. If left empty, it will fall back to :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+系統啟動屏的圖示檔案。如果此處留空，將自動回退使用 :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`\ （即自適應啟動圖示的前景圖）。 查看 `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** You can provide an `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML. However, the XML file will only be used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled. If not, it will fall back to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+\ **Note:** 你可以提供一個 `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML 檔案。但是，該 XML 檔案僅在啟用 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ （使用 Gradle 建置）時才會生效。如果沒有啟用，則會回退到使用 :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`\ （即自適應啟動器圖示的背景圖）。
 
 .. rst-class:: classref-item-separator
 
@@ -2969,7 +2969,7 @@ System splash screen icon file. If left empty, it will fall back to :ref:`launch
 
 :ref:`String<class_String>` **version/name** :ref:`🔗<class_EditorExportPlatformAndroid_property_version/name>`
 
-套用程式圖示檔。如果留空，它將退回到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+使用者可見的應用程式版本。如果留空，則將回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2981,7 +2981,7 @@ System splash screen icon file. If left empty, it will fall back to :ref:`launch
 
 :ref:`int<class_int>` **xr_features/xr_mode** :ref:`🔗<class_EditorExportPlatformAndroid_property_xr_features/xr_mode>`
 
-The extended reality (XR) mode for this application.
+應用程式的擴充現實（XR）模式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

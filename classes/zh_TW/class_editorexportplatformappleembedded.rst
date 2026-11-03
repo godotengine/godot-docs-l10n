@@ -9,14 +9,14 @@ EditorExportPlatformAppleEmbedded
 
 **被繼承：** :ref:`EditorExportPlatformIOS<class_EditorExportPlatformIOS>`, :ref:`EditorExportPlatformVisionOS<class_EditorExportPlatformVisionOS>`
 
-Base class for the Apple embedded platform exporters (iOS and visionOS).
+Apple 嵌入式平台匯出器的基底類別（iOS 與 visionOS）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The base class for Apple embedded platform exporters. These include iOS and visionOS, but not macOS. See the classes inheriting from this one for more details.
+Apple 嵌入式平台匯出器的基底類別。包括 iOS 和 visionOS，但是不包括 macOS。詳見派生類。
 
 .. rst-class:: classref-introduction-group
 

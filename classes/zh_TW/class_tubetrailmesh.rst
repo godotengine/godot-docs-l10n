@@ -73,7 +73,7 @@ TubeTrailMesh
 - |void| **set_cap_bottom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_bottom**\ (\ )
 
-如果為 ``true`` ，則在管子的底部生成蓋子。如果相機永遠不可能見到蓋子，那麼設定為 ``false`` 可以加快生成和算繪的速度。
+如果為 ``true`` ，則在管子的底部生成蓋子。如果相機永遠不可能見到蓋子，那麼設定為 ``false`` 可以加快生成和渲染的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ TubeTrailMesh
 - |void| **set_cap_top**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_top**\ (\ )
 
-如果為 ``true`` ，則在管子的頂部生成蓋子。如果相機永遠不可能見到蓋子，那麼設定為 ``false`` 可以加快生成和算繪的速度。
+如果為 ``true`` ，則在管子的頂部生成蓋子。如果相機永遠不可能見到蓋子，那麼設定為 ``false`` 可以加快生成和渲染的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ TubeTrailMesh
 - |void| **set_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve**\ (\ )
 
-Determines the radius of the tube along its length. The radius of a particular section ring is obtained by multiplying the baseline :ref:`radius<class_TubeTrailMesh_property_radius>` by the value of this curve at the given distance. For values smaller than ``0``, the faces will be inverted. Should be a unit :ref:`Curve<class_Curve>`.
+確定管身半徑沿長度的變化方式。將基礎 :ref:`radius<class_TubeTrailMesh_property_radius>` 與給定距離下該曲線的取值相乘，就得到了某個分區中某個環的半徑。小於 ``0`` 的值會讓面進行正反翻轉。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Determines the radius of the tube along its length. The radius of a particular s
 - |void| **set_radial_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_radial_steps**\ (\ )
 
-管身的面數。例如，取值 ``5`` 表示管身為五邊形。值越高，管身細節越高，代價是犧牲性能。
+管身的面數。例如，取值 ``5`` 表示管身為五邊形。值越高，管身細節越高，代價是犧牲效能。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Determines the radius of the tube along its length. The radius of a particular s
 - |void| **set_section_rings**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_section_rings**\ (\ )
 
-分區中環的數量。每個環都會對 :ref:`curve<class_TubeTrailMesh_property_curve>` 進行取樣，從而決定其半徑。值越高，管身細節越高，代價是犧牲性能。
+分區中環的數量。每個環都會對 :ref:`curve<class_TubeTrailMesh_property_curve>` 進行取樣，從而決定其半徑。值越高，管身細節越高，代價是犧牲效能。
 
 .. rst-class:: classref-item-separator
 

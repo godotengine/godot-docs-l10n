@@ -283,7 +283,7 @@ Devuelve ``true`` si este canal fue creado con una configuración fuera de banda
 
 :ref:`bool<class_bool>` **is_ordered**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_is_ordered>`
 
-Devuelve ``true`` si este canal fue creado con el pedido activado (por defecto).
+Devuelve ``true`` si este canal fue creado con el ordenamiento activado (por defecto).
 
 .. rst-class:: classref-item-separator
 

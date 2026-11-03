@@ -134,7 +134,7 @@ Rect2i
 
 :ref:`Vector2i<class_Vector2i>` **end** = ``Vector2i(0, 0)`` :ref:`🔗<class_Rect2i_property_end>`
 
-終點角。通過 ``position + size`` 計算而來。設定該值會修改大小。
+終點。通常為矩形的右下角，等價於 ``position + size``\ 。設定該點會影響 :ref:`size<class_Rect2i_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ ) :ref:`🔗<class_Rect2i_constructor_Rect2i>`
 
-預設建構 **Rect2i**\ ，\ :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 均為預設值（零）。
+構造 **Rect2i**\ ，將 :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 設定為 :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>`\ )
 
-按位置和大小建構 **Rect2i**\ 。
+使用指定的 ``position`` 和 ``size`` 構造 **Rect2i**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **expand**\ (\ to\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_expand>`
 
-Returns a copy of this rectangle expanded to align the edges with the given ``to`` point, if necessary.
+回傳該矩形的副本，如有必要，該矩形被擴充為將邊緣與給定的 ``to`` 點對齊。
 
 
 .. tabs::
@@ -284,15 +284,15 @@ Returns a copy of this rectangle expanded to align the edges with the given ``to
 
     var rect = Rect2i(0, 0, 5, 2)
 
-    rect = rect.expand(Vector2i(10, 0)) # rect is Rect2i(0, 0, 10, 2)
-    rect = rect.expand(Vector2i(-5, 5)) # rect is Rect2i(-5, 0, 15, 5)
+    rect = rect.expand(Vector2i(10, 0)) # rect 為 Rect2i(0, 0, 10, 2)
+    rect = rect.expand(Vector2i(-5, 5)) # rect 為 Rect2i(-5, 0, 15, 5)
 
  .. code-tab:: csharp
 
     var rect = new Rect2I(0, 0, 5, 2);
 
-    rect = rect.Expand(new Vector2I(10, 0)); // rect is Rect2I(0, 0, 10, 2)
-    rect = rect.Expand(new Vector2I(-5, 5)); // rect is Rect2I(-5, 0, 15, 5)
+    rect = rect.Expand(new Vector2I(10, 0)); // rect 為 Rect2I(0, 0, 10, 2)
+    rect = rect.Expand(new Vector2I(-5, 5)); // rect 為 Rect2I(-5, 0, 15, 5)
 
 
 
@@ -318,9 +318,9 @@ Returns a copy of this rectangle expanded to align the edges with the given ``to
 
 :ref:`Vector2i<class_Vector2i>` **get_center**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_get_center>`
 
-返回該 **Rect2i** 的中心，等於 :ref:`position<class_Rect2i_property_position>` + (:ref:`size<class_Rect2i_property_size>` / 2)。
+回傳該矩形的中心點。這與 ``position + (size / 2)`` 相同。
 
-如果 :ref:`size<class_Rect2i_property_size>` 為奇數，則返回的中心值將向 :ref:`position<class_Rect2i_property_position>` 四捨五入。
+\ **注意：**\ 如果 :ref:`size<class_Rect2i_property_size>` 為奇數，則結果將向 :ref:`position<class_Rect2i_property_position>` 捨入。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Returns a copy of this rectangle expanded to align the edges with the given ``to
 
 :ref:`bool<class_bool>` **has_area**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_has_area>`
 
-Returns ``true`` if this rectangle has positive width and height. See also :ref:`get_area()<class_Rect2i_method_get_area>`.
+如果該矩形具有正的寬度和高度，則回傳 ``true``\ 。另見 :ref:`get_area()<class_Rect2i_method_get_area>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +395,9 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`bool<class_bool>` **has_point**\ (\ point\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_has_point>`
 
-返回 ``true`` 時，該 :ref:`Rect2<class_Rect2>` 包含此點。依照慣例，\ :ref:`Rect2<class_Rect2>` 的右邊緣和下邊緣是被排除在外的，因此\ **不**\ 包含位於這兩條邊上的點。
+若矩形包含指定的 ``point``\ ，則回傳 ``true``\ 。依照慣例，右邊界與下邊界上的點\ **不**\ 包含在內。
 
-\ **注意：**\ 對於\ *大小為負*\ 的 :ref:`Rect2<class_Rect2>`\ ，該方法並不可靠。請使用 :ref:`abs()<class_Rect2i_method_abs>` 獲取等價的正數大小矩形再檢查是否包含某個點。
+\ **注意：**\ 若 **Rect2i** 的 :ref:`size<class_Rect2i_property_size>` 為\ *負值*\ ，此方法的結果不可靠。請先使用 :ref:`abs()<class_Rect2i_method_abs>` 取得有效的矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Rect2i_operator_neq_Rect2i>`
 
-如果矩形不相等，則返回 ``true``\ 。
+如果兩個矩形的 :ref:`position<class_Rect2i_property_position>` 或 :ref:`size<class_Rect2i_property_size>` 不相等，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Rect2i_operator_eq_Rect2i>`
 
-如果矩形相等，則返回 ``true``\ 。
+如果該矩形的 :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 分別相等，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,45 +14,45 @@ JSON
 說明
 ----
 
-The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
+**JSON** 類允許所有資料型別與 JSON 字串相互轉換。可用於將資料序列化，例如儲存到檔案或通過網路發送。
 
-\ :ref:`stringify()<class_JSON_method_stringify>` is used to convert any data type into a JSON string.
+\ :ref:`stringify()<class_JSON_method_stringify>` 用於將任何資料型別轉換為 JSON 字串。
 
-\ :ref:`parse()<class_JSON_method_parse>` is used to convert any existing JSON data into a :ref:`Variant<class_Variant>` that can be used within Godot. If successfully parsed, use :ref:`data<class_JSON_property_data>` to retrieve the :ref:`Variant<class_Variant>`, and use :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` to check if the Variant's type is what you expect. JSON Objects are converted into a :ref:`Dictionary<class_Dictionary>`, but JSON data can be used to store :ref:`Array<class_Array>`\ s, numbers, :ref:`String<class_String>`\ s and even just a boolean.
+\ :ref:`parse()<class_JSON_method_parse>` 用於將任何現有的 JSON 資料轉換為可以在 Godot 中使用的 :ref:`Variant<class_Variant>`\ 。如果解析成功，使用 :ref:`data<class_JSON_property_data>` 檢索 :ref:`Variant<class_Variant>`\ ，並使用 :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` 檢查 Variant 的型別是否符合你的預期。JSON 物件被轉換為 :ref:`Dictionary<class_Dictionary>`\ ，但 JSON 資料可用於儲存 :ref:`Array<class_Array>`\ 、數字、\ :ref:`String<class_String>`\ ，甚至只是一個布林值。
 
 ::
 
     var data_to_send = ["a", "b", "c"]
     var json_string = JSON.stringify(data_to_send)
-    # Save data
+    # 儲存資料
     # ...
-    # Retrieve data
+    # 檢索資料
     var json = JSON.new()
     var error = json.parse(json_string)
     if error == OK:
         var data_received = json.data
         if typeof(data_received) == TYPE_ARRAY:
-            print(data_received) # Prints the array.
+            print(data_received) # 輸出該陣列。
         else:
-            print("Unexpected data")
+            print("意外資料")
     else:
-        print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
+        print("JSON 解析錯誤：", json.get_error_message(), " 位於 ", json_string, " 行號 ", json.get_error_line())
 
-Alternatively, you can parse strings using the static :ref:`parse_string()<class_JSON_method_parse_string>` method, but it doesn't handle errors.
+你也可以使用靜態的 :ref:`parse_string()<class_JSON_method_parse_string>` 方法解析字串，但該方法不會處理錯誤。
 
 ::
 
-    var data = JSON.parse_string(json_string) # Returns null if parsing failed.
+    var data = JSON.parse_string(json_string) # 如果解析失敗則回傳 null。
 
-\ **Note:** Both parse methods do not fully comply with the JSON specification:
+\ **注意：**\ 兩種解析方式都不完全符合 JSON 規範：
 
-- Trailing commas in arrays or objects are ignored, instead of causing a parser error.
+- 陣列或物件中的尾隨逗號將被忽略，而不是引起解析器錯誤。
 
-- New line and tab characters are accepted in string literals, and are treated like their corresponding escape sequences ``\n`` and ``\t``.
+- 換行符和制表符在字串文字中被接受，並被視為它們相應的跳脫序列 ``\n`` 和 ``\t``\ 。
 
-- Numbers are parsed using :ref:`String.to_float()<class_String_method_to_float>` which is generally more lax than the JSON specification.
+- 使用 :ref:`String.to_float()<class_String_method_to_float>` 解析數字，這通常比 JSON 規範更寬松。
 
-- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleaned up and an error is logged to the console.
+- 某些錯誤不會導致解析器錯誤，例如 Unicode 序列無效，但是該字串會被清理並將錯誤記錄到控制台。
 
 .. rst-class:: classref-reftable-group
 
@@ -129,11 +129,11 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 
 :ref:`Variant<class_Variant>` **from_native**\ (\ variant\: :ref:`Variant<class_Variant>`, full_objects\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_from_native>`
 
-Converts a native engine type to a JSON-compliant value.
+將引擎原生型別轉換為 JSON 相容型別。
 
-By default, objects are ignored for security reasons, unless ``full_objects`` is ``true``.
+出於安全原因，預設會忽略物件，除非 ``full_objects`` 為 ``true``\ 。
 
-You can convert a native value to a JSON string like this:
+將原生值轉換為 JSON 字串的方法如下：
 
 ::
 
@@ -162,7 +162,7 @@ You can convert a native value to a JSON string like this:
 
 :ref:`String<class_String>` **get_error_message**\ (\ ) |const| :ref:`🔗<class_JSON_method_get_error_message>`
 
-如果上一次呼叫 :ref:`parse()<class_JSON_method_parse>` 成功，則返回空字串，否則返回失敗時的錯誤消息。
+如果上一次呼叫 :ref:`parse()<class_JSON_method_parse>` 成功，則返回空字串，否則返回失敗時的錯誤訊息。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ You can convert a native value to a JSON string like this:
 
 :ref:`String<class_String>` **get_parsed_text**\ (\ ) |const| :ref:`🔗<class_JSON_method_get_parsed_text>`
 
-Return the text parsed by :ref:`parse()<class_JSON_method_parse>` (requires passing ``keep_text`` to :ref:`parse()<class_JSON_method_parse>`).
+回傳由 :ref:`parse()<class_JSON_method_parse>` 解析的文字（要求向 :ref:`parse()<class_JSON_method_parse>` 傳遞 ``keep_text``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -186,13 +186,13 @@ Return the text parsed by :ref:`parse()<class_JSON_method_parse>` (requires pass
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ json_text\: :ref:`String<class_String>`, keep_text\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JSON_method_parse>`
 
-Attempts to parse the ``json_text`` provided.
+嘗試解析提供的 ``json_text``\ 。
 
-Returns an :ref:`Error<enum_@GlobalScope_Error>`. If the parse was successful, it returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` and the result can be retrieved using :ref:`data<class_JSON_property_data>`. If unsuccessful, use :ref:`get_error_line()<class_JSON_method_get_error_line>` and :ref:`get_error_message()<class_JSON_method_get_error_message>` to identify the source of the failure.
+回傳 :ref:`Error<enum_@GlobalScope_Error>`\ 。如果解析成功則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，並且可以使用 :ref:`data<class_JSON_property_data>` 檢索該結果。如果不成功，請使用 :ref:`get_error_line()<class_JSON_method_get_error_line>` 和 :ref:`get_error_message()<class_JSON_method_get_error_message>` 來識別失敗的原因。
 
-Non-static variant of :ref:`parse_string()<class_JSON_method_parse_string>`, if you want custom error handling.
+如果想要自訂錯誤處理，可以使用的 :ref:`parse_string()<class_JSON_method_parse_string>` 的非靜態版本。
 
-The optional ``keep_text`` argument instructs the parser to keep a copy of the original text. This text can be obtained later by using the :ref:`get_parsed_text()<class_JSON_method_get_parsed_text>` function and is used when saving the resource (instead of generating new text from :ref:`data<class_JSON_property_data>`).
+可選的 ``keep_text`` 參數會讓解析器保留原始文字的副本。該文字稍後可以使用 :ref:`get_parsed_text()<class_JSON_method_get_parsed_text>` 函式取得，並在儲存資源時使用（而不是從 :ref:`data<class_JSON_property_data>` 生成新文字）。
 
 .. rst-class:: classref-item-separator
 
@@ -216,17 +216,17 @@ The optional ``keep_text`` argument instructs the parser to keep a copy of the o
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
+將 :ref:`Variant<class_Variant>` 變數轉換為 JSON 文字並回傳結果。可用於將資料進行序列化儲存或通過網路發送。
 
-\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
+\ **注意：**\ JSON 規範沒有定義整數和浮點數型別，只有一個\ *數字*\ 型別。因此，將 Variant 轉換為 JSON 文字會將所有數字值轉換為 :ref:`float<class_float>` 型別。
 
-\ **Note:** If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
+\ **注意：**\ 如果 ``full_precision`` 為 ``true``\ ，則在字串化浮點數時，除可靠數字外，還將對不可靠數字進行字串化，以保證準確解碼。
 
-The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively.
+\ ``indent`` 參數控制是否縮進以及如何縮進，輸出時應該有縮進的地方會用到它的值。甚至可以使用空白 ``" "`` 縮進。\ ``\t`` 和 ``\n`` 可用於制表符縮進，或分別為每個縮進換行。
 
-\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
+\ **警告：**\ JSON 不支援非有限數。任何出現的 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 都將被替換為 ``1e99999``\ ，負數 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 將被替換為 ``-1e99999``\ ，但大多數 JSON 解析器會將其正確解析為無窮大。\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 將被替換為 ``null``\ ，並且 JSON 解析器不會將其解析為 NaN。如果你需要處理非有限數，請考慮先使用 :ref:`from_native()<class_JSON_method_from_native>` 方法處理你的資料。
 
-\ **Example output:**\ 
+\ **範例輸出：**\ 
 
 ::
 
@@ -275,11 +275,11 @@ The ``indent`` parameter controls if and how something is indented; its contents
 
 :ref:`Variant<class_Variant>` **to_native**\ (\ json\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_to_native>`
 
-Converts a JSON-compliant value that was created with :ref:`from_native()<class_JSON_method_from_native>` back to native engine types.
+將使用 :ref:`from_native()<class_JSON_method_from_native>` 建立的 JSON 相容值轉換回引擎原生型別。
 
-By default, objects are ignored for security reasons, unless ``allow_objects`` is ``true``.
+出於安全原因，預設會忽略物件，除非 ``allow_objects`` 為 ``true``\ 。
 
-You can convert a JSON string back to a native value like this:
+將 JSON 字串轉換回原生值的方法如下：
 
 ::
 

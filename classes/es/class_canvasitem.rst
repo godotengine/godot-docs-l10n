@@ -1171,7 +1171,7 @@ Breaks ``text`` to the lines and draws text outline using the specified ``font``
 
 Dibuja una :ref:`MultiMesh<class_MultiMesh>` en 2D con la textura proporcionada. Véase :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` para documentación relacionada.
 
-\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo en variables locales **no** deben usarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente después de llamar a este método. En GDScript, cuando finaliza la funcion con las variables locales, estas se destruyen antes de que se produzca el renderizado.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo en variables locales **no** deben usarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente después de llamar a este método. En GDScript, cuando finaliza la función con las variables locales, estas se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 

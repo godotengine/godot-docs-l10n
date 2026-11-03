@@ -7,18 +7,18 @@ JavaObject
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents an object from the Java Native Interface.
+代表來自 Java 原生介面的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents an object from the Java Native Interface. It can be returned from Java methods called on :ref:`JavaClass<class_JavaClass>` or other **JavaObject**\ s. See :ref:`JavaClassWrapper<class_JavaClassWrapper>` for an example.
+代表 Java 原生介面中的物件。呼叫 :ref:`JavaClass<class_JavaClass>` 或 **JavaObject** 物件的 Java 方法可能會回傳此型別的物件。範例見 :ref:`JavaClassWrapper<class_JavaClassWrapper>`\ 。
 
-\ **Note:** This class only works on Android. On any other platform, this class does nothing.
+\ **注意：**\ 該類僅適用於 Android。該類在其他平台上不執行任何操作。
 
-\ **Note:** This class is not to be confused with :ref:`JavaScriptObject<class_JavaScriptObject>`.
+\ **注意：**\ 請勿與 :ref:`JavaScriptObject<class_JavaScriptObject>` 混淆。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Represents an object from the Java Native Interface. It can be returned from Jav
 
 :ref:`JavaClass<class_JavaClass>` **get_java_class**\ (\ ) |const| :ref:`🔗<class_JavaObject_method_get_java_class>`
 
-Returns the :ref:`JavaClass<class_JavaClass>` that this object is an instance of.
+回傳該物件實例對應的 :ref:`JavaClass<class_JavaClass>` 類。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the :ref:`JavaClass<class_JavaClass>` that this object is an instance of
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaObject_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+如果給定的 ``method`` 名存在於物件的 Java 方法中，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -1539,7 +1539,7 @@ Si es ``false``, se deshabilitará el uso del botón central del ratón para peg
 - |void| **set_draw_minimap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_minimap**\ (\ )
 
-If ``true``, a minimap is shown, providing an outline of your source code. The minimap uses a fixed-width text size.
+Si es ``true``, se muestra un minimapa, que proporciona un esquema de tu código fuente. El minimapa usa un tamaño de texto de ancho fijo.
 
 .. rst-class:: classref-item-separator
 
@@ -2549,7 +2549,7 @@ Devuelve el número de líneas en el texto.
 
 :ref:`Texture2D<class_Texture2D>` **get_line_gutter_icon**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_gutter_icon>`
 
-Returns the icon currently in ``gutter`` at ``line``. This only works when the gutter type is :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+Devuelve el icono que se encuentra actualmente en ``gutter`` en la línea ``line``. Esto solo funciona cuando el tipo de margen es :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` (véase :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
 
 .. rst-class:: classref-item-separator
 
@@ -3697,7 +3697,7 @@ If ``true``, the gutter at the given index is drawn. The gutter type (:ref:`set_
 
 |void| **set_gutter_name**\ (\ gutter\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_name>`
 
-Sets the name of the gutter at the given index.
+Define el nombre del margen en el índice dado.
 
 .. rst-class:: classref-item-separator
 
@@ -4216,7 +4216,7 @@ Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al 
 
 El tamaño del contorno del texto.
 
-\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
+\ **Nota:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

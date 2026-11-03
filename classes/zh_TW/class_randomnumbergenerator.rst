@@ -14,11 +14,11 @@ RandomNumberGenerator
 說明
 ----
 
-RandomNumberGenerator is a class for generating pseudo-random numbers. It currently uses `PCG32 <https://www.pcg-random.org/>`__.
+RandomNumberGenerator 是一個用於生成偽隨機數的類。它目前使用 `PCG32 <https://www.pcg-random.org/>`__\ 。
 
-\ **Note:** The underlying algorithm is an implementation detail and should not be depended upon.
+\ **注意：**\ 底層算法屬於實作細節，不應該對此產生相依性。
 
-To generate a random float number (within a given range) based on a time-dependent seed:
+要根據時間相關種子生成（給定範圍內的）隨機浮點數：
 
 ::
 
@@ -91,19 +91,19 @@ To generate a random float number (within a given range) based on a time-depende
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
+根據給定的種子值來初始化隨機數生成器的狀態。使用相同的種子，將會生成一組完全可復現的偽隨機數序列。
 
-\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
+\ **注意：** 該隨機數生成器（RNG）不具備雪崩效應，這意味著如果使用相近的種子值，可能會輸出相似的隨機數序列。如果你的種子是從外部取得的，建議考慮使用雜湊函式來提升種子的品質。
 
-\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
+\ **注意：** 該屬性的預設值其實是偽隨機的，並且會在呼叫 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 方法時發生改變。這裡文件中標注的預設值 ``0`` 僅僅是一個佔位符，並不是它實際的預設種子。
 
-\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
+\ **注意：** 設定該屬性會產生一個副作用，即改變內部的 :ref:`state<class_RandomNumberGenerator_property_state>`\ （狀態）。因此，請務必在修改 :ref:`state<class_RandomNumberGenerator_property_state>` *之前* 先初始化種子：
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # Restore to some previously saved state.
+    rng.state = 100 # 恢復到之前儲存的某個狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -120,20 +120,20 @@ Initializes the random number generator state based on the given seed value. A g
 - |void| **set_state**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_state**\ (\ )
 
-The current state of the random number generator. Save and restore this property to restore the generator to a previous state:
+隨機數生成器的目前狀態。儲存並恢復此屬性，以將生成器恢復到之前的狀態：
 
 ::
 
     var rng = RandomNumberGenerator.new()
     print(rng.randf())
-    var saved_state = rng.state # Store current state.
-    print(rng.randf()) # Advance internal state.
-    rng.state = saved_state # Restore the state.
-    print(rng.randf()) # Prints the same value as previously.
+    var saved_state = rng.state # 儲存目前狀態。
+    print(rng.randf()) # 讓內部狀態發生步進。
+    rng.state = saved_state # 恢復狀態。
+    print(rng.randf()) # 輸出和之前一樣的值。
 
-\ **Note:** Do not set state to arbitrary values, since the random number generator requires the state to have certain qualities to behave properly. It should only be set to values that came from the state property itself. To initialize the random number generator with arbitrary input, use :ref:`seed<class_RandomNumberGenerator_property_seed>` instead.
+\ **注意：**\ 不要將狀態設定為任意值，因為隨機數生成器要求狀態具有某些特性才能正常執行。它應該只設定為來自狀態屬性本身的值。要使用任意輸入初始化隨機數生成器，請改用 :ref:`seed<class_RandomNumberGenerator_property_seed>`\ 。
 
-\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default state.
+\ **注意：**\ 該屬性的預設值是偽隨機的，會在呼叫 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 時改變。文件中記錄的 ``0`` 是佔位符，不是實際的預設狀態。
 
 .. rst-class:: classref-section-separator
 
@@ -150,11 +150,11 @@ The current state of the random number generator. Save and restore this property
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a non-negative floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+回傳一個介於 ``0`` 與作為參數傳入的陣列大小之間的隨機整數。陣列中的每個值應為非負浮點數，表示其對應索引被回傳的相對概率。值越大，該索引被回傳的概率越高；值為 ``0`` 則表示該索引永遠不會被回傳。
 
-For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+例如，若傳入參數為 ``[0.5, 1, 1, 2]``\ ，則在該方法回傳的索引值中，回傳 ``1`` 和 ``2`` 的概率是回傳 ``3``\ （即值 ``2`` 的索引）的一半，是回傳 ``0``\ （即值 ``0.5`` 的索引）的兩倍。
 
-Prints an error and returns ``-1`` if the array is empty or contains any negative values.
+如果陣列為空或包含任何負值，將輸出錯誤並回傳 ``-1``\ 。
 
 
 .. tabs::
@@ -206,9 +206,9 @@ Prints an error and returns ``-1`` if the array is empty or contains any negativ
 
 :ref:`float<class_float>` **randfn**\ (\ mean\: :ref:`float<class_float>` = 0.0, deviation\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_RandomNumberGenerator_method_randfn>`
 
-Returns a `normally-distributed <https://en.wikipedia.org/wiki/Normal_distribution>`__, pseudo-random floating-point number from the specified ``mean`` and a standard ``deviation``. This is also known as a Gaussian distribution.
+回傳一個\ `正態分布 <https://en.wikipedia.org/wiki/Normal_distribution>`__\ 的偽隨機數，該分布使用指定的 ``mean`` 和標準 ``deviation``\ 。這也被稱為高斯分布。
 
-\ **Note:** This method uses the `Box-Muller transform <https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform>`__ algorithm.
+\ **注意：**\ 該方法使用 `Box-Muller 變換 <https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform>`__\ 算法。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Returns a `normally-distributed <https://en.wikipedia.org/wiki/Normal_distributi
 
 |void| **randomize**\ (\ ) :ref:`🔗<class_RandomNumberGenerator_method_randomize>`
 
-Sets up a time-based seed for this **RandomNumberGenerator** instance. Unlike the :ref:`@GlobalScope<class_@GlobalScope>` random number generation functions, different **RandomNumberGenerator** instances can use different seeds.
+為這個 **RandomNumberGenerator** 實例設定基於時間的種子。與 :ref:`@GlobalScope<class_@GlobalScope>` 隨機數生成函式不同，不同的 **RandomNumberGenerator** 實例可以使用不同的種子。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

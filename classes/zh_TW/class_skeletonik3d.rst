@@ -16,26 +16,26 @@ SkeletonIK3D
 說明
 ----
 
-SkeletonIK3D is used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>` bone chain a way that places the end bone at a desired 3D position. A typical scenario for IK in games is to place a character's feet on the ground or a character's hands on a currently held object. SkeletonIK uses FabrikInverseKinematic internally to solve the bone chain and applies the results to the :ref:`Skeleton3D<class_Skeleton3D>` ``bones_global_pose_override`` property for all affected bones in the chain. If fully applied, this overwrites any bone transform from :ref:`Animation<class_Animation>`\ s or bone custom poses set by users. The applied amount can be controlled with the :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` property.
+SkeletonIK3D 可以將 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼鏈中的所有骨骼進行旋轉，從而將末端骨骼放置在正確的 3D 位置。遊戲中 IK 的典型場景是將角色的腳放在地面上，或者將角色的手放在目前持有的物體上。SkeletonIK 在內部使用 FabrikInverseKinematic 來解決骨骼鏈，並將結果套用至 :ref:`Skeleton3D<class_Skeleton3D>` ``bones_global_pose_override`` 屬性中所有受影響的骨骼鏈。如果完全應用，這將覆蓋任何來自 :ref:`Animation<class_Animation>` 的骨骼變換或使用者設定的骨骼自訂姿勢。應用量可以用 :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` 屬性來控制。
 
 ::
 
-    # Apply IK effect automatically on every new frame (not the current)
+    # 在每一個新的影格上自動應用 IK 效果（不是目前的）。
     skeleton_ik_node.start()
 
-    # Apply IK effect only on the current frame
+    # 只在目前影格上應用 IK 效果
     skeleton_ik_node.start(true)
 
-    # Stop IK effect and reset bones_global_pose_override on Skeleton
+    # 停止 IK 效果並重設骨骼上的 bones_global_pose_override
     skeleton_ik_node.stop()
 
-    # Apply full IK effect
+    # 應用完整的 IK 效果
     skeleton_ik_node.set_influence(1.0)
 
-    # Apply half IK effect
+    # 應用一半的 IK 效果
     skeleton_ik_node.set_influence(0.5)
 
-    # Apply zero IK effect (a value at or below 0.01 also removes bones_global_pose_override on Skeleton)
+    # 應用零 IK 效果（數值為 0.01 或低於 0.01 也會移除 Skeleton 上的 bones_global_pose_override）
     skeleton_ik_node.set_influence(0.0)
 
 .. rst-class:: classref-reftable-group
@@ -108,7 +108,7 @@ SkeletonIK3D is used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>
 
 **已棄用：** Use :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` instead.
 
-Interpolation value for how much the IK results are applied to the current skeleton bone chain. A value of ``1.0`` will overwrite all skeleton bone transforms completely while a value of ``0.0`` will visually disable the SkeletonIK.
+IK 效果被套用至目前骨架骨骼鏈的程度的插值。\ ``1.0`` 的值將完全覆蓋所有骨架骨骼變換，而 ``0.0`` 的值將在視覺上停用 SkeletonIK。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ IK 鏈的目標節點 :ref:`NodePath<class_NodePath>`\ 。如果有的話，將�
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_parent_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonIK3D_method_get_parent_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node that was present when SkeletonIK entered the scene tree. Returns ``null`` if the parent node was not a :ref:`Skeleton3D<class_Skeleton3D>` node when SkeletonIK3D entered the scene tree.
+回傳 SkeletonIK 進入場景樹時存在的父級 :ref:`Skeleton3D<class_Skeleton3D>` 節點。如果 SkeletonIK3D 進入場景樹時父節點不是 :ref:`Skeleton3D<class_Skeleton3D>` 節點，則回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -93,7 +93,7 @@ LightOccluder2D 的遮擋器光照遮罩。LightOccluder2D 將僅從具有相同
 - |void| **set_as_sdf_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_sdf_collision**\ (\ )
 
-If enabled, the occluder will be part of a real-time generated signed distance field that can be used in custom shaders.
+如果啟用，該遮擋器將成為即時生成的帶符號距離場的一部分，可被用於自訂著色器中。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

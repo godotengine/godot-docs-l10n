@@ -91,7 +91,7 @@ enum **SwitchMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_SwitchM
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_IMMEDIATE** = ``0``
 
-Intercambia a el proximo estado inmediatamente. El actual estado terminara y se mezclara en el comienzo del nuevo.
+Cambia al próximo estado inmediatamente. El estado actual terminará y se mezclará en el comienzo del nuevo.
 
 .. _class_AnimationNodeStateMachineTransition_constant_SWITCH_MODE_SYNC:
 
@@ -99,7 +99,7 @@ Intercambia a el proximo estado inmediatamente. El actual estado terminara y se 
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_SYNC** = ``1``
 
-Intercambia a el proximo estado inmediatamente, pero buscara el nuevo estado a la reproduccion de la posicion del antiguo estado.
+Cambia al próximo estado inmediatamente, pero buscará el nuevo estado a la reproducción de la posición del antiguo estado.
 
 .. _class_AnimationNodeStateMachineTransition_constant_SWITCH_MODE_AT_END:
 
@@ -107,7 +107,7 @@ Intercambia a el proximo estado inmediatamente, pero buscara el nuevo estado a l
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_AT_END** = ``2``
 
-Espera a que termine el actual estado en reproduccion, entonces intercambia con el principio de la proxima animación.
+Espera a que termine el actual estado en reproducción, y luego cambia al principio de la animación del siguiente estado.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Si es ``true``, la animación de destino se reproduce desde el principio cuando 
 - |void| **set_switch_mode**\ (\ value\: :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>`\ )
 - :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **get_switch_mode**\ (\ )
 
-El tipo de transicion.
+El tipo de transición.
 
 .. rst-class:: classref-item-separator
 

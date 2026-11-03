@@ -64,7 +64,7 @@ Descriptions des propriétés
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Enable frame synthesis. When ``true`` motion vector and depth data is provided to the XR runtime.
+Active la synthèse de trames. Lorsque ``true``, les données de vecteur de mouvement et de profondeur sont fournis au runtime XR.
 
 .. rst-class:: classref-item-separator
 

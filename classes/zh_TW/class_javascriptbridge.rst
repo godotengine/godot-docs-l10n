@@ -14,16 +14,16 @@ JavaScriptBridge
 說明
 ----
 
-The JavaScriptBridge singleton is implemented only in the Web export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
+JavaScriptBridge 單例僅在 Web 匯出中實作。它用於存取瀏覽器的 JavaScript 情境。這允許與嵌入頁面或呼叫第三方 JavaScript API 進行互動。
 
-\ **Note:** This singleton can be disabled at build-time to improve security. By default, the JavaScriptBridge singleton is enabled. Official export templates also have the JavaScriptBridge singleton enabled. See :doc:`Compiling for the Web <../engine_details/development/compiling/compiling_for_web>` in the documentation for more information.
+\ **注意：**\ 可以在建置時停用該單例以提高安全性。預設情況下，啟用 JavaScriptBridge 單例。官方匯出範本也啟用了 JavaScriptBridge 單例。有關詳細資訊，請參閱文件中的\ :doc:`《為 Web 平台編譯》 <../engine_details/development/compiling/compiling_for_web>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
+- :doc:`JavaScriptBridge 單例 <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 
@@ -87,9 +87,9 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 
 :ref:`JavaScriptObject<class_JavaScriptObject>` **create_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaScriptBridge_method_create_callback>`
 
-Creates a reference to a :ref:`Callable<class_Callable>` that can be used as a callback by JavaScript. The reference must be kept until the callback happens, or it won't be called at all. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
+建立一個對 :ref:`Callable<class_Callable>` 的參照，JavaScript 可以用它作為回呼。回呼前必須保持參照，否則無法呼叫。用法見 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
 
-\ **Note:** The callback function must take exactly one :ref:`Array<class_Array>` argument, which is going to be the JavaScript `arguments object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments>`__ converted to an array.
+\ **注意：**\ 回呼函式必須只能接受單一 :ref:`Array<class_Array>` 參數，是轉換成陣列後的 JavaScript `參數物件 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Creates a reference to a :ref:`Callable<class_Callable>` that can be used as a c
 
 \ **注意：**\ 流覽器可能會覆蓋根據檔 ``name`` 的副檔名提供的 `MIME 型別 <https://en.wikipedia.org/wiki/Media_type>`__\ 。
 
-\ **注意：**\ 如果 :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` 不是從使用者互動（例如按鈕點擊）中調用的，流覽器可能會阻止下載。
+\ **注意：**\ 如果 :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` 不是從使用者互動（例如按鈕點選）中調用的，流覽器可能會阻止下載。
 
 \ **注意：**\ 如果快速連續發出多個下載請求，流覽器可能會要求使用者同意或阻止下載。
 
@@ -131,9 +131,9 @@ Creates a reference to a :ref:`Callable<class_Callable>` that can be used as a c
 
 :ref:`Variant<class_Variant>` **eval**\ (\ code\: :ref:`String<class_String>`, use_global_execution_context\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JavaScriptBridge_method_eval>`
 
-Execute the string ``code`` as JavaScript code within the browser window. This is a call to the actual global JavaScript function ``eval()``.
+在瀏覽器視窗中將字串 ``code`` 作為 JavaScript 程式碼執行。這是對實際的全域 JavaScript 函式 ``eval()`` 的呼叫。
 
-If ``use_global_execution_context`` is ``true``, the code will be evaluated in the global execution context. Otherwise, it is evaluated in the execution context of a function within the engine's runtime environment.
+如果 ``use_global_execution_context`` 為 ``true``\ ，則程式碼將在全域執行情境中被求值。否則，它將在引擎執行時環境中的函式的執行情境中進行求值。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ If ``use_global_execution_context`` is ``true``, the code will be evaluated in t
 
 :ref:`bool<class_bool>` **is_js_buffer**\ (\ javascript_object\: :ref:`JavaScriptObject<class_JavaScriptObject>`\ ) :ref:`🔗<class_JavaScriptBridge_method_is_js_buffer>`
 
-Returns ``true`` if the given ``javascript_object`` is of type `ArrayBuffer <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__, `DataView <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__, or one of the many `typed array objects <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__.
+如果給定的 ``javascript_object`` 是 `ArrayBuffer <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__\ 、\ `DataView <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__ 或任意一種 `typed array objects <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Returns ``true`` if the given ``javascript_object`` is of type `ArrayBuffer <htt
 
 :ref:`PackedByteArray<class_PackedByteArray>` **js_buffer_to_packed_byte_array**\ (\ javascript_buffer\: :ref:`JavaScriptObject<class_JavaScriptObject>`\ ) :ref:`🔗<class_JavaScriptBridge_method_js_buffer_to_packed_byte_array>`
 
-Returns a copy of ``javascript_buffer``'s contents as a :ref:`PackedByteArray<class_PackedByteArray>`. See also :ref:`is_js_buffer()<class_JavaScriptBridge_method_is_js_buffer>`.
+以 :ref:`PackedByteArray<class_PackedByteArray>` 的形式回傳 ``javascript_buffer`` 中內容的副本。另見 :ref:`is_js_buffer()<class_JavaScriptBridge_method_is_js_buffer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns a copy of ``javascript_buffer``'s contents as a :ref:`PackedByteArray<cl
 
 執行該漸進式網路套用程式的線上更新。強制安裝新版本並重新載入該頁面。
 
-\ **注意：**\ 你的套用程式將\ **在所有流覽器標籤頁中重新載入**\ 。
+\ **注意：**\ 你的套用程式將\ **在所有流覽器分頁中重新載入**\ 。
 
 \ **注意：**\ 只在匯出為漸進式網路套用程式（Progressive Web App）且 :ref:`pwa_needs_update()<class_JavaScriptBridge_method_pwa_needs_update>` 返回 ``true`` 時相關。
 

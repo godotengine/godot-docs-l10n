@@ -503,9 +503,9 @@ Rétablit la couleur de la colonne spécifiée à la valeur par défaut.
 
 :ref:`TreeItem<class_TreeItem>` **create_child**\ (\ index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TreeItem_method_create_child>`
 
-Creates an item and adds it as a child.
+Crée un élément et l'ajoute en tant qu'enfant.
 
-The new item will be inserted as position ``index`` (the default value ``-1`` means the last position), or it will be the last child if ``index`` is higher than the child count.
+Le nouvel élément sera inséré à la position ``index`` (la valeur par défaut ``-1`` signifie en dernière position), ou sera le dernier enfant si ``index`` est supérieur au nombre d'enfants.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Désélectionne la colonne donnée.
 
 |void| **erase_button**\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TreeItem_method_erase_button>`
 
-Removes the button at index ``button_index`` in column ``column``.
+Retire le bouton à l'index ``button_index`` dans la colonne ``column``.
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Returns custom font size used to draw text in the column ``column``.
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Renvoie la :ref:`StyleBox<class_StyleBox>` personnalisée de la colonne donnée utilisée pour dessiner l'arrière-plan.
 
 .. rst-class:: classref-item-separator
 
@@ -807,7 +807,7 @@ Renvoie le premier enfant du TreeItem.
 
 :ref:`Texture2D<class_Texture2D>` **get_icon**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_icon>`
 
-Returns the given column's icon :ref:`Texture2D<class_Texture2D>`. Error if no icon is set.
+Renvoie la :ref:`Texture2D<class_Texture2D>` de l'icône de la colonne donnée. Erreur si aucune icône n'est définie.
 
 .. rst-class:: classref-item-separator
 
@@ -819,7 +819,7 @@ Returns the given column's icon :ref:`Texture2D<class_Texture2D>`. Error if no i
 
 :ref:`int<class_int>` **get_icon_max_width**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_icon_max_width>`
 
-Returns the maximum allowed width of the icon in the given ``column``.
+Renvoie la largeur maximale autorisée de l'icône de la colonne ``column`` donnée.
 
 .. rst-class:: classref-item-separator
 
@@ -867,7 +867,7 @@ Returns the icon :ref:`Texture2D<class_Texture2D>` region as :ref:`Rect2<class_R
 
 :ref:`int<class_int>` **get_index**\ (\ ) :ref:`🔗<class_TreeItem_method_get_index>`
 
-Returns the node's order in the tree. For example, if called on the first child item the position is ``0``.
+Renvoie l'ordre du nœud dans l'arborescence. Par exemple, si appelée sur le premier élément enfant, la position est de ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +891,7 @@ Renvoie le code de langue du texte de l'élément.
 
 :ref:`Variant<class_Variant>` **get_metadata**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_metadata>`
 
-Returns the metadata value that was set for the given column using :ref:`set_metadata()<class_TreeItem_method_set_metadata>`.
+Renvoie les valeurs des métadonnées qui ont été définies pour la colonne donnée en utilisant :ref:`set_metadata()<class_TreeItem_method_set_metadata>`.
 
 .. rst-class:: classref-item-separator
 
@@ -903,7 +903,7 @@ Returns the metadata value that was set for the given column using :ref:`set_met
 
 :ref:`TreeItem<class_TreeItem>` **get_next**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_get_next>`
 
-Returns the next sibling TreeItem in the tree or a ``null`` object if there is none.
+Renvoie le TreeItem frère suivant dans l'arborescence, ou l'objet ``null`` s'il n'y en a pas.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +943,7 @@ If ``wrap`` is enabled, the method will wrap around to the first visible element
 
 :ref:`TreeItem<class_TreeItem>` **get_parent**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_get_parent>`
 
-Returns the parent TreeItem or a ``null`` object if there is none.
+Renvoie le TreeItem parent ou un objet ``null`` s’il n’y en a pas.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ Returns the parent TreeItem or a ``null`` object if there is none.
 
 :ref:`TreeItem<class_TreeItem>` **get_prev**\ (\ ) :ref:`🔗<class_TreeItem_method_get_prev>`
 
-Returns the previous sibling TreeItem in the tree or a ``null`` object if there is none.
+Renvoie le TreeItem frère précédent dans l'arborescence, ou l'objet ``null`` s'il n'y en a pas.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,9 +1275,9 @@ Moves this TreeItem right after the given ``item``.
 
 |void| **move_before**\ (\ item\: :ref:`TreeItem<class_TreeItem>`\ ) :ref:`🔗<class_TreeItem_method_move_before>`
 
-Moves this TreeItem right before the given ``item``.
+Déplace ce TreeItem juste avant l'élément ``item`` donné.
 
-\ **Note:** You can't move to the root or move the root.
+\ **Note :** Vous ne pouvez pas déplacer avant la racine ou déplacer la racine.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+Définit la capacité du **TreeItem** à accepter des enfants.
 
 .. rst-class:: classref-item-separator
 

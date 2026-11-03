@@ -7,14 +7,14 @@ GLTFSpecGloss
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Archived glTF extension for specular/glossy materials.
+已封存檔的 glTF 擴充，用於鏡面/光澤材質。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means that it is deprecated and not recommended for new files. However, it is still supported for loading old files.
+KHR_materials_pbrSpecularGlossiness 是一個已封存檔的 glTF 擴充。這意味著它已被棄用，不推薦用於新檔案。但是，它仍然被支援用於載入舊檔案。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,7 +23,7 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `KHR_materials_pbrSpecularGlossiness glTF extension spec <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Archived/KHR_materials_pbrSpecularGlossiness>`__
+- `KHR_materials_pbrSpecularGlossiness glTF 擴充規範 <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Archived/KHR_materials_pbrSpecularGlossiness>`__
 
 .. rst-class:: classref-reftable-group
 

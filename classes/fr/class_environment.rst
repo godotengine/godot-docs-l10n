@@ -14,17 +14,17 @@ Ressource pour les nœuds d’environnement (comme :ref:`WorldEnvironment<class_
 Description
 -----------
 
-Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironment>`) that define multiple environment operations (such as background :ref:`Sky<class_Sky>` or :ref:`Color<class_Color>`, ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:
+Ressources pour les nœuds d'environnement (comme :ref:`WorldEnvironment<class_WorldEnvironment>`) qui définissent plusieurs opérations d'environnement (comme le :ref:`Sky<class_Sky>` ou la :ref:`Color<class_Color>` d'arrière-plan, la lumière ambiante, le brouillard, la profondeur de champ...). Ces paramètres affectent le rendu final de la scène. L'ordre de ces opérations est :
 
-- Depth of Field Blur
+- Flou de profondeur de champ
 
-- Auto Exposure
+- Exposition automatique
 
 - Glow
 
 - Tonemap
 
-- Adjustments
+- Ajustements
 
 .. rst-class:: classref-introduction-group
 

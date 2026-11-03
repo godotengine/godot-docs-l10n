@@ -153,7 +153,7 @@ enum **UpdateMode**: :ref:`🔗<enum_GPUParticlesCollisionHeightField3D_UpdateMo
 
 :ref:`UpdateMode<enum_GPUParticlesCollisionHeightField3D_UpdateMode>` **UPDATE_MODE_ALWAYS** = ``1``
 
-每影格更新高度圖。這具有顯著的性能成本。只有當粒子可以碰撞的幾何體在遊戲過程中發生顯著變化時，才應使用該更新選項。
+每影格更新高度圖。這具有顯著的效能成本。只有當粒子可以碰撞的幾何體在遊戲過程中發生顯著變化時，才應使用該更新選項。
 
 .. rst-class:: classref-section-separator
 
@@ -177,7 +177,7 @@ enum **UpdateMode**: :ref:`🔗<enum_GPUParticlesCollisionHeightField3D_UpdateMo
 
 如果為 ``true``\ ，則 **GPUParticlesCollisionHeightField3D** 將在全域空間中跟隨目前相機。\ **GPUParticlesCollisionHeightField3D** 不需要是該 :ref:`Camera3D<class_Camera3D>` 節點的子節點也能工作。
 
-跟隨相機會有性能成本，因為它會在相機移動時強制更新高度圖。如果 :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` 為 ``true``\ ，請考慮降低 :ref:`resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>` 以提高性能。
+跟隨相機會有效能成本，因為它會在相機移動時強制更新高度圖。如果 :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` 為 ``true``\ ，請考慮降低 :ref:`resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>` 以提高效能。
 
 .. rst-class:: classref-item-separator
 
@@ -194,11 +194,11 @@ enum **UpdateMode**: :ref:`🔗<enum_GPUParticlesCollisionHeightField3D_UpdateMo
 - |void| **set_heightfield_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_heightfield_mask**\ (\ )
 
-The visual layers to account for when updating the heightmap. Only :ref:`MeshInstance3D<class_MeshInstance3D>`\ s whose :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` match with this :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` will be included in the heightmap collision update. By default, all 20 user-visible layers are taken into account for updating the heightmap collision.
+更新高度圖時要考慮的可視層。高度圖碰撞更新中只會包含 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 與 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 匹配的 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。預設情況下，更新高度圖碰撞時會考慮全部 20 個使用者可見層。
 
-\ **Note:** Since the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
+\ **注意：**\ 由於 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 總共能夠儲存 32 個層，還有 12 個層是僅限引擎內部使用的，未在編輯器中暴露。通過腳本設定 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 就可以開關這些保留的層，適用於編輯器外掛。
 
-To adjust :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` more easily using a script, use :ref:`get_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>` and :ref:`set_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>`.
+腳本中可以使用 :ref:`get_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>` 和 :ref:`set_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>` 更方便地調整 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ To adjust :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_proper
 - |void| **set_resolution**\ (\ value\: :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>`\ )
 - :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **get_resolution**\ (\ )
 
-更高的解析度可以更準確地表示大場景中的小細節，但會降低性能。如果 :ref:`update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>` 為 :ref:`UPDATE_MODE_ALWAYS<class_GPUParticlesCollisionHeightField3D_constant_UPDATE_MODE_ALWAYS>`\ ，請考慮使用可能的最低解析度。
+更高的解析度可以更準確地表示大場景中的小細節，但會降低效能。如果 :ref:`update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>` 為 :ref:`UPDATE_MODE_ALWAYS<class_GPUParticlesCollisionHeightField3D_constant_UPDATE_MODE_ALWAYS>`\ ，請考慮使用可能的最低解析度。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ To adjust :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_proper
 
 :ref:`bool<class_bool>` **get_heightfield_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>`
 
-Returns ``true`` if the specified layer of the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` is enabled, given a ``layer_number`` between ``1`` and ``20``, inclusive.
+如果啟用了 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 中的指定層，則回傳 ``true``\ ，給定的 ``layer_number`` 在 ``1`` 到 ``20`` 之間，包括端點。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Returns ``true`` if the specified layer of the :ref:`heightfield_mask<class_GPUP
 
 |void| **set_heightfield_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>`, given a ``layer_number`` between ``1`` and ``20``, inclusive.
+根據 ``value`` 啟用或停用 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 中的指定層，給定的 ``layer_number`` 在 ``1`` 到 ``20`` 之間，包括端點。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

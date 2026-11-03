@@ -632,15 +632,11 @@
 
 Див. також :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
 
-\ ``codblock``\ 
+::
 
-@export_multiline var character_biography
-
-@export_multiline var npc_dialogs: Array\ :ref:`String<class_String>`\ 
-
-@export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
-
-[/codblock]
+    @export_multiline var character_biography
+    @export_multiline var npc_dialogs: Array[String]
+    @export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
 
 .. rst-class:: classref-item-separator
 

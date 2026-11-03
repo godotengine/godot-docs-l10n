@@ -7,14 +7,14 @@ ImageFormatLoaderExtension
 
 **繼承：** :ref:`ImageFormatLoader<class_ImageFormatLoader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於建立 :ref:`ImageFormatLoader<class_ImageFormatLoader>` 擴充的基底類別（新增對額外圖像格式的支援）。
+用於建立 :ref:`ImageFormatLoader<class_ImageFormatLoader>` 擴充的基底類別（新增對額外影像格式的支援）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-該引擎支援多種開箱即用的圖像格式（PNG、SVG、JPEG、WebP 等），但也可以選擇通過擴充該類，來實作對其他圖像格式的支援。
+該引擎支援多種開箱即用的影像格式（PNG、SVG、JPEG、WebP 等），但也可以選擇通過擴充該類，來實作對其他影像格式的支援。
 
 請務必遵守文件中的返回型別和值。應該建立它的一個實例，並在初始化階段呼叫 :ref:`add_format_loader()<class_ImageFormatLoaderExtension_method_add_format_loader>` 來註冊該載入器。
 
@@ -51,7 +51,7 @@ ImageFormatLoaderExtension
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>`
 
-返回該圖像格式的檔副檔名列表。具有給定副檔名的檔將被視為影像檔並使用該類載入。
+返回該影像格式的檔副檔名列表。具有給定副檔名的檔將被視為影像檔並使用該類載入。
 
 .. rst-class:: classref-item-separator
 

@@ -7,7 +7,7 @@ ENetPacketPeer
 
 **Hereda:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A wrapper class for an `ENetPeer <http://enet.bespin.org/group__peer.html>`__.
+Una clase envoltorio para un `ENetPeer <http://enet.bespin.org/group__peer.html>`__.
 
 .. rst-class:: classref-introduction-group
 
@@ -350,7 +350,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **get_channels**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_channels>`
 
-Returns the number of channels allocated for communication with peer.
+Devuelve el número de canales asignados para la comunicación con el dispositivo.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Devuelve el estado actual del par.
 
 :ref:`float<class_float>` **get_statistic**\ (\ statistic\: :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>`\ ) :ref:`🔗<class_ENetPacketPeer_method_get_statistic>`
 
-Returns the requested ``statistic`` for this peer.
+Devuelve el ``statistic`` solicitado para este dispositivo.
 
 .. rst-class:: classref-item-separator
 

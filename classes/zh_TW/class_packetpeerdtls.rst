@@ -18,7 +18,7 @@ DTLS 資料包使用者端。
 
 \ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署前，請確保在 Android 匯出預設中啟用 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
 
-\ **警告：**\ 目前不支援 TLS 憑證撤銷和憑證綁定。只要撤銷的憑證在其他方面有效，就會被接受。如果這是一個問題，可以使用有效期較短的自動管理憑證。
+\ **警告：**\ 目前不支援 TLS 憑證復原和憑證綁定。只要復原的憑證在其他方面有效，就會被接受。如果這是一個問題，可以使用有效期較短的自動管理憑證。
 
 .. rst-class:: classref-reftable-group
 
@@ -132,7 +132,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **get_status**\ (\ ) |const| :ref:`🔗<class_PacketPeerDTLS_method_get_status>`
 
-Returns the status of the connection.
+回傳連接的狀態。
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ CameraServer
 說明
 ----
 
-The **CameraServer** keeps track of different cameras accessible in Godot. These are external cameras such as webcams or the cameras on your phone.
+**CameraServer** 追蹤 Godot 中可存取的各類相機。這些屬於外部相機，例如網路攝像頭或手機上的攝像頭。
 
-It is notably used to provide AR modules with a video feed from the camera.
+主要用於為 AR 模組提供來自攝像頭的影片源。
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no :ref:`CameraFeed<class_CameraFeed>`\ s will be available. To get a :ref:`CameraFeed<class_CameraFeed>` on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **注意：**\ 該類目前僅在 Linux、Android、macOS 和 iOS 上實作。在其他平台上，\ :ref:`CameraFeed<class_CameraFeed>` 將不可用。若要在 iOS 上取得 :ref:`CameraFeed<class_CameraFeed>`\ ，請啟用 :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -91,7 +91,7 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 **camera_feeds_updated**\ (\ ) :ref:`🔗<class_CameraServer_signal_camera_feeds_updated>`
 
-Emitted when camera feeds are updated.
+更新相機源時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -114,7 +114,7 @@ enum **FeedImage**: :ref:`🔗<enum_CameraServer_FeedImage>`
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_RGBA_IMAGE** = ``0``
 
-RGBA 相機圖像。
+RGBA 相機影像。
 
 .. _class_CameraServer_constant_FEED_YCBCR_IMAGE:
 
@@ -122,7 +122,7 @@ RGBA 相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_YCBCR_IMAGE** = ``0``
 
-`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 相機圖像。
+`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 相機影像。
 
 .. _class_CameraServer_constant_FEED_Y_IMAGE:
 
@@ -130,7 +130,7 @@ RGBA 相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_Y_IMAGE** = ``0``
 
-Y 分量相機圖像。
+Y 分量相機影像。
 
 .. _class_CameraServer_constant_FEED_CBCR_IMAGE:
 
@@ -138,7 +138,7 @@ Y 分量相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_CBCR_IMAGE** = ``1``
 
-CbCr 分量相機圖像。
+CbCr 分量相機影像。
 
 .. rst-class:: classref-section-separator
 
@@ -160,11 +160,11 @@ CbCr 分量相機圖像。
 - |void| **set_monitoring_feeds**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitoring_feeds**\ (\ )
 
-If ``true``, the server is actively monitoring available camera feeds.
+如果為 ``true``\ ，則伺服器會主動監聽可用的相機源。
 
-This has a performance cost, so only set it to ``true`` when you're actively accessing the camera.
+這樣做存在效能開銷，因此請只在主動存取相機時將其設為 ``true``\ 。
 
-\ **Note:** After setting it to ``true``, you can receive updated camera feeds through the :ref:`camera_feeds_updated<class_CameraServer_signal_camera_feeds_updated>` signal.
+\ **注意：**\ 設為 ``true`` 後，你可以通過 :ref:`camera_feeds_updated<class_CameraServer_signal_camera_feeds_updated>` 訊號取得更新後的相機源。
 
 
 .. tabs::

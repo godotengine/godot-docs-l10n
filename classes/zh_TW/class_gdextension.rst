@@ -7,25 +7,25 @@ GDExtension
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A native library for GDExtension.
+GDExtension 的原生庫。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The **GDExtension** resource type represents a `shared library <https://en.wikipedia.org/wiki/Shared_library>`__ which can expand the functionality of the engine. The :ref:`GDExtensionManager<class_GDExtensionManager>` singleton is responsible for loading, reloading, and unloading **GDExtension** resources.
+**GDExtension** 資源型別代表一個\ `共享庫 <https://en.wikipedia.org/wiki/Shared_library>`__\ ，它可以擴充引擎的功能。\ :ref:`GDExtensionManager<class_GDExtensionManager>` 單例負責載入、重新載入和卸載 **GDExtension** 資源。
 
-\ **Note:** GDExtension itself is not a scripting language and has no relation to :ref:`GDScript<class_GDScript>` resources.
+\ **注意：**\ GDExtension 本身不是腳本語言，與 :ref:`GDScript<class_GDScript>` 資源沒有關係。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`GDExtension overview <../engine_details/engine_api/gdextension/what_is_gdextension>`
+- :doc:`GDExtension 概述 <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
-- :doc:`GDExtension example in C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
+- :doc:`C++ 的 GDExtension 範例 <../tutorials/scripting/cpp/gdextension_cpp_example>`
 
 .. rst-class:: classref-reftable-group
 
@@ -62,7 +62,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_CORE** = ``0``
 
-The library is initialized at the same time as the core features of the engine.
+該庫與引擎的核心功能同時初始化。
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_SERVERS:
 
@@ -70,7 +70,7 @@ The library is initialized at the same time as the core features of the engine.
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_SERVERS** = ``1``
 
-The library is initialized at the same time as the engine's servers (such as :ref:`RenderingServer<class_RenderingServer>` or :ref:`PhysicsServer3D<class_PhysicsServer3D>`).
+該庫與引擎的伺服器（例如 :ref:`RenderingServer<class_RenderingServer>` 或 :ref:`PhysicsServer3D<class_PhysicsServer3D>`\ ）同時初始化。
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_SCENE:
 
@@ -78,7 +78,7 @@ The library is initialized at the same time as the engine's servers (such as :re
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_SCENE** = ``2``
 
-The library is initialized at the same time as the engine's scene-related classes.
+該庫與引擎的場景相關類同時初始化。
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_EDITOR:
 
@@ -86,7 +86,7 @@ The library is initialized at the same time as the engine's scene-related classe
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_EDITOR** = ``3``
 
-The library is initialized at the same time as the engine's editor classes. Only happens when loading the GDExtension in the editor.
+該庫與引擎的編輯器類同時初始化。僅在編輯器中載入 GDExtension 時發生。
 
 .. rst-class:: classref-section-separator
 
@@ -103,7 +103,7 @@ The library is initialized at the same time as the engine's editor classes. Only
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **get_minimum_library_initialization_level**\ (\ ) |const| :ref:`🔗<class_GDExtension_method_get_minimum_library_initialization_level>`
 
-Returns the lowest level required for this extension to be properly initialized (see the :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` enum).
+回傳正確初始化該擴充所需的最低層級（請參閱 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` 列舉）。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Returns the lowest level required for this extension to be properly initialized 
 
 :ref:`bool<class_bool>` **is_library_open**\ (\ ) |const| :ref:`🔗<class_GDExtension_method_is_library_open>`
 
-Returns ``true`` if this extension's library has been opened.
+如果該擴充的庫已被打開，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

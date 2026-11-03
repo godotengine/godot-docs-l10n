@@ -7,18 +7,18 @@ OpenXRDpadBindingModifier
 
 **繼承：** :ref:`OpenXRIPBindingModifier<class_OpenXRIPBindingModifier>` **<** :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-The DPad binding modifier converts an axis input to a dpad output.
+十字鍵綁定修改器會將軸輸入轉換為十字鍵輸出。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The DPad binding modifier converts an axis input to a dpad output, emulating a DPad. New input paths for each dpad direction will be added to the interaction profile. When bound to actions the DPad emulation will be activated. You should **not** combine dpad inputs with normal inputs in the same action set for the same control, this will result in an error being returned when suggested bindings are submitted to OpenXR.
+十字鍵綁定修改器會將軸輸入轉換為十字鍵輸出，模擬十字鍵。互動設定中會新增十字鍵每個方向對應的輸入路徑，與動作綁定後就會啟用十字鍵模擬。\ **不應該**\ 在同一個控制項的同一動作集中將十字鍵輸入與普通輸入結合使用，這會導致在綁定提交給 OpenXR 時回傳錯誤。
 
-See `XR_EXT_dpad_binding <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_dpad_binding>`__ for in-depth details.
+詳見 `XR_EXT_dpad_binding <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_dpad_binding>`__\ 。
 
-\ **Note:** If the DPad binding modifier extension is enabled, all dpad binding paths will be available in the action map. Adding the modifier to an interaction profile allows you to further customize the behavior.
+\ **注意：**\ 如果啟用了十字鍵綁定修改器擴充，所有十字鍵綁定路徑都將在動作映射中可用。將修改器新增到互動設定可以進一步自訂行為。
 
 .. rst-class:: classref-reftable-group
 
@@ -68,7 +68,7 @@ See `XR_EXT_dpad_binding <https://registry.khronos.org/OpenXR/specs/1.1/html/xrs
 - |void| **set_action_set**\ (\ value\: :ref:`OpenXRActionSet<class_OpenXRActionSet>`\ )
 - :ref:`OpenXRActionSet<class_OpenXRActionSet>` **get_action_set**\ (\ )
 
-Action set for which this dpad binding modifier is active.
+十字鍵綁定修改器啟用的動作集。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Action set for which this dpad binding modifier is active.
 - |void| **set_center_region**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_center_region**\ (\ )
 
-Center region in which our center position of our dpad return ``true``.
+中心區域，十字鍵的中央位置在該區域中回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Center region in which our center position of our dpad return ``true``.
 - |void| **set_input_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_path**\ (\ )
 
-Input path for this dpad binding modifier.
+十字鍵綁定修改器的輸入路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -119,9 +119,9 @@ Input path for this dpad binding modifier.
 - |void| **set_is_sticky**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_sticky**\ (\ )
 
-If ``false``, when the joystick enters a new dpad zone this becomes ``true``.
+如果為 ``false``\ ，則搖桿進入新的十字鍵區域時變為 ``true``\ 。
 
-If ``true``, when the joystick remains in active dpad zone, this remains ``true`` even if we overlap with another zone.
+如果為 ``true``\ ，則搖桿保留在活動的十字鍵區域中時，即使與另一個區域重疊也仍然為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, when the joystick remains in active dpad zone, this remains ``true`
 - |void| **set_off_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_off_haptic**\ (\ )
 
-Haptic pulse to emit when the user releases the input.
+使用者松開輸入時發出的觸覺脈衝。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Haptic pulse to emit when the user releases the input.
 - |void| **set_on_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_on_haptic**\ (\ )
 
-Haptic pulse to emit when the user presses the input.
+使用者按下輸入時發出的觸覺脈衝。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Haptic pulse to emit when the user presses the input.
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-When our input value is equal or larger than this value, our dpad in that direction becomes ``true``. It stays ``true`` until it falls under the :ref:`threshold_released<class_OpenXRDpadBindingModifier_property_threshold_released>` value.
+輸入值等於或大於該值時，十字鍵在該方向上變為 ``true``\ 。它會保持為 ``true``\ ，直到輸入值低於 :ref:`threshold_released<class_OpenXRDpadBindingModifier_property_threshold_released>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ When our input value is equal or larger than this value, our dpad in that direct
 - |void| **set_threshold_released**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_released**\ (\ )
 
-When our input value falls below this, our output becomes ``false``.
+輸入值低於此值時，輸出變為 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ When our input value falls below this, our output becomes ``false``.
 - |void| **set_wedge_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wedge_angle**\ (\ )
 
-The angle of each wedge that identifies the 4 directions of the emulated dpad.
+每個楔形的角度，用於標識模擬十字鍵的四個方向。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

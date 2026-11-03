@@ -57,7 +57,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeIs_Function>`
 
 :ref:`Function<enum_VisualShaderNodeIs_Function>` **FUNC_IS_NAN** = ``1``
 
-Comparison with ``NaN`` (Not a Number; indicates invalid numeric results, such as division by zero).
+與 ``NaN`` 比較（不是一個數字；表示無效的數字結果，如除以 0）。
 
 .. _class_VisualShaderNodeIs_constant_FUNC_MAX:
 
@@ -87,7 +87,7 @@ Comparison with ``NaN`` (Not a Number; indicates invalid numeric results, such a
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeIs_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeIs_Function>` **get_function**\ (\ )
 
-The comparison function.
+比較函式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

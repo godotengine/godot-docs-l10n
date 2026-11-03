@@ -16,7 +16,7 @@ PackedDataContainerRef
 說明
 ----
 
-When packing nested containers using :ref:`PackedDataContainer<class_PackedDataContainer>`, they are recursively packed into **PackedDataContainerRef** (only applies to :ref:`Array<class_Array>` and :ref:`Dictionary<class_Dictionary>`). Their data can be retrieved the same way as from :ref:`PackedDataContainer<class_PackedDataContainer>`.
+使用 :ref:`PackedDataContainer<class_PackedDataContainer>` 打包巢狀容器時，會將其遞歸打包進 **PackedDataContainerRef**\ （僅適用於 :ref:`Array<class_Array>` 和 :ref:`Dictionary<class_Dictionary>`\ ）。取得資料的方法和 :ref:`PackedDataContainer<class_PackedDataContainer>` 相同。
 
 ::
 
@@ -30,7 +30,7 @@ When packing nested containers using :ref:`PackedDataContainer<class_PackedDataC
         else:
             print(element)
 
-Prints:
+輸出：
 
 .. code:: text
 

@@ -25,7 +25,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 - `Démo de visualiseur de spectre audio <https://godotengine.org/asset-library/asset/2762>`__
 

@@ -31,7 +31,7 @@ Tutoriales
 
 - :doc:`Solución de problemas de física <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `Demo de Ciudad de Camioness en 3D <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo de Ciudad de Camioness en 3D <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

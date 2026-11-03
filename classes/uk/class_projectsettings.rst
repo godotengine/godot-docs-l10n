@@ -12699,7 +12699,7 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>`
 
-Розмір атласу тіней, що використовується для вузлів :ref:`OmniLight3D<class_OmniLight3D>` та :ref:`SpotLight3D<class_SpotLight3D>`. Див. документацію [url=$DOCS_URL/tutorials/3d/lights_and_shadows.html#shadow-atlas]для отримання додаткової інформації.
+Розмір атласу тіней, що використовується для вузлів :ref:`OmniLight3D<class_OmniLight3D>` та :ref:`SpotLight3D<class_SpotLight3D>`. Докладнішу інформацію див. у `документації <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 

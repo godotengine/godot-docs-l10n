@@ -62,9 +62,9 @@ Descripciones de Propiedades
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterMP3_property_bar_beats>`
 
-The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+El número de pulsos dentro de un solo compás en la pista de audio. Esto solo es relevante para la música que desee utilizar la funcionalidad de música interactiva, no para los efectos de sonido.
 
-A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Se proporciona un editor más práctico para :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` en el diálogo **Configuración avanzada de importación**, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
 
 .. rst-class:: classref-item-separator
 
@@ -76,9 +76,9 @@ A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_beat_count>`
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+La duración de la pista de audio en pulsos. La duración real del archivo de audio puede ser mayor que lo indicado por esta propiedad. Esto solo es relevante para la música que desee utilizar la funcionalidad de música interactiva, no para los efectos de sonido.
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Se proporciona un editor más práctico para :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` en el diálogo **Configuración avanzada de importación**, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_bpm>`
 
-The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+El tempo de la pista de audio, medido en pulsos por minuto. Esto debería coincidir con el valor de BPM que se utilizó para componer la pista. Esto solo es relevante para la música que desee utilizar la funcionalidad de música interactiva, no para los efectos de sonido.
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Se proporciona un editor más práctico para :ref:`bpm<class_ResourceImporterMP3_property_bpm>` en el diálogo **Configuración avanzada de importación**, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` 
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterMP3_property_loop>`
 
-If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`.
+Si está habilitado, el audio comenzará a reproducirse desde el principio o desde :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>` cuando la reproducción termine, ya sea al llegar al final del audio o al final del último pulso, según la cantidad especificada en :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`.
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **Nota:** En :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, la señal :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` no se emitirá para el audio en bucle cuando llegue al final del archivo de audio, ya que el audio seguirá reproduciéndose indefinidamente.
 
 .. rst-class:: classref-item-separator
 

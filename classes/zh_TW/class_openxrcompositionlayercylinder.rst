@@ -9,14 +9,14 @@ OpenXRCompositionLayerCylinder
 
 **繼承：** :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An OpenXR composition layer that is rendered as an internal slice of a cylinder.
+作為圓柱體內部切片進行渲染的 OpenXR 合成層。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubViewport>` on an internal slice of a cylinder.
+OpenXR 合成層，允許在圓柱體的內部切片上渲染 :ref:`SubViewport<class_SubViewport>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -56,7 +56,7 @@ An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubV
 - |void| **set_aspect_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aspect_ratio**\ (\ )
 
-The aspect ratio of the slice. Used to set the height relative to the width.
+切片的長寬比。用於設定相對於寬度的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The aspect ratio of the slice. Used to set the height relative to the width.
 - |void| **set_central_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_central_angle**\ (\ )
 
-The central angle of the cylinder. Used to set the width.
+圓柱體的中心角。用於設定寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ The central angle of the cylinder. Used to set the width.
 - |void| **set_fallback_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fallback_segments**\ (\ )
 
-The number of segments to use in the fallback mesh.
+回退網格所使用的段數。
 
 .. rst-class:: classref-item-separator
 

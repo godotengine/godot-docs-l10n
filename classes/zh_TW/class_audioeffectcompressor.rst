@@ -7,26 +7,26 @@ AudioEffectCompressor
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a downward compressor audio effect to an audio bus.
+為音訊總線（audio bus）新增一個向下壓縮器（downward compressor）音訊效果。
 
-Allows control of the dynamic range via a volume threshold and timing controls.
+允許通過音量閾值和時間控制參數來調節動態範圍。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "compressor" decreases the volume of sounds when it exceeds a certain volume threshold level.
+“壓縮器”會在聲音超過一定音量閾值時降低聲音的音量。
 
-A compressor can have many uses in a mix:
+壓縮器在混音中可以有多種用途：
 
-- To compress the whole volume in the Master bus (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
+- 壓縮主總線上的整體音量（雖然 :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` 可能更好些）。
 
-- To ensure balance of voice audio clips.
+- 確保語音音訊片段的平衡。
 
-- To sidechain, using another bus as a trigger. This decreases the volume of the bus it is attached to, by using the volume from another audio bus for threshold detection. This technique is common in video game mixing to decrease the volume of music and SFX while voices are being heard. This effect is also known as "ducking".
+- 利用另一條總線作為觸發源進行側鏈處理。該操作通過借用另一條音訊總線的音量資料來進行閾值檢測，從而降低其所附加總線的音量。這種技術在電子遊戲混音中十分常見，常用於在語音出現時自動降低背景音樂和音效的音量。這種效果也被稱為“閃避”。
 
-- To accentuate transients by using a long attack, letting sounds exceed the volume threshold level for a short period before compressing them. This can be used to make SFX more punchy.
+- 通過設定較長的起音時間，從而突顯瞬態訊號；即允許聲音在被壓縮之前，短暫地超過音量閾值。這一技巧可用於增強音效的衝擊力。
 
 .. rst-class:: classref-introduction-group
 
@@ -35,7 +35,7 @@ A compressor can have many uses in a mix:
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +81,7 @@ A compressor can have many uses in a mix:
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-Compressor's reaction time when the audio exceeds the volume threshold level, in microseconds. Value can range from 20 to 2000.
+當音訊音量超過閾值電平時，壓縮器的響應時間，單位為微秒。取值範圍為 20 至 2000。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Compressor's reaction time when the audio exceeds the volume threshold level, in
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain of the audio signal, in dB. Value can range from -20 to 20.
+音訊訊號的增益，單位為分貝。取值範圍為 -20 至 20。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Gain of the audio signal, in dB. Value can range from -20 to 20.
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-Balance between the original audio and the compressed audio. Value can range from 0 (totally dry) to 1 (totally wet).
+原始音訊與壓縮音訊之間的平衡。取值範圍為 0（完全乾聲）至 1（完全濕聲）。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Balance between the original audio and the compressed audio. Value can range fro
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-Amount of compression applied to the audio once it passes the volume threshold level. The higher the ratio, the stronger the compression applied to audio signals that pass the volume threshold level. Value can range from 1 to 48.
+當音訊超過音量閾值電平時，所應用的壓縮量。該比率越高，對超過音量閾值電平的音訊訊號所應用的壓縮強度就越大。取值範圍為 1 到 48。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Amount of compression applied to the audio once it passes the volume threshold l
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-Compressor's delay time to stop decreasing the volume after the it falls below the volume threshold level, in milliseconds. Value can range from 20 to 2000.
+壓縮器在音量降至音量閾值電平以下後，停止降低音量的延遲時間，單位為毫秒。取值範圍為 20 到 2000。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Compressor's delay time to stop decreasing the volume after the it falls below t
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-Audio bus to use for the volume threshold detection.
+用於音量閾值檢測的音訊總線。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Audio bus to use for the volume threshold detection.
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-The volume level above which compression is applied to the audio, in dB. Value can range from -60 to 0.
+超過該音量電平，壓縮將套用至音訊，單位為分貝。取值範圍為 -60 至 0。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -124,7 +124,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_INHERIT** = ``0``
 
-The last partially filled row or column will wrap aligned to the previous row or column in accordance with :ref:`alignment<class_FlowContainer_property_alignment>`.
+最後部分填充的行或列將按照 :ref:`alignment<class_FlowContainer_property_alignment>` 與前一行或前一列對齊。
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN:
 
@@ -132,7 +132,7 @@ The last partially filled row or column will wrap aligned to the previous row or
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_BEGIN** = ``1``
 
-The last partially filled row or column will wrap aligned to the beginning of the previous row or column.
+最後部分填充的行或列將會與前一行或前一列的開頭對齊。
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER:
 
@@ -140,7 +140,7 @@ The last partially filled row or column will wrap aligned to the beginning of th
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_CENTER** = ``2``
 
-The last partially filled row or column will wrap aligned to the center of the previous row or column.
+最後部分填充的行或列將會與前一行或前一列的中心對齊。
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END:
 
@@ -148,7 +148,7 @@ The last partially filled row or column will wrap aligned to the center of the p
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_END** = ``3``
 
-The last partially filled row or column will wrap aligned to the end of the previous row or column.
+最後部分填充的行或列將會與前一行或前一列的末尾對齊。
 
 .. rst-class:: classref-section-separator
 
@@ -187,7 +187,7 @@ The last partially filled row or column will wrap aligned to the end of the prev
 - |void| **set_last_wrap_alignment**\ (\ value\: :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>`\ )
 - :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **get_last_wrap_alignment**\ (\ )
 
-The wrap behavior of the last, partially filled row or column (must be one of :ref:`LAST_WRAP_ALIGNMENT_INHERIT<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_INHERIT>`, :ref:`LAST_WRAP_ALIGNMENT_BEGIN<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN>`, :ref:`LAST_WRAP_ALIGNMENT_CENTER<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER>`, or :ref:`LAST_WRAP_ALIGNMENT_END<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END>`).
+最後一個未填滿的行/列的對齊方式（必須是 :ref:`LAST_WRAP_ALIGNMENT_INHERIT<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_INHERIT>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_BEGIN<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_CENTER<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_END<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END>` 之一）。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ The wrap behavior of the last, partially filled row or column (must be one of :r
 - |void| **set_reverse_fill**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_reverse_fill**\ (\ )
 
-If ``true``, reverses fill direction. Horizontal **FlowContainer**\ s will fill rows bottom to top, vertical **FlowContainer**\ s will fill columns right to left.
+如果為 ``true`` ，則翻轉填充方向。水平的 **FlowContainer** 會從下往上一行行填充，垂直的 **FlowContainer** 會從右往左一列列填充。
 
-When using a vertical **FlowContainer** with a right to left :ref:`Control.layout_direction<class_Control_property_layout_direction>`, columns will fill left to right instead.
+如果使用的是垂直的 **FlowContainer** 和從右至左的 :ref:`Control.layout_direction<class_Control_property_layout_direction>`\ ，則會從左往右一列列填充。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ When using a vertical **FlowContainer** with a right to left :ref:`Control.layou
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_FlowContainer_theme_constant_h_separation>`
 
-The horizontal separation of child nodes.
+子節點的水平分隔量。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ The horizontal separation of child nodes.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_FlowContainer_theme_constant_v_separation>`
 
-The vertical separation of child nodes.
+子節點的垂直分隔量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

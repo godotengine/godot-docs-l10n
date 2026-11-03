@@ -100,7 +100,7 @@ enum **ShadowFilter**: :ref:`🔗<enum_Light2D_ShadowFilter>`
 
 :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **SHADOW_FILTER_NONE** = ``0``
 
-不對陰影貼圖套用篩選。提供較硬的陰影邊緣，算繪速度最快。見 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
+不對陰影貼圖套用篩選。提供較硬的陰影邊緣，渲染速度最快。見 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
 
 .. _class_Light2D_constant_SHADOW_FILTER_PCF5:
 
@@ -108,7 +108,7 @@ enum **ShadowFilter**: :ref:`🔗<enum_Light2D_ShadowFilter>`
 
 :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **SHADOW_FILTER_PCF5** = ``1``
 
-對陰影貼圖使用百分比接近篩選（5 個樣本）。與硬陰影算繪相比較慢。見 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
+對陰影貼圖使用百分比接近篩選（5 個樣本）。與硬陰影渲染相比較慢。見 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
 
 .. _class_Light2D_constant_SHADOW_FILTER_PCF13:
 
@@ -172,7 +172,7 @@ enum **BlendMode**: :ref:`🔗<enum_Light2D_BlendMode>`
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_Light2D_BlendMode>`\ )
 - :ref:`BlendMode<enum_Light2D_BlendMode>` **get_blend_mode**\ (\ )
 
-The Light2D's blend mode.
+該 Light2D 的混合模式。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Light2D 的能量值。該值越大，光線就越強。
 - |void| **set_shadow_filter**\ (\ value\: :ref:`ShadowFilter<enum_Light2D_ShadowFilter>`\ )
 - :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **get_shadow_filter**\ (\ )
 
-Shadow filter type.
+陰影過濾型別。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Shadow filter type.
 - |void| **set_shadow_smooth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shadow_smooth**\ (\ )
 
-陰影的平滑值。更高的值將導致更柔和的陰影，代價是在陰影算繪中可能出現可見的條紋。只有在 :ref:`shadow_filter<class_Light2D_property_shadow_filter>` 為 :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` 或 :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>` 時，\ :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` 才有效果。
+陰影的平滑值。更高的值將導致更柔和的陰影，代價是在陰影渲染中可能出現可見的條紋。只有在 :ref:`shadow_filter<class_Light2D_property_shadow_filter>` 為 :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` 或 :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>` 時，\ :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` 才有效果。
 
 .. rst-class:: classref-item-separator
 

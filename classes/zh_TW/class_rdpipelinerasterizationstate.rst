@@ -85,7 +85,7 @@ RDPipelineRasterizationState
 - |void| **set_depth_bias_clamp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_clamp**\ (\ )
 
-A limit for how much each depth value can be offset. If negative, it serves as a minimum value, but if positive, it serves as a maximum value.
+每個深度值可以偏移多少的限制。如果為負，則充當最小值；如果為正，則充當最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ A limit for how much each depth value can be offset. If negative, it serves as a
 - |void| **set_depth_bias_constant_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_constant_factor**\ (\ )
 
-A constant offset added to each depth value. Applied after :ref:`depth_bias_slope_factor<class_RDPipelineRasterizationState_property_depth_bias_slope_factor>`.
+新增到每個深度值的恆定偏移量。在 :ref:`depth_bias_slope_factor<class_RDPipelineRasterizationState_property_depth_bias_slope_factor>` 之後應用。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ A constant offset added to each depth value. Applied after :ref:`depth_bias_slop
 - |void| **set_depth_bias_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_depth_bias_enabled**\ (\ )
 
-If ``true``, each generated depth value will by offset by some amount. The specific amount is generated per polygon based on the values of :ref:`depth_bias_slope_factor<class_RDPipelineRasterizationState_property_depth_bias_slope_factor>` and :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
+如果為 ``true``\ ，每個生成的深度值將偏移一定量。它是基於 :ref:`depth_bias_slope_factor<class_RDPipelineRasterizationState_property_depth_bias_slope_factor>` 和 :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>` 的值生成每個多邊形的特定量。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ If ``true``, each generated depth value will by offset by some amount. The speci
 - |void| **set_depth_bias_slope_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_slope_factor**\ (\ )
 
-A constant scale applied to the slope of each polygons' depth. Applied before :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
+套用至每個多邊形深度斜率的恆定縮放。在 :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>` 之前應用。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ A constant scale applied to the slope of each polygons' depth. Applied before :r
 - |void| **set_enable_depth_clamp**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_depth_clamp**\ (\ )
 
-If ``true``, clamps depth values according to the minimum and maximum depth of the associated viewport.
+如果為 ``true``\ ，則根據關聯視埠的最小和最大深度鉗制深度值。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ If ``true``, clamps depth values according to the minimum and maximum depth of t
 - |void| **set_patch_control_points**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_patch_control_points**\ (\ )
 
-啟用曲面細分繪製面片時，使用的控制點的數量。值越高，品質越高，但是性能開銷也越高。
+啟用曲面細分繪製面片時，使用的控制點的數量。值越高，品質越高，但是效能開銷也越高。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ If ``true``, clamps depth values according to the minimum and maximum depth of t
 - |void| **set_wireframe**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_wireframe**\ (\ )
 
-如果為 ``true``\ ，則會為三角形進行線框算繪，不進行平面或紋理算繪。
+如果為 ``true``\ ，則會為三角形進行線框渲染，不進行平面或紋理渲染。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

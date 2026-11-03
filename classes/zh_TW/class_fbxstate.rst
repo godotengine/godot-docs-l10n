@@ -14,7 +14,7 @@ FBXState
 說明
 ----
 
-The FBXState handles the state data imported from FBX files.
+FBXState 處理從 FBX 檔案匯入的狀態資料。
 
 .. rst-class:: classref-reftable-group
 
@@ -48,7 +48,7 @@ The FBXState handles the state data imported from FBX files.
 - |void| **set_allow_geometry_helper_nodes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_geometry_helper_nodes**\ (\ )
 
-If ``true``, the import process used auxiliary nodes called geometry helper nodes. These nodes help preserve the pivots and transformations of the original 3D model during import.
+如果為 ``true``\ ，則匯入過程使用被稱為幾何輔助節點的輔助節點。這些節點有助於在匯入過程中保留原始 3D 模型的樞軸和變換。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

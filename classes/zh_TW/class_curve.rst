@@ -14,9 +14,9 @@ Curve
 說明
 ----
 
-This resource describes a mathematical curve by defining a set of points and tangents at each point. By default, it ranges between ``0`` and ``1`` on the X and Y axes, but these ranges can be changed.
+該資源通過定義一組點和每個點的切線來描述數學曲線。預設情況下，X 軸和 Y 軸的範圍都在 ``0`` 到 ``1`` 之間，但是範圍可以調整。
 
-Please note that many resources and nodes assume they are given *unit curves*. A unit curve is a curve whose domain (the X axis) is between ``0`` and ``1``. Some examples of unit curve usage are :ref:`CPUParticles2D.angle_curve<class_CPUParticles2D_property_angle_curve>` and :ref:`Line2D.width_curve<class_Line2D_property_width_curve>`.
+請注意，許多資源和節點會假設使用者設定的是\ *單位曲線*\ 。單位曲線即域（X 軸）在 ``0`` 到 ``1`` 之間的曲線。例如 :ref:`CPUParticles2D.angle_curve<class_CPUParticles2D_property_angle_curve>` 和 :ref:`Line2D.width_curve<class_Line2D_property_width_curve>` 用的就是單位曲線。
 
 .. rst-class:: classref-reftable-group
 
@@ -115,7 +115,7 @@ Please note that many resources and nodes assume they are given *unit curves*. A
 
 **domain_changed**\ (\ ) :ref:`🔗<class_Curve_signal_domain_changed>`
 
-Emitted when :ref:`max_domain<class_Curve_property_max_domain>` or :ref:`min_domain<class_Curve_property_min_domain>` is changed.
+更改 :ref:`max_domain<class_Curve_property_max_domain>` 或 :ref:`min_domain<class_Curve_property_min_domain>` 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ enum **TangentMode**: :ref:`🔗<enum_Curve_TangentMode>`
 - |void| **set_max_domain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_domain**\ (\ )
 
-The maximum domain (x-coordinate) that points can have.
+點能夠達到的最大域（X 座標）。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ The maximum domain (x-coordinate) that points can have.
 - |void| **set_max_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_value**\ (\ )
 
-The maximum value (y-coordinate) that points can have. Tangents can cause higher values between points.
+點能夠達到的最大值（Y 座標）。切線可能導致兩點之間存在更大的值。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ The maximum value (y-coordinate) that points can have. Tangents can cause higher
 - |void| **set_min_domain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_domain**\ (\ )
 
-The minimum domain (x-coordinate) that points can have.
+點能夠達到的最小域（X 座標）。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ The minimum domain (x-coordinate) that points can have.
 - |void| **set_min_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_value**\ (\ )
 
-The minimum value (y-coordinate) that points can have. Tangents can cause lower values between points.
+點能夠達到的最小值（Y 座標）。切線可能導致兩點之間存在更小的值。
 
 .. rst-class:: classref-item-separator
 
@@ -285,9 +285,9 @@ The minimum value (y-coordinate) that points can have. Tangents can cause lower 
 
 :ref:`int<class_int>` **point_{index}/left_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/left_mode>`
 
-The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+位於 ``index`` 處那個點的左側 :ref:`TangentMode<enum_Curve_TangentMode>`\ （切線模式）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -299,9 +299,9 @@ The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/left_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/left_tangent>`
 
-The left tangent angle (in degrees) for the point at ``index``.
+位於 ``index`` 處那個點的左側切線角度（以度為單位）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ The left tangent angle (in degrees) for the point at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve_property_point_{index}/position>`
 
-The position of the point at ``index``.
+位於 ``index`` 處那個點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -327,9 +327,9 @@ The position of the point at ``index``.
 
 :ref:`int<class_int>` **point_{index}/right_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/right_mode>`
 
-The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+“位於 ``index`` 處那個點的右側 :ref:`TangentMode<enum_Curve_TangentMode>`\ （切線模式）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/right_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/right_tangent>`
 
-The right tangent angle (in degrees) for the point at ``index``.
+位於 ``index`` 處那個點的右側切線角度（以度為單位）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -408,7 +408,7 @@ The right tangent angle (in degrees) for the point at ``index``.
 
 :ref:`float<class_float>` **get_domain_range**\ (\ ) |const| :ref:`🔗<class_Curve_method_get_domain_range>`
 
-Returns the difference between :ref:`min_domain<class_Curve_property_min_domain>` and :ref:`max_domain<class_Curve_property_max_domain>`.
+回傳 :ref:`min_domain<class_Curve_property_min_domain>` 和 :ref:`max_domain<class_Curve_property_max_domain>` 的差。
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Returns the difference between :ref:`min_domain<class_Curve_property_min_domain>
 
 :ref:`float<class_float>` **get_value_range**\ (\ ) |const| :ref:`🔗<class_Curve_method_get_value_range>`
 
-Returns the difference between :ref:`min_value<class_Curve_property_min_value>` and :ref:`max_value<class_Curve_property_max_value>`.
+回傳 :ref:`min_value<class_Curve_property_min_value>` 和 :ref:`max_value<class_Curve_property_max_value>` 的差。
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ Returns the difference between :ref:`min_value<class_Curve_property_min_value>` 
 
 :ref:`int<class_int>` **set_point_offset**\ (\ index\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Curve_method_set_point_offset>`
 
-Assigns the horizontal position ``offset`` to the point at ``index``.
+將水平位置 ``offset`` 分配給 ``index`` 處的點。
 
 .. rst-class:: classref-item-separator
 

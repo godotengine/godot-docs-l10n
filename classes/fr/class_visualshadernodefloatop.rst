@@ -81,7 +81,7 @@ Divise deux nombres en utilisant ``a / b``.
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MOD** = ``4``
 
-Calculates the remainder of two numbers. Translates to ``mod(a, b)`` in the Godot Shader Language.
+Calcule le reste de deux nombres. Sera traduit en ``mod(a, b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_POW:
 
@@ -89,7 +89,7 @@ Calculates the remainder of two numbers. Translates to ``mod(a, b)`` in the Godo
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_POW** = ``5``
 
-Raises the ``a`` to the power of ``b``. Translates to ``pow(a, b)`` in the Godot Shader Language.
+Élève ``a`` à la puissance ``b``. Sera traduit en ``pow(a,b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MAX:
 
@@ -97,7 +97,7 @@ Raises the ``a`` to the power of ``b``. Translates to ``pow(a, b)`` in the Godot
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MAX** = ``6``
 
-Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.
+Renvoie le plus grand nombre entre deux nombres. Sera traduit en ``max(a,b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MIN:
 
@@ -105,7 +105,7 @@ Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Sha
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MIN** = ``7``
 
-Returns the lesser of two numbers. Translates to ``min(a, b)`` in the Godot Shader Language.
+Renvoie le plus petit nombre entre deux nombres. Sera traduit en ``min(a,b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_ATAN2:
 
@@ -113,7 +113,7 @@ Returns the lesser of two numbers. Translates to ``min(a, b)`` in the Godot Shad
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_ATAN2** = ``8``
 
-Returns the arc-tangent of the parameters. Translates to ``atan(a, b)`` in the Godot Shader Language.
+Renvoie l'arc-tangente des paramètres. Sera traduit en ``atan(a,b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_STEP:
 

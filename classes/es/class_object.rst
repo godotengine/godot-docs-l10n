@@ -1746,9 +1746,9 @@ If ``value`` is ``null``, the entry is removed. This is the equivalent of using 
 
 |void| **set_script**\ (\ script\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_script>`
 
-Attaches ``script`` to the object, and instantiates it. As a result, the script's :ref:`_init()<class_Object_private_method__init>` is called. A :ref:`Script<class_Script>` is used to extend the object's functionality.
+Asocia ``script`` al objeto y lo instancia. Como resultado, se llama al método :ref:`_init()<class_Object_private_method__init>` del script. Un :ref:`Script<class_Script>` se utiliza para ampliar la funcionalidad del objeto.
 
-If a script already exists, its instance is detached, and its property values and state are lost. Built-in property values are still kept.
+Si ya hay un script asociado, su instancia se desvincula y se pierden sus valores de propiedad y su estado. Los valores de las propiedades integradas se conservan.
 
 .. rst-class:: classref-item-separator
 

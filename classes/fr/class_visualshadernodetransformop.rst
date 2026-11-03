@@ -14,7 +14,7 @@ A :ref:`Transform3D<class_Transform3D>` operator to be used within the visual sh
 Description
 -----------
 
-Applies :ref:`operator<class_VisualShaderNodeTransformOp_property_operator>` to two transform (4×4 matrices) inputs.
+Applique :ref:`operator<class_VisualShaderNodeTransformOp_property_operator>` aux deux entrées de transformation (matrices 4×4).
 
 .. rst-class:: classref-reftable-group
 
@@ -89,7 +89,7 @@ Ajoute deux transforms.
 
 :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **OP_A_MINUS_B** = ``5``
 
-Subtracts the transform ``a`` from the transform ``b``.
+Soustrait la transformation ``a`` à la transformation ``b``.
 
 .. _class_VisualShaderNodeTransformOp_constant_OP_B_MINUS_A:
 
@@ -97,7 +97,7 @@ Subtracts the transform ``a`` from the transform ``b``.
 
 :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **OP_B_MINUS_A** = ``6``
 
-Subtracts the transform ``b`` from the transform ``a``.
+Soustrait la transformation ``b`` à la transformation ``a``.
 
 .. _class_VisualShaderNodeTransformOp_constant_OP_A_DIV_B:
 
@@ -105,7 +105,7 @@ Subtracts the transform ``b`` from the transform ``a``.
 
 :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **OP_A_DIV_B** = ``7``
 
-Divides the transform ``a`` by the transform ``b``.
+Divise la transformation ``a`` par la transformation ``b``.
 
 .. _class_VisualShaderNodeTransformOp_constant_OP_B_DIV_A:
 
@@ -113,7 +113,7 @@ Divides the transform ``a`` by the transform ``b``.
 
 :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **OP_B_DIV_A** = ``8``
 
-Divides the transform ``b`` by the transform ``a``.
+Divise la transformation ``b`` par la transformation ``a``.
 
 .. _class_VisualShaderNodeTransformOp_constant_OP_MAX:
 
@@ -143,7 +143,7 @@ Descriptions des propriétés
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **get_operator**\ (\ )
 
-The type of the operation to be performed on the transforms.
+Le type de l'opération à effectuer sur les transformations.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

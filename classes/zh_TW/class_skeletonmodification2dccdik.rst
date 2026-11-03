@@ -245,7 +245,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`, bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_bone_index>`
 
-設定位於 ``joint_idx`` 的 CCDIK 關節的骨骼索引 ``joint_idx``\ 。可能時，還會根據所連結的骨架提供的資訊來更新 CCDIK 關節的 ``bone2d_node``\ 。
+設定位於 ``joint_idx`` 的 CCDIK 關節的骨骼索引 ``bone_idx``\ 。可能時，還會根據所連結的骨架提供的資訊來更新 CCDIK 關節的 ``bone2d_node``\ 。
 
 .. rst-class:: classref-item-separator
 

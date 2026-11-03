@@ -102,7 +102,7 @@ enum **ShadowCastingSetting**: :ref:`🔗<enum_GeometryInstance3D_ShadowCastingS
 
 :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_OFF** = ``0``
 
-不會投射任何陰影。使用該選項，可提高不太可能投射明顯陰影的小型幾何體（例如碎片）的性能。
+不會投射任何陰影。使用該選項，可提高不太可能投射明顯陰影的小型幾何體（例如碎片）的效能。
 
 .. _class_GeometryInstance3D_constant_SHADOW_CASTING_SETTING_ON:
 
@@ -112,7 +112,7 @@ enum **ShadowCastingSetting**: :ref:`🔗<enum_GeometryInstance3D_ShadowCastingS
 
 將從 GeometryInstance3D 中的所有可見面投射陰影。
 
-將考慮剔除，因此在陰影投射時，不會考慮那些不會被算繪的面。
+將考慮剔除，因此在陰影投射時，不會考慮那些不會被渲染的面。
 
 .. _class_GeometryInstance3D_constant_SHADOW_CASTING_SETTING_DOUBLE_SIDED:
 
@@ -150,7 +150,7 @@ enum **GIMode**: :ref:`🔗<enum_GeometryInstance3D_GIMode>`
 
 :ref:`GIMode<enum_GeometryInstance3D_GIMode>` **GI_MODE_DISABLED** = ``0``
 
-Disabled global illumination mode. Use for dynamic objects that do not contribute to global illumination (such as characters). When using :ref:`VoxelGI<class_VoxelGI>` and SDFGI, the geometry will *receive* indirect lighting and reflections but the geometry will not be considered in GI baking.
+停用全域照明模式。用於對全域照明沒有貢獻的動態物件（例如角色）。使用 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI 時，幾何體將\ *接收*\ 間接照明和反射，但在 GI 烘焙中不會考慮幾何體。
 
 .. _class_GeometryInstance3D_constant_GI_MODE_STATIC:
 
@@ -166,7 +166,7 @@ Disabled global illumination mode. Use for dynamic objects that do not contribut
 
 :ref:`GIMode<enum_GeometryInstance3D_GIMode>` **GI_MODE_DYNAMIC** = ``2``
 
-Dynamic global illumination mode. Use for dynamic objects that contribute to global illumination. This GI mode is only effective when using :ref:`VoxelGI<class_VoxelGI>`, but it has a higher performance impact than :ref:`GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>`. When using other GI methods, this will act the same as :ref:`GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>`. When using :ref:`LightmapGI<class_LightmapGI>`, the object will receive indirect lighting using lightmap probes instead of using the baked lightmap texture.
+動態全域照明模式。用於有助於全域照明的動態物件。這種 GI 模式只有在使用 :ref:`VoxelGI<class_VoxelGI>` 時才有效，但它對效能的影響，比 :ref:`GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` 更高。當使用其他 GI 方法時，它的作用與 :ref:`GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>` 相同。使用 :ref:`LightmapGI<class_LightmapGI>` 時，物件將使用光照貼圖探針接收間接光照，而不是使用烘焙的光照貼圖紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ enum **VisibilityRangeFadeMode**: :ref:`🔗<enum_GeometryInstance3D_VisibilityR
 
 :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_DISABLED** = ``0``
 
-不會自行淡化，也不會淡化其可見性依賴項，而是使用滯後。這是手動 LOD 的最快方法，但它可能會導致明顯的 LOD 過渡，具體取決於 LOD 網格的創作方式。有關更多信息，請參閱 :ref:`visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`\ 。
+不會自行淡化，也不會淡化其可見性依賴項，而是使用滯後。這是手動 LOD 的最快方法，但它可能會導致明顯的 LOD 過渡，具體取決於 LOD 網格的創作方式。有關更多資訊，請參閱 :ref:`visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`\ 。
 
 .. _class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_SELF:
 
@@ -252,9 +252,9 @@ enum **VisibilityRangeFadeMode**: :ref:`🔗<enum_GeometryInstance3D_VisibilityR
 
 :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_SELF** = ``1``
 
-Will fade-out itself when reaching the limits of its own visibility range. This is slower than :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>`, but it can provide smoother transitions. The fading range is determined by :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>` and :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`.
+當達到自身可見範圍的極限時，會自行淡出。這比 :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` 慢，但它可以提供更平滑的過渡。淡出範圍由 :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>` 和 :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>` 決定。
 
-\ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` but with hysteresis disabled.
+\ **注意：**\ 僅支援使用 Forward+ 渲染方法。使用 Mobile 或 Compatibility 渲染方法時，該模式與 :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` 類似，但會停用遲滯。
 
 .. _class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DEPENDENCIES:
 
@@ -262,9 +262,9 @@ Will fade-out itself when reaching the limits of its own visibility range. This 
 
 :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_DEPENDENCIES** = ``2``
 
-Will fade-in its visibility dependencies (see :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`) when reaching the limits of its own visibility range. This is slower than :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>`, but it can provide smoother transitions. The fading range is determined by :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>` and :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`.
+當達到其自身可見性範圍的限制時，將淡入其可見性相依項目（見 :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`\ ）。這比 :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` 慢，但它可以提供更平滑的過渡。淡出範圍由 :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>` 和 :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>` 決定。
 
-\ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` but with hysteresis disabled.
+\ **注意：**\ 僅支援使用 Forward+ 渲染方法。使用 Mobile 或 Compatibility 渲染方法時，該模式與 :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` 類似，但會停用遲滯。
 
 .. rst-class:: classref-section-separator
 
@@ -286,7 +286,7 @@ Will fade-in its visibility dependencies (see :ref:`Node3D.visibility_parent<cla
 - |void| **set_cast_shadows_setting**\ (\ value\: :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>`\ )
 - :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **get_cast_shadows_setting**\ (\ )
 
-The mode used to cast shadows from this instance.
+用於從該實例投射陰影的模式。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ The mode used to cast shadows from this instance.
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive :ref:`AABB<class_AABB>` recalculation that happens when a skeleton is used with a :ref:`MeshInstance3D<class_MeshInstance3D>` or to have precise control over the :ref:`MeshInstance3D<class_MeshInstance3D>`'s bounding box. To use the default AABB, set value to an :ref:`AABB<class_AABB>` with all fields set to ``0.0``. To avoid frustum culling, set :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` to a very large AABB that covers your entire game world such as ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``. To disable all forms of culling (including occlusion and layer culling), call :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>` on the **GeometryInstance3D**'s :ref:`RID<class_RID>`.
+使用自訂的包圍盒（bounding box）來覆蓋該節點的預設包圍盒。這可以用來避免當骨架（skeleton）與 :ref:`MeshInstance3D<class_MeshInstance3D>` 一起使用時發生的高開銷 :ref:`AABB<class_AABB>` 重計算，或者讓你能精准控制 :ref:`MeshInstance3D<class_MeshInstance3D>` 的包圍盒。如果想恢復使用預設的 AABB，只需將值設定為一個所有欄位都為 ``0.0`` 的 :ref:`AABB<class_AABB>` 即可。如果想要避免視錐體剔除（frustum culling），可以將 :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` 設定為一個非常大的 AABB 來覆蓋你的整個遊戲世界，比如 ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``\ 。如果想停用所有形式的剔除（包括遮擋剔除和層級剔除），請對 **GeometryInstance3D** 的 :ref:`RID<class_RID>` 呼叫 :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Overrides the bounding box of this node with a custom one. This can be used to a
 
 **已棄用：** Use :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_property_gi_lightmap_texel_scale>` instead.
 
-The texel density to use for lightmapping in :ref:`LightmapGI<class_LightmapGI>`.
+:ref:`LightmapGI<class_LightmapGI>` 進行光照貼圖時使用的紋素密度。
 
 .. rst-class:: classref-item-separator
 
@@ -356,9 +356,9 @@ The texel density to use for lightmapping in :ref:`LightmapGI<class_LightmapGI>`
 - |void| **set_lightmap_texel_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lightmap_texel_scale**\ (\ )
 
-The texel density to use for lightmapping in :ref:`LightmapGI<class_LightmapGI>`. Greater scale values provide higher resolution in the lightmap, which can result in sharper shadows for lights that have both direct and indirect light baked. However, greater scale values will also increase the space taken by the mesh in the lightmap texture, which increases the memory, storage, and bake time requirements. When using a single mesh at different scales, consider adjusting this value to keep the lightmap texel density consistent across meshes.
+:ref:`LightmapGI<class_LightmapGI>` 中用於光照貼圖的紋素密度。較大的縮放值可在光照貼圖中提供更高的解析度，如果燈光同時烘焙了直接光和間接光，陰影就會更加銳利。不過較大的縮放值也會增加網格在光照貼圖紋理中佔用的空間，導致所需記憶體、儲存空間、烘焙時間的增加。在不同縮放下使用同一個網格時，請考慮調整該值，讓光照貼圖紋素密度在不同網格之間保持一致。
 
-For example, doubling :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_property_gi_lightmap_texel_scale>` doubles the lightmap texture resolution for this object *on each axis*, so it will *quadruple* the texel count.
+例如，將 :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_property_gi_lightmap_texel_scale>` 翻倍會讓物體的光照貼圖紋理\ *在每個方向上*\ 的解析度都翻倍，導致紋素數量\ *變為原來的四倍*\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ For example, doubling :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_pro
 
 用於整個幾何體的全域照明模式。為避免結果不一致，請在遊戲過程中，使用與網格用途相配對的模式（靜態/動態）。
 
-\ **注意：**\ 燈光的烘焙模式，也會影響全域照明算繪。請參閱 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`\ 。
+\ **注意：**\ 燈光的烘焙模式，也會影響全域照明渲染。請參閱 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ For example, doubling :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_pro
 - |void| **set_ignore_occlusion_culling**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_occlusion_culling**\ (\ )
 
-如果為 ``true``\ ，則禁用這個實例的遮擋剔除。可用於即便開啟遮擋剔除也必須算繪的小工具。
+如果為 ``true``\ ，則停用這個實例的遮擋剔除。可用於即便開啟遮擋剔除也必須渲染的小工具。
 
 \ **注意：**\ :ref:`ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>` 不會影響視錐剔除（物件因為相機的角度而不可見時觸發）。要避免視錐剔除，請將 :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` 設定為很大的 AABB，覆蓋住整個遊戲世界，例如 ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``\ 。
 
@@ -434,7 +434,7 @@ For example, doubling :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_pro
 
 整個幾何體的材質覆蓋層。
 
-如果一個材質被分配給這個屬性，它將會被算繪在所有表面的任何其他活動材質之上。
+如果一個材質被分配給這個屬性，它將會被渲染在所有表面的任何其他活動材質之上。
 
 .. rst-class:: classref-item-separator
 
@@ -470,13 +470,13 @@ For example, doubling :ref:`gi_lightmap_texel_scale<class_GeometryInstance3D_pro
 - |void| **set_transparency**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_transparency**\ (\ )
 
-The transparency applied to the whole geometry (as a multiplier of the materials' existing transparency). ``0.0`` is fully opaque, while ``1.0`` is fully transparent. Values greater than ``0.0`` (exclusive) will force the geometry's materials to go through the transparent pipeline, which is slower to render and can exhibit rendering issues due to incorrect transparency sorting. However, unlike using a transparent material, setting :ref:`transparency<class_GeometryInstance3D_property_transparency>` to a value greater than ``0.0`` (exclusive) will *not* disable shadow rendering.
+套用至整個幾何體的透明度（作為材質現有透明度的乘數）。\ ``0.0`` 是完全不透明的，而 ``1.0`` 是完全透明的。大於 ``0.0``\ （不含）的值將強制幾何體的材質通過透明管道，這會導致渲染速度變慢，並且可能會因不正確的透明度排序而出現渲染問題。但是，與使用透明材質不同的是，將 :ref:`transparency<class_GeometryInstance3D_property_transparency>` 設定為大於 ``0.0``\ （不含）的值並\ *不會*\ 停用陰影渲染。
 
-In spatial shaders, ``1.0 - transparency`` is set as the default value of the ``ALPHA`` built-in.
+在空間著色器中，\ ``1.0 - transparency`` 被設定為內建 ``ALPHA`` 的預設值。
 
-\ **Note:** :ref:`transparency<class_GeometryInstance3D_property_transparency>` is clamped between ``0.0`` and ``1.0``, so this property cannot be used to make transparent materials more opaque than they originally are.
+\ **注意：**\ :ref:`transparency<class_GeometryInstance3D_property_transparency>` 被鉗制在 ``0.0`` 和 ``1.0`` 之間，所以這個屬性不能被用來使透明材質變得比原來更加不透明。
 
-\ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, :ref:`transparency<class_GeometryInstance3D_property_transparency>` is ignored and is considered as always being ``0.0``.
+\ **注意：**\ 僅在使用 Forward+ 渲染方法時受支援。使用 Mobile 或 Compatibility 渲染方法時，\ :ref:`transparency<class_GeometryInstance3D_property_transparency>` 將被忽略並被視為始終為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ In spatial shaders, ``1.0 - transparency`` is set as the default value of the ``
 - |void| **set_visibility_range_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visibility_range_begin**\ (\ )
 
-GeometryInstance3D 可見的起始距離，同時考慮 :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>`\ 。預設值 0 用於禁用範圍檢查。
+GeometryInstance3D 可見的起始距離，同時考慮 :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>`\ 。預設值 0 用於停用範圍檢查。
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ GeometryInstance3D 可見的起始距離，同時考慮 :ref:`visibility_range_b
 - |void| **set_visibility_range_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visibility_range_end**\ (\ )
 
-GeometryInstance3D 將被隱藏的距離，同時考慮 :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`\ 。預設值 0 用於禁用範圍檢查。
+GeometryInstance3D 將被隱藏的距離，同時考慮 :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`\ 。預設值 0 用於停用範圍檢查。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ GeometryInstance3D 將被隱藏的距離，同時考慮 :ref:`visibility_range_e
 - |void| **set_visibility_range_fade_mode**\ (\ value\: :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>`\ )
 - :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **get_visibility_range_fade_mode**\ (\ )
 
-Controls which instances will be faded when approaching the limits of the visibility range.
+控制在接近可見範圍的限制時，哪些實例將被淡化。
 
 .. rst-class:: classref-section-separator
 
@@ -582,7 +582,7 @@ Controls which instances will be faded when approaching the limits of the visibi
 
 :ref:`Variant<class_Variant>` **get_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_GeometryInstance3D_method_get_instance_shader_parameter>`
 
-獲取在該實例上設定的著色器參數值。
+取得在該實例上設定的著色器參數值。
 
 .. rst-class:: classref-item-separator
 

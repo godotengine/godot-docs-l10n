@@ -37,7 +37,7 @@ RigidBody3D
 
 - :doc:`Устранение неполадок в физике <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `3D Truck Town Демо <https://godotengine.org/asset-library/asset/2752>`__
+- `3D Truck Town Демо <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 - `Демонстрация 3D-физических тестов <https://godotengine.org/asset-library/asset/2747>`__
 

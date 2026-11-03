@@ -326,11 +326,11 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_STATIC** = ``1``
 
-Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified, but its global illumination will not update in real-time.
+Освещение учитывается при статическом запекании (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). Источник света можно перемещать или изменять, но его глобальное освещение не будет обновляться в реальном времени.
 
-\ **Note:** The light is not baked in :ref:`LightmapGI<class_LightmapGI>` if :ref:`editor_only<class_Light3D_property_editor_only>` is ``true``.
+\ **Примечание:** Освещение не запекается в :ref:`LightmapGI<class_LightmapGI>`, если :ref:`editor_only<class_Light3D_property_editor_only>` имеет значение ``true``.
 
-\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, both the direct and indirect light are baked. Since direct light is baked, the light doesn't display a specular lobe on static lightmapped meshes. Shadows on static lightmapped meshes will also look less detailed, but the light still casts shadows that can be displayed on dynamic objects. Since real-time light computations are skipped on static lightmapped meshes, this bake mode improves runtime performance compared to :ref:`BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` and :ref:`BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`.
+\ **Примечание:** При использовании :ref:`LightmapGI<class_LightmapGI>` запекаются как прямой, так и непрямой свет. Поскольку запекается прямой свет, он не отображает блик на статических сетках с картами освещения. Тени на статических сетках с картами освещения также будут выглядеть менее детализированными, но свет все равно отбрасывает тени, которые могут отображаться на динамических объектах. Поскольку вычисления освещения в реальном времени пропускаются для статических сеток с отображением освещения, этот режим запекания повышает производительность по сравнению с режимами :ref:`BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` и :ref:`BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`.
 
 .. _class_Light3D_constant_BAKE_DYNAMIC:
 
@@ -338,9 +338,9 @@ Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :re
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DYNAMIC** = ``2``
 
-Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified with global illumination updating in real-time. The light's global illumination appearance will be slightly different compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. This has a greater performance cost compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. When using SDFGI, the update speed of dynamic lights is affected by :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+Освещение учитывается при динамическом запекании (:ref:`VoxelGI<class_VoxelGI>` и SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). Источник света можно перемещать или изменять, при этом глобальное освещение обновляется в реальном времени. Внешний вид глобального освещения источника света будет немного отличаться по сравнению с :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Это приводит к большей производительности по сравнению с :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. При использовании SDFGI скорость обновления динамических источников света зависит от :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
-\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, the light's indirect light is baked, but direct light and shadows remain real-time. This mode allows performing *subtle* changes to a light's color, energy, and position while still looking fairly correct. For example, you can use this to create flickering static torches that have their indirect light baked.
+\ **Примечание:** При использовании :ref:`LightmapGI<class_LightmapGI>` запекается непрямой свет источника, но прямой свет и тени остаются в реальном времени. Этот режим позволяет вносить *незначительные* изменения в цвет, энергию и положение источника света, сохраняя при этом достаточно корректный вид. Например, вы можете использовать это для создания мерцающих статических факелов, у которых запечен непрямой свет.
 
 .. rst-class:: classref-section-separator
 

@@ -7,18 +7,18 @@ XRHandModifier3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node for driving hand meshes from :ref:`XRHandTracker<class_XRHandTracker>` data.
+用於從 :ref:`XRHandTracker<class_XRHandTracker>` 資料驅動手部網格的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node uses hand tracking data from an :ref:`XRHandTracker<class_XRHandTracker>` to pose the skeleton of a hand mesh.
+該節點使用來自 :ref:`XRHandTracker<class_XRHandTracker>` 的手部追蹤資料來設定手部網格的骨架。
 
-Positioning of hands is performed by creating an :ref:`XRNode3D<class_XRNode3D>` ancestor of the hand mesh driven by the same :ref:`XRHandTracker<class_XRHandTracker>`.
+通過建立由相同 :ref:`XRHandTracker<class_XRHandTracker>` 驅動的手部網格的 :ref:`XRNode3D<class_XRNode3D>` 祖先來定位手部。
 
-The hand tracking position-data is scaled by :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` when applied to the skeleton, which can be used to adjust the tracked hand to match the scale of the hand model.
+當將手部追蹤位置資料套用至骨架時，它會根據 :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` 進行縮放，可用於調整追蹤的手部以匹配手部模型的縮放。
 
 .. rst-class:: classref-introduction-group
 
@@ -62,7 +62,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_FULL** = ``0``
 
-The skeleton's bones are fully updated (both position and rotation) to match the tracked bones.
+骨架的骨骼完全更新（位置和旋轉）以匹配追蹤的骨骼。
 
 .. _class_XRHandModifier3D_constant_BONE_UPDATE_ROTATION_ONLY:
 
@@ -70,7 +70,7 @@ The skeleton's bones are fully updated (both position and rotation) to match the
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_ROTATION_ONLY** = ``1``
 
-The skeleton's bones are only rotated to align with the tracked bones, preserving bone length.
+骨架的骨骼僅旋轉以與追蹤的骨骼對齊，從而保留骨骼長度。
 
 .. _class_XRHandModifier3D_constant_BONE_UPDATE_MAX:
 
@@ -78,7 +78,7 @@ The skeleton's bones are only rotated to align with the tracked bones, preservin
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_MAX** = ``2``
 
-Represents the size of the :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` enum.
+代表 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -100,7 +100,7 @@ Represents the size of the :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` e
 - |void| **set_bone_update**\ (\ value\: :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>`\ )
 - :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **get_bone_update**\ (\ )
 
-Specifies the type of updates to perform on the bones.
+指定要在骨骼上執行的更新型別。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Specifies the type of updates to perform on the bones.
 - |void| **set_hand_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_hand_tracker**\ (\ )
 
-The name of the :ref:`XRHandTracker<class_XRHandTracker>` registered with :ref:`XRServer<class_XRServer>` to obtain the hand tracking data from.
+向 :ref:`XRServer<class_XRServer>` 注冊的 :ref:`XRHandTracker<class_XRHandTracker>` 的名稱，可以從中取得手部追蹤資料。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

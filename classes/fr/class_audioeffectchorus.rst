@@ -16,13 +16,13 @@ Gives the impression of multiple audio sources.
 Description
 -----------
 
-A "chorus" effect creates multiple copies of the original audio (called "voices") with variations in pitch, and layers on top of the original, giving the impression that the sound comes from multiple sources. This creates spectral and spatial movement.
+Un effet de "Chœurs" crée plusieurs copies du son original (appelé "Voix") avec des variations de hauteurs, et l'applique au dessus de l'original, donnant l'impression que le son provient de multiples sources. Cela crée un mouvement spatial et spectral.
 
-Each voice is played a short period of time after the original audio, controlled by ``delay``. An internal low-frequency oscillator (LFO) controls their pitch, and ``depth`` controls the LFO's maximum amount.
+Chaque voix est joué après un court délai suivant l'audio original, contrôlé par ``délai``. Un oscillateur à basse fréquences (LFO) contrôle leur hauteur, et la ``profondeur`` contrôle l'intensité maximale du LFO.
 
-In the real world, this kind of effect is found in pianos, choirs, and instrument ensembles.
+Dans le monde réel, cet effet se retrouve dans les pianos, les chœurs, et les ensembles musicaux.
 
-This effect can also be used to widen mono audio and make digital sounds have a more natural or analog quality.
+Cet effet peut aussi être utilisé pour élargir un son mono and donner un air plus de naturel ou une qualité plus analogue aux sons digitaux.
 
 .. rst-class:: classref-introduction-group
 
@@ -31,7 +31,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -185,7 +185,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Le délai de la voix comparé à l'audio original en millisecondes.
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Le délai de la voix comparé à l'audio original en millisecondes.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Le délai de la voix comparé à l'audio original en millisecondes.
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Le délai de la voix comparé à l'audio original en millisecondes.
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
 
 |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_cutoff_hz>`
 
-Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above ``cutoff_hz`` are removed from ``voice_idx``. Value can range from 1 to 20500.
+Définit le seuil de fréquence pour un le filtre passe bas de ``voice_idx`` en Hertz. Les fréquence supérieures à ``cutoff_hz`` sont enlevées de ``voice_idx``. Admet une valeur entre 1 et 20500.
 
 .. rst-class:: classref-item-separator
 

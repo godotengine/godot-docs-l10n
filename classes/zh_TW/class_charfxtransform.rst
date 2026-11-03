@@ -115,7 +115,7 @@ CharFXTransform
 - |void| **set_environment**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_environment**\ (\ )
 
-包含在開頭的 BBCode 標記中傳遞的參數。預設情況下，參數是字串。如果它們的內容與 :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 之類的型別配對，它們將被自動轉換。格式為 ``#rrggbb`` 或 ``#rgb`` 的顏色程式碼將轉換為不透明的 :ref:`Color<class_Color>`\ 。字串參數即使使用引號也不能包含空格。如果存在，引號也將出現在最終字符串中。
+包含在開頭的 BBCode 標記中傳遞的參數。預設情況下，參數是字串。如果它們的內容與 :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 之類的型別配對，它們將被自動轉換。格式為 ``#rrggbb`` 或 ``#rgb`` 的顏色程式碼將轉換為不透明的 :ref:`Color<class_Color>`\ 。字串參數即使使用引號也不能包含空格。如果存在，引號也將出現在最終字串中。
 
 例如，開頭的 BBCode 標籤 ``[example foo = hello bar = true baz = 42 color =＃ffffff]`` 將對應到以下 :ref:`Dictionary<class_Dictionary>`\ ：
 
@@ -138,9 +138,9 @@ CharFXTransform
 - |void| **set_font**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_font**\ (\ )
 
-:ref:`TextServer<class_TextServer>` RID of the font used to render glyph, this value can be used with ``TextServer.font_*`` methods to retrieve font information.
+渲染字形所用字型的 :ref:`TextServer<class_TextServer>` RID，該值可以通過 ``TextServer.font_*`` 方法來檢索字型資訊。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不影響繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -157,9 +157,9 @@ CharFXTransform
 - |void| **set_glyph_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_count**\ (\ )
 
-Number of glyphs in the grapheme cluster. This value is set in the first glyph of a cluster.
+字素簇中的字形數量。該值在簇的第一個字形中設定。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不會影響繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -176,9 +176,9 @@ Number of glyphs in the grapheme cluster. This value is set in the first glyph o
 - |void| **set_glyph_flags**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_flags**\ (\ )
 
-Glyph flags. See :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` for more info.
+字形標誌。詳見 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>`\ 。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不會影響繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ Glyph flags. See :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` for more info
 - |void| **set_glyph_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_index**\ (\ )
 
-Glyph index specific to the :ref:`font<class_CharFXTransform_property_font>`. If you want to replace this glyph, use :ref:`TextServer.font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` with :ref:`font<class_CharFXTransform_property_font>` to get a new glyph index for a single character.
+特定於 :ref:`font<class_CharFXTransform_property_font>` 的字形索引。如果你想替換該字形，請使用 :ref:`font<class_CharFXTransform_property_font>` 呼叫 :ref:`TextServer.font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` 取得單個字元的新字形索引。
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ Glyph index specific to the :ref:`font<class_CharFXTransform_property_font>`. If
 - |void| **set_outline**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_outline**\ (\ )
 
-If ``true``, FX transform is called for outline drawing.
+如果為 ``true``\ ，則呼叫 FX 變換進行輪廓繪製。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不會影響繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -248,9 +248,9 @@ If ``true``, FX transform is called for outline drawing.
 - |void| **set_range**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_range**\ (\ )
 
-Absolute character range in the string, corresponding to the glyph.
+該字串中的絕對字元範圍，對應於字形。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不會影響繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -267,9 +267,9 @@ Absolute character range in the string, corresponding to the glyph.
 - |void| **set_relative_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_relative_index**\ (\ )
 
-The character offset of the glyph, relative to the current :ref:`RichTextEffect<class_RichTextEffect>` custom block.
+該字形的字元偏移量，相對於目前 :ref:`RichTextEffect<class_RichTextEffect>` 自訂塊。
 
-\ **Note:** Read-only. Setting this property won't affect drawing.
+\ **注意：**\ 只讀。設定該屬性不會影響繪製。
 
 .. rst-class:: classref-item-separator
 

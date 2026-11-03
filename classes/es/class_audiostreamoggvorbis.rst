@@ -85,7 +85,7 @@ Descripciones de Propiedades
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+El número de pulsos que hay en un solo compás de la pista de audio.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-La duración de la pista de audio, en ritmos. La duración real del archivo de audio puede ser mayor que lo indicado por esta propiedad. Define el final del audio para el bucle, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` y :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+La duración de la pista de audio, en pulsos. La duración real del archivo de audio puede ser mayor que lo indicado por esta propiedad. Define el final del audio para el bucle, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` y :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ La duración de la pista de audio, en ritmos. La duración real del archivo de a
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-El tempo de la pista de audio, medido en latidos por minuto.
+El tempo de la pista de audio, medido en pulsos por minuto.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ El tempo de la pista de audio, medido en latidos por minuto.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Useful for ambient sounds and background music.
+Si es ``true``, el audio se reproducirá de nuevo desde el :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` especificado una vez que se alcance el final de la pista de audio o el final del último pulso, según la cantidad especificada en :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Es útil para sonidos ambientales y música de fondo.
 
 .. rst-class:: classref-item-separator
 

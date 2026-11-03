@@ -7,16 +7,16 @@ AudioEffectStereoEnhance
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a stereo manipulation audio effect to an audio bus.
+向音訊總線新增一個立體聲處理音訊效果。
 
-Controls gain of the side channels, and widens the stereo image.
+控制側邊聲道的增益，並加寬立體聲像。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Adjusts gain of the left and right channels, and makes mono sounds stereo through phase shifting.
+調整左右聲道的增益，並通過相移將單聲道聲音變為立體聲。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Adjusts gain of the left and right channels, and makes mono sounds stereo throug
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ Adjusts gain of the left and right channels, and makes mono sounds stereo throug
 - |void| **set_pan_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan_pullout**\ (\ )
 
-Gain of the side channels, if they exist. A value of 0 will downmix stereo to mono. Value can range from 0 to 4.
+側邊聲道的增益，若存在。值為 0 時會將立體聲下混為單聲道。取值範圍為 0 到 4。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ Gain of the side channels, if they exist. A value of 0 will downmix stereo to mo
 - |void| **set_surround**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_surround**\ (\ )
 
-Widens the stereo image through phase shifting in conjunction with :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Just pans sound to the left channel if :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` is 0. Value can range from 0 to 1.
+通過與 :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` 配合進行相移來加寬立體聲像。若 :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` 為 0，則僅將聲音聲像定位到左聲道。取值範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Widens the stereo image through phase shifting in conjunction with :ref:`time_pu
 - |void| **set_time_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_pullout**\ (\ )
 
-Widens the stereo image through phase shifting in conjunction with :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Just delays the right channel if :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` is 0. Value is in milliseconds, and can range from 0 to 50.
+通過與 :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` 配合進行相移來加寬立體聲像。若 :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` 為 0，則僅延遲右聲道。取值範圍從 0 到 50，單位為毫秒。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

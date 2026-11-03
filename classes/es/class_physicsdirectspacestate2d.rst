@@ -146,21 +146,21 @@ The number of intersections can be limited with the ``max_results`` parameter, t
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray**\ (\ parameters\: :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_intersect_ray>`
 
-Intersects a ray in a given space. Ray position and other parameters are defined through :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`. The returned object is a dictionary with the following fields:
+Interseca un rayo en un espacio dado. La posición del rayo y otros parámetros se definen a través de :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`. El objeto devuelto es un diccionario que contiene los siguientes campos:
 
-\ ``collider``: The colliding object.
+\ ``collider``: El objeto colisionado.
 
-\ ``collider_id``: The colliding object's ID.
+\ ``collider_id``: El ID del objeto que colisiona.
 
-\ ``normal``: The object's surface normal at the intersection point, or ``Vector2(0, 0)`` if the ray starts inside the shape and :ref:`PhysicsRayQueryParameters2D.hit_from_inside<class_PhysicsRayQueryParameters2D_property_hit_from_inside>` is ``true``.
+\ ``normal``: La normal de la superficie del objeto en el punto de intersección, o ``Vector2(0, 0)`` si el rayo comienza dentro de la forma y :ref:`PhysicsRayQueryParameters2D.hit_from_inside<class_PhysicsRayQueryParameters2D_property_hit_from_inside>` es ``true``.
 
-\ ``position``: The intersection point.
+\ ``position``: El punto de intersección.
 
-\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
+\ ``rid``: El objeto que interseca :ref:`RID<class_RID>`.
 
-\ ``shape``: The shape index of the colliding shape.
+\ ``shape``: El índice de la forma de la forma en colisión.
 
-If the ray did not intersect anything, then an empty dictionary is returned instead.
+Si la forma no intersectó nada, entonces se devuelve un diccionario vacío en su lugar.
 
 .. rst-class:: classref-item-separator
 

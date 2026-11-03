@@ -62,7 +62,7 @@ Señales
 
 **animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
+Se emite cuando se añade una :ref:`Animation<class_Animation>` bajo la clave ``anim_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -74,9 +74,9 @@ Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim
 
 **animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
+Emitida cuando hay un cambio en una de las animaciones, por ejemplo, se añaden, mueven o cambian las rutas. ``anim_name`` es la clave de la animación que ha cambiado.
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+Véase también :ref:`Resource.changed<class_Resource_signal_changed>`, que esta señal transmite.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts
 
 **animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
+Emitida cuando se elimina una :ref:`Animation<class_Animation>` almacenada con la clave ``anim_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_nam
 
 **animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
+Emitida cuando se cambia la clave de una :ref:`Animation<class_Animation>` de ``old_name`` a ``new_name``.
 
 .. rst-class:: classref-section-separator
 

@@ -14,7 +14,7 @@ VisualShaderNodeTransformVecMult
 說明
 ----
 
-A multiplication operation on a transform (4×4 matrix) and a vector, with support for different multiplication operators.
+對一個變換（4×4 矩陣）和一個向量進行乘法運算，支援不同的乘法運算符。
 
 .. rst-class:: classref-reftable-group
 
@@ -103,7 +103,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeTransformVecMult_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **get_operator**\ (\ )
 
-The multiplication type to be performed.
+要執行的乘法型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

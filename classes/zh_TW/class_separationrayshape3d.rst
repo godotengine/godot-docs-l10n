@@ -14,7 +14,7 @@ SeparationRayShape3D
 說明
 ----
 
-A 3D ray shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. When a **SeparationRayShape3D** collides with an object, it tries to separate itself from it by moving its endpoint to the collision point. For example, a **SeparationRayShape3D** next to a character can allow it to instantly move up when touching stairs.
+3D 射線形狀，旨在用於物理。通常用來為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。\ **SeparationRayShape3D** 與某個物件發生碰撞時，會嘗試將其端點移動至碰撞點，來將自己與該物件分離。例如，角色旁邊的 **SeparationRayShape3D** 可以讓角色在接觸樓梯時立即向上移動。
 
 .. rst-class:: classref-reftable-group
 

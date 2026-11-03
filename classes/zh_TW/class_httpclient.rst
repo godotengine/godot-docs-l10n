@@ -14,25 +14,25 @@ HTTPClient
 說明
 ----
 
-Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
+超文字傳輸協議用戶端（有時稱為“使用者代理”）。用於發出 HTTP 請求以下載網路內容，上傳檔案和其他資料或與各種服務通信，以及其他用例。
 
-See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
+請參閱 :ref:`HTTPRequest<class_HTTPRequest>` 節點以取得更進階別的替代方案。
 
-\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
+\ **注意：**\ 這個用戶端只需要連接一個主機一次（見\ :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`\ ），就可以發送多個請求。因此，使用 URL 的方法通常只使用主機後面的部分而不是完整的 URL，因為用戶端已經連接到主機。請參閱 :ref:`request()<class_HTTPClient_method_request>` 以取得完整範例並開始使用。
 
-An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
+\ **HTTPClient** 應該在多個請求之間重用或連接到不同的主機，而不是為每個請求建立一個用戶端。支援傳輸層安全 (TLS)，包括伺服器憑證驗證。2xx 範圍內的 HTTP 狀態程式碼表示成功，3xx 表示重新導向（即“再試一次，但在這裡”），4xx 表示請求有問題，5xx 表示伺服器端出了問題。
 
-For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
+有關 HTTP 的更多資訊，請參閱 `MDN 上 HTTP 的文件 <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__\ （或閱讀 `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__\ ，直接從根源瞭解）。
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署前，請確保在 Android 匯出預設中啟用 ``INTERNET`` 權限。否則，任何型別的網路通信都將被 Android 阻止。
 
-\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
+\ **注意：**\ 建議使用傳輸加密（TLS）並避免在 HTTP GET URL 參數中發送敏感資訊（例如登入憑據）。考慮改用 HTTP POST 請求或 HTTP 標頭來取得此類資訊。
 
-\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
+\ **注意：**\ 當從匯出到 Web 的專案執行 HTTP 請求時，請記住，由於 `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__\ ，遠端伺服器可能不允許來自站外的請求。如果托管到有問題的伺服器，應該修改其後台，以通過新增 ``Access-Control-Allow-Origin: *`` HTTP 標頭來允許來自站外的請求。
 
-\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
+\ **注意：**\ TLS 支援目前僅限於 TLSv1.2 和 TLSv1.3。嘗試連接到僅支援較早（不安全）TLS 版本伺服器時將回傳一個錯誤。
 
-\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
+\ **警告：**\ 目前不支援 TLS 憑證復原和憑證綁定。只要吊銷的憑證在其他方面有效，就會被接受。如果這是一個問題，你可能希望使用有效期較短的自動管理的憑證。
 
 .. rst-class:: classref-introduction-group
 
@@ -122,7 +122,7 @@ enum **Method**: :ref:`🔗<enum_HTTPClient_Method>`
 
 :ref:`Method<enum_HTTPClient_Method>` **METHOD_GET** = ``0``
 
-HTTP GET 方法。GET 方法用於請求指定資源的某種表示。使用 GET 的請求應該只進行資料的獲取。
+HTTP GET 方法。GET 方法用於請求指定資源的某種表示。使用 GET 的請求應該只進行資料的取得。
 
 .. _class_HTTPClient_constant_METHOD_HEAD:
 
@@ -162,7 +162,7 @@ HTTP DELETE 方法。DELETE 方法請求刪除指定的資源。
 
 :ref:`Method<enum_HTTPClient_Method>` **METHOD_OPTIONS** = ``5``
 
-HTTP OPTIONS 方法。OPTIONS 方法的目的是獲取目標資源的通訊選項。很少使用。
+HTTP OPTIONS 方法。OPTIONS 方法的目的是取得目標資源的通訊選項。很少使用。
 
 .. _class_HTTPClient_constant_METHOD_TRACE:
 
@@ -170,7 +170,7 @@ HTTP OPTIONS 方法。OPTIONS 方法的目的是獲取目標資源的通訊選�
 
 :ref:`Method<enum_HTTPClient_Method>` **METHOD_TRACE** = ``6``
 
-HTTP TRACE 方法。TRACE 方法會沿目標資源的路徑做消息回環測試。返回的回應體中會包含完整的 HTTP 請求。很少使用。
+HTTP TRACE 方法。TRACE 方法會沿目標資源的路徑做訊息回環測試。返回的回應體中會包含完整的 HTTP 請求。很少使用。
 
 .. _class_HTTPClient_constant_METHOD_CONNECT:
 
@@ -268,7 +268,7 @@ enum **Status**: :ref:`🔗<enum_HTTPClient_Status>`
 
 :ref:`Status<enum_HTTPClient_Status>` **STATUS_BODY** = ``7``
 
-狀態：已獲取 HTTP 回應體。
+狀態：已取得 HTTP 回應體。
 
 .. _class_HTTPClient_constant_STATUS_CONNECTION_ERROR:
 
@@ -302,7 +302,7 @@ enum **ResponseCode**: :ref:`🔗<enum_HTTPClient_ResponseCode>`
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_CONTINUE** = ``100``
 
-HTTP 狀態碼 ``100 Continue``\ 。是表示目前為止一切正常的中間回應，客戶端應該繼續請求（如果已經請求完就可以直接忽略這個狀態）。
+HTTP 狀態碼 ``100 Continue``\ 。是表示目前為止一切正常的中間回應，用戶端應該繼續請求（如果已經請求完就可以直接忽略這個狀態）。
 
 .. _class_HTTPClient_constant_RESPONSE_SWITCHING_PROTOCOLS:
 
@@ -326,15 +326,15 @@ HTTP 狀態碼 ``102 Processing``\ （WebDAV）。表示伺服器已收到請求
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_OK** = ``200``
 
-HTTP status code ``200 OK``. The request has succeeded. Default response for successful requests. Meaning varies depending on the request:
+HTTP 狀態碼 ``200 OK``\ 。請求成功，是成功請求的預設響應，根據請求的不同表示的含義也不同：
 
-- :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`: The resource has been fetched and is transmitted in the message body.
+- :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`\ ：已取得資源並通過訊息體發送。
 
-- :ref:`METHOD_HEAD<class_HTTPClient_constant_METHOD_HEAD>`: The entity headers are in the message body.
+- :ref:`METHOD_HEAD<class_HTTPClient_constant_METHOD_HEAD>`\ ：實體報頭在訊息體中。
 
-- :ref:`METHOD_POST<class_HTTPClient_constant_METHOD_POST>`: The resource describing the result of the action is transmitted in the message body.
+- :ref:`METHOD_POST<class_HTTPClient_constant_METHOD_POST>`\ ：描述操作結果的資源已通過訊息體發送。
 
-- :ref:`METHOD_TRACE<class_HTTPClient_constant_METHOD_TRACE>`: The message body contains the request message as received by the server.
+- :ref:`METHOD_TRACE<class_HTTPClient_constant_METHOD_TRACE>`\ ：訊息體包含伺服器所收到的請求訊息。
 
 .. _class_HTTPClient_constant_RESPONSE_CREATED:
 
@@ -358,7 +358,7 @@ HTTP 狀態碼 ``202 Accepted``\ 。請求已收到，但尚未處理。HTTP 協
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_NON_AUTHORITATIVE_INFORMATION** = ``203``
 
-HTTP 狀態碼 ``203 Non-Authoritative Information``\ 。該回應狀態碼表示返回的元消息與原始伺服器所返回的不一致，而是從本地或者協力廠商副本中收集而來。除了特殊情況，應該優先選用 200 OK 回應所返回的內容。
+HTTP 狀態碼 ``203 Non-Authoritative Information``\ 。該回應狀態碼表示返回的元訊息與原始伺服器所返回的不一致，而是從本地或者協力廠商副本中收集而來。除了特殊情況，應該優先選用 200 OK 回應所返回的內容。
 
 .. _class_HTTPClient_constant_RESPONSE_NO_CONTENT:
 
@@ -366,7 +366,7 @@ HTTP 狀態碼 ``203 Non-Authoritative Information``\ 。該回應狀態碼表�
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_NO_CONTENT** = ``204``
 
-HTTP 狀態碼 ``204 No Content``\ 。本請求無回應內容，但報頭可能有用。用戶代理可能會根據該資源更新快取報頭。
+HTTP 狀態碼 ``204 No Content``\ 。本請求無回應內容，但報頭可能有用。使用者代理可能會根據該資源更新快取報頭。
 
 .. _class_HTTPClient_constant_RESPONSE_RESET_CONTENT:
 
@@ -456,7 +456,7 @@ HTTP 狀態碼 ``304 Not Modified``\ 。收到了條件 GET 或者 HEAD，並且
 
 **已棄用：** Many clients ignore this response code for security reasons. It is also deprecated by the HTTP standard.
 
-HTTP status code ``305 Use Proxy``.
+HTTP 狀態碼 ``305 Use Proxy``\ 。
 
 .. _class_HTTPClient_constant_RESPONSE_SWITCH_PROXY:
 
@@ -466,7 +466,7 @@ HTTP status code ``305 Use Proxy``.
 
 **已棄用：** Many clients ignore this response code for security reasons. It is also deprecated by the HTTP standard.
 
-HTTP status code ``306 Switch Proxy``.
+HTTP 狀態碼 ``306 Switch Proxy``\ 。
 
 .. _class_HTTPClient_constant_RESPONSE_TEMPORARY_REDIRECT:
 
@@ -490,7 +490,7 @@ HTTP 狀態碼 ``308 Permanent Redirect``\ 。目標資源已被賦予全新的�
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_BAD_REQUEST** = ``400``
 
-HTTP 狀態碼 ``400 Bad Request``\ 。請求無效。伺服器認為使用者端出錯，所以無法或者拒絕處理該請求（例如：請求語法錯誤、請求消息影格無效、請求內容無效、請求路由可疑）。
+HTTP 狀態碼 ``400 Bad Request``\ 。請求無效。伺服器認為使用者端出錯，所以無法或者拒絕處理該請求（例如：請求語法錯誤、請求訊息影格無效、請求內容無效、請求路由可疑）。
 
 .. _class_HTTPClient_constant_RESPONSE_UNAUTHORIZED:
 
@@ -514,7 +514,7 @@ HTTP 狀態碼 ``402 Payment Required``\ 。該回應碼是為將來使用保留
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_FORBIDDEN** = ``403``
 
-HTTP 狀態碼 ``403 Forbidden``\ 。使用者端沒有該內容的存取權限，即未授權，伺服器拒絕給出正確回應。與 ``401`` 不同，伺服器已收到使用者端的身份信息。
+HTTP 狀態碼 ``403 Forbidden``\ 。使用者端沒有該內容的存取權限，即未授權，伺服器拒絕給出正確回應。與 ``401`` 不同，伺服器已收到使用者端的身份資訊。
 
 .. _class_HTTPClient_constant_RESPONSE_NOT_FOUND:
 
@@ -530,7 +530,7 @@ HTTP 狀態碼 ``404 Not Found``\ 。伺服器無法找到所請求的資源。�
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_METHOD_NOT_ALLOWED** = ``405``
 
-HTTP 狀態碼 ``405 Method Not Allowed``\ 。伺服器理解請求所使用的 HTTP 方法，但該方法已被禁止使用。例如：API 可能禁止 DELETE 資源。GET 和 HEAD 這兩個方法是必須的，所以不能被禁用，也不應該返回該錯誤碼。
+HTTP 狀態碼 ``405 Method Not Allowed``\ 。伺服器理解請求所使用的 HTTP 方法，但該方法已被禁止使用。例如：API 可能禁止 DELETE 資源。GET 和 HEAD 這兩個方法是必須的，所以不能被停用，也不應該返回該錯誤碼。
 
 .. _class_HTTPClient_constant_RESPONSE_NOT_ACCEPTABLE:
 
@@ -538,7 +538,7 @@ HTTP 狀態碼 ``405 Method Not Allowed``\ 。伺服器理解請求所使用的 
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_NOT_ACCEPTABLE** = ``406``
 
-HTTP 狀態碼 ``406 Not Acceptable``\ 。根據請求中主動注明的交涉報頭字段，目標資源沒有使用者代理所能接受的表示。用於內容交涉過程。
+HTTP 狀態碼 ``406 Not Acceptable``\ 。根據請求中主動注明的交涉報頭欄位，目標資源沒有使用者代理所能接受的表示。用於內容交涉過程。
 
 .. _class_HTTPClient_constant_RESPONSE_PROXY_AUTHENTICATION_REQUIRED:
 
@@ -554,7 +554,7 @@ HTTP 狀態碼 ``407 Proxy Authentication Required``\ 。類似於 401 Unauthori
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_REQUEST_TIMEOUT** = ``408``
 
-HTTP 狀態碼 ``408 Request Timeout``\ 。伺服器在其準備等待的時間段內未獲取完整的請求資訊。
+HTTP 狀態碼 ``408 Request Timeout``\ 。伺服器在其準備等待的時間段內未取得完整的請求資訊。
 
 .. _class_HTTPClient_constant_RESPONSE_CONFLICT:
 
@@ -746,7 +746,7 @@ HTTP 狀態碼 ``503 Service Unavailable``\ 。伺服器目前無法處理請求
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_GATEWAY_TIMEOUT** = ``504``
 
-HTTP 狀態碼 ``504 Gateway Timeout``\ 。閘道或代理伺服器嘗試使用上游服務器處理請求，但無法在指定時間內從該伺服器收到響應。通常由負載等化器或者代理伺服器返回。
+HTTP 狀態碼 ``504 Gateway Timeout``\ 。閘道或代理伺服器嘗試使用上游伺服器處理請求，但無法在指定時間內從該伺服器收到響應。通常由負載等化器或者代理伺服器返回。
 
 .. _class_HTTPClient_constant_RESPONSE_HTTP_VERSION_NOT_SUPPORTED:
 
@@ -754,7 +754,7 @@ HTTP 狀態碼 ``504 Gateway Timeout``\ 。閘道或代理伺服器嘗試使用�
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_HTTP_VERSION_NOT_SUPPORTED** = ``505``
 
-HTTP 狀態碼 ``505 HTTP Version Not Supported``\ 。伺服器不支援或者拒絕支援請求消息所使用的 HTTP 主版本。
+HTTP 狀態碼 ``505 HTTP Version Not Supported``\ 。伺服器不支援或者拒絕支援請求訊息所使用的 HTTP 主版本。
 
 .. _class_HTTPClient_constant_RESPONSE_VARIANT_ALSO_NEGOTIATES:
 
@@ -931,7 +931,7 @@ HTTP 狀態碼 ``511 Network Authentication Required``\ 。使用者端需要身
 
 :ref:`Dictionary<class_Dictionary>` **get_response_headers_as_dictionary**\ (\ ) :ref:`🔗<class_HTTPClient_method_get_response_headers_as_dictionary>`
 
-Returns all response headers as a :ref:`Dictionary<class_Dictionary>`. Each entry is composed by the header name, and a :ref:`String<class_String>` containing the values separated by ``"; "``. The casing is kept the same as the headers were received.
+以 :ref:`Dictionary<class_Dictionary>` 的形式回傳所有響應報頭。每個條目都是報頭名稱以及用 ``"; "`` 分隔的對應取值。大小寫與收到的報頭保持一致。
 
 ::
 
@@ -986,7 +986,7 @@ Returns all response headers as a :ref:`Dictionary<class_Dictionary>`. Each entr
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_HTTPClient_method_poll>`
 
-呼叫此方法才能對請求進行處理。使用 :ref:`get_status()<class_HTTPClient_method_get_status>` 獲取檢查。
+呼叫此方法才能對請求進行處理。使用 :ref:`get_status()<class_HTTPClient_method_get_status>` 取得檢查。
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +998,7 @@ Returns all response headers as a :ref:`Dictionary<class_Dictionary>`. Each entr
 
 :ref:`String<class_String>` **query_string_from_dict**\ (\ fields\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_HTTPClient_method_query_string_from_dict>`
 
-Generates a GET/POST application/x-www-form-urlencoded style query string from a provided dictionary, e.g.:
+從提供的字典生成 GET/POST application/x-www-form-urlencoded 樣式的查詢字串，例如：
 
 
 .. tabs::
@@ -1007,17 +1007,17 @@ Generates a GET/POST application/x-www-form-urlencoded style query string from a
 
     var fields = { "username": "user", "password": "pass" }
     var query_string = http_client.query_string_from_dict(fields)
-    # Returns "username=user&password=pass"
+    # 回傳 "username=user&password=pass"
 
  .. code-tab:: csharp
 
     var fields = new Godot.Collections.Dictionary { { "username", "user" }, { "password", "pass" } };
     string queryString = httpClient.QueryStringFromDict(fields);
-    // Returns "username=user&password=pass"
+    // 回傳 "username=user&password=pass"
 
 
 
-Furthermore, if a key has a ``null`` value, only the key itself is added, without equal sign and value. If the value is an array, for each value in it a pair with the same key is added.
+此外，如果鍵具有 ``null`` 值，則僅新增鍵本身，而不新增等號和值。如果該值是一個陣列，則新增該相同鍵，與其中的每個值組成一對。
 
 
 .. tabs::
@@ -1026,7 +1026,7 @@ Furthermore, if a key has a ``null`` value, only the key itself is added, withou
 
     var fields = { "single": 123, "not_valued": null, "multiple": [22, 33, 44] }
     var query_string = http_client.query_string_from_dict(fields)
-    # Returns "single=123&not_valued&multiple=22&multiple=33&multiple=44"
+    # 回傳 "single=123&not_valued&multiple=22&multiple=33&multiple=44"
 
  .. code-tab:: csharp
 
@@ -1037,7 +1037,7 @@ Furthermore, if a key has a ``null`` value, only the key itself is added, withou
         { "multiple", new Godot.Collections.Array { 22, 33, 44 } },
     };
     string queryString = httpClient.QueryStringFromDict(fields);
-    // Returns "single=123&not_valued&multiple=22&multiple=33&multiple=44"
+    // 回傳 "single=123&not_valued&multiple=22&multiple=33&multiple=44"
 
 
 
@@ -1063,13 +1063,13 @@ Furthermore, if a key has a ``null`` value, only the key itself is added, withou
 
 :ref:`Error<enum_@GlobalScope_Error>` **request**\ (\ method\: :ref:`Method<enum_HTTPClient_Method>`, url\: :ref:`String<class_String>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_HTTPClient_method_request>`
 
-Sends an HTTP request to the connected host with the given ``method``.
+使用 ``method`` 方法向已連接的伺服器發送 HTTP 請求。
 
-The URL parameter is usually just the part after the host, so for ``https://example.com/index.php``, it is ``/index.php``. When sending requests to an HTTP proxy server, it should be an absolute URL. For :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` requests, ``*`` is also allowed. For :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` requests, it should be the authority component (``host:port``).
+URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (``host:port``)。
 
-\ ``headers`` are HTTP request headers.
+\ ``headers`` 是 HTTP 請求的報頭。
 
-To create a POST request with query strings to push to the server, do:
+要建立帶有查詢字串的 POST 請求以推送到伺服器，請執行以下操作：
 
 
 .. tabs::
@@ -1090,7 +1090,7 @@ To create a POST request with query strings to push to the server, do:
 
 
 
-\ **Note:** The ``body`` parameter is ignored if ``method`` is :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`. This is because GET methods can't contain request data. As a workaround, you can pass request data as a query string in the URL. See :ref:`String.uri_encode()<class_String_method_uri_encode>` for an example.
+\ **注意：**\ 如果 ``method`` 是 :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`\ ，則忽略 ``body`` 參數。這是因為 GET 方法不能包含請求資料。解決方法是，可以將請求資料作為 URL 中的查詢字串傳遞。範例見 :ref:`String.uri_encode()<class_String_method_uri_encode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1102,13 +1102,13 @@ To create a POST request with query strings to push to the server, do:
 
 :ref:`Error<enum_@GlobalScope_Error>` **request_raw**\ (\ method\: :ref:`Method<enum_HTTPClient_Method>`, url\: :ref:`String<class_String>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HTTPClient_method_request_raw>`
 
-Sends a raw HTTP request to the connected host with the given ``method``.
+使用 ``method`` 方法向已連接的伺服器發送原始 HTTP 請求。
 
-The URL parameter is usually just the part after the host, so for ``https://example.com/index.php``, it is ``/index.php``. When sending requests to an HTTP proxy server, it should be an absolute URL. For :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` requests, ``*`` is also allowed. For :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` requests, it should be the authority component (``host:port``).
+URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (``host:port``)。
 
-\ ``headers`` are HTTP request headers.
+\ ``headers`` 是 HTTP 請求的報頭。
 
-Sends the body data raw, as a byte array and does not encode it in any way.
+請求體是以位元組陣列的形式原樣發送的，不會進行任何形式的編碼。
 
 .. rst-class:: classref-item-separator
 

@@ -18,7 +18,7 @@ CameraAttributes
 
 控制相機的特定屬性，如景深和曝光覆蓋。
 
-當在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用時，它提供了曝光、自動曝光、以及景深的預設設置，這些設定將由所有沒有自己的 **CameraAttributes** 的相機使用，包括編輯器相機。當在 :ref:`Camera3D<class_Camera3D>` 中使用時，它將覆蓋 :ref:`WorldEnvironment<class_WorldEnvironment>` 中設定的任何 **CameraAttributes**\ 。當在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用時，將只會使用曝光設置。
+當在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用時，它提供了曝光、自動曝光、以及景深的預設設定，這些設定將由所有沒有自己的 **CameraAttributes** 的相機使用，包括編輯器相機。當在 :ref:`Camera3D<class_Camera3D>` 中使用時，它將覆蓋 :ref:`WorldEnvironment<class_WorldEnvironment>` 中設定的任何 **CameraAttributes**\ 。當在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用時，將只會使用曝光設定。
 
 另請參閱 :ref:`Environment<class_Environment>` 瞭解一般的 3D 環境設定。
 
@@ -64,9 +64,9 @@ CameraAttributes
 - |void| **set_auto_exposure_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_exposure_enabled**\ (\ )
 
-If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
+如果為 ``true``\ ，啟用場景渲染器的色調映射自動曝光模式。如果為 ``true``\ ，渲染器將自動確定曝光設定，以適應場景的照明和觀察到的光線。
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 自動曝光僅在 Forward+ 渲染方法中受支援，在 Mobile 或 Compatibility 中不受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``true``, enables the tonemapping auto exposure mode of the scene renderer. I
 - |void| **set_exposure_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_exposure_multiplier**\ (\ )
 
-曝光量的乘數。較高的值會產生較亮的圖像。
+曝光量的乘數。較高的值會產生較亮的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -134,11 +134,11 @@ If ``true``, enables the tonemapping auto exposure mode of the scene renderer. I
 - |void| **set_exposure_sensitivity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_exposure_sensitivity**\ (\ )
 
-Sensitivity of camera sensors, measured in ISO. A higher sensitivity results in a brighter image.
+相機傳感器的靈敏度，以 ISO 測量。靈敏度越高，影像越亮。
 
-If :ref:`auto_exposure_enabled<class_CameraAttributes_property_auto_exposure_enabled>` is ``true``, this can be used as a method of exposure compensation, doubling the value will increase the exposure value (measured in EV100) by 1 stop.
+\ :ref:`auto_exposure_enabled<class_CameraAttributes_property_auto_exposure_enabled>` 為 ``true`` 時，可以用作曝光補償的方法，將該值加倍會使曝光值增加 1 檔（以 EV100 測量）。
 
-\ **Note:** Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
+\ **注意：**\ 僅在啟用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 時可用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

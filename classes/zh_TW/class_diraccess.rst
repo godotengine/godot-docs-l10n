@@ -17,23 +17,23 @@ DirAccess
 說明
 ----
 
-This class is used to manage directories and their content, even outside of the project folder.
+這個類可用於管理目錄及其內容，不限於專案資料夾。
 
-\ **DirAccess** can't be instantiated directly. Instead it is created with a static method that takes a path for which it will be opened.
+\ **DirAccess** 無法直接實例化，需要通過靜態方法建立，方法接受待打開的路徑。
 
-Most of the methods have a static alternative that can be used without creating a **DirAccess**. Static methods only support absolute paths (including ``res://`` and ``user://``).
+大多數方法都有對應的靜態版本，無需建立 **DirAccess** 即可使用。靜態方法僅支援絕對路徑（包含 ``res://`` 和 ``user://``\ ）。
 
 ::
 
-    # Standard
+    # 標準
     var dir = DirAccess.open("user://levels")
     dir.make_dir("world1")
-    # Static
+    # 靜態
     DirAccess.make_dir_absolute("user://levels/world1")
 
-\ **Note:** Accessing project ("res://") directories once exported may behave unexpectedly as some files are converted to engine-specific formats and their original source files may not be present in the expected PCK package. Because of this, to access resources in an exported project, it is recommended to use :ref:`ResourceLoader<class_ResourceLoader>` instead of :ref:`FileAccess<class_FileAccess>`.
+\ **注意：**\ 匯出後，存取專案目錄（"res://"）可能导致意外行为，因为此时部分文件已被转换为引擎所使用的格式，对应的原始文件可能不存在于 PCK 包中。因此，在匯出後的專案中存取資源建議使用 :ref:`ResourceLoader<class_ResourceLoader>`\ ，不要使用 :ref:`FileAccess<class_FileAccess>`\ 。
 
-Here is an example on how to iterate through the files of a directory:
+以下是遍歷目錄中檔案的範例：
 
 
 .. tabs::
@@ -47,12 +47,12 @@ Here is an example on how to iterate through the files of a directory:
             var file_name = dir.get_next()
             while file_name != "":
                 if dir.current_is_dir():
-                    print("Found directory: " + file_name)
+                    print("發現目錄：" + file_name)
                 else:
-                    print("Found file: " + file_name)
+                    print("發現檔案" + file_name)
                 file_name = dir.get_next()
         else:
-            print("An error occurred when trying to access the path.")
+            print("嘗試存取路徑時出錯。")
 
  .. code-tab:: csharp
 
@@ -67,24 +67,24 @@ Here is an example on how to iterate through the files of a directory:
             {
                 if (dir.CurrentIsDir())
                 {
-                    GD.Print($"Found directory: {fileName}");
+                    GD.Print($"發現目錄：{fileName}");
                 }
                 else
                 {
-                    GD.Print($"Found file: {fileName}");
+                    GD.Print($"發現檔案：{fileName}");
                 }
                 fileName = dir.GetNext();
             }
         }
         else
         {
-            GD.Print("An error occurred when trying to access the path.");
+            GD.Print("嘗試存取路徑時出錯。");
         }
     }
 
 
 
-Keep in mind that file names may change or be remapped after export. If you want to see the actual resource file list as it appears in the editor, use :ref:`ResourceLoader.list_directory()<class_ResourceLoader_method_list_directory>` instead.
+請牢記，匯出後檔名可能發生變化和重映射。如果想要看到和編輯器中一致的實際資源檔案清單，請改用 :ref:`ResourceLoader.list_directory()<class_ResourceLoader_method_list_directory>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -251,11 +251,11 @@ Keep in mind that file names may change or be remapped after export. If you want
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_dir**\ (\ to_dir\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_change_dir>`
 
-Changes the currently opened directory to the one passed as an argument. The argument can be relative to the current directory (e.g. ``newdir`` or ``../newdir``), or an absolute path (e.g. ``/tmp/newdir`` or ``res://somedir/newdir``).
+將目前打開的目錄改為作為參數傳遞的目錄。該參數可以是相對於目前目錄的（例如 ``newdir`` 或 ``../newdir``\ ），也可以是絕對路徑（例如 ``/tmp/newdir`` 或 ``res://somedir/newdir``\ ）。
 
-Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
+回傳 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數之一（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
-\ **Note:** The new directory must be within the same scope, e.g. when you had opened a directory inside ``res://``, you can't change it to ``user://`` directory. If you need to open a directory in another access scope, use :ref:`open()<class_DirAccess_method_open>` to create a new instance instead.
+\ **注意：**\ 新目錄必須在相同範圍內，例如當在 ``res://`` 中打開目錄時，無法將其更改為 ``user://`` 目錄。如果需要在另一個存取範圍中打開目錄，請使用 :ref:`open()<class_DirAccess_method_open>` 建立一個新實例。
 
 .. rst-class:: classref-item-separator
 
@@ -295,11 +295,11 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_link**\ (\ source\: :ref:`String<class_String>`, target\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_create_link>`
 
-Creates symbolic link between files or folders.
+建立檔案或資料夾的符號連結。
 
-\ **Note:** On Windows, this method works only if the application is running with elevated privileges or Developer Mode is enabled.
+\ **注意：**\ 在 Window 上，使用提升權限執行程式或啟用“開發者模式”時該方法才能正常工作。
 
-\ **Note:** This method is implemented on macOS, Linux, and Windows.
+\ **注意：**\ 該方法僅在 macOS、Linux 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -311,13 +311,13 @@ Creates symbolic link between files or folders.
 
 :ref:`DirAccess<class_DirAccess>` **create_temp**\ (\ prefix\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_DirAccess_method_create_temp>`
 
-Creates a temporary directory. This directory will be freed when the returned **DirAccess** is freed.
+建立一個暫時目錄。回傳的 **DirAccess** 被釋放時會釋放該目錄。
 
-If ``prefix`` is not empty, it will be prefixed to the directory name, separated by a ``-``.
+如果 ``prefix`` 非空，則會用作目錄名的前綴，使用 ``-`` 分隔。
 
-If ``keep`` is ``true``, the directory is not deleted when the returned **DirAccess** is freed.
+如果 ``keep`` 為 ``true``\ ，則回傳的 **DirAccess** 被釋放時不會釋放該目錄。
 
-Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
+如果打開目錄失敗，則回傳 ``null``\ 。你可以使用 :ref:`get_open_error()<class_DirAccess_method_get_open_error>` 來查看發生的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ Returns ``null`` if opening the directory failed. You can use :ref:`get_open_err
 
 :ref:`bool<class_bool>` **dir_exists**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_dir_exists>`
 
-Returns whether the target directory exists. The argument can be relative to the current directory, or an absolute path.
+回傳目標目錄是否存在。參數可以相對於目前目錄，也可以是絕對路徑。
 
-\ **Note:** The returned :ref:`bool<class_bool>` in the editor and after exporting when used on a path in the ``res://`` directory may be different. Some files are converted to engine-specific formats when exported, potentially changing the directory structure.
+\ **注意：**\ 使用 ``res://`` 目錄下的路徑時，在編輯器中回傳的 :ref:`bool<class_bool>` 與匯出後的回傳值可能不同。匯出時會將部分檔案轉換為引擎特有的格式，可能導致目錄結構的改變。
 
 .. rst-class:: classref-item-separator
 
@@ -355,9 +355,9 @@ Returns whether the target directory exists. The argument can be relative to the
 
 :ref:`bool<class_bool>` **dir_exists_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_dir_exists_absolute>`
 
-Static version of :ref:`dir_exists()<class_DirAccess_method_dir_exists>`. Supports only absolute paths.
+:ref:`dir_exists()<class_DirAccess_method_dir_exists>` 的靜態版本。僅支援絕對路徑。
 
-\ **Note:** The returned :ref:`bool<class_bool>` in the editor and after exporting when used on a path in the ``res://`` directory may be different. Some files are converted to engine-specific formats when exported, potentially changing the directory structure.
+\ **注意：**\ 使用 ``res://`` 目錄下的路徑時，在編輯器中回傳的 :ref:`bool<class_bool>` 與匯出後的回傳值可能不同。匯出時會將部分檔案轉換為引擎特有的格式，可能導致目錄結構的改變。
 
 .. rst-class:: classref-item-separator
 
@@ -369,11 +369,11 @@ Static version of :ref:`dir_exists()<class_DirAccess_method_dir_exists>`. Suppor
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_file_exists>`
 
-Returns whether the target file exists. The argument can be relative to the current directory, or an absolute path.
+回傳目標檔案是否存在。參數可以相對於目前目錄，也可以是絕對路徑。
 
-For a static equivalent, use :ref:`FileAccess.file_exists()<class_FileAccess_method_file_exists>`.
+靜態版本見 :ref:`FileAccess.file_exists()<class_FileAccess_method_file_exists>`\ 。
 
-\ **Note:** Many resources types are imported (e.g. textures or sound files), and their source asset will not be included in the exported game, as only the imported version is used. See :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>` for an alternative approach that takes resource remapping into account.
+\ **注意：**\ 許多資源型別是匯入的（例如紋理和聲音檔案），它們的源素材不會包含在匯出的遊戲中，因為只使用匯入的版本。有關考慮資源重新映射的替代方法，請參閱 :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -409,11 +409,11 @@ For a static equivalent, use :ref:`FileAccess.file_exists()<class_FileAccess_met
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_directories**\ (\ ) :ref:`🔗<class_DirAccess_method_get_directories>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding files. The array is sorted alphabetically.
+回傳該目錄內容的檔名 :ref:`PackedStringArray<class_PackedStringArray>`\ ，不含檔案。該陣列按字母順序排序。
 
-Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>` and :ref:`include_navigational<class_DirAccess_property_include_navigational>`.
+受 :ref:`include_hidden<class_DirAccess_property_include_hidden>` 和 :ref:`include_navigational<class_DirAccess_property_include_navigational>` 的影響。
 
-\ **Note:** The returned directories in the editor and after exporting in the ``res://`` directory may differ as some files are converted to engine-specific formats when exported.
+\ **注意：**\ 對於 ``res://`` 下的目錄，在編輯器中所回傳的目錄和匯出後所回傳的目錄可能不同，因為匯出時可能將部分檔案轉換為引擎特有的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -425,11 +425,11 @@ Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>` and :
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_directories_at**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_directories_at>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding files, at the given ``path``. The array is sorted alphabetically.
+回傳 ``path`` 所指向目錄內容的檔名 :ref:`PackedStringArray<class_PackedStringArray>`\ ，不含檔案。該陣列按字母順序排序。
 
-Use :ref:`get_directories()<class_DirAccess_method_get_directories>` if you want more control of what gets included.
+如果需要對包含內容做進一步控制，請使用 :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 。
 
-\ **Note:** The returned directories in the editor and after exporting in the ``res://`` directory may differ as some files are converted to engine-specific formats when exported.
+\ **注意：**\ 對於 ``res://`` 下的目錄，在編輯器中所回傳的目錄和匯出後所回傳的目錄可能不同，因為匯出時可能將部分檔案轉換為引擎特有的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -441,13 +441,13 @@ Use :ref:`get_directories()<class_DirAccess_method_get_directories>` if you want
 
 :ref:`int<class_int>` **get_drive_count**\ (\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_count>`
 
-On Windows, returns the number of drives (partitions) mounted on the current filesystem.
+在 Windows 上，回傳掛載在目前檔案系統上的磁碟（分割區）數量。
 
-On macOS and Android, returns the number of mounted volumes.
+在 macOS 和 Android 上，回傳掛載卷的數量。
 
-On Linux, returns the number of mounted volumes and GTK 3 bookmarks.
+在 Linux 上，回傳掛載卷與 GTK 3 書籤的數量。
 
-On other platforms, the method returns 0.
+在其他平台上，該方法回傳 0。
 
 .. rst-class:: classref-item-separator
 
@@ -459,9 +459,9 @@ On other platforms, the method returns 0.
 
 :ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
 
-On Windows, returns the label of the drive (partition) passed as an argument.
+在 Windows 系統上，回傳作為參數傳入的磁碟（分割區）的標籤。
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+在其他平台上，或者如果請求的驅動器不存在，則回傳一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -473,15 +473,15 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`String<class_String>` **get_drive_name**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_name>`
 
-On Windows, returns the name of the drive (partition) passed as an argument (e.g. ``C:``).
+在 Windows 上，回傳作為參數傳入的磁碟（分割區）的名稱（例如 ``C:``\ ）。
 
-On macOS, returns the path to the mounted volume passed as an argument.
+在 macOS 上，回傳作為參數傳入的已掛載卷的路徑。
 
-On Linux, returns the path to the mounted volume or GTK 3 bookmark passed as an argument.
+在 Linux 上，回傳作為參數傳入的已掛載卷或 GTK 3 書籤的路徑。
 
-On Android (API level 30+), returns the path to the mounted volume as an argument.
+在 Android（API 30+）上，以參數形式回傳已掛載卷的路徑。
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+在其他平台上，或者如果請求的驅動器不存在，則回傳一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -509,11 +509,11 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files_at**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_files_at>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding directories, at the given ``path``. The array is sorted alphabetically.
+回傳 ``path`` 所指向目錄內容的檔名 :ref:`PackedStringArray<class_PackedStringArray>`\ ，不含目錄。該陣列按字母排序。
 
-Use :ref:`get_files()<class_DirAccess_method_get_files>` if you want more control of what gets included.
+如果需要對包含內容做進一步控制，請使用 :ref:`get_files()<class_DirAccess_method_get_files>`\ 。
 
-\ **Note:** When used on a ``res://`` path in an exported project, only the files included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``.gd`` and ``.import`` files are returned (plus a few other files, such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>`.
+\ **注意：**\ 在匯出後的專案中對 ``res://`` 使用時，只會回傳確實在 PCK 的給定資料夾中存在的檔案。在實踐中，匯入後的資源是存放在頂層的 ``.godot/`` 資料夾中的，因此只會回傳 ``.gd`` 和 ``.import`` 檔案的路徑（以及 ``project.godot`` 或者 ``project.binary`` 和專案圖示等檔案）。匯出後的專案中，回傳的清單也會因為 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 而變化。
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ Use :ref:`get_files()<class_DirAccess_method_get_files>` if you want more contro
 
 :ref:`String<class_String>` **get_filesystem_type**\ (\ ) |const| :ref:`🔗<class_DirAccess_method_get_filesystem_type>`
 
-Returns file system type name of the current directory's disk. Returned values are uppercase strings like ``NTFS``, ``FAT32``, ``EXFAT``, ``APFS``, ``EXT4``, ``BTRFS``, and so on.
+回傳目前目錄所在磁碟的檔案系統型別名稱。回傳的值是大寫字串，如 ``NTFS``\ 、\ ``FAT32``\ 、\ ``EXFAT``\ 、\ ``APFS``\ 、\ ``EXT4``\ 、\ ``BTRFS`` 等。
 
-\ **Note:** This method is implemented on macOS, Linux, Windows and for PCK virtual file system.
+\ **注意：**\ 該方法在 macOS、Linux、Windows 以及 PCK 虛擬檔案系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -577,9 +577,9 @@ Returns file system type name of the current directory's disk. Returned values a
 
 :ref:`bool<class_bool>` **is_bundle**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_bundle>`
 
-Returns ``true`` if the directory is a macOS bundle.
+如果該目錄為 macOS 捆綁包，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS.
+\ **注意：**\ 該方法在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -591,9 +591,9 @@ Returns ``true`` if the directory is a macOS bundle.
 
 :ref:`bool<class_bool>` **is_case_sensitive**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_case_sensitive>`
 
-Returns ``true`` if the file system or directory use case sensitive file names.
+如果檔案系統或目錄使用區分大小寫的檔名，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS, Linux (for EXT4 and F2FS filesystems only) and Windows. On other platforms, it always returns ``true``.
+\ **注意：**\ 該方法在 macOS、Linux（僅對於 EXT4 和 F2FS 檔案系統）和 Windows 上實作。在其他平台上，它始終回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ Returns ``true`` if the file system or directory use case sensitive file names.
 
 :ref:`bool<class_bool>` **is_equivalent**\ (\ path_a\: :ref:`String<class_String>`, path_b\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_equivalent>`
 
-Returns ``true`` if paths ``path_a`` and ``path_b`` resolve to the same file system object. Returns ``false`` otherwise, even if the files are bit-for-bit identical (e.g., identical copies of the file that are not symbolic links).
+如果路徑 ``path_a`` 和路徑 ``path_b`` 解析為同一個檔案系統物件則回傳 ``true``\ 。否則回傳 ``false``\ ，即使這兩個檔案的內容完全相同（例如，兩個相同的檔案副本，但不是符號連結）。
 
 .. rst-class:: classref-item-separator
 
@@ -617,9 +617,9 @@ Returns ``true`` if paths ``path_a`` and ``path_b`` resolve to the same file sys
 
 :ref:`bool<class_bool>` **is_link**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_is_link>`
 
-Returns ``true`` if the file or directory is a symbolic link, directory junction, or other reparse point.
+如果檔案或目錄為符號連結、目錄聯接等重解析點，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS, Linux, and Windows.
+\ **注意：**\ 該方法在 macOS、Linux 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -635,7 +635,7 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 受 :ref:`include_hidden<class_DirAccess_property_include_hidden>` 和 :ref:`include_navigational<class_DirAccess_property_include_navigational>` 的影響。
 
-\ **注意：**\ 該方法返回的檔和目錄順序是不確定的，不同作業系統也可能不同。如果你想要獲取按字母排序的檔或資料夾列表，請使用 :ref:`get_files()<class_DirAccess_method_get_files>` 或 :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 。
+\ **注意：**\ 該方法返回的檔和目錄順序是不確定的，不同作業系統也可能不同。如果你想要取得按字母排序的檔或資料夾列表，請使用 :ref:`get_files()<class_DirAccess_method_get_files>` 或 :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -725,9 +725,9 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`String<class_String>` **read_link**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_read_link>`
 
-Returns target of the symbolic link.
+回傳符號連結的目標。
 
-\ **Note:** This method is implemented on macOS, Linux, and Windows.
+\ **注意：**\ 該方法在 macOS、Linux 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -767,7 +767,7 @@ Returns target of the symbolic link.
 
 :ref:`Error<enum_@GlobalScope_Error>` **rename**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_rename>`
 
-將 ``from`` 檔或目錄重命名為（移動至）\ ``to`` 目標。兩個參數都應該是檔或目錄的路徑，可以是相對路徑也可以是絕對路徑。如果目的檔案或目錄已存在，並且沒有防寫，則會被覆蓋。
+將 ``from`` 檔或目錄重新命名為（移動至）\ ``to`` 目標。兩個參數都應該是檔或目錄的路徑，可以是相對路徑也可以是絕對路徑。如果目的檔案或目錄已存在，並且沒有防寫，則會被覆蓋。
 
 返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 

@@ -7,16 +7,16 @@ StreamPeerUDS
 
 **繼承：** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A stream peer that handles UNIX Domain Socket (UDS) connections.
+處理 UNIX 域套接字 (UDS) 連接的流對等端。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A stream peer that handles UNIX Domain Socket (UDS) connections. This object can be used to connect to UDS servers, or also is returned by a UDS server. Unix Domain Sockets provide inter-process communication on the same machine using the filesystem namespace.
+處理 UNIX 域套接字 (UDS) 連接的流對等端。該物件可用於連接 UDS 伺服器，也可由 UDS 伺服器回傳。Unix 域套接字使用檔案系統命名空間在同一台機器上提供處理程序間通信。
 
-\ **Note:** UNIX Domain Sockets are only available on UNIX-like systems (Linux, macOS, etc.) and are not supported on Windows.
+\ **注意：**\ UNIX 域套接字僅在類 UNIX 系統（Linux、macOS 等）上可用，Windows 系統上不受支援。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,9 +49,9 @@ A stream peer that handles UNIX Domain Socket (UDS) connections. This object can
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_bind>`
 
-Opens the UDS socket, and binds it to the specified socket path.
+打開 UDS 套接字，並將其綁定到指定的套接字路徑。
 
-This method is generally not needed, and only used to force the subsequent call to :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>` to use the specified ``path`` as the source address.
+通常不需要該方法，它僅用於強制後續呼叫 :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>` 時使用指定的 ``path`` 作為源位址。
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ This method is generally not needed, and only used to force the subsequent call 
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_connect_to_host>`
 
-Connects to the specified UNIX Domain Socket path. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
+連接到指定的 UNIX 域套接字路徑。成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Connects to the specified UNIX Domain Socket path. Returns :ref:`@GlobalScope.OK
 
 :ref:`String<class_String>` **get_connected_path**\ (\ ) |const| :ref:`🔗<class_StreamPeerUDS_method_get_connected_path>`
 
-Returns the socket path of this peer.
+回傳該對等端的套接字路徑。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

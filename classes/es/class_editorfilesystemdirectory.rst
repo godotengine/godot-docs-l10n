@@ -69,7 +69,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **find_dir_index**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_find_dir_index>`
 
-Returns the index of the directory with name ``name`` or ``-1`` if not found.
+Devuelve el índice del directorio con el nombre ``name`` o ``-1`` si no se encuentra.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ Returns the index of the directory with name ``name`` or ``-1`` if not found.
 
 :ref:`int<class_int>` **find_file_index**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_find_file_index>`
 
-Returns the index of the file with name ``name`` or ``-1`` if not found.
+Devuelve el índice del archivo con el nombre ``name`` o ``-1`` si no se encuentra.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Returns the base class of the script class defined in the file at index ``idx``.
 
 :ref:`String<class_String>` **get_file_script_class_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_get_file_script_class_name>`
 
-Returns the name of the script class defined in the file at index ``idx``. If the file doesn't define a script class using the ``class_name`` syntax, this will return an empty string.
+Devuelve el nombre de la clase de script definida en el archivo en el índice ``idx``. Si el archivo no define una clase de script utilizando la sintaxis ``class_name``, devolverá una string vacía.
 
 .. rst-class:: classref-item-separator
 

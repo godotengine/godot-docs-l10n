@@ -16,7 +16,7 @@ Camera3D
 說明
 ----
 
-**Camera3D** 是一個特殊節點，用於顯示從其目前位置可見的內容。相機在最近的 :ref:`Viewport<class_Viewport>` 節點中註冊自己（當樹上行）。每個視口中只能有一個啟動的相機。如果在樹上沒有可用的視口，相機將在全域視口中註冊。換句話說，相機只是用來為 :ref:`Viewport<class_Viewport>` 提供 3D 顯示能力的，如果沒有，則在該 :ref:`Viewport<class_Viewport>`\ （或更高層視口）中註冊的場景無法顯示。
+**Camera3D** 是一個特殊節點，用於顯示從其目前位置可見的內容。相機在最近的 :ref:`Viewport<class_Viewport>` 節點中註冊自己（當樹上行）。每個視埠中只能有一個啟動的相機。如果在樹上沒有可用的視埠，相機將在全域視埠中註冊。換句話說，相機只是用來為 :ref:`Viewport<class_Viewport>` 提供 3D 顯示能力的，如果沒有，則在該 :ref:`Viewport<class_Viewport>`\ （或更高層視埠）中註冊的場景無法顯示。
 
 .. rst-class:: classref-introduction-group
 
@@ -194,7 +194,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_DISABLED** = ``0``
 
-禁用\ `多普勒效應 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模擬（預設）。
+停用\ `多普勒效應 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模擬（預設）。
 
 .. _class_Camera3D_constant_DOPPLER_TRACKING_IDLE_STEP:
 
@@ -249,7 +249,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 - |void| **set_compositor**\ (\ value\: :ref:`Compositor<class_Compositor>`\ )
 - :ref:`Compositor<class_Compositor>` **get_compositor**\ (\ )
 
-The :ref:`Compositor<class_Compositor>` to use for this camera.
+該相機所使用的 :ref:`Compositor<class_Compositor>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ The :ref:`Compositor<class_Compositor>` to use for this camera.
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-剔除遮罩，描述該相機算繪了哪些 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ 。預設情況下，20 個使用者可見層全都被算繪。
+剔除遮罩，描述該相機渲染了哪些 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ 。預設情況下，20 個使用者可見層全都被渲染。
 
 \ **注意：**\ 由於 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 允許總共儲存 32 個層，因此另外 12 個層僅供引擎內部使用，不會在編輯器中公開。使用腳本設定 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 允許你切換那些保留層，這對編輯器外掛程式很有用。
 
@@ -308,9 +308,9 @@ The :ref:`Compositor<class_Compositor>` to use for this camera.
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-If not :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`, this camera will simulate the `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ for objects changed in particular ``_process`` methods.
+如果不是 :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`\ ，此相機將為在 ``_process`` 中變化的物件模擬\ `多普勒效應 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。
 
-\ **Note:** The Doppler effect will only be heard on :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ s if :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not set to :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
+\ **注意：**\ 僅當 :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` 未設定為 :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` 時，才會在 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 上聽到多普勒效果。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ If not :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_
 - |void| **set_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_far**\ (\ )
 
-該相機相對於其局部 Z 軸到遠剔除邊界的距離。較高的值允許相機看得更遠，而減少 :ref:`far<class_Camera3D_property_far>` 如果會導致物件被部分或完全剔除，則可以提高性能。
+該相機相對於其區域 Z 軸到遠剔除邊界的距離。較高的值允許相機看得更遠，而減少 :ref:`far<class_Camera3D_property_far>` 如果會導致物件被部分或完全剔除，則可以提高效能。
 
 .. rst-class:: classref-item-separator
 
@@ -361,17 +361,17 @@ If not :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-The camera's field of view angle (in degrees). Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, :ref:`fov<class_Camera3D_property_fov>` sets the other axis' field of view angle.
+相機的視野角度（單位為度）。僅適用於透視模式。由於 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` 鎖定一個軸，因此 :ref:`fov<class_Camera3D_property_fov>` 設定另一個軸的視角。
 
-For reference, the default vertical field of view value (``75.0``) is equivalent to a horizontal FOV of:
+作為參考，預設的垂直視野值（\ ``70.0``\ ）相當於以下水平 FOV：
 
-- ~91.31 degrees in a 4:3 viewport
+- 在 4:3 視埠中約 91.31 度
 
-- ~101.67 degrees in a 16:10 viewport
+- 在 16:10 視埠中約 101.67 度
 
-- ~107.51 degrees in a 16:9 viewport
+- 在 16:9 視埠中約 107.51 度
 
-- ~121.63 degrees in a 21:9 viewport
+- 在 21:9 視埠中約 121.63 度
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_h_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_h_offset**\ (\ )
 
-相機視口的水平（X）偏移量。
+相機視埠的水平（X）偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_near**\ (\ )
 
-該相機相對於其局部 Z 軸到近剔除邊界的距離。較低的值允許相機看到更靠近其原點的物件，但代價是\ *整個*\ 範圍內的精度較低。低於預設值的值會導致 Z 衝突增加。
+該相機相對於其區域 Z 軸到近剔除邊界的距離。較低的值允許相機看到更靠近其原點的物件，但代價是\ *整個*\ 範圍內的精度較低。低於預設值的值會導致 Z 衝突增加。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_projection**\ (\ value\: :ref:`ProjectionType<enum_Camera3D_ProjectionType>`\ )
 - :ref:`ProjectionType<enum_Camera3D_ProjectionType>` **get_projection**\ (\ )
 
-相機的投影模式。在 :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>` 模式下，物體與相機局部空間的Z距離會影響其感知的大小。
+相機的投影模式。在 :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>` 模式下，物體與相機區域空間的Z距離會影響其感知的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_v_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_offset**\ (\ )
 
-相機視口的垂直（Y）偏移量。
+相機視埠的垂直（Y）偏移量。
 
 .. rst-class:: classref-section-separator
 
@@ -521,7 +521,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 
 :ref:`Projection<class_Projection>` **get_camera_projection**\ (\ ) |const| :ref:`🔗<class_Camera3D_method_get_camera_projection>`
 
-返回該相機用於算繪至關聯視口的投影矩陣。相機必須是場景樹的一部分才能正常工作。
+返回該相機用於渲染至關聯視埠的投影矩陣。相機必須是場景樹的一部分才能正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 
 |void| **set_cull_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Camera3D_method_set_cull_mask_value>`
 
-基於 ``value``\ ，啟用或禁用 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
+基於 ``value``\ ，啟用或停用 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 
 |void| **set_frustum**\ (\ size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_frustum>`
 
-Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), by specifying a ``size``, an ``offset``, and the ``z_near`` and ``z_far`` clip planes in world space units. The ``size`` parameter represents the size of the near plane, either its width or height depending on the value of :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. See also :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+通過指定的以世界空間單位為單位的 ``size``\ 、\ ``offset``\ 、以及 ``z_near`` 和 ``z_far`` 裁剪平面，將相機投影設定為視錐模式（見 :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`\ ）。\ ``size`` 參數表示近平面的大小，其寬度或高度取決於 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` 的值。另見 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -703,9 +703,9 @@ Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_C
 
 |void| **set_orthogonal**\ (\ size\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_orthogonal>`
 
-Sets the camera projection to orthogonal mode (see :ref:`PROJECTION_ORTHOGONAL<class_Camera3D_constant_PROJECTION_ORTHOGONAL>`), by specifying a ``size``, and the ``z_near`` and ``z_far`` clip planes in world space units.
+通過指定的以世界空間單位為單位的 ``size``\ 、以及 ``z_near`` 和 ``z_far`` 裁剪平面，將相機投影設定為正交模式（參見 :ref:`PROJECTION_ORTHOGONAL<class_Camera3D_constant_PROJECTION_ORTHOGONAL>`\ ）。
 
-As a hint, 3D games that look 2D often use this projection, with ``size`` specified in pixels.
+作為提示，看起來像 2D 的 3D 遊戲經常使用這種投影，其中 ``size`` 以像素為單位指定。
 
 .. rst-class:: classref-item-separator
 
@@ -731,7 +731,7 @@ As a hint, 3D games that look 2D often use this projection, with ``size`` specif
 
 返回對應到世界空間中給定 3D 點的 :ref:`Viewport<class_Viewport>` 矩形中的 2D 座標。
 
-\ **注意：**\ 當使用它在 3D 視口上定位 GUI 元素時，如果 3D 點在相機後面，請使用 :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` 來防止它們出現：
+\ **注意：**\ 當使用它在 3D 視埠上定位 GUI 元素時，如果 3D 點在相機後面，請使用 :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` 來防止它們出現：
 
 ::
 

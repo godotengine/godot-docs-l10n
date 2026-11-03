@@ -14,7 +14,7 @@ EditorResourcePreviewGenerator
 說明
 ----
 
-Custom code to generate previews. Check :ref:`EditorSettings.filesystem/file_dialog/thumbnail_size<class_EditorSettings_property_filesystem/file_dialog/thumbnail_size>` to find a proper size to generate previews at.
+生成預覽的自訂程式碼。請查看 :ref:`EditorSettings.filesystem/file_dialog/thumbnail_size<class_EditorSettings_property_filesystem/file_dialog/thumbnail_size>` 找出適合做預覽的尺寸。
 
 .. rst-class:: classref-reftable-group
 
@@ -67,13 +67,13 @@ Custom code to generate previews. Check :ref:`EditorSettings.filesystem/file_dia
 
 :ref:`Texture2D<class_Texture2D>` **_generate**\ (\ resource\: :ref:`Resource<class_Resource>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate>`
 
-Generate a preview from a given resource with the specified size. This must always be implemented.
+根據給定的資源生成指定大小的預覽。必須始終實作。
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+失敗時允許回傳 ``null``\ ，會由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必須保持謹慎，因為這個函式始終是從（主執行緒以外的）執行緒中呼叫的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，從而儲存能夠在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的檔案相關的來源資料（例如圖片大小、取樣長度等）。
 
 .. rst-class:: classref-item-separator
 
@@ -85,13 +85,13 @@ Care must be taken because this function is always called from a thread (not the
 
 :ref:`Texture2D<class_Texture2D>` **_generate_from_path**\ (\ path\: :ref:`String<class_String>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`
 
-Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`.
+根據路徑直接生成指定大小的預覽。可選實作，預設程式碼會在載入後呼叫 :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`\ 。
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+失敗時允許回傳 ``null``\ ，會由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必須保持謹慎，因為這個函式始終是從（主執行緒以外的）執行緒中呼叫的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，從而儲存能夠在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的檔案相關的來源資料（例如圖片大小、取樣長度等）。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ Care must be taken because this function is always called from a thread (not the
 
 |void| **request_draw_and_wait**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_EditorResourcePreviewGenerator_method_request_draw_and_wait>`
 
-Call from within :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` to request the rendering server draw to the ``viewport``.
+從 :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` 方法內部呼叫，以請求渲染伺服器繪製到 ``viewport``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

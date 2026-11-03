@@ -16,9 +16,9 @@ Un nœud qui peut modifier un os d'un Skeleton3D en associant deux os.
 Description
 -----------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that modifies the bone set in :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` based on the transform of the bone retrieved by :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
+Classe de base de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` qui modifie l'os défini dans :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` selon la transformation de l'os récupéré par :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/amount``).
+\ **Note :** La plupart des méthodes de cette classe acceptent un paramètre ``index``. Ce paramètre spécifie quelle entrée de la liste de paramètres doit être renvoyée si l'IK comporte plusieurs entrées (par exemple, ``settings/<index>/amount``).
 
 .. rst-class:: classref-reftable-group
 

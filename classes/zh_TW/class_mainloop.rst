@@ -16,11 +16,11 @@ MainLoop
 說明
 ----
 
-**MainLoop** is the abstract base class for a Godot project's game loop. It is inherited by :ref:`SceneTree<class_SceneTree>`, which is the default game loop implementation used in Godot projects, though it is also possible to write and use one's own **MainLoop** subclass instead of the scene tree.
+**MainLoop** 是 Godot 專案中遊戲循環的抽象基底類別。它被 :ref:`SceneTree<class_SceneTree>` 繼承，\ :ref:`SceneTree<class_SceneTree>` 是 Godot 專案中使用的預設遊戲循環的實作，不過也可以編寫和使用自己的 **MainLoop** 子類別，來代替場景樹。
 
-Upon the application start, a **MainLoop** implementation must be provided to the OS; otherwise, the application will exit. This happens automatically (and a :ref:`SceneTree<class_SceneTree>` is created) unless a **MainLoop** :ref:`Script<class_Script>` is provided from the command line (with e.g. ``godot -s my_loop.gd``) or the :ref:`ProjectSettings.application/run/main_loop_type<class_ProjectSettings_property_application/run/main_loop_type>` project setting is overwritten.
+應用程式啟動時必須向作業系統提供一個 **MainLoop** 實作；否則應用程式將退出。該過程是自動的（會建立 :ref:`SceneTree<class_SceneTree>`\ ），除非從命令行提供了 **MainLoop** :ref:`Script<class_Script>`\ （例如 ``godot -s my_loop.gd``\ ）或覆蓋了 :ref:`ProjectSettings.application/run/main_loop_type<class_ProjectSettings_property_application/run/main_loop_type>` 專案設定。
 
-Here is an example script implementing a simple **MainLoop**:
+以下是實作簡單 **MainLoop** 的範例腳本：
 
 
 .. tabs::
@@ -33,17 +33,17 @@ Here is an example script implementing a simple **MainLoop**:
     var time_elapsed = 0
 
     func _initialize():
-        print("Initialized:")
-        print("  Starting time: %s" % str(time_elapsed))
+        print("初始化：")
+        print("  開始時間：%s" % str(time_elapsed))
 
     func _process(delta):
         time_elapsed += delta
-        # Return true to end the main loop.
+        # 回傳 true 結束主循環。
         return Input.get_mouse_button_mask() != 0 || Input.is_key_pressed(KEY_ESCAPE)
 
     func _finalize():
-        print("Finalized:")
-        print("  End time: %s" % str(time_elapsed))
+        print("完成：")
+        print("  結束時間：%s" % str(time_elapsed))
 
  .. code-tab:: csharp
 
@@ -56,21 +56,21 @@ Here is an example script implementing a simple **MainLoop**:
 
         public override void _Initialize()
         {
-            GD.Print("Initialized:");
-            GD.Print($"  Starting Time: {_timeElapsed}");
+            GD.Print("初始化：");
+            GD.Print($"  開始時間：{_timeElapsed}");
         }
 
         public override bool _Process(double delta)
         {
             _timeElapsed += delta;
-            // Return true to end the main loop.
+            // 回傳 true 結束主循環。
             return Input.GetMouseButtonMask() != 0 || Input.IsKeyPressed(Key.Escape);
         }
 
         private void _Finalize()
         {
-            GD.Print("Finalized:");
-            GD.Print($"  End Time: {_timeElapsed}");
+            GD.Print("完成：");
+            GD.Print($"  結束時間：{_timeElapsed}");
         }
     }
 
@@ -164,9 +164,9 @@ Here is an example script implementing a simple **MainLoop**:
 
 **NOTIFICATION_OS_IME_UPDATE** = ``2013`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_OS_IME_UPDATE>`
 
-Notification received from the OS when an update of the Input Method Engine occurs (e.g. change of IME cursor position or composition string).
+當輸入法引擎發生更新時，從作業系統收到的通知（例如，IME 游標位置或組成字串的變化）。
 
-Implemented on desktop and web platforms.
+已在桌面平台和 web 平台上實作。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -224,7 +224,7 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+當應用程式進入畫中畫模式時收到的通知。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -232,7 +232,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+當應用程式退出畫中畫模式時收到的通知。
 
 .. rst-class:: classref-section-separator
 
@@ -273,13 +273,13 @@ Notification received when the application exits picture-in-picture mode.
 
 :ref:`bool<class_bool>` **_physics_process**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_MainLoop_private_method__physics_process>`
 
-Called each physics tick. ``delta`` is the logical time between physics ticks in seconds and is equal to :ref:`Engine.time_scale<class_Engine_property_time_scale>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. Equivalent to :ref:`Node._physics_process()<class_Node_private_method__physics_process>`.
+每個物理週期呼叫一次。\ ``delta`` 是物理週期之間的邏輯時間，單位為秒，等於 :ref:`Engine.time_scale<class_Engine_property_time_scale>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。等價於 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ 。
 
-If implemented, the method must return a boolean value. ``true`` ends the main loop, while ``false`` lets it proceed to the next step.
+實作後，該方法必須回傳布林值。\ ``true`` 會終止主循環，而 ``false`` 則會允許其進入下一步。
 
-\ **Note:** :ref:`_physics_process()<class_MainLoop_private_method__physics_process>` may be called up to :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` times per (idle) frame. This step limit may be reached when the engine is suffering performance issues.
+\ **注意：**\ :ref:`_physics_process()<class_MainLoop_private_method__physics_process>` 每（空閒）影格最多只能呼叫 :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 次。引擎遭遇效能問題時可能觸及該限制。
 
-\ **Note:** Accumulated ``delta`` may diverge from real world seconds.
+\ **注意：**\ 對 ``delta`` 進行累加可能與現實世界的秒數存在偏差。
 
 .. rst-class:: classref-item-separator
 
@@ -291,15 +291,15 @@ If implemented, the method must return a boolean value. ``true`` ends the main l
 
 :ref:`bool<class_bool>` **_process**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_MainLoop_private_method__process>`
 
-Called on each idle frame, prior to rendering, and after physics ticks have been processed. ``delta`` is the time between frames in seconds. Equivalent to :ref:`Node._process()<class_Node_private_method__process>`.
+每個空閒影格呼叫一次，呼叫時機在渲染之前、所有物理影格處理完畢之後。\ ``delta`` 是影格與影格之間的時間，單位為秒。等價於 :ref:`Node._process()<class_Node_private_method__process>`\ 。
 
-If implemented, the method must return a boolean value. ``true`` ends the main loop, while ``false`` lets it proceed to the next frame.
+實作後，該方法必須回傳布林值。\ ``true`` 會終止主循環，而 ``false`` 則會允許其進入下一影格。
 
-\ **Note:** When the engine is struggling and the frame rate is lowered, ``delta`` will increase. When ``delta`` is increased, it's capped at a maximum of :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. As a result, accumulated ``delta`` may not represent real world time.
+\ **注意：**\ 引擎遭遇影格率下降時，\ ``delta`` 會增大。\ ``delta`` 增大時，最大值為 :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。因此，對 ``delta`` 進行累加可能與現實世界的秒數存在偏差。
 
-\ **Note:** When ``--fixed-fps`` is enabled or the engine is running in Movie Maker mode (see :ref:`MovieWriter<class_MovieWriter>`), process ``delta`` will always be the same for every frame, regardless of how much time the frame took to render.
+\ **注意：**\ 如果啟用了 ``--fixed-fps`` 或者在 Movie Maker 模式下執行（見 :ref:`MovieWriter<class_MovieWriter>`\ ），每影格的處理 ``delta`` 都相同，與該影格的渲染耗時無關。
 
-\ **Note:** Frame delta may be post-processed by :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` if this is enabled for the project.
+\ **注意：**\ 如果專案啟用了 :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>`\ ，則影格間隔可能經過後期處理。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

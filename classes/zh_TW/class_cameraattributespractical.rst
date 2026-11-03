@@ -14,13 +14,13 @@ CameraAttributesPractical
 說明
 ----
 
-Controls camera-specific attributes such as auto-exposure, depth of field, and exposure override.
+控制相機的特定屬性，如自動曝光、景深、以及曝光覆蓋。
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+當在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用時，它提供了曝光、自動曝光、以及景深的預設設定，這些設定將由所有沒有自己的 :ref:`CameraAttributes<class_CameraAttributes>` 的相機使用，包括編輯器相機。當在 :ref:`Camera3D<class_Camera3D>` 中使用時，它將覆蓋 :ref:`WorldEnvironment<class_WorldEnvironment>` 中設定的任何 :ref:`CameraAttributes<class_CameraAttributes>`\ 。當在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用時，只會使用曝光設定。
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 景深模糊僅在 Forward+ 和 Mobile 渲染方法中受支援，Compatibility 中不受支援。
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 自動曝光僅在 Forward+ 渲染方法中受支援，在 Mobile 或 Compatibility 中不受支援。
 
 .. rst-class:: classref-reftable-group
 
@@ -104,7 +104,7 @@ When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides defau
 - |void| **set_dof_blur_amount**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dof_blur_amount**\ (\ )
 
-Sets the maximum amount of blur. When using physically-based blur amounts, will instead act as a multiplier. High values lead to an increased amount of blurriness, but can be much more expensive to calculate. It is best to keep this as low as possible for a given art style.
+設定最大模糊量。當使用基於物理的模糊量時，將改為充當一個乘數。高值會導致模糊度增加，但計算起來會更昂貴。對於一個給定的藝術風格，最好將該值保持得盡可能低。
 
 .. rst-class:: classref-item-separator
 
@@ -138,11 +138,11 @@ Sets the maximum amount of blur. When using physically-based blur amounts, will 
 - |void| **set_dof_blur_far_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dof_blur_far_enabled**\ (\ )
 
-Enables depth of field blur for objects further than :ref:`dof_blur_far_distance<class_CameraAttributesPractical_property_dof_blur_far_distance>`. Strength of blur is controlled by :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` and modulated by :ref:`dof_blur_far_transition<class_CameraAttributesPractical_property_dof_blur_far_transition>`.
+為比 :ref:`dof_blur_far_distance<class_CameraAttributesPractical_property_dof_blur_far_distance>` 更遠的物件啟用景深模糊。模糊強度由 :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` 控制並由 :ref:`dof_blur_far_transition<class_CameraAttributesPractical_property_dof_blur_far_transition>` 調制。
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 景深模糊只支援 Forward+ 和移動渲染方式，不支援相容模式。
 
-\ **Note:** Depth of field blur is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **注意：** 當視埠背景為透明（即 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）時，不支援景深模糊效果。
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Enables depth of field blur for objects further than :ref:`dof_blur_far_distance
 
 \ **注意：** 景深模糊僅在 Forward+ 和 Mobile 渲染方法中受支持，不支援相容模式。
 
-\ **注意：** 景深模糊在具有透明背景的視口（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）上不受支援。
+\ **注意：** 景深模糊在具有透明背景的視埠（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）上不受支援。
 
 .. rst-class:: classref-item-separator
 

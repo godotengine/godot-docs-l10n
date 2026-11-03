@@ -122,7 +122,7 @@ PolygonPathFinder
 
 :ref:`bool<class_bool>` **is_point_inside**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PolygonPathFinder_method_is_point_inside>`
 
-Returns ``true`` if ``point`` falls inside the polygon area.
+如果 ``point`` 在多邊形區域內部，則回傳 ``true``\ 。
 
 
 .. tabs::
@@ -133,8 +133,8 @@ Returns ``true`` if ``point`` falls inside the polygon area.
     var points = [Vector2(0.0, 0.0), Vector2(1.0, 0.0), Vector2(0.0, 1.0)]
     var connections = [0, 1, 1, 2, 2, 0]
     polygon_path_finder.setup(points, connections)
-    print(polygon_path_finder.is_point_inside(Vector2(0.2, 0.2))) # Prints true
-    print(polygon_path_finder.is_point_inside(Vector2(1.0, 1.0))) # Prints false
+    print(polygon_path_finder.is_point_inside(Vector2(0.2, 0.2))) # 輸出 true
+    print(polygon_path_finder.is_point_inside(Vector2(1.0, 1.0))) # 輸出 false
 
  .. code-tab:: csharp
 
@@ -147,8 +147,8 @@ Returns ``true`` if ``point`` falls inside the polygon area.
     ];
     int[] connections = [0, 1, 1, 2, 2, 0];
     polygonPathFinder.Setup(points, connections);
-    GD.Print(polygonPathFinder.IsPointInside(new Vector2(0.2f, 0.2f))); // Prints True
-    GD.Print(polygonPathFinder.IsPointInside(new Vector2(1.0f, 1.0f))); // Prints False
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(0.2f, 0.2f))); // 輸出 True
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(1.0f, 1.0f))); // 輸出 False
 
 
 
@@ -176,9 +176,9 @@ Returns ``true`` if ``point`` falls inside the polygon area.
 
 |void| **setup**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, connections\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PolygonPathFinder_method_setup>`
 
-Sets up **PolygonPathFinder** with an array of points that define the vertices of the polygon, and an array of indices that determine the edges of the polygon.
+使用兩個陣列設定 **PolygonPathFinder**\ ：點陣列中定義了多邊形的頂點，索引陣列則決定了多邊形的邊。
 
-The length of ``connections`` must be even, returns an error if odd.
+\ ``connections`` 的長度必須為偶數，為奇數時會回傳錯誤。
 
 
 .. tabs::

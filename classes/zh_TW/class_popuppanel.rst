@@ -61,7 +61,7 @@ PopupPanel
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_PopupPanel_theme_style_panel>`
 
-:ref:`StyleBox<class_StyleBox>` for the background panel.
+用於背景面板的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

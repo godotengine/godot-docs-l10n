@@ -7,7 +7,7 @@ FontFile
 
 **繼承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存放字形來源資料和預算繪字形的快取，從動態字形或點陣字型匯入。
+存放字形來源資料和預渲染字形的快取，從動態字形或點陣字型匯入。
 
 .. rst-class:: classref-introduction-group
 
@@ -26,11 +26,11 @@ FontFile
 
 - 點陣字型匯入器：AngelCode BMFont（.fnt，.font），支援文字和二進位（版本 3）格式變體。
 
-- 等寬圖像字形匯入器：所有支援的圖像格式。
+- 等寬影像字形匯入器：所有支援的影像格式。
 
 \ **注意：**\ 字元（character）是一種表示某個專案（字母、數位等）的抽象符號。
 
-\ **注意：**\ 字形（glphy）是一種點陣圖或形狀，用於根據本文繪製一個或多個字符。字形索引綁定的是某個字形資料來源。
+\ **注意：**\ 字形（glphy）是一種點陣圖或形狀，用於根據本文繪製一個或多個字元。字形索引綁定的是某個字形資料來源。
 
 \ **注意：**\ 如果所有字形資料來源都不包含字串中某個字元的字形，那麼該字元就會被替換為一個中間是對應十六進位碼的方框。
 
@@ -293,7 +293,7 @@ FontFile
 - |void| **set_antialiasing**\ (\ value\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ )
 - :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **get_antialiasing**\ (\ )
 
-字形抗鋸齒模式。
+字形反鋸齒模式。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ FontFile
 - |void| **set_disable_embedded_bitmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_disable_embedded_bitmaps**\ (\ )
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+如果為 ``true``\ ，則會停用內嵌字型點陣圖的載入（僅包含點陣圖的字型以及彩色字型會停用該屬性）。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 - |void| **set_fixed_size_scale_mode**\ (\ value\: :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>`\ )
 - :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **get_fixed_size_scale_mode**\ (\ )
 
-Scaling mode, used only for the bitmap fonts with :ref:`fixed_size<class_FontFile_property_fixed_size>` greater than zero.
+縮放模式，只有 :ref:`fixed_size<class_FontFile_property_fixed_size>` 大於零的點陣圖字型會使用。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Scaling mode, used only for the bitmap fonts with :ref:`fixed_size<class_FontFil
 - |void| **set_font_style**\ (\ value\: |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\]\ )
 - |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\] **get_font_style**\ (\ )
 
-Font style flags.
+字型樣式標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Font style flags.
 - |void| **set_keep_rounding_remainders**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_rounding_remainders**\ (\ )
 
-If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
+如果設定為 ``true``\ ，則將字形與像素邊界對齊時會累積捨入余數，確保字形的分布更加均勻。如果啟用了次像素定位則該設定無效。
 
 .. rst-class:: classref-item-separator
 
@@ -516,7 +516,7 @@ If set to ``true``, when aligning glyphs to the pixel boundaries rounding remain
 - |void| **set_modulate_color_glyphs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_modulate_color_glyphs**\ (\ )
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+如果設為 ``true``\ ，則繪製彩色字形時會應用顏色調制，否則只會對灰度字形應用。
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但算繪速度較慢並且需要更多記憶體。只有當注意到字形算繪中明顯缺乏精度時，才增加該屬性的值。
+用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但渲染速度較慢並且需要更多記憶體。只有當注意到字形渲染中明顯缺乏精度時，才增加該屬性的值。
 
 .. rst-class:: classref-item-separator
 
@@ -567,11 +567,11 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_multichannel_signed_distance_field**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multichannel_signed_distance_field**\ (\ )
 
-如果被設定為 ``true``\ ，則所有大小的字形進行算繪時，都使用從動態字形向量資料中生成的單個多通道帶符號距離場（MSDF）。由於這種方法不依賴於在每次字體大小發生變化時，對字形進行柵格化，因此可以即時調整字形大小而不會造成任何性能損失。對於按比例縮小的 :ref:`Control<class_Control>`\ （或從遠距離查看的 :ref:`Label3D<class_Label3D>`\ ），文字也不會看起來有顆粒感。有一個缺點，MSDF 不提供字形提示。缺少字形提示可能會導致大小較小的字形的清晰度和可讀性較差。
+如果被設定為 ``true``\ ，則所有大小的字形進行渲染時，都使用從動態字形向量資料中生成的單個多通道帶符號距離場（MSDF）。由於這種方法不依賴於在每次字型大小發生變化時，對字形進行柵格化，因此可以即時調整字形大小而不會造成任何效能損失。對於按比例縮小的 :ref:`Control<class_Control>`\ （或從遠距離查看的 :ref:`Label3D<class_Label3D>`\ ），文字也不會看起來有顆粒感。有一個缺點，MSDF 不提供字形提示。缺少字形提示可能會導致大小較小的字形的清晰度和可讀性較差。
 
-\ **注意：**\ 如果使用字形輪廓，\ :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為最大字體輪廓大小的\ *兩倍*\ 。
+\ **注意：**\ 如果使用字形輪廓，\ :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為最大字型輪廓大小的\ *兩倍*\ 。
 
-\ **注意：**\ MSDF 字形算繪不能正確算繪具有重疊形狀的字形。根據 OpenType 標准，重疊形狀是無效的，但在許多字形檔中仍然很常見，尤其是那些由 Google 字形轉換的字形檔。為避免字形重疊的問題，請考慮直接從字形開發公司下載字形檔，而不是依賴 Google 字形。
+\ **注意：**\ MSDF 字形渲染不能正確渲染具有重疊形狀的字形。根據 OpenType 標准，重疊形狀是無效的，但在許多字形檔中仍然很常見，尤其是那些由 Google 字形轉換的字形檔。為避免字形重疊的問題，請考慮直接從字形開發公司下載字形檔，而不是依賴 Google 字形。
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_oversampling**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversampling**\ (\ )
 
-If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods.
+如果設為正數，則會覆蓋使用該字型的視埠的過取樣係數。見 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。該值不會覆蓋 ``draw_*`` 方法的 ``oversampling`` 參數。
 
 .. rst-class:: classref-item-separator
 
@@ -668,9 +668,9 @@ If set to a positive value, overrides the oversampling factor of the viewport th
 
 |void| **clear_glyphs**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_FontFile_method_clear_glyphs>`
 
-Removes all rendered glyph information from the cache entry.
+從字型快取條目中，移除所有渲染的字形資訊。
 
-\ **Note:** This function will not remove textures associated with the glyphs, use :ref:`remove_texture()<class_FontFile_method_remove_texture>` to remove them manually.
+\ **注意：**\ 該函式不會移除與字形相關的紋理，請使用 :ref:`remove_texture()<class_FontFile_method_remove_texture>` 手動移除它們。
 
 .. rst-class:: classref-item-separator
 
@@ -816,7 +816,7 @@ Removes all rendered glyph information from the cache entry.
 
 :ref:`float<class_float>` **get_extra_baseline_offset**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_extra_baseline_offset>`
 
-Returns extra baseline offset (as a fraction of font height).
+回傳額外的基線偏移（作為字型高度的一部分）。
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ Returns extra baseline offset (as a fraction of font height).
 
 :ref:`int<class_int>` **get_extra_spacing**\ (\ cache_index\: :ref:`int<class_int>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`\ ) |const| :ref:`🔗<class_FontFile_method_get_extra_spacing>`
 
-Returns spacing for ``spacing`` in pixels (not relative to the font size).
+回傳 ``spacing`` 的間距，單位為像素（與字型大小無關）。
 
 .. rst-class:: classref-item-separator
 
@@ -878,7 +878,7 @@ Returns spacing for ``spacing`` in pixels (not relative to the font size).
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_glyph_list**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_list>`
 
-返回快取條目中的已算繪字形列表。
+返回快取條目中的已渲染字形列表。
 
 .. rst-class:: classref-item-separator
 
@@ -1010,7 +1010,7 @@ Returns spacing for ``spacing`` in pixels (not relative to the font size).
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_size_cache_list**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_size_cache_list>`
 
-Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_Vector2i>` with font size and outline size.
+回傳快取中字型大小的清單。每個大小都是由字型大小和輪廓大小組成的 :ref:`Vector2i<class_Vector2i>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1034,7 +1034,7 @@ Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_V
 
 :ref:`Image<class_Image>` **get_texture_image**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_texture_image>`
 
-返回字形快取紋理圖像的副本。
+返回字形快取紋理影像的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1122,7 +1122,7 @@ Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_V
 
 |void| **remove_glyph**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_remove_glyph>`
 
-從快取條目中移除指定的算繪的字形資訊。
+從快取條目中移除指定的渲染的字形資訊。
 
 \ **注意：**\ 該函式不會移除與字形相關的紋理，請使用 :ref:`remove_texture()<class_FontFile_method_remove_texture>` 手動移除它們。
 
@@ -1198,7 +1198,7 @@ Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_V
 
 |void| **render_glyph**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_render_glyph>`
 
-將指定的字元算繪到字形快取紋理。
+將指定的字元渲染到字形快取紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -1210,7 +1210,7 @@ Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_V
 
 |void| **render_range**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, start\: :ref:`int<class_int>`, end\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_render_range>`
 
-將範圍內的字元算繪到字形快取紋理。
+將範圍內的字元渲染到字形快取紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -1294,7 +1294,7 @@ Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_V
 
 |void| **set_extra_baseline_offset**\ (\ cache_index\: :ref:`int<class_int>`, baseline_offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_extra_baseline_offset>`
 
-Sets extra baseline offset (as a fraction of font height).
+設定額外的基線偏移（作為字型高度的一部分）。
 
 .. rst-class:: classref-item-separator
 
@@ -1306,7 +1306,7 @@ Sets extra baseline offset (as a fraction of font height).
 
 |void| **set_extra_spacing**\ (\ cache_index\: :ref:`int<class_int>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_set_extra_spacing>`
 
-Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the font size).
+將 ``spacing`` 的間距設定為 ``value``\ ，單位為像素（與字型大小無關）。
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the fon
 
 |void| **set_texture_image**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`, image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_FontFile_method_set_texture_image>`
 
-設定字形快取紋理圖像。
+設定字形快取紋理影像。
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1452,7 @@ Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the fon
 
 |void| **set_transform**\ (\ cache_index\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_FontFile_method_set_transform>`
 
-Sets 2D transform, applied to the font outlines, can be used for slanting, flipping, and rotating glyphs.
+設定套用至字型輪廓的 2D 變換，可用於傾斜、翻轉、旋轉字形。
 
 .. rst-class:: classref-item-separator
 

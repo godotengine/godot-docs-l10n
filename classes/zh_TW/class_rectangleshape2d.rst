@@ -16,7 +16,7 @@ RectangleShape2D
 
 2D 矩形，旨在用於物理學。通常用於為 :ref:`CollisionShape2D<class_CollisionShape2D>` 提供形狀。
 
-\ **性能：**\ **RectangleShape2D** 可以快速偵測碰撞。比 :ref:`CapsuleShape2D<class_CapsuleShape2D>` 快，但比 :ref:`CircleShape2D<class_CircleShape2D>` 慢。
+\ **效能：**\ **RectangleShape2D** 可以快速偵測碰撞。比 :ref:`CapsuleShape2D<class_CapsuleShape2D>` 快，但比 :ref:`CircleShape2D<class_CircleShape2D>` 慢。
 
 .. rst-class:: classref-introduction-group
 

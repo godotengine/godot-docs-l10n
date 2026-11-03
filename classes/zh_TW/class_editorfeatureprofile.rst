@@ -7,14 +7,14 @@ EditorFeatureProfile
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-編輯器功能配置，可用於禁用特定功能。
+編輯器功能配置，可用於停用特定功能。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-編輯器功能配置可以用來禁用 Godot 編輯器的特定功能。當禁用時，這些功能將不會出現在編輯器中，從而使編輯器不那麼混亂。這個設定使編輯器更簡潔，在團隊中工作時。例如，遊戲美術和關卡設計師可以使用禁用腳本編輯器的功能配置，以避免意外地對他們不應該編輯的檔進行更改。
+編輯器功能配置可以用來停用 Godot 編輯器的特定功能。當停用時，這些功能將不會出現在編輯器中，從而使編輯器不那麼混亂。這個設定使編輯器更簡潔，在團隊中工作時。例如，遊戲美術和關卡設計師可以使用停用腳本編輯器的功能配置，以避免意外地對他們不應該編輯的檔進行更改。
 
 要視覺化地管理編輯器功能配置，請使用編輯器視窗頂部的\ **編輯器 >管理功能配置...**\ 。
 
@@ -71,7 +71,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_3D** = ``0``
 
-3D 編輯器。如果禁用此功能，3D 編輯器將不顯示，但 3D 節點仍將顯示在“建立新 Node”對話方塊中。
+3D 編輯器。如果停用此功能，3D 編輯器將不顯示，但 3D 節點仍將顯示在“建立新 Node”對話框中。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCRIPT:
 
@@ -79,7 +79,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCRIPT** = ``1``
 
-腳本分頁，它包含腳本編輯器和類引用流覽器。如果該功能被禁用，腳本分頁將不會顯示。
+腳本分頁，它包含腳本編輯器和類引用流覽器。如果該功能被停用，腳本分頁將不會顯示。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_ASSET_LIB:
 
@@ -87,7 +87,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
+素材商店（Asset Store）分頁。如果停用了此功能，資源商店分頁將不會顯示。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 
@@ -95,7 +95,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCENE_TREE** = ``3``
 
-場景樹編輯。如果禁用此功能，場景樹面板仍將可見，但將是唯讀的。
+場景樹編輯。如果停用此功能，場景樹面板仍將可見，但將是唯讀的。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_NODE_DOCK:
 
@@ -105,7 +105,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 **已棄用：** Replaced by the Signals and Groups docks.
 
-節點面板。如果此功能被禁用，訊號和組將不可見，也不能從編輯器中修改。
+節點面板。如果此功能被停用，訊號和組將不可見，也不能從編輯器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_FILESYSTEM_DOCK:
 
@@ -113,7 +113,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_FILESYSTEM_DOCK** = ``5``
 
-檔案系統面板。如果禁用此功能，則檔案系統面板將不可見。
+檔案系統面板。如果停用此功能，則檔案系統面板將不可見。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_IMPORT_DOCK:
 
@@ -121,7 +121,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_IMPORT_DOCK** = ``6``
 
-匯入面板。如果禁用此功能，則匯入面板將不可見。
+匯入面板。如果停用此功能，則匯入面板將不可見。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_HISTORY_DOCK:
 
@@ -129,7 +129,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_HISTORY_DOCK** = ``7``
 
-歷史面板。如果禁用此功能，則歷史面板將不可見。
+歷史面板。如果停用此功能，則歷史面板將不可見。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GAME:
 
@@ -137,7 +137,7 @@ The Asset Store tab. If this feature is disabled, the Asset Store tab won't disp
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GAME** = ``8``
 
-The Game tab, which allows embedding the game window and selecting nodes by clicking inside of it. If this feature is disabled, the Game tab won't display.
+遊戲分頁，能夠在其中嵌入遊戲視窗，在遊戲視窗中通過點選選擇節點。如果停用此功能，則不會顯示遊戲分頁。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SIGNALS_DOCK:
 
@@ -145,7 +145,7 @@ The Game tab, which allows embedding the game window and selecting nodes by clic
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SIGNALS_DOCK** = ``9``
 
-The Signals dock. If this feature is disabled, signals won't be visible and modifiable from the editor.
+訊號面板。如果該功能被停用，則訊號將不可見，也不能從編輯器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GROUPS_DOCK:
 
@@ -153,7 +153,7 @@ The Signals dock. If this feature is disabled, signals won't be visible and modi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GROUPS_DOCK** = ``10``
 
-The Groups dock. If this feature is disabled, groups won't be visible and modifiable from the editor.
+分組面板。如果該功能被停用，則分組將不可見，也不能從編輯器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_MAX:
 
@@ -190,7 +190,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_class_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_disabled>`
 
-如果 ``class_name`` 指定的類被禁用，則返回 ``true``\ 。被禁用時，該類不會出現在“建立 Node”對話方塊中。
+如果 ``class_name`` 指定的類被停用，則返回 ``true``\ 。被停用時，該類不會出現在“建立 Node”對話框中。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_feature_disabled**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_feature_disabled>`
 
-如果 ``feature`` 被禁用，則返回 ``true``\ 。當一個功能被禁用時，它將從編輯器中完全消失。
+如果 ``feature`` 被停用，則返回 ``true``\ 。當一個功能被停用時，它將從編輯器中完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 從檔案載入編輯器功能設定檔。該檔案必須遵循使用功能設定檔管理員的 **Export** 按鈕或 :ref:`save_to_file()<class_EditorFeatureProfile_method_save_to_file>` 方法取得的 JSON 格式。
 
-\ **注意：** 透過使用者介面建立的功能設定檔從 ``feature_profiles`` 目錄加載，作為副檔名為 ``.profile`` 的檔案。可以使用\ :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`\ 找到編輯器設定資料夾。
+\ **注意：** 透過使用者介面建立的功能設定檔從 ``feature_profiles`` 目錄載入，作為副檔名為 ``.profile`` 的檔案。可以使用\ :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`\ 找到編輯器設定資料夾。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 |void| **set_disable_class**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class>`
 
-如果 ``disable`` 為 ``true``\ ，則禁用 ``class_name`` 指定的類。禁用後，該類不會出現在“建立新 Node”對話方塊中。
+如果 ``disable`` 為 ``true``\ ，則停用 ``class_name`` 指定的類。停用後，該類不會出現在“建立新 Node”對話框中。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 |void| **set_disable_class_editor**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class_editor>`
 
-If ``disable`` is ``true``, disables editing for the class specified by ``class_name``. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
+如果 ``disable`` 為 ``true``\ ，則停用 ``class_name`` 指定的類的編輯。停用後，該類仍然會出現在“建立新 Node”對話框中，但在選中繼承的節點時，屬性檢視器將只讀。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ If ``disable`` is ``true``, disables editing for the class specified by ``class_
 
 |void| **set_disable_feature**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_feature>`
 
-如果 ``disable`` 為 ``true``\ ，則禁用 ``feature`` 中指定的編輯器功能。當一個功能被禁用時，它將從編輯器中完全消失。
+如果 ``disable`` 為 ``true``\ ，則停用 ``feature`` 中指定的編輯器功能。當一個功能被停用時，它將從編輯器中完全消失。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

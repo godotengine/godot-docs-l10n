@@ -12,15 +12,15 @@ Transform2D
 說明
 ----
 
-The **Transform2D** built-in :ref:`Variant<class_Variant>` type is a 2×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ representing a transformation in 2D space. It contains three :ref:`Vector2<class_Vector2>` values: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and :ref:`origin<class_Transform2D_property_origin>`. Together, they can represent translation, rotation, scale, and skew.
+內建的 **Transform2D** :ref:`Variant<class_Variant>` 型別是一個 2×3 的 `矩陣 <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__\ ，用於表示 2D 空間中的變換。它包含了三個 :ref:`Vector2<class_Vector2>` 型別的值：\ :ref:`x<class_Transform2D_property_x>`\ 、\ :ref:`y<class_Transform2D_property_y>` 和 :ref:`origin<class_Transform2D_property_origin>`\ 。通過這些值，可以共同表示平移、旋轉、縮放以及錯切（skew）。
 
-The :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis (:ref:`Vector2.length()<class_Vector2_method_length>`) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
+其中，\ :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 軸構成了一個 2×2 的矩陣，這被稱為變換的 **基（basis）**\ 。每個軸的長度（\ :ref:`Vector2.length()<class_Vector2_method_length>`\ ）會影響變換的縮放比例，而所有軸的方向則決定了旋轉的角度。通常情況下，這兩個軸是相互垂直的。但如果你單獨旋轉其中一個軸，變換就會產生錯切效果。對一個 2D 精靈（sprite）應用帶有錯切的變換，會讓精靈看起來發生扭曲變形。
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+關於這方面的通用介紹，可以參閱 :doc:`矩陣與變換（Matrices and transforms） <../tutorials/math/matrices_and_transforms>` 教學。
 
-\ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
+\ **注意：** 與 :ref:`Transform3D<class_Transform3D>` 不同，這裡並沒有一個與 :ref:`Basis<class_Basis>` 型別完全對應的獨立 2D 型別。所有提到的“基（basis）”，指的都是 **Transform2D** 里的 :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 這兩個分量。
 
-\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
+\ **注意：** 在布林值（boolean）情境中，如果 Transform2D 等於 :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`\ （單位矩陣），它的求值結果會是 ``false``\ ；除此之外，Transform2D 的求值結果永遠都是 ``true``\ 。
 
 .. note::
 
@@ -174,11 +174,11 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 **IDENTITY** = ``Transform2D(1, 0, 0, 1, 0, 0)`` :ref:`🔗<class_Transform2D_constant_IDENTITY>`
 
-The identity **Transform2D**. This is a transform with no translation, no rotation, and a scale of :ref:`Vector2.ONE<class_Vector2_constant_ONE>`. This also means that:
+單位 **Transform2D**\ 。這是一個沒有平移和旋轉的變換，縮放為 :ref:`Vector2.ONE<class_Vector2_constant_ONE>`\ 。這意味著：
 
-- The :ref:`x<class_Transform2D_property_x>` points right (:ref:`Vector2.RIGHT<class_Vector2_constant_RIGHT>`);
+- :ref:`x<class_Transform2D_property_x>` 指向右側（\ :ref:`Vector2.RIGHT<class_Vector2_constant_RIGHT>`\ ）；
 
-- The :ref:`y<class_Transform2D_property_y>` points down (:ref:`Vector2.DOWN<class_Vector2_constant_DOWN>`).
+- :ref:`y<class_Transform2D_property_y>` 指向下方（\ :ref:`Vector2.DOWN<class_Vector2_constant_DOWN>`\ ）。
 
 ::
 
@@ -186,14 +186,14 @@ The identity **Transform2D**. This is a transform with no translation, no rotati
     print("| X | Y | Origin")
     print("| %.f | %.f | %.f" % [transform.x.x, transform.y.x, transform.origin.x])
     print("| %.f | %.f | %.f" % [transform.x.y, transform.y.y, transform.origin.y])
-    # Prints:
+    # 輸出：
     # | X | Y | Origin
     # | 1 | 0 | 0
     # | 0 | 1 | 0
 
-If a :ref:`Vector2<class_Vector2>`, a :ref:`Rect2<class_Rect2>`, a :ref:`PackedVector2Array<class_PackedVector2Array>`, or another **Transform2D** is transformed (multiplied) by this constant, no transformation occurs.
+如果使用該常數變換（相乘）\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Rect2<class_Rect2>`\ 、\ :ref:`PackedVector2Array<class_PackedVector2Array>` 或其他 **Transform2D**\ ，則不會發生變換。
 
-\ **Note:** In GDScript, this constant is equivalent to creating a :ref:`Transform2D<class_Transform2D_constructor_Transform2D>` without any arguments. It can be used to make your code clearer, and for consistency with C#.
+\ **注意：**\ 在 GDScript 中，該常數與不帶任何參數建立 :ref:`Transform2D<class_Transform2D_constructor_Transform2D>` 相同。使用該常數可以讓你的程式碼更清晰，並與 C# 保持一致。
 
 .. _class_Transform2D_constant_FLIP_X:
 
@@ -201,9 +201,9 @@ If a :ref:`Vector2<class_Vector2>`, a :ref:`Rect2<class_Rect2>`, a :ref:`PackedV
 
 **FLIP_X** = ``Transform2D(-1, 0, 0, 1, 0, 0)`` :ref:`🔗<class_Transform2D_constant_FLIP_X>`
 
-When any transform is multiplied by :ref:`FLIP_X<class_Transform2D_constant_FLIP_X>`, it negates all components of the :ref:`x<class_Transform2D_property_x>` axis (the X column).
+當任意變換被 :ref:`FLIP_X<class_Transform2D_constant_FLIP_X>` 相乘時，它會取負 :ref:`x<class_Transform2D_property_x>` 軸（X 列）的所有分量。
 
-When :ref:`FLIP_X<class_Transform2D_constant_FLIP_X>` is multiplied by any transform, it negates the :ref:`Vector2.x<class_Vector2_property_x>` component of all axes (the X row).
+當 :ref:`FLIP_X<class_Transform2D_constant_FLIP_X>` 被任意變換相乘時，它會取負所有軸（X 行）的 :ref:`Vector2.x<class_Vector2_property_x>` 分量。
 
 .. _class_Transform2D_constant_FLIP_Y:
 
@@ -211,9 +211,9 @@ When :ref:`FLIP_X<class_Transform2D_constant_FLIP_X>` is multiplied by any trans
 
 **FLIP_Y** = ``Transform2D(1, 0, 0, -1, 0, 0)`` :ref:`🔗<class_Transform2D_constant_FLIP_Y>`
 
-When any transform is multiplied by :ref:`FLIP_Y<class_Transform2D_constant_FLIP_Y>`, it negates all components of the :ref:`y<class_Transform2D_property_y>` axis (the Y column).
+當任意變換被 :ref:`FLIP_Y<class_Transform2D_constant_FLIP_Y>` 相乘時，它會取負 :ref:`y<class_Transform2D_property_y>` 軸（Y 列）的所有分量。
 
-When :ref:`FLIP_Y<class_Transform2D_constant_FLIP_Y>` is multiplied by any transform, it negates the :ref:`Vector2.y<class_Vector2_property_y>` component of all axes (the Y row).
+當 :ref:`FLIP_Y<class_Transform2D_constant_FLIP_Y>` 被任意變換相乘時，它會取負所有軸（Y 行）的 :ref:`Vector2.y<class_Vector2_property_y>` 分量。
 
 .. rst-class:: classref-section-separator
 
@@ -230,7 +230,7 @@ When :ref:`FLIP_Y<class_Transform2D_constant_FLIP_Y>` is multiplied by any trans
 
 :ref:`Vector2<class_Vector2>` **origin** = ``Vector2(0, 0)`` :ref:`🔗<class_Transform2D_property_origin>`
 
-The translation offset of this transform, and the column ``2`` of the matrix. In 2D space, this can be seen as the position.
+該變換的平移偏移量，即矩陣的第 ``2`` 列。在 2D 空間中可以看作是位置。
 
 .. rst-class:: classref-item-separator
 
@@ -242,9 +242,9 @@ The translation offset of this transform, and the column ``2`` of the matrix. In
 
 :ref:`Vector2<class_Vector2>` **x** = ``Vector2(1, 0)`` :ref:`🔗<class_Transform2D_property_x>`
 
-The transform basis's X axis, and the column ``0`` of the matrix. Combined with :ref:`y<class_Transform2D_property_y>`, this represents the transform's rotation, scale, and skew.
+該變換基的 X 軸，以及矩陣的 ``0`` 列。與 :ref:`y<class_Transform2D_property_y>` 組合，這表示該變換的旋轉、縮放和傾斜。
 
-On the identity transform, this vector points right (:ref:`Vector2.RIGHT<class_Vector2_constant_RIGHT>`).
+在恆等變換中，該向量指向右側（\ :ref:`Vector2.RIGHT<class_Vector2_constant_RIGHT>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -256,9 +256,9 @@ On the identity transform, this vector points right (:ref:`Vector2.RIGHT<class_V
 
 :ref:`Vector2<class_Vector2>` **y** = ``Vector2(0, 1)`` :ref:`🔗<class_Transform2D_property_y>`
 
-The transform basis's Y axis, and the column ``1`` of the matrix. Combined with :ref:`x<class_Transform2D_property_x>`, this represents the transform's rotation, scale, and skew.
+該變換基的 Y 軸，以及矩陣的 ``1`` 列。與 :ref:`x<class_Transform2D_property_x>` 組合，這表示變換的旋轉、縮放和傾斜。
 
-On the identity transform, this vector points down (:ref:`Vector2.DOWN<class_Vector2_constant_DOWN>`).
+在恆等變換中，該向量指向下方（\ :ref:`Vector2.DOWN<class_Vector2_constant_DOWN>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -275,9 +275,9 @@ On the identity transform, this vector points down (:ref:`Vector2.DOWN<class_Vec
 
 :ref:`Transform2D<class_Transform2D>` **Transform2D**\ (\ ) :ref:`🔗<class_Transform2D_constructor_Transform2D>`
 
-Constructs a **Transform2D** identical to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`.
+構造與 :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>` 相同的 **Transform2D**\ 。
 
-\ **Note:** In C#, this constructs a **Transform2D** with all of its components set to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+\ **注意：**\ 在 C# 中構造的 **Transform2D** 的所有分量都為 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Constructs a **Transform2D** identical to :ref:`IDENTITY<class_Transform2D_const
 
 :ref:`Transform2D<class_Transform2D>` **Transform2D**\ (\ rotation\: :ref:`float<class_float>`, position\: :ref:`Vector2<class_Vector2>`\ )
 
-Constructs a **Transform2D** from a given angle (in radians) and position.
+根據給定的旋轉角（單位為弧度）和位置構造 **Transform2D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Constructs a **Transform2D** from a given angle (in radians) and position.
 
 :ref:`Transform2D<class_Transform2D>` **Transform2D**\ (\ rotation\: :ref:`float<class_float>`, scale\: :ref:`Vector2<class_Vector2>`, skew\: :ref:`float<class_float>`, position\: :ref:`Vector2<class_Vector2>`\ )
 
-Constructs a **Transform2D** from a given angle (in radians), scale, skew (in radians), and position.
+根據給定的旋轉角（單位為弧度）、縮放、偏斜（單位為弧度）和位置構造 **Transform2D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Constructs a **Transform2D** from a given angle (in radians), scale, skew (in ra
 
 :ref:`Transform2D<class_Transform2D>` **Transform2D**\ (\ x_axis\: :ref:`Vector2<class_Vector2>`, y_axis\: :ref:`Vector2<class_Vector2>`, origin\: :ref:`Vector2<class_Vector2>`\ )
 
-Constructs a **Transform2D** from 3 :ref:`Vector2<class_Vector2>` values representing :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and the :ref:`origin<class_Transform2D_property_origin>` (the three matrix columns).
+根據表示 :ref:`x<class_Transform2D_property_x>`\ 、\ :ref:`y<class_Transform2D_property_y>`\ 、\ :ref:`origin<class_Transform2D_property_origin>` 的 3 個 :ref:`Vector2<class_Vector2>`\ （三個矩陣列向量）建置 **Transform2D**\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -334,9 +334,9 @@ Constructs a **Transform2D** from 3 :ref:`Vector2<class_Vector2>` values represe
 
 :ref:`Transform2D<class_Transform2D>` **affine_inverse**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_affine_inverse>`
 
-Returns the inverted version of this transform. Unlike :ref:`inverse()<class_Transform2D_method_inverse>`, this method works with almost any basis, including non-uniform ones, but is slower.
+回傳該變換的逆版本。與 :ref:`inverse()<class_Transform2D_method_inverse>` 不同，該方法適用於幾乎任何基，包括非均勻基，但速度較慢。
 
-\ **Note:** For this method to return correctly, the transform's basis needs to have a determinant that is not exactly ``0.0`` (see :ref:`determinant()<class_Transform2D_method_determinant>`).
+\ **注意：**\ 要使該方法正確回傳，該變換的基需要有一個不完全是 ``0.0`` 的行列式（見 :ref:`determinant()<class_Transform2D_method_determinant>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Returns the inverted version of this transform. Unlike :ref:`inverse()<class_Tra
 
 :ref:`Vector2<class_Vector2>` **basis_xform**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Transform2D_method_basis_xform>`
 
-Returns a copy of the ``v`` vector, transformed (multiplied) by the transform basis's matrix. Unlike the multiplication operator (``*``), this method ignores the :ref:`origin<class_Transform2D_property_origin>`.
+回傳 ``v`` 向量的副本，由該變換基的矩陣變換（乘以）得到。與乘法運算符 （\ ``*``\ ）不同，該方法忽略 :ref:`origin<class_Transform2D_property_origin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -360,9 +360,9 @@ Returns a copy of the ``v`` vector, transformed (multiplied) by the transform ba
 
 :ref:`Vector2<class_Vector2>` **basis_xform_inv**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Transform2D_method_basis_xform_inv>`
 
-Returns a copy of the ``v`` vector, transformed (multiplied) by the inverse transform basis's matrix (see :ref:`inverse()<class_Transform2D_method_inverse>`). This method ignores the :ref:`origin<class_Transform2D_property_origin>`.
+回傳 ``v`` 向量的副本，由逆變換基矩陣（參閱 :ref:`inverse()<class_Transform2D_method_inverse>`\ ）變換（乘以）得到。該方法忽略 :ref:`origin<class_Transform2D_property_origin>`\ 。
 
-\ **Note:** This method assumes that this transform's basis is *orthonormal* (see :ref:`orthonormalized()<class_Transform2D_method_orthonormalized>`). If the basis is not orthonormal, ``transform.affine_inverse().basis_xform(vector)`` should be used instead (see :ref:`affine_inverse()<class_Transform2D_method_affine_inverse>`).
+\ **注意：**\ 該方法假定該變換的基是\ *正交正規化化的*\ （參見 :ref:`orthonormalized()<class_Transform2D_method_orthonormalized>`\ ）。如果基不是正交正規化化的，則應改用 ``transform.affine_inverse().basis_xform(vector)``\ （參閱 :ref:`affine_inverse()<class_Transform2D_method_affine_inverse>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -374,13 +374,13 @@ Returns a copy of the ``v`` vector, transformed (multiplied) by the inverse tran
 
 :ref:`float<class_float>` **determinant**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_determinant>`
 
-Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this transform basis's matrix. For advanced math, this number can be used to determine a few attributes:
+回傳該變換基矩陣的\ `行列式 <https://zh.wikipedia.org/wiki/%E8%A1%8C%E5%88%97%E5%BC%8F>`__\ 。在高等數學中，這個數可以用來確定一些性質：
 
-- If the determinant is exactly ``0.0``, the basis is not invertible (see :ref:`inverse()<class_Transform2D_method_inverse>`).
+- 如果行列式為 ``0.0``\ ，則基不可逆（見 :ref:`inverse()<class_Transform2D_method_inverse>`\ ）。
 
-- If the determinant is a negative number, the basis represents a negative scale.
+- 如果行列式為負數，則基表示負縮放。
 
-\ **Note:** If the basis's scale is the same for every axis, its determinant is always that scale by the power of 2.
+\ **注意：**\ 如果基的每個軸縮放都相同，那麼這個行列式始終為 2 的該縮放次冪。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this 
 
 :ref:`Vector2<class_Vector2>` **get_origin**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_get_origin>`
 
-Returns this transform's translation. Equivalent to :ref:`origin<class_Transform2D_property_origin>`.
+回傳該變換的平移。相當於 :ref:`origin<class_Transform2D_property_origin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ Returns this transform's translation. Equivalent to :ref:`origin<class_Transform
 
 :ref:`float<class_float>` **get_rotation**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_get_rotation>`
 
-Returns this transform's rotation (in radians). This is equivalent to :ref:`x<class_Transform2D_property_x>`'s angle (see :ref:`Vector2.angle()<class_Vector2_method_angle>`).
+回傳該變換的旋轉（單位為弧度）。等價於 :ref:`x<class_Transform2D_property_x>` 的旋轉角（見 :ref:`Vector2.angle()<class_Vector2_method_angle>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Returns this transform's rotation (in radians). This is equivalent to :ref:`x<cl
 
 :ref:`Vector2<class_Vector2>` **get_scale**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_get_scale>`
 
-Returns the length of both :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>`, as a :ref:`Vector2<class_Vector2>`. If this transform's basis is not skewed, this value is the scaling factor. It is not affected by rotation.
+以 :ref:`Vector2<class_Vector2>` 的形式同時回傳 :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 的長度。如果該變換的基不存在剪切，這個值就是縮放係數。它不受旋轉的影響。
 
 
 .. tabs::
@@ -428,10 +428,10 @@ Returns the length of both :ref:`x<class_Transform2D_property_x>` and :ref:`y<cl
         Vector2(0, 4),
         Vector2(0, 0)
     )
-    # Rotating the Transform2D in any way preserves its scale.
+    # 以任何方式旋轉 Transform2D 都會保持其縮放。
     my_transform = my_transform.rotated(TAU / 2)
 
-    print(my_transform.get_scale()) # Prints (2.0, 4.0)
+    print(my_transform.get_scale()) # 輸出 (2.0, 4.0)
 
  .. code-tab:: csharp
 
@@ -440,14 +440,14 @@ Returns the length of both :ref:`x<class_Transform2D_property_x>` and :ref:`y<cl
         Vector3(0.0f, 4.0f),
         Vector3(0.0f, 0.0f)
     );
-    // Rotating the Transform2D in any way preserves its scale.
+    // R以任何方式旋轉 Transform2D 都會保持其縮放。
     myTransform = myTransform.Rotated(Mathf.Tau / 2.0f);
 
-    GD.Print(myTransform.GetScale()); // Prints (2, 4)
+    GD.Print(myTransform.GetScale()); // 輸出 (2, 4)
 
 
 
-\ **Note:** If the value returned by :ref:`determinant()<class_Transform2D_method_determinant>` is negative, the scale is also negative.
+\ **注意：**\ 如果 :ref:`determinant()<class_Transform2D_method_determinant>` 回傳的值為負數，則縮放也為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Returns the length of both :ref:`x<class_Transform2D_property_x>` and :ref:`y<cl
 
 :ref:`float<class_float>` **get_skew**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_get_skew>`
 
-Returns this transform's skew (in radians).
+回傳該變換的偏斜（單位為弧度）。
 
 .. rst-class:: classref-item-separator
 
@@ -471,9 +471,9 @@ Returns this transform's skew (in radians).
 
 :ref:`Transform2D<class_Transform2D>` **interpolate_with**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Transform2D_method_interpolate_with>`
 
-Returns the result of the linear interpolation between this transform and ``xform`` by the given ``weight``.
+回傳將該變換和 ``xform`` 按照給定的權重 ``weight`` 進行線性插值結果。
 
-The ``weight`` should be between ``0.0`` and ``1.0`` (inclusive). Values outside this range are allowed and can be used to perform *extrapolation* instead.
+\ ``weight`` 應該在 ``0.0`` 到 ``1.0``\ （閉區間）的範圍內。允許使用超出這個範圍的值，表示進行\ *外插*\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -485,9 +485,9 @@ The ``weight`` should be between ``0.0`` and ``1.0`` (inclusive). Values outside
 
 :ref:`Transform2D<class_Transform2D>` **inverse**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_inverse>`
 
-Returns the `inverted version of this transform <https://en.wikipedia.org/wiki/Invertible_matrix>`__.
+回傳\ `該變換的逆版本 <https://en.wikipedia.org/wiki/Invertible_matrix>`__\ 。
 
-\ **Note:** For this method to return correctly, the transform's basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Transform2D_method_orthonormalized>`). That means the basis should only represent a rotation. If it does not, use :ref:`affine_inverse()<class_Transform2D_method_affine_inverse>` instead.
+\ **注意：**\ 為了使該方法正確回傳，該變換的基需要是\ *正交正規化化的*\ （見 :ref:`orthonormalized()<class_Transform2D_method_orthonormalized>`\ ）。這意味著該基應該只代表旋轉。如果不是，請改用 :ref:`affine_inverse()<class_Transform2D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Returns the `inverted version of this transform <https://en.wikipedia.org/wiki/I
 
 :ref:`bool<class_bool>` **is_conformal**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_is_conformal>`
 
-Returns ``true`` if this transform's basis is conformal. A conformal basis is both *orthogonal* (the axes are perpendicular to each other) and *uniform* (the axes share the same length). This method can be especially useful during physics calculations.
+如果該變換的基是共形的，則回傳 ``true``\ 。共形的基既是\ *正交的*\ （軸彼此垂直）又是\ *均勻的*\ （軸共享相同長度）。該方法在物理計算過程中特別有用。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Returns ``true`` if this transform's basis is conformal. A conformal basis is bo
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`\ ) |const| :ref:`🔗<class_Transform2D_method_is_equal_approx>`
 
-Returns ``true`` if this transform and ``xform`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
+如果通過在每個分量上執行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ ，該變換和 ``xform`` 近似相等，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Returns ``true`` if this transform and ``xform`` are approximately equal, by run
 
 :ref:`Transform2D<class_Transform2D>` **looking_at**\ (\ target\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Transform2D_method_looking_at>`
 
-Returns a copy of the transform rotated such that the rotated X-axis points towards the ``target`` position, in global space.
+回傳該變換旋轉後的一個副本，使得旋轉後的 X 軸指向全域空間中的 ``target`` 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Returns a copy of the transform rotated such that the rotated X-axis points towa
 
 :ref:`Transform2D<class_Transform2D>` **orthonormalized**\ (\ ) |const| :ref:`🔗<class_Transform2D_method_orthonormalized>`
 
-Returns a copy of this transform with its basis orthonormalized. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the axes have a length of ``1.0``), which also means it can only represent a rotation.
+回傳該變換的副本，其基已正交正規化化。正交正規化化的基既是\ *正交的*\ （軸彼此垂直）又是\ *正規化的*\ （軸長度為 ``1.0``\ ），這也意味著它只能代表旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -559,13 +559,13 @@ Returns a copy of this transform with its basis orthonormalized. An orthonormal 
 
 :ref:`Transform2D<class_Transform2D>` **rotated**\ (\ angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Transform2D_method_rotated>`
 
-Returns a copy of this transform rotated by the given ``angle`` (in radians).
+回傳該變換的副本，該副本進行了夾角為 ``angle`` 的旋轉操作（單位為弧度）。
 
-If ``angle`` is positive, the transform is rotated clockwise.
+如果 ``angle`` 為負數，則變換執行順時針旋轉。
 
-This method is an optimized version of multiplying the given transform ``X`` with a corresponding rotation transform ``R`` from the left, i.e., ``R * X``.
+這個方法的結果和讓 ``X`` 變換與相應的旋轉變換 ``R`` 從左側相乘一致，即 ``R * X``\ ，但進行了最佳化。
 
-This can be seen as transforming with respect to the global/parent frame.
+可以視作在全域/父級座標系中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -579,9 +579,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 返回該變換的副本，該副本進行了夾角為 ``angle`` 的旋轉操作（單位為弧度）。
 
-這個方法的結果和讓 ``X`` 變換與相應的旋轉變換 ``R`` 從右側相乘一致，即 ``X * R``\ ，但進行了優化。
+這個方法的結果和讓 ``X`` 變換與相應的旋轉變換 ``R`` 從右側相乘一致，即 ``X * R``\ ，但進行了最佳化。
 
-可以視作在局部坐標系中的變換。
+可以視作在區域座標系中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -595,9 +595,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 返回該變換的副本，該副本進行了係數為 ``scale`` 的縮放操作。
 
-這個方法的結果和讓 ``X`` 變換與相應的縮放變換 ``S`` 從左側相乘一致，即 ``S * X``\ ，但進行了優化。
+這個方法的結果和讓 ``X`` 變換與相應的縮放變換 ``S`` 從左側相乘一致，即 ``S * X``\ ，但進行了最佳化。
 
-可以視作在全域/父級坐標系中的變換。
+可以視作在全域/父級座標系中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -611,9 +611,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 返回該變換的副本，該副本進行了係數為 ``scale`` 的縮放操作。
 
-這個方法的結果和讓 ``X`` 變換與相應的縮放變換 ``S`` 從右側相乘一致，即 ``X * S``\ ，但進行了優化。
+這個方法的結果和讓 ``X`` 變換與相應的縮放變換 ``S`` 從右側相乘一致，即 ``X * S``\ ，但進行了最佳化。
 
-可以視作在局部坐標系中的變換。
+可以視作在區域座標系中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -627,9 +627,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 返回該變換的副本，該副本進行了偏移量為 ``offset`` 的平移操作。
 
-這個方法的結果和讓 ``X`` 變換與相應的平移變換 ``T`` 從左側相乘一致，即 ``T * X``\ ，但進行了優化。
+這個方法的結果和讓 ``X`` 變換與相應的平移變換 ``T`` 從左側相乘一致，即 ``T * X``\ ，但進行了最佳化。
 
-可以視作在全域/父級坐標系中的變換。
+可以視作在全域/父級座標系中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 返回該變換的副本，該副本進行了偏移量為 ``offset`` 的平移操作。
 
-這個方法的結果和讓 ``X`` 變換與相應的平移變換 ``T`` 從右側相乘一致，即 ``X * T``\ ，但進行了優化。
+這個方法的結果和讓 ``X`` 變換與相應的平移變換 ``T`` 從右側相乘一致，即 ``X * T``\ ，但進行了最佳化。
 
-可以視作在局部坐標系中的變換。
+可以視作在區域座標系中的變換。
 
 .. rst-class:: classref-section-separator
 
@@ -662,9 +662,9 @@ This can be seen as transforming with respect to the global/parent frame.
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Transform2D_operator_neq_Transform2D>`
 
-Returns ``true`` if the components of both transforms are not equal.
+如果兩個變換的分量不相等，則回傳 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Transform2D_method_is_equal_approx>` instead, which is more reliable.
+\ **注意：**\ 由於浮點精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Transform2D_method_is_equal_approx>`\ ，這樣更可靠。
 
 .. rst-class:: classref-item-separator
 
@@ -676,9 +676,9 @@ Returns ``true`` if the components of both transforms are not equal.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **operator ***\ (\ right\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Transform2D_operator_mul_PackedVector2Array>`
 
-Transforms (multiplies) every :ref:`Vector2<class_Vector2>` element of the given :ref:`PackedVector2Array<class_PackedVector2Array>` by this transformation matrix.
+由該變換矩陣變換（乘以）給定 :ref:`PackedVector2Array<class_PackedVector2Array>` 的每個 :ref:`Vector2<class_Vector2>` 元素。
 
-On larger arrays, this operation is much faster than transforming each :ref:`Vector2<class_Vector2>` individually.
+在較大的陣列上，該操作比單獨變換每個 :ref:`Vector2<class_Vector2>` 要快得多。
 
 .. rst-class:: classref-item-separator
 
@@ -690,7 +690,7 @@ On larger arrays, this operation is much faster than transforming each :ref:`Vec
 
 :ref:`Rect2<class_Rect2>` **operator ***\ (\ right\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_Transform2D_operator_mul_Rect2>`
 
-Transforms (multiplies) the :ref:`Rect2<class_Rect2>` by this transformation matrix.
+使用該變換矩陣對 :ref:`Rect2<class_Rect2>` 進行變換（相乘）。
 
 .. rst-class:: classref-item-separator
 
@@ -702,17 +702,17 @@ Transforms (multiplies) the :ref:`Rect2<class_Rect2>` by this transformation mat
 
 :ref:`Transform2D<class_Transform2D>` **operator ***\ (\ right\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Transform2D_operator_mul_Transform2D>`
 
-Transforms (multiplies) this transform by the ``right`` transform.
+由 ``right`` 變換來變換（乘以）該變換。
 
-This is the operation performed between parent and child :ref:`CanvasItem<class_CanvasItem>` nodes.
+這是父級和子級 :ref:`CanvasItem<class_CanvasItem>` 之間執行的操作。
 
-\ **Note:** If you need to only modify one attribute of this transform, consider using one of the following methods, instead:
+\ **注意：**\ 如果你只需要修改該變換的一個屬性，請考慮改用以下方法之一：
 
-- For translation, see :ref:`translated()<class_Transform2D_method_translated>` or :ref:`translated_local()<class_Transform2D_method_translated_local>`.
+- 對於平移，請參閱 :ref:`translated()<class_Transform2D_method_translated>` 或 :ref:`translated_local()<class_Transform2D_method_translated_local>`\ 。
 
-- For rotation, see :ref:`rotated()<class_Transform2D_method_rotated>` or :ref:`rotated_local()<class_Transform2D_method_rotated_local>`.
+- 對於旋轉，請參閱 :ref:`rotated()<class_Transform2D_method_rotated>` 或 :ref:`rotated_local()<class_Transform2D_method_rotated_local>`\ 。
 
-- For scale, see :ref:`scaled()<class_Transform2D_method_scaled>` or :ref:`scaled_local()<class_Transform2D_method_scaled_local>`.
+- 對於縮放，請參閱 :ref:`scaled()<class_Transform2D_method_scaled>` 或 :ref:`scaled_local()<class_Transform2D_method_scaled_local>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -724,7 +724,7 @@ This is the operation performed between parent and child :ref:`CanvasItem<class_
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Transform2D_operator_mul_Vector2>`
 
-Transforms (multiplies) the :ref:`Vector2<class_Vector2>` by this transformation matrix.
+使用該變換矩陣對 :ref:`Vector2<class_Vector2>` 進行變換（相乘）。
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Transforms (multiplies) the :ref:`Vector2<class_Vector2>` by this transformation
 
 :ref:`Transform2D<class_Transform2D>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Transform2D_operator_mul_float>`
 
-Multiplies all components of the **Transform2D** by the given :ref:`float<class_float>`, including the :ref:`origin<class_Transform2D_property_origin>`. This affects the transform's scale uniformly.
+將 **Transform2D** 包括 :ref:`origin<class_Transform2D_property_origin>` 在內的所有分量乘以給定的 :ref:`float<class_float>`\ 。會均勻地影響該變換的縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -748,7 +748,7 @@ Multiplies all components of the **Transform2D** by the given :ref:`float<class_
 
 :ref:`Transform2D<class_Transform2D>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Transform2D_operator_mul_int>`
 
-Multiplies all components of the **Transform2D** by the given :ref:`int<class_int>`, including the :ref:`origin<class_Transform2D_property_origin>`. This affects the transform's scale uniformly.
+將 **Transform2D** 包括 :ref:`origin<class_Transform2D_property_origin>` 在內的所有分量乘以給定的 :ref:`int<class_int>`\ 。會均勻地影響該變換的縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -760,7 +760,7 @@ Multiplies all components of the **Transform2D** by the given :ref:`int<class_in
 
 :ref:`Transform2D<class_Transform2D>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Transform2D_operator_div_float>`
 
-Divides all components of the **Transform2D** by the given :ref:`float<class_float>`, including the :ref:`origin<class_Transform2D_property_origin>`. This affects the transform's scale uniformly.
+將 **Transform2D** 包括 :ref:`origin<class_Transform2D_property_origin>` 在內的所有分量除以給定的 :ref:`float<class_float>`\ 。會均勻地影響該變換的縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Divides all components of the **Transform2D** by the given :ref:`float<class_flo
 
 :ref:`Transform2D<class_Transform2D>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Transform2D_operator_div_int>`
 
-Divides all components of the **Transform2D** by the given :ref:`int<class_int>`, including the :ref:`origin<class_Transform2D_property_origin>`. This affects the transform's scale uniformly.
+將 **Transform2D** 包括 :ref:`origin<class_Transform2D_property_origin>` 在內的所有分量除以給定的 :ref:`int<class_int>`\ 。會均勻地影響該變換的縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -784,9 +784,9 @@ Divides all components of the **Transform2D** by the given :ref:`int<class_int>`
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Transform2D_operator_eq_Transform2D>`
 
-Returns ``true`` if the components of both transforms are exactly equal.
+如果兩個變換的分量完全相等，則回傳 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Transform2D_method_is_equal_approx>` instead, which is more reliable.
+\ **注意：**\ 由於浮點精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Transform2D_method_is_equal_approx>`\ ，這樣更可靠。
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Returns ``true`` if the components of both transforms are exactly equal.
 
 :ref:`Vector2<class_Vector2>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Transform2D_operator_idx_int>`
 
-Accesses each axis (column) of this transform by their index. Index ``0`` is the same as :ref:`x<class_Transform2D_property_x>`, index ``1`` is the same as :ref:`y<class_Transform2D_property_y>`, and index ``2`` is the same as :ref:`origin<class_Transform2D_property_origin>`.
+通過索引存取該變換的軸（列）。索引 ``0`` 與 :ref:`x<class_Transform2D_property_x>` 相同，索引 ``1`` 與 :ref:`y<class_Transform2D_property_y>` 相同，索引 ``2`` 與 :ref:`origin<class_Transform2D_property_origin>` 相同。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

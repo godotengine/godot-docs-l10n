@@ -82,7 +82,7 @@ BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程�
 
 :ref:`int<class_int>` **scaling_mode** = ``2`` :ref:`🔗<class_ResourceImporterBMFont_property_scaling_mode>`
 
-Font scaling mode.
+字型縮放模式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

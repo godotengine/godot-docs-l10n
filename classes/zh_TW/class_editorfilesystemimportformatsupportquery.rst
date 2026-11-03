@@ -71,7 +71,7 @@ EditorFileSystemImportFormatSupportQuery
 
 :ref:`bool<class_bool>` **_query**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorFileSystemImportFormatSupportQuery_private_method__query>`
 
-Query support. Return ``false`` if import must not continue.
+查詢支援。如果不能繼續匯入，則回傳 ``false``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

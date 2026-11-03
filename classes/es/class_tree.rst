@@ -1398,7 +1398,7 @@ Permite activar el recorte para el contenido de la columna, ignorando el tamaño
 
 |void| **set_column_custom_minimum_width**\ (\ column\: :ref:`int<class_int>`, min_width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_method_set_column_custom_minimum_width>`
 
-Anula el ancho mínimo calculado de una columna. Puede establecerse a ``0`` para restaurar el comportamiento predeterminado. Las columnas que tienen el flag "Expandir" usarán su "min_width" de forma similar a :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
+Sobrescribe el ancho mínimo calculado de una columna. Puede establecerse a ``0`` para restaurar el comportamiento predeterminado. Las columnas que tienen el flag "Expandir" usarán su "min_width" de forma similar a :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1751,7 +1751,7 @@ Durante una operación de arrastrar y soltar, esta es la cantidad de milisegundo
 
 :ref:`int<class_int>` **draw_guides** = ``1`` :ref:`🔗<class_Tree_theme_constant_draw_guides>`
 
-Dibuja las guías si no es cero, esto actúa como un booleano. La guia es una línea horizontal dibujada en la parte inferior de cada artículo.
+Dibuja las guías si no es cero, esto actúa como un booleano. La guía es una línea horizontal dibujada en la parte inferior de cada artículo.
 
 .. rst-class:: classref-item-separator
 
@@ -1873,7 +1873,7 @@ El margen horizontal al comienzo de un artículo. Se utiliza cuando el plegado e
 
 El tamaño del contorno del texto.
 
-\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_Tree_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
+\ **Nota:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_Tree_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

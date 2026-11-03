@@ -135,9 +135,9 @@ El nodo personalizado :ref:`Viewport<class_Viewport>` asignado al **CanvasLayer*
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_viewport**\ (\ )
 
-Si está habilitado, el **CanvasLayer** mantiene su posición en el world space. Si está deshabilitado, el **CanvasLayer** se mantiene en una posición fija en la pantalla.
+Si está habilitado, el **CanvasLayer** mantiene su posición en el espacio mundial. Si está deshabilitado, el **CanvasLayer** se mantiene en una posición fija en la pantalla.
 
-Junto con :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, esto puede usarse para un pseudo-3D effect.
+Junto con :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, esto puede usarse para un efecto pseudo-3D.
 
 .. rst-class:: classref-item-separator
 

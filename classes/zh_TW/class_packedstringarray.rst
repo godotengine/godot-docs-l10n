@@ -12,9 +12,9 @@ PackedStringArray
 說明
 ----
 
-An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
+一種專門用於儲存 :ref:`String<class_String>`\ （字串）的陣列。它會對資料進行緊密打包，因此在陣列規模較大時能節省記憶體。
 
-If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
+如果你想將陣列中的字串連接起來，可以使用 :ref:`String.join()<class_String_method_join>`\ 。
 
 ::
 
@@ -22,11 +22,11 @@ If you want to join the strings in the array, use :ref:`String.join()<class_Stri
     var string = " ".join(string_array)
     print(string) # "hello world"
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **打包陣列、型別化陣列與無型別陣列之間的區別：**\ 與相同型別的型別化陣列（例如 **PackedStringArray** 對比 ``Array[String]``\ ）相比，打包陣列在迭代和修改時通常速度更快。同時，打包陣列佔用的記憶體也更少。但缺點在於，打包陣列的靈活性較差，因為它們沒有提供像 :ref:`Array.map()<class_Array_method_map>` 這樣豐富的便捷方法。而型別化陣列在迭代和修改速度上，又優於無型別陣列。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包陣列總是通過參照（reference）傳遞。如果你想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_PackedStringArray_method_duplicate>` 方法。不過，內建屬性和方法的情況並\ *非*\ 如此。在這些情況下，回傳的打包陣列是一個副本，修改它並\ *不會*\ 影響原始值。若要更新此類內建屬性，你需要修改回傳的陣列，然後將其重新賦值給該屬性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布林值情境中，如果打包陣列為空，其計算結果將為 ``false``\ 。否則，打包陣列總是會被計算為 ``true``\ 。
 
 .. note::
 
@@ -37,7 +37,7 @@ If you want to join the strings in the array, use :ref:`String.join()<class_Stri
 教學
 ----
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `作業系統測試演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -255,7 +255,7 @@ If you want to join the strings in the array, use :ref:`String.join()<class_Stri
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedStringArray_method_remove_at>` instead.
+在陣列中移除首次出現的某個值並回傳 ``true``\ 。如果陣列中不存在該值，則不會發生任何事情，回傳 ``false``\ 。要按照索引移除元素，請改用 :ref:`remove_at()<class_PackedStringArray_method_remove_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedStringArray_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+在陣列中搜尋值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜尋索引。
 
 .. rst-class:: classref-item-separator
 
@@ -291,9 +291,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`String<class_String>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_get>`
 
-Returns the :ref:`String<class_String>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns an empty string.
+回傳陣列中給定 ``index`` 處的 :ref:`String<class_String>` 值。如果 ``index`` 越界或為負數，則該方法失敗並回傳空字串。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+該方法類似於 ``[]`` 運算符（但不等價）。最顯著的區別就是從編輯器中執行時，該方法失敗不會暫停專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -365,9 +365,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedStringArray_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+設定陣列的大小。如果陣列增大，則預留陣列末端的元素。如果陣列縮小，則將陣列截斷到新的大小。呼叫一次 :ref:`resize()<class_PackedStringArray_method_resize>` 然後賦值比逐個新增新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedStringArray_method_size>` to find the actual size of the array after resize.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時回傳下列 :ref:`Error<enum_@GlobalScope_Error>` 常數：大小為負數則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失敗則回傳 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。請使用 :ref:`size()<class_PackedStringArray_method_size>` 取得調整後的實際大小。
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedStringArray_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+逆序搜尋陣列。還可以傳遞起始搜尋位置索引。如果為負，則起始索引被視為相對於陣列的結尾。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each string encoded as UTF-8. Strings are ``null`` terminated.
+回傳 :ref:`PackedByteArray<class_PackedByteArray>`\ ，每個字串都按照 UTF-8 編碼。字串以 ``null`` 結尾。
 
 .. rst-class:: classref-section-separator
 
@@ -484,7 +484,7 @@ Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each string encoded
 
 :ref:`PackedStringArray<class_PackedStringArray>` **operator +**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_sum_PackedStringArray>`
 
-返回新的 **PackedStringArray**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高性能，請考慮改用 :ref:`append_array()<class_PackedStringArray_method_append_array>`\ 。
+返回新的 **PackedStringArray**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高效能，請考慮改用 :ref:`append_array()<class_PackedStringArray_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 

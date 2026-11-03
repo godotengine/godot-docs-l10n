@@ -7,18 +7,18 @@ ZIPPacker
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Allows the creation of ZIP files.
+允許建立 ZIP 檔案。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This class implements a writer that allows storing the multiple blobs in a ZIP archive. See also :ref:`ZIPReader<class_ZIPReader>` and :ref:`PCKPacker<class_PCKPacker>`.
+該類實作了能夠在 ZIP 壓縮檔中儲存多個資料塊的寫入器。另見 :ref:`ZIPReader<class_ZIPReader>` 和 :ref:`PCKPacker<class_PCKPacker>`\ 。
 
 ::
 
-    # Create a ZIP archive with a single file at its root.
+    # 建立 ZIP 壓縮檔，根條目為單個檔案。
     func write_zip_file():
         var writer = ZIPPacker.new()
         var err = writer.open("user://archive.zip")
@@ -120,7 +120,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_DEFAULT** = ``-1``
 
-Start a file with the default Deflate compression level (``6``). This is a good compromise between speed and file size.
+開啟檔案時使用預設 Deflate 壓縮層級（\ ``6``\ ）。在速度和檔案大小之間達到不錯的平衡。
 
 .. _class_ZIPPacker_constant_COMPRESSION_NONE:
 
@@ -128,7 +128,7 @@ Start a file with the default Deflate compression level (``6``). This is a good 
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_NONE** = ``0``
 
-Start a file with no compression. This is also known as the "Store" compression mode and is the fastest method of packing files inside a ZIP archive. Consider using this mode for files that are already compressed (such as JPEG, PNG, MP3, or Ogg Vorbis files).
+開啟檔案時不使用壓縮。也叫做“儲存”壓縮模式，是最快的在 ZIP 封存檔中打包檔案的方法。請考慮為已壓縮的檔案使用該模式（例如 JPEG、PNG、MP3、Ogg Vorbis 等型別的檔案）。
 
 .. _class_ZIPPacker_constant_COMPRESSION_FAST:
 
@@ -136,7 +136,7 @@ Start a file with no compression. This is also known as the "Store" compression 
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_FAST** = ``1``
 
-Start a file with the fastest Deflate compression level (``1``). This is fast to compress, but results in larger file sizes than :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Decompression speed is generally unaffected by the chosen compression level.
+開啟檔案時使用最快 Deflate 壓縮層級（\ ``1``\ ）。壓縮速度較快，但得到的檔案比 :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>` 要大。解壓速度通常不受壓縮層級的影響。
 
 .. _class_ZIPPacker_constant_COMPRESSION_BEST:
 
@@ -144,7 +144,7 @@ Start a file with the fastest Deflate compression level (``1``). This is fast to
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_BEST** = ``9``
 
-Start a file with the best Deflate compression level (``9``). This is slow to compress, but results in smaller file sizes than :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Decompression speed is generally unaffected by the chosen compression level.
+開啟檔案時使用最佳 Deflate 壓縮層級（\ ``9``\ ）。壓縮速度較慢，但得到的檔案比 :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>` 要小。解壓速度通常不受壓縮層級的影響。
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ Start a file with the best Deflate compression level (``9``). This is slow to co
 - |void| **set_compression_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_compression_level**\ (\ )
 
-The compression level used when :ref:`start_file()<class_ZIPPacker_method_start_file>` is called. Use :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` as a reference.
+呼叫 :ref:`start_file()<class_ZIPPacker_method_start_file>` 時使用的壓縮層級。請參考 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -183,9 +183,9 @@ The compression level used when :ref:`start_file()<class_ZIPPacker_method_start_
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_directory**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 493, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_add_directory>`
 
-Adds directory to the archive. If ``modified_time`` is set to ``0``, current system time is used.
+將目錄新增到封存檔檔案中。如果 ``modified_time`` 被設定為 ``0``\ ，則使用目前系統時間。
 
-\ **Note:** Directories are automatically created when :ref:`start_file()<class_ZIPPacker_method_start_file>` is called, use this function before adding files to create directories with custom permissions and modification time.
+\ **注意：** 呼叫 :ref:`start_file()<class_ZIPPacker_method_start_file>` 時會自動建立目錄，若要建立具有自訂權限和修改時間的目錄，請在新增檔案前呼叫此函式。
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Adds directory to the archive. If ``modified_time`` is set to ``0``, current sys
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_file**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 420, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_start_file>`
 
-Starts writing to a file within the archive. Only one file can be written at the same time. If ``modified_time`` is set to ``0``, current system time is used.
+開始向壓縮檔內的檔案寫入資料。同一時間只能寫入一個檔案。如果將 ``modified_time`` 設定為 ``0``\ ，則會使用目前的系統時間。
 
-Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
+必須在呼叫 :ref:`open()<class_ZIPPacker_method_open>` 之後才能呼叫此方法。
 
 .. rst-class:: classref-item-separator
 

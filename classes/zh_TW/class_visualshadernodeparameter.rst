@@ -79,7 +79,7 @@ enum **Qualifier**: :ref:`🔗<enum_VisualShaderNodeParameter_Qualifier>`
 
 :ref:`Qualifier<enum_VisualShaderNodeParameter_Qualifier>` **QUAL_INSTANCE_INDEX** = ``3``
 
-The parameter will be tied to the node with attached :ref:`ShaderMaterial<class_ShaderMaterial>` using this shader. Enables setting a :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>` property.
+該參數將綁定至附加了使用該著色器的 :ref:`ShaderMaterial<class_ShaderMaterial>` 的節點。啟用後可以設定 :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>` 屬性。
 
 .. _class_VisualShaderNodeParameter_constant_QUAL_MAX:
 
@@ -109,7 +109,7 @@ The parameter will be tied to the node with attached :ref:`ShaderMaterial<class_
 - |void| **set_instance_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_instance_index**\ (\ )
 
-The index within 0-15 range, which is used to avoid clashes when shader used on multiple materials.
+該索引的取值範圍為 0-15，用於避免著色器在用於多種材質時崩潰。
 
 .. rst-class:: classref-item-separator
 

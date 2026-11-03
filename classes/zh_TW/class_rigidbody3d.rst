@@ -16,17 +16,17 @@ RigidBody3D
 說明
 ----
 
-**RigidBody3D** implements full 3D physics. It cannot be controlled directly, instead, you must apply forces to it (gravity, impulses, etc.), and the physics simulation will calculate the resulting movement, rotation, react to collisions, and affect other physics bodies in its path.
+**RigidBody3D** 實作了完整的 3D 物理。這個物理體無法直接控制，必須對其施加力（重力、衝量等），物理仿真將計算由此產生的移動、旋轉、對碰撞的反應以及對沿路其他物理體的影響等。
 
-The body's behavior can be adjusted via :ref:`lock_rotation<class_RigidBody3D_property_lock_rotation>`, :ref:`freeze<class_RigidBody3D_property_freeze>`, and :ref:`freeze_mode<class_RigidBody3D_property_freeze_mode>`. By changing various properties of the object, such as :ref:`mass<class_RigidBody3D_property_mass>`, you can control how the physics simulation acts on it.
+可以使用 :ref:`lock_rotation<class_RigidBody3D_property_lock_rotation>`\ 、\ :ref:`freeze<class_RigidBody3D_property_freeze>` 和 :ref:`freeze_mode<class_RigidBody3D_property_freeze_mode>` 調整該物理體的行為。通過修改該物件的 :ref:`mass<class_RigidBody3D_property_mass>` 等屬性，你可以控制物理仿真對其的影響。
 
-A rigid body will always maintain its shape and size, even when forces are applied to it. It is useful for objects that can be interacted with in an environment, such as a tree that can be knocked over or a stack of crates that can be pushed around.
+即使施加了力，剛體也會始終維持自身的形狀和大小。適用於環境中可互動的物件，例如能夠推倒的樹木或者能夠被推動的一堆箱子。
 
-If you need to directly affect the body, prefer :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>` as it allows you to directly access the physics state.
+如果你需要直接影響物體，請優先使用 :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`\ ，能夠直接存取物理狀態。
 
-If you need to override the default physics behavior, you can write a custom force integration function. See :ref:`custom_integrator<class_RigidBody3D_property_custom_integrator>`.
+如果你需要覆蓋預設的物理行為，你可以編寫自訂的力整合函式。見 :ref:`custom_integrator<class_RigidBody3D_property_custom_integrator>`\ 。
 
-\ **Note:** Changing the 3D transform or :ref:`linear_velocity<class_RigidBody3D_property_linear_velocity>` of a **RigidBody3D** very often may lead to some unpredictable behaviors. This also happens when a **RigidBody3D** is the descendant of a constantly moving node, like another **RigidBody3D**, as that will cause its global transform to be set whenever its ancestor moves.
+\ **注意：**\ 頻繁修改 **RigidBody3D** 的 3D 變換或 :ref:`linear_velocity<class_RigidBody3D_property_linear_velocity>` 可能導致無法預期的行為。這也會發生在 **RigidBody3D** 是不斷移動的節點的子孫節點時，比如另一個 **RigidBody3D**\ ，因為祖先移動時會導致設定全域變換。
 
 .. rst-class:: classref-introduction-group
 
@@ -35,9 +35,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `3D 貨車鎮演示 <https://godotengine.org/asset-library/asset/2752>`__
+- `3D 貨車鎮演示 <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 - `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
 
@@ -184,9 +184,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 \ ``body`` 其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
 
-\ ``body_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>` 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 獲取。
+\ ``body_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>` 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 取得。
 
-\ ``local_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的該 RigidBody3D 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 獲取。
+\ ``local_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的該 RigidBody3D 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 取得。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 \ ``body`` 其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
 
-\ ``body_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或\ :ref:`GridMap<class_GridMap>` 的\ :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 獲取。
+\ ``body_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或\ :ref:`GridMap<class_GridMap>` 的\ :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 取得。
 
-\ ``local_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的該 RigidBody3D 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 獲取。
+\ ``local_shape_index`` 由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的該 RigidBody3D 的 :ref:`Shape3D<class_Shape3D>` 的索引。該 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 取得。
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ enum **DampMode**: :ref:`🔗<enum_RigidBody3D_DampMode>`
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Damps the body's rotation. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`, you can set :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` to be added to or to replace the body's damping value.
+阻礙物體的旋轉。預設情況下，物體將使用專案設定 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ ，或物體所在的 :ref:`Area3D<class_Area3D>` 中設定的任何覆蓋值。取決於 :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`\ ，可以設定 :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` 以增加或替換物體的阻尼值。
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+有關阻尼的更多詳細資訊，請參閱 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_
 - |void| **set_angular_damp_mode**\ (\ value\: :ref:`DampMode<enum_RigidBody3D_DampMode>`\ )
 - :ref:`DampMode<enum_RigidBody3D_DampMode>` **get_angular_damp_mode**\ (\ )
 
-Defines how :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` is applied.
+定義如何應用 :ref:`angular_damp<class_RigidBody3D_property_angular_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +395,9 @@ Defines how :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` is appl
 - |void| **set_center_of_mass**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass**\ (\ )
 
-The body's custom center of mass, relative to the body's origin position, when :ref:`center_of_mass_mode<class_RigidBody3D_property_center_of_mass_mode>` is set to :ref:`CENTER_OF_MASS_MODE_CUSTOM<class_RigidBody3D_constant_CENTER_OF_MASS_MODE_CUSTOM>`. This is the balanced point of the body, where applied forces only cause linear acceleration. Applying forces outside of the center of mass causes angular acceleration.
+當 :ref:`center_of_mass_mode<class_RigidBody3D_property_center_of_mass_mode>` 設定為 :ref:`CENTER_OF_MASS_MODE_CUSTOM<class_RigidBody3D_constant_CENTER_OF_MASS_MODE_CUSTOM>` 時，物體的自訂質心相對於物體原點位置的位置。這是物體的平衡點，只有施加在質心內的力才會引起線性加速度。施加在質心之外的力會引起角加速度。
 
-When :ref:`center_of_mass_mode<class_RigidBody3D_property_center_of_mass_mode>` is set to :ref:`CENTER_OF_MASS_MODE_AUTO<class_RigidBody3D_constant_CENTER_OF_MASS_MODE_AUTO>` (default value), the center of mass is automatically determined, but this does not update the value of :ref:`center_of_mass<class_RigidBody3D_property_center_of_mass>`.
+當 :ref:`center_of_mass_mode<class_RigidBody3D_property_center_of_mass_mode>` 設定為 :ref:`CENTER_OF_MASS_MODE_AUTO<class_RigidBody3D_constant_CENTER_OF_MASS_MODE_AUTO>`\ （預設值）時，會自動確定質心，但這不會更新 :ref:`center_of_mass<class_RigidBody3D_property_center_of_mass>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ When :ref:`center_of_mass_mode<class_RigidBody3D_property_center_of_mass_mode>` 
 - |void| **set_center_of_mass_mode**\ (\ value\: :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>`\ )
 - :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>` **get_center_of_mass_mode**\ (\ )
 
-Defines the way the body's center of mass is set.
+定義設定物體質心的方式。
 
 .. rst-class:: classref-item-separator
 
@@ -507,9 +507,9 @@ Defines the way the body's center of mass is set.
 - |void| **set_use_custom_integrator**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_integrator**\ (\ )
 
-If ``true``, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>` method, if that virtual method is overridden.
+如果為 ``true``\ ，則該物體的標準力積分（如重力或阻尼）將被停用。除了碰撞響應之外，如果覆蓋了 :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>` 方法，則物體將僅按照該方法確定的方式移動。
 
-Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>` internally.
+設定該屬性將在內部呼叫方法 :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -526,11 +526,11 @@ Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_f
 - |void| **set_freeze_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_freeze_enabled**\ (\ )
 
-If ``true``, the body is frozen. Gravity and forces are not applied anymore.
+如果為 ``true``\ ，則該物體被凍結。不再施加重力和力。
 
-See :ref:`freeze_mode<class_RigidBody3D_property_freeze_mode>` to set the body's behavior when frozen.
+要設定凍結時物體的行為，見 :ref:`freeze_mode<class_RigidBody3D_property_freeze_mode>`\ 。
 
-\ **Note:** For a body that is always frozen, use :ref:`StaticBody3D<class_StaticBody3D>` or :ref:`AnimatableBody3D<class_AnimatableBody3D>` instead.
+\ **注意：**\ 對於始終凍結的物體，請改用 :ref:`StaticBody3D<class_StaticBody3D>` 或 :ref:`AnimatableBody3D<class_AnimatableBody3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -547,9 +547,9 @@ See :ref:`freeze_mode<class_RigidBody3D_property_freeze_mode>` to set the body's
 - |void| **set_freeze_mode**\ (\ value\: :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>`\ )
 - :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>` **get_freeze_mode**\ (\ )
 
-The body's freeze mode. Determines the body's behavior when :ref:`freeze<class_RigidBody3D_property_freeze>` is ``true``.
+物體的凍結模式。\ :ref:`freeze<class_RigidBody3D_property_freeze>` 為 ``true`` 時決定物體的行為。
 
-\ **Note:** For a body that is always frozen, use :ref:`StaticBody3D<class_StaticBody3D>` or :ref:`AnimatableBody3D<class_AnimatableBody3D>` instead.
+\ **注意：**\ 始終凍結的物體請改用 :ref:`StaticBody3D<class_StaticBody3D>` 或 :ref:`AnimatableBody3D<class_AnimatableBody3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ The body's freeze mode. Determines the body's behavior when :ref:`freeze<class_R
 - |void| **set_gravity_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_scale**\ (\ )
 
-This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` to produce this body's gravity. For example, a value of ``1.0`` will apply normal gravity, ``2.0`` will apply double the gravity, and ``0.5`` will apply half the gravity to this body.
+與 :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` 相乘，得到該物體的重力。例如取值為 ``1.0`` 就是正常重力，\ ``2.0`` 就是雙倍重力，\ ``0.5`` 會讓套用至這個物件的重力減半。
 
 .. rst-class:: classref-item-separator
 
@@ -583,11 +583,11 @@ This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_Pro
 - |void| **set_inertia**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_inertia**\ (\ )
 
-The body's moment of inertia. This is like mass, but for rotation: it determines how much torque it takes to rotate the body on each axis. The moment of inertia is usually computed automatically from the mass and the shapes, but this property allows you to set a custom value.
+該物體的轉動慣量。與質量類似，但用於旋轉：用於確定各個軸上需要施加多少力矩才能讓該物體旋轉。通常會自動根據質量和形狀計算轉動慣量，但這個屬效能夠讓你設定自訂的值。
 
-If set to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`, inertia is automatically computed (default value).
+設定為 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` 時，會自動計算慣量（預設值）。
 
-\ **Note:** This value does not change when inertia is automatically computed. Use :ref:`PhysicsServer3D<class_PhysicsServer3D>` to get the computed inertia.
+\ **注意：**\ 自動計算出慣量後，這個值不會改變。請使用 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 取得計算出的慣量。
 
 
 .. tabs::
@@ -630,9 +630,9 @@ If set to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`, inertia is automatic
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-Damps the body's movement. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`linear_damp_mode<class_RigidBody3D_property_linear_damp_mode>`, you can set :ref:`linear_damp<class_RigidBody3D_property_linear_damp>` to be added to or to replace the body's damping value.
+抑制物體的運動。預設情況下，物體將使用 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` 設定或物體所在的 :ref:`Area3D<class_Area3D>` 的覆蓋值。取決於 :ref:`linear_damp_mode<class_RigidBody3D_property_linear_damp_mode>`\ ，你可以將 :ref:`linear_damp<class_RigidBody3D_property_linear_damp>` 設定為新增或替換物體的阻尼值。
 
-See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` for more details about damping.
+有關阻尼的更多詳細資訊，請參閱 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_RigidBody3D_DampMode>`\ )
 - :ref:`DampMode<enum_RigidBody3D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-Defines how :ref:`linear_damp<class_RigidBody3D_property_linear_damp>` is applied.
+定義如何應用 :ref:`linear_damp<class_RigidBody3D_property_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Defines how :ref:`linear_damp<class_RigidBody3D_property_linear_damp>` is applie
 
 |void| **_integrate_forces**\ (\ state\: :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ ) |virtual| :ref:`🔗<class_RigidBody3D_private_method__integrate_forces>`
 
-Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the :ref:`custom_integrator<class_RigidBody3D_property_custom_integrator>` property allows you to disable the standard force integration and do fully custom force integration for a body.
+在物理處理過程中被呼叫，允許你讀取並安全地修改物件的模擬狀態。預設情況下，它在標準力積分之前呼叫，但 :ref:`custom_integrator<class_RigidBody3D_property_custom_integrator>` 屬性允許你停用標準力積分並對物體進行完全自訂的力積分。
 
 .. rst-class:: classref-item-separator
 
@@ -916,7 +916,7 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 返回與此物體發生碰撞的物體的列表。需要將 :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` 設定足夠高以偵測所有碰撞。
 
-\ **注意：**\ 此測試的結果不會立即在移動物體後得出。為了提高性能，碰撞列表每影格更新一次，且在物理步驟之前進行。可考慮改用訊號來代替。
+\ **注意：**\ 此測試的結果不會立即在移動物體後得出。為了提高效能，碰撞列表每影格更新一次，且在物理步驟之前進行。可考慮改用訊號來代替。
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 返回此物體與其他物體的接觸數。預設情況下，除非配置監視接觸的物體（見 :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>`\ ），否則返回 0。
 
-\ **注意：**\ 要獲取正在碰撞的物體，請使用 :ref:`get_colliding_bodies()<class_RigidBody3D_method_get_colliding_bodies>`\ 。
+\ **注意：**\ 要取得正在碰撞的物體，請使用 :ref:`get_colliding_bodies()<class_RigidBody3D_method_get_colliding_bodies>`\ 。
 
 .. rst-class:: classref-item-separator
 

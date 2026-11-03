@@ -156,7 +156,7 @@ AnimatedSprite3D
 - |void| **set_animation**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_animation**\ (\ )
 
-當前動畫來自 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` 資源。若此值變更，\ :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 均會被重設。
+目前動畫來自 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` 資源。若此值變更，\ :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 均會被重設。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ AnimatedSprite3D
 - |void| **set_frame_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_frame_progress**\ (\ )
 
-從當前影格過渡到下一影格的進度值，範圍為 ``0.0``\ –\ ``1.0``\ 。若動畫倒放，則值會從 ``1.0`` 遞減至 ``0.0``\ 。
+從目前影格過渡到下一影格的進度值，範圍為 ``0.0``\ –\ ``1.0``\ 。若動畫倒放，則值會從 ``1.0`` 遞減至 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ AnimatedSprite3D
 
 |void| **pause**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_method_pause>`
 
-暫停目前正在播放的動畫。系統會保留 :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ ，若在無參數下呼叫 :ref:`play()<class_AnimatedSprite3D_method_play>` 或 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`\ ，將自當前位置續播。
+暫停目前正在播放的動畫。系統會保留 :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ ，若在無參數下呼叫 :ref:`play()<class_AnimatedSprite3D_method_play>` 或 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`\ ，將自目前位置續播。
 
 另請參閱 :ref:`stop()<class_AnimatedSprite3D_method_stop>`\ 。
 

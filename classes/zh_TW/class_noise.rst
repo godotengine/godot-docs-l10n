@@ -16,11 +16,11 @@ Noise
 說明
 ----
 
-該類定義了雜訊生成庫要繼承的介面。
+該類定義了噪聲生成庫要繼承的介面。
 
-為不提供無縫雜訊的庫提供一個預設的 get_seamless_noise() 實作。該函式從 get_image() 請求更大的圖像，反轉該圖像的象限，然後使用額外寬度的條帶在接縫處混合。
+為不提供無縫噪聲的庫提供一個預設的 :ref:`get_seamless_image()<class_Noise_method_get_seamless_image>` 實作。該函式從 :ref:`get_image()<class_Noise_method_get_image>` 請求更大的影像，反轉該影像的象限，然後使用額外寬度的條帶在接縫處混合。
 
-繼承的雜訊類可以選擇性地覆蓋該函式，以提供更優化的演算法。
+繼承的噪聲類可以選擇性地覆蓋該函式，以提供更最佳化的算法。
 
 .. rst-class:: classref-reftable-group
 

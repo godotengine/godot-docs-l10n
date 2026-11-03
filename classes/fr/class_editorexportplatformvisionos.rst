@@ -1891,7 +1891,7 @@ Indicates whether your app uses any other diagnostic data for tracking.
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/other_financial_info/collected>`
 
-Indicates whether your app collects any other financial information.
+Indique si votre application collecte d'autres informations financières.
 
 .. rst-class:: classref-item-separator
 

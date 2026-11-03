@@ -177,7 +177,7 @@ Allows placing the dock in the horizontal dock slots at the bottom.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_FLOATING** = ``4``
 
-Allows making the dock floating (opened as a separate window).
+Autorise de rendre le dock flottant (ouvert comme fenêtre séparée).
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_ALL:
 
@@ -185,7 +185,7 @@ Allows making the dock floating (opened as a separate window).
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_ALL** = ``7``
 
-Allows placing the dock in all available slots.
+Autorise de placer le dock dans tous les emplacements disponibles.
 
 .. rst-class:: classref-item-separator
 

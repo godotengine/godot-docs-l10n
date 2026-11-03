@@ -16,7 +16,7 @@ OpenXRInteractionProfile
 
 此物件儲存用於一個互動配置的建議綁定。互動配置定義了一個被追蹤的 XR 裝置（例如一個 XR 控制器）的中繼資料。
 
-有關更多資訊，請參閱\ `《OpenXR 規範中的互動配置信息》 <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-interaction-profiles>`__\ 。
+有關更多資訊，請參閱\ `《OpenXR 規範中的互動配置資訊》 <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-interaction-profiles>`__\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -72,7 +72,7 @@ OpenXRInteractionProfile
 - |void| **set_binding_modifiers**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_binding_modifiers**\ (\ )
 
-Binding modifiers for this interaction profile.
+用於該互動設定的綁定修改器。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Binding modifiers for this interaction profile.
 
 :ref:`int<class_int>` **get_binding_count**\ (\ ) |const| :ref:`🔗<class_OpenXRInteractionProfile_method_get_binding_count>`
 
-獲取該互動配置中的綁定數量。
+取得該互動配置中的綁定數量。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Binding modifiers for this interaction profile.
 
 :ref:`OpenXRIPBindingModifier<class_OpenXRIPBindingModifier>` **get_binding_modifier**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRInteractionProfile_method_get_binding_modifier>`
 
-Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
+取得位於該索引的 :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
 
 :ref:`int<class_int>` **get_binding_modifier_count**\ (\ ) |const| :ref:`🔗<class_OpenXRInteractionProfile_method_get_binding_modifier_count>`
 
-Get the number of binding modifiers in this interaction profile.
+取得互動設定中綁定修改器的數量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

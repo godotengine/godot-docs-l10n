@@ -133,7 +133,7 @@ Container
 - |void| **set_accessibility_region**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_accessibility_region**\ (\ )
 
-If ``true``, this container is marked as a region for accessibility. Use :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` to give the region a descriptive name. Screen readers can navigate between regions using landmark navigation.
+如果設定為 ``true``\ ，這個容器就會被標記為一個無障礙區域。請使用 :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` 給這個區域起一個描述性的名稱。螢幕閱讀器（讀屏軟體）可以通過地標導航（landmark navigation）在這些區域之間進行切換和跳轉。
 
 .. rst-class:: classref-section-separator
 

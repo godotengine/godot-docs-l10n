@@ -16,7 +16,7 @@ Descripción
 
 Organiza los controles hijos en una vista de pestañas, creando una pestaña para cada uno. El control correspondiente a la pestaña activa se hace visible, mientras que todos los demás controles hijos se ocultan. Ignora los hijos que no son controles.
 
-\ **Nota:** El dibujo de las pestañas clickables es manejado por este nodo; no se necesita :ref:`TabBar<class_TabBar>`.
+\ **Nota:** El dibujo de las pestañas clicables es manejado por este nodo; no se necesita :ref:`TabBar<class_TabBar>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -683,7 +683,7 @@ Returns the button icon from the tab at index ``tab_idx``.
 
 :ref:`Control<class_Control>` **get_tab_control**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabContainer_method_get_tab_control>`
 
-Returns the :ref:`Control<class_Control>` node from the tab at index ``tab_idx``.
+Devuelve el nodo :ref:`Control<class_Control>` de la pestaña en el índice ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 

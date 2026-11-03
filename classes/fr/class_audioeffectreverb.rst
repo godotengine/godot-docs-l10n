@@ -27,7 +27,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 - `Démo de tir à la troisième personne (TPS) <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -145,7 +145,7 @@ Gain of early reflection copies. At higher values, early reflection copies are l
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
+Temps entre l'audio original et les réfections précoces du signal de réverbération, en millisecondes. La valeur peut aller de 20 à 500.
 
 .. rst-class:: classref-item-separator
 

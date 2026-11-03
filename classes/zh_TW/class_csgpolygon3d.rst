@@ -345,7 +345,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_rotation**\ (\ value\: :ref:`PathRotation<enum_CSGPolygon3D_PathRotation>`\ )
 - :ref:`PathRotation<enum_CSGPolygon3D_PathRotation>` **get_path_rotation**\ (\ )
 
-When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, the path rotation method used to rotate the :ref:`polygon<class_CSGPolygon3D_property_polygon>` as it is extruded.
+當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，用於在擠出時旋轉 :ref:`polygon<class_CSGPolygon3D_property_polygon>` 的路徑旋轉方法。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_path_rotation_accurate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_path_rotation_accurate**\ (\ )
 
-When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, if ``true`` the polygon will be rotated according to the proper tangent of the path at the sampled points. If ``false`` an approximation is used, which decreases in accuracy as the number of subdivisions decreases.
+當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，如果為 ``true``\ ，則該多邊形會根據路徑在取樣點處的實際切線進行旋轉。如果為 ``false``\ ，則會使用近似值，減少細分數，因而降低精確度。
 
 .. rst-class:: classref-item-separator
 

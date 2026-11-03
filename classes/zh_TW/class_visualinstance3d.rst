@@ -78,15 +78,15 @@ VisualInstance3D
 - |void| **set_layer_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer_mask**\ (\ )
 
-繪製該 **VisualInstance3D** 的算繪層。
+繪製該 **VisualInstance3D** 的渲染層。
 
-\ :ref:`Camera3D<class_Camera3D>` 的剔除遮罩包含該 **VisualInstance3D** 所設定的任何算繪層時，該物件才在該相機中可見。
+\ :ref:`Camera3D<class_Camera3D>` 的剔除遮罩包含該 **VisualInstance3D** 所設定的任何渲染層時，該物件才在該相機中可見。
 
 對於 :ref:`Light3D<class_Light3D>`\ ，可以用於控制指定的燈光能夠影響哪些 **VisualInstance3D**\ 。對於 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，可以用於控制哪些粒子受到吸引器的影響。對於 :ref:`Decal<class_Decal>`\ ，可以用於控制哪些 **VisualInstance3D** 受到指定裝飾的影響。
 
 要在腳本中更加方便地調整 :ref:`layers<class_VisualInstance3D_property_layers>`\ ，請使用 :ref:`get_layer_mask_value()<class_VisualInstance3D_method_get_layer_mask_value>` 和 :ref:`set_layer_mask_value()<class_VisualInstance3D_method_set_layer_mask_value>`\ 。
 
-\ **注意：**\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI、\ :ref:`LightmapGI<class_LightmapGI>` 在確定全域光照影響時始終會考慮所有算繪層。如果不希望這樣，請將網格的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 設定為 :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>`\ ，將燈光的 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 設定為 :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`\ ，這樣就能從全域光照中剔除。
+\ **注意：**\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI、\ :ref:`LightmapGI<class_LightmapGI>` 在確定全域光照影響時始終會考慮所有渲染層。如果不希望這樣，請將網格的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 設定為 :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>`\ ，將燈光的 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 設定為 :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`\ ，這樣就能從全域光照中剔除。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ VisualInstance3D
 - |void| **set_sorting_use_aabb_center**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sorting_use_aabb_center**\ (\ )
 
-如果為 ``true``\ ，則該物件會根據其 :ref:`AABB<class_AABB>` 中心點排序。否則會根據其全局位置排序。
+如果為 ``true``\ ，則該物件會根據其 :ref:`AABB<class_AABB>` 中心點排序。否則會根據其全域位置排序。
 
 對 3D 模型而言，根據 :ref:`AABB<class_AABB>` 的中心點排序一般更為精確。使用 :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`CPUParticles3D<class_CPUParticles3D>` 時，根據位置排序能夠更好地控制繪製順序。
 
@@ -177,7 +177,7 @@ VisualInstance3D
 
 :ref:`RID<class_RID>` **get_instance**\ (\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_instance>`
 
-返回這個實例的 RID。這個 RID 與 :ref:`RenderingServer.instance_create()<class_RenderingServer_method_instance_create>` 返回的 RID 相同。如果你想為這個 **VisualInstance3D** 直接呼叫 :ref:`RenderingServer<class_RenderingServer>` 函數，就需要這個 RID。
+返回這個實例的 RID。這個 RID 與 :ref:`RenderingServer.instance_create()<class_RenderingServer_method_instance_create>` 返回的 RID 相同。如果你想為這個 **VisualInstance3D** 直接呼叫 :ref:`RenderingServer<class_RenderingServer>` 函式，就需要這個 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ VisualInstance3D
 
 |void| **set_layer_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_VisualInstance3D_method_set_layer_mask_value>`
 
-基於 ``value``\ ，啟用或禁用 :ref:`layers<class_VisualInstance3D_property_layers>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
+基於 ``value``\ ，啟用或停用 :ref:`layers<class_VisualInstance3D_property_layers>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

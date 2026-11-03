@@ -606,9 +606,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 Викликається рушієм, коли оновлюється область перегляду 3D-редактора. ``viewport_control`` – це накладання поверх області перегляду, яке можна використовувати для малювання. Ви можете оновити область перегляду вручну, викликавши :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     func _forward_3d_draw_over_viewport(overlay):
     # Намалювати коло в позиції курсора.
     overlay.draw_circle(overlay.get_local_mouse_position(), 64, Color.WHITE)
@@ -619,8 +621,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
     update_overlays()
     return EditorPlugin.AFTER_GUI_INPUT_STOP
     return EditorPlugin.AFTER_GUI_INPUT_PASS
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     public override void _Forward3DDrawOverViewport(Control viewportControl)
     {
     // Намалювати коло в позиції курсора.
@@ -637,7 +640,8 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
     }
     return EditorPlugin.AfterGuiInput.Pass;
      }
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-item-separator
 

@@ -6485,16 +6485,11 @@ Cubic інтерполює між двома значеннями обертан
 
 Повертає максимальне із заданих числових значень. Ця функція може приймати будь-яку кількість аргументів.
 
-
-.. tabs::
-
-max(1, 7, 3, -6, 5) # Returns 7
-
-
 ::
 
+    max(1, 7, 3, -6, 5) # Returns 7
 
-[b]Примітка:[/b] Якщо це використовувати для векторів, це [i]не[/i] буде виконувати максимум компонентів, а вибиратиме найбільше значення під час порівняння за допомогою [code]x < y[/code]. Щоб виконати максимум компонентів, використовуйте [method Vector2.max], [method Vector2i.max], [method Vector3.max], [method Vector3i.max], [method Vector4.max] і [method Vector4i.max].
+\ **Примітка:** Якщо це використовувати для векторів, це *не* буде виконувати максимум компонентів, а вибиратиме найбільше значення під час порівняння за допомогою ``x < y``. Щоб виконати максимум компонентів, використовуйте :ref:`Vector2.max()<class_Vector2_method_max>`, :ref:`Vector2i.max()<class_Vector2i_method_max>`, :ref:`Vector3.max()<class_Vector3_method_max>`, :ref:`Vector3i.max()<class_Vector3i_method_max>`, :ref:`Vector4.max()<class_Vector4_method_max>` і :ref:`Vector4i.max()<class_Vector4i_method_max>`.
 
 .. rst-class:: classref-item-separator
 

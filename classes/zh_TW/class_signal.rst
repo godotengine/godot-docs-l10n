@@ -12,9 +12,9 @@ Signal
 說明
 ----
 
-**Signal** is a built-in :ref:`Variant<class_Variant>` type that represents a signal of an :ref:`Object<class_Object>` instance. Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to functions. Signals allow all connected :ref:`Callable<class_Callable>`\ s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage. You can check whether an :ref:`Object<class_Object>` has a given signal name using :ref:`Object.has_signal()<class_Object_method_has_signal>`.
+**Signal** 是一種內建的 :ref:`Variant<class_Variant>` 型別，它代表了一個 :ref:`Object<class_Object>` 實例的訊號。和所有的 :ref:`Variant<class_Variant>` 型別一樣，它可以被儲存在變數中，也可以被傳遞給函式。訊號允許所有已連接的 :ref:`Callable<class_Callable>`\ （以及它們各自所屬的物件）去監聽並響應事件，而無需彼此之間直接參照。這種設計讓程式碼保持了極高的靈活性，也更易於管理。你可以使用 :ref:`Object.has_signal()<class_Object_method_has_signal>` 方法來檢查一個 :ref:`Object<class_Object>` 是否擁有指定名稱的訊號。
 
-In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may use the ``[Signal]`` attribute on a delegate.
+在 GDScript 中，可以使用 ``signal`` 關鍵字來聲明訊號；而在 C# 中，則可以在委託（delegate）上使用 ``[Signal]`` 特性（Attribute）來定義。
 
 
 .. tabs::
@@ -23,8 +23,8 @@ In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may
 
     signal attacked
 
-    # Additional arguments may be declared.
-    # These arguments must be passed when the signal is emitted.
+    # 也可以聲明額外的參數。
+    # 這些參數在發射訊號時必須被傳入。
     signal item_dropped(item_name, amount)
 
  .. code-tab:: csharp
@@ -32,14 +32,14 @@ In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may
     [Signal]
     delegate void AttackedEventHandler();
 
-    // Additional arguments may be declared.
-    // These arguments must be passed when the signal is emitted.
+    // 也可以聲明額外的參數。
+    // 這些參數在發射訊號時必須被傳入。
     [Signal]
     delegate void ItemDroppedEventHandler(string itemName, int amount);
 
 
 
-Connecting signals is one of the most common operations in Godot and the API gives many options to do so, which are described further down. The code block below shows the recommended approach.
+在 Godot 中，連接訊號是最常見的操作之一，API 提供了多種實現方式，下面會做詳細介紹。下面的程式碼塊展示了推薦的連接方法。
 
 
 .. tabs::
@@ -48,14 +48,14 @@ Connecting signals is one of the most common operations in Godot and the API giv
 
     func _ready():
         var button = Button.new()
-        # `button_down` here is a Signal Variant type. We therefore call the Signal.connect() method, not Object.connect().
-        # See discussion below for a more in-depth overview of the API.
+        # 這裡的 button_down 是一個 Signal（訊號）Variant 型別。因此，我們呼叫的是 Signal.connect() 方法，而不是 Object.connect()。
+        # 關於該 API 更深入的介紹，請參見下方的討論。
         button.button_down.connect(_on_button_down)
 
-        # This assumes that a `Player` class exists, which defines a `hit` signal.
+        # 這裡假設存在一個定義了 `hit` 訊號的 `Player` 類。
         var player = Player.new()
-        # We use Signal.connect() again, and we also use the Callable.bind() method,
-        # which returns a new Callable with the parameter binds.
+        # 我們再次使用了 Signal.connect()，同時還使用了 Callable.bind() 方法。
+        # 它會回傳一個新的 Callable，並且這個 Callable 已經綁定了相應的參數。
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
     func _on_button_down():
@@ -69,12 +69,12 @@ Connecting signals is one of the most common operations in Godot and the API giv
     public override void _Ready()
     {
         var button = new Button();
-        // C# supports passing signals as events, so we can use this idiomatic construct:
+        // C# 支援將訊號作為事件來傳遞，因此我們可以使用這種符合語言習慣的寫法：
         button.ButtonDown += OnButtonDown;
 
-        // This assumes that a `Player` class exists, which defines a `Hit` signal.
+        // 這裡假設存在一個定義了 `Hit` 訊號的 `Player` 類。
         var player = new Player();
-        // We can use lambdas when we need to bind additional parameters.
+        // 當我們需要綁定額外的參數時，可以使用 Lambda 運算式。
         player.Hit += () => OnPlayerHit("sword", 100);
     }
 
@@ -90,9 +90,9 @@ Connecting signals is one of the most common operations in Godot and the API giv
 
 
 
-\ ``Object.connect()`` **or** ``Signal.connect()``\ **?**\ 
+\ ``Object.connect()`` **還是** ``Signal.connect()``\ **？**\ 
 
-As seen above, the recommended method to connect signals is not :ref:`Object.connect()<class_Object_method_connect>`. The code block below shows the four options for connecting signals, using either this legacy method or the recommended :ref:`connect()<class_Signal_method_connect>`, and using either an implicit :ref:`Callable<class_Callable>` or a manually defined one.
+如上文所示，連接訊號的推薦方法並不是 :ref:`Object.connect()<class_Object_method_connect>`\ 。下面的程式碼塊展示了連接訊號的四種選項，分別是使用這種舊版方法或推薦的 :ref:`connect()<class_Signal_method_connect>`\ ，以及使用隱式的 :ref:`Callable<class_Callable>` 或手動定義的 :ref:`Callable<class_Callable>`\ 。
 
 
 .. tabs::
@@ -101,13 +101,13 @@ As seen above, the recommended method to connect signals is not :ref:`Object.con
 
     func _ready():
         var button = Button.new()
-        # Option 1: Object.connect() with an implicit Callable for the defined function.
+        # 方法一：使用 Object.connect()，並為定義好的函式隱式建立一個 Callable。
         button.connect("button_down", _on_button_down)
-        # Option 2: Object.connect() with a constructed Callable using a target object and method name.
+        # 方法二：使用 Object.connect()，並通過指定目標物件和方法名來手動建置一個 Callable。
         button.connect("button_down", Callable(self, "_on_button_down"))
-        # Option 3: Signal.connect() with an implicit Callable for the defined function.
+        # 方法三：使用 Signal.connect()，並為定義好的函式隱式建立一個 Callable。
         button.button_down.connect(_on_button_down)
-        # Option 4: Signal.connect() with a constructed Callable using a target object and method name.
+        # 方法四：使用 Signal.connect()，並通過指定目標物件和方法名來手動建置一個 Callable。
         button.button_down.connect(Callable(self, "_on_button_down"))
 
     func _on_button_down():
@@ -118,11 +118,11 @@ As seen above, the recommended method to connect signals is not :ref:`Object.con
     public override void _Ready()
     {
         var button = new Button();
-        // Option 1: In C#, we can use signals as events and connect with this idiomatic syntax:
+        // 方法一：在 C# 中，我們可以將訊號當作事件來使用，並通過這種符合語言習慣的語法進行連接：
         button.ButtonDown += OnButtonDown;
-        // Option 2: GodotObject.Connect() with a constructed Callable from a method group.
+        // 方法二：使用 GodotObject.Connect()，並通過方法組來建置一個 Callable。
         button.Connect(Button.SignalName.ButtonDown, Callable.From(OnButtonDown));
-        // Option 3: GodotObject.Connect() with a constructed Callable using a target object and method name.
+        // 方法三：使用 GodotObject.Connect()，並通過指定目標物件和方法名來建置一個 Callable。
         button.Connect(Button.SignalName.ButtonDown, new Callable(this, MethodName.OnButtonDown));
     }
 
@@ -133,13 +133,13 @@ As seen above, the recommended method to connect signals is not :ref:`Object.con
 
 
 
-While all options have the same outcome (``button``'s :ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` signal will be connected to ``_on_button_down``), **option 3** offers the best validation: it will print a compile-time error if either the ``button_down`` **Signal** or the ``_on_button_down`` :ref:`Callable<class_Callable>` are not defined. On the other hand, **option 2** only relies on string names and will only be able to validate either names at runtime: it will generate an error at runtime if ``"button_down"`` is not a signal, or if ``"_on_button_down"`` is not a method in the object ``self``. The main reason for using options 1, 2, or 4 would be if you actually need to use strings (e.g. to connect signals programmatically based on strings read from a configuration file). Otherwise, option 3 is the recommended (and fastest) method.
+雖然所有選項的最終結果都一樣（\ ``button`` 的 :ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` 訊號都會被連接到 ``_on_button_down`` 上），但 **選項 3** 提供了最好的驗證機制：如果 ``button_down`` **Signal** 或者 ``_on_button_down`` :ref:`Callable<class_Callable>` 沒有被定義，它會在編譯階段直接輸出出錯誤。另一方面，\ **選項 2** 僅僅取決於字串名稱，只能在程式執行時進行驗證：如果 ``"button_down"`` 不是一個訊號，或者 ``"_on_button_down"`` 不是 ``self`` 物件中的一個方法，它會在執行時產生一個錯誤。使用選項 1、2 或 4 的主要原因，是你確實需要使用字串（例如，根據從設定檔案中讀取的字串來以編程方式連接訊號）。除此之外，選項 3 是最推薦（也是最快）的方法。
 
-\ **Binding and passing parameters:**\ 
+\ **綁定和傳遞參數：**\ 綁定參數的語法是通過 :ref:`Callable.bind()<class_Callable_method_bind>`\ ，它會回傳一個綁定了參數的 :ref:`Callable<class_Callable>` 副本。
 
-The syntax to bind parameters is through :ref:`Callable.bind()<class_Callable_method_bind>`, which returns a copy of the :ref:`Callable<class_Callable>` with its parameters bound.
+當呼叫 :ref:`emit()<class_Signal_method_emit>` 或 :ref:`Object.emit_signal()<class_Object_method_emit_signal>` 時，也可以傳遞訊號參數。
 
-When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal()<class_Object_method_emit_signal>`, the signal parameters can be also passed. The examples below show the relationship between these signal parameters and bound parameters.
+下面的範例展示了這些訊號參數與綁定參數之間的關係。
 
 
 .. tabs::
@@ -147,16 +147,16 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
  .. code-tab:: gdscript
 
     func _ready():
-        # This assumes that a `Player` class exists, which defines a `hit` signal.
+        # 這裡假設存在一個定義了 `hit` 訊號的 `Player` 類。
         var player = Player.new()
-        # Using Callable.bind().
+        # 使用 Callable.bind()。
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
-        # Parameters added when emitting the signal are passed first.
+        # 發射訊號時新增的參數會最先傳遞。
         player.hit.emit("Dark lord", 5)
 
-    # We pass two arguments when emitting (`hit_by`, `level`),
-    # and bind two more arguments when connecting (`weapon_type`, `damage`).
+    # 我們在發射訊號時傳遞了兩個參數 (`hit_by`, `level`)，
+    # 並在連接訊號時綁定了另外兩個參數 (`weapon_type`, `damage`)。
     func _on_player_hit(hit_by, level, weapon_type, damage):
         print("Hit by %s (level %d) with weapon %s for %d damage." % [hit_by, level, weapon_type, damage])
 
@@ -164,18 +164,18 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
     public override void _Ready()
     {
-        // This assumes that a `Player` class exists, which defines a `Hit` signal.
+        // 這裡假設存在一個定義了 `Hit` 訊號的 `Player` 類。
         var player = new Player();
-        // Using lambda expressions that create a closure that captures the additional parameters.
-        // The lambda only receives the parameters defined by the signal's delegate.
+        // 使用 Lambda 運算式建立一個閉包，來捕獲額外的參數。
+        // Lambda 運算式只會接收到訊號委託所定義的參數。
         player.Hit += (hitBy, level) => OnPlayerHit(hitBy, level, "sword", 100);
 
-        // Parameters added when emitting the signal are passed first.
+        // 發射訊號時新增的參數會最先傳遞。
         player.EmitSignal(SignalName.Hit, "Dark lord", 5);
     }
 
-    // We pass two arguments when emitting (`hit_by`, `level`),
-    // and bind two more arguments when connecting (`weapon_type`, `damage`).
+    // 我們在發射訊號時傳入了兩個參數（`hit_by` 和 `level`），
+    // 並在連接訊號時綁定了另外兩個參數（`weapon_type` 和 `damage`）。
     private void OnPlayerHit(string hitBy, int level, string weaponType, int damage)
     {
         GD.Print($"Hit by {hitBy} (level {level}) with weapon {weaponType} for {damage} damage.");
@@ -183,7 +183,7 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 
 
-\ **Note:** In a boolean context, a signal will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Signal_method_is_null>`). Otherwise, a signal will always evaluate to ``true``.
+\ **注意：** 在布林環境下，如果訊號為 null（空），它的求值結果將為 ``false``\ （假）（詳見 :ref:`is_null()<class_Signal_method_is_null>`\ ）。除此之外，訊號的求值結果始終為 ``true``\ （真）。
 
 .. note::
 
@@ -293,7 +293,7 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ object\: :ref:`Object<class_Object>`, signal\: :ref:`StringName<class_StringName>`\ )
 
-Creates a **Signal** object referencing a signal named ``signal`` in the specified ``object``.
+新建 **Signal** 物件，參照 ``object`` 物件中名為 ``signal`` 的訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -310,9 +310,9 @@ Creates a **Signal** object referencing a signal named ``signal`` in the specifi
 
 :ref:`int<class_int>` **connect**\ (\ callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Signal_method_connect>`
 
-Connects this signal to the specified ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). You can provide additional arguments to the connected ``callable`` by using :ref:`Callable.bind()<class_Callable_method_bind>`.
+將訊號連接到可呼叫體 ``callable``\ 。還可以新增 ``flags`` 對連接的行為進行設定（見 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常數）。可以使用 :ref:`Callable.bind()<class_Callable_method_bind>` 為連接的 ``callable`` 提供額外的參數。
 
-A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and generates an error, unless the signal is connected with :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Signal_method_is_connected>` first to check for existing connections.
+一個訊號只能和同一個 :ref:`Callable<class_Callable>` 連接一次。如果訊號已連接，則會回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 並生成錯誤，除非訊號是用 :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>` 連接的。要防止這個問題，請先使用 :ref:`is_connected()<class_Signal_method_is_connected>` 檢查已有連接。
 
 ::
 
@@ -320,9 +320,9 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
         button.pressed.connect(_on_pressed.bind(button))
 
     func _on_pressed(button):
-        print(button.name, " was pressed")
+        print(button.name, " 被按了一下")
 
-\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
+\ **注意：**\ 如果 ``callable`` 的物件被釋放，連接會丟失。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`bool<class_bool>` **has_connections**\ (\ ) |const| :ref:`🔗<class_Signal_method_has_connections>`
 
-Returns ``true`` if any :ref:`Callable<class_Callable>` is connected to this signal.
+如果存在連接到該訊號的 :ref:`Callable<class_Callable>`\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Returns ``true`` if any :ref:`Callable<class_Callable>` is connected to this sig
 
 :ref:`bool<class_bool>` **is_null**\ (\ ) |const| :ref:`🔗<class_Signal_method_is_null>`
 
-Returns ``true`` if this **Signal** has no object and the signal name is empty. Equivalent to ``signal == Signal()``.
+如果該 **Signal** 不存在物件且訊號名為空，則回傳 ``true``\ 。等價於 ``signal == Signal()``\ 。
 
 .. rst-class:: classref-section-separator
 

@@ -7,20 +7,20 @@ TriangleMesh
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Triangle geometry for efficient, physicsless intersection queries.
+用於高效、無物理互動查詢的三角形幾何體。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Creates a bounding volume hierarchy (BVH) tree structure around triangle geometry.
+在三角形幾何體周圍建立一個包圍體積層次（Bounding Volume Hierarchy，BVH）樹結構。
 
-The triangle BVH tree can be used for efficient intersection queries without involving a physics engine.
+三角形 BVH 樹可以用於高效的互動查詢，無需涉及物理引擎。
 
-For example, this can be used in editor tools to select objects with complex shapes based on the mouse cursor position.
+例如，在編輯器工具中可以用來根據滑鼠游標位置選擇具有複雜形狀的物件。
 
-\ **Performance:** Creating the BVH tree for complex geometry is a slow process and best done in a background thread.
+\ **效能：**\ 為複雜幾何體建立 BVH 樹是一個緩慢的過程，最好在後台執行緒中進行。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,9 +55,9 @@ For example, this can be used in editor tools to select objects with complex sha
 
 :ref:`bool<class_bool>` **create_from_faces**\ (\ faces\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_TriangleMesh_method_create_from_faces>`
 
-Creates the BVH tree from an array of faces. Each 3 vertices of the input ``faces`` array represent one triangle (face).
+根據面陣列建立 BVH 樹。輸入的 ``faces`` 陣列中的每三個頂點代表一個三角形（面）。
 
-Returns ``true`` if the tree is successfully built, ``false`` otherwise.
+如果樹成功建置則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ Returns ``true`` if the tree is successfully built, ``false`` otherwise.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_faces**\ (\ ) |const| :ref:`🔗<class_TriangleMesh_method_get_faces>`
 
-Returns a copy of the geometry faces. Each 3 vertices of the array represent one triangle (face).
+回傳幾何體中所有面的副本。陣列中每三個頂點代表一個三角形（面）。
 
 .. rst-class:: classref-item-separator
 
@@ -81,19 +81,19 @@ Returns a copy of the geometry faces. Each 3 vertices of the array represent one
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray**\ (\ begin\: :ref:`Vector3<class_Vector3>`, dir\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_TriangleMesh_method_intersect_ray>`
 
-Tests for intersection with a ray starting at ``begin`` and facing ``dir`` and extending toward infinity.
+檢測與射線的交點，射線從 ``begin`` 開始，朝向 ``dir``\ ，無限延伸。
 
-If an intersection with a triangle happens, returns a :ref:`Dictionary<class_Dictionary>` with the following fields:
+如果與某個三角形存在交點，則回傳一個 :ref:`Dictionary<class_Dictionary>`\ ，其中包含以下欄位：
 
-\ ``position``: The position on the intersected triangle.
+\ ``position``\ ：相交三角形上的位置。
 
-\ ``normal``: The normal of the intersected triangle.
+\ ``normal``\ ：相交三角形的法線。
 
-\ ``face_index``: The index of the intersected triangle.
+\ ``face_index``\ ：相交三角形的索引。
 
-Returns an empty :ref:`Dictionary<class_Dictionary>` if no intersection happens.
+如果不存在交點則回傳空 :ref:`Dictionary<class_Dictionary>`\ 。
 
-See also :ref:`intersect_segment()<class_TriangleMesh_method_intersect_segment>`, which is similar but uses a finite-length segment.
+另見 :ref:`intersect_segment()<class_TriangleMesh_method_intersect_segment>`\ ，與此方法類似，但使用的是線段，長度有限。
 
 .. rst-class:: classref-item-separator
 
@@ -105,19 +105,19 @@ See also :ref:`intersect_segment()<class_TriangleMesh_method_intersect_segment>`
 
 :ref:`Dictionary<class_Dictionary>` **intersect_segment**\ (\ begin\: :ref:`Vector3<class_Vector3>`, end\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_TriangleMesh_method_intersect_segment>`
 
-Tests for intersection with a segment going from ``begin`` to ``end``.
+檢測與線段的交點，線段從 ``begin`` 開始，到 ``end`` 結束。
 
-If an intersection with a triangle happens returns a :ref:`Dictionary<class_Dictionary>` with the following fields:
+如果與某個三角形存在交點，則回傳一個 :ref:`Dictionary<class_Dictionary>`\ ，其中包含以下欄位：
 
-\ ``position``: The position on the intersected triangle.
+\ ``position``\ ：相交三角形上的位置。
 
-\ ``normal``: The normal of the intersected triangle.
+\ ``normal``\ ：相交三角形的法線。
 
-\ ``face_index``: The index of the intersected triangle.
+\ ``face_index``\ ：相交三角形的索引。
 
-Returns an empty :ref:`Dictionary<class_Dictionary>` if no intersection happens.
+如果不存在交點則回傳空 :ref:`Dictionary<class_Dictionary>`\ 。
 
-See also :ref:`intersect_ray()<class_TriangleMesh_method_intersect_ray>`, which is similar but uses an infinite-length ray.
+另見 :ref:`intersect_ray()<class_TriangleMesh_method_intersect_ray>`\ ，與此方法類似，但使用的是射線，長度無限。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

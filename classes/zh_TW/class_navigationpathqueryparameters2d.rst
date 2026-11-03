@@ -120,7 +120,7 @@ enum **PathPostProcessing**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>` **PATH_POSTPROCESSING_NONE** = ``2``
 
-Applies no postprocessing and returns the raw path corridor as found by the pathfinding algorithm.
+不進行後期處理，回傳尋路算法找到的原始路徑走廊。
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ flags **PathMetadataFlags**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 - |void| **set_excluded_regions**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_excluded_regions**\ (\ )
 
-The list of region :ref:`RID<class_RID>`\ s that will be excluded from the path query. Use :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`NavigationRegion2D<class_NavigationRegion2D>` node.
+將被排除在路徑查詢之外的區塊的 :ref:`RID<class_RID>` 清單。請使用 :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` 來取得與派生自 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then set it to the property again.
+\ **注意：**\ 回傳的陣列為副本，對其進行的修改不會更新原有屬性。更新時，請先修改回傳的陣列，然後將其重新賦值回該屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The list of region :ref:`RID<class_RID>`\ s that will be excluded from the path 
 - |void| **set_included_regions**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_included_regions**\ (\ )
 
-The list of region :ref:`RID<class_RID>`\ s that will be included by the path query. Use :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`NavigationRegion2D<class_NavigationRegion2D>` node. If left empty all regions are included. If a region ends up being both included and excluded at the same time it will be excluded.
+將被排除在路徑查詢之外的區塊的 :ref:`RID<class_RID>` 清單。請使用 :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` 來取得與派生自 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。如果留空則會包含所有區塊。如果區塊最終同時處於包含和排除狀態，則會被排除。
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then set it to the property again.
+\ **注意：**\ 回傳的陣列為副本，對其進行的修改不會更新原有屬性。更新時，請先修改回傳的陣列，然後將其重新賦值回該屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ The list of region :ref:`RID<class_RID>`\ s that will be included by the path qu
 - |void| **set_map**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_map**\ (\ )
 
-The navigation map :ref:`RID<class_RID>` used in the path query.
+在路徑查詢中使用的導航地圖 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ The navigation map :ref:`RID<class_RID>` used in the path query.
 - |void| **set_path_return_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_length**\ (\ )
 
-The maximum allowed length of the returned path in world units. A path will be clipped when going over this length. A value of ``0`` or below counts as disabled.
+返迴路徑允許的最大長度，單位為世界單位。路徑超出該長度後會被截斷。設為小於等於 ``0`` 時為停用。
 
 .. rst-class:: classref-item-separator
 
@@ -315,9 +315,9 @@ The maximum allowed length of the returned path in world units. A path will be c
 - |void| **set_path_return_max_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_radius**\ (\ )
 
-The maximum allowed radius in world units that the returned path can be from the path start. The path will be clipped when going over this radius. A value of ``0`` or below counts as disabled.
+返迴路徑從起點開始所允許的最大半徑，單位為世界單位。路徑超出該半徑後會被截斷。取值小於等於 ``0`` 時視為停用。
 
-\ **Note:** This will perform a circle shaped clip operation on the path with the first path position being the circle's center position.
+\ **注意：**\ 該屬性會對路徑執行圓形裁剪，路徑上的第一個位置是圓心所在的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ The maximum allowed radius in world units that the returned path can be from the
 - |void| **set_path_search_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_search_max_distance**\ (\ )
 
-The maximum distance a searched polygon can be away from the start polygon before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+搜尋通往目的位置多邊形的路徑時（可能不可達或非常遠），取消尋路前能夠搜尋的多邊形的最大距離。取消時，尋路會重設，建置出的路徑從起始多邊形開始，通往目前所找到的最接近目的位置的多邊形。小於等於 ``0`` 表示不限制數量，尋路時會搜尋與起始多邊形相連的所有多邊形，直到發現目的位置多邊形或已經查過所有待查的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ The maximum distance a searched polygon can be away from the start polygon befor
 - |void| **set_path_search_max_polygons**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_path_search_max_polygons**\ (\ )
 
-The maximum number of polygons that are searched before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+搜尋通往目的位置多邊形的路徑時（可能不可達或非常遠），取消尋路前能夠搜尋的最大多邊形數。取消時，尋路會重設，建置出的路徑從起始多邊形開始，通往目前所找到的最接近目的位置的多邊形。小於等於 ``0`` 表示不限制數量，尋路時會搜尋與起始多邊形相連的所有多邊形，直到發現目的位置多邊形或已經查過所有待查的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ The maximum number of polygons that are searched before the pathfinding cancels 
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-The path simplification amount in worlds units.
+以世界單位表示的路徑簡化量。
 
 .. rst-class:: classref-item-separator
 
@@ -402,9 +402,9 @@ The path simplification amount in worlds units.
 - |void| **set_simplify_path**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simplify_path**\ (\ )
 
-If ``true`` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by :ref:`simplify_epsilon<class_NavigationPathQueryParameters2D_property_simplify_epsilon>`. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+如果為 ``true``\ ，將返迴路徑的簡化版本，其中移除了不太重要的路徑點。簡化量由 :ref:`simplify_epsilon<class_NavigationPathQueryParameters2D_property_simplify_epsilon>` 控制。簡化使用 Ramer-Douglas-Peucker 算法的變體進行曲線點抽取。
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+路徑簡化有助於緩解使用某些代理型別和腳本行為可能出現的各種路徑追蹤問題。例如“開放場”中的“轉向”代理或避讓。
 
 .. rst-class:: classref-item-separator
 

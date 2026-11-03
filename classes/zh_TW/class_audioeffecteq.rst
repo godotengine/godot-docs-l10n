@@ -9,18 +9,18 @@ AudioEffectEQ
 
 **被繼承：** :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`
 
-Base class for audio equalizers (EQ). Gives you control over frequencies.
+音訊均衡器（EQ）的基底類別。讓你可以控制頻率。
 
-Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, or :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` don't fit your needs.
+如果 :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`\ 、\ :ref:`AudioEffectEQ10<class_AudioEffectEQ10>` 或 :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` 不符合你的需求，請用它來建立自訂均衡器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An "equalizer" gives you control over the gain of frequencies in the entire spectrum, by allowing their adjustment through bands. A band is a point in the frequency spectrum, and each band means a division of the spectrum that can be adjusted.
+“均衡器”通過允許對整個頻譜中各個頻率進行頻段的調整，從而控制它們的增益。頻段是指頻譜中的一個點，每個頻段都意味著頻譜的一個可調節部分。
 
-Use equalizers to compensate for existing deficiencies in the audio, make room for other elements, or remove undesirable frequencies. AudioEffectEQs are useful on the Master bus to balance the entire mix or give it more character. They are also useful when a game is run on a mobile device, to adjust the mix to that kind of speakers (it can be disabled when headphones are plugged in).
+使用均衡器來彌補音訊中存在的不足，為其他元素騰出空間，或去除不需要的頻率。AudioEffectEQ 在主總線上非常有用，可以平衡整個混音或賦予其更多特色。當遊戲在行動裝置上執行時，它們也很有用，可以根據那種揚聲器來調整混音（插入耳機時可以停用）。
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Use equalizers to compensate for existing deficiencies in the audio, make room f
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

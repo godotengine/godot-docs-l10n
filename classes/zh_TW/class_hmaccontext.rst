@@ -14,7 +14,7 @@ HMACContext
 說明
 ----
 
-HMACContext 類對於高級的 HMAC 用例非常有用，例如流式消息，因為它支援在一段時間內建立消息，而非一次性提供。
+HMACContext 類對於進階的 HMAC 用例非常有用，例如流式訊息，因為它支援在一段時間內建立訊息，而非一次性提供。
 
 
 .. tabs::
@@ -119,7 +119,7 @@ HMACContext 類對於高級的 HMAC 用例非常有用，例如流式消息，�
 
 :ref:`Error<enum_@GlobalScope_Error>` **update**\ (\ data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_update>`
 
-更新要進行 HMAC 處理的消息。在 :ref:`finish()<class_HMACContext_method_finish>` 被呼叫以將 ``data`` 追加到該消息之前，該函式可以多次被呼叫，但在 :ref:`start()<class_HMACContext_method_start>` 被呼叫之前不能被呼叫。
+更新要進行 HMAC 處理的訊息。在 :ref:`finish()<class_HMACContext_method_finish>` 被呼叫以將 ``data`` 追加到該訊息之前，該函式可以多次被呼叫，但在 :ref:`start()<class_HMACContext_method_start>` 被呼叫之前不能被呼叫。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

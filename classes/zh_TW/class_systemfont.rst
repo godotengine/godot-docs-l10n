@@ -14,15 +14,15 @@ SystemFont
 說明
 ----
 
-**SystemFont** loads a font from a system font with the first matching name from :ref:`font_names<class_SystemFont_property_font_names>`.
+**SystemFont** 會從系統字型中載入一個字型，該字型是名稱能與 :ref:`font_names<class_SystemFont_property_font_names>` 匹配的第一個字型。
 
-It will attempt to match font style, but it's not guaranteed.
+會嘗試匹配字型樣式，但是並不保證。
 
-The returned font might be part of a font collection or be a variable font with OpenType "weight", "width" and/or "italic" features set.
+回傳的字型可能屬於某個字型合集，也可能是設定了 OpenType“字重”“寬度”和/或“斜體”特性的可變字型。
 
-You can create :ref:`FontVariation<class_FontVariation>` of the system font for precise control over its features.
+你可以建立系統字型的 :ref:`FontVariation<class_FontVariation>`\ ，以便對其特徵進行精細控制。
 
-\ **Note:** This class is implemented on iOS, Linux, macOS and Windows, on other platforms it will fallback to default theme font.
+\ **注意：**\ 這個類在 iOS、Linux、macOS、Windows 上實作，在其他平台上會回退到預設主題字型。
 
 .. rst-class:: classref-reftable-group
 
@@ -105,7 +105,7 @@ You can create :ref:`FontVariation<class_FontVariation>` of the system font for 
 - |void| **set_antialiasing**\ (\ value\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ )
 - :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **get_antialiasing**\ (\ )
 
-字形抗鋸齒模式。
+字形反鋸齒模式。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ You can create :ref:`FontVariation<class_FontVariation>` of the system font for 
 - |void| **set_disable_embedded_bitmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_disable_embedded_bitmaps**\ (\ )
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+如果為 ``true``\ ，則會停用內嵌字型點陣圖的載入（僅包含點陣圖的字型以及彩色字型會停用該屬性）。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 - |void| **set_font_names**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_font_names**\ (\ )
 
-要搜索的字形家族名稱陣列，會使用第一個與之配對的字形。
+要搜尋的字形家族名稱陣列，會使用第一個與之配對的字形。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -260,7 +260,7 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 - |void| **set_keep_rounding_remainders**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_rounding_remainders**\ (\ )
 
-If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
+如果設定為 ``true``\ ，則將字形與像素邊界對齊時會累積捨入余數，確保字形的分布更加均勻。如果啟用了次像素定位則該設定無效。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ If set to ``true``, when aligning glyphs to the pixel boundaries rounding remain
 - |void| **set_modulate_color_glyphs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_modulate_color_glyphs**\ (\ )
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+如果設為 ``true``\ ，則繪製彩色字形時會應用顏色調制，否則只會對灰度字形應用。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但算繪速度較慢並且需要更多記憶體。只有當注意到字形算繪中明顯缺乏精度時，才增加該屬性的值。
+用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但渲染速度較慢並且需要更多記憶體。只有當注意到字形渲染中明顯缺乏精度時，才增加該屬性的值。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_multichannel_signed_distance_field**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multichannel_signed_distance_field**\ (\ )
 
-如果設定為 ``true``\ ，則所有大小的字形都將使用從動態字形向量資料生成的單個多通道帶符號距離場算繪。
+如果設定為 ``true``\ ，則所有大小的字形都將使用從動態字形向量資料生成的單個多通道帶符號距離場渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_oversampling**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversampling**\ (\ )
 
-If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods.
+如果設為正數，則會覆蓋使用該字型的視埠的過取樣係數。見 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。該值不會覆蓋 ``draw_*`` 方法的 ``oversampling`` 參數。
 
 .. rst-class:: classref-item-separator
 

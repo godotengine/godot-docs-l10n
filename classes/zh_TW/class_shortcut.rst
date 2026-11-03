@@ -14,11 +14,11 @@ Shortcut
 說明
 ----
 
-Shortcuts (also known as hotkeys) are containers of :ref:`InputEvent<class_InputEvent>` resources. They are commonly used to interact with a :ref:`Control<class_Control>` element from an :ref:`InputEvent<class_InputEvent>`.
+Shortcut（快捷鍵，也叫熱鍵）是 :ref:`InputEvent<class_InputEvent>` 資源的容器，常用於通過 :ref:`InputEvent<class_InputEvent>` 與 :ref:`Control<class_Control>` 元素進行互動。
 
-One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources, making it possible to trigger one action with multiple different inputs.
+一個快捷鍵可以包含多個 :ref:`InputEvent<class_InputEvent>` 資源，因此可以使用多種不同的輸入觸發某個動作。
 
-\ **Example:** Capture the :kbd:`Ctrl + S` shortcut using a **Shortcut** resource:
+\ **範例：**\ 使用 **Shortcut** 資源捕獲 :kbd:`Ctrl + S` 快捷鍵：
 
 
 .. tabs::
@@ -32,12 +32,12 @@ One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources,
         var key_event = InputEventKey.new()
         key_event.keycode = KEY_S
         key_event.ctrl_pressed = true
-        key_event.command_or_control_autoremap = true # Swaps Ctrl for Command on Mac.
+        key_event.command_or_control_autoremap = true # 在 mac 上將 Ctrl 替換為 Command。
         save_shortcut.events = [key_event]
 
     func _input(event):
         if save_shortcut.matches_event(event) and event.is_pressed() and not event.is_echo():
-            print("Save shortcut pressed!")
+            print("按下了儲存快捷鍵！")
             get_viewport().set_input_as_handled()
 
  .. code-tab:: csharp
@@ -54,7 +54,7 @@ One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources,
             {
                 Keycode = Key.S,
                 CtrlPressed = true,
-                CommandOrControlAutoremap = true, // Swaps Ctrl for Command on Mac.
+                CommandOrControlAutoremap = true, // 在 mac 上將 Ctrl 替換為 Command。
             };
 
             _saveShortcut.Events = [keyEvent];
@@ -66,7 +66,7 @@ One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources,
                 _saveShortcut.MatchesEvent(@event) &&
                 keyEvent.Pressed && !keyEvent.Echo)
             {
-                GD.Print("Save shortcut pressed!");
+                GD.Print("按下了儲存快捷鍵！");
                 GetViewport().SetInputAsHandled();
             }
         }
@@ -165,7 +165,7 @@ One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources,
 
 :ref:`bool<class_bool>` **matches_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_Shortcut_method_matches_event>`
 
-Returns whether any :ref:`InputEvent<class_InputEvent>` in :ref:`events<class_Shortcut_property_events>` equals ``event``. This uses :ref:`InputEvent.is_match()<class_InputEvent_method_is_match>` to compare events.
+回傳 :ref:`events<class_Shortcut_property_events>` 中是否有等於 ``event`` 的 :ref:`InputEvent<class_InputEvent>`\ 。比較事件時使用 :ref:`InputEvent.is_match()<class_InputEvent_method_is_match>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -9,16 +9,16 @@ RenderData
 
 **被繼承：** :ref:`RenderDataExtension<class_RenderDataExtension>`, :ref:`RenderDataRD<class_RenderDataRD>`
 
-Abstract render data object, holds frame data related to rendering a single frame of a viewport.
+抽象渲染資料物件，存放的是與渲染視埠中某一影格相關的影格資料。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Abstract render data object, exists for the duration of rendering a single viewport. See also :ref:`RenderDataRD<class_RenderDataRD>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
+抽象渲染資料物件，渲染單一視埠期間可用。另見 :ref:`RenderDataRD<class_RenderDataRD>`\ 、\ :ref:`RenderSceneData<class_RenderSceneData>` 和 :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是內部渲染伺服器物件。請勿從腳本中實例化該類。
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Abstract render data object, exists for the duration of rendering a single viewp
 
 :ref:`RID<class_RID>` **get_camera_attributes**\ (\ ) |const| :ref:`🔗<class_RenderData_method_get_camera_attributes>`
 
-Returns the :ref:`RID<class_RID>` of the camera attributes object in the :ref:`RenderingServer<class_RenderingServer>` being used to render this viewport.
+回傳 :ref:`RenderingServer<class_RenderingServer>` 中用來渲染這個視埠的相機屬性物件的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Returns the :ref:`RID<class_RID>` of the camera attributes object in the :ref:`R
 
 :ref:`RID<class_RID>` **get_environment**\ (\ ) |const| :ref:`🔗<class_RenderData_method_get_environment>`
 
-Returns the :ref:`RID<class_RID>` of the environment object in the :ref:`RenderingServer<class_RenderingServer>` being used to render this viewport.
+回傳用於渲染該視埠的 :ref:`RenderingServer<class_RenderingServer>` 中環境物件的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the :ref:`RID<class_RID>` of the environment object in the :ref:`Renderi
 
 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **get_render_scene_buffers**\ (\ ) |const| :ref:`🔗<class_RenderData_method_get_render_scene_buffers>`
 
-Returns the :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object managing the scene buffers for rendering this viewport.
+回傳管理這個視埠渲染的 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Returns the :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object managing 
 
 :ref:`RenderSceneData<class_RenderSceneData>` **get_render_scene_data**\ (\ ) |const| :ref:`🔗<class_RenderData_method_get_render_scene_data>`
 
-Returns the :ref:`RenderSceneData<class_RenderSceneData>` object managing this frames scene data.
+回傳管理這個影格場景資料的 :ref:`RenderSceneData<class_RenderSceneData>` 物件。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

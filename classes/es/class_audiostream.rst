@@ -105,7 +105,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **_get_bar_beats**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_bar_beats>`
 
-Sobrescribe este método para devolver los compases de esta transmisión.
+Sobrescribe este método para devolver los pulsos por compás de esta transmisión.
 
 .. rst-class:: classref-item-separator
 

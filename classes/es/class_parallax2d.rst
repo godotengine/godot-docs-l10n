@@ -16,7 +16,7 @@ Descripción
 
 Un **Parallax2D** se utiliza para crear un efecto de paralaje. Puede moverse a una velocidad diferente en relación con el movimiento de la cámara usando :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Esto crea una ilusión de profundidad en un juego 2D. Si se desea un desplazamiento manual, la posición de la :ref:`Camera2D<class_Camera2D>` puede ser ignorada con :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
 
-\ **Nota:** Cualquier cambio en la posición de este nodo realizado después de que entre en el árbol de la escena será anulado si :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` es ``false`` o si :ref:`screen_offset<class_Parallax2D_property_screen_offset>` es modificado.
+\ **Nota:** Cualquier cambio en la posición de este nodo realizado después de que entre en el árbol de la escena será sobrescrito si :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` es ``false`` o si :ref:`screen_offset<class_Parallax2D_property_screen_offset>` es modificado.
 
 .. rst-class:: classref-introduction-group
 
@@ -128,7 +128,7 @@ Si es ``true``, la posición de **Parallax2D** no se ve afectada por la posició
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-Top-left limits for scrolling to begin. If the camera is outside of this limit, the **Parallax2D** stops scrolling. Must be lower than :ref:`limit_end<class_Parallax2D_property_limit_end>` minus the viewport size to work.
+Límites superior izquierdo para que comience el desplazamiento. Si la cámara está fuera de este límite, el **Parallax2D** detiene el desplazamiento. Debe ser inferior a :ref:`limit_end<class_Parallax2D_property_limit_end>` menos el tamaño del viewport para funcionar.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Top-left limits for scrolling to begin. If the camera is outside of this limit, 
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than :ref:`limit_begin<class_Parallax2D_property_limit_begin>` and the viewport size combined to work.
+Límites inferior derecho para que termine el desplazamiento. Si la cámara está fuera de este límite, el **Parallax2D** detendrá el desplazamiento. Debe ser superior a :ref:`limit_begin<class_Parallax2D_property_limit_begin>` y el tamaño del viewport combinados para funcionar.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Repite la :ref:`Texture2D<class_Texture2D>` de cada uno de los hijos de este nod
 - |void| **set_repeat_times**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_repeat_times**\ (\ )
 
-Anula la cantidad de veces que se repite la textura. Cada copia de textura se extiende uniformemente desde el original por :ref:`repeat_size<class_Parallax2D_property_repeat_size>`. Útil para cuando se aleja con una cámara.
+Sobrescribe la cantidad de veces que se repite la textura. Cada copia de textura se extiende uniformemente desde el original por :ref:`repeat_size<class_Parallax2D_property_repeat_size>`. Útil para cuando se aleja con una cámara.
 
 .. rst-class:: classref-item-separator
 

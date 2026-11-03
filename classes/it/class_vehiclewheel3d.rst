@@ -23,7 +23,7 @@ Un nodo utilizzato come figlio di un :ref:`VehicleBody3D<class_VehicleBody3D>` g
 Tutorial
 ----------------
 
-- `Demo 3D "Truck Town" <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo 3D "Truck Town" <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

@@ -7,16 +7,16 @@ AudioEffectNotchFilter
 
 **繼承：** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a notch filter to an audio bus.
+向音訊總線新增一個陷波濾波器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "notch" filter attenuates frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows frequencies outside the frequency threshold to pass unchanged. It is a narrower and stronger version of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+“陷波”濾波器會衰減 :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 處的頻率，並允許處於該頻率閾值之外的頻率原樣通過。它是 :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` 的一種更窄、衰減效果更強的版本，且功能上與 :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>` 相反。
 
-This filter can be used to give more room for other sounds to play at that frequency. Because of how much it attenuates frequencies, it can also be used to completely remove undesired frequencies.
+該濾波器可用於為該頻率上的其他聲音提供更多播放空間。由於它能大幅衰減頻率，因此也可以用來完全消除不需要的頻率。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to give more room for other sounds to play at that frequ
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

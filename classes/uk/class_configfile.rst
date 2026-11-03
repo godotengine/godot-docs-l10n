@@ -27,9 +27,11 @@ ConfigFile
 
 У наступному прикладі показано, як створити простий файл **ConfigFile** і зберегти його на диску:
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     # Створіть новий об'єкт ConfigFile.
     var config = ConfigFile.new()
 
@@ -41,8 +43,9 @@ ConfigFile
 
     # Збережіть його у файл (перезапишіть, якщо він уже існує).
     config.save("user://scores.cfg")
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     // Створення нового об'єкта ConfigFile.
     var config = new ConfigFile();
 
@@ -54,11 +57,16 @@ ConfigFile
 
     // Збережіть його у файл (перезапишіть, якщо він уже існує).
     config.Save("user://scores.cfg");
-    [/csharp][/codeblocks]
+
+
 
 У цьому прикладі показано, як можна завантажити файл вище:
-[codeblock]
-    [gdscript]
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var score_data = {}
     var config = ConfigFile.new()
 
@@ -75,8 +83,9 @@ ConfigFile
         var player_name = config.get_value(player, "player_name")
         var player_score = config.get_value(player, "best_score")
         score_data[player_name] = player_score
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var score_data = new Godot.Collections.Dictionary();
     var config = new ConfigFile();
 
@@ -97,15 +106,16 @@ ConfigFile
         var player_score = (int)config.GetValue(player, "best_score");
         score_data[player_name] = player_score;
     }
-    [/csharp][/codeblocks]
 
-Будь-яка операція, яка змінює ConfigFile, наприклад [method set_value], [method clear] або [method erase_section], змінює лише те, що завантажено в пам’ять. Якщо ви хочете записати зміни у файл, ви повинні зберегти зміни за допомогою [method save], [method save_encrypted] або [method save_encrypted_pass].
+
+
+Будь-яка операція, яка змінює ConfigFile, наприклад :ref:`set_value()<class_ConfigFile_method_set_value>`, :ref:`clear()<class_ConfigFile_method_clear>` або :ref:`erase_section()<class_ConfigFile_method_erase_section>`, змінює лише те, що завантажено в пам’ять. Якщо ви хочете записати зміни у файл, ви повинні зберегти зміни за допомогою :ref:`save()<class_ConfigFile_method_save>`, :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>` або :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>`.
 
 Пам’ятайте, що назви розділів і властивостей не можуть містити пробіли. Усе, що стоїть після пробілу, ігноруватиметься під час збереження та завантаження.
 
-Файли конфігурацій також можуть містити написані вручну рядки коментарів, які починаються з крапки з комою ([code];[/code]). Ці рядки будуть проігноровані під час аналізу файлу. Зауважте, що коментарі буде втрачено під час збереження файлу конфігурації. Це може бути корисним для файлів конфігурації виділеного сервера, які зазвичай ніколи не перезаписуються без явної дії користувача.
+Файли конфігурацій також можуть містити написані вручну рядки коментарів, які починаються з крапки з комою (``;``). Ці рядки будуть проігноровані під час аналізу файлу. Зауважте, що коментарі буде втрачено під час збереження файлу конфігурації. Це може бути корисним для файлів конфігурації виділеного сервера, які зазвичай ніколи не перезаписуються без явної дії користувача.
 
-[b]Примітка:[/b] Розширення файлу, надане ConfigFile, не впливає на його форматування чи поведінку. За домовленістю тут використовується розширення [code].cfg[/code], але будь-яке інше розширення, наприклад [code].ini[/code], також є дійсним. Оскільки ані [code].cfg[/code], ані [code].ini[/code] не стандартизовані, форматування файлу конфігурації Godot може відрізнятися від файлів, написаних іншими програмами.
+\ **Примітка:** Розширення файлу, надане ConfigFile, не впливає на його форматування чи поведінку. За домовленістю тут використовується розширення ``.cfg``, але будь-яке інше розширення, наприклад ``.ini``, також є дійсним. Оскільки ані ``.cfg``, ані ``.ini`` не стандартизовані, форматування файлу конфігурації Godot може відрізнятися від файлів, написаних іншими програмами.
 
 .. rst-class:: classref-reftable-group
 

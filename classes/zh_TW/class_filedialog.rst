@@ -9,16 +9,16 @@ FileDialog
 
 **被繼承：** :ref:`EditorFileDialog<class_EditorFileDialog>`
 
-用於選擇檔案系統中的檔或目錄的對話方塊。
+用於選擇檔案系統中的檔或目錄的對話框。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`. If you want to use a custom title, disable this by setting :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` to ``false``.
+**FileDialog** 是用來選擇檔案系統中檔案和目錄的預設對話框。它支援篩選遮罩。\ **FileDialog** 會自動根據 :ref:`file_mode<class_FileDialog_property_file_mode>` 設定視窗標題。若想使用自訂標題，將 :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` 設定為 ``false`` 來停用此功能。
 
-\ **Note:** **FileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **FileDialog** 預設情況下是隱藏的。若要顯示，呼叫節點上來自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一個，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -235,7 +235,7 @@ FileDialog
 
 **file_selected**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileDialog_signal_file_selected>`
 
-當使用者通過按兩下檔或按\ **確定**\ 按鈕選擇一個檔時觸發。
+當使用者通過雙擊檔或按\ **確定**\ 按鈕選擇一個檔時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ FileDialog
 
 **filename_filter_changed**\ (\ filter\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileDialog_signal_filename_filter_changed>`
 
-Emitted when the filter for file names changes.
+當檔名篩選器發生更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_FILE** = ``0``
 
-該對話方塊只允許選擇一個檔。
+該對話框只允許選擇一個檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_FILES:
 
@@ -290,7 +290,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_FILES** = ``1``
 
-該對話方塊允許選擇多個檔。
+該對話框允許選擇多個檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_DIR:
 
@@ -298,7 +298,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_DIR** = ``2``
 
-該對話方塊只允許選擇一個目錄，不允許選擇任何檔。
+該對話框只允許選擇一個目錄，不允許選擇任何檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_ANY:
 
@@ -306,7 +306,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_ANY** = ``3``
 
-該對話方塊允許選擇一個檔或目錄。
+該對話框允許選擇一個檔或目錄。
 
 .. _class_FileDialog_constant_FILE_MODE_SAVE_FILE:
 
@@ -314,7 +314,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_SAVE_FILE** = ``4``
 
-當檔案存在時，對話方塊會發出警告。
+當檔案存在時，對話框會發出警告。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_RESOURCES** = ``0``
 
-該對話方塊只允許存取 :ref:`Resource<class_Resource>` 路徑下的檔（\ ``res://``\ ）。
+該對話框只允許存取 :ref:`Resource<class_Resource>` 路徑下的檔（\ ``res://``\ ）。
 
 .. _class_FileDialog_constant_ACCESS_USERDATA:
 
@@ -340,7 +340,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_USERDATA** = ``1``
 
-該對話方塊只允許存取使用者資料路徑（\ ``user://``\ ）下的檔案。
+該對話框只允許存取使用者資料路徑（\ ``user://``\ ）下的檔案。
 
 .. _class_FileDialog_constant_ACCESS_FILESYSTEM:
 
@@ -348,7 +348,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_FILESYSTEM** = ``2``
 
-該對話方塊允許存取檔案系統上的檔。
+該對話框允許存取檔案系統上的檔。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ enum **DisplayMode**: :ref:`🔗<enum_FileDialog_DisplayMode>`
 
 :ref:`DisplayMode<enum_FileDialog_DisplayMode>` **DISPLAY_THUMBNAILS** = ``0``
 
-The dialog displays files as a grid of thumbnails. Use :ref:`thumbnail_size<class_FileDialog_theme_constant_thumbnail_size>` to adjust their size.
+該對話框以縮略圖網格的形式顯示檔案。請使用 :ref:`thumbnail_size<class_FileDialog_theme_constant_thumbnail_size>` 調整縮略圖的大小。
 
 .. _class_FileDialog_constant_DISPLAY_LIST:
 
@@ -374,7 +374,7 @@ The dialog displays files as a grid of thumbnails. Use :ref:`thumbnail_size<clas
 
 :ref:`DisplayMode<enum_FileDialog_DisplayMode>` **DISPLAY_LIST** = ``1``
 
-The dialog displays files as a list of filenames.
+該對話框以檔名清單的形式顯示檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -392,9 +392,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_HIDDEN_FILES** = ``0``
 
-Toggles visibility of the favorite button, and the favorite list on the left side of the dialog.
+切換收藏按鈕是否可見，以及對話框左側的收藏清單是否可見。
 
-Equivalent to :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden_files_toggle_enabled>`.
+等價於 :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden_files_toggle_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_CREATE_FOLDER:
 
@@ -402,9 +402,9 @@ Equivalent to :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_CREATE_FOLDER** = ``1``
 
-If enabled, shows the button for creating new directories (when using :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`, or :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`).
+如果啟用，則會顯示新建目錄按鈕（使用 :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`\ 、\ :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`\ 、\ :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>` 時有效）。
 
-Equivalent to :ref:`folder_creation_enabled<class_FileDialog_property_folder_creation_enabled>`.
+等價於 :ref:`folder_creation_enabled<class_FileDialog_property_folder_creation_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_FILE_FILTER:
 
@@ -412,9 +412,9 @@ Equivalent to :ref:`folder_creation_enabled<class_FileDialog_property_folder_cre
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_FILE_FILTER** = ``2``
 
-If enabled, shows the toggle file filter button.
+如果啟用，則會顯示檔案篩選開關按鈕。
 
-Equivalent to :ref:`file_filter_toggle_enabled<class_FileDialog_property_file_filter_toggle_enabled>`.
+等價於 :ref:`file_filter_toggle_enabled<class_FileDialog_property_file_filter_toggle_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_FILE_SORT:
 
@@ -422,9 +422,9 @@ Equivalent to :ref:`file_filter_toggle_enabled<class_FileDialog_property_file_fi
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_FILE_SORT** = ``3``
 
-If enabled, shows the file sorting options button.
+如果啟用，則會顯示檔案排序選項按鈕。
 
-Equivalent to :ref:`file_sort_options_enabled<class_FileDialog_property_file_sort_options_enabled>`.
+等價於 :ref:`file_sort_options_enabled<class_FileDialog_property_file_sort_options_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_FAVORITES:
 
@@ -432,9 +432,9 @@ Equivalent to :ref:`file_sort_options_enabled<class_FileDialog_property_file_sor
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_FAVORITES** = ``4``
 
-If enabled, shows the toggle favorite button and favorite list on the left side of the dialog.
+如果啟用，則會顯示收藏開關按鈕和對話框左側的收藏清單。
 
-Equivalent to :ref:`favorites_enabled<class_FileDialog_property_favorites_enabled>`.
+等價於 :ref:`favorites_enabled<class_FileDialog_property_favorites_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_RECENT:
 
@@ -442,9 +442,9 @@ Equivalent to :ref:`favorites_enabled<class_FileDialog_property_favorites_enable
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_RECENT** = ``5``
 
-If enabled, shows the recent directories list on the left side of the dialog.
+如果啟用，則會顯示對話框左側的最近目錄清單。
 
-Equivalent to :ref:`recent_list_enabled<class_FileDialog_property_recent_list_enabled>`.
+等價於 :ref:`recent_list_enabled<class_FileDialog_property_recent_list_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_LAYOUT:
 
@@ -452,9 +452,9 @@ Equivalent to :ref:`recent_list_enabled<class_FileDialog_property_recent_list_en
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_LAYOUT** = ``6``
 
-If enabled, shows the layout switch buttons (list/thumbnails).
+如果啟用，則會顯示版面配置切換按鈕（清單、縮略圖）。
 
-Equivalent to :ref:`layout_toggle_enabled<class_FileDialog_property_layout_toggle_enabled>`.
+等價於 :ref:`layout_toggle_enabled<class_FileDialog_property_layout_toggle_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_OVERWRITE_WARNING:
 
@@ -462,9 +462,9 @@ Equivalent to :ref:`layout_toggle_enabled<class_FileDialog_property_layout_toggl
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_OVERWRITE_WARNING** = ``7``
 
-If enabled, the **FileDialog** will warn the user before overwriting files in save mode.
+如果啟用，則 **FileDialog** 在儲存模式下覆蓋檔案之前會向使用者發出警告。
 
-Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
+等價於 :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_DELETE:
 
@@ -472,9 +472,9 @@ Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrit
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_DELETE** = ``8``
 
-If enabled, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+如果啟用，則情境選單將顯示“刪除”選項，允許將檔案和資料夾移動到回收站。
 
-Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
+等價於 :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -496,9 +496,9 @@ Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>
 - |void| **set_access**\ (\ value\: :ref:`Access<enum_FileDialog_Access>`\ )
 - :ref:`Access<enum_FileDialog_Access>` **get_access**\ (\ )
 
-The file system access scope.
+檔案系統存取範圍。
 
-\ **Warning:** In Web builds, FileDialog cannot access the host file system. In sandboxed Linux and macOS environments, :ref:`use_native_dialog<class_FileDialog_property_use_native_dialog>` is automatically used to allow limited access to host file system.
+\ **警告：**\ 在 Web 建置中，FileDialog 無法存取主機檔案系統。在沙盒 Linux 和 macOS 環境中，會自動使用 :ref:`use_native_dialog<class_FileDialog_property_use_native_dialog>` 來允許對主機檔案系統進行有限的存取。
 
 .. rst-class:: classref-item-separator
 
@@ -515,9 +515,9 @@ The file system access scope.
 - |void| **set_current_dir**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_current_dir**\ (\ )
 
-The current working directory of the file dialog.
+檔案對話框的目前工作目錄。
 
-\ **Note:** For native file dialogs, this property is only treated as a hint and may not be respected by specific OS implementations.
+\ **注意：**\ 對於原生檔案對話框，該屬性僅被視為提示，並且可能不會被特定作業系統實作所遵守。
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +534,7 @@ The current working directory of the file dialog.
 - |void| **set_current_file**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_current_file**\ (\ )
 
-檔案對話方塊的目前選定的檔案。
+檔案對話框的目前選定的檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ The current working directory of the file dialog.
 - |void| **set_current_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_current_path**\ (\ )
 
-目前選擇的檔對話方塊的檔路徑。
+目前選擇的檔對話框的檔路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ The current working directory of the file dialog.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+如果為 ``true``\ ，則情境選單將顯示“刪除”選項，允許將檔案和資料夾移動到回收站。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ If ``true``, the context menu will show the "Delete" option, which allows moving
 - |void| **set_display_mode**\ (\ value\: :ref:`DisplayMode<enum_FileDialog_DisplayMode>`\ )
 - :ref:`DisplayMode<enum_FileDialog_DisplayMode>` **get_display_mode**\ (\ )
 
-Display mode of the dialog's file list.
+對話框檔案清單的顯示模式。
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ Display mode of the dialog's file list.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the toggle favorite button and favorite list on the left side of the dialog.
+如果為 ``true``\ ，則會顯示收藏開關按鈕和對話框左側的收藏清單。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ If ``true``, shows the toggle favorite button and favorite list on the left side
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the toggle file filter button.
+如果為 ``true``\ ，則會顯示檔案篩選開關按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ If ``true``, shows the toggle file filter button.
 - |void| **set_file_mode**\ (\ value\: :ref:`FileMode<enum_FileDialog_FileMode>`\ )
 - :ref:`FileMode<enum_FileDialog_FileMode>` **get_file_mode**\ (\ )
 
-The dialog's open or save mode, which affects the selection behavior.
+對話框的打開或儲存模式，會影響選擇行為。
 
 .. rst-class:: classref-item-separator
 
@@ -653,7 +653,7 @@ The dialog's open or save mode, which affects the selection behavior.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the file sorting options button.
+如果為 ``true``\ ，則會顯示檔案排序選項按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -670,9 +670,9 @@ If ``true``, shows the file sorting options button.
 - |void| **set_filename_filter**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_filename_filter**\ (\ )
 
-The filter for file names (case-insensitive). When set to a non-empty string, only files that contains the substring will be shown. :ref:`filename_filter<class_FileDialog_property_filename_filter>` can be edited by the user with the filter button at the top of the file dialog.
+檔名篩選器（不區分大小寫）。設定為非空字串時，只會顯示包含該子字串的檔案。使用者可以通過檔案對話框頂部的篩選按鈕編輯 :ref:`filename_filter<class_FileDialog_property_filename_filter>`\ 。
 
-See also :ref:`filters<class_FileDialog_property_filters>`, which should be used to restrict the file types that can be selected instead of :ref:`filename_filter<class_FileDialog_property_filename_filter>` which is meant to be set by the user.
+另見 :ref:`filters<class_FileDialog_property_filters>`\ ，應使用該屬性限制可以選擇的檔案型別，而 :ref:`filename_filter<class_FileDialog_property_filename_filter>` 則是由使用者設定的。
 
 .. rst-class:: classref-item-separator
 
@@ -689,9 +689,9 @@ See also :ref:`filters<class_FileDialog_property_filters>`, which should be used
 - |void| **set_filters**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_filters**\ (\ )
 
-The available file type filters. Each filter string in the array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. Both file extensions and MIME type should be always set.
+可用的檔案型別篩選器。陣列中篩選器字串的格式應類似於：\ ``*.png,*.jpg,*.jpeg;影像檔案;image/png,image/jpeg``\ 。篩選器的描述文字是可選的，可以省略。應始終設定檔案副檔名和 MIME 型別。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 嵌入式檔案對話框和 Windows 檔案對話框僅支援檔案副檔名，而 Android、Linux 和 macOS 檔案對話框還支援 MIME 型別。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -710,7 +710,7 @@ The available file type filters. Each filter string in the array should be forma
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the button for creating new directories (when using :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`, or :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), and the context menu will have the "New Folder..." option.
+如果為 ``true``\ ，則會顯示用於新建資料夾的按鈕（適用於 :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`\ 、\ :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`\ 、\ :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`\ ），並且情境選單中會包含“新建資料夾...”選項。
 
 .. rst-class:: classref-item-separator
 
@@ -727,7 +727,7 @@ If ``true``, shows the button for creating new directories (when using :ref:`FIL
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the toggle hidden files button.
+如果為 ``true``\ ，則會顯示隱藏檔案開關按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +744,7 @@ If ``true``, shows the toggle hidden files button.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the layout switch buttons (list/thumbnails).
+如果為 ``true``\ ，則會顯示版面配置切換按鈕（清單、縮略圖）。
 
 .. rst-class:: classref-item-separator
 
@@ -778,7 +778,7 @@ If ``true``, shows the layout switch buttons (list/thumbnails).
 - |void| **set_option_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_option_count**\ (\ )
 
-The number of additional :ref:`OptionButton<class_OptionButton>`\ s and :ref:`CheckBox<class_CheckBox>`\ es in the dialog.
+對話框中附加的 :ref:`OptionButton<class_OptionButton>` 和 :ref:`CheckBox<class_CheckBox>` 的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -790,9 +790,9 @@ The number of additional :ref:`OptionButton<class_OptionButton>`\ s and :ref:`Ch
 
 :ref:`int<class_int>` **option_{index}/default** = ``0`` :ref:`🔗<class_FileDialog_property_option_{index}/default>`
 
-The default value for the option at ``index``.
+``index`` 處選項的預設值。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. option_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -804,9 +804,9 @@ The default value for the option at ``index``.
 
 :ref:`String<class_String>` **option_{index}/name** = ``""`` :ref:`🔗<class_FileDialog_property_option_{index}/name>`
 
-The name of the option at ``index``.
+``index`` 處選項的名稱。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. option_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -818,9 +818,9 @@ The name of the option at ``index``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **option_{index}/values** = ``PackedStringArray()`` :ref:`🔗<class_FileDialog_property_option_{index}/values>`
 
-The list of values for the option at ``index``.
+``index`` 處選項的值清單。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. option_count - 1``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -839,7 +839,7 @@ The list of values for the option at ``index``.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the **FileDialog** will warn the user before overwriting files in save mode.
+如果為 ``true``\ ，則在儲存模式下，\ **FileDialog** 會在覆蓋檔案之前向使用者發出警告。
 
 .. rst-class:: classref-item-separator
 
@@ -856,7 +856,7 @@ If ``true``, the **FileDialog** will warn the user before overwriting files in s
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the recent directories list on the left side of the dialog.
+如果為 ``true``\ ，則會在對話框左側顯示最近目錄清單。
 
 .. rst-class:: classref-item-separator
 
@@ -873,9 +873,9 @@ If ``true``, shows the recent directories list on the left side of the dialog.
 - |void| **set_root_subfolder**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_root_subfolder**\ (\ )
 
-If non-empty, the given sub-folder will be "root" of this **FileDialog**, i.e. user won't be able to go to its parent directory.
+如果非空，則給定的子資料夾將是該 **FileDialog** 的“根”，即使用者將無法轉到其父目錄。
 
-\ **Note:** This property is ignored by native file dialogs.
+\ **注意：**\ 原生檔案對話框將忽略該屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -892,9 +892,9 @@ If non-empty, the given sub-folder will be "root" of this **FileDialog**, i.e. u
 - |void| **set_show_hidden_files**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_hidden_files**\ (\ )
 
-If ``true``, the dialog will show hidden files.
+如果為 ``true``\ ，則對話框將顯示隱藏檔案。
 
-\ **Note:** This property is ignored by native file dialogs on Android and Linux.
+\ **注意：**\ Android 和 Linux 上的原生檔案對話框會忽略該屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -911,17 +911,17 @@ If ``true``, the dialog will show hidden files.
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+如果設為 ``true``\ ，並且目前的 :ref:`DisplayServer<class_DisplayServer>`\ （顯示伺服器）支援的話，將使用作業系統自帶的原生對話框，而不是引擎自訂的對話框。
 
-\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **注意：** 在 Android 平台上，僅在使用 :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`\ （檔案系統存取權限）時才支援此功能。如果是 :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` 或 :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` 存取模式，系統會自動回退使用自訂的 FileDialog。
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **注意：** 在 Linux 和 macOS 平台上，處於沙盒環境中的應用為了存取宿主機的檔案系統，會強制使用原生對話框。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：** 在 macOS 平台上，沙盒應用會儲存“安全作用域書籤”（security-scoped bookmarks），以便在多次啟動應用的會話之間，依然保留對已打開資料夾的存取權限。你可以使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 方法來取得已儲存的書籤清單。
 
-\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+\ **注意：** 原生對話框與基礎處理程序是相互隔離的，因此一旦對話框被彈出顯示，就無法再修改它的屬性了。
 
-\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **注意：** 此屬性在 :ref:`EditorFileDialog<class_EditorFileDialog>`\ （編輯器檔案對話框）中會被直接忽略。
 
 .. rst-class:: classref-section-separator
 
@@ -938,13 +938,13 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 |void| **add_filter**\ (\ filter\: :ref:`String<class_String>`, description\: :ref:`String<class_String>` = "", mime_type\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_FileDialog_method_add_filter>`
 
-Adds a comma-separated file extension ``filter`` and comma-separated MIME type ``mime_type`` option to the **FileDialog** with an optional ``description``, which restricts what files can be picked.
+將一個逗號分隔的檔案副檔名 ``filter`` 和以逗號分隔的 MIME 型別 ``mime_type`` 的選項新增到 **FileDialog**\ ，並可選擇新增描述 ``description``\ ，用於限制可以選擇的檔案型別。
 
-A ``filter`` should be of the form ``"filename.extension"``, where filename and extension can be ``*`` to match any string. Filters starting with ``.`` (i.e. empty filenames) are not allowed.
+\ ``filter`` 的格式應為 ``"檔名.副檔名"``\ ，其中檔名和副檔名可以是 ``*``\ ，以匹配任意字串。不允許使用以 ``.`` 開頭的篩選器（即空檔名）。
 
-For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png, image/jpeg``, and a ``description`` of ``"Images"`` results in filter text "Images (\*.png, \*.jpg)".
+例如，如果 ``filter`` 為 ``"*.png, *.jpg"``\ ，\ ``mime_type`` 為 ``image/png, image/jpeg``\ ，\ ``description`` 為 ``"影像"``\ ，則生成的篩選器文字為“影像 (\*.png, \*.jpg)”。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 嵌入的檔案對話框和 Windows 檔案對話框僅支援檔案副檔名，而 Android、Linux 和 macOS 的檔案對話框還支援 MIME 型別。
 
 .. rst-class:: classref-item-separator
 
@@ -956,9 +956,9 @@ For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png,
 
 |void| **add_option**\ (\ name\: :ref:`String<class_String>`, values\: :ref:`PackedStringArray<class_PackedStringArray>`, default_value_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileDialog_method_add_option>`
 
-Adds an additional :ref:`OptionButton<class_OptionButton>` to the file dialog. If ``values`` is empty, a :ref:`CheckBox<class_CheckBox>` is added instead.
+向檔案對話框新增額外的 :ref:`OptionButton<class_OptionButton>`\ 。如果 ``values`` 為空，則新增的是 :ref:`CheckBox<class_CheckBox>`\ 。
 
-\ ``default_value_index`` should be an index of the value in the ``values``. If ``values`` is empty it should be either ``1`` (checked), or ``0`` (unchecked).
+\ ``default_value_index`` 應該是 ``values`` 的索引號。如果 ``values`` 為空，則應該是 ``1``\ （選中）或 ``0``\ （未選中）。
 
 .. rst-class:: classref-item-separator
 
@@ -970,7 +970,7 @@ Adds an additional :ref:`OptionButton<class_OptionButton>` to the file dialog. I
 
 |void| **clear_filename_filter**\ (\ ) :ref:`🔗<class_FileDialog_method_clear_filename_filter>`
 
-Clear the filter for file names.
+清空檔名篩選器。
 
 .. rst-class:: classref-item-separator
 
@@ -982,7 +982,7 @@ Clear the filter for file names.
 
 |void| **clear_filters**\ (\ ) :ref:`🔗<class_FileDialog_method_clear_filters>`
 
-清除對話方塊中所有新增的篩檢程式。
+清除對話框中所有新增的篩檢程式。
 
 .. rst-class:: classref-item-separator
 
@@ -994,7 +994,7 @@ Clear the filter for file names.
 
 |void| **deselect_all**\ (\ ) :ref:`🔗<class_FileDialog_method_deselect_all>`
 
-清除對話方塊中所有目前選定的專案。
+清除對話框中所有目前選定的專案。
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ Clear the filter for file names.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_favorite_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_favorite_list>`
 
-Returns the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to store the list of favorites between project sessions. This method can be called only from the main thread.
+回傳所有 **FileDialog** 節點共享的收藏目錄清單。有利於在專案會話之間儲存收藏清單。該方法只能從主執行緒中呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -1032,7 +1032,7 @@ Returns the list of favorite directories, which is shared by all **FileDialog** 
 
 :ref:`int<class_int>` **get_option_default**\ (\ option\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FileDialog_method_get_option_default>`
 
-Returns the default value index of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBox<class_CheckBox>` with index ``option``.
+回傳索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 或 :ref:`CheckBox<class_CheckBox>` 的預設值索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1044,7 +1044,7 @@ Returns the default value index of the :ref:`OptionButton<class_OptionButton>` o
 
 :ref:`String<class_String>` **get_option_name**\ (\ option\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FileDialog_method_get_option_name>`
 
-Returns the name of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBox<class_CheckBox>` with index ``option``.
+回傳索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 或 :ref:`CheckBox<class_CheckBox>` 的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1056,7 +1056,7 @@ Returns the name of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBo
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_option_values**\ (\ option\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FileDialog_method_get_option_values>`
 
-Returns an array of values of the :ref:`OptionButton<class_OptionButton>` with index ``option``.
+回傳索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 值的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -1068,7 +1068,7 @@ Returns an array of values of the :ref:`OptionButton<class_OptionButton>` with i
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recent_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_recent_list>`
 
-Returns the list of recent directories, which is shared by all **FileDialog** nodes. Useful to store the list of recents between project sessions. This method can be called only from the main thread.
+回傳所有 **FileDialog** 節點共享的最近存取目錄清單。有利於在專案會話之間儲存最近存取的目錄清單。該方法只能從主執行緒中呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -1080,7 +1080,7 @@ Returns the list of recent directories, which is shared by all **FileDialog** no
 
 :ref:`Dictionary<class_Dictionary>` **get_selected_options**\ (\ ) |const| :ref:`🔗<class_FileDialog_method_get_selected_options>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` with the selected values of the additional :ref:`OptionButton<class_OptionButton>`\ s and/or :ref:`CheckBox<class_CheckBox>`\ es. :ref:`Dictionary<class_Dictionary>` keys are names and values are selected value indices.
+回傳一個 :ref:`Dictionary<class_Dictionary>`\ ，其中包含附加 :ref:`OptionButton<class_OptionButton>` 和/或 :ref:`CheckBox<class_CheckBox>` 的選定值。\ :ref:`Dictionary<class_Dictionary>` 的鍵是名稱，而值是選定的值索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1092,11 +1092,11 @@ Returns a :ref:`Dictionary<class_Dictionary>` with the selected values of the ad
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_vbox**\ (\ ) :ref:`🔗<class_FileDialog_method_get_vbox>`
 
-Returns the vertical box container of the dialog, custom controls can be added to it.
+回傳對話框的垂直框容器，可以向其中新增自訂控制項。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，移除和釋放它可能會導致崩潰。如果希望隱藏它或其任何子節點，請使用它們的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
-\ **Note:** Changes to this node are ignored by native file dialogs, use :ref:`add_option()<class_FileDialog_method_add_option>` to add custom elements to the dialog instead.
+\ **注意：**\ 原生檔案對話框會忽略對該節點的更改，請使用 :ref:`add_option()<class_FileDialog_method_add_option>` 向對話框新增自訂元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1108,9 +1108,9 @@ Returns the vertical box container of the dialog, custom controls can be added t
 
 |void| **invalidate**\ (\ ) :ref:`🔗<class_FileDialog_method_invalidate>`
 
-Invalidates and updates this dialog's content list.
+使該對話框的內容清單失效並更新。
 
-\ **Note:** This method does nothing on native file dialogs.
+\ **注意：**\ 該方法對原生檔案對話框不執行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -1122,7 +1122,7 @@ Invalidates and updates this dialog's content list.
 
 :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const| :ref:`🔗<class_FileDialog_method_is_customization_flag_enabled>`
 
-Returns ``true`` if the provided ``flag`` is enabled.
+如果指定的 ``flag`` 已啟用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1134,7 +1134,7 @@ Returns ``true`` if the provided ``flag`` is enabled.
 
 |void| **popup_file_dialog**\ (\ ) :ref:`🔗<class_FileDialog_method_popup_file_dialog>`
 
-Shows the **FileDialog** using the default size and position for file dialogs, and selects the file name if there is a current file.
+使用檔案對話框的預設大小和位置顯示該 **FileDialog**\ ，如果有目前檔案則選擇該檔名。
 
 .. rst-class:: classref-item-separator
 
@@ -1146,7 +1146,7 @@ Shows the **FileDialog** using the default size and position for file dialogs, a
 
 |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FileDialog_method_set_customization_flag_enabled>`
 
-Sets the specified customization ``flag``, allowing to customize the features available in this **FileDialog**.
+設定指定的自訂標誌 ``flag``\ ，允許自訂該 **FileDialog** 的特性。
 
 .. rst-class:: classref-item-separator
 
@@ -1158,9 +1158,9 @@ Sets the specified customization ``flag``, allowing to customize the features av
 
 |void| **set_favorite_list**\ (\ favorites\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_favorite_list>`
 
-Sets the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to restore the list of favorites saved with :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. This method can be called only from the main thread.
+設定所有 **FileDialog** 節點共享的收藏目錄清單。有利於恢復使用 :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>` 儲存的收藏清單。該方法只能從主執行緒中呼叫。
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of favorites when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **注意：**\ **FileDialog** 在可見性發生變化時會更新其內部的收藏清單 :ref:`ItemList<class_ItemList>`\ 。如果你希望你的更改生效，請務必提前呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1172,7 +1172,7 @@ Sets the list of favorite directories, which is shared by all **FileDialog** nod
 
 |void| **set_get_icon_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_icon_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file<class_FileDialog_theme_icon_file>` icon will be used instead.
+設定 **FileDialog** 節點在使用 :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` 模式時取得檔案圖示所用的回呼函式。該回呼函式應接受一個 :ref:`String<class_String>` 型別的參數（檔案路徑），並回傳一個 :ref:`Texture2D<class_Texture2D>` 物件。如果回傳的紋理無效，則會改用 :ref:`file<class_FileDialog_theme_icon_file>` 圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1184,9 +1184,9 @@ Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref
 
 |void| **set_get_thumbnail_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_thumbnail_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` icon will be used instead.
+設定 **FileDialog** 節點在使用 :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` 模式時取得檔案圖示所用的回呼函式。該回呼函式應接受一個 :ref:`String<class_String>` 型別的參數（檔案路徑），並回傳一個 :ref:`Texture2D<class_Texture2D>` 物件。如果回傳的紋理無效，則會改用 :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` 圖示。
 
-Thumbnails are usually more complex and may take a while to load. To avoid stalling the application, you can use :ref:`ImageTexture<class_ImageTexture>` to asynchronously create the thumbnail.
+縮略圖通常比較複雜，載入可能需要一些時間。為了避免應用程式卡頓，可以使用 :ref:`ImageTexture<class_ImageTexture>` 來非同步建立縮略圖。
 
 ::
 
@@ -1199,7 +1199,7 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
         return image_texture
 
     func make_thumbnail_async(path, image_texture):
-        var thumbnail_texture = await generate_thumbnail(path) # Some method that generates a thumbnail.
+        var thumbnail_texture = await generate_thumbnail(path) # 某種用於生成縮略圖的方法。
         image_texture.set_image(thumbnail_texture.get_image())
 
 .. rst-class:: classref-item-separator
@@ -1212,7 +1212,7 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
 
 |void| **set_option_default**\ (\ option\: :ref:`int<class_int>`, default_value_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileDialog_method_set_option_default>`
 
-Sets the default value index of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBox<class_CheckBox>` with index ``option``.
+設定索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 或 :ref:`CheckBox<class_CheckBox>` 的預設值索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,7 +1224,7 @@ Sets the default value index of the :ref:`OptionButton<class_OptionButton>` or :
 
 |void| **set_option_name**\ (\ option\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileDialog_method_set_option_name>`
 
-Sets the name of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBox<class_CheckBox>` with index ``option``.
+設定索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 或 :ref:`CheckBox<class_CheckBox>` 的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1236,7 +1236,7 @@ Sets the name of the :ref:`OptionButton<class_OptionButton>` or :ref:`CheckBox<c
 
 |void| **set_option_values**\ (\ option\: :ref:`int<class_int>`, values\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_FileDialog_method_set_option_values>`
 
-Sets the option values of the :ref:`OptionButton<class_OptionButton>` with index ``option``.
+設定索引為 ``option`` 的 :ref:`OptionButton<class_OptionButton>` 的選項值。
 
 .. rst-class:: classref-item-separator
 
@@ -1248,9 +1248,9 @@ Sets the option values of the :ref:`OptionButton<class_OptionButton>` with index
 
 |void| **set_recent_list**\ (\ recents\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_recent_list>`
 
-Sets the list of recent directories, which is shared by all **FileDialog** nodes. Useful to restore the list of recents saved with :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. This method can be called only from the main thread.
+設定由所有 **FileDialog** 節點共享的最近存取目錄清單。有利於恢復使用 :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>` 儲存的最近存取清單。該方法只能從主執行緒中呼叫。
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of recent directories when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **注意：**\ **FileDialog** 在其可見性改變時會更新其內部的最近目錄 :ref:`ItemList<class_ItemList>`\ 。如果你希望你的更改生效，請務必盡早呼叫該方法。
 
 .. rst-class:: classref-section-separator
 
@@ -1267,7 +1267,7 @@ Sets the list of recent directories, which is shared by all **FileDialog** nodes
 
 :ref:`Color<class_Color>` **file_disabled_color** = ``Color(1, 1, 1, 0.25)`` :ref:`🔗<class_FileDialog_theme_color_file_disabled_color>`
 
-禁用檔的色調（當 **FileDialog** 在打開資料夾模式下使用時）。
+停用檔的色調（當 **FileDialog** 在打開資料夾模式下使用時）。
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ Sets the list of recent directories, which is shared by all **FileDialog** nodes
 
 :ref:`int<class_int>` **thumbnail_size** = ``64`` :ref:`🔗<class_FileDialog_theme_constant_thumbnail_size>`
 
-The size of thumbnail icons when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` is enabled.
+啟用 :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` 時的縮略圖圖示大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ The size of thumbnail icons when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_const
 
 :ref:`Texture2D<class_Texture2D>` **create_folder** :ref:`🔗<class_FileDialog_theme_icon_create_folder>`
 
-Custom icon for the create folder button.
+用於建立資料夾按鈕的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1339,7 @@ Custom icon for the create folder button.
 
 :ref:`Texture2D<class_Texture2D>` **favorite** :ref:`🔗<class_FileDialog_theme_icon_favorite>`
 
-Custom icon for favorite folder button.
+收藏資料夾按鈕得自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1351,7 @@ Custom icon for favorite folder button.
 
 :ref:`Texture2D<class_Texture2D>` **favorite_down** :ref:`🔗<class_FileDialog_theme_icon_favorite_down>`
 
-Custom icon for button to move down a favorite entry.
+將收藏項向下移動的按鈕的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1363,7 +1363,7 @@ Custom icon for button to move down a favorite entry.
 
 :ref:`Texture2D<class_Texture2D>` **favorite_up** :ref:`🔗<class_FileDialog_theme_icon_favorite_up>`
 
-Custom icon for button to move up a favorite entry.
+將收藏項向上移動的按鈕的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1387,7 +1387,7 @@ Custom icon for button to move up a favorite entry.
 
 :ref:`Texture2D<class_Texture2D>` **file_thumbnail** :ref:`🔗<class_FileDialog_theme_icon_file_thumbnail>`
 
-Icon for files when in thumbnail mode.
+縮略圖模式下，檔案的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1411,7 +1411,7 @@ Icon for files when in thumbnail mode.
 
 :ref:`Texture2D<class_Texture2D>` **folder_thumbnail** :ref:`🔗<class_FileDialog_theme_icon_folder_thumbnail>`
 
-Icon for folders when in thumbnail mode.
+縮略圖模式下，資料夾的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Icon for folders when in thumbnail mode.
 
 :ref:`Texture2D<class_Texture2D>` **list_mode** :ref:`🔗<class_FileDialog_theme_icon_list_mode>`
 
-Icon for the button that enables list mode.
+用來啟用清單模式的按鈕的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1447,7 +1447,7 @@ Icon for the button that enables list mode.
 
 :ref:`Texture2D<class_Texture2D>` **menu_copy_path** :ref:`🔗<class_FileDialog_theme_icon_menu_copy_path>`
 
-Icon for the "Copy Path" context menu option.
+"複製路徑"情境選單選項的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1459,7 +1459,7 @@ Icon for the "Copy Path" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_delete** :ref:`🔗<class_FileDialog_theme_icon_menu_delete>`
 
-Icon for the "Delete" context menu option.
+"刪除"情境選單選項的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1471,7 +1471,7 @@ Icon for the "Delete" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_new_folder** :ref:`🔗<class_FileDialog_theme_icon_menu_new_folder>`
 
-Icon for the "New Folder..." context menu option. Usually it should be the same as :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; leave it empty if you want the context menu to show no icons.
+“新建資料夾...”情境選單選項的圖示。通常它應與 :ref:`create_folder<class_FileDialog_theme_icon_create_folder>` 保持一致；如果你希望情境選單不顯示圖示，請將其留空。
 
 .. rst-class:: classref-item-separator
 
@@ -1483,7 +1483,7 @@ Icon for the "New Folder..." context menu option. Usually it should be the same 
 
 :ref:`Texture2D<class_Texture2D>` **menu_open_bundle** :ref:`🔗<class_FileDialog_theme_icon_menu_open_bundle>`
 
-Icon for the "Show Package Contents" context menu option. The option only appears for macOS bundles.
+“顯示包內容”情境選單選項的圖示。該選項僅針對 macOS 套件顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Icon for the "Show Package Contents" context menu option. The option only appear
 
 :ref:`Texture2D<class_Texture2D>` **menu_refresh** :ref:`🔗<class_FileDialog_theme_icon_menu_refresh>`
 
-Icon for the "Refresh" context menu option. Usually it should be the same as :ref:`reload<class_FileDialog_theme_icon_reload>`; leave it empty if you want the context menu to show no icons.
+“刷新”情境選單選項的圖示。通常它應與 :ref:`reload<class_FileDialog_theme_icon_reload>` 保持一致；如果你希望情境選單不顯示圖示，請將其留空。
 
 .. rst-class:: classref-item-separator
 
@@ -1507,7 +1507,7 @@ Icon for the "Refresh" context menu option. Usually it should be the same as :re
 
 :ref:`Texture2D<class_Texture2D>` **menu_show_in_file_manager** :ref:`🔗<class_FileDialog_theme_icon_menu_show_in_file_manager>`
 
-Icon for the "Show in File Manager" context menu option.
+“在檔案管理器中顯示”情境選單選項的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1543,7 +1543,7 @@ Icon for the "Show in File Manager" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **sort** :ref:`🔗<class_FileDialog_theme_icon_sort>`
 
-Custom icon for the sorting options menu.
+排序選項按鈕的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1555,7 +1555,7 @@ Custom icon for the sorting options menu.
 
 :ref:`Texture2D<class_Texture2D>` **thumbnail_mode** :ref:`🔗<class_FileDialog_theme_icon_thumbnail_mode>`
 
-Icon for the button that enables thumbnail mode.
+用來啟用縮略圖模式的按鈕的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1567,7 +1567,7 @@ Icon for the button that enables thumbnail mode.
 
 :ref:`Texture2D<class_Texture2D>` **toggle_filename_filter** :ref:`🔗<class_FileDialog_theme_icon_toggle_filename_filter>`
 
-Custom icon for the toggle button for the filter for file names.
+切換隱藏檔名篩選器的自訂圖示。
 
 .. rst-class:: classref-item-separator
 

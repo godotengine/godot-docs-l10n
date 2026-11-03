@@ -999,7 +999,7 @@ Devuelve el kerning para el par de glifos.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **_font_get_kerning_list**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_kerning_list>`
 
-Devuelve una lista de anulaciones de kerning.
+Devuelve una lista de sobrescrituras de kerning.
 
 .. rst-class:: classref-item-separator
 
@@ -1023,7 +1023,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``lang
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_font_get_language_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_get_language_support_overrides>`
 
-Devuelve una lista de anulaciones de soporte de idiomas.
+Devuelve una lista de sobrescrituras de soporte de idiomas.
 
 .. rst-class:: classref-item-separator
 
@@ -1179,7 +1179,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``scri
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_font_get_script_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_get_script_support_overrides>`
 
-Devuelve una lista de anulaciones de compatibilidad de scripts.
+Devuelve una lista de sobrescrituras de compatibilidad de scripts.
 
 .. rst-class:: classref-item-separator
 
@@ -2499,7 +2499,7 @@ Devuelve el tamaño de fuente de la secuencia de texto de ``index`` (en orden vi
 
 :ref:`Vector2i<class_Vector2i>` **_shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+Devuelve el rango de glifos del segmento de texto ``index`` (en orden visual).
 
 .. rst-class:: classref-item-separator
 
@@ -3267,7 +3267,7 @@ Establece el nuevo tamaño y alineación del objeto incrustado.
 
 |void| **_shaped_text_set_bidi_override**\ (\ shaped\: :ref:`RID<class_RID>`, override\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_set_bidi_override>`
 
-Anula el BiDi para el texto estructurado.
+Sobrescribe el BiDi para el texto estructurado.
 
 .. rst-class:: classref-item-separator
 

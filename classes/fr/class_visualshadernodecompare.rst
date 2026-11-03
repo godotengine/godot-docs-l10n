@@ -201,7 +201,7 @@ enum **Condition**: :ref:`🔗<enum_VisualShaderNodeCompare_Condition>`
 
 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **COND_ALL** = ``0``
 
-The result will be ``true`` if all components in the vector satisfy the comparison condition.
+Le résultat sera ``true`` si toutes les composantes du vecteur satisfont à la condition de comparaison.
 
 .. _class_VisualShaderNodeCompare_constant_COND_ANY:
 
@@ -209,7 +209,7 @@ The result will be ``true`` if all components in the vector satisfy the comparis
 
 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **COND_ANY** = ``1``
 
-The result will be ``true`` if any component in the vector satisfies the comparison condition.
+Le résultat sera ``true`` si l’une des composantes du vecteur satisfait à la condition de comparaison.
 
 .. _class_VisualShaderNodeCompare_constant_COND_MAX:
 
@@ -239,7 +239,7 @@ Descriptions des propriétés
 - |void| **set_condition**\ (\ value\: :ref:`Condition<enum_VisualShaderNodeCompare_Condition>`\ )
 - :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **get_condition**\ (\ )
 
-Extra condition which is applied if :ref:`type<class_VisualShaderNodeCompare_property_type>` is set to :ref:`CTYPE_VECTOR_3D<class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_3D>`.
+Une condition supplémentaire qui sera appliquée si :ref:`type<class_VisualShaderNodeCompare_property_type>` est défini à :ref:`CTYPE_VECTOR_3D<class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_3D>`.
 
 .. rst-class:: classref-item-separator
 

@@ -25,7 +25,7 @@ AnimatableBody2D
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,7 +59,7 @@ AnimatableBody2D
 - |void| **set_sync_to_physics**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sync_to_physics_enabled**\ (\ )
 
-若為 ``true``\ ，此實體的移動將與物理幀同步。當你使用 :ref:`AnimationPlayer<class_AnimationPlayer>` 為移動平台等物件製作移動動畫時很有用。\ **請勿**\ 與 :ref:`PhysicsBody2D.move_and_collide()<class_PhysicsBody2D_method_move_and_collide>` 同時使用。
+若為 ``true``\ ，此實體的移動將與物理影格同步。當你使用 :ref:`AnimationPlayer<class_AnimationPlayer>` 為移動平台等物件製作移動動畫時很有用。\ **請勿**\ 與 :ref:`PhysicsBody2D.move_and_collide()<class_PhysicsBody2D_method_move_and_collide>` 同時使用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

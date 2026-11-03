@@ -878,23 +878,24 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **call**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call>`
 
-Викликає метод ``method`` на об'єкті і повертає результат. Цей метод підтримує змінну кількість аргументів, тому параметри можуть бути передані як окремий список коми.
+Викликає метод ``method`` для об’єкта та повертає результат. Цей метод підтримує змінну кількість аргументів, тому параметри можна передавати у вигляді списку, розділеного комами.
 
 
 .. tabs::
 
- .. code-tab:: csharp
+ .. code-tab:: gdscript
 
     var node = Node3D.new()
     node.call("rotate", Vector3(1.0, 0.0, 0.0), 1.571)
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var node = new Node3D();
     node.Call(Node3D.MethodName.Rotate, new Vector3(1f, 0f, 0f), 1.571f);
 
 
 
-\ **Примітка:** У C#, ``method`` повинен бути в змії_папір при зверненні до вбудованих методів Godot. За допомогою імен, виставлених в ``MethodName`` класу, щоб уникнути виділення нового :ref:`StringName<class_StringName>` на кожному виклику.
+\ **Примітка:** У C# ``method`` має бути написано у форматі snake_case при зверненні до вбудованих методів Godot. Рекомендується використовувати імена, визначені у класі ``MethodName``, щоб уникнути виділення нового :ref:`StringName<class_StringName>` при кожному виклику.
 
 .. rst-class:: classref-item-separator
 
@@ -906,11 +907,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **call_deferred**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call_deferred>`
 
-Викликає метод  для об'єкта під час простою. Завжди повертає ``null``, **не** результат методу.
+Викликає метод ``method`` об’єкта під час простою. Завжди повертає ``null``, **а не** результат методу.
 
-Простой відбувається переважно в кінці кадрів процесу та фізики. У ньому відкладені виклики будуть виконуватися, доки не залишиться жодного, що означає, що ви можете відкладати виклики з інших відкладених викликів, і вони все одно будуть виконуватися в поточному циклі простою. Це означає, що ви не повинні викликати метод, відкладений від самого себе (або від методу, викликаного ним), оскільки це призводить до нескінченної рекурсії так само, як якби ви викликали метод безпосередньо.
+Період простою відбувається переважно наприкінці кадру процесу та фізичного кадру. Під час нього відкладені виклики будуть виконуватися, доки вони не закінчаться, що означає: ви можете відкладати виклики з інших відкладених викликів, і вони все одно будуть виконані в поточному циклі простою. Це означає, що не слід викликати метод, відкладений від самого себе (або від методу, який він викликає), оскільки це спричиняє нескінченну рекурсію так само, якби ви викликали цей метод безпосередньо.
 
-Цей метод підтримує змінну кількість аргументів, тому параметри можна передавати як список, розділений комами.
+Цей метод підтримує змінну кількість аргументів, тому параметри можна передавати у вигляді списку, розділеного комами.
 
 
 .. tabs::
@@ -923,34 +924,26 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
  .. code-tab:: csharp
 
     var node = new Node3D();
-     node.CallDeferred(Node3D.MethodName.Rotate, new Vector3(1f, 0f, 0f), 1.571f);
+    node.CallDeferred(Node3D.MethodName.Rotate, new Vector3(1f, 0f, 0f), 1.571f);
 
 
 
-Для методів, які відкладаються з одного потоку, порядок виконання під час простою ідентичний порядку, в якому викликався ``call_deferred``.
+Для методів, відкладених з того самого потоку, порядок виконання в режимі очікування ідентичний порядку, в якому було викликано ``call_deferred``.
 
-Див. також :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
+Див. також ``метод Callable.call_deferred``.
 
-\ **Примітка:** У C#, ``method`` має бути в snake_case при зверненні до вбудованих методів Godot. Надайте перевагу використанню імен, наведених у класі ``MethodName``, щоб уникнути виділення нового :ref:`StringName<class_StringName>` при кожному виклику.
+\ **Примітка:** У C# ``method`` має бути в форматі snake_case при посиланні на вбудовані методи Godot. Краще використовувати імена, надані в класі ``MethodName``, щоб уникнути виділення нового :ref:`StringName<class_StringName>` при кожному виклику.
 
-\ **Примітка:** Якщо ви хочете затримати виклик функції на кадр, зверніться до сигналів :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` та :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>`.
+\ **Примітка:** Якщо ви хочете відкласти виклик функції на один кадр, зверніться до сигналів :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` та :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>`.
 
- 
-.. tabs::
+::
 
-var node = Node3D.new()
-
-# Створити викликуваний об'єкт та прив'язати аргументи до виклику rotate() вузла.
-
-var callable = node.rotate.bind(Vector3(1.0, 0.0, 0.0), 1.571)
-
-# Підключити викликуваний об'єкт до сигналу process_frame, щоб він викликався в наступному кадрі процесу.
-
-# CONNECT_ONE_SHOT гарантує, що він викликається лише один раз, а не в кожному кадрі.
-
-get_tree().process_frame.connect(callable, CONNECT_ONE_SHOT)
-
-
+    var node = Node3D.new()
+    # Створіть об’єкт Callable та прив’яжіть аргументи до виклику методу rotate() вузла.
+    var callable = node.rotate.bind(Vector3(1.0, 0.0, 0.0), 1.571)
+    # Підключіть об’єкт callable до сигналу process_frame, щоб він викликався в наступному кадрі обробки.
+    # CONNECT_ONE_SHOT гарантує, що він викликатиметься лише один раз, а не в кожному кадрі.
+    get_tree().process_frame.connect(callable, CONNECT_ONE_SHOT)
 
 .. rst-class:: classref-item-separator
 

@@ -7,23 +7,23 @@ Parallax2D
 
 **繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於建立視差滾動背景的節點。
+用於建立視差捲動背景的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A **Parallax2D** is used to create a parallax effect. It can move at a different speed relative to the camera movement using :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. This creates an illusion of depth in a 2D game. If manual scrolling is desired, the :ref:`Camera2D<class_Camera2D>` position can be ignored with :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
+**Parallax2D** 可用於創造視差效果。使用 :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>` 可以在相機移動時，以不同的相對速度移動，這樣就在 2D 遊戲中創造出了深度的錯覺。如果需要手動捲動，也可以使用 :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 忽略 :ref:`Camera2D<class_Camera2D>` 的位置。
 
-\ **Note:** Any changes to this node's position made after it enters the scene tree will be overridden if :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` is ``false`` or :ref:`screen_offset<class_Parallax2D_property_screen_offset>` is modified.
+\ **注意：**\ 如果 :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 為 ``false`` 或者修改了 :ref:`screen_offset<class_Parallax2D_property_screen_offset>`\ ，那麼該節點進入場景樹後發生的任何位移都會被覆蓋。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`2D Parallax <../tutorials/2d/2d_parallax>`
+- :doc:`2D 視差 <../tutorials/2d/2d_parallax>`
 
 .. rst-class:: classref-reftable-group
 
@@ -77,7 +77,7 @@ A **Parallax2D** is used to create a parallax effect. It can move at a different
 - |void| **set_autoscroll**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_autoscroll**\ (\ )
 
-Velocity at which the offset scrolls automatically, in pixels per second.
+偏移量自動捲動的速度，單位為像素每秒。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Velocity at which the offset scrolls automatically, in pixels per second.
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_follow_viewport**\ (\ )
 
-If ``true``, this **Parallax2D** is offset by the current camera's position. If the **Parallax2D** is in a :ref:`CanvasLayer<class_CanvasLayer>` separate from the current camera, it may be desired to match the value with :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>`.
+如果為 ``true``\ ，則會根據目前相機的位置對 **Parallax2D** 進行偏移。如果 **Parallax2D** 所處的 :ref:`CanvasLayer<class_CanvasLayer>` 與目前相機不同，也可以使用 :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` 進行匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ If ``true``, this **Parallax2D** is offset by the current camera's position. If 
 - |void| **set_ignore_camera_scroll**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignore_camera_scroll**\ (\ )
 
-If ``true``, **Parallax2D**'s position is not affected by the position of the camera.
+如果為 ``true``\ ，則 **Parallax2D** 的位置不受相機位置的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ If ``true``, **Parallax2D**'s position is not affected by the position of the ca
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-Top-left limits for scrolling to begin. If the camera is outside of this limit, the **Parallax2D** stops scrolling. Must be lower than :ref:`limit_end<class_Parallax2D_property_limit_end>` minus the viewport size to work.
+開始捲動的左上角限制。如果相機超出這個限制，\ **Parallax2D** 將停止捲動。必須低於 :ref:`limit_end<class_Parallax2D_property_limit_end>` 減去視埠大小才能正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Top-left limits for scrolling to begin. If the camera is outside of this limit, 
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than :ref:`limit_begin<class_Parallax2D_property_limit_begin>` and the viewport size combined to work.
+捲動結束的右下角限制。如果相機超出這個限制，\ **Parallax2D** 將停止捲動。必須高於 :ref:`limit_begin<class_Parallax2D_property_limit_begin>` 和視埠大小的總和才能工作。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Bottom-right limits for scrolling to end. If the camera is outside of this limit
 - |void| **set_repeat_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_repeat_size**\ (\ )
 
-Repeats the :ref:`Texture2D<class_Texture2D>` of each of this node's children and offsets them by this value. When scrolling, the node's position loops, giving the illusion of an infinite scrolling background if the values are larger than the screen size. If an axis is set to ``0``, the :ref:`Texture2D<class_Texture2D>` will not be repeated.
+根據這個值將每個子節點的 :ref:`Texture2D<class_Texture2D>` 進行重複和偏移。捲動時該節點的位置會發生循環，取值大於螢幕尺寸時就會造成背景無限捲動的錯覺。某個軸如果為 ``0``\ ，則 :ref:`Texture2D<class_Texture2D>` 不會重複。
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Repeats the :ref:`Texture2D<class_Texture2D>` of each of this node's children an
 - |void| **set_repeat_times**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_repeat_times**\ (\ )
 
-Overrides the amount of times the texture repeats. Each texture copy spreads evenly from the original by :ref:`repeat_size<class_Parallax2D_property_repeat_size>`. Useful for when zooming out with a camera.
+覆蓋紋理重複的次數。每個紋理副本都會相對於前一個往後挪 :ref:`repeat_size<class_Parallax2D_property_repeat_size>`\ 。適用於相機遠離的情況。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Overrides the amount of times the texture repeats. Each texture copy spreads eve
 - |void| **set_screen_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_offset**\ (\ )
 
-Offset used to scroll this **Parallax2D**. This value is updated automatically unless :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` is ``true``.
+用於捲動 **Parallax2D** 的偏移量。\ :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 為 ``false`` 時這個值會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -213,9 +213,9 @@ Offset used to scroll this **Parallax2D**. This value is updated automatically u
 - |void| **set_scroll_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_offset**\ (\ )
 
-The **Parallax2D**'s offset. Similar to :ref:`screen_offset<class_Parallax2D_property_screen_offset>` and :ref:`Node2D.position<class_Node2D_property_position>`, but will not be overridden.
+**Parallax2D** 的偏移量。與 :ref:`screen_offset<class_Parallax2D_property_screen_offset>` 和 :ref:`Node2D.position<class_Node2D_property_position>` 類似，但是不會被覆蓋。
 
-\ **Note:** Values will loop if :ref:`repeat_size<class_Parallax2D_property_repeat_size>` is set higher than ``0``.
+\ **注意：**\ 如果 :ref:`repeat_size<class_Parallax2D_property_repeat_size>` 大於 ``0``\ ，則這個值會發生循環。
 
 .. rst-class:: classref-item-separator
 
@@ -232,9 +232,9 @@ The **Parallax2D**'s offset. Similar to :ref:`screen_offset<class_Parallax2D_pro
 - |void| **set_scroll_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_scale**\ (\ )
 
-Multiplier to the final **Parallax2D**'s offset. Can be used to simulate distance from the camera.
+**Parallax2D** 最終偏移量的乘數。可用於模擬相對於相機的距離。
 
-For example, a value of ``1`` scrolls at the same speed as the camera. A value greater than ``1`` scrolls faster, making objects appear closer. Less than ``1`` scrolls slower, making objects appear further, and a value of ``0`` stops the objects completely.
+例如，\ ``1`` 的值表示捲動速度與相機相同。大於 ``1`` 的值表示捲動速度更快，使物體看起來更近。小於 ``1`` 的值表示捲動速度更慢，使物體看起來更遠，而 ``0`` 的值表示物體完全停止。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -17,7 +17,7 @@ IP
 說明
 ----
 
-IP 包含網際協定（IP）的支援函式。TCP/IP 的支援在其他類中（請參閱 :ref:`StreamPeerTCP<class_StreamPeerTCP>` 和 :ref:`TCPServer<class_TCPServer>`\ ）。IP 提供 DNS 主機名稱解析支援，包括阻塞式和線程式。
+IP 包含網際協定（IP）的支援函式。TCP/IP 的支援在其他類中（請參閱 :ref:`StreamPeerTCP<class_StreamPeerTCP>` 和 :ref:`TCPServer<class_TCPServer>`\ ）。IP 提供 DNS 主機名稱解析支援，包括阻塞式和執行緒式。
 
 .. rst-class:: classref-reftable-group
 

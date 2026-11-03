@@ -7,7 +7,7 @@ VisualShaderNodeVaryingGetter
 
 **繼承：** :ref:`VisualShaderNodeVarying<class_VisualShaderNodeVarying>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於獲取 varying 的視覺化著色器節點。
+用於取得 varying 的視覺化著色器節點。
 
 .. rst-class:: classref-introduction-group
 

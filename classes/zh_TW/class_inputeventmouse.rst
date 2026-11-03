@@ -80,9 +80,9 @@ InputEventMouse
 - |void| **set_global_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_global_position**\ (\ )
 
-在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中獲取時，返回根 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用根 :ref:`Viewport<class_Viewport>` 的坐標系。
+在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中取得時，返回根 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用根 :ref:`Viewport<class_Viewport>` 的座標系。
 
-在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中獲取時，返回該 :ref:`Control<class_Control>` 所在的 :ref:`CanvasLayer<class_CanvasLayer>` 中滑鼠的位置，使用該 :ref:`CanvasLayer<class_CanvasLayer>` 的坐標系。
+在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中取得時，返回該 :ref:`Control<class_Control>` 所在的 :ref:`CanvasLayer<class_CanvasLayer>` 中滑鼠的位置，使用該 :ref:`CanvasLayer<class_CanvasLayer>` 的座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -99,9 +99,9 @@ InputEventMouse
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中獲取時，返回該 :ref:`Node<class_Node>` 所在 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用該 :ref:`Viewport<class_Viewport>` 的坐標系。
+在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中取得時，返回該 :ref:`Node<class_Node>` 所在 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用該 :ref:`Viewport<class_Viewport>` 的座標系。
 
-在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中獲取時，返回該 :ref:`Control<class_Control>` 中滑鼠的位置，使用該 :ref:`Control<class_Control>` 的坐標系。
+在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中取得時，返回該 :ref:`Control<class_Control>` 中滑鼠的位置，使用該 :ref:`Control<class_Control>` 的座標系。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

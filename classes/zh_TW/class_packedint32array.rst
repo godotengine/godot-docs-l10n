@@ -12,13 +12,13 @@ PackedInt32Array
 說明
 ----
 
-An array specifically designed to hold 32-bit integer values. Packs data tightly, so it saves memory for large array sizes.
+一種專門用於儲存 32 位元整數值的陣列。它會對資料進行緊密打包，因此在陣列規模較大時能節省記憶體。
 
-\ **Note:** This type stores signed 32-bit integers, which means it can take values in the interval ``[-2^31, 2^31 - 1]``, i.e. ``[-2147483648, 2147483647]``. Exceeding those bounds will wrap around. In comparison, :ref:`int<class_int>` uses signed 64-bit integers which can hold much larger values. If you need to pack 64-bit integers tightly, see :ref:`PackedInt64Array<class_PackedInt64Array>`.
+\ **注意：** 該型別儲存的是有符號 32 位元整數，這意味著它的取值範圍是 ``[-2^31, 2^31 - 1]``\ ，即 ``[-2147483648, 2147483647]``\ 。如果超出這個範圍，數值將會發生環繞（wrap around，即溢出後從另一端重新開始）。相比之下，\ :ref:`int<class_int>` 型別使用的是有符號 64 位元整數，可以容納大得多的數值。如果你需要緊密打包 64 位元整數，請查看 :ref:`PackedInt64Array<class_PackedInt64Array>`\ 。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包陣列總是通過參照（reference）傳遞。如果你想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_PackedInt32Array_method_duplicate>` 方法。不過，內建屬性和方法的情況並\ *非*\ 如此。在這些情況下，回傳的打包陣列是一個副本，修改它並\ *不會*\ 影響原始值。若要更新此類內建屬性，你需要修改回傳的陣列，然後將其重新賦值給該屬性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布林值情境中，如果打包陣列為空，其計算結果將為 ``false``\ 。否則，打包陣列總是會被計算為 ``true``\ 。
 
 .. note::
 
@@ -240,7 +240,7 @@ An array specifically designed to hold 32-bit integer values. Packs data tightly
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedInt32Array_method_remove_at>` instead.
+在陣列中移除首次出現的某個值並回傳 ``true``\ 。如果陣列中不存在該值，則不會發生任何事情，回傳 ``false``\ 。要按照索引移除元素，請改用 :ref:`remove_at()<class_PackedInt32Array_method_remove_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedInt32Array_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+在陣列中搜尋值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜尋索引。
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt32Array_method_get>`
 
-Returns the 32-bit integer at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0``.
+回傳陣列中索引為 ``index`` 的 32 位元整數。如果 ``index`` 越界或為負數，則該方法失敗並回傳 ``0``\ 。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+該方法類似於 ``[]`` 運算符（但不等價）。最顯著的區別就是從編輯器中執行時，該方法失敗不會暫停專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -350,9 +350,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedInt32Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+設定陣列的大小。如果陣列增大，則預留陣列末端的元素。如果陣列縮小，則將陣列截斷到新的大小。呼叫一次 :ref:`resize()<class_PackedInt32Array_method_resize>` 然後賦值比逐個新增新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedInt32Array_method_size>` to find the actual size of the array after resize.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時回傳下列 :ref:`Error<enum_@GlobalScope_Error>` 常數：大小為負數則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失敗則回傳 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。請使用 :ref:`size()<class_PackedInt32Array_method_size>` 取得調整後的實際大小。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedInt32Array_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+逆序搜尋陣列。還可以傳遞起始搜尋位置索引。如果為負，則起始索引被視為相對於陣列的結尾。
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedInt32Array_method_to_byte_array>`
 
-Returns a copy of the data converted to a :ref:`PackedByteArray<class_PackedByteArray>`, where each element has been encoded as 4 bytes.
+回傳資料的副本，將其中的每個元素都編碼為 4 個位元組，放入 :ref:`PackedByteArray<class_PackedByteArray>` 中。
 
-The size of the new array will be ``int32_array.size() * 4``.
+新陣列的大小為 ``int32_array.size() * 4``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -471,7 +471,7 @@ The size of the new array will be ``int32_array.size() * 4``.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **operator +**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_sum_PackedInt32Array>`
 
-返回新的 **PackedInt32Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高性能，請考慮改用 :ref:`append_array()<class_PackedInt32Array_method_append_array>`\ 。
+返回新的 **PackedInt32Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高效能，請考慮改用 :ref:`append_array()<class_PackedInt32Array_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ The size of the new array will be ``int32_array.size() * 4``.
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_operator_idx_int>`
 
-返回索引 ``index`` 處的 :ref:`int<class_int>`\ 。負數索引可以從末尾開始存取元素。使用超出數組範圍的索引會導致出錯。
+返回索引 ``index`` 處的 :ref:`int<class_int>`\ 。負數索引可以從末尾開始存取元素。使用超出陣列範圍的索引會導致出錯。
 
 注意，\ :ref:`int<class_int>` 型別為 64 位元，與該陣列中所儲存的值不同。
 

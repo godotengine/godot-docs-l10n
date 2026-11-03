@@ -789,7 +789,7 @@ enum **AnimationMethodCallMode**: :ref:`🔗<enum_AnimationPlayer_AnimationMetho
 
 |void| **queue**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_method_queue>`
 
-将动画加入队列，在当前动画和所有先前排队的动画完毕后播放。
+使动画加入队列，在当前动画和所有先前排队的动画完毕后播放。
 
 \ **注意：**\ 如果当前正在播放循环动画，除非以某种方式停止循环动画，否则排队的动画将永远不会播放。
 

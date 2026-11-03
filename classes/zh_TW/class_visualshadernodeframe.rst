@@ -9,18 +9,18 @@ VisualShaderNodeFrame
 
 **被繼承：** :ref:`VisualShaderNodeComment<class_VisualShaderNodeComment>`
 
-A frame other visual shader nodes can be attached to for better organization.
+能夠附加其他視覺化著色器節點的框架，方便組織節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A rectangular frame that can be used to group visual shader nodes together to improve organization.
+一種矩形框架，能夠將視覺化著色器節點進行分組，方便組織。
 
-Nodes attached to the frame will move with it when it is dragged and it can automatically resize to enclose all attached nodes.
+拖動框架時，附加到框架的節點會跟隨框架移動；框架會自動調整大小，包圍所有附加的節點。
 
-Its title, description and color can be customized.
+可以自訂標題、描述以及顏色。
 
 .. rst-class:: classref-reftable-group
 
@@ -76,7 +76,7 @@ Its title, description and color can be customized.
 - |void| **set_attached_nodes**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_attached_nodes**\ (\ )
 
-The list of nodes attached to the frame.
+附加到框的節點清單。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -95,7 +95,7 @@ The list of nodes attached to the frame.
 - |void| **set_autoshrink_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoshrink_enabled**\ (\ )
 
-If ``true``, the frame will automatically resize to enclose all attached nodes.
+如果為 ``true``\ ，該框將自動調整大小以包含所有附加的節點。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ If ``true``, the frame will automatically resize to enclose all attached nodes.
 - |void| **set_tint_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_color**\ (\ )
 
-The color of the frame when :ref:`tint_color_enabled<class_VisualShaderNodeFrame_property_tint_color_enabled>` is ``true``.
+框架在 :ref:`tint_color_enabled<class_VisualShaderNodeFrame_property_tint_color_enabled>` 為 ``true`` 時的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ The color of the frame when :ref:`tint_color_enabled<class_VisualShaderNodeFrame
 - |void| **set_tint_color_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tint_color_enabled**\ (\ )
 
-If ``true``, the frame will be tinted with the color specified in :ref:`tint_color<class_VisualShaderNodeFrame_property_tint_color>`.
+如果為 ``true``\ ，則該框將使用 :ref:`tint_color<class_VisualShaderNodeFrame_property_tint_color>` 中指定的顏色進行著色。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ If ``true``, the frame will be tinted with the color specified in :ref:`tint_col
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The title of the node.
+節點的標題。
 
 .. rst-class:: classref-section-separator
 
@@ -163,7 +163,7 @@ The title of the node.
 
 |void| **add_attached_node**\ (\ node\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShaderNodeFrame_method_add_attached_node>`
 
-Adds a node to the list of nodes attached to the frame. Should not be called directly, use the :ref:`VisualShader.attach_node_to_frame()<class_VisualShader_method_attach_node_to_frame>` method instead.
+將節點新增到框架附加節點清單中。不應該直接呼叫，請改用 :ref:`VisualShader.attach_node_to_frame()<class_VisualShader_method_attach_node_to_frame>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Adds a node to the list of nodes attached to the frame. Should not be called dir
 
 |void| **remove_attached_node**\ (\ node\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShaderNodeFrame_method_remove_attached_node>`
 
-Removes a node from the list of nodes attached to the frame. Should not be called directly, use the :ref:`VisualShader.detach_node_from_frame()<class_VisualShader_method_detach_node_from_frame>` method instead.
+將節點從框架附加節點清單中移除。不應該直接呼叫，請改用 :ref:`VisualShader.detach_node_from_frame()<class_VisualShader_method_detach_node_from_frame>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

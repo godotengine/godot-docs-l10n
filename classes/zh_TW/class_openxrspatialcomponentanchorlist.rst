@@ -9,14 +9,14 @@ OpenXRSpatialComponentAnchorList
 
 **繼承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries anchor result data.
+用於儲存查詢錨點結果資料的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object for storing the queries anchor result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+呼叫 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 時，用於儲存查詢錨點結果資料的物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Object for storing the queries anchor result data when calling :ref:`OpenXRSpati
 
 :ref:`Transform3D<class_Transform3D>` **get_entity_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentAnchorList_method_get_entity_pose>`
 
-Returns the transform for the entity at this ``index``.
+回傳該 ``index`` 處實體的變換矩陣。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

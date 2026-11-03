@@ -1065,13 +1065,13 @@ enum **ResponseCode**: :ref:`🔗<enum_HTTPClient_ResponseCode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **request**\ (\ method\: :ref:`Method<enum_HTTPClient_Method>`, url\: :ref:`String<class_String>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_HTTPClient_method_request>`
 
-Надсилає HTTP-запит до підключеного хоста за допомогою заданого методу :ref:`param()<class_HTTPClient_method_param>`.
+Надсилає HTTP-запит на підключений хост із заданим ``method``.
 
-Параметр URL зазвичай є лише частиною після host, тому для ``https://example.com/index.php`` це ``/index.php``. Під час надсилання запитів до HTTP-проксі-сервера це має бути абсолютна URL-адреса. Для запитів :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також дозволено ``*``. Для запитів :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент authority (``host:port``).
+Параметр URL зазвичай є лише частиною, що йде після імені хосту, тож для ``https://example.com/index.php`` це ``/index.php``. При надсиланні запитів на HTTP-проксі-сервер це має бути абсолютний URL. Для запитів типу :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також допускається використання ``*``. Для запитів типу :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент авторитету (``host:port``).
 
-\ ``headers`` – це заголовки HTTP-запиту.
+\ ``headers`` — це заголовки HTTP-запиту.
 
- Щоб створити POST-запит із рядками запиту для надсилання на сервер, виконайте такі дії:
+Щоб створити POST-запит із рядками запиту для передачі на сервер, виконайте наступне:
 
 
 .. tabs::
@@ -1080,17 +1080,19 @@ enum **ResponseCode**: :ref:`🔗<enum_HTTPClient_ResponseCode>`
 
     var fields = { "username": "user", "password": "pass" }
     var query_string = http_client.query_string_from_dict(fields)
-    var headers = ["Content-Type: application/x-www-form-urlencoded", "Content-Length: " + str(query_string.length()))
-    var result = http_client.request(http_client.METHOD_POST, "/index.php", headers, query_string)[/gdscript]
-[csharp]
+    var headers = ["Content-Type: application/x-www-form-urlencoded", "Content-Length: " + str(query_string.length())]
+    var result = http_client.request(http_client.METHOD_POST, "/index.php", headers, query_string)
+
+ .. code-tab:: csharp
+
     var fields = new Godot.Collections.Dictionary { { "username", "user" }, { "password", "pass" } };
     string queryString = new HttpClient().QueryStringFromDict(fields);
     string[] headers = ["Content-Type: application/x-www-form-urlencoded", $"Content-Length: {queryString.Length}"];
-    var result = new HttpClient().Request(HttpClient.Method.Post, "index.php", headers, queryString);[/csharp]
+    var result = new HttpClient().Request(HttpClient.Method.Post, "index.php", headers, queryString);
 
-[/codeblocks]
 
-[b]Примітка:[/b] Параметр [param body] ігнорується, якщо [param method] має значення [constant HTTPClient.METHOD_GET]. Це тому, що методи GET не можуть містити дані запиту. Як тимчасове рішення, ви можете передавати дані запиту як рядок запиту в URL-адресі. Див. приклад у [method String.uri_encode].
+
+\ **Примітка:** Параметр ``body`` ігнорується, якщо ``method`` дорівнює :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`. Це пов’язано з тим, що методи GET не можуть містити дані запиту. Щоб обійти це обмеження, можна передати дані запиту у вигляді рядка запиту в URL-адресі. Див. приклад у розділі :ref:`String.uri_encode()<class_String_method_uri_encode>`.
 
 .. rst-class:: classref-item-separator
 

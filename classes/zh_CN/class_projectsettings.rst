@@ -3683,7 +3683,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`bool<class_bool>` **debug/settings/stdout/print_gpu_profile** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/print_gpu_profile>`
 
-每秒将 GPU 配置文件信息打印到标准输出。这包括平均每帧需要 GPU 渲染多长时间，细分为渲染管道的不同步骤，例如 CanvasItems、阴影、辉光等。
+每秒将 GPU 性能分析信息打印到标准输出。这包括平均每帧需要 GPU 渲染多长时间，细分为渲染管道的不同步骤，例如 CanvasItems、阴影、辉光等。
 
 .. rst-class:: classref-item-separator
 

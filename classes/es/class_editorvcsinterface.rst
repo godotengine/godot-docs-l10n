@@ -365,7 +365,7 @@ Devuelve un :ref:`Array<class_Array>` de elementos :ref:`Dictionary<class_Dictio
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **_get_remotes**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_remotes>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`String<class_String>`\ s, each containing the name of a remote configured in the VCS.
+Devuelve un :ref:`Array<class_Array>` de :ref:`String<class_String>`\ s, cada una de las cuales contiene el nombre de un remoto configurado en el VCS.
 
 .. rst-class:: classref-item-separator
 

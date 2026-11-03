@@ -133,7 +133,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 :ref:`int<class_int>` **get_action_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionSet_method_get_action_count>`
 
-獲取該動作集中動作的數量。
+取得該動作集中動作的數量。
 
 .. rst-class:: classref-item-separator
 

@@ -21,7 +21,7 @@ Logger personalizado para recibir mensajes del flujo interno de errores/adverten
 Tutoriales
 --------------------
 
-- :doc:`Logging <../tutorials/scripting/logging>`
+- :doc:`Registro <../tutorials/scripting/logging>`
 
 .. rst-class:: classref-reftable-group
 

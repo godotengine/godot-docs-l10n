@@ -1063,7 +1063,7 @@ Returns ``true`` if all characters of this string can be found in ``text`` in th
 
 :ref:`bool<class_bool>` **is_subsequence_ofn**\ (\ text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_is_subsequence_ofn>`
 
-Returns ``true`` if all characters of this string can be found in ``text`` in their original order, **ignoring case**. This is not the same as :ref:`containsn()<class_String_method_containsn>`.
+Devuelve ``true`` si todos los caracteres de esta string se encuentran en ``text`` en su orden original, **sin distinguir entre mayúsculas y minúsculas**. Esto no es lo mismo que :ref:`containsn()<class_String_method_containsn>`.
 
 .. rst-class:: classref-item-separator
 

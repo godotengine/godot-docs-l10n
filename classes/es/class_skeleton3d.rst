@@ -514,7 +514,7 @@ Devuelve la cantidad de huesos del esqueleto.
 
 Devuelve la transformación general del hueso especificado, con respecto al esqueleto. Al ser relativa al marco del esqueleto, esta no es la transformación "global" real del hueso.
 
-\ **Nota:** Esta es la pose global que estableces en el esqueleto durante el proceso, la pose global final puede ser anulada por modificadores en el proceso diferido. Si quieres acceder a la pose global final, usa :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
+\ **Nota:** Esta es la pose global que estableces en el esqueleto durante el proceso, la pose global final puede ser sobrescrita por modificadores en el proceso diferido. Si quieres acceder a la pose global final, usa :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -678,9 +678,9 @@ Devuelve la transformación restante de un hueso ``bone_idx``.
 
 :ref:`StringName<class_StringName>` **get_concatenated_bone_names**\ (\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_concatenated_bone_names>`
 
-Returns all bone names concatenated with commas (``,``) as a single :ref:`StringName<class_StringName>`.
+Devuelve todos los nombres de los huesos concatenados con comas (``,``) como un único :ref:`StringName<class_StringName>`.
 
-It is useful to set it as a hint for the enum property.
+Resulta útil establecerlo como una pista para la propiedad enum.
 
 .. rst-class:: classref-item-separator
 

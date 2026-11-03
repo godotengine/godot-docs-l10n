@@ -7,7 +7,7 @@ EditorSpinSlider
 
 **Hereda:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Control del editor Godot para editar valores numéricos.
+Control del editor de Godot para editar valores numéricos.
 
 .. rst-class:: classref-introduction-group
 
@@ -158,7 +158,7 @@ The type of control used will depend on the value of :ref:`editing_integer<class
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_PREFER_SLIDER** = ``1``
 
-A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` is enabled.
+Siempre se utilizará un deslizador, incluso si :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` está habilitado.
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_HIDE:
 

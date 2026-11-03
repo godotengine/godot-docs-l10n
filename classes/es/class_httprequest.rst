@@ -479,7 +479,7 @@ The file to download into. Will output any received file into it.
 - |void| **set_max_redirects**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_redirects**\ (\ )
 
-Maximum number of allowed redirects.
+Número máximo de redireccionamientos permitidos.
 
 .. rst-class:: classref-item-separator
 

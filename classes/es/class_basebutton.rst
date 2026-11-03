@@ -432,7 +432,7 @@ Se llama cuando se cambia el estado del botón(Activado/Desactivado) (sólo si :
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **get_draw_mode**\ (\ ) |const| :ref:`🔗<class_BaseButton_method_get_draw_mode>`
 
-Devuelve el estado visual utilizado para dibujar el botón. Esto es útil principalmente cuando implementas tu propio código de dibujo, ya sea anulando _draw() o conectando la señal de "dibujo". El estado visual del botón está definido por el enum :ref:`DrawMode<enum_BaseButton_DrawMode>`.
+Devuelve el estado visual utilizado para dibujar el botón. Esto es útil principalmente cuando implementas tu propio código de dibujo, ya sea sobrescribiendo _draw() o conectando la señal de "dibujo". El estado visual del botón está definido por el enum :ref:`DrawMode<enum_BaseButton_DrawMode>`.
 
 .. rst-class:: classref-item-separator
 

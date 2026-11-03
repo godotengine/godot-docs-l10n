@@ -4164,7 +4164,7 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ALWAYS_DUPLICATE** = ``524288``
 
-当创建一个带有 :ref:`Resource.duplicate()<class_Resource_method_duplicate>` 的 Resource，并且它的标志是在一个 Resource 的属性上设置的副本时候，无论 ``subresources`` 为多少，该属性永远都会被创建为副本。
+用 :ref:`Resource.duplicate()<class_Resource_method_duplicate>` 创建 Resource 副本时，如果它的某个属性上设置了这个标记，那么该属性始终会被复制，无论布尔参数 ``subresources`` 的取值。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE:
 

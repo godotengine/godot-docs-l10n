@@ -14,17 +14,17 @@ Tilemap 的圖塊庫。
 說明
 ----
 
-A TileSet is a library of tiles for a :ref:`TileMapLayer<class_TileMapLayer>`. A TileSet handles a list of :ref:`TileSetSource<class_TileSetSource>`, each of them storing a set of tiles.
+TileSet 是 :ref:`TileMapLayer<class_TileMapLayer>` 的圖塊庫。TileSet 處理 :ref:`TileSetSource<class_TileSetSource>` 清單，每個表中儲存一組圖塊。
 
-Tiles can either be from a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, which renders tiles out of a texture with support for physics, navigation, etc., or from a :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`, which exposes scene-based tiles.
+圖塊既可以來自 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`\ ，可以渲染紋理中的圖塊，支援物理、導航等功能，也可以來自 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`\ ，提供基於場景的圖塊。
 
-Tiles are referenced by using three IDs: their source ID, their atlas coordinates ID, and their alternative tile ID.
+圖塊通過使用三個 ID 來參照：源 ID、圖集座標 ID、備選圖塊 ID。
 
-A TileSet can be configured so that its tiles expose more or fewer properties. To do so, the TileSet resources use property layers, which you can add or remove depending on your needs.
+TileSet 可以設定圖塊暴露哪些屬性。為了做到這一點，TileSet 資源使用了屬性層，你可以根據需要進行新增和刪除。
 
-For example, adding a physics layer allows giving collision shapes to your tiles. Each layer has dedicated properties (physics layer and mask), so you may add several TileSet physics layers for each type of collision you need.
+例如，新增物理層可以為瓷磚提供碰撞形狀。不同的層都有不同的屬性（物理層和遮罩），要實現不同型別的碰撞，你也可以新增多個 TileSet 物理層。
 
-See the functions to add new layers for more information.
+更多資訊請參閱新增新層的函式。
 
 .. rst-class:: classref-introduction-group
 
@@ -39,7 +39,7 @@ See the functions to add new layers for more information.
 
 - `2D 六邊形演示 <https://godotengine.org/asset-library/asset/2717>`__
 
-- `2D Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
+- `AStarGrid2D 的 2D 網格導航演示 <https://godotengine.org/asset-library/asset/2723>`__
 
 - `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
 
@@ -264,9 +264,9 @@ enum **TileShape**: :ref:`🔗<enum_TileSet_TileShape>`
 
 :ref:`TileShape<enum_TileSet_TileShape>` **TILE_SHAPE_ISOMETRIC** = ``1``
 
-Diamond tile shape (for isometric look).
+鑽石圖塊形狀（用於等軸外觀）。
 
-\ **Note:** Isometric **TileSet** works best if all sibling :ref:`TileMapLayer<class_TileMapLayer>`\ s and their parent inheriting from :ref:`Node2D<class_Node2D>` have Y-sort enabled.
+\ **注意：**\ 等軸 **TileSet** 在所有同級 :ref:`TileMapLayer<class_TileMapLayer>` 及其派生自 :ref:`Node2D<class_Node2D>` 的父節點都啟用了Y 排序時效果最好。
 
 .. _class_TileSet_constant_TILE_SHAPE_HALF_OFFSET_SQUARE:
 
@@ -300,7 +300,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_STACKED** = ``0``
 
-圖塊座標佈局，兩個軸與對應的局部水平軸和垂直軸保持一致。
+圖塊座標佈局，兩個軸與對應的區域水平軸和垂直軸保持一致。
 
 .. _class_TileSet_constant_TILE_LAYOUT_STACKED_OFFSET:
 
@@ -560,7 +560,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 - |void| **set_tile_layout**\ (\ value\: :ref:`TileLayout<enum_TileSet_TileLayout>`\ )
 - :ref:`TileLayout<enum_TileSet_TileLayout>` **get_tile_layout**\ (\ )
 
-For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), changes the way tiles are indexed in the :ref:`TileMapLayer<class_TileMapLayer>` grid.
+對於所有半偏移形狀（等軸、六邊形和半偏移正方形），更改圖塊在 :ref:`TileMapLayer<class_TileMapLayer>` 柵格中的索引方式。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 - |void| **set_uv_clipping**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_uv_clipping**\ (\ )
 
-算繪圖塊時啟用/禁用 UV 裁剪。
+渲染圖塊時啟用/停用 UV 裁剪。
 
 .. rst-class:: classref-section-separator
 
@@ -765,7 +765,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
 
-Clears all terrain properties for the given terrain set.
+清除指定地形集合（terrain set）的所有地形屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -789,7 +789,7 @@ Clears all terrain properties for the given terrain set.
 
 :ref:`Array<class_Array>` **get_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_alternative_level_tile_proxy>`
 
-返回給定識別字的備選級代理。返回的陣列包含三個代理的目標識別字（源 ID、合集坐標 ID 和備選圖塊 ID）。
+返回給定識別字的備選級代理。返回的陣列包含三個代理的目標識別字（源 ID、合集座標 ID 和備選圖塊 ID）。
 
 如果該 TileSet 沒有給定識別字的代理，則返回空陣列。
 
@@ -901,7 +901,7 @@ Clears all terrain properties for the given terrain set.
 
 :ref:`int<class_int>` **get_next_source_id**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_next_source_id>`
 
-Returns a new unused source ID. This generated ID is the same that a call to :ref:`add_source()<class_TileSet_method_add_source>` would return.
+回傳新的未使用的源 ID。這個生成的 ID 與呼叫 :ref:`add_source()<class_TileSet_method_add_source>` 將回傳的 ID 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -997,7 +997,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`float<class_float>` **get_physics_layer_collision_priority**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_physics_layer_collision_priority>`
 
-Returns the collision priority of bodies on the given TileSet's physics layer.
+回傳給定 TileSet 物理層中物體的碰撞優先級。
 
 .. rst-class:: classref-item-separator
 
@@ -1167,7 +1167,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`bool<class_bool>` **has_custom_data_layer_by_name**\ (\ layer_name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TileSet_method_has_custom_data_layer_by_name>`
 
-Returns if there is a custom data layer named ``layer_name``.
+回傳是否存在名為 ``layer_name`` 的自訂資料層。
 
 .. rst-class:: classref-item-separator
 
@@ -1203,7 +1203,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 :ref:`Array<class_Array>` **map_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_map_tile_proxy>`
 
-根據配置的代理，將提供的識別字對應到一組新的識別字。返回的是由源 ID、合集坐標 ID 和備選圖塊 ID 這三個元素構成的 Array。
+根據配置的代理，將提供的識別字對應到一組新的識別字。返回的是由源 ID、合集座標 ID 和備選圖塊 ID 這三個元素構成的 Array。
 
 這個函式首先搜尋配對的備選級代理，然後是座標級代理，然後是源級代理。
 
@@ -1423,9 +1423,9 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **set_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`, alternative_to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_alternative_level_tile_proxy>`
 
-Create an alternative-level proxy for the given identifiers. A proxy will map set of tile identifiers to another set of identifiers.
+為給定的標識符建立備選級代理。代理會將一組圖塊標識符映射到另一組標識符。
 
-Proxied tiles can be automatically replaced in TileMapLayer nodes using the editor.
+可以使用編輯器自動替換 TileMapLayer 節點中的代理圖塊。
 
 .. rst-class:: classref-item-separator
 
@@ -1437,9 +1437,9 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
 
-Creates a coordinates-level proxy for the given identifiers. A proxy will map set of tile identifiers to another set of identifiers. The alternative tile ID is kept the same when using coordinates-level proxies.
+為給定的標識符建立座標級代理。代理會將一組圖塊標識符映射到另一組標識符。使用座標級代理時，備選圖塊 ID 保持不變。
 
-Proxied tiles can be automatically replaced in TileMapLayer nodes using the editor.
+可以使用編輯器自動替換 TileMapLayer 節點中的代理圖塊。
 
 .. rst-class:: classref-item-separator
 
@@ -1475,7 +1475,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_navigation_layer_layer_value**\ (\ layer_index\: :ref:`int<class_int>`, layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileSet_method_set_navigation_layer_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 TileSet 導覽資料層中指定的導覽層，導覽資料層由給定的 ``layer_index`` 標識，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 TileSet 導覽資料層中指定的導覽層，導覽資料層由給定的 ``layer_index`` 標識，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -1499,7 +1499,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_occlusion_layer_light_mask**\ (\ layer_index\: :ref:`int<class_int>`, light_mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_occlusion_layer_light_mask>`
 
-設定給定 TileSet 遮擋層中遮擋器的遮擋層（算繪伺服器中使用）。
+設定給定 TileSet 遮擋層中遮擋器的遮擋層（渲染伺服器中使用）。
 
 .. rst-class:: classref-item-separator
 
@@ -1511,7 +1511,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_occlusion_layer_sdf_collision**\ (\ layer_index\: :ref:`int<class_int>`, sdf_collision\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileSet_method_set_occlusion_layer_sdf_collision>`
 
-啟用或禁用給定 TileSet 遮擋層中遮擋器的 SDF 碰撞。
+啟用或停用給定 TileSet 遮擋層中遮擋器的 SDF 碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -1523,7 +1523,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_physics_layer_collision_layer**\ (\ layer_index\: :ref:`int<class_int>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_physics_layer_collision_layer>`
 
-Sets the collision layer (as in the physics server) for bodies in the given TileSet physics layer.
+設定給定 TileSet 物理層中物體的碰撞層（物理伺服器中使用）。
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ Sets the collision layer (as in the physics server) for bodies in the given Tile
 
 |void| **set_physics_layer_collision_mask**\ (\ layer_index\: :ref:`int<class_int>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_physics_layer_collision_mask>`
 
-Sets the collision mask for bodies in the given TileSet physics layer.
+設定給定 TileSet 物理層中物體的碰撞遮罩。
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ Sets the collision mask for bodies in the given TileSet physics layer.
 
 |void| **set_physics_layer_collision_priority**\ (\ layer_index\: :ref:`int<class_int>`, priority\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TileSet_method_set_physics_layer_collision_priority>`
 
-Sets the collision priority for bodies in the given TileSet physics layer.
+設定給定 TileSet 物理層中物體的碰撞優先級。
 
 .. rst-class:: classref-item-separator
 
@@ -1583,9 +1583,9 @@ Sets the collision priority for bodies in the given TileSet physics layer.
 
 |void| **set_source_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, source_to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_source_level_tile_proxy>`
 
-Creates a source-level proxy for the given source ID. A proxy will map set of tile identifiers to another set of identifiers. Both the atlas coordinates ID and the alternative tile ID are kept the same when using source-level proxies.
+為給定的源 ID 建立源級代理。代理會將一組圖塊標識符映射到另一組標識符。使用源級代理時，圖集座標 ID 和備選圖塊 ID 均保持不變。
 
-Proxied tiles can be automatically replaced in TileMapLayer nodes using the editor.
+可以使用編輯器自動替換 TileMapLayer 節點中的代理圖塊。
 
 .. rst-class:: classref-item-separator
 

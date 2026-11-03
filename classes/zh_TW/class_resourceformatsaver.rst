@@ -91,7 +91,7 @@ ResourceFormatSaver
 
 :ref:`Error<enum_@GlobalScope_Error>` **_save**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_ResourceFormatSaver_private_method__save>`
 
-將給定的資源物件保存到目標\ ``path``\ 中的檔中。 ``flags``\ 是一個位掩碼，由\ :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>`\ 常數組成。
+將給定的資源物件保存到目標\ ``path``\ 中的檔中。 ``flags``\ 是一個位元遮罩，由\ :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>`\ 常陣列成。
 
 成功時返回\ :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時返回\ :ref:`Error<enum_@GlobalScope_Error>`\ 常數。
 

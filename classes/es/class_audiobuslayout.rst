@@ -7,14 +7,14 @@ AudioBusLayout
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Almacena informacion sobre los buses de audio.
+Almacena información sobre los buses de audio.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Almacena posicion, muteado, solo, bypass, efectos, posicion de efecto, volumen, y las conexiones entre buses. Véase :ref:`AudioServer<class_AudioServer>` para su uso.
+Almacena posición, muteado, solo, bypass, efectos, posición de efecto, volumen, y las conexiones entre buses. Véase :ref:`AudioServer<class_AudioServer>` para su uso.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

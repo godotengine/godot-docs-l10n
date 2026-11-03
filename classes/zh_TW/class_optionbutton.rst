@@ -17,13 +17,13 @@ OptionButton
 說明
 ----
 
-**OptionButton** is a type of button that brings up a dropdown with selectable items when pressed. The item selected becomes the "current" item and is displayed as the button text.
+**OptionButton** 是一種按下時彈出下拉選單的按鈕。選中的選單項會成為“目前”選單項，作為按鈕文字顯示。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另見 :ref:`BaseButton<class_BaseButton>`\ ，其中包含與此節點相關聯的通用屬性和方法。
 
-\ **Note:** The IDs used for items are limited to signed 32-bit integers, not the full 64 bits of :ref:`int<class_int>`. These have a range of ``-2^31`` to ``2^31 - 1``, that is, ``-2147483648`` to ``2147483647``.
+\ **注意：**\ 選單項的 ID 限制為帶符號 32 位元整數，並不是完整的 64 位元 :ref:`int<class_int>`\ 。取值範圍為 ``-2^31`` 到 ``2^31 - 1``\ ，即 ``-2147483648`` 到 ``2147483647``\ 。
 
-\ **Note:** The :ref:`Button.text<class_Button_property_text>` and :ref:`Button.icon<class_Button_property_icon>` properties are set automatically based on the selected item. They shouldn't be changed manually.
+\ **注意：**\ :ref:`Button.text<class_Button_property_text>` 和 :ref:`Button.icon<class_Button_property_icon>` 屬性會根據目前所選選單項自動設定。不應該手動更改。
 
 .. rst-class:: classref-reftable-group
 
@@ -166,7 +166,7 @@ See also :ref:`BaseButton<class_BaseButton>` which contains common properties an
 
 **item_focused**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_signal_item_focused>`
 
-Emitted when the user navigates to an item using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` or :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` input actions. The index of the item focused is passed as argument.
+當使用者通過 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>`\ （向上）或 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>`\ （向下）輸入動作導航到某個項目時，會觸發（發射）此訊號。被聚焦的項目的索引（index）會作為參數傳遞進來。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ Emitted when the user navigates to an item using the :ref:`ProjectSettings.input
 - |void| **set_fit_to_longest_item**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_to_longest_item**\ (\ )
 
-If ``true``, minimum size will be determined by the longest item's width, instead of the currently selected one's. It will also take the popup's margins into account, making the button match its total width.
+如果\ ``true``\ ，最小尺寸將由最長項目的寬度決定，而不是目前選擇的那個。它還會考慮彈窗的邊距，使按鈕匹配其總寬度。
 
-\ **Note:** For performance reasons, the minimum size doesn't update immediately when adding, removing or modifying items.
+\ **注意：**\ 出於效能原因，在新增、刪除或修改項目時，最小尺寸不會立即更新。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ If ``true``, minimum size will be determined by the longest item's width, instea
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果為 ``true``\ ，則停用位於 ``index`` 處的項目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_OptionButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+位於 ``index`` 處的項目的圖示。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+索引為 ``index`` 的選單項的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果為 ``true``\ ，則索引為 ``index`` 的選單項是一個分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -306,9 +306,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+位於 ``index`` 處的項目的文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ The text of the item at ``index``.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMenu>` for filtering items. See :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+如果為 ``true``\ ，則在 :ref:`PopupMenu<class_PopupMenu>` 頂部顯示一個用於篩選項目的搜尋欄。請參閱 :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>`\ ，以瞭解基於項目數量動態控制其可見性的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMen
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the :ref:`PopupMenu<class_PopupMenu>` search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+如果為 ``true``\ ，則在 :ref:`PopupMenu<class_PopupMenu>` 的搜尋欄中啟用模糊搜尋。這允許搜尋結果包含與搜尋查詢幾乎匹配的條目，以及那些單獨字元與搜尋查詢匹配但不按順序排列的條目。
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+請使用 :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>` 來設定搜尋結果中允許的最大不匹配數量。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the :ref:`PopupMenu<class_PopupMenu>` search bar. Any item with more mismatches will be hidden from the search results.
+設定為 :ref:`PopupMenu<class_PopupMenu>` 的搜尋欄啟用模糊搜尋時，每個搜尋結果中允許的最大不匹配數量。任何超過該數量的選單項都將從搜尋結果中被隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the :ref:`PopupMenu<class_PopupMenu>` search bar to be visible. :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` must be ``true`` for this to have any effect.
+設定讓 :ref:`PopupMenu<class_PopupMenu>`\ （彈出選單）的搜尋欄顯示出來所需的最少項目數量。\ :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` 必須為 ``true``\ ，這個設定才會生效。
 
 .. rst-class:: classref-item-separator
 
@@ -411,9 +411,9 @@ Sets the minimum number of items required for the :ref:`PopupMenu<class_PopupMen
 
 |void| **add_icon_item**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_OptionButton_method_add_icon_item>`
 
-Adds an item, with a ``texture`` icon, text ``label`` and (optionally) ``id``. If no ``id`` is passed, the item index will be used as the item's ID. New items are appended at the end.
+新增一個選單項，圖示為 ``texture``\ ，文字為 ``label``\ ，（可選）ID 為 ``id``\ 。如果沒有傳入 ``id``\ ，則會將選單項的索參照作 ID。新選單項會追加到末尾。
 
-\ **Note:** The item will be selected if there are no other items.
+\ **注意：**\ 沒有其他選單項時會選中該選單項。
 
 .. rst-class:: classref-item-separator
 
@@ -425,9 +425,9 @@ Adds an item, with a ``texture`` icon, text ``label`` and (optionally) ``id``. I
 
 |void| **add_item**\ (\ label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_OptionButton_method_add_item>`
 
-Adds an item, with text ``label`` and (optionally) ``id``. If no ``id`` is passed, the item index will be used as the item's ID. New items are appended at the end.
+新增一個選單項，文字為 ``label``\ ，（可選）ID 為 ``id``\ 。如果沒有傳入 ``id``\ ，則會將選單項的索參照作 ID。新選單項會追加到末尾。
 
-\ **Note:** The item will be selected if there are no other items.
+\ **注意：**\ 沒有其他選單項時會選中該選單項。
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Adds an item, with text ``label`` and (optionally) ``id``. If no ``id`` is passe
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_auto_translate_mode>`
 
-Returns the auto translate mode of the item at index ``idx``.
+回傳索引為 ``idx`` 的選單項的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`Variant<class_Variant>` **get_item_metadata**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_metadata>`
 
-檢索項的中繼資料。中繼資料可以是任何型別，並可用於儲存關於項的額外資訊，如外部字符串ID。
+檢索項的中繼資料。中繼資料可以是任何型別，並可用於儲存關於項的額外資訊，如外部字串ID。
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_selectable_item**\ (\ from_last\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_OptionButton_method_get_selectable_item>`
 
-返回第一個處於非禁用狀態或被標記為分隔符號的功能表專案的索引。如果 ``from_last`` 為 ``true``\ ，則會逆序搜索功能表專案。
+返回第一個處於非停用狀態或被標記為分隔符號的功能表專案的索引。如果 ``from_last`` 為 ``true``\ ，則會逆序搜尋功能表專案。
 
 如果沒有找到則返回 ``-1``\ 。
 
@@ -587,7 +587,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`Variant<class_Variant>` **get_selected_metadata**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_get_selected_metadata>`
 
-獲取選定項的中繼資料。可以使用 :ref:`set_item_metadata()<class_OptionButton_method_set_item_metadata>` 設定項的中繼資料。
+取得選定項的中繼資料。可以使用 :ref:`set_item_metadata()<class_OptionButton_method_set_item_metadata>` 設定項的中繼資料。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`bool<class_bool>` **has_selectable_items**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_has_selectable_items>`
 
-如果這個按鈕至少包含一個未禁用或被標記為分隔符號的功能表專案，則返回 ``true``\ 。
+如果這個按鈕至少包含一個未停用或被標記為分隔符號的功能表專案，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_is_item_disabled>`
 
-如果索引為 ``idx`` 的功能表專案被禁用，則返回 ``true``\ 。
+如果索引為 ``idx`` 的功能表專案被停用，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +647,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_method_select>`
 
-按索引選擇項並使其為目前選中項。即使該項是禁用的，這也將起作用。
+按索引選擇項並使其為目前選中項。即使該項是停用的，這也將起作用。
 
 將 ``-1`` 作為索引傳入會取消選中任何目前選中的專案。
 
@@ -661,7 +661,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OptionButton_method_set_disable_shortcuts>`
 
-如果為 ``true``\ ，快捷方式將被禁用，無法用於觸發按鈕。
+如果為 ``true``\ ，快捷方式將被停用，無法用於觸發按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -673,9 +673,9 @@ Returns the auto translate mode of the item at index ``idx``.
 
 |void| **set_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_OptionButton_method_set_item_auto_translate_mode>`
 
-Sets the auto translate mode of the item at index ``idx``.
+設定索引為 ``idx`` 的選單項的自動翻譯模式。
 
-Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` by default, which uses the same auto translate mode as the **OptionButton** itself.
+選單項使用 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`\ ，表示使用與 **OptionButton** 相同的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -687,9 +687,9 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_disabled**\ (\ idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OptionButton_method_set_item_disabled>`
 
-設定是否禁用索引為 ``idx`` 的功能表專案。
+設定是否停用索引為 ``idx`` 的功能表專案。
 
-處於禁用狀態的功能表專案在下拉列表中繪製的方式不同，使用者無法選中這個功能表專案。如果將目前選中的功能表專案設為了禁用，則仍然會處於選中狀態。
+處於停用狀態的功能表專案在下拉列表中繪製的方式不同，使用者無法選中這個功能表專案。如果將目前選中的功能表專案設為了停用，則仍然會處於選中狀態。
 
 .. rst-class:: classref-item-separator
 

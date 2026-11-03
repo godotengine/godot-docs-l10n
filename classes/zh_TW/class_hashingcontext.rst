@@ -29,18 +29,18 @@ HashingContext 類別提供了一個介面，用於計算多次迭代的加密�
         # 檢查檔案是否存在。
         if not FileAccess.file_exists(path):
             return
-        # 建立 SHA-256 上下文。
+        # 建立 SHA-256 情境。
         var ctx = HashingContext.new()
         ctx.start(HashingContext.HASH_SHA256)
         # 開啟檔案進行雜湊處理。
         var file = FileAccess.open(path, FileAccess.READ)
-        # 讀取每個區塊後更新上下文。
+        # 讀取每個區塊後更新情境。
         while file.get_position() < file.get_length():
             var remaining = file.get_length() - file.get_position()
             ctx.update(file.get_buffer(min(remaining, CHUNK_SIZE)))
         # 取得計算出的雜湊值。
         var res = ctx.finish()
-        # 將結果以十六進制的字串和陣列輸出。
+        # 將結果以十六進位的字串和陣列輸出。
         printt(res.hex_encode(), Array(res))
 
  .. code-tab:: csharp
@@ -54,12 +54,12 @@ HashingContext 類別提供了一個介面，用於計算多次迭代的加密�
         {
             return;
         }
-        // 建立 SHA-256 上下文。
+        // 建立 SHA-256 情境。
         var ctx = new HashingContext();
         ctx.Start(HashingContext.HashType.Sha256);
         // 開啟檔案進行雜湊處理。
         using var file = FileAccess.Open(path, FileAccess.ModeFlags.Read);
-        // 讀取每個區塊後更新上下文。
+        // 讀取每個區塊後更新情境。
         while (file.GetPosition() < file.GetLength())
         {
             int remaining = (int)(file.GetLength() - file.GetPosition());
@@ -67,7 +67,7 @@ HashingContext 類別提供了一個介面，用於計算多次迭代的加密�
         }
         // 取得計算出的雜湊值。
         byte[] res = ctx.Finish();
-        // 將結果以十六進制的字串和陣列輸出。
+        // 將結果以十六進位的字串和陣列輸出。
         GD.PrintT(res.HexEncode(), (Variant)res);
     }
 
@@ -143,7 +143,7 @@ enum **HashType**: :ref:`🔗<enum_HashingContext_HashType>`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **finish**\ (\ ) :ref:`🔗<class_HashingContext_method_finish>`
 
-關閉目前上下文，並回傳計算出的雜湊值。
+關閉目前情境，並回傳計算出的雜湊值。
 
 .. rst-class:: classref-item-separator
 

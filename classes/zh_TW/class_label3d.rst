@@ -159,7 +159,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_DISABLE_DEPTH_TEST** = ``2``
 
-禁用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
+停用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
 
 .. _class_Label3D_constant_FLAG_FIXED_SIZE:
 
@@ -201,9 +201,9 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-該模式僅允許完全透明、或完全不透明的圖元。除非啟用了某種形式的螢幕空間抗鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。該模式也被稱為 *Alpha 測試* 或 *1 位透明度*\ 。
+該模式僅允許完全透明、或完全不透明的圖元。除非啟用了某種形式的螢幕空間反鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。該模式也被稱為 *Alpha 測試* 或 *1 位透明度*\ 。
 
-\ **注意：**\ 該模式可能會出現抗鋸齒字形和輪廓問題，請嘗試調整 :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` 或使用 MSDF 字形。
+\ **注意：**\ 該模式可能會出現反鋸齒字形和輪廓問題，請嘗試調整 :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` 或使用 MSDF 字形。
 
 \ **注意：**\ 當使用具有重疊字形的文字（例如草書）時，該模式可能會在正文和輪廓之間，出現透明度排序問題。
 
@@ -245,7 +245,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-在 Alpha 通道上套用抗鋸齒的臨界值。
+在 Alpha 通道上套用反鋸齒的臨界值。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-要套用的 Alpha 抗鋸齒類型。
+要套用的 Alpha 反鋸齒類型。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 - |void| **set_alpha_cut_mode**\ (\ value\: :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>`\ )
 - :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **get_alpha_cut_mode**\ (\ )
 
-The alpha cutting mode to use for the sprite.
+精靈所使用的 Alpha 剪切模式。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ Alpha 裁剪丟棄數值的閾值。
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.
+如果設定為 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 以外的值，則文字將在節點的邊界矩形內自動換行。如果你調整節點大小，就會自動更改其高度，從而顯示所有文字。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_autowrap_trim_flags**\ (\ value\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ )
 - |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ )
 
-Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` for more info.
+自動換行空白修剪標誌。詳見 :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` 和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES
 - |void| **set_billboard_mode**\ (\ value\: :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>`\ )
 - :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **get_billboard_mode**\ (\ )
 
-The billboard mode to use for the label.
+標籤使用的公告板模式。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ The billboard mode to use for the label.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`\ ) |const|
 
-If ``true``, the label is rendered at the same size regardless of distance. The label's size on screen is the same as if the camera was ``1.0`` units away from the label's origin, regardless of the actual distance from the camera. The :ref:`Camera3D<class_Camera3D>`'s field of view (or :ref:`Camera3D.size<class_Camera3D_property_size>` when in orthogonal/frustum mode) still affects the size the label is drawn at.
+如果為 ``true``\ ，則標籤始終以相同的大小渲染，忽略距離。標籤在螢幕上的大小與相機距離標籤原點 ``1.0`` 單位時相同，忽略與相機的實際距離。\ :ref:`Camera3D<class_Camera3D>` 的視野（使用正交/視錐模式時則為 :ref:`Camera3D.size<class_Camera3D_property_size>`\ ）仍然會影響標籤繪製的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ If ``true``, the label is rendered at the same size regardless of distance. The 
 
 **Label3D** 文字的字形大小。為了讓字形在近距離時看起來更細膩，可增加 :ref:`font_size<class_Label3D_property_font_size>`\ ，同時減小 :ref:`pixel_size<class_Label3D_property_pixel_size>`\ 。
 
-較大的字形大小需要更多時間來算繪新字元，這可能會導致在遊戲過程中卡頓。
+較大的字形大小需要更多時間來渲染新字元，這可能會導致在遊戲過程中卡頓。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ If ``true``, the label is rendered at the same size regardless of distance. The 
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Controls the text's horizontal alignment. Supports left, center, right, and fill (also known as justify).
+控制文字的水平對齊方式。支援左對齊、居中對齊、右對齊、填充（即兩端對齊）。
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Controls the text's horizontal alignment. Supports left, center, right, and fill
 - |void| **set_justification_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_justification_flags**\ (\ )
 
-Line fill alignment rules.
+行填充對齊規則。
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Line fill alignment rules.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行與行之間的額外縱向留白（單位為像素），留白會被新增到行的降部。該值可以為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outline_render_priority**\ (\ )
 
-設定文字輪廓的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+設定文字輪廓的渲染優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
 
 \ **注意：**\ 僅在 :ref:`alpha_cut<class_Label3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
 
@@ -642,7 +642,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_render_priority**\ (\ )
 
-設定文字的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+設定文字的渲染優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
 
 \ **注意：**\ 僅在 :ref:`alpha_cut<class_Label3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
 
@@ -748,7 +748,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **get_texture_filter**\ (\ )
 
-Filter flags for the texture.
+紋理的過濾標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -782,7 +782,7 @@ Filter flags for the texture.
 - |void| **set_vertical_alignment**\ (\ value\: :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>`\ )
 - :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **get_vertical_alignment**\ (\ )
 
-Controls the text's vertical alignment. Supports top, center, and bottom.
+控制文字的垂直對齊方式。支援頂部對齊、居中對齊、底部對齊。
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 
 |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Label3D_method_set_draw_flag>`
 
-If ``true``, the specified ``flag`` will be enabled.
+如果為 ``true``\ ，則啟用 ``flag`` 指定的標誌。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,15 +14,15 @@ ConcavePolygonShape3D
 說明
 ----
 
-A 3D trimesh shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+一種用於物理模擬的 3D 三角網格形狀。通常用於為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。
 
-Being just a collection of interconnected triangles, **ConcavePolygonShape3D** is the most freely configurable single 3D shape. It can be used to form polyhedra of any nature, or even shapes that don't enclose a volume. However, **ConcavePolygonShape3D** is *hollow* even if the interconnected triangles do enclose a volume, which often makes it unsuitable for physics or detection.
+作為一組相互連接的三角形， **ConcavePolygonShape3D** 是最自由的可設定的單一 3D 形狀。它可以用於形成任何性質的多面體，甚至是不封閉體積的形狀。然而，即使相互連接的三角形封閉了一個體積， :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 仍然是\ *中空*\ 的，這常常使其不適用於物理模擬或碰撞檢測。
 
-\ **Note:** When used for collision, **ConcavePolygonShape3D** is intended to work with static :ref:`CollisionShape3D<class_CollisionShape3D>` nodes like :ref:`StaticBody3D<class_StaticBody3D>` and will likely not behave well for :ref:`CharacterBody3D<class_CharacterBody3D>`\ s or :ref:`RigidBody3D<class_RigidBody3D>`\ s in a mode other than Static.
+\ **注意：**\ 當用於碰撞計算時， **ConcavePolygonShape3D** 旨在與 :ref:`StaticBody3D<class_StaticBody3D>` 等靜態 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點一起使用 。並且對於 :ref:`CharacterBody3D<class_CharacterBody3D>` 或 :ref:`RigidBody3D<class_RigidBody3D>`\ ，在除靜態模式之外的其他模式下可能表現不佳。
 
-\ **Warning:** Physics bodies that are small have a chance to clip through this shape when moving fast. This happens because on one frame, the physics body may be on the "outside" of the shape, and on the next frame it may be "inside" it. **ConcavePolygonShape3D** is hollow, so it won't detect a collision.
+\ **警告：**\ 較小的物理物體在快速移動時有機會穿過該形狀。發生這種情況是因為在一影格上，物理物體可能位於形狀的“外部”，而在下一影格上，它可能位於形狀的“內部”。由於\ **ConcavePolygonShape3D** 是中空的，因此它不會檢測到碰撞。
 
-\ **Performance:** Due to its complexity, **ConcavePolygonShape3D** is the slowest 3D collision shape to check collisions against. Its use should generally be limited to level geometry. For convex geometry, :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` should be used. For dynamic physics bodies that need concave collision, several :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ s can be used to represent its collision by using convex decomposition; see :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`'s documentation for instructions.
+\ **效能：**\ 由於其複雜性， **ConcavePolygonShape3D** 是檢測碰撞最慢的 3D 碰撞形狀。它的使用一般僅限於關卡幾何體。對於凸幾何體，應使用 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 。對於需要凹碰撞的動態物體，可以使用多個 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 通過凸分解來表示其碰撞；相關說明請參閱 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 文件。
 
 .. rst-class:: classref-introduction-group
 

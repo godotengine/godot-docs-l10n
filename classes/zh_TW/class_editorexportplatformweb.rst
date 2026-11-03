@@ -14,9 +14,9 @@ Web 匯出器。
 說明
 ----
 
-The Web exporter customizes how a web build is handled. In the editor's "Export" window, it is created when adding a new "Web" preset.
+Web 匯出器能夠自訂 web 建置的處理方式。在編輯器的“匯出”視窗中，新增“Web”預設時會建立這個匯出器。
 
-\ **Note:** Godot on Web is rendered inside a ``<canvas>`` tag. Normally, the canvas cannot be positioned or resized manually, but otherwise acts as the main :ref:`Window<class_Window>` of the application.
+\ **注意：**\ Web 上的 Godot 是在一個 ``<canvas>`` 標籤中渲染的。這個畫布是作為程式的主 :ref:`Window<class_Window>` 使用的，但是一般沒有辦法手動調整位置和大小。
 
 .. rst-class:: classref-introduction-group
 
@@ -98,7 +98,7 @@ The Web exporter customizes how a web build is handled. In the editor's "Export"
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformWeb_property_custom_template/debug>`
 
-File path to the custom export template used for debug builds. If left empty, the default template is used.
+用於除錯建置的自訂匯出範本的檔案路徑。如果留空，則預設範本將被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ File path to the custom export template used for debug builds. If left empty, th
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformWeb_property_custom_template/release>`
 
-File path to the custom export template used for release builds. If left empty, the default template is used.
+用於發佈版本的自訂匯出範本的檔案路徑。如果留空，則預設範本將被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -122,13 +122,13 @@ File path to the custom export template used for release builds. If left empty, 
 
 :ref:`int<class_int>` **html/canvas_resize_policy** :ref:`🔗<class_EditorExportPlatformWeb_property_html/canvas_resize_policy>`
 
-Determines how the canvas should be resized by Godot.
+決定 Godot 應如何調整畫布的大小。
 
-- **None:** The canvas is not automatically resized.
+- **None：**\ 畫布不會自動調整大小。
 
-- **Project:** The size of the canvas is dependent on the :ref:`ProjectSettings<class_ProjectSettings>`.
+- **Project：**\ 畫布的大小由 :ref:`ProjectSettings<class_ProjectSettings>` 決定。
 
-- **Adaptive:** The canvas is automatically resized to fit as much of the web page as possible.
+- **Adaptive：**\ 畫布自動調整到盡可能覆蓋 Web 頁面的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -140,9 +140,9 @@ Determines how the canvas should be resized by Godot.
 
 :ref:`String<class_String>` **html/custom_html_shell** :ref:`🔗<class_EditorExportPlatformWeb_property_html/custom_html_shell>`
 
-The custom HTML page that wraps the exported web build. If left empty, the default HTML shell is used.
+包裹匯出後 Web 建置的自訂 HTML 頁面。留空時使用預設的 HTML 殼。
 
-For more information, see the :doc:`Customizing HTML5 Shell <../tutorials/platform/web/customizing_html5_shell>` tutorial.
+詳見教學\ :doc:`《自訂 HTML5 殼》 <../tutorials/platform/web/customizing_html5_shell>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ For more information, see the :doc:`Customizing HTML5 Shell <../tutorials/platfo
 
 **實驗性：** 此屬性可能在未來版本中變更或移除。
 
-If ``true``, embeds support for a virtual keyboard into the web page, which is shown when necessary on touchscreen devices.
+如果為 ``true``\ ，則將對虛擬鍵盤的支援嵌入到網頁中，在觸摸屏裝置上會在必要時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ If ``true``, embeds support for a virtual keyboard into the web page, which is s
 
 :ref:`bool<class_bool>` **html/export_icon** :ref:`🔗<class_EditorExportPlatformWeb_property_html/export_icon>`
 
-If ``true``, the project icon will be used as the favicon for this application's web page.
+如果為 ``true``\ ，則專案圖示將用作該應用程式網頁的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ If ``true``, the project icon will be used as the favicon for this application's
 
 :ref:`bool<class_bool>` **html/focus_canvas_on_start** :ref:`🔗<class_EditorExportPlatformWeb_property_html/focus_canvas_on_start>`
 
-If ``true``, the canvas will be focused as soon as the application is loaded, if the browser window is already in focus.
+如果為 ``true``\ ，則瀏覽器視窗已經獲得焦點，且一旦載入應用程式時，畫布就會獲得焦點。
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ If ``true``, the canvas will be focused as soon as the application is loaded, if
 
 :ref:`String<class_String>` **html/head_include** :ref:`🔗<class_EditorExportPlatformWeb_property_html/head_include>`
 
-Additional HTML tags to include inside the ``<head>``, such as ``<meta>`` tags.
+要在 ``<head>`` 中額外新增的 HTML 標籤，例如 ``<meta>`` 標籤。
 
-\ **Note:** You do not need to add a ``<title>`` tag, as it is automatically included based on the project's name.
+\ **注意：**\ ``<title>`` 標籤無須自行新增，會根據專案名稱自動新增。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Additional HTML tags to include inside the ``<head>``, such as ``<meta>`` tags.
 
 :ref:`Color<class_Color>` **progressive_web_app/background_color** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/background_color>`
 
-The background color used behind the web application.
+Web 應用程式後面使用的背景顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -218,15 +218,15 @@ The background color used behind the web application.
 
 :ref:`int<class_int>` **progressive_web_app/display** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/display>`
 
-The `display mode <https://developer.mozilla.org/en-US/docs/Web/Manifest/display/>`__ to use for this progressive web application. Different browsers and platforms may not behave the same.
+用於該漸進式 Web 應用程式的 `顯示模式 <https://developer.mozilla.org/en-US/docs/Web/Manifest/display/>`__\ 。不同的瀏覽器和平台的行為可能不同。
 
-- **Fullscreen:** Displays the app in fullscreen and hides all of the browser's UI elements.
+- **全螢幕：**\ 全螢幕顯示應用程式並隱藏所有瀏覽器的 UI 元素。
 
-- **Standalone:** Displays the app in a separate window and hides all of the browser's UI elements.
+- **獨立：**\ 在單獨的視窗中顯示應用程式並隱藏所有瀏覽器的 UI 元素。
 
-- **Minimal UI:** Displays the app in a separate window and only shows the browser's UI elements for navigation.
+- **最小 UI：**\ 在單獨的視窗中顯示應用程式，並且僅顯示瀏覽器的 UI 元素以進行導航。
 
-- **Browser:** Displays the app as a normal web page.
+- **瀏覽器：**\ 將應用程式顯示為普通網頁。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ The `display mode <https://developer.mozilla.org/en-US/docs/Web/Manifest/display
 
 :ref:`bool<class_bool>` **progressive_web_app/enabled** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/enabled>`
 
-If ``true``, turns this web build into a `progressive web application <https://en.wikipedia.org/wiki/Progressive_web_app>`__ (PWA).
+如果為 ``true``\ ，則會將該 Web 建置設定為 `漸進式網路應用程式 <https://zh.wikipedia.org/zh-cn/%E6%B8%90%E8%BF%9B%E5%BC%8F%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F>`__\ （PWA）。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ If ``true``, turns this web build into a `progressive web application <https://e
 
 :ref:`bool<class_bool>` **progressive_web_app/ensure_cross_origin_isolation_headers** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/ensure_cross_origin_isolation_headers>`
 
-When enabled, the progressive web app will make sure that each request has cross-origin isolation headers (COEP/COOP).
+啟用後，漸進式 Web 應用程式將確保每個請求都具有跨源隔離標頭（COEP/COOP）。
 
-This can simplify the setup to serve the exported game.
+這可以簡化設定以服務匯出的遊戲。
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ This can simplify the setup to serve the exported game.
 
 :ref:`String<class_String>` **progressive_web_app/icon_144x144** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_144x144>`
 
-File path to the smallest icon for this web application. If not defined, defaults to the project icon.
+該 Web 應用程式的最小圖示的檔案路徑。如果未定義，則預設為專案圖示。
 
-\ **Note:** If the icon is not 144×144, it will be automatically resized for the final build.
+\ **注意：**\ 如果圖示不是 144×144，則它將自動調整大小以適應最終建置。
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ File path to the smallest icon for this web application. If not defined, default
 
 :ref:`String<class_String>` **progressive_web_app/icon_180x180** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_180x180>`
 
-File path to the small icon for this web application. If not defined, defaults to the project icon.
+該 Web 應用程式的小圖示的檔案路徑。如果未定義，則預設為專案圖示。
 
-\ **Note:** If the icon is not 180×180, it will be automatically resized for the final build.
+\ **注意：**\ 如果圖示不是 180×180，則它將自動調整大小以適應最終建置。
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ File path to the small icon for this web application. If not defined, defaults t
 
 :ref:`String<class_String>` **progressive_web_app/icon_512x512** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_512x512>`
 
-File path to the largest icon for this web application. If not defined, defaults to the project icon.
+該 Web 應用程式的最小圖示的檔案路徑。如果未定義，則預設為專案圖示。
 
-\ **Note:** If the icon is not 512×512, it will be automatically resized for the final build.
+\ **注意：**\ 如果圖示不是 512×512，則它將自動調整大小以適應最終建置。
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ File path to the largest icon for this web application. If not defined, defaults
 
 :ref:`String<class_String>` **progressive_web_app/offline_page** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/offline_page>`
 
-The page to display, should the server hosting the page not be available. This page is saved in the client's machine.
+如果托管該頁面的伺服器不可用，則顯示該頁面。該頁面儲存在用戶端的機器中。
 
 .. rst-class:: classref-item-separator
 
@@ -318,13 +318,13 @@ The page to display, should the server hosting the page not be available. This p
 
 :ref:`int<class_int>` **progressive_web_app/orientation** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/orientation>`
 
-The orientation to use when the web application is run through a mobile device.
+通過行動裝置執行 Web 應用程式時要使用的方向。
 
-- **Any:** No orientation is forced.
+- **任意：**\ 不強制方向。
 
-- **Landscape:** Forces a horizontal layout (wider than it is taller).
+- **橫向：**\ 強制水平版面配置（寬度大於高度）。
 
-- **Portrait:** Forces a vertical layout (taller than it is wider).
+- **縱向：**\ 強制垂直版面配置（高度大於寬度）。
 
 .. rst-class:: classref-item-separator
 
@@ -336,9 +336,9 @@ The orientation to use when the web application is run through a mobile device.
 
 :ref:`int<class_int>` **threads/emscripten_pool_size** :ref:`🔗<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`
 
-The number of threads that emscripten will allocate at startup. A smaller value will allocate fewer threads and consume fewer system resources, but you may run the risk of running out of threads in the pool and needing to allocate more threads at run time which may cause a deadlock.
+Emscripten 在啟動時分配的執行緒數。較小的值將分配較少的執行緒，消耗較少的系統資源，但可能會面臨池中執行緒用完的風險，需要在執行時分配更多執行緒，可能導致死鎖。
 
-\ **Note:** Some browsers have a hard cap on the number of threads that can be allocated, so it is best to be cautious and keep this number low.
+\ **注意：**\ 一些瀏覽器對可分配的執行緒數量有嚴格的限制，因此最好謹慎行事，保持較低的執行緒數。
 
 .. rst-class:: classref-item-separator
 
@@ -350,9 +350,9 @@ The number of threads that emscripten will allocate at startup. A smaller value 
 
 :ref:`int<class_int>` **threads/godot_pool_size** :ref:`🔗<class_EditorExportPlatformWeb_property_threads/godot_pool_size>`
 
-Override for the default size of the :ref:`WorkerThreadPool<class_WorkerThreadPool>`. This setting is used when :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` size is set to ``-1`` (which it is by default). This size must be smaller than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` otherwise deadlocks may occur.
+覆蓋 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 的預設大小。該設定在 :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` 設為 ``-1``\ （預設）時生效。該大小必須小於 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`\ ，否則可能造成死鎖。
 
-When using threads, this size needs to be large enough to accommodate features that rely on having a dedicated thread like :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` or :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`. In general, it is best to ensure that this is at least ``4`` and is at least ``2`` or ``3`` less than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`.
+在使用執行緒時，該大小需足以容納相依性專用執行緒的特性，例如 :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` 和 :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`\ 。通常，建議確保此值至少為 ``4``\ ，並且至少比 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` 小 ``2`` 或 ``3``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ When using threads, this size needs to be large enough to accommodate features t
 
 :ref:`bool<class_bool>` **variant/extensions_support** :ref:`🔗<class_EditorExportPlatformWeb_property_variant/extensions_support>`
 
-If ``true`` enables :ref:`GDExtension<class_GDExtension>` support for this web build.
+如果為 ``true``\ ，則啟用對該 Web 建置的 :ref:`GDExtension<class_GDExtension>` 支援。
 
 .. rst-class:: classref-item-separator
 
@@ -376,9 +376,9 @@ If ``true`` enables :ref:`GDExtension<class_GDExtension>` support for this web b
 
 :ref:`bool<class_bool>` **variant/thread_support** :ref:`🔗<class_EditorExportPlatformWeb_property_variant/thread_support>`
 
-If ``true``, the exported game will support threads. It requires `a "cross-origin isolated" website <https://web.dev/articles/coop-coep>`__, which may be difficult to set up and is limited for security reasons (such as not being able to communicate with third-party websites).
+如果為 ``true``\ ，則匯出的遊戲將支援多執行緒。多執行緒支援要求\ `網站支援“跨源隔離” <https://web.dev/articles/coop-coep>`__\ ，設定起來可能比較麻煩，並且可能會由於安全原因而受到限制（例如無法與第三方網站通信）。
 
-If ``false``, the exported game will not support threads. As a result, it is more prone to performance and audio issues, but will only require to be run on an HTTPS website.
+如果為 ``false``\ ，則匯出的遊戲將不支援多執行緒。因此，遊戲會更容易出現效能和音訊問題，但只要求在 HTTPS 網站上執行。
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ If ``false``, the exported game will not support threads. As a result, it is mor
 
 :ref:`bool<class_bool>` **vram_texture_compression/for_desktop** :ref:`🔗<class_EditorExportPlatformWeb_property_vram_texture_compression/for_desktop>`
 
-If ``true``, allows textures to be optimized for desktop through the S3TC/BPTC algorithm.
+如果為 ``true``\ ，則允許通過 S3TC/BPTC 算法針對桌面最佳化紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ If ``true``, allows textures to be optimized for desktop through the S3TC/BPTC a
 
 :ref:`bool<class_bool>` **vram_texture_compression/for_mobile** :ref:`🔗<class_EditorExportPlatformWeb_property_vram_texture_compression/for_mobile>`
 
-If ``true`` allows textures to be optimized for mobile through the ETC2/ASTC algorithm.
+如果為 ``true``\ ，則允許通過 ETC2/ASTC 算法針對行動裝置最佳化紋理。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

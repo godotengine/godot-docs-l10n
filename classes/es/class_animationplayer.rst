@@ -352,7 +352,7 @@ La posición (en segundos) de la animación que se está reproduciendo.
 - |void| **set_movie_quit_on_finish_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_movie_quit_on_finish_enabled**\ (\ )
 
-Si es ``true`` y el motor se está ejecutando en modo Movie Maker (ver :ref:`MovieWriter<class_MovieWriter>`), sale del motor con :ref:`SceneTree.quit()<class_SceneTree_method_quit>` tan pronto como una animación termine de reproducirse en este **AnimationPlayer**. Se imprime un mensaje cuando el motor se cierra por este motivo.
+Si es ``true`` y el motor se está ejecutando en modo Creación de películas (ver :ref:`MovieWriter<class_MovieWriter>`), sale del motor con :ref:`SceneTree.quit()<class_SceneTree_method_quit>` tan pronto como una animación termine de reproducirse en este **AnimationPlayer**. Se imprime un mensaje cuando el motor se cierra por este motivo.
 
 \ **Nota:** Esto obedece la misma lógica que la señal :ref:`AnimationMixer.animation_finished<class_AnimationMixer_signal_animation_finished>`, por lo que no cerrará el motor si la animación está configurada para reproducirse en bucle.
 

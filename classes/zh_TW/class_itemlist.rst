@@ -14,15 +14,15 @@ ItemList
 說明
 ----
 
-該控制項提供了可選專案的垂直列表，這些專案可能位於單列或多列中，每個專案都有文本和圖示選項。支援工具提示，並且列表中的每個專案可能會有所不同。
+該控制項提供了可選專案的垂直列表，這些專案可能位於單列或多列中，每個專案都有文字和圖示選項。支援工具提示，並且列表中的每個專案可能會有所不同。
 
-可以選擇或取消選擇列表中的可選專案，並且可以啟用多項選擇。也可以啟用用滑鼠右鍵進行選擇，以允許使用彈出本文功能表。專案也可以通過按兩下它們，或按 :kbd:`Enter` 來“啟動”。
+可以選擇或取消選擇列表中的可選專案，並且可以啟用多項選擇。也可以啟用用滑鼠右鍵進行選擇，以允許使用彈出本文功能表。專案也可以通過雙擊它們，或按 :kbd:`Enter` 來“啟動”。
 
 專案文字只支援單行字串。字串中的分行符號（例如 ``\n``\ ）不會產生換行。在 :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>` 模式下會啟用文字換行，但預設情況下會調整列的寬度以完全適合其內容。需要將 :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` 設定得大於零，才能換行文字。
 
 所有 ``set_*`` 方法都允許負的專案索引，例如 ``-1`` 存取的是最後一個專案，\ ``-2`` 選擇的是倒數第二個專案，以此類推。
 
-\ **差異量搜索：**\ 與 :ref:`PopupMenu<class_PopupMenu>` 和 :ref:`Tree<class_Tree>` 一樣，\ **ItemList** 支援在控制項獲得焦點時在列表內進行搜索。按下與專案名稱的第一個字母配對的鍵，以選擇以給定字母開頭的第一個專案。在該點之後，有兩種方法可以執行差異量搜索： 1) 在超時持續時間之前再次按下相同的鍵，以選擇下一個以相同字母開頭的專案。 2) 在超時時間前，按配對單詞剩餘部分的字母鍵，將直接選擇問題項。如果自上次擊鍵被註冊後，超時持續時間已過，則這兩個動作都將被重設為列表的開頭。可以通過更改 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 來調整超時持續時間。
+\ **差異量搜尋：**\ 與 :ref:`PopupMenu<class_PopupMenu>` 和 :ref:`Tree<class_Tree>` 一樣，\ **ItemList** 支援在控制項獲得焦點時在列表內進行搜尋。按下與專案名稱的第一個字母配對的鍵，以選擇以給定字母開頭的第一個專案。在該點之後，有兩種方法可以執行差異量搜尋： 1) 在超時持續時間之前再次按下相同的鍵，以選擇下一個以相同字母開頭的專案。 2) 在超時時間前，按配對單詞剩餘部分的字母鍵，將直接選擇問題項。如果自上次擊鍵被註冊後，超時持續時間已過，則這兩個動作都將被重設為列表的開頭。可以通過更改 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 來調整超時持續時間。
 
 .. rst-class:: classref-reftable-group
 
@@ -263,9 +263,9 @@ ItemList
 
 **empty_clicked**\ (\ at_position\: :ref:`Vector2<class_Vector2>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_empty_clicked>`
 
-Emitted when any mouse click is issued within the rect of the list but on empty space.
+在清單矩形內的非空白區域點選任意滑鼠按鍵時觸發。
 
-\ ``at_position`` is the click position in this control's local coordinate system.
+\ ``at_position`` 為點選的位置，使用控制項的區域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Emitted when any mouse click is issued within the rect of the list but on empty 
 
 **item_activated**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_activated>`
 
-Emitted when specified list item is activated via double-clicking or by pressing :kbd:`Enter`.
+通過雙擊或按\ :kbd:`Enter`\ 鍵啟用指定的清單項時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -289,9 +289,9 @@ Emitted when specified list item is activated via double-clicking or by pressing
 
 **item_clicked**\ (\ index\: :ref:`int<class_int>`, at_position\: :ref:`Vector2<class_Vector2>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_clicked>`
 
-Emitted when specified list item has been clicked with any mouse button.
+使用任意滑鼠按鍵按一下指定的清單項時觸發。
 
-\ ``at_position`` is the click position in this control's local coordinate system.
+\ ``at_position`` 為點選的位置，使用控制項的區域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -303,9 +303,9 @@ Emitted when specified list item has been clicked with any mouse button.
 
 **item_selected**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_selected>`
 
-Emitted when specified item has been selected. Only applicable in single selection mode.
+選擇指定項目時觸發。僅適用於單選模式。
 
-\ :ref:`allow_reselect<class_ItemList_property_allow_reselect>` must be enabled to reselect an item.
+\ :ref:`allow_reselect<class_ItemList_property_allow_reselect>` 必須啟用才能重新選擇項目。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Emitted when specified item has been selected. Only applicable in single selecti
 
 **multi_selected**\ (\ index\: :ref:`int<class_int>`, selected\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_signal_multi_selected>`
 
-Emitted when a multiple selection is altered on a list allowing multiple selection.
+在允許多選的清單上更改多選時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -382,7 +382,7 @@ enum **SelectMode**: :ref:`🔗<enum_ItemList_SelectMode>`
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_TOGGLE** = ``2``
 
-Allows selecting multiple items by toggling them on and off.
+允許選擇多個項目，可以切換項目是否選中。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+捲動提示將永遠不會顯示。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -408,7 +408,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+捲動提示將顯示在頂部和底部。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_TOP:
 
@@ -416,7 +416,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+只會顯示頂部的捲動提示。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -424,7 +424,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+只會顯示底部的捲動提示。
 
 .. rst-class:: classref-section-separator
 
@@ -463,7 +463,7 @@ Only the bottom scroll hint will be shown.
 - |void| **set_allow_rmb_select**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_rmb_select**\ (\ )
 
-如果為 ``true``\ ，點擊滑鼠右鍵可以選中專案。
+如果為 ``true``\ ，點選滑鼠右鍵可以選中專案。
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Only the bottom scroll hint will be shown.
 - |void| **set_allow_search**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_search**\ (\ )
 
-如果為 ``true``\ ，則允許用字母鍵通過差異量搜索導覽 **ItemList**\ 。
+如果為 ``true``\ ，則允許用字母鍵通過差異量搜尋導覽 **ItemList**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Only the bottom scroll hint will be shown.
 - |void| **set_auto_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_auto_width**\ (\ )
 
-If ``true``, the control will automatically resize the width to fit its content.
+如果為 ``true``\ ，控制項將自動調整寬度以適合其內容。
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ If ``true``, the control will automatically resize the width to fit its content.
 
 所有列的寬度將調整為。
 
-零值禁用調整，每個專案的寬度將等於其內容的寬度，列的寬度將不均勻。
+零值停用調整，每個專案的寬度將等於其內容的寬度，列的寬度將不均勻。
 
 .. rst-class:: classref-item-separator
 
@@ -615,9 +615,9 @@ If ``true``, the control will automatically resize the width to fit its content.
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_ItemList_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果為 ``true``\ ，則停用位於 ``index`` 處的項目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_ItemList_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+位於 ``index`` 處的項目的圖示。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The icon of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/selectable** = ``true`` :ref:`🔗<class_ItemList_property_item_{index}/selectable>`
 
-If ``true``, the item at ``index`` is selectable.
+如果為 ``true``\ ，則位於 ``index`` 處的項目可被選擇。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +657,9 @@ If ``true``, the item at ``index`` is selectable.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_ItemList_property_item_{index}/text>`
 
-The text of the item at ``index``.
+位於 ``index`` 處的項目的文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ The text of the item at ``index``.
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+捲動提示（指示內容仍可沿特定方向捲動的指示器）的顯示方式。
 
 .. rst-class:: classref-item-separator
 
@@ -769,7 +769,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-The clipping behavior when the text exceeds an item's bounding rectangle.
+當文字超出項目的邊界矩形時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ The clipping behavior when the text exceeds an item's bounding rectangle.
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+如果為 ``true``\ ，則捲動提示紋理將平鋪而不是拉伸。見 :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -803,9 +803,9 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 - |void| **set_wraparound_items**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_wraparound_items**\ (\ )
 
-If ``true``, the control will automatically move items into a new row to fit its content. See also :ref:`HFlowContainer<class_HFlowContainer>` for this behavior.
+如果為 ``true``\ ，則控制項會自動將項目移動至新的一行，適配內容。另見 :ref:`HFlowContainer<class_HFlowContainer>` 的這一行為。
 
-If ``false``, the control will add a horizontal scrollbar to make all items visible.
+如果為 ``false``\ ，控制項會新增水平捲動條，使所有項目都可見。
 
 .. rst-class:: classref-section-separator
 
@@ -834,11 +834,11 @@ If ``false``, the control will add a horizontal scrollbar to make all items visi
 
 :ref:`int<class_int>` **add_item**\ (\ text\: :ref:`String<class_String>`, icon\: :ref:`Texture2D<class_Texture2D>` = null, selectable\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_add_item>`
 
-Adds an item to the item list with specified text. Returns the index of an added item.
+在項目清單中新增一個項目並指定文字。回傳新增項目的索引。
 
-Specify an ``icon``, or use ``null`` as the ``icon`` for a list item with no icon.
+使用 ``icon`` 指定圖示，清單項不帶圖示時請為 ``icon`` 指定 ``null``\ 。
 
-If ``selectable`` is ``true``, the list item will be selectable.
+如果 ``selectable`` 為 ``true``\ ，則該清單項可被選中。
 
 .. rst-class:: classref-item-separator
 
@@ -850,9 +850,9 @@ If ``selectable`` is ``true``, the list item will be selectable.
 
 |void| **center_on_current**\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_center_on_current>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary to place the item at the center of the list if possible. See also :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
+確保目前選定的項目（如果啟用了多項選擇，則為第一個選定的項目）可見，必要時調整捲動位置，盡可能將該項目放置在清單的中心。另見 :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`\ 。
 
-Fails and prints an error if both arguments are ``false``.
+如果兩個參數均為 ``false``\ ，則該方法將失敗並輸出錯誤訊息。
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Fails and prints an error if both arguments are ``false``.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary. See also :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
+確保目前選定的項目（如果啟用了多項選擇，則為第一個選定的項目）可見，必要時調整捲動位置。另見 :ref:`center_on_current()<class_ItemList_method_center_on_current>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -924,9 +924,9 @@ Ensures the currently selected item (the first selected item if multiple selecti
 
 :ref:`HScrollBar<class_HScrollBar>` **get_h_scroll_bar**\ (\ ) :ref:`🔗<class_ItemList_method_get_h_scroll_bar>`
 
-Returns the horizontal scrollbar.
+回傳水平捲動條。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，刪除和釋放它可能會導致崩潰。如果你希望隱藏它或其任何子項，請使用它們的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ Returns the horizontal scrollbar.
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_auto_translate_mode>`
 
-Returns item's auto translate mode.
+回傳項目的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1050,7 +1050,7 @@ Returns item's auto translate mode.
 
 :ref:`Rect2<class_Rect2>` **get_item_rect**\ (\ idx\: :ref:`int<class_int>`, expand\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_ItemList_method_get_item_rect>`
 
-返回具有給定索引的專案的位置和大小，使用 **ItemList** 節點的坐標系。如果 ``expand`` 為 ``true``\ ，則會將最後一列進行擴充，充滿該行剩餘的大小。
+返回具有給定索引的專案的位置和大小，使用 **ItemList** 節點的座標系。如果 ``expand`` 為 ``true``\ ，則會將最後一列進行擴充，充滿該行剩餘的大小。
 
 \ **注意：**\ 如果修改 **ItemList** 後立即呼叫，尚未在下一影格中重繪，則返回值不可靠。
 
@@ -1138,7 +1138,7 @@ Returns item's auto translate mode.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_disabled>`
 
-索引所對應的專案被禁用時，返回 ``true``\ 。
+索引所對應的專案被停用時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1222,9 +1222,9 @@ Returns item's auto translate mode.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Selects the item at the specified index.
+選擇指定索引（index）處的項目。
 
-\ **Note:** This method does not trigger the item selection signal.
+\ **注意：** 此方法不會觸發項目選擇的訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ Selects the item at the specified index.
 
 |void| **set_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_ItemList_method_set_item_auto_translate_mode>`
 
-Sets the auto translate mode of the item associated with the specified index.
+設定與給定索引關聯的項目的自動翻譯模式。
 
-Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` by default, which uses the same auto translate mode as the **ItemList** itself.
+項目預設使用 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`\ ，表示使用與 **ItemList** 相同的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1274,9 +1274,9 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_disabled**\ (\ idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_disabled>`
 
-禁用（或啟用）指定索引處的專案。
+停用（或啟用）指定索引處的專案。
 
-禁用的專案不能被選中，也不會觸發（按兩下或按 :kbd:`Enter` 時的）啟動訊號。
+停用的專案不能被選中，也不會觸發（雙擊或按 :kbd:`Enter` 時的）啟動訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -1336,7 +1336,7 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_language**\ (\ idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+將給定索引處項目的文字語言程式碼設定為 ``language``\ 。這是用於換行和文字塑形算法的。如果 ``language`` 為空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`Color<class_Color>` **font_hovered_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_ItemList_theme_color_font_hovered_selected_color>`
 
-Text :ref:`Color<class_Color>` used when the item is hovered and selected.
+項目處於懸停且已選中狀態時使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Text :ref:`Color<class_Color>` used when the item is hovered and selected.
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_ItemList_theme_color_font_selected_color>`
 
-Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
+項目處於選中但未懸停狀態時使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1509,7 +1509,7 @@ Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
 
 :ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` texture.
+用於調制 :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` 紋理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1559,7 +1559,7 @@ Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
 
 專案文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ItemList_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ItemList_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_ItemList_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+內容仍可捲動時將顯示的指示器。見 :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1643,7 +1643,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_ItemList_theme_style_focus>`
 
-The focused style for the **ItemList**, drawn on top of everything.
+**ItemList** 的聚焦樣式，繪製在所有內容之上。
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ The focused style for the **ItemList**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **hovered_selected** :ref:`🔗<class_ItemList_theme_style_hovered_selected>`
 
-:ref:`StyleBox<class_StyleBox>` for the hovered and selected items, used when the **ItemList** is not being focused.
+項目處於懸停且選中狀態時的 :ref:`StyleBox<class_StyleBox>`\ ，在 **ItemList** 未獲得焦點時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ The focused style for the **ItemList**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **hovered_selected_focus** :ref:`🔗<class_ItemList_theme_style_hovered_selected_focus>`
 
-:ref:`StyleBox<class_StyleBox>` for the hovered and selected items, used when the **ItemList** is being focused.
+項目處於懸停且選中狀態時的 :ref:`StyleBox<class_StyleBox>`\ ，在 **ItemList** 獲得焦點時使用。
 
 .. rst-class:: classref-item-separator
 

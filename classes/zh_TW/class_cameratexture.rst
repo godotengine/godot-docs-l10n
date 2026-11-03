@@ -16,7 +16,7 @@ CameraTexture
 
 該紋理可以存取 :ref:`CameraFeed<class_CameraFeed>` 提供的相機紋理。
 
-\ **注意：**\ 許多相機提供的都是 YCbCr 圖像，需要在著色器中進行轉換。
+\ **注意：**\ 許多相機提供的都是 YCbCr 影像，需要在著色器中進行轉換。
 
 .. rst-class:: classref-reftable-group
 
@@ -56,7 +56,7 @@ CameraTexture
 - |void| **set_camera_feed_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_camera_feed_id**\ (\ )
 
-我們要顯示圖像的 :ref:`CameraFeed<class_CameraFeed>` 的 ID。
+我們要顯示影像的 :ref:`CameraFeed<class_CameraFeed>` 的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ CameraTexture
 - |void| **set_which_feed**\ (\ value\: :ref:`FeedImage<enum_CameraServer_FeedImage>`\ )
 - :ref:`FeedImage<enum_CameraServer_FeedImage>` **get_which_feed**\ (\ )
 
-我們要存取 :ref:`CameraFeed<class_CameraFeed>` 中的哪個圖像，如果相機圖像被分割成 Y 和 CbCr 分量，這一點很重要。
+我們要存取 :ref:`CameraFeed<class_CameraFeed>` 中的哪個影像，如果相機影像被分割成 Y 和 CbCr 分量，這一點很重要。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

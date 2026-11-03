@@ -14,9 +14,9 @@ GradientTexture2D
 說明
 ----
 
-A 2D texture that obtains colors from a :ref:`Gradient<class_Gradient>` to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The texture is filled by interpolating colors starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets by default, but the gradient fill can be repeated to cover the entire texture.
+2D 紋理，從 :ref:`Gradient<class_Gradient>` 中取得顏色來填充紋理資料。該紋理能夠將顏色過渡轉換為不同的圖案，例如線性漸變或徑向漸變。填充紋理時，預設會從偏移 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 的位置到偏移 :ref:`fill_to<class_GradientTexture2D_property_fill_to>` 的位置對顏色進行插值，但漸變填充也可以在整張紋理上重複。
 
-The gradient is sampled individually for each pixel so it does not necessarily represent an exact copy of the gradient (see :ref:`width<class_GradientTexture2D_property_width>` and :ref:`height<class_GradientTexture2D_property_height>`). See also :ref:`GradientTexture1D<class_GradientTexture1D>`, :ref:`CurveTexture<class_CurveTexture>` and :ref:`CurveXYZTexture<class_CurveXYZTexture>`.
+漸變是針對每個像素單獨取樣的，因此不一定代表漸變的精確副本（見 :ref:`width<class_GradientTexture2D_property_width>` 和 :ref:`height<class_GradientTexture2D_property_height>`\ ）。另見 :ref:`GradientTexture1D<class_GradientTexture1D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>`\ 、\ :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -91,7 +91,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_CONIC** = ``3``
 
-The colors are linearly interpolated in a cone pattern.
+顏色會以錐形圖案進行線性插值。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_fill**\ (\ value\: :ref:`Fill<enum_GradientTexture2D_Fill>`\ )
 - :ref:`Fill<enum_GradientTexture2D_Fill>` **get_fill**\ (\ )
 
-The gradient's fill type.
+漸變的填充型別。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ The gradient's fill type.
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-從 :ref:`Gradient<class_Gradient>` 上獲取的垂直顏色取樣數，也表示紋理的高度。
+從 :ref:`Gradient<class_Gradient>` 上取得的垂直顏色取樣數，也表示紋理的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ The gradient's fill type.
 - |void| **set_repeat**\ (\ value\: :ref:`Repeat<enum_GradientTexture2D_Repeat>`\ )
 - :ref:`Repeat<enum_GradientTexture2D_Repeat>` **get_repeat**\ (\ )
 
-The gradient's repeat type.
+漸變的重複型別。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ The gradient's repeat type.
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-從 :ref:`Gradient<class_Gradient>` 上獲取的水平顏色取樣數，也表示紋理的寬度。
+從 :ref:`Gradient<class_Gradient>` 上取得的水平顏色取樣數，也表示紋理的寬度。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

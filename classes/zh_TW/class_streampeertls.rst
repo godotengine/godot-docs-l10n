@@ -129,7 +129,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, common_name\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_StreamPeerTLS_method_connect_to_stream>`
 
-使用底層 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 連接到對等體，並對遠端憑證是否由給定的 ``common_name`` 簽章進行驗證。傳入 ``client_options`` 可以自訂信任的憑證授權，也可以禁用通用名稱驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+使用底層 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 連接到對等體，並對遠端憑證是否由給定的 ``common_name`` 簽章進行驗證。傳入 ``client_options`` 可以自訂信任的憑證授權，也可以停用通用名稱驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **get_status**\ (\ ) |const| :ref:`🔗<class_StreamPeerTLS_method_get_status>`
 
-Returns the status of the connection.
+回傳連接的狀態。
 
 .. rst-class:: classref-item-separator
 

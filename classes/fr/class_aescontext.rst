@@ -25,9 +25,9 @@ Cette classe contient l'information de contexte nécessaire aux opérations de c
 
     var aes = AESContext.new()
 
-    func _ready():
-        var cle = "Ma clé secrète !!!" # La clé doit être soit de 16 ou de 32 octets.
-        var donnee = "Mon texte secret!!" # La taille des données doit être un multiple de 16 octets, ajoutez du remplissage si nécessaire.
+    func _ready() :
+        var cle = "Ma clé secrète ! ! !" # La clé doit être soit de 16 ou de 32 octets.
+        var donnee = "Mon texte secret ! !" # La taille des données doit être un multiple de 16 octets, ajoutez du remplissage si nécessaire.
         # Crypter l'ECB
         aes.start(AESContext.MODE_ECB_ENCRYPT, cle.to_utf8())
         var encrypte = aes.update(donnee.to_utf8())
@@ -39,7 +39,7 @@ Cette classe contient l'information de contexte nécessaire aux opérations de c
         # Vérifier l'ECB
         assert(decrypte == donnee.to_utf8())
 
-        var iv = "Mon iv secret !!!!" # La taille du vecteur d'initialisation doit être d'exactement 16 octets.
+        var iv = "Mon iv secret ! ! ! !" # La taille du vecteur d'initialisation doit être d'exactement 16 octets.
         # Chiffrer le CBC
         aes.start(AESContext.MODE_CBC_ENCRYPT, cle.to_utf8(), iv.to_utf8())
         encrypte = aes.update(donnee.to_utf8())
@@ -53,39 +53,39 @@ Cette classe contient l'information de contexte nécessaire aux opérations de c
 
  .. code-tab:: csharp
 
-    using Godot;
-    using System.Diagnostics;
+    using Godot ;
+    using System.Diagnostics ;
 
     public partial class MonNoeud : Node
     {
-        private AesContext _aes = new AesContext();
+        private AesContext _aes = new AesContext() ;
 
         public override void _Ready()
         {
-            string cle = "Ma clé secrète !!!"; // La clé doit être soit de 16 ou de 32 octets.
-            string donnee = "Mon texte secret !!"; // La taille des données doit être un multiple de 16 octets, ajoutez du remplissage si nécessaire.
+            string cle = "Ma clé secrète ! ! !" ; // La clé doit être soit de 16 ou de 32 octets.
+            string donnee = "Mon texte secret ! !" ; // La taille des données doit être un multiple de 16 octets, ajoutez du remplissage si nécessaire.
             // Crypter l'ECB
-            _aes.Start(AesContext.Mode.EcbEncrypt, cle.ToUtf8Buffer());
-            byte[] encrypte = _aes.Update(donnee.ToUtf8Buffer());
-            _aes.Finish();
+            _aes.Start(AesContext.Mode.EcbEncrypt, cle.ToUtf8Buffer()) ;
+            byte[] encrypte = _aes.Update(donnee.ToUtf8Buffer()) ;
+            _aes.Finish() ;
             // Décrypter l'ECB
-            _aes.Start(AesContext.Mode.EcbDecrypt, cle.ToUtf8Buffer());
-            byte[] decrypte = _aes.Update(encrypte);
-            _aes.Finish();
+            _aes.Start(AesContext.Mode.EcbDecrypt, cle.ToUtf8Buffer()) ;
+            byte[] decrypte = _aes.Update(encrypte) ;
+            _aes.Finish() ;
             // Vérifier l'ECB
-            Debug.Assert(decrypte == donnees.ToUtf8Buffer());
+            Debug.Assert(decrypte == donnees.ToUtf8Buffer()) ;
 
-            string iv = "Mon iv secret !!!!"; // La taille du vecteur d'initialisation doit être d'exactement 16 octets.
+            string iv = "Mon iv secret ! ! ! !" ; // La taille du vecteur d'initialisation doit être d'exactement 16 octets.
             // Chiffrer le CBC
-            _aes.Start(AesContext.Mode.EcbEncrypt, cle.ToUtf8Buffer(), iv.ToUtf8Buffer());
-            encrypte = _aes.Update(donnee.ToUtf8Buffer());
-            _aes.Finish();
+            _aes.Start(AesContext.Mode.EcbEncrypt, cle.ToUtf8Buffer(), iv.ToUtf8Buffer()) ;
+            encrypte = _aes.Update(donnee.ToUtf8Buffer()) ;
+            _aes.Finish() ;
             // Déchiffrer le CBC
-            _aes.Start(AesContext.Mode.EcbDecrypt, cle.ToUtf8Buffer(), iv.ToUtf8Buffer());
-            decrypted = _aes.Update(encrypte);
-            _aes.Finish();
+            _aes.Start(AesContext.Mode.EcbDecrypt, cle.ToUtf8Buffer(), iv.ToUtf8Buffer()) ;
+            decrypted = _aes.Update(encrypte) ;
+            _aes.Finish() ;
             // Vérifier le CBC
-            Debug.Assert(decrypte == donnee.ToUtf8Buffer());
+            Debug.Assert(decrypte == donnee.ToUtf8Buffer()) ;
         }
     }
 

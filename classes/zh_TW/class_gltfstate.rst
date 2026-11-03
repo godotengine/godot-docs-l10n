@@ -9,16 +9,16 @@ GLTFState
 
 **被繼承：** :ref:`FBXState<class_FBXState>`
 
-Represents all data of a glTF file.
+代表 glTF 檔案中的所有資料。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Contains all nodes and resources of a glTF file. This is used by :ref:`GLTFDocument<class_GLTFDocument>` as data storage, which allows :ref:`GLTFDocument<class_GLTFDocument>` and all :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes to remain stateless.
+包含 glTF 檔案中的所有節點和資源。用於 :ref:`GLTFDocument<class_GLTFDocument>` 的資料儲存，能夠讓 :ref:`GLTFDocument<class_GLTFDocument>` 和所有 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類保持無狀態。
 
-GLTFState can be populated by :ref:`GLTFDocument<class_GLTFDocument>` reading a file or by converting a Godot scene. Then the data can either be used to create a Godot scene or save to a glTF file. The code that converts to/from a Godot scene can be intercepted at arbitrary points by :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes. This allows for custom data to be stored in the glTF file or for custom data to be converted to/from Godot nodes.
+GLTFState 的填寫可以通過 :ref:`GLTFDocument<class_GLTFDocument>` 讀取檔案進行，也可以通過轉換 Godot 場景進行。填寫完成後，可以將資料用於 Godot 場景的建立或者 glTF 檔案的儲存。與 Godot 場景之間進行轉換的程式碼可以通過 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類在任意時刻攔截。這樣就能夠在 glTF 檔案中儲存自訂資料，也可以將自訂資料儲存到 Godot 節點或者從 Godot 節點讀取。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ GLTFState can be populated by :ref:`GLTFDocument<class_GLTFDocument>` reading a 
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `glTF asset header schema <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json>`__
+- `glTF 素材頭的模式 <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -182,7 +182,7 @@ enum **HandleBinaryImageMode**: :ref:`🔗<enum_GLTFState_HandleBinaryImageMode>
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES** = ``0``
 
-When importing a glTF file with embedded binary images, discards all images and uses untextured materials in their place. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+匯入包含嵌入式二進位影像的 glTF 檔案時，會丟棄所有影像，並使用未應用紋理的材質代替它們。以獨立檔案儲存在 ``res://`` 資料夾中的影像不受此影響；Godot 會按照匯入時的設定使用這些影像。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES:
 
@@ -190,11 +190,11 @@ When importing a glTF file with embedded binary images, discards all images and 
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES** = ``1``
 
-When importing a glTF file with embedded binary images, extracts them and saves them to their own files. This allows the image to be imported by Godot's image importer, which can then have their import options customized by the user, including optionally compressing the image to VRAM texture formats.
+匯入包含嵌入式二進位影像的 glTF 檔案時，程式會提取這些影像並將它們儲存到單獨的檔案中。這樣，Godot 的影像匯入器就可以匯入這些影像，使用者也可以自訂它們的匯入選項，包括選擇性地將影像壓縮為 VRAM 紋理格式。
 
-This will save the images's bytes exactly as-is, without recompression. For image formats supplied by glTF extensions, the file will have a filename ending with the file extension supplied by :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` of the extension class.
+這將以原始格式儲存影像的位元組資料，而不會重新壓縮。對於由 glTF 擴充提供的影像格式，檔名將以擴充類的 :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` 提供的檔案副檔名結尾。
 
-\ **Note:** This option is editor-only. At runtime, this acts the same as :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>`.
+\ **注意：**\ 該選項僅供編輯器使用。在執行時中，它的行為與 :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>` 相同。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU:
 
@@ -202,7 +202,7 @@ This will save the images's bytes exactly as-is, without recompression. For imag
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU** = ``2``
 
-When importing a glTF file with embedded binary images, embeds textures VRAM compressed with Basis Universal into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+匯入包含嵌入的二進位影像的 glTF 檔案時，會將使用 Basis Universal 壓縮的 VRAM 紋理嵌入到生成的場景中。以獨立檔案儲存在 ``res://`` 資料夾中的影像不受此影響；這些影像將按照 Godot 匯入的方式使用。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED:
 
@@ -210,7 +210,7 @@ When importing a glTF file with embedded binary images, embeds textures VRAM com
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED** = ``3``
 
-When importing a glTF file with embedded binary images, embeds textures compressed losslessly into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+匯入包含嵌入的二進位影像的 glTF 檔案時，程式會將紋理以無損壓縮方式嵌入到生成的場景中。以獨立檔案儲存在 ``res://`` 資料夾中的影像不受此影響；這些檔案將按照 Godot 匯入的方式使用。
 
 .. rst-class:: classref-section-separator
 
@@ -281,7 +281,7 @@ When importing a glTF file with embedded binary images, embeds textures compress
 - |void| **set_bake_fps**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bake_fps**\ (\ )
 
-The baking fps of the animation for either import or export.
+用於匯入或匯出的動畫的烘焙 fps。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ The baking fps of the animation for either import or export.
 - |void| **set_base_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_base_path**\ (\ )
 
-The folder path associated with this glTF data. This is used to find other files the glTF file references, like images or binary buffers. This will be set during import when appending from a file, and will be set during export when writing to a file.
+與該 glTF 資料關聯的資料夾路徑。這用於尋找該 glTF 檔案參照的其他檔案，例如影像或二進位緩衝區。這將在匯入期間從檔案追加時設定，並將在匯出期間寫入檔案時設定。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ The folder path associated with this glTF data. This is used to find other files
 - |void| **set_copyright**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_copyright**\ (\ )
 
-GLTF 檔案素材標頭中的版權字串。如果存在，則在匯入期間設定，如果非空，則在匯出期間設定。有關詳細信息，請參閱 GLTF 素材標頭說明文件。
+GLTF 檔案素材標頭中的版權字串。如果存在，則在匯入期間設定，如果非空，則在匯出期間設定。有關詳細資訊，請參閱 GLTF 素材標頭說明文件。
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ GLTF 檔案素材標頭中的版權字串。如果存在，則在匯入期間設
 - |void| **set_filename**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_filename**\ (\ )
 
-The file name associated with this glTF data. If it ends with ``.gltf``, this is text-based glTF, otherwise this is binary GLB. This will be set during import when appending from a file, and will be set during export when writing to a file. If writing to a buffer, this will be an empty string.
+與該 glTF 資料關聯的檔名。如果它以 ``.gltf`` 結尾，則這是基於文字的 glTF，否則這是二進位 GLB。這將在匯入期間從檔案追加時設定，並將在匯出期間寫入檔案時設定。如果寫入到緩衝區，這將是一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ The file name associated with this glTF data. If it ends with ``.gltf``, this is
 - |void| **set_glb_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_glb_data**\ (\ )
 
-The binary buffer attached to a .glb file.
+附加到 .glb 檔案的二進位緩衝區。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -406,9 +406,9 @@ The binary buffer attached to a .glb file.
 - |void| **set_handle_binary_image_mode**\ (\ value\: :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>`\ )
 - :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **get_handle_binary_image_mode**\ (\ )
 
-When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled. Images can be discarded, saved as separate files, or embedded in the scene lossily or losslessly. See :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` for options.
+匯入包含未匯入的原始二進位影像（這些影像可能嵌入在二進位資料塊緩衝區中、資料 URI 中或 Godot 未匯入的單獨檔案中）的 glTF 檔案時，該設定控製影像的處理方式。影像可以被丟棄，儲存為單獨的檔案，或以有損或無損方式嵌入到場景中。有關選項見 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>`\ 。
 
-This property does nothing for image files in the ``res://`` folder imported by Godot, as those are handled by Godot's image importer directly, and then the Godot scene generated from the glTF file will use the images as Godot imported them.
+該屬性對 Godot 匯入的位於 ``res://`` 資料夾中的影像檔案不起作用，因為這些檔案由 Godot 的影像匯入器直接處理，然後從 glTF 檔案生成的 Godot 場景將使用 Godot 匯入的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ This property does nothing for image files in the ``res://`` folder imported by 
 - |void| **set_import_as_skeleton_bones**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_import_as_skeleton_bones**\ (\ )
 
-If ``true``, forces all GLTFNodes in the document to be bones of a single :ref:`Skeleton3D<class_Skeleton3D>` Godot node.
+如果為 ``true``\ ，則強制文件中的所有 GLTFNode 成為單個 :ref:`Skeleton3D<class_Skeleton3D>` Godot 節點的骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ If ``true``, forces all GLTFNodes in the document to be bones of a single :ref:`
 - |void| **set_json**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_json**\ (\ )
 
-The original raw JSON document corresponding to this GLTFState.
+與該 GLTFState 對應的原始 JSON 文件。
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ The original raw JSON document corresponding to this GLTFState.
 - |void| **set_root_nodes**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_root_nodes**\ (\ )
 
-The root nodes of the glTF file. Typically, a glTF file will only have one scene, and therefore one root node. However, a glTF file may have multiple scenes and therefore multiple root nodes, which will be generated as siblings of each other and as children of the root node of the generated Godot scene.
+glTF 檔案的根節點。通常一個 glTF 檔案只有一個場景，因此只有一個根節點。然而 glTF 檔案可能有多個場景，因此可以有多個根節點，它們將作為彼此的同級節點生成，並作為生成的 Godot 場景的根節點的子節點生成。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -516,7 +516,7 @@ The root nodes of the glTF file. Typically, a glTF file will only have one scene
 - |void| **set_scene_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_name**\ (\ )
 
-The name of the scene. When importing, if not specified, this will be the file name. When exporting, if specified, the scene name will be saved to the glTF file.
+場景的名稱。匯入時，如果沒有指定，這將是檔名。匯出時，如果指定，場景名稱將被儲存到 glTF 檔案中。
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ The name of the scene. When importing, if not specified, this will be the file n
 
 |void| **add_used_extension**\ (\ extension_name\: :ref:`String<class_String>`, required\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GLTFState_method_add_used_extension>`
 
-Appends an extension to the list of extensions used by this glTF file during serialization. If ``required`` is ``true``, the extension will also be added to the list of required extensions. Do not run this in :ref:`GLTFDocumentExtension._export_post()<class_GLTFDocumentExtension_private_method__export_post>`, as that stage is too late to add extensions. The final list is sorted alphabetically.
+在序列化期間，將一個副檔名追加到該 glTF 檔案使用的副檔名清單在。如果 ``required`` 為 ``true``\ ，則該副檔名也將被新增到所需副檔名清單中。不要在 :ref:`GLTFDocumentExtension._export_post()<class_GLTFDocumentExtension_private_method__export_post>` 中執行它，因為那個階段已來不及新增擴充。最終的清單將按字母順序排序。
 
 .. rst-class:: classref-item-separator
 
@@ -564,7 +564,7 @@ Appends an extension to the list of extensions used by this glTF file during ser
 
 :ref:`int<class_int>` **append_data_to_buffers**\ (\ data\: :ref:`PackedByteArray<class_PackedByteArray>`, deduplication\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GLTFState_method_append_data_to_buffers>`
 
-Appends the given byte array ``data`` to the buffers and creates a :ref:`GLTFBufferView<class_GLTFBufferView>` for it. The index of the destination :ref:`GLTFBufferView<class_GLTFBufferView>` is returned. If ``deduplication`` is ``true``, the buffers are first searched for duplicate data, otherwise new bytes are always appended.
+將位元組陣列資料 ``data`` 附加到緩衝區並為其建立一個 :ref:`GLTFBufferView<class_GLTFBufferView>`\ 。回傳目標 :ref:`GLTFBufferView<class_GLTFBufferView>` 的索引。如果 ``deduplication`` 為 ``true``\ ，則會首先在緩衝區中搜尋重複資料，否則會始終追加新位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -576,11 +576,11 @@ Appends the given byte array ``data`` to the buffers and creates a :ref:`GLTFBuf
 
 :ref:`int<class_int>` **append_gltf_node**\ (\ gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, godot_scene_node\: :ref:`Node<class_Node>`, parent_node_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GLTFState_method_append_gltf_node>`
 
-Appends the given :ref:`GLTFNode<class_GLTFNode>` to the state, and returns its new index. This can be used to export one Godot node as multiple glTF nodes, or inject new glTF nodes at import time. On import, this must be called before :ref:`GLTFDocumentExtension._generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` finishes for the parent node. On export, this must be called before :ref:`GLTFDocumentExtension._export_node()<class_GLTFDocumentExtension_private_method__export_node>` runs for the parent node.
+將給定的 :ref:`GLTFNode<class_GLTFNode>` 追加到狀態中並回傳其索引。可以用來將一個 Godot 節點匯出為多個 glTF 節點，或是在匯入時注入新的 glTF 節點。匯入時必須在父節點完成 :ref:`GLTFDocumentExtension._generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 前呼叫。匯出時父節點執行 :ref:`GLTFDocumentExtension._export_node()<class_GLTFDocumentExtension_private_method__export_node>` 前呼叫。
 
-The ``godot_scene_node`` parameter is the Godot scene node that corresponds to this glTF node. This is highly recommended to be set to a valid node, but may be ``null`` if there is no corresponding Godot scene node. One Godot scene node may be used for multiple glTF nodes, so if exporting multiple glTF nodes for one Godot scene node, use the same Godot scene node for each.
+參數 ``godot_scene_node`` 是與該 glTF 節點對應的 Godot 場景節點。強烈建議將其設為有效節點，但如果沒有對應的 Godot 場景節點的話也可以設為 ``null``\ 。一個 Godot 場景節點可以用於多個 glTF 節點，因此為單一 Godot 場景節點匯出多個 glTF 節點時，每一個都可以使用相同的 Godot 場景節點。
 
-The ``parent_node_index`` parameter is the index of the parent :ref:`GLTFNode<class_GLTFNode>` in the state. If ``-1``, the node will be a root node, otherwise the new node will be added to the parent's list of children. The index will also be written to the :ref:`GLTFNode.parent<class_GLTFNode_property_parent>` property of the new node.
+參數 ``parent_node_index`` 是狀態中父 :ref:`GLTFNode<class_GLTFNode>` 的索引。如果為 ``-1`` 則該節點為根節點，否則會將新節點加入父節點的子節點清單。該索引也會寫入新節點的 :ref:`GLTFNode.parent<class_GLTFNode_property_parent>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -606,9 +606,9 @@ The ``parent_node_index`` parameter is the index of the parent :ref:`GLTFNode<cl
 
 :ref:`Variant<class_Variant>` **get_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_GLTFState_method_get_additional_data>`
 
-Gets additional arbitrary data in this **GLTFState** instance. This can be used to keep per-file state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在 **GLTFState** 實例中取得額外的任意資料。這可用於保留在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中的每個檔案的狀態資料，這很重要，因為它們是無狀態的。
 
-The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is ``null``.
+參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名稱（不必與 glTF 檔案中的副檔名相匹配），而回傳值可以是你設定的任何東西。如果沒有設定任何東西，則回傳值為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtensi
 
 :ref:`AnimationPlayer<class_AnimationPlayer>` **get_animation_player**\ (\ anim_player_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GLTFState_method_get_animation_player>`
 
-Returns the :ref:`AnimationPlayer<class_AnimationPlayer>` node with the given index. These nodes are only used during the export process when converting Godot :ref:`AnimationPlayer<class_AnimationPlayer>` nodes to glTF animations.
+回傳具有給定索引的 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點。這些節點僅在將 Godot :ref:`AnimationPlayer<class_AnimationPlayer>` 節點轉換為 glTF 動畫時的匯出過程中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Returns the :ref:`AnimationPlayer<class_AnimationPlayer>` node with the given in
 
 :ref:`int<class_int>` **get_animation_players_count**\ (\ anim_player_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GLTFState_method_get_animation_players_count>`
 
-Returns the number of :ref:`AnimationPlayer<class_AnimationPlayer>` nodes in this **GLTFState**. These nodes are only used during the export process when converting Godot :ref:`AnimationPlayer<class_AnimationPlayer>` nodes to glTF animations.
+回傳該 **GLTFState** 中 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點的數量。這些節點僅在將 Godot :ref:`AnimationPlayer<class_AnimationPlayer>` 節點轉換為 glTF 動畫時的匯出過程中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -644,7 +644,7 @@ Returns the number of :ref:`AnimationPlayer<class_AnimationPlayer>` nodes in thi
 
 :ref:`Array<class_Array>`\[:ref:`GLTFAnimation<class_GLTFAnimation>`\] **get_animations**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_animations>`
 
-Returns an array of all :ref:`GLTFAnimation<class_GLTFAnimation>`\ s in the glTF file. When importing, these will be generated as animations in an :ref:`AnimationPlayer<class_AnimationPlayer>` node. When exporting, these will be generated from Godot :ref:`AnimationPlayer<class_AnimationPlayer>` nodes.
+回傳 glTF 檔案中所有 :ref:`GLTFAnimation<class_GLTFAnimation>` 的陣列。匯入時，這些將在一個 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點生成為動畫。匯出時，這些將從 Godot :ref:`AnimationPlayer<class_AnimationPlayer>` 節點生成。
 
 .. rst-class:: classref-item-separator
 
@@ -670,7 +670,7 @@ Returns an array of all :ref:`GLTFAnimation<class_GLTFAnimation>`\ s in the glTF
 
 :ref:`Array<class_Array>`\[:ref:`GLTFCamera<class_GLTFCamera>`\] **get_cameras**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_cameras>`
 
-Returns an array of all :ref:`GLTFCamera<class_GLTFCamera>`\ s in the glTF file. These are the cameras that the :ref:`GLTFNode.camera<class_GLTFNode_property_camera>` index refers to.
+回傳 glTF 檔案中所有 :ref:`GLTFCamera<class_GLTFCamera>` 的陣列。這些是 :ref:`GLTFNode.camera<class_GLTFNode_property_camera>` 索引參照的相機。
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns an array of all :ref:`GLTFCamera<class_GLTFCamera>`\ s in the glTF file.
 
 **已棄用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+:ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` 的已棄用無型別別名。當匯入包含未匯入的原始二進位影像（這些影像可能嵌入在二進位資料塊緩衝區中、資料 URI 中或 Godot 未匯入的單獨檔案中）的 glTF 檔案時，該選項控製影像的處理方式。
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_prop
 
 :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\] **get_images**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_images>`
 
-Gets the images of the glTF file as an array of :ref:`Texture2D<class_Texture2D>`\ s. These are the images that the :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` index refers to.
+以 :ref:`Texture2D<class_Texture2D>` 陣列的形式取得 glTF 檔案中的影像。這些是 :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` 索引參照的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Gets the images of the glTF file as an array of :ref:`Texture2D<class_Texture2D>
 
 :ref:`Array<class_Array>`\[:ref:`GLTFLight<class_GLTFLight>`\] **get_lights**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_lights>`
 
-Returns an array of all :ref:`GLTFLight<class_GLTFLight>`\ s in the glTF file. These are the lights that the :ref:`GLTFNode.light<class_GLTFNode_property_light>` index refers to.
+回傳 glTF 檔案中所有 :ref:`GLTFLight<class_GLTFLight>` 的陣列。這些是 :ref:`GLTFNode.light<class_GLTFNode_property_light>` 索引參照的燈。
 
 .. rst-class:: classref-item-separator
 
@@ -734,7 +734,7 @@ Returns an array of all :ref:`GLTFLight<class_GLTFLight>`\ s in the glTF file. T
 
 :ref:`Array<class_Array>`\[:ref:`GLTFMesh<class_GLTFMesh>`\] **get_meshes**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_meshes>`
 
-Returns an array of all :ref:`GLTFMesh<class_GLTFMesh>`\ es in the glTF file. These are the meshes that the :ref:`GLTFNode.mesh<class_GLTFNode_property_mesh>` index refers to.
+回傳 glTF 檔案中所有 :ref:`GLTFMesh<class_GLTFMesh>` 的陣列。這些是 :ref:`GLTFNode.mesh<class_GLTFNode_property_mesh>` 索引參照的網格。
 
 .. rst-class:: classref-item-separator
 
@@ -760,7 +760,7 @@ Returns an array of all :ref:`GLTFMesh<class_GLTFMesh>`\ es in the glTF file. Th
 
 :ref:`Array<class_Array>`\[:ref:`GLTFNode<class_GLTFNode>`\] **get_nodes**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_nodes>`
 
-Returns an array of all :ref:`GLTFNode<class_GLTFNode>`\ s in the glTF file. These are the nodes that :ref:`GLTFNode.children<class_GLTFNode_property_children>` and :ref:`root_nodes<class_GLTFState_property_root_nodes>` refer to. This includes nodes that may not be generated in the Godot scene, or nodes that may generate multiple Godot scene nodes.
+回傳 glTF 檔案中所有 :ref:`GLTFNode<class_GLTFNode>` 的陣列。這些是 :ref:`GLTFNode.children<class_GLTFNode_property_children>` 和 :ref:`root_nodes<class_GLTFState_property_root_nodes>` 參照的節點。這包括可能不會在 Godot 場景中生成的節點，或者可能生成多個 Godot 場景節點的節點。
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ Returns an array of all :ref:`GLTFNode<class_GLTFNode>`\ s in the glTF file. The
 
 :ref:`Array<class_Array>`\[:ref:`GLTFSkeleton<class_GLTFSkeleton>`\] **get_skeletons**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_skeletons>`
 
-Returns an array of all :ref:`GLTFSkeleton<class_GLTFSkeleton>`\ s in the glTF file. These are the skeletons that the :ref:`GLTFNode.skeleton<class_GLTFNode_property_skeleton>` index refers to.
+回傳 glTF 檔案中所有 :ref:`GLTFSkeleton<class_GLTFSkeleton>` 的陣列。這些是 :ref:`GLTFNode.skeleton<class_GLTFNode_property_skeleton>` 索引參照的骨架。
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Returns an array of all :ref:`GLTFSkeleton<class_GLTFSkeleton>`\ s in the glTF f
 
 :ref:`Array<class_Array>`\[:ref:`GLTFSkin<class_GLTFSkin>`\] **get_skins**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_skins>`
 
-Returns an array of all :ref:`GLTFSkin<class_GLTFSkin>`\ s in the glTF file. These are the skins that the :ref:`GLTFNode.skin<class_GLTFNode_property_skin>` index refers to.
+回傳 glTF 檔案中所有 :ref:`GLTFSkin<class_GLTFSkin>` 的陣列。這些是 :ref:`GLTFNode.skin<class_GLTFNode_property_skin>` 索引參照的皮膚。
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ Returns an array of all :ref:`GLTFSkin<class_GLTFSkin>`\ s in the glTF file. The
 
 :ref:`Array<class_Array>`\[:ref:`GLTFTextureSampler<class_GLTFTextureSampler>`\] **get_texture_samplers**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_texture_samplers>`
 
-Retrieves the array of texture samplers that are used by the textures contained in the glTF.
+檢索 glTF 中包含的紋理所使用的紋理取樣器的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -874,9 +874,9 @@ Retrieves the array of texture samplers that are used by the textures contained 
 
 |void| **set_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`, additional_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GLTFState_method_set_additional_data>`
 
-Sets additional arbitrary data in this **GLTFState** instance. This can be used to keep per-file state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在這個 **GLTFState** 實例中設定額外的任意資料。這可以用來保留在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中的每個檔案的狀態資料，這很重要，因為它們是無狀態的。
 
-The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
+第一個參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名稱（不必與 glTF 檔案中的副檔名相匹配），第二個參數可以是任何你想要的東西。
 
 .. rst-class:: classref-item-separator
 
@@ -928,7 +928,7 @@ The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentE
 
 **已棄用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+:ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` 的已棄用無型別別名。當匯入包含未匯入的原始二進位影像（這些影像可能嵌入在二進位資料塊緩衝區中、資料 URI 中或 Godot 未匯入的單獨檔案中）的 glTF 檔案時，該選項控製影像的處理方式。
 
 .. rst-class:: classref-item-separator
 
@@ -940,7 +940,7 @@ Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_prop
 
 |void| **set_images**\ (\ images\: :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\]\ ) :ref:`🔗<class_GLTFState_method_set_images>`
 
-設定狀態中以 :ref:`Texture2D<class_Texture2D>` 陣列形式儲存的圖像。可以在匯出時使用。這些是 :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` 索引所引用的圖像。
+設定狀態中以 :ref:`Texture2D<class_Texture2D>` 陣列形式儲存的影像。可以在匯出時使用。這些是 :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` 索引所引用的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_prop
 
 |void| **set_texture_samplers**\ (\ texture_samplers\: :ref:`Array<class_Array>`\[:ref:`GLTFTextureSampler<class_GLTFTextureSampler>`\]\ ) :ref:`🔗<class_GLTFState_method_set_texture_samplers>`
 
-Sets the array of texture samplers that are used by the textures contained in the glTF.
+設定由 glTF 中包含的紋理所使用的紋理取樣器的陣列。
 
 .. rst-class:: classref-item-separator
 

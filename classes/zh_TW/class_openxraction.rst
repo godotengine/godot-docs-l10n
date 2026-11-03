@@ -14,13 +14,13 @@ OpenXR 動作。
 說明
 ----
 
-This resource defines an OpenXR action. Actions can be used both for inputs (buttons, joysticks, triggers, etc.) and outputs (haptics).
+該資源定義了一個 OpenXR 動作。動作可用於輸入（按鈕、操縱桿、觸發器等）和輸出（觸覺）。
 
-OpenXR performs automatic conversion between action type and input type whenever possible. An analog trigger bound to a boolean action will thus return ``false`` if the trigger is depressed and ``true`` if pressed fully.
+只要有可能，OpenXR 就會在動作型別和輸入型別之間執行自動轉換。因此，如果觸發器被按下，則綁定到一個布林動作的模擬觸發器將回傳 ``false``\ ，如果完全按下則回傳 ``true``\ 。
 
-Actions are not directly bound to specific devices, instead OpenXR recognizes a limited number of top level paths that identify devices by usage. We can restrict which devices an action can be bound to by these top level paths. For instance an action that should only be used for hand held controllers can have the top level paths "/user/hand/left" and "/user/hand/right" associated with them. See the `reserved path section in the OpenXR specification <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-reserved>`__ for more info on the top level paths.
+動作並不被直接綁定到特定裝置，相反，OpenXR 識別了有限數量的頂級路徑，這些路徑按用途識別裝置。我們可以通過這些頂級路徑來限制一個動作可以被綁定到哪些裝置上。例如，一個只套用至手持控制器的動作，可以具有與其關聯的頂級路徑“/user/hand/left”和“/user/hand/right”。有關頂級路徑的詳細資訊，請參閱 OpenXR 規範中的\ `保留路徑部分 <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-reserved>`__\ 。
 
-Note that the name of the resource is used to register the action with.
+注意，資源的名字是用來注冊動作的。
 
 .. rst-class:: classref-reftable-group
 

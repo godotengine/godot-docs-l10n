@@ -135,9 +135,9 @@ Curve2D
 
 :ref:`Vector2<class_Vector2>` **point_{index}/in** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+通向 ``index`` 處頂點的那個控制點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/out** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+從 ``index`` 處頂點引出的那個控制點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+位於 ``index`` 處的那個頂點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -234,7 +234,7 @@ The position of for the vertex at ``index``.
 
 返回最接近 ``to_point`` 的偏移量。該偏移量被用於 :ref:`sample_baked()<class_Curve2D_method_sample_baked>`\ 。
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` 必須在該曲線的區域空間中。
 
 .. rst-class:: classref-item-separator
 
@@ -246,9 +246,9 @@ The position of for the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **get_closest_point**\ (\ to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_closest_point>`
 
-返回已烘焙的線段上最接近 ``to_point`` 的點（在曲線的局部空間中）。
+返回已烘焙的線段上最接近 ``to_point`` 的點（在曲線的區域空間中）。
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` 必須在該曲線的區域空間中。
 
 .. rst-class:: classref-item-separator
 
@@ -308,9 +308,9 @@ The position of for the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_sample>`
 
-Returns the position between the vertex ``idx`` and the vertex ``idx + 1``, where ``t`` controls if the point is the first vertex (``t = 0.0``), the last vertex (``t = 1.0``), or in between. Values of ``t`` outside the range (``0.0 <= t <= 1.0``) give strange, but predictable results.
+回傳頂點 ``idx`` 和頂點 ``idx + 1`` 之間的位置，其中 ``t`` 控制該點是否為第一個頂點（\ ``t = 0.0``\ ）、最後一個頂點（\ ``t = 1.0``\ ）或介於兩者之間。超出範圍（\ ``0.0 <= t <= 1.0``\ ）的 ``t`` 的值會給出奇怪但可預測的結果。
 
-If ``idx`` is out of bounds it is truncated to the first or last vertex, and ``t`` is ignored. If the curve has no points, the function sends an error to the console, and returns ``(0, 0)``.
+如果 ``idx`` 越界，它將被截斷到第一個或最後一個頂點，而 ``t`` 將被忽略。如果曲線沒有點，則該函式將向控制台發送一個錯誤，並回傳 ``(0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -338,14 +338,14 @@ If ``idx`` is out of bounds it is truncated to the first or last vertex, and ``t
 
 :ref:`Transform2D<class_Transform2D>` **sample_baked_with_rotation**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve2D_method_sample_baked_with_rotation>`
 
-Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns :ref:`Transform2D<class_Transform2D>` that includes a rotation along the curve, with :ref:`Transform2D.origin<class_Transform2D_property_origin>` as the point position and the :ref:`Transform2D.x<class_Transform2D_property_x>` vector pointing in the direction of the path at that point. Returns an empty transform if the length of the curve is ``0``.
+與 :ref:`sample_baked()<class_Curve2D_method_sample_baked>` 類似，但回傳的是 :ref:`Transform2D<class_Transform2D>`\ ，它包含沿曲線的旋轉，以 :ref:`Transform2D.origin<class_Transform2D_property_origin>` 為點的位置，\ :ref:`Transform2D.x<class_Transform2D_property_x>` 向量指向該點的路徑方向。如果曲線長度為 ``0``\ ，則回傳一個空變換。
 
 ::
 
     var baked = curve.sample_baked_with_rotation(offset)
-    # The returned Transform2D can be set directly.
+    # 回傳的 Transform2D 可以被直接設定。
     transform = baked
-    # You can also read the origin and rotation separately from the returned Transform2D.
+    # 還可以從回傳的 Transform2D 中單獨讀取原點和旋轉。
     position = baked.get_origin()
     rotation = baked.get_rotation()
 
@@ -371,7 +371,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 |void| **set_point_in**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Curve2D_method_set_point_in>`
 
-設定通往頂點 ``idx`` 的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤信息。位置相對於頂點。
+設定通往頂點 ``idx`` 的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤訊息。位置相對於頂點。
 
 .. rst-class:: classref-item-separator
 

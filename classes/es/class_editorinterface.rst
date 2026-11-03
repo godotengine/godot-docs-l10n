@@ -384,7 +384,7 @@ Devuelve la raíz de la escena editada (actual) :ref:`Node<class_Node>`.
 
 :ref:`String<class_String>` **get_editor_language**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_language>`
 
-Returns the language currently used for the editor interface.
+Devuelve el idioma utilizado actualmente para la interfaz del editor.
 
 .. rst-class:: classref-item-separator
 
@@ -862,7 +862,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog**\ (\ dialog\: :ref:`Window<class_Window>`, rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog>`
 
-Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de usuario con :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
 También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
@@ -876,7 +876,7 @@ También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_s
 
 |void| **popup_dialog_centered**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered>`
 
-Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de usuario con :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
 También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
@@ -890,7 +890,7 @@ También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_s
 
 |void| **popup_dialog_centered_clamped**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_clamped>`
 
-Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de usuario con :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
 También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
@@ -904,7 +904,7 @@ También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_s
 
 |void| **popup_dialog_centered_ratio**\ (\ dialog\: :ref:`Window<class_Window>`, ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_ratio>`
 
-Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de usuario con :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
 También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 

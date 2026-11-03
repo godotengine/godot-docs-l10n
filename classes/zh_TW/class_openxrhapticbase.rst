@@ -9,14 +9,14 @@ OpenXRHapticBase
 
 **被繼承：** :ref:`OpenXRHapticVibration<class_OpenXRHapticVibration>`
 
-OpenXR Haptic feedback base class.
+OpenXR 觸覺回饋基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This is a base class for haptic feedback resources.
+這是觸覺回饋資源的基底類別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

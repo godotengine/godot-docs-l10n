@@ -7,18 +7,18 @@ XRControllerTracker
 
 **繼承：** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A tracked controller.
+追蹤控制器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An instance of this object represents a controller that is tracked.
+該物件的實例表示被追蹤的控制器。
 
-As controllers are turned on and the :ref:`XRInterface<class_XRInterface>` detects them, instances of this object are automatically added to this list of active tracking objects accessible through the :ref:`XRServer<class_XRServer>`.
+當控制器被打開，並且 :ref:`XRInterface<class_XRInterface>` 檢測到它們時，該物件的實例會自動被新增到可通過 :ref:`XRServer<class_XRServer>` 存取的活動追蹤物件清單中。
 
-The :ref:`XRController3D<class_XRController3D>` consumes objects of this type and should be used in your project.
+\ :ref:`XRController3D<class_XRController3D>` 使用該型別的物件，應在你的專案中使用。
 
 .. rst-class:: classref-introduction-group
 

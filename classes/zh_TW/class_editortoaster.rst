@@ -7,16 +7,16 @@ EditorToaster
 
 **繼承：** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Manages toast notifications within the editor.
+管理編輯器中的 Toast 訊息框通知。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This object manages the functionality and display of toast notifications within the editor, ensuring immediate and informative alerts are presented to the user.
+該物件管理編輯器內 Toast 通知的功能和顯示，確保立即向使用者提供資訊豐富的警報。
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_toaster()<class_EditorInterface_method_get_editor_toaster>`.
+\ **注意：**\ 這個類不應該直接實例化。請改用 :ref:`EditorInterface.get_editor_toaster()<class_EditorInterface_method_get_editor_toaster>` 存取單例。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ enum **Severity**: :ref:`🔗<enum_EditorToaster_Severity>`
 
 :ref:`Severity<enum_EditorToaster_Severity>` **SEVERITY_INFO** = ``0``
 
-Toast will display with an INFO severity.
+顯示 Toast 時使用 INFO 嚴重度。
 
 .. _class_EditorToaster_constant_SEVERITY_WARNING:
 
@@ -59,7 +59,7 @@ Toast will display with an INFO severity.
 
 :ref:`Severity<enum_EditorToaster_Severity>` **SEVERITY_WARNING** = ``1``
 
-Toast will display with a WARNING severity and have a corresponding color.
+顯示 Toast 時使用 WARNING 嚴重度，有與之對應的顏色。
 
 .. _class_EditorToaster_constant_SEVERITY_ERROR:
 
@@ -67,7 +67,7 @@ Toast will display with a WARNING severity and have a corresponding color.
 
 :ref:`Severity<enum_EditorToaster_Severity>` **SEVERITY_ERROR** = ``2``
 
-Toast will display with an ERROR severity and have a corresponding color.
+顯示 Toast 時使用 ERROR 嚴重度，有與之對應的顏色。
 
 .. rst-class:: classref-section-separator
 
@@ -84,7 +84,7 @@ Toast will display with an ERROR severity and have a corresponding color.
 
 |void| **push_toast**\ (\ message\: :ref:`String<class_String>`, severity\: :ref:`Severity<enum_EditorToaster_Severity>` = 0, tooltip\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_EditorToaster_method_push_toast>`
 
-Pushes a toast notification to the editor for display.
+將需要顯示的 Toast 通知推送給編輯器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

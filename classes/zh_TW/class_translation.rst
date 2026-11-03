@@ -16,9 +16,9 @@ Translation
 說明
 ----
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** 將一組字串映射到其各自的翻譯，並提供一些方便的複數形式處理方法。
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+\ **Translation** 包含多條訊息。訊息通過其情境和未翻譯的字串來識別。與 `gettext <https://www.gnu.org/software/gettext/>`__ 不同，在 Godot 中使用空情境字串意味著不使用任何情境。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ A **Translation** consists of messages. A message is identified by its context a
 
 - :doc:`將遊戲國際化 <../tutorials/i18n/internationalizing_games>`
 
-- :doc:`Localization using gettext <../tutorials/i18n/localization_using_gettext>`
+- :doc:`使用 gettext 進行在地化 <../tutorials/i18n/localization_using_gettext>`
 
 - :doc:`區域設定 <../tutorials/i18n/locales>`
 
@@ -112,9 +112,9 @@ A **Translation** consists of messages. A message is identified by its context a
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+要強制執行的複數規則字串。有關範例和更多資訊，請參閱 `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__\ 。
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+如果為空或無效，則使用 :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` 中的預設複數規則。英文複數規則被用作回退方案。
 
 .. rst-class:: classref-section-separator
 
@@ -155,7 +155,7 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_message>`
 
-如果不存在，則新增一條消息，後跟其翻譯。
+如果不存在，則新增一條訊息，後跟其翻譯。
 
 可以使用一個額外的本文，來指定翻譯本文或區分多義詞。
 
@@ -169,9 +169,9 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+如果不存在相應的複數形式翻譯，則新增一條，後跟其翻譯。
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+可以使用額外的情境來指定翻譯情境或區分多義詞。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_list>`
 
-Returns the keys of all messages, that is, the context and untranslated strings of each message.
+回傳所有訊息的鍵，即每條訊息的情境和未翻譯的字串。
 
-\ **Note:** If a message does not use a context, the corresponding element is the untranslated string. Otherwise, the corresponding element is the context and untranslated string separated by the EOT character (``U+0004``). This is done for compatibility purposes.
+\ **注意：**\ 如果訊息不使用情境，則對應的元素為未翻譯的字串。否則，相應的元素是情境和未翻譯的字串，以 EOT 字元（\ ``U+0004``\ ）分隔。這樣做是為了保持相容性。
 
 ::
 
@@ -229,11 +229,11 @@ Returns the keys of all messages, that is, the context and untranslated strings 
         var p = key.find("\u0004")
         if p == -1:
             var untranslated = key
-            print("Message %s" % untranslated)
+            print("訊息 %s" % untranslated)
         else:
             var context = key.substr(0, p)
             var untranslated = key.substr(p + 1)
-            print("Message %s with context %s" % [untranslated, context])
+            print("訊息 %s 其情境 %s" % [untranslated, context])
 
 .. rst-class:: classref-item-separator
 
@@ -245,11 +245,11 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 :ref:`StringName<class_StringName>` **get_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, src_plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Translation_method_get_plural_message>`
 
-Returns a message's translation involving plurals.
+回傳一條訊息涉及複數的翻譯。
 
-The number ``n`` is the number or quantity of the plural object. It will be used to guide the translation system to fetch the correct plural form for the selected language.
+數字 ``n`` 是複數物件的數目或數量。它將被用於指導翻譯系統為所選語言取得正確的複數形式。
 
-\ **Note:** Plurals are only supported in :doc:`gettext-based translations (PO) <../tutorials/i18n/localization_using_gettext>`, not CSV.
+\ **注意：**\ 僅\ :doc:`基於 gettext 的翻譯（PO） <../tutorials/i18n/localization_using_gettext>`\ 支援複數，CSV 不支援。
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ The number ``n`` is the number or quantity of the plural object. It will be used
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+回傳所有已翻譯的字串。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

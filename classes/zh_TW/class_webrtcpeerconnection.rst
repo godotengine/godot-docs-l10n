@@ -16,26 +16,26 @@ WebRTCPeerConnection
 說明
 ----
 
-A WebRTC connection between the local computer and a remote peer. Provides an interface to connect, maintain, and monitor the connection.
+本機電腦和遠端對等端之間的 WebRTC 連接。提供一個介面來連接、維護和監控連接。
 
-Setting up a WebRTC connection between two peers may not seem a trivial task, but it can be broken down into 3 main steps:
+在兩個對等端之間建立 WebRTC 連接看上去可能不是一項簡單的任務，但它可以分解為 3 個主要步驟。
 
-- The peer that wants to initiate the connection (``A`` from now on) creates an offer and sends it to the other peer (``B`` from now on).
+- 想要啟動連接的對等端（以下簡稱 ``A``\ ）建立一個提交，並將其發送給另一個對等端（以下簡稱 ``B``\ ）。
 
-- ``B`` receives the offer, generates an answer, and sends it to ``A``.
+- ``B`` 收到要約，生成回答，並將其發送給 ``A``\ 。
 
-- ``A`` and ``B`` then generate and exchange ICE candidates with each other.
+- ``A`` 和 ``B`` 然後生成並相互交換 ICE 候選。
 
-After these steps, the connection should be established. Refer to the linked tutorials for details.
+在這些步驟之後，連接應該就建立起來了。有關詳細資訊，請參閱連結的教學。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`WebRTC documentation <../tutorials/networking/webrtc>`
+- :doc:`WebRTC 文件 <../tutorials/networking/webrtc>`
 
-- :doc:`高級多人遊戲 <../tutorials/networking/high_level_multiplayer>`
+- :doc:`進階多人遊戲 <../tutorials/networking/high_level_multiplayer>`
 
 .. rst-class:: classref-reftable-group
 
@@ -86,7 +86,7 @@ After these steps, the connection should be established. Refer to the linked tut
 
 **data_channel_received**\ (\ channel\: :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ ) :ref:`🔗<class_WebRTCPeerConnection_signal_data_channel_received>`
 
-當收到一個新的帶內通道時發出，即在通道是用\ ``negotiated: false``\ （默認）。
+當收到一個新的帶內通道時發出，即在通道是用\ ``negotiated: false``\ （預設）。
 
 該物件將是\ :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ 的一個實例。你必須保持它的引用，否則它將被自動關閉。參閱\ :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ 。
 
@@ -193,7 +193,7 @@ enum **GatheringState**: :ref:`🔗<enum_WebRTCPeerConnection_GatheringState>`
 
 :ref:`GatheringState<enum_WebRTCPeerConnection_GatheringState>` **GATHERING_STATE_NEW** = ``0``
 
-對等體連接剛剛建立，還沒有做任何聯網工作。
+對等體連接剛剛建立，還沒有做任何連網工作。
 
 .. _class_WebRTCPeerConnection_constant_GATHERING_STATE_GATHERING:
 
@@ -209,7 +209,7 @@ ICE 代理正在收集候選連接。
 
 :ref:`GatheringState<enum_WebRTCPeerConnection_GatheringState>` **GATHERING_STATE_COMPLETE** = ``2``
 
-ICE 代理已完成候選連接的收集。如果發生了需要收集新候選的情況，例如新新增了接口、新新增了 ICE 伺服器，則會返回收集狀態，進行候選項的收集。
+ICE 代理已完成候選連接的收集。如果發生了需要收集新候選的情況，例如新新增了介面、新新增了 ICE 伺服器，則會返回收集狀態，進行候選項的收集。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **SIGNALING_STATE_HAVE_REMOTE_OFFER** = ``2``
 
-遠端對等體已建立邀約，並將其使用訊號伺服器傳遞給了本地對等體，本地對等體已調用 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 將邀約設定為遠程描述。
+遠端對等體已建立邀約，並將其使用訊號伺服器傳遞給了本地對等體，本地對等體已調用 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 將邀約設定為遠端描述。
 
 .. _class_WebRTCPeerConnection_constant_SIGNALING_STATE_HAVE_LOCAL_PRANSWER:
 
@@ -356,7 +356,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`ConnectionState<enum_WebRTCPeerConnection_ConnectionState>` **get_connection_state**\ (\ ) |const| :ref:`🔗<class_WebRTCPeerConnection_method_get_connection_state>`
 
-Returns the connection state.
+回傳連接狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Returns the connection state.
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **get_signaling_state**\ (\ ) |const| :ref:`🔗<class_WebRTCPeerConnection_method_get_signaling_state>`
 
-Returns the signaling state on the local end of the connection while connecting or reconnecting to another peer.
+連接或重新連接到另一個對等端時，回傳連接本機端的信令狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -401,10 +401,10 @@ Returns the signaling state on the local end of the connection while connecting 
     {
         "iceServers": [
             {
-                "urls": [ "stun:stun.example.com:3478" ], # 若干 STUN 服務器。
+                "urls": [ "stun:stun.example.com:3478" ], # 若干 STUN 伺服器。
             },
             {
-                "urls": [ "turn:turn.example.com:3478" ], # 若干 TURN 服務器。
+                "urls": [ "turn:turn.example.com:3478" ], # 若干 TURN 伺服器。
                 "username": "a_username", # TURN 伺服器的使用者名，選填。
                 "credential": "a_password", # TURN 伺服器的密碼，選填。
             }
@@ -459,7 +459,7 @@ Returns the signaling state on the local end of the connection while connecting 
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_remote_description**\ (\ type\: :ref:`String<class_String>`, sdp\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_method_set_remote_description>`
 
-設定遠程對等體的 SDP 描述。套用遠端對等體產生的值來呼叫，並通過訊號伺服器接收。
+設定遠端對等體的 SDP 描述。套用遠端對等體產生的值來呼叫，並通過訊號伺服器接收。
 
 如果 ``type`` 為 ``"offer"``\ ，對等體將發出 :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 並給出適當的應答。
 

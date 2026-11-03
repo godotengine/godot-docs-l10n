@@ -7,7 +7,7 @@ AccessibilityServer
 
 **Hérite de :** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+Une interface serveur pour les menus natifs d'OS.
 
 .. rst-class:: classref-reftable-group
 
@@ -334,7 +334,7 @@ Spin box element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_FIELD** = ``18``
 
-Editable text field element.
+Élément de champ de texte modifiable.
 
 .. _class_AccessibilityServer_constant_ROLE_MULTILINE_TEXT_FIELD:
 
@@ -342,7 +342,7 @@ Editable text field element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MULTILINE_TEXT_FIELD** = ``19``
 
-Multiline editable text field element.
+Élément de champ de texte multiligne modifiable.
 
 .. _class_AccessibilityServer_constant_ROLE_COLOR_PICKER:
 
@@ -406,7 +406,7 @@ Table/tree column header element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TREE** = ``27``
 
-Tree view element.
+Élément d'affichage d'arborescence.
 
 .. _class_AccessibilityServer_constant_ROLE_TREE_ITEM:
 
@@ -454,7 +454,7 @@ List view item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TAB_BAR** = ``33``
 
-Tab bar element.
+Élément de barre d'onglets.
 
 .. _class_AccessibilityServer_constant_ROLE_TAB:
 
@@ -478,7 +478,7 @@ Tab panel element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_MENU_BAR** = ``36``
 
-Menu bar element.
+Élément de barre de menu.
 
 .. _class_AccessibilityServer_constant_ROLE_MENU:
 
@@ -652,7 +652,7 @@ Element require user input.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_VISITED** = ``3``
 
-Element is a visited link.
+L'élément est un lien visité.
 
 .. _class_AccessibilityServer_constant_FLAG_BUSY:
 
@@ -684,7 +684,7 @@ Element allows touches to be passed through when a screen reader is in touch exp
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_READONLY** = ``7``
 
-Element is text field with selectable but read-only text.
+L'élément est un champ texte avec un texte pouvant être sélectionné mais pas modifié.
 
 .. _class_AccessibilityServer_constant_FLAG_DISABLED:
 
@@ -700,7 +700,7 @@ L'élément est désactivé.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_CLIPS_CHILDREN** = ``9``
 
-Element clips children.
+L'élément coupe ses enfants.
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ enum **AccessibilityScrollUnit**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_ITEM** = ``0``
 
-The amount by which to scroll. A single item of a list, line of text.
+La quantité de laquelle faire défiler. Un seul élément d'une liste, une ligne de texte.
 
 .. _class_AccessibilityServer_constant_SCROLL_UNIT_PAGE:
 
@@ -962,7 +962,7 @@ The amount by which to scroll. A single item of a list, line of text.
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_PAGE** = ``1``
 
-The amount by which to scroll. A single page.
+La quantité de laquelle faire défiler. Une seule page.
 
 .. rst-class:: classref-item-separator
 
@@ -1293,7 +1293,7 @@ Ajoute un élément qui fait partie du même groupe radio.
 
 |void| **update_set_active_descendant**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_active_descendant>`
 
-Adds an element that is an active descendant of this element.
+Ajoute un élément qui est un descendant actif de cet élément.
 
 .. rst-class:: classref-item-separator
 

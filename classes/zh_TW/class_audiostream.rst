@@ -16,7 +16,7 @@ AudioStream
 說明
 ----
 
-Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
+音訊流的基底類別。音訊流用於播放音效和音樂，支援 WAV（通過 :ref:`AudioStreamWAV<class_AudioStreamWAV>`\ ）、Ogg（通過 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ ）和 MP3（通過 :ref:`AudioStreamMP3<class_AudioStreamMP3>`\ ）檔案格式。
 
 .. rst-class:: classref-introduction-group
 
@@ -259,7 +259,7 @@ Base class for audio streams. Audio streams are used for sound effects and music
 
 :ref:`float<class_float>` **get_length**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_get_length>`
 
-Returns the length of the audio stream in seconds. If this stream is an :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, returns the length of the last played stream. If this stream has an indefinite length (such as for :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` and :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`), returns ``0.0``.
+回傳音訊流的長度，單位為秒。如果是 :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`\ ，則回傳最近一次播放的音訊流的長度。如果音訊流的長度無限（如 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` 和 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`\ ）則回傳 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 

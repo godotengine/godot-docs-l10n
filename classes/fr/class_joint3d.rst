@@ -23,7 +23,7 @@ Classe de base abstraite pour toutes les liaisons physiques 3D. Les liaisons 3D 
 Tutoriels
 ------------------
 
-- `Démo 3D « Truck Town » <https://godotengine.org/asset-library/asset/2752>`__
+- `Démo 3D « Truck Town » <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

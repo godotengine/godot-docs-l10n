@@ -10,14 +10,14 @@ GridMapEditorPlugin
 
 **繼承：** :ref:`EditorPlugin<class_EditorPlugin>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Editor for :ref:`GridMap<class_GridMap>` nodes.
+:ref:`GridMap<class_GridMap>` 節點的編輯器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-GridMapEditorPlugin provides access to the :ref:`GridMap<class_GridMap>` editor functionality.
+GridMapEditorPlugin 提供對 :ref:`GridMap<class_GridMap>` 編輯器功能的存取。
 
 .. rst-class:: classref-reftable-group
 
@@ -60,7 +60,7 @@ GridMapEditorPlugin provides access to the :ref:`GridMap<class_GridMap>` editor 
 
 |void| **clear_selection**\ (\ ) :ref:`🔗<class_GridMapEditorPlugin_method_clear_selection>`
 
-Deselects any currently selected cells.
+取消選擇目前選中的單元格。
 
 .. rst-class:: classref-item-separator
 
@@ -72,7 +72,7 @@ Deselects any currently selected cells.
 
 :ref:`GridMap<class_GridMap>` **get_current_grid_map**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_current_grid_map>`
 
-Returns the :ref:`GridMap<class_GridMap>` node currently edited by the grid map editor.
+回傳網格地圖編輯器目前編輯的 :ref:`GridMap<class_GridMap>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ Returns the :ref:`GridMap<class_GridMap>` node currently edited by the grid map 
 
 :ref:`Array<class_Array>` **get_selected_cells**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selected_cells>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the selected cells' coordinates.
+回傳 :ref:`Vector3i<class_Vector3i>` 陣列，表示選中單元格的座標。
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the selected cells' 
 
 :ref:`int<class_int>` **get_selected_palette_item**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selected_palette_item>`
 
-Returns the index of the selected :ref:`MeshLibrary<class_MeshLibrary>` item in the grid map editor's palette or ``-1`` if no item is selected.
+回傳網格地圖編輯器調色板中選中的 :ref:`MeshLibrary<class_MeshLibrary>` 項目的索引號，未選中項目時回傳 ``-1``\ 。
 
-\ **Note:** The indices might not be in the same order as they appear in the editor's interface.
+\ **注意：**\ 索引可能與編輯器介面中展示的順序不一致。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Returns the index of the selected :ref:`MeshLibrary<class_MeshLibrary>` item in 
 
 :ref:`AABB<class_AABB>` **get_selection**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selection>`
 
-Returns the cell coordinate bounds of the current selection. Use :ref:`has_selection()<class_GridMapEditorPlugin_method_has_selection>` to check if there is an active selection.
+回傳目前選中項的單元格座標邊界。請使用 :ref:`has_selection()<class_GridMapEditorPlugin_method_has_selection>` 檢查是否存在選中項。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Returns the cell coordinate bounds of the current selection. Use :ref:`has_selec
 
 :ref:`bool<class_bool>` **has_selection**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_has_selection>`
 
-Returns ``true`` if there are selected cells.
+如果存在選中的單元格，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -134,9 +134,9 @@ Returns ``true`` if there are selected cells.
 
 |void| **set_selected_palette_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_set_selected_palette_item>`
 
-Selects the :ref:`MeshLibrary<class_MeshLibrary>` item with the given index in the grid map editor's palette. If a negative index is given, no item will be selected. If a value greater than the last index is given, the last item will be selected.
+選中網格地圖編輯器調色板中索引號對應的 :ref:`MeshLibrary<class_MeshLibrary>` 項目。如果給定的索引為負數，則不選中任何項目。如果給定值超過最後一個索引，則選中最後一個項目。
 
-\ **Note:** The indices might not be in the same order as they appear in the editor's interface.
+\ **注意：**\ 索引可能與編輯器介面中展示的順序不一致。
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Selects the :ref:`MeshLibrary<class_MeshLibrary>` item with the given index in t
 
 |void| **set_selection**\ (\ begin\: :ref:`Vector3i<class_Vector3i>`, end\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_GridMapEditorPlugin_method_set_selection>`
 
-Selects the cells inside the given bounds from ``begin`` to ``end``.
+選中從 ``begin`` 到 ``end`` 範圍內的單元格。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

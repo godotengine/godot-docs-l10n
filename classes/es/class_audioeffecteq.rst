@@ -9,9 +9,9 @@ AudioEffectEQ
 
 **Heredado por:** :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`
 
-Base class for audio equalizers (EQ). Gives you control over frequencies.
+Clase base para ecualizadores de audio (EQ). Permite controlar las frecuencias.
 
-Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, or :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` don't fit your needs.
+Úsalo para crear un ecualizador personalizado si :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>` o :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` no se ajustan a tus necesidades.
 
 .. rst-class:: classref-introduction-group
 

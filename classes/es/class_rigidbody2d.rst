@@ -410,7 +410,7 @@ La velocidad de rotación del cuerpo en *radianes* por segundo.
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-If ``true``, the body can enter sleep mode when there is no movement. See :ref:`sleeping<class_RigidBody2D_property_sleeping>`.
+Si es ``true``, el cuerpo puede entrar en modo de suspensión cuando no hay movimiento. Véase :ref:`sleeping<class_RigidBody2D_property_sleeping>`.
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ The body's linear velocity in pixels per second. Can be used sporadically, but *
 - |void| **set_lock_rotation_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_lock_rotation_enabled**\ (\ )
 
-If ``true``, the body cannot rotate. Gravity and forces only apply linear movement.
+Si es ``true``, el cuerpo no puede rotar. La gravedad y las fuerzas solo generan movimiento lineal.
 
 .. rst-class:: classref-item-separator
 
@@ -946,9 +946,9 @@ Aplica un impulso de rotación al cuerpo sin afectar la posición.
 
 :ref:`Array<class_Array>`\[:ref:`Node2D<class_Node2D>`\] **get_colliding_bodies**\ (\ ) |const| :ref:`🔗<class_RigidBody2D_method_get_colliding_bodies>`
 
-Returns a list of the bodies colliding with this one. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions.
+Devuelve una lista de los cuerpos que colisionan con este. Requiere que :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` sea ``true``, y que :ref:`contacts_reported<class_RigidBody2D_property_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of collisions is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta prueba no es inmediato después de mover los objetos. Para un mejor rendimiento, la lista de superposiciones se actualiza una vez por cuadro y antes del paso de física. Considera la posibilidad de utilizar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 

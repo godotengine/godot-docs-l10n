@@ -14,7 +14,7 @@ DampedSpringJoint2D
 說明
 ----
 
-A physics joint that connects two 2D physics bodies with a spring-like force. This behaves like a spring that always wants to stretch to a given length.
+通過類似彈簧的力連接兩個 2D 物理物體的物理關節。這表現得像一個總是想拉伸到給定長度的彈簧。
 
 .. rst-class:: classref-reftable-group
 
@@ -54,7 +54,7 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-The spring joint's damping ratio. A value between ``0`` and ``1``. When the two bodies move into different directions the system tries to align them to the spring axis again. A high :ref:`damping<class_DampedSpringJoint2D_property_damping>` value forces the attached bodies to align faster.
+彈簧關節的阻尼比。值在 ``0`` 和 ``1`` 之間。當兩個實體移動到不同的方向時，系統會嘗試將它們再次對準彈簧軸。高的 :ref:`damping<class_DampedSpringJoint2D_property_damping>` 值迫使連接的實體更快地對齊。
 
 .. rst-class:: classref-item-separator
 

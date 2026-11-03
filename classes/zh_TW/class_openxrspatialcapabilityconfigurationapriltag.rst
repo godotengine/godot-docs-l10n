@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAprilTag
 
 **繼承：** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for April tag markers.
+用於 AprilTag 標記的設定標頭。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Configuration header for April tag markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect April tags.
+用於 AprilTag 標記的設定標頭。將它傳遞給 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 即可建立一個可以檢測 AprilTag 標記的空間情境。
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_16H5** = ``1``
 
-4 by 4 bits, minimum Hamming distance between any two codes = 5, 30 codes.
+4 位元 x 4 位元，任意兩個碼之間的最小漢明距離 = 5，30 個碼。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_25H9:
 
@@ -71,7 +71,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_25H9** = ``2``
 
-5 by 5 bits, minimum Hamming distance between any two codes = 9, 35 codes.
+5 位元 x 5 位元，任意兩個碼之間的最小漢明距離 = 9，35 個碼。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_36H10:
 
@@ -87,7 +87,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_36H11** = ``4``
 
-6 by 6 bits, minimum Hamming distance between any two codes = 11, 587 codes.
+6 位元 x 6 位元，任意兩個碼之間的最小漢明距離 = 11，587 個碼。
 
 .. rst-class:: classref-section-separator
 
@@ -109,9 +109,9 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 - |void| **set_april_dict**\ (\ value\: :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>`\ )
 - :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **get_april_dict**\ (\ )
 
-Dictionary to use to decode April tags.
+用於解碼 April 標籤的字典。
 
-\ **Note:** Must be set before using this configuration to create a spatial context.
+\ **注意：**\ 必須在使用該設定建立空間情境之前設定。
 
 .. rst-class:: classref-section-separator
 
@@ -128,9 +128,9 @@ Dictionary to use to decode April tags.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationAprilTag_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+回傳該設定啟用的元件。
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **注意：**\ 僅在該設定用於建立空間情境後有效。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

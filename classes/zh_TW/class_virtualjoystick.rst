@@ -7,16 +7,16 @@ VirtualJoystick
 
 **繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A virtual joystick control for touchscreen devices.
+一個用於觸摸屏裝置的虛擬搖桿控制。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A customizable on-screen joystick control designed for touchscreen devices. It allows users to provide directional input by dragging a virtual tip within a defined circular area.
+一個為觸摸屏裝置設計的可自訂螢幕搖桿控制。它允許使用者通過在定義好的圓形區域內拖動一個虛擬搖桿頭來提供方向輸入。
 
-This control can simulate directional actions (see :ref:`action_up<class_VirtualJoystick_property_action_up>`, :ref:`action_down<class_VirtualJoystick_property_action_down>`, :ref:`action_left<class_VirtualJoystick_property_action_left>`, and :ref:`action_right<class_VirtualJoystick_property_action_right>`), which are triggered when the joystick is moved in the corresponding directions.
+該控制項可以模擬方向動作（參見 :ref:`action_up<class_VirtualJoystick_property_action_up>`\ 、\ :ref:`action_down<class_VirtualJoystick_property_action_down>`\ 、\ :ref:`action_left<class_VirtualJoystick_property_action_left>` 和 :ref:`action_right<class_VirtualJoystick_property_action_right>`\ ），當搖桿向對應方向移動時觸發這些動作。
 
 .. rst-class:: classref-reftable-group
 
@@ -83,7 +83,7 @@ This control can simulate directional actions (see :ref:`action_up<class_Virtual
 
 **flick_canceled**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_flick_canceled>`
 
-Emitted when the tip enters the deadzone after being outside of it.
+當搖桿頭從死區外移動進入死區內時，觸發該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Emitted when the tip enters the deadzone after being outside of it.
 
 **flicked**\ (\ input_vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_VirtualJoystick_signal_flicked>`
 
-Emitted when the tip moved outside the deadzone and the joystick is released. The ``input_vector`` contains the last input direction and strength before release. Its length is between ``0.0`` and ``1.0``.
+當搖桿頭移出死區後釋放搖桿時發出。\ ``input_vector`` 包含釋放前的最後輸入方向和強度。其長度介於 ``0.0`` 和 ``1.0`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Emitted when the tip moved outside the deadzone and the joystick is released. Th
 
 **pressed**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_pressed>`
 
-Emitted when the joystick is pressed.
+當搖桿被按下時，觸發該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Emitted when the joystick is pressed.
 
 **released**\ (\ input_vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_VirtualJoystick_signal_released>`
 
-Emitted when the joystick is released. The ``input_vector`` is the final input direction and strength, with a length between ``0.0`` and ``1.0``.
+當搖桿被釋放時發出。\ ``input_vector`` 是最終的輸入方向和強度，其長度介於 ``0.0`` 和 ``1.0`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Emitted when the joystick is released. The ``input_vector`` is the final input d
 
 **tapped**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_tapped>`
 
-Emitted when the joystick is released without moving the tip.
+當搖桿被松開，且搖桿頭沒有發生移動時，觸發該訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -154,7 +154,7 @@ enum **JoystickMode**: :ref:`🔗<enum_VirtualJoystick_JoystickMode>`
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_FIXED** = ``0``
 
-The joystick doesn't move.
+搖桿沒有移動。
 
 .. _class_VirtualJoystick_constant_JOYSTICK_DYNAMIC:
 
@@ -162,7 +162,7 @@ The joystick doesn't move.
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_DYNAMIC** = ``1``
 
-The joystick is moved to the initial touch position as long as it's within the joystick's bounds. It moves back to its original position when released.
+只要初始觸摸位置在搖桿的邊界範圍內，搖桿就會移動到該位置。當釋放時，它會移回其原始位置。
 
 .. _class_VirtualJoystick_constant_JOYSTICK_FOLLOWING:
 
@@ -170,7 +170,7 @@ The joystick is moved to the initial touch position as long as it's within the j
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_FOLLOWING** = ``2``
 
-The joystick is moved to the initial touch position as long as it's within the joystick's bounds. It will follow the touch input if it goes outside the joystick's range. It moves back to its original position when released.
+只要初始觸摸位置在搖桿的邊界範圍內，搖桿就會移動到該位置。如果觸摸點移出了搖桿的作用範圍，它會繼續跟隨觸摸輸入。當釋放時，搖桿會移回其原始位置。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_VirtualJoystick_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **VISIBILITY_ALWAYS** = ``0``
 
-The joystick is always visible.
+搖桿始終可見。
 
 .. _class_VirtualJoystick_constant_VISIBILITY_WHEN_TOUCHED:
 
@@ -196,7 +196,7 @@ The joystick is always visible.
 
 :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **VISIBILITY_WHEN_TOUCHED** = ``1``
 
-The joystick is only visible when being touched.
+僅在觸摸時顯示搖桿。
 
 .. rst-class:: classref-section-separator
 
@@ -218,7 +218,7 @@ The joystick is only visible when being touched.
 - |void| **set_action_down**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_down**\ (\ )
 
-The action to trigger when the joystick is moved down.
+當搖桿向下移動時要觸發的動作。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ The action to trigger when the joystick is moved down.
 - |void| **set_action_left**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_left**\ (\ )
 
-The action to trigger when the joystick is moved left.
+當搖桿向左移動時要觸發的動作。
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ The action to trigger when the joystick is moved left.
 - |void| **set_action_right**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_right**\ (\ )
 
-The action to trigger when the joystick is moved right.
+當搖桿向右移動時要觸發的動作。
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ The action to trigger when the joystick is moved right.
 - |void| **set_action_up**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_up**\ (\ )
 
-The action to trigger when the joystick is moved up.
+當搖桿向上移動時觸發的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -286,13 +286,13 @@ The action to trigger when the joystick is moved up.
 - |void| **set_clampzone_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clampzone_ratio**\ (\ )
 
-The multiplier applied to the joystick's radius that defines the clamp zone.
+套用至搖桿半徑的乘數，用於定義鉗制區域。
 
-This zone limits how far the joystick tip can move from its center before being clamped.
+該區域限制了搖桿頭在被鉗制前，距離其中心點可以移動的最遠距離。
 
-A value of ``1.0`` means the tip can move up to the edge of the joystick's visual size.
+值為 ``1.0`` 表示搖桿頭可以移動到搖桿視覺尺寸的邊緣。
 
-In :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` mode, this radius also determines how far the finger can move before the joystick base starts following the touch input.
+在 :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` 模式下，該半徑還決定了手指移動多遠後，搖桿底座才開始跟隨觸摸輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -309,13 +309,13 @@ In :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` 
 - |void| **set_deadzone_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_deadzone_ratio**\ (\ )
 
-The ratio of the joystick size that defines the joystick deadzone. The joystick tip must move beyond this ratio before being considered active.
+定義搖桿死區的搖桿尺寸比例。搖桿頭必須移動超過這一比例，才會被視為啟用。
 
-This deadzone is applied before triggering input actions and affects the joystick's input vector and all related signals.
+該死區在觸發輸入動作之前生效，並會影響搖桿的輸入向量（Input Vector）及所有相關訊號。
 
-Note that input actions may also define their own deadzones in the InputMap. If both are set, the joystick deadzone is applied first, followed by the action's deadzone.
+請注意，輸入動作（Input Actions）也可能在 InputMap 中定義自己的死區。如果兩者都進行了設定，則先應用搖桿的死區，再應用動作的死區。
 
-By default, this value is ``0.0``, meaning the joystick does not apply its own deadzone and relies entirely on the InputMap action deadzones.
+預設情況下，該值為 ``0.0``\ ，這意味著搖桿不會應用其自身的死區，而是完全相依性 InputMap 動作的死區。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ By default, this value is ``0.0``, meaning the joystick does not apply its own d
 - |void| **set_initial_offset_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_initial_offset_ratio**\ (\ )
 
-The initial position of the joystick as a ratio of the control's size. ``(0, 0)`` is top-left and ``(1, 1)`` is bottom-right.
+搖桿初始位置相對於控制項尺寸的比例。 ``(0, 0)`` 代表左上角，\ ``(1, 1)`` 代表右下角。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ The initial position of the joystick as a ratio of the control's size. ``(0, 0)`
 - |void| **set_joystick_mode**\ (\ value\: :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>`\ )
 - :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **get_joystick_mode**\ (\ )
 
-The joystick mode to use.
+要使用的搖桿模式。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The joystick mode to use.
 - |void| **set_joystick_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_joystick_size**\ (\ )
 
-The size of the joystick in pixels.
+搖桿的大小（以像素為單位）。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ The size of the joystick in pixels.
 - |void| **set_tip_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tip_size**\ (\ )
 
-The size of the joystick tip in pixels.
+搖桿頂部（搖桿頭）的大小（以像素為單位）。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ The size of the joystick tip in pixels.
 - |void| **set_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **get_visibility_mode**\ (\ )
 
-The visibility mode to use.
+要使用的可見性模式。
 
 .. rst-class:: classref-section-separator
 
@@ -417,7 +417,7 @@ The visibility mode to use.
 
 :ref:`StyleBox<class_StyleBox>` **normal_joystick** :ref:`🔗<class_VirtualJoystick_theme_style_normal_joystick>`
 
-Base joystick :ref:`StyleBox<class_StyleBox>`.
+基礎搖桿 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Base joystick :ref:`StyleBox<class_StyleBox>`.
 
 :ref:`StyleBox<class_StyleBox>` **normal_tip** :ref:`🔗<class_VirtualJoystick_theme_style_normal_tip>`
 
-Tip joystick :ref:`StyleBox<class_StyleBox>`.
+搖桿頭 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Tip joystick :ref:`StyleBox<class_StyleBox>`.
 
 :ref:`StyleBox<class_StyleBox>` **pressed_joystick** :ref:`🔗<class_VirtualJoystick_theme_style_pressed_joystick>`
 
-Base joystick :ref:`StyleBox<class_StyleBox>` when pressed.
+基礎搖桿按下時的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Base joystick :ref:`StyleBox<class_StyleBox>` when pressed.
 
 :ref:`StyleBox<class_StyleBox>` **pressed_tip** :ref:`🔗<class_VirtualJoystick_theme_style_pressed_tip>`
 
-Tip joystick :ref:`StyleBox<class_StyleBox>` when pressed.
+按下時的搖桿頭 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

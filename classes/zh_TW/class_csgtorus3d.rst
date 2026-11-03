@@ -84,7 +84,7 @@ CSG 圓環形狀。
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-用於算繪圓環的材質。
+用於渲染圓環的材質。
 
 .. rst-class:: classref-item-separator
 

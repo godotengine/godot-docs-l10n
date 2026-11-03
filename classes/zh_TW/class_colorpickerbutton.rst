@@ -7,7 +7,7 @@ ColorPickerButton
 
 **繼承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-點擊後會顯示 :ref:`ColorPicker<class_ColorPicker>` 的按鈕。
+點選後會顯示 :ref:`ColorPicker<class_ColorPicker>` 的按鈕。
 
 .. rst-class:: classref-introduction-group
 
@@ -168,7 +168,7 @@ ColorPickerButton
 - |void| **set_edit_intensity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_intensity**\ (\ )
 
-If ``true``, the intensity slider in the displayed :ref:`ColorPicker<class_ColorPicker>` will be visible.
+如果為 ``true``\ ，則顯示的 :ref:`ColorPicker<class_ColorPicker>` 中的強度滑塊將可見。
 
 .. rst-class:: classref-section-separator
 

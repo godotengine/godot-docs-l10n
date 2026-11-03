@@ -55,7 +55,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerSocket_Status>`
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_NONE** = ``0``
 
-The initial status of the **StreamPeerSocket**. This is also the status after disconnecting.
+Le statut initial du **StreamPeerSocket**. Il s'agit aussi du statut après la déconnexion.
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTING:
 
@@ -63,7 +63,7 @@ The initial status of the **StreamPeerSocket**. This is also the status after di
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTING** = ``1``
 
-A status representing a **StreamPeerSocket** that is connecting to a host.
+Un statut représentant un **StreamPeerSocket** qui se connecte à un hôte.
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTED:
 
@@ -71,7 +71,7 @@ A status representing a **StreamPeerSocket** that is connecting to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTED** = ``2``
 
-A status representing a **StreamPeerSocket** that is connected to a host.
+Un statut représentant un **StreamPeerSocket** qui est connecté à un hôte.
 
 .. _class_StreamPeerSocket_constant_STATUS_ERROR:
 
@@ -79,7 +79,7 @@ A status representing a **StreamPeerSocket** that is connected to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_ERROR** = ``3``
 
-A status representing a **StreamPeerSocket** in error state.
+Un statut représentant un **StreamPeerSocket** dans un état d'erreur.
 
 .. rst-class:: classref-section-separator
 

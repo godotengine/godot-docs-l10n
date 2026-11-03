@@ -7,14 +7,14 @@ SpringBoneCollisionCapsule3D
 
 **繼承：** :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A capsule shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的膠囊形狀碰撞體。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A capsule shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的膠囊形狀碰撞體。
 
 .. rst-class:: classref-reftable-group
 
@@ -54,9 +54,9 @@ A capsule shape collision that interacts with :ref:`SpringBoneSimulator3D<class_
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The capsule's full height, including the hemispheres.
+膠囊體的總高度，包括半球。
 
-\ **Note:** The :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` of a capsule must be at least twice its :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>`. Otherwise, the capsule becomes a sphere. If the :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` is less than twice the :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 必須至少為其 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 的兩倍。否則，膠囊體將變為球體。如果 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 小於 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 的兩倍，則屬性將調整為有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The capsule's full height, including the hemispheres.
 - |void| **set_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_inside**\ (\ )
 
-If ``true``, the collision acts to trap the joint within the collision.
+如果為 ``true``\ ，則碰撞會讓關節困在碰撞中。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ If ``true``, the collision acts to trap the joint within the collision.
 - |void| **set_mid_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mid_height**\ (\ )
 
-The capsule's height, excluding the hemispheres. This is the height of the central cylindrical part in the middle of the capsule, and is the distance between the centers of the two hemispheres. This is a wrapper for :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`.
+膠囊的高度，不包括兩個半球。這是膠囊中間圓柱部分的高度，即兩個半球球心之間的距離。這是對 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的封裝。
 
 .. rst-class:: classref-item-separator
 
@@ -107,9 +107,9 @@ The capsule's height, excluding the hemispheres. This is the height of the centr
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The capsule's radius.
+膠囊體的半徑。
 
-\ **Note:** The :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`. Otherwise, the capsule becomes a sphere. If the :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` is greater than half of the :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`, the properties adjust to a valid value.
+\ **注意：**\ 膠囊體的 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 不能大於其 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的一半。否則，膠囊體將變為球體。如果 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 大於 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的一半，則屬性將調整為有效值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

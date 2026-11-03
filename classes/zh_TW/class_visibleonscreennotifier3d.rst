@@ -9,18 +9,18 @@ VisibleOnScreenNotifier3D
 
 **被繼承：** :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`
 
-A box-shaped region of 3D space that detects whether it is visible on screen.
+3D 空間的盒形區塊，用於檢測其在螢幕上是否可見。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**VisibleOnScreenNotifier3D** represents a box-shaped region of 3D space. When any part of this region becomes visible on screen or in a :ref:`Camera3D<class_Camera3D>`'s view, it will emit a :ref:`screen_entered<class_VisibleOnScreenNotifier3D_signal_screen_entered>` signal, and likewise it will emit a :ref:`screen_exited<class_VisibleOnScreenNotifier3D_signal_screen_exited>` signal when no part of it remains visible.
+**VisibleOnScreenNotifier3D** 表示 3D 空間的盒形區塊。當該區塊的任何部分在螢幕或 :ref:`Camera3D<class_Camera3D>` 檢視中可見時，它將發出 :ref:`screen_entered<class_VisibleOnScreenNotifier3D_signal_screen_entered>` 訊號；同樣，當其任何部分都不可見時，它將發出 :ref:`screen_exited<class_VisibleOnScreenNotifier3D_signal_screen_exited>` 訊號。
 
-If you want a node to be enabled automatically when this region is visible on screen, use :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`.
+如果你希望當該區塊在螢幕上可見時自動啟用節點，請使用 :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`\ 。
 
-\ **Note:** **VisibleOnScreenNotifier3D** uses an approximate heuristic that doesn't take walls and other occlusion into account, unless occlusion culling is used. It also won't function unless :ref:`Node3D.visible<class_Node3D_property_visible>` is set to ``true``.
+\ **注意：**\ **VisibleOnScreenNotifier3D** 使用近似啓發式，不考慮牆壁和其他遮擋，除非使用遮擋剔除。除非將 :ref:`Node3D.visible<class_Node3D_property_visible>` 設定為 ``true``\ ，否則它也不會起作用。
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ If you want a node to be enabled automatically when this region is visible on sc
 
 **screen_entered**\ (\ ) :ref:`🔗<class_VisibleOnScreenNotifier3D_signal_screen_entered>`
 
-Emitted when the **VisibleOnScreenNotifier3D** enters the screen.
+當該 **VisibleOnScreenNotifier3D** 進入螢幕時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Emitted when the **VisibleOnScreenNotifier3D** enters the screen.
 
 **screen_exited**\ (\ ) :ref:`🔗<class_VisibleOnScreenNotifier3D_signal_screen_exited>`
 
-Emitted when the **VisibleOnScreenNotifier3D** exits the screen.
+當該 **VisibleOnScreenNotifier3D** 退出螢幕時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -95,7 +95,7 @@ Emitted when the **VisibleOnScreenNotifier3D** exits the screen.
 - |void| **set_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_aabb**\ (\ )
 
-The **VisibleOnScreenNotifier3D**'s bounding box.
+該 **VisibleOnScreenNotifier3D** 的邊界框。
 
 .. rst-class:: classref-section-separator
 
@@ -112,9 +112,9 @@ The **VisibleOnScreenNotifier3D**'s bounding box.
 
 :ref:`bool<class_bool>` **is_on_screen**\ (\ ) |const| :ref:`🔗<class_VisibleOnScreenNotifier3D_method_is_on_screen>`
 
-Returns ``true`` if the bounding box is on the screen.
+如果為 ``true``\ ，則邊界框在螢幕上。
 
-\ **Note:** It takes one frame for the **VisibleOnScreenNotifier3D**'s visibility to be assessed once added to the scene tree, so this method will always return ``false`` right after it is instantiated.
+\ **注意：**\ **VisibleOnScreenNotifier3D** 被新增到場景樹後需要一影格來評估其可見性，因此該方法在實例化後將始終回傳 ``false`` 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

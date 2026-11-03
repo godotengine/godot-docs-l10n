@@ -748,9 +748,11 @@ Basis
 
 Стовпці базисної матриці множаться на компоненти ``scale``. Ця операція є локальним масштабуванням (відносно себе).
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var my_basis = Basis(
     Vector3(1, 1, 1),
     Vector3(2, 2, 2),
@@ -761,8 +763,9 @@ Basis
     print(my_basis.x) # Виводить (0.0, 0.0, 0.0)
     print(my_basis.y) # Виводить (4.0, 4.0, 4.0)
     print(my_basis.z) # Виводить (-6.0, -6.0, -6.0)
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var myBasis = new Basis(
     new Vector3(1.0f, 1.0f, 1.0f),
     new Vector3(2.0f, 2.0f, 2.0f),
@@ -773,7 +776,8 @@ Basis
     GD.Print(myBasis.X); // Виводить (0, 0, 0)
     GD.Print(myBasis.Y); // Виводить (4, 4, 4)
     GD.Print(myBasis.Z); // Виводить (-6, -6, -6)
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -789,28 +793,16 @@ Basis
 
 \ **Приклад: ** Плавно повертайте :ref:`Node3D<class_Node3D>` до цільової основи з часом за допомогою :ref:`Tween<class_Tween>`.
 
-
-.. tabs::
-
-var start_basis = Basis.IDENTITY
-
-var target_basis = Basis.IDENTITY.rotated(Vector3.UP, TAU / 2)
-
-
-
-func _ready():
-
- create_tween().tween_method(interpolate, 0.0, 1.0, 5.0).set_trans(Tween.TRANS_EXPO)
-
-
-
-func interpolate(weight):
-
- base = start_basis.slerp(target_basis, weight)
-
-
 ::
 
+    var start_basis = Basis.IDENTITY
+    var target_basis = Basis.IDENTITY.rotated(Vector3.UP, TAU / 2)
+
+    func _ready():
+         create_tween().tween_method(interpolate, 0.0, 1.0, 5.0).set_trans(Tween.TRANS_EXPO)
+
+    func interpolate(weight):
+         base = start_basis.slerp(target_basis, weight)
 
 .. rst-class:: classref-item-separator
 
@@ -942,18 +934,22 @@ func interpolate(weight):
 
 Перетворює (множить) вектор ``right`` на цю основу, повертаючи :ref:`Vector3<class_Vector3>`.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
      # Основа, яка змінює місцями осі X/Z і подвоює масштаб.
     var my_basis = basis (Vector3(0, 2, 0), Vector3(2, 0, 0), Vector3(0, 0, 2))
     print(my_basis * Vector3(1, 2, 3)) # Prints (4, 2, 6)
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
      // Основа, яка змінює місцями осі X/Z і подвоює масштаб.
     var myBasis = new basis (new vector3(0, 2, 0), new vector3(2, 0, 0), new vector3(0, 0, 2));
     GD.Print(myBasis * new Vector3(1, 2, 3)); // Друкує (4, 2, 6)
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-item-separator
 

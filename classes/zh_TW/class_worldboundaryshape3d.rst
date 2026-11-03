@@ -14,9 +14,9 @@ WorldBoundaryShape3D
 說明
 ----
 
-A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D** works like an infinite plane that forces all physics bodies to stay above it. The :ref:`plane<class_WorldBoundaryShape3D_property_plane>`'s normal determines which direction is considered as "above" and in the editor, the line over the plane represents this direction. It can for example be used for endless flat floors.
+3D 世界邊界形狀，應當用於物理用途。\ **WorldBoundaryShape3D** 本質上和無限平面類似，能夠強制所有物理體都保持在它的上方。哪個方向是“上方”由該平面 :ref:`plane<class_WorldBoundaryShape3D_property_plane>` 的法線確定，這個方向在編輯器中由平面上方的一條線表示。用例是無限的平坦地面。
 
-\ **Note:** When the physics engine is set to **Jolt Physics** in the project settings (:ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`), **WorldBoundaryShape3D** has a finite size (centered at the shape's origin). It can be adjusted by changing :ref:`ProjectSettings.physics/jolt_physics_3d/limits/world_boundary_shape_size<class_ProjectSettings_property_physics/jolt_physics_3d/limits/world_boundary_shape_size>`.
+\ **注意：**\ 在專案設定中將物理引擎設為 **Jolt Physics**\ （\ :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`\ ）時，\ **WorldBoundaryShape3D** 的大小有限（以形狀原點為中心），可以通過 :ref:`ProjectSettings.physics/jolt_physics_3d/limits/world_boundary_shape_size<class_ProjectSettings_property_physics/jolt_physics_3d/limits/world_boundary_shape_size>` 調整。
 
 .. rst-class:: classref-reftable-group
 

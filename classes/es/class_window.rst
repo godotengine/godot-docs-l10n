@@ -472,7 +472,7 @@ Emitida cuando el área de decoración personalizada definida por :ref:`nonclien
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
+Emitido cuando cambia el valor lineal máximo de salida devuelto por :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`. Esto ocurre cuando la salida HDR se activa o desactiva, y cuando cambia cualquiera de los valores de luminancia de salida HDR de la ventana, como cuando el jugador ajusta la configuración del brillo de su pantalla o mueve la ventana a una pantalla diferente. ``output_max_linear_value`` es el nuevo valor.
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ Si es ``true``, la **Window** sobrescribirá el estilo de ventana del SO para mo
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
+El tamaño de la ventana en píxeles. Consulta también :ref:`content_scale_size<class_Window_property_content_scale_size>`, el cual no establece el tamaño físico de la ventana, sino que afecta cómo funciona el escalado en relación con el :ref:`content_scale_mode<class_Window_property_content_scale_mode>` actual.
 
 .. rst-class:: classref-item-separator
 
@@ -1868,7 +1868,7 @@ Método virtual que implementará el usuario. Sobrescribe el valor devuelto por 
 
 |void| **add_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Window_method_add_theme_color_override>`
 
-Crea una sobrescritura local para un tema :ref:`Color<class_Color>` con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura se puede eliminar con :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>`.
+Crea una sobrescritura local para un tema :ref:`Color<class_Color>` con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura se puede eliminar con :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>`.
 
 Véase también :ref:`get_theme_color()<class_Window_method_get_theme_color>` y :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>` para obtener más información.
 
@@ -1882,7 +1882,7 @@ Véase también :ref:`get_theme_color()<class_Window_method_get_theme_color>` y 
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_constant_override>`
 
-Crea una anulación local para una constante del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>`.
+Crea una sobrescritura local para una constante del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>`.
 
 Véase también :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
 
@@ -1896,7 +1896,7 @@ Véase también :ref:`get_theme_constant()<class_Window_method_get_theme_constan
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Window_method_add_theme_font_override>`
 
-Crea una anulación local para una :ref:`Font<class_Font>` del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>`.
+Crea una sobrescritura local para una :ref:`Font<class_Font>` del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>`.
 
 Véase también :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
 
@@ -1910,7 +1910,7 @@ Véase también :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_font_size_override>`
 
-Crea una anulación local para un tamaño de fuente del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>`.
+Crea una sobrescritura local para un tamaño de fuente del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>`.
 
 Véase también :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
 
@@ -1924,7 +1924,7 @@ Véase también :ref:`get_theme_font_size()<class_Window_method_get_theme_font_s
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Window_method_add_theme_icon_override>`
 
-Crea una anulación local para un icono del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>`.
+Crea una sobrescritura local para un icono del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>`.
 
 Véase también :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
 
@@ -1938,7 +1938,7 @@ Véase también :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
 
 |void| **add_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_Window_method_add_theme_stylebox_override>`
 
-Crea una sobrescritura local para un :ref:`StyleBox<class_StyleBox>` de tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos de tema para el control. Una sobrescritura se puede eliminar con :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>`.
+Crea una sobrescritura local para un :ref:`StyleBox<class_StyleBox>` de tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos de tema para el control. Una sobrescritura se puede eliminar con :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>`.
 
 Véase también :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebox>` y :ref:`Control.add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` para más detalles.
 
@@ -2002,7 +2002,7 @@ Ends a bulk theme override update. See :ref:`begin_bulk_theme_override()<class_W
 
 Devuelve el tamaño mínimo combinado de los nodos :ref:`Control<class_Control>` secundarios de la ventana. Usa :ref:`child_controls_changed()<class_Window_method_child_controls_changed>` para actualizarlo cuando los nodos secundarios hayan cambiado.
 
-El valor devuelto por este método puede ser anulado con :ref:`_get_contents_minimum_size()<class_Window_private_method__get_contents_minimum_size>`.
+El valor devuelto por este método puede ser sobrescrito con :ref:`_get_contents_minimum_size()<class_Window_private_method__get_contents_minimum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2681,7 +2681,7 @@ Muestra la **Window** con una posición desplazada por la posición de la **Wind
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_color_override>`
 
-Elimina una anulación local para un :ref:`Color<class_Color>` del tema con el ``name`` especificado, añadido previamente mediante :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` o a través del panel del Inspector.
+Elimina una sobrescritura local para un :ref:`Color<class_Color>` del tema con el ``name`` especificado, añadido previamente mediante :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` o a través del panel del Inspector.
 
 .. rst-class:: classref-item-separator
 

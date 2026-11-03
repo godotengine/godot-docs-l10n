@@ -14,23 +14,23 @@ CompressedCubemap
 說明
 ----
 
-A cubemap that is loaded from a ``.ccube`` file. This file format is internal to Godot; it is created by importing other image formats with the import system. **CompressedCubemap** can use one of 4 compression methods:
+一種從 ``.ccube`` 檔案載入的立方體貼圖。這種檔案格式是 Godot 內部使用的；它是通過匯入系統匯入其他影像格式建立的。\ **CompressedCubemap** 可以使用 4 種壓縮方法中的一種：
 
-- Lossless (WebP or PNG, uncompressed on the GPU)
+- 無損（WebP 或 PNG，在 GPU 上不壓縮）
 
-- Lossy (WebP, uncompressed on the GPU)
+- 有損（WebP，在 GPU 上不壓縮）
 
-- VRAM Compressed (compressed on the GPU)
+- VRAM 壓縮（在 GPU 上壓縮）
 
-- VRAM Uncompressed (uncompressed on the GPU)
+- VRAM 未壓縮（在 GPU 上不壓縮）
 
-- Basis Universal (compressed on the GPU. Lower file sizes than VRAM Compressed, but slower to compress and lower quality than VRAM Compressed)
+- Basis Universal（在 GPU 上壓縮。與 VRAM 壓縮相比，檔案更小，但壓縮速度更慢、品質更低）
 
-Only **VRAM Compressed** actually reduces the memory usage on the GPU. The **Lossless** and **Lossy** compression methods will reduce the required storage on disk, but they will not reduce memory usage on the GPU as the texture is sent to the GPU uncompressed.
+只有 **VRAM 壓縮**\ 實際上減少了 GPU 上的記憶體使用。\ **無損**\ 和\ **有損**\ 壓縮方法將減少磁碟上所需的儲存空間，但它們不會減少 GPU 上的記憶體使用，因為紋理未經壓縮地被發送到 GPU。
 
-Using **VRAM Compressed** also improves loading times, as VRAM-compressed textures are faster to load compared to textures using lossless or lossy compression. VRAM compression can exhibit noticeable artifacts and is intended to be used for 3D rendering, not 2D.
+使用 **VRAM 壓縮**\ 還可以縮短載入時間，因為與使用無損或有損壓縮的紋理相比，VRAM 壓縮的紋理載入速度更快。VRAM 壓縮會表現出明顯的偽影，並且它旨在用於 3D 渲染，而不是 2D。
 
-See :ref:`Cubemap<class_Cubemap>` for a general description of cubemaps.
+有關立方體貼圖的一般描述，請參閱 :ref:`Cubemap<class_Cubemap>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

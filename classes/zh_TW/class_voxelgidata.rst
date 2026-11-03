@@ -16,7 +16,7 @@ VoxelGIData
 
 **VoxelGIData** 包含烘焙的體素全域照明，用於 :ref:`VoxelGI<class_VoxelGI>` 節點。\ **VoxelGIData** 還提供了若干用來調整全域照明最終外觀的屬性。這些屬性可以在運作時調整，無須再次烘焙 :ref:`VoxelGI<class_VoxelGI>` 節點。
 
-\ **注意：**\ 為了防止基於文字的場景檔（\ ``.tscn``\ ）過度增長，導致加載和保存速度變慢，請始終將 **VoxelGIData** 保存為外部二進位資源檔（\ ``.res``\ ），不要將其嵌入到場景中。做法是點擊 **VoxelGIData** 資源旁邊的下拉箭頭，選擇\ **編輯**\ ，點擊屬性檢視器頂部的軟碟圖示，然後選擇\ **另存為...**\ 。
+\ **注意：**\ 為了防止基於文字的場景檔（\ ``.tscn``\ ）過度增長，導致載入和保存速度變慢，請始終將 **VoxelGIData** 保存為外部二進位資源檔（\ ``.res``\ ），不要將其嵌入到場景中。做法是點選 **VoxelGIData** 資源旁邊的下拉箭頭，選擇\ **編輯**\ ，點選屬性檢視器頂部的軟碟圖示，然後選擇\ **另存為...**\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -195,7 +195,7 @@ VoxelGIData
 - |void| **set_use_two_bounces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_two_bounces**\ (\ )
 
-如果為 ``true``\ ，則執行兩次間接照明反彈而不是一次。這使得以一個較低的性能成本，使間接照明看起來更自然、更明亮。第二次反彈在反射中也是可見的。如果啟用 :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>` 後場景顯得太亮，請調整 :ref:`propagation<class_VoxelGIData_property_propagation>` 和 :ref:`energy<class_VoxelGIData_property_energy>`\ 。
+如果為 ``true``\ ，則執行兩次間接照明反彈而不是一次。這使得以一個較低的效能成本，使間接照明看起來更自然、更明亮。第二次反彈在反射中也是可見的。如果啟用 :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>` 後場景顯得太亮，請調整 :ref:`propagation<class_VoxelGIData_property_propagation>` 和 :ref:`energy<class_VoxelGIData_property_energy>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -212,7 +212,7 @@ VoxelGIData
 
 |void| **allocate**\ (\ to_cell_xform\: :ref:`Transform3D<class_Transform3D>`, aabb\: :ref:`AABB<class_AABB>`, octree_size\: :ref:`Vector3<class_Vector3>`, octree_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, data_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, distance_field\: :ref:`PackedByteArray<class_PackedByteArray>`, level_counts\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_VoxelGIData_method_allocate>`
 
-Initializes this **VoxelGIData** with the specified data. ``octree_cells`` must be a multiple of 32. ``octree_cells`` must be double the size of ``data_cells``. The allocated data can be retrieved later using the various getter methods.
+用指定的資料初始化此 **VoxelGIData**\ 。\ ``octree_cells`` 必須是 32 的倍數，且 ``octree_cells`` 的大小必須是 ``data_cells`` 的兩倍。分配的資料日後可通過各種取值方法（getter methods）進行檢索。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Initializes this **VoxelGIData** with the specified data. ``octree_cells`` must 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_data_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_data_cells>`
 
-Returns the baked cell data for this **VoxelGIData**.
+回傳這個 **VoxelGIData** 的烘焙單元格資料。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Returns the baked cell data for this **VoxelGIData**.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_level_counts**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_level_counts>`
 
-Returns the baked level counts for this **VoxelGIData**.
+回傳這個 **VoxelGIData** 的烘焙層級數量。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the baked level counts for this **VoxelGIData**.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_octree_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_cells>`
 
-Returns the baked octree cell data for this **VoxelGIData**.
+回傳這個 **VoxelGIData** 的烘焙八叉樹單元格資料。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns the baked octree cell data for this **VoxelGIData**.
 
 :ref:`Vector3<class_Vector3>` **get_octree_size**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_size>`
 
-Returns the baked octree size for this **VoxelGIData**, which corresponds to the number of subdivisions per axis. This can be viewed in the editor by hovering the **Bake VoxelGI** button at the top of the 3D editor viewport when a :ref:`VoxelGI<class_VoxelGI>` node is selected and looking at the **Subdivisions** field in the tooltip.
+回傳此 **VoxelGIData** 烘焙後的八叉樹大小，該數值對應於每個軸向的細分數量。當選擇 :ref:`VoxelGI<class_VoxelGI>` 節點時，將滑鼠懸停在 3D 編輯器視埠頂部的 **烘焙 VoxelGI** 按鈕上，即可在工具提示中查看 **細分** 欄位。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Returns the baked octree size for this **VoxelGIData**, which corresponds to the
 
 :ref:`Transform3D<class_Transform3D>` **get_to_cell_xform**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_to_cell_xform>`
 
-Returns the baked cell transform for this **VoxelGIData**.
+回傳這個 **VoxelGIData** 的烘焙單元格變換。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

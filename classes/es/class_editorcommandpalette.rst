@@ -7,7 +7,7 @@ EditorCommandPalette
 
 **Hereda:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-La paleta de comandos del editor Godot.
+La paleta de comandos del editor de Godot.
 
 .. rst-class:: classref-introduction-group
 

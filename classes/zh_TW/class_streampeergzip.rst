@@ -18,7 +18,7 @@ StreamPeerGZIP
 
 這個類能夠使用 GZIP/deflate 對資料進行流式壓縮或解壓縮。壓縮或解壓縮經過網路發送的檔時尤其有用，不必事先分配記憶體。
 
-使用 :ref:`start_compression()<class_StreamPeerGZIP_method_start_compression>`\ （或 :ref:`start_decompression()<class_StreamPeerGZIP_method_start_decompression>`\ ）開啟流之後，在這個流上呼叫 :ref:`StreamPeer.put_partial_data()<class_StreamPeer_method_put_partial_data>` 會對資料進行壓縮（或解壓縮）並寫入內部緩衝區。呼叫 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` 會返回內部緩衝區中待處理的位元組數，\ :ref:`StreamPeer.get_partial_data()<class_StreamPeer_method_get_partial_data>` 會從中獲取壓縮後（或解壓後）的位元組。流結束後，你必須呼叫 :ref:`finish()<class_StreamPeerGZIP_method_finish>` 來確保正確清空內部緩衝區（請務必最後再呼叫一次 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>`\ ，檢查此時是否還有需要讀取的資料）。
+使用 :ref:`start_compression()<class_StreamPeerGZIP_method_start_compression>`\ （或 :ref:`start_decompression()<class_StreamPeerGZIP_method_start_decompression>`\ ）開啟流之後，在這個流上呼叫 :ref:`StreamPeer.put_partial_data()<class_StreamPeer_method_put_partial_data>` 會對資料進行壓縮（或解壓縮）並寫入內部緩衝區。呼叫 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` 會返回內部緩衝區中待處理的位元組數，\ :ref:`StreamPeer.get_partial_data()<class_StreamPeer_method_get_partial_data>` 會從中取得壓縮後（或解壓後）的位元組。流結束後，你必須呼叫 :ref:`finish()<class_StreamPeerGZIP_method_finish>` 來確保正確清空內部緩衝區（請務必最後再呼叫一次 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>`\ ，檢查此時是否還有需要讀取的資料）。
 
 .. rst-class:: classref-reftable-group
 
@@ -65,9 +65,9 @@ StreamPeerGZIP
 
 :ref:`Error<enum_@GlobalScope_Error>` **finish**\ (\ ) :ref:`🔗<class_StreamPeerGZIP_method_finish>`
 
-Finalizes the stream, compressing any buffered chunk left.
+終止該流，對緩衝中剩餘的資料塊進行壓縮。
 
-You must call it only when you are compressing.
+只有在壓縮時才能呼叫。
 
 .. rst-class:: classref-item-separator
 

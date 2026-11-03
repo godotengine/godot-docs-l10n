@@ -12,19 +12,19 @@ Color
 說明
 ----
 
-A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
+由紅（\ :ref:`r<class_Color_property_r>`\ ）、綠（\ :ref:`g<class_Color_property_g>`\ ）、藍（\ :ref:`b<class_Color_property_b>`\ ）和 alpha（\ :ref:`a<class_Color_property_a>`\ ）分量表示的 RGBA 格式的顏色。每個分量都是一個 32 位元浮點值，通常介於 ``0.0`` 到 ``1.0`` 之間。某些屬性（例如 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`\ ）可能支援大於 ``1.0`` 的值，用於表示過亮或 HDR（High Dynamic Range，高動態範圍）顏色。
 
-Colors can be created in a number of ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv()<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
+建立顏色的方法有很多：可以使用 **Color** 的各種建構函式，\ :ref:`from_hsv()<class_Color_method_from_hsv>` 等靜態方法，以及來自基於 `X11 顏色名稱 <https://en.wikipedia.org/wiki/X11_color_names>`__\ 的標準化顏色集合（外加 :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`\ ）的名稱。
 
-\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
+\ `Color 常數速查表 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
 
-Although **Color** may be used to store values of any encoding, the red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), and blue (:ref:`b<class_Color_property_b>`) properties of **Color** are expected by Godot to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ unless otherwise stated. This color encoding is used by many traditional art and web tools, making it easy to match colors between Godot and these tools. Godot uses `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ color primaries, which are used by the sRGB standard.
+儘管 **Color** 可以用於儲存任意編碼的值，除非有特殊說明，Godot 會認為其中紅（\ :ref:`r<class_Color_property_r>`\ ）、綠（\ :ref:`g<class_Color_property_g>`\ ）和藍（\ :ref:`b<class_Color_property_b>`\ ）的屬性是由 `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ 編碼的。這個色彩編碼被大量傳統的藝術和網路工具使用，使得 Godot 和這些工具之間的色彩容易保持一致。Godot 與 sRGB 標準同樣使用 `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ 中的原色。
 
-All physical simulation, such as lighting calculations, and colorimetry transformations, such as :ref:`get_luminance()<class_Color_method_get_luminance>`, must be performed on linearly encoded values to produce correct results. When performing these calculations, convert **Color** to and from linear encoding using :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` and :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
+所有物理模擬，比如光照計算，以及色度變換，比如 :ref:`get_luminance()<class_Color_method_get_luminance>`\ ，都必須線上性編碼下進行運算才能得到正確結果。進行這些運算時，可以用 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 和 :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` 將 **Color** 在預設編碼和線性編碼之間轉換。
 
-\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+\ **注意：**\ 在布林運算的情境中，只有等於 ``Color(0, 0, 0, 1)``\ （不透明黑色）的 Color 才會被求值為 ``false``\ 。其餘情況下 Color 將始終被求值為 ``true``\ 。
 
-\ **Note:** In C#, color constants are defined in the ``Colors`` static class instead of ``Color``. Additionally, named colors use ``PascalCase`` syntax instead of ``UPPER_SNAKE_CASE``. For example, ``Color.ALICE_BLUE`` in GDScript is ``Colors.AliceBlue`` in C#.
+\ **注意：**\ 在 C# 中，顏色常數定義在 ``Colors`` 靜態類中，而非 ``Color`` 類中。此外，命名顏色採用 ``PascalCase`` 語法，而非 ``UPPER_SNAKE_CASE``\ 。例如，GDScript 中的 ``Color.ALICE_BLUE`` 在 C# 中對應為 ``Colors.AliceBlue``\ 。
 
 .. note::
 
@@ -37,7 +37,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 - `2D GD 畫圖演示 <https://godotengine.org/asset-library/asset/2768>`__
 
-- `Tween Interpolation Demo <https://godotengine.org/asset-library/asset/2733>`__
+- `補間插值演示 <https://godotengine.org/asset-library/asset/2733>`__
 
 - `GUI 拖放演示 <https://godotengine.org/asset-library/asset/2767>`__
 
@@ -1393,9 +1393,9 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 :ref:`float<class_float>` **a** = ``1.0`` :ref:`🔗<class_Color_property_a>`
 
-The color's alpha component, typically on the range of 0 to 1. A value of 0 means that the color is fully transparent. A value of 1 means that the color is fully opaque.
+顏色的 Alpha 分量，通常在 0 到 1 的範圍內。取值為 0 表示顏色完全透明。取值為 1 表示顏色完全不透明。
 
-\ **Note:** The alpha channel is always stored with linear encoding, regardless of the encoding of the other color channels. The :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` and :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` methods do not affect the alpha channel.
+\ **注意：**\ Alpha 通道始終按照線性編碼儲存，與其他顏色通道如何編碼無關。\ :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` 和 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 等方法不影響 Alpha 通道。
 
 .. rst-class:: classref-item-separator
 
@@ -1479,7 +1479,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`float<class_float>` **ok_hsl_h** = ``0.0`` :ref:`🔗<class_Color_property_ok_hsl_h>`
 
-The OKHSL hue of this color, on the range 0 to 1.
+這個顏色的 OKHSL 色相，範圍是 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ The OKHSL hue of this color, on the range 0 to 1.
 
 :ref:`float<class_float>` **ok_hsl_l** = ``0.0`` :ref:`🔗<class_Color_property_ok_hsl_l>`
 
-The OKHSL lightness of this color, on the range 0 to 1.
+這個顏色的 OKHSL 亮度，範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1503,7 +1503,7 @@ The OKHSL lightness of this color, on the range 0 to 1.
 
 :ref:`float<class_float>` **ok_hsl_s** = ``0.0`` :ref:`🔗<class_Color_property_ok_hsl_s>`
 
-The OKHSL saturation of this color, on the range 0 to 1.
+這個顏色的 OKHSL 飽和度，範圍為 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1568,9 +1568,9 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 :ref:`Color<class_Color>` **Color**\ (\ ) :ref:`🔗<class_Color_constructor_Color>`
 
-Constructs a default **Color** from opaque black. This is the same as :ref:`BLACK<class_Color_constant_BLACK>`.
+用不透明的黑色構造預設的 **Color**\ ，與 :ref:`BLACK<class_Color_constant_BLACK>` 相同。
 
-\ **Note:** In C#, this constructs a **Color** with all of its components set to ``0.0`` (transparent black).
+\ **注意：**\ 在 C# 中構造的是所有分量都為 ``0.0`` 的顏色（透明黑）。
 
 .. rst-class:: classref-item-separator
 
@@ -1633,18 +1633,18 @@ Constructs a default **Color** from opaque black. This is the same as :ref:`BLAC
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<class_Color_property_a>` is set to 1.0.
+從通常介於 0.0 和 1.0 之間的 RGB 值構造一個 **Color**\ 。\ :ref:`a<class_Color_property_a>` 被設定為 1.0。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7) # Similar to `Color.from_rgba8(51, 255, 178, 255)`
+    var color = Color(0.2, 1.0, 0.7) # 類似於 `Color.from_rgba8(51, 255, 178, 255)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f); // Similar to `Color.Color8(51, 255, 178, 255)`
+    var color = new Color(0.2f, 1.0f, 0.7f); // 類似於 `Color.Color8(51, 255, 178, 255)`
 
 
 
@@ -1656,18 +1656,18 @@ Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<c
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`, a\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
+從通常介於 0.0 和 1.0 之間的 RGBA 值構造一個 **Color**\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7, 0.8) # Similar to `Color.from_rgba8(51, 255, 178, 204)`
+    var color = Color(0.2, 1.0, 0.7, 0.8) # 類似於 `Color.from_rgba8(51, 255, 178, 204)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // Similar to `Color.Color8(51, 255, 178, 255, 204)`
+    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // 類似於 `Color.Color8(51, 255, 178, 255, 204)`
 
 
 
@@ -1779,7 +1779,7 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **from_ok_hsl**\ (\ h\: :ref:`float<class_float>`, s\: :ref:`float<class_float>`, l\: :ref:`float<class_float>`, alpha\: :ref:`float<class_float>` = 1.0\ ) |static| :ref:`🔗<class_Color_method_from_ok_hsl>`
 
-根據 `OK HSL 配置 <https://bottosson.github.io/posts/colorpicker/>`__\ 構建顏色。色相（\ ``h``\ ）、飽和度（\ ``s``\ ）和亮度（\ ``l``\ ）通常在 0.0 和 1.0 之間。
+根據 `OK HSL 配置 <https://bottosson.github.io/posts/colorpicker/>`__\ 建置顏色。色相（\ ``h``\ ）、飽和度（\ ``s``\ ）和亮度（\ ``l``\ ）通常在 0.0 和 1.0 之間。
 
 
 .. tabs::
@@ -1804,15 +1804,15 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **from_rgba8**\ (\ r8\: :ref:`int<class_int>`, g8\: :ref:`int<class_int>`, b8\: :ref:`int<class_int>`, a8\: :ref:`int<class_int>` = 255\ ) |static| :ref:`🔗<class_Color_method_from_rgba8>`
 
-Returns a **Color** constructed from red (``r8``), green (``g8``), blue (``b8``), and optionally alpha (``a8``) integer channels, each divided by ``255.0`` for their final value.
+回傳一個由整數紅通道（\ ``r8``\ ）、整數綠通道（\ ``g8``\ ）、整數藍通道（\ ``b8``\ ）和可選的整數 Alpha 通道（\ ``a8``\ ）構造的 **Color**\ ，每個通道的最終值都是除以 ``255.0`` 後得到的。
 
 ::
 
-    var red = Color.from_rgba8(255, 0, 0)             # Same as Color(1, 0, 0).
-    var dark_blue = Color.from_rgba8(0, 0, 51)        # Same as Color(0, 0, 0.2).
-    var my_color = Color.from_rgba8(306, 255, 0, 102) # Same as Color(1.2, 1, 0, 0.4).
+    var red = Color.from_rgba8(255, 0, 0)             # 與 Color(1, 0, 0) 相同。
+    var dark_blue = Color.from_rgba8(0, 0, 51)        # 與 Color(0, 0, 0.2) 相同。
+    var my_color = Color.from_rgba8(306, 255, 0, 102) # 與 Color(1.2, 1, 0, 0.4) 相同。
 
-\ **Note:** Due to the lower precision of :ref:`from_rgba8()<class_Color_method_from_rgba8>` compared to the standard **Color** constructor, a color created with :ref:`from_rgba8()<class_Color_method_from_rgba8>` will generally not be equal to the same color created with the standard **Color** constructor. Use :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` for comparisons to avoid issues with floating-point precision error.
+\ **注意：**\ 因為 :ref:`from_rgba8()<class_Color_method_from_rgba8>` 的精度比標準 **Color** 建構函式低，所以使用 :ref:`from_rgba8()<class_Color_method_from_rgba8>` 建立的顏色通常與使用標準 **Color** 建構函式建立的相同顏色不相等。請使用 :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` 進行比較，避免浮點數精度誤差。
 
 .. rst-class:: classref-item-separator
 
@@ -1824,7 +1824,7 @@ Returns a **Color** constructed from red (``r8``), green (``g8``), blue (``b8``)
 
 :ref:`Color<class_Color>` **from_rgbe9995**\ (\ rgbe\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_Color_method_from_rgbe9995>`
 
-Decodes a **Color** from an RGBE9995 format integer. See :ref:`Image.FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`.
+從 RGBE9995 格式的整數解碼 **Color**\ 。見 :ref:`Image.FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1836,9 +1836,9 @@ Decodes a **Color** from an RGBE9995 format integer. See :ref:`Image.FORMAT_RGBE
 
 :ref:`Color<class_Color>` **from_string**\ (\ str\: :ref:`String<class_String>`, default\: :ref:`Color<class_Color>`\ ) |static| :ref:`🔗<class_Color_method_from_string>`
 
-Creates a **Color** from the given string, which can be either an HTML color code or a named color (case-insensitive). Returns ``default`` if the color cannot be inferred from the string.
+從給定的字串建立 **Color**\ ，該字串可以是 HTML 顏色程式碼，也可以是顏色名稱（不區分大小寫）。如果無法從字串中推斷出顏色，則回傳 ``default``\ 。
 
-If you want to create a color from String in a constant expression, use the equivalent constructor instead (i.e. ``Color("color string")``).
+如果你想要在常數運算式中使用 String 建立顏色，請改用對應的建構函式（即 ``Color("顏色字串")``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1850,9 +1850,9 @@ If you want to create a color from String in a constant expression, use the equi
 
 :ref:`float<class_float>` **get_luminance**\ (\ ) |const| :ref:`🔗<class_Color_method_get_luminance>`
 
-Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
+將顏色的光照強度回傳為一個介於 0.0 和 1.0（包含）之間的值。這在確定淺色或深色時很有用。亮度小於 0.5 的顏色通常可以認為是深色。
 
-\ **Note:** :ref:`get_luminance()<class_Color_method_get_luminance>` relies on the color using linear encoding to return an accurate relative luminance value. If the color uses the default nonlinear sRGB encoding, use :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` to convert it to linear encoding first.
+\ **注意：**\ :ref:`get_luminance()<class_Color_method_get_luminance>` 取決於顏色使用線性編碼，這樣才能回傳準確的相對亮度值。如果顏色使用預設的非線性 sRGB 編碼，請先使用 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 將其轉換為線性編碼。
 
 .. rst-class:: classref-item-separator
 
@@ -1864,9 +1864,9 @@ Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclus
 
 :ref:`Color<class_Color>` **hex**\ (\ hex\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_Color_method_hex>`
 
-Returns the **Color** associated with the provided ``hex`` integer in 32-bit RGBA format (8 bits per channel). This method is the inverse of :ref:`to_rgba32()<class_Color_method_to_rgba32>`.
+回傳與提供的整數 ``hex`` 相關聯的 **Color**\ ，使用 32 位元 RGBA 格式（每通道 8 位元）。該方法是 :ref:`to_rgba32()<class_Color_method_to_rgba32>` 的逆方法。
 
-In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecimal notation (``"0x"`` prefix, making it ``"0xRRGGBBAA"``).
+在 GDScript 和 C# 中，展示該 :ref:`int<class_int>` 的最好方法是十六進位表示法（使用 ``"0x"`` 前綴，得到 ``"0xRRGGBBAA"``\ ）。
 
 
 .. tabs::
@@ -1885,7 +1885,7 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 
 
-If you want to use hex notation in a constant expression, use the equivalent constructor instead (i.e. ``Color(0xRRGGBBAA)``).
+如果你想要在常數運算式中使用十六進位表示，請改用對應的建構函式（即 ``Color(0xRRGGBBAA)``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1897,9 +1897,9 @@ If you want to use hex notation in a constant expression, use the equivalent con
 
 :ref:`Color<class_Color>` **hex64**\ (\ hex\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_Color_method_hex64>`
 
-Returns the **Color** associated with the provided ``hex`` integer in 64-bit RGBA format (16 bits per channel). This method is the inverse of :ref:`to_rgba64()<class_Color_method_to_rgba64>`.
+回傳與提供的整數 ``hex`` 相關聯的 **Color**\ ，使用 64 位元 RGBA 格式（每通道 8 位元）。該方法是 :ref:`to_rgba64()<class_Color_method_to_rgba64>` 的逆方法。
 
-In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecimal notation (``"0x"`` prefix, making it ``"0xRRRRGGGGBBBBAAAA"``).
+在 GDScript 和 C# 中，展示該 :ref:`int<class_int>` 的最好方法是十六進位表示法（使用 ``"0x"`` 前綴，得到 ``"0xRRRRGGGGBBBBAAAA"``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2082,9 +2082,9 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`Color<class_Color>` **linear_to_srgb**\ (\ ) |const| :ref:`🔗<class_Color_method_linear_to_srgb>`
 
-Returns a copy of the color that is encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. This method requires the original color to use linear encoding. See also :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` which performs the opposite operation.
+回傳使用\ `非線性 sRGB 傳遞函式 <https://en.wikipedia.org/wiki/SRGB>`__\ 編碼的顏色副本。該方法要求原始顏色使用線性編碼。另見執行相反操作的 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>`\ 。
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **注意：**\ 顏色的 Alpha 通道（\ :ref:`a<class_Color_property_a>`\ ）不受影響。Alpha 通道始終使用線性編碼，與其他顏色通道所使用的色彩空間無關。
 
 .. rst-class:: classref-item-separator
 
@@ -2096,9 +2096,9 @@ Returns a copy of the color that is encoded using the `nonlinear sRGB transfer f
 
 :ref:`Color<class_Color>` **srgb_to_linear**\ (\ ) |const| :ref:`🔗<class_Color_method_srgb_to_linear>`
 
-Returns a copy of the color that uses linear encoding. This method requires the original color to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. See also :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` which performs the opposite operation.
+回傳使用線性編碼的顏色副本。該方法要求原始顏色使用\ `非線性 sRGB 傳輸函式 <https://en.wikipedia.org/wiki/SRGB>`__\ 進行編碼。另見執行相反操作的 :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`\ 。
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **注意：**\ 顏色的 Alpha 通道（\ :ref:`a<class_Color_property_a>`\ ）不受影響。Alpha 通道始終使用線性編碼，與其他顏色通道所使用的色彩空間無關。
 
 .. rst-class:: classref-item-separator
 
@@ -2249,7 +2249,7 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`int<class_int>` **to_rgba32**\ (\ ) |const| :ref:`🔗<class_Color_method_to_rgba32>`
 
-Returns the color converted to a 32-bit integer in RGBA format (each component is 8 bits). RGBA is Godot's default format. This method is the inverse of :ref:`hex()<class_Color_method_hex>`.
+回傳轉換為 RGBA 格式（每個分量為 8 位元）的 32 位元整數的顏色。RGBA 是 Godot 的預設格式。該方法是 :ref:`hex()<class_Color_method_hex>` 的逆方法。
 
 
 .. tabs::
@@ -2257,12 +2257,12 @@ Returns the color converted to a 32-bit integer in RGBA format (each component i
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_rgba32()) # Prints 4286526463
+    print(color.to_rgba32()) # 輸出 4286526463
 
  .. code-tab:: csharp
 
     var color = new Color(1, 0.5f, 0.2f);
-    GD.Print(color.ToRgba32()); // Prints 4286526463
+    GD.Print(color.ToRgba32()); // 輸出 4286526463
 
 
 
@@ -2276,7 +2276,7 @@ Returns the color converted to a 32-bit integer in RGBA format (each component i
 
 :ref:`int<class_int>` **to_rgba64**\ (\ ) |const| :ref:`🔗<class_Color_method_to_rgba64>`
 
-Returns the color converted to a 64-bit integer in RGBA format (each component is 16 bits). RGBA is Godot's default format. This method is the inverse of :ref:`hex64()<class_Color_method_hex64>`.
+回傳轉換為 RGBA 格式（每個分量為 16 位元）的 64 位元整數的顏色。RGBA 是 Godot 的預設格式。該方法是 :ref:`hex64()<class_Color_method_hex64>` 的逆方法。
 
 
 .. tabs::
@@ -2284,12 +2284,12 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_rgba64()) # Prints -140736629309441
+    print(color.to_rgba64()) # 輸出 -140736629309441
 
  .. code-tab:: csharp
 
     var color = new Color(1, 0.5f, 0.2f);
-    GD.Print(color.ToRgba64()); // Prints -140736629309441
+    GD.Print(color.ToRgba64()); // 輸出 -140736629309441
 
 
 

@@ -14,9 +14,9 @@ OpenXRAPIExtension
 說明
 ----
 
-**OpenXRAPIExtension** 使 OpenXR 可用於 GDExtension。它透過 :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` 方法向 GDExtension 提供 OpenXR API，並透過 [methodsion API，並透過 [methodsion get_instance get_instance
+**OpenXRAPIExtension** 使 OpenXR 可用於 GDExtension。它通過 :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` 方法向 GDExtension 提供 OpenXR API，並通過 :ref:`get_instance()<class_OpenXRAPIExtension_method_get_instance>` 提供 OpenXR 實例。
 
-它還提供了用於查詢 OpenXR 初始化狀態的方法，以及便於透過 GDExtension 使用 API 的輔助方法。
+它還提供了用於查詢 OpenXR 初始化狀態的方法，以及便於通過 GDExtension 使用 API 的輔助方法。
 
 .. rst-class:: classref-introduction-group
 
@@ -170,7 +170,7 @@ enum **OpenXRAlphaBlendModeSupport**: :ref:`🔗<enum_OpenXRAPIExtension_OpenXRA
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_NONE** = ``0``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` isn't supported at all.
+表示完全不支援 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. _class_OpenXRAPIExtension_constant_OPENXR_ALPHA_BLEND_MODE_SUPPORT_REAL:
 
@@ -178,7 +178,7 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_REAL** = ``1``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is really supported.
+表示確實支援 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. _class_OpenXRAPIExtension_constant_OPENXR_ALPHA_BLEND_MODE_SUPPORT_EMULATING:
 
@@ -186,7 +186,7 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_EMULATING** = ``2``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is emulated.
+表示模擬 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -203,7 +203,7 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 :ref:`int<class_int>` **action_get_handle**\ (\ action\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_action_get_handle>`
 
-Returns the corresponding ``XrAction`` OpenXR handle for the given action RID.
+回傳與給定動作 RID 對應的 ``XrAction`` OpenXR 控制代碼。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Returns the corresponding ``XrAction`` OpenXR handle for the given action RID.
 
 |void| **begin_debug_label_region**\ (\ label_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_begin_debug_label_region>`
 
-Begins a new debug label region, this label will be reported in debug messages for any calls following this until :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>` is called. Debug labels can be stacked.
+開啟新的除錯標籤區域，此後的呼叫所產生的除錯資訊中會彙報該標籤，直到呼叫 :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>`\ 。可以堆疊除錯標籤。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Begins a new debug label region, this label will be reported in debug messages f
 
 |void| **end_debug_label_region**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_end_debug_label_region>`
 
-Marks the end of a debug label region. Removes the latest debug label region added by calling :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`.
+標記除錯標籤區域的末尾。移除最新的通過呼叫 :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>` 新增的除錯標籤區域。
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Marks the end of a debug label region. Removes the latest debug label region add
 
 :ref:`RID<class_RID>` **find_action**\ (\ name\: :ref:`String<class_String>`, action_set\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_find_action>`
 
-Returns the :ref:`RID<class_RID>` corresponding to an ``Action`` of a matching name, optionally limited to a specified action set.
+回傳與名稱匹配的\ ``動作``\ 所對應的 :ref:`RID<class_RID>`\ ，還可以將匹配範圍限制在指定的動作集中。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Returns the :ref:`RID<class_RID>` corresponding to an ``Action`` of a matching n
 
 :ref:`int<class_int>` **get_hand_tracker**\ (\ hand_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_hand_tracker>`
 
-Returns the corresponding ``XRHandTrackerEXT`` handle for the given hand index value.
+回傳給定手索引值的相應 ``XRHandTrackerEXT`` 控制代碼。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ Returns the corresponding ``XRHandTrackerEXT`` handle for the given hand index v
 
 :ref:`int<class_int>` **get_instance**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_instance>`
 
-Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__ created during the initialization of the OpenXR API.
+回傳 OpenXR API 初始化過程中建立的 `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/
 
 :ref:`int<class_int>` **get_next_frame_time**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_next_frame_time>`
 
-Returns the predicted display timing for the next frame.
+回傳下一影格的預測顯示時間。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Returns the predicted display timing for the next frame.
 
 :ref:`int<class_int>` **get_openxr_version**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_openxr_version>`
 
-Returns the version of OpenXR that was initialized. Only valid after the OpenXR instance has been created. See `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ for how the version is calculated.
+回傳已初始化的 OpenXR 版本。僅在 OpenXR 實例建立後有效。有關版本計算方法，請參閱 `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Returns the version of OpenXR that was initialized. Only valid after the OpenXR 
 
 :ref:`int<class_int>` **get_predicted_display_time**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_predicted_display_time>`
 
-Returns the predicted display timing for the current frame.
+回傳目前影格的預測顯示時間。
 
 .. rst-class:: classref-item-separator
 
@@ -361,9 +361,9 @@ Returns the predicted display timing for the current frame.
 
 :ref:`int<class_int>` **get_projection_layer**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_projection_layer>`
 
-Returns a pointer to the render state's ``XrCompositionLayerProjection`` struct.
+回傳指向渲染狀態中 ``XrCompositionLayerProjection`` 結構體的指針。
 
-\ **Note:** This method should only be called from the rendering thread.
+\ **注意：**\ 該方法只應從渲染執行緒呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -375,9 +375,9 @@ Returns a pointer to the render state's ``XrCompositionLayerProjection`` struct.
 
 :ref:`float<class_float>` **get_render_state_z_far**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_far>`
 
-Returns the far boundary value of the camera frustum.
+回傳相機視錐的遠端邊界值。
 
-\ **Note:** This is only accessible in the render thread.
+\ **注意：**\ 只能在渲染執行緒中存取。
 
 .. rst-class:: classref-item-separator
 
@@ -389,9 +389,9 @@ Returns the far boundary value of the camera frustum.
 
 :ref:`float<class_float>` **get_render_state_z_near**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_near>`
 
-Returns the near boundary value of the camera frustum.
+回傳相機視錐的近端邊界值。
 
-\ **Note:** This is only accessible in the render thread.
+\ **注意：**\ 只能在渲染執行緒中存取。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Returns the near boundary value of the camera frustum.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_supported_swapchain_formats**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_supported_swapchain_formats>`
 
-Returns an array of supported swapchain formats.
+回傳支援的交換鏈格式的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Returns an array of supported swapchain formats.
 
 :ref:`int<class_int>` **get_system_id**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_system_id>`
 
-Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ cast to an integer.
+回傳系統的 ID，該 ID 是一個被轉換為整數的 `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ 型別值。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.
 
 :ref:`int<class_int>` **get_view_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_configuration>`
 
-Returns the view configuration type, which is an `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__ cast to an integer.
+回傳檢視設定型別，它是一個被強制轉換為整數的 `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Returns the view configuration type, which is an `XrViewConfigurationType <https
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_count>`
 
-Returns the number of views. It is usually two, one for each eye, but may differ with different view configurations.
+回傳檢視的數量。通常為兩個（每隻眼睛對應一個），但在不同的檢視設定下可能會有所不同。
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ Returns the number of views. It is usually two, one for each eye, but may differ
 
 |void| **insert_debug_label**\ (\ label_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_insert_debug_label>`
 
-Inserts a debug label, this label is reported in any debug message resulting from the OpenXR calls that follows, until any of :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`, :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>`, or :ref:`insert_debug_label()<class_OpenXRAPIExtension_method_insert_debug_label>` is called.
+插入除錯標籤，此後的 OpenXR 呼叫所產生的除錯資訊中會彙報該標籤，直到呼叫 :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`\ 、\ :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>` 或 :ref:`insert_debug_label()<class_OpenXRAPIExtension_method_insert_debug_label>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +487,7 @@ Inserts a debug label, this label is reported in any debug message resulting fro
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **is_environment_blend_mode_alpha_supported**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_environment_blend_mode_alpha_supported>`
 
-Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` denoting if :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is really supported, emulated or not supported at all.
+回傳 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` 表示 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` 是否確實受支援、模擬或根本不支援。
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 |void| **openxr_swapchain_acquire**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_acquire>`
 
-Acquires the image of the provided swapchain.
+取得給定交換鏈的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Acquires the image of the provided swapchain.
 
 :ref:`int<class_int>` **openxr_swapchain_create**\ (\ create_flags\: :ref:`int<class_int>`, usage_flags\: :ref:`int<class_int>`, swapchain_format\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, sample_count\: :ref:`int<class_int>`, array_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_create>`
 
-Returns a pointer to a new swapchain created using the provided parameters.
+回傳一個指針，指向使用給定參數建立的新交換鏈。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Returns a pointer to a new swapchain created using the provided parameters.
 
 |void| **openxr_swapchain_free**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_free>`
 
-Destroys the provided swapchain and frees it from memory.
+銷毀給定的交換鏈並在記憶體中將其釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ Destroys the provided swapchain and frees it from memory.
 
 :ref:`RID<class_RID>` **openxr_swapchain_get_image**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_get_image>`
 
-Returns the RID of the provided swapchain's image.
+回傳給定交換鏈影像的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ Returns the RID of the provided swapchain's image.
 
 :ref:`int<class_int>` **openxr_swapchain_get_swapchain**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_get_swapchain>`
 
-Returns the ``XrSwapchain`` handle of the provided swapchain.
+回傳給定交換鏈的 ``XrSwapchain`` 控制代碼。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ Returns the ``XrSwapchain`` handle of the provided swapchain.
 
 |void| **openxr_swapchain_release**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_release>`
 
-Releases the image of the provided swapchain.
+釋放給定交換鏈的影像。
 
 .. rst-class:: classref-item-separator
 
@@ -607,9 +607,9 @@ Releases the image of the provided swapchain.
 
 |void| **register_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_composition_layer_provider>`
 
-Registers the given extension as a composition layer provider.
+將給定的擴充注冊為合成層提供程式。
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **注意：**\ 該方法不能在 OpenXR 會話啟動後呼叫。但是，可以在 :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>` 方法中呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -621,9 +621,9 @@ Registers the given extension as a composition layer provider.
 
 |void| **register_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_frame_info_extension>`
 
-Registers the given extension as modifying frame info via the :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`, :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`, or :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>` virtual methods.
+將給定擴充注冊為會通過 :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`\ 、\ :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`\ 、\ :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>` 等虛方法修改影格資訊。
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **注意：**\ 該方法不能在 OpenXR 會話啟動後呼叫。但是，可以在 :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>` 方法中呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -635,9 +635,9 @@ Registers the given extension as modifying frame info via the :ref:`OpenXRExtens
 
 |void| **register_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_layer_extension>`
 
-Registers the given extension as modifying ``XrCompositionLayerProjection`` via the :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>` virtual method.
+通過 :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>` 虛方法，注冊給定的擴充以用於修改 ``XrCompositionLayerProjection``\ 。
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **注意：** 此方法不能在 OpenXR 會話啟動後被呼叫。不過，可以在 :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>` 中呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ Registers the given extension as modifying ``XrCompositionLayerProjection`` via 
 
 |void| **register_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_views_extension>`
 
-Registers the given extension as a provider of additional data structures to projections views.
+將給定的擴充程式注冊為向投影檢視提供附加資料結構的提供程式。
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **注意：**\ 該方法不能在 OpenXR 會話啟動後呼叫。但是，可以在 :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>` 方法中呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Registers the given extension as a provider of additional data structures to pro
 
 |void| **set_custom_play_space**\ (\ space\: ``const void*``\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_custom_play_space>`
 
-Sets the reference space used by OpenXR to the given `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ (cast to a ``void *``).
+將 OpenXR 所使用的參考空間設定為給定的 `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__\ （轉換為 ``void *``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Sets the reference space used by OpenXR to the given `XrSpace <https://registry.
 
 |void| **set_emulate_environment_blend_mode_alpha_blend**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_emulate_environment_blend_mode_alpha_blend>`
 
-If set to ``true``, an OpenXR extension is loaded which is capable of emulating the :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` blend mode.
+如果設定為 ``true``\ ，則會載入 OpenXR 擴充，該擴充能夠模擬 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` 混合模式。
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ If set to ``true``, an OpenXR extension is loaded which is capable of emulating 
 
 |void| **set_object_name**\ (\ object_type\: :ref:`int<class_int>`, object_handle\: :ref:`int<class_int>`, object_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_object_name>`
 
-Set the object name of an OpenXR object, used for debug output. ``object_type`` must be a valid OpenXR ``XrObjectType`` enum and ``object_handle`` must be a valid OpenXR object handle.
+設定 OpenXR 物件的物件名稱，用於除錯輸出。\ ``object_type`` 必須是有效的 OpenXR ``XrObjectType`` 列舉，\ ``object_handle`` 必須是有效的 OpenXR 物件控制代碼。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ Set the object name of an OpenXR object, used for debug output. ``object_type`` 
 
 |void| **set_render_region**\ (\ render_region\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_render_region>`
 
-Sets the render region to ``render_region``, overriding the normal render target's rect.
+將渲染區域設定為 ``render_region``\ ，覆蓋常規渲染目標的矩形區域。
 
 .. rst-class:: classref-item-separator
 
@@ -711,7 +711,7 @@ Sets the render region to ``render_region``, overriding the normal render target
 
 |void| **set_velocity_depth_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_depth_texture>`
 
-Sets the render target of the velocity depth texture.
+設定速度深度紋理的渲染目標。
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +723,7 @@ Sets the render target of the velocity depth texture.
 
 |void| **set_velocity_target_size**\ (\ target_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_target_size>`
 
-Sets the target size of the velocity and velocity depth textures.
+設定速度紋理和速度深度紋理的目標大小。
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ Sets the target size of the velocity and velocity depth textures.
 
 |void| **set_velocity_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_texture>`
 
-Sets the render target of the velocity texture.
+設定速度紋理的渲染目標。
 
 .. rst-class:: classref-item-separator
 
@@ -759,9 +759,9 @@ Sets the render target of the velocity texture.
 
 |void| **unregister_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_composition_layer_provider>`
 
-Unregisters the given extension as a composition layer provider.
+將給定的擴充取消注冊為合成層提供器。
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **注意：**\ 它無法在 OpenXR 會話仍在執行時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -773,9 +773,9 @@ Unregisters the given extension as a composition layer provider.
 
 |void| **unregister_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_frame_info_extension>`
 
-Unregisters the given extension as modifying frame info.
+將給定的擴充程式取消注冊為修改影格資訊的功能。
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **注意：**\ 它無法在 OpenXR 會話仍在執行時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -787,9 +787,9 @@ Unregisters the given extension as modifying frame info.
 
 |void| **unregister_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_layer_extension>`
 
-Unregisters the given extension as modifying ``XrCompositionLayerProjection``.
+注銷（取消注冊）給定的擴充，使其不再對 ``XrCompositionLayerProjection`` 進行修改。
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **注意：** 不能在 OpenXR 會話仍在執行時呼叫此方法。
 
 .. rst-class:: classref-item-separator
 
@@ -801,9 +801,9 @@ Unregisters the given extension as modifying ``XrCompositionLayerProjection``.
 
 |void| **unregister_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_views_extension>`
 
-Unregisters the given extension as a provider of additional data structures to projections views.
+將給定的擴充取消注冊為投影檢視的附加資料結構提供器。
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **注意：**\ 它無法在 OpenXR 會話仍在執行時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -815,7 +815,7 @@ Unregisters the given extension as a provider of additional data structures to p
 
 |void| **update_main_swapchain_size**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_update_main_swapchain_size>`
 
-Request the recommended resolution from the OpenXR runtime and update the main swapchain size if it has changed.
+從 OpenXR 執行時請求推薦的解析度，如果解析度發生變化，則更新主交換鏈的大小。
 
 .. rst-class:: classref-item-separator
 

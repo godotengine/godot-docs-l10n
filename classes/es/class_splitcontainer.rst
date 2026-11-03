@@ -445,15 +445,15 @@ Limita los valores de :ref:`split_offsets<class_SplitContainer_property_split_of
 
 **Obsoleto:** Use the first element of :ref:`get_drag_area_controls()<class_SplitContainer_method_get_drag_area_controls>` instead.
 
-Returns the drag area :ref:`Control<class_Control>`. For example, you can move a pre-configured button into the drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the ``reparent()`` call.
+Devuelve el :ref:`Control<class_Control>` del área de arrastre. Por ejemplo, puedes mover un botón preconfigurado al :ref:`Control<class_Control>` del área de arrastre para que se desplace junto con la barra divisoria. Prueba a establecer los anclajes del :ref:`Button<class_Button>` en ``center`` antes de llamar a ``reparent()``.
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_control())
 
-\ **Note:** The drag area :ref:`Control<class_Control>` is drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from the :ref:`Control<class_Control>` and children added to the :ref:`Control<class_Control>` will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **Nota:** El :ref:`Control<class_Control>` del área de arrastre se dibuja por encima de los elementos secundarios del **SplitContainer**, por lo que los elementos dibujados mediante :ref:`CanvasItem<class_CanvasItem>` desde el :ref:`Control<class_Control>` y los elementos secundarios añadidos a este también aparecerán por encima de los elementos secundarios del **SplitContainer**. Si lo deseas, prueba a establecer :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` de los elementos secundarios personalizados en :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` para evitar que bloqueen el ratón e impidan arrastrar.
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash.
+\ **Advertencia:** Este es un nodo interno obligatorio. Si lo eliminas y liberas, puede producirse un fallo.
 
 .. rst-class:: classref-item-separator
 
@@ -465,15 +465,15 @@ Returns the drag area :ref:`Control<class_Control>`. For example, you can move a
 
 :ref:`Array<class_Array>`\[:ref:`Control<class_Control>`\] **get_drag_area_controls**\ (\ ) :ref:`🔗<class_SplitContainer_method_get_drag_area_controls>`
 
-Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Control>`\ s. These are the interactable :ref:`Control<class_Control>` nodes between each child. For example, this can be used to add a pre-configured button to a drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the :ref:`Node.reparent()<class_Node_method_reparent>` call.
+Devuelve un :ref:`Array<class_Array>` de :ref:`Control<class_Control>`\ s del área de arrastre. Estos son los nodos :ref:`Control<class_Control>` interactivos que se encuentran entre cada elemento secundario. Por ejemplo, puedes usarlo para añadir un botón preconfigurado a un :ref:`Control<class_Control>` del área de arrastre, de modo que se desplace junto con la barra divisoria. Prueba a establecer los anclajes del :ref:`Button<class_Button>` en ``center`` antes de llamar al método :ref:`Node.reparent()<class_Node_method_reparent>`.
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_controls()[0])
 
-\ **Note:** The drag area :ref:`Control<class_Control>`\ s are drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from a drag area and children added to it will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **Nota:** Los :ref:`Control<class_Control>`\ s del área de arrastre se dibujan por encima de los elementos secundarios del **SplitContainer**, por lo que los elementos dibujados mediante :ref:`CanvasItem<class_CanvasItem>` desde un área de arrastre y los elementos secundarios añadidos a ella también aparecerán por encima de los elementos secundarios del **SplitContainer**. Si lo deseas, prueba a establecer :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` de los elementos secundarios personalizados en :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` para evitar que bloqueen el ratón e impidan arrastrar.
 
-\ **Warning:** These are required internal nodes, removing or freeing them may cause a crash.
+\ **Advertencia:** Estos son nodos internos obligatorios. Si los eliminas o liberas, puede producirse un fallo.
 
 .. rst-class:: classref-section-separator
 

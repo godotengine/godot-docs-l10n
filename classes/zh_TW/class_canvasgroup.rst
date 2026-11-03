@@ -14,9 +14,9 @@ CanvasGroup
 說明
 ----
 
-Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn as a single object. It allows to e.g. draw overlapping translucent 2D nodes without causing the overlapping sections to be more opaque than intended (set the :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` property on the **CanvasGroup** to achieve this effect).
+**CanvasGroup** 的子 :ref:`CanvasItem<class_CanvasItem>` 節點被繪製成單個物件。例如，它可以繪製重疊的半透明 2D 節點，而不會使重疊部分比預期更不透明（在 **CanvasGroup** 上設定 :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` 屬性即可實現該效果）。
 
-\ **Note:** The **CanvasGroup** uses a custom shader to read from the backbuffer to draw its children. Assigning a :ref:`Material<class_Material>` to the **CanvasGroup** overrides the built-in shader. To duplicate the behavior of the built-in shader in a custom :ref:`Shader<class_Shader>`, use the following:
+\ **注意：**\ **CanvasGroup** 使用一個自訂著色器從後台緩衝區讀取以繪製其子節點。為 **CanvasGroup** 指定一個 :ref:`Material<class_Material>` 會覆蓋內建著色器。要在自訂 :ref:`Shader<class_Shader>` 中複製內建著色器的行為，請使用以下方法：
 
 ::
 
@@ -35,7 +35,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
         COLOR *= c;
     }
 
-\ **Note:** Since **CanvasGroup** and :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` both utilize the backbuffer, children of a **CanvasGroup** who have their :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` set to anything other than :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` will not function correctly.
+\ **注意：**\ 由於 **CanvasGroup** 和 :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` 都使用後台緩衝區，因此 **CanvasGroup** 的子級如果將其 :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` 設定為 :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` 以外的其他值將無法正常工作。
 
 .. rst-class:: classref-reftable-group
 
@@ -73,7 +73,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_clear_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clear_margin**\ (\ )
 
-設定用於擴充該 **CanvasGroup** 清除矩形的邊距大小。會對該 **CanvasGroup** 所使用的後臺緩衝的區域進行擴充。邊距較小時可以減少後臺緩衝的區域大小，從而提升性能，但如果啟用了 :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>`\ ，較小的邊距可能在該 **CanvasGroup** 邊緣造成 mipmap 錯誤。因此，這個值應該儘量調小，但是如果畫布組的邊緣出現問題，就應該將其調大。
+設定用於擴充該 **CanvasGroup** 清除矩形的邊距大小。會對該 **CanvasGroup** 所使用的後臺緩衝的區域進行擴充。邊距較小時可以減少後臺緩衝的區域大小，從而提升效能，但如果啟用了 :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>`\ ，較小的邊距可能在該 **CanvasGroup** 邊緣造成 mipmap 錯誤。因此，這個值應該儘量調小，但是如果畫布組的邊緣出現問題，就應該將其調大。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_fit_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fit_margin**\ (\ )
 
-設定用於擴充該 **CanvasGroup** 繪圖矩形的邊距大小。確定該 **CanvasGroup** 大小的方法是：首先框定子節點的矩形區域，然後將該矩形按照 :ref:`fit_margin<class_CanvasGroup_property_fit_margin>` 進行擴展。會增大該 **CanvasGroup** 所使用的後臺緩衝的區域，也會增大該 **CanvasGroup** 所覆蓋的面積，兩者都會降低性能。這個值應該儘量調小，僅在需要時調大（例如自定義著色器效果）。
+設定用於擴充該 **CanvasGroup** 繪圖矩形的邊距大小。確定該 **CanvasGroup** 大小的方法是：首先框定子節點的矩形區域，然後將該矩形按照 :ref:`fit_margin<class_CanvasGroup_property_fit_margin>` 進行擴充。會增大該 **CanvasGroup** 所使用的後臺緩衝的區域，也會增大該 **CanvasGroup** 所覆蓋的面積，兩者都會降低效能。這個值應該儘量調小，僅在需要時調大（例如自訂著色器效果）。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_use_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_mipmaps**\ (\ )
 
-如果為 ``true``\ ，則會在繪製該 **CanvasGroup** 之前為其後臺緩衝計算 mipmap，附加到該 **CanvasGroup** 的自訂 :ref:`ShaderMaterial<class_ShaderMaterial>` 就可以使用 mipmap。Mipmap 的生成會造成性能消耗，所以應在必要時才啟用。
+如果為 ``true``\ ，則會在繪製該 **CanvasGroup** 之前為其後臺緩衝計算 mipmap，附加到該 **CanvasGroup** 的自訂 :ref:`ShaderMaterial<class_ShaderMaterial>` 就可以使用 mipmap。Mipmap 的生成會造成效能消耗，所以應在必要時才啟用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

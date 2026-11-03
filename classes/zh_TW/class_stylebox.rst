@@ -16,7 +16,7 @@ StyleBox
 說明
 ----
 
-樣式盒 **StyleBox** 是一個為 UI 元素定義風格化方框的抽象基底類別。常用於面板、按鈕、\ :ref:`LineEdit<class_LineEdit>` 的背景、\ :ref:`Tree<class_Tree>` 的背景等，也用於針對指標訊號檢查透明遮罩。如果 **StyleBox** 是某個控制項的遮罩，而遮罩檢查失敗，則點擊和運動訊號會穿透這個控制項進入下方控制項。
+樣式盒 **StyleBox** 是一個為 UI 元素定義風格化方框的抽象基底類別。常用於面板、按鈕、\ :ref:`LineEdit<class_LineEdit>` 的背景、\ :ref:`Tree<class_Tree>` 的背景等，也用於針對指標訊號檢查透明遮罩。如果 **StyleBox** 是某個控制項的遮罩，而遮罩檢查失敗，則點選和運動訊號會穿透這個控制項進入下方控制項。
 
 \ **注意：**\ 對於有\ *主題屬性*\ 的控制項節點，名為 ``focus`` 的 **StyleBox** 會顯示在名為 ``normal``\ 、\ ``hover``\ 、\ ``pressed`` 的 **StyleBox**\ 之上。這樣的行為有助於 ``focus`` **StyleBox** 在不同節點上複用。
 
@@ -100,7 +100,7 @@ StyleBox
 
 內容是什麼由使用此樣式盒的程式碼決定：例如 :ref:`Button<class_Button>` 會為其文字內容設定此內容邊距。
 
-使用者應該通過 :ref:`get_margin()<class_StyleBox_method_get_margin>` 獲取邊距，而不是直接讀取單獨方向上的屬性。這是因為這個函式會正確處理負值和上述備用邏輯。
+使用者應該通過 :ref:`get_margin()<class_StyleBox_method_get_margin>` 取得邊距，而不是直接讀取單獨方向上的屬性。這是因為這個函式會正確處理負值和上述備用邏輯。
 
 .. rst-class:: classref-item-separator
 

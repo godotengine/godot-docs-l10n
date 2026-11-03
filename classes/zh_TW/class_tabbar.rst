@@ -271,9 +271,9 @@ TabBar
 
 **tab_close_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_close_pressed>`
 
-Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` is ``true``, when middle-clicking on a tab.
+當按下分頁的關閉按鈕時，或者如果 :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` 為 ``true`` 且中鍵點選分頁時，會發出。
 
-\ **Note:** Tabs are not removed automatically; this behavior needs to be coded manually. For example:
+\ **注意：**\ 分頁不會自動移除；這種行為需要手動編寫程式碼來實現。例如：
 
 
 .. tabs::
@@ -310,7 +310,7 @@ Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mous
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+右鍵點選分頁時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Emitted when a tab is right-clicked.
 
 **tab_selected**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_selected>`
 
-Emitted when a tab is selected via click, directional input, or script, even if it is the current tab.
+通過點選、定向輸入或腳本選中某個分頁時發出，即便該分頁本來就是目前分頁。
 
 .. rst-class:: classref-section-separator
 
@@ -345,7 +345,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+將分頁左對齊。
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -353,7 +353,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+將分頁居中對齊。
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -361,7 +361,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+將分頁右對齊。
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -450,7 +450,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+如果為 ``true``\ ，則在分頁上點選滑鼠中鍵將發出 :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` 訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_current_tab**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_current_tab**\ (\ )
 
-The index of the current selected tab. A value of ``-1`` means that no tab is selected and can only be set when :ref:`deselect_enabled<class_TabBar_property_deselect_enabled>` is ``true`` or if all tabs are hidden or disabled.
+目前選中分頁的索引號。\ ``-1`` 表示沒有選中任何分頁，只有在 :ref:`deselect_enabled<class_TabBar_property_deselect_enabled>` 為 ``true`` 或所有分頁都處於隱藏或停用狀態下才能夠設定。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ The index of the current selected tab. A value of ``-1`` means that no tab is se
 - |void| **set_deselect_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_deselect_enabled**\ (\ )
 
-If ``true``, all tabs can be deselected so that no tab is selected. Click on the current tab to deselect it.
+如果為 ``true``\ ，則所有分頁都可以被取消選擇，不選中任何分頁。按一下目前分頁取消選中。
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ If ``true``, all tabs can be deselected so that no tab is selected. Click on the
 - |void| **set_scrolling_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_scrolling_enabled**\ (\ )
 
-如果為 ``true``\ ，滑鼠的滾輪可用於導覽滾動視圖。
+如果為 ``true``\ ，滑鼠的滾輪可用於導覽捲動視圖。
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ If ``true``, all tabs can be deselected so that no tab is selected. Click on the
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange. The delay for when this happens is dictated by :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
+如果為 ``true``\ ，則在拖動內容時將滑鼠懸停在分頁上將切換到該分頁。將滑鼠懸停在另一個分頁上進行重新排列時無效。該操作的延遲時間由 :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>` 決定。
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+分頁的水平對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ The horizontal alignment of the tabs.
 - |void| **set_tab_close_display_policy**\ (\ value\: :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>`\ )
 - :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **get_tab_close_display_policy**\ (\ )
 
-When the close button will appear on the tabs.
+分頁上顯示關閉按鈕的時機。
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ When the close button will appear on the tabs.
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabBar_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+如果為 ``true``\ ，則 ``index`` 處的分頁將被停用。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabBar_property_tab_{index}/icon>`
 
-If ``true``, the tab at ``index`` is hidden.
+如果為 ``true``\ ，則 ``index`` 處的分頁將被隱藏。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -677,9 +677,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/title>`
 
-The title text of the tab at ``index``.
+``index``\ 處分頁的標題文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/tooltip** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/tooltip>`
 
-The tooltip text of the tab at ``index``.
+``index`` 處分頁的工具提示文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +712,7 @@ The tooltip text of the tab at ``index``.
 
 具有相同重新排列組 ID 的 **TabBar** 將允許在它們之間拖動分頁。使用 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>` 啟用拖動。
 
-將該屬性設定為 ``-1`` 將禁用 **TabBar** 之間的重新排列。
+將該屬性設定為 ``-1`` 將停用 **TabBar** 之間的重新排列。
 
 .. rst-class:: classref-section-separator
 
@@ -753,7 +753,7 @@ The tooltip text of the tab at ``index``.
 
 |void| **ensure_tab_visible**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_method_ensure_tab_visible>`
 
-移動滾動視圖，使標籤可見。
+移動捲動視圖，使標籤可見。
 
 .. rst-class:: classref-item-separator
 
@@ -825,7 +825,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`int<class_int>` **get_tab_idx_at_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_idx_at_point>`
 
-返回位於局部座標 ``point`` 處的分頁的索引。如果該點在控制項邊界之外或查詢位置沒有分頁，則返回 ``-1``\ 。
+返回位於區域座標 ``point`` 處的分頁的索引。如果該點在控制項邊界之外或查詢位置沒有分頁，則返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -873,7 +873,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`Rect2<class_Rect2>` **get_tab_rect**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_rect>`
 
-返回帶有局部位置和大小的分頁 :ref:`Rect2<class_Rect2>`\ 。
+返回帶有區域位置和大小的分頁 :ref:`Rect2<class_Rect2>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -909,7 +909,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`String<class_String>` **get_tab_tooltip**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_tooltip>`
 
-Returns the tooltip text of the tab at index ``tab_idx``.
+回傳索引 ``tab_idx`` 處的分頁的工具提示文字。
 
 .. rst-class:: classref-item-separator
 
@@ -921,7 +921,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 :ref:`bool<class_bool>` **is_tab_disabled**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_is_tab_disabled>`
 
-如果索引 ``tab_idx`` 處的分頁被禁用，則返回 ``true``\ 。
+如果索引 ``tab_idx`` 處的分頁被停用，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -993,7 +993,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 |void| **set_tab_button_icon**\ (\ tab_idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TabBar_method_set_tab_button_icon>`
 
-設定索引為 ``tab_idx`` 的分頁按鈕的圖示 ``icon``\ （位於右側，在關閉按鈕之前），會將該按鈕設為可見且可點擊（見 :ref:`tab_button_pressed<class_TabBar_signal_tab_button_pressed>`\ ）。給定 ``null`` 值會隱藏該按鈕。
+設定索引為 ``tab_idx`` 的分頁按鈕的圖示 ``icon``\ （位於右側，在關閉按鈕之前），會將該按鈕設為可見且可點選（見 :ref:`tab_button_pressed<class_TabBar_signal_tab_button_pressed>`\ ）。給定 ``null`` 值會隱藏該按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -1005,7 +1005,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 |void| **set_tab_disabled**\ (\ tab_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TabBar_method_set_tab_disabled>`
 
-如果 ``disabled`` 為 ``true``\ ，則禁用索引 ``tab_idx`` 處的選項卡，使其不可互動。
+如果 ``disabled`` 為 ``true``\ ，則停用索引 ``tab_idx`` 處的分頁，使其不可互動。
 
 .. rst-class:: classref-item-separator
 
@@ -1017,7 +1017,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 |void| **set_tab_hidden**\ (\ tab_idx\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TabBar_method_set_tab_hidden>`
 
-如果 ``hidden`` 為 ``true``\ ，則隱藏索引 ``tab_idx`` 處的選項卡，使其從分頁區域消失。
+如果 ``hidden`` 為 ``true``\ ，則隱藏索引 ``tab_idx`` 處的分頁，使其從分頁區域消失。
 
 .. rst-class:: classref-item-separator
 
@@ -1029,7 +1029,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 |void| **set_tab_icon**\ (\ tab_idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TabBar_method_set_tab_icon>`
 
-設定索引 ``tab_idx`` 處的分頁的圖示。
+為索引 ``tab_idx`` 的分頁設定圖示 ``icon``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1053,7 +1053,7 @@ Returns the tooltip text of the tab at index ``tab_idx``.
 
 |void| **set_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_language>`
 
-Sets the language code of the title for the tab at index ``tab_idx`` to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+將索引為 ``tab_idx`` 的分頁的標題語言程式碼設定為 ``language``\ 。這是用於斷行和文字塑形算法的。如果 ``language`` 為空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1065,7 +1065,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_metadata**\ (\ tab_idx\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_TabBar_method_set_tab_metadata>`
 
-為 ``tab_idx`` 的分頁設定中繼資料的值，之後可以使用 :ref:`get_tab_metadata()<class_TabBar_method_get_tab_metadata>` 獲取。
+為 ``tab_idx`` 的分頁設定中繼資料的值，之後可以使用 :ref:`get_tab_metadata()<class_TabBar_method_get_tab_metadata>` 取得。
 
 .. rst-class:: classref-item-separator
 
@@ -1101,9 +1101,9 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_tooltip**\ (\ tab_idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_tooltip>`
 
-Sets a ``tooltip`` for tab at index ``tab_idx``.
+設定索引 ``tab_idx`` 處的分頁的工具提示 ``tooltip``\ 。
 
-\ **Note:** By default, if the ``tooltip`` is empty and the tab text is truncated (not all characters fit into the tab), the title will be displayed as a tooltip. To hide the tooltip, assign ``" "`` as the ``tooltip`` text.
+\ **注意：**\ 預設情況下，如果 ``tooltip`` 為空而分頁文字發生了裁剪（分頁無法完整顯示所有字元），那麼就會將標題作為工具提示顯示。要隱藏工具提示，請將 ``tooltip`` 文字設定為 ``" "``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -1132,7 +1132,7 @@ Sets a ``tooltip`` for tab at index ``tab_idx``.
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_TabBar_theme_color_font_disabled_color>`
 
-禁用分頁的字形顏色。
+停用分頁的字形顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1192,7 +1192,7 @@ Sets a ``tooltip`` for tab at index ``tab_idx``.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+停用的分頁的圖示顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1204,7 +1204,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+目前懸停的分頁的圖示顏色。不適用於選中的分頁。
 
 .. rst-class:: classref-item-separator
 
@@ -1216,7 +1216,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+目前所選分頁的圖示顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1228,7 +1228,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+其他未被選中的分頁的圖示顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1252,7 +1252,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`int<class_int>` **hover_switch_wait_msec** = ``500`` :ref:`🔗<class_TabBar_theme_constant_hover_switch_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait before switching the tab.
+在拖放操作中，切換分頁之前需要等待的毫秒數。
 
 .. rst-class:: classref-item-separator
 
@@ -1278,7 +1278,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 分頁文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_TabBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_TabBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1290,7 +1290,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`int<class_int>` **tab_separation** = ``0`` :ref:`🔗<class_TabBar_theme_constant_tab_separation>`
 
-The space between tabs in the tab bar.
+分頁欄中分頁的間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1338,7 +1338,7 @@ The space between tabs in the tab bar.
 
 :ref:`Texture2D<class_Texture2D>` **decrement** :ref:`🔗<class_TabBar_theme_icon_decrement>`
 
-左邊的箭頭按鈕的圖示，當有太多的標籤無法容納在容器的寬度內時出現。當該按鈕被禁用時（即第一個標籤是可見的），它顯示為半透明的。
+左邊的箭頭按鈕的圖示，當有太多的標籤無法容納在容器的寬度內時出現。當該按鈕被停用時（即第一個標籤是可見的），它顯示為半透明的。
 
 .. rst-class:: classref-item-separator
 
@@ -1362,7 +1362,7 @@ The space between tabs in the tab bar.
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
+用於指示拖動的分頁將放置在何處的圖示（參見 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1374,7 +1374,7 @@ Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_re
 
 :ref:`Texture2D<class_Texture2D>` **increment** :ref:`🔗<class_TabBar_theme_icon_increment>`
 
-右箭頭按鈕的圖示，當有太多的標籤無法容納在容器的寬度內時出現。當該按鈕被禁用時（即最後一個標籤是可見的），它顯示為半透明的。
+右箭頭按鈕的圖示，當有太多的標籤無法容納在容器的寬度內時出現。當該按鈕被停用時（即最後一個標籤是可見的），它顯示為半透明的。
 
 .. rst-class:: classref-item-separator
 
@@ -1422,7 +1422,7 @@ Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_re
 
 :ref:`StyleBox<class_StyleBox>` **tab_disabled** :ref:`🔗<class_TabBar_theme_style_tab_disabled>`
 
-分頁處於禁用狀態時的樣式。
+分頁處於停用狀態時的樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -1434,7 +1434,7 @@ Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_re
 
 :ref:`StyleBox<class_StyleBox>` **tab_focus** :ref:`🔗<class_TabBar_theme_style_tab_focus>`
 
-該 :ref:`Button<class_Button>` 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ ``focus`` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實作這個目的。要禁用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，禁用聚焦的視覺效果會影響使用鍵盤/手柄進行導覽的可用性，所以出於可存取性的原因，不建議這樣做。
+該 **TabBar** 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 

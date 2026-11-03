@@ -543,13 +543,13 @@ enum **CellShape**: :ref:`🔗<enum_AStarGrid2D_CellShape>`
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_id_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+回傳一個陣列，其中包含 AStar2D 在給定點之間找到的路徑中的點。陣列從路徑的起點到終點進行排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 點被停用，則回傳一個空陣列（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 點未被停用，沒有通往目標的有效路徑並且 ``allow_partial_path`` 為 ``true``\ ，則會回傳通往距離目標最近的可達點的路徑。
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+\ **注意：**\ 如果 ``allow_partial_path`` 為 ``true`` 並且 ``to_id`` 處於停用狀態，搜尋耗時可能異常地大。
 
 .. rst-class:: classref-item-separator
 
@@ -573,15 +573,15 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by **AStarGrid2D** between the given points. The array is ordered from the starting point to the ending point of the path.
+回傳一個陣列，其中包含 **AStarGrid2D** 在給定點之間找到的路徑上的點。陣列從路徑的起點到終點排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 點被停用，則回傳一個空陣列（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 點未被停用，沒有通往目標的有效路徑並且 ``allow_partial_path`` 為 ``true``\ ，則會回傳通往距離目標最近的可達點的路徑。
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **注意：**\ 該方法不是執行緒安全的，同一時間只能有一個 :ref:`Thread<class_Thread>` 使用。請考慮使用 :ref:`Mutex<class_Mutex>` 來確保執行緒獨佔存取，避免競態條件。
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+另外，如果 ``allow_partial_path`` 為 ``true`` 並且 ``to_id`` 處於停用狀態，搜尋耗時可能異常地大。
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the
 
 |void| **set_point_weight_scale**\ (\ id\: :ref:`Vector2i<class_Vector2i>`, weight_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AStarGrid2D_method_set_point_weight_scale>`
 
-設定指定 ``id`` 點的 ``weight_scale``\ 。在計算從鄰近點移動至此點的段落成本時，會將 :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` 的結果乘以此值。
+為具有給定 ``id`` 的點設定 ``weight_scale``\ 。在確定從相鄰點到該點穿越路段的總成本時，\ ``weight_scale`` 要乘以 :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` 的結果。
 
-\ **注意：**\ 呼叫此函式後無需再次呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
+\ **注意：**\ 呼叫該函式後不需要呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 

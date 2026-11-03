@@ -16,7 +16,7 @@ A base type for the nodes that perform vector operations within the visual shade
 Description
 -----------
 
-This is an abstract class. See the derived types for descriptions of the possible operations.
+Ceci est une classe abstraite. Voir les types dérivés pour les descriptions des opérations possibles.
 
 .. rst-class:: classref-reftable-group
 

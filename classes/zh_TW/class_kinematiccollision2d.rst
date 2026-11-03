@@ -69,7 +69,7 @@ KinematicCollision2D
 
 :ref:`float<class_float>` **get_angle**\ (\ up_direction\: :ref:`Vector2<class_Vector2>` = Vector2(0, -1)\ ) |const| :ref:`🔗<class_KinematicCollision2D_method_get_angle>`
 
-根據 ``up_direction`` 返回碰撞角度，\ ``up_direction`` 預設為 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。該返回值始終為正。
+根據 ``up_direction``\ （預設為 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ ）回傳碰撞角度。此值恆為正值。
 
 .. rst-class:: classref-item-separator
 

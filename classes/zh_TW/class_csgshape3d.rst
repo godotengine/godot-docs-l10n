@@ -16,15 +16,15 @@ CSG 基底類別。
 說明
 ----
 
-This is the CSG base class that provides CSG operation support to the various CSG nodes in Godot.
+這是 CSG 的基底類別，為 Godot 中的各種 CSG 節點提供 CSG 運算支援。
 
-\ **Performance:** CSG nodes are only intended for prototyping as they have a significant CPU performance cost. Consider baking final CSG operation results into static geometry that replaces the CSG nodes.
+\ **效能：**\ CSG 節點僅適用於原型設計，存在顯著的 CPU 效能消耗。請考慮將最終的 CSG 運算結果烘焙為靜態幾何體，替換 CSG 節點。
 
-Individual CSG root node results can be baked to nodes with static resources with the editor menu that appears when a CSG root node is selected.
+使用選中 CSG 根節點後顯示的編輯器選單可以將各個 CSG 根節點的結果烘焙為使用靜態資源的節點。
 
-Individual CSG root nodes can also be baked to static resources with scripts by calling :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` for the visual mesh or :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>` for the physics collision.
+使用腳本也可以將各個 CSG 根節點烘焙為靜態資源，可視網格請呼叫 :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>`\ ，物理碰撞請呼叫 :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>`\ 。
 
-Entire scenes of CSG nodes can be baked to static geometry and exported with the editor glTF scene exporter: **Scene > Export As... > glTF 2.0 Scene...**
+使用編輯器的 gltf 場景匯出器可以將由 CSG 節點構成的整個場景烘焙為靜態幾何體：\ **場景 > 匯出為... > glTF 2.0 場景...**
 
 .. rst-class:: classref-introduction-group
 
@@ -146,9 +146,9 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+啟用自動平滑。這將覆蓋 CSG 節點上的任何原有平滑設定，轉而使用 :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>`\ （平滑角度）根據面與面之間的夾角來計算法線。
 
-Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+\ :ref:`CSGCombiner3D<class_CSGCombiner3D>` 節點的所有子節點將被視為一個單一的網格體。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as 
 - |void| **set_calculate_tangents**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_calculating_tangents**\ (\ )
 
-Calculate tangents for the CSG shape which allows the use of normal and height maps. This is only applied on the root shape, this setting is ignored on any child. Setting this to ``false`` can speed up shape generation slightly.
+計算允許使用法線貼圖的 CSG 形狀的切線。僅適用於根形狀，該設定在所有子級上均被忽略。設定為 ``false`` 可以略微加速形狀的生成。
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
 
-When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+當自動平滑（autosmooth）啟用時，面與面之間的夾角小於該值的會被平滑處理，而夾角大於該值的則會保持銳利（保留稜角）。
 
-Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
+注意：將該角度設定為低於 0.1 的值會導致所有平滑效果被停用，這可以用來提升效能。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can 
 
 **已棄用：** The CSG library no longer uses snapping.
 
-This property does nothing.
+該屬性無效。
 
 .. rst-class:: classref-item-separator
 
@@ -309,11 +309,11 @@ This property does nothing.
 
 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` **bake_collision_shape**\ (\ ) :ref:`🔗<class_CSGShape3D_method_bake_collision_shape>`
 
-Returns a baked physics :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` of this node's CSG operation result. Returns an empty shape if the node is not a CSG root node or has no valid geometry.
+回傳針對該節點 CSG 運算結果烘焙的物理 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ 。如果該節點不是 CSG 根節點或者不包含有效的幾何體，則回傳空形狀。
 
-\ **Performance:** If the CSG operation results in a very detailed geometry with many faces physics performance will be very slow. Concave shapes should in general only be used for static level geometry and not with dynamic objects that are moving.
+\ **效能：**\ 如果 CSG 運算得到的是包含大量細節的幾何體，面數很多，那麼物理效能可能非常慢。一般來說，凹面形狀應該只用來製作靜態關卡幾何體，不應用來製作可以移動的動態物體。
 
-\ **Note:** CSG mesh data updates are deferred, which means they are updated with a delay of one rendered frame. To avoid getting an empty shape or outdated mesh data, make sure to call ``await get_tree().process_frame`` before using :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>` in :ref:`Node._ready()<class_Node_private_method__ready>` or after changing properties on the **CSGShape3D**.
+\ **注意：**\ CSG 網格資料是延遲更新的，即延遲一個渲染影格後更新。為了避免取得到空形狀或過時的網格資料，請確保在 :ref:`Node._ready()<class_Node_private_method__ready>` 中使用 :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>` 之前，或在更改 **CSGShape3D** 的屬性後，呼叫 ``await get_tree().process_frame``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ Returns a baked physics :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_static_mesh**\ (\ ) :ref:`🔗<class_CSGShape3D_method_bake_static_mesh>`
 
-Returns a baked static :ref:`ArrayMesh<class_ArrayMesh>` of this node's CSG operation result. Materials from involved CSG nodes are added as extra mesh surfaces. Returns an empty mesh if the node is not a CSG root node or has no valid geometry.
+回傳該節點 CSG 運算結果烘焙得到的靜態 :ref:`ArrayMesh<class_ArrayMesh>`\ 。相關 CSG 節點的材質會作為額外的網格表面新增。如果該節點不是 CSG 根節點或沒有有效的幾何體，則回傳空網格。
 
-\ **Note:** CSG mesh data updates are deferred, which means they are updated with a delay of one rendered frame. To avoid getting an empty mesh or outdated mesh data, make sure to call ``await get_tree().process_frame`` before using :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` in :ref:`Node._ready()<class_Node_private_method__ready>` or after changing properties on the **CSGShape3D**.
+\ **注意：**\ CSG 網格資料是延遲更新的，存在一個渲染影格的更新延遲。要避免取得到空的形狀或過時的網格資料，請確保在 :ref:`Node._ready()<class_Node_private_method__ready>` 中使用 :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` 之前以及在修改 **CSGShape3D** 的屬性後呼叫 ``await get_tree().process_frame``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -363,9 +363,9 @@ Returns a baked static :ref:`ArrayMesh<class_ArrayMesh>` of this node's CSG oper
 
 :ref:`Array<class_Array>` **get_meshes**\ (\ ) |const| :ref:`🔗<class_CSGShape3D_method_get_meshes>`
 
-Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`Transform3D<class_Transform3D>` of this node and the second is the root :ref:`Mesh<class_Mesh>` of this node. Only works when this node is the root shape.
+回傳一個包含兩個元素的 :ref:`Array<class_Array>`\ ，第一個元素是該節點的 :ref:`Transform3D<class_Transform3D>`\ ，第二個元素是該節點的根 :ref:`Mesh<class_Mesh>`\ 。僅在該節點為根形狀時有效。
 
-\ **Note:** CSG mesh data updates are deferred, which means they are updated with a delay of one rendered frame. To avoid getting an empty shape or outdated mesh data, make sure to call ``await get_tree().process_frame`` before using :ref:`get_meshes()<class_CSGShape3D_method_get_meshes>` in :ref:`Node._ready()<class_Node_private_method__ready>` or after changing properties on the **CSGShape3D**.
+\ **注意：**\ CSG 網格資料是延遲更新的，存在一個渲染影格的更新延遲。要避免取得到空的形狀或過時的網格資料，請確保在 :ref:`Node._ready()<class_Node_private_method__ready>` 中使用 :ref:`get_meshes()<class_CSGShape3D_method_get_meshes>` 之前以及在修改 **CSGShape3D** 的屬性後呼叫 ``await get_tree().process_frame``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 :ref:`bool<class_bool>` **is_root_shape**\ (\ ) |const| :ref:`🔗<class_CSGShape3D_method_is_root_shape>`
 
-如果這是根形狀，因此是算繪的物件，則返回 ``true``\ 。
+如果這是根形狀，因此是渲染的物件，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CSGShape3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_CSGShape3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_CSGShape3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CSGShape3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

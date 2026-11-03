@@ -7,20 +7,20 @@ RenderSceneBuffersRD
 
 **繼承：** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Render scene buffer implementation for the RenderingDevice based renderers.
+渲染場景緩衝的實作，適用於基於 RenderingDevice 的渲染器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
+該物件管理基於渲染裝置的渲染器的所有 3D 渲染緩衝區。為每個啟用 3D 渲染的視埠建立該物件的實例。另見 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`\ 。
 
-All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
+所有緩衝區都被組織在\ **情境**\ 中。預設情境被稱為 **render_buffers**\ ，可以包含顏色緩衝區、深度緩衝區、速度緩衝區、VRS 密度圖和這些緩衝區的 MSAA 變體等。
 
-Buffers are only guaranteed to exist during rendering of the viewport.
+緩衝區僅保證在視埠渲染期間存在。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是內部渲染伺服器物件。請勿在腳本中實例化該類。
 
 .. rst-class:: classref-reftable-group
 
@@ -137,7 +137,7 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 :ref:`RID<class_RID>` **create_texture_view**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, view_name\: :ref:`StringName<class_StringName>`, view\: :ref:`RDTextureView<class_RDTextureView>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_create_texture_view>`
 
-Create a new texture view for an existing texture and cache this under the given ``view_name``. Will return the existing texture view if it already exists. Will error if the source texture doesn't exist.
+為已有紋理建立一個新的紋理檢視，並將其快取在給定的 ``view_name`` 下。如果已有的紋理檢視已經存在，則回傳該檢視。如果來源紋理不存在則會出錯。
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ Create a new texture view for an existing texture and cache this under the given
 
 :ref:`RID<class_RID>` **get_color_layer**\ (\ layer\: :ref:`int<class_int>`, msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_color_layer>`
 
-Returns the specified layer from the color texture we are rendering 3D content to.
+從渲染 3D 內容的顏色紋理回傳指定的圖層。
 
-If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of the buffer.
+如果 ``msaa`` 為 ``true`` 並且啟用了 MSAA，則會回傳緩衝的 MSAA 變種。
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`RID<class_RID>` **get_color_texture**\ (\ msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_color_texture>`
 
-Returns the color texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+回傳渲染 3D 內容的顏色紋理。如果使用多檢視，這將是一個包含所有檢視的紋理陣列。
 
-If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of the buffer.
+如果 ``msaa`` 為 ``true`` 並且啟用了 MSAA，則會回傳緩衝的 MSAA 變種。
 
 .. rst-class:: classref-item-separator
 
@@ -177,9 +177,9 @@ If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`RID<class_RID>` **get_depth_layer**\ (\ layer\: :ref:`int<class_int>`, msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_depth_layer>`
 
-Returns the specified layer from the depth texture we are rendering 3D content to.
+從渲染 3D 內容的深度紋理回傳指定的圖層。
 
-If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of the buffer.
+如果 ``msaa`` 為 ``true`` 並且啟用了 MSAA，則會回傳緩衝的 MSAA 變種。
 
 .. rst-class:: classref-item-separator
 
@@ -191,9 +191,9 @@ If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`RID<class_RID>` **get_depth_texture**\ (\ msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_depth_texture>`
 
-Returns the depth texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+回傳渲染 3D 內容的深度紋理。如果使用多檢視，這將是一個包含所有檢視的紋理陣列。
 
-If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of the buffer.
+如果 ``msaa`` 為 ``true`` 並且啟用了 MSAA，則會回傳緩衝的 MSAA 變種。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ If ``msaa`` is ``true`` and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`float<class_float>` **get_fsr_sharpness**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_fsr_sharpness>`
 
-Returns the FSR sharpness value used while rendering the 3D content (if :ref:`get_scaling_3d_mode()<class_RenderSceneBuffersRD_method_get_scaling_3d_mode>` is an FSR mode).
+回傳渲染 3D 內容時使用的 FSR 銳度值（如果 :ref:`get_scaling_3d_mode()<class_RenderSceneBuffersRD_method_get_scaling_3d_mode>` 是 FSR 模式）。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns the FSR sharpness value used while rendering the 3D content (if :ref:`ge
 
 :ref:`Vector2i<class_Vector2i>` **get_internal_size**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_internal_size>`
 
-傳回預設建立紋理的算繪緩衝區的內部大小（放大前的大小）。
+傳回預設建立紋理的渲染緩衝區的內部大小（放大前的大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Returns the FSR sharpness value used while rendering the 3D content (if :ref:`ge
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_msaa_3d>`
 
-Returns the applied 3D MSAA mode for this viewport.
+回傳該視埠應用的 3D MSAA 模式。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Returns the applied 3D MSAA mode for this viewport.
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **get_scaling_3d_mode**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_scaling_3d_mode>`
 
-Returns the scaling mode used for upscaling.
+回傳用於放大的縮放模式。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Returns the scaling mode used for upscaling.
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_screen_space_aa>`
 
-Returns the screen-space antialiasing method applied.
+回傳所應用的螢幕空間反鋸齒方法。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Returns the screen-space antialiasing method applied.
 
 :ref:`Vector2i<class_Vector2i>` **get_target_size**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_target_size>`
 
-Returns the target size of the render buffer (size after upscaling).
+回傳渲染緩衝區的目標大小（放大後的大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Returns the target size of the render buffer (size after upscaling).
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **get_texture_samples**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_samples>`
 
-Returns the number of MSAA samples used.
+回傳使用的 MSAA 樣本的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Returns the number of MSAA samples used.
 
 :ref:`RID<class_RID>` **get_texture_slice**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_slice>`
 
-將指定的字元算繪到字形快取紋理。
+將指定的字元渲染到字形快取紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Returns the number of MSAA samples used.
 
 :ref:`bool<class_bool>` **get_use_debanding**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_use_debanding>`
 
-Returns ``true`` if debanding is enabled.
+如果啟用了去色帶功能，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns ``true`` if debanding is enabled.
 
 :ref:`RID<class_RID>` **get_velocity_layer**\ (\ layer\: :ref:`int<class_int>`, msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_velocity_layer>`
 
-從我們算繪 3D 內容的速度紋理傳回指定圖層。
+從我們渲染 3D 內容的速度紋理傳回指定圖層。
 
 .. rst-class:: classref-item-separator
 
@@ -397,9 +397,9 @@ Returns ``true`` if debanding is enabled.
 
 :ref:`RID<class_RID>` **get_velocity_texture**\ (\ msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_velocity_texture>`
 
-Returns the velocity texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+回傳渲染 3D 內容的速度紋理。如果使用多檢視，這將是一個包含所有檢視的紋理陣列。
 
-If ``msaa`` is **true** and MSAA is enabled, this returns the MSAA variant of the buffer.
+如果 ``msaa`` 為 **true** 並且啟用了 MSAA，則會回傳緩衝的 MSAA 變種。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ If ``msaa`` is **true** and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_view_count>`
 
-返回關聯視口的視圖數。
+返回關聯視埠的視圖數。
 
 .. rst-class:: classref-item-separator
 

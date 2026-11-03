@@ -83,7 +83,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 **resource_selected**\ (\ resource\: :ref:`Resource<class_Resource>`, inspect\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_selected>`
 
-當資源值被設定，並且使用者點擊它編輯時觸發。當 ``inspect`` 為 ``true`` 時，該訊號是由本文功能表“編輯”或“檢查”選項引起的。
+當資源值被設定，並且使用者點選它編輯時觸發。當 ``inspect`` 為 ``true`` 時，該訊號是由本文功能表“編輯”或“檢查”選項引起的。
 
 .. rst-class:: classref-section-separator
 
@@ -185,11 +185,11 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+該虛方法會在更新 :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker** 的情境選單時呼叫。實作該方法可使用你自己的選項覆蓋“新建”項部分。\ ``menu_node`` 是對 :ref:`PopupMenu<class_PopupMenu>` 節點的參照。
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **注意：**\ 實作 :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` 來處理這些自訂項。
 
-\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
+\ **注意：**\ 相關的內建選項（“載入”、“複製”、“貼上”等）之後會使用從 ``0`` 開始的寫死 ID，自動新增到 ``menu_node`` 中。自訂選項需要使用不衝突的 ID 才能被正確處理。使用 ``id = 100 + custom_option_index`` 是安全的（“新建”部分中的預設項就是使用這種方式）。
 
 .. rst-class:: classref-item-separator
 

@@ -473,7 +473,7 @@ The **CanvasItem** will inherit the oversampling mode from its parent.
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_DISABLED** = ``1``
 
-The oversampling is not affected by **CanvasItem** scale, and is equal to the :ref:`Viewport<class_Viewport>` oversampling.
+Le sur-échantillonnage n'est pas affecté par l'échelle du **CanvasItem**, et est égal au sur-échantillonnage du :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_ENABLED:
 
@@ -481,7 +481,7 @@ The oversampling is not affected by **CanvasItem** scale, and is equal to the :r
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_ENABLED** = ``2``
 
-The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_Viewport>` oversampling.
+Le sur-échantillonnage est le produit de l'échelle du **CanvasItem** et du sur-échantillonnage du :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_MAX:
 
@@ -1287,24 +1287,24 @@ Définit une transformation personnalisée pour le dessin via la matrice. Tout c
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Draws ``text`` using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dessine ``text`` en utilisant la police ``font`` spécifiée à la position ``pos`` dans l'espace local (le coin en bas à gauche correspond à la ligne de base de la police). Le texte aura sa couleur multipliée par ``modulate``. Si ``width`` est supérieure ou égale à 0, le texte sera coupé s'il dépasse la largeur spécifiée. Si ``oversampling`` est supérieur à zéro, il est utilisé comme facteur de sur-échantillonnage de la police, sinon les paramètres de sur-échantillonnage du viewport sont utilisés.
 
-\ **Example:** Draw "Hello world", using the project's default font:
+\ **Exemple :** Dessiner "Bonjour le monde", en utilisant la police par défaut du projet :
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    draw_string(ThemeDB.fallback_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.fallback_font_size)
+    draw_string(ThemeDB.fallback_font, Vector2(64, 64), "Bonjour le monde", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.fallback_font_size)
 
  .. code-tab:: csharp
 
-    DrawString(ThemeDB.FallbackFont, new Vector2(64, 64), "Hello world", HorizontalAlignment.Left, -1, ThemeDB.FallbackFontSize);
+    DrawString(ThemeDB.FallbackFont, new Vector2(64, 64), "Bonjour le monde", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.FallbackFontSize);
 
 
 
-See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
+Voir aussi :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 .. rst-class:: classref-item-separator
 

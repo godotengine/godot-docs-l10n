@@ -316,7 +316,7 @@ If ``true``, the texture will be sampled with coordinates ranging from 0 to the 
 - |void| **set_use_anisotropy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_anisotropy**\ (\ )
 
-If ``true``, perform anisotropic sampling. See :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>`.
+Si es ``true``, realiza un muestreo anisotrópico. Véase :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

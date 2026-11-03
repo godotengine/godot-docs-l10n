@@ -9,18 +9,18 @@ VisibleOnScreenNotifier2D
 
 **被繼承：** :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`
 
-A rectangular region of 2D space that detects whether it is visible on screen.
+2D 空間的矩形區域，用於檢測其在螢幕上是否可見。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**VisibleOnScreenNotifier2D** represents a rectangular region of 2D space. When any part of this region becomes visible on screen or in a viewport, it will emit a :ref:`screen_entered<class_VisibleOnScreenNotifier2D_signal_screen_entered>` signal, and likewise it will emit a :ref:`screen_exited<class_VisibleOnScreenNotifier2D_signal_screen_exited>` signal when no part of it remains visible.
+**VisibleOnScreenNotifier2D** 表示 2D 空間的矩形區塊。當該區塊的任何部分在螢幕或視埠中可見時，它將發出 :ref:`screen_entered<class_VisibleOnScreenNotifier2D_signal_screen_entered>` 訊號，同樣，當其任何部分都不可見時，它將發出 :ref:`screen_exited<class_VisibleOnScreenNotifier2D_signal_screen_exited>` 訊號。
 
-If you want a node to be enabled automatically when this region is visible on screen, use :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`.
+如果希望當該區塊在螢幕上可見時自動啟用節點，請使用 :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`\ 。
 
-\ **Note:** **VisibleOnScreenNotifier2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` is set to ``true``.
+\ **注意：**\ **VisibleOnScreenNotifier2D** 使用渲染剔除程式碼來確定它在螢幕上是否可見，因此除非 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 被設定為 ``true``\ ，否則它不會起作用。
 
 .. rst-class:: classref-introduction-group
 
@@ -121,7 +121,7 @@ If you want a node to be enabled automatically when this region is visible on sc
 - |void| **set_show_rect**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_rect**\ (\ )
 
-If ``true``, shows the rectangle area of :ref:`rect<class_VisibleOnScreenNotifier2D_property_rect>` in the editor with a translucent magenta fill. Unlike changing the visibility of the VisibleOnScreenNotifier2D, this does not affect the screen culling detection.
+如果為 ``true``\ ，則在編輯器中以半透明的洋紅色填充顯示 :ref:`rect<class_VisibleOnScreenNotifier2D_property_rect>` 的矩形區域。這樣做與更改 VisibleOnScreenNotifier2D 的可見性不同，不會影響螢幕剔除檢測。
 
 .. rst-class:: classref-section-separator
 
@@ -138,9 +138,9 @@ If ``true``, shows the rectangle area of :ref:`rect<class_VisibleOnScreenNotifie
 
 :ref:`bool<class_bool>` **is_on_screen**\ (\ ) |const| :ref:`🔗<class_VisibleOnScreenNotifier2D_method_is_on_screen>`
 
-If ``true``, the bounding rectangle is on the screen.
+如果為 ``true``\ ，則邊界矩形在螢幕上。
 
-\ **Note:** It takes one frame for the **VisibleOnScreenNotifier2D**'s visibility to be determined once added to the scene tree, so this method will always return ``false`` right after it is instantiated, before the draw pass.
+\ **注意：**\ **VisibleOnScreenNotifier2D** 被新增到場景樹後需要一影格才能確定其可見性，因此該方法在它被實例化後，在繪製階段之前，將始終回傳 ``false`` 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

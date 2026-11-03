@@ -19,7 +19,7 @@ MultiMeshInstance3D
 
 :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` 是專用於產生實體基於 :ref:`MultiMesh<class_MultiMesh>` 資源的 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 的節點。
 
-適用於優化大量給定網格實例的算繪（例如森林中的樹木或草叢）。
+適用於最佳化大量給定網格實例的渲染（例如森林中的樹木或草叢）。
 
 .. rst-class:: classref-introduction-group
 
@@ -28,7 +28,7 @@ MultiMeshInstance3D
 
 - :doc:`使用 MultiMeshInstance <../tutorials/3d/using_multi_mesh_instance>`
 
-- :doc:`使用 MultiMesh 進行優化 <../tutorials/performance/using_multimesh>`
+- :doc:`使用 MultiMesh 進行最佳化 <../tutorials/performance/using_multimesh>`
 
 - :doc:`使用 MultiMeshInstance 動畫化數千條魚 <../tutorials/performance/vertex_animation/animating_thousands_of_fish>`
 

@@ -94,7 +94,7 @@ InputEvent
 
 **DEVICE_ID_EMULATION** = ``-1`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_EMULATION>`
 
-Device ID used for emulated mouse input from a touchscreen, or for emulated touch input from a mouse. This can be used to distinguish emulated mouse input from physical mouse input, or emulated touch input from physical touch input.
+模擬裝置 ID，用於根據觸屏事件生成的滑鼠輸入，或根據滑鼠事件生成的觸摸輸入。可以據此來區分模擬滑鼠輸入和物理滑鼠輸入，以及模擬觸摸輸入和物理觸摸輸入。
 
 .. _class_InputEvent_constant_DEVICE_ID_KEYBOARD:
 
@@ -102,7 +102,7 @@ Device ID used for emulated mouse input from a touchscreen, or for emulated touc
 
 **DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
 
-Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+用於鍵盤輸入的裝置 ID。這可用於區分鍵盤輸入事件和遊戲控制器輸入事件。
 
 .. _class_InputEvent_constant_DEVICE_ID_MOUSE:
 
@@ -110,7 +110,7 @@ Device ID used for input from a keyboard. This can be used to distinguish keyboa
 
 **DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
 
-Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+用於滑鼠輸入的裝置 ID。這可用於區分滑鼠輸入事件和遊戲控制器輸入事件。
 
 .. rst-class:: classref-section-separator
 
@@ -132,9 +132,9 @@ Device ID used for input from a mouse. This can be used to distinguish mouse inp
 - |void| **set_device**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_device**\ (\ )
 
-The event's device ID.
+事件的裝置 ID。
 
-\ **Note:** :ref:`device<class_InputEvent_property_device>` can be negative for special use cases that don't refer to devices physically present on the system. See :ref:`DEVICE_ID_EMULATION<class_InputEvent_constant_DEVICE_ID_EMULATION>`.
+\ **注意：**\ :ref:`device<class_InputEvent_property_device>` 在特殊情況下可能為負數，此時表示的不是系統中物理存在的裝置。見 :ref:`DEVICE_ID_EMULATION<class_InputEvent_constant_DEVICE_ID_EMULATION>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -177,7 +177,7 @@ The event's device ID.
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_get_action_strength>`
 
-根據給定動作的狀態返回 0.0 到 1.0 之間的值。獲取 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 類型事件的值時很有用。
+根據給定動作的狀態返回 0.0 到 1.0 之間的值。取得 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 類型事件的值時很有用。
 
 如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
@@ -205,11 +205,11 @@ The event's device ID.
 
 :ref:`bool<class_bool>` **is_action_pressed**\ (\ action\: :ref:`StringName<class_StringName>`, allow_echo\: :ref:`bool<class_bool>` = false, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_is_action_pressed>`
 
-Returns ``true`` if the given action matches this event and is being pressed (and is not an echo event for :ref:`InputEventKey<class_InputEventKey>` events, unless ``allow_echo`` is ``true``). Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
+如果給定的動作與該事件匹配且正被按下，則回傳 ``true``\ （除非 ``allow_echo`` 為 ``true``\ ，否則不是 :ref:`InputEventKey<class_InputEventKey>` 事件中的回顯事件）。與 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 或 :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` 型別的事件無關。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：**\ 由於鍵盤重影，\ :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` 可能會回傳 ``false``\ ，即使動作的某個鍵被按下時也是如此。有關詳細資訊，請參閱文件中的 `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +221,9 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_released**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_is_action_released>`
 
-Returns ``true`` if the given action matches this event and is released (i.e. not pressed). Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
+如果給定的動作與該事件匹配且被釋放（即未按下），則回傳 ``true``\ 。與 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 或 :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` 型別的事件無關。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_type**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_is_action_type>`
 
-Returns ``true`` if this input event's type is one that can be assigned to an input action: :ref:`InputEventKey<class_InputEventKey>`, :ref:`InputEventMouseButton<class_InputEventMouseButton>`, :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`, :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, :ref:`InputEventAction<class_InputEventAction>`. Returns ``false`` for all other input event types.
+如果該輸入事件的型別可以分配給輸入事件則回傳 ``true``\ ，這些型別包括：\ :ref:`InputEventKey<class_InputEventKey>`\ 、\ :ref:`InputEventMouseButton<class_InputEventMouseButton>`\ 、\ :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`\ 、\ :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`\ 、\ :ref:`InputEventAction<class_InputEventAction>`\ 。其他所有輸入事件型別都會回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ Returns ``true`` if this input event's type is one that can be assigned to an in
 
 :ref:`bool<class_bool>` **is_echo**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_is_echo>`
 
-Returns ``true`` if this input event is an echo event (only for events of type :ref:`InputEventKey<class_InputEventKey>`). An echo event is a repeated key event sent when the user is holding down the key. Any other event type returns ``false``.
+如果該輸入事件是回顯事件（僅適用於 :ref:`InputEventKey<class_InputEventKey>` 型別的事件），則回傳 ``true``\ 。回顯事件是使用者按住按鍵時發送的重複按鍵事件。任何其他事件型別都回傳 ``false``\ 。
 
-\ **Note:** The rate at which echo events are sent is typically around 20 events per second (after holding down the key for roughly half a second). However, the key repeat delay/speed can be changed by the user or disabled entirely in the operating system settings. To ensure your project works correctly on all configurations, do not assume the user has a specific key repeat configuration in your project's behavior.
+\ **注意：**\ 發送回顯事件的速率通常約為每秒 20 個事件（按住按鍵約半秒鐘後）。但是，在作業系統設定中，按鍵重複延遲/速度可被使用者修改或者完全停用。為確保你的專案在所有設定下都能正常工作，請不要假設使用者在專案行為中具有特定的按鍵重複設定。
 
 .. rst-class:: classref-item-separator
 
@@ -273,11 +273,11 @@ Returns ``true`` if this input event is an echo event (only for events of type :
 
 :ref:`bool<class_bool>` **is_match**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, exact_match\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_InputEvent_method_is_match>`
 
-Returns ``true`` if the specified ``event`` matches this event. Only valid for action events, which include key (:ref:`InputEventKey<class_InputEventKey>`), button (:ref:`InputEventMouseButton<class_InputEventMouseButton>` or :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`), axis :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, and action (:ref:`InputEventAction<class_InputEventAction>`) events.
+如果指定的 ``event`` 與該事件匹配，則回傳 ``true``\ 。僅對動作事件有效，包括按鍵事件（\ :ref:`InputEventKey<class_InputEventKey>`\ ）、按鈕事件（\ :ref:`InputEventMouseButton<class_InputEventMouseButton>` 或 :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`\ ）、軸事件 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`\ 、動作事件（\ :ref:`InputEventAction<class_InputEventAction>`\ ）。
 
-If ``exact_match`` is ``false``, the check ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，檢查時會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** This method only considers the event configuration (such as the keyboard key or the joypad axis), not state information like :ref:`is_pressed()<class_InputEvent_method_is_pressed>`, :ref:`is_released()<class_InputEvent_method_is_released>`, :ref:`is_echo()<class_InputEvent_method_is_echo>`, or :ref:`is_canceled()<class_InputEvent_method_is_canceled>`.
+\ **注意：**\ 該方法只會考慮事件設定（例如鍵盤按鍵和遊戲控制器軸），不會考慮 :ref:`is_pressed()<class_InputEvent_method_is_pressed>`\ 、\ :ref:`is_released()<class_InputEvent_method_is_released>`\ 、\ :ref:`is_echo()<class_InputEvent_method_is_echo>`\ 、\ :ref:`is_canceled()<class_InputEvent_method_is_canceled>` 等狀態資訊。
 
 .. rst-class:: classref-item-separator
 

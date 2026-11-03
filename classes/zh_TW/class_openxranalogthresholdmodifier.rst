@@ -7,16 +7,16 @@ OpenXRAnalogThresholdModifier
 
 **繼承：** :ref:`OpenXRActionBindingModifier<class_OpenXRActionBindingModifier>` **<** :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-The analog threshold binding modifier can modify a float input to a boolean input with specified thresholds.
+模擬閾值綁定修改器能夠根據指定的閾值將 float 輸入修改為布林值輸入。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The analog threshold binding modifier can modify a float input to a boolean input with specified thresholds.
+模擬閾值綁定修改器能夠根據指定的閾值將 float 輸入修改為布林值輸入。
 
-See `XR_VALVE_analog_threshold <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_VALVE_analog_threshold>`__ for in-depth details.
+詳見 `XR_VALVE_analog_threshold <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_VALVE_analog_threshold>`__\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -56,7 +56,7 @@ See `XR_VALVE_analog_threshold <https://registry.khronos.org/OpenXR/specs/1.1/ht
 - |void| **set_off_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_off_haptic**\ (\ )
 
-Haptic pulse to emit when the user releases the input.
+使用者松開輸入時發出的觸覺脈衝。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Haptic pulse to emit when the user releases the input.
 - |void| **set_off_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_off_threshold**\ (\ )
 
-When our input value falls below this, our output becomes ``false``.
+輸入值低於此值時，輸出變為 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ When our input value falls below this, our output becomes ``false``.
 - |void| **set_on_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_on_haptic**\ (\ )
 
-Haptic pulse to emit when the user presses the input.
+使用者按下輸入時發出的觸覺脈衝。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Haptic pulse to emit when the user presses the input.
 - |void| **set_on_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_on_threshold**\ (\ )
 
-When our input value is equal or larger than this value, our output becomes ``true``. It stays ``true`` until it falls under the :ref:`off_threshold<class_OpenXRAnalogThresholdModifier_property_off_threshold>` value.
+輸入大於等於此值時，輸出變為 ``true``\ 。直到低於 :ref:`off_threshold<class_OpenXRAnalogThresholdModifier_property_off_threshold>` 都會保持為 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

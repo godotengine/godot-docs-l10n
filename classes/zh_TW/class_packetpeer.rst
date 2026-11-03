@@ -16,7 +16,7 @@ PacketPeer
 說明
 ----
 
-PacketPeer 是基於封包的協定（如 UDP）的抽象和基底類別。它提供了用於發送和接收數據包的 API，可以發送原始資料或變數。這使得在協定之間傳輸資料變得容易，不必將資料編碼為低級位元組或擔心網路排序問題。
+PacketPeer 是基於封包的協定（如 UDP）的抽象和基底類別。它提供了用於發送和接收封包的 API，可以發送原始資料或變數。這使得在協定之間傳輸資料變得容易，不必將資料編碼為低級位元組或擔心網路排序問題。
 
 \ **注意：**\ 匯出到安卓時，在匯出專案、或使用一鍵部署之前，請務必在安卓匯出預設中，開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信，都將被 Android 阻止。
 
@@ -74,9 +74,9 @@ PacketPeer 是基於封包的協定（如 UDP）的抽象和基底類別。它�
 - |void| **set_encode_buffer_max_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_encode_buffer_max_size**\ (\ )
 
-Maximum buffer size allowed when encoding :ref:`Variant<class_Variant>`\ s. Raise this value to support heavier memory allocations.
+編碼 :ref:`Variant<class_Variant>` 時允許的最大緩衝區大小。提高此值以支援更大的記憶體分配。
 
-The :ref:`put_var()<class_PacketPeer_method_put_var>` method allocates memory on the stack, and the buffer used will grow automatically to the closest power of two to match the size of the :ref:`Variant<class_Variant>`. If the :ref:`Variant<class_Variant>` is bigger than :ref:`encode_buffer_max_size<class_PacketPeer_property_encode_buffer_max_size>`, the method will error out with :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`.
+\ :ref:`put_var()<class_PacketPeer_method_put_var>` 方法在堆疊上分配記憶體，使用的緩衝區將自動增長到最接近的二次方，以匹配 :ref:`Variant<class_Variant>` 的大小。如果 :ref:`Variant<class_Variant>` 大於 :ref:`encode_buffer_max_size<class_PacketPeer_property_encode_buffer_max_size>`\ ，則該方法將以 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` 出錯。
 
 .. rst-class:: classref-section-separator
 
@@ -105,7 +105,7 @@ The :ref:`put_var()<class_PacketPeer_method_put_var>` method allocates memory on
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_packet**\ (\ ) :ref:`🔗<class_PacketPeer_method_get_packet>`
 
-獲取原始封包。
+取得原始封包。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ The :ref:`put_var()<class_PacketPeer_method_put_var>` method allocates memory on
 
 :ref:`Variant<class_Variant>` **get_var**\ (\ allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PacketPeer_method_get_var>`
 
-獲取 Variant。如果 ``allow_objects`` 為 ``true``\ ，則允許解碼出對象。
+取得 Variant。如果 ``allow_objects`` 為 ``true``\ ，則允許解碼出對象。
 
 在內部，這使用與 :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` 方法相同的解碼機制。
 

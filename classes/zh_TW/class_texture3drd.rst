@@ -14,16 +14,16 @@ Texture3DRD
 說明
 ----
 
-This texture class allows you to use a 3D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+該紋理類允許你使用直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上建立的 3D 紋理作為材質、網格等的紋理。
 
-\ **Note:** **Texture3DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture3D<class_Texture3D>` instead.
+\ **注意：**\ **Texture3DRD** 旨在用於 :ref:`RenderingDevice<class_RenderingDevice>` 的底層操作。對於大多數用例，請改用 :ref:`Texture3D<class_Texture3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
+- `計算紋理演示 <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

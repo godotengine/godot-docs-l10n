@@ -14,11 +14,11 @@ EditorSceneFormatImporterFBX2GLTF
 說明
 ----
 
-Imports Autodesk FBX 3D scenes by way of converting them to glTF 2.0 using the FBX2glTF command line tool.
+通過使用 FBX2glTF 命令行工具將 Autodesk FBX 3D 場景轉換為 glTF 2.0 來匯入它們。
 
-The location of the FBX2glTF binary is set via the :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>` editor setting.
+FBX2glTF 可執行檔的位置通過 :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>` 編輯器設定進行設定。
 
-This importer is only used if :ref:`ProjectSettings.filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` is set to ``true``.
+僅當 :ref:`ProjectSettings.filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` 設定為 ``true`` 時，才使用該匯入器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

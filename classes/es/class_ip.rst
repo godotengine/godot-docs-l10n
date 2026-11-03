@@ -221,9 +221,9 @@ Cada adaptador es un diccionario de la forma:
 ::
 
     {
-        "index": "1", # indice interfaz.
-        "name": "eth0", # nombre interfaz.
-        "friendly": "Ethernet One", # Un nombre amigable (puede ser vacio).
+        "index": "1", # Índice de la interfaz.
+        "name": "eth0", # Nombre de la interfaz.
+        "friendly": "Ethernet One", # Un nombre amigable (puede estar vacío).
         "addresses": ["192.168.1.101"], # Un array de direcciones IP asociadas a esta interfaz.
     }
 

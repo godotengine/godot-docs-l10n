@@ -10,14 +10,14 @@ InputEventJoypadButton
 
 **繼承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表按下或鬆開的遊戲手柄按鈕。
+代表按下或鬆開的遊戲控制器按鈕。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-遊戲手柄按鈕的輸入事件型別。對於遊戲手柄模擬搖桿和操縱桿，請參閱 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`\ 。
+遊戲控制器按鈕的輸入事件型別。對於遊戲控制器模擬搖桿和操縱桿，請參閱 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`\ 。
 
 .. rst-class:: classref-introduction-group
 

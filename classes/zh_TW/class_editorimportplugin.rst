@@ -14,11 +14,11 @@ EditorImportPlugin
 說明
 ----
 
-**EditorImportPlugin**\ s provide a way to extend the editor's resource import functionality. Use them to import resources from custom files or to provide alternatives to the editor's existing importers.
+**EditorImportPlugin** 提供了一種方法來擴充編輯器的資源匯入功能。使用它們從自訂檔案中匯入資源，或為編輯器的現有匯入器提供替代方案。
 
-EditorImportPlugins work by associating with specific file extensions and a resource type. See :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` and :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`. They may optionally specify some import presets that affect the import process. EditorImportPlugins are responsible for creating the resources and saving them in the ``.godot/imported`` directory (see :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
+EditorImportPlugin 通過與特定的檔案副檔名和資源型別相關聯來工作。請參見 :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` 和 :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`\ 。它們可以選擇性地指定一些影響匯入過程的匯入預設。EditorImportPlugin 負責建立資源並將它們儲存在 ``.godot/imported`` 目錄中（見 :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
 
-Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` from a file with the extension ".special" or ".spec":
+下面是一個 EditorImportPlugin 的範例，它從副檔名為“.special”或“.spec”的檔案中匯入 :ref:`Mesh<class_Mesh>`\ ：
 
 
 .. tabs::
@@ -57,7 +57,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
         if file == null:
             return FAILED
         var mesh = ArrayMesh.new()
-        # Fill the Mesh with data read in "file", left as an exercise to the reader.
+        # 使用從“file”中讀取的資料填充 Mesh，留作讀者的練習。
 
         var filename = save_path + "." + _get_save_extension()
         return ResourceSaver.save(mesh, filename)
@@ -124,7 +124,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
             }
 
             var mesh = new ArrayMesh();
-            // Fill the Mesh with data read in "file", left as an exercise to the reader.
+            // 使用從“file”中讀取的資料填充 Mesh，留作讀者的練習
             string filename = $"{savePath}.{_GetSaveExtension()}";
             return ResourceSaver.Save(mesh, filename);
         }
@@ -132,7 +132,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
 
 
 
-To use **EditorImportPlugin**, register it using the :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` method first.
+要使用 **EditorImportPlugin**\ ，請先使用 :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` 方法注冊它。
 
 .. rst-class:: classref-introduction-group
 
@@ -196,11 +196,11 @@ To use **EditorImportPlugin**, register it using the :ref:`EditorPlugin.add_impo
 
 :ref:`bool<class_bool>` **_can_import_threaded**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__can_import_threaded>`
 
-Tells whether this importer can be run in parallel on threads, or, on the contrary, it's only safe for the editor to call it from the main thread, for one file at a time.
+表示該匯入器是否可以線上程上並行執行，或者相反，編輯器只能從主執行緒呼叫安全，一次處理一個檔案。
 
-If this importer's implementation is thread-safe and can be run in parallel, override this with ``true`` to optimize for concurrency.
+如果該匯入器的實作是執行緒安全的並且可以並行執行，請將其覆蓋為 ``true`` 以最佳化併發效能。
 
-If not overridden, returns ``false``.
+如果未覆蓋，則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_format_version**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_format_version>`
 
-Gets the format version of this importer. Increment this version when making incompatible changes to the format of the imported resources.
+取得此匯入器的格式版本號。當對匯入資源的格式進行不相容的更改時，應遞增此版本號。
 
-If not overridden, the format version is ``0``.
+若未覆寫，格式版本號預設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ If not overridden, the format version is ``0``.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_import_options**\ (\ path\: :ref:`String<class_String>`, preset_index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_import_options>`
 
-獲取該索引下預設的選項和預設值。返回一個字典陣列，包含以下鍵名：\ ``name``\ 、\ ``default_value``\ 、\ ``property_hint``\ （可選）、\ ``hint_string``\ （可選）、\ ``usage``\ （可選）。
+取得該索引下預設的選項和預設值。返回一個字典陣列，包含以下鍵名：\ ``name``\ 、\ ``default_value``\ 、\ ``property_hint``\ （可選）、\ ``hint_string``\ （可選）、\ ``usage``\ （可選）。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ If not overridden, the format version is ``0``.
 
 :ref:`int<class_int>` **_get_import_order**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_import_order>`
 
-獲取該匯入器在匯入資源時的運作順序。具有\ *較低*\ 匯入順序的匯入器將被首先調用，較高值的將被其後呼叫。使用這個來確保匯入器在依賴項已經被匯入後執行。預設的匯入順序是 ``0``\ ，除非被指定的匯入器重寫。參閱 :ref:`ImportOrder<enum_ResourceImporter_ImportOrder>` 瞭解相關預定義的值。
+取得該匯入器在匯入資源時的運作順序。具有\ *較低*\ 匯入順序的匯入器將被首先調用，較高值的將被其後呼叫。使用這個來確保匯入器在依賴項已經被匯入後執行。預設的匯入順序是 ``0``\ ，除非被指定的匯入器重寫。參閱 :ref:`ImportOrder<enum_ResourceImporter_ImportOrder>` 瞭解相關預定義的值。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ If not overridden, the format version is ``0``.
 
 :ref:`String<class_String>` **_get_importer_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_importer_name>`
 
-獲取匯入器的唯一名稱。
+取得匯入器的唯一名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ If not overridden, the format version is ``0``.
 
 :ref:`bool<class_bool>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, option_name\: :ref:`StringName<class_StringName>`, options\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_option_visibility>`
 
-Gets whether the import option specified by ``option_name`` should be visible in the Import dock. The default implementation always returns ``true``, making all options visible. This is mainly useful for hiding options that depend on others if one of them is disabled.
+取得名為 ``option_name`` 的匯入選項是否應當在“匯入”面板中可見。預設實作始終回傳 ``true``\ ，即所有選項均可見。主要用於在停用某個選項時隱藏與其存在相依性關係的選項。
 
 
 .. tabs::
@@ -270,9 +270,9 @@ Gets whether the import option specified by ``option_name`` should be visible in
  .. code-tab:: gdscript
 
     func _get_option_visibility(path, option_name, options):
-        # Only show the lossy quality setting if the compression mode is set to "Lossy".
+        # 只有在壓縮模式為“Lossy”時顯示 Lossy 品質設定。
         if option_name == "compress/lossy_quality" and options.has("compress/mode"):
-            return int(options["compress/mode"]) == COMPRESS_LOSSY # This is a constant that you set
+            return int(options["compress/mode"]) == COMPRESS_LOSSY # 這是你設定的常數
 
         return true
 
@@ -280,10 +280,10 @@ Gets whether the import option specified by ``option_name`` should be visible in
 
     public override bool _GetOptionVisibility(string path, StringName optionName, Godot.Collections.Dictionary options)
     {
-        // Only show the lossy quality setting if the compression mode is set to "Lossy".
+        // 只有在壓縮模式為“Lossy”時顯示 Lossy 品質設定。
         if (optionName == "compress/lossy_quality" && options.ContainsKey("compress/mode"))
         {
-            return (int)options["compress/mode"] == CompressLossy; // This is a constant you set
+            return (int)options["compress/mode"] == CompressLossy; // 這是你設定的常數
         }
 
         return true;
@@ -301,9 +301,9 @@ Gets whether the import option specified by ``option_name`` should be visible in
 
 :ref:`int<class_int>` **_get_preset_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_count>`
 
-Gets the number of initial presets defined by the plugin. Use :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` to get the default options for the preset and :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` to get the name of the preset.
+取得外掛定義的初始預設的數量。使用 :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` 取得預設的預設選項，使用 :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` 取得預設的名稱。
 
-By default, there are no presets.
+預設情況下，不提供任何預設。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ By default, there are no presets.
 
 :ref:`String<class_String>` **_get_preset_name**\ (\ preset_index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_name>`
 
-獲取該索引處預設的選項名稱。
+取得該索引處預設的選項名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ By default, there are no presets.
 
 :ref:`float<class_float>` **_get_priority**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_priority>`
 
-獲取該外掛程式對識別的擴充的優先順序。優先順序越高的外掛程式會被優先選擇。預設的優先順序是 ``1.0``\ 。
+取得該外掛程式對識別的擴充的優先順序。優先順序越高的外掛程式會被優先選擇。預設的優先順序是 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ By default, there are no presets.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_recognized_extensions>`
 
-獲取與該載入器相關聯的檔副檔名列表（不區分大小寫），例如 ``["obj"]``\ 。
+取得與該載入器相關聯的檔副檔名列表（不區分大小寫），例如 ``["obj"]``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ By default, there are no presets.
 
 :ref:`String<class_String>` **_get_resource_type**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_resource_type>`
 
-獲取與此載入程式關聯的 Godot 資源型別，例如 ``"Mesh"`` 或 ``"Animation"``\ 。
+取得與此載入程式關聯的 Godot 資源型別，例如 ``"Mesh"`` 或 ``"Animation"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ By default, there are no presets.
 
 :ref:`String<class_String>` **_get_save_extension**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_save_extension>`
 
-獲取用於在 ``.godot/imported`` 目錄中保存此資源的副檔名（請參閱 :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
+取得用於在 ``.godot/imported`` 目錄中保存此資源的副檔名（請參閱 :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ By default, there are no presets.
 
 :ref:`String<class_String>` **_get_visible_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_visible_name>`
 
-獲取在匯入視窗中顯示的名稱。你應該選擇這個名字作為“匯入為”的延續，例如“匯入為 Special Mesh”。
+取得在匯入視窗中顯示的名稱。你應該選擇這個名字作為“匯入為”的延續，例如“匯入為 Special Mesh”。
 
 .. rst-class:: classref-item-separator
 
@@ -387,13 +387,13 @@ By default, there are no presets.
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-Imports ``source_file`` with the import ``options`` specified. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful, other values indicate failure.
+使用匯入選項 ``options`` 匯入原始檔 ``source_file``\ 。如果匯入成功應回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，其他值表示失敗。
 
-The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
+匯入的資源應儲存至 ``save_path + "." + _get_save_extension()``\ 。如果希望針對某個\ :doc:`特性標籤 <../tutorials/export/feature_tags>`\ 優先使用不同的版本，請將該版本的資源儲存至 ``save_path + "." + 標籤 + "." + _get_save_extension()``\ ，並將該特性標籤新增至 ``platform_variants``\ 。
 
-If additional resource files are generated in the resource filesystem (``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
+如果在資源檔案系統（\ ``res://``\ ）中生成了額外的資源檔案，請將其完整路徑新增至 ``gen_files``\ ，從而使編輯器得知這些檔案取決於 ``source_file``\ 。
 
-This method must be overridden to do the actual importing work. See this class' description for an example of overriding this method.
+必須覆蓋這個方法進行實際的匯入工作。覆蓋範例見這個類的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -405,7 +405,7 @@ This method must be overridden to do the actual importing work. See this class' 
 
 :ref:`Error<enum_@GlobalScope_Error>` **append_import_external_resource**\ (\ path\: :ref:`String<class_String>`, custom_options\: :ref:`Dictionary<class_Dictionary>` = {}, custom_importer\: :ref:`String<class_String>` = "", generator_parameters\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_EditorImportPlugin_method_append_import_external_resource>`
 
-This function can only be called during the :ref:`_import()<class_EditorImportPlugin_private_method__import>` callback and it allows manually importing resources from it. This is useful when the imported file generates external resources that require importing (as example, images). Custom parameters for the ".import" file can be passed via the ``custom_options``. Additionally, in cases where multiple importers can handle a file, the ``custom_importer`` can be specified to force a specific one. This function performs a resource import and returns immediately with a success or error code. ``generator_parameters`` defines optional extra metadata which will be stored as ``generator_parameters`` in the ``remap`` section of the ``.import`` file, for example to store a md5 hash of the source data.
+該函式只能在 :ref:`_import()<class_EditorImportPlugin_private_method__import>` 回呼期間呼叫，它允許從中手動匯入資源。當匯入的檔案生成需要匯入的外部資源（例如影像）時，這很有用。“.import”檔案的自訂參數可以通過 ``custom_options`` 傳遞。此外，在多個匯入器可以處理一個檔案的情況下，可以指定 ``custom_importer`` 以強制使用某個特定的匯入器。該函式會執行一次資源匯入並立即回傳成功或錯誤程式碼。\ ``generator_parameters`` 定義可選的額外中繼資料，這些中繼資料將作為 ``generator_parameters`` 儲存在 ``.import`` 檔案的 ``remap`` 小節中，例如儲存來源資料的一個 md5 雜湊值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

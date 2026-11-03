@@ -595,7 +595,7 @@ Por ejemplo, la clave ``android:windowSwipeToDismiss`` con el valor ``false`` se
 
 \ **Nota:** Para agregar un atributo personalizado a **GodotAppSplashTheme**, prefija el nombre del atributo con ``[splash]``.
 
-\ **Nota:** Los atributos reservados configurados a través de otras opciones de exportación o la configuración del proyecto no pueden ser anulados por ``custom_theme_attributes`` y se omiten durante la exportación.
+\ **Nota:** Los atributos reservados configurados a través de otras opciones de exportación o la configuración del proyecto no pueden ser sobrescritos por ``custom_theme_attributes`` y se omiten durante la exportación.
 
 .. rst-class:: classref-item-separator
 

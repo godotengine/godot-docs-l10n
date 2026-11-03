@@ -67,7 +67,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_TextureTy
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_COLOR** = ``1``
 
-Adds ``source_color`` as hint to the uniform declaration for proper conversion from nonlinear sRGB encoding to linear encoding.
+將 ``source_color`` 作為提示新增到 uniform 聲明中，以便將非線性 sRGB 編碼正確轉換為線性編碼。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_NORMAL_MAP:
 
@@ -175,9 +175,9 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST_MIPMAP** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+紋理過濾從最近的像素讀取並在最近的 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來像素化，從遠處看起來平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+將此用於可能以低縮放查看的非像素藝術紋理（例如，由於 :ref:`Camera2D<class_Camera2D>` 縮放或精靈縮放），因為多級漸遠紋理對於平滑小於螢幕像素的像素很重要。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP:
 
@@ -185,9 +185,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR_MIPMAP** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+紋理過濾在最近的 4 個像素和最近的 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來平滑，從遠處看起來也平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+將此用於可能以低縮放查看的非像素藝術紋理（例如，由於 :ref:`Camera2D<class_Camera2D>` 縮放或精靈縮放），因為多級漸遠紋理對於平滑小於螢幕像素的像素很重要。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP_ANISOTROPIC:
 
@@ -195,9 +195,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST_MIPMAP_ANISOTROPIC** = ``5``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+紋理過濾從最近的像素讀取並根據表面和相機檢視之間的角度在 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來像素化，從遠處看起來平滑。各向異性過濾提高了幾乎與相機位於一條線的表面上的紋理品質，但速度稍慢。各向異性過濾層級可以通過調整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 來改變。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`FILTER_NEAREST_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP>` is usually more appropriate in this case.
+\ **注意：**\ 該紋理過濾在 2D 專案中很少有用。\ :ref:`FILTER_NEAREST_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP>` 在這種情況下通常更合適。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP_ANISOTROPIC:
 
@@ -205,9 +205,9 @@ The texture filter reads from the nearest pixel and blends between 2 mipmaps (or
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR_MIPMAP_ANISOTROPIC** = ``6``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+紋理過濾在最近的 4 個像素之間進行混合，並基於表面與相機檢視之間的角度在 2 個多級漸遠紋理之間進行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 為 ``true``\ ，則使用最近的多級漸遠紋理）。這使得紋理從近處看起來平滑，從遠處看起來也平滑。各向異性過濾提高了幾乎與相機位於一條線的表面上的紋理品質，但速度稍慢。各向異性過濾層級可以通過調整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 來改變。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`FILTER_LINEAR_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP>` is usually more appropriate in this case.
+\ **注意：**\ 該紋理過濾在 2D 專案中很少有用。\ :ref:`FILTER_LINEAR_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP>` 在這種情況下通常更合適。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_MAX:
 
@@ -346,7 +346,7 @@ enum **TextureSource**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **get_texture_filter**\ (\ )
 
-Sets the texture filtering mode.
+設定紋理的過濾模式。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Sets the texture filtering mode.
 - |void| **set_texture_repeat**\ (\ value\: :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>`\ )
 - :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **get_texture_repeat**\ (\ )
 
-Sets the texture repeating mode.
+設定紋理的重複模式。
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Sets the texture repeating mode.
 - |void| **set_texture_source**\ (\ value\: :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>`\ )
 - :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **get_texture_source**\ (\ )
 
-Sets the texture source mode. Used for reading from the screen, depth, or normal_roughness texture.
+設定紋理源的模式。用於讀取 screen（螢幕）、depth（深度）或 normal_roughness（法線粗糙度）紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Sets the texture source mode. Used for reading from the screen, depth, or normal
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **get_texture_type**\ (\ )
 
-Defines the type of data provided by the source texture.
+定義來源紋理提供的資料型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

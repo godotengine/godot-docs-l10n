@@ -16,9 +16,9 @@ Button
 說明
 ----
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** 是標準的主題按鈕，可以包含文字和圖示，顯示樣式會根據目前的 :ref:`Theme<class_Theme>` 改變。
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **範例：**\ 建立按鈕並連接在按下時呼叫的方法：
 
 
 .. tabs::
@@ -51,9 +51,9 @@ Button
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另見 :ref:`BaseButton<class_BaseButton>`\ ，其中包含與此節點相關聯的通用屬性和方法。
 
-\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
+\ **注意：**\ 按鈕支援多點觸控輸入，允許同時按下多個按鈕。否則，將使用滑鼠輸入，此時互動將限制為每次只能按下單個按鈕。
 
 .. rst-class:: classref-introduction-group
 
@@ -62,7 +62,7 @@ See also :ref:`BaseButton<class_BaseButton>` which contains common properties an
 
 - `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `作業系統測試演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -194,7 +194,7 @@ See also :ref:`BaseButton<class_BaseButton>` which contains common properties an
 - |void| **set_text_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_text_alignment**\ (\ )
 
-Text alignment policy for the button's text.
+按鈕文字的文字對齊策略。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Text alignment policy for the button's text.
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle.
+如果設定為 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 以外的值，則文字將在節點的邊界矩形內換行。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_autowrap_trim_flags**\ (\ value\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ )
 - |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ )
 
-Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` for more info.
+自動換行空白修剪標誌。詳見 :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` 和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES
 - |void| **set_clip_text**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_clip_text**\ (\ )
 
-If ``true``, text that is too large to fit the button is clipped horizontally. If ``false``, the button will always be wide enough to hold the text. The text is not vertically clipped, and the button's height is not affected by this property.
+如果為 ``true``\ ，則因過長而無法適配按鈕的文字會被水平截斷。如果為 ``false``\ ，則按鈕的寬度始終足夠容納文字。文字不會垂直截斷，按鈕的高度不受該屬性影響。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ If ``true``, text that is too large to fit the button is clipped horizontally. I
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-Sets the clipping behavior when the text exceeds the node's bounding rectangle.
+設定文字超出節點邊界框時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 - |void| **set_vertical_icon_alignment**\ (\ value\: :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>`\ )
 - :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **get_vertical_icon_alignment**\ (\ )
 
-指定圖示在按鈕上垂直對齊的方式應該為頂端對齊、底部對齊還是居中對齊。請使用與文字對齊相同的 :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` 常數。如果水平居中並且垂直居中，則文本將被繪製在圖示之上。
+指定圖示在按鈕上垂直對齊的方式應該為頂端對齊、底部對齊還是居中對齊。請使用與文字對齊相同的 :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` 常數。如果水平居中並且垂直居中，則文字將被繪製在圖示之上。
 
 .. rst-class:: classref-section-separator
 
@@ -429,7 +429,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_Button_theme_color_font_disabled_color>`
 
-該 **Button** 處於禁用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
+該 **Button** 處於停用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Button_theme_color_font_focus_color>`
 
-該 **Button** 處於聚焦狀態時，使用的文字 :ref:`Color<class_Color>`\ 。只替換該按鈕的正常文字顏色。禁用、懸停、按下狀態優先於這個顏色。
+該 **Button** 處於聚焦狀態時，使用的文字 :ref:`Color<class_Color>`\ 。只替換該按鈕的正常文字顏色。停用、懸停、按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 0.4)`` :ref:`🔗<class_Button_theme_color_icon_disabled_color>`
 
-該 **Button** 處於禁用狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。
+該 **Button** 處於停用狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 
 :ref:`Color<class_Color>` **icon_focus_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_focus_color>`
 
-該 **Button** 處於聚焦狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。僅替換該按鈕的正常調變顏色。禁用、懸停和按下狀態優先於這個顏色。
+該 **Button** 處於聚焦狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。僅替換該按鈕的正常調變顏色。停用、懸停和按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +573,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 
 :ref:`int<class_int>` **align_to_largest_stylebox** = ``0`` :ref:`🔗<class_Button_theme_constant_align_to_largest_stylebox>`
 
-This constant acts as a boolean. If ``true``, the minimum size of the button and text/icon alignment is always based on the largest stylebox margins, otherwise it's based on the current button state stylebox margins.
+該常數是作為布林值使用的。如果為 ``true``\ ，則按鈕的最小尺寸和文字/圖示對齊始終基於最大樣式盒邊距，否則則基於目前按鈕狀態樣式盒邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ This constant acts as a boolean. If ``true``, the minimum size of the button and
 
 :ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_Button_theme_constant_icon_max_width>`
 
-The maximum allowed width of the **Button**'s icon. This limit is applied on top of the default size of the icon, or its expanded size if :ref:`expand_icon<class_Button_property_expand_icon>` is ``true``. The height is adjusted according to the icon's ratio. If the button has additional icons (e.g. :ref:`CheckBox<class_CheckBox>`), they will also be limited.
+**Button** 圖示的最大允許寬度。該限制套用至圖示的預設大小，如果 :ref:`expand_icon<class_Button_property_expand_icon>` 為 ``true``\ ，則套用至其擴充大小。高度根據圖示的縮放進行調整。如果按鈕有其他圖示（例如 :ref:`CheckBox<class_CheckBox>`\ ），它們也將會受到限制。
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ The maximum allowed width of the **Button**'s icon. This limit is applied on top
 
 :ref:`int<class_int>` **line_spacing** = ``0`` :ref:`🔗<class_Button_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行與行之間的額外縱向留白（單位為像素），留白會被新增到行的降部。該值可以為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_Button_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_Button_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -659,7 +659,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`Texture2D<class_Texture2D>` **icon** :ref:`🔗<class_Button_theme_icon_icon>`
 
-Default icon for the **Button**. Appears only if :ref:`icon<class_Button_property_icon>` is not assigned.
+該 **Button** 的預設圖示。僅在未指定 :ref:`icon<class_Button_property_icon>` 時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **disabled** :ref:`🔗<class_Button_theme_style_disabled>`
 
-該 **Button** 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+該 **Button** 處於停用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **disabled_mirrored** :ref:`🔗<class_Button_theme_style_disabled_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+該 :ref:`OptionButton<class_OptionButton>` 處於停用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -695,7 +695,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_Button_theme_style_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is focused. The :ref:`focus<class_Button_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+該 **Button** 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`focus<class_Button_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 

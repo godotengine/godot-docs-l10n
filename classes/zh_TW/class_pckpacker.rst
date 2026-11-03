@@ -14,7 +14,7 @@ PCKPacker
 說明
 ----
 
-The **PCKPacker** is used to create packages that can be loaded into a running project using :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>`.
+**PCKPacker** 可以建立打包檔案，專案執行時可以使用 :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>` 來載入打包檔案。
 
 
 .. tabs::
@@ -35,9 +35,9 @@ The **PCKPacker** is used to create packages that can be loaded into a running p
 
 
 
-The above **PCKPacker** creates package ``test.pck``, then adds a file named ``text.txt`` at the root of the package.
+上面的例子中，\ **PCKPacker** 建立了打包檔案 ``test.pck``\ ，但後將名為 ``text.txt`` 的檔案新增到了包的根目錄。
 
-\ **Note:** PCK is Godot's own pack file format. To create ZIP archives that can be read by any program, use :ref:`ZIPPacker<class_ZIPPacker>` instead.
+\ **注意：**\ PCK 是 Godot 自有的打包檔案格式。要建立任何程式都能夠讀取的 ZIP 壓縮檔，請改用 :ref:`ZIPPacker<class_ZIPPacker>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -74,7 +74,7 @@ The above **PCKPacker** creates package ``test.pck``, then adds a file named ``t
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file**\ (\ target_path\: :ref:`String<class_String>`, source_path\: :ref:`String<class_String>`, encrypt\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_add_file>`
 
-Adds the ``source_path`` file to the current PCK package at the ``target_path`` internal path. The ``res://`` prefix for ``target_path`` is optional and stripped internally. File content is immediately written to the PCK.
+將 ``source_path`` 檔案新增到目前 PCK 包的內部路徑 ``target_path`` 處。\ ``target_path`` 不必寫 ``res://`` 前綴，內部會將其去除。檔案內容會立即寫入到 PCK 中。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Adds the ``source_path`` file to the current PCK package at the ``target_path`` 
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file_from_buffer**\ (\ target_path\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`, encrypt\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_add_file_from_buffer>`
 
-Adds the ``data`` to the current PCK package at the ``target_path`` internal path. The ``res://`` prefix for ``target_path`` is optional and stripped internally. File content is immediately written to the PCK.
+將 ``data``\ （資料）新增到目前 PCK 包中，其在包內的路徑為 ``target_path``\ 。\ ``target_path`` 的 ``res://`` 前綴是可選的，會在內部被自動去除。檔案內容會被立即寫入 PCK 包中。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Adds the ``data`` to the current PCK package at the ``target_path`` internal pat
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file_removal**\ (\ target_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PCKPacker_method_add_file_removal>`
 
-Registers a file removal of the ``target_path`` internal path to the PCK. This is mainly used for patches. If the file at this path has been loaded from a previous PCK, it will be removed. The ``res://`` prefix for ``target_path`` is optional and stripped internally.
+注冊移除 PCK 內部路徑 ``target_path`` 處的檔案。主要用於補丁。如果位於該路徑的檔案已從之前的 PCK 載入，則會被移除。\ ``target_path`` 不必寫 ``res://`` 前綴，內部會將其去除。
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ Registers a file removal of the ``target_path`` internal path to the PCK. This i
 
 :ref:`Error<enum_@GlobalScope_Error>` **flush**\ (\ verbose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_flush>`
 
-Writes the file directory and closes the PCK. If ``verbose`` is ``true``, a list of files added will be printed to the console for easier debugging.
+寫入檔案目錄並關閉 PCK。如果 ``verbose`` 為 ``true``\ ，則會將檔案清單輸出在控制台，方便除錯。
 
-\ **Note:** **PCKPacker** will automatically flush when it's freed, which happens when it goes out of scope or when it gets assigned with ``null``. In C# the reference must be disposed after use, either with the ``using`` statement or by calling the ``Dispose`` method directly.
+\ **注意：**\ **PCKPacker** 被釋放時會自動刷新，釋放發生在離開作用域或被賦值為 ``null`` 時。在 C# 中，使用完後必須棄置該參照，可以使用 ``using`` 語句或直接呼叫 ``Dispose`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Writes the file directory and closes the PCK. If ``verbose`` is ``true``, a list
 
 :ref:`Error<enum_@GlobalScope_Error>` **pck_start**\ (\ pck_path\: :ref:`String<class_String>`, alignment\: :ref:`int<class_int>` = 32, key\: :ref:`String<class_String>` = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_pck_start>`
 
-Creates a new PCK file at the file path ``pck_path``. The ``.pck`` file extension isn't added automatically, so it should be part of ``pck_path`` (even though it's not required).
+在檔案路徑 ``pck_path`` 處新建 PCK 檔案。不會自動新增 ``.pck`` 檔案副檔名，因此 ``pck_path`` 中應包含該副檔名（即使副檔名不是必需的）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

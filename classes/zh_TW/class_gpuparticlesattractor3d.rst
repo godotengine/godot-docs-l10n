@@ -20,7 +20,7 @@ GPUParticlesAttractor3D
 
 粒子吸引器是即時進行的，可以在遊戲過程中進行移動、旋轉、縮放。與碰撞形狀不同，吸引器支援不均勻的縮放。
 
-臨時禁用吸引器的方法是將其隱藏，也可以將 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 設定為 ``0.0``\ 。
+臨時停用吸引器的方法是將其隱藏，也可以將 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 設定為 ``0.0``\ 。
 
 \ **注意：**\ 粒子吸引器只會影響 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影響 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
 
@@ -79,11 +79,11 @@ GPUParticlesAttractor3D
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-將受吸引器影響的粒子算繪層（\ :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ ）。預設情況下，所有粒子都受吸引子器影響。
+將受吸引器影響的粒子渲染層（\ :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ ）。預設情況下，所有粒子都受吸引子器影響。
 
 相應地配置粒子節點後，可以取消勾選特定層，以防止某些粒子受到吸引器的影響。例如，如果將吸引器用作法術效果的一部分，但不希望吸引器影響同一位置的不相關天氣粒子，則可以使用該屬性。
 
-通過在 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點上設定 :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>`\ ，也可以在每個程序材質的基上禁用粒子吸引。
+通過在 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點上設定 :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>`\ ，也可以在每個程序材質的基上停用粒子吸引。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ GPUParticlesAttractor3D
 - |void| **set_directionality**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_directionality**\ (\ )
 
-調整吸引器的方向。在 ``0.0`` 處，吸引器完全沒有方向性：它會將粒子吸引到其中心。在 ``1.0`` 中，吸引器是完全定向的：粒子將始終被推向局部 -Z（如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負數，則推向 +Z）。
+調整吸引器的方向。在 ``0.0`` 處，吸引器完全沒有方向性：它會將粒子吸引到其中心。在 ``1.0`` 中，吸引器是完全定向的：粒子將始終被推向區域 -Z（如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負數，則推向 +Z）。
 
 \ **注意：**\ 如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 大於 ``0.0``\ ，則可以通過旋轉 **GPUParticlesAttractor3D** 節點，來改變粒子推送的方向。
 
@@ -119,7 +119,7 @@ GPUParticlesAttractor3D
 - |void| **set_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_strength**\ (\ )
 
-如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負，則粒子將被反向推動。如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 為 ``0.0``\ ，則粒子將被推\ *離*\ 吸引器的原點，如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 大於 ``0.0``\ ，則粒子將被推向局部 +Z。
+如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負，則粒子將被反向推動。如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 為 ``0.0``\ ，則粒子將被推\ *離*\ 吸引器的原點，如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 大於 ``0.0``\ ，則粒子將被推向區域 +Z。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

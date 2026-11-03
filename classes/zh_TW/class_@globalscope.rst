@@ -600,7 +600,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TOP_TO** = ``0``
 
-將行內物件（例如圖像、表格）的頂部與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
+將行內物件（例如影像、表格）的頂部與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_CENTER_TO:
 
@@ -608,7 +608,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_CENTER_TO** = ``1``
 
-將行內物件（例如圖像、表格）的中心與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
+將行內物件（例如影像、表格）的中心與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_BASELINE_TO:
 
@@ -616,7 +616,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_BASELINE_TO** = ``3``
 
-將行內物件（如圖像、表格）的基線（使用者定義）與\ ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
+將行內物件（如影像、表格）的基線（使用者定義）與\ ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_BOTTOM_TO:
 
@@ -624,7 +624,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_BOTTOM_TO** = ``2``
 
-將行內物件（例如圖像、表格）的底部與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
+將行內物件（例如影像、表格）的底部與 ``INLINE_ALIGNMENT_TO_*`` 常數指定的文字位置對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_TO_TOP:
 
@@ -632,7 +632,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TO_TOP** = ``0``
 
-將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如圖像、表格）的位置與文字頂部對齊。
+將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如影像、表格）的位置與文字頂部對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_TO_CENTER:
 
@@ -640,7 +640,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TO_CENTER** = ``4``
 
-將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如圖像、表格）的位置與文字中心對齊。
+將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如影像、表格）的位置與文字中心對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_TO_BASELINE:
 
@@ -648,7 +648,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TO_BASELINE** = ``8``
 
-將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如圖像、表格）的位置與文字基線對齊。
+將由 ``INLINE_ALIGNMENT_*_TO`` 常數指定的行內物件（例如影像、表格）的位置與文字基線對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_TO_BOTTOM:
 
@@ -656,7 +656,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TO_BOTTOM** = ``12``
 
-將行內物件（例如圖像、表格）與文字底部對齊。
+將行內物件（例如影像、表格）與文字底部對齊。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_TOP:
 
@@ -664,7 +664,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_TOP** = ``0``
 
-將行內物件（例如圖像、表格）的頂部與文字的頂部對齊。等效於 ``INLINE_ALIGNMENT_TOP_TO | INLINE_ALIGNMENT_TO_TOP``\ 。
+將行內物件（例如影像、表格）的頂部與文字的頂部對齊。等效於 ``INLINE_ALIGNMENT_TOP_TO | INLINE_ALIGNMENT_TO_TOP``\ 。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_CENTER:
 
@@ -672,7 +672,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_CENTER** = ``5``
 
-將行內物件（例如圖像、表格）的中心與文字的中心對齊。相當於 ``INLINE_ALIGNMENT_CENTER_TO | INLINE_ALIGNMENT_TO_CENTER``\ 。
+將行內物件（例如影像、表格）的中心與文字的中心對齊。相當於 ``INLINE_ALIGNMENT_CENTER_TO | INLINE_ALIGNMENT_TO_CENTER``\ 。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_BOTTOM:
 
@@ -680,7 +680,7 @@ enum **InlineAlignment**: :ref:`🔗<enum_@GlobalScope_InlineAlignment>`
 
 :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` **INLINE_ALIGNMENT_BOTTOM** = ``14``
 
-將行內物件（例如圖像、表格）的底部與文字底部對齊。等效於 ``INLINE_ALIGNMENT_BOTTOM_TO | INLINE_ALIGNMENT_TO_BOTTOM``\ 。
+將行內物件（例如影像、表格）的底部與文字底部對齊。等效於 ``INLINE_ALIGNMENT_BOTTOM_TO | INLINE_ALIGNMENT_TO_BOTTOM``\ 。
 
 .. _class_@GlobalScope_constant_INLINE_ALIGNMENT_IMAGE_MASK:
 
@@ -714,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
+指定歐拉角應按內旋 XYZ 順序排列。組合時旋轉依次繞區域 X、Y、Z 軸的順序執行。分解時順序相反，先 Z、再 Y、最後 X。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -722,7 +722,7 @@ Specifies that Euler angles should be in intrinsic XYZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
+指定歐拉角應按內旋 XZY 順序排列。組合時旋轉依次繞區域 X、Z、Y 軸的順序執行。分解時順序相反，先 Y、再 Z、最後 X。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -730,7 +730,7 @@ Specifies that Euler angles should be in intrinsic XZY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
+指定歐拉角應按內旋 YXZ 順序排列。組合時旋轉依次繞區域 Y、X、Z 軸的順序執行。分解時順序相反，先 Z、再 X、最後 Y。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -738,7 +738,7 @@ Specifies that Euler angles should be in intrinsic YXZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
+指定歐拉角應按內旋 YZX 順序排列。組合時旋轉依次繞區域 Y、Z、X 軸的順序執行。分解時順序相反，先 X、再 Z、最後 Y。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -746,7 +746,7 @@ Specifies that Euler angles should be in intrinsic YZX order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
+指定歐拉角應按內旋 ZXY 順序排列。組合時旋轉依次繞區域 Z、X、Y 軸的順序執行。分解時順序相反，先 Y、再 X、最後 Z。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -754,7 +754,7 @@ Specifies that Euler angles should be in intrinsic ZXY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
+指定歐拉角應按內旋 ZYX 順序排列。組合時旋轉依次繞區域 Z、Y、X 軸的順序執行。分解時順序相反，先 X、再 Y、最後 Z。
 
 .. rst-class:: classref-item-separator
 
@@ -1540,7 +1540,7 @@ Help 鍵。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SEARCH** = ``4194395``
 
-搜索鍵。
+搜尋鍵。
 
 .. _class_@GlobalScope_constant_KEY_STANDBY:
 
@@ -2244,7 +2244,7 @@ Z 鍵。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIICIRCUM** = ``94``
 
-脫字符號（\ ``^``\ ）鍵。
+脫字元號（\ ``^``\ ）鍵。
 
 .. _class_@GlobalScope_constant_KEY_UNDERSCORE:
 
@@ -2326,7 +2326,7 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+這是一個除了修飾鍵之外、所有位都已啟用的位元遮罩。使用它來剝離修飾鍵。
 
 ::
 
@@ -2340,7 +2340,7 @@ Bit mask with all bits enabled except for modifier keys. Apply it to remove modi
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+一個包含所有修飾鍵位的位元遮罩。使用它來提取修飾鍵。
 
 ::
 
@@ -2488,7 +2488,7 @@ enum **MouseButton**: :ref:`🔗<enum_@GlobalScope_MouseButton>`
 
 :ref:`MouseButton<enum_@GlobalScope_MouseButton>` **MOUSE_BUTTON_WHEEL_UP** = ``4``
 
-滑鼠滾輪向上滾動。
+滑鼠滾輪向上捲動。
 
 .. _class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_DOWN:
 
@@ -2496,7 +2496,7 @@ enum **MouseButton**: :ref:`🔗<enum_@GlobalScope_MouseButton>`
 
 :ref:`MouseButton<enum_@GlobalScope_MouseButton>` **MOUSE_BUTTON_WHEEL_DOWN** = ``5``
 
-滑鼠滾輪向下滾動。
+滑鼠滾輪向下捲動。
 
 .. _class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_LEFT:
 
@@ -2772,7 +2772,7 @@ enum **JoyButton**: :ref:`🔗<enum_@GlobalScope_JoyButton>`
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
 
-Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+遊戲控制器 SDL 雜項按鈕。適用於任天堂 Switch 2 Pro 控制器以及 Horipad Steam 控制器。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
 
@@ -2780,7 +2780,7 @@ Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controll
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
 
-Game controller SDL miscellaneous button.
+遊戲控制器 SDL 雜項按鈕。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
 
@@ -2788,7 +2788,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
 
-Game controller SDL miscellaneous button.
+遊戲控制器 SDL 雜項按鈕。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
 
@@ -2796,7 +2796,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
 
-Game controller SDL miscellaneous button.
+遊戲控制器 SDL 雜項按鈕。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
 
@@ -2804,7 +2804,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
 
-Game controller SDL miscellaneous button.
+遊戲控制器 SDL 雜項按鈕。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
@@ -3012,7 +3012,7 @@ MIDI 系統專用（SysEx）訊息，格式未被統一，內容依各裝置自�
 
 :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>` **MIDI_MESSAGE_SONG_POSITION_POINTER** = ``242``
 
-用於跳轉至當前樂曲或序列新位置的 MIDI 訊息。
+用於跳轉至目前樂曲或序列新位置的 MIDI 訊息。
 
 \ **注意：** 目前無法透過 :ref:`InputEventMIDI<class_InputEventMIDI>` 取得其資料。
 
@@ -3336,7 +3336,7 @@ enum **Error**: :ref:`🔗<enum_@GlobalScope_Error>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_CANT_ACQUIRE_RESOURCE** = ``28``
 
-無法獲取資源錯誤。
+無法取得資源錯誤。
 
 .. _class_@GlobalScope_constant_ERR_CANT_FORK:
 
@@ -3498,7 +3498,7 @@ Bug 錯誤，由方法中的實作問題引起。
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-Printer on fire error (this is an easter egg, no built-in methods return this error code).
+印表機起火錯誤（這是個彩蛋，引擎中沒有內建方法會回傳此錯誤碼）。
 
 .. rst-class:: classref-item-separator
 
@@ -3516,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
+該屬性在編輯器中沒有設定提示（Hint）。不過，提示字串（hint string）依然會被讀取，這可以用來為那些沒有範圍限制的屬性指定一個後綴（詳見 :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` 的描述）。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3524,11 +3524,11 @@ The property has no hint for the editor. However, the hint string is still read,
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>`, :ref:`float<class_float>`, or packed/typed :ref:`Array<class_Array>` property containing :ref:`int<class_int>` or :ref:`float<class_float>` types should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+提示 :ref:`int<class_int>`\ ，\ :ref:`float<class_float>`\ ，或緊縮/型別化 :ref:`Array<class_Array>` 屬性中包含的 :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 型別應處於指定範圍內。範圍通過提示字串 ``"最小值,最大值"`` 或 ``"最小值,最大值,步長"`` 指定。該提示字串可選包含 ``"or_greater"`` 和/或 ``"or_less"``\ ，從而允許手動輸入值分別超出最大值或最小值。
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **範例：**\ ``"-360,360,1,or_greater,or_less"``\ 。
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+此外，還可以包含其他關鍵字：\ ``"exp"`` 表示按指數範圍編輯；\ ``"radians_as_degrees"`` 表示以角度編輯弧度（同時範圍值也以角度為單位）；\ ``"degrees"`` 表示屬性為角度；\ ``"prefer_slider"`` 表示對整數顯示滑塊；\ ``"hide_control"`` 表示隱藏滑塊或上下箭頭；\ ``"suffix:unit"`` 表示顯示單位後綴（例如 ``"suffix:px/s"`` 表示像素每秒）。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3536,9 +3536,9 @@ Additionally, other keywords can be included: ``"exp"`` for exponential range ed
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM** = ``2``
 
-Hints that an :ref:`int<class_int>`, :ref:`String<class_String>`, or :ref:`StringName<class_StringName>` property is an enumerated value to pick in a list specified via a hint string.
+提示 :ref:`int<class_int>` 、 :ref:`String<class_String>` 或 :ref:`StringName<class_StringName>` 屬性是列舉值，可通過提示字串在指定的清單中選取。
 
-The hint string is a comma separated list of names such as ``"Hello,Something,Else"``. Whitespace is **not** removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"Zero,One,Three:3,Four,Six:6"``.
+該提示字串是逗號分隔的名稱清單，例如 ``"Hello,Something,Else"``\ 。 **不會**\ 從名稱的任何一端刪除空白。對於整數屬性，清單中的第一個名稱的值為 0，下一個名稱的值為 1，依此類推。也可以通過將 ``:integer`` 附加到名稱來顯式指定值，例如 ``"Zero,One,Three:3,Four,Six:6"``\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM_SUGGESTION:
 
@@ -3546,9 +3546,9 @@ The hint string is a comma separated list of names such as ``"Hello,Something,El
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM_SUGGESTION** = ``3``
 
-Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property can be an enumerated value to pick in a list specified via a hint string such as ``"Hello,Something,Else"``. See :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` for details.
+提示 :ref:`String<class_String>` 或 :ref:`StringName<class_StringName>` 屬性可從提示字串指定的清單中選取列舉值，例如 ``"Hello,Something,Else"``\ 。詳情請參閱 :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`\ 。
 
-Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+與 :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` 不同，使用此提示的屬性仍接受任意值，也可以是空值。清單僅用來建議可能的值。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING:
 
@@ -3556,7 +3556,7 @@ Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
+這個提示表明，一個 :ref:`float<class_float>` 型別的屬性應該使用曲線編輯器來進行編輯，並且預設會展示一個指數緩動函式。該提示字串中可以包含 ``"attenuation"`` 來將曲線水平翻轉，和/或包含 ``"positive_only"`` 來排除入/出（in/out）緩動，並將數值限制為大於或等於零。它的顯示方式與使用了 ``"exp"`` 關鍵字的 :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` 屬性不同，因為後者是通過滑塊（slider）而不是曲線編輯器來編輯的。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -3564,7 +3564,7 @@ Hints that a :ref:`float<class_float>` property should be edited using a curve e
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
+該提示表明，向量屬性應該允許將其各個分量關聯（或鎖定）起來。例如，這允許將 :ref:`Vector2.x<class_Vector2_property_x>` 和 :ref:`Vector2.y<class_Vector2_property_y>` 放在一起進行編輯。該提示支援 :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>` 和 :ref:`Vector4i<class_Vector4i>`\ 。此外，提示字串還可以用來通過 ``"suffix:px/s"`` 這樣的語法，為每個數值指定表示單位的後綴。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -3572,13 +3572,13 @@ Hints that a vector property should allow its components to be linked. For examp
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FLAGS** = ``6``
 
-Hints that an :ref:`int<class_int>` property is a bitmask with named bit flags.
+提示 :ref:`int<class_int>` 屬性為位元遮罩，位標誌擁有名稱。
 
-The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit3"``. Whitespace is **not** removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"A:4,B:8,C:16"``. You can also combine several flags (``"A:4,B:8,AB:12,C:16"``).
+提示字串為逗號分隔的名稱清單，例如 ``"Bit0,Bit1,Bit2,Bit3"``\ 。名稱兩端的空白字元\ **不會**\ 被移除。清單中的第一個名稱的值為 1、然後是 2、接下來就是 4、8、16 等值。也可以通過在名稱後加上 ``:整數`` 來顯式指定數值，例如 ``"A:4,B:8,C:16"``\ 。你還可以對多個標誌進行組合（\ ``"A:4,B:8,AB:12,C:16"``\ ）。
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **注意：**\ 標誌值最少為 ``1``\ ，最多為 ``2 ** 32 - 1``\ 。
 
-\ **Note:** Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, the previous explicit value is not taken into account. For the hint ``"A:16,B,C"``, A is 16, B is 2, C is 4.
+\ **注意：**\ 與 :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` 不同，顯式值不被納入自動遞增考慮。提示為 ``"A:16,B,C"``\ 時，A 為 16、B 為 2、C 為 4。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER:
 
@@ -3586,7 +3586,7 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LAYERS_2D_RENDER** = ``7``
 
-提示 :ref:`int<class_int>` 屬性為位元遮罩，表示可命名的 2D 算繪層。
+提示 :ref:`int<class_int>` 屬性為位元遮罩，表示可命名的 2D 渲染層。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_PHYSICS:
 
@@ -3610,7 +3610,7 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LAYERS_3D_RENDER** = ``10``
 
-提示 :ref:`int<class_int>` 屬性為位元遮罩，表示可命名的 3D 算繪層。
+提示 :ref:`int<class_int>` 屬性為位元遮罩，表示可命名的 3D 渲染層。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_PHYSICS:
 
@@ -3642,7 +3642,7 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FILE** = ``13``
 
-Hints that a :ref:`String<class_String>` property is a path to a file. Editing it will show a file dialog for picking the path. The hint string can be a set of filters with wildcards like ``"*.png,*.jpg"``. By default the file will be stored as UID whenever available. You can use :ref:`ResourceUID<class_ResourceUID>` methods to convert it back to path. For storing a raw path, use :ref:`PROPERTY_HINT_FILE_PATH<class_@GlobalScope_constant_PROPERTY_HINT_FILE_PATH>`.
+提示 :ref:`String<class_String>` 屬性為檔案的路徑。編輯時會彈出選取路徑的檔案對話框。提示字串可以設為一組帶有通配符的篩選器，例如 ``"*.png,*.jpg"``\ 。預設情況下，如果檔案的 UID 可用，則會以 UID 形式進行儲存。可以使用 :ref:`ResourceUID<class_ResourceUID>` 中的方法將 UID 轉換迴路徑。要儲存原始路徑，請使用 :ref:`PROPERTY_HINT_FILE_PATH<class_@GlobalScope_constant_PROPERTY_HINT_FILE_PATH>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_DIR:
 
@@ -3650,7 +3650,7 @@ Hints that a :ref:`String<class_String>` property is a path to a file. Editing i
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_DIR** = ``14``
 
-提示 :ref:`String<class_String>` 屬性為目錄的路徑。編輯時會彈出選取路徑的檔對話方塊。
+提示 :ref:`String<class_String>` 屬性為目錄的路徑。編輯時會彈出選取路徑的檔對話框。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_FILE:
 
@@ -3658,7 +3658,7 @@ Hints that a :ref:`String<class_String>` property is a path to a file. Editing i
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_GLOBAL_FILE** = ``15``
 
-提示 :ref:`String<class_String>` 屬性為檔的絕對路徑，位於專案檔案夾之外。編輯時會彈出選取路徑的檔案對話方塊。提示字串可以設為一組帶有萬用字元的篩選器，例如 ``"*.png,*.jpg"``\ 。
+提示 :ref:`String<class_String>` 屬性為檔的絕對路徑，位於專案檔案夾之外。編輯時會彈出選取路徑的檔案對話框。提示字串可以設為一組帶有萬用字元的篩選器，例如 ``"*.png,*.jpg"``\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_DIR:
 
@@ -3666,7 +3666,7 @@ Hints that a :ref:`String<class_String>` property is a path to a file. Editing i
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_GLOBAL_DIR** = ``16``
 
-提示 :ref:`String<class_String>` 屬性為目錄的絕對路徑，位於專案檔案夾之外。編輯時會彈出選取路徑的檔案對話方塊。
+提示 :ref:`String<class_String>` 屬性為目錄的絕對路徑，位於專案檔案夾之外。編輯時會彈出選取路徑的檔案對話框。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RESOURCE_TYPE:
 
@@ -3682,11 +3682,11 @@ Hints that a :ref:`String<class_String>` property is a path to a file. Editing i
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+提示一個\ :ref:`String<class_String>`\ 屬性是帶有換行的文字。編輯它將顯示一個可以輸入換行的文字輸入框。
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+提示字串可以設定為\ ``"monospace"``\ 以強制輸入框使用等寬字型。
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+如果提示字串設定為\ ``"no_wrap"``\ ，輸入框將不會在邊界處換行，而是改為使區域可捲動。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -3726,76 +3726,76 @@ If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at 
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
+如果屬性為 :ref:`String<class_String>`\ ，則提示該屬性代表特定的型別（類）。這樣就能使用建立對話框選擇型別。該屬性中存放的是所選型別，是一個字串。
 
-If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
+如果屬性為 :ref:`Array<class_Array>`\ ，則提示編輯器如何顯示其中的元素。\ ``hint_string`` 必須使用 ``":"`` 和 ``"/"`` 對內嵌的型別進行編碼。
 
-If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
+如果屬性為 :ref:`Dictionary<class_Dictionary>`\ ，則提示編輯器如何顯示其中的元素。\ ``hint_string`` 與 :ref:`Array<class_Array>` 相同，使用 ``";"`` 分隔鍵和值。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Array of elem_type.
+    # elem_type 陣列。
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # Two-dimensional array of elem_type (array of arrays of elem_type).
+    # elem_type 二維陣列（elem_type 陣列的陣列）。
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
+    # elem_type 三維陣列（elem_type 陣列的陣列的陣列）。
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // Array of elemType.
+    // elem_type 陣列。
     hintString = $"{elemType:D}:";
     hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Two-dimensional array of elemType (array of arrays of elemType).
+    // elem_type 二維陣列（elem_type 陣列的陣列）。
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
+    // elem_type 三維陣列（elem_type 陣列的陣列的陣列）。
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **Examples:**\ 
+\ **範例：**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # Array of integers.
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
+    hint_string = "%d:" % [TYPE_INT] # 整數陣列。
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # 整數陣列（範圍為 1 到 10）。
+    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整數陣列（列舉）。
+    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整數陣列（列舉）。
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # 字串陣列（檔案路徑）。
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 紋理陣列。
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # 浮點數二維陣列。
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # 多行字串二維陣列。
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # 浮點數二維陣列（範圍為 -1 到 1）。
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 紋理二維陣列。
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // 整數陣列（範圍為 1 到 10）。
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // 整數陣列（列舉）。
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // 整數陣列（列舉）。
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // 字串陣列（檔案路徑）。
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 紋理陣列。
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // 浮點數二維陣列。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // 多行字串二維陣列。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // 浮點數二維陣列（範圍為 -1 到 1）。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 紋理二維陣列。
 
 
 
-\ **Note:** The trailing colon is required for properly detecting built-in types.
+\ **注意：**\ 後綴冒號是必須的，否則無法正確識別內建型別。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -3883,7 +3883,7 @@ If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to sh
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LOCALE_ID** = ``32``
 
-提示一個字串屬性是一個區域設定程式碼。編輯它將顯示一個用於選擇語言和地區的區域設定對話方塊。
+提示一個字串屬性是一個區域設定程式碼。編輯它將顯示一個用於選擇語言和地區的區域設定對話框。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LOCALIZABLE_STRING:
 
@@ -3907,7 +3907,7 @@ If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to sh
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_HIDE_QUATERNION_EDIT** = ``35``
 
-提示四元數屬性應當禁用臨時歐拉值編輯器。
+提示四元數屬性應當停用臨時歐拉值編輯器。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_PASSWORD:
 
@@ -3923,7 +3923,7 @@ If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to sh
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TOOL_BUTTON** = ``39``
 
-提示 :ref:`Callable<class_Callable>` 屬性應顯示為可點擊按鈕。按下時會呼叫該 Callable。
+提示 :ref:`Callable<class_Callable>` 屬性應顯示為可點選按鈕。按下時會呼叫該 Callable。
 
 hint_string 指定按鈕文字，並可選填 ``EditorIcons`` 主題中的圖示名稱。
 
@@ -3948,9 +3948,9 @@ hint_string 指定按鈕文字，並可選填 ``EditorIcons`` 主題中的圖示
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_GROUP_ENABLE** = ``42``
 
-Hints that a boolean property will enable the feature associated with the group that it occurs in. The property will be displayed as a checkbox on the group header. Only works within a group or subgroup.
+提示布林值屬性會啟用屬性所在分組對應的功能。屬性會以核取方塊的形式在分組標題上顯示。僅在分組或子分組中有效。
 
-By default, disabling the property hides all properties in the group. Use the optional hint string ``"checkbox_only"`` to disable this behavior.
+預設情況下，停用該屬性會隱藏分組中的所有屬性。請使用可選的提示字串 ``"checkbox_only"`` 停用該行為。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_INPUT_NAME:
 
@@ -3972,7 +3972,7 @@ hint_string 可用逗號分隔以下選項：
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FILE_PATH** = ``44``
 
-Like :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`, but the property is stored as a raw path, not UID. That means the reference will be broken if you move the file. Consider using :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>` when possible.
+與 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>` 類似，但是屬性以原始路徑的形式儲存，不使用 UID。這意味著移動檔案後參照可能損壞。請盡量使用 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
@@ -4094,9 +4094,7 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_SCRIPT_VARIABLE** = ``4096``
 
-此屬性為腳本變數。\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 可用來區分匯出的腳本變數與內建變數（後者沒有此旗標）。
-
-預設情況下，若透過覆寫 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 動態建立變數，並不會自動套用此旗標。
+該屬性是一個腳本變數。\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 可以用來把被匯出的腳本變數與內建變數（沒有這種使用標識）區分開來。預設情況下，\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 對腳本中通過重載 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 建立的變數\ **不生效**\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_STORE_IF_NULL:
 
@@ -4146,23 +4144,23 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+該屬性是屬性陣列的元素計數，即一組相關屬性清單。使用此方式的屬性還需要一個特定的 ``class_name`` 欄位 ，形式為 ``label,prefix``\ 。該 欄位 還可以包含其他用逗號分隔的選項：
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: 覆蓋此陣列的 :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>`\ 。
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: "新增元素" 按鈕顯示的文字。
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: 元素不能重新排序。
 
-- ``const``: New elements can't be added.
+- ``const``: 不能新增新元素。
 
-- ``numbered``: An index will appear next to each element.
+- `` 編號 ``\ ：每個元素旁邊將出現一個索引 。
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: 陣列不能折疊。
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+- ``swap_method=方法名 ``\ ：當兩個元素交換位置時將呼叫的方法。該方法應接受 2 個\ :ref:`int<class_int>`\ 參數，這些參數將是被交換元素的索引。
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+注意，建立一個完整的屬性陣列需要涉及\ :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`\ 的樣板程式碼。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 
@@ -4186,7 +4184,7 @@ Note that making a full-fledged property array requires boilerplate code involvi
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_HIGH_END_GFX** = ``2097152``
 
-只有在支援現代算繪器（不包含 GLES3）的情況下該屬性才會在編輯器中顯示。
+只有在支援現代渲染器（不包含 GLES3）的情況下該屬性才會在編輯器中顯示。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_NODE_PATH_FROM_SCENE_ROOT:
 
@@ -4342,7 +4340,7 @@ flags **MethodFlags**: :ref:`🔗<enum_@GlobalScope_MethodFlags>`
 
 :ref:`MethodFlags<enum_@GlobalScope_MethodFlags>` **METHOD_FLAG_VIRTUAL_REQUIRED** = ``128``
 
-Flag for a virtual method that is required. In GDScript, this flag is set for abstract functions.
+必選虛方法的標誌。GDScript 會為抽象函式設定該標誌。
 
 .. _class_@GlobalScope_constant_METHOD_FLAGS_DEFAULT:
 
@@ -4915,7 +4913,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 **UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
 
-Maximum value of an 8-bit unsigned integer.
+8 位元無符號整數的最大值。
 
 .. _class_@GlobalScope_constant_UINT16_MAX:
 
@@ -4923,7 +4921,7 @@ Maximum value of an 8-bit unsigned integer.
 
 **UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
 
-Maximum value of a 16-bit unsigned integer.
+16 位元無符號整數的最大值。
 
 .. _class_@GlobalScope_constant_UINT32_MAX:
 
@@ -4931,7 +4929,7 @@ Maximum value of a 16-bit unsigned integer.
 
 **UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
 
-Maximum value of a 32-bit unsigned integer.
+32 位元無符號整數的最大值。
 
 .. _class_@GlobalScope_constant_INT8_MIN:
 
@@ -4939,7 +4937,7 @@ Maximum value of a 32-bit unsigned integer.
 
 **INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
 
-Minimum value of an 8-bit signed integer.
+8 位元有符號整數的最小值。
 
 .. _class_@GlobalScope_constant_INT8_MAX:
 
@@ -4947,7 +4945,7 @@ Minimum value of an 8-bit signed integer.
 
 **INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
 
-Maximum value of an 8-bit signed integer.
+8 位元有符號整數的最大值。
 
 .. _class_@GlobalScope_constant_INT16_MIN:
 
@@ -4955,7 +4953,7 @@ Maximum value of an 8-bit signed integer.
 
 **INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
 
-Minimum value of a 16-bit signed integer.
+16 位元有符號整數的最小值。
 
 .. _class_@GlobalScope_constant_INT16_MAX:
 
@@ -4963,7 +4961,7 @@ Minimum value of a 16-bit signed integer.
 
 **INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
 
-Maximum value of a 16-bit signed integer.
+16 位元有符號整數的最大值。
 
 .. _class_@GlobalScope_constant_INT32_MIN:
 
@@ -4971,7 +4969,7 @@ Maximum value of a 16-bit signed integer.
 
 **INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
 
-Minimum value of a 32-bit signed integer.
+32 位元有符號整數的最小值。
 
 .. _class_@GlobalScope_constant_INT32_MAX:
 
@@ -4979,7 +4977,7 @@ Minimum value of a 32-bit signed integer.
 
 **INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
 
-Maximum value of a 32-bit signed integer.
+32 位元有符號整數的最大值。
 
 .. _class_@GlobalScope_constant_INT64_MIN:
 
@@ -4987,7 +4985,7 @@ Maximum value of a 32-bit signed integer.
 
 **INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
 
-Minimum value of a 64-bit signed integer.
+64 位元有符號整數的最小值。
 
 .. _class_@GlobalScope_constant_INT64_MAX:
 
@@ -4995,7 +4993,7 @@ Minimum value of a 64-bit signed integer.
 
 **INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
 
-Maximum value of a 64-bit signed integer.
+64 位元有符號整數的最大值。
 
 .. rst-class:: classref-section-separator
 
@@ -5012,7 +5010,7 @@ Maximum value of a 64-bit signed integer.
 
 :ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
 
-The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+:ref:`AccessibilityServer<class_AccessibilityServer>` 單例。
 
 .. rst-class:: classref-item-separator
 
@@ -5122,9 +5120,9 @@ The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
 
 :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
 
-The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+:ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` 單例。
 
-\ **Note:** Only available in editor builds.
+\ **注意：**\ 僅在編輯器建置中可用。
 
 .. rst-class:: classref-item-separator
 
@@ -5274,7 +5272,7 @@ The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+:ref:`NavigationServer2DManager<class_NavigationServer2DManager>` 單例。
 
 .. rst-class:: classref-item-separator
 
@@ -5298,7 +5296,7 @@ The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+:ref:`NavigationServer3DManager<class_NavigationServer3DManager>` 單例。
 
 .. rst-class:: classref-item-separator
 
@@ -5587,7 +5585,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **acos**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_acos>`
 
-返回 ``x`` 的反餘弦，單位為弧度。用來獲取餘弦 ``x`` 的角度。\ ``x`` 會被鉗制在 ``-1.0`` 和 ``1.0``\ （包括）之間，因此 :ref:`acos()<class_@GlobalScope_method_acos>` 不會返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
+返回 ``x`` 的反餘弦，單位為弧度。用來取得餘弦 ``x`` 的角度。\ ``x`` 會被鉗制在 ``-1.0`` 和 ``1.0``\ （包括）之間，因此 :ref:`acos()<class_@GlobalScope_method_acos>` 不會返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 ::
 
@@ -5604,14 +5602,14 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **acosh**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_acosh>`
 
-返回參數 x 的雙曲弧（也稱為反餘弦），返回弧度值。使用它來獲取在雙曲空間中，如果參數 x 大於或等於 1 ，角的餘弦的角度。對於參數 x 小於 1 的值，將返回 0 ，以防止 :ref:`acosh()<class_@GlobalScope_method_acosh>` 返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 。
+回傳 ``x`` 的反雙曲余弦值，回傳值為弧度。使用它來取得在雙曲空間中，如果 ``x`` 大於或等於 1，角的余弦的角度。對於 ``x`` 小於 1 的值，將回傳 0，以防止 :ref:`acosh()<class_@GlobalScope_method_acosh>` 回傳 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 ::
 
-    var a = acosh(2) # 返回 1.31695789692482
-    cosh(a) # 返回 2
+    var a = acosh(2) # 回傳 1.31695789692482
+    cosh(a) # 回傳 2
 
-    var b = acosh(-1) # 返回 0
+    var b = acosh(-1) # 回傳 0
 
 .. rst-class:: classref-item-separator
 
@@ -5635,7 +5633,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **asin**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_asin>`
 
-返回 ``x`` 的反正弦值，單位為弧度。用來獲取正弦 ``x`` 的角度。\ ``x`` 會被鉗制在 ``-1.0`` 和 ``1.0``\ （包括）之間，因此 :ref:`asin()<class_@GlobalScope_method_asin>` 不會返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
+返回 ``x`` 的反正弦值，單位為弧度。用來取得正弦 ``x`` 的角度。\ ``x`` 會被鉗制在 ``-1.0`` 和 ``1.0``\ （包括）之間，因此 :ref:`asin()<class_@GlobalScope_method_asin>` 不會返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 ::
 
@@ -5652,12 +5650,12 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **asinh**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_asinh>`
 
-返回參數 x 的雙曲弧（也稱為反正弦），返回弧度值。使用它來獲取在雙曲空間中，角的正弦角度。
+回傳 ``x`` 的反雙曲正弦值，回傳值為弧度。使用它來取得在雙曲空間中，角的正弦角度。
 
 ::
 
-    var a = asinh(0.9) # 返回 0.8088669356527824
-    sinh(a) # 返回 0.9
+    var a = asinh(0.9) # 回傳 0.8088669356527824
+    sinh(a) # 回傳 0.9
 
 .. rst-class:: classref-item-separator
 
@@ -5669,7 +5667,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **atan**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_atan>`
 
-返回 ``x`` 的反正切值，單位為弧度。可用於由三角函數中的切線值取得角度。
+返回 ``x`` 的反正切值，單位為弧度。可用於由三角函式中的切線值取得角度。
 
 此方法無法判斷角度應該落於哪一象限。如果你同時有 ``y`` 與 ``x``\ ，請參考 :ref:`atan2()<class_@GlobalScope_method_atan2>`\ 。
 
@@ -5707,9 +5705,9 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **atanh**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_atanh>`
 
-返回 ``x`` 的雙曲弧（也稱為反正切），以弧度為單位。如果 ``x`` 在 -1 和 1 之間（不包括 -1 和 1 ），則使用它從雙曲空間中的角度的正切值獲取角度。
+回傳 ``x`` 的反雙曲正切，單位為弧度。當 ``x`` 嚴格介於 -1 與 1 之間時，可用此函式將雙曲空間中的正切值轉換為對應角度。
 
-在數學中，只有在實數集中，-1 < ``x`` < 1 的情況下，雙曲反正切才有意義。因此，為了預防 :ref:`atanh()<class_@GlobalScope_method_atanh>` 返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` ，對於 ``x`` 等於或小於 -1 的值，返回負的 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` ；對於\ ``x``\ 等於或大於 1 的值，返回正的 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 。
+數學上，反雙曲正切在實數範圍內只定義於 -1 < ``x`` < 1。因此，當 ``x`` 小於或等於 -1 時，回傳負的 :ref:`@GDScript.INF<class_@GDScript_constant_INF>`\ ；大於或等於 1 時，回傳正的 :ref:`@GDScript.INF<class_@GDScript_constant_INF>`\ ，以避免 :ref:`atanh()<class_@GlobalScope_method_atanh>` 回傳 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 ::
 
@@ -5832,7 +5830,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`Variant<class_Variant>` **clamp**\ (\ value\: :ref:`Variant<class_Variant>`, min\: :ref:`Variant<class_Variant>`, max\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_clamp>`
 
-將 ``value`` 限制在 ``min`` 與 ``max`` 之間，回傳不小於 ``min`` 且不大於 ``max`` 的 :ref:`Variant<class_Variant>`\ 。任何可用於大小比較的值都適用。
+夾限 ``value``\ ，回傳不小於 ``min`` 且不大於 ``max`` 的 :ref:`Variant<class_Variant>`\ 。任何可用於大小比較的值都適用。
 
 ::
 
@@ -5844,7 +5842,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 \ **注意：**\ 為提升型別安全性，請優先使用 :ref:`clampf()<class_@GlobalScope_method_clampf>`\ 、\ :ref:`clampi()<class_@GlobalScope_method_clampi>`\ 、\ :ref:`Vector2.clamp()<class_Vector2_method_clamp>`\ 、\ :ref:`Vector2i.clamp()<class_Vector2i_method_clamp>`\ 、\ :ref:`Vector3.clamp()<class_Vector3_method_clamp>`\ 、\ :ref:`Vector3i.clamp()<class_Vector3i_method_clamp>`\ 、\ :ref:`Vector4.clamp()<class_Vector4_method_clamp>`\ 、\ :ref:`Vector4i.clamp()<class_Vector4i_method_clamp>` 或 :ref:`Color.clamp()<class_Color_method_clamp>`\ （本函式目前尚不支援 Color）。
 
-\ **注意：**\ 若對向量使用本函式時，將\ *不會*\ 進行分量逐一夾限，只會判斷整體值，若if ``value < min``\ 則回傳 ``min``\ ，\ ``value > max``\ 則回傳 ``max``\ 。若需分量夾限請用上述方法。
+\ **注意：**\ 若對向量使用本函式時，將\ *不會*\ 進行分量逐一夾限，只會判斷整體值，若 ``value < min``\ 則回傳 ``min``\ ，\ ``value > max``\ 則回傳 ``max``\ 。若需分量夾限請用上述方法。
 
 .. rst-class:: classref-item-separator
 
@@ -5982,7 +5980,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`float<class_float>` **db_to_linear**\ (\ db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_db_to_linear>`
 
-從分貝轉換為線性能量（音訊）。
+從分貝轉換為線效能量（音訊）。
 
 .. rst-class:: classref-item-separator
 
@@ -6205,7 +6203,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+回傳實例 ID ``instance_id`` 所對應的 :ref:`Object<class_Object>`\ 。所有物件都有唯一實例 ID。另見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
 
 
 .. tabs::
@@ -6217,7 +6215,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.drink) # 輸出“water”
 
  .. code-tab:: csharp
 
@@ -6229,7 +6227,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Drink); // 輸出“water”
         }
     }
 
@@ -6351,13 +6349,11 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
 
 :ref:`bool<class_bool>` **is_same**\ (\ a\: :ref:`Variant<class_Variant>`, b\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_is_same>`
 
-若為值型別，當 ``a`` 與 ``b`` 之值相同則回傳 ``true``\ ；
-
-若為參考型別，當兩者引用為同一物件時回傳 ``true``\ 。
+當 ``a`` 和 ``b`` 為值型別時，如果他們相同，那麼回傳 ``true``\ 。當 ``a`` 和 ``b`` 為參照型別時，如果它們的參照物件相同，那麼回傳 ``true``\ 。
 
 ::
 
-    # Vector2 為值型別
+    # Vector2 是值型別
     var vec2_a = Vector2(0, 0)
     var vec2_b = Vector2(0, 0)
     var vec2_c = Vector2(1, 1)
@@ -6365,15 +6361,15 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     is_same(vec2_a, vec2_b)  # true
     is_same(vec2_a, vec2_c)  # false
 
-    # Array 為參考型別
+    # Array 是參照型別
     var arr_a = []
     var arr_b = []
     is_same(arr_a, arr_a)  # true
     is_same(arr_a, arr_b)  # false
 
-\ :ref:`Variant<class_Variant>` 值型別包含： ``null``\ 、\ :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`String<class_String>`\ 、\ :ref:`StringName<class_StringName>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 、\ :ref:`Rect2<class_Rect2>`\ 、\ :ref:`Rect2i<class_Rect2i>`\ 、\ :ref:`Transform2D<class_Transform2D>`\ 、\ :ref:`Transform3D<class_Transform3D>`\ 、\ :ref:`Plane<class_Plane>`\ 、\ :ref:`Quaternion<class_Quaternion>`\ 、\ :ref:`AABB<class_AABB>`\ 、\ :ref:`Basis<class_Basis>`\ 、\ :ref:`Projection<class_Projection>`\ 、\ :ref:`Color<class_Color>`\ 、\ :ref:`NodePath<class_NodePath>`\ 、\ :ref:`RID<class_RID>`\ 、\ :ref:`Callable<class_Callable>` 及 :ref:`Signal<class_Signal>`\ 。
+值型別的 :ref:`Variant<class_Variant>` 有：\ ``null``\ 、\ :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`String<class_String>`\ 、\ :ref:`StringName<class_StringName>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 、\ :ref:`Rect2<class_Rect2>`\ 、\ :ref:`Rect2i<class_Rect2i>`\ 、\ :ref:`Transform2D<class_Transform2D>`\ 、\ :ref:`Transform3D<class_Transform3D>`\ 、\ :ref:`Plane<class_Plane>`\ 、\ :ref:`Quaternion<class_Quaternion>`\ 、\ :ref:`AABB<class_AABB>`\ 、\ :ref:`Basis<class_Basis>`\ 、\ :ref:`Projection<class_Projection>`\ 、\ :ref:`Color<class_Color>`\ 、\ :ref:`NodePath<class_NodePath>`\ 、\ :ref:`RID<class_RID>`\ 、\ :ref:`Callable<class_Callable>` 和 :ref:`Signal<class_Signal>`\ 。
 
-\ :ref:`Variant<class_Variant>` 參考型別包含： :ref:`Object<class_Object>`\ 、\ :ref:`Dictionary<class_Dictionary>`\ 、\ :ref:`Array<class_Array>`\ 、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>`\ 、\ :ref:`PackedInt64Array<class_PackedInt64Array>`\ 、\ :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 、\ :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 、\ :ref:`PackedStringArray<class_PackedStringArray>`\ 、\ :ref:`PackedVector2Array<class_PackedVector2Array>`\ 、\ :ref:`PackedVector3Array<class_PackedVector3Array>`\ 、\ :ref:`PackedVector4Array<class_PackedVector4Array>` 與 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
+參照型別的 :ref:`Variant<class_Variant>` 有：\ :ref:`Object<class_Object>`\ 、\ :ref:`Dictionary<class_Dictionary>`\ 、\ :ref:`Array<class_Array>`\ 、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>`\ 、\ :ref:`PackedInt64Array<class_PackedInt64Array>`\ 、\ :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 、\ :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 、\ :ref:`PackedStringArray<class_PackedStringArray>`\ 、\ :ref:`PackedVector2Array<class_PackedVector2Array>`\ 、\ :ref:`PackedVector3Array<class_PackedVector3Array>`\ 、\ :ref:`PackedVector4Array<class_PackedVector4Array>` 和 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6399,23 +6395,17 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
 
 :ref:`Variant<class_Variant>` **lerp**\ (\ from\: :ref:`Variant<class_Variant>`, to\: :ref:`Variant<class_Variant>`, weight\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_lerp>`
 
-依 ``weight`` 線性插值 ``from`` 與 ``to``\ 。
+通過 ``weight`` 中定義的因子在兩個值之間進行線性插值。要執行插值，\ ``weight`` 應介於 ``0.0`` 和 ``1.0`` 之間（包含）。但是，超出此範圍的值也是允許的，並可用於執行\ *外推*\ 。如果不需要，請在使用 :ref:`clampf()<class_@GlobalScope_method_clampf>` 限制 ``weight``\ 。
 
-\ ``weight`` 應介於 ``0.0``\ ～\ ``1.0``\ （含）之間；若超出則為 *外推*\ 。如不需外推，可先對 ``weight`` 使用 :ref:`clampf()<class_@GlobalScope_method_clampf>` 限制。
-
-\ ``from`` 與 ``to`` 必須為相同型別。支援型別： :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Color<class_Color>`\ 、\ :ref:`Quaternion<class_Quaternion>`\ 、\ :ref:`Basis<class_Basis>`\ 、\ :ref:`Transform2D<class_Transform2D>`\ 、\ :ref:`Transform3D<class_Transform3D>`\ 。
+\ ``from`` 和 ``to`` 必須是同一型別。支援的型別：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Color<class_Color>`\ 、\ :ref:`Quaternion<class_Quaternion>`\ 、\ :ref:`Basis<class_Basis>`\ 、\ :ref:`Transform2D<class_Transform2D>`\ 、\ :ref:`Transform3D<class_Transform3D>`\ 。
 
 ::
 
     lerp(0, 4, 0.75) # 回傳 3.0
 
-反向操作請參考 :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>`\ 。
+另見執行本操作的逆操作的 :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>`\ 。要使用 :ref:`lerp()<class_@GlobalScope_method_lerp>` 執行緩動插值，請將其與 :ref:`ease()<class_@GlobalScope_method_ease>` 或 :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>` 結合使用。另見 :ref:`remap()<class_@GlobalScope_method_remap>`\ ，可將一系列連續的值映射到另一個值。
 
-若要進行緩動插值，可將 :ref:`lerp()<class_@GlobalScope_method_lerp>` 與 :ref:`ease()<class_@GlobalScope_method_ease>` 或 :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>` 結合使用。
-
-若要映射連續值區間，請參考 :ref:`remap()<class_@GlobalScope_method_remap>`\ 。
-
-\ **注意：** 為確保型別安全，可使用 :ref:`lerpf()<class_@GlobalScope_method_lerpf>`\ 、\ :ref:`Vector2.lerp()<class_Vector2_method_lerp>`\ 、\ :ref:`Vector3.lerp()<class_Vector3_method_lerp>`\ 、\ :ref:`Vector4.lerp()<class_Vector4_method_lerp>`\ 、\ :ref:`Color.lerp()<class_Color_method_lerp>`\ 、\ :ref:`Quaternion.slerp()<class_Quaternion_method_slerp>`\ 、\ :ref:`Basis.slerp()<class_Basis_method_slerp>`\ 、\ :ref:`Transform2D.interpolate_with()<class_Transform2D_method_interpolate_with>` 或 :ref:`Transform3D.interpolate_with()<class_Transform3D_method_interpolate_with>`\ 。
+\ **注意：**\ 為了更好的型別安全，請使用 :ref:`lerpf()<class_@GlobalScope_method_lerpf>`\ 、\ :ref:`Vector2.lerp()<class_Vector2_method_lerp>`\ 、\ :ref:`Vector3.lerp()<class_Vector3_method_lerp>`\ 、\ :ref:`Vector4.lerp()<class_Vector4_method_lerp>`\ 、\ :ref:`Color.lerp()<class_Color_method_lerp>`\ 、\ :ref:`Quaternion.slerp()<class_Quaternion_method_slerp>`\ 、\ :ref:`Basis.slerp()<class_Basis_method_slerp>`\ 、\ :ref:`Transform2D.interpolate_with()<class_Transform2D_method_interpolate_with>` 或 :ref:`Transform3D.interpolate_with()<class_Transform3D_method_interpolate_with>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6471,7 +6461,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
 
 :ref:`float<class_float>` **linear_to_db**\ (\ lin\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_linear_to_db>`
 
-將線性能量轉換為分貝（音訊）。由於音量通常不是線性的，可利用此函式實作預期的音量滑桿。
+將線效能量轉換為分貝（音訊）。由於音量通常不是線性的，可利用此函式實作預期的音量滑桿。
 
 \ **範例：** 透過 :ref:`Slider<class_Slider>` 節點（取值範圍 ``0.0``\ ~\ ``1.0``\ ）調整主匯流排音量：
 
@@ -6489,15 +6479,15 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
+回傳 `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). 這就是達到某種程度的連續增長所需要的時間。
 
-\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
+\ **注意：** 這和大多數計算器上的 "log" 函式不一樣，計算器上那個用的是以 10 為底的對數。 如果想要使用以 10 為底的對數，請使用 ``log(x) / log(10)``\ 。
 
 ::
 
-    log(10) # Returns 2.302585
+    log(10) # 回傳 2.302585
 
-\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
+\ **注意：** 當輸入為 ``0`` 時，對數函式會回傳 ``-inf``\ ，而輸入負數則會回傳 ``-nan``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -6509,13 +6499,13 @@ Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>
 
 :ref:`Variant<class_Variant>` **max**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_max>`
 
-返回給定數值中的最大值。此函數可以接受任意數量的參數。
+返回給定數值中的最大值。此函式可以接受任意數量的參數。
 
 ::
 
     max(1, 7, 3, -6, 5) # Returns 7
 
-\ **注意：**\ 當對向量使用此函數時，它\ *不會*\ 執行分量級的最大值計算，而是使用 ``x < y`` 比較來選擇最大值。要執行分量級的最大值計算，請使用 :ref:`Vector2.max()<class_Vector2_method_max>`\ 、\ :ref:`Vector2i.max()<class_Vector2i_method_max>`\ 、\ :ref:`Vector3.max()<class_Vector3_method_max>`\ 、\ :ref:`Vector3i.max()<class_Vector3i_method_max>`\ 、\ :ref:`Vector4.max()<class_Vector4_method_max>` 和 :ref:`Vector4i.max()<class_Vector4i_method_max>`\ 。
+\ **注意：**\ 當對向量使用此函式時，它\ *不會*\ 執行分量級的最大值計算，而是使用 ``x < y`` 比較來選擇最大值。要執行分量級的最大值計算，請使用 :ref:`Vector2.max()<class_Vector2_method_max>`\ 、\ :ref:`Vector2i.max()<class_Vector2i_method_max>`\ 、\ :ref:`Vector3.max()<class_Vector3_method_max>`\ 、\ :ref:`Vector3i.max()<class_Vector3i_method_max>`\ 、\ :ref:`Vector4.max()<class_Vector4_method_max>` 和 :ref:`Vector4i.max()<class_Vector4i_method_max>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6732,7 +6722,7 @@ Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>
 
 |void| **print**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print>`
 
-將任意型別的參數最佳化轉為字串後輸出至主控台。
+以盡可能最佳的方式將一個或多個任意型別的參數轉換為字串，並將其輸出到控制台。
 
 
 .. tabs::
@@ -6740,18 +6730,16 @@ Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>
  .. code-tab:: gdscript
 
     var a = [1, 2, 3]
-    print("a", "b", a) # 輸出 "ab[1, 2, 3]"
+    print("a", "b", a) # 輸出“ab[1, 2, 3]”
 
  .. code-tab:: csharp
 
     Godot.Collections.Array a = [1, 2, 3];
-    GD.Print("a", "b", a); // 輸出 "ab[1, 2, 3]"
+    GD.Print("a", "b", a); // 輸出“ab[1, 2, 3]”
 
 
 
-\ **注意：** 建議使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 與 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 來輸出錯誤與警告訊息，以區分除錯列印，並在輸出時附帶堆疊追蹤。
-
-另見 :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>` 與 :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`\ 。
+\ **注意：**\ 請考慮使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 來輸出錯誤和警告訊息，而不是 :ref:`print()<class_@GlobalScope_method_print>` 或 :ref:`print_rich()<class_@GlobalScope_method_print_rich>`\ 。這將它們與用於除錯目的的輸出訊息區分開來，同時還會在輸出錯誤或警告時顯示堆疊追蹤。另見 :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>` 和 :ref:`ProjectSettings.application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6763,30 +6751,30 @@ Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-將任意型別的參數最佳化轉為字串並以 BBCode 呈現後輸出至主控台。
+以盡可能最佳的方式將一個或多個任意型別的參數轉換為字串，並將其輸出到控制台。
 
-支援的 BBCode 標籤： ``b``\ 、\ ``i``\ 、\ ``u``\ 、\ ``s``\ 、\ ``indent``\ 、\ ``code``\ 、\ ``url``\ 、\ ``center``\ 、\ ``right``\ 、\ ``color``\ 、\ ``bgcolor``\ 、\ ``fgcolor``\ 。
+支援以下 BBCode 標籤： ``b``\ 、\ ``i``\ 、\ ``u``\ 、\ ``s``\ 、\ ``indent``\ 、\ ``code``\ 、\ ``url``\ 、\ ``center``\ 、\ ``right``\ 、\ ``color``\ 、\ ``bgcolor``\ 、\ ``fgcolor``\ 。
 
-URL 標籤僅支援形如 ``[url]https://example.com[/url]`` 的格式。
+URL 標籤僅支援在 URL 標籤中包含 URL，不支援使用不同標題的 URL。
 
-輸出至標準輸出時，可支援的 BBCode 會轉為 ANSI 控制碼；實際效果依終端機模擬器而異（特別是斜體與刪除線）。\ ``code`` 會以淡色顯示但不改字型。
+當輸出到標準輸出時，支援的 BBCode 子集被轉換為 ANSI 跳脫碼以供終端仿真器顯示。對 ANSI 跳脫碼的支援可能因終端仿真器而異，尤其是斜體和刪除線。在標準輸出中，\ ``code`` 會使用較弱的文字表示，但字型不變。不支援的標籤在標準輸出中會原樣保留。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Hello world![/b][/color]") # 以綠色粗體輸出
+    print_rich("[color=green][b]Hello world![/b][/color]") # 輸出“Hello world!”，使用綠色的粗體。
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // 以綠色粗體輸出
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // 輸出“Hello world!”，使用綠色的粗體。
 
 
 
-\ **注意：** 建議使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 與 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 來輸出錯誤與警告訊息，以保留堆疊追蹤並區分除錯輸出。
+\ **注意：**\ 請考慮使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 來輸出錯誤和警告訊息，而不是 :ref:`print()<class_@GlobalScope_method_print>` 或 :ref:`print_rich()<class_@GlobalScope_method_print_rich>`\ 。這將它們與用於除錯目的的輸出訊息區分開來，同時還會在輸出錯誤或警告時顯示堆疊追蹤。
 
-\ **注意：** 編輯器輸出支援可點擊的 ``[url=網址]文字[/url]``\ ，點擊後會透過 :ref:`OS.shell_open()<class_OS_method_shell_open>` 開啟網址。
+\ **注意：**\ 在編輯器中顯示的輸出支援可點選的 ``[url=address]文字[/url]`` 標籤。點選時， ``[url]`` 標籤的 ``address`` 值由 :ref:`OS.shell_open()<class_OS_method_shell_open>` 處理。
 
 .. rst-class:: classref-item-separator
 
@@ -7322,14 +7310,14 @@ URL 標籤僅支援形如 ``[url]https://example.com[/url]`` 的格式。
 
 :ref:`float<class_float>` **signf**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_signf>`
 
-若 ``x`` 為負則回傳 ``-1.0``\ ，為正則回傳 ``1.0``\ ，為零則回傳 ``0.0``\ ，遇 ``nan`` 則回傳 0.0。
+如果 ``x`` 為負，則回傳 ``-1.0``\ ；如果 ``x`` 為正，則回傳 ``1.0``\ ；如果 ``x`` 為零，則回傳 ``0.0``\ 。如果 ``x`` 為 ``nan`` 則回傳 0.0。
 
 ::
 
-    signf(-6.5) # 返回 -1.0
-    signf(0.0)  # 返回 0.0
-    signf(6.5)  # 返回 1.0
-    signf(NAN)  # 返回 0.0
+    signf(-6.5) # 回傳 -1.0
+    signf(0.0)  # 回傳 0.0
+    signf(6.5)  # 回傳 1.0
+    signf(NAN)  # 回傳 0.0
 
 .. rst-class:: classref-item-separator
 
@@ -7341,7 +7329,7 @@ URL 標籤僅支援形如 ``[url]https://example.com[/url]`` 的格式。
 
 :ref:`int<class_int>` **signi**\ (\ x\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_signi>`
 
-若 ``x`` 為負則回傳 ``-1``\ ；為正則回傳 ``1``\ ；為 0 則回傳 ``0``\ 。
+如果 ``x`` 為負，則回傳 ``-1``\ ；如果 ``x`` 為正，則回傳 ``1``\ ；如果 ``x`` 為零，則回傳 ``0``\ 。
 
 ::
 
@@ -7448,14 +7436,14 @@ URL 標籤僅支援形如 ``[url]https://example.com[/url]`` 的格式。
 
 :ref:`float<class_float>` **snappedf**\ (\ x\: :ref:`float<class_float>`, step\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_snappedf>`
 
-回傳最接近 ``x`` 的 ``step`` 倍數，可用於將浮點數取至任意小數位。
+回傳最接近 ``x`` 的 ``step`` 的倍數。也可用於將浮點數四捨五入為任意的小數位數。
 
-此為型別安全版本，回傳 :ref:`float<class_float>`\ 。
+\ :ref:`snapped()<class_@GlobalScope_method_snapped>` 的型別安全版本，回傳一個 :ref:`float<class_float>`\ 。
 
 ::
 
-    snappedf(32.0, 2.5)       # 回傳 32.5
-    snappedf(3.14159, 0.01)   # 回傳 3.14
+    snappedf(32.0, 2.5)  # 回傳 32.5
+    snappedf(3.14159, 0.01)  # 回傳 3.14
 
 .. rst-class:: classref-item-separator
 
@@ -7649,7 +7637,7 @@ URL 標籤僅支援形如 ``[url]https://example.com[/url]`` 的格式。
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+回傳給定 ``variable`` 的內部型別，使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 列舉值表示。
 
 ::
 
@@ -7657,11 +7645,11 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     json.parse('["a", "b", "c"]')
     var result = json.get_data()
     if typeof(result) == TYPE_ARRAY:
-        print(result[0]) # Prints "a"
+        print(result[0]) # 輸出“a”
     else:
-        print("Unexpected result!")
+        print("預料之外的結果！")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+另見 :ref:`type_string()<class_@GlobalScope_method_type_string>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7755,20 +7743,20 @@ See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
 
 :ref:`Variant<class_Variant>` **wrap**\ (\ value\: :ref:`Variant<class_Variant>`, min\: :ref:`Variant<class_Variant>`, max\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_wrap>`
 
-Wraps the :ref:`Variant<class_Variant>` ``value`` between ``min`` and ``max``. ``min`` is *inclusive* while ``max`` is *exclusive*. This can be used for creating loop-like behavior or infinite surfaces.
+在 ``min`` 和 ``max`` 之間包裹 :ref:`Variant<class_Variant>` ``value``\ 。\ ``min`` *包含*\ 端點，\ ``max`` 則\ *不包含*\ 。可用於建立類似循環的行為或無限表面。
 
-Variant types :ref:`int<class_int>` and :ref:`float<class_float>` are supported. If any of the arguments is :ref:`float<class_float>`, this function returns a :ref:`float<class_float>`, otherwise it returns an :ref:`int<class_int>`.
+支援變體型別 :ref:`int<class_int>` 和 :ref:`float<class_float>`\ 。如果任一參數是 :ref:`float<class_float>`\ ，則該函式回傳 :ref:`float<class_float>`\ ，否則回傳 :ref:`int<class_int>`\ 。
 
 ::
 
     var a = wrap(4, 5, 10)
-    # a is 9 (int)
+    # a 為 9 （整數型別）
 
     var a = wrap(7, 5, 10)
-    # a is 7 (int)
+    # a 為 7 （整數型別）
 
     var a = wrap(10.5, 5, 10)
-    # a is 5.5 (float)
+    # a 為 5.5 （浮點型別）
 
 .. rst-class:: classref-item-separator
 
@@ -7780,24 +7768,24 @@ Variant types :ref:`int<class_int>` and :ref:`float<class_float>` are supported.
 
 :ref:`float<class_float>` **wrapf**\ (\ value\: :ref:`float<class_float>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_wrapf>`
 
-Wraps the float ``value`` between ``min`` and ``max``. ``min`` is *inclusive* while ``max`` is *exclusive*. This can be used for creating loop-like behavior or infinite surfaces.
+在 ``min`` 和 ``max`` 之間將浮點數 ``value`` 循環。\ ``min`` *包含*\ 端點，\ ``max`` 則\ *不包含*\ 。可用於建立類似循環的行為或無限表面。
 
 ::
 
-    # Infinite loop between 5.0 and 9.9
+    # 在 5.0 和 9.9 之間無限循環
     value = wrapf(value + 0.1, 5.0, 10.0)
 
 ::
 
-    # Infinite rotation (in radians)
+    # 無限旋轉（弧度）
     angle = wrapf(angle + 0.1, 0.0, TAU)
 
 ::
 
-    # Infinite rotation (in radians)
+    # 無限旋轉（弧度）
     angle = wrapf(angle + 0.1, -PI, PI)
 
-\ **Note:** If ``min`` is ``0``, this is equivalent to :ref:`fposmod()<class_@GlobalScope_method_fposmod>`, so prefer using that instead. :ref:`wrapf()<class_@GlobalScope_method_wrapf>` is more flexible than using the :ref:`fposmod()<class_@GlobalScope_method_fposmod>` approach by giving the user control over the minimum value.
+\ **注意：**\ 如果 ``min`` 為 ``0``\ ，則相當於 :ref:`fposmod()<class_@GlobalScope_method_fposmod>`\ ，因此請優先使用後者。通過讓使用者控制最小值，\ :ref:`wrapf()<class_@GlobalScope_method_wrapf>` 比使用 :ref:`fposmod()<class_@GlobalScope_method_fposmod>` 方法更靈活。
 
 .. rst-class:: classref-item-separator
 
@@ -7809,16 +7797,16 @@ Wraps the float ``value`` between ``min`` and ``max``. ``min`` is *inclusive* wh
 
 :ref:`int<class_int>` **wrapi**\ (\ value\: :ref:`int<class_int>`, min\: :ref:`int<class_int>`, max\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_wrapi>`
 
-Wraps the integer ``value`` between ``min`` and ``max``. ``min`` is *inclusive* while ``max`` is *exclusive*. This can be used for creating loop-like behavior or infinite surfaces.
+在 ``min`` 和 ``max`` 之間環繞整數 ``value``\ 。\ ``min`` *包含*\ 端點，\ ``max`` 則\ *不包含*\ 。可用於建立類似循環的行為或無限曲面。
 
 ::
 
-    # Infinite loop between 5 and 9
+    # 在 5 和 9 之間無限循環
     frame = wrapi(frame + 1, 5, 10)
 
 ::
 
-    # result is -2
+    # result 是 -2
     var result = wrapi(-6, -5, -1)
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`

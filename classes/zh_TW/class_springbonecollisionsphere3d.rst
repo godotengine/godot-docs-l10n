@@ -7,14 +7,14 @@ SpringBoneCollisionSphere3D
 
 **繼承：** :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A sphere shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的球形碰撞。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A sphere shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的球形碰撞。
 
 .. rst-class:: classref-reftable-group
 
@@ -50,7 +50,7 @@ A sphere shape collision that interacts with :ref:`SpringBoneSimulator3D<class_S
 - |void| **set_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_inside**\ (\ )
 
-If ``true``, the collision acts to trap the joint within the collision.
+如果為 ``true``\ ，則碰撞會讓關節困在碰撞中。
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ If ``true``, the collision acts to trap the joint within the collision.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The sphere's radius.
+球體的半徑。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

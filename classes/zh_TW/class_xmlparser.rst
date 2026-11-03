@@ -144,7 +144,7 @@ enum **NodeType**: :ref:`🔗<enum_XMLParser_NodeType>`
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_TEXT** = ``3``
 
-文字節點型別，即不在元素中的文字。包含空白字元。
+文位元組點型別，即不在元素中的文字。包含空白字元。
 
 .. _class_XMLParser_constant_NODE_COMMENT:
 
@@ -259,7 +259,7 @@ CDATA（字元資料）部分對應的節點型別，例如 ``<![CDATA[CDATA sec
 
 :ref:`String<class_String>` **get_node_data**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_data>`
 
-返回文字節點的內容。如果目前解析節點是其他型別，則會引發錯誤。
+返回文位元組點的內容。如果目前解析節點是其他型別，則會引發錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -271,9 +271,9 @@ CDATA（字元資料）部分對應的節點型別，例如 ``<![CDATA[CDATA sec
 
 :ref:`String<class_String>` **get_node_name**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_name>`
 
-Returns the name of a node. This method will raise an error if the currently parsed node is a text node.
+回傳元素節點的名稱。如果目前解析的節點為文字節點，則該方法會引發錯誤。
 
-\ **Note:** The content of a :ref:`NODE_CDATA<class_XMLParser_constant_NODE_CDATA>` node and the comment string of a :ref:`NODE_COMMENT<class_XMLParser_constant_NODE_COMMENT>` node are also considered names.
+\ **注意：**\ :ref:`NODE_CDATA<class_XMLParser_constant_NODE_CDATA>` 節點的內容和 :ref:`NODE_COMMENT<class_XMLParser_constant_NODE_COMMENT>` 節點的注釋字串也均被認為是名稱。
 
 .. rst-class:: classref-item-separator
 

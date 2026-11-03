@@ -25,7 +25,7 @@ PhysicsBody2D
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
 .. rst-class:: classref-reftable-group
 
@@ -100,7 +100,7 @@ PhysicsBody2D
 
 :ref:`Vector2<class_Vector2>` **get_gravity**\ (\ ) |const| :ref:`🔗<class_PhysicsBody2D_method_get_gravity>`
 
-Returns the gravity vector computed from all sources that can affect the body, including all gravity overrides from :ref:`Area2D<class_Area2D>` nodes and the global world gravity.
+回傳根據能夠影響該物體的所有來源計算得到的重力向量，包括 :ref:`Area2D<class_Area2D>` 節點的重力覆蓋和全域世界重力。
 
 .. rst-class:: classref-item-separator
 
@@ -114,9 +114,9 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 沿著運動向量 ``motion`` 移動該物體。為了在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 和 :ref:`Node._process()<class_Node_private_method__process>` 中不依賴畫面播放速率，\ ``motion`` 應該使用 ``delta`` 計算。
 
-返回 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ ，包含停止時的碰撞資訊，或者沿運動向量接觸到其他物體時的碰撞信息。
+返回 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ ，包含停止時的碰撞資訊，或者沿運動向量接觸到其他物體時的碰撞資訊。
 
-如果 ``test_only`` 為 ``true``\ ，則該物體不會移動，但會給出可能的碰撞信息。
+如果 ``test_only`` 為 ``true``\ ，則該物體不會移動，但會給出可能的碰撞資訊。
 
 \ ``safe_margin`` 是用於碰撞恢復的額外邊距（詳見 :ref:`CharacterBody2D.safe_margin<class_CharacterBody2D_property_safe_margin>` ）。
 

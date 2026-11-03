@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a pitch-shifting audio effect to an audio bus.
+向音訊總線新增一個音高偏移音訊效果。
 
-Raises or lowers the pitch of the input audio.
+提高或降低輸入音訊的音高。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
+允許在不改變速度的前提下調制音高。所有頻率均可進行升降，且對瞬態的影響極小。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Allows modulation of pitch without modifying speed. All frequencies can be raise
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -126,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
+`快速傅里葉變換 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 緩衝區的大小。較高的數值可以使效果隨時間平滑，但有較大的延遲。這種較高的延遲對有突然幅度變化的音訊訊號的影響特別明顯。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Four
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
+要使用的音高縮放比例。\ ``1.0`` 為預設音高，播放的聲音不受影響。\ :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` 的取值範圍為 0（音高極低，無法聽見）到 16（比初始音高高 16 倍）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

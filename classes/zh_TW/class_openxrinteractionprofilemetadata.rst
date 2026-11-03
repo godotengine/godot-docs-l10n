@@ -51,9 +51,9 @@ OpenXRInteractionProfileMetadata
 
 |void| **register_interaction_profile**\ (\ display_name\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>`
 
-Registers an interaction profile using its OpenXR designation (e.g. ``/interaction_profiles/khr/simple_controller`` is the profile for OpenXR's simple controller profile).
+使用 OpenXR 名稱注冊互動設定檔案（例如 ``/interaction_profiles/khr/simple_controller`` 是 OpenXR 簡單控制器設定檔案的設定檔案）。
 
-\ ``display_name`` is the description shown to the user. ``openxr_path`` is the interaction profile path being registered. ``openxr_extension_names`` optionally restricts this profile to the given extension being enabled/available. If the extension is not available, the profile and all related entries used in an action map are filtered out.
+\ ``display_name`` 是向使用者顯示的描述。\ ``openxr_path`` 是正被注冊的互動設定檔案路徑。\ ``openxr_extension_names`` 可以選擇將該設定檔案限制為對給定擴充啟用/可用。如果該擴充不可用，則動作映射中使用的設定檔案和所有相關條目都會被過濾掉。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Registers an interaction profile using its OpenXR designation (e.g. ``/interacti
 
 |void| **register_io_path**\ (\ interaction_profile\: :ref:`String<class_String>`, display_name\: :ref:`String<class_String>`, toplevel_path\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`, action_type\: :ref:`ActionType<enum_OpenXRAction_ActionType>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_io_path>`
 
-Registers an input/output path for the given ``interaction_profile``. The profile should previously have been registered using :ref:`register_interaction_profile()<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>`. ``display_name`` is the description shown to the user. ``toplevel_path`` specifies the bind path this input/output can be bound to (e.g. ``/user/hand/left`` or ``/user/hand/right``). ``openxr_path`` is the action input/output being registered (e.g. ``/user/hand/left/input/aim/pose``). ``openxr_extension_names`` restricts this input/output to an enabled/available extension, this doesn't need to repeat the extension on the profile but relates to overlapping extension (e.g. ``XR_EXT_palm_pose`` that introduces ``…/input/palm_ext/pose`` input paths). ``action_type`` defines the type of input or output provided by OpenXR.
+為給定的 ``interaction_profile`` 注冊輸入/輸出路徑。該設定檔案之前應已使用 :ref:`register_interaction_profile()<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>` 注冊。\ ``display_name`` 是向使用者顯示的描述。\ ``toplevel_path`` 指定該輸入/輸出可以被綁定到的綁定路徑（例如 ``/user/hand/left`` 或 ``/user/hand/right``\ ）。\ ``openxr_path`` 是正被注冊的動作輸入/輸出（例如 ``/user/hand/left/input/aim/pose``\ ）。\ ``openxr_extension_names`` 將該輸入/輸出限制為啟用的/可用的擴充，這不需要在設定檔案上重複該擴充，但與重疊擴充相關（例如引入 ``…/input/palm_ext/pose`` 輸入路徑的 ``XR_EXT_palm_pose``\ ）。\ ``action_type`` 定義 OpenXR 提供的輸入或輸出的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Registers an input/output path for the given ``interaction_profile``. The profil
 
 |void| **register_path_rename**\ (\ old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_path_rename>`
 
-Allows for renaming old input/output paths to new paths in order to load and process older action maps.
+允許將舊的輸入/輸出路徑重新命名為新路徑，以便載入和處理舊動作映射。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Allows for renaming old input/output paths to new paths in order to load and pro
 
 |void| **register_profile_rename**\ (\ old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_profile_rename>`
 
-Allows for renaming old interaction profile paths to new paths in order to load and process older action maps.
+允許將舊的互動設定檔案路徑重新命名為新路徑，以便載入和處理舊動作映射。
 
 .. rst-class:: classref-item-separator
 
@@ -101,11 +101,11 @@ Allows for renaming old interaction profile paths to new paths in order to load 
 
 |void| **register_top_level_path**\ (\ display_name\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_top_level_path>`
 
-Registers a top level path to which profiles can be bound. For instance ``/user/hand/left`` refers to the bind point for the player's left hand. Extensions can register additional top level paths, for instance a haptic vest extension might register ``/user/body/vest``.
+注冊設定檔案可以被綁定到的頂級路徑。例如 ``/user/hand/left`` 指的是玩家左手的綁定點。擴充可以注冊額外的頂級路徑，例如觸覺背心擴充可以注冊 ``/user/body/vest``\ 。
 
-\ ``display_name`` is the name shown to the user. ``openxr_path`` is the top level path being registered. ``openxr_extension_names`` is optional and ensures the top level path is only used if the specified extension is available/enabled.
+\ ``display_name`` 是向使用者顯示的名稱。\ ``openxr_path`` 是正被注冊的頂級路徑。\ ``openxr_extension_names`` 是可選的，可確保僅在指定的擴充可用/啟用時才使用頂級路徑。
 
-When a top level path ends up being bound by OpenXR, an :ref:`XRPositionalTracker<class_XRPositionalTracker>` is instantiated to manage the state of the device.
+當頂級路徑最終被 OpenXR 綁定時，\ :ref:`XRPositionalTracker<class_XRPositionalTracker>` 被實例化以管理該裝置的狀態。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

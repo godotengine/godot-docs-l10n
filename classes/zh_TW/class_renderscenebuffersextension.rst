@@ -63,7 +63,7 @@ RenderSceneBuffersExtension
 
 |void| **_set_anisotropic_filtering_level**\ (\ anisotropic_filtering_level\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__set_anisotropic_filtering_level>`
 
-Implement this in GDExtension to change the anisotropic filtering level.
+在 GDExtension 中實作該功能以更改各向異性過濾層級。
 
 .. rst-class:: classref-item-separator
 

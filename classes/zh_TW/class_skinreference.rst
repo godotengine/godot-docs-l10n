@@ -7,22 +7,22 @@ SkinReference
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A reference-counted holder object for a skeleton RID used in the :ref:`RenderingServer<class_RenderingServer>`.
+骨架 RID 的參照計數佔位物件，\ :ref:`RenderingServer<class_RenderingServer>` 中會使用該 RID。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An internal object containing a mapping from a :ref:`Skin<class_Skin>` used within the context of a particular :ref:`MeshInstance3D<class_MeshInstance3D>` to refer to the skeleton's :ref:`RID<class_RID>` in the RenderingServer.
+包含來自 :ref:`Skin<class_Skin>` （在特定 :ref:`MeshInstance3D<class_MeshInstance3D>` 情境中使用）的映射的內部物件，用於參照 RenderingServer 中的骨架 :ref:`RID<class_RID>`\ 。
 
-See also :ref:`MeshInstance3D.get_skin_reference()<class_MeshInstance3D_method_get_skin_reference>` and :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`.
+另見 :ref:`MeshInstance3D.get_skin_reference()<class_MeshInstance3D_method_get_skin_reference>` 和 :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`\ 。
 
-Note that despite the similar naming, the skeleton RID used in the :ref:`RenderingServer<class_RenderingServer>` does not have a direct one-to-one correspondence to a :ref:`Skeleton3D<class_Skeleton3D>` node.
+請注意，儘管命名相似，但 :ref:`RenderingServer<class_RenderingServer>` 中使用的骨架 RID 與 :ref:`Skeleton3D<class_Skeleton3D>` 節點沒有直接的一一對應關係。
 
-In particular, a :ref:`Skeleton3D<class_Skeleton3D>` node with no :ref:`MeshInstance3D<class_MeshInstance3D>` children may be unknown to the :ref:`RenderingServer<class_RenderingServer>`.
+特別是，沒有 :ref:`MeshInstance3D<class_MeshInstance3D>` 子節點的 :ref:`Skeleton3D<class_Skeleton3D>` 節點可能對 :ref:`RenderingServer<class_RenderingServer>` 來說是未知的。
 
-On the other hand, a :ref:`Skeleton3D<class_Skeleton3D>` with multiple :ref:`MeshInstance3D<class_MeshInstance3D>` nodes which each have different :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` objects may have multiple SkinReference instances (and hence, multiple skeleton :ref:`RID<class_RID>`\ s).
+另一方面，具有多個 :ref:`MeshInstance3D<class_MeshInstance3D>` 節點（每個節點都有不同的 :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` 物件）的 :ref:`Skeleton3D<class_Skeleton3D>` 可能具有多個 SkinReference 實例（因此，有多個骨架 :ref:`RID<class_RID>`\ ）。
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ On the other hand, a :ref:`Skeleton3D<class_Skeleton3D>` with multiple :ref:`Mes
 
 :ref:`RID<class_RID>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skeleton>`
 
-Returns the :ref:`RID<class_RID>` owned by this SkinReference, as returned by :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>`.
+回傳該 SkinReference 所擁有的 :ref:`RID<class_RID>`\ ，如 :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>` 回傳的那樣。
 
 .. rst-class:: classref-item-separator
 
@@ -65,9 +65,9 @@ Returns the :ref:`RID<class_RID>` owned by this SkinReference, as returned by :r
 
 :ref:`Skin<class_Skin>` **get_skin**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skin>`
 
-Returns the :ref:`Skin<class_Skin>` connected to this SkinReference. In the case of :ref:`MeshInstance3D<class_MeshInstance3D>` with no :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` assigned, this will reference an internal default :ref:`Skin<class_Skin>` owned by that :ref:`MeshInstance3D<class_MeshInstance3D>`.
+回傳連接到該 SkinReference 的 :ref:`Skin<class_Skin>`\ 。如果 :ref:`MeshInstance3D<class_MeshInstance3D>` 未分配 :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>`\ ，則這將參照該 :ref:`MeshInstance3D<class_MeshInstance3D>` 擁有的內部預設 :ref:`Skin<class_Skin>`\ 。
 
-Note that a single :ref:`Skin<class_Skin>` may have more than one **SkinReference** in the case that it is shared by meshes across multiple :ref:`Skeleton3D<class_Skeleton3D>` nodes.
+請注意，如果單個 :ref:`Skin<class_Skin>` 由多個 :ref:`Skeleton3D<class_Skeleton3D>` 節點之間的網格共享，則它可能具有多個 **SkinReference**\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

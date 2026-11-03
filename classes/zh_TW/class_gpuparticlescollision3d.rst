@@ -20,7 +20,7 @@ GPUParticlesCollision3D
 
 粒子碰撞形狀是即時的，在遊戲過程中可以移動、旋轉和縮放。與吸引器不同，碰撞形狀的非均勻縮放\ *不*\ 受支援。
 
-粒子碰撞形狀可以通過隱藏而暫時禁用。
+粒子碰撞形狀可以通過隱藏而暫時停用。
 
 \ **注意：**\ 在 :ref:`GPUParticles3D<class_GPUParticles3D>` 的處理材質上，\ :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 必須是 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`\ ，才能使碰撞生效。
 
@@ -60,11 +60,11 @@ GPUParticlesCollision3D
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-The particle rendering layers (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) that will be affected by the collision shape. By default, all particles that have :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` set to :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` or :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` will be affected by a collision shape.
+將受碰撞形狀影響的粒子渲染層（\ :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ ）。預設情況下，所有 :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 設定為 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` 的粒子都將受到碰撞形狀的影響。
 
-After configuring particle nodes accordingly, specific layers can be unchecked to prevent certain particles from being affected by colliders. For example, this can be used if you're using a collider as part of a spell effect but don't want the collider to affect unrelated weather particles at the same position.
+相應地設定粒子節點後，可以取消選中特定層，防止某些粒子受到碰撞體的影響。例如，如果你將碰撞體用作法術效果的一部分但不希望碰撞體影響同一位置的不相關天氣粒子，則可以使用該選項。
 
-Particle collision can also be disabled on a per-process material basis by setting :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` on the :ref:`GPUParticles3D<class_GPUParticles3D>` node.
+通過在 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點上設定 :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>`\ ，也可以在每個處理程序材質的基礎上停用粒子碰撞。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

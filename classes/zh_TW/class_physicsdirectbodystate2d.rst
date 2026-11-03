@@ -167,7 +167,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`Vector2<class_Vector2>` **get_center_of_mass**\ (\ )
 
-該物體質心的位置，相對於該物體的中心，使用全域坐標系。
+該物體質心的位置，相對於該物體的中心，使用全域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`Vector2<class_Vector2>` **get_center_of_mass_local**\ (\ )
 
-該物體質心的位置，使用該物體的局部坐標系。
+該物體質心的位置，使用該物體的區域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ PhysicsDirectBodyState2D
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-The body's collision layer.
+物體的碰撞層。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ The body's collision layer.
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The body's collision mask.
+物體的碰撞遮罩。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ The body's collision mask.
 
 :ref:`Vector2<class_Vector2>` **get_contact_collider_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_position>`
 
-返回該碰撞體上接觸點的位置，使用全域坐標系。
+返回該碰撞體上接觸點的位置，使用全域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ The body's collision mask.
 
 :ref:`Vector2<class_Vector2>` **get_contact_local_normal**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_normal>`
 
-返回接觸點處的局部法線。
+返回接觸點處的區域法線。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ The body's collision mask.
 
 :ref:`Vector2<class_Vector2>` **get_contact_local_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_position>`
 
-返回該物體上接觸點的位置，使用全域坐標系。
+返回該物體上接觸點的位置，使用全域座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ The body's collision mask.
 
 :ref:`int<class_int>` **get_contact_local_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_shape>`
 
-返回碰撞的局部坐標系下的形狀索引。
+返回碰撞的區域座標系下的形狀索引。
 
 .. rst-class:: classref-item-separator
 
@@ -697,9 +697,9 @@ The body's collision mask.
 
 :ref:`Vector2<class_Vector2>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>`
 
-Returns the body's velocity at the given relative position.
+回傳剛體在給定相對位置處的速度。
 
-\ ``local_position`` is the offset from the body origin in global coordinates.
+\ ``local_position`` 是相對於剛體原點的全域座標偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -711,7 +711,7 @@ Returns the body's velocity at the given relative position.
 
 |void| **integrate_forces**\ (\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_integrate_forces>`
 
-Updates the body's linear and angular velocity by applying gravity and damping for the equivalent of one physics tick.
+通過應用相當於一個物理刻度的重力和阻尼來更新物體的線速度和角速度。
 
 .. rst-class:: classref-item-separator
 

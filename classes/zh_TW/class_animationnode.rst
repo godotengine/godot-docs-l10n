@@ -146,7 +146,7 @@ AnimationNode
 
 **實驗性：** 此訊號可能在未來版本中變更或移除。
 
-Emitted by :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` when its :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` resource is changed, or by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` when its connections change.
+當 :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` 的 :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` 資源發生改變時，或者當 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的連接關係發生變化時，該訊號會被觸發（發出）。
 
 .. rst-class:: classref-item-separator
 

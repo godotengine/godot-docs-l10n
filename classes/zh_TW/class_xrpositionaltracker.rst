@@ -16,11 +16,11 @@ XRPositionalTracker
 說明
 ----
 
-An instance of this object represents a device that is tracked, such as a controller or anchor point. HMDs aren't represented here as they are handled internally.
+此物件的一個實例，表示一個被追蹤的裝置，例如一個控制器或錨點。HMD 沒有在此處表示，因為它們是在內部處理的。
 
-As controllers are turned on and the :ref:`XRInterface<class_XRInterface>` detects them, instances of this object are automatically added to this list of active tracking objects accessible through the :ref:`XRServer<class_XRServer>`.
+當控制器被打開，並且 :ref:`XRInterface<class_XRInterface>` 檢測到它們時，該物件的實例會自動被新增到可通過 :ref:`XRServer<class_XRServer>` 存取的活動追蹤物件清單中。
 
-The :ref:`XRNode3D<class_XRNode3D>` and :ref:`XRAnchor3D<class_XRAnchor3D>` both consume objects of this type and should be used in your project. The positional trackers are just under-the-hood objects that make this all work. These are mostly exposed so that GDExtension-based interfaces can interact with them.
+\ :ref:`XRNode3D<class_XRNode3D>` 和 :ref:`XRAnchor3D<class_XRAnchor3D>` 都使用這種型別的物件，並且應該在你的專案中使用。位置追蹤器只是使這一切正常工作的底層物件。這些大部分都是公開的，以便基於 GDExtension 的介面，可以與它們互動。
 
 .. rst-class:: classref-introduction-group
 
@@ -199,7 +199,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **TRACKER_HAND_MAX** = ``3``
 
-Represents the size of the :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` enum.
+代表 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -293,7 +293,7 @@ Represents the size of the :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHan
 
 |void| **invalidate_pose**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_XRPositionalTracker_method_invalidate_pose>`
 
-Marks this pose as invalid, we don't clear the last reported state but it allows users to decide if trackers need to be hidden if we lose tracking or just remain at their last known position.
+將此姿勢標記為無效，我們不會清除最後報告的狀態，但如果我們失去追蹤，它允許使用者決定是否需要隱藏追蹤器，或僅保留在其最後一個已知位置。
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Marks this pose as invalid, we don't clear the last reported state but it allows
 
 **已棄用：** Use through :ref:`XRControllerTracker<class_XRControllerTracker>`.
 
-Changes the value for the given input. This method is called by an :ref:`XRInterface<class_XRInterface>` implementation and should not be used directly.
+更改給定輸入的值。此方法由一個 :ref:`XRInterface<class_XRInterface>` 實作呼叫，不應直接使用。
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ Changes the value for the given input. This method is called by an :ref:`XRInter
 
 |void| **set_pose**\ (\ name\: :ref:`StringName<class_StringName>`, transform\: :ref:`Transform3D<class_Transform3D>`, linear_velocity\: :ref:`Vector3<class_Vector3>`, angular_velocity\: :ref:`Vector3<class_Vector3>`, tracking_confidence\: :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>`\ ) :ref:`🔗<class_XRPositionalTracker_method_set_pose>`
 
-Sets the transform, linear velocity, angular velocity and tracking confidence for the given pose. This method is called by an :ref:`XRInterface<class_XRInterface>` implementation and should not be used directly.
+設定給定姿勢的變換、線速度、角速度和追蹤置信度。此方法由一個 :ref:`XRInterface<class_XRInterface>` 實作呼叫，不應直接使用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

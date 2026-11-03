@@ -16,27 +16,27 @@ Control
 說明
 ----
 
-Base class for all UI-related nodes. **Control** features a bounding rectangle that defines its extents, an anchor position relative to its parent control or the current viewport, and offsets relative to the anchor. The offsets update automatically when the node, any of its parents, or the screen size change.
+所有 UI 相關節點的基底類別。\ **Control** 具有定義其範圍的邊界矩形，相對於父控制項或目前視埠的錨點位置，以及相對於錨點的偏移。當節點、任何父節點或螢幕尺寸發生變化時，偏移就會自動更新。
 
-For more information on Godot's UI system, anchors, offsets, and containers, see the related tutorials in the manual. To build flexible UIs, you'll need a mix of UI elements that inherit from **Control** and :ref:`Container<class_Container>` nodes.
+更多關於 Godot 的 UI 系統、錨點、偏移和容器的資訊，請參閱手冊中的相關教學。要建置靈活的 UI，你需要混合使用從 **Control** 和 :ref:`Container<class_Container>` 節點繼承的 UI 元素。
 
-\ **Note:** Since both :ref:`Node2D<class_Node2D>` and **Control** inherit from :ref:`CanvasItem<class_CanvasItem>`, they share several concepts from the class such as the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` properties.
+\ **注意：**\ :ref:`Node2D<class_Node2D>` 和 **Control** 都繼承自 :ref:`CanvasItem<class_CanvasItem>`\ ，它們都具有該類的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>`\ 、\ :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 等屬性。
 
-\ **User Interface nodes and input**\ 
+\ **使用者介面節點與輸入**\ 
 
-Godot propagates input events via viewports. Each :ref:`Viewport<class_Viewport>` is responsible for propagating :ref:`InputEvent<class_InputEvent>`\ s to their child nodes. As the :ref:`SceneTree.root<class_SceneTree_property_root>` is a :ref:`Window<class_Window>`, this already happens automatically for all UI elements in your game.
+Godot 使用視埠來傳播輸入事件。視埠負責將 :ref:`InputEvent<class_InputEvent>` 傳播給它的子節點。因為 :ref:`SceneTree.root<class_SceneTree_property_root>` 是 :ref:`Window<class_Window>`\ ，所以遊戲中的所有 UI 元素都會自動進行傳播。
 
-Input events are propagated through the :ref:`SceneTree<class_SceneTree>` from the root node to all child nodes by calling :ref:`Node._input()<class_Node_private_method__input>`. For UI elements specifically, it makes more sense to override the virtual method :ref:`_gui_input()<class_Control_private_method__gui_input>`, which filters out unrelated input events, such as by checking z-order, :ref:`mouse_filter<class_Control_property_mouse_filter>`, focus, or if the event was inside of the control's bounding box.
+輸入事件通過呼叫 :ref:`Node._input()<class_Node_private_method__input>` 在 :ref:`SceneTree<class_SceneTree>` 中傳播，從根節點傳播到所有子節點。對 UI 元素而言，覆蓋的最好是 :ref:`_gui_input()<class_Control_private_method__gui_input>`\ ，可以過濾掉無關的輸入事件，例如它會對 Z 順序、\ :ref:`mouse_filter<class_Control_property_mouse_filter>`\ 、焦點、事件是否在該控制項的邊界框內等條件進行檢查。
 
-Call :ref:`accept_event()<class_Control_method_accept_event>` so no other node receives the event. Once you accept an input, it becomes handled so :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` will not process it.
+請呼叫 :ref:`accept_event()<class_Control_method_accept_event>`\ ，這樣其他節點就不會收到該事件。輸入被接受後，就會被標記為已處理，\ :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 不會對它進行處理。
 
-Only one **Control** node can be in focus. Only the node in focus will receive events. To get the focus, call :ref:`grab_focus()<class_Control_method_grab_focus>`. **Control** nodes lose focus when another node grabs it, or if you hide the node in focus. Focus will not be represented visually if gained via mouse/touch input, only appearing with keyboard/gamepad input (for accessibility), or via :ref:`grab_focus()<class_Control_method_grab_focus>`.
+只能有一個 **Control** 節點處於焦點。只有處於焦點的節點才會接收到事件。要獲得焦點，請呼叫 :ref:`grab_focus()<class_Control_method_grab_focus>`\ 。導致 **Control** 節點失去焦點的情況有：其他節點獲得了焦點、隱藏了聚焦節點。如果焦點是通過滑鼠/觸摸輸入獲得的，則不會以視覺方式顯示焦點，只有通過鍵盤/遊戲控制器輸入（對於無障礙功能）或通過 :ref:`grab_focus()<class_Control_method_grab_focus>` 獲得焦點時才會顯示。
 
-Set :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to tell a **Control** node to ignore mouse or touch events. You'll need it if you place an icon on top of a button.
+將 :ref:`mouse_filter<class_Control_property_mouse_filter>` 設定為 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` 可以讓 **Control** 節點忽略滑鼠或觸摸事件。如果你在按鈕上放了一個圖示，就會需要用到。
 
-\ :ref:`Theme<class_Theme>` resources change the control's appearance. The :ref:`theme<class_Control_property_theme>` of a **Control** node affects all of its direct and indirect children (as long as a chain of controls is uninterrupted). To override some of the theme items, call one of the ``add_theme_*_override`` methods, like :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. You can also override theme items in the Inspector.
+\ :ref:`Theme<class_Theme>` 資源會更改控制項的外觀。\ **Control** 節點的 :ref:`theme<class_Control_property_theme>` 會影響所有直接和間接子級節點（只要控制項鏈沒有被打斷）。要覆蓋某些主題項，請呼叫 ``add_theme_*_override`` 方法，例如 :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`\ 。你也可以在屬性檢視器中覆蓋主題項。
 
-\ **Note:** Theme items are *not* :ref:`Object<class_Object>` properties. This means you can't access their values using :ref:`Object.get()<class_Object_method_get>` and :ref:`Object.set()<class_Object_method_set>`. Instead, use the ``get_theme_*`` and ``add_theme_*_override`` methods provided by this class.
+\ **注意：**\ 主題項\ *不是* :ref:`Object<class_Object>` 的屬性。這意味著你無法使用 :ref:`Object.get()<class_Object_method_get>` 和 :ref:`Object.set()<class_Object_method_set>` 存取它們的值。請改用這個類的 ``get_theme_*`` 和 ``add_theme_*_override`` 方法。
 
 .. rst-class:: classref-introduction-group
 
@@ -448,7 +448,7 @@ Set :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILT
 
 **maximum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_maximum_size_changed>`
 
-Emitted when the node's maximum size changes.
+當節點的最大尺寸發生變化時發出（該訊號）。
 
 .. rst-class:: classref-item-separator
 
@@ -472,9 +472,9 @@ Emitted when the node's maximum size changes.
 
 **mouse_entered**\ (\ ) :ref:`🔗<class_Control_signal_mouse_entered>`
 
-Emitted when the mouse cursor enters the control's (or any child control's) visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標進入控制項（或任何子控制項）的可見區域時發出，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the signal.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -486,17 +486,17 @@ Emitted when the mouse cursor enters the control's (or any child control's) visi
 
 **mouse_exited**\ (\ ) :ref:`🔗<class_Control_signal_mouse_exited>`
 
-Emitted when the mouse cursor leaves the control's (and all child control's) visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標離開控制項（或任何子控制項）的可見區域時發出，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the signal.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到訊號。
 
-\ **Note:** If you want to check whether the mouse truly left the area, ignoring any top nodes, you can use code like this:
+\ **注意：**\ 如果要忽略任何頂部節點，檢查滑鼠是否真的離開了該區域，可以使用如下程式碼：
 
 ::
 
     func _on_mouse_exited():
         if not Rect2(Vector2(), size).has_point(get_local_mouse_position()):
-            # Not hovering over area.
+            # 未懸停在區域上。
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ enum **FocusMode**: :ref:`🔗<enum_Control_FocusMode>`
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_NONE** = ``0``
 
-該節點無法獲取焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
+該節點無法取得焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
 
 .. _class_Control_constant_FOCUS_CLICK:
 
@@ -563,7 +563,7 @@ enum **FocusMode**: :ref:`🔗<enum_Control_FocusMode>`
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_CLICK** = ``1``
 
-該節點只能通過滑鼠點擊獲取焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
+該節點只能通過滑鼠點選取得焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
 
 .. _class_Control_constant_FOCUS_ALL:
 
@@ -571,7 +571,7 @@ enum **FocusMode**: :ref:`🔗<enum_Control_FocusMode>`
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_ALL** = ``2``
 
-該節點可以通過滑鼠按一下、使用鍵盤上的箭頭和 Tab 鍵、或使用遊戲手柄上的方向鍵來獲取焦點。用於 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。
+該節點可以通過滑鼠按一下、使用鍵盤上的箭頭和 Tab 鍵、或使用遊戲控制器上的方向鍵來取得焦點。用於 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。
 
 .. _class_Control_constant_FOCUS_ACCESSIBILITY:
 
@@ -579,7 +579,7 @@ enum **FocusMode**: :ref:`🔗<enum_Control_FocusMode>`
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_ACCESSIBILITY** = ``3``
 
-The node can grab focus only when screen reader is active. Use with :ref:`focus_mode<class_Control_property_focus_mode>`.
+該節點只能在螢幕閱讀器活動時取得焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ enum **FocusBehaviorRecursive**: :ref:`🔗<enum_Control_FocusBehaviorRecursive>
 
 :ref:`FocusBehaviorRecursive<enum_Control_FocusBehaviorRecursive>` **FOCUS_BEHAVIOR_INHERITED** = ``0``
 
-Inherits the :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` from the parent control. If there is no parent control, this is the same as :ref:`FOCUS_BEHAVIOR_ENABLED<class_Control_constant_FOCUS_BEHAVIOR_ENABLED>`.
+繼承父控制項的 :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>`\ 。沒有父控制項時與 :ref:`FOCUS_BEHAVIOR_ENABLED<class_Control_constant_FOCUS_BEHAVIOR_ENABLED>` 相同。
 
 .. _class_Control_constant_FOCUS_BEHAVIOR_DISABLED:
 
@@ -605,7 +605,7 @@ Inherits the :ref:`focus_behavior_recursive<class_Control_property_focus_behavio
 
 :ref:`FocusBehaviorRecursive<enum_Control_FocusBehaviorRecursive>` **FOCUS_BEHAVIOR_DISABLED** = ``1``
 
-Prevents the control from getting focused. :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` will return :ref:`FOCUS_NONE<class_Control_constant_FOCUS_NONE>`.
+阻止控制項取得焦點。\ :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` 會回傳 :ref:`FOCUS_NONE<class_Control_constant_FOCUS_NONE>`\ 。
 
 .. _class_Control_constant_FOCUS_BEHAVIOR_ENABLED:
 
@@ -613,7 +613,7 @@ Prevents the control from getting focused. :ref:`get_focus_mode_with_override()<
 
 :ref:`FocusBehaviorRecursive<enum_Control_FocusBehaviorRecursive>` **FOCUS_BEHAVIOR_ENABLED** = ``2``
 
-Allows the control to be focused, depending on the :ref:`focus_mode<class_Control_property_focus_mode>`. This can be used to ignore the parent's :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>`. :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` will return the :ref:`focus_mode<class_Control_property_focus_mode>`.
+允許控制項取得焦點，取決於 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。可以用來忽略父控制項的 :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>`\ 。\ :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` 會回傳 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ enum **MouseBehaviorRecursive**: :ref:`🔗<enum_Control_MouseBehaviorRecursive>
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_INHERITED** = ``0``
 
-Inherits the :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` from the parent control. If there is no parent control, this is the same as :ref:`MOUSE_BEHAVIOR_ENABLED<class_Control_constant_MOUSE_BEHAVIOR_ENABLED>`.
+繼承父控制項的 :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`\ 。沒有父控制項時與 :ref:`MOUSE_BEHAVIOR_ENABLED<class_Control_constant_MOUSE_BEHAVIOR_ENABLED>` 相同。
 
 .. _class_Control_constant_MOUSE_BEHAVIOR_DISABLED:
 
@@ -639,7 +639,7 @@ Inherits the :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavio
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_DISABLED** = ``1``
 
-Prevents the control from receiving mouse input. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` will return :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`.
+阻止控制項取得滑鼠輸入。\ :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` 會回傳 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ 。
 
 .. _class_Control_constant_MOUSE_BEHAVIOR_ENABLED:
 
@@ -647,7 +647,7 @@ Prevents the control from receiving mouse input. :ref:`get_mouse_filter_with_ove
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_ENABLED** = ``2``
 
-Allows the control to receive mouse input, depending on the :ref:`mouse_filter<class_Control_property_mouse_filter>`. This can be used to ignore the parent's :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` will return the :ref:`mouse_filter<class_Control_property_mouse_filter>`.
+允許控制項取得滑鼠輸入，取決於 :ref:`mouse_filter<class_Control_property_mouse_filter>`\ 。可以用來忽略父控制項的 :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`\ 。\ :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` 會回傳 :ref:`mouse_filter<class_Control_property_mouse_filter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ enum **MouseFilter**: :ref:`🔗<enum_Control_MouseFilter>`
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_STOP** = ``0``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through :ref:`_gui_input()<class_Control_private_method__gui_input>`. The control will also receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` and :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. These events are automatically marked as handled, and they will not propagate further to other controls. This also results in blocking signals in other controls.
+在控制項上點選時，將通過 :ref:`_gui_input()<class_Control_private_method__gui_input>` 收到滑鼠移動輸入事件和滑鼠按鈕輸入事件。控制項還能夠接收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 訊號。這些事件將自動被標記為已處理，不會進一步傳播到其他控制項。這也會導致其他控制項中的訊號被阻止。
 
 .. _class_Control_constant_MOUSE_FILTER_PASS:
 
@@ -1059,9 +1059,9 @@ The control will receive mouse movement input events and mouse button input even
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_PASS** = ``1``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through :ref:`_gui_input()<class_Control_private_method__gui_input>`. The control will also receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` and :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals.
+在控制項上點選時，將通過 :ref:`_gui_input()<class_Control_private_method__gui_input>` 收到滑鼠移動輸入事件和滑鼠按鈕輸入事件。控制項還能夠接收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 訊號。
 
-If this control does not handle the event, the event will propagate up to its parent control if it has one. The event is bubbled up the node hierarchy until it reaches a non-:ref:`CanvasItem<class_CanvasItem>`, a control with :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>`, or a :ref:`CanvasItem<class_CanvasItem>` with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` enabled. This will allow signals to fire in all controls it reaches. If no control handled it, the event will be passed to :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>` for further processing.
+如果該控制項不處理事件，則存在父控制項時會將該事件傳播至父控制項。事件能夠沿節點架構向上傳播，直到遇見非 :ref:`CanvasItem<class_CanvasItem>` 節點、設為 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` 的控制項或啟用 :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` 的 :ref:`CanvasItem<class_CanvasItem>`\ 。這樣事件到達的所有控制項就都可以觸發訊號。如果沒有任何控制項對其進行處理，該事件將被傳遞到 :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>` 進行進一步處理。
 
 .. _class_Control_constant_MOUSE_FILTER_IGNORE:
 
@@ -1069,9 +1069,9 @@ If this control does not handle the event, the event will propagate up to its pa
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_IGNORE** = ``2``
 
-The control will not receive any mouse movement input events nor mouse button input events through :ref:`_gui_input()<class_Control_private_method__gui_input>`. The control will also not receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` nor :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. This will not block other controls from receiving these events or firing the signals. Ignored events will not be handled automatically. If a child has :ref:`MOUSE_FILTER_PASS<class_Control_constant_MOUSE_FILTER_PASS>` and an event was passed to this control, the event will further propagate up to the control's parent.
+控制項不會通過 :ref:`_gui_input()<class_Control_private_method__gui_input>` 收到任何滑鼠移動輸入事件和滑鼠按鈕輸入事件，也無法接收 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 訊號。不會阻止其他控制項對這些事件的接收和對相關訊號的觸發。忽略的事件不會自動處理。如果存在設為 :ref:`MOUSE_FILTER_PASS<class_Control_constant_MOUSE_FILTER_PASS>` 的子控制項，並且事件傳遞到了該控制項，那麼事件就會繼續傳播至該控制項的父節點。
 
-\ **Note:** If the control has received :ref:`mouse_entered<class_Control_signal_mouse_entered>` but not :ref:`mouse_exited<class_Control_signal_mouse_exited>`, changing the :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` will cause :ref:`mouse_exited<class_Control_signal_mouse_exited>` to be emitted.
+\ **注意：**\ 如果控制項已收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 但尚未收到 :ref:`mouse_exited<class_Control_signal_mouse_exited>`\ ，則將 :ref:`mouse_filter<class_Control_property_mouse_filter>` 更改為 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` 將導致發出 :ref:`mouse_exited<class_Control_signal_mouse_exited>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+當控制項在相應軸上的最小尺寸被修改為大於其目前尺寸時，控制項將向左或向上生長以補足尺寸。
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+當控制項在相應軸上的最小尺寸被修改為大於其目前尺寸時，控制項將向右或向下生長以補足尺寸。
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+當控制項的最小尺寸被修改為大於其目前尺寸時，控制項將向兩個方向等量生長以補足尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ enum **LayoutDirection**: :ref:`🔗<enum_Control_LayoutDirection>`
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_APPLICATION_LOCALE** = ``1``
 
-Automatic layout direction, determined from the current locale. Right-to-left layout direction is automatically used for languages that require it such as Arabic and Hebrew, but only if a valid translation file is loaded for the given language (unless said language is configured as a fallback in :ref:`ProjectSettings.internationalization/locale/fallback<class_ProjectSettings_property_internationalization/locale/fallback>`). For all other languages (or if no valid translation file is found by Godot), left-to-right layout direction is used. If using :ref:`TextServerFallback<class_TextServerFallback>` (:ref:`ProjectSettings.internationalization/rendering/text_driver<class_ProjectSettings_property_internationalization/rendering/text_driver>`), left-to-right layout direction is always used regardless of the language. Right-to-left layout direction can also be forced using :ref:`ProjectSettings.internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`.
+自動排版方向，由目前區域設定決定。阿拉伯語和希伯來語等語言會自動使用從右至左的排版方向，但前提是載入了該語言的有效翻譯檔案（除非將該語言在 :ref:`ProjectSettings.internationalization/locale/fallback<class_ProjectSettings_property_internationalization/locale/fallback>` 中設為了回退語言）。其他所有語言（或者 Godot 未找到有效的翻譯檔案）都會使用從左至右的排版方向。如果使用的是 :ref:`TextServerFallback<class_TextServerFallback>`\ （\ :ref:`ProjectSettings.internationalization/rendering/text_driver<class_ProjectSettings_property_internationalization/rendering/text_driver>`\ ），則所有語言都會使用從左至右的排版方向。也可以使用 :ref:`ProjectSettings.internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>` 強制從右至左的排版方向。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_LTR:
 
@@ -1181,7 +1181,7 @@ Automatic layout direction, determined from the current locale. Right-to-left la
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_SYSTEM_LOCALE** = ``4``
 
-Automatic layout direction, determined from the system locale. Right-to-left layout direction is automatically used for languages that require it such as Arabic and Hebrew, but only if a valid translation file is loaded for the given language. For all other languages (or if no valid translation file is found by Godot), left-to-right layout direction is used. If using :ref:`TextServerFallback<class_TextServerFallback>` (:ref:`ProjectSettings.internationalization/rendering/text_driver<class_ProjectSettings_property_internationalization/rendering/text_driver>`), left-to-right layout direction is always used regardless of the language.
+自動排版方向，由系統區域設定決定。阿拉伯語和希伯來語等語言會自動使用從右至左的排版方向，但前提是載入了該語言的有效翻譯檔案。其他所有語言（或者 Godot 未找到有效的翻譯檔案）都會使用從左至右的排版方向。如果使用的是 :ref:`TextServerFallback<class_TextServerFallback>`\ （\ :ref:`ProjectSettings.internationalization/rendering/text_driver<class_ProjectSettings_property_internationalization/rendering/text_driver>`\ ），則所有語言都會使用從左至右的排版方向。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_MAX:
 
@@ -1189,7 +1189,7 @@ Automatic layout direction, determined from the system locale. Right-to-left lay
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_MAX** = ``5``
 
-Represents the size of the :ref:`LayoutDirection<enum_Control_LayoutDirection>` enum.
+代表 :ref:`LayoutDirection<enum_Control_LayoutDirection>` 列舉的大小。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_LOCALE:
 
@@ -1258,7 +1258,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 
 **NOTIFICATION_RESIZED** = ``40`` :ref:`🔗<class_Control_constant_NOTIFICATION_RESIZED>`
 
-當節點改變大小時發送。請使用 :ref:`size<class_Control_property_size>` 獲取新大小。
+當節點改變大小時發送。請使用 :ref:`size<class_Control_property_size>` 取得新大小。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_ENTER:
 
@@ -1266,11 +1266,11 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 
 **NOTIFICATION_MOUSE_ENTER** = ``41`` :ref:`🔗<class_Control_constant_NOTIFICATION_MOUSE_ENTER>`
 
-Sent when the mouse cursor enters the control's (or any child control's) visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標進入控制項（或任何子控制項）的可見區域時發送，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到該通知。
 
-See also :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF>`.
+另見 :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_EXIT:
 
@@ -1278,11 +1278,11 @@ See also :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATION
 
 **NOTIFICATION_MOUSE_EXIT** = ``42`` :ref:`🔗<class_Control_constant_NOTIFICATION_MOUSE_EXIT>`
 
-Sent when the mouse cursor leaves the control's (and all child control's) visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標離開控制項（以及所有子控制項）的可見區域時發送，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到該通知。
 
-See also :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF>`.
+另見 :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF:
 
@@ -1292,11 +1292,11 @@ See also :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_
 
 **實驗性：** The reason this notification is sent may change in the future.
 
-Sent when the mouse cursor enters the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標進入控制項的可見區域時發送，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到該通知。
 
-See also :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUSE_ENTER>`.
+另見 :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUSE_ENTER>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF:
 
@@ -1306,11 +1306,11 @@ See also :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUS
 
 **實驗性：** The reason this notification is sent may change in the future.
 
-Sent when the mouse cursor leaves the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+當滑鼠游標離開控制項的可見區域時發送，可見區域即未被其他 Control 和 Window 遮擋的區域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允許事件達到，與控制項是否持有焦點無關。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影響哪個 Control 會收到該通知。
 
-See also :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE_EXIT>`.
+另見 :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE_EXIT>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_FOCUS_ENTER:
 
@@ -1326,9 +1326,9 @@ See also :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE
 
 **NOTIFICATION_FOCUS_EXIT** = ``44`` :ref:`🔗<class_Control_constant_NOTIFICATION_FOCUS_EXIT>`
 
-Sent when the node loses focus.
+當節點失去焦點時發送。
 
-This notification is sent in reversed order.
+該通知會以反向順序發送。
 
 .. _class_Control_constant_NOTIFICATION_THEME_CHANGED:
 
@@ -1336,26 +1336,26 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_THEME_CHANGED** = ``45`` :ref:`🔗<class_Control_constant_NOTIFICATION_THEME_CHANGED>`
 
-Sent when the node needs to refresh its theme items. This happens in one of the following cases:
+當節點需要刷新其主題項目時發送。發送時機如下：
 
-- The :ref:`theme<class_Control_property_theme>` property is changed on this node or any of its ancestors.
+- 該節點或其任何祖先節點上的 :ref:`theme<class_Control_property_theme>` 屬性被更改。
 
-- The :ref:`theme_type_variation<class_Control_property_theme_type_variation>` property is changed on this node.
+- 該節點上的 :ref:`theme_type_variation<class_Control_property_theme_type_variation>` 屬性被更改。
 
-- One of the node's theme property overrides is changed.
+- 該節點的某個主題屬性覆蓋被更改。
 
-- The node enters the scene tree.
+- 該節點進入場景樹。
 
-\ **Note:** As an optimization, this notification won't be sent from changes that occur while this node is outside of the scene tree. Instead, all of the theme item updates can be applied at once when the node enters the scene tree.
+\ **注意：**\ 作為一種最佳化，當該節點在場景樹之外時，發生的更改不會發送該通知。相反，所有的主題項更新可以在該節點進入場景樹時一次性應用。
 
-\ **Note:** This notification is received alongside :ref:`Node.NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>`, so if you are instantiating a scene, the child nodes will not be initialized yet. You can use it to setup theming for this node, child nodes created from script, or if you want to access child nodes added in the editor, make sure the node is ready using :ref:`Node.is_node_ready()<class_Node_method_is_node_ready>`.
+\ **注意：**\ 該通知與 :ref:`Node.NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 一同發送，因此，如果你是在實例化場景，那麼此時子節點尚未初始化。可以在該通知中設定該節點的主題和用腳本建立的節點的主題，如果你想要存取編輯器中新增的子節點，請使用 :ref:`Node.is_node_ready()<class_Node_method_is_node_ready>` 確認節點已就緒。
 
 ::
 
     func _notification(what):
         if what == NOTIFICATION_THEME_CHANGED:
             if not is_node_ready():
-                await ready # Wait until ready signal.
+                await ready # 等待就緒訊號。
             $Label.add_theme_color_override("font_color", Color.YELLOW)
 
 .. _class_Control_constant_NOTIFICATION_SCROLL_BEGIN:
@@ -1364,9 +1364,9 @@ Sent when the node needs to refresh its theme items. This happens in one of the 
 
 **NOTIFICATION_SCROLL_BEGIN** = ``47`` :ref:`🔗<class_Control_constant_NOTIFICATION_SCROLL_BEGIN>`
 
-Sent when this node is inside a :ref:`ScrollContainer<class_ScrollContainer>` which has begun being scrolled when dragging the scrollable area *with a touch event*. This notification is *not* sent when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+當該節點位於 :ref:`ScrollContainer<class_ScrollContainer>` 內部時發送，該容器在通過\ *觸摸事件*\ 拖動該可捲動區域時已開始捲動。通過拖動捲動條捲動、使用滑鼠滾輪捲動、或使用鍵盤/遊戲控制器事件捲動時，\ *不*\ 會發送該通知。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 該訊號僅會在 Android、iOS、桌面、Web 平台上發出，在桌面/Web 平台上需要啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_SCROLL_END:
 
@@ -1374,9 +1374,9 @@ Sent when this node is inside a :ref:`ScrollContainer<class_ScrollContainer>` wh
 
 **NOTIFICATION_SCROLL_END** = ``48`` :ref:`🔗<class_Control_constant_NOTIFICATION_SCROLL_END>`
 
-Sent when this node is inside a :ref:`ScrollContainer<class_ScrollContainer>` which has stopped being scrolled when dragging the scrollable area *with a touch event*. This notification is *not* sent when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+當該節點位於 :ref:`ScrollContainer<class_ScrollContainer>` 內部時發送，該容器在通過\ *觸摸事件*\ 拖動該可捲動區域時已停止捲動。通過拖動捲動條捲動、使用滑鼠滾輪捲動、或使用鍵盤/遊戲控制器事件捲動時，\ *不*\ 會發送該通知。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 該訊號僅會在 Android、iOS、桌面、Web 平台上發出，在桌面/Web 平台上需要啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_LAYOUT_DIRECTION_CHANGED:
 
@@ -1384,7 +1384,7 @@ Sent when this node is inside a :ref:`ScrollContainer<class_ScrollContainer>` wh
 
 **NOTIFICATION_LAYOUT_DIRECTION_CHANGED** = ``49`` :ref:`🔗<class_Control_constant_NOTIFICATION_LAYOUT_DIRECTION_CHANGED>`
 
-Sent when the control layout direction is changed from LTR or RTL or vice versa. This notification is propagated to child Control nodes as result of a change to :ref:`layout_direction<class_Control_property_layout_direction>`.
+當控制項的排版方向在“從左至右”和“從右至左”之間切換時發送。因為是更改了 :ref:`layout_direction<class_Control_property_layout_direction>`\ ，所以該通知會傳播到子級 Control 節點。
 
 .. rst-class:: classref-section-separator
 
@@ -1406,7 +1406,7 @@ Sent when the control layout direction is changed from LTR or RTL or vice versa.
 - |void| **set_accessibility_controls_nodes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_accessibility_controls_nodes**\ (\ )
 
-The paths to the nodes which are controlled by this node.
+到被該節點控制的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ The paths to the nodes which are controlled by this node.
 - |void| **set_accessibility_described_by_nodes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_accessibility_described_by_nodes**\ (\ )
 
-The paths to the nodes which are describing this node.
+到描述該節點的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ The paths to the nodes which are describing this node.
 - |void| **set_accessibility_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_accessibility_description**\ (\ )
 
-The human-readable node description that is reported to assistive apps.
+報告給輔助應用的人類可讀節點描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1457,7 +1457,7 @@ The human-readable node description that is reported to assistive apps.
 - |void| **set_accessibility_flow_to_nodes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_accessibility_flow_to_nodes**\ (\ )
 
-The paths to the nodes which this node flows into.
+到該節點流入的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -1474,7 +1474,7 @@ The paths to the nodes which this node flows into.
 - |void| **set_accessibility_labeled_by_nodes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_accessibility_labeled_by_nodes**\ (\ )
 
-The paths to the nodes which label this node.
+到標籤標注該節點的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ The paths to the nodes which label this node.
 - |void| **set_accessibility_live**\ (\ value\: :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>`\ )
 - :ref:`AccessibilityLiveMode<enum_AccessibilityServer_AccessibilityLiveMode>` **get_accessibility_live**\ (\ )
 
-The mode with which a live region updates. A live region is a :ref:`Node<class_Node>` that is updated as a result of an external event when the user's focus may be elsewhere.
+即時區域的更新模式，即時區域是一個 :ref:`Node<class_Node>`\ ，當使用者的焦點可能位於其他位置時，它會因外部事件而更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ The mode with which a live region updates. A live region is a :ref:`Node<class_N
 - |void| **set_accessibility_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_accessibility_name**\ (\ )
 
-The human-readable node name that is reported to assistive apps.
+報告給輔助應用的人類可讀節點名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1608,7 +1608,7 @@ The human-readable node name that is reported to assistive apps.
 - |void| **set_clip_contents**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_clipping_contents**\ (\ )
 
-算繪基於 :ref:`CanvasItem<class_CanvasItem>` 的子節點時，是否應剪裁到該控制項的矩形中。如果為 ``true``\ ，則子節點顯示在該控制項的矩形範圍之外的部分，不會算繪，也不會接收輸入。
+渲染基於 :ref:`CanvasItem<class_CanvasItem>` 的子節點時，是否應剪裁到該控制項的矩形中。如果為 ``true``\ ，則子節點顯示在該控制項的矩形範圍之外的部分，不會渲染，也不會接收輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1625,15 @@ The human-readable node name that is reported to assistive apps.
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-The maximum size of this Control's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size.
+該 Control（控制項）邊界矩形的最大尺寸。如果設定為大於或等於 ``(0, 0)`` 的值，則該節點的邊界矩形將永遠不會超過這個尺寸；小於 ``(0, 0)`` 的值，則表示沒有最大尺寸限制。
 
-\ **Note:** The final effective maximum size may be subject to parent Container sizing and propagated maximum sizes. See also: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **注意：** 最終生效的最大尺寸可能會受到父級 Container（容器）的尺寸限制以及傳遞而來的最大尺寸的影響。另請參閱：\ :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`\ 。
 
-\ **Note:** Not all **Control** subtypes handle a custom maximum size gracefully, which may lead to unexpected behavior if the control's contents exceed this size.
+\ **注意：** 並非所有的 Control 子類都能完美地處理自訂最大尺寸，如果控制項的內容超出了這個尺寸，可能會導致意外的行為。
 
-\ **Note:** This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. For example, if you set :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)`` and :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)``, the resulting size will be ``(100, 100)``.
+\ **注意：** 該值的優先級高於 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ 。例如，如果你將 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 設定為 ``(100, 100)``\ ，並將 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 設定為 ``(200, 200)``\ ，最終得出的尺寸將會是 ``(100, 100)``\ 。
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when using this property, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **注意：** 當使用此屬性時，建議使用 :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` 而不是 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ ，因為前者在計算最小尺寸時會尊重最大尺寸的限制，而後者不會。
 
 .. rst-class:: classref-item-separator
 
@@ -1650,9 +1650,9 @@ The maximum size of this Control's bounding rectangle. If set to a value greater
 - |void| **set_custom_minimum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_minimum_size**\ (\ )
 
-The minimum size of the node's bounding rectangle. If you set it to a value greater than ``(0, 0)``, the node's bounding rectangle will always have at least this size. Note that **Control** nodes have their internal minimum size returned by :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`. It depends on the control's contents, like text, textures, or style boxes. The actual minimum size is the maximum value of this property and the internal minimum size (see :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`).
+節點邊界矩形的最小尺寸。如果你將其設定為大於 ``(0, 0)`` 的值，節點的邊界矩形將始終至少保持此尺寸。請注意，\ **Control** 節點有其內部最小尺寸，由 :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` 回傳。該尺寸取決於控制項的內容，例如文字、紋理或樣式框。實際最小尺寸是此屬性與內部最小尺寸的最大值（參見 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ ）。
 
-\ **Note:** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` has priority over this property. For example, if you set :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)`` and :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)``, the resulting size will be ``(100, 100)``.
+\ **注意：** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 優先於此屬性。例如，如果你將 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 設為 ``(200, 200)``\ ，並將 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 設為 ``(100, 100)``\ ，最終尺寸將是 ``(100, 100)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1669,7 +1669,7 @@ The minimum size of the node's bounding rectangle. If you set it to a value grea
 - |void| **set_focus_behavior_recursive**\ (\ value\: :ref:`FocusBehaviorRecursive<enum_Control_FocusBehaviorRecursive>`\ )
 - :ref:`FocusBehaviorRecursive<enum_Control_FocusBehaviorRecursive>` **get_focus_behavior_recursive**\ (\ )
 
-Determines which controls can be focused together with :ref:`focus_mode<class_Control_property_focus_mode>`. See :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>`. Since the default behavior is :ref:`FOCUS_BEHAVIOR_INHERITED<class_Control_constant_FOCUS_BEHAVIOR_INHERITED>`, this can be used to prevent all children controls from getting focused.
+決定哪些控制項可以根據 :ref:`focus_mode<class_Control_property_focus_mode>` 一起聚焦。見 :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>`\ 。由於預設行為是 :ref:`FOCUS_BEHAVIOR_INHERITED<class_Control_constant_FOCUS_BEHAVIOR_INHERITED>`\ ，可以用來阻止聚焦子控制項。
 
 .. rst-class:: classref-item-separator
 
@@ -1686,7 +1686,7 @@ Determines which controls can be focused together with :ref:`focus_mode<class_Co
 - |void| **set_focus_mode**\ (\ value\: :ref:`FocusMode<enum_Control_FocusMode>`\ )
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_focus_mode**\ (\ )
 
-Determines which controls can be focused. Only one control can be focused at a time, and the focused control will receive keyboard, gamepad, and mouse events in :ref:`_gui_input()<class_Control_private_method__gui_input>`. Use :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` to determine if a control can grab focus, since :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` also affects it. See also :ref:`grab_focus()<class_Control_method_grab_focus>`.
+決定可以聚焦哪些控制項。同一時間只能聚焦一個控制項，聚焦的控制項將在 :ref:`_gui_input()<class_Control_private_method__gui_input>` 中收到鍵盤、遊戲控制器和滑鼠事件。請使用 :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` 來確定控制項是否可以取得焦點，因為 :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` 也會對其產生影響。另見 :ref:`grab_focus()<class_Control_method_grab_focus>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1703,7 +1703,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲手柄上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點下方距離最近的 **Control**\ 。
+告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲控制器上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點下方距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1720,7 +1720,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-告訴 Godot 當使用者按下鍵盤上的左方向鍵或遊戲手柄上的左方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點左側距離最近的 **Control**\ 。
+告訴 Godot 當使用者按下鍵盤上的左方向鍵或遊戲控制器上的左方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點左側距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1737,7 +1737,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-告訴 Godot 當使用者按下鍵盤上的右方向鍵或遊戲手柄上的右方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點右側距離最近的 **Control**\ 。
+告訴 Godot 當使用者按下鍵盤上的右方向鍵或遊戲控制器上的右方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點右側距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1754,7 +1754,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲手柄上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點上方距離最近的 **Control**\ 。
+告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲控制器上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點上方距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+當控制項的水平最小尺寸被修改為大於其目前尺寸時，控制該控制項在水平軸上的生長方向。因為控制項的尺寸始終不能小於其最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+當控制項的垂直最小尺寸被修改為大於其目前尺寸時，控制該控制項在垂直軸上的生長方向。因為控制項的尺寸始終不能小於其最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1859,7 +1859,7 @@ Controls the direction on the vertical axis in which the control should grow if 
 - |void| **set_layout_direction**\ (\ value\: :ref:`LayoutDirection<enum_Control_LayoutDirection>`\ )
 - :ref:`LayoutDirection<enum_Control_LayoutDirection>` **get_layout_direction**\ (\ )
 
-Controls layout direction and text writing direction. Right-to-left layouts are necessary for certain languages (e.g. Arabic and Hebrew). See also :ref:`is_layout_rtl()<class_Control_method_is_layout_rtl>`.
+控制排版方向和文字書寫方向。某些語言需要從右至左的版面配置（例如阿拉伯語和希伯來語）。另見 :ref:`is_layout_rtl()<class_Control_method_is_layout_rtl>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1895,7 +1895,7 @@ Controls layout direction and text writing direction. Right-to-left layouts are 
 - |void| **set_mouse_behavior_recursive**\ (\ value\: :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>`\ )
 - :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **get_mouse_behavior_recursive**\ (\ )
 
-Determines which controls can receive mouse input together with :ref:`mouse_filter<class_Control_property_mouse_filter>`. See :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>`. Since the default behavior is :ref:`MOUSE_BEHAVIOR_INHERITED<class_Control_constant_MOUSE_BEHAVIOR_INHERITED>`, this can be used to prevent all children controls from receiving mouse input.
+決定哪些控制項可以根據 :ref:`mouse_filter<class_Control_property_mouse_filter>` 一起接收滑鼠輸入。見 :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>`\ 。由於預設行為是 :ref:`MOUSE_BEHAVIOR_INHERITED<class_Control_constant_MOUSE_BEHAVIOR_INHERITED>`\ ，可以用來阻止所有子控制項接收滑鼠輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -1931,7 +1931,7 @@ Determines which controls can receive mouse input together with :ref:`mouse_filt
 - |void| **set_mouse_filter**\ (\ value\: :ref:`MouseFilter<enum_Control_MouseFilter>`\ )
 - :ref:`MouseFilter<enum_Control_MouseFilter>` **get_mouse_filter**\ (\ )
 
-Determines which controls will be able to receive mouse button input events through :ref:`_gui_input()<class_Control_private_method__gui_input>` and the :ref:`mouse_entered<class_Control_signal_mouse_entered>`, and :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. Also determines how these events should be propagated. See the constants to learn what each does. Use :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` to determine if a control can receive mouse input, since :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` also affects it.
+決定哪些控制項可以通過 :ref:`_gui_input()<class_Control_private_method__gui_input>` 以及 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 訊號接收滑鼠按鍵輸入事件。還決定了這些事件應該如何傳播。不同的行為見常數。請使用 :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` 來確定控制項是否可以收到滑鼠輸入，因為 :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` 也會對其產生影響。
 
 .. rst-class:: classref-item-separator
 
@@ -1948,11 +1948,11 @@ Determines which controls will be able to receive mouse button input events thro
 - |void| **set_force_pass_scroll_events**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_force_pass_scroll_events**\ (\ )
 
-When enabled, scroll wheel events processed by :ref:`_gui_input()<class_Control_private_method__gui_input>` will be passed to the parent control even if :ref:`mouse_filter<class_Control_property_mouse_filter>` is set to :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>`.
+啟用後，即使 :ref:`mouse_filter<class_Control_property_mouse_filter>` 被設定為 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>`\ ，由 :ref:`_gui_input()<class_Control_private_method__gui_input>` 處理的滾輪事件也會被傳遞給父控制項。
 
-You should disable it on the root of your UI if you do not want scroll events to go to the :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` processing.
+如果不希望滾輪事件進入 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 處理，則應該在使用者介面的根節點將其停用。
 
-\ **Note:** Because this property defaults to ``true``, this allows nested scrollable containers to work out of the box.
+\ **注意：**\ 由於該屬性預設為 ``true``\ ，這使得巢狀的可捲動容器可以開箱即用。
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2045,7 @@ You should disable it on the root of your UI if you do not want scroll events to
 - |void| **set_offset_transform_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_enabled**\ (\ )
 
-If ``true``, applies all offset transform properties. Otherwise, no offset transform is applied and the properties have no effect.
+如果為 ``true``\ ，則應用所有偏移變換屬性。否則，不應用任何偏移變換，這些屬性將不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -2062,11 +2062,11 @@ If ``true``, applies all offset transform properties. Otherwise, no offset trans
 - |void| **set_offset_transform_pivot**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot**\ (\ )
 
-Pivot used by :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` and :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>` in absolute units.
+由 :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>`\ （偏移變換旋轉）和 :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>`\ （偏移變換縮放）使用的、以絕對單位表示的軸心點（pivot）。
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+最終的軸心點位置是該屬性與 :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`\ （偏移變換軸心點比例）的合併值。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>`\ （啟用偏移變換）為 ``true``\ ，否則該屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2083,11 +2083,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_pivot_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot_ratio**\ (\ )
 
-Same as :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+與 :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` 相同，但以相對於 **Control** 的 :ref:`size<class_Control_property_size>` 的單位表示，其中 ``Vector2(0, 0)`` 是此控制項的左上角，\ ``Vector2(1, 1)`` 是其右下角。
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`.
+最終的軸心位置為此屬性與 :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` 的組合值。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` 為 ``true``\ ，否則無效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2104,9 +2104,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position**\ (\ )
 
-Position offset in absolute units. The final offset is the combined value of this property and :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
+以絕對單位表示的位置偏移量。最終的偏移量是該屬性與 :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`\ （位置偏移比例）的合併值。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>`\ （啟用偏移變換）為 ``true``\ ，否則該屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2123,11 +2123,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position_ratio**\ (\ )
 
-Same as :ref:`offset_transform_position<class_Control_property_offset_transform_position>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+與 :ref:`offset_transform_position<class_Control_property_offset_transform_position>` 相同，但其單位是相對於 **Control** 的 :ref:`size<class_Control_property_size>`\ （尺寸）來表示的。其中 ``Vector2(0, 0)`` 代表該控制項的左上角，而 ``Vector2(1, 1)`` 代表其右下角。
 
-The final offset is the combined value of this property and :ref:`offset_transform_position<class_Control_property_offset_transform_position>`.
+最終的偏移量是該屬性與 :ref:`offset_transform_position<class_Control_property_offset_transform_position>` 的疊加值。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` 被設為 ``true``\ ，否則該屬性不會產生任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2144,9 +2144,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset_transform_rotation**\ (\ )
 
-Rotation offset. The rotation pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+旋轉偏移量。旋轉的軸心點由 :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`\ （偏移變換軸心點）和 :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`\ （偏移變換軸心點比例）共同定義。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>`\ （啟用偏移變換）為 ``true``\ ，否則該屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2163,9 +2163,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_scale**\ (\ )
 
-Scale offset. The scale pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+縮放偏移量。縮放的軸心點由 :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`\ （偏移變換軸心點）和 :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`\ （偏移變換軸心點比例）共同定義。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>`\ （啟用偏移變換）為 ``true``\ ，否則該屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2182,11 +2182,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_visual_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_visual_only**\ (\ )
 
-If ``true``, the offset transforms is only applied visually and does not affect input. In other words, this Control will still receive input events at its original location before the offset transform is applied.
+如果設定為 ``true``\ ，偏移變換僅會在視覺上生效，而不會影響輸入判定。換句話說，即使控制項在視覺上發生了偏移，它依然會在應用偏移變換之前的原始位置接收輸入事件（比如滑鼠點選）。
 
-If ``false``, the entire transform of this Control is affected and input events will register where the Control is visually.
+如果設定為 ``false``\ ，該控制項的整個變換（包括視覺和互動）都會受到影響，輸入事件將會在控制項目前視覺顯示的位置觸發。
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+除非 :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>`\ （啟用偏移變換）為 ``true``\ ，否則該屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2203,9 +2203,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_pivot_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset**\ (\ )
 
-By default, the node's pivot is its top-left corner. When you change its :ref:`rotation<class_Control_property_rotation>` or :ref:`scale<class_Control_property_scale>`, it will rotate or scale around this pivot.
+預設情況下，該節點的軸心位於其左上角。當更改其 :ref:`rotation<class_Control_property_rotation>` 或 :ref:`scale<class_Control_property_scale>` 時，節點將圍繞此軸心進行旋轉或縮放。
 
-The actual offset is the combined value of this property and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
+實際的偏移量是該屬性值與 :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>` 值的總和。
 
 .. rst-class:: classref-item-separator
 
@@ -2222,9 +2222,9 @@ The actual offset is the combined value of this property and :ref:`pivot_offset_
 - |void| **set_pivot_offset_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset_ratio**\ (\ )
 
-Same as :ref:`pivot_offset<class_Control_property_pivot_offset>`, but expressed as uniform vector, where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner. Set this property to ``Vector2(0.5, 0.5)`` to pivot around this control's center.
+與 :ref:`pivot_offset<class_Control_property_pivot_offset>` 相同，但表示為 uniform 向量，其中 ``Vector2(0, 0)`` 是該控制項的左上角，\ ``Vector2(1, 1)`` 是其右下角。將該屬性設定為 ``Vector2(0.5, 0.5)`` 以圍繞該控制項的中心旋轉。
 
-The actual offset is the combined value of this property and :ref:`pivot_offset<class_Control_property_pivot_offset>`.
+實際偏移是該屬性和 :ref:`pivot_offset<class_Control_property_pivot_offset>` 的組合。
 
 .. rst-class:: classref-item-separator
 
@@ -2257,7 +2257,7 @@ The actual offset is the combined value of this property and :ref:`pivot_offset<
 - |void| **set_propagate_maximum_size**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_propagating_maximum_size**\ (\ )
 
-If ``true``, this Control's children will use the value returned by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` in their own size calculations.
+如果設定為 ``true``\ ，該 Control（控制項）的所有子節點在計算它們自己的尺寸時，將會使用（父節點）\ :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` 方法回傳的值。
 
 .. rst-class:: classref-item-separator
 
@@ -2310,13 +2310,13 @@ If ``true``, this Control's children will use the value returned by :ref:`get_co
 - |void| **set_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scale**\ (\ )
 
-The node's scale, relative to its :ref:`size<class_Control_property_size>`. Change this property to scale the node around its :ref:`pivot_offset<class_Control_property_pivot_offset>`. The Control's tooltip will also scale according to this value.
+節點的縮放，相對於它的 :ref:`size<class_Control_property_size>`\ 。更改該屬性會以節點的 :ref:`pivot_offset<class_Control_property_pivot_offset>` 為中心進行縮放。該 Control 的工具提示也將根據該值進行縮放。
 
-\ **Note:** This property is mainly intended to be used for animation purposes. To support multiple resolutions in your project, use an appropriate viewport stretch mode as described in the :doc:`documentation <../tutorials/rendering/multiple_resolutions>` instead of scaling Controls individually.
+\ **注意：**\ 該屬性主要用於動畫用途。要在專案中支援多種解析度，請使用 :doc:`文件 <../tutorials/rendering/multiple_resolutions>` 中所述的合適的視埠拉伸模式，不要單獨縮放控制項。
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` does *not* take **Control** :ref:`scale<class_Control_property_scale>` into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` can be enabled in the inspector.
+\ **注意：**\ :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` *不考慮* **Control** 的 :ref:`scale<class_Control_property_scale>`\ 。這意味著放大/縮小會導致點陣圖字型和光柵化（非 MSDF）動態字型顯得模糊或像素化。為確保無論縮放比例如何，文字都保持清晰，你可以通過啟用 :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>`\ （僅適用於預設專案字型）；或在自訂字型的 DynamicFont 的匯入選項中，啟用\ **多通道有符號距離場**\ 來啟用 MSDF 字型渲染。對於系統字型，可以在屬性檢視器中啟用 :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>`\ 。
 
-\ **Note:** If the Control node is a child of a :ref:`Container<class_Container>` node, the scale will be reset to ``Vector2(1, 1)`` when the scene is instantiated. To set the Control's scale when it's instantiated, wait for one frame using ``await get_tree().process_frame`` then set its :ref:`scale<class_Control_property_scale>` property.
+\ **注意：**\ 如果該 Control 節點是 :ref:`Container<class_Container>` 節點的子節點，則場景實例化時，縮放將重設為 ``Vector2(1, 1)``\ 。要在實例化時設定控制項的縮放，請使用 ``await get_tree().process_frame`` 等待一影格，然後再設定其 :ref:`scale<class_Control_property_scale>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -2349,7 +2349,7 @@ The node's scale, relative to its :ref:`size<class_Control_property_size>`. Chan
 
 - :ref:`Vector2<class_Vector2>` **get_size**\ (\ )
 
-該節點的邊界矩形的大小，使用該節點的坐標系。\ :ref:`Container<class_Container>` 節點會自動更新此屬性。
+該節點的邊界矩形的大小，使用該節點的座標系。\ :ref:`Container<class_Container>` 節點會自動更新此屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -2436,13 +2436,13 @@ The node's scale, relative to its :ref:`size<class_Control_property_size>`. Chan
 - |void| **set_theme_type_variation**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_theme_type_variation**\ (\ )
 
-The name of a theme type variation used by this **Control** to look up its own theme items. When empty, the class name of the node is used (e.g. ``Button`` for the :ref:`Button<class_Button>` control), as well as the class names of all parent classes (in order of inheritance).
+該 **Control** 用於尋找其自有的主題項的主題型別變體的名稱。當為空時，將使用節點的類別名稱（例如 ``Button`` 用於 :ref:`Button<class_Button>` 控制項），以及所有父類別的類別名稱（按繼承順序）。
 
-When set, this property gives the highest priority to the type of the specified name. This type can in turn extend another type, forming a dependency chain. See :ref:`Theme.set_type_variation()<class_Theme_method_set_type_variation>`. If the theme item cannot be found using this type or its base types, lookup falls back on the class names.
+設定後，該屬性將最高優先級賦予指定名稱的型別。這種型別又可以擴充另一種型別，形成相依性鏈。參見 :ref:`Theme.set_type_variation()<class_Theme_method_set_type_variation>`\ 。如果使用該型別或其基底類別型無法找到主題項，則尋找會回退到相依性類別名稱尋找。
 
-\ **Note:** To look up **Control**'s own items use various ``get_theme_*`` methods without specifying ``theme_type``.
+\ **注意：**\ 要尋找 **Control** 自有的項目，請使用各種 ``get_theme_*`` 方法且無需指定 ``theme_type``\ 。
 
-\ **Note:** Theme items are looked for in the tree order, from branch to root, where each **Control** node is checked for its :ref:`theme<class_Control_property_theme>` property. The earliest match against any type/class name is returned. The project-level Theme and the default Theme are checked last.
+\ **注意：**\ 主題項按樹狀順序尋找，從分支到根，其中每個 **Control** 節點的 :ref:`theme<class_Control_property_theme>` 屬性都將被檢查。最早匹配任意型別名稱/類別名稱稱的項將被回傳。最後檢查項目級的主題和預設主題。
 
 .. rst-class:: classref-item-separator
 
@@ -2459,9 +2459,9 @@ When set, this property gives the highest priority to the type of the specified 
 - |void| **set_tooltip_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
 - :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_tooltip_auto_translate_mode**\ (\ )
 
-Defines if tooltip text should automatically change to its translated version depending on the current locale. Uses the same auto translate mode as this control when set to :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+定義工具提示文字是否應當根據目前區域設定自動變更為翻譯後的版本。設為 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` 時使用與該控制項相同的自動翻譯模式。
 
-\ **Note:** Tooltips customized using :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` do not use this auto translate mode automatically.
+\ **注意：**\ 使用 :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 自訂的工具提示不會自動使用該自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -2478,11 +2478,11 @@ Defines if tooltip text should automatically change to its translated version de
 - |void| **set_tooltip_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_tooltip_text**\ (\ )
 
-The default tooltip text. The tooltip appears when the user's mouse cursor stays idle over this control for a few moments, provided that the :ref:`mouse_filter<class_Control_property_mouse_filter>` property is not :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`. The time required for the tooltip to appear can be changed with the :ref:`ProjectSettings.gui/timers/tooltip_delay_sec<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>` setting.
+預設工具提示文字。如果 :ref:`mouse_filter<class_Control_property_mouse_filter>` 屬性不是 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ，則當使用者的滑鼠游標在此控制項上停留片刻時，將出現工具提示。可以使用 :ref:`ProjectSettings.gui/timers/tooltip_delay_sec<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>` 設定更改工具提示出現所需的時間。
 
-This string is the default return value of :ref:`get_tooltip()<class_Control_method_get_tooltip>`. Override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` to generate tooltip text dynamically. Override :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` to customize the tooltip interface and behavior.
+該字串是 :ref:`get_tooltip()<class_Control_method_get_tooltip>` 的預設回傳值。要動態生成工具提示文字請覆蓋 :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>`\ 。要自訂工具提示介面和行為請覆蓋 :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`\ 。
 
-The tooltip popup will use either a default implementation, or a custom one that you can provide by overriding :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`. The default tooltip includes a :ref:`PopupPanel<class_PopupPanel>` and :ref:`Label<class_Label>` whose theme properties can be customized using :ref:`Theme<class_Theme>` methods with the ``"TooltipPanel"`` and ``"TooltipLabel"`` respectively. For example:
+工具提示彈出視窗將使用預設實作，或者使用通過覆蓋 :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 提供的自訂實作。預設工具提示包括一個 :ref:`PopupPanel<class_PopupPanel>` 和 :ref:`Label<class_Label>`\ ，其主題屬性可以使用 :ref:`Theme<class_Theme>` 方法分別對 ``"TooltipPanel"`` 和 ``"TooltipLabel"`` 進行自訂。例如：
 
 
 .. tabs::
@@ -2492,7 +2492,7 @@ The tooltip popup will use either a default implementation, or a custom one that
     var style_box = StyleBoxFlat.new()
     style_box.set_bg_color(Color(1, 1, 0))
     style_box.set_border_width_all(2)
-    # We assume here that the `theme` property has been assigned a custom Theme beforehand.
+    # 我們在這裡假設`Theme`屬性已經被事先分配了一個自訂的主題。
     theme.set_stylebox("panel", "TooltipPanel", style_box)
     theme.set_color("font_color", "TooltipLabel", Color(0, 1, 1))
 
@@ -2501,7 +2501,7 @@ The tooltip popup will use either a default implementation, or a custom one that
     var styleBox = new StyleBoxFlat();
     styleBox.SetBgColor(new Color(1, 1, 0));
     styleBox.SetBorderWidthAll(2);
-    // We assume here that the `Theme` property has been assigned a custom Theme beforehand.
+    // 我們在這裡假設`Theme`屬性已經被事先分配了一個自訂的主題。
     Theme.SetStyleBox("panel", "TooltipPanel", styleBox);
     Theme.SetColor("font_color", "TooltipLabel", new Color(0, 1, 1));
 
@@ -2522,7 +2522,7 @@ The tooltip popup will use either a default implementation, or a custom one that
 - |void| **set_translation_context**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_translation_context**\ (\ )
 
-The translation context used when translating this control's displayed text, if it has any. Also used when generating translation templates.
+在翻譯此控制項顯示的文字時（如果有的話）所使用的翻譯情境。在生成翻譯範本時也會用到它。
 
 .. rst-class:: classref-section-separator
 
@@ -2539,7 +2539,7 @@ The translation context used when translating this control's displayed text, if 
 
 :ref:`String<class_String>` **_accessibility_get_contextual_info**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__accessibility_get_contextual_info>`
 
-Return the description of the keyboard shortcuts and other contextual help for this control.
+回傳鍵盤快捷鍵的描述以及針對該控制項的其他情境協助資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -2551,11 +2551,11 @@ Return the description of the keyboard shortcuts and other contextual help for t
 
 :ref:`bool<class_bool>` **_can_drop_data**\ (\ at_position\: :ref:`Vector2<class_Vector2>`, data\: :ref:`Variant<class_Variant>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__can_drop_data>`
 
-Godot calls this method to test if ``data`` from a control's :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` can be dropped at ``at_position``. ``at_position`` is local to this control.
+Godot 呼叫這個方法來檢查是否能夠將來自某個控制項 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 方法的 ``data`` 放置到 ``at_position`` 位置。\ ``at_position`` 使用的是這個控制項的區域座標系。
 
-This method should only be used to test the data. Process the data in :ref:`_drop_data()<class_Control_private_method__drop_data>`.
+這個方法只應對資料進行檢查。處理資料請在 :ref:`_drop_data()<class_Control_private_method__drop_data>` 中進行。
 
-\ **Note:** If the drag was initiated by a keyboard shortcut or :ref:`accessibility_drag()<class_Control_method_accessibility_drag>`, ``at_position`` is set to :ref:`Vector2.INF<class_Vector2_constant_INF>`, and the currently selected item/text position should be used as the drop position.
+\ **注意：**\ 如果拖動是由鍵盤快捷鍵或 :ref:`accessibility_drag()<class_Control_method_accessibility_drag>` 發起的，則 ``at_position`` 會被設定為 :ref:`Vector2.INF<class_Vector2_constant_INF>`\ ，且應當使用目前選中項/文字的位置作為放置位置。
 
 
 .. tabs::
@@ -2563,16 +2563,16 @@ This method should only be used to test the data. Process the data in :ref:`_dro
  .. code-tab:: gdscript
 
     func _can_drop_data(position, data):
-        # Check position if it is relevant to you
-        # Otherwise, just check data
+        # 如果和位置相關就檢查 position
+        # 否則只檢查 data 即可
         return typeof(data) == TYPE_DICTIONARY and data.has("expected")
 
  .. code-tab:: csharp
 
     public override bool _CanDropData(Vector2 atPosition, Variant data)
     {
-        // Check position if it is relevant to you
-        // Otherwise, just check data
+        // 如果和位置相關就檢查 position
+        // 否則只檢查 data 即可
         return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("expected");
     }
 
@@ -2588,9 +2588,9 @@ This method should only be used to test the data. Process the data in :ref:`_dro
 
 |void| **_drop_data**\ (\ at_position\: :ref:`Vector2<class_Vector2>`, data\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Control_private_method__drop_data>`
 
-Godot calls this method to pass you the ``data`` from a control's :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` result. Godot first calls :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` to test if ``data`` is allowed to drop at ``at_position`` where ``at_position`` is local to this control.
+Godot 呼叫該方法把 ``data`` 傳給你，這是從某個控制項的 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 獲得的結果。Godot 首先會呼叫 :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` 來檢查是否允許把 ``data`` 放置到 ``at_position``\ ，這裡的 ``at_position`` 使用的是這個控制項的區域座標系。
 
-\ **Note:** If the drag was initiated by a keyboard shortcut or :ref:`accessibility_drag()<class_Control_method_accessibility_drag>`, ``at_position`` is set to :ref:`Vector2.INF<class_Vector2_constant_INF>`, and the currently selected item/text position should be used as the drop position.
+\ **注意：**\ 如果拖動是由鍵盤快捷鍵或 :ref:`accessibility_drag()<class_Control_method_accessibility_drag>` 發起的，則 ``at_position`` 會被設定為 :ref:`Vector2.INF<class_Vector2_constant_INF>`\ ，且應當使用目前選中項/文字的位置作為放置位置。
 
 
 .. tabs::
@@ -2627,7 +2627,7 @@ Godot calls this method to pass you the ``data`` from a control's :ref:`_get_dra
 
 :ref:`String<class_String>` **_get_accessibility_container_name**\ (\ node\: :ref:`Node<class_Node>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_accessibility_container_name>`
 
-Override this method to return a human-readable description of the position of the child ``node`` in the custom container, added to the :ref:`accessibility_name<class_Control_property_accessibility_name>`.
+覆蓋該方法以回傳子 ``node`` 在自訂容器中的位置的人類可讀描述，並將其新增到 :ref:`accessibility_name<class_Control_property_accessibility_name>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2639,9 +2639,9 @@ Override this method to return a human-readable description of the position of t
 
 :ref:`int<class_int>` **_get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_cursor_shape>`
 
-Virtual method to be implemented by the user. Returns the cursor shape for the position ``at_position`` in the control's local coordinates, which will typically be used while hovering over this control. See :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
+使用者需要實作的虛方法。回傳在控制項的區域座標中，\ ``at_position`` 位置處的游標形狀，通常在懸停於此控制項上時使用。參見 :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`\ 。
 
-If not overridden, defaults to :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
+如果未重寫，則預設為 :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2653,11 +2653,11 @@ If not overridden, defaults to :ref:`mouse_default_cursor_shape<class_Control_pr
 
 :ref:`Variant<class_Variant>` **_get_drag_data**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| :ref:`🔗<class_Control_private_method__get_drag_data>`
 
-Godot calls this method to get data that can be dragged and dropped onto controls that expect drop data. Returns ``null`` if there is no data to drag. Controls that want to receive drop data should implement :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` and :ref:`_drop_data()<class_Control_private_method__drop_data>`. ``at_position`` is local to this control. Drag may be forced with :ref:`force_drag()<class_Control_method_force_drag>`.
+Godot 呼叫該方法來取得資料，該資料可以被拖放到那些期望放置資料的控制項上。如果沒有要拖動的資料，則回傳 ``null``\ 。想要接收放置資料的控制項應該實作 :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` 和 :ref:`_drop_data()<class_Control_private_method__drop_data>`\ 。\ ``at_position`` 是該控制項的區域位置。可以使用 :ref:`force_drag()<class_Control_method_force_drag>` 強制拖動。
 
-A preview that will follow the mouse that should represent the data can be set with :ref:`set_drag_preview()<class_Control_method_set_drag_preview>`. A good time to set the preview is in this method.
+可以使用 :ref:`set_drag_preview()<class_Control_method_set_drag_preview>` 設定代表資料跟隨滑鼠移動的預覽。設定預覽的不錯時機就是在這個方法中。
 
-\ **Note:** If the drag was initiated by a keyboard shortcut or :ref:`accessibility_drag()<class_Control_method_accessibility_drag>`, ``at_position`` is set to :ref:`Vector2.INF<class_Vector2_constant_INF>`, and the currently selected item/text position should be used as the drag position.
+\ **注意：**\ 如果拖動是由鍵盤快捷鍵或 :ref:`accessibility_drag()<class_Control_method_accessibility_drag>` 發起的，則 ``at_position`` 會被設定為 :ref:`Vector2.INF<class_Vector2_constant_INF>`\ ，且應當使用目前選中項/文字的位置作為拖動位置。
 
 
 .. tabs::
@@ -2666,7 +2666,7 @@ A preview that will follow the mouse that should represent the data can be set w
 
     func _get_drag_data(position):
         var mydata = make_data() # This is your custom method generating the drag data.
-        set_drag_preview(make_preview(mydata)) # This is your custom method generating the preview of the drag data.
+        set_drag_preview(make_preview(mydata)) # 這是你生成拖動資料預覽的自訂方法。
         return mydata
 
  .. code-tab:: csharp
@@ -2674,7 +2674,7 @@ A preview that will follow the mouse that should represent the data can be set w
     public override Variant _GetDragData(Vector2 atPosition)
     {
         var myData = MakeData(); // This is your custom method generating the drag data.
-        SetDragPreview(MakePreview(myData)); // This is your custom method generating the preview of the drag data.
+        SetDragPreview(MakePreview(myData)); // 這是你生成拖動資料預覽的自訂方法。
         return myData;
     }
 
@@ -2690,13 +2690,13 @@ A preview that will follow the mouse that should represent the data can be set w
 
 :ref:`Vector2<class_Vector2>` **_get_maximum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_maximum_size>`
 
-Virtual method to be implemented by the user. Returns the maximum size for this control. Alternative to :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` for controlling maximum size via code. The actual maximum size will be the max value of these two (in each axis separately).
+使用者需要實作的虛方法。回傳此控制項的最大尺寸。這是通過程式碼控制最大尺寸的 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 的替代方案。實際最大尺寸將是這兩者（分別在每個軸上）的最大值。
 
-If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+如果未覆寫，則預設為 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ 。
 
-\ **Note:** This method will not be called when the script is attached to a **Control** node that already overrides its maximum size (e.g. :ref:`ScrollContainer<class_ScrollContainer>`).
+\ **注意：** 當腳本附加到已經覆寫了其最大尺寸的 **Control** 節點（例如 :ref:`ScrollContainer<class_ScrollContainer>`\ ）時，不會呼叫此方法。
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when implementing this method, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **注意：** 在實作此方法時，建議使用 :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` 而非 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ ，因為前者在計算最小尺寸時會考慮最大尺寸限制，而後者則不會。
 
 .. rst-class:: classref-item-separator
 
@@ -2724,9 +2724,9 @@ If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
 :ref:`String<class_String>` **_get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip>`
 
-Virtual method to be implemented by the user. Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. See :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+使用者需要實作的虛方法。回傳在控制項的區域座標中，\ ``at_position`` 位置處的工具提示文字，通常會在游標懸停在此控制項上時顯示。參見 :ref:`get_tooltip()<class_Control_method_get_tooltip>`\ 。
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **注意：** 如果此方法回傳一個空 :ref:`String<class_String>` 並且沒有重寫 :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`\ ，則不會顯示任何工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ Virtual method to be implemented by the user. Returns the tooltip text for the p
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **_get_tooltip_auto_translate_mode_at**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip_auto_translate_mode_at>`
 
-Return the auto-translation mode at the given ``at_position``. If not implemented, the :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` property will be used instead.
+回傳在給定 ``at_position`` 位置處的自動翻譯模式。如果（該方法）沒有被實作，將會轉而使用 :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -2750,9 +2750,9 @@ Return the auto-translation mode at the given ``at_position``. If not implemente
 
 |void| **_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Control_private_method__gui_input>`
 
-Virtual method to be implemented by the user. Override this method to handle and accept inputs on UI elements. See also :ref:`accept_event()<class_Control_method_accept_event>`.
+由使用者實作的虛方法。使用此方法處理和接受 UI 元素上的輸入。另見 :ref:`accept_event()<class_Control_method_accept_event>`\ 。
 
-\ **Example:** Click on the control to print a message:
+\ **範例：**\ 點選控制項時輸出一段訊息：
 
 
 .. tabs::
@@ -2762,7 +2762,7 @@ Virtual method to be implemented by the user. Override this method to handle and
     func _gui_input(event):
         if event is InputEventMouseButton:
             if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-                print("I've been clicked D:")
+                print("我已被點選 D:")
 
  .. code-tab:: csharp
 
@@ -2772,26 +2772,26 @@ Virtual method to be implemented by the user. Override this method to handle and
         {
             if (mb.ButtonIndex == MouseButton.Left && mb.Pressed)
             {
-                GD.Print("I've been clicked D:");
+                GD.Print("我已被點選 D:");
             }
         }
     }
 
 
 
-If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this method will **not** be called when:
+如果 ``event`` 繼承自 :ref:`InputEventMouse<class_InputEventMouse>`\ ，則符合下列條件時\ **不會**\ 呼叫該方法：
 
-- the control's :ref:`mouse_filter<class_Control_property_mouse_filter>` is set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- 控制項的 :ref:`mouse_filter<class_Control_property_mouse_filter>` 為 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ；
 
-- the control is obstructed by another control on top, that doesn't have :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- 控制項被上方的其他控制項阻擋，且該控制項沒有將 :ref:`mouse_filter<class_Control_property_mouse_filter>` 設定為 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ；
 
-- the control's parent has :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` or has accepted the event;
+- 控制項父節點的 :ref:`mouse_filter<class_Control_property_mouse_filter>` 為 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` 或已接受該事件；
 
-- the control's parent has :ref:`clip_contents<class_Control_property_clip_contents>` enabled and the ``event``'s position is outside the parent's rectangle;
+- 控制項父節點啟用了 :ref:`clip_contents<class_Control_property_clip_contents>` 且 ``event`` 的位置在父節點矩形範圍之外；
 
-- the ``event``'s position is outside the control (see :ref:`_has_point()<class_Control_private_method__has_point>`).
+- ``event`` 的位置在控制項範圍之外（見 :ref:`_has_point()<class_Control_private_method__has_point>`\ ）。
 
-\ **Note:** The ``event``'s position is relative to this control's origin.
+\ **注意：**\ ``event`` 的位置相對於該控制項的原點。
 
 .. rst-class:: classref-item-separator
 
@@ -2803,11 +2803,11 @@ If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this me
 
 :ref:`bool<class_bool>` **_has_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__has_point>`
 
-Virtual method to be implemented by the user. Returns whether the given ``point`` is inside this control.
+使用者需要實作的虛方法。回傳給定的 ``point`` 是否在此控制項內。
 
-If not overridden, default behavior is checking if the point is within the control's Rect.
+如果未重寫，預設行為是檢查該點是否在控制項的矩形範圍內。
 
-\ **Note:** If you want to check if a point is inside the control, you can use ``Rect2(Vector2.ZERO, size).has_point(point)``.
+\ **注意：** 如果你想檢查某個點是否在控制項內，可以使用 ``Rect2(Vector2.ZERO, size).has_point(point)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2819,19 +2819,19 @@ If not overridden, default behavior is checking if the point is within the contr
 
 :ref:`Object<class_Object>` **_make_custom_tooltip**\ (\ for_text\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__make_custom_tooltip>`
 
-Virtual method to be implemented by the user. Returns a **Control** node that should be used as a tooltip instead of the default one. ``for_text`` is the return value of :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+由使用者實作的虛方法。回傳應當用作工具提示的 **Control** 節點，代替預設的工具提示。\ ``for_text`` 為 :ref:`get_tooltip()<class_Control_method_get_tooltip>` 的回傳值。
 
-The returned node must be of type **Control** or Control-derived. It can have child nodes of any type. It is freed when the tooltip disappears, so make sure you always provide a new instance (if you want to use a pre-existing node from your scene tree, you can duplicate it and pass the duplicated instance). When ``null`` or a non-Control node is returned, the default tooltip will be used instead.
+回傳的節點必須是 **Control** 或派生自 Control 型別，其子節點可以是任何型別。工具提示消失時會釋放該節點，因此請確保始提供的始終是新的實例（如果想要使用場景樹中已有的節點，可以製作並回傳其副本）。如果回傳的是 ``null`` 或非 Control 節點，則會使用預設的工具提示。
 
-The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>`, so you should only provide the contents of that panel. That :ref:`PopupPanel<class_PopupPanel>` can be themed using :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` for the type ``"TooltipPanel"`` (see :ref:`tooltip_text<class_Control_property_tooltip_text>` for an example).
+回傳的節點會新增為一個 :ref:`PopupPanel<class_PopupPanel>` 的子節點，因此只需提供該面板的內容。該 :ref:`PopupPanel<class_PopupPanel>` 可以通過為 ``"TooltipPanel"`` 型別呼叫 :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` 設定主題樣式（範例見 :ref:`tooltip_text<class_Control_property_tooltip_text>`\ ）。
 
-\ **Note:** The tooltip is shrunk to minimal size. If you want to ensure it's fully visible, you might want to set its :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to some non-zero value.
+\ **注意：**\ 工具提示會縮小至最小尺寸。如果想要確保其完全可見，你可能會需要將 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 設為非零值。
 
-\ **Note:** The node (and any relevant children) should have their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` set to ``true`` when returned, otherwise, the viewport that instantiates it will not be able to calculate its minimum size reliably.
+\ **注意：**\ 回傳時節點（及其相關子級節點）的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 應設為 ``true``\ ，否則執行實例化的視埠無法為其計算可靠的最小尺寸。
 
-\ **Note:** If overridden, this method is called even if :ref:`get_tooltip()<class_Control_method_get_tooltip>` returns an empty string. When this happens with the default tooltip, it is not displayed. To copy this behavior, return ``null`` in this method when ``for_text`` is empty.
+\ **注意：**\ 覆蓋該方法後，即便 :ref:`get_tooltip()<class_Control_method_get_tooltip>` 回傳空字串也會呼叫該方法。類似情況下不會顯示預設工具提示。要複製該行為，請在 ``for_text`` 為空時回傳 ``null``\ 。
 
-\ **Example:** Use a constructed node as a tooltip:
+\ **範例：**\ 構造工具提示節點：
 
 
 .. tabs::
@@ -2854,7 +2854,7 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 
 
-\ **Example:** Use a scene instance as a tooltip:
+\ **範例：**\ 使用場景實例作為工具提示：
 
 
 .. tabs::
@@ -2915,7 +2915,7 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 |void| **accessibility_drag**\ (\ ) :ref:`🔗<class_Control_method_accessibility_drag>`
 
-Starts drag-and-drop operation without using a mouse.
+不使用滑鼠開啟拖放操作。
 
 .. rst-class:: classref-item-separator
 
@@ -2927,7 +2927,7 @@ Starts drag-and-drop operation without using a mouse.
 
 |void| **accessibility_drop**\ (\ ) :ref:`🔗<class_Control_method_accessibility_drop>`
 
-Ends drag-and-drop operation without using a mouse.
+不使用滑鼠結束拖放操作。
 
 .. rst-class:: classref-item-separator
 
@@ -2939,31 +2939,31 @@ Ends drag-and-drop operation without using a mouse.
 
 |void| **add_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Control_method_add_theme_color_override>`
 
-Creates a local override for a theme :ref:`Color<class_Color>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_color_override()<class_Control_method_remove_theme_color_override>`.
+為名稱為 ``name`` 的主題 :ref:`Color<class_Color>` 建立本機覆蓋項。為控制項取得主題項目時，本機覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_color_override()<class_Control_method_remove_theme_color_override>` 移除。
 
-See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
+另見 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
-\ **Example:** Override a :ref:`Label<class_Label>`'s color and reset it later:
+\ **範例：**\ 覆蓋標籤顏色並在之後重設：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Given the child Label node "MyLabel", override its font color with a custom value.
+    # 存在名叫“MyLabel”的子 Label 節點，使用自訂的值覆蓋其字型顏色。
     $MyLabel.add_theme_color_override("font_color", Color(1, 0.5, 0))
-    # Reset the font color of the child label.
+    # 重設該子標籤的字型顏色。
     $MyLabel.remove_theme_color_override("font_color")
-    # Alternatively it can be overridden with the default value from the Label type.
+    # 也可以使用 Label 型別的預設值覆蓋。
     $MyLabel.add_theme_color_override("font_color", get_theme_color("font_color", "Label"))
 
  .. code-tab:: csharp
 
-    // Given the child Label node "MyLabel", override its font color with a custom value.
+    // 存在名叫“MyLabel”的子 Label 節點，使用自訂的值覆蓋其字型顏色。
     GetNode<Label>("MyLabel").AddThemeColorOverride("font_color", new Color(1, 0.5f, 0));
-    // Reset the font color of the child label.
+    // 重設該子標籤的字型顏色。
     GetNode<Label>("MyLabel").RemoveThemeColorOverride("font_color");
-    // Alternatively it can be overridden with the default value from the Label type.
+    // 也可以使用 Label 型別的預設值覆蓋。
     GetNode<Label>("MyLabel").AddThemeColorOverride("font_color", GetThemeColor("font_color", "Label"));
 
 
@@ -2978,7 +2978,7 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_constant_override>`
 
-為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>` 移除。
+為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>` 移除。
 
 另見 :ref:`get_theme_constant()<class_Control_method_get_theme_constant>`\ 。
 
@@ -2992,7 +2992,7 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Control_method_add_theme_font_override>`
 
-為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>` 移除。
+為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>` 移除。
 
 另見 :ref:`get_theme_font()<class_Control_method_get_theme_font>`\ 。
 
@@ -3006,7 +3006,7 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_font_size_override>`
 
-為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>` 移除。
+為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>` 移除。
 
 另見 :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>`\ 。
 
@@ -3020,7 +3020,7 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Control_method_add_theme_icon_override>`
 
-為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>` 移除。
+為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項取得主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>` 移除。
 
 另見 :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`\ 。
 
@@ -3034,37 +3034,37 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_Control_method_add_theme_stylebox_override>`
 
-Creates a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_stylebox_override()<class_Control_method_remove_theme_stylebox_override>`.
+為名稱為 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 建立區域覆蓋項。為控制項取得主題項目時，區域覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_stylebox_override()<class_Control_method_remove_theme_stylebox_override>` 移除。
 
-See also :ref:`get_theme_stylebox()<class_Control_method_get_theme_stylebox>`.
+另見 :ref:`get_theme_stylebox()<class_Control_method_get_theme_stylebox>`\ 。
 
-\ **Example:** Modify a property in a :ref:`StyleBox<class_StyleBox>` by duplicating it:
+\ **範例：**\ 通過建立副本來修改 :ref:`StyleBox<class_StyleBox>` 屬性：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # The snippet below assumes the child node "MyButton" has a StyleBoxFlat assigned.
-    # Resources are shared across instances, so we need to duplicate it
-    # to avoid modifying the appearance of all other buttons.
+    # 以下程式碼片段要求子節點“MyButton”分配了 StyleBoxFlat。
+    # 資源是跨實例共享的，因此我們需要製作其副本
+    # 來避免修改其他所有按鈕的外觀。
     var new_stylebox_normal = $MyButton.get_theme_stylebox("normal").duplicate()
     new_stylebox_normal.border_width_top = 3
     new_stylebox_normal.border_color = Color(0, 1, 0.5)
     $MyButton.add_theme_stylebox_override("normal", new_stylebox_normal)
-    # Remove the stylebox override.
+    # 移除樣式盒覆蓋項。
     $MyButton.remove_theme_stylebox_override("normal")
 
  .. code-tab:: csharp
 
-    // The snippet below assumes the child node "MyButton" has a StyleBoxFlat assigned.
-    // Resources are shared across instances, so we need to duplicate it
-    // to avoid modifying the appearance of all other buttons.
+    // 以下程式碼片段要求子節點“MyButton”分配了 StyleBoxFlat。
+    // 資源是跨實例共享的，因此我們需要製作其副本
+    // 來避免修改其他所有按鈕的外觀。
     StyleBoxFlat newStyleboxNormal = GetNode<Button>("MyButton").GetThemeStylebox("normal").Duplicate() as StyleBoxFlat;
     newStyleboxNormal.BorderWidthTop = 3;
     newStyleboxNormal.BorderColor = new Color(0, 1, 0.5f);
     GetNode<Button>("MyButton").AddThemeStyleboxOverride("normal", newStyleboxNormal);
-    // Remove the stylebox override.
+    // 移除樣式盒覆蓋項。
     GetNode<Button>("MyButton").RemoveThemeStyleboxOverride("normal");
 
 
@@ -3179,11 +3179,11 @@ See also :ref:`get_theme_stylebox()<class_Control_method_get_theme_stylebox>`.
 
 :ref:`Vector2<class_Vector2>` **get_bound_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_bound_minimum_size>`
 
-Returns the bound value of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+回傳被 :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`\ （合併後的最大尺寸）所限制（bound）的 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ （合併後的最小尺寸）值。
 
-This value is the true minimum size of the container, as the maximum size has priority over the minimum size.
+這個值才是容器的真實最小尺寸，因為最大尺寸比最小尺寸具有更高的優先級。
 
-For example, if the combined minimum size is (100, 100) and the combined maximum size is (50, 150), the bound minimum size will be (50, 100).
+舉個例子，如果合併後的最小尺寸是 (100, 100)，而合併後的最大尺寸是 (50, 150)，那麼經過限制後的真實最小尺寸將會是 (50, 100)。
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ For example, if the combined minimum size is (100, 100) and the combined maximum
 
 :ref:`Vector2<class_Vector2>` **get_combined_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_maximum_size>`
 
-Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` and :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, as well as the :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` of this node's parent if it is a Control node with :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` set to ``true``.
+回傳由 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`\ （自訂最大尺寸）和 :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`\ （取得最大尺寸）合併得出的最大尺寸；此外，如果該節點的父節點是一個 Control 節點，且其 :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>`\ （傳遞最大尺寸）屬性被設定為 ``true``\ ，那麼父節點的 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 也會被納入合併計算。
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_minimum_size>`
 
-Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` and :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
+回傳由 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 和 :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` 組合而成的最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -3219,7 +3219,7 @@ Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_pivot_offset**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_pivot_offset>`
 
-Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_offset>` and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`, in pixels. The ratio is multiplied by the control's size.
+回傳 :ref:`pivot_offset<class_Control_property_pivot_offset>` 和 :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>` 的組合值，單位為像素。該比例值會乘以控制項的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3231,9 +3231,9 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`CursorShape<enum_Control_CursorShape>` **get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_cursor_shape>`
 
-Returns the mouse cursor shape for this control when hovered over ``at_position`` in local coordinates. For most controls, this is the same as :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, but some built-in controls implement more complex logic.
+回傳當滑鼠懸停在此控制項區域座標的 ``at_position`` 位置時，該控制項所使用的滑鼠游標形狀。對於大多數控制項，這與 :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>` 相同，但某些內建控制項實作了更複雜的邏輯。
 
-You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` to implement custom behavior for this method.
+你可以覆蓋 :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` 來為此方法實作自訂行為。
 
 .. rst-class:: classref-item-separator
 
@@ -3257,7 +3257,7 @@ You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cur
 
 :ref:`FocusMode<enum_Control_FocusMode>` **get_focus_mode_with_override**\ (\ ) |const| :ref:`🔗<class_Control_method_get_focus_mode_with_override>`
 
-Returns the :ref:`focus_mode<class_Control_property_focus_mode>`, but takes the :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` into account. If :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` is set to :ref:`FOCUS_BEHAVIOR_DISABLED<class_Control_constant_FOCUS_BEHAVIOR_DISABLED>`, or it is set to :ref:`FOCUS_BEHAVIOR_INHERITED<class_Control_constant_FOCUS_BEHAVIOR_INHERITED>` and its ancestor is set to :ref:`FOCUS_BEHAVIOR_DISABLED<class_Control_constant_FOCUS_BEHAVIOR_DISABLED>`, then this returns :ref:`FOCUS_NONE<class_Control_constant_FOCUS_NONE>`.
+回傳 :ref:`focus_mode<class_Control_property_focus_mode>`\ ，但還會考慮 :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>`\ 。如果 :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` 為 :ref:`FOCUS_BEHAVIOR_DISABLED<class_Control_constant_FOCUS_BEHAVIOR_DISABLED>`\ ，或為 :ref:`FOCUS_BEHAVIOR_INHERITED<class_Control_constant_FOCUS_BEHAVIOR_INHERITED>` 且祖先為 :ref:`FOCUS_BEHAVIOR_DISABLED<class_Control_constant_FOCUS_BEHAVIOR_DISABLED>`\ ，則會回傳 :ref:`FOCUS_NONE<class_Control_constant_FOCUS_NONE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3269,7 +3269,9 @@ Returns the :ref:`focus_mode<class_Control_property_focus_mode>`, but takes the 
 
 :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Control_method_get_focus_neighbor>`
 
-返回指定 :ref:`Side<enum_@GlobalScope_Side>` 的焦點鄰居。用於 :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`\ 、\ :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`\ 、\ :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>`\ 、和 :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>` 的取值方法。
+回傳指定 :ref:`Side<enum_@GlobalScope_Side>` 的焦點鄰居。用於 :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`\ 、\ :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`\ 、\ :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>` 和 :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>` 的取值方法。
+
+\ **注意：**\ 要尋找特定 :ref:`Side<enum_@GlobalScope_Side>` 上的下一個 **Control**\ ，即使未指定鄰居，也請使用 :ref:`find_valid_focus_neighbor()<class_Control_method_find_valid_focus_neighbor>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3297,7 +3299,7 @@ Returns the :ref:`focus_mode<class_Control_property_focus_mode>`, but takes the 
 
 :ref:`Vector2<class_Vector2>` **get_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_maximum_size>`
 
-Returns the maximum size for this control. See :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
+回傳此控制項的最大尺寸。參見 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3321,7 +3323,7 @@ Returns the maximum size for this control. See :ref:`custom_maximum_size<class_C
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **get_mouse_filter_with_override**\ (\ ) |const| :ref:`🔗<class_Control_method_get_mouse_filter_with_override>`
 
-Returns the :ref:`mouse_filter<class_Control_property_mouse_filter>`, but takes the :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` into account. If :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` is set to :ref:`MOUSE_BEHAVIOR_DISABLED<class_Control_constant_MOUSE_BEHAVIOR_DISABLED>`, or it is set to :ref:`MOUSE_BEHAVIOR_INHERITED<class_Control_constant_MOUSE_BEHAVIOR_INHERITED>` and its ancestor is set to :ref:`MOUSE_BEHAVIOR_DISABLED<class_Control_constant_MOUSE_BEHAVIOR_DISABLED>`, then this returns :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`.
+回傳 :ref:`mouse_filter<class_Control_property_mouse_filter>`\ ，但還會考慮 :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`\ 。如果 :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` 為 :ref:`MOUSE_BEHAVIOR_DISABLED<class_Control_constant_MOUSE_BEHAVIOR_DISABLED>`\ ，或為 :ref:`MOUSE_BEHAVIOR_INHERITED<class_Control_constant_MOUSE_BEHAVIOR_INHERITED>` 且祖先為 :ref:`MOUSE_BEHAVIOR_DISABLED<class_Control_constant_MOUSE_BEHAVIOR_DISABLED>`\ ，則會回傳 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3369,7 +3371,7 @@ Returns the :ref:`mouse_filter<class_Control_property_mouse_filter>`, but takes 
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_Control_method_get_rect>`
 
-返回控制項在包含節點的坐標系中的位置和大小。參見 :ref:`position<class_Control_property_position>`\ 、\ :ref:`scale<class_Control_property_scale>` 和 :ref:`size<class_Control_property_size>`\ 。
+返回控制項在包含節點的座標系中的位置和大小。參見 :ref:`position<class_Control_property_position>`\ 、\ :ref:`scale<class_Control_property_scale>` 和 :ref:`size<class_Control_property_size>`\ 。
 
 \ **注意：**\ 如果 :ref:`rotation<class_Control_property_rotation>` 不是預設的旋轉，那麼得到的大小是沒有意義的。
 
@@ -3385,11 +3387,11 @@ Returns the :ref:`mouse_filter<class_Control_property_mouse_filter>`, but takes 
 
 :ref:`Vector2<class_Vector2>` **get_screen_position**\ (\ ) |const| :ref:`🔗<class_Control_method_get_screen_position>`
 
-Returns the position of this **Control** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+回傳該 **Control** 在全域螢幕座標系中的位置（即考慮視窗的位置）。主要用於編輯器外掛。
 
-Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
+等同於 ``get_screen_transform().origin``\ （見 :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`\ ）。
 
-\ **Example:** Show a popup at the mouse position:
+\ **範例：**\ 在滑鼠位置顯示彈出視窗：
 
 ::
 
@@ -3421,18 +3423,18 @@ Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen
  .. code-tab:: gdscript
 
     func _ready():
-        # 獲取目前 Control 類中定義的字形顏色，前提是存在。
+        # 取得目前 Control 類中定義的字形顏色，前提是存在。
         modulate = get_theme_color("font_color")
-        # 獲取 Button 類中定義的字形顏色。
+        # 取得 Button 類中定義的字形顏色。
         modulate = get_theme_color("font_color", "Button")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // 獲取目前 Control 類中定義的字形顏色，前提是存在。
+        // 取得目前 Control 類中定義的字形顏色，前提是存在。
         Modulate = GetThemeColor("font_color");
-        // 獲取 Button 類中定義的字形顏色。
+        // 取得 Button 類中定義的字形顏色。
         Modulate = GetThemeColor("font_color", "Button");
     }
 
@@ -3560,11 +3562,11 @@ Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen
 
 :ref:`String<class_String>` **get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_tooltip>`
 
-Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. By default, it returns :ref:`tooltip_text<class_Control_property_tooltip_text>`.
+回傳在控制項的區域座標中，\ ``at_position`` 位置處的工具提示文字，通常會在游標懸停在此控制項上時顯示。預設情況下，它回傳 :ref:`tooltip_text<class_Control_property_tooltip_text>`\ 。
 
-You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` to implement custom behavior for this method.
+你可以覆蓋 :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` 來為此方法實作自訂行為。
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **注意：** 如果此方法回傳一個空 :ref:`String<class_String>` 並且沒有覆蓋 :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`\ ，則不會顯示任何工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -3576,7 +3578,7 @@ You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>
 
 |void| **grab_click_focus**\ (\ ) :ref:`🔗<class_Control_method_grab_click_focus>`
 
-Creates an :ref:`InputEventMouseButton<class_InputEventMouseButton>` that attempts to click the control. If the event is received, the control gains focus.
+建立一個嘗試點選控制項的 :ref:`InputEventMouseButton<class_InputEventMouseButton>`\ 。如果收到該事件，則該控制項將獲得焦點。
 
 
 .. tabs::
@@ -3584,13 +3586,13 @@ Creates an :ref:`InputEventMouseButton<class_InputEventMouseButton>` that attemp
  .. code-tab:: gdscript
 
     func _process(delta):
-        grab_click_focus() # When clicking another Control node, this node will be clicked instead.
+        grab_click_focus() # 點選另一個控制節點時，將改為點選該節點。
 
  .. code-tab:: csharp
 
     public override void _Process(double delta)
     {
-        GrabClickFocus(); // When clicking another Control node, this node will be clicked instead.
+        GrabClickFocus(); // 點選另一個控制節點時，將改為點選該節點。
     }
 
 
@@ -3605,11 +3607,11 @@ Creates an :ref:`InputEventMouseButton<class_InputEventMouseButton>` that attemp
 
 |void| **grab_focus**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_grab_focus>`
 
-Steal the focus from another control and become the focused control (see :ref:`focus_mode<class_Control_property_focus_mode>`).
+從另一個控制項奪取焦點並成為獲得焦點的控制項（參見 :ref:`focus_mode<class_Control_property_focus_mode>`\ ）。
 
-If ``hide_focus`` is ``true``, the control will not visually show its focused state. Has no effect for :ref:`LineEdit<class_LineEdit>` and :ref:`TextEdit<class_TextEdit>` when :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` is set to ``Text Input Controls``, or for any control when it is set to ``Always``.
+如果 ``hide_focus`` 為 ``true``\ ，則該控制項不會在視覺上顯示其聚焦狀態。當 :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` 被設定為 ``Text Input Controls`` 時，對 :ref:`LineEdit<class_LineEdit>` 和 :ref:`TextEdit<class_TextEdit>` 無效；當該設定被設定為 ``Always`` 時，對任何控制項都無效。
 
-\ **Note:** Using this method together with :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` makes it more reliable, especially when called inside :ref:`Node._ready()<class_Node_private_method__ready>`.
+\ **注意：** 將此方法與 :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` 一起使用會使其更加可靠，尤其是在 :ref:`Node._ready()<class_Node_private_method__ready>` 中呼叫時。
 
 .. rst-class:: classref-item-separator
 
@@ -3621,9 +3623,9 @@ If ``hide_focus`` is ``true``, the control will not visually show its focused st
 
 :ref:`bool<class_bool>` **has_focus**\ (\ ignore_hidden_focus\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Control_method_has_focus>`
 
-Returns ``true`` if this is the current focused control. See :ref:`focus_mode<class_Control_property_focus_mode>`.
+如果這是目前聚焦的控制項，則回傳 ``true``\ 。見 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。
 
-If ``ignore_hidden_focus`` is ``true``, controls that have their focus hidden will always return ``false``. Hidden focus happens automatically when controls gain focus via mouse input, or manually using :ref:`grab_focus()<class_Control_method_grab_focus>` with ``hide_focus`` set to ``true``.
+如果 ``ignore_hidden_focus`` 為 ``true``\ ，則焦點被隱藏的控制項始終回傳 ``false``\ 。當控制項通過滑鼠輸入獲得焦點時，焦點會自動隱藏；或者也可以通過呼叫 :ref:`grab_focus()<class_Control_method_grab_focus>` 並將 ``hide_focus`` 設定為 ``true`` 來手動隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -3817,7 +3819,7 @@ If ``ignore_hidden_focus`` is ``true``, controls that have their focus hidden wi
 
 :ref:`bool<class_bool>` **is_layout_rtl**\ (\ ) |const| :ref:`🔗<class_Control_method_is_layout_rtl>`
 
-Returns ``true`` if the layout is right-to-left. See also :ref:`layout_direction<class_Control_property_layout_direction>`.
+如果從右至左排版，則回傳 ``true``\ 。另見 :ref:`layout_direction<class_Control_property_layout_direction>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3925,7 +3927,7 @@ Returns ``true`` if the layout is right-to-left. See also :ref:`layout_direction
 
 |void| **set_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, anchor\: :ref:`float<class_float>`, keep_offset\: :ref:`bool<class_bool>` = false, push_opposite_anchor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Control_method_set_anchor>`
 
-將指定 :ref:`Side<enum_@GlobalScope_Side>` 的錨點設定為 ``anchor``\ 。用於 :ref:`anchor_bottom<class_Control_property_anchor_bottom>`\ 、\ :ref:`anchor_left<class_Control_property_anchor_left>`\ 、\ :ref:`anchor_right<class_Control_property_anchor_right>`\ 、和 :ref:`anchor_top<class_Control_property_anchor_top>` 的設值函數。
+將指定 :ref:`Side<enum_@GlobalScope_Side>` 的錨點設定為 ``anchor``\ 。用於 :ref:`anchor_bottom<class_Control_property_anchor_bottom>`\ 、\ :ref:`anchor_left<class_Control_property_anchor_left>`\ 、\ :ref:`anchor_right<class_Control_property_anchor_right>`\ 、和 :ref:`anchor_top<class_Control_property_anchor_top>` 的設值函式。
 
 如果 ``keep_offset`` 為 ``true``\ ，則偏移量不會在該操作後更新。
 
@@ -3991,15 +3993,15 @@ Returns ``true`` if the layout is right-to-left. See also :ref:`layout_direction
 
 |void| **set_drag_forwarding**\ (\ drag_func\: :ref:`Callable<class_Callable>`, can_drop_func\: :ref:`Callable<class_Callable>`, drop_func\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Control_method_set_drag_forwarding>`
 
-Sets the given callables to be used instead of the control's own drag-and-drop virtual methods. If a callable is empty, its respective virtual method is used as normal.
+設定使用給定的可呼叫體代替控制項自身的拖動虛方法。如果可呼叫體為空，則會正常使用對應的虛方法。
 
-The arguments for each callable should be exactly the same as their respective virtual methods, which would be:
+可呼叫體的參數應當與對應的虛方法完全相同，即：
 
-- ``drag_func`` corresponds to :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` and requires a :ref:`Vector2<class_Vector2>`;
+- ``drag_func`` 對應 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>`\ ，需要 :ref:`Vector2<class_Vector2>`\ ；
 
-- ``can_drop_func`` corresponds to :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` and requires both a :ref:`Vector2<class_Vector2>` and a :ref:`Variant<class_Variant>`;
+- ``can_drop_func`` 對應 :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>`\ ，需要 :ref:`Vector2<class_Vector2>` 和 :ref:`Variant<class_Variant>`\ ；
 
-- ``drop_func`` corresponds to :ref:`_drop_data()<class_Control_private_method__drop_data>` and requires both a :ref:`Vector2<class_Vector2>` and a :ref:`Variant<class_Variant>`.
+- ``drop_func`` 對應 :ref:`_drop_data()<class_Control_private_method__drop_data>`\ ，需要 :ref:`Vector2<class_Vector2>` 和 :ref:`Variant<class_Variant>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4011,7 +4013,7 @@ The arguments for each callable should be exactly the same as their respective v
 
 |void| **set_drag_preview**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_Control_method_set_drag_preview>`
 
-在滑鼠指標處顯示給定的控制項。呼叫此方法的好時機是在 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 中。控制項不得位於場景樹中。你不應釋放控制項，也不應在拖動持續時間之外保留對控制項的引用。拖拽結束後它會自動刪除。
+在滑鼠指標處顯示給定的控制項。呼叫此方法的好時機是在 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 中。控制項不得位於場景樹中。你不應釋放控制項，也不應在拖動持續時間之外保留對控制項的引用。拖動結束後它會自動刪除。
 
 
 .. tabs::
@@ -4149,7 +4151,7 @@ The arguments for each callable should be exactly the same as their respective v
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
 \ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 
@@ -4163,7 +4165,7 @@ Invalidates the maximum size cache in this node and in parent nodes up to top le
 
 |void| **update_minimum_size**\ (\ ) :ref:`🔗<class_Control_method_update_minimum_size>`
 
-Invalidates the minimum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` when the return value is changed. Setting :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` directly calls this method automatically.
+使最小尺寸快取在此節點及其父節點（直至頂層）中失效。適用於當 :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` 的回傳值改變時與之配合使用。直接設定 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 會自動呼叫此方法。
 
 .. rst-class:: classref-item-separator
 

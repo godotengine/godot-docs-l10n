@@ -14,7 +14,7 @@ InputEventShortcut
 說明
 ----
 
-InputEventShortcut is a special event that can be received in :ref:`Node._input()<class_Node_private_method__input>`, :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`, and :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`. It is typically sent by the editor's Command Palette to trigger actions, but can also be sent manually using :ref:`Viewport.push_input()<class_Viewport_method_push_input>`.
+InputEventShortcut 是一種可以在 :ref:`Node._input()<class_Node_private_method__input>`\ 、\ :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`\ 、\ :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中收到的特殊事件。通常由編輯器的“命令面板”發送，用於觸發動作，但也可以使用 :ref:`Viewport.push_input()<class_Viewport_method_push_input>` 手動發送。
 
 .. rst-class:: classref-reftable-group
 

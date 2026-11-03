@@ -17,15 +17,15 @@ ReflectionProbe
 說明
 ----
 
-Captures its surroundings as a cubemap, and stores versions of it with increasing levels of blur to simulate different material roughnesses.
+將其周圍環境捕捉為立方體貼圖，並儲存不同版本，其模糊層級遞增以模擬不同的材質粗糙度。
 
-The **ReflectionProbe** is used to create high-quality reflections at a low performance cost (when :ref:`update_mode<class_ReflectionProbe_property_update_mode>` is :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`). **ReflectionProbe**\ s can be blended together and with the rest of the scene smoothly. **ReflectionProbe**\ s can also be combined with :ref:`VoxelGI<class_VoxelGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) and screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`) to get more accurate reflections in specific areas. **ReflectionProbe**\ s render all objects within their :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, so updating them can be quite expensive. It is best to update them once with the important static objects and then leave them as-is.
+\ **ReflectionProbe** 用於以低效能成本（當 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 為 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>` 時），建立高品質反射。\ **ReflectionProbe** 可以與場景的其餘部分，平滑地混合在一起。\ **ReflectionProbe** 還可以與 :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）和螢幕空間反射（\ :ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`\ ）結合使用，以在特定區域獲得更準確的反射。\ **ReflectionProbe** 渲染其 :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>` 內的所有物件，因此更新它們可能會非常昂貴。最好僅用重要的靜態物件更新一次，然後保持原樣。
 
-\ **Note:** Unlike :ref:`VoxelGI<class_VoxelGI>` and SDFGI, **ReflectionProbe**\ s only source their environment from a :ref:`WorldEnvironment<class_WorldEnvironment>` node. If you specify an :ref:`Environment<class_Environment>` resource within a :ref:`Camera3D<class_Camera3D>` node, it will be ignored by the **ReflectionProbe**. This can lead to incorrect lighting within the **ReflectionProbe**.
+\ **注意：**\ 與 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI 不同，\ **ReflectionProbe** 僅從一個 :ref:`WorldEnvironment<class_WorldEnvironment>` 節點取得環境。如果你在一個 :ref:`Camera3D<class_Camera3D>` 節點中指定了一個 :ref:`Environment<class_Environment>` 資源，它將被該 **ReflectionProbe** 忽略。這可能會導致 **ReflectionProbe** 內的照明不正確。
 
-\ **Note:** When using the Mobile rendering method, only ``8`` reflection probes can be displayed on each mesh resource, while the Compatibility rendering method only supports up to ``2`` reflection probes on each mesh. Attempting to display more than ``8`` reflection probes on a single mesh resource using the Mobile renderer will result in reflection probes flickering in and out as the camera moves, while the Compatibility renderer will not render any additional probes if more than ``2`` reflection probes are being used.
+\ **注意：**\ 使用移動渲染方法時，每個網格資源上最多只能顯示 ``8`` 個反射探針，使用相容渲染方法時每個網格僅支援 ``2`` 個反射探針。嘗試在單個網格資源上顯示 ``8`` 個以上的反射探針，在使用移動渲染方法時會導致反射探針隨著相機移動而閃爍。使用相容渲染方法時，如果使用超過 ``2`` 個反射探針就會忽略多餘的探針不渲染。
 
-\ **Note:** When using the Mobile rendering method, reflection probes will only correctly affect meshes whose visibility AABB intersects with the reflection probe's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` must be increased on the mesh. Otherwise, the reflection probe may not be visible on the mesh.
+\ **注意：**\ 使用移動渲染方法時，反射探針只會正確地影響可見 AABB 與反射探針的 AABB 相交的網格。如果使用著色器以使網格超出其 AABB 的方式變形該網格，則必須在網格上增加 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。否則，反射探針可能在網格上不可見。
 
 .. rst-class:: classref-introduction-group
 
@@ -95,7 +95,7 @@ enum **UpdateMode**: :ref:`🔗<enum_ReflectionProbe_UpdateMode>`
 
 :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>` **UPDATE_ONCE** = ``0``
 
-在下一影格更新一次探查（建議大多數物件使用）。對應的輻照度貼圖會在後續六影格中陸續生成。更新所花費的時間比 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 多，但消耗的性能比它少、產生的反射品質也更高。ReflectionProbe 的變換發生變化時也會進行更新，但不會在周圍幾何體變化時更新。你可以通過將該 **ReflectionProbe** 在任意方向上進行小幅度移動來強制更新 **ReflectionProbe**\ 。
+在下一影格更新一次探查（建議大多數物件使用）。對應的輻照度貼圖會在後續六影格中陸續生成。更新所花費的時間比 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 多，但消耗的效能比它少、產生的反射品質也更高。ReflectionProbe 的變換發生變化時也會進行更新，但不會在周圍幾何體變化時更新。你可以通過將該 **ReflectionProbe** 在任意方向上進行小幅度移動來強制更新 **ReflectionProbe**\ 。
 
 .. _class_ReflectionProbe_constant_UPDATE_ALWAYS:
 
@@ -103,7 +103,7 @@ enum **UpdateMode**: :ref:`🔗<enum_ReflectionProbe_UpdateMode>`
 
 :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>` **UPDATE_ALWAYS** = ``1``
 
-每一影格都更新該探查。可以為快速移動的物件（如汽車）提供更好的結果。然而，帶來的性能消耗也是顯著的。因此，建議同一個場景中最多只使用一個 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 ReflectionProbe。其他用途請使用 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`\ 。
+每一影格都更新該探查。可以為快速移動的物件（如汽車）提供更好的結果。然而，帶來的效能消耗也是顯著的。因此，建議同一個場景中最多只使用一個 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 ReflectionProbe。其他用途請使用 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ enum **AmbientMode**: :ref:`🔗<enum_ReflectionProbe_AmbientMode>`
 - |void| **set_blend_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_blend_distance**\ (\ )
 
-Defines the distance in meters over which a probe blends into the scene.
+定義探針融入場景的距離，單位為米。
 
 .. rst-class:: classref-item-separator
 
@@ -246,9 +246,9 @@ Defines the distance in meters over which a probe blends into the scene.
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Sets the cull mask which determines what objects are drawn by this probe. Every :ref:`VisualInstance3D<class_VisualInstance3D>` with a layer included in this cull mask will be rendered by the probe. It is best to only include large objects which are likely to take up a lot of space in the reflection in order to save on rendering cost.
+設定剔除遮罩，用來確定該探針繪製的物件。如果 :ref:`VisualInstance3D<class_VisualInstance3D>` 有一個層被包含在剔除遮罩中，就會被該探針渲染。為了提高效能，最好只包含可能在反射中佔用大量空間的大型物件。
 
-This can also be used to prevent an object from reflecting upon itself (for instance, a **ReflectionProbe** centered on a vehicle).
+也可以用來防止物體對自己進行反射（例如位於車輛中心的 **ReflectionProbe**\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ This can also be used to prevent an object from reflecting upon itself (for inst
 - |void| **set_enable_shadows**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_shadows_enabled**\ (\ )
 
-如果為 ``true``\ ，則在反射探測中計算陰影。這使得反射探查算繪更慢;如果想禁用它,可以使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`\ 。
+如果為 ``true``\ ，則在反射探測中計算陰影。這使得反射探查渲染更慢;如果想停用它,可以使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ This can also be used to prevent an object from reflecting upon itself (for inst
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-物件在被剔除之前可以距該 **ReflectionProbe** 的最大距離。減少它可以提高性能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 作為 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 時。
+物件在被剔除之前可以距該 **ReflectionProbe** 的最大距離。減少它可以提高效能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 作為 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 時。
 
 \ **注意：**\ 最大反射距離始終至少等於探查的範圍。這意味著減少 :ref:`max_distance<class_ReflectionProbe_property_max_distance>` 並不總是會從反射中剔除物件，尤其是在反射探查由 :ref:`size<class_ReflectionProbe_property_size>` 定義的框已經很大的情況下。
 
@@ -335,7 +335,7 @@ This can also be used to prevent an object from reflecting upon itself (for inst
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-用於在 **ReflectionProbe** 內算繪網格的自動 LOD 偏置（這類似於 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ ）。較高的值將使用生成了 LOD 變化的不太詳細的網格版本。如果設定為 ``0.0``\ ，則自動 LOD 將被禁用。增加 :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 以犧牲幾何細節為代價提高性能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 時。
+用於在 **ReflectionProbe** 內渲染網格的自動 LOD 偏置（這類似於 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ ）。較高的值將使用生成了 LOD 變化的不太詳細的網格版本。如果設定為 ``0.0``\ ，則自動 LOD 將被停用。增加 :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 以犧牲幾何細節為代價提高效能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 時。
 
 \ **注意：**\ :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 不影響 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 可見性範圍（也稱為“手動”LOD 或分層 LOD）。
 
@@ -371,7 +371,7 @@ This can also be used to prevent an object from reflecting upon itself (for inst
 - |void| **set_reflection_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_reflection_mask**\ (\ )
 
-Sets the reflection mask which determines what objects have reflections applied from this probe. Every :ref:`VisualInstance3D<class_VisualInstance3D>` with a layer included in this reflection mask will have reflections applied from this probe. See also :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, which can be used to exclude objects from appearing in the reflection while still making them affected by the **ReflectionProbe**.
+設定反射遮罩，該遮罩確定哪些物件應用了來自該探針的反射。每個包含在該反射遮罩中的層的 :ref:`VisualInstance3D<class_VisualInstance3D>` 都將由該探針應用反射。另見 :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`\ ，它可用於排除物件出現在反射中，同時仍使它們受到 **ReflectionProbe** 的影響。
 
 .. rst-class:: classref-item-separator
 

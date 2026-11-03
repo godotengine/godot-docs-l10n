@@ -113,7 +113,7 @@ CollisionObject3D
 
 **input_event**\ (\ camera\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_signal_input_event>`
 
-Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>`. ``event_position`` is the location in world space of the mouse pointer on the surface of the shape with index ``shape_idx`` and ``normal`` is the normal vector of the surface at that point.
+當物件收到未處理的 :ref:`InputEvent<class_InputEvent>` 時發出。\ ``event_position`` 是滑鼠指針在索引為 ``shape_idx`` 的形狀表面上的世界空間位置，\ ``normal`` 是表面在該點的法向量。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>
 
 當滑鼠指標進入該物件的任何形狀時發出。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該信號。
+\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>
 
 當滑鼠指標離開該物件的所有形狀時發出。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該信號。
+\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -261,7 +261,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_disable_mode**\ (\ value\: :ref:`DisableMode<enum_CollisionObject3D_DisableMode>`\ )
 - :ref:`DisableMode<enum_CollisionObject3D_DisableMode>` **get_disable_mode**\ (\ )
 
-Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+定義 :ref:`Node.process_mode<class_Node_property_process_mode>` 為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時的物理行為。
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,9 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 
 |void| **_input_event**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject3D_private_method__input_event>`
 
-Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is the location in world space of the mouse pointer on the surface of the shape with index ``shape_idx`` and ``normal`` is the normal vector of the surface at that point. Connect to the :ref:`input_event<class_CollisionObject3D_signal_input_event>` signal to easily pick up these events.
+接收未處理的 :ref:`InputEvent<class_InputEvent>`\ 。\ ``event_position`` 是滑鼠指針在索引為 ``shape_idx`` 的形狀表面上的世界空間位置，\ ``normal`` 是該點表面的法向量。連接到 :ref:`input_event<class_CollisionObject3D_signal_input_event>` 訊號即可輕鬆取得這些事件。
 
-\ **Note:** :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
+\ **注意：**\ :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` 要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true``\ ，並且至少要設定一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`bool<class_bool>` **is_shape_owner_disabled**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_is_shape_owner_disabled>`
 
-如果為 ``true``\ ，則禁用形狀所有者及其形狀。
+如果為 ``true``\ ，則停用形狀所有者及其形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_set_disabled**\ (\ owner_id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_set_disabled>`
 
-如果為 ``true``\ ，則禁用給定的形狀所有者。
+如果為 ``true``\ ，則停用給定的形狀所有者。
 
 .. rst-class:: classref-item-separator
 

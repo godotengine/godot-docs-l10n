@@ -434,7 +434,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+Renvoie la `distance euclidienne <https://fr.wikipedia.org/wiki/Distance_euclidienne>`__ entre ce vecteur et ``to``.
 
 .. rst-class:: classref-item-separator
 
@@ -721,11 +721,11 @@ Divise chaque composante du **Vector3i** par les composantes du **Vector3i** don
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_div_float>`
 
-Divides each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+Divise chaque composante du **Vector3i** par le flottant :ref:`float<class_float>` donné. Renvoie un :ref:`Vector3<class_Vector3>`.
 
 ::
 
-    print(Vector3i(1, 2, 3) / 2.5) # Prints (0.4, 0.8, 1.2)
+    print(Vector3i(1, 2, 3) / 2.5) # Affiche (0.4, 0.8, 1.2)
 
 .. rst-class:: classref-item-separator
 

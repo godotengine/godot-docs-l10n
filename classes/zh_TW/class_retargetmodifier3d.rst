@@ -7,18 +7,18 @@ RetargetModifier3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A modifier to transfer parent skeleton poses (or global poses) to child skeletons in model space with different rests.
+修改器，能夠將父骨架的姿勢（或全域姿勢）轉移給在模型空間中具有不同放鬆姿勢的子骨架。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Retrieves the pose (or global pose) relative to the parent Skeleton's rest in model space and transfers it to the child Skeleton.
+取得模型空間中相對於父骨架放鬆姿勢的姿勢（或全域姿勢）並將其轉移給子 Skeleton。
 
-This modifier rewrites the pose of the child skeleton directly in the parent skeleton's update process. This means that it overwrites the mapped bone pose set in the normal process on the target skeleton. If you want to set the target skeleton bone pose after retargeting, you will need to add a :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` child to the target skeleton and thereby modify the pose.
+修改器會在父骨架的更新過程中直接重寫子骨架的姿勢。這意味著它會覆蓋目標骨架上正常處理過程中設定的映射骨骼姿勢。如果你想要在重新定向後設定目標骨架的骨骼姿勢，則需要向目標骨架新增一個 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 子節點才能修改姿勢。
 
-\ **Note:** When the :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` is enabled, even if it is an unmapped bone, it can cause visual problems because the global pose is applied ignoring the parent bone's pose **if it has mapped bone children**. See also :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>`.
+\ **注意：**\ 啟用 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` 時，即便是未映射的骨骼也可能導致視覺問題，因為\ **如果父骨骼存在映射的子骨骼**\ ，那麼應用全域姿勢時會忽略父骨骼的姿勢。另見 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -79,7 +79,7 @@ flags **TransformFlag**: :ref:`🔗<enum_RetargetModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_POSITION** = ``1``
 
-If set, allows to retarget the position.
+如果設定，則允許重新導向位置。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION:
 
@@ -87,7 +87,7 @@ If set, allows to retarget the position.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_ROTATION** = ``2``
 
-If set, allows to retarget the rotation.
+如果設定，則允許重新導向旋轉。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE:
 
@@ -95,7 +95,7 @@ If set, allows to retarget the rotation.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_SCALE** = ``4``
 
-If set, allows to retarget the scale.
+如果設定，則允許重新導向縮放。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_ALL:
 
@@ -103,7 +103,7 @@ If set, allows to retarget the scale.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_ALL** = ``7``
 
-If set, allows to retarget the position/rotation/scale.
+如果設定，則允許重新導向位置、旋轉、位置。
 
 .. rst-class:: classref-section-separator
 
@@ -125,7 +125,7 @@ If set, allows to retarget the position/rotation/scale.
 - |void| **set_enable_flags**\ (\ value\: |bitfield|\[:ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>`\]\ )
 - |bitfield|\[:ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>`\] **get_enable_flags**\ (\ )
 
-Flags to control the process of the transform elements individually when :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` is disabled.
+停用 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` 時，用於單獨控制變換元素過程的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Flags to control the process of the transform elements individually when :ref:`u
 - |void| **set_profile**\ (\ value\: :ref:`SkeletonProfile<class_SkeletonProfile>`\ )
 - :ref:`SkeletonProfile<class_SkeletonProfile>` **get_profile**\ (\ )
 
-:ref:`SkeletonProfile<class_SkeletonProfile>` for retargeting bones with names matching the bone list.
+用於重新導向與骨骼清單中名稱匹配骨骼的 :ref:`SkeletonProfile<class_SkeletonProfile>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,15 +159,15 @@ Flags to control the process of the transform elements individually when :ref:`u
 - |void| **set_use_global_pose**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_global_pose**\ (\ )
 
-If ``false``, in case the target skeleton has fewer bones than the source skeleton, the source bone parent's transform will be ignored.
+如果為 ``false``\ ，則在目標骨架的骨骼數量少於源骨架時，源骨架父級的變換將被忽略。
 
-Instead, it is possible to retarget between models with different body shapes, and position, rotation, and scale can be retargeted separately.
+這樣可以在不同體型的模型之間進行重新導向，位置、旋轉和縮放都可以單獨重新導向。
 
-If ``true``, retargeting is performed taking into account global pose.
+如果為 ``true``\ ，則在重新導向時會考慮全域姿勢。
 
-In case the target skeleton has fewer bones than the source skeleton, the source bone parent's transform is taken into account. However, bone length between skeletons must match exactly, if not, the bones will be forced to expand or shrink.
+在目標骨架的骨骼數量少於源骨架的情況下，會考慮源骨架父級的變換。然而，骨架之間的骨骼長度必須完全匹配，否則骨骼將被強制擴充或縮小。
 
-This is useful for using dummy bone with length ``0`` to match postures when retargeting between models with different number of bones.
+適用於在骨骼數量不同的模型之間進行重新導向時使用長度為 ``0`` 的虛設骨骼來匹配姿勢。
 
 .. rst-class:: classref-section-separator
 
@@ -184,7 +184,7 @@ This is useful for using dummy bone with length ``0`` to match postures when ret
 
 :ref:`bool<class_bool>` **is_position_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_position_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>` 則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 :ref:`bool<class_bool>` **is_rotation_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_rotation_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>` 則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 :ref:`bool<class_bool>` **is_scale_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_scale_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>` 則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 |void| **set_position_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_position_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中設定 :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Sets :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_F
 
 |void| **set_rotation_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_rotation_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中設定 :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Sets :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_F
 
 |void| **set_scale_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_scale_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中設定 :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

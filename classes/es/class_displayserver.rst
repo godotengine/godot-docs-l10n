@@ -617,11 +617,11 @@ Señales
 
 **orientation_changed**\ (\ orientation\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_signal_orientation_changed>`
 
-Emitted when the device orientation changes. ``orientation`` is the new orientation.
+Se emite cuando cambia la orientación del dispositivo. ``orientation`` es la nueva orientación.
 
-Returns ``1`` for portrait, ``2`` for landscape, and ``0`` if the orientation is undefined.
+Devuelve ``1`` para la orientación vertical, ``2`` para la horizontal y ``0`` si la orientación no está definida.
 
-\ **Note:** This method is implemented on Android and iOS.
+\ **Nota:** Este método está implementado en Android e iOS.
 
 .. rst-class:: classref-section-separator
 
@@ -848,7 +848,7 @@ El servidor de pantalla permite generar diálogos para seleccionar archivos o di
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_NATIVE_DIALOG_FILE_EXTRA** = ``26``
 
-The display server supports all features of :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`, with the added functionality of Options and native dialog file access to ``res://`` and ``user://`` paths. See :ref:`file_dialog_show()<class_DisplayServer_method_file_dialog_show>` and :ref:`file_dialog_with_options_show()<class_DisplayServer_method_file_dialog_with_options_show>`. **Windows, macOS, Linux (X11/Wayland)**
+El servidor de visualización admite todas las funcionalidades de :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`, con la funcionalidad añadida de opciones y acceso a las rutas ``res://`` y ``user://`` mediante el diálogo de archivos nativo. Véanse :ref:`file_dialog_show()<class_DisplayServer_method_file_dialog_show>` y :ref:`file_dialog_with_options_show()<class_DisplayServer_method_file_dialog_with_options_show>`. **Windows, macOS, Linux (X11/Wayland)**
 
 .. _class_DisplayServer_constant_FEATURE_WINDOW_DRAG:
 
@@ -1500,7 +1500,7 @@ El elemento está oculto para las herramientas de accesibilidad.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Element supports multiple item selection.
+Este elemento admite la selección de múltiples elementos.
 
 .. _class_DisplayServer_constant_FLAG_REQUIRED:
 
@@ -1728,7 +1728,7 @@ Acción de desplazamiento hacia atrás, el argumento de callback no está establ
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll down action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento hacia abajo, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
 
 .. _class_DisplayServer_constant_ACTION_SCROLL_FORWARD:
 
@@ -1828,7 +1828,7 @@ Acción de mostrar menú contextual, el argumento de callback no está estableci
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Custom action, callback argument is set to the integer action ID.
+Acción personalizada, el argumento de callback se establece en el ID de acción entero.
 
 .. rst-class:: classref-item-separator
 
@@ -2466,7 +2466,7 @@ enum **ProgressState**: :ref:`🔗<enum_DisplayServer_ProgressState>`
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NOPROGRESS** = ``0``
 
-Stops displaying progress and returns the button to its normal state.
+Deja de mostrar el progreso y devuelve el botón a su estado normal.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_INDETERMINATE:
 
@@ -2760,9 +2760,9 @@ Sent when the window has been forcibly closed by the display server. The window 
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``9``
 
-Sent when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+Se envía cuando cambia el valor lineal máximo de salida devuelto por :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+Esto ocurre cuando se activa o desactiva la salida HDR y cuando cambia cualquiera de los valores de luminancia de salida HDR de la ventana, como cuando el jugador ajusta el brillo de su pantalla o mueve la ventana a otra pantalla.
 
 .. rst-class:: classref-item-separator
 
@@ -2878,7 +2878,7 @@ Modo de sincronización vertical por defecto, la imagen sólo se muestra en los 
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_ADAPTIVE** = ``2``
 
-Behaves like :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLED>` when the framerate drops below the screen's refresh rate to reduce stuttering (tearing may be visible). Otherwise, vertical synchronization is enabled to avoid tearing. Framerate is limited by the monitor refresh rate (regardless of :ref:`Engine.max_fps<class_Engine_property_max_fps>`). Behaves like :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` when using the Compatibility rendering method.
+Se comporta como :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLED>` cuando la tasa de fotogramas cae por debajo de la frecuencia de actualización de la pantalla para reducir los tirones (puede haber desgarro de imagen). De lo contrario, la sincronización vertical está habilitada para evitar el desgarro de imagen. La tasa de fotogramas está limitada por la frecuencia de actualización del monitor (independientemente de :ref:`Engine.max_fps<class_Engine_property_max_fps>`). Se comporta como :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` cuando se utiliza el método de renderizado de Compatibility.
 
 .. _class_DisplayServer_constant_VSYNC_MAILBOX:
 
@@ -3390,7 +3390,7 @@ Añade un elemento de accesibilidad hijo.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Adds support for a custom accessibility action. ``action_id`` is passed as an argument to the callback of :ref:`ACTION_CUSTOM<class_DisplayServer_constant_ACTION_CUSTOM>` action.
+Añade soporte para una acción de accesibilidad personalizada. ``action_id`` se pasa como argumento al callback de la acción :ref:`ACTION_CUSTOM<class_DisplayServer_constant_ACTION_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4352,9 +4352,9 @@ Las retrollamadas tienen los siguientes argumentos: ``status: bool, color: Color
 
 :ref:`int<class_int>` **create_status_indicator**\ (\ icon\: :ref:`Texture2D<class_Texture2D>`, tooltip\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_create_status_indicator>`
 
-Creates a new application status indicator with the specified icon, tooltip, and activation callback.
+Crea un nuevo indicador de estado de la aplicación con el icono, la información sobre herramientas y el callback de activación especificados.
 
-\ ``callback`` should take two arguments: the pressed mouse button (one of the :ref:`MouseButton<enum_@GlobalScope_MouseButton>` constants) and the click position in screen coordinates (a :ref:`Vector2i<class_Vector2i>`).
+\ ``callback`` debe tomar dos argumentos: el botón del ratón pulsado (una de las constantes :ref:`MouseButton<enum_@GlobalScope_MouseButton>`) y la posición del clic en las coordenadas de la pantalla (un :ref:`Vector2i<class_Vector2i>`).
 
 .. rst-class:: classref-item-separator
 
@@ -4560,7 +4560,7 @@ Fuerza el procesamiento del gestor de ventanas ignorando todos los :ref:`InputEv
 
 :ref:`Color<class_Color>` **get_accent_color**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_accent_color>`
 
-Devuelve el color de énfasis del tema del sistema operativo. Devuelve ``Color(0, 0, 0, 0)`` si se desconoce el color de énfasis.
+Devuelve el color de énfasis del tema del sistema operativo. Devuelve ``Color(0, 0, 0, 0)`` si se desconoce el color de acento.
 
 \ **Nota:** Este método está implementado en macOS, Windows, Android y Linux (X11/Wayland).
 
@@ -5023,19 +5023,19 @@ Devuelve el índice del elemento insertado; no se garantiza que sea el mismo que
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Removes all items from the global menu with ID ``menu_root``.
+Elimina todos los elementos del menú global con ID ``menu_root``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está solo implementado en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs de sistemas de menú compatibles:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS)
+    "_dock" - Menú emergente de Dock (macOS)
+    "_apple" - Menú de Apple (macOS, Elementos personalizables añadidos después de "Bring All to Front").
+    "_window" - Menú de ventana (macOS, Elementos personalizables añadidos después de "Bring All to Front").
+    "_help" - Menú de ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -5305,9 +5305,9 @@ Devuelve ``true`` si el elemento en el índice ``idx`` es verificable de alguna 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is checked.
+Devuelve ``true`` si el elemento en el índice ``idx`` está marcado.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5659,9 +5659,9 @@ Establece el texto del elemento en el índice ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the :ref:`String<class_String>` tooltip of the item at the specified index ``idx``.
+Establece el tooltip :ref:`String<class_String>` del elemento en el índice especificado ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5725,13 +5725,13 @@ Devuelve ``true`` si un teclado físico está conectado.
 
 |void| **help_set_search_callbacks**\ (\ search_callback\: :ref:`Callable<class_Callable>`, action_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_help_set_search_callbacks>`
 
-Sets native help system search callbacks.
+Establece los callbacks de búsqueda del sistema de ayuda nativo.
 
-\ ``search_callback`` has the following arguments: ``String search_string, int result_limit`` and return a :ref:`Dictionary<class_Dictionary>` with "key, display name" pairs for the search results. Called when the user enters search terms in the ``Help`` menu.
+\ ``search_callback`` tiene los siguientes argumentos: ``String search_string, int result_limit`` y devuelve un :ref:`Dictionary<class_Dictionary>` con pares "key, display name" para los resultados de la búsqueda. Llamado cuando el usuario introduce términos de búsqueda en el menú ``Help``.
 
-\ ``action_callback`` has the following arguments: ``String key``. Called when the user selects a search result in the ``Help`` menu.
+\ ``action_callback`` tiene los siguientes argumentos: ``String key``. Llamado cuando el usuario selecciona un resultado de búsqueda en el menú ``Help``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado solo en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5909,7 +5909,7 @@ Devuelve el código de idioma ISO-639/BCP-47 de la distribución de teclado en l
 
 Devuelve el nombre localizado de la distribución de teclado en la posición ``index``.
 
-\ **Note:** Este método está implementado en Linux (X11/Wayland), macOS y Windows.
+\ **Nota:** Este método está implementado en Linux (X11/Wayland), macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6051,13 +6051,13 @@ Esto se puede usar para evitar que Godot omita el renderizado cuando no hay vent
 
 :ref:`int<class_int>` **screen_get_dpi**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_dpi>`
 
-Returns the dots per inch density of the specified screen. Returns platform specific default value if ``screen`` is invalid.
+Devuelve la densidad en puntos por pulgada de la pantalla especificada. Devuelve un valor predeterminado específico de la plataforma si ``screen`` no es válida.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** On macOS, returned value is inaccurate if fractional display scaling mode is used.
+\ **Nota:** En macOS, el valor devuelto no es preciso si se utiliza el modo de escala de pantalla fraccionaria.
 
-\ **Note:** On Android devices, the actual screen densities are grouped into six generalized densities:
+\ **Nota:** En los dispositivos Android, las densidades de pantalla reales se agrupan en seis densidades generalizadas:
 
 .. code:: text
 
@@ -6068,7 +6068,7 @@ Returns the dots per inch density of the specified screen. Returns platform spec
      xxhdpi - 480 dpi
     xxxhdpi - 640 dpi
 
-\ **Note:** This method is implemented on Android, iOS, Linux (X11/Wayland), macOS, Web, and Windows. On other platforms, this method always returns ``72``.
+\ **Nota:** Este método está implementado en Android, iOS, Linux (X11/Wayland), macOS, Web y Windows. En otras plataformas, este método siempre devuelve ``72``.
 
 .. rst-class:: classref-item-separator
 
@@ -6080,13 +6080,13 @@ Returns the dots per inch density of the specified screen. Returns platform spec
 
 :ref:`Image<class_Image>` **screen_get_image**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_image>`
 
-Returns a screenshot of the ``screen``. Returns ``null`` if ``screen`` is invalid or the **DisplayServer** fails to capture screenshot.
+Devuelve una captura de pantalla de ``screen``. Devuelve ``null`` si ``screen`` no es válido o si el **DisplayServer** no logra capturar la pantalla.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``null``.
+\ **Nota:** Este método está implementado en Linux (X11, excluyendo XWayland), macOS y Windows. En otras plataformas, este método siempre devuelve ``null``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Nota:** En macOS, este método requiere el permiso de «Grabación de pantalla». Si no se concede el permiso, este método devuelve una captura de pantalla que no incluirá las ventanas de otras aplicaciones ni los elementos del sistema operativo que no estén relacionados con la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -6098,11 +6098,11 @@ Returns a screenshot of the ``screen``. Returns ``null`` if ``screen`` is invali
 
 :ref:`Image<class_Image>` **screen_get_image_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_image_rect>`
 
-Returns a screenshot of the screen region defined by ``rect``. Returns ``null`` if ``rect`` is outside screen bounds or the **DisplayServer** fails to capture screenshot.
+Decuelve una captura de pantalla de la región de la pantalla definida por ``rect``. Devuelve ``null`` si ``rect`` está fuera de los límites de la pantalla o el **DisplayServer** falla en el intento de hacer la captura.
 
-\ **Note:** This method is implemented on macOS and Windows. On other platforms, this method always returns ``null``.
+\ **Nota:** Este método solo está implementado para macOS y Windows. En otras plataformas, este métodod siempre devolverá ``null``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Nota:** En macOS, este método requiere el permiso de "Screen Recording". Si este permiso no es concedido, este método devolverá una captura que no incluye otras aplicaciones, ventanas o elementos del sistema operativo relacionados a la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -6114,11 +6114,9 @@ Returns a screenshot of the screen region defined by ``rect``. Returns ``null`` 
 
 :ref:`float<class_float>` **screen_get_max_scale**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_max_scale>`
 
-Returns the greatest scale factor of all screens.
+Returns the greatest scale factor of all screens. See also :ref:`screen_get_scale()<class_DisplayServer_method_screen_get_scale>`.
 
-\ **Note:** On macOS returned value is ``2.0`` if there is at least one hiDPI (Retina) screen in the system, and ``1.0`` in all other cases.
-
-\ **Note:** This method is implemented only on macOS.
+\ **Note:** On macOS, the returned value is ``2.0`` if there is at least one hiDPI (Retina) screen in the system, and ``1.0`` in all other cases.
 
 .. rst-class:: classref-item-separator
 
@@ -6130,11 +6128,11 @@ Returns the greatest scale factor of all screens.
 
 :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>` **screen_get_orientation**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_orientation>`
 
-Returns the ``screen``'s current orientation. See also :ref:`screen_set_orientation()<class_DisplayServer_method_screen_set_orientation>`. Returns :ref:`SCREEN_LANDSCAPE<class_DisplayServer_constant_SCREEN_LANDSCAPE>` if ``screen`` is invalid.
+Devuelve la orientación actual de ``screen``. Consulta también :ref:`screen_set_orientation()<class_DisplayServer_method_screen_set_orientation>`. Devuelve :ref:`SCREEN_LANDSCAPE<class_DisplayServer_constant_SCREEN_LANDSCAPE>` si ``screen`` no es válido.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Android and iOS. On other platforms, this method always returns :ref:`SCREEN_LANDSCAPE<class_DisplayServer_constant_SCREEN_LANDSCAPE>`.
+\ **Nota:** Este método está implementado en Android e iOS. En otras plataformas, este método siempre devuelve :ref:`SCREEN_LANDSCAPE<class_DisplayServer_constant_SCREEN_LANDSCAPE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6162,7 +6160,7 @@ Devuelve el color del píxel en la posición de pantalla ``position`` especifica
 
 :ref:`Vector2i<class_Vector2i>` **screen_get_position**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_position>`
 
-Returns the screen's top-left corner position in pixels. Returns :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` if ``screen`` is invalid. On multi-monitor setups, the screen position is relative to the virtual desktop area. On multi-monitor setups with different screen resolutions or orientations, the origin might be located outside any display like this:
+Devuelve la posición en píxeles de la esquina superior izquierda de la pantalla. Devuelve :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` si ``screen`` no es válido. En configuraciones de múltiples monitores, la posición de la pantalla es relativa al área del escritorio virtual. En configuraciones de múltiples monitores con diferentes resoluciones u orientaciones de pantalla, el origen podría estar ubicado fuera de cualquier pantalla, de esta forma:
 
 .. code:: text
 
@@ -6173,9 +6171,9 @@ Returns the screen's top-left corner position in pixels. Returns :ref:`Vector2i.
     |             | |       |
     +-------------+ +-------+
 
-See also :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
+Consulta también :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6187,19 +6185,19 @@ See also :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
 
 :ref:`float<class_float>` **screen_get_refresh_rate**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_refresh_rate>`
 
-Returns the current refresh rate of the specified screen. When V-Sync is enabled, this returns the maximum framerate the project can effectively reach. Returns ``-1.0`` if ``screen`` is invalid or the **DisplayServer** fails to find the refresh rate for the specified screen.
+Devuelve la frecuencia de actualización actual de la pantalla especificada. Cuando V-Sync está activado, devuelve la velocidad de fotogramas máxima que el proyecto puede alcanzar de forma efectiva. Devuelve ``-1.0`` si ``screen`` no es válido o si **DisplayServer** no puede encontrar la frecuencia de actualización de la pantalla especificada.
 
-To fallback to a default refresh rate if the method fails, try:
+Para recurrir a una frecuencia de actualización predeterminada si el método falla, prueba:
 
 ::
 
     var refresh_rate = DisplayServer.screen_get_refresh_rate()
     if refresh_rate < 0:
-        refresh_rate = 60.0
+    refresh_rate = 60.0
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Linux (X11 and Wayland), and Windows. On other platforms, this method always returns ``-1.0``.
+\ **Nota:** Este método está implementado en Android, iOS, macOS, Linux (X11 y Wayland) y Windows. En otras plataformas, este método siempre devuelve ``-1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -6211,7 +6209,7 @@ To fallback to a default refresh rate if the method fails, try:
 
 :ref:`float<class_float>` **screen_get_scale**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_scale>`
 
-Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid.
+Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid. See also :ref:`screen_get_max_scale()<class_DisplayServer_method_screen_get_max_scale>`.
 
 \ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
@@ -6231,9 +6229,9 @@ Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``
 
 :ref:`Vector2i<class_Vector2i>` **screen_get_size**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_size>`
 
-Returns the screen's size in pixels. See also :ref:`screen_get_position()<class_DisplayServer_method_screen_get_position>` and :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`. Returns :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` if ``screen`` is invalid.
+Devuelve el tamaño de la pantalla en píxeles. Véanse también :ref:`screen_get_position()<class_DisplayServer_method_screen_get_position>` y :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`. Devuelve :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` si ``screen`` no es válido.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6245,11 +6243,11 @@ Returns the screen's size in pixels. See also :ref:`screen_get_position()<class_
 
 :ref:`Rect2i<class_Rect2i>` **screen_get_usable_rect**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_usable_rect>`
 
-Returns the portion of the screen that is not obstructed by a status bar in pixels. See also :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
+Devuelve la parte de la pantalla que no está obstruida por una barra de estado, en píxeles. Véase también :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Linux/X11, macOS, and Windows. On other platforms, this method always returns ``Rect2i(screen_get_position(screen), screen_get_size(screen))``.
+\ **Nota:** Este método está implementado en Linux/X11, macOS y Windows. En otras plataformas, este método siempre devuelve ``Rect2i(screen_get_position(screen), screen_get_size(screen))``.
 
 .. rst-class:: classref-item-separator
 
@@ -6273,7 +6271,7 @@ Returns ``true`` if the screen should never be turned off by the operating syste
 
 |void| **screen_set_keep_on**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_DisplayServer_method_screen_set_keep_on>`
 
-Sets whether the screen should never be turned off by the operating system's power-saving measures. See also :ref:`screen_is_kept_on()<class_DisplayServer_method_screen_is_kept_on>`.
+Establece si la pantalla nunca debe apagarse debido a las medidas de ahorro de energía del sistema operativo. Véase también :ref:`screen_is_kept_on()<class_DisplayServer_method_screen_is_kept_on>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6303,9 +6301,9 @@ Establece la orientación (``orientation``) de la pantalla (``screen``). Consult
 
 |void| **set_hardware_keyboard_connection_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`
 
-Sets the callback that should be called when a hardware keyboard is connected or disconnected. ``callable`` should accept a single :ref:`bool<class_bool>` argument indicating whether the keyboard has been connected (``true``) or disconnected (``false``).
+Establece la función de devolución de llamada que se debe llamar cuando se conecta o desconecta un teclado de hardware. ``callable`` debe aceptar un único argumento :ref:`bool<class_bool>` que indique si el teclado se ha conectado (``true``) o desconectado (``false``).
 
-\ **Note:** This method is only implemented on Android.
+\ **Nota:** Este método solo está implementado en Android.
 
 .. rst-class:: classref-item-separator
 
@@ -6317,9 +6315,9 @@ Sets the callback that should be called when a hardware keyboard is connected or
 
 |void| **set_icon**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_DisplayServer_method_set_icon>`
 
-Sets the application icon and icons of all windows with an :ref:`Image<class_Image>`. To use icons in the operating system's native format, use :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` instead.
+Establece el icono de la aplicación y los iconos de todas las ventanas con una :ref:`Image<class_Image>`. Para utilizar iconos en el formato nativo del sistema operativo, utiliza :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` en su lugar.
 
-\ **Note:** Requires support for :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>`.
+\ **Nota:** Requiere compatibilidad con :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6331,9 +6329,9 @@ Sets the application icon and icons of all windows with an :ref:`Image<class_Ima
 
 |void| **set_native_icon**\ (\ filename\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DisplayServer_method_set_native_icon>`
 
-Sets the window icon (usually displayed in the top-left corner) in the operating system's *native* format. The file at ``filename`` must be in ``.ico`` format on Windows or ``.icns`` on macOS. By using specially crafted ``.ico`` or ``.icns`` icons, :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` allows specifying different icons depending on the size the icon is displayed at. This size is determined by the operating system and user preferences (including the display scale factor). To use icons in other formats, use :ref:`set_icon()<class_DisplayServer_method_set_icon>` instead.
+Establece el icono de la ventana (que normalmente se muestra en la esquina superior izquierda) en el formato *nativo* del sistema operativo. El archivo en ``filename`` debe estar en formato ``.ico`` en Windows o ``.icns`` en macOS. Mediante iconos ``.ico`` o ``.icns`` especialmente diseñados, :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` permite especificar diferentes iconos según el tamaño al que se muestre el icono. Este tamaño lo determina el sistema operativo y las preferencias del usuario (incluido el factor de escala de la pantalla). Para utilizar iconos en otros formatos, utiliza :ref:`set_icon()<class_DisplayServer_method_set_icon>` en su lugar.
 
-\ **Note:** Requires support for :ref:`FEATURE_NATIVE_ICON<class_DisplayServer_constant_FEATURE_NATIVE_ICON>`.
+\ **Nota:** Requiere compatibilidad con :ref:`FEATURE_NATIVE_ICON<class_DisplayServer_constant_FEATURE_NATIVE_ICON>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6489,17 +6487,17 @@ Devuelve el nombre del controlador de la tableta para el índice dado.
 
 |void| **tablet_set_current_driver**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DisplayServer_method_tablet_set_current_driver>`
 
-Set active tablet driver name.
+Establece el nombre del controlador de tableta activo.
 
-Supported drivers:
+Controladores compatibles:
 
-- ``winink``: Windows Ink API, default.
+- ``winink``: API Windows Ink, predeterminado.
 
-- ``wintab``: Wacom Wintab API (compatible device driver required).
+- ``wintab``: API Wacom Wintab (se requiere un controlador de dispositivo compatible).
 
-- ``dummy``: Dummy driver, tablet input is disabled.
+- ``dummy``: Controlador simulado, la entrada de la tableta está desactivada.
 
-\ **Note:** This method is implemented only on Windows.
+\ **Nota:** Este método solo está implementado en Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6511,19 +6509,19 @@ Supported drivers:
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **tts_get_voices**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_tts_get_voices>`
 
-Returns an :ref:`Array<class_Array>` of voice information dictionaries.
+Devuelve un :ref:`Array<class_Array>` de diccionarios con información sobre las voces.
 
-Each :ref:`Dictionary<class_Dictionary>` contains two :ref:`String<class_String>` entries:
+Cada :ref:`Dictionary<class_Dictionary>` contiene tres entradas :ref:`String<class_String>`:
 
-- ``name`` is voice name.
+- ``name`` es el nombre de la voz.
 
-- ``id`` is voice identifier.
+- ``id`` es el identificador de la voz.
 
-- ``language`` is language code in ``lang_Variant`` format. The ``lang`` part is a 2 or 3-letter code based on the ISO-639 standard, in lowercase. The ``Variant`` part is an engine-dependent string describing country, region or/and dialect.
+- ``language`` es el código de idioma en formato ``lang_Variant``. La parte ``lang`` es un código de 2 o 3 letras basado en el estándar ISO-639, en minúsculas. La parte ``Variant`` es una cadena dependiente del motor que describe el país, la región o el dialecto.
 
-Note that Godot depends on system libraries for text-to-speech functionality. These libraries are installed by default on Windows and macOS, but not on all Linux distributions. If they are not present, this method will return an empty list. This applies to both Godot users on Linux, as well as end-users on Linux running Godot games that use text-to-speech.
+Ten en cuenta que Godot depende de las bibliotecas del sistema para la funcionalidad de texto a voz. Estas bibliotecas se instalan de forma predeterminada en Windows y macOS, pero no en todas las distribuciones de Linux. Si no están presentes, este método devolverá una lista vacía. Esto se aplica tanto a los usuarios de Godot en Linux como a los usuarios finales en Linux que ejecuten juegos de Godot que utilicen texto a voz.
 
-\ **Note:** This method is implemented on Android, iOS, Web, Linux (X11/Wayland), macOS, and Windows.
+\ **Nota:** Este método está implementado en Android, iOS, Web, Linux (X11/Wayland), macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6809,9 +6807,9 @@ Devuelve el valor actual del ``flag`` de la ventana dada.
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the maximum luminance is being automatically adjusted based on the screen's capabilities, this method will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>`. This maximum luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+Cuando :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` devuelve ``true``, esto devuelve la luminancia máxima actual en nits (cd/m²) para la salida HDR de la ventana especificada por ``window_id``. Si la luminancia máxima se ajusta automáticamente en función de las capacidades de la pantalla, este método devolverá ese valor. De lo contrario, devolverá el valor establecido mediante :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>`. Este valor de luminancia máxima se utiliza al calcular :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
 
-\ **Note:** This maximum luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+\ **Nota:** Esta luminancia máxima puede no coincidir con el comportamiento físico de la pantalla, pero siempre será proporcionalmente correcta con respecto a :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6823,9 +6821,9 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 :ref:`float<class_float>` **window_get_hdr_output_current_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the reference luminance is being automatically adjusted to match the operating system brightness, this will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`. This reference luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+Cuando :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` devuelve ``true``, esto devuelve la luminancia de referencia del blanco actual en nits (cd/m²) para la salida HDR de la ventana especificada por ``window_id``. Si la luminancia de referencia se ajusta automáticamente para coincidir con el brillo del sistema operativo, devolverá ese valor. De lo contrario, devolverá el valor establecido mediante :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`. Este valor de luminancia de referencia se utiliza al calcular :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
 
-\ **Note:** This reference white luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+\ **Nota:** Esta luminancia de referencia del blanco puede no coincidir con el comportamiento físico de la pantalla, pero siempre será proporcionalmente correcta con respecto a :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6839,7 +6837,7 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Returns the maximum luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted based on the screen's capabilities. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+Devuelve la luminancia máxima en nits (cd/m²) establecida para la salida HDR de la ventana especificada por ``window_id``. Los valores negativos indican que el valor se está ajustando automáticamente en función de las capacidades de la pantalla. Véase también :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6851,7 +6849,7 @@ Returns the maximum luminance in nits (cd/m²) set for HDR output by the window 
 
 :ref:`float<class_float>` **window_get_hdr_output_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`
 
-Returns the reference white luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted to match the operating system brightness. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+Devuelve la luminancia de referencia del blanco en nits (cd/m²) establecida para la salida HDR de la ventana especificada por ``window_id``. Los valores negativos indican que el valor se está ajustando automáticamente para coincidir con el brillo del sistema operativo. Véase también :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6913,7 +6911,7 @@ Devuelve punteros a la estructura interna para su uso en plugins.
 
 :ref:`float<class_float>` **window_get_output_max_linear_value**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed for the window specified by ``window_id``, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. When HDR output is enabled, this is calculated based on :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`. The :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes. This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. Corresponds to :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
+Devuelve el valor máximo de los componentes de color lineales que se pueden mostrar en la ventana especificada por ``window_id``, independientemente de si la salida es SDR o HDR. Devuelve ``1.0`` si HDR no está activado o no es compatible. Cuando la salida HDR está activada, este valor se calcula en función de :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` y :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`. La señal :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` se emitirá cada vez que cambie este valor. Este valor se utiliza en el mapeo de tonos y otros efectos de :ref:`Environment<class_Environment>` para garantizar que los colores brillantes se presenten dentro del rango que puede mostrar esta ventana. Corresponde a :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7035,7 +7033,7 @@ Devuelve ``true`` si la ventana especificada por ``window_id`` está enfocada.
 
 :ref:`bool<class_bool>` **window_is_hdr_output_enabled**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_enabled>`
 
-Returns ``true`` if HDR output is currently enabled for the window specified by ``window_id``. The returned value may change dynamically based on system settings, screen capabilities, and which screen the window is currently on.
+Devuelve ``true`` si la salida HDR está actualmente activada para la ventana especificada por ``window_id``. El valor devuelto puede cambiar dinámicamente en función de la configuración del sistema, las capacidades de la pantalla y la pantalla en la que se encuentra actualmente la ventana.
 
 .. rst-class:: classref-item-separator
 
@@ -7059,7 +7057,7 @@ Returns ``true`` if HDR output is requested for the window specified by ``window
 
 :ref:`bool<class_bool>` **window_is_hdr_output_supported**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_supported>`
 
-Returns ``true`` if the window specified by ``window_id`` supports HDR output. This depends on the platform, screen capabilities, system settings, and the screen the window is currently on.
+Devuelve ``true`` si la ventana especificada por ``window_id`` admite salida de HDR. Esto depende de la plataforma, las capacidades de la pantalla, configuración del sistema y la pantalla en la que se encuentra actualmente la ventana.
 
 .. rst-class:: classref-item-separator
 
@@ -7135,7 +7133,7 @@ Hace que la ventana especificada por ``window_id`` solicite atención, lo que se
 
 |void| **window_request_hdr_output**\ (\ enable\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_request_hdr_output>`
 
-If ``enable`` is ``true``, HDR output is requested for the window specified by ``window_id``. The window will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+Si ``enable`` es ``true``, se solicita la salida HDR para la ventana especificada por ``window_id``. La ventana cambiará automáticamente entre HDR y SDR si se mueve entre pantallas, cambian las capacidades de las pantallas o se modifican los ajustes del sistema. Esto forzará internamente la activación de :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` en el :ref:`Viewport<class_Viewport>` principal. Todos los demás :ref:`SubViewport<class_SubViewport>` de :ref:`Window<class_Window>` deben tener activada la propiedad :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` para producir una salida HDR. Corresponde a :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7223,9 +7221,9 @@ Activa o desactiva la ``flag`` dado de la ventana dada.
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Sets the maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``max_luminance`` is negative, the window uses the screen's maximum luminance that is reported by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed through in-game settings to allow the player to correct an inaccurate maximum luminance reported by the operating system. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` and :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`.
+Establece la luminancia máxima en nits (cd/m²) para la salida HDR de la ventana especificada por ``window_id``. Si ``max_luminance`` es negativo, la ventana utiliza la luminancia máxima de la pantalla indicada por el sistema operativo. De forma predeterminada, esta luminancia se establece en ``-1.0`` para todas las ventanas. Por lo general, esta propiedad debería mantenerse en su valor predeterminado, aunque opcionalmente puede exponerse en los ajustes del juego para permitir que el jugador corrija una luminancia máxima incorrecta indicada por el sistema operativo. Véanse también :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` y :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`.
 
-\ **Note:** This method is only implemented on macOS and Windows. Other platforms will always use the screen's maximum luminance that is reported by the operating system.
+\ **Nota:** Este método solo está implementado en macOS y Windows. En otras plataformas, siempre se utilizará la luminancia máxima de la pantalla indicada por el sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -7237,9 +7235,9 @@ Sets the maximum luminance in nits (cd/m²) for HDR output by the window specifi
 
 |void| **window_set_hdr_output_reference_luminance**\ (\ reference_luminance\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`
 
-Sets the reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``reference_luminance`` is negative, the window automatically adjusts to the brightness set by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed as an "HDR Brightness" in-game setting to allow the player to adjust the brightness of their game, independently of their device settings. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`.
+Establece la luminancia del blanco de referencia en nits (cd/m²) para la salida HDR de la ventana especificada por ``window_id``. Si ``reference_luminance`` es negativo, la ventana se ajusta automáticamente al brillo establecido por el sistema operativo. De forma predeterminada, esta luminancia se establece en ``-1.0`` para todas las ventanas. Por lo general, esta propiedad debería mantenerse en su valor predeterminado, aunque opcionalmente puede exponerse como un ajuste del juego llamado «Brillo HDR» para permitir que el jugador ajuste el brillo del juego independientemente de la configuración de su dispositivo. Véanse también :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` y :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`.
 
-\ **Note:** This method is only implemented on Windows. Other platforms will always use the reference luminance that is reported by the operating system.
+\ **Nota:** Este método solo está implementado en Windows. En otras plataformas, siempre se utilizará la luminancia de referencia indicada por el sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -7495,13 +7493,13 @@ Establece el tipo y el estado de la barra de progreso en el icono de la barra de
 
 |void| **window_set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the window specified by ``window_id`` if it does not exist, sets the progress of the icon.
+Crea una barra de progreso en el icono de la ventana especificada por ``window_id`` en la barra de tareas o el Dock, si no existe, y establece el progreso del icono.
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` actúa como un porcentaje relativo, con valores entre ``0.0`` (mínimo) y ``1.0`` (máximo).
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Nota:** Este método solo está implementado en Windows y macOS.
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **Nota:** En macOS, la barra de progreso solo se muestra para la ventana principal.
 
 .. rst-class:: classref-item-separator
 

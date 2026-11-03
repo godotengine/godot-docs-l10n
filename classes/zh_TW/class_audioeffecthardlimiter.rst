@@ -7,18 +7,18 @@ AudioEffectHardLimiter
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a limiter audio effect to an audio bus.
+向音訊總線新增一個限制器音訊效果。
 
-Prevents audio signals from exceeding a specified volume level.
+防止音訊訊號超過指定的音量電平。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+“限制器”可以防止音訊訊號超過給定的音量分貝閾值。硬限制器預測音量峰值，並將在峰值超過上限閾值時平滑地應用增益衰減，以防止削波。它能保持波形並防止波形超過上限閾值。建議在主總線上新增一個作為安全措施，以防止音量突然達到峰值，並防止音量超過 0 分貝時由削波引起的失真。
 
-If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+如果需要削波，請考慮 :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_Aud
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,9 +65,9 @@ If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_Aud
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
+波形的最大允許值，單位為分貝。取值範圍在 -24 到 0 之間。
 
-The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+預設值 -0.3 可以防止潛在的取樣間峰值（ISP）超過 0 分貝，從而避免在一些較舊的硬體裝置上產生輕微的失真。
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ The default value of -0.3 prevents potential inter-sample peaks (ISP) from cross
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-Gain before limiting, in dB. Value can range from -24 to 24.
+限制前的增益，單位為分貝。取值範圍為 -24 至 24。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Gain before limiting, in dB. Value can range from -24 to 24.
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
+增益衰減至完全釋放所需的時間，單位為秒。取值範圍為 0.01 至 3。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -107,11 +107,11 @@ Une forme de collision désactivée n’a aucun effet dans le monde. Cette propr
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-Sets whether this collision shape should only detect collision on one side (top or bottom).
+Définit si cette forme de collision doit uniquement détecter la collision d'un côté (en haut ou en bas).
 
-\ **Note:** This property has no effect if this **CollisionShape2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+\ **Note :** Cette propriété n'a aucun effet si cette **CollisionShape2D** est un enfant d'un nœud :ref:`Area2D<class_Area2D>`.
 
-\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
+\ **Note :** La direction de la collision unidirectionnelle peut être configurée en définissant :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
 
 .. rst-class:: classref-item-separator
 

@@ -95,7 +95,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeCubemap_TextureType>`
 
 :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **TYPE_COLOR** = ``1``
 
-Adds ``source_color`` as hint to the uniform declaration for proper conversion from nonlinear sRGB encoding to linear encoding.
+將 ``source_color`` 作為提示新增到 uniform 聲明中，以便將非線性 sRGB 編碼正確轉換為線性編碼。
 
 .. _class_VisualShaderNodeCubemap_constant_TYPE_NORMAL_MAP:
 
@@ -150,7 +150,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_source**\ (\ value\: :ref:`Source<enum_VisualShaderNodeCubemap_Source>`\ )
 - :ref:`Source<enum_VisualShaderNodeCubemap_Source>` **get_source**\ (\ )
 
-Defines which source should be used for the sampling.
+定義取樣應該使用哪個源。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Defines which source should be used for the sampling.
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **get_texture_type**\ (\ )
 
-Defines the type of data provided by the source texture.
+定義來源紋理提供的資料型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

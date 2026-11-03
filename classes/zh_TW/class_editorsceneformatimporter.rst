@@ -63,7 +63,7 @@ flags **ImportFlags**: :ref:`🔗<enum_EditorSceneFormatImporter_ImportFlags>`
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_SCENE** = ``1``
 
-Unused flag (this has no effect when enabled).
+未使用的標誌（啟用它沒有任何效果）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_ANIMATION:
 
@@ -71,7 +71,7 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_ANIMATION** = ``2``
 
-Import animations from the 3D scene. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+從 3D 場景中匯入動畫。當將場景作為 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （動畫庫）進行匯入時，此選項會始終處於啟用狀態。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FAIL_ON_MISSING_DEPENDENCIES:
 
@@ -79,7 +79,7 @@ Import animations from the 3D scene. When importing a scene as an :ref:`Animatio
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_FAIL_ON_MISSING_DEPENDENCIES** = ``4``
 
-Unused flag (this has no effect when enabled).
+未使用的標誌（啟用它沒有任何效果）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_GENERATE_TANGENT_ARRAYS:
 
@@ -87,9 +87,9 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果設為 ``true``\ ，當輸入的網格體（meshes）沒有切線資料時，將使用 `Mikktspace <http://www.mikktspace.com/>`__ 算法來生成頂點切線。如果條件允許，更推薦讓 3D 建模軟體在匯出模型時直接生成切線，而不是相依性這個選項。法線貼圖（normal maps）和高度貼圖（height maps），以及任何需要切線的材質或著色器（shader）功能，都必須要有切線資料才能正確顯示。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果你不需要那些相依性切線的材質功能，停用此選項可以在源 3D 檔案不包含切線的情況下，減小輸出檔案的大小，並加快匯入速度。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_USE_NAMED_SKIN_BINDS:
 
@@ -97,15 +97,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果勾選此項，動畫將使用帶名稱的 :ref:`Skin<class_Skin>`\ （皮膚）資源。\ :ref:`MeshInstance3D<class_MeshInstance3D>`\ （網格實例 3D）節點在這裡包含 3 個關鍵屬性：一個指向 :ref:`Skeleton3D<class_Skeleton3D>`\ （骨骼 3D）節點的骨架 :ref:`NodePath<class_NodePath>`\ （節點路徑，通常是 ``..``\ ）、一個網格（mesh），以及一個皮膚（skin）。
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 節點包含一個骨骼清單，其中記錄了骨骼的名稱、姿態（pose）和靜止狀態（rest），以及父級骨骼的資訊。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 網格（mesh）包含了顯示模型所需的所有原始頂點資料。就網格本身而言，它知道頂點是如何進行權重繪製（weight-painted）的，並且使用了一些通常從 3D 建模軟體匯入的內部編號。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- 皮膚（skin）包含了將這個網格綁定到該 :ref:`Skeleton3D<class_Skeleton3D>` 上所需的必要資訊。對於 3D 建模軟體選定的每一個內部骨骼 ID，它都包含兩項內容。首先，是一個被稱為“綁定姿態矩陣”、“反向綁定矩陣”或簡稱 IBM 的矩陣。其次，\ :ref:`Skin<class_Skin>` 還包含每根骨骼的名稱（如果啟用了此標誌），或者包含該骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 清單中的索引（如果停用了此標誌）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+綜合這些資訊，就足以告訴 Godot 如何利用 :ref:`Skeleton3D<class_Skeleton3D>` 節點中的骨骼姿態，來渲染每個 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。請注意，每個 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享綁定資訊（這在從 Blender 匯出的模型中很常見），或者每個 :ref:`MeshInstance3D<class_MeshInstance3D>` 也可以使用獨立的 :ref:`Skin<class_Skin>` 物件（這在從 Maya 等其他工具匯出的模型中很常見）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_DISCARD_MESHES_AND_MATERIALS:
 
@@ -113,7 +113,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+在匯入時忽略網格（Meshes）和材質（Materials）。當將場景作為 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （動畫庫）進行匯入時，此選項會始終處於啟用狀態。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FORCE_DISABLE_MESH_COMPRESSION:
 
@@ -121,7 +121,7 @@ Ignore meshes and materials on import. When importing a scene as an :ref:`Animat
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_FORCE_DISABLE_MESH_COMPRESSION** = ``64``
 
-If ``true``, mesh compression will not be used. Consider enabling if you notice blocky artifacts in your mesh normals or UVs, or if you have meshes that are larger than a few thousand meters in each direction.
+如果為 ``true``\ ，則不會使用網格壓縮。如果你在網格法線或 UV 中發現塊狀偽影，或者如果你的網格在每個方向都大於幾千米，請考慮啟用。
 
 .. rst-class:: classref-section-separator
 
@@ -138,7 +138,7 @@ If ``true``, mesh compression will not be used. Consider enabling if you notice 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorSceneFormatImporter_private_method__get_extensions>`
 
-Return supported file extensions for this scene importer.
+回傳該場景匯入器支援的檔案副檔名。
 
 .. rst-class:: classref-item-separator
 
@@ -150,11 +150,11 @@ Return supported file extensions for this scene importer.
 
 |void| **_get_import_options**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorSceneFormatImporter_private_method__get_import_options>`
 
-Override to add general import options. These will appear in the main import dock on the editor. Add options via :ref:`add_import_option()<class_EditorSceneFormatImporter_method_add_import_option>` and :ref:`add_import_option_advanced()<class_EditorSceneFormatImporter_method_add_import_option_advanced>`.
+覆蓋後可以新增通用匯入選項。這些選項將出現在編輯器的主匯入面板中。請通過 :ref:`add_import_option()<class_EditorSceneFormatImporter_method_add_import_option>` 和 :ref:`add_import_option_advanced()<class_EditorSceneFormatImporter_method_add_import_option_advanced>` 新增選項。
 
-\ **Note:** All **EditorSceneFormatImporter** and :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>` instances will add options for all files. It is good practice to check the file extension when ``path`` is non-empty.
+\ **注意：**\ 所有 **EditorSceneFormatImporter** 和 :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>` 實例都會為所有檔案新增選項。\ ``path`` 非空時，最好檢查檔案的副檔名。
 
-When the user is editing project settings, ``path`` will be empty. It is recommended to add all options when ``path`` is empty to allow the user to customize Import Defaults.
+使用者編輯專案設定時 ``path`` 將為空。建議在 ``path`` 為空時新增所有選項，以便使用者自訂匯入預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ When the user is editing project settings, ``path`` will be empty. It is recomme
 
 :ref:`Variant<class_Variant>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, for_animation\: :ref:`bool<class_bool>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorSceneFormatImporter_private_method__get_option_visibility>`
 
-Should return ``true`` to show the given option, ``false`` to hide the given option, or ``null`` to ignore.
+顯示給定的選項應回傳 ``true``\ ，隱藏給定的選項應回傳 ``false``\ ，忽略應回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Should return ``true`` to show the given option, ``false`` to hide the given opt
 
 :ref:`Object<class_Object>` **_import_scene**\ (\ path\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`, options\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |required| :ref:`🔗<class_EditorSceneFormatImporter_private_method__import_scene>`
 
-Perform the bulk of the scene import logic here, for example using :ref:`GLTFDocument<class_GLTFDocument>` or :ref:`FBXDocument<class_FBXDocument>`.
+在此處執行批量場景匯入邏輯，例如使用 :ref:`GLTFDocument<class_GLTFDocument>` 和 :ref:`FBXDocument<class_FBXDocument>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Perform the bulk of the scene import logic here, for example using :ref:`GLTFDoc
 
 |void| **add_import_option**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorSceneFormatImporter_method_add_import_option>`
 
-Add a specific import option (name and default value only). This function can only be called from :ref:`_get_import_options()<class_EditorSceneFormatImporter_private_method__get_import_options>`.
+新增特定的匯入選項（僅限名稱和預設值）。該函式只能在 :ref:`_get_import_options()<class_EditorSceneFormatImporter_private_method__get_import_options>` 中呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Add a specific import option (name and default value only). This function can on
 
 |void| **add_import_option_advanced**\ (\ type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, name\: :ref:`String<class_String>`, default_value\: :ref:`Variant<class_Variant>`, hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` = 0, hint_string\: :ref:`String<class_String>` = "", usage_flags\: :ref:`int<class_int>` = 6\ ) :ref:`🔗<class_EditorSceneFormatImporter_method_add_import_option_advanced>`
 
-Add a specific import option. This function can only be called from :ref:`_get_import_options()<class_EditorSceneFormatImporter_private_method__get_import_options>`.
+新增特定的匯入選項。該函式只能在 :ref:`_get_import_options()<class_EditorSceneFormatImporter_private_method__get_import_options>` 中呼叫。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

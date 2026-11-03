@@ -9,7 +9,7 @@ EditorSceneFormatImporterUFBX
 
 **Hereda:** :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Importa archivos FBX utilizando la biblioteca ufbx.
+Importa archivos FBX mediante la librería ufbx.
 
 .. rst-class:: classref-introduction-group
 

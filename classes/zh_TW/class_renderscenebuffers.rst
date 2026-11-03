@@ -9,16 +9,16 @@ RenderSceneBuffers
 
 **被繼承：** :ref:`RenderSceneBuffersExtension<class_RenderSceneBuffersExtension>`, :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`
 
-抽象場景緩衝區對象，為完成 3D 算繪的每個視窗建立。
+抽象場景緩衝區對象，為完成 3D 渲染的每個視窗建立。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Abstract scene buffers object, created for each viewport for which 3D rendering is done. It manages any additional buffers used during rendering and will discard buffers when the viewport is resized. See also :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`.
+抽象場景緩衝物件，為完成 3D 渲染的每個視埠建立。它管理渲染期間使用的任何額外緩衝區，並在調整視埠大小時丟棄緩衝區。另見 :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是內部渲染伺服器物件。請勿在腳本中實例化該類。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Abstract scene buffers object, created for each viewport for which 3D rendering 
 
 |void| **configure**\ (\ config\: :ref:`RenderSceneBuffersConfiguration<class_RenderSceneBuffersConfiguration>`\ ) :ref:`🔗<class_RenderSceneBuffers_method_configure>`
 
-This method is called by the rendering server when the associated viewport's configuration is changed. It will discard the old buffers and recreate the internal buffers used.
+當關聯的視埠設定更改時，渲染伺服器會呼叫該方法。它將丟棄舊的緩衝區並重新建立使用的內部緩衝區。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -451,7 +451,7 @@ Toma un objeto :ref:`GLTFState<class_GLTFState>` a través del parámetro ``stat
 
 Toma un objeto :ref:`GLTFState<class_GLTFState>` a través del parámetro ``state`` y devuelve un nodo de escena de Godot Engine.
 
-El parámetro ``bake_fps`` anula el bake_fps en ``state``.
+El parámetro ``bake_fps`` sobrescribe el bake_fps en ``state``.
 
 .. rst-class:: classref-item-separator
 

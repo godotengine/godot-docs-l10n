@@ -14,7 +14,7 @@ AESContext
 說明
 ----
 
-這個類存放的是進行 AES（Advanced Encryption Standard，高級加密標準）加解密所需的本文信息。支援 AES-ECB 和 AES-CBC 兩種模式。
+這個類存放的是進行 AES（Advanced Encryption Standard，進階加密標準）加解密所需的本文資訊。支援 AES-ECB 和 AES-CBC 兩種模式。
 
 
 .. tabs::
@@ -146,7 +146,7 @@ AES 電子密碼簿解密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_ENCRYPT** = ``2``
 
-AES cipher block chaining encryption mode.
+AES 密碼塊連結加密模式。
 
 .. _class_AESContext_constant_MODE_CBC_DECRYPT:
 
@@ -154,7 +154,7 @@ AES cipher block chaining encryption mode.
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_DECRYPT** = ``3``
 
-AES cipher block chaining decryption mode.
+AES 密碼塊連結解密模式。
 
 .. _class_AESContext_constant_MODE_MAX:
 
@@ -191,7 +191,7 @@ AES cipher block chaining decryption mode.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-獲取此本文的目前 IV 狀態（呼叫 :ref:`update()<class_AESContext_method_update>` 時會更新 IV）。通常不需要此函式。
+取得此本文的目前 IV 狀態（呼叫 :ref:`update()<class_AESContext_method_update>` 時會更新 IV）。通常不需要此函式。
 
 \ **注意：**\ 僅當本文以 :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` 或 :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>` 開頭時，此函式才有意義。
 

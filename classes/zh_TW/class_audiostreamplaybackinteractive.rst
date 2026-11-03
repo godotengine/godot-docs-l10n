@@ -14,7 +14,7 @@ AudioStreamPlaybackInteractive
 說明
 ----
 
-:ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 的播放元件，包含用於切換當前播放片段的函式。
+:ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 的播放元件，包含用於切換目前播放片段的函式。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ AudioStreamPlaybackInteractive
 
 :ref:`int<class_int>` **get_current_clip_index**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlaybackInteractive_method_get_current_clip_index>`
 
-返回目前正在播放的片段索引。可搭配 :ref:`AudioStreamInteractive.get_clip_name()<class_AudioStreamInteractive_method_get_clip_name>` 取得當前片段名稱。
+返回目前正在播放的片段索引。可搭配 :ref:`AudioStreamInteractive.get_clip_name()<class_AudioStreamInteractive_method_get_clip_name>` 取得目前片段名稱。
 
 \ **範例：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 節點中取得目前播放片段的名稱。
 

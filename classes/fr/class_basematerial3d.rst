@@ -2154,7 +2154,7 @@ Détermine quand le rendu de la profondeur a lieu. Voir aussi :ref:`transparency
 
 Détermine quel opérateur de comparaison est utilisé lors des tests de profondeur.
 
-\ **Note :** La modification de :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` à une valeur qui n'est pas celle par défaut n'a qu'un effet visible que lorsqu'elle est utilisée sur un matériau transparent, ou un matériau qui a :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` défini à :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
+\ **Note :** Affecter à :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` une valeur autre que celle par défaut n'a d'effet visible que si elle est utilisée sur un matériau transparent, ou ayant :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` défini à :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 

@@ -9,25 +9,25 @@ SkeletonModifier3D
 
 **被繼承：** :ref:`BoneConstraint3D<class_BoneConstraint3D>`, :ref:`BoneTwistDisperser3D<class_BoneTwistDisperser3D>`, :ref:`IKModifier3D<class_IKModifier3D>`, :ref:`LimitAngularVelocityModifier3D<class_LimitAngularVelocityModifier3D>`, :ref:`LookAtModifier3D<class_LookAtModifier3D>`, :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`, :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`, :ref:`RetargetModifier3D<class_RetargetModifier3D>`, :ref:`SkeletonIK3D<class_SkeletonIK3D>`, :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`, :ref:`XRBodyModifier3D<class_XRBodyModifier3D>`, :ref:`XRHandModifier3D<class_XRHandModifier3D>`
 
-A node that may modify a Skeleton3D's bones.
+能夠修改 Skeleton3D 中骨骼的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**SkeletonModifier3D** retrieves a target :ref:`Skeleton3D<class_Skeleton3D>` by having a :ref:`Skeleton3D<class_Skeleton3D>` parent.
+**SkeletonModifier3D** 會將父級 :ref:`Skeleton3D<class_Skeleton3D>` 節點作為目標 :ref:`Skeleton3D<class_Skeleton3D>`\ 。
 
-If there is an :ref:`AnimationMixer<class_AnimationMixer>`, a modification always performs after playback process of the :ref:`AnimationMixer<class_AnimationMixer>`.
+如果存在 :ref:`AnimationMixer<class_AnimationMixer>`\ ，則修改會在 :ref:`AnimationMixer<class_AnimationMixer>` 的播放處理後執行。
 
-This node should be used to implement custom IK solvers, constraints, or skeleton physics.
+該節點應該用於實作自訂 IK 解算器、約束、骨架物理。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `Design of the Skeleton Modifier 3D <https://godotengine.org/article/design-of-the-skeleton-modifier-3d/>`__
+- `3D 骨架修改器的設計 <https://godotengine.org/article/design-of-the-skeleton-modifier-3d/>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -78,9 +78,9 @@ This node should be used to implement custom IK solvers, constraints, or skeleto
 
 **modification_processed**\ (\ ) :ref:`🔗<class_SkeletonModifier3D_signal_modification_processed>`
 
-Notifies when the modification have been finished.
+修改完成後通知。
 
-\ **Note:** If you want to get the modified bone pose by the modifier, you must use :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` or :ref:`Skeleton3D.get_bone_global_pose()<class_Skeleton3D_method_get_bone_global_pose>` at the moment this signal is fired.
+\ **注意：**\ 如果要取得修改器修改後的骨骼姿勢，必須在觸發該訊號時使用 :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` 或 :ref:`Skeleton3D.get_bone_global_pose()<class_Skeleton3D_method_get_bone_global_pose>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -103,7 +103,7 @@ enum **BoneAxis**: :ref:`🔗<enum_SkeletonModifier3D_BoneAxis>`
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_PLUS_X** = ``0``
 
-Enumerated value for the +X axis.
++X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_AXIS_MINUS_X:
 
@@ -111,7 +111,7 @@ Enumerated value for the +X axis.
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_MINUS_X** = ``1``
 
-Enumerated value for the -X axis.
+-X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_AXIS_PLUS_Y:
 
@@ -119,7 +119,7 @@ Enumerated value for the -X axis.
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_PLUS_Y** = ``2``
 
-Enumerated value for the +Y axis.
++Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_AXIS_MINUS_Y:
 
@@ -127,7 +127,7 @@ Enumerated value for the +Y axis.
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_MINUS_Y** = ``3``
 
-Enumerated value for the -Y axis.
+-Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_AXIS_PLUS_Z:
 
@@ -135,7 +135,7 @@ Enumerated value for the -Y axis.
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_PLUS_Z** = ``4``
 
-Enumerated value for the +Z axis.
++Z 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_AXIS_MINUS_Z:
 
@@ -143,7 +143,7 @@ Enumerated value for the +Z axis.
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **BONE_AXIS_MINUS_Z** = ``5``
 
-Enumerated value for the -Z axis.
+-Z 軸對應的列舉值。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ enum **BoneDirection**: :ref:`🔗<enum_SkeletonModifier3D_BoneDirection>`
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_PLUS_X** = ``0``
 
-Enumerated value for the +X axis.
++X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_X:
 
@@ -169,7 +169,7 @@ Enumerated value for the +X axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_MINUS_X** = ``1``
 
-Enumerated value for the -X axis.
+-X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_PLUS_Y:
 
@@ -177,7 +177,7 @@ Enumerated value for the -X axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_PLUS_Y** = ``2``
 
-Enumerated value for the +Y axis.
++Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_Y:
 
@@ -185,7 +185,7 @@ Enumerated value for the +Y axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_MINUS_Y** = ``3``
 
-Enumerated value for the -Y axis.
+-Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_PLUS_Z:
 
@@ -193,7 +193,7 @@ Enumerated value for the -Y axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_PLUS_Z** = ``4``
 
-Enumerated value for the +Z axis.
++Z 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_MINUS_Z:
 
@@ -201,7 +201,7 @@ Enumerated value for the +Z axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_MINUS_Z** = ``5``
 
-Enumerated value for the -Z axis.
+-Z 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_BONE_DIRECTION_FROM_PARENT:
 
@@ -209,7 +209,7 @@ Enumerated value for the -Z axis.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **BONE_DIRECTION_FROM_PARENT** = ``6``
 
-Enumerated value for the axis from a parent bone to the child bone.
+列舉值，表示從父骨骼指向子骨骼的軸。
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ enum **SecondaryDirection**: :ref:`🔗<enum_SkeletonModifier3D_SecondaryDirecti
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_NONE** = ``0``
 
-Enumerated value for the case when the axis is undefined.
+當軸未定義時對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_X:
 
@@ -235,7 +235,7 @@ Enumerated value for the case when the axis is undefined.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_PLUS_X** = ``1``
 
-Enumerated value for the +X axis.
++X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_X:
 
@@ -243,7 +243,7 @@ Enumerated value for the +X axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_MINUS_X** = ``2``
 
-Enumerated value for the -X axis.
+-X 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_Y:
 
@@ -251,7 +251,7 @@ Enumerated value for the -X axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_PLUS_Y** = ``3``
 
-Enumerated value for the +Y axis.
++Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_Y:
 
@@ -259,7 +259,7 @@ Enumerated value for the +Y axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_MINUS_Y** = ``4``
 
-Enumerated value for the -Y axis.
+-Y 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_Z:
 
@@ -267,7 +267,7 @@ Enumerated value for the -Y axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_PLUS_Z** = ``5``
 
-Enumerated value for the +Z axis.
++Z 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_MINUS_Z:
 
@@ -275,7 +275,7 @@ Enumerated value for the +Z axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_MINUS_Z** = ``6``
 
-Enumerated value for the -Z axis.
+-Z 軸對應的列舉值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_CUSTOM:
 
@@ -283,7 +283,7 @@ Enumerated value for the -Z axis.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_CUSTOM** = ``7``
 
-Enumerated value for an optional axis.
+可選軸對應的列舉值。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ enum **RotationAxis**: :ref:`🔗<enum_SkeletonModifier3D_RotationAxis>`
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_X** = ``0``
 
-Enumerated value for the rotation of the X axis.
+列舉值，表示 X 軸的旋轉。
 
 .. _class_SkeletonModifier3D_constant_ROTATION_AXIS_Y:
 
@@ -309,7 +309,7 @@ Enumerated value for the rotation of the X axis.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_Y** = ``1``
 
-Enumerated value for the rotation of the Y axis.
+列舉值，表示 Y 軸的旋轉。
 
 .. _class_SkeletonModifier3D_constant_ROTATION_AXIS_Z:
 
@@ -317,7 +317,7 @@ Enumerated value for the rotation of the Y axis.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_Z** = ``2``
 
-Enumerated value for the rotation of the Z axis.
+列舉值，表示 Z 軸的旋轉。
 
 .. _class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL:
 
@@ -325,7 +325,7 @@ Enumerated value for the rotation of the Z axis.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_ALL** = ``3``
 
-Enumerated value for the unconstrained rotation.
+列舉值，表示無約束的旋轉。
 
 .. _class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM:
 
@@ -333,7 +333,7 @@ Enumerated value for the unconstrained rotation.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_CUSTOM** = ``4``
 
-Enumerated value for an optional rotation axis.
+可選旋轉軸對應的列舉值。
 
 .. rst-class:: classref-section-separator
 
@@ -355,7 +355,7 @@ Enumerated value for an optional rotation axis.
 - |void| **set_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_active**\ (\ )
 
-If ``true``, the **SkeletonModifier3D** will be processing.
+如果為 ``true``\ ，則 **SkeletonModifier3D** 將執行處理。
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +372,9 @@ If ``true``, the **SkeletonModifier3D** will be processing.
 - |void| **set_influence**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_influence**\ (\ )
 
-Sets the influence of the modification.
+設定修改的影響。
 
-\ **Note:** This value is used by :ref:`Skeleton3D<class_Skeleton3D>` to blend, so the **SkeletonModifier3D** should always apply only 100% of the result without interpolation.
+\ **注意：**\ 該值由 :ref:`Skeleton3D<class_Skeleton3D>` 用來混合，因此 **SkeletonModifier3D** 應始終僅應用結果的 100% 而不進行插值。
 
 .. rst-class:: classref-section-separator
 
@@ -393,9 +393,9 @@ Sets the influence of the modification.
 
 **已棄用：** Use :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` instead.
 
-Override this virtual method to implement a custom skeleton modifier. You should do things like get the :ref:`Skeleton3D<class_Skeleton3D>`'s current pose and apply the pose here.
+覆蓋該虛方法可以實作自訂骨架修改器。你應該在這裡執行取得 :ref:`Skeleton3D<class_Skeleton3D>` 的目前姿勢、應用姿勢之類的操作。
 
-\ :ref:`_process_modification()<class_SkeletonModifier3D_private_method__process_modification>` must not apply :ref:`influence<class_SkeletonModifier3D_property_influence>` to bone poses because the :ref:`Skeleton3D<class_Skeleton3D>` automatically applies influence to all bone poses set by the modifier.
+\ :ref:`_process_modification()<class_SkeletonModifier3D_private_method__process_modification>` 不得將 :ref:`influence<class_SkeletonModifier3D_property_influence>` 套用至骨骼姿勢，因為 :ref:`Skeleton3D<class_Skeleton3D>` 會自動將影響套用至修改器設定的所有骨骼姿勢。
 
 .. rst-class:: classref-item-separator
 
@@ -407,13 +407,13 @@ Override this virtual method to implement a custom skeleton modifier. You should
 
 |void| **_process_modification_with_delta**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__process_modification_with_delta>`
 
-Override this virtual method to implement a custom skeleton modifier. You should do things like get the :ref:`Skeleton3D<class_Skeleton3D>`'s current pose and apply the pose here.
+覆蓋該虛方法可以實作自訂骨架修改器。你應該在這裡執行取得 :ref:`Skeleton3D<class_Skeleton3D>` 的目前姿勢、應用姿勢之類的操作。
 
-\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` must not apply :ref:`influence<class_SkeletonModifier3D_property_influence>` to bone poses because the :ref:`Skeleton3D<class_Skeleton3D>` automatically applies influence to all bone poses set by the modifier.
+\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` 不得將 :ref:`influence<class_SkeletonModifier3D_property_influence>` 套用至骨骼姿勢，因為 :ref:`Skeleton3D<class_Skeleton3D>` 會自動將影響套用至修改器設定的所有骨骼姿勢。
 
-\ ``delta`` is passed from parent :ref:`Skeleton3D<class_Skeleton3D>`. See also :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+\ ``delta`` 是由父級 :ref:`Skeleton3D<class_Skeleton3D>` 傳入的。另見 :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`\ 。
 
-\ **Note:** This method may be called outside :ref:`Node._process()<class_Node_private_method__process>` and :ref:`Node._physics_process()<class_Node_private_method__physics_process>` with ``delta`` is ``0.0``, since the modification should be processed immediately after initialization of the :ref:`Skeleton3D<class_Skeleton3D>`.
+\ **注意：**\ 該方法可以在 :ref:`Node._process()<class_Node_private_method__process>` 和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 之外呼叫，\ ``delta`` 為 ``0.0``\ ，因為修改應該在 :ref:`Skeleton3D<class_Skeleton3D>` 初始化之後立即處理。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Override this virtual method to implement a custom skeleton modifier. You should
 
 |void| **_skeleton_changed**\ (\ old_skeleton\: :ref:`Skeleton3D<class_Skeleton3D>`, new_skeleton\: :ref:`Skeleton3D<class_Skeleton3D>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__skeleton_changed>`
 
-Called when the skeleton is changed.
+骨架發生改變時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Called when the skeleton is changed.
 
 |void| **_validate_bone_names**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__validate_bone_names>`
 
-Called when bone names and indices need to be validated, such as when entering the scene tree or changing skeleton.
+在骨骼名稱和索引需要驗證時呼叫，例如進入場景樹時或更改骨架時。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Called when bone names and indices need to be validated, such as when entering t
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonModifier3D_method_get_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node if it exists. Otherwise, returns ``null``.
+如果存在父級 :ref:`Skeleton3D<class_Skeleton3D>` 節點則將其回傳。否則，回傳 ``null``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,15 +14,15 @@ Blender 的 ``.blend`` 場景檔案格式的匯入器。
 說明
 ----
 
-Imports Blender scenes in the ``.blend`` file format through the glTF 2.0 3D import pipeline. This importer requires Blender to be installed by the user, so that it can be used to export the scene as glTF 2.0.
+通過 glTF 2.0 3D 匯入管道匯入使用 ``.blend`` 檔案格式的 Blender 場景。該匯入器要求使用者安裝 Blender，以便將場景匯出為 glTF 2.0。
 
-The location of the Blender binary is set via the :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` setting.
+Blender 可執行檔的位置是通過 :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` 來設定的。
 
-This importer is only used if :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` is enabled, otherwise ``.blend`` files present in the project folder are not imported.
+該匯入器僅在啟用 :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` 時使用，否則不會匯入專案資料夾中存在的 ``.blend`` 檔案。
 
-Blend import requires Blender 3.0.
+Blend 匯入需要 Blender 3.0。
 
-Internally, the EditorSceneFormatImporterBlend uses the Blender glTF "Use Original" mode to reference external textures.
+在內部，EditorSceneFormatImporterBlend 使用 Blender glTF“使用原始”模式來參照外部紋理。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

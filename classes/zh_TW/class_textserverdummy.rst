@@ -7,14 +7,14 @@ TextServerDummy
 
 **繼承：** :ref:`TextServerExtension<class_TextServerExtension>` **<** :ref:`TextServer<class_TextServer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-虛設的文字伺服器，無法算繪文字或管理字形。
+虛設的文字伺服器，無法渲染文字或管理字形。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-虛設的 :ref:`TextServer<class_TextServer>` 介面，不做任何事情。可以在不需要算繪文字時釋放記憶體，因為文字伺服器極其消耗資源。也可以用來比較複雜 GUI 的性能，檢查文字算繪帶來的影響。
+虛設的 :ref:`TextServer<class_TextServer>` 介面，不做任何事情。可以在不需要渲染文字時釋放記憶體，因為文字伺服器極其消耗資源。也可以用來比較複雜 GUI 的效能，檢查文字渲染帶來的影響。
 
 虛設的文字伺服器在專案開始後始終可用。存取方法如下：
 

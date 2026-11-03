@@ -217,9 +217,9 @@ CodeHighlighter
 
 |void| **add_color_region**\ (\ start_key\: :ref:`String<class_String>`, end_key\: :ref:`String<class_String>`, color\: :ref:`Color<class_Color>`, line_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeHighlighter_method_add_color_region>`
 
-Adds a color region (such as for comments or strings) from ``start_key`` to ``end_key``. Both keys should be symbols, and ``start_key`` must not be shared with other delimiters.
+新增從 ``start_key`` 到 ``end_key`` 的顏色區塊（例如注釋或字串）。兩個鍵都應該是符號，並且 ``start_key`` 不得與其他分隔符共享。
 
-If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_String>`, the region does not carry over to the next line.
+如果 ``line_only`` 為 ``true`` 或 ``end_key`` 為空 :ref:`String<class_String>`\ ，則該區塊不會延續到下一行。
 
 .. rst-class:: classref-item-separator
 

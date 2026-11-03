@@ -114,7 +114,7 @@ MeshLibrary
 
 使用給定的 ID 在庫中建立一個新項。
 
-你可以從 :ref:`get_last_unused_item_id()<class_MeshLibrary_method_get_last_unused_item_id>` 獲取一個未使用的 ID。
+你可以從 :ref:`get_last_unused_item_id()<class_MeshLibrary_method_get_last_unused_item_id>` 取得一個未使用的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ MeshLibrary
 
 :ref:`int<class_int>` **find_item_by_name**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_find_item_by_name>`
 
-Returns the first item with the given name, or ``-1`` if no item is found.
+回傳具有給定名稱的第一個項目，如果未找到任何項目，則回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Returns the first item with the given name, or ``-1`` if no item is found.
 
 :ref:`int<class_int>` **get_item_count**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_count>`
 
-Returns the number of items present in the library.
+回傳庫（library）中目前包含的項目數量。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Returns the number of items present in the library.
 
 :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>` **get_item_mesh_cast_shadow**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_mesh_cast_shadow>`
 
-Returns the item's shadow casting mode.
+回傳該項的陰影投射模式。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Returns the item's shadow casting mode.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_preview**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_preview>`
 
-在編輯器中運作時，返回生成的專案預覽（等軸透視中的 3D 算繪）。在一個運作的項目中使用時，返回手動定義的專案預覽，該專案預覽可以使用 :ref:`set_item_preview()<class_MeshLibrary_method_set_item_preview>` 設定。如果在一個運作的專案中，沒有手動設定預覽，則返回一個空的 :ref:`Texture2D<class_Texture2D>`\ 。
+在編輯器中運作時，返回生成的專案預覽（等軸透視中的 3D 渲染）。在一個運作的項目中使用時，返回手動定義的專案預覽，該專案預覽可以使用 :ref:`set_item_preview()<class_MeshLibrary_method_set_item_preview>` 設定。如果在一個運作的專案中，沒有手動設定預覽，則返回一個空的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns the item's shadow casting mode.
 
 :ref:`int<class_int>` **get_last_unused_item_id**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_last_unused_item_id>`
 
-獲取新項未使用的 ID。
+取得新項未使用的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Returns the item's shadow casting mode.
 
 |void| **set_item_mesh_cast_shadow**\ (\ id\: :ref:`int<class_int>`, shadow_casting_setting\: :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_mesh_cast_shadow>`
 
-Sets the item's shadow casting mode to ``shadow_casting_setting``.
+將該項的陰影投射模式設定為 ``shadow_casting_setting``\ 。
 
 .. rst-class:: classref-item-separator
 

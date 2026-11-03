@@ -30,7 +30,7 @@ MultiplayerPeer
 教學
 ----
 
-- :doc:`高級多人遊戲 <../tutorials/networking/high_level_multiplayer>`
+- :doc:`進階多人遊戲 <../tutorials/networking/high_level_multiplayer>`
 
 .. rst-class:: classref-reftable-group
 
@@ -244,9 +244,9 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 - |void| **set_transfer_channel**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_transfer_channel**\ (\ )
 
-用於發送封包的通道。許多網路 API，例如 ENet 和 WebRTC，允許建立多個獨立的通道，這些通道的行為在某種程度上類似於單獨的連接。這意味著可靠資料只會阻止該通道上其他封包的傳遞，並且排序將僅與正在發送封包的通道有關。使用不同的通道發送\ **不同且獨立的**\ 狀態更新，是優化快節奏遊戲的網路使用和減少延遲的常用方法。
+用於發送封包的通道。許多網路 API，例如 ENet 和 WebRTC，允許建立多個獨立的通道，這些通道的行為在某種程度上類似於單獨的連接。這意味著可靠資料只會阻止該通道上其他封包的傳遞，並且排序將僅與正在發送封包的通道有關。使用不同的通道發送\ **不同且獨立的**\ 狀態更新，是最佳化快節奏遊戲的網路使用和減少延遲的常用方法。
 
-\ **注意：**\ 預設通道（\ ``0``\ ）實際上作為 3 個獨立的通道工作（每種 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` 一個），因此預設情況下，\ :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` 和 :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` 不會相互互動。請參閱特定的網路 API 文件（例如 ENet 或 WebRTC），以瞭解如何正確地設置通道。
+\ **注意：**\ 預設通道（\ ``0``\ ）實際上作為 3 個獨立的通道工作（每種 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` 一個），因此預設情況下，\ :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` 和 :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` 不會相互互動。請參閱特定的網路 API 文件（例如 ENet 或 WebRTC），以瞭解如何正確地設定通道。
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 - |void| **set_transfer_mode**\ (\ value\: :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ )
 - :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **get_transfer_mode**\ (\ )
 
-The manner in which to send packets to the target peer. See the :ref:`set_target_peer()<class_MultiplayerPeer_method_set_target_peer>` method.
+向目標對等端發送封包的方式。見 :ref:`set_target_peer()<class_MultiplayerPeer_method_set_target_peer>` 方法。
 
 .. rst-class:: classref-section-separator
 
@@ -316,7 +316,7 @@ The manner in which to send packets to the target peer. See the :ref:`set_target
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **get_connection_status**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_connection_status>`
 
-Returns the current state of the connection.
+回傳連接的目前狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Returns the current state of the connection.
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **get_packet_mode**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_packet_mode>`
 
-Returns the transfer mode the remote peer used to send the next available packet. See :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`.
+回傳遠端對等端用於發送下一個可用封包的傳輸模式。請參閱 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Returns the transfer mode the remote peer used to send the next available packet
 
 :ref:`bool<class_bool>` **is_server_relay_supported**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_is_server_relay_supported>`
 
-Returns ``true`` if the server can act as a relay in the current configuration. That is, if the higher level :ref:`MultiplayerAPI<class_MultiplayerAPI>` should notify connected clients of other peers, and implement a relay protocol to allow communication between them.
+如果伺服器在目前設定中可以充當中繼者，則回傳 ``true``\ （也就是說，如果更進階別的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 應該通知連接的用戶端有其他對等端，並實作一個中繼協議以允許它們之間的通信）。
 
 .. rst-class:: classref-item-separator
 

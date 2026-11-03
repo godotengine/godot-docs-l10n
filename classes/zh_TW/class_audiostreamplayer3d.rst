@@ -330,9 +330,9 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-Decides in which step the Doppler effect should be calculated.
+決定在哪一步計算多普勒效應。
 
-\ **Note:** If :ref:`doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not :ref:`DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` but the current :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` has doppler tracking disabled, the Doppler effect will be heard but will not take the movement of the current listener into account. If accurate Doppler effect is desired, doppler tracking should be enabled on both the **AudioStreamPlayer3D** and the current :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>`.
+\ **注意：**\ 如果 :ref:`doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` 的值不是 :ref:`DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`\ ，且目前 :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` 停用了多普勒追蹤，則多普勒效應會被聽到，但不會考慮目前監聽器的移動。如果需要精確的多普勒效應，則應在 **AudioStreamPlayer3D** 和目前 :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` 上同時啟用多普勒追蹤。
 
 .. rst-class:: classref-item-separator
 

@@ -73,7 +73,7 @@ If enabled,the particle starts with the velocity defined by this node.
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_COLOR** = ``8``
 
-If enabled, the particle starts with the color defined by this node.
+Si activé, la particule commence avec la couleur définie par ce nœud.
 
 .. _class_VisualShaderNodeParticleEmit_constant_EMIT_FLAG_CUSTOM:
 
@@ -81,7 +81,7 @@ If enabled, the particle starts with the color defined by this node.
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_CUSTOM** = ``16``
 
-If enabled, the particle starts with the ``CUSTOM`` data defined by this node.
+Si activé, la particule commence avec les données ``CUSTOM`` définies par ce nœud.
 
 .. rst-class:: classref-section-separator
 

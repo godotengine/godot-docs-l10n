@@ -18,7 +18,7 @@ Shader
 
 用 Godot 著色語言實作的自訂著色器程式，使用 ``.gdshader`` 副檔名保存。
 
-這個類由 :ref:`ShaderMaterial<class_ShaderMaterial>` 使用，能夠讓你編寫算繪可視專案或更新粒子資訊時的自定義行為。詳細解釋和用法請參考下列教學連結。
+這個類由 :ref:`ShaderMaterial<class_ShaderMaterial>` 使用，能夠讓你編寫渲染可視專案或更新粒子資訊時的自訂行為。詳細解釋和用法請參考下列教學連結。
 
 .. rst-class:: classref-introduction-group
 
@@ -120,7 +120,7 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_TEXTURE_BLIT** = ``5``
 
-Mode used for drawing to DrawableTexture resources via blit calls.
+用於通過位塊傳輸（blit）呼叫繪製到 DrawableTexture 資源的模式。
 
 .. rst-class:: classref-section-separator
 
@@ -187,9 +187,9 @@ Mode used for drawing to DrawableTexture resources via blit calls.
 
 :ref:`Array<class_Array>` **get_shader_uniform_list**\ (\ get_groups\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Shader_method_get_shader_uniform_list>`
 
-Returns the list of shader uniforms that can be assigned to a :ref:`ShaderMaterial<class_ShaderMaterial>`, for use with :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` and :ref:`ShaderMaterial.get_shader_parameter()<class_ShaderMaterial_method_get_shader_parameter>`. The parameters returned are contained in dictionaries in a similar format to the ones returned by :ref:`Object.get_property_list()<class_Object_method_get_property_list>`.
+回傳可以賦值給 :ref:`ShaderMaterial<class_ShaderMaterial>` 的著色器 uniform 清單，可用於 :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` 和 :ref:`ShaderMaterial.get_shader_parameter()<class_ShaderMaterial_method_get_shader_parameter>`\ 。回傳的參數包含在字典內，與 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 回傳的格式類似。
 
-If argument ``get_groups`` is ``true``, parameter grouping hints are also included in the list.
+如果參數 ``get_groups`` 為 ``true``\ ，則清單中還會包含參數分組提示。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ If argument ``get_groups`` is ``true``, parameter grouping hints are also includ
 
 |void| **inspect_native_shader_code**\ (\ ) :ref:`🔗<class_Shader_method_inspect_native_shader_code>`
 
-Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also :ref:`Material.inspect_native_shader_code()<class_Material_method_inspect_native_shader_code>`.
+僅在編輯器中執行時可用。打開一個彈出視窗，其中視覺化生成的著色器程式碼，包括所有變體和內部著色器程式碼。另見 :ref:`Material.inspect_native_shader_code()<class_Material_method_inspect_native_shader_code>`\ 。
 
 .. rst-class:: classref-item-separator
 

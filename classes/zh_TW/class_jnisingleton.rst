@@ -50,7 +50,7 @@ JNISingleton 僅在 Android 匯出中實作。它用於從用 Java 或 Kotlin �
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JNISingleton_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the JNISingleton's Java methods.
+如果給定的 ``method`` 名存在於 JNISingleton 的 Java 方法中，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

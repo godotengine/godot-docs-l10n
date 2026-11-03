@@ -25,7 +25,7 @@ GridContainer
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `作業系統測試演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -90,7 +90,7 @@ GridContainer
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_GridContainer_theme_constant_h_separation>`
 
-The horizontal separation of child nodes.
+子節點的水平分隔量。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The horizontal separation of child nodes.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_GridContainer_theme_constant_v_separation>`
 
-The vertical separation of child nodes.
+子節點的垂直分隔量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

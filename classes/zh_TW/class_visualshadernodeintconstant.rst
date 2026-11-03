@@ -14,7 +14,7 @@ VisualShaderNodeIntConstant
 說明
 ----
 
-Translated to ``int`` in the shader language.
+翻譯為著色器語言中的 ``int``\ 。
 
 .. rst-class:: classref-reftable-group
 

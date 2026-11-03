@@ -14,11 +14,11 @@ TextureButton
 說明
 ----
 
-**TextureButton** has the same functionality as :ref:`Button<class_Button>`, except it uses sprites instead of Godot's :ref:`Theme<class_Theme>` resource. It is faster to create, but it doesn't support localization like more complex :ref:`Control<class_Control>`\ s.
+**TextureButton** 的功能與 :ref:`Button<class_Button>` 相同，只是它使用精靈而不是 Godot 的 :ref:`Theme<class_Theme>` 主題資源。它的建立速度更快，但它不像更複雜的 :ref:`Control<class_Control>` 那樣支援在地化。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另見 :ref:`BaseButton<class_BaseButton>`\ ，它包含了與該節點相關的通用屬性和方法。
 
-\ **Note:** Setting a texture for the "normal" state (:ref:`texture_normal<class_TextureButton_property_texture_normal>`) is recommended. If :ref:`texture_normal<class_TextureButton_property_texture_normal>` is not set, the **TextureButton** will still receive input events and be clickable, but the user will not be able to see it unless they activate another one of its states with a texture assigned (e.g., hover over it to show :ref:`texture_hover<class_TextureButton_property_texture_hover>`).
+\ **注意：**\ 建議設定“正常”狀態的紋理（\ :ref:`texture_normal<class_TextureButton_property_texture_normal>`\ ）。如果未設定 :ref:`texture_normal<class_TextureButton_property_texture_normal>`\ ，\ **TextureButton** 仍會接受輸入事件、仍然可以點選，但是使用者無法看到這個按鈕，除非設定了其他狀態的紋理（例如懸停時會顯示 :ref:`texture_hover<class_TextureButton_property_texture_hover>`\ ）。
 
 .. rst-class:: classref-introduction-group
 
@@ -216,7 +216,7 @@ enum **StretchMode**: :ref:`🔗<enum_TextureButton_StretchMode>`
 - |void| **set_click_mask**\ (\ value\: :ref:`BitMap<class_BitMap>`\ )
 - :ref:`BitMap<class_BitMap>` **get_click_mask**\ (\ )
 
-用於點擊偵測的純黑白 :ref:`BitMap<class_BitMap>` 圖像。在遮罩上，白色圖元代表按鈕的可點擊區域。可用它來建立具有彎曲形狀的按鈕。
+用於點選偵測的純黑白 :ref:`BitMap<class_BitMap>` 影像。在遮罩上，白色圖元代表按鈕的可點選區域。可用它來建立具有彎曲形狀的按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ enum **StretchMode**: :ref:`🔗<enum_TextureButton_StretchMode>`
 - |void| **set_texture_disabled**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_disabled**\ (\ )
 
-Texture to display when the node is disabled. See :ref:`BaseButton.disabled<class_BaseButton_property_disabled>`. If not assigned, the **TextureButton** displays :ref:`texture_normal<class_TextureButton_property_texture_normal>` instead.
+節點處於停用狀態時顯示的紋理。見 :ref:`BaseButton.disabled<class_BaseButton_property_disabled>`\ 。未賦值時 **TextureButton** 會顯示 :ref:`texture_normal<class_TextureButton_property_texture_normal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Texture to display when the node is disabled. See :ref:`BaseButton.disabled<clas
 - |void| **set_texture_focused**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_focused**\ (\ )
 
-Texture to *overlay on the base texture* when the node has mouse or keyboard focus. Because :ref:`texture_focused<class_TextureButton_property_texture_focused>` is displayed on top of the base texture, a partially transparent texture should be used to ensure the base texture remains visible. A texture that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a fully transparent texture of any size. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+節點持有滑鼠或鍵盤焦點時\ *覆蓋在基礎紋理上*\ 的紋理。因為 :ref:`texture_focused<class_TextureButton_property_texture_focused>` 會在基礎紋理上方顯示，所以要讓基礎紋理可見就應該使用半透明紋理。這種情況下比較適用代表輪廓或者底線的紋理。要停用焦點的視覺效果，請分配一張任意大小的全透明紋理。請注意，停用焦點的視覺效果不利於鍵盤/控制器的導航，所以出於無障礙存取的原因並不建議這麼做。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Texture to *overlay on the base texture* when the node has mouse or keyboard foc
 - |void| **set_texture_hover**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_hover**\ (\ )
 
-Texture to display when the mouse hovers over the node. If not assigned, the **TextureButton** displays :ref:`texture_normal<class_TextureButton_property_texture_normal>` instead when hovered over.
+滑鼠懸停在節點上時顯示的紋理。未賦值時 **TextureButton** 處於懸停狀態會顯示 :ref:`texture_normal<class_TextureButton_property_texture_normal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Texture to display when the mouse hovers over the node. If not assigned, the **T
 - |void| **set_texture_normal**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_normal**\ (\ )
 
-節點\ **不處於**\ 禁用、懸停、按下狀態時，預設顯示的紋理。該紋理仍會在聚焦狀態下顯示，上層繪製的是 :ref:`texture_focused<class_TextureButton_property_texture_focused>`\ 。
+節點\ **不處於**\ 停用、懸停、按下狀態時，預設顯示的紋理。該紋理仍會在聚焦狀態下顯示，上層繪製的是 :ref:`texture_focused<class_TextureButton_property_texture_focused>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Texture to display when the mouse hovers over the node. If not assigned, the **T
 - |void| **set_texture_pressed**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_pressed**\ (\ )
 
-Texture to display on mouse down over the node, if the node has keyboard focus and the player presses the Enter key or if the player presses the :ref:`BaseButton.shortcut<class_BaseButton_property_shortcut>` key. If not assigned, the **TextureButton** displays :ref:`texture_hover<class_TextureButton_property_texture_hover>` instead when pressed.
+滑鼠在節點上按下時顯示的紋理，要求節點持有鍵盤焦點且玩家按下了Enter 鍵或 :ref:`BaseButton.shortcut<class_BaseButton_property_shortcut>` 鍵。未賦值時 **TextureButton** 處於按下狀態會顯示 :ref:`texture_hover<class_TextureButton_property_texture_hover>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

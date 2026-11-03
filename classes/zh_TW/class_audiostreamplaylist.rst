@@ -14,7 +14,7 @@ AudioStreamPlaylist
 說明
 ----
 
-An audio stream that can play back sub-streams in sequence. Streams can be added to the Playlist with :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>`, and shuffled with :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
+一種可以按順序播放子音訊流的音訊流。可以通過 :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>` 將音訊流新增到播放清單中，且可以使用 :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>` 進行亂序播放。
 
 .. rst-class:: classref-introduction-group
 

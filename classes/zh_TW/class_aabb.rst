@@ -12,13 +12,13 @@ AABB
 說明
 ----
 
-The **AABB** built-in :ref:`Variant<class_Variant>` type represents an axis-aligned bounding box in a 3D space. It is defined by its :ref:`position<class_AABB_property_position>` and :ref:`size<class_AABB_property_size>`, which are :ref:`Vector3<class_Vector3>`. It is frequently used for fast overlap tests (see :ref:`intersects()<class_AABB_method_intersects>`). Although **AABB** itself is axis-aligned, it can be combined with :ref:`Transform3D<class_Transform3D>` to represent a rotated or skewed bounding box.
+**AABB** 內建 :ref:`Variant<class_Variant>` 型別表示 3D 空間中的軸對齊邊界框。它由其 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 定義，皆為 :ref:`Vector3<class_Vector3>` 型別。它經常被用於快速重疊測試（參見 :ref:`intersects()<class_AABB_method_intersects>`\ ）。雖然 **AABB** 本身是軸對齊的，但它可以與 :ref:`Transform3D<class_Transform3D>` 組合來表示旋轉或傾斜的邊界框。
 
-It uses floating-point coordinates. The 2D counterpart to **AABB** is :ref:`Rect2<class_Rect2>`. There is no version of **AABB** that uses integer coordinates.
+它使用浮點座標。\ **AABB** 的 2D 等效體是 :ref:`Rect2<class_Rect2>`\ 。沒有使用整數座標的 **AABB** 版本。
 
-\ **Note:** Negative values for :ref:`size<class_AABB_property_size>` are not supported. With negative size, most **AABB** methods do not work correctly. Use :ref:`abs()<class_AABB_method_abs>` to get an equivalent **AABB** with a non-negative size.
+\ **注意：**\ 不支援負的 :ref:`size<class_AABB_property_size>`\ 。對於負大小，大多數 **AABB** 方法都無法正常工作。使用 :ref:`abs()<class_AABB_method_abs>` 取得具有非負大小的等效 **AABB**\ 。
 
-\ **Note:** In a boolean context, an **AABB** evaluates to ``false`` if both :ref:`position<class_AABB_property_position>` and :ref:`size<class_AABB_property_size>` are zero (equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`). Otherwise, it always evaluates to ``true``.
+\ **注意：**\ 在布林情境中，如果 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 均為零（等於 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ ），則 **AABB** 的計算結果為 ``false``\ 。否則，它的計算結果始終為 ``true``\ 。
 
 .. note::
 
@@ -361,7 +361,7 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is :ref:`Rect
 
 :ref:`Vector3<class_Vector3>` **get_endpoint**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AABB_method_get_endpoint>`
 
-Returns the position of one of the 8 vertices that compose this bounding box. With an ``idx`` of ``0`` this is the same as :ref:`position<class_AABB_property_position>`, and an ``idx`` of ``7`` is the same as :ref:`end<class_AABB_property_end>`.
+回傳組成該邊界框的 8 個頂點之一的位置。當 ``idx`` 為 ``0`` 時，這與 :ref:`position<class_AABB_property_position>` 相同；\ ``idx`` 為 ``7`` 時，與 :ref:`end<class_AABB_property_end>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Returns the position of one of the 8 vertices that compose this bounding box. Wi
 
 :ref:`AABB<class_AABB>` **grow**\ (\ by\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_AABB_method_grow>`
 
-傳回在所有方向上以 ``by`` 數值擴張後的此邊界框副本。若 ``by`` 為負，則改為收縮。
+回傳該邊界框的副本，該邊界框在所有邊上擴充給定量 ``by``\ 。負數會縮小該框。
 
 
 .. tabs::
@@ -531,22 +531,22 @@ Returns the position of one of the 8 vertices that compose this bounding box. Wi
  .. code-tab:: gdscript
 
     var a = AABB(Vector3(4, 4, 4), Vector3(8, 8, 8)).grow(4)
-    print(a.position) # Prints (0.0, 0.0, 0.0)
-    print(a.size)     # Prints (16.0, 16.0, 16.0)
+    print(a.position) # 輸出 (0.0, 0.0, 0.0)
+    print(a.size)     # 輸出 (16.0, 16.0, 16.0)
 
     var b = AABB(Vector3(0, 0, 0), Vector3(8, 4, 2)).grow(2)
-    print(b.position) # Prints (-2.0, -2.0, -2.0)
-    print(b.size)     # Prints (12.0, 8.0, 6.0)
+    print(b.position) # 輸出 (-2.0, -2.0, -2.0)
+    print(b.size)     # 輸出 (12.0, 8.0, 6.0)
 
  .. code-tab:: csharp
 
     var a = new Aabb(new Vector3(4, 4, 4), new Vector3(8, 8, 8)).Grow(4);
-    GD.Print(a.Position); // Prints (0, 0, 0)
-    GD.Print(a.Size);     // Prints (16, 16, 16)
+    GD.Print(a.Position); // 輸出 (0, 0, 0)
+    GD.Print(a.Size);     // 輸出 (16, 16, 16)
 
     var b = new Aabb(new Vector3(0, 0, 0), new Vector3(8, 4, 2)).Grow(2);
-    GD.Print(b.Position); // Prints (-2, -2, -2)
-    GD.Print(b.Size);     // Prints (12, 8, 6)
+    GD.Print(b.Position); // 輸出 (-2, -2, -2)
+    GD.Print(b.Size);     // 輸出 (12, 8, 6)
 
 
 
@@ -560,9 +560,9 @@ Returns the position of one of the 8 vertices that compose this bounding box. Wi
 
 :ref:`bool<class_bool>` **has_point**\ (\ point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_AABB_method_has_point>`
 
-若此邊界框包含給定的 ``point``\ ，則回傳 ``true``\ 。依慣例，恰位於右側、上側與後側邊緣的點\ **不**\ 會被計入。
+如果該邊界框包含給定的 ``point``\ ，則回傳 ``true``\ 。依照慣例，\ **不**\ 包括正好位於右側、頂部和前側的點。
 
-\ **注意：** 對於\ *大小為負值*\ 的 **AABB**\ ，此方法不可靠；請先使用 :ref:`abs()<class_AABB_method_abs>` 取得有效的邊界框。
+\ **注意：**\ 對於具有\ *負* :ref:`size<class_AABB_property_size>` 的 **AABB**\ ，該方法並不可靠。請首先使用 :ref:`abs()<class_AABB_method_abs>` 取得一個有效的邊界框。
 
 .. rst-class:: classref-item-separator
 

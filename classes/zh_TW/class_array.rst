@@ -12,7 +12,7 @@ Array
 說明
 ----
 
-An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
+一種陣列資料結構，預設情況下可以包含任意 :ref:`Variant<class_Variant>`\ （變體）型別元素的序列。也可以通過建立\ *型別化陣列*\ （typed array）來將值限制為特定的型別。元素通過從 ``0`` 開始的數字索引進行存取。負數索參照於從後往前計數（\ ``-1`` 是最後一個元素，\ ``-2`` 是倒數第二個，以此類推）。
 
 
 .. tabs::
@@ -49,13 +49,13 @@ An array data structure that can contain a sequence of elements of any :ref:`Var
 
 
 
-\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
+\ **注意：** 陣列始終通過\ **參照**\ （reference）傳遞。如果想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_Array_method_duplicate>` 方法。
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **注意：** 在遍歷陣列時刪除元素是\ **不**\ 被支援的，這會導致不可預測的行為。
 
-\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+\ **注意：** 在布林情境中，如果陣列為空（\ ``[]``\ ），它的求值結果為 ``false``\ 。否則，陣列的求值結果始終為 ``true``\ 。
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **緊縮陣列、型別化陣列和無型別陣列之間的區別：** 與相同型別的型別化陣列相比，緊縮陣列（Packed arrays，例如 :ref:`PackedInt64Array<class_PackedInt64Array>` 對比 ``Array[int]``\ ）通常在遍歷和修改時速度更快，並且佔用的記憶體更少。但缺點是緊縮陣列不夠靈活，因為它們沒有提供像 :ref:`map()<class_Array_method_map>` 這樣豐富的便捷方法。而型別化陣列在遍歷和修改時，又比無型別陣列更快。
 
 .. note::
 
@@ -600,26 +600,34 @@ An array data structure that can contain a sequence of elements of any :ref:`Var
 
 :ref:`int<class_int>` **bsearch_custom**\ (\ value\: :ref:`Variant<class_Variant>`, func\: :ref:`Callable<class_Callable>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch_custom>`
 
-回傳已排序陣列中 ``value`` 的索引；若找不到，則使用自訂比較函式 ``func`` 計算 ``value`` 應插入的位置以維持排序。內部演算法同樣為\ `二分搜尋 <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
+回傳 ``value``\ （目標值）在已排序陣列中的索引。如果無法在陣列中找到該值，則回傳為了保持陣列有序，\ ``value`` 應該被插入的位置（使用 ``func`` 來進行比較）。該算法使用的是\ `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
 
-\ ``func`` 的呼叫方式與 :ref:`sort_custom()<class_Array_method_sort_custom>` 相同，每次會傳入一個陣列元素與 ``value`` 供比較；若該陣列元素應位於 ``value``\ *之後*\ 則回傳 ``true``\ ，否則回傳 ``false``\ 。
+與 :ref:`sort_custom()<class_Array_method_sort_custom>` 類似，\ ``func`` 會根據需要被呼叫多次，接收一個陣列元素和 ``value`` 作為參數。如果該陣列元素應該排在 ``value`` 的後面，函式應回傳 ``true``\ ，否則應回傳 ``false``\ 。
 
-若 ``before`` 為 ``true``\ （預設），傳回索引會位於所有與 ``value`` 相等之元素之前。
+如果 ``before`` 為 ``true``\ （預設情況），回傳的索引會排在陣列中所有與 ``value`` 相等的現有元素\ *behind* 。
 
 ::
 
     func sort_by_amount(a, b):
-        return a[1] < b[1]
+        if a[1] < b[1]:
+            return true
+        return false
 
     func _ready():
         var my_items = [["Tomato", 2], ["Kiwi", 5], ["Rice", 9]]
-        var apple  = ["Apple", 5]
-        var banana = ["Banana", 5]
-        my_items.insert(my_items.bsearch_custom(apple,  sort_by_amount, true),  apple)  # 插入 Apple 於 Kiwi 之前
-        my_items.insert(my_items.bsearch_custom(banana, sort_by_amount, false), banana) # 插入 Banana 於 Kiwi 之後
-        print(my_items) # 印出 [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
 
-\ **注意：**\ 在\ *未排序*\ 的陣列上呼叫 :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` 會得到不可預期的結果，請先搭配 :ref:`sort_custom()<class_Array_method_sort_custom>` 使用。
+        var apple = ["Apple", 5]
+        # "Apple" 被插入在 "Kiwi" 之前。
+        my_items.insert(my_items.bsearch_custom(apple, sort_by_amount, true), apple)
+
+        var banana = ["Banana", 5]
+        # "Banana" 被插入在 "Kiwi" 之後。
+        my_items.insert(my_items.bsearch_custom(banana, sort_by_amount, false), banana)
+
+        # 輸出 [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
+        print(my_items)
+
+\ **注意：**\ 在 *unsorted*\ 陣列上呼叫 :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` 會導致意外行為。在呼叫此方法之前，請先使用 ``func`` 配合 :ref:`sort_custom()<class_Array_method_sort_custom>`\ （進行自訂排序）。
 
 .. rst-class:: classref-item-separator
 
@@ -673,9 +681,9 @@ An array data structure that can contain a sequence of elements of any :ref:`Var
 
 :ref:`Array<class_Array>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Array_method_duplicate_deep>`
 
-Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+深度複製該陣列，類似 :ref:`duplicate()<class_Array_method_duplicate>` 傳參 ``(true)``\ ，但能夠額外控制子資源的處理方式。
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` 必須是 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` 中的一個值。預設情況下，只會（遞歸）複製內部資源。
 
 .. rst-class:: classref-item-separator
 
@@ -687,11 +695,11 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 |void| **erase**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_erase>`
 
-尋找並移除陣列中第一個與 ``value`` 相符的元素；若不存在則不做任何事。若要依索引移除元素，請改用 :ref:`remove_at()<class_Array_method_remove_at>`\ 。
+尋找並從陣列中移除 ``value`` 的第一個匹配值。如果陣列中不存在 ``value``\ ，則甚麼也不會發生。要通過索引移除元素，請改用 :ref:`remove_at()<class_Array_method_remove_at>`\ 。
 
-\ **注意：**\ 此方法會將被移除位置之後的所有元素索引往前平移，在大型陣列上可能造成明顯開銷。
+\ **注意：**\ 該方法將移除的 ``value`` 後每個元素的索引移回一位，這可能會產生明顯的效能成本，尤其是在較大的陣列上。
 
-\ **注意：**\ 在迴圈遍歷陣列時同時移除元素並不被支援，可能導致不可預期的行為。
+\ **注意：**\ 在迭代陣列時移除元素\ **不**\ 受支援，並且將導致不可預測的行為。
 
 .. rst-class:: classref-item-separator
 
@@ -703,9 +711,9 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 |void| **fill**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_fill>`
 
-將陣列中的所有元素皆設成指定的 ``value``\ 。
+將該陣列中的所有元素都設定為給定的 ``value``\ 。
 
-常與 :ref:`resize()<class_Array_method_resize>` 搭配，用於建立指定大小並已初始化的陣列：
+該方法通常與 :ref:`resize()<class_Array_method_resize>` 一起使用，用於建立給定大小的陣列並對其元素進行初始化：
 
 
 .. tabs::
@@ -715,18 +723,18 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
     var array = []
     array.resize(5)
     array.fill(2)
-    print(array) # 印出 [2, 2, 2, 2, 2]
+    print(array) # 輸出 [2, 2, 2, 2, 2]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = [];
     array.Resize(5);
     array.Fill(2);
-    GD.Print(array); // 印出 [2, 2, 2, 2, 2]
+    GD.Print(array); // 輸出 [2, 2, 2, 2, 2]
 
 
 
-\ **注意：**\ 若 ``value`` 為參照型別（衍生自 :ref:`Object<class_Object>`\ 、\ **Array**\ 、\ :ref:`Dictionary<class_Dictionary>`\ …），整個陣列將會持有同一個物件的參照，而非複本。
+\ **注意：**\ 如果 ``value`` 是通過參照傳遞的 :ref:`Variant<class_Variant>`\ （\ :ref:`Object<class_Object>` 派生類、\ **Array**\ 、\ :ref:`Dictionary<class_Dictionary>` 等），則會用同一個 ``value`` 的參照填充該陣列，即不會建立副本。
 
 .. rst-class:: classref-item-separator
 
@@ -781,11 +789,11 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+回傳陣列中使得 ``method`` 回傳 ``true`` 的\ **第一個**\ 元素的索引，若元素不存在則回傳 ``-1``\ 。搜尋的起始位置可以由 ``from`` 指定，搜尋將繼續直至陣列結束。
 
-\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
+\ ``method`` 是可呼叫物件，接受陣列元素，回傳的是 :ref:`bool<class_bool>`\ 。
 
-\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
+\ **注意：**\ 如果你只想知道陣列中是否包含\ *任何*\ 能夠滿足 ``method`` 的東西，請使用 :ref:`any()<class_Array_method_any>`\ 。
 
 
 .. tabs::
@@ -796,14 +804,14 @@ Returns the index of the **first** element in the array that causes ``method`` t
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # 輸出 2
 
-    # Another example using `bind()` to pass an additional parameter:
+    # 另一個使用 `bind()` 傳遞額外參數的範例：
     func is_specific_number(number, expected):
         return number == expected
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # 輸出 2
 
 
 
@@ -831,9 +839,9 @@ Returns the index of the **first** element in the array that causes ``method`` t
 
 :ref:`Variant<class_Variant>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Array_method_get>`
 
-Returns the element at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``null``.
+回傳陣列中索引為 ``index`` 的元素。如果 ``index`` 越界或為負數，則該方法失敗並回傳 ``null``\ 。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+該方法類似（但不等同）於 ``[]`` 運算符。最顯著的區別就是從編輯器中執行時，該方法失敗不會暫停專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -922,9 +930,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Array_method_hash>`
 
-Returns a hashed 32-bit integer value representing the array and its contents.
+回傳代表該陣列及其內容的雜湊 32 位元整數值。
 
-\ **Note:** Arrays with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. On the contrary, arrays with different hash values are guaranteed to be different.
+\ **注意：**\ 由於雜湊碰撞的緣故，雜湊相同的陣列\ *不*\ 保證相同。反之，雜湊不同的陣列保證不同。
 
 .. rst-class:: classref-item-separator
 
@@ -936,11 +944,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`int<class_int>` **insert**\ (\ position\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_insert>`
 
-在索引 ``position`` 處插入新元素 (``value``)。合法範圍為 0 到陣列 :ref:`size()<class_Array_method_size>` 之間；若為負值則代表自陣列尾端反向計數。
+在陣列中給定索引（\ ``position``\ ）處插入新元素（\ ``value``\ ）。\ ``position`` 應介於 ``0`` 和陣列的 :ref:`size()<class_Array_method_size>` 之間。如果為負數，則認為 ``position`` 為相對於陣列結尾的索引。
 
-成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；失敗時則回傳其他 :ref:`Error<enum_@GlobalScope_Error>` 常數。
+如果成功，則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該方法失敗，則回傳其他 :ref:`Error<enum_@GlobalScope_Error>` 常數之一。
 
-\ **注意：**\ 插入後，\ ``position`` 之後的所有元素索引都需往後平移，對大型陣列可能造成明顯效能成本。
+\ **注意：**\ ``position`` 之後的每個元素的索引都需要向前移動，這可能會產生明顯的效能成本，尤其是在較大的陣列上。
 
 .. rst-class:: classref-item-separator
 
@@ -1023,9 +1031,9 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`Array<class_Array>` **map**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
 
-對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，並以其回傳值產生新陣列。
+為陣列中的每個元素呼叫給定的 :ref:`Callable<class_Callable>` 並回傳一個新陣列，其中填充了該 ``method`` 回傳的值。
 
-\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素），並可回傳任何型別的 :ref:`Variant<class_Variant>`\ 。
+\ ``method`` 應該採用一個 :ref:`Variant<class_Variant>` 參數（目前陣列元素）並且可以回傳任意 :ref:`Variant<class_Variant>`\ 。
 
 ::
 
@@ -1033,12 +1041,12 @@ Returns a hashed 32-bit integer value representing the array and its contents.
         return number * 2
 
     func _ready():
-        print([1, 2, 3].map(double)) # 印出 [2, 4, 6]
+        print([1, 2, 3].map(double)) # 輸出 [2, 4, 6]
 
-        # 與上例相同，但以 Lambda 撰寫。
+        # 與上面相同，但使用 lambda 函式。
         print([1, 2, 3].map(func(element): return element * 2))
 
-另請參閱 :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`reduce()<class_Array_method_reduce>`\ 、\ :ref:`any()<class_Array_method_any>` 與 :ref:`all()<class_Array_method_all>`\ 。
+另請參見 :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`reduce()<class_Array_method_reduce>`\ 、\ :ref:`any()<class_Array_method_any>` 和 :ref:`all()<class_Array_method_all>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1105,9 +1113,9 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`Variant<class_Variant>` **pop_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_pop_at>`
 
-移除並回傳索引為 ``position`` 的元素。若 ``position`` 為負值，則自陣列尾端反向計算。若陣列為空則回傳 ``null``\ ；若索引越界，則同時輸出錯誤訊息。
+移除並回傳陣列中位於 ``position`` 索引處的元素。如果 ``position`` 為負數，則認為是相對於該陣列末尾的值。如果陣列為空，則回傳 ``null``\ ；如果 ``position`` 超出範圍，還會生成錯誤訊息。
 
-\ **注意：**\ 移除後，\ ``position`` 之後的所有元素索引都需往前平移，在大型陣列上可能造成明顯效能成本。
+\ **注意：**\ 該方法將 ``position`` 之後每個元素的索引向前移動，這可能會產生明顯的效能成本，尤其是在較大的陣列上。
 
 .. rst-class:: classref-item-separator
 
@@ -1171,9 +1179,9 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`Variant<class_Variant>` **reduce**\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
 
-對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，以 ``accum`` 累計並於結束後回傳。
+為陣列中的每個元素呼叫給定的 :ref:`Callable<class_Callable>`\ ，將結果累積在 ``accum`` 中，然後將其回傳。
 
-\ ``method`` 會接收兩個參數：目前的累計值 ``accum`` 與目前元素。若 ``accum`` 為 ``null``\ （預設），則從第二個元素開始迴圈，並以第一個元素做為初始值。
+\ ``method`` 接受兩個參數：\ ``accum`` 的目前值，以及目前的陣列元素。如果 ``accum`` 為 ``null``\ （預設值），則會從第二個元素開始迭代，將第一個元素作為 ``accum`` 的初始值。
 
 ::
 
@@ -1181,13 +1189,26 @@ Returns a hashed 32-bit integer value representing the array and its contents.
         return accum + number
 
     func _ready():
-        print([1, 2, 3].reduce(sum, 0))  # 印出 6
-        print([1, 2, 3].reduce(sum, 10)) # 印出 16
+        print([1, 2, 3].reduce(sum, 0))  # 輸出 6
+        print([1, 2, 3].reduce(sum, 10)) # 輸出 16
 
-        # 與上例相同，但以 Lambda 撰寫。
+        # 與上面相同，但是使用 lambda 函式。
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 
-除了可取代 :ref:`max()<class_Array_method_max>` 自訂比較器外，也能用來計算符合條件的元素數量（類似 :ref:`count()<class_Array_method_count>`\ ）：
+如果 :ref:`max()<class_Array_method_max>` 無法滿足需求，也可以使用該方法來實作自訂比較器：
+
+::
+
+    func _ready():
+        var arr = [Vector2i(5, 0), Vector2i(3, 4), Vector2i(1, 2)]
+
+        var longest_vec = arr.reduce(func(max, vec): return vec if is_length_greater(vec, max) else max)
+        print(longest_vec) # 輸出 (3, 4)
+
+    func is_length_greater(a, b):
+        return a.length() > b.length()
+
+該方法還可以用來計算陣列中滿足特定條件元素的數量，與 :ref:`count()<class_Array_method_count>` 類似：
 
 ::
 
@@ -1196,10 +1217,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
     func _ready():
         var arr = [1, 2, 3, 4, 5]
+        # 目前元素為偶數則增加計數器，否則保持計數不變。
         var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
-        print(even_count) # 印出 2
+        print(even_count) # 輸出 2
 
-另請參閱 :ref:`map()<class_Array_method_map>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`any()<class_Array_method_any>` 與 :ref:`all()<class_Array_method_all>`\ 。
+另見 :ref:`map()<class_Array_method_map>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`any()<class_Array_method_any>`\ 、\ :ref:`all()<class_Array_method_all>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1211,11 +1233,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 |void| **remove_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_remove_at>`
 
-Removes the element from the array at the given index (``position``). If the index is out of bounds, this method fails. If the index is negative, ``position`` is considered relative to the end of the array.
+從陣列中移除指定索引（\ ``position``\ ）處的元素。如果索引超出範圍，則該方法失敗。如果為負數，則認為 ``position`` 為相對於陣列結尾的索引。
 
-If you need to return the removed element, use :ref:`pop_at()<class_Array_method_pop_at>`. To remove an element by value, use :ref:`erase()<class_Array_method_erase>` instead.
+如果需要回傳被移除的元素，請使用 :ref:`pop_at()<class_Array_method_pop_at>`\ 。要按值移除元素，請改用 :ref:`erase()<class_Array_method_erase>`\ 。
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 該方法將 ``position`` 之後每個元素的索引向前移動，這可能會產生明顯的效能成本，尤其是在較大的陣列上。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,11 +1249,11 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 :ref:`int<class_int>` **resize**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_resize>`
 
-將陣列長度設為 ``size``\ 。若新大小小於目前大小，尾端元素會被移除；若大於目前大小，則依陣列型別新增預設值（通常為 ``null``\ ）。
+將陣列的元素數設定為 ``size``\ 。如果 ``size`` 小於陣列的目前大小，則移除末尾的元素。如果 ``size`` 大於陣列的目前大小，則新增新的預設元素（通常為 ``null``\ ），具體取決於陣列的型別。
 
-成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。若失敗則可能回傳：陣列唯讀時為 :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>`\ ；\ ``size`` 為負值時為 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；記憶體配置失敗時為 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。可使用 :ref:`size()<class_Array_method_size>` 取得實際大小。
+如果成功則回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果該方法失敗則回傳其他 :ref:`Error<enum_@GlobalScope_Error>` 常數之一：陣列只讀時為 :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>`\ ，大小為負數時為 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失敗時為 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。請使用 :ref:`size()<class_Array_method_size>` 查看陣列調整後的實際大小。
 
-\ **注意：**\ 一次呼叫本方法並批次指定新值，效能優於逐一 :ref:`append()<class_Array_method_append>` 新元素。
+\ **注意：**\ 呼叫該方法一次並分配新值，要比為每個新元素呼叫 :ref:`append()<class_Array_method_append>` 更快。
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1366,7 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Array_method_sort>`
 
-將陣列依遞增順序排序，排序結果取決於元素之間的「小於」(``<``) 比較。
+按遞增對陣列進行排序。最終順序取決於元素之間的“小於”（\ ``>``\ ）比較。
 
 
 .. tabs::
@@ -1353,17 +1375,17 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
     var numbers = [10, 5, 2.5, 8]
     numbers.sort()
-    print(numbers) # 印出 [2.5, 5, 8, 10]
+    print(numbers) # 輸出 [2.5, 5, 8, 10]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array numbers = [10, 5, 2.5, 8];
     numbers.Sort();
-    GD.Print(numbers); // 印出 [2.5, 5, 8, 10]
+    GD.Print(numbers); // 輸出 [2.5, 5, 8, 10]
 
 
 
-\ **注意：**\ 此排序演算法並非\ `穩定排序 <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__\ ，等值元素（如 ``2`` 與 ``2.0``\ ）的相對順序可能改變。
+\ **注意：**\ 使用的排序算法並不\ `穩定 <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__\ 。這意味著等效元素（例如 ``2`` 和 ``2.0``\ ）在呼叫 :ref:`sort()<class_Array_method_sort>` 時可能會改變其順序。
 
 .. rst-class:: classref-item-separator
 
@@ -1493,7 +1515,7 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_eq_Array>`
 
-比較左右兩個陣列。若大小與內容皆相同則回傳 ``true``\ ，否則回傳 ``false``\ 。
+將左操作數 **Array** 與 ``right`` **Array** 進行比較。如果陣列的大小和內容相等，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1533,7 +1555,7 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 :ref:`Variant<class_Variant>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_operator_idx_int>`
 
-回傳位於 ``index`` 的 :ref:`Variant<class_Variant>` 元素，索引自 0 起算。若 ``index`` 大於等於 0，則自陣列開頭計算；若為負值，則自陣列尾端反向計算。若索引越界，將於執行階段產生錯誤，並在編輯器中中斷專案執行。
+回傳指定 ``index`` 處的 :ref:`Variant<class_Variant>` 元素。陣列從索引 0 開始。如果 ``index`` 大於或等於 ``0``\ ，則從陣列開頭開始取得元素。如果 ``index`` 為負值，則從末尾開始取得元素。越界存取陣列將導致執行時錯誤，從編輯器中執行時會暫停專案執行。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

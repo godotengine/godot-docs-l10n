@@ -7,7 +7,7 @@ AudioEffectAmplify
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a volume manipulation audio effect to an audio bus.
+向音訊總線新增一個音量操縱音效。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,7 +23,7 @@ Adds a volume manipulation audio effect to an audio bus.
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,7 +59,7 @@ Adds a volume manipulation audio effect to an audio bus.
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Amount of amplification in dB. Positive values make the sound louder, negative values make it quieter. Value can range from -80 to 24.
+以分貝（dB）為單位的放大量。正值使聲音更響亮，負值使聲音更安靜。數值範圍從 -80 到 24。
 
 .. rst-class:: classref-item-separator
 

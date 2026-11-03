@@ -14,15 +14,15 @@ HTTPRequest
 說明
 ----
 
-A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
+一個具備發送 HTTP 請求能力的節點。它在內部使用了 :ref:`HTTPClient<class_HTTPClient>`\ 。
 
-Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
+可用於發起 HTTP 請求，例如通過 HTTP 下載或上傳檔案及網頁內容。
 
-\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
+\ **警告：** 關於各種限制（尤其是 TLS 安全性方面），請參閱 :ref:`HTTPClient<class_HTTPClient>` 上的相關說明和警告。
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **注意：** 匯出到 Android 平台時，請務必在匯出專案或使用一鍵部署之前，在 Android 匯出預設中啟用 ``INTERNET``\ （網路存取）權限。否則，Android 系統會攔截任何形式的網路通信。
 
-\ **Example:** Contact a REST API and print one of its returned fields:
+\ **範例：** 呼叫一個 REST API 並輸出其回傳的其中一個欄位：
 
 
 .. tabs::
@@ -30,52 +30,52 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # 建立一個 HTTP 請求節點，並連接它的完成訊號。
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform a GET request. The URL below returns JSON as of writing.
+        # 執行一個 GET 請求。編寫（這段程式碼）時，下方的 URL 會回傳 JSON 格式的資料。
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # Perform a POST request. The URL below returns JSON as of writing.
-        # Note: Don't make simultaneous requests using a single HTTPRequest node.
-        # The snippet below is provided for reference only.
+        # 執行一個 POST 請求。編寫（這段程式碼）時，下方的 URL 會回傳 JSON 格式的資料。
+        # 注意：不要使用單個 HTTPRequest 節點同時發起多個請求。
+        # 下面提供的程式碼片段僅供參考。
         var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Called when the HTTP request is completed.
+    # 當 HTTP 請求完成時被呼叫。
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        # 將輸出出 HTTPRequest 節點所使用的使用者代理字串（該字串由 httpbin.org 識別）。
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // 建立一個 HTTP 請求節點，並連接它的完成訊號。
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform a GET request. The URL below returns JSON as of writing.
+        // 執行一個 GET 請求。編寫（這段程式碼）時，下方的 URL 會回傳 JSON 格式的資料。
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
             GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // Perform a POST request. The URL below returns JSON as of writing.
-        // Note: Don't make simultaneous requests using a single HTTPRequest node.
-        // The snippet below is provided for reference only.
+        // 執行一個 POST 請求。編寫（這段程式碼）時，下方的 URL 會回傳 JSON 格式的資料。
+        // 注意：不要使用單個 HTTPRequest 節點同時發起多個請求。
+        // 下面提供的程式碼片段僅供參考。
         string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -87,20 +87,20 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
         }
     }
 
-    // Called when the HTTP request is completed.
+    // 在 HTTP 請求完成時被呼叫。
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        // 將輸出出 HTTPRequest 節點所使用的使用者代理字串（該字串由 httpbin.org 識別）。
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Example:** Load an image using **HTTPRequest** and display it:
+\ **範例：** 使用 **HTTPRequest** 載入一張圖片並顯示它：
 
 
 .. tabs::
@@ -108,17 +108,17 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # 建立一個 HTTP 請求節點，並連接它的完成訊號。
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform the HTTP request. The URL below returns a PNG image as of writing.
+        # 執行 HTTP 請求。編寫（這段程式碼）時，下方的 URL 會回傳一張 PNG 格式的圖片。
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Called when the HTTP request is completed.
+    # 當 HTTP 請求完成時被呼叫。
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
             push_error("Image couldn't be downloaded. Try a different image.")
@@ -130,7 +130,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Display the image in a TextureRect node.
+        # 在 TextureRect 節點中顯示這張圖片。
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,12 +139,12 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // 建立一個 HTTP 請求節點，並連接它的完成訊號。
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform the HTTP request. The URL below returns a PNG image as of writing.
+        // 執行 HTTP 請求。在編寫（這段程式碼）時，下方的 URL 會回傳一張 PNG 格式的圖片。
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
@@ -152,7 +152,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
         }
     }
 
-    // Called when the HTTP request is completed.
+    // 當 HTTP 請求完成時被呼叫。
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
@@ -168,7 +168,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // Display the image in a TextureRect node.
+        // 在 TextureRect 節點中顯示這張圖片。
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 
 
-\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
+\ **注意：** **HTTPRequest** 節點會自動處理響應體（response bodies）的解壓縮。除非你已經手動指定了，否則引擎會自動為你發出的每一個請求新增一個 ``Accept-Encoding`` 請求頭。因此，任何帶有 ``Content-Encoding: gzip`` 響應頭的回傳資料，都會被自動解壓縮，並以未壓縮的位元組形式直接交給你。
 
 .. rst-class:: classref-introduction-group
 
@@ -285,7 +285,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CHUNKED_BODY_SIZE_MISMATCH** = ``1``
 
-Request failed due to a mismatch between the expected and actual chunked body size during transfer. Possible causes include network errors, server misconfiguration, or issues with chunked encoding.
+請求失敗，傳輸的實際資料塊大小與預期不符。可能的原因有網路錯誤、伺服器設定問題、資料塊編碼問題等。
 
 .. _class_HTTPRequest_constant_RESULT_CANT_CONNECT:
 
@@ -341,7 +341,7 @@ TLS 握手時請求失敗。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_BODY_DECOMPRESS_FAILED** = ``8``
 
-Request failed due to an error while decompressing the response body. Possible causes include unsupported or incorrect compression format, corrupted data, or incomplete transfer.
+請求失敗，解壓響應體出錯。可能的原因有壓縮格式不支援、壓縮格式錯誤、資料損壞、傳輸不完整等。
 
 .. _class_HTTPRequest_constant_RESULT_REQUEST_FAILED:
 
@@ -403,13 +403,13 @@ HTTPRequest 無法寫入下載檔案。
 - |void| **set_accept_gzip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_accepting_gzip**\ (\ )
 
-If ``true``, this header will be added to each request: ``Accept-Encoding: gzip, deflate`` telling servers that it's okay to compress response bodies.
+如果為 ``true``\ ，這個報頭會被新增到每個請求中：\ ``Accept-Encoding: gzip, deflate`` 告訴伺服器可以壓縮響應正文。
 
-Any Response body declaring a ``Content-Encoding`` of either ``gzip`` or ``deflate`` will then be automatically decompressed, and the uncompressed bytes will be delivered via :ref:`request_completed<class_HTTPRequest_signal_request_completed>`.
+任何聲明 ``gzip`` 或 ``deflate`` 的 ``Content-Encoding`` 的響應正文，將被自動解壓縮，並且未壓縮的位元組將通過 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 被傳遞。
 
-If the user has specified their own ``Accept-Encoding`` header, then no header will be added regardless of :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`.
+如果使用者指定了自己的 ``Accept-Encoding`` 報頭，那麼無論 :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>` 是甚麼，都不會新增任何報頭。
 
-If ``false`` no header will be added, and no decompression will be performed on response bodies. The raw bytes of the response body will be returned via :ref:`request_completed<class_HTTPRequest_signal_request_completed>`.
+如果為 ``false``\ ，這將不會新增報頭，並且不會對響應正文執行任何解壓縮。響應正文的原始位元組將通過 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 回傳。
 
 .. rst-class:: classref-item-separator
 
@@ -496,9 +496,9 @@ If ``false`` no header will be added, and no decompression will be performed on 
 - |void| **set_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeout**\ (\ )
 
-The duration to wait before a request times out, in seconds (independent of :ref:`Engine.time_scale<class_Engine_property_time_scale>`). If :ref:`timeout<class_HTTPRequest_property_timeout>` is set to ``0.0``, the request will never time out.
+請求超時前的等待時間，單位為秒（與 :ref:`Engine.time_scale<class_Engine_property_time_scale>` 無關）。如果 :ref:`timeout<class_HTTPRequest_property_timeout>` 為 ``0.0``\ ，則請求將永遠不會超時。
 
-For simple requests, such as communication with a REST API, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to a value suitable for the server response time (commonly between ``1.0`` and ``10.0``). This will help prevent unwanted timeouts caused by variation in response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to ``0.0``, disabling the timeout functionality. This will help prevent large transfers from failing due to exceeding the timeout value.
+對於簡單的請求，例如與 REST API 通信，建議將 :ref:`timeout<class_HTTPRequest_property_timeout>` 設為與伺服器響應時間匹配的值（通常在 ``1.0`` 到 ``10.0`` 之間）。這將有助於防止由於響應時間波動而導致的不必要的超時，同時仍然允許應用程式檢測請求何時超時。對於較大的請求，例如檔案下載，建議將 :ref:`timeout<class_HTTPRequest_property_timeout>` 設定為 ``0.0``\ ，停用超時功能。這將有助於防止由於超出超時值而導致大型傳輸失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 - |void| **set_use_threads**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_threads**\ (\ )
 
-為 ``true`` 時，將啟用多執行緒提高性能。
+為 ``true`` 時，將啟用多執行緒提高效能。
 
 .. rst-class:: classref-section-separator
 
@@ -570,7 +570,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`Status<enum_HTTPClient_Status>` **get_http_client_status**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_http_client_status>`
 
-Returns the current status of the underlying :ref:`HTTPClient<class_HTTPClient>`.
+回傳內部 :ref:`HTTPClient<class_HTTPClient>` 的目前狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Returns the current status of the underlying :ref:`HTTPClient<class_HTTPClient>`
 
 \ **注意：**\ 當 ``method`` 為 :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>` 時，通過 ``request_data`` 發送的有效載荷可能會被伺服器忽略，甚至導致伺服器拒絕請求（見 `RFC 7231 第 4.3.1 節 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__\ 瞭解更多詳情）。作為一種變通方法，可以在 URL 中將資料作為查詢字串發送（有關範例，請參見 :ref:`String.uri_encode()<class_String_method_uri_encode>`\ ）。
 
-\ **注意：**\ 建議使用傳輸加密（TLS）並避免在 HTTP GET URL 參數中發送敏感資訊（例如登錄憑據）。考慮改用 HTTP POST 請求或 HTTP 報頭來獲取此類資訊。
+\ **注意：**\ 建議使用傳輸加密（TLS）並避免在 HTTP GET URL 參數中發送敏感資訊（例如登錄憑據）。考慮改用 HTTP POST 請求或 HTTP 報頭來取得此類資訊。
 
 .. rst-class:: classref-item-separator
 

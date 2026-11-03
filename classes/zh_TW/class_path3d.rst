@@ -59,7 +59,7 @@ Path3D
 
 **debug_color_changed**\ (\ ) :ref:`🔗<class_Path3D_signal_debug_color_changed>`
 
-Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_color>` changes.
+當 :ref:`debug_custom_color<class_Path3D_property_debug_custom_color>` 改變時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -98,7 +98,7 @@ Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_col
 - |void| **set_debug_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_custom_color**\ (\ )
 
-The custom color used to draw the path in the editor. If set to :ref:`Color.BLACK<class_Color_constant_BLACK>` (as by default), the color set in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` is used.
+編輯器中用於繪製路徑的自訂顏色。如果設定為 :ref:`Color.BLACK<class_Color_constant_BLACK>`\ （預設值），則使用 :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` 中設定的顏色。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

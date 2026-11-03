@@ -10833,9 +10833,9 @@ If ``true``, the 3D physics server runs on a separate thread, making better use 
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+Vitesse linéaire de seuil sous laquelle un corps physique 3D sera considéré comme inactif. Voir :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10847,9 +10847,9 @@ Threshold angular velocity under which a 3D physics body will be considered inac
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+Vitesse linéaire de seuil sous laquelle un corps physique 3D sera considéré comme inactif. Voir :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10861,9 +10861,9 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+Distance maximale à laquelle une forme peut pénétrer une autre forme avant que ce ne soit considéré comme une collision. Voir :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10875,9 +10875,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+Distance maximale à laquelle une forme peut être d'une autre forme avant qu'elles ne soient considérées comme séparées et que le contact soit supprimé. Voir :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10889,9 +10889,9 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+Distance maximale à laquelle une paire de corps doit se déplacer avant que leur statut de collision soit re-calculé. Voir :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10903,11 +10903,11 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+Biais du solveur par défaut pour toutes les contacts physiques. Définit de combien les corps réagissent pour assurer la séparation des contacts. Voir :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+Les formes individuelles peuvent avoir une valeur de biais spécifique (voir :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10919,9 +10919,9 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+Nombre d'itérations du solveur pour tous les contacts et contraintes. Plus le nombre d'itérations est élevé, plus les collisions seront précises. Cependant, un plus grand nombre d'itérations nécessite plus de puissance CPU, ce qui peut diminuer les performances. Voir :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10933,9 +10933,9 @@ Number of solver iterations for all contacts and constraints. The greater the nu
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
+Temps (en secondes) d'inactivité avant lequel un corps physique 3D sera endormi. Voir :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Note :** Ce paramètre de projet n'est effectif que lorsque vous utilisez GodotPhysics3D. Il n'a aucun effet lors de l'utilisation de Jolt Physics.
 
 .. rst-class:: classref-item-separator
 

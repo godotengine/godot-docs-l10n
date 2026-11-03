@@ -16,7 +16,7 @@ AudioStreamMicrophone
 
 當直接在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 節點中使用時，\ **AudioStreamMicrophone** 會即時播放麥克風的輸入。這可以配合 :ref:`AudioEffectCapture<class_AudioEffectCapture>` 使用，以處理資料或保存資料。
 
-\ **注意：**\ :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` 必須為 ``true`` 音訊輸入才能正常工作。另請參閱該設定的說明，瞭解與許可權和操作系統隱私設定相關的注意事項。
+\ **注意：**\ :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` 必須為 ``true`` 音訊輸入才能正常工作。另請參閱該設定的說明，瞭解與許可權和作業系統隱私設定相關的注意事項。
 
 .. rst-class:: classref-introduction-group
 

@@ -10,7 +10,7 @@ MultiplayerSynchronizer
 
 **繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-將屬性從多人遊戲權威同步到遠程對等體。
+將屬性從多人遊戲權威同步到遠端對等體。
 
 .. rst-class:: classref-introduction-group
 
@@ -169,7 +169,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_delta_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_delta_interval**\ (\ )
 
-Time interval between delta synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>`. If set to ``0.0`` (the default), delta synchronizations happen every network process frame.
+兩次增量同步之間的時間間隔。複製設為 :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` 時使用。如果設定為 ``0.0``\ （預設值）時，每個網路處理影格都會發生增量同步。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Time interval between delta synchronizations. Used when the replication is set t
 - |void| **set_replication_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_replication_interval**\ (\ )
 
-Time interval between synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>`. If set to ``0.0`` (the default), synchronizations happen every network process frame.
+兩次同步之間的時間間隔。複製設定為 :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` 時使用。如果設定為 ``0.0``\ （預設值）時，每個網路處理影格都會發生同步。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Time interval between synchronizations. Used when the replication is set to :ref
 - |void| **set_visibility_update_mode**\ (\ value\: :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>`\ )
 - :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **get_visibility_update_mode**\ (\ )
 
-Specifies when visibility filters are updated.
+指定何時更新可見性過濾器。
 
 .. rst-class:: classref-section-separator
 

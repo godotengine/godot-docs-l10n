@@ -71,7 +71,7 @@ MeshTexture
 - |void| **set_image_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_image_size**\ (\ )
 
-設定圖像的大小，需要參考。
+設定影像的大小，需要參考。
 
 .. rst-class:: classref-item-separator
 

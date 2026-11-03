@@ -101,7 +101,7 @@ RDShaderSource
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's any hit stage.
+著色器“任意命中”階段的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Source code for the shader's any hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's closest hit stage.
+著色器“最近命中”階段的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Source code for the shader's closest hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's intersection stage.
+著色器“相交”階段的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Source code for the shader's intersection stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's miss stage.
+著色器“未命中”階段的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Source code for the shader's miss stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's ray generation stage.
+著色器“光線生成”階段的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Source code for the shader's ray generation stage.
 
 :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const| :ref:`🔗<class_RDShaderSource_method_get_stage_source>`
 
-返回指定著色器階段 ``stage`` 的原始程式碼。等價於獲取 :ref:`source_compute<class_RDShaderSource_property_source_compute>`\ 、\ :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`\ 、\ :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`\ 、\ :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` 或 :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`\ 。
+返回指定著色器階段 ``stage`` 的原始程式碼。等價於取得 :ref:`source_compute<class_RDShaderSource_property_source_compute>`\ 、\ :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`\ 、\ :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`\ 、\ :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` 或 :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ Source code for the shader's ray generation stage.
 
 |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RDShaderSource_method_set_stage_source>`
 
-Sets ``source`` code for the specified shader ``stage``. Equivalent to setting one of :ref:`source_compute<class_RDShaderSource_property_source_compute>`, :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`, :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`, :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` or :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`.
+設定著色器階段 ``stage`` 的原始碼 ``source``\ 。等價於設定 :ref:`source_compute<class_RDShaderSource_property_source_compute>`\ 、\ :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`\ 、\ :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`\ 、\ :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` 或 :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`\ 。
 
-\ **Note:** If you set the compute shader source code using this method directly, remember to remove the Godot-specific hint ``#[compute]``.
+\ **注意：**\ 如果直接使用該方法設定計算著色器的原始碼，請記得移除 Godot 專有的 ``#[compute]`` 提示。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

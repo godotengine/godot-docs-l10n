@@ -7,16 +7,16 @@ GraphFrame
 
 **繼承：** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-GraphFrame is a special :ref:`GraphElement<class_GraphElement>` that can be used to organize other :ref:`GraphElement<class_GraphElement>`\ s inside a :ref:`GraphEdit<class_GraphEdit>`.
+GraphFrame 是一種特殊的 :ref:`GraphElement<class_GraphElement>`\ ，可用於組織 :ref:`GraphEdit<class_GraphEdit>` 中的其他 :ref:`GraphElement<class_GraphElement>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-GraphFrame is a special :ref:`GraphElement<class_GraphElement>` to which other :ref:`GraphElement<class_GraphElement>`\ s can be attached. It can be configured to automatically resize to enclose all attached :ref:`GraphElement<class_GraphElement>`\ s. If the frame is moved, all the attached :ref:`GraphElement<class_GraphElement>`\ s inside it will be moved as well.
+GraphFrame 是一種特殊的 :ref:`GraphElement<class_GraphElement>`\ ，其他 :ref:`GraphElement<class_GraphElement>` 可以附加到其上。可以將其設定為自動調整大小以包含所有附加的 :ref:`GraphElement<class_GraphElement>`\ 。如果移動該框，則其內的所有附加 :ref:`GraphElement<class_GraphElement>` 也會移動。
 
-A GraphFrame is always kept behind the connection layer and other :ref:`GraphElement<class_GraphElement>`\ s inside a :ref:`GraphEdit<class_GraphEdit>`.
+GraphFrame 在 :ref:`GraphEdit<class_GraphEdit>` 內始終位於連接層和其他 :ref:`GraphElement<class_GraphElement>` 後面。
 
 .. rst-class:: classref-reftable-group
 
@@ -89,7 +89,7 @@ A GraphFrame is always kept behind the connection layer and other :ref:`GraphEle
 
 **autoshrink_changed**\ (\ ) :ref:`🔗<class_GraphFrame_signal_autoshrink_changed>`
 
-Emitted when :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabled>` or :ref:`autoshrink_margin<class_GraphFrame_property_autoshrink_margin>` changes.
+更改 :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabled>` 或 :ref:`autoshrink_margin<class_GraphFrame_property_autoshrink_margin>` 時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -111,7 +111,7 @@ Emitted when :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabl
 - |void| **set_autoshrink_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoshrink_enabled**\ (\ )
 
-If ``true``, the frame's rect will be adjusted automatically to enclose all attached :ref:`GraphElement<class_GraphElement>`\ s.
+如果為 ``true``\ ，則框的矩形將自動調整以包含所有附加的 :ref:`GraphElement<class_GraphElement>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ If ``true``, the frame's rect will be adjusted automatically to enclose all atta
 - |void| **set_autoshrink_margin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_autoshrink_margin**\ (\ )
 
-The margin around the attached nodes that is used to calculate the size of the frame when :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabled>` is ``true``.
+當 :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabled>` 為 ``true`` 時，附加節點周圍用於計算框大小的邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ The margin around the attached nodes that is used to calculate the size of the f
 - |void| **set_drag_margin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_margin**\ (\ )
 
-The margin inside the frame that can be used to drag the frame.
+框架的內部邊距，可用於拖動該框架。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ The margin inside the frame that can be used to drag the frame.
 - |void| **set_tint_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_color**\ (\ )
 
-The color of the frame when :ref:`tint_color_enabled<class_GraphFrame_property_tint_color_enabled>` is ``true``.
+框架在 :ref:`tint_color_enabled<class_GraphFrame_property_tint_color_enabled>` 為 ``true`` 時的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ The color of the frame when :ref:`tint_color_enabled<class_GraphFrame_property_t
 - |void| **set_tint_color_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tint_color_enabled**\ (\ )
 
-If ``true``, the tint color will be used to tint the frame.
+如果為 ``true``\ ，則會使用著色顏色著色框架。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ If ``true``, the tint color will be used to tint the frame.
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-Title of the frame.
+框架的標題。
 
 .. rst-class:: classref-section-separator
 
@@ -213,9 +213,9 @@ Title of the frame.
 
 :ref:`HBoxContainer<class_HBoxContainer>` **get_titlebar_hbox**\ (\ ) :ref:`🔗<class_GraphFrame_method_get_titlebar_hbox>`
 
-Returns the :ref:`HBoxContainer<class_HBoxContainer>` used for the title bar, only containing a :ref:`Label<class_Label>` for displaying the title by default.
+回傳標題欄所使用的 :ref:`HBoxContainer<class_HBoxContainer>`\ ，預設只包含一個 :ref:`Label<class_Label>`\ ，用於顯示標題。
 
-This can be used to add custom controls to the title bar such as option or close buttons.
+可用於向標題欄新增自訂控制項，例如選項和關閉按鈕等。
 
 .. rst-class:: classref-section-separator
 
@@ -244,7 +244,7 @@ This can be used to add custom controls to the title bar such as option or close
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_GraphFrame_theme_style_panel>`
 
-The default :ref:`StyleBox<class_StyleBox>` used for the background of the **GraphFrame**.
+用於該 **GraphFrame** 背景的預設 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ The default :ref:`StyleBox<class_StyleBox>` used for the background of the **Gra
 
 :ref:`StyleBox<class_StyleBox>` **panel_selected** :ref:`🔗<class_GraphFrame_theme_style_panel_selected>`
 
-The :ref:`StyleBox<class_StyleBox>` used for the background of the **GraphFrame** when it is selected.
+當 **GraphFrame** 被選中時，其背景使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ The :ref:`StyleBox<class_StyleBox>` used for the background of the **GraphFrame*
 
 :ref:`StyleBox<class_StyleBox>` **titlebar** :ref:`🔗<class_GraphFrame_theme_style_titlebar>`
 
-The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphFrame**.
+用於 **GraphFrame** 標題欄的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +280,7 @@ The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphFrame**
 
 :ref:`StyleBox<class_StyleBox>` **titlebar_selected** :ref:`🔗<class_GraphFrame_theme_style_titlebar_selected>`
 
-The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphFrame** when it is selected.
+當 **GraphFrame** 被選中時，用於其標題欄的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -1699,7 +1699,7 @@ El recurso :ref:`Sky<class_Sky>` utilizado para este **Environment**.
 - |void| **set_sky_custom_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sky_custom_fov**\ (\ )
 
-Si se establece en un valor mayor que ``0.0``, anula el campo de visión a utilizar para el renderizado del cielo. Si se establece en ``0.0``, se utiliza el mismo FOV que el :ref:`Camera3D<class_Camera3D>` actual para el renderizado del cielo.
+Si se establece en un valor mayor que ``0.0``, sobrescribe el campo de visión a utilizar para el renderizado del cielo. Si se establece en ``0.0``, se utiliza el mismo FOV que el :ref:`Camera3D<class_Camera3D>` actual para el renderizado del cielo.
 
 .. rst-class:: classref-item-separator
 

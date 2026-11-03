@@ -14,26 +14,26 @@ ProjectSettings
 說明
 ----
 
-Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
+儲存可從任何地方存取的變數。使用 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ 、\ :ref:`set_setting()<class_ProjectSettings_method_set_setting>` 或 :ref:`has_setting()<class_ProjectSettings_method_has_setting>` 存取它們。儲存在 ``project.godot`` 中的變數也會載入到 **ProjectSettings** 中，這使得該物件對於讀取自訂遊戲設定選項非常有用。
 
-When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
+命名專案設定屬性時，請使用包含類別在內的設定的完整路徑。例如，專案名稱可以使用 ``"application/config/name"``\ 。類別和屬性名稱可以在專案設定對話框中查看。
 
-\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
+\ **特性標籤：**\ 可以使用\ :doc:`特性標籤 <../tutorials/export/feature_tags>`\ 為特定平台和設定（除錯、發佈等）覆蓋專案設定。
 
-\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+\ **覆蓋：**\ 任何專案設定都可以通過在專案根目錄中建立名為 ``override.cfg`` 的檔案來覆蓋。該檔案格式與 ``project.godot`` 相同，也可以使用 :ref:`ConfigFile<class_ConfigFile>` 編寫。用於匯出專案時，只需將該檔案放在與專案二進位檔案相同的目錄中即可。覆蓋設定仍會考慮基礎專案設定的\ :doc:`特性標籤 <../tutorials/export/feature_tags>`\ 。因此，如果希望它們覆蓋所有平台和設定上的基本專案設定，請確保\ *也*\ 使用所需的特性標籤覆蓋設定。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`Project Settings <../tutorials/editor/project_settings>`
+- :doc:`專案設定 <../tutorials/editor/project_settings>`
 
 - `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
 
 - `3D 平台跳躍示範 <https://godotengine.org/asset-library/asset/2748>`__
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `作業系統測試演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -1994,7 +1994,7 @@ When naming a Project Settings property, use the full path to the setting includ
 
 **settings_changed**\ (\ ) :ref:`🔗<class_ProjectSettings_signal_settings_changed>`
 
-Emitted when any setting is changed, up to once per process frame.
+任何設定項發生改變的時候發出，每個處理影格最多一次。
 
 .. rst-class:: classref-section-separator
 
@@ -2011,11 +2011,11 @@ Emitted when any setting is changed, up to once per process frame.
 
 :ref:`String<class_String>` **accessibility/general/accessibility_driver** = ``"accesskit"`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_driver>`
 
-Accessibility driver:
+可存取性驅動程式：
 
--**accesskit** (default): AccessKit driver.
+-**accesskit**\ （預設）：AccessKit 驅動程式。
 
--**dummy**: Dummy driver, screen reader support is disabled.
+-**dummy**\ ：虛擬驅動程式，螢幕閱讀器支援已停用。
 
 .. rst-class:: classref-item-separator
 
@@ -2027,15 +2027,15 @@ Accessibility driver:
 
 :ref:`int<class_int>` **accessibility/general/accessibility_support** = ``0`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_support>`
 
-Accessibility support mode:
+無障礙支援模式：
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Auto**\ （\ ``0``\ ）：啟用無障礙支援，但只會在輔助應用（螢幕閱讀器、盲文顯示器等）處於活動狀態時才會處理無障礙資訊的更新（預設）。
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Always Active**\ （\ ``1``\ ）：啟用無障礙支援，無論目前輔助應用的狀態都會處理無障礙資訊的處理。
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Disabled**\ （\ ``2``\ ）：完全停用無障礙支援。
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test your project with these tools, use **Always Active**.
+\ **注意：**\ Accessibility Insights for Windows、Accessibility Inspector（macOS）、AT-SPI 瀏覽器（Linux/BSD）等無障礙除錯工具不算作輔助應用。要使用這些工具測試應用，請使用 **Always Active**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ Accessibility support mode:
 
 :ref:`int<class_int>` **accessibility/general/updates_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/updates_per_second>`
 
-The number of accessibility information updates per second.
+每秒無障礙資訊的更新次數。
 
 .. rst-class:: classref-item-separator
 
@@ -2059,9 +2059,9 @@ The number of accessibility information updates per second.
 
 :ref:`bool<class_bool>` **animation/compatibility/default_parent_skeleton_in_mesh_instance_3d** = ``false`` :ref:`🔗<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`
 
-If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` will point to the parent node (``..``) by default, which was the behavior before Godot 4.6. It's recommended to keep this setting disabled unless the old behavior is needed for compatibility.
+如果為 ``true``\ ，則 :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` 預設指向父節點（\ ``..``\ ），這是 Godot 4.6 之前的行為。建議保持該設定項的停用狀態，除非出於相容性考慮需要保留舊的行為。
 
-\ **Note:** If you disable this option in an existing project, it's strongly recommended to use the ``Project > Tools > Upgrade Project Files...`` option to ensure existing scenes do not break.
+\ **注意：**\ 如果你在已有專案中停用該選項，強烈建議使用\ ``專案 > 工具 > 升級專案檔案...``\ 選項，以確保已有場景不會出現問題。
 
 .. rst-class:: classref-item-separator
 
@@ -2073,7 +2073,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`bool<class_bool>` **animation/warnings/check_angle_interpolation_type_conflicting** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_angle_interpolation_type_conflicting>`
 
-If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of interpolation being forced to choose the shortest rotation path due to multiple angle interpolation types being mixed in the :ref:`AnimationMixer<class_AnimationMixer>` cache.
+如果為 ``true``\ ，\ :ref:`AnimationMixer<class_AnimationMixer>` 會輸出由於 :ref:`AnimationMixer<class_AnimationMixer>` 快取中混合了多種角度插值型別而導致插值被迫選擇最短旋轉路徑的警告。
 
 .. rst-class:: classref-item-separator
 
@@ -2085,7 +2085,7 @@ If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of i
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_skeleton_modifier_node_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_skeleton_modifier_node_paths>`
 
-If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warning if there's no matching object for the track path in the scene when assigning.
+如果設為 ``true``\ ，當分配軌道路徑時，如果在場景里找不到與之匹配的物件，\ :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 就會輸出一條警告訊息。
 
 .. rst-class:: classref-item-separator
 
@@ -2097,7 +2097,7 @@ If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warnin
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_track_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_track_paths>`
 
-If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of no matching object of the track path in the scene.
+如果為 ``true``\ ，則 :ref:`AnimationMixer<class_AnimationMixer>` 輸出場景中軌道路徑沒有匹配物件的警告。
 
 .. rst-class:: classref-item-separator
 
@@ -2121,13 +2121,13 @@ If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of n
 
 :ref:`String<class_String>` **application/boot_splash/image** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/image>`
 
-Path to an image used as the boot splash. If left empty, the default Godot Engine splash will be displayed instead.
+影像的路徑，會作為啟動畫面使用。留空時將使用預設的 Godot 引擎啟動畫面。
 
-\ **Note:** Only effective if :ref:`application/boot_splash/show_image<class_ProjectSettings_property_application/boot_splash/show_image>` is ``true``.
+\ **注意：**\ 僅在 :ref:`application/boot_splash/show_image<class_ProjectSettings_property_application/boot_splash/show_image>` 為 ``true`` 時有效。
 
-\ **Note:** The only supported format is PNG. Using another image format will result in an error.
+\ **注意：**\ 只支援 PNG 格式。使用其他影像格式會導致出錯。
 
-\ **Note:** The image will also show when opening the project in the editor. If you want to display the default splash image in the editor, add an empty override for ``editor_hint`` feature.
+\ **注意：**\ 使用編輯器打開該專案時也會顯示這個影像。如果你希望在編輯器中使用預設的啟用畫面，請針對 ``editor_hint`` 特性新增一個空的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -2151,7 +2151,7 @@ Path to an image used as the boot splash. If left empty, the default Godot Engin
 
 :ref:`bool<class_bool>` **application/boot_splash/show_image** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/show_image>`
 
-如果為 ``true``\ ，將在引擎啟動時顯示 :ref:`application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>` 所指定的圖像。為 ``false`` 時，僅顯示 :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` 所指定的純色。
+如果為 ``true``\ ，將在引擎啟動時顯示 :ref:`application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>` 所指定的影像。為 ``false`` 時，僅顯示 :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` 所指定的純色。
 
 .. rst-class:: classref-item-separator
 
@@ -2163,7 +2163,7 @@ Path to an image used as the boot splash. If left empty, the default Godot Engin
 
 :ref:`int<class_int>` **application/boot_splash/stretch_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/stretch_mode>`
 
-Specifies how the splash image will be stretched. For the original size without stretching, set to disabled. See :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` constants for more information.
+指定啟動畫面影像的拉伸方式。如果不需要拉伸，保持原始尺寸，請設定為“停用”。更多資訊請參閱 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -2175,7 +2175,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/boot_splash/use_filter** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/use_filter>`
 
-如果為 ``true``\ ，則在縮放圖像時會套用線性篩選（推薦用於高解析度圖稿）。如果為 ``false``\ ，則使用最近鄰插值（推薦用於圖元畫）。
+如果為 ``true``\ ，則在縮放影像時會套用線性篩選（推薦用於高解析度圖稿）。如果為 ``false``\ ，則使用最近鄰插值（推薦用於圖元畫）。
 
 .. rst-class:: classref-item-separator
 
@@ -2199,11 +2199,11 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`String<class_String>` **application/config/custom_user_dir_name** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/custom_user_dir_name>`
 
-This user directory is used for storing persistent data (``user://`` filesystem). If a custom directory name is defined, this name will be appended to the system-specific user data directory (same parent folder as the Godot configuration folder documented in :ref:`OS.get_user_data_dir()<class_OS_method_get_user_data_dir>`).
+該使用者目錄用於儲存持久資料（\ ``user://`` 檔案系統）。如果定義了自訂目錄名稱，則該名稱將被追加到系統特定的使用者資料目錄（與 :ref:`OS.get_user_data_dir()<class_OS_method_get_user_data_dir>` 中記錄的 Godot 設定資料夾相同的父資料夾）。
 
-The :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` setting must be enabled for this to take effect.
+\ :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` 設定必須被啟用，該設定才能生效。
 
-\ **Note:** If :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` contains trailing periods, they will be stripped as folder names ending with a period are not allowed on Windows.
+\ **注意：**\ 如果 :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` 以英文句點結尾，末尾的所有句點都會被剝離，因為 Windows 上不允許資料夾的名稱以句點結尾。
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2227,7 @@ The :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_
 
 :ref:`bool<class_bool>` **application/config/disable_project_settings_override** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/disable_project_settings_override>`
 
-If ``true``, disables loading of project settings overrides (file defined in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` and ``res://override.cfg``) and related CLI arguments.
+如果為 ``true``\ ，則停用載入專案設定項覆蓋（在 :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` 和 ``res://override.cfg`` 中定義的檔案）以及相關的命令行參數。
 
 .. rst-class:: classref-item-separator
 
@@ -2265,7 +2265,7 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 專案名稱。會在專案管理器和匯出器中使用。可以通過翻譯當地語系化檔中的值來翻譯項目名稱。視窗標題將設定為在啟動時自動配對專案名稱。
 
-\ **注意：**\ 如果 :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` 為 ``false``\ ，更改此值也會更改使用者資料檔案夾的路徑。重命名專案後，你將無法再存取 ``user://`` 中的現有資料，除非你重命名舊資料夾以配對新項目名稱。有關更多資訊，請參閱文件中的 :doc:`《資料路徑》 <../tutorials/io/data_paths>`\ 。
+\ **注意：**\ 如果 :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` 為 ``false``\ ，更改此值也會更改使用者資料檔案夾的路徑。重新命名專案後，你將無法再存取 ``user://`` 中的現有資料，除非你重新命名舊資料夾以配對新項目名稱。有關更多資訊，請參閱文件中的 :doc:`《資料路徑》 <../tutorials/io/data_paths>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2277,9 +2277,9 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`Dictionary<class_Dictionary>` **application/config/name_localized** = ``{}`` :ref:`🔗<class_ProjectSettings_property_application/config/name_localized>`
 
-Translations of the project's name. This setting is used by OS tools to translate application name on Android, iOS and macOS.
+專案名稱的翻譯。作業系統工具會使用此設定來翻譯 Android、iOS 和 macOS 上的應用程式名稱。
 
-\ **Note:** When left empty, the application name is translated using the project translations.
+\ **注意：**\ 如果留空，應用程式名稱將使用專案翻譯進行翻譯。
 
 .. rst-class:: classref-item-separator
 
@@ -2291,7 +2291,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/config/project_settings_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/project_settings_override>`
 
-指定一個檔來覆蓋專案設定。例如：\ ``user://custom_settings.cfg``\ 。參見 **ProjectSettings** 頂部類描述中的“Overriding”以獲取更多資訊。
+指定一個檔來覆蓋專案設定。例如：\ ``user://custom_settings.cfg``\ 。參見 **ProjectSettings** 頂部類描述中的“Overriding”以取得更多資訊。
 
 \ **注意：**\ 不管這個設定的值如何，\ ``res://override.cfg`` 仍然會被讀取來覆蓋專案設定。
 
@@ -2337,7 +2337,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 \ **注意：**\ 請在更改此設定後重新開機套用程式。
 
-\ **注意：**\ 修改這個值可能有助於在禁止使用隱藏目錄模式的平臺或協力廠商工具上使用。但是，僅在你確定你的環境需要更改此設定時才進行修改，因為某些外部工具或插件可能使用預設的 ``.godot`` 資料夾，因此更改預設設定可能會影響它們的使用。
+\ **注意：**\ 修改這個值可能有助於在禁止使用隱藏目錄模式的平臺或協力廠商工具上使用。但是，僅在你確定你的環境需要更改此設定時才進行修改，因為某些外部工具或外掛可能使用預設的 ``.godot`` 資料夾，因此更改預設設定可能會影響它們的使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2377,7 +2377,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 \ **注意：**\ 只會在 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 ``enabled`` 時嘗試進行差異量平滑，因為沒有垂直同步時無法很好地工作。
 
-最開始啟動平滑前可能會需要有若干秒的穩定影格率。只會在性能足以讓算繪影格與更新率配對的機器上啟動。
+最開始啟動平滑前可能會需要有若干秒的穩定影格率。只會在效能足以讓渲染影格與更新率配對的機器上啟動。
 
 .. rst-class:: classref-item-separator
 
@@ -2389,9 +2389,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/disable_stderr** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/disable_stderr>`
 
-If ``true``, disables printing to standard error. If ``true``, this also hides error and warning messages printed by :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` and :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>`. See also :ref:`application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`.
+如果為 ``true``\ ，則停用輸出到標準錯誤。如果為 ``true``\ ，也會隱藏由 :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` 輸出的錯誤和警告訊息。另見 :ref:`application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`\ 。
 
-Changes to this setting will only be applied upon restarting the application. To control this at runtime, use :ref:`Engine.print_error_messages<class_Engine_property_print_error_messages>`.
+對該設定項的更改將只在重新啟動應用程式後生效。要在執行時控制請使用 :ref:`Engine.print_error_messages<class_Engine_property_print_error_messages>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2403,9 +2403,9 @@ Changes to this setting will only be applied upon restarting the application. To
 
 :ref:`bool<class_bool>` **application/run/disable_stdout** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/disable_stdout>`
 
-If ``true``, disables printing to standard output. This is equivalent to starting the editor or project with the ``--quiet`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`. See also :ref:`application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>`.
+如果為 ``true``\ ，則停用輸出到標準輸出。相當於使用 ``--quiet`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 啟動編輯器或專案。另見 :ref:`application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>`\ 。
 
-Changes to this setting will only be applied upon restarting the application. To control this at runtime, use :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>`.
+對該設定項的更改將只在重新啟動應用程式後生效。要在執行時控制請使用 :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2417,11 +2417,11 @@ Changes to this setting will only be applied upon restarting the application. To
 
 :ref:`bool<class_bool>` **application/run/enable_alt_space_menu** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/enable_alt_space_menu>`
 
-If ``true``, allows the :kbd:`Alt + Space` keys to display the window menu. This menu allows the user to perform various window management operations such as moving, resizing, or minimizing the window.
+如果設為 ``true``\ ，允許通過按下 :kbd:`Alt + Space` 鍵來顯示視窗選單。該選單允許使用者執行各種視窗管理操作，例如移動、調整大小或最小化視窗。
 
-\ **Note:** When the menu is displayed, project execution will pause until the menu is *fully* closed due to Windows behavior. Consider this when enabling this setting in a networked multiplayer game. The menu is only considered fully closed when an option is selected, when the user clicks outside, or when :kbd:`Escape` is pressed after bringing up the window menu *and* another key is pressed afterwards.
+\ **注意：** 當選單顯示時，由於 Windows 系統的行為機制，專案的執行將會暫停，直到該選單被\ *完全*\ 關閉。如果你在連網多人遊戲中啟用此設定，請務必考慮到這一點。只有當使用者選擇了一個選項、在選單外點選，或者在調出視窗選單後按下 :kbd:`Escape` 鍵\ *並且*\ 隨後又按下了另一個鍵時，該選單才會被視為完全關閉。
 
-\ **Note:** This setting is implemented only on Windows.
+\ **注意：** 此設定僅在 Windows 平台上生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ If ``true``, allows the :kbd:`Alt + Space` keys to display the window menu. This
 
 如果為 ``true``\ ，則每次列印一行時更新標準輸出流。這會影響終端紀錄記錄和檔紀錄記錄。
 
-運作專案時，如果希望由 systemd/journalctl 等服務管理器收集紀錄，則必須啟用此設定。預設情況下，在發行版本中禁用此設定，因為如果快速連續列印大量行，則在每個打印行上更新都會對性能產生負面影響。此外，如果啟用此設定，如果套用程式當機或以其他方式被使用者殺死（不會“正常”關閉），則仍會成功寫入紀錄檔。
+運作專案時，如果希望由 systemd/journalctl 等服務管理器收集紀錄，則必須啟用此設定。預設情況下，在發行版本中停用此設定，因為如果快速連續列印大量行，則在每個打印行上更新都會對效能產生負面影響。此外，如果啟用此設定，如果套用程式當機或以其他方式被使用者殺死（不會“正常”關閉），則仍會成功寫入紀錄檔。
 
 \ **注意：**\ 無論此設定如何，標準錯誤流 (``stderr``) 在列印一行時總是被更新。
 
@@ -2451,7 +2451,7 @@ If ``true``, allows the :kbd:`Alt + Space` keys to display the window menu. This
 
 :ref:`bool<class_bool>` **application/run/flush_stdout_on_print.debug** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/run/flush_stdout_on_print.debug>`
 
-除錯建構覆蓋\ :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`\ ，因為在除錯過程中性能不那麼重要。
+除錯建構覆蓋\ :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`\ ，因為在除錯過程中效能不那麼重要。
 
 僅在重新開機套用程式時才會套用此設定的更改。
 
@@ -2465,9 +2465,9 @@ If ``true``, allows the :kbd:`Alt + Space` keys to display the window menu. This
 
 :ref:`int<class_int>` **application/run/frame_delay_msec** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/frame_delay_msec>`
 
-Forces a *constant* delay between frames in the main loop (in milliseconds). In most situations, :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>` should be preferred as an FPS limiter as it's more precise.
+強制主循環中的影格之間有\ *恆定的*\ 延遲（以毫秒為單位）。在大多數情況下，應首選 :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>` 作為 FPS 限制器，因為它更精確。
 
-This setting can be overridden using the ``--frame-delay <ms;>`` command line argument.
+可以使用 ``--frame-delay <ms;>`` 命令行參數覆蓋該設定。
 
 .. rst-class:: classref-item-separator
 
@@ -2479,9 +2479,9 @@ This setting can be overridden using the ``--frame-delay <ms;>`` command line ar
 
 :ref:`bool<class_bool>` **application/run/load_shell_environment** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/load_shell_environment>`
 
-If ``true``, loads the default shell and copies environment variables set by the shell startup scripts to the app environment.
+如果為 ``true``\ ，則會載入預設的 Shell，將由 Shell 啟動腳本設定的環境變數複製到應用程式環境中。
 
-\ **Note:** This setting is implemented on macOS for non-sandboxed applications only.
+\ **注意：**\ 該設定僅在 macOS 上針對非沙盒應用程式實作。
 
 .. rst-class:: classref-item-separator
 
@@ -2493,7 +2493,7 @@ If ``true``, loads the default shell and copies environment variables set by the
 
 :ref:`bool<class_bool>` **application/run/low_processor_mode** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/low_processor_mode>`
 
-If ``true``, enables low-processor usage mode. When enabled, the engine takes longer to redraw, but only redraws the screen if necessary. This may lower power consumption, and is intended for editors or mobile applications. For most games, because the screen needs to be redrawn every frame, it is recommended to keep this setting disabled.
+如果為 ``true``\ ，則啟用低處理器佔用模式。啟用後，引擎進行重繪的耗時變長，但只會在必要時重繪螢幕。這樣做能夠降低耗電量，目的是用於編輯器以及移動應用程式。大多數遊戲每影格都需要重繪螢幕，所以建議保持停用狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -2541,21 +2541,21 @@ If ``true``, enables low-processor usage mode. When enabled, the engine takes lo
 
 :ref:`int<class_int>` **application/run/max_fps** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/max_fps>`
 
-Maximum number of frames per second allowed. A value of ``0`` means "no limit". The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project logic and rendering.
+每秒允許的最大影格數。\ ``0`` 表示“不限制”。如果 CPU 或 GPU 無法滿足專案邏輯和渲染，則實際每秒的影格數可能仍然比這個值小。
 
-Limiting the FPS can be useful to reduce system power consumption, which reduces heat and noise emissions (and improves battery life on mobile devices).
+限制 FPS 可以降低系統對電源的消耗，能夠降低發熱、減少噪音（延長行動裝置的電池壽命）。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is set to ``Enabled`` or ``Adaptive``, it takes precedence and the forced FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 ``Enabled`` 或 ``Adaptive`` 時，該設定優先生效，強制的 FPS 數無法超過顯示器的刷新率。另見 :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`\ 。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Enabled``, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit slightly lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 ``Enabled`` 時，在啟用了可變刷新率（G-Sync/FreeSync）的顯示器上使用比顯示器刷新率略低的 FPS 限制會\ `降低輸入延遲，避免畫面撕裂 <https://blurbusters.com/howto-low-lag-vsync-on/>`__\ 。在較高的刷新率下，應增大影格率限制與顯示器刷新率之間的差值，以確保有足夠的影格數來彌補計時誤差。在這種情況下，影格率限制值的最佳公式為 ``r - (r * r) / 3600.0``\ ，其中 ``r`` 是顯示器的刷新率。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Disabled``, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 為 ``Disabled`` 時，與不限制影格率相比，將 FPS 限制設為系統所能達到的較高值能夠降低輸入延遲。因為原理是確保 GPU 負載低於 100%，所以只有在 GPU 為瓶頸時才會降低延遲，無法緩解 CPU 瓶頸導致的延遲。
 
-See also :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+另見 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
 
-This setting can be overridden using the ``--max-fps <fps>`` command line argument (including with a value of ``0`` for unlimited framerate).
+這個設定可以使用 ``--max-fps <fps>`` 命令行參數覆蓋（設為 ``0`` 則是不限制影格率）。
 
-\ **Note:** This property is only read when the project starts. To change the rendering FPS cap at runtime, set :ref:`Engine.max_fps<class_Engine_property_max_fps>` instead.
+\ **注意：**\ 這個屬性僅在專案啟動時讀取。要在執行時修改渲染 FPS 上限，請改為設定 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2567,7 +2567,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **application/run/print_header** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/run/print_header>`
 
-If ``true``, the engine header is printed in the console on startup. This header describes the current version of the engine, as well as the renderer being used. This behavior can also be disabled on the command line with the ``--no-header`` option.
+如果為 ``true``\ ，則啟動時在控制台中輸出引擎標頭。該標頭描述了引擎的目前版本以及正在使用的渲染器。也可以使用 ``--no-header`` 選項在命令行上停用該行為。
 
 .. rst-class:: classref-item-separator
 
@@ -2615,13 +2615,13 @@ If ``true``, the engine header is printed in the console on startup. This header
 
 :ref:`String<class_String>` **audio/driver/driver** :ref:`🔗<class_ProjectSettings_property_audio/driver/driver>`
 
-Specifies the audio driver to use. This setting is platform-dependent as each platform supports different audio drivers. If left empty, the default audio driver will be used.
+指定要使用的音訊驅動程式。這個設定與平台有關，因為不同的平台支援不同的音訊驅動。如果留空，將使用預設的音訊驅動程式。
 
-The ``Dummy`` audio driver disables all audio playback and recording, which is useful for non-game applications as it reduces CPU usage. It also prevents the engine from appearing as an application playing audio in the OS' audio mixer.
+\ ``Dummy`` 音訊驅動程式會停用所有的音訊播放和錄制，對非遊戲應用程式很有用，因為會減少對 CPU 的使用。它還可以防止引擎作為正在播放音訊的應用程式出現在作業系統的音訊混合器中。
 
-To query the value that is being used at run-time (which may be overridden by command-line arguments or headless mode), use :ref:`AudioServer.get_driver_name()<class_AudioServer_method_get_driver_name>`.
+要查詢在執行時使用的值（該值可能會被命令行參數或無頭模式覆蓋），請使用 :ref:`AudioServer.get_driver_name()<class_AudioServer_method_get_driver_name>`\ 。
 
-\ **Note:** The driver in use can be overridden at runtime via the ``--audio-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+\ **注意：**\ 執行時可以通過 ``--audio-driver`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 覆蓋所使用的驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -2633,9 +2633,9 @@ To query the value that is being used at run-time (which may be overridden by co
 
 :ref:`bool<class_bool>` **audio/driver/enable_input** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/driver/enable_input>`
 
-If ``true``, microphone input will be allowed. This requires appropriate permissions to be set when exporting to Android or iOS.
+如果為 ``true``\ ，會允許麥克風輸入。匯出到 Android 和 iOS 時需要設定合適的權限。
 
-\ **Note:** If the operating system blocks access to audio input devices (due to the user's privacy settings), audio capture will only return silence. On Windows, make sure that apps are allowed to access the microphone in the OS' privacy settings.
+\ **注意：**\ 如果作業系統（根據該使用者的隱私設定）阻止了對音訊輸入裝置的存取，那麼音訊捕獲只會回傳靜音。在 Windows 上，請確保在作業系統的隱私設定中允許應用對麥克風的存取。
 
 .. rst-class:: classref-item-separator
 
@@ -2647,11 +2647,11 @@ If ``true``, microphone input will be allowed. This requires appropriate permiss
 
 :ref:`int<class_int>` **audio/driver/mix_rate** = ``44100`` :ref:`🔗<class_ProjectSettings_property_audio/driver/mix_rate>`
 
-Target mixing rate used for audio (in Hz). In general, it's better to not touch this and leave it to the host operating system.
+音訊使用的目標混音率（單位為赫茲）。一般來說最好不要修改這個設定，將其留給宿主作業系統處理。
 
-\ **Note:** On iOS and macOS, mixing rate is determined by audio driver, this value is ignored.
+\ **注意：**\ 在 iOS 和 macOS 上，混音率由音訊驅動決定，會忽略該值。
 
-\ **Note:** Input and output mixing rates might be different. Use :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` and :ref:`AudioServer.get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` to get actual values.
+\ **注意：**\ 輸入混音率和輸出混音率可能不同。請使用 :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` 和 :ref:`AudioServer.get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` 取得實際的值。
 
 .. rst-class:: classref-item-separator
 
@@ -2675,13 +2675,13 @@ Target mixing rate used for audio (in Hz). In general, it's better to not touch 
 
 :ref:`int<class_int>` **audio/driver/output_latency** = ``15`` :ref:`🔗<class_ProjectSettings_property_audio/driver/output_latency>`
 
-Specifies the preferred output latency in milliseconds for audio. Lower values will result in lower audio latency at the cost of increased CPU usage. Low values may result in audible crackling on slower hardware.
+指定音訊的首選輸出延遲，單位為毫秒。較低的值將導致較低的音訊延遲，但會增加 CPU 使用率。低值可能會導致在較慢的硬體上發出可聽見的破裂聲。
 
-Audio output latency may be constrained by the host operating system and audio hardware drivers. If the host can not provide the specified audio output latency then Godot will attempt to use the nearest latency allowed by the host. As such you should always use :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>` to determine the actual audio output latency.
+音訊輸出延遲可能會受到主機作業系統和音訊硬體驅動程式的限制。如果主機無法提供指定的音訊輸出延遲，那麼 Godot 將嘗試使用主機允許的最近延遲。因此，應該始終使用 :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>` 來確定實際的音訊輸出延遲。
 
-Audio output latency can be overridden using the ``--audio-output-latency <ms>`` command line argument.
+音訊輸出延遲可以使用 ``--audio-output-latency <ms>`` 命令行參數覆蓋。
 
-\ **Note:** This setting is ignored on Android.
+\ **注意：**\ 在 Android 上會忽略這個設定。
 
 .. rst-class:: classref-item-separator
 
@@ -2705,7 +2705,7 @@ Audio output latency can be overridden using the ``--audio-output-latency <ms>``
 
 :ref:`float<class_float>` **audio/general/2d_panning_strength** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_audio/general/2d_panning_strength>`
 
-所有 :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` 節點的聲像效果的基本強度。可以使用 :ref:`AudioStreamPlayer2D.panning_strength<class_AudioStreamPlayer2D_property_panning_strength>` 在每個節點上進一步縮放聲像強度。\ ``0.0`` 的值會完全禁用身歷聲聲像，只保留音量衰減。如果聲音恰好位於聽者的左側（或右側），則 ``1.0`` 的值會使其中一個通道完全靜音。
+所有 :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` 節點的聲像效果的基本強度。可以使用 :ref:`AudioStreamPlayer2D.panning_strength<class_AudioStreamPlayer2D_property_panning_strength>` 在每個節點上進一步縮放聲像強度。\ ``0.0`` 的值會完全停用身歷聲聲像，只保留音量衰減。如果聲音恰好位於聽者的左側（或右側），則 ``1.0`` 的值會使其中一個通道完全靜音。
 
 \ ``0.5`` 的預設值是針對耳機進行調諧的。當使用揚聲器時，可能會發現較低的值效果更好，因為與耳機相比，揚聲器的身歷聲分離度較低。
 
@@ -2719,9 +2719,9 @@ Audio output latency can be overridden using the ``--audio-output-latency <ms>``
 
 :ref:`float<class_float>` **audio/general/3d_panning_strength** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_audio/general/3d_panning_strength>`
 
-The base strength of the panning effect for all :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` nodes. The panning strength can be further scaled on each Node using :ref:`AudioStreamPlayer3D.panning_strength<class_AudioStreamPlayer3D_property_panning_strength>`. A value of ``0.0`` disables stereo panning entirely, leaving only volume attenuation in place. A value of ``1.0`` completely mutes one of the channels if the sound is located exactly to the left (or right) of the listener.
+所有 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 節點的聲像效果的基本強度。可以使用 :ref:`AudioStreamPlayer3D.panning_strength<class_AudioStreamPlayer3D_property_panning_strength>` 在每個節點上進一步縮放聲像強度。\ ``0.0`` 的值會完全停用立體聲聲像，只保留音量衰減。如果聲音恰好位於聽者的左側（或右側），則 ``1.0`` 的值會使其中一個通道完全靜音。
 
-The default value of ``0.5`` is tuned for headphones which means that the opposite side channel goes no lower than 50% of the volume of the nearside channel. You may find that you can set this value higher for speakers to have the same effect since both ears can hear from each speaker.
+預設值 ``0.5`` 是針對耳機進行調諧的，對向聲道的音量不會低於近側聲道音量的 50%。當使用揚聲器時，你可能會發現將這個值設定得更高可以達到相同的效果，因為雙耳都可以從各個揚聲器聽到聲音。
 
 .. rst-class:: classref-item-separator
 
@@ -2735,9 +2735,9 @@ The default value of ``0.5`` is tuned for headphones which means that the opposi
 
 **實驗性：** 此屬性可能在未來版本中變更或移除。
 
-Specifies the default playback type of the platform.
+指定各平台的預設回放型別。
 
-The default value is set to **Stream**, as most platforms have no issues mixing streams.
+預設值為 **Stream**\ ，因為大多數平台可以正常進行混流。
 
 .. rst-class:: classref-item-separator
 
@@ -2751,11 +2751,11 @@ The default value is set to **Stream**, as most platforms have no issues mixing 
 
 **實驗性：** 此屬性可能在未來版本中變更或移除。
 
-Specifies the default playback type of the Web platform.
+指定 Web 平台的預設回放型別。
 
-The default value is set to **Sample** as the Web platform is not suited to mix audio streams outside of the Web Audio API, especially when exporting a single-threaded game. **Sample** allows for lower latency on the web platform at the cost of flexibility (:ref:`AudioEffect<class_AudioEffect>`\ s are not supported).
+預設值為 **Sample**\ ，因為 Web 平台不適合在 Web Audio API 以外混合音訊流，匯出為單執行緒遊戲時尤為明顯。\ **Sample** 即取樣，能夠犧牲靈活性（不支援 :ref:`AudioEffect<class_AudioEffect>`\ ）換取 Web 平台上更低的延遲。
 
-\ **Warning:** Forcing **Stream** on the Web platform may cause high audio latency and crackling, especially when exporting a multi-threaded game.
+\ **警告：**\ 在 Web 平台上強制使用 **Stream** 可能造成較大的音訊延遲和爆音，匯出為多執行緒遊戲時尤為明顯。
 
 .. rst-class:: classref-item-separator
 
@@ -2767,9 +2767,9 @@ The default value is set to **Sample** as the Web platform is not suited to mix 
 
 :ref:`bool<class_bool>` **audio/general/ios/mix_with_others** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/ios/mix_with_others>`
 
-Sets the `mixWithOthers <https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions/1616611-mixwithothers>`__ option for the AVAudioSession on iOS. This will override the mix behavior, if the category is set to ``Play and Record``, ``Playback``, or ``Multi Route``.
+設定 iOS 的 AVAudioSession 的 `mixWithOthers <https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions/1616611-mixwithothers>`__ 選項。當類別為 ``Play and Record``\ 、\ ``Playback``\ 、\ ``Multi Route`` 時會覆蓋混音行為。
 
-\ ``Ambient`` always has this set per default.
+\ ``Ambient`` 預設會設定這個選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2781,7 +2781,7 @@ Sets the `mixWithOthers <https://developer.apple.com/documentation/avfaudio/avau
 
 :ref:`int<class_int>` **audio/general/ios/session_category** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/general/ios/session_category>`
 
-Sets the `AVAudioSessionCategory <https://developer.apple.com/documentation/avfaudio/avaudiosessioncategory>`__ on iOS. Use the ``Playback`` category to get sound output, even if the phone is in silent mode.
+設定 iOS 的 `AVAudioSessionCategory <https://developer.apple.com/documentation/avfaudio/avaudiosessioncategory>`__\ 。如果需要讓手機在靜音模式時也進行聲音輸出，請使用 ``Playback`` 類別。
 
 .. rst-class:: classref-item-separator
 
@@ -2793,9 +2793,9 @@ Sets the `AVAudioSessionCategory <https://developer.apple.com/documentation/avfa
 
 :ref:`bool<class_bool>` **audio/general/text_to_speech** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/text_to_speech>`
 
-If ``true``, text-to-speech support is enabled on startup, otherwise it is enabled the first time any TTS method is used. See also :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` and :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
+如果為 ``true``\ ，則文字轉語音（Text-to-Speech，TTS）支援會在啟動時啟用，否則會在首次使用任意 TTS 方法時啟用，另見 :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` 和 :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`\ 。
 
-\ **Note:** Enabling TTS can cause additional idle CPU usage and interfere with the sleep mode, so consider disabling it if TTS is not used.
+\ **注意：**\ 啟用 TTS 會增加空閒 CPU 的佔用，影響睡眠模式，所以請在不需要 TTS 時考慮將其關閉。
 
 .. rst-class:: classref-item-separator
 
@@ -2807,7 +2807,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`int<class_int>` **audio/video/video_delay_compensation_ms** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/video/video_delay_compensation_ms>`
 
-Setting to hardcode audio delay when playing video. Best to leave this unchanged unless you know what you are doing.
+播放影片時設定為寫死音訊延遲。除非你知道自己在做甚麼，否則最好保持不變。
 
 .. rst-class:: classref-item-separator
 
@@ -2891,7 +2891,7 @@ Zstandard 的預設壓縮層級。影響壓縮的場景和資源。較高的級�
 
 :ref:`Color<class_Color>` **debug/canvas_items/debug_redraw_color** = ``Color(1, 0.2, 0.2, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/canvas_items/debug_redraw_color>`
 
-If canvas item redraw debugging is active, this color will be flashed on canvas items when they redraw.
+如果畫布項重繪除錯處於活動狀態，則畫布項重繪時會使用這個顏色進行閃光。
 
 .. rst-class:: classref-item-separator
 
@@ -2903,7 +2903,7 @@ If canvas item redraw debugging is active, this color will be flashed on canvas 
 
 :ref:`float<class_float>` **debug/canvas_items/debug_redraw_time** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_debug/canvas_items/debug_redraw_time>`
 
-If canvas item redraw debugging is active, this will be the time the flash will last each time they redraw.
+如果畫布項重繪除錯處於活動狀態，則這個選項表示畫布項每次重繪時閃光的持續時間。
 
 .. rst-class:: classref-item-separator
 
@@ -2915,7 +2915,7 @@ If canvas item redraw debugging is active, this will be the time the flash will 
 
 :ref:`bool<class_bool>` **debug/file_logging/enable_file_logging** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/enable_file_logging>`
 
-If ``true``, logs all output and error messages to files. See also :ref:`debug/file_logging/log_path<class_ProjectSettings_property_debug/file_logging/log_path>`, :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`, and :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`.
+如果為 ``true``\ ，則會將所有輸出和錯誤訊息儲存在檔案中。另見 :ref:`debug/file_logging/log_path<class_ProjectSettings_property_debug/file_logging/log_path>`\ 、\ :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`\ 、\ :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2939,9 +2939,9 @@ If ``true``, logs all output and error messages to files. See also :ref:`debug/f
 
 :ref:`String<class_String>` **debug/file_logging/log_path** = ``"user://logs/godot.log"`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/log_path>`
 
-Path at which to store log files for the project. Using a path under ``user://`` is recommended.
+專案記錄檔的儲存路徑。建議使用 ``user://`` 中的路徑。
 
-This can be specified manually on the command line using the ``--log-file <file>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`. If this command line argument is specified, log rotation is automatically disabled (see :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`).
+也可以使用 ``--log-file <file>`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 手動設定。如果指定了這個命令行參數，則會自動停用記錄輪換（見 :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2953,9 +2953,9 @@ This can be specified manually on the command line using the ``--log-file <file>
 
 :ref:`int<class_int>` **debug/file_logging/max_log_files** = ``5`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/max_log_files>`
 
-Specifies the maximum number of log files allowed (used for rotation). Set to ``1`` to disable log file rotation.
+指定允許的最大記錄檔數（用於輪換）。設定為 ``1`` 將停用記錄檔輪轉。
 
-If the ``--log-file <file>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used, log rotation is always disabled.
+如果使用 ``--log-file <file>`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>` ，則始終停用記錄輪轉。
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ If the ``--log-file <file>`` :doc:`command line argument <../tutorials/editor/co
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_false** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_false>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``false``.
+設為 **Warn** 或 **Error** 時，會在 ``assert`` 呼叫永遠求值為 ``false`` 時對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -2979,7 +2979,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_true** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_true>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``true``.
+設為 **Warn** 或 **Error** 時，會在 ``assert`` 呼叫永遠求值為 ``true`` 時對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -2991,7 +2991,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_capture_reassignment** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_capture_reassignment>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable captured by a lambda is reassigned, since this does not modify the outer local variable.
+設為 **Warn** 或 **Error** 時，如果為 lambda 捕獲的區域變數重新賦值，就會對應產生警告或錯誤，因為這樣做並不會修改外部的區域變數。
 
 .. rst-class:: classref-item-separator
 
@@ -3003,7 +3003,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier contains characters that can be confused with something else, like when mixing different alphabets.
+設為 **Warn** 或 **Error** 時，會在標識符中的字元可能與其他東西產生混淆時對應產生警告或錯誤，例如混用不同的字母表。
 
 .. rst-class:: classref-item-separator
 
@@ -3015,7 +3015,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_declaration** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier declared in the nested block has the same name as an identifier declared below in the parent block.
+設為 **Warn** 或 **Error** 時，會在巢狀塊中聲明的標識符與父塊中下面聲明的標識符同名時，分別產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3027,7 +3027,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_usage** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_usage>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier that will be shadowed below in the block is used.
+設為 **Warn** 或 **Error** 時，會在該塊下的一個將被隱藏的標識符被使用時，分別產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_temporary_modification** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_temporary_modification>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a built-in property of type ``Packed*Array`` is modified using a complex assignment chain or a non-``const`` method call. In this case, you are only modifying a temporary value, and the property's value remains unchanged.
+當設定為 **Warn（警告）** 或 **Error（錯誤）** 時，如果你通過複雜的賦值鏈，或者呼叫非 ``const（非常數）`` 的方法來修改一個 ``Packed*Array`` 型別的內建屬性，系統會分別產生一條警告或報錯。在這種情況下，你實際上僅僅是在修改一個暫時的副本數值，而原本的屬性值根本不會發生任何改變。
 
 .. rst-class:: classref-item-separator
 
@@ -3051,9 +3051,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/deprecated_keyword** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/deprecated_keyword>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when deprecated keywords are used.
+設為 **Warn** 或 **Error** 時，會在使用已啟用的關鍵字時對應產生警告或錯誤。
 
-\ **Note:** There are currently no deprecated keywords, so this warning is never produced.
+\ **注意：**\ 目前沒有棄用的關鍵字，因此不會產生該警告。
 
 .. rst-class:: classref-item-separator
 
@@ -3065,13 +3065,13 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Dictionary<class_Dictionary>` **debug/gdscript/warnings/directory_rules** = ``{ "res://addons": 0 }`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/directory_rules>`
 
-The rules for including or excluding scripts when generating warnings, as a dictionary. Each rule is an entry consisting of a directory path (key) and a decision (value). When trying to generate a warning, the GDScript parser chooses the most specific rule, i.e. the most nested directory containing the script. If the decision is **Exclude**, warnings are not generated for this script. If the decision is **Include** or the script doesn't satisfy any of the rules, the warning configuration specified in the Project Settings is applied.
+生成警告時包含或排除腳本的規則，以字典形式表示。每條規則都是一個條目，由目錄路徑（鍵）和決策（值）組成。嘗試生成警告時，GDScript 解析器會選擇最具體的規則，即包含該腳本的最深層目錄。如果決策是 **Exclude**\ ，則不會為此腳本生成警告。如果決策是 **Include** 或腳本不滿足任何規則，則會應用項目設定中指定的警告設定。
 
-It is recommended to include your own addons/libraries, either project-specific or actively being developed at the moment. Third-party or project-agnostic addons/libraries should be excluded, as they may be incompatible with the project's warning configuration.
+建議包含你自己的外掛/庫，無論是項目特定的還是目前正在積極開發的。第三方或與項目無關的外掛/庫應排除在外，因為它們可能與項目的警告設定不相容。
 
-\ **Note:** It is not recommended to remove or change the rule for ``"res://addons"`` as the project's warning configuration may break third-party addons. Instead, consider including individual addons, if necessary.
+\ **注意：**\ 不建議刪除或更改 ``"res://addons"`` 的規則，因為項目的警告設定可能會破壞第三方外掛。如有必要，可以考慮新增單獨的外掛。
 
-\ **Note:** The editor does not check whether the specified paths are existing directories. It also does not automatically update these paths when directories are moved.
+\ **注意：**\ 編輯器不會檢查指定的路徑是否為已存在的目錄。當目錄被移動時，它也不會自動更新這些路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -3083,7 +3083,7 @@ It is recommended to include your own addons/libraries, either project-specific 
 
 :ref:`int<class_int>` **debug/gdscript/warnings/empty_file** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/empty_file>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an empty file is parsed.
+設為 **Warn** 或 **Error** 時，會在解析空檔案時對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3095,7 +3095,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/gdscript/warnings/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enable>`
 
-如果為 ``true``\ ，則啟用特定的 GDScript 警告（請參閱 ``debug/gdscript/warnings/*`` 設定）。如果為 ``false``\ ，則禁用所有 GDScript 警告。
+如果為 ``true``\ ，則啟用特定的 GDScript 警告（請參閱 ``debug/gdscript/warnings/*`` 設定）。如果為 ``false``\ ，則停用所有 GDScript 警告。
 
 .. rst-class:: classref-item-separator
 
@@ -3107,7 +3107,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/enum_variable_without_default** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enum_variable_without_default>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable has an enum type but no explicit default value, but only if the enum does not contain ``0`` as a valid value.
+設為 **Warn** 或 **Error** 時，如果變數具有列舉型別但沒有明確的預設值，且列舉不包含 ``0`` 作為有效值時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3119,7 +3119,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/get_node_default_without_onready** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/get_node_default_without_onready>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when :ref:`Node.get_node()<class_Node_method_get_node>` (or the shorthand ``$``) is used as default value of a class variable without the ``@onready`` annotation.
+設為 **Warn** 或 **Error** 時，當 :ref:`Node.get_node()<class_Node_method_get_node>`\ （或簡寫 ``$``\ ）被用作一個沒有 ``@onready`` 注解的類變數的預設值時，會分別產生一個警告或一個錯誤 。
 
 .. rst-class:: classref-item-separator
 
@@ -3131,7 +3131,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/incompatible_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/incompatible_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a ternary operator may emit values with incompatible types.
+設為 **Warn** 或 **Error** 時，當三元運算符可能發出具有不相容型別的值時，分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3143,7 +3143,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inference_on_variant** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inference_on_variant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a static inferred type uses a :ref:`Variant<class_Variant>` as initial value, which makes the static type to also be Variant.
+設為 **Warn** 或 **Error** 時，當靜態推斷型別使用一個 :ref:`Variant<class_Variant>` 作為初始值時，這使得靜態型別也成為 Variant，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3155,9 +3155,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inferred_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inferred_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable, constant, or parameter has an implicitly inferred static type. In GDScript, type inference is performed by declaring a variable with ``:=`` instead of ``=`` and leaving out the type specifier. For example, ``var x := 1`` will *infer* the :ref:`int<class_int>` type, while ``var x: int = 1`` explicitly declares the variable as :ref:`int<class_int>`.
+設為 **Warn** 或 **Error** 時，當變數、常數或參數具有隱式推斷的靜態型別時，分別產生警告或錯誤。在 GDScript 中，型別推斷的執行是通過使用 ``:=`` 而不是 ``=`` 聲明變數，並且省略型別說明符。例如，\ ``var x := 1`` 將\ *推斷*\ 為 :ref:`int<class_int>` 型別，而 ``var x: int = 1`` 則明確將變數聲明為 :ref:`int<class_int>`\ 。
 
-\ **Note:** This warning is recommended *in addition* to :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>` if you want to always specify the type explicitly. Having ``INFERRED_DECLARATION`` warning level higher than ``UNTYPED_DECLARATION`` warning level makes little sense and is not recommended.
+\ **注意：**\ 如果你希望始終顯式指定型別，則推薦該警告，\ *除了* :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`\ 。使 ``INFERRED_DECLARATION`` 警告層級高於 ``UNTYPED_DECLARATION`` 警告層級意義不大，且不被推薦。
 
 .. rst-class:: classref-item-separator
 
@@ -3169,7 +3169,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_cast** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum without an explicit cast.
+設為 **Warn** 或 **Error** 時，當嘗試將整數用作沒有顯式轉換的列舉時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3181,7 +3181,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_match** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_match>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum when there is no matching enum member for that numeric value.
+設為 **Warn** 或 **Error** 時，當在嘗試將整數用作列舉，且沒有與該數值匹配的列舉成員時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3193,7 +3193,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/integer_division** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/integer_division>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when dividing an integer by another integer (the decimal part will be discarded).
+設為 **Warn** 或 **Error** 時，當一個整數除以另一個整數時（小數部分將被丟棄），會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3205,7 +3205,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_await** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a coroutine without ``await``.
+設為 **Warn** 或 **Error** 時，當在呼叫協程時沒有使用 ``await``\ ，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3217,7 +3217,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_tool** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_tool>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the base class script has the ``@tool`` annotation, but the current class script does not have it.
+設為 **Warn** 或 **Error** 時，會在基底類別腳本帶有 ``@tool`` 注解，但目前類腳本沒有該注解時對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3229,7 +3229,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/narrowing_conversion** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/narrowing_conversion>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when passing a floating-point value to a function that expects an integer (it will be converted and lose precision).
+設為 **Warn** 或 **Error** 時，在將浮點值傳遞給需要整數的函式時（它將被轉換並失去精度），會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3241,7 +3241,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/native_method_override** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/native_method_override>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a method in the script overrides a native method, because it may not behave as expected.
+設為 **Warn** 或 **Error** 時，當腳本中的方法覆蓋本機方法，因為它可能不會按預期執行時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3253,7 +3253,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/onready_with_export** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/onready_with_export>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@onready`` annotation is used together with the ``@export`` annotation, since it may not behave as expected.
+設為 **Warn** 或 **Error** 時，當 ``@onready`` 注解與 ``@export`` 注解一起使用時，因為它可能不會按預期執行，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3265,7 +3265,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_await** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function that is not a coroutine is called with await.
+設為 **Warn** 或 **Error** 時，當使用 await 呼叫一個非協程的函式時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3277,7 +3277,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_static_unload** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_static_unload>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@static_unload`` annotation is used in a script without any static variables.
+設為 **Warn** 或 **Error** 時，會在 ``@static_unload`` 注解用於不包含任何靜態變數的腳本時對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3289,7 +3289,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/gdscript/warnings/renamed_in_godot_4_hint** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/renamed_in_godot_4_hint>`
 
-啟用後，使用自 Godot 3 以來重命名的屬性、列舉或函式，將在發生錯誤時產生一個提示。
+啟用後，使用自 Godot 3 以來重新命名的屬性、列舉或函式，將在發生錯誤時產生一個提示。
 
 .. rst-class:: classref-item-separator
 
@@ -3301,7 +3301,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/return_value_discarded** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/return_value_discarded>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a function without using its return value (by assigning it to a variable or using it as a function argument). These return values are sometimes used to indicate possible errors using the :ref:`Error<enum_@GlobalScope_Error>` enum.
+設為 **Warn** 或 **Error** 時，當呼叫函式卻不使用其回傳值（通過將其分配給變數或將其用作函式參數）時，會分別產生一個警告或一個錯誤。這些回傳值有時使用 :ref:`Error<enum_@GlobalScope_Error>` 列舉來指示可能的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3313,7 +3313,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_global_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_global_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when defining a local or member variable, signal, or enum that would have the same name as a built-in function or global class name, thus shadowing it.
+設為 **Warn** 或 **Error** 時，當定義一個與內建函式或全域類同名的區域變數或成員變數、訊號或列舉，從而隱藏該內建函式或全域類時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3325,7 +3325,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
+設為 **Warn** 或 **Error** 時，當區域變數或區域常數隱藏了目前類定義成員時，會對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+設為 **Warn** 或 **Error** 時，當區域變數或區域常數隱藏了基底類別定義成員時，會對應產生警告或錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3349,7 +3349,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_expression** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_expression>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling an expression that may have no effect on the surrounding code, such as writing ``2 + 2`` as a statement.
+設為 **Warn** 或 **Error** 時，當呼叫可能對周圍程式碼沒有影響的運算式，例如將 ``2 + 2`` 寫為語句時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3361,7 +3361,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a ternary expression that may have no effect on the surrounding code, such as writing ``42 if active else 0`` as a statement.
+設為 **Warn** 或 **Error** 時，當呼叫可能對周圍程式碼沒有影響的三元運算式，例如將 ``42 if active else 0`` 寫為語句時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3373,7 +3373,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/static_called_on_instance** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/static_called_on_instance>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a static method from an instance of a class instead of from the class directly.
+設為 **Warn** 或 **Error** 時，當從類的實例而不是直接從類呼叫靜態方法時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3385,7 +3385,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using a variable that wasn't previously assigned.
+設為 **Warn** 或 **Error** 時，當使用以前未分配的變數時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3397,7 +3397,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable_op_assign** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable_op_assign>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when assigning a variable using an assignment operator like ``+=`` if the variable wasn't previously assigned.
+設為 **Warn** 或 **Error** 時，當使用 ``+=`` 等賦值運算符分配一個變數，且該變數以前未分配時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3409,7 +3409,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_code** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_code>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when unreachable code is detected (such as after a ``return`` statement that will always be executed).
+設為 **Warn** 或 **Error** 時，當檢測到無法存取的程式碼（例如始終在 ``return`` 語句之後被執行的程式碼）時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3421,7 +3421,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_pattern** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_pattern>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an unreachable ``match`` pattern is detected.
+設為 **Warn** 或 **Error** 時，當檢測到無法到達的 ``match`` 模式時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3433,7 +3433,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_call_argument** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_call_argument>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using an expression whose type may not be compatible with the function parameter expected.
+設為 **Warn** 或 **Error** 時，當使用型別可能與函式參數預期的型別不相容的運算式時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3445,7 +3445,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_cast** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a :ref:`Variant<class_Variant>` value is cast to a non-Variant.
+設為 **Warn** 或 **Error** 時，當 :ref:`Variant<class_Variant>` 值轉換為非 Variant 時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3457,7 +3457,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_method_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_method_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a method whose presence is not guaranteed at compile-time in the class.
+設為 **Warn** 或 **Error** 時，當呼叫類中不能保證在編譯時存在的方法時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3469,7 +3469,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_property_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when accessing a property whose presence is not guaranteed at compile-time in the class.
+設為 **Warn** 或 **Error** 時，當存取類中不能保證在編譯時存在的屬性時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3481,7 +3481,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_void_return** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_void_return>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when returning a call from a ``void`` function when such call cannot be guaranteed to be also ``void``.
+設為 **Warn** 或 **Error** 時，當從 ``void`` 函式回傳一個呼叫，且無法保證該呼叫也是 ``void`` 時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3493,9 +3493,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/untyped_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable or parameter has no static type, or if a function has no static return type.
+設為 **Warn** 或 **Error** 時，當變數或參數沒有靜態型別，或函式沒有靜態回傳型別時，會分別產生一個警告或一個錯誤。
 
-\ **Note:** This warning is recommended together with :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` to help achieve type safety.
+\ **注意：**\ 建議將該警告與 :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` 一起使用，以協助實現型別安全。
 
 .. rst-class:: classref-item-separator
 
@@ -3507,7 +3507,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_local_constant** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_local_constant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local constant is never used.
+設為 **Warn** 或 **Error** 時，當一個區域常數從未被使用時，分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3519,7 +3519,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_parameter** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_parameter>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function parameter is never used.
+設為 **Warn** 或 **Error** 時，當一個函式參數從未使用時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3531,7 +3531,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_private_class_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_private_class_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a private member variable is never used.
+設為 **Warn** 或 **Error** 時，當一個私有成員變數從未被使用時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3543,7 +3543,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_signal** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_signal>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+設為 **Warn** 或 **Error** 時，當訊號在類中聲明但從未明確使用時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3555,7 +3555,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable is unused.
+設為 **Warn** 或 **Error** 時，當一個區域變數未被使用時，會分別產生一個警告或一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3567,7 +3567,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **debug/settings/crash_handler/message** = ``"Please include this when reporting the bug to the project developer."`` :ref:`🔗<class_ProjectSettings_property_debug/settings/crash_handler/message>`
 
-引擎當機時，在回溯之前顯示的消息。預設情況下，由於僅限編輯器的覆蓋會套用於該設定，故該消息僅用於匯出的專案中。
+引擎當機時，在回溯之前顯示的訊息。預設情況下，由於僅限編輯器的覆蓋會套用於該設定，故該訊息僅用於匯出的專案中。
 
 .. rst-class:: classref-item-separator
 
@@ -3591,9 +3591,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/gdscript/always_track_call_stacks** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`
 
-Whether GDScript call stacks will be tracked in release builds, thus allowing :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` to function.
+是否在發佈建置中追蹤 GDScript 呼叫堆疊，從而使 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` 能夠正常工作。
 
-\ **Note:** This setting has no effect on editor builds or debug builds, where GDScript call stacks are tracked regardless.
+\ **注意：**\ 該設定在編輯器建置和除錯建置中無效，始終會追蹤 GDScript 呼叫堆疊。
 
 .. rst-class:: classref-item-separator
 
@@ -3605,11 +3605,11 @@ Whether GDScript call stacks will be tracked in release builds, thus allowing :r
 
 :ref:`bool<class_bool>` **debug/settings/gdscript/always_track_local_variables** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/gdscript/always_track_local_variables>`
 
-Whether GDScript local variables will be tracked in all builds, including export builds, thus allowing :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` to capture them when enabling its ``include_variables`` parameter.
+是否在包括匯出建置在內的所有建置中追蹤 GDScript 區域變數，從而使 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` 在啟用 ``include_variables`` 參數時能夠捕獲區域變數。
 
-Enabling this comes at the cost of roughly 50 bytes of memory per local variable, for every compiled class in the entire project, so can be several MiB in larger projects.
+啟用的代價是專案中每個編譯的類中每個區域變數會多耗費約 50 位元組的記憶體，大型專案可能總體達到多乾 MiB。
 
-\ **Note:** This setting has no effect when running the game from the editor, where GDScript local variables are tracked regardless.
+\ **注意：**\ 該設定在編輯器建置和除錯建置中無效，始終會追蹤 GDScript 區域變數。
 
 .. rst-class:: classref-item-separator
 
@@ -3633,9 +3633,9 @@ Enabling this comes at the cost of roughly 50 bytes of memory per local variable
 
 :ref:`bool<class_bool>` **debug/settings/physics_interpolation/enable_warnings** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/settings/physics_interpolation/enable_warnings>`
 
-If ``true``, enables warnings which can help pinpoint where nodes are being incorrectly updated, which will result in incorrect interpolation and visual glitches.
+如果為 ``true``\ ，則會啟用警告，協助排查錯誤地更新節點的場合，錯誤的更新會導致插值問題和顯示問題。
 
-When a node is being interpolated, it is essential that the transform is set during :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (during a physics tick) rather than :ref:`Node._process()<class_Node_private_method__process>` (during a frame).
+對節點進行插值時，必須在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ （在物理週期中）而不是 :ref:`Node._process()<class_Node_private_method__process>`\ （在影格中）設定變換。
 
 .. rst-class:: classref-item-separator
 
@@ -3659,7 +3659,7 @@ When a node is being interpolated, it is essential that the transform is set dur
 
 :ref:`int<class_int>` **debug/settings/profiler/max_timestamp_query_elements** = ``256`` :ref:`🔗<class_ProjectSettings_property_debug/settings/profiler/max_timestamp_query_elements>`
 
-Maximum number of timestamp query elements allowed per frame for visual profiling.
+每影格允許用於可視分析的時間戳記查詢元素的最大數量。
 
 .. rst-class:: classref-item-separator
 
@@ -3683,7 +3683,7 @@ Maximum number of timestamp query elements allowed per frame for visual profilin
 
 :ref:`bool<class_bool>` **debug/settings/stdout/print_gpu_profile** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/print_gpu_profile>`
 
-每秒將 GPU 設定檔資訊列印到標準輸出。這包括平均每影格需要 GPU 算繪多長時間，細分為算繪管道的不同步驟，例如 CanvasItems、陰影、輝光等。
+每秒將 GPU 設定檔資訊列印到標準輸出。這包括平均每影格需要 GPU 渲染多長時間，細分為渲染管道的不同步驟，例如 CanvasItems、陰影、輝光等。
 
 .. rst-class:: classref-item-separator
 
@@ -3695,7 +3695,7 @@ Maximum number of timestamp query elements allowed per frame for visual profilin
 
 :ref:`bool<class_bool>` **debug/settings/stdout/verbose_stdout** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/verbose_stdout>`
 
-運作時將更多資訊列印到標準輸出。它顯示諸如記憶體洩漏、正在載入哪些場景和資源等信息。這也可以使用 ``--verbose`` 或 ``-v`` :doc:`命令列參數 <../tutorials/editor/command_line_tutorial>`\ 來啟用，即使在導出的專案中也是如此。另見 :ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` and :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`\ 。
+運作時將更多資訊列印到標準輸出。它顯示諸如記憶體洩漏、正在載入哪些場景和資源等資訊。這也可以使用 ``--verbose`` 或 ``-v`` :doc:`命令列參數 <../tutorials/editor/command_line_tutorial>`\ 來啟用，即使在匯出的專案中也是如此。另見 :ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` and :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3707,7 +3707,7 @@ Maximum number of timestamp query elements allowed per frame for visual profilin
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/device_limit_exceeded** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/device_limit_exceeded>`
 
-設為 ``true`` 時，當著色器超出裝置極限時會產生警告。目前唯一偵測的設備極限是 Uniform 緩衝的大小。未來會加入更多裝置極限。
+設為 ``true`` 時，當著色器超出裝置極限時會產生警告。目前唯一偵測的裝置極限是 Uniform 緩衝的大小。未來會加入更多裝置極限。
 
 .. rst-class:: classref-item-separator
 
@@ -3719,7 +3719,7 @@ Maximum number of timestamp query elements allowed per frame for visual profilin
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/enable>`
 
-如果為 ``true``\ ，則啟用特定的著色器警告（請參閱 ``debug/shader_language/warnings/*`` 設定）。如果為 ``false``\ ，則禁用所有著色器警告。
+如果為 ``true``\ ，則啟用特定的著色器警告（請參閱 ``debug/shader_language/warnings/*`` 設定）。如果為 ``false``\ ，則停用所有著色器警告。
 
 .. rst-class:: classref-item-separator
 
@@ -3731,7 +3731,7 @@ Maximum number of timestamp query elements allowed per frame for visual profilin
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/float_comparison** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/float_comparison>`
 
-When set to ``true``, produces a warning when two floating-point numbers are compared directly with the ``==`` operator or the ``!=`` operator.
+設為 ``true`` 時，當使用 ``==`` 或 ``!=`` 運算符直接比較兩個浮點數時，會產生警告。
 
 .. rst-class:: classref-item-separator
 
@@ -3755,7 +3755,7 @@ When set to ``true``, produces a warning when two floating-point numbers are com
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/magic_position_write** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/magic_position_write>`
 
-When set to ``true``, produces a warning when the shader contains ``POSITION = vec4(vertex,`` as this was very common code written in Godot 4.2 and earlier that was paired with a QuadMesh to produce a full screen post processes pass. With the switch to reversed z in 4.3, this trick no longer works, as it implicitly relied on the ``VERTEX.z`` being 0.
+當設定為 ``true`` 時，如果著色器包含 ``POSITION = vec4(vertex,``\ ，則會產生警告，因為這是在 Godot 4.2 及更早版本中編寫的非常常見的程式碼，與 QuadMesh 配對以產生一個全螢幕後期處理階段。在 4.3 中切換到反轉 z 後，該技巧不再有效，因為它隱式取決於 ``VERTEX.z`` 為 0。
 
 .. rst-class:: classref-item-separator
 
@@ -4127,7 +4127,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`float<class_float>` **debug/shapes/navigation/2d/agent_path_point_size** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/agent_path_point_size>`
 
-柵格大小（圖元），如果導覽代理啟用了除錯，則會用於算繪該代理的路徑點。
+柵格大小（圖元），如果導覽代理啟用了除錯，則會用於渲染該代理的路徑點。
 
 .. rst-class:: classref-item-separator
 
@@ -4223,7 +4223,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_edge_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_edge_disabled_color>`
 
-用於顯示已禁用導覽網格多邊形邊緣的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
+用於顯示已停用導覽網格多邊形邊緣的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4247,7 +4247,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_face_disabled_color** = ``Color(0.5, 0.5, 0.5, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_face_disabled_color>`
 
-用於顯示已禁用導覽網格多邊形面的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
+用於顯示已停用導覽網格多邊形面的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4271,7 +4271,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/link_connection_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/link_connection_disabled_color>`
 
-被禁用的導覽連結連接的顏色，在除錯功能表中啟用“顯示導覽”時可見。
+被停用的導覽連結連接的顏色，在除錯功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4295,7 +4295,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`float<class_float>` **debug/shapes/navigation/3d/agent_path_point_size** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/agent_path_point_size>`
 
-柵格大小（圖元），如果導覽代理啟用了除錯，則會用於算繪該代理的路徑點。
+柵格大小（圖元），如果導覽代理啟用了除錯，則會用於渲染該代理的路徑點。
 
 .. rst-class:: classref-item-separator
 
@@ -4439,7 +4439,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_edge_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_edge_disabled_color>`
 
-用於顯示已禁用導覽網格多邊形邊緣的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
+用於顯示已停用導覽網格多邊形邊緣的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4463,7 +4463,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_face_disabled_color** = ``Color(0.5, 0.5, 0.5, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_face_disabled_color>`
 
-用於顯示已禁用導覽網格多邊形面的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
+用於顯示已停用導覽網格多邊形面的顏色，在“除錯”功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4487,7 +4487,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/link_connection_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/link_connection_disabled_color>`
 
-被禁用的導覽連結連接的顏色，在除錯功能表中啟用“顯示導覽”時可見。
+被停用的導覽連結連接的顏色，在除錯功能表中啟用“顯示導覽”時可見。
 
 .. rst-class:: classref-item-separator
 
@@ -4523,7 +4523,7 @@ When set to ``true``, produces a warning when the shader contains ``POSITION = v
 
 :ref:`String<class_String>` **display/display_server/driver** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver>`
 
-Sets the driver to be used by the display server. This property can not be edited directly, instead, set the driver using the platform-specific overrides.
+設定顯示伺服器要使用的驅動程式。該屬性不能直接編輯，請改用特定平台的覆蓋項來設定驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -4535,7 +4535,7 @@ Sets the driver to be used by the display server. This property can not be edite
 
 :ref:`String<class_String>` **display/display_server/driver.android** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.android>`
 
-Android override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 Android 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4547,7 +4547,7 @@ Android override for :ref:`display/display_server/driver<class_ProjectSettings_p
 
 :ref:`String<class_String>` **display/display_server/driver.ios** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.ios>`
 
-iOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 iOS 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4559,7 +4559,7 @@ iOS override for :ref:`display/display_server/driver<class_ProjectSettings_prope
 
 :ref:`String<class_String>` **display/display_server/driver.linuxbsd** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.linuxbsd>`
 
-LinuxBSD override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 LinuxBSD 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4571,7 +4571,7 @@ LinuxBSD override for :ref:`display/display_server/driver<class_ProjectSettings_
 
 :ref:`String<class_String>` **display/display_server/driver.macos** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.macos>`
 
-MacOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 macOS 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4583,7 +4583,7 @@ MacOS override for :ref:`display/display_server/driver<class_ProjectSettings_pro
 
 :ref:`String<class_String>` **display/display_server/driver.visionos** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.visionos>`
 
-visionOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 visionOS 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4595,7 +4595,7 @@ visionOS override for :ref:`display/display_server/driver<class_ProjectSettings_
 
 :ref:`String<class_String>` **display/display_server/driver.windows** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.windows>`
 
-Windows override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
+:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 Windows 的覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -4607,7 +4607,7 @@ Windows override for :ref:`display/display_server/driver<class_ProjectSettings_p
 
 :ref:`String<class_String>` **display/mouse_cursor/custom_image** = ``""`` :ref:`🔗<class_ProjectSettings_property_display/mouse_cursor/custom_image>`
 
-滑鼠游標的自訂圖像（最大 256×256）。
+滑鼠游標的自訂影像（最大 256×256）。
 
 .. rst-class:: classref-item-separator
 
@@ -4619,7 +4619,7 @@ Windows override for :ref:`display/display_server/driver<class_ProjectSettings_p
 
 :ref:`Vector2<class_Vector2>` **display/mouse_cursor/custom_image_hotspot** = ``Vector2(0, 0)`` :ref:`🔗<class_ProjectSettings_property_display/mouse_cursor/custom_image_hotspot>`
 
-自訂滑鼠游標圖像的熱點。
+自訂滑鼠游標影像的熱點。
 
 .. rst-class:: classref-item-separator
 
@@ -4643,7 +4643,7 @@ Windows override for :ref:`display/display_server/driver<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **display/window/dpi/allow_hidpi** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/dpi/allow_hidpi>`
 
-如果為 ``true`` ，則允許在 Windows、macOS、Android、iOS 和 Web 上使用 HiDPI 顯示器。如果為 ``false`` ，則在 HiDPI 顯示器上將使用該平臺的低 DPI 退回，這樣會導致視窗模糊或圖元化的方式顯示（並且可能導致各種視窗管理問題）。因此，建議你讓專案支援\ :doc:`多個解析度 <../tutorials/rendering/multiple_resolutions>`\ ，而不是禁用此設定。
+如果為 ``true`` ，則允許在 Windows、macOS、Android、iOS 和 Web 上使用 HiDPI 顯示器。如果為 ``false`` ，則在 HiDPI 顯示器上將使用該平臺的低 DPI 退回，這樣會導致視窗模糊或圖元化的方式顯示（並且可能導致各種視窗管理問題）。因此，建議你讓專案支援\ :doc:`多個解析度 <../tutorials/rendering/multiple_resolutions>`\ ，而不是停用此設定。
 
 \ **注意：**\ 這個設定在 Linux 上無效，因為 Linux 不支援 DPI 感知退回。
 
@@ -4669,9 +4669,9 @@ Windows override for :ref:`display/display_server/driver<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **display/window/frame_pacing/android/enable_frame_pacing** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/frame_pacing/android/enable_frame_pacing>`
 
-Enable Swappy for stable frame pacing on Android. Highly recommended.
+啟用 Swappy，能夠在 Android 上實現穩定影格率。強烈推薦。
 
-\ **Note:** This option will be forced off when using OpenXR.
+\ **注意：**\ 使用 OpenXR 時會強制關閉該選項。
 
 .. rst-class:: classref-item-separator
 
@@ -4683,15 +4683,15 @@ Enable Swappy for stable frame pacing on Android. Highly recommended.
 
 :ref:`int<class_int>` **display/window/frame_pacing/android/swappy_mode** = ``2`` :ref:`🔗<class_ProjectSettings_property_display/window/frame_pacing/android/swappy_mode>`
 
-Swappy mode to use. The options are:
+要使用的 Swappy 模式。可選項有：
 
-- ``pipeline_forced_on``: Try to honor :ref:`Engine.max_fps<class_Engine_property_max_fps>`. Pipelining is always on. This is the same behavior as a desktop PC.
+- ``pipeline_forced_on``\ ：嘗試遵循 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ 。管線始終啟用。這是桌面 PC 的預設行為。
 
-- ``auto_fps_pipeline_forced_on``: Calculate the max FPS automatically. The actual max FPS will be between ``0`` and :ref:`Engine.max_fps<class_Engine_property_max_fps>`. While this sounds convenient, beware that Swappy will often downgrade the max FPS until it finds a value that can be maintained. That means, if your game runs between 40fps and 60fps on a 60hz screen, after some time Swappy will downgrade the max FPS so that the game renders at a perfect 30fps.
+- ``auto_fps_pipeline_forced_on``\ ：自動計算最大 FPS。實際的 max_fps 會在 ``0`` 到 :ref:`Engine.max_fps<class_Engine_property_max_fps>` 之間。雖然聽起來很方便，但請注意，在找到足夠穩定的最大值之前 Swappy 經常會降低最大 FPS。也就是說，如果你的遊戲在 60hz 螢幕上執行在 40fps 和 60fps 之間，那麼在一段時間後 Swappy 就會將最大 FPS 降低，讓遊戲精准地使用 30fps 渲染。
 
-- ``auto_fps_auto_pipeline``: Same as ``auto_fps_pipeline_forced_on``, but if Swappy detects that rendering is very fast (for example it takes less than 8ms to render on a 60hz screen), Swappy will disable pipelining to minimize input latency. This is the default.
+- ``auto_fps_auto_pipeline``\ ：與 ``auto_fps_pipeline_forced_on`` 相同，但是如果 Swappy 檢測到渲染極快（例如在 60hz 螢幕上耗時小於 8ms），那麼 Swappy 就會停用管線，盡可能降低輸入延遲。這是預設行為。
 
-\ **Note:** If :ref:`Engine.max_fps<class_Engine_property_max_fps>` is ``0``, the actual max FPS will be considered to be the screen's refresh rate (often 60hz, 90hz, or 120hz, depending on device model and OS settings).
+\ **注意：**\ 如果 :ref:`Engine.max_fps<class_Engine_property_max_fps>` 為 ``0``\ ，那麼就會把螢幕的刷新率當作實際的最大 FPS（通常是 60hz、90hz、120hz 之類的，取決於裝置型號和作業系統設定）。
 
 .. rst-class:: classref-item-separator
 
@@ -4717,9 +4717,9 @@ Swappy mode to use. The options are:
 
 :ref:`bool<class_bool>` **display/window/hdr/request_hdr_output** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/hdr/request_hdr_output>`
 
-If ``true``, HDR output is requested for the main window and the editor. The main window and editor will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+如果為 ``true``\ ，則為主視窗和編輯器請求 HDR 輸出。如果視窗在不同顯示器間移動、顯示器功能發生變化或系統設定被修改，主視窗和編輯器將自動在 HDR 和 SDR 之間切換。這將在內部強制主 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 屬性被啟用。視窗的所有其他 :ref:`SubViewport<class_SubViewport>` 都必須手動啟用其 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 屬性才能產生 HDR 輸出。
 
-\ **Note:** This property is only read when the project starts. To change this property at runtime, set :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+\ **注意：** 此屬性僅在專案啟動時讀取。若要在執行時更改此屬性，請設定 :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4731,7 +4731,7 @@ If ``true``, HDR output is requested for the main window and the editor. The mai
 
 :ref:`bool<class_bool>` **display/window/ios/allow_high_refresh_rate** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/ios/allow_high_refresh_rate>`
 
-如果為 ``true``\ ，則允許支援高更新率“ProMotion”的 iOS 裝置以每秒 120 影格的速度算繪。
+如果為 ``true``\ ，則允許支援高更新率“ProMotion”的 iOS 裝置以每秒 120 影格的速度渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -4781,7 +4781,7 @@ If ``true``, HDR output is requested for the main window and the editor. The mai
 
 :ref:`bool<class_bool>` **display/window/per_pixel_transparency/allowed** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`
 
-如果為 ``true``\ ，則允許視窗背景的逐圖元透明度。這樣會影響性能，因此除非需要，否則請將其保留為 ``false``\ 。另見 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`\ 。
+如果為 ``true``\ ，則允許視窗背景的逐圖元透明度。這樣會影響效能，因此除非需要，否則請將其保留為 ``false``\ 。另見 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4835,9 +4835,9 @@ If ``true``, HDR output is requested for the main window and the editor. The mai
 
 :ref:`Vector2i<class_Vector2i>` **display/window/size/initial_position** = ``Vector2i(0, 0)`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position>`
 
-Main window initial position (in virtual desktop coordinates), this setting is used only if :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` is set to "Absolute" (``0``).
+主視窗的初始位置（使用虛擬桌面座標），該設定僅在 :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` 設定為“Absolute”（\ ``0`` ）時使用。
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect_custom_position<class_EditorSettings_property_run/window_placement/rect_custom_position>` is used instead.
+\ **注意：**\ 該設定僅影響匯出的專案，或者當專案從命令行執行時。在編輯器中，請改用 :ref:`EditorSettings.run/window_placement/rect_custom_position<class_EditorSettings_property_run/window_placement/rect_custom_position>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4849,19 +4849,19 @@ Main window initial position (in virtual desktop coordinates), this setting is u
 
 :ref:`int<class_int>` **display/window/size/initial_position_type** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position_type>`
 
-Main window initial position.
+主視窗的初始位置。
 
-\ ``0`` - "Absolute", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` is used to set window position.
+\ ``0`` - “Absolute（絕對位置）”，視窗位置用 :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` 設定。
 
-\ ``1`` - "Primary Screen Center".
+\ ``1`` - “Primary Screen Center（主螢幕中心）”。
 
-\ ``3`` - "Other Screen Center", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` is used to set the screen.
+\ ``3`` - “Other Screen Center（其他螢幕中心）”，螢幕用 :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` 設定。
 
-\ ``4`` - "Center of Screen With Mouse Pointer".
+\ ``4`` - “Center of Screen With Mouse Pointer（螢幕中心，帶有滑鼠指針）”。
 
-\ ``5`` - "Center of Screen With Keyboard Focus".
+\ ``5`` - “Center of Screen With Keyboard Focus（螢幕中心，帶有鍵盤焦點）”。
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` is used instead.
+\ **注意：**\ 該設定僅影響匯出的專案，或者當專案從命令行執行時。在編輯器中，請改用 :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4873,9 +4873,9 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/initial_screen** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_screen>`
 
-Main window initial screen, this setting is used only if :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` is set to "Other Screen Center" (``2``).
+主視窗的初始螢幕，該設定僅在 :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` 被設定為“Other Screen Center”（\ ``2`` ）時使用。
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/screen<class_EditorSettings_property_run/window_placement/screen>` is used instead.
+\ **注意：**\ 該設定僅影響匯出的專案，或者當專案從命令行執行時。在編輯器中，請改用 :ref:`EditorSettings.run/window_placement/screen<class_EditorSettings_property_run/window_placement/screen>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4887,7 +4887,7 @@ Main window initial screen, this setting is used only if :ref:`display/window/si
 
 :ref:`bool<class_bool>` **display/window/size/maximize_disabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/maximize_disabled>`
 
-If ``true``, the main window's maximize button is disabled.
+如果為 ``true``\ ，則停用主視窗的最大化按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -4899,7 +4899,7 @@ If ``true``, the main window's maximize button is disabled.
 
 :ref:`bool<class_bool>` **display/window/size/minimize_disabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/minimize_disabled>`
 
-If ``true``, the main window's minimize button is disabled.
+如果為 ``true``\ ，則停用主視窗的最小化按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -4911,9 +4911,9 @@ If ``true``, the main window's minimize button is disabled.
 
 :ref:`int<class_int>` **display/window/size/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/mode>`
 
-Main window mode. See :ref:`WindowMode<enum_DisplayServer_WindowMode>` for possible values and how each mode behaves.
+主視窗的模式。可能的取值以及各個模式的行為請參閱 :ref:`WindowMode<enum_DisplayServer_WindowMode>`\ 。
 
-\ **Note:** Game embedding is available only in the "Windowed" mode.
+\ **注意：**\ 遊戲內嵌僅在“Windowed”模式下可用。
 
 .. rst-class:: classref-item-separator
 
@@ -4925,7 +4925,7 @@ Main window mode. See :ref:`WindowMode<enum_DisplayServer_WindowMode>` for possi
 
 :ref:`bool<class_bool>` **display/window/size/no_focus** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/no_focus>`
 
-主視窗無法成為焦點。無焦點的視窗將忽略除滑鼠點擊之外的所有輸入。
+主視窗無法成為焦點。無焦點的視窗將忽略除滑鼠點選之外的所有輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -4937,13 +4937,13 @@ Main window mode. See :ref:`WindowMode<enum_DisplayServer_WindowMode>` for possi
 
 :ref:`bool<class_bool>` **display/window/size/resizable** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/size/resizable>`
 
-If ``true``, allows the window to be resizable by default.
+如果為 ``true``\ ，則預設允許視窗調整大小。
 
-\ **Note:** This property is only read when the project starts. To change whether the window is resizable at runtime, set :ref:`Window.unresizable<class_Window_property_unresizable>` instead on the root Window, which can be retrieved using ``get_viewport().get_window()``. :ref:`Window.unresizable<class_Window_property_unresizable>` takes the opposite value of this setting.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要更改視窗在執行時是否可調整大小，請改在根視窗上設定 :ref:`Window.unresizable<class_Window_property_unresizable>`\ ，這樣可以使用 ``get_viewport().get_window()`` 檢索根視窗。\ :ref:`Window.unresizable<class_Window_property_unresizable>` 採用與該設定相反的值。
 
-\ **Note:** Certain window managers can be configured to ignore the non-resizable status of a window. Do not rely on this setting as a guarantee that the window will *never* be resizable.
+\ **注意：**\ 某些視窗管理器可以被設定為忽略視窗的不可調整大小狀態。不要相依性該設定來保證視窗\ *永遠不會*\ 調整大小。
 
-\ **Note:** This setting is ignored on iOS.
+\ **注意：**\ 該設定在 iOS 上被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -4955,9 +4955,9 @@ If ``true``, allows the window to be resizable by default.
 
 :ref:`bool<class_bool>` **display/window/size/sharp_corners** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/sharp_corners>`
 
-If ``true``, the main window uses sharp corners by default.
+如果為 ``true``\ ，則主視窗預設使用尖角。
 
-\ **Note:** This property is implemented only on Windows (11).
+\ **注意：**\ 該屬性在 Windows（11）上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -4969,13 +4969,13 @@ If ``true``, the main window uses sharp corners by default.
 
 :ref:`bool<class_bool>` **display/window/size/transparent** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/transparent>`
 
-If ``true``, enables a window manager hint that the main window background *can* be transparent. This does not make the background actually transparent. For the background to be transparent, the root viewport must also be made transparent by enabling :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`.
+如果為 ``true``\ ，則啟用視窗管理器提示，表示主視窗背景\ *能夠*\ 透明。這並不會讓背景變得透明。要讓背景變透明，根視埠必須也通過啟用 :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>` 來變得透明。
 
-\ **Note:** To use a transparent splash screen, set :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` to ``Color(0, 0, 0, 0)``.
+\ **注意：**\ 要使用透明的啟動畫面，請將 :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` 設為 ``Color(0, 0, 0, 0)``\ 。
 
-\ **Note:** This setting has no effect if :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` is set to ``false``.
+\ **注意：**\ 如果 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 為 ``false``\ ，則這個設定項無效。
 
-\ **Note:** This setting has no effect on Android as transparency is controlled only via :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`.
+\ **注意：**\ 這個設定在 Android 上無效，透明度僅通過 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 控制。
 
 .. rst-class:: classref-item-separator
 
@@ -4987,7 +4987,7 @@ If ``true``, enables a window manager hint that the main window background *can*
 
 :ref:`int<class_int>` **display/window/size/viewport_height** = ``648`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_height>`
 
-設定遊戲的主視口高度。在桌面平臺上，這也是初始視窗高度，在 2D 編輯器中使用靛藍色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式時也會以此作為參考。另見 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
+設定遊戲的主視埠高度。在桌面平臺上，這也是初始視窗高度，在 2D 編輯器中使用靛藍色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式時也會以此作為參考。另見 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4999,7 +4999,7 @@ If ``true``, enables a window manager hint that the main window background *can*
 
 :ref:`int<class_int>` **display/window/size/viewport_width** = ``1152`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_width>`
 
-設定遊戲的主視口寬度。在桌面平臺上，這也是初始視窗寬度，在 2D 編輯器中使用靛藍色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式時也會以此作為參考。另見 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
+設定遊戲的主視埠寬度。在桌面平臺上，這也是初始視窗寬度，在 2D 編輯器中使用靛藍色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式時也會以此作為參考。另見 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5025,9 +5025,9 @@ If ``true``, enables a window manager hint that the main window background *can*
 
 :ref:`int<class_int>` **display/window/size/window_width_override** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/window_width_override>`
 
-On desktop platforms, overrides the game's initial window width. See also :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`, :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
+在桌面平台上，覆蓋遊戲的初始視窗寬度。另見 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 、\ :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 。
 
-\ **Note:** By default, or when set to ``0``, the initial window width is the :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`. This setting is ignored on iOS, Android, and Web.
+\ **注意：**\ 預設情況下，或者當設定為 ``0`` 時，初始視窗寬度為 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`\ 。在 iOS、Android 和 Web 上會忽略該設定。
 
 .. rst-class:: classref-item-separator
 
@@ -5039,17 +5039,17 @@ On desktop platforms, overrides the game's initial window width. See also :ref:`
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+定義了在拉伸以適應視窗或螢幕解析度時，如何保留基礎尺寸（base size）的寬高比。
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``\ （忽略）：拉伸螢幕時忽略寬高比。這意味著原始解析度會被強行拉伸，以嚴絲合縫地填滿整個螢幕，哪怕螢幕比原始畫面更寬或更窄。這可能會導致非均勻拉伸：遊戲里的物體看起來會比設計時顯得更寬或更高（也就是畫面變形了）。
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``\ （保留）：拉伸螢幕時保留寬高比。這意味著視埠（Viewport）會保持其原始尺寸比例，不受螢幕解析度影響。為了填滿螢幕，會在螢幕的頂部/底部（黑邊，即“信箱模式”）或者左右兩側（黑邊，即“郵筒模式”）新增黑條。
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``\ （保留寬度）：拉伸螢幕時保留寬高比。如果螢幕比基礎尺寸更寬，會在左右兩側新增黑邊（郵筒模式）。但如果螢幕比基礎解析度更高，視埠會在垂直方向上擴大（底部的可見內容會變多）。你也可以把它理解為“垂直方向擴充（Expand Vertically）”。
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``"keep_height"``\ （保留高度）：拉伸螢幕時保留寬高比。如果螢幕比基礎尺寸更高，會在頂部和底部新增黑邊（信箱模式）。但如果螢幕比基礎解析度更寬，視埠會在水平方向上擴大（右側的可見內容會變多）。你也可以把它理解為“水平方向擴充（Expand Horizontally）”。
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size). This is the default for projects created starting in Godot 4.7.
+\ ``"expand"``\ （擴充）：拉伸螢幕時保留寬高比，但既不強行保留基礎寬度，也不強行保留基礎高度。根據螢幕的寬高比，視埠要麼在水平方向上變大（如果螢幕比基礎尺寸更寬），要麼在垂直方向上變大（如果螢幕比原始尺寸更高）。這是從 Godot 4.7 開始建立的新專案的預設設定。
 
 .. rst-class:: classref-item-separator
 
@@ -5061,13 +5061,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+定義了基礎尺寸（base size）如何拉伸以適應視窗或螢幕的解析度。
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``\ （停用）：不進行任何拉伸。遊戲場景中的 1 個單位嚴格對應螢幕上的 1 個像素。在這種模式下，\ :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`\ （寬高比）設定將不生效。通常推薦用於非遊戲類的應用程式。
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D). This is the default for projects created starting in Godot 4.7.
+\ ``"canvas_items"``\ （畫布專案）：在 Project Settings（專案設定）中指定的基礎寬度和高度會被拉伸以覆蓋整個螢幕（同時會考慮 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` 寬高比的影響）。這意味著所有內容都會直接在目標解析度下進行渲染。此模式不影響 3D 畫面；但在 2D 中，精靈（Sprite）的像素和螢幕像素之間不再保持 1:1 的對應關係，這可能會導致一些縮放偽影（畫面輕微模糊或失真）。推薦用於大多數不使用像素藝術（Pixel Art）風格的遊戲，不過它也可以用於像素風遊戲（尤其是 3D 像素遊戲）。這是 Godot 4.7 起建立的新專案的預設設定。
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+\ ``"viewport"``\ （視埠）：根 :ref:`Viewport<class_Viewport>`\ （視埠）的大小會被精確地設定為專案設定“顯示（Display）”部分中指定的基礎尺寸。場景會先被渲染到這個固定大小的視埠中，最後，這個視埠整體被縮放以適應螢幕（同樣會考慮 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` 寬高比的影響）。強烈推薦用於使用像素藝術（Pixel Art）風格的遊戲，因為它能完美保留像素的顆粒感。
 
 .. rst-class:: classref-item-separator
 
@@ -5091,13 +5091,13 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`String<class_String>` **display/window/stretch/scale_mode** = ``"fractional"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale_mode>`
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` is applied, in addition to the automatic scale factor determined by :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
+決定 2D 元素最終縮放係數的策略。會影響 :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` 的使用，與 :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` 決定的自動縮放係數共同生效。
 
-\ ``"fractional"``: The scale factor will not be modified.
+\ ``"fractional"``\ ：小數。不改變縮放係數。
 
-\ ``"integer"``: The scale factor will be floored to an integer value, which means that the screen size will always be an integer multiple of the base viewport size. This provides a crisp pixel art appearance.
+\ ``"integer"``\ ：整數。將縮放係數向下取整，螢幕大小始終為基礎視埠大小的整數倍。能夠顯示銳利的像素風畫面。
 
-\ **Note:** When using integer scaling with a stretch mode, resizing the window to be smaller than the base viewport size will clip the contents. Consider preventing that by setting :ref:`Window.min_size<class_Window_property_min_size>` to the same value as the base viewport size defined in :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
+\ **注意：**\ 使用整數縮放並設定拉伸模式時，將視窗大小調整得比基礎視埠大小更小會將內容進行裁剪。請考慮將 :ref:`Window.min_size<class_Window_property_min_size>` 設為與 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` 定義的基礎視埠大小一致，避免這種情況的發生。
 
 .. rst-class:: classref-item-separator
 
@@ -5109,11 +5109,11 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+如果設為 ``true``\ ，子視窗將嵌入到主視窗中（這也被稱為單視窗模式）。單視窗模式通常執行速度更快，因為它不需要為每一個彈出視窗和提示框（tooltip）單獨建立新視窗——而在某些作業系統或渲染方式下，建立新視窗是一個比較耗時的操作。
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+如果設為 ``false``\ ，子視窗將被建立為獨立的視窗（這也被稱為多視窗模式）。這允許你將這些子視窗拖動到主視窗之外，並使用作業系統原生的視窗裝飾（比如系統自帶的標題欄、最小化/關閉按鈕等）。
 
-This is equivalent to :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` in the editor.
+這與編輯器設定中 :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` 選項的作用相同。
 
 .. rst-class:: classref-item-separator
 
@@ -5125,17 +5125,17 @@ This is equivalent to :ref:`EditorSettings.interface/editor/display/single_windo
 
 :ref:`int<class_int>` **display/window/vsync/vsync_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/vsync/vsync_mode>`
 
-Sets the V-Sync mode for the main game window. The editor's own V-Sync mode can be set using :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
+設定主遊戲視窗的垂直同步（V-Sync）模式。編輯器自身的垂直同步模式可以通過 :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>` 來設定。
 
-See :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` for possible values and how they affect the behavior of your application.
+關於可能的取值以及它們如何影響應用程式的行為，請參閱 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>`\ 。
 
-Depending on the platform and rendering method, the engine will fall back to **Enabled** if the desired mode is not supported.
+根據平台和渲染方法的不同，如果所需的模式不受支援，引擎會自動回退到 **Enabled（啟用）** 模式。
 
-V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+垂直同步也可以通過 ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` 來停用。
 
-\ **Note:** The **Adaptive** and **Mailbox** V-Sync modes are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：** **Adaptive（自適應）** 和 **Mailbox（郵箱）** 這兩種垂直同步模式僅在 Forward+ 和 Mobile 渲染方法中受支援，在 Compatibility（相容）渲染方法中不可用。
 
-\ **Note:** This property is only read when the project starts. To change the V-Sync mode at runtime, call :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` instead.
+\ **注意：** 此屬性僅在專案啟動時讀取。如果你想在遊戲執行過程中（執行時）更改垂直同步模式，請呼叫 :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -5185,11 +5185,11 @@ V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`c
 
 :ref:`bool<class_bool>` **editor/export/convert_text_resources_to_binary** = ``true`` :ref:`🔗<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>`
 
-If ``true``, text resource (``tres``) and text scene (``tscn``) files are converted to their corresponding binary format on export. This decreases file sizes and speeds up loading slightly.
+如果為 ``true``\ ，則匯出時會將文字資源檔案（\ ``tres``\ ）和文字場景檔案（\ ``tscn``\ ）轉換為對應的二進位格式。這樣做能夠減小檔案大小、略微加快載入速度。
 
-\ **Note:** Because a resource's file extension may change in an exported project, it is heavily recommended to use :ref:`@GDScript.load()<class_@GDScript_method_load>` or :ref:`ResourceLoader<class_ResourceLoader>` instead of :ref:`FileAccess<class_FileAccess>` to load resources dynamically.
+\ **注意：**\ 匯出後的專案中，資源檔案的副檔名可能發生改變，因此強烈建議在動態載入資源時使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 和 :ref:`ResourceLoader<class_ResourceLoader>`\ ，不要使用 :ref:`FileAccess<class_FileAccess>`\ 。
 
-\ **Note:** The project settings file (``project.godot``) will always be converted to binary on export, regardless of this setting.
+\ **注意：**\ 匯出時始終會將專案設定檔案（\ ``project.godot``\ ）轉換為二進位格式，與該設定無關。
 
 .. rst-class:: classref-item-separator
 
@@ -5201,7 +5201,7 @@ If ``true``, text resource (``tres``) and text scene (``tscn``) files are conver
 
 :ref:`int<class_int>` **editor/import/atlas_max_width** = ``2048`` :ref:`🔗<class_ProjectSettings_property_editor/import/atlas_max_width>`
 
-The maximum width to use when importing textures as an atlas. The value will be rounded to the nearest power of two when used. Use this to prevent imported textures from growing too large in the other direction.
+作為圖集匯入紋理時使用的最大寬度。使用時會將取值向上取整到最近的二次冪。這個設定可以防止匯入的紋理在其他方向上增長得過大。
 
 .. rst-class:: classref-item-separator
 
@@ -5239,7 +5239,7 @@ The maximum width to use when importing textures as an atlas. The value will be 
 
 :ref:`int<class_int>` **editor/movie_writer/audio_bit_depth** = ``16`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/audio_bit_depth>`
 
-Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit are supported.
+寫入 ``.avi`` 檔案的每個音訊取樣的位元數。目前僅支援 16 位元和 32 位元。
 
 .. rst-class:: classref-item-separator
 
@@ -5251,9 +5251,9 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`bool<class_bool>` **editor/movie_writer/disable_vsync** = ``false`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/disable_vsync>`
 
-如果為 ``true``\ ，則在寫入電影時會請求禁用垂直同步（類似於將 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 設定為 **Disabled**\ ）。如果硬體的算繪速度足夠快，那麼就可以加速影片的寫入，以高於顯示器更新率的畫面播放速率算繪、編碼和保存影片。
+如果為 ``true``\ ，則在寫入電影時會請求停用垂直同步（類似於將 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 設定為 **Disabled**\ ）。如果硬體的渲染速度足夠快，那麼就可以加速影片的寫入，以高於顯示器更新率的畫面播放速率渲染、編碼和保存影片。
 
-\ **注意：**\ 如果作業系統或圖形驅動程式強制垂直同步，則套用程式無法禁用，\ :ref:`editor/movie_writer/disable_vsync<class_ProjectSettings_property_editor/movie_writer/disable_vsync>` 無效。
+\ **注意：**\ 如果作業系統或圖形驅動程式強制垂直同步，則套用程式無法停用，\ :ref:`editor/movie_writer/disable_vsync<class_ProjectSettings_property_editor/movie_writer/disable_vsync>` 無效。
 
 .. rst-class:: classref-item-separator
 
@@ -5291,19 +5291,19 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`String<class_String>` **editor/movie_writer/movie_file** = ``""`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/movie_file>`
 
-The output path for the movie. The file extension determines the :ref:`MovieWriter<class_MovieWriter>` that will be used.
+影片的輸出路徑。檔案副檔名決定要使用的 :ref:`MovieWriter<class_MovieWriter>`\ 。
 
-Godot has 3 built-in :ref:`MovieWriter<class_MovieWriter>`\ s:
+Godot 內建的 :ref:`MovieWriter<class_MovieWriter>` 有 3 個：
 
-- OGV container with Theora for video and Vorbis for audio (``.ogv`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` and :ref:`editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>`. The resulting file can be viewed in Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` and most video players, but not web browsers as they don't support Theora.
+- 使用 Theora 影片和 Vorbis 音訊的 OVG 容器（檔案副檔名為 ``.ogv``\ ）。有損壓縮、檔案大小中等、編碼速度快。有損壓縮品質可以通過修改 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 和 :ref:`editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>` 來調整。生成的檔案在 Godot 中可以使用 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，也可以使用大多數影片播放器查看，但是無法在網頁瀏覽器中查看，因為它們不支援 Theora。
 
-- AVI container with MJPEG for video and uncompressed audio (``.avi`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>`. The resulting file can be viewed in most video players, but it must be converted to another format for viewing on the web or by Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`. MJPEG does not support transparency. AVI output is currently limited to a file of 4 GB in size at most.
+- 使用 MJPEG 影片和未壓縮音訊的 AVI 容器（檔案副檔名為 ``.avi``\ ）。有損壓縮、檔案大小中等、編碼速度較快。有損壓縮品質可以通過修改 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 來調整。生成的檔案可以使用大多數影片播放器查看，但如果要在 Web 上查看或者用 Godot 的 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，則必須先進行格式的轉換。MJPEG 不支援透明度。AVI 輸出的檔案目前最多為 4 GB 大小。
 
-- PNG image sequence for video and WAV for audio (``.png`` file extension). Lossless compression, large file sizes, slow encoding. Designed to be encoded to a video file with another tool such as `FFmpeg <https://ffmpeg.org/>`__ after recording. Transparency is currently not supported, even if the root viewport is set to be transparent.
+- 影片使用 PNG 影像序列，音訊使用 WAV（檔案副檔名為 ``.png``\ ）。無損壓縮，檔案大小較大，編碼較慢。旨在錄制後使用 `FFmpeg <https://ffmpeg.org/>`__ 等其他工具編碼為影片檔案。目前不支援透明度，即便將根視埠設為透明也不行。
 
-If you need to encode to a different format or pipe a stream through third-party software, you can extend this :ref:`MovieWriter<class_MovieWriter>` class to create your own movie writers.
+如果需要編碼為其他格式，或者將流匯入至第三方軟體，你可以擴充 :ref:`MovieWriter<class_MovieWriter>` 類，建立自己的影片錄制器。
 
-When using PNG output, the frame number will be appended at the end of the file name. It starts from 0 and is padded with 8 digits to ensure correct sorting and easier processing. For example, if the output path is ``/tmp/hello.png``, the first two frames will be ``/tmp/hello00000000.png`` and ``/tmp/hello00000001.png``. The audio will be saved at ``/tmp/hello.wav``.
+使用 PNG 輸出時，影格號將附加在檔名末尾。影格號從 0 開始，會補齊至 8 位元數字，從而確保能夠正確排序，處理起來也更方便。例如，如果輸出路徑為 ``/tmp/hello.png``\ ，那麼前兩影格就是 ``/tmp/hello00000000.png`` 和 ``/tmp/hello00000001.png``\ 。音訊將儲存在 ``/tmp/hello.wav``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5315,9 +5315,9 @@ When using PNG output, the frame number will be appended at the end of the file 
 
 :ref:`float<class_float>` **editor/movie_writer/ogv/audio_quality** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>`
 
-The audio encoding quality to use when writing Vorbis audio to a file, between ``-0.1`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-sounding output at the cost of larger file sizes. Even at quality ``1.0``, compression remains lossy.
+將 Vorbis 音訊寫入檔案時使用的音訊編碼品質，在 ``-0.1`` 和 ``1.0`` 之間（含兩端）。\ ``quality`` 取值越高，輸出的聲音越好，但檔案大小也越大。即便品質為 ``1.0``\ ，壓縮也仍然是有損的。
 
-\ **Note:** This does not affect video quality, which is controlled by :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` instead.
+\ **注意：**\ 不影響影片品質，影片品質 由 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 控制。
 
 .. rst-class:: classref-item-separator
 
@@ -5329,7 +5329,7 @@ The audio encoding quality to use when writing Vorbis audio to a file, between `
 
 :ref:`int<class_int>` **editor/movie_writer/ogv/encoding_speed** = ``4`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/encoding_speed>`
 
-The tradeoff between encoding speed and compression efficiency. Speed ``1`` is the slowest but provides the best compression. Speed ``4`` is the fastest but provides the worst compression. Video quality is generally not affected significantly by this setting.
+編碼速度和壓縮效率之間的權衡。速度 ``1`` 最慢，但壓縮效果最佳。速度 ``4`` 最快，但壓縮效果最差。該設定通常不會對影片品質產生顯著影響。
 
 .. rst-class:: classref-item-separator
 
@@ -5341,7 +5341,7 @@ The tradeoff between encoding speed and compression efficiency. Speed ``1`` is t
 
 :ref:`int<class_int>` **editor/movie_writer/ogv/keyframe_interval** = ``64`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/keyframe_interval>`
 
-Forces keyframes at the specified interval (in frame count). Higher values can improve compression up to a certain level at the expense of higher latency when seeking.
+強制關鍵影格使用特定的間隔（單位為影格數）。較高的取值可以一定程度改善壓縮，但會導致跳轉時延遲較高。
 
 .. rst-class:: classref-item-separator
 
@@ -5365,7 +5365,7 @@ Forces keyframes at the specified interval (in frame count). Higher values can i
 
 :ref:`float<class_float>` **editor/movie_writer/video_quality** = ``0.75`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/video_quality>`
 
-The video encoding quality to use when writing a Theora or AVI (MJPEG) video to a file, between ``0.0`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-looking output at the cost of larger file sizes. Recommended ``quality`` values are between ``0.75`` and ``0.9``. Even at quality ``1.0``, compression remains lossy.
+將 Theora 或 AVI（MJPEG）影片寫入檔案時使用的影片編碼品質，在 ``0.0`` 和 ``1.0`` 之間（含兩端）。\ ``quality`` 取值越高，輸出的畫質越好，但檔案大小也越大。建議將 ``quality`` 設為 ``0.75`` 和 ``0.9`` 之間的值。即便品質為 ``1.0``\ ，壓縮也仍然是有損的。
 
 .. rst-class:: classref-item-separator
 
@@ -5377,7 +5377,7 @@ The video encoding quality to use when writing a Theora or AVI (MJPEG) video to 
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_name** = ``"_on_{node_name}_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_name>`
 
-訊號回呼函式名稱的預設格式（在訊號連接對話方塊中使用）。可以使用以下替換：\ ``{NodeName}``\ 、\ ``{nodeName}``\ 、\ ``{node_name}``\ 、\ ``{SignalName}``\ 、\ ``{signalName}``\ 、\ ``{signal_name}``\ 。
+訊號回呼函式名稱的預設格式（在訊號連接對話框中使用）。可以使用以下替換：\ ``{NodeName}``\ 、\ ``{nodeName}``\ 、\ ``{node_name}``\ 、\ ``{SignalName}``\ 、\ ``{signalName}``\ 、\ ``{signal_name}``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5401,7 +5401,7 @@ The video encoding quality to use when writing a Theora or AVI (MJPEG) video to 
 
 :ref:`int<class_int>` **editor/naming/node_name_casing** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/naming/node_name_casing>`
 
-When creating node names automatically, set the type of casing to use in this project. This is mostly an editor setting.
+自動建立節點名稱時，該專案所使用的大小寫型別。主要是編輯器設定。
 
 .. rst-class:: classref-item-separator
 
@@ -5425,7 +5425,7 @@ When creating node names automatically, set the type of casing to use in this pr
 
 :ref:`int<class_int>` **editor/naming/scene_name_casing** = ``2`` :ref:`🔗<class_ProjectSettings_property_editor/naming/scene_name_casing>`
 
-When generating scene file names from scene root node, set the type of casing to use in this project. This is mostly an editor setting.
+根據場景根節點生成場景檔名時，該專案所使用的大小寫型別。主要是編輯器設定。
 
 .. rst-class:: classref-item-separator
 
@@ -5437,7 +5437,7 @@ When generating scene file names from scene root node, set the type of casing to
 
 :ref:`int<class_int>` **editor/naming/script_name_casing** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/naming/script_name_casing>`
 
-When generating script file names from the selected node, set the type of casing to use in this project. This is mostly an editor setting.
+根據所選節點生成腳本檔名時，該專案所使用的大小寫型別。主要是編輯器設定。
 
 .. rst-class:: classref-item-separator
 
@@ -5449,11 +5449,11 @@ When generating script file names from the selected node, set the type of casing
 
 :ref:`String<class_String>` **editor/run/main_run_args** = ``""`` :ref:`🔗<class_ProjectSettings_property_editor/run/main_run_args>`
 
-The command-line arguments to append to Godot's own command line when running the project. This doesn't affect the editor itself.
+執行專案時附加到 Godot 自己的命令行的命令行參數。這不會影響編輯器本身。
 
-It is possible to make another executable run Godot by using the ``%command%`` placeholder. The placeholder will be replaced with Godot's own command line. Program-specific arguments should be placed *before* the placeholder, whereas Godot-specific arguments should be placed *after* the placeholder.
+可以使用 ``%command%`` 佔位符使另一個可執行檔執行 Godot。佔位符將替換為 Godot 自己的命令行。程式特定的參數應該放在\ *佔位符之前*\ ，而 Godot 特定參數應該放在\ *佔位符之後*\ 。
 
-For example, this can be used to force the project to run on the dedicated GPU in an NVIDIA Optimus system on Linux:
+例如，這可用於強制專案在 Linux 上的 NVIDIA Optimus 系統中的專用 GPU 上執行：
 
 .. code:: text
 
@@ -5483,7 +5483,7 @@ For example, this can be used to force the project to run on the dedicated GPU i
 
 :ref:`String<class_String>` **editor/script/templates_search_path** = ``"res://script_templates"`` :ref:`🔗<class_ProjectSettings_property_editor/script/templates_search_path>`
 
-對於專案特定的腳本範本的搜索路徑。Godot 將在編輯器的特定路徑和此專案的路徑中搜索。
+對於專案特定的腳本範本的搜尋路徑。Godot 將在編輯器的特定路徑和此專案的路徑中搜尋。
 
 .. rst-class:: classref-item-separator
 
@@ -5523,9 +5523,9 @@ For example, this can be used to force the project to run on the dedicated GPU i
 
 :ref:`bool<class_bool>` **filesystem/import/blender/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/blender/enabled>`
 
-If ``true``, Blender 3D scene files with the ``.blend`` extension will be imported by converting them to glTF 2.0.
+如果為 ``true``\ ，副檔名為 ``.blend`` 的 Blender 3D 場景檔案會通過轉換為 glTF 2.0 來匯入。
 
-This requires configuring a path to a Blender executable in the :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` setting. Blender 3.0 or later is required.
+需要在編輯器設定 :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` 中設定 Blender 可執行檔的路徑。需要 Blender 3.0 或更高版本。
 
 .. rst-class:: classref-item-separator
 
@@ -5561,9 +5561,9 @@ This requires configuring a path to a Blender executable in the :ref:`EditorSett
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>`
 
-If ``true``, Autodesk FBX 3D scene files with the ``.fbx`` extension will be imported by converting them to glTF 2.0.
+如果為 ``true``\ ，副檔名為 ``.fbx`` 的 Autodesk FBX 3D 場景檔案會通過轉換為 glTF 2.0 來匯入。
 
-This requires configuring a path to an FBX2glTF executable in the editor settings at :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>`.
+需要在編輯器設定 :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>` 中，設定 FBX2glTF 可執行檔的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -5575,7 +5575,7 @@ This requires configuring a path to an FBX2glTF executable in the editor setting
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled.android** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled.android>`
 
-Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` on Android where FBX2glTF can't easily be accessed from Godot.
+:ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` 在 Android 上的覆蓋項，在 Android 上 Godot 無法輕易存取到 FBX2glTF。
 
 .. rst-class:: classref-item-separator
 
@@ -5587,7 +5587,7 @@ Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_prop
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled.web** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled.web>`
 
-Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` on the Web where FBX2glTF can't easily be accessed from Godot.
+:ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` 在 Web 上的覆蓋項，在 Web 上 Godot 無法輕易存取到 FBX2glTF。
 
 .. rst-class:: classref-item-separator
 
@@ -5611,7 +5611,7 @@ Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_prop
 
 :ref:`int<class_int>` **gui/common/drag_threshold** = ``10`` :ref:`🔗<class_ProjectSettings_property_gui/common/drag_threshold>`
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins in the default viewport. For custom viewports see :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
+在預設視埠中，滑鼠游標按下後必須移動的最小距離，超過該距離才會開始拖動操作。對於自訂視埠，請參閱 :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5623,13 +5623,13 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when that focus is gained using a mouse or touch input.
+決定當 :ref:`Control<class_Control>`\ （控制項）通過滑鼠或觸摸輸入獲得焦點時，是否應該在視覺上顯示出焦點狀態。
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Never（從不）** (``0``)：當通過滑鼠或觸摸獲得焦點時，從不顯示焦點狀態。
 
-- **Text Input Controls** (``1``) show the focused state even if that focus was gained via mouse/touch input (similar to browser behavior).
+- **Text Input Controls（文字輸入控制項）** (``1``)：即使是文字輸入類的控制項通過滑鼠或觸摸獲得焦點，也會顯示焦點狀態（這類似於我們在網頁瀏覽器中點選輸入框時的行為）。
 
-- **Always** (``2``) show the focused state, even if that focus was gained via mouse/touch input.
+- **Always（總是）** (``2``)：總是顯示焦點狀態，哪怕這個焦點是通過滑鼠或觸摸獲得的。
 
 .. rst-class:: classref-item-separator
 
@@ -5653,17 +5653,17 @@ Determines whether a :ref:`Control<class_Control>` should visually indicate focu
 
 :ref:`int<class_int>` **gui/common/swap_cancel_ok** = ``0`` :ref:`🔗<class_ProjectSettings_property_gui/common/swap_cancel_ok>`
 
-How to position the Cancel and OK buttons in the project's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting.
+如何在編輯器的 :ref:`AcceptDialog<class_AcceptDialog>` 視窗中放置“取消”和“確定”按鈕。不同的平台有不同的約定，但可以通過這個設定項來覆蓋。
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** 遵守平台約定：在 Windows、KDE、LXQt 上確定在前，在 macOS 和其他 Linux 桌面環境中取消在前。
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** 強制為取消、確定的順序。
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** 強制為確定、取消的順序。
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+要檢查這些按鈕在執行時中是否被調換位置，請使用 :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`\ 。
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
+\ **注意：**\ 這不會影響原生對話框，例如由 :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>` 方法生成的對話框。
 
 .. rst-class:: classref-item-separator
 
@@ -5675,7 +5675,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`int<class_int>` **gui/common/text_edit_undo_stack_max_size** = ``1024`` :ref:`🔗<class_ProjectSettings_property_gui/common/text_edit_undo_stack_max_size>`
 
-:ref:`TextEdit<class_TextEdit>` 欄位的最大撤銷/重做歷史大小。
+:ref:`TextEdit<class_TextEdit>` 欄位的最大復原/重做歷史大小。
 
 .. rst-class:: classref-item-separator
 
@@ -5687,7 +5687,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`bool<class_bool>` **gui/fonts/dynamic_fonts/use_oversampling** = ``true`` :ref:`🔗<class_ProjectSettings_property_gui/fonts/dynamic_fonts/use_oversampling>`
 
-If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` is set to ``"canvas_items"``, font and :ref:`DPITexture<class_DPITexture>` oversampling is enabled in the main window. Use :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` to control oversampling in other viewports and windows.
+如果為 ``true`` 且 :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` 為 ``"canvas_items"``\ ，則會在主視窗啟用字型和 :ref:`DPITexture<class_DPITexture>` 的過取樣。其他視埠和視窗中請使用 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` 來控制過取樣。
 
 .. rst-class:: classref-item-separator
 
@@ -5723,7 +5723,7 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`int<class_int>` **gui/theme/default_font_antialiasing** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_antialiasing>`
 
-預設專案字形的字形抗鋸齒模式。請參閱\ :ref:`FontFile.antialiasing<class_FontFile_property_antialiasing>`\ 。
+預設專案字形的字形反鋸齒模式。請參閱\ :ref:`FontFile.antialiasing<class_FontFile_property_antialiasing>`\ 。
 
 \ **注意：** 此設定不會影響專案中使用的自訂\ :ref:`Font<class_Font>`\ 。請使用 **Import** 停靠列（請參閱\ :ref:`ResourceImporterDynamicFont.antialiasing<class_ResourceImporterDynamicFont_property_antialiasing>`\ ）。
 
@@ -5737,11 +5737,11 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **gui/theme/default_font_generate_mipmaps** = ``false`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>`
 
-如果設定為 ``true``\ ，則預設字形將生成 mipmap。這樣可以防止文字在 :ref:`Control<class_Control>` 被按比例縮小或從遠距離查看 :ref:`Label3D<class_Label3D>` 時看起來有顆粒感（如果 :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` 設定為顯示 mipmap 的模式）。
+如果設定為 ``true``\ ，則預設字型將生成 mipmap。這樣可以防止文字在 :ref:`Control<class_Control>` 被按比例縮小或從遠距離查看 :ref:`Label3D<class_Label3D>` 時看起來有顆粒感（如果 :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` 設定為顯示 mipmap 的模式）。
 
-啟用 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 會增加字形生成時間和內存使用量。請只在你確實需要時才啟用此設定。
+啟用 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 會增加字型生成時間和記憶體使用量。請只在你確實需要時才啟用此設定。
 
-\ **注意：**\ 此設定不會影響專案中使用的自訂 :ref:`Font<class_Font>`\ 。
+\ **注意：**\ 此設定不會影響專案中使用的自訂 :ref:`Font<class_Font>`\ 。這種情況下請改用\ **匯入**\ 面板（見 :ref:`ResourceImporterDynamicFont.generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -5767,11 +5767,11 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **gui/theme/default_font_multichannel_signed_distance_field** = ``false`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>`
 
-如果設定為 ``true``\ ，預設字形將使用多通道帶符號距離場（MSDF），任何尺寸都能夠進行清晰的算繪。由於這種方法不需要在每次字形大小更改時都對字形進行光柵化，因此可以即時調整字形大小，不會造成任何性能損失。對於按比例縮小的 :ref:`Control<class_Control>`\ （或從遠距離查看的 :ref:`Label3D<class_Label3D>`\ ），文字也不會看起來有顆粒感。
+如果設定為 ``true``\ ，預設字型將使用多通道帶符號距離場（MSDF），任何尺寸都能夠進行清晰的渲染。由於這種方法不需要在每次字型大小更改時都對字型進行光柵化，因此可以即時調整字型大小，不會造成任何效能損失。對於按比例縮小的 :ref:`Control<class_Control>`\ （或從遠距離查看的 :ref:`Label3D<class_Label3D>`\ ），文字也不會看起來有顆粒感。
 
-MSDF 字形算繪可以與 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 結合使用，從而進一步提高縮小時的字形算繪品質。
+MSDF 字型渲染可以與 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 結合使用，從而進一步提高縮小時的字型渲染品質。
 
-\ **注意：**\ 此設定不會影響專案中使用的自訂 :ref:`Font<class_Font>`\ 。
+\ **注意：**\ 此設定不會影響專案中使用的自訂 :ref:`Font<class_Font>`\ 。這種情況下請改用\ **匯入**\ 面板（見 :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -5797,9 +5797,9 @@ MSDF 字形算繪可以與 :ref:`gui/theme/default_font_generate_mipmaps<class_P
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
+當未被 :ref:`Theme<class_Theme>` 覆蓋時，\ :ref:`Control<class_Control>` 的預設縮放因子。
 
-\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時中更改預設主題縮放比例，請改為設定 :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`\ 。但是，要在執行時中調整所有 2D 元素的縮放比例，最好在根 :ref:`Window<class_Window>` 節點上使用 :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>`\ （因為這也會影響覆蓋的 :ref:`Theme<class_Theme>`\ ）。有關詳細資訊，請參閱文件中的\ :doc:`多解析度 <../tutorials/rendering/multiple_resolutions>`\ 部分。
 
 .. rst-class:: classref-item-separator
 
@@ -5811,7 +5811,7 @@ The default scale factor for :ref:`Control<class_Control>`\ s, when not overridd
 
 :ref:`int<class_int>` **gui/theme/lcd_subpixel_layout** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>`
 
-LCD 次圖元佈局，用於字形抗鋸齒。見 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`\ 。
+LCD 次圖元佈局，用於字形反鋸齒。見 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5823,7 +5823,7 @@ LCD 次圖元佈局，用於字形抗鋸齒。見 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
+當 :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>`\ （快捷鍵回饋）啟用時，這表示 :ref:`BaseButton<class_BaseButton>`\ （基礎按鈕）在觸發快捷鍵後保持醒目標示狀態的時間。該持續時間不受 :ref:`Engine.time_scale<class_Engine_property_time_scale>`\ （引擎時間縮放）的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -5835,7 +5835,7 @@ When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedb
 
 :ref:`int<class_int>` **gui/timers/incremental_search_max_interval_msec** = ``2000`` :ref:`🔗<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`
 
-在 :ref:`Tree<class_Tree>`\ 、\ :ref:`ItemList<class_ItemList>` 等控制項中為差異量搜索設定計時器（單位為毫秒）。
+在 :ref:`Tree<class_Tree>`\ 、\ :ref:`ItemList<class_ItemList>` 等控制項中為差異量搜尋設定計時器（單位為毫秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -5871,7 +5871,7 @@ When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedb
 
 :ref:`float<class_float>` **gui/timers/tooltip_delay_sec.editor_hint** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_gui/timers/tooltip_delay_sec.editor_hint>`
 
-Delay for tooltips in the editor.
+編輯器中工具提示的延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -5897,9 +5897,9 @@ Delay for tooltips in the editor.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_accessibility_drag_and_drop** :ref:`🔗<class_ProjectSettings_property_input/ui_accessibility_drag_and_drop>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to start or end a drag-and-drop operation without using mouse.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於不借助滑鼠開始或結束拖放操作。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5925,9 +5925,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to start or end a drag-a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window.
+用於關閉對話框視窗的預設 :ref:`InputEventAction<class_InputEventAction>`\ 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作無法移除，因為它們是多個 :ref:`Control<class_Control>` 控制項內部邏輯所必需的。但是，可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5939,7 +5939,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog.macos>`
 
-macOS specific override for the shortcut to close a dialog window.
+macOS 特有的用於關閉對話框視窗的快捷鍵覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -5951,9 +5951,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_colorpicker_delete_preset** :ref:`🔗<class_ProjectSettings_property_input/ui_colorpicker_delete_preset>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset in a :ref:`ColorPicker<class_ColorPicker>`.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於在 :ref:`ColorPicker<class_ColorPicker>` 中刪除一個顏色預設。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5965,7 +5965,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_copy** :ref:`🔗<class_ProjectSettings_property_input/ui_copy>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於將選中內容複製到剪貼板。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於將選中內容複製到剪貼簿。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -5979,7 +5979,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_cut** :ref:`🔗<class_ProjectSettings_property_input/ui_cut>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於將選中內容剪切到剪貼板。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於將選中內容剪切到剪貼簿。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6021,9 +6021,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected file in a :ref:`FileDialog<class_FileDialog>`.
+用於在 :ref:`FileDialog<class_FileDialog>` 中刪除選定檔案的預設 :ref:`InputEventAction<class_InputEventAction>`\ 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作無法移除，因為它們是多個 :ref:`Control<class_Control>` 控制項內部邏輯所必需的。但是，可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6035,9 +6035,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected f
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_find** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_find>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a :ref:`FileDialog<class_FileDialog>`.
+用於在 :ref:`FileDialog<class_FileDialog>` 中打開檔案篩選器的預設 :ref:`InputEventAction<class_InputEventAction>` 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作無法移除，因為它們是多個 :ref:`Control<class_Control>` 控制項內部邏輯所必需的。但是，可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6049,9 +6049,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field in a :ref:`FileDialog<class_FileDialog>`.
+用於在 :ref:`FileDialog<class_FileDialog>` 中聚焦路徑編輯欄位的預設 :ref:`InputEventAction<class_InputEventAction>` 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作無法移除，因為它們是多個 :ref:`Control<class_Control>` 控制項內部邏輯所必需的。但是，可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6063,7 +6063,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path.macos>`
 
-macOS specific override for the shortcut to focus path edit field in :ref:`FileDialog<class_FileDialog>`.
+macOS 特有的用於在 :ref:`FileDialog<class_FileDialog>` 中聚焦路徑編輯欄位的快捷鍵覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -6117,9 +6117,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_focus_mode** :ref:`🔗<class_ProjectSettings_property_input/ui_focus_mode>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to switch :ref:`TextEdit<class_TextEdit>` :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` between moving keyboard focus to the next :ref:`Control<class_Control>` in the scene and inputting a ``Tab`` character.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於對 :ref:`TextEdit<class_TextEdit>` 的 :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` 在“將鍵盤焦點移動到場景中的下一個 :ref:`Control<class_Control>` 上”和“輸入 ``Tab`` 字元”之間進行切換。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6187,9 +6187,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to switch :ref:`TextEdit
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於追蹤 :ref:`GraphNode<class_GraphNode>` 輸入連接埠的連接。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6201,7 +6201,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphN
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left.macos>`
 
-macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
+針對 macOS 的快捷鍵覆蓋項，對應追蹤 :ref:`GraphNode<class_GraphNode>` 輸入連接埠的連接。
 
 .. rst-class:: classref-item-separator
 
@@ -6213,9 +6213,9 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於追蹤 :ref:`GraphNode<class_GraphNode>` 輸出連接埠的連接。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6227,7 +6227,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphN
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right.macos>`
 
-macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
+針對 macOS 的快捷鍵覆蓋項，對應追蹤 :ref:`GraphNode<class_GraphNode>` 輸出連接埠的連接。
 
 .. rst-class:: classref-item-separator
 
@@ -6309,7 +6309,7 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_paste** :ref:`🔗<class_ProjectSettings_property_input/ui_paste>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於從剪貼板貼上內容。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於從剪貼簿貼上內容。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6323,7 +6323,7 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_redo** :ref:`🔗<class_ProjectSettings_property_input/ui_redo>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於重做被撤銷的動作。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於重做被復原的動作。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6365,7 +6365,7 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_swap_input_direction** :ref:`🔗<class_ProjectSettings_property_input/ui_swap_input_direction>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction, i.e. change between left-to-right to right-to-left modes. Affects text-editing controls (:ref:`LineEdit<class_LineEdit>`, :ref:`TextEdit<class_TextEdit>`).
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於交換輸入方向，例如在“從左至右”和“從右至左”模式之間切換。影響文字編輯控制項（\ :ref:`LineEdit<class_LineEdit>`\ 、\ :ref:`TextEdit<class_TextEdit>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -6377,13 +6377,13 @@ Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction,
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_add_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_add_selection_for_next_occurrence>`
 
-如果文字欄位的最近一個游標處存在選中的文字，則會搜索所選內容下一次出現的位元置，在那個位置新增一個游標，然後選中該處的內容。
+如果文字欄位的最近一個游標處存在選中的文字，則會搜尋所選內容下一次出現的位元置，在那個位置新增一個游標，然後選中該處的內容。
 
 如果文字欄位的最近一個游標處沒有選中文字，則會選中目前游標下的單詞。
 
 該動作可以連續執行，選中最近一個游標所選文字的所有出現位置，所有現存游標均適用。
 
-視口會根據最近新新增的文字游標進行調整。
+視埠會根據最近新新增的文字游標進行調整。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6767,9 +6767,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction,
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_accept** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_accept>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於接受某個自動補全提示。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6781,9 +6781,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_query** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_query>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to request autocompletion.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於請求自動補全。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6795,9 +6795,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to request autocompletio
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_replace** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_replace>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint, replacing existing text.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於接受某個自動補全提示並替換現有文字。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -6945,7 +6945,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於向下滾動一行文字。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於向下捲動一行文字。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6959,7 +6959,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down.macos>`
 
-針對 macOS 的快捷鍵覆蓋項，對應向下滾動一行的快捷鍵。
+針對 macOS 的快捷鍵覆蓋項，對應向下捲動一行的快捷鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -6971,7 +6971,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於向上滾動一行文字。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於向上捲動一行文字。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -6985,7 +6985,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up.macos>`
 
-針對 macOS 的快捷鍵覆蓋項，對應向上滾動一行的快捷鍵。
+針對 macOS 的快捷鍵覆蓋項，對應向上捲動一行的快捷鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -7037,13 +7037,13 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_skip_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_skip_selection_for_next_occurrence>`
 
-If no selection is currently active with the last caret in text fields, searches for the next occurrence of the word currently under the caret and moves the caret to the next occurrence. The action can be performed sequentially for other occurrences of the word under the last caret.
+如果文字欄位的最後一個文字游標目前未處於活動狀態，則會搜尋目前位於文字游標下方的單詞的下一次出現的位置，並將文字游標移動到下一個出現位置。可以對最後一個文字游標下方的單詞的其他出現位置依次執行該動作。
 
-If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret, selects the next occurrence then deselects the previous selection and its associated caret. The action can be performed sequentially for other occurrences of the selection of the last caret.
+如果文字欄位中最後一個文字游標目前處於活動狀態，則搜尋所選內容的下一個出現位置，新增文字游標，選擇下一個出現位置，然後取消選擇上一個選擇及其關聯的文字游標。可以對上一個文字游標的其他出現位置依次執行該動作。
 
-The viewport is adjusted to the latest newly added caret.
+視埠會根據最近新新增的文字游標進行調整。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作對於多個 :ref:`Control<class_Control>` 的內部邏輯是必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -7083,7 +7083,7 @@ The viewport is adjusted to the latest newly added caret.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_undo** :ref:`🔗<class_ProjectSettings_property_input/ui_undo>`
 
-預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於撤銷最近的動作。
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於復原最近的動作。
 
 \ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
@@ -7097,9 +7097,9 @@ The viewport is adjusted to the latest newly added caret.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_unicode_start** :ref:`🔗<class_ProjectSettings_property_input/ui_unicode_start>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to start Unicode character hexadecimal code input in a text field.
+預設 :ref:`InputEventAction<class_InputEventAction>`\ ，用於在文字框中開啟 Unicode 字元的十六進位碼輸入。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 預設的 ``ui_*`` 動作是部分 :ref:`Control<class_Control>` 的內部邏輯所必需的，無法刪除。但是可以修改分配給該動作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -7159,7 +7159,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to start Unicode charact
 
 :ref:`bool<class_bool>` **input_devices/joypads/ignore_joypad_on_unfocused_application** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/joypads/ignore_joypad_on_unfocused_application>`
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+如果為 ``true``\ ，當應用程式失去焦點時，遊戲控制器輸入（包括運動傳感器）和 LED 燈光變化將被忽略，且遊戲控制器的振動將被停止。
 
 .. rst-class:: classref-item-separator
 
@@ -7171,11 +7171,11 @@ If ``true``, joypad input (including motion sensors) and LED light changes will 
 
 :ref:`String<class_String>` **input_devices/pen_tablet/driver** :ref:`🔗<class_ProjectSettings_property_input_devices/pen_tablet/driver>`
 
-Specifies the tablet driver to use. If left empty, the default driver will be used.
+指定要使用的平板驅動。如果留空，則會使用預設驅動。
 
-\ **Note:** The driver in use can be overridden at runtime via the ``--tablet-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+\ **注意：**\ 所使用的驅動可以通過 ``--tablet-driver`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 在執行時進行覆蓋。
 
-\ **Note:** Use :ref:`DisplayServer.tablet_set_current_driver()<class_DisplayServer_method_tablet_set_current_driver>` to switch tablet driver in runtime.
+\ **注意：**\ 執行時切換平板驅動請使用 :ref:`DisplayServer.tablet_set_current_driver()<class_DisplayServer_method_tablet_set_current_driver>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7187,15 +7187,15 @@ Specifies the tablet driver to use. If left empty, the default driver will be us
 
 :ref:`String<class_String>` **input_devices/pen_tablet/driver.windows** :ref:`🔗<class_ProjectSettings_property_input_devices/pen_tablet/driver.windows>`
 
-Override for :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` on Windows. Supported values are:
+:ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` 在 Windows 上的覆蓋項。支援的值有：
 
-- ``auto`` (default), uses ``wintab`` if Windows Ink is disabled in the Wacom Tablet Properties or system settings, ``winink`` otherwise.
+- ``auto``\ （預設），在 Wacom 平板屬性或系統設定中停用 Windows Ink 時使用 ``wintab``\ ，否則使用 ``winink``\ 。
 
-- ``winink``, uses Windows native "Windows Ink" driver.
+- ``winink``\ ，使用 Windows 原生“Windows Ink”驅動。
 
-- ``wintab``, uses Wacom "WinTab" driver.
+- ``wintab``, 使用 Wacom“WinTab”驅動。
 
-- ``dummy``, tablet input is disabled.
+- ``dummy``\ ，停用平板輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -7207,7 +7207,7 @@ Override for :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_propert
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/disable_scroll_deadzone** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/disable_scroll_deadzone>`
 
-If ``true``, disables the scroll deadzone on Android, allowing even very small scroll movements to be registered. This may increase scroll sensitivity but can also lead to unintended scrolling from slight finger movements.
+如果為 ``true``\ ，則會在 Android 上停用捲動死區，從而讓非常小的捲動動作也能夠被注冊。這可能會增加捲動靈敏度，但也可能導致由於輕微的手指移動而產生意外的捲動。
 
 .. rst-class:: classref-item-separator
 
@@ -7219,7 +7219,7 @@ If ``true``, disables the scroll deadzone on Android, allowing even very small s
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_long_press_as_right_click** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_long_press_as_right_click>`
 
-If ``true``, long press events on an Android touchscreen are transformed into right click events.
+如果為 ``true``\ ，則在 Android 觸摸屏上的長按事件會被轉換為按滑鼠右鍵事件。
 
 .. rst-class:: classref-item-separator
 
@@ -7231,7 +7231,7 @@ If ``true``, long press events on an Android touchscreen are transformed into ri
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_pan_and_scale_gestures** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>`
 
-If ``true``, multi-touch pan and scale gestures are enabled on Android devices.
+如果為 ``true``\ ，則會在 Android 裝置上啟用多點平移和縮放手勢。
 
 .. rst-class:: classref-item-separator
 
@@ -7243,7 +7243,7 @@ If ``true``, multi-touch pan and scale gestures are enabled on Android devices.
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/override_volume_buttons** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/override_volume_buttons>`
 
-If ``true``, system volume changes are disabled when the buttons are used within the app.
+如果為 ``true``\ ，則在應用中使用系統音量按鈕時停用音量調節。
 
 .. rst-class:: classref-item-separator
 
@@ -7255,7 +7255,7 @@ If ``true``, system volume changes are disabled when the buttons are used within
 
 :ref:`int<class_int>` **input_devices/pointing/android/rotary_input_scroll_axis** = ``1`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>`
 
-On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped to. This rotary input is usually performed by rotating the physical or virtual (touch-based) bezel on a smartwatch.
+在 Wear OS 裝置上，定義滑鼠滾輪旋鈕輸入映射的軸。旋鈕輸入通常是通過旋轉智能手錶的物理或虛擬（基於觸摸）表冠進行的。
 
 .. rst-class:: classref-item-separator
 
@@ -7267,7 +7267,7 @@ On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped
 
 :ref:`bool<class_bool>` **input_devices/pointing/emulate_mouse_from_touch** = ``true`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`
 
-如果為 ``true``\ ，則在點擊或滑動觸控式螢幕時發送滑鼠輸入事件。
+如果為 ``true``\ ，則在點選或滑動觸控式螢幕時發送滑鼠輸入事件。
 
 .. rst-class:: classref-item-separator
 
@@ -7279,7 +7279,7 @@ On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped
 
 :ref:`bool<class_bool>` **input_devices/pointing/emulate_touch_from_mouse** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`
 
-如果為 ``true``\ ，則在點擊或拖動滑鼠時發送觸摸輸入事件。
+如果為 ``true``\ ，則在點選或拖動滑鼠時發送觸摸輸入事件。
 
 .. rst-class:: classref-item-separator
 
@@ -7291,7 +7291,7 @@ On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_accelerometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`
 
-If ``true``, the accelerometer sensor is enabled and :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` returns valid data.
+如果為 ``true``\ ，則啟用了加速度計傳感器，並且 :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` 會回傳有效資料。
 
 .. rst-class:: classref-item-separator
 
@@ -7303,7 +7303,7 @@ If ``true``, the accelerometer sensor is enabled and :ref:`Input.get_acceleromet
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gravity** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`
 
-If ``true``, the gravity sensor is enabled and :ref:`Input.get_gravity()<class_Input_method_get_gravity>` returns valid data.
+如果為 ``true``\ ，則啟用了重力傳感器，並且 :ref:`Input.get_gravity()<class_Input_method_get_gravity>` 會回傳有效資料。
 
 .. rst-class:: classref-item-separator
 
@@ -7315,7 +7315,7 @@ If ``true``, the gravity sensor is enabled and :ref:`Input.get_gravity()<class_I
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gyroscope** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>`
 
-If ``true``, the gyroscope sensor is enabled and :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` returns valid data.
+如果為 ``true``\ ，則啟用了陀螺儀傳感器，並且 :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` 會回傳有效資料。
 
 .. rst-class:: classref-item-separator
 
@@ -7327,7 +7327,7 @@ If ``true``, the gyroscope sensor is enabled and :ref:`Input.get_gyroscope()<cla
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_magnetometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`
 
-If ``true``, the magnetometer sensor is enabled and :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` returns valid data.
+如果為 ``true``\ ，則啟用了磁力計傳感器，並且 :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` 會回傳有效資料。
 
 .. rst-class:: classref-item-separator
 
@@ -7339,9 +7339,9 @@ If ``true``, the magnetometer sensor is enabled and :ref:`Input.get_magnetometer
 
 :ref:`String<class_String>` **internationalization/locale/fallback** = ``"en"`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/fallback>`
 
-The locale to fall back to if a translation isn't available in a given language. If left empty, ``en`` (English) will be used.
+如果給定語言的翻譯不可用，則使用預設區域設定。如果留空則使用 ``en``\ （英文）。
 
-\ **Note:** Not to be confused with :ref:`TextServerFallback<class_TextServerFallback>`.
+\ **注意：**\ 請勿與 :ref:`TextServerFallback<class_TextServerFallback>` 混淆。
 
 .. rst-class:: classref-item-separator
 
@@ -7353,11 +7353,11 @@ The locale to fall back to if a translation isn't available in a given language.
 
 :ref:`bool<class_bool>` **internationalization/locale/include_text_server_data** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/include_text_server_data>`
 
-If ``true``, text server break iteration rule sets, dictionaries and other optional data are included in the exported project.
+如果為 ``true``\ ，則文字伺服器中斷迭代規則集、字典和其他可選資料將被包含在匯出的專案中。
 
-\ **Note:** "ICU / HarfBuzz / Graphite" text server data includes dictionaries for Burmese, Chinese, Japanese, Khmer, Lao and Thai as well as Unicode Standard Annex #29 and Unicode Standard Annex #14 word and line breaking rules. Data is about 4 MB large.
+\ **注意：**\ “ICU / HarfBuzz / Graphite”文字伺服器資料，包括緬甸語、漢語、日語、高棉語、老撾語和泰語的詞典，以及 Unicode 標準附件 #29 和 Unicode 標準附件 #14 單詞和行折斷規則。資料大約 4 MB。
 
-\ **Note:** :ref:`TextServerFallback<class_TextServerFallback>` does not use additional data.
+\ **注意：**\ :ref:`TextServerFallback<class_TextServerFallback>` 不使用額外資料。
 
 .. rst-class:: classref-item-separator
 
@@ -7369,17 +7369,17 @@ If ``true``, text server break iteration rule sets, dictionaries and other optio
 
 :ref:`int<class_int>` **internationalization/locale/line_breaking_strictness** = ``0`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/line_breaking_strictness>`
 
-Default strictness of line-breaking rules. Can be overridden by adding ``@lb={auto,loose,normal,strict}`` to the language code.
+預設的斷行規則嚴格程度。在語言程式碼後加上 ``@lb={auto,loose,normal,strict}`` 可以進行覆蓋。
 
-- **Auto** (``0``) - strictness is based on the length of the line.
+- **Auto**\ （\ ``0``\ ）- 嚴格度基於行的長度。
 
-- **Loose** (``1``) - the least restrictive set of line-breaking rules. Typically used for short lines.
+- **Loose**\ （\ ``1``\ ）- 嚴格度最低的斷行規則集。常用於較短的行。
 
-- **Normal** (``2``) - the most common set of line-breaking rules.
+- **Normal**\ （\ ``2``\ ）- 最常見的斷行規則集。
 
-- **Strict** (``3``) - the most stringent set of line-breaking rules.
+- **Strict**\ （\ ``3``\ ）- 最嚴格的斷行規則集。
 
-See `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__ for more info.
+詳見《\ `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__\ 》。
 
 .. rst-class:: classref-item-separator
 
@@ -7391,9 +7391,9 @@ See `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/cs
 
 :ref:`String<class_String>` **internationalization/locale/test** = ``""`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/test>`
 
-If non-empty, this locale will be used instead of the automatically detected system locale.
+如果非空，則將使用該區域設定，不使用自動檢測的系統區域設定。
 
-\ **Note:** This setting also applies to the exported project. To only affect testing within the editor, override this setting with an ``editor`` :doc:`feature tag <../tutorials/export/feature_tags>` for localization testing purposes.
+\ **注意：**\ 該設定也適用於匯出後的專案。要僅影響編輯器中的測試，請使用 ``editor`` :doc:`功能標籤 <../tutorials/export/feature_tags>`\ 來覆蓋該設定項，以便進行在地化測試。
 
 .. rst-class:: classref-item-separator
 
@@ -7429,7 +7429,7 @@ If non-empty, this locale will be used instead of the automatically detected sys
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/fake_bidi** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`
 
-If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization is enabled. This can be used to spot issues with RTL layout and UI mirroring that will crop up if the project is localized to RTL languages such as Arabic or Hebrew. See also :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`.
+如果為 ``true``\ ，則在啟用偽在地化時模擬雙向（從右至左）文字。可用於發現 RTL 版面配置和 UI 鏡像問題，如果專案在地化為阿拉伯語或希伯來語等 RTL 語言，則會出現這些問題。另見 :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7515,7 +7515,7 @@ If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization 
 
 :ref:`bool<class_bool>` **internationalization/rendering/force_right_to_left_layout_direction** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`
 
-Force layout direction and text writing direction to RTL for all controls, even if the current locale is intended to use a left-to-right layout and text writing direction. This should be enabled for testing purposes only. See also :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`.
+強制所有控制項使用“從右至左”的排版方向和文字書寫方向，即便目前區域設定應當使用從左至右的版面配置和文字書寫方向。只應在測試時啟用。另見 :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7527,9 +7527,9 @@ Force layout direction and text writing direction to RTL for all controls, even 
 
 :ref:`bool<class_bool>` **internationalization/rendering/root_node_auto_translate** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`
 
-If ``true``, root node will use :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`, otherwise :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>` will be used.
+如果為 ``true``\ ，則根節點使用 :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`\ ，否則使用 :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`\ 。
 
-\ **Note:** This property is only read when the project starts. To change the auto translate mode at runtime, set :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` of :ref:`SceneTree.root<class_SceneTree_property_root>` instead.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時更改自動翻譯模式，請改為設定 :ref:`SceneTree.root<class_SceneTree_property_root>` 的 :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7553,13 +7553,13 @@ If ``true``, root node will use :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node
 
 :ref:`String<class_String>` **internationalization/rendering/text_driver** = ``""`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/text_driver>`
 
-Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the default will be used.
+指定要使用的 :ref:`TextServer<class_TextServer>`\ 。如果留空，則會使用預設伺服器。
 
-"ICU / HarfBuzz / Graphite" (:ref:`TextServerAdvanced<class_TextServerAdvanced>`) is the most advanced text driver, supporting right-to-left typesetting and complex scripts (for languages like Arabic, Hebrew, etc.). The "Fallback" text driver (:ref:`TextServerFallback<class_TextServerFallback>`) does not support right-to-left typesetting and complex scripts.
+“ICU / HarfBuzz / Graphite”（\ :ref:`TextServerAdvanced<class_TextServerAdvanced>`\ ）是最先進的文字驅動，支援從右至左的排版和複雜文字（用於阿拉伯語、希伯來語等語言）。“Fallback”（\ :ref:`TextServerFallback<class_TextServerFallback>`\ ）文字驅動不支援從右至左的排版和複雜文字。
 
-\ **Note:** The driver in use can be overridden at runtime via the ``--text-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+\ **注意：**\ 在執行時可以通過 ``--text-driver`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 覆蓋使用的驅動程式。
 
-\ **Note:** There is an additional ``Dummy`` text driver available, which disables all text rendering and font-related functionality. This driver is not listed in the project settings, but it can be enabled when running the editor or project using the ``--text-driver Dummy`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+\ **注意：**\ 另外還提供了 ``Dummy`` 文字驅動，它停用了所有文字渲染和字型相關的功能。這個驅動沒有在專案設定中列出，但可以在執行編輯器或專案時使用 ``--text-driver Dummy`` :doc:`命令行參數 <../tutorials/editor/command_line_tutorial>`\ 啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -8339,7 +8339,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_1>`
 
-2D 算繪層 1 的可選名稱。留空則會顯示為“層 1”。
+2D 渲染層 1 的可選名稱。留空則會顯示為“層 1”。
 
 .. rst-class:: classref-item-separator
 
@@ -8351,7 +8351,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_2>`
 
-2D 算繪層 2 的可選名稱。留空則會顯示為“層 2”。
+2D 渲染層 2 的可選名稱。留空則會顯示為“層 2”。
 
 .. rst-class:: classref-item-separator
 
@@ -8363,7 +8363,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_3>`
 
-2D 算繪層 3 的可選名稱。留空則會顯示為“層 3”。
+2D 渲染層 3 的可選名稱。留空則會顯示為“層 3”。
 
 .. rst-class:: classref-item-separator
 
@@ -8375,7 +8375,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_4>`
 
-2D 算繪層 4 的可選名稱。留空則會顯示為“層 4”。
+2D 渲染層 4 的可選名稱。留空則會顯示為“層 4”。
 
 .. rst-class:: classref-item-separator
 
@@ -8387,7 +8387,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_5>`
 
-2D 算繪層 5 的可選名稱。留空則會顯示為“層 5”。
+2D 渲染層 5 的可選名稱。留空則會顯示為“層 5”。
 
 .. rst-class:: classref-item-separator
 
@@ -8399,7 +8399,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_6>`
 
-2D 算繪層 6 的可選名稱。留空則會顯示為“層 6”。
+2D 渲染層 6 的可選名稱。留空則會顯示為“層 6”。
 
 .. rst-class:: classref-item-separator
 
@@ -8411,7 +8411,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_7>`
 
-2D 算繪層 7 的可選名稱。留空則會顯示為“層 7”。
+2D 渲染層 7 的可選名稱。留空則會顯示為“層 7”。
 
 .. rst-class:: classref-item-separator
 
@@ -8423,7 +8423,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_8>`
 
-2D 算繪層 8 的可選名稱。留空則會顯示為“層 8”。
+2D 渲染層 8 的可選名稱。留空則會顯示為“層 8”。
 
 .. rst-class:: classref-item-separator
 
@@ -8435,7 +8435,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_9>`
 
-2D 算繪層 9 的可選名稱。留空則會顯示為“層 9”。
+2D 渲染層 9 的可選名稱。留空則會顯示為“層 9”。
 
 .. rst-class:: classref-item-separator
 
@@ -8447,7 +8447,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_10>`
 
-2D 算繪層 10 的可選名稱。留空則會顯示為“層 10”。
+2D 渲染層 10 的可選名稱。留空則會顯示為“層 10”。
 
 .. rst-class:: classref-item-separator
 
@@ -8459,7 +8459,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_11>`
 
-2D 算繪層 11 的可選名稱。留空則會顯示為“層 11”。
+2D 渲染層 11 的可選名稱。留空則會顯示為“層 11”。
 
 .. rst-class:: classref-item-separator
 
@@ -8471,7 +8471,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_12>`
 
-2D 算繪層 12 的可選名稱。留空則會顯示為“層 12”。
+2D 渲染層 12 的可選名稱。留空則會顯示為“層 12”。
 
 .. rst-class:: classref-item-separator
 
@@ -8483,7 +8483,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_13>`
 
-2D 算繪層 13 的可選名稱。留空則會顯示為“層 13”。
+2D 渲染層 13 的可選名稱。留空則會顯示為“層 13”。
 
 .. rst-class:: classref-item-separator
 
@@ -8495,7 +8495,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_14>`
 
-2D 算繪層 14 的可選名稱。留空則會顯示為“層 14”。
+2D 渲染層 14 的可選名稱。留空則會顯示為“層 14”。
 
 .. rst-class:: classref-item-separator
 
@@ -8507,7 +8507,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_15>`
 
-2D 算繪層 15 的可選名稱。留空則會顯示為“層 15”。
+2D 渲染層 15 的可選名稱。留空則會顯示為“層 15”。
 
 .. rst-class:: classref-item-separator
 
@@ -8519,7 +8519,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_16>`
 
-2D 算繪層 16 的可選名稱。留空則會顯示為“層 16”。
+2D 渲染層 16 的可選名稱。留空則會顯示為“層 16”。
 
 .. rst-class:: classref-item-separator
 
@@ -8531,7 +8531,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_17>`
 
-2D 算繪層 17 的可選名稱。留空則會顯示為“層 17”。
+2D 渲染層 17 的可選名稱。留空則會顯示為“層 17”。
 
 .. rst-class:: classref-item-separator
 
@@ -8543,7 +8543,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_18>`
 
-2D 算繪層 18 的可選名稱。留空則會顯示為“層 18”。
+2D 渲染層 18 的可選名稱。留空則會顯示為“層 18”。
 
 .. rst-class:: classref-item-separator
 
@@ -8555,7 +8555,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_19>`
 
-2D 算繪層 19 的可選名稱。留空則會顯示為“層 19”。
+2D 渲染層 19 的可選名稱。留空則會顯示為“層 19”。
 
 .. rst-class:: classref-item-separator
 
@@ -8567,7 +8567,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_20>`
 
-2D 算繪層 20 的可選名稱。留空則會顯示為“層 20”。
+2D 渲染層 20 的可選名稱。留空則會顯示為“層 20”。
 
 .. rst-class:: classref-item-separator
 
@@ -9347,7 +9347,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_1>`
 
-3D 算繪層 1 的可選名稱。留空則會顯示為“層 1”。
+3D 渲染層 1 的可選名稱。留空則會顯示為“層 1”。
 
 .. rst-class:: classref-item-separator
 
@@ -9359,7 +9359,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_2>`
 
-3D 算繪層 2 的可選名稱。留空則會顯示為“層 2”。
+3D 渲染層 2 的可選名稱。留空則會顯示為“層 2”。
 
 .. rst-class:: classref-item-separator
 
@@ -9371,7 +9371,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_3>`
 
-3D 算繪層 3 的可選名稱。留空則會顯示為“層 3”。
+3D 渲染層 3 的可選名稱。留空則會顯示為“層 3”。
 
 .. rst-class:: classref-item-separator
 
@@ -9383,7 +9383,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_4>`
 
-3D 算繪層 4 的可選名稱。留空則會顯示為“層 4”。
+3D 渲染層 4 的可選名稱。留空則會顯示為“層 4”。
 
 .. rst-class:: classref-item-separator
 
@@ -9395,7 +9395,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_5>`
 
-3D 算繪層 5 的可選名稱。留空則會顯示為“層 5”。
+3D 渲染層 5 的可選名稱。留空則會顯示為“層 5”。
 
 .. rst-class:: classref-item-separator
 
@@ -9407,7 +9407,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_6>`
 
-3D 算繪層 6 的可選名稱。留空則會顯示為“層 6”。
+3D 渲染層 6 的可選名稱。留空則會顯示為“層 6”。
 
 .. rst-class:: classref-item-separator
 
@@ -9419,7 +9419,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_7>`
 
-3D 算繪層 7 的可選名稱。留空則會顯示為“層 7”。
+3D 渲染層 7 的可選名稱。留空則會顯示為“層 7”。
 
 .. rst-class:: classref-item-separator
 
@@ -9431,7 +9431,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_8>`
 
-3D 算繪層 8 的可選名稱。留空則會顯示為“層 8”。
+3D 渲染層 8 的可選名稱。留空則會顯示為“層 8”。
 
 .. rst-class:: classref-item-separator
 
@@ -9443,7 +9443,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_9>`
 
-3D 算繪層 9 的可選名稱。留空則會顯示為“層 9”。
+3D 渲染層 9 的可選名稱。留空則會顯示為“層 9”。
 
 .. rst-class:: classref-item-separator
 
@@ -9455,7 +9455,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_10>`
 
-3D 算繪層 10 的可選名稱。留空則會顯示為“層 10”。
+3D 渲染層 10 的可選名稱。留空則會顯示為“層 10”。
 
 .. rst-class:: classref-item-separator
 
@@ -9467,7 +9467,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_11>`
 
-3D 算繪層 11 的可選名稱。留空則會顯示為“層 11”。
+3D 渲染層 11 的可選名稱。留空則會顯示為“層 11”。
 
 .. rst-class:: classref-item-separator
 
@@ -9479,7 +9479,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_12>`
 
-3D 算繪層 12 的可選名稱。留空則會顯示為“層 12”。
+3D 渲染層 12 的可選名稱。留空則會顯示為“層 12”。
 
 .. rst-class:: classref-item-separator
 
@@ -9491,7 +9491,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_13>`
 
-3D 算繪層 13 的可選名稱。留空則會顯示為“層 13”。
+3D 渲染層 13 的可選名稱。留空則會顯示為“層 13”。
 
 .. rst-class:: classref-item-separator
 
@@ -9503,7 +9503,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_14>`
 
-3D 算繪層 14 的可選名稱。留空則會顯示為“層 14”。
+3D 渲染層 14 的可選名稱。留空則會顯示為“層 14”。
 
 .. rst-class:: classref-item-separator
 
@@ -9515,7 +9515,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_15>`
 
-3D 算繪層 15 的可選名稱。留空則會顯示為“層 15”。
+3D 渲染層 15 的可選名稱。留空則會顯示為“層 15”。
 
 .. rst-class:: classref-item-separator
 
@@ -9527,7 +9527,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_16>`
 
-3D 算繪層 16 的可選名稱。留空則會顯示為“層 16”。
+3D 渲染層 16 的可選名稱。留空則會顯示為“層 16”。
 
 .. rst-class:: classref-item-separator
 
@@ -9539,7 +9539,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_17>`
 
-3D 算繪層 17 的可選名稱。留空則會顯示為“層 17”。
+3D 渲染層 17 的可選名稱。留空則會顯示為“層 17”。
 
 .. rst-class:: classref-item-separator
 
@@ -9551,7 +9551,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_18>`
 
-3D 算繪層 18 的可選名稱。留空則會顯示為“層 18”。
+3D 渲染層 18 的可選名稱。留空則會顯示為“層 18”。
 
 .. rst-class:: classref-item-separator
 
@@ -9563,7 +9563,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_19>`
 
-3D 算繪層 19 的可選名稱。留空則會顯示為“層 19”。
+3D 渲染層 19 的可選名稱。留空則會顯示為“層 19”。
 
 .. rst-class:: classref-item-separator
 
@@ -9575,7 +9575,7 @@ Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the def
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_20>`
 
-3D 算繪層 20 的可選名稱。留空則會顯示為“層 20”。
+3D 渲染層 20 的可選名稱。留空則會顯示為“層 20”。
 
 .. rst-class:: classref-item-separator
 
@@ -10019,7 +10019,7 @@ Godot 使用一個訊息佇列來延遲一些函式呼叫。如果你的空間�
 
 :ref:`float<class_float>` **navigation/2d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/merge_rasterizer_cell_scale>`
 
-Default merge rasterizer cell scale for 2D navigation maps. See :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`.
+2D 導航地圖的預設合併光柵化單元格縮放。見 :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10031,15 +10031,15 @@ Default merge rasterizer cell scale for 2D navigation maps. See :ref:`Navigation
 
 :ref:`String<class_String>` **navigation/2d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/navigation_engine>`
 
-Sets which navigation engine to use for 2D navigation.
+設定用於 2D 導航的導航引擎。
 
-\ **DEFAULT** is equivalent to **GodotNavigation2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 等價於 **GodotNavigation2D**\ ，但在未來的版本中可能會更改。如果希望確保專案始終使用相同的引擎，請選擇明確的實作。
 
-\ **GodotNavigation2D** is Godot's internal 2D navigation engine.
+\ **GodotNavigation2D** 是 Godot 的內部 2D 導航引擎。
 
-\ **Dummy** is a 2D navigation server that does nothing and returns only dummy values, effectively disabling all 2D navigation functionality.
+\ **Dummy** 是一個不執行任何操作、僅回傳虛設值的 2D 導航伺服器，實際上停用了所有 2D 導航功能。
 
-Third-party modules can add other navigation engines to select with this setting.
+第三方模組可以通過該設定新增其他可選擇的導航引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10075,7 +10075,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_edge_merge_errors>`
 
-如果\ ``true``\ ，導航系統將列印有關導航區域或地圖中發生的導航網格邊緣合併錯誤的警告。
+如果\ ``true``\ ，導航系統將列印有關導航區域或地圖中發生的導覽網格邊緣合併錯誤的警告。
 
 .. rst-class:: classref-item-separator
 
@@ -10135,7 +10135,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`Vector3<class_Vector3>` **navigation/3d/default_up** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_up>`
 
-3D 導覽地圖的預設儲存格大小。見 :ref:`NavigationServer3D.map_set_cell_size()<class_NavigationServer3D_method_map_set_cell_size>`\ 。
+3D 導航地圖的預設上方向。見 :ref:`NavigationServer3D.map_set_up()<class_NavigationServer3D_method_map_set_up>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10147,7 +10147,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/merge_rasterizer_cell_scale>`
 
-Default merge rasterizer cell scale for 3D navigation maps. See :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`.
+3D 導航地圖的預設合併光柵化單元格縮放。請參閱 :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10159,15 +10159,15 @@ Default merge rasterizer cell scale for 3D navigation maps. See :ref:`Navigation
 
 :ref:`String<class_String>` **navigation/3d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/navigation_engine>`
 
-Sets which navigation engine to use for 3D navigation.
+設定用於 3D 導航的導航引擎。
 
-\ **DEFAULT** is equivalent to **GodotNavigation3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 等價於 **GodotNavigation3D**\ ，但在未來的版本中可能會更改。如果希望確保專案始終使用相同的引擎，請選擇明確的實作。
 
-\ **GodotNavigation3D** is Godot's internal 3D navigation engine.
+\ **GodotNavigation3D** 是 Godot 的內部 3D 導航引擎。
 
-\ **Dummy** is a 3D navigation server that does nothing and returns only dummy values, effectively disabling all 3D navigation functionality.
+\ **Dummy** 是一個不執行任何操作、僅回傳虛設值的 3D 導航伺服器，實際上停用了所有 3D 導航功能。
 
-Third-party modules can add other navigation engines to select with this setting.
+第三方模組可以通過該設定新增其他可選擇的導航引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10191,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_cell_size_mismatch>`
 
-如果 ``true``\ ，則當在較大尺寸的導航地圖上使用較小單元格尺寸（或 3D 高度）的導航網格時，導航系統將列印警告，因為這通常會導致柵格化錯誤。
+如果 ``true``\ ，則當在較大尺寸的導航地圖上使用較小單元格尺寸（或 3D 高度）的導覽網格時，導航系統將列印警告，因為這通常會導致柵格化錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -10203,7 +10203,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_edge_merge_errors>`
 
-如果\ ``true``\ ，導航系統將列印有關導航區域或地圖中發生的導航網格邊緣合併錯誤的警告。
+如果\ ``true``\ ，導航系統將列印有關導航區域或地圖中發生的導覽網格邊緣合併錯誤的警告。
 
 .. rst-class:: classref-item-separator
 
@@ -10263,7 +10263,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/baking/use_crash_prevention_checks** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/use_crash_prevention_checks>`
 
-If enabled, and baking would potentially lead to an engine crash, the baking will be interrupted and an error message with explanation will be raised.
+如果啟用，當烘焙可能導致引擎崩潰時，會打斷烘焙併發出錯誤訊息進行解釋。
 
 .. rst-class:: classref-item-separator
 
@@ -10275,7 +10275,7 @@ If enabled, and baking would potentially lead to an engine crash, the baking wil
 
 :ref:`int<class_int>` **navigation/pathfinding/max_threads** = ``4`` :ref:`🔗<class_ProjectSettings_property_navigation/pathfinding/max_threads>`
 
-Maximum number of threads that can run pathfinding queries simultaneously on the same pathfinding graph, for example the same navigation map. Additional threads increase memory consumption and synchronization time due to the need for extra data copies prepared for each thread. A value of ``-1`` means unlimited and the maximum available OS processor count is used. Defaults to ``1`` when the OS does not support threads.
+在同一張尋路圖上，例如同一張導航地圖上，能夠同時執行尋路查詢的執行緒數量上限。執行緒越多，記憶體佔用就越大，額外為每個執行緒準備資料副本也會導致同步時間的增加。取值為 ``-1`` 表示數量不限，使用作業系統最大可用的處理器的數量。作業系統不支援執行緒時預設為 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10287,7 +10287,7 @@ Maximum number of threads that can run pathfinding queries simultaneously on the
 
 :ref:`bool<class_bool>` **navigation/world/map_use_async_iterations** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/world/map_use_async_iterations>`
 
-If enabled, navigation map synchronization uses an async process that runs on a background thread. This avoids stalling the main thread but adds an additional delay to any navigation map change.
+如果啟用，導航地圖的同步會在後台執行緒上進行非同步處理。這樣能夠防止阻塞主執行緒，但是導航地圖的更改都會增加額外的延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -10299,7 +10299,7 @@ If enabled, navigation map synchronization uses an async process that runs on a 
 
 :ref:`bool<class_bool>` **navigation/world/region_use_async_iterations** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/world/region_use_async_iterations>`
 
-If enabled, navigation region synchronization uses an async process that runs on a background thread. This avoids stalling the main thread but adds an additional delay to any navigation region change.
+如果啟用，導航區塊的同步會在後台執行緒上進行非同步處理。這樣能夠防止阻塞主執行緒，但是導航區塊的更改都會增加額外的延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -10335,7 +10335,7 @@ If enabled, navigation region synchronization uses an async process that runs on
 
 :ref:`int<class_int>` **network/limits/debugger/max_queued_messages** = ``2048`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_queued_messages>`
 
-除錯器佇列中的最大消息數。超過該值，內容將被丟棄。這有助於限制除錯器的記憶體使用。
+除錯器佇列中的最大訊息數。超過該值，內容將被丟棄。這有助於限制除錯器的記憶體使用。
 
 .. rst-class:: classref-item-separator
 
@@ -10383,7 +10383,7 @@ If enabled, navigation region synchronization uses an async process that runs on
 
 :ref:`int<class_int>` **network/limits/unix/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/unix/connect_timeout_seconds>`
 
-Timeout (in seconds) for connection attempts using UNIX domain socket.
+使用 UNIX 域套接字連接嘗試的超時（以秒為單位）。
 
 .. rst-class:: classref-item-separator
 
@@ -10407,9 +10407,9 @@ Timeout (in seconds) for connection attempts using UNIX domain socket.
 
 :ref:`String<class_String>` **network/tls/certificate_bundle_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_network/tls/certificate_bundle_override>`
 
-The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Godot's default `Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
+用於 TLS 連接的 CA 憑證包。如果設定為非空值，這將\ *覆蓋* Godot 預設的 `Mozilla 憑證包 <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__\ 。如果留空，將使用預設的憑證包。
 
-If in doubt, leave this setting empty.
+如果有疑問，請將此設定留空。
 
 .. rst-class:: classref-item-separator
 
@@ -10421,9 +10421,9 @@ If in doubt, leave this setting empty.
 
 :ref:`bool<class_bool>` **network/tls/enable_tls_v1.3** = ``true`` :ref:`🔗<class_ProjectSettings_property_network/tls/enable_tls_v1.3>`
 
-If ``true``, enable TLSv1.3 negotiation.
+如果為 ``true``\ ，則啟用 TLSv1.3 協商。
 
-\ **Note:** Only supported when using Mbed TLS 3.0 or later (Linux distribution packages may be compiled against older system Mbed TLS packages), otherwise the maximum supported TLS version is always TLSv1.2.
+\ **注意：**\ 僅在使用 Mbed TLS 3.0 或更高版本時支援（Linux 發行版包可能是針對較舊的系統 Mbed TLS 包編譯的），否則最大支援的 TLS 版本始終為 TLSv1.2。
 
 .. rst-class:: classref-item-separator
 
@@ -10435,15 +10435,15 @@ If ``true``, enable TLSv1.3 negotiation.
 
 :ref:`float<class_float>` **physics/2d/default_angular_damp** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_angular_damp>`
 
-The default rotational motion damping in 2D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
+預設的 2D 旋轉運動阻尼。阻尼可以用來讓物理物件逐漸慢下來。RigidBody 在合併自身的阻尼值時，如果沒有區域阻尼，那麼就會回退到這個值。
 
-Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
+建議使用 ``0`` 到 ``30`` 之間的值。為 ``0`` 時，物件會使用相同的速度持續移動。值越大、物體停得越快。如果大於等於物理週期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那麼物件進行一次迭代就會停下來。
 
-\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
+\ **注意：**\ Godot 中的阻尼計算與速度相關，即物體移動得越快、靜止所需的時間就越長，不會對慣性、摩擦力、空氣阻力進行仿真。因此，較重較大的物體和較輕較小的物體會以相同的比例損失速度。
 
-During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody2D_DampMode>`.
+每個物理週期中，Godot 會將 RigidBody 的線速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ 。預設情況下，物體的合併阻尼係數 ``combined_damp`` 是該物體所有阻尼值與這個值或物體所處區域阻尼值之和。見 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
 
-\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
+\ **警告：**\ Godot 中的阻尼計算與仿真週期率相關。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能對仿真的結果和感覺造成顯著影響。只要是大於 0 的阻尼值都會有這種現象。要恢復此前的感覺，就需要修改阻尼值。修改多少並不成比例，需要根據實際情況調整。
 
 .. rst-class:: classref-item-separator
 
@@ -10513,15 +10513,15 @@ During each physics tick, Godot will multiply the linear velocity of RigidBodies
 
 :ref:`float<class_float>` **physics/2d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_linear_damp>`
 
-The default linear motion damping in 2D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
+預設的 2D 線性運動阻尼。阻尼可以用來讓物理物件逐漸慢下來。RigidBody 在合併自身的阻尼值時，如果沒有區域阻尼，那麼就會回退到這個值。
 
-Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
+建議使用 ``0`` 到 ``30`` 之間的值。為 ``0`` 時，物件會使用相同的速度持續移動。值越大、物體停得越快。如果大於等於物理週期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那麼物件進行一次迭代就會停下來。
 
-\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
+\ **注意：**\ Godot 中的阻尼計算與速度相關，即物體移動得越快、靜止所需的時間就越長，不會對慣性、摩擦力、空氣阻力進行仿真。因此，較重較大的物體和較輕較小的物體會以相同的比例損失速度。
 
-During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``, where ``combined_damp`` is the sum of the linear damp of the body and this value, or the area's value the body is in, assuming the body defaults to combine damp values. See :ref:`DampMode<enum_RigidBody2D_DampMode>`.
+每個物理週期中，Godot 會將 RigidBody 的線速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ ，其中 ``combined_damp`` 是該物體線性阻尼值與這個值或物體所處區域阻尼值之和。這些都以物體預設合併阻尼值為前提。見 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
 
-\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
+\ **警告：**\ Godot 中的阻尼計算與仿真週期率相關。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能對仿真的結果和感覺造成顯著影響。只要是大於 0 的阻尼值都會有這種現象。要恢復此前的感覺，就需要修改阻尼值。修改多少並不成比例，需要根據實際情況調整。
 
 .. rst-class:: classref-item-separator
 
@@ -10533,15 +10533,15 @@ During each physics tick, Godot will multiply the linear velocity of RigidBodies
 
 :ref:`String<class_String>` **physics/2d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/2d/physics_engine>`
 
-Sets which physics engine to use for 2D physics.
+設定用於 2D 物理的物理引擎。
 
-\ **DEFAULT** is currently equivalent to **GodotPhysics2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 目前等價於 **GodotPhysics2D**\ ，但在未來的版本中可能會有所更改。如果希望確保專案始終使用相同的引擎，請選擇明確的實作。
 
-\ **GodotPhysics2D** is Godot's internal 2D physics engine.
+\ **GodotPhysics2D** 是 Godot 的內部 2D 物理引擎。
 
-\ **Dummy** is a 2D physics server that does nothing and returns only dummy values, effectively disabling all 2D physics functionality.
+\ **Dummy** 是一個不執行任何操作、僅回傳虛設值的 2D 物理伺服器，實際上停用了所有 2D 物理功能。
 
-Third-party extensions and modules can add other physics engines to select with this setting.
+第三方擴充和模組可以通過該設定新增其他可選擇的物理引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10553,7 +10553,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`bool<class_bool>` **physics/2d/run_on_separate_thread** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/2d/run_on_separate_thread>`
 
-如果為 ``true``\ ，則 2D 物理伺服器會在單獨的執行緒上運作，能夠更好地利用多核 CPU。如果為 ``false``\ ，則 2D 物理伺服器會在主執行緒上運作。在單獨的執行緒上運作物理伺服器能夠提高性能，但會把對 API 的存取限制在物理處理中。
+如果為 ``true``\ ，則 2D 物理伺服器會在單獨的執行緒上運作，能夠更好地利用多核 CPU。如果為 ``false``\ ，則 2D 物理伺服器會在主執行緒上運作。在單獨的執行緒上運作物理伺服器能夠提高效能，但會把對 API 的存取限制在物理處理中。
 
 .. rst-class:: classref-item-separator
 
@@ -10577,9 +10577,9 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+當 2D 物理剛體的線速度低於這個閾值時，它就會被判定為“不活躍”（即進入休眠狀態）。詳情請參考 :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自帶的 3D 物理引擎（GodotPhysics3D）時才支援該設定。如果使用的是 Jolt Physics 物理外掛，此專案設定將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10591,9 +10591,9 @@ Threshold linear velocity under which a 2D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_allowed_penetration** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+在一個形狀被判定為發生碰撞之前，允許它穿透另一個形狀的最大距離。詳情請參考 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自帶的 3D 物理引擎（GodotPhysics3D）時才支援該設定。如果使用的是 Jolt Physics 物理外掛，此專案設定將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10657,7 +10657,7 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`int<class_int>` **physics/2d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/solver_iterations>`
 
-所有接觸和約束的求解器反覆運算次數。反覆運算次數越多，碰撞越精確。然而，大量反覆運算也會消耗大量的 CPU 性能，可能導致性能的降低。見 :ref:`PhysicsServer2D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer2D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
+所有接觸和約束的求解器反覆運算次數。反覆運算次數越多，碰撞越精確。然而，大量反覆運算也會消耗大量的 CPU 效能，可能導致效能的降低。見 :ref:`PhysicsServer2D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer2D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10681,15 +10681,15 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/default_angular_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_angular_damp>`
 
-The default rotational motion damping in 3D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
+預設的 3D 旋轉運動阻尼。阻尼可以用來讓物理物件逐漸慢下來。RigidBody 在合併自身的阻尼值時，如果沒有區域阻尼，那麼就會回退到這個值。
 
-Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
+建議使用 ``0`` 到 ``30`` 之間的值。為 ``0`` 時，物件會使用相同的速度持續移動。值越大、物體停得越快。如果大於等於物理週期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那麼物件進行一次迭代就會停下來。
 
-\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
+\ **注意：**\ Godot 中的阻尼計算與速度相關，即物體移動得越快、靜止所需的時間就越長，不會對慣性、摩擦力、空氣阻力進行仿真。因此，較重較大的物體和較輕較小的物體會以相同的比例損失速度。
 
-During each physics tick, Godot will multiply the angular velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody3D_DampMode>`.
+每個物理週期中，Godot 會將 RigidBody 的角速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ 。預設情況下，物體的合併阻尼係數 ``combined_damp`` 是該物體所有阻尼值與這個值或物體所處區域阻尼值之和。見 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
 
-\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
+\ **警告：**\ Godot 中的阻尼計算與仿真週期率相關。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能對仿真的結果和感覺造成顯著影響。只要是大於 0 的阻尼值都會有這種現象。要恢復此前的感覺，就需要修改阻尼值。修改多少並不成比例，需要根據實際情況調整。
 
 .. rst-class:: classref-item-separator
 
@@ -10759,15 +10759,15 @@ During each physics tick, Godot will multiply the angular velocity of RigidBodie
 
 :ref:`float<class_float>` **physics/3d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_linear_damp>`
 
-The default linear motion damping in 3D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
+預設的 3D 線性運動阻尼。阻尼可以用來讓物理物件逐漸慢下來。RigidBody 在合併自身的阻尼值時，如果沒有區域阻尼，那麼就會回退到這個值。
 
-Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
+建議使用 ``0`` 到 ``30`` 之間的值。為 ``0`` 時，物件會使用相同的速度持續移動。值越大、物體停得越快。如果大於等於物理週期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那麼物件進行一次迭代就會停下來。
 
-\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
+\ **注意：**\ Godot 中的阻尼計算與速度相關，即物體移動得越快、靜止所需的時間就越長，不會對慣性、摩擦力、空氣阻力進行仿真。因此，較重較大的物體和較輕較小的物體會以相同的比例損失速度。
 
-During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody3D_DampMode>`.
+每個物理週期中，Godot 會將 RigidBody 的線速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ ，預設情況下，物體的合併阻尼係數 ``combined_damp`` 是該物體線性阻尼值與這個值或物體所處區域阻尼值之和。這些都以物體預設合併阻尼值為前提。見 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
 
-\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
+\ **警告：**\ Godot 中的阻尼計算與仿真週期率相關。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能對仿真的結果和感覺造成顯著影響。只要是大於 0 的阻尼值都會有這種現象。要恢復此前的感覺，就需要修改阻尼值。修改多少並不成比例，需要根據實際情況調整。
 
 .. rst-class:: classref-item-separator
 
@@ -10779,17 +10779,17 @@ During each physics tick, Godot will multiply the linear velocity of RigidBodies
 
 :ref:`String<class_String>` **physics/3d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_engine>`
 
-Sets which physics engine to use for 3D physics.
+設定用於 3D 物理的物理引擎。
 
-\ **DEFAULT** is currently equivalent to **GodotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 目前等價於 **GodotPhysics3D**\ ，但在未來的版本中可能會有所更改。如果希望確保專案始終使用相同的引擎，請選擇明確的實作。
 
-\ **GodotPhysics3D** is Godot's internal 3D physics engine.
+\ **GodotPhysics3D** 是 Godot 的內部 3D 物理引擎。
 
-\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **GodotPhysics3D**. Jolt Physics is the default for projects created starting in Godot 4.6.
+\ **Jolt Physics** 是備選的物理引擎，通常比 **GodotPhysics3D** 更快更可靠。從 Godot 4.6 開始建立的專案預設使用 Jolt Physics。
 
-\ **Dummy** is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
+\ **Dummy** 是一個不執行任何操作、僅回傳虛設值的 3D 物理伺服器，實際上停用了所有 3D 物理功能。
 
-Third-party extensions and modules can add other physics engines to select with this setting.
+第三方擴充和模組可以通過該設定新增其他可選擇的物理引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10801,13 +10801,13 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`String<class_String>` **physics/3d/physics_interpolation/scene_traversal** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_interpolation/scene_traversal>`
 
-The approach used for 3D scene traversal when physics interpolation is enabled.
+啟用物理插值時，遍歷 3D 場景所使用的方法。
 
-- ``DEFAULT``: The default optimized method.
+- ``DEFAULT``\ （預設）：預設最佳化方法。
 
-- ``Legacy``: The previous reference method used for scene tree traversal, which is slower.
+- ``Legacy``\ （遺留）：以前的場景樹遍歷參考方法，較慢。
 
-- ``Debug``: Swaps between ``DEFAULT`` and ``Legacy`` methods on alternating frames, and provides logging information (which in turn makes it slower). Intended for debugging only; you should use the ``DEFAULT`` method in most cases.
+- ``Debug``\ （除錯）：影格與影格之間交替使用 ``DEFAULT`` 和 ``Legacy`` 方法，提供記錄資訊（因此會較慢）。僅適用於除錯；大多數情況下應使用 ``DEFAULT`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -10819,9 +10819,9 @@ The approach used for 3D scene traversal when physics interpolation is enabled.
 
 :ref:`bool<class_bool>` **physics/3d/run_on_separate_thread** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/3d/run_on_separate_thread>`
 
-If ``true``, the 3D physics server runs on a separate thread, making better use of multi-core CPUs. If ``false``, the 3D physics server runs on the main thread. Running the physics server on a separate thread can increase performance, but restricts API access to only physics process.
+如果為 ``true``\ ，則 3D 物理伺服器會在單獨的執行緒上執行，能夠更好地利用多核 CPU。如果為 ``false``\ ，則 3D 物理伺服器會在主執行緒上執行。在單獨的執行緒上執行物理伺服器能夠提高效能，但會把對 API 的存取限制在物理處理中。
 
-\ **Note:** When :ref:`physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` is set to ``Jolt Physics``, enabling this setting will prevent the 3D physics server from being able to provide any context when reporting errors and warnings, and will instead always refer to nodes as ``<unknown>``.
+\ **注意：**\ :ref:`physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` 為 ``Jolt Physics`` 時，啟用該設定會導致 3D 物理伺服器在報告錯誤和警告時無法提供任何情境，而是始終將節點稱為 ``<unknown>``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10833,9 +10833,9 @@ If ``true``, the 3D physics server runs on a separate thread, making better use 
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+當 3D 物理剛體的角速度低於這個閾值時，它就會被判定為“不活躍”（即進入休眠狀態）。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自帶的 3D 物理引擎（GodotPhysics3D）時才支援該設定。如果使用的是 Jolt Physics 物理外掛，此專案設定將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10847,9 +10847,9 @@ Threshold angular velocity under which a 3D physics body will be considered inac
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+當 3D 物理剛體的線速度低於這個閾值時，它就會被判定為“不活躍”（即進入休眠狀態）。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自帶的 3D 物理引擎（GodotPhysics3D）時才支援該設定。如果使用的是 Jolt Physics 物理外掛，此專案設定將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10861,9 +10861,9 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+在一個形狀被判定為發生碰撞之前，允許它穿透另一個形狀的最大距離。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D（Godot 自帶的 3D 物理引擎）時有效。當使用 Jolt Physics 物理外掛時，該設定不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10875,9 +10875,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+在兩個形狀被判定為“已經分開”並且丟棄接觸點之前，它們之間允許存在的最大距離。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D（Godot 自帶的 3D 物理引擎）時有效。當使用 Jolt Physics 物理外掛時，該設定不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10889,9 +10889,9 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+在兩個物體的碰撞狀態需要被重新計算之前，它們之間允許移動的最大距離。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D（Godot 自帶的 3D 物理引擎）時有效。當使用 Jolt Physics 物理外掛時，該設定不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10903,11 +10903,11 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+所有物理接觸點的預設求解器偏差（Solver Bias）。它定義了物體為了強制分離接觸（避免互相穿透）而產生的反應強度。具體可以參考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`\ 。
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+單個的碰撞形狀也可以擁有特定的偏差值（具體請參考 :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`\ ）。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D 時生效。如果你使用的是 Jolt Physics，它將不起任何作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10919,9 +10919,9 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+所有接觸和約束的求解器迭代次數。迭代次數越多，碰撞的計算結果就越精確。但是，更多的迭代次數需要消耗更多的 CPU 資源，這可能會降低遊戲的執行效能。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D（Godot 自帶的 3D 物理引擎）時有效。當使用 Jolt Physics 物理外掛時，該設定不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10933,9 +10933,9 @@ Number of solver iterations for all contacts and constraints. The greater the nu
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
+一個 3D 物理剛體在進入休眠狀態前，允許保持不活躍狀態的時間（以秒為單位）。詳情請參考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此專案設定僅在使用 GodotPhysics3D（Godot 自帶的 3D 物理引擎）時有效。當使用 Jolt Physics 物理外掛時，該設定不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10959,11 +10959,11 @@ Time (in seconds) of inactivity before which a 3D physics body will put to sleep
 
 :ref:`int<class_int>` **physics/common/max_physics_steps_per_frame** = ``8`` :ref:`🔗<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`
 
-Controls the maximum number of physics steps that can be simulated each rendered frame. The default value is tuned to avoid situations where the framerate suddenly drops to a very low value beyond a certain amount of physics simulation. This occurs because the physics engine can't keep up with the expected simulation rate. In this case, the framerate will start dropping, but the engine is only allowed to simulate a certain number of physics steps per rendered frame. This snowballs into a situation where framerate keeps dropping until it reaches a very low framerate (typically 1-2 FPS) and is called the *physics spiral of death*.
+控制每個渲染影格所能模擬的最大物理迭代數。預設值經過特調，可以避免影格率突然降得非常低、低於特定物理仿真次數的情況。造成的原因是物理引擎無法保持預期的仿真頻率。此時影格率會開始下降，但引擎每個渲染影格最多只能進行特定次數的物理步驟仿真。從而逐漸形成惡性循環，影格率不斷下降，直至一個非常低的影格率（通常是 1-2 FPS），這就是\ *物理死亡螺旋*\ 。
 
-However, the game will appear to slow down if the rendering FPS is less than ``1 / max_physics_steps_per_frame`` of :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`. This occurs even if ``delta`` is consistently used in physics calculations. To avoid this, increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if you have increased :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+不過渲染 FPS 低於 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 的 ``1 / max_physics_steps_per_frame`` 就會給人降速的效果。即便在物理計算中一直使用 ``delta`` 也會如此。為了避免這種情況，如果已經將 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 提高到明顯大於預設值，請增大 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`\ 。
 
-\ **Note:** This property is only read when the project starts. To change the maximum number of simulated physics steps per frame at runtime, set :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` instead.
+\ **注意：**\ 這個屬性只會在專案啟動時讀取。要在執行時修改最大物理步驟仿真次數，請改為設定 :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10975,13 +10975,13 @@ However, the game will appear to slow down if the rendering FPS is less than ``1
 
 :ref:`bool<class_bool>` **physics/common/physics_interpolation** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_interpolation>`
 
-If ``true``, the renderer will interpolate the transforms of objects (both physics and non-physics) between the last two transforms, so that smooth motion is seen even when physics ticks do not coincide with rendered frames. See also :ref:`Node.reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>`.
+若爲 ``true``\ ，渲染器會在物件（無論是物理物件還是非物理物件）的最後兩個變換之間進行插值，這樣即使物理刻與渲染影格不一致，仍能呈現流暢的運動效果。參閱 :ref:`Node.reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>`\ 。
 
-\ **Note:** Although this is a global setting, finer control of individual branches of the :ref:`SceneTree<class_SceneTree>` is possible using :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`.
+\ **注意：**\ 雖然這是全域設定，但可透過 :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` 對 :ref:`SceneTree<class_SceneTree>` 的各分支做更精細的控制。
 
-\ **Note:** This property is only read when the project starts. To toggle physics interpolation at runtime, set :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` instead.
+\ **注意：**\ 此屬性僅在專案啟動時被讀取。要在執行時切換物理插值，請改爲設定 :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>`\ 。
 
-\ **Note:** Property :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` is automatically disabled if :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is set to ``true``, as the two methods are incompatible.
+\ **注意：**\ 若將 :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 設爲 ``true``\ ，會自動停用 :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` 屬性，因爲這兩種方法不相容。
 
 .. rst-class:: classref-item-separator
 
@@ -10993,13 +10993,13 @@ If ``true``, the renderer will interpolate the transforms of objects (both physi
 
 :ref:`float<class_float>` **physics/common/physics_jitter_fix** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_jitter_fix>`
 
-Controls how much physics ticks are synchronized with real time. For 0 or less, the ticks are synchronized. Such values are recommended for network games, where clock synchronization matters. Higher values cause higher deviation of in-game clock and real clock, but allows smoothing out framerate jitters. The default value of 0.5 should be good enough for most; values above 2 could cause the game to react to dropped frames with a noticeable delay and are not recommended.
+控制物理週期與真即時間的同步程度。小於等於 0 時週期是同步的。對時鐘同步有要求的網路遊戲建議使用此類值。較高的值會導致遊戲內時鐘和真即時鐘的較大偏差，但可以平滑影格率抖動。大多數情況下，預設值 0.5 應該足夠好了；大於 2 的值可能導致遊戲對丟影格作出明顯延遲的反應，因此不推薦使用。
 
-\ **Note:** Jitter fix is automatically disabled at runtime when :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled.
+\ **注意：**\ 啟用 :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 時會自動停用抖動修復功能。
 
-\ **Note:** When using a custom physics interpolation solution, the physics jitter fix should be disabled by setting :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` to ``0.0``.
+\ **注意：**\ 使用自訂物理插值解決方案時應將 :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` 設定為 ``0.0``\ ，停用物理抖動修復。
 
-\ **Note:** This property is only read when the project starts. To change the physics jitter fix at runtime, set :ref:`Engine.physics_jitter_fix<class_Engine_property_physics_jitter_fix>` instead.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。 要在執行時更改物理抖動修復，請改為設定 :ref:`Engine.physics_jitter_fix<class_Engine_property_physics_jitter_fix>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11011,17 +11011,17 @@ Controls how much physics ticks are synchronized with real time. For 0 or less, 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+每秒執行的固定迭代次數。用於控制物理仿真和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的執行頻率。
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+CPU 使用率大致與物理週期速率成正比。然而，在週期速率非常低（通常低於 30）的情況下，物理行為可能損壞。在低週期速率下，輸入響應也可能變得遲鈍，因為輸入被注冊和在下一個物理週期做出響應之間會存在延遲。較高的週期速率可以提供更精確的物理模擬，尤其對於快速移動的物體而言更是如此。例如，賽車遊戲可以通過將刷新率提高到高於預設值 60 來獲得更好的體驗。
 
-See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+另見 :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`\ 。
 
-\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+\ **注意：**\ 這個屬性只在專案啟動時讀取。要在執行時改變物理 FPS，請改為設定 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。
 
-\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+\ **注意：**\ 每個渲染影格最多只能模擬 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 個物理週期。如果為了追趕渲染，需要在每個渲染影格中模擬更多物理週期，遊戲看上去會是降速的（即便在物理計算中始終使用 ``delta``\ ）。因此，如果增大了 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ，而且遠大於預設值，那麼建議將 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 也調大。
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **注意：**\ 如果將 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 的值更改為不是 ``60`` 的倍數，請考慮啟用 :doc:`物理插值 <../tutorials/physics/interpolation/index>`\ 。使用物理插值可以避免顯示器刷新率和物理更新率不完全匹配時出現抖動。
 
 .. rst-class:: classref-item-separator
 
@@ -11033,15 +11033,15 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/collisions/active_edge_threshold** = ``0.87266463`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/collisions/active_edge_threshold>`
 
-The maximum angle, in radians, between two adjacent triangles in a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` or :ref:`HeightMapShape3D<class_HeightMapShape3D>` for which the edge between those triangles is considered inactive.
+在 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 或 :ref:`HeightMapShape3D<class_HeightMapShape3D>` 中兩個相鄰三角形之間的最大角度（單位為弧度），超過該角度的邊被視為不活躍。
 
-Collisions against an inactive edge will have its normal overridden to instead be the surface normal of the triangle. This can help alleviate ghost collisions.
+與不活躍邊相碰撞會將碰撞法線覆蓋為三角形的表面法線。這樣做有助於減輕虛假碰撞。
 
-\ **Note:** Setting this too high can result in objects not depenetrating properly.
+\ **注意：**\ 設定得過高可能導致物體無法正確脫離重疊。
 
-\ **Note:** This applies to all shape queries, as well as physics bodies within the simulation.
+\ **注意：**\ 該設定適用於所有形狀查詢，以及模擬中的物理體。
 
-\ **Note:** This does not apply when enabling Jolt's enhanced internal edge removal, which supersedes this.
+\ **注意：**\ 啟用 Jolt 的增強內部邊緣移除功能時該設定不適用，該功能優先。
 
 .. rst-class:: classref-item-separator
 
@@ -11053,11 +11053,11 @@ Collisions against an inactive edge will have its normal overridden to instead b
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/collisions/collision_margin_fraction** = ``0.08`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/collisions/collision_margin_fraction>`
 
-The amount of collision margin to use for certain convex collision shapes, such as :ref:`BoxShape3D<class_BoxShape3D>`, :ref:`CylinderShape3D<class_CylinderShape3D>` and :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`, as a fraction of the shape's shortest axis, with :ref:`Shape3D.margin<class_Shape3D_property_margin>` as the upper bound. This is mainly used to speed up collision detection with convex shapes.
+:ref:`BoxShape3D<class_BoxShape3D>`\ 、\ :ref:`CylinderShape3D<class_CylinderShape3D>`\ 、\ :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 等凸碰撞形狀使用的碰撞邊距大小，是相對於該形狀最短軸的比例，上限為 :ref:`Shape3D.margin<class_Shape3D_property_margin>`\ 。主要用於加速凸形狀的碰撞檢測。
 
-\ **Note:** Collision margins in Jolt do not add any extra size to the shape. Instead the shape is first shrunk by the margin and then expanded by the same amount, resulting in a shape with rounded corners.
+\ **注意：**\ Jolt 中的碰撞邊距不會為形狀新增額外的大小。相反，形狀會先根據邊距收縮，然後再用相同的大小擴充，得到的是圓角形狀。
 
-\ **Note:** Setting this value too close to ``0.0`` may also negatively affect the accuracy of the collision detection with convex shapes.
+\ **注意：**\ 將該值設得過於接近 ``0.0`` 可能也會對凸形狀碰撞檢測的精度產生負面影響。
 
 .. rst-class:: classref-item-separator
 
@@ -11069,9 +11069,9 @@ The amount of collision margin to use for certain convex collision shapes, such 
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/joints/world_node** = ``0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/joints/world_node>`
 
-Which of the two nodes bound by a joint should represent the world when one of the two is omitted, as either :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` or :ref:`Joint3D.node_b<class_Joint3D_property_node_b>`. This can be thought of as having the omitted node be a :ref:`StaticBody3D<class_StaticBody3D>` at the joint's position. Joint limits are more easily expressed when :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` represents the world.
+關節連接的兩個節點 :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` 和 :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` 中，如果省略一個，那麼哪個節點應當代表世界。可以理解為省略的節點是位於關節位置的 :ref:`StaticBody3D<class_StaticBody3D>` 節點。讓 :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` 代表世界更利於關節限制的表達。
 
-\ **Note:** In Godot Physics, only :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` can represent the world.
+\ **注意：**\ 在 Godot Physics 中只有 :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` 能夠代表世界。
 
 .. rst-class:: classref-item-separator
 
@@ -11083,9 +11083,9 @@ Which of the two nodes bound by a joint should represent the world when one of t
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/max_angular_velocity** = ``47.12389`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_angular_velocity>`
 
-The maximum angular velocity that a :ref:`RigidBody3D<class_RigidBody3D>` can reach, in radians per second.
+:ref:`RigidBody3D<class_RigidBody3D>` 能夠達到的最大角速度，單位為弧度每秒。
 
-This is mainly used as a fail-safe, to prevent the simulation from exploding, as fast-moving objects colliding with complex physics structures can otherwise cause them to go out of control. Fast-moving objects can also cause a lot of stress on the collision detection system, which can slow down the simulation considerably.
+主要用作安全機制，防止模擬出現崩潰，因為快速移動的物體與複雜物理結構碰撞可能會導致失控。快速移動的物體還可能對碰撞檢測系統造成很大的壓力，可能顯著減慢模擬的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -11097,9 +11097,9 @@ This is mainly used as a fail-safe, to prevent the simulation from exploding, as
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_bodies** = ``10240`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_bodies>`
 
-The maximum number of :ref:`PhysicsBody3D<class_PhysicsBody3D>` to support at the same time, awake or sleeping. When this limit is exceeded, an error is reported and anything past that point is undefined behavior.
+同時支援的 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 的最大數量，包括處於活動狀態和休眠狀態的物體。超出該限制時會報錯，此後的行為均未定義。
 
-\ **Note:** This limit also applies within the editor.
+\ **注意：**\ 該限制也適用於編輯器。
 
 .. rst-class:: classref-item-separator
 
@@ -11111,7 +11111,7 @@ The maximum number of :ref:`PhysicsBody3D<class_PhysicsBody3D>` to support at th
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_body_pairs** = ``65536`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_body_pairs>`
 
-The maximum number of body pairs to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
+允許處理的物體對的最大數量。超出該限制時會報警告，此時會隨機忽略碰撞，物體相互穿透。
 
 .. rst-class:: classref-item-separator
 
@@ -11123,7 +11123,7 @@ The maximum number of body pairs to allow processing of. When this limit is exce
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_contact_constraints** = ``20480`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_contact_constraints>`
 
-The maximum number of contact constraints to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
+允許處理的接觸約束的最大數量。超出該限制時會報警告，此時會隨機忽略碰撞，物體相互穿透。
 
 .. rst-class:: classref-item-separator
 
@@ -11135,9 +11135,9 @@ The maximum number of contact constraints to allow processing of. When this limi
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/max_linear_velocity** = ``500.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_linear_velocity>`
 
-The maximum linear velocity that a :ref:`RigidBody3D<class_RigidBody3D>` can reach, in meters per second.
+:ref:`RigidBody3D<class_RigidBody3D>` 能夠達到的最大線速度，單位為米每秒。
 
-This is mainly used as a fail-safe, to prevent the simulation from exploding, as fast-moving objects colliding with complex physics structures can otherwise cause them to go out of control. Fast-moving objects can also cause a lot of stress on the collision detection system, which can slow down the simulation considerably.
+主要用作安全機制，防止模擬出現崩潰，因為快速移動的物體與複雜物理結構碰撞可能會導致失控。快速移動的物體還可能對碰撞檢測系統造成很大的壓力，可能顯著減慢模擬的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -11149,7 +11149,7 @@ This is mainly used as a fail-safe, to prevent the simulation from exploding, as
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/temporary_memory_buffer_size** = ``32`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/temporary_memory_buffer_size>`
 
-The amount of memory to pre-allocate for the stack allocator used within Jolt, in MiB. This allocator is used within the physics step to store things that are only needed during it, like which bodies are in contact, how they form islands and the data needed to solve the contacts.
+為 Jolt 所使用的堆疊分配器預分配的記憶體大小，單位為 MiB。物理步驟中會使用該分配器儲存只有在該步驟中用到的內容，例如哪些物體發生了接觸、這些物體如何分組、解決接觸需要哪些資料等。
 
 .. rst-class:: classref-item-separator
 
@@ -11161,11 +11161,11 @@ The amount of memory to pre-allocate for the stack allocator used within Jolt, i
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/world_boundary_shape_size** = ``2000.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/world_boundary_shape_size>`
 
-The size of :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` boundaries, for all three dimensions. The plane is effectively centered within a box of this size, and anything outside of the box will not collide with it. This is necessary as :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` is not unbounded when using Jolt, in order to prevent precision issues.
+:ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 三個維度的邊界大小。平面實際上在該大小的立方體內居中，立方體外的物體都無法與之發生碰撞。這樣做的原因是使用 Jolt 時為了防止出現精度問題，所以 :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 並不是無限延伸的。
 
-\ **Note:** Setting this value too high can make collision detection less accurate.
+\ **注意：**\ 將該值設得過高可能讓碰撞檢測的精度降低。
 
-\ **Note:** Collisions against the effective edges of a :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` will be inconsistent.
+\ **注意：**\ 與 :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 實際邊界的碰撞是不一致的。
 
 .. rst-class:: classref-item-separator
 
@@ -11177,9 +11177,9 @@ The size of :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` boundaries, 
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/motion_queries/recovery_amount** = ``0.4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_amount>`
 
-Fraction of the total penetration to depenetrate per iteration during motion queries.
+運動查詢過程中，單次穿透修正迭代對總穿透量的修正比例。
 
-\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+\ **注意：**\ 受影響的方法有 :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11191,9 +11191,9 @@ Fraction of the total penetration to depenetrate per iteration during motion que
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/motion_queries/recovery_iterations** = ``4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_iterations>`
 
-The number of iterations to run when depenetrating during motion queries.
+運動查詢過程中，穿透修正的迭代次數。
 
-\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+\ **注意：**\ 受影響的方法有 :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11205,9 +11205,9 @@ The number of iterations to run when depenetrating during motion queries.
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/motion_queries/use_enhanced_internal_edge_removal** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/use_enhanced_internal_edge_removal>`
 
-If ``true``, enables Jolt's enhanced internal edge removal during motion queries. This can help alleviate ghost collisions, but only with edges within a single body, meaning edges between separate bodies can still cause ghost collisions.
+如果為 ``true``\ ，則會啟用 Jolt 在運動查詢期間的增強內部邊緣移除。這樣做有利於減輕幽靈碰撞，但僅適用於單個物體內的邊緣，即不同物體之間的邊緣仍然可能發生幽靈碰撞。
 
-\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+\ **注意：**\ :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>` 等方法均會受到影響。
 
 .. rst-class:: classref-item-separator
 
@@ -11219,9 +11219,9 @@ If ``true``, enables Jolt's enhanced internal edge removal during motion queries
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/queries/enable_ray_cast_face_index** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/queries/enable_ray_cast_face_index>`
 
-If ``true``, populates the ``face_index`` field in the results of :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`, also accessed through :ref:`RayCast3D.get_collision_face_index()<class_RayCast3D_method_get_collision_face_index>`. If ``false``, the ``face_index`` field will be left at its default value of ``-1``.
+如果為 ``true``\ ，則會在 :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>` 的結果中填充 ``face_index`` 欄位，該欄位也可以通過 :ref:`RayCast3D.get_collision_face_index()<class_RayCast3D_method_get_collision_face_index>` 存取。如果為 ``false``\ ，則 ``face_index`` 欄位會保持預設值 ``-1``\ 。
 
-\ **Note:** Enabling this setting will increase Jolt's memory usage for :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` by around 25%.
+\ **注意：**\ 啟用該設定會使 Jolt 對 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 的記憶體使用增加約 25%。
 
 .. rst-class:: classref-item-separator
 
@@ -11233,11 +11233,11 @@ If ``true``, populates the ``face_index`` field in the results of :ref:`PhysicsD
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/queries/use_enhanced_internal_edge_removal** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/queries/use_enhanced_internal_edge_removal>`
 
-If ``true``, enables Jolt's enhanced internal edge removal during shape queries. This can help alleviate ghost collisions when using shape queries for things like character movement, but only with edges within a single body, meaning edges between separate bodies can still cause ghost collisions.
+如果為 ``true``\ ，則會在形狀查詢期間啟用 Jolt 的增強內部邊緣移除。這樣做有利於減輕在使用形狀查詢進行角色移動等操作時的幽靈碰撞，但僅適用於單個物體內的邊緣，即不同物體之間的邊緣仍然可能發生幽靈碰撞。
 
-\ **Note:** This affects methods :ref:`PhysicsDirectSpaceState3D.cast_motion()<class_PhysicsDirectSpaceState3D_method_cast_motion>`, :ref:`PhysicsDirectSpaceState3D.collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>`, :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>` and :ref:`PhysicsDirectSpaceState3D.intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>`.
+\ **注意：**\ :ref:`PhysicsDirectSpaceState3D.cast_motion()<class_PhysicsDirectSpaceState3D_method_cast_motion>`\ 、\ :ref:`PhysicsDirectSpaceState3D.collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>`\ 、\ :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>`\ 、\ :ref:`PhysicsDirectSpaceState3D.intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>` 等方法均會受到影響。
 
-\ **Note:** Enabling this setting can cause certain shapes to be culled from the results entirely, but you will get at least one intersection per body.
+\ **注意：**\ 啟用該設定可能導致從結果中完全剔除某些形狀，但每個物體至少會得到一個交點。
 
 .. rst-class:: classref-item-separator
 
@@ -11249,7 +11249,7 @@ If ``true``, enables Jolt's enhanced internal edge removal during shape queries.
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/allow_sleep** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/allow_sleep>`
 
-If ``true``, :ref:`RigidBody3D<class_RigidBody3D>` nodes are allowed to go to sleep if their velocity is below the threshold defined in :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` for the duration set in :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`. This can improve physics simulation performance when there are non-moving :ref:`RigidBody3D<class_RigidBody3D>` nodes, at the cost of some nodes possibly failing to wake up in certain scenarios. Consider disabling this temporarily to troubleshoot :ref:`RigidBody3D<class_RigidBody3D>` nodes not moving when they should.
+如果為 ``true``\ ，則 :ref:`RigidBody3D<class_RigidBody3D>` 節點在速度低於 :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` 中定義的閾值，並且持續時間達到 :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>` 時，允許進入休眠狀態。這樣做可以在存在不移動的 :ref:`RigidBody3D<class_RigidBody3D>` 節點時提高物理模擬效能，但可能會導致部分節點在特定場景下無法喚醒。排查 :ref:`RigidBody3D<class_RigidBody3D>` 節點在應移動時未移動的問題時，請考慮暫時停用該功能。
 
 .. rst-class:: classref-item-separator
 
@@ -11261,9 +11261,9 @@ If ``true``, :ref:`RigidBody3D<class_RigidBody3D>` nodes are allowed to go to sl
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor>`
 
-How much of the position error of a :ref:`RigidBody3D<class_RigidBody3D>` to fix during a physics step, where ``0.0`` is none and ``1.0`` is the full amount. This affects things like how quickly bodies depenetrate.
+在物理步驟中修正 :ref:`RigidBody3D<class_RigidBody3D>` 位置誤差的比例，其中 ``0.0`` 表示不修正， ``1.0`` 表示完全修正。這個設定會影響物體脫離重疊狀態的速度。
 
-\ **Note:** Setting this value too high can make :ref:`RigidBody3D<class_RigidBody3D>` nodes unstable.
+\ **注意：**\ 將該值設定得過高可能會導致 :ref:`RigidBody3D<class_RigidBody3D>` 節點不穩定。
 
 .. rst-class:: classref-item-separator
 
@@ -11275,7 +11275,7 @@ How much of the position error of a :ref:`RigidBody3D<class_RigidBody3D>` to fix
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold** = ``0.034906585`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold>`
 
-The maximum relative angle by which a body pair can move and still reuse the collision results from the previous physics step, in radians.
+一對物體可以移動的最大相對角度，移動後仍然可以重用上一個物理步驟的碰撞結果，單位為弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -11287,7 +11287,7 @@ The maximum relative angle by which a body pair can move and still reuse the col
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold** = ``0.001`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold>`
 
-The maximum relative distance by which a body pair can move and still reuse the collision results from the previous physics step, in meters.
+一對物體可以移動的最大相對距離，移動後仍然可以重用上一個物理步驟的碰撞結果，單位為米。
 
 .. rst-class:: classref-item-separator
 
@@ -11299,7 +11299,7 @@ The maximum relative distance by which a body pair can move and still reuse the 
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled>`
 
-If ``true``, enables the body pair contact cache, which removes the need for potentially expensive collision detection when the relative orientation between two bodies hasn't changed much.
+如果為 ``true``\ ，則會啟用物體對的接觸快取，這樣在兩個物體的相對方向變化不大時就不必再進行碰撞檢測了，這種檢測的開銷可能很大。
 
 .. rst-class:: classref-item-separator
 
@@ -11311,7 +11311,7 @@ If ``true``, enables the body pair contact cache, which removes the need for pot
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/bounce_velocity_threshold** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/bounce_velocity_threshold>`
 
-The minimum velocity needed before a collision can be bouncy, in meters per second.
+發生彈性碰撞所需的最小速度，單位為米每秒。
 
 .. rst-class:: classref-item-separator
 
@@ -11323,7 +11323,7 @@ The minimum velocity needed before a collision can be bouncy, in meters per seco
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/continuous_cd_max_penetration** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/continuous_cd_max_penetration>`
 
-Fraction of a body's inner radius that may penetrate another body while using continuous collision detection.
+使用連續碰撞檢測時，一個物體的內半徑能夠穿透另一個物體的比例。
 
 .. rst-class:: classref-item-separator
 
@@ -11335,7 +11335,7 @@ Fraction of a body's inner radius that may penetrate another body while using co
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/continuous_cd_movement_threshold** = ``0.75`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/continuous_cd_movement_threshold>`
 
-Fraction of a body's inner radius that the body must move per step to make use of continuous collision detection.
+為了使用連續碰撞檢測，物體每一步必須移動的內半徑的比例。
 
 .. rst-class:: classref-item-separator
 
@@ -11347,9 +11347,9 @@ Fraction of a body's inner radius that the body must move per step to make use o
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts>`
 
-If ``true``, a :ref:`RigidBody3D<class_RigidBody3D>` frozen with :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` is able to collide with other kinematic and static bodies, and therefore generate contacts for them.
+如果為 ``true``\ ，則使用 :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` 凍結的 :ref:`RigidBody3D<class_RigidBody3D>` 能夠與其他運動學物體和靜態物體發生碰撞，從而生成接觸點。
 
-\ **Note:** This setting can come at a heavy CPU and memory cost if you allow many/large frozen kinematic bodies with a non-zero :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to overlap with complex static geometry, such as :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` or :ref:`HeightMapShape3D<class_HeightMapShape3D>`.
+\ **注意：**\ 如果允許許多/大型凍結的 :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` 非零的運動學物體與 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ 、\ :ref:`HeightMapShape3D<class_HeightMapShape3D>` 等複雜的靜態幾何體重疊，那麼這個設定可能會帶來較高的 CPU 和記憶體開銷。
 
 .. rst-class:: classref-item-separator
 
@@ -11361,7 +11361,7 @@ If ``true``, a :ref:`RigidBody3D<class_RigidBody3D>` frozen with :ref:`RigidBody
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/penetration_slop** = ``0.02`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/penetration_slop>`
 
-How much bodies are allowed to penetrate each other, in meters.
+允許物體相互穿透的程度，單位為米。
 
 .. rst-class:: classref-item-separator
 
@@ -11373,7 +11373,7 @@ How much bodies are allowed to penetrate each other, in meters.
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/simulation/position_steps** = ``2`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/position_steps>`
 
-Number of solver position iterations. The greater the number of iterations, the more accurate the simulation will be, at the cost of CPU performance.
+求解器的位置迭代次數。迭代次數越大，模擬精確度越高，但對 CPU 效能的消耗也越大。
 
 .. rst-class:: classref-item-separator
 
@@ -11385,7 +11385,7 @@ Number of solver position iterations. The greater the number of iterations, the 
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/sleep_time_threshold** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`
 
-Time in seconds a :ref:`RigidBody3D<class_RigidBody3D>` will spend below the sleep velocity threshold before going to sleep.
+:ref:`RigidBody3D<class_RigidBody3D>` 的速度低於休眠速度閾值時，進入休眠前等待的時間，單位為秒。
 
 .. rst-class:: classref-item-separator
 
@@ -11397,7 +11397,7 @@ Time in seconds a :ref:`RigidBody3D<class_RigidBody3D>` will spend below the sle
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/sleep_velocity_threshold** = ``0.03`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>`
 
-The linear velocity of specific points on the bounding box of a :ref:`RigidBody3D<class_RigidBody3D>`, below which it can be put to sleep, in meters per second. These points help capture both the linear and angular motion of a :ref:`RigidBody3D<class_RigidBody3D>`.
+:ref:`RigidBody3D<class_RigidBody3D>` 包圍盒上指定點的線速度，單位為米每秒，低於該速度時可以將其置於休眠狀態。這些點有助於捕捉 :ref:`RigidBody3D<class_RigidBody3D>` 的線性運動和角運動。
 
 .. rst-class:: classref-item-separator
 
@@ -11409,7 +11409,7 @@ The linear velocity of specific points on the bounding box of a :ref:`RigidBody3
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/soft_body_point_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/soft_body_point_radius>`
 
-How big the points of a :ref:`SoftBody3D<class_SoftBody3D>` are, in meters. A higher value can prevent behavior such as cloth laying perfectly flush against other surfaces and causing Z-fighting.
+:ref:`SoftBody3D<class_SoftBody3D>` 的點的大小，單位為米。較高的值可以防止布料與其他表面完全貼合而導致的 Z 衝突行為。
 
 .. rst-class:: classref-item-separator
 
@@ -11421,9 +11421,9 @@ How big the points of a :ref:`SoftBody3D<class_SoftBody3D>` are, in meters. A hi
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/speculative_contact_distance** = ``0.02`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/speculative_contact_distance>`
 
-Radius around physics bodies, inside which speculative contact points will be detected, in meters. This is mainly used to prevent tunneling/penetration for :ref:`RigidBody3D<class_RigidBody3D>` nodes during simulation.
+圍繞物理體的半徑，單位為米，位於此半徑中的推測接觸點能夠被檢測到。主要用於防止 :ref:`RigidBody3D<class_RigidBody3D>` 節點在模擬中發生隧穿/穿透。
 
-\ **Note:** Setting this too high may result in ghost collisions, as speculative contacts are based on the closest points during the collision detection step which may not be the actual closest points by the time the two bodies hit.
+\ **注意：**\ 設定得過高可能導致幽靈碰撞，因為推測接觸是基於碰撞檢測步驟中最接近的點，而在兩個物體碰撞時，這些點可能並不是實際的最接近點。
 
 .. rst-class:: classref-item-separator
 
@@ -11435,7 +11435,7 @@ Radius around physics bodies, inside which speculative contact points will be de
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/use_enhanced_internal_edge_removal** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/use_enhanced_internal_edge_removal>`
 
-If ``true``, enables Jolt's enhanced internal edge removal for :ref:`RigidBody3D<class_RigidBody3D>`. This can help alleviate ghost collisions when, for example, a :ref:`RigidBody3D<class_RigidBody3D>` collides with the edges of two perfectly joined :ref:`BoxShape3D<class_BoxShape3D>`. The removal only applies to edges internal to a single body, meaning edges between separate bodies can still cause ghost collisions.
+如果為 ``true``\ ，則會啟用 Jolt 對 :ref:`RigidBody3D<class_RigidBody3D>` 的增強內部邊緣移除。這樣做有利於減輕幽靈碰撞，例如在 :ref:`RigidBody3D<class_RigidBody3D>` 與兩個完美連接的 :ref:`BoxShape3D<class_BoxShape3D>` 邊緣碰撞時就可能產生這樣的碰撞。移除僅適用於單個物體內部的邊緣，即不同物體之間的邊緣仍然可能發生幽靈碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -11447,9 +11447,9 @@ If ``true``, enables Jolt's enhanced internal edge removal for :ref:`RigidBody3D
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/simulation/velocity_steps** = ``10`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/velocity_steps>`
 
-Number of solver velocity iterations. The greater the number of iterations, the more accurate the simulation will be, at the cost of CPU performance.
+求解器的速度迭代次數。迭代次數越大，模擬精確度越高，但對 CPU 效能的消耗也越大。
 
-\ **Note:** This needs to be at least ``2`` in order for friction to work, as friction is applied using the non-penetration impulse from the previous iteration.
+\ **注意：**\ 至少為 ``2`` 阻力才會生效，因為阻力需要根據上一次迭代的非穿透衝量進行計算。
 
 .. rst-class:: classref-item-separator
 
@@ -11461,7 +11461,7 @@ Number of solver velocity iterations. The greater the number of iterations, the 
 
 :ref:`int<class_int>` **rendering/2d/batching/item_buffer_size** = ``16384`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/item_buffer_size>`
 
-Maximum number of canvas item commands that can be batched into a single draw call.
+可以批處理到單個繪製呼叫中的最大畫布項目命令數量。
 
 .. rst-class:: classref-item-separator
 
@@ -11473,9 +11473,9 @@ Maximum number of canvas item commands that can be batched into a single draw ca
 
 :ref:`int<class_int>` **rendering/2d/batching/uniform_set_cache_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/uniform_set_cache_size>`
 
-Maximum number of uniform sets that will be cached by the 2D renderer when batching draw calls.
+在批處理繪製呼叫時，2D 渲染器快取的 Uniform 集的最大數量。
 
-\ **Note:** Increasing this value can improve performance if the project renders many unique sprite textures every frame.
+\ **注意：**\ 如果專案每影格都會渲染大量不同的精靈紋理，增加該值會提升效能。
 
 .. rst-class:: classref-item-separator
 
@@ -11487,9 +11487,9 @@ Maximum number of uniform sets that will be cached by the 2D renderer when batch
 
 :ref:`int<class_int>` **rendering/2d/sdf/oversize** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/oversize>`
 
-控制 2D 帶符號距離場應該覆蓋原始視口中多大的區域。該 SDF 可以在 :ref:`CanvasItem<class_CanvasItem>` 著色器中取樣，用於 :ref:`GPUParticles2D<class_GPUParticles2D>` 碰撞。生成帶符號距離場時，較高的值能夠讓部分處於視口外的遮擋器也納入考慮範圍，但會以犧牲性能為代價。如果你注意到 :ref:`LightOccluder2D<class_LightOccluder2D>` 離開視口時粒子會穿過遮擋器，就可以增大這個設定。
+控制 2D 帶符號距離場應該覆蓋原始視埠中多大的區域。該 SDF 可以在 :ref:`CanvasItem<class_CanvasItem>` 著色器中取樣，用於 :ref:`GPUParticles2D<class_GPUParticles2D>` 碰撞。生成帶符號距離場時，較高的值能夠讓部分處於視埠外的遮擋器也納入考慮範圍，但會以犧牲效能為代價。如果你注意到 :ref:`LightOccluder2D<class_LightOccluder2D>` 離開視埠時粒子會穿過遮擋器，就可以增大這個設定。
 
-每一側每個軸上都會新增指定的百分比。例如，預設設定為 120% 就會讓帶符號距離場覆蓋視口之外每側（上、右、下、左）各 20% 的大小。
+每一側每個軸上都會新增指定的百分比。例如，預設設定為 120% 就會讓帶符號距離場覆蓋視埠之外每側（上、右、下、左）各 20% 的大小。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時修改 2D SDF 擴界百分比，請改用 :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`\ 。
 
@@ -11503,7 +11503,7 @@ Maximum number of uniform sets that will be cached by the 2D renderer when batch
 
 :ref:`int<class_int>` **rendering/2d/sdf/scale** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/scale>`
 
-2D 帶符號距離場的解析度縮放。設定為較大的值能夠得到更精確的帶符號距離場，也能讓帶符號距離場在相機移動時更為穩定，但代價是犧牲性能。預設值（50%）表示每個軸使用視口大小的一半大小的解析度，因此生成的 SDF 的圖元數量是視口圖元數量的 25%。
+2D 帶符號距離場的解析度縮放。設定為較大的值能夠得到更精確的帶符號距離場，也能讓帶符號距離場在相機移動時更為穩定，但代價是犧牲效能。預設值（50%）表示每個軸使用視埠大小的一半大小的解析度，因此生成的 SDF 的圖元數量是視埠圖元數量的 25%。
 
 \ **注意：**\ 該屬性僅在專案啟動時讀取。 要在運作時更改 2D SDF 解析度縮放，請改為使用 :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`\ 。
 
@@ -11517,7 +11517,7 @@ Maximum number of uniform sets that will be cached by the 2D renderer when batch
 
 :ref:`int<class_int>` **rendering/2d/shadow_atlas/size** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/shadow_atlas/size>`
 
-2D 陰影合集的大小，單位為圖元。值越高，\ :ref:`Light2D<class_Light2D>` 的陰影越精確，但性能消耗和顯存佔用也越大。指定的值會根據最接近的 2 的冪進行向上取整。
+2D 陰影合集的大小，單位為圖元。值越高，\ :ref:`Light2D<class_Light2D>` 的陰影越精確，但效能消耗和顯存佔用也越大。指定的值會根據最接近的 2 的冪進行向上取整。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時修改 2D 陰影合集的大小，請改用 :ref:`RenderingServer.canvas_set_shadow_texture_size()<class_RenderingServer_method_canvas_set_shadow_texture_size>`\ 。
 
@@ -11531,13 +11531,13 @@ Maximum number of uniform sets that will be cached by the 2D renderer when batch
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_transforms_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`
 
-If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to full pixels. Useful for low-resolution pixel art games. Their position can still be sub-pixel, but the decimals will not have effect as the position is rounded. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+如果為 ``true``\ ，則 :ref:`CanvasItem<class_CanvasItem>` 節點會在內部吸附到整像素。對於低解析度像素藝術遊戲很有用。節點的位置仍然可以是次像素的，但小數點不會產生影響，因為位置被四捨五入。這樣外觀看上去就會更銳利，但會影響移動的平滑程度，尤其是在啟用了 :ref:`Camera2D<class_Camera2D>` 平滑的情況下。
 
-\ **Note:** This property is only read when the project starts. To toggle 2D transform snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **注意：**\ 這個屬性僅在專案啟動時讀取。要在執行時開關 2D 變換的吸附，請改為在根 :ref:`Viewport<class_Viewport>` 上使用 :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>`\ 。
 
-\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
+\ **注意：**\ :ref:`Control<class_Control>` 節點預設就是吸附到最接近的像素的。這種行為由 :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>` 控制。
 
-\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`, as movement may appear even less smooth. Prefer only enabling this setting instead.
+\ **注意：**\ 不建議將該設定與 :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` 一起使用，因為移動可能會顯得更不平滑。最好只啟用該設定。
 
 .. rst-class:: classref-item-separator
 
@@ -11549,13 +11549,13 @@ If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to f
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_vertices_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`
 
-If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to full pixels. Useful for low-resolution pixel art games. Only affects the final vertex positions, not the transforms. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+如果為 ``true``\ ，則 :ref:`CanvasItem<class_CanvasItem>` 節點的頂點會吸附到整像素。對於低解析度像素藝術遊戲很有用。只影響最終頂點的位置，不影響變換。這樣外觀看上去就會更銳利，但會影響移動的平滑程度，尤其是在啟用了 :ref:`Camera2D<class_Camera2D>` 平滑的情況下。
 
-\ **Note:** This property is only read when the project starts. To toggle 2D vertex snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **注意：**\ 這個屬性僅在專案啟動時讀取。要在執行時開關 2D 頂點的吸附，請改為在根 :ref:`Viewport<class_Viewport>` 上使用 :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>`\ 。
 
-\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
+\ **注意：**\ :ref:`Control<class_Control>` 節點預設就是吸附到最接近的像素的。這種行為由 :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>` 控制。
 
-\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`, as movement may appear even less smooth. Prefer only enabling that setting instead.
+\ **注意：**\ 不建議將該設定與 :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>` 一起使用，因為移動可能會顯得更不平滑。最好只啟用該設定。
 
 .. rst-class:: classref-item-separator
 
@@ -11567,11 +11567,11 @@ If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to 
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_2d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d>`
 
-Sets the number of multisample antialiasing (MSAA) samples to use for 2D/Canvas rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. This has no effect on shader-induced aliasing or texture aliasing.
+設定用於 2D/Canvas 渲染的多重取樣反鋸齒（MSAA）取樣數（為 2 的冪）。MSAA 可用於減少多邊形邊緣周圍的鋸齒。較高的 MSAA 值會產生更平滑的邊緣，但在某些硬體上可能會明顯變慢，尤其是顯存頻寬比較有限的集成顯卡。這對著色器引起的鋸齒或紋理鋸齒無效。
 
-\ **Note:** MSAA is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ MSAA 僅支援 Forward+ 和 Mobile 渲染方式，不支援 Compatibility。
 
-\ **Note:** This property is only read when the project starts. To set the number of 2D MSAA samples at runtime, set :ref:`Viewport.msaa_2d<class_Viewport_property_msaa_2d>` or use :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時設定 2D MSAA 的取樣數，請設定 :ref:`Viewport.msaa_2d<class_Viewport_property_msaa_2d>` 或使用 :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11583,9 +11583,9 @@ Sets the number of multisample antialiasing (MSAA) samples to use for 2D/Canvas 
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_3d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`
 
-Sets the number of multisample antialiasing (MSAA) samples to use for 3D rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. See also :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+設定用於 3D 渲染的多重取樣反鋸齒（MSAA）取樣數（為 2 的冪）。MSAA 用於減少多邊形邊緣周圍的鋸齒。較高的 MSAA 值會產生更平滑的邊緣，但在某些硬體上可能會明顯變慢，尤其是顯存頻寬比較有限的集成顯卡。另見用於超級取樣的雙線性縮放 3d :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`\ ，它提供更高的品質但更昂貴。這對著色器引起的鋸齒或紋理鋸齒無效。
 
-\ **Note:** This property is only read when the project starts. To set the number of 3D MSAA samples at runtime, set :ref:`Viewport.msaa_3d<class_Viewport_property_msaa_3d>` or use :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時設定 3D MSAA 的取樣數，請設定 :ref:`Viewport.msaa_3d<class_Viewport_property_msaa_3d>` 或使用 :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11597,13 +11597,13 @@ Sets the number of multisample antialiasing (MSAA) samples to use for 3D renderi
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/screen_space_aa** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`
 
-Sets the screen-space antialiasing mode for the default screen :ref:`Viewport<class_Viewport>`. Screen-space antialiasing works by selectively blurring edges in a post-process shader. It differs from MSAA which takes multiple coverage samples while rendering objects. Screen-space AA methods are typically faster than MSAA and will smooth out specular aliasing, but tend to make scenes appear blurry. The blurriness is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
+設定預設螢幕 :ref:`Viewport<class_Viewport>` 的螢幕空間反鋸齒模式。螢幕空間反鋸齒的原理是使用後期處理著色器選擇性地讓邊緣模糊。與 MSAA 的區別在於，MSAA 是在渲染物件時進行了多次覆蓋取樣。螢幕空間 AA 的方法通常比 MSAA 要快，會將鏡面反射鋸齒也進行平滑處理，但容易讓場景變得模糊。這種模糊可以通過自動使用負的 Mipmap LOD 偏置部分緩解（見 :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ ）。
 
-Another way to combat specular aliasing is to enable :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`.
+對抗鏡面反射鋸齒的另一種方法是啟用 :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`\ 。
 
-\ **Note:** Screen-space antialiasing is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 螢幕空間反鋸齒僅支援 Forward+ 和 Mobile 渲染方法，不支援 Compatibility。
 
-\ **Note:** This property is only read when the project starts. To set the screen-space antialiasing mode at runtime, set :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時設定螢幕空間反鋸齒模式，請在根 :ref:`Viewport<class_Viewport>` 上設定 :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` 或使用 :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11615,9 +11615,9 @@ Another way to combat specular aliasing is to enable :ref:`rendering/anti_aliasi
 
 :ref:`float<class_float>` **rendering/anti_aliasing/quality/smaa_edge_detection_threshold** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/smaa_edge_detection_threshold>`
 
-Sets the sensitivity to edges when using SMAA for antialiasing. Lower values will catch more edges, at a potentially higher performance cost.
+設定使用 SMAA 反鋸齒時對邊界的敏感度。取值越低捕獲的邊界越多，但潛在的效能開銷也越高。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this setting at run-time.
+\ **注意：**\ 該屬性僅在專案啟動時讀取，目前沒有辦法在執行時更改。
 
 .. rst-class:: classref-item-separator
 
@@ -11629,11 +11629,11 @@ Sets the sensitivity to edges when using SMAA for antialiasing. Lower values wil
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_debanding** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`
 
-If ``true``, uses a fast dithering filter just before transforming floating point color values to integer color values to make banding significantly less visible. Debanding is applied at different steps of the rendering process depending on the rendering method and :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` setting.
+如果為 ``true``\ ，則在將浮點顏色值轉換為整數顏色值之前使用快速抖動濾鏡，以顯著減少色帶現象。去色帶處理會在渲染過程的不同階段應用，具體取決於渲染方法和 :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` 設定項。
 
-In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
+在某些情況下，去條帶處理可能會引入輕微可見的抖動圖案。建議僅在實際需要時啟用去條帶處理，因為抖動圖案會使無損壓縮的截圖變大。
 
-\ **Note:** This property is only read when the project starts and configures :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of the root :ref:`Viewport<class_Viewport>`. When :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` is disabled, you should additionally set the :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of other viewports in your project. To set debanding at run-time, the property that should be set depends on the renderer: Forward+ only uses :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` and Mobile uses both :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取，並用於設定根 :ref:`Viewport<class_Viewport>` 的 :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 和 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ 。當 :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` 被停用時，還需要設定專案中其他視埠的 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` 屬性。要在執行時中設定去色帶功能，需要設定的屬性取決於渲染器：Forward+ 僅使用 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ ，而 Mobile 則同時使用 :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 和 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11645,13 +11645,13 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_taa** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`
 
-Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewport>`. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion. Enabling TAA can make the image blurrier, which is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
+為預設螢幕 :ref:`Viewport<class_Viewport>` 啟用時間反鋸齒（Temporal Anti-Aliasing）。TAA 的原理是讓相機產生抖動並積累最近渲染的幾影格影像，使用運動向量渲染讓相機和物件產生運動。啟用 TAA 會讓影像變模糊，這種模糊可以通過自動使用負的 Mipmap LOD 偏置部分緩解（見 :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ ）。
 
-\ **Note:** The implementation is not complete yet. Some visual instances such as particles and skinned meshes may show ghosting artifacts in motion.
+\ **注意：**\ 實作尚未完成，粒子及蒙皮網格等某些視覺實例可能會顯示運動中的重影偽像。
 
-\ **Note:** TAA is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ TAA 只支援 Forward+ 渲染方式，不支援 Mobile 或 Compatibility。
 
-\ **Note:** This property is only read when the project starts. To set TAA at runtime, set :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時設定 TAA，請在根 :ref:`Viewport<class_Viewport>` 上設定 :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` 或使用 :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11675,9 +11675,9 @@ Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewpo
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/screen_space_roughness_limiter/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`
 
-如果為 ``true``\ ，則啟用空間篩檢程式以限制具有高頻細節的區域的粗糙度。這可以在一定程度上幫助減少鏡面反射鋸齒，儘管不如啟用 :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ 。 該篩檢程式的性能成本很小，因此如果它對你的場景沒有明顯好處，請考慮禁用它。
+如果為 ``true``\ ，則啟用空間篩檢程式以限制具有高頻細節的區域的粗糙度。這可以在一定程度上幫助減少鏡面反射鋸齒，儘管不如啟用 :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ 。 該篩檢程式的效能成本很小，因此如果它對你的場景沒有明顯好處，請考慮停用它。
 
-\ **注意：**\ 螢幕空間粗糙度限制器只支援 Forward+ 和 Mobile 算繪方式，不支援 Compatibility。
+\ **注意：**\ 螢幕空間粗糙度限制器只支援 Forward+ 和 Mobile 渲染方式，不支援 Compatibility。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時控制螢幕空間粗糙度限制器，請呼叫 :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`\ 。
 
@@ -11739,7 +11739,7 @@ Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewpo
 
 :ref:`String<class_String>` **rendering/driver/depth_prepass/disable_for_vendors** = ``"PowerVR,Mali,Adreno,Apple"`` :ref:`🔗<class_ProjectSettings_property_rendering/driver/depth_prepass/disable_for_vendors>`
 
-針對某些供應商禁用 :ref:`rendering/driver/depth_prepass/enable<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>`\ 。預設情況下會針對移動裝置禁用前置深度階段，因為移動裝置由於獨特的架構而無法從前置深度階段中獲益。
+針對某些供應商停用 :ref:`rendering/driver/depth_prepass/enable<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>`\ 。預設情況下會針對移動裝置停用前置深度階段，因為移動裝置由於獨特的架構而無法從前置深度階段中獲益。
 
 .. rst-class:: classref-item-separator
 
@@ -11751,9 +11751,9 @@ Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewpo
 
 :ref:`bool<class_bool>` **rendering/driver/depth_prepass/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>`
 
-如果 ``true``\ ，則在算繪 3D 材質之前先執行深度階段。當使用複雜的材質和照明時，這樣做能夠顯著提高過度繪製場景的性能。然而，如果場景中被遮擋的表面比較少，前置深度階段可能會降低性能。如果你的遊戲使用的是不易造成過度繪製的固定視角（例如俯視或者橫版視角），請考慮禁用前置深度階段，從而提升性能。這個設置可以在運作時更改，針對目前查看的場景來優化進行。
+如果 ``true``\ ，則在渲染 3D 材質之前先執行深度階段。當使用複雜的材質和照明時，這樣做能夠顯著提高過度繪製場景的效能。然而，如果場景中被遮擋的表面比較少，前置深度階段可能會降低效能。如果你的遊戲使用的是不易造成過度繪製的固定視角（例如俯視或者橫版視角），請考慮停用前置深度階段，從而提升效能。這個設定可以在運作時更改，針對目前查看的場景來最佳化進行。
 
-\ **注意：**\ 前置深度階段僅在使用 Forward+ 或 Compatibility 算繪方法時支援。使用 Mobile 算繪方法時，不會執行前置深度階段。
+\ **注意：**\ 前置深度階段僅在使用 Forward+ 或 Compatibility 渲染方法時支援。使用 Mobile 渲染方法時，不會執行前置深度階段。
 
 .. rst-class:: classref-item-separator
 
@@ -11767,7 +11767,7 @@ Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewpo
 
 **實驗性：** This setting has several known bugs which can lead to crashing, especially when using particles or resizing the window. Not recommended for use in production at this stage.
 
-The thread model to use for rendering. Rendering on a thread may improve performance, but synchronizing to the main thread can cause a bit more jitter.
+用於渲染的執行緒模型。線上程上渲染可能會提高效能，但同步到主執行緒可能會導致更多的抖動。
 
 .. rst-class:: classref-item-separator
 
@@ -11803,7 +11803,7 @@ The thread model to use for rendering. Rendering on a thread may improve perform
 
 :ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
 
-Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+啟用 4.5 及更早版本的舊版霧效混合行為。此選項面向在 4.6 版本之前進行開發的使用者，旨在讓他們升級到 4.6 版本時，視覺效果發生盡可能小的變化。
 
 .. rst-class:: classref-item-separator
 
@@ -11815,9 +11815,9 @@ Enables legacy fog blending behavior from version 4.5 and earlier. This is inten
 
 :ref:`int<class_int>` **rendering/environment/glow/upscale_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>`
 
-Sets how the glow effect is upscaled before being copied onto the screen. Linear is faster, but looks blocky. Bicubic is slower but looks smooth.
+設定輝光效果在複製到螢幕之前的放大方式。Linear（線性）更快，但看起來稜角分明。Bicubic（雙線性）更慢，但看起來比較平滑。
 
-\ **Note:** :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` is only effective when using the Forward+ or Mobile rendering methods, as Compatibility uses a different glow implementation.
+\ **注意：**\ :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` 僅在使用 Forward+ 和 Mobile 渲染方法時有效，Compatibility 使用的輝光實作不同。
 
 .. rst-class:: classref-item-separator
 
@@ -11829,7 +11829,7 @@ Sets how the glow effect is upscaled before being copied onto the screen. Linear
 
 :ref:`int<class_int>` **rendering/environment/glow/upscale_mode.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/glow/upscale_mode.mobile>`
 
-由於性能或驅動程式支援問題，\ :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` 在移動裝置上的低端覆蓋項。
+由於效能或驅動程式支援問題，\ :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` 在移動裝置上的低端覆蓋項。
 
 .. rst-class:: classref-item-separator
 
@@ -11841,7 +11841,7 @@ Sets how the glow effect is upscaled before being copied onto the screen. Linear
 
 :ref:`bool<class_bool>` **rendering/environment/screen_space_reflection/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/screen_space_reflection/half_size>`
 
-If ``true``, screen-space reflections will be rendered at half size and then upscaled before being added to the scene. This is faster but may look pixelated or cause flickering. If ``false``, screen-space reflections will be rendered at full size.
+如果為 ``true``\ ，螢幕空間反射將以一半大小渲染，然後在被新增到場景之前放大。這更快但可能會出現像素化或閃爍。如果為 ``false``\ ，則螢幕空間反射將以全尺寸渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -11853,7 +11853,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>`
 
-當 :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` 被設定為 ``Ultra`` 時所使用的品質目標。值為 ``0.0`` 時的品質和速度與 ``Medium`` 相似，而值為 ``1.0`` 時的品質比其他任何設定都要高得多，代價是犧牲性能。
+當 :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` 被設定為 ``Ultra`` 時所使用的品質目標。值為 ``0.0`` 時的品質和速度與 ``Medium`` 相似，而值為 ``1.0`` 時的品質比其他任何設定都要高得多，代價是犧牲效能。
 
 .. rst-class:: classref-item-separator
 
@@ -11877,7 +11877,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_from>`
 
-Distance at which the screen-space ambient occlusion effect starts to fade out. Use this hide ambient occlusion from far away.
+螢幕空間環境光遮蔽效果開始淡出的距離。使用該屬性可以在較遠處隱藏環境光遮蔽。
 
 .. rst-class:: classref-item-separator
 
@@ -11889,7 +11889,7 @@ Distance at which the screen-space ambient occlusion effect starts to fade out. 
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_to>`
 
-Distance at which the screen-space ambient occlusion is fully faded out. Use this hide ambient occlusion from far away.
+螢幕空間環境光遮蔽效果完全淡出的距離。使用該屬性可以在較遠處隱藏環境光遮蔽。
 
 .. rst-class:: classref-item-separator
 
@@ -11901,7 +11901,7 @@ Distance at which the screen-space ambient occlusion is fully faded out. Use thi
 
 :ref:`bool<class_bool>` **rendering/environment/ssao/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/half_size>`
 
-如果為 ``true``\ ，螢幕空間環境光遮蔽將以一半大小算繪，然後在被新增到場景之前放大。這明顯更快，但可能會遺漏一些小細節。如果為 ``false``\ ，螢幕空間環境光遮蔽將以全尺寸算繪。
+如果為 ``true``\ ，螢幕空間環境光遮蔽將以一半大小渲染，然後在被新增到場景之前放大。這明顯更快，但可能會遺漏一些小細節。如果為 ``false``\ ，螢幕空間環境光遮蔽將以全尺寸渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -11913,7 +11913,7 @@ Distance at which the screen-space ambient occlusion is fully faded out. Use thi
 
 :ref:`int<class_int>` **rendering/environment/ssao/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/quality>`
 
-設定螢幕空間環境光遮蔽效果的品質。值越高，取樣數量越多，因此最終的品質也越高，但代價是消耗性能。設為 ``Ultra`` 會使用 :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>` 設定。
+設定螢幕空間環境光遮蔽效果的品質。值越高，取樣數量越多，因此最終的品質也越高，但代價是消耗效能。設為 ``Ultra`` 會使用 :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>` 設定。
 
 .. rst-class:: classref-item-separator
 
@@ -11925,7 +11925,7 @@ Distance at which the screen-space ambient occlusion is fully faded out. Use thi
 
 :ref:`float<class_float>` **rendering/environment/ssil/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>`
 
-當 :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` 被設定為 ``Ultra`` 時所使用的品質目標。值為 ``0.0`` 時的品質和速度與 ``Medium`` 相似，而值為 ``1.0`` 時的品質比其他任何設定都要高得多，代價是犧牲性能。使用適應目標時，性能損耗與場景複雜度成正比。
+當 :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` 被設定為 ``Ultra`` 時所使用的品質目標。值為 ``0.0`` 時的品質和速度與 ``Medium`` 相似，而值為 ``1.0`` 時的品質比其他任何設定都要高得多，代價是犧牲效能。使用適應目標時，效能損耗與場景複雜度成正比。
 
 .. rst-class:: classref-item-separator
 
@@ -11949,7 +11949,7 @@ Distance at which the screen-space ambient occlusion is fully faded out. Use thi
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_from>`
 
-Distance at which the screen-space indirect lighting effect starts to fade out. Use this to hide screen-space indirect lighting from far away.
+螢幕空間間接光照效果開始淡出的距離。使用該屬性可以在較遠處隱藏螢幕空間間接光照。
 
 .. rst-class:: classref-item-separator
 
@@ -11961,7 +11961,7 @@ Distance at which the screen-space indirect lighting effect starts to fade out. 
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_to>`
 
-Distance at which the screen-space indirect lighting is fully faded out. Use this to hide screen-space indirect lighting from far away.
+螢幕空間間接光照效果完全淡出的距離。使用該屬性可以在較遠處隱藏螢幕空間間接光照。
 
 .. rst-class:: classref-item-separator
 
@@ -11973,7 +11973,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`bool<class_bool>` **rendering/environment/ssil/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/half_size>`
 
-如果為 ``true``\ ，螢幕空間間接光照將以一半大小算繪，然後在被新增到場景之前放大。這明顯更快，但可能會遺漏一些小細節，部分物件的邊緣也會出現發光的情況。
+如果為 ``true``\ ，螢幕空間間接光照將以一半大小渲染，然後在被新增到場景之前放大。這明顯更快，但可能會遺漏一些小細節，部分物件的邊緣也會出現發光的情況。
 
 .. rst-class:: classref-item-separator
 
@@ -11985,7 +11985,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`int<class_int>` **rendering/environment/ssil/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/quality>`
 
-設定螢幕空間間接照明效果的品質。值越高，取樣數量越多，因此最終的品質也越高，但代價是消耗性能。設為 ``Ultra`` 會使用 :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>` 設定。
+設定螢幕空間間接照明效果的品質。值越高，取樣數量越多，因此最終的品質也越高，但代價是消耗效能。設為 ``Ultra`` 會使用 :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>` 設定。
 
 .. rst-class:: classref-item-separator
 
@@ -12011,7 +12011,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`int<class_int>` **rendering/environment/subsurface_scattering/subsurface_scattering_quality** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`
 
-設定次表面散射效果的品質。值越高越慢，但視覺效果更佳。影響 :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 為 ``true`` 以及設定了 ``SSS_STRENGTH`` 的 :ref:`ShaderMaterial<class_ShaderMaterial>` 的材質的算繪。
+設定次表面散射效果的品質。值越高越慢，但視覺效果更佳。影響 :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 為 ``true`` 以及設定了 ``SSS_STRENGTH`` 的 :ref:`ShaderMaterial<class_ShaderMaterial>` 的材質的渲染。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時設定次表面散射品質，請改為呼叫 :ref:`RenderingServer.sub_surface_scattering_set_quality()<class_RenderingServer_method_sub_surface_scattering_set_quality>`\ 。
 
@@ -12025,7 +12025,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`float<class_float>` **rendering/environment/subsurface_scattering/subsurface_scattering_scale** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`
 
-縮放對次表面散射效果進行取樣的距離。更改該值不會影響性能；但較高的值將導致明顯的偽影，因為樣本將變得明顯分散。較低的值會導致散射光的散佈更小。另見 :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`\ 。
+縮放對次表面散射效果進行取樣的距離。更改該值不會影響效能；但較高的值將導致明顯的偽影，因為樣本將變得明顯分散。較低的值會導致散射光的散佈更小。另見 :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。如果要在運作時設定次表面散射縮放，請改為呼叫 :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>`\ 。
 
@@ -12039,7 +12039,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/use_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/use_filter>`
 
-在積分之前啟用體積霧效果的篩選。這大大模糊了霧，減少了精細的細節，但也平滑了粗糙的邊緣和鋸齒偽影。當需要更多細節時禁用。
+在積分之前啟用體積霧效果的篩選。這大大模糊了霧，減少了精細的細節，但也平滑了粗糙的邊緣和鋸齒偽影。當需要更多細節時停用。
 
 .. rst-class:: classref-item-separator
 
@@ -12063,7 +12063,7 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/volume_size** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_size>`
 
-用於確定相機 X 軸和 Y 軸中片段體素緩衝區大小的基本大小。最終大小按螢幕的長寬比縮放，因此實際值可能與設定的值不同。設定較大的大小，以獲得更詳細的霧；設定較小的大小，以獲得更好的性能。
+用於確定相機 X 軸和 Y 軸中片段體素緩衝區大小的基本大小。最終大小按螢幕的長寬比縮放，因此實際值可能與設定的值不同。設定較大的大小，以獲得更詳細的霧；設定較小的大小，以獲得更好的效能。
 
 .. rst-class:: classref-item-separator
 
@@ -12075,21 +12075,21 @@ Distance at which the screen-space indirect lighting is fully faded out. Use thi
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver>`
 
-Sets the driver to be used by the renderer when using the Compatibility renderer. Editing this property has no effect in the default configuration, as first-party platforms each have platform-specific overrides. Use those overrides to configure the driver for each platform.
+設定使用 Compatibility 渲染器時渲染器所使用的驅動。預設設定中編輯該屬性無效，因為第一方平台都有各自特定的覆蓋項，設定這些平台的驅動請使用對應的覆蓋項。
 
-This can be overridden using the ``--rendering-driver <driver>`` command line argument.
+可以使用 ``--rendering-driver <driver>`` 命令行參數覆蓋。
 
-Supported values are:
+支援的值有：
 
-- ``opengl3``, OpenGL 3.3 on desktop platforms, OpenGL ES 3.0 on mobile platforms, WebGL 2.0 on web.
+- ``opengl3``\ ，桌面平台為 OpenGL 3.3，移動平台為 OpenGL ES 3.0，Web 平台為 WebGL 2.0。
 
-- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer, supported on macOS (over native OpenGL) and Windows (over Direct3D 11).
+- ``opengl3_angle``\ ，使用 ANGLE 相容層的 OpenGL ES 3.0，支援 macOS（原生 OpenGL）和 Windows（基於 Direct3D 11）。
 
-- ``opengl3_es``, OpenGL ES 3.0 on Linux/BSD.
+- ``opengl3_es``\ ，Linux/BSD 為 OpenGL ES 3.0。
 
-\ **Note:** The availability of these options depends on whether the engine was compiled with support for them (determined by SCons options ``opengl3`` and ``angle_libs``).
+\ **注意：**\ 這些選項是否可用取決於編譯引擎時是否開啟了對應的支援（由 SCons 選項 ``opengl3`` 和 ``angle_libs`` 決定）。
 
-\ **Note:** The actual rendering driver may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering driver that is used at runtime, use :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>` instead of reading this project setting's value.
+\ **注意：**\ 實際的渲染驅動程式可能會因為回退或使用者指定的命令行參數而被引擎自動更改。要取得在執行時使用的實際渲染驅動程式，請使用 :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>`\ ，不要讀取該專案設定的值。
 
 .. rst-class:: classref-item-separator
 
@@ -12101,11 +12101,11 @@ Supported values are:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.android** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.android>`
 
-Android override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Android 覆蓋項。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``opengl3``, OpenGL ES 3.0 from native drivers.
+- ``opengl3``\ ，原生驅動的 OpenGL ES 3.0。
 
 .. rst-class:: classref-item-separator
 
@@ -12117,11 +12117,11 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.ios** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.ios>`
 
-iOS override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 iOS 覆蓋項。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``opengl3``, OpenGL ES 3.0 from native drivers.
+- ``opengl3``\ ，原生驅動的 OpenGL ES 3.0。
 
 .. rst-class:: classref-item-separator
 
@@ -12133,13 +12133,13 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.linuxbsd** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.linuxbsd>`
 
-LinuxBSD override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 LinuxBSD 覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``opengl3`` (default), OpenGL 3.3 from native drivers.
+- ``opengl3``\ （預設），原生驅動的 OpenGL 3.3。
 
-- ``opengl3_es``, OpenGL ES 3.0 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_gles<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported.
+- ``opengl3_es``\ ，原生驅動的 OpenGL ES 3.0。如果啟用了 :ref:`rendering/gl_compatibility/fallback_to_gles<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>`\ ，則會在不支援 OpenGL 3.3 時作為回退使用。
 
 .. rst-class:: classref-item-separator
 
@@ -12151,13 +12151,13 @@ Two options are supported:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.macos** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.macos>`
 
-macOS override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 macOS 覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``opengl3`` (default), OpenGL 3.3 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>` is enabled, this is used as a fallback if ANGLE is configured as the preferred driver but not supported.
+- ``opengl3``\ （預設），原生驅動的 OpenGL 3.3。如果啟用了 :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`\ ，則會在將 ANGLE 設定為首選驅動但不支援時作為回退使用。
 
-- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer over native OpenGL drivers. If :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported.
+- ``opengl3_es``\ ，基於原生 OpenGL 驅動使用 ANGLE 相容層的 OpenGL ES 3.0。如果啟用了 :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`\ ，則會在不支援 OpenGL 3.3 時作為回退使用。
 
 .. rst-class:: classref-item-separator
 
@@ -12169,11 +12169,11 @@ Two options are supported:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.web** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.web>`
 
-Web override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Web 覆蓋項。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``opengl3``, WebGL 2.0. The underlying native API depends on the target OS, browser, and browser configuration.
+- ``opengl3``\ ，WebGL 2.0。底層原生 API 取決於目標作業系統、瀏覽器以及瀏覽器設定。
 
 .. rst-class:: classref-item-separator
 
@@ -12185,13 +12185,13 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.windows** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.windows>`
 
-Windows override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
+:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Windows 覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``opengl3`` (default), OpenGL 3.3 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>` is enabled, this is used as a fallback if ANGLE is configured as the preferred driver but not supported.
+- ``opengl3``\ （預設），原生驅動的 OpenGL 3.3。如果啟用了 :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`\ ，則會在將 ANGLE 設定為首選驅動但不支援時作為回退使用。
 
-- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer over native Direct3D 11 drivers. If :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported. By default, ANGLE is used as the default driver for some devices listed in :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
+- ``opengl3_angle``\ ，基於原生 Direct3D 11 驅動使用 ANGLE 相容層的 OpenGL ES 3.0。如果啟用了 :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`\ ，則會在不支援 OpenGL 3.3 時作為回退使用。預設情況下，\ :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>` 中列出的裝置會使用 ANGLE 作為預設驅動。
 
 .. rst-class:: classref-item-separator
 
@@ -12203,9 +12203,9 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_angle** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`
 
-If ``true``, the Compatibility renderer will fall back to ANGLE if native OpenGL is not supported or the device is listed in :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
+為 ``true`` 時，如果原生 OpenGL 不受支援或裝置被列在 :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>` 中，則相容性渲染器將回退到 ANGLE。
 
-\ **Note:** This setting is implemented only on Windows.
+\ **注意：**\ 該設定僅在 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -12217,9 +12217,9 @@ If ``true``, the Compatibility renderer will fall back to ANGLE if native OpenGL
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_gles** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>`
 
-If ``true``, the Compatibility renderer will fall back to OpenGLES if desktop OpenGL is not supported.
+為 ``true`` 時，如果桌面 OpenGL 不被支援，則相容性渲染器將回退到 OpenGLES。
 
-\ **Note:** This setting is implemented only on Linux/X11.
+\ **注意：**\ 該設定僅在 Linux/X11 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -12231,9 +12231,9 @@ If ``true``, the Compatibility renderer will fall back to OpenGLES if desktop Op
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_native** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`
 
-If ``true``, the Compatibility renderer will fall back to native OpenGL if ANGLE is not supported, or ANGLE dynamic libraries aren't found.
+如果為 ``true``\ ，如果不支援 ANGLE 或無法找到 ANGLE 動態庫，則相容性渲染器將回退到原生 OpenGL。
 
-\ **Note:** This setting is implemented on macOS and Windows.
+\ **注意：**\ 該設定在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -12245,11 +12245,11 @@ If ``true``, the Compatibility renderer will fall back to native OpenGL if ANGLE
 
 :ref:`Array<class_Array>` **rendering/gl_compatibility/force_angle_on_devices** :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`
 
-An :ref:`Array<class_Array>` of devices which should always use the ANGLE renderer.
+應始終使用 ANGLE 渲染器的裝置的 :ref:`Array<class_Array>`\ 。
 
-Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``vendor`` and ``name``. ``name`` can be set to ``*`` to add all devices with the specified ``vendor``.
+每個條目都是一個帶有以下鍵的 :ref:`Dictionary<class_Dictionary>`\ ：\ ``vendor`` 和 ``name``\ 。\ ``name`` 可以被設定為 ``*`` 以新增所有帶有指定 ``vendor`` 的裝置。
 
-\ **Note:** This setting is implemented only on Windows.
+\ **注意：**\ 該設定僅在 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -12261,7 +12261,7 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/gl_compatibility/item_buffer_size** = ``16384`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/item_buffer_size>`
 
-單次視口更新中能夠繪製的畫布專案命令的最大數量。如果發出了更多的算繪命令，就會被忽略。降低這個限制可以在頻寬有限的裝置上提高性能。如果你發現不是所有的對象都在同一影格中被繪製，請提高這個限制。
+單次視埠更新中能夠繪製的畫布專案命令的最大數量。如果發出了更多的渲染命令，就會被忽略。降低這個限制可以在頻寬有限的裝置上提高效能。如果你發現不是所有的對象都在同一影格中被繪製，請提高這個限制。
 
 .. rst-class:: classref-item-separator
 
@@ -12273,9 +12273,9 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/nvidia_disable_threaded_optimization** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/nvidia_disable_threaded_optimization>`
 
-如果為 ``true``\ ，則禁用 NVIDIA 驅動的多執行緒優化功能，這個功能會導致大多數 OpenGL 套用的卡頓。
+如果為 ``true``\ ，則停用 NVIDIA 驅動的多執行緒最佳化功能，這個功能會導致大多數 OpenGL 套用的卡頓。
 
-\ **注意：**\ 這個設定僅在 Windows 上有效，因為在其他平臺上多執行緒優化預設都是關閉的。
+\ **注意：**\ 這個設定僅在 Windows 上有效，因為在其他平臺上多執行緒最佳化預設都是關閉的。
 
 .. rst-class:: classref-item-separator
 
@@ -12287,7 +12287,7 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`bool<class_bool>` **rendering/global_illumination/gi/use_half_resolution** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>`
 
-如果為 ``true``\ ，則以減半的解析度算繪 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）緩衝區（例如，當視口大小為 1920×1080 時為 960×540）。當啟用 VoxelGI 或 SDFGI 時，這會顯著提高性能，但代價是多邊形邊緣上可能會出現可見的偽影。隨著視口解析度的增加，品質損失變得不那麼明顯。\ :ref:`LightmapGI<class_LightmapGI>` 算繪不受該設定的影響。
+如果為 ``true``\ ，則以減半的解析度渲染 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）緩衝區（例如，當視埠大小為 1920×1080 時為 960×540）。當啟用 VoxelGI 或 SDFGI 時，這會顯著提高效能，但代價是多邊形邊緣上可能會出現可見的偽影。隨著視埠解析度的增加，品質損失變得不那麼明顯。\ :ref:`LightmapGI<class_LightmapGI>` 渲染不受該設定的影響。
 
 \ **注意：**\ 只有在專案啟動時該屬性才會被讀取。要在運作時設定半解析度 GI，請改為呼叫 :ref:`RenderingServer.gi_set_use_half_resolution()<class_RenderingServer_method_gi_set_use_half_resolution>`\ 。
 
@@ -12301,7 +12301,7 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_converge** = ``5`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`
 
-用於收斂帶符號距離場全域光照的影格數。值越高，得到的噪點越少，但完全收斂所需的時間也就越長。這意味著場景的全域光照處於過暗狀態的時間可能更長，在相機快速移動時尤為明顯。實際的收斂速度取決於算繪影格率。例如，預設設定為 30 影格，則 60 FPS 的算繪會讓 SDFGI 在 0.5 秒後完全收斂。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
+用於收斂帶符號距離場全域光照的影格數。值越高，得到的噪點越少，但完全收斂所需的時間也就越長。這意味著場景的全域光照處於過暗狀態的時間可能更長，在相機快速移動時尤為明顯。實際的收斂速度取決於渲染影格率。例如，預設設定為 30 影格，則 60 FPS 的渲染會讓 SDFGI 在 0.5 秒後完全收斂。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時控制 SDFGI 的收斂速度，請改為呼叫 :ref:`RenderingServer.environment_set_sdfgi_frames_to_converge()<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`\ 。
 
@@ -12315,9 +12315,9 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_update_lights** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`
 
-帶符號距離場全域光照中動態光照更新所需的影格數。值越高，動態燈光造成的間接光照就會花費更多的時間來更新，但動態燈光數量較多時性能會更好。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
+帶符號距離場全域光照中動態光照更新所需的影格數。值越高，動態燈光造成的間接光照就會花費更多的時間來更新，但動態燈光數量較多時效能會更好。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
 
-\ **注意：**\ 僅影響 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 為 :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>`\ （預設值）的 :ref:`Light3D<class_Light3D>` 節點。讓不會移動的燈光使用 :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 烘焙模式能夠提升性能。
+\ **注意：**\ 僅影響 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 為 :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>`\ （預設值）的 :ref:`Light3D<class_Light3D>` 節點。讓不會移動的燈光使用 :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 烘焙模式能夠提升效能。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時控制 SDFGI 的燈光更新速度，請改為呼叫 :ref:`RenderingServer.environment_set_sdfgi_frames_to_update_light()<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`\ 。
 
@@ -12331,7 +12331,7 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/probe_ray_count** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`
 
-計算帶符號距離場全域光照時每影格發出的射線。值越高，得到的噪點越少，但性能消耗也越大。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`\ 。
+計算帶符號距離場全域光照時每影格發出的射線。值越高，得到的噪點越少，但效能消耗也越大。另見 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時控制 SDFGI 的品質，請改為呼叫 :ref:`RenderingServer.environment_set_sdfgi_ray_count()<class_RenderingServer_method_environment_set_sdfgi_ray_count>`\ 。
 
@@ -12345,7 +12345,7 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/global_illumination/voxel_gi/quality** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/voxel_gi/quality>`
 
-要使用的 VoxelGI 品質。高品質下的光照更精確、反射品質更好，但算繪速度較慢。這個設定不影響烘焙資料，套用時不需要重新烘焙 :ref:`VoxelGI<class_VoxelGI>`\ 。
+要使用的 VoxelGI 品質。高品質下的光照更精確、反射品質更好，但渲染速度較慢。這個設定不影響烘焙資料，套用時不需要重新烘焙 :ref:`VoxelGI<class_VoxelGI>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。要在運作時控制 VoxelGI 的品質，請改為呼叫 :ref:`RenderingServer.voxel_gi_set_quality()<class_RenderingServer_method_voxel_gi_set_quality>`\ 。
 
@@ -12359,9 +12359,9 @@ Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``v
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_rays_per_pass** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_rays_per_pass>`
 
-The maximum number of rays that can be thrown per pass when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, adjusting this value may result in higher GPU utilization when baking lightmaps, leading to faster bake times.
+使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照貼圖時，每階段可以投射的最大射線數。根據場景的不同，調整該值可能會提高烘焙光照貼圖時的 GPU 利用率，從而加快烘焙時間。
 
-\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
+\ **注意：**\ 使用對系統而言過高的值可能會導致崩潰，因為 GPU 在長時間內無響應，作業系統會重設圖形驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -12373,9 +12373,9 @@ The maximum number of rays that can be thrown per pass when baking lightmaps wit
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_rays_per_probe_pass** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_rays_per_probe_pass>`
 
-The maximum number of rays that can be thrown per pass when baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, adjusting this value may result in higher GPU utilization when baking lightmaps, leading to faster bake times.
+在帶有 :ref:`LightmapGI<class_LightmapGI>` 的 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙動態物件光照時，每階段可以投射的最大光線數。根據場景的不同，調整該值可能會在烘焙光照貼圖時提高 GPU 利用率，從而加快烘焙時間。
 
-\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
+\ **注意：**\ 使用對系統而言過高的值可能會導致崩潰，因為 GPU 在長時間內無響應，作業系統會重設圖形驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -12387,9 +12387,9 @@ The maximum number of rays that can be thrown per pass when baking dynamic objec
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_transparency_rays** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_transparency_rays>`
 
-The maximum number of retry rays that can be thrown per pass when hitting a transparent surface when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, reducing this value may lead to faster bake times.
+使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照貼圖時，每階段可以投射的最大重試射線數。根據場景的不同，降低該值可能會加快烘焙時間。
 
-\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
+\ **注意：**\ 使用對系統而言過高的值可能會導致崩潰，因為 GPU 在長時間內無響應，作業系統會重設圖形驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -12401,9 +12401,9 @@ The maximum number of retry rays that can be thrown per pass when hitting a tran
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/region_size** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/region_size>`
 
-The region size to use when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. The specified value is rounded up to the nearest power of 2.
+使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照貼圖時使用的區域大小。指定的值會向上捨入到最近的 2 的冪。
 
-\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
+\ **注意：**\ 使用過高的值可能會導致系統崩潰，因為 GPU 如果長時間無響應，作業系統會重設圖形驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -12511,19 +12511,19 @@ The region size to use when baking lightmaps with :ref:`LightmapGI<class_Lightma
 
 :ref:`int<class_int>` **rendering/lightmapping/denoising/denoiser** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>`
 
-Denoiser tool used for denoising lightmaps.
+用於對光照貼圖進行降噪的降噪器工具。
 
-Using `OpenImageDenoise <https://www.openimagedenoise.org/>`__ (OIDN) requires configuring a path to an OIDN executable in the editor settings at :ref:`EditorSettings.filesystem/tools/oidn/oidn_denoise_path<class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path>`. OIDN can be downloaded from `OpenImageDenoise's downloads page <https://www.openimagedenoise.org/downloads.html>`__.
+使用 `OpenImageDenoise <https://www.openimagedenoise.org/>`__\ （OIDN）需要在 :ref:`EditorSettings.filesystem/tools/oidn/oidn_denoise_path<class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path>` 的編輯器設定中設定 OIDN 可執行檔的路徑。OIDN 可以從 `OpenImageDenoise 的下載頁面 <https://www.openimagedenoise.org/downloads.html>`__\ 下載。
 
-OIDN will use GPU acceleration when available. Unlike JNLM which uses compute shaders for acceleration, OIDN uses vendor-specific acceleration methods. For GPU acceleration to be available, the following libraries must be installed on the system depending on your GPU:
+OIDN 將在可用時使用 GPU 加速。與使用計算著色器進行加速的 JNLM 不同，OIDN 使用特定於供應商的加速方法。要使 GPU 加速可用，必鬚根據你的 GPU 在系統上安裝以下庫：
 
-- NVIDIA GPUs: CUDA libraries
+- NVIDIA GPU：CUDA 庫
 
-- AMD GPUs: HIP libraries
+- AMD GPU：HIP 庫
 
-- Intel GPUs: SYCL libraries
+- Intel GPU：SYCL 庫
 
-If no GPU acceleration is configured on the system, multi-threaded CPU-based denoising will be performed instead. This CPU-based denoising is significantly slower than the JNLM denoiser in most cases.
+如果系統上沒有設定 GPU 加速，則會執行基於 CPU 的多執行緒去噪。在大多數情況下，這種基於 CPU 的降噪明顯慢於 JNLM 降噪器。
 
 .. rst-class:: classref-item-separator
 
@@ -12535,9 +12535,9 @@ If no GPU acceleration is configured on the system, multi-threaded CPU-based den
 
 :ref:`bool<class_bool>` **rendering/lightmapping/lightmap_gi/use_bicubic_filter** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/lightmap_gi/use_bicubic_filter>`
 
-If ``true``, applies a bicubic filter during lightmap sampling. This makes lightmaps look much smoother, at a moderate performance cost.
+如果為 ``true``\ ，則會在光照貼圖取樣期間應用雙三次過濾。這樣光照貼圖看起來會更加平滑，但會帶來一定的效能開銷。
 
-\ **Note:** The bicubic filter exaggerates the 'bleeding' effect that occurs when a lightmap's resolution is low enough.
+\ **注意：**\ 雙三次過濾會誇大光照貼圖解析度足夠低時出現的“出血”效果。
 
 .. rst-class:: classref-item-separator
 
@@ -12561,9 +12561,9 @@ If ``true``, applies a bicubic filter during lightmap sampling. This makes light
 
 :ref:`float<class_float>` **rendering/lightmapping/probe_capture/update_speed** = ``15`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area.
+當使用 :ref:`LightmapProbe<class_LightmapProbe>`\ （光照貼圖探針）來表現動態物體的光照時，該屬性代表一個與影格率無關的更新速度。數值越大，動態物體的光照更新得就越快。較高的數值可以防止快速移動的物體上出現“過時”的間接光照顯示；但代價是，當物體從明亮區域移動到陰影區域時，可能會出現閃爍的現象。
 
-\ **Note:** This property is only read when the project starts. To adjust the BVH build quality at runtime, use :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
+\ **注意：** 該屬性僅在專案啟動時被讀取。如果想在執行時調整 BVH 的建置品質，請使用 :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12575,7 +12575,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/directional_shadow/16_bits** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/16_bits>`
 
-使用 16 位元的平行光陰影深度貼圖。啟用後，陰影的精度會降低，可能造成陰影失真，但能夠在部分裝置上提升性能。
+使用 16 位元的平行光陰影深度貼圖。啟用後，陰影的精度會降低，可能造成陰影失真，但能夠在部分裝置上提升效能。
 
 .. rst-class:: classref-item-separator
 
@@ -12587,7 +12587,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>`
 
-方向陰影的大小，單位為圖元。值越高，得到的陰影越清晰，但會以性能為代價。取值將四捨五入到最接近的 2 次冪。
+方向陰影的大小，單位為圖元。值越高，得到的陰影越清晰，但會以效能為代價。取值將四捨五入到最接近的 2 次冪。
 
 .. rst-class:: classref-item-separator
 
@@ -12599,7 +12599,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/size.mobile** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size.mobile>`
 
-由於性能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>` 以低配數值覆蓋。
+由於效能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>` 以低配數值覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -12627,7 +12627,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile>`
 
-由於性能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>` 以低配數值覆蓋。
+由於效能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>` 以低配數值覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -12639,7 +12639,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/positional_shadow/atlas_16_bits** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_16_bits>`
 
-使用 16 位的全向燈/聚光燈陰影深度貼圖。啟用後，陰影的精度會降低，可能造成陰影失真，但能夠在部分裝置上提升性能。
+使用 16 位的全向燈/聚光燈陰影深度貼圖。啟用後，陰影的精度會降低，可能造成陰影失真，但能夠在部分裝置上提升效能。
 
 .. rst-class:: classref-item-separator
 
@@ -12651,7 +12651,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv>`
 
-陰影圖集第一象限的細分量。有關更多信息，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+陰影圖集第一象限的細分量。有關更多資訊，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12675,7 +12675,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv>`
 
-陰影圖集第三象限的細分量。有關更多信息，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+陰影圖集第三象限的細分量。有關更多資訊，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12687,7 +12687,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv>`
 
-陰影圖集第四象限的細分量。有關更多信息，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+陰影圖集第四象限的細分量。有關更多資訊，請參閱\ `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12699,7 +12699,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>`
 
-用於 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 節點的陰影圖集的大小。有關更多信息，請參閱 `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+用於 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 節點的陰影圖集的大小。有關更多資訊，請參閱 `文件 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12711,7 +12711,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size.mobile** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size.mobile>`
 
-由於性能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/positional_shadow/atlas_size<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>` 以低配數值覆蓋。
+由於效能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/positional_shadow/atlas_size<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>` 以低配數值覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -12739,7 +12739,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality.mobile>`
 
-由於性能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>` 以低配數值覆蓋。
+由於效能和驅動支援，在移動裝置上會對 :ref:`rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>` 以低配數值覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -12751,9 +12751,9 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/tighter_shadow_caster_culling** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/tighter_shadow_caster_culling>`
 
-If ``true``, items that cannot cast shadows into the view frustum will not be rendered into shadow maps.
+如果為 ``true``\ ，則陰影無法抵達視錐的物件不會渲染在陰影貼圖中。
 
-This can increase performance.
+可以提高效能。
 
 .. rst-class:: classref-item-separator
 
@@ -12765,7 +12765,7 @@ This can increase performance.
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/use_physical_light_units** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>`
 
-允許對光源使用基於物理的單位。基於物理的單位往往比 Godot 使用的任意單位大得多，但它們可用於將 Godot 內的照明與真實世界的照明相配對。由於自然界中照明條件的動態範圍很大，Godot 在算繪之前會將曝光量烘焙到各種照明量中。大多數光源在運行時根據活動的 :ref:`CameraAttributes<class_CameraAttributes>` 資源自動烘焙曝光，但 :ref:`LightmapGI<class_LightmapGI>` 和 :ref:`VoxelGI<class_VoxelGI>` 需要在烘焙時設定 :ref:`CameraAttributes<class_CameraAttributes>` 資源以減少動態範圍。在運作時，Godot 將自動協調烘焙的曝光與活動的曝光，以確保照明保持一致。
+允許對光源使用基於物理的單位。基於物理的單位往往比 Godot 使用的任意單位大得多，但它們可用於將 Godot 內的照明與真實世界的照明相配對。由於自然界中照明條件的動態範圍很大，Godot 在渲染之前會將曝光量烘焙到各種照明量中。大多數光源在運行時根據活動的 :ref:`CameraAttributes<class_CameraAttributes>` 資源自動烘焙曝光，但 :ref:`LightmapGI<class_LightmapGI>` 和 :ref:`VoxelGI<class_VoxelGI>` 需要在烘焙時設定 :ref:`CameraAttributes<class_CameraAttributes>` 資源以減少動態範圍。在運作時，Godot 將自動協調烘焙的曝光與活動的曝光，以確保照明保持一致。
 
 .. rst-class:: classref-item-separator
 
@@ -12777,11 +12777,11 @@ This can increase performance.
 
 :ref:`float<class_float>` **rendering/limits/cluster_builder/max_clustered_elements** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
 
-可以在相機視圖中一次算繪的集群元素（\ :ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`\ ）的最大數量。如果相機視圖中存在更多的集群元素，其中一些將不會被算繪（導致在相機移動期間彈出）。在燈光和裝飾上啟用距離淡入淡出（\ :ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`\ 、\ :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`\ ）有助於避免達到該限制。
+可以在相機視圖中一次渲染的集群元素（\ :ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`\ ）的最大數量。如果相機視圖中存在更多的集群元素，其中一些將不會被渲染（導致在相機移動期間彈出）。在燈光和裝飾上啟用距離淡入淡出（\ :ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`\ 、\ :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`\ ）有助於避免達到該限制。
 
-減小該值可能會提高某些設定的 GPU 性能，即使在專案中從未達到集群元素最大數量也是如此。
+減小該值可能會提高某些設定的 GPU 效能，即使在專案中從未達到集群元素最大數量也是如此。
 
-\ **注意：**\ 該設定僅在使用 Forward+ 算繪方式時有效，對 Mobile 和 Compatibility 無效。
+\ **注意：**\ 該設定僅在使用 Forward+ 渲染方式時有效，對 Mobile 和 Compatibility 無效。
 
 .. rst-class:: classref-item-separator
 
@@ -12793,9 +12793,9 @@ This can increase performance.
 
 :ref:`int<class_int>` **rendering/limits/global_shader_variables/buffer_size** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/global_shader_variables/buffer_size>`
 
-The maximum number of uniforms that can be used by the global shader uniform buffer. Each item takes up one slot. In other words, a single uniform float and a uniform vec4 will take the same amount of space in the buffer.
+全域著色器 uniform 緩衝能夠使用的 uniform 的最大數量。每個條目佔據一個位置。換句話說，單個 uniform float 和單個 uniform vec4 在緩衝中佔據的空間是相同的。
 
-\ **Note:** When using the Compatibility renderer, most mobile devices (and all web exports) will be limited to a maximum size of 1024 due to hardware constraints.
+\ **注意：**\ 使用 Compatibility 渲染器時，由於硬體的限制，大多數行動裝置（以及所有 Web 匯出）對最大數量都有 1024 的上限。
 
 .. rst-class:: classref-item-separator
 
@@ -12807,9 +12807,9 @@ The maximum number of uniforms that can be used by the global shader uniform buf
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_lights_per_object** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`
 
-每個物件可算繪的全向燈和聚光燈的最大數量。預設值為 8，這意味著每個表面最多可受到 8 個全向燈和 8 個聚光燈影響。這進一步受到硬體支援和 :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>` 的限制。將該設定得較低會略微減少記憶體使用，可能會減少著色器編譯時間，並可能導致在低端、移動或 Web 裝置上的算繪速度更快。
+每個物件可渲染的全向燈和聚光燈的最大數量。預設值為 8，這意味著每個表面最多可受到 8 個全向燈和 8 個聚光燈影響。這進一步受到硬體支援和 :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>` 的限制。將該設定得較低會略微減少記憶體使用，可能會減少著色器編譯時間，並可能導致在低端、移動或 Web 裝置上的渲染速度更快。
 
-\ **注意：**\ 該設定僅支援 Compatibility 算繪方式，不支援 Forward+ 和 Mobile。
+\ **注意：**\ 該設定僅支援 Compatibility 渲染方式，不支援 Forward+ 和 Mobile。
 
 .. rst-class:: classref-item-separator
 
@@ -12821,9 +12821,9 @@ The maximum number of uniforms that can be used by the global shader uniform buf
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_renderable_elements** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_elements>`
 
-一影格中可算繪的最大元素數。如果每影格可見的元素多於此，則不會繪製它們。請記住，元素指的是網格表面，而不是網格本身。將此值設定得較低會略微減少記憶體使用量，並可能減少著色器編譯時間，尤其是在 Web 上。對於大多數用途，預設值是合適的，但在 Web 匯出時可考慮盡可能降低。
+一影格中可渲染的最大元素數。如果每影格可見的元素多於此，則不會繪製它們。請記住，元素指的是網格表面，而不是網格本身。將此值設定得較低會略微減少記憶體使用量，並可能減少著色器編譯時間，尤其是在 Web 上。對於大多數用途，預設值是合適的，但在 Web 匯出時可考慮盡可能降低。
 
-\ **注意：**\ 該設定僅在支援 Compatibility 算繪方式，不支援 Forward+ 和 Mobile。
+\ **注意：**\ 該設定僅在支援 Compatibility 渲染方式，不支援 Forward+ 和 Mobile。
 
 .. rst-class:: classref-item-separator
 
@@ -12835,9 +12835,9 @@ The maximum number of uniforms that can be used by the global shader uniform buf
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_renderable_lights** = ``32`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>`
 
-一影格中可算繪的定位燈的最大數量。如果使用的燈多於此數量，則它們將被忽略。將此值設定得較低會略微減少記憶體使用量，並可能減少著色器編譯時間，尤其是在 Web 上。對於大多數用途，預設值是合適的，但在 Web 匯出時可考慮盡可能降低。
+一影格中可渲染的定位燈的最大數量。如果使用的燈多於此數量，則它們將被忽略。將此值設定得較低會略微減少記憶體使用量，並可能減少著色器編譯時間，尤其是在 Web 上。對於大多數用途，預設值是合適的，但在 Web 匯出時可考慮盡可能降低。
 
-\ **注意：**\ 該設定僅在支援 Compatibility 算繪方式，不支援 Forward+ 和 Mobile。
+\ **注意：**\ 該設定僅在支援 Compatibility 渲染方式，不支援 Forward+ 和 Mobile。
 
 .. rst-class:: classref-item-separator
 
@@ -12849,7 +12849,7 @@ The maximum number of uniforms that can be used by the global shader uniform buf
 
 :ref:`int<class_int>` **rendering/limits/spatial_indexer/threaded_cull_minimum_instances** = ``1000`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/spatial_indexer/threaded_cull_minimum_instances>`
 
-The minimum number of instances that must be present in a scene to enable culling computations on multiple threads. If a scene has fewer instances than this number, culling is done on a single thread.
+在多執行緒上啟用剔除計算時，場景中必須存在的最小實例數。如果場景的實例數少於該數量，則在單執行緒上完成剔除。
 
 .. rst-class:: classref-item-separator
 
@@ -12875,9 +12875,9 @@ The minimum number of instances that must be present in a scene to enable cullin
 
 :ref:`float<class_float>` **rendering/limits/time/time_rollover_secs** = ``3600`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/time/time_rollover_secs>`
 
-Maximum time (in seconds) before the ``TIME`` shader built-in variable rolls over. The ``TIME`` variable increments by ``delta`` each frame, and when it exceeds this value, it rolls over to ``0.0``. Since large floating-point values are less precise than small floating-point values, this should be set as low as possible to maximize the precision of the ``TIME`` built-in variable in shaders. This is especially important on mobile platforms where precision in shaders is significantly reduced. However, if this is set too low, shader animations may appear to restart from the beginning while the project is running.
+``TIME`` 著色器內建變數發生環繞前所能達到的最大時間（單位為秒）。\ ``TIME`` 變數每影格都會根據 ``delta`` 增大，超過這個值後就會繞回 ``0.0``\ 。由於浮點數在數值較大時比數值較小時的精度低，應當把這個值設得盡可能低，從而最大化 ``TIME`` 著色器內建變數的精度。這一點在移動平台上尤為重要，因為移動平台上著色器的精度有顯著的降低。不過如果設得太低的話，著色器動畫就可能會在專案執行過程中重新開始。
 
-On desktop platforms, values below ``4096`` are recommended, ideally below ``2048``. On mobile platforms, values below ``64`` are recommended, ideally below ``32``.
+在桌面平台上建議使用低於 ``4096`` 的值，低於 ``2048`` 更為理想。在移動平台上建議使用低於 ``64`` 的值，低於 ``32`` 更為理想。
 
 .. rst-class:: classref-item-separator
 
@@ -12889,13 +12889,13 @@ On desktop platforms, values below ``4096`` are recommended, ideally below ``204
 
 :ref:`float<class_float>` **rendering/mesh_lod/lod_change/threshold_pixels** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`
 
-The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionProbe<class_ReflectionProbe>`. Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` to improve performance at the cost of geometry detail.
+用於 :ref:`ReflectionProbe<class_ReflectionProbe>`\ （反射探針）內渲染網格的自動 LOD 偏差。數值越高，就會使用細節度更低的網格版本（前提是該網格已生成了 LOD 變體）。如果設定為 ``0.0``\ ，則會停用自動 LOD。你可以調高 :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 的值，通過犧牲幾何細節來換取更好的效能。
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **注意：** 根據網格自身的屬性（比如頂點顏色、混合形狀等），引擎可能會生成較少數量的 LOD 層級，以避免網格在受到頂點顏色或混合形狀影響時出現明顯的形變。此外，頂點數量極少的網格根本不會生成任何 LOD，這意味著該設定對它們完全不起作用。總的來說，這個設定對頂點數量較多的靜態網格影響最大。
 
-\ **Note:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **注意：** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 不會影響 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 的可見範圍（也就是大家常說的“手動”LOD 或層級 LOD）。
 
-\ **Note:** This property is only read when the project starts. To adjust the automatic LOD threshold at runtime, set :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` on the root :ref:`Viewport<class_Viewport>`.
+\ **注意：** 該屬性僅在專案啟動時被讀取。如果想在執行時調整自動 LOD 的閾值，請設定根 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12907,7 +12907,7 @@ The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionPro
 
 :ref:`int<class_int>` **rendering/occlusion_culling/bvh_build_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`
 
-算繪遮擋剔除緩衝區時使用的 `BVH <https://en.wikipedia.org/wiki/Bounding_volume_hierarchy>`__ 品質。值越高，得到的遮擋剔除越精確，但代價是 CPU 使用率也越高。另見 :ref:`rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`\ 。
+渲染遮擋剔除緩衝區時使用的 `BVH <https://en.wikipedia.org/wiki/Bounding_volume_hierarchy>`__ 品質。值越高，得到的遮擋剔除越精確，但代價是 CPU 使用率也越高。另見 :ref:`rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。如果要在運作時調整 BVH 建構品質，請使用 :ref:`RenderingServer.viewport_set_occlusion_culling_build_quality()<class_RenderingServer_method_viewport_set_occlusion_culling_build_quality>`\ 。
 
@@ -12921,7 +12921,7 @@ The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionPro
 
 :ref:`bool<class_bool>` **rendering/occlusion_culling/jitter_projection** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/jitter_projection>`
 
-If ``true``, the projection used for rendering the occlusion buffer will be jittered. This can help prevent objects being incorrectly culled when visible through small gaps.
+如果為 ``true``\ ，則會抖動用於渲染剔除緩衝的投影。利於防止錯誤地剔除能夠通過較小縫隙看到的物件。
 
 .. rst-class:: classref-item-separator
 
@@ -12933,7 +12933,7 @@ If ``true``, the projection used for rendering the occlusion buffer will be jitt
 
 :ref:`int<class_int>` **rendering/occlusion_culling/occlusion_rays_per_thread** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`
 
-每個 CPU 執行緒所追蹤的剔除射線數量。更高的值將導致更準確的遮擋剔除，但代價是更高的 CPU 使用率。遮擋剔除緩衝區的圖元數大致等於 ``occlusion_rays_per_thread * number_of_logical_cpu_cores``\ ，因此它取決於系統的 CPU。因此，內核較少的 CPU 將使用較低的解析度，來嘗試保持跨裝置的性能成本。另見 :ref:`rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`\ 。
+每個 CPU 執行緒所追蹤的剔除射線數量。更高的值將導致更準確的遮擋剔除，但代價是更高的 CPU 使用率。遮擋剔除緩衝區的圖元數大致等於 ``occlusion_rays_per_thread * number_of_logical_cpu_cores``\ ，因此它取決於系統的 CPU。因此，內核較少的 CPU 將使用較低的解析度，來嘗試保持跨裝置的效能成本。另見 :ref:`rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`\ 。
 
 \ **注意：**\ 這個屬性僅在專案啟動時讀取。如果要在運作時調整每個執行緒所追蹤的剔除射線數量，請使用 :ref:`RenderingServer.viewport_set_occlusion_rays_per_thread()<class_RenderingServer_method_viewport_set_occlusion_rays_per_thread>`\ 。
 
@@ -12947,9 +12947,9 @@ If ``true``, the projection used for rendering the occlusion buffer will be jitt
 
 :ref:`bool<class_bool>` **rendering/occlusion_culling/use_occlusion_culling** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>`
 
-如果為 ``true``\ ，則 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 節點在根視口的 3D 遮擋剔除中可用。對於自訂視口，必須改為將 :ref:`Viewport.use_occlusion_culling<class_Viewport_property_use_occlusion_culling>` 設為 ``true``\ 。
+如果為 ``true``\ ，則 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 節點在根視埠的 3D 遮擋剔除中可用。對於自訂視埠，必須改為將 :ref:`Viewport.use_occlusion_culling<class_Viewport_property_use_occlusion_culling>` 設為 ``true``\ 。
 
-\ **注意：**\ 啟用遮擋剔除會消耗 CPU 資源。請只在打算使用時啟用遮擋剔除。阻擋視線的物件很少或根本不存在的大型開放場景通常不會因遮擋剔除而獲得什麼優化。相對於遮擋剔除，大型開放場景通常能夠從網格 LOD 和可見範圍（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中獲益。
+\ **注意：**\ 啟用遮擋剔除會消耗 CPU 資源。請只在打算使用時啟用遮擋剔除。阻擋視線的物件很少或根本不存在的大型開放場景通常不會因遮擋剔除而獲得什麼最佳化。相對於遮擋剔除，大型開放場景通常能夠從網格 LOD 和可見範圍（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中獲益。
 
 .. rst-class:: classref-item-separator
 
@@ -12985,7 +12985,7 @@ If ``true``, the projection used for rendering the occlusion buffer will be jitt
 
 :ref:`int<class_int>` **rendering/reflections/reflection_atlas/reflection_size.mobile** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size.mobile>`
 
-移動裝置上 :ref:`rendering/reflections/reflection_atlas/reflection_size<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size>` 的低端覆蓋項，出於性能問題或驅動程式支援的考慮。
+移動裝置上 :ref:`rendering/reflections/reflection_atlas/reflection_size<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size>` 的低端覆蓋項，出於效能問題或驅動程式支援的考慮。
 
 .. rst-class:: classref-item-separator
 
@@ -13021,7 +13021,7 @@ If ``true``, the projection used for rendering the occlusion buffer will be jitt
 
 :ref:`int<class_int>` **rendering/reflections/sky_reflections/ggx_samples.mobile** = ``16`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples.mobile>`
 
-移動裝置上 :ref:`rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>` 的低端覆蓋項，出於性能問題或驅動程式支援的考慮。
+移動裝置上 :ref:`rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>` 的低端覆蓋項，出於效能問題或驅動程式支援的考慮。
 
 .. rst-class:: classref-item-separator
 
@@ -13045,9 +13045,9 @@ If ``true``, the projection used for rendering the occlusion buffer will be jitt
 
 :ref:`bool<class_bool>` **rendering/reflections/sky_reflections/texture_array_reflections** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>`
 
-If ``true``, uses texture arrays instead of mipmaps for reflection probes and panorama backgrounds (sky). This reduces jitter noise and upscaling artifacts on reflections, but is significantly slower to compute and uses :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` times more memory.
+如果為 ``true``\ ，則使用紋理陣列而不是 mipmap，用於反射探針和全景背景（天空）。這減少了反射上的抖動噪聲和放大偽影，但計算速度明顯變慢，並且使用了 :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` 倍的記憶體。
 
-\ **Note:** Texture array reflections are always disabled on macOS on Intel GPUs due to driver bugs.
+\ **注意：**\ 由於驅動問題，紋理陣列反射在 Intel GPU 的 macOS 上始終停用。
 
 .. rst-class:: classref-item-separator
 
@@ -13059,7 +13059,7 @@ If ``true``, uses texture arrays instead of mipmaps for reflection probes and pa
 
 :ref:`bool<class_bool>` **rendering/reflections/sky_reflections/texture_array_reflections.mobile** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections.mobile>`
 
-移動裝置上 :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>` 的低端覆蓋項，出於性能問題或驅動程式支援的考慮。
+移動裝置上 :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>` 的低端覆蓋項，出於效能問題或驅動程式支援的考慮。
 
 .. rst-class:: classref-item-separator
 
@@ -13071,7 +13071,7 @@ If ``true``, uses texture arrays instead of mipmaps for reflection probes and pa
 
 :ref:`bool<class_bool>` **rendering/reflections/specular_occlusion/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/specular_occlusion/enabled>`
 
-If ``true``, reduces reflections based on ambient light.
+如果為 ``true``\ ，則會減少基於環境光的反射。
 
 .. rst-class:: classref-item-separator
 
@@ -13083,17 +13083,17 @@ If ``true``, reduces reflections based on ambient light.
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method** = ``"forward_plus"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method>`
 
-Sets the renderer that will be used by the project. Options are:
+設定專案使用的渲染器。選項有：
 
-\ **forward_plus** (Forward+): High-end renderer designed for desktop devices. Has a higher base overhead, but scales well with complex scenes. Not suitable for older devices or mobile.
+\ **forward_plus**\ （Forward+）：為桌面裝置設計的高端渲染器。有較高的基礎開銷，但能夠很好地擴充到複雜的場景。不適合老舊裝置和行動裝置。
 
-\ **mobile** (Mobile): Modern renderer designed for mobile devices. Has a lower base overhead than Forward+, but does not scale as well to large scenes with many elements.
+\ **mobile**\ （移動）：為行動裝置設計的現代渲染器。基礎開銷比 Forward+ 低，但在處理有許多元素的大型場景時，擴充性並不理想。
 
-\ **gl_compatibility** (Compatibility): Low-end renderer designed for older devices. Based on the limitations of the OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2 APIs. Lighting calculations are performed on nonlinear sRGB-encoded color data, which produces inaccurate results that may look acceptable for some games.
+\ **gl_compatibility**\ （相容）：為老舊裝置設計的低端渲染器。基於 OpenGL 3.3/ OpenGL ES 3.0 / WebGL 2 API 的限制。光照計算是在非線性 sRGB 編碼的顏色資料上進行的，這會產生不準確的結果，儘管對於某些遊戲來說，這些結果看起來可能可以接受。
 
-This can be overridden using the ``--rendering-method <method>`` command line argument.
+可以使用 ``--rendering-method <method>`` 命令行參數覆蓋。
 
-\ **Note:** The actual rendering method may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering method that is used at runtime, use :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` instead of reading this project setting's value.
+\ **注意：**\ 實際的渲染方法可能會因回退或使用者指定的命令行參數而被引擎自動更改。要取得執行時使用的實際渲染方法，請使用 :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>`\ ，不該讀取該專案設定的值。
 
 .. rst-class:: classref-item-separator
 
@@ -13129,7 +13129,7 @@ Web 平臺的 :ref:`rendering/renderer/rendering_method<class_ProjectSettings_pr
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/agility_sdk_version** = ``618`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/agility_sdk_version>`
 
-Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ to use (``D3D12SDKVersion``). This must match the *minor* version that is installed next to the editor binary and in the export templates directory for the current editor version. For example, if you have ``1.618.5`` installed, you need to input ``618`` here.
+要使用的 `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ 的版本程式碼（\ ``D3D12SDKVersion``\ ）。該程式碼必須與安裝在編輯器二進位檔案旁邊的\ *次要*\ 版本以及目前編輯器版本的匯出範本目錄中的版本相匹配。例如，如果安裝了 ``1.618.5``\ ，則需要在此處輸入 ``618``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13141,9 +13141,9 @@ Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/dir
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_resource_descriptors** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_resource_descriptors>`
 
-The number of entries in the resource descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Direct3D 12 渲染驅動程式用於大多數渲染操作的資源描述符堆中的條目數。
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+這個值可能會降低，也可能需要提高，具體取決於場景的複雜度。
 
 .. rst-class:: classref-item-separator
 
@@ -13155,9 +13155,9 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_sampler_descriptors** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_sampler_descriptors>`
 
-The number of entries in the sampler descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Direct3D 12 渲染驅動程式用於大多數渲染操作的取樣器描述符堆中的條目數。
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+這個值可能會降低，也可能需要提高，具體取決於場景的複雜度。
 
 .. rst-class:: classref-item-separator
 
@@ -13169,23 +13169,23 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver>`
 
-Sets the driver to be used by the renderer when using a RenderingDevice-based renderer like the Forward+ or Mobile renderers. Editing this property has no effect in the default configuration, as first-party platforms each have platform-specific overrides. Use those overrides to configure the driver for each platform.
+設定在使用 Forward+、Mobile 等基於 RenderingDevice 的渲染器時所使用的驅動程式。在預設設定中編輯該屬性沒有效果，因為第一方平台都有針對各自平台的覆蓋項。請使用這些覆蓋項來針對平台設定驅動程式。
 
-This can be overridden using the ``--rendering-driver <driver>`` command line argument.
+可以使用 ``--rendering-driver <driver>`` 命令行參數進行覆蓋。
 
-Supported values are:
+支援的值有：
 
-- ``metal``, Metal (supported on Apple Silicon Macs and iOS).
+- ``metal``\ ，Metal（在 Apple Silicon Mac 和 iOS 上支援）。
 
-- ``vulkan``, Vulkan (supported on all desktop and mobile platforms).
+- ``vulkan``\ ，Vulkan（在所有桌面和移動平台上支援）。
 
-- ``d3d12``, Direct3D 12 (supported on Windows).
+- ``d3d12``\ ，Direct3D 12（在 Windows 上支援）。
 
-\ **Note:** The availability of these options depends on whether the engine was compiled with support for them (determined by SCons options ``vulkan``, ``metal``, and ``d3d12``).
+\ **注意：**\ 這些選項是否可用取決於編譯引擎時是否打開了支援開關（由 SCons 選項 ``vulkan``\ 、\ ``metal`` 和 ``d3d12`` 決定）。
 
-\ **Note:** If a given platform has no registered drivers, it can fall back to the Compatibility renderer (OpenGL 3) if :ref:`rendering/rendering_device/fallback_to_opengl3<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>` is enabled. This fallback happens automatically for the Web platform regardless of that property.
+\ **注意：**\ 如果某個平台沒有注冊的驅動程式，那麼啟用了 :ref:`rendering/rendering_device/fallback_to_opengl3<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>` 的話就可以回退到 Compatibility 渲染器（OpenGL 3）。Web 平台會自動進行這種回退，與該屬性的取值無關。
 
-\ **Note:** The actual rendering driver may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering driver that is used at runtime, use :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>` instead of reading this project setting's value.
+\ **注意：**\ 實際的渲染驅動程式可能會因回退或使用者指定的命令行參數而被引擎自動更改。要取得執行時使用的實際渲染驅動程式，請使用 :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>`\ ，不要讀取該專案設定的值。
 
 .. rst-class:: classref-item-separator
 
@@ -13197,13 +13197,13 @@ Supported values are:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.android** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.android>`
 
-Android override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 Android 的覆蓋項目。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``vulkan``, Vulkan from native drivers.
+- ``vulkan``\ ，使用原生驅動程式的 Vulkan。
 
-\ **Note:** If Vulkan was disabled at compile time, there is no alternative RenderingDevice driver.
+\ **注意：**\ 如果編譯時停用了 Vulkan 則不會有備選的 RenderingDevice 驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -13215,13 +13215,13 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.ios** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.ios>`
 
-iOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 iOS 的覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``metal`` (default), Metal from native drivers.
+- ``metal``\ （預設），使用原生驅動程式的 Metal。
 
-- ``vulkan``, Vulkan over Metal via MoltenVK.
+- ``vulkan``\ ，借助 MoltenVK 實現的基於 Metal 的 Vulkan。
 
 .. rst-class:: classref-item-separator
 
@@ -13233,13 +13233,13 @@ Two options are supported:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.linuxbsd** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.linuxbsd>`
 
-LinuxBSD override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 LinuxBSD 的覆蓋項。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``vulkan``, Vulkan from native drivers.
+- ``vulkan``\ ，使用原生驅動程式的 Vulkan。
 
-\ **Note:** If Vulkan was disabled at compile time, there is no alternative RenderingDevice driver.
+\ **注意：**\ 如果編譯時停用了 Vulkan 則不會有備選的 RenderingDevice 驅動程式。
 
 .. rst-class:: classref-item-separator
 
@@ -13251,13 +13251,13 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.macos** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.macos>`
 
-macOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 macOS 的覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``metal`` (default), Metal from native drivers, only supported on Apple Silicon Macs. On Intel Macs, it will automatically fall back to ``vulkan`` as Metal support is not implemented.
+- ``metal``\ （預設），使用原生驅動程式的 Metal，僅支援 Apple Silicon 裝置。在 Intel 裝置上會自動回退到 ``vulkan``\ ，因為沒有實作對 Metal 的支援。
 
-- ``vulkan``, Vulkan over Metal via MoltenVK, supported on both Apple Silicon and Intel Macs.
+- ``vulkan``\ ，通過 MoltenVK 在 Metal 上使用 Vulkan，支援 Apple Silicon 和 Intel 的裝置。
 
 .. rst-class:: classref-item-separator
 
@@ -13269,11 +13269,11 @@ Two options are supported:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.visionos** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.visionos>`
 
-visionOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 visionOS 的覆蓋項。
 
-Only one option is supported:
+僅支援一個選項：
 
-- ``metal`` (default), Metal from native drivers.
+- ``metal``\ （預設），使用原生驅動程式的 Metal。
 
 .. rst-class:: classref-item-separator
 
@@ -13285,15 +13285,15 @@ Only one option is supported:
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.windows** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.windows>`
 
-Windows override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 針對 Windows 的覆蓋項。
 
-Two options are supported:
+支援兩個選項：
 
-- ``vulkan`` (default), Vulkan from native drivers. If :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` is enabled, this is used as a fallback if Direct3D 12 is not supported.
+- ``vulkan``\ （預設），使用原生驅動程式的 Vulkan。如果啟用了 :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`\ ，則在不支援 Direct3D 12 時將作為回退使用。
 
-- ``d3d12``, Direct3D 12 from native drivers. If :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` is enabled, this is used as a fallback if Vulkan is not supported.
+- ``d3d12``\ ，使用原生驅動程式的 Direct3D 12。如果啟用了 :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`\ ，則在不支援 Vulkan 時將作為回退使用。
 
-\ **Note:** Starting with Godot 4.6, new projects are configured by default to use ``d3d12`` on Windows. Projects created before Godot 4.6 keep ``vulkan`` for compatibility reasons, but it is recommended to switch them manually to ``d3d12``.
+\ **注意：**\ 從 Godot 4.6 開始，新專案預設設定為在 Windows 上使用 ``d3d12``\ 。出於相容性考慮，在 Godot 4.6 之前建立的專案仍然使用 ``vulkan``\ ，但建議手動將其切換到 ``d3d12``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13305,9 +13305,9 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_d3d12** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`
 
-If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is not supported. The fallback is always attempted regardless of this setting if Vulkan driver support was disabled at compile time.
+如果為 ``true``\ ，則 Forward+ 渲染器會在不支援 Vulkan 時回退到 Direct3D 12。如果在編譯時停用了 Vulkan 驅動程式支援則會始終嘗試回退，不考慮該設定。
 
-\ **Note:** This setting is implemented only on Windows.
+\ **注意：**\ 該設定僅在 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -13319,9 +13319,9 @@ If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is no
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_opengl3** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>`
 
-If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Metal, and Vulkan are not supported.
+如果為 ``true``\ ，則 Forward+ 渲染器在不支援 Direct3D 12、Metal、Vulkan 時會回退到 OpenGL 3。
 
-\ **Note:** This setting is implemented on Windows, Android, macOS, iOS, and Linux/X11.
+\ **注意：**\ 該設定在 Windows、Android、macOS、iOS、Linux/X11 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -13333,9 +13333,9 @@ If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Me
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_vulkan** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`
 
-If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on Windows) or Metal (on macOS x86_64) are not supported. The fallback is always attempted regardless of this setting if Direct3D 12 (Windows) or Metal (macOS) driver support was disabled at compile time.
+如果為 ``true``\ ，則 Forward+ 渲染器在不支援 Direct3D 12（在 Windows 上）或 Metal（在 macOS x86_64 上）時會回退到 Vulkan。如果編譯時停用了 Direct3D 12（Windows）或 Metal（macOS）驅動程式支援，則會始終嘗試回退，不考慮該設定。
 
-\ **Note:** This setting is implemented on Windows and macOS.
+\ **注意：**\ 該設定在 Windows 和 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -13347,9 +13347,9 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`bool<class_bool>` **rendering/rendering_device/pipeline_cache/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/pipeline_cache/enable>`
 
-Enable the pipeline cache that is saved to disk if the graphics API supports it.
+如果圖形 API 支援，則啟用儲存到磁碟的管道快取。
 
-\ **Note:** This property is unable to control the pipeline caching the GPU driver itself does. Only turn this off along with deleting the contents of the driver's cache if you wish to simulate the experience a user will get when starting the game for the first time.
+\ **注意：**\ 該屬性無法控制 GPU 驅動程式本身的管道快取。如果希望模擬使用者首次啟動遊戲時的體驗，則只需關閉該功能並刪除驅動程式快取的內容即可。
 
 .. rst-class:: classref-item-separator
 
@@ -13373,9 +13373,9 @@ Enable the pipeline cache that is saved to disk if the graphics API supports it.
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/block_size_kb** = ``256`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>`
 
-The size of a block allocated in the staging buffers. Staging buffers are the intermediate resources the engine uses to upload or download data to the GPU. This setting determines the max amount of data that can be transferred in a copy operation. Increasing this will result in faster data transfers at the cost of extra memory.
+在暫存緩衝區中分配的塊的大小。暫存緩衝區是引擎用於上傳或下載資料到 GPU 的中間資源。該設定決定了在複製操作中可以傳輸的最大資料量。增大該值資料傳輸會變快，但會佔用額外的記憶體。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **注意：**\ 該屬性僅在專案啟動時讀取，目前沒有辦法在執行時更改。
 
 .. rst-class:: classref-item-separator
 
@@ -13387,9 +13387,9 @@ The size of a block allocated in the staging buffers. Staging buffers are the in
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/max_size_mb** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/max_size_mb>`
 
-The maximum amount of memory allowed to be used by staging buffers. If the amount of data being uploaded or downloaded exceeds this amount, the GPU will stall and wait for previous frames to finish.
+暫存緩衝區允許使用的最大記憶體量。如果上傳或下載的資料量超過該限制，GPU 會停滯，等待之前的影格完成。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **注意：**\ 該屬性僅在專案啟動時讀取，目前沒有辦法在執行時更改。
 
 .. rst-class:: classref-item-separator
 
@@ -13401,11 +13401,11 @@ The maximum amount of memory allowed to be used by staging buffers. If the amoun
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_download_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_download_region_size_px>`
 
-The region size in pixels used to download texture data from the GPU when using methods like :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>`.
+使用 :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>` 等方法從 GPU 下載紋理資料時區域的大小，單位為像素。
 
-\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
+\ **注意：**\ 該屬性的上限由 :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` 控制，並且需要考慮是否可以使用請求的格式分配一個具有該區域大小的單個紋理資料塊。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **注意：**\ 該屬性只在專案啟動時讀取，目前無法在執行時修改。
 
 .. rst-class:: classref-item-separator
 
@@ -13417,11 +13417,11 @@ The region size in pixels used to download texture data from the GPU when using 
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_upload_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_upload_region_size_px>`
 
-The region size in pixels used to upload texture data from the GPU when using methods like :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>`.
+使用 :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>` 等方法將紋理資料上傳至 GPU 時區域的大小，單位為像素。
 
-\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
+\ **注意：**\ 該屬性的上限由 :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` 控制，並且需要考慮是否可以使用請求的格式分配一個具有該區域大小的單個紋理資料塊。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **注意：**\ 該屬性只在專案啟動時讀取，目前無法在執行時修改。
 
 .. rst-class:: classref-item-separator
 
@@ -13433,11 +13433,11 @@ The region size in pixels used to upload texture data from the GPU when using me
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/frame_queue_size** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/frame_queue_size>`
 
-The number of frames to track on the CPU side before stalling to wait for the GPU.
+在停止等待 GPU 之前要在 CPU 端追蹤的影格數。
 
-Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
+嘗試使用\ `垂直同步模擬器 <https://darksylinc.github.io/vsync_simulator/>`__\ ，這是一個互動式介面，可以模擬演示，以更好地瞭解不同條件下不同變數的影響。
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。目前無法在執行時更改該值。
 
 .. rst-class:: classref-item-separator
 
@@ -13449,19 +13449,19 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/swapchain_image_count** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/swapchain_image_count>`
 
-The number of images the swapchain will consist of (back buffers + front buffer).
+交換鏈將包含的影像數量（後台緩衝區 + 前台緩衝區）。
 
-\ ``2`` corresponds to double-buffering and ``3`` to triple-buffering.
+\ ``2`` 對應雙緩衝，\ ``3`` 對應三緩衝。
 
-Double-buffering may give you the lowest lag/latency but if V-Sync is on and the system can't render at 60 fps, the framerate will go down in multiples of it (e.g. 30 fps, 15, 7.5, etc.). Triple buffering gives you higher framerate (specially if the system can't reach a constant 60 fps) at the cost of up to 1 frame of latency, with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
+雙緩衝可能會給你帶來最低的滯後/延遲，但如果垂直同步打開並且系統無法以 60 fps 渲染，則影格率將以它的倍數下降（例如 30 fps、15、7.5 等） 。三重緩衝可為你提供更高的影格率（特別是在系統無法達到恆定 60 fps 的情況下），其代價是 :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`\ （FIFO）時最多 1 影格延遲。
 
-Use double-buffering with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Triple-buffering is a must if you plan on using :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` mode.
+將雙緩衝與 :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` 結合使用。如果你計劃使用 :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` 模式，則必須使用三重緩衝。
 
-Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
+嘗試使用\ `垂直同步模擬器 <https://darksylinc.github.io/vsync_simulator/>`__\ ，這是一個互動式介面，可以模擬演示，以更好地瞭解不同條件下不同變數的影響。
 
-\ **Note:** Changes to this setting will only be applied on startup or when the swapchain is recreated (e.g. when setting the V-Sync mode).
+\ **注意：**\ 該設定項的更改僅在啟動時或重新建立交換鏈時生效（例如，設定垂直同步模式時）。
 
-\ **Note:** Some platforms may restrict the actual value.
+\ **注意：**\ 某些平台可能會限制實際值。
 
 .. rst-class:: classref-item-separator
 
@@ -13473,11 +13473,11 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/rendering_device/vulkan/max_descriptors_per_pool** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vulkan/max_descriptors_per_pool>`
 
-The number of descriptors per pool. Godot's Vulkan backend uses linear pools for descriptors that will be created and destroyed within a single frame. Instead of destroying every single descriptor every frame, they all can be destroyed at once by resetting the pool they belong to.
+每個池的描述符數量。Godot 的 Vulkan 後端針對在同一影格中建立並銷毀的描述符使用的是線性池。每影格中並不會對描述符進行逐一銷毀，而是會通過重設描述符所屬的池來統一銷毀。
 
-A larger number is more efficient up to a limit, after that it will only waste RAM (maximum efficiency is achieved when there is no more than 1 pool per frame). A small number could end up with one pool per descriptor, which negatively impacts performance.
+並不是值越大效率越高，超出閾值後只會浪費記憶體（一影格最多只有一個池最高效）。數值低到極致就是一個描述符一個池，會對效能產生負面影響。
 
-\ **Note:** Changing this property requires a restart to take effect.
+\ **注意：**\ 修改該屬性後需要重啓才能生效。
 
 .. rst-class:: classref-item-separator
 
@@ -13489,7 +13489,7 @@ A larger number is more efficient up to a limit, after that it will only waste R
 
 :ref:`float<class_float>` **rendering/scaling_3d/fsr_sharpness** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>`
 
-決定使用 FSR 放大模式時放大圖像的清晰度。每個整數的銳度減半。值從 0.0（最銳利）到 2.0。高於 2.0 的值不會產生明顯的差異。
+決定使用 FSR 放大模式時放大影像的清晰度。每個整數的銳度減半。值從 0.0（最銳利）到 2.0。高於 2.0 的值不會產生明顯的差異。
 
 .. rst-class:: classref-item-separator
 
@@ -13501,9 +13501,9 @@ A larger number is more efficient up to a limit, after that it will only waste R
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode>`
 
-設定縮放 3D 模式。雙線性縮放以不同的解析度算繪，以對視口進行欠取樣或超取樣。FidelityFX 超解析度（FidelityFX Super Resolution） 1.0，縮寫為 FSR，是一種放大技術，可通過使用一種空間感知放大演算法，以快速畫面播放速率生成高品質圖像。FSR 比雙線性稍微貴一點，但它產生的圖像品質明顯更高。在特別低端的 GPU 上，FSR 的性價比過低（與使用具有一個稍高解析度縮放以配對性能的雙線性縮放相比）。
+設定縮放 3D 模式。雙線性縮放以不同的解析度渲染，以對視埠進行欠取樣或超取樣。FidelityFX 超解析度（FidelityFX Super Resolution） 1.0，縮寫為 FSR，是一種放大技術，可通過使用一種空間感知放大演算法，以快速畫面播放速率生成高品質影像。FSR 比雙線性稍微貴一點，但它產生的影像品質明顯更高。在特別低端的 GPU 上，FSR 的性價比過低（與使用具有一個稍高解析度縮放以配對效能的雙線性縮放相比）。
 
-\ **注意：**\ FSR 只在使用 Forward+ 算繪方式時有效，對 Mobile 或 Compatibility 無效。如果使用不相容的算繪方法，FSR 將退回到雙線性縮放。
+\ **注意：**\ FSR 只在使用 Forward+ 渲染方式時有效，對 Mobile 或 Compatibility 無效。如果使用不相容的渲染方法，FSR 將退回到雙線性縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -13515,7 +13515,7 @@ A larger number is more efficient up to a limit, after that it will only waste R
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode.ios** :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode.ios>`
 
-iOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`. This allows selecting the MetalFX spatial and MetalFX temporal scaling modes, which are exclusive to platforms where the Metal rendering driver is used.
+:ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 針對 iOS 的覆蓋項。允許選擇 MetalFX 空間縮放和 MetalFX 時間縮放模式，這些模式僅適用於使用 Metal 渲染驅動程式的平台。
 
 .. rst-class:: classref-item-separator
 
@@ -13527,7 +13527,7 @@ iOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode.macos** :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode.macos>`
 
-macOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`. This allows selecting the MetalFX spatial and MetalFX temporal scaling modes, which are exclusive to platforms where the Metal rendering driver is used.
+:ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 針對 macOS 的覆蓋項。允許選擇 MetalFX 空間縮放和 MetalFX 時間縮放模式，這些模式僅適用於使用 Metal 渲染驅動程式的平台。
 
 .. rst-class:: classref-item-separator
 
@@ -13539,9 +13539,9 @@ macOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_propert
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+根據視埠大小來縮放 3D 渲染緩衝區，並使用在 :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 中指定的影像濾鏡，將輸出影像縮放回完整的視埠大小。數值小於 ``1.0`` 時，可以通過降低畫質（欠取樣）來加快 3D 渲染速度。數值大於 ``1.0`` 時，僅在雙線性（bilinear）模式下有效，可以通過犧牲大量效能來提升 3D 渲染畫質（超取樣）。如果你只是想平滑多邊形的邊緣，也可以參考 :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` 來使用多重取樣反鋸齒，它的效能開銷要小得多。
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **注意：** 當使用 **最近鄰（Nearest）** 縮放模式時，為了避免出現像素大小不均的現象，強烈建議將數值設定為 ``1`` 的整數分之一。例如，最好使用 ``0.5`` (1/2)、\ ``0.3333`` (1/3)、\ ``0.25`` (1/4)、\ ``0.2`` (1/5) 等比例。
 
 .. rst-class:: classref-item-separator
 
@@ -13633,7 +13633,7 @@ Scales the 3D render buffer based on the viewport size uses an image filter spec
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_lambert_over_burley.mobile** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley.mobile>`
 
-由於性能問題或驅動程式支援，移動裝置上用於 :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` 的低端覆蓋。
+由於效能問題或驅動程式支援，移動裝置上用於 :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` 的低端覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -13645,7 +13645,7 @@ Scales the 3D render buffer based on the viewport size uses an image filter spec
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_vertex_shading** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_vertex_shading>`
 
-If ``true``, forces vertex shading for all rendering. This can increase performance a lot, but also reduces quality immensely. Can be used to optimize performance on low-end mobile devices.
+如果為 ``true``\ ，為所有渲染強制頂點著色。這可以大大提高效能，但也會極大地降低品質。可用於最佳化低端行動裝置的效能。
 
 .. rst-class:: classref-item-separator
 
@@ -13657,7 +13657,7 @@ If ``true``, forces vertex shading for all rendering. This can increase performa
 
 :ref:`int<class_int>` **rendering/textures/basis_universal/rdo_dict_size** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/rdo_dict_size>`
 
-The dictionary size for Rate-Distortion Optimization (RDO) when importing textures as Basis Universal and when RDO is enabled, ranging from ``64`` to ``65536``. Higher values reduce the file sizes further, but make encoding times significantly longer.
+率-失真最佳化（Rate-Distortion Optimization、RDO）的字典大小，將紋理匯入為 Basis Universal 且啟用 RDO 時使用，範圍為 ``64`` 到 ``65536`` 之間。值越高，檔案大小減小得越多，但會顯著增加編碼時間。
 
 .. rst-class:: classref-item-separator
 
@@ -13669,9 +13669,9 @@ The dictionary size for Rate-Distortion Optimization (RDO) when importing textur
 
 :ref:`bool<class_bool>` **rendering/textures/basis_universal/zstd_supercompression** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression>`
 
-If ``true``, enables Zstandard supercompression to reduce file size when importing textures as Basis Universal.
+如果為 ``true``\ ，則會啟用 Zstandard 超壓縮，在以 Basis Universal 形式匯入紋理時減小檔案大小。
 
-\ **Note:** Basis Universal textures need to be compressed to gain the benefit of smaller file sizes, otherwise they are as large as VRAM-compressed textures.
+\ **注意：**\ Basis Universal 紋理需要壓縮才能利用更小的檔案尺寸，否則和 VRAM 壓縮紋理一樣大。
 
 .. rst-class:: classref-item-separator
 
@@ -13683,7 +13683,7 @@ If ``true``, enables Zstandard supercompression to reduce file size when importi
 
 :ref:`int<class_int>` **rendering/textures/basis_universal/zstd_supercompression_level** = ``6`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression_level>`
 
-Specify the compression level for Basis Universal Zstandard supercompression, ranging from ``1`` to ``22``.
+指定 Basis Universal Zstandard 超壓縮的壓縮層級，範圍從 ``1`` 到 ``22``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13695,9 +13695,9 @@ Specify the compression level for Basis Universal Zstandard supercompression, ra
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_filter>`
 
-The default texture filtering mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
+:ref:`CanvasItem<class_CanvasItem>` 內建紋理所使用的預設紋理過濾模式。在著色器中可以通過 ``TEXTURE`` 存取該紋理。
 
-\ **Note:** For pixel art aesthetics, see also :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` and :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
+\ **注意：**\ 製作像素風遊戲時另見 :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` 和 :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13709,7 +13709,7 @@ The default texture filtering mode to use for :ref:`CanvasItem<class_CanvasItem>
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_repeat** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_repeat>`
 
-The default texture repeating mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
+:ref:`CanvasItem<class_CanvasItem>` 內建紋理所使用的預設紋理重複模式。在著色器中可以通過 ``TEXTURE`` 存取該紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -13733,15 +13733,15 @@ The default texture repeating mode to use for :ref:`CanvasItem<class_CanvasItem>
 
 :ref:`int<class_int>` **rendering/textures/default_filters/anisotropic_filtering_level** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`
 
-Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
+設定在紋理上使用各向異性過濾時要採用的最大樣本數（作為 2 的冪）。更高的取樣數將導致傾斜角度的紋理更清晰，但計算成本更高。\ ``0`` 的值會強制停用各向異性過濾，即使在啟用它的材質上也是如此。
 
-The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+如果貼花和投影器被設定為使用各向異性過濾，則各向異性過濾層級也會影響它們。請參閱 :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`\ 。
 
-\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
+\ **注意：**\ 要使該設定在 3D 中生效，請在材質上將 :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` 設定為 :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。
 
-\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
+\ **注意：**\ 要使該設定在 2D 中生效，請在顯示紋理的 :ref:`CanvasItem<class_CanvasItem>` 節點上（或 :ref:`CanvasTexture<class_CanvasTexture>` 中）將 :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` 設定為 :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。然而各向異性過濾在 2D 中並不實用，因此在 2D 中只有在它產生有意義的視覺差異時才對紋理啟用它。
 
-\ **Note:** This property is only read when the project starts. To change the anisotropic filtering level at runtime, set :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時更改各向異性過濾層級，請在根 :ref:`Viewport<class_Viewport>` 上設定 :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13753,13 +13753,13 @@ The anisotropic filtering level also affects decals and light projectors if they
 
 :ref:`float<class_float>` **rendering/textures/default_filters/texture_mipmap_bias** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+通過從更低或更高的 Mipmap 層級（也稱為“紋理 LOD 偏差”）讀取資料，來影響最終紋理的銳利度。負數值會讓帶有 Mipmap 的紋理看起來更銳利，但在遠距離觀察時會出現更多顆粒感；正數值則會讓紋理變得更模糊（即使在近距離觀察時也是如此）。
 
-Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+啟用時間性反鋸齒（\ :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ ）會自動給該數值應用 ``-0.5`` 的偏移量；而啟用 FXAA（\ :ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ）會自動應用 ``-0.25`` 的偏移量。如果同時啟用 TAA 和 FXAA，則會應用 ``-0.75`` 的偏移量。
 
-\ **Note:** If :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` is lower than ``1.0`` (exclusive), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **注意：** 如果 :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>`\ （3D渲染縮放比例）低於 ``1.0``\ （不包含1.0），\ :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` 會被用來調整引擎根據縮放比例在內部自動計算出的 Mipmap 偏差值。具體的計算公式為：\ ``log2(scaling_3d_scale) + mipmap_bias``\ 。
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **注意：** 此屬性僅在 Forward+ 和 Mobile 渲染器中受支援，Compatibility（相容）渲染器不支援。在 Compatibility 渲染器下，此屬性始終會被視為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13771,7 +13771,7 @@ Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<cl
 
 :ref:`bool<class_bool>` **rendering/textures/default_filters/use_nearest_mipmap_filter** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>`
 
-如果為 ``true``\ ，則在使用 mipmap 時使用最近鄰 mipmap 篩選（也稱為“雙線性篩選”），這將導致在 mipmap 階段之間出現可見的接縫。因為使用的記憶體頻寬更少，這可能會提高移動裝置的性能。如果為 ``false``\ ，則使用線性 mipmap 篩選（也稱為“三線性篩選”）。
+如果為 ``true``\ ，則在使用 mipmap 時使用最近鄰 mipmap 篩選（也稱為“雙線性篩選”），這將導致在 mipmap 階段之間出現可見的接縫。因為使用的記憶體頻寬更少，這可能會提高移動裝置的效能。如果為 ``false``\ ，則使用線性 mipmap 篩選（也稱為“三線性篩選”）。
 
 \ **注意：**\ 只有在專案啟動時該屬性才會被讀取。目前無法在運作時更改該設定。
 
@@ -13809,7 +13809,7 @@ Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<cl
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/cache_gpu_compressor>`
 
-If ``true``, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), making subsequent imports faster at the cost of increased memory usage.
+如果為 ``true``\ ，則 GPU 紋理壓縮器會快取本機 RenderingDevice 及其資源（著色器和管道），從而加快後續匯入速度，但會增加記憶體使用量。
 
 .. rst-class:: classref-item-separator
 
@@ -13821,11 +13821,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/compress_with_gpu** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/compress_with_gpu>`
 
-If ``true``, the texture importer will utilize the GPU for compressing textures, improving the import time of large images.
+如果為 ``true``\ ，則紋理匯入器會利用 GPU 來壓縮紋理，提高大影像的匯入時間。
 
-\ **Note:** This only functions on a device which supports either Vulkan, Direct3D 12, or Metal as a rendering driver.
+\ **注意：**\ 僅在支援 Vulkan、Direct3D 12 或 Metal 作為渲染驅動的裝置上有效。
 
-\ **Note:** Currently this only affects certain compressed formats (BC1, BC3, BC4, BC5, and BC6), all of which are exclusive to desktop platforms and consoles.
+\ **注意：**\ 目前僅影響部分壓縮格式（BC1、BC3、BC4、BC5 和 BC6），這些格式均專屬於桌面平台和遊戲主機。
 
 .. rst-class:: classref-item-separator
 
@@ -13837,11 +13837,11 @@ If ``true``, the texture importer will utilize the GPU for compressing textures,
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/import_etc2_astc** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/import_etc2_astc>`
 
-If ``true``, the texture importer will import VRAM-compressed textures using the Ericsson Texture Compression 2 algorithm for lower quality textures and normal maps and Adaptable Scalable Texture Compression algorithm for high quality textures (in 4×4 block size).
+如果為 ``true``\ ，則紋理匯入器，將使用 Ericsson 紋理壓縮 2 算法匯入 VRAM 壓縮紋理以取得較低品質的紋理和法線貼圖，並使用自適應可縮放紋理壓縮算法匯入高品質紋理（4×4 塊大小）。
 
-\ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
+\ **注意：**\ 這是設定覆蓋項。即便設為 ``false``\ ，紋理匯入器也始終會匯入宿主平台所需的格式。
 
-\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
+\ **注意：**\ 更改該設定\ *不會*\ 影響之前已經匯入的紋理。要使該設定套用至已匯入的紋理，請退出編輯器，移除位於專案資料夾內的 ``.godot/imported/`` 資料夾，然後重新啟動編輯器（請參閱 :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -13893,11 +13893,11 @@ WebP 的預設壓縮方法。影響有損和無損 WebP。較高的值會以壓�
 
 :ref:`bool<class_bool>` **rendering/viewport/hdr_2d** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/hdr_2d>`
 
-If ``true``, enables :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root Viewport. 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen.
+如果為 ``true``\ ，則在根 Viewport 上啟用 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ 。2D 渲染將使用高動態範圍（HDR）\ ``RGBA16`` 格式的影格緩衝區。此外，2D 渲染將線上性值下進行，並在位塊傳輸到螢幕之前立即使用適當的傳輸函式進行轉換。
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+實際上，這意味著 Viewport 的最終結果不會被限制在 ``0-1`` 範圍內，無需調整顏色編碼即可在 3D 渲染中使用。這使得 2D 渲染能夠利用需要高動態範圍的效果（例如 2D 輝光），並顯著改善需要高度詳細漸變的效果的外觀。
 
-\ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root :ref:`Viewport<class_Viewport>`.
+\ **注意：**\ 該屬性僅在專案啟動時讀取。要在執行時開關 HDR 2D，請在根 :ref:`Viewport<class_Viewport>` 上設定 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13909,7 +13909,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`bool<class_bool>` **rendering/viewport/transparent_background** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/transparent_background>`
 
-如果為 ``true`` ，則在根視口上啟用 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 。這樣在同時啟用 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 之後，逐圖元透明就會生效。
+如果為 ``true`` ，則在根視埠上啟用 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 。這樣在同時啟用 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 之後，逐圖元透明就會生效。
 
 .. rst-class:: classref-item-separator
 
@@ -13921,7 +13921,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`int<class_int>` **rendering/vrs/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/vrs/mode>`
 
-為主視口設定預設的可變速率著色（VRS）模式。請參閱 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 以在運作時更改該設定，並參閱 :ref:`VRSMode<enum_Viewport_VRSMode>` 以獲取可能的值。
+為主視埠設定預設的可變速率著色（VRS）模式。請參閱 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 以在運作時更改該設定，並參閱 :ref:`VRSMode<enum_Viewport_VRSMode>` 以取得可能的值。
 
 .. rst-class:: classref-item-separator
 
@@ -13933,9 +13933,9 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`String<class_String>` **rendering/vrs/texture** = ``""`` :ref:`🔗<class_ProjectSettings_property_rendering/vrs/texture>`
 
-If :ref:`rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>` is set to **Texture**, this is the path to default texture loaded as the VRS image.
+如果 :ref:`rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>` 為 **Texture**\ ，則這是 VRS 影像所載入的預設紋理的路徑。
 
-The texture *must* use a lossless compression format so that colors can be matched precisely. The following VRS densities are mapped to various colors, with brighter colors representing a lower level of shading precision:
+該紋理\ *必須*\ 使用無損壓縮格式，以便可以精確匹配顏色。以下 VRS 密度會映射為各種顏色，較亮的顏色代表較低的著色精度。
 
 .. code:: text
 
@@ -13946,9 +13946,9 @@ The texture *must* use a lossless compression format so that colors can be match
     - 2×4 = rgb(85, 170, 0)  - #55aa00
     - 4×2 = rgb(170, 85, 0)  - #aa5500
     - 4×4 = rgb(170, 170, 0) - #aaaa00
-    - 4×8 = rgb(170, 255, 0) - #aaff00 - Not supported on most hardware
-    - 8×4 = rgb(255, 170, 0) - #ffaa00 - Not supported on most hardware
-    - 8×8 = rgb(255, 255, 0) - #ffff00 - Not supported on most hardware
+    - 4×8 = rgb(170, 255, 0) - #aaff00 - 大多數硬體不支援
+    - 8×4 = rgb(255, 170, 0) - #ffaa00 - 大多數硬體不支援
+    - 8×8 = rgb(255, 255, 0) - #ffff00 - 大多數硬體不支援
 
 .. rst-class:: classref-item-separator
 
@@ -13960,7 +13960,7 @@ The texture *must* use a lossless compression format so that colors can be match
 
 :ref:`float<class_float>` **threading/worker_pool/low_priority_thread_ratio** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/low_priority_thread_ratio>`
 
-The ratio of :ref:`WorkerThreadPool<class_WorkerThreadPool>`'s threads that will be reserved for low-priority tasks. For example, if 10 threads are available and this value is set to ``0.3``, 3 of the worker threads will be reserved for low-priority tasks. The actual value won't exceed the number of CPU cores minus one, and if possible, at least one worker thread will be dedicated to low-priority tasks.
+為低優先級任務保留的 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 執行緒的比例。例如總共有 10 個執行緒，而這個值是 ``0.3``\ ，那麼就會為低優先級任務保留 3 個工作執行緒。實際的取值不會超過 CPU 核心數減一，如果可能，至少會有一個專門用於低優先級任務的執行緒。
 
 .. rst-class:: classref-item-separator
 
@@ -13972,7 +13972,7 @@ The ratio of :ref:`WorkerThreadPool<class_WorkerThreadPool>`'s threads that will
 
 :ref:`int<class_int>` **threading/worker_pool/max_threads** = ``-1`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/max_threads>`
 
-Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThreadPool>`. On Web, a value of ``-1`` means ``1``. On other platforms, it means all *logical* CPU cores available (see :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
+:ref:`WorkerThreadPool<class_WorkerThreadPool>` 所使用的最大執行緒數。在 Web 平台上，值為 ``-1`` 表示 ``1``\ 。在其他平台上，表示所有可用的\ *邏輯* CPU 內核（見 :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -13984,7 +13984,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/binding_modifiers/analog_threshold** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/binding_modifiers/analog_threshold>`
 
-If ``true``, enables the analog threshold binding modifier if supported by the XR runtime.
+如果為 ``true``\ ，則會在 XR 執行時支援時啟用模擬閾值綁定修改器。
 
 .. rst-class:: classref-item-separator
 
@@ -13996,7 +13996,7 @@ If ``true``, enables the analog threshold binding modifier if supported by the X
 
 :ref:`bool<class_bool>` **xr/openxr/binding_modifiers/dpad_binding** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/binding_modifiers/dpad_binding>`
 
-If ``true``, enables the D-pad binding modifier if supported by the XR runtime.
+如果為 ``true``\ ，則會在 XR 執行時支援時啟用十字鍵綁定修改器。
 
 .. rst-class:: classref-item-separator
 
@@ -14020,7 +14020,7 @@ If ``true``, enables the D-pad binding modifier if supported by the XR runtime.
 
 :ref:`bool<class_bool>` **xr/openxr/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/enabled>`
 
-If ``true``, Godot will setup and initialize OpenXR on startup.
+如果為 ``true``\ ，Godot 將在啟動時設定並初始化 OpenXR。
 
 .. rst-class:: classref-item-separator
 
@@ -14044,7 +14044,7 @@ If ``true``, Godot will setup and initialize OpenXR on startup.
 
 :ref:`int<class_int>` **xr/openxr/extensions/debug_message_types** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/debug_message_types>`
 
-Specifies the message types for which we request debug messages. Requires :ref:`xr/openxr/extensions/debug_utils<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>` to be set and the extension to be supported by the XR runtime.
+指定請求除錯訊息的訊息型別。要求設定 :ref:`xr/openxr/extensions/debug_utils<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>` 並且 XR 執行時支援該擴充。
 
 .. rst-class:: classref-item-separator
 
@@ -14056,7 +14056,7 @@ Specifies the message types for which we request debug messages. Requires :ref:`
 
 :ref:`int<class_int>` **xr/openxr/extensions/debug_utils** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>`
 
-Enables debug utilities on XR runtimes that supports the debug utils extension. Sets the maximum severity being reported (0 = disabled, 1 = error, 2 = warning, 3 = info, 4 = verbose).
+啟用支援除錯工具擴充的 XR 執行時的除錯工具。設定報告的最大嚴重性（0 = 停用、1 = 錯誤、2 = 警告、3 = 資訊、4 = 冗長）。
 
 .. rst-class:: classref-item-separator
 
@@ -14068,7 +14068,7 @@ Enables debug utilities on XR runtimes that supports the debug utils extension. 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/eye_gaze_interaction** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/eye_gaze_interaction>`
 
-Specify whether to enable eye tracking for this project. Depending on the platform, additional export configuration may be needed.
+指定是否為該專案啟用眼動追蹤。根據平台的不同，可能需要額外的匯出設定。
 
 .. rst-class:: classref-item-separator
 
@@ -14080,9 +14080,9 @@ Specify whether to enable eye tracking for this project. Depending on the platfo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/frame_synthesis** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/frame_synthesis>`
 
-If ``true`` the frame synthesis extension will be activated if supported by the platform.
+如果為 ``true``\ ，則如果平台支援，影格合成擴充功能將被啟用。
 
-\ **Note:** This feature should not be enabled in conjunction with Application Space Warp, if supported this replaces ASW.
+\ **注意：**\ 該功能不應與應用程式空間扭曲（Application Space Warp）同時啟用；如果支援，該功能將取代 ASW。
 
 .. rst-class:: classref-item-separator
 
@@ -14094,7 +14094,7 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_interaction_profile** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_interaction_profile>`
 
-If ``true`` the hand interaction profile extension will be activated if supported by the platform.
+如果為 ``true``\ ，平台支援時會啟用手部互動設定擴充。
 
 .. rst-class:: classref-item-separator
 
@@ -14106,9 +14106,9 @@ If ``true`` the hand interaction profile extension will be activated if supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>`
 
-If ``true``, the hand tracking extension is enabled if available.
+如果為 ``true``\ ，則手部追蹤擴充可用時會將其啟用。
 
-\ **Note:** By default hand tracking will only work for data sources chosen by the XR runtime. For SteamVR this is the controller inferred data source, for most other runtimes this is the unobstructed data source. There is no way to query this. If a runtime supports the OpenXR data source extension you can use the :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` and/or :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` to indicate you wish to enable these data sources. If neither is selected the data source extension is not enabled and the XR runtimes default behavior persists.
+\ **注意：**\ 預設情況下，只有 XR 執行時選擇的資料源才能用於手部追蹤。SteamVR 中為控制器推測的資料源，大多數其他執行時為暢通資料源。無法對此進行查詢。如果執行時支援 OpenXR 資料源擴充，就可以使用 :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` 和/或 :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` 表示你希望啟用這些資料源。如果兩者均未選中則不會啟用資料源擴充，XR 執行時會繼續使用預設行為。
 
 .. rst-class:: classref-item-separator
 
@@ -14120,9 +14120,9 @@ If ``true``, the hand tracking extension is enabled if available.
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_controller_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>`
 
-If ``true``, support for the controller inferred data source is requested. If supported, you will receive hand tracking data even if the user has a controller in hand, with finger positions automatically inferred from controller input and/or sensors.
+如果為 ``true``\ ，則會請求支援控制器推測的資料源。如果支援，即便使用者手中持握控制器也能夠接收到手部追蹤資料，手指的位置是根據控制器的輸入和/或傳感器自動推測的。
 
-\ **Note:** This requires the OpenXR data source extension and controller inferred handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
+\ **注意：**\ 需要 XR 執行時支援 OpenXR 資料源擴充和控制器推測手部追蹤。如果不支援就會忽略該設定項。必須啟用 :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` 才會使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14134,9 +14134,9 @@ If ``true``, support for the controller inferred data source is requested. If su
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_unobstructed_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>`
 
-If ``true``, support for the unobstructed data source is requested. If supported, you will receive hand tracking data based on the actual finger positions of the user often determined by optical tracking.
+如果為 ``true``\ ，則會請求暢通資料源。如果支援，你就會接收到基於使用者實際手指位置的手部追蹤資料，這些位置通常通過光學追蹤來確定。
 
-\ **Note:** This requires the OpenXR data source extension and unobstructed handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
+\ **注意：**\ 需要 XR 執行時支援 OpenXR 資料源擴充和暢通手部追蹤。如果不支援就會忽略該設定項。必須啟用 :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` 才會使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14148,9 +14148,9 @@ If ``true``, support for the unobstructed data source is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/render_model** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/render_model>`
 
-If ``true`` we enable the render model extension if available.
+如果為 ``true``\ ，則在渲染模型擴充可用時啟用該擴充。
 
-\ **Note:** This relates to the core OpenXR render model extension and has no relation to any vendor render model extensions.
+\ **注意：**\ 與核心 OpenXR 渲染模型擴充相關，與供應商渲染模型擴充無關。
 
 .. rst-class:: classref-item-separator
 
@@ -14162,7 +14162,7 @@ If ``true`` we enable the render model extension if available.
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/april_tag_dict** = ``"3"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/april_tag_dict>`
 
-The April Tag marker types the built-in marker tracking is set to recognize (if April Tag marker tracking is available and enabled).
+April Tag 標記型別，內建標記追蹤被設定以識別（如果 April Tag 標記追蹤可用且已啟用）。
 
 .. rst-class:: classref-item-separator
 
@@ -14174,7 +14174,7 @@ The April Tag marker types the built-in marker tracking is set to recognize (if 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/aruco_dict** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/aruco_dict>`
 
-The ArUco marker types the built-in marker tracking is set to recognize (if ArUco marker tracking is available and enabled).
+ArUco 標記型別，內建標記追蹤被設定以識別（如果 ArUco 標記追蹤可用且已啟用）。
 
 .. rst-class:: classref-item-separator
 
@@ -14186,9 +14186,9 @@ The ArUco marker types the built-in marker tracking is set to recognize (if ArUc
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`
 
-If ``true``, we enable the built-in logic for handling anchors. Godot will query (persistent) anchors and manage :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` instances for you. If disabled you'll need to create your own spatial and persistence context and perform your own discovery queries.
+如果為 ``true``\ ，則啟用用於處理錨點的內建邏輯。Godot 將查詢（持久化）錨點並管理 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` 實例。如果停用，則需要建立自己的空間和持久化情境，並執行自己的發現查詢。
 
-\ **Note:** This functionality requires that spatial anchors are supported and enabled.
+\ **注意：**\ 該功能要求支援並啟用空間錨點。
 
 .. rst-class:: classref-item-separator
 
@@ -14200,9 +14200,9 @@ If ``true``, we enable the built-in logic for handling anchors. Godot will query
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking>`
 
-If ``true``, we enable the built-in logic for handling marker tracking. Godot will query markers and manage :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+如果為 ``true``\ ，則啟用用於處理標記追蹤的內建邏輯。Godot 將查詢標記並管理 :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` 實例。如果停用，則需要建立自己的空間情境並執行自己的發現查詢。
 
-\ **Note:** This functionality requires that marker tracking is supported and enabled.
+\ **注意：**\ 該功能需要標記追蹤功能得到支援並已啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -14214,9 +14214,9 @@ If ``true``, we enable the built-in logic for handling marker tracking. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection>`
 
-If ``true``, we enable the built-in logic for handling plane detection. Godot will query detected planes (walls, floors, ceilings, etc.) and manage :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+如果為 ``true``\ ，則啟用用於處理平面檢測的內建邏輯。Godot 將查詢檢測到的平面（牆壁、地板、天花板等）並管理 :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` 實例。如果停用，則需要建立自己的空間情境並執行自己的發現查詢。
 
-\ **Note:** This functionality requires that plane tracking is supported and enabled.
+\ **注意：**\ 該功能需要平面追蹤功能得到支援且已啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -14228,9 +14228,9 @@ If ``true``, we enable the built-in logic for handling plane detection. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-If ``true``, support for the marker tracking extension is requested. If supported, you will be able to query information about markers detected by the XR runtime, e.g. QR codes, aruca markers and april tags.
+如果為 ``true``\ ，則請求支援標記追蹤擴充。如果支援，則將能夠查詢 XR 執行時檢測到的標記資訊，例如二維碼、Aruco 標記和 AprilTag 標記。
 
-\ **Note:** This requires that the OpenXR spatial entities and marker tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 這要求 XR 執行時支援 OpenXR 空間實體和標記追蹤擴充。如果不支援，則該設定項將被忽略。必須啟用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14242,9 +14242,9 @@ If ``true``, support for the marker tracking extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_persistent_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_persistent_anchors>`
 
-If ``true``, support for the persistent anchors extension is requested. If supported, you will be able to store spatial anchors and they will be restored on application startup.
+如果為 ``true``\ ，則請求支援持久錨點擴充。如果支援，則將能夠儲存空間錨點，並且它們將在應用程式啟動時恢復。
 
-\ **Note:** This requires that the OpenXR spatial entities, spatial anchors, and spatial persistence extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` and :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` must be enabled for this setting to be used.
+\ **注意：**\ 這要求 XR 執行時支援 OpenXR 空間實體、空間錨點和空間持久性擴充。如果不支援，則該設定項將被忽略。必須啟用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 和 :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` 才能使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14256,9 +14256,9 @@ If ``true``, support for the persistent anchors extension is requested. If suppo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_plane_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_plane_tracking>`
 
-If ``true``, support for the plane tracking extension is requested. If supported, you will be able to query information about planes detected by the XR runtime, e.g. walls, floors, etc.
+如果為 ``true``\ ，則請求支援平面追蹤擴充。如果支援，則將能夠查詢 XR 執行時檢測到的平面資訊，例如牆壁、地板等。
 
-\ **Note:** This requires that the OpenXR spatial entities and plane tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 這要求 XR 執行時支援 OpenXR 空間實體和平面追蹤擴充。如果不支援，則該設定項將被忽略。必須啟用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14270,9 +14270,9 @@ If ``true``, support for the plane tracking extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_spatial_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`
 
-If ``true``, support for the spatial anchors extension is requested. If supported, you will be able to register anchor locations in the real world that the XR runtime will adjust as needed and/or potentially share with other headsets.
+如果為 ``true``\ ，則請求支援空間錨點擴充。如果支援，則將能夠在現實世界中注冊錨點位置，XR 執行時會根據需要調整這些位置，並/或可能與其他頭顯裝置共享這些位置。
 
-\ **Note:** This requires that the OpenXR spatial entities and spatial anchors extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 這要求 XR 執行時支援 OpenXR 空間實體和空間錨點擴充。如果不支援，則該設定項將被忽略。必須啟用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用該設定項。
 
 .. rst-class:: classref-item-separator
 
@@ -14284,9 +14284,9 @@ If ``true``, support for the spatial anchors extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`
 
-If ``true``, support for the spatial entity extension is requested. If supported, you will be able to access spatial information about the real environment around you. What information is available is dependent on additional extensions.
+如果為 ``true``\ ，則請求支援空間實體擴充。如果支援，則將能夠存取周圍真實環境的空間資訊。具體可用的資訊取決於其他擴充。
 
-\ **Note:** This requires that the OpenXR spatial entities extension is supported by the XR runtime. If not supported this setting will be ignored.
+\ **注意：**\ 這要求 XR 執行時支援 OpenXR 空間實體擴充。如果不支援，則該設定項將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -14298,7 +14298,7 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/user_presence** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/user_presence>`
 
-If ``true``, the user presence extension is enabled if available.
+如果設為 ``true``\ ，且使用者線上狀態擴充功能可用的話，就會啟用它。
 
 .. rst-class:: classref-item-separator
 
@@ -14322,7 +14322,7 @@ If ``true``, the user presence extension is enabled if available.
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_dynamic** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_dynamic>`
 
-If ``true`` and foveation is supported, will automatically adjust foveation level based on framerate up to the level set on :ref:`xr/openxr/foveation_level<class_ProjectSettings_property_xr/openxr/foveation_level>`.
+如果為 ``true`` 並且支援注視點，將根據影格速率自動調整注視點層級，直至達到 :ref:`xr/openxr/foveation_level<class_ProjectSettings_property_xr/openxr/foveation_level>` 上設定的層級。
 
 .. rst-class:: classref-item-separator
 
@@ -14334,7 +14334,7 @@ If ``true`` and foveation is supported, will automatically adjust foveation leve
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_eye_tracked** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_eye_tracked>`
 
-If ``true`` and foveation level is set to anything other than "Disabled", eye-tracked foveation will be used, so long as it's supported by the headset.
+如果為 ``true`` 且注視點層級被設定為“已停用”以外的任何值，只要頭顯裝置支援，就會使用眼動追蹤注視點渲染（eye-tracked foveation）。
 
 .. rst-class:: classref-item-separator
 
@@ -14346,9 +14346,9 @@ If ``true`` and foveation level is set to anything other than "Disabled", eye-tr
 
 :ref:`int<class_int>` **xr/openxr/foveation_level** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_level>`
 
-Applied foveation level if supported.
+支援時應用的注視點層級。
 
-\ **Note:** On platforms other than Android, if :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` is enabled, this feature will be disabled.
+\ **注意：**\ 在 Android 以外的平台上，如果啟用了 :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`\ ，則該功能將被停用。
 
 .. rst-class:: classref-item-separator
 
@@ -14360,9 +14360,9 @@ Applied foveation level if supported.
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_with_subsampled_images** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_with_subsampled_images>`
 
-If ``true`` and foveation is also enabled, subsampled images will be used on Vulkan. This can improve the performance gain from foveated rendering, especially when using high foveation levels.
+如果為 ``true`` 且同時啟用了注視點渲染（foveation），Vulkan 將會使用下取樣影像（subsampled images）。這可以提高注視點渲染帶來的效能增益，尤其是在使用高注視點層級時。
 
-\ **Note:**: Using subsampled images is incompatible with many screen-space rendering features or post-processing effects like FXAA or glow. If any such effects are enabled, subsampled images will automatically be disabled and a warning shown in the log.
+\ **注意：** 使用下取樣影像與許多螢幕空間渲染功能或後期處理效果（如 FXAA 或輝光）不相容。如果啟用了任何此類效果，下取樣影像將自動被停用，並且記錄中會顯示警告。
 
 .. rst-class:: classref-item-separator
 
@@ -14398,7 +14398,7 @@ If ``true`` and foveation is also enabled, subsampled images will be used on Vul
 
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
-如果為 ``true``\ ，則 OpenXR 會管理深度緩衝區，使用深度緩衝區進行高級再投影，前提是 XR 運作時支援。請注意，Godot 中的部分算繪功能無法與該功能一同使用。
+如果為 ``true``\ ，則 OpenXR 會管理深度緩衝區，使用深度緩衝區進行進階再投影，前提是 XR 運作時支援。請注意，Godot 中的部分渲染功能無法與該功能一同使用。
 
 .. rst-class:: classref-item-separator
 
@@ -14410,7 +14410,7 @@ If ``true`` and foveation is also enabled, subsampled images will be used on Vul
 
 :ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
 
-Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+可選地以 ``major.minor.patch`` 表示法設定要初始化的特定 OpenXR API 版本。某些 XR 執行時會通過版本檢查來限制舊功能。這並非 OpenXR 的標準行為。
 
 .. rst-class:: classref-item-separator
 
@@ -14422,7 +14422,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 :ref:`int<class_int>` **xr/openxr/view_configuration** = ``"1"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/view_configuration>`
 
-指定視圖配置，用於配置 OpenXR 設定單視場或立體算繪。
+指定視圖配置，用於配置 OpenXR 設定單視場或立體渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -14451,13 +14451,13 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 |void| **add_property_info**\ (\ hint\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ProjectSettings_method_add_property_info>`
 
-Adds a custom property info to a property. The dictionary must contain:
+為某個屬性新增自訂屬性資訊。字典必須包含：
 
-- ``"name"``: :ref:`String<class_String>` (the property's name)
+- ``"name"``\ ：\ :ref:`String<class_String>`\ （屬性名稱）
 
-- ``"type"``: :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`)
+- ``"type"``\ ：\ :ref:`int<class_int>`\ （見 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）
 
-- optionally ``"hint"``: :ref:`int<class_int>` (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`) and ``"hint_string"``: :ref:`String<class_String>`\ 
+- 可選的 ``"hint"``\ ：\ :ref:`int<class_int>`\ （見 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）和 ``"hint_string"``\ ：\ :ref:`String<class_String>`\ 
 
 
 .. tabs::
@@ -14491,7 +14491,7 @@ Adds a custom property info to a property. The dictionary must contain:
 
 
 
-\ **Note:** Setting ``"usage"`` for the property is not supported. Use :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`, :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>`, and :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` to modify usage flags.
+\ **注意：**\ 不支援設定屬性的 ``"usage"``\ 。請使用 :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`\ 、\ :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>`\ 、\ :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` 修改用途標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -14527,7 +14527,7 @@ Adds a custom property info to a property. The dictionary must contain:
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+取得上次儲存以來發生更改的設定項陣列。請注意，成功儲存後內部會將 ``changed_settings`` 清空，所以一般最適合使用該方法的地方是在處理 :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>` 訊號時。
 
 .. rst-class:: classref-item-separator
 
@@ -14575,7 +14575,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Variant<class_Variant>` **get_setting**\ (\ name\: :ref:`String<class_String>`, default_value\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting>`
 
-Returns the value of the setting identified by ``name``. If the setting doesn't exist and ``default_value`` is specified, the value of ``default_value`` is returned. Otherwise, ``null`` is returned.
+回傳由名稱 ``name`` 標識的設定項的值。如果該設定項不存在，並且指定了預設值 ``default_value``\ ，則會回傳 ``default_value`` 的值。否則回傳 ``null``\ 。
 
 
 .. tabs::
@@ -14583,18 +14583,18 @@ Returns the value of the setting identified by ``name``. If the setting doesn't 
  .. code-tab:: gdscript
 
     print(ProjectSettings.get_setting("application/config/name"))
-    print(ProjectSettings.get_setting("application/config/custom_description", "No description specified."))
+    print(ProjectSettings.get_setting("application/config/custom_description", "未指定描述。"))
 
  .. code-tab:: csharp
 
     GD.Print(ProjectSettings.GetSetting("application/config/name"));
-    GD.Print(ProjectSettings.GetSetting("application/config/custom_description", "No description specified."));
+    GD.Print(ProjectSettings.GetSetting("application/config/custom_description", "未指定描述。"));
 
 
 
-\ **Note:** This method doesn't take potential feature overrides into account automatically. Use :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>` to handle seamlessly.
+\ **注意：**\ 這個方法不會自動考慮可能的特性覆蓋項。如需無縫處理，請使用 :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`\ 。
 
-See also :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to check whether a setting exists.
+另見 :ref:`has_setting()<class_ProjectSettings_method_has_setting>`\ ，用於檢查設定是否存在。
 
 .. rst-class:: classref-item-separator
 
@@ -14606,9 +14606,9 @@ See also :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to check
 
 :ref:`Variant<class_Variant>` **get_setting_with_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting_with_override>`
 
-Similar to :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, but applies feature tag overrides if any exists and is valid.
+類似於 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ ，但會應用有效的特性標籤覆蓋項。
 
-\ **Example:** If the setting override ``"application/config/name.windows"`` exists, and the following code is executed on a *Windows* operating system, the overridden setting is printed instead:
+\ **範例：**\ 如果存在設定覆蓋項 ``"application/config/name.windows"`` 並且下列程式碼在 *Windows* 作業系統上執行，就會改為輸出覆蓋後的設定值。
 
 
 .. tabs::
@@ -14633,7 +14633,7 @@ Similar to :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, but a
 
 :ref:`Variant<class_Variant>` **get_setting_with_override_and_custom_features**\ (\ name\: :ref:`StringName<class_StringName>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting_with_override_and_custom_features>`
 
-Similar to :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`, but applies feature tag overrides instead of current OS features.
+與 :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>` 類似，但是會應用特性標籤覆蓋而不是使用目前作業系統的特性。
 
 .. rst-class:: classref-item-separator
 
@@ -14673,9 +14673,9 @@ Similar to :ref:`get_setting_with_override()<class_ProjectSettings_method_get_se
 
 :ref:`bool<class_bool>` **has_setting**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_has_setting>`
 
-Returns ``true`` if a configuration value is present.
+如果某個設定的值存在，則回傳 ``true``\ 。
 
-\ **Note:** In order to be be detected, custom settings have to be either defined with :ref:`set_setting()<class_ProjectSettings_method_set_setting>`, or exist in the ``project.godot`` file. This is especially relevant when using :ref:`set_initial_value()<class_ProjectSettings_method_set_initial_value>`.
+\ **注意：**\ 為了能夠被檢測到，自訂設定需要通過 :ref:`set_setting()<class_ProjectSettings_method_set_setting>` 定義或在 ``project.godot`` 檔案中存在。使用 :ref:`set_initial_value()<class_ProjectSettings_method_set_initial_value>` 時尤為如此。
 
 .. rst-class:: classref-item-separator
 
@@ -14687,13 +14687,13 @@ Returns ``true`` if a configuration value is present.
 
 :ref:`bool<class_bool>` **load_resource_pack**\ (\ pack\: :ref:`String<class_String>`, replace_files\: :ref:`bool<class_bool>` = true, offset\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ProjectSettings_method_load_resource_pack>`
 
-Loads the contents of the .pck or .zip file specified by ``pack`` into the resource filesystem (``res://``). Returns ``true`` on success.
+將 ``pack`` 指定的 .pck 或 .zip 檔案的內容，載入到資源檔案系統（\ ``res://``\ ）。成功時回傳 ``true``\ 。
 
-\ **Note:** If a file from ``pack`` shares the same path as a file already in the resource filesystem, any attempts to load that file will use the file from ``pack`` unless ``replace_files`` is set to ``false``.
+\ **注意：**\ 如果來自 ``pack`` 的檔案與資源檔案系統中已有的檔案路徑相同，則任何載入該檔案的嘗試，都將使用來自 ``pack`` 的檔案，除非 ``replace_files`` 被設定為 ``false``\ 。
 
-\ **Note:** The optional ``offset`` parameter can be used to specify the offset in bytes to the start of the resource pack. This is only supported for .pck files.
+\ **注意：**\ 可選的 ``offset`` 參數可用於指定資源包開頭的位元組偏移量。只支援 .pck 檔案。
 
-\ **Note:** :ref:`DirAccess<class_DirAccess>` will not show changes made to the contents of ``res://`` after calling this function.
+\ **注意：**\ 呼叫該函式後，\ :ref:`DirAccess<class_DirAccess>` 不再顯示對 ``res://`` 內容的更改。
 
 .. rst-class:: classref-item-separator
 
@@ -14717,9 +14717,9 @@ Loads the contents of the .pck or .zip file specified by ``pack`` into the resou
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Saves the configuration to the ``project.godot`` file.
+將設定儲存到 ``project.godot`` 檔案中。
 
-\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
+\ **注意：**\ 該方法旨在供編輯器外掛使用，因為修改後的 **ProjectSettings** 無法在執行的應用程式中重新載入。如果要更改匯出專案中的專案設定，請使用 :ref:`save_custom()<class_ProjectSettings_method_save_custom>` 儲存 ``override.cfg`` 檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -14731,7 +14731,7 @@ Saves the configuration to the ``project.godot`` file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
+將設定儲存到自訂檔案。檔案副檔名必須是 ``.godot``\ （以基於文字的 :ref:`ConfigFile<class_ConfigFile>` 格式儲存）或 ``.binary``\ （以二進位格式儲存）。你也可以儲存為 ``override.cfg`` 檔案，它也是文字，但與其他格式不同，可用在匯出的專案中。
 
 .. rst-class:: classref-item-separator
 
@@ -14743,7 +14743,7 @@ Saves the configuration to a custom file. The file extension must be ``.godot`` 
 
 |void| **set_as_basic**\ (\ name\: :ref:`String<class_String>`, basic\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_as_basic>`
 
-決定指定的設定是基本設定還是高級設定。專案設定中始終顯示基本設定。高級設定僅在使用者啟用“高級設定”選項時顯示。
+決定指定的設定是基本設定還是進階設定。專案設定中始終顯示基本設定。進階設定僅在使用者啟用“進階設定”選項時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -14755,7 +14755,7 @@ Saves the configuration to a custom file. The file extension must be ``.godot`` 
 
 |void| **set_as_internal**\ (\ name\: :ref:`String<class_String>`, internal\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_as_internal>`
 
-決定指定的設定是否為內部設定。內部設定不會在“專案設定”對話方塊中出現。常用於插件，用來儲存內部設定，避免直接暴露給使用者。
+決定指定的設定是否為內部設定。內部設定不會在“專案設定”對話框中出現。常用於外掛，用來儲存內部設定，避免直接暴露給使用者。
 
 .. rst-class:: classref-item-separator
 
@@ -14767,7 +14767,7 @@ Saves the configuration to a custom file. The file extension must be ``.godot`` 
 
 |void| **set_initial_value**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_initial_value>`
 
-Sets the specified setting's initial value. This is the value the setting reverts to. The setting should already exist before calling this method. Note that project settings equal to their default value are not saved, so your code needs to account for that.
+設定指定設定的初始值。這是還原該設定時所使用的值。呼叫該方法前應該已存在該設定。請注意，不會儲存目前值與預設值相同的專案設定，編寫程式碼時請務必考慮這一點。
 
 ::
 
@@ -14782,7 +14782,7 @@ Sets the specified setting's initial value. This is the value the setting revert
 
         ProjectSettings.set_initial_value(SETTING_NAME, SETTING_DEFAULT)
 
-If you have a project setting defined by an :ref:`EditorPlugin<class_EditorPlugin>`, but want to use it in a running project, you will need a similar code at runtime.
+如果使用 :ref:`EditorPlugin<class_EditorPlugin>` 定義了專案設定，但又想要在執行的專案中使用這一設定，則需要在執行時執行類似的程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -14820,7 +14820,7 @@ If you have a project setting defined by an :ref:`EditorPlugin<class_EditorPlugi
 
 |void| **set_setting**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_setting>`
 
-Sets the value of a setting.
+設定設定項的值。
 
 
 .. tabs::
@@ -14835,7 +14835,7 @@ Sets the value of a setting.
 
 
 
-This can also be used to erase custom project settings. To do this change the setting value to ``null``.
+也可以用來擦除自訂專案設定。方法是將設定項的值設定為 ``null``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

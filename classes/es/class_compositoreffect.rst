@@ -82,7 +82,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_OPAQUE** = ``0``
 
-La callback se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
+El callback se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_OPAQUE:
 
@@ -90,7 +90,7 @@ La callback se llama antes de nuestro pase de renderizado opaco, pero después d
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_OPAQUE** = ``1``
 
-La callback se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
+El callback se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_SKY:
 
@@ -98,7 +98,7 @@ La callback se llama después de nuestro pase de renderizado opaco, pero antes d
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-La callback se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
+El callback se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -106,7 +106,7 @@ La callback se llama después de que se renderice nuestro cielo, pero antes de q
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT** = ``3``
 
-La callback se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
+El callback se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT:
 
@@ -114,7 +114,7 @@ La callback se llama antes de nuestro pase de renderizado transparente, pero des
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-La callback se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
+El callback se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_MAX:
 

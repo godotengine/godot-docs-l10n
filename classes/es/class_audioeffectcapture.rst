@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
+Expone muestras de audio de un bus de audio en tiempo real, de modo que se pueda acceder a ellas como datos.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
+AudioEffectCapture es un :ref:`AudioEffect<class_AudioEffect>` que copia todos los fotogramas de audio, también conocidos como «muestras» o «muestras de audio», del bus de audio al que está conectado a su búfer de anillo interno. Este efecto no altera el audio. Puede utilizarse para almacenar datos de audio en tiempo real para su reproducción y para crear visualizaciones de audio en tiempo real, como un osciloscopio.
 
-Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+El código de la aplicación debe consumir estos fotogramas de audio del búfer de anillo utilizando :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` y procesarlos según sea necesario, por ejemplo, para capturar datos de un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implementar efectos definidos por la aplicación o transmitir audio a través de la red. Al capturar datos de audio de un micrófono, el formato de las muestras será PCM estéreo de punto flotante de 32 bits.
 
-Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
+A diferencia de :ref:`AudioEffectRecord<class_AudioEffectRecord>`, este efecto solo devuelve las muestras de audio sin procesar, en lugar de codificarlas en un :ref:`AudioStream<class_AudioStream>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,9 +83,9 @@ Descripciones de Propiedades
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+Longitud del búfer de anillo interno, en segundos. Los valores más altos mantienen los datos durante más tiempo, pero requieren más memoria. El valor puede oscilar entre 0.01 y 10.
 
-\ **Note:** Setting the buffer length will have no effect if already initialized.
+\ **Nota:** Establecer la longitud del búfer no tendrá efecto si ya ha sido inicializado.
 
 .. rst-class:: classref-section-separator
 
@@ -102,7 +102,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
+Devuelve ``true`` si al menos ``frames`` muestras están disponibles para leer en el búfer de anillo interno.
 
 .. rst-class:: classref-item-separator
 
@@ -128,11 +128,11 @@ Borra el búfer circular interno.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Gets the next ``frames`` samples from the internal ring buffer.
+Obtiene las siguientes ``frames`` muestras del búfer de anillo interno.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
+Devuelve un :ref:`PackedVector2Array<class_PackedVector2Array>` que contiene exactamente ``frames`` muestras si están disponibles, o un :ref:`PackedVector2Array<class_PackedVector2Array>` vacío si no hay datos suficientes.
 
-The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
+Las muestras son PCM de punto flotante con signo entre ``-1`` y ``1``. Tendrás que escalarlas si quieres usarlas como muestras de enteros de 8 o 16 bits. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ The samples are signed floating-point PCM between ``-1`` and ``1``. You will hav
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Returns the total size of the internal ring buffer in number of samples.
+Devuelve el tamaño total del búfer de anillo interno en número de muestras.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Returns the total size of the internal ring buffer in number of samples.
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Returns the number of samples discarded from the audio bus due to full buffer.
+Devuelve el número de muestras descartadas del bus de audio debido a que el búfer estaba lleno.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns the number of samples discarded from the audio bus due to full buffer.
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+Devuelve el número de muestras disponibles para leer mediante el método :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 

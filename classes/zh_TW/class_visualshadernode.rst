@@ -84,7 +84,7 @@ enum **PortType**: :ref:`🔗<enum_VisualShaderNode_PortType>`
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_SCALAR** = ``0``
 
-Floating-point scalar. Translated to ``float`` type in shader code.
+浮點數型別。在著色器程式碼中，會被翻譯為 ``float`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_SCALAR_INT:
 
@@ -92,7 +92,7 @@ Floating-point scalar. Translated to ``float`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_SCALAR_INT** = ``1``
 
-Integer scalar. Translated to ``int`` type in shader code.
+整數標量。在著色器程式碼中，會被翻譯為 ``int`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_SCALAR_UINT:
 
@@ -100,7 +100,7 @@ Integer scalar. Translated to ``int`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_SCALAR_UINT** = ``2``
 
-Unsigned integer scalar. Translated to ``uint`` type in shader code.
+無符號整數標量。在著色器程式碼中，會被翻譯為 ``uint`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_VECTOR_2D:
 
@@ -108,7 +108,7 @@ Unsigned integer scalar. Translated to ``uint`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_VECTOR_2D** = ``3``
 
-2D vector of floating-point values. Translated to ``vec2`` type in shader code.
+浮點數 2D 向量。在著色器程式碼中，會被翻譯為 ``vec2`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_VECTOR_3D:
 
@@ -116,7 +116,7 @@ Unsigned integer scalar. Translated to ``uint`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_VECTOR_3D** = ``4``
 
-3D vector of floating-point values. Translated to ``vec3`` type in shader code.
+浮點數 3D 向量。在著色器程式碼中，會被翻譯為 ``vec3`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_VECTOR_4D:
 
@@ -124,7 +124,7 @@ Unsigned integer scalar. Translated to ``uint`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_VECTOR_4D** = ``5``
 
-4D vector of floating-point values. Translated to ``vec4`` type in shader code.
+浮點數 4D 向量。在著色器程式碼中，會被翻譯為 ``vec4`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_BOOLEAN:
 
@@ -132,7 +132,7 @@ Unsigned integer scalar. Translated to ``uint`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_BOOLEAN** = ``6``
 
-Boolean type. Translated to ``bool`` type in shader code.
+布林值型別。在著色器程式碼中，會被翻譯為 ``bool`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_TRANSFORM:
 
@@ -140,7 +140,7 @@ Boolean type. Translated to ``bool`` type in shader code.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_TRANSFORM** = ``7``
 
-Transform type. Translated to ``mat4`` type in shader code.
+變換型別。在著色器程式碼中，會被翻譯為 ``mat4`` 型別。
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_SAMPLER:
 
@@ -178,7 +178,7 @@ Transform type. Translated to ``mat4`` type in shader code.
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-Represents the index of the frame this node is linked to. If set to ``-1`` the node is not linked to any frame.
+表示該節點被連結到的框的索引。如果設定為 ``-1``\ ，則表示節點未被連結到任何框。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Represents the index of the frame this node is linked to. If set to ``-1`` the n
 
 :ref:`int<class_int>` **get_default_input_port**\ (\ type\: :ref:`PortType<enum_VisualShaderNode_PortType>`\ ) |const| :ref:`🔗<class_VisualShaderNode_method_get_default_input_port>`
 
-由於將連接從現有節點拖曳到圖形上的空白區域而建立此節點時，返回預設應連接的輸入連接埠。
+由於將連接從現有節點拖動到圖形上的空白區域而建立此節點時，返回預設應連接的輸入連接埠。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Represents the index of the frame this node is linked to. If set to ``-1`` the n
 
 |void| **set_default_input_values**\ (\ values\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_VisualShaderNode_method_set_default_input_values>`
 
-使用 ``[index0, value0, index1, value1, ...]`` 形式的 :ref:`Array<class_Array>` 設定默認輸入埠值。例如: ``[0, Vector3(0, 0, 0), 1, Vector3(0, 0, 0)]``\ 。
+使用 ``[index0, value0, index1, value1, ...]`` 形式的 :ref:`Array<class_Array>` 設定預設輸入埠值。例如: ``[0, Vector3(0, 0, 0), 1, Vector3(0, 0, 0)]``\ 。
 
 .. rst-class:: classref-item-separator
 

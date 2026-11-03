@@ -9,14 +9,14 @@ GDScriptTextDocument
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Document related language server functionality.
+文件相關的語言伺服器功能。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Provides language server functionality related to documents.
+提供與文件相關的語言伺服器功能。
 
 .. rst-class:: classref-reftable-group
 

@@ -99,7 +99,7 @@ Called when the audio speaker mode used for recording the audio is requested by 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_supported_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__get_supported_extensions>`
 
-Returns the list of supported filename extensions for movies written with this **MovieWriter**.
+Devuelve la lista de extensiones de archivo admitidas para las películas generadas con este **MovieWriter**.
 
 .. rst-class:: classref-item-separator
 

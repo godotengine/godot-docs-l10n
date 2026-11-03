@@ -7,18 +7,18 @@ VisibleOnScreenEnabler3D
 
 **繼承：** :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A box-shaped region of 3D space that, when visible on screen, enables a target node.
+3D 空間的盒形區塊，當在螢幕上可見時，啟用目標節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**VisibleOnScreenEnabler3D** contains a box-shaped region of 3D space and a target node. The target node will be automatically enabled (via its :ref:`Node.process_mode<class_Node_property_process_mode>` property) when any part of this region becomes visible on the screen, and automatically disabled otherwise. This can for example be used to activate enemies only when the player approaches them.
+**VisibleOnScreenEnabler3D** 包含 3D 空間的盒形區塊和目標節點。當該區域的任何部分在螢幕上可見時，目標節點將自動啟用（通過其 :ref:`Node.process_mode<class_Node_property_process_mode>` 屬性），否則將自動停用。例如，這可以被用於僅在玩家接近敵人時啟用敵人。
 
-See :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>` if you only want to be notified when the region is visible on screen.
+如果你只想在該區塊在螢幕上可見時收到通知，請參閱 :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>`\ 。
 
-\ **Note:** **VisibleOnScreenEnabler3D** uses an approximate heuristic that doesn't take walls and other occlusion into account, unless occlusion culling is used. It also won't function unless :ref:`Node3D.visible<class_Node3D_property_visible>` is set to ``true``.
+\ **注意：**\ **VisibleOnScreenEnabler3D** 使用近似啓發式，不考慮牆壁和其他遮擋，除非使用遮擋剔除。除非將 :ref:`Node3D.visible<class_Node3D_property_visible>` 設定為 ``true``\ ，否則它也不會起作用。
 
 .. rst-class:: classref-reftable-group
 
@@ -93,7 +93,7 @@ enum **EnableMode**: :ref:`🔗<enum_VisibleOnScreenEnabler3D_EnableMode>`
 - |void| **set_enable_mode**\ (\ value\: :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>`\ )
 - :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` **get_enable_mode**\ (\ )
 
-Determines how the target node is enabled. Corresponds to :ref:`ProcessMode<enum_Node_ProcessMode>`. When the node is disabled, it always uses :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+確定如何啟用目標節點。對應於 :ref:`ProcessMode<enum_Node_ProcessMode>`\ 。當該節點被停用時，它始終使用 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Determines how the target node is enabled. Corresponds to :ref:`ProcessMode<enum
 - |void| **set_enable_node_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_enable_node_path**\ (\ )
 
-The path to the target node, relative to the **VisibleOnScreenEnabler3D**. The target node is cached; it's only assigned when setting this property (if the **VisibleOnScreenEnabler3D** is inside the scene tree) and every time the **VisibleOnScreenEnabler3D** enters the scene tree. If the path is empty, no node will be affected. If the path is invalid, an error is also generated.
+目標節點的路徑，相對於 **VisibleOnScreenEnabler3D**\ 。目標節點會被快取；只有在設定這個屬性時（\ **VisibleOnScreenEnabler3D** 位於場景樹中），以及 **VisibleOnScreenEnabler3D** 進入場景樹時會進行賦值。如果路徑為空，則不會影響任何節點。如果路徑無效，則還會生成錯誤。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -175,7 +175,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 - |void| **set_process_mode**\ (\ value\: :ref:`ProcessMode<enum_Sky_ProcessMode>`\ )
 - :ref:`ProcessMode<enum_Sky_ProcessMode>` **get_process_mode**\ (\ )
 
-The method for generating the radiance map from the sky. The radiance map is a cubemap with increasingly blurry versions of the sky corresponding to different levels of roughness. Radiance maps can be expensive to calculate.
+設定從天空生成輻射率貼圖的方法。輻射率貼圖是一種立方體貼圖，具有遞增的模糊版本的天空，以對應於不同層級的粗糙度。輻射率貼圖的計算成本很高。
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The method for generating the radiance map from the sky. The radiance map is a c
 - |void| **set_radiance_size**\ (\ value\: :ref:`RadianceSize<enum_Sky_RadianceSize>`\ )
 - :ref:`RadianceSize<enum_Sky_RadianceSize>` **get_radiance_size**\ (\ )
 
-The **Sky**'s radiance map size. The higher the radiance map size, the more detailed the lighting from the **Sky** will be.
+該 **Sky** 的輻射率貼圖大小。輻射率貼圖尺寸越大，來自 **Sky** 的照明就越詳細。
 
-\ **Note:** Some hardware will have trouble with higher radiance sizes, especially :ref:`RADIANCE_SIZE_512<class_Sky_constant_RADIANCE_SIZE_512>` and above. Only use such high values on high-end hardware.
+\ **注意：**\ 某些硬體在使用較高的輻射率大小，尤其是 :ref:`RADIANCE_SIZE_512<class_Sky_constant_RADIANCE_SIZE_512>` 及以上時，會遇到問題。請僅在高端硬體上使用如此高的值。
 
 .. rst-class:: classref-item-separator
 

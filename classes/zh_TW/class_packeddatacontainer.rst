@@ -16,9 +16,9 @@ PackedDataContainer
 說明
 ----
 
-**PackedDataContainer** can be used to efficiently store data from untyped containers. The data is packed into raw bytes and can be saved to file. Only :ref:`Array<class_Array>` and :ref:`Dictionary<class_Dictionary>` can be stored this way.
+**PackedDataContainer** 可以高效地儲存未指定型別的容器中的資料。資料會以原始位元組的形式打包，能夠儲存到檔案中。只有 :ref:`Array<class_Array>` 和 :ref:`Dictionary<class_Dictionary>` 能夠這樣儲存。
 
-You can retrieve the data by iterating on the container, which will work as if iterating on the packed data itself. If the packed container is a :ref:`Dictionary<class_Dictionary>`, the data can be retrieved by key names (:ref:`String<class_String>`/:ref:`StringName<class_StringName>` only).
+你可以通過遍歷容器來取得資料，效果和遍歷被打包的資料一樣。如果打包容器為 :ref:`Dictionary<class_Dictionary>`\ ，則取得的是鍵名（僅 :ref:`String<class_String>`/:ref:`StringName<class_StringName>`\ ）。
 
 ::
 
@@ -33,7 +33,7 @@ You can retrieve the data by iterating on the container, which will work as if i
     for key in container:
         prints(key, container[key])
 
-Prints:
+輸出：
 
 .. code:: text
 
@@ -41,7 +41,7 @@ Prints:
     lock (0, 0)
     another_key 123
 
-Nested containers will be packed recursively. While iterating, they will be returned as :ref:`PackedDataContainerRef<class_PackedDataContainerRef>`.
+內嵌容器會遞歸打包。遍歷時回傳的是 :ref:`PackedDataContainerRef<class_PackedDataContainerRef>`\ 。
 
 .. rst-class:: classref-reftable-group
 

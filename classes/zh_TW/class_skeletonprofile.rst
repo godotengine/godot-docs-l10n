@@ -359,7 +359,7 @@ enum **TailDirection**: :ref:`🔗<enum_SkeletonProfile_TailDirection>`
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ group_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_texture>`
 
-返回 ``group_idx`` 處的組的紋理，該組將作為 :ref:`BoneMap<class_BoneMap>` 編輯器中的繪製組的背景圖像。
+返回 ``group_idx`` 處的組的紋理，該組將作為 :ref:`BoneMap<class_BoneMap>` 編輯器中的繪製組的背景影像。
 
 .. rst-class:: classref-item-separator
 
@@ -371,9 +371,9 @@ enum **TailDirection**: :ref:`🔗<enum_SkeletonProfile_TailDirection>`
 
 :ref:`bool<class_bool>` **is_required**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_is_required>`
 
-Returns whether the bone at ``bone_idx`` is required for retargeting.
+回傳 ``bone_idx`` 處的骨骼是否需要重定目標。
 
-This value is used by the bone map editor. If this method returns ``true``, and no bone is assigned, the handle color will be red on the bone map editor.
+該值由骨骼貼圖編輯器使用。如果該方法回傳 ``true``\ ，且未分配骨骼，則骨骼貼圖編輯器上的控點顏色將為紅色。
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ This value is used by the bone map editor. If this method returns ``true``, and 
 
 |void| **set_required**\ (\ bone_idx\: :ref:`int<class_int>`, required\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_required>`
 
-Sets the required status for bone ``bone_idx`` to ``required``.
+將骨骼 ``bone_idx`` 的所需狀態設定為 ``required``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Sets the required status for bone ``bone_idx`` to ``required``.
 
 |void| **set_texture**\ (\ group_idx\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_texture>`
 
-設定在 ``group_idx`` 處的組的紋理，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中繪製組的背景圖像。
+設定在 ``group_idx`` 處的組的紋理，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中繪製組的背景影像。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

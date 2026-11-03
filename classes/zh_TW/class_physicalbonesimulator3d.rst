@@ -7,14 +7,14 @@ PhysicalBoneSimulator3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node that can be the parent of :ref:`PhysicalBone3D<class_PhysicalBone3D>` and can apply the simulation results to :ref:`Skeleton3D<class_Skeleton3D>`.
+可以作為 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 的父節點，並可以將模擬結果套用至 :ref:`Skeleton3D<class_Skeleton3D>` 的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Node that can be the parent of :ref:`PhysicalBone3D<class_PhysicalBone3D>` and can apply the simulation results to :ref:`Skeleton3D<class_Skeleton3D>`.
+可以作為 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 的父節點，並可以將模擬結果套用至 :ref:`Skeleton3D<class_Skeleton3D>` 的節點。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ Node that can be the parent of :ref:`PhysicalBone3D<class_PhysicalBone3D>` and c
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) |const| :ref:`🔗<class_PhysicalBoneSimulator3D_method_is_simulating_physics>`
 
-Returns a boolean that indicates whether the **PhysicalBoneSimulator3D** is running and simulating.
+回傳一個布林值，指示 **PhysicalBoneSimulator3D** 是否正在執行和模擬。
 
 .. rst-class:: classref-item-separator
 

@@ -7,18 +7,18 @@ PointMesh
 
 **繼承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Mesh with a single point primitive.
+單點圖元網格。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A **PointMesh** is a primitive mesh composed of a single point. Instead of relying on triangles, points are rendered as a single rectangle on the screen with a constant size. They are intended to be used with particle systems, but can also be used as a cheap way to render billboarded sprites (for example in a point cloud).
+**PointMesh** 由一個點構成的基本網格。這個點不取決於三角形，而是作為螢幕上的一個矩形來渲染，大小是固定的。旨在用於粒子系統，但也可以作為固定大小公告板精靈的輕量級渲染方法（例如在點雲中使用）。
 
-In order to be displayed, point meshes must be used with a material that has a point size. The point size can be accessed in a shader with the ``POINT_SIZE`` built-in, or in a :ref:`BaseMaterial3D<class_BaseMaterial3D>` by setting the :ref:`BaseMaterial3D.use_point_size<class_BaseMaterial3D_property_use_point_size>` and :ref:`BaseMaterial3D.point_size<class_BaseMaterial3D_property_point_size>` properties.
+為了顯示，單點網格必須使用具有點大小的材質。點的大小可以在著色器中通過內建的 ``POINT_SIZE`` 存取，也可以在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 中設定 :ref:`BaseMaterial3D.use_point_size<class_BaseMaterial3D_property_use_point_size>` 並通過變數 :ref:`BaseMaterial3D.point_size<class_BaseMaterial3D_property_point_size>` 存取。
 
-\ **Note:** When using point meshes, properties that normally affect vertices will be ignored, including :ref:`BaseMaterial3D.billboard_mode<class_BaseMaterial3D_property_billboard_mode>`, :ref:`BaseMaterial3D.grow<class_BaseMaterial3D_property_grow>`, and :ref:`BaseMaterial3D.cull_mode<class_BaseMaterial3D_property_cull_mode>`.
+\ **注意：**\ 使用單點網格時，會忽略平時能夠影響頂點的屬性，包括 :ref:`BaseMaterial3D.billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 、\ :ref:`BaseMaterial3D.grow<class_BaseMaterial3D_property_grow>`\ 、\ :ref:`BaseMaterial3D.cull_mode<class_BaseMaterial3D_property_cull_mode>` 等。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

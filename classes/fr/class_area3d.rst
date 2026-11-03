@@ -734,11 +734,11 @@ Pour des raisons de performance (les collisions sont toutes traitées en même t
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_bodies>`
 
-Returns a list of intersecting :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, and :ref:`GridMap<class_GridMap>`\ s. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Renvoie une liste des :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s et :ref:`GridMap<class_GridMap>`\ s en intersection. Le :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` du corps chevauchant doit faire partie du :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de la zone afin d'être détecté.
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Pour des raisons de performance (les collisions sont toutes traitées en même temps), cette liste est modifiée une fois pendant l'étape physique, mais pas immédiatement après le déplacement des objets. Envisagez d'utiliser des signaux à la place.
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not return any such bodies.
+\ **Note :** Godot Physics ne supporte pas le signalement de collision avec un :ref:`SoftBody3D<class_SoftBody3D>`, et n'en renverra donc aucun.
 
 .. rst-class:: classref-item-separator
 
@@ -764,11 +764,11 @@ Pour des raisons de performance (les collisions sont toutes traitées en même t
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_bodies>`
 
-Returns ``true`` if intersecting any :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, or :ref:`GridMap<class_GridMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Renvoie ``true`` si la zone chevauche n'importe quel :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` ou :ref:`GridMap<class_GridMap>`, sinon renvoie ``false``. Le :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` du corps chevauchant doit faire parti du :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de cette zone afin d'être détecté.
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Pour des raisons de performance (les collisions sont toutes traitées en même temps), cette liste est modifiée une fois pendant l'étape physique, mais pas immédiatement après le déplacement des objets. Envisagez d'utiliser des signaux à la place.
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not consider such bodies.
+\ **Note :** Godot Physics ne supporte pas le signalement de collision avec un :ref:`SoftBody3D<class_SoftBody3D>`, et n'en renverra donc aucun.
 
 .. rst-class:: classref-item-separator
 
@@ -794,13 +794,13 @@ Renvoie ``true`` si l'**Area3D** donné intersecte ou chevauche cette **Area3D**
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Returns ``true`` if the given physics body intersects or overlaps this **Area3D**, ``false`` otherwise.
+Renvoie ``true`` si le corps physique donné intersecte ou chevauche cette **Area3D**, sinon renvoie ``false``.
 
-\ ``body`` argument can either be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>`, or a :ref:`GridMap<class_GridMap>` instance. While GridMaps are not physics body themselves, they register their tiles with collision shapes as a virtual physics body.
+L'argument ``body`` peut être une instance de :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>`, ou :ref:`GridMap<class_GridMap>`. Bien que les GridMaps ne sont pas un corps physique eux-mêmes, ils enregistrent leurs tuiles avec des formes de collision tel un corps physique virtuel.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **Note :** Le résultat de ce test n'est pas immédiat après le déplacement des objets. Pour les performances, la liste des chevauchements est mise à jour une fois par trame et avant l'étape physique. Envisagez d'utiliser des signaux à la place.
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will return ``false`` in such cases.
+\ **Note :** Godot Physics ne supporte pas le signalement de collision avec un :ref:`SoftBody3D<class_SoftBody3D>`, et renverra donc ``false`` dans ce cas.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

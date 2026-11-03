@@ -116,7 +116,7 @@ Comenzar la transición lo antes posible, sin esperar ninguna posición temporal
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **TRANSITION_FROM_TIME_NEXT_BEAT** = ``1``
 
-Transition when the clip playback position reaches the next beat.
+Transición cuando la posición de reproducción del clip alcanza el siguiente pulso.
 
 .. _class_AudioStreamInteractive_constant_TRANSITION_FROM_TIME_NEXT_BAR:
 
@@ -323,7 +323,7 @@ Descripciones de Métodos
 
 |void| **add_transition**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`, from_time\: :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>`, to_time\: :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>`, fade_mode\: :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>`, fade_beats\: :ref:`float<class_float>`, use_filler_clip\: :ref:`bool<class_bool>` = false, filler_clip\: :ref:`int<class_int>` = -1, hold_previous\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AudioStreamInteractive_method_add_transition>`
 
-Añade una transición entre dos clips. Proporciona los índices de los clips de origen y destino, o utiliza la constante :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` para indicar que la transición ocurre desde o hacia cualquier clip a éste.
+Añade una transición entre dos clips. Proporciona los índices de los clips de origen y destino, o utiliza la constante :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` para indicar que la transición ocurre desde o hacia cualquier clip a este.
 
 \* ``from_time`` indica el momento en el clip actual en el que comenzará la transición después de activarse.
 
@@ -409,7 +409,7 @@ Devuelve el :ref:`AudioStream<class_AudioStream>` asociado con un clip.
 
 :ref:`float<class_float>` **get_transition_fade_beats**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_fade_beats>`
 
-Return the time (in beats) for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+Devuelve el tiempo (en pulsos) de una transición (véase :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
 
 .. rst-class:: classref-item-separator
 

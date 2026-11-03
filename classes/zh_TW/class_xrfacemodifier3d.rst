@@ -9,18 +9,18 @@ XRFaceModifier3D
 
 **繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node for driving standard face meshes from :ref:`XRFaceTracker<class_XRFaceTracker>` weights.
+用於從 :ref:`XRFaceTracker<class_XRFaceTracker>` 權重驅動標準面部網格的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node applies weights from an :ref:`XRFaceTracker<class_XRFaceTracker>` to a mesh with supporting face blend shapes.
+該節點將 :ref:`XRFaceTracker<class_XRFaceTracker>` 的權重套用至具有支援面部混合形狀的網格。
 
-The `Unified Expressions <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes>`__ blend shapes are supported, as well as ARKit and SRanipal blend shapes.
+支援\ `統一表情 <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes>`__\ 混合形狀，以及 ARKit 和 SRanipal 混合形狀。
 
-The node attempts to identify blend shapes based on name matching. Blend shapes should match the names listed in the `Unified Expressions Compatibility <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/overview>`__ chart.
+該節點嘗試根據名稱匹配來識別混合形狀。混合形狀應與\ `統一表情相容性 <https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/overview>`__\ 圖表中列出的名稱匹配。
 
 .. rst-class:: classref-introduction-group
 
@@ -63,7 +63,7 @@ The node attempts to identify blend shapes based on name matching. Blend shapes 
 - |void| **set_face_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_face_tracker**\ (\ )
 
-The :ref:`XRFaceTracker<class_XRFaceTracker>` path.
+:ref:`XRFaceTracker<class_XRFaceTracker>` 路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ The :ref:`XRFaceTracker<class_XRFaceTracker>` path.
 - |void| **set_target**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target**\ (\ )
 
-The :ref:`NodePath<class_NodePath>` of the face :ref:`MeshInstance3D<class_MeshInstance3D>`.
+面部 :ref:`MeshInstance3D<class_MeshInstance3D>` 的 :ref:`NodePath<class_NodePath>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

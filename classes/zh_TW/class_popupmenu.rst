@@ -14,17 +14,17 @@ PopupMenu
 說明
 ----
 
-**PopupMenu** is a modal window used to display a list of options. Useful for toolbars and context menus.
+**PopupMenu** 是用於顯示選項清單的模態視窗，常見於工具列和情境選單。
 
-The size of a **PopupMenu** can be limited by using :ref:`Window.max_size<class_Window_property_max_size>`. If the height of the list of items is larger than the maximum height of the **PopupMenu**, a :ref:`ScrollContainer<class_ScrollContainer>` within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to ``0``, the **PopupMenu** height will be limited by its parent rect.
+\ **PopupMenu** 的大小可以使用 :ref:`Window.max_size<class_Window_property_max_size>` 限制。如果選單項清單的高度大於 **PopupMenu** 的最大高度，則會在彈出框中使用 :ref:`ScrollContainer<class_ScrollContainer>` 讓使用者捲動內容。如果沒有設定最大尺寸或者設為了 ``0``\ ，則該 **PopupMenu** 的高度會被限制在父級的矩形框之中。
 
-All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the last item, ``-2`` to select the second-to-last item, and so on.
+所有的 ``set_*`` 方法都允許使用負數選單項索引，即 ``-1`` 存取的是最後一個選單項，\ ``-2`` 選擇的是倒數第二個選單項，依次類推。
 
-\ **Incremental search:** Like :ref:`ItemList<class_ItemList>` and :ref:`Tree<class_Tree>`, **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **增量搜尋：**\ 與 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>` 類似，\ **PopupMenu** 也支援在聚焦控制項時在清單中進行搜尋。按下與某個條目名稱首字母一致的按鍵，就會選中以該字母開頭的第一個條目。在此之後，進行增量搜尋的辦法有兩種：1）在超時前再次按下同一個按鍵，選中以該字母開頭的下一個條目。2）在超時前按下剩餘字母對應的按鍵，直接匹配並選中所需的條目。這兩個動作都會在最後一次按鍵超時後重設回清單頂端。你可以通過 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 修改超時時長。
 
-\ **Note:** **PopupMenu** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **PopupMenu** 預設情況下是隱藏的。若要顯示，呼叫節點上來自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一個，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
-\ **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of :ref:`int<class_int>`. This has a range of ``-2^32`` to ``2^32 - 1``, i.e. ``-2147483648`` to ``2147483647``.
+\ **注意：**\ 選單項的 ID 有 32 位元的限制，不是完整 :ref:`int<class_int>` 的 64 位元。取值範圍為 ``-2^32`` 到 ``2^32 - 1``\ ，即 ``-2147483648`` 到 ``2147483647``\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -355,9 +355,9 @@ All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the las
 
 **id_pressed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_pressed>`
 
-Emitted when an item of some ``id`` is pressed. Also emitted when its accelerator is activated on macOS.
+ID 為 ``id`` 的項目被按下時發出。在 macOS 系統上，當其快捷鍵被啟用時也會發出。
 
-\ **Note:** If ``id`` is negative (either explicitly or due to overflow), this will return the corresponding index instead.
+\ **注意：**\ 如果 ``id`` 為負數（無論是明確指定的還是由於溢出導致的），將回傳相應的索引來代替。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Emitted when an item of some ``id`` is pressed. Also emitted when its accelerato
 
 **index_pressed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_index_pressed>`
 
-Emitted when an item of some ``index`` is pressed. Also emitted when its accelerator is activated on macOS.
+索引為 ``index`` 的項目被按下時發出。在 macOS 系統上，當其快捷鍵被啟用時也會發出。
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 
 :ref:`int<class_int>` **item_{index}/checkable** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+索引為 ``index`` 的可勾選選單項的型別。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/checked** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+如果設定為 ``true``\ ，那麼位於 ``index`` 位置的選項就會被勾選。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍在 ``0 到 item_count - 1`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ If ``true``, the item at ``index`` is checked.
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果為 ``true``\ ，則停用位於 ``index`` 處的項目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_PopupMenu_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+位於 ``index`` 處的項目的圖示。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -539,9 +539,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **item_{index}/id** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/id>`
 
-The ID of the item at ``index``.
+索引為 ``index`` 的選單項的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -553,9 +553,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/separator** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果為 ``true``\ ，則索引為 ``index`` 的選單項是一個分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必須在 ``0 .. item_count - 1`` 範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -567,9 +567,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_PopupMenu_property_item_{index}/text>`
 
-The text of the item at ``index``.
+位於 ``index`` 處的項目的文字。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍為 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -586,9 +586,9 @@ The text of the item at ``index``.
 - |void| **set_prefer_native_menu**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_prefer_native_menu**\ (\ )
 
-If ``true``, :ref:`MenuBar<class_MenuBar>` will use native menu when supported.
+如果為 ``true``\ ，則支援原生選單時 :ref:`MenuBar<class_MenuBar>` 會使用原生選單。
 
-\ **Note:** If **PopupMenu** is linked to :ref:`StatusIndicator<class_StatusIndicator>`, :ref:`MenuBar<class_MenuBar>`, or another **PopupMenu** item it can use native menu regardless of this property, use :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` to check it.
+\ **注意：**\ 如果 **PopupMenu** 與 :ref:`StatusIndicator<class_StatusIndicator>`\ 、\ :ref:`MenuBar<class_MenuBar>` 或其他 **PopupMenu** 選單項之間存在連結，則無論該屬性為何值，均可使用原生選單，請使用 :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` 檢查。
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +605,9 @@ If ``true``, :ref:`MenuBar<class_MenuBar>` will use native menu when supported.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the **PopupMenu** for filtering items. See :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+如果為 ``true``\ ，則在 **PopupMenu** 頂部顯示一個用於篩選項目項的搜尋欄。請參閱 :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>`\ ，以瞭解基於項目項數量動態控制其可見性的方法。
 
-\ **Note:** When enabled, :ref:`allow_search<class_PopupMenu_property_allow_search>` is ignored.
+\ **注意：** 啟用後，\ :ref:`allow_search<class_PopupMenu_property_allow_search>` 將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -624,9 +624,9 @@ If ``true``, shows a search bar at the top of the **PopupMenu** for filtering it
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the **PopupMenu** search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+如果為 ``true``\ ，則在 **PopupMenu** 的搜尋欄中啟用模糊搜尋。這允許搜尋結果包含與搜尋查詢幾乎匹配的條目，以及那些單獨字元與搜尋查詢匹配但不按順序排列的條目。
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+請使用 :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` 來設定搜尋結果中允許的最大不匹配數量。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the **PopupMenu** search bar. Any item with more mismatches will be hidden from the search results.
+設定為 **PopupMenu** 的搜尋欄啟用模糊搜尋時，每個搜尋結果中允許的最大不匹配數量。任何超過該數量的選單項都將從搜尋結果中被隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
+設定搜尋欄可見所需的最少條目數。必須將 :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` 設定為 ``true``\ ，此設定才會生效。分隔符條目不計入總數。
 
 .. rst-class:: classref-item-separator
 
@@ -677,7 +677,7 @@ Sets the minimum number of items required for the search bar to be visible. :ref
 - |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+如果為 ``true``\ ，則在顯示 **PopupMenu** 時將其縮小到最小高度。
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
 - |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
+如果為 ``true``\ ，則在顯示 **PopupMenu** 時會將其寬度縮小到最小。
 
 .. rst-class:: classref-item-separator
 
@@ -711,9 +711,9 @@ If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 - |void| **set_submenu_popup_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_submenu_popup_delay**\ (\ )
 
-Sets the delay time in seconds for the submenu item to popup on mouse hovering. If the popup menu is added as a child of another (acting as a submenu), it will inherit the delay time of the parent menu item.
+設定滑鼠懸停時子選單項彈出的延遲時間，單位為秒。如果將彈出選單新增為另一個選單的子級（充當子選單），它將繼承父選單項的延遲時間。
 
-\ **Note:** If the mouse is exiting a submenu item with an open submenu and enters a different submenu item, the submenu popup delay time is affected by the direction of the mouse movement toward the open submenu. If the mouse is moving toward the submenu, the open submenu will wait approximately ``0.5`` seconds before closing, which then allows the hovered submenu item to open. This additional delay allows the mouse time to move to the open submenu across other menu items without prematurely closing. If the mouse is not moving toward the open submenu, for example in a downward direction, the open submenu will close immediately.
+\ **注意：**\ 如果滑鼠離開一個已打開子選單的子選單項並進入另一個子選單項，子選單彈出延遲時間會受到滑鼠移動方向的影響。如果滑鼠朝已打開的子選單移動，則已打開的子選單會等待大約 ``0.5`` 秒後關閉，然後允許目前懸停的子選單項打開。這種額外的延遲使滑鼠有時間穿過其他選單項移動到已打開的子選單，而不會過早關閉。如果滑鼠沒有朝向已打開的子選單移動，例如向下移動，則已打開的子選單會立即關閉。
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +730,7 @@ Sets the delay time in seconds for the submenu item to popup on mouse hovering. 
 - |void| **set_system_menu**\ (\ value\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ )
 - :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **get_system_menu**\ (\ )
 
-If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, this **PopupMenu** is bound to the special system menu. Only one **PopupMenu** can be bound to each special menu at a time.
+如果設定為 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` 的值之一，則該 **PopupMenu** 將綁定到特殊系統選單。每個特殊選單在同一時間只能綁定一個 **PopupMenu**\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -749,7 +749,7 @@ If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, 
 
 根據 **PopupMenu** 的捷徑和加速器檢查提供的 ``event``\ ，並啟動具有配對事件的第一個專案。如果 ``for_global_only`` 為 ``true``\ ，只有 ``global`` 設定為 ``true`` 的捷徑和加速器才會被呼叫。
 
-如果專案已成功激活，則傳回 ``true``\ 。
+如果專案已成功啟用，則傳回 ``true``\ 。
 
 \ **注意：**\ 某些\ :ref:`Control<class_Control>`\ ，例如\ :ref:`MenuButton<class_MenuButton>`\ ，會自動呼叫此方法。
 
@@ -811,7 +811,7 @@ If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, 
 
 |void| **add_icon_check_shortcut**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, id\: :ref:`int<class_int>` = -1, global\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_add_icon_check_shortcut>`
 
-新增一個新的可勾選項並為其分配指定的 :ref:`Shortcut<class_Shortcut>` 和圖示 ``texture``\ 。將複選框的標籤設定為 :ref:`Shortcut<class_Shortcut>` 的名稱。
+新增一個新的可勾選項並為其分配指定的 :ref:`Shortcut<class_Shortcut>` 和圖示 ``texture``\ 。將核取方塊的標籤設定為 :ref:`Shortcut<class_Shortcut>` 的名稱。
 
 可以選擇提供一個 ``id``\ 。如果未提供 ``id``\ ，將從索引中建立一個。
 
@@ -829,7 +829,7 @@ If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, 
 
 新增帶有文字 ``label`` 和圖示 ``texture`` 的新功能表專案。
 
-還可以提供 ``id`` 和快捷鍵（\ ``accel``\ ）。如果沒有提供 ``id``\ ，則會根據索引來建立。如果沒有提供 ``accel``\ ，則會為該功能表專案分配預設的 0（對應 :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`\ ，在這裡表示沒有快捷鍵）。更多快捷鍵相關的信息見 :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>`\ 。
+還可以提供 ``id`` 和快捷鍵（\ ``accel``\ ）。如果沒有提供 ``id``\ ，則會根據索引來建立。如果沒有提供 ``accel``\ ，則會為該功能表專案分配預設的 0（對應 :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`\ ，在這裡表示沒有快捷鍵）。更多快捷鍵相關的資訊見 :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -865,9 +865,11 @@ If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, 
 
 |void| **add_icon_shortcut**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, id\: :ref:`int<class_int>` = -1, global\: :ref:`bool<class_bool>` = false, allow_echo\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_add_icon_shortcut>`
 
-新增新的功能表專案，並為其分配指定的 :ref:`Shortcut<class_Shortcut>` 和圖示 ``texture``\ 。核取方塊的標籤會被設為 :ref:`Shortcut<class_Shortcut>` 的名稱。
+新增新的選單項，並為其分配指定的 :ref:`Shortcut<class_Shortcut>` 和圖示 ``texture``\ 。核取方塊的標籤會被設為 :ref:`Shortcut<class_Shortcut>` 的名稱。
 
 還可以提供 ``id``\ 。如果沒有提供 ``id``\ ，則會根據索引來建立。
+
+如果 ``allow_echo`` 為 ``true``\ ，則快捷鍵可以被回響事件啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -895,29 +897,29 @@ If set to one of the values of :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, 
 
 |void| **add_multistate_item**\ (\ label\: :ref:`String<class_String>`, max_states\: :ref:`int<class_int>`, default_state\: :ref:`int<class_int>` = 0, id\: :ref:`int<class_int>` = -1, accel\: :ref:`Key<enum_@GlobalScope_Key>` = 0\ ) :ref:`🔗<class_PopupMenu_method_add_multistate_item>`
 
-Adds a new multistate item with text ``label``.
+新增新的多狀態選單項，使用 ``label`` 作為文字。
 
-Contrarily to normal binary items, multistate items can have more than two states, as defined by ``max_states``. The default value is defined by ``default_state``.
+與普通的雙態選單項不同，多狀態選單項的狀態可以超過兩個，數量由 ``max_states`` 定義。預設值由 ``default_state`` 定義。
 
-An ``id`` can optionally be provided, as well as an accelerator (``accel``). If no ``id`` is provided, one will be created from the index. If no ``accel`` is provided, then the default value of 0 (corresponding to :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) will be assigned to the item (which means it won't have any accelerator). See :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` for more info on accelerators.
+還可以提供 ``id`` 和快捷鍵（\ ``accel``\ ）。如果沒有提供 ``id``\ ，則會根據索引來建立。如果沒有提供 ``accel``\ ，則會為該選單項分配預設的 0（對應 :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`\ ，在這裡表示沒有快捷鍵）。更多快捷鍵相關的資訊見 :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>`\ 。
 
 ::
 
     func _ready():
-        add_multistate_item("Item", 3, 0)
+        add_multistate_item("選單項", 3, 0)
 
         index_pressed.connect(func(index: int):
                 toggle_item_multistate(index)
                 match get_item_multistate(index):
                     0:
-                        print("First state")
+                        print("甲狀態")
                     1:
-                        print("Second state")
+                        print("乙狀態")
                     2:
-                        print("Third state")
+                        print("丙狀態")
             )
 
-\ **Note:** Multistate items don't update their state automatically and must be done manually. See :ref:`toggle_item_multistate()<class_PopupMenu_method_toggle_item_multistate>`, :ref:`set_item_multistate()<class_PopupMenu_method_set_item_multistate>` and :ref:`get_item_multistate()<class_PopupMenu_method_get_item_multistate>` for more info on how to control it.
+\ **注意：**\ 多狀態選單項的狀態不會自動變化，必須手動修改。控制方法見 :ref:`toggle_item_multistate()<class_PopupMenu_method_toggle_item_multistate>`\ 、\ :ref:`set_item_multistate()<class_PopupMenu_method_set_item_multistate>`\ 、\ :ref:`get_item_multistate()<class_PopupMenu_method_get_item_multistate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -979,6 +981,8 @@ An ``id`` can optionally be provided, as well as an accelerator (``accel``). If 
 
 還可以提供 ``id``\ 。如果沒有提供 ``id``\ ，則會根據索引來建立。
 
+如果 ``allow_echo`` 為 ``true``\ ，則快捷鍵可以被回響事件啟用。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -991,9 +995,9 @@ An ``id`` can optionally be provided, as well as an accelerator (``accel``). If 
 
 **已棄用：** Prefer using :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>` instead.
 
-Adds an item that will act as a submenu of the parent **PopupMenu** node when clicked. The ``submenu`` argument must be the name of an existing **PopupMenu** that has been added as a child to this node. This submenu will be shown when the item is clicked, hovered for long enough, or activated using the ``ui_select`` or ``ui_right`` input actions.
+新增選單項，點選時會作為父級 **PopupMenu** 節點的子選單。\ ``submenu`` 參數必須是已作為子節點新增到此節點的現有 **PopupMenu** 的名稱。當點選該項目、懸停足夠長的時間或使用 ``ui_select`` 或 ``ui_right`` 輸入操作啟用該子選單時，將顯示該子選單。
 
-An ``id`` can optionally be provided. If no ``id`` is provided, one will be created from the index.
+還可以提供 ``id``\ 。如果沒有提供 ``id``\ ，則會根據索引來建立。
 
 .. rst-class:: classref-item-separator
 
@@ -1005,11 +1009,11 @@ An ``id`` can optionally be provided. If no ``id`` is provided, one will be crea
 
 |void| **add_submenu_node_item**\ (\ label\: :ref:`String<class_String>`, submenu\: :ref:`PopupMenu<class_PopupMenu>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PopupMenu_method_add_submenu_node_item>`
 
-Adds an item that will act as a submenu of the parent **PopupMenu** node when clicked. This submenu will be shown when the item is clicked, hovered for long enough, or activated using the ``ui_select`` or ``ui_right`` input actions.
+新增一個選單項，點選時會作為父級 **PopupMenu** 節點的子選單。當點選該項目、懸停足夠長的時間或使用 ``ui_select`` 或 ``ui_right`` 輸入操作啟用該子選單時，將顯示該子選單。
 
-\ ``submenu`` must be either child of this **PopupMenu** or has no parent node (in which case it will be automatically added as a child). If the ``submenu`` popup has another parent, this method will fail.
+\ ``submenu`` 必須是該 **PopupMenu** 的子節點，或者沒有父節點（在這種情況下，它將自動新增為子節點）。如果 ``submenu`` 彈出視窗有另一個父級節點，則該方法將失敗。
 
-An ``id`` can optionally be provided. If no ``id`` is provided, one will be created from the index.
+還可以選擇提供 ``id``\ 。如果沒有提供 ``id``\ ，則將從索引建立一個。
 
 .. rst-class:: classref-item-separator
 
@@ -1057,7 +1061,7 @@ An ``id`` can optionally be provided. If no ``id`` is provided, one will be crea
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_auto_translate_mode>`
 
-Returns the auto translate mode of the item at the given ``index``.
+回傳索引為 ``index`` 的選單項的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1105,7 +1109,7 @@ Returns the auto translate mode of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_id>`
 
-Returns the ID of the item at the given ``index``.
+回傳給定 ``index``\ （索引）處的項目 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -1129,7 +1133,7 @@ Returns the ID of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_index>`
 
-Returns the index of the item containing the specified ``id``. The index is automatically assigned to each item by the engine when added and represents the order items will be displayed.
+回傳包含指定 ``id`` 的項目的索引。該索引會在項目被新增時由引擎自動分配，它代表了項目顯示的先後順序。
 
 .. rst-class:: classref-item-separator
 
@@ -1165,7 +1169,7 @@ Returns the index of the item containing the specified ``id``. The index is auto
 
 :ref:`int<class_int>` **get_item_multistate**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_multistate>`
 
-Returns the state of the item at the given ``index``.
+回傳索引為 ``index`` 的選單項的狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1177,7 +1181,7 @@ Returns the state of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_multistate_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_multistate_max>`
 
-Returns the max states of the item at the given ``index``.
+回傳索引為 ``index`` 的選單項的最大狀態數。
 
 .. rst-class:: classref-item-separator
 
@@ -1215,7 +1219,7 @@ Returns the max states of the item at the given ``index``.
 
 :ref:`PopupMenu<class_PopupMenu>` **get_item_submenu_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_submenu_node>`
 
-Returns the submenu of the item at the given ``index``, or ``null`` if no submenu was added. See :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>` for more info on how to add a submenu.
+回傳給定 ``index`` 處選單項的子選單，如果尚未新增子選單，則回傳 ``null``\ 。有關如何新增子選單的更多資訊，請參閱 :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1263,7 +1267,7 @@ Returns the submenu of the item at the given ``index``, or ``null`` if no submen
 
 :ref:`bool<class_bool>` **is_item_checkable**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_checkable>`
 
-如果給定 ``index`` 處的功能表專案可以某種方式勾選，即如果它有一個核取方塊或單選按鈕，則返回 ``true``\ 。
+如果給定 ``index`` 處的功能表專案可以某種方式勾選，即如果它有一個核取方塊或選項按鈕，則返回 ``true``\ 。
 
 \ **注意：**\ 可勾選項僅顯示一個勾選標記或選項按鈕，但沒有任何內建的勾選行為，必須手動勾選/取消勾選。
 
@@ -1289,9 +1293,9 @@ Returns the submenu of the item at the given ``index``, or ``null`` if no submen
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_disabled>`
 
-如果給定 ``index`` 處的功能表專案被禁用，則返回 ``true``\ 。功能表專案被禁用時無法被選擇，對應的動作也無法被呼叫。
+如果給定 ``index`` 處的功能表專案被停用，則返回 ``true``\ 。功能表專案被停用時無法被選擇，對應的動作也無法被呼叫。
 
-有關如何禁用功能表專案的更多資訊，請參閱 :ref:`set_item_disabled()<class_PopupMenu_method_set_item_disabled>`\ 。
+有關如何停用功能表專案的更多資訊，請參閱 :ref:`set_item_disabled()<class_PopupMenu_method_set_item_disabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1333,7 @@ Returns the submenu of the item at the given ``index``, or ``null`` if no submen
 
 :ref:`bool<class_bool>` **is_item_shortcut_disabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_shortcut_disabled>`
 
-如果指定功能表專案的快捷方式被禁用，則返回 ``true``\ 。
+如果指定功能表專案的快捷方式被停用，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1345,7 @@ Returns the submenu of the item at the given ``index``, or ``null`` if no submen
 
 :ref:`bool<class_bool>` **is_native_menu**\ (\ ) |const| :ref:`🔗<class_PopupMenu_method_is_native_menu>`
 
-Returns ``true`` if the system native menu is supported and currently used by this **PopupMenu**.
+如果系統原生選單受支援，且目前由該 **PopupMenu** 使用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1353,7 +1357,7 @@ Returns ``true`` if the system native menu is supported and currently used by th
 
 :ref:`bool<class_bool>` **is_system_menu**\ (\ ) |const| :ref:`🔗<class_PopupMenu_method_is_system_menu>`
 
-Returns ``true`` if the menu is bound to the special system menu.
+如果選單與特殊系統選單進行了綁定，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1379,7 +1383,7 @@ Returns ``true`` if the menu is bound to the special system menu.
 
 |void| **scroll_to_item**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_scroll_to_item>`
 
-移動滾動視圖，使位於給定 ``index`` 的功能表專案可見。
+移動捲動視圖，使位於給定 ``index`` 的功能表專案可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1455,9 +1459,9 @@ Returns ``true`` if the menu is bound to the special system menu.
 
 |void| **set_item_auto_translate_mode**\ (\ index\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_auto_translate_mode>`
 
-Sets the auto translate mode of the item at the given ``index``.
+設定索引為 ``index`` 的選單項的自動翻譯模式。
 
-Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` by default, which uses the same auto translate mode as the **PopupMenu** itself.
+項目預設使用 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`\ ，表示使用與 **PopupMenu** 相同的自動翻譯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1481,7 +1485,7 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_disabled**\ (\ index\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_disabled>`
 
-啟用/禁用位於給定 ``index`` 的功能表專案。處於禁用狀態的功能表專案無法被選中，也無法呼叫其動作。
+啟用/停用位於給定 ``index`` 的功能表專案。處於停用狀態的功能表專案無法被選中，也無法呼叫其動作。
 
 .. rst-class:: classref-item-separator
 
@@ -1555,9 +1559,9 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_index**\ (\ index\: :ref:`int<class_int>`, target_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_index>`
 
-Changes the index of the item at index ``index`` to be at index ``target_index``. This can be used to move an item above other items. The moved item will keep the same ID, even if it was generated from the original index.
+將位於索引 ``index`` 處的選單項的索引更改為 ``target_index``\ 。這可用於將一個選單項移動到其他選單項的上方。即使被移動的選單項的 ID 是從原始索引生成的，它也會保持相同的 ID。
 
-\ **Note:** The indices of any items between index ``index`` and index ``target_index`` will be shifted by one.
+\ **注意：** 位於索引 ``index`` 和索引 ``target_index`` 之間的任何選單項的索引都將移動一位。
 
 .. rst-class:: classref-item-separator
 
@@ -1569,7 +1573,7 @@ Changes the index of the item at index ``index`` to be at index ``target_index``
 
 |void| **set_item_language**\ (\ index\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+將給定索引處項目的文字語言程式碼設定為 ``language``\ 。這是用於換行和文字塑形算法的。如果 ``language`` 為空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1581,7 +1585,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 |void| **set_item_metadata**\ (\ index\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_metadata>`
 
-設定項的中繼資料，該項可以是任何型別。稍後你可以使用\ :ref:`get_item_metadata()<class_PopupMenu_method_get_item_metadata>`\ 獲取它，它提供了一種將本文資料分配給項的簡單方法。
+設定項的中繼資料，該項可以是任何型別。稍後你可以使用\ :ref:`get_item_metadata()<class_PopupMenu_method_get_item_metadata>`\ 取得它，它提供了一種將本文資料分配給項的簡單方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1609,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 |void| **set_item_multistate_max**\ (\ index\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_multistate_max>`
 
-Sets the max states of a multistate item. See :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` for details.
+設定多狀態選單項的最大狀態數。詳見 :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,7 +1633,7 @@ Sets the max states of a multistate item. See :ref:`add_multistate_item()<class_
 
 |void| **set_item_shortcut_disabled**\ (\ index\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_shortcut_disabled>`
 
-禁用索引為 ``index`` 的功能表專案的 :ref:`Shortcut<class_Shortcut>`\ 。
+停用索引為 ``index`` 的功能表專案的 :ref:`Shortcut<class_Shortcut>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1643,7 +1647,7 @@ Sets the max states of a multistate item. See :ref:`add_multistate_item()<class_
 
 **已棄用：** Prefer using :ref:`set_item_submenu_node()<class_PopupMenu_method_set_item_submenu_node>` instead.
 
-設定位於給定 ``index`` 的功能表專案的子功能表。子功能表為點擊該功能表專案後應該顯示的子 **PopupMenu** 節點的名稱。
+設定位於給定 ``index`` 的功能表專案的子功能表。子功能表為點選該功能表專案後應該顯示的子 **PopupMenu** 節點的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1655,7 +1659,7 @@ Sets the max states of a multistate item. See :ref:`add_multistate_item()<class_
 
 |void| **set_item_submenu_node**\ (\ index\: :ref:`int<class_int>`, submenu\: :ref:`PopupMenu<class_PopupMenu>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_submenu_node>`
 
-Sets the submenu of the item at the given ``index``. The submenu is a **PopupMenu** node that would be shown when the item is clicked. It must either be a child of this **PopupMenu** or has no parent (in which case it will be automatically added as a child). If the ``submenu`` popup has another parent, this method will fail.
+設定給定 ``index`` 處的項目的子選單。子選單是一個 **PopupMenu** 節點，點選該項目時將顯示該節點。它必須是該 **PopupMenu** 的子級或沒有父級（在這種情況下，它將自動新增為子級）。如果 ``submenu`` 彈出視窗有另一個父級，則該方法將失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -1732,7 +1736,7 @@ Sets the submenu of the item at the given ``index``. The submenu is a **PopupMen
 
 :ref:`Color<class_Color>` **font_accelerator_color** = ``Color(0.7, 0.7, 0.7, 0.8)`` :ref:`🔗<class_PopupMenu_theme_color_font_accelerator_color>`
 
-文字 :ref:`Color<class_Color>` 用於快捷鍵和加速器，當定義時顯示在功能表專案名稱旁邊。有關加速器的更多信息，請參閱 :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>`\ 。
+文字 :ref:`Color<class_Color>` 用於快捷鍵和加速器，當定義時顯示在功能表專案名稱旁邊。有關加速器的更多資訊，請參閱 :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1756,7 +1760,7 @@ Sets the submenu of the item at the given ``index``. The submenu is a **PopupMen
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.4, 0.4, 0.4, 0.8)`` :ref:`🔗<class_PopupMenu_theme_color_font_disabled_color>`
 
-用於禁用功能表專案的文字 :ref:`Color<class_Color>`\ 。
+用於停用功能表專案的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1816,7 +1820,7 @@ Sets the submenu of the item at the given ``index``. The submenu is a **PopupMen
 
 :ref:`int<class_int>` **gutter_compact** = ``1`` :ref:`🔗<class_PopupMenu_theme_constant_gutter_compact>`
 
-If not ``0``, the icon gutter will be merged with the checkbox gutter when possible. This acts as a boolean.
+如果不是 ``0``\ ，則圖示邊欄將在可能的情況下與核取方塊邊欄合併。它充當布林值。
 
 .. rst-class:: classref-item-separator
 
@@ -1890,7 +1894,7 @@ If not ``0``, the icon gutter will be merged with the checkbox gutter when possi
 
 專案文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_PopupMenu_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_PopupMenu_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1902,7 +1906,7 @@ If not ``0``, the icon gutter will be merged with the checkbox gutter when possi
 
 :ref:`int<class_int>` **search_bar_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_search_bar_separation>`
 
-The vertical space between search bar and menu items.
+搜尋欄與選單項之間的垂直間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1998,7 +2002,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_checked_disabled>`
 
-:ref:`Texture2D<class_Texture2D>` 圖示，用於處於選中狀態的已禁用複選項。
+:ref:`Texture2D<class_Texture2D>` 圖示，用於處於選中狀態的已停用複選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2022,7 +2026,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_radio_checked_disabled>`
 
-:ref:`Texture2D<class_Texture2D>` 圖示，用於處於選中狀態的已禁用單選項。
+:ref:`Texture2D<class_Texture2D>` 圖示，用於處於選中狀態的已停用單選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2046,7 +2050,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_radio_unchecked_disabled>`
 
-:ref:`Texture2D<class_Texture2D>` 圖示，用於處於未選狀態的已禁用單選項。
+:ref:`Texture2D<class_Texture2D>` 圖示，用於處於未選狀態的已停用單選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2058,7 +2062,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **search** :ref:`🔗<class_PopupMenu_theme_icon_search>`
 
-:ref:`Texture2D<class_Texture2D>` icon for the search bar's search icon.
+搜尋欄中搜尋圖示的 :ref:`Texture2D<class_Texture2D>`\ （2D紋理/圖片）。
 
 .. rst-class:: classref-item-separator
 
@@ -2106,7 +2110,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_unchecked_disabled>`
 
-:ref:`Texture2D<class_Texture2D>` 圖示，用於處於未選狀態的已禁用複選項。
+:ref:`Texture2D<class_Texture2D>` 圖示，用於處於未選狀態的已停用複選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2154,7 +2158,7 @@ The vertical space between search bar and menu items.
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_PopupMenu_theme_style_panel>`
 
-:ref:`StyleBox<class_StyleBox>` for the background panel.
+用於背景面板的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 

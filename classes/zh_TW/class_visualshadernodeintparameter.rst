@@ -85,7 +85,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeIntParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **HINT_ENUM** = ``3``
 
-The parameter uses an enum to associate preset values to names in the editor.
+參數使用列舉將預設值與編輯器中的名稱進行關聯。
 
 .. _class_VisualShaderNodeIntParameter_constant_HINT_MAX:
 
@@ -149,7 +149,7 @@ The parameter uses an enum to associate preset values to names in the editor.
 - |void| **set_enum_names**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_enum_names**\ (\ )
 
-The names used for the enum select in the editor. :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` must be :ref:`HINT_ENUM<class_VisualShaderNodeIntParameter_constant_HINT_ENUM>` for this to take effect.
+用於在編輯器中選擇列舉的名稱。\ :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` 必須為 :ref:`HINT_ENUM<class_VisualShaderNodeIntParameter_constant_HINT_ENUM>` 才能生效。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 

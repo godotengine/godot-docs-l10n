@@ -2002,17 +2002,17 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_force_integration_callback>`
 
-Налаштовує функцію зворотного зв’язку з користувацькими зусиллями тіла до ``callable``. Використовуйте порожній :ref:`Callable<class_Callable>` (``Callable()``) для очищення користувацького зворотного виклику.
+Встановлює функцію зворотного виклику для налаштованої інтеграції сили тіла як ``callable``. Щоб скасувати налаштований зворотний виклик, використовуйте порожній :ref:`Callable<class_Callable>` (``Callable()``).
 
-Функція ``callable`` буде називатися кожен фізичний кліщ, перш ніж стандартна інтеграція сили (див. :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Для оновлення лінійної та кутової швидкості тіла можна використовувати наприклад, для оновлення лінійної та кутової швидкості на основі контакту з іншими тілами.
+Функція ``callable`` викликатиметься під час кожного фізичного такту, перед стандартною інтеграцією сили (див. :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Її можна використовувати, наприклад, для оновлення лінійної та кутової швидкості тіла на основі контакту з іншими тілами.
 
-Якщо ``userdata`` не ``null``, функція ``callable`` повинна приймати наступні два параметри:
+Якщо ``userdata`` не дорівнює ``null``, функція ``callable`` повинна приймати такі два параметри:
 
-1. ``state``: a :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` використовується для отримання та модифікації стану тіла,
+1. ``state``: :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, що використовується для отримання та модифікації стану тіла,
 
-2. ``код пропустити-лінт``\ userdata\ ``: a [Variant]; його значення буде [param userdata] передано в цей метод.
+2. ``userdata``: :ref:`Variant<class_Variant>`; його значенням буде ``userdata``, переданий у цей метод.
 
-Якщо [param userdata] is [code]null``, то ``callable`` повинен прийняти тільки параметр ``state``.
+Якщо ``userdata`` дорівнює ``null``, то ``callable`` повинен приймати лише параметр ``state``.
 
 .. rst-class:: classref-item-separator
 

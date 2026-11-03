@@ -14,9 +14,9 @@ MissingNode
 說明
 ----
 
-This is an internal editor class intended for keeping data of nodes of unknown type (most likely this type was supplied by an extension that is no longer loaded). It can't be manually instantiated or placed in a scene.
+這是一種編輯器內部類，用於儲存未知型別節點的資料（該型別很有可能是由不再載入的擴充提供的），無法手動實例化，也無法在場景中放置。
 
-\ **Warning:** Ignore missing nodes unless you know what you are doing. Existing properties on a missing node can be freely modified in code, regardless of the type they are intended to be.
+\ **警告：**\ 不清楚有甚麼用就請忽略缺失節點。缺失節點上的已有屬性可以在程式碼中自由修改，無論它們的型別如何。
 
 .. rst-class:: classref-reftable-group
 
@@ -56,7 +56,7 @@ This is an internal editor class intended for keeping data of nodes of unknown t
 - |void| **set_original_class**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_class**\ (\ )
 
-The name of the class this node was supposed to be (see :ref:`Object.get_class()<class_Object_method_get_class>`).
+該節點本來的類別名稱（見 :ref:`Object.get_class()<class_Object_method_get_class>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The name of the class this node was supposed to be (see :ref:`Object.get_class()
 - |void| **set_original_scene**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_scene**\ (\ )
 
-Returns the path of the scene this node was instance of originally.
+回傳該節點最初是其實例的場景的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ Returns the path of the scene this node was instance of originally.
 - |void| **set_recording_properties**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recording_properties**\ (\ )
 
-If ``true``, allows new properties to be set along with existing ones. If ``false``, only existing properties' values can be set, and new properties cannot be added.
+如果為 ``true``\ ，則允許將新屬性與已有屬性一起設定。如果為 ``false``\ ，則只能設定已有屬性的值，並且無法新增新屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ If ``true``, allows new properties to be set along with existing ones. If ``fals
 - |void| **set_recording_signals**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recording_signals**\ (\ )
 
-If ``true``, allows new signals to be connected to along with existing ones. If ``false``, only existing signals can be connected to, and new signals cannot be added.
+如果為 ``true``\ ，則允許將新訊號與已有訊號一起連接。如果為 ``false``\ ，則只能連接已有訊號，不能新增新的訊號。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

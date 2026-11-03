@@ -12,13 +12,13 @@ RID
 說明
 ----
 
-The RID :ref:`Variant<class_Variant>` type is used to access a low-level resource by its unique ID. RIDs are opaque, which means they do not grant access to the resource by themselves. They are used by the low-level server classes, such as :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>`, etc.
+RID :ref:`Variant<class_Variant>` 型別用於通過唯一 ID 來存取底層資源。RID 是不透明的，這意味著它們本身並不能直接讓你存取到資源。它們主要被底層伺服器類所使用，例如 :ref:`DisplayServer<class_DisplayServer>`\ （顯示伺服器）、\ :ref:`RenderingServer<class_RenderingServer>`\ （渲染伺服器）、\ :ref:`TextServer<class_TextServer>`\ （文字伺服器）等。
 
-A low-level resource may correspond to a high-level :ref:`Resource<class_Resource>`, such as :ref:`Texture<class_Texture>` or :ref:`Mesh<class_Mesh>`.
+一個底層資源可能對應著一個高層級的 :ref:`Resource<class_Resource>`\ （資源），比如 :ref:`Texture<class_Texture>`\ （紋理）或 :ref:`Mesh<class_Mesh>`\ （網格）。
 
-\ **Note:** RIDs are only useful during the current session. It won't correspond to a similar resource if sent over a network, or loaded from a file at a later time.
+\ **注意：** RID 僅在目前會話期間有用。如果通過網路發送，或者在之後從檔案中載入，它將無法對應到相同的資源。
 
-\ **Note:** In a boolean context, an RID will evaluate to ``false`` if it has the invalid ID ``0``. Otherwise, an RID will always evaluate to ``true``. This is equivalent to calling :ref:`is_valid()<class_RID_method_is_valid>`.
+\ **注意：** 在布林值情境中，如果 RID 是無效 ID ``0``\ ，它的判斷結果將為 ``false``\ 。否則，RID 的判斷結果將始終為 ``true``\ 。這等同於呼叫 :ref:`is_valid()<class_RID_method_is_valid>` 方法。
 
 .. note::
 
@@ -99,7 +99,7 @@ A low-level resource may correspond to a high-level :ref:`Resource<class_Resourc
 
 :ref:`RID<class_RID>` **RID**\ (\ from\: :ref:`RID<class_RID>`\ )
 
-Constructs an **RID** as a copy of the given **RID**.
+構造給定 **RID** 的副本 **RID**\ 。
 
 .. rst-class:: classref-section-separator
 

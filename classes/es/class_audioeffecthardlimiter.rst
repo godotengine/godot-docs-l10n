@@ -65,9 +65,9 @@ Descripciones de Propiedades
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
+El valor máximo permitido de la forma de onda, en decibelios. Este valor puede variar entre -24 y 0.
 
-The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+El valor predeterminado de -0.3 evita que los posibles picos entre muestras (ISP) superen los 0 dB, lo que puede causar una ligera distorsión en algunos equipos antiguos.
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ The default value of -0.3 prevents potential inter-sample peaks (ISP) from cross
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-Gain before limiting, in dB. Value can range from -24 to 24.
+Ganancia antes de la limitación, en decibelios. El valor puede variar entre −24 y +24.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Gain before limiting, in dB. Value can range from -24 to 24.
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
+Tiempo en segundos que tarda la reducción de ganancia en liberarse por completo. El valor puede variar entre 0.01 y 3.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

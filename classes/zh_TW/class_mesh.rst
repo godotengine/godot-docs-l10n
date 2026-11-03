@@ -16,7 +16,7 @@ Mesh
 說明
 ----
 
-Mesh is a type of :ref:`Resource<class_Resource>` that contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials. The maximum number of surfaces per mesh is :ref:`RenderingServer.MAX_MESH_SURFACES<class_RenderingServer_constant_MAX_MESH_SURFACES>`.
+網格是一種包含了基於頂點陣列的幾何資源。網格被分為各種\ *平面*\ ，每一個平麵包含了一個完整的、單獨的頂點陣列和材質用來繪製它。通過明智的設計，一個由多個面組成的網格勝過單個面的，這是因為在3D編輯軟體中，一個物體通常包含多種材質。每個網格的最大表面數是 :ref:`RenderingServer.MAX_MESH_SURFACES<class_RenderingServer_constant_MAX_MESH_SURFACES>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -126,7 +126,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_POINTS** = ``0``
 
-將陣列算繪為點（一個頂點對應一個點）。
+將陣列渲染為點（一個頂點對應一個點）。
 
 .. _class_Mesh_constant_PRIMITIVE_LINES:
 
@@ -134,7 +134,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_LINES** = ``1``
 
-將陣列算繪為線（每兩個頂點建立一條連線）。
+將陣列渲染為線（每兩個頂點建立一條連線）。
 
 .. _class_Mesh_constant_PRIMITIVE_LINE_STRIP:
 
@@ -142,7 +142,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_LINE_STRIP** = ``2``
 
-將陣列算繪為線條。
+將陣列渲染為線條。
 
 .. _class_Mesh_constant_PRIMITIVE_TRIANGLES:
 
@@ -150,7 +150,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_TRIANGLES** = ``3``
 
-將陣列算繪為三角形（每三個頂點建立一個三角形）。
+將陣列渲染為三角形（每三個頂點建立一個三角形）。
 
 .. _class_Mesh_constant_PRIMITIVE_TRIANGLE_STRIP:
 
@@ -158,7 +158,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_TRIANGLE_STRIP** = ``4``
 
-將陣列算繪為三角形條。
+將陣列渲染為三角形條。
 
 .. rst-class:: classref-item-separator
 
@@ -184,9 +184,9 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_NORMAL** = ``1``
 
-:ref:`PackedVector3Array<class_PackedVector3Array>` of vertex normals.
+頂點法線的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。
 
-\ **Note:** The array has to consist of normal vectors, otherwise they will be normalized by the engine, potentially causing visual discrepancies.
+\ **注意：**\ 陣列中存放的應當是正規化的向量，否則引擎會進行正規化，但可能造成顯示上的差異。
 
 .. _class_Mesh_constant_ARRAY_TANGENT:
 
@@ -226,7 +226,7 @@ UV 座標的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_CUSTOM0** = ``6``
 
-Contains custom color channel 0. :ref:`PackedByteArray<class_PackedByteArray>` if ``(format >> Mesh.ARRAY_FORMAT_CUSTOM0_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` is :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`, :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`, :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`, or :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`. :ref:`PackedFloat32Array<class_PackedFloat32Array>` otherwise.
+包含自訂顏色通道 0。如果 ``(format >> Mesh.ARRAY_FORMAT_CUSTOM0_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` 為 :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>` 或 :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`\ ，則為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。否則為 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM1:
 
@@ -234,7 +234,7 @@ Contains custom color channel 0. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_CUSTOM1** = ``7``
 
-Contains custom color channel 1. :ref:`PackedByteArray<class_PackedByteArray>` if ``(format >> Mesh.ARRAY_FORMAT_CUSTOM1_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` is :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`, :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`, :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`, or :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`. :ref:`PackedFloat32Array<class_PackedFloat32Array>` otherwise.
+包含自訂顏色通道 1。如果 ``(format >> Mesh.ARRAY_FORMAT_CUSTOM1_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` 為 :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>` 或 :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`\ ，則為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。否則為 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM2:
 
@@ -242,7 +242,7 @@ Contains custom color channel 1. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_CUSTOM2** = ``8``
 
-Contains custom color channel 2. :ref:`PackedByteArray<class_PackedByteArray>` if ``(format >> Mesh.ARRAY_FORMAT_CUSTOM2_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` is :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`, :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`, :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`, or :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`. :ref:`PackedFloat32Array<class_PackedFloat32Array>` otherwise.
+包含自訂顏色通道 2。如果 ``(format >> Mesh.ARRAY_FORMAT_CUSTOM2_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` 為 :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>` 或 :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`\ ，則為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。否則為 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM3:
 
@@ -250,7 +250,7 @@ Contains custom color channel 2. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_CUSTOM3** = ``9``
 
-Contains custom color channel 3. :ref:`PackedByteArray<class_PackedByteArray>` if ``(format >> Mesh.ARRAY_FORMAT_CUSTOM3_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` is :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`, :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`, :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`, or :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`. :ref:`PackedFloat32Array<class_PackedFloat32Array>` otherwise.
+包含自訂顏色通道 3。如果 ``(format >> Mesh.ARRAY_FORMAT_CUSTOM3_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK`` 為 :ref:`ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 、\ :ref:`ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>` 或 :ref:`ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`\ ，則為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。否則為 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_BONES:
 
@@ -568,7 +568,7 @@ flags **ArrayFormat**: :ref:`🔗<enum_Mesh_ArrayFormat>`
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_DYNAMIC_UPDATE** = ``67108864``
 
-Flag used to mark that the mesh data will use ``GL_DYNAMIC_DRAW`` on GLES. Unused on Vulkan.
+用於標記網格資料將在 GLES 上使用 ``GL_DYNAMIC_DRAW`` 的標誌。在 Vulkan 上不使用。
 
 .. _class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS:
 
@@ -592,7 +592,7 @@ Flag used to mark that the mesh data will use ``GL_DYNAMIC_DRAW`` on GLES. Unuse
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_COMPRESS_ATTRIBUTES** = ``536870912``
 
-Flag used to mark that a mesh is using compressed attributes (vertices, normals, tangents, UVs). When this form of compression is enabled, vertex positions will be packed into an RGBA16UNORM attribute and scaled in the vertex shader. The normal and tangent will be packed into an RG16UNORM representing an axis, and a 16-bit float stored in the A-channel of the vertex. UVs will use 16-bit normalized floats instead of full 32-bit signed floats. When using this compression mode you must use either vertices, normals, and tangents or only vertices. You cannot use normals without tangents. Importers will automatically enable this compression if they can.
+用於標記網格正在使用的壓縮的屬性（頂點、法線、切線、UV）的標誌。啟用這種形式的壓縮後，頂點位置將被打包到 RGBA16UNORM 屬性中，並在頂點著色器中進行縮放。法線和切線將被打包到表示一個軸的 RG16UNORM 中，並在頂點的 A 通道中儲存一個 16 位元浮點數。UV 將使用 16 位元標準化浮點數而不是完整的 32 位元有符號浮點數。使用該壓縮模式時，必須使用頂點、法線和切線或僅使用頂點。你無法使用沒有切線的法線。如果可以的話，匯入器將自動啟用這種壓縮。
 
 .. rst-class:: classref-item-separator
 
@@ -681,7 +681,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 :ref:`StringName<class_StringName>` **_get_blend_shape_name**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__get_blend_shape_name>`
 
-虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀名稱的獲取過程。
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀名稱的取得過程。
 
 .. rst-class:: classref-item-separator
 
@@ -829,7 +829,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 如果 ``clean`` 為 ``true``\ （預設值），則自動移除重複頂點和內部頂點。如果不需要如此的化話，可以將其設定為 ``false`` 以加快處理速度。
 
-如果 ``simplify`` 為 ``true``\ ，則可以進一步簡化幾何體以減少頂點數。預設情況下是禁用的。
+如果 ``simplify`` 為 ``true``\ ，則可以進一步簡化幾何體以減少頂點數。預設情況下是停用的。
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +891,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 :ref:`AABB<class_AABB>` **get_aabb**\ (\ ) |const| :ref:`🔗<class_Mesh_method_get_aabb>`
 
-返回局部空間中包圍這個網格的最小 :ref:`AABB<class_AABB>`\ 。不受 ``custom_aabb`` 的影響。
+返回區域空間中包圍這個網格的最小 :ref:`AABB<class_AABB>`\ 。不受 ``custom_aabb`` 的影響。
 
 \ **注意：**\ 只針對 :ref:`ArrayMesh<class_ArrayMesh>` 和 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 進行了實作。
 
@@ -917,7 +917,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 :ref:`int<class_int>` **get_surface_count**\ (\ ) |const| :ref:`🔗<class_Mesh_method_get_surface_count>`
 
-返回表面覆蓋材質的數量。相當於 :ref:`get_surface_count()<class_Mesh_method_get_surface_count>`\ 。
+回傳 **Mesh** 中存放的表面的數量。相當於 :ref:`MeshInstance3D.get_surface_override_material_count()<class_MeshInstance3D_method_get_surface_override_material_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +953,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 :ref:`Material<class_Material>` **surface_get_material**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Mesh_method_surface_get_material>`
 
-傳回給定表面中的\ :ref:`Material<class_Material>`\ 。表面是使用此材質算繪的。
+傳回給定表面中的\ :ref:`Material<class_Material>`\ 。表面是使用此材質渲染的。
 
 \ **注意：** 這將傳回 **Mesh** 資源中的材質，而不是與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性關聯的 :ref:`Material<class_Material>`\ 。若要取得與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性相關的 :ref:`Material<class_Material>`\ ，請改用 :ref:`MeshInstance3D.get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>`\ 。
 
@@ -967,7 +967,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 |void| **surface_set_material**\ (\ surf_idx\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_Mesh_method_surface_set_material>`
 
-設定為給定表面\ :ref:`Material<class_Material>`\ 。表面將使用此材質算繪。
+設定為給定表面\ :ref:`Material<class_Material>`\ 。表面將使用此材質渲染。
 
 \ **注意：** 這會分配 **Mesh** 資源中的材質，而不是與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性關聯的 :ref:`Material<class_Material>`\ 。若要設定與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性相關的 :ref:`Material<class_Material>`\ ，請使用 :ref:`MeshInstance3D.set_surface_override_material()<class_MeshInstance3D_method_set_surface_override_material>`\ 。
 

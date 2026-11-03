@@ -823,7 +823,7 @@ Retourne ``true`` si l'attribut **hidden** est défini sur le fichier du chemin 
 
 :ref:`int<class_int>` **get_length**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_length>`
 
-Returns the size of the file in bytes. For a pipe, returns the number of bytes available for reading from the pipe.
+Revoie la taille du fichier en octets. Pour un tube, renvoie le nombre d'octets disponible à la lecture depuis le tube.
 
 .. rst-class:: classref-item-separator
 

@@ -325,7 +325,7 @@ Renvoie le temps d'affichage prévu pour la prochaine trame.
 
 :ref:`int<class_int>` **get_openxr_version**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_openxr_version>`
 
-Returns the version of OpenXR that was initialized. Only valid after the OpenXR instance has been created. See `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ for how the version is calculated.
+Renvoie la version d'OpenXR qui a été initialisée. Seulement valide après que l'instance OpenXR ait été crée. Voir `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ pour savoir comment la version est calculée.
 
 .. rst-class:: classref-item-separator
 

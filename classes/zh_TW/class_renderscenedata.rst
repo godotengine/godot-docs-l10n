@@ -9,16 +9,16 @@ RenderSceneData
 
 **被繼承：** :ref:`RenderSceneDataExtension<class_RenderSceneDataExtension>`, :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`
 
-Abstract render data object, holds scene data related to rendering a single frame of a viewport.
+抽象渲染資料物件，儲存與渲染視埠的單個影格相關的場景資料。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Abstract scene data object, exists for the duration of rendering a single viewport. See also :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
+抽象場景資料物件，在渲染單個視埠期間存在。另見 :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`\ 、\ :ref:`RenderData<class_RenderData>` 和 :ref:`RenderDataRD<class_RenderDataRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是一個內部渲染伺服器物件。不要從腳本中實例化該類。
 
 .. rst-class:: classref-reftable-group
 
@@ -57,9 +57,9 @@ Abstract scene data object, exists for the duration of rendering a single viewpo
 
 :ref:`Projection<class_Projection>` **get_cam_projection**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_cam_projection>`
 
-Returns the camera projection used to render this frame.
+回傳用於渲染該影格的相機投影。
 
-\ **Note:** If more than one view is rendered, this will return a combined projection.
+\ **注意：**\ 如果渲染多個檢視，則這將回傳一個組合的投影。
 
 .. rst-class:: classref-item-separator
 
@@ -71,9 +71,9 @@ Returns the camera projection used to render this frame.
 
 :ref:`Transform3D<class_Transform3D>` **get_cam_transform**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_cam_transform>`
 
-Returns the camera transform used to render this frame.
+回傳用於渲染該影格的相機變換。
 
-\ **Note:** If more than one view is rendered, this will return a centered transform.
+\ **注意：**\ 如果渲染多個檢視，則這將回傳一個居中的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Returns the camera transform used to render this frame.
 
 :ref:`RID<class_RID>` **get_uniform_buffer**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_uniform_buffer>`
 
-Return the :ref:`RID<class_RID>` of the uniform buffer containing the scene data as a UBO.
+回傳包含場景資料作為 UBO 的 uniform 緩衝區的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Return the :ref:`RID<class_RID>` of the uniform buffer containing the scene data
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_count>`
 
-Returns the number of views being rendered.
+回傳渲染的檢視數。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Returns the number of views being rendered.
 
 :ref:`Vector3<class_Vector3>` **get_view_eye_offset**\ (\ view\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_eye_offset>`
 
-Returns the eye offset per view used to render this frame. This is the offset between our camera transform and the eye transform.
+回傳用於渲染該影格的每個檢視的眼睛偏移量。這是我們的相機變換和眼睛變換之間的偏移。
 
 .. rst-class:: classref-item-separator
 
@@ -121,9 +121,9 @@ Returns the eye offset per view used to render this frame. This is the offset be
 
 :ref:`Projection<class_Projection>` **get_view_projection**\ (\ view\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_projection>`
 
-Returns the view projection per view used to render this frame.
+回傳用於渲染該影格的每個檢視的檢視投影。
 
-\ **Note:** If a single view is rendered, this returns the camera projection. If more than one view is rendered, this will return a projection for the given view including the eye offset.
+\ **注意：**\ 如果渲染單個檢視，則回傳相機投影。如果渲染多個檢視，則這將回傳給定檢視的投影，包括眼睛偏移。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

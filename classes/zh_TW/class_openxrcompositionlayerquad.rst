@@ -9,14 +9,14 @@ OpenXRCompositionLayerQuad
 
 **繼承：** :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An OpenXR composition layer that is rendered as a quad.
+以四邊形形式渲染的 OpenXR 合成層。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubViewport>` on a quad.
+能夠在四邊形上渲染 :ref:`SubViewport<class_SubViewport>` 的 OpenXR 合成層。
 
 .. rst-class:: classref-reftable-group
 

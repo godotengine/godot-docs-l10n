@@ -17,7 +17,7 @@ MultiplayerPeerExtension
 說明
 ----
 
-該類旨在被一個 GDExtension 外掛程式繼承，以實作多人遊戲 API（例如 WebRTC）的自定義網路層。下面的所有方法都\ **必須**\ 被實作，才能實作一個有效的自訂多人遊戲實作。另請參閱 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
+該類旨在被一個 GDExtension 外掛程式繼承，以實作多人遊戲 API（例如 WebRTC）的自訂網路層。下面的所有方法都\ **必須**\ 被實作，才能實作一個有效的自訂多人遊戲實作。另請參閱 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -102,7 +102,7 @@ MultiplayerPeerExtension
 
 |void| **_disconnect_peer**\ (\ peer\: :ref:`int<class_int>`, force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__disconnect_peer>`
 
-Called when the connected ``peer`` should be forcibly disconnected (see :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`).
+當已連接的 ``peer``\ （對端/節點）應當被強制斷開連接時呼叫（詳見 :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Called when the connected ``peer`` should be forcibly disconnected (see :ref:`Mu
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **_get_packet_mode**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet_mode>`
 
-Called to get the transfer mode the remote peer used to send the next available packet. See :ref:`MultiplayerPeer.get_packet_mode()<class_MultiplayerPeer_method_get_packet_mode>`.
+呼叫以取得遠端對等端用於發送下一個可用封包的傳輸模式。請參閱 :ref:`MultiplayerPeer.get_packet_mode()<class_MultiplayerPeer_method_get_packet_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Called to get the transfer mode the remote peer used to send the next available 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_put_packet**\ (\ buffer\: ``const uint8_t*``, buffer_size\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__put_packet>`
 
-Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, with ``buffer_size`` being the size of the binary ``buffer`` in bytes.
+當 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 需要發送一個封包（packet）時呼叫，其中 ``buffer_size`` 表示二進位 ``buffer``\ （緩衝區）的大小（以位元組為單位）。
 
 .. rst-class:: classref-item-separator
 

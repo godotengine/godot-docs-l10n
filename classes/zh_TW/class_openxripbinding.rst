@@ -14,7 +14,7 @@ OpenXRIPBinding
 說明
 ----
 
-This binding resource binds an :ref:`OpenXRAction<class_OpenXRAction>` to an input or output. As most controllers have left hand and right versions that are handled by the same interaction profile we can specify multiple bindings. For instance an action "Fire" could be bound to both "/user/hand/left/input/trigger" and "/user/hand/right/input/trigger". This would require two binding entries.
+該綁定資源將一個 :ref:`OpenXRAction<class_OpenXRAction>` 綁定到輸入或輸出。由於大多數控制器都有由相同互動設定處理的左手和右手版本，我們可以指定多個綁定。例如，“開火”動作可以同時綁定到“/user/hand/left/input/trigger”和“/user/hand/right/input/trigger”，需要兩個綁定條目。
 
 .. rst-class:: classref-reftable-group
 
@@ -76,7 +76,7 @@ This binding resource binds an :ref:`OpenXRAction<class_OpenXRAction>` to an inp
 - |void| **set_action**\ (\ value\: :ref:`OpenXRAction<class_OpenXRAction>`\ )
 - :ref:`OpenXRAction<class_OpenXRAction>` **get_action**\ (\ )
 
-:ref:`OpenXRAction<class_OpenXRAction>` that is bound to :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>`.
+與綁定路徑 :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>` 綁定的 :ref:`OpenXRAction<class_OpenXRAction>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ This binding resource binds an :ref:`OpenXRAction<class_OpenXRAction>` to an inp
 - |void| **set_binding_modifiers**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_binding_modifiers**\ (\ )
 
-Binding modifiers for this binding.
+該綁定的綁定修改器。
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ Binding modifiers for this binding.
 - |void| **set_binding_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_binding_path**\ (\ )
 
-Binding path that defines the input or output bound to :ref:`action<class_OpenXRIPBinding_property_action>`.
+綁定路徑，定義與 :ref:`action<class_OpenXRIPBinding_property_action>` 綁定的輸入或輸出。
 
-\ **Note:** Binding paths are suggestions, an XR runtime may choose to bind the action to a different input or output emulating this input or output.
+\ **注意：**\ 綁定路徑只是建議，XR 執行時可能會選擇將該動作綁定到模擬該輸入或輸出的不同輸入或輸出。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Binding path that defines the input or output bound to :ref:`action<class_OpenXR
 
 :ref:`OpenXRActionBindingModifier<class_OpenXRActionBindingModifier>` **get_binding_modifier**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_get_binding_modifier>`
 
-Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
+取得位於該索引的 :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
 
 :ref:`int<class_int>` **get_binding_modifier_count**\ (\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_get_binding_modifier_count>`
 
-Get the number of binding modifiers for this binding.
+取得該綁定中綁定修改器的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Get the number of binding modifiers for this binding.
 
 **已棄用：** Binding is for a single path.
 
-獲取該綁定中輸入/輸出路徑的數量。
+取得該綁定中輸入/輸出路徑的數量。
 
 .. rst-class:: classref-item-separator
 

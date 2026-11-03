@@ -16,7 +16,7 @@ ResourceSaver
 
 用於將資源型別保存到檔案系統的單例。
 
-它會使用在引擎中註冊的（內建或外掛程式）\ :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 將資來源資料保存為文本檔案（如 ``.tres`` 或 ``.tscn``\ ）或二進位檔案（如 ``.res`` 或 ``.scn``\ ）。
+它會使用在引擎中註冊的（內建或外掛程式）\ :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 將資來源資料保存為文字檔案（如 ``.tres`` 或 ``.tscn``\ ）或二進位檔案（如 ``.res`` 或 ``.scn``\ ）。
 
 .. rst-class:: classref-reftable-group
 
@@ -160,7 +160,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`int<class_int>` **get_resource_id_for_path**\ (\ path\: :ref:`String<class_String>`, generate\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_ResourceSaver_method_get_resource_id_for_path>`
 
-Returns the resource ID for the given path. If ``generate`` is ``true``, a new resource ID will be generated if one for the path is not found. If ``generate`` is ``false`` and the path is not found, :ref:`ResourceUID.INVALID_ID<class_ResourceUID_constant_INVALID_ID>` is returned.
+返迴路徑對應的資源 ID。如果 ``generate`` 為 ``true``\ ，則路徑沒有對應資源 ID 時會生成一個新的。如果 ``generate`` 為 ``false`` 且路徑未找到，則會回傳 :ref:`ResourceUID.INVALID_ID<class_ResourceUID_constant_INVALID_ID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -184,13 +184,13 @@ Returns the resource ID for the given path. If ``generate`` is ``true``, a new r
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>` = "", flags\: |bitfield|\[:ref:`SaverFlags<enum_ResourceSaver_SaverFlags>`\] = 0\ ) :ref:`🔗<class_ResourceSaver_method_save>`
 
-Saves a resource to disk to the given path, using a :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` that recognizes the resource object. If ``path`` is empty, **ResourceSaver** will try to use :ref:`Resource.resource_path<class_Resource_property_resource_path>`.
+使用識別資源物件的 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 將資源儲存到給定路徑。如果 ``path`` 為空，則 **ResourceSaver** 將嘗試使用 :ref:`Resource.resource_path<class_Resource_property_resource_path>`\ 。
 
-The ``flags`` bitmask can be specified to customize the save behavior.
+可以指定 ``flags`` 位元遮罩自訂儲存行為。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
 
-\ **Note:** When the project is running, any generated UID associated with the resource will not be saved as the required code is only executed in editor mode.
+\ **注意：**\ 專案正執行時，任何生成的與資源關聯的 UID 都不會被儲存，因為所需的程式碼僅在編輯器模式下執行。
 
 .. rst-class:: classref-item-separator
 
@@ -202,9 +202,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_uid**\ (\ resource\: :ref:`String<class_String>`, uid\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ResourceSaver_method_set_uid>`
 
-Sets the UID of the given ``resource`` path to ``uid``. You can generate a new UID using :ref:`ResourceUID.create_id()<class_ResourceUID_method_create_id>`.
+將 ``resource`` 資源的路徑 UID 設定為 ``uid``\ 。你可以使用 :ref:`ResourceUID.create_id()<class_ResourceUID_method_create_id>` 來生成新的 UID。
 
-Since resources will normally get a UID automatically, this method is only useful in very specific cases.
+由於資源一般會自動取得 UID，該方法僅適用於非常特別的場合。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

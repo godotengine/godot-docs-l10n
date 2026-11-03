@@ -4151,9 +4151,9 @@ Se ``keep_offsets`` è ``true``, gli ancoraggi del controllo saranno aggiornati 
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalida la cache delle dimensioni massime in questo nodo e nei nodi padre fino al livello superiore. Pensato per essere utilizzato con :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` quando il valore restituito viene modificato. Impostare :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` richiama questo metodo automaticamente.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
-\ **Nota:** Chiamare questo metodo richiama anche :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` poiché le dimensioni minime combinate potrebbero essere influenzate dalla modifica delle dimensioni massime.
+\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 
 .. rst-class:: classref-item-separator
 

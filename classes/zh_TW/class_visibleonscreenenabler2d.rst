@@ -7,18 +7,18 @@ VisibleOnScreenEnabler2D
 
 **繼承：** :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A rectangular region of 2D space that, when visible on screen, enables a target node.
+二維空間的矩形區塊，當在螢幕上可見時，啟用目標節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**VisibleOnScreenEnabler2D** contains a rectangular region of 2D space and a target node. The target node will be automatically enabled (via its :ref:`Node.process_mode<class_Node_property_process_mode>` property) when any part of this region becomes visible on the screen, and automatically disabled otherwise. This can for example be used to activate enemies only when the player approaches them.
+**VisibleOnScreenEnabler2D** 包含 2D 空間的矩形區塊和目標節點。當該區塊的任何部分在螢幕上可見時，目標節點將自動啟用（通過其 :ref:`Node.process_mode<class_Node_property_process_mode>` 屬性），否則將自動停用。例如，這可以被用於僅在玩家接近敵人時啟用敵人。
 
-See :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>` if you only want to be notified when the region is visible on screen.
+如果你只想在該區塊在螢幕上可見時收到通知，請參閱 :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`\ 。
 
-\ **Note:** **VisibleOnScreenEnabler2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` is set to ``true``.
+\ **注意：**\ **VisibleOnScreenEnabler2D** 使用渲染剔除程式碼來確定它在螢幕上是否可見，因此除非 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 被設定為 ``true``\ ，否則它不會起作用。
 
 .. rst-class:: classref-reftable-group
 
@@ -93,7 +93,7 @@ enum **EnableMode**: :ref:`🔗<enum_VisibleOnScreenEnabler2D_EnableMode>`
 - |void| **set_enable_mode**\ (\ value\: :ref:`EnableMode<enum_VisibleOnScreenEnabler2D_EnableMode>`\ )
 - :ref:`EnableMode<enum_VisibleOnScreenEnabler2D_EnableMode>` **get_enable_mode**\ (\ )
 
-Determines how the target node is enabled. Corresponds to :ref:`ProcessMode<enum_Node_ProcessMode>`. When the node is disabled, it always uses :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+確定如何啟用目標節點。對應於 :ref:`ProcessMode<enum_Node_ProcessMode>`\ 。當該節點被停用時，它始終使用 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Determines how the target node is enabled. Corresponds to :ref:`ProcessMode<enum
 - |void| **set_enable_node_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_enable_node_path**\ (\ )
 
-The path to the target node, relative to the **VisibleOnScreenEnabler2D**. The target node is cached; it's only assigned when setting this property (if the **VisibleOnScreenEnabler2D** is inside the scene tree) and every time the **VisibleOnScreenEnabler2D** enters the scene tree. If the path is empty, no node will be affected. If the path is invalid, an error is also generated.
+目標節點的路徑，相對於 **VisibleOnScreenEnabler2D**\ 。目標節點會被快取；只有在設定這個屬性時（\ **VisibleOnScreenEnabler2D** 位於場景樹中），以及 **VisibleOnScreenEnabler2D** 進入場景樹時會進行賦值。如果路徑為空，則不會影響任何節點。如果路徑無效，則還會生成錯誤。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

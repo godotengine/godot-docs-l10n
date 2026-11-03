@@ -134,9 +134,9 @@ PathFollow2D
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance along the path as a number in the range 0.0 (for the first vertex) to 1.0 (for the last). This is just another way of expressing the progress within the path, as the offset supplied is multiplied internally by the path's length.
+沿路徑走過的距離，用 0.0（第一個頂點）到 1.0（最後一個頂點）範圍內的數字表示。這只是表示路徑內偏移量的另一種方式，提供的偏移量在內部會與路徑的長度相乘。
 
-It can be set or get only if the **PathFollow2D** is the child of a :ref:`Path2D<class_Path2D>` which is part of the scene tree, and that this :ref:`Path2D<class_Path2D>` has a :ref:`Curve2D<class_Curve2D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+\ **PathFollow2D** 為場景樹中 :ref:`Path2D<class_Path2D>` 的子節點時才能夠設定和取得，該 :ref:`Path2D<class_Path2D>` 中還需要存在長度非零的 :ref:`Curve2D<class_Curve2D>`\ 。否則設定該欄位會輸出錯誤，取得該欄位則會回傳 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 

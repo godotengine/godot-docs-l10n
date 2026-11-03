@@ -87,7 +87,7 @@ Slider
 
 **drag_ended**\ (\ value_changed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Slider_signal_drag_ended>`
 
-Emitted when the grabber stops being dragged. If ``value_changed`` is ``true``, :ref:`Range.value<class_Range_property_value>` is different from the value when the dragging was started.
+停止拖動抓取器時發出。如果 ``value_changed`` 為 ``true``\ ，則 :ref:`Range.value<class_Range_property_value>` 與開始拖動時的值不同。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Emitted when the grabber stops being dragged. If ``value_changed`` is ``true``, 
 
 **drag_started**\ (\ ) :ref:`🔗<class_Slider_signal_drag_started>`
 
-Emitted when the grabber starts being dragged. This is emitted before the corresponding :ref:`Range.value_changed<class_Range_signal_value_changed>` signal.
+開始拖動抓取器時發出，時機在對應的 :ref:`Range.value_changed<class_Range_signal_value_changed>` 訊號之前。
 
 .. rst-class:: classref-section-separator
 
@@ -122,7 +122,7 @@ enum **TickPosition**: :ref:`🔗<enum_Slider_TickPosition>`
 
 :ref:`TickPosition<enum_Slider_TickPosition>` **TICK_POSITION_BOTTOM_RIGHT** = ``0``
 
-Places the ticks at the bottom of the :ref:`HSlider<class_HSlider>`, or right of the :ref:`VSlider<class_VSlider>`.
+將刻度放置在 :ref:`HSlider<class_HSlider>` 的底部、\ :ref:`VSlider<class_VSlider>` 的右側。
 
 .. _class_Slider_constant_TICK_POSITION_TOP_LEFT:
 
@@ -130,7 +130,7 @@ Places the ticks at the bottom of the :ref:`HSlider<class_HSlider>`, or right of
 
 :ref:`TickPosition<enum_Slider_TickPosition>` **TICK_POSITION_TOP_LEFT** = ``1``
 
-Places the ticks at the top of the :ref:`HSlider<class_HSlider>`, or left of the :ref:`VSlider<class_VSlider>`.
+將刻度放置在 :ref:`HSlider<class_HSlider>` 的頂部、\ :ref:`VSlider<class_VSlider>` 的左側。
 
 .. _class_Slider_constant_TICK_POSITION_BOTH:
 
@@ -138,7 +138,7 @@ Places the ticks at the top of the :ref:`HSlider<class_HSlider>`, or left of the
 
 :ref:`TickPosition<enum_Slider_TickPosition>` **TICK_POSITION_BOTH** = ``2``
 
-Places the ticks at the both sides of the slider.
+在滑桿的兩側放置刻度。
 
 .. _class_Slider_constant_TICK_POSITION_CENTER:
 
@@ -146,7 +146,7 @@ Places the ticks at the both sides of the slider.
 
 :ref:`TickPosition<enum_Slider_TickPosition>` **TICK_POSITION_CENTER** = ``3``
 
-Places the ticks at the center of the slider.
+在滑桿的中間放置刻度。
 
 .. rst-class:: classref-section-separator
 
@@ -236,7 +236,7 @@ Places the ticks at the center of the slider.
 - |void| **set_ticks_position**\ (\ value\: :ref:`TickPosition<enum_Slider_TickPosition>`\ )
 - :ref:`TickPosition<enum_Slider_TickPosition>` **get_ticks_position**\ (\ )
 
-Sets the position of the ticks. See :ref:`TickPosition<enum_Slider_TickPosition>` for details.
+設定刻度的位置。詳見 :ref:`TickPosition<enum_Slider_TickPosition>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -265,7 +265,7 @@ Sets the position of the ticks. See :ref:`TickPosition<enum_Slider_TickPosition>
 
 :ref:`int<class_int>` **grabber_offset** = ``0`` :ref:`🔗<class_Slider_theme_constant_grabber_offset>`
 
-Vertical or horizontal offset of the grabber.
+抓取器的垂直或水平偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Vertical or horizontal offset of the grabber.
 
 :ref:`int<class_int>` **tick_offset** = ``0`` :ref:`🔗<class_Slider_theme_constant_tick_offset>`
 
-Vertical or horizontal offset of the ticks. The offset is reversed for top or left ticks.
+刻度的垂直或水平偏移量。頂部和左側刻度的偏移量是反的。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`Texture2D<class_Texture2D>` **grabber_disabled** :ref:`🔗<class_Slider_theme_icon_grabber_disabled>`
 
-抓取器禁用時的材質。
+抓取器停用時的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`StyleBox<class_StyleBox>` **grabber_area** :ref:`🔗<class_Slider_theme_style_grabber_area>`
 
-The background of the area to the left or bottom of the grabber.
+抓取器左側或底部區域的背景。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ The background of the area to the left or bottom of the grabber.
 
 :ref:`StyleBox<class_StyleBox>` **grabber_area_highlight** :ref:`🔗<class_Slider_theme_style_grabber_area_highlight>`
 
-The background of the area to the left or bottom of the grabber that displays when it's being hovered or focused.
+抓取器被懸停或聚焦時，顯示的左側或底部區域的背景。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ The background of the area to the left or bottom of the grabber that displays wh
 
 :ref:`StyleBox<class_StyleBox>` **slider** :ref:`🔗<class_Slider_theme_style_slider>`
 
-The background for the whole slider. Affects the height or width of the :ref:`grabber_area<class_Slider_theme_style_grabber_area>`.
+整個滑桿的背景。影響 :ref:`grabber_area<class_Slider_theme_style_grabber_area>` 的高度或寬度。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

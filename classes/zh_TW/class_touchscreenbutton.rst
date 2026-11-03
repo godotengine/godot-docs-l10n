@@ -14,11 +14,11 @@ TouchScreenButton
 說明
 ----
 
-TouchScreenButton allows you to create on-screen buttons for touch devices. It's intended for gameplay use, such as a unit you have to touch to move. Unlike :ref:`Button<class_Button>`, TouchScreenButton supports multitouch out of the box. Several TouchScreenButtons can be pressed at the same time with touch input.
+TouchScreenButton 允許你為觸摸裝置建立螢幕上的按鈕。其為遊戲使用，比如在必須觸摸才能移動的裝置。與 :ref:`Button<class_Button>` 不同，TouchScreenButton 原生支援多點觸摸。幾個 TouchScreenButton 可以通過觸摸輸入同時被按下。
 
-This node inherits from :ref:`Node2D<class_Node2D>`. Unlike with :ref:`Control<class_Control>` nodes, you cannot set anchors on it. If you want to create menus or user interfaces, you may want to use :ref:`Button<class_Button>` nodes instead. To make button nodes react to touch events, you can enable :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>` in the Project Settings.
+這個節點繼承自 :ref:`Node2D<class_Node2D>`\ 。與 :ref:`Control<class_Control>` 節點不同，你不能在它上面設定錨點。如果要建立選單或使用者介面，可用 :ref:`Button<class_Button>` 節點代替。為了使按鈕節點對觸摸事件作出反應，可在專案設定中啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`\ 。
 
-You can configure TouchScreenButton to be visible only on touch devices, helping you develop your game both for desktop and mobile devices.
+可將 TouchScreenButton 設定為只在觸摸裝置上可見，有助你同時為桌面和行動裝置開發遊戲。
 
 .. rst-class:: classref-reftable-group
 
@@ -278,7 +278,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>` **get_visibility_mode**\ (\ )
 
-The button's visibility mode.
+按鈕的可見性模式。
 
 .. rst-class:: classref-section-separator
 

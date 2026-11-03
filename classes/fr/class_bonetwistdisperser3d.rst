@@ -14,13 +14,13 @@ Un nœud qui propage et disperse la torsion de l'os enfant aux os parent.
 Description
 -----------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Ce **BoneTwistDisperser3D** permet d'interpoler une torsion lisse entre plusieurs os en dispersant la torsion de l'os final à ses parents. Cela ne change que la torsion sans changer la position globale de chaque articulation.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Ceci est utile pour tordre des os de manière lisse en combinaison avec :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` et de l'IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Note :** Si une torsion extraite est supérieure à 180 degrés, une inversion se produit. Ceci est similaire à :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Note :** La plupart des méthodes de cette classe acceptent un paramètre ``index``. Ce paramètre spécifie quelle entrée de la liste de paramètres doit être renvoyée si l'IK comporte plusieurs entrées (par exemple, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -473,7 +473,7 @@ Définit la direction de la queue de l'os de fin de la chaîne d'os lorsque :ref
 
 Définit le nom de l'os de fin de la chaîne d'os.
 
-\ **Note :** L'os de fin doit être l'os racine ou un enfant de l'os racine. S'ils sont les mêmes, la queue doit être étendue par :ref:`set_extend_end_bone()<class_BoneTwistDisperser3D_method_set_extend_end_bone>` pour faire gigoter l'os.
+\ **Note :** L'os de fin doit être un enfant de l'os racine ou lui-même.
 
 .. rst-class:: classref-item-separator
 

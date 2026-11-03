@@ -143,7 +143,7 @@ LinkButton 永遠不會在其文字底部顯示底線。
 - |void| **set_ellipsis_char**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_ellipsis_char**\ (\ )
 
-Ellipsis character used for text clipping.
+用於文字裁剪的省略字元。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Ellipsis character used for text clipping.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-Sets the clipping behavior when the text exceeds the node's bounding rectangle.
+設定文字超出節點邊界框時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 - |void| **set_underline_mode**\ (\ value\: :ref:`UnderlineMode<enum_LinkButton_UnderlineMode>`\ )
 - :ref:`UnderlineMode<enum_LinkButton_UnderlineMode>` **get_underline_mode**\ (\ )
 
-The underline mode to use for the text.
+文字使用的底線模式。
 
 .. rst-class:: classref-item-separator
 
@@ -279,22 +279,22 @@ The underline mode to use for the text.
 - |void| **set_uri**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uri**\ (\ )
 
-The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this **LinkButton**. If set to a valid URI, pressing the button opens the URI using the operating system's default program for the protocol (via :ref:`OS.shell_open()<class_OS_method_shell_open>`). HTTP and HTTPS URLs open the default web browser.
+這個 **LinkButton** 的 `URI <https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6>`__\ 。如果設定為有效的 URI，按下按鈕就會使用作業系統中與該協議對應的預設程式打開該 URI（使用 :ref:`OS.shell_open()<class_OS_method_shell_open>`\ ）。HTTP 和 HTTPS 的 URL 會打開預設的瀏覽器。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    uri = "https://godotengine.org"  # Opens the URL in the default web browser.
-    uri = "C:\SomeFolder"  # Opens the file explorer at the given path.
-    uri = "C:\SomeImage.png"  # Opens the given image in the default viewing app.
+    uri = "https://godotengine.org"  # 在預設瀏覽器中打開 URL。
+    uri = "C:\SomeFolder"  # 將檔案瀏覽器打開到給定的路徑。
+    uri = "C:\SomeImage.png"  # 在預設查看應用中打開給定的影像。
 
  .. code-tab:: csharp
 
-    Uri = "https://godotengine.org"; // Opens the URL in the default web browser.
-    Uri = "C:\SomeFolder"; // Opens the file explorer at the given path.
-    Uri = "C:\SomeImage.png"; // Opens the given image in the default viewing app.
+    Uri = "https://godotengine.org"; // 在預設瀏覽器中打開 URL。
+    Uri = "C:\SomeFolder"; // 將檔案瀏覽器打開到給定的路徑。
+    Uri = "C:\SomeImage.png"; // 在預設查看應用中打開給定的影像。
 
 
 
@@ -325,7 +325,7 @@ The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_disabled_color>`
 
-該 :ref:`Button<class_Button>` 處於禁用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
+該 :ref:`Button<class_Button>` 處於停用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_focus_color>`
 
-當 **LinkButton** 獲得焦點時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。禁用、懸停和按下狀態優先於這個顏色。
+當 **LinkButton** 獲得焦點時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。停用、懸停和按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this
 
 文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LinkButton_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LinkButton_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LinkButton_theme_style_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **LinkButton** is focused. The :ref:`focus<class_LinkButton_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+該 **LinkButton** 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`focus<class_LinkButton_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,11 +14,11 @@ ProceduralSkyMaterial
 說明
 ----
 
-**ProceduralSkyMaterial** provides a way to create an effective background quickly by defining procedural parameters for the sun, the sky and the ground. The sky and ground are defined by a main color, a color at the horizon, and an easing curve to interpolate between them. Suns are described by a position in the sky, a color, and a max angle from the sun at which the easing curve ends. The max angle therefore defines the size of the sun in the sky.
+**ProceduralSkyMaterial** 提供了一種通過為太陽、天空和地面定義程式參數，來快速建立一個有效背景的方法。天空和地面由主顏色、地平線顏色、以及在它們之間插值的緩動曲線定義。太陽通過天空中的位置、顏色、以及緩動曲線結束時距太陽的最大角度來描述。因此，最大角度定義了天空中太陽的大小。
 
-\ **ProceduralSkyMaterial** supports up to 4 suns, using the color, and energy, direction, and angular distance of the first four :ref:`DirectionalLight3D<class_DirectionalLight3D>` nodes in the scene. This means that the suns are defined individually by the properties of their corresponding :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s and globally by :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` and :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>`.
+\ **ProceduralSkyMaterial** 支援最多 4 個太陽，它們使用場景中前四個 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 節點的顏色、能量、方向和角距離。這意味著太陽由其相應的 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的屬性單獨定義，並由 :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` 和 :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>` 全域定義。
 
-\ **ProceduralSkyMaterial** uses a lightweight shader to draw the sky and is therefore suited for real-time updates. This makes it a great option for a sky that is simple and computationally cheap, but unrealistic. If you need a more realistic procedural option, use :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`.
+\ **ProceduralSkyMaterial** 使用輕量級著色器來繪製天空，因此適合即時更新。這使得它成為簡單、低計算成本且不切實際的天空的絕佳選擇。如果你需要更真實的程式化選項，請使用 :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`\ 。
 
 .. rst-class:: classref-reftable-group
 

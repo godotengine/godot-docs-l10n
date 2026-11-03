@@ -9,21 +9,21 @@ CompositorEffect
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-This resource allows for creating a custom rendering effect.
+用於建立自訂渲染效果的資源。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This resource defines a custom rendering effect that can be applied to :ref:`Viewport<class_Viewport>`\ s through the viewports' :ref:`Environment<class_Environment>`. You can implement a callback that is called during rendering at a given stage of the rendering pipeline and allows you to insert additional passes. Note that this callback happens on the rendering thread. CompositorEffect is an abstract base class and must be extended to implement specific rendering logic.
+這種資源定義的是自訂渲染效果，可以通過視埠的 :ref:`Environment<class_Environment>` 套用至 :ref:`Viewport<class_Viewport>` 上。可以實作在渲染管道的給定階段進行渲染期間呼叫的回呼，並允許插入其他階段。請注意，該回呼是在渲染執行緒上執行的。CompositorEffect 是抽象基底類別，實作特定的渲染邏輯必須對該類進行擴充。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`The Compositor <../tutorials/rendering/compositor>`
+- :doc:`合成器 <../tutorials/rendering/compositor>`
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_OPAQUE** = ``0``
 
-The callback is called before our opaque rendering pass, but after depth prepass (if applicable).
+回呼在不透明渲染階段之前呼叫，但在深度前置階段之後（如果適用）。
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_OPAQUE:
 
@@ -90,7 +90,7 @@ The callback is called before our opaque rendering pass, but after depth prepass
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_OPAQUE** = ``1``
 
-The callback is called after our opaque rendering pass, but before our sky is rendered.
+回呼在不透明渲染階段之後呼叫，但在渲染天空之前。
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_SKY:
 
@@ -98,7 +98,7 @@ The callback is called after our opaque rendering pass, but before our sky is re
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-The callback is called after our sky is rendered, but before our back buffers are created (and if enabled, before subsurface scattering and/or screen space reflections).
+回呼在渲染天空之後呼叫，但在建立後台緩衝之前（如果啟用，則在次表面散射和/或螢幕空間反射之前）。
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -106,7 +106,7 @@ The callback is called after our sky is rendered, but before our back buffers ar
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT** = ``3``
 
-The callback is called before our transparent rendering pass, but after our sky is rendered and we've created our back buffers.
+回呼在透明渲染階段之前呼叫，但在渲染天空和建立後台緩衝區之後。
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT:
 
@@ -114,7 +114,7 @@ The callback is called before our transparent rendering pass, but after our sky 
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-The callback is called after our transparent rendering pass, but before any built-in post-processing effects and output to our render target.
+回呼在透明渲染階段之後呼叫，但在內建後期效果和輸出到渲染目標之前。
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_MAX:
 
@@ -122,7 +122,7 @@ The callback is called after our transparent rendering pass, but before any buil
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_MAX** = ``5``
 
-Represents the size of the :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` enum.
+代表 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -144,9 +144,9 @@ Represents the size of the :ref:`EffectCallbackType<enum_CompositorEffect_Effect
 - |void| **set_access_resolved_color**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_color**\ (\ )
 
-If ``true`` and MSAA is enabled, this will trigger a color buffer resolve before the effect is run.
+如果為 ``true`` 並且啟用了 MSAA，則會在執行該效果之前觸發顏色緩衝的解析。
 
-\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the resolved buffer use:
+\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中存取解析後的緩衝，請使用：
 
 ::
 
@@ -168,9 +168,9 @@ If ``true`` and MSAA is enabled, this will trigger a color buffer resolve before
 - |void| **set_access_resolved_depth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_depth**\ (\ )
 
-If ``true`` and MSAA is enabled, this will trigger a depth buffer resolve before the effect is run.
+如果為 ``true`` 並且啟用了 MSAA，則會在執行該效果之前觸發深度緩衝的解析。
 
-\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the resolved buffer use:
+\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中存取解析後的緩衝，請使用：
 
 ::
 
@@ -192,7 +192,7 @@ If ``true`` and MSAA is enabled, this will trigger a depth buffer resolve before
 - |void| **set_effect_callback_type**\ (\ value\: :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>`\ )
 - :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **get_effect_callback_type**\ (\ )
 
-The type of effect that is implemented, determines at what stage of rendering the callback is called.
+實作的效果型別，決定在渲染的哪個階段呼叫回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The type of effect that is implemented, determines at what stage of rendering th
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-If ``true`` this rendering effect is applied to any viewport it is added to.
+如果為 ``true``\ ，則該渲染效果會套用至所有相關視埠。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ If ``true`` this rendering effect is applied to any viewport it is added to.
 - |void| **set_needs_motion_vectors**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_motion_vectors**\ (\ )
 
-If ``true`` this triggers motion vectors being calculated during the opaque render state.
+如果為 ``true``\ ，則會在不透明渲染狀態下觸發運動向量的計算。
 
-\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the motion vector buffer use:
+\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中存取運動向量緩衝，請使用：
 
 ::
 
@@ -250,16 +250,16 @@ If ``true`` this triggers motion vectors being calculated during the opaque rend
 - |void| **set_needs_normal_roughness**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_normal_roughness**\ (\ )
 
-If ``true`` this triggers normal and roughness data to be output during our depth pre-pass, only applicable for the Forward+ renderer.
+如果為 ``true``\ ，則會在深度預階段中輸出法線和粗糙度資料，僅適用於 Forward+ 渲染器。
 
-\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the roughness buffer use:
+\ **注意：**\ 在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中存取粗糙度緩衝：
 
 ::
 
     var render_scene_buffers = render_data.get_render_scene_buffers()
     var roughness_buffer = render_scene_buffers.get_texture("forward_clustered", "normal_roughness")
 
-The raw normal and roughness buffer is stored in an optimized format, different than the one available in Spatial shaders. When sampling the buffer, a conversion function must be applied. Use this function, copied from `here <https://github.com/godotengine/godot/blob/da5f39889f155658cef7f7ec3cc1abb94e17d815/servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered_inc.glsl#L334-L341>`__:
+原始的法線和粗糙度緩衝使用最佳化格式儲存，與空間著色器中的格式不同。對緩衝取樣時必須應用轉換函式。請使用從\ `這裡 <https://github.com/godotengine/godot/blob/da5f39889f155658cef7f7ec3cc1abb94e17d815/servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered_inc.glsl#L334-L341>`__\ 複製的函式：
 
 ::
 
@@ -287,7 +287,7 @@ The raw normal and roughness buffer is stored in an optimized format, different 
 - |void| **set_needs_separate_specular**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_separate_specular**\ (\ )
 
-If ``true`` this triggers specular data being rendered to a separate buffer and combined after effects have been applied, only applicable for the Forward+ renderer.
+如果為 ``true``\ ，則會觸發鏡面反射資料渲染至獨立緩衝，在應用效果後進行混合，僅適用於 Forward+ 渲染器。
 
 .. rst-class:: classref-section-separator
 
@@ -304,7 +304,7 @@ If ``true`` this triggers specular data being rendered to a separate buffer and 
 
 |void| **_render_callback**\ (\ effect_callback_type\: :ref:`int<class_int>`, render_data\: :ref:`RenderData<class_RenderData>`\ ) |virtual| :ref:`🔗<class_CompositorEffect_private_method__render_callback>`
 
-Implement this function with your custom rendering code. ``effect_callback_type`` should always match the effect callback type you've specified in :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>`. ``render_data`` provides access to the rendering state, it is only valid during rendering and should not be stored.
+請使用自訂的渲染程式碼實作該方法。\ ``effect_callback_type`` 應當與 :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>` 中指定的效果回呼型別一致。可以通過 ``render_data`` 存取渲染狀態，這個狀態只有在渲染時有效，不應該儲存。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

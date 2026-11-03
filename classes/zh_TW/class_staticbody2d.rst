@@ -29,7 +29,7 @@ StaticBody2D
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
 .. rst-class:: classref-reftable-group
 

@@ -127,7 +127,7 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 - |void| **set_path_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_length**\ (\ )
 
-Returns the length of the path.
+返迴路徑的長度。
 
 .. rst-class:: classref-item-separator
 

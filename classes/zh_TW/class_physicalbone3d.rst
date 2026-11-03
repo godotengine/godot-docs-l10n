@@ -17,16 +17,16 @@ PhysicalBone3D
 說明
 ----
 
-The **PhysicalBone3D** node is a physics body that can be used to make bones in a :ref:`Skeleton3D<class_Skeleton3D>` react to physics.
+**PhysicalBone3D** 節點是一個物理體，可用於使 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼對物理做出反應。
 
-\ **Note:** In order to detect physical bones with raycasts, the :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` property of the parent :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` must be ``true`` and the :ref:`Skeleton3D<class_Skeleton3D>`'s bone must be assigned to **PhysicalBone3D** correctly; it means that :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` should return a valid id (``>= 0``).
+\ **注意：**\ 為了通過射線投射檢測物理骨骼，父級 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` 的 :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` 屬性必須為 ``true``\ ，並且 :ref:`Skeleton3D<class_Skeleton3D>` 的骨骼必須正確分配給 **PhysicalBone3D**\ ；這意味著 :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` 應該回傳一個有效的 id（\ ``>= 0``\ ）。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`布娃娃系統 <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
@@ -139,7 +139,7 @@ enum **JointType**: :ref:`🔗<enum_PhysicalBone3D_JointType>`
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_NONE** = ``0``
 
-No joint is applied to the PhysicsBone3D.
+PhysicsBone3D 未應用任何關節。
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_PIN:
 
@@ -147,7 +147,7 @@ No joint is applied to the PhysicsBone3D.
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_PIN** = ``1``
 
-A pin joint is applied to the PhysicsBone3D.
+PhysicsBone3D 應用了釘固關節。
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_CONE:
 
@@ -155,7 +155,7 @@ A pin joint is applied to the PhysicsBone3D.
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_CONE** = ``2``
 
-A cone joint is applied to the PhysicsBone3D.
+PhysicsBone3D 應用了錐形關節。
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_HINGE:
 
@@ -163,7 +163,7 @@ A cone joint is applied to the PhysicsBone3D.
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_HINGE** = ``3``
 
-A hinge joint is applied to the PhysicsBone3D.
+PhysicsBone3D 應用了鉸鏈關節。
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_SLIDER:
 
@@ -171,7 +171,7 @@ A hinge joint is applied to the PhysicsBone3D.
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_SLIDER** = ``4``
 
-A slider joint is applied to the PhysicsBone3D.
+PhysicsBone3D 應用了滑桿關節。
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_6DOF:
 
@@ -179,7 +179,7 @@ A slider joint is applied to the PhysicsBone3D.
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_6DOF** = ``5``
 
-A 6 degrees of freedom joint is applied to the PhysicsBone3D.
+PhysicsBone3D 應用了六自由度關節。
 
 .. rst-class:: classref-section-separator
 
@@ -201,9 +201,9 @@ A 6 degrees of freedom joint is applied to the PhysicsBone3D.
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Damps the body's rotation. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, you can set :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to be added to or to replace the body's damping value.
+阻礙物體的旋轉。預設情況下，物體將使用專案設定 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ ，或物體所在的 :ref:`Area3D<class_Area3D>` 中設定的任何覆蓋值。取決於 :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`\ ，可以設定 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` 以增加或替換物體的阻尼值。
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+有關阻尼的更多詳細資訊，請參閱 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_
 - |void| **set_angular_damp_mode**\ (\ value\: :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ )
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_angular_damp_mode**\ (\ )
 
-Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is applied.
+定義如何應用 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -307,9 +307,9 @@ Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is a
 - |void| **set_use_custom_integrator**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_integrator**\ (\ )
 
-If ``true``, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` method, if that virtual method is overridden.
+如果為 ``true``\ ，則該物體的標準力積分（如重力或阻尼）將被停用。除了碰撞響應之外，如果覆蓋了 :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` 方法，則物體將僅按照該方法確定的方式移動。
 
-Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>` internally.
+設定該屬性將在內部呼叫方法 :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_f
 - |void| **set_gravity_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_scale**\ (\ )
 
-This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` to produce this body's gravity. For example, a value of ``1.0`` will apply normal gravity, ``2.0`` will apply double the gravity, and ``0.5`` will apply half the gravity to this body.
+與 :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` 相乘，得到該物體的重力。例如取值為 ``1.0`` 就是正常重力，\ ``2.0`` 就是雙倍重力，\ ``0.5`` 會讓套用至這個物件的重力減半。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_Pro
 - |void| **set_joint_type**\ (\ value\: :ref:`JointType<enum_PhysicalBone3D_JointType>`\ )
 - :ref:`JointType<enum_PhysicalBone3D_JointType>` **get_joint_type**\ (\ )
 
-Sets the joint type.
+設定關節型別。
 
 .. rst-class:: classref-item-separator
 
@@ -411,9 +411,9 @@ Sets the joint type.
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-Damps the body's movement. By default, the body will use :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` may be added to or replace the body's damping value.
+阻礙物體的運動。預設情況下，物體將使用 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ ，或物體所在的 :ref:`Area3D<class_Area3D>` 中設定的任何覆蓋值。取決於 :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`\ ，可以設定 :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` 以增加或替換物體的阻尼值。
 
-See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` for more details about damping.
+有關阻尼的更多詳細資訊，請參閱 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ )
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is applied.
+定義如何應用 :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is app
 
 |void| **_integrate_forces**\ (\ state\: :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ ) |virtual| :ref:`🔗<class_PhysicalBone3D_private_method__integrate_forces>`
 
-Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` property allows you to disable the standard force integration and do fully custom force integration for a body.
+在物理處理過程中被呼叫，允許你讀取並安全地修改物件的模擬狀態。預設情況下，它在標準力積分之前呼叫，但 :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` 屬性允許你停用標準力積分並對物體進行完全自訂的力積分。
 
 .. rst-class:: classref-item-separator
 
@@ -493,11 +493,11 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_central_impulse>`
 
-Applies a directional impulse without affecting rotation.
+施加不影響旋轉的定向衝量。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
+衝量與時間無關！每影格都應用衝量會產生取決於影格率的力。因此只應該用於模擬一次性衝擊（否則請使用“_integrate_forces”函式）。
 
-This is equivalent to using :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>` at the body's center of mass.
+等價於在物體的質心處使用 :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -509,11 +509,11 @@ This is equivalent to using :ref:`apply_impulse()<class_PhysicalBone3D_method_ap
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_impulse>`
 
-Applies a positioned impulse to the PhysicsBone3D.
+在指定位置對 PhysicsBone3D 施加衝量。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
+衝量與時間無關！每個影格都施加衝量，會產生依賴影格率的力。因此，僅套用至模擬一次性的撞擊（其他情況請使用 "_integrate_forces" 函式）。
 
-\ ``position`` is the offset from the PhysicsBone3D origin in global coordinates.
+\ ``position`` 是以全域座標表示、相對於 PhysicsBone3D 原點的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 :ref:`int<class_int>` **get_bone_id**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_bone_id>`
 
-Returns the unique identifier of the PhysicsBone3D.
+回傳 PhysicsBone3D 的唯一標識符。
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Returns the unique identifier of the PhysicsBone3D.
 
 :ref:`bool<class_bool>` **get_simulate_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_get_simulate_physics>`
 
-Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
+如果 PhysicsBone3D 允許進行物理模擬，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_is_simulating_physics>`
 
-Returns ``true`` if the PhysicsBone3D is currently simulating physics.
+如果 PhysicsBone3D 正在進行物理模擬，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

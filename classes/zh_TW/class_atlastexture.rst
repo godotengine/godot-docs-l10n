@@ -14,7 +14,7 @@ AtlasTexture
 說明
 ----
 
-:ref:`Texture2D<class_Texture2D>` 資源，只會繪製其 :ref:`atlas<class_AtlasTexture_property_atlas>` 紋理中由 :ref:`region<class_AtlasTexture_property_region>` 定義的區域，並可另外設定 :ref:`margin<class_AtlasTexture_property_margin>` 以進行微調。
+:ref:`Texture2D<class_Texture2D>` 資源，只會繪製其 :ref:`atlas<class_AtlasTexture_property_atlas>` 紋理中由 :ref:`region<class_AtlasTexture_property_region>` 定義的區域，並可另周邊裝置定 :ref:`margin<class_AtlasTexture_property_margin>` 以進行微調。
 
 可以從同一個 :ref:`atlas<class_AtlasTexture_property_atlas>` 裁剪出多個 **AtlasTexture** 資源。將許多小型紋理打包到單一大型紋理中，可減少顯示記憶體占用並降低繪製呼叫次數。
 
@@ -111,9 +111,9 @@ AtlasTexture
 - |void| **set_region**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region**\ (\ )
 
-The region used to draw the :ref:`atlas<class_AtlasTexture_property_atlas>`. If either dimension of the region's size is ``0``, the value from :ref:`atlas<class_AtlasTexture_property_atlas>` size will be used for that axis instead.
+用於繪製 :ref:`atlas<class_AtlasTexture_property_atlas>` 的區域。如果區域在任一方向上大小為 ``0``\ ，則該方向會使用 :ref:`atlas<class_AtlasTexture_property_atlas>` 的大小。
 
-\ **Note:** The image size is always an integer, so the actual region size is rounded down.
+\ **注意：**\ 圖片大小總是整數，所以實際的區域大小會被向下取整。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

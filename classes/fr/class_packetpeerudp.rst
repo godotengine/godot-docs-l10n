@@ -98,13 +98,13 @@ Descriptions des méthodes
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ port\: :ref:`int<class_int>`, bind_address\: :ref:`String<class_String>` = "*", recv_buf_size\: :ref:`int<class_int>` = 65536\ ) :ref:`🔗<class_PacketPeerUDP_method_bind>`
 
-Binds this **PacketPeerUDP** to the specified ``port`` and ``bind_address`` with a buffer size ``recv_buf_size``, allowing it to receive incoming packets.
+Lie ce **PacketPeerUDP** au port ``port`` et adresse ``bind_address`` spécifiés avec une taille de buffer de ``recv_buf_size``, lui permettant de recevoir les paquets arrivants.
 
-If ``bind_address`` is set to ``"*"`` (default), the peer will be bound on all available addresses (both IPv4 and IPv6).
+Si ``bind_address`` est défini à ``"*"`` (par défaut), le pair sera lié à toutes les adresses disponibles (à la fois IPv4 et IPv6.)
 
-If ``bind_address`` is set to ``"0.0.0.0"`` (for IPv4) or ``"::"`` (for IPv6), the peer will be bound to all available addresses matching that IP type.
+Si ``bind_address`` est défini à ``"0.0.0.0"`` (pour IPv4) ou ``"::"`` (pour IPv6), le pair sera lié à toutes les adresses disponibles correspondant à ce type d'IP.
 
-If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::1"``, etc.), the peer will only be bound to the interface with that address (or fail if no interface with the given address exists).
+Si ``bind_address`` est défini à n'importe quelle adresse valide (par exemple ``"192.168.1.101"``, ``"::1"``, etc), le pair ne sera lié qu'à l'interface avec cette adresses (ou échouera si aucune interface avec l'adresse donnée n'existe).
 
 .. rst-class:: classref-item-separator
 

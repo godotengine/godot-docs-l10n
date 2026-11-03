@@ -139,7 +139,7 @@ Emitida cuando el ``area`` recibido sale de esta área. Requiere que :ref:`monit
 
 Emitida cuando una forma (:ref:`Shape2D<class_Shape2D>`) del área externa (``area``) entra en una forma de esta área. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté establecido en ``true``.
 
-Los parámetros ``local_shape_index`` y ``area_shape_index`` contienen los índices de las formas que interactúan de ésta área y del área externa, respectivamente. ``area_rid`` contiene el :ref:`RID<class_RID>` del área externa. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
+Los parámetros ``local_shape_index`` y ``area_shape_index`` contienen los índices de las formas que interactúan de esta área y del área externa, respectivamente. ``area_rid`` contiene el :ref:`RID<class_RID>` del área externa. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
 \ **Ejemplo:** Obtener el nodo :ref:`CollisionShape2D<class_CollisionShape2D>` a partir del índice de la forma:
 
@@ -204,9 +204,9 @@ Emitido cuando el ``body`` recibido sale de este área. ``body`` puede ser un :r
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_entered>`
 
-Emitida cuando una forma :ref:`Shape2D<class_Shape2D>` del cuerpo externo ``body`` entra en una forma de ésta área. ``body`` puede ser un :ref:`PhysicsBody2D<class_PhysicsBody2D>` o un :ref:`TileMap<class_TileMap>`. Los :ref:`TileMap<class_TileMap>` se detectan si su :ref:`TileSet<class_TileSet>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté establecido en ``true``.
+Emitida cuando una forma :ref:`Shape2D<class_Shape2D>` del cuerpo externo ``body`` entra en una forma de esta área. ``body`` puede ser un :ref:`PhysicsBody2D<class_PhysicsBody2D>` o un :ref:`TileMap<class_TileMap>`. Los :ref:`TileMap<class_TileMap>` se detectan si su :ref:`TileSet<class_TileSet>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté establecido en ``true``.
 
-Los parámetros ``local_shape_index`` y ``body_shape_index`` contienen los índices de las formas que interactúan de ésta área y del cuerpo externo, respectivamente. ``body_rid`` contiene el :ref:`RID<class_RID>` del cuerpo externo. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
+Los parámetros ``local_shape_index`` y ``body_shape_index`` contienen los índices de las formas que interactúan de esta área y del cuerpo externo, respectivamente. ``body_rid`` contiene el :ref:`RID<class_RID>` del cuerpo externo. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
 \ **Ejemplo:** Obtener el nodo :ref:`CollisionShape2D<class_CollisionShape2D>` a partir del índice de la forma:
 
@@ -331,7 +331,7 @@ Véase :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettin
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-Modo de sobre-escritura para los cálculos de amortiguación angular dentro de esta área.
+Modo de sobrescritura para los cálculos de amortiguación angular dentro de esta área.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ Si es ``true``, el área del bus de audio sobrescribe el bus de audio por defect
 - |void| **set_gravity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity**\ (\ )
 
-Intensidad gravitatoria del area (en píxeles por segundo al cuadrado). Este valor multiplica la dirección gravitatoria . Esto resulta útil para modificar la fuerza de la gravedad sin alterar su dirección.
+Intensidad gravitatoria del area (en píxeles por segundo al cuadrado). Este valor multiplica la dirección gravitatoria. Esto resulta útil para modificar la fuerza de la gravedad sin alterar su dirección.
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ Véase :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSetting
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-Modo de sobre-escritura para cálculos de amortiguación lineal dentro de esta área.
+Modo de sobrescritura para cálculos de amortiguación lineal dentro de esta área.
 
 .. rst-class:: classref-item-separator
 

@@ -147,9 +147,9 @@ Font
 
 :ref:`float<class_float>` **draw_char**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, char\: :ref:`int<class_int>`, font_size\: :ref:`int<class_int>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_char>`
 
-Draw a single Unicode character ``char`` into a canvas item using the font, at a given position, with ``modulate`` color. ``pos`` specifies the baseline, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用該字型將單個 Unicode 字元 ``char`` 繪製在畫布項目中的給定的位置，顏色為 ``modulate``\ 。\ ``pos`` 指定的是基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣系統，否則會使用視埠的過取樣設定。
 
-\ **Note:** Do not use this function to draw strings character by character, use :ref:`draw_string()<class_Font_method_draw_string>` or :ref:`TextLine<class_TextLine>` instead.
+\ **注意：**\ 請勿使用這個方法進行逐字元的繪製，請改用 :ref:`draw_string()<class_Font_method_draw_string>` 或 :ref:`TextLine<class_TextLine>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -161,9 +161,9 @@ Draw a single Unicode character ``char`` into a canvas item using the font, at a
 
 :ref:`float<class_float>` **draw_char_outline**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, char\: :ref:`int<class_int>`, font_size\: :ref:`int<class_int>`, size\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_char_outline>`
 
-Draw a single Unicode character ``char`` outline into a canvas item using the font, at a given position, with ``modulate`` color and ``size`` outline size. ``pos`` specifies the baseline, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用該字型將單個 Unicode 字元 ``char`` 的輪廓繪製在畫布項目中的給定的位置，顏色為 ``modulate``\ ，外框大小為 ``size``\ 。\ ``pos`` 指定的是基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣係數，否則會使用視埠的過取樣設定。
 
-\ **Note:** Do not use this function to draw strings character by character, use :ref:`draw_string()<class_Font_method_draw_string>` or :ref:`TextLine<class_TextLine>` instead.
+\ **注意：**\ 請勿使用這個方法進行逐字元的繪製，請改用 :ref:`draw_string()<class_Font_method_draw_string>` 或 :ref:`TextLine<class_TextLine>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +175,9 @@ Draw a single Unicode character ``char`` outline into a canvas item using the fo
 
 |void| **draw_multiline_string**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_multiline_string>`
 
-Breaks ``text`` into lines using rules specified by ``brk_flags`` and draws it into a canvas item using the font, at a given position, with ``modulate`` color, optionally clipping the width and aligning horizontally. ``pos`` specifies the baseline of the first line, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``brk_flags`` 指定的規則對 ``text`` 進行斷行，並使用該字型將其繪製在畫布項目中的給定位置，顏色為 ``modulate``\ ，也可以指定裁剪寬度並進行水平對齊。\ ``pos`` 指定的是基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣系統，否則會使用視埠的過取樣設定。
 
-See also :ref:`CanvasItem.draw_multiline_string()<class_CanvasItem_method_draw_multiline_string>`.
+另見 :ref:`CanvasItem.draw_multiline_string()<class_CanvasItem_method_draw_multiline_string>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,9 +189,9 @@ See also :ref:`CanvasItem.draw_multiline_string()<class_CanvasItem_method_draw_m
 
 |void| **draw_multiline_string_outline**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, size\: :ref:`int<class_int>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_multiline_string_outline>`
 
-Breaks ``text`` to the lines using rules specified by ``brk_flags`` and draws text outline into a canvas item using the font, at a given position, with ``modulate`` color and ``size`` outline size, optionally clipping the width and aligning horizontally. ``pos`` specifies the baseline of the first line, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``brk_flags`` 指定的規則對 ``text`` 進行斷行，並使用該字型將其輪廓繪製在畫布項目中的給定位置，顏色為 ``modulate``\ ，外框大小為 ``size``\ ，也可以指定裁剪寬度並進行水平對齊。\ ``pos`` 指定的是第一行的基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣係數，否則會使用視埠的過取樣設定。
 
-See also :ref:`CanvasItem.draw_multiline_string_outline()<class_CanvasItem_method_draw_multiline_string_outline>`.
+另見 :ref:`CanvasItem.draw_multiline_string_outline()<class_CanvasItem_method_draw_multiline_string_outline>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ See also :ref:`CanvasItem.draw_multiline_string_outline()<class_CanvasItem_metho
 
 |void| **draw_string**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_string>`
 
-Draw ``text`` into a canvas item using the font, at a given position, with ``modulate`` color, optionally clipping the width and aligning horizontally. ``pos`` specifies the baseline, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用該字型將 ``text`` 繪製在畫布項目中的給定位置，顏色為 ``modulate``\ ，也可以指定裁剪寬度並進行水平對齊。\ ``pos`` 指定的是基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣系統，否則會使用視埠的過取樣設定。
 
-See also :ref:`CanvasItem.draw_string()<class_CanvasItem_method_draw_string>`.
+另見 :ref:`CanvasItem.draw_string()<class_CanvasItem_method_draw_string>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -217,9 +217,9 @@ See also :ref:`CanvasItem.draw_string()<class_CanvasItem_method_draw_string>`.
 
 |void| **draw_string_outline**\ (\ canvas_item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, size\: :ref:`int<class_int>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_draw_string_outline>`
 
-Draw ``text`` outline into a canvas item using the font, at a given position, with ``modulate`` color and ``size`` outline size, optionally clipping the width and aligning horizontally. ``pos`` specifies the baseline, not the top. To draw from the top, *ascent* must be added to the Y axis. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用該字型將 ``text`` 的輪廓繪製在畫布項目中的給定位置，顏色為 ``modulate``\ ，外框大小為 ``size``\ ，也可以指定裁剪寬度並進行水平對齊。\ ``pos`` 指定的是基線位置而不是頂部。如果要按頂部位置繪製，則必須在 Y 軸中加入\ *升部*\ 。如果 ``oversampling`` 大於零，則會將其用作字型過取樣係數，否則會使用視埠的過取樣設定。
 
-See also :ref:`CanvasItem.draw_string_outline()<class_CanvasItem_method_draw_string_outline>`.
+另見 :ref:`CanvasItem.draw_string_outline()<class_CanvasItem_method_draw_string_outline>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ See also :ref:`CanvasItem.draw_string_outline()<class_CanvasItem_method_draw_str
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-Returns the maximum font ascent (number of pixels above the baseline) of this font and all fallback fonts.
+回傳該字型及其所有備用字型（fallback fonts）的最大上升高度（即基線以上的像素數）。
 
-\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
+\ **注意：** 字串的實際上升高度是取決於具體情境（具體文字內容）的，可能會與該函式回傳的值有顯著差異。請僅將其作為粗略的估算值使用（例如，用於估算空行的上升高度）。
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ Returns the maximum font ascent (number of pixels above the baseline) of this fo
 
 :ref:`Vector2<class_Vector2>` **get_char_size**\ (\ char\: :ref:`int<class_int>`, font_size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_char_size>`
 
-Returns the size of a character. Does not take kerning into account.
+回傳字元的大小。不考慮字偶距。
 
-\ **Note:** Do not use this function to calculate width of the string character by character, use :ref:`get_string_size()<class_Font_method_get_string_size>` or :ref:`TextLine<class_TextLine>` instead. The height returned is the font height (see also :ref:`get_height()<class_Font_method_get_height>`) and has no relation to the glyph height.
+\ **注意：**\ 不要使用這個函式逐個字元地計算字串的寬度，而是使用 :ref:`get_string_size()<class_Font_method_get_string_size>` 或 :ref:`TextLine<class_TextLine>`\ 。回傳的高度是字型高度（另見 :ref:`get_height()<class_Font_method_get_height>`\ ）並且與字形高度無關。
 
 .. rst-class:: classref-item-separator
 
@@ -271,9 +271,9 @@ Returns the size of a character. Does not take kerning into account.
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-Returns the maximum font descent (number of pixels below the baseline) of this font and all fallback fonts.
+回傳該字型及其所有備用字型（fallback fonts）的最大下降高度（即基線以下的像素數）。
 
-\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
+\ **注意：** 字串的實際下降高度是取決於具體情境（具體文字內容）的，可能會與該函式回傳的值有顯著差異。請僅將其作為粗略的估算值使用（例如，用於估算空行的下降高度）。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Returns the maximum font descent (number of pixels below the baseline) of this f
 
 |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\] **get_font_style**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_style>`
 
-Returns font style flags.
+回傳字型樣式標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Returns font style flags.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_colors**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`FontVariation<class_FontVariation>`.
+回傳 ``index`` 處預定義顏色調色板中的陣列。調色板包含用於渲染字型字形的所有顏色。每個調色板的顏色數量相同。可以使用 :ref:`FontVariation<class_FontVariation>` 覆蓋顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **get_palette_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+回傳預定義顏色調色板的數量。調色板包含用於渲染字型字形的所有顏色。每個調色板的顏色數量相同。
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`String<class_String>` **get_palette_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+回傳 ``index`` 處預定義顏色調色板的名稱。調色板包含用於渲染字型字形的所有顏色。每個調色板的顏色數量相同。
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Returns the name of the predefined color palette at ``index``. Palette contains 
 
 :ref:`int<class_int>` **get_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`\ ) |const| :ref:`🔗<class_Font_method_get_spacing>`
 
-Returns the amount of spacing for the given ``spacing`` type.
+回傳間隔型別 ``spacing`` 的間距。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 返回一個單行字串的邊界框的大小，考慮字距調整、提前量和子圖元定位。另見 :ref:`get_multiline_string_size()<class_Font_method_get_multiline_string_size>` 和 :ref:`draw_string()<class_Font_method_draw_string>`\ 。
 
-例如，要獲取單行 Label 所顯示的字串大小，請使用：
+例如，要取得單行 Label 所顯示的字串大小，請使用：
 
 
 .. tabs::
@@ -527,11 +527,11 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_variation_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_variation_list>`
 
-Returns list of supported `variation coordinates <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, each coordinate is returned as ``tag: Vector3i(min_value,max_value,default_value)``.
+回傳支援的\ `變體座標 <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__\ 清單，座標以 ``tag: Vector3i(min_value,max_value,default_value)`` 的形式回傳。
 
-Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.
+字型變體能夠沿著某個給定的設計軸對字形的特性進行連續的變化，例如字重、寬度、斜度。
 
-To print available variation axes of a variable font:
+要輸出可變字型的可用變體軸：
 
 ::
 
@@ -541,9 +541,9 @@ To print available variation axes of a variable font:
     for tag in variation_list:
         var name = TextServerManager.get_primary_interface().tag_to_name(tag)
         var values = variation_list[tag]
-        print("variation axis: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
+        print("變體軸：%s (%d)\n\t最小值、最大值、預設值：%s" % [name, tag, values])
 
-\ **Note:** To set and get variation coordinates of a :ref:`FontVariation<class_FontVariation>`, use :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
+\ **注意：**\ :ref:`FontVariation<class_FontVariation>` 變體座標的設定和取得請使用 :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ To print available variation axes of a variable font:
 
 :ref:`bool<class_bool>` **is_language_supported**\ (\ language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Font_method_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+如果該字型支援給定的語言（以 `ISO 639 <https://zh.wikipedia.org/wiki/ISO_639-1>`__ 碼），則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **is_script_supported**\ (\ script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Font_method_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+如果該字型支援給定的文字（以 `ISO 15924 <https://zh.wikipedia.org/wiki/ISO_15924>`__ 碼），則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

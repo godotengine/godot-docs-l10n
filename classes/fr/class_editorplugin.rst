@@ -1236,9 +1236,9 @@ Adds a :ref:`Script<class_Script>` as debugger plugin to the Debugger. The scrip
 
 |void| **add_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_add_dock>`
 
-Adds a new dock.
+Ajoute un nouveau dock.
 
-When your plugin is deactivated, make sure to remove your custom dock with :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Quand votre plugin est désactivé, assurez vous de retirer votre dock personnalisé avec :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` et de le libérer avec :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 

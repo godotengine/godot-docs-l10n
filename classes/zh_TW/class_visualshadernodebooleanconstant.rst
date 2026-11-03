@@ -14,9 +14,9 @@ VisualShaderNodeBooleanConstant
 說明
 ----
 
-Has only one output port and no inputs.
+只有一個輸出連接埠，沒有輸入。
 
-Translated to ``bool`` in the shader language.
+在著色器語言中被轉換成 ``bool``\ 。
 
 .. rst-class:: classref-reftable-group
 

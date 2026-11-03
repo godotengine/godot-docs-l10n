@@ -3498,7 +3498,7 @@ Erreur de bogue, causée par un problème d'implémentation dans la méthode.
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-Printer on fire error (this is an easter egg, no built-in methods return this error code).
+Erreur d'imprimante en feu (Il s'agit d'un easter egg, aucune méthode du moteur ne renvoie ce code d'erreur).
 
 .. rst-class:: classref-item-separator
 
@@ -3556,7 +3556,7 @@ Contrairement à :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_H
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
+Indique qu'une propriété de nombre décimal :ref:`float<class_float>` doit être modifiée depuis un éditeur de courbe utilisant une fonction de transition exponentielle. La chaîne de caractères d'indice peut inclure ``"attenuation"`` pour inverser la courbe horizontalement et/ou ``"positive_only"`` pour exclure la transition in/out et forcer les valeurs à être supérieures ou égales à 0. S'affiche différemment d'une propriété qui utilise :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` avec le mot clé ``"exp"``, qui est éditée avec un slider au lieu d'un éditeur de courbe.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -4909,7 +4909,7 @@ Constantes
 
 **UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
 
-Maximum value of an 8-bit unsigned integer.
+Valeur maximale d'un entier 8-bits non signé.
 
 .. _class_@GlobalScope_constant_UINT16_MAX:
 
@@ -4917,7 +4917,7 @@ Maximum value of an 8-bit unsigned integer.
 
 **UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
 
-Maximum value of a 16-bit unsigned integer.
+Valeur maximale d'un entier 16-bits non signé.
 
 .. _class_@GlobalScope_constant_UINT32_MAX:
 
@@ -4925,7 +4925,7 @@ Maximum value of a 16-bit unsigned integer.
 
 **UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
 
-Maximum value of a 32-bit unsigned integer.
+Valeur maximale d'un entier 32-bits non signé.
 
 .. _class_@GlobalScope_constant_INT8_MIN:
 
@@ -4933,7 +4933,7 @@ Maximum value of a 32-bit unsigned integer.
 
 **INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
 
-Minimum value of an 8-bit signed integer.
+Valeur minimale d'un entier 8-bits signé.
 
 .. _class_@GlobalScope_constant_INT8_MAX:
 
@@ -4941,7 +4941,7 @@ Minimum value of an 8-bit signed integer.
 
 **INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
 
-Maximum value of an 8-bit signed integer.
+Valeur maximale d'un entier 8-bits signé.
 
 .. _class_@GlobalScope_constant_INT16_MIN:
 
@@ -4949,7 +4949,7 @@ Maximum value of an 8-bit signed integer.
 
 **INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
 
-Minimum value of a 16-bit signed integer.
+Valeur minimale d'un entier 16-bits signé.
 
 .. _class_@GlobalScope_constant_INT16_MAX:
 
@@ -4957,7 +4957,7 @@ Minimum value of a 16-bit signed integer.
 
 **INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
 
-Maximum value of a 16-bit signed integer.
+Valeur maximale d'un entier 16-bits signé.
 
 .. _class_@GlobalScope_constant_INT32_MIN:
 
@@ -4965,7 +4965,7 @@ Maximum value of a 16-bit signed integer.
 
 **INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
 
-Minimum value of a 32-bit signed integer.
+Valeur minimale d'un entier 32-bits signé.
 
 .. _class_@GlobalScope_constant_INT32_MAX:
 
@@ -4973,7 +4973,7 @@ Minimum value of a 32-bit signed integer.
 
 **INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
 
-Maximum value of a 32-bit signed integer.
+Valeur maximale d'un entier 32-bits signé.
 
 .. _class_@GlobalScope_constant_INT64_MIN:
 
@@ -4981,7 +4981,7 @@ Maximum value of a 32-bit signed integer.
 
 **INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
 
-Minimum value of a 64-bit signed integer.
+Valeur minimale d'un entier 64-bits signé.
 
 .. _class_@GlobalScope_constant_INT64_MAX:
 
@@ -4989,7 +4989,7 @@ Minimum value of a 64-bit signed integer.
 
 **INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
 
-Maximum value of a 64-bit signed integer.
+Valeur maximale d'un entier 64-bits signé.
 
 .. rst-class:: classref-section-separator
 

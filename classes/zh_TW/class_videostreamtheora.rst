@@ -14,9 +14,9 @@ VideoStreamTheora
 說明
 ----
 
-:ref:`VideoStream<class_VideoStream>` resource handling the `Ogg Theora <https://www.theora.org/>`__ video format with ``.ogv`` extension. The Theora codec is decoded on the CPU.
+:ref:`VideoStream<class_VideoStream>` 資源處理帶有 ``.ogv`` 副檔名的 `Ogg Theora <https://www.theora.org/>`__ 影片格式。Theora 編解碼器在 CPU 上進行解碼。
 
-\ **Note:** While Ogg Theora videos can also have a ``.ogg`` extension, you will have to rename the extension to ``.ogv`` to use those videos within Godot.
+\ **注意：**\ 雖然 Ogg Theora 影片也可以使用 ``.ogg`` 副檔名，但必須將該副檔名重新命名為 ``.ogv`` 才能在 Godot 中使用這些影片。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

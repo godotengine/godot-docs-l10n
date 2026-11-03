@@ -25,7 +25,7 @@ AudioEffectSpectrumAnalyzerInstance
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 - `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -87,7 +87,7 @@ enum **MagnitudeMode**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzerInstance_Magn
 
 :ref:`Vector2<class_Vector2>` **get_magnitude_for_frequency_range**\ (\ from_hz\: :ref:`float<class_float>`, to_hz\: :ref:`float<class_float>`, mode\: :ref:`MagnitudeMode<enum_AudioEffectSpectrumAnalyzerInstance_MagnitudeMode>` = 1\ ) |const| :ref:`🔗<class_AudioEffectSpectrumAnalyzerInstance_method_get_magnitude_for_frequency_range>`
 
-返回 ``from_hz`` 到 ``to_hz`` 頻率範圍的線性能量大小，型別為 Vector2。其中 ``x`` 表左聲道，\ ``y`` 表右聲道。
+返回 ``from_hz`` 到 ``to_hz`` 頻率範圍的線效能量大小，型別為 Vector2。其中 ``x`` 表左聲道，\ ``y`` 表右聲道。
 
 \ ``mode`` 決定該頻率範圍的處理方式。
 

@@ -138,7 +138,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECT_LATER** = ``6``
 
-The peer is expected to disconnect after it has no more outgoing packets to send.
+該對等端在沒有更多的外發封包可以發送後，將預計斷開連接。
 
 .. _class_ENetPacketPeer_constant_STATE_DISCONNECTING:
 
@@ -252,7 +252,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_COUNTER** = ``9``
 
-用於增加封包節流計數器的內部值。該值被硬編碼為 ``7`` 且無法更改。你可能想查看 :ref:`PEER_PACKET_THROTTLE_ACCELERATION<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_ACCELERATION>`\ 。
+用於增加封包節流計數器的內部值。該值被寫死為 ``7`` 且無法更改。你可能想查看 :ref:`PEER_PACKET_THROTTLE_ACCELERATION<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_ACCELERATION>`\ 。
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_EPOCH:
 
@@ -362,7 +362,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`int<class_int>` **get_packet_flags**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_packet_flags>`
 
-Returns the ENet flags of the next packet in the received queue. See ``FLAG_*`` constants for available packet flags. Note that not all flags are replicated from the sending peer to the receiving peer.
+回傳接收佇列中下一個封包的 ENet 標誌。可用的封包標誌見 ``FLAG_*`` 常數。請注意，並非所有標誌都會從發送端複製到接收端。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Returns the ENet flags of the next packet in the received queue. See ``FLAG_*`` 
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **get_state**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_state>`
 
-Returns the current peer state.
+回傳目前的對等端狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns the current peer state.
 
 :ref:`float<class_float>` **get_statistic**\ (\ statistic\: :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>`\ ) :ref:`🔗<class_ENetPacketPeer_method_get_statistic>`
 
-Returns the requested ``statistic`` for this peer.
+回傳該對等端的統計資訊，由 ``statistic`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -534,9 +534,9 @@ Returns the requested ``statistic`` for this peer.
 
 為對等體配置節流參數。
 
-不可靠的封包會被 ENet 丟棄，以應對與對等體的互聯網連接的各種情況。節流表示一個不可靠封包不應被丟棄並因此由 ENet 將其發送到對等體的概率。通過測量指定 ``interval`` 內可靠封包往返時間的波動，ENet 將按照 ``acceleration`` 參數中指定的量增加概率，或者按照 ``deceleration`` 參數中指定的量降低概率（兩者都是與 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 的比率）。
+不可靠的封包會被 ENet 丟棄，以應對與對等體的互連網連接的各種情況。節流表示一個不可靠封包不應被丟棄並因此由 ENet 將其發送到對等體的概率。通過測量指定 ``interval`` 內可靠封包往返時間的波動，ENet 將按照 ``acceleration`` 參數中指定的量增加概率，或者按照 ``deceleration`` 參數中指定的量降低概率（兩者都是與 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 的比率）。
 
-當節流的值為 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 時，ENet 不會丟棄任何不可靠的數據包，因此所有不可靠封包以 100% 的概率將被發送。
+當節流的值為 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 時，ENet 不會丟棄任何不可靠的封包，因此所有不可靠封包以 100% 的概率將被發送。
 
 當節流的值為 ``0`` 時，ENet 將丟棄所有不可靠的封包，因此所有不可靠封包以 0% 的概率將被發送。
 

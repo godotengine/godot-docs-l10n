@@ -77,7 +77,7 @@ CylinderMesh
 - |void| **set_cap_bottom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_bottom**\ (\ )
 
-如果為 ``true``\ ，則在圓柱體底部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和算繪。另見 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`\ 。
+如果為 ``true``\ ，則在圓柱體底部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和渲染。另見 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`\ 。
 
 \ **注意：**\ 如果 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` 為 ``0.0``\ ，即使 :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>` 為 ``true``\ ，蓋子生成也會始終被跳過。
 
@@ -96,7 +96,7 @@ CylinderMesh
 - |void| **set_cap_top**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_top**\ (\ )
 
-如果為 ``true``\ ，則在圓柱體頂部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和算繪。另見 :ref:`top_radius<class_CylinderMesh_property_top_radius>`\ 。
+如果為 ``true``\ ，則在圓柱體頂部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和渲染。另見 :ref:`top_radius<class_CylinderMesh_property_top_radius>`\ 。
 
 \ **注意：**\ 如果 :ref:`top_radius<class_CylinderMesh_property_top_radius>` 為 ``0.0``\ ，即使 :ref:`cap_top<class_CylinderMesh_property_cap_top>` 為 ``true``\ ，蓋子生成也會始終被跳過。
 
@@ -132,7 +132,7 @@ CylinderMesh
 - |void| **set_radial_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_radial_segments**\ (\ )
 
-圓柱體上的徑向段數。更高的值會生成更細緻的圓柱體或圓錐體，但以性能為代價。
+圓柱體上的徑向段數。更高的值會生成更細緻的圓柱體或圓錐體，但以效能為代價。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ CylinderMesh
 - |void| **set_rings**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_rings**\ (\ )
 
-沿圓柱體的高度的邊緣環的數量。除非使用著色器或程式網格工具來更改頂點資料，否則更改 :ref:`rings<class_CylinderMesh_property_rings>` 不會影響顯示，\ :ref:`rings<class_CylinderMesh_property_rings>` 應保持其預設值。較高的值會產生更多的細分，這可用於使用著色器或程式式網格工具建立更平滑的顯示效果，但以性能為代價。
+沿圓柱體的高度的邊緣環的數量。除非使用著色器或程式網格工具來更改頂點資料，否則更改 :ref:`rings<class_CylinderMesh_property_rings>` 不會影響顯示，\ :ref:`rings<class_CylinderMesh_property_rings>` 應保持其預設值。較高的值會產生更多的細分，這可用於使用著色器或程式式網格工具建立更平滑的顯示效果，但以效能為代價。
 
 .. rst-class:: classref-item-separator
 

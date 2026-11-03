@@ -69,7 +69,7 @@ Descripciones de Propiedades
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Intensity of the effect. Value can range from 0.1 to 4.0.
+La intensidad del efecto. El valor puede variar entre 0.1 y 4.0.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Determina la frecuencia mínima afectada por las modulaciones del oscilador de b
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
+Ajusta la frecuencia, en Hz, a la que el efecto barre hacia arriba y hacia abajo el rango de frecuencias. El valor puede oscilar entre 0,01 y 20.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

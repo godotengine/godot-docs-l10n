@@ -201,7 +201,7 @@ enum **Condition**: :ref:`🔗<enum_VisualShaderNodeCompare_Condition>`
 
 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **COND_ALL** = ``0``
 
-The result will be ``true`` if all components in the vector satisfy the comparison condition.
+如果向量中的所有分量都滿足比較條件，則結果為 ``true``\ 。
 
 .. _class_VisualShaderNodeCompare_constant_COND_ANY:
 
@@ -209,7 +209,7 @@ The result will be ``true`` if all components in the vector satisfy the comparis
 
 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **COND_ANY** = ``1``
 
-The result will be ``true`` if any component in the vector satisfies the comparison condition.
+如果向量中的任何一個分量滿足比較條件，則結果為 ``true``\ 。
 
 .. _class_VisualShaderNodeCompare_constant_COND_MAX:
 
@@ -256,7 +256,7 @@ The result will be ``true`` if any component in the vector satisfies the compari
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeCompare_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeCompare_Function>` **get_function**\ (\ )
 
-A comparison function.
+比較函式。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ A comparison function.
 - |void| **set_comparison_type**\ (\ value\: :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>`\ )
 - :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **get_comparison_type**\ (\ )
 
-The type to be used in the comparison.
+在比較中要使用的型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

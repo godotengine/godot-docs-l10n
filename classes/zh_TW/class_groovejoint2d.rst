@@ -50,7 +50,7 @@ GrooveJoint2D
 - |void| **set_initial_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_initial_offset**\ (\ )
 
-這個物體B的初始錨點位置，由關鍵的原點和沿關節Y軸（沿著溝槽）的局部偏移 :ref:`initial_offset<class_GrooveJoint2D_property_initial_offset>` 定義。
+這個物體B的初始錨點位置，由關鍵的原點和沿關節Y軸（沿著溝槽）的區域偏移 :ref:`initial_offset<class_GrooveJoint2D_property_initial_offset>` 定義。
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ GrooveJoint2D
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-溝槽的長度。溝槽是從關鍵原點沿著關節局部 Y 軸朝向 :ref:`length<class_GrooveJoint2D_property_length>` 。
+溝槽的長度。溝槽是從關鍵原點沿著關節區域 Y 軸朝向 :ref:`length<class_GrooveJoint2D_property_length>` 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

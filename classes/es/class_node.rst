@@ -414,7 +414,7 @@ Emitida cuando se cambia el :ref:`name<class_Node_property_name>` del nodo, si e
 
 Emitida cuando este nodo está siendo reemplazado por el ``node``, ver :ref:`replace_by()<class_Node_method_replace_by>`.
 
-Esta señal se emite *después* de que ``node`` haya sido añadido como hijo del nodo padre original, pero *antes* de que todos los nodos hijos originales hayan sido reasignados a ``node``.
+Esta señal se emite *después* de que ``node`` haya sido añadido como hijo del nodo padre original, pero *antes* de que todos los nodos hijos originales hayan sido reemparentados a ``node``.
 
 .. rst-class:: classref-item-separator
 
@@ -827,7 +827,7 @@ Notificación recibida del árbol en cada cuadro de física cuando :ref:`is_phys
 
 **NOTIFICATION_PROCESS** = ``17`` :ref:`🔗<class_Node_constant_NOTIFICATION_PROCESS>`
 
-Notification received from the tree every rendered frame when :ref:`is_processing()<class_Node_method_is_processing>` returns ``true``. See :ref:`_process()<class_Node_private_method__process>`.
+Notificación recibida del árbol en cada fotograma renderizado cuando :ref:`is_processing()<class_Node_method_is_processing>` devuelve ``true``. Véase :ref:`_process()<class_Node_private_method__process>`.
 
 .. _class_Node_constant_NOTIFICATION_PARENTED:
 
@@ -901,7 +901,7 @@ Notification received when the list of children is changed. This happens when ch
 
 **NOTIFICATION_INTERNAL_PROCESS** = ``25`` :ref:`🔗<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`
 
-Notification received from the tree every rendered frame when :ref:`is_processing_internal()<class_Node_method_is_processing_internal>` returns ``true``.
+Notificación recibida del árbol en cada fotograma renderizado cuando :ref:`is_processing_internal()<class_Node_method_is_processing_internal>` devuelve ``true``.
 
 .. _class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS:
 
@@ -941,7 +941,7 @@ Notification received when the node is enabled again after being disabled. See :
 
 **NOTIFICATION_RESET_PHYSICS_INTERPOLATION** = ``2001`` :ref:`🔗<class_Node_constant_NOTIFICATION_RESET_PHYSICS_INTERPOLATION>`
 
-Notification received when :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` is called on the node or its ancestors.
+Notificación recibida cuando se llama al método :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` en el nodo o en sus ancestros.
 
 .. _class_Node_constant_NOTIFICATION_EDITOR_PRE_SAVE:
 
@@ -965,9 +965,9 @@ Notification received right after the scene with the node is saved in the editor
 
 **NOTIFICATION_WM_MOUSE_ENTER** = ``1002`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_MOUSE_ENTER>`
 
-Notification received when the mouse enters the window.
+Notificación recibida cuando el ratón entra en la ventana.
 
-Implemented for embedded windows and on desktop and web platforms.
+Implementado para ventanas incrustadas y en plataformas de escritorio y web.
 
 .. _class_Node_constant_NOTIFICATION_WM_MOUSE_EXIT:
 
@@ -975,9 +975,9 @@ Implemented for embedded windows and on desktop and web platforms.
 
 **NOTIFICATION_WM_MOUSE_EXIT** = ``1003`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_MOUSE_EXIT>`
 
-Notification received when the mouse leaves the window.
+Notificación recibida cuando el ratón sale de la ventana.
 
-Implemented for embedded windows and on desktop and web platforms.
+Implementado para ventanas incrustadas y en plataformas de escritorio y web.
 
 .. _class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_IN:
 
@@ -1185,7 +1185,7 @@ Notificación recibida cuando el :ref:`TextServer<class_TextServer>` es cambiado
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+Notificación recibida cuando la aplicación entra en el modo pantalla en pantalla.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -1193,7 +1193,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+Notificación recibida cuando la aplicación sale del modo pantalla en pantalla.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1629,7 +1629,7 @@ Corresponde a la notificación :ref:`NOTIFICATION_PROCESS<class_Node_constant_NO
 
 \ **Nota:** Cuando el motor está teniendo dificultades y la velocidad de fotogramas se reduce, ``delta`` aumentará. Cuando ``delta`` aumenta, se limita a un máximo de :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. Como resultado, el ``delta`` acumulado puede no representar el tiempo del mundo real.
 
-\ **Nota:** Cuando ``--fixed-fps`` está habilitado o el motor se está ejecutando en modo Movie Maker (ver :ref:`MovieWriter<class_MovieWriter>`), el proceso ``delta`` siempre será el mismo para cada fotograma, independientemente de cuánto tiempo tarde el fotograma en renderizarse.
+\ **Nota:** Cuando ``--fixed-fps`` está habilitado o el motor se está ejecutando en modo Creación de películas (ver :ref:`MovieWriter<class_MovieWriter>`), el proceso ``delta`` siempre será el mismo para cada fotograma, independientemente de cuánto tiempo tarde el fotograma en renderizarse.
 
 \ **Nota:** El delta de fotogramas puede ser post-procesado por :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` si esto está habilitado para el proyecto.
 
@@ -2557,7 +2557,7 @@ Devuelve ``true`` si este nodo se encuentra actualmente dentro de un :ref:`Scene
 
 :ref:`bool<class_bool>` **is_multiplayer_authority**\ (\ ) |const| :ref:`🔗<class_Node_method_is_multiplayer_authority>`
 
-Returns ``true`` if the local system is the multiplayer authority of this node.
+Devuelve ``true`` si el sistema local es la autoridad multijugador de este nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -2899,11 +2899,11 @@ Removes the node from the given ``group``. Does nothing if the node is not in th
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
+Cambia el padre de este **Node** por ``new_parent``. El nodo ya debe tener un padre. Se conserva el :ref:`owner<class_Node_property_owner>` del nodo si su propietario sigue siendo accesible desde la nueva ubicación (es decir, si el nodo sigue siendo descendiente del nuevo padre después de la operación).
 
-If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+Si ``keep_global_transform`` es ``true``, se conserva la transformación global del nodo, si es compatible. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` y :ref:`Control<class_Control>` admiten este argumento (aunque :ref:`Control<class_Control>` solo conserva la posición).
 
-\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
+\ **Advertencia:** Si :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` está habilitado y el reemparentamiento provoca un cambio grande en la transformación global, puede que el objeto parezca desplazarse de su posición anterior a la nueva durante el siguiente ciclo de física. Para evitarlo, llama a :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` después de reemparentar el nodo.
 
 .. rst-class:: classref-item-separator
 

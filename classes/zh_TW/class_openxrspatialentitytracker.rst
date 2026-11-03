@@ -11,14 +11,14 @@ OpenXRSpatialEntityTracker
 
 **被繼承：** :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>`, :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>`
 
-Base class for Positional trackers managed by OpenXR's spatial entity extensions.
+OpenXR 空間實體擴充管理的位置追蹤器的基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-These are trackers created and managed by OpenXR's spatial entity extensions that give access to specific data related to OpenXR's spatial entities. They will always be of type ``TRACKER_ANCHOR``.
+這些追蹤器由 OpenXR 的空間實體擴充建立和管理，用於存取與 OpenXR 空間實體相關的特定資料。它們的型別始終為 ``TRACKER_ANCHOR``\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -71,7 +71,7 @@ These are trackers created and managed by OpenXR's spatial entity extensions tha
 
 **next_changed**\ (\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_signal_next_changed>`
 
-Emitted when the next-chain changes, from either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` or :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+當“下一個”鏈結串列發生改變時發出訊號，無論是由 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 還是 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 引起的。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ enum **EntityTrackingState**: :ref:`🔗<enum_OpenXRSpatialEntityTracker_EntityT
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_STOPPED** = ``1``
 
-This anchor has stopped tracking.
+該錨點已停止追蹤。
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_PAUSED:
 
@@ -116,7 +116,7 @@ This anchor has stopped tracking.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_PAUSED** = ``2``
 
-Tracking is currently paused.
+追蹤目前已暫停。
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_TRACKING:
 
@@ -124,7 +124,7 @@ Tracking is currently paused.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_TRACKING** = ``3``
 
-This anchor is currently being tracked.
+該錨點目前正在被追蹤。
 
 .. rst-class:: classref-section-separator
 
@@ -146,7 +146,7 @@ This anchor is currently being tracked.
 - |void| **set_entity**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_entity**\ (\ )
 
-The spatial entity associated with this tracker.
+與該追蹤器關聯的空間實體。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ The spatial entity associated with this tracker.
 - |void| **set_spatial_tracking_state**\ (\ value\: :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>`\ )
 - :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_spatial_tracking_state**\ (\ )
 
-The spatial tracking state for this tracker.
+該追蹤器的空間追蹤狀態。
 
 .. rst-class:: classref-section-separator
 
@@ -180,9 +180,9 @@ The spatial tracking state for this tracker.
 
 |void| **add_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_add_next>`
 
-Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-chain.
+向“下一個”鏈結串列中新增一個新的 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ 。
 
-\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` will return this ``next`` until either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` is called again or it's removed in :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+在再次呼叫 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 或通過 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 移除之前，\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` 將回傳此 ``next`` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-cha
 
 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_next>`
 
-Gets the head :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` in the next-chain.
+取得“下一個”鏈結串列中的首個 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` 物件。
 
-See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+另見 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 和 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and
 
 :ref:`RID<class_RID>` **get_spatial_context**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_spatial_context>`
 
-Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
+取得用於建立此 **OpenXRSpatialEntityTracker** 的空間情境（spatial context）。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
 
 |void| **remove_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_remove_next>`
 
-Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` from the next-chain.
+從 next 鏈（next-chain）中移除一個之前通過 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 方法新增的 ``next`` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpati
 
 |void| **set_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_set_spatial_context>`
 
-Sets the spatial context used to create this tracker.
+設定用於建立此追蹤器的空間情境（spatial context）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -889,9 +889,9 @@ Dibuja todos los objetos con su mayor número de polígonos, independientemente 
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_OMNI_LIGHTS** = ``20``
 
-Dibuja el clúster utilizado por los nodos :ref:`OmniLight3D<class_OmniLight3D>` para optimizar el renderizado de la luz.
+Dibuja el clúster utilizado por los nodos :ref:`OmniLight3D<class_OmniLight3D>` para optimizar el renderizado de la iluminación.
 
-\ **Nota:** Solo es compatible cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS:
 
@@ -899,9 +899,9 @@ Dibuja el clúster utilizado por los nodos :ref:`OmniLight3D<class_OmniLight3D>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_SPOT_LIGHTS** = ``21``
 
-Dibuja el clúster utilizado por los nodos :ref:`SpotLight3D<class_SpotLight3D>` para optimizar el renderizado de la luz.
+Dibuja el clúster utilizado por los nodos :ref:`SpotLight3D<class_SpotLight3D>` para optimizar el renderizado de la iluminación.
 
-\ **Nota:** Solo es compatible cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_DECALS:
 
@@ -911,7 +911,7 @@ Dibuja el clúster utilizado por los nodos :ref:`SpotLight3D<class_SpotLight3D>`
 
 Dibuja el clúster utilizado por los nodos :ref:`Decal<class_Decal>` para optimizar el renderizado de decals.
 
-\ **Nota:** Solo es compatible cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES:
 
@@ -921,7 +921,7 @@ Dibuja el clúster utilizado por los nodos :ref:`Decal<class_Decal>` para optimi
 
 Dibuja el clúster utilizado por los nodos :ref:`ReflectionProbe<class_ReflectionProbe>` para optimizar las sondas de reflexión.
 
-\ **Nota:** Solo es compatible cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_OCCLUDERS:
 
@@ -959,9 +959,9 @@ Dibuja el búfer de resolución interna de la escena en un espacio de color line
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_AREA_LIGHTS** = ``27``
 
-Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimize light rendering.
+Dibuja el clúster utilizado por los nodos :ref:`AreaLight3D<class_AreaLight3D>` para optimizar el renderizado de la iluminación.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
 
@@ -1281,13 +1281,13 @@ Descripciones de Propiedades
 - |void| **set_anisotropic_filtering_level**\ (\ value\: :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>`\ )
 - :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **get_anisotropic_filtering_level**\ (\ )
 
-Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
+Establece el número máximo de muestras que se tomarán al utilizar el filtrado anisotrópico en las texturas (como potencia de dos). Un mayor número de muestras dará lugar a texturas más nítidas en ángulos oblicuos, pero requerirá más recursos de cálculo. Un valor de ``0`` desactiva por completo el filtrado anisotrópico, incluso en los materiales en los que esté habilitado.
 
-The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+El nivel de filtrado anisotrópico también afecta a los decals y a los proyectores de luz si están configurados para utilizar este tipo de filtrado. Consulta :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` y :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
 
-\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
+\ **Nota:** En 3D, para que este ajuste tenga efecto, establece :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` en :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en los materiales.
 
-\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
+\ **Nota:** En 2D, para que este ajuste tenga efecto, establece :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` en :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en el nodo :ref:`CanvasItem<class_CanvasItem>` que muestra la textura (o en :ref:`CanvasTexture<class_CanvasTexture>`). Sin embargo, el filtrado anisotrópico rara vez resulta útil en 2D, por lo que solo debes habilitarlo para texturas 2D si supone una diferencia visual significativa.
 
 .. rst-class:: classref-item-separator
 
@@ -1444,7 +1444,7 @@ Desactiva el renderizado 3D (pero mantiene el renderizado 2D).
 
 Determina la nitidez de la imagen sobreescalada al usar el modo de sobreescalado FSR. La nitidez se reduce a la mitad con cada número entero. Los valores van de 0.0 (máxima nitidez) a 2.0. Los valores por encima de 2.0 no supondrán una diferencia visible.
 
-Para controlar esta propiedad en el viewport raíz, establece la configuración de proyecto :ref:`ProjectSettings.rendering/scaling_3d/fsr_sharpness<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>`.
+Para controlar esta propiedad en el viewport raíz, establece la configuración del proyecto :ref:`ProjectSettings.rendering/scaling_3d/fsr_sharpness<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2624,7 +2624,7 @@ Activa el ``event`` dado en este **Viewport**. Esto puede ser usado para pasar u
 
 Si ``in_local_coords`` es ``false``, la posición del evento está en las coordenadas del incrustador y será convertida a coordenadas del viewport. Si ``in_local_coords`` es ``true``, la posición del evento está en coordenadas del viewport.
 
-Aunque este método tiene un propósito similar a :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, no reasigna el ``event`` especificado basado en los ajustes del proyecto como :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+Aunque este método tiene un propósito similar a :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, no reasigna el ``event`` especificado basado en la configuración del proyecto como :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
 
 Llamar a este método propagará las llamadas a los nodos hijo para los siguientes métodos en el orden dado:
 

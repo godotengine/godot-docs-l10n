@@ -16,7 +16,7 @@ PanoramaSkyMaterial
 
 在 :ref:`Environment<class_Environment>` 中引用的用於繪製背景的資源。全景天空的功能類似於其他引擎的天空盒，區別在於它使用的是等距圓柱投影的天空貼圖而不是立方體貼圖。
 
-強烈建議使用 HDR 全景圖，能夠得到準確、高品質的反射。為此，Godot 支援 Radiance HDR（\ ``.hdr``\ ）和 OpenEXR（\ ``.exr``\ ）圖像格式。
+強烈建議使用 HDR 全景圖，能夠得到準確、高品質的反射。為此，Godot 支援 Radiance HDR（\ ``.hdr``\ ）和 OpenEXR（\ ``.exr``\ ）影像格式。
 
 你可以使用\ `這個工具 <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__\ 將立方體貼圖轉換為等距圓柱投影的天空貼圖。
 

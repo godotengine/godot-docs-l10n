@@ -76,7 +76,7 @@ InputMap
 
 **project_settings_loaded**\ (\ ) :ref:`🔗<class_InputMap_signal_project_settings_loaded>`
 
-Emitted when the :ref:`ProjectSettings<class_ProjectSettings>` **InputMap** has been loaded.
+當 :ref:`ProjectSettings<class_ProjectSettings>` 中的 **InputMap**\ （輸入映射）被載入時，會發出此訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -219,7 +219,7 @@ Emitted when the :ref:`ProjectSettings<class_ProjectSettings>` **InputMap** has 
 
 :ref:`String<class_String>` **get_action_description**\ (\ action\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_InputMap_method_get_action_description>`
 
-Returns the human-readable description of the given action.
+回傳給定動作的人類可讀描述。
 
 .. rst-class:: classref-item-separator
 

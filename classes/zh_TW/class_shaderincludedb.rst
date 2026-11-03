@@ -7,14 +7,14 @@ ShaderIncludeDB
 
 **繼承：** :ref:`Object<class_Object>`
 
-Internal database of built in shader include files.
+內建著色器頭檔案的內部資料庫。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This object contains shader fragments from Godot's internal shaders. These can be used when access to internal uniform buffers and/or internal functions is required for instance when composing compositor effects or compute shaders. Only fragments for the current rendering device are loaded.
+該物件包含 Godot 內部著色器中的著色器片段。需要存取內部 Uniform 緩衝區和/或內部函式時，例如在組合合成器效果或計算著色器時，可以使用這些片段。僅載入目前渲染裝置的片段。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ This object contains shader fragments from Godot's internal shaders. These can b
 
 :ref:`String<class_String>` **get_built_in_include_file**\ (\ filename\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_get_built_in_include_file>`
 
-Returns the code for the built-in shader fragment. You can also access this in your shader code through ``#include "filename"``.
+回傳內建著色器片段的程式碼。在著色器程式碼中也可以通過 ``#include "檔名"`` 存取。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the code for the built-in shader fragment. You can also access this in y
 
 :ref:`bool<class_bool>` **has_built_in_include_file**\ (\ filename\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_has_built_in_include_file>`
 
-Returns ``true`` if an include file with this name exists.
+如果存在該名稱對應的頭檔案，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ Returns ``true`` if an include file with this name exists.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **list_built_in_include_files**\ (\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_list_built_in_include_files>`
 
-Returns a list of built-in include files that are currently registered.
+回傳目前已注冊的內建頭檔案清單。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -9,14 +9,14 @@ GDScriptWorkspace
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Workspace related language server functionality.
+工作區相關的語言伺服器功能。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Provides language server functionality related to the workspace.
+提供與工作區相關的語言伺服器功能。
 
 .. rst-class:: classref-reftable-group
 
@@ -83,7 +83,7 @@ Provides language server functionality related to the workspace.
 
 :ref:`Dictionary<class_Dictionary>` **generate_script_api**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDScriptWorkspace_method_generate_script_api>`
 
-Returns the interface of the script in a machine-readable format.
+以機器可讀的格式回傳腳本的介面資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Returns the interface of the script in a machine-readable format.
 
 :ref:`String<class_String>` **get_file_path**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDScriptWorkspace_method_get_file_path>`
 
-Converts a URI to a file path.
+將 URI（統一資源標識符）轉換為檔案路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Converts a URI to a file path.
 
 :ref:`String<class_String>` **get_file_uri**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_GDScriptWorkspace_method_get_file_uri>`
 
-Converts a file path to a URI.
+將檔案路徑轉換為 URI。
 
 .. rst-class:: classref-item-separator
 

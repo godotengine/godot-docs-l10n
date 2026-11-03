@@ -100,7 +100,7 @@ VisualShaderNodeCustom
 
 :ref:`String<class_String>` **_get_category**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_category>`
 
-覆蓋這個方法可以定義 Visual Shader 編輯器的成員對話方塊中關聯的自訂節點的路徑。路徑類似於 ``"MyGame/MyFunctions/Noise"``\ 。
+覆蓋這個方法可以定義 Visual Shader 編輯器的成員對話框中關聯的自訂節點的路徑。路徑類似於 ``"MyGame/MyFunctions/Noise"``\ 。
 
 定義這個方法是\ **可選**\ 的。不覆蓋時，該節點會被歸在“Addons”分類下。
 
@@ -114,15 +114,15 @@ VisualShaderNodeCustom
 
 :ref:`String<class_String>` **_get_code**\ (\ input_vars\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], output_vars\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], mode\: :ref:`Mode<enum_Shader_Mode>`, type\: :ref:`Type<enum_VisualShader_Type>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_code>`
 
-Override this method to define the actual shader code of the associated custom node. The shader code should be returned as a string, which can have multiple lines (the ``"""`` multiline string construct can be used for convenience).
+覆蓋這個方法可以定義關聯的自訂節點的實際著色器程式碼。著色器程式碼應該以字串形式回傳，可以包含多行（用 ``"""`` 構造多行字串比較方便）。
 
-The ``input_vars`` and ``output_vars`` arrays contain the string names of the various input and output variables, as defined by ``_get_input_*`` and ``_get_output_*`` virtual methods in this class.
+\ ``input_vars`` 和 ``output_vars`` 陣列包含各個輸入和輸出變數的字串名稱，這些變數由這個類的 ``_get_input_*`` 和 ``_get_output_*`` 虛方法定義。
 
-The output ports can be assigned values in the shader code. For example, ``return output_vars[0] + " = " + input_vars[0] + ";"``.
+著色器程式碼中可以為輸出連接埠賦值。例如 ``return output_vars[0] + " = " + input_vars[0] + ";"``\ 。
 
-You can customize the generated code based on the shader ``mode`` and/or ``type``.
+你可以根據著色器模式 ``mode`` 和/或型別 ``type`` 自訂生成的程式碼。
 
-Defining this method is **required**.
+\ **必須**\ 定義這個方法。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Defining this method is **required**.
 
 :ref:`int<class_int>` **_get_default_input_port**\ (\ type\: :ref:`PortType<enum_VisualShaderNode_PortType>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_default_input_port>`
 
-覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊和圖中的相關自訂節點的名稱。
+覆蓋此方法來定義視覺化著色器編輯器的成員對話框和圖中的相關自訂節點的名稱。
 
 定義這個方法是\ **可選的**\ ，但推薦使用。如果不覆蓋，節點將被命名為 "Unnamed"。
 
@@ -148,7 +148,7 @@ Defining this method is **required**.
 
 :ref:`String<class_String>` **_get_description**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_description>`
 
-覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話框中的相關自訂節點的描述。
 
 定義這個方法是\ **可選**\ 的。
 
@@ -162,13 +162,13 @@ Defining this method is **required**.
 
 :ref:`String<class_String>` **_get_func_code**\ (\ mode\: :ref:`Mode<enum_Shader_Mode>`, type\: :ref:`Type<enum_VisualShader_Type>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_func_code>`
 
-Override this method to add a shader code to the beginning of each shader function (once). The shader code should be returned as a string, which can have multiple lines (the ``"""`` multiline string construct can be used for convenience).
+覆蓋這個方法可以在每個著色器函式的開頭新增著色器程式碼（單次）。著色器程式碼應該以字串形式回傳，可以包含多行（用 ``"""`` 構造多行字串比較方便）。
 
-If there are multiple custom nodes of different types which use this feature the order of each insertion is undefined.
+如果有多個不同型別的自訂節點同時使用這個特性，則插入的順序是未定義的。
 
-You can customize the generated code based on the shader ``mode`` and/or ``type``.
+你可以根據著色器模式 ``mode`` 和/或型別 ``type`` 自訂生成的程式碼。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -180,13 +180,13 @@ Defining this method is **optional**.
 
 :ref:`String<class_String>` **_get_global_code**\ (\ mode\: :ref:`Mode<enum_Shader_Mode>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_global_code>`
 
-Override this method to add shader code on top of the global shader, to define your own standard library of reusable methods, varyings, constants, uniforms, etc. The shader code should be returned as a string, which can have multiple lines (the ``"""`` multiline string construct can be used for convenience).
+覆蓋這個方法可以在全域著色器的開頭新增著色器程式碼，定義你自己的標準庫，提供可復用的方法、varying、常數、uniform 等內容。著色器程式碼應該以字串形式回傳，可以包含多行（用 ``"""`` 構造多行字串比較方便）。
 
-Be careful with this functionality as it can cause name conflicts with other custom nodes, so be sure to give the defined entities unique names.
+使用這個功能時請小心，因為可能造成與其他自訂節點的命名衝突，所以請務必為定義的實體提供唯一名稱。
 
-You can customize the generated code based on the shader ``mode``.
+你可以根據著色器模式 ``mode`` 自訂生成的程式碼。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ Defining this method is **optional**.
 
 :ref:`Variant<class_Variant>` **_get_input_port_default_value**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_input_port_default_value>`
 
-覆蓋該方法以定義關聯的自訂節點的輸入埠數。
+覆蓋該方法可以定義指定輸入連接埠的預設值。優先使用該方法而不是 :ref:`VisualShaderNode.set_input_port_default_value()<class_VisualShaderNode_method_set_input_port_default_value>`\ 。
 
-定義該方法是\ **必需的**\ 。如果沒有被覆蓋，則該節點沒有輸入埠。
+定義該方法是\ **必需的**\ 。如果沒有被覆蓋，則該節點的輸入連接埠沒有預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -240,9 +240,9 @@ Defining this method is **optional**.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **_get_input_port_type**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_input_port_type>`
 
-Override this method to define the returned type of each input port of the associated custom node.
+覆蓋此方法以定義相關自訂節點的每個輸入連接埠的回傳型別。
 
-Defining this method is **optional**, but recommended. If not overridden, input ports will return the :ref:`VisualShaderNode.PORT_TYPE_SCALAR<class_VisualShaderNode_constant_PORT_TYPE_SCALAR>` type.
+定義這個方法是\ **可選的**\ ，但推薦使用。如果沒有被覆蓋，輸入連接埠將回傳 :ref:`VisualShaderNode.PORT_TYPE_SCALAR<class_VisualShaderNode_constant_PORT_TYPE_SCALAR>` 型別。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Defining this method is **optional**, but recommended. If not overridden, input 
 
 :ref:`String<class_String>` **_get_name**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_name>`
 
-覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊和圖中的相關自訂節點的名稱。
+覆蓋此方法來定義視覺化著色器編輯器的成員對話框和圖中的相關自訂節點的名稱。
 
 定義這個方法是\ **可選的**\ ，但推薦使用。如果不覆蓋，節點將被命名為 "Unnamed"。
 
@@ -296,9 +296,9 @@ Defining this method is **optional**, but recommended. If not overridden, input 
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **_get_output_port_type**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_output_port_type>`
 
-Override this method to define the returned type of each output port of the associated custom node.
+覆蓋此方法以定義相關自訂節點的每個輸出連接埠的回傳型別。
 
-Defining this method is **optional**, but recommended. If not overridden, output ports will return the :ref:`VisualShaderNode.PORT_TYPE_SCALAR<class_VisualShaderNode_constant_PORT_TYPE_SCALAR>` type.
+定義這個方法是\ **可選的**\ ，但推薦使用。如果沒有被覆蓋，輸出連接埠將回傳\ :ref:`VisualShaderNode.PORT_TYPE_SCALAR<class_VisualShaderNode_constant_PORT_TYPE_SCALAR>`\ 型別。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`int<class_int>` **_get_property_count**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_count>`
 
-覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話框中的相關自訂節點的描述。
 
 定義這個方法是\ **可選**\ 的。
 
@@ -324,7 +324,7 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`int<class_int>` **_get_property_default_index**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_default_index>`
 
-覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話框中的相關自訂節點的描述。
 
 定義這個方法是\ **可選**\ 的。
 
@@ -338,7 +338,7 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`String<class_String>` **_get_property_name**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_name>`
 
-覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話框中的相關自訂節點的描述。
 
 定義這個方法是\ **可選**\ 的。
 
@@ -352,7 +352,7 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_property_options**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_options>`
 
-覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話框中的相關自訂節點的描述。
 
 定義這個方法是\ **可選**\ 的。
 
@@ -366,7 +366,7 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **_get_return_icon_type**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_return_icon_type>`
 
-覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊中相關自訂節點的返回圖示。
+覆蓋此方法來定義視覺化著色器編輯器的成員對話框中相關自訂節點的返回圖示。
 
 定義這個方法是\ **可選的**\ 。如果不覆蓋，就不會顯示返回圖示。
 
@@ -380,9 +380,9 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`bool<class_bool>` **_is_available**\ (\ mode\: :ref:`Mode<enum_Shader_Mode>`, type\: :ref:`Type<enum_VisualShader_Type>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__is_available>`
 
-Override this method to prevent the node to be visible in the member dialog for the certain ``mode`` and/or ``type``.
+覆蓋這個方法可以防止該節點出現在特定模式 ``mode`` 和/或型別 ``type`` 的成員對話框中。
 
-Defining this method is **optional**. If not overridden, it's ``true``.
+定義這個方法是\ **可選**\ 的。未覆蓋時為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -394,9 +394,9 @@ Defining this method is **optional**. If not overridden, it's ``true``.
 
 :ref:`bool<class_bool>` **_is_highend**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__is_highend>`
 
-Override this method to enable the high-end mark in the Visual Shader Editor's members dialog. This should return ``true`` for nodes that only work when using the Forward+ and Mobile renderers.
+覆蓋該方法可在視覺化著色器編輯器成員對話框中啟用高端標記。對於僅在使用 Forward+ 和 Mobile 渲染器時才能工作的節點，該方法應回傳 ``true``\ 。
 
-Defining this method is **optional**. If not overridden, it's ``false``, which indicates this node works with all renderers (including Compatibility).
+定義該方法是\ **可選的**\ 。未覆蓋時預設為 ``false``\ ，表示該節點適用於所有渲染器（包括相容模式）。
 
 .. rst-class:: classref-item-separator
 

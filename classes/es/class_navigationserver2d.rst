@@ -596,7 +596,7 @@ Devuelve ``true`` si el ``agent`` especificado está en pausa.
 
 :ref:`Vector2<class_Vector2>` **agent_get_position**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_position>`
 
-Devuelve la posición del ``agent`` especificado en el espacio global.
+Devuelve la posición del ``agent`` especificado en el espacio mundial.
 
 .. rst-class:: classref-item-separator
 
@@ -680,9 +680,9 @@ Devuelve ``true`` si el mapa cambió en el fotograma anterior.
 
 |void| **agent_set_avoidance_callback**\ (\ agent\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_callback>`
 
-Sets the callback :ref:`Callable<class_Callable>` that gets called after each avoidance processing step for the ``agent``. The calculated ``safe_velocity`` will be dispatched with a signal to the object just before the physics calculations.
+Establece el callback :ref:`Callable<class_Callable>` que se llama después de cada paso de procesamiento de evitación para el ``agent``. La ``safe_velocity`` calculada se enviará con una señal al objeto justo antes de los cálculos de física.
 
-\ **Note:** Created callbacks are always processed independently of the SceneTree state as long as the agent is on a navigation map and not freed. To disable the dispatch of a callback from an agent use :ref:`agent_set_avoidance_callback()<class_NavigationServer2D_method_agent_set_avoidance_callback>` again with an empty :ref:`Callable<class_Callable>`.
+\ **Nota:** Las retrollamadas creadas siempre se procesan independientemente del estado de SceneTree siempre que el agente esté en un mapa de navegación y no se libere. Para deshabilitar el envío de un callback desde un agente, usa :ref:`agent_set_avoidance_callback()<class_NavigationServer2D_method_agent_set_avoidance_callback>` nuevamente con un :ref:`Callable<class_Callable>` vacío.
 
 .. rst-class:: classref-item-separator
 

@@ -14,24 +14,24 @@ EditorScenePostImport
 說明
 ----
 
-Imported scenes can be automatically modified right after import by setting their **Custom Script** Import property to a ``tool`` script that inherits from this class.
+通過將\ **自訂腳本**\ 匯入屬性設定為從此類繼承的 ``tool`` 腳本，可以在匯入後立即自動修改匯入的場景。
 
-The :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import>` callback receives the imported scene's root node and returns the modified version of the scene:
+\ :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import>` 回呼接收匯入場景的根節點，並回傳場景的修改版本。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    @tool # Needed so it runs in editor.
+    @tool # 需要它才能在編輯器中執行。
     extends EditorScenePostImport
 
-    # This sample changes all node names.
-    # Called right after the scene is imported and gets the root node.
+    # 該範例更改所有節點名稱。
+    # 在匯入場景並取得根節點後立即呼叫。
     func _post_import(scene):
-        # Change all node names to "modified_[oldnodename]"
+        # 將所有節點名稱更改為 “modified_[oldnodename]”
         iterate(scene)
-        return scene # Remember to return the imported scene
+        return scene # 記得回傳匯入的場景
 
     func iterate(node):
         if node != null:
@@ -43,16 +43,16 @@ The :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import
 
     using Godot;
 
-    // This sample changes all node names.
-    // Called right after the scene is imported and gets the root node.
+    // 該範例更改所有節點名稱。
+    // 在匯入場景並取得根節點後立即呼叫。
     [Tool]
     public partial class NodeRenamer : EditorScenePostImport
     {
         public override GodotObject _PostImport(Node scene)
         {
-            // Change all node names to "modified_[oldnodename]"
+            // 將所有節點名稱更改為 “modified_[oldnodename]”
             Iterate(scene);
-            return scene; // Remember to return the imported scene
+            return scene; // 記得回傳匯入的場景
         }
 
         public void Iterate(Node node)
@@ -75,7 +75,7 @@ The :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import
 教學
 ----
 
-- `Importing 3D scenes: Configuration: Using import scripts for automation <../tutorials/assets_pipeline/importing_3d_scenes/import_configuration.html#using-import-scripts-for-automation>`__
+- `匯入 3D 場景：設定：使用匯入腳本進行自動化 <../tutorials/assets_pipeline/importing_3d_scenes/import_configuration.html#using-import-scripts-for-automation>`__
 
 .. rst-class:: classref-reftable-group
 

@@ -14,7 +14,7 @@ VisualShaderNodeTransformDecompose
 說明
 ----
 
-Takes a 4×4 transform matrix and decomposes it into four ``vec3`` values, one from each row of the matrix.
+取得一個4×4的變換矩陣，並將其分解為四個\ ``vec3``\ 值，每行一個。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

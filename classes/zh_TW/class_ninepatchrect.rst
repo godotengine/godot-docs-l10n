@@ -136,7 +136,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_NinePatchRect_AxisStretchMode>`
 - |void| **set_h_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>` **get_h_axis_stretch_mode**\ (\ )
 
-The stretch mode to use for horizontal stretching/tiling.
+水平拉伸/平鋪時使用的拉伸模式。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ The stretch mode to use for horizontal stretching/tiling.
 - |void| **set_v_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>` **get_v_axis_stretch_mode**\ (\ )
 
-The stretch mode to use for vertical stretching/tiling.
+垂直拉伸/平鋪時使用的拉伸模式。
 
 .. rst-class:: classref-item-separator
 

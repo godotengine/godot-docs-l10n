@@ -16,11 +16,11 @@ GLTFDocument
 說明
 ----
 
-GLTFDocument supports reading data from a glTF file, buffer, or Godot scene. This data can then be written to the filesystem, buffer, or used to create a Godot scene.
+GLTFDocument 支援從 glTF 檔案、緩衝區或 Godot 場景中讀取資料。然後可以將該資料寫入檔案系統、緩衝區或用於建立 Godot 場景。
 
-All of the data in a glTF scene is stored in the :ref:`GLTFState<class_GLTFState>` class. GLTFDocument processes state objects, but does not contain any scene data itself. GLTFDocument has member variables to store export configuration settings such as the image format, but is otherwise stateless. Multiple scenes can be processed with the same settings using the same GLTFDocument object and different :ref:`GLTFState<class_GLTFState>` objects.
+glTF 場景中的所有資料都儲存在 :ref:`GLTFState<class_GLTFState>` 類中。GLTFDocument 處理狀態物件，但本身不包含任何場景資料。GLTFDocument 有成員變數來儲存如影像格式等匯出設定設定，但在其他方面是無狀態的。可以使用相同的 GLTFDocument 物件和不同的 :ref:`GLTFState<class_GLTFState>` 物件以相同的設定處理多個場景。
 
-GLTFDocument can be extended with arbitrary functionality by extending the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` class and registering it with GLTFDocument via :ref:`register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`. This allows for custom data to be imported and exported.
+通過擴充 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類並通過 :ref:`register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>` 將其注冊到 GLTFDocument，則可以使用任意功能來擴充 GLTFDocument。這允許自訂資料被匯入和匯出。
 
 .. rst-class:: classref-introduction-group
 
@@ -144,7 +144,7 @@ enum **TextureMapMode**: :ref:`🔗<enum_GLTFDocument_TextureMapMode>`
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_DO_NOT_REMAP** = ``0``
 
-Import the texture maps in the glTF file as they are, without trying to fit them into specific texture slots suitable for Godot's built-in materials. This may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials. This is equivalent to the behavior in Godot 4.6 and earlier.
+直接匯入 glTF 檔案中的紋理貼圖，而不嘗試將其適配到適合 Godot 內建材質的特定紋理槽位中。如果將 glTF 檔案與自訂著色器一起使用，這可能很理想；但在 Godot 的內建材質中可能無法正確顯示。此設定等同於 Godot 4.6 及更早版本中的行為。
 
 .. _class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL:
 
@@ -152,7 +152,7 @@ Import the texture maps in the glTF file as they are, without trying to fit them
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL** = ``1``
 
-Import the texture maps in the glTF file remapped to the most suitable texture slots based on Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. This is the default behavior.
+將 glTF 檔案中的紋理貼圖重新映射到基於 Godot :ref:`StandardMaterial3D<class_StandardMaterial3D>` 類的最合適的紋理槽位中。這是預設行為。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_GLTFDocument_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_GLTFDocument_VisibilityMode>` **VISIBILITY_MODE_INCLUDE_REQUIRED** = ``0``
 
-If the scene contains any non-visible nodes, include them, mark them as non-visible with ``KHR_node_visibility``, and require that importers respect their non-visibility. Downside: If the importer does not support ``KHR_node_visibility``, the file cannot be imported.
+如果場景中包含不可見節點，則會包含這些節點，使用 ``KHR_node_visibility`` 將它們標記為不可見，要求匯入器將這些節點處理為不可見。缺點：如果匯入器不支援 ``KHR_node_visibility`` 就無法匯入該檔案。
 
 .. _class_GLTFDocument_constant_VISIBILITY_MODE_INCLUDE_OPTIONAL:
 
@@ -178,7 +178,7 @@ If the scene contains any non-visible nodes, include them, mark them as non-visi
 
 :ref:`VisibilityMode<enum_GLTFDocument_VisibilityMode>` **VISIBILITY_MODE_INCLUDE_OPTIONAL** = ``1``
 
-If the scene contains any non-visible nodes, include them, mark them as non-visible with ``KHR_node_visibility``, and do not impose any requirements on importers. Downside: If the importer does not support ``KHR_node_visibility``, invisible objects will be visible.
+如果場景中包含不可見節點，則會包含這些節點，使用 ``KHR_node_visibility`` 將它們標記為不可見，但並不對匯入器施加任何要求。缺點：如果匯入器不支援 ``KHR_node_visibility``\ ，本應不可見的物件就會可見。
 
 .. _class_GLTFDocument_constant_VISIBILITY_MODE_EXCLUDE:
 
@@ -186,7 +186,7 @@ If the scene contains any non-visible nodes, include them, mark them as non-visi
 
 :ref:`VisibilityMode<enum_GLTFDocument_VisibilityMode>` **VISIBILITY_MODE_EXCLUDE** = ``2``
 
-If the scene contains any non-visible nodes, do not include them in the export. This is the same as the behavior in Godot 4.4 and earlier. Downside: Invisible nodes will not exist in the exported file.
+如果場景中包含不可見節點，則匯出的場景中不包含這些節點。與 Godot 4.4 及之前版本的行為一致。缺點：匯出後的檔案中不存在不可見節點。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ flags **ImportFlags**: :ref:`🔗<enum_GLTFDocument_ImportFlags>`
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果設為 ``true``\ ，當輸入的網格體（meshes）沒有切線資料時，將使用 `Mikktspace <http://www.mikktspace.com/>`__ 算法來生成頂點切線。如果條件允許，更推薦讓 3D 建模軟體在匯出模型時直接生成切線，而不是相依性這個選項。法線貼圖（normal maps）和高度貼圖（height maps），以及任何需要切線的材質或著色器（shader）功能，都必須要有切線資料才能正確顯示。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果你不需要那些相依性切線的材質功能，停用此選項可以在源 3D 檔案不包含切線的情況下，減小輸出檔案的大小，並加快匯入速度。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_USE_NAMED_SKIN_BINDS:
 
@@ -214,15 +214,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果勾選此項，動畫將使用帶名稱的 :ref:`Skin<class_Skin>`\ （皮膚）資源。\ :ref:`MeshInstance3D<class_MeshInstance3D>`\ （網格實例 3D）節點在這裡包含 3 個關鍵屬性：一個指向 :ref:`Skeleton3D<class_Skeleton3D>`\ （骨骼 3D）節點的骨架 :ref:`NodePath<class_NodePath>`\ （節點路徑，通常是 ``..``\ ）、一個網格（mesh），以及一個皮膚（skin）。
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 節點包含一個骨骼清單，其中記錄了骨骼的名稱、姿態（pose）和靜止狀態（rest），以及父級骨骼的資訊。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 網格（mesh）包含了顯示模型所需的所有原始頂點資料。就網格本身而言，它知道頂點是如何進行權重繪製（weight-painted）的，並且使用了一些通常從 3D 建模軟體匯入的內部編號。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- 皮膚（skin）包含了將這個網格綁定到該 :ref:`Skeleton3D<class_Skeleton3D>` 上所需的必要資訊。對於 3D 建模軟體選定的每一個內部骨骼 ID，它都包含兩項內容。首先，是一個被稱為“綁定姿態矩陣”、“反向綁定矩陣”或簡稱 IBM 的矩陣。其次，\ :ref:`Skin<class_Skin>` 還包含每根骨骼的名稱（如果啟用了此標誌），或者包含該骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 清單中的索引（如果停用了此標誌）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+綜合這些資訊，就足以告訴 Godot 如何利用 :ref:`Skeleton3D<class_Skeleton3D>` 節點中的骨骼姿態，來渲染每個 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。請注意，每個 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享綁定資訊（這在從 Blender 匯出的模型中很常見），或者每個 :ref:`MeshInstance3D<class_MeshInstance3D>` 也可以使用獨立的 :ref:`Skin<class_Skin>` 物件（這在從 Maya 等其他工具匯出的模型中很常見）。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS:
 
@@ -230,7 +230,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+在匯入時忽略網格（Meshes）和材質（Materials）。當將場景作為 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （動畫庫）進行匯入時，此選項會始終處於啟用狀態。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION:
 
@@ -238,7 +238,7 @@ Ignore meshes and materials on import. When importing a scene as an :ref:`Animat
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION** = ``64``
 
-If ``true``, mesh compression will not be used. Consider enabling if you notice blocky artifacts in your mesh normals or UVs, or if you have meshes that are larger than a few thousand meters in each direction.
+如果為 ``true``\ ，則不會使用網格壓縮。如果你在網格法線或 UV 中發現塊狀偽影，或者如果你的網格在每個方向都大於幾千米，請考慮啟用。
 
 .. rst-class:: classref-section-separator
 
@@ -260,9 +260,9 @@ If ``true``, mesh compression will not be used. Consider enabling if you notice 
 - |void| **set_fallback_image_format**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_fallback_image_format**\ (\ )
 
-The user-friendly name of the fallback image format. This is used when exporting the glTF file, including writing to a file and writing to a byte array.
+回退影像格式的使用者友好名稱，用於匯出 glTF 檔案，包括寫入檔案和寫入位元組陣列。
 
-This property may only be one of "None", "PNG", or "JPEG", and is only used when the :ref:`image_format<class_GLTFDocument_property_image_format>` is not one of "None", "PNG", or "JPEG". If having multiple extension image formats is desired, that can be done using a :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` class - this property only covers the use case of providing a base glTF fallback image when using a custom image format.
+該選項只能在“None”“PNG”“JPEG”中選擇一個，只有在 :ref:`image_format<class_GLTFDocument_property_image_format>` 不是“None”“PNG”“JPEG”三者之一時會用到。如果希望有多個擴充影像格式，可以使用 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類來實現——此屬性只適合在使用自訂影像格式時提供基本的 glTF 回退影像。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ This property may only be one of "None", "PNG", or "JPEG", and is only used when
 - |void| **set_fallback_image_quality**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fallback_image_quality**\ (\ )
 
-The quality of the fallback image, if any. For PNG files, this downscales the image on both dimensions by this factor. For JPEG files, this is the lossy quality of the image. A low value is recommended, since including multiple high quality images in a glTF file defeats the file size gains of using a more efficient image format.
+回退影像的品質，可能不存在。對於 PNG 檔案而言，會根據這個係數縮小影像的寬高。對於 JPEG 檔案而言，則是影像的失真品質。建議使用較低的值，因為在 glTF 檔案中包含多個高品質影像會抵消使用更高效影像格式所帶來的檔案大小優勢。
 
 .. rst-class:: classref-item-separator
 
@@ -296,9 +296,9 @@ The quality of the fallback image, if any. For PNG files, this downscales the im
 - |void| **set_image_format**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_image_format**\ (\ )
 
-The user-friendly name of the export image format. This is used when exporting the glTF file, including writing to a file and writing to a byte array.
+匯出影像格式的使用者友好名稱，用於匯出 glTF 檔案，包括寫入檔案和寫入位元組陣列。
 
-By default, Godot allows the following options: "None", "PNG", "JPEG", "Lossless WebP", and "Lossy WebP". Support for more image formats can be added in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes. A single extension class can provide multiple options for the specific format to use, or even an option that uses multiple formats at once.
+預設情況下，Godot 允許在“None”“PNG”“JPEG”“Lossless WebP”“Lossy WebP”中選擇一個。可以在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中新增對更多影像格式的支援。一個擴充類可以提供對特定格式的多種選項，甚至可以提供一個同時使用多種格式的選項。
 
 .. rst-class:: classref-item-separator
 
@@ -334,9 +334,9 @@ modules/gltf/doc_classes/GLTFDocument.xml"
 - |void| **set_root_node_mode**\ (\ value\: :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>`\ )
 - :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **get_root_node_mode**\ (\ )
 
-How to process the root node during export. The default and recommended value is :ref:`ROOT_NODE_MODE_SINGLE_ROOT<class_GLTFDocument_constant_ROOT_NODE_MODE_SINGLE_ROOT>`.
+匯出時如何處理根節點。預設和推薦值為 :ref:`ROOT_NODE_MODE_SINGLE_ROOT<class_GLTFDocument_constant_ROOT_NODE_MODE_SINGLE_ROOT>`\ 。
 
-\ **Note:** Regardless of how the glTF file is exported, when importing, the root node type and name can be overridden in the scene import settings tab.
+\ **注意：**\ 無論 glTF 檔案如何匯出，匯入時，根節點型別和名稱都可以在場景匯入設定分頁中被覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ How to process the root node during export. The default and recommended value is
 - |void| **set_texture_map_mode**\ (\ value\: :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>`\ )
 - :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **get_texture_map_mode**\ (\ )
 
-How to handle texture maps during import. The default and recommended value is :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, which automatically remaps from glTF's flexible texture map system to the more specific texture map slots in Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. Alternatively, :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` can be used to preserve the original texture maps from the glTF file, which may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials.
+匯入時如何處理紋理貼圖。預設且推薦的值是 :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`\ ，它會自動將 glTF 靈活的紋理映射系統重新映射到 Godot 的 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 類中更具體的紋理貼圖槽位。或者，可以使用 :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` 來保留 glTF 檔案中的原始紋理貼圖，這在將 glTF 檔案與自訂著色器一起使用時可能很理想，但在 Godot 的內建材質中可能無法正確顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ How to handle texture maps during import. The default and recommended value is :
 - |void| **set_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_GLTFDocument_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_GLTFDocument_VisibilityMode>` **get_visibility_mode**\ (\ )
 
-How to deal with node visibility during export. This setting does nothing if all nodes are visible. The default and recommended value is :ref:`VISIBILITY_MODE_INCLUDE_REQUIRED<class_GLTFDocument_constant_VISIBILITY_MODE_INCLUDE_REQUIRED>`, which uses the ``KHR_node_visibility`` extension.
+匯出時如何處理節點的可見性。如果所有節點都可見，則該設定不做任何事情。預設推薦值為 :ref:`VISIBILITY_MODE_INCLUDE_REQUIRED<class_GLTFDocument_constant_VISIBILITY_MODE_INCLUDE_REQUIRED>`\ ，使用 ``KHR_node_visibility`` 擴充。
 
 .. rst-class:: classref-section-separator
 
@@ -387,9 +387,9 @@ How to deal with node visibility during export. This setting does nothing if all
 
 :ref:`Error<enum_@GlobalScope_Error>` **append_from_buffer**\ (\ bytes\: :ref:`PackedByteArray<class_PackedByteArray>`, base_path\: :ref:`String<class_String>`, state\: :ref:`GLTFState<class_GLTFState>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_GLTFDocument_method_append_from_buffer>`
 
-Takes a :ref:`PackedByteArray<class_PackedByteArray>` defining a glTF and imports the data to the given :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter.
+接受定義 glTF 的 :ref:`PackedByteArray<class_PackedByteArray>`\ ，將資料匯入通過 ``state`` 參數給定的 :ref:`GLTFState<class_GLTFState>` 物件。
 
-\ **Note:** The ``base_path`` tells :ref:`append_from_buffer()<class_GLTFDocument_method_append_from_buffer>` where to find dependencies and can be empty.
+\ **注意：**\ ``base_path`` 代表 :ref:`append_from_buffer()<class_GLTFDocument_method_append_from_buffer>` 尋找相依項目的位置，可以為空。
 
 .. rst-class:: classref-item-separator
 
@@ -401,9 +401,9 @@ Takes a :ref:`PackedByteArray<class_PackedByteArray>` defining a glTF and import
 
 :ref:`Error<enum_@GlobalScope_Error>` **append_from_file**\ (\ path\: :ref:`String<class_String>`, state\: :ref:`GLTFState<class_GLTFState>`, flags\: :ref:`int<class_int>` = 0, base_path\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_GLTFDocument_method_append_from_file>`
 
-Takes a path to a glTF file and imports the data at that file path to the given :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter.
+接受 glTF 檔案的路徑，將檔案路徑處的資料匯入通過 ``state`` 參數給定的 :ref:`GLTFState<class_GLTFState>` 物件。
 
-\ **Note:** The ``base_path`` tells :ref:`append_from_file()<class_GLTFDocument_method_append_from_file>` where to find dependencies and can be empty.
+\ **注意：**\ ``base_path`` 代表 :ref:`append_from_file()<class_GLTFDocument_method_append_from_file>` 尋找相依項目的位置，可以為空。
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Takes a path to a glTF file and imports the data at that file path to the given 
 
 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` **export_object_model_property**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, node_path\: :ref:`NodePath<class_NodePath>`, godot_node\: :ref:`Node<class_Node>`, gltf_node_index\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_GLTFDocument_method_export_object_model_property>`
 
-Determines a mapping between the given Godot ``node_path`` and the corresponding glTF Object Model JSON pointer(s) in the generated glTF file. The details of this mapping are returned in a :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` object. Additional mappings can be supplied via the :ref:`GLTFDocumentExtension._import_object_model_property()<class_GLTFDocumentExtension_private_method__import_object_model_property>` callback method.
+確定給定 Godot ``node_path`` 與生成的 glTF 檔案中相應的 glTF 物件模型 JSON 指針之間的映射。該映射的詳細資訊以 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` 物件的形式回傳。可以通過 :ref:`GLTFDocumentExtension._import_object_model_property()<class_GLTFDocumentExtension_private_method__import_object_model_property>` 回呼方法提供額外的映射。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Determines a mapping between the given Godot ``node_path`` and the corresponding
 
 :ref:`PackedByteArray<class_PackedByteArray>` **generate_buffer**\ (\ state\: :ref:`GLTFState<class_GLTFState>`\ ) :ref:`🔗<class_GLTFDocument_method_generate_buffer>`
 
-Takes a :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter and returns a glTF :ref:`PackedByteArray<class_PackedByteArray>`.
+通過 ``state`` 參數接收一個 :ref:`GLTFState<class_GLTFState>` 物件，並回傳一個 glTF :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -451,9 +451,9 @@ Takes a :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter
 
 :ref:`Node<class_Node>` **generate_scene**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, bake_fps\: :ref:`float<class_float>` = 30, trimming\: :ref:`bool<class_bool>` = false, remove_immutable_tracks\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_GLTFDocument_method_generate_scene>`
 
-Takes a :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter and returns a Godot Engine scene node.
+通過 ``state`` 參數接收一個 :ref:`GLTFState<class_GLTFState>` 物件，並回傳一個 Godot 引擎的場景節點。
 
-The ``bake_fps`` parameter overrides the bake_fps in ``state``.
+\ ``bake_fps`` 參數會覆蓋 ``state`` 中的 bake_fps。
 
 .. rst-class:: classref-item-separator
 
@@ -465,9 +465,9 @@ The ``bake_fps`` parameter overrides the bake_fps in ``state``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_supported_gltf_extensions**\ (\ ) |static| :ref:`🔗<class_GLTFDocument_method_get_supported_gltf_extensions>`
 
-Returns a list of all support glTF extensions, including extensions supported directly by the engine, and extensions supported by user plugins registering :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes.
+回傳所有支援的 glTF 擴充清單，包括引擎直接支援的擴充和使用者外掛注冊的 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類支援的擴充。
 
-\ **Note:** If this method is run before a GLTFDocumentExtension is registered, its extensions won't be included in the list. Be sure to only run this method after all extensions are registered. If you run this when the engine starts, consider waiting a frame before calling this method to ensure all extensions are registered.
+\ **注意：**\ 如果在注冊 GLTFDocumentExtension 之前執行該方法，則清單中不會包含它所對應的擴充。請確保在注冊所有擴充後再執行該方法。如果在引擎啟動時執行該方法，請考慮在呼叫g該方法之前等待一影格，確保所有擴充都已注冊。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Returns a list of all support glTF extensions, including extensions supported di
 
 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` **import_object_model_property**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, json_pointer\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_GLTFDocument_method_import_object_model_property>`
 
-Determines a mapping between the given glTF Object Model ``json_pointer`` and the corresponding Godot node path(s) in the generated Godot scene. The details of this mapping are returned in a :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` object. Additional mappings can be supplied via the :ref:`GLTFDocumentExtension._export_object_model_property()<class_GLTFDocumentExtension_private_method__export_object_model_property>` callback method.
+確定給定 glTF 物件模型 ``json_pointer`` 與生成的 Godot 場景中相應的 Godot 節點路徑之間的映射。該映射的詳細資訊以 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` 物件的形式回傳。可以通過 :ref:`GLTFDocumentExtension._export_object_model_property()<class_GLTFDocumentExtension_private_method__export_object_model_property>` 回呼方法提供額外的映射。
 
 .. rst-class:: classref-item-separator
 
@@ -491,9 +491,9 @@ Determines a mapping between the given glTF Object Model ``json_pointer`` and th
 
 |void| **register_gltf_document_extension**\ (\ extension\: :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>`, first_priority\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_GLTFDocument_method_register_gltf_document_extension>`
 
-Registers the given :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` instance with GLTFDocument. If ``first_priority`` is ``true``, this extension will be run first. Otherwise, it will be run last.
+使用 GLTFDocument 注冊給定的 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 實例。如果 ``first_priority`` 為 ``true``\ ，則該擴充將被首先執行。否則，它將被最後執行。
 
-\ **Note:** Like GLTFDocument itself, all GLTFDocumentExtension classes must be stateless in order to function properly. If you need to store data, use the ``set_additional_data`` and ``get_additional_data`` methods in :ref:`GLTFState<class_GLTFState>` or :ref:`GLTFNode<class_GLTFNode>`.
+\ **注意：**\ 與 GLTFDocument 本身一樣，所有 GLTFDocumentExtension 類都必須是無狀態的才能正常執行。如果需要儲存資料，使用 :ref:`GLTFState<class_GLTFState>` 或 :ref:`GLTFNode<class_GLTFNode>` 中的 ``set_additional_data`` 和 ``get_additional_data`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -517,9 +517,9 @@ Registers the given :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` in
 
 :ref:`Error<enum_@GlobalScope_Error>` **write_to_filesystem**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GLTFDocument_method_write_to_filesystem>`
 
-Takes a :ref:`GLTFState<class_GLTFState>` object through the ``state`` parameter and writes a glTF file to the filesystem.
+通過 ``state`` 參數接收一個 :ref:`GLTFState<class_GLTFState>` 物件，並將一個 glTF 檔案寫入檔案系統。
 
-\ **Note:** The extension of the glTF file determines if it is a .glb binary file or a .gltf text file.
+\ **注意：**\ glTF 檔案的副檔名決定了它是一個 .glb 二進位檔案還是一個 .gltf 文字檔案。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

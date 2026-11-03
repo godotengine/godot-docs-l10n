@@ -7,14 +7,14 @@ GLTFTextureSampler
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF texture sampler
+代表 glTF 紋理取樣器
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a texture sampler as defined by the base glTF spec. Texture samplers in glTF specify how to sample data from the texture's base image, when rendering the texture on an object.
+表示由基本 glTF 規範定義的紋理取樣器。glTF 中的紋理取樣器指定在物件上渲染紋理時，如何從紋理的基礎影像中取樣資料。
 
 .. rst-class:: classref-introduction-group
 
@@ -61,7 +61,7 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_mag_filter**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mag_filter**\ (\ )
 
-紋理的放大濾鏡，當紋理在螢幕上看起來比源圖像大時使用。
+紋理的放大濾鏡，當紋理在螢幕上看起來比源影像大時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +78,7 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_min_filter**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_min_filter**\ (\ )
 
-紋理的縮小濾鏡，當紋理在螢幕上看起來比源圖像小時使用。
+紋理的縮小濾鏡，當紋理在螢幕上看起來比源影像小時使用。
 
 .. rst-class:: classref-item-separator
 

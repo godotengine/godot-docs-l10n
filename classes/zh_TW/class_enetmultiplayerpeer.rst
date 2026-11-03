@@ -16,14 +16,14 @@ ENetMultiplayerPeer
 
 MultiplayerPeer 的一種實作，應該在初始化為使用者端、伺服器或網格之後傳遞給 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。然後就可以通過連接到 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的訊號來處理事件。有關 ENet 庫包裝的更多資訊，請參見 :ref:`ENetConnection<class_ENetConnection>`\ 。
 
-\ **注意：**\ ENet 僅使用 UDP，不使用 TCP。當你想要將伺服器埠轉發到公共互聯網上以便讓伺服器可以被存取時，只需要轉發 UDP 伺服器埠即可。可以使用 :ref:`UPNP<class_UPNP>` 類嘗試在啟動伺服器時自動轉發伺服器埠。
+\ **注意：**\ ENet 僅使用 UDP，不使用 TCP。當你想要將伺服器埠轉發到公共互連網上以便讓伺服器可以被存取時，只需要轉發 UDP 伺服器埠即可。可以使用 :ref:`UPNP<class_UPNP>` 類嘗試在啟動伺服器時自動轉發伺服器埠。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`高級多人遊戲 <../tutorials/networking/high_level_multiplayer>`
+- :doc:`進階多人遊戲 <../tutorials/networking/high_level_multiplayer>`
 
 - `ENet 網站上的 API 文件 <http://enet.bespin.org/usergroup0.html>`__
 
@@ -111,7 +111,7 @@ MultiplayerPeer 的一種實作，應該在初始化為使用者端、伺服器�
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_client**\ (\ address\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`, channel_count\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0, local_port\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_client>`
 
-建立使用者端，該使用者端使用指定的 ``port`` 連接到位於 ``address`` 的服務器。給定的位址必須是完全限定的功能變數名稱（例如 ``"www.example.com"``\ ），或 IPv4 或 IPv6 格式的 IP 地址（例如 ``"192.168.1.1"``\ ）。\ ``port`` 是伺服器監聽的埠。\ ``channel_count`` 參數可用於指定為連接分配的 ENet 通道數。\ ``in_bandwidth`` 和 ``out_bandwidth`` 參數可用於將傳入和傳出頻寬限制為給定的每秒位元組數。預設值 0 表示無限制的頻寬。請注意，ENet 將對在對等體之間的連接的特定端，策略性地丟棄封包，以確保對等體的頻寬不會被淹沒。頻寬參數還決定了連接的視窗大小，它限制了在任何給定時間可能正在傳輸的可靠封包的數量。如果建立了一個使用者端，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先呼叫 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果不能被建立使用者端，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果指定了 ``local_port``\ ，使用者端也會監聽給定的埠；這對一些 NAT 穿越技術很有用。
+建立使用者端，該使用者端使用指定的 ``port`` 連接到位於 ``address`` 的伺服器。給定的位址必須是完全限定的功能變數名稱（例如 ``"www.example.com"``\ ），或 IPv4 或 IPv6 格式的 IP 地址（例如 ``"192.168.1.1"``\ ）。\ ``port`` 是伺服器監聽的埠。\ ``channel_count`` 參數可用於指定為連接分配的 ENet 通道數。\ ``in_bandwidth`` 和 ``out_bandwidth`` 參數可用於將傳入和傳出頻寬限制為給定的每秒位元組數。預設值 0 表示無限制的頻寬。請注意，ENet 將對在對等體之間的連接的特定端，策略性地丟棄封包，以確保對等體的頻寬不會被淹沒。頻寬參數還決定了連接的視窗大小，它限制了在任何給定時間可能正在傳輸的可靠封包的數量。如果建立了一個使用者端，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先呼叫 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果不能被建立使用者端，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果指定了 ``local_port``\ ，使用者端也會監聽給定的埠；這對一些 NAT 穿越技術很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ MultiplayerPeer 的一種實作，應該在初始化為使用者端、伺服器�
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_server**\ (\ port\: :ref:`int<class_int>`, max_clients\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_server>`
 
-建立通過 ``port`` 監聽連接的伺服器。該埠需要是一個介於 0 到 65535 之間的可用且未被使用的埠。請注意，低於 1024 的埠是特權埠，可能需要提升權限，具體取決於平臺。要更改伺服器監聽的介面，請使用 :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`\ 。默認 IP 是萬用字元 ``"*"``\ ，它會監聽所有可用的介面。\ ``max_clients`` 是同時允許的最大使用者端數，可以使用最大可達 4095 的任何數位，儘管可實作的同時使用者端數可能要低得多，並且取決於套用程式。有關頻寬參數的其他詳細信息，請參閱 :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`\ 。如果伺服器被建立，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先調用 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果伺服器不能被建立，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
+建立通過 ``port`` 監聽連接的伺服器。該埠需要是一個介於 0 到 65535 之間的可用且未被使用的埠。請注意，低於 1024 的埠是特權埠，可能需要提升權限，具體取決於平臺。要更改伺服器監聽的介面，請使用 :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`\ 。預設 IP 是萬用字元 ``"*"``\ ，它會監聽所有可用的介面。\ ``max_clients`` 是同時允許的最大使用者端數，可以使用最大可達 4095 的任何數位，儘管可實作的同時使用者端數可能要低得多，並且取決於套用程式。有關頻寬參數的其他詳細資訊，請參閱 :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`\ 。如果伺服器被建立，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先調用 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果伺服器不能被建立，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
 .. rst-class:: classref-item-separator
 

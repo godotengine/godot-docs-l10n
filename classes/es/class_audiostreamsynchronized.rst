@@ -131,7 +131,7 @@ Obtener el volumen de una de las transmisiones sincronizadas, por índice.
 
 |void| **set_sync_stream**\ (\ stream_index\: :ref:`int<class_int>`, audio_stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioStreamSynchronized_method_set_sync_stream>`
 
-Set one of the synchronized streams, by index.
+Devuelve el nombre de la blendshape de este índice.
 
 .. rst-class:: classref-item-separator
 

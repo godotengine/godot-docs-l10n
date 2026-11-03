@@ -196,7 +196,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 :ref:`ActionMode<enum_BaseButton_ActionMode>` **ACTION_MODE_BUTTON_PRESS** = ``0``
 
-只需按下即可視為已點擊。
+只需按下即可視為已點選。
 
 .. _class_BaseButton_constant_ACTION_MODE_BUTTON_RELEASE:
 
@@ -204,7 +204,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 :ref:`ActionMode<enum_BaseButton_ActionMode>` **ACTION_MODE_BUTTON_RELEASE** = ``1``
 
-需按下後再釋放才算一次點擊。
+需按下後再釋放才算一次點選。
 
 .. rst-class:: classref-section-separator
 
@@ -226,7 +226,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_action_mode**\ (\ value\: :ref:`ActionMode<enum_BaseButton_ActionMode>`\ )
 - :ref:`ActionMode<enum_BaseButton_ActionMode>` **get_action_mode**\ (\ )
 
-決定按鈕被視為已點擊的時機。
+決定按鈕被視為已點選的時機。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 與此按鈕關聯的 :ref:`ButtonGroup<class_ButtonGroup>`\ ，不要與「節點群組」混淆。
 
-\ **注意：** 如果為按鈕指定了 :ref:`ButtonGroup<class_ButtonGroup>`\ ，它將被設定為單選按鈕。
+\ **注意：** 如果為按鈕指定了 :ref:`ButtonGroup<class_ButtonGroup>`\ ，它將被設定為選項按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 二進位遮罩，用來指定此按鈕要回應哪些滑鼠鍵。
 
-若要同時允許左鍵與右鍵點擊，請使用 ``MOUSE_BUTTON_MASK_LEFT | MOUSE_BUTTON_MASK_RIGHT``\ 。
+若要同時允許左鍵與右鍵點選，請使用 ``MOUSE_BUTTON_MASK_LEFT | MOUSE_BUTTON_MASK_RIGHT``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-If ``true``, the button is in disabled state and can't be clicked or toggled.
+如果為 ``true``\ ，則該按鈕處於停用狀態，無法點選或切換。
 
-\ **Note:** If the button is disabled while held down, :ref:`button_up<class_BaseButton_signal_button_up>` will be emitted.
+\ **注意：**\ 如果在處於按下狀態時停用按鈕，則會發出 :ref:`button_up<class_BaseButton_signal_button_up>` 訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +372,9 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
+如果為 ``true``\ ，該按鈕將在工具提示中加入快捷鍵資訊。這包括快捷鍵的事件及其 :ref:`Resource.resource_name<class_Resource_property_resource_name>`\ 。如果事件和名稱均為空，則不會包含該快捷鍵。
 
-\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+\ **注意：**\ 使用 :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 方法自訂工具提示控制項時，該屬性無效。
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ If ``true``, the button will add information about its shortcut in the tooltip. 
 - |void| **set_toggle_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_toggle_mode**\ (\ )
 
-若為 ``true``\ ，按鈕進入切換模式：每次點擊都會在按下／彈起狀態間切換。
+若為 ``true``\ ，按鈕進入切換模式：每次點選都會在按下／彈起狀態間切換。
 
 .. rst-class:: classref-section-separator
 

@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+当控件在相应轴上的最小尺寸被修改为大于其当前尺寸时，控件将向左或向上生长以补足尺寸。
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+当控件在相应轴上的最小尺寸被修改为大于其当前尺寸时，控件将向右或向下生长以补足尺寸。
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+当控件的最小尺寸被修改为大于其当前尺寸时，控件将向两个方向等量生长以补足尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1625,13 +1625,13 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-该 Control（控件）边界矩形的最大尺寸。如果设置为大于或等于 ``(0, 0)`` 的值，该节点的边界矩形将永远不会超过这个尺寸。如果设置为小于 ``(0, 0)`` 的值，则表示没有最大尺寸限制。
+该 Control（控件）边界矩形的最大尺寸。如果设置为大于或等于 ``(0, 0)`` 的值，则该节点的边界矩形将永远不会超过这个尺寸；小于 ``(0, 0)`` 的值，则表示没有最大尺寸限制。
 
-\ **注意：** 最终生效的最大尺寸可能会受到父级 Container（容器）的尺寸限制以及传递过来的最大尺寸的影响。另请参阅：\ :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`\ 。
+\ **注意：** 最终生效的最大尺寸可能会受到父级 Container（容器）的尺寸限制以及传递而来的最大尺寸的影响。另请参阅：\ :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`\ 。
 
 \ **注意：** 并非所有的 Control 子类都能完美地处理自定义最大尺寸，如果控件的内容超出了这个尺寸，可能会导致意外的行为。
 
-\ **注意：** 该值的优先级高于 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ （自定义最小尺寸）。例如，如果你将 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 设置为 ``(100, 100)``\ ，并将 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 设置为 ``(200, 200)``\ ，最终得出的尺寸将会是 ``(100, 100)``\ 。
+\ **注意：** 该值的优先级高于 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ 。例如，如果你将 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 设置为 ``(100, 100)``\ ，并将 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 设置为 ``(200, 200)``\ ，最终得出的尺寸将会是 ``(100, 100)``\ 。
 
 \ **注意：** 当使用此属性时，建议使用 :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` 而不是 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ ，因为前者在计算最小尺寸时会尊重最大尺寸的限制，而后者不会。
 
@@ -1825,7 +1825,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+当控件的水平最小尺寸被修改为大于其当前尺寸时，控制该控件在水平轴上的生长方向。因为控件的尺寸始终不能小于其最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+当控件的垂直最小尺寸被修改为大于其当前尺寸时，控制该控件在垂直轴上的生长方向。因为控件的尺寸始终不能小于其最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -4151,9 +4151,9 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-使最大尺寸缓存在此节点及其父节点（直至顶层）中失效。适用于当 :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` 的返回值改变时与之配合使用。直接设置 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 会自动调用此方法。
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
-\ **注意：** 调用此方法也会调用 :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`\ ，因为组合后的最小尺寸可能会受最大尺寸变化的影响。
+\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 
 .. rst-class:: classref-item-separator
 

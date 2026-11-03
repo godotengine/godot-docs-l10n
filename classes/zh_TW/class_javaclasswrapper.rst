@@ -7,16 +7,16 @@ JavaClassWrapper
 
 **繼承：** :ref:`Object<class_Object>`
 
-Provides access to the Java Native Interface.
+提供對 Java 原生介面的存取。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The JavaClassWrapper singleton provides a way for the Godot application to send and receive data through the `Java Native Interface <https://developer.android.com/training/articles/perf-jni>`__ (JNI).
+JavaClassWrapper 單例為 Godot 應用程式提供了一種通過 `Java 原生介面 <https://developer.android.com/training/articles/perf-jni>`__\ （JNI）發送和接收資料的方法。
 
-\ **Note:** This singleton is only available in Android builds.
+\ **注意：**\ 該單例僅適用於 Android 版本。
 
 ::
 
@@ -28,14 +28,14 @@ The JavaClassWrapper singleton provides a way for the Godot application to send 
 
     print(datetime.format(formatter))
 
-\ **Warning:** When calling Java methods, be sure to check :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` to check if the method threw an exception.
+\ **警告：**\ 呼叫 Java 方法時，請確保使用 :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` 檢查該方法是否拋出了異常。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`Integrating with Android APIs <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
+- :doc:`與 Android API 的集成 <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
 
 .. rst-class:: classref-reftable-group
 
@@ -70,9 +70,9 @@ The JavaClassWrapper singleton provides a way for the Godot application to send 
 
 :ref:`JavaObject<class_JavaObject>` **create_proxy**\ (\ object\: :ref:`Object<class_Object>`, interfaces\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_proxy>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the given Java interfaces using the given :ref:`Object<class_Object>` as the implementation.
+建立一個實作指定 Java 介面的 :ref:`JavaObject<class_JavaObject>`\ ，並使用給定的 :ref:`Object<class_Object>` 作為具體實作。
 
-The ``object`` must contain methods signatures matching the methods signatures from the passed Java ``interfaces``. Invoking methods from the Java ``interfaces`` will route to the matching ``object`` method.
+\ ``object`` 必須包含與傳入的 Java ``interfaces`` 中方法簽名相匹配的方法簽名。呼叫 Java ``interfaces`` 中的方法時，將路由至對應的 ``object`` 方法。
 
 ::
 
@@ -84,7 +84,7 @@ The ``object`` must contain methods signatures matching the methods signatures f
     var printer_object = JavaClassWrapper.create_proxy(print_proxy, ["android.util.Printer"])
     printer_object.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **注意：** 該方法僅適用於 Android 平台。在其他所有平台上，該方法始終回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -96,11 +96,11 @@ The ``object`` must contain methods signatures matching the methods signatures f
 
 :ref:`JavaObject<class_JavaObject>` **create_sam_callback**\ (\ sam_interface\: :ref:`String<class_String>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_sam_callback>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the Java Single Abstract Method (SAM) interface using the Godot :ref:`Callable<class_Callable>` as the implementation.
+建立一個實作 Java 單一抽象方法（SAM）介面的 :ref:`JavaObject<class_JavaObject>`\ ，並使用 Godot 的 :ref:`Callable<class_Callable>` 作為具體實作。
 
-The ``sam_interface`` **must be** a Java SAM interface, meaning it must only have a single abstract method to implement.
+\ ``sam_interface`` **必須**\ 是一個 Java SAM 介面，這意味著它必須僅包含一個需要實作的抽象方法。
 
-The ``callable`` must be able to handle the same parameter types as the SAM interface method, and must provide the same return type. The ``callable`` will be invoked as a callback, passing the arguments from the Java SAM interface method.
+\ ``callable`` 必須能夠處理與 SAM 介面方法相同的參數型別，並提供相同的回傳型別。該 ``callable`` 將作為回呼被呼叫，並傳入來自 Java SAM 介面方法的參數。
 
 ::
 
@@ -109,7 +109,7 @@ The ``callable`` must be able to handle the same parameter types as the SAM inte
     var callback = JavaClassWrapper.create_sam_callback("android.util.Printer", cb)
     callback.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **注意：** 該方法僅適用於 Android 平台。在其他所有平台上，該方法始終回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -121,9 +121,9 @@ The ``callable`` must be able to handle the same parameter types as the SAM inte
 
 :ref:`JavaObject<class_JavaObject>` **get_exception**\ (\ ) :ref:`🔗<class_JavaClassWrapper_method_get_exception>`
 
-Returns the Java exception from the last call into a Java class. If there was no exception, it will return ``null``.
+回傳最近一次呼叫 Java 類時產生的 Java 異常。如果沒有產生異常則回傳 ``null``\ 。
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **注意：**\ 該方法僅在 Android 上有效。該方法在其他平台上始終回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -135,18 +135,18 @@ Returns the Java exception from the last call into a Java class. If there was no
 
 :ref:`JavaClass<class_JavaClass>` **wrap**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaClassWrapper_method_wrap>`
 
-Wraps a class defined in Java, and returns it as a :ref:`JavaClass<class_JavaClass>` :ref:`Object<class_Object>` type that Godot can interact with.
+包裝 Java 中定義的類，回傳 Godot 可以與之互動的 :ref:`Object<class_Object>` 型別 :ref:`JavaClass<class_JavaClass>`\ 。
 
-When wrapping inner (nested) classes, use ``$`` instead of ``.`` to separate them. For example, ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` wraps the **WindowManager.LayoutParams** class.
+包裝內部（巢狀）類時請使用 ``$`` 分隔，不要用 ``.``\ 。例如 **WindowManager.LayoutParams** 類應使用 ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` 進行包裝。
 
-\ **Note:** To invoke a constructor, call a method with the same name as the class. For example:
+\ **注意：**\ 呼叫建構函式請呼叫與類同名的方法。例如：
 
 ::
 
     var Intent = JavaClassWrapper.wrap("android.content.Intent")
     var intent = Intent.Intent()
 
-\ **Note:** This method only works on Android. On every other platform, this method does nothing and returns an empty :ref:`JavaClass<class_JavaClass>`.
+\ **注意：**\ 該方法僅適用於 Android，在其他所有平台上都不會執行任何操作，回傳的是空的 :ref:`JavaClass<class_JavaClass>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

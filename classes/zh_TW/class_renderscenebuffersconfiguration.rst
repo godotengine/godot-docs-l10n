@@ -14,7 +14,7 @@ RenderSceneBuffersConfiguration
 說明
 ----
 
-此配置物件由算繪引擎在視窗更改時建立和填充，並用於（重新）配置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 物件。
+此配置物件由渲染引擎在視窗更改時建立和填充，並用於（重新）配置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -66,7 +66,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_anisotropic_filtering_level**\ (\ value\: :ref:`ViewportAnisotropicFiltering<enum_RenderingServer_ViewportAnisotropicFiltering>`\ )
 - :ref:`ViewportAnisotropicFiltering<enum_RenderingServer_ViewportAnisotropicFiltering>` **get_anisotropic_filtering_level**\ (\ )
 
-Level of the anisotropic filter.
+各向異性過濾的層級。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Level of the anisotropic filter.
 - |void| **set_internal_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_internal_size**\ (\ )
 
-設定圖像的大小，需要參考。
+設定影像的大小，需要參考。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Level of the anisotropic filter.
 - |void| **set_msaa_3d**\ (\ value\: :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>`\ )
 - :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d**\ (\ )
 
-用於天空算繪的旋轉。
+用於天空渲染的旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Level of the anisotropic filter.
 - |void| **set_screen_space_aa**\ (\ value\: :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>`\ )
 - :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa**\ (\ )
 
-請求在後期處理中套用的螢幕空間抗鋸齒。
+請求在後期處理中套用的螢幕空間反鋸齒。
 
 .. rst-class:: classref-item-separator
 
@@ -202,9 +202,9 @@ Level of the anisotropic filter.
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Bias applied to mipmaps.
+套用至 Mipmap 的偏置。
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **注意：** 此屬性僅在 Forward+ 和 Mobile 渲染器中受支援，不支援在 Compatibility 渲染器中使用。在 Compatibility 渲染器中，該屬性始終被視為設定為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Bias applied to mipmaps.
 - |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_view_count**\ (\ )
 
-算繪的視圖數。
+渲染的視圖數。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

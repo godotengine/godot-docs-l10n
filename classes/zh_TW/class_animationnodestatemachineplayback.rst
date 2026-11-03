@@ -103,9 +103,9 @@ AnimationNodeStateMachinePlayback
 
 **state_finished**\ (\ state\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_signal_state_finished>`
 
-Emitted when the ``state`` finishes playback. If ``state`` is a state machine set to grouped mode, its signals are passed through with its name prefixed.
+``state`` 播放完畢時發出。如果 ``state`` 是設定為編組模式的狀態機，則其訊號會以其名稱作為前綴傳遞。
 
-If there is a crossfade, this will be fired when the influence of the :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>` animation is no longer present.
+如果存在交叉淡入淡出，則它將在 :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>` 動畫的影響不再存在時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If there is a crossfade, this will be fired when the influence of the :ref:`get_
 
 **state_started**\ (\ state\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_signal_state_started>`
 
-Emitted when the ``state`` starts playback. If ``state`` is a state machine set to grouped mode, its signals are passed through with its name prefixed.
+當 ``state`` 開始播放時發出。如果 ``state`` 是一個設定為編組模式的狀態機，則其訊號將以其名稱作為前綴傳遞。
 
 .. rst-class:: classref-section-separator
 
@@ -174,7 +174,7 @@ Emitted when the ``state`` starts playback. If ``state`` is a state machine set 
 
 :ref:`float<class_float>` **get_fading_from_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_length>`
 
-Returns the playback state length of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+回傳 :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>` 所取得節點的播放狀態長度。若目前沒有動畫淡化，則回傳 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Returns the playback state length of the node from :ref:`get_fading_from_node()<
 
 :ref:`float<class_float>` **get_fading_from_play_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_play_position>`
 
-Returns the playback position of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+回傳 :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>` 所取得節點的播放位置。若目前沒有動畫淡化，則回傳 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Returns the playback position of the node from :ref:`get_fading_from_node()<clas
 
 :ref:`float<class_float>` **get_fading_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_length>`
 
-Returns the length of the current fade animation. Returns ``0`` if no animation fade is occurring.
+回傳目前焦點項目的索引。如果沒有焦點，則回傳 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Returns the length of the current fade animation. Returns ``0`` if no animation 
 
 :ref:`float<class_float>` **get_fading_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_position>`
 
-Returns the playback position of the current fade animation. Returns ``0`` if no animation fade is occurring.
+回傳目前焦點項目的索引。如果沒有焦點，則回傳 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 

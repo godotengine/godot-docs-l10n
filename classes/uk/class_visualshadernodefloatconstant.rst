@@ -14,7 +14,7 @@ VisualShaderNodeFloatConstant
 Опис
 --------
 
-Перекладений на ``код пропустити-лінт``\ float[/code] в мові тіні.
+Перекладено як ``float`` у мові шейдерів.
 
 .. rst-class:: classref-reftable-group
 

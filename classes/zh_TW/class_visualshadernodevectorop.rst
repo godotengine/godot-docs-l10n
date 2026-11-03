@@ -167,7 +167,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **get_operator**\ (\ )
 
-The operator to be used.
+要使用的運算符。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

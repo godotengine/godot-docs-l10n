@@ -37,7 +37,7 @@ RigidBody3D
 
 - :doc:`排查物理问题 <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `3D 货车镇演示 <https://godotengine.org/asset-library/asset/2752>`__
+- `3D 货车镇演示 <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 - `3D 物理测试演示 <https://godotengine.org/asset-library/asset/2747>`__
 

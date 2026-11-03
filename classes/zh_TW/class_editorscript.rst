@@ -14,13 +14,13 @@ EditorScript
 說明
 ----
 
-Scripts extending this class and implementing its :ref:`_run()<class_EditorScript_private_method__run>` method can be executed from the Script Editor's **File > Run** menu option (or by pressing :kbd:`Ctrl + Shift + X`) while the editor is running. This is useful for adding custom in-editor functionality to Godot. For more complex additions, consider using :ref:`EditorPlugin<class_EditorPlugin>`\ s instead.
+擴充該類並實作其 :ref:`_run()<class_EditorScript_private_method__run>` 方法的腳本可以在編輯器執行時通過腳本編輯器的\ **檔案 > 執行**\ 選單選項（或按 :kbd:`Ctrl + Shift + X`\ ）執行。這對於向 Godot 新增自訂的編輯內功能很有用。對於更複雜的新增，請考慮改用 :ref:`EditorPlugin<class_EditorPlugin>`\ 。
 
-If a script extending this class also has a global class name, it will be included in the editor's command palette.
+如果擴充該類的腳本存在全域類別名稱，則會包含在編輯器的命令面板中。
 
-\ **Note:** Extending scripts need to have ``tool`` mode enabled.
+\ **注意：**\ 擴充腳本需要啟用 ``tool`` 工具模式。
 
-\ **Example:** Running the following script prints "Hello from the Godot Editor!":
+\ **範例：**\ 執行下面的腳本會輸出“Godot 編輯器向你問好！”：
 
 
 .. tabs::
@@ -42,13 +42,13 @@ If a script extending this class also has a global class name, it will be includ
     {
         public override void _Run()
         {
-            GD.Print("Hello from the Godot Editor!");
+            GD.Print("Godot 編輯器向你問好！");
         }
     }
 
 
 
-\ **Note:** EditorScript is :ref:`RefCounted<class_RefCounted>`, meaning it is destroyed when nothing references it. This can cause errors during asynchronous operations if there are no references to the script.
+\ **注意：**\ EditorScript 是 :ref:`RefCounted<class_RefCounted>`\ ，這意味著它不再被參照時會被銷毀。如果沒有對腳本的參照，這可能會在非同步操作期間導致錯誤。
 
 .. rst-class:: classref-reftable-group
 
@@ -97,7 +97,7 @@ If a script extending this class also has a global class name, it will be includ
 
 **已棄用：** Use :ref:`EditorInterface.add_root_node()<class_EditorInterface_method_add_root_node>` instead.
 
-Makes ``node`` root of the currently opened scene. Only works if the scene is empty. If the ``node`` is a scene instance, an inheriting scene will be created.
+使 ``node`` 成為目前打開的場景的根。僅當場景為空時才有效。如果 ``node`` 是場景實例，則會建立一個繼承場景。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Makes ``node`` root of the currently opened scene. Only works if the scene is em
 
 **已棄用：** :ref:`EditorInterface<class_EditorInterface>` is a global singleton and can be accessed directly by its name.
 
-Returns the :ref:`EditorInterface<class_EditorInterface>` singleton instance.
+回傳 :ref:`EditorInterface<class_EditorInterface>` 單例實例。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns the :ref:`EditorInterface<class_EditorInterface>` singleton instance.
 
 **已棄用：** Use :ref:`EditorInterface.get_edited_scene_root()<class_EditorInterface_method_get_edited_scene_root>` instead.
 
-Returns the edited (current) scene's root :ref:`Node<class_Node>`. Equivalent of :ref:`EditorInterface.get_edited_scene_root()<class_EditorInterface_method_get_edited_scene_root>`.
+回傳正在編輯的（目前）場景的根 :ref:`Node<class_Node>`\ 。相當於 :ref:`EditorInterface.get_edited_scene_root()<class_EditorInterface_method_get_edited_scene_root>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

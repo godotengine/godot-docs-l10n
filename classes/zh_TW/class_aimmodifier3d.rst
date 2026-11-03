@@ -121,7 +121,7 @@ AimModifier3D
 
 :ref:`bool<class_bool>` **is_relative**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AimModifier3D_method_is_relative>`
 
-Returns ``true`` if the relative option is enabled in the setting at ``index``.
+如果索引為 ``index`` 的設定啟用了相對選項，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -181,11 +181,11 @@ Returns ``true`` if the relative option is enabled in the setting at ``index``.
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_relative>`
 
-Sets relative option in the setting at ``index`` to ``enabled``.
+將索引為 ``index`` 的設定的相對選項設定為 ``enabled``\ 。
 
-If sets ``enabled`` to ``true``, the rotation is applied relative to the pose.
+如果將 ``enabled`` 設定為 ``true``\ ，則旋轉將相對於該姿勢應用。
 
-If sets ``enabled`` to ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **AimModifier3D**'s result.
+如果將 ``enabled`` 設定為 ``false``\ ，則旋轉將相對於靜止狀態應用。這意味著用 **AimModifier3D** 的結果替換目前姿勢。
 
 .. rst-class:: classref-item-separator
 

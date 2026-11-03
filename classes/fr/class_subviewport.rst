@@ -261,7 +261,7 @@ Si ``true``, la redéfinition de la taille 2D affecte également l'étirement.
 - |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_view_count**\ (\ )
 
-The number of view layers we are rendering to. Set this to ``2`` to enable stereo rendering.
+Le nombre de couches d'affichage vers lesquelles nous rendons. Définissez cela à ``2`` pour activer le rendu stéréo.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

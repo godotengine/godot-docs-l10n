@@ -14,7 +14,7 @@ ThemeDB
 說明
 ----
 
-這個單例可以用來存取引擎及專案中所使用的 :ref:`Theme<class_Theme>` 資源靜態資訊。可以獲取引擎默認的主題，也可以獲取你在專案中配置的主題。
+這個單例可以用來存取引擎及專案中所使用的 :ref:`Theme<class_Theme>` 資源靜態資訊。可以取得引擎預設的主題，也可以取得你在專案中配置的主題。
 
 \ **ThemeDB** 也包含了主題屬性的退回值。
 
@@ -192,7 +192,7 @@ ThemeDB
 
 :ref:`Theme<class_Theme>` **get_project_theme**\ (\ ) :ref:`🔗<class_ThemeDB_method_get_project_theme>`
 
-返回自訂專案 :ref:`Theme<class_Theme>` 的引用。該主題資源能夠影響專案中的所有控制項節點，覆蓋默認引擎主題。
+返回自訂專案 :ref:`Theme<class_Theme>` 的引用。該主題資源能夠影響專案中的所有控制項節點，覆蓋預設引擎主題。
 
 專案主題的設定請參閱 :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`\ 。
 

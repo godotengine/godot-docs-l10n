@@ -7,22 +7,22 @@ HeightMapShape3D
 
 **繼承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 3D heightmap shape used for physics collision.
+3D 高度圖形狀，用於物理碰撞。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A 3D heightmap shape, intended for use in physics to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. This type is most commonly used for terrain with vertices placed in a fixed-width grid.
+3D 高度圖形狀，用於物理為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。這種型別最常用於在固定寬度的柵格中放置頂點的地形。
 
-The heightmap is represented as a 2D grid of height values, which represent the position of grid points on the Y axis. Grid points are spaced 1 unit apart on the X and Z axes, and the grid is centered on the origin of the :ref:`CollisionShape3D<class_CollisionShape3D>` node. Internally, each grid square is divided into two triangles.
+高度圖表示為 2D 柵格中的高度值，每個值代表格點在 Y 軸上的位置。 格點在 X 軸和 Z 軸上各自間隔為 1 個單位，且柵格的中心恰好在 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點的原點。在內部，每個柵格正方形被劃分為兩個三角形。
 
-Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` to the height of the desired vertices (this is supported in both GodotPhysics3D and Jolt Physics). You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
+由於高度圖的特性，它無法用於建模懸垂或洞穴，因為這些情況在同一垂直位置上存在多個頂點。若要在碰撞中打孔，可以將所需位置的頂點高度設為 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ （受 GodotPhysics3D 和 Jolt Physics 雙方支援）。你也可以接著在其中加入具有獨立碰撞的網格來提供懸垂、洞穴等效果。
 
-\ **Performance:** **HeightMapShape3D** is faster to check collisions against than :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is significantly slower than primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`.
+\ **效能：**\ 對 **HeightMapShape3D** 的碰撞檢測比 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 快，但相比 :ref:`BoxShape3D<class_BoxShape3D>` 等基本體形狀顯著要慢。
 
-A heightmap collision shape can also be built by using an :ref:`Image<class_Image>` reference:
+高度圖碰撞形狀也可以由 :ref:`Image<class_Image>` 建置：
 
 
 .. tabs::
@@ -40,7 +40,7 @@ A heightmap collision shape can also be built by using an :ref:`Image<class_Imag
 
 
 
-\ **Note:** If you need to use a spacing different than 1 unit, you can adjust the :ref:`Node3D.scale<class_Node3D_property_scale>` of the shape. However, keep in mind that GodotPhysics3D does not support non-uniform scaling: you'll need to scale the Y axis by the same amount as the X and Z axes, which means the values in :ref:`map_data<class_HeightMapShape3D_property_map_data>` will need to be pre-scaled by the inverse of that scale. Also note that GodotPhysics3D does not support scaling at all for dynamic bodies (that is, non-frozen :ref:`RigidBody3D<class_RigidBody3D>` nodes); to use a scaled **HeightMapShape3D** with those, you will need to use Jolt Physics.
+\ **注意：** 如果需要使用 1 個單位以外的間距，可以調整形狀的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。不過，注意 GodotPhysics3D 不支援非均一的縮放：你需要在 Y 軸上進行和 X 軸與 Z 軸相同的縮放，這就意味著 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 需要提前被相同程度的逆縮放。還要注意 GodotPhysics3D 不支援動態物體（亦即，未凍結的 :ref:`RigidBody3D<class_RigidBody3D>` 節點）的任何縮放。若要同時使用縮放了的 **HeightMapShape3D** 和動態物體，你必須使用 Jolt Physics。
 
 .. rst-class:: classref-reftable-group
 
@@ -94,7 +94,7 @@ A heightmap collision shape can also be built by using an :ref:`Image<class_Imag
 - |void| **set_map_data**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_map_data**\ (\ )
 
-Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMapShape3D_property_map_width>` multiplied by :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
+高度圖資料。該陣列的大小必須等於 :ref:`map_width<class_HeightMapShape3D_property_map_width>` 乘以 :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -113,7 +113,7 @@ Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMa
 - |void| **set_map_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_depth**\ (\ )
 
-Number of vertices in the depth of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+高度圖深度中的頂點數。更改該項將調整 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Number of vertices in the depth of the heightmap. Changing this will resize the 
 - |void| **set_map_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_width**\ (\ )
 
-Number of vertices in the width of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+高度圖寬度中的頂點數。更改該項將調整 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -147,7 +147,7 @@ Number of vertices in the width of the heightmap. Changing this will resize the 
 
 :ref:`float<class_float>` **get_max_height**\ (\ ) |const| :ref:`🔗<class_HeightMapShape3D_method_get_max_height>`
 
-Returns the largest height value found in :ref:`map_data<class_HeightMapShape3D_property_map_data>`. Recalculates only when :ref:`map_data<class_HeightMapShape3D_property_map_data>` changes.
+回傳在 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 中找到的最大高度值。僅當 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 更改時重新計算。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Returns the largest height value found in :ref:`map_data<class_HeightMapShape3D_
 
 :ref:`float<class_float>` **get_min_height**\ (\ ) |const| :ref:`🔗<class_HeightMapShape3D_method_get_min_height>`
 
-Returns the smallest height value found in :ref:`map_data<class_HeightMapShape3D_property_map_data>`. Recalculates only when :ref:`map_data<class_HeightMapShape3D_property_map_data>` changes.
+回傳在 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 中找到的最小高度值。僅當 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 更改時重新計算。
 
 .. rst-class:: classref-item-separator
 
@@ -171,13 +171,13 @@ Returns the smallest height value found in :ref:`map_data<class_HeightMapShape3D
 
 |void| **update_map_data_from_image**\ (\ image\: :ref:`Image<class_Image>`, height_min\: :ref:`float<class_float>`, height_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_HeightMapShape3D_method_update_map_data_from_image>`
 
-Updates :ref:`map_data<class_HeightMapShape3D_property_map_data>` with data read from an :ref:`Image<class_Image>` reference. Automatically resizes heightmap :ref:`map_width<class_HeightMapShape3D_property_map_width>` and :ref:`map_depth<class_HeightMapShape3D_property_map_depth>` to fit the full image width and height.
+使用從 :ref:`Image<class_Image>` 參照讀取的資料更新 :ref:`map_data<class_HeightMapShape3D_property_map_data>`\ 。自動調整高度圖的寬度 :ref:`map_width<class_HeightMapShape3D_property_map_width>` 和高度 :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`\ ，適應整個影像的寬度和高度。
 
-The image needs to be in either :ref:`Image.FORMAT_RF<class_Image_constant_FORMAT_RF>` (32 bit), :ref:`Image.FORMAT_RH<class_Image_constant_FORMAT_RH>` (16 bit), or :ref:`Image.FORMAT_R8<class_Image_constant_FORMAT_R8>` (8 bit).
+影像格式需要為 :ref:`Image.FORMAT_RF<class_Image_constant_FORMAT_RF>`\ （32 位元）、\ :ref:`Image.FORMAT_RH<class_Image_constant_FORMAT_RH>`\ （16 位元）或 :ref:`Image.FORMAT_R8<class_Image_constant_FORMAT_R8>`\ （8 位元）。
 
-Each image pixel is read in as a float on the range from ``0.0`` (black pixel) to ``1.0`` (white pixel). This range value gets remapped to ``height_min`` and ``height_max`` to form the final height value.
+每個影像像素都以浮點數形式讀入，範圍從 ``0.0``\ （黑色像素）到 ``1.0``\ （白色像素）。該範圍值重新映射到最小高度 ``height_min`` 和最大高度 ``height_max``\ ，形成最終的高度值。
 
-\ **Note:** Using a heightmap with 16-bit or 32-bit data, stored in EXR or HDR format is recommended. Using 8-bit height data, or a format like PNG that Godot imports as 8-bit, will result in a terraced terrain.
+\ **注意：**\ 使用 16 位元或 32 位元資料的高度圖時建議儲存為 EXR 或 HDR 格式。使用 8 位元高度資料或像 PNG 這樣 Godot 會匯入為 8 位元的格式，將導致階梯狀地形。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

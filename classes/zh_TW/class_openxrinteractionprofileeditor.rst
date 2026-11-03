@@ -7,14 +7,14 @@ OpenXRInteractionProfileEditor
 
 **繼承：** :ref:`OpenXRInteractionProfileEditorBase<class_OpenXRInteractionProfileEditorBase>` **<** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Default OpenXR interaction profile editor.
+預設 OpenXR 互動設定編輯器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This is the default OpenXR interaction profile editor that provides a generic interface for editing any interaction profile for which no custom editor has been defined.
+這是預設的 OpenXR 互動設定編輯器，為編輯互動設定提供通用介面，未定義任何自訂編輯器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

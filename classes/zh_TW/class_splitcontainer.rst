@@ -9,14 +9,14 @@ SplitContainer
 
 **被繼承：** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
 
-A container that arranges child controls horizontally or vertically and provides grabbers for adjusting the split ratios between them.
+將兩個子控制項垂直或水平排列的容器，提供了用於調整它們之間分隔比例的抓取器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A container that arranges child controls horizontally or vertically and creates grabbers between them. The grabbers can be dragged around to change the size relations between the child controls.
+用於水平或垂直排列子控制項的容器，還會在它們之間建立抓取器。可以拖動抓取器來改變子控制項之間的大小關係。
 
 .. rst-class:: classref-introduction-group
 
@@ -126,7 +126,7 @@ A container that arranges child controls horizontally or vertically and creates 
 
 **drag_ended**\ (\ ) :ref:`🔗<class_SplitContainer_signal_drag_ended>`
 
-Emitted when the user ends dragging.
+使用者結束拖動時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Emitted when the user ends dragging.
 
 **drag_started**\ (\ ) :ref:`🔗<class_SplitContainer_signal_drag_started>`
 
-Emitted when the user starts dragging.
+使用者開始拖動時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Emitted when the user starts dragging.
 
 **dragged**\ (\ offset\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplitContainer_signal_dragged>`
 
-Emitted when any dragger is dragged by user.
+當使用者拖動任意拖動器時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -173,11 +173,11 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 
 :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>` **DRAGGER_VISIBLE** = ``0``
 
-The split dragger icon is always visible when :ref:`autohide<class_SplitContainer_theme_constant_autohide>` is ``false``, otherwise visible only when the cursor hovers it.
+當 :ref:`autohide<class_SplitContainer_theme_constant_autohide>` 為 ``false`` 時，拆分拖動器始終可見，否則僅在滑鼠在拖動器上懸停時可見。
 
-The size of the grabber icon determines the minimum :ref:`separation<class_SplitContainer_theme_constant_separation>`.
+抓取器圖示的大小決定了最小間隔 :ref:`separation<class_SplitContainer_theme_constant_separation>`\ 。
 
-The dragger icon is automatically hidden if the length of the grabber icon is longer than the split bar.
+抓取器圖示如果比拆分條長，就會自動隱藏。
 
 .. _class_SplitContainer_constant_DRAGGER_HIDDEN:
 
@@ -185,9 +185,9 @@ The dragger icon is automatically hidden if the length of the grabber icon is lo
 
 :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>` **DRAGGER_HIDDEN** = ``1``
 
-The split dragger icon is never visible regardless of the value of :ref:`autohide<class_SplitContainer_theme_constant_autohide>`.
+拆分拖動器圖示始終不可見，無視 :ref:`autohide<class_SplitContainer_theme_constant_autohide>` 的值。
 
-The size of the grabber icon determines the minimum :ref:`separation<class_SplitContainer_theme_constant_separation>`.
+抓取器圖示的大小決定了最小間隔 :ref:`separation<class_SplitContainer_theme_constant_separation>`\ 。
 
 .. _class_SplitContainer_constant_DRAGGER_HIDDEN_COLLAPSED:
 
@@ -195,7 +195,7 @@ The size of the grabber icon determines the minimum :ref:`separation<class_Split
 
 :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>` **DRAGGER_HIDDEN_COLLAPSED** = ``2``
 
-The split dragger icon is not visible, and the split bar is collapsed to zero thickness.
+拆分拖動器圖示不可見，拆分條粗細折疊為零。
 
 .. rst-class:: classref-section-separator
 
@@ -217,7 +217,7 @@ The split dragger icon is not visible, and the split bar is collapsed to zero th
 - |void| **set_collapsed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collapsed**\ (\ )
 
-If ``true``, the draggers will be disabled and the children will be sized as if all :ref:`split_offsets<class_SplitContainer_property_split_offsets>` were ``0``.
+如果為 ``true``\ ，則會停用拖動器，子節點會根據所有 :ref:`split_offsets<class_SplitContainer_property_split_offsets>` 都為 ``0`` 時的情況來調整大小。
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ If ``true``, the draggers will be disabled and the children will be sized as if 
 - |void| **set_drag_area_highlight_in_editor**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_area_highlight_in_editor_enabled**\ (\ )
 
-Highlights the drag area :ref:`Rect2<class_Rect2>` so you can see where it is during development. The drag area is gold if :ref:`dragging_enabled<class_SplitContainer_property_dragging_enabled>` is ``true``, and red if ``false``.
+醒目標示拖動區域 :ref:`Rect2<class_Rect2>`\ ，便於在開發時查看位置。\ :ref:`dragging_enabled<class_SplitContainer_property_dragging_enabled>` 為 ``true`` 時拖動區域為金色，為 ``false`` 時則為紅色。
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Highlights the drag area :ref:`Rect2<class_Rect2>` so you can see where it is du
 - |void| **set_drag_area_margin_begin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_area_margin_begin**\ (\ )
 
-Reduces the size of the drag area and split bar :ref:`split_bar_background<class_SplitContainer_theme_style_split_bar_background>` at the beginning of the container.
+減少可拖動區域和拆分條 :ref:`split_bar_background<class_SplitContainer_theme_style_split_bar_background>` 在容器起始側的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ Reduces the size of the drag area and split bar :ref:`split_bar_background<class
 - |void| **set_drag_area_margin_end**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_area_margin_end**\ (\ )
 
-Reduces the size of the drag area and split bar :ref:`split_bar_background<class_SplitContainer_theme_style_split_bar_background>` at the end of the container.
+減少可拖動區域和拆分條 :ref:`split_bar_background<class_SplitContainer_theme_style_split_bar_background>` 在容器結尾側的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Reduces the size of the drag area and split bar :ref:`split_bar_background<class
 - |void| **set_drag_area_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_area_offset**\ (\ )
 
-Shifts the drag area in the axis of the container to prevent the drag area from overlapping the :ref:`ScrollBar<class_ScrollBar>` or other selectable :ref:`Control<class_Control>` of a child node.
+將拖動區域在容器軸向上進行偏移，防止拖動區域與 :ref:`ScrollBar<class_ScrollBar>` 或其他子節點的可選中 :ref:`Control<class_Control>` 發生重疊。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Shifts the drag area in the axis of the container to prevent the drag area from 
 - |void| **set_drag_nested_intersections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dragging_nested_intersections**\ (\ )
 
-Adds extra draggers at the intersection of the draggers of two SplitContainers to allow dragging both at once. This must be set to ``true`` for both SplitContainers, and one needs to be a descendant of the other. They also must be orthogonal (their :ref:`vertical<class_SplitContainer_property_vertical>` are different) and the descendant must be next to at least one of the ancestor's draggers (within :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>`).
+在兩個 SplitContainer 的拖動器交界處新增額外的拖動器，以允許同時拖動兩者。必須將兩個 SplitContainer 的該屬性都設定為 ``true``\ ，且其中一個必須是另一個的子節點（後代）。它們還必須是正交的（它們的 :ref:`vertical<class_SplitContainer_property_vertical>` 屬性不同），並且後代節點必須緊鄰祖先節點的至少一個拖動器（在 :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>` 範圍內）。
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ Adds extra draggers at the intersection of the draggers of two SplitContainers t
 - |void| **set_dragger_visibility**\ (\ value\: :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>`\ )
 - :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>` **get_dragger_visibility**\ (\ )
 
-Determines the dragger's visibility. This property does not determine whether dragging is enabled or not. Use :ref:`dragging_enabled<class_SplitContainer_property_dragging_enabled>` for that.
+決定拖動器是否可見。該屬性無法決定拖動器是否啟用，這一需求請使用 :ref:`dragging_enabled<class_SplitContainer_property_dragging_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Determines the dragger's visibility. This property does not determine whether dr
 - |void| **set_dragging_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dragging_enabled**\ (\ )
 
-Enables or disables split dragging.
+啟用或停用拆分拖動。
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ Enables or disables split dragging.
 
 **已棄用：** Use :ref:`split_offsets<class_SplitContainer_property_split_offsets>` instead. The first element of the array is the split offset between the first two children.
 
-The first element of :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
+:ref:`split_offsets<class_SplitContainer_property_split_offsets>` 的第一個元素。
 
 .. rst-class:: classref-item-separator
 
@@ -372,11 +372,11 @@ The first element of :ref:`split_offsets<class_SplitContainer_property_split_off
 - |void| **set_split_offsets**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_split_offsets**\ (\ )
 
-Offsets for each dragger in pixels. Each one is the offset of the split between the :ref:`Control<class_Control>` nodes before and after the dragger, with ``0`` being the default position. The default position is based on the :ref:`Control<class_Control>` nodes expand flags and minimum sizes. See :ref:`Control.size_flags_horizontal<class_Control_property_size_flags_horizontal>`, :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>`, and :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
+每個拖動器的偏移量，單位為像素。每個都是拖動器前後 :ref:`Control<class_Control>` 節點分割的偏移量，\ ``0`` 為預設位置。預設位置基於 :ref:`Control<class_Control>` 節點的擴充標誌和最小大小。請參閱 :ref:`Control.size_flags_horizontal<class_Control_property_size_flags_horizontal>`\ 、\ :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` 和 :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`\ 。
 
-If none of the :ref:`Control<class_Control>` nodes before the dragger are expanded, the default position will be at the start of the **SplitContainer**. If none of the :ref:`Control<class_Control>` nodes after the dragger are expanded, the default position will be at the end of the **SplitContainer**. If the dragger is in between expanded :ref:`Control<class_Control>` nodes, the default position will be in the middle, based on the :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`\ s and minimum sizes.
+如果拖動器前面的所有 :ref:`Control<class_Control>` 節點都沒有擴充，則預設位置位於 **SplitContainer** 的起始位置。如果拖動器後面的所有 :ref:`Control<class_Control>` 節點都沒有擴充，則預設位置位於 **SplitContainer** 的末尾。如果拖動器位於兩個已擴充的 :ref:`Control<class_Control>` 節點之間，則預設位置將位於中間，具體位置取決於 :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` 和最小大小。
 
-\ **Note:** If the split offsets cause :ref:`Control<class_Control>` nodes to overlap, the first split will take priority when resolving the positions.
+\ **注意：**\ 如果分割偏移量導致 :ref:`Control<class_Control>` 節點重疊，則在確定位置時將優先使用第一個分割。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -395,7 +395,7 @@ If none of the :ref:`Control<class_Control>` nodes before the dragger are expand
 - |void| **set_touch_dragger_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_touch_dragger_enabled**\ (\ )
 
-If ``true``, a touch-friendly drag handle will be enabled for better usability on smaller screens. Unlike the standard grabber, this drag handle overlaps the **SplitContainer**'s children and does not affect their minimum separation. The standard grabber will no longer be drawn when this option is enabled.
+如果為 ``true``\ ，則會啟用適合觸控的拖動控點，方便在小尺寸螢幕上使用。與標準抓取器不同，這個拖動控點與 **SplitContainer** 的子節點存在重疊，不會影響它們的最小間隔。啟用該選項時不再繪製標準抓取器。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ If ``true``, a touch-friendly drag handle will be enabled for better usability o
 
 |void| **clamp_split_offset**\ (\ priority_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SplitContainer_method_clamp_split_offset>`
 
-Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` values to ensure they are within valid ranges and do not overlap with each other. When overlaps occur, this method prioritizes one split offset (at index ``priority_index``) by clamping any overlapping split offsets to it.
+鉗制 :ref:`split_offsets<class_SplitContainer_property_split_offsets>` 的值以確保它們位於有效範圍內且彼此不重疊。重疊時該方法會通過將所有重疊的分割偏移量鉗制到該範圍，以優先考慮某個分割偏移量（位於索引 ``priority_index`` 處）。
 
 .. rst-class:: classref-item-separator
 
@@ -445,15 +445,15 @@ Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` val
 
 **已棄用：** Use the first element of :ref:`get_drag_area_controls()<class_SplitContainer_method_get_drag_area_controls>` instead.
 
-Returns the drag area :ref:`Control<class_Control>`. For example, you can move a pre-configured button into the drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the ``reparent()`` call.
+回傳拖動區域 :ref:`Control<class_Control>`\ 。例如你可以把一個預先設定好的按鈕放到拖動區域 :ref:`Control<class_Control>` 中，這樣這個按鈕就會跟隨拆分條移動。呼叫 ``reparent()`` 前請嘗試將 :ref:`Button<class_Button>` 的錨點設定為 ``center``\ 。
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_control())
 
-\ **Note:** The drag area :ref:`Control<class_Control>` is drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from the :ref:`Control<class_Control>` and children added to the :ref:`Control<class_Control>` will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **注意：**\ 拖動區域 :ref:`Control<class_Control>` 繪製在 **SplitContainer** 的子節點之上，因此 :ref:`Control<class_Control>` 呼叫 :ref:`CanvasItem<class_CanvasItem>` 繪製方法所繪製的內容和新增至 :ref:`Control<class_Control>` 的子節點也會顯示在 **SplitContainer** 的子節點之上。如果需要阻止滑鼠拖動，請嘗試將自訂子節點的 :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` 設定為 :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash.
+\ **警告：**\ 這是必要的內部節點，將其移除或釋放都可能造成崩潰。
 
 .. rst-class:: classref-item-separator
 
@@ -465,15 +465,15 @@ Returns the drag area :ref:`Control<class_Control>`. For example, you can move a
 
 :ref:`Array<class_Array>`\[:ref:`Control<class_Control>`\] **get_drag_area_controls**\ (\ ) :ref:`🔗<class_SplitContainer_method_get_drag_area_controls>`
 
-Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Control>`\ s. These are the interactable :ref:`Control<class_Control>` nodes between each child. For example, this can be used to add a pre-configured button to a drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the :ref:`Node.reparent()<class_Node_method_reparent>` call.
+回傳拖動區域 :ref:`Control<class_Control>` 的 :ref:`Array<class_Array>`\ 。這些是每個子節點之間可互動的 :ref:`Control<class_Control>` 節點。例如，可以使用該方法將預設定的按鈕新增到拖動區域 :ref:`Control<class_Control>`\ ，使其隨分割條一起移動。嘗試在呼叫 :ref:`Node.reparent()<class_Node_method_reparent>` 之前將 :ref:`Button<class_Button>` 的錨點設定為 ``center``\ 。
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_controls()[0])
 
-\ **Note:** The drag area :ref:`Control<class_Control>`\ s are drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from a drag area and children added to it will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **注意：**\ 拖動區域 :ref:`Control<class_Control>` 繪製在 **SplitContainer** 的子級之上，因此從拖動區域呼叫的 :ref:`CanvasItem<class_CanvasItem>` 繪製物件以及新增到它的子物件也會出現在 **SplitContainer** 的子級之上。如果需要，可以嘗試將自訂子級的 :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` 設定為 :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` 以防止阻止滑鼠拖動。
 
-\ **Warning:** These are required internal nodes, removing or freeing them may cause a crash.
+\ **警告：**\ 這些是必要的內部節點，將其移除或釋放都可能造成崩潰。
 
 .. rst-class:: classref-section-separator
 
@@ -490,7 +490,7 @@ Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Contro
 
 :ref:`Color<class_Color>` **touch_dragger_color** = ``Color(1, 1, 1, 0.3)`` :ref:`🔗<class_SplitContainer_theme_color_touch_dragger_color>`
 
-The color of the touch dragger.
+觸摸拖動器的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ The color of the touch dragger.
 
 :ref:`Color<class_Color>` **touch_dragger_hover_color** = ``Color(1, 1, 1, 0.6)`` :ref:`🔗<class_SplitContainer_theme_color_touch_dragger_hover_color>`
 
-The color of the touch dragger when hovered.
+觸摸拖動器懸停狀態的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ The color of the touch dragger when hovered.
 
 :ref:`Color<class_Color>` **touch_dragger_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_SplitContainer_theme_color_touch_dragger_pressed_color>`
 
-The color of the touch dragger when pressed.
+觸摸拖動器按下狀態的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ The color of the touch dragger when pressed.
 
 :ref:`int<class_int>` **autohide** = ``1`` :ref:`🔗<class_SplitContainer_theme_constant_autohide>`
 
-Boolean value. If ``1`` (``true``), the grabbers will hide automatically when they aren't under the cursor. If ``0`` (``false``), the grabbers are always visible. The :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` must be :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
+布林值。如果為 ``1``\ （\ ``true``\ ），則當抓取器不在游標下方時會自動隱藏。如果為 ``0``\ （\ ``false``\ ），則抓取器始終可見。\ :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` 必須設定為 :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Boolean value. If ``1`` (``true``), the grabbers will hide automatically when th
 
 :ref:`int<class_int>` **minimum_grab_thickness** = ``6`` :ref:`🔗<class_SplitContainer_theme_constant_minimum_grab_thickness>`
 
-The minimum thickness of the area users can click on to grab a split bar. This ensures that the split bar can still be dragged if :ref:`separation<class_SplitContainer_theme_constant_separation>` or :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` / :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>`'s size is too narrow to easily select.
+拆分條上使用者可點選抓取區域的最小厚度。能夠確保拆分條在 :ref:`separation<class_SplitContainer_theme_constant_separation>` 或 :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` / :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` 過窄、難以選中時仍然可以拖動。
 
 .. rst-class:: classref-item-separator
 
@@ -550,9 +550,9 @@ The minimum thickness of the area users can click on to grab a split bar. This e
 
 :ref:`int<class_int>` **separation** = ``12`` :ref:`🔗<class_SplitContainer_theme_constant_separation>`
 
-The split bar thickness, i.e., the gap between each child of the container. This is overridden by the size of the grabber icon if :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` is set to :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`, or :ref:`DRAGGER_HIDDEN<class_SplitContainer_constant_DRAGGER_HIDDEN>`, and :ref:`separation<class_SplitContainer_theme_constant_separation>` is smaller than the size of the grabber icon in the same axis.
+拆分條的粗細，即容器中每個子節點的間隙。如果 :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` 為 :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>` 或者為 :ref:`DRAGGER_HIDDEN<class_SplitContainer_constant_DRAGGER_HIDDEN>` 的同時 :ref:`separation<class_SplitContainer_theme_constant_separation>` 比抓取器圖示相應方向的大小要小，這個粗細就會被抓取器圖示的大小覆蓋。
 
-\ **Note:** To obtain :ref:`separation<class_SplitContainer_theme_constant_separation>` values less than the size of the grabber icon, for example a ``1 px`` hairline, set :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` or :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` to a new :ref:`ImageTexture<class_ImageTexture>`, which effectively sets the grabber icon size to ``0 px``.
+\ **注意：**\ 如果要讓 :ref:`separation<class_SplitContainer_theme_constant_separation>` 比抓取器圖示大小要小，例如想要設成 ``1 px`` 的細線，請將 :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` 或 :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` 設為新的 :ref:`ImageTexture<class_ImageTexture>`\ ，這樣就把抓取器圖示的大小設為了 ``0 px``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -564,7 +564,7 @@ The split bar thickness, i.e., the gap between each child of the container. This
 
 :ref:`Texture2D<class_Texture2D>` **grabber** :ref:`🔗<class_SplitContainer_theme_icon_grabber>`
 
-The icon used for the grabbers drawn in the separations. This is only used in :ref:`HSplitContainer<class_HSplitContainer>` and :ref:`VSplitContainer<class_VSplitContainer>`. For **SplitContainer**, see :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` and :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` instead.
+用於在分隔條繪製的抓取器的圖示。僅在 :ref:`HSplitContainer<class_HSplitContainer>` 和 :ref:`VSplitContainer<class_VSplitContainer>` 中使用。對於 **SplitContainer**\ ，見 :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` 和 :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The icon used for the grabbers drawn in the separations. This is only used in :r
 
 :ref:`Texture2D<class_Texture2D>` **h_grabber** :ref:`🔗<class_SplitContainer_theme_icon_h_grabber>`
 
-The icon used for the grabbers drawn in the separations when :ref:`vertical<class_SplitContainer_property_vertical>` is ``false``.
+:ref:`vertical<class_SplitContainer_property_vertical>` 為 ``false`` 時繪製在分隔條的抓取器圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ The icon used for the grabbers drawn in the separations when :ref:`vertical<clas
 
 :ref:`Texture2D<class_Texture2D>` **h_touch_dragger** :ref:`🔗<class_SplitContainer_theme_icon_h_touch_dragger>`
 
-The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` is ``true`` and :ref:`vertical<class_SplitContainer_property_vertical>` is ``false``.
+:ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` 為 ``true`` 且 :ref:`vertical<class_SplitContainer_property_vertical>` 為 ``false`` 時拖動控點所使用的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -600,7 +600,7 @@ The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitCo
 
 :ref:`Texture2D<class_Texture2D>` **touch_dragger** :ref:`🔗<class_SplitContainer_theme_icon_touch_dragger>`
 
-The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` is ``true``. This is only used in :ref:`HSplitContainer<class_HSplitContainer>` and :ref:`VSplitContainer<class_VSplitContainer>`. For **SplitContainer**, see :ref:`h_touch_dragger<class_SplitContainer_theme_icon_h_touch_dragger>` and :ref:`v_touch_dragger<class_SplitContainer_theme_icon_v_touch_dragger>` instead.
+:ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` 為 ``true`` 時用於拖放控點的圖示。僅在 :ref:`HSplitContainer<class_HSplitContainer>` 和 :ref:`VSplitContainer<class_VSplitContainer>` 中使用。對於 **SplitContainer**\ ，見 :ref:`h_touch_dragger<class_SplitContainer_theme_icon_h_touch_dragger>` 和 :ref:`v_touch_dragger<class_SplitContainer_theme_icon_v_touch_dragger>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -612,7 +612,7 @@ The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitCo
 
 :ref:`Texture2D<class_Texture2D>` **v_grabber** :ref:`🔗<class_SplitContainer_theme_icon_v_grabber>`
 
-The icon used for the grabbers drawn in the separations when :ref:`vertical<class_SplitContainer_property_vertical>` is ``true``.
+:ref:`vertical<class_SplitContainer_property_vertical>` 為 ``true`` 時繪製在分隔符的抓取器圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ The icon used for the grabbers drawn in the separations when :ref:`vertical<clas
 
 :ref:`Texture2D<class_Texture2D>` **v_touch_dragger** :ref:`🔗<class_SplitContainer_theme_icon_v_touch_dragger>`
 
-The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` is ``true`` and :ref:`vertical<class_SplitContainer_property_vertical>` is ``true``.
+:ref:`touch_dragger_enabled<class_SplitContainer_property_touch_dragger_enabled>` 為 ``true`` 且 :ref:`vertical<class_SplitContainer_property_vertical>` 為 ``true`` 時拖動控點所使用的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitCo
 
 :ref:`StyleBox<class_StyleBox>` **split_bar_background** :ref:`🔗<class_SplitContainer_theme_style_split_bar_background>`
 
-Determines the background of the split bar if its thickness is greater than zero.
+決定拆分條厚度大於零時的背景。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

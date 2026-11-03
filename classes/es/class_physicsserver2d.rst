@@ -2586,7 +2586,7 @@ Devuelve el valor del parámetro de espacio dado.
 
 :ref:`bool<class_bool>` **space_is_active**\ (\ space\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_space_is_active>`
 
-Returns ``true`` if the space is active.
+Devuelve ``true`` si el espacio está activo.
 
 .. rst-class:: classref-item-separator
 

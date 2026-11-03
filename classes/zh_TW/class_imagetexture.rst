@@ -14,7 +14,7 @@ ImageTexture
 說明
 ----
 
-A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For an image to be displayed, an **ImageTexture** has to be created from it using the :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` method:
+基於 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。若要顯示影像，必須使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 方法從中建立一個 **ImageTexture**\ ：
 
 ::
 
@@ -22,34 +22,34 @@ A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For a
     var texture = ImageTexture.create_from_image(image)
     $Sprite2D.texture = texture
 
-This way, textures can be created at run-time by loading images both from within the editor and externally.
+如此一來，便可通過載入編輯器內外部的影像，在執行時動態建立紋理。
 
-\ **Warning:** Prefer to load imported textures with :ref:`@GDScript.load()<class_@GDScript_method_load>` over loading them from within the filesystem dynamically with :ref:`Image.load()<class_Image_method_load>`, as it may not work in exported projects:
+\ **警告：**\ 最好使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 載入匯入的紋理，而不是使用 :ref:`Image.load()<class_Image_method_load>` 從檔案系統中動態載入它們，因為後者可能不適用於匯出的專案：
 
 ::
 
     var texture = load("res://icon.svg")
     $Sprite2D.texture = texture
 
-This is because images have to be imported as a :ref:`CompressedTexture2D<class_CompressedTexture2D>` first to be loaded with :ref:`@GDScript.load()<class_@GDScript_method_load>`. If you'd still like to load an image file just like any other :ref:`Resource<class_Resource>`, import it as an :ref:`Image<class_Image>` resource instead, and then load it normally using the :ref:`@GDScript.load()<class_@GDScript_method_load>` method.
+這是因為影像必須首先作為 :ref:`CompressedTexture2D<class_CompressedTexture2D>` 被匯入，然後才能被 :ref:`@GDScript.load()<class_@GDScript_method_load>` 載入。若仍希望像載入其他 :ref:`Resource<class_Resource>` 一樣載入影像檔案，可先將其作為 :ref:`Image<class_Image>` 資源匯入，然後使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 方法正常載入。
 
-\ **Note:** The image can be retrieved from an imported texture using the :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` method, which returns a copy of the image:
+\ **注意：**\ 若要從已匯入的紋理中重新獲得影像，可以使用 :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>`\ ，該方法回傳影像的副本：
 
 ::
 
     var texture = load("res://icon.svg")
     var image = texture.get_image()
 
-An **ImageTexture** is not meant to be operated from within the editor interface directly, and is mostly useful for rendering images on screen dynamically via code. If you need to generate images procedurally from within the editor, consider saving and importing images as custom texture resources implementing a new :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
+\ **ImageTexture** 並非設計為在編輯器介面內直接操作，其主要用途是通過程式碼在螢幕上動態渲染影像。如果你需要在編輯器內部程式化生成影像，請考慮將其儲存並匯入為自訂紋理資源，這需要實作一個新的 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ 。
 
-\ **Note:** The maximum texture size is 16384×16384 pixels due to graphics hardware limitations.
+\ **注意：**\ 由於圖形硬體限制，最大紋理大小為 16384×16384 像素。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`匯入影像 <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
@@ -110,7 +110,7 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 用新的 :ref:`Image<class_Image>` 替換該紋理的資料。這將為該紋理重新分配新記憶體。
 
-如果要更新圖像，但不需要更改其參數（格式、大小），請改用 :ref:`update()<class_ImageTexture_method_update>` 以獲得更好的性能。
+如果要更新影像，但不需要更改其參數（格式、大小），請改用 :ref:`update()<class_ImageTexture_method_update>` 以獲得更好的效能。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 用新的 :ref:`Image<class_Image>` 替換該紋理的資料。
 
-\ **注意：**\ 該紋理必須使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 建立、或首先使用 :ref:`set_image()<class_ImageTexture_method_set_image>` 方法初始化，然後才能更新。新的圖像大小、格式和 mipmaps 配置，應與現有紋理的圖像配置相配對。
+\ **注意：**\ 該紋理必須使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 建立、或首先使用 :ref:`set_image()<class_ImageTexture_method_set_image>` 方法初始化，然後才能更新。新的影像大小、格式和 mipmaps 配置，應與現有紋理的影像配置相配對。
 
 如果需要頻繁更新紋理，請使用該方法而不是 :ref:`set_image()<class_ImageTexture_method_set_image>`\ ，這比每次為一個新紋理分配額外記憶體要快。
 

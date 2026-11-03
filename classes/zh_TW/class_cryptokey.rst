@@ -7,7 +7,7 @@ CryptoKey
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A cryptographic key (RSA or elliptic-curve).
+加密金鑰（RSA 或橢圓曲線）。
 
 .. rst-class:: classref-introduction-group
 

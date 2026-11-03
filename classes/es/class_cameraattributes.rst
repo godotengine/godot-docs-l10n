@@ -16,9 +16,9 @@ Clase antecesora para la configuración de la cámara.
 Descripción
 ----------------------
 
-Controla los atributos específicos de la cámara, como la profundidad de campo (depth of field) y la anulación de la exposición (exposure override).
+Controla los atributos específicos de la cámara, como la profundidad de campo (depth of field) y la sobrescritura de la exposición (exposure override).
 
-Cuando se utiliza en un :ref:`WorldEnvironment<class_WorldEnvironment>`, proporciona los ajustes predeterminados de exposición, exposición automática y profundidad de campo que usarán todas las cámaras que no tengan sus propios **CameraAttributes**, incluida la cámara del editor. Cuando se usa en un :ref:`Camera3D<class_Camera3D>`, anulará cualquier **CameraAttributes** configurado en el :ref:`WorldEnvironment<class_WorldEnvironment>`. Al usarse en :ref:`VoxelGI<class_VoxelGI>` o :ref:`LightmapGI<class_LightmapGI>`, solo se utilizarán los ajustes de exposición.
+Cuando se utiliza en un :ref:`WorldEnvironment<class_WorldEnvironment>`, proporciona los ajustes predeterminados de exposición, exposición automática y profundidad de campo que usarán todas las cámaras que no tengan sus propios **CameraAttributes**, incluida la cámara del editor. Cuando se usa en un :ref:`Camera3D<class_Camera3D>`, sobrescribirá cualquier **CameraAttributes** configurado en el :ref:`WorldEnvironment<class_WorldEnvironment>`. Al usarse en :ref:`VoxelGI<class_VoxelGI>` o :ref:`LightmapGI<class_LightmapGI>`, solo se utilizarán los ajustes de exposición.
 
 Consulta también :ref:`Environment<class_Environment>` para los ajustes generales del entorno 3D.
 

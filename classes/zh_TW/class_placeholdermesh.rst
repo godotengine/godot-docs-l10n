@@ -18,7 +18,7 @@ PlaceholderMesh
 
 - 運作使用專用伺服器模式匯出的專案，僅保留紋理的尺寸（因為遊戲邏輯可能依賴紋理的尺寸，可能用來定位其他元素）。這樣能夠顯著減小匯出的 PCK 的大小。
 
-- 由於引擎版本或建構不同而缺失這個子類別（例如禁用了某些模組）。
+- 由於引擎版本或建構不同而缺失這個子類別（例如停用了某些模組）。
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ PlaceholderMesh
 - |void| **set_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_aabb**\ (\ )
 
-局部空間中，包含這個網格的最小 :ref:`AABB<class_AABB>`\ 。
+區域空間中，包含這個網格的最小 :ref:`AABB<class_AABB>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

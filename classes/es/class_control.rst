@@ -34,7 +34,7 @@ Solo un nodo **Control** puede tener el foco. Solo el nodo con el foco recibirá
 
 Establece :ref:`mouse_filter<class_Control_property_mouse_filter>` en :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` para indicar a un nodo **Control** que ignore los eventos de ratón o táctiles. Lo necesitarás si colocas un icono encima de un botón.
 
-Los recursos :ref:`Theme<class_Theme>` cambian la apariencia del control. El :ref:`theme<class_Control_property_theme>` de un nodo **Control** afecta a todos sus hijos directos e indirectos (siempre que una cadena de controles no esté interrumpida). Para anular algunos de los elementos del tema, llama a uno de los métodos ``add_theme_*_override``, como :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. También puedes anular elementos del tema en el Inspector.
+Los recursos :ref:`Theme<class_Theme>` cambian la apariencia del control. El :ref:`theme<class_Control_property_theme>` de un nodo **Control** afecta a todos sus hijos directos e indirectos (siempre que una cadena de controles no esté interrumpida). Para sobrescribir algunos de los elementos del tema, llama a uno de los métodos ``add_theme_*_override``, como :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. También puedes sobrescribir elementos del tema en el Inspector.
 
 \ **Nota:** Los elementos del tema *no* son propiedades de :ref:`Object<class_Object>`. Esto significa que no puedes acceder a sus valores usando :ref:`Object.get()<class_Object_method_get>` y :ref:`Object.set()<class_Object_method_set>`. En su lugar, usa los métodos ``get_theme_*`` y ``add_theme_*_override`` proporcionados por esta clase.
 
@@ -2978,7 +2978,7 @@ Consulta también :ref:`get_theme_color()<class_Control_method_get_theme_color>`
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_constant_override>`
 
-Crea una anulación local para una constante del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>`.
+Crea una sobrescritura local para una constante del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>`.
 
 Véase también :ref:`get_theme_constant()<class_Control_method_get_theme_constant>`.
 
@@ -2992,7 +2992,7 @@ Véase también :ref:`get_theme_constant()<class_Control_method_get_theme_consta
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Control_method_add_theme_font_override>`
 
-Crea una anulación local para una :ref:`Font<class_Font>` del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>`.
+Crea una sobrescritura local para una :ref:`Font<class_Font>` del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>`.
 
 Véase también :ref:`get_theme_font()<class_Control_method_get_theme_font>`.
 
@@ -3006,7 +3006,7 @@ Véase también :ref:`get_theme_font()<class_Control_method_get_theme_font>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_font_size_override>`
 
-Crea una anulación local para un tamaño de fuente del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>`.
+Crea una sobrescritura local para un tamaño de fuente del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>`.
 
 Véase también :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>`.
 
@@ -3020,7 +3020,7 @@ Véase también :ref:`get_theme_font_size()<class_Control_method_get_theme_font_
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Control_method_add_theme_icon_override>`
 
-Crea una anulación local para un icono del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>`.
+Crea una sobrescritura local para un icono del tema con el ``name`` especificado. Las sobrescrituras locales siempre tienen prioridad al obtener elementos del tema para el control. Una sobrescritura puede eliminarse con :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>`.
 
 Véase también :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`.
 
@@ -3843,7 +3843,7 @@ Give up the focus. No other control will be able to receive input.
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_color_override>`
 
-Elimina una anulación local para un :ref:`Color<class_Color>` del tema con el ``name`` especificado, añadido previamente mediante :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` o a través del panel del Inspector.
+Elimina una sobrescritura local para un :ref:`Color<class_Color>` del tema con el ``name`` especificado, añadido previamente mediante :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` o a través del panel del Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,7 +4151,7 @@ Si ``keep_offsets`` es ``true``, los anclajes del control se actualizarán en lu
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
 \ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 

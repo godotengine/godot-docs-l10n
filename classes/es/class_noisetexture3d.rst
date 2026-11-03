@@ -14,9 +14,9 @@ Una textura 3D rellena con ruido generado por un objeto :ref:`Noise<class_Noise>
 Descripción
 ----------------------
 
-Uses the :ref:`FastNoiseLite<class_FastNoiseLite>` library or other noise generators to fill the texture data of your desired size.
+Utiliza la librería :ref:`FastNoiseLite<class_FastNoiseLite>` u otros generadores de ruido para rellenar los datos de la textura del tamaño deseado.
 
-The class uses :ref:`Thread<class_Thread>`\ s to generate the texture data internally, so :ref:`Texture3D.get_data()<class_Texture3D_method_get_data>` may return ``null`` if the generation process has not completed yet. In that case, you need to wait for the texture to be generated before accessing the image:
+La clase utiliza :ref:`Thread<class_Thread>`\ s para generar los datos de la textura internamente, por lo que :ref:`Texture3D.get_data()<class_Texture3D_method_get_data>` puede devolver ``null`` si el proceso de generación aún no ha finalizado. En ese caso, debes esperar a que la textura se genere antes de acceder a la imagen:
 
 ::
 

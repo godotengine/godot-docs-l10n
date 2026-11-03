@@ -71,9 +71,9 @@ CollisionShape2D
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
+碰撞形狀的顏色，在編輯器中顯示，勾選編輯器頂部的 **除錯 > 顯示碰撞形狀** 時也會在執行專案時顯示。
 
-\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
+\ **注意：**\ 預設值為 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`\ 。這裡記錄的 ``Color(0, 0, 0, 0)`` 值是佔位符，不是實際的預設除錯顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ The collision shape color that is displayed in the editor, or in the running pro
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-禁用的碰撞形狀在世界中沒有影響。這個屬性應該用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 改變。
+停用的碰撞形狀在世界中沒有影響。這個屬性應該用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 改變。
 
 .. rst-class:: classref-item-separator
 
@@ -107,11 +107,11 @@ The collision shape color that is displayed in the editor, or in the running pro
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-Sets whether this collision shape should only detect collision on one side (top or bottom).
+設定此碰撞形狀是否僅應檢測到一側（頂部或底部）的碰撞。
 
-\ **Note:** This property has no effect if this **CollisionShape2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+\ **注意：**\ 如果這個 **CollisionShape2D** 是 :ref:`Area2D<class_Area2D>` 節點的子節點，則這個屬性無效。
 
-\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
+\ **注意：**\ 單向碰撞的方向可以通過設定 :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>` 來設定。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Sets whether this collision shape should only detect collision on one side (top 
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+用於單向碰撞的方向。
 
 .. rst-class:: classref-item-separator
 

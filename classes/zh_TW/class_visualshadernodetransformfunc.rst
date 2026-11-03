@@ -87,7 +87,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` **get_function**\ (\ )
 
-The function to be computed.
+要計算的函式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

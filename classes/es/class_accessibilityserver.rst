@@ -636,7 +636,7 @@ El elemento está oculto para las herramientas de accesibilidad.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_MULTISELECTABLE** = ``1``
 
-Element supports multiple item selection.
+Este elemento admite la selección de múltiples elementos.
 
 .. _class_AccessibilityServer_constant_FLAG_REQUIRED:
 
@@ -822,7 +822,7 @@ Acción de desplazamiento hacia atrás, el argumento de callback no está establ
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_DOWN** = ``12``
 
-Scroll down action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento hacia abajo, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_FORWARD:
 
@@ -902,7 +902,7 @@ Acción de mostrar menú contextual, el argumento de callback no está estableci
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_CUSTOM** = ``22``
 
-Custom action, callback argument is set to the integer action ID.
+Acción personalizada, el argumento de callback se establece en el ID de acción entero.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Establece los metadatos del elemento de accesibilidad ``id`` a ``meta``.
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+Libera el elemento de accesibilidad ``id`` creado por :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` o :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1207,7 +1207,7 @@ Añade un elemento de accesibilidad hijo.
 
 |void| **update_add_custom_action**\ (\ id\: :ref:`RID<class_RID>`, action_id\: :ref:`int<class_int>`, action_description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_custom_action>`
 
-Adds support for a custom accessibility action. ``action_id`` is passed as an argument to the callback of :ref:`ACTION_CUSTOM<class_AccessibilityServer_constant_ACTION_CUSTOM>` action.
+Añade soporte para una acción de accesibilidad personalizada. ``action_id`` se pasa como argumento al callback de la acción :ref:`ACTION_CUSTOM<class_AccessibilityServer_constant_ACTION_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Establece la orientación del texto.
 
 |void| **update_set_text_selection**\ (\ id\: :ref:`RID<class_RID>`, text_start_id\: :ref:`RID<class_RID>`, start_char\: :ref:`int<class_int>`, text_end_id\: :ref:`RID<class_RID>`, end_char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_selection>`
 
-Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` should be elements created by :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Character offsets are relative to the corresponding element.
+Establece la selección de texto en el campo de texto. ``text_start_id`` y ``text_end_id`` deberían ser elementos creados por :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Los desplazamientos de caracteres son relativos al elemento correspondiente.
 
 .. rst-class:: classref-item-separator
 

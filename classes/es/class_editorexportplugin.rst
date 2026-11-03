@@ -518,7 +518,7 @@ Return ``true`` if the result of :ref:`_get_export_options()<class_EditorExportP
 
 :ref:`bool<class_bool>` **_supports_platform**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__supports_platform>`
 
-Return ``true`` if the plugin supports the given ``platform``.
+Devuelve ``true`` si el plugin admite la ``platform`` especificada.
 
 .. rst-class:: classref-item-separator
 

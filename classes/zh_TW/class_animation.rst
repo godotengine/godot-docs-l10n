@@ -305,7 +305,7 @@ enum **TrackType**: :ref:`🔗<enum_Animation_TrackType>`
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_BEZIER** = ``6``
 
-貝塞爾軌道可透過自訂曲線對數值進行插值，也可用於為向量或顏色的子屬性製作動畫（例如 :ref:`Color<class_Color>` 的 Alpha 值）。
+貝茲軌道可透過自訂曲線對數值進行插值，也可用於為向量或顏色的子屬性製作動畫（例如 :ref:`Color<class_Color>` 的 Alpha 值）。
 
 .. _class_Animation_constant_TYPE_AUDIO:
 
@@ -568,7 +568,7 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 - |void| **set_loop_mode**\ (\ value\: :ref:`LoopMode<enum_Animation_LoopMode>`\ )
 - :ref:`LoopMode<enum_Animation_LoopMode>` **get_loop_mode**\ (\ )
 
-Determines the behavior of both ends of the animation timeline during animation playback. This indicates whether and how the animation should be restarted, and is also used to correctly interpolate animation cycles.
+確定動畫播放期間動畫時間軸兩端的行為。這指示動畫是否應該以及應該如何重新啟動，也用於動畫循環的正確插值。
 
 .. rst-class:: classref-item-separator
 

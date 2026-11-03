@@ -14,9 +14,9 @@ CompressedTexture3D
 說明
 ----
 
-**CompressedTexture3D** 是 :ref:`ImageTexture3D<class_ImageTexture3D>` 的 VRAM 壓縮對應物。\ **CompressedTexture3D** 檔案的檔案副檔名為 ``.ctex3d``\ 。這種檔案格式是 Godot 內部使用的；它是通過匯入系統匯入其他圖像格式建立的。
+**CompressedTexture3D** 是 :ref:`ImageTexture3D<class_ImageTexture3D>` 的 VRAM 壓縮對應物。\ **CompressedTexture3D** 檔案的檔案副檔名為 ``.ctex3d``\ 。這種檔案格式是 Godot 內部使用的；它是通過匯入系統匯入其他影像格式建立的。
 
-\ **CompressedTexture3D** 使用 VRAM 壓縮，這可以在算繪紋理時減少 GPU 的記憶體使用量。這也縮短了載入時間，因為與使用無失真壓縮的紋理相比，VRAM 壓縮的紋理載入速度更快。VRAM 壓縮會表現出明顯的偽影，並且它旨在用於 3D 算繪，而不是 2D。
+\ **CompressedTexture3D** 使用 VRAM 壓縮，這可以在渲染紋理時減少 GPU 的記憶體使用量。這也縮短了載入時間，因為與使用無失真壓縮的紋理相比，VRAM 壓縮的紋理載入速度更快。VRAM 壓縮會表現出明顯的偽影，並且它旨在用於 3D 渲染，而不是 2D。
 
 有關 3D 紋理的一般描述，請參閱 :ref:`Texture3D<class_Texture3D>`\ 。
 

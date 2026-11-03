@@ -671,7 +671,7 @@ El número de secciones a usar para el renderizado del rastro de la partícula. 
 - |void| **set_use_fixed_seed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_fixed_seed**\ (\ )
 
-Si es ``true``, las partículas usarán la misma semilla para cada simulación utilizando la semilla definida en :ref:`seed<class_GPUParticles2D_property_seed>`. Esto es útil para situaciones en las que el resultado visual debe ser consistente en las repeticiones, por ejemplo, cuando se utiliza el modo Movie Maker.
+Si es ``true``, las partículas usarán la misma semilla para cada simulación utilizando la semilla definida en :ref:`seed<class_GPUParticles2D_property_seed>`. Esto es útil para situaciones en las que el resultado visual debe ser consistente en las repeticiones, por ejemplo, cuando se utiliza el modo Creación de películas.
 
 .. rst-class:: classref-item-separator
 

@@ -265,7 +265,7 @@ VisualShaderNodeGroupBase
 
 |void| **set_input_port_name**\ (\ id\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_VisualShaderNodeGroupBase_method_set_input_port_name>`
 
-重命名指定的輸入埠。
+重新命名指定的輸入埠。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ VisualShaderNodeGroupBase
 
 |void| **set_output_port_name**\ (\ id\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_VisualShaderNodeGroupBase_method_set_output_port_name>`
 
-重命名指定的輸出埠。
+重新命名指定的輸出埠。
 
 .. rst-class:: classref-item-separator
 

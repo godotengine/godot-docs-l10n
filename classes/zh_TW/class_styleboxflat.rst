@@ -14,9 +14,9 @@ StyleBoxFlat
 說明
 ----
 
-By configuring various properties of this style box, you can achieve many common looks without the need of a texture. This includes optionally rounded borders, antialiasing, shadows, and skew.
+通過設定這個樣式盒的各種屬性，你可以不使用紋理實現許多常見外觀，包括可選的圓角邊框、反鋸齒、陰影、偏斜等。
 
-Setting corner radius to high values is allowed. As soon as corners overlap, the stylebox will switch to a relative system:
+允許將圓角半徑設定為較高的值。兩角重疊時，樣式盒將切換到相對系統：
 
 .. code:: text
 
@@ -24,7 +24,7 @@ Setting corner radius to high values is allowed. As soon as corners overlap, the
     corner_radius_top_left = 50
     corner_radius_bottom_left = 100
 
-The relative system now would take the 1:2 ratio of the two left corners to calculate the actual corner width. Both corners added will **never** be more than the height. Result:
+相對系統現在將採用兩個左角的 1:2 比率來計算實際角寬度。新增的兩個角\ **永遠**\ 不會超過高度。結果：
 
 .. code:: text
 
@@ -137,7 +137,7 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 - |void| **set_anti_aliased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_anti_aliased**\ (\ )
 
-抗鋸齒會在邊緣周圍繪製一個漸變到透明的小環。因此邊緣看起來會更加平滑。這僅在使用圓角或 :ref:`skew<class_StyleBoxFlat_property_skew>` 時才明顯。
+反鋸齒會在邊緣周圍繪製一個漸變到透明的小環。因此邊緣看起來會更加平滑。這僅在使用圓角或 :ref:`skew<class_StyleBoxFlat_property_skew>` 時才明顯。
 
 \ **注意：**\ 使用 45 度倒角（\ :ref:`corner_detail<class_StyleBoxFlat_property_corner_detail>` = 1）時，建議將 :ref:`anti_aliasing<class_StyleBoxFlat_property_anti_aliasing>` 設為 ``false``\ ，這樣可以保證畫面銳利、避免一些顯示問題。
 
@@ -156,7 +156,7 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 - |void| **set_aa_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aa_size**\ (\ )
 
-修改抗鋸齒效果的大小。要在 100% 縮放時達到最佳效果推薦使用 ``1.0``\ ，和網頁流覽器以及大多數向量圖繪製軟體中圓角矩陣的繪製方式是一致的。
+修改反鋸齒效果的大小。要在 100% 縮放時達到最佳效果推薦使用 ``1.0``\ ，和網頁流覽器以及大多數向量圖繪製軟體中圓角矩陣的繪製方式是一致的。
 
 \ **注意：**\ 較高的值可能產生模糊效果，但框本身較小、圓角半徑較大的情況下也可能產生不理想的顯示問題。
 
@@ -402,7 +402,7 @@ StyleBox的背景顏色。
 
 將該樣式盒擴充到該控制項矩形的底邊。可以與 :ref:`border_width_bottom<class_StyleBoxFlat_property_border_width_bottom>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **注意：**\ 與 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>` 不同，\ :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>` 不同，\ :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點選區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點選該 StyleBox 上實際無法接受點選的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ StyleBox的背景顏色。
 
 將該樣式盒擴充到該控制項矩形的左邊。可以與 :ref:`border_width_left<class_StyleBoxFlat_property_border_width_left>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **注意：**\ 與 :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>` 不同，\ :ref:`expand_margin_left<class_StyleBoxFlat_property_expand_margin_left>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>` 不同，\ :ref:`expand_margin_left<class_StyleBoxFlat_property_expand_margin_left>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點選區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點選該 StyleBox 上實際無法接受點選的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -440,7 +440,7 @@ StyleBox的背景顏色。
 
 將該樣式盒擴充到該控制項矩形的右邊。可以與 :ref:`border_width_right<class_StyleBoxFlat_property_border_width_right>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **注意：**\ 與 :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>` 不同，\ :ref:`expand_margin_right<class_StyleBoxFlat_property_expand_margin_right>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>` 不同，\ :ref:`expand_margin_right<class_StyleBoxFlat_property_expand_margin_right>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點選區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點選該 StyleBox 上實際無法接受點選的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ StyleBox的背景顏色。
 
 將該樣式盒擴充到該控制項矩形的頂邊。可以與 :ref:`border_width_top<class_StyleBoxFlat_property_border_width_top>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **注意：**\ 與 :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>` 不同，\ :ref:`expand_margin_top<class_StyleBoxFlat_property_expand_margin_top>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>` 不同，\ :ref:`expand_margin_top<class_StyleBoxFlat_property_expand_margin_top>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點選區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點選該 StyleBox 上實際無法接受點選的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ StyleBox的背景顏色。
 
 如果任何軸被設為了非零值，\ :ref:`skew<class_StyleBoxFlat_property_skew>` 就會將該 StyleBox 進行橫向和/或縱向變形。可用於實作“未來風”的 UI。正值會讓該 StyleBox 朝右（X 軸）上（Y 軸）偏斜，負值會讓該 StyleBox 朝左（X 軸）下（Y 軸）偏斜。
 
-\ **注意：**\ 為了讓文字不觸碰到該 StyleBox 的邊緣，請考慮增大該 :ref:`StyleBox<class_StyleBox>` 的內容邊距（見 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>`\ ）。增大內容邊距比增大擴展邊距（見 :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>`\ ）更好，因為增大擴充邊距並不會增大 :ref:`Control<class_Control>` 的可點擊區域。
+\ **注意：**\ 為了讓文字不觸碰到該 StyleBox 的邊緣，請考慮增大該 :ref:`StyleBox<class_StyleBox>` 的內容邊距（見 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>`\ ）。增大內容邊距比增大擴充邊距（見 :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>`\ ）更好，因為增大擴充邊距並不會增大 :ref:`Control<class_Control>` 的可點選區域。
 
 .. rst-class:: classref-section-separator
 
@@ -570,7 +570,7 @@ StyleBox的背景顏色。
 
 :ref:`int<class_int>` **get_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`\ ) |const| :ref:`🔗<class_StyleBoxFlat_method_get_corner_radius>`
 
-Returns the given ``corner``'s radius.
+回傳 ``corner`` 中指定的角落的圓角半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -618,7 +618,7 @@ Returns the given ``corner``'s radius.
 
 |void| **set_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`, radius\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_corner_radius>`
 
-Sets the corner radius to ``radius`` pixels for the given ``corner``.
+將 ``corner`` 中指定的角落的圓角半徑設定為 ``radius`` 像素。
 
 .. rst-class:: classref-item-separator
 

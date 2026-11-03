@@ -18,9 +18,9 @@ PlaceholderCubemap
 
 - 運作使用專用伺服器模式匯出的專案，僅保留紋理的尺寸（因為遊戲邏輯可能依賴紋理的尺寸，可能用來定位其他元素）。這樣能夠顯著減小匯出的 PCK 的大小。
 
-- 由於引擎版本或建構不同而缺失這個子類別（例如禁用了某些模組）。
+- 由於引擎版本或建構不同而缺失這個子類別（例如停用了某些模組）。
 
-\ **注意：**\ 設計這個類的目的並不是作為算繪的實際紋理。不保證能夠在著色器和材質中正常工作（例如對 UV 進行計算）。
+\ **注意：**\ 設計這個類的目的並不是作為渲染的實際紋理。不保證能夠在著色器和材質中正常工作（例如對 UV 進行計算）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

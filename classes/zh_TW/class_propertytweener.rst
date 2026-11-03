@@ -14,11 +14,11 @@ PropertyTweener
 說明
 ----
 
-**PropertyTweener** is used to interpolate a property in an object. See :ref:`Tween.tween_property()<class_Tween_method_tween_property>` for more usage information.
+**PropertyTweener** 用於為物件的屬性進行插值。詳見 :ref:`Tween.tween_property()<class_Tween_method_tween_property>`\ 。
 
-The tweener will finish automatically if the target object is freed.
+目標物件被釋放時，補間器會自動結束。
 
-\ **Note:** :ref:`Tween.tween_property()<class_Tween_method_tween_property>` is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
+\ **注意：**\ :ref:`Tween.tween_property()<class_Tween_method_tween_property>` 是建立 **PropertyTweener** 的唯一正確方法。任何手動建立的 **PropertyTweener** 都將無法正常執行。
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +59,9 @@ The tweener will finish automatically if the target object is freed.
 
 :ref:`PropertyTweener<class_PropertyTweener>` **as_relative**\ (\ ) :ref:`🔗<class_PropertyTweener_method_as_relative>`
 
-When called, the final value will be used as a relative value instead.
+呼叫後會將最終值用作相對值。
 
-\ **Example:** Move the node by ``100`` pixels to the right.
+\ **範例：**\ 將節點向右移動 ``100`` 像素。
 
 
 .. tabs::
@@ -88,9 +88,9 @@ When called, the final value will be used as a relative value instead.
 
 :ref:`PropertyTweener<class_PropertyTweener>` **from**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PropertyTweener_method_from>`
 
-Sets a custom initial value to the **PropertyTweener**.
+為 **PropertyTweener** 設定自訂初始值。
 
-\ **Example:** Move the node from position ``(100, 100)`` to ``(200, 100)``.
+\ **範例：**\ 將節點從 ``(100, 100)`` 移動到 ``(200, 100)``\ 。
 
 
 .. tabs::
@@ -117,7 +117,7 @@ Sets a custom initial value to the **PropertyTweener**.
 
 :ref:`PropertyTweener<class_PropertyTweener>` **from_current**\ (\ ) :ref:`🔗<class_PropertyTweener_method_from_current>`
 
-Makes the **PropertyTweener** use the current property value (i.e. at the time of creating this **PropertyTweener**) as a starting point. This is equivalent of using :ref:`from()<class_PropertyTweener_method_from>` with the current value. These two calls will do the same:
+讓 **PropertyTweener** 使用屬性的目前值（即建立 **PropertyTweener** 時）作為起點。等價於使用目前值呼叫 :ref:`from()<class_PropertyTweener_method_from>`\ 。下列兩種呼叫效果相同：
 
 
 .. tabs::
@@ -144,7 +144,7 @@ Makes the **PropertyTweener** use the current property value (i.e. at the time o
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_custom_interpolator**\ (\ interpolator_method\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PropertyTweener_method_set_custom_interpolator>`
 
-Allows interpolating the value with a custom easing function. The provided ``interpolator_method`` will be called with a value ranging from ``0.0`` to ``1.0`` and is expected to return a value within the same range (values outside the range can be used for overshoot). The return value of the method is then used for interpolation between initial and final value. Note that the parameter passed to the method is still subject to the tweener's own easing.
+使用自訂緩動函式進行插值。會使用 ``0.0`` 到 ``1.0`` 之間的值來呼叫 ``interpolator_method``\ ，提供的這個方法的回傳值應該也在這個範圍內（可以用超出範圍的值表示越過目標）。後續會再使用這個方法的回傳值進行起始值和目標值之間的插值。請注意，傳給這個方法的參數仍然會受到補間器本身緩動功能的影響。
 
 
 .. tabs::
@@ -155,7 +155,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
 
     func _ready():
         var tween = create_tween()
-        # Interpolate the value using a custom curve.
+        # 使用自訂曲線進行插值。
         tween.tween_property(self, "position:x", 300, 1).as_relative().set_custom_interpolator(tween_curve)
 
     func tween_curve(v):
@@ -169,7 +169,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
     public override void _Ready()
     {
         Tween tween = CreateTween();
-        // Interpolate the value using a custom curve.
+        // 使用自訂曲線進行插值。
         Callable tweenCurveCallable = Callable.From<float, float>(TweenCurve);
         tween.TweenProperty(this, "position:x", 300.0f, 1.0f).AsRelative().SetCustomInterpolator(tweenCurveCallable);
     }

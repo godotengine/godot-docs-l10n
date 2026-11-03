@@ -7,18 +7,18 @@ ResourceImporterCSVTranslation
 
 **繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports comma-separated values as :ref:`Translation<class_Translation>`\ s.
+匯入 CSV 作為 :ref:`Translation<class_Translation>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Comma-separated values are a plain text table storage format. The format's simplicity makes it easy to edit in any text editor or spreadsheet software. This makes it a common choice for game localization.
+逗號分隔值是一種純文字表格儲存格式。這種格式簡單易用，可以在任何文字編輯器或電子錶格軟體中進行編輯。這使其成為遊戲在地化的常用選擇。
 
-In the CSV file used for translation, the first column contains string identifiers, and the first row serves as the header. The first column's header can be any value. The remaining headers indicate the locale for that column. Columns whose headers begin with an underscore (``_``) will be ignored.
+在用於翻譯的 CSV 檔案中，第一列包含字串標識符，第一行用作標題。第一列的標題可以是任意值。其餘標題表示該列的區域設定。標題以底線（\ ``_``\ ）開頭的列將被忽略。
 
-\ **Example CSV file:**\ 
+\ **CSV 檔案範例：**\ 
 
 .. code:: text
 
@@ -28,7 +28,7 @@ In the CSV file used for translation, the first column contains string identifie
     BYE,Goodbye,Adiós,さようなら
     QUOTE,"""Hello"" said the man.","""Hola"" dijo el hombre.",「こんにちは」男は言いました
 
-Although keys in the first column typically use uppercase string identifiers, it is not uncommon to directly use strings appearing in the game as keys. To avoid string ambiguity, you can use a special ``?context`` column to specify the context to use with :ref:`Object.tr()<class_Object_method_tr>`.
+雖然第一列中的鍵通常使用大寫字串標識符，但直接使用遊戲中出現的字串作為鍵也很常見。為了避免字串歧義，可以使用特殊的 ``?context`` 列來指定與 :ref:`Object.tr()<class_Object_method_tr>` 一起使用的情境。
 
 .. code:: text
 
@@ -36,15 +36,15 @@ Although keys in the first column typically use uppercase string identifiers, it
     Letter,Alphabet,Lettre,字母,字母
     Letter,Message,Courrier,手紙,信件
 
-To set the plural form of a string to use with :ref:`Object.tr_n()<class_Object_method_tr_n>`, add a special ``?plural`` column. After setting the plural form of the source string in this column, you can add additional rows to provide translations for more plural forms. The first column and all special columns in these plural form rows must be empty.
+要設定用於 :ref:`Object.tr_n()<class_Object_method_tr_n>` 方法的字串的複數形式，請新增一個特殊的 ``?plural`` 列。在該列中設定源字串的複數形式後，可以新增其他行來提供更多複數形式的翻譯。這些複數形式行中的第一列和所有特殊列都必須為空。
 
-Godot includes built-in plural rules for some languages. You can also customize them using a special ``?pluralrule`` row. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+Godot 包含一些語言的內建複數規則。還可以使用特殊的 ``?pluralrule`` 行來自訂它們。有關範例和更多資訊，請參閱 `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__\ 。
 
 .. code:: text
 
     en,?plural,fr,ru,zh,_Comment
     ?pluralrule,,nplurals=2; plural=(n >= 2);,,,Customize the plural rule for French
-    There is %d apple,There are %d apples,Il y a %d pomme,Есть %d яблоко,那里有%d个苹果,
+    There is %d apple,There are %d apples,Il y a %d pomme,Есть %d яблоко,那裡有%d個蘋果,
     ,,Il y a %d pommes,Есть %d яблока,,
     ,,,Есть %d яблок,,
 
@@ -88,9 +88,9 @@ Godot includes built-in plural rules for some languages. You can also customize 
 
 :ref:`int<class_int>` **compress** = ``1`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_compress>`
 
-- **Disabled**: Creates a :ref:`Translation<class_Translation>`.
+- **Disabled**\ ：建立 :ref:`Translation<class_Translation>`\ 。
 
-- **Auto**: Creates an :ref:`OptimizedTranslation<class_OptimizedTranslation>` when possible. This makes the resulting file smaller at the cost of a small CPU overhead. Falls back to :ref:`Translation<class_Translation>` for translations with context or plural forms.
+- **Auto**\ ：可能時建立 :ref:`OptimizedTranslation<class_OptimizedTranslation>`\ 。這樣做可以減小生成的檔案大小，但會增加少量 CPU 開銷。對於包含情境或複數形式的翻譯，則會回退到 :ref:`Translation<class_Translation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Godot includes built-in plural rules for some languages. You can also customize 
 
 :ref:`bool<class_bool>` **unescape_keys** = ``false`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_keys>`
 
-If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+如果為 ``true``\ ，則在匯入過程中使用 :ref:`String.c_unescape()<class_String_method_c_unescape>` 對 CSV 檔案中的訊息鍵進行反跳脫。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_une
 
 :ref:`bool<class_bool>` **unescape_translations** = ``true`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_translations>`
 
-If ``true``, message translations in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+如果為 ``true``\ ，則在匯入過程中使用 :ref:`String.c_unescape()<class_String_method_c_unescape>` 對 CSV 檔案中的訊息翻譯進行反跳脫。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

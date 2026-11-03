@@ -7,14 +7,14 @@ TextParagraph
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-持有一個文字段落。
+持有一個文欄位落。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-對 :ref:`TextServer<class_TextServer>` 的抽象，用於處理單個文字段落。
+對 :ref:`TextServer<class_TextServer>` 的抽象，用於處理單個文欄位落。
 
 .. rst-class:: classref-reftable-group
 
@@ -222,7 +222,7 @@ TextParagraph
 - |void| **set_ellipsis_char**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_ellipsis_char**\ (\ )
 
-Ellipsis character used for text clipping.
+用於文字裁剪的省略字元。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Ellipsis character used for text clipping.
 - |void| **set_justification_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_justification_flags**\ (\ )
 
-Line fill alignment rules.
+行填充對齊規則。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Line fill alignment rules.
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行與行之間的額外縱向留白（單位為像素），留白會被新增到行的降部。該值可以為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-The clipping behavior when the text exceeds the paragraph's set width.
+當文字超出段落所設定的寬度時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ The clipping behavior when the text exceeds the paragraph's set width.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TextParagraph_method_clear>`
 
-清空文字段落（移除文字和行內物件）。
+清空文欄位落（移除文字和行內物件）。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ The clipping behavior when the text exceeds the paragraph's set width.
 
 |void| **draw**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), dc_color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw>`
 
-Draw all lines of the text and drop cap into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製文字中所有行和首字下沈，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Draw all lines of the text and drop cap into a canvas item at a given position, 
 
 |void| **draw_dropcap**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_dropcap>`
 
-Draw drop cap into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製首字下沈，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Draw drop cap into a canvas item at a given position, with ``color``. ``pos`` sp
 
 |void| **draw_dropcap_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_dropcap_outline>`
 
-Draw drop cap outline into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製首字下沈的輪廓，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Draw drop cap outline into a canvas item at a given position, with ``color``. ``
 
 |void| **draw_line**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, line\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_line>`
 
-Draw single line of text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製一行文字，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Draw single line of text into a canvas item at a given position, with ``color``.
 
 |void| **draw_line_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, line\: :ref:`int<class_int>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_line_outline>`
 
-Draw outline of the single line of text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製一行文字的輪廓，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Draw outline of the single line of text into a canvas item at a given position, 
 
 |void| **draw_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), dc_color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_outline>`
 
-Draw outlines of all lines of the text and drop cap into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製文字中所有行和首字下沈的輪廓，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Draw outlines of all lines of the text and drop cap into a canvas item at a give
 
 :ref:`TextParagraph<class_TextParagraph>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_duplicate>`
 
-Duplicates this **TextParagraph**.
+複製該 **TextParagraph**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ Duplicates this **TextParagraph**.
 
 :ref:`Direction<enum_TextServer_Direction>` **get_inferred_direction**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_get_inferred_direction>`
 
-Returns the text writing direction inferred by the BiDi algorithm.
+回傳由 BiDi 算法推斷的文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ Returns the text writing direction inferred by the BiDi algorithm.
 
 :ref:`Vector2<class_Vector2>` **get_line_size**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextParagraph_method_get_line_size>`
 
-Returns size of the bounding box of the line of text. Returned size is rounded up.
+回傳文字行邊界框的大小。回傳的大小會向上捨入。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ Returns size of the bounding box of the line of text. Returned size is rounded u
 
 :ref:`Vector2i<class_Vector2i>` **get_range**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_get_range>`
 
-Returns the character range of the paragraph.
+回傳段落的字元範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ Returns the character range of the paragraph.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextParagraph_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+如果該塑形文字緩衝區中嵌入了具有 ``key`` 的物件，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

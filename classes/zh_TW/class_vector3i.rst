@@ -239,7 +239,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 **LEFT** = ``Vector3i(-1, 0, 0)`` :ref:`🔗<class_Vector3i_constant_LEFT>`
 
-左單位向量。代表局部的左方向，全域的西方向。
+左單位向量。代表區域的左方向，全域的西方向。
 
 .. _class_Vector3i_constant_RIGHT:
 
@@ -247,7 +247,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 **RIGHT** = ``Vector3i(1, 0, 0)`` :ref:`🔗<class_Vector3i_constant_RIGHT>`
 
-右單位向量。代表局部的右方向，全域的東方向。
+右單位向量。代表區域的右方向，全域的東方向。
 
 .. _class_Vector3i_constant_UP:
 
@@ -271,7 +271,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 **FORWARD** = ``Vector3i(0, 0, -1)`` :ref:`🔗<class_Vector3i_constant_FORWARD>`
 
-前單位向量。代表局部的前方向，全域的北方向。
+前單位向量。代表區域的前方向，全域的北方向。
 
 .. _class_Vector3i_constant_BACK:
 
@@ -279,7 +279,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 **BACK** = ``Vector3i(0, 0, 1)`` :ref:`🔗<class_Vector3i_constant_BACK>`
 
-向後的單位向量。代表局部的後方，全域的南方。
+向後的單位向量。代表區域的後方，全域的南方。
 
 .. rst-class:: classref-section-separator
 
@@ -408,7 +408,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 :ref:`Vector3i<class_Vector3i>` **clampi**\ (\ min\: :ref:`int<class_int>`, max\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_clampi>`
 
-Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+回傳一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -420,9 +420,9 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`int<class_int>` **distance_squared_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的\ `歐幾里得距離 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB>`__\ 的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+該方法比 :ref:`distance_to()<class_Vector3i_method_distance_to>` 執行速度更快，因此如果需要比較向量或需要平方距離來計算某些公式，請優先使用該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的 `歐幾里得距離 <https://en.wikipedia.org/wiki/Euclidean_distance>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distanc
 
 :ref:`Vector3i<class_Vector3i>` **max**\ (\ with\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_max>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3i(maxi(x, with.x), maxi(y, with.y), maxi(z, with.z))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector3i(maxi(x, with.x), maxi(y, with.y), maxi(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **maxi**\ (\ with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_maxi>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3i(maxi(x, with), maxi(y, with), maxi(z, with))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector3i(maxi(x, with), maxi(y, with), maxi(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **min**\ (\ with\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_min>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3i(mini(x, with.x), mini(y, with.y), mini(z, with.z))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector3i(mini(x, with.x), mini(y, with.y), mini(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **mini**\ (\ with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_mini>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3i(mini(x, with), mini(y, with), mini(z, with))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector3i(mini(x, with), mini(y, with), mini(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **snappedi**\ (\ step\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_snappedi>`
 
-Returns a new vector with each component snapped to the closest multiple of ``step``.
+回傳一個新向量，其中每個分量都吸附到了 ``step`` 的最接近倍數。
 
 .. rst-class:: classref-section-separator
 
@@ -597,11 +597,11 @@ Returns a new vector with each component snapped to the closest multiple of ``st
 
 :ref:`Vector3i<class_Vector3i>` **operator %**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_mod_Vector3i>`
 
-Gets the remainder of each component of the **Vector3i** with the components of the given **Vector3i**. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>` instead if you want to handle negative numbers.
+取得該 **Vector3i** 的每個分量與給定 **Vector3i** 中分量的余數。這個運算使用的是截斷式除法，因為對負數不友好，所以通常不會想要使用。如果你想要處理負數，請考慮改用 :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`\ 。
 
 ::
 
-    print(Vector3i(10, -20, 30) % Vector3i(7, 8, 9)) # Prints (3, -4, 3)
+    print(Vector3i(10, -20, 30) % Vector3i(7, 8, 9)) # 輸出 (3, -4, 3)
 
 .. rst-class:: classref-item-separator
 
@@ -613,11 +613,11 @@ Gets the remainder of each component of the **Vector3i** with the components of 
 
 :ref:`Vector3i<class_Vector3i>` **operator %**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3i_operator_mod_int>`
 
-Gets the remainder of each component of the **Vector3i** with the given :ref:`int<class_int>`. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>` instead if you want to handle negative numbers.
+取得該 **Vector3i** 的每個分量與給定的 :ref:`int<class_int>` 的余數。這個運算使用的是截斷式除法，因為對負數不友好，所以通常不會想要使用。如果你想要處理負數，請考慮改用 :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`\ 。
 
 ::
 
-    print(Vector3i(10, -20, 30) % 7) # Prints (3, -6, 2)
+    print(Vector3i(10, -20, 30) % 7) # 輸出 (3, -6, 2)
 
 .. rst-class:: classref-item-separator
 
@@ -629,11 +629,11 @@ Gets the remainder of each component of the **Vector3i** with the given :ref:`in
 
 :ref:`Vector3i<class_Vector3i>` **operator ***\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_mul_Vector3i>`
 
-Multiplies each component of the **Vector3i** by the components of the given **Vector3i**.
+將該 **Vector3i** 的每個分量乘以給定 **Vector3i** 的對應分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) * Vector3i(3, 4, 5)) # Prints (30, 80, 150)
+    print(Vector3i(10, 20, 30) * Vector3i(3, 4, 5)) # 輸出 (30, 80, 150)
 
 .. rst-class:: classref-item-separator
 
@@ -645,11 +645,11 @@ Multiplies each component of the **Vector3i** by the components of the given **V
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_mul_float>`
 
-Multiplies each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+將該 **Vector3i** 的每個分量乘以給定的 :ref:`float<class_float>`\ 。回傳的是 :ref:`Vector3<class_Vector3>`\ 。
 
 ::
 
-    print(Vector3i(10, 15, 20) * 0.9) # Prints (9.0, 13.5, 18.0)
+    print(Vector3i(10, 15, 20) * 0.9) # 輸出 (9.0, 13.5, 18.0)
 
 .. rst-class:: classref-item-separator
 
@@ -673,11 +673,11 @@ Multiplies each component of the **Vector3i** by the given :ref:`float<class_flo
 
 :ref:`Vector3i<class_Vector3i>` **operator +**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_sum_Vector3i>`
 
-Adds each component of the **Vector3i** by the components of the given **Vector3i**.
+將該 **Vector3i** 的每個分量加上給定 **Vector3i** 的對應分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) + Vector3i(3, 4, 5)) # Prints (13, 24, 35)
+    print(Vector3i(10, 20, 30) + Vector3i(3, 4, 5)) # 輸出 (13, 24, 35)
 
 .. rst-class:: classref-item-separator
 
@@ -689,11 +689,11 @@ Adds each component of the **Vector3i** by the components of the given **Vector3
 
 :ref:`Vector3i<class_Vector3i>` **operator -**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_dif_Vector3i>`
 
-Subtracts each component of the **Vector3i** by the components of the given **Vector3i**.
+將該 **Vector3i** 的每個分量減去給定 **Vector3i** 的對應分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) - Vector3i(3, 4, 5)) # Prints (7, 16, 25)
+    print(Vector3i(10, 20, 30) - Vector3i(3, 4, 5)) # 輸出 (7, 16, 25)
 
 .. rst-class:: classref-item-separator
 
@@ -705,11 +705,11 @@ Subtracts each component of the **Vector3i** by the components of the given **Ve
 
 :ref:`Vector3i<class_Vector3i>` **operator /**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_div_Vector3i>`
 
-Divides each component of the **Vector3i** by the components of the given **Vector3i**.
+將該 **Vector3i** 的每個分量除以給定 **Vector3i** 的對應分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) / Vector3i(2, 5, 3)) # Prints (5, 4, 10)
+    print(Vector3i(10, 20, 30) / Vector3i(2, 5, 3)) # 輸出 (5, 4, 10)
 
 .. rst-class:: classref-item-separator
 
@@ -721,11 +721,11 @@ Divides each component of the **Vector3i** by the components of the given **Vect
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_div_float>`
 
-Divides each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+將該 **Vector3i** 的每個分量除以給定的 :ref:`float<class_float>`\ 。回傳的是 :ref:`Vector3<class_Vector3>`\ 。
 
 ::
 
-    print(Vector3i(1, 2, 3) / 2.5) # Prints (0.4, 0.8, 1.2)
+    print(Vector3i(1, 2, 3) / 2.5) # 輸出 (0.4, 0.8, 1.2)
 
 .. rst-class:: classref-item-separator
 

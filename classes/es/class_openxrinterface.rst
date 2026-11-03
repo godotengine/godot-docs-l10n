@@ -896,7 +896,7 @@ La frecuencia de actualización de la pantalla para el HMD actual. Solo funciona
 - |void| **set_foveation_dynamic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_dynamic**\ (\ )
 
-Activa el ajuste dinámico de foveación, la interfaz debe inicializarse antes de que esto sea accesible. Si está habilitada, la foveación se ajustará automáticamente entre baja y :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
+Si es ``true``, habilita el ajuste dinámico de foveation (renderizado foveado). La interfaz debe inicializarse antes de que esto sea accesible. Si se habilita, la foveation se ajustará automáticamente entre un nivel bajo y :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ Activa el ajuste dinámico de foveación, la interfaz debe inicializarse antes d
 - |void| **set_foveation_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_foveation_level**\ (\ )
 
-El nivel de foveación, de 0 (desactivado) a 3 (alto). La interfaz debe inicializarse antes que esto sea accesible.
+El nivel de foveación, de ``0`` (desactivado) a ``3`` (alto). La interfaz debe inicializarse antes que esto sea accesible.
 
 .. rst-class:: classref-item-separator
 

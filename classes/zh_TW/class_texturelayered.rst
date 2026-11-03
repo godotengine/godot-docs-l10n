@@ -9,7 +9,7 @@ TextureLayered
 
 **被繼承：** :ref:`CompressedTextureLayered<class_CompressedTextureLayered>`, :ref:`ImageTextureLayered<class_ImageTextureLayered>`, :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>`, :ref:`TextureLayeredRD<class_TextureLayeredRD>`
 
-包含多個 :ref:`Image<class_Image>` 的紋理型別的基底類別。每個圖像的大小和格式都是一樣的。
+包含多個 :ref:`Image<class_Image>` 的紋理型別的基底類別。每個影像的大小和格式都是一樣的。
 
 .. rst-class:: classref-introduction-group
 
@@ -20,11 +20,11 @@ TextureLayered
 
 資料是按層設定的。對於 :ref:`Texture2DArray<class_Texture2DArray>`\ ，層指定的是陣列層。
 
-所有圖像都需要具有相同的寬度、高度和 mipmap 級別數。
+所有影像都需要具有相同的寬度、高度和 mipmap 級別數。
 
 \ **TextureLayered** 可以用 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` 載入。
 
-在內部，Godot 將這些檔對應到目標算繪驅動程式（Vulkan、OpenGL3）中的對應文件。
+在內部，Godot 將這些檔對應到目標渲染驅動程式（Vulkan、OpenGL3）中的對應文件。
 
 .. rst-class:: classref-reftable-group
 
@@ -202,7 +202,7 @@ enum **LayeredType**: :ref:`🔗<enum_TextureLayered_LayeredType>`
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_get_format>`
 
-Returns the current format being used by this texture.
+回傳該紋理目前所使用的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Returns the current format being used by this texture.
 
 :ref:`Image<class_Image>` **get_layer_data**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextureLayered_method_get_layer_data>`
 
-返回帶有指定 ``layer`` 層資料的 :ref:`Image<class_Image>` 圖像資源。
+返回帶有指定 ``layer`` 層資料的 :ref:`Image<class_Image>` 影像資源。
 
 .. rst-class:: classref-item-separator
 

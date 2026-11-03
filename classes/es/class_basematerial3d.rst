@@ -542,7 +542,7 @@ El filtro de textura combina los 4 píxeles más cercanos con los 2 mipmaps más
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``4``
 
-El filtro de textura lee desde el píxel más cercano y mezcla entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es `` true `` ) según el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea pixelada de cerca y suave de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi alineadas con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+El filtro de textura lee desde el píxel más cercano y mezcla entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es `` true ``) según el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea pixelada de cerca y suave de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi alineadas con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -550,7 +550,7 @@ El filtro de textura lee desde el píxel más cercano y mezcla entre 2 mipmaps (
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-El filtro de textura combina entre los 4 píxeles más cercanos y entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es `` true `` ) según el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea suave de cerca y de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi alineadas con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+El filtro de textura combina entre los 4 píxeles más cercanos y entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es `` true ``) según el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea suave de cerca y de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi alineadas con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_MAX:
 
@@ -856,7 +856,7 @@ El color del objeto se multiplica por el fondo.
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_PREMULT_ALPHA** = ``4``
 
-El color del objeto se añade al fondo y el canal alfa se utiliza para enmascararlo. Esto es, en esencia, un híbrido de los modos de mezcla y adición, útil para efectos como el fuego, donde se desea que la llama se añada pero el humo se mezcle . Por defecto, esto funciona con materiales sin sombreado que utilizan texturas premultiplicadas. Para materiales con shaders, utilice el `` PREMUL_ALPHA_FACTOR `` integrado para que la iluminación también pueda modularse.
+El color del objeto se añade al fondo y el canal alfa se utiliza para enmascararlo. Esto es, en esencia, un híbrido de los modos de mezcla y adición, útil para efectos como el fuego, donde se desea que la llama se añada pero el humo se mezcle. Por defecto, esto funciona con materiales sin sombreado que utilizan texturas premultiplicadas. Para materiales con shaders, utilice el `` PREMUL_ALPHA_FACTOR `` integrado para que la iluminación también pueda modularse.
 
 .. rst-class:: classref-item-separator
 
@@ -952,7 +952,7 @@ La prueba de profundidad descartará el píxel si está detrás de otros píxele
 
 :ref:`DepthTest<enum_BaseMaterial3D_DepthTest>` **DEPTH_TEST_INVERTED** = ``1``
 
-La prueba de profundidad descartará el píxel si se encuentra delante de otros píxeles. Útil para efectos de plantilla.
+La prueba de profundidad descartará el píxel si se encuentra delante de otros píxeles. Útil para efectos de esténcil.
 
 .. rst-class:: classref-item-separator
 
@@ -1466,7 +1466,7 @@ enum **StencilMode**: :ref:`🔗<enum_BaseMaterial3D_StencilMode>`
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_DISABLED** = ``0``
 
-Disables stencil operations.
+Desactiva las operaciones de esténcil.
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_OUTLINE:
 
@@ -1474,9 +1474,9 @@ Disables stencil operations.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_OUTLINE** = ``1``
 
-Preajuste de plantilla que aplica un contorno al objeto.
+Preajuste de esténcil que aplica un contorno al objeto.
 
-\ **Nota:** Requiere un material :ref:`Material.next_pass<class_Material_property_next_pass>` que se aplicará automáticamente. Cualquier cambio manual realizado en :ref:`Material.next_pass<class_Material_property_next_pass>` se perderá al modificar las propiedades de la plantilla o al recargar la escena. Para aplicar de forma segura un material :ref:`Material.next_pass<class_Material_property_next_pass>` sobre un material que utiliza preajustes de plantilla, utilice :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` en su lugar.
+\ **Nota:** Requiere un material :ref:`Material.next_pass<class_Material_property_next_pass>` que se aplicará automáticamente. Cualquier cambio manual realizado en :ref:`Material.next_pass<class_Material_property_next_pass>` se perderá al modificar las propiedades del esténcil o al recargar la escena. Para aplicar de forma segura un material :ref:`Material.next_pass<class_Material_property_next_pass>` sobre un material que utiliza preajustes de esténcil, utiliza :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` en su lugar.
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_XRAY:
 
@@ -1484,9 +1484,9 @@ Preajuste de plantilla que aplica un contorno al objeto.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_XRAY** = ``2``
 
-Plantilla que muestra la silueta del objeto detrás de las paredes.
+Preajuste de esténcil que muestra la silueta del objeto detrás de las paredes.
 
-\ **Nota:** Requiere un material :ref:`Material.next_pass<class_Material_property_next_pass>` que se aplicará automáticamente. Cualquier cambio manual realizado en :ref:`Material.next_pass<class_Material_property_next_pass>` se perderá al modificar las propiedades de la plantilla o al recargar la escena. Para aplicar de forma segura un material :ref:`Material.next_pass<class_Material_property_next_pass>` sobre un material que utiliza plantillas, utilice :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` en su lugar.
+\ **Nota:** Requiere un material :ref:`Material.next_pass<class_Material_property_next_pass>` que se aplicará automáticamente. Cualquier cambio manual realizado en :ref:`Material.next_pass<class_Material_property_next_pass>` se perderá al modificar las propiedades del esténcil o al recargar la escena. Para aplicar de forma segura un material :ref:`Material.next_pass<class_Material_property_next_pass>` sobre un material que utiliza plantillas, utiliza :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>` en su lugar.
 
 .. _class_BaseMaterial3D_constant_STENCIL_MODE_CUSTOM:
 
@@ -1494,7 +1494,7 @@ Plantilla que muestra la silueta del objeto detrás de las paredes.
 
 :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **STENCIL_MODE_CUSTOM** = ``3``
 
-Permite realizar operaciones con plantillas sin necesidad de una configuración predefinida.
+Permite realizar operaciones de esténcil sin necesidad de una configuración predefinida.
 
 .. rst-class:: classref-item-separator
 
@@ -1512,7 +1512,7 @@ enum **StencilFlags**: :ref:`🔗<enum_BaseMaterial3D_StencilFlags>`
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_READ** = ``1``
 
-El material solo se renderizará si supera una comparación de plantilla con los valores de búfer de plantilla existentes.
+El material solo se renderizará si supera una comparación de esténcil con los valores de búfer de esténcil existentes.
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE:
 
@@ -1520,7 +1520,7 @@ El material solo se renderizará si supera una comparación de plantilla con los
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE** = ``2``
 
-The material will write the reference value to the stencil buffer where it passes the depth test.
+El material escribirá el valor de referencia en el búfer de esténcil en las zonas donde supere la prueba de profundidad.
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE_DEPTH_FAIL:
 
@@ -1528,7 +1528,7 @@ The material will write the reference value to the stencil buffer where it passe
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE_DEPTH_FAIL** = ``4``
 
-The material will write the reference value to the stencil buffer where it fails the depth test.
+El material escribirá el valor de referencia en el búfer de esténcil en las zonas donde no supere la prueba de profundidad.
 
 .. rst-class:: classref-item-separator
 
@@ -1546,7 +1546,7 @@ enum **StencilCompare**: :ref:`🔗<enum_BaseMaterial3D_StencilCompare>`
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_ALWAYS** = ``0``
 
-Always passes the stencil test.
+Siempre supera la prueba de esténcil.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_LESS:
 
@@ -1554,7 +1554,7 @@ Always passes the stencil test.
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_LESS** = ``1``
 
-Supera la prueba de plantilla cuando el valor de referencia es menor que el valor de plantilla existente.
+Supera la prueba de esténcil cuando el valor de referencia es menor que el valor de esténcil existente.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_EQUAL:
 
@@ -1562,7 +1562,7 @@ Supera la prueba de plantilla cuando el valor de referencia es menor que el valo
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_EQUAL** = ``2``
 
-Supera la prueba de plantilla cuando el valor de referencia es igual al valor de plantilla existente.
+Supera la prueba de esténcil cuando el valor de referencia es igual al valor de esténcil existente.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_LESS_OR_EQUAL:
 
@@ -1570,7 +1570,7 @@ Supera la prueba de plantilla cuando el valor de referencia es igual al valor de
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_LESS_OR_EQUAL** = ``3``
 
-Supera la prueba de plantilla cuando el valor de referencia es menor o igual al valor de plantilla existente.
+Supera la prueba de esténcil cuando el valor de referencia es menor o igual al valor de esténcil existente.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_GREATER:
 
@@ -1578,7 +1578,7 @@ Supera la prueba de plantilla cuando el valor de referencia es menor o igual al 
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_GREATER** = ``4``
 
-Supera la prueba de la plantilla cuando el valor de referencia es mayor que el valor de la plantilla existente.
+Supera la prueba de esténcil cuando el valor de referencia es mayor que el valor de esténcil existente.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_NOT_EQUAL:
 
@@ -1586,7 +1586,7 @@ Supera la prueba de la plantilla cuando el valor de referencia es mayor que el v
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_NOT_EQUAL** = ``5``
 
-Supera la prueba de plantilla cuando el valor de referencia no es igual al valor de plantilla existente.
+Supera la prueba de esténcil cuando el valor de referencia no es igual al valor de esténcil existente.
 
 .. _class_BaseMaterial3D_constant_STENCIL_COMPARE_GREATER_OR_EQUAL:
 
@@ -1594,7 +1594,7 @@ Supera la prueba de plantilla cuando el valor de referencia no es igual al valor
 
 :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **STENCIL_COMPARE_GREATER_OR_EQUAL** = ``6``
 
-Passes the stencil test when the reference value is greater than or equal to the existing stencil value.
+Supera la prueba de esténcil cuando el valor de referencia es mayor o igual que el valor de esténcil existente.
 
 .. rst-class:: classref-section-separator
 
@@ -2434,7 +2434,7 @@ El color de la luz emitida. Véase :ref:`emission_enabled<class_BaseMaterial3D_p
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, the body emits light. Emitting light makes the object appear brighter. The object can also cast light on other objects if a :ref:`VoxelGI<class_VoxelGI>`, SDFGI, or :ref:`LightmapGI<class_LightmapGI>` is used and this object is used in baked lighting.
+Si es ``true``, el cuerpo emite luz. Emitir luz hace que el objeto parezca más brillante. El objeto también puede emitir luz sobre otros objetos si un :ref:`VoxelGI<class_VoxelGI>`, SDFGI o :ref:`LightmapGI<class_LightmapGI>` es usado y este objeto se utiliza en el mapa de iluminación cocinada.
 
 .. rst-class:: classref-item-separator
 
@@ -2953,7 +2953,7 @@ Textura utilizada para especificar la normal en un píxel dado. La :ref:`normal_
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Textura de oclusión/rugosidad/metálica a utilizar. Esta es una sustitución más eficiente de :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`, :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` y :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` en :ref:`ORMMaterial3D<class_ORMMaterial3D>`. La oclusión ambiental se almacena en el canal rojo. El mapa de rugosidad se almacena en el canal verde. El mapa metálico se almacena en el canal azul. El canal alfa se ignora.
+Textura de oclusión/rugosidad/metálica a utilizar. Este es un reemplazo más eficiente de :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`, :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` y :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` en :ref:`ORMMaterial3D<class_ORMMaterial3D>`. La oclusión ambiental se almacena en el canal rojo. El mapa de rugosidad se almacena en el canal verde. El mapa metálico se almacena en el canal azul. El canal alfa se ignora.
 
 .. rst-class:: classref-item-separator
 
@@ -3318,7 +3318,7 @@ Método para renderizar la mancha especular.
 
 **Experimental:** May be affected by future rendering pipeline changes.
 
-The primary color of the stencil effect.
+El color principal del efecto de esténcil.
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ The primary color of the stencil effect.
 
 **Experimental:** May be affected by future rendering pipeline changes.
 
-The comparison operator to use for stencil masking operations.
+El operador de comparación que se utilizará en las operaciones de máscara de esténcil.
 
 .. rst-class:: classref-item-separator
 
@@ -3356,7 +3356,7 @@ The comparison operator to use for stencil masking operations.
 
 **Experimental:** May be affected by future rendering pipeline changes.
 
-Las banderas que dictan cómo se comporta la operación de plantilla.
+Los indicadores que determinan el comportamiento de la operación de esténcil.
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3375,7 @@ Las banderas que dictan cómo se comporta la operación de plantilla.
 
 **Experimental:** May be affected by future rendering pipeline changes.
 
-The stencil effect mode.
+El modo del efecto de esténcil.
 
 .. rst-class:: classref-item-separator
 
@@ -3413,7 +3413,7 @@ El grosor del contorno para :ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_cons
 
 **Experimental:** May be affected by future rendering pipeline changes.
 
-El valor de referencia de la plantilla es (0-255). Normalmente una potencia de 2.
+El valor de referencia de esténcil (0-255). Normalmente, una potencia de 2.
 
 .. rst-class:: classref-item-separator
 
@@ -3638,7 +3638,7 @@ El modo de transparencia del material. Algunos modos de transparencia deshabilit
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-Si es ``true``, utiliza :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` para anular el ángulo del campo de visión de la :ref:`Camera3D<class_Camera3D>`.
+Si es ``true``, utiliza :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` para sobrescribir el ángulo del campo de visión de la :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3935,7 +3935,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_feature>`
 
-Returns ``true`` if the specified ``feature`` is enabled.
+Devuelve ``true`` si la ``feature`` especificada está habilitada.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ SceneTree
 說明
 ----
 
-As one of the most important classes, the **SceneTree** manages the hierarchy of nodes in a scene, as well as scenes themselves. Nodes can be added, fetched and removed. The whole scene tree (and thus the current scene) can be paused. Scenes can be loaded, switched and reloaded.
+作為最重要的類之一，\ **SceneTree** 管理著場景中節點的層次結構以及場景本身。節點可以進行新增、取得、移除等操作。整個場景樹都可以暫停（因此目前場景也可以暫停）。場景可以載入、切換、重新載入。
 
-You can also use the **SceneTree** to organize your nodes into **groups**: every node can be added to as many groups as you want to create, e.g. an "enemy" group. You can then iterate these groups or even call methods and set properties on all the nodes belonging to any given group.
+你還可以使用 **SceneTree** 將節點分\ **組**\ 管理：你想要建立多少分組都可以，每個節點都可以新增到若干個組中，例如“敵人”組。然後你可以遍歷這些分組，甚至可以對指定分組中的所有節點執行呼叫方法、設定屬性等操作。
 
-\ **SceneTree** is the default :ref:`MainLoop<class_MainLoop>` implementation used by the engine, and is thus in charge of the game loop.
+\ **SceneTree** 是引擎所使用的預設 :ref:`MainLoop<class_MainLoop>` 實作，因此負責遊戲循環。
 
 .. rst-class:: classref-introduction-group
 
@@ -138,7 +138,7 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 **node_added**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_signal_node_added>`
 
-Emitted when the ``node`` enters this tree.
+當 ``node`` 進入該樹時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Emitted when the ``node`` enters this tree.
 
 **node_configuration_warning_changed**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_signal_node_configuration_warning_changed>`
 
-Emitted when the ``node``'s :ref:`Node.update_configuration_warnings()<class_Node_method_update_configuration_warnings>` is called. Only emitted in the editor.
+當 ``node`` 的 :ref:`Node.update_configuration_warnings()<class_Node_method_update_configuration_warnings>` 被呼叫時發出。僅在編輯器中發出。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Emitted when the ``node``'s :ref:`Node.update_configuration_warnings()<class_Nod
 
 **node_removed**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_signal_node_removed>`
 
-Emitted when the ``node`` exits this tree.
+當 ``node`` 退出該樹時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Emitted when the ``node`` exits this tree.
 
 **node_renamed**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_signal_node_renamed>`
 
-Emitted when the ``node``'s :ref:`Node.name<class_Node_property_name>` is changed.
+當 ``node`` 的 :ref:`Node.name<class_Node_property_name>` 被更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Emitted when the ``node``'s :ref:`Node.name<class_Node_property_name>` is change
 
 **physics_frame**\ (\ ) :ref:`🔗<class_SceneTree_signal_physics_frame>`
 
-Emitted immediately before :ref:`Node._physics_process()<class_Node_private_method__physics_process>` is called on every node in this tree.
+在該樹中的每個節點上呼叫 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 之前立即發出。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Emitted immediately before :ref:`Node._physics_process()<class_Node_private_meth
 
 **process_frame**\ (\ ) :ref:`🔗<class_SceneTree_signal_process_frame>`
 
-Emitted immediately before :ref:`Node._process()<class_Node_private_method__process>` is called on every node in this tree.
+在該樹中的每個節點上呼叫 :ref:`Node._process()<class_Node_private_method__process>` 之前立即發出。
 
 .. rst-class:: classref-item-separator
 
@@ -210,14 +210,14 @@ Emitted immediately before :ref:`Node._process()<class_Node_private_method__proc
 
 **scene_changed**\ (\ ) :ref:`🔗<class_SceneTree_signal_scene_changed>`
 
-Emitted after the new scene is added to scene tree and initialized. Can be used to reliably access :ref:`current_scene<class_SceneTree_property_current_scene>` when changing scenes.
+新場景新增到場景樹中並完成初始化後發出。切換場景時可以用這個訊號來穩定地存取 :ref:`current_scene<class_SceneTree_property_current_scene>`\ 。
 
 ::
 
-    # This code should be inside an autoload.
+    # 這段程式碼應當寫在自動載入里。
     get_tree().change_scene_to_file(other_scene_path)
     await get_tree().scene_changed
-    print(get_tree().current_scene) # Prints the new scene.
+    print(get_tree().current_scene) # 輸出新場景。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Emitted after the new scene is added to scene tree and initialized. Can be used 
 
 **tree_changed**\ (\ ) :ref:`🔗<class_SceneTree_signal_tree_changed>`
 
-Emitted any time the tree's hierarchy changes (nodes being moved, renamed, etc.).
+每當該樹的層次結構發生變化（節點被移動、重新命名等）時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Emitted any time the tree's hierarchy changes (nodes being moved, renamed, etc.)
 
 **tree_process_mode_changed**\ (\ ) :ref:`🔗<class_SceneTree_signal_tree_process_mode_changed>`
 
-Emitted when the :ref:`Node.process_mode<class_Node_property_process_mode>` of any node inside the tree is changed. Only emitted in the editor, to update the visibility of disabled nodes.
+當樹內任意節點的 :ref:`Node.process_mode<class_Node_property_process_mode>` 更改時觸發。僅在編輯器中觸發，以更新停用節點的可見性。
 
 .. rst-class:: classref-section-separator
 
@@ -264,7 +264,7 @@ enum **GroupCallFlags**: :ref:`🔗<enum_SceneTree_GroupCallFlags>`
 
 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>` **GROUP_CALL_DEFAULT** = ``0``
 
-Call nodes within a group with no special behavior (default).
+沒有特殊行為地呼叫組內的節點（預設）。
 
 .. _class_SceneTree_constant_GROUP_CALL_REVERSE:
 
@@ -272,7 +272,7 @@ Call nodes within a group with no special behavior (default).
 
 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>` **GROUP_CALL_REVERSE** = ``1``
 
-Call nodes within a group in reverse tree hierarchy order (all nested children are called before their respective parent nodes).
+按相反的樹層次結構順序呼叫組內的節點（所有巢狀子節點都在其各自的父節點之前呼叫）。
 
 .. _class_SceneTree_constant_GROUP_CALL_DEFERRED:
 
@@ -280,7 +280,7 @@ Call nodes within a group in reverse tree hierarchy order (all nested children a
 
 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>` **GROUP_CALL_DEFERRED** = ``2``
 
-Call nodes within a group at the end of the current frame (can be either process or physics frame), similar to :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
+在目前影格（可以是處理影格或物理影格）末尾呼叫組內的節點，類似於 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
 
 .. _class_SceneTree_constant_GROUP_CALL_UNIQUE:
 
@@ -288,9 +288,9 @@ Call nodes within a group at the end of the current frame (can be either process
 
 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>` **GROUP_CALL_UNIQUE** = ``4``
 
-Call nodes within a group only once, even if the call is executed many times in the same frame. Must be combined with :ref:`GROUP_CALL_DEFERRED<class_SceneTree_constant_GROUP_CALL_DEFERRED>` to work.
+即使在同一影格中執行多次，也僅呼叫組內的節點一次。必須與 :ref:`GROUP_CALL_DEFERRED<class_SceneTree_constant_GROUP_CALL_DEFERRED>` 結合使用才能工作。
 
-\ **Note:** Different arguments are not taken into account. Therefore, when the same call is executed with different arguments, only the first call will be performed.
+\ **注意：**\ 不考慮不同的參數。因此，當使用不同的參數執行相同的呼叫時，只會執行第一個呼叫。
 
 .. rst-class:: classref-section-separator
 
@@ -331,9 +331,9 @@ Call nodes within a group only once, even if the call is executed many times in 
 - |void| **set_current_scene**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_current_scene**\ (\ )
 
-The root node of the currently loaded main scene, usually as a direct child of :ref:`root<class_SceneTree_property_root>`. See also :ref:`change_scene_to_file()<class_SceneTree_method_change_scene_to_file>`, :ref:`change_scene_to_packed()<class_SceneTree_method_change_scene_to_packed>`, and :ref:`reload_current_scene()<class_SceneTree_method_reload_current_scene>`.
+目前載入的主場景的根節點，通常是 :ref:`root<class_SceneTree_property_root>` 的直接子節點。另見 :ref:`change_scene_to_file()<class_SceneTree_method_change_scene_to_file>`\ 、\ :ref:`change_scene_to_packed()<class_SceneTree_method_change_scene_to_packed>`\ 、\ :ref:`reload_current_scene()<class_SceneTree_method_reload_current_scene>`\ 。
 
-\ **Warning:** Setting this property directly may not work as expected, as it does *not* add or remove any nodes from this tree.
+\ **警告：**\ 直接設定該屬性可能無法正常工作，因為這樣\ *不會*\ 在場景樹中新增刪除節點。
 
 .. rst-class:: classref-item-separator
 
@@ -407,9 +407,9 @@ The root node of the currently loaded main scene, usually as a direct child of :
 - |void| **set_edited_scene_root**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_edited_scene_root**\ (\ )
 
-The root of the scene currently being edited in the editor. This is usually a direct child of :ref:`root<class_SceneTree_property_root>`.
+編輯器中目前正在編輯場景的根節點。通常是 :ref:`root<class_SceneTree_property_root>` 的直接子節點。
 
-\ **Note:** This property does nothing in release builds.
+\ **注意：**\ 該屬性在發佈版本中不起任何作用。
 
 .. rst-class:: classref-item-separator
 
@@ -445,11 +445,11 @@ The root of the scene currently being edited in the editor. This is usually a di
 - |void| **set_pause**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_paused**\ (\ )
 
-If ``true``, the scene tree is considered paused. This causes the following behavior:
+如果為 ``true``\ ，則會將場景樹視為已暫停，會導致下列行為：
 
-- 2D and 3D physics will be stopped, as well as collision detection and related signals.
+- 停止 2D 和 3D 物理，包括碰撞檢測和相關訊號。
 
-- Depending on each node's :ref:`Node.process_mode<class_Node_property_process_mode>`, their :ref:`Node._process()<class_Node_private_method__process>`, :ref:`Node._physics_process()<class_Node_private_method__physics_process>` and :ref:`Node._input()<class_Node_private_method__input>` callback methods may not called anymore.
+- 可能不再呼叫每個節點的 :ref:`Node._process()<class_Node_private_method__process>`\ 、\ :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ 、\ :ref:`Node._input()<class_Node_private_method__input>` 等回呼方法，具體由各節點的 :ref:`Node.process_mode<class_Node_property_process_mode>` 決定。
 
 .. rst-class:: classref-item-separator
 
@@ -466,11 +466,11 @@ If ``true``, the scene tree is considered paused. This causes the following beha
 - |void| **set_physics_interpolation_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_physics_interpolation_enabled**\ (\ )
 
-If ``true``, the renderer will interpolate the transforms of objects (both physics and non-physics) between the last two transforms, so that smooth motion is seen even when physics ticks do not coincide with rendered frames.
+如果為 ``true``\ ，則渲染器將在最後兩個變換之間插入物件的變換（無論該物件為物理物件還是非物理物件），這樣即使物理刻度與渲染影格不一致，也能看到平滑的運動。
 
-The default value of this property is controlled by :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>`.
+該屬性的預設值由 :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 控制。
 
-\ **Note:** Although this is a global setting, finer control of individual branches of the **SceneTree** is possible using :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`.
+\ **注意：**\ 儘管這是全域設定，仍可使用 :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` 對 **SceneTree** 中的分支進行精細的控制。
 
 .. rst-class:: classref-item-separator
 
@@ -489,7 +489,7 @@ The default value of this property is controlled by :ref:`ProjectSettings.physic
 
 如果為 ``true``\ ，則該套用程式會在導覽返回時自動退出（例如在 Android 上使用系統“返回”鍵）。
 
-禁用這個選項時，如果要處理“返回”按鈕，請使用 :ref:`DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST<class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST>`\ 。
+停用這個選項時，如果要處理“返回”按鈕，請使用 :ref:`DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST<class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -505,9 +505,9 @@ The default value of this property is controlled by :ref:`ProjectSettings.physic
 
 - :ref:`Window<class_Window>` **get_root**\ (\ )
 
-The tree's root :ref:`Window<class_Window>`. This is top-most :ref:`Node<class_Node>` of the scene tree, and is always present. An absolute :ref:`NodePath<class_NodePath>` always starts from this node. Children of the root node may include the loaded :ref:`current_scene<class_SceneTree_property_current_scene>`, as well as any :doc:`AutoLoad <../tutorials/scripting/singletons_autoload>` configured in the Project Settings.
+場景樹的根 :ref:`Window<class_Window>`\ 。這是場景樹的最頂層 :ref:`Node<class_Node>`\ ，始終存在。絕對 :ref:`NodePath<class_NodePath>` 始終從這個節點開始。載入的 :ref:`current_scene<class_SceneTree_property_current_scene>` 以及“專案設定”中設定的\ :doc:`自動載入 <../tutorials/scripting/singletons_autoload>`\ 可能也是根節點的子節點。
 
-\ **Warning:** Do not delete this node. This will result in unstable behavior, followed by a crash.
+\ **警告：**\ 請勿刪除該節點。刪除會導致不穩定的行為並引起崩潰。
 
 .. rst-class:: classref-section-separator
 
@@ -524,11 +524,11 @@ The tree's root :ref:`Window<class_Window>`. This is top-most :ref:`Node<class_N
 
 |void| **call_group**\ (\ group\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_SceneTree_method_call_group>`
 
-Calls ``method`` on each node inside this tree added to the given ``group``. You can pass arguments to ``method`` by specifying them at the end of this method call. Nodes that cannot call ``method`` (either because the method doesn't exist or the arguments do not match) are ignored. See also :ref:`set_group()<class_SceneTree_method_set_group>` and :ref:`notify_group()<class_SceneTree_method_notify_group>`.
+在該樹內新增到給定 ``group``\ 的每個節點上呼叫 ``method``\ 。你可以通過在該方法呼叫末尾指定參數來將參數傳遞給 ``method``\ 。無法呼叫 ``method`` 的節點（因為該方法不存在或參數不匹配）將被忽略。另見 :ref:`set_group()<class_SceneTree_method_set_group>` 和 :ref:`notify_group()<class_SceneTree_method_notify_group>`\ 。
 
-\ **Note:** This method acts immediately on all selected nodes at once, which may cause stuttering in some performance-intensive situations.
+\ **注意：**\ 該方法立即作用於所有選定的節點，這可能會在某些效能密集型情況下導致卡頓。
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，當參照內建的 Godot 方法時，\ ``method`` 必須使用 snake_case。最好使用 ``MethodName`` 類中公開的名稱，以避免在每次呼叫時分配新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -540,16 +540,16 @@ Calls ``method`` on each node inside this tree added to the given ``group``. You
 
 |void| **call_group_flags**\ (\ flags\: :ref:`int<class_int>`, group\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_SceneTree_method_call_group_flags>`
 
-Calls the given ``method`` on each node inside this tree added to the given ``group``. Use ``flags`` to customize this method's behavior (see :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`). Additional arguments for ``method`` can be passed at the end of this method. Nodes that cannot call ``method`` (either because the method doesn't exist or the arguments do not match) are ignored.
+在樹內新增到給定 ``group`` 的每個節點上呼叫給定的 ``method``\ 。使用 ``flags`` 自訂該方法的行為（請參閱 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`\ ）。\ ``method`` 的附加參數可以在該方法的末尾傳遞。無法呼叫 ``method`` 的節點（因為該方法不存在或參數不匹配）將被忽略。
 
 ::
 
-    # Calls "hide" to all nodes of the "enemies" group, at the end of the frame and in reverse tree order.
+    # 在影格末尾以相反的樹順序，在 “enemies” 組的所有節點上呼叫 “hide”。
     get_tree().call_group_flags(
             SceneTree.GROUP_CALL_DEFERRED | SceneTree.GROUP_CALL_REVERSE,
             "enemies", "hide")
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，當參照內建的 Godot 方法時，\ ``method`` 必須使用 snake_case。最好使用 ``MethodName`` 類中公開的名稱，以避免在每次呼叫時分配新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,11 +561,11 @@ Calls the given ``method`` on each node inside this tree added to the given ``gr
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_file>`
 
-Changes the running scene to the one at the given ``path``, after loading it into a :ref:`PackedScene<class_PackedScene>` and creating a new instance.
+將位於給定路徑 ``path`` 的場景載入為一個 :ref:`PackedScene<class_PackedScene>` 並建立新實例，然後將正在執行的場景修改為這個場景。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if the ``path`` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if that scene cannot be instantiated.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``path`` 不能被載入為一個 :ref:`PackedScene<class_PackedScene>` ，則回傳 :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>`\ ；如果該場景無法被實例化，則回傳 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **注意：**\ 有關操作順序的詳細資訊，請參閱 :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -577,21 +577,21 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_node>`
 
-Changes the running scene to the provided :ref:`Node<class_Node>`. Useful when you want to set up the new scene before changing.
+將正在執行的場景切換為給定的 :ref:`Node<class_Node>`\ 。當你希望在切換前設定新場景時非常有用。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the ``node`` is ``null``, or :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the ``node`` is already inside the scene tree.
+成功時返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，\ ``node`` 為 ``null`` 時返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，\ ``node`` 已經在場景樹中時返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ 。
 
-\ **Note:** Operations happen in the following order when :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` is called:
+\ **注意：**\ 當 :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` 被呼叫時，操作按以下順序發生：
 
-1. The current scene node is immediately removed from the tree. From that point, :ref:`Node.get_tree()<class_Node_method_get_tree>` called on the current (outgoing) scene will return ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` will be ``null`` too, because the new scene is not available yet.
+1. 目前場景節點被立即從樹中移除。從那時起，在目前（即將退出）場景上呼叫的 :ref:`Node.get_tree()<class_Node_method_get_tree>` 將返回 ``null``\ 。\ :ref:`current_scene<class_SceneTree_property_current_scene>` 也將變為 ``null``\ ，因為新場景尚不可用。
 
-2. At the end of the frame, the formerly current scene, already removed from the tree, will be deleted (freed from memory) and then the new scene node will be added to the tree. :ref:`Node.get_tree()<class_Node_method_get_tree>` and :ref:`current_scene<class_SceneTree_property_current_scene>` will be back to working as usual.
+2. 在影格末尾時，已從樹中移除的、之前的目前場景將被刪除（從記憶體中釋放），然後新場景節點將被新增到樹中。\ :ref:`Node.get_tree()<class_Node_method_get_tree>` 和 :ref:`current_scene<class_SceneTree_property_current_scene>` 將恢復正常工作。
 
-This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+這確保了兩個場景不會同時執行，並且仍然會以類似於 :ref:`Node.queue_free()<class_Node_method_queue_free>` 的安全方式釋放之前的場景。
 
-If you want to reliably access the new scene, await the :ref:`scene_changed<class_SceneTree_signal_scene_changed>` signal.
+如果你想要穩定地存取新場景，請等待 :ref:`scene_changed<class_SceneTree_signal_scene_changed>` 訊號。
 
-\ **Warning:** After using this method, the **SceneTree** will take ownership of the node and will free it automatically when changing scene again. Any references you had to that node will become invalid.
+\ **警告：** 使用此方法之後，\ **SceneTree** 將獲得該節點的所有權，並在再次切換場景時自動釋放它。你對該節點的一切參照都將失效。
 
 .. rst-class:: classref-item-separator
 
@@ -603,11 +603,11 @@ If you want to reliably access the new scene, await the :ref:`scene_changed<clas
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_packed**\ (\ packed_scene\: :ref:`PackedScene<class_PackedScene>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_packed>`
 
-Changes the running scene to a new instance of the given :ref:`PackedScene<class_PackedScene>` (which must be valid).
+將正在執行的場景切換為指定 :ref:`PackedScene<class_PackedScene>` （必須有效）的一個新實例。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the scene is invalid.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該場景無法被實例化，則回傳 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果場景無效，則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **注意：**\ 有關操作順序的詳細資訊，請參閱 :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -619,15 +619,15 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`SceneTreeTimer<class_SceneTreeTimer>` **create_timer**\ (\ time_sec\: :ref:`float<class_float>`, process_always\: :ref:`bool<class_bool>` = true, process_in_physics\: :ref:`bool<class_bool>` = false, ignore_time_scale\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_SceneTree_method_create_timer>`
 
-Returns a new :ref:`SceneTreeTimer<class_SceneTreeTimer>`. After ``time_sec`` in seconds have passed, the timer will emit :ref:`SceneTreeTimer.timeout<class_SceneTreeTimer_signal_timeout>` and will be automatically freed.
+回傳一個新的 :ref:`SceneTreeTimer<class_SceneTreeTimer>`\ 。在以秒為單位的 ``time_sec`` 過去後，該計時器將發出 :ref:`SceneTreeTimer.timeout<class_SceneTreeTimer_signal_timeout>` 並自動釋放。
 
-If ``process_always`` is ``false``, the timer will be paused when setting :ref:`paused<class_SceneTree_property_paused>` to ``true``.
+如果 ``process_always`` 為 ``false``\ ，則當將 :ref:`paused<class_SceneTree_property_paused>` 設定為 ``true`` 時，該計時器將被暫停。
 
-If ``process_in_physics`` is ``true``, the timer will update at the end of the physics frame, instead of the process frame.
+如果 ``process_in_physics`` 為 ``true``\ ，則該計時器將在物理影格結束時，而不是在過程影格結束時更新。
 
-If ``ignore_time_scale`` is ``true``, the timer will ignore :ref:`Engine.time_scale<class_Engine_property_time_scale>` and update with the real, elapsed time.
+如果 ``ignore_time_scale`` 為 ``true``\ ，則該計時器將忽略 :ref:`Engine.time_scale<class_Engine_property_time_scale>` 並使用實際的、經過的時間更新。
 
-This method is commonly used to create a one-shot delay timer, as in the following example:
+該方法通常用於建立一次性的延遲計時器，如下例所示：
 
 
 .. tabs::
@@ -635,22 +635,22 @@ This method is commonly used to create a one-shot delay timer, as in the followi
  .. code-tab:: gdscript
 
     func some_function():
-        print("start")
+        print("開始")
         await get_tree().create_timer(1.0).timeout
-        print("end")
+        print("結束")
 
  .. code-tab:: csharp
 
     public async Task SomeFunction()
     {
-        GD.Print("start");
+        GD.Print("開始");
         await ToSignal(GetTree().CreateTimer(1.0f), SceneTreeTimer.SignalName.Timeout);
-        GD.Print("end");
+        GD.Print("結束");
     }
 
 
 
-\ **Note:** The timer is always updated *after* all of the nodes in the tree. A node's :ref:`Node._process()<class_Node_private_method__process>` method would be called before the timer updates (or :ref:`Node._physics_process()<class_Node_private_method__physics_process>` if ``process_in_physics`` is set to ``true``).
+\ **注意：**\ 該計時器總是在樹中的所有節點\ *之後*\ 更新。在該計時器更新之前，將呼叫節點的 :ref:`Node._process()<class_Node_private_method__process>` 方法（如果 ``process_in_physics`` 被設定為 ``true``\ ，則呼叫 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -662,9 +662,9 @@ This method is commonly used to create a one-shot delay timer, as in the followi
 
 :ref:`Tween<class_Tween>` **create_tween**\ (\ ) :ref:`🔗<class_SceneTree_method_create_tween>`
 
-Creates and returns a new :ref:`Tween<class_Tween>` processed in this tree. The Tween will start automatically on the next process frame or physics frame (depending on its :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`).
+建立並回傳在該樹中處理的新的 :ref:`Tween<class_Tween>`\ 。該 Tween 將在下一個處理影格或物理影格中自動開始（取決於其 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ）。
 
-\ **Note:** A :ref:`Tween<class_Tween>` created using this method is not bound to any :ref:`Node<class_Node>`. It may keep working until there is nothing left to animate. If you want the :ref:`Tween<class_Tween>` to be automatically killed when the :ref:`Node<class_Node>` is freed, use :ref:`Node.create_tween()<class_Node_method_create_tween>` or :ref:`Tween.bind_node()<class_Tween_method_bind_node>`.
+\ **注意：**\ 使用該方法建立的 :ref:`Tween<class_Tween>` 不會被綁定到任何 :ref:`Node<class_Node>`\ 。它可能會繼續工作，直到沒有任何東西可以進行動畫。如果希望在 :ref:`Node<class_Node>` 被釋放時自動終結該 :ref:`Tween<class_Tween>`\ ，請使用 :ref:`Node.create_tween()<class_Node_method_create_tween>` 或 :ref:`Tween.bind_node()<class_Tween_method_bind_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -676,7 +676,7 @@ Creates and returns a new :ref:`Tween<class_Tween>` processed in this tree. The 
 
 :ref:`Node<class_Node>` **get_first_node_in_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SceneTree_method_get_first_node_in_group>`
 
-Returns the first :ref:`Node<class_Node>` found inside the tree, that has been added to the given ``group``, in scene hierarchy order. Returns ``null`` if no match is found. See also :ref:`get_nodes_in_group()<class_SceneTree_method_get_nodes_in_group>`.
+回傳樹中找到的第一個加入了 ``group`` 分組的 :ref:`Node<class_Node>`\ ，尋找時按照場景層次結構順序。如果沒有找到匹配的節點則回傳 ``null``\ 。另見 :ref:`get_nodes_in_group()<class_SceneTree_method_get_nodes_in_group>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -688,7 +688,7 @@ Returns the first :ref:`Node<class_Node>` found inside the tree, that has been a
 
 :ref:`int<class_int>` **get_frame**\ (\ ) |const| :ref:`🔗<class_SceneTree_method_get_frame>`
 
-Returns how many physics process steps have been processed, since the application started. This is *not* a measurement of elapsed time. See also :ref:`physics_frame<class_SceneTree_signal_physics_frame>`. For the number of frames rendered, see :ref:`Engine.get_process_frames()<class_Engine_method_get_process_frames>`.
+回傳程式開始執行之後已經處理了多少個物理處理步驟。測量的\ *不是*\ 經過的時間。另見 :ref:`physics_frame<class_SceneTree_signal_physics_frame>`\ 。已渲染的影格數見 :ref:`Engine.get_process_frames()<class_Engine_method_get_process_frames>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +712,7 @@ Returns how many physics process steps have been processed, since the applicatio
 
 :ref:`int<class_int>` **get_node_count**\ (\ ) |const| :ref:`🔗<class_SceneTree_method_get_node_count>`
 
-Returns the number of nodes inside this tree.
+回傳該樹中的節點數。
 
 .. rst-class:: classref-item-separator
 
@@ -724,7 +724,7 @@ Returns the number of nodes inside this tree.
 
 :ref:`int<class_int>` **get_node_count_in_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SceneTree_method_get_node_count_in_group>`
 
-Returns the number of nodes assigned to the given group.
+回傳分配給給定組的節點數。
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Returns the number of nodes assigned to the given group.
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_nodes_in_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SceneTree_method_get_nodes_in_group>`
 
-Returns an :ref:`Array<class_Array>` containing all nodes inside this tree, that have been added to the given ``group``, in scene hierarchy order.
+回傳一個 :ref:`Array<class_Array>`\ ，其中包含的是樹中所有加入了 ``group`` 分組的節點，按照場景層次結構排序。
 
 .. rst-class:: classref-item-separator
 
@@ -748,7 +748,7 @@ Returns an :ref:`Array<class_Array>` containing all nodes inside this tree, that
 
 :ref:`Array<class_Array>`\[:ref:`Tween<class_Tween>`\] **get_processed_tweens**\ (\ ) :ref:`🔗<class_SceneTree_method_get_processed_tweens>`
 
-Returns an :ref:`Array<class_Array>` of currently existing :ref:`Tween<class_Tween>`\ s in the tree, including paused tweens.
+回傳樹中目前存在的 :ref:`Tween<class_Tween>` 的 :ref:`Array<class_Array>`\ ，包括暫停的補間。
 
 .. rst-class:: classref-item-separator
 
@@ -760,7 +760,7 @@ Returns an :ref:`Array<class_Array>` of currently existing :ref:`Tween<class_Twe
 
 :ref:`bool<class_bool>` **has_group**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SceneTree_method_has_group>`
 
-Returns ``true`` if a node added to the given group ``name`` exists in the tree.
+如果樹中存在新增到給定組 ``name`` 的節點，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Returns ``true`` if a node added to the given group ``name`` exists in the tree.
 
 :ref:`bool<class_bool>` **is_accessibility_enabled**\ (\ ) |const| :ref:`🔗<class_SceneTree_method_is_accessibility_enabled>`
 
-Returns ``true`` if accessibility features are enabled, and accessibility information updates are actively processed.
+如果啟用了無障礙特性則回傳 ``true``\ ，此時會主動處理無障礙資訊的更新。
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ Returns ``true`` if accessibility features are enabled, and accessibility inform
 
 :ref:`bool<class_bool>` **is_accessibility_supported**\ (\ ) |const| :ref:`🔗<class_SceneTree_method_is_accessibility_supported>`
 
-Returns ``true`` if accessibility features are supported by the OS and enabled in project settings.
+如果作業系統支援無障礙特性且在專案設定中進行了啟用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -796,9 +796,9 @@ Returns ``true`` if accessibility features are supported by the OS and enabled i
 
 |void| **notify_group**\ (\ group\: :ref:`StringName<class_StringName>`, notification\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneTree_method_notify_group>`
 
-Calls :ref:`Object.notification()<class_Object_method_notification>` with the given ``notification`` to all nodes inside this tree added to the ``group``. See also :doc:`Godot notifications <../tutorials/best_practices/godot_notifications>` and :ref:`call_group()<class_SceneTree_method_call_group>` and :ref:`set_group()<class_SceneTree_method_set_group>`.
+在樹內新增到該 ``group`` 的所有節點上，使用給定 ``notification`` 呼叫 :ref:`Object.notification()<class_Object_method_notification>`\ 。另見 :doc:`Godot 通知 <../tutorials/best_practices/godot_notifications>`\ 、\ :ref:`call_group()<class_SceneTree_method_call_group>` 和 :ref:`set_group()<class_SceneTree_method_set_group>`\ 。
 
-\ **Note:** This method acts immediately on all selected nodes at once, which may cause stuttering in some performance-intensive situations.
+\ **注意：**\ 該方法立即作用於所有選定的節點，這可能會在某些效能密集型情況下導致卡頓。
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ Calls :ref:`Object.notification()<class_Object_method_notification>` with the gi
 
 |void| **notify_group_flags**\ (\ call_flags\: :ref:`int<class_int>`, group\: :ref:`StringName<class_StringName>`, notification\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneTree_method_notify_group_flags>`
 
-Calls :ref:`Object.notification()<class_Object_method_notification>` with the given ``notification`` to all nodes inside this tree added to the ``group``. Use ``call_flags`` to customize this method's behavior (see :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`).
+使用給定的 ``notification`` 對新增到 ``group`` 的該樹內的所有節點呼叫 :ref:`Object.notification()<class_Object_method_notification>` 。使用 ``call_flags`` 自訂該方法的行為（見 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -822,7 +822,7 @@ Calls :ref:`Object.notification()<class_Object_method_notification>` with the gi
 
 |void| **queue_delete**\ (\ obj\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_SceneTree_method_queue_delete>`
 
-Queues the given ``obj`` to be deleted, calling its :ref:`Object.free()<class_Object_method_free>` at the end of the current frame. This method is similar to :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+將要刪除的給定 ``obj`` 排隊，在目前影格末尾呼叫其 :ref:`Object.free()<class_Object_method_free>`\ 。該方法與 :ref:`Node.queue_free()<class_Node_method_queue_free>` 類似。
 
 .. rst-class:: classref-item-separator
 
@@ -834,11 +834,11 @@ Queues the given ``obj`` to be deleted, calling its :ref:`Object.free()<class_Ob
 
 |void| **quit**\ (\ exit_code\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SceneTree_method_quit>`
 
-Quits the application at the end of the current iteration, with the given ``exit_code``.
+在目前迭代結束時使用退出程式碼 ``exit_code`` 退出應用程式。
 
-By convention, an exit code of ``0`` indicates success, whereas any other exit code indicates an error. For portability reasons, it should be between ``0`` and ``125`` (inclusive).
+按照慣例，退出程式碼 ``0`` 表示成功，其他退出程式碼均表示出錯。出於可移植性考慮，退出程式碼應該在 ``0`` 和 ``125``\ （含）之間。
 
-\ **Note:** On iOS this method doesn't work. Instead, as recommended by the `iOS Human Interface Guidelines <https://developer.apple.com/library/archive/qa/qa1561/_index.html>`__, the user is expected to close apps via the Home button.
+\ **注意：**\ 這個方法在 iOS 上不起作用。根據 `《iOS 人機介面指南》 <https://developer.apple.com/library/archive/qa/qa1561/_index.html>`__ 中的建議，使用者應通過 Home 按鈕關閉應用程式。
 
 .. rst-class:: classref-item-separator
 
@@ -850,9 +850,9 @@ By convention, an exit code of ``0`` indicates success, whereas any other exit c
 
 :ref:`Error<enum_@GlobalScope_Error>` **reload_current_scene**\ (\ ) :ref:`🔗<class_SceneTree_method_reload_current_scene>`
 
-Reloads the currently active scene, replacing :ref:`current_scene<class_SceneTree_property_current_scene>` with a new instance of its original :ref:`PackedScene<class_PackedScene>`.
+重新載入目前活動的場景，將 :ref:`current_scene<class_SceneTree_property_current_scene>` 替換為其原始 :ref:`PackedScene<class_PackedScene>` 的新實例。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if no :ref:`current_scene<class_SceneTree_property_current_scene>` is defined, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if :ref:`current_scene<class_SceneTree_property_current_scene>` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果尚未定義 :ref:`current_scene<class_SceneTree_property_current_scene>`\ ，則回傳 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ，如果 :ref:`current_scene<class_SceneTree_property_current_scene>` 無法載入到 :ref:`PackedScene<class_PackedScene>` 中，則回傳 :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>`\ ，如果場景無法實例化，則回傳 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -864,11 +864,11 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 |void| **set_group**\ (\ group\: :ref:`StringName<class_StringName>`, property\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_SceneTree_method_set_group>`
 
-Sets the given ``property`` to ``value`` on all nodes inside this tree added to the given ``group``. Nodes that do not have the ``property`` are ignored. See also :ref:`call_group()<class_SceneTree_method_call_group>` and :ref:`notify_group()<class_SceneTree_method_notify_group>`.
+將該樹內被新增到給定 ``group`` 的所有節點上的給定 ``property`` 設定為 ``value``\ 。沒有 ``property`` 的節點將被忽略。另見 :ref:`call_group()<class_SceneTree_method_call_group>` 和 :ref:`notify_group()<class_SceneTree_method_notify_group>`\ 。
 
-\ **Note:** This method acts immediately on all selected nodes at once, which may cause stuttering in some performance-intensive situations.
+\ **注意：**\ 該方法立即作用於所有選定的節點上，這可能會在某些效能密集型的情況下導致卡頓。
 
-\ **Note:** In C#, ``property`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，在參照 Godot 內建屬性時，\ ``property`` 必須是 snake_case。最好使用 ``PropertyName`` 類中公開的名稱，以避免在每次呼叫時分配一個新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -880,9 +880,9 @@ Sets the given ``property`` to ``value`` on all nodes inside this tree added to 
 
 |void| **set_group_flags**\ (\ call_flags\: :ref:`int<class_int>`, group\: :ref:`StringName<class_StringName>`, property\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_SceneTree_method_set_group_flags>`
 
-Sets the given ``property`` to ``value`` on all nodes inside this tree added to the given ``group``. Nodes that do not have the ``property`` are ignored. Use ``call_flags`` to customize this method's behavior (see :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`).
+將該樹內被新增到給定 ``group`` 的所有節點上的給定 ``property`` 設定為 ``value``\ 。沒有 ``property`` 的節點將被忽略。使用 ``call_flags`` 自訂該方法的行為（請參閱 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>`\ ）。
 
-\ **Note:** In C#, ``property`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，在參照 Godot 內建方法時，\ ``property`` 必須是 snake_case。最好使用 ``SignalName`` 類中公開的名稱，以避免在每次呼叫時分配一個新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -894,11 +894,11 @@ Sets the given ``property`` to ``value`` on all nodes inside this tree added to 
 
 |void| **set_multiplayer**\ (\ multiplayer\: :ref:`MultiplayerAPI<class_MultiplayerAPI>`, root_path\: :ref:`NodePath<class_NodePath>` = NodePath("")\ ) :ref:`🔗<class_SceneTree_method_set_multiplayer>`
 
-Sets a custom :ref:`MultiplayerAPI<class_MultiplayerAPI>` with the given ``root_path`` (controlling also the relative subpaths), or override the default one if ``root_path`` is empty.
+用給定的 ``root_path`` 設定自訂的 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ （同時控制相對的子路徑），如果 ``root_path`` 為空，則會覆蓋預設值。
 
-\ **Note:** No :ref:`MultiplayerAPI<class_MultiplayerAPI>` must be configured for the subpath containing ``root_path``, nested custom multiplayers are not allowed. I.e. if one is configured for ``"/root/Foo"`` setting one for ``"/root/Foo/Bar"`` will cause an error.
+\ **注意：**\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 不能為包含 ``root_path`` 的子路徑設定，巢狀的自訂多人遊戲是不被允許的。例如，如果為 ``"/root/Foo"`` 設定了一項，則為 ``"/root/Foo/Bar"`` 設定一項將導致錯誤。
 
-\ **Note:** :ref:`set_multiplayer()<class_SceneTree_method_set_multiplayer>` should be called *before* the child nodes are ready at the given ``root_path``. If multiplayer nodes like :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` or :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` are added to the tree before the custom multiplayer API is set, they will not work.
+\ **注意：**\ :ref:`set_multiplayer()<class_SceneTree_method_set_multiplayer>` 應該在根路徑 ``root_path`` 下的子節點就緒\ *之前*\ 呼叫。如果在自訂多人 API 設定之前將 :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`\ 、\ :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 這樣的多人節點新增到樹中，這些節點將無法正常工作。
 
 .. rst-class:: classref-item-separator
 

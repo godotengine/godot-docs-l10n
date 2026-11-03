@@ -714,7 +714,7 @@ Las plantillas de exportación oficiales solo incluyen binarios ``universal``.
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+ID del equipo de Apple, una cadena única de 10 caracteres. Para encontrar tu ID de equipo, consulta la sección «Detalles de la membresía» en el panel de tu cuenta de desarrollador de Apple o la «Unidad organizativa» de tu certificado de firma de código. Consulta `Cómo encontrar tu ID de equipo <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ Habilita para permitir el acceso a los contactos en la libreta de direcciones de
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_dyld_environment_variables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_dyld_environment_variables>`
 
-Permite que la aplicación use variables de entorno del enlazador dinámico para inyectar código. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
+Permite que la aplicación utilice variables de entorno del enlazador dinámico para inyectar código. Si utilizas complementos con código nativo dinámico o que se modifica a sí mismo, habilita esta opción siguiendo la documentación del complemento. Véase `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Permite que la aplicación use variables de entorno del enlazador dinámico para
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_jit_code_execution** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_jit_code_execution>`
 
-Permite crear memoria escribible y ejecutable para código JIT. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
+Permite crear memoria con permisos de escritura y ejecución para código JIT. Si utilizas complementos con código nativo dinámico o que se modifica a sí mismo, habilita esta opción siguiendo la documentación del complemento. Véase `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Permite crear memoria escribible y ejecutable para código JIT. Si estás usando
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_unsigned_executable_memory** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_unsigned_executable_memory>`
 
-Permite crear memoria escribible y ejecutable sin restricciones JIT. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
+Permite crear memoria con permisos de escritura y ejecución sin las restricciones de JIT. Si utilizas complementos con código nativo dinámico o que se modifica a sí mismo, habilita esta opción siguiendo la documentación del complemento. Véase `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ You can temporarily enable this entitlement to use native debugger (GDB, LLDB) w
 
 :ref:`bool<class_bool>` **codesign/entitlements/disable_library_validation** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/disable_library_validation>`
 
-Permite a la aplicación cargar bibliotecas y frameworks arbitrarios (no firmados con el mismo ID de equipo que el ejecutable principal o por Apple). Habilítalo si estás usando complementos GDExtension o firma ad-hoc, o si quieres soportar complementos externos proporcionados por el usuario. Véase `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
+Permite que la aplicación cargue librerías y frameworks arbitrarios (que no estén firmados con el mismo ID de equipo que el ejecutable principal ni por Apple). Habilita esta opción si utilizas complementos de GDExtension, firmas ad hoc o quieres admitir complementos externos proporcionados por los usuarios. Véase `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ A message displayed when requesting access to the device's camera (in English).
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description_localized>`
 
-A message displayed when requesting access to the device's camera (localized).
+Un mensaje que se muestra al solicitar acceso a la cámara del dispositivo (localizado).
 
 .. rst-class:: classref-item-separator
 

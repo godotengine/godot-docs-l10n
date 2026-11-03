@@ -12,7 +12,7 @@ Callable
 說明
 ----
 
-**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
+**Callable** 是一種內建的 :ref:`Variant<class_Variant>` 型別，它代表了一個函式。它可以是 :ref:`Object<class_Object>` 實例中的一個方法，也可以是用於不同目的的自訂可呼叫物件（詳見 :ref:`is_custom()<class_Callable_method_is_custom>`\ ）。和所有的 :ref:`Variant<class_Variant>` 型別一樣，它可以被儲存在變數中，也可以作為參數傳遞給其他函式。它最常見的用途就是用於訊號（signal）的回呼。
 
 
 .. tabs::
@@ -30,7 +30,7 @@ Callable
 
  .. code-tab:: csharp
 
-    // Default parameter values are not supported.
+    // 不支援預設參數值。
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -38,16 +38,16 @@ Callable
 
     public void Test()
     {
-        // Invalid calls fail silently.
+        // 無效的呼叫會靜默失敗。
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
+        callable.Call("hello", "world"); // 不支援預設參數值，應該有 3 個參數。
         callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
-        callable.Call("invalid"); // Invalid call, should have 3 arguments.
+        callable.Call("invalid"); // 無效的呼叫，應該有 3 個參數。
     }
 
 
 
-In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
+在 GDScript 中，你可以在一個方法內部建立 Lambda 函式。Lambda 函式是一種自訂的可呼叫物件（Callable），它並不綁定在某個具體的 :ref:`Object<class_Object>`\ （物件）實例上。此外，你還可以選擇給 Lambda 函式起個名字。如果起了名字，這個名字將會在除錯器中顯示，或者在呼叫 :ref:`get_method()<class_Callable_method_get_method>` 方法時顯示出來。
 
 ::
 
@@ -55,13 +55,13 @@ In GDScript, it's possible to create lambda functions within a method. Lambda fu
         var my_lambda = func (message):
             print(message)
 
-        # Prints "Hello everyone!"
+        # 輸出 "Hello everyone!"
         my_lambda.call("Hello everyone!")
 
-        # Prints "Attack!", when the button_pressed signal is emitted.
+        # 當 button_pressed 訊號被觸發時，會輸出出 "Attack!"。
         button_pressed.connect(func(): print("Attack!"))
 
-In GDScript, you can access methods and global functions as **Callable**\ s:
+在 GDScript 中，你可以把方法和全域函式當作 **Callable**\ （可呼叫物件）來存取：
 
 ::
 
@@ -69,19 +69,19 @@ In GDScript, you can access methods and global functions as **Callable**\ s:
     tween.tween_callback(array.clear)  # Methods of built-in types.
     tween.tween_callback(print.bind("Test"))  # Global functions.
 
-\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
+\ **注意：** 由於與鍵（keys）存在歧義，\ :ref:`Dictionary<class_Dictionary>` 不支援上述操作。
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # This will not work, `clear` is treated as a key.
+    # 這樣是行不通的，clear 會被當成一個鍵（key）。
     tween.tween_callback(dictionary.clear)
 
-    # This will work.
+    # 這樣是可以的
     tween.tween_callback(Callable.create(dictionary, "clear"))
 
-\ **Note:** In a boolean context, a callable will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Callable_method_is_null>`). Otherwise, a callable will always evaluate to ``true``.
+\ **注意：** 在布林（boolean）環境下，如果一個 callable 是空的（null），它會被判定為 ``false``\ （詳見 :ref:`is_null()<class_Callable_method_is_null>`\ ）。除此之外，callable 永遠會被判定為 ``true``\ 。
 
 .. note::
 
@@ -204,9 +204,9 @@ In GDScript, you can access methods and global functions as **Callable**\ s:
 
 :ref:`Callable<class_Callable>` **Callable**\ (\ object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`\ )
 
-Creates a new **Callable** for the method named ``method`` in the specified ``object``.
+建立新的 **Callable**\ ，使用指定物件 ``object`` 中名為 ``method`` 的方法。
 
-\ **Note:** For methods of built-in :ref:`Variant<class_Variant>` types, use :ref:`create()<class_Callable_method_create>` instead.
+\ **注意：**\ 對於內建 :ref:`Variant<class_Variant>` 型別的方法，請改用 :ref:`create()<class_Callable_method_create>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -263,7 +263,7 @@ Creates a new **Callable** for the method named ``method`` in the specified ``ob
 
 |void| **call_deferred**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_call_deferred>`
 
-Calls the method represented by this **Callable** in deferred mode, i.e. at the end of the current frame. Arguments can be passed and should match the method's signature.
+使用延遲模式呼叫該 **Callable** 所代表的方法，即在目前影格的末尾呼叫。可以傳遞參數，必須與該方法的簽名相匹配。
 
 
 .. tabs::
@@ -282,9 +282,9 @@ Calls the method represented by this **Callable** in deferred mode, i.e. at the 
 
 
 
-\ **Note:** Deferred calls are processed at idle time. Idle time happens mainly at the end of process and physics frames. In it, deferred calls will be run until there are none left, which means you can defer calls from other deferred calls and they'll still be run in the current idle time cycle. This means you should not call a method deferred from itself (or from a method called by it), as this causes infinite recursion the same way as if you had called the method directly.
+\ **注意：**\ 延遲呼叫會在空閒時間處理。空閒時間主要發生在處理程序和物理影格的末尾。延遲呼叫將在其中一直執行，直到沒有呼叫剩餘為止，這意味著你可以從其他延遲呼叫中使用延遲呼叫，並且它們仍將在目前空閒時間週期中執行。這同樣意味著你不應從延遲呼叫的方法（或從其呼叫的方法）中延遲呼叫其自身，因為這會導致無限遞歸，就像你直接呼叫該方法一樣。
 
-See also :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
+另見 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -308,9 +308,9 @@ See also :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
 
 :ref:`Callable<class_Callable>` **create**\ (\ variant\: :ref:`Variant<class_Variant>`, method\: :ref:`StringName<class_StringName>`\ ) |static| :ref:`🔗<class_Callable_method_create>`
 
-Creates a new **Callable** for the method named ``method`` in the specified ``variant``. To represent a method of a built-in :ref:`Variant<class_Variant>` type, a custom callable is used (see :ref:`is_custom()<class_Callable_method_is_custom>`). If ``variant`` is :ref:`Object<class_Object>`, then a standard callable will be created instead.
+為指定的 ``variant`` 中名為 ``method`` 的方法建立一個新的 **Callable**\ 。為了表示內建 :ref:`Variant<class_Variant>` 型別的方法，使用自訂可呼叫函式（請參閱 :ref:`is_custom()<class_Callable_method_is_custom>`\ ）。如果 ``variant`` 是 :ref:`Object<class_Object>`\ ，則將改為建立一個標準的可呼叫物件。
 
-\ **Note:** This method is always necessary for the :ref:`Dictionary<class_Dictionary>` type, as property syntax is used to access its entries. You may also use this method when ``variant``'s type is not known in advance (for polymorphism).
+\ **注意：**\ 該方法對於 :ref:`Dictionary<class_Dictionary>` 型別始終是必需的，因為屬性語法被用於存取其條目。當事先未知 ``variant`` 的型別時（對於多態），你也可以使用該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Creates a new **Callable** for the method named ``method`` in the specified ``va
 
 :ref:`int<class_int>` **get_argument_count**\ (\ ) |const| :ref:`🔗<class_Callable_method_get_argument_count>`
 
-Returns the total number of arguments this **Callable** should take, including optional arguments. This means that any arguments bound with :ref:`bind()<class_Callable_method_bind>` are *subtracted* from the result, and any arguments unbound with :ref:`unbind()<class_Callable_method_unbind>` are *added* to the result.
+回傳該 **Callable** 應接受的所有參數的數量，包括可選參數。也就是說，結果中會\ *減去*\ 使用 :ref:`bind()<class_Callable_method_bind>` 綁定的參數、\ *加上*\ 使用 :ref:`unbind()<class_Callable_method_unbind>` 解除綁定的參數。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Returns the total number of arguments this **Callable** should take, including o
 
 :ref:`Array<class_Array>` **get_bound_arguments**\ (\ ) |const| :ref:`🔗<class_Callable_method_get_bound_arguments>`
 
-Returns the array of arguments bound via successive :ref:`bind()<class_Callable_method_bind>` or :ref:`unbind()<class_Callable_method_unbind>` calls. These arguments will be added *after* the arguments passed to the call, from which :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` arguments on the right have been previously excluded.
+回傳一個參數陣列，其元素通過連續的\ :ref:`bind()<class_Callable_method_bind>` or :ref:`unbind()<class_Callable_method_unbind>`\ 呼叫綁定。這些參數會被追加到傳給該呼叫的參數\ *後面*\ ，而位於右側的\ :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`\ 的參數已被預先從此呼叫中排除。
 
 ::
 
@@ -354,9 +354,9 @@ Returns the array of arguments bound via successive :ref:`bind()<class_Callable_
 
 :ref:`int<class_int>` **get_bound_arguments_count**\ (\ ) |const| :ref:`🔗<class_Callable_method_get_bound_arguments_count>`
 
-Returns the total amount of arguments bound via successive :ref:`bind()<class_Callable_method_bind>` or :ref:`unbind()<class_Callable_method_unbind>` calls. This is the same as the size of the array returned by :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>`. See :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>` for details.
+回傳通過連續的\ :ref:`bind()<class_Callable_method_bind>`\ 或\ :ref:`unbind()<class_Callable_method_unbind>`\ 呼叫綁定的參數總數。此總數與\ :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>`\ 回傳的陣列大小是一致的。詳情參見\ :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>`\ 。
 
-\ **Note:** The :ref:`get_bound_arguments_count()<class_Callable_method_get_bound_arguments_count>` and :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` methods can both return positive values.
+\ **注意：**\ 方法\ :ref:`get_bound_arguments_count()<class_Callable_method_get_bound_arguments_count>`\ 和\ :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`\ 都回傳正值。
 
 .. rst-class:: classref-item-separator
 
@@ -404,9 +404,9 @@ Returns the total amount of arguments bound via successive :ref:`bind()<class_Ca
 
 :ref:`int<class_int>` **get_unbound_arguments_count**\ (\ ) |const| :ref:`🔗<class_Callable_method_get_unbound_arguments_count>`
 
-Returns the total amount of arguments unbound via successive :ref:`bind()<class_Callable_method_bind>` or :ref:`unbind()<class_Callable_method_unbind>` calls. See :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>` for details.
+回傳通過連續呼叫 :ref:`bind()<class_Callable_method_bind>` 和 :ref:`unbind()<class_Callable_method_unbind>` 解綁的參數總數。詳見 :ref:`get_bound_arguments()<class_Callable_method_get_bound_arguments>`\ 。
 
-\ **Note:** The :ref:`get_bound_arguments_count()<class_Callable_method_get_bound_arguments_count>` and :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` methods can both return positive values.
+\ **注意：**\ :ref:`get_bound_arguments_count()<class_Callable_method_get_bound_arguments_count>` 和 :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` 方法都可以回傳正值。
 
 .. rst-class:: classref-item-separator
 
@@ -432,15 +432,15 @@ Returns the total amount of arguments unbound via successive :ref:`bind()<class_
 
 :ref:`bool<class_bool>` **is_custom**\ (\ ) |const| :ref:`🔗<class_Callable_method_is_custom>`
 
-Returns ``true`` if this **Callable** is a custom callable. Custom callables are used:
+如果該 **Callable** 是自訂可呼叫物件，則回傳 ``true``\ 。使用自訂可呼叫物件：
 
-- for binding/unbinding arguments (see :ref:`bind()<class_Callable_method_bind>` and :ref:`unbind()<class_Callable_method_unbind>`);
+- 用於綁定/解除綁定參數（參見 :ref:`bind()<class_Callable_method_bind>` 和 :ref:`unbind()<class_Callable_method_unbind>`\ ）；
 
-- for representing methods of built-in :ref:`Variant<class_Variant>` types (see :ref:`create()<class_Callable_method_create>`);
+- 用於表示內建 :ref:`Variant<class_Variant>` 型別的方法（參見 :ref:`create()<class_Callable_method_create>`\ ）；
 
-- for representing global, lambda, and RPC functions in GDScript;
+- 用於在 GDScript 中表示全域、lambda 和 RPC 函式；
 
-- for other purposes in the core, GDExtension, and C#.
+- 用於核心、GDExtension 和 C# 中的其他目的。
 
 .. rst-class:: classref-item-separator
 
@@ -452,9 +452,9 @@ Returns ``true`` if this **Callable** is a custom callable. Custom callables are
 
 :ref:`bool<class_bool>` **is_null**\ (\ ) |const| :ref:`🔗<class_Callable_method_is_null>`
 
-Returns ``true`` if this **Callable** has no target to call the method on. Equivalent to ``callable == Callable()``.
+如果這個 **Callable** 沒有可以呼叫方法的目標，則回傳 ``true``\ 。等價於 ``callable == Callable()``\ 。
 
-\ **Note:** This is *not* the same as ``not is_valid()`` and using ``not is_null()`` will *not* guarantee that this callable can be called. Use :ref:`is_valid()<class_Callable_method_is_valid>` instead.
+\ **注意：**\ 這與 ``not is_valid()`` *不同*\ ，使用 ``not is_null()`` *無法*\ 保證能夠呼叫該可呼叫物件。請改用 :ref:`is_valid()<class_Callable_method_is_valid>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Returns ``true`` if this **Callable** has no target to call the method on. Equiv
 
 |void| **rpc_id**\ (\ peer_id\: :ref:`int<class_int>`, ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_rpc_id>`
 
-在指定的對等體 ID（請參閱多人遊戲文件）上執行 RPC（Remote Procedure Call，遠程程式呼叫）。用於多人遊戲，一般不可用，除非所呼叫的函式有 *RPC* 標記（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支援的方法上呼叫該方法會導致出錯。見 :ref:`Node.rpc_id()<class_Node_method_rpc_id>`\ 。
+在指定的對等體 ID（請參閱多人遊戲文件）上執行 RPC（Remote Procedure Call，遠端程式呼叫）。用於多人遊戲，一般不可用，除非所呼叫的函式有 *RPC* 標記（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支援的方法上呼叫該方法會導致出錯。見 :ref:`Node.rpc_id()<class_Node_method_rpc_id>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Returns ``true`` if this **Callable** has no target to call the method on. Equiv
 
 :ref:`Callable<class_Callable>` **unbind**\ (\ argcount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Callable_method_unbind>`
 
-返回這個 **Callable** 的副本，解綁了一些參數。換句話說，呼叫新的可呼叫體時，用戶提供的最後幾個參數會被忽略，忽略幾個由 ``argcount`` 決定。剩餘的參數會被傳遞給該可呼叫體。這樣傳入的參數就能夠比原本可呼叫體所能處理的參數要多，例如帶有固定數量參數的訊號。另見 :ref:`bind()<class_Callable_method_bind>`\ 。
+返回這個 **Callable** 的副本，解綁了一些參數。換句話說，呼叫新的可呼叫體時，使用者提供的最後幾個參數會被忽略，忽略幾個由 ``argcount`` 決定。剩餘的參數會被傳遞給該可呼叫體。這樣傳入的參數就能夠比原本可呼叫體所能處理的參數要多，例如帶有固定數量參數的訊號。另見 :ref:`bind()<class_Callable_method_bind>`\ 。
 
 \ **注意：**\ 這個方法與其他類似方法鏈式呼叫時，參數列表的修改順序是從右至左的。
 

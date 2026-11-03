@@ -14,17 +14,17 @@ Une lumière de zone, comme un tube de néon ou un écran.
 Description
 -----------
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+Une lumière de zone est un type de :ref:`Light3D<class_Light3D>` qui émet de la lumière dans une zone en deux dimensions, en une forme de rectangle. La lumière est atténuée avec la distance. Cette atténuation peut être configurée en changeant les paramètres d'énergie, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, et :ref:`area_range<class_AreaLight3D_property_area_range>`.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+La lumière est émise dans la direction Z de la base globale du nœud. Pour une lumière non-pivotée, cela signifie que la lumière est émise vers l'avant, illuminant la face avant d'un modèle 3D (voir :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` et :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+Les lumières de zone peuvent projeter des ombres douces, utilisant PCSS, que vous pouvez contrôler en ajustant le paramètres de taille. Le plan d'ombre se dessine à partir du centre de la lumière.
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **Note :** Les lumières de zone ont un maintient limité sur le mobile et les rendus compatibles. Pour les rendus mobiles, la taille de la pénombre ne varie pas comme il le devrait avec PCSS. Pour la compatibilité les lumières ne peuvent pas produire d'ombre.
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **Avertissement :** Les ombres projeté par une lumière de zone peuvent sembler incorrect si l'objet projetant des ombres n'a pas assez de sous-divisions et qu'il est très proche d'une lumière de zone. Ceci est la même limitation que celui du mode d'ombre "Dual Paraboloid" dans :ref:`OmniLight3D<class_OmniLight3D>`.
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **Performance :** Les lumières de zone sont plus coûteuse sur le GPU comparé aux lumières omnidirectionnelles et de spot. Dans Forward+, il existe un coût GPU additionnel sur *tout* les objets rendus dès qu'une lumière de zone est présente dans le vue du frustum (dû à la nature de l'éclairage groupé). Envisagez de les utiliser seulement pour des cinématiques ou lorsque vous ciblez des appareils haut de gamme.
 
 .. rst-class:: classref-introduction-group
 

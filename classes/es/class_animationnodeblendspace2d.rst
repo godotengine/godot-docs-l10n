@@ -179,7 +179,7 @@ Las animaciones inactivas están congeladas y no avanzan.
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_INDEPENDENT** = ``1``
 
-Las animaciones inactivas avanzan con un peso de ``0[code]. Esto es equivalente al comportamiento anterior de [code]sync = true``.
+Las animaciones inactivas avanzan con un peso de ``0``. Esto es equivalente al comportamiento anterior de ``sync = true``.
 
 .. _class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_CYCLIC_MUTABLE:
 
@@ -342,7 +342,7 @@ Si ``true``, el sync mode está habilitado (equivalente a :ref:`SYNC_MODE_INDEPE
 - |void| **set_sync_mode**\ (\ value\: :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>`\ )
 - :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **get_sync_mode**\ (\ )
 
-Controls how animations are synced when blended. See :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` for available options.
+Controla cómo se sincronizan las animaciones al mezclarse. Véase StretchMode para ver las opciones disponibles.
 
 .. rst-class:: classref-item-separator
 
@@ -393,9 +393,9 @@ Descripciones de Métodos
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1, name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-Adds a new point with ``name`` that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Agrega un nuevo punto con ``name`` que representa un ``node`` en la posición definida por ``pos``. Puede insertarlo en un índice específico usando el argumento ``at_index``. Si usa el valor predeterminado para ``at_index``, el punto se inserta al final de la matriz de puntos de mezcla.
 
-\ **Note:** If no name is provided, safe index is used as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+\ **Nota:** Si no se proporciona ningún nombre, se utiliza el índice seguro como referencia. En el futuro, los nombres vacíos quedarán obsoletos, por lo que se recomienda proporcionar un nombre explícitamente.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Crea un nuevo triángulo usando tres puntos ``x``, ``y``, and ``z``. Los triáng
 
 :ref:`int<class_int>` **find_blend_point_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_find_blend_point_by_name>`
 
-Returns the index of the blend point with the given ``name``. Returns ``-1`` if no blend point with that name is found.
+Devuelve el índice del punto de mezcla con el ``name`` indicado. Devuelve ``-1`` si no existe ningún punto de mezcla con ese nombre.
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Devuelve el número de puntos en el espacio de mezcla.
 
 :ref:`StringName<class_StringName>` **get_blend_point_name**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_blend_point_name>`
 
-Returns the name of the blend point at index ``point``.
+Devuelve la posición del punto de mezcla en el índice ``point``.
 
 .. rst-class:: classref-item-separator
 

@@ -7,9 +7,9 @@ AudioEffectEQ6
 
 **繼承：** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a 6-band equalizer audio effect to an audio bus.
+向音訊總線新增一個 6 段均衡器音訊效果。
 
-Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be modulated between -60/+24 dB.
+允許控制 32 Hz 到 10000 Hz 的頻率。每個頻率可在 -60 dB 到 +24 dB 之間進行調制。
 
 .. rst-class:: classref-introduction-group
 
@@ -39,7 +39,7 @@ Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,7 +7,7 @@ ScriptCreateDialog
 
 **繼承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot 編輯器用於建立新 :ref:`Script<class_Script>` 檔的彈出對話方塊。
+Godot 編輯器用於建立新 :ref:`Script<class_Script>` 檔的彈出對話框。
 
 .. rst-class:: classref-introduction-group
 
@@ -82,7 +82,7 @@ Godot 編輯器用於建立新 :ref:`Script<class_Script>` 檔的彈出對話方
 
 **script_created**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptCreateDialog_signal_script_created>`
 
-當使用者點擊確定按鈕時發出。
+當使用者點選確定按鈕時發出。
 
 .. rst-class:: classref-section-separator
 

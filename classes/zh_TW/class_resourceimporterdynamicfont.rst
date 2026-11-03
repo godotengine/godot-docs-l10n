@@ -7,14 +7,14 @@ ResourceImporterDynamicFont
 
 **繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-匯入 TTF、TTC、OTF、OTC、WOFF 或 WOFF2 字型檔案，用於適應任何大小的字形算繪。
+匯入 TTF、TTC、OTF、OTC、WOFF 或 WOFF2 字型檔案，用於適應任何大小的字形渲染。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-與點陣字形不同，動態字形可以調整為任意大小並且看起來仍然清晰。動態字形還可以選擇支援MSDF 字形算繪，這允許運作時比例更改而無需重新光柵化成本。
+與點陣字形不同，動態字形可以調整為任意大小並且看起來仍然清晰。動態字形還可以選擇支援MSDF 字形渲染，這允許運作時比例更改而無需重新光柵化成本。
 
 雖然 WOFF（尤其是 WOFF2）往往會產生較小的檔案大小，但不存在普遍「更好」的字形格式。在大多數情況下，建議使用字形開發人員網站上提供的字形格式。
 
@@ -104,13 +104,13 @@ ResourceImporterDynamicFont
 
 :ref:`int<class_int>` **antialiasing** = ``1`` :ref:`🔗<class_ResourceImporterDynamicFont_property_antialiasing>`
 
-要使用的字型抗鋸齒方法。
+要使用的字型反鋸齒方法。
 
-\ **禁用：**\ 最適合像素藝術字形，儘管如果字形檔案良好的話，您沒\ *有*\ 更改預設\ **灰度**\ 的抗鋸齒效果-建立並且字形以其預期大小的整數倍使用。如果像素藝術字形在其預期大小下外觀不佳，請嘗試將 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 設定為 **Disabled**\ 。
+\ **停用：**\ 最適合像素藝術字形，儘管如果字形檔案良好的話，您沒\ *有*\ 更改預設\ **灰度**\ 的反鋸齒效果-建立並且字形以其預期大小的整數倍使用。如果像素藝術字形在其預期大小下外觀不佳，請嘗試將 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 設定為 **Disabled**\ 。
 
-\ **灰階：**\ 使用灰階抗鋸齒。這是 macOS、Android 和 iOS 上的作業系統所使用的方法。
+\ **灰階：**\ 使用灰階反鋸齒。這是 macOS、Android 和 iOS 上的作業系統所使用的方法。
 
-\ **LCD 子像素：** 使用子像素模式的抗鋸齒功能使 LCD 顯示器上的字形更加清晰。這是 Windows 和大多數 Linux 發行版上的作業系統所使用的方法。缺點是這可能會在邊緣引入“邊緣”，尤其是在不使用標準 RGB 子像素的顯示技術（例如 OLED 顯示器）上。 LCD 子像素佈局由 :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>` 全域控制，這也允許退回到灰階抗鋸齒。
+\ **LCD 子像素：** 使用子像素模式的反鋸齒功能使 LCD 顯示器上的字形更加清晰。這是 Windows 和大多數 Linux 發行版上的作業系統所使用的方法。缺點是這可能會在邊緣引入“邊緣”，尤其是在不使用標準 RGB 子像素的顯示技術（例如 OLED 顯示器）上。 LCD 子像素佈局由 :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>` 全域控制，這也允許退回到灰階反鋸齒。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ ResourceImporterDynamicFont
 
 :ref:`bool<class_bool>` **disable_embedded_bitmaps** = ``true`` :ref:`🔗<class_ResourceImporterDynamicFont_property_disable_embedded_bitmaps>`
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+如果為 ``true``\ ，則會停用內嵌字型點陣圖的載入（僅包含點陣圖的字型以及彩色字型會停用該屬性）。
 
 .. rst-class:: classref-item-separator
 
@@ -170,9 +170,9 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 
 :ref:`bool<class_bool>` **generate_mipmaps** = ``false`` :ref:`🔗<class_ResourceImporterDynamicFont_property_generate_mipmaps>`
 
-If ``true``, this font will have mipmaps generated. This prevents text from looking grainy when a :ref:`Control<class_Control>` is scaled down, or when a :ref:`Label3D<class_Label3D>` is viewed from a long distance (if :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` is set to a mode that displays mipmaps).
+如果為 ``true``\ ，則該字型將生成 mipmap。這樣可以防止文字在 :ref:`Control<class_Control>` 被按比例縮小或從遠距離查看 :ref:`Label3D<class_Label3D>` 時看起來有顆粒感（如果 :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` 被設定為顯示 mipmap 的模式）。
 
-Enabling :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` increases font generation time and memory usage. Only enable this setting if you actually need it.
+啟用 :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` 會增加字型生成時間和記憶體使用量。請只在你確實需要時才啟用此設定。
 
 .. rst-class:: classref-item-separator
 
@@ -184,17 +184,17 @@ Enabling :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_gener
 
 :ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+要使用的提示模式。這決定了在光柵化字型時，字形邊緣應該以多大的力度去“吸附”對齊到像素點上。根據個人偏好，你可能會更喜歡某一種提示模式。除了 **無（None）** 以外的提示模式，只有在字型本身包含提示資料時才有效（參見 :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`\ ）。
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **無（None）：** 外觀最平滑，但可能會導致字型在小字號下看起來有些模糊。
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **輕微（Light）：** 僅在 Y 軸（垂直方向）上將字形邊緣吸附到像素點，呈現銳利的效果。
 
-\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **正常（Normal）：** 在 X 軸和 Y 軸（水平和垂直方向）上都將字形邊緣吸附到像素點，呈現最銳利的效果。
 
-\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+\ **輕微（像素字型除外）：** 對於像素風格的字型（每個字形的輪廓僅包含水平和垂直的直線），此選項為 **停用**\ ；對於其他字型，則使用 **輕微** 模式。
 
-\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
+\ **正常（像素字型除外）：** 對於像素風格的字型（每個字形的輪廓僅包含水平和垂直的直線），此選項為 **停用**\ ；對於其他字型，則使用 **正常** 模式。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ The hinting mode to use. This controls how aggressively glyph edges should be sn
 
 :ref:`bool<class_bool>` **keep_rounding_remainders** = ``true`` :ref:`🔗<class_ResourceImporterDynamicFont_property_keep_rounding_remainders>`
 
-If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
+如果設定為 ``true``\ ，則將字形與像素邊界對齊時會累積捨入余數，確保字形的分布更加均勻。如果啟用了次像素定位則該設定無效。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ If set to ``true``, when aligning glyphs to the pixel boundaries rounding remain
 
 :ref:`bool<class_bool>` **modulate_color_glyphs** = ``false`` :ref:`🔗<class_ResourceImporterDynamicFont_property_modulate_color_glyphs>`
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+如果設為 ``true``\ ，則繪製彩色字形時會應用顏色調制，否則只會對灰度字形應用。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 
 :ref:`int<class_int>` **msdf_size** = ``48`` :ref:`🔗<class_ResourceImporterDynamicFont_property_msdf_size>`
 
-用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但算繪速度較慢並且需要更多記憶體。只有當注意到字形算繪中明顯缺乏精度時，才增加該屬性的值。
+用於生成 MSDF 紋理的源字型大小。較高的值允許更高的精度，但渲染速度較慢並且需要更多記憶體。只有當注意到字形渲染中明顯缺乏精度時，才增加該屬性的值。僅在 :ref:`multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -266,9 +266,9 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 
 :ref:`bool<class_bool>` **multichannel_signed_distance_field** = ``false`` :ref:`🔗<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`
 
-If set to ``true``, the font will use multichannel signed distance field (MSDF) for crisp rendering at any size. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for :ref:`Control<class_Control>`\ s that are scaled down (or for :ref:`Label3D<class_Label3D>`\ s viewed from a long distance).
+如果設定為 ``true``\ ，字型將使用多通道帶符號距離場（MSDF），任何尺寸都能夠進行清晰的渲染。由於這種方法不需要在每次字型大小更改時都對字型進行光柵化，因此可以即時調整字型大小，不會造成任何效能損失。對於按比例縮小的 :ref:`Control<class_Control>`\ （或從遠距離查看的 :ref:`Label3D<class_Label3D>`\ ），文字也不會看起來有顆粒感。
 
-MSDF font rendering can be combined with :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` to further improve font rendering quality when scaled down.
+MSDF 字型渲染可以與 :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` 結合使用，從而進一步提高縮小時的字型渲染品質。
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ OpenType 功能可啟用、停用此字型或設定此字型的值。這可用�
 
 :ref:`float<class_float>` **oversampling** = ``0.0`` :ref:`🔗<class_ResourceImporterDynamicFont_property_oversampling>`
 
-If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods.
+如果設為正數，則會覆蓋使用該字型的視埠的過取樣係數。見 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。該值不會覆蓋 ``draw_*`` 方法的 ``oversampling`` 參數。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ If set to a positive value, overrides the oversampling factor of the viewport th
 
 :ref:`Array<class_Array>` **preload** = ``[]`` :ref:`🔗<class_ResourceImporterDynamicFont_property_preload>`
 
-要預先算繪的字形範圍。這可以避免在遊戲過程中需要算繪新角色時出現卡頓，特別是在啟用\ :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 的情況下。使用預先載入的缺點是初始專案載入時間會增加，記憶體使用量也會增加。
+要預先渲染的字形範圍。這可以避免在遊戲過程中需要渲染新角色時出現卡頓，特別是在啟用\ :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 的情況下。使用預先載入的缺點是初始專案載入時間會增加，記憶體使用量也會增加。
 
 .. rst-class:: classref-item-separator
 
@@ -328,17 +328,17 @@ If set to a positive value, overrides the oversampling factor of the viewport th
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
+亞像素定位可以改善字型的渲染外觀，尤其是在字號較小的時候。缺點是它會增加字型初次渲染所需的時間，這可能會在遊戲中導致卡頓，特別是當它被用於大字號字型時。對於具有像素畫風格的字型，此選項應設定為 **停用（Disabled）**\ 。
 
-\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
+\ **停用（Disabled）：** 不使用亞像素定位。品質最低，但渲染速度最快。
 
-\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
+\ **自動（Auto）：** 僅在小字號時使用亞像素定位（具體採用的品質會根據字號大小而變化）。大字號字型將不會使用亞像素定位。這是在效能和畫質之間一個很好的折中方案。
 
-\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
+\ **二分之一像素（One Half of a Pixel）：** 無論字號大小，始終執行中等精度的亞像素定位。品質較高，渲染較慢。
 
-\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+\ **四分之一像素（One Quarter of a Pixel）：** 無論字號大小，始終執行高精度的亞像素定位。品質最高，渲染最慢。
 
-\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
+\ **自動（像素字型除外）（Auto (Except Pixel Fonts)）：** 對於像素風格的字型（每個字形的輪廓僅包含水平和垂直的直線），使用 **停用**\ ；對於其他字型，則使用 **自動**\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

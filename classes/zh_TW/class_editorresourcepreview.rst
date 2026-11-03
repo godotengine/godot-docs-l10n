@@ -94,9 +94,9 @@ EditorResourcePreview
 
 |void| **queue_edited_resource_preview**\ (\ resource\: :ref:`Resource<class_Resource>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_edited_resource_preview>`
 
-Queue the ``resource`` being edited for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+將正在編輯的 ``resource`` 加入預覽佇列。預覽就緒後將呼叫 ``receiver`` 的 ``receiver_func``\ 。\ ``receiver_func`` 必須接受以下四個參數：\ :ref:`String<class_String>` path、\ :ref:`Texture2D<class_Texture2D>` preview、\ :ref:`Texture2D<class_Texture2D>` thumbnail_preview、\ :ref:`Variant<class_Variant>` userdata。\ ``userdata`` 可以是任何內容，會在呼叫 ``receiver_func`` 時回傳。
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **注意：**\ 無法建立預覽時仍會呼叫 ``receiver_func``\ ，但預覽將為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -108,9 +108,9 @@ Queue the ``resource`` being edited for preview. Once the preview is ready, the 
 
 |void| **queue_resource_preview**\ (\ path\: :ref:`String<class_String>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_resource_preview>`
 
-Queue a resource file located at ``path`` for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+將位於 ``path`` 的資源檔案加入預覽佇列。預覽就緒後將呼叫 ``receiver`` 的 ``receiver_func``\ 。\ ``receiver_func`` 必須接受以下四個參數：\ :ref:`String<class_String>` path、\ :ref:`Texture2D<class_Texture2D>` preview、\ :ref:`Texture2D<class_Texture2D>` thumbnail_preview、\ :ref:`Variant<class_Variant>` userdata。\ ``userdata`` 可以是任何內容，會在呼叫 ``receiver_func`` 時回傳。
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **注意：**\ 無法建立預覽時仍會呼叫 ``receiver_func``\ ，但預覽將為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -99,7 +99,7 @@ Bone2D
 
 |void| **apply_rest**\ (\ ) :ref:`🔗<class_Bone2D_method_apply_rest>`
 
-Resets the bone to the rest pose. This is equivalent to setting :ref:`Node2D.transform<class_Node2D_property_transform>` to :ref:`rest<class_Bone2D_property_rest>`.
+將骨骼重設為放鬆姿勢。相當於將 :ref:`Node2D.transform<class_Node2D_property_transform>` 設定為 :ref:`rest<class_Bone2D_property_rest>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Resets the bone to the rest pose. This is equivalent to setting :ref:`Node2D.tra
 
 :ref:`Transform2D<class_Transform2D>` **get_skeleton_rest**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_skeleton_rest>`
 
-Returns the node's :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>` if it doesn't have a parent, or its rest pose relative to its parent.
+如果節點沒有父節點，回傳節點的 :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>`\ ，或者回傳它相對於父節點的放鬆姿勢。
 
 .. rst-class:: classref-item-separator
 

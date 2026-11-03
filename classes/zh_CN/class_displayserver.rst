@@ -6114,11 +6114,9 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`float<class_float>` **screen_get_max_scale**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_max_scale>`
 
-返回所有屏幕的最大缩放系数。
+Returns the greatest scale factor of all screens. See also :ref:`screen_get_scale()<class_DisplayServer_method_screen_get_scale>`.
 
-\ **注意：**\ 在 macOS 上，如果系统中至少有一个 hiDPI（Retina）屏幕，则返回值为 ``2.0``\ ，在所有其他情况下返回值为 ``1.0`` 。
-
-\ **注意：**\ 该方法仅在 macOS 上实现。
+\ **Note:** On macOS, the returned value is ``2.0`` if there is at least one hiDPI (Retina) screen in the system, and ``1.0`` in all other cases.
 
 .. rst-class:: classref-item-separator
 
@@ -6211,15 +6209,15 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`float<class_float>` **screen_get_scale**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_scale>`
 
-返回屏幕的缩放系数，屏幕使用索引号指定。如果 ``screen`` 无效则返回 ``1.0``\ 。
+Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid. See also :ref:`screen_get_max_scale()<class_DisplayServer_method_screen_get_max_scale>`.
 
-\ **注意：**\ 下列常量可以当作 ``screen`` 使用：\ :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`\ 、\ :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`\ 、\ :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`\ 、\ :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`\ 。
+\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **注意：**\ 在 macOS 上，hiDPI（视网膜）屏幕返回 ``2.0``\ ，其它所有情况均返回 ``1.0``\ 。
+\ **Note:** On macOS, the returned value is ``2.0`` for hiDPI (Retina) screens, and ``1.0`` for all other cases.
 
-\ **注意：**\ 在 Linux（Wayland）上，只有 ``screen`` 为 :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>` 时返回值才是精确的。由于 API 的限制，如果屏幕缩放存在小数点，传入直接的索引号返回的是向上取整后的结果（即 ``1.25`` 会向上取整成 ``2.0``\ ）。
+\ **Note:** On Linux (Wayland), the returned value is accurate only when ``screen`` is :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`. Due to API limitations, passing a direct index will return a rounded-up integer, if the screen has a fractional scale (e.g. ``1.25`` would get rounded up to ``2.0``).
 
-\ **注意：**\ 该方法在 Android、iOS、Web、macOS 和 Linux（Wayland）上实现。该方法在其他平台上始终返回 ``1.0``\ 。
+\ **Note:** This method is implemented on Android, iOS, Web, macOS, and Linux (Wayland). On other platforms, this method always returns ``1.0``.
 
 .. rst-class:: classref-item-separator
 

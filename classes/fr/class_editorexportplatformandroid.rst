@@ -607,7 +607,7 @@ For example, the key ``android:windowSwipeToDismiss`` with the value ``false`` i
 
 :ref:`int<class_int>` **gradle_build/export_format** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/export_format>`
 
-Application export format (\*.apk or \*.aab).
+Format d'export de l'application (\*.apk ou \*.aab).
 
 .. rst-class:: classref-item-separator
 
@@ -2981,7 +2981,7 @@ Application version visible to the user. Falls back to :ref:`ProjectSettings.app
 
 :ref:`int<class_int>` **xr_features/xr_mode** :ref:`🔗<class_EditorExportPlatformAndroid_property_xr_features/xr_mode>`
 
-The extended reality (XR) mode for this application.
+Le mode de réalité étendue (XR) pour cette application.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

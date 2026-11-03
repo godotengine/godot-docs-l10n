@@ -85,7 +85,7 @@ Godot 編輯器中用於管理專案檔案的停靠面板。
 
 **folder_color_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_folder_color_changed>`
 
-Emitted when folders change color.
+當目錄改變顏色時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Emitted when folders change color.
 
 **selection_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_selection_changed>`
 
-Emitted when the selection changes. Use :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` in the connected method to get the selected paths.
+當選擇發生變化時發出該訊號。在連接的方法中使用 :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` 可以取得選定的路徑。
 
 .. rst-class:: classref-section-separator
 

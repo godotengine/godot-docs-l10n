@@ -7,14 +7,14 @@ OpenXRAndroidThreadSettingsExtension
 
 **繼承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Wraps the `XR_KHR_android_thread_settings <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_KHR_android_thread_settings>`__ extension.
+封裝了 `XR_KHR_android_thread_settings <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_KHR_android_thread_settings>`__ 擴充。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-For XR to be comfortable, it is important for applications to deliver frames quickly and consistently. In order to make sure the important application threads get their full share of time, these threads must be identified to the system, which will adjust their scheduling priority accordingly.
+為了讓擴充現實（XR）體驗更加舒適，應用程式必須快速且穩定地渲染畫面。為了確保重要的應用程式執行緒能夠獲得足夠的執行時間，必須將這些執行緒告知系統，系統會相應地調整它們的調度優先級。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ enum **ThreadType**: :ref:`🔗<enum_OpenXRAndroidThreadSettingsExtension_Thread
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_APPLICATION_MAIN** = ``0``
 
-Hints to the XR runtime that the thread is doing time critical CPU tasks.
+給 XR 執行時的提示，表明該執行緒正在執行時間敏感的 CPU 任務。
 
 .. _class_OpenXRAndroidThreadSettingsExtension_constant_THREAD_TYPE_APPLICATION_WORKER:
 
@@ -57,7 +57,7 @@ Hints to the XR runtime that the thread is doing time critical CPU tasks.
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_APPLICATION_WORKER** = ``1``
 
-Hints to the XR runtime that the thread is doing background CPU tasks.
+給 XR 執行時的提示，表明該執行緒正在執行後台 CPU 任務。
 
 .. _class_OpenXRAndroidThreadSettingsExtension_constant_THREAD_TYPE_RENDERER_MAIN:
 
@@ -65,7 +65,7 @@ Hints to the XR runtime that the thread is doing background CPU tasks.
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_RENDERER_MAIN** = ``2``
 
-Hints to the XR runtime that the thread is doing time critical graphics device tasks.
+給 XR 執行時的提示，表明該執行緒正在執行時間敏感的圖形裝置任務。
 
 .. _class_OpenXRAndroidThreadSettingsExtension_constant_THREAD_TYPE_RENDERER_WORKER:
 
@@ -73,7 +73,7 @@ Hints to the XR runtime that the thread is doing time critical graphics device t
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_RENDERER_WORKER** = ``3``
 
-Hints to the XR runtime that the thread is doing background graphics device tasks.
+給 XR 執行時的提示，表明該執行緒正在執行後台圖形裝置任務。
 
 .. rst-class:: classref-section-separator
 
@@ -90,11 +90,11 @@ Hints to the XR runtime that the thread is doing background graphics device task
 
 :ref:`bool<class_bool>` **set_application_thread_type**\ (\ thread_type\: :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>`, thread_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_OpenXRAndroidThreadSettingsExtension_method_set_application_thread_type>`
 
-Sets the thread type of the given thread, so that the XR runtime can adjust its scheduling priority accordingly.
+設定給定執行緒的執行緒型別，以便 XR 執行時可以相應地調整其調度優先級。
 
-\ ``thread_id`` refers to the OS thread id (ie from ``gettid()``). When ``thread_id`` is ``0``, it will set the thread type of the current thread.
+\ ``thread_id`` 指的是作業系統執行緒 ID（例如，來自 ``gettid()``\ ）。當 ``thread_id`` 為 ``0`` 時，它將設定目前執行緒的執行緒型別。
 
-\ **NOTE:** The id returned by :ref:`Thread.get_id()<class_Thread_method_get_id>` is incompatible with ``thread_id``.
+\ **注意：**\ :ref:`Thread.get_id()<class_Thread_method_get_id>` 回傳的 ID 與 ``thread_id`` 不相容。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

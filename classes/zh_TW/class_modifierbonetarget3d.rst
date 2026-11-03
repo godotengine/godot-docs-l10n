@@ -7,16 +7,16 @@ ModifierBoneTarget3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-А node that dynamically copies the 3D transform of a bone in its parent :ref:`Skeleton3D<class_Skeleton3D>`.
+動態複製父級 :ref:`Skeleton3D<class_Skeleton3D>` 中某個骨骼 3D 變換的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node selects a bone in a :ref:`Skeleton3D<class_Skeleton3D>` and attaches to it. This means that the **ModifierBoneTarget3D** node will dynamically copy the 3D transform of the selected bone.
+這個節點能夠選擇 :ref:`Skeleton3D<class_Skeleton3D>` 中的某個骨骼並附加到這個骨骼上。這樣 **ModifierBoneTarget3D** 節點就能夠動態複製所選骨骼的 3D 變換。
 
-The functionality is similar to :ref:`BoneAttachment3D<class_BoneAttachment3D>`, but this node adopts the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` cycle and is intended to be used as another :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`'s target.
+功能類似於 :ref:`BoneAttachment3D<class_BoneAttachment3D>`\ ，但是這個節點使用 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的週期，適合作為其他 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的目標。
 
 .. rst-class:: classref-reftable-group
 

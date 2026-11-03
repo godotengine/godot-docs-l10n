@@ -7,36 +7,36 @@ ConvertTransformModifier3D
 
 **繼承：** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that apply transform to the bone which converted from reference.
+對骨骼應用變換的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ ，變換轉換自參考骨骼。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` about the specific axis with remapping it with some options.
+從通過 :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` 指定的骨骼上複製變換，將所複製的變換沿特定軸套用至通過 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 設定的骨骼上，並可使用一些選項對這個變換進行調整。
 
-There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`.
+根據 :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>`\ （相對）和 :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`\ （疊加）的組合，有四種方式可以應用該變換：
 
-\ **Relative + Additive:**\ 
+\ **相對 + 疊加**\ ：
 
-- Extract reference pose relative to the rest and add it to the apply bone's pose.
+- 提取相對於靜止姿態的參考姿態，並將其新增到目標骨骼的姿態上。
 
-\ **Relative + Not Additive:**\ 
+\ **相對 + 非疊加：**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's rest.
+- 提取相對於靜止姿態的參考姿態，並將其新增到目標骨骼的靜止姿態上。
 
-\ **Not Relative + Additive:**\ 
+\ **非相對 + 疊加：**\ 
 
-- Extract reference pose absolutely and add it to the apply bone's pose.
+- 提取參考姿態的絕對姿態，並將其新增到目標骨骼的姿態上。
 
-\ **Not Relative + Not Additive:**\ 
+\ **非相對 + 非疊加**\ ：
 
-- Extract reference pose absolutely and the apply bone's pose is replaced with it.
+- 提取參考姿態的絕對姿態，並將其替換目標骨骼的姿態。
 
-\ **Note:** Relative option is available only in the case :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **注意：**\ 相對選項僅當 :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` 為 :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>` 時可用。另見 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
 
-\ **Note:** If there is a rotation greater than ``180`` degrees with constrained axes, flipping may occur.
+\ **注意：**\ 如果旋轉角度大於 ``180`` 度且軸受到約束，則可能會發生翻轉。
 
 .. rst-class:: classref-reftable-group
 
@@ -121,7 +121,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_POSITION** = ``0``
 
-Convert with position. Transfer the difference.
+轉換時使用位置。傳遞差值。
 
 .. _class_ConvertTransformModifier3D_constant_TRANSFORM_MODE_ROTATION:
 
@@ -129,7 +129,7 @@ Convert with position. Transfer the difference.
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_ROTATION** = ``1``
 
-Convert with rotation. The angle is the roll for the specified axis.
+轉換時使用旋轉。角度是指定軸的翻滾值。
 
 .. _class_ConvertTransformModifier3D_constant_TRANSFORM_MODE_SCALE:
 
@@ -137,7 +137,7 @@ Convert with rotation. The angle is the roll for the specified axis.
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_SCALE** = ``2``
 
-Convert with scale. Transfers the ratio, not the difference.
+轉換時使用縮放。傳遞比例而不是差值。
 
 .. rst-class:: classref-section-separator
 
@@ -176,7 +176,7 @@ Convert with scale. Transfers the ratio, not the difference.
 
 :ref:`Axis<enum_Vector3_Axis>` **get_apply_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_axis>`
 
-Returns the axis of the remapping destination transform.
+回傳重映射目標變換的軸。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Returns the axis of the remapping destination transform.
 
 :ref:`float<class_float>` **get_apply_range_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_range_max>`
 
-Returns the maximum value of the remapping destination range.
+回傳重映射目標範圍的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Returns the maximum value of the remapping destination range.
 
 :ref:`float<class_float>` **get_apply_range_min**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_range_min>`
 
-Returns the minimum value of the remapping destination range.
+回傳重映射目標範圍的最小值。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Returns the minimum value of the remapping destination range.
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **get_apply_transform_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_transform_mode>`
 
-Returns the operation of the remapping destination transform.
+回傳重映射目標變換的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Returns the operation of the remapping destination transform.
 
 :ref:`Axis<enum_Vector3_Axis>` **get_reference_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_axis>`
 
-Returns the axis of the remapping source transform.
+回傳重映射來源變換的軸。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns the axis of the remapping source transform.
 
 :ref:`float<class_float>` **get_reference_range_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_range_max>`
 
-Returns the maximum value of the remapping source range.
+回傳重映射來源範圍的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Returns the maximum value of the remapping source range.
 
 :ref:`float<class_float>` **get_reference_range_min**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_range_min>`
 
-Returns the minimum value of the remapping source range.
+回傳重映射來源範圍的最小值。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Returns the minimum value of the remapping source range.
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **get_reference_transform_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_transform_mode>`
 
-Returns the operation of the remapping source transform.
+回傳重映射來源變換的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns the operation of the remapping source transform.
 
 :ref:`bool<class_bool>` **is_additive**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_is_additive>`
 
-Returns ``true`` if the additive option is enabled in the setting at ``index``.
+如果索引為 ``index`` 的設定啟用了加法選項，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns ``true`` if the additive option is enabled in the setting at ``index``.
 
 :ref:`bool<class_bool>` **is_relative**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_is_relative>`
 
-Returns ``true`` if the relative option is enabled in the setting at ``index``.
+如果索引為 ``index`` 的設定啟用了相對選項，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -296,11 +296,11 @@ Returns ``true`` if the relative option is enabled in the setting at ``index``.
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_additive>`
 
-Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
+將索引為 ``index`` 的設定的疊加選項設定為 ``enabled``\ 。主要影響對 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 施加變換的過程。
 
-If sets ``enabled`` to ``true``, the processed transform is added to the pose of the current apply bone.
+如果將 ``enabled`` 設定為 ``true``\ ，則會將處理後的變換疊加到目前應用骨骼的姿勢之上。
 
-If sets ``enabled`` to ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
+如果將 ``enabled`` 設定為 ``false``\ ，則會將目前應用骨骼的姿勢替換為處理後的變換。不過如果將 :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` 設為 ``true``\ ，則該變換是相對於放鬆姿勢的。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ If sets ``enabled`` to ``false``, the pose of the current apply bone is replaced
 
 |void| **set_apply_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_axis>`
 
-Sets the axis of the remapping destination transform.
+設定重映射目標變換的軸。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Sets the axis of the remapping destination transform.
 
 |void| **set_apply_range_max**\ (\ index\: :ref:`int<class_int>`, range_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_range_max>`
 
-Sets the maximum value of the remapping destination range.
+設定重映射目標範圍的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Sets the maximum value of the remapping destination range.
 
 |void| **set_apply_range_min**\ (\ index\: :ref:`int<class_int>`, range_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_range_min>`
 
-Sets the minimum value of the remapping destination range.
+設定重映射目標範圍的最小值。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Sets the minimum value of the remapping destination range.
 
 |void| **set_apply_transform_mode**\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_transform_mode>`
 
-Sets the operation of the remapping destination transform.
+設定重映射目標變換的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ Sets the operation of the remapping destination transform.
 
 |void| **set_reference_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_axis>`
 
-Sets the axis of the remapping source transform.
+設定重映射來源變換的軸。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ Sets the axis of the remapping source transform.
 
 |void| **set_reference_range_max**\ (\ index\: :ref:`int<class_int>`, range_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_range_max>`
 
-Sets the maximum value of the remapping source range.
+設定重映射來源範圍的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Sets the maximum value of the remapping source range.
 
 |void| **set_reference_range_min**\ (\ index\: :ref:`int<class_int>`, range_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_range_min>`
 
-Sets the minimum value of the remapping source range.
+設定重映射來源範圍的最小值。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Sets the minimum value of the remapping source range.
 
 |void| **set_reference_transform_mode**\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_transform_mode>`
 
-Sets the operation of the remapping source transform.
+設定重映射來源變換的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -408,11 +408,11 @@ Sets the operation of the remapping source transform.
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_relative>`
 
-Sets relative option in the setting at ``index`` to ``enabled``.
+將索引為 ``index`` 的設定的相對選項設定為 ``enabled``\ 。
 
-If sets ``enabled`` to ``true``, the extracted and applying transform is relative to the rest.
+如果將 ``enabled`` 設定為 ``true``\ ，則提取並應用的變換是相對於放鬆姿勢的。
 
-If sets ``enabled`` to ``false``, the extracted transform is absolute.
+如果將 ``enabled`` 設定為 ``false``\ ，則提取到的變換是絕對的。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

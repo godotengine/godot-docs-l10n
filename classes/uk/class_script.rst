@@ -227,9 +227,9 @@ Script
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_method_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_method_list>`
 
-Повертає список методів у цьому ``Script.
+Повертає список методів у цьому **Script**.
 
-[b``\ Примітка:** Словники, що повертаються цим методом, відформатовані ідентично тим, що повертаються методом :ref:`Object.get_method_list()<class_Object_method_get_method_list>`.
+\ **Примітка:** Словники, що повертаються цим методом, мають такий самий формат, як і ті, що повертаються :ref:`Object.get_method_list()<class_Object_method_get_method_list>`.
 
 .. rst-class:: classref-item-separator
 

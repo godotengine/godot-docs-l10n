@@ -14,17 +14,17 @@ Una fuente de luz de área, como un tubo de luz de neón o una pantalla.
 Descripción
 ----------------------
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+Una luz de área es un tipo de nodo :ref:`Light3D<class_Light3D>` que emite luz sobre un área bidimensional con forma de rectángulo. La luz se atenúa a lo largo de la distancia. Esta atenuación se puede configurar cambiando :ref:`energy<class_AreaLight3D_property_energy>`, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>` y :ref:`area_range<class_AreaLight3D_property_area_range>`.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+La luz se emite en la dirección -Z de la base global del nodo. Para una luz sin rotar, esto significa que la luz se emite hacia adelante, iluminando la parte frontal de un modelo 3D (véase :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` y :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+Las luces de área pueden proyectar sombras suaves mediante PCSS, que se puede controlar ajustando el parámetro de tamaño. El mapa de sombras se dibuja desde el centro de la luz.
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **Nota:** Las luces de área tienen compatibilidad limitada en los renderizadores Mobile y Compatibility. En el renderizador Mobile, el tamaño de la penumbra no varía como debería con PCSS. En Compatibility, las luces de área no pueden proyectar sombras.
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **Advertencia:** Las sombras proyectadas por una luz de área pueden verse incorrectamente si el objeto que proyecta sombras no tiene suficientes subdivisiones y está muy cerca de la luz de área. Esta es la misma limitación que presenta el modo de sombras Dual Paraboloid en un :ref:`OmniLight3D<class_OmniLight3D>`.
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **Rendimiento:** Las luces de área requieren más recursos de GPU que las luces omni y spot. En Forward+, se produce un coste adicional de GPU en *todos* los objetos renderizados en cuanto hay una luz de área presente en el frustum de visión (debido a la naturaleza de la iluminación en clústeres). Considera usarlas solo para cinemáticas o cuando el objetivo sean dispositivos de gama alta.
 
 .. rst-class:: classref-introduction-group
 
@@ -77,13 +77,13 @@ Descripciones de Propiedades
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Controls the distance attenuation function for this area light.
+Controla la función de atenuación de la distancia para esta luz de área.
 
-A value of ``0.0`` will maintain a constant brightness through most of the range, but will smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenuation.
+Un valor de ``0.0`` mantendrá un brillo constante en la mayor parte del rango, pero atenuará suavemente la luz en el borde del rango. Usa un valor de ``2.0`` para luces físicamente correctas, ya que da como resultado la atenuación correcta según la ley del inverso del cuadrado.
 
-\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even when within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
+\ **Nota:** Establecer la atenuación en ``2.0`` o más puede hacer que los objetos distantes reciban una cantidad mínima de luz, incluso cuando estén dentro del rango. Por ejemplo, con un rango de ``4096``, un objeto a ``100`` unidades se atenúa por un factor de ``0.0001``. Con un brillo predeterminado de ``1``, la luz no sería visible a esa distancia.
 
-\ **Note:** Using negative values or values higher than ``10.0`` may lead to unexpected results.
+\ **Nota:** Usar valores negativos o valores superiores a ``10.0`` puede provocar resultados inesperados.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Define si la energía se normaliza (divide) por el área de superficie de la luz
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The range of the area in meters. This determines the maximum distance from any point on the area at which the area can still emit light.
+El alcance del área en metros. Esto determina la distancia máxima desde cualquier punto del área a la que todavía puede emitir luz.
 
 .. rst-class:: classref-item-separator
 

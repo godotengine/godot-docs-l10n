@@ -16,7 +16,7 @@ VisualShaderNodeOutput
 說明
 ----
 
-此視覺化著色器節點以 "輸出" 塊的形式出現在所有著色器圖中，有多個輸出值端口。
+此視覺化著色器節點以 "輸出" 塊的形式出現在所有著色器圖中，有多個輸出值連接埠。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

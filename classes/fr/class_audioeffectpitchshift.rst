@@ -25,7 +25,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -160,7 +160,7 @@ Le facteur de suréchantillonnage à utiliser. Des valeurs plus élevées entra�
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
+L'échelle de hauteur à utiliser. ``1.0`` est la hauteur par défaut et joue des sons non modifiés. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` peut aller de 0.0 (une hauteur infiniment basse, inaudible) à 16 (16 fois supérieur à la hauteur initiale).
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

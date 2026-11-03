@@ -341,7 +341,7 @@ Nombre del dispositivo actual para la entrada de audio (consulte :ref:`get_input
 - |void| **set_output_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_output_device**\ (\ )
 
-Nombre del dispositivo actual para la salida de audio (ver :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`). En sistemas con múltiples salidas de audio (como analógica, USB o HDMI), ésto se puede usar para seleccionar el dispositivo de salida de audio. El valor ``"Default"`` reproducirá audio a través de la salida de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
+Nombre del dispositivo actual para la salida de audio (ver :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`). En sistemas con múltiples salidas de audio (como analógica, USB o HDMI), esto se puede usar para seleccionar el dispositivo de salida de audio. El valor ``"Default"`` reproducirá audio a través de la salida de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Devuelve el número de efectos en el bus en ``bus_idx``.
 
 :ref:`AudioEffectInstance<class_AudioEffectInstance>` **get_bus_effect_instance**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`, channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_AudioServer_method_get_bus_effect_instance>`
 
-Devuelve la :ref:`AudioEffectInstance<class_AudioEffectInstance>` asignada al bus dado y los indices de efecto (y opcionalmente el canal).
+Devuelve la :ref:`AudioEffectInstance<class_AudioEffectInstance>` asignada al bus dado y los índices de efecto (y opcionalmente el canal).
 
 .. rst-class:: classref-item-separator
 

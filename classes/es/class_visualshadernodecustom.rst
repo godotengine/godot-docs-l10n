@@ -14,9 +14,9 @@ Clase virtual para definir los :ref:`VisualShaderNode<class_VisualShaderNode>` p
 Descripción
 ----------------------
 
-Heredando esta clase, puedes crear un addon de script :ref:`VisualShader<class_VisualShader>` personalizado que se agregará automáticamente al Editor de Shaders Visuales. El comportamiento de :ref:`VisualShaderNode<class_VisualShaderNode>` se define anulando los métodos virtuales proporcionados.
+Heredando esta clase, puedes crear un complemento del script :ref:`VisualShader<class_VisualShader>` personalizado que se agregará automáticamente al Editor de Shaders Visuales. El comportamiento de :ref:`VisualShaderNode<class_VisualShaderNode>` se define sobrescribiendo los métodos virtuales proporcionados.
 
-Para que el nodo se registre como un addon de editor, debes usar la anotación ``@tool`` y proporcionar un ``class_name`` para tu script personalizado. Por ejemplo:
+Para que el nodo se registre como un complemento del editor, debes usar la anotación ``@tool`` y proporcionar un ``class_name`` para tu script personalizado. Por ejemplo:
 
 ::
 
@@ -102,7 +102,7 @@ Descripciones de Métodos
 
 Sobrescribe este método para definir la ruta al nodo personalizado asociado en el diálogo de miembros del Editor de Shaders Visuales. La ruta puede verse como ``"MiJuego/MisFunciones/Ruido"``.
 
-Definir este método es **opcional**. Si no se sobrescribe, el nodo se archivará en la categoría "Addons".
+Definir este método es **opcional**. Si no se sobrescribe, el nodo se archivará en la categoría «Addons».
 
 .. rst-class:: classref-item-separator
 

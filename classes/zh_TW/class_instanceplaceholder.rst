@@ -14,9 +14,9 @@ InstancePlaceholder
 說明
 ----
 
-Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. This is useful to avoid loading large scenes all at once by loading parts of it selectively.
+在編輯器中為實例化的場景打開\ **載入為佔位符**\ 選項會導致在執行遊戲時將其替換為 **InstancePlaceholder**\ 。這樣就可以將場景推遲到呼叫 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 時再實際載入。這樣做有助於對大型場景中的不同部分進行有選擇的載入，避免一次性載入所有部分。
 
-\ **Note:** Like :ref:`Node<class_Node>`, **InstancePlaceholder** does not have a transform. This causes any child nodes to be positioned relatively to the :ref:`Viewport<class_Viewport>` origin, rather than their parent as displayed in the editor. Replacing the placeholder with a scene with a transform will transform children relatively to their parent again.
+\ **注意：**\ **InstancePlaceholder** 與 :ref:`Node<class_Node>` 類似，不具備變換屬性。因此任何子節點都會相對於 :ref:`Viewport<class_Viewport>` 的原點開始定位，而不是在編輯器中顯示的父節點。用一個具有變換屬性的場景來替換佔位符，將使子節點再次相對於它們的父節點進行變換。
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 :ref:`String<class_String>` **get_instance_path**\ (\ ) |const| :ref:`🔗<class_InstancePlaceholder_method_get_instance_path>`
 
-獲取呼叫 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 時預設載入的 :ref:`PackedScene<class_PackedScene>` 資源檔的路徑。不是執行緒安全的。如果從執行緒呼叫，請使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
+取得呼叫 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 時預設載入的 :ref:`PackedScene<class_PackedScene>` 資源檔的路徑。不是執行緒安全的。如果從執行緒呼叫，請使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
 
 .. rst-class:: classref-item-separator
 

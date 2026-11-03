@@ -14,9 +14,9 @@ Un nodo de animación de búsqueda de tiempo utilizado en :ref:`AnimationTree<cl
 Descripción
 ----------------------
 
-Este nodo de animación puede ser utilizado para generar un comando de búsqueda en cualquier subelemento de la grafica de animación. Utilizable para reproducir un :ref:`Animation<class_Animation>` desde el inicio o una posición especifica de la repetición dentro de :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+Este nodo de animación puede ser utilizado para generar un comando de búsqueda en cualquier subelemento de la gráfica de animación. Utilizable para reproducir un :ref:`Animation<class_Animation>` desde el inicio o una posición específica de la repetición dentro de :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-Despues de configurar el tiempo y cambiar la reproducción de la animación, el tiempo que tarda el nodo de búsqueda automaticamente en entrar en modo de reposo en el siguiente cuadro de proceso por defecto es ``seek_request``\ value to ``-1.0``\ 
+Después de configurar el tiempo y cambiar la reproducción de la animación, el tiempo que tarda el nodo de búsqueda automáticamente en entrar en modo de reposo en el siguiente cuadro de proceso estableciendo su valor ``seek_request`` en ``-1.0``\ 
 
 
 .. tabs::
@@ -25,12 +25,12 @@ Despues de configurar el tiempo y cambiar la reproducción de la animación, el 
 
     #Reproducir animación hija desde el inicio.
     animation_tree.set("parameters/TimeSeek/seek_request",0.0)
-    #Sintaxis alternativa(Mismo resultado al de arriba).
+    #Sintaxis alternativa (mismo resultado al de arriba).
     animation_tree.set["parameters/TimeSeek/seek_request"] = 0.0
 
     #Reproducir animación hija a partir del segundo 12.
     animation_tree.set("parameters/TimeSeek/seek_request",12.0)
-    #Sintaxis alternativa(Mismo resultado al de arriba).
+    #Sintaxis alternativa (mismo resultado al de arriba).
     animation_tree.set["parameters/TimeSeek/seek_request"] = 12.0
 
  .. code-tab:: csharp

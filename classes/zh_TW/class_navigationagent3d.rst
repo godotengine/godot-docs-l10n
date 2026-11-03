@@ -16,13 +16,13 @@ NavigationAgent3D
 說明
 ----
 
-A 3D agent used to pathfind to a position while avoiding static and dynamic obstacles. The calculation can be used by the parent node to dynamically move it along the path. Requires navigation data to work correctly.
+用於尋路至某個位置並且能夠躲避靜態和動態障礙物的 3D 代理。父節點能夠使用計算結果沿著路徑動態前進。需要有導航資料才能正常工作。
 
-Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is computed before physics, so the pathfinding information can be used safely in the physics step.
+躲避動態障礙物使用的是 RVO 防撞算法。避障的計算發生在物理之前，因此尋路資訊能夠在物理迭代時安全使用。
 
-\ **Note:** After setting the :ref:`target_position<class_NavigationAgent3D_property_target_position>` property, the :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` method must be used once every physics frame to update the internal path logic of the navigation agent. The vector position it returns should be used as the next movement position for the agent's parent node.
+\ **注意：**\ 設定 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 屬性之後，必須在每個物理影格使用一次 :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` 函式來更新導航代理的內部路徑邏輯。這個函式回傳的向量位置應該用作該代理的父節點的下一次移動位置。
 
-\ **Note:** Several methods of this class, such as :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`, can trigger a new path calculation. Calling these in your callback to an agent's signal, such as :ref:`waypoint_reached<class_NavigationAgent3D_signal_waypoint_reached>`, can cause infinite recursion. It is recommended to call these methods in the physics step or, alternatively, delay their call until the end of the frame (see :ref:`Object.call_deferred()<class_Object_method_call_deferred>` or :ref:`Object.CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>`).
+\ **注意：**\ 這個類的 :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` 等方法會觸發新的路徑計算。在代理的 :ref:`waypoint_reached<class_NavigationAgent3D_signal_waypoint_reached>` 等訊號中呼叫這些方法會造成無限遞歸。建議在物理步驟中呼叫這些方法，也可以推遲到目前影格的末尾再呼叫（見 :ref:`Object.call_deferred()<class_Object_method_call_deferred>` 或 :ref:`Object.CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>`\ ）。
 
 .. rst-class:: classref-introduction-group
 
@@ -172,21 +172,21 @@ Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is comput
 
 **link_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_link_reached>`
 
-Signals that the agent reached a navigation link. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` of the next position of the path when that position is a navigation link.
+表示代理到達導航連結的訊號。當代理移動到路徑下一個位置的 :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` 範圍內，且該位置是導航連結時發出。
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
+根據 :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>` 的值，詳細資訊字典可能包含以下鍵：
 
-- ``position``: The start position of the link that was reached.
+- ``position``\ ：到達的連結的起始位置。
 
-- ``type``: Always :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`.
+- ``type``\ ：總是 :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`\ 。
 
-- ``rid``: The :ref:`RID<class_RID>` of the link.
+- ``rid``\ ：連結的 :ref:`RID<class_RID>`\ 。
 
-- ``owner``: The object which manages the link (usually :ref:`NavigationLink3D<class_NavigationLink3D>`).
+- ``owner``\ ：管理該連結的物件（通常是\ :ref:`NavigationLink3D<class_NavigationLink3D>`\ ）。
 
-- ``link_entry_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point the agent is entering.
+- ``link_entry_position``\ ：如果 ``owner`` 可用且該所有者是一個 :ref:`NavigationLink3D<class_NavigationLink3D>`\ ，它將包含代理正在進入時的連結點的全域位置。
 
-- ``link_exit_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point which the agent is exiting.
+- ``link_exit_position``\ ：如果 ``owner`` 可用且該所有者是一個 :ref:`NavigationLink3D<class_NavigationLink3D>`\ ，它將包含代理正在退出時的連結點的全域位置。
 
 .. rst-class:: classref-item-separator
 
@@ -198,9 +198,9 @@ The details dictionary may contain the following keys depending on the value of 
 
 **navigation_finished**\ (\ ) :ref:`🔗<class_NavigationAgent3D_signal_navigation_finished>`
 
-Signals that the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached. This signal is emitted only once per loaded path.
+表示代理導航完成的訊號。如果目標可達，則導航會在抵達目標位置時停止。如果目標不可達，則導航會在抵達最後一個路徑點時停止。每次載入的路徑只會發出一次這個訊號。
 
-This signal will be emitted just after :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` when the target is reachable.
+目標可達時，訊號會在 :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` 後發出。
 
 .. rst-class:: classref-item-separator
 
@@ -230,11 +230,11 @@ This signal will be emitted just after :ref:`target_reached<class_NavigationAgen
 
 **target_reached**\ (\ ) :ref:`🔗<class_NavigationAgent3D_signal_target_reached>`
 
-Signals that the agent reached the target, i.e. the agent moved within :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent3D_property_target_position>`. This signal is emitted only once per loaded path.
+表示代理到達目標的訊號，即代理移到了與 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 相距 :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` 之內的位置。每次載入路徑只會發出一次這個訊號。
 
-This signal will be emitted just before :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>` when the target is reachable.
+目標可達時，訊號會在 :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>` 前發出。
 
-It may not always be possible to reach the target but it should always be possible to reach the final position. See :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`.
+並不是每次都能夠到達目標位置，但是每次都能夠到達最終位置。見 :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ It may not always be possible to reach the target but it should always be possib
 
 **velocity_computed**\ (\ safe_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_velocity_computed>`
 
-Notifies when the collision avoidance velocity is calculated. Emitted every update as long as :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` is ``true`` and the agent has a navigation map.
+計算出避障速度時發出通知。只要 :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` 為 ``true`` 並且代理存在導航地圖，就會在每次更新時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -258,17 +258,17 @@ Notifies when the collision avoidance velocity is calculated. Emitted every upda
 
 **waypoint_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_waypoint_reached>`
 
-Signals that the agent reached a waypoint. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` of the next position of the path.
+表示代理已到達航路點的訊號。當代理移動到路徑下一個位置的 :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` 範圍內時發出。
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
+根據 :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>` 的值，詳細資訊字典可能包含以下鍵：
 
-- ``position``: The position of the waypoint that was reached.
+- ``position``\ ：到達的路標點的位置。
 
-- ``type``: The type of navigation primitive (region or link) that contains this waypoint.
+- ``type``\ ：包含該路標的導航基元（區塊或連結）的型別。
 
-- ``rid``: The :ref:`RID<class_RID>` of the containing navigation primitive (region or link).
+- ``rid``\ ：包含的導航基元（區塊或連結）的 :ref:`RID<class_RID>`\ 。
 
-- ``owner``: The object which manages the containing navigation primitive (region or link).
+- ``owner``\ ：管理包含的導航基元（區塊或連結）的物件。
 
 .. rst-class:: classref-section-separator
 
@@ -290,7 +290,7 @@ The details dictionary may contain the following keys depending on the value of 
 - |void| **set_avoidance_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_avoidance_enabled**\ (\ )
 
-如果為 ``true``\ ，該代理會在 :ref:`NavigationServer3D<class_NavigationServer3D>` 上註冊 RVO 避障回調。當設定 :ref:`velocity<class_NavigationAgent3D_property_velocity>` 並且處理完成時，會通過與 :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>` 的訊號連接接收到安全速度 ``safe_velocity`` Vector3。註冊的代理過多會為避障處理帶來顯著的性能開銷，應該僅在需要它的代理上啟用。
+如果為 ``true``\ ，該代理會在 :ref:`NavigationServer3D<class_NavigationServer3D>` 上註冊 RVO 避障回呼。當設定 :ref:`velocity<class_NavigationAgent3D_property_velocity>` 並且處理完成時，會通過與 :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>` 的訊號連接接收到安全速度 ``safe_velocity`` Vector3。註冊的代理過多會為避障處理帶來顯著的效能開銷，應該僅在需要它的代理上啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ The details dictionary may contain the following keys depending on the value of 
 - |void| **set_avoidance_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_avoidance_mask**\ (\ )
 
-決定該 NavigationAgent 會躲避那些代理和障礙物的位元域，需要該位元域與對方的 :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` 存在至少一個共同的比特位。
+決定該 NavigationAgent 會躲避那些代理和障礙物的位元域，需要該位元域與對方的 :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` 存在至少一個共同的位元位。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ The details dictionary may contain the following keys depending on the value of 
 - |void| **set_debug_path_custom_point_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_debug_path_custom_point_size**\ (\ )
 
-如果 :ref:`debug_use_custom<class_NavigationAgent3D_property_debug_use_custom>` 為 ``true``\ ，則該代理使用該柵格化點尺寸進行路徑點的算繪，不使用全域點尺寸。
+如果 :ref:`debug_use_custom<class_NavigationAgent3D_property_debug_use_custom>` 為 ``true``\ ，則該代理使用該柵格化點尺寸進行路徑點的渲染，不使用全域點尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ The details dictionary may contain the following keys depending on the value of 
 - |void| **set_keep_y_velocity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_y_velocity**\ (\ )
 
-If ``true``, and the agent uses 2D avoidance, it will remember the set y-axis velocity and reapply it after the avoidance step. While 2D avoidance has no y-axis and simulates on a flat plane this setting can help to soften the most obvious clipping on uneven 3D geometry.
+如果為 ``true``\ ，並且代理使用 2D 避障，它將記住設定的 y 軸速度並在避障步進後重新應用它。雖然 2D 避障沒有 y 軸並在平坦平面上進行模擬，但該設定可以協助柔化不均勻 3D 幾何體上最明顯的裁剪。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ If ``true``, and the agent uses 2D avoidance, it will remember the set y-axis ve
 - |void| **set_neighbor_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_neighbor_distance**\ (\ )
 
-搜索其他代理的距離。
+搜尋其他代理的距離。
 
 .. rst-class:: classref-item-separator
 
@@ -528,7 +528,7 @@ If ``true``, and the agent uses 2D avoidance, it will remember the set y-axis ve
 - |void| **set_path_desired_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_desired_distance**\ (\ )
 
-The distance threshold before a path point is considered to be reached. This allows agents to not have to hit a path point on the path exactly, but only to reach its general area. If this value is set too high, the NavigationAgent will skip points on the path, which can lead to it leaving the navigation mesh. If this value is set too low, the NavigationAgent will be stuck in a repath loop because it will constantly overshoot the distance to the next point on each physics frame update.
+距離閾值，用於確定是否已到達某個路徑點。使用這個值，代理就不必精確地到達某個路徑點，只需到達該路徑點的大致區域內即可。如果這個值設得太大，該 NavigationAgent 會跳過路徑上的點，這可能導致它離開該導覽網格。如果這個值設得太小，該 NavigationAgent 會陷入重新尋路的死循環，因為它會在每次物理影格更新後都會超過下一個點。
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ The distance threshold before a path point is considered to be reached. This all
 - |void| **set_path_return_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_length**\ (\ )
 
-The maximum allowed length of the returned path in world units. A path will be clipped when going over this length.
+返迴路徑允許的最大長度，單位為世界單位。路徑超出該長度後會被截斷。
 
 .. rst-class:: classref-item-separator
 
@@ -630,9 +630,9 @@ The maximum allowed length of the returned path in world units. A path will be c
 - |void| **set_path_return_max_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_radius**\ (\ )
 
-The maximum allowed radius in world units that the returned path can be from the path start. The path will be clipped when going over this radius. Compared to :ref:`path_return_max_length<class_NavigationAgent3D_property_path_return_max_length>`, this allows the agent to go that much further, if they need to walk around a corner.
+返迴路徑從起點開始所允許的最大半徑，單位為世界單位。路徑超出該半徑後會被截斷。與 :ref:`path_return_max_length<class_NavigationAgent3D_property_path_return_max_length>` 相比，當代理需要繞過拐角時，該屬效能夠允許代理走得更遠。
 
-\ **Note:** This will perform a sphere clip considering only the actual navigation mesh path points with the first path position being the sphere's center.
+\ **注意：**\ 該屬性會執行球面裁剪，只會考慮實際的導覽網格路徑點，路徑上的第一個位置是球體中心。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ The maximum allowed radius in world units that the returned path can be from the
 - |void| **set_path_search_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_search_max_distance**\ (\ )
 
-The maximum distance a searched polygon can be away from the start polygon before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+搜尋通往目的位置多邊形的路徑時（可能不可達或非常遠），取消尋路前能夠搜尋的多邊形的最大距離。取消時，尋路會重設，建置出的路徑從起始多邊形開始，通往目前所找到的最接近目的位置的多邊形。小於等於 ``0`` 表示不限制數量，尋路時會搜尋與起始多邊形相連的所有多邊形，直到發現目的位置多邊形或已經查過所有待查的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ The maximum distance a searched polygon can be away from the start polygon befor
 - |void| **set_path_search_max_polygons**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_path_search_max_polygons**\ (\ )
 
-The maximum number of polygons that are searched before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+搜尋通往目的位置多邊形的路徑時（可能不可達或非常遠），取消尋路前能夠搜尋的最大多邊形數。取消時，尋路會重設，建置出的路徑從起始多邊形開始，通往目前所找到的最接近目的位置的多邊形。小於等於 ``0`` 表示不限制數量，尋路時會搜尋與起始多邊形相連的所有多邊形，直到發現目的位置多邊形或已經查過所有待查的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -719,7 +719,7 @@ The maximum number of polygons that are searched before the pathfinding cancels 
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-The path simplification amount in worlds units.
+以世界單位表示的路徑簡化量。
 
 .. rst-class:: classref-item-separator
 
@@ -736,9 +736,9 @@ The path simplification amount in worlds units.
 - |void| **set_simplify_path**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simplify_path**\ (\ )
 
-If ``true`` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by :ref:`simplify_epsilon<class_NavigationAgent3D_property_simplify_epsilon>`. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+如果為 ``true``\ ，將返迴路徑的簡化版本，其中移除了不太重要的路徑點。簡化量由 :ref:`simplify_epsilon<class_NavigationAgent3D_property_simplify_epsilon>` 控制。簡化使用 Ramer-Douglas-Peucker 算法的變體進行曲線點抽取。
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+路徑簡化有助於緩解使用某些代理型別和腳本行為可能出現的各種路徑追蹤問題。例如“開放場”中的“轉向”代理或避讓。
 
 .. rst-class:: classref-item-separator
 
@@ -755,11 +755,11 @@ Path simplification can be helpful to mitigate various path following issues tha
 - |void| **set_target_desired_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_target_desired_distance**\ (\ )
 
-The distance threshold before the target is considered to be reached. On reaching the target, :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` is emitted and navigation ends (see :ref:`is_navigation_finished()<class_NavigationAgent3D_method_is_navigation_finished>` and :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>`).
+與目標的距離閾值，小於該閾值時會認為已抵達目標位置。已抵達目標位置時會發出 :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` 並結束導航（見 :ref:`is_navigation_finished()<class_NavigationAgent3D_method_is_navigation_finished>` 和 :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>`\ ）。
 
-You can make navigation end early by setting this property to a value greater than :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (navigation will end before reaching the last waypoint).
+將這個屬性設定為大於 :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` 的值可以提前結束導航（導航會在到達最後一個路徑點之前停止）。
 
-You can also make navigation end closer to the target than each individual path position by setting this property to a value lower than :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (navigation won't immediately end when reaching the last waypoint). However, if the value set is too low, the agent will be stuck in a repath loop because it will constantly overshoot the distance to the target on each physics frame update.
+將這個屬性設定為小於 :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` 的值則會讓導航在更接近目標位置的地方結束（導航在抵達最後一個路徑點後不會立即停止）。不過如果設得太小，代理就會陷入重新移動的循環，因為每次物理影格更新時移動的距離都會超過與目標的實際距離。
 
 .. rst-class:: classref-item-separator
 
@@ -829,7 +829,7 @@ You can also make navigation end closer to the target than each individual path 
 
 如果為 ``true``\ ，則代理會在 3D 空間中計算全向的避障速度，例如發生在空中、水下、太空中的遊戲。使用 3D 避障的代理只會躲避其他使用 3D 避障的代理、對基於半徑的障礙物作出反應。會忽略基於頂點的障礙物。
 
-如果為 ``false``\ ，則代理會在 2D 空間中沿 X 和 Z 軸計算避障速度，忽略 Y 軸。使用 2D 避障的代理只會躲避其他使用 2D 避障的代理、對基於半徑和基於頂點的障礙物作出反應。其他使用 2D 避障的代理如果在該代理之下，或者高於該代理當前位置與 :ref:`height<class_NavigationAgent3D_property_height>` 之和則會被忽略。
+如果為 ``false``\ ，則代理會在 2D 空間中沿 X 和 Z 軸計算避障速度，忽略 Y 軸。使用 2D 避障的代理只會躲避其他使用 2D 避障的代理、對基於半徑和基於頂點的障礙物作出反應。其他使用 2D 避障的代理如果在該代理之下，或者高於該代理目前位置與 :ref:`height<class_NavigationAgent3D_property_height>` 之和則會被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -935,7 +935,7 @@ You can also make navigation end closer to the target than each individual path 
 
 :ref:`Vector3<class_Vector3>` **get_final_position**\ (\ ) :ref:`🔗<class_NavigationAgent3D_method_get_final_position>`
 
-返回目前導覽路徑上可到達的最終位置的全域座標。如果導覽路徑由於任何原因發生改變，這個位置也可能發生變化。因此，最好每一影格都檢查一下。
+回傳目前導航路徑上可到達的最終位置的全域座標。如果該代理需要更新導航路徑，從而使該代理髮出 :ref:`path_changed<class_NavigationAgent3D_signal_path_changed>` 訊號，則該位置可能會發生變化。
 
 .. rst-class:: classref-item-separator
 
@@ -983,7 +983,7 @@ You can also make navigation end closer to the target than each individual path 
 
 :ref:`float<class_float>` **get_path_length**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_path_length>`
 
-Returns the length of the currently calculated path. The returned value is ``0.0``, if the path is still calculating or no calculation has been requested yet.
+回傳目前計算得到的路徑的長度。如果仍在計算路徑或尚未請求計算，則回傳值為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1007,9 +1007,9 @@ Returns the length of the currently calculated path. The returned value is ``0.0
 
 :ref:`bool<class_bool>` **is_navigation_finished**\ (\ ) :ref:`🔗<class_NavigationAgent3D_method_is_navigation_finished>`
 
-Returns ``true`` if the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached.
+如果代理的導航已完成，則回傳 ``true``\ 。如果目標可達，則導航將在達到目標時結束。如果目標不可達，則導航將在到達路徑的最後一個航路點時結束。
 
-\ **Note:** While ``true`` prefer to stop calling update functions like :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`. This avoids jittering the standing agent due to calling repeated path updates.
+\ **注意：**\ 雖然 ``true`` 更喜歡停止呼叫更新函式，例如 :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`\ 。這避免了由於呼叫重複的路徑更新而使常設代理抖動。
 
 .. rst-class:: classref-item-separator
 
@@ -1021,7 +1021,7 @@ Returns ``true`` if the agent's navigation has finished. If the target is reacha
 
 :ref:`bool<class_bool>` **is_target_reachable**\ (\ ) :ref:`🔗<class_NavigationAgent3D_method_is_target_reachable>`
 
-如果可到達 :ref:`target_position<class_NavigationAgent3D_property_target_position>`\ ，則返回 true。目標位置由 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 設定。
+如果 :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>` 位於 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 的 :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` 範圍內，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1033,7 +1033,7 @@ Returns ``true`` if the agent's navigation has finished. If the target is reacha
 
 :ref:`bool<class_bool>` **is_target_reached**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_is_target_reached>`
 
-Returns ``true`` if the agent reached the target, i.e. the agent moved within :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent3D_property_target_position>`. It may not always be possible to reach the target but it should always be possible to reach the final position. See :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`.
+如果代理到達目標，即代理移動到 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 的 :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` 範圍內，則回傳 ``true``\ 。不一定總能到達目標，但應總能到達最終位置。請參閱 :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1045,7 +1045,7 @@ Returns ``true`` if the agent reached the target, i.e. the agent moved within :r
 
 |void| **set_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_avoidance_layer_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value`` 啟用或停用 :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -1057,7 +1057,7 @@ Returns ``true`` if the agent reached the target, i.e. the agent moved within :r
 
 |void| **set_avoidance_mask_value**\ (\ mask_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_avoidance_mask_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` 位元遮罩中指定的遮罩，給定的 ``mask_number`` 應在 1 和 32 之間。
+根據 ``value`` 啟用或停用 :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` 位元遮罩中指定的遮罩，給定的 ``mask_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -1069,7 +1069,7 @@ Returns ``true`` if the agent reached the target, i.e. the agent moved within :r
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_navigation_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`navigation_layers<class_NavigationAgent3D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`navigation_layers<class_NavigationAgent3D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

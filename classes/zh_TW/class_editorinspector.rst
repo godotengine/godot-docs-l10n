@@ -133,7 +133,7 @@ EditorInspector
 
 **property_keyed**\ (\ property\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`, advance\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInspector_signal_property_keyed>`
 
-當屬性在屬性檢視器中被 Key 時發出。當動畫面板被切換時，可以透過點擊屬性旁邊的「Key」圖示來 Key 屬性。
+當屬性在屬性檢視器中被 Key 時發出。當動畫面板被切換時，可以透過點選屬性旁邊的「Key」圖示來 Key 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ EditorInspector
 
 |void| **collapse_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_collapse_all_folding>`
 
-Collapses all foldable sections.
+折疊所有可折疊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Collapses all foldable sections.
 
 :ref:`EditorInspector<class_EditorInspector>` **create_default_inspector**\ (\ filter_line_edit\: :ref:`LineEdit<class_LineEdit>` = null\ ) |static| :ref:`🔗<class_EditorInspector_method_create_default_inspector>`
 
-Creates an inspector with the same configuration as the one used in the editor's Inspector dock. When passing a :ref:`LineEdit<class_LineEdit>` into ``filter_line_edit``, the inspector will filter its properties based on :ref:`LineEdit.text<class_LineEdit_property_text>` whenever :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` is emitted.
+建立一個屬性屬性檢視器，其設定與編輯器 Inspector 面板中使用的完全相同。當向 ``filter_line_edit`` 參數傳入一個 :ref:`LineEdit<class_LineEdit>`\ （單行文字輸入框）時，每當 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 訊號被觸發，該屬性檢視器就會根據 :ref:`LineEdit.text<class_LineEdit_property_text>`\ （輸入框中的文字內容）來過濾顯示的屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ Creates an inspector with the same configuration as the one used in the editor's
 
 |void| **edit**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_EditorInspector_method_edit>`
 
-Shows the properties of the given ``object`` in this inspector for editing. To clear the inspector, call this method with ``null``.
+在該屬性檢視器中顯示 ``object`` 物件的屬性，用於編輯。要清空屬性檢視器，請用 ``null`` 呼叫該方法。
 
-\ **Note:** If you want to edit an object in the editor's main inspector, use the ``edit_*`` methods in :ref:`EditorInterface<class_EditorInterface>` instead.
+\ **注意：**\ 如果你想要在編輯器的主屬性檢視器中編輯物件，請改用 :ref:`EditorInterface<class_EditorInterface>` 中的 ``edit_*`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Shows the properties of the given ``object`` in this inspector for editing. To c
 
 |void| **expand_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_all_folding>`
 
-Expands all foldable sections.
+展開所有可折疊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Expands all foldable sections.
 
 |void| **expand_revertable**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_revertable>`
 
-Expands only the foldable sections that contain a revertable (i.e. non-default) property.
+僅展開包含可還原屬性（即非預設值屬性）的可折疊部分。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Expands only the foldable sections that contain a revertable (i.e. non-default) 
 
 :ref:`String<class_String>` **get_selected_path**\ (\ ) |const| :ref:`🔗<class_EditorInspector_method_get_selected_path>`
 
-獲取目前選定屬性的路徑。
+取得目前選定屬性的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Expands only the foldable sections that contain a revertable (i.e. non-default) 
 
 :ref:`EditorProperty<class_EditorProperty>` **instantiate_property_editor**\ (\ object\: :ref:`Object<class_Object>`, type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, path\: :ref:`String<class_String>`, hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`, hint_text\: :ref:`String<class_String>`, usage\: :ref:`int<class_int>`, wide\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_EditorInspector_method_instantiate_property_editor>`
 
-Creates a property editor that can be used by plugin UI to edit the specified property of an ``object``.
+建立一個屬性編輯器，可以用在外掛 UI 中，編輯 ``object`` 中指定屬性。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

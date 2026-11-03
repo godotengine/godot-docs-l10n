@@ -68,7 +68,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **is_stream_playing**\ (\ stream\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_is_stream_playing>`
 
-Returns ``true`` if the stream associated with the given integer ID is still playing. Check :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` for information on when this ID becomes invalid.
+Devuelve ``true`` si la transmisión asociada al ID entero dado sigue reproduciéndose. Véase :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` para obtener información sobre cuándo este ID deja de ser válido.
 
 .. rst-class:: classref-item-separator
 

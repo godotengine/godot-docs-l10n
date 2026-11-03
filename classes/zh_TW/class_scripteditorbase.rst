@@ -141,7 +141,7 @@ ScriptEditorBase
 
 **request_save_previous_state**\ (\ state\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_previous_state>`
 
-Emitted when the user changes current script or moves caret by 10 or more columns within the same script.
+當使用者更改目前腳本或在同一腳本內將文字游標移動 10 列或更多列時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Emitted when the user changes current script or moves caret by 10 or more column
 
 **search_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_search_in_files_requested>`
 
-使用者請求在檔案系統中搜索文字時發出。
+使用者請求在檔案系統中搜尋文字時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -170,7 +170,7 @@ Emitted when the user changes current script or moves caret by 10 or more column
 
 |void| **add_syntax_highlighter**\ (\ highlighter\: :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ ) :ref:`🔗<class_ScriptEditorBase_method_add_syntax_highlighter>`
 
-Adds an :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` to the open script.
+為打開的腳本新增 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ 。
 
 .. rst-class:: classref-item-separator
 

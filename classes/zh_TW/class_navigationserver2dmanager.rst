@@ -7,16 +7,16 @@ NavigationServer2DManager
 
 **繼承：** :ref:`Object<class_Object>`
 
-A singleton for managing :ref:`NavigationServer2D<class_NavigationServer2D>` implementations.
+用於管理 :ref:`NavigationServer2D<class_NavigationServer2D>` 實作的單例。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**NavigationServer2DManager** is the API for registering :ref:`NavigationServer2D<class_NavigationServer2D>` implementations and setting the default implementation.
+**NavigationServer2DManager** 是用於注冊 :ref:`NavigationServer2D<class_NavigationServer2D>` 實作並設定預設實作的 API。
 
-\ **Note:** It is not possible to switch servers at runtime. This class is only used on startup at the server initialization level.
+\ **注意：**\ 無法在執行時中切換伺服器。該類僅在啟動時在伺服器初始化階段使用。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ A singleton for managing :ref:`NavigationServer2D<class_NavigationServer2D>` imp
 
 |void| **register_server**\ (\ name\: :ref:`String<class_String>`, create_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2DManager_method_register_server>`
 
-Registers a :ref:`NavigationServer2D<class_NavigationServer2D>` implementation by passing a ``name`` and a :ref:`Callable<class_Callable>` that returns a :ref:`NavigationServer2D<class_NavigationServer2D>` object.
+通過傳遞 ``name`` 和一個回傳 :ref:`NavigationServer2D<class_NavigationServer2D>` 物件的 :ref:`Callable<class_Callable>`\ ，注冊一個 :ref:`NavigationServer2D<class_NavigationServer2D>` 實作。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Registers a :ref:`NavigationServer2D<class_NavigationServer2D>` implementation b
 
 |void| **set_default_server**\ (\ name\: :ref:`String<class_String>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2DManager_method_set_default_server>`
 
-Sets the default :ref:`NavigationServer2D<class_NavigationServer2D>` implementation to the one identified by ``name``, if ``priority`` is greater than the priority of the current default implementation.
+如果 ``priority`` 的值大於目前預設實作的優先級，則將預設的 :ref:`NavigationServer2D<class_NavigationServer2D>` 實作設定為由 ``name`` 指定的實作。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -16,11 +16,11 @@ GraphNode
 
 **GraphNode** 能夠在 :ref:`GraphEdit<class_GraphEdit>` 圖中建立節點，節點會根據其子控制項定制內容。\ **GraphNode** 衍生自 :ref:`Container<class_Container>`\ ，負責將其子節點放置在螢幕上。工作原理類似於 :ref:`VBoxContainer<class_VBoxContainer>`\ 。而子節點為 **GraphNode** 提供所謂的插槽，每個插槽的兩側都可以有一個連接埠。
 
-\ **GraphNode** 的插槽由其索引定義，一個插槽可以為節點提供最多兩個埠：一個在左側，一個在右側。根據慣例，左側埠也被稱為\ **輸入埠**\ ，右側埠被稱為\ **輸出埠**\ 。每個埠都可以單獨啟用和配置，使用不同的型別和顏色。型別是你按照自己的需要來定義的任意值。父 :ref:`GraphEdit<class_GraphEdit>` 將在每個連接和斷開連接請求中收到此信息。
+\ **GraphNode** 的插槽由其索引定義，一個插槽可以為節點提供最多兩個埠：一個在左側，一個在右側。根據慣例，左側埠也被稱為\ **輸入埠**\ ，右側埠被稱為\ **輸出埠**\ 。每個埠都可以單獨啟用和配置，使用不同的型別和顏色。型別是你按照自己的需要來定義的任意值。父 :ref:`GraphEdit<class_GraphEdit>` 將在每個連接和斷開連接請求中收到此資訊。
 
 新增至少一個子 :ref:`Control<class_Control>` 後，就可以在“屬性檢視器”面板中配置插槽。這些屬性在“Slot”部分中按每個插槽的索引進行群組。
 
-\ **注意：**\ 雖然 GraphNode 是使用插槽和插槽索引設定的，但連接是在啟用的埠之間建立的。因此 :ref:`GraphEdit<class_GraphEdit>` 使用埠的索引，而不是插槽的索引。可以使用 :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` 和 :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` 從埠索引中獲取插槽索引。
+\ **注意：**\ 雖然 GraphNode 是使用插槽和插槽索引設定的，但連接是在啟用的埠之間建立的。因此 :ref:`GraphEdit<class_GraphEdit>` 使用埠的索引，而不是插槽的索引。可以使用 :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` 和 :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` 從埠索引中取得插槽索引。
 
 .. rst-class:: classref-reftable-group
 
@@ -173,7 +173,7 @@ GraphNode
 
 **slot_sizes_changed**\ (\ ) :ref:`🔗<class_GraphNode_signal_slot_sizes_changed>`
 
-Emitted when any slot's size might have changed.
+當任意插槽的大小可能已更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Emitted when any slot's size might have changed.
 - |void| **set_ignore_invalid_connection_type**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_valid_connection_type**\ (\ )
 
-If ``true``, you can connect ports with different types, even if the connection was not explicitly allowed in the parent :ref:`GraphEdit<class_GraphEdit>`.
+如果為 ``true``\ ，則可以連接不同型別的連接埠，即使父級 :ref:`GraphEdit<class_GraphEdit>` 中未明確允許該連接。
 
 .. rst-class:: classref-item-separator
 
@@ -224,13 +224,13 @@ If ``true``, you can connect ports with different types, even if the connection 
 - |void| **set_slots_focus_mode**\ (\ value\: :ref:`FocusMode<enum_Control_FocusMode>`\ )
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_slots_focus_mode**\ (\ )
 
-Determines how connection slots can be focused.
+決定連接槽位的聚焦方法。
 
-- If set to :ref:`Control.FOCUS_CLICK<class_Control_constant_FOCUS_CLICK>`, connections can only be made with the mouse.
+- 如果設為 :ref:`Control.FOCUS_CLICK<class_Control_constant_FOCUS_CLICK>`\ ，則只能使用滑鼠建立連接。
 
-- If set to :ref:`Control.FOCUS_ALL<class_Control_constant_FOCUS_ALL>`, slots can also be focused using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` and :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` and connected using :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` and :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` input actions.
+- 如果設為 :ref:`Control.FOCUS_ALL<class_Control_constant_FOCUS_ALL>`\ ，則槽位還可以使用 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 和 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 聚焦，使用 :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` 和 :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` 輸入動作連接。
 
-- If set to :ref:`Control.FOCUS_ACCESSIBILITY<class_Control_constant_FOCUS_ACCESSIBILITY>`, slot input actions are only enabled when the screen reader is active.
+- 如果設為 :ref:`Control.FOCUS_ACCESSIBILITY<class_Control_constant_FOCUS_ACCESSIBILITY>`\ ，則只會在讀屏軟體活動時啟用槽位輸入動作。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Determines how connection slots can be focused.
 
 |void| **clear_all_slots**\ (\ ) :ref:`🔗<class_GraphNode_method_clear_all_slots>`
 
-禁用 GraphNode 的所有輸入和輸出槽。
+停用 GraphNode 的所有輸入和輸出槽。
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Determines how connection slots can be focused.
 
 :ref:`int<class_int>` **get_input_port_type**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_type>`
 
-Returns the type of the input port with the given ``port_idx``.
+回傳索引為 ``port_idx`` 的輸入連接埠的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the type of the input port with the given ``port_idx``.
 
 :ref:`Vector2<class_Vector2>` **get_output_port_position**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_output_port_position>`
 
-Returns the position of the output port with the given ``port_idx``.
+回傳索引為 ``port_idx`` 的輸出連接埠的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Returns the position of the output port with the given ``port_idx``.
 
 :ref:`Texture2D<class_Texture2D>` **get_slot_custom_icon_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_custom_icon_left>`
 
-Returns the left (input) custom :ref:`Texture2D<class_Texture2D>` of the slot with the given ``slot_index``.
+回傳具有給定 ``slot_index`` 的插槽的左側（輸入）的自訂 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Returns the left (input) custom :ref:`Texture2D<class_Texture2D>` of the slot wi
 
 :ref:`Texture2D<class_Texture2D>` **get_slot_custom_icon_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_custom_icon_right>`
 
-Returns the right (output) custom :ref:`Texture2D<class_Texture2D>` of the slot with the given ``slot_index``.
+回傳具有給定 ``slot_index`` 的插槽的右側（輸出）的自訂 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Returns the right (output) custom :ref:`Texture2D<class_Texture2D>` of the slot 
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_left>`
 
-Returns the left (input) metadata of the slot with the given ``slot_index``.
+回傳索引為 ``slot_index`` 的插槽左側（輸入）的中繼資料。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns the left (input) metadata of the slot with the given ``slot_index``.
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_right>`
 
-Returns the right (output) metadata of the slot with the given ``slot_index``.
+回傳索引為 ``slot_index`` 的插槽右側（輸出）的中繼資料。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`bool<class_bool>` **is_slot_draw_stylebox**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_is_slot_draw_stylebox>`
 
-Returns ``true`` if the background :ref:`StyleBox<class_StyleBox>` of the slot with the given ``slot_index`` is drawn.
+如果繪製索引為 ``slot_index`` 的槽位的背景 :ref:`StyleBox<class_StyleBox>`\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -572,9 +572,9 @@ Returns ``true`` if the background :ref:`StyleBox<class_StyleBox>` of the slot w
 
 使用 ``type_left``/``type_right`` 可以為每個埠分配一個任意型別。如果兩個埠具有相同的型別，或者如果它們的型別之間的連接在父 :ref:`GraphEdit<class_GraphEdit>` 中被允許（參見 :ref:`GraphEdit.add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`\ ），那麼這兩個埠就可以被連接。請記住，\ :ref:`GraphEdit<class_GraphEdit>` 在接受連接上擁有最終決定權。型別相容性只允許發出 :ref:`GraphEdit.connection_request<class_GraphEdit_signal_connection_request>` 訊號。
 
-可以使用 ``color_left``/``color_right`` 和 ``custom_icon_left``/``custom_icon_right`` 進一步定制埠。顏色參數為圖示新增了一個色調。自定義圖示可以用來覆蓋預設的埠點。
+可以使用 ``color_left``/``color_right`` 和 ``custom_icon_left``/``custom_icon_right`` 進一步定制埠。顏色參數為圖示新增了一個色調。自訂圖示可以用來覆蓋預設的埠點。
 
-此外，\ ``draw_stylebox`` 可以用來啟用或禁用每個插槽的背景樣式框的繪製。參見 :ref:`slot<class_GraphNode_theme_style_slot>`\ 。
+此外，\ ``draw_stylebox`` 可以用來啟用或停用每個插槽的背景樣式框的繪製。參見 :ref:`slot<class_GraphNode_theme_style_slot>`\ 。
 
 單個屬性也可以使用 ``set_slot_*`` 方法之一來設定。
 
@@ -614,7 +614,7 @@ Returns ``true`` if the background :ref:`StyleBox<class_StyleBox>` of the slot w
 
 |void| **set_slot_custom_icon_left**\ (\ slot_index\: :ref:`int<class_int>`, custom_icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_custom_icon_left>`
 
-Sets the custom :ref:`Texture2D<class_Texture2D>` of the left (input) side of the slot with the given ``slot_index`` to ``custom_icon``.
+將索引為 ``slot_index`` 的插槽的左側（輸入）的自訂 :ref:`Texture2D<class_Texture2D>` 設定為 ``custom_icon``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -626,7 +626,7 @@ Sets the custom :ref:`Texture2D<class_Texture2D>` of the left (input) side of th
 
 |void| **set_slot_custom_icon_right**\ (\ slot_index\: :ref:`int<class_int>`, custom_icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_custom_icon_right>`
 
-Sets the custom :ref:`Texture2D<class_Texture2D>` of the right (output) side of the slot with the given ``slot_index`` to ``custom_icon``.
+將索引為 ``slot_index`` 的插槽的右側（輸出）的自訂 :ref:`Texture2D<class_Texture2D>` 設定為 ``custom_icon``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Sets the custom :ref:`Texture2D<class_Texture2D>` of the right (output) side of 
 
 |void| **set_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_left>`
 
-Sets the custom metadata for the left (input) side of the slot with the given ``slot_index`` to ``value``.
+將索引為 ``slot_index`` 的插槽的左側（輸入）的自訂中繼資料設定為 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Sets the custom metadata for the left (input) side of the slot with the given ``
 
 |void| **set_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_right>`
 
-Sets the custom metadata for the right (output) side of the slot with the given ``slot_index`` to ``value``.
+將索引為 ``slot_index`` 的插槽的右側（輸出）的自訂中繼資料設定為 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -787,7 +787,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **panel_focus** :ref:`🔗<class_GraphNode_theme_style_panel_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **GraphNode** is focused (when used with assistive apps).
+當 **GraphNode** 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （使用輔助應用時）。
 
 .. rst-class:: classref-item-separator
 
@@ -823,7 +823,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **slot_selected** :ref:`🔗<class_GraphNode_theme_style_slot_selected>`
 
-:ref:`StyleBox<class_StyleBox>` used when the slot is focused (when used with assistive apps).
+當插槽處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （使用輔助應用時）。
 
 .. rst-class:: classref-item-separator
 

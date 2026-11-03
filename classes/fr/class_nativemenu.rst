@@ -868,9 +868,9 @@ Returns the text of the system menu item.
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Feature<enum_NativeMenu_Feature>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_feature>`
 
-Returns ``true`` if the specified ``feature`` is supported by the current **NativeMenu**, ``false`` otherwise.
+Renvoie ``true`` si la fonctionnalité ``feature`` spécifiée est supportée par le **NativeMenu** actuel, ``false`` sinon.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Note :** Cette méthode est implémentée sur macOS et Windows.
 
 .. rst-class:: classref-item-separator
 

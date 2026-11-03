@@ -14,7 +14,7 @@ ProgressBar
 說明
 ----
 
-A control used for visual representation of a percentage. Shows the fill percentage in the center. Can also be used to show indeterminate progress. For more fill modes, use :ref:`TextureProgressBar<class_TextureProgressBar>` instead.
+將百分比視覺化表示的控制項。在中央顯示填充百分比。還可以用來顯示尚未確定的進度。如果需要更多填充模式，請改用 :ref:`TextureProgressBar<class_TextureProgressBar>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -125,7 +125,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 - |void| **set_editor_preview_indeterminate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editor_preview_indeterminate_enabled**\ (\ )
 
-If ``false``, the :ref:`indeterminate<class_ProgressBar_property_indeterminate>` animation will be paused in the editor.
+如果為 ``false``\ ，則會在編輯器中暫停 :ref:`indeterminate<class_ProgressBar_property_indeterminate>` 動畫。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ If ``false``, the :ref:`indeterminate<class_ProgressBar_property_indeterminate>`
 - |void| **set_indeterminate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_indeterminate**\ (\ )
 
-When set to ``true``, the progress bar indicates that something is happening with an animation, but does not show the fill percentage or value.
+設為 ``true`` 時，進度表會使用動畫來表示正在執行某些操作，但是不會顯示填充和具體的值。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ When set to ``true``, the progress bar indicates that something is happening wit
 
 文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 

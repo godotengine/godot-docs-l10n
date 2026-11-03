@@ -17,11 +17,11 @@ SpinBox
 說明
 ----
 
-**SpinBox** is a numerical input text field. It allows entering integers and floating-point numbers. The **SpinBox** also has up and down buttons that can be clicked to increase or decrease the value. The value can also be changed by dragging the mouse up or down over the **SpinBox**'s arrows.
+**SpinBox**\ （數值調節框）是一個用於輸入數字的文字框。它允許使用者輸入整數和浮點數（小數）。\ **SpinBox** 還帶有上、下按鈕，點選它們可以增加或減少數值。此外，在 **SpinBox** 的箭頭區域按住滑鼠上下拖動，也可以改變數值。
 
-Additionally, mathematical expressions can be entered. These are evaluated when the user presses :kbd:`Enter` while editing the **SpinBox**'s text field. This uses the :ref:`Expression<class_Expression>` class to parse and evaluate the expression. The result of the expression is then set as the value of the **SpinBox**. Some examples of valid expressions are ``5 + 2 * 3``, ``pow(2, 4)``, and ``PI + sin(0.5)``. Expressions are case-sensitive.
+另外，它還可以直接輸入數學運算式。當使用者在編輯 **SpinBox** 文字框時按下 :kbd:`Enter`\ （Enter 鍵），這些運算式就會被自動計算。這是通過 :ref:`Expression<class_Expression>` 類來解析和求值的，計算得出的結果會被直接設為 **SpinBox** 的目前值。一些有效的運算式範例包括：\ ``5 + 2 * 3``\ 、\ ``pow(2, 4)`` 以及 ``PI + sin(0.5)``\ 。需要注意的是，運算式是區分大小寫的。
 
-\ **Example:** Create a **SpinBox**, disable its context menu and set its text alignment to right.
+\ **範例：** 建立一個 **SpinBox**\ ，停用它的右鍵情境選單，並將其文字對齊方式設定為右對齊。
 
 
 .. tabs::
@@ -44,13 +44,13 @@ Additionally, mathematical expressions can be entered. These are evaluated when 
 
 
 
-See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
+請參閱 :ref:`Range<class_Range>`\ （範圍）類，瞭解 **SpinBox** 的更多選項。
 
-\ **Note:** With the **SpinBox**'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.
+\ **注意：** 如果停用了 **SpinBox** 的情境選單（右鍵選單），你可以在數值調節框的下半部分點選右鍵，將值設為其最小值；而在上半部分點選右鍵，則會將值設為其最大值。
 
-\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
+\ **注意：** **SpinBox** 底層取決於一個 :ref:`LineEdit<class_LineEdit>`\ （單行文字框）節點。如果想要修改 **SpinBox** 的背景主題，需要新增並自訂 :ref:`LineEdit<class_LineEdit>` 的主題項。該 :ref:`LineEdit<class_LineEdit>` 帶有 ``SpinBoxInnerLineEdit`` 主題變體，這樣你就可以讓它擁有區別於普通 :ref:`LineEdit<class_LineEdit>` 的獨特外觀。
 
-\ **Note:** If you want to implement drag and drop for the underlying :ref:`LineEdit<class_LineEdit>`, you can use :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` on the node returned by :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
+\ **注意：** 如果你想為底層的 :ref:`LineEdit<class_LineEdit>` 實作拖放（Drag and Drop）功能，可以在 :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>` 方法回傳的節點上使用 :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -205,7 +205,7 @@ See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
 - |void| **set_custom_arrow_round**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_custom_arrow_rounding**\ (\ )
 
-If ``true``, the value will be rounded to a multiple of :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` when interacting with the arrow buttons. Otherwise, increments the value by :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` and then rounds it according to :ref:`Range.step<class_Range_property_step>`.
+如果為 ``true``\ ，則與箭頭按鈕互動時，該值將四捨五入為 :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` 的倍數。否則，值將增加 :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>`\ ，然後根據 :ref:`Range.step<class_Range_property_step>` 進行四捨五入。
 
 .. rst-class:: classref-item-separator
 
@@ -222,9 +222,9 @@ If ``true``, the value will be rounded to a multiple of :ref:`custom_arrow_step<
 - |void| **set_custom_arrow_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_custom_arrow_step**\ (\ )
 
-If not ``0``, sets the step when interacting with the arrow buttons of the **SpinBox**.
+如果不是 ``0``\ ，則設定與 **SpinBox** 的箭頭按鈕互動時的步長。
 
-\ **Note:** :ref:`Range.value<class_Range_property_value>` will still be rounded to a multiple of :ref:`Range.step<class_Range_property_step>`.
+\ **注意：**\ :ref:`Range.value<class_Range_property_value>` 仍然會捨入到 :ref:`Range.step<class_Range_property_step>` 的倍數。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ If not ``0``, sets the step when interacting with the arrow buttons of the **Spi
 - |void| **set_prefix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_prefix**\ (\ )
 
-Adds the specified prefix string before the numerical value of the **SpinBox**.
+在 **SpinBox** 的數值前新增指定的前綴字串。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Adds the specified prefix string before the numerical value of the **SpinBox**.
 - |void| **set_select_all_on_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_select_all_on_focus**\ (\ )
 
-如果為 ``true``\ ，則該 **SpinBox** 會在 :ref:`LineEdit<class_LineEdit>` 獲得焦點時選中整個文本。點擊上下箭頭不會觸發這種行為。
+如果為 ``true``\ ，則該 **SpinBox** 會在 :ref:`LineEdit<class_LineEdit>` 獲得焦點時選中整個文字。點選上下箭頭不會觸發這種行為。
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Adds the specified prefix string before the numerical value of the **SpinBox**.
 - |void| **set_suffix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_suffix**\ (\ )
 
-Adds the specified suffix string after the numerical value of the **SpinBox**.
+在 **SpinBox** 的數值後新增指定的後綴字串。
 
 .. rst-class:: classref-item-separator
 
@@ -309,9 +309,9 @@ Adds the specified suffix string after the numerical value of the **SpinBox**.
 - |void| **set_update_on_text_changed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_update_on_text_changed**\ (\ )
 
-Sets the value of the :ref:`Range<class_Range>` for this **SpinBox** when the :ref:`LineEdit<class_LineEdit>` text is *changed* instead of *submitted*. See :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` and :ref:`LineEdit.text_submitted<class_LineEdit_signal_text_submitted>`.
+設定該 **SpinBox** 的 :ref:`Range<class_Range>` 值在 :ref:`LineEdit<class_LineEdit>` 文字\ *發生改變時*\ 更新，不再在\ *提交時*\ 更新。見 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 和 :ref:`LineEdit.text_submitted<class_LineEdit_signal_text_submitted>`\ 。
 
-\ **Note:** If set to ``true``, this will interfere with entering mathematical expressions in the **SpinBox**. The **SpinBox** will try to evaluate the expression as you type, which means symbols like a trailing ``+`` are removed immediately by the expression being evaluated.
+\ **注意：**\ 如果設定為 ``true``\ ，會影響在 **SpinBox** 中輸入數學運算式。\ **SpinBox** 會在你打字時嘗試對運算式求值，因此，部分符號會因為運算式求值而被立即移除，例如末尾的 ``+`` 號。
 
 .. rst-class:: classref-section-separator
 
@@ -328,7 +328,7 @@ Sets the value of the :ref:`Range<class_Range>` for this **SpinBox** when the :r
 
 |void| **apply**\ (\ ) :ref:`🔗<class_SpinBox_method_apply>`
 
-Applies the current value of this **SpinBox**. This is equivalent to pressing :kbd:`Enter` while editing the :ref:`LineEdit<class_LineEdit>` used by the **SpinBox**. This will cause :ref:`LineEdit.text_submitted<class_LineEdit_signal_text_submitted>` to be emitted and its currently contained expression to be evaluated.
+應用 **SpinBox** 的目前值。等價於在 **SpinBox** 所使用的 :ref:`LineEdit<class_LineEdit>` 中進行編輯時按下 :kbd:`Enter` 鍵。會導致發出 :ref:`LineEdit.text_submitted<class_LineEdit_signal_text_submitted>`\ 、對目前所包含的運算式進行求值。
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Applies the current value of this **SpinBox**. This is equivalent to pressing :k
 
 :ref:`Color<class_Color>` **down_disabled_icon_modulate** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_SpinBox_theme_color_down_disabled_icon_modulate>`
 
-Down button icon modulation color, when the button is disabled.
+向下按鈕處於停用狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ Down button icon modulation color, when the button is disabled.
 
 :ref:`Color<class_Color>` **down_hover_icon_modulate** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_SpinBox_theme_color_down_hover_icon_modulate>`
 
-Down button icon modulation color, when the button is hovered.
+向下按鈕處於懸停狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Down button icon modulation color, when the button is hovered.
 
 :ref:`Color<class_Color>` **down_icon_modulate** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_SpinBox_theme_color_down_icon_modulate>`
 
-Down button icon modulation color.
+向下按鈕的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Down button icon modulation color.
 
 :ref:`Color<class_Color>` **down_pressed_icon_modulate** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_SpinBox_theme_color_down_pressed_icon_modulate>`
 
-Down button icon modulation color, when the button is being pressed.
+向下按鈕處於按下狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Down button icon modulation color, when the button is being pressed.
 
 :ref:`Color<class_Color>` **up_disabled_icon_modulate** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_SpinBox_theme_color_up_disabled_icon_modulate>`
 
-Up button icon modulation color, when the button is disabled.
+向上按鈕處於停用狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Up button icon modulation color, when the button is disabled.
 
 :ref:`Color<class_Color>` **up_hover_icon_modulate** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_SpinBox_theme_color_up_hover_icon_modulate>`
 
-Up button icon modulation color, when the button is hovered.
+向上按鈕處於懸停狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ Up button icon modulation color, when the button is hovered.
 
 :ref:`Color<class_Color>` **up_icon_modulate** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_SpinBox_theme_color_up_icon_modulate>`
 
-Up button icon modulation color.
+向上按鈕的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Up button icon modulation color.
 
 :ref:`Color<class_Color>` **up_pressed_icon_modulate** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_SpinBox_theme_color_up_pressed_icon_modulate>`
 
-Up button icon modulation color, when the button is being pressed.
+向上按鈕處於按下狀態時的圖示調制顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Up button icon modulation color, when the button is being pressed.
 
 :ref:`int<class_int>` **buttons_vertical_separation** = ``0`` :ref:`🔗<class_SpinBox_theme_constant_buttons_vertical_separation>`
 
-Vertical separation between the up and down buttons.
+上下按鈕之間的垂直間隔。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Vertical separation between the up and down buttons.
 
 :ref:`int<class_int>` **buttons_width** = ``16`` :ref:`🔗<class_SpinBox_theme_constant_buttons_width>`
 
-Width of the up and down buttons. If smaller than any icon set on the buttons, the respective icon may overlap neighboring elements. If smaller than ``0``, the width is automatically adjusted from the icon size.
+上下按鈕的寬度。如果小於按鈕上設定的圖示，那麼對應的圖示就可能與相鄰的元素重疊。如果小於 ``0``\ ，那麼就會根據圖示的大小自動調整寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Width of the up and down buttons. If smaller than any icon set on the buttons, t
 
 :ref:`int<class_int>` **field_and_buttons_separation** = ``2`` :ref:`🔗<class_SpinBox_theme_constant_field_and_buttons_separation>`
 
-Width of the horizontal separation between the text input field (:ref:`LineEdit<class_LineEdit>`) and the buttons.
+文字輸入框（\ :ref:`LineEdit<class_LineEdit>`\ ）與按鈕之間的水平間隔寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Width of the horizontal separation between the text input field (:ref:`LineEdit<
 
 :ref:`int<class_int>` **set_min_buttons_width_from_icons** = ``1`` :ref:`🔗<class_SpinBox_theme_constant_set_min_buttons_width_from_icons>`
 
-If not ``0``, the minimum button width corresponds to the widest of all icons set on those buttons, even if :ref:`buttons_width<class_SpinBox_theme_constant_buttons_width>` is smaller.
+如果非 ``0``\ ，則最小按鈕寬度對應這些按鈕所設定的最寬的圖示，即便 :ref:`buttons_width<class_SpinBox_theme_constant_buttons_width>` 更小。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ If not ``0``, the minimum button width corresponds to the widest of all icons se
 
 :ref:`Texture2D<class_Texture2D>` **down** :ref:`🔗<class_SpinBox_theme_icon_down>`
 
-Down button icon, displayed in the middle of the down (value-decreasing) button.
+向下按鈕的圖示，在下按鈕（減小取值）的中間顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Down button icon, displayed in the middle of the down (value-decreasing) button.
 
 :ref:`Texture2D<class_Texture2D>` **down_disabled** :ref:`🔗<class_SpinBox_theme_icon_down_disabled>`
 
-Down button icon when the button is disabled.
+向下按鈕停用時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Down button icon when the button is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **down_hover** :ref:`🔗<class_SpinBox_theme_icon_down_hover>`
 
-Down button icon when the button is hovered.
+向下按鈕懸停時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Down button icon when the button is hovered.
 
 :ref:`Texture2D<class_Texture2D>` **down_pressed** :ref:`🔗<class_SpinBox_theme_icon_down_pressed>`
 
-Down button icon when the button is being pressed.
+向下按鈕按下時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Down button icon when the button is being pressed.
 
 :ref:`Texture2D<class_Texture2D>` **up** :ref:`🔗<class_SpinBox_theme_icon_up>`
 
-Up button icon, displayed in the middle of the up (value-increasing) button.
+向上按鈕的圖示，在上按鈕（增加取值）的中間顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Up button icon, displayed in the middle of the up (value-increasing) button.
 
 :ref:`Texture2D<class_Texture2D>` **up_disabled** :ref:`🔗<class_SpinBox_theme_icon_up_disabled>`
 
-Up button icon when the button is disabled.
+向上按鈕停用時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Up button icon when the button is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **up_hover** :ref:`🔗<class_SpinBox_theme_icon_up_hover>`
 
-Up button icon when the button is hovered.
+向上按鈕懸停時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Up button icon when the button is hovered.
 
 :ref:`Texture2D<class_Texture2D>` **up_pressed** :ref:`🔗<class_SpinBox_theme_icon_up_pressed>`
 
-Up button icon when the button is being pressed.
+向上按鈕按下時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Up button icon when the button is being pressed.
 
 :ref:`Texture2D<class_Texture2D>` **updown** :ref:`🔗<class_SpinBox_theme_icon_updown>`
 
-Single texture representing both the up and down buttons icons. It is displayed in the middle of the buttons and does not change upon interaction. If a valid icon is assigned, it will replace :ref:`up<class_SpinBox_theme_icon_up>` and :ref:`down<class_SpinBox_theme_icon_down>`.
+代表上下按鈕圖示的單個紋理。該紋理顯示在按鈕中間，互動式不會改變。分配有效的圖示後會代替 :ref:`up<class_SpinBox_theme_icon_up>` 和 :ref:`down<class_SpinBox_theme_icon_down>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Single texture representing both the up and down buttons icons. It is displayed 
 
 :ref:`StyleBox<class_StyleBox>` **down_background** :ref:`🔗<class_SpinBox_theme_style_down_background>`
 
-Background style of the down button.
+向下按鈕的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ Background style of the down button.
 
 :ref:`StyleBox<class_StyleBox>` **down_background_disabled** :ref:`🔗<class_SpinBox_theme_style_down_background_disabled>`
 
-Background style of the down button when disabled.
+向下按鈕停用時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -635,7 +635,7 @@ Background style of the down button when disabled.
 
 :ref:`StyleBox<class_StyleBox>` **down_background_hovered** :ref:`🔗<class_SpinBox_theme_style_down_background_hovered>`
 
-Background style of the down button when hovered.
+向下按鈕懸停時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +647,7 @@ Background style of the down button when hovered.
 
 :ref:`StyleBox<class_StyleBox>` **down_background_pressed** :ref:`🔗<class_SpinBox_theme_style_down_background_pressed>`
 
-Background style of the down button when being pressed.
+向下按鈕按下時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -659,7 +659,7 @@ Background style of the down button when being pressed.
 
 :ref:`StyleBox<class_StyleBox>` **field_and_buttons_separator** :ref:`🔗<class_SpinBox_theme_style_field_and_buttons_separator>`
 
-:ref:`StyleBox<class_StyleBox>` drawn in the space occupied by the separation between the input field and the buttons.
+輸入框和按鈕之間的間隔區域內繪製的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Background style of the down button when being pressed.
 
 :ref:`StyleBox<class_StyleBox>` **up_background** :ref:`🔗<class_SpinBox_theme_style_up_background>`
 
-Background style of the up button.
+向上按鈕的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ Background style of the up button.
 
 :ref:`StyleBox<class_StyleBox>` **up_background_disabled** :ref:`🔗<class_SpinBox_theme_style_up_background_disabled>`
 
-Background style of the up button when disabled.
+向上按鈕停用時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -695,7 +695,7 @@ Background style of the up button when disabled.
 
 :ref:`StyleBox<class_StyleBox>` **up_background_hovered** :ref:`🔗<class_SpinBox_theme_style_up_background_hovered>`
 
-Background style of the up button when hovered.
+向上按鈕懸停時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -707,7 +707,7 @@ Background style of the up button when hovered.
 
 :ref:`StyleBox<class_StyleBox>` **up_background_pressed** :ref:`🔗<class_SpinBox_theme_style_up_background_pressed>`
 
-Background style of the up button when being pressed.
+向上按鈕按下時的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -719,7 +719,7 @@ Background style of the up button when being pressed.
 
 :ref:`StyleBox<class_StyleBox>` **up_down_buttons_separator** :ref:`🔗<class_SpinBox_theme_style_up_down_buttons_separator>`
 
-:ref:`StyleBox<class_StyleBox>` drawn in the space occupied by the separation between the up and down buttons.
+上下按鈕之間的間隔區域內繪製的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

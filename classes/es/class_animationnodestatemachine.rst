@@ -300,7 +300,7 @@ Devuelve las coordenadas del nodo de animación especificado. Se utiliza para vi
 
 :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>` **get_transition**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition>`
 
-Devuelve la transicion dada.
+Devuelve la transición dada.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Devuelve el número de conexiones en el gráfico.
 
 :ref:`StringName<class_StringName>` **get_transition_from**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_from>`
 
-Devuelve el nodo de comienzo de la transicion dada.
+Devuelve el nodo de comienzo de la transición dada.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Devuelve el nodo de comienzo de la transicion dada.
 
 :ref:`StringName<class_StringName>` **get_transition_to**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_to>`
 
-Devuelve el nodo final de la transicion dada.
+Devuelve el nodo final de la transición dada.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Elimina la transición entre los dos nodos de animación especificados.
 
 |void| **remove_transition_by_index**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_remove_transition_by_index>`
 
-Elimina la transicion dado un indice.
+Elimina la transición dada según su índice.
 
 .. rst-class:: classref-item-separator
 

@@ -14,13 +14,13 @@ Paramètres de caméra en un format facile à utiliser.
 Description
 -----------
 
-Controls camera-specific attributes such as auto-exposure, depth of field, and exposure override.
+Contrôle des attributs spécifiques à la caméra tels que l'exposition automatique, la profondeur de champ et la redéfinition de l'exposition.
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+Lors qu’utilisée dans un :ref:`WorldEnvironment<class_WorldEnvironment>`, elle fournit des paramètres par défaut pour l'exposition, l'exposition automatique et la profondeur de champ qui seront utilisés par toutes les caméras sans leurs propres :ref:`CameraAttributes<class_CameraAttributes>`, y compris la caméra de l'éditeur. Lors qu'utilisée dans une :ref:`Camera3D<class_Camera3D>`, elle redéfinira tout :ref:`CameraAttributes<class_CameraAttributes>` défini dans le :ref:`WorldEnvironment<class_WorldEnvironment>`. Lors qu'utilisée dans :ref:`VoxelGI<class_VoxelGI>` ou :ref:`LightmapGI<class_LightmapGI>`, seuls les paramètres d'exposition seront utilisés.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Note :** Le flou de la profondeur de champ n'est supporté que dans les moteurs de rendu Forward+ et Mobile, pas Compatibilité.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Note :** L'exposition automatique est uniquement supporté dans le moteur de rendu Forward+, pas Mobile ou Compatibilité.
 
 .. rst-class:: classref-reftable-group
 

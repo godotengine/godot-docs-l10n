@@ -7,20 +7,20 @@ EditorTranslationParserPlugin
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於新增自訂解析器，以從自訂檔案（.csv、.json等）提取已翻譯的字串的插件。
+用於新增自訂解析器，以從自訂檔案（.csv、.json等）提取已翻譯的字串的外掛。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
+當 Godot 解析檔案並提取需要翻譯的字串時，\ **EditorTranslationParserPlugin** 就會被觸發。你需要在腳本中覆寫 :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` 方法，來定義具體的解析和字串提取邏輯。
 
-The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
+該方法的回傳值應該是一個包含多個 :ref:`PackedStringArray<class_PackedStringArray>` 的 :ref:`Array<class_Array>`\ ，每一個陣列對應一條提取出的可翻譯字串。每條資料應包含 ``[msgid, msgctxt, msgid_plural, comment, source_line]``\ ，其中除了 ``msgid``\ （原文）是必填項外，其他都是可選項。如果填入空字串，將會被自動忽略。
 
-The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
+提取出來的字串最終會被寫入到翻譯範本檔案中。這個範本檔案的路徑，可以在“項目設定”選單的“在地化”分頁下的“範本生成”選項中進行指定。
 
-Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
+下面展示了一個自訂解析器的範例，它會從 CSV 檔案中提取字串並寫入到翻譯範本里。
 
 
 .. tabs::
@@ -73,7 +73,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
 
 
 
-To add a translatable string associated with a context, plural, comment, or source line:
+要新增一條附帶情境（context）、複數形式（plural）、注釋（comment）或原始碼行號（source line）的可翻譯字串：
 
 
 .. tabs::
@@ -98,7 +98,7 @@ To add a translatable string associated with a context, plural, comment, or sour
 
 
 
-\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
+\ **注意：** 如果你覆寫了標準腳本型別（比如 GDScript、C# 等）的解析邏輯，最好使用 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` 方法來載入 ``path`` 參數。這是因為內建腳本（Built-in scripts）在 Godot 里是被當作 :ref:`Resource<class_Resource>`\ （資源）型別來載入的，而不是 :ref:`FileAccess<class_FileAccess>`\ （檔案存取）型別。舉個例子：
 
 
 .. tabs::
@@ -129,9 +129,9 @@ To add a translatable string associated with a context, plural, comment, or sour
 
 
 
-Alternatively, the plugin can directly modify the final list of strings, by implementing :ref:`_customize_strings()<class_EditorTranslationParserPlugin_private_method__customize_strings>`.
+或者，外掛也可以通過實作 :ref:`_customize_strings()<class_EditorTranslationParserPlugin_private_method__customize_strings>` 方法，來直接修改最終的字串清單。
 
-To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
+如果要使用 **EditorTranslationParserPlugin**\ ，你需要先通過 :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` 方法將它注冊到編輯器中。
 
 .. rst-class:: classref-reftable-group
 
@@ -164,7 +164,7 @@ To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlug
 
 :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] **_customize_strings**\ (\ strings\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__customize_strings>`
 
-Called after parsing all files. You can modify the ``strings`` array to add or remove entries from the final list of strings, then return it after modifications. Each entry is a :ref:`PackedStringArray<class_PackedStringArray>` like explained in the **EditorTranslationParserPlugin**'s description.
+解析完所有檔案後呼叫。你可以修改 ``strings`` 陣列，以向最終的字串清單中新增或移除條目，修改完成後請將其回傳。每個條目都是一個 :ref:`PackedStringArray<class_PackedStringArray>`\ ，具體格式如 **EditorTranslationParserPlugin** 描述中所述。
 
 ::
 
@@ -172,10 +172,10 @@ Called after parsing all files. You can modify the ``strings`` array to add or r
     extends EditorTranslationParserPlugin
 
     func _customize_strings(strings):
-        # Add new string.
+        # 新增新字串。
         strings.append(["Test 1", "context", "test 1 plurals", "test 1 comment"])
 
-        # Remove all strings that begin with $.
+        # 移除所有以 $ 開頭的字串。
         strings = strings.filter(func(s): return not s[0].begins_with("$"))
 
         return strings
@@ -190,7 +190,7 @@ Called after parsing all files. You can modify the ``strings`` array to add or r
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__get_recognized_extensions>`
 
-獲取與該解析器關聯的檔副檔名列表，例如 ``["csv"]``\ 。
+取得與該解析器關聯的檔副檔名列表，例如 ``["csv"]``\ 。
 
 .. rst-class:: classref-item-separator
 

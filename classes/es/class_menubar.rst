@@ -184,7 +184,7 @@ Si es ``true``, **MenuBar** usará el menú global del sistema cuando sea compat
 
 \ **Nota:** Si es ``true`` y el menú global es compatible, este nodo no se muestra, tiene tamaño cero y todos sus nodos hijo, excepto los :ref:`PopupMenu<class_PopupMenu>`\ s, son inaccesibles.
 
-\ **Nota:** Esta propiedad anula el valor de la propiedad :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` de los nodos hijo.
+\ **Nota:** Esta propiedad sobrescribe el valor de la propiedad :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` de los nodos hijo.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ El espacio horizontal entre los elementos del menú.
 
 El tamaño del contorno del texto.
 
-\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
+\ **Nota:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

@@ -600,9 +600,10 @@ Devuelve ``true`` si el diccionario contiene una entrada con la ``key`` dada.
         "Godot" : 4,
         210 : null,
     }
-    print(my_dict.has("Godot")) # Prints true
-    print(my_dict.has(210))     # Prints true
-    print(my_dict.has(4))       # Prints false
+
+    print(my_dict.has("Godot")) # Imprime true
+    print(my_dict.has(210))     # Imprime true
+    print(my_dict.has(4))       # Imprime false
 
  .. code-tab:: csharp
 
@@ -611,9 +612,10 @@ Devuelve ``true`` si el diccionario contiene una entrada con la ``key`` dada.
         { "Godot", 4 },
         { 210, default },
     };
-    GD.Print(myDict.ContainsKey("Godot")); // Prints True
-    GD.Print(myDict.ContainsKey(210));     // Prints True
-    GD.Print(myDict.ContainsKey(4));       // Prints False
+
+    GD.Print(myDict.ContainsKey("Godot")); // Imprime True
+    GD.Print(myDict.ContainsKey(210));     // Imprime True
+    GD.Print(myDict.ContainsKey(4));       // Imprime False
 
 
 
@@ -622,7 +624,7 @@ En GDScript, esto es equivalente al operador ``in``:
 ::
 
     if "Godot" in { "Godot": 4 }:
-        print("The key is here!") # Will be printed.
+        print("The key is here!") # Se imprime.
 
 \ **Nota:** Este método devuelve ``true`` siempre que la ``key`` exista, incluso si su valor correspondiente es ``null``.
 

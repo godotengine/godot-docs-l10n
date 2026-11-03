@@ -16,7 +16,7 @@ CircleShape2D
 
 2D 圓形，旨在用於物理學。通常用於為 :ref:`CollisionShape2D<class_CollisionShape2D>` 提供形狀。
 
-\ **性能：**\ **CircleShape2D** 可以快速偵測碰撞。比 :ref:`RectangleShape2D<class_RectangleShape2D>` 和 :ref:`CapsuleShape2D<class_CapsuleShape2D>` 快。
+\ **效能：**\ **CircleShape2D** 可以快速偵測碰撞。比 :ref:`RectangleShape2D<class_RectangleShape2D>` 和 :ref:`CapsuleShape2D<class_CapsuleShape2D>` 快。
 
 .. rst-class:: classref-reftable-group
 

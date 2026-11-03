@@ -276,7 +276,7 @@ Elimina el segmento entre los puntos dados. Si ``bidirectional`` es ``false``, s
 
 :ref:`int<class_int>` **get_available_point_id**\ (\ ) |const| :ref:`🔗<class_AStar2D_method_get_available_point_id>`
 
-Devuelve el punto de Ide proximo disponible con ningun punto asociado a el.
+Devuelve el punto de Ide disponible próximo con ningún punto asociado a él.
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Reserva espacio internamente para ``num_nodes`` puntos. Útil si vas a añadir u
 
 |void| **set_point_disabled**\ (\ id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar2D_method_set_point_disabled>`
 
-Deshabilita o habilita el punto especificado para el buscador de rutas. Util para crear obstaculos temporales.
+Deshabilita o habilita el punto especificado para el buscador de rutas. Útil para crear obstaculos temporales.
 
 .. rst-class:: classref-item-separator
 

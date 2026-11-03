@@ -358,7 +358,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 - |void| **set_playback_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_playback_speed_scale**\ (\ )
 
-調整音訊播放速度比例（如設為 ``0.5`` 則音訊以半速播放）。如需改變整體模擬速度，請參閱 :ref:`Engine.time_scale<class_Engine_property_time_scale>`\ ；兩者彼此獨立。
+音訊播放的縮放速率（即將其設定為 ``0.5`` 將使音訊以其一半的速度播放）。另見 :ref:`Engine.time_scale<class_Engine_property_time_scale>` 影響一般模擬速度，它獨立於 :ref:`playback_speed_scale<class_AudioServer_property_playback_speed_scale>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -559,7 +559,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+回傳麥克風輸入緩衝區的絕對大小。這設定為音訊延遲的倍數，可用於預估需要取得影格的最小速率。
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+如果麥克風內部緩衝區有可用資料，則回傳一個恰好包含 ``frames`` 個音訊樣本的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，否則回傳一個空的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+當 :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` 成功設定為 ``true`` 時，緩衝區會以每秒 :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` 影格的速率被填充。
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+樣本值是在 ``-1`` 到 ``1`` 之間的有符號浮點 PCM 值。
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ The samples are signed floating-point PCM values between ``-1`` and ``1``.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the number of frames available to read using :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
+回傳可使用 :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>` 讀取的影格數。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-Returns the relative time since the last mix occurred, in seconds.
+回傳自上次混合發生以來的相對時間，單位為秒。
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Returns the relative time since the last mix occurred, in seconds.
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-Returns the relative time until the next mix occurs, in seconds.
+回傳距離下一次混合發生所需的相對時間，單位為秒。
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ Returns the relative time until the next mix occurs, in seconds.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+若 ``active`` 參數為 ``true``\ ，則啟動由 :ref:`input_device<class_AudioServer_property_input_device>` 指定的麥克風輸入流，若啟動失敗則回傳一個錯誤。
 
-If ``active`` is ``false``, stops the input stream if it is running.
+若 ``active`` 參數為 ``false``\ ，則停止目前正在執行的輸入流。
 
 .. rst-class:: classref-item-separator
 

@@ -147,9 +147,9 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+隨機音高變化的最大可能頻率乘數。音高將在 ``1.0 / random_pitch`` 和 ``random_pitch`` 的範圍內隨機選擇。值為 ``1.0`` 表示沒有變化。值為 ``2.0`` 表示音高將在兩倍和一半之間隨機變化。
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **注意：**\ 設定該屬性也會設定 :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -166,9 +166,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+隨機音高變化的最大可能距離，單位為半音。值為 ``0.0`` 表示沒有變化。
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **注意：**\ 設定該屬性也會設定 :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+隨機音量變化的強度。音量將根據一個最大為 ``random_volume_offset_db`` 的值隨機增加或減少。值為 ``0.0`` 表示沒有變化。值為 ``3.0`` 表示音量將在 ``-3.0 dB`` 和 ``+3.0 dB`` 之間隨機變化。
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +197,9 @@ The intensity of random volume variation. Volume will be increased or decreased 
 
 :ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
 
-The :ref:`AudioStream<class_AudioStream>` at ``index``.
+位於 ``index`` 索引處的 :ref:`AudioStream<class_AudioStream>`\ （音訊流）。
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 .. streams_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The :ref:`AudioStream<class_AudioStream>` at ``index``.
 
 :ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
 
-The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+位於 ``index`` 索引處的 :ref:`AudioStream<class_AudioStream>`\ （音訊流）的概率權重。
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 .. streams_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 

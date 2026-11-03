@@ -242,7 +242,7 @@ The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platfo
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
-The Direct3D 12 rendering driver. It requires the 12_0 feature level and Shader Model 6.0 support.
+El controlador de renderizado Direct3D 12. Requiere el nivel de característica 12_0 y soporte para Shader Model 6.0.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
 

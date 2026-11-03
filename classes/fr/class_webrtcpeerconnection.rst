@@ -193,7 +193,7 @@ enum **GatheringState**: :ref:`🔗<enum_WebRTCPeerConnection_GatheringState>`
 
 :ref:`GatheringState<enum_WebRTCPeerConnection_GatheringState>` **GATHERING_STATE_NEW** = ``0``
 
-The peer connection was just created and hasn't done any networking yet.
+La connexion de pair a tout juste été créée et n'a pour le moment fait aucun réseau.
 
 .. _class_WebRTCPeerConnection_constant_GATHERING_STATE_GATHERING:
 
@@ -201,7 +201,7 @@ The peer connection was just created and hasn't done any networking yet.
 
 :ref:`GatheringState<enum_WebRTCPeerConnection_GatheringState>` **GATHERING_STATE_GATHERING** = ``1``
 
-The ICE agent is in the process of gathering candidates for the connection.
+L'agent ICE est en train de récolter des candidats pour la connexion.
 
 .. _class_WebRTCPeerConnection_constant_GATHERING_STATE_COMPLETE:
 

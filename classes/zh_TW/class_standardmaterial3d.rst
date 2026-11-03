@@ -7,7 +7,7 @@ StandardMaterial3D
 
 **繼承：** :ref:`BaseMaterial3D<class_BaseMaterial3D>` **<** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-基於物理的算繪（PBR）材質，可以對 3D 物件套用。
+基於物理的渲染（PBR）材質，可以對 3D 物件套用。
 
 .. rst-class:: classref-introduction-group
 

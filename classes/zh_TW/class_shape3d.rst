@@ -18,7 +18,7 @@ Shape3D
 
 所有 3D 形狀的抽象基底類別，針對物理使用設計。
 
-\ **性能：**\ 對圖元形狀進行碰撞偵測很快，尤其是 :ref:`SphereShape3D<class_SphereShape3D>`\ 。\ :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 和 :ref:`HeightMapShape3D<class_HeightMapShape3D>` 較慢，\ :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 最慢。
+\ **效能：**\ 對圖元形狀進行碰撞偵測很快，尤其是 :ref:`SphereShape3D<class_SphereShape3D>`\ 。\ :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 和 :ref:`HeightMapShape3D<class_HeightMapShape3D>` 較慢，\ :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 最慢。
 
 .. rst-class:: classref-introduction-group
 
@@ -73,11 +73,11 @@ Shape3D
 - |void| **set_custom_solver_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_custom_solver_bias**\ (\ )
 
-The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
+該形狀的自訂求解器偏差（Custom Solver Bias）。它定義了當該形狀參與碰撞時，剛體為了強制分離接觸點而產生的反應強度。
 
-When set to ``0``, the default value from :ref:`ProjectSettings.physics/3d/solver/default_contact_bias<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>` is used.
+當設定為 ``0`` 時，將使用 :ref:`ProjectSettings.physics/3d/solver/default_contact_bias<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>` 中定義的預設值。
 
-\ **Note:** :ref:`custom_solver_bias<class_Shape3D_property_custom_solver_bias>` is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** :ref:`custom_solver_bias<class_Shape3D_property_custom_solver_bias>` 僅在使用 GodotPhysics3D 物理引擎時生效。在使用 Jolt Physics 時，該參數沒有任何效果。
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ When set to ``0``, the default value from :ref:`ProjectSettings.physics/3d/solve
 
 該形狀的碰撞邊距。Godot Physics 中未使用。
 
-碰撞邊距允許通過在形狀周圍新增額外的外殼來使碰撞偵測更有效。當物體重疊的部分超過其邊距時，碰撞演算法的成本會更高，所以邊距的數值越高對性能越好，但代價是邊緣的精度會降低，因為會讓邊緣的銳度降低。
+碰撞邊距允許通過在形狀周圍新增額外的外殼來使碰撞偵測更有效。當物體重疊的部分超過其邊距時，碰撞演算法的成本會更高，所以邊距的數值越高對效能越好，但代價是邊緣的精度會降低，因為會讓邊緣的銳度降低。
 
 .. rst-class:: classref-section-separator
 

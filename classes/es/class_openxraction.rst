@@ -67,7 +67,7 @@ Esta acción proporciona un valor booleano.
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_FLOAT** = ``1``
 
-This action provides a float value between ``0.0`` and ``1.0`` for any analog input such as triggers.
+Genera un número float pseudo-aleatorio entre ``0.0`` y ``1.0`` (ambos incluidos).
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_VECTOR2:
 

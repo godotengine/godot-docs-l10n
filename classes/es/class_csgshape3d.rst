@@ -146,7 +146,7 @@ Descripciones de Propiedades
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Habilita el suavizado automático. Esto anula cualquier suavizado en el nodo CSG y en su lugar utiliza :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` para calcular normales basándose en el ángulo entre caras.
+Habilita el suavizado automático. Esto sobrescribe cualquier suavizado en el nodo CSG y en su lugar utiliza :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` para calcular normales basándose en el ángulo entre caras.
 
 Los hijos de un nodo :ref:`CSGCombiner3D<class_CSGCombiner3D>` se tratarán como una única malla.
 

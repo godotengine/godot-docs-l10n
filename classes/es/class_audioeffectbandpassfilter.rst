@@ -7,7 +7,7 @@ AudioEffectBandPassFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-pass filter to an audio bus.
+Añade un filtro de paso de banda al bus de audio.
 
 .. rst-class:: classref-introduction-group
 

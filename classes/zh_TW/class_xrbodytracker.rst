@@ -9,16 +9,16 @@ XRBodyTracker
 
 **繼承：** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A tracked body in XR.
+XR 中追蹤的身體。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A body tracking system will create an instance of this object and add it to the :ref:`XRServer<class_XRServer>`. This tracking system will then obtain skeleton data, convert it to the Godot Humanoid skeleton and store this data on the **XRBodyTracker** object.
+身體追蹤系統將建立該物件的實例並將其新增到 :ref:`XRServer<class_XRServer>`\ 。然後，該追蹤系統將取得骨架資料，將其轉換為 Godot 類人型骨架，並將該資料儲存在 **XRBodyTracker** 物件上。
 
-Use :ref:`XRBodyModifier3D<class_XRBodyModifier3D>` to animate a body mesh using body tracking data.
+使用 :ref:`XRBodyModifier3D<class_XRBodyModifier3D>` 通過身體追蹤資料來動畫化身體網格。
 
 .. rst-class:: classref-introduction-group
 
@@ -82,7 +82,7 @@ flags **BodyFlags**: :ref:`🔗<enum_XRBodyTracker_BodyFlags>`
 
 :ref:`BodyFlags<enum_XRBodyTracker_BodyFlags>` **BODY_FLAG_UPPER_BODY_SUPPORTED** = ``1``
 
-Upper body tracking supported.
+支援上半身追蹤。
 
 .. _class_XRBodyTracker_constant_BODY_FLAG_LOWER_BODY_SUPPORTED:
 
@@ -90,7 +90,7 @@ Upper body tracking supported.
 
 :ref:`BodyFlags<enum_XRBodyTracker_BodyFlags>` **BODY_FLAG_LOWER_BODY_SUPPORTED** = ``2``
 
-Lower body tracking supported.
+支援下半身追蹤。
 
 .. _class_XRBodyTracker_constant_BODY_FLAG_HANDS_SUPPORTED:
 
@@ -98,7 +98,7 @@ Lower body tracking supported.
 
 :ref:`BodyFlags<enum_XRBodyTracker_BodyFlags>` **BODY_FLAG_HANDS_SUPPORTED** = ``4``
 
-Hand tracking supported.
+支援手部追蹤。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ enum **Joint**: :ref:`🔗<enum_XRBodyTracker_Joint>`
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_ROOT** = ``0``
 
-Root joint.
+根關節。
 
 .. _class_XRBodyTracker_constant_JOINT_HIPS:
 
@@ -124,7 +124,7 @@ Root joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_HIPS** = ``1``
 
-Hips joint.
+髖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_SPINE:
 
@@ -132,7 +132,7 @@ Hips joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_SPINE** = ``2``
 
-Spine joint.
+脊柱關節。
 
 .. _class_XRBodyTracker_constant_JOINT_CHEST:
 
@@ -140,7 +140,7 @@ Spine joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_CHEST** = ``3``
 
-Chest joint.
+胸關節。
 
 .. _class_XRBodyTracker_constant_JOINT_UPPER_CHEST:
 
@@ -148,7 +148,7 @@ Chest joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_UPPER_CHEST** = ``4``
 
-Upper chest joint.
+上胸關節。
 
 .. _class_XRBodyTracker_constant_JOINT_NECK:
 
@@ -156,7 +156,7 @@ Upper chest joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_NECK** = ``5``
 
-Neck joint.
+頸關節。
 
 .. _class_XRBodyTracker_constant_JOINT_HEAD:
 
@@ -164,7 +164,7 @@ Neck joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_HEAD** = ``6``
 
-Head joint.
+頭關節。
 
 .. _class_XRBodyTracker_constant_JOINT_HEAD_TIP:
 
@@ -172,7 +172,7 @@ Head joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_HEAD_TIP** = ``7``
 
-Head tip joint.
+頭部尖端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_SHOULDER:
 
@@ -180,7 +180,7 @@ Head tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_SHOULDER** = ``8``
 
-Left shoulder joint.
+左肩關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_UPPER_ARM:
 
@@ -188,7 +188,7 @@ Left shoulder joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_UPPER_ARM** = ``9``
 
-Left upper arm joint.
+左上臂關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_LOWER_ARM:
 
@@ -196,7 +196,7 @@ Left upper arm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_LOWER_ARM** = ``10``
 
-Left lower arm joint.
+左下臂關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_SHOULDER:
 
@@ -204,7 +204,7 @@ Left lower arm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_SHOULDER** = ``11``
 
-Right shoulder joint.
+右肩關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_UPPER_ARM:
 
@@ -212,7 +212,7 @@ Right shoulder joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_UPPER_ARM** = ``12``
 
-Right upper arm joint.
+右上臂關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_LOWER_ARM:
 
@@ -220,7 +220,7 @@ Right upper arm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_LOWER_ARM** = ``13``
 
-Right lower arm joint.
+右下臂關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_UPPER_LEG:
 
@@ -228,7 +228,7 @@ Right lower arm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_UPPER_LEG** = ``14``
 
-Left upper leg joint.
+左大腿關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_LOWER_LEG:
 
@@ -236,7 +236,7 @@ Left upper leg joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_LOWER_LEG** = ``15``
 
-Left lower leg joint.
+左小腿關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_FOOT:
 
@@ -244,7 +244,7 @@ Left lower leg joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_FOOT** = ``16``
 
-Left foot joint.
+左腳關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_TOES:
 
@@ -252,7 +252,7 @@ Left foot joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_TOES** = ``17``
 
-Left toes joint.
+左腳腳趾關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_UPPER_LEG:
 
@@ -260,7 +260,7 @@ Left toes joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_UPPER_LEG** = ``18``
 
-Right upper leg joint.
+右大腿關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_LOWER_LEG:
 
@@ -268,7 +268,7 @@ Right upper leg joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_LOWER_LEG** = ``19``
 
-Right lower leg joint.
+右小腿關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_FOOT:
 
@@ -276,7 +276,7 @@ Right lower leg joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_FOOT** = ``20``
 
-Right foot joint.
+右腳關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_TOES:
 
@@ -284,7 +284,7 @@ Right foot joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_TOES** = ``21``
 
-Right toes joint.
+右腳腳趾關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_HAND:
 
@@ -292,7 +292,7 @@ Right toes joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_HAND** = ``22``
 
-Left hand joint.
+左手關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PALM:
 
@@ -300,7 +300,7 @@ Left hand joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PALM** = ``23``
 
-Left palm joint.
+左掌關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_WRIST:
 
@@ -308,7 +308,7 @@ Left palm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_WRIST** = ``24``
 
-Left wrist joint.
+左腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_THUMB_METACARPAL:
 
@@ -316,7 +316,7 @@ Left wrist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_THUMB_METACARPAL** = ``25``
 
-Left thumb metacarpal joint.
+左大拇指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_THUMB_PHALANX_PROXIMAL:
 
@@ -324,7 +324,7 @@ Left thumb metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_THUMB_PHALANX_PROXIMAL** = ``26``
 
-Left thumb phalanx proximal joint.
+左大拇指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_THUMB_PHALANX_DISTAL:
 
@@ -332,7 +332,7 @@ Left thumb phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_THUMB_PHALANX_DISTAL** = ``27``
 
-Left thumb phalanx distal joint.
+左大拇指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_THUMB_TIP:
 
@@ -340,7 +340,7 @@ Left thumb phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_THUMB_TIP** = ``28``
 
-Left thumb tip joint.
+左大拇指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_INDEX_FINGER_METACARPAL:
 
@@ -348,7 +348,7 @@ Left thumb tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_INDEX_FINGER_METACARPAL** = ``29``
 
-Left index finger metacarpal joint.
+左食指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_INDEX_FINGER_PHALANX_PROXIMAL:
 
@@ -356,7 +356,7 @@ Left index finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_INDEX_FINGER_PHALANX_PROXIMAL** = ``30``
 
-Left index finger phalanx proximal joint.
+左食指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_INDEX_FINGER_PHALANX_INTERMEDIATE:
 
@@ -364,7 +364,7 @@ Left index finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_INDEX_FINGER_PHALANX_INTERMEDIATE** = ``31``
 
-Left index finger phalanx intermediate joint.
+左食指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_INDEX_FINGER_PHALANX_DISTAL:
 
@@ -372,7 +372,7 @@ Left index finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_INDEX_FINGER_PHALANX_DISTAL** = ``32``
 
-Left index finger phalanx distal joint.
+左食指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_INDEX_FINGER_TIP:
 
@@ -380,7 +380,7 @@ Left index finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_INDEX_FINGER_TIP** = ``33``
 
-Left index finger tip joint.
+左食指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FINGER_METACARPAL:
 
@@ -388,7 +388,7 @@ Left index finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FINGER_METACARPAL** = ``34``
 
-Left middle finger metacarpal joint.
+左中指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FINGER_PHALANX_PROXIMAL:
 
@@ -396,7 +396,7 @@ Left middle finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FINGER_PHALANX_PROXIMAL** = ``35``
 
-Left middle finger phalanx proximal joint.
+左中指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FINGER_PHALANX_INTERMEDIATE:
 
@@ -404,7 +404,7 @@ Left middle finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FINGER_PHALANX_INTERMEDIATE** = ``36``
 
-Left middle finger phalanx intermediate joint.
+左中指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FINGER_PHALANX_DISTAL:
 
@@ -412,7 +412,7 @@ Left middle finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FINGER_PHALANX_DISTAL** = ``37``
 
-Left middle finger phalanx distal joint.
+左中指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FINGER_TIP:
 
@@ -420,7 +420,7 @@ Left middle finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FINGER_TIP** = ``38``
 
-Left middle finger tip joint.
+左中指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_RING_FINGER_METACARPAL:
 
@@ -428,7 +428,7 @@ Left middle finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_RING_FINGER_METACARPAL** = ``39``
 
-Left ring finger metacarpal joint.
+左無名指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_RING_FINGER_PHALANX_PROXIMAL:
 
@@ -436,7 +436,7 @@ Left ring finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_RING_FINGER_PHALANX_PROXIMAL** = ``40``
 
-Left ring finger phalanx proximal joint.
+左無名指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_RING_FINGER_PHALANX_INTERMEDIATE:
 
@@ -444,7 +444,7 @@ Left ring finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_RING_FINGER_PHALANX_INTERMEDIATE** = ``41``
 
-Left ring finger phalanx intermediate joint.
+左無名指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_RING_FINGER_PHALANX_DISTAL:
 
@@ -452,7 +452,7 @@ Left ring finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_RING_FINGER_PHALANX_DISTAL** = ``42``
 
-Left ring finger phalanx distal joint.
+左無名指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_RING_FINGER_TIP:
 
@@ -460,7 +460,7 @@ Left ring finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_RING_FINGER_TIP** = ``43``
 
-Left ring finger tip joint.
+左無名指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PINKY_FINGER_METACARPAL:
 
@@ -468,7 +468,7 @@ Left ring finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PINKY_FINGER_METACARPAL** = ``44``
 
-Left pinky finger metacarpal joint.
+左小指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PINKY_FINGER_PHALANX_PROXIMAL:
 
@@ -476,7 +476,7 @@ Left pinky finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PINKY_FINGER_PHALANX_PROXIMAL** = ``45``
 
-Left pinky finger phalanx proximal joint.
+左小指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PINKY_FINGER_PHALANX_INTERMEDIATE:
 
@@ -484,7 +484,7 @@ Left pinky finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PINKY_FINGER_PHALANX_INTERMEDIATE** = ``46``
 
-Left pinky finger phalanx intermediate joint.
+左小指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PINKY_FINGER_PHALANX_DISTAL:
 
@@ -492,7 +492,7 @@ Left pinky finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PINKY_FINGER_PHALANX_DISTAL** = ``47``
 
-Left pinky finger phalanx distal joint.
+左小指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_PINKY_FINGER_TIP:
 
@@ -500,7 +500,7 @@ Left pinky finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_PINKY_FINGER_TIP** = ``48``
 
-Left pinky finger tip joint.
+左小指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_HAND:
 
@@ -508,7 +508,7 @@ Left pinky finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_HAND** = ``49``
 
-Right hand joint.
+右手關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PALM:
 
@@ -516,7 +516,7 @@ Right hand joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PALM** = ``50``
 
-Right palm joint.
+右掌關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_WRIST:
 
@@ -524,7 +524,7 @@ Right palm joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_WRIST** = ``51``
 
-Right wrist joint.
+右腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_THUMB_METACARPAL:
 
@@ -532,7 +532,7 @@ Right wrist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_THUMB_METACARPAL** = ``52``
 
-Right thumb metacarpal joint.
+右大拇指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_THUMB_PHALANX_PROXIMAL:
 
@@ -540,7 +540,7 @@ Right thumb metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_THUMB_PHALANX_PROXIMAL** = ``53``
 
-Right thumb phalanx proximal joint.
+右大拇指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_THUMB_PHALANX_DISTAL:
 
@@ -548,7 +548,7 @@ Right thumb phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_THUMB_PHALANX_DISTAL** = ``54``
 
-Right thumb phalanx distal joint.
+右大拇指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_THUMB_TIP:
 
@@ -556,7 +556,7 @@ Right thumb phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_THUMB_TIP** = ``55``
 
-Right thumb tip joint.
+右大拇指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_INDEX_FINGER_METACARPAL:
 
@@ -564,7 +564,7 @@ Right thumb tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_INDEX_FINGER_METACARPAL** = ``56``
 
-Right index finger metacarpal joint.
+右食指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_INDEX_FINGER_PHALANX_PROXIMAL:
 
@@ -572,7 +572,7 @@ Right index finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_INDEX_FINGER_PHALANX_PROXIMAL** = ``57``
 
-Right index finger phalanx proximal joint.
+右食指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_INDEX_FINGER_PHALANX_INTERMEDIATE:
 
@@ -580,7 +580,7 @@ Right index finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_INDEX_FINGER_PHALANX_INTERMEDIATE** = ``58``
 
-Right index finger phalanx intermediate joint.
+右食指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_INDEX_FINGER_PHALANX_DISTAL:
 
@@ -588,7 +588,7 @@ Right index finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_INDEX_FINGER_PHALANX_DISTAL** = ``59``
 
-Right index finger phalanx distal joint.
+右食指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_INDEX_FINGER_TIP:
 
@@ -596,7 +596,7 @@ Right index finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_INDEX_FINGER_TIP** = ``60``
 
-Right index finger tip joint.
+右食指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FINGER_METACARPAL:
 
@@ -604,7 +604,7 @@ Right index finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FINGER_METACARPAL** = ``61``
 
-Right middle finger metacarpal joint.
+右中指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FINGER_PHALANX_PROXIMAL:
 
@@ -612,7 +612,7 @@ Right middle finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FINGER_PHALANX_PROXIMAL** = ``62``
 
-Right middle finger phalanx proximal joint.
+右中指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FINGER_PHALANX_INTERMEDIATE:
 
@@ -620,7 +620,7 @@ Right middle finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FINGER_PHALANX_INTERMEDIATE** = ``63``
 
-Right middle finger phalanx intermediate joint.
+右中指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FINGER_PHALANX_DISTAL:
 
@@ -628,7 +628,7 @@ Right middle finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FINGER_PHALANX_DISTAL** = ``64``
 
-Right middle finger phalanx distal joint.
+右中指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FINGER_TIP:
 
@@ -636,7 +636,7 @@ Right middle finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FINGER_TIP** = ``65``
 
-Right middle finger tip joint.
+右中指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_RING_FINGER_METACARPAL:
 
@@ -644,7 +644,7 @@ Right middle finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_RING_FINGER_METACARPAL** = ``66``
 
-Right ring finger metacarpal joint.
+右無名指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_RING_FINGER_PHALANX_PROXIMAL:
 
@@ -652,7 +652,7 @@ Right ring finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_RING_FINGER_PHALANX_PROXIMAL** = ``67``
 
-Right ring finger phalanx proximal joint.
+右無名指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_RING_FINGER_PHALANX_INTERMEDIATE:
 
@@ -660,7 +660,7 @@ Right ring finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_RING_FINGER_PHALANX_INTERMEDIATE** = ``68``
 
-Right ring finger phalanx intermediate joint.
+右無名指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_RING_FINGER_PHALANX_DISTAL:
 
@@ -668,7 +668,7 @@ Right ring finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_RING_FINGER_PHALANX_DISTAL** = ``69``
 
-Right ring finger phalanx distal joint.
+右無名指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_RING_FINGER_TIP:
 
@@ -676,7 +676,7 @@ Right ring finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_RING_FINGER_TIP** = ``70``
 
-Right ring finger tip joint.
+右無名指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PINKY_FINGER_METACARPAL:
 
@@ -684,7 +684,7 @@ Right ring finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PINKY_FINGER_METACARPAL** = ``71``
 
-Right pinky finger metacarpal joint.
+右小指掌骨關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PINKY_FINGER_PHALANX_PROXIMAL:
 
@@ -692,7 +692,7 @@ Right pinky finger metacarpal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PINKY_FINGER_PHALANX_PROXIMAL** = ``72``
 
-Right pinky finger phalanx proximal joint.
+右小指指骨近端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PINKY_FINGER_PHALANX_INTERMEDIATE:
 
@@ -700,7 +700,7 @@ Right pinky finger phalanx proximal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PINKY_FINGER_PHALANX_INTERMEDIATE** = ``73``
 
-Right pinky finger phalanx intermediate joint.
+右小指指骨中間關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PINKY_FINGER_PHALANX_DISTAL:
 
@@ -708,7 +708,7 @@ Right pinky finger phalanx intermediate joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PINKY_FINGER_PHALANX_DISTAL** = ``74``
 
-Right pinky finger phalanx distal joint.
+右小指指骨遠端關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_PINKY_FINGER_TIP:
 
@@ -716,7 +716,7 @@ Right pinky finger phalanx distal joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_PINKY_FINGER_TIP** = ``75``
 
-Right pinky finger tip joint.
+右小指指尖關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LOWER_CHEST:
 
@@ -724,7 +724,7 @@ Right pinky finger tip joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LOWER_CHEST** = ``76``
 
-Lower chest joint.
+下胸關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_SCAPULA:
 
@@ -732,7 +732,7 @@ Lower chest joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_SCAPULA** = ``77``
 
-Left scapula joint.
+左肩關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_WRIST_TWIST:
 
@@ -740,7 +740,7 @@ Left scapula joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_WRIST_TWIST** = ``78``
 
-Left wrist twist joint.
+左手腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_SCAPULA:
 
@@ -748,7 +748,7 @@ Left wrist twist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_SCAPULA** = ``79``
 
-Right scapula joint.
+右肩關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_WRIST_TWIST:
 
@@ -756,7 +756,7 @@ Right scapula joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_WRIST_TWIST** = ``80``
 
-Right wrist twist joint.
+右手腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_FOOT_TWIST:
 
@@ -764,7 +764,7 @@ Right wrist twist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_FOOT_TWIST** = ``81``
 
-Left foot twist joint.
+左腳腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_HEEL:
 
@@ -772,7 +772,7 @@ Left foot twist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_HEEL** = ``82``
 
-Left heel joint.
+左腳跟關節。
 
 .. _class_XRBodyTracker_constant_JOINT_LEFT_MIDDLE_FOOT:
 
@@ -780,7 +780,7 @@ Left heel joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_LEFT_MIDDLE_FOOT** = ``83``
 
-Left middle foot joint.
+左腳掌關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_FOOT_TWIST:
 
@@ -788,7 +788,7 @@ Left middle foot joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_FOOT_TWIST** = ``84``
 
-Right foot twist joint.
+右腳腕關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_HEEL:
 
@@ -796,7 +796,7 @@ Right foot twist joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_HEEL** = ``85``
 
-Right heel joint.
+右腳跟關節。
 
 .. _class_XRBodyTracker_constant_JOINT_RIGHT_MIDDLE_FOOT:
 
@@ -804,7 +804,7 @@ Right heel joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_RIGHT_MIDDLE_FOOT** = ``86``
 
-Right middle foot joint.
+右腳掌關節。
 
 .. _class_XRBodyTracker_constant_JOINT_MAX:
 
@@ -812,7 +812,7 @@ Right middle foot joint.
 
 :ref:`Joint<enum_XRBodyTracker_Joint>` **JOINT_MAX** = ``87``
 
-Represents the size of the :ref:`Joint<enum_XRBodyTracker_Joint>` enum.
+代表 :ref:`Joint<enum_XRBodyTracker_Joint>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -830,7 +830,7 @@ flags **JointFlags**: :ref:`🔗<enum_XRBodyTracker_JointFlags>`
 
 :ref:`JointFlags<enum_XRBodyTracker_JointFlags>` **JOINT_FLAG_ORIENTATION_VALID** = ``1``
 
-The joint's orientation data is valid.
+該關節的方向資料有效。
 
 .. _class_XRBodyTracker_constant_JOINT_FLAG_ORIENTATION_TRACKED:
 
@@ -838,7 +838,7 @@ The joint's orientation data is valid.
 
 :ref:`JointFlags<enum_XRBodyTracker_JointFlags>` **JOINT_FLAG_ORIENTATION_TRACKED** = ``2``
 
-The joint's orientation is actively tracked. May not be set if tracking has been temporarily lost.
+關節的方向是主動追蹤的。如果追蹤暫時丟失，則可能無法設定。
 
 .. _class_XRBodyTracker_constant_JOINT_FLAG_POSITION_VALID:
 
@@ -846,7 +846,7 @@ The joint's orientation is actively tracked. May not be set if tracking has been
 
 :ref:`JointFlags<enum_XRBodyTracker_JointFlags>` **JOINT_FLAG_POSITION_VALID** = ``4``
 
-The joint's position data is valid.
+該關節的位置資料有效。
 
 .. _class_XRBodyTracker_constant_JOINT_FLAG_POSITION_TRACKED:
 
@@ -854,7 +854,7 @@ The joint's position data is valid.
 
 :ref:`JointFlags<enum_XRBodyTracker_JointFlags>` **JOINT_FLAG_POSITION_TRACKED** = ``8``
 
-The joint's position is actively tracked. May not be set if tracking has been temporarily lost.
+關節的位置是主動追蹤的。如果追蹤暫時丟失，則可能無法設定。
 
 .. rst-class:: classref-section-separator
 
@@ -876,7 +876,7 @@ The joint's position is actively tracked. May not be set if tracking has been te
 - |void| **set_body_flags**\ (\ value\: |bitfield|\[:ref:`BodyFlags<enum_XRBodyTracker_BodyFlags>`\]\ )
 - |bitfield|\[:ref:`BodyFlags<enum_XRBodyTracker_BodyFlags>`\] **get_body_flags**\ (\ )
 
-The type of body tracking data captured.
+捕獲的身體追蹤資料的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -893,7 +893,7 @@ The type of body tracking data captured.
 - |void| **set_has_tracking_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ )
 
-If ``true``, the body tracking data is valid.
+如果為 ``true``\ ，則身體追蹤資料有效。
 
 .. rst-class:: classref-section-separator
 
@@ -910,7 +910,7 @@ If ``true``, the body tracking data is valid.
 
 |bitfield|\[:ref:`JointFlags<enum_XRBodyTracker_JointFlags>`\] **get_joint_flags**\ (\ joint\: :ref:`Joint<enum_XRBodyTracker_Joint>`\ ) |const| :ref:`🔗<class_XRBodyTracker_method_get_joint_flags>`
 
-Returns flags about the validity of the tracking data for the given body joint.
+設定有關給定身體關節的追蹤資料的有效性的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -922,7 +922,7 @@ Returns flags about the validity of the tracking data for the given body joint.
 
 :ref:`Transform3D<class_Transform3D>` **get_joint_transform**\ (\ joint\: :ref:`Joint<enum_XRBodyTracker_Joint>`\ ) |const| :ref:`🔗<class_XRBodyTracker_method_get_joint_transform>`
 
-Returns the transform for the given body joint.
+回傳給定身體關節的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -934,7 +934,7 @@ Returns the transform for the given body joint.
 
 |void| **set_joint_flags**\ (\ joint\: :ref:`Joint<enum_XRBodyTracker_Joint>`, flags\: |bitfield|\[:ref:`JointFlags<enum_XRBodyTracker_JointFlags>`\]\ ) :ref:`🔗<class_XRBodyTracker_method_set_joint_flags>`
 
-Sets flags about the validity of the tracking data for the given body joint.
+設定有關給定身體關節的追蹤資料的有效性的標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -946,7 +946,7 @@ Sets flags about the validity of the tracking data for the given body joint.
 
 |void| **set_joint_transform**\ (\ joint\: :ref:`Joint<enum_XRBodyTracker_Joint>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_XRBodyTracker_method_set_joint_transform>`
 
-Sets the transform for the given body joint.
+設定給定身體關節的變換。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

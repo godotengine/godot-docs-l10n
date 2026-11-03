@@ -20,7 +20,7 @@ La principal ventaja de los **CubemapArray**\ s es que se puede acceder a ellos 
 
 Godot utiliza internamente **CubemapArray**\ s para muchos efectos, incluyendo el :ref:`Sky<class_Sky>` si estableces :ref:`ProjectSettings.rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>` a ``true``.
 
-Para crear un archivo de textura de este tipo tú mismo, reimporta tus archivos de imagen usando los presets de importación del Editor Godot. Para crear un CubemapArray desde código, usa :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` en una instancia de la clase CubemapArray.
+Para crear un archivo de textura de este tipo tú mismo, reimporta tus archivos de imagen usando los presets de importación del editor de Godot. Para crear un CubemapArray desde código, usa :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` en una instancia de la clase CubemapArray.
 
 El orden de imágenes esperado es X+, X-, Y+, Y-, Z+, Z- (en el sistema de coordenadas de Godot, por lo que Y+ es "arriba" y Z- es "adelante"). Puedes usar una de las siguientes plantillas como base:
 

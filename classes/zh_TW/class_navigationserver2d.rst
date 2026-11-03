@@ -16,21 +16,21 @@ NavigationServer2D
 說明
 ----
 
-NavigationServer2D is the server that handles navigation maps, regions and agents. It does not handle A\* navigation from :ref:`AStar2D<class_AStar2D>` or :ref:`AStarGrid2D<class_AStarGrid2D>`.
+NavigationServer2D 是負責處理導航地圖、區塊、代理的伺服器。不負責處理 :ref:`AStar2D<class_AStar2D>` 和 :ref:`AStarGrid2D<class_AStarGrid2D>` 的 A\* 導航。
 
-Maps are divided into regions, which are composed of navigation polygons. Together, they define the traversable areas in the 2D world.
+地圖被劃分為多個區塊，這些區塊由導航多邊形組成。它們共同定義了 2D 世界中的可穿越區域。
 
-\ **Note:** Most **NavigationServer2D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions or agents by navigation-related nodes in the scene tree or made through scripts.
+\ **注意：**\ 大多數 **NavigationServer2D** 的更改都是在下一個物理影格進行的，不會立即生效。包括所有對地圖、區塊、代理的更改，無論是通過場景樹中導航相關的節點作出的更改，還是通過腳本作出的更改。
 
-For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
+兩個區塊必須共享一條相似的邊才能相連。如果一條邊的兩個頂點與另一條邊上相應頂點的距離都小於 ``edge_connection_margin``\ ，那麼就會認為這兩條邊是相連的。
 
-You may assign navigation layers to regions with :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>`, which then can be checked upon when requesting a path with :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`. This can be used to allow or deny certain areas for some objects.
+可以使用 :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>` 為區塊分配導航層，使用 :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>` 請求路徑時會對導航層進行檢查。可用於允許或禁止某些物件進入特定的區域。
 
-To use the collision avoidance system, you may use agents. You can set an agent's target velocity, then the servers will emit a callback with a modified velocity.
+使用碰撞躲避系統就需要使用代理。你可以為代理設定目標速度，然後伺服器就會發出回呼，提供修改後的速度。
 
-\ **Note:** The collision avoidance system ignores regions. Using the modified velocity directly may move an agent outside of the traversable area. This is a limitation of the collision avoidance system, any more complex situation may require the use of the physics engine.
+\ **注意：**\ 碰撞躲避系統並不考慮區塊。直接使用修改後的速度可能會將代理移動到可達區域之外。這是碰撞躲避系統的缺陷，更複雜的場合可能需要使用物理引擎。
 
-This server keeps tracks of any call and executes them during the sync phase. This means that you can request any change to the map, using any thread, without worrying.
+伺服器會對所有呼叫進行追蹤，並在同步階段執行。這意味著你可以放心地從任何執行緒請求對地圖作出任何修改。
 
 .. rst-class:: classref-introduction-group
 
@@ -39,7 +39,7 @@ This server keeps tracks of any call and executes them during the sync phase. Th
 
 - :doc:`使用 NavigationServer <../tutorials/navigation/navigation_using_navigationservers>`
 
-- `Navigation Polygon 2D Demo <https://godotengine.org/asset-library/asset/2722>`__
+- `2D 導航多邊形演示 <https://godotengine.org/asset-library/asset/2722>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -387,7 +387,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_ACTIVE_MAPS** = ``0``
 
-常數，用於獲取活動導覽地圖的數量。
+常數，用於取得活動導覽地圖的數量。
 
 .. _class_NavigationServer2D_constant_INFO_REGION_COUNT:
 
@@ -395,7 +395,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_REGION_COUNT** = ``1``
 
-常數，用於獲取活動導覽地區的數量。
+常數，用於取得活動導覽地區的數量。
 
 .. _class_NavigationServer2D_constant_INFO_AGENT_COUNT:
 
@@ -403,7 +403,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_AGENT_COUNT** = ``2``
 
-常數，用於獲取正在進行避障的活動導覽代理的數量。
+常數，用於取得正在進行避障的活動導覽代理的數量。
 
 .. _class_NavigationServer2D_constant_INFO_LINK_COUNT:
 
@@ -411,7 +411,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_LINK_COUNT** = ``3``
 
-常數，用於獲取活動導覽連結的數量。
+常數，用於取得活動導覽連結的數量。
 
 .. _class_NavigationServer2D_constant_INFO_POLYGON_COUNT:
 
@@ -419,7 +419,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_POLYGON_COUNT** = ``4``
 
-常數，用於獲取導覽網格多邊形的數量。
+常數，用於取得導覽網格多邊形的數量。
 
 .. _class_NavigationServer2D_constant_INFO_EDGE_COUNT:
 
@@ -427,7 +427,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_EDGE_COUNT** = ``5``
 
-常數，用於獲取導覽網格多邊形的邊的數量。
+常數，用於取得導覽網格多邊形的邊的數量。
 
 .. _class_NavigationServer2D_constant_INFO_EDGE_MERGE_COUNT:
 
@@ -435,7 +435,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_EDGE_MERGE_COUNT** = ``6``
 
-常數，用於獲取由於邊鍵重疊而被合併的導覽網格多邊形的邊的數量。
+常數，用於取得由於邊鍵重疊而被合併的導覽網格多邊形的邊的數量。
 
 .. _class_NavigationServer2D_constant_INFO_EDGE_CONNECTION_COUNT:
 
@@ -443,7 +443,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_EDGE_CONNECTION_COUNT** = ``7``
 
-常數，用以獲取被認為由於邊接近而連接的導覽網格多邊形的邊的數量。
+常數，用以取得被認為由於邊接近而連接的導覽網格多邊形的邊的數量。
 
 .. _class_NavigationServer2D_constant_INFO_EDGE_FREE_COUNT:
 
@@ -451,7 +451,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_EDGE_FREE_COUNT** = ``8``
 
-常數，用於獲取無法合併但仍可通過邊接近或連結連接的導覽網格多邊形的邊的數量。
+常數，用於取得無法合併但仍可通過邊接近或連結連接的導覽網格多邊形的邊的數量。
 
 .. _class_NavigationServer2D_constant_INFO_OBSTACLE_COUNT:
 
@@ -459,7 +459,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_OBSTACLE_COUNT** = ``9``
 
-Constant to get the number of active navigation obstacles.
+常數，用於取得活動導航障礙物的數量。
 
 .. rst-class:: classref-section-separator
 
@@ -500,7 +500,7 @@ Constant to get the number of active navigation obstacles.
 
 :ref:`int<class_int>` **agent_get_avoidance_layers**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_layers>`
 
-Returns the ``avoidance_layers`` bitmask of the specified ``agent``.
+回傳指定 ``agent`` 的 ``avoidance_layers`` 位元遮罩。
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ Returns the ``avoidance_layers`` bitmask of the specified ``agent``.
 
 :ref:`int<class_int>` **agent_get_avoidance_mask**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_mask>`
 
-Returns the ``avoidance_mask`` bitmask of the specified ``agent``.
+回傳指定 ``agent`` 的 ``avoidance_mask`` 位元遮罩。
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ Returns the ``avoidance_mask`` bitmask of the specified ``agent``.
 
 :ref:`float<class_float>` **agent_get_avoidance_priority**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_priority>`
 
-Returns the ``avoidance_priority`` of the specified ``agent``.
+回傳指定 ``agent`` 的 ``avoidance_priority``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Returns the ``avoidance_priority`` of the specified ``agent``.
 
 :ref:`int<class_int>` **agent_get_max_neighbors**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_max_neighbors>`
 
-Returns the maximum number of other agents the specified ``agent`` takes into account in the navigation.
+回傳在導航中指定的 ``agent`` 考慮的其他代理的最大數量。
 
 .. rst-class:: classref-item-separator
 
@@ -560,7 +560,7 @@ Returns the maximum number of other agents the specified ``agent`` takes into ac
 
 :ref:`float<class_float>` **agent_get_max_speed**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_max_speed>`
 
-Returns the maximum speed of the specified ``agent``.
+回傳指定 ``agent`` 的最大速度。
 
 .. rst-class:: classref-item-separator
 
@@ -572,7 +572,7 @@ Returns the maximum speed of the specified ``agent``.
 
 :ref:`float<class_float>` **agent_get_neighbor_distance**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_neighbor_distance>`
 
-Returns the maximum distance to other agents the specified ``agent`` takes into account in the navigation.
+回傳在導航中到指定 ``agent`` 考慮的其他代理的最大距離。
 
 .. rst-class:: classref-item-separator
 
@@ -596,7 +596,7 @@ Returns the maximum distance to other agents the specified ``agent`` takes into 
 
 :ref:`Vector2<class_Vector2>` **agent_get_position**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_position>`
 
-Returns the position of the specified ``agent`` in world space.
+回傳在世界空間中指定的 ``agent`` 的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -608,7 +608,7 @@ Returns the position of the specified ``agent`` in world space.
 
 :ref:`float<class_float>` **agent_get_radius**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_radius>`
 
-Returns the radius of the specified ``agent``.
+回傳指定 ``agent`` 的半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ Returns the radius of the specified ``agent``.
 
 :ref:`float<class_float>` **agent_get_time_horizon_agents**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_time_horizon_agents>`
 
-Returns the minimal amount of time for which the specified ``agent``'s velocities that are computed by the simulation are safe with respect to other agents.
+回傳指定的 ``agent`` 如果持續使用由仿真過程計算出的速度移動，能夠不與其他代理髮生碰撞的最短時間。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Returns the minimal amount of time for which the specified ``agent``'s velocitie
 
 :ref:`float<class_float>` **agent_get_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_time_horizon_obstacles>`
 
-Returns the minimal amount of time for which the specified ``agent``'s velocities that are computed by the simulation are safe with respect to static avoidance obstacles.
+回傳指定的 ``agent`` 如果持續使用由仿真過程計算出的速度移動，能夠不與靜態障礙物發生碰撞的最短時間。
 
 .. rst-class:: classref-item-separator
 
@@ -644,7 +644,7 @@ Returns the minimal amount of time for which the specified ``agent``'s velocitie
 
 :ref:`Vector2<class_Vector2>` **agent_get_velocity**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_velocity>`
 
-Returns the velocity of the specified ``agent``.
+回傳指定 ``agent`` 的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +656,7 @@ Returns the velocity of the specified ``agent``.
 
 :ref:`bool<class_bool>` **agent_has_avoidance_callback**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_has_avoidance_callback>`
 
-Return ``true`` if the specified ``agent`` has an avoidance callback.
+如果指定的 ``agent`` 有避障回呼，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ Return ``true`` if the specified ``agent`` has an avoidance callback.
 
 :ref:`bool<class_bool>` **agent_is_map_changed**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_is_map_changed>`
 
-Returns ``true`` if the map got changed the previous frame.
+如果地圖在上一影格發生了變化，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ Returns ``true`` if the map got changed the previous frame.
 
 設定在 ``agent`` 的每個避障處理步驟之後呼叫的回呼函式 :ref:`Callable<class_Callable>`\ 。計算出的 ``safe_velocity`` 將在物理計算之前通過訊號發送。
 
-\ **注意：**\ 只要代理還在導覽地圖上且未被釋放，建立的回呼函式就會始終獨立於 SceneTree 狀態進行處理。要為某個代理禁用回呼函式的發送，請再次使用一個空的 :ref:`Callable<class_Callable>` 來呼叫 :ref:`agent_set_avoidance_callback()<class_NavigationServer2D_method_agent_set_avoidance_callback>`\ 。
+\ **注意：**\ 只要代理還在導覽地圖上且未被釋放，建立的回呼函式就會始終獨立於 SceneTree 狀態進行處理。要為某個代理停用回呼函式的發送，請再次使用一個空的 :ref:`Callable<class_Callable>` 來呼叫 :ref:`agent_set_avoidance_callback()<class_NavigationServer2D_method_agent_set_avoidance_callback>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -730,9 +730,9 @@ Returns ``true`` if the map got changed the previous frame.
 
 |void| **agent_set_avoidance_priority**\ (\ agent\: :ref:`RID<class_RID>`, priority\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_priority>`
 
-Set the agent's ``avoidance_priority`` with a ``priority`` between 0.0 (lowest priority) to 1.0 (highest priority).
+設定該代理的 ``avoidance_priority``\ ，優先級 ``priority`` 在 0.0（最低優先級）到 1.0（最高優先級）之間。
 
-The specified ``agent`` does not adjust the velocity for other agents that would match the ``avoidance_mask`` but have a lower ``avoidance_priority``. This in turn makes the other agents with lower priority adjust their velocities even more to avoid collision with this agent.
+\ ``agent`` 指定的代理不會針對 ``avoidance_mask`` 存在匹配但 ``avoidance_priority`` 更低的代理調整速度。相應地，優先級更低的代理則會對其速度進行更大的調整，從而避免與這個代理髮生碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -792,7 +792,7 @@ The specified ``agent`` does not adjust the velocity for other agents that would
 
 |void| **agent_set_paused**\ (\ agent\: :ref:`RID<class_RID>`, paused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_paused>`
 
-If ``paused`` is ``true`` the specified ``agent`` will not be processed. For example, it will not calculate avoidance velocities or receive avoidance callbacks.
+如果 ``paused`` 為 ``true``\ ，則不會處理 ``agent`` 所指定的代理，例如不會計算避障速度，也不會收到避障回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -936,7 +936,7 @@ If ``paused`` is ``true`` the specified ``agent`` will not be processed. For exa
 
 :ref:`int<class_int>` **get_process_info**\ (\ process_info\: :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_get_process_info>`
 
-Returns information about the current state of the NavigationServer.
+回傳有關 NavigationServer 目前狀態的資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -948,7 +948,7 @@ Returns information about the current state of the NavigationServer.
 
 :ref:`bool<class_bool>` **is_baking_navigation_polygon**\ (\ navigation_polygon\: :ref:`NavigationPolygon<class_NavigationPolygon>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_is_baking_navigation_polygon>`
 
-Returns ``true`` when the provided navigation polygon is being baked on a background thread.
+當提供的導航多邊形正在後台執行緒上烘焙時回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1008,9 +1008,9 @@ Returns ``true`` when the provided navigation polygon is being baked on a backgr
 
 :ref:`int<class_int>` **link_get_iteration_id**\ (\ link\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_link_get_iteration_id>`
 
-Returns the current iteration ID of the navigation link. Every time the navigation link changes and synchronizes, the iteration ID increases. An iteration ID of ``0`` means the navigation link has never synchronized.
+回傳導航連結的目前迭代 ID。導航連結發生更改並同步時都會增加迭代 ID。迭代 ID 為 ``0`` 表示導航連結從未進行過同步。
 
-\ **Note:** The iteration ID will wrap around to ``1`` after reaching its range limit.
+\ **注意：**\ 迭代 ID 超過取值範圍後會繞回 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1216,13 +1216,13 @@ Returns the current iteration ID of the navigation link. Every time the navigati
 
 **已棄用：** This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.
 
-This function immediately forces synchronization of the specified navigation ``map`` :ref:`RID<class_RID>`. By default navigation maps are only synchronized at the end of each physics frame. This function can be used to immediately (re)calculate all the navigation meshes and region connections of the navigation map. This makes it possible to query a navigation path for a changed map immediately and in the same frame (multiple times if needed).
+該函式將立即強制指定的導航 ``map`` :ref:`RID<class_RID>` 的同步。預設情況下，導航地圖僅在每個物理影格結束時同步。該函式可用於立即（重新）計算該導航地圖的所有導覽網格和區塊連接。這使得可以在同一影格中對修改後的地圖的導航路徑立即執行查詢（如果需要，可以執行多次）。
 
-Due to technical restrictions the current NavigationServer command queue will be flushed. This means all already queued update commands for this physics frame will be executed, even those intended for other maps, regions and agents not part of the specified map. The expensive computation of the navigation meshes and region connections of a map will only be done for the specified map. Other maps will receive the normal synchronization at the end of the physics frame. Should the specified map receive changes after the forced update it will update again as well when the other maps receive their update.
+由於技術上的限制，目前的 NavigationServer 命令佇列將被衝刷。這意味著所有已在目前物理影格中入隊的更新命令都會被執行，即使是那些用於其他地圖、不屬於指定地圖的區塊和代理的更新命令。 昂貴計算的導覽網格和地圖的區塊連接將僅針對指定地圖進行。其他地圖將在物理影格結束時接收正常同步。如果指定的地圖在強制更新後又收到了修改，則它將在其他地圖收到更新時再次更新。
 
-Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected by this function and continues to happen for all maps and agents at the end of the physics frame.
+避障處理和 ``safe_velocity`` 訊號的分發不受該函式影響，仍繼續發生在物理影格結束時的所有地圖和代理上。
 
-\ **Note:** With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
+\ **注意：**\ 能力越大，責任越大。該函式僅該用於使用者真正知道自己在做甚麼並且有充分理由的情況。強制立即更新導航地圖需要鎖定 NavigationServer 並衝刷整個 NavigationServer 命令佇列。這不僅會嚴重影響遊戲的效能，而且如果缺乏遠見且使用不當，還會引入 bug。
 
 .. rst-class:: classref-item-separator
 
@@ -1258,7 +1258,7 @@ Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected
 
 :ref:`Vector2<class_Vector2>` **map_get_closest_point**\ (\ map\: :ref:`RID<class_RID>`, to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_closest_point>`
 
-Returns the navigation mesh surface point closest to the provided ``to_point`` on the navigation ``map``.
+回傳導航地圖 ``map`` 中，導覽網格表面上與給定的 ``to_point`` 距離最近的點。
 
 .. rst-class:: classref-item-separator
 
@@ -1270,7 +1270,7 @@ Returns the navigation mesh surface point closest to the provided ``to_point`` o
 
 :ref:`RID<class_RID>` **map_get_closest_point_owner**\ (\ map\: :ref:`RID<class_RID>`, to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_closest_point_owner>`
 
-Returns the owner region RID for the navigation mesh surface point closest to the provided ``to_point`` on the navigation ``map``.
+回傳導航地圖 ``map`` 中，導覽網格表面上與給定的 ``to_point`` 距離最近的點對應的所有者區塊 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -1294,9 +1294,9 @@ Returns the owner region RID for the navigation mesh surface point closest to th
 
 :ref:`int<class_int>` **map_get_iteration_id**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_iteration_id>`
 
-Returns the current iteration id of the navigation map. Every time the navigation map changes and synchronizes the iteration id increases. An iteration id of 0 means the navigation map has never synchronized.
+返回目前導航地圖的迭代 ID。每當導航地圖發生改變並進行同步時，這個迭代 id 就會增加。如果迭代id 為 0，則表示該導航地圖從未進行過同步。
 
-\ **Note:** The iteration id will wrap back to 1 after reaching its range limit.
+\ **注意：** 當迭代 ID 達到其數值範圍的上限時，會重新繞回 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1308,7 +1308,7 @@ Returns the current iteration id of the navigation map. Every time the navigatio
 
 :ref:`float<class_float>` **map_get_link_connection_radius**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_link_connection_radius>`
 
-返回該地圖的連結連接半徑。該距離是任何連結將搜索要連接的導覽網格多邊形的最大範圍。
+返回該地圖的連結連接半徑。該距離是任何連結將搜尋要連接的導覽網格多邊形的最大範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -1332,7 +1332,7 @@ Returns the current iteration id of the navigation map. Every time the navigatio
 
 :ref:`float<class_float>` **map_get_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_merge_rasterizer_cell_scale>`
 
-Returns map's internal merge rasterizer cell scale.
+回傳地圖的內部合併柵格化器的單元格縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -1368,11 +1368,11 @@ Returns map's internal merge rasterizer cell scale.
 
 :ref:`Vector2<class_Vector2>` **map_get_random_point**\ (\ map\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`, uniformly\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_random_point>`
 
-Returns a random position picked from all map region polygons with matching ``navigation_layers``.
+回傳與 ``navigation_layers`` 匹配的所有地圖區塊多邊形中隨機挑選的位置。
 
-If ``uniformly`` is ``true``, all map regions, polygons, and faces are weighted by their surface area (slower).
+如果 ``uniformly`` 為 ``true``\ ，則所有地圖區塊、多邊形、面的權重都會根據對應表面調整權重（較慢）。
 
-If ``uniformly`` is ``false``, just a random region and a random polygon are picked (faster).
+如果 ``uniformly`` 為 ``false``\ ，則只會簡單地隨機挑選一個區塊和一個多邊形（較快）。
 
 .. rst-class:: classref-item-separator
 
@@ -1396,7 +1396,7 @@ If ``uniformly`` is ``false``, just a random region and a random polygon are pic
 
 :ref:`bool<class_bool>` **map_get_use_async_iterations**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_use_async_iterations>`
 
-Returns ``true`` if the ``map`` synchronization uses an async process that runs on a background thread.
+如果地圖 ``map`` 的同步使用後台執行緒非同步處理，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1420,7 +1420,7 @@ Returns ``true`` if the ``map`` synchronization uses an async process that runs 
 
 :ref:`bool<class_bool>` **map_is_active**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_is_active>`
 
-Returns ``true`` if the map is active.
+如果地圖處於活動狀態，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1480,7 +1480,7 @@ Returns ``true`` if the map is active.
 
 |void| **map_set_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`
 
-Set the map's internal merge rasterizer cell scale used to control merging sensitivity.
+設定地圖的內部合併柵格化器的單元格縮放，用於控制合併的敏感度。
 
 .. rst-class:: classref-item-separator
 
@@ -1492,7 +1492,7 @@ Set the map's internal merge rasterizer cell scale used to control merging sensi
 
 |void| **map_set_use_async_iterations**\ (\ map\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_map_set_use_async_iterations>`
 
-If ``enabled`` is ``true`` the ``map`` synchronization uses an async process that runs on a background thread.
+如果 ``enabled`` 為 ``true``\ ，則地圖 ``map`` 的同步使用後台執行緒非同步處理。
 
 .. rst-class:: classref-item-separator
 
@@ -1540,7 +1540,7 @@ If ``enabled`` is ``true`` the ``map`` synchronization uses an async process tha
 
 :ref:`int<class_int>` **obstacle_get_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_avoidance_layers>`
 
-Returns the ``avoidance_layers`` bitmask of the specified ``obstacle``.
+回傳指定 ``obstacle`` 的 ``avoidance_layers`` 位元遮罩。
 
 .. rst-class:: classref-item-separator
 
@@ -1576,7 +1576,7 @@ Returns the ``avoidance_layers`` bitmask of the specified ``obstacle``.
 
 :ref:`Vector2<class_Vector2>` **obstacle_get_position**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_position>`
 
-Returns the position of the specified ``obstacle`` in world space.
+回傳在世界空間中指定的 ``obstacle`` 的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1588,7 +1588,7 @@ Returns the position of the specified ``obstacle`` in world space.
 
 :ref:`float<class_float>` **obstacle_get_radius**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_radius>`
 
-Returns the radius of the specified dynamic ``obstacle``.
+回傳指定的動態 ``obstacle`` 的半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -1600,7 +1600,7 @@ Returns the radius of the specified dynamic ``obstacle``.
 
 :ref:`Vector2<class_Vector2>` **obstacle_get_velocity**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_velocity>`
 
-Returns the velocity of the specified dynamic ``obstacle``.
+回傳指定的動態 ``obstacle`` 的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1612,7 +1612,7 @@ Returns the velocity of the specified dynamic ``obstacle``.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **obstacle_get_vertices**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_vertices>`
 
-Returns the outline vertices for the specified ``obstacle``.
+回傳指定的 ``obstacle`` 的輪廓頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -1660,7 +1660,7 @@ Returns the outline vertices for the specified ``obstacle``.
 
 |void| **obstacle_set_paused**\ (\ obstacle\: :ref:`RID<class_RID>`, paused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_obstacle_set_paused>`
 
-If ``paused`` is ``true`` the specified ``obstacle`` will not be processed. For example, it will no longer affect avoidance velocities.
+如果 ``paused`` 為 ``true``\ ，則不會處理 ``obstacle`` 所指定的障礙物，例如不會影響避障速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ If ``paused`` is ``true`` the specified ``obstacle`` will not be processed. For 
 
 \ **注意：**\ 因為 SceneTree 並不是執行緒安全的，所以這個函式需要在主執行緒執行或使用延遲呼叫。
 
-\ **注意：**\ 從 :ref:`Mesh<class_Mesh>` 資源讀取資料陣列雖然很方便，但會對影格率造成負面影響。這些資料需要從 GPU 獲取，卡住正在處理的 :ref:`RenderingServer<class_RenderingServer>`\ 。出於性能考量，請優先使用碰撞形狀或在程式碼中建立完整的資料陣列等方法。
+\ **注意：**\ 從 :ref:`Mesh<class_Mesh>` 資源讀取資料陣列雖然很方便，但會對影格率造成負面影響。這些資料需要從 GPU 取得，卡住正在處理的 :ref:`RenderingServer<class_RenderingServer>`\ 。出於效能考量，請優先使用碰撞形狀或在程式碼中建立完整的資料陣列等方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1736,7 +1736,7 @@ If ``paused`` is ``true`` the specified ``obstacle`` will not be processed. For 
 
 |void| **query_path**\ (\ parameters\: :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`, result\: :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>`, callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_NavigationServer2D_method_query_path>`
 
-Queries a path in a given navigation map. Start and target position and other parameters are defined through :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`. Updates the provided :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>` result object with the path among other results requested by the query. After the process is finished the optional ``callback`` will be called.
+在給定的導航地圖中查詢路徑。起點、目標點以及其他參數通過 :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>` 定義。會更新所提供的 :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>` 結果物件中的路徑以及其他查詢中請求的結果。處理完成後會呼叫可選的回呼 ``callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1760,7 +1760,7 @@ Queries a path in a given navigation map. Start and target position and other pa
 
 :ref:`Rect2<class_Rect2>` **region_get_bounds**\ (\ region\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_bounds>`
 
-Returns the axis-aligned rectangle for the ``region``'s transformed navigation mesh.
+回傳區塊 ``region`` 變換後的導覽網格所對應的軸對齊矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -1772,7 +1772,7 @@ Returns the axis-aligned rectangle for the ``region``'s transformed navigation m
 
 :ref:`Vector2<class_Vector2>` **region_get_closest_point**\ (\ region\: :ref:`RID<class_RID>`, to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_closest_point>`
 
-Returns the navigation mesh surface point closest to the provided ``to_point`` on the navigation ``region``.
+回傳導航區塊 ``region`` 上與給定點 ``to_point`` 最接近的導覽網格表面點。
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ Returns the navigation mesh surface point closest to the provided ``to_point`` o
 
 :ref:`bool<class_bool>` **region_get_enabled**\ (\ region\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_enabled>`
 
-Returns ``true`` if the specified ``region`` is enabled.
+如果指定的 ``region`` 已啟用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1844,9 +1844,9 @@ Returns ``true`` if the specified ``region`` is enabled.
 
 :ref:`int<class_int>` **region_get_iteration_id**\ (\ region\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_iteration_id>`
 
-Returns the current iteration ID of the navigation region. Every time the navigation region changes and synchronizes, the iteration ID increases. An iteration ID of ``0`` means the navigation region has never synchronized.
+回傳導航區塊的目前迭代 ID。導航區塊發生更改並同步時都會增加迭代 ID。迭代 ID 為 ``0`` 表示導航區塊從未進行過同步。
 
-\ **Note:** The iteration ID will wrap around to ``1`` after reaching its range limit.
+\ **注意：**\ 迭代 ID 超過取值範圍後會繞回 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1894,11 +1894,11 @@ Returns the current iteration ID of the navigation region. Every time the naviga
 
 :ref:`Vector2<class_Vector2>` **region_get_random_point**\ (\ region\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`, uniformly\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_random_point>`
 
-Returns a random position picked from all region polygons with matching ``navigation_layers``.
+回傳與 ``navigation_layers`` 匹配的所有區塊多邊形中隨機挑選的位置。
 
-If ``uniformly`` is ``true``, all region polygons and faces are weighted by their surface area (slower).
+如果 ``uniformly`` 為 ``true``\ ，則所有區塊多邊形和面的權重都會根據對應表面調整權重（較慢）。
 
-If ``uniformly`` is ``false``, just a random polygon and face is picked (faster).
+如果 ``uniformly`` 為 ``false``\ ，則只會簡單地隨機挑選一個多邊形和一個面（較快）。
 
 .. rst-class:: classref-item-separator
 
@@ -1910,7 +1910,7 @@ If ``uniformly`` is ``false``, just a random polygon and face is picked (faster)
 
 :ref:`Transform2D<class_Transform2D>` **region_get_transform**\ (\ region\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_transform>`
 
-Returns the global transformation of this ``region``.
+回傳該 ``region`` 的全域變換。
 
 .. rst-class:: classref-item-separator
 
@@ -1934,7 +1934,7 @@ Returns the global transformation of this ``region``.
 
 :ref:`bool<class_bool>` **region_get_use_async_iterations**\ (\ region\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_region_get_use_async_iterations>`
 
-Returns ``true`` if the ``region`` uses an async synchronization process that runs on a background thread.
+如果區塊 ``region`` 的同步使用後台執行緒非同步處理，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2070,7 +2070,7 @@ Returns ``true`` if the ``region`` uses an async synchronization process that ru
 
 |void| **region_set_use_async_iterations**\ (\ region\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_region_set_use_async_iterations>`
 
-If ``enabled`` is ``true`` the ``region`` uses an async synchronization process that runs on a background thread.
+如果 ``enabled`` 為 ``true``\ ，則區塊 ``region`` 的同步使用後台執行緒非同步處理。
 
 .. rst-class:: classref-item-separator
 
@@ -2118,9 +2118,9 @@ If ``enabled`` is ``true`` the ``region`` uses an async synchronization process 
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **simplify_path**\ (\ path\: :ref:`PackedVector2Array<class_PackedVector2Array>`, epsilon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_simplify_path>`
 
-Returns a simplified version of ``path`` with less critical path points removed. The simplification amount is in worlds units and controlled by ``epsilon``. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+回傳 ``path`` 的簡化版本，其中移除了不太重要的路徑點。簡化量以世界單位表示，由 ``epsilon`` 控制。簡化使用 Ramer-Douglas-Peucker 算法的變體進行曲線點抽取。
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+路徑簡化有助於緩解某些代理型別和腳本行為可能出現的各種路徑追蹤問題。例如“轉向”代理或“開放場”中的避讓。
 
 .. rst-class:: classref-item-separator
 
@@ -2132,7 +2132,7 @@ Path simplification can be helpful to mitigate various path following issues tha
 
 :ref:`RID<class_RID>` **source_geometry_parser_create**\ (\ ) :ref:`🔗<class_NavigationServer2D_method_source_geometry_parser_create>`
 
-Creates a new source geometry parser. If a :ref:`Callable<class_Callable>` is set for the parser with :ref:`source_geometry_parser_set_callback()<class_NavigationServer2D_method_source_geometry_parser_set_callback>` the callback will be called for every single node that gets parsed whenever :ref:`parse_source_geometry_data()<class_NavigationServer2D_method_parse_source_geometry_data>` is used.
+建立一個新的源幾何解析器。如果使用 :ref:`source_geometry_parser_set_callback()<class_NavigationServer2D_method_source_geometry_parser_set_callback>` 為解析器設定了 :ref:`Callable<class_Callable>`\ ，則每當使用 :ref:`parse_source_geometry_data()<class_NavigationServer2D_method_parse_source_geometry_data>` 時，都會為每個解析的節點呼叫回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -2144,13 +2144,13 @@ Creates a new source geometry parser. If a :ref:`Callable<class_Callable>` is se
 
 |void| **source_geometry_parser_set_callback**\ (\ parser\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2D_method_source_geometry_parser_set_callback>`
 
-Sets the ``callback`` :ref:`Callable<class_Callable>` for the specific source geometry ``parser``. The :ref:`Callable<class_Callable>` will receive a call with the following parameters:
+為指定的源幾何體 ``parser``\ （解析器）設定 ``callback`` :ref:`Callable<class_Callable>`\ 。該 :ref:`Callable<class_Callable>` 在呼叫時會接收以下參數：
 
-- ``navigation_mesh`` - The :ref:`NavigationPolygon<class_NavigationPolygon>` reference used to define the parse settings. Do NOT edit or add directly to the navigation mesh.
+\ ``navigation_mesh`` - 用於定義解析設定的 :ref:`NavigationPolygon<class_NavigationPolygon>` 參照。請勿直接編輯或向其新增內容。
 
-- ``source_geometry_data`` - The :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` reference. Add custom source geometry for navigation mesh baking to this object.
+\ ``source_geometry_data`` - :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` 參照。請將用於烘焙導覽網格的自訂源幾何體新增到這個物件中。
 
-- ``node`` - The :ref:`Node<class_Node>` that is parsed.
+\ ``node`` - 目前正在被解析的 :ref:`Node<class_Node>`\ （節點）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

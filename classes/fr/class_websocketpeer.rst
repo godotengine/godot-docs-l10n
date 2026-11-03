@@ -406,9 +406,9 @@ Returns the IP address of the connected peer.
 
 :ref:`int<class_int>` **get_connected_port**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_connected_port>`
 
-Returns the remote port of the connected peer.
+Renvoie le port distant du pair connecté.
 
-\ **Note:** Not available in the Web export.
+\ **Note :** Non disponible dans l'export Web.
 
 .. rst-class:: classref-item-separator
 

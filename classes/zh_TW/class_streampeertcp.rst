@@ -119,7 +119,7 @@ StreamPeerTCP
 
 如果 ``enabled`` 為 ``true``\ ，封包會立即發送。如果 ``enabled`` 為 ``false``\ （預設值），封包傳輸將被延遲，並使用\ `納格演算法 <https://zh.wikipedia.org/wiki/%E7%B4%8D%E6%A0%BC%E7%AE%97%E6%B3%95>`__\ 合併。
 
-\ **注意：**\ 對於發送大封包或需要傳輸大量資料的套用程式，建議將本屬性保持禁用，因為啟用本屬性會減少總體可用頻寬。
+\ **注意：**\ 對於發送大封包或需要傳輸大量資料的套用程式，建議將本屬性保持停用，因為啟用本屬性會減少總體可用頻寬。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

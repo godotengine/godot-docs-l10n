@@ -7,14 +7,14 @@ VisualShaderNodeReroute
 
 **繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A node that allows rerouting a connection within the visual shader graph.
+允許在視覺化著色器圖內重新路由連接的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Automatically adapts its port type to the type of the incoming connection and ensures valid connections.
+自動調整其連接埠型別以適應傳入連接的型別並確保有效連接。
 
 .. rst-class:: classref-reftable-group
 
@@ -43,7 +43,7 @@ Automatically adapts its port type to the type of the incoming connection and en
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **get_port_type**\ (\ ) |const| :ref:`🔗<class_VisualShaderNodeReroute_method_get_port_type>`
 
-Returns the port type of the reroute node.
+回傳重新路由節點的連接埠型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

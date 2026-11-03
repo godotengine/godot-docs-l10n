@@ -224,7 +224,7 @@ Notificación recibida cuando se cambia el servidor de texto.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+Notificación recibida cuando la aplicación entra en el modo pantalla en pantalla.
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -232,7 +232,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+Notificación recibida cuando la aplicación sale del modo pantalla en pantalla.
 
 .. rst-class:: classref-section-separator
 
@@ -297,7 +297,7 @@ Si se implementa, el método debe devolver un valor booleano. ``true`` termina e
 
 \ **Nota:** Cuando el motor está sufriendo y la velocidad de fotogramas se reduce, ``delta`` aumentará. Cuando ``delta`` aumenta, se limita a un máximo de :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. Como resultado, el ``delta`` acumulado puede no representar el tiempo del mundo real.
 
-\ **Nota:** Cuando ``--fixed-fps`` está habilitado o el motor se está ejecutando en modo Movie Maker (ver :ref:`MovieWriter<class_MovieWriter>`), el proceso ``delta`` siempre será el mismo para cada fotograma, independientemente de la cantidad de tiempo que tarde el fotograma en renderizarse.
+\ **Nota:** Cuando ``--fixed-fps`` está habilitado o el motor se está ejecutando en modo Creación de películas (ver :ref:`MovieWriter<class_MovieWriter>`), el proceso ``delta`` siempre será el mismo para cada fotograma, independientemente de la cantidad de tiempo que tarde el fotograma en renderizarse.
 
 \ **Nota:** El delta de fotograma puede ser post-procesado por :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` si esto está habilitado para el proyecto.
 

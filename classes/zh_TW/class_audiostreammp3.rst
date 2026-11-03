@@ -14,9 +14,9 @@ MP3 音訊串流驅動程式。
 說明
 ----
 
-MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if you want to load an MP3 file at run-time. More info can be found in :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`.
+MP3 音訊流驅動。如果你想要在執行時載入 MP3 檔案，請參閱 :ref:`data<class_AudioStreamMP3_property_data>`\ 。更多資訊請見 :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`\ 。
 
-\ **Note:** This class can optionally support legacy MP1 and MP2 formats, provided that the engine is compiled with the ``minimp3_extra_formats=yes`` SCons option. These extra formats are not enabled by default.
+\ **注意：**\ 如果引擎編譯時使用了 SCons 選項 ``minimp3_extra_formats=yes``\ ，則該類能夠可選地支援歷史遺留的 MP1 和 MP2 格式。預設不啟用此類額外格式。
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,7 @@ MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if 
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+音軌中單節的拍數。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+音軌的長度，單位為節拍。音訊檔案的實際時長可能長於該屬性所指示的值。它定義了音訊用於循環播放、\ :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` 和 :ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 時的結束點。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+音軌的拍速，以每分鐘節拍數計量。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ The tempo of the audio track, measured in beats per minute.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamMP3_property_beat_count>`. Useful for ambient sounds and background music.
+如果為 ``true``\ ，則當音訊流播放至音軌末尾，或者根據 :ref:`beat_count<class_AudioStreamMP3_property_beat_count>` 指定的節拍數播放至最後一個節拍的末尾時，它將從 :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` 指定的位置重新開始播放。適用於環境音效和背景音樂。
 
 .. rst-class:: classref-item-separator
 

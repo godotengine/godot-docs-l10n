@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAruco
 
 **繼承：** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for Aruco markers.
+Aruco 標記的設定標頭。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Configuration header for Aruco markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect Aruco markers.
+Aruco 標記的設定標頭。將它傳遞給 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 即可建立一個能夠檢測 Aruco 標記的空間情境。
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_50** = ``1``
 
-4 by 4 pixel Aruco marker dictionary with 50 IDs.
+4 x 4 像素 Aruco 標記字典，包含 50 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_100:
 
@@ -71,7 +71,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_100** = ``2``
 
-4 by 4 pixel Aruco marker dictionary with 100 IDs.
+4 x 4 像素 Aruco 標記字典，包含 100 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_250:
 
@@ -79,7 +79,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_250** = ``3``
 
-4 by 4 pixel Aruco marker dictionary with 250 IDs.
+4 x 4 像素 Aruco 標記字典，包含 250 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_1000:
 
@@ -87,7 +87,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_1000** = ``4``
 
-4 by 4 pixel Aruco marker dictionary with 1000 IDs.
+4 x 4 像素 Aruco 標記字典，包含 1000 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_50:
 
@@ -95,7 +95,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_50** = ``5``
 
-5 by 5 pixel Aruco marker dictionary with 50 IDs.
+5 x 5 像素 Aruco 標記字典，包含 50 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_100:
 
@@ -103,7 +103,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_100** = ``6``
 
-5 by 5 pixel Aruco marker dictionary with 100 IDs.
+5 x 5 像素 Aruco 標記字典，包含 100 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_250:
 
@@ -111,7 +111,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_250** = ``7``
 
-5 by 5 pixel Aruco marker dictionary with 250 IDs.
+5 x 5 像素 Aruco 標記字典，包含 250 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_1000:
 
@@ -119,7 +119,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_1000** = ``8``
 
-5 by 5 pixel Aruco marker dictionary with 1000 IDs.
+5 x 5 像素 Aruco 標記字典，包含 1000 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_50:
 
@@ -127,7 +127,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_50** = ``9``
 
-6 by 6 pixel Aruco marker dictionary with 50 IDs.
+6 x 6 像素 Aruco 標記字典，包含 50 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_100:
 
@@ -135,7 +135,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_100** = ``10``
 
-6 by 6 pixel Aruco marker dictionary with 100 IDs.
+6 x 6 像素 Aruco 標記字典，包含 100 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_250:
 
@@ -143,7 +143,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_250** = ``11``
 
-6 by 6 pixel Aruco marker dictionary with 250 IDs.
+6 x 6 像素 Aruco 標記字典，包含 250 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_1000:
 
@@ -151,7 +151,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_1000** = ``12``
 
-6 by 6 pixel Aruco marker dictionary with 1000 IDs.
+6 x 6 像素 Aruco 標記字典，包含 1000 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_50:
 
@@ -159,7 +159,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_50** = ``13``
 
-7 by 7 pixel Aruco marker dictionary with 50 IDs.
+7 x 7 像素 Aruco 標記字典，包含 50 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_100:
 
@@ -167,7 +167,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_100** = ``14``
 
-7 by 7 pixel Aruco marker dictionary with 100 IDs.
+7 x 7 像素 Aruco 標記字典，包含 100 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_250:
 
@@ -175,7 +175,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_250** = ``15``
 
-7 by 7 pixel Aruco marker dictionary with 250 IDs.
+7 x 7 像素 Aruco 標記字典，包含 250 個 ID。
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_1000:
 
@@ -183,7 +183,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_1000** = ``16``
 
-7 by 7 pixel Aruco marker dictionary with 1000 IDs.
+7 x 7 像素 Aruco 標記字典，包含 1000 個 ID。
 
 .. rst-class:: classref-section-separator
 
@@ -205,9 +205,9 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 - |void| **set_aruco_dict**\ (\ value\: :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>`\ )
 - :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **get_aruco_dict**\ (\ )
 
-Dictionary to use to decode Aruco markers.
+用於解碼 Aruco 標記的字典。
 
-\ **Note:** Must be set before using this configuration to create a spatial context.
+\ **注意：**\ 在使用該設定建立空間情境之前必須先設定。
 
 .. rst-class:: classref-section-separator
 
@@ -224,9 +224,9 @@ Dictionary to use to decode Aruco markers.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationAruco_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+回傳該設定啟用的元件。
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **注意：**\ 僅在該設定用於建立空間情境後有效。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

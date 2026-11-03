@@ -214,7 +214,7 @@ Véase también :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_co
     @export var hp = 30
     @export var speed = 1.25
 
-\ **Nota:** Las categorías en la lista del panel de inspección usualmente dividen las propiedades provenientes de diferentes clases (Node, Node2D, Sprite, etc) . Para una mejor claridad, se recomienda usar en su lugar :ref:`@export_group<class_@GDScript_annotation_@export_group>` y :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`.
+\ **Nota:** Las categorías en la lista del panel de inspección usualmente dividen las propiedades provenientes de diferentes clases (Node, Node2D, Sprite, etc). Para una mejor claridad, se recomienda usar en su lugar :ref:`@export_group<class_@GDScript_annotation_@export_group>` y :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`.
 
 .. rst-class:: classref-item-separator
 
@@ -597,9 +597,9 @@ Véase también :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_
 
 **@export_group**\ (\ name\: :ref:`String<class_String>`, prefix\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_group>`
 
-Define un nuevo grupo para las siguientes propiedades exportadas. Esto ayuda a organizar las propiedades en el panel Inspector. Los grupos pueden ser agregados con un ``prefix`` opcional, que podría hacer un grupo para solo considerar las propiedades que tenga este prefijo. El agrupamiento se romperá con la primera propiedad que no tenga un prefijo. El prefijo también sera removido del nombre de la propiedad en el panel Inspector.
+Define un nuevo grupo para las siguientes propiedades exportadas. Esto ayuda a organizar las propiedades en el panel Inspector. Los grupos pueden ser agregados con un ``prefix`` opcional, que podría hacer un grupo para solo considerar las propiedades que tenga este prefijo. El agrupamiento se romperá con la primera propiedad que no tenga un prefijo. El prefijo también será eliminado del nombre de la propiedad en el panel Inspector.
 
-Si no se proporciona un ``prefix``, entonces cada propiedad siguiente sera agregada al grupo. El grupo se disuelve para cuando el grupo o categoría siguiente es definida. También puedes forzar la disolución de un grupo usando esta anotación con strings vacías como parámetros, ``@export_group("", "")``.
+Si no se proporciona un ``prefix``, entonces cada propiedad siguiente será agregada al grupo. El grupo se disuelve para cuando el grupo o categoría siguiente es definida. También puedes forzar la disolución de un grupo usando esta anotación con strings vacías como parámetros, ``@export_group("", "")``.
 
 Los grupos no pueden ser anidados, usa :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>` para añadir subgrupos dentro de grupos.
 
@@ -657,7 +657,7 @@ Véase también :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@Gl
     @export_node_path("Button", "TouchScreenButton") var some_button
     @export_node_path("Button", "TouchScreenButton") var many_buttons: Array[NodePath]
 
-\ **Note:** El tipo debe de ser una clase nativa o un script registrado globalmente (usando la keyword de ``class_name`` ) que hereda de la clase :ref:`Node<class_Node>`.
+\ **Nota:** El tipo debe de ser una clase nativa o un script registrado globalmente (usando la keyword de ``class_name``) que hereda de la clase :ref:`Node<class_Node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +777,7 @@ También consulte :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_
 
 **@export_tool_button**\ (\ text\: :ref:`String<class_String>`, icon\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_tool_button>`
 
-Exporta una propiedad :ref:`Callable<class_Callable>` como un botón clickeable con la etiqueta ``text``. Cuando se presiona el botón, se llama al :ref:`Callable<class_Callable>`.
+Exporta una propiedad :ref:`Callable<class_Callable>` como un botón clicable con la etiqueta ``text``. Cuando se presiona el botón, se llama al :ref:`Callable<class_Callable>`.
 
 Si se especifica ``icon``, este se utiliza para obtener un icono para el botón mediante :ref:`Control.get_theme_icon()<class_Control_method_get_theme_icon>`, del tipo de tema ``"EditorIcons"``. Si se omite ``icon``, se usa el icono predeterminado ``"Callable"``.
 
@@ -936,11 +936,11 @@ Marca la siguiente declaración para ignorar el ``warning`` especificado. Véase
 
 ::
 
-    . . . .func test():
-    . . . .print("hola")
-    . . . .return
-    . . . .@warning_ignore("unreachable_code")
-    print("unreachable")
+    func test():
+        print("hola")
+        return
+        @warning_ignore("unreachable_code")
+        print("unreachable")
 
 Véase también :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` y :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>`.
 
@@ -1021,22 +1021,22 @@ Devuelve un :ref:`Color<class_Color>` construido a partir de rojo (``r8``), verd
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Verifica que la ``condition`` sea ``true``. Si la ``condition`` es ``false``, se genera un error. Al ejecutar desde el editor, el proyecto en ejecución también se pausará hasta que lo reanudes. Esto puede usarse como una forma más estricta de :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` para reportar errores a los desarrolladores del proyecto o a los usuarios de plugins.
+Verifica que la ``condition`` sea ``true``. Si la ``condition`` es ``false``, se genera un error y el método actual devuelve un valor predeterminado. Al ejecutar el proyecto desde el editor, una aserción fallida también provoca una interrupción del depurador. Esto puede utilizarse como una forma más estricta de :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` para informar de errores a los desarrolladores del proyecto o a los usuarios de complementos.
 
-Un mensaje opcional ``message`` puede mostrarse además del mensaje genérico "Assertion failed". Puedes usar esto para proporcionar detalles adicionales sobre por qué falló la aserción.
+Se puede mostrar un mensaje opcional ``message`` junto con el mensaje genérico «Assertion failed». Puedes utilizarlo para proporcionar más detalles sobre por qué falló la aserción.
 
-\ **Advertencia:** Por razones de rendimiento, el código dentro de :ref:`assert()<class_@GDScript_method_assert>` solo se ejecuta en versiones de depuración o al ejecutar el proyecto desde el editor. No incluyas código con efectos secundarios en una llamada a :ref:`assert()<class_@GDScript_method_assert>`. De lo contrario, el proyecto se comportará de manera diferente cuando se exporte en modo de lanzamiento.
+\ **Advertencia:** Por razones de rendimiento, el código dentro de :ref:`assert()<class_@GDScript_method_assert>` solo se ejecuta en compilaciones de depuración o al ejecutar el proyecto desde el editor. No incluyas código con efectos secundarios en una llamada a :ref:`assert()<class_@GDScript_method_assert>`. De lo contrario, el proyecto se comportará de forma diferente al exportarlo en modo de lanzamiento.
 
 ::
 
-    Imagina que siempre queremos que la velocidad esté entre 0 y 20.
+    # Imagina que siempre queremos que la velocidad esté entre 0 y 20.
     var speed = -10
     assert(speed < 20) # Verdadero, el programa continuará.
     assert(speed >= 0) # Falso, el programa se detendrá.
-    assert(speed >= 0 and speed < 20) # También puedes combinar las dos condiciones en una sola verificación.
+    assert(speed >= 0 and speed < 20) # También puedes combinar las dos condiciones en una sola comprobación.
     assert(speed < 20, "el límite de velocidad es 20") # Muestra un mensaje.
 
-\ **Nota:** :ref:`assert()<class_@GDScript_method_assert>` es una palabra clave, no una función. Por lo tanto, no puedes acceder a ella como un :ref:`Callable<class_Callable>` ni usarla dentro de expresiones.
+\ **Nota:** :ref:`assert()<class_@GDScript_method_assert>` es una palabra clave, no una función. Por lo tanto, no puedes acceder a ella como un :ref:`Callable<class_Callable>` ni utilizarla dentro de expresiones.
 
 .. rst-class:: classref-item-separator
 

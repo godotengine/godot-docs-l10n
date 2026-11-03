@@ -5,20 +5,20 @@
 float
 =====
 
-A built-in type for floating-point numbers.
+浮點數內建型別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The **float** built-in type is a 64-bit double-precision floating-point number, equivalent to ``double`` in C++. This type has 14 reliable decimal digits of precision. The maximum value of **float** is approximately ``1.79769e308``, and the minimum is approximately ``-1.79769e308``.
+內建的 **float** 型別是一個 64 位元雙精度浮點數，相當於 C++ 中的 ``double``\ 。這種型別擁有 14 位元可靠的十進位精度。\ **float** 的最大值約為 ``1.79769e308``\ ，最小值約為 ``-1.79769e308``\ 。
 
-Many methods and properties in the engine use 32-bit single-precision floating-point numbers instead, equivalent to ``float`` in C++, which have 6 reliable decimal digits of precision. For data structures such as :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, Godot uses 32-bit floating-point numbers by default, but it can be changed to use 64-bit doubles if Godot is compiled with the ``precision=double`` option.
+引擎中的許多方法和屬性則使用的是 32 位元單精度浮點數（相當於 C++ 中的 ``float``\ ），其可靠精度為 6 位元十進位數。對於 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 等資料結構，Godot 預設使用 32 位元浮點數，但如果在編譯 Godot 時啟用了 ``precision=double`` 選項，可以將其更改為使用 64 位元雙精度數。
 
-Math done using the **float** type is not guaranteed to be exact and will often result in small errors. You should usually use the :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` and :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` methods instead of ``==`` to compare **float** values for equality.
+使用 **float** 型別進行的數學運算並不能保證絕對精確，通常會產生微小的誤差。因此，在判斷 **float** 值是否相等時，通常應該使用 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` 和 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` 方法，而不是直接使用 ``==`` 運算符。
 
-\ **Note:** In a boolean context, a **float** will evaluate to ``false`` if it's exactly equal to ``0.0``, and to ``true`` otherwise.
+\ **注意：** 在布林值（boolean）語境下，如果 **float** 的值嚴格等於 ``0.0``\ ，它的求值結果為 ``false``\ ；否則，求值結果始終為 ``true``\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -221,11 +221,11 @@ Math done using the **float** type is not guaranteed to be exact and will often 
 
 :ref:`Color<class_Color>` **operator ***\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_float_operator_mul_Color>`
 
-Multiplies each component of the :ref:`Color<class_Color>`, including the alpha, by the given **float**.
+將該 :ref:`Color<class_Color>` 的每個分量乘以給定的 **float**\ ，包括 Alpha。
 
 ::
 
-    print(1.5 * Color(0.5, 0.5, 0.5)) # Prints (0.75, 0.75, 0.75, 1.5)
+    print(1.5 * Color(0.5, 0.5, 0.5)) # 輸出 (0.75, 0.75, 0.75, 1.5)
 
 .. rst-class:: classref-item-separator
 
@@ -249,11 +249,11 @@ Multiplies each component of the :ref:`Color<class_Color>`, including the alpha,
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_float_operator_mul_Vector2>`
 
-Multiplies each component of the :ref:`Vector2<class_Vector2>` by the given **float**.
+將該 :ref:`Vector2<class_Vector2>` 的每個分量乘以給定的 **float**\ 。
 
 ::
 
-    print(2.5 * Vector2(1, 3)) # Prints (2.5, 7.5)
+    print(2.5 * Vector2(1, 3)) # 輸出 (2.5, 7.5)
 
 .. rst-class:: classref-item-separator
 
@@ -265,11 +265,11 @@ Multiplies each component of the :ref:`Vector2<class_Vector2>` by the given **fl
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_float_operator_mul_Vector2i>`
 
-Multiplies each component of the :ref:`Vector2i<class_Vector2i>` by the given **float**. Returns a :ref:`Vector2<class_Vector2>`.
+將該 :ref:`Vector2i<class_Vector2i>` 的每個分量乘以給定的 **float**\ 。回傳的是 :ref:`Vector2<class_Vector2>`\ 。
 
 ::
 
-    print(0.9 * Vector2i(10, 15)) # Prints (9.0, 13.5)
+    print(0.9 * Vector2i(10, 15)) # 輸出 (9.0, 13.5)
 
 .. rst-class:: classref-item-separator
 
@@ -293,11 +293,11 @@ Multiplies each component of the :ref:`Vector2i<class_Vector2i>` by the given **
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_float_operator_mul_Vector3i>`
 
-Multiplies each component of the :ref:`Vector3i<class_Vector3i>` by the given **float**. Returns a :ref:`Vector3<class_Vector3>`.
+將該 :ref:`Vector3i<class_Vector3i>` 的每個分量乘以給定的 **float**\ 。回傳的是 :ref:`Vector3<class_Vector3>`\ 。
 
 ::
 
-    print(0.9 * Vector3i(10, 15, 20)) # Prints (9.0, 13.5, 18.0)
+    print(0.9 * Vector3i(10, 15, 20)) # 輸出 (9.0, 13.5, 18.0)
 
 .. rst-class:: classref-item-separator
 
@@ -321,11 +321,11 @@ Multiplies each component of the :ref:`Vector3i<class_Vector3i>` by the given **
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Vector4i<class_Vector4i>`\ ) :ref:`🔗<class_float_operator_mul_Vector4i>`
 
-Multiplies each component of the :ref:`Vector4i<class_Vector4i>` by the given **float**. Returns a :ref:`Vector4<class_Vector4>`.
+將該 :ref:`Vector4i<class_Vector4i>` 的每個分量乘以給定的 **float**\ 。回傳的是 :ref:`Vector4<class_Vector4>`\ 。
 
 ::
 
-    print(0.9 * Vector4i(10, 15, 20, -10)) # Prints (9.0, 13.5, 18.0, -9.0)
+    print(0.9 * Vector4i(10, 15, 20, -10))# 輸出 (9.0, 13.5, 18.0, -9.0)
 
 .. rst-class:: classref-item-separator
 

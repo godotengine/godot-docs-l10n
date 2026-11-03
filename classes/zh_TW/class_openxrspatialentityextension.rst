@@ -9,14 +9,14 @@ OpenXRSpatialEntityExtension
 
 **繼承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-OpenXR extension that handles spatial entities.
+用於處理空間實體的 OpenXR 擴充。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-OpenXR extension that handles spatial entities and, when enabled, allows querying those spatial entities. This extension will also automatically manage :ref:`XRTracker<class_XRTracker>` objects for static entities.
+OpenXR 擴充，用於處理空間實體，啟用後允許查詢這些空間實體。該擴充還將自動管理靜態實體的 :ref:`XRTracker<class_XRTracker>` 物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -95,7 +95,7 @@ OpenXR extension that handles spatial entities and, when enabled, allows queryin
 
 **spatial_discovery_recommended**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_signal_spatial_discovery_recommended>`
 
-Emitted when OpenXR recommends running a discovery query because entities managed by this spatial context have (likely) changed.
+當 OpenXR 建議執行發現查詢時發出該訊號，因為該空間情境管理的實體（可能）已發生更改。
 
 .. rst-class:: classref-section-separator
 
@@ -118,7 +118,7 @@ enum **Capability**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_Capability>`
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_PLANE_TRACKING** = ``1000741000``
 
-Plane tracking capability.
+平面追蹤功能。
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_QR_CODE:
 
@@ -126,7 +126,7 @@ Plane tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_QR_CODE** = ``1000743000``
 
-QR code based marker tracking capability.
+基於二維碼的標記追蹤功能。
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE:
 
@@ -134,7 +134,7 @@ QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE** = ``1000743001``
 
-Micro QR code based marker tracking capability.
+基於微型二維碼的標記追蹤功能。
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_ARUCO_MARKER:
 
@@ -142,7 +142,7 @@ Micro QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_ARUCO_MARKER** = ``1000743002``
 
-Aruco marker based marker tracking capability.
+基於 Aruco 標記的標記追蹤功能。
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_APRIL_TAG:
 
@@ -150,7 +150,7 @@ Aruco marker based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_APRIL_TAG** = ``1000743003``
 
-April tag based marker tracking capability.
+基於 April 標籤的標記追蹤功能。
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_ANCHOR:
 
@@ -158,7 +158,7 @@ April tag based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_ANCHOR** = ``1000762000``
 
-Anchor capability.
+錨點功能。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ enum **ComponentType**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_ComponentTy
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_2D** = ``1``
 
-Component that provides the 2D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded2DListEXT``; the corresponding data structure is ``XrSpatialBounded2DDataEXT``.
+為空間實體提供 2D 邊界的元件。相應的清單結構為 ``XrSpatialComponentBounded2DListEXT``\ ；相應的資料結構為 ``XrSpatialBounded2DDataEXT``\ 。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_BOUNDED_3D:
 
@@ -184,7 +184,7 @@ Component that provides the 2D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_3D** = ``2``
 
-Component that provides the 3D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded3DListEXT``; the corresponding data structure is ``XrBoxf``.
+為空間實體提供 3D 邊界的元件。相應的清單結構為 ``XrSpatialComponentBounded3DListEXT``\ ；相應的資料結構為 ``XrBoxf``\ 。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PARENT:
 
@@ -192,7 +192,7 @@ Component that provides the 3D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PARENT** = ``3``
 
-Component that provides the XrSpatialEntityIdEXT of the parent for a spatial entity. The corresponding list structure is ``XrSpatialComponentParentListEXT``; the corresponding data structure is ``XrSpatialEntityIdEXT``.
+為空間實體提供父級 XrSpatialEntityIdEXT 的元件。相應的清單結構為 ``XrSpatialComponentParentListEXT``\ ；相應的資料結構為 ``XrSpatialEntityIdEXT``\ 。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_3D:
 
@@ -200,7 +200,7 @@ Component that provides the XrSpatialEntityIdEXT of the parent for a spatial ent
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_3D** = ``4``
 
-Component that provides a 3D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh3DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT``.
+為空間實體提供 3D 網格的元件。相應的清單結構為 ``XrSpatialComponentMesh3DListEXT``\ ；相應的資料結構為 ``XrSpatialMeshDataEXT``\ 。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_ALIGNMENT:
 
@@ -208,7 +208,7 @@ Component that provides a 3D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_ALIGNMENT** = ``1000741000``
 
-Component that provides the plane alignment enum for a spatial entity. The corresponding list structure is ``XrSpatialComponentPlaneAlignmentListEXT``; the corresponding data structure is ``XrSpatialPlaneAlignmentEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+為空間實體提供平面對齊列舉的元件。相應的清單結構為 ``XrSpatialComponentPlaneAlignmentListEXT``\ ；相應的資料結構為 ``XrSpatialPlaneAlignmentEXT``\ （由 ``XR_EXT_spatial_plane_tracking`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_2D:
 
@@ -216,7 +216,7 @@ Component that provides the plane alignment enum for a spatial entity. The corre
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_2D** = ``1000741001``
 
-Component that provides a 2D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh2DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+為空間實體提供 2D 網格的元件。相應的清單結構為 ``XrSpatialComponentMesh2DListEXT``\ ；相應的資料結構為 ``XrSpatialMeshDataEXT``\ （由 ``XR_EXT_spatial_plane_tracking`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_POLYGON_2D:
 
@@ -224,7 +224,7 @@ Component that provides a 2D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_POLYGON_2D** = ``1000741002``
 
-Component that provides a 2D boundary polygon for a spatial entity. The corresponding list structure is ``XrSpatialComponentPolygon2DListEXT``; the corresponding data structure is ``XrSpatialPolygon2DDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+為空間實體提供 2D 邊界多邊形的元件。相應的清單結構為 ``XrSpatialComponentPolygon2DListEXT``\ ；相應的資料結構為 ``XrSpatialPolygon2DDataEXT``\ （由 ``XR_EXT_spatial_plane_tracking`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_SEMANTIC_LABEL:
 
@@ -232,7 +232,7 @@ Component that provides a 2D boundary polygon for a spatial entity. The correspo
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_SEMANTIC_LABEL** = ``1000741003``
 
-Component that provides a semantic label for a plane. The corresponding list structure is ``XrSpatialComponentPlaneSemanticLabelListEXT``; the corresponding data structure is ``XrSpatialPlaneSemanticLabelEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+為螢幕提供語義標籤的元件。相應的清單結構為 ``XrSpatialComponentPlaneSemanticLabelListEXT``\ ；相應的資料結構為 ``XrSpatialPlaneSemanticLabelEXT``\ （由 ``XR_EXT_spatial_plane_tracking`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MARKER:
 
@@ -240,7 +240,7 @@ Component that provides a semantic label for a plane. The corresponding list str
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MARKER** = ``1000743000``
 
-A component describing the marker type, ID and location. The corresponding list structure is ``XrSpatialComponentMarkerListEXT``; the corresponding data structure is ``XrSpatialMarkerDataEXT`` (Added by the ``XR_EXT_spatial_marker_tracking`` extension).
+描述標記型別、ID 和位置的元件。相應的清單結構為 ``XrSpatialComponentMarkerListEXT``\ ；相應的資料結構為 ``XrSpatialMarkerDataEXT``\ （由 ``XR_EXT_spatial_marker_tracking`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_ANCHOR:
 
@@ -248,7 +248,7 @@ A component describing the marker type, ID and location. The corresponding list 
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_ANCHOR** = ``1000762000``
 
-Component that provides the location for an anchor. The corresponding list structure is ``XrSpatialComponentAnchorListEXT``; the corresponding data structure is ``XrPosef`` (Added by the ``XR_EXT_spatial_anchor`` extension).
+用於提供錨點位置的元件。相應的清單結構為 ``XrSpatialComponentAnchorListEXT``\ ；相應的資料結構為 ``XrPosef``\ （由 ``XR_EXT_spatial_anchor`` 擴充新增）。
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PERSISTENCE:
 
@@ -256,7 +256,7 @@ Component that provides the location for an anchor. The corresponding list struc
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PERSISTENCE** = ``1000763000``
 
-Component that provides the persisted UUID for a spatial entity. The corresponding list structure is ``XrSpatialComponentPersistenceListEXT; the corresponding data structure is [code]XrSpatialPersistenceDataEXT`` (Added by the ``XR_EXT_spatial_persistence`` extension).
+該元件用於為空間實體提供持久化的 UUID（通用唯一識別碼）。其對應的清單結構是 ``XrSpatialComponentPersistenceListEXT``\ ，對應的資料結構是 ``XrSpatialPersistenceDataEXT``\ （由 ``XR_EXT_spatial_persistence`` 擴充新增）。
 
 .. rst-class:: classref-section-separator
 
@@ -273,7 +273,7 @@ Component that provides the persisted UUID for a spatial entity. The correspondi
 
 :ref:`RID<class_RID>` **add_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`, entity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>`
 
-Registers an entity that was created directly on the OpenXR runtime.
+注冊一個直接在 OpenXR 執行時上建立的實體。
 
 .. rst-class:: classref-item-separator
 
@@ -285,11 +285,11 @@ Registers an entity that was created directly on the OpenXR runtime.
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_spatial_context**\ (\ capability_configurations\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`
 
-Creates a new spatial context that handles entities for the provided capability configurations. ``capability_configurations`` is an array of :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` with the needed capability configuration data.
+建立一個新的空間情境，用於處理所提供的功能設定的實體。\ ``capability_configurations`` 是一個包含所需功能設定資料的 :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` 陣列。
 
-\ ``next`` is an optional parameter that can contain additional information for creating our spatial context.
+\ ``next`` 是一個可選參數，可以包含用於建立空間情境的附加資訊。
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our spatial context.
+\ **注意：**\ 這是一個非同步方法，回傳一個 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 物件，用於追蹤狀態；丟棄該物件不會取消建立過程。如果指定了 ``user_callback``\ ，則成功時會呼叫該回呼函式。該函式的結果資料是空間情境的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -301,11 +301,11 @@ Creates a new spatial context that handles entities for the provided capability 
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`
 
-Starts a new discovery query, this will gather all objects tracked by the ``spatial_context`` that have at least one of the component types specified in ``component_types``.
+啟動一個新的發現查詢，這將收集由 ``spatial_context`` 追蹤的所有物件，這些物件至少具有 ``component_types`` 中指定的一種元件型別。
 
-\ ``next`` is an optional parameter that can contain additional information for executing the discovery query.
+\ ``next`` 是一個可選參數，可以包含用於執行發現查詢的附加資訊。
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the discovery process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our snapshot.
+\ **注意：**\ 這是一個非同步方法，它回傳一個 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 物件，用於追蹤狀態；丟棄該物件不會取消發現過程。如果指定了 ``user_callback``\ ，則成功時會呼叫該回呼函式。該函式的結果資料是快照的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Starts a new discovery query, this will gather all objects tracked by the ``spat
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities_with_component_data**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities_with_component_data>`
 
-Convenience method when the caller only has an :ref:`Array<class_Array>` of :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` and needs to discover spatial entities.
+當呼叫方僅擁有一個 :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` :ref:`Array<class_Array>` 且需要發現空間實體時，使用的便捷方法。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Convenience method when the caller only has an :ref:`Array<class_Array>` of :ref
 
 :ref:`RID<class_RID>` **find_spatial_entity**\ (\ entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_find_spatial_entity>`
 
-Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
+回傳指定空間實體 ID 對應的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
 
 |void| **free_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_context>`
 
-Frees a spatial context previously created when calling :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`. If the spatial context creation is still ongoing, the asynchronous process is cancelled.
+釋放之前呼叫 :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 建立的空間情境。如果空間情境建立過程仍在進行中，則會取消該非同步處理程序。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Frees a spatial context previously created when calling :ref:`create_spatial_con
 
 |void| **free_spatial_entity**\ (\ entity\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_entity>`
 
-Frees an entity previously created when calling :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` or :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`.
+釋放之前呼叫 :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` 或 :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>` 建立的實體。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Frees an entity previously created when calling :ref:`add_spatial_entity()<class
 
 |void| **free_spatial_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_snapshot>`
 
-Frees a spatial snapshot previously created when calling :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`. If the spatial snapshot creation is still ongoing, the asynchronous process is cancelled.
+釋放之前呼叫 :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 建立的空間快照。如果空間快照建立仍在進行中，則會取消該非同步處理程序。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Frees a spatial snapshot previously created when calling :ref:`discover_spatial_
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_float_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_float_buffer>`
 
-Returns a buffer with floats from a buffer that was retrieved when taking a snapshot.
+回傳一個包含浮點數的緩衝區，該緩衝區是從拍攝快照時取得的緩衝區中提取的。
 
 .. rst-class:: classref-item-separator
 
@@ -389,9 +389,9 @@ Returns a buffer with floats from a buffer that was retrieved when taking a snap
 
 :ref:`int<class_int>` **get_spatial_context_handle**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_handle>`
 
-Returns the OpenXR spatial context handle for this snapshot.
+回傳該快照的 OpenXR 空間情境控制代碼。
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **注意：**\ 該方法旨在供實作空間實體功能處理程序的 GDExtensions 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Returns the OpenXR spatial context handle for this snapshot.
 
 :ref:`bool<class_bool>` **get_spatial_context_ready**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_ready>`
 
-Returns ``true`` if the spatial context finished its creation and is ready to be used.
+如果空間情境已完成建立並準備使用，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Returns ``true`` if the spatial context finished its creation and is ready to be
 
 :ref:`RID<class_RID>` **get_spatial_entity_context**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_context>`
 
-Returns the spatial context for this entity.
+回傳該實體的空間情境。
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Returns the spatial context for this entity.
 
 :ref:`int<class_int>` **get_spatial_entity_id**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_id>`
 
-Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
+回傳與該實體關聯的內部 ``XrSpatialEntityIdEXT``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
 
 :ref:`RID<class_RID>` **get_spatial_snapshot_context**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_context>`
 
-Returns the spatial context related to this spatial snapshot.
+回傳與該空間快照相關的空間情境。
 
 .. rst-class:: classref-item-separator
 
@@ -451,9 +451,9 @@ Returns the spatial context related to this spatial snapshot.
 
 :ref:`int<class_int>` **get_spatial_snapshot_handle**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_handle>`
 
-Returns the OpenXR spatial snapshot handle for this snapshot.
+回傳該快照的 OpenXR 空間快照控制代碼。
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **注意：**\ 該方法旨在供實作空間實體功能處理程序的 GDExtension 擴充使用。
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ Returns the OpenXR spatial snapshot handle for this snapshot.
 
 :ref:`String<class_String>` **get_string**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_string>`
 
-Returns a string from a buffer that was retrieved when taking a snapshot.
+回傳從拍攝快照時取得的緩衝區中提取的字串。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Returns a string from a buffer that was retrieved when taking a snapshot.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_uint8_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint8_buffer>`
 
-Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a snapshot.
+從拍攝快照時取得的緩衝區中回傳一個包含 8 位元整數的緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -489,7 +489,7 @@ Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint16_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint16_buffer>`
 
-Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a snapshot.
+從拍攝快照時取得的緩衝區中回傳一個包含 16 位元整數的緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint32_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint32_buffer>`
 
-Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a snapshot.
+從拍攝快照時取得的緩衝區中回傳一個包含 32 位元整數的緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vector2_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector2_buffer>`
 
-Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that was retrieved when taking a snapshot.
+從拍攝快照時取得的緩衝區中回傳一個包含提取的 :ref:`Vector2<class_Vector2>` 條目的緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that w
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vector3_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector3_buffer>`
 
-Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that was retrieved when taking a snapshot.
+從拍攝快照時取得的緩衝區中回傳一個包含提取的 :ref:`Vector3<class_Vector3>` 條目的緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that w
 
 :ref:`RID<class_RID>` **make_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`
 
-Creates a new entity for this ``entity_id``. The ``spatial_context`` should match the context that discovered the entity.
+為該 ``entity_id`` 建立一個新的實體。\ ``spatial_context`` 應與發現該實體的情境相匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Creates a new entity for this ``entity_id``. The ``spatial_context`` should matc
 
 :ref:`bool<class_bool>` **query_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_query_snapshot>`
 
-Queries the snapshot data. This will find all entities in the snapshot that contain all requested components in ``component_data``. The objects held within ``component_data`` will then be populated with the queried data. ``component_data`` must always have an object of :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` as the first entry.
+查詢快照資料。該函式將尋找快照中包含 ``component_data`` 中所有指定元件的所有實體。然後，\ ``component_data`` 中包含的物件將填充查詢到的資料。\ ``component_data`` 必須始終以 :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` 物件作為第一個條目。
 
-\ ``next`` is an optional parameter that can contain additional information passed when setting our query conditions.
+\ ``next`` 是一個可選參數，可包含設定查詢條件時傳遞的附加資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Queries the snapshot data. This will find all entities in the snapshot that cont
 
 :ref:`bool<class_bool>` **supports_capability**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_capability>`
 
-Returns ``true`` if this spatial entity ``capability`` is supported by the hardware used.
+如果所使用的硬體支援該空間實體 ``capability``\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Returns ``true`` if this spatial entity ``capability`` is supported by the hardw
 
 :ref:`bool<class_bool>` **supports_component_type**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`, component_type\: :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_component_type>`
 
-Returns ``true`` if this ``capability`` supports the ``component_type``.
+如果該 ``capability`` 支援 ``component_type``\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Returns ``true`` if this ``capability`` supports the ``component_type``.
 
 :ref:`RID<class_RID>` **update_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, entities\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`
 
-Performs a snapshot for a limited number of entities. This is NOT an asynchronous method and will return the snapshot immediately.
+對有限數量的實體執行快照操作。這不是非同步方法，會立即回傳快照結果。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

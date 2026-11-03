@@ -14,11 +14,11 @@ WebSocket 連接。
 說明
 ----
 
-This class represents WebSocket connection, and can be used as a WebSocket client (`RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__-compliant) or as a remote peer of a WebSocket server.
+這個類代表 WebSocket 連接，可以用作 WebSocket 用戶端（相容 `RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__\ ），也可以用作 WebSocket 伺服器的遠端對等端。
 
-You can send WebSocket binary frames using :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, and WebSocket text frames using :ref:`send()<class_WebSocketPeer_method_send>` (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
+發送 WebSocket 二進位影格請使用 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ ，發送 WebSocket 文字影格請使用 :ref:`send()<class_WebSocketPeer_method_send>`\ （與基於文字的 API 互動時請優先選擇文字影格）。可以通過 :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>` 檢查最近一個封包的影格型別。
 
-To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, then regularly call :ref:`poll()<class_WebSocketPeer_method_poll>` (e.g. during :ref:`Node<class_Node>` process). You can query the socket state via :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, get the number of pending packets using :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, and retrieve them via :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
+開啟 WebSocket 用戶端的方法是：首先呼叫 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`\ ，然後定期呼叫 :ref:`poll()<class_WebSocketPeer_method_poll>`\ （例如在 :ref:`Node<class_Node>` 的處理過程中）。查詢套接字的狀態請使用 :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`\ ，取得掛起的封包數量請使用 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ ，取得掛起的封包請使用 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`\ 。
 
 
 .. tabs::
@@ -37,19 +37,19 @@ To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPe
         var state = socket.get_ready_state()
         if state == WebSocketPeer.STATE_OPEN:
             while socket.get_available_packet_count():
-                print("Packet: ", socket.get_packet())
+                print("封包：", socket.get_packet())
         elif state == WebSocketPeer.STATE_CLOSING:
-            # Keep polling to achieve proper close.
+            # 繼續輪詢才能正確關閉。
             pass
         elif state == WebSocketPeer.STATE_CLOSED:
             var code = socket.get_close_code()
             var reason = socket.get_close_reason()
-            print("WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
-            set_process(false) # Stop processing.
+            print("WebSocket 已關閉，程式碼：%d，原因 %s。乾淨得體：%s" % [code, reason, code != -1])
+            set_process(false) # 停止處理。
 
 
 
-To use the peer as part of a WebSocket server refer to :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` and the online tutorial.
+如果要作為 WebSocket 伺服器的對等端使用，請參考 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 及線上教學。
 
 .. rst-class:: classref-reftable-group
 
@@ -136,7 +136,7 @@ enum **WriteMode**: :ref:`🔗<enum_WebSocketPeer_WriteMode>`
 
 :ref:`WriteMode<enum_WebSocketPeer_WriteMode>` **WRITE_MODE_TEXT** = ``0``
 
-指定 WebSockets 消息應作為文字有效載荷傳輸（只允許有效的 UTF-8）。
+指定 WebSockets 訊息應作為文字有效載荷傳輸（只允許有效的 UTF-8）。
 
 .. _class_WebSocketPeer_constant_WRITE_MODE_BINARY:
 
@@ -144,7 +144,7 @@ enum **WriteMode**: :ref:`🔗<enum_WebSocketPeer_WriteMode>`
 
 :ref:`WriteMode<enum_WebSocketPeer_WriteMode>` **WRITE_MODE_BINARY** = ``1``
 
-指定 WebSockets 消息應以二進位有效載荷的形式傳輸（允許任何位元組組合）。
+指定 WebSockets 訊息應以二進位有效載荷的形式傳輸（允許任何位元組組合）。
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 - |void| **set_heartbeat_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_heartbeat_interval**\ (\ )
 
-The interval (in seconds) at which the peer will automatically send WebSocket "ping" control frames. When set to ``0``, no "ping" control frames will be sent.
+對等端自動發送 WebSocket“ping”控制影格的間隔（單位為秒）。設為 ``0`` 時不會發送“ping”控制影格。
 
-\ **Note:** Has no effect in Web exports due to browser restrictions.
+\ **注意：**\ 由於瀏覽器的限制，在 Web 匯出中無效。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ WebSocket 握手期間允許的 WebSocket 子協議。
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`\ ) :ref:`🔗<class_WebSocketPeer_method_accept_stream>`
 
-以 WebSocket 伺服器的名義，接受正在執行 HTTP 握手的對等體連接。\ ``stream`` 必須是從 :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>` 獲取的有效 TCP 流，或者是從 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 接受的 TLS 流。
+以 WebSocket 伺服器的名義，接受正在執行 HTTP 握手的對等體連接。\ ``stream`` 必須是從 :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>` 取得的有效 TCP 流，或者是從 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 接受的 TLS 流。
 
 \ **注意：**\ 由於流覽器的限制，Web 匯出中不支援此方法。
 
@@ -332,15 +332,15 @@ WebSocket 握手期間允許的 WebSocket 子協議。
 
 |void| **close**\ (\ code\: :ref:`int<class_int>` = 1000, reason\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WebSocketPeer_method_close>`
 
-Closes this WebSocket connection.
+關閉該 WebSocket 連接。
 
-\ ``code`` is the status code for the closure (see `RFC 6455 section 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ for a list of valid status codes). If ``code`` is negative, the connection will be closed immediately without notifying the remote peer.
+\ ``code`` 是關閉的狀態碼（有效狀態程式碼的清單見 `RFC 6455 第 7.4 節 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__\ ）。如果 ``code`` 為負數，則連接會立即關閉而不通知遠端對等端。
 
-\ ``reason`` is the human-readable reason for closing the connection. It can be any UTF-8 string that's smaller than 123 bytes.
+\ ``reason`` 是人類可讀的關閉連接原因。可以是任何小於 123 位元組的 UTF-8 字串。
 
-\ **Note:** To achieve a clean closure, you will need to keep polling until :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` is reached.
+\ **注意：**\ 為了實現乾淨得體的關閉，你需要在達到 :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` 之前保持輪詢。
 
-\ **Note:** The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
+\ **注意：**\ Web 匯出可能不支援部分狀態碼。詳情請參考具體瀏覽器的文件。
 
 .. rst-class:: classref-item-separator
 
@@ -352,11 +352,11 @@ Closes this WebSocket connection.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_url**\ (\ url\: :ref:`String<class_String>`, tls_client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_WebSocketPeer_method_connect_to_url>`
 
-Connects to the given URL. TLS certificates will be verified against the hostname when connecting using the ``wss://`` protocol. You can pass the optional ``tls_client_options`` parameter to customize the trusted certification authorities, or disable the common name verification. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>` and :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+連接到給定的 URL。使用 ``wss://`` 協議連接時會校驗 TLS 憑證與主機名。傳入可選的 ``tls_client_options`` 參數可以自訂信任的憑證頒發機構，也可以停用通用名校驗。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
-\ **Note:** This method is non-blocking, and will return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` before the connection is established as long as the provided parameters are valid and the peer is not in an invalid state (e.g. already connected). Regularly call :ref:`poll()<class_WebSocketPeer_method_poll>` (e.g. during :ref:`Node<class_Node>` process) and check the result of :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` to know whether the connection succeeds or fails.
+\ **注意：**\ 該方法不會阻塞，只要提供的參數有效且對等端不處於無效狀態（例如已連接）就會在建立連接前回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。要檢測連接成功還是失敗，請定期呼叫 :ref:`poll()<class_WebSocketPeer_method_poll>`\ （例如在 :ref:`Node<class_Node>` 的處理方法中）並檢查 :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` 的結果。
 
-\ **Note:** To avoid mixed content warnings or errors in Web, you may have to use a ``url`` that starts with ``wss://`` (secure) instead of ``ws://``. When doing so, make sure to use the fully qualified domain name that matches the one defined in the server's TLS certificate. Do not connect directly via the IP address for ``wss://`` connections, as it won't match with the TLS certificate.
+\ **注意：**\ 為了避免 Web 中的混合內容警告或錯誤，你可能需要使用以 ``wss://``\ （安全）開頭的 ``url`` 而不是 ``ws://``\ 。採用這種做法時，請確保使用與伺服器 TLS 憑證相匹配的主機域名全稱。\ ``wss://`` 連接請勿直接使用 IP 位址連接，因為不會與 TLS 憑證匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Connects to the given URL. TLS certificates will be verified against the hostnam
 
 :ref:`State<enum_WebSocketPeer_State>` **get_ready_state**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_ready_state>`
 
-Returns the ready state of the connection.
+回傳該連接的就緒狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ Returns the ready state of the connection.
 
 :ref:`String<class_String>` **get_requested_url**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_requested_url>`
 
-返回該對等體請求的 URL。該 URL 由傳給 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>` 的 ``url`` 得出，作為伺服器時則從 HTTP 標頭獲取（即使用 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 時）。
+返回該對等體請求的 URL。該 URL 由傳給 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>` 的 ``url`` 得出，作為伺服器時則從 HTTP 標頭取得（即使用 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 時）。
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ Returns the ready state of the connection.
 
 :ref:`Error<enum_@GlobalScope_Error>` **send_text**\ (\ message\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebSocketPeer_method_send_text>`
 
-使用 WebSocket 文字模式發送給定的 ``message``\ 。與協力廠商文字 API 互動時請優先使用這個方法而不是 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ （例如使用 :ref:`JSON<class_JSON>` 格式的消息時）。
+使用 WebSocket 文字模式發送給定的 ``message``\ 。與協力廠商文字 API 互動時請優先使用這個方法而不是 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ （例如使用 :ref:`JSON<class_JSON>` 格式的訊息時）。
 
 .. rst-class:: classref-item-separator
 
@@ -504,9 +504,9 @@ Returns the ready state of the connection.
 
 |void| **set_no_delay**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_WebSocketPeer_method_set_no_delay>`
 
-Disable Nagle's algorithm on the underlying TCP socket (default). See :ref:`StreamPeerTCP.set_no_delay()<class_StreamPeerTCP_method_set_no_delay>` for more information.
+停用底層 TCP 套接字的 Nagle 算法（預設）。詳見 :ref:`StreamPeerTCP.set_no_delay()<class_StreamPeerTCP_method_set_no_delay>`\ 。
 
-\ **Note:** Not available in the Web export.
+\ **注意：**\ 在 Web 匯出中不可用。
 
 .. rst-class:: classref-item-separator
 

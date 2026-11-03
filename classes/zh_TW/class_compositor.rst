@@ -9,21 +9,21 @@ Compositor
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Stores attributes used to customize how a Viewport is rendered.
+儲存用於自訂視埠渲染方式的屬性。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The compositor resource stores attributes used to customize how a :ref:`Viewport<class_Viewport>` is rendered.
+合成器資源儲存用於自訂 :ref:`Viewport<class_Viewport>` 渲染方式的屬性。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`The Compositor <../tutorials/rendering/compositor>`
+- :doc:`合成器 <../tutorials/rendering/compositor>`
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ The compositor resource stores attributes used to customize how a :ref:`Viewport
 - |void| **set_compositor_effects**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`CompositorEffect<class_CompositorEffect>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`CompositorEffect<class_CompositorEffect>`\] **get_compositor_effects**\ (\ )
 
-The custom :ref:`CompositorEffect<class_CompositorEffect>`\ s that are applied during rendering of viewports using this compositor.
+使用該合成器的視埠在進行渲染時應用的自訂 :ref:`CompositorEffect<class_CompositorEffect>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

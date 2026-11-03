@@ -14,7 +14,7 @@ SurfaceTool
 說明
 ----
 
-**SurfaceTool** 可用於通過指定單獨的頂點屬性來建構 :ref:`Mesh<class_Mesh>`\ 。可以用來從腳本中構建 :ref:`Mesh<class_Mesh>`\ 。除索引外的所有屬性都需要在呼叫 :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>` 之前新增。例如，要新增頂點顏色和 UV：
+**SurfaceTool** 可用於通過指定單獨的頂點屬性來建構 :ref:`Mesh<class_Mesh>`\ 。可以用來從腳本中建置 :ref:`Mesh<class_Mesh>`\ 。除索引外的所有屬性都需要在呼叫 :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>` 之前新增。例如，要新增頂點顏色和 UV：
 
 
 .. tabs::
@@ -153,7 +153,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA8_UNORM** = ``0``
 
-將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到無符號正規化的 0 到 1 範圍內，每個通道儲存 8 個比特位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 。
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到無符號正規化的 0 到 1 範圍內，每個通道儲存 8 個位元位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA8_SNORM:
 
@@ -161,7 +161,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA8_SNORM** = ``1``
 
-將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到帶符號正規化的 -1 到 1 範圍內，每個通道儲存 8 個比特位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 。
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到帶符號正規化的 -1 到 1 範圍內，每個通道儲存 8 個位元位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RG_HALF:
 
@@ -217,7 +217,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_MAX** = ``8``
 
-用於表示已禁用的自訂通道。
+用於表示已停用的自訂通道。
 
 .. rst-class:: classref-item-separator
 
@@ -334,9 +334,9 @@ enum **SkinWeightCount**: :ref:`🔗<enum_SurfaceTool_SkinWeightCount>`
 
 :ref:`ArrayMesh<class_ArrayMesh>` **commit**\ (\ existing\: :ref:`ArrayMesh<class_ArrayMesh>` = null, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SurfaceTool_method_commit>`
 
-Returns a constructed :ref:`ArrayMesh<class_ArrayMesh>` from current information passed in. If an existing :ref:`ArrayMesh<class_ArrayMesh>` is passed in as an argument, will add an extra surface to the existing :ref:`ArrayMesh<class_ArrayMesh>`.
+根據傳入的目前資訊回傳構造的 :ref:`ArrayMesh<class_ArrayMesh>`\ 。如果將一個已有的 :ref:`ArrayMesh<class_ArrayMesh>` 作為參數傳入，則會向該已有的 :ref:`ArrayMesh<class_ArrayMesh>` 新增一個額外的表面。
 
-The ``flags`` argument can be the bitwise OR of :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+\ ``flags`` 參數可以是 :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>` 三者的按位或值。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ The ``flags`` argument can be the bitwise OR of :ref:`Mesh.ARRAY_FLAG_USE_DYNAMI
 
 :ref:`Array<class_Array>` **commit_to_arrays**\ (\ ) :ref:`🔗<class_SurfaceTool_method_commit_to_arrays>`
 
-Commits the data to the same format used by :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`, :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>`, and :ref:`create_from_arrays()<class_SurfaceTool_method_create_from_arrays>`. This way you can further process the mesh data using the :ref:`ArrayMesh<class_ArrayMesh>` or :ref:`ImporterMesh<class_ImporterMesh>` APIs.
+將資料提交為 :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ 、\ :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` 和 :ref:`create_from_arrays()<class_SurfaceTool_method_create_from_arrays>` 使用的相同格式。這樣，你可以使用 :ref:`ArrayMesh<class_ArrayMesh>` 或 :ref:`ImporterMesh<class_ImporterMesh>` API 進一步處理網格資料。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ Commits the data to the same format used by :ref:`ArrayMesh.add_surface_from_arr
 
 |void| **create_from_arrays**\ (\ arrays\: :ref:`Array<class_Array>`, primitive_type\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` = 3\ ) :ref:`🔗<class_SurfaceTool_method_create_from_arrays>`
 
-Creates this SurfaceTool from existing vertex arrays such as returned by :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>`, :ref:`Mesh.surface_get_arrays()<class_Mesh_method_surface_get_arrays>`, :ref:`Mesh.surface_get_blend_shape_arrays()<class_Mesh_method_surface_get_blend_shape_arrays>`, :ref:`ImporterMesh.get_surface_arrays()<class_ImporterMesh_method_get_surface_arrays>`, and :ref:`ImporterMesh.get_surface_blend_shape_arrays()<class_ImporterMesh_method_get_surface_blend_shape_arrays>`. ``primitive_type`` controls the type of mesh data, defaulting to :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+從現有頂點陣列（例如 :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>`\ 、\ :ref:`Mesh.surface_get_arrays()<class_Mesh_method_surface_get_arrays>`\ 、\ :ref:`Mesh.surface_get_blend_shape_arrays()<class_Mesh_method_surface_get_blend_shape_arrays>`\ 、\ :ref:`ImporterMesh.get_surface_arrays()<class_ImporterMesh_method_get_surface_arrays>` 和 :ref:`ImporterMesh.get_surface_blend_shape_arrays()<class_ImporterMesh_method_get_surface_blend_shape_arrays>` 回傳的陣列）建立該 SurfaceTool。\ ``primitive_type`` 控制網格資料的型別，預設為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Creates this SurfaceTool from existing vertex arrays such as returned by :ref:`c
 
 **已棄用：** This method is unused internally, as it does not preserve normals or UVs. Consider using :ref:`ImporterMesh.generate_lods()<class_ImporterMesh_method_generate_lods>` instead.
 
-Generates an LOD for a given ``nd_threshold`` in linear units (square root of quadric error metric), using at most ``target_index_count`` indices.
+為給定的 ``nd_threshold`` 生成 LOD，使用線性單位（四次誤差的平方根），最多使用 ``target_index_count`` 個索引。
 
 .. rst-class:: classref-item-separator
 
@@ -422,11 +422,11 @@ Generates an LOD for a given ``nd_threshold`` in linear units (square root of qu
 
 |void| **generate_normals**\ (\ flip\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_SurfaceTool_method_generate_normals>`
 
-Generates normals from vertices so you do not have to do it manually. If ``flip`` is ``true``, the resulting normals will be inverted. :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` should be called *after* generating geometry and *before* committing the mesh using :ref:`commit()<class_SurfaceTool_method_commit>` or :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>`. For correct display of normal-mapped surfaces, you will also have to generate tangents using :ref:`generate_tangents()<class_SurfaceTool_method_generate_tangents>`.
+從頂點生成法線，因此不必手動執行。如果 ``flip`` 為 ``true``\ ，則生成的法線將被反轉。\ :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` 的呼叫，應在生成幾何體\ *之後*\ ，且在使用 :ref:`commit()<class_SurfaceTool_method_commit>` 或 :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>` 提交網格\ *之前*\ 。為了正確顯示法線貼圖表面，還必須使用 :ref:`generate_tangents()<class_SurfaceTool_method_generate_tangents>` 生成切線。
 
-\ **Note:** :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` only works if the primitive type is set to :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+\ **注意：**\ :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` 僅在圖元型別被設定為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>` 時有效。
 
-\ **Note:** :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` takes smooth groups into account. To generate smooth normals, set the smooth group to a value greater than or equal to ``0`` using :ref:`set_smooth_group()<class_SurfaceTool_method_set_smooth_group>` or leave the smooth group at the default of ``0``. To generate flat normals, set the smooth group to ``-1`` using :ref:`set_smooth_group()<class_SurfaceTool_method_set_smooth_group>` prior to adding vertices.
+\ **注意：**\ :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>` 考慮了平滑組。要生成平滑法線，請使用 :ref:`set_smooth_group()<class_SurfaceTool_method_set_smooth_group>` 將平滑組設定為大於或等於 ``0`` 的值，或者將平滑組保留為預設值 ``0``\ 。要生成平面法線，請在新增頂點之前，使用 :ref:`set_smooth_group()<class_SurfaceTool_method_set_smooth_group>` 將平滑組設定為 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ Generates normals from vertices so you do not have to do it manually. If ``flip`
 
 |void| **generate_tangents**\ (\ ) :ref:`🔗<class_SurfaceTool_method_generate_tangents>`
 
-Generates a tangent vector for each vertex. Requires that each vertex already has UVs and normals set (see :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>`).
+為每個頂點生成切向量。要求每個頂點已經設定了 UV 和法線（見 :ref:`generate_normals()<class_SurfaceTool_method_generate_normals>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Generates a tangent vector for each vertex. Requires that each vertex already ha
 
 |void| **index**\ (\ ) :ref:`🔗<class_SurfaceTool_method_index>`
 
-通過建立索引陣列來縮小頂點陣列。這可以避免頂點重複而提高性能。
+通過建立索引陣列來縮小頂點陣列。這可以避免頂點重複而提高效能。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Generates a tangent vector for each vertex. Requires that each vertex already ha
 
 |void| **optimize_indices_for_cache**\ (\ ) :ref:`🔗<class_SurfaceTool_method_optimize_indices_for_cache>`
 
-優化三角形排序以提高性能。要求 :ref:`get_primitive_type()<class_SurfaceTool_method_get_primitive_type>` 為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
+最佳化三角形排序以提高效能。要求 :ref:`get_primitive_type()<class_SurfaceTool_method_get_primitive_type>` 為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Generates a tangent vector for each vertex. Requires that each vertex already ha
 
 |void| **set_custom_format**\ (\ channel_index\: :ref:`int<class_int>`, format\: :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>`\ ) :ref:`🔗<class_SurfaceTool_method_set_custom_format>`
 
-設定索引為 ``channel_index`` 的自訂通道的顏色格式。禁用請使用 :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>`\ 。
+設定索引為 ``channel_index`` 的自訂通道的顏色格式。停用請使用 :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>`\ 。
 
 必須在 :ref:`begin()<class_SurfaceTool_method_begin>` 之後呼叫，應當在 :ref:`commit()<class_SurfaceTool_method_commit>` 或 :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>` 之前設定。
 
@@ -604,11 +604,11 @@ Generates a tangent vector for each vertex. Requires that each vertex already ha
 
 |void| **set_skin_weight_count**\ (\ count\: :ref:`SkinWeightCount<enum_SurfaceTool_SkinWeightCount>`\ ) :ref:`🔗<class_SurfaceTool_method_set_skin_weight_count>`
 
-Set to :ref:`SKIN_8_WEIGHTS<class_SurfaceTool_constant_SKIN_8_WEIGHTS>` to indicate that up to 8 bone influences per vertex may be used.
+設定為 :ref:`SKIN_8_WEIGHTS<class_SurfaceTool_constant_SKIN_8_WEIGHTS>` 表示每個頂點最多可以使用 8 個骨骼影響。
 
-By default, only 4 bone influences are used (:ref:`SKIN_4_WEIGHTS<class_SurfaceTool_constant_SKIN_4_WEIGHTS>`).
+預設情況下，僅使用 4 個骨骼影響（\ :ref:`SKIN_4_WEIGHTS<class_SurfaceTool_constant_SKIN_4_WEIGHTS>`\ ）。
 
-\ **Note:** This function takes an enum, not the exact number of weights.
+\ **注意：**\ 該函式接受一個列舉，而不是權重的確切數量。
 
 .. rst-class:: classref-item-separator
 
@@ -634,9 +634,9 @@ By default, only 4 bone influences are used (:ref:`SKIN_4_WEIGHTS<class_SurfaceT
 
 |void| **set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_SurfaceTool_method_set_tangent>`
 
-Specifies a tangent to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定用於\ *下一個*\ 頂點的切線。如果每個頂點都需要設定該資訊，但你未能為第一個頂點提交，則該資訊可能根本不會被使用。
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **注意：**\ 儘管 ``tangent`` 是一個 :ref:`Plane<class_Plane>`\ ，但它並不直接表示切平面。它的 :ref:`Plane.x<class_Plane_property_x>`\ 、\ :ref:`Plane.y<class_Plane_property_y>` 和 :ref:`Plane.z<class_Plane_property_z>` 表示切向量，而 :ref:`Plane.d<class_Plane_property_d>` 應該為 ``-1`` 或 ``1``\ 。另見 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`\ 。
 
 .. rst-class:: classref-item-separator
 

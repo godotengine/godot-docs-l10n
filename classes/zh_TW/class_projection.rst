@@ -12,13 +12,13 @@ Projection
 說明
 ----
 
-A 4×4 matrix used for 3D projective transformations. It can represent transformations such as translation, rotation, scaling, shearing, and perspective division. It consists of four :ref:`Vector4<class_Vector4>` columns.
+一個用於 3D 投影變換的 4×4 矩陣。它可以表示平移、旋轉、縮放、剪切以及透視除法等變換。它由四個 :ref:`Vector4<class_Vector4>`\ （4維向量）列組成。
 
-For purely linear transformations (translation, rotation, and scale), it is recommended to use :ref:`Transform3D<class_Transform3D>`, as it is more performant and requires less memory.
+對於純粹的線性變換（平移、旋轉和縮放），建議使用 :ref:`Transform3D<class_Transform3D>`\ ，因為它的效能更高，且佔用的記憶體更少。
 
-Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
+在內部被用作 :ref:`Camera3D<class_Camera3D>` 的投影矩陣。
 
-\ **Note:** In a boolean context, a projection will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`. Otherwise, a projection will always evaluate to ``true``.
+\ **注意：** 在布林值情境中，如果一個投影矩陣等於 :ref:`IDENTITY<class_Projection_constant_IDENTITY>`\ （單位矩陣），它將被評估為 ``false``\ 。否則，投影矩陣將始終被評估為 ``true``\ 。
 
 .. note::
 
@@ -298,9 +298,9 @@ enum **Planes**: :ref:`🔗<enum_Projection_Planes>`
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ ) :ref:`🔗<class_Projection_constructor_Projection>`
 
-Constructs a default-initialized **Projection** identical to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`.
+構造預設初始化的 **Projection**\ ，與 :ref:`IDENTITY<class_Projection_constant_IDENTITY>` 相同。
 
-\ **Note:** In C#, this constructs a **Projection** identical to :ref:`ZERO<class_Projection_constant_ZERO>`.
+\ **注意：**\ 在 C# 中構造的 **Projection** 與 :ref:`ZERO<class_Projection_constant_ZERO>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ Constructs a default-initialized **Projection** identical to :ref:`IDENTITY<clas
 
 :ref:`float<class_float>` **get_aspect**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_aspect>`
 
-返回該 **Projection** 視口的 X:Y 縱橫比。
+返回該 **Projection** 視埠的 X:Y 縱橫比。
 
 .. rst-class:: classref-item-separator
 
@@ -541,9 +541,9 @@ Constructs a default-initialized **Projection** identical to :ref:`IDENTITY<clas
 
 :ref:`float<class_float>` **get_fovy**\ (\ fovx\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_get_fovy>`
 
-Returns the vertical field of view of the projection (in degrees) associated with the given horizontal field of view (in degrees) and aspect ratio.
+回傳與給定水平視場角（以度為單位）和長寬比相關聯的投影的垂直視場角（以度為單位）。
 
-\ **Note:** Unlike most methods of **Projection**, ``aspect`` is expected to be 1 divided by the X:Y aspect ratio.
+\ **注意：**\ 與 **Projection** 中的大多數方法不同，\ ``aspect`` 需要是 1 除以 X:Y 縱橫比。
 
 .. rst-class:: classref-item-separator
 
@@ -567,7 +567,7 @@ Returns the vertical field of view of the projection (in degrees) associated wit
 
 :ref:`int<class_int>` **get_pixels_per_meter**\ (\ for_pixel_width\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Projection_method_get_pixels_per_meter>`
 
-Returns ``for_pixel_width`` divided by the viewport's width measured in meters on the near plane, after this **Projection** is applied.
+回傳 ``for_pixel_width`` 除以近平面上視埠的寬度，單位為米，該寬度已應用 **Projection**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ Returns ``for_pixel_width`` divided by the viewport's width measured in meters o
 
 :ref:`Vector2<class_Vector2>` **get_viewport_half_extents**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_viewport_half_extents>`
 
-返回視口平面的尺寸除以二，這個 **Projection** 會把位置投影至該平面。
+返回視埠平面的尺寸除以二，這個 **Projection** 會把位置投影至該平面。
 
 .. rst-class:: classref-item-separator
 

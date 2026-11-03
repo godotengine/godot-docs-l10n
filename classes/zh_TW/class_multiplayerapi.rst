@@ -19,7 +19,7 @@ MultiplayerAPI
 說明
 ----
 
-用於高級多人遊戲 API 實作的基底類別。另請參閱 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。
+用於進階多人遊戲 API 實作的基底類別。另請參閱 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。
 
 預設情況下，\ :ref:`SceneTree<class_SceneTree>` 引用了這個類的一個實作，並使用它來提供跨整個場景的多人遊戲功能（即 RPC）。
 
@@ -159,7 +159,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_DISABLED** = ``0``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以為所有 RPC 呼叫禁用某個方法或屬性，使其不可用。所有方法的預設值。
+在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以為所有 RPC 呼叫停用某個方法或屬性，使其不可用。所有方法的預設值。
 
 .. _class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER:
 
@@ -167,7 +167,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_ANY_PEER** = ``1``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以將某個方法設定為能夠被任何對等體遠程呼叫。類似於 ``@rpc("any_peer")`` 注解。接受來自所有遠端對等體的調用，無論是否為節點的控制者。
+在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以將某個方法設定為能夠被任何對等體遠端呼叫。類似於 ``@rpc("any_peer")`` 注解。接受來自所有遠端對等體的調用，無論是否為節點的控制者。
 
 .. _class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY:
 
@@ -250,9 +250,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`int<class_int>` **get_remote_sender_id**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_remote_sender_id>`
 
-Returns the sender's peer ID for the RPC currently being executed.
+回傳目前正在執行的 RPC 的發送方對等 ID。
 
-\ **Note:** This method returns ``0`` when called outside of an RPC. As such, the original peer ID may be lost when code execution is delayed (such as with GDScript's ``await`` keyword).
+\ **注意：**\ 在 RPC 之外呼叫時，該方法回傳 ``0``\ 。因此，當程式碼延遲執行時（例如使用 GDScript 的 ``await`` 關鍵字），原始對等 ID 可能會丟失。
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ Returns the sender's peer ID for the RPC currently being executed.
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ peer\: :ref:`int<class_int>`, object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_MultiplayerAPI_method_rpc>`
 
-Sends an RPC to the target ``peer``. The given ``method`` will be called on the remote ``object`` with the provided ``arguments``. The RPC may also be called locally depending on the implementation and RPC configuration. See :ref:`Node.rpc()<class_Node_method_rpc>` and :ref:`Node.rpc_config()<class_Node_method_rpc_config>`.
+向目標對等端 ``peer`` 發送 RPC。會使用提供的參數 ``arguments`` 在遠端物件 ``object`` 上呼叫給定的方法 ``method``\ 。根據實作和 RPC 設定，RPC 可能也可以進行本機呼叫。見 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ 。
 
-\ **Note:** Prefer using :ref:`Node.rpc()<class_Node_method_rpc>`, :ref:`Node.rpc_id()<class_Node_method_rpc_id>`, or ``my_method.rpc(peer, arg1, arg2, ...)`` (in GDScript), since they are faster. This method is mostly useful in conjunction with :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` when extending or replacing the multiplayer capabilities.
+\ **注意：**\ 請盡量使用 :ref:`Node.rpc()<class_Node_method_rpc>`\ 、\ :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 或 ``my_method.rpc(peer, arg1, arg2, ...)``\ （適用於 GDScript），因為速度更快。這個方法主要用於連同 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 進行多人遊戲功能的擴充和替換。
 
 .. rst-class:: classref-item-separator
 

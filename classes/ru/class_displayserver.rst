@@ -6114,11 +6114,9 @@ ID Идентификатор, который ссылается на экран
 
 :ref:`float<class_float>` **screen_get_max_scale**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_max_scale>`
 
-Возвращает наибольший коэффициент масштабирования среди всех экранов.
+Returns the greatest scale factor of all screens. See also :ref:`screen_get_scale()<class_DisplayServer_method_screen_get_scale>`.
 
-\ **Примечание:** В macOS возвращаемое значение равно ``2.0``, если в системе есть хотя бы один экран hiDPI (Retina), и ``1.0`` во всех остальных случаях.
-
-\ **Примечание:** Этот метод реализован только в macOS.
+\ **Note:** On macOS, the returned value is ``2.0`` if there is at least one hiDPI (Retina) screen in the system, and ``1.0`` in all other cases.
 
 .. rst-class:: classref-item-separator
 
@@ -6211,15 +6209,15 @@ ID Идентификатор, который ссылается на экран
 
 :ref:`float<class_float>` **screen_get_scale**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_scale>`
 
-Возвращает коэффициент масштабирования указанного экрана по индексу. Возвращает ``1.0``, если ``screen`` недействителен.
+Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid. See also :ref:`screen_get_max_scale()<class_DisplayServer_method_screen_get_max_scale>`.
 
-\ **Примечание:** В качестве ``screen`` можно использовать одну из следующих констант: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` или :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Примечание:** В macOS возвращаемое значение равно ``2.0`` для экранов hiDPI (Retina) и ``1.0`` для всех остальных случаев.
+\ **Note:** On macOS, the returned value is ``2.0`` for hiDPI (Retina) screens, and ``1.0`` for all other cases.
 
-\ **Примечание:** В Linux (Wayland) возвращаемое значение является точным только в том случае, если ``screen`` равно :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`. Из-за ограничений API передача прямого индекса вернет округленное целое число, если экран имеет дробный масштаб (например, ``1.25`` будет округлено до ``2.0``).
+\ **Note:** On Linux (Wayland), the returned value is accurate only when ``screen`` is :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`. Due to API limitations, passing a direct index will return a rounded-up integer, if the screen has a fractional scale (e.g. ``1.25`` would get rounded up to ``2.0``).
 
-\ **Примечание:** Этот метод реализован на Android, iOS, Web, macOS и Linux (Wayland). На других платформах этот метод всегда возвращает ``1.0``.
+\ **Note:** This method is implemented on Android, iOS, Web, macOS, and Linux (Wayland). On other platforms, this method always returns ``1.0``.
 
 .. rst-class:: classref-item-separator
 

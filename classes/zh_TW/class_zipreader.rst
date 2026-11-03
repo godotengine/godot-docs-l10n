@@ -7,18 +7,18 @@ ZIPReader
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Allows reading the content of a ZIP file.
+允許讀取 ZIP 檔案的內容。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This class implements a reader that can extract the content of individual files inside a ZIP archive. See also :ref:`ZIPPacker<class_ZIPPacker>`.
+該類實作了能夠從 ZIP 壓縮檔中提取各個檔案內容的讀取器。另見 :ref:`ZIPPacker<class_ZIPPacker>`\ 。
 
 ::
 
-    # Read a single file from a ZIP archive.
+    # 讀取 ZIP 壓縮檔中的單個檔案。
     func read_zip_file():
         var reader = ZIPReader.new()
         var err = reader.open("user://archive.zip")
@@ -28,27 +28,27 @@ This class implements a reader that can extract the content of individual files 
         reader.close()
         return res
 
-    # Extract all files from a ZIP archive, preserving the directories within.
-    # This acts like the "Extract all" functionality from most archive managers.
+    # 解壓 ZIP 壓縮檔中的所有檔案，保持目錄結構。
+    # 功能類似於大多數封存檔檔案管理器中的“全部解壓”功能。
     func extract_all_from_zip():
         var reader = ZIPReader.new()
         reader.open("res://archive.zip")
 
-        # Destination directory for the extracted files (this folder must exist before extraction).
-        # Not all ZIP archives put everything in a single root folder,
-        # which means several files/folders may be created in `root_dir` after extraction.
+        # 解壓檔案的目標目錄（解壓前必須存在）。
+        # 不是所有的 ZIP 壓縮檔都會把所有檔案都放在根資料夾中，
+        # 解壓後 `root_dir` 中會建立若干檔案/資料夾。
         var root_dir = DirAccess.open("user://")
 
         var files = reader.get_files()
         for file_path in files:
-            # If the current entry is a directory.
+            # 如果目前條目是目錄。
             if file_path.ends_with("/"):
                 root_dir.make_dir_recursive(file_path)
                 continue
 
-            # Write file contents, creating folders automatically when needed.
-            # Not all ZIP archives are strictly ordered, so we need to do this in case
-            # the file entry comes before the folder entry.
+            # 寫入檔案內容，需要時自動建立資料夾。
+            # 不是所有 ZIP 壓縮檔都遵循特定的順序，這一步的作用是
+            # 防止檔案條目出現在資料夾條目之前。
             root_dir.make_dir_recursive(root_dir.get_current_dir().path_join(file_path).get_base_dir())
             var file = FileAccess.open(root_dir.get_current_dir().path_join(file_path), FileAccess.WRITE)
             var buffer = reader.read_file(file_path)
@@ -117,7 +117,7 @@ This class implements a reader that can extract the content of individual files 
 
 :ref:`int<class_int>` **get_compression_level**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_get_compression_level>`
 
-Returns the compression level of the file in the loaded zip archive. Returns ``-1`` if the file doesn't exist or any other error occurs. Must be called after :ref:`open()<class_ZIPReader_method_open>`.
+回傳載入到的 zip 封存檔中檔案的壓縮層級。如果檔案不存在或發生其他錯誤，則回傳 ``-1``\ 。必須在 :ref:`open()<class_ZIPReader_method_open>` 後呼叫。
 
 .. rst-class:: classref-item-separator
 

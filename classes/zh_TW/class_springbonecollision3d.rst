@@ -9,20 +9,20 @@ SpringBoneCollision3D
 
 **被繼承：** :ref:`SpringBoneCollisionCapsule3D<class_SpringBoneCollisionCapsule3D>`, :ref:`SpringBoneCollisionPlane3D<class_SpringBoneCollisionPlane3D>`, :ref:`SpringBoneCollisionSphere3D<class_SpringBoneCollisionSphere3D>`
 
-A base class of the collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的碰撞的基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A collision can be a child of :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`. If it is not a child of :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`, it has no effect.
+碰撞可以是 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的子節點。不是 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的子節點就沒有效果。
 
-The colliding and sliding are done in the :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`'s modification process in order of its collision list which is set by :ref:`SpringBoneSimulator3D.set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>`. If :ref:`SpringBoneSimulator3D.are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``, the order matches :ref:`SceneTree<class_SceneTree>`.
+碰撞和滑動是在 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的修改過程中按照其碰撞清單的順序進行的，該順序由 :ref:`SpringBoneSimulator3D.set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>` 設定。如果 :ref:`SpringBoneSimulator3D.are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 為 ``true``\ ，則順序與 :ref:`SceneTree<class_SceneTree>` 匹配。
 
-If :ref:`bone<class_SpringBoneCollision3D_property_bone>` is set, it synchronizes with the bone pose of the ancestor :ref:`Skeleton3D<class_Skeleton3D>`, which is done in before the :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`'s modification process as the pre-process.
+如果設定了 :ref:`bone<class_SpringBoneCollision3D_property_bone>`\ ，則會與祖級 :ref:`Skeleton3D<class_Skeleton3D>` 的骨骼姿勢同步，在 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的修改過程之前作為預處理完成。
 
-\ **Warning:** A scaled **SpringBoneCollision3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
+\ **警告：**\ 存在縮放的 **SpringBoneCollision3D** 可能產生預料之外的行為。請確保父級 :ref:`Skeleton3D<class_Skeleton3D>` 及其骨骼沒有縮放。
 
 .. rst-class:: classref-reftable-group
 
@@ -108,7 +108,7 @@ If :ref:`bone<class_SpringBoneCollision3D_property_bone>` is set, it synchronize
 - |void| **set_position_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_position_offset**\ (\ )
 
-The offset of the position from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone<class_SpringBoneCollision3D_property_bone>` pose position.
+位置的偏移量，相對於 :ref:`Skeleton3D<class_Skeleton3D>` 的 :ref:`bone<class_SpringBoneCollision3D_property_bone>` 姿勢位置。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ The offset of the position from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone
 - |void| **set_rotation_offset**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )
 - :ref:`Quaternion<class_Quaternion>` **get_rotation_offset**\ (\ )
 
-The offset of the rotation from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone<class_SpringBoneCollision3D_property_bone>` pose rotation.
+旋轉的偏移量，相對於 :ref:`Skeleton3D<class_Skeleton3D>` 的 :ref:`bone<class_SpringBoneCollision3D_property_bone>` 姿勢旋轉。
 
 .. rst-class:: classref-section-separator
 
@@ -142,7 +142,7 @@ The offset of the rotation from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SpringBoneCollision3D_method_get_skeleton>`
 
-Get parent :ref:`Skeleton3D<class_Skeleton3D>` node of the parent :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` if found.
+取得父級 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的父級 :ref:`Skeleton3D<class_Skeleton3D>` 節點。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

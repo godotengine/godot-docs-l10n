@@ -7,18 +7,18 @@ AudioEffectDelay
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a delay audio effect to an audio bus.
+Añade un efecto de retraso al bus de audio.
 
-Emulates an echo by playing the input audio back after a period of time.
+Emula un eco reproduciendo el audio de entrada después de un período de tiempo.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+Reproduce la señal de audio de entrada después de un período de tiempo. Cada repetición se denomina «repetición del retardo» o, simplemente, «tap». Las repeticiones pueden reproducirse varias veces para crear un eco repetitivo que se desvanece. Los efectos de retardo van desde un eco sutil hasta una mezcla pronunciada de sonidos anteriores con sonidos nuevos.
 
-See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
+Véase también :ref:`AudioEffectReverb<class_AudioEffectReverb>` para obtener un eco difuso y continuo.
 
 .. rst-class:: classref-introduction-group
 
@@ -102,7 +102,7 @@ La relación de volumen del audio original. El valor puede oscilar entre 0 y 1.
 - |void| **set_feedback_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_feedback_active**\ (\ )
 
-If ``true``, feedback is enabled, repeating taps after they are played.
+Si es ``true``, la retroalimentación está activada y las repeticiones continúan reproduciéndose después de cada reproducción.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ If ``true``, feedback is enabled, repeating taps after they are played.
 - |void| **set_feedback_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_delay_ms**\ (\ )
 
-Feedback delay time in milliseconds. Value can range from 0 to 1500.
+Tiempo de retraso de la realimentación en milisegundos. El valor puede oscilar entre 0 y 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Ganancia de retroalimentación, en dB. El valor puede oscilar entre -60 y 0.
 - |void| **set_feedback_lowpass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_lowpass**\ (\ )
 
-Low-pass filter for feedback, in Hz. Frequencies above this value are filtered out. Value can range from 1 to 16000.
+Filtro de paso bajo para retroalimentación, en Hz. Las frecuencias por encima de este valor se filtran de la señal. Su valor puede variar entre 1 y 16000.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Si es ``true``, se habilitará el primer toque.
 - |void| **set_tap1_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_delay_ms**\ (\ )
 
-First tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
+Tiempo de retraso del primer toque en milisegundos, en comparación con el audio original. El valor puede variar de 0 a 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ First tap delay time in milliseconds, compared to the original audio. Value can 
 - |void| **set_tap1_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_level_db**\ (\ )
 
-Gain for the first tap, in dB. Value can range from -60 to 0.
+Ganancia de la primera toma, en dB. El valor puede variar entre -60 y 0.
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Gain for the first tap, in dB. Value can range from -60 to 0.
 - |void| **set_tap1_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_pan**\ (\ )
 
-Pan position for the first tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Posición de paneo para la primera repetición (tap). Los valores negativos panean el sonido a la izquierda, los positivos a la derecha. El valor puede variar de -1 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Pan position for the first tap. Negative values pan the sound to the left, posit
 - |void| **set_tap2_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tap2_active**\ (\ )
 
-If ``true``, the second tap will be enabled.
+Si es ``true``, el segundo toque estará habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ If ``true``, the second tap will be enabled.
 - |void| **set_tap2_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_delay_ms**\ (\ )
 
-Second tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
+Tiempo de retraso del segundo toque en milisegundos, en comparación con el audio original. El valor puede variar de 0 a 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Second tap delay time in milliseconds, compared to the original audio. Value can
 - |void| **set_tap2_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_level_db**\ (\ )
 
-Gain for the second tap, in dB. Value can range from -60 to 0.
+Ganancia del segundo toque, en decibelios. El valor puede oscilar entre −60 y 0.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Gain for the second tap, in dB. Value can range from -60 to 0.
 - |void| **set_tap2_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_pan**\ (\ )
 
-Pan position for the second tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Posición de paneo para el segundo tap. Los valores negativos panean el sonido a la izquierda, los positivos a la derecha. El valor puede variar de -1 a 1.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

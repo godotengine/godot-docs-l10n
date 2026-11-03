@@ -16,14 +16,14 @@ ColorPicker
 
 提供用於選擇或修改顏色的介面的小工具。還可以提供取色器（吸管）、顏色模式、預設等功能。
 
-\ **注意：**\ 這個控制項就是取色器本身。如果你需要一個能夠彈出 **ColorPicker** 窗口的按鈕，可以改用 :ref:`ColorPickerButton<class_ColorPickerButton>`\ 。
+\ **注意：**\ 這個控制項就是取色器本身。如果你需要一個能夠彈出 **ColorPicker** 視窗的按鈕，可以改用 :ref:`ColorPickerButton<class_ColorPickerButton>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `Tween Interpolation Demo <https://godotengine.org/asset-library/asset/2733>`__
+- `補間插值演示 <https://godotengine.org/asset-library/asset/2733>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -207,7 +207,7 @@ enum **ColorModeType**: :ref:`🔗<enum_ColorPicker_ColorModeType>`
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_RGB** = ``0``
 
-Allows editing the color with Red/Green/Blue sliders in sRGB color space.
+允許使用紅、綠、藍滑塊在 sRGB 色彩空間中編輯顏色。
 
 .. _class_ColorPicker_constant_MODE_HSV:
 
@@ -233,7 +233,7 @@ Allows editing the color with Red/Green/Blue sliders in sRGB color space.
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_LINEAR** = ``2``
 
-Allows editing the color with Red/Green/Blue sliders in linear color space.
+允許使用紅、綠、藍滑塊線上性色彩空間中編輯顏色。
 
 .. _class_ColorPicker_constant_MODE_OKHSL:
 
@@ -303,7 +303,7 @@ HSL OK 色彩模型圓形色彩空間。
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_OK_HS_RECTANGLE** = ``5``
 
-OKHSL Color Model rectangle with constant lightness.
+具有恆定亮度的 OKHSL 顏色模型矩形。
 
 .. _class_ColorPicker_constant_SHAPE_OK_HL_RECTANGLE:
 
@@ -311,7 +311,7 @@ OKHSL Color Model rectangle with constant lightness.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_OK_HL_RECTANGLE** = ``6``
 
-OKHSL Color Model rectangle with constant saturation.
+具有恆定飽和度的 OKHSL 顏色模型矩形。
 
 .. rst-class:: classref-section-separator
 
@@ -333,7 +333,7 @@ OKHSL Color Model rectangle with constant saturation.
 - |void| **set_can_add_swatches**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_swatches_enabled**\ (\ )
 
-如果為 ``true``\ ，則可以在色板下新增預設。如果為 ``false``\ ，新增預設的按鈕將被禁用。
+如果為 ``true``\ ，則可以在色板下新增預設。如果為 ``false``\ ，新增預設的按鈕將被停用。
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ OKHSL Color Model rectangle with constant saturation.
 - |void| **set_color_mode**\ (\ value\: :ref:`ColorModeType<enum_ColorPicker_ColorModeType>`\ )
 - :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **get_color_mode**\ (\ )
 
-The currently selected color mode.
+目前選擇的顏色模式。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ The currently selected color mode.
 - |void| **set_deferred_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deferred_mode**\ (\ )
 
-如果為 ``true``\ ，只有在使用者鬆開滑鼠按鈕後才會套用顏色，否則即使在鼠標移動事件中也會立即套用（會造成性能問題）。
+如果為 ``true``\ ，只有在使用者鬆開滑鼠按鈕後才會套用顏色，否則即使在滑鼠移動事件中也會立即套用（會造成效能問題）。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ The currently selected color mode.
 - |void| **set_edit_intensity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_intensity**\ (\ )
 
-If ``true``, shows an intensity slider. The intensity is applied as follows: convert the color to linear encoding, multiply it by ``2 ** intensity``, and then convert it back to nonlinear sRGB encoding.
+如果為 ``true`` 則顯示強度滑塊。強度的應用方式如下：將顏色轉換為線性編碼，乘以 ``2 ** intensity``\ ，然後將其轉換回非線性 sRGB 編碼。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: con
 - |void| **set_picker_shape**\ (\ value\: :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>`\ )
 - :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **get_picker_shape**\ (\ )
 
-The shape of the color space view.
+色彩空間檢視的形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -618,7 +618,7 @@ The shape of the color space view.
 
 :ref:`Color<class_Color>` **focused_not_editing_cursor_color** = ``Color(1, 1, 1, 0.275)`` :ref:`🔗<class_ColorPicker_theme_color_focused_not_editing_cursor_color>`
 
-Color of rectangle or circle drawn when a picker shape part is focused but not editable via keyboard or joypad. Displayed *over* the picker shape, so a partially transparent color should be used to ensure the picker shape remains visible.
+當選擇器的形狀部分獲得焦點但無法通過鍵盤或控制器編輯時，矩形或圓形的繪製顏色。該顏色顯示在選擇器形狀\ *上方*\ ，因此應使用部分透明的顏色，確保選擇器形狀仍然可見。
 
 .. rst-class:: classref-item-separator
 
@@ -726,7 +726,7 @@ Color of rectangle or circle drawn when a picker shape part is focused but not e
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+用於將顏色以文字格式複製到剪貼簿的按鈕的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -750,7 +750,7 @@ The icon for the button that copies the color in text format to the clipboard.
 
 :ref:`Texture2D<class_Texture2D>` **color_script** :ref:`🔗<class_ColorPicker_theme_icon_color_script>`
 
-The icon for the button that switches color text to hexadecimal.
+用於將顏色文字切換為十六進位的按鈕的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ The icon for the button that switches color text to hexadecimal.
 
 :ref:`Texture2D<class_Texture2D>` **menu_option** :ref:`🔗<class_ColorPicker_theme_icon_menu_option>`
 
-The icon for color preset option menu.
+顏色預設選單的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ The icon for color preset option menu.
 
 :ref:`Texture2D<class_Texture2D>` **picker_cursor** :ref:`🔗<class_ColorPicker_theme_icon_picker_cursor>`
 
-顯示在色塊/圓（取決於 :ref:`picker_shape<class_ColorPicker_property_picker_shape>`\ ）上的圖像，標記目前選擇的顏色。
+顯示在色塊/圓（取決於 :ref:`picker_shape<class_ColorPicker_property_picker_shape>`\ ）上的影像，標記目前選擇的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -822,7 +822,7 @@ The icon for color preset option menu.
 
 :ref:`Texture2D<class_Texture2D>` **picker_cursor_bg** :ref:`🔗<class_ColorPicker_theme_icon_picker_cursor_bg>`
 
-The fill image displayed behind the picker cursor.
+拾取器游標後顯示的填充影像。
 
 .. rst-class:: classref-item-separator
 
@@ -846,7 +846,7 @@ The fill image displayed behind the picker cursor.
 
 :ref:`Texture2D<class_Texture2D>` **sample_revert** :ref:`🔗<class_ColorPicker_theme_icon_sample_revert>`
 
-The icon for the revert button (visible on the middle of the "old" color when it differs from the currently selected color). This icon is modulated with a dark color if the "old" color is bright enough, so the icon should be bright to ensure visibility in both scenarios.
+恢復按鈕的圖示（“舊”顏色與目前選中顏色不同時會在其中間顯示）。如果“舊”顏色足夠亮，那麼這個圖示會和暗色進行調制，這樣圖示應該就能夠在不同的情況下都保持可見。
 
 .. rst-class:: classref-item-separator
 
@@ -906,7 +906,7 @@ The icon for the revert button (visible on the middle of the "old" color when it
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_circle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_circle>`
 
-The :ref:`StyleBox<class_StyleBox>` used when the circle-shaped part of the picker is focused. Displayed *over* the picker shape, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+拾取器的圓形部分處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。顯示在拾取器形狀\ *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保拾取器形狀仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 
@@ -918,7 +918,7 @@ The :ref:`StyleBox<class_StyleBox>` used when the circle-shaped part of the pick
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_rectangle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_rectangle>`
 
-The :ref:`StyleBox<class_StyleBox>` used when the rectangle-shaped part of the picker is focused. Displayed *over* the picker shape, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+拾取器的矩形部分處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。顯示在拾取器形狀\ *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保拾取器形狀仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ The :ref:`StyleBox<class_StyleBox>` used when the rectangle-shaped part of the p
 
 :ref:`StyleBox<class_StyleBox>` **sample_focus** :ref:`🔗<class_ColorPicker_theme_style_sample_focus>`
 
-The :ref:`StyleBox<class_StyleBox>` used for the old color sample part when it is focused. Displayed *over* the sample, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+舊顏色樣本部分處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。顯示在樣本\ *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保拾取器形狀仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實現這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導航的可用性，所以出於無障礙存取的原因，不建議這樣做。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

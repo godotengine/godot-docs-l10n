@@ -17,9 +17,9 @@ Label
 說明
 ----
 
-A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use :ref:`RichTextLabel<class_RichTextLabel>` instead.
+用於顯示純文字的控制項。可以控制水平和垂直對齊方式以及文字在節點包圍框內的換行方式。不支援粗體、斜體等富文字格式。這種需求請改用 :ref:`RichTextLabel<class_RichTextLabel>`\ 。
 
-\ **Note:** A single Label node is not designed to display huge amounts of text. To display large amounts of text in a single node, consider using :ref:`RichTextLabel<class_RichTextLabel>` instead as it supports features like an integrated scroll bar and threading. :ref:`RichTextLabel<class_RichTextLabel>` generally performs better when displaying large amounts of text (several pages or more).
+\ **注意：**\ 單個標籤節點並非設計用於顯示大量文字。如果需要在單個節點中顯示大量文字，請考慮改用 :ref:`RichTextLabel<class_RichTextLabel>`\ ，因為它支援集成捲動條和多執行緒等功能。\ :ref:`RichTextLabel<class_RichTextLabel>` 在顯示大量文字（幾頁或更多）時通常效能更佳。
 
 .. rst-class:: classref-introduction-group
 
@@ -162,9 +162,9 @@ A control for displaying plain text. It gives you control over the horizontal an
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.
+如果設定為非 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 的值，文字將在節點的邊界矩形內進行換行。如果你調整節點的大小，它將自動改變高度以顯示所有文字。
 
-\ **Note:** Labels with autowrapping enabled must have a custom maximum width configured to work correctly, either through the Label's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **注意：** 啟用了自動換行的標籤必須設定自訂的最大寬度才能正常工作，這可以通過標籤自身的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 實現，或者作為啟用了 :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` 的父控制項傳遞過來的最大尺寸的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_autowrap_trim_flags**\ (\ value\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ )
 - |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ )
 
-Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` for more info.
+自動換行空白修剪標誌。詳見 :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` 和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES
 - |void| **set_ellipsis_char**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_ellipsis_char**\ (\ )
 
-Ellipsis character used for text clipping.
+用於文字裁剪的省略字元。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Ellipsis character used for text clipping.
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Controls the text's horizontal alignment. Supports left, center, right, and fill (also known as justify).
+控制文字的水平對齊方式。支援左對齊、居中對齊、右對齊、填充（即兩端對齊）。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Controls the text's horizontal alignment. Supports left, center, right, and fill
 - |void| **set_justification_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_justification_flags**\ (\ )
 
-Line fill alignment rules.
+行填充對齊規則。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Line fill alignment rules.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_lines_skipped**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_lines_skipped**\ (\ )
 
-The number of the lines ignored and not displayed from the start of the :ref:`text<class_Label_property_text>` value.
+從 :ref:`text<class_Label_property_text>` 值的開頭開始忽略且不顯示的行數。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ The number of the lines ignored and not displayed from the start of the :ref:`te
 - |void| **set_paragraph_separator**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_paragraph_separator**\ (\ )
 
-String used as a paragraph separator. Each paragraph is processed independently, in its own BiDi context.
+段落分隔符字串。段落獨立處理，使用自己的 BiDi 情境。
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-The clipping behavior when the text exceeds the node's bounding rectangle.
+設定文字超出節點邊界框時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ The clipping behavior when the text exceeds the node's bounding rectangle.
 - |void| **set_vertical_alignment**\ (\ value\: :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>`\ )
 - :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **get_vertical_alignment**\ (\ )
 
-Controls the text's vertical alignment. Supports top, center, bottom, and fill.
+控制文字的垂直對齊方式。支援頂部對齊、居中對齊、底部對齊、填充。
 
 .. rst-class:: classref-item-separator
 
@@ -489,11 +489,11 @@ Controls the text's vertical alignment. Supports top, center, bottom, and fill.
 - |void| **set_visible_characters**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visible_characters**\ (\ )
 
-The number of characters to display. If set to ``-1``, all characters are displayed. This can be useful when animating the text appearing in a dialog box.
+要顯示的字元數。如果設定為 ``-1``\ ，則顯示所有字元。這用於在對話框中為顯示的文字設定動畫。
 
-\ **Note:** Setting this property updates :ref:`visible_ratio<class_Label_property_visible_ratio>` accordingly.
+\ **注意：**\ 設定該屬性會相應地更新 :ref:`visible_ratio<class_Label_property_visible_ratio>`\ 。
 
-\ **Note:** Characters are counted as Unicode codepoints. A single visible grapheme may contain multiple codepoints (e.g. certain emoji use three codepoints). A single codepoint may contain two UTF-16 characters, which are used in C# strings.
+\ **注意：**\ 字元按照 Unicode 碼位計算。一個可見的字素可能包含多個碼位（例如部分 Emoji 會使用三個碼位）。一個碼位可能包含兩個 UTF-16 字元，C# 字串中會用到。
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ The number of characters to display. If set to ``-1``, all characters are displa
 - |void| **set_visible_characters_behavior**\ (\ value\: :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>`\ )
 - :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **get_visible_characters_behavior**\ (\ )
 
-The clipping behavior when :ref:`visible_characters<class_Label_property_visible_characters>` or :ref:`visible_ratio<class_Label_property_visible_ratio>` is set.
+設定 :ref:`visible_characters<class_Label_property_visible_characters>` 或 :ref:`visible_ratio<class_Label_property_visible_ratio>` 被設定時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ The clipping behavior when :ref:`visible_characters<class_Label_property_visible
 - |void| **set_visible_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visible_ratio**\ (\ )
 
-相對於字元總數（參見 :ref:`get_total_character_count()<class_Label_method_get_total_character_count>`\ ），要顯示的字元的占比。如果設定為 ``1.0``\ ，則顯示所有字元。如果設定為 ``0.5``\ ，則只顯示一半的字元。這用於在對話方塊中為顯示的文字設定動畫。
+相對於字元總數（參見 :ref:`get_total_character_count()<class_Label_method_get_total_character_count>`\ ），要顯示的字元的占比。如果設定為 ``1.0``\ ，則顯示所有字元。如果設定為 ``0.5``\ ，則只顯示一半的字元。這用於在對話框中為顯示的文字設定動畫。
 
 \ **注意：**\ 設定該屬性會相應地更新 :ref:`visible_characters<class_Label_property_visible_characters>`\ 。
 
@@ -546,7 +546,7 @@ The clipping behavior when :ref:`visible_characters<class_Label_property_visible
 
 :ref:`Rect2<class_Rect2>` **get_character_bounds**\ (\ pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Label_method_get_character_bounds>`
 
-Returns the bounding rectangle of the character at position ``pos`` in the label's local coordinate system. If the character is a non-visual character or ``pos`` is outside the valid range, an empty :ref:`Rect2<class_Rect2>` is returned. If the character is a part of a composite grapheme, the bounding rectangle of the whole grapheme is returned.
+回傳位置 ``pos`` 處字元的邊界矩形，使用標籤的區域座標系。如果字元是不可見字元或 ``pos`` 超出有效範圍，則回傳空 :ref:`Rect2<class_Rect2>`\ 。如果字元是復合字素的一部分，則回傳整個字素的邊界矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -651,7 +651,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`int<class_int>` **line_spacing** = ``3`` :ref:`🔗<class_Label_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行與行之間的額外縱向留白（單位為像素），留白會被新增到行的降部。該值可以為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -663,11 +663,11 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_Label_theme_constant_outline_size>`
 
-Text outline size.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_Label_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字型，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_Label_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
-\ **Note:** Using a value that is larger than half the font size is not recommended, as the font outline may fail to be fully closed in this case.
+\ **注意：**\ 不建議使用大於字型大小一半的值，因為這種情況下字型輪廓可能無法完全閉合。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Text outline size.
 
 :ref:`int<class_int>` **paragraph_spacing** = ``0`` :ref:`🔗<class_Label_theme_constant_paragraph_spacing>`
 
-Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Label_theme_constant_line_spacing>`.
+段落之間的垂直空間。在 :ref:`line_spacing<class_Label_theme_constant_line_spacing>` 上新增。
 
 .. rst-class:: classref-item-separator
 
@@ -751,7 +751,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_Label_theme_style_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Label** is focused (when used with assistive apps).
+**Label** 處於聚焦狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （適用於使用輔助應用）。
 
 .. rst-class:: classref-item-separator
 

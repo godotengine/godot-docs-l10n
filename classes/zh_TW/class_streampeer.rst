@@ -145,7 +145,7 @@ StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）�
 
 :ref:`int<class_int>` **get_8**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_8>`
 
-從流中獲取有符號位元組。
+從流中取得有符號位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）�
 
 :ref:`int<class_int>` **get_16**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_16>`
 
-從流中獲取有符號 16 位元值。
+從流中取得有符號 16 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）�
 
 :ref:`int<class_int>` **get_32**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_32>`
 
-從流中獲取有符號 32 位元值。
+從流中取得有符號 32 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）�
 
 :ref:`int<class_int>` **get_64**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_64>`
 
-從流中獲取有符號 64 位元值。
+從流中取得有符號 64 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）�
 
 :ref:`Array<class_Array>` **get_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will block until the desired amount is received.
+回傳包含接收到的位元組的塊資料，該塊資料是一個 :ref:`Array<class_Array>`\ ，其中包含兩個元素：一個 :ref:`Error<enum_@GlobalScope_Error>` 常數和一個 :ref:`PackedByteArray<class_PackedByteArray>`\ 。\ ``bytes`` 是要接收的位元組數。如果可用位元組數不足，則該函式將阻塞直到接收到所需的位元組數為止。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`float<class_float>` **get_double**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_double>`
 
-從流中獲取一個雙精度浮點數。
+從流中取得一個雙精度浮點數。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`float<class_float>` **get_float**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_float>`
 
-從流中獲取一個單精確度浮點數。
+從流中取得一個單精確度浮點數。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`float<class_float>` **get_half**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_half>`
 
-Gets a half-precision float from the stream.
+從流中取得一個半精度浮點數。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Gets a half-precision float from the stream.
 
 :ref:`Array<class_Array>` **get_partial_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_partial_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will return how many were actually received.
+回傳包含接收到的位元組的塊資料，該塊資料是一個 :ref:`Array<class_Array>`\ ，其中包含兩個元素：一個 :ref:`Error<enum_@GlobalScope_Error>` 常數和一個 :ref:`PackedByteArray<class_PackedByteArray>`\ 。\ ``bytes`` 是要接收的位元組數。如果可用的位元組數不足，則該函式將回傳實際接收到的位元組數。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`String<class_String>` **get_string**\ (\ bytes\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_StreamPeer_method_get_string>`
 
-從流中獲取一個位元組長度為 ``bytes`` 的 ASCII 字串。如果 ``bytes`` 為負（預設），會按照 :ref:`put_string()<class_StreamPeer_method_put_string>` 的逆向操作從流中讀取長度。
+從流中取得一個位元組長度為 ``bytes`` 的 ASCII 字串。如果 ``bytes`` 為負（預設），會按照 :ref:`put_string()<class_StreamPeer_method_put_string>` 的逆向操作從流中讀取長度。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`int<class_int>` **get_u8**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_u8>`
 
-從流中獲取一個無符號位元組。
+從流中取得一個無符號位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`int<class_int>` **get_u16**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_u16>`
 
-從流中獲取一個無符號 16 位元值。
+從流中取得一個無符號 16 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`int<class_int>` **get_u32**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_u32>`
 
-從流中獲取一個無符號 32 位元值。
+從流中取得一個無符號 32 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`int<class_int>` **get_u64**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_u64>`
 
-從流中獲取一個無符號 64 位元值。
+從流中取得一個無符號 64 位元值。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`String<class_String>` **get_utf8_string**\ (\ bytes\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_StreamPeer_method_get_utf8_string>`
 
-從流中獲取一個位元組長度為 ``bytes`` 的 UTF-8 字串（將發送的字串解碼為 UTF-8）。如果 ``bytes`` 為負（預設），會按照 :ref:`put_utf8_string()<class_StreamPeer_method_put_utf8_string>` 的逆向操作從流中讀取長度。
+從流中取得一個位元組長度為 ``bytes`` 的 UTF-8 字串（將發送的字串解碼為 UTF-8）。如果 ``bytes`` 為負（預設），會按照 :ref:`put_utf8_string()<class_StreamPeer_method_put_utf8_string>` 的逆向操作從流中讀取長度。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`Variant<class_Variant>` **get_var**\ (\ allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_StreamPeer_method_get_var>`
 
-從流中獲取一個 Variant。如果 ``allow_objects`` 為 ``true``\ ，則會允許解碼出物件。
+從流中取得一個 Variant。如果 ``allow_objects`` 為 ``true``\ ，則會允許解碼出物件。
 
 內部實作時，使用的解碼機制與 :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` 方法相同。
 
@@ -437,7 +437,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 |void| **put_half**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StreamPeer_method_put_half>`
 
-Puts a half-precision float into the stream.
+向流中放入一個半精度浮點數。
 
 .. rst-class:: classref-item-separator
 

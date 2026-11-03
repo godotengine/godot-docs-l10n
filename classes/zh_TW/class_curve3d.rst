@@ -139,7 +139,7 @@ Curve3D
 - |void| **set_closed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_closed**\ (\ )
 
-If ``true``, and the curve has more than 2 control points, the last point and the first one will be connected in a loop.
+如果為 ``true`` 且曲線的控制點數量大於 2，則結尾的點和開頭的點會連接成環。
 
 .. rst-class:: classref-item-separator
 
@@ -168,9 +168,9 @@ If ``true``, and the curve has more than 2 control points, the last point and th
 
 :ref:`Vector3<class_Vector3>` **point_{index}/in** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+通向 ``index`` 處頂點的那個控制點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -182,9 +182,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/out** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+從 ``index`` 處頂點引出的那個控制點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,9 +196,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/position** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+位於 ``index`` 處的那個頂點的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ The position of for the vertex at ``index``.
 
 :ref:`float<class_float>` **point_{index}/tilt** = ``0.0`` :ref:`🔗<class_Curve3D_property_point_{index}/tilt>`
 
-The tilt angle in radians for the point at ``index``.
+“位於 ``index`` 處那個點的傾斜角度（以弧度為單位）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值範圍是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ The tilt angle in radians for the point at ``index``.
 
 返回最接近 ``to_point`` 的偏移量。該偏移量被用於 :ref:`sample_baked()<class_Curve3D_method_sample_baked>` 或 :ref:`sample_baked_up_vector()<class_Curve3D_method_sample_baked_up_vector>`\ 。
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` 必須在該曲線的區域空間中。
 
 .. rst-class:: classref-item-separator
 
@@ -336,9 +336,9 @@ The tilt angle in radians for the point at ``index``.
 
 :ref:`Vector3<class_Vector3>` **get_closest_point**\ (\ to_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Curve3D_method_get_closest_point>`
 
-返回已烘焙的線段上最接近 ``to_point`` 的點（在曲線的局部空間中）。
+返回已烘焙的線段上最接近 ``to_point`` 的點（在曲線的區域空間中）。
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` 必須在該曲線的區域空間中。
 
 .. rst-class:: classref-item-separator
 
@@ -424,9 +424,9 @@ The tilt angle in radians for the point at ``index``.
 
 :ref:`Vector3<class_Vector3>` **sample_baked**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve3D_method_sample_baked>`
 
-Returns a point within the curve at position ``offset``, where ``offset`` is measured as a distance in 3D units along the curve. To do that, it finds the two cached points where the ``offset`` lies between, then interpolates the values. This interpolation is cubic if ``cubic`` is set to ``true``, or linear if set to ``false``.
+回傳曲線內位於 ``offset`` 位置的一個點，其中 ``offset`` 為沿曲線的 3D 單位測量距離。為此，它會找到 ``offset`` 位於其間的兩個快取點，然後對值進行插值。如果 ``cubic`` 被設定為 ``true``\ ，則該插值是立方插值；如果被設定為 ``false``\ ，則該插值是線性插值。
 
-Cubic interpolation tends to follow the curves better, but linear is faster (and often, precise enough).
+立方插值往往能更好地跟隨曲線，但線性插值速度更快（而且通常足夠精確）。
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +438,9 @@ Cubic interpolation tends to follow the curves better, but linear is faster (and
 
 :ref:`Vector3<class_Vector3>` **sample_baked_up_vector**\ (\ offset\: :ref:`float<class_float>`, apply_tilt\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve3D_method_sample_baked_up_vector>`
 
-Returns an up vector within the curve at position ``offset``, where ``offset`` is measured as a distance in 3D units along the curve. To do that, it finds the two cached up vectors where the ``offset`` lies between, then interpolates the values. If ``apply_tilt`` is ``true``, an interpolated tilt is applied to the interpolated up vector.
+回傳曲線內位於 ``offset`` 位置的向上向量，其中 ``offset`` 為沿曲線的 3D 單位測量距離。為此，它會找到 ``offset`` 位於其間的兩個快取向上向量，然後對值進行插值。如果 ``apply_tilt`` 為 ``true``\ ，則對插值後的向上向量應用插值後的傾斜。
 
-If the curve has no up vectors, the function sends an error to the console, and returns ``(0, 1, 0)``.
+如果曲線沒有向上向量，則該函式將向控制台發送一個錯誤，並回傳 ``(0, 1, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ If the curve has no up vectors, the function sends an error to the console, and 
 
 :ref:`Transform3D<class_Transform3D>` **sample_baked_with_rotation**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false, apply_tilt\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve3D_method_sample_baked_with_rotation>`
 
-Returns a :ref:`Transform3D<class_Transform3D>` with ``origin`` as point position, ``basis.x`` as sideway vector, ``basis.y`` as up vector, ``basis.z`` as forward vector. When the curve length is 0, there is no reasonable way to calculate the rotation, all vectors aligned with global space axes. See also :ref:`sample_baked()<class_Curve3D_method_sample_baked>`.
+回傳一個 :ref:`Transform3D<class_Transform3D>`\ ，其中 ``origin`` 作為點位置，\ ``basis.x`` 作為橫向向量，\ ``basis.y`` 作為向上向量，\ ``basis.z`` 作為前向向量。當曲線長度為 0 時，將沒有合理的方法來計算旋轉，所有向量都會與全域空間軸對齊。另請參見 :ref:`sample_baked()<class_Curve3D_method_sample_baked>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ Returns a :ref:`Transform3D<class_Transform3D>` with ``origin`` as point positio
 
 |void| **set_point_in**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Curve3D_method_set_point_in>`
 
-設定通往頂點 ``idx`` 的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤信息。位置相對於頂點。
+設定通往頂點 ``idx`` 的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤訊息。位置相對於頂點。
 
 .. rst-class:: classref-item-separator
 

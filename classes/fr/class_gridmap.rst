@@ -696,7 +696,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant_by_item**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of cells inside the octant at ``octant_coords`` that use the specified cell ``item``.
+Renvoie un tableau de :ref:`Vector3i<class_Vector3i>`\ s avec les coordonnées des cellules contenues dans l'octant à ``octant_coords`` qui utilisent par l’élément de cellule spécifié ``item``.
 
 .. rst-class:: classref-item-separator
 

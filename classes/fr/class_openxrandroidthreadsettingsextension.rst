@@ -14,7 +14,7 @@ Wraps the `XR_KHR_android_thread_settings <https://registry.khronos.org/OpenXR/s
 Description
 -----------
 
-For XR to be comfortable, it is important for applications to deliver frames quickly and consistently. In order to make sure the important application threads get their full share of time, these threads must be identified to the system, which will adjust their scheduling priority accordingly.
+Pour que la XR soit confortable, il est important que les applications délivrent les trames rapidement et de manière consistante. Pour être sur que les threads importants de l'application soient alloués leur pleine part du temps, ces threads doivent être identifiés au système, qui ajustera leur priorité de planification en conséquence.
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ Hints to the XR runtime that the thread is doing time critical CPU tasks.
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_APPLICATION_WORKER** = ``1``
 
-Hints to the XR runtime that the thread is doing background CPU tasks.
+Indique au runtime XR que le thread effectue des tâches CPU d'arrière-plan.
 
 .. _class_OpenXRAndroidThreadSettingsExtension_constant_THREAD_TYPE_RENDERER_MAIN:
 
@@ -73,7 +73,7 @@ Hints to the XR runtime that the thread is doing time critical graphics device t
 
 :ref:`ThreadType<enum_OpenXRAndroidThreadSettingsExtension_ThreadType>` **THREAD_TYPE_RENDERER_WORKER** = ``3``
 
-Hints to the XR runtime that the thread is doing background graphics device tasks.
+Indique au runtime XR que le thread effectue des tâches graphiques d'arrière-plan.
 
 .. rst-class:: classref-section-separator
 

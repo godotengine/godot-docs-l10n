@@ -9,20 +9,20 @@ OpenXRHand
 
 **繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node supporting hand and finger tracking in OpenXR.
+OpenXR 中支援手和手指追蹤的節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node enables OpenXR's hand tracking functionality. The node should be a child node of an :ref:`XROrigin3D<class_XROrigin3D>` node, tracking will update its position to the player's tracked hand Palm joint location (the center of the middle finger's metacarpal bone). This node also updates the skeleton of a properly skinned hand or avatar model.
+該節點啟用 OpenXR 的手部追蹤功能。該節點應該是 :ref:`XROrigin3D<class_XROrigin3D>` 節點的子節點，追蹤會將其位置更新為玩家被追蹤的手掌關節位置（中指的掌骨中心）。該節點還會更新正確蒙皮的手或頭像模型的骨架。
 
-If the skeleton is a hand (one of the hand bones is the root node of the skeleton), then the skeleton will be placed relative to the hand palm location and the hand mesh and skeleton should be children of the OpenXRHand node.
+如果骨架是一隻手（手部骨骼之一是該骨架的根節點），則該骨架將相對於手掌位置放置，並且手部網格和骨架應該是 OpenXRHand 節點的子級。
 
-If the hand bones are part of a full skeleton, then the root of the hand will keep its location with the assumption that IK is used to position the hand and arm.
+如果手骨是完整骨架的一部分，假設使用 IK 來定位手和胳膊，則手的根部將保持其位置。
 
-By default the skeleton hand bones are repositioned to match the size of the tracked hand. To preserve the modeled bone sizes change :ref:`bone_update<class_OpenXRHand_property_bone_update>` to apply rotation only.
+預設情況下，骨架手骨會被重新定位以匹配追蹤的手的大小。要保留建模的骨骼大小，請更改 :ref:`bone_update<class_OpenXRHand_property_bone_update>` 以僅應用旋轉。
 
 .. rst-class:: classref-reftable-group
 
@@ -133,7 +133,7 @@ enum **SkeletonRig**: :ref:`🔗<enum_OpenXRHand_SkeletonRig>`
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_OPENXR** = ``0``
 
-An OpenXR compliant skeleton.
+符合 OpenXR 標準的骨架。
 
 .. _class_OpenXRHand_constant_SKELETON_RIG_HUMANOID:
 
@@ -141,7 +141,7 @@ An OpenXR compliant skeleton.
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_HUMANOID** = ``1``
 
-A :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` compliant skeleton.
+符合 :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 標準的骨架。
 
 .. _class_OpenXRHand_constant_SKELETON_RIG_MAX:
 
@@ -167,7 +167,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_FULL** = ``0``
 
-The skeletons bones are fully updated (both position and rotation) to match the tracked bones.
+骨架骨骼已完全更新（位置和旋轉）以匹配追蹤的骨骼。
 
 .. _class_OpenXRHand_constant_BONE_UPDATE_ROTATION_ONLY:
 
@@ -175,7 +175,7 @@ The skeletons bones are fully updated (both position and rotation) to match the 
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_ROTATION_ONLY** = ``1``
 
-The skeletons bones are only rotated to align with the tracked bones, preserving bone length.
+骨架骨骼僅旋轉以與追蹤的骨骼對齊，從而保留骨骼長度。
 
 .. _class_OpenXRHand_constant_BONE_UPDATE_MAX:
 
@@ -183,7 +183,7 @@ The skeletons bones are only rotated to align with the tracked bones, preserving
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_MAX** = ``2``
 
-Maximum supported bone update mode.
+最大支援的骨骼更新模式。
 
 .. rst-class:: classref-section-separator
 
@@ -205,7 +205,7 @@ Maximum supported bone update mode.
 - |void| **set_bone_update**\ (\ value\: :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>`\ )
 - :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **get_bone_update**\ (\ )
 
-Specify the type of updates to perform on the bone.
+指定要在骨骼上執行的更新型別。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Specify the type of updates to perform on the bone.
 - |void| **set_skeleton_rig**\ (\ value\: :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>`\ )
 - :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **get_skeleton_rig**\ (\ )
 
-Set the type of skeleton rig the :ref:`hand_skeleton<class_OpenXRHand_property_hand_skeleton>` is compliant with.
+設定 :ref:`hand_skeleton<class_OpenXRHand_property_hand_skeleton>` 所相容的骨架綁定型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

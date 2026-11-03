@@ -7,7 +7,7 @@ OpenXRFrameSynthesisExtension
 
 **Hereda:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-The OpenXR Frame synthesis extension allows for advanced reprojection at low(er) framerates.
+La extensión de síntesis de fotogramas (Frame synthesis) de OpenXR permite una reproyección avanzada a tasas de fotogramas más bajas.
 
 .. rst-class:: classref-introduction-group
 

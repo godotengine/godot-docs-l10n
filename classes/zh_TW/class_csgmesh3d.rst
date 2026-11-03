@@ -14,9 +14,9 @@ CSGMesh3D
 說明
 ----
 
-This CSG node allows you to use any mesh resource as a CSG shape, provided it is *manifold*. A manifold shape is closed, does not self-intersect, does not contain internal faces and has no edges that connect to more than two faces. See also :ref:`CSGPolygon3D<class_CSGPolygon3D>` for drawing 2D extruded polygons to be used as CSG nodes.
+該 CSG 節點允許你將任何\ *流形*\ 的網格資源用作 CSG 形狀。流形的形狀指的是閉合、不自相交、不包含內部面、沒有連接到兩個面以上的邊。將繪製的 2D 多邊形擠出用作 CSG 節點見 :ref:`CSGPolygon3D<class_CSGPolygon3D>`\ 。
 
-\ **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a :ref:`MeshInstance3D<class_MeshInstance3D>` with a :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+\ **注意：**\ CSG 節點旨在用於關卡原型設計。與使用 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 建立 :ref:`MeshInstance3D<class_MeshInstance3D>` 相比，建立 CSG 節點具有顯著的 CPU 成本。在另一個 CSG 節點中移動 CSG 節點也會大量消耗 CPU，因此在遊戲過程中應該避免這種情況。
 
 .. rst-class:: classref-introduction-group
 
@@ -76,13 +76,13 @@ This CSG node allows you to use any mesh resource as a CSG shape, provided it is
 - |void| **set_mesh**\ (\ value\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ )
 
-The :ref:`Mesh<class_Mesh>` resource to use as a CSG shape.
+用作 CSG 形狀的 :ref:`Mesh<class_Mesh>` 資源。
 
-\ **Note:** Some :ref:`Mesh<class_Mesh>` types such as :ref:`PlaneMesh<class_PlaneMesh>`, :ref:`PointMesh<class_PointMesh>`, :ref:`QuadMesh<class_QuadMesh>`, and :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` are excluded from the type hint for this property, as these primitives are non-*manifold* and thus not compatible with the CSG algorithm.
+\ **注意：**\ 該屬性的型別提示中排除了 :ref:`PlaneMesh<class_PlaneMesh>`\ 、\ :ref:`PointMesh<class_PointMesh>`\ 、\ :ref:`QuadMesh<class_QuadMesh>`\ 、\ :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` 等 :ref:`Mesh<class_Mesh>` 型別，因為這些圖元非\ *流形*\ ，與 CSG 算法不相容。
 
-\ **Note:** When using an :ref:`ArrayMesh<class_ArrayMesh>`, all vertex attributes except :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` and :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` are left unused. Only :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` and :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` will be passed to the GPU.
+\ **注意：**\ 使用 :ref:`ArrayMesh<class_ArrayMesh>` 時，除 :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`\ 、\ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` 和 :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` 之外的所有頂點屬性均保持未被使用的狀態。只有 :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` 和 :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` 會被傳遞到 GPU。
 
-\ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` is only used to determine which faces require the use of flat shading. By default, CSGMesh will ignore the mesh's vertex normals, recalculate them for each vertex and use a smooth shader. If a flat shader is required for a face, ensure that all vertex normals of the face are approximately equal.
+\ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` 僅被用於確定哪些面需要使用平直著色。預設情況下，CSGMesh 將忽略該網格的頂點法線，為每個頂點重新計算它們並使用一個平滑著色器。如果面需要平直著色器，請確保面的所有頂點法線大致相等。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

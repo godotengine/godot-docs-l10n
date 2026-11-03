@@ -16,9 +16,9 @@ Empêche les signaux audio de dépasser un niveau sonore spécifique.
 Description
 -----------
 
-A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+Un limiteur est un effet conçu pour empêcher le son de dépasser un seuil de dB donné. Les limiteurs durs prédisent les pics de volume, et appliqueront de manière lisse une réduction de gain lorsqu'un pic franchit le seuil du plafond pour éviter les coupures et les distorsions. Il conserve la forme d'onde et l'empêche de franchir le seuil du plafond. En ajouter un au bus Master est recommandé comme mesure de sécurité pour éviter que des pics de volume soudain ne se produisent, et pour prévenir la distorsion causée par des coupures, quand le volume excède 0 dB.
 
-If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+Si les coupures sont voulus, considérez :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,9 +65,9 @@ Descriptions des propriétés
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
+La valeur maximale autorisée de la forme d'onde, en décibels. Cette valeur peut aller de -24.0 à 0.0.
 
-The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+La valeur par défaut de -0.3 empêche les pics d'interéchantillon potentiels (en anglais, Inter-Sample Peaks ou ISP) de dépasser 0 dB, ce qui peut causer une légère distorsion sur certains matériels plus anciens.
 
 .. rst-class:: classref-item-separator
 

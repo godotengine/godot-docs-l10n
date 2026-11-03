@@ -7,7 +7,7 @@ AudioEffectNotchFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a notch filter to an audio bus.
+Añade un filtro eliminador de banda a un bus de audio.
 
 .. rst-class:: classref-introduction-group
 

@@ -7,25 +7,25 @@ GDExtensionManager
 
 **繼承：** :ref:`Object<class_Object>`
 
-Provides access to GDExtension functionality.
+提供對 GDExtension 功能的存取。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The GDExtensionManager loads, initializes, and keeps track of all available :ref:`GDExtension<class_GDExtension>` libraries in the project.
+GDExtensionManager 能夠載入、初始化、追蹤專案中所有可用的 :ref:`GDExtension<class_GDExtension>` 庫。
 
-\ **Note:** Do not worry about GDExtension unless you know what you are doing.
+\ **注意：**\ 不清楚有甚麼用就不必擔心 GDExtension。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`GDExtension overview <../engine_details/engine_api/gdextension/what_is_gdextension>`
+- :doc:`GDExtension 概述 <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
-- :doc:`GDExtension example in C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
+- :doc:`C++ 的 GDExtension 範例 <../tutorials/scripting/cpp/gdextension_cpp_example>`
 
 .. rst-class:: classref-reftable-group
 
@@ -66,9 +66,9 @@ The GDExtensionManager loads, initializes, and keeps track of all available :ref
 
 **extension_loaded**\ (\ extension\: :ref:`GDExtension<class_GDExtension>`\ ) :ref:`🔗<class_GDExtensionManager_signal_extension_loaded>`
 
-Emitted after the editor has finished loading a new extension.
+編輯器完成載入新擴充時發出。
 
-\ **Note:** This signal is only emitted in editor builds.
+\ **注意：**\ 該訊號僅會在編輯器建置中發出。
 
 .. rst-class:: classref-item-separator
 
@@ -80,9 +80,9 @@ Emitted after the editor has finished loading a new extension.
 
 **extension_unloading**\ (\ extension\: :ref:`GDExtension<class_GDExtension>`\ ) :ref:`🔗<class_GDExtensionManager_signal_extension_unloading>`
 
-Emitted before the editor starts unloading an extension.
+編輯器完成卸載某個擴充時發出。
 
-\ **Note:** This signal is only emitted in editor builds.
+\ **注意：**\ 該訊號僅會在編輯器建置中發出。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Emitted before the editor starts unloading an extension.
 
 **extensions_reloaded**\ (\ ) :ref:`🔗<class_GDExtensionManager_signal_extensions_reloaded>`
 
-Emitted after the editor has finished reloading one or more extensions.
+在編輯器已完成重新載入一個或多個擴充後發出。
 
 .. rst-class:: classref-section-separator
 
@@ -117,7 +117,7 @@ enum **LoadStatus**: :ref:`🔗<enum_GDExtensionManager_LoadStatus>`
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **LOAD_STATUS_OK** = ``0``
 
-The extension has loaded successfully.
+擴充已被成功載入。
 
 .. _class_GDExtensionManager_constant_LOAD_STATUS_FAILED:
 
@@ -125,7 +125,7 @@ The extension has loaded successfully.
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **LOAD_STATUS_FAILED** = ``1``
 
-The extension has failed to load, possibly because it does not exist or has missing dependencies.
+擴充載入失敗，可能是因為它不存在或缺少相依項目。
 
 .. _class_GDExtensionManager_constant_LOAD_STATUS_ALREADY_LOADED:
 
@@ -133,7 +133,7 @@ The extension has failed to load, possibly because it does not exist or has miss
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **LOAD_STATUS_ALREADY_LOADED** = ``2``
 
-The extension has already been loaded.
+擴充已被載入。
 
 .. _class_GDExtensionManager_constant_LOAD_STATUS_NOT_LOADED:
 
@@ -141,7 +141,7 @@ The extension has already been loaded.
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **LOAD_STATUS_NOT_LOADED** = ``3``
 
-The extension has not been loaded.
+擴充尚未被載入。
 
 .. _class_GDExtensionManager_constant_LOAD_STATUS_NEEDS_RESTART:
 
@@ -149,7 +149,7 @@ The extension has not been loaded.
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **LOAD_STATUS_NEEDS_RESTART** = ``4``
 
-The extension requires the application to restart to fully load.
+該擴充需要應用程式重新啟動才能完全載入。
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ The extension requires the application to restart to fully load.
 
 :ref:`GDExtension<class_GDExtension>` **get_extension**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDExtensionManager_method_get_extension>`
 
-Returns the :ref:`GDExtension<class_GDExtension>` at the given file ``path``, or ``null`` if it has not been loaded or does not exist.
+回傳給定檔案 ``path`` 處的 :ref:`GDExtension<class_GDExtension>`\ ，如果尚未載入或不存在，則回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns the :ref:`GDExtension<class_GDExtension>` at the given file ``path``, or
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_loaded_extensions**\ (\ ) |const| :ref:`🔗<class_GDExtensionManager_method_get_loaded_extensions>`
 
-Returns the file paths of all currently loaded extensions.
+回傳所有目前載入的擴充的檔案路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns the file paths of all currently loaded extensions.
 
 :ref:`bool<class_bool>` **is_extension_loaded**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_GDExtensionManager_method_is_extension_loaded>`
 
-Returns ``true`` if the extension at the given file ``path`` has already been loaded successfully. See also :ref:`get_loaded_extensions()<class_GDExtensionManager_method_get_loaded_extensions>`.
+如果給定檔案 ``path`` 處的擴充已成功載入，則回傳 ``true``\ 。另見 :ref:`get_loaded_extensions()<class_GDExtensionManager_method_get_loaded_extensions>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Returns ``true`` if the extension at the given file ``path`` has already been lo
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **load_extension**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDExtensionManager_method_load_extension>`
 
-Loads an extension by absolute file path. The ``path`` needs to point to a valid :ref:`GDExtension<class_GDExtension>`. Returns :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>` if successful.
+使用絕對檔案路徑載入擴充。\ ``path`` 需要指向有效的 :ref:`GDExtension<class_GDExtension>`\ 。成功時回傳 :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Loads an extension by absolute file path. The ``path`` needs to point to a valid
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **load_extension_from_function**\ (\ path\: :ref:`String<class_String>`, init_func\: ``const GDExtensionInitializationFunction*``\ ) :ref:`🔗<class_GDExtensionManager_method_load_extension_from_function>`
 
-Loads the extension already in address space via the given path and initialization function. The ``path`` needs to be unique and start with ``"libgodot://"``. Returns :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>` if successful.
+通過給定的路徑和初始化函式載入已存在於位址空間中的擴充。\ ``path`` 必須是唯一的，並且以 ``"libgodot://"`` 開頭。成功時回傳 :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ Loads the extension already in address space via the given path and initializati
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **reload_extension**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDExtensionManager_method_reload_extension>`
 
-Reloads the extension at the given file path. The ``path`` needs to point to a valid :ref:`GDExtension<class_GDExtension>`, otherwise this method may return either :ref:`LOAD_STATUS_NOT_LOADED<class_GDExtensionManager_constant_LOAD_STATUS_NOT_LOADED>` or :ref:`LOAD_STATUS_FAILED<class_GDExtensionManager_constant_LOAD_STATUS_FAILED>`.
+重新載入給定檔案路徑處的擴充。\ ``path`` 需要指向有效的 :ref:`GDExtension<class_GDExtension>`\ ，否則該方法可能回傳 :ref:`LOAD_STATUS_NOT_LOADED<class_GDExtensionManager_constant_LOAD_STATUS_NOT_LOADED>` 或 :ref:`LOAD_STATUS_FAILED<class_GDExtensionManager_constant_LOAD_STATUS_FAILED>`\ 。
 
-\ **Note:** You can only reload extensions in the editor. In release builds, this method always fails and returns :ref:`LOAD_STATUS_FAILED<class_GDExtensionManager_constant_LOAD_STATUS_FAILED>`.
+\ **注意：**\ 你只能在編輯器中重新載入擴充。在發佈建置中，該方法總是失敗並回傳 :ref:`LOAD_STATUS_FAILED<class_GDExtensionManager_constant_LOAD_STATUS_FAILED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Reloads the extension at the given file path. The ``path`` needs to point to a v
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **unload_extension**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDExtensionManager_method_unload_extension>`
 
-Unloads an extension by file path. The ``path`` needs to point to an already loaded :ref:`GDExtension<class_GDExtension>`, otherwise this method returns :ref:`LOAD_STATUS_NOT_LOADED<class_GDExtensionManager_constant_LOAD_STATUS_NOT_LOADED>`.
+按檔案路徑卸載擴充。\ ``path`` 需要指向已經載入的 :ref:`GDExtension<class_GDExtension>`\ ，否則該方法回傳 :ref:`LOAD_STATUS_NOT_LOADED<class_GDExtensionManager_constant_LOAD_STATUS_NOT_LOADED>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

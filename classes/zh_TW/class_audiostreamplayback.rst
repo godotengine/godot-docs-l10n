@@ -198,7 +198,7 @@ AudioStreamPlayback
 
 |void| **_tag_used_streams**\ (\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__tag_used_streams>`
 
-可覆寫的方法。當播放啟動且 :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` 為 ``true`` 時，每次混音都會呼叫。編輯器外掛可透過此方法標記音訊流當前位置並於預覽中顯示。
+可覆寫的方法。當播放啟動且 :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` 為 ``true`` 時，每次混音都會呼叫。編輯器外掛可透過此方法標記音訊流目前位置並於預覽中顯示。
 
 .. rst-class:: classref-item-separator
 

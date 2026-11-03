@@ -7,14 +7,14 @@ GodotInstance
 
 **繼承：** :ref:`Object<class_Object>`
 
-Provides access to an embedded Godot instance.
+提供對嵌入的 Godot 實例的存取權限。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-GodotInstance represents a running Godot instance that is controlled from an outside codebase, without a perpetual main loop. It is created by the C API ``libgodot_create_godot_instance``. Only one may be created per process.
+GodotInstance 代表一個正在執行的 Godot 實例，該實例由外部程式碼庫控制，且沒有永久的主循環。它通過 C API 函式 ``libgodot_create_godot_instance`` 建立。每個處理程序只能建立一個 GodotInstance 實例。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ GodotInstance represents a running Godot instance that is controlled from an out
 
 |void| **focus_in**\ (\ ) :ref:`🔗<class_GodotInstance_method_focus_in>`
 
-Notifies the instance that it is now in focus.
+通知實例它現在處於焦點狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ Notifies the instance that it is now in focus.
 
 |void| **focus_out**\ (\ ) :ref:`🔗<class_GodotInstance_method_focus_out>`
 
-Notifies the instance that it is now not in focus.
+通知實例它現在已失去焦點。
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Notifies the instance that it is now not in focus.
 
 :ref:`bool<class_bool>` **is_started**\ (\ ) :ref:`🔗<class_GodotInstance_method_is_started>`
 
-Returns ``true`` if this instance has been fully started.
+如果該實例已完全啟動，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Returns ``true`` if this instance has been fully started.
 
 :ref:`bool<class_bool>` **iteration**\ (\ ) :ref:`🔗<class_GodotInstance_method_iteration>`
 
-Runs a single iteration of the main loop. Returns ``true`` if the engine is attempting to quit.
+執行主循環的單次迭代。如果引擎正在嘗試退出，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Runs a single iteration of the main loop. Returns ``true`` if the engine is atte
 
 |void| **pause**\ (\ ) :ref:`🔗<class_GodotInstance_method_pause>`
 
-Notifies the instance that it is going to be paused.
+通知實例它即將被暫停。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Notifies the instance that it is going to be paused.
 
 |void| **resume**\ (\ ) :ref:`🔗<class_GodotInstance_method_resume>`
 
-Notifies the instance that it is being resumed.
+通知實例它正在被恢復執行。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Notifies the instance that it is being resumed.
 
 :ref:`bool<class_bool>` **start**\ (\ ) :ref:`🔗<class_GodotInstance_method_start>`
 
-Finishes this instance's startup sequence. Returns ``true`` on success.
+完成該實例的啟動序列。成功時回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

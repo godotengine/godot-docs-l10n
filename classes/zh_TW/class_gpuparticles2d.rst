@@ -128,11 +128,11 @@ GPUParticles2D
 
 **finished**\ (\ ) :ref:`🔗<class_GPUParticles2D_signal_finished>`
 
-Emitted when all active particles have finished processing. To immediately restart the emission cycle, call :ref:`restart()<class_GPUParticles2D_method_restart>`.
+所有活動粒子完成處理時發出。立即重啓發射週期請呼叫 :ref:`restart()<class_GPUParticles2D_method_restart>`\ 。
 
-This signal is never emitted when :ref:`one_shot<class_GPUParticles2D_property_one_shot>` is disabled, as particles will be emitted and processed continuously.
+停用 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 時不會發出該訊號，因為會持續發出並處理粒子。
 
-\ **Note:** For :ref:`one_shot<class_GPUParticles2D_property_one_shot>` emitters, due to the particles being computed on the GPU, there may be a short period after receiving the signal during which setting :ref:`emitting<class_GPUParticles2D_property_emitting>` to ``true`` will not restart the emission cycle. This delay is avoided by instead calling :ref:`restart()<class_GPUParticles2D_method_restart>`.
+\ **注意：**\ 由於粒子是在 GPU 上計算的，所以 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 的發射器在收到該訊號後可能存在一小段特殊時期，在此期間將 :ref:`emitting<class_GPUParticles2D_property_emitting>` 設為 ``true`` 無法重啓發射週期。改成呼叫 :ref:`restart()<class_GPUParticles2D_method_restart>` 就可以避免這段延遲。
 
 .. rst-class:: classref-section-separator
 
@@ -163,7 +163,7 @@ enum **DrawOrder**: :ref:`🔗<enum_GPUParticles2D_DrawOrder>`
 
 :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **DRAW_ORDER_LIFETIME** = ``1``
 
-Particles are drawn in order of remaining lifetime. In other words, the particle with the highest lifetime is drawn at the front.
+粒子按照剩餘壽命的順序繪製。換句話說，壽命最長的粒子被繪製在前面。
 
 .. _class_GPUParticles2D_constant_DRAW_ORDER_REVERSE_LIFETIME:
 
@@ -171,7 +171,7 @@ Particles are drawn in order of remaining lifetime. In other words, the particle
 
 :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **DRAW_ORDER_REVERSE_LIFETIME** = ``2``
 
-Particles are drawn in reverse order of remaining lifetime. In other words, the particle with the lowest lifetime is drawn at the front.
+粒子按照剩餘壽命的相反順序繪製。換句話說，壽命最短的粒子被繪製在前面。
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 - |void| **set_amount**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_amount**\ (\ )
 
-The number of particles to emit in one emission cycle. The effective emission rate is ``(amount * amount_ratio) / lifetime`` particles per second. Higher values will increase GPU requirements, even if not all particles are visible at a given time or if :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` is decreased.
+一個發射週期內發射的粒子數。有效發射速率為每秒 ``(amount * amount_ratio) / lifetime`` 個粒子。較高的值會增加 GPU 要求，即使在給定時間並非所有粒子都可見或 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 減少。
 
-\ **Note:** Changing this value will cause the particle system to restart. To avoid this, change :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` instead.
+\ **注意：**\ 更改該值將導致粒子系統重新啟動。為了避免這種情況，請更改 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -262,9 +262,9 @@ The number of particles to emit in one emission cycle. The effective emission ra
 - |void| **set_amount_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_amount_ratio**\ (\ )
 
-The ratio of particles that should actually be emitted. If set to a value lower than ``1.0``, this will set the amount of emitted particles throughout the lifetime to ``amount * amount_ratio``. Unlike changing :ref:`amount<class_GPUParticles2D_property_amount>`, changing :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` while emitting does not affect already-emitted particles and doesn't cause the particle system to restart. :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` can be used to create effects that make the number of emitted particles vary over time.
+實際應該發射的粒子的比率。如果被設定為低於 ``1.0`` 的值，則會將整個生命週期內發射的粒子數量設定為 ``amount * amount_ratio``\ 。與更改 :ref:`amount<class_GPUParticles2D_property_amount>` 不同，發射時更改 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 不會影響已發射的粒子，也不會導致粒子系統重新啟動。\ :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 可用於建立使發射粒子的數量隨時間變化的效果。
 
-\ **Note:** Reducing the :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` has no performance benefit, since resources need to be allocated and processed for the total :ref:`amount<class_GPUParticles2D_property_amount>` of particles regardless of the :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>`. If you don't intend to change the number of particles emitted while the particles are emitting, make sure :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` is set to ``1`` and change :ref:`amount<class_GPUParticles2D_property_amount>` to your liking instead.
+\ **注意：**\ 減少 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 不會帶來效能優勢，因為無論 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 是多少，都需要為粒子總數 :ref:`amount<class_GPUParticles2D_property_amount>` 分配和處理資源。如果你不打算在粒子發射時更改發射的粒子數量，請確保將 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 設定為 ``1`` 並根據你的喜好更改 :ref:`amount<class_GPUParticles2D_property_amount>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -281,9 +281,9 @@ The ratio of particles that should actually be emitted. If set to a value lower 
 - |void| **set_collision_base_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_base_size**\ (\ )
 
-Multiplier for particle's collision radius. ``1.0`` corresponds to the size of the sprite. If particles appear to sink into the ground when colliding, increase this value. If particles appear to float when colliding, decrease this value. Only effective if :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` is :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` or :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`.
+粒子碰撞半徑的乘數。\ ``1.0`` 對應於該精靈的大小。如果碰撞時粒子似乎沈入地下，請增加該值。如果粒子在碰撞時出現漂浮，請減小該值。僅當 :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 為 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` 時有效。
 
-\ **Note:** Particles always have a spherical collision shape.
+\ **注意：**\ 粒子始終具有球形碰撞形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Multiplier for particle's collision radius. ``1.0`` corresponds to the size of t
 - |void| **set_draw_order**\ (\ value\: :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>`\ )
 - :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **get_draw_order**\ (\ )
 
-Particle draw order.
+粒子繪製順序。
 
 .. rst-class:: classref-item-separator
 
@@ -317,11 +317,11 @@ Particle draw order.
 - |void| **set_emitting**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emitting**\ (\ )
 
-If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_property_emitting>` can be used to start and stop particles from emitting. However, if :ref:`one_shot<class_GPUParticles2D_property_one_shot>` is ``true`` setting :ref:`emitting<class_GPUParticles2D_property_emitting>` to ``true`` will not restart the emission cycle unless all active particles have finished processing. Use the :ref:`finished<class_GPUParticles2D_signal_finished>` signal to be notified once all active particles finish processing.
+如果為 ``true``\ ，則正在發射粒子。\ :ref:`emitting<class_GPUParticles2D_property_emitting>` 可用於啟動和停止粒子發射。但是，如果 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 為 ``true``\ ，則將 :ref:`emitting<class_GPUParticles2D_property_emitting>` 設定為 ``true`` 將不會重新啟動該發射循環，除非所有活動粒子都已完成處理。一旦所有活動粒子完成處理，可以使用 :ref:`finished<class_GPUParticles2D_signal_finished>` 訊號來收取通知。
 
-\ **Note:** For :ref:`one_shot<class_GPUParticles2D_property_one_shot>` emitters, due to the particles being computed on the GPU, there may be a short period after receiving the :ref:`finished<class_GPUParticles2D_signal_finished>` signal during which setting this to ``true`` will not restart the emission cycle.
+\ **注意：**\ 對於 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 發射器，由於粒子是在 GPU 上計算的，因此在收到 :ref:`finished<class_GPUParticles2D_signal_finished>` 訊號後可能會有一段短暫的時間，在此期間將其設定為 ``true`` 將不會重新啟動發射循環。
 
-\ **Tip:** If your :ref:`one_shot<class_GPUParticles2D_property_one_shot>` emitter needs to immediately restart emitting particles once :ref:`finished<class_GPUParticles2D_signal_finished>` signal is received, consider calling :ref:`restart()<class_GPUParticles2D_method_restart>` instead of setting :ref:`emitting<class_GPUParticles2D_property_emitting>`.
+\ **提示：**\ 如果你的 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 發射器需要在收到 :ref:`finished<class_GPUParticles2D_signal_finished>` 訊號後立即重新啟動發射粒子，請考慮呼叫 :ref:`restart()<class_GPUParticles2D_method_restart>` 而不是設定 :ref:`emitting<class_GPUParticles2D_property_emitting>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度算繪。請注意，這並不會降低粒子系統本身的類比速度。
+粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度渲染。請注意，這並不會降低粒子系統本身的類比速度。
 
 .. rst-class:: classref-item-separator
 
@@ -389,9 +389,9 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - |void| **set_interp_to_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_interp_to_end**\ (\ )
 
-Causes all the particles in this node to interpolate towards the end of their lifetime.
+導致該節點中的所有粒子插值到其生命週期結束時。
 
-\ **Note:** This only works when used with a :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`. It needs to be manually implemented for custom process shaders.
+\ **注意：**\ 這僅在與 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` 一起使用時才有效。對於自訂處理程序著色器，需要手動實作。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Causes all the particles in this node to interpolate towards the end of their li
 - |void| **set_lifetime**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime**\ (\ )
 
-The amount of time each particle will exist (in seconds). The effective emission rate is ``(amount * amount_ratio) / lifetime`` particles per second.
+每個粒子存在的時間（以秒為單位）。有效發射速率為每秒 ``(amount * amount_ratio) / lifetime`` 個粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ The amount of time each particle will exist (in seconds). The effective emission
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果為 ``true``\ ，則粒子使用父節點的座標空間（稱為局部座標）。這將導致粒子在移動或旋轉時沿著 **GPUParticles2D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **GPUParticles2D** 節點（及其父節點）移動或旋轉。
+如果為 ``true``\ ，則粒子使用父節點的座標空間（稱為區域座標）。這將導致粒子在移動或旋轉時沿著 **GPUParticles2D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **GPUParticles2D** 節點（及其父節點）移動或旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -476,9 +476,9 @@ The amount of time each particle will exist (in seconds). The effective emission
 - |void| **set_pre_process_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_process_time**\ (\ )
 
-Particle system starts as if it had already run for this many seconds.
+粒子系統啟動時彷彿已經執行了這麼多秒。
 
-\ **Note:** This can be very expensive if set to a high number as it requires running the particle shader a number of times equal to the :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` (or 30, if :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` is 0) for every second. In extreme cases it can even lead to a GPU crash due to the volume of work done in a single frame.
+\ **注意：**\ 如果設定為較高的數字可能會非常耗費資源，因為它需要每秒執行與 :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` 相等次數的粒子著色器（如果 :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` 為 0 則為 30 次）。在極端情況下，這甚至可能導致 GPU 崩潰，因為在單個影格中完成的工作量過大。
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Particle system starts as if it had already run for this many seconds.
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Sets the random seed used by the particle system. Only effective if :ref:`use_fixed_seed<class_GPUParticles2D_property_use_fixed_seed>` is ``true``.
+設定粒子系統所使用的隨機數種子。僅在 :ref:`use_fixed_seed<class_GPUParticles2D_property_use_fixed_seed>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -563,9 +563,9 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_sub_emitter**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_sub_emitter**\ (\ )
 
-Path to another **GPUParticles2D** node that will be used as a subemitter (see :ref:`ParticleProcessMaterial.sub_emitter_mode<class_ParticleProcessMaterial_property_sub_emitter_mode>`). Subemitters can be used to achieve effects such as fireworks, sparks on collision, bubbles popping into water drops, and more.
+到將被用作子發射器（請參閱 :ref:`ParticleProcessMaterial.sub_emitter_mode<class_ParticleProcessMaterial_property_sub_emitter_mode>`\ ）的另一個 **GPUParticles2D** 節點的路徑。子發射器可被用於實現煙花、碰撞火花、氣泡彈出水滴等效果。
 
-\ **Note:** When :ref:`sub_emitter<class_GPUParticles2D_property_sub_emitter>` is set, the target **GPUParticles2D** node will no longer emit particles on its own.
+\ **注意：**\ 當 :ref:`sub_emitter<class_GPUParticles2D_property_sub_emitter>` 被設定時，該目標 **GPUParticles2D** 節點將不再自行發射粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -582,9 +582,9 @@ Path to another **GPUParticles2D** node that will be used as a subemitter (see :
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-Particle texture. If ``null``, particles will be squares with a size of 1×1 pixels.
+粒子紋理。如果為 ``null``\ ，則粒子將是大小為 1×1 像素的正方形。
 
-\ **Note:** To use a flipbook texture, assign a new :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` to the **GPUParticles2D**'s :ref:`CanvasItem.material<class_CanvasItem_property_material>` property, then enable :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>` and set :ref:`CanvasItemMaterial.particles_anim_h_frames<class_CanvasItemMaterial_property_particles_anim_h_frames>`, :ref:`CanvasItemMaterial.particles_anim_v_frames<class_CanvasItemMaterial_property_particles_anim_v_frames>`, and :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` to match the flipbook texture.
+\ **注意：**\ 要使用翻頁紋理，請將新的 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` 分配給 **GPUParticles2D** 的 :ref:`CanvasItem.material<class_CanvasItem_property_material>` 屬性，然後啟用 :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>` 並設定 :ref:`CanvasItemMaterial.particles_anim_h_frames<class_CanvasItemMaterial_property_particles_anim_h_frames>`\ 、\ :ref:`CanvasItemMaterial.particles_anim_v_frames<class_CanvasItemMaterial_property_particles_anim_v_frames>` 和 :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` 來匹配該翻頁紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_section_subdivisions**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_trail_section_subdivisions**\ (\ )
 
-用於粒子尾跡算繪的細分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲性能。另見 :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
+用於粒子尾跡渲染的細分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲效能。另見 :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_sections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_trail_sections**\ (\ )
 
-用於粒子軌跡算繪的部分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲性能。另見 :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
+用於粒子軌跡渲染的部分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲效能。另見 :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_use_fixed_seed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_fixed_seed**\ (\ )
 
-If ``true``, particles will use the same seed for every simulation using the seed defined in :ref:`seed<class_GPUParticles2D_property_seed>`. This is useful for situations where the visual outcome should be consistent across replays, for example when using Movie Maker mode.
+如果為 ``true``\ ，則每次模擬中粒子會使用 :ref:`seed<class_GPUParticles2D_property_seed>` 中定義的種子。適用於需要在重放時保持視覺效果一致的情況，例如使用 Movie Maker 模式時。
 
 .. rst-class:: classref-item-separator
 
@@ -709,7 +709,7 @@ If ``true``, particles will use the same seed for every simulation using the see
 
 傳回一個包含所有現有粒子位置的矩形。
 
-\ **注意：** 當使用執行緒算繪時，此方法會同步算繪執行緒。經常呼叫可能會對效能產生負面影響。
+\ **注意：** 當使用執行緒渲染時，此方法會同步渲染執行緒。經常呼叫可能會對效能產生負面影響。
 
 .. rst-class:: classref-item-separator
 
@@ -733,11 +733,11 @@ If ``true``, particles will use the same seed for every simulation using the see
 
 |void| **emit_particle**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`, velocity\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, custom\: :ref:`Color<class_Color>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GPUParticles2D_method_emit_particle>`
 
-Emits a single particle. Whether ``xform``, ``velocity``, ``color`` and ``custom`` are applied depends on the value of ``flags``. See :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`.
+發射單個粒子。是否應用 ``xform``\ 、\ ``velocity``\ 、\ ``color`` 和 ``custom`` 取決於 ``flags`` 的值。見 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`\ 。
 
-The default ParticleProcessMaterial will overwrite ``color`` and use the contents of ``custom`` as ``(rotation, age, animation, lifetime)``.
+預設的 ParticleProcessMaterial 會覆蓋 ``color``\ ，使用 ``custom`` 的內容作為 ``(rotation, age, animation, lifetime)``\ 。
 
-\ **Note:** :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` is only supported on the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` 只有 Forward+ 和 Mobile 渲染方法支援，Compatibility 不支援。
 
 .. rst-class:: classref-item-separator
 
@@ -749,9 +749,9 @@ The default ParticleProcessMaterial will overwrite ``color`` and use the content
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_GPUParticles2D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+請求粒子在單影格內額外處理指定的時間。
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` 定義了粒子在發射（emitting）開啟狀態下將要模擬的時間。\ ``process_time_residual`` 定義了粒子在發射關閉狀態下，為了維持模擬效果將要額外處理的時間。當把 :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>` 設定為 ``0.0`` 並結合使用時，這個方法非常適用於對粒子系統的時間軸進行‘搜尋’（seek，即跳轉到特定時間點）。
 
 .. rst-class:: classref-item-separator
 
@@ -763,11 +763,11 @@ Requests the particles to process for extra process time during a single frame.
 
 |void| **restart**\ (\ keep_seed\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_GPUParticles2D_method_restart>`
 
-Restarts the particle emission cycle, clearing existing particles. To avoid particles vanishing from the viewport, wait for the :ref:`finished<class_GPUParticles2D_signal_finished>` signal before calling.
+重新開始粒子發射週期，清除現存粒子。要避免粒子從視埠中憑空消失，請在呼叫前等待 :ref:`finished<class_GPUParticles2D_signal_finished>` 訊號。
 
-\ **Note:** The :ref:`finished<class_GPUParticles2D_signal_finished>` signal is only emitted by :ref:`one_shot<class_GPUParticles2D_property_one_shot>` emitters.
+\ **注意：**\ 只有 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 的發射器會發出 :ref:`finished<class_GPUParticles2D_signal_finished>` 訊號。
 
-If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful for seeking and playback.
+如果 ``keep_seed`` 為 ``true``\ ，則會保留目前的隨機數種子。適用於跳轉播放。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

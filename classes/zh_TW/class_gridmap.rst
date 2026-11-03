@@ -23,7 +23,7 @@ GridMap 使用一個包含圖塊列表的 :ref:`MeshLibrary<class_MeshLibrary>`\
 
 GridMap 包含一組儲存格。每個柵格儲存格引用 :ref:`MeshLibrary<class_MeshLibrary>` 中的一個圖塊。地圖中的所有儲存格都具有相同的大小。
 
-在內部，GridMap 會根據卦限進行拆分，形成卦限的稀疏合集，能夠進行高效的算繪和物理處理。每個卦限的大小是相同的，可以包含多個儲存格。
+在內部，GridMap 會根據卦限進行拆分，形成卦限的稀疏合集，能夠進行高效的渲染和物理處理。每個卦限的大小是相同的，可以包含多個儲存格。
 
 \ **注意：**\ GridMap 不是從 :ref:`VisualInstance3D<class_VisualInstance3D>` 擴充的，因此不能基於 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 隱藏或剔除遮罩。如果使燈光不影響第一層，則整個 GridMap 將不會被該燈光照亮。
 
@@ -194,7 +194,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_GridMap_DebugVisibilityMode>`
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` or :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
+在編輯器中隱藏碰撞除錯形狀，並使用除錯設定來決定它們在遊戲內的可見性（例如 :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 或 :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`\ ）。
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -202,7 +202,7 @@ Hide the collisions debug shapes in the editor, and use the debug settings to de
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-Always show the collisions debug shapes.
+始終顯示碰撞除錯形狀。
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -210,7 +210,7 @@ Always show the collisions debug shapes.
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-Always hide the collisions debug shapes.
+始終隱藏碰撞除錯形狀。
 
 .. rst-class:: classref-section-separator
 
@@ -425,7 +425,7 @@ GridMap 作為靜態體，意味著它們不會受到重力或是其他力的影
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
+顯示或隱藏 **GridMap** 的碰撞形狀（collision shapes）。如果設定為 :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`\ ，則取決於“顯示碰撞除錯”（show collision debug）的全域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +500,7 @@ Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILIT
 
 :ref:`RID<class_RID>` **get_bake_mesh_instance**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GridMap_method_get_bake_mesh_instance>`
 
-返回是否存在帶有給定 ID 的節點。
+回傳索引為 ``idx`` 的烘焙網格的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -512,9 +512,9 @@ Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILIT
 
 :ref:`Array<class_Array>` **get_bake_meshes**\ (\ ) :ref:`🔗<class_GridMap_method_get_bake_meshes>`
 
-Returns an array of :ref:`ArrayMesh<class_ArrayMesh>`\ es and :ref:`Transform3D<class_Transform3D>` references of all bake meshes that exist within the current GridMap. Even indices contain :ref:`ArrayMesh<class_ArrayMesh>`\ es, while odd indices contain :ref:`Transform3D<class_Transform3D>`\ s that are always equal to :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`.
+回傳目前 GridMap 中存在的已烘焙網格陣列，元素為 :ref:`ArrayMesh<class_ArrayMesh>` 和 :ref:`Transform3D<class_Transform3D>`\ 。奇數索引為 :ref:`ArrayMesh<class_ArrayMesh>`\ ，偶數索引為 :ref:`Transform3D<class_Transform3D>`\ ，始終等於 :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`\ 。
 
-This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`, which will be called with ``gen_lightmap_uv`` set to ``true`` and ``lightmap_uv_texel_size`` set to ``0.1`` if it hasn't been called yet.
+這個方法取決於 :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>` 的輸出，如果尚未呼叫，則會使用 ``gen_lightmap_uv`` 為 ``true``\ 、\ ``lightmap_uv_texel_size`` 為 ``0.1`` 進行呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_meth
 
 :ref:`Array<class_Array>` **get_meshes**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_meshes>`
 
-Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_Mesh>` references corresponding to the non-empty cells in the grid. The transforms are specified in local space. Even indices contain :ref:`Transform3D<class_Transform3D>`\ s, while odd indices contain :ref:`Mesh<class_Mesh>`\ es related to the :ref:`Transform3D<class_Transform3D>` in the index preceding it.
+回傳與柵格中非空單元格對應的陣列，元素為 :ref:`Transform3D<class_Transform3D>` 和 :ref:`Mesh<class_Mesh>` 參照。變換在區域空間中指定。奇數索引為 :ref:`Transform3D<class_Transform3D>`\ ，偶數索引為 :ref:`Mesh<class_Mesh>`\ ，與前一個索引處的 :ref:`Transform3D<class_Transform3D>` 對應。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_M
 
 :ref:`Vector3i<class_Vector3i>` **get_octant_coords_from_cell_coords**\ (\ cell_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octant_coords_from_cell_coords>`
 
-Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant that the cell at ``cell_coords`` belongs to.
+回傳 ``cell_coords``\ （單元格座標）所在的八分體（octant）的 :ref:`Vector3i<class_Vector3i>`\ （三維整數向量）座標。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant tha
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are inside the given ``bounds``, including octants that have no cells in use.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 卦限座標的陣列，這些卦限位於給定的 ``bounds`` 範圍內，包括那些未被使用的單元格所在的卦限。
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are 
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of non-empty cells inside the octant at ``octant_coords``.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 的陣列，其中包含位於 ``octant_coords``\ （八分體座標）處的八分體（octant）內所有非空單元格的座標。
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant_by_item**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of cells inside the octant at ``octant_coords`` that use the specified cell ``item``.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 的陣列， 表示位於 ``octant_coords`` 指定卦限內、且使用了指定單元格 ``item`` 的單元格座標。
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the non-empty octants in the grid map.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 的陣列，其中包含網格地圖（grid map）中所有非空八分體（octant）的座標。
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_by_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the octants that use the specified ``item`` in the grid map.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 的陣列，其中包含網格地圖（grid map）中所有使用了指定 ``item``\ （物品）的八分體（octant）的座標。
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of non-empty octants that are inside the local ``bounds``.
+回傳一個包含 :ref:`Vector3i<class_Vector3i>` 的陣列，其中包含在區域 ``bounds``\ （邊界範圍）內、所有非空八分體（octant）的座標。
 
 .. rst-class:: classref-item-separator
 
@@ -756,9 +756,9 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 |void| **make_baked_meshes**\ (\ gen_lightmap_uv\: :ref:`bool<class_bool>` = false, lightmap_uv_texel_size\: :ref:`float<class_float>` = 0.1\ ) :ref:`🔗<class_GridMap_method_make_baked_meshes>`
 
-Generates a baked mesh that represents all meshes in the assigned :ref:`MeshLibrary<class_MeshLibrary>` for use with :ref:`LightmapGI<class_LightmapGI>`. If ``gen_lightmap_uv`` is ``true``, UV2 data will be generated for each mesh currently used in the **GridMap**. Otherwise, only meshes that already have UV2 data present will be able to use baked lightmaps. When generating UV2, ``lightmap_uv_texel_size`` controls the texel density for lightmaps, with lower values resulting in more detailed lightmaps. ``lightmap_uv_texel_size`` is ignored if ``gen_lightmap_uv`` is ``false``. See also :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`, which relies on the output of this method.
+生成一個烘焙網格，該網格表示分配給 :ref:`MeshLibrary<class_MeshLibrary>` 的所有網格，會與 :ref:`LightmapGI<class_LightmapGI>` 一起使用。如果 ``gen_lightmap_uv`` 為 ``true``\ ，則將為目前在 **GridMap** 中使用的每個網格生成 UV2 資料。否則，只有已經存在 UV2 資料的網格才能使用烘焙光照貼圖。在生成 UV2 時，\ ``lightmap_uv_texel_size`` 控制的是光照貼圖的紋素密度，值越低得到的光照貼圖越詳細。如果 ``gen_lightmap_uv`` 為 ``false``\ ，則會忽略 ``lightmap_uv_texel_size``\ 。另見 :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`\ ，相依性本方法的輸出。
 
-\ **Note:** Calling this method will not actually bake lightmaps, as lightmap baking is performed using the :ref:`LightmapGI<class_LightmapGI>` node.
+\ **注意：**\ 呼叫該方法並不會對光照貼圖進行烘焙，因為光照貼圖是使用 :ref:`LightmapGI<class_LightmapGI>` 節點烘焙的。
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ Generates a baked mesh that represents all meshes in the assigned :ref:`MeshLibr
 
 :ref:`Vector3<class_Vector3>` **map_to_local**\ (\ map_position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_map_to_local>`
 
-Returns the position of a grid cell in the GridMap's local coordinate space. To convert the returned value into global coordinates, use :ref:`Node3D.to_global()<class_Node3D_method_to_global>`. See also :ref:`local_to_map()<class_GridMap_method_local_to_map>`.
+回傳柵格單元格在 GridMap 的區域座標空間中的位置。要將回傳值轉換為全域座標，請使用 :ref:`Node3D.to_global()<class_Node3D_method_to_global>`\ 。另見 :ref:`local_to_map()<class_GridMap_method_local_to_map>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ Returns the position of a grid cell in the GridMap's local coordinate space. To 
 
 **已棄用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-This method does nothing.
+這個方法甚麼也不做。
 
 .. rst-class:: classref-item-separator
 
@@ -812,7 +812,7 @@ This method does nothing.
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GridMap_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_GridMap_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_GridMap_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -824,7 +824,7 @@ This method does nothing.
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GridMap_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_GridMap_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_GridMap_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

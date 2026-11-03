@@ -878,7 +878,7 @@ enum **ImageUnit**: :ref:`🔗<enum_RichTextLabel_ImageUnit>`
 - |void| **set_meta_underline**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_meta_underlined**\ (\ )
 
-Якщо ``true``, позначки етикеток, такі як ``код пропустити-lint``\ url{text}/url[/code]. Ці теги можуть викликати функцію при натисканні, якщо [signal meta_clicked] підключено до функції.
+Якщо ``true``, мітка підкреслює метатеги, такі як ``[url]{text}[/url]``. Ці теги можуть викликати функцію при натисканні, якщо :ref:`meta_clicked<class_RichTextLabel_signal_meta_clicked>` підключено до функції.
 
 .. rst-class:: classref-item-separator
 
@@ -1853,7 +1853,7 @@ enum **ImageUnit**: :ref:`🔗<enum_RichTextLabel_ImageUnit>`
 
 |void| **push_bold**\ (\ ) :ref:`🔗<class_RichTextLabel_method_push_bold>`
 
-Додає тег ``код пропустити-lint``\ ``font``\ `` з сміливим шрифтом до мітки. Це те ж, що додавання [code skip-lint][b]`` тег, якщо не в даний час в ``коді пропустити-lint``\ *[/code] тег.
+Додає до стеку тегів тег ``[font]`` з жирним шрифтом. Це еквівалентно додаванню тегу ``[b]``, якщо в даний момент не перебуваєте всередині тегу ``[i]``.
 
 .. rst-class:: classref-item-separator
 

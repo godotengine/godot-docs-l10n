@@ -108,9 +108,9 @@ PrimitiveMesh
 - |void| **set_flip_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flip_faces**\ (\ )
 
-If ``true``, the order of the vertices in each triangle is reversed, resulting in the backside of the mesh being drawn.
+如果為 ``true``\ ，則會顛倒各個三角形中頂點的順序，導致繪製網格的背面。
 
-This gives the same result as using :ref:`BaseMaterial3D.CULL_FRONT<class_BaseMaterial3D_constant_CULL_FRONT>` in :ref:`BaseMaterial3D.cull_mode<class_BaseMaterial3D_property_cull_mode>`.
+和在 :ref:`BaseMaterial3D.cull_mode<class_BaseMaterial3D_property_cull_mode>` 中使用 :ref:`BaseMaterial3D.CULL_FRONT<class_BaseMaterial3D_constant_CULL_FRONT>` 的效果一致。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ This gives the same result as using :ref:`BaseMaterial3D.CULL_FRONT<class_BaseMa
 
 :ref:`Array<class_Array>` **_create_mesh_array**\ (\ ) |virtual| |const| :ref:`🔗<class_PrimitiveMesh_private_method__create_mesh_array>`
 
-Override this method to customize how this primitive mesh should be generated. Should return an :ref:`Array<class_Array>` where each element is another Array of values required for the mesh (see the :ref:`ArrayType<enum_Mesh_ArrayType>` constants).
+覆寫該方法以自訂應如何生成該基本網格。應該回傳一個 :ref:`Array<class_Array>`\ ，其中每個元素都是該網格所需的另一個值陣列（請參閱 :ref:`ArrayType<enum_Mesh_ArrayType>` 常數）。
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +175,9 @@ Override this method to customize how this primitive mesh should be generated. S
 
 :ref:`Array<class_Array>` **get_mesh_arrays**\ (\ ) |const| :ref:`🔗<class_PrimitiveMesh_method_get_mesh_arrays>`
 
-Returns the mesh arrays used to make up the surface of this primitive mesh.
+回傳用於構成圖元網格表面的網格陣列。
 
-\ **Example:** Pass the result to :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` to create a new surface:
+\ **範例：**\ 將結果可以傳遞給 :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` 建立新的表面：
 
 
 .. tabs::
@@ -206,7 +206,7 @@ Returns the mesh arrays used to make up the surface of this primitive mesh.
 
 |void| **request_update**\ (\ ) :ref:`🔗<class_PrimitiveMesh_method_request_update>`
 
-Request an update of this primitive mesh based on its properties.
+請求根據其屬性更新該基本網格。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

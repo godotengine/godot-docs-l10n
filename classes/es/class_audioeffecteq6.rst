@@ -7,9 +7,9 @@ AudioEffectEQ6
 
 **Hereda:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a 6-band equalizer audio effect to an audio bus.
+Añade un efecto de ecualizador de audio de 6 bandas a un bus de audio.
 
-Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be modulated between -60/+24 dB.
+Permite controlar las frecuencias de 32 Hz a 10 000 Hz. El nivel de cada frecuencia se puede ajustar entre −60 y +24 dB.
 
 .. rst-class:: classref-introduction-group
 

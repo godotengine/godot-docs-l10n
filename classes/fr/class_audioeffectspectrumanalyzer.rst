@@ -14,9 +14,9 @@ Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs 
 Description
 -----------
 
-Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
+Calcule une Transformée de Fourier du signal audio. Cet effet audio n'affecte pas la sortie sonore, mais peut être utilisé pour les visualisations de l'audio en temps réel.
 
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
+Cette ressource configure un :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>` qui effectue l'analyse durant l'exécution. Une instance devrait être obtenue avec :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` pour utiliser cet effet.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 - `Démo de visualiseur de spectre audio <https://godotengine.org/asset-library/asset/2762>`__
 

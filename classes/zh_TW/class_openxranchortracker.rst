@@ -9,14 +9,14 @@ OpenXRAnchorTracker
 
 **繼承：** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Positional tracker for our spatial entity anchor extension.
+用於我們的空間實體錨點擴充的位置追蹤器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Positional tracker for our OpenXR spatial entity anchor extension, it tracks a user defined location in real space and maps it to our virtual space.
+我們的 OpenXR 空間實體錨點擴充的位置追蹤器，它可以追蹤使用者在現實空間中定義的位置，並將其映射到我們的虛擬空間。
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ Positional tracker for our OpenXR spatial entity anchor extension, it tracks a u
 
 **uuid_changed**\ (\ ) :ref:`🔗<class_OpenXRAnchorTracker_signal_uuid_changed>`
 
-Emitted when the UUID for this anchor was changed.
+當該錨點的 UUID 發生更改時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -79,7 +79,7 @@ Emitted when the UUID for this anchor was changed.
 - |void| **set_uuid**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uuid**\ (\ )
 
-The UUID provided for persistent anchors.
+為持久錨點提供的 UUID。
 
 .. rst-class:: classref-section-separator
 
@@ -96,7 +96,7 @@ The UUID provided for persistent anchors.
 
 :ref:`bool<class_bool>` **has_uuid**\ (\ ) |const| :ref:`🔗<class_OpenXRAnchorTracker_method_has_uuid>`
 
-Returns ``true`` if a non-zero UUID is set.
+如果設定了非零的 UUID，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

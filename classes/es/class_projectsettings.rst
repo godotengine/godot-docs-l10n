@@ -27,7 +27,7 @@ When naming a Project Settings property, use the full path to the setting includ
 Tutoriales
 --------------------
 
-- :doc:`Ajustes del Proyecto <../tutorials/editor/project_settings>`
+- :doc:`Configuración del proyecto <../tutorials/editor/project_settings>`
 
 - `Demo de Pruebas de Física en 3D <https://godotengine.org/asset-library/asset/2747>`__
 
@@ -3065,13 +3065,13 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Dictionary<class_Dictionary>` **debug/gdscript/warnings/directory_rules** = ``{ "res://addons": 0 }`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/directory_rules>`
 
-The rules for including or excluding scripts when generating warnings, as a dictionary. Each rule is an entry consisting of a directory path (key) and a decision (value). When trying to generate a warning, the GDScript parser chooses the most specific rule, i.e. the most nested directory containing the script. If the decision is **Exclude**, warnings are not generated for this script. If the decision is **Include** or the script doesn't satisfy any of the rules, the warning configuration specified in the Project Settings is applied.
+Las reglas para incluir o excluir scripts al generar advertencias, expresadas como un diccionario. Cada regla es una entrada compuesta por una ruta de directorio (clave) y una decisión (valor). Al intentar generar una advertencia, el analizador de GDScript elige la regla más específica, es decir, la del directorio más anidado que contiene el script. Si la decisión es **Exclude**, no se generan advertencias para ese script. Si la decisión es **Include** o el script no cumple ninguna de las reglas, se aplica la configuración de advertencias especificada en los Ajustes del proyecto.
 
-It is recommended to include your own addons/libraries, either project-specific or actively being developed at the moment. Third-party or project-agnostic addons/libraries should be excluded, as they may be incompatible with the project's warning configuration.
+Se recomienda incluir tus propios complementos y bibliotecas, ya sean específicos del proyecto o que estén en desarrollo activo. Los complementos y bibliotecas de terceros o independientes del proyecto deberían excluirse, ya que podrían ser incompatibles con la configuración de advertencias del proyecto.
 
-\ **Note:** It is not recommended to remove or change the rule for ``"res://addons"`` as the project's warning configuration may break third-party addons. Instead, consider including individual addons, if necessary.
+\ **Nota:** No se recomienda eliminar ni cambiar la regla para ``"res://addons"``, ya que la configuración de advertencias del proyecto podría afectar al funcionamiento de complementos de terceros. En su lugar, considera incluir complementos individuales si es necesario.
 
-\ **Note:** The editor does not check whether the specified paths are existing directories. It also does not automatically update these paths when directories are moved.
+\ **Nota:** El editor no comprueba si las rutas especificadas corresponden a directorios existentes. Tampoco actualiza automáticamente estas rutas cuando se mueven los directorios.
 
 .. rst-class:: classref-item-separator
 
@@ -5377,7 +5377,7 @@ La calidad de codificación de vídeo que se utilizará al escribir un vídeo Th
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_name** = ``"_on_{node_name}_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_name>`
 
-El formato del nombre de la callback de señal por defecto (en el Diálogo de Conexión de Señal). Las siguientes sustituciones están disponibles: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, y ``{signal_name}``.
+El formato del nombre del callback de señal por defecto (en el Diálogo de Conexión de Señal). Las siguientes sustituciones están disponibles: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, y ``{signal_name}``.
 
 .. rst-class:: classref-item-separator
 
@@ -5389,7 +5389,7 @@ El formato del nombre de la callback de señal por defecto (en el Diálogo de Co
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_to_self_name** = ``"_on_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_to_self_name>`
 
-The format of the default signal callback name when a signal connects to the same node that emits it (in the Signal Connection Dialog). The following substitutions are available: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, and ``{signal_name}``.
+El formato del nombre del callback de señal por defecto cuando una señal se conecta al mismo nodo que la emite (en el Diálogo de Conexión de Señal). Las siguientes sustituciones están disponibles: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, y ``{signal_name}``.
 
 .. rst-class:: classref-item-separator
 
@@ -6311,7 +6311,7 @@ Sobrescritura específica de macOS para el atajo de teclado para seguir una cone
 
 :ref:`InputEventAction<class_InputEventAction>` predeterminado para pegar desde el portapapeles.
 
-\ **Note:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6797,7 +6797,7 @@ En caso de que haya más de un cursor activo, elimina los cursores secundarios y
 
 :ref:`InputEventAction<class_InputEventAction>` predeterminado para aceptar una sugerencia de autocompletado, reemplazando el texto existente.
 
-\ **Note:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -7393,7 +7393,7 @@ See `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/cs
 
 Si no está vacío, esta configuración regional se utilizará en lugar de la configuración regional del sistema detectada automáticamente.
 
-\ **Nota:** Esta configuración también se aplica al proyecto exportado. Para afectar solo las pruebas dentro del editor, anula esta configuración con una :doc:`etiqueta de característica <../tutorials/export/feature_tags>` ``editor`` para fines de prueba de localización.
+\ **Nota:** Esta configuración también se aplica al proyecto exportado. Para afectar solo las pruebas dentro del editor, sobrescribe esta configuración con una :doc:`etiqueta de característica <../tutorials/export/feature_tags>` ``editor`` para fines de prueba de localización.
 
 .. rst-class:: classref-item-separator
 
@@ -12203,7 +12203,7 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_angle** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`
 
-Si es ``true``, el renderizador de Compatibilidad recurrirá a ANGLE si OpenGL nativo no es compatible o si el dispositivo aparece en :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
+Si es ``true``, el renderizador Compatibility recurrirá a ANGLE si OpenGL nativo no es compatible o si el dispositivo aparece en :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
 
 \ **Nota:** Este ajuste solo se implementa en Windows.
 
@@ -12217,7 +12217,7 @@ Si es ``true``, el renderizador de Compatibilidad recurrirá a ANGLE si OpenGL n
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_gles** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>`
 
-Si es ``true``, el renderizador de Compatibilidad recurrirá a OpenGLES si OpenGL de escritorio no es compatible.
+Si es ``true``, el renderizador Compatibility recurrirá a OpenGLES si OpenGL de escritorio no es compatible.
 
 \ **Nota:** Este ajuste solo se implementa en Linux/X11.
 
@@ -12777,11 +12777,11 @@ Enables the use of physically based units for light sources. Physically based un
 
 :ref:`float<class_float>` **rendering/limits/cluster_builder/max_clustered_elements** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
 
-The maximum number of clustered elements (:ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`) that can be rendered at once in the camera view. If there are more clustered elements present in the camera view, some of them will not be rendered (leading to pop-in during camera movement). Enabling distance fade on lights and decals (:ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`, :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`) can help avoid reaching this limit.
+El número máximo de elementos agrupados en clústeres (:ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`) que se pueden renderizar simultáneamente en la vista de la cámara. Si hay más elementos agrupados en clústeres en la vista de la cámara, algunos no se renderizarán (lo que provocará que aparezcan repentinamente al mover la cámara). Activar la atenuación por distancia en las luces y los decals (:ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`, :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`) puede ayudar a evitar alcanzar este límite.
 
-Decreasing this value may improve GPU performance on certain setups, even if the maximum number of clustered elements is never reached in the project.
+Reducir este valor puede mejorar el rendimiento de la GPU en determinadas configuraciones, incluso si el proyecto nunca alcanza el número máximo de elementos agrupados en clústeres.
 
-\ **Note:** This setting is only effective when using the Forward+ rendering method, not Mobile and Compatibility.
+\ **Nota:** Este ajuste solo tiene efecto con el método de renderizado Forward+, no con Mobile ni Compatibility.
 
 .. rst-class:: classref-item-separator
 
@@ -13735,15 +13735,15 @@ La calidad de filtrado a utilizar para los nodos :ref:`Decal<class_Decal>`. Cuan
 
 :ref:`int<class_int>` **rendering/textures/default_filters/anisotropic_filtering_level** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`
 
-Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
+Establece el número máximo de muestras que se tomarán al utilizar el filtrado anisotrópico en las texturas (como potencia de dos). Un mayor número de muestras dará lugar a texturas más nítidas en ángulos oblicuos, pero requerirá más recursos de cálculo. Un valor de ``0`` desactiva por completo el filtrado anisotrópico, incluso en los materiales en los que esté habilitado.
 
-The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+El nivel de filtrado anisotrópico también afecta a los decals y a los proyectores de luz si están configurados para utilizar este tipo de filtrado. Consulta :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` y :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
 
-\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
+\ **Nota:** En 3D, para que este ajuste tenga efecto, establece :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` en :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en los materiales.
 
-\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
+\ **Nota:** En 2D, para que este ajuste tenga efecto, establece :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` en :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en el nodo :ref:`CanvasItem<class_CanvasItem>` que muestra la textura (o en :ref:`CanvasTexture<class_CanvasTexture>`). Sin embargo, el filtrado anisotrópico rara vez resulta útil en 2D, por lo que solo debes habilitarlo para texturas 2D si supone una diferencia visual significativa.
 
-\ **Note:** This property is only read when the project starts. To change the anisotropic filtering level at runtime, set :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **Nota:** Esta propiedad solo se lee al iniciar el proyecto. Para cambiar el nivel de filtrado anisotrópico durante la ejecución, establece :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>` en el :ref:`Viewport<class_Viewport>` raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -14635,7 +14635,7 @@ Similar to :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, but a
 
 :ref:`Variant<class_Variant>` **get_setting_with_override_and_custom_features**\ (\ name\: :ref:`StringName<class_StringName>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting_with_override_and_custom_features>`
 
-Similar a :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`, pero aplica anulaciones de etiquetas de características en lugar de características del sistema operativo actual.
+Similar a :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`, pero aplica sobrescrituras de etiquetas de características en lugar de características del sistema operativo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -14757,7 +14757,7 @@ Defines if the specified setting is considered basic or advanced. Basic settings
 
 |void| **set_as_internal**\ (\ name\: :ref:`String<class_String>`, internal\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_as_internal>`
 
-Defines if the specified setting is considered internal. An internal setting won't show up in the Project Settings dialog. This is mostly useful for addons that need to store their own internal settings without exposing them directly to the user.
+Define si el ajuste especificado se considera interno. Un ajuste interno no aparecerá en el cuadro de diálogo de Ajustes del proyecto. Esto resulta especialmente útil para los complementos que necesitan almacenar sus propios ajustes internos sin exponerlos directamente al usuario.
 
 .. rst-class:: classref-item-separator
 
@@ -14769,7 +14769,7 @@ Defines if the specified setting is considered internal. An internal setting won
 
 |void| **set_initial_value**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_initial_value>`
 
-Sets the specified setting's initial value. This is the value the setting reverts to. The setting should already exist before calling this method. Note that project settings equal to their default value are not saved, so your code needs to account for that.
+Establece el valor inicial del ajuste especificado. Este es el valor al que se restablece el ajuste. El ajuste ya debe existir antes de llamar a este método. Ten en cuenta que los ajustes del proyecto que tienen el mismo valor que su valor predeterminado no se guardan, por lo que tu código debe tenerlo en cuenta.
 
 ::
 
@@ -14784,7 +14784,7 @@ Sets the specified setting's initial value. This is the value the setting revert
 
         ProjectSettings.set_initial_value(SETTING_NAME, SETTING_DEFAULT)
 
-If you have a project setting defined by an :ref:`EditorPlugin<class_EditorPlugin>`, but want to use it in a running project, you will need a similar code at runtime.
+Si tienes un ajuste del proyecto definido por un :ref:`EditorPlugin<class_EditorPlugin>`, pero quieres utilizarlo en un proyecto en ejecución, necesitarás un código similar durante la ejecución.
 
 .. rst-class:: classref-item-separator
 

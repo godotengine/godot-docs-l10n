@@ -37,7 +37,7 @@ RigidBody3D
 
 - :doc:`Вирішення проблем з фізики <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `3Д Вантажівка Таун Демо <https://godotengine.org/asset-library/asset/2752>`__
+- `3Д Вантажівка Таун Демо <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 - `Демонстрація тестів з 3D-фізики <https://godotengine.org/asset-library/asset/2747>`__
 

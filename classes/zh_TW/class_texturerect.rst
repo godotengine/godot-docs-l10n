@@ -132,9 +132,9 @@ enum **StretchMode**: :ref:`🔗<enum_TextureRect_StretchMode>`
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile inside the node's bounding rectangle.
+在節點的邊界矩形內平鋪。
 
-\ **Note:** :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>` mode is not supported for :ref:`texture<class_TextureRect_property_texture>` set to an :ref:`AtlasTexture<class_AtlasTexture>` with non-zero :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`.
+\ **注意：**\ 當\ :ref:`texture<class_TextureRect_property_texture>`\ 被設定為\ :ref:`AtlasTexture<class_AtlasTexture>`\ 且其\ :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`\ 非零時，不支援\ :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>`\ 模式。
 
 .. _class_TextureRect_constant_STRETCH_KEEP:
 
@@ -198,7 +198,7 @@ Tile inside the node's bounding rectangle.
 
 **實驗性：** Using :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>`, :ref:`EXPAND_FIT_WIDTH_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_WIDTH_PROPORTIONAL>`, :ref:`EXPAND_FIT_HEIGHT<class_TextureRect_constant_EXPAND_FIT_HEIGHT>`, or :ref:`EXPAND_FIT_HEIGHT_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_HEIGHT_PROPORTIONAL>` may result in unstable behavior in some :ref:`Container<class_Container>` controls. This behavior may be re-evaluated and changed in the future.
 
-Defines how minimum size is determined based on the texture's size.
+定義如何根據紋理的大小確定最小大小。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Defines how minimum size is determined based on the texture's size.
 - |void| **set_stretch_mode**\ (\ value\: :ref:`StretchMode<enum_TextureRect_StretchMode>`\ )
 - :ref:`StretchMode<enum_TextureRect_StretchMode>` **get_stretch_mode**\ (\ )
 
-Controls the texture's behavior when resizing the node's bounding rectangle.
+控制項紋理在調整節點邊界矩形時的行為。
 
 .. rst-class:: classref-item-separator
 

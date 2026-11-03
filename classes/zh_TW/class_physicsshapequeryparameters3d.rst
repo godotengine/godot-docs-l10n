@@ -7,14 +7,14 @@ PhysicsShapeQueryParameters3D
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides parameters for :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`'s methods.
+為 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` 的方法提供參數。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-By changing various properties of this object, such as the shape, you can configure the parameters for :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`'s methods.
+可以通過修改這個物件的形狀等屬性來為 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` 的方法設定參數。
 
 .. rst-class:: classref-reftable-group
 
@@ -98,7 +98,7 @@ By changing various properties of this object, such as the shape, you can config
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-查詢將偵測的實體層（作為位元遮罩）。預設情況下，會偵測所有碰撞層。有關詳細信息，請參閱文件中的 `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+查詢將偵測的實體層（作為位元遮罩）。預設情況下，會偵測所有碰撞層。有關詳細資訊，請參閱文件中的 `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -115,9 +115,9 @@ By changing various properties of this object, such as the shape, you can config
 - |void| **set_exclude**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude**\ (\ )
 
-The list of object :ref:`RID<class_RID>`\ s that will be excluded from collisions. Use :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`CollisionObject3D<class_CollisionObject3D>`-derived node.
+將被排除在碰撞之外的物件的 :ref:`RID<class_RID>` 清單。請使用 :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>` 來取得與派生自 :ref:`CollisionObject3D<class_CollisionObject3D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
+\ **注意：**\ 回傳的陣列為副本，對其進行的修改不會更新原有屬性。更新時，請先修改回傳的陣列，然後將其重新賦值回該屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The list of object :ref:`RID<class_RID>`\ s that will be excluded from collision
 - |void| **set_shape_rid**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_shape_rid**\ (\ )
 
-The queried shape's :ref:`RID<class_RID>` that will be used for collision/intersection queries. Use this over :ref:`shape<class_PhysicsShapeQueryParameters3D_property_shape>` if you want to optimize for performance using the Servers API:
+將用於碰撞/相交查詢的形狀的 :ref:`RID<class_RID>`\ 。如果你想要使用伺服器 API 最佳化效能，請使用這個屬性而不是 :ref:`shape<class_PhysicsShapeQueryParameters3D_property_shape>`\ ：
 
 
 .. tabs::
@@ -199,9 +199,9 @@ The queried shape's :ref:`RID<class_RID>` that will be used for collision/inters
     var params = PhysicsShapeQueryParameters3D.new()
     params.shape_rid = shape_rid
 
-    # Execute physics queries here...
+    # 在此處執行物理查詢...
 
-    # Release the shape when done with physics queries.
+    # 完成物理查詢後釋放形狀。
     PhysicsServer3D.free_rid(shape_rid)
 
  .. code-tab:: csharp
@@ -213,9 +213,9 @@ The queried shape's :ref:`RID<class_RID>` that will be used for collision/inters
     var params = new PhysicsShapeQueryParameters3D();
     params.ShapeRid = shapeRid;
 
-    // Execute physics queries here...
+    // 在此處執行物理查詢...
 
-    // Release the shape when done with physics queries.
+    // 完成物理查詢後釋放形狀。
     PhysicsServer3D.FreeRid(shapeRid);
 
 

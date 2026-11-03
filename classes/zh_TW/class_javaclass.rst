@@ -7,18 +7,18 @@ JavaClass
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a class from the Java Native Interface.
+代表來自 Java 原生介面的類。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a class from the Java Native Interface. It is returned from :ref:`JavaClassWrapper.wrap()<class_JavaClassWrapper_method_wrap>`.
+代表 Java 原生介面中的類，由 :ref:`JavaClassWrapper.wrap()<class_JavaClassWrapper_method_wrap>` 回傳。
 
-\ **Note:** This class only works on Android. On any other platform, this class does nothing.
+\ **注意：**\ 該類僅適用於 Android。該類在其他平台上不執行任何操作。
 
-\ **Note:** This class is not to be confused with :ref:`JavaScriptObject<class_JavaScriptObject>`.
+\ **注意：**\ 請勿與 :ref:`JavaScriptObject<class_JavaScriptObject>` 混淆。
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Represents a class from the Java Native Interface. It is returned from :ref:`Jav
 
 :ref:`String<class_String>` **get_java_class_name**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_class_name>`
 
-Returns the Java class name.
+回傳 Java 類別名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Returns the Java class name.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_java_method_list**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_method_list>`
 
-Returns the object's Java methods and their signatures as an :ref:`Array<class_Array>` of dictionaries, in the same format as :ref:`Object.get_method_list()<class_Object_method_get_method_list>`.
+回傳該物件的 Java 方法及簽名，型別為元素為字典的陣列，格式與 :ref:`Object.get_method_list()<class_Object_method_get_method_list>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the object's Java methods and their signatures as an :ref:`Array<class_A
 
 :ref:`JavaClass<class_JavaClass>` **get_java_parent_class**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_parent_class>`
 
-Returns a **JavaClass** representing the Java parent class of this class.
+回傳代表該類的 Java 父類別的 **JavaClass**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Returns a **JavaClass** representing the Java parent class of this class.
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaClass_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+如果給定的 ``method`` 名存在於物件的 Java 方法中，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -85,7 +85,7 @@ GLTFAnimation
 - |void| **set_original_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_name**\ (\ )
 
-The original name of the animation.
+動畫的原名。
 
 .. rst-class:: classref-section-separator
 
@@ -102,9 +102,9 @@ The original name of the animation.
 
 :ref:`Variant<class_Variant>` **get_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GLTFAnimation_method_get_additional_data>`
 
-Gets additional arbitrary data in this **GLTFAnimation** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在這個 **GLTFAnimation** 實例中取得額外的任意資料。這可用於將每個節點的狀態資料儲存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中，這很重要，因為它們是無狀態的。
 
-The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is ``null``.
+參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必與 glTF 檔案中的副檔名匹配），且回傳值可以是你設定的任何值。如果沒有設定任何內容，則回傳值為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -116,9 +116,9 @@ The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtensi
 
 |void| **set_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`, additional_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GLTFAnimation_method_set_additional_data>`
 
-Sets additional arbitrary data in this **GLTFAnimation** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在這個 **GLTFAnimation** 實例中設定額外的任意資料。這可用於將每個節點的狀態資料儲存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中，這很重要，因為它們是無狀態的。
 
-The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
+第一個參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必與 glTF 檔案中的副檔名匹配），第二個參數可以是你想要的任何內容。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

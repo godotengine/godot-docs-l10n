@@ -55,7 +55,7 @@ Descripciones de Métodos
 
 |void| **focus_in**\ (\ ) :ref:`🔗<class_GodotInstance_method_focus_in>`
 
-Notifies the instance that it is now in focus.
+Notifica a la instancia que ahora tiene el foco.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Notifies the instance that it is now not in focus.
 
 :ref:`bool<class_bool>` **is_started**\ (\ ) :ref:`🔗<class_GodotInstance_method_is_started>`
 
-Returns ``true`` if this instance has been fully started.
+Devuelve ``true`` si esta instancia se ha iniciado completamente.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Runs a single iteration of the main loop. Returns ``true`` if the engine is atte
 
 |void| **pause**\ (\ ) :ref:`🔗<class_GodotInstance_method_pause>`
 
-Notifies the instance that it is going to be paused.
+Notifica a la instancia que va a ser pausada.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Notifies the instance that it is going to be paused.
 
 |void| **resume**\ (\ ) :ref:`🔗<class_GodotInstance_method_resume>`
 
-Notifies the instance that it is being resumed.
+Notifica a la instancia que se está reanudando.
 
 .. rst-class:: classref-item-separator
 

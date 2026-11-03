@@ -523,7 +523,7 @@ Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos
 
 :ref:`bool<class_bool>` **openxr_is_enabled**\ (\ check_run_in_editor\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_OpenXRAPIExtension_method_openxr_is_enabled>`
 
-Returns ``true`` if OpenXR is enabled.
+Devuelve ``true`` si OpenXR está habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Acquires the image of the provided swapchain.
 
 :ref:`int<class_int>` **openxr_swapchain_create**\ (\ create_flags\: :ref:`int<class_int>`, usage_flags\: :ref:`int<class_int>`, swapchain_format\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, sample_count\: :ref:`int<class_int>`, array_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_create>`
 
-Returns a pointer to a new swapchain created using the provided parameters.
+Devuelve un puntero a una nueva cadena de intercambio creada utilizando los parámetros proporcionados.
 
 .. rst-class:: classref-item-separator
 

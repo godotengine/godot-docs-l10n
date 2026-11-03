@@ -10,7 +10,7 @@ MultiMesh
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用 GPU 實例提供單一網格的高性能多次繪製。
+使用 GPU 實例提供單一網格的高效能多次繪製。
 
 .. rst-class:: classref-introduction-group
 
@@ -21,7 +21,7 @@ MultiMesh 提供了低級別的網格產生實體功能。繪製數以千計的 
 
 MultiMesh 要快得多，因為它可以通過一次繪製呼叫來繪製成千上萬的實例，從而減少 API 的開銷。
 
-缺點是，如果實例之間的距離太遠，性能可能會降低，因為每一個實例總是會被算繪（對於整個物件，它們在空間上被索引為一個）。
+缺點是，如果實例之間的距離太遠，效能可能會降低，因為每一個實例總是會被渲染（對於整個物件，它們在空間上被索引為一個）。
 
 由於實例可能具有任何行為，因此用於可見性的 AABB 必須由使用者提供。
 
@@ -36,7 +36,7 @@ MultiMesh 要快得多，因為它可以通過一次繪製呼叫來繪製成千�
 
 - :doc:`使用 MultiMeshInstance <../tutorials/3d/using_multi_mesh_instance>`
 
-- :doc:`使用 MultiMesh 進行優化 <../tutorials/performance/using_multimesh>`
+- :doc:`使用 MultiMesh 進行最佳化 <../tutorials/performance/using_multimesh>`
 
 - :doc:`使用 MultiMeshInstance 動畫化數千條魚 <../tutorials/performance/vertex_animation/animating_thousands_of_fish>`
 
@@ -157,7 +157,7 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>` **INTERP_QUALITY_FAST** = ``0``
 
-Always interpolate using Basis lerping, which can produce warping artifacts in some situations.
+始終使用 Basis 線性插值，部分情況下可能產生扭曲問題。
 
 .. _class_MultiMesh_constant_INTERP_QUALITY_HIGH:
 
@@ -165,7 +165,7 @@ Always interpolate using Basis lerping, which can produce warping artifacts in s
 
 :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>` **INTERP_QUALITY_HIGH** = ``1``
 
-Attempt to interpolate using Basis slerping (spherical linear interpolation) where possible, otherwise fall back to lerping.
+盡可能使用 Basis 球面線性插值，否則回退至線性插值。
 
 .. rst-class:: classref-section-separator
 
@@ -205,7 +205,7 @@ Attempt to interpolate using Basis slerping (spherical linear interpolation) whe
 
 **已棄用：** Accessing this property is very slow. Use :ref:`set_instance_color()<class_MultiMesh_method_set_instance_color>` and :ref:`get_instance_color()<class_MultiMesh_method_get_instance_color>` instead.
 
-Array containing each :ref:`Color<class_Color>` used by all instances of this mesh.
+包含該網格所有實例使用的每種 :ref:`Color<class_Color>` 的陣列。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -224,7 +224,7 @@ Array containing each :ref:`Color<class_Color>` used by all instances of this me
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Custom AABB for this MultiMesh resource. Setting this manually prevents costly runtime AABB recalculations.
+為該 MultiMesh 資源自訂 AABB。手動設定該項可以防止高昂的執行時 AABB 重新計算成本。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Custom AABB for this MultiMesh resource. Setting this manually prevents costly r
 
 **已棄用：** Accessing this property is very slow. Use :ref:`set_instance_custom_data()<class_MultiMesh_method_set_instance_custom_data>` and :ref:`get_instance_custom_data()<class_MultiMesh_method_get_instance_custom_data>` instead.
 
-Array containing each custom data value used by all instances of this mesh, as a :ref:`PackedColorArray<class_PackedColorArray>`.
+包含該網格的所有實例所使用的每個自訂資料值的陣列，作為 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -295,11 +295,11 @@ Array containing each custom data value used by all instances of this mesh, as a
 - |void| **set_physics_interpolation_quality**\ (\ value\: :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>`\ )
 - :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>` **get_physics_interpolation_quality**\ (\ )
 
-Choose whether to use an interpolation method that favors speed or quality.
+選擇使用優先考慮速度還是優先考慮品質的插值方式。
 
-When using low physics tick rates (typically below 20) or high rates of object rotation, you may get better results from the high quality setting.
+如果使用的物理週期率較低（通常低於 20）或物件旋轉率較高，則設為高品質的效果會更好。
 
-\ **Note:** Fast quality does not equate to low quality. Except in the special cases mentioned above, the quality should be comparable to high quality.
+\ **注意：**\ 速度優先並不意味著品質較低。除了上述特殊情況之外，其品質應與選擇高品質時類似。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ When using low physics tick rates (typically below 20) or high rates of object r
 
 **已棄用：** Accessing this property is very slow. Use :ref:`set_instance_transform_2d()<class_MultiMesh_method_set_instance_transform_2d>` and :ref:`get_instance_transform_2d()<class_MultiMesh_method_get_instance_transform_2d>` instead.
 
-Array containing each :ref:`Transform2D<class_Transform2D>` value used by all instances of this mesh, as a :ref:`PackedVector2Array<class_PackedVector2Array>`. Each transform is divided into 3 :ref:`Vector2<class_Vector2>` values corresponding to the transforms' ``x``, ``y``, and ``origin``.
+包含該網格的所有實例所使用的每個 :ref:`Transform2D<class_Transform2D>` 值的陣列，作為 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。每個變換被分為 3 個 :ref:`Vector2<class_Vector2>` 值，分別對應於變換的 ``x``\ 、\ ``y`` 和 ``origin``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -329,7 +329,7 @@ Array containing each :ref:`Transform2D<class_Transform2D>` value used by all in
 
 **已棄用：** Accessing this property is very slow. Use :ref:`set_instance_transform()<class_MultiMesh_method_set_instance_transform>` and :ref:`get_instance_transform()<class_MultiMesh_method_get_instance_transform>` instead.
 
-Array containing each :ref:`Transform3D<class_Transform3D>` value used by all instances of this mesh, as a :ref:`PackedVector3Array<class_PackedVector3Array>`. Each transform is divided into 4 :ref:`Vector3<class_Vector3>` values corresponding to the transforms' ``x``, ``y``, ``z``, and ``origin``.
+包含該網格的所有實例所使用的每個 :ref:`Transform3D<class_Transform3D>` 值的陣列，作為 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。每個變換被分為 4 個 :ref:`Vector3<class_Vector3>` 值，分別對應於變換的 ``x``\ 、\ ``y``\ 、\ ``z`` 和 ``origin``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
@@ -416,7 +416,7 @@ Array containing each :ref:`Transform3D<class_Transform3D>` value used by all in
 
 :ref:`AABB<class_AABB>` **get_aabb**\ (\ ) |const| :ref:`🔗<class_MultiMesh_method_get_aabb>`
 
-返回局部空間中的可見性軸對齊包圍框。
+返回區域空間中的可見性軸對齊包圍框。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Array containing each :ref:`Transform3D<class_Transform3D>` value used by all in
 
 :ref:`Color<class_Color>` **get_instance_color**\ (\ instance\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MultiMesh_method_get_instance_color>`
 
-獲取特定實例的顏色倍數。
+取得特定實例的顏色倍數。
 
 .. rst-class:: classref-item-separator
 
@@ -476,9 +476,9 @@ Array containing each :ref:`Transform3D<class_Transform3D>` value used by all in
 
 |void| **reset_instance_physics_interpolation**\ (\ instance\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiMesh_method_reset_instance_physics_interpolation>`
 
-When using *physics interpolation*, this function allows you to prevent interpolation on an instance in the current physics tick.
+使用\ *物理插值*\ 時，該函式能夠讓你在目前物理週期中阻止對實例進行插值。
 
-This allows you to move instances instantaneously, and should usually be used when initially placing an instance such as a bullet to prevent graphical glitches.
+這樣你就可以讓實例瞬移，通常在初始放置子彈等實例時使用，防止出現圖形問題。
 
 .. rst-class:: classref-item-separator
 
@@ -490,9 +490,9 @@ This allows you to move instances instantaneously, and should usually be used wh
 
 |void| **reset_instances_physics_interpolation**\ (\ ) :ref:`🔗<class_MultiMesh_method_reset_instances_physics_interpolation>`
 
-When using *physics interpolation*, this function allows you to prevent interpolation for all instances in the current physics tick.
+使用\ *物理插值*\ 時，該函式能夠讓你在目前物理週期中阻止對所有實例進行插值。
 
-This allows you to move all instances instantaneously, and should usually be used when initially placing instances to prevent graphical glitches.
+這允許你瞬間移動所有實例，通常應在初始放置實例時使用，防止出現圖形問題。
 
 .. rst-class:: classref-item-separator
 
@@ -504,11 +504,11 @@ This allows you to move all instances instantaneously, and should usually be use
 
 |void| **set_buffer_interpolated**\ (\ buffer_curr\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`, buffer_prev\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_MultiMesh_method_set_buffer_interpolated>`
 
-An alternative to setting the :ref:`buffer<class_MultiMesh_property_buffer>` property, which can be used with *physics interpolation*. This method takes two arrays, and can set the data for the current and previous tick in one go. The renderer will automatically interpolate the data at each frame.
+設定 :ref:`buffer<class_MultiMesh_property_buffer>` 屬性的替代做法，可以用於\ *物理插值*\ 。該方法接受兩個陣列，可以一次性設定目前週期和上一週期的資料。渲染器每一影格都會自動插值。
 
-This is useful for situations where the order of instances may change from physics tick to tick, such as particle systems.
+適用於實例順序每個物理週期中都經常會改變的場合，例如粒子系統。
 
-When the order of instances is coherent, the simpler alternative of setting :ref:`buffer<class_MultiMesh_property_buffer>` can still be used with interpolation.
+如果實例的順序是連貫的，插值時還是可以用更簡單的設定 :ref:`buffer<class_MultiMesh_property_buffer>` 來代替。
 
 .. rst-class:: classref-item-separator
 
@@ -520,11 +520,11 @@ When the order of instances is coherent, the simpler alternative of setting :ref
 
 |void| **set_instance_color**\ (\ instance\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_MultiMesh_method_set_instance_color>`
 
-Sets the color of a specific instance by *multiplying* the mesh's existing vertex colors. This allows for different color tinting per instance.
+設定一個特定實例的顏色，通過\ *乘以*\ 該網格的現有頂點顏色來設定。這允許每個實例使用不同的顏色。
 
-\ **Note:** Each component is stored in 32 bits in the Forward+ and Mobile rendering methods, but is packed into 16 bits in the Compatibility rendering method.
+\ **注意：**\ 各分量在 Forward+ 和 Mobile 渲染方法中都是使用 32 位元儲存的，而在 Compatibility 渲染方法中則為 16 位元。
 
-For the color to take effect, ensure that :ref:`use_colors<class_MultiMesh_property_use_colors>` is ``true`` on the **MultiMesh** and :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` is ``true`` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (``Color(1, 1, 1)``).
+要使顏色生效，請確保該 **MultiMesh** 上的 :ref:`use_colors<class_MultiMesh_property_use_colors>` 為 ``true``\ ，並且材質上的 :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` 為 ``true``\ 。如果打算設定絕對顏色而不是著色，請確保材質的反照率顏色被設定為純白色 (``Color(1, 1, 1)``)。
 
 .. rst-class:: classref-item-separator
 
@@ -536,13 +536,13 @@ For the color to take effect, ensure that :ref:`use_colors<class_MultiMesh_prope
 
 |void| **set_instance_custom_data**\ (\ instance\: :ref:`int<class_int>`, custom_data\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_MultiMesh_method_set_instance_custom_data>`
 
-Sets custom data for a specific instance. ``custom_data`` is a :ref:`Color<class_Color>` type only to contain 4 floating-point numbers.
+為特定的實例設定自訂資料。\ ``custom_data`` 是一個 :ref:`Color<class_Color>` 型別，僅為了包含 4 個浮點數。
 
-\ **Note:** Each number is stored in 32 bits in the Forward+ and Mobile rendering methods, but is packed into 16 bits in the Compatibility rendering method.
+\ **注意：**\ 各個數字在 Forward+ 和 Mobile 渲染方法中都是使用 32 位元儲存的，而在 Compatibility 渲染方法中則為 16 位元。
 
-For the custom data to be used, ensure that :ref:`use_custom_data<class_MultiMesh_property_use_custom_data>` is ``true``.
+對於要使用的自訂資料，請確保 :ref:`use_custom_data<class_MultiMesh_property_use_custom_data>` 為 ``true``\ 。
 
-This custom instance data has to be manually accessed in your custom shader using ``INSTANCE_CUSTOM``.
+必須使用 ``INSTANCE_CUSTOM`` 在自訂著色器中，手動存取該自訂實例資料。
 
 .. rst-class:: classref-item-separator
 

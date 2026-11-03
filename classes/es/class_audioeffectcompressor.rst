@@ -16,17 +16,17 @@ Permite controlar el rango dinámico mediante un umbral de volumen y controles d
 Descripción
 ----------------------
 
-A "compressor" decreases the volume of sounds when it exceeds a certain volume threshold level.
+El compresor disminuye el volumen cuando pasa de cierto umbral de volumen.
 
-A compressor can have many uses in a mix:
+El compresor tiene muchos usos en la mezcla:
 
-- To compress the whole volume in the Master bus (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
+- En el bus Maestro comprime la salida completa (Aunque un :ref:`AudioEffectLimiter<class_AudioEffectLimiter>` es probablemente mejor).
 
-- To ensure balance of voice audio clips.
+- En los canales de voces asegura que los sonidos están balanceados lo máximo posible.
 
-- To sidechain, using another bus as a trigger. This decreases the volume of the bus it is attached to, by using the volume from another audio bus for threshold detection. This technique is common in video game mixing to decrease the volume of music and SFX while voices are being heard. This effect is also known as "ducking".
+-Encadenado. Esto puede reducir el nivel de sonido encadenado con otro bus de audio para la detección de umbral. Esta técnica es común en la mezcla de videojuegos del nivel de música y SFX mientras que las voces son escuchadas.
 
-- To accentuate transients by using a long attack, letting sounds exceed the volume threshold level for a short period before compressing them. This can be used to make SFX more punchy.
+- Acentúa los transitorios usando un ataque amplio, haciendo los efectos más contundentes.
 
 .. rst-class:: classref-introduction-group
 
@@ -81,7 +81,7 @@ Descripciones de Propiedades
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-Compressor's reaction time when the audio exceeds the volume threshold level, in microseconds. Value can range from 20 to 2000.
+Tiempo de reacción del compresor cuando el audio excede el umbral de volumen, en microsegundos. El valor puede variar entre 20 y 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Compressor's reaction time when the audio exceeds the volume threshold level, in
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain of the audio signal, in dB. Value can range from -20 to 20.
+Ganancia de la señal de audio, en dB. El valor puede variar entre -20 y 20.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Gain of the audio signal, in dB. Value can range from -20 to 20.
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-Balance between the original audio and the compressed audio. Value can range from 0 (totally dry) to 1 (totally wet).
+Balance entre la señal original y el audio comprimido. Valores pueden variar desde 0 (totalmente seco) a 1 (totalmente húmedo).
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Balance between the original audio and the compressed audio. Value can range fro
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-Amount of compression applied to the audio once it passes the volume threshold level. The higher the ratio, the stronger the compression applied to audio signals that pass the volume threshold level. Value can range from 1 to 48.
+La cantidad de compresión aplicada al audio una vez pasa el volumen del umbral. Cuanto mayor sea el ratio, mayor compresión aplicada a las señales de audio que superan el umbral. Los valores pueden variar de 1 a 48.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Amount of compression applied to the audio once it passes the volume threshold l
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-Compressor's delay time to stop decreasing the volume after the it falls below the volume threshold level, in milliseconds. Value can range from 20 to 2000.
+Tiempo de retraso del compresor para parar de reducir la señal después de que el nivel caiga por debajo del umbral de volumen, en milisegundos. El valor puede variar entre 20 y 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Compressor's delay time to stop decreasing the volume after the it falls below t
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-Audio bus to use for the volume threshold detection.
+Bus de audio que se utilizará para detectar el umbral de volumen.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Audio bus to use for the volume threshold detection.
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-The volume level above which compression is applied to the audio, in dB. Value can range from -60 to 0.
+El nivel por encima por el cual la compresión es aplicada al audio. El valor puede variar entre -60 y 0.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

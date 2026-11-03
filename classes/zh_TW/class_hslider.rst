@@ -14,7 +14,7 @@ HSlider
 說明
 ----
 
-水平捲軸，可用通過沿著水平軸移動抓取器來調整取值。這個控制項繼承自 :ref:`Range<class_Range>`\ ，從左（最小）到右（最大）滾動。
+水平捲軸，可用通過沿著水平軸移動抓取器來調整取值。這個控制項繼承自 :ref:`Range<class_Range>`\ ，從左（最小）到右（最大）捲動。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

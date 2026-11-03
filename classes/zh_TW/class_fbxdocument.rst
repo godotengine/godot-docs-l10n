@@ -9,16 +9,16 @@ FBXDocument
 
 **繼承：** :ref:`GLTFDocument<class_GLTFDocument>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Handles FBX documents.
+處理 FBX 文件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The FBXDocument handles FBX documents. It provides methods to append data from buffers or files, generate scenes, and register/unregister document extensions.
+FBXDocument 處理 FBX 文件。它提供了從緩衝區或檔案追加資料、生成場景、以及注冊/取消注冊文件副檔名的方法。
 
-When exporting FBX from Blender, use the "FBX Units Scale" option. The "FBX Units Scale" option sets the correct scale factor and avoids manual adjustments when re-importing into Blender, such as through glTF export.
+從 Blender 匯出 FBX 時，請使用 “FBX 單位縮放” 選項。“FBX 單位縮放” 選項設定正確的縮放係數，並避免在重新匯入到 Blender 時（例如通過 glTF 匯出）進行手動調整。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

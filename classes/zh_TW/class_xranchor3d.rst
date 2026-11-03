@@ -14,11 +14,11 @@ AR 空間中的錨點。
 說明
 ----
 
-The **XRAnchor3D** point is an :ref:`XRNode3D<class_XRNode3D>` that maps a real world location identified by the AR platform to a position within the game world. For example, as long as plane detection in ARKit is on, ARKit will identify and update the position of planes (tables, floors, etc.) and create anchors for them.
+**XRAnchor3D** 點是一個 :ref:`XRNode3D<class_XRNode3D>`\ ，它將由 AR 平台識別的真實世界位置映射到遊戲世界中的某個位置。例如，只要 ARKit 中的平面檢測處於開啟狀態，ARKit 就會識別和更新平面（桌子、地板等）的位置，並為它們建立錨點。
 
-This node is mapped to one of the anchors through its unique ID. When you receive a signal that a new anchor is available, you should add this node to your scene for that anchor. You can predefine nodes and set the ID; the nodes will simply remain on ``(0, 0, 0)`` until a plane is recognized.
+該節點通過其唯一 ID 映射到其中一個錨點。當收到新錨點可用的訊號時，應該將該節點新增到該錨點的場景中。可以預定義節點並設定ID；節點將簡單地保持在 ``(0, 0, 0)`` 上，直到識別出一個平面。
 
-Keep in mind that, as long as plane detection is enabled, the size, placing and orientation of an anchor will be updated as the detection logic learns more about the real world out there especially if only part of the surface is in view.
+請記住，只要啟用了平面檢測，錨點的大小、位置和方向都會隨著檢測邏輯瞭解更多關於真實世界的資訊而更新，尤其是在只有部分表面在視野內時。
 
 .. rst-class:: classref-introduction-group
 

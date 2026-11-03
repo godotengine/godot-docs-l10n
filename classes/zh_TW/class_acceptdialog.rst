@@ -16,9 +16,9 @@ AcceptDialog
 說明
 ----
 
-The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the :ref:`confirmed<class_AcceptDialog_signal_confirmed>` and :ref:`canceled<class_AcceptDialog_signal_canceled>` signals allow to make the two actions different, and the :ref:`add_button()<class_AcceptDialog_method_add_button>` method allows to add custom buttons and actions.
+**AcceptDialog** 的預設用途是允許它只被接受或關閉，結果相同。但是，\ :ref:`confirmed<class_AcceptDialog_signal_confirmed>` 和 :ref:`canceled<class_AcceptDialog_signal_canceled>` 訊號允許使兩個動作不同，\ :ref:`add_button()<class_AcceptDialog_method_add_button>` 方法允許新增自訂按鈕和動作。
 
-\ **Note:** **AcceptDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **AcceptDialog** 預設情況下是隱藏的。若要顯示，呼叫節點上來自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一個，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -135,7 +135,7 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 **custom_action**\ (\ action\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AcceptDialog_signal_custom_action>`
 
-Emitted when a custom button with an action is pressed. See :ref:`add_button()<class_AcceptDialog_method_add_button>`.
+按下帶有動作的自訂按鈕時發出。參見 :ref:`add_button()<class_AcceptDialog_method_add_button>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -157,7 +157,7 @@ Emitted when a custom button with an action is pressed. See :ref:`add_button()<c
 - |void| **set_autowrap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autowrap**\ (\ )
 
-設定對話框中文本自動換行。
+設定對話框中文字自動換行。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Emitted when a custom button with an action is pressed. See :ref:`add_button()<c
 - |void| **set_close_on_escape**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_on_escape**\ (\ )
 
-If ``true``, the dialog will be hidden when the ``ui_close_dialog`` action is pressed (by default, this action is bound to :kbd:`Escape`, or :kbd:`Cmd + W` on macOS).
+如果為 ``true``\ ，則按下 ``ui_cancel`` 動作時會隱藏對話框（該動作預設綁定至 :kbd:`Escape`\ ，在 macOS 上則是 :kbd:`Cmd + W`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -244,13 +244,13 @@ OK 按鈕顯示的文字（參見 :ref:`get_ok_button()<class_AcceptDialog_metho
 
 :ref:`Button<class_Button>` **add_button**\ (\ text\: :ref:`String<class_String>`, right\: :ref:`bool<class_bool>` = false, action\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_AcceptDialog_method_add_button>`
 
-Adds a button with label ``text`` and a custom ``action`` to the dialog and returns the created button.
+將帶有標籤 ``text`` 和自訂 ``action`` 的按鈕新增到對話框，並回傳該建立的按鈕。
 
-If ``action`` is not empty, pressing the button will emit the :ref:`custom_action<class_AcceptDialog_signal_custom_action>` signal with the specified action string.
+如果 ``action`` 不為空，按下按鈕將發出具有指定動作字串的 :ref:`custom_action<class_AcceptDialog_signal_custom_action>` 訊號。
 
-If ``true``, ``right`` will place the button to the right of any sibling buttons.
+如果 ``right`` 為 ``true``\ ，按鈕會被放置在所有同級按鈕的右側。
 
-You can use :ref:`remove_button()<class_AcceptDialog_method_remove_button>` method to remove a button created with this method from the dialog.
+可以使用 :ref:`remove_button()<class_AcceptDialog_method_remove_button>` 方法從對話框中移除使用該方法建立的按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ You can use :ref:`remove_button()<class_AcceptDialog_method_remove_button>` meth
 
 |void| **remove_button**\ (\ button\: :ref:`Button<class_Button>`\ ) :ref:`🔗<class_AcceptDialog_method_remove_button>`
 
-從對話框中移除 ``button``\ ，但不會釋放該 ``button``\ 。\ ``button`` 必須是使用 :ref:`add_button()<class_AcceptDialog_method_add_button>` 或 :ref:`add_cancel_button()<class_AcceptDialog_method_add_cancel_button>` 方法新增的 :ref:`Button<class_Button>`\ 。移除後，點擊該 ``button`` 將不再觸發本對話框的 :ref:`custom_action<class_AcceptDialog_signal_custom_action>` 或 :ref:`canceled<class_AcceptDialog_signal_canceled>` 訊號。
+從對話框中移除 ``button``\ ，但不會釋放該 ``button``\ 。\ ``button`` 必須是使用 :ref:`add_button()<class_AcceptDialog_method_add_button>` 或 :ref:`add_cancel_button()<class_AcceptDialog_method_add_cancel_button>` 方法新增的 :ref:`Button<class_Button>`\ 。移除後，點選該 ``button`` 將不再觸發本對話框的 :ref:`custom_action<class_AcceptDialog_signal_custom_action>` 或 :ref:`canceled<class_AcceptDialog_signal_canceled>` 訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -333,7 +333,7 @@ You can use :ref:`remove_button()<class_AcceptDialog_method_remove_button>` meth
 
 :ref:`int<class_int>` **buttons_min_height** = ``0`` :ref:`🔗<class_AcceptDialog_theme_constant_buttons_min_height>`
 
-底部按鈕列（如 OK/取消）的每個按鈕最小高度（像素）。可增加此值，使短文字的按鈕更易於點擊或觸控。
+底部按鈕列（如 OK/取消）的每個按鈕最小高度（像素）。可增加此值，使短文字的按鈕更易於點選或觸控。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ You can use :ref:`remove_button()<class_AcceptDialog_method_remove_button>` meth
 
 :ref:`int<class_int>` **buttons_min_width** = ``0`` :ref:`🔗<class_AcceptDialog_theme_constant_buttons_min_width>`
 
-底部按鈕列（如 OK/取消）的每個按鈕最小寬度（像素）。可增加此值，使短文字的按鈕更易於點擊或觸控。
+底部按鈕列（如 OK/取消）的每個按鈕最小寬度（像素）。可增加此值，使短文字的按鈕更易於點選或觸控。
 
 .. rst-class:: classref-item-separator
 

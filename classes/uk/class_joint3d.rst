@@ -23,7 +23,7 @@ Joint3D
 Посібники
 ------------------
 
-- `3Д Вантажівка Таун Демо <https://godotengine.org/asset-library/asset/2752>`__
+- `3Д Вантажівка Таун Демо <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

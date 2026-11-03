@@ -7,7 +7,7 @@ ENetMultiplayerPeer
 
 **Hereda:** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A MultiplayerPeer implementation using the `ENet <http://enet.bespin.org/index.html>`__ library.
+Una implementación de MultiplayerPeer que utiliza la librería `ENet <http://enet.bespin.org/index.html>`__.
 
 .. rst-class:: classref-introduction-group
 

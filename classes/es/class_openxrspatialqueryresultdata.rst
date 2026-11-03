@@ -73,7 +73,7 @@ Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index`
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_entity_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_state>`
 
-Returns the entity state for the entity at this ``index``.
+Devuelve el estado de la entidad para la entidad en este ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -35,7 +35,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -183,7 +183,7 @@ Distortion type. Changes the nonlinear function used to distort the waveform. Se
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Gain after the effect, in dB. Value can range from -80 to 24.
+Gain après l'effet, en décibels. La valeur peut aller de -80 à 24.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Gain after the effect, in dB. Value can range from -80 to 24.
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Gain before the effect, in dB. Value can range from -60 to 60.
+Gain avant l'effet, en décibels. La valeur peut aller de -60 à 60.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -58,9 +58,9 @@ RDVertexAttribute
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-The index of the buffer in the vertex buffer array to bind this vertex attribute. When set to ``-1``, it defaults to the index of the attribute.
+要綁定該頂點屬性的頂點緩衝區陣列中的緩衝區索引。當設定為 ``-1`` 時，預設為該屬性的索引。
 
-\ **Note:** You cannot mix binding explicitly assigned attributes with implicitly assigned ones (i.e. ``-1``). Either all attributes must have their binding set to ``-1``, or all must have explicit bindings.
+\ **注意：**\ 不能混用顯式綁定指定的屬性和隱式綁定指定的屬性（即 ``-1``\ ）。所有屬性的綁定要麼都設定為 ``-1``\ ，要麼都必須顯式綁定。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ The index of the buffer in the vertex buffer array to bind this vertex attribute
 - |void| **set_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_format**\ (\ )
 
-The way that this attribute's data is interpreted when sent to a shader.
+將屬性資料發送至著色器時，對該資料的解釋方式。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ The way that this attribute's data is interpreted when sent to a shader.
 - |void| **set_frequency**\ (\ value\: :ref:`VertexFrequency<enum_RenderingDevice_VertexFrequency>`\ )
 - :ref:`VertexFrequency<enum_RenderingDevice_VertexFrequency>` **get_frequency**\ (\ )
 
-The rate at which this attribute is pulled from its vertex buffer.
+從頂點緩衝中拉取該屬性的頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ The rate at which this attribute is pulled from its vertex buffer.
 - |void| **set_location**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_location**\ (\ )
 
-The location in the shader that this attribute is bound to.
+該屬性在著色器中綁定的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ The location in the shader that this attribute is bound to.
 - |void| **set_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_offset**\ (\ )
 
-The number of bytes between the start of the vertex buffer and the first instance of this attribute.
+頂點緩衝起點與該屬性的第一個實例之間的位元組數。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ The number of bytes between the start of the vertex buffer and the first instanc
 - |void| **set_stride**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stride**\ (\ )
 
-The number of bytes between the starts of consecutive instances of this attribute.
+該屬性相鄰兩個實例之間的位元組數。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

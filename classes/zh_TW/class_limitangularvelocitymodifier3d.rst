@@ -7,18 +7,18 @@ LimitAngularVelocityModifier3D
 
 **繼承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+限制骨骼旋轉角速度。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+這個修飾器通過對比上一影格和目前影格的骨骼姿態，來限制骨骼旋轉的角速度。
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+你可以通過指定根骨骼和末端骨骼來新增骨骼鏈，然後將它們之間的骨骼新增到一個清單中。根據 :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`\ （排除）選項的設定，修飾器會處理這個清單中的骨骼，或者處理除了該清單之外的其他骨骼。
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **注意：** 這個類中的大多數方法都帶有一個 ``index``\ （索引）參數。這個參數用來指定當 IK（反向運動學）包含多個設定項時，具體回傳哪一個（比如 ``settings//root_bone_name``\ ）。
 
 .. rst-class:: classref-reftable-group
 
@@ -88,7 +88,7 @@ You can add bone chains by specifying their root and end bones, then add the bon
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+鏈數。
 
 .. rst-class:: classref-item-separator
 
@@ -105,9 +105,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+如果為 ``true``\ ，則修改器會處理骨骼清單中未包含的骨骼。
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+如果為 ``false``\ ，則修改器處理的骨骼與骨骼清單中的骨骼相同。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+鏈式結構動態建立的清單中的關節數。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+每秒最大角速度。
 
 .. rst-class:: classref-section-separator
 
@@ -153,7 +153,7 @@ The maximum angular velocity per second.
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+清除所有鏈。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Clear all chains.
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_end_bone>`
 
-Returns the end bone index of the bone chain.
+回傳骨骼鏈末尾骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Returns the end bone index of the bone chain.
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_end_bone_name>`
 
-Returns the end bone name of the bone chain.
+回傳骨骼鏈末尾骨骼的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ Returns the end bone name of the bone chain.
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_root_bone>`
 
-Returns the root bone index of the bone chain.
+回傳骨骼鏈根骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Returns the root bone index of the bone chain.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_root_bone_name>`
 
-Returns the root bone name of the bone chain.
+回傳骨骼鏈根骨骼的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Returns the root bone name of the bone chain.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+設定參考姿態，用於與目前姿態進行角度比較，並去除約束的影響。當關節發生變化或啟用時，該函式會自動觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Sets the reference pose for angle comparison to the current pose with the influe
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone>`
 
-Sets the end bone index of the bone chain.
+設定骨骼鏈中末端骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Sets the end bone index of the bone chain.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+設定骨骼鏈中末端骨骼的名稱。
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **注意：**\ 末端骨骼必須是根骨骼或根骨骼的子骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Sets the end bone name of the bone chain.
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_root_bone>`
 
-Sets the root bone index of the bone chain.
+設定骨骼鏈中根骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ Sets the root bone index of the bone chain.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_root_bone_name>`
 
-Sets the root bone name of the bone chain.
+設定骨骼鏈中根骨骼的名稱。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

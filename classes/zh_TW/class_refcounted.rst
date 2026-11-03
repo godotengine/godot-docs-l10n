@@ -16,15 +16,15 @@ RefCounted
 說明
 ----
 
-Base class for any object that keeps a reference count. :ref:`Resource<class_Resource>` and many other helper objects inherit this class.
+所有進行參照計數的物件的基底類別。\ :ref:`Resource<class_Resource>` 和許多其他輔助物件都繼承自這個類。
 
-Unlike other :ref:`Object<class_Object>` types, **RefCounted**\ s keep an internal reference counter so that they are automatically released when no longer in use, and only then. **RefCounted**\ s therefore do not need to be freed manually with :ref:`Object.free()<class_Object_method_free>`.
+與其他 :ref:`Object<class_Object>` 型別不同，\ **RefCounted** 內部存在參照計數器，當且僅當自身不再處於使用狀態時就會自動釋放。因此 **RefCounted** 不需要使用 :ref:`Object.free()<class_Object_method_free>` 手動釋放。
 
-\ **RefCounted** instances caught in a cyclic reference will **not** be freed automatically. For example, if a node holds a reference to instance ``A``, which directly or indirectly holds a reference back to ``A``, ``A``'s reference count will be 2. Destruction of the node will leave ``A`` dangling with a reference count of 1, and there will be a memory leak. To prevent this, one of the references in the cycle can be made weak with :ref:`@GlobalScope.weakref()<class_@GlobalScope_method_weakref>`.
+陷入循環參照的 **RefCounted** 實例\ **不會**\ 自動釋放。例如某節點持有對實例 ``A`` 的參照，而該實例直接或間接持有對 ``A`` 的參照，則 ``A`` 的參照計數為 2。該節點銷毀後 ``A`` 懸空，參照計數為 1，造成記憶體洩漏。為了防止這種情況，可以使用 :ref:`@GlobalScope.weakref()<class_@GlobalScope_method_weakref>` 將循環中的某一處參照設定為弱參照。
 
-In the vast majority of use cases, instantiating and using **RefCounted**-derived types is all you need to do. The methods provided in this class are only for advanced users, and can cause issues if misused.
+在絕大多數用例中，只需實例化和使用 **RefCounted** 派生型別即可。該類中提供的方法僅適用於進階使用者，如果使用不當可能會導致問題。
 
-\ **Note:** In C#, reference-counted objects will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free reference-counted objects that are no longer in use. This means that unused ones will remain in memory for a while before being removed.
+\ **注意：**\ 在 C# 中，參照計數的物件在不再使用後不會立即釋放。相反，垃圾收集將定期執行，並釋放不再使用的參照計數物件。這意味著未使用的參照計數物件會在被移除之前在記憶體中保留一段時間。
 
 .. rst-class:: classref-introduction-group
 
@@ -106,9 +106,9 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 :ref:`bool<class_bool>` **unreference**\ (\ ) :ref:`🔗<class_RefCounted_method_unreference>`
 
-Decrements the internal reference counter. Use this only if you really know what you are doing.
+將內部參照計數器減一。不清楚有甚麼用就別用。
 
-Returns ``true`` if the object should be freed after the decrement, ``false`` otherwise.
+如果減少成功則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

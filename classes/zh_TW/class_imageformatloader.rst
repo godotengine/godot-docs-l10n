@@ -9,14 +9,14 @@ ImageFormatLoader
 
 **被繼承：** :ref:`ImageFormatLoaderExtension<class_ImageFormatLoaderExtension>`
 
-用於新增特定圖像格式支援的基底類別。
+用於新增特定影像格式支援的基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-該引擎支援多種開箱即用的圖像格式（PNG、SVG、JPEG、WebP 等），但也可以選擇通過擴充 :ref:`ImageFormatLoaderExtension<class_ImageFormatLoaderExtension>`\ ，來實作對其他圖像格式的支援。
+該引擎支援多種開箱即用的影像格式（PNG、SVG、JPEG、WebP 等），但也可以選擇通過擴充 :ref:`ImageFormatLoaderExtension<class_ImageFormatLoaderExtension>`\ ，來實作對其他影像格式的支援。
 
 .. rst-class:: classref-section-separator
 
@@ -39,7 +39,7 @@ flags **LoaderFlags**: :ref:`🔗<enum_ImageFormatLoader_LoaderFlags>`
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_NONE** = ``0``
 
-Default loading behavior. No processing is applied to the image.
+預設的載入行為。不會對影像進行任何處理。
 
 .. _class_ImageFormatLoader_constant_FLAG_FORCE_LINEAR:
 
@@ -47,7 +47,7 @@ Default loading behavior. No processing is applied to the image.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_FORCE_LINEAR** = ``1``
 
-If set, the image is converted from sRGB to linear encoding.
+如果勾選（或啟用），影像將從 sRGB 色彩空間轉換為線性（Linear）編碼。
 
 .. _class_ImageFormatLoader_constant_FLAG_CONVERT_COLORS:
 
@@ -55,7 +55,7 @@ If set, the image is converted from sRGB to linear encoding.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_CONVERT_COLORS** = ``2``
 
-If set, a predefined color map is applied to the image. Used when :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` is ``true``.
+如果勾選（或啟用），將為影像應用一個預定義的顏色映射（color map）。當 :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` 為 ``true`` 時使用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

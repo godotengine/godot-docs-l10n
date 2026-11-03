@@ -290,7 +290,7 @@ enum **Param**: :ref:`🔗<enum_Light3D_Param>`
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_INTENSITY** = ``20``
 
-用於存取 :ref:`light_intensity_lumens<class_Light3D_property_light_intensity_lumens>` 和 :ref:`light_intensity_lux<class_Light3D_property_light_intensity_lux>` 的常量。只在 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時使用。
+用於存取 :ref:`light_intensity_lumens<class_Light3D_property_light_intensity_lumens>` 和 :ref:`light_intensity_lux<class_Light3D_property_light_intensity_lux>` 的常數。只在 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時使用。
 
 .. _class_Light3D_constant_PARAM_MAX:
 
@@ -316,9 +316,9 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DISABLED** = ``0``
 
-Light is ignored when baking. This is the fastest mode, but the light will not be taken into account when baking global illumination. This mode should generally be used for dynamic lights that change quickly, as the effect of global illumination is less noticeable on those lights.
+烘焙時燈光將被忽略。這是最快的模式，但是在烘焙全域照明時不會考慮該燈光。該模式通常套用至快速變化的動態燈光，因為全域照明的效果在這些燈光上不太明顯。
 
-\ **Note:** Hiding a light does *not* affect baking :ref:`LightmapGI<class_LightmapGI>`. Hiding a light will still affect baking :ref:`VoxelGI<class_VoxelGI>` and SDFGI (see :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
+\ **注意：**\ 將燈光隱藏，\ *不*\ 影響烘焙 :ref:`LightmapGI<class_LightmapGI>`\ 。但將燈光隱藏，仍會影響烘焙 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（請參閱 :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）。
 
 .. _class_Light3D_constant_BAKE_STATIC:
 
@@ -326,11 +326,11 @@ Light is ignored when baking. This is the fastest mode, but the light will not b
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_STATIC** = ``1``
 
-Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified, but its global illumination will not update in real-time.
+光照會參與靜態烘焙（\ :ref:`VoxelGI<class_VoxelGI>`\ 、\ :ref:`LightmapGI<class_LightmapGI>`\ 、SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ））。光源可以被移動或修改，但其全域光照不會即時更新。
 
-\ **Note:** The light is not baked in :ref:`LightmapGI<class_LightmapGI>` if :ref:`editor_only<class_Light3D_property_editor_only>` is ``true``.
+\ **注意：**\ 如果 :ref:`editor_only<class_Light3D_property_editor_only>` 為 ``true``\ ，該光源不會被烘焙到 :ref:`LightmapGI<class_LightmapGI>` 中。
 
-\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, both the direct and indirect light are baked. Since direct light is baked, the light doesn't display a specular lobe on static lightmapped meshes. Shadows on static lightmapped meshes will also look less detailed, but the light still casts shadows that can be displayed on dynamic objects. Since real-time light computations are skipped on static lightmapped meshes, this bake mode improves runtime performance compared to :ref:`BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` and :ref:`BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`.
+\ **注意：**\ 使用 :ref:`LightmapGI<class_LightmapGI>` 時，直接光和間接光都會被烘焙。由於直接光已被烘焙，該光源不會在靜態光照貼圖網格上顯示高光瓣。靜態光照貼圖網格上的陰影細節也會降低，但該光源投射的陰影仍可顯示在動態物體上。由於靜態光照貼圖網格跳過了即時光照計算，與 :ref:`BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` 和 :ref:`BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>` 相比，此烘焙模式可提升執行時效能。
 
 .. _class_Light3D_constant_BAKE_DYNAMIC:
 
@@ -338,9 +338,9 @@ Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :re
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DYNAMIC** = ``2``
 
-Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified with global illumination updating in real-time. The light's global illumination appearance will be slightly different compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. This has a greater performance cost compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. When using SDFGI, the update speed of dynamic lights is affected by :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+光照會參與動態烘焙（\ :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ））。光源可以被移動或修改，且全域光照會即時更新。與 :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 相比，該光源的全域光照視覺效果會略有不同。相較於 :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`\ ，此模式也需要更多運算資源。使用 SDFGI 時，動態光照的更新速度受 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 影響。
 
-\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, the light's indirect light is baked, but direct light and shadows remain real-time. This mode allows performing *subtle* changes to a light's color, energy, and position while still looking fairly correct. For example, you can use this to create flickering static torches that have their indirect light baked.
+\ **注意：**\ 使用 :ref:`LightmapGI<class_LightmapGI>` 時，光源的間接光會被烘焙，但直接光和陰影仍保持即時計算。此模式允許對光源的顏色、能量和位置進行\ *細微*\ 調整，同時視覺效果仍然較為正確。例如，你可以利用此功能製作閃爍的靜態火把，其間接光已被烘焙，而直接光即時變化。
 
 .. rst-class:: classref-section-separator
 
@@ -381,7 +381,7 @@ Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and
 - |void| **set_enable_distance_fade**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distance_fade_enabled**\ (\ )
 
-如果為 ``true``\ ，從 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` 開始，當遠離活動的 :ref:`Camera3D<class_Camera3D>` 時，燈光會平滑地消失。這充當了一種多細節層次（LOD）形式。燈光將在 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 之外淡出，之後它將被剔除並且根本不會被發送到著色器。使用它可以減少場景中的活動燈光數量，從而提高性能。
+如果為 ``true``\ ，從 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` 開始，當遠離活動的 :ref:`Camera3D<class_Camera3D>` 時，燈光會平滑地消失。這充當了一種多細節層次（LOD）形式。燈光將在 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 之外淡出，之後它將被剔除並且根本不會被發送到著色器。使用它可以減少場景中的活動燈光數量，從而提高效能。
 
 \ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效。
 
@@ -419,7 +419,7 @@ Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and
 - |void| **set_distance_fade_shadow**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_shadow**\ (\ )
 
-燈光陰影截止處與相機的距離（單位為 3D 單位）。將該屬性設定為低於 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 的值，以進一步提高性能，因為陰影算繪通常比光線算繪本身更昂貴。
+燈光陰影截止處與相機的距離（單位為 3D 單位）。將該屬性設定為低於 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 的值，以進一步提高效能，因為陰影渲染通常比光線渲染本身更昂貴。
 
 \ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效，且僅在 :ref:`shadow_enabled<class_Light3D_property_shadow_enabled>` 為 ``true`` 時有效。
 
@@ -438,7 +438,7 @@ Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and
 - |void| **set_editor_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editor_only**\ (\ )
 
-If ``true``, the light only appears in the editor and will not be visible at runtime. If ``true``, the light will never be baked in :ref:`LightmapGI<class_LightmapGI>` regardless of its :ref:`light_bake_mode<class_Light3D_property_light_bake_mode>`.
+如果為 ``true``\ ，燈光只在編輯器中出現，在執行時將不可見。如果為 ``true``\ ，則無論其 :ref:`light_bake_mode<class_Light3D_property_light_bake_mode>` 如何，燈光都不會在 :ref:`LightmapGI<class_LightmapGI>` 中進行烘焙。
 
 .. rst-class:: classref-item-separator
 
@@ -455,11 +455,11 @@ If ``true``, the light only appears in the editor and will not be visible at run
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-燈光的角度大小，單位是度。增加此值將使陰影在更遠的距離處更柔和（也稱為百分比更近的柔和陰影，或 PCSS）。僅適用於 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。作為參考，太陽距離地球大約是 ``0.5``\ 。對於啟用了陰影的燈光，將此值增加到 ``0.0`` 以上，將由於 PCSS 而產生明顯的性能成本。
+燈光的角度大小，單位是度。增加此值將使陰影在更遠的距離處更柔和（也稱為百分比更近的柔和陰影，或 PCSS）。僅適用於 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。作為參考，太陽距離地球大約是 ``0.5``\ 。對於啟用了陰影的燈光，將此值增加到 ``0.0`` 以上，將由於 PCSS 而產生明顯的效能成本。
 
 \ **注意：**\ :ref:`light_angular_distance<class_Light3D_property_light_angular_distance>` 不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （燈光的縮放或其父級的縮放）的影響。
 
-\ **注意：**\ 定向光的 PCSS 僅支援 Forward+ 算繪方式，不支援 Mobile 或 Compatibility。
+\ **注意：**\ 定向光的 PCSS 僅支援 Forward+ 渲染方式，不支援 Mobile 或 Compatibility。
 
 .. rst-class:: classref-item-separator
 
@@ -476,9 +476,9 @@ If ``true``, the light only appears in the editor and will not be visible at run
 - |void| **set_bake_mode**\ (\ value\: :ref:`BakeMode<enum_Light3D_BakeMode>`\ )
 - :ref:`BakeMode<enum_Light3D_BakeMode>` **get_bake_mode**\ (\ )
 
-The light's bake mode. This will affect the global illumination techniques that have an effect on the light's rendering.
+燈光的烘焙模式。會影響對燈光渲染有影響的全域照明技術。
 
-\ **Note:** Meshes' global illumination mode will also affect the global illumination rendering. See :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`.
+\ **注意：**\ 網格的全域照明模式也會影響全域照明渲染。見 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ The light's bake mode. This will affect the global illumination techniques that 
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The light's color in nonlinear sRGB encoding. An *overbright* color can be used to achieve a result equivalent to increasing the light's :ref:`light_energy<class_Light3D_property_light_energy>`.
+非線性 sRGB 編碼下的光照顏色。可以使用\ *過亮*\ 的顏色來達到與增加光照 :ref:`light_energy<class_Light3D_property_light_energy>` 相同的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -512,9 +512,9 @@ The light's color in nonlinear sRGB encoding. An *overbright* color can be used 
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-The light will affect objects in the selected layers.
+燈光會影響位於所選層中的物件。
 
-\ **Note:** The light cull mask is ignored by :ref:`VoxelGI<class_VoxelGI>`, SDFGI, :ref:`LightmapGI<class_LightmapGI>`, and volumetric fog. These will always render lights in a way that ignores the cull mask. See also :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`.
+\ **注意：**\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI、\ :ref:`LightmapGI<class_LightmapGI>`\ 、體積霧會忽略燈光剔除遮罩。這些效果時始終使用燈光渲染，忽略剔除遮罩。另見 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ The light will affect objects in the selected layers.
 
 \ **注意：**\ 不像 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的篩檢程式模式可以在每個材質的基礎上進行調整，燈光投影儀紋理的篩檢程式模式是通過 :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>` 全域設定的。
 
-\ **注意：**\ 燈光投影儀紋理僅支援 Forward+ 和 Mobile 算繪方法，不支援 Compatibility。
+\ **注意：**\ 燈光投影儀紋理僅支援 Forward+ 和 Mobile 渲染方法，不支援 Compatibility。
 
 .. rst-class:: classref-item-separator
 
@@ -645,11 +645,11 @@ The light will affect objects in the selected layers.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
+燈光在 Godot 單位下的模擬尺寸，會影響著色和陰影效果。對於 :ref:`OmniLight3D<class_OmniLight3D>`\ （全向光）和 :ref:`SpotLight3D<class_SpotLight3D>`\ （聚光燈）來說，增大這個數值會模擬出一個球形區域光的效果，從而擴大高光（specular highlights）的範圍。如果開啟了陰影，還會渲染出半影區（penumbra），讓陰影看起來更模糊、更柔和。對於 :ref:`AreaLight3D<class_AreaLight3D>`\ （區域光）來說，只有陰影會受到影響。這裡的半影效果是通過“百分比漸近軟陰影”（PCSS）技術來模擬的，當該數值大於 ``0.0`` 時，會帶來明顯的效能開銷。
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **注意：** :ref:`light_size<class_Light3D_property_light_size>` 屬性不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （燈光自身或其父節點的縮放比例）的影響。
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：** 位置光源（positional lights）的 PCSS 效果僅在 Forward+ 和 Mobile 渲染模式下受支援，在 Compatibility（相容）渲染模式下無法使用。
 
 .. rst-class:: classref-item-separator
 
@@ -702,9 +702,9 @@ The simulated size of the light in Godot units, affecting shading and shadows. F
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-與 :ref:`light_energy<class_Light3D_property_light_energy>` 相乘的次級乘數，然後與 :ref:`Environment<class_Environment>` 的體積霧（如果啟用）一起使用。如果設定為 ``0.0``\ ，將用於該燈的體積霧計算將被跳過，這可以在啟用體積霧時提高大量燈光的性能。
+與 :ref:`light_energy<class_Light3D_property_light_energy>` 相乘的次級乘數，然後與 :ref:`Environment<class_Environment>` 的體積霧（如果啟用）一起使用。如果設定為 ``0.0``\ ，將用於該燈的體積霧計算將被跳過，這可以在啟用體積霧時提高大量燈光的效能。
 
-\ **注意：**\ 除非 :ref:`Environment.volumetric_fog_temporal_reprojection_enabled<class_Environment_property_volumetric_fog_temporal_reprojection_enabled>` 被禁用（或者除非重投影的量顯著降低），否則為防止短暫的動態光效與體積霧的互動性差，這些效果中使用的光應將 :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 設定為 ``0.0``\ 。
+\ **注意：**\ 除非 :ref:`Environment.volumetric_fog_temporal_reprojection_enabled<class_Environment_property_volumetric_fog_temporal_reprojection_enabled>` 被停用（或者除非重投影的量顯著降低），否則為防止短暫的動態光效與體積霧的互動性差，這些效果中使用的光應將 :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 設定為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -738,7 +738,7 @@ The simulated size of the light in Godot units, affecting shading and shadows. F
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-模糊陰影的邊緣。可用於隱藏低解析度陰影貼圖中的圖元偽影。高值會影響性能，使陰影看起來有顆粒感，並可能導致其他不需要的偽影。儘量保持接近預設值。
+模糊陰影的邊緣。可用於隱藏低解析度陰影貼圖中的圖元偽影。高值會影響效能，使陰影看起來有顆粒感，並可能導致其他不需要的偽影。儘量保持接近預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -755,7 +755,7 @@ The simulated size of the light in Godot units, affecting shading and shadows. F
 - |void| **set_shadow_caster_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_shadow_caster_mask**\ (\ )
 
-The light will only cast shadows using objects in the selected layers.
+燈光只會使用選定層中的物件投射陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ The light will only cast shadows using objects in the selected layers.
 - |void| **set_shadow**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_shadow**\ (\ )
 
-如果為 ``true``\ ，則燈光將投射即時陰影。這具有顯著的性能成本。僅當陰影算繪對場景外觀產生明顯影響時，才啟用陰影算繪，並考慮在遠離 :ref:`Camera3D<class_Camera3D>` 時使用 :ref:`distance_fade_enabled<class_Light3D_property_distance_fade_enabled>` 隱藏該燈光。
+如果為 ``true``\ ，則燈光將投射即時陰影。這具有顯著的效能成本。僅當陰影渲染對場景外觀產生明顯影響時，才啟用陰影渲染，並考慮在遠離 :ref:`Camera3D<class_Camera3D>` 時使用 :ref:`distance_fade_enabled<class_Light3D_property_distance_fade_enabled>` 隱藏該燈光。
 
 .. rst-class:: classref-item-separator
 
@@ -806,7 +806,7 @@ The light will only cast shadows using objects in the selected layers.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-算繪燈光的陰影貼圖時使用的不透明度。低於 ``1.0`` 的值會使光線透過陰影出現。這可以用於以較低的性能成本，偽造全域照明。
+渲染燈光的陰影貼圖時使用的不透明度。低於 ``1.0`` 的值會使光線透過陰影出現。這可以用於以較低的效能成本，偽造全域照明。
 
 .. rst-class:: classref-item-separator
 

@@ -5675,14 +5675,20 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **buffer_get_data_async**\ (\ buffer\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`, offset_bytes\: :ref:`int<class_int>` = 0, size_bytes\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_buffer_get_data_async>`
 
-Асинхронна версія :ref:`buffer_get_data()<class_RenderingDevice_method_buffer_get_data>`. RenderingDevice викличе ``callback`` у певній кількості кадрів із даними, які були в буфері на момент запиту. 
+Асинхронна версія :ref:`buffer_get_data()<class_RenderingDevice_method_buffer_get_data>`. RenderingDevice викличе ``callback`` через певну кількість кадрів, передавши дані, які містилися в буфері на момент запиту.
 
-\ **Примітка:** На даний момент затримка відповідає кількості кадрів, визначеній :ref:`ProjectSettings.rendering/rendering_device/vsync/frame_queue_size<class_ProjectSettings_property_rendering/rendering_device/vsync/frame_queue_size>`. 
+\ **Примітка:** Наразі затримка відповідає кількості кадрів, зазначеній у :ref:`ProjectSettings.rendering/rendering_device/vsync/frame_queue_size<class_ProjectSettings_property_rendering/rendering_device/vsync/frame_queue_size>`.
 
-\ **Примітка:** Завантаження великих буферів може мати непомірну вартість для реального часу навіть у разі використання асинхронного методу через апаратні обмеження пропускної здатності. Якщо ви маєте справу з великими ресурсами, ви можете налаштувати такі параметри, як :ref:`ProjectSettings.rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>`, щоб покращити швидкість передачі за рахунок додаткової пам’яті. 
+\ **Примітка:** Завантаження великих буферів може мати надто високу ціну для роботи в режимі реального часу навіть при використанні асинхронного методу через обмеження пропускної здатності апаратного забезпечення. При роботі з великими ресурсами можна налаштувати такі параметри, як :ref:`ProjectSettings.rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>`, щоб підвищити швидкість передачі за рахунок додаткової пам’яті.
 
 ::
 
+    func _buffer_get_data_callback(array):
+        value = array.decode_u32(0)
+
+    ...
+
+    rd.buffer_get_data_async(buffer, _buffer_get_data_callback)
 
 .. rst-class:: classref-item-separator
 

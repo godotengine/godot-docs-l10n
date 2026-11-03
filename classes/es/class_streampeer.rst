@@ -217,7 +217,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`float<class_float>` **get_double**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_double>`
 
-Consigue un real de double-precision del stream.
+Obtiene un float de doble precisión del stream.
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Consigue un real de double-precision del stream.
 
 :ref:`float<class_float>` **get_float**\ (\ ) :ref:`🔗<class_StreamPeer_method_get_float>`
 
-Consigue un real de single-precision del stream.
+Obtiene un float de precisión simple del stream.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Envía un fragmento de datos a través de la conexión, bloqueando si es necesar
 
 |void| **put_double**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StreamPeer_method_put_double>`
 
-Pone un real de double-precision en el stream.
+Pone un float de precisión doble en el stream.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Pone un real de double-precision en el stream.
 
 |void| **put_float**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StreamPeer_method_put_float>`
 
-Pone un real de single-precision en el stream.
+Pone un float de precisión simple en el stream.
 
 .. rst-class:: classref-item-separator
 

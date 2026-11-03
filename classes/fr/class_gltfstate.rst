@@ -1064,7 +1064,7 @@ Sets the unique animation names in the state. This is only used during the impor
 
 |void| **set_unique_names**\ (\ unique_names\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) :ref:`🔗<class_GLTFState_method_set_unique_names>`
 
-Sets the unique node names in the state. This is used in both the import process and export process.
+Définit les noms de nœud unique dans l'état. Cela est utilisé à la fois pour le processus d'importation et le processus d'exportation.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

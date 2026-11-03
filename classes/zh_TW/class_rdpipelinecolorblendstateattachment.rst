@@ -16,7 +16,7 @@ RDPipelineColorBlendStateAttachment
 
 控制使用 :ref:`RenderingDevice<class_RenderingDevice>` 時如何在來源和目標片段之間進行混合。
 
-以下是常見面向使用者的混合模式在 Godot 的 2D 算繪器中的實作方法，僅供參考：
+以下是常見面向使用者的混合模式在 Godot 的 2D 渲染器中的實作方法，僅供參考：
 
 \ **混合：**\ 
 

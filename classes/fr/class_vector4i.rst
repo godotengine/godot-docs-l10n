@@ -397,7 +397,7 @@ This method runs faster than :ref:`distance_to()<class_Vector4i_method_distance_
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector4i<class_Vector4i>`\ ) |const| :ref:`🔗<class_Vector4i_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+Renvoie la `distance euclidienne <https://fr.wikipedia.org/wiki/Distance_euclidienne>`__ entre ce vecteur et ``to``.
 
 .. rst-class:: classref-item-separator
 
@@ -686,13 +686,13 @@ Divise chaque composante du **Vector4i** par les composantes du **Vector4i** don
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4i_operator_div_float>`
 
-Divides each component of the **Vector4i** by the given :ref:`float<class_float>`.
+Divise chaque composante du **Vector4i** par le flottant :ref:`float<class_float>` donné.
 
-Returns a Vector4 value due to floating-point operations.
+Renvoie une valeur Vector4 due aux opérations de virgule flottante.
 
 ::
 
-    print(Vector4i(1, 2, 3, 4) / 2.5) # Prints (0.4, 0.8, 1.2, 1.6)
+    print(Vector4i(1, 2, 3, 4) / 2.5) # Affiche (0.4, 0.8, 1.2, 1.6)
 
 .. rst-class:: classref-item-separator
 

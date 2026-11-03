@@ -7,14 +7,14 @@ OpenXRFutureExtension
 
 **繼承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-The OpenXR Future extension allows for asynchronous APIs to be used.
+OpenXR Future 擴充，允許使用非同步 API。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This is a support extension in OpenXR that allows other OpenXR extensions to start asynchronous functions and get a callback after this function finishes. It is not intended for consumption within GDScript but can be accessed from GDExtension.
+這是 OpenXR 中支援的擴充，能夠讓其他 OpenXR 擴充啟動非同步函式，在函式完成後取得回呼。不應在 GDScript 中使用，但可以在 GDExtension 中存取。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ This is a support extension in OpenXR that allows other OpenXR extensions to sta
 
 |void| **cancel_future**\ (\ future\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRFutureExtension_method_cancel_future>`
 
-Cancels an in-progress future. ``future`` must be an ``XrFutureEXT`` value previously returned by an API that started an asynchronous function.
+取消正在進行中的 future。\ ``future`` 必須是此前啟動非同步函式 API 所回傳的 ``XrFutureEXT`` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Cancels an in-progress future. ``future`` must be an ``XrFutureEXT`` value previ
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) |const| :ref:`🔗<class_OpenXRFutureExtension_method_is_active>`
 
-Returns ``true`` if futures are available in the OpenXR runtime used. This function will only return a usable result after OpenXR has been initialized.
+如果 future 在所使用的 OpenXR 執行時中可用，則回傳 ``true``\ 。該函式僅在 OpenXR 已被初始化後回傳有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -71,18 +71,18 @@ Returns ``true`` if futures are available in the OpenXR runtime used. This funct
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **register_future**\ (\ future\: :ref:`int<class_int>`, on_success\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRFutureExtension_method_register_future>`
 
-Register an OpenXR Future object so we monitor for completion. ``future`` must be an ``XrFutureEXT`` value previously returned by an API that started an asynchronous function.
+注冊 OpenXR Future 物件，用於監視完成情況。\ ``future`` 必須是此前啟動非同步函式 API 所回傳的 ``XrFutureEXT`` 值。
 
-You can optionally specify ``on_success``, it will be invoked on successful completion of the future.
+你還可以指定 ``on_success``\ ，會在 future 成功完成時呼叫。
 
-Or you can use the returned :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object to ``await`` its :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>` signal.
+你也可以用回傳的 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 物件來 ``await`` 它的 :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>` 訊號。
 
 ::
 
     var future_result = OpenXRFutureExtension.register_future(future)
     await future_result.completed
     if future_result.get_status() == OpenXRFutureResult.RESULT_FINISHED:
-        # Handle your success
+        # 處理成功的情況
         pass
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`

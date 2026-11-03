@@ -7,9 +7,9 @@ AudioEffectDistortion
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a distortion audio effect to an audio bus.
+Añade un efecto de distorsión de audio a un bus de audio.
 
-Remaps audio samples using a nonlinear function to achieve a distorted sound.
+Remapea las muestras de audio mediante una función no lineal para obtener un sonido distorsionado.
 
 .. rst-class:: classref-introduction-group
 
@@ -18,23 +18,13 @@ Descripción
 
 Un efecto de "distorsión" modifica la forma de onda mediante una función matemática no lineal (consulta las funciones disponibles en :ref:`Mode<enum_AudioEffectDistortion_Mode>`), basándose en la amplitud de las muestras de la forma de onda.
 
-
-
 \ **Nota:** En una función no lineal, una muestra de entrada con un valor de amplitud *x* tendrá su amplitud aumentada o reducida a un valor *y*, según el valor de la función en *x*. Por esta razón, incluso con el mismo :ref:`drive<class_AudioEffectDistortion_property_drive>`, el sonido de salida variará dependiendo del volumen de entrada. Para cambiar el volumen manteniendo la forma de onda de salida, utiliza :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
-
-
 
 En este efecto, cada tipo corresponde a una función no lineal diferente. Los tipos disponibles son: clip, atan, lofi (reducción de bits), overdrive y waveshape. Todos los tipos de distorsión disponibles aquí son simétricos: los valores de amplitud negativos se ven afectados de la misma forma que los valores positivos.
 
-
-
 Aunque la distorsión siempre cambiará el contenido de frecuencia, normalmente introduciendo armónicos superiores, los diferentes tipos de distorsión ofrecen una variedad de características sonoras; desde sonidos "suaves" y "cálidos", hasta sonidos "crujientes" y "agresivos".
 
-
-
 En juegos, puede ayudar a simular de forma muy eficiente el sonido proveniente de un dispositivo o altavoz saturado. También puede ayudar a que el audio destaque en una mezcla, introduciendo frecuencias más altas y aumentando el volumen.
-
-
 
 \ **Nota:** Aunque normalmente es imperceptible, un efecto de distorsión habilitado sigue modificando el sonido incluso cuando :ref:`drive<class_AudioEffectDistortion_property_drive>` está establecido en 0. Esto no es un error. Si este comportamiento no es deseado, considera desactivar el efecto mediante :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
 
@@ -104,7 +94,7 @@ Aplana la onda de forma suave, siguiendo una curva arcotangente. El volumen del 
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_LOFI** = ``2``
 
-Decreases audio bit depth to achieve a low-resolution audio signal, going from 16-bit to 2-bit. Can be used to emulate the sound of early digital audio devices.
+Reduce la profundidad de bits del audio para obtener una señal de baja resolución, pasando de 16 bits a 2 bits. Se puede usar para emular el sonido de los primeros dispositivos de audio digital.
 
 .. _class_AudioEffectDistortion_constant_MODE_OVERDRIVE:
 
@@ -112,7 +102,7 @@ Decreases audio bit depth to achieve a low-resolution audio signal, going from 1
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. :ref:`drive<class_AudioEffectDistortion_property_drive>` has no effect in this mode.
+Emula la distorsión cálida producida por un transistor de efecto de campo, comúnmente utilizado en amplificadores de estado sólido para instrumentos musicales. :ref:`drive<class_AudioEffectDistortion_property_drive>` no tiene efecto en este modo.
 
 .. _class_AudioEffectDistortion_constant_MODE_WAVESHAPE:
 
@@ -193,7 +183,7 @@ Tipo de distorsión. Cambia la función no-lineal usada para distorsionar la ond
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Gain after the effect, in dB. Value can range from -80 to 24.
+Ganancia después del efecto, en decibelios. El valor puede variar entre −80 y 24.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +200,7 @@ Gain after the effect, in dB. Value can range from -80 to 24.
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Gain before the effect, in dB. Value can range from -60 to 60.
+Ganancia antes del efecto, en decibelios. El valor puede variar entre −60 y 60.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

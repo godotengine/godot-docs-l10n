@@ -29,7 +29,7 @@ StaticBody3D
 
 - :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+- :doc:`排查物理問題 <../tutorials/physics/troubleshooting_physics_issues>`
 
 - `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
 

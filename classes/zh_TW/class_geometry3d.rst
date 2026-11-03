@@ -143,7 +143,7 @@ Geometry3D
 
 :ref:`Vector3<class_Vector3>` **get_closest_point_to_segment_uncapped**\ (\ point\: :ref:`Vector3<class_Vector3>`, s1\: :ref:`Vector3<class_Vector3>`, s2\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_get_closest_point_to_segment_uncapped>`
 
-返回直線上與 ``point`` 最近的 3D 點，該直線由 (``s1``, ``s2``) 定義。返回的點可能在線段 (``s1``, ``s2``) 上，也可能不在，即位於線段的延長線上。
+返回直線上與 ``point`` 最近的 3D 點，該直線由 (``s1``, ``s2``) 定義。返回的點可能線上段 (``s1``, ``s2``) 上，也可能不在，即位於線段的延長線上。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Geometry3D
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **tetrahedralize_delaunay**\ (\ points\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_Geometry3D_method_tetrahedralize_delaunay>`
 
-Tetrahedralizes the volume specified by a discrete set of ``points`` in 3D space, ensuring that no point lies within the circumsphere of any resulting tetrahedron. The method returns a :ref:`PackedInt32Array<class_PackedInt32Array>` where each tetrahedron consists of four consecutive point indices into the ``points`` array (resulting in an array with ``n * 4`` elements, where ``n`` is the number of tetrahedra found). If the tetrahedralization is unsuccessful, an empty :ref:`PackedInt32Array<class_PackedInt32Array>` is returned.
+對 3D 空間中由離散的 ``points`` 集指定的區域進行四面體化，確保沒有點位於任何生成的四面體的外接球內。該方法回傳一個 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，其中每個四面體由 ``points`` 中的四個連續點的索引組成（即回傳的陣列將具有 ``n * 4`` 個元素，其中 ``n`` 是找到的四面體的數量）。如果四面體化沒有成功，則回傳一個空的 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

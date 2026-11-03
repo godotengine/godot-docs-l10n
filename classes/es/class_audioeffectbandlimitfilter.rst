@@ -7,7 +7,7 @@ AudioEffectBandLimitFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-limit filter to an audio bus.
+Añade un filtro de límite de banda a un bus de audio.
 
 .. rst-class:: classref-introduction-group
 

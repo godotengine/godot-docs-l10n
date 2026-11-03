@@ -906,11 +906,11 @@ Generates a :ref:`PackedByteArray<class_PackedByteArray>` of cryptographically s
 
 :ref:`String<class_String>` **get_environment**\ (\ variable\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OS_method_get_environment>`
 
-Returns the value of the given environment variable, or an empty string if ``variable`` doesn't exist.
+Renvoie la valeur de la variable d'environnement donnée, ou une chaîne vide si avec ``variable`` n'existe pas.
 
-\ **Note:** Double-check the casing of ``variable``. Environment variable names are case-sensitive on all platforms except Windows.
+\ **Note :** Vérifiez deux fois la casse de ``variable``. Les noms variables d'environnement sont sensibles à la casse sur toutes les plateformes sauf Windows.
 
-\ **Note:** On macOS, applications do not have access to shell environment variables.
+\ **Note :** Sur macOS, les applications n'ont pas accès aux variable d'environnement du shell.
 
 .. rst-class:: classref-item-separator
 

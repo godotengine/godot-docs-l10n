@@ -150,11 +150,11 @@ RandomNumberGenerator 是一个用于生成伪随机数的类。它目前使用 
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a non-negative floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+返回一个介于 ``0`` 与作为参数传入的数组大小之间的随机整数。数组中的每个值应为非负浮点数，表示其对应索引被返回的相对概率。值越大，该索引被返回的概率越高；值为 ``0`` 则表示该索引永远不会被返回。
 
-For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+例如，若传入参数为 ``[0.5, 1, 1, 2]``\ ，则在该方法返回的索引值中，返回 ``1`` 和 ``2`` 的概率是返回 ``3``\ （即值 ``2`` 的索引）的一半，是返回 ``0``\ （即值 ``0.5`` 的索引）的两倍。
 
-Prints an error and returns ``-1`` if the array is empty or contains any negative values.
+如果数组为空或包含任何负值，将打印错误并返回 ``-1``\ 。
 
 
 .. tabs::

@@ -16,9 +16,9 @@ EditorExportPlatform
 說明
 ----
 
-基礎資源，提供從編輯器將專案的發行建構匯出到平臺的功能。儲存特定於平臺的元數據，例如平臺的名稱和支援的功能，並執行專案、PCK 檔和 ZIP 檔的匯出。使用在專案匯出時提供的平臺匯出範本。
+基礎資源，提供從編輯器將專案的發行建構匯出到平臺的功能。儲存特定於平臺的中繼資料，例如平臺的名稱和支援的功能，並執行專案、PCK 檔和 ZIP 檔的匯出。使用在專案匯出時提供的平臺匯出範本。
 
-在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的腳本中用於配置特定於平臺的場景和資源的定制。有關詳細信息，請參閱 :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>`\ 。
+在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的腳本中用於配置特定於平臺的場景和資源的定制。有關詳細資訊，請參閱 :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -105,7 +105,7 @@ enum **ExportMessageType**: :ref:`🔗<enum_EditorExportPlatform_ExportMessageTy
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **EXPORT_MESSAGE_NONE** = ``0``
 
-Invalid message type used as the default value when no type is specified.
+無效訊息型別，是未指定型別時的預設值。
 
 .. _class_EditorExportPlatform_constant_EXPORT_MESSAGE_INFO:
 
@@ -113,7 +113,7 @@ Invalid message type used as the default value when no type is specified.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **EXPORT_MESSAGE_INFO** = ``1``
 
-Message type for informational messages that have no effect on the export.
+資訊類訊息的訊息型別，對匯出沒有影響。
 
 .. _class_EditorExportPlatform_constant_EXPORT_MESSAGE_WARNING:
 
@@ -121,7 +121,7 @@ Message type for informational messages that have no effect on the export.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **EXPORT_MESSAGE_WARNING** = ``2``
 
-Message type for warning messages that should be addressed but still allow to complete the export.
+警告類訊息的訊息型別，應當解決，但仍然允許完成匯出。
 
 .. _class_EditorExportPlatform_constant_EXPORT_MESSAGE_ERROR:
 
@@ -129,7 +129,7 @@ Message type for warning messages that should be addressed but still allow to co
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **EXPORT_MESSAGE_ERROR** = ``3``
 
-Message type for error messages that must be addressed and fail the export.
+錯誤類訊息的訊息型別，必須解決，會讓匯出失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ flags **DebugFlags**: :ref:`🔗<enum_EditorExportPlatform_DebugFlags>`
 
 :ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>` **DEBUG_FLAG_DUMB_CLIENT** = ``1``
 
-Flag is set if the remotely debugged project is expected to use the remote file system. If set, :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` will append ``--remote-fs`` and ``--remote-fs-password`` (if :ref:`EditorSettings.filesystem/file_server/password<class_EditorSettings_property_filesystem/file_server/password>` is defined) command line arguments to the returned list.
+如果希望遠端除錯的專案使用遠端檔案系統，則設定該標誌。如果設定了該標誌，則 :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` 會將 ``--remote-fs`` 和 ``--remote-fs-password``\ （如果定義了 :ref:`EditorSettings.filesystem/file_server/password<class_EditorSettings_property_filesystem/file_server/password>`\ ）命令行參數追加到回傳的清單中。
 
 .. _class_EditorExportPlatform_constant_DEBUG_FLAG_REMOTE_DEBUG:
 
@@ -155,7 +155,7 @@ Flag is set if the remotely debugged project is expected to use the remote file 
 
 :ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>` **DEBUG_FLAG_REMOTE_DEBUG** = ``2``
 
-Flag is set if remote debug is enabled. If set, :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` will append ``--remote-debug`` and ``--breakpoints`` (if breakpoints are selected in the script editor or added by the plugin) command line arguments to the returned list.
+如果啟用了遠端除錯，則設定該標誌。如果設定了該標誌，則 :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` 會將 ``--remote-debug`` 和 ``--breakpoints``\ （如果腳本編輯器中選擇了斷點或外掛新增了斷點）命令行參數追加到回傳的清單中。
 
 .. _class_EditorExportPlatform_constant_DEBUG_FLAG_REMOTE_DEBUG_LOCALHOST:
 
@@ -163,7 +163,7 @@ Flag is set if remote debug is enabled. If set, :ref:`gen_export_flags()<class_E
 
 :ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>` **DEBUG_FLAG_REMOTE_DEBUG_LOCALHOST** = ``4``
 
-Flag is set if remotely debugged project is running on the localhost. If set, :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` will use ``localhost`` instead of :ref:`EditorSettings.network/debug/remote_host<class_EditorSettings_property_network/debug/remote_host>` as remote debugger host.
+如果遠端除錯的專案在本機執行，則設定該標誌。如果設定了該標誌，則 :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` 會使用 ``localhost`` 作為遠端除錯器主機，不使用 :ref:`EditorSettings.network/debug/remote_host<class_EditorSettings_property_network/debug/remote_host>`\ 。
 
 .. _class_EditorExportPlatform_constant_DEBUG_FLAG_VIEW_COLLISIONS:
 
@@ -171,7 +171,7 @@ Flag is set if remotely debugged project is running on the localhost. If set, :r
 
 :ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>` **DEBUG_FLAG_VIEW_COLLISIONS** = ``8``
 
-Flag is set if the "Visible Collision Shapes" remote debug option is enabled. If set, :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` will append the ``--debug-collisions`` command line argument to the returned list.
+如果啟用了“顯示碰撞形狀”遠端除錯選項，則設定該標誌。如果設定了該標誌，則 :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` 會將 ``--debug-collisions`` 命令行參數追加到回傳的清單中。
 
 .. _class_EditorExportPlatform_constant_DEBUG_FLAG_VIEW_NAVIGATION:
 
@@ -179,7 +179,7 @@ Flag is set if the "Visible Collision Shapes" remote debug option is enabled. If
 
 :ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>` **DEBUG_FLAG_VIEW_NAVIGATION** = ``16``
 
-Flag is set if the "Visible Navigation" remote debug option is enabled. If set, :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` will append the ``--debug-navigation`` command line argument to the returned list.
+如果啟用了“顯示導航”遠端除錯選項，則設定該標誌。如果設定了該標誌，則 :ref:`gen_export_flags()<class_EditorExportPlatform_method_gen_export_flags>` 會將 ``--debug-navigation`` 命令行參數追加到回傳的清單中。
 
 .. rst-class:: classref-section-separator
 
@@ -196,7 +196,7 @@ Flag is set if the "Visible Navigation" remote debug option is enabled. If set, 
 
 |void| **add_message**\ (\ type\: :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>`, category\: :ref:`String<class_String>`, message\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlatform_method_add_message>`
 
-Adds a message to the export log that will be displayed when exporting ends.
+在匯出記錄中新增一條訊息，會在匯出結束時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Adds a message to the export log that will be displayed when exporting ends.
 
 |void| **clear_messages**\ (\ ) :ref:`🔗<class_EditorExportPlatform_method_clear_messages>`
 
-Clears the export log.
+清空匯出記錄。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Clears the export log.
 
 :ref:`EditorExportPreset<class_EditorExportPreset>` **create_preset**\ (\ ) :ref:`🔗<class_EditorExportPlatform_method_create_preset>`
 
-Create a new preset for this platform.
+新建該平台的預設。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Create a new preset for this platform.
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_pack**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_pack>`
 
-Creates a PCK archive at ``path`` for the specified ``preset``.
+使用 ``preset`` 預設在 ``path`` 路徑處建立 PCK 包。
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Creates a PCK archive at ``path`` for the specified ``preset``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_pack_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, patches\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_pack_patch>`
 
-Creates a patch PCK archive at ``path`` for the specified ``preset``, containing only the files that have changed since the last patch.
+使用 ``preset`` 預設在 ``path`` 路徑處建立 PCK 補丁包，只會包含相對於上一個補丁發生更改的檔案。
 
-\ **Note:** ``patches`` is an optional override of the set of patches defined in the export preset. When empty the patches defined in the export preset will be used instead.
+\ **注意：**\ ``patches`` 是可選的，會覆蓋匯出預設中定義的補丁集。留空時會使用匯出預設中定義的補丁。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Creates a patch PCK archive at ``path`` for the specified ``preset``, containing
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0, notify\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project>`
 
-Creates a full project at ``path`` for the specified ``preset``. If ``notify`` is ``true``, plugins using :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>` will be called during the process.
+在指定的 ``path``\ （路徑）下，為指定的 ``preset``\ （預設）建立一個完整的專案。如果 ``notify`` 為 ``true``\ ，則在此過程中會呼叫使用了 :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>` 的外掛。
 
 .. rst-class:: classref-item-separator
 
@@ -270,13 +270,13 @@ Creates a full project at ``path`` for the specified ``preset``. If ``notify`` i
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project_files**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, save_cb\: :ref:`Callable<class_Callable>`, shared_cb\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project_files>`
 
-Exports project files for the specified preset. This method can be used to implement custom export format, other than PCK and ZIP. One of the callbacks is called for each exported file.
+使用指定的預設匯出專案檔案。該方法可以用來實作與 PCK 和 ZIP 不同的自訂匯出格式。每個匯出的檔案都會呼叫一個回呼。
 
-\ ``save_cb`` is called for all exported files and have the following arguments: ``file_path: String``, ``file_data: PackedByteArray``, ``file_index: int``, ``file_count: int``, ``encryption_include_filters: PackedStringArray``, ``encryption_exclude_filters: PackedStringArray``, ``encryption_key: PackedByteArray``.
+\ ``save_cb`` 會針對所有匯出的檔案呼叫，參數為：\ ``file_path: String``\ 、\ ``file_data: PackedByteArray``\ 、\ ``file_index: int``\ 、\ ``file_count: int``\ 、\ ``encryption_include_filters: PackedStringArray``\ 、\ ``encryption_exclude_filters: PackedStringArray``\ 、\ ``encryption_key: PackedByteArray``\ 。
 
-\ ``shared_cb`` is called for exported native shared/static libraries and have the following arguments: ``file_path: String``, ``tags: PackedStringArray``, ``target_folder: String``.
+\ ``shared_cb`` 會針對匯出的共享/靜態庫呼叫，參數為：\ ``file_path: String``\ 、\ ``tags: PackedStringArray``\ 、\ ``target_folder: String``\ 。
 
-\ **Note:** ``file_index`` and ``file_count`` are intended for progress tracking only and aren't necessarily unique and precise.
+\ **注意：**\ ``file_index`` 和 ``file_count`` 僅供追蹤進度使用，不一定唯一，也不一定精確。
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ Exports project files for the specified preset. This method can be used to imple
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_zip**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_zip>`
 
-Create a ZIP archive at ``path`` for the specified ``preset``.
+使用 ``preset`` 預設在 ``path`` 路徑處建立 ZIP 壓縮檔。
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ Create a ZIP archive at ``path`` for the specified ``preset``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_zip_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, patches\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_zip_patch>`
 
-Create a patch ZIP archive at ``path`` for the specified ``preset``, containing only the files that have changed since the last patch.
+使用 ``preset`` 預設在 ``path`` 路徑處建立 ZIP 補丁壓縮檔，只會包含相對於上一個補丁發生更改的檔案。
 
-\ **Note:** ``patches`` is an optional override of the set of patches defined in the export preset. When empty the patches defined in the export preset will be used instead.
+\ **注意：**\ ``patches`` 是可選的，會覆蓋匯出預設中定義的補丁集。留空時會使用匯出預設中定義的補丁。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Create a patch ZIP archive at ``path`` for the specified ``preset``, containing 
 
 :ref:`Dictionary<class_Dictionary>` **find_export_template**\ (\ template_file_name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_find_export_template>`
 
-Locates export template for the platform, and returns :ref:`Dictionary<class_Dictionary>` with the following keys: ``path: String`` and ``error: String``. This method is provided for convenience and custom export platforms aren't required to use it or keep export templates stored in the same way official templates are.
+定位該平台的匯出範本，回傳帶有以下欄位的 :ref:`Dictionary<class_Dictionary>`\ ：路徑 ``path: String`` 和錯誤 ``error: String``\ 。該方法旨在方便使用，自訂匯出平台不必使用，也不必和官方範本一樣儲存匯出範本。
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Locates export template for the platform, and returns :ref:`Dictionary<class_Dic
 
 :ref:`PackedStringArray<class_PackedStringArray>` **gen_export_flags**\ (\ flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) :ref:`🔗<class_EditorExportPlatform_method_gen_export_flags>`
 
-Generates array of command line arguments for the default export templates for the debug flags and editor settings.
+生成命令行參數陣列，適用於使用除錯標誌和編輯器設定的預設匯出範本。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Generates array of command line arguments for the default export templates for t
 
 :ref:`Array<class_Array>` **get_current_presets**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_current_presets>`
 
-Returns array of :ref:`EditorExportPreset<class_EditorExportPreset>`\ s for this platform.
+回傳該平台的 :ref:`EditorExportPreset<class_EditorExportPreset>` 陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Returns array of :ref:`EditorExportPreset<class_EditorExportPreset>`\ s for this
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_forced_export_files**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>` = null\ ) |static| :ref:`🔗<class_EditorExportPlatform_method_get_forced_export_files>`
 
-Returns array of core file names that always should be exported regardless of preset config.
+回傳核心檔名陣列，這些檔案無論預設設定如何都應該匯出。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Returns array of core file names that always should be exported regardless of pr
 
 :ref:`Dictionary<class_Dictionary>` **get_internal_export_files**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorExportPlatform_method_get_internal_export_files>`
 
-Returns additional files that should always be exported regardless of preset configuration, and are not part of the project source. The returned :ref:`Dictionary<class_Dictionary>` contains filename keys (:ref:`String<class_String>`) and their corresponding raw data (:ref:`PackedByteArray<class_PackedByteArray>`).
+回傳無論預設如何設定都應當額外匯出的檔案，這些檔案不在專案原始檔中。回傳的 :ref:`Dictionary<class_Dictionary>` 使用檔名作為鍵（\ :ref:`String<class_String>`\ ），值為對應的原始資料（\ :ref:`PackedByteArray<class_PackedByteArray>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Returns additional files that should always be exported regardless of preset con
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Returns the message category for the message with the given ``index``.
+回傳給定 ``index`` 的訊息的訊息類別。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the message category for the message with the given ``index``.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_count>`
 
-Returns the number of messages in the export log.
+回傳匯出記錄中的訊息數。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Returns the number of messages in the export log.
 
 :ref:`String<class_String>` **get_message_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_text>`
 
-Returns the text for the message with the given ``index``.
+回傳給定 ``index`` 的訊息文字。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns the text for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_message_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_type>`
 
-Returns the type for the message with the given ``index``.
+回傳具有給定 ``index`` 的訊息的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Returns the type for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_worst_message_type**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_worst_message_type>`
 
-Returns most severe message type currently present in the export log.
+回傳匯出記錄中目前存在的最嚴重的訊息型別。
 
 .. rst-class:: classref-item-separator
 
@@ -446,9 +446,9 @@ Returns most severe message type currently present in the export log.
 
 :ref:`Dictionary<class_Dictionary>` **save_pack**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, embed\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorExportPlatform_method_save_pack>`
 
-Saves PCK archive and returns :ref:`Dictionary<class_Dictionary>` with the following keys: ``result: Error``, ``so_files: Array`` (array of the shared/static objects which contains dictionaries with the following keys: ``path: String``, ``tags: PackedStringArray``, and ``target_folder: String``).
+儲存 PCK 封存檔並回傳 :ref:`Dictionary<class_Dictionary>`\ ，包含以下欄位：\ ``result: Error``\ 、\ ``so_files: Array``\ （包含字典的共享/靜態物件陣列，字典中包含以下欄位：\ ``path: String``\ 、\ ``tags: PackedStringArray``\ 、\ ``target_folder: String``\ ）。
 
-If ``embed`` is ``true``, PCK content is appended to the end of ``path`` file and return :ref:`Dictionary<class_Dictionary>` additionally include following keys: ``embedded_start: int`` (embedded PCK offset) and ``embedded_size: int`` (embedded PCK size).
+如果 ``embed`` 為 ``true``\ ，則 PCK 中的內容會追加到 ``path`` 檔案的末尾，回傳的 :ref:`Dictionary<class_Dictionary>` 中額外包含以下欄位：\ ``embedded_start: int``\ （嵌入 PCK 的偏移量）和 ``embedded_size: int``\ （嵌入 PCK 的大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ If ``embed`` is ``true``, PCK content is appended to the end of ``path`` file an
 
 :ref:`Dictionary<class_Dictionary>` **save_pack_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlatform_method_save_pack_patch>`
 
-Saves patch PCK archive and returns :ref:`Dictionary<class_Dictionary>` with the following keys: ``result: Error``, ``so_files: Array`` (array of the shared/static objects which contains dictionaries with the following keys: ``path: String``, ``tags: PackedStringArray``, and ``target_folder: String``).
+儲存補丁 PCK 封存檔並回傳 :ref:`Dictionary<class_Dictionary>`\ ，包含以下欄位：\ ``result: Error``\ 、\ ``so_files: Array``\ （包含字典的共享/靜態物件陣列，字典中包含以下欄位：\ ``path: String``\ 、\ ``tags: PackedStringArray``\ 、\ ``target_folder: String``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Saves patch PCK archive and returns :ref:`Dictionary<class_Dictionary>` with the
 
 :ref:`Dictionary<class_Dictionary>` **save_zip**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlatform_method_save_zip>`
 
-Saves ZIP archive and returns :ref:`Dictionary<class_Dictionary>` with the following keys: ``result: Error``, ``so_files: Array`` (array of the shared/static objects which contains dictionaries with the following keys: ``path: String``, ``tags: PackedStringArray``, and ``target_folder: String``).
+儲存 ZIP 封存檔並回傳 :ref:`Dictionary<class_Dictionary>`\ ，包含以下欄位：\ ``result: Error``\ 、\ ``so_files: Array``\ （包含字典的共享/靜態物件陣列，字典中包含以下欄位：\ ``path: String``\ 、\ ``tags: PackedStringArray``\ 、\ ``target_folder: String``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Saves ZIP archive and returns :ref:`Dictionary<class_Dictionary>` with the follo
 
 :ref:`Dictionary<class_Dictionary>` **save_zip_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlatform_method_save_zip_patch>`
 
-Saves patch ZIP archive and returns :ref:`Dictionary<class_Dictionary>` with the following keys: ``result: Error``, ``so_files: Array`` (array of the shared/static objects which contains dictionaries with the following keys: ``path: String``, ``tags: PackedStringArray``, and ``target_folder: String``).
+儲存補丁 ZIP 封存檔並回傳 :ref:`Dictionary<class_Dictionary>`\ ，包含以下欄位：\ ``result: Error``\ 、\ ``so_files: Array``\ （包含字典的共享/靜態物件陣列，字典中包含以下欄位：\ ``path: String``\ 、\ ``tags: PackedStringArray``\ 、\ ``target_folder: String``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Saves patch ZIP archive and returns :ref:`Dictionary<class_Dictionary>` with the
 
 :ref:`Error<enum_@GlobalScope_Error>` **ssh_push_to_remote**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`String<class_String>`, scp_args\: :ref:`PackedStringArray<class_PackedStringArray>`, src_file\: :ref:`String<class_String>`, dst_file\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_ssh_push_to_remote>`
 
-Uploads specified file over SCP protocol to the remote host.
+將指定的檔案通過 SCP 協議上傳至遠端主機。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Uploads specified file over SCP protocol to the remote host.
 
 :ref:`Error<enum_@GlobalScope_Error>` **ssh_run_on_remote**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`String<class_String>`, ssh_arg\: :ref:`PackedStringArray<class_PackedStringArray>`, cmd_args\: :ref:`String<class_String>`, output\: :ref:`Array<class_Array>` = [], port_fwd\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_ssh_run_on_remote>`
 
-Executes specified command on the remote host via SSH protocol and returns command output in the ``output``.
+通過 SSH 協議在遠端主機上執行指定的命令，在 ``output`` 中回傳命令的輸出。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Executes specified command on the remote host via SSH protocol and returns comma
 
 :ref:`int<class_int>` **ssh_run_on_remote_no_wait**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`String<class_String>`, ssh_args\: :ref:`PackedStringArray<class_PackedStringArray>`, cmd_args\: :ref:`String<class_String>`, port_fwd\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_ssh_run_on_remote_no_wait>`
 
-Executes specified command on the remote host via SSH protocol and returns process ID (on the remote host) without waiting for command to finish.
+通過 SSH 協議在遠端主機上執行指定的命令，回傳（遠端主機上的）處理程序 ID，無需等待命令完成。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

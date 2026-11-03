@@ -1545,7 +1545,7 @@ Charge une image à partir du contenu binaire d'un fichier DDS.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_exr_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_exr_from_buffer>`
 
-Loads an image from the binary contents of an OpenEXR file.
+Charge une image à partir du contenu binaire d’un fichier OpenEXR.
 
 .. rst-class:: classref-item-separator
 

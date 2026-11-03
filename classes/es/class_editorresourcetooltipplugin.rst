@@ -49,7 +49,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **_handles**\ (\ type\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceTooltipPlugin_private_method__handles>`
 
-Return ``true`` if the plugin is going to handle the given :ref:`Resource<class_Resource>` ``type``.
+Devuelve ``true`` si el plugin va a gestionar el ``type`` del :ref:`Resource<class_Resource>` dado.
 
 .. rst-class:: classref-item-separator
 

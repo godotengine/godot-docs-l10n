@@ -83,7 +83,7 @@ Un type de vecteur 3D.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-The ``x`` port uses a 3D vector type. The first two ports use a floating-point scalar type.
+Le port ``x`` utilise un type vecteur 3D. Les deux premiers ports utilisent un type scalaire à virgule flottante.
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_4D:
 
@@ -99,7 +99,7 @@ Un type de vecteur 4D.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scalar type.
+Les ports ``a`` et ``b`` utilisent un type vecteur 4D. Le port ``weight`` utilise un type scalaire.
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_MAX:
 

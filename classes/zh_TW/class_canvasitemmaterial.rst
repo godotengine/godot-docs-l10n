@@ -109,7 +109,7 @@ enum **LightMode**: :ref:`🔗<enum_CanvasItemMaterial_LightMode>`
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_NORMAL** = ``0``
 
-使用光敏和非光敏材料屬性算繪材質。
+使用光敏和非光敏材料屬性渲染材質。
 
 .. _class_CanvasItemMaterial_constant_LIGHT_MODE_UNSHADED:
 
@@ -117,7 +117,7 @@ enum **LightMode**: :ref:`🔗<enum_CanvasItemMaterial_LightMode>`
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_UNSHADED** = ``1``
 
-將材質算繪成沒有光的樣子。
+將材質渲染成沒有光的樣子。
 
 .. _class_CanvasItemMaterial_constant_LIGHT_MODE_LIGHT_ONLY:
 
@@ -125,7 +125,7 @@ enum **LightMode**: :ref:`🔗<enum_CanvasItemMaterial_LightMode>`
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_LIGHT_ONLY** = ``2``
 
-將材質算繪成只有光的樣子。
+將材質渲染成只有光的樣子。
 
 .. rst-class:: classref-section-separator
 
@@ -147,7 +147,7 @@ enum **LightMode**: :ref:`🔗<enum_CanvasItemMaterial_LightMode>`
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-將材質的算繪套用於基礎紋理的方式。
+將材質的渲染套用於基礎紋理的方式。
 
 .. rst-class:: classref-item-separator
 

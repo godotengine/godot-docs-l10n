@@ -183,9 +183,9 @@ Descripciones de Métodos
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_directory**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 493, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_add_directory>`
 
-Adds directory to the archive. If ``modified_time`` is set to ``0``, current system time is used.
+Agrega el directorio al archivo. Si el ``modified_time`` está establecida en ``0``, el sistema actual es usado.
 
-\ **Note:** Directories are automatically created when :ref:`start_file()<class_ZIPPacker_method_start_file>` is called, use this function before adding files to create directories with custom permissions and modification time.
+\ **Nota:** Los directorios son automáticamente creados cuando el :ref:`start_file()<class_ZIPPacker_method_start_file>` es llamado, usa esta función antes de añadir carpetas para crear directorios con permisos personalizados y tiempo de modificación.
 
 .. rst-class:: classref-item-separator
 

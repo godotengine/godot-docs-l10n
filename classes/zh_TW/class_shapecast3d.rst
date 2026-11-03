@@ -16,7 +16,7 @@ ShapeCast3D
 
 形狀投射會將其 :ref:`shape<class_ShapeCast3D_property_shape>` 沿著 :ref:`target_position<class_ShapeCast3D_property_target_position>` 確定的投射方向進行掃描，能夠偵測到碰撞物件。類似於 :ref:`RayCast3D<class_RayCast3D>`\ ，但是能夠掃描空間中的一個區域，而不僅僅是一條直線。\ **ShapeCast3D** 能夠偵測到多個碰撞物件。可用於實作較寬的鐳射射線，或者將簡單的形狀吸附到地面。
 
-要立即偵測碰撞重疊，可以將 :ref:`target_position<class_ShapeCast3D_property_target_position>` 設定為 ``Vector3(0, 0, 0)``\ ，並在同一個物理影格中呼叫 :ref:`force_shapecast_update()<class_ShapeCast3D_method_force_shapecast_update>`\ 。這樣就能夠克服 :ref:`Area3D<class_Area3D>` 在進行連續區域偵測時的局限性，因為它無法立即獲取碰撞信息。
+要立即偵測碰撞重疊，可以將 :ref:`target_position<class_ShapeCast3D_property_target_position>` 設定為 ``Vector3(0, 0, 0)``\ ，並在同一個物理影格中呼叫 :ref:`force_shapecast_update()<class_ShapeCast3D_method_force_shapecast_update>`\ 。這樣就能夠克服 :ref:`Area3D<class_Area3D>` 在進行連續區域偵測時的局限性，因為它無法立即取得碰撞資訊。
 
 \ **注意：**\ 形狀投射比射線投射的計算量更大。
 
@@ -272,7 +272,7 @@ ShapeCast3D
 - |void| **set_shape**\ (\ value\: :ref:`Shape3D<class_Shape3D>`\ )
 - :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ )
 
-The shape to be used for collision queries.
+用於碰撞查詢的形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ The shape to be used for collision queries.
 - |void| **set_target_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_target_position**\ (\ )
 
-The shape's destination point, relative to this node's :ref:`Node3D.position<class_Node3D_property_position>`.
+形狀的目標點，相對於該節點的 :ref:`Node3D.position<class_Node3D_property_position>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -306,7 +306,7 @@ The shape's destination point, relative to this node's :ref:`Node3D.position<cla
 
 |void| **add_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_ShapeCast3D_method_add_exception>`
 
-Adds a collision exception so the shape does not report collisions with the specified node.
+新增碰撞例外，使該形狀不彙報與指定節點的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ Adds a collision exception so the shape does not report collisions with the spec
 
 |void| **force_shapecast_update**\ (\ ) :ref:`🔗<class_ShapeCast3D_method_force_shapecast_update>`
 
-Updates the collision information for the shape immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the shape or its parent has changed state.
+立即更新形狀的碰撞資訊，不等待下一次的 ``_physics_process`` 呼叫。例如，請在形狀或其父級更改狀態後使用該方法。
 
-\ **Note:** Setting :ref:`enabled<class_ShapeCast3D_property_enabled>` to ``true`` is not required for this to work.
+\ **注意：**\ 不將 :ref:`enabled<class_ShapeCast3D_property_enabled>` 設定為 ``true`` 也可以生效。
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Updates the collision information for the shape immediately, without waiting for
 
 :ref:`float<class_float>` **get_closest_collision_safe_fraction**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_closest_collision_safe_fraction>`
 
-Returns the fraction from this cast's origin to its :ref:`target_position<class_ShapeCast3D_property_target_position>` of how far the shape can move without triggering a collision, as a value between ``0.0`` and ``1.0``.
+回傳從投射原點到 :ref:`target_position<class_ShapeCast3D_property_target_position>` 之間的分數，形狀在不觸發碰撞的情況下能夠移動多遠，是一個 ``0.0`` 到 ``1.0`` 之間的值。
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Returns the fraction from this cast's origin to its :ref:`target_position<class_
 
 :ref:`float<class_float>` **get_closest_collision_unsafe_fraction**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_closest_collision_unsafe_fraction>`
 
-Returns the fraction from this cast's origin to its :ref:`target_position<class_ShapeCast3D_property_target_position>` of how far the shape must move to trigger a collision, as a value between ``0.0`` and ``1.0``.
+回傳從投射原點到 :ref:`target_position<class_ShapeCast3D_property_target_position>` 之間的分數，形狀移動多遠才能夠觸發碰撞，是一個 ``0.0`` 到 ``1.0`` 之間的值。
 
-In ideal conditions this would be the same as :ref:`get_closest_collision_safe_fraction()<class_ShapeCast3D_method_get_closest_collision_safe_fraction>`, however shape casting is calculated in discrete steps, so the precise point of collision can occur between two calculated positions.
+在理想條件下與 :ref:`get_closest_collision_safe_fraction()<class_ShapeCast3D_method_get_closest_collision_safe_fraction>` 相同，但是形狀投射是分步驟計算的，因此精確的碰撞點可能發生在兩個計算位置之間。
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ In ideal conditions this would be the same as :ref:`get_closest_collision_safe_f
 
 :ref:`Vector3<class_Vector3>` **get_collision_point**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collision_point>`
 
-Returns the collision point of one of the multiple collisions at ``index`` where the shape intersects the colliding object.
+回傳形狀與碰撞物件相交的 ``index`` 處多次碰撞之一的碰撞點。
 
-\ **Note:** This point is in the **global** coordinate system.
+\ **注意：**\ 這個點使用\ **全域**\ 座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Returns the collision point of one of the multiple collisions at ``index`` where
 
 |void| **remove_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_ShapeCast3D_method_remove_exception>`
 
-Removes a collision exception so the shape does report collisions with the specified node.
+移除碰撞例外，使該形狀能夠彙報與指定節點的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Removes a collision exception so the shape does report collisions with the speci
 
 **已棄用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-This method does nothing.
+這個方法甚麼也不做。
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ This method does nothing.
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ShapeCast3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

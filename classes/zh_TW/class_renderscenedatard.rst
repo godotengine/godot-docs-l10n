@@ -7,16 +7,16 @@ RenderSceneDataRD
 
 **繼承：** :ref:`RenderSceneData<class_RenderSceneData>` **<** :ref:`Object<class_Object>`
 
-Render scene data implementation for the RenderingDevice based renderers.
+基於 RenderingDevice 的渲染器的渲染場景資料實作。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object holds scene data related to rendering a single frame of a viewport. See also :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
+物件儲存與渲染視埠的單個影格相關的場景資料。另見 :ref:`RenderSceneData<class_RenderSceneData>`\ 、\ :ref:`RenderData<class_RenderData>` 和 :ref:`RenderDataRD<class_RenderDataRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是一個內部渲染伺服器物件。不要從腳本中實例化該類。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

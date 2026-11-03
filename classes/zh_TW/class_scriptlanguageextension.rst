@@ -322,7 +322,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_ScriptLanguageExtension_CodeCom
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_PARENT_MASK** = ``256``
 
-The option is from the containing class or a parent class, relative to the location of the code completion query. Perform a bitwise OR with the class depth (e.g. ``0`` for the local class, ``1`` for the parent, ``2`` for the grandparent, etc.) to store the depth of an option in the class or a parent class.
+該選項來自於所在的類或父類別，相對於程式碼補全查詢的位置。請使用類的深度進行按位 OR（或）運算（例如 ``0`` 表示目前類，\ ``1`` 表示父類別，\ ``2`` 表示父類別的父類別等），從而在目前類或父類別中儲存選項的深度。
 
 .. _class_ScriptLanguageExtension_constant_LOCATION_OTHER_USER_CODE:
 
@@ -330,7 +330,7 @@ The option is from the containing class or a parent class, relative to the locat
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_OTHER_USER_CODE** = ``512``
 
-該選項來自使用者程式碼，不是局部，也不是衍生類（例如自動載入單例）。
+該選項來自使用者程式碼，不是區域，也不是衍生類（例如自動載入單例）。
 
 .. _class_ScriptLanguageExtension_constant_LOCATION_OTHER:
 
@@ -731,7 +731,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_ScriptLanguageExtension_CodeComplet
 
 :ref:`String<class_String>` **_debug_get_stack_level_source**\ (\ level\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__debug_get_stack_level_source>`
 
-Returns the source associated with a given debug stack position.
+回傳與給定除錯堆疊位置相關的源。
 
 .. rst-class:: classref-item-separator
 
@@ -757,7 +757,7 @@ Returns the source associated with a given debug stack position.
 
 :ref:`int<class_int>` **_find_function**\ (\ function\: :ref:`String<class_String>`, code\: :ref:`String<class_String>`\ ) |virtual| |required| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__find_function>`
 
-Returns the line where the function is defined in the code, or ``-1`` if the function is not present.
+回傳程式碼中定義該函式的行，如果該函式不存在，則回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1215,7 +1215,7 @@ Returns the line where the function is defined in the code, or ``-1`` if the fun
 
 |void| **_reload_scripts**\ (\ scripts\: :ref:`Array<class_Array>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_scripts>`
 
-Reloads all ``scripts`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+從磁碟重新載入所有 ``scripts``\ ，具體的行為細節取決於 **ScriptLanguageExtension** 的實現。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ Reloads all ``scripts`` from disk and the specifics of how that happens is **Scr
 
 |void| **_reload_tool_script**\ (\ script\: :ref:`Script<class_Script>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_tool_script>`
 
-Reloads the given ``script`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+從磁碟重新載入給定的 ``script``\ ，具體的行為細節取決於 **ScriptLanguageExtension** 的實現。
 
 .. rst-class:: classref-item-separator
 

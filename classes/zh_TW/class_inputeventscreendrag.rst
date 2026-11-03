@@ -7,14 +7,14 @@ InputEventScreenDrag
 
 **繼承：** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表螢幕拖拽事件。
+代表螢幕拖動事件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-存放與螢幕拖拽事件相關的資訊。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
+存放與螢幕拖動事件相關的資訊。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -105,7 +105,7 @@ InputEventScreenDrag
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-The drag position in the viewport the node is in, using the coordinate system of this viewport.
+節點所在視埠中的拖動位置，使用該視埠的座標系。
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ The drag position in the viewport the node is in, using the coordinate system of
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-The drag position relative to the previous position (position at the last frame).
+相對於前一位置（上一影格的位置）的拖動位置。
 
-\ **Note:** :ref:`relative<class_InputEventScreenDrag_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventScreenDrag_property_relative>` in a script that handles touch aiming. To avoid this, use :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>` instead.
+\ **注意：**\ :ref:`relative<class_InputEventScreenDrag_property_relative>` 根據內容縮放係數自動縮放，內容縮放係數由專案的拉伸模式設定定義。這意味著在處理觸摸瞄准的腳本中使用 :ref:`relative<class_InputEventScreenDrag_property_relative>` 時，觸摸靈敏度將根據解析度而有所不同。為了避免這種情況，請改用 :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ The drag position relative to the previous position (position at the last frame)
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-The unscaled drag position relative to the previous position in screen coordinates (position at the last frame). This position is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventScreenDrag_property_relative>` for touch aiming regardless of the project's stretch mode.
+相對於螢幕座標中的上一個位置（上一影格的位置）的未縮放拖動位置。該位置\ *不*\ 根據內容縮放係數或呼叫 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 進行縮放。無論專案的拉伸模式如何，對於觸摸瞄准來說，這都應該優先於 :ref:`relative<class_InputEventScreenDrag_property_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ The unscaled drag position relative to the previous position in screen coordinat
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled drag velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`velocity<class_InputEventScreenDrag_property_velocity>` for touch aiming regardless of the project's stretch mode.
+螢幕座標中未縮放的拖動速度（單位為每秒像素數）。該速度\ *不會*\ 根據內容縮放係數或對 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的呼叫進行縮放。無論專案的拉伸模式如何，對於觸摸瞄准來說，這都應該優先於 :ref:`velocity<class_InputEventScreenDrag_property_velocity>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -209,9 +209,9 @@ The unscaled drag velocity in pixels per second in screen coordinates. This velo
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The drag velocity.
+拖動速度。
 
-\ **Note:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`velocity<class_InputEventScreenDrag_property_velocity>` in a script that handles touch aiming. To avoid this, use :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>` instead.
+\ **注意：**\ :ref:`velocity<class_InputEventScreenDrag_property_velocity>` 根據內容縮放係數自動縮放，內容縮放係數由專案的拉伸模式設定定義。這意味著在處理觸摸瞄准的腳本中使用 :ref:`velocity<class_InputEventScreenDrag_property_velocity>` 時，觸摸靈敏度將根據解析度而表現不同。為了避免這種情況，請改用 :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

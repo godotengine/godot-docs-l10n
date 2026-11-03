@@ -950,7 +950,7 @@ Devuelve el kerning para el par de glifos.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_kerning_list**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_kerning_list>`
 
-Devuelve una lista de anulaciones de kerning.
+Devuelve una lista de sobrescrituras de kerning.
 
 .. rst-class:: classref-item-separator
 
@@ -974,7 +974,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``lang
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_language_support_overrides**\ (\ ) |const| :ref:`🔗<class_FontFile_method_get_language_support_overrides>`
 
-Devuelve una lista de anulaciones de soporte de idiomas.
+Devuelve una lista de sobrescrituras de soporte de idiomas.
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +998,7 @@ Devuelve ``true`` si la sobrescritura de soporte está habilitada para el ``scri
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_script_support_overrides**\ (\ ) |const| :ref:`🔗<class_FontFile_method_get_script_support_overrides>`
 
-Devuelve una lista de anulaciones de compatibilidad de scripts.
+Devuelve una lista de sobrescrituras de compatibilidad de scripts.
 
 .. rst-class:: classref-item-separator
 

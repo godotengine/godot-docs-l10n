@@ -14,7 +14,7 @@ VisualShaderNodeSwitch
 說明
 ----
 
-Returns an associated value of the :ref:`op_type<class_VisualShaderNodeSwitch_property_op_type>` type if the provided boolean value is ``true`` or ``false``.
+如果提供的布林值為 ``true`` 或 ``false``\ ，則回傳 :ref:`op_type<class_VisualShaderNodeSwitch_property_op_type>` 型別的一個關聯值。
 
 .. rst-class:: classref-reftable-group
 

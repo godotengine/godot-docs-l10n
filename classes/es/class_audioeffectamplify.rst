@@ -59,7 +59,7 @@ Descripciones de Propiedades
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Amount of amplification in dB. Positive values make the sound louder, negative values make it quieter. Value can range from -80 to 24.
+Cantidad de amplificación en decibelios. Valores positivos hacen el sonido más fuerte, valores negativos más débiles. Valores pueden alcanzar el rango de -80 a 24.
 
 .. rst-class:: classref-item-separator
 

@@ -17,17 +17,17 @@ Nodo que proyecta una textura sobre una :ref:`MeshInstance3D<class_MeshInstance3
 Descripción
 ----------------------
 
-Los **Decal**\ s se utilizan para project una textura sobre un :ref:`Mesh<class_Mesh>` en la escena. Utiliza Decals para añadir detalles a una escena sin afectar al :ref:`Mesh<class_Mesh>` subyacente. A menudo se utilizan para añadir desgaste a los edificios, añadir suciedad o barro al suelo, o añadir variedad a los props. Los Decals se pueden mover en cualquier momento, lo que los hace adecuados para cosas como blob shadows o laser sight dots.
+Los **Decal** se utilizan para proyectar una textura sobre un :ref:`Mesh<class_Mesh>` en la escena. Utiliza decals para añadir detalles a una escena sin afectar al :ref:`Mesh<class_Mesh>` subyacente. A menudo se utilizan para añadir desgaste a los edificios, añadir suciedad o barro al suelo, o añadir variedad a los props. Los decals se pueden mover en cualquier momento, lo que los hace adecuados para cosas como blob shadows o laser sight dots.
 
-Están hechos de un :ref:`AABB<class_AABB>` y un grupo de :ref:`Texture2D<class_Texture2D>`\ s que especifican el :ref:`Color<class_Color>`, normal, ORM (ambient occlusion, roughness, metallic) y emisión. Los Decals se proyectan dentro de su :ref:`AABB<class_AABB>`, por lo que alterar la orientación del Decal afecta la dirección en la que se proyectan. Por defecto, los Decals se proyectan hacia abajo (es decir, de Y positivo a Y negativo).
+Se componen de un :ref:`AABB<class_AABB>` y un grupo de :ref:`Texture2D<class_Texture2D>` que especifica el :ref:`Color<class_Color>`, la normal, ORM (oclusión ambiental, rugosidad y metalicidad) y emisión. Los decals se proyectan dentro de su :ref:`AABB<class_AABB>`, por lo que alterar la orientación del decal afecta a la dirección en la que se proyectan. Por defecto, los decals se proyectan hacia abajo (es decir, de Y positivo a Y negativo).
 
-Los :ref:`Texture2D<class_Texture2D>`\ s asociados con el Decal se almacenan automáticamente en un atlas de texturas que se utiliza para dibujar los decals, de modo que todos los decals se puedan dibujar a la vez. Godot utiliza decals agrupados, lo que significa que se almacenan en datos de cluster y se dibujan cuando se dibuja el mesh; no se dibujan como un effect de post-procesamiento posterior.
+Las :ref:`Texture2D<class_Texture2D>` asociadas con el decal se almacenan automáticamente en un atlas de texturas que se utiliza para dibujar los decals, de modo que todos los decals se puedan dibujar a la vez. Godot utiliza decals agrupados, lo que significa que se almacenan en datos de clúster y se dibujan cuando se dibuja el mesh; no se dibujan como un efecto de posprocesamiento posterior.
 
-\ **Note:** Los Decals no pueden afectar la transparencia de un material subyacente, independientemente de su modo de transparencia (alpha blend, alpha scissor, alpha hash, opaque pre-pass). Esto significa que las áreas translúcidas o transparentes de un material seguirán siendo translúcidas o transparentes incluso si se aplica un decal opaco sobre ellas.
+\ **Nota:** Los decals no pueden afectar a la transparencia de un material subyacente, independientemente de su modo de transparencia (alpha blend, alpha scissor, alpha hash, opaque pre-pass). Esto significa que las áreas translúcidas o transparentes de un material seguirán siendo translúcidas o transparentes incluso si se aplica un decal opaco sobre ellas.
 
-\ **Note:** Los Decals solo son compatibles con los métodos de renderizado Forward+ y Mobile, no con Compatibility. Al usar el método de renderizado Mobile, solo se pueden mostrar 8 decals en cada recurso mesh. Intentar mostrar más de 8 decals en un solo recurso mesh hará que los decals parpadeen a medida que la cámara se mueve.
+\ **Nota:** Los decals solo son compatibles con los métodos de renderizado Forward+ y Mobile, no con Compatibility. Al usar el método de renderizado Mobile, solo se pueden mostrar 8 decals en cada recurso mesh. Intentar mostrar más de 8 decals en un solo recurso mesh hará que los decals parpadeen a medida que la cámara se mueve.
 
-\ **Note:** Al usar el método de renderizado Mobile, los decals solo afectarán correctamente a las mallas cuya visibilidad AABB se intersecte con el decal's AABB. Si se usa un shader para deformar el mesh de manera que salga de su AABB, se debe aumentar :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` en el mesh. De lo contrario, el decal podría no ser visible en el mesh.
+\ **Nota:** Al usar el método de renderizado Mobile, los decals solo afectarán correctamente a las mallas cuyo AABB de visibilidad se interseque con el AABB del decal. Si se usa un shader para deformar el mesh de modo que sobresalga de su AABB, debe aumentarse :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` en el mesh. De lo contrario, el decal podría no ser visible en el mesh.
 
 .. rst-class:: classref-reftable-group
 
@@ -226,7 +226,7 @@ Si es ``true``, los decals se desvanecerán suavemente cuando estén lejos de la
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-La distancia sobre la cual el Decal se desvanece (en unidades 3D). El Decal se vuelve lentamente mas transparente a lo largo de esta distancia y es completamente invisible al final. Los valores más altos resultan en una transición de desvanecimiento más suave, lo cual es más adecuado cuando la cámara se mueve rápido.
+La distancia sobre la cual el Decal se desvanece (en unidades 3D). El Decal se vuelve lentamente más transparente a lo largo de esta distancia y es completamente invisible al final. Los valores más altos resultan en una transición de desvanecimiento más suave, lo cual es más adecuado cuando la cámara se mueve rápido.
 
 .. rst-class:: classref-item-separator
 

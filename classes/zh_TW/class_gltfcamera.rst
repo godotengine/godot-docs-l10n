@@ -7,14 +7,14 @@ GLTFCamera
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF camera.
+代表 glTF 相機。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a camera as defined by the base glTF spec.
+代表基礎 glTF 規格中定義的相機。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,9 +23,9 @@ Represents a camera as defined by the base glTF spec.
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `glTF camera detailed specification <https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera>`__
+- `glTF 相機的詳細規格 <https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera>`__
 
-- `glTF camera spec and example file <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_015_SimpleCameras.md>`__
+- `glTF 相機規格和範例檔案 <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_015_SimpleCameras.md>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ Represents a camera as defined by the base glTF spec.
 - |void| **set_depth_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_far**\ (\ )
 
-The distance to the far culling boundary for this camera relative to its local Z axis, in meters. This maps to glTF's ``zfar`` property.
+該相機與遠剔除邊界的距離，相對於其區域 Z 軸，單位為米。映射到 glTF 的 ``zfar`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The distance to the far culling boundary for this camera relative to its local Z
 - |void| **set_depth_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_near**\ (\ )
 
-The distance to the near culling boundary for this camera relative to its local Z axis, in meters. This maps to glTF's ``znear`` property.
+該相機與近剔除邊界的距離，相對於其區域 Z 軸，單位為米。映射到 glTF 的 ``znear`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ The distance to the near culling boundary for this camera relative to its local 
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-The FOV of the camera. This class and glTF define the camera FOV in radians, while Godot uses degrees. This maps to glTF's ``yfov`` property. This value is only used for perspective cameras, when :ref:`perspective<class_GLTFCamera_property_perspective>` is ``true``.
+該相機的 FOV。這個類和 glTF 在定義相機 FOV 時使用的都是弧度，但 Godot 使用的是度。映射到 glTF 的 ``yfov`` 屬性。只在透視相機中使用，即 :ref:`perspective<class_GLTFCamera_property_perspective>` 為 ``true`` 時。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The FOV of the camera. This class and glTF define the camera FOV in radians, whi
 - |void| **set_perspective**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_perspective**\ (\ )
 
-If ``true``, the camera is in perspective mode. Otherwise, the camera is in orthographic/orthogonal mode. This maps to glTF's camera ``type`` property. See :ref:`Camera3D.projection<class_Camera3D_property_projection>` and the glTF spec for more information.
+如果為 ``true``\ ，則相機處於透視模式。否則相機處於正交模式。映射到 glTF 的相機 ``type`` 屬性。詳見 :ref:`Camera3D.projection<class_Camera3D_property_projection>` 及 glTF 規格。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ If ``true``, the camera is in perspective mode. Otherwise, the camera is in orth
 - |void| **set_size_mag**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_size_mag**\ (\ )
 
-The size of the camera. This class and glTF define the camera size magnitude as a radius in meters, while Godot defines it as a diameter in meters. This maps to glTF's ``ymag`` property. This value is only used for orthographic/orthogonal cameras, when :ref:`perspective<class_GLTFCamera_property_perspective>` is ``false``.
+該相機的大小。這個類和 glTF 在定義相機大小尺度時使用的都是半徑的米數，但 Godot 使用的是直徑的米數。映射到 glTF 的 ``ymag`` 屬性。只在正交相機中使用，即 :ref:`perspective<class_GLTFCamera_property_perspective>` 為 ``false`` 時。
 
 .. rst-class:: classref-section-separator
 

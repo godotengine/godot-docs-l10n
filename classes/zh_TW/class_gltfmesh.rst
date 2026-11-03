@@ -7,14 +7,14 @@ GLTFMesh
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-GLTFMesh represents a glTF mesh.
+GLTFMesh 代表 glTF 網格。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-GLTFMesh handles 3D mesh data imported from glTF files. It includes properties for blend channels, blend weights, instance materials, and the mesh itself.
+GLTFMesh 處理從 glTF 檔案匯入的 3D 網格資料，包括混合通道、混合權重、實例材質等屬性和網格本身。
 
 .. rst-class:: classref-introduction-group
 
@@ -75,7 +75,7 @@ GLTFMesh handles 3D mesh data imported from glTF files. It includes properties f
 - |void| **set_blend_weights**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_blend_weights**\ (\ )
 
-An array of floats representing the blend weights of the mesh.
+float 陣列，代表網格的混合權重。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -94,7 +94,7 @@ An array of floats representing the blend weights of the mesh.
 - |void| **set_instance_materials**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`Material<class_Material>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`Material<class_Material>`\] **get_instance_materials**\ (\ )
 
-An array of Material objects representing the materials used in the mesh.
+Material 物件陣列，代表網格所使用的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ An array of Material objects representing the materials used in the mesh.
 - |void| **set_mesh**\ (\ value\: :ref:`ImporterMesh<class_ImporterMesh>`\ )
 - :ref:`ImporterMesh<class_ImporterMesh>` **get_mesh**\ (\ )
 
-The :ref:`ImporterMesh<class_ImporterMesh>` object representing the mesh itself.
+代表網格本身的 :ref:`ImporterMesh<class_ImporterMesh>` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ The :ref:`ImporterMesh<class_ImporterMesh>` object representing the mesh itself.
 - |void| **set_original_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_name**\ (\ )
 
-The original name of the mesh.
+網格的原名。
 
 .. rst-class:: classref-section-separator
 
@@ -145,9 +145,9 @@ The original name of the mesh.
 
 :ref:`Variant<class_Variant>` **get_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GLTFMesh_method_get_additional_data>`
 
-Gets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在這個 **GLTFMesh** 實例中取得額外的任意資料。這可用於將每個節點的狀態資料儲存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中，這很重要，因為它們是無狀態的。
 
-The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is ``null``.
+參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必與 glTF 檔案中的副檔名匹配），且回傳值可以是你設定的任何值。如果沒有設定任何內容，則回傳值為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,9 +159,9 @@ The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtensi
 
 |void| **set_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`, additional_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GLTFMesh_method_set_additional_data>`
 
-Sets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
+在這個 **GLTFMesh** 實例中設定額外的任意資料。這可用於將每個節點的狀態資料儲存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 類中，這很重要，因為它們是無狀態的。
 
-The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
+第一個參數應該是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必與 glTF 檔案中的副檔名匹配），第二個參數可以是你想要的任何內容。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

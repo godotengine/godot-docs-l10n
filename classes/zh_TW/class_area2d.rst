@@ -19,7 +19,7 @@ Area2D
 
 **Area2D** 是 2D 空間中的一個區域，由一個或多個 :ref:`CollisionShape2D<class_CollisionShape2D>` 或 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 子節點定義，能夠偵測其他 :ref:`CollisionObject2D<class_CollisionObject2D>` 進入或離開，並持續追蹤尚未離開的碰撞物件（亦即仍與其重疊的物件）。
 
-此節點亦可在區域內局部調整或覆寫物理參數（重力、阻尼），並將音訊導向自訂音訊匯流排。
+此節點亦可在區域內區域調整或覆寫物理參數（重力、阻尼），並將音訊導向自訂音訊匯流排。
 
 \ **注意：** 以 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 建立的 Area 或剛體可能無法與 **Area2D** 如預期互動，亦可能無法正確發出訊號或追蹤物件。
 
@@ -331,7 +331,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-此區域內角阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ 。
+此區域內的角阻尼計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_gravity_space_override_mode**\ (\ )
 
-此區域內重力計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ 。
+該區域內重力計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-此區域內線性阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ 。
+該區域內線性阻尼計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 

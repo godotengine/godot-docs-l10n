@@ -16,9 +16,9 @@ PhysicsDirectSpaceState3D
 說明
 ----
 
-Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`. It's used mainly to do queries against objects and areas residing in a given space.
+提供對 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理空間的直接存取。主要用於對駐留在給定空間中的物件和區域進行查詢。
 
-\ **Note:** This class is not meant to be instantiated directly. Use :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` to get the world's physics 3D space state.
+\ **注意：**\ 該類不應直接實例化。請使用 :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` 取得世界的 3D 物理空間狀態。
 
 .. rst-class:: classref-introduction-group
 
@@ -66,11 +66,11 @@ Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_Phy
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **cast_motion**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_cast_motion>`
 
-Checks how far a :ref:`Shape3D<class_Shape3D>` can move without colliding. All the parameters for the query, including the shape and the motion, are supplied through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object.
+檢查 :ref:`Shape3D<class_Shape3D>` 能夠在不發生碰撞的情況下移動多遠。包括形狀和運動在內的所有查詢參數都通過 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 物件提供。
 
-Returns an array with the safe and unsafe proportions (between 0 and 1) of the motion. The safe proportion is the maximum fraction of the motion that can be made without a collision. The unsafe proportion is the minimum fraction of the distance that must be moved for a collision. If no collision is detected a result of ``[1.0, 1.0]`` will be returned.
+回傳包含該運動的安全和不安全比例（在 0 和 1 之間）的陣列。安全比例是該運動能夠不發生碰撞的最大分數。不安全比例是發生碰撞所需的最小分數。如果沒有檢測到碰撞，則回傳的結果為 ``[1.0, 1.0]``\ 。
 
-\ **Note:** Any :ref:`Shape3D<class_Shape3D>`\ s that the shape is already colliding with e.g. inside of, will be ignored. Use :ref:`collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>` to determine the :ref:`Shape3D<class_Shape3D>`\ s that the shape is already colliding with.
+\ **注意：**\ 該形狀已碰撞的 :ref:`Shape3D<class_Shape3D>` 會被忽略，例如形狀在其內部。請使用 :ref:`collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>` 確定該形狀已碰撞的 :ref:`Shape3D<class_Shape3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -98,23 +98,23 @@ Returns an array with the safe and unsafe proportions (between 0 and 1) of the m
 
 :ref:`Dictionary<class_Dictionary>` **get_rest_info**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_get_rest_info>`
 
-Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object, against the space. If it collides with more than one shape, the nearest one is selected. The returned object is a dictionary containing the following fields:
+檢查通過 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 物件給出的形狀與該空間的交點。如果它與多個形狀發生碰撞，則選擇最近的一個。回傳的物件是一個包含以下欄位的字典：
 
-\ ``collider_id``: The colliding object's ID.
+\ ``collider_id``\ ：該碰撞物件的 ID。
 
-\ ``linear_velocity``: The colliding object's velocity :ref:`Vector3<class_Vector3>`. If the object is an :ref:`Area3D<class_Area3D>`, the result is ``(0, 0, 0)``.
+\ ``linear_velocity``\ ：該碰撞物件的速度 :ref:`Vector3<class_Vector3>`\ 。如果物件是一個 :ref:`Area3D<class_Area3D>`\ ，則結果為 ``(0, 0, 0)``\ 。
 
-\ ``normal``: The collision normal of the query shape at the intersection point, pointing away from the intersecting object.
+\ ``normal``\ ：相交點處查詢形狀的碰撞法線，法線指向遠離相交物件的方向。
 
-\ ``point``: The intersection point.
+\ ``point``\ ：相交點。
 
-\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
+\ ``rid``\ ：該相交物件的 :ref:`RID<class_RID>`\ 。
 
-\ ``shape``: The shape index of the colliding shape.
+\ ``shape``\ ：該碰撞形狀的形狀索引。
 
-If the shape did not intersect anything, then an empty dictionary is returned instead.
+如果該形狀沒有與任何東西相交，則回傳一個空字典。
 
-\ **Note:** This method does not take into account the ``motion`` property of the object.
+\ **注意：**\ 該方法不考慮物件的 ``motion`` 屬性。
 
 .. rst-class:: classref-item-separator
 

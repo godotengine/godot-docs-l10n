@@ -51,7 +51,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_DISABLED** = ``0``
 
-公告板被禁用，該節點不做任何事情。
+公告板被停用，該節點不做任何事情。
 
 .. _class_VisualShaderNodeBillboard_constant_BILLBOARD_TYPE_ENABLED:
 
@@ -105,7 +105,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 - |void| **set_billboard_type**\ (\ value\: :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>`\ )
 - :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **get_billboard_type**\ (\ )
 
-Controls how the object faces the camera.
+控制物件如何面對相機。
 
 .. rst-class:: classref-item-separator
 

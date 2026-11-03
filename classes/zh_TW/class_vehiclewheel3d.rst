@@ -16,14 +16,14 @@ VehicleWheel3D
 
 作為 :ref:`VehicleBody3D<class_VehicleBody3D>` 子節點使用的節點，能夠模擬車輛其中一個車輪的行為。這個節點還充當了碰撞器，能夠偵測車輪是否與某個表面接觸。
 
-\ **注意：**\ 該類存在已知問題，並非旨在提供逼真的 3D 車輛物理效果。如果想要高級車輛物理，可能必須使用其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 類來編寫自己的物理整合函式。
+\ **注意：**\ 該類存在已知問題，並非旨在提供逼真的 3D 車輛物理效果。如果想要進階車輛物理，可能必須使用其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 類來編寫自己的物理整合函式。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `3D 貨車鎮演示 <https://godotengine.org/asset-library/asset/2752>`__
+- `3D 貨車鎮演示 <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -124,7 +124,7 @@ VehicleWheel3D
 - |void| **set_damping_compression**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping_compression**\ (\ )
 
-The damping applied to the suspension spring when being compressed, meaning when the wheel is moving up relative to the vehicle. It is measured in Newton-seconds per millimeter (N⋅s/mm), or megagrams per second (Mg/s). This value should be between 0.0 (no damping) and 1.0, but may be more. A value of 0.0 means the car will keep bouncing as the spring keeps its energy. A good value for this is around 0.3 for a normal car, 0.5 for a race car.
+懸掛彈簧處於壓縮狀態時施加的阻尼，此時的車輪在相對於車輛向上移動。單位為牛頓·秒每毫米（N⋅s/mm）或兆克每秒（Mg/s）。這個值應該在 0.0（無阻尼）和 1.0 之間，但也可能更高。值為 0.0 表示汽車會持續彈跳，因為彈簧能夠保持能量。普通汽車設為 0.3 左右、賽車設為 0.5 左右比較好。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ The damping applied to the suspension spring when being compressed, meaning when
 - |void| **set_damping_relaxation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping_relaxation**\ (\ )
 
-The damping applied to the suspension spring when rebounding or extending, meaning when the wheel is moving down relative to the vehicle. It is measured in Newton-seconds per millimeter (N⋅s/mm), or megagrams per second (Mg/s). This value should be between 0.0 (no damping) and 1.0, but may be more. This value should always be slightly higher than the :ref:`damping_compression<class_VehicleWheel3D_property_damping_compression>` property. For a :ref:`damping_compression<class_VehicleWheel3D_property_damping_compression>` value of 0.3, try a relaxation value of 0.5.
+懸掛彈簧回彈或伸展時施加的阻尼，此時的車輪在相對於車輛向下移動。單位為牛頓·秒每毫米（N⋅s/mm）或兆克每秒（Mg/s）。這個值應該在 0.0（無阻尼）和 1.0 之間，但也可能更高。這個值應該始終略高於 :ref:`damping_compression<class_VehicleWheel3D_property_damping_compression>` 屬性。對於 :ref:`damping_compression<class_VehicleWheel3D_property_damping_compression>` 值為 0.3 的情況，請嘗試將放鬆值設為 0.5。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ The damping applied to the suspension spring when rebounding or extending, meani
 - |void| **set_suspension_stiffness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_suspension_stiffness**\ (\ )
 
-The stiffness of the suspension, measured in Newtons per millimeter (N/mm), or megagrams per second squared (Mg/s²). Use a value lower than 50 for an off-road car, a value between 50 and 100 for a race car and try something around 200 for something like a Formula 1 car.
+懸掛的剛度，測量單位為牛頓每毫米（N/mm）或兆克每平方秒（Mg/s²）。越野車使用低於 50 的值，賽車使用 50 到 100 之間的值，類似於一級方程式賽車的車輛請嘗試使用 200 左右的值。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ The stiffness of the suspension, measured in Newtons per millimeter (N/mm), or m
 - |void| **set_roll_influence**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_roll_influence**\ (\ )
 
-This value affects the roll of your vehicle. If set to 1.0 for all wheels, your vehicle will resist body roll, while a value of 0.0 will be prone to rolling over.
+該值會影響車輛的捲動。如果將所有車輪都設定為 1.0，車輛將抵抗車身側傾，而值為 0.0 則容易翻車。
 
 .. rst-class:: classref-section-separator
 
@@ -365,7 +365,7 @@ This value affects the roll of your vehicle. If set to 1.0 for all wheels, your 
 
 :ref:`Vector3<class_Vector3>` **get_contact_normal**\ (\ ) |const| :ref:`🔗<class_VehicleWheel3D_method_get_contact_normal>`
 
-Returns the normal of the suspension's collision in world space if the wheel is in contact. If the wheel isn't in contact with anything, returns a vector pointing directly along the suspension axis toward the vehicle in world space.
+如果輪子與物體接觸，則回傳懸掛碰撞的法線，使用世界空間。如果輪子沒有與任何物體接觸，則回傳一個指向懸掛軸方向、朝向車輛的向量，使用世界空間。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Returns the normal of the suspension's collision in world space if the wheel is 
 
 :ref:`Vector3<class_Vector3>` **get_contact_point**\ (\ ) |const| :ref:`🔗<class_VehicleWheel3D_method_get_contact_point>`
 
-Returns the point of the suspension's collision in world space if the wheel is in contact. If the wheel isn't in contact with anything, returns the maximum point of the wheel's ray cast in world space, which is defined by ``wheel_rest_length + wheel_radius``.
+如果輪子與物體接觸，則回傳懸掛的碰撞點，使用世界空間。如果輪子沒有與任何物體接觸，則回傳輪子射線投射的最大點，使用世界空間，該點由 ``wheel_rest_length + wheel_radius`` 定義。
 
 .. rst-class:: classref-item-separator
 

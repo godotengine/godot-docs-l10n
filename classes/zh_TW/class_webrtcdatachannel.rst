@@ -122,7 +122,7 @@ enum **ChannelState**: :ref:`🔗<enum_WebRTCDataChannel_ChannelState>`
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **STATE_CLOSING** = ``2``
 
-通道正在關閉，將不接受新的消息，但已經在佇列中的消息將被更新。
+通道正在關閉，將不接受新的訊息，但已經在佇列中的訊息將被更新。
 
 .. _class_WebRTCDataChannel_constant_STATE_CLOSED:
 
@@ -259,7 +259,7 @@ enum **ChannelState**: :ref:`🔗<enum_WebRTCDataChannel_ChannelState>`
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **get_ready_state**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_ready_state>`
 
-Returns the current state of this channel.
+回傳該通道的目前狀態。
 
 .. rst-class:: classref-item-separator
 

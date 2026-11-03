@@ -14,13 +14,13 @@ ConvexPolygonShape2D
 說明
 ----
 
-2D 凸多邊形形狀，旨在用於物理。\ :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 為 ``BUILD_SOLIDS`` 模式時內部會使用這個類。
+2D 凸多邊形形狀，旨在用於物理。\ :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 為 :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` 模式時內部會使用這個類。
 
-\ **ConvexPolygonShape2D** 是\ *實心*\ 的，與空心的 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 不同，如果物件完全位於其內部，也能夠偵測到碰撞。因此更適於偵測和物理。
+\ **ConvexPolygonShape2D** 是\ *實心*\ 的，與空心的 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 不同，如果物件完全位於其內部，也能夠檢測到碰撞。因此更適於檢測和物理。
 
-\ **凸分解：**\ 凹多邊形可以拆分為多個凸多邊形。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗性能為代價），做法是使用多個 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 節點，或者使用 ``BUILD_SOLIDS`` 模式的 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 節點。要根據精靈生成碰撞多邊形，請選中 :ref:`Sprite2D<class_Sprite2D>` 節點，前往出現在視口上方的 **Sprite2D** 功能表，然後選擇\ **建立 Polygon2D 同級**\ 。
+\ **凸分解：**\ 凹多邊形可以拆分為多個凸多邊形。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗效能為代價），做法是使用多個 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 節點，或者使用 :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` 模式的 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 節點。要根據精靈生成碰撞多邊形，請選中 :ref:`Sprite2D<class_Sprite2D>` 節點，前往出現在視埠上方的 **Sprite2D** 選單，然後選擇\ **建立 Polygon2D 同級**\ 。
 
-\ **性能：**\ **ConvexPolygonShape2D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 要快，但比 :ref:`CircleShape2D<class_CircleShape2D>`\ 、\ :ref:`RectangleShape2D<class_RectangleShape2D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
+\ **效能：**\ **ConvexPolygonShape2D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 要快，但比 :ref:`CircleShape2D<class_CircleShape2D>`\ 、\ :ref:`RectangleShape2D<class_RectangleShape2D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
 
 .. rst-class:: classref-reftable-group
 

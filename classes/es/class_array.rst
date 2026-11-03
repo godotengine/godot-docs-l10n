@@ -12,50 +12,50 @@ Una estructura de datos incorporada que contiene una secuencia de elementos.
 Descripción
 ----------------------
 
-An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
+Una estructura de datos de tipo array que puede contener una secuencia de elementos de cualquier tipo :ref:`Variant<class_Variant>` de forma predeterminada. Opcionalmente, los valores pueden restringirse a un tipo específico creando un *array tipado*. Se accede a los elementos mediante un índice numérico que comienza en ``0``. Los índices negativos se utilizan para contar desde el final (``-1`` es el último elemento, ``-2`` es el penúltimo, etc.).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array = ["First", 2, 3, "Last"]
-    print(array[0])  # Prints "First"
-    print(array[2])  # Prints 3
-    print(array[-1]) # Prints "Last"
+    var array = ["Primero", 2, 3, "Último"]
+    print(array[0]) # Imprime "Primero"
+    print(array[2]) # Imprime 3
+    print(array[-1]) # Imprime "Último"
 
-    array[1] = "Second"
-    print(array[1])  # Prints "Second"
-    print(array[-3]) # Prints "Second"
+    array[1] = "Segundo"
+    print(array[1]) # Imprime "Segundo"
+    print(array[-3]) # Imprime "Segundo"
 
-    # This typed array can only contain integers.
-    # Attempting to add any other type will result in an error.
+    # Este array tipado solo puede contener enteros.
+    # Intentar agregar un valor de otro tipo provocará un error.
     var typed_array: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
-    Godot.Collections.Array array = ["First", 2, 3, "Last"];
-    GD.Print(array[0]); // Prints "First"
-    GD.Print(array[2]); // Prints 3
-    GD.Print(array[^1]); // Prints "Last"
+    Godot.Collections.Array array = ["Primero", 2, 3, "Último"];
+    GD.Print(array[0]); // Imprime "Primero"
+    GD.Print(array[2]); // Imprime 3
+    GD.Print(array[^1]); // Imprime "Último"
 
-    array[1] = "Second";
-    GD.Print(array[1]); // Prints "Second"
-    GD.Print(array[^3]); // Prints "Second"
+    array[1] = "Segundo";
+    GD.Print(array[1]); // Imprime "Segundo"
+    GD.Print(array[^3]); // Imprime "Segundo"
 
-    // This typed array can only contain integers.
-    // Attempting to add any other type will result in an error.
+    // Este array tipado solo puede contener enteros.
+    // Intentar agregar un valor de otro tipo provocará un error.
     Godot.Collections.Array<int> typedArray = [1, 2, 3];
 
 
 
-\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
+\ **Nota:** Los arrays siempre se pasan por **referencia**. Para obtener una copia de un array que pueda modificarse independientemente del original, use :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **Nota:** **No** está soportado eliminar elementos mientras se itera sobre arrays, y hacerlo dará como resultado un comportamiento impredecible.
 
-\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+\ **Nota:** En un contexto booleano, un array se evaluará como ``false`` si está vacío (``[]``). De lo contrario, un array siempre se evaluará como ``true``.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arrays empaquetados, tipados y no tipados:** Los arrays empaquetados suelen ser más rápidos de iterar y modificar que un array tipado del mismo tipo (por ejemplo, :ref:`PackedInt64Array<class_PackedInt64Array>` frente a ``Array[int]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, son menos flexibles, ya que no ofrecen tantos métodos auxiliares como :ref:`map()<class_Array_method_map>`. A su vez, los arrays tipados son más rápidos de iterar y modificar que los arrays no tipados.
 
 .. note::
 
@@ -790,11 +790,11 @@ Devuelve el índice de la **primera** aparición de ``what`` en este arreglo, o 
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
 
-\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
+\ ``method`` es un callable que recibe un elemento del arreglo y devuelve un :ref:`bool<class_bool>`.
 
-\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
+\ **Nota:** Si solo desea comprobar si el arreglo contiene *algún* elemento que satisfaga ``method``, utilice :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -805,14 +805,14 @@ Returns the index of the **first** element in the array that causes ``method`` t
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Imprime 2
 
-    # Another example using `bind()` to pass an additional parameter:
+    # Otro ejemplo usando `bind() para pasar un parámetro adicional:
     func is_specific_number(number, expected):
         return number == expected
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Imprime 2
 
 
 
@@ -828,7 +828,7 @@ Returns the index of the **first** element in the array that causes ``method`` t
 
 Devuelve el primer elemento del Arreglo. Imprime un error y retorna ``null`` si el array está vacío. Véase también :ref:`back()<class_Array_method_back>`.
 
-\ **Note:** Llamar esta función ``[]`` no es lo mismo que poner ``array[0]``. Si el array está vacío, acceder por el índice detendrá el la ejecución del proyecto si se ejecuta desde el Editor.
+\ **Nota:** Llamar esta función ``[]`` no es lo mismo que poner ``array[0]``. Si el array está vacío, acceder por el índice detendrá el la ejecución del proyecto si se ejecuta desde el Editor.
 
 .. rst-class:: classref-item-separator
 
@@ -1129,7 +1129,7 @@ Elimina y devuelve el elemento del array en el índice ``position``. Si es negat
 
 :ref:`Variant<class_Variant>` **pop_back**\ (\ ) :ref:`🔗<class_Array_method_pop_back>`
 
-Elimina y devuelve el ultimo elemento del array. Devuelve ``null`` si el array esta vacío, sin generar un error. Véase también :ref:`pop_front()<class_Array_method_pop_front>`.
+Elimina y devuelve el último elemento del array. Devuelve ``null`` si el array está vacío, sin generar un error. Véase también :ref:`pop_front()<class_Array_method_pop_front>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1143,7 +1143,7 @@ Elimina y devuelve el ultimo elemento del array. Devuelve ``null`` si el array e
 
 Elimina y devuelve el primer elemento del array. Devuelve ``null`` si el array está vacío, sin mostrar un mensaje de error. Véase también :ref:`pop_back()<class_Array_method_pop_back>`.
 
-\ **Note:** En arrays largos, este método es mucho más lento que :ref:`pop_back()<class_Array_method_pop_back>` debido a que tiene que re-indexar todos los elementos del array cada vez que es llamado. Mientras más largo el array, más lento será :ref:`pop_front()<class_Array_method_pop_front>`.
+\ **Nota:** En arrays largos, este método es mucho más lento que :ref:`pop_back()<class_Array_method_pop_back>` debido a que tiene que re-indexar todos los elementos del array cada vez que es llamado. Mientras más largo el array, más lento será :ref:`pop_front()<class_Array_method_pop_front>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,9 +1167,9 @@ Agrega un elemento al final del array (alias de :ref:`push_back()<class_Array_me
 
 |void| **push_front**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_push_front>`
 
-Adds an element at the beginning of the array. See also :ref:`push_back()<class_Array_method_push_back>`.
+Añade un elemento al comienzo del array. Véase también :ref:`push_back()<class_Array_method_push_back>`.
 
-\ **Note:** This method shifts every other element's index forward, which may have a noticeable performance cost, especially on larger arrays.
+\ **Nota:** Este método desplaza hacia adelante el índice de todos los demás elementos, lo que puede tener un coste de rendimiento apreciable, especialmente en arrays grandes.
 
 .. rst-class:: classref-item-separator
 
@@ -1462,7 +1462,7 @@ Devuelve ``true`` si el tamaño del arreglo o sus elementos son diferentes a los
 
 :ref:`Array<class_Array>` **operator +**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_sum_Array>`
 
-Agrega el arreglo ``right`` al operando izquierdo, creando un nuevo **Array**. Esto también se conoce como concatenación de arreglos.
+Añade el array ``right`` al operando izquierdo, creando un nuevo **Array**. Esto también se conoce como concatenación de arrays.
 
 
 .. tabs::
@@ -1482,7 +1482,7 @@ Agrega el arreglo ``right`` al operando izquierdo, creando un nuevo **Array**. E
 
 
 
-\ **Nota:** Para arreglos existentes, :ref:`append_array()<class_Array_method_append_array>` es mucho más eficiente que concatenar y asignar usando el operador ``+=``.
+\ **Nota:** Para arrays existentes, :ref:`append_array()<class_Array_method_append_array>` es mucho más eficiente que concatenar y asignar mediante el operador ``+=``.
 
 .. rst-class:: classref-item-separator
 
@@ -1522,7 +1522,7 @@ Si todos los elementos buscados son iguales, devuelve ``true`` si el tamaño de 
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_eq_Array>`
 
-Compara el operando izquierdo **Array** contra el **Array** en ``right`` . Devuelve ``true`` si los tamaños y contenidos de los arrays son iguales, ``false`` en caso contrario.
+Compara el operando izquierdo **Array** contra el **Array** en ``right``. Devuelve ``true`` si los tamaños y contenidos de los arrays son iguales, ``false`` en caso contrario.
 
 .. rst-class:: classref-item-separator
 

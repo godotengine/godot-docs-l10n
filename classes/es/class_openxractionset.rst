@@ -133,7 +133,7 @@ Add an action to this action set.
 
 :ref:`int<class_int>` **get_action_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionSet_method_get_action_count>`
 
-Retrieve the number of actions in our action set.
+Obtiene el número de acciones de nuestro conjunto de acciones.
 
 .. rst-class:: classref-item-separator
 

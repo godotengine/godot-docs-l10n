@@ -135,7 +135,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_h_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **get_h_axis_stretch_mode**\ (\ )
 
-Controls how the stylebox's texture will be stretched or tiled horizontally.
+控制如何水平拉伸或平鋪樣式盒的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Controls how the stylebox's texture will be stretched or tiled horizontally.
 - |void| **set_v_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **get_v_axis_stretch_mode**\ (\ )
 
-Controls how the stylebox's texture will be stretched or tiled vertically.
+控制如何垂直拉伸或平鋪樣式盒的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -271,11 +271,11 @@ Controls how the stylebox's texture will be stretched or tiled vertically.
 - |void| **set_region_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region_rect**\ (\ )
 
-The region to use from the :ref:`texture<class_StyleBoxTexture_property_texture>`.
+:ref:`texture<class_StyleBoxTexture_property_texture>` 中要使用的區域。
 
-This is equivalent to first wrapping the :ref:`texture<class_StyleBoxTexture_property_texture>` in an :ref:`AtlasTexture<class_AtlasTexture>` with the same region.
+等價於首先將 :ref:`texture<class_StyleBoxTexture_property_texture>` 包裹在具有相同區域的 :ref:`AtlasTexture<class_AtlasTexture>` 中。
 
-If empty (``Rect2(0, 0, 0, 0)``), the whole :ref:`texture<class_StyleBoxTexture_property_texture>` is used.
+如果為空（\ ``Rect2(0, 0, 0, 0)``\ ），則將使用整個 :ref:`texture<class_StyleBoxTexture_property_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 

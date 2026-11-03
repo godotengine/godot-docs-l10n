@@ -7,14 +7,14 @@ ReferenceRect
 
 **繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A rectangular box for designing UIs.
+用於設計 UI 的矩形框。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A rectangular box that displays only a colored border around its rectangle (see :ref:`Control.get_rect()<class_Control_method_get_rect>`). It can be used to visualize the extents of a :ref:`Control<class_Control>` node, for testing purposes.
+僅在對應矩形周圍上顯示彩色邊框的矩形框（見 :ref:`Control.get_rect()<class_Control_method_get_rect>`\ ）。可以用來在測試時顯示 :ref:`Control<class_Control>` 的範圍。
 
 .. rst-class:: classref-reftable-group
 

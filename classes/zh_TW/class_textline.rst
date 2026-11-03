@@ -150,7 +150,7 @@ TextLine
 - |void| **set_ellipsis_char**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_ellipsis_char**\ (\ )
 
-Ellipsis character used for text clipping.
+用於文字裁剪的省略字元。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Ellipsis character used for text clipping.
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-The clipping behavior when the text exceeds the text line's set width.
+當文字超出設定的行寬時的裁剪行為。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ The clipping behavior when the text exceeds the text line's set width.
 
 |void| **draw**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextLine_method_draw>`
 
-Draw text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製文字，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Draw text into a canvas item at a given position, with ``color``. ``pos`` specif
 
 |void| **draw_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextLine_method_draw_outline>`
 
-Draw text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+在畫布項中的給定位置繪製文字，顏色為 ``color``\ 。\ ``pos`` 指定的是邊界框的左上角。如果 ``oversampling`` 大於零則會用作字型過取樣係數，否則使用視埠的過取樣設定。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Draw text into a canvas item at a given position, with ``color``. ``pos`` specif
 
 :ref:`TextLine<class_TextLine>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextLine_method_duplicate>`
 
-Duplicates this **TextLine**.
+複製該 **TextLine**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Duplicates this **TextLine**.
 
 :ref:`Direction<enum_TextServer_Direction>` **get_inferred_direction**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_inferred_direction>`
 
-Returns the text writing direction inferred by the BiDi algorithm.
+回傳由 BiDi 算法推斷的文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Returns the text writing direction inferred by the BiDi algorithm.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this line.
+如果該行中嵌入了具有 ``key`` 的物件，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

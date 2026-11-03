@@ -12,17 +12,17 @@ StringName
 說明
 ----
 
-**StringName**\ s are immutable strings designed for general-purpose representation of unique names (also called "string interning"). Two **StringName**\ s with the same value are the same object. Comparing them is extremely fast compared to regular :ref:`String<class_String>`\ s.
+**StringName** 是不可變的字串，用於唯一名稱的通用表示（也叫“字串內嵌”）。值相同的兩個 **StringName** 是同一個物件。進行比較時比普通 :ref:`String<class_String>` 要快很多。
 
-You will usually pass a :ref:`String<class_String>` to methods expecting a **StringName** and it will be automatically converted (often at compile time), but in rare cases you can construct a **StringName** ahead of time with the **StringName** constructor or, in GDScript, the literal syntax ``&"example"``. Manually constructing a **StringName** allows you to control when the conversion from :ref:`String<class_String>` occurs or to use the literal and prevent conversions entirely.
+需要 **StringName** 的方法通常可以傳 :ref:`String<class_String>`\ ，會自動進行轉換（經常發生在編譯時），不過有時候你可能會想要提前使用 **StringName** 建構函式來構造 **StringName**\ ，在 GDScript 中也可以用字面量語法 ``&"example"``\ 。你可以通過手動構造 **StringName** 來控制 :ref:`String<class_String>` 的轉換時機，使用字面量則可以完全消除掉轉換過程。
 
-See also :ref:`NodePath<class_NodePath>`, which is a similar concept specifically designed to store pre-parsed scene tree paths.
+另見 :ref:`NodePath<class_NodePath>`\ ，這是與此類似的概念，針對儲存預解析的場景樹路徑設計。
 
-All of :ref:`String<class_String>`'s methods are available in this class too. They convert the **StringName** into a string, and they also return a string. This is highly inefficient and should only be used if the string is desired.
+\ :ref:`String<class_String>` 的所有方法都在這個類中可用。它們會將 **StringName** 轉換為字串，回傳的也是字串。這樣做效率非常低，應該只在需要字串時使用。
 
-\ **Note:** In C#, an explicit conversion to ``System.String`` is required to use the methods listed on this page. Use the ``ToString()`` method to cast a **StringName** to a string, and then use the equivalent methods in ``System.String`` or ``StringExtensions``.
+\ **注意：**\ 在 C# 中，需要顯式轉換為 ``System.String`` 才能使用本頁列出的方法。使用 ``ToString()`` 方法將 **StringName** 轉換為字串，然後使用 ``System.String`` 或 ``StringExtensions`` 中的等效方法。
 
-\ **Note:** In a boolean context, a **StringName** will evaluate to ``false`` if it is empty (``StringName("")``). Otherwise, a **StringName** will always evaluate to ``true``.
+\ **注意：**\ 轉換為布林值時，空的 **StringName**\ （\ ``StringName("")``\ ）為 ``false``\ ，其他 **StringName** 均為 ``true``\ 。
 
 .. note::
 
@@ -470,11 +470,11 @@ All of :ref:`String<class_String>`'s methods are available in this class too. Th
 
 :ref:`int<class_int>` **casecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_casecmp_to>`
 
-Performs a case-sensitive comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" and "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order.
+與另一個字串進行區分大小寫的比較。如果小於對方則回傳 ``-1``\ ，大於對方則回傳 ``1``\ ，相等則回傳 ``0``\ 。 ‘小於’和‘大於’是由每個字串的 `Unicode 碼點 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 決定的，這大致相當於字母表的順序。
 
-With different string lengths, returns ``1`` if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is *always* ``0``.
+如果兩個字串長度不同，當本字串比 ``to``\ （參數名）字串更長時，回傳 ``1``\ ；如果更短，則回傳 ``-1``\ 。請注意，空字串的長度\ *始終*\ 為 ``0``\ 。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`, :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`, and :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`.
+如果想從字串比較中取得一個 :ref:`bool<class_bool>`\ （布林值）結果，請改用 ``==`` 運算符。另請參閱 :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>` 和 :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -486,25 +486,25 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`bool<class_bool>` **contains**\ (\ what\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_contains>`
 
-Returns ``true`` if the string contains ``what``. In GDScript, this corresponds to the ``in`` operator.
+如果該字串包含 ``what``\ ，則回傳 ``true``\ 。在 GDScript 中對應 ``in`` 運算符。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Node".contains("de")) # Prints true
-    print("team".contains("I"))  # Prints false
-    print("I" in "team")         # Prints false
+    print("Node".contains("de")) # 輸出 true
+    print("team".contains("I"))  # 輸出 false
+    print("I" in "team")         # 輸出 false
 
  .. code-tab:: csharp
 
-    GD.Print("Node".Contains("de")); // Prints True
-    GD.Print("team".Contains("I"));  // Prints False
+    GD.Print("Node".Contains("de")); // 輸出 True
+    GD.Print("team".Contains("I"));  // 輸出 False
 
 
 
-If you need to know where ``what`` is within the string, use :ref:`find()<class_StringName_method_find>`. See also :ref:`containsn()<class_StringName_method_containsn>`.
+如果想要知道 ``what`` 在該字串中的位置，請使用 :ref:`find()<class_StringName_method_find>`\ 。另見 :ref:`containsn()<class_StringName_method_containsn>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -516,9 +516,9 @@ If you need to know where ``what`` is within the string, use :ref:`find()<class_
 
 :ref:`bool<class_bool>` **containsn**\ (\ what\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_containsn>`
 
-Returns ``true`` if the string contains ``what``, **ignoring case**.
+如果\ **忽略大小寫**\ ，字串包含 ``what``\ ，則回傳 ``true``\ 。
 
-If you need to know where ``what`` is within the string, use :ref:`findn()<class_StringName_method_findn>`. See also :ref:`contains()<class_StringName_method_contains>`.
+如果你需要知道 ``what`` 在字串中的位置，請使用 :ref:`findn()<class_StringName_method_findn>`\ 。另見 :ref:`contains()<class_StringName_method_contains>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ If you need to know where ``what`` is within the string, use :ref:`findn()<class
 
 :ref:`int<class_int>` **count**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0, to\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_count>`
 
-返回子串 ``what`` 在 ``from`` 和 ``to`` 位置之間出現的次數。如果 ``to`` 為 0，會在剩餘字串中繼續搜索。
+返回子串 ``what`` 在 ``from`` 和 ``to`` 位置之間出現的次數。如果 ``to`` 為 0，會在剩餘字串中繼續搜尋。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ If you need to know where ``what`` is within the string, use :ref:`findn()<class
 
 :ref:`int<class_int>` **countn**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0, to\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_countn>`
 
-返回子串 ``what`` 在 ``from`` 和 ``to`` 位置之間出現的次數，\ **忽略大小寫**\ 。如果 ``to`` 為 0，會在剩餘字串中繼續搜索。
+返回子串 ``what`` 在 ``from`` 和 ``to`` 位置之間出現的次數，\ **忽略大小寫**\ 。如果 ``to`` 為 0，會在剩餘字串中繼續搜尋。
 
 .. rst-class:: classref-item-separator
 
@@ -590,9 +590,9 @@ If you need to know where ``what`` is within the string, use :ref:`findn()<class
 
 :ref:`int<class_int>` **filecasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filecasecmp_to>`
 
-Like :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>` but prioritizes strings that begin with periods (``.``) and underscores (``_``) before any other character. Useful when sorting folders or file names.
+與 :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>` 類似，但優先考慮以句點（\ ``.``\ ）和底線（\ ``_``\ ）開頭的字串，然後再考慮其他字元。在對資料夾或檔名進行排序時很有用。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`, :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, and :ref:`casecmp_to()<class_StringName_method_casecmp_to>`.
+要從字串比較中取得 :ref:`bool<class_bool>` 結果，請改用 ``==`` 運算符。另見 :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`\ 、\ :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>` 和 :ref:`casecmp_to()<class_StringName_method_casecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +604,9 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **filenocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filenocasecmp_to>`
 
-Like :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` but prioritizes strings that begin with periods (``.``) and underscores (``_``) before any other character. Useful when sorting folders or file names.
+與 :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` 類似，但優先考慮以句點（\ ``.``\ ）和底線（\ ``_``\ ）開頭的字串，然後再考慮其他字元。在對資料夾或檔名進行排序時很有用。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`, :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, and :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`.
+要從字串比較中取得 :ref:`bool<class_bool>` 結果，請改用 ``==`` 運算符。另見 :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`\ 、\ :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` 和 :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -618,32 +618,32 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+回傳 ``what`` 在該字串中\ **第一次**\ 出現的索引，如果不存在則回傳 ``-1``\ 。搜尋的起點可以用 ``from`` 指定，持續到字串結尾。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # 輸出 -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # 輸出 2
+    print("Potato".find("t", 3)) # 輸出 4
+    print("Potato".find("t", 5)) # 輸出 -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // 輸出 -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // 輸出 2
+    GD.Print("Potato".Find("t", 3)); // 輸出 4
+    GD.Print("Potato".Find("t", 5)); // 輸出 -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_StringName_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **注意：**\ 如果你只是想要知道該字串中是否包含 ``what``\ ，請使用 :ref:`contains()<class_StringName_method_contains>`\ 。在 GDScript 中，你還可以使用 ``in`` 運算符。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的負值通過從最後一個有足夠空間找到 ``what`` 的索引開始倒數來轉換為起始索引。
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`int<class_int>` **findn**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_findn>`
 
-返回這個字串中 ``what`` **首次**\ 出現的索引，\ **不區分大小寫**\ ，不存在時則為 ``-1``\ 。搜索的起點可以用 ``from`` 指定，終點為該字元串的末尾。
+返回這個字串中 ``what`` **首次**\ 出現的索引，\ **不區分大小寫**\ ，不存在時則為 ``-1``\ 。搜尋的起點可以用 ``from`` 指定，終點為該字元串的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -667,47 +667,47 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **format**\ (\ values\: :ref:`Variant<class_Variant>`, placeholder\: :ref:`String<class_String>` = "{_}"\ ) |const| :ref:`🔗<class_StringName_method_format>`
 
-Formats the string by replacing all occurrences of ``placeholder`` with the elements of ``values``.
+對字串進行格式化，會將其中出現的所有 ``placeholder`` 都替換為 ``values`` 中的元素。
 
-\ ``values`` can be a :ref:`Dictionary<class_Dictionary>`, an :ref:`Array<class_Array>`, or an :ref:`Object<class_Object>`. Any underscores in ``placeholder`` will be replaced with the corresponding keys in advance. Array elements use their index as keys.
+\ ``values`` 可以是 :ref:`Dictionary<class_Dictionary>`\ 、\ :ref:`Array<class_Array>` 或 :ref:`Object<class_Object>`\ 。\ ``placeholder`` 中的底線都會事先替換為對應的鍵。陣列元素使用對應的索引作為鍵。
 
 ::
 
-    # Prints "Waiting for Godot is a play by Samuel Beckett, and Godot Engine is named after it."
-    var use_array_values = "Waiting for {0} is a play by {1}, and {0} Engine is named after it."
+    # 輸出“Waiting for Godot 是 Samuel Beckett 的戲劇，Godot 引擎由此得名。”
+    var use_array_values = "Waiting for {0} 是 {1} 的戲劇，{0} 引擎由此得名。"
     print(use_array_values.format(["Godot", "Samuel Beckett"]))
 
-    # Prints "User 42 is Godot."
-    print("User {id} is {name}.".format({"id": 42, "name": "Godot"}))
+    # 輸出“第 42 號使用者是 Godot。”
+    print("第 {id} 號使用者是 {name}。".format({"id": 42, "name": "Godot"}))
 
-Some additional handling is performed when ``values`` is an :ref:`Array<class_Array>`. If ``placeholder`` does not contain an underscore, the elements of the ``values`` array will be used to replace one occurrence of the placeholder in order; If an element of ``values`` is another 2-element array, it'll be interpreted as a key-value pair.
-
-::
-
-    # Prints "User 42 is Godot."
-    print("User {} is {}.".format([42, "Godot"], "{}"))
-    print("User {id} is {name}.".format([["id", 42], ["name", "Godot"]]))
-
-When passing an :ref:`Object<class_Object>`, the property names from :ref:`Object.get_property_list()<class_Object_method_get_property_list>` are used as keys.
+當 ``values`` 為 :ref:`Array<class_Array>` 時還會執行一些額外的處理。如果 ``placeholder`` 不包含底線，則 ``values`` 陣列的元素將用於按順序替換出現的佔位符；如果 ``values`` 的元素也是包含兩個元素的陣列，則會被解釋為鍵值對。
 
 ::
 
-    # Prints "Visible true, position (0, 0)"
+    # 輸出“第 42 號使用者是 Godot。”
+    print("第 {} 號使用者是 {}。".format([42, "Godot"], "{}"))
+    print("第 {id} 號使用者是 {name}。".format([["id", 42], ["name", "Godot"]]))
+
+傳入 :ref:`Object<class_Object>` 時，會將 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 中的屬性名稱用作鍵。
+
+::
+
+    # 輸出“可見 true，位置 (0, 0)”
     var node = Node2D.new()
-    print("Visible {visible}, position {position}".format(node))
+    print("可見 {visible}，位置 {position}".format(node))
 
-See also the :doc:`GDScript format string <../tutorials/scripting/gdscript/gdscript_format_string>` tutorial.
+另見 :doc:`GDScript 格式化字串 <../tutorials/scripting/gdscript/gdscript_format_string>`\ 教學。
 
-\ **Note:** Each replacement is done sequentially for each element of ``values``, **not** all at once. This means that if any element is inserted and it contains another placeholder, it may be changed by the next replacement. While this can be very useful, it often causes unexpected results. If not necessary, make sure ``values``'s elements do not contain placeholders.
+\ **注意：**\ 會依序針對 ``values`` 的每個元素進行預留位置替換，\ **並非**\ 同時完成。因此插入的元素中如果包含其他佔位符，就可能在下一次替換時發生改變。這是一把雙刃劍，常會導致預料之外的結果。除非必要，請確保 ``values`` 的元素中不包含佔位符。
 
 ::
 
-    print("{0} {1}".format(["{1}", "x"]))           # Prints "x x"
-    print("{0} {1}".format(["x", "{0}"]))           # Prints "x {0}"
-    print("{a} {b}".format({"a": "{b}", "b": "c"})) # Prints "c c"
-    print("{a} {b}".format({"b": "c", "a": "{b}"})) # Prints "{b} c"
+    print("{0} {1}".format(["{1}", "x"]))           # 輸出“x x”
+    print("{0} {1}".format(["x", "{0}"]))           # 輸出“x {0}”
+    print("{a} {b}".format({"a": "{b}", "b": "c"})) # 輸出“c c”
+    print("{a} {b}".format({"b": "c", "a": "{b}"})) # 輸出“{b} c”
 
-\ **Note:** In C#, it's recommended to `interpolate strings with "$" <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated>`__, instead.
+\ **注意：**\ 在 C# 中推薦改為\ `使用「$」進行字串插值 <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -791,13 +791,13 @@ See also the :doc:`GDScript format string <../tutorials/scripting/gdscript/gdscr
 
 :ref:`String<class_String>` **get_slice**\ (\ delimiter\: :ref:`String<class_String>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_get_slice>`
 
-Splits the string using a ``delimiter`` and returns the substring at index ``slice``. Returns the original string if ``delimiter`` does not occur in the string. Returns an empty string if the ``slice`` does not exist.
+使用分隔符 ``delimiter`` 拆分該字串，回傳索引為 ``slice`` 的子串。如果字串中不存在 ``delimiter`` 則回傳原字串。如果 ``slice`` 不存在則回傳空字串。
 
-This is faster than :ref:`split()<class_StringName_method_split>`, if you only need one substring.
+只需要一個子串時這個方法比 :ref:`split()<class_StringName_method_split>` 快。
 
 ::
 
-    print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
+    print("i/am/example/hi".get_slice("/", 2)) # 輸出“example”
 
 .. rst-class:: classref-item-separator
 
@@ -835,9 +835,9 @@ This is faster than :ref:`split()<class_StringName_method_split>`, if you only n
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_StringName_method_hash>`
 
-Returns the 32-bit hash value representing the string's contents.
+回傳代表該字串內容的 32 位元雜湊值。
 
-\ **Note:** Strings with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. On the contrary, strings with different hash values are guaranteed to be different.
+\ **注意：**\ 由於雜湊碰撞的緣故，雜湊相同的字串\ *不一定*\ 相同。而相對的是，雜湊不同的字串一定不同。
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ Returns the 32-bit hash value representing the string's contents.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **hex_decode**\ (\ ) |const| :ref:`🔗<class_StringName_method_hex_decode>`
 
-Decodes a hexadecimal string as a :ref:`PackedByteArray<class_PackedByteArray>`.
+將十六進位字串解碼為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 
 .. tabs::
@@ -857,13 +857,13 @@ Decodes a hexadecimal string as a :ref:`PackedByteArray<class_PackedByteArray>`.
  .. code-tab:: gdscript
 
     var text = "hello world"
-    var encoded = text.to_utf8_buffer().hex_encode() # outputs "68656c6c6f20776f726c64"
+    var encoded = text.to_utf8_buffer().hex_encode() # 輸出 "68656c6c6f20776f726c64"
     print(encoded.hex_decode().get_string_from_utf8())
 
  .. code-tab:: csharp
 
     var text = "hello world";
-    var encoded = text.ToUtf8Buffer().HexEncode(); // outputs "68656c6c6f20776f726c64"
+    var encoded = text.ToUtf8Buffer().HexEncode(); // 輸出 "68656c6c6f20776f726c64"
     GD.Print(encoded.HexDecode().GetStringFromUtf8());
 
 
@@ -969,16 +969,16 @@ Decodes a hexadecimal string as a :ref:`PackedByteArray<class_PackedByteArray>`.
 
 :ref:`bool<class_bool>` **is_subsequence_of**\ (\ text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_is_subsequence_of>`
 
-Returns ``true`` if all characters of this string can be found in ``text`` in their original order. This is not the same as :ref:`contains()<class_StringName_method_contains>`.
+如果這個字串中的所有字元都能在 ``text`` 中按照原始順序找到，則回傳 ``true``\ 。與 :ref:`contains()<class_StringName_method_contains>` 不同。
 
 ::
 
     var text = "Wow, incredible!"
 
-    print("inedible".is_subsequence_of(text)) # Prints true
-    print("Word!".is_subsequence_of(text))    # Prints true
-    print("Window".is_subsequence_of(text))   # Prints false
-    print("".is_subsequence_of(text))         # Prints true
+    print("inedible".is_subsequence_of(text)) # 輸出 true
+    print("Word!".is_subsequence_of(text))    # 輸出 true
+    print("Window".is_subsequence_of(text))   # 輸出 false
+    print("".is_subsequence_of(text))         # 輸出 true
 
 .. rst-class:: classref-item-separator
 
@@ -990,7 +990,7 @@ Returns ``true`` if all characters of this string can be found in ``text`` in th
 
 :ref:`bool<class_bool>` **is_subsequence_ofn**\ (\ text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_is_subsequence_ofn>`
 
-Returns ``true`` if all characters of this string can be found in ``text`` in their original order, **ignoring case**. This is not the same as :ref:`containsn()<class_StringName_method_containsn>`.
+如果這個字串中的所有字元都能在 ``text`` 中按照原始順序找到，\ **忽略大小寫**\ ，則回傳 ``true``\ 。與 :ref:`containsn()<class_StringName_method_containsn>` 不同。
 
 .. rst-class:: classref-item-separator
 
@@ -1002,16 +1002,16 @@ Returns ``true`` if all characters of this string can be found in ``text`` in th
 
 :ref:`bool<class_bool>` **is_valid_ascii_identifier**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_ascii_identifier>`
 
-Returns ``true`` if this string is a valid ASCII identifier. A valid ASCII identifier may contain only letters, digits, and underscores (``_``), and the first character may not be a digit.
+如果該字串為有效的 ASCII 標識符，則回傳 ``true``\ 。有效的 ASCII 標識符僅可以包含字母、數字和底線（\ ``_``\ ），第一個字元不能為數字。
 
 ::
 
-    print("node_2d".is_valid_ascii_identifier())    # Prints true
-    print("TYPE_FLOAT".is_valid_ascii_identifier()) # Prints true
-    print("1st_method".is_valid_ascii_identifier()) # Prints false
-    print("MyMethod#2".is_valid_ascii_identifier()) # Prints false
+    print("node_2d".is_valid_identifier())    # 輸出 true
+    print("TYPE_FLOAT".is_valid_identifier()) # 輸出 true
+    print("1st_method".is_valid_identifier()) # 輸出 false
+    print("MyMethod#2".is_valid_identifier()) # 輸出 false
 
-See also :ref:`is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>`.
+另見 :ref:`is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1023,7 +1023,7 @@ See also :ref:`is_valid_unicode_identifier()<class_StringName_method_is_valid_un
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_filename>`
 
-Returns ``true`` if this string is a valid file name. A valid file name cannot be empty, begin or end with space characters, or contain characters that are not allowed (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+如果該字串為有效的檔名，則回傳 ``true``\ 。有效的檔名不能為空、頭尾不能是空白字元、不包含不允許的字元（\ ``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1141,22 +1141,22 @@ Returns ``true`` if this string is a valid file name. A valid file name cannot b
 
 :ref:`bool<class_bool>` **is_valid_unicode_identifier**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_unicode_identifier>`
 
-Returns ``true`` if this string is a valid Unicode identifier.
+如果該字串是有效的 Unicode 標識符，則回傳 ``true``\ 。
 
-A valid Unicode identifier must begin with a Unicode character of class ``XID_Start`` or ``"_"``, and may contain Unicode characters of class ``XID_Continue`` in the other positions.
+有效的 Unicode 標識符必須使用 ``XID_Start`` 類的 Unicode 字元或 ``"_"`` 開頭，其他位置可以包含 ``XID_Continue`` 類的 Unicode 字元。
 
 ::
 
-    print("node_2d".is_valid_unicode_identifier())      # Prints true
-    print("1st_method".is_valid_unicode_identifier())   # Prints false
-    print("MyMethod#2".is_valid_unicode_identifier())   # Prints false
-    print("állóképesség".is_valid_unicode_identifier()) # Prints true
-    print("выносливость".is_valid_unicode_identifier()) # Prints true
-    print("体力".is_valid_unicode_identifier())         # Prints true
+    print("node_2d".is_valid_unicode_identifier())      # 輸出 true
+    print("1st_method".is_valid_unicode_identifier())   # 輸出 false
+    print("MyMethod#2".is_valid_unicode_identifier())   # 輸出 false
+    print("állóképesség".is_valid_unicode_identifier()) # 輸出 true
+    print("выносливость".is_valid_unicode_identifier()) # 輸出 true
+    print("體力".is_valid_unicode_identifier())         # 輸出 true
 
-See also :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>`.
+另見 :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>`\ 。
 
-\ **Note:** This method checks identifiers the same way as GDScript. See :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` for more advanced checks.
+\ **注意：**\ 該方法檢查標識符的規則與 GDScript 相同。使用更多進階規則見 :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1168,7 +1168,7 @@ See also :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_asci
 
 :ref:`String<class_String>` **join**\ (\ parts\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_StringName_method_join>`
 
-Returns the concatenation of ``parts``' elements, with each element separated by the string calling this method. This method is the opposite of :ref:`split()<class_StringName_method_split>`.
+回傳將 ``parts`` 中的元素連接組成的字串，元素間使用呼叫該方法的字串進行分隔。該方法和 :ref:`split()<class_StringName_method_split>` 相反。
 
 
 .. tabs::
@@ -1177,16 +1177,16 @@ Returns the concatenation of ``parts``' elements, with each element separated by
 
     var fruits = ["Apple", "Orange", "Pear", "Kiwi"]
 
-    print(", ".join(fruits))  # Prints "Apple, Orange, Pear, Kiwi"
-    print("---".join(fruits)) # Prints "Apple---Orange---Pear---Kiwi"
+    print(", ".join(fruits))  # 輸出 "Apple, Orange, Pear, Kiwi"
+    print("---".join(fruits)) # 輸出 "Apple---Orange---Pear---Kiwi"
 
  .. code-tab:: csharp
 
     string[] fruits = ["Apple", "Orange", "Pear", "Kiwi"];
 
-    // In C#, this method is static.
-    GD.Print(string.Join(", ", fruits));  // Prints "Apple, Orange, Pear, Kiwi"
-    GD.Print(string.Join("---", fruits)); // Prints "Apple---Orange---Pear---Kiwi"
+    // 這個方法在 C# 中是靜態的。
+    GD.Print(string.Join(", ", fruits));   // 輸出 "Apple, Orange, Pear, Kiwi"
+    GD.Print(string.Join("---", fruits)); // 輸出 "Apple---Orange---Pear---Kiwi"
 
 
 
@@ -1315,13 +1315,13 @@ Returns the concatenation of ``parts``' elements, with each element separated by
 
 :ref:`int<class_int>` **naturalcasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_naturalcasecmp_to>`
 
-Performs a **case-sensitive**, *natural order* comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order.
+與另一個字串進行\ **區分大小寫**\ 的\ *自然順序*\ 比較。小於時回傳 ``-1``\ 、大於時回傳 ``1``\ 、等於時回傳 ``0``\ 。“小於”和“大於”比較的是字串中的 `Unicode 碼位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致與字母表順序一致。
 
-When used for sorting, natural order comparison orders sequences of numbers by the combined value of each digit as is often expected, instead of the single digit's value. A sorted sequence of numbered strings will be ``["1", "2", "3", ...]``, not ``["1", "10", "2", "3", ...]``.
+使用自然順序進行排序時，會和常見預期一樣將連續的數字進行組合，而不是一個個數字進行比較。排序後的數列為 ``["1", "2", "3", ...]`` 而不是 ``["1", "10", "2", "3", ...]``\ 。
 
-With different string lengths, returns ``1`` if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is *always* ``0``.
+如果字串長度不同，這個字串比 ``to`` 字串長時回傳 ``1``\ ，短時回傳 ``-1``\ 。請注意空字串的長度\ *始終*\ 為 ``0``\ 。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`, and :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`.
+要從字串比較中獲得 :ref:`bool<class_bool>` 結果，請改用 ``==`` 運算符。另見 :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>` 和 :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1333,13 +1333,13 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **naturalnocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_naturalnocasecmp_to>`
 
-Performs a **case-insensitive**, *natural order* comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order. Internally, lowercase characters are converted to uppercase for the comparison.
+與另一個字串進行\ **不區分大小寫**\ 的\ *自然順序*\ 比較。小於時回傳 ``-1``\ 、大於時回傳 ``1``\ 、等於時回傳 ``0``\ 。“小於”和“大於”比較的是字串中的 `Unicode 碼位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致與字母表順序一致。內部實現時，會將小寫字元轉換為大寫後進行比較。
 
-When used for sorting, natural order comparison orders sequences of numbers by the combined value of each digit as is often expected, instead of the single digit's value. A sorted sequence of numbered strings will be ``["1", "2", "3", ...]``, not ``["1", "10", "2", "3", ...]``.
+使用自然順序進行排序時，會和常見預期一樣將連續的數字進行組合，而不是一個個數字進行比較。排序後的數列為 ``["1", "2", "3", ...]`` 而不是 ``["1", "10", "2", "3", ...]``\ 。
 
-With different string lengths, returns ``1`` if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is *always* ``0``.
+如果字串長度不同，這個字串比 ``to`` 字串長時回傳 ``1``\ ，短時回傳 ``-1``\ 。請注意空字串的長度\ *始終*\ 為 ``0``\ 。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`, and :ref:`casecmp_to()<class_StringName_method_casecmp_to>`.
+要從字串比較中獲得 :ref:`bool<class_bool>` 結果，請改用 ``==`` 運算符。另見 :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>` 和 :ref:`casecmp_to()<class_StringName_method_casecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1351,11 +1351,11 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **nocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_nocasecmp_to>`
 
-Performs a **case-insensitive** comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order. Internally, lowercase characters are converted to uppercase for the comparison.
+對另一個字串執行\ **不區分大小寫**\ 的比較。如果（目前字串）小於目標字串，則回傳 ``-1``\ ；如果大於，則回傳 ``1``\ ；如果相等，則回傳 ``0``\ 。“小於”或“大於”是根據每個字串的 `Unicode 碼點 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 來確定的，這大致上相當於字母表的排列順序。在內部處理時，所有小寫字元都會被轉換成大寫來進行比較。
 
-With different string lengths, returns ``1`` if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is *always* ``0``.
+如果兩個字串的長度不同，且目前字串比 ``to`` 參數指定的字串更長，則回傳 ``1``\ ；如果更短，則回傳 ``-1``\ 。請注意，空字串的長度\ *始終*\ 為 ``0``\ 。
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`casecmp_to()<class_StringName_method_casecmp_to>`, :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`, and :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`.
+如果你想從字串比較中取得一個 :ref:`bool<class_bool>`\ （布林值）結果，請改用 ``==`` 運算符。也可以參考 :ref:`casecmp_to()<class_StringName_method_casecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>` 和 :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` 這幾個方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1391,9 +1391,9 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`String<class_String>` **path_join**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_path_join>`
 
-Concatenates ``path`` at the end of the string as a subpath, adding ``/`` if necessary.
+將 ``path`` 作為子路徑連接到該字串的末尾，必要時會新增 ``/``\ 。
 
-\ **Example:** ``"this/is".path_join("path") == "this/is/path"``.
+\ **範例：**\ ``"this/is".path_join("path") == "this/is/path"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1405,7 +1405,7 @@ Concatenates ``path`` at the end of the string as a subpath, adding ``/`` if nec
 
 :ref:`String<class_String>` **remove_char**\ (\ what\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_remove_char>`
 
-Removes all occurrences of the Unicode character with code ``what``. Faster version of :ref:`replace()<class_StringName_method_replace>` when the key is only one character long and the replacement is ``""``.
+移除字串中出現的所有碼位為 ``what`` 的 Unicode 字元。相較於呼叫 :ref:`replace()<class_StringName_method_replace>` 時鍵為單字串且替換為 ``""`` 要快。
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ Removes all occurrences of the Unicode character with code ``what``. Faster vers
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_StringName_method_remove_char>`.
+移除所有出現在 ``chars`` 中的字元。另見 :ref:`remove_char()<class_StringName_method_remove_char>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1453,7 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`String<class_String>` **replace_char**\ (\ key\: :ref:`int<class_int>`, with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_replace_char>`
 
-Replaces all occurrences of the Unicode character with code ``key`` with the Unicode character with code ``with``. Faster version of :ref:`replace()<class_StringName_method_replace>` when the key is only one character long. To get a single character use ``"X".unicode_at(0)`` (note that some strings, like compound letters and emoji, can be composed of multiple unicode codepoints, and will not work with this method, use :ref:`length()<class_StringName_method_length>` to make sure).
+將所有程式碼為 ``key`` 的 Unicode 字元都替換為程式碼為 ``with`` 的 Unicode 字元。這是 :ref:`replace()<class_StringName_method_replace>` 針對替換目標為單個字元的特化版本，速度更快。取得單個字元請使用 ``"X".unicode_at(0)``\ （請注意，合成字元、Emoji 等字串是由多個 Unicode 碼位構成的，無法使用該方法，請使用 :ref:`length()<class_StringName_method_length>` 判斷）。
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ Replaces all occurrences of the Unicode character with code ``key`` with the Uni
 
 :ref:`String<class_String>` **replace_chars**\ (\ keys\: :ref:`String<class_String>`, with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_replace_chars>`
 
-Replaces any occurrence of the characters in ``keys`` with the Unicode character with code ``with``. See also :ref:`replace_char()<class_StringName_method_replace_char>`.
+將該字串中出現的所有 ``keys`` 中的字元都替換為碼位為 ``with`` 的 Unicode 字元。另見 :ref:`replace_char()<class_StringName_method_replace_char>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1489,7 +1489,7 @@ Replaces any occurrence of the characters in ``keys`` with the Unicode character
 
 :ref:`String<class_String>` **reverse**\ (\ ) |const| :ref:`🔗<class_StringName_method_reverse>`
 
-Returns the copy of this string in reverse order. This operation works on unicode codepoints, rather than sequences of codepoints, and may break things like compound letters or emojis.
+回傳該字串的逆序的副本。該操作適用於 Unicode 程式碼點，而不是程式碼點序列，並且可能會破壞復合字母或表情符號等內容。
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1501,11 @@ Returns the copy of this string in reverse order. This operation works on unicod
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_StringName_method_find>`.
+回傳這個字串中 ``what`` **最後一次**\ 出現時的索引，不存在時則為 ``-1``\ 。搜尋的起點可以用 ``from`` 指定，終點為該字串的開頭。這個方法與 :ref:`find()<class_StringName_method_find>` 相對。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的負值通過從最後一個有足夠空間找到 ``what`` 的索引開始倒數來轉換為起始索引。
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **注意：**\ 如果 ``from`` 的值大於能夠找到 ``what`` 的最後一個可能索引，則視為越界，並回傳 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1517,7 +1517,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`int<class_int>` **rfindn**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfindn>`
 
-返回這個字串中 ``what`` **最後一次**\ 出現時的索引，\ **不區分大小寫**\ ，不存在時則為 ``-1``\ 。搜索的起點可以用 ``from`` 指定，終點為該字串的末尾。這個方法與 :ref:`findn()<class_StringName_method_findn>` 相對。
+返回這個字串中 ``what`` **最後一次**\ 出現時的索引，\ **不區分大小寫**\ ，不存在時則為 ``-1``\ 。搜尋的起點可以用 ``from`` 指定，終點為該字串的末尾。這個方法與 :ref:`findn()<class_StringName_method_findn>` 相對。
 
 .. rst-class:: classref-item-separator
 
@@ -1558,11 +1558,11 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`PackedStringArray<class_PackedStringArray>` **rsplit**\ (\ delimiter\: :ref:`String<class_String>` = "", allow_empty\: :ref:`bool<class_bool>` = true, maxsplit\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_rsplit>`
 
-Splits the string using a ``delimiter`` and returns an array of the substrings, starting from the end of the string. The splits in the returned array appear in the same order as the original string. If ``delimiter`` is an empty string, each substring will be a single character.
+使用分隔符 ``delimiter`` 將該字串從末尾開始進行拆分，回傳子字串陣列。回傳的陣列中，每部分的出現順序與它們在原字串中的出現順序一致。如果 ``delimiter`` 為空，則子串為單個字元。
 
-If ``allow_empty`` is ``false``, empty strings between adjacent delimiters are excluded from the array.
+如果 ``allow_empty`` 為 ``false``\ ，陣列中會排除相鄰分隔符之間的空字串。
 
-If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``maxsplit``. By default, the entire string is split, which is mostly identical to :ref:`split()<class_StringName_method_split>`.
+如果 ``maxsplit`` 大於 ``0``\ ，則拆分次數不能超過 ``maxsplit``\ 。預設拆分整個字串，基本與 :ref:`split()<class_StringName_method_split>` 一致。
 
 
 .. tabs::
@@ -1572,13 +1572,13 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
     var some_string = "One,Two,Three,Four"
     var some_array = some_string.rsplit(",", true, 1)
 
-    print(some_array.size()) # Prints 2
-    print(some_array[0])     # Prints "One,Two,Three"
-    print(some_array[1])     # Prints "Four"
+    print(some_array.size()) # 輸出 2
+    print(some_array[0])     # 輸出“One,Two,Three”
+    print(some_array[1])     # 輸出“Four”
 
  .. code-tab:: csharp
 
-    // In C#, there is no String.RSplit() method.
+    // C# 中沒有 String.RSplit() 方法。
 
 
 
@@ -1592,7 +1592,7 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
 :ref:`String<class_String>` **rstrip**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_rstrip>`
 
-從該字串的結尾移除 ``chars`` 中定義的字元。另見 :ref:`rstrip()<class_StringName_method_rstrip>`\ 。
+從該字串的結尾移除 ``chars`` 中定義的字元。另見 :ref:`lstrip()<class_StringName_method_lstrip>`\ 。
 
 \ **注意：**\ ``chars`` 不是後綴。如果要移除後綴而不是一組字元，請使用 :ref:`trim_suffix()<class_StringName_method_trim_suffix>`\ 。
 
@@ -1654,14 +1654,14 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
 :ref:`float<class_float>` **similarity**\ (\ text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_similarity>`
 
-Returns the similarity index (`Sørensen-Dice coefficient <https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient>`__) of this string compared to another. A result of ``1.0`` means totally similar, while ``0.0`` means totally dissimilar.
+回傳該字串與另一個字串的相似指數（\ `索倫森-戴斯係數 <https://zh.wikipedia.org/wiki/Dice%E7%B3%BB%E6%95%B0>`__\ ）。結果為 ``1.0`` 表示完全相似，\ ``0.0`` 表示完全不相似。
 
 ::
 
-    print("ABC123".similarity("ABC123")) # Prints 1.0
-    print("ABC123".similarity("XYZ456")) # Prints 0.0
-    print("ABC123".similarity("123ABC")) # Prints 0.8
-    print("ABC123".similarity("abc123")) # Prints 0.4
+    print("ABC123".similarity("ABC123")) # 輸出 1.0
+    print("ABC123".similarity("XYZ456")) # 輸出 0.0
+    print("ABC123".similarity("123ABC")) # 輸出 0.8
+    print("ABC123".similarity("abc123")) # 輸出 0.4
 
 .. rst-class:: classref-item-separator
 
@@ -1690,11 +1690,11 @@ Returns the similarity index (`Sørensen-Dice coefficient <https://en.wikipedia.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **split**\ (\ delimiter\: :ref:`String<class_String>` = "", allow_empty\: :ref:`bool<class_bool>` = true, maxsplit\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_split>`
 
-Splits the string using a ``delimiter`` and returns an array of the substrings. If ``delimiter`` is an empty string, each substring will be a single character. This method is the opposite of :ref:`join()<class_StringName_method_join>`.
+使用分隔符 ``delimiter`` 將該字串進行拆分，回傳子字串陣列。如果 ``delimiter`` 為空，則子串為單個字元。這個方法與 :ref:`join()<class_StringName_method_join>` 相對。
 
-If ``allow_empty`` is ``false``, empty strings between adjacent delimiters are excluded from the array.
+如果 ``allow_empty`` 為 ``false``\ ，陣列中會排除相鄰分隔符之間的空字串。
 
-If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``maxsplit``. By default, the entire string is split.
+如果 ``maxsplit`` 大於 ``0``\ ，則拆分次數不能超過 ``maxsplit``\ 。預設拆分整個字串。
 
 
 .. tabs::
@@ -1703,23 +1703,23 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
     var some_array = "One,Two,Three,Four".split(",", true, 2)
 
-    print(some_array.size()) # Prints 3
-    print(some_array[0])     # Prints "One"
-    print(some_array[1])     # Prints "Two"
-    print(some_array[2])     # Prints "Three,Four"
+    print(some_array.size()) # 輸出 3
+    print(some_array[0])     # 輸出“One”
+    print(some_array[1])     # 輸出“Two”
+    print(some_array[2])     # 輸出“Three,Four”
 
  .. code-tab:: csharp
 
-    // C#'s `Split()` does not support the `maxsplit` parameter.
+    // C# 的 `Split()` 不支援 `maxsplit` 參數。
     var someArray = "One,Two,Three".Split(",");
 
-    GD.Print(someArray[0]); // Prints "One"
-    GD.Print(someArray[1]); // Prints "Two"
-    GD.Print(someArray[2]); // Prints "Three"
+    GD.Print(someArray[0]); // 輸出“One”
+    GD.Print(someArray[1]); // 輸出“Two”
+    GD.Print(someArray[2]); // 輸出“Three,Four”
 
 
 
-\ **Note:** If you only need one substring from the array, consider using :ref:`get_slice()<class_StringName_method_get_slice>` which is faster. If you need to split strings with more complex rules, use the :ref:`RegEx<class_RegEx>` class instead.
+\ **注意：**\ 如果你只需要陣列中的某一個子串，請考慮使用更快的 :ref:`get_slice()<class_StringName_method_get_slice>`\ 。如果你需要用更複雜的規則來拆分字串，請改用 :ref:`RegEx<class_RegEx>` 類。
 
 .. rst-class:: classref-item-separator
 
@@ -1789,7 +1789,7 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_ascii_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_ascii_buffer>`
 
-將該字串轉換為 `ASCII <https://zh.wikipedia.org/wiki/ASCII>`__/Latin-1 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這個方法比 :ref:`to_utf8_buffer()<class_StringName_method_to_utf8_buffer>` 稍快，但會把不支援的字元都替換為空格。
+將該字串轉換為 `ASCII <https://zh.wikipedia.org/wiki/ASCII>`__/Latin-1 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這個方法比 :ref:`to_utf8_buffer()<class_StringName_method_to_utf8_buffer>` 稍快，但會把不支援的字元都替換為空白。這是 :ref:`PackedByteArray.get_string_from_ascii()<class_PackedByteArray_method_get_string_from_ascii>` 的逆運算。
 
 .. rst-class:: classref-item-separator
 
@@ -1852,24 +1852,24 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
 :ref:`String<class_String>` **to_kebab_case**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_kebab_case>`
 
-Returns the string converted to ``kebab-case``.
+回傳將該字串轉換為烤串命名法 ``kebab-case`` 的結果。
 
-\ **Note:** Numbers followed by a *single* letter are not separated in the conversion to keep some words (such as "2D") together.
+\ **注意：**\ 如果數字後跟著的是\ *單個*\ 字母，則不會進行拆分，這是為了保證某些單詞的連貫（例如“2D”）。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "Node2D".to_kebab_case()               # Returns "node-2d"
-    "2nd place".to_kebab_case()            # Returns "2-nd-place"
-    "Texture3DAssetFolder".to_kebab_case() # Returns "texture-3d-asset-folder"
+    "Node2D".to_kebab_case()               # 回傳 "node-2d"
+    "2nd place".to_kebab_case()            # 回傳 "2-nd-place"
+    "Texture3DAssetFolder".to_kebab_case() # 回傳 "texture-3d-asset-folder"
 
  .. code-tab:: csharp
 
-    "Node2D".ToKebabCase();               // Returns "node-2d"
-    "2nd place".ToKebabCase();            // Returns "2-nd-place"
-    "Texture3DAssetFolder".ToKebabCase(); // Returns "texture-3d-asset-folder"
+    "Node2D".ToKebabCase();               // 回傳 "node-2d"
+    "2nd place".ToKebabCase();            // 回傳 "2-nd-place"
+    "Texture3DAssetFolder".ToKebabCase(); // 回傳 "texture-3d-asset-folder"
 
 
 
@@ -1883,7 +1883,7 @@ Returns the string converted to ``kebab-case``.
 
 :ref:`String<class_String>` **to_lower**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_lower>`
 
-Returns the string converted to ``lowercase``.
+回傳將該字串轉換為小寫 ``lowercase`` 的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -1895,13 +1895,13 @@ Returns the string converted to ``lowercase``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_multibyte_char_buffer**\ (\ encoding\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_StringName_method_to_multibyte_char_buffer>`
 
-Converts the string to system multibyte code page encoded :ref:`PackedByteArray<class_PackedByteArray>`. If conversion fails, empty array is returned.
+將字串轉換為使用系統多位元組程式碼頁編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。如果轉換失敗，則會回傳空陣列。
 
-The values permitted for ``encoding`` are system dependent. If ``encoding`` is empty string, system default encoding is used.
+\ ``encoding`` 的有效值由系統決定。如果 ``encoding`` 為空字串，則會使用系統預設的編碼。
 
-- For Windows, see `Code Page Identifiers <https://learn.microsoft.com/en-us/windows/win32/Intl/code-page-identifiers>`__ .NET names.
+- 對於 Windows，見\ `程式碼頁標識符 <https://learn.microsoft.com/en-us/windows/win32/Intl/code-page-identifiers>`__ .NET 名稱。
 
-- For macOS and Linux/BSD, see ``libiconv`` library documentation and ``iconv --list`` for a list of supported encodings.
+- 對於 macOS 和 Linux/BSD，支援的編碼清單見 ``libiconv`` 庫文件及 ``iconv --list``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1925,24 +1925,24 @@ The values permitted for ``encoding`` are system dependent. If ``encoding`` is e
 
 :ref:`String<class_String>` **to_snake_case**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_snake_case>`
 
-Returns the string converted to ``snake_case``.
+回傳將該字串轉換為蛇形命名法 ``snake_case`` 的結果。
 
-\ **Note:** Numbers followed by a *single* letter are not separated in the conversion to keep some words (such as "2D") together.
+\ **注意：**\ 如果數字後跟著的是\ *單個*\ 字母，則不會進行拆分，這是為了保證某些單詞的連貫（例如“2D”）。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "Node2D".to_snake_case()               # Returns "node_2d"
-    "2nd place".to_snake_case()            # Returns "2_nd_place"
-    "Texture3DAssetFolder".to_snake_case() # Returns "texture_3d_asset_folder"
+    "Node2D".to_snake_case()               # 回傳 "node_2d"
+    "2nd place".to_snake_case()            # 回傳 "2_nd_place"
+    "Texture3DAssetFolder".to_snake_case() # 回傳 "texture_3d_asset_folder"
 
  .. code-tab:: csharp
 
-    "Node2D".ToSnakeCase();               // Returns "node_2d"
-    "2nd place".ToSnakeCase();            // Returns "2_nd_place"
-    "Texture3DAssetFolder".ToSnakeCase(); // Returns "texture_3d_asset_folder"
+    "Node2D".ToSnakeCase();               // 回傳 "node_2d"
+    "2nd place".ToSnakeCase();            // 回傳 "2_nd_place"
+    "Texture3DAssetFolder".ToSnakeCase(); // 回傳 "texture_3d_asset_folder"
 
 
 
@@ -1956,7 +1956,7 @@ Returns the string converted to ``snake_case``.
 
 :ref:`String<class_String>` **to_upper**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_upper>`
 
-Returns the string converted to ``UPPERCASE``.
+回傳將該字串轉換為大寫 ``UPPERCASE`` 的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -1968,7 +1968,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf8_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_utf8_buffer>`
 
-將該字串轉換為 `UTF-8 <https://zh.wikipedia.org/wiki/UTF-8>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這個方法比 :ref:`to_ascii_buffer()<class_StringName_method_to_ascii_buffer>` 稍慢，但支援所有 UTF-8 字元。大多數情況下請優先使用這個方法。
+將該字串轉換為 `UTF-8 <https://zh.wikipedia.org/wiki/UTF-8>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這個方法比 :ref:`to_ascii_buffer()<class_StringName_method_to_ascii_buffer>` 稍慢，但支援所有 UTF-8 字元。大多數情況下請優先使用這個方法。這是 :ref:`PackedByteArray.get_string_from_utf8()<class_PackedByteArray_method_get_string_from_utf8>` 的逆運算。
 
 .. rst-class:: classref-item-separator
 
@@ -1980,7 +1980,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf16_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_utf16_buffer>`
 
-將該字串轉換為 `UTF-16 <https://zh.wikipedia.org/wiki/UTF-16>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+將該字串轉換為 `UTF-16 <https://zh.wikipedia.org/wiki/UTF-16>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這是 :ref:`PackedByteArray.get_string_from_utf16()<class_PackedByteArray_method_get_string_from_utf16>` 的逆運算。
 
 .. rst-class:: classref-item-separator
 
@@ -1992,7 +1992,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf32_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_utf32_buffer>`
 
-將該字串轉換為 `UTF-32 <https://zh.wikipedia.org/wiki/UTF-32>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+將該字串轉換為 `UTF-32 <https://zh.wikipedia.org/wiki/UTF-32>`__ 編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這是 :ref:`PackedByteArray.get_string_from_utf32()<class_PackedByteArray_method_get_string_from_utf32>` 的逆運算。
 
 .. rst-class:: classref-item-separator
 
@@ -2004,7 +2004,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_wchar_buffer>`
 
-將該字串轉換為 `寬字元 <https://zh.wikipedia.org/zh-cn/%E5%AF%AC%E5%AD%97%E5%85%83>`__\ （\ ``wchat_t``\ ，Windows 上為 UTF-16，其他平臺上為 UTF-32）編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+將該字串轉換為 `寬字元 <https://zh.wikipedia.org/zh-cn/%E5%AF%AC%E5%AD%97%E5%85%83>`__\ （\ ``wchat_t``\ ，Windows 上為 UTF-16，其他平台上為 UTF-32）編碼的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。這是 :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>` 的逆運算。
 
 .. rst-class:: classref-item-separator
 
@@ -2040,9 +2040,9 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`int<class_int>` **unicode_at**\ (\ at\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_unicode_at>`
 
-Returns the character code at position ``at``.
+回傳位於 ``at`` 的字元程式碼。
 
-See also :ref:`String.chr()<class_String_method_chr>`, :ref:`@GDScript.char()<class_@GDScript_method_char>`, and :ref:`@GDScript.ord()<class_@GDScript_method_ord>`.
+另見 :ref:`String.chr()<class_String_method_chr>`\ 、\ :ref:`@GDScript.char()<class_@GDScript_method_char>`\ 、\ :ref:`@GDScript.ord()<class_@GDScript_method_ord>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2054,7 +2054,7 @@ See also :ref:`String.chr()<class_String_method_chr>`, :ref:`@GDScript.char()<cl
 
 :ref:`String<class_String>` **uri_decode**\ (\ ) |const| :ref:`🔗<class_StringName_method_uri_decode>`
 
-Decodes the string from its URL-encoded format. This method is meant to properly decode the parameters in a URL when receiving an HTTP request. See also :ref:`uri_encode()<class_StringName_method_uri_encode>`.
+將該字串按照 URL 編碼格式進行解碼。該方法可以在收到 HTTP 請求時正確解碼 URL 中的參數。另見 :ref:`uri_encode()<class_StringName_method_uri_encode>`\ 。
 
 
 .. tabs::
@@ -2062,16 +2062,16 @@ Decodes the string from its URL-encoded format. This method is meant to properly
  .. code-tab:: gdscript
 
     var url = "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
-    print(url.uri_decode()) # Prints "$DOCS_URL/?highlight=Godot Engine:docs"
+    print(url.uri_decode()) # 輸出 "$DOCS_URL/?highlight=Godot Engine:docs"
 
  .. code-tab:: csharp
 
     var url = "$DOCS_URL/?highlight=Godot%20Engine%3%docs"
-    GD.Print(url.URIDecode()) // Prints "$DOCS_URL/?highlight=Godot Engine:docs"
+    GD.Print(url.URIDecode()) // 輸出 "$DOCS_URL/?highlight=Godot Engine:docs"
 
 
 
-\ **Note:** This method decodes ``+`` as space.
+\ **注意：**\ 這個方法會將 ``+`` 解碼為空白。
 
 .. rst-class:: classref-item-separator
 
@@ -2114,7 +2114,7 @@ Decodes the string from its URL-encoded format. This method is meant to properly
 
 :ref:`String<class_String>` **uri_file_decode**\ (\ ) |const| :ref:`🔗<class_StringName_method_uri_file_decode>`
 
-Decodes the file path from its URL-encoded format. Unlike :ref:`uri_decode()<class_StringName_method_uri_decode>` this method leaves ``+`` as is.
+按照 URL 編碼格式解析檔案路徑。與 :ref:`uri_decode()<class_StringName_method_uri_decode>` 不同，該方法會保留 ``+``\ 。
 
 .. rst-class:: classref-item-separator
 

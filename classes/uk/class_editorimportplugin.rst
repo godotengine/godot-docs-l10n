@@ -387,13 +387,13 @@ Gets the Godot ресурсний тип, пов'язаний з цим нава
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-Імпортує ``source_file`` із зазначеним параметром import ``options``. Якщо імпорт успішний, має повертати :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, інші значення вказують на невдачу.
+Імпортує ``source_file`` із зазначеними параметрами імпорту ``options``. У разі успішного імпорту має повертати :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`; інші значення вказують на помилку.
 
-Очікується, що імпортований ресурс буде збережено в ``save_path + "." + _get_save_extension()``. Якщо для тегу feature [url=$DOCS_URL/tutorials/export/feature_tags.html]бажано інший варіант, збережіть варіант в [code]save_path + "." + tag + "." + _get_save_extension()[/code] та додайте тег feature до [param platform_variants].
+Імпортований ресурс має бути збережений у ``save_path + "." + _get_save_extension()``. Якщо для :doc:`тегу функції <../tutorials/export/feature_tags>` бажано використовувати інший варіант, збережіть цей варіант у ``save_path + "." + tag + "." + _get_save_extension()`` та додайте тег функції до ``platform_variants``.
 
-Якщо у файловій системі ресурсів ([code]res://[/code]) генеруються додаткові файли ресурсів, додайте їхній повний шлях до [param gen_files], щоб редактор знав, що вони залежать від [param source_file].
+Якщо у файловій системі ресурсів (``res://``) генеруються додаткові файли ресурсів, додайте їх повний шлях до ``gen_files``, щоб редактор знав, що вони залежать від ``source_file``.
 
-Цей метод має бути перевизначений для виконання фактичної роботи з імпорту. Дивіться опис цього класу для прикладу перевизначення цього методу.
+Цей метод необхідно перевизначити для виконання власне імпорту. Приклад перевизначення цього методу дивіться в описі цього класу.
 
 .. rst-class:: classref-item-separator
 

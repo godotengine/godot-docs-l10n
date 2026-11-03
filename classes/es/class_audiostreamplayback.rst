@@ -248,7 +248,7 @@ Returns the :ref:`AudioSamplePlayback<class_AudioSamplePlayback>` associated wit
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlayback_method_is_playing>`
 
-Returns ``true`` if the stream is playing.
+Devuelve ``true`` si la transmisión se está reproduciendo.
 
 .. rst-class:: classref-item-separator
 

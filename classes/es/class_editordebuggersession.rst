@@ -95,7 +95,7 @@ Emitida cuando una instancia remota se adjunta a esta sesión (es decir, la sesi
 
 **stopped**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_signal_stopped>`
 
-Emitida cuando una instancia remota se separa de esta sesión (es decir, la sesión se vuelve inactiva).
+Emitida cuando una instancia remota se desvincula de esta sesión (es decir, la sesión se vuelve inactiva).
 
 .. rst-class:: classref-section-separator
 

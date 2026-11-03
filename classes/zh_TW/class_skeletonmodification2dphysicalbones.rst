@@ -16,7 +16,7 @@ SkeletonModification2DPhysicalBones
 說明
 ----
 
-This modification takes the transforms of :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes and applies them to :ref:`Bone2D<class_Bone2D>` nodes. This allows the :ref:`Bone2D<class_Bone2D>` nodes to react to physics thanks to the linked :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes.
+該修改採用 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 節點的變換並將它們套用至 :ref:`Bone2D<class_Bone2D>` 節點。由於連結的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 節點，這允許 :ref:`Bone2D<class_Bone2D>` 節點對物理做出反應。
 
 .. rst-class:: classref-reftable-group
 

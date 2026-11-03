@@ -5,7 +5,7 @@
 Vector4
 =======
 
-A 4D vector using floating-point coordinates.
+使用浮點數座標的 4D 向量。
 
 .. rst-class:: classref-introduction-group
 
@@ -407,7 +407,7 @@ W 軸的列舉值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_ind
 
 :ref:`Vector4<class_Vector4>` **clampf**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_clampf>`
 
-Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+回傳一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate>`
 
-返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控制柄。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
 .. rst-class:: classref-item-separator
 
@@ -431,9 +431,9 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate_in_time>`
 
-Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+回傳該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
-It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` by the time values.
+通過使用時間值，可以比 :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` 進行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -457,9 +457,9 @@ It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vecto
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的\ `歐幾里得距離 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB>`__\ 的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector4_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+該方法比 :ref:`distance_to()<class_Vector4_method_distance_to>` 執行速度更快，因此如果需要比較向量或需要平方距離來計算某些公式，請優先使用該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ This method runs faster than :ref:`distance_to()<class_Vector4_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的 `歐幾里得距離 <https://en.wikipedia.org/wiki/Euclidean_distance>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distanc
 
 :ref:`Vector4<class_Vector4>` **max**\ (\ with\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_max>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector4(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z), maxf(w, with.w))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector4(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z), maxf(w, with.w))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector4
 
 :ref:`Vector4<class_Vector4>` **maxf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_maxf>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector4(maxf(x, with), maxf(y, with), maxf(z, with), maxf(w, with))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector4(maxf(x, with), maxf(y, with), maxf(z, with), maxf(w, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector4
 
 :ref:`Vector4<class_Vector4>` **min**\ (\ with\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_min>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector4(minf(x, with.x), minf(y, with.y), minf(z, with.z), minf(w, with.w))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector4(minf(x, with.x), minf(y, with.y), minf(z, with.z), minf(w, with.w))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -667,7 +667,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector4
 
 :ref:`Vector4<class_Vector4>` **minf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_minf>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector4(minf(x, with), minf(y, with), minf(z, with), minf(w, with))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector4(minf(x, with), minf(y, with), minf(z, with), minf(w, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector4
 
 :ref:`Vector4<class_Vector4>` **normalized**\ (\ ) |const| :ref:`🔗<class_Vector4_method_normalized>`
 
-Returns the result of scaling the vector to unit length. Equivalent to ``v / v.length()``. Returns ``(0, 0, 0, 0)`` if ``v.length() == 0``. See also :ref:`is_normalized()<class_Vector4_method_is_normalized>`.
+回傳該向量縮放至單位長度的結果。等價於 ``v / v.length()``\ 。如果 ``v.length() == 0`` 則回傳 ``(0, 0, 0, 0)``\ 。另見 :ref:`is_normalized()<class_Vector4_method_is_normalized>`\ 。
 
-\ **Note:** This function may return incorrect values if the input vector length is near zero.
+\ **注意：**\ 如果輸入向量的長度接近零，則這個函式可能回傳不正確的值。
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector4<class_Vector4>` **snappedf**\ (\ step\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_snappedf>`
 
-Returns a new vector with each component snapped to the nearest multiple of ``step``. This can also be used to round the components to an arbitrary number of decimals.
+回傳一個新向量，其中每個分量都吸附到 ``step`` 的最接近的倍數。這也可以用於將分量四捨五入為任意數位的小數。
 
 .. rst-class:: classref-section-separator
 
@@ -786,9 +786,9 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Projection<class_Projection>`\ ) :ref:`🔗<class_Vector4_operator_mul_Projection>`
 
-Transforms (multiplies) the **Vector4** by the transpose of the given :ref:`Projection<class_Projection>` matrix.
+通過給定 :ref:`Projection<class_Projection>` 矩陣的轉置變換（乘以）該 **Vector4**\ 。
 
-For transforming by inverse of a projection ``projection.inverse() * vector`` can be used instead. See :ref:`Projection.inverse()<class_Projection_method_inverse>`.
+對於通過投影的逆進行的變換，可以使用 ``projection.inverse() * vector`` 代替。請參閱 :ref:`Projection.inverse()<class_Projection_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -800,11 +800,11 @@ For transforming by inverse of a projection ``projection.inverse() * vector`` ca
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_mul_Vector4>`
 
-Multiplies each component of the **Vector4** by the components of the given **Vector4**.
+將該 **Vector4** 的每個分量乘以給定 **Vector4** 的對應分量。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) * Vector4(3, 4, 5, 6)) # Prints (30.0, 80.0, 150.0, 240.0)
+    print(Vector4(10, 20, 30, 40) * Vector4(3, 4, 5, 6)) # 輸出 (30.0, 80.0, 150.0, 240.0)
 
 .. rst-class:: classref-item-separator
 
@@ -816,11 +816,11 @@ Multiplies each component of the **Vector4** by the components of the given **Ve
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4_operator_mul_float>`
 
-Multiplies each component of the **Vector4** by the given :ref:`float<class_float>`.
+將該 **Vector4** 的每個分量乘以給定的 :ref:`float<class_float>`\ 。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) * 2) # Prints (20.0, 40.0, 60.0, 80.0)
+    print(Vector4(10, 20, 30, 40) * 2) # 輸出 (20.0, 40.0, 60.0, 80.0)
 
 .. rst-class:: classref-item-separator
 
@@ -844,11 +844,11 @@ Multiplies each component of the **Vector4** by the given :ref:`float<class_floa
 
 :ref:`Vector4<class_Vector4>` **operator +**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_sum_Vector4>`
 
-Adds each component of the **Vector4** by the components of the given **Vector4**.
+將該 **Vector4** 的每個分量加上給定 **Vector4** 的對應分量。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) + Vector4(3, 4, 5, 6)) # Prints (13.0, 24.0, 35.0, 46.0)
+    print(Vector4(10, 20, 30, 40) + Vector4(3, 4, 5, 6)) # 輸出 (13.0, 24.0, 35.0, 46.0)
 
 .. rst-class:: classref-item-separator
 
@@ -860,11 +860,11 @@ Adds each component of the **Vector4** by the components of the given **Vector4*
 
 :ref:`Vector4<class_Vector4>` **operator -**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_dif_Vector4>`
 
-Subtracts each component of the **Vector4** by the components of the given **Vector4**.
+將該 **Vector4** 的每個分量減去給定 **Vector4** 的對應分量。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) - Vector4(3, 4, 5, 6)) # Prints (7.0, 16.0, 25.0, 34.0)
+    print(Vector4(10, 20, 30, 40) - Vector4(3, 4, 5, 6)) # 輸出 (7.0, 16.0, 25.0, 34.0)
 
 .. rst-class:: classref-item-separator
 
@@ -876,11 +876,11 @@ Subtracts each component of the **Vector4** by the components of the given **Vec
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_div_Vector4>`
 
-Divides each component of the **Vector4** by the components of the given **Vector4**.
+將該 **Vector4** 的每個分量除以給定 **Vector4** 的對應分量。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) / Vector4(2, 5, 3, 4)) # Prints (5.0, 4.0, 10.0, 10.0)
+    print(Vector4(10, 20, 30, 40) / Vector4(2, 5, 3, 4)) # 輸出 (5.0, 4.0, 10.0, 10.0)
 
 .. rst-class:: classref-item-separator
 
@@ -892,11 +892,11 @@ Divides each component of the **Vector4** by the components of the given **Vecto
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4_operator_div_float>`
 
-Divides each component of the **Vector4** by the given :ref:`float<class_float>`.
+將該 **Vector4** 的每個分量除以給定的 :ref:`float<class_float>`\ 。
 
 ::
 
-    print(Vector4(10, 20, 30, 40) / 2) # Prints (5.0, 10.0, 15.0, 20.0)
+    print(Vector4(10, 20, 30, 40) / 2 # 輸出 (5.0, 10.0, 15.0, 20.0)
 
 .. rst-class:: classref-item-separator
 

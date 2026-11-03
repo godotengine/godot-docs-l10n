@@ -208,7 +208,7 @@ See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and
 
 :ref:`RID<class_RID>` **get_spatial_context**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_spatial_context>`
 
-Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
+Obtient le contexte spatial utilisé pour créer ce **OpenXRSpatialEntityTracker**.
 
 .. rst-class:: classref-item-separator
 

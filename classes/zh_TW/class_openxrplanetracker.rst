@@ -9,14 +9,14 @@ OpenXRPlaneTracker
 
 **繼承：** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Spatial entity tracker for our spatial entity plane tracking extension.
+用於空間實體平面追蹤擴充的空間實體追蹤器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Spatial entity tracker for our OpenXR spatial entity plane tracking extension. These trackers identify entities in our real space such as walls, floors, tables, etc. and map their location to our virtual space.
+用於 OpenXR 空間實體平面追蹤擴充的空間實體追蹤器。這些追蹤器可以識別現實空間中的實體，例如牆壁、地板、桌子等，並將它們的位置映射到虛擬空間中。
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ Spatial entity tracker for our OpenXR spatial entity plane tracking extension. T
 
 **mesh_changed**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_signal_mesh_changed>`
 
-Emitted when our mesh data has changed the mesh instance and collision needs to be updated.
+當網格資料發生變化，網格實例和碰撞體需要更新時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -91,7 +91,7 @@ Emitted when our mesh data has changed the mesh instance and collision needs to 
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounding size of the plane. This is a 2D size.
+平面的邊界大小。這是一個 2D 大小。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ The bounding size of the plane. This is a 2D size.
 - |void| **set_plane_alignment**\ (\ value\: :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>`\ )
 - :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ )
 
-The main alignment in space of this plane.
+該平面在空間中的主要對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ The main alignment in space of this plane.
 - |void| **set_plane_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plane_label**\ (\ )
 
-The semantic label for this plane.
+該平面的語義標籤。
 
 .. rst-class:: classref-section-separator
 
@@ -142,7 +142,7 @@ The semantic label for this plane.
 
 |void| **clear_mesh_data**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_clear_mesh_data>`
 
-Clears the mesh data for this tracker. You should only call this if you are handling your own discovery logic.
+清除該追蹤器的網格資料。僅當需自行處理髮現邏輯時才應呼叫該函式。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Clears the mesh data for this tracker. You should only call this if you are hand
 
 :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh>`
 
-Gets a mesh created from either the mesh data or from our bounding size for this plane.
+取得根據網格資料或該平面的邊界大小建立的網格。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Gets a mesh created from either the mesh data or from our bounding size for this
 
 :ref:`Transform3D<class_Transform3D>` **get_mesh_offset**\ (\ ) |const| :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh_offset>`
 
-Gets the transform by which to offset the mesh and collision shape from our pose to display these correctly.
+取得用於將網格和碰撞形狀從我們的姿勢偏移以正確顯示它們的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Gets the transform by which to offset the mesh and collision shape from our pose
 
 :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ thickness\: :ref:`float<class_float>` = 0.01\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_shape>`
 
-Gets a collision shape built either from the mesh data or from our bounding size for this plane.
+取得由網格資料或該平面的邊界大小建置的碰撞形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Gets a collision shape built either from the mesh data or from our bounding size
 
 |void| **set_mesh_data**\ (\ origin\: :ref:`Transform3D<class_Transform3D>`, vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, indices\: :ref:`PackedInt32Array<class_PackedInt32Array>` = PackedInt32Array()\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_set_mesh_data>`
 
-Sets the mesh data for this plane. You should only call this if you are handling your own discovery logic.
+設定該平面的網格資料。僅當需自行處理髮現邏輯時才應呼叫該方法。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

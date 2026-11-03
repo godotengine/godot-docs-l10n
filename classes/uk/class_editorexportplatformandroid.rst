@@ -1859,7 +1859,7 @@ EditorExportPlatformAndroid
 
 :ref:`bool<class_bool>` **permissions/media_content_control** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/media_content_control>`
 
-Дозволяє програмі знати, який контент грає і контролювати його відтворення. [url=https://developer.android.com/reference/android/Manifest.permission#MEDIA_CONTENT_CONTENT_CONTENT_CONTENT_CONTROL[/url].
+Дозволяє додатку дізнаватися, який контент відтворюється, та керувати його відтворенням. Див. `MEDIA_CONTENT_CONTROL <https://developer.android.com/reference/android/Manifest.permission#MEDIA_CONTENT_CONTROL>`__.
 
 .. rst-class:: classref-item-separator
 

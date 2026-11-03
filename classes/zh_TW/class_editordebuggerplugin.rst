@@ -14,13 +14,13 @@ EditorDebuggerPlugin
 說明
 ----
 
-**EditorDebuggerPlugin** provides functions related to the editor side of the debugger.
+編輯器除錯器外掛 **EditorDebuggerPlugin** 提供了與除錯器的編輯器端相關的函式。
 
-To interact with the debugger, an instance of this class must be added to the editor via :ref:`EditorPlugin.add_debugger_plugin()<class_EditorPlugin_method_add_debugger_plugin>`.
+要與除錯器互動，必須將這個類的實例通過 :ref:`EditorPlugin.add_debugger_plugin()<class_EditorPlugin_method_add_debugger_plugin>` 新增至編輯器。
 
-Once added, the :ref:`_setup_session()<class_EditorDebuggerPlugin_private_method__setup_session>` callback will be called for every :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` available to the plugin, and when new ones are created (the sessions may be inactive during this stage).
+新增完成後，會針對該外掛可用的每一個編輯器除錯器會話 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 回呼一次 :ref:`_setup_session()<class_EditorDebuggerPlugin_private_method__setup_session>`\ ，後續有新的會話也會進行回呼（這些會話在此階段可能尚未啟用）。
 
-You can retrieve the available :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ s via :ref:`get_sessions()<class_EditorDebuggerPlugin_method_get_sessions>` or get a specific one via :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>`.
+你可以通過 :ref:`get_sessions()<class_EditorDebuggerPlugin_method_get_sessions>` 取得所有可用的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ ，也可以通過 :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` 取得特定的會話。
 
 
 .. tabs::
@@ -33,7 +33,7 @@ You can retrieve the available :ref:`EditorDebuggerSession<class_EditorDebuggerS
     class ExampleEditorDebugger extends EditorDebuggerPlugin:
 
         func _has_capture(capture):
-            # Return true if you wish to handle messages with the prefix "my_plugin:".
+            # 如果想要處理帶有“my_plugin:”前綴的訊息則回傳 true。
             return capture == "my_plugin"
 
         func _capture(message, data, session_id):
@@ -43,14 +43,14 @@ You can retrieve the available :ref:`EditorDebuggerSession<class_EditorDebuggerS
             return false
 
         func _setup_session(session_id):
-            # Add a new tab in the debugger session UI containing a label.
+            # 在除錯器會話 UI 中新增新的分頁，其中包含一個標籤。
             var label = Label.new()
-            label.name = "Example plugin" # Will be used as the tab title.
-            label.text = "Example plugin"
+            label.name = "Example plugin" # 會顯示為分頁標題
+            label.text = "範例外掛"
             var session = get_session(session_id)
-            # Listens to the session started and stopped signals.
-            session.started.connect(func (): print("Session started"))
-            session.stopped.connect(func (): print("Session stopped"))
+            # 監聽會話開始和停止訊號。
+            session.started.connect(func (): print("會話已開始"))
+            session.stopped.connect(func (): print("會話已停止"))
             session.add_session_tab(label)
 
     var debugger = ExampleEditorDebugger.new()
@@ -63,7 +63,7 @@ You can retrieve the available :ref:`EditorDebuggerSession<class_EditorDebuggerS
 
 
 
-To connect on the running game side, use the :ref:`EngineDebugger<class_EngineDebugger>` singleton:
+要在執行的遊戲中連接，請使用 :ref:`EngineDebugger<class_EngineDebugger>` 單例：
 
 
 .. tabs::
@@ -77,15 +77,15 @@ To connect on the running game side, use the :ref:`EngineDebugger<class_EngineDe
         EngineDebugger.send_message("my_plugin:ping", ["test"])
 
     func _capture(message, data):
-        # Note that the "my_plugin:" prefix is not used here.
+        # 請注意這裡不使用“my_plugin:”前綴。
         if message == "echo":
-            prints("Echo received:", data)
+            prints("收到回響：", data)
             return true
         return false
 
 
 
-\ **Note:** While the game is running, :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` and similar functions *called in the editor* do not print anything, the Output Log prints only game messages.
+\ **注意：**\ 遊戲執行時，在\ *編輯器中呼叫* :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` 等函式不會輸出任何內容，“輸出記錄”中只會輸出遊戲中的訊息。
 
 .. rst-class:: classref-reftable-group
 
@@ -128,7 +128,7 @@ To connect on the running game side, use the :ref:`EngineDebugger<class_EngineDe
 
 |void| **_breakpoint_set_in_tree**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoint_set_in_tree>`
 
-Override this method to be notified when a breakpoint is set in the editor.
+覆蓋此方法以便在編輯器中設定斷點時收到通知。
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ Override this method to be notified when a breakpoint is set in the editor.
 
 |void| **_breakpoints_cleared_in_tree**\ (\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoints_cleared_in_tree>`
 
-Override this method to be notified when all breakpoints are cleared in the editor.
+覆蓋此方法以便當編輯器中所有斷點被清除時收到通知。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Override this method to be notified when all breakpoints are cleared in the edit
 
 :ref:`bool<class_bool>` **_capture**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>`, session_id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__capture>`
 
-Override this method to process incoming messages. The ``session_id`` is the ID of the :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` that received the ``message``. Use :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` to retrieve the session. This method should return ``true`` if the message is recognized.
+覆蓋此方法以處理傳入的訊息。\ ``session_id`` 是接收到 ``message`` 的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 的 ID，可以通過 :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` 取得會話。能夠識別訊息時，該方法應回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Override this method to process incoming messages. The ``session_id`` is the ID 
 
 |void| **_goto_script_line**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__goto_script_line>`
 
-Override this method to be notified when a breakpoint line has been clicked in the debugger breakpoint panel.
+覆蓋此方法，當在除錯器斷點面板中按一下斷點行時收到通知。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Override this method to be notified when a breakpoint line has been clicked in t
 
 :ref:`bool<class_bool>` **_has_capture**\ (\ capture\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorDebuggerPlugin_private_method__has_capture>`
 
-Override this method to enable receiving messages from the debugger. If ``capture`` is "my_message" then messages starting with "my_message:" will be passed to the :ref:`_capture()<class_EditorDebuggerPlugin_private_method__capture>` method.
+覆蓋此方法以啟用從除錯器接收訊息。如果 ``capture`` 為“my_message”，則會將所有以“my_message:”開頭的訊息傳遞給 :ref:`_capture()<class_EditorDebuggerPlugin_private_method__capture>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Override this method to enable receiving messages from the debugger. If ``captur
 
 |void| **_setup_session**\ (\ session_id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__setup_session>`
 
-Override this method to be notified whenever a new :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` is created. Note that the session may be inactive during this stage.
+覆蓋此方法，以在每次新建 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 時收到通知。請注意，在此階段會話可能處於非活動狀態。
 
 .. rst-class:: classref-item-separator
 

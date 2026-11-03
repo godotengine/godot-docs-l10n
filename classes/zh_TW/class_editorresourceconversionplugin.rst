@@ -7,7 +7,7 @@ EditorResourceConversionPlugin
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於在編輯器資源選擇器的本文功能表中新增從一種資源格式到另一種資源格式的自定義轉換器的外掛程式；例如，將 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 轉換為 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
+用於在編輯器資源選擇器的本文功能表中新增從一種資源格式到另一種資源格式的自訂轉換器的外掛程式；例如，將 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 轉換為 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -16,7 +16,7 @@ EditorResourceConversionPlugin
 
 當編輯器屬性檢視器中的資源被調出本文功能表時，\ **EditorResourceConversionPlugin** 被呼叫。相關的轉換外掛程式將作為功能表選項出現，以將給定的資源轉換為目標型別。
 
-下面展示了一個將 :ref:`ImageTexture<class_ImageTexture>` 轉換為 :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>` 的基本插件範例。
+下面展示了一個將 :ref:`ImageTexture<class_ImageTexture>` 轉換為 :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>` 的基本外掛範例。
 
 
 .. tabs::
@@ -71,7 +71,7 @@ EditorResourceConversionPlugin
 
 :ref:`Resource<class_Resource>` **_convert**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__convert>`
 
-獲取輸入 :ref:`Resource<class_Resource>` 並將其轉換為 :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>` 中給定的型別。返回的 :ref:`Resource<class_Resource>` 是轉換後的結果，輸入的 :ref:`Resource<class_Resource>` 保持不變。
+取得輸入 :ref:`Resource<class_Resource>` 並將其轉換為 :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>` 中給定的型別。返回的 :ref:`Resource<class_Resource>` 是轉換後的結果，輸入的 :ref:`Resource<class_Resource>` 保持不變。
 
 .. rst-class:: classref-item-separator
 

@@ -9,14 +9,14 @@ OpenXRSpatialComponentMarkerList
 
 **繼承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries marker result data.
+用於儲存查詢標記結果資料的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object for storing the queries marker result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用於呼叫 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 時儲存查詢標記結果資料的物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ enum **MarkerType**: :ref:`🔗<enum_OpenXRSpatialComponentMarkerList_MarkerType
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_UNKNOWN** = ``0``
 
-Unknown or unset marker type.
+未知或未設定的標記型別。
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_QRCODE:
 
@@ -63,7 +63,7 @@ Unknown or unset marker type.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_QRCODE** = ``1``
 
-Marker based on a QR code.
+基於二維碼的標記。
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MICRO_QRCODE:
 
@@ -71,7 +71,7 @@ Marker based on a QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MICRO_QRCODE** = ``2``
 
-Marker based on a micro QR code.
+基於微型二維碼的標記。
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_ARUCO:
 
@@ -79,7 +79,7 @@ Marker based on a micro QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_ARUCO** = ``3``
 
-Marker based on an Aruco code.
+基於 Aruco 碼的標記。
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_APRIL_TAG:
 
@@ -87,7 +87,7 @@ Marker based on an Aruco code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_APRIL_TAG** = ``4``
 
-Marker based on an April Tag.
+基於 April Tag 的標記。
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MAX:
 
@@ -95,7 +95,7 @@ Marker based on an April Tag.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MAX** = ``5``
 
-Maximum value for this enum.
+該列舉的最大值。
 
 .. rst-class:: classref-section-separator
 
@@ -112,7 +112,7 @@ Maximum value for this enum.
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_data>`
 
-Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_PackedByteArray>` buffer with data for the marker at this ``index``. Only applicable for QR code markers.
+回傳一個 :ref:`String<class_String>` 或 :ref:`PackedByteArray<class_PackedByteArray>` 緩衝區，其中包含該 ``index`` 處的標記的資料。僅適用於二維碼標記。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_Pa
 
 :ref:`int<class_int>` **get_marker_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_id>`
 
-Returns the marker ID for the marker at this ``index``. Only applicable for Aruco or April Tag markers.
+回傳該 ``index`` 處的標記的標記 ID。僅適用於 Aruco 或 April Tag 標記。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Returns the marker ID for the marker at this ``index``. Only applicable for Aruc
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_type>`
 
-Returns the marker type for the marker at this ``index``.
+回傳該 ``index`` 處的標記的標記型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

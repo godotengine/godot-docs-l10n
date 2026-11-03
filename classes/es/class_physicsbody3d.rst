@@ -235,7 +235,7 @@ Devuelve un conjunto de nodos que se añadieron como excepciones de colisión pa
 
 :ref:`Vector3<class_Vector3>` **get_gravity**\ (\ ) |const| :ref:`🔗<class_PhysicsBody3D_method_get_gravity>`
 
-Devuelve el vector de gravedad calculado a partir de todas las fuentes que pueden afectar al cuerpo, incluyendo todas las anulaciones de gravedad de los nodos :ref:`Area3D<class_Area3D>` y la gravedad global del mundo.
+Devuelve el vector de gravedad calculado a partir de todas las fuentes que pueden afectar al cuerpo, incluyendo todas las sobrescrituras de gravedad de los nodos :ref:`Area3D<class_Area3D>` y la gravedad global del mundo.
 
 .. rst-class:: classref-item-separator
 

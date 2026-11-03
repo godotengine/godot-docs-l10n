@@ -14,13 +14,13 @@ Camera2D
 說明
 ----
 
-Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of :ref:`CanvasItem<class_CanvasItem>`-based nodes.
+用於 2D 場景的相機節點。它強制螢幕（目前層）跟隨該節點捲動。與手動改變基於 :ref:`CanvasItem<class_CanvasItem>` 節點的座標相比，這使得對可捲動場景進行編程更加容易和快捷。
 
-Cameras register themselves in the nearest :ref:`Viewport<class_Viewport>` node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the camera will register in the global viewport.
+相機會在最近的 :ref:`Viewport<class_Viewport>`\ （在上層樹時）節點中注冊自己。每個視埠只能啟用一個相機。如果樹上沒有可用的視埠，相機將在全域視埠中注冊。
 
-This node is intended to be a simple helper to get things going quickly, but more functionality may be desired to change how the camera works. To make your own custom camera node, inherit it from :ref:`Node2D<class_Node2D>` and change the transform of the canvas by setting :ref:`Viewport.canvas_transform<class_Viewport_property_canvas_transform>` in :ref:`Viewport<class_Viewport>` (you can obtain the current :ref:`Viewport<class_Viewport>` by using :ref:`Node.get_viewport()<class_Node_method_get_viewport>`).
+這個節點旨在成為簡單的輔助工具，讓事情便捷，但可能需要更多的功能來改變相機的工作方式。要製作自訂相機節點，則從 :ref:`Node2D<class_Node2D>` 繼承，並通過設定 :ref:`Viewport<class_Viewport>` 中的 :ref:`Viewport.canvas_transform<class_Viewport_property_canvas_transform>` 來改變畫布的變換（你可以通過使用 :ref:`Node.get_viewport()<class_Node_method_get_viewport>` 獲得目前的 :ref:`Viewport<class_Viewport>`\ ）。
 
-Note that the **Camera2D** node's :ref:`Node2D.global_position<class_Node2D_property_global_position>` doesn't represent the actual position of the screen, which may differ due to applied smoothing or limits. You can use :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>` to get the real position. Same for the node's :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` which may be different due to applied rotation smoothing. You can use :ref:`get_screen_rotation()<class_Camera2D_method_get_screen_rotation>` to get the current rotation of the screen.
+請注意，\ **Camera2D** 節點的 :ref:`Node2D.global_position<class_Node2D_property_global_position>` 並不代表螢幕的實際位置，這可能會因應用的平滑或限制而有所不同。可以使用 :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>` 取得真實位置。該節點的 :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` 亦然，可能由於應用的旋轉平滑而有所不同。可以使用 :ref:`get_screen_rotation()<class_Camera2D_method_get_screen_rotation>` 取得螢幕的目前旋轉值。
 
 .. rst-class:: classref-introduction-group
 
@@ -208,7 +208,7 @@ enum **Camera2DProcessCallback**: :ref:`🔗<enum_Camera2D_Camera2DProcessCallba
 - |void| **set_anchor_mode**\ (\ value\: :ref:`AnchorMode<enum_Camera2D_AnchorMode>`\ )
 - :ref:`AnchorMode<enum_Camera2D_AnchorMode>` **get_anchor_mode**\ (\ )
 
-The Camera2D's anchor point.
+Camera2D 的錨點。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ The Camera2D's anchor point.
 - |void| **set_custom_viewport**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_custom_viewport**\ (\ )
 
-連接到 **Camera2D** 的自訂 :ref:`Viewport<class_Viewport>` 節點。如果為 ``null`` 或者不是 :ref:`Viewport<class_Viewport>`\ ，則使用預設的視口。
+連接到 **Camera2D** 的自訂 :ref:`Viewport<class_Viewport>` 節點。如果為 ``null`` 或者不是 :ref:`Viewport<class_Viewport>`\ ，則使用預設的視埠。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ The Camera2D's anchor point.
 - |void| **set_ignore_rotation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_rotation**\ (\ )
 
-如果為 ``true`` ，相機的算繪視圖不會受到其 :ref:`Node2D.rotation<class_Node2D_property_rotation>` 和 :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` 的影響。
+如果為 ``true`` ，相機的渲染視圖不會受到其 :ref:`Node2D.rotation<class_Node2D_property_rotation>` 和 :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` 的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ The Camera2D's anchor point.
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-底部滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
+底部捲動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ The Camera2D's anchor point.
 - |void| **set_limit_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limit_enabled**\ (\ )
 
-If ``true``, the limits will be enabled. Disabling this will allow the camera to focus anywhere, when the four ``limit_*`` properties will not work.
+如果為 ``true`` 則啟用限制。停用該選項將允許相機聚焦在任何位置，此時四個 ``limit_*`` 屬性不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-左側滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
+左側捲動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-右側滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
+右側捲動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -541,7 +541,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 
 如果 :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` 為 ``false``\ ，則該屬性無效。
 
-\ **注意：**\ 要立即將相機的位置更新到限制範圍內而不進行平滑，即使啟用了該設置，也要呼叫 :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`\ 。
+\ **注意：**\ 要立即將相機的位置更新到限制範圍內而不進行平滑，即使啟用了該設定，也要呼叫 :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-頂部滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
+頂部捲動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -626,7 +626,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 - |void| **set_process_callback**\ (\ value\: :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>`\ )
 - :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>` **get_process_callback**\ (\ )
 
-The camera's process callback.
+相機的處理回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ The camera's process callback.
 - |void| **set_zoom**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_zoom**\ (\ )
 
-The camera's zoom. Higher values are more zoomed in. For example, a zoom of ``Vector2(2.0, 2.0)`` will be twice as zoomed in on each axis (the view covers an area four times smaller). In contrast, a zoom of ``Vector2(0.5, 0.5)`` will be twice as zoomed out on each axis (the view covers an area four times larger). The X and Y components should generally always be set to the same value, unless you wish to stretch the camera view.
+相機的縮放。值越高，放大效果越明顯。例如，\ ``Vector2(2.0, 2.0)`` 的縮放將在各個軸上放大兩倍（檢視覆蓋的區域縮小四倍）。相反，\ ``Vector2(0.5, 0.5)`` 的縮放將在各個軸上縮小兩倍（檢視覆蓋的區域擴大四倍）。X 和 Y 分量通常應始終設定為相同的值，除非你希望拉伸相機檢視。
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` does *not* take **Camera2D** zoom into account. This means that zooming in/out will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated unless the font is part of a :ref:`CanvasLayer<class_CanvasLayer>` that makes it ignore camera zoom. To ensure text remains crisp regardless of zoom, you can enable MSDF font rendering by enabling :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` can be enabled in the inspector.
+\ **注意：**\ :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` *不會*\ 考慮 **Camera2D** 的縮放值。這意味著放大/縮小將導致點陣圖字型和光柵化（非 MSDF）動態字型看起來模糊或像素化，除非字型是\ :ref:`CanvasLayer<class_CanvasLayer>`\ 的一部分從而使其忽略相機縮放。為了確保文字無論如何縮放都保持清晰，你可以通過啟用 :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` （僅適用於預設專案字型）來啟用 MSDF 字型渲染，或在自訂字型的動態字型匯入選項中啟用\ **多通道帶符號距離場**\ 。對於系統字型，可以在屬性檢視器中啟用 :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` 。
 
 .. rst-class:: classref-section-separator
 
@@ -698,9 +698,9 @@ The camera's zoom. Higher values are more zoomed in. For example, a zoom of ``Ve
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-Aligns the camera to the tracked node.
+將相機對準追蹤節點。
 
-\ **Note:** Calling :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` after this method is not required.
+\ **注意：**\ 在該方法之後，不需要呼叫 :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +712,7 @@ Aligns the camera to the tracked node.
 
 |void| **force_update_scroll**\ (\ ) :ref:`🔗<class_Camera2D_method_force_update_scroll>`
 
-強制相機立即更新滾動。
+強制相機立即更新捲動。
 
 .. rst-class:: classref-item-separator
 
@@ -762,9 +762,9 @@ Aligns the camera to the tracked node.
 
 :ref:`float<class_float>` **get_screen_rotation**\ (\ ) |const| :ref:`🔗<class_Camera2D_method_get_screen_rotation>`
 
-Returns the current screen rotation from this camera's point of view.
+從該相機的視角回傳目前的螢幕旋轉。
 
-\ **Note:** The screen rotation can be different from :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` if the camera is rotating smoothly due to :ref:`rotation_smoothing_enabled<class_Camera2D_property_rotation_smoothing_enabled>`.
+\ **注意：**\ 如果相機由於 :ref:`rotation_smoothing_enabled<class_Camera2D_property_rotation_smoothing_enabled>` 平滑旋轉，則螢幕旋轉可能與 :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` 不同。
 
 .. rst-class:: classref-item-separator
 

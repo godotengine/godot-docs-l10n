@@ -386,7 +386,7 @@ Returns the message category for the message with the given ``index``.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_count>`
 
-Returns the number of messages in the export log.
+Devuelve el número de mensajes en el registro de exportación.
 
 .. rst-class:: classref-item-separator
 

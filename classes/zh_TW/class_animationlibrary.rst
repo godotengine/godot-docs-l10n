@@ -62,7 +62,7 @@ AnimationLibrary
 
 **animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
+在鍵 ``anim_name`` 下新增 :ref:`Animation<class_Animation>` 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -74,9 +74,9 @@ Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim
 
 **animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
+當其中一個動畫發生變化時發出，例如軌道被新增、移動，或路徑被更改。\ ``anim_name`` 是被改變的動畫的鍵。
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+另見 :ref:`Resource.changed<class_Resource_signal_changed>`\ ，本訊號充當該訊號的中繼。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts
 
 **animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
+當使用鍵 ``anim_name`` 儲存的 :ref:`Animation<class_Animation>` 被移除時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_nam
 
 **animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
+當 :ref:`Animation<class_Animation>` 的鍵從 ``old_name`` 更改為 ``new_name`` 時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -165,7 +165,7 @@ Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from `
 
 :ref:`bool<class_bool>` **has_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationLibrary_method_has_animation>`
 
-若動畫庫內存在鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 則返回 ``true``\ 。
+若動畫庫記憶體在鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

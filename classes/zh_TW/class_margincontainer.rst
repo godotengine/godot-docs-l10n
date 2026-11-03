@@ -86,7 +86,7 @@ MarginContainer
 
 :ref:`int<class_int>` **margin_bottom** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_bottom>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the bottom.
+從底部向容器的內部直接子項偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_left** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_left>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the left.
+從左側向容器的內部直接子項偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_right** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_right>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the right.
+從右側向容器的內部直接子項偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_top** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_top>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the top.
+從頂部向容器的內部直接子項偏移一定量的像素。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

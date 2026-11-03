@@ -9,18 +9,18 @@ IterateIK3D
 
 **被繼承：** :ref:`CCDIK3D<class_CCDIK3D>`, :ref:`FABRIK3D<class_FABRIK3D>`, :ref:`JacobianIK3D<class_JacobianIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+通過重複進行小幅度旋轉來逐步接近目標的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+這是 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的一個基底類別，它通過反復進行微小的旋轉來逐步逼近目標位置。
 
-Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+每個骨骼鏈（也就是每個設定項）都有一個效應器（effector），這些效應器會按照設定清單的順序依次進行處理。你可以為每個關節設定一些限制條件。
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/target_node``).
+\ **注意：** 這個類里的所有方法都帶有一個 ``index``\ （索引）參數。這個參數用來指定當 IK 包含多個設定項時，具體回傳哪一個（比如 ``settings//target_node``\ ）。
 
 .. rst-class:: classref-reftable-group
 
@@ -100,9 +100,9 @@ Each bone chain (setting) has one effector, which is processed in order of the s
 - |void| **set_angular_delta_limit**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_delta_limit**\ (\ )
 
-The maximum amount each bone can rotate in a single iteration.
+單次迭代中每根骨骼可以旋轉的最大角度。
 
-\ **Note:** This limitation is applied during each iteration. For example, if :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` is ``4`` and :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` is ``5`` degrees, the maximum rotation possible in a single frame is ``20`` degrees.
+\ **注意：**\ 該限制在每次迭代中都會應用。例如，如果 :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` 為 ``4``\ ，\ :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` 為 ``5`` 度，則單影格中可能的最大旋轉角度為 ``20`` 度。
 
 .. rst-class:: classref-item-separator
 
@@ -119,9 +119,9 @@ The maximum amount each bone can rotate in a single iteration.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-If ``false``, the result is calculated from the previous frame's **IterateIK3D** result as the initial state.
+如果為 ``false``\ ，則結果將以前一影格的 **IterateIK3D** 結果作為初始狀態進行計算。
 
-If ``true``, the previous frame's **IterateIK3D** result is discarded. At this point, the new result is calculated from the bone pose excluding the **IterateIK3D** as the initial state. This means the result will be always equal as long as the target position and the previous bone pose are the same. However, if :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` and :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` are set too small, the end bone of the chain will never reach the target.
+如果為 ``true``\ ，則會丟棄前一影格的 **IterateIK3D** 結果。此時，新的結果將以除 **IterateIK3D** 之外的骨骼姿勢作為初始狀態進行計算。這意味著只要目標位置和之前的骨骼姿勢相同，結果就始終相同。但是，如果 :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` 和 :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` 設定得太小，骨骼鏈的末端骨骼將永遠無法到達目標位置。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, the previous frame's **IterateIK3D** result is discarded. At this p
 - |void| **set_max_iterations**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_iterations**\ (\ )
 
-The number of iteration loops used by the IK solver to produce more accurate results.
+IK 求解器用於生成更精確結果的迭代循環次數。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ The number of iteration loops used by the IK solver to produce more accurate res
 - |void| **set_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_distance**\ (\ )
 
-The minimum distance between the end bone and the target. If the distance is below this value, the IK solver stops any further iterations.
+末端骨骼與目標位置之間的最小距離。如果距離小於此值，IK 求解器將停止進一步迭代。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ The minimum distance between the end bone and the target. If the distance is bel
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-The number of settings.
+設定的數量。
 
 .. rst-class:: classref-section-separator
 
@@ -189,7 +189,7 @@ The number of settings.
 
 :ref:`JointLimitation3D<class_JointLimitation3D>` **get_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation>`
 
-Returns the joint limitation at ``joint`` in the bone chain's joint list.
+回傳骨骼鏈關節清單中 ``joint`` 的關節限制。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Returns the joint limitation at ``joint`` in the bone chain's joint list.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis>`
 
-Returns the joint limitation right axis at ``joint`` in the bone chain's joint list.
+回傳骨骼鏈關節清單中 ``joint`` 處的關節限制右軸。
 
 .. rst-class:: classref-item-separator
 
@@ -213,9 +213,9 @@ Returns the joint limitation right axis at ``joint`` in the bone chain's joint l
 
 :ref:`Vector3<class_Vector3>` **get_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>`
 
-Returns the joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+回傳骨骼鏈關節清單中 ``joint`` 處關節的右軸限制向量。
 
-If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+如果 :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` 為 :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`\ ，則該方法回傳 ``Vector3(0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -227,15 +227,15 @@ If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_li
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+回傳骨骼鏈關節清單中，指定 ``joint``\ （關節）處的關節限制旋轉偏移量。
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+該旋轉是在區域空間中進行的，這個區域空間的建置規則如下：以骨骼的朝向（通常是從父節點指向子節點）作為 +Y 軸，以 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 作為 +X 軸。
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+如果 +X 軸和 +Y 軸不垂直（正交），系統會自動修改 +X 軸，使其與 +Y 軸保持垂直。
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+此外，如果 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 的長度為零，系統會通過“最短弧”旋轉的方式，將參考姿態（reference pose）中原本的 +Y 軸旋轉至與目前骨骼朝向一致，以此建置出該區域空間。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+這裡的“參考姿態”，指的是在處理 IK（反向運動學）之前的那一瞬間的骨骼姿態。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **get_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_rotation_axis>`
 
-Returns the rotation axis at ``joint`` in the bone chain's joint list.
+回傳骨骼鏈關節清單中 ``joint`` 關節的旋轉軸。
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ Returns the rotation axis at ``joint`` in the bone chain's joint list.
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+回傳骨骼鏈中指定關節的旋轉軸向量。該向量表示關節可以繞其旋轉的軸。它根據為該關節設定的旋轉軸確定。
 
-If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+如果 :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` 為 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`\ ，則該方法回傳 ``Vector3(0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_a
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+回傳末端骨骼試圖到達的目標節點。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the target node that the end bone is trying to reach.
 
 |void| **set_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, limitation\: :ref:`JointLimitation3D<class_JointLimitation3D>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation>`
 
-Sets the joint limitation at ``joint`` in the bone chain's joint list.
+設定骨骼鏈關節清單中 ``joint`` 處的關節限制。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Sets the joint limitation at ``joint`` in the bone chain's joint list.
 
 |void| **set_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis>`
 
-Sets the joint limitation right axis at ``joint`` in the bone chain's joint list.
+設定骨骼鏈關節清單中 ``joint`` 處的關節限制右軸。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Sets the joint limitation right axis at ``joint`` in the bone chain's joint list
 
 |void| **set_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis_vector>`
 
-Sets the optional joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+設定骨骼鏈關節清單中 ``joint`` 處的可選關節限制右軸向量。
 
 .. rst-class:: classref-item-separator
 
@@ -321,15 +321,15 @@ Sets the optional joint limitation right axis vector at ``joint`` in the bone ch
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+設定骨骼鏈關節清單中，指定 ``joint``\ （關節）處的關節限制旋轉偏移量。
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+旋轉是在區域空間中進行的，這個區域空間的建置規則如下：以骨骼的朝向（通常是從父節點指向子節點）作為 +Y 軸，以 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 作為 +X 軸。
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+如果 +X 軸和 +Y 軸不垂直（正交），系統會自動修改 +X 軸，使其與 +Y 軸保持垂直。
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+此外，如果 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 的長度為零，系統會通過“最短弧”旋轉的方式，將參考姿態（reference pose）中原本的 +Y 軸旋轉至與目前骨骼朝向一致，以此建置出該區域空間。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+這裡的“參考姿態”，指的是在處理 IK（反向運動學）之前的那一瞬間的骨骼姿態。
 
 .. rst-class:: classref-item-separator
 
@@ -341,13 +341,13 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list.
+設定骨骼鏈關節清單中 ``joint`` 處的旋轉軸。
 
-The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+這些軸基於參考姿勢的空間，如果 ``axis`` 為 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，則可以指定任意軸。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+此處，參考姿勢是指處理 IK 之前的骨骼姿勢。
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
+\ **注意：**\ 旋轉軸和前向向量不應共線，以避免意外旋轉，因為 :ref:`ChainIK3D<class_ChainIK3D>` 不考慮扭轉力。
 
 .. rst-class:: classref-item-separator
 
@@ -359,11 +359,11 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis_vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+設定骨骼鏈中指定關節的旋轉軸向量。
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+該向量會經過內部處理進行正規化，並代表骨骼鏈可以圍繞其旋轉的軸。
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+如果向量長度為 ``0``\ ，則被視為等同於 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_IterateIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+設定末端骨骼試圖到達的目標節點。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

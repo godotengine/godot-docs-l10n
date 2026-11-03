@@ -116,7 +116,7 @@ enum **Orientation**: :ref:`🔗<enum_PlaneMesh_Orientation>`
 - |void| **set_orientation**\ (\ value\: :ref:`Orientation<enum_PlaneMesh_Orientation>`\ )
 - :ref:`Orientation<enum_PlaneMesh_Orientation>` **get_orientation**\ (\ )
 
-Direction that the **PlaneMesh** is facing.
+**PlaneMesh** 的朝向。
 
 .. rst-class:: classref-item-separator
 

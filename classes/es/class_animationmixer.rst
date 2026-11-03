@@ -257,7 +257,7 @@ enum **AnimationCallbackModeMethod**: :ref:`🔗<enum_AnimationMixer_AnimationCa
 
 :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>` **ANIMATION_CALLBACK_MODE_METHOD_DEFERRED** = ``0``
 
-Metodos de procesos por lotes llamados durante el proceso de animación, y despues que los eventos son procesados hacer los llamados. Esto evita los errores que implican borrar nodos o modificar el AnimationPlayer mientras se está reproduciendo.
+Agrupa por lotes las llamadas a métodos durante el proceso de animación y realiza las llamadas después de procesar los eventos. Esto evita los errores que implican borrar nodos o modificar el AnimationPlayer mientras se está reproduciendo.
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE:
 

@@ -9,7 +9,7 @@ ParallaxBackground
 
 **繼承：** :ref:`CanvasLayer<class_CanvasLayer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於建立視差滾動背景的節點。
+用於建立視差捲動背景的節點。
 
 .. rst-class:: classref-introduction-group
 
@@ -115,7 +115,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-開始滾動的左上角限制。如果相機超出這個限制，背景將停止滾動。必須低於 :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` 才能工作。
+開始捲動的左上角限制。如果相機超出這個限制，背景將停止捲動。必須低於 :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` 才能工作。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-右下角限制滾動結束。如果相機超出這個限制，背景將停止滾動。必須高於 :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` 才能工作。
+右下角限制捲動結束。如果相機超出這個限制，背景將停止捲動。必須高於 :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` 才能工作。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_scroll_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_offset**\ (\ )
 
-視差背景的滾動值。使用 :ref:`Camera2D<class_Camera2D>` 時會自動計算，但也可用於手動管理無相機時的滾動。
+視差背景的捲動值。使用 :ref:`Camera2D<class_Camera2D>` 時會自動計算，但也可用於手動管理無相機時的捲動。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

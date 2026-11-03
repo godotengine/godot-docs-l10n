@@ -101,7 +101,7 @@ Returns the number of stack frames in the backtrace.
 
 :ref:`String<class_String>` **get_frame_file**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_frame_file>`
 
-Returns the file name of the call site represented by the stack frame at the specified index.
+Devuelve el nombre de archivo del sitio de llamada representado por el fotograma de pila en el índice especificado.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns the name of the function called at the stack frame at the specified inde
 
 :ref:`int<class_int>` **get_frame_line**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_frame_line>`
 
-Returns the line number of the call site represented by the stack frame at the specified index.
+Devuelve el número de línea del punto de llamada representado por el fotograma de pila en el índice especificado.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Returns the value of the global variable at the specified index.
 
 :ref:`String<class_String>` **get_language_name**\ (\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_language_name>`
 
-Returns the name of the script language that this backtrace was captured from.
+Devuelve el nombre del lenguaje de script del que se capturó este seguimiento de pila.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Returns the number of local variables in the stack frame at the specified index.
 
 :ref:`String<class_String>` **get_local_variable_name**\ (\ frame_index\: :ref:`int<class_int>`, variable_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_local_variable_name>`
 
-Returns the name of the local variable at the specified ``variable_index`` in the stack frame at the specified ``frame_index``.
+Devuelve el nombre de la variable local en el índice especificado ``variable_index`` dentro del fotograma de pila especificado por ``frame_index``.
 
 .. rst-class:: classref-item-separator
 

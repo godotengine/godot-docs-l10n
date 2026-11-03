@@ -193,7 +193,7 @@ Si es ``true``, el diálogo se ocultará cuando se pulse la acción ``ui_close_d
 
 Si es ``true``, el diálogo se oculta cuando se pulsa el botón OK. Puedes ajustarlo a ``false`` si quieres hacer, por ejemplo, la validación de entrada al recibir la señal :ref:`confirmed<class_AcceptDialog_signal_confirmed>`, y manejar el ocultamiento del diálogo en tu propia lógica.
 
-\ **Nota:** Algunos nodos derivados de esta clase pueden tener un valor por defecto diferente, y potencialmente su propia lógica incorporada anulando este ajuste. Por ejemplo, :ref:`FileDialog<class_FileDialog>` tiene por defecto ``false``, y tiene su propio código de validación de entrada que se llama al pulsar OK, que eventualmente oculta el diálogo si la entrada es válida. Como tal, esta propiedad no puede ser usada en :ref:`FileDialog<class_FileDialog>` para deshabilitar la ocultación del diálogo cuando se presiona OK.
+\ **Nota:** Algunos nodos derivados de esta clase pueden tener un valor por defecto diferente, y potencialmente su propia lógica incorporada sobrescribiendo este ajuste. Por ejemplo, :ref:`FileDialog<class_FileDialog>` tiene por defecto ``false``, y tiene su propio código de validación de entrada que se llama al pulsar OK, que eventualmente oculta el diálogo si la entrada es válida. Como tal, esta propiedad no puede ser usada en :ref:`FileDialog<class_FileDialog>` para deshabilitar la ocultación del diálogo cuando se presiona OK.
 
 .. rst-class:: classref-item-separator
 

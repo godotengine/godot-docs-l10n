@@ -23,7 +23,7 @@ Clase base abstracta para todas las articulaciones en física 3D. Las articulaci
 Tutoriales
 --------------------
 
-- `Demo de Ciudad de Camioness en 3D <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo de Ciudad de Camioness en 3D <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

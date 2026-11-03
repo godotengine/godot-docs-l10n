@@ -16,7 +16,7 @@ XRTracker
 說明
 ----
 
-This object is the base of all XR trackers.
+所有 XR 追蹤器的基類物件。
 
 .. rst-class:: classref-introduction-group
 
@@ -78,21 +78,21 @@ This object is the base of all XR trackers.
 - |void| **set_tracker_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_tracker_name**\ (\ )
 
-The unique name of this tracker. The trackers that are available differ between various XR runtimes and can often be configured by the user. Godot maintains a number of reserved names that it expects the :ref:`XRInterface<class_XRInterface>` to implement if applicable:
+該追蹤器的唯一名稱。可用的追蹤器因各種 XR 執行時而異，並且通常可以由使用者設定。Godot 維護了一些保留名稱，如果可應用，它希望 :ref:`XRInterface<class_XRInterface>` 實作這些名稱：
 
-- ``"head"`` identifies the :ref:`XRPositionalTracker<class_XRPositionalTracker>` of the player's head
+- ``head`` 標識玩家頭部的 :ref:`XRPositionalTracker<class_XRPositionalTracker>`\ 
 
-- ``"left_hand"`` identifies the :ref:`XRControllerTracker<class_XRControllerTracker>` in the player's left hand
+- ``left_hand`` 標識玩家左手的 :ref:`XRControllerTracker<class_XRControllerTracker>`\ 
 
-- ``"right_hand"`` identifies the :ref:`XRControllerTracker<class_XRControllerTracker>` in the player's right hand
+- ``right_hand`` 標識玩家右手的 :ref:`XRControllerTracker<class_XRControllerTracker>`\ 
 
-- ``"/user/hand_tracker/left"`` identifies the :ref:`XRHandTracker<class_XRHandTracker>` for the player's left hand
+- ``/user/hand_tracker/left`` 標識玩家左手的 :ref:`XRHandTracker<class_XRHandTracker>`\ 
 
-- ``"/user/hand_tracker/right"`` identifies the :ref:`XRHandTracker<class_XRHandTracker>` for the player's right hand
+- ``/user/hand_tracker/right`` 標識玩家右手的 :ref:`XRHandTracker<class_XRHandTracker>`\ 
 
-- ``"/user/body_tracker"`` identifies the :ref:`XRBodyTracker<class_XRBodyTracker>` for the player's body
+- ``/user/body_tracker`` 標識玩家身體的 :ref:`XRBodyTracker<class_XRBodyTracker>`\ 
 
-- ``"/user/face_tracker"`` identifies the :ref:`XRFaceTracker<class_XRFaceTracker>` for the player's face
+- ``/user/face_tracker`` 標識玩家臉部的 :ref:`XRFaceTracker<class_XRFaceTracker>`
 
 .. rst-class:: classref-item-separator
 

@@ -14,13 +14,13 @@ AR/VR 的原點。
 說明
 ----
 
-This is a special node within the AR/VR system that maps the physical location of the center of our tracking space to the virtual location within our game world.
+這是 AR/VR 系統中的一個特殊節點，會將我們追蹤空間中心的物理位置映射到遊戲世界中的虛擬位置。
 
-Multiple origin points can be added to the scene tree, but only one can used at a time. All the :ref:`XRCamera3D<class_XRCamera3D>`, :ref:`XRController3D<class_XRController3D>`, and :ref:`XRAnchor3D<class_XRAnchor3D>` nodes should be direct children of this node for spatial tracking to work correctly.
+場景樹中可以新增多個原點，但一次只能使用一個。所有 :ref:`XRCamera3D<class_XRCamera3D>`\ 、\ :ref:`XRController3D<class_XRController3D>` 和 :ref:`XRAnchor3D<class_XRAnchor3D>` 節點都應該是該節點的直接子節點，以便空間追蹤正常工作。
 
-It is the position of this node that you update when your character needs to move through your game world while we're not moving in the real world. Movement in the real world is always in relation to this origin point.
+當你的角色需要在遊戲世界中移動而不在現實世界中移動時，就要更新此節點的位置。現實世界中的運動始終是相對於這個原點的。
 
-For example, if your character is driving a car, the **XROrigin3D** node should be a child node of this car. Or, if you're implementing a teleport system to move your character, you should change the position of this node.
+例如，如果你的角色正在駕駛汽車，則 **XROrigin3D** 節點應該是這輛車的子節點。或者，如果要實作通過傳送系統來移動角色，則應該更改此節點的位置。
 
 .. rst-class:: classref-introduction-group
 
@@ -63,7 +63,7 @@ For example, if your character is driving a car, the **XROrigin3D** node should 
 - |void| **set_current**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_current**\ (\ )
 
-If ``true``, this origin node is currently being used by the :ref:`XRServer<class_XRServer>`. Only one origin point can be used at a time.
+如果為 ``true``\ ，則該原點節點目前正被 :ref:`XRServer<class_XRServer>` 使用。一次只能使用一個原點。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ If ``true``, this origin node is currently being used by the :ref:`XRServer<clas
 - |void| **set_world_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_world_scale**\ (\ )
 
-The scale of the game world compared to the real world. This is the same as :ref:`XRServer.world_scale<class_XRServer_property_world_scale>`. By default, most AR/VR platforms assume that 1 game unit corresponds to 1 real world meter.
+遊戲世界相對於現實世界的縮放。與 :ref:`XRServer.world_scale<class_XRServer_property_world_scale>` 相同。預設情況下，大多數 AR/VR 平台假定 1 個遊戲世界單位等於現實世界的 1 米。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

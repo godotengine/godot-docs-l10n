@@ -211,7 +211,7 @@ El panel está cerrado.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-Dock slot, left side, upper-left (empty in default layout).
+Ranura del panel, lado izquierdo, superior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BL:
 
@@ -219,7 +219,7 @@ Dock slot, left side, upper-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-Dock slot, left side, bottom-left (empty in default layout).
+Ranura del panel, lado izquierdo, inferior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_UR:
 
@@ -227,7 +227,7 @@ Dock slot, left side, bottom-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-Dock slot, left side, upper-right (in default layout includes Scene and Import docks).
+Ranura del panel, lado izquierdo, superior derecha (en la distribución predeterminada incluye los paneles de Escena e Importación).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BR:
 
@@ -235,7 +235,7 @@ Dock slot, left side, upper-right (in default layout includes Scene and Import d
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-Dock slot, left side, bottom-right (in default layout includes FileSystem and History docks).
+Ranura del panel, lado izquierdo, inferior derecha (en la distribución predeterminada incluye los paneles de Sistema de archivos e Historial).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -243,7 +243,7 @@ Dock slot, left side, bottom-right (in default layout includes FileSystem and Hi
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-Dock slot, right side, upper-left (in default layout includes Inspector, Signal, and Group docks).
+Ranura del panel, lado derecho, superior izquierda (en la distribución predeterminada incluye los paneles de Inspector, Señales y Grupos).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -251,7 +251,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-Dock slot, right side, bottom-left (empty in default layout).
+Ranura del panel, lado derecho, inferior izquierda (vacía en la distribución predeterminada).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -259,7 +259,7 @@ Dock slot, right side, bottom-left (empty in default layout).
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-Dock slot, right side, upper-right (empty in default layout).
+Ranura del panel, lado derecho, superior derecha (vacía en la distribución predeterminada).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -267,7 +267,7 @@ Dock slot, right side, upper-right (empty in default layout).
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
 
-Dock slot, right side, bottom-right (empty in default layout).
+Ranura del panel, lado derecho, inferior derecha (vacía en la distribución predeterminada).
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM:
 

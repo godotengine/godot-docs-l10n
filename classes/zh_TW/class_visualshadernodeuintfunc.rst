@@ -87,7 +87,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeUIntFunc_Function>`
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeUIntFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeUIntFunc_Function>` **get_function**\ (\ )
 
-A function to be applied to the scalar.
+要套用至該標量的函式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

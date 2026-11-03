@@ -339,7 +339,7 @@ Inserta un nuevo elemento en una posición determinada del array. La posición d
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_is_empty>`
 
-Devuelve ``true`` si el array es vacio.
+Devuelve ``true`` si el array está vacío.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Inserta un :ref:`Vector2<class_Vector2>` al final.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector2Array_method_remove_at>`
 
-Elimina un elemento del array por indice.
+Elimina un elemento del array por índice.
 
 .. rst-class:: classref-item-separator
 

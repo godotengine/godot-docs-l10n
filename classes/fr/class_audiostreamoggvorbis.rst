@@ -14,9 +14,9 @@ Une classe représentant un flux audio Ogg Vorbis.
 Description
 -----------
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. More info can be found in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
+La classe AudioStreamOggVorbis est une classe :ref:`AudioStream<class_AudioStream>` spécialisée pour la manipulation des formats de fichiers Ogg Vorbis. Il offre des fonctionnalités pour le chargement et la lecture de fichiers Ogg Vorbis, ainsi que la gestion de la lecture en boucle et d'autres propriétés de lecture. Plus d'information peut être trouvé dans :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
 
-This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class, and MP3 files through the :ref:`AudioStreamMP3<class_AudioStreamMP3>` class.
+Cette classe fait partie du système de flux audio, qui prend également en charge les fichiers WAV avec la classe :ref:`AudioStreamWAV<class_AudioStreamWAV>` et les fichiers MP3 avec la classe :ref:`AudioStreamMP3<class_AudioStreamMP3>`.
 
 .. rst-class:: classref-introduction-group
 

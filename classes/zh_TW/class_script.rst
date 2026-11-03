@@ -146,9 +146,9 @@ Script
 
 :ref:`StringName<class_StringName>` **get_global_name**\ (\ ) |const| :ref:`🔗<class_Script_method_get_global_name>`
 
-Returns the class name associated with the script, if there is one. Returns an empty string otherwise.
+回傳與腳本關聯的類別名稱（如果有）。否則回傳空字串。
 
-To give the script a global name, you can use the ``class_name`` keyword in GDScript and the ``[GlobalClass]`` attribute in C#.
+要為腳本指定全域名稱，你可以在 GDScript 中使用 ``class_name`` 關鍵字，在 C# 中使用 ``[GlobalClass]`` 屬性。
 
 
 .. tabs::
@@ -203,7 +203,7 @@ To give the script a global name, you can use the ``class_name`` keyword in GDSc
 
 :ref:`Variant<class_Variant>` **get_rpc_config**\ (\ ) |const| :ref:`🔗<class_Script_method_get_rpc_config>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` mapping method names to their RPC configuration defined by this script.
+回傳一個 :ref:`Dictionary<class_Dictionary>`\ ，將方法名映射到由腳本定義的對應 RPC 設定。
 
 .. rst-class:: classref-item-separator
 
@@ -227,9 +227,9 @@ Returns a :ref:`Dictionary<class_Dictionary>` mapping method names to their RPC 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_method_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_method_list>`
 
-Returns the list of methods in this **Script**.
+回傳該 **Script** 中的方法清單。
 
-\ **Note:** The dictionaries returned by this method are formatted identically to those returned by :ref:`Object.get_method_list()<class_Object_method_get_method_list>`.
+\ **注意：**\ 該方法所回傳的字典與 :ref:`Object.get_method_list()<class_Object_method_get_method_list>` 回傳值的格式是一樣的。
 
 .. rst-class:: classref-item-separator
 
@@ -241,9 +241,9 @@ Returns the list of methods in this **Script**.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_property_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_property_list>`
 
-Returns the list of properties in this **Script**.
+回傳該 **Script** 中的屬性清單。
 
-\ **Note:** The dictionaries returned by this method are formatted identically to those returned by :ref:`Object.get_property_list()<class_Object_method_get_property_list>`.
+\ **注意：**\ 該方法所回傳的字典與 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 回傳值的格式是一樣的。
 
 .. rst-class:: classref-item-separator
 
@@ -255,9 +255,9 @@ Returns the list of properties in this **Script**.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_signal_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_signal_list>`
 
-Returns the list of signals defined in this **Script**.
+回傳該 **Script** 中定義的訊號清單。
 
-\ **Note:** The dictionaries returned by this method are formatted identically to those returned by :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>`.
+\ **注意：**\ 該方法所回傳的字典與 :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>` 回傳值的格式是一樣的。
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Returns the list of signals defined in this **Script**.
 
 :ref:`bool<class_bool>` **has_script_method**\ (\ method_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Script_method_has_script_method>`
 
-Returns ``true`` if the script, or a base class, defines a method with the given name.
+如果該腳本或其基底類別中定義了具有給定名稱的方法，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -293,9 +293,9 @@ Returns ``true`` if the script, or a base class, defines a method with the given
 
 :ref:`bool<class_bool>` **has_source_code**\ (\ ) |const| :ref:`🔗<class_Script_method_has_source_code>`
 
-Returns ``true`` if the script contains non-empty source code.
+如果腳本包含非空原始碼，則回傳 ``true``\ 。
 
-\ **Note:** If a script does not have source code, this does not mean that it is invalid or unusable. For example, a :ref:`GDScript<class_GDScript>` that was exported with binary tokenization has no source code, but still behaves as expected and could be instantiated. This can be checked with :ref:`can_instantiate()<class_Script_method_can_instantiate>`.
+\ **注意：**\ 如果腳本沒有原始碼，並不意味著它無效或不可用。例如，使用二進位標記匯出的 :ref:`GDScript<class_GDScript>` 沒有原始碼，但仍按預期執行並可以實例化。這可以使用 :ref:`can_instantiate()<class_Script_method_can_instantiate>` 進行檢查。
 
 .. rst-class:: classref-item-separator
 

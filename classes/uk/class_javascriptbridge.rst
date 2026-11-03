@@ -113,13 +113,13 @@ JavaScriptBridge
 
 |void| **download_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, name\: :ref:`String<class_String>`, mime\: :ref:`String<class_String>` = "application/octet-stream"\ ) :ref:`🔗<class_JavaScriptBridge_method_download_buffer>`
 
-Проконсультує користувача для завантаження файлу, що містить зазначений ``buffer``. Файл буде надана ``name`` і ``mime`` тип.
+Пропонує користувачеві завантажити файл, що містить вказаний ``buffer``. Файл матиме задані ``name`` та тип ``mime``.
 
-\ **Примітка:** Веб-сайт: http://en.wikipedia.org/wiki/Media_type]MIME type/url надана на основі файлу ``name``.
+\ **Примітка:** Браузер може замінити вказаний `тип MIME <https://en.wikipedia.org/wiki/Media_type>`__ на основі розширення файлу ``name``.
 
-\ **Примітка:** Браузери можуть блокувати завантаження, якщо :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` не називаються з взаємодії користувача (наприклад, кнопка натисніть кнопку).
+\ **Примітка:** Браузери можуть заблокувати завантаження, якщо :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` не викликається в результаті взаємодії користувача (наприклад, натискання кнопки).
 
-\ **Примітка:** Браузери можуть попросити користувача дозвіл або заблокувати завантаження, якщо кілька запитів для завантаження зроблені в швидкому успіху.
+\ **Примітка:** Браузери можуть запитати у користувача дозвіл або заблокувати завантаження, якщо кілька запитів на завантаження надходять один за одним у швидкій послідовності.
 
 .. rst-class:: classref-item-separator
 

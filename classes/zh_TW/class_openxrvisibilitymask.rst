@@ -7,16 +7,16 @@ OpenXRVisibilityMask
 
 **繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Draws a stereo correct visibility mask.
+繪製立體校正可見遮罩。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-The visibility mask allows us to black out the part of the render result that is invisible due to lens distortion.
+可見遮罩能夠讓我們遮蔽渲染結果中由於鏡頭畸變而不可見的部分。
 
-As this is rendered first, it prevents fragments with expensive lighting calculations to be processed as they are discarded through z-checking.
+由於可見遮罩是第一個渲染的，因此可以避免處理光照計算昂貴的片段，因為這些片段會通過 Z 檢查丟棄。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

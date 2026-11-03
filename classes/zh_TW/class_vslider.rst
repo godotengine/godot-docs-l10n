@@ -14,7 +14,7 @@ VSlider
 說明
 ----
 
-垂直捲動條，可用通過沿著垂直軸移動抓取器來調整取值。這個控制項繼承自 :ref:`Range<class_Range>`\ ，從下（最小）到上（最大）滾動。注意這個方向和 :ref:`VScrollBar<class_VScrollBar>` 的方向是相反的。
+垂直捲動條，可用通過沿著垂直軸移動抓取器來調整取值。這個控制項繼承自 :ref:`Range<class_Range>`\ ，從下（最小）到上（最大）捲動。注意這個方向和 :ref:`VScrollBar<class_VScrollBar>` 的方向是相反的。
 
 .. rst-class:: classref-reftable-group
 

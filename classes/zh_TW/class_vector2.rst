@@ -5,7 +5,7 @@
 Vector2
 =======
 
-A 2D vector using floating-point coordinates.
+使用浮點數座標的 2D 向量。
 
 .. rst-class:: classref-introduction-group
 
@@ -420,13 +420,13 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **angle**\ (\ ) |const| :ref:`🔗<class_Vector2_method_angle>`
 
-Returns this vector's angle with respect to the positive X axis, or ``(1, 0)`` vector, in radians.
+回傳該向量與 X 軸正方向，即 ``(1, 0)``\ ，的夾角，單位為弧度。
 
-For example, ``Vector2.RIGHT.angle()`` will return zero, ``Vector2.DOWN.angle()`` will return ``PI / 2`` (a quarter turn, or 90 degrees), and ``Vector2(1, -1).angle()`` will return ``-PI / 4`` (a negative eighth turn, or -45 degrees).
+例如，\ ``Vector2.RIGHT.angle()`` 將回傳零，\ ``Vector2.DOWN.angle()`` 將回傳 ``PI / 2``\ （四分之一圈，即 90 度），而 ``Vector2(1, -1).angle()`` 將回傳 ``-PI / 4``\ （負八分之一圈，即 -45 度）。
 
-This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` with :ref:`y<class_Vector2_property_y>` and :ref:`x<class_Vector2_property_x>`.
+這等同於傳遞 :ref:`y<class_Vector2_property_y>` 和 :ref:`x<class_Vector2_property_x>` 呼叫 :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>`\ 。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
+\ `回傳角度的示意圖。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +438,9 @@ This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_meth
 
 :ref:`float<class_float>` **angle_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_angle_to>`
 
-Returns the signed angle to the given vector, in radians. The result ranges from ``-PI`` to ``PI`` (inclusive).
+回傳與給定向量的帶符號夾角，單位為弧度。結果範圍從 ``-PI`` 到 ``PI``\ （含）。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
+\ `回傳的夾角的示意圖。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -452,11 +452,11 @@ Returns the signed angle to the given vector, in radians. The result ranges from
 
 :ref:`float<class_float>` **angle_to_point**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_angle_to_point>`
 
-Returns the signed angle between the X axis and the line from this vector to point ``to``, in radians. The result ranges from ``-PI`` to ``PI`` (inclusive).
+回傳 X 軸與從該向量到點 ``to`` 的直線之間的有符號夾角，單位為弧度。結果範圍從 ``-PI`` 到 ``PI``\ （含）。
 
-\ ``a.angle_to_point(b)`` is equivalent to ``(b - a).angle()``. See also :ref:`angle()<class_Vector2_method_angle>`.
+\ ``a.angle_to_point(b)`` 等價於 ``(b - a).angle()``\ 。另見 :ref:`angle()<class_Vector2_method_angle>`\ 。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
+\ `回傳的夾角的示意圖。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Returns the signed angle between the X axis and the line from this vector to poi
 
 :ref:`float<class_float>` **aspect**\ (\ ) |const| :ref:`🔗<class_Vector2_method_aspect>`
 
-Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` divided by :ref:`y<class_Vector2_property_y>`.
+回傳該向量的縱橫比，即 :ref:`x<class_Vector2_property_x>` 與 :ref:`y<class_Vector2_property_y>` 的比例。
 
 .. rst-class:: classref-item-separator
 
@@ -504,9 +504,9 @@ Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` 
 
 :ref:`Vector2<class_Vector2>` **bounce**\ (\ n\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_bounce>`
 
-Returns the vector "bounced off" from a line defined by the given normal ``n`` perpendicular to the line.
+回傳從由給定垂直法線 ``n`` 定義的線“反彈”的向量。
 
-\ **Note:** :ref:`bounce()<class_Vector2_method_bounce>` performs the operation that most engines and frameworks call ``reflect()``.
+\ **注意：** :ref:`bounce()<class_Vector2_method_bounce>` 執行大多數引擎和框架呼叫 ``reflect()`` 的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Returns the vector "bounced off" from a line defined by the given normal ``n`` p
 
 :ref:`Vector2<class_Vector2>` **clampf**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_clampf>`
 
-Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+回傳一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -554,11 +554,11 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`float<class_float>` **cross**\ (\ with\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_cross>`
 
-Returns the 2D analog of the cross product for this vector and ``with``.
+回傳該向量和 ``with`` 的 2D 類比叉積。
 
-This is the signed area of the parallelogram formed by the two vectors. If the second vector is clockwise from the first vector, then the cross product is the positive area. If counter-clockwise, the cross product is the negative area. If the two vectors are parallel this returns zero, making it useful for testing if two vectors are parallel.
+這是由兩個向量所形成的平行四邊形的有符號面積。如果第二個向量是從第一個向量的順時針方向出發的，則叉積為正面積。如果是逆時針方向，則叉積為負面積。如果兩個向量平行，則回傳零，這對於測試兩個向量是否平行很有用。
 
-\ **Note:** Cross product is not defined in 2D mathematically. This method embeds the 2D vectors in the XY plane of 3D space and uses their cross product's Z component as the analog.
+\ **注意：**\ 數學中沒有定義二維空間的叉乘。此方法是將 2D 向量嵌入到 3D 空間的 XY 平面中，並使用它們的叉積的 Z 分量作為類比。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ This is the signed area of the parallelogram formed by the two vectors. If the s
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate>`
 
-返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控制柄。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
 .. rst-class:: classref-item-separator
 
@@ -582,9 +582,9 @@ This is the signed area of the parallelogram formed by the two vectors. If the s
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate_in_time>`
 
-Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+回傳該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
-It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` by the time values.
+通過使用時間值，可以比 :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` 進行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -596,9 +596,9 @@ It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vecto
 
 :ref:`Vector2<class_Vector2>` **direction_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_direction_to>`
 
-Returns the normalized vector pointing from this vector to ``to``.
+回傳從該向量指向 ``to`` 的正規化向量。
 
-\ ``a.direction_to(b)`` is equivalent to ``(b - a).normalized()``. See also :ref:`normalized()<class_Vector2_method_normalized>`.
+\ ``a.direction_to(b)`` 等價於 ``(b - a).normalized()``\ 。另見 :ref:`normalized()<class_Vector2_method_normalized>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -610,9 +610,9 @@ Returns the normalized vector pointing from this vector to ``to``.
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的\ `歐幾里得距離 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB>`__\ 的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+該方法比 :ref:`distance_to()<class_Vector2_method_distance_to>` 執行速度更快，因此如果需要比較向量或需要平方距離來計算某些公式，請優先使用該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的 `歐幾里得距離 <https://en.wikipedia.org/wiki/Euclidean_distance>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -636,13 +636,13 @@ Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distanc
 
 :ref:`float<class_float>` **dot**\ (\ with\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_dot>`
 
-Returns the dot product of this vector and ``with``. This can be used to compare the angle between two vectors. For example, this can be used to determine whether an enemy is facing the player.
+回傳該向量與 ``with`` 的點積。可用於比較兩個向量之間的夾角。例如，可用於確定敵人是否面向玩家。
 
-The dot product will be ``0`` for a right angle (90 degrees), greater than 0 for angles narrower than 90 degrees and lower than 0 for angles wider than 90 degrees.
+直角（90 度）的點積為 ``0``\ ；大於 0 則夾角小於 90 度；小於 0 則夾角大於 90 度。
 
-When using unit (normalized) vectors, the result will always be between ``-1.0`` (180 degree angle) when the vectors are facing opposite directions, and ``1.0`` (0 degree angle) when the vectors are aligned.
+使用（正規化的）單位向量時，如果向量朝向相反，則結果始終為 ``-1.0``\ （180 度角）；如果向量方向一致，則結果始終為 ``1.0``\ （0 度角）。
 
-\ **Note:** ``a.dot(b)`` is equivalent to ``b.dot(a)``.
+\ **注意：**\ ``a.dot(b)`` 等價於 ``b.dot(a)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -666,15 +666,15 @@ When using unit (normalized) vectors, the result will always be between ``-1.0``
 
 :ref:`Vector2<class_Vector2>` **from_angle**\ (\ angle\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Vector2_method_from_angle>`
 
-Creates a **Vector2** rotated to the given ``angle`` in radians. This is equivalent to doing ``Vector2(cos(angle), sin(angle))`` or ``Vector2.RIGHT.rotated(angle)``.
+建立旋轉至 ``angle`` 角度的 **Vector2**\ ，旋轉單位為弧度。相當於執行 ``Vector2(cos(angle), sin(angle))`` 或 ``Vector2.RIGHT.rotated(angle)``\ 。
 
 ::
 
-    print(Vector2.from_angle(0)) # Prints (1.0, 0.0)
-    print(Vector2(1, 0).angle()) # Prints 0.0, which is the angle used above.
-    print(Vector2.from_angle(PI / 2)) # Prints (0.0, 1.0)
+    print(Vector2.from_angle(0)) # 輸出 (1.0, 0.0)
+    print(Vector2(1, 0).angle()) # 輸出 0.0，即上一行所使用的角度。
+    print(Vector2.from_angle(PI / 2)) # 輸出 (0.0, 1.0)
 
-\ **Note:** The length of the returned **Vector2** is *approximately* ``1.0``, but is is not guaranteed to be exactly ``1.0`` due to floating-point precision issues. Call :ref:`normalized()<class_Vector2_method_normalized>` on the returned **Vector2** if you require a unit vector.
+\ **注意：**\ 回傳的 **Vector2** 的長度\ *約等於* ``1.0``\ ，由於浮點數精度問題，不保證精確等於 ``1.0``\ 。如果需要單位向量，請呼叫回傳的 **Vector2** 的 :ref:`normalized()<class_Vector2_method_normalized>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -774,7 +774,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`Vector2<class_Vector2>` **limit_length**\ (\ length\: :ref:`float<class_float>` = 1.0\ ) |const| :ref:`🔗<class_Vector2_method_limit_length>`
 
-Returns the vector with a maximum length by limiting its length to ``length``. If the vector is non-finite, the result is undefined.
+回傳應用了最大長度限制的向量，長度被限制到 ``length``\ 。如果向量非有限，則結果未定義。
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ Returns the vector with a maximum length by limiting its length to ``length``. I
 
 :ref:`Vector2<class_Vector2>` **max**\ (\ with\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_max>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector2(maxf(x, with.x), maxf(y, with.y))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector2(maxf(x, with.x), maxf(y, with.y))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector2
 
 :ref:`Vector2<class_Vector2>` **maxf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_maxf>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector2(maxf(x, with), maxf(y, with))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector2(maxf(x, with), maxf(y, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -822,7 +822,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector2
 
 :ref:`Vector2<class_Vector2>` **min**\ (\ with\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_min>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2(minf(x, with.x), minf(y, with.y))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector2(minf(x, with.x), minf(y, with.y))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -846,7 +846,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2
 
 :ref:`Vector2<class_Vector2>` **minf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_minf>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2(minf(x, with), minf(y, with))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector2(minf(x, with), minf(y, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -870,9 +870,9 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2
 
 :ref:`Vector2<class_Vector2>` **normalized**\ (\ ) |const| :ref:`🔗<class_Vector2_method_normalized>`
 
-Returns the result of scaling the vector to unit length. Equivalent to ``v / v.length()``. Returns ``(0, 0)`` if ``v.length() == 0``. See also :ref:`is_normalized()<class_Vector2_method_is_normalized>`.
+回傳該向量縮放至單位長度的結果。等價於 ``v / v.length()``\ 。如果 ``v.length() == 0`` 則回傳 ``(0, 0)``\ 。另見 :ref:`is_normalized()<class_Vector2_method_is_normalized>`\ 。
 
-\ **Note:** This function may return incorrect values if the input vector length is near zero.
+\ **注意：**\ 如果輸入向量的長度接近零，則這個函式可能回傳不正確的值。
 
 .. rst-class:: classref-item-separator
 
@@ -920,9 +920,9 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector2<class_Vector2>` **project**\ (\ b\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_project>`
 
-Returns a new vector resulting from projecting this vector onto the given vector ``b``. The resulting new vector is parallel to ``b``. See also :ref:`slide()<class_Vector2_method_slide>`.
+回傳將該向量投影到給定的 ``b`` 向量上所得到的新向量。得到的新向量與 ``b`` 平行。另見 :ref:`slide()<class_Vector2_method_slide>`\ 。
 
-\ **Note:** If the vector ``b`` is a zero vector, the components of the resulting new vector will be :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
+\ **注意：**\ 如果 ``b`` 向量為零向量，得到的新向量的分量均為 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -934,9 +934,9 @@ Returns a new vector resulting from projecting this vector onto the given vector
 
 :ref:`Vector2<class_Vector2>` **reflect**\ (\ line\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_reflect>`
 
-Returns the result of reflecting the vector from a line defined by the given direction vector ``line``.
+回傳從給定方向向量 ``line`` 定義的線反射向量的結果。
 
-\ **Note:** :ref:`reflect()<class_Vector2_method_reflect>` differs from what other engines and frameworks call ``reflect()``. In other engines, ``reflect()`` takes a normal direction which is a direction perpendicular to the line. In Godot, you specify the direction of the line directly. See also :ref:`bounce()<class_Vector2_method_bounce>` which does what most engines call ``reflect()``.
+\ **注意：**\ :ref:`reflect()<class_Vector2_method_reflect>` 與其他引擎和框架呼叫的 ``reflect()`` 不同。在其他引擎中，\ ``reflect()`` 採用法線方向，即垂直於線的方向。在 Godot 中，你可以直接指定線的方向。另見 :ref:`bounce()<class_Vector2_method_bounce>`\ ，它執行大多數引擎呼叫的 ``reflect()``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -998,9 +998,9 @@ Returns the result of reflecting the vector from a line defined by the given dir
 
 :ref:`Vector2<class_Vector2>` **slide**\ (\ n\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_slide>`
 
-Returns a new vector resulting from sliding this vector along a line with normal ``n``. The resulting new vector is perpendicular to ``n``, and is equivalent to this vector minus its projection on ``n``. See also :ref:`project()<class_Vector2_method_project>`.
+回傳將該向量沿著法線為 ``n`` 的直線滑動所得到的新向量。得到的新向量與 ``n`` 垂直，等價於將該向量減去在 ``n`` 上的投影。另見 :ref:`project()<class_Vector2_method_project>`\ 。
 
-\ **Note:** The vector ``n`` must be normalized. See also :ref:`normalized()<class_Vector2_method_normalized>`.
+\ **注意：**\ 向量 ``n`` 必須為正規化的向量。另見 :ref:`normalized()<class_Vector2_method_normalized>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1024,7 +1024,7 @@ Returns a new vector resulting from sliding this vector along a line with normal
 
 :ref:`Vector2<class_Vector2>` **snappedf**\ (\ step\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_snappedf>`
 
-Returns a new vector with each component snapped to the nearest multiple of ``step``. This can also be used to round the components to an arbitrary number of decimals.
+回傳一個新向量，其中每個分量都吸附到 ``step`` 的最接近的倍數。這也可以用於將分量四捨五入為任意數位的小數。
 
 .. rst-class:: classref-section-separator
 
@@ -1057,11 +1057,11 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Vector2_operator_mul_Transform2D>`
 
-Inversely transforms (multiplies) the **Vector2** by the given :ref:`Transform2D<class_Transform2D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+假設該變換的基是正交的（即旋轉/反射可以，縮放/傾斜不行），將 **Vector2** 逆向變換（乘以）給定的 :ref:`Transform2D<class_Transform2D>` 變換矩陣。
 
-\ ``vector * transform`` is equivalent to ``transform.inverse() * vector``. See :ref:`Transform2D.inverse()<class_Transform2D_method_inverse>`.
+\ ``vector * transform`` 相當於 ``transform.inverse() * vector``\ 。請參閱 :ref:`Transform2D.inverse()<class_Transform2D_method_inverse>`\ 。
 
-For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * vector`` can be used instead. See :ref:`Transform2D.affine_inverse()<class_Transform2D_method_affine_inverse>`.
+對於通過仿射變換的逆進行的變換（例如縮放），可以使用 ``transform.affine_inverse() * vector`` 代替。請參閱 :ref:`Transform2D.affine_inverse()<class_Transform2D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1073,11 +1073,11 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_mul_Vector2>`
 
-Multiplies each component of the **Vector2** by the components of the given **Vector2**.
+將該 **Vector2** 的每個分量乘以給定 **Vector2** 的對應分量。
 
 ::
 
-    print(Vector2(10, 20) * Vector2(3, 4)) # Prints (30.0, 80.0)
+    print(Vector2(10, 20) * Vector2(3, 4)) # 輸出 (30.0, 80.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1113,11 +1113,11 @@ Multiplies each component of the **Vector2** by the components of the given **Ve
 
 :ref:`Vector2<class_Vector2>` **operator +**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_sum_Vector2>`
 
-Adds each component of the **Vector2** by the components of the given **Vector2**.
+將該 **Vector2** 的每個分量加上給定 **Vector2** 的對應分量。
 
 ::
 
-    print(Vector2(10, 20) + Vector2(3, 4)) # Prints (13.0, 24.0)
+    print(Vector2(10, 20) + Vector2(3, 4)) # 輸出 (13.0, 24.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1129,11 +1129,11 @@ Adds each component of the **Vector2** by the components of the given **Vector2*
 
 :ref:`Vector2<class_Vector2>` **operator -**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_dif_Vector2>`
 
-Subtracts each component of the **Vector2** by the components of the given **Vector2**.
+將該 **Vector2** 的每個分量減去給定 **Vector2** 的對應分量。
 
 ::
 
-    print(Vector2(10, 20) - Vector2(3, 4)) # Prints (7.0, 16.0)
+    print(Vector2(10, 20) - Vector2(3, 4)) # 輸出 (7.0, 16.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1145,11 +1145,11 @@ Subtracts each component of the **Vector2** by the components of the given **Vec
 
 :ref:`Vector2<class_Vector2>` **operator /**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_div_Vector2>`
 
-Divides each component of the **Vector2** by the components of the given **Vector2**.
+將該 **Vector2** 的每個分量除以給定 **Vector2** 的對應分量。
 
 ::
 
-    print(Vector2(10, 20) / Vector2(2, 5)) # Prints (5.0, 4.0)
+    print(Vector2(10, 20) / Vector2(2, 5)) # 輸出 (5.0, 4.0)
 
 .. rst-class:: classref-item-separator
 

@@ -9,7 +9,7 @@ AudioEffectFilter
 
 **Hérité par :** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
 
-Base class for filters. Use effects that inherit this class instead of using it directly.
+Classe de base pour les filtres. Utilisez des effets qui héritent de cette classe au lieu de l'utiliser directement.
 
 .. rst-class:: classref-introduction-group
 
@@ -33,7 +33,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -154,7 +154,7 @@ Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain of the frequencies affected by the filter. This property is only available for :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. Value can range from 0 to 4.
+Gain des fréquences affectées par le filtre. Cette propriété n'est disponible que pour :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` et :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. Sa valeur peut aller de 0 à 4.
 
 .. rst-class:: classref-item-separator
 

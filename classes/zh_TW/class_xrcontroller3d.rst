@@ -7,20 +7,20 @@ XRController3D
 
 **繼承：** :ref:`XRNode3D<class_XRNode3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 3D node representing a spatially-tracked controller.
+表示空間追蹤控制器的 3D 節點。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This is a helper 3D node that is linked to the tracking of controllers. It also offers several handy passthroughs to the state of buttons and such on the controllers.
+這是一個輔助 3D 節點，連結到控制器的追蹤。它還為控制器上的按鈕等狀態提供了一些方便的直通方式。
 
-Controllers are linked by their ID. You can create controller nodes before the controllers are available. If your game always uses two controllers (one for each hand), you can predefine the controllers with ID 1 and 2; they will become active as soon as the controllers are identified. If you expect additional controllers to be used, you should react to the signals and add XRController3D nodes to your scene.
+控制器通過其 ID 連結。可以在控制器可用之前建立控制器節點。如果遊戲總是使用兩個控制器（每只手一個），可以預定義 ID 為 1 和 2 的控制器；一旦控制器被識別，它們將被立即啟用。如果希望使用額外的控制器，應該對這些訊號做出反應並將 XRController3D 節點新增到場景中。
 
-The position of the controller node is automatically updated by the :ref:`XRServer<class_XRServer>`. This makes this node ideal to add child nodes to visualize the controller.
+控制器節點的位置由 :ref:`XRServer<class_XRServer>` 自動更新。這使得該節點非常適合新增子節點以視覺化控制器。
 
-The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. In the case of OpenXR, these are the names of actions in the current action set from the OpenXR action map.
+輸入的名稱由目前的 :ref:`XRInterface<class_XRInterface>` 定義。使用 OpenXR 時，是 OpenXR 動作映射的目前動作集中的動作名稱。
 
 .. rst-class:: classref-introduction-group
 
@@ -112,7 +112,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 **profile_changed**\ (\ role\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_profile_changed>`
 
-Emitted when the interaction profile on this controller is changed.
+當該控制器上的互動設定檔案發生改變時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -129,9 +129,9 @@ Emitted when the interaction profile on this controller is changed.
 
 :ref:`float<class_float>` **get_float**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRController3D_method_get_float>`
 
-Returns a numeric value for the input with the given ``name``. This is used for triggers and grip sensors.
+回傳名稱為 ``name`` 的輸入對應的數值。適用於扳機和握力傳感器等輸入。
 
-\ **Note:** The current :ref:`XRInterface<class_XRInterface>` defines the ``name`` for each input. In the case of OpenXR, these are the names of actions in the current action set.
+\ **注意：**\ 各個輸入的 ``name`` 由目前的 :ref:`XRInterface<class_XRInterface>` 定義。如果是 OpenXR，則為目前動作集中動作的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -143,9 +143,9 @@ Returns a numeric value for the input with the given ``name``. This is used for 
 
 :ref:`Variant<class_Variant>` **get_input**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRController3D_method_get_input>`
 
-Returns a :ref:`Variant<class_Variant>` for the input with the given ``name``. This works for any input type, the variant will be typed according to the actions configuration.
+回傳名稱為 ``name`` 的輸入對應的 :ref:`Variant<class_Variant>`\ 。適用於所有輸入型別，變體的具體型別由動作設定決定。
 
-\ **Note:** The current :ref:`XRInterface<class_XRInterface>` defines the ``name`` for each input. In the case of OpenXR, these are the names of actions in the current action set.
+\ **注意：**\ 各個輸入的 ``name`` 由目前的 :ref:`XRInterface<class_XRInterface>` 定義。如果是 OpenXR，則為目前動作集中動作的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Returns a :ref:`Variant<class_Variant>` for the input with the given ``name``. T
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **get_tracker_hand**\ (\ ) |const| :ref:`🔗<class_XRController3D_method_get_tracker_hand>`
 
-Returns the hand holding this controller, if known.
+回傳持握這個控制器的手，如果已知。
 
 .. rst-class:: classref-item-separator
 
@@ -169,9 +169,9 @@ Returns the hand holding this controller, if known.
 
 :ref:`Vector2<class_Vector2>` **get_vector2**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRController3D_method_get_vector2>`
 
-Returns a :ref:`Vector2<class_Vector2>` for the input with the given ``name``. This is used for thumbsticks and thumbpads found on many controllers.
+回傳名稱為 ``name`` 的輸入對應的 :ref:`Vector2<class_Vector2>`\ 。適用於許多控制器上能夠找到的搖桿和觸摸板。
 
-\ **Note:** The current :ref:`XRInterface<class_XRInterface>` defines the ``name`` for each input. In the case of OpenXR, these are the names of actions in the current action set.
+\ **注意：**\ 各個輸入的 ``name`` 由目前的 :ref:`XRInterface<class_XRInterface>` 定義。如果是 OpenXR，則為目前動作集中動作的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -183,9 +183,9 @@ Returns a :ref:`Vector2<class_Vector2>` for the input with the given ``name``. T
 
 :ref:`bool<class_bool>` **is_button_pressed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRController3D_method_is_button_pressed>`
 
-Returns ``true`` if the button with the given ``name`` is pressed.
+如果名稱為 ``name`` 的按鈕處於按下狀態，則回傳 ``true``\ 。
 
-\ **Note:** The current :ref:`XRInterface<class_XRInterface>` defines the ``name`` for each input. In the case of OpenXR, these are the names of actions in the current action set.
+\ **注意：**\ 各個輸入的 ``name`` 由目前的 :ref:`XRInterface<class_XRInterface>` 定義。如果是 OpenXR，則為目前動作集中動作的名稱。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

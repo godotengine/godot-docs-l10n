@@ -5,7 +5,7 @@
 Vector3
 =======
 
-A 3D vector using floating-point coordinates.
+使用浮點數座標的 3D 向量。
 
 .. rst-class:: classref-introduction-group
 
@@ -305,7 +305,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **LEFT** = ``Vector3(-1, 0, 0)`` :ref:`🔗<class_Vector3_constant_LEFT>`
 
-左單位向量。代表局部的左方向，全域的西方向。
+左單位向量。代表區域的左方向，全域的西方向。
 
 .. _class_Vector3_constant_RIGHT:
 
@@ -313,7 +313,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **RIGHT** = ``Vector3(1, 0, 0)`` :ref:`🔗<class_Vector3_constant_RIGHT>`
 
-右單位向量。代表局部的右方向，全域的東方向。
+右單位向量。代表區域的右方向，全域的東方向。
 
 .. _class_Vector3_constant_UP:
 
@@ -337,7 +337,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **FORWARD** = ``Vector3(0, 0, -1)`` :ref:`🔗<class_Vector3_constant_FORWARD>`
 
-向前的單位向量。代表局部的前方，全域的北方。請注意，燈光、相機等的前方和角色等 3D 素材的前方是不同的，後者通常朝向相機。處理 3D 素材空間時，請使用 :ref:`MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>` 等常數。
+向前的單位向量。代表區域的前方，全域的北方。請注意，燈光、相機等的前方和角色等 3D 素材的前方是不同的，後者通常朝向相機。處理 3D 素材空間時，請使用 :ref:`MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>` 等常數。
 
 .. _class_Vector3_constant_BACK:
 
@@ -345,7 +345,7 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **BACK** = ``Vector3(0, 0, 1)`` :ref:`🔗<class_Vector3_constant_BACK>`
 
-向後的單位向量。代表局部的後方，全域的南方。
+向後的單位向量。代表區域的後方，全域的南方。
 
 .. _class_Vector3_constant_MODEL_LEFT:
 
@@ -546,9 +546,9 @@ Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **bounce**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_bounce>`
 
-Returns the vector "bounced off" from a plane defined by the given normal ``n``.
+回傳從給定法線 ``n`` 定義的平面“彈起”的向量。
 
-\ **Note:** :ref:`bounce()<class_Vector3_method_bounce>` performs the operation that most engines and frameworks call ``reflect()``.
+\ **注意：**\ :ref:`bounce()<class_Vector3_method_bounce>` 執行大多數引擎和框架呼叫 ``reflect()`` 的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Returns the vector "bounced off" from a plane defined by the given normal ``n``.
 
 :ref:`Vector3<class_Vector3>` **clampf**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_clampf>`
 
-Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+回傳一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -596,9 +596,9 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`Vector3<class_Vector3>` **cross**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_cross>`
 
-Returns the cross product of this vector and ``with``.
+回傳該向量與 ``with`` 的叉積。
 
-This returns a vector perpendicular to both this and ``with``, which would be the normal vector of the plane defined by the two vectors. As there are two such vectors, in opposite directions, this method returns the vector defined by a right-handed coordinate system. If the two vectors are parallel this returns an empty vector, making it useful for testing if two vectors are parallel.
+這將回傳一個垂直於該向量和 ``with`` 的向量，它將是兩個向量定義的平面的法向量。由於有兩個這樣的向量，方向相反，該方法回傳由右手座標系定義的向量。如果這兩個向量平行，則回傳一個空向量，這使其可用於測試兩個向量是否平行。
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ This returns a vector perpendicular to both this and ``with``, which would be th
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate>`
 
-返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控制柄。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
 .. rst-class:: classref-item-separator
 
@@ -622,9 +622,9 @@ This returns a vector perpendicular to both this and ``with``, which would be th
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate_in_time>`
 
-Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+回傳該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
-It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` by the time values.
+通過使用時間值，可以比 :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` 進行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -648,9 +648,9 @@ It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vecto
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的\ `歐幾里得距離 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB>`__\ 的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+該方法比 :ref:`distance_to()<class_Vector3_method_distance_to>` 執行速度更快，因此如果需要比較向量或需要平方距離來計算某些公式，請優先使用該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+回傳該向量與 ``to`` 之間的 `歐幾里得距離 <https://en.wikipedia.org/wiki/Euclidean_distance>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -674,13 +674,13 @@ Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distanc
 
 :ref:`float<class_float>` **dot**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_dot>`
 
-Returns the dot product of this vector and ``with``. This can be used to compare the angle between two vectors. For example, this can be used to determine whether an enemy is facing the player.
+回傳該向量與 ``with`` 的點積。可用於比較兩個向量之間的夾角。例如，可用於確定敵人是否面向玩家。
 
-The dot product will be ``0`` for a right angle (90 degrees), greater than 0 for angles narrower than 90 degrees and lower than 0 for angles wider than 90 degrees.
+直角（90 度）的點積為 ``0``\ ；大於 0 則夾角小於 90 度；小於 0 則夾角大於 90 度。
 
-When using unit (normalized) vectors, the result will always be between ``-1.0`` (180 degree angle) when the vectors are facing opposite directions, and ``1.0`` (0 degree angle) when the vectors are aligned.
+使用（正規化的）單位向量時，如果向量朝向相反，則結果始終為 ``-1.0``\ （180 度角）；如果向量方向一致，則結果始終為 ``1.0``\ （0 度角）。
 
-\ **Note:** ``a.dot(b)`` is equivalent to ``b.dot(a)``.
+\ **注意：**\ ``a.dot(b)`` 等價於 ``b.dot(a)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -804,7 +804,7 @@ When using unit (normalized) vectors, the result will always be between ``-1.0``
 
 :ref:`Vector3<class_Vector3>` **limit_length**\ (\ length\: :ref:`float<class_float>` = 1.0\ ) |const| :ref:`🔗<class_Vector3_method_limit_length>`
 
-Returns the vector with a maximum length by limiting its length to ``length``. If the vector is non-finite, the result is undefined.
+回傳應用了最大長度限制的向量，長度被限制到 ``length``\ 。如果向量非有限，則結果未定義。
 
 .. rst-class:: classref-item-separator
 
@@ -816,7 +816,7 @@ Returns the vector with a maximum length by limiting its length to ``length``. I
 
 :ref:`Vector3<class_Vector3>` **max**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_max>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector3(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3<class_Vector3>` **maxf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_maxf>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3(maxf(x, with), maxf(y, with), maxf(z, with))``.
+回傳自身與 ``with`` 各分量的最大值，等價於 ``Vector3(maxf(x, with), maxf(y, with), maxf(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +852,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3<class_Vector3>` **min**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_min>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3(minf(x, with.x), minf(y, with.y), minf(z, with.z))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector3(minf(x, with.x), minf(y, with.y), minf(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +876,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3<class_Vector3>` **minf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_minf>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3(minf(x, with), minf(y, with), minf(z, with))``.
+回傳自身與 ``with`` 各分量的最小值，等價於 ``Vector3(minf(x, with), minf(y, with), minf(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -900,9 +900,9 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3<class_Vector3>` **normalized**\ (\ ) |const| :ref:`🔗<class_Vector3_method_normalized>`
 
-Returns the result of scaling the vector to unit length. Equivalent to ``v / v.length()``. Returns ``(0, 0, 0)`` if ``v.length() == 0``. See also :ref:`is_normalized()<class_Vector3_method_is_normalized>`.
+回傳該向量縮放至單位長度的結果。等價於 ``v / v.length()``\ 。如果 ``v.length() == 0`` 則回傳 ``(0, 0, 0)``\ 。另見 :ref:`is_normalized()<class_Vector3_method_is_normalized>`\ 。
 
-\ **Note:** This function may return incorrect values if the input vector length is near zero.
+\ **注意：**\ 如果輸入向量的長度接近零，則這個函式可能回傳不正確的值。
 
 .. rst-class:: classref-item-separator
 
@@ -978,9 +978,9 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector3<class_Vector3>` **project**\ (\ b\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_project>`
 
-Returns a new vector resulting from projecting this vector onto the given vector ``b``. The resulting new vector is parallel to ``b``. See also :ref:`slide()<class_Vector3_method_slide>`.
+回傳將該向量投影到給定的 ``b`` 向量上所得到的新向量。得到的新向量與 ``b`` 平行。另見 :ref:`slide()<class_Vector3_method_slide>`\ 。
 
-\ **Note:** If the vector ``b`` is a zero vector, the components of the resulting new vector will be :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
+\ **注意：**\ 如果 ``b`` 向量為零向量，得到的新向量的分量均為 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -992,9 +992,9 @@ Returns a new vector resulting from projecting this vector onto the given vector
 
 :ref:`Vector3<class_Vector3>` **reflect**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_reflect>`
 
-Returns the result of reflecting the vector through a plane defined by the given normal vector ``n``.
+回傳通過給定法線向量 ``n`` 定義的平面反射向量的結果。
 
-\ **Note:** :ref:`reflect()<class_Vector3_method_reflect>` differs from what other engines and frameworks call ``reflect()``. In other engines, ``reflect()`` returns the result of the vector reflected by the given plane. The reflection thus passes through the given normal. While in Godot the reflection passes through the plane and can be thought of as bouncing off the normal. See also :ref:`bounce()<class_Vector3_method_bounce>` which does what most engines call ``reflect()``.
+\ **注意：**\ :ref:`reflect()<class_Vector3_method_reflect>` 與其他引擎和框架呼叫的 ``reflect()`` 不同。在其他引擎中，\ ``reflect()`` 回傳由給定平面反射的向量的結果。因此反射穿過給定的法線。而在 Godot 中，反射穿過平面，可以被認為是從法線反彈。另見 :ref:`bounce()<class_Vector3_method_bounce>`\ ，它執行大多數引擎呼叫的 ``reflect()``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1068,9 +1068,9 @@ Returns the result of reflecting the vector through a plane defined by the given
 
 :ref:`Vector3<class_Vector3>` **slide**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_slide>`
 
-Returns a new vector resulting from sliding this vector along a plane with normal ``n``. The resulting new vector is perpendicular to ``n``, and is equivalent to this vector minus its projection on ``n``. See also :ref:`project()<class_Vector3_method_project>`.
+回傳將該向量沿著法線為 ``n`` 的平面滑動所得到的新向量。得到的新向量與 ``n`` 垂直，等價於將該向量減去在 ``n`` 上的投影。另見 :ref:`project()<class_Vector3_method_project>`\ 。
 
-\ **Note:** The vector ``n`` must be normalized. See also :ref:`normalized()<class_Vector3_method_normalized>`.
+\ **注意：**\ 向量 ``n`` 必須為正規化的向量。另見 :ref:`normalized()<class_Vector3_method_normalized>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1094,7 @@ Returns a new vector resulting from sliding this vector along a plane with norma
 
 :ref:`Vector3<class_Vector3>` **snappedf**\ (\ step\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_snappedf>`
 
-Returns a new vector with each component snapped to the nearest multiple of ``step``. This can also be used to round the components to an arbitrary number of decimals.
+回傳一個新向量，其中每個分量都吸附到 ``step`` 的最接近的倍數。這也可以用於將分量四捨五入為任意數位的小數。
 
 .. rst-class:: classref-section-separator
 
@@ -1127,11 +1127,11 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_Vector3_operator_mul_Basis>`
 
-Inversely transforms (multiplies) the **Vector3** by the given :ref:`Basis<class_Basis>` matrix, under the assumption that the basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+假設該基是正交的（即旋轉/反射可以，縮放/傾斜則不然），將 **Vector3** 逆向變換（乘以）給定的 :ref:`Basis<class_Basis>` 矩陣。
 
-\ ``vector * basis`` is equivalent to ``basis.transposed() * vector``. See :ref:`Basis.transposed()<class_Basis_method_transposed>`.
+\ ``vector * basis`` 性當於 ``basis.transposed() * vector``\ 。請參閱 :ref:`Basis.transposed()<class_Basis_method_transposed>`\ 。
 
-For transforming by inverse of a non-orthonormal basis (e.g. with scaling) ``basis.inverse() * vector`` can be used instead. See :ref:`Basis.inverse()<class_Basis_method_inverse>`.
+對於通過非正交的基的逆進行的變換（例如使用縮放），可以使用 ``basis.inverse() * vector`` 代替。請參閱 :ref:`Basis.inverse()<class_Basis_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1143,9 +1143,9 @@ For transforming by inverse of a non-orthonormal basis (e.g. with scaling) ``bas
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Vector3_operator_mul_Quaternion>`
 
-Inversely transforms (multiplies) the **Vector3** by the given :ref:`Quaternion<class_Quaternion>`.
+將 **Vector3** 與給定的 :ref:`Quaternion<class_Quaternion>` 進行逆向變換（相乘）。
 
-\ ``vector * quaternion`` is equivalent to ``quaternion.inverse() * vector``. See :ref:`Quaternion.inverse()<class_Quaternion_method_inverse>`.
+\ ``vector * quaternion`` 相當於 ``quaternion.inverse() * vector``\ 。請參閱 :ref:`Quaternion.inverse()<class_Quaternion_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1157,11 +1157,11 @@ Inversely transforms (multiplies) the **Vector3** by the given :ref:`Quaternion<
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Vector3_operator_mul_Transform3D>`
 
-Inversely transforms (multiplies) the **Vector3** by the given :ref:`Transform3D<class_Transform3D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+假設該變換的基是正交的（即旋轉/反射可以，縮放/傾斜不行），將 **Vector3** 逆向變換（乘以）給定的 :ref:`Transform3D<class_Transform3D>` 變換矩陣。
 
-\ ``vector * transform`` is equivalent to ``transform.inverse() * vector``. See :ref:`Transform3D.inverse()<class_Transform3D_method_inverse>`.
+\ ``vector * transform`` 相當於 ``transform.inverse() * vector``\ 。請參閱 :ref:`Transform3D.inverse()<class_Transform3D_method_inverse>`\ 。
 
-For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * vector`` can be used instead. See :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`.
+對於通過仿射變換的逆進行的變換（例如縮放），可以使用 ``transform.affine_inverse() * vector`` 代替。請參閱 :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1173,11 +1173,11 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_mul_Vector3>`
 
-Multiplies each component of the **Vector3** by the components of the given **Vector3**.
+將該 **Vector3** 的每個分量乘以給定 **Vector3** 的對應分量。
 
 ::
 
-    print(Vector3(10, 20, 30) * Vector3(3, 4, 5)) # Prints (30.0, 80.0, 150.0)
+    print(Vector3(10, 20, 30) * Vector3(3, 4, 5)) # 輸出 (30.0, 80.0, 150.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1213,11 +1213,11 @@ Multiplies each component of the **Vector3** by the components of the given **Ve
 
 :ref:`Vector3<class_Vector3>` **operator +**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_sum_Vector3>`
 
-Adds each component of the **Vector3** by the components of the given **Vector3**.
+將該 **Vector3** 的每個分量加上給定 **Vector3** 的對應分量。
 
 ::
 
-    print(Vector3(10, 20, 30) + Vector3(3, 4, 5)) # Prints (13.0, 24.0, 35.0)
+    print(Vector3(10, 20, 30) + Vector3(3, 4, 5)) # 輸出 (13.0, 24.0, 35.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1229,11 +1229,11 @@ Adds each component of the **Vector3** by the components of the given **Vector3*
 
 :ref:`Vector3<class_Vector3>` **operator -**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_dif_Vector3>`
 
-Subtracts each component of the **Vector3** by the components of the given **Vector3**.
+將該 **Vector3** 的每個分量減去給定 **Vector3** 的對應分量。
 
 ::
 
-    print(Vector3(10, 20, 30) - Vector3(3, 4, 5)) # Prints (7.0, 16.0, 25.0)
+    print(Vector3(10, 20, 30) - Vector3(3, 4, 5)) # 輸出 (7.0, 16.0, 25.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1245,11 +1245,11 @@ Subtracts each component of the **Vector3** by the components of the given **Vec
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_div_Vector3>`
 
-Divides each component of the **Vector3** by the components of the given **Vector3**.
+將該 **Vector3** 的每個分量除以給定 **Vector3** 的對應分量。
 
 ::
 
-    print(Vector3(10, 20, 30) / Vector3(2, 5, 3)) # Prints (5.0, 4.0, 10.0)
+    print(Vector3(10, 20, 30) / Vector3(2, 5, 3)) # 輸出 (5.0, 4.0, 10.0)
 
 .. rst-class:: classref-item-separator
 

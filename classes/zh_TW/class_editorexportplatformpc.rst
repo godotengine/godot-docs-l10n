@@ -16,7 +16,7 @@ EditorExportPlatformPC
 說明
 ----
 
-The base class for the desktop platform exporters. These include Windows and Linux/BSD, but not macOS. See the classes inheriting from this one for more details.
+桌面平台匯出器的基底類別。包括 Windows 和 Linux/BSD，但是不包括 macOS。詳見派生類。
 
 .. rst-class:: classref-introduction-group
 

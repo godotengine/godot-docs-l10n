@@ -150,9 +150,9 @@ RDTextureFormat
 - |void| **set_is_discardable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_discardable**\ (\ )
 
-If a texture is discardable, its contents do not need to be preserved between frames. This flag is only relevant when the texture is used as target in a draw list.
+如果紋理可丟棄，則影格與影格之間不需要保留其內容。該標誌僅在紋理作為繪製清單中的目標時相關。
 
-This information is used by :ref:`RenderingDevice<class_RenderingDevice>` to figure out if a texture's contents can be discarded, eliminating unnecessary writes to memory and boosting performance.
+\ :ref:`RenderingDevice<class_RenderingDevice>` 會使用該資訊來判斷紋理的內容是否可丟棄，進而消除不必要的記憶體寫入、提升效能。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ This information is used by :ref:`RenderingDevice<class_RenderingDevice>` to fig
 - |void| **set_is_resolve_buffer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_resolve_buffer**\ (\ )
 
-The texture will be used as the destination of a resolve operation.
+該紋理將用作解析操作的目標。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ The texture will be used as the destination of a resolve operation.
 
 |void| **add_shareable_format**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ ) :ref:`🔗<class_RDTextureFormat_method_add_shareable_format>`
 
-Adds ``format`` as a valid format for the corresponding :ref:`RDTextureView<class_RDTextureView>`'s :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` property. If any format is added as shareable, then the main :ref:`format<class_RDTextureFormat_property_format>` must also be added.
+將 ``format`` 新增為相應 :ref:`RDTextureView<class_RDTextureView>` 的 :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` 屬性的有效格式。如果將格式作為可共享格式新增，那麼也必須新增主 :ref:`format<class_RDTextureFormat_property_format>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Adds ``format`` as a valid format for the corresponding :ref:`RDTextureView<clas
 
 |void| **remove_shareable_format**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ ) :ref:`🔗<class_RDTextureFormat_method_remove_shareable_format>`
 
-Removes ``format`` from the list of valid formats that the corresponding :ref:`RDTextureView<class_RDTextureView>`'s :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` property can be set to.
+從相應 :ref:`RDTextureView<class_RDTextureView>` 的 :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` 屬性可以設定的有效格式清單中移除 ``format``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -474,9 +474,9 @@ Devuelve la fracción a través de la marca de la física actual en la que estam
 
 :ref:`int<class_int>` **get_process_frames**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_process_frames>`
 
-Returns the total number of frames passed since the engine started. This number is increased every **process frame**, regardless of whether the render loop is enabled. See also :ref:`get_frames_drawn()<class_Engine_method_get_frames_drawn>` and :ref:`get_physics_frames()<class_Engine_method_get_physics_frames>`.
+Devuelve el número total de fotogramas pasados desde que se inició el motor. Este número es aumentado en cada ** Fotograma de process**, independientemente de si el bucle de renderizado está habilitado. Véase también :ref:`get_frames_drawn()<class_Engine_method_get_frames_drawn>` y :ref:`get_physics_frames()<class_Engine_method_get_physics_frames>`.
 
-This method can be used to run expensive logic less often without relying on a :ref:`Timer<class_Timer>`:
+Este método se puede utilizar para ejecutar lógica costosa con menos frecuencia sin depender de un :ref:`Timer<class_Timer>`:
 
 
 .. tabs::
@@ -484,8 +484,8 @@ This method can be used to run expensive logic less often without relying on a :
  .. code-tab:: gdscript
 
     func _process(_delta):
-        if Engine.get_process_frames() % 5 == 0:
-            pass # Run expensive logic only once every 5 process (render) frames here.
+        if Engine.get_process_frame() % 5 == 0:
+            pass #Ejecuta lógica costosa solo por cada 5 fotogramas de process (render) aquí
 
  .. code-tab:: csharp
 
@@ -495,7 +495,7 @@ This method can be used to run expensive logic less often without relying on a :
 
         if (Engine.GetProcessFrames() % 5 == 0)
         {
-            // Run expensive logic only once every 5 process (render) frames here.
+            //Ejecuta lógica costosa solo por cada 5 fotogramas de process (render) aquí
         }
     }
 

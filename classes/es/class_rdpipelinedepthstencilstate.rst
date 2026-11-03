@@ -7,14 +7,14 @@ RDPipelineDepthStencilState
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Estado de profundidad/stencil del pipeline (utilizado por :ref:`RenderingDevice<class_RenderingDevice>`).
+Estado de profundidad/esténcil del pipeline (utilizado por :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-**RDPipelineDepthStencilState** controla la forma en que se realizan las comparaciones de profundidad y stencil al muestrear esos valores usando :ref:`RenderingDevice<class_RenderingDevice>`.
+**RDPipelineDepthStencilState** controla la forma en que se realizan las comparaciones de profundidad y esténcil al muestrear esos valores usando :ref:`RenderingDevice<class_RenderingDevice>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -105,7 +105,7 @@ El método utilizado para comparar el valor anterior del esténcil trasero y :re
 - |void| **set_back_op_compare_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_back_op_compare_mask**\ (\ )
 
-Selecciona qué bits del valor del esténcil trasero se compararán.
+Selecciona qué bits del valor de esténcil trasero se compararán.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Selecciona qué bits del valor del esténcil trasero se compararán.
 - |void| **set_back_op_depth_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_depth_fail**\ (\ )
 
-La operación a realizar en el búfer de esténcil para los píxeles traseros que pasan la prueba de esténcil pero fallan la prueba de profundidad.
+La operación a realizar en el búfer de esténcil para los píxeles traseros que pasan la prueba de esténcil, pero fallan la prueba de profundidad.
 
 .. rst-class:: classref-item-separator
 

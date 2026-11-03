@@ -47,7 +47,7 @@ ImageTexture3D
 
 :ref:`Error<enum_@GlobalScope_Error>` **create**\ (\ format\: :ref:`Format<enum_Image_Format>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, use_mipmaps\: :ref:`bool<class_bool>`, data\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\]\ ) :ref:`🔗<class_ImageTexture3D_method_create>`
 
-Creates the **ImageTexture3D** with specified ``format``, ``width``, ``height``, and ``depth``. If ``use_mipmaps`` is ``true``, generates mipmaps for the **ImageTexture3D**.
+建立格式為 ``format``\ 、寬度為 ``width``\ 、高度為 ``height``\ 、色深為 ``depth`` 的 **ImageTexture3D**\ 。如果 ``use_mipmaps`` 為 ``true``\ ，則為該 **ImageTexture3D** 生成 Mipmap。
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,16 @@ RenderDataRD
 
 **繼承：** :ref:`RenderData<class_RenderData>` **<** :ref:`Object<class_Object>`
 
-Render data implementation for the RenderingDevice based renderers.
+基於 RenderingDevice 的渲染器的渲染資料實作。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This object manages all render data for the :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. See also :ref:`RenderData<class_RenderData>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
+該物件管理基於 :ref:`RenderingDevice<class_RenderingDevice>` 的渲染器的所有渲染資料。另見 :ref:`RenderData<class_RenderData>`\ 、\ :ref:`RenderSceneData<class_RenderSceneData>` 和 :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 這是內部渲染伺服器物件。請勿從腳本中實例化該類。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

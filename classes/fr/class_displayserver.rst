@@ -1128,7 +1128,7 @@ Spin box element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Editable text field element.
+Élément de champ de texte modifiable.
 
 .. _class_DisplayServer_constant_ROLE_MULTILINE_TEXT_FIELD:
 
@@ -1138,7 +1138,7 @@ Editable text field element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Multiline editable text field element.
+Élément de champ de texte multiligne modifiable.
 
 .. _class_DisplayServer_constant_ROLE_COLOR_PICKER:
 
@@ -1218,7 +1218,7 @@ Table/tree column header element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Tree view element.
+Élément d'affichage d'arborescence.
 
 .. _class_DisplayServer_constant_ROLE_TREE_ITEM:
 
@@ -1278,7 +1278,7 @@ List view item element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Tab bar element.
+Élément de barre d'onglets.
 
 .. _class_DisplayServer_constant_ROLE_TAB:
 
@@ -1308,7 +1308,7 @@ Tab panel element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Menu bar element.
+Élément de barre de menu.
 
 .. _class_DisplayServer_constant_ROLE_MENU:
 
@@ -1520,7 +1520,7 @@ Element require user input.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Element is a visited link.
+L'élément est un lien visité.
 
 .. _class_DisplayServer_constant_FLAG_BUSY:
 
@@ -1560,7 +1560,7 @@ Element allows touches to be passed through when a screen reader is in touch exp
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Element is text field with selectable but read-only text.
+L'élément est un champ texte avec un texte pouvant être sélectionné mais pas modifié.
 
 .. _class_DisplayServer_constant_FLAG_DISABLED:
 
@@ -1580,7 +1580,7 @@ L'élément est désactivé.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Element clips children.
+L'élément coupe ses enfants.
 
 .. rst-class:: classref-item-separator
 
@@ -1888,7 +1888,7 @@ enum **AccessibilityScrollUnit**: :ref:`🔗<enum_DisplayServer_AccessibilityScr
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-The amount by which to scroll. A single item of a list, line of text.
+La quantité de laquelle faire défiler. Un seul élément d'une liste, une ligne de texte.
 
 .. _class_DisplayServer_constant_SCROLL_UNIT_PAGE:
 
@@ -1898,7 +1898,7 @@ The amount by which to scroll. A single item of a list, line of text.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-The amount by which to scroll. A single page.
+La quantité de laquelle faire défiler. Une seule page.
 
 .. rst-class:: classref-item-separator
 
@@ -3095,9 +3095,9 @@ Represents the screen containing the window with the keyboard focus.
 
 **SCREEN_PRIMARY** = ``-2`` :ref:`🔗<class_DisplayServer_constant_SCREEN_PRIMARY>`
 
-Represents the primary screen.
+Représente l'écran principal.
 
-\ **Note:** On Android, iOS, Web, and Linux (Wayland), this constant always represents the screen at index ``0``.
+\ **Note :** Sur Android, iOS, Web et Linux (Wayland), cette constante représente toujours l'écran à l'index ``0``.
 
 .. _class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW:
 
@@ -3490,7 +3490,7 @@ Ajoute un élément qui fait partie du même groupe radio.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Adds an element that is an active descendant of this element.
+Ajoute un élément qui est un descendant actif de cet élément.
 
 .. rst-class:: classref-item-separator
 
@@ -5097,9 +5097,9 @@ Returns number of items in the global menu with ID ``menu_root``.
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the icon of the item at index ``idx``.
+Renvoie l'icône de l'élément à l'index ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5129,9 +5129,9 @@ Renvoie le décalage horizontal de l'élément à l'index ``idx`` donné.
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine, and cannot be set manually.
+Renvoie l'index de l'élément avec la balise ``tag`` spécifiée. Les indices sont automatiquement attribués à chaque élément par le moteur et ne peuvent pas être définis manuellement.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ Renvoie le callback de l'accélérateur d'élément à l'index ``idx``.
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns number of states of a multistate item. See :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` for details.
+Renvoie le nombre d'états d'un objet multi-états. Voir :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` pour plus de détails.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5699,7 +5699,7 @@ Returns ``true`` if any additional outputs have been registered via :ref:`regist
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Feature<enum_DisplayServer_Feature>`\ ) |const| :ref:`🔗<class_DisplayServer_method_has_feature>`
 
-Returns ``true`` if the specified ``feature`` is supported by the current **DisplayServer**, ``false`` otherwise.
+Renvoie ``true`` si la fonctionnalité ``feature`` spécifiée est supportée par le **DisplayServer** actuel, ``false`` sinon.
 
 .. rst-class:: classref-item-separator
 
@@ -6114,11 +6114,9 @@ Returns a screenshot of the screen region defined by ``rect``. Returns ``null`` 
 
 :ref:`float<class_float>` **screen_get_max_scale**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_max_scale>`
 
-Renvoie le plus grand facteur d'échelle de tous les écrans.
+Returns the greatest scale factor of all screens. See also :ref:`screen_get_scale()<class_DisplayServer_method_screen_get_scale>`.
 
-\ **Note :** Sur macOS, la valeur renvoyée est ``2.0`` s'il y a au moins un écran hiDPI (Retina) dans le système, et ``1.0`` dans tous les autres cas.
-
-\ **Note :** Cette méthode est implémentée seulement sur macOS.
+\ **Note:** On macOS, the returned value is ``2.0`` if there is at least one hiDPI (Retina) screen in the system, and ``1.0`` in all other cases.
 
 .. rst-class:: classref-item-separator
 
@@ -6211,7 +6209,7 @@ To fallback to a default refresh rate if the method fails, try:
 
 :ref:`float<class_float>` **screen_get_scale**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_scale>`
 
-Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid.
+Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``screen`` is invalid. See also :ref:`screen_get_max_scale()<class_DisplayServer_method_screen_get_max_scale>`.
 
 \ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
@@ -7465,9 +7463,9 @@ Sets the ``callback`` that will be called when the window specified by ``window_
 
 |void| **window_set_size**\ (\ size\: :ref:`Vector2i<class_Vector2i>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_size>`
 
-Sets the size of the given window to ``size`` (in pixels). See also :ref:`window_get_size()<class_DisplayServer_method_window_get_size>` and :ref:`window_get_position()<class_DisplayServer_method_window_get_position>`.
+Définit la taille de la fenêtre donnée à ``size`` (en pixels). Voir aussi :ref:`window_get_size()<class_DisplayServer_method_window_get_size>` et :ref:`window_get_position()<class_DisplayServer_method_window_get_position>`.
 
-\ **Note:** It's recommended to change this value using :ref:`Window.size<class_Window_property_size>` instead.
+\ **Note :** Il est recommandé de changer cette valeur en utilisant plutôt :ref:`Window.size<class_Window_property_size>`.
 
 .. rst-class:: classref-item-separator
 

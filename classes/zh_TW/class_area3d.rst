@@ -19,7 +19,7 @@ Area3D
 
 **Area3D** 是 3D 空間中的一個區域，可由一個或多個 :ref:`CollisionShape3D<class_CollisionShape3D>` 或 :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` 子節點定義。它能偵測其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 進入或離開此區域，並追蹤仍在區域內（即與其重疊）的碰撞物件。
 
-此節點也可以局部調整或覆寫物理參數（重力、阻尼），並將音訊導向自訂音訊匯流排。
+此節點也可以區域調整或覆寫物理參數（重力、阻尼），並將音訊導向自訂音訊匯流排。
 
 \ **注意：** 以 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 建立的 Area 與剛體可能與 **Area3D** 的互動不如預期，亦可能無法正確發送訊號或追蹤物件。
 
@@ -194,9 +194,9 @@ Area3D
 
 **body_entered**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_entered>`
 
-Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body``\ （物體）進入該區域時，將會發出此訊號。\ ``body`` 可以是一個 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理剛體）、\ :ref:`SoftBody3D<class_SoftBody3D>`\ （3D軟體）或 :ref:`GridMap<class_GridMap>`\ （3D網格地圖）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （網格庫）中設定了碰撞形狀，它也能被檢測到。此功能需要將 :ref:`monitoring<class_Area3D_property_monitoring>`\ （監控）屬性設為 ``true`` 才會生效。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
+\ **注意：** Godot Physics（Godot 自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊狀態，因此在這種情況下不會發出此訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -208,9 +208,9 @@ Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`Phy
 
 **body_exited**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_exited>`
 
-Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body`` 離開該區域時觸發（發射）此訊號。\ ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 、\ :ref:`SoftBody3D<class_SoftBody3D>` 或 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 設定了碰撞形狀，它們也會被檢測到。需要將 :ref:`monitoring<class_Area3D_property_monitoring>` 屬性設定為 ``true`` 才能生效。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
+\ **注意：** Godot Physics（Godot自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊情況，因此在這種情況下不會觸發此訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -222,13 +222,13 @@ Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`Phys
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_entered>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body``\ （物體）的某個 :ref:`Shape3D<class_Shape3D>`\ （3D碰撞形狀）進入該區域的某個形狀時，將會發出此訊號。\ ``body`` 可以是一個 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理剛體）、\ :ref:`SoftBody3D<class_SoftBody3D>`\ （3D軟體）或 :ref:`GridMap<class_GridMap>`\ （3D網格地圖）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （網格庫）中設定了碰撞形狀，它也能被檢測到。此功能需要將 :ref:`monitoring<class_Area3D_property_monitoring>`\ （監控）屬性設為 ``true`` 才會生效。
 
-\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+\ ``local_shape_index`` 和 ``body_shape_index`` 分別包含了該區域與發生互動的物體之間，互相碰撞的碰撞形狀的索引。\ ``body_rid`` 包含了該物體的 :ref:`RID<class_RID>`\ （資源ID）。這些值可以配合 :ref:`PhysicsServer3D<class_PhysicsServer3D>`\ （3D物理伺服器）來使用。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
+\ **注意：** Godot Physics（Godot 自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊狀態，因此在這種情況下不會發出此訊號。
 
-\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
+\ **範例：** 通過形狀索引取得對應的 :ref:`CollisionShape3D<class_CollisionShape3D>`\ （3D碰撞形狀）節點：
 
 
 .. tabs::
@@ -253,11 +253,11 @@ Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a s
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_exited>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` exits a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body`` 的某個 :ref:`Shape3D<class_Shape3D>`\ （3D形狀）離開該區域的一個形狀時，觸發（發射）此訊號。\ ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 、\ :ref:`SoftBody3D<class_SoftBody3D>` 或 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 設定了碰撞形狀，它們也會被檢測到。需要將 :ref:`monitoring<class_Area3D_property_monitoring>` 屬性設定為 ``true`` 才能生效。
 
-See also :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`.
+另請參閱 :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`\ （即剛才那個訊號）。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
+\ **注意：** Godot Physics（Godot自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊情況，因此在這種情況下不會觸發此訊號。
 
 .. rst-class:: classref-section-separator
 
@@ -353,7 +353,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-此區域內角阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
+此區域內的角阻尼計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_gravity_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_gravity_space_override_mode**\ (\ )
 
-此區域內重力計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
+該區域內重力計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-此區域內線性阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
+該區域內線性阻尼計算的覆蓋模式。
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_wind_source_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_wind_source_path**\ (\ )
 
-用以指定此區域風力方向與來源的 :ref:`Node3D<class_Node3D>`\ 。風向與該節點局部轉換的 z 軸相反，風源則位於其局部原點。
+用以指定此區域風力方向與來源的 :ref:`Node3D<class_Node3D>`\ 。風向與該節點區域轉換的 z 軸相反，風源則位於其區域原點。
 
 \ **注意：** 風力僅作用於 :ref:`SoftBody3D<class_SoftBody3D>` 節點，其他物理物體目前不受影響。
 
@@ -722,7 +722,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 
 返回相交的 **Area3D** 的列表。重疊區域的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域的 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分才能被偵測到。
 
-出於性能原因（同時處理所有碰撞），此列表在物理步驟期間修改一次，而不是在實體被移動後立即修改。可考慮改用訊號。
+出於效能原因（同時處理所有碰撞），此列表在物理步驟期間修改一次，而不是在實體被移動後立即修改。可考慮改用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -734,11 +734,11 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_bodies>`
 
-Returns a list of intersecting :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, and :ref:`GridMap<class_GridMap>`\ s. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+回傳一個包含與之相交的 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理剛體）、\ :ref:`SoftBody3D<class_SoftBody3D>`\ （3D軟體）和 :ref:`GridMap<class_GridMap>`\ （網格地圖）的清單。只有當重疊物體的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>`\ （碰撞層）屬於該區域的 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>`\ （碰撞遮罩）時，才能被檢測到。
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於效能考慮（所有碰撞都在同一時間統一處理），這個清單每影格只會在物理步驟中更新一次，而不會在物體移動後立即更新。因此，建議考慮使用訊號（signals）來代替。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not return any such bodies.
+\ **注意：** Godot Physics（Godot自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊情況，因此不會回傳任何此類物體。
 
 .. rst-class:: classref-item-separator
 
@@ -752,7 +752,7 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 如果與其他 **Area3D** 相交，則返回 ``true``\ ，否則返回 ``false``\ 。重疊區域的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分，才能被偵測到。
 
-出於性能原因（所有碰撞都是一起處理的），重疊區域的列表只會在每次物理反覆運算時發生一次更改，不會在對象移動後立即更改。請考慮使用訊號。
+出於效能原因（所有碰撞都是一起處理的），重疊區域的列表只會在每次物理反覆運算時發生一次更改，不會在對象移動後立即更改。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -764,11 +764,11 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_bodies>`
 
-Returns ``true`` if intersecting any :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, or :ref:`GridMap<class_GridMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+如果與任意 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理剛體）、\ :ref:`SoftBody3D<class_SoftBody3D>`\ （3D軟體）或 :ref:`GridMap<class_GridMap>`\ （3D網格地圖）發生重疊，則回傳 ``true``\ ，否則回傳 ``false``\ 。只有當發生重疊的物體的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>`\ （碰撞層）包含在該區域的 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>`\ （碰撞遮罩）範圍內時，才會被檢測到。
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於效能原因（所有的碰撞都會在同一個時間點統一處理），重疊物體的清單是在物理影格（physics step）中統一更新一次的，而不是在物體移動後立刻更新。因此，建議考慮使用訊號（signals）來替代輪詢。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not consider such bodies.
+\ **注意：** Godot Physics（Godot 自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊狀態，因此不會將軟體納入檢測範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -782,7 +782,7 @@ For performance reasons (collisions are all processed at the same time) the list
 
 如果給定的 **Area3D** 與此 **Area3D** 相交或重疊，則返回 ``true``\ ，否則返回 ``false``\ 。
 
-\ **注意：**\ 測試結果不反映物件移動後的即時狀態。出於性能原因，重疊列表每影格只會在物理反覆運算前更新一次。請考慮使用訊號。
+\ **注意：**\ 測試結果不反映物件移動後的即時狀態。出於效能原因，重疊列表每影格只會在物理反覆運算前更新一次。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -794,13 +794,13 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Returns ``true`` if the given physics body intersects or overlaps this **Area3D**, ``false`` otherwise.
+如果指定的物理剛體與該 **Area3D** 相交或重疊，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
-\ ``body`` argument can either be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>`, or a :ref:`GridMap<class_GridMap>` instance. While GridMaps are not physics body themselves, they register their tiles with collision shapes as a virtual physics body.
+\ ``body`` 參數可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 、\ :ref:`SoftBody3D<class_SoftBody3D>` 或 :ref:`GridMap<class_GridMap>` 的實例。雖然 GridMap 本身不是物理剛體，但它會將自己帶有碰撞形狀的圖塊作為一個虛擬的物理剛體進行注冊。
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **注意：** 在移動物體後，此測試的結果不會立即更新。出於效能考慮，重疊清單每影格更新一次，並且是在物理步驟之前。因此，建議考慮使用訊號（signals）來代替。
 
-\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will return ``false`` in such cases.
+\ **注意：** Godot Physics（Godot自帶的物理引擎）不支援報告與 :ref:`SoftBody3D<class_SoftBody3D>` 的重疊情況，因此在這種情況下會回傳 ``false``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

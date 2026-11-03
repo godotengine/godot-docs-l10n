@@ -14,11 +14,11 @@ VideoStreamPlayer
 說明
 ----
 
-A control used for playback of :ref:`VideoStream<class_VideoStream>` resources.
+用於播放 :ref:`VideoStream<class_VideoStream>` 資源的控制項。
 
-Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) and any format exposed via a GDExtension plugin.
+支援的影片格式有 `Ogg Theora <https://www.theora.org/>`__\ （\ ``.ogv``\ ，\ :ref:`VideoStreamTheora<class_VideoStreamTheora>`\ ）以及任何通過 GDExtension 外掛公開的格式。
 
-\ **Warning:** On Web, video playback *will* perform poorly due to missing architecture-specific assembly optimizations.
+\ **警告：**\ 在 Web 上，影片播放\ *會*\ 由於缺少特定於體系結構的匯編最佳化而表現不佳。
 
 .. rst-class:: classref-introduction-group
 
@@ -239,7 +239,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-The stream's current speed scale. ``1.0`` is the normal speed, while ``2.0`` is double speed and ``0.5`` is half speed. A speed scale of ``0.0`` pauses the video, similar to setting :ref:`paused<class_VideoStreamPlayer_property_paused>` to ``true``.
+影片流的目前速度縮放。\ ``1.0`` 是正常速度，\ ``2.0`` 是二倍速，\ ``0.5`` 是半速。速度縮放為 ``0.0`` 會暫停影片，類似於將 :ref:`paused<class_VideoStreamPlayer_property_paused>` 設定為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ The stream's current speed scale. ``1.0`` is the normal speed, while ``2.0`` is 
 - |void| **set_stream_position**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stream_position**\ (\ )
 
-The current position of the stream, in seconds.
+回傳影片流中的目前位置，單位為秒。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ The current position of the stream, in seconds.
 
 :ref:`float<class_float>` **get_stream_length**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_stream_length>`
 
-The length of the current stream, in seconds.
+目前影片流的長度，單位為秒。
 
 .. rst-class:: classref-item-separator
 

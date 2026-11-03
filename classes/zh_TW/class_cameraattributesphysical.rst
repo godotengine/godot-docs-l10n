@@ -14,15 +14,15 @@ CameraAttributesPhysical
 說明
 ----
 
-**CameraAttributesPhysical** is used to set rendering settings based on a physically-based camera's settings. It is responsible for exposure, auto-exposure, and depth of field.
+**CameraAttributesPhysical** 用於根據基於物理的相機的設定來設定渲染設定。它負責曝光、自動曝光、以及景深。
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>` and will override the :ref:`Camera3D<class_Camera3D>`\ s :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>`, and :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` properties. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+當在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用時，它提供了曝光、自動曝光、以及景深的預設設定，這些設定將由所有沒有自己的 :ref:`CameraAttributes<class_CameraAttributes>` 的相機使用，包括編輯器相機。當在 :ref:`Camera3D<class_Camera3D>` 中使用時，它將覆蓋 :ref:`WorldEnvironment<class_WorldEnvironment>` 中設定的任何 :ref:`CameraAttributes<class_CameraAttributes>`\ ，並將覆蓋 :ref:`Camera3D<class_Camera3D>` 的 :ref:`Camera3D.far<class_Camera3D_property_far>`\ 、\ :ref:`Camera3D.near<class_Camera3D_property_near>`\ 、\ :ref:`Camera3D.fov<class_Camera3D_property_fov>`\ 、以及 :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` 屬性。當在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用時，將只會使用曝光設定。
 
-The default settings are intended for use in an outdoor environment, tips for settings for use in an indoor environment can be found in each setting's documentation.
+預設設定適用於室外環境，可在每個設定的文件中找到有關在室內環境中使用的設定的提示。
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 景深模糊只支援 Forward+ 和移動渲染方式，不支援相容模式。
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 自動曝光僅在 Forward+ 渲染方法中受支援，在 Mobile 或 Compatibility 中不受支援。
 
 .. rst-class:: classref-introduction-group
 
@@ -106,7 +106,7 @@ The default settings are intended for use in an outdoor environment, tips for se
 - |void| **set_auto_exposure_min_exposure_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auto_exposure_min_exposure_value**\ (\ )
 
-The minimum luminance (in EV100) used when calculating auto exposure. When calculating scene average luminance, color values will be clamped to at least this value. This limits the auto-exposure from exposing above a certain brightness, resulting in a cut off point where the scene will remain dark.
+計算自動曝光時使用的最小亮度（單位為 EV100）。在計算場景平均亮度時，顏色值將至少被鉗制在這個值上。這限制了自動曝光在超過一定的亮度進行曝光時，導致場景將保持黑暗的一個截止點。
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ The minimum luminance (in EV100) used when calculating auto exposure. When calcu
 - |void| **set_aperture**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aperture**\ (\ )
 
-相機光圈的大小，以 f 檔為單位進行測量。f 檔是相機焦距與光圈直徑之間的一個無單位比率。高光圈設定將產生一個更小的光圈，從而導致更暗的圖像和更清晰的焦點。低光圈會產生一個大光圈，讓更多的光線進入，從而產生一個更亮、更不聚焦的圖像。默認值適用於白天的室外（即與預設 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 一起使用），對於室內照明，2 到 4 之間的值更合適。
+相機光圈的大小，以 f 檔為單位進行測量。f 檔是相機焦距與光圈直徑之間的一個無單位比率。高光圈設定將產生一個更小的光圈，從而導致更暗的影像和更清晰的焦點。低光圈會產生一個大光圈，讓更多的光線進入，從而產生一個更亮、更不聚焦的影像。預設值適用於白天的室外（即與預設 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 一起使用），對於室內照明，2 到 4 之間的值更合適。
 
 僅在啟用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 時可用。
 
@@ -142,9 +142,9 @@ The minimum luminance (in EV100) used when calculating auto exposure. When calcu
 - |void| **set_shutter_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shutter_speed**\ (\ )
 
-Time for shutter to open and close, evaluated as ``1 / shutter_speed`` seconds. A higher value will allow less light (leading to a darker image), while a lower value will allow more light (leading to a brighter image).
+快門打開和關閉的時間，計算方式為 ``1 / shutter_speed`` 秒。較高的值將允許較少的光線（導致影像較暗），而較低的值將允許更多的光線（導致影像較亮）。
 
-Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
+僅當啟用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 時可用。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physi
 - |void| **set_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_far**\ (\ )
 
-覆蓋 :ref:`Camera3D.far<class_Camera3D_property_far>` 的值。在內部計算景深時使用。當被附加到 :ref:`Camera3D<class_Camera3D>` 作為其 :ref:`Camera3D.attributes<class_Camera3D_property_attributes>` 時，它將覆蓋 :ref:`Camera3D.fov<class_Camera3D_property_fov>` 屬性。
+覆蓋 :ref:`Camera3D.far<class_Camera3D_property_far>` 的值。在內部計算景深時使用。當被附加到 :ref:`Camera3D<class_Camera3D>` 作為其 :ref:`Camera3D.attributes<class_Camera3D_property_attributes>` 時，它將覆蓋 :ref:`Camera3D.far<class_Camera3D_property_far>` 屬性。
 
 .. rst-class:: classref-item-separator
 

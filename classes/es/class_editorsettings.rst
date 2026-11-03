@@ -14,13 +14,13 @@ Objeto que contiene la configuración del editor independiente del proyecto.
 Descripción
 ----------------------
 
-Object that holds the project-independent editor settings. These settings are generally visible in the **Editor > Editor Settings** menu.
+Objeto que contiene la configuración del editor independiente del proyecto. Estos ajustes son generalmente visibles en el menú **Editor > Ajustes del editor**.
 
-Property names use slash delimiters to distinguish sections. Setting values can be of any :ref:`Variant<class_Variant>` type. It's recommended to use ``snake_case`` for editor settings to be consistent with the Godot editor itself.
+Los nombres de las propiedades utilizan delimitadores de barra para distinguir las secciones. Los valores de los ajustes pueden ser de cualquier tipo :ref:`Variant<class_Variant>`. Se recomienda utilizar ``snake_case`` para que los ajustes del editor sean coherentes con el propio editor de Godot.
 
-Editor settings are saved automatically when changed.
+Los ajustes del editor se guardan automáticamente cuando cambian.
 
-Accessing the settings can be done using the following methods, such as:
+Se puede acceder a los ajustes mediante los siguientes métodos, como por ejemplo:
 
 
 .. tabs::
@@ -28,24 +28,24 @@ Accessing the settings can be done using the following methods, such as:
  .. code-tab:: gdscript
 
     var settings = EditorInterface.get_editor_settings()
-    # `settings.set("some/property", 10)` also works as this class overrides `_set()` internally.
+    # `settings.set("some/property", 10)` también funciona, ya que esta clase sobrescribe `_set()` internamente.
     settings.set_setting("some/property", 10)
-    # `settings.get("some/property")` also works as this class overrides `_get()` internally.
+    # `settings.get("some/property")` también funciona, ya que esta clase sobrescribe `_get()` internamente.
     settings.get_setting("some/property")
     var list_of_settings = settings.get_property_list()
 
  .. code-tab:: csharp
 
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
-    // `settings.set("some/property", value)` also works as this class overrides `_set()` internally.
+    // `settings.set("some/property", value)` también funciona, ya que esta clase sobrescribe `_set()` internamente.
     settings.SetSetting("some/property", Value);
-    // `settings.get("some/property", value)` also works as this class overrides `_get()` internally.
+    // `settings.get("some/property", value)` también funciona, ya que esta clase sobrescribe `_get()` internamente.
     settings.GetSetting("some/property");
     Godot.Collections.Array<Godot.Collections.Dictionary> listOfSettings = settings.GetPropertyList();
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
+\ **Nota:** Esta clase no debe ser instanciada directamente. En su lugar, accede al singleton usando :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -1424,7 +1424,7 @@ Si es ``true``, el diálogo Crear diálogo (Crear nuevo nodo/Crear nuevo recurso
 
 :ref:`float<class_float>` **editors/2d/auto_resample_delay** :ref:`🔗<class_EditorSettings_property_editors/2d/auto_resample_delay>`
 
-Delay time for automatic resampling in the 2D editor (in seconds).
+Tiempo de retardo para el remuestreo automático en el editor 2D (en segundos).
 
 .. rst-class:: classref-item-separator
 
@@ -2616,7 +2616,7 @@ Este valor siempre se expresa en segundos. Si quieres, por ejemplo, que ``10`` F
 
 :ref:`bool<class_bool>` **editors/animation/default_create_bezier_tracks** :ref:`🔗<class_EditorSettings_property_editors/animation/default_create_bezier_tracks>`
 
-Si es ``true``, crea una pista Bezier en lugar de una pista estándar al presionar el icono de "llave" junto a una propiedad. Las pistas Bezier proporcionan más control sobre las curvas de animación, pero son más difíciles de ajustar rápidamente.
+Si es ``true``, crea una pista de Bézier en lugar de una pista estándar al presionar el icono de «llave» junto a una propiedad. Las pistas de Bézier proporcionan más control sobre las curvas de animación, pero son más difíciles de ajustar rápidamente.
 
 .. rst-class:: classref-item-separator
 
@@ -2774,7 +2774,7 @@ The color at 0 dB of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_over_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_over_color>`
 
-The multiplier color for the VU meter gradient when it is inactive.
+El color del multiplicador para el degradado del medidor VU cuando está inactivo.
 
 .. rst-class:: classref-item-separator
 
@@ -2786,7 +2786,7 @@ The multiplier color for the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_under_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_under_color>`
 
-The multiplier color for the VU meter gradient where audio is not reaching.
+El color del multiplicador para el degradado del medidor de VU cuando el audio no está llegando.
 
 .. rst-class:: classref-item-separator
 
@@ -2902,7 +2902,7 @@ Controls whether the mouse wheel scroll zooms or pans in the 2D editor. See also
 
 :ref:`int<class_int>` **editors/panning/animation_editors_panning_scheme** :ref:`🔗<class_EditorSettings_property_editors/panning/animation_editors_panning_scheme>`
 
-Controls whether the mouse wheel scroll zooms or pans in the animation track and Bezier editors. See also :ref:`editors/panning/2d_editor_panning_scheme<class_EditorSettings_property_editors/panning/2d_editor_panning_scheme>` and :ref:`editors/panning/sub_editors_panning_scheme<class_EditorSettings_property_editors/panning/sub_editors_panning_scheme>` (which controls the animation blend tree editor's pan behavior).
+Controla si la rueda del ratón hace zoom o paneo en los editores de pistas de animación y de Bézier. Véase también :ref:`editors/panning/2d_editor_panning_scheme<class_EditorSettings_property_editors/panning/2d_editor_panning_scheme>` y :ref:`editors/panning/sub_editors_panning_scheme<class_EditorSettings_property_editors/panning/sub_editors_panning_scheme>` (que controla el comportamiento del paneo del editor de árboles de mezcla de animación).
 
 .. rst-class:: classref-item-separator
 
@@ -3350,9 +3350,9 @@ Ruta al ejecutable de SSH (usado para el despliegue remoto en plataformas de esc
 
 :ref:`String<class_String>` **filesystem/directories/autoscan_project_path** :ref:`🔗<class_EditorSettings_property_filesystem/directories/autoscan_project_path>`
 
-La carpeta donde se deben buscar proyectos (recursivamente), de forma similar al botón **Escanear** del gestor de proyectos. Para mayor comodidad, puede establecerse al mismo valor que :ref:`filesystem/directories/default_project_path<class_EditorSettings_property_filesystem/directories/default_project_path>`.
+La carpeta donde se deben buscar proyectos (recursivamente), de forma similar al botón **Escanear** del administrador de proyectos. Para mayor comodidad, puede establecerse al mismo valor que :ref:`filesystem/directories/default_project_path<class_EditorSettings_property_filesystem/directories/default_project_path>`.
 
-\ **Nota:** Establecer esta ruta a una carpeta con una gran cantidad de archivos/carpetas puede ralentizar significativamente el inicio del gestor de proyectos. Para que el gestor de proyectos se inicie rápidamente, se recomienda establecer este valor en una carpeta lo más "específica" posible.
+\ **Nota:** Establecer esta ruta a una carpeta con una gran cantidad de archivos/carpetas puede ralentizar significativamente el inicio del gestor de proyectos. Para que el administrador de proyectos se inicie rápidamente, se recomienda establecer este valor en una carpeta lo más "específica" posible.
 
 .. rst-class:: classref-item-separator
 
@@ -3364,7 +3364,7 @@ La carpeta donde se deben buscar proyectos (recursivamente), de forma similar al
 
 :ref:`String<class_String>` **filesystem/directories/default_project_path** :ref:`🔗<class_EditorSettings_property_filesystem/directories/default_project_path>`
 
-La carpeta donde se deben crear los nuevos proyectos por defecto al hacer clic en el botón **Nuevo Proyecto** del gestor de proyectos. Para mayor comodidad, puede establecerse al mismo valor que :ref:`filesystem/directories/autoscan_project_path<class_EditorSettings_property_filesystem/directories/autoscan_project_path>`.
+La carpeta donde se deben crear los nuevos proyectos por defecto al hacer clic en el botón **Nuevo proyecto** del administrador de proyectos. Para mayor comodidad, puede establecerse al mismo valor que :ref:`filesystem/directories/autoscan_project_path<class_EditorSettings_property_filesystem/directories/autoscan_project_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3807,7 +3807,7 @@ Modo de soporte de accesibilidad del editor:
 
 :ref:`bool<class_bool>` **interface/accessibility/property_descriptions** :ref:`🔗<class_EditorSettings_property_interface/accessibility/property_descriptions>`
 
-If ``true``, editor inspector uses property documentation as an accessible description of the property.
+Si ``true``, El inspector del editor usa la propiedad de la documentación como una descripción accesible de la propiedad.
 
 .. rst-class:: classref-item-separator
 
@@ -4507,15 +4507,15 @@ La precisión de punto flotante que se utilizará para las propiedades que no de
 
 :ref:`int<class_int>` **interface/inspector/default_property_name_style** :ref:`🔗<class_EditorSettings_property_interface/inspector/default_property_name_style>`
 
-The default property name style to display in the Inspector dock. This style can be temporarily adjusted in the Inspector dock's menu.
+El estilo de nombre de propiedad predeterminado que se mostrará en el dock Inspector. Este estilo se puede ajustar temporalmente en el menú del dock Inspector.
 
-- **Raw:** Displays properties in ``snake_case``.
+- **Raw:** Muestra las propiedades en ``snake_case``.
 
-- **Capitalized:** Displays properties capitalized.
+- **Capitalized:** Muestra las propiedades en mayúsculas.
 
-- **Localized:** Displays the localized string for the current editor language if a translation is available for the given property. If no translation is available, falls back to **Capitalized**.
+- **Localized:** Muestra la string localizada para el idioma actual del editor si hay una traducción disponible para la propiedad dada. Si no hay traducción disponible, recurre a **Capitalized**.
 
-\ **Note:** To display translated setting names in Project Settings and Editor Settings, use :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` instead.
+\ **Nota:** Para mostrar los nombres de configuración traducidos en Configuración del proyecto y Ajustes del editor, usa :ref:`interface/editor/localize_settings<class_EditorSettings_property_interface/editor/localize_settings>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -5017,9 +5017,9 @@ If ``true``, use the monospace font for some labels in the editor that display c
 
 :ref:`bool<class_bool>` **interface/theme/use_system_accent_color** :ref:`🔗<class_EditorSettings_property_interface/theme/use_system_accent_color>`
 
-If ``true``, set accent color based on system settings.
+Si es ``true``, establece el color de acento según la configuración del sistema.
 
-\ **Note:** This setting is effective on Windows, macOS, Linux, and Android.
+\ **Nota:** Esta configuración solo tiene efecto en Windows, macOS, Linux y Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ El puerto a escuchar al iniciar el depurador remoto. Godot intentará usar núme
 
 :ref:`String<class_String>` **network/http_proxy/host** :ref:`🔗<class_EditorSettings_property_network/http_proxy/host>`
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
+El host a utilizar para contactar con el proxy HTTP y HTTPS en el editor (para la Tienda de assets y las descargas de plantillas de exportación). Véase también :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Nota:** Godot actualmente no utiliza automáticamente la configuración del proxy del sistema, por lo que tienes que introducirlos manualmente aquí si es necesario.
 
 .. rst-class:: classref-item-separator
 
@@ -5191,9 +5191,9 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 :ref:`int<class_int>` **network/http_proxy/port** :ref:`🔗<class_EditorSettings_property_network/http_proxy/port>`
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
+El número de puerto a utilizar para contactar con el proxy HTTP y HTTPS en el editor (para la Tienda de assets y las descargas de plantillas de exportación). Véase también :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Nota:** Godot actualmente no utiliza automáticamente la configuración del proxy del sistema, por lo que tienes que introducirlos manualmente aquí si es necesario.
 
 .. rst-class:: classref-item-separator
 
@@ -5240,7 +5240,7 @@ The upper limit of time, that the language server spends for IO each poll.
 
 :ref:`String<class_String>` **network/language_server/remote_host** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_host>`
 
-The host used to listen for language server clients.
+El host utilizado para escuchar clientes del servidor de idiomas.
 
 .. rst-class:: classref-item-separator
 
@@ -5462,7 +5462,7 @@ Specifies how the Play window is launched relative to the Android editor.
 
 :ref:`int<class_int>` **run/window_placement/game_embed_mode** :ref:`🔗<class_EditorSettings_property_run/window_placement/game_embed_mode>`
 
-Anula la configuración de incrustación de juegos para todos los proyectos recién abiertos. Si está habilitado, la configuración de incrustación de juegos no se guarda.
+Sobrescribe la configuración de incrustación de juego para todos los proyectos recién abiertos. Si está habilitada, la configuración de incrustación de juego no se guarda.
 
 .. rst-class:: classref-item-separator
 
@@ -6264,7 +6264,7 @@ La ruta al ejecutable del editor de texto utilizado para editar archivos de text
 
 :ref:`bool<class_bool>` **text_editor/external/use_external_editor** :ref:`🔗<class_EditorSettings_property_text_editor/external/use_external_editor>`
 
-Si es ``true``, utiliza un editor externo en lugar del Editor de Scripts incorporado. Véase también :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` y :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`.
+Si es ``true``, utiliza un editor externo en lugar del editor de scripts incorporado. Véase también :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` y :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`.
 
 .. rst-class:: classref-item-separator
 

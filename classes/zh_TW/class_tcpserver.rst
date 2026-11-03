@@ -61,13 +61,13 @@ TCP 伺服器。監聽埠上的連接，並在獲得傳入連接時返回 :ref:`
 
 :ref:`Error<enum_@GlobalScope_Error>` **listen**\ (\ port\: :ref:`int<class_int>`, bind_address\: :ref:`String<class_String>` = "*"\ ) :ref:`🔗<class_TCPServer_method_listen>`
 
-Listen on the ``port`` binding to ``bind_address``.
+在 ``port`` 上監聽與 ``bind_address`` 綁定的位址。
 
-If ``bind_address`` is set as ``"*"`` (default), the server will listen on all available addresses (both IPv4 and IPv6).
+如果 ``bind_address`` 被設定為 ``"*"``\ （預設），該伺服器將監聽所有可用位址（包括 IPv4 和 IPv6）。
 
-If ``bind_address`` is set as ``"0.0.0.0"`` (for IPv4) or ``"::"`` (for IPv6), the server will listen on all available addresses matching that IP type.
+如果 ``bind_address`` 被設定為 ``"0.0.0.0"``\ （用於 IPv4）或 ``"::"``\ （用於 IPv6），該伺服器將監聽所有符合該 IP 型別的可用位址。
 
-If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::1"``, etc.), the server will only listen on the interface with that address (or fail if no interface with the given address exists).
+如果 ``bind_address`` 被設定為任何有效的位址（如 ``"192.168.1.101"``\ 、\ ``"::1"`` 等），該伺服器將只在具有該位址的介面上監聽（如果不存在具有該位址的介面則失敗）。
 
 .. rst-class:: classref-item-separator
 

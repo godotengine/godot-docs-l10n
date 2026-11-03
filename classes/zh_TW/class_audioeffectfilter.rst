@@ -9,22 +9,22 @@ AudioEffectFilter
 
 **被繼承：** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
 
-Base class for filters. Use effects that inherit this class instead of using it directly.
+濾波器的基底類別。請使用繼承自該類的效果，而不要直接使用它。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A "filter" controls the gain of frequencies, using :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` as a frequency threshold. Filters can help to give room for each sound, and create interesting effects.
+“濾波器”使用 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 作為頻率閾值來控制頻率的增益。濾波器有助於為不同的聲音留出空間，並能創造出有趣的效果。
 
-There are different types of filter that inherit this class:
+有多種不同型別的濾波器繼承自該類：
 
-Shelf filters: :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
+擱架濾波器：\ :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` 和 :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
 
-Band-pass and notch filters: :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
+帶通與陷波濾波器：\ :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`\ 、\ :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` 和 :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
 
-Low/high-pass filters: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` and :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
+低通與高通濾波器：\ :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` 和 :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
 
 .. rst-class:: classref-introduction-group
 
@@ -33,7 +33,7 @@ Low/high-pass filters: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFi
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -74,7 +74,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_6DB** = ``0``
 
-Cutting off at 6 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+以每倍頻程 6 分貝進行截止。一個倍頻程是指 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以上兩倍的頻率，或 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以下一半的頻率。
 
 .. _class_AudioEffectFilter_constant_FILTER_12DB:
 
@@ -82,7 +82,7 @@ Cutting off at 6 dB per octave. One octave is twice the frequency above :ref:`cu
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_12DB** = ``1``
 
-Cutting off at 12 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+以每倍頻程 12 分貝進行截止。一個倍頻程是指 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以上兩倍的頻率，或 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以下一半的頻率。
 
 .. _class_AudioEffectFilter_constant_FILTER_18DB:
 
@@ -90,7 +90,7 @@ Cutting off at 12 dB per octave. One octave is twice the frequency above :ref:`c
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_18DB** = ``2``
 
-Cutting off at 18 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+以每倍頻程 18 分貝進行截止。一個倍頻程是指 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以上兩倍的頻率，或 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以下一半的頻率。
 
 .. _class_AudioEffectFilter_constant_FILTER_24DB:
 
@@ -98,7 +98,7 @@ Cutting off at 18 dB per octave. One octave is twice the frequency above :ref:`c
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_24DB** = ``3``
 
-Cutting off at 24 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+以每倍頻程 24 分貝進行截止。一個倍頻程是指 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以上兩倍的頻率，或 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以下一半的頻率。
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ Cutting off at 24 dB per octave. One octave is twice the frequency above :ref:`c
 - |void| **set_cutoff**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cutoff**\ (\ )
 
-Frequency threshold for the filter, in Hz. Value can range from 1 to 20500.
+該濾波器的頻率閾值，單位為 Hz。取值範圍為 1 至 20500。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Frequency threshold for the filter, in Hz. Value can range from 1 to 20500.
 - |void| **set_db**\ (\ value\: :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>`\ )
 - :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **get_db**\ (\ )
 
-Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`), also known as the "order" of the filter. Higher orders have a more aggressive cutoff.
+截止曲線的陡峭程度，以每倍頻程（高於 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率的兩倍，或低於 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率的一半）分貝為單位，也稱為濾波器的“階數”。階數越高，截止曲線越陡峭。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain of the frequencies affected by the filter. This property is only available for :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. Value can range from 0 to 4.
+受該濾波器影響的頻率的增益。該屬性僅適用於 :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` 和 :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 。取值範圍為 0 到 4。
 
 .. rst-class:: classref-item-separator
 
@@ -171,15 +171,15 @@ Gain of the frequencies affected by the filter. This property is only available 
 - |void| **set_resonance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_resonance**\ (\ )
 
-Gain at or directly next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold. Value can range from 0 to 1.
+位於 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率閾值處或緊鄰該處的增益。取值範圍為 0 到 1。
 
-Its exact behavior depends on the selected filter type:
+其具體行為取決於所選的濾波器型別：
 
-- For shelf filters, it accentuates or masks the order by increasing frequencies right next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency and decreasing frequencies on the opposite side.
+- 對於擱架濾波器，它通過提升緊鄰 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率處的頻段並衰減另一側的頻段，從而起到增強或抑制效果。
 
-- For the band-pass and notch filters, it widens or narrows the filter at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
+- 對於帶通和陷波濾波器，它會拓寬或收窄濾波器在 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率閾值處的頻寬。
 
-- For low/high-pass filters, it increases or decreases frequencies at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
+- 對於低通/高通濾波器，它會提升或衰減在 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 頻率閾值處的頻率。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

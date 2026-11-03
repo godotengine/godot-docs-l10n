@@ -14,7 +14,7 @@ PolygonOccluder3D
 說明
 ----
 
-**PolygonOccluder3D** 儲存的是多邊形形狀，可用於引擎的遮擋剔除系統。在編輯器中選中具有 **PolygonOccluder3D** 的 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 時，3D 視口的頂部會出現用於新增/移除頂點的編輯器。所有的頂點都必須在相同的 2D 平面中放置，也就是說，使用單個 **PolygonOccluder3D** 是無法任意建立 3D 形狀的。要將任意 3D 形狀作為遮擋器，請改用 :ref:`ArrayOccluder3D<class_ArrayOccluder3D>` 或 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的烘焙功能。
+**PolygonOccluder3D** 儲存的是多邊形形狀，可用於引擎的遮擋剔除系統。在編輯器中選中具有 **PolygonOccluder3D** 的 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 時，3D 視埠的頂部會出現用於新增/移除頂點的編輯器。所有的頂點都必須在相同的 2D 平面中放置，也就是說，使用單個 **PolygonOccluder3D** 是無法任意建立 3D 形狀的。要將任意 3D 形狀作為遮擋器，請改用 :ref:`ArrayOccluder3D<class_ArrayOccluder3D>` 或 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的烘焙功能。
 
 設定遮擋剔除的步驟見 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的文件。
 
@@ -57,7 +57,7 @@ PolygonOccluder3D
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-用於遮擋剔除的多邊形。既可以是凸多邊形，也可以是凹多邊形，但只有讓頂點的數量盡可能地少，才能夠讓性能最大化。
+用於遮擋剔除的多邊形。既可以是凸多邊形，也可以是凹多邊形，但只有讓頂點的數量盡可能地少，才能夠讓效能最大化。
 
 多邊形必須\ *不存在*\ 相交的線。否則三角形化會失敗（同時會輸出錯誤資訊）。
 

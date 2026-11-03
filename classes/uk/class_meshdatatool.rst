@@ -344,7 +344,7 @@ MeshDataTool надає доступ до окремих вершин у :ref:`M
 
 :ref:`int<class_int>` **get_format**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_format>`
 
-Повертає формат :ref:`Mesh<class_Mesh>` як поєднання прапорів :ref:`ArrayFormat<enum_Mesh_ArrayFormat>`. Наприклад, сітка, що містить як вершини, так і норми, поверне формат ``3``, тому що :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` ``1`` та :ref:`Mesh.ARRAY_FORMAT_NORMAL [code<class_Mesh_constant_ARRAY_FORMAT_NORMAL [code>`\ 2[/code].
+Повертає формат :ref:`Mesh<class_Mesh>` у вигляді комбінації прапорців :ref:`ArrayFormat<enum_Mesh_ArrayFormat>`. Наприклад, сітка, що містить як вершини, так і нормалі, поверне формат ``3``, оскільки :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` дорівнює ``1``, а :ref:`Mesh.ARRAY_FORMAT_NORMAL<class_Mesh_constant_ARRAY_FORMAT_NORMAL>` — ``2``.
 
 .. rst-class:: classref-item-separator
 

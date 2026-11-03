@@ -7,14 +7,14 @@ GLTFPhysicsBody
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF physics body.
+代表 glTF 物理體。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a physics body as an intermediary between the ``OMI_physics_body`` glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
+代表物理體作為 ``OMI_physics_body`` glTF 資料和 Godot 節點之間的中介，並且它的抽象方式允許在未來新增對不同 glTF 物理擴充的支援。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,7 +23,7 @@ Represents a physics body as an intermediary between the ``OMI_physics_body`` gl
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `OMI_physics_body glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body>`__
+- `OMI_physics_body glTF 擴充 <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -106,11 +106,11 @@ Represents a physics body as an intermediary between the ``OMI_physics_body`` gl
 - |void| **set_body_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_body_type**\ (\ )
 
-The type of the body.
+物體的型別。
 
-When importing, this controls what type of :ref:`CollisionObject3D<class_CollisionObject3D>` node Godot should generate. Valid values are ``"static"``, ``"animatable"``, ``"character"``, ``"rigid"``, ``"vehicle"``, and ``"trigger"``.
+匯入時，控制 Godot 應該生成哪種型別的 :ref:`CollisionObject3D<class_CollisionObject3D>` 節點。有效值有 ``"static"``\ 、\ ``"animatable"``\ 、\ ``"character"``\ 、\ ``"rigid"``\ 、\ ``"vehicle"``\ 、\ ``"trigger"``\ 。
 
-When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"``, or ``"dynamic"`` motion types, or the ``"trigger"`` property.
+匯出時，會合併為 ``"static"``\ 、\ ``"kinematic"`` 或 ``"dynamic"`` 運動型別，或 ``"trigger"`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"
 - |void| **set_center_of_mass**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass**\ (\ )
 
-主體的質心，以米為單位。這是在相對於主體的局部空間中。預設情況下，質心是主體的原點。
+主體的質心，以米為單位。這是在相對於主體的區域空間中。預設情況下，質心是主體的原點。
 
 .. rst-class:: classref-item-separator
 
@@ -144,9 +144,9 @@ When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"
 - |void| **set_inertia_diagonal**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_inertia_diagonal**\ (\ )
 
-The inertia strength of the physics body, in kilogram meter squared (kg⋅m²). This represents the inertia around the principle axes, the diagonal of the inertia tensor matrix. This is only used when the body type is "rigid" or "vehicle".
+物理體的慣性強度，單位為千克平方米（kg⋅m²）。這表示繞主軸的慣性，而該軸為慣性張量矩陣的對角線。僅在物體型別為 “rigid” 或 “vehicle” 時使用。
 
-When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this value is zero, then the inertia will be calculated automatically.
+當轉換為 Godot :ref:`RigidBody3D<class_RigidBody3D>` 節點時，如果該值為零，則會自動計算慣性。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this va
 - |void| **set_inertia_orientation**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )
 - :ref:`Quaternion<class_Quaternion>` **get_inertia_orientation**\ (\ )
 
-The inertia orientation of the physics body. This defines the rotation of the inertia's principle axes relative to the object's local axes. This is only used when the body type is "rigid" or "vehicle" and :ref:`inertia_diagonal<class_GLTFPhysicsBody_property_inertia_diagonal>` is set to a non-zero value.
+物理體的慣性方向。這定義了慣性主軸相對於物件區域軸的旋轉。僅當物體型別為“剛性”或“車輛”且 :ref:`inertia_diagonal<class_GLTFPhysicsBody_property_inertia_diagonal>` 被設定為非零值時才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ The inertia orientation of the physics body. This defines the rotation of the in
 
 :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFPhysicsBody_method_from_dictionary>`
 
-Creates a new GLTFPhysicsBody instance by parsing the given :ref:`Dictionary<class_Dictionary>` in the ``OMI_physics_body`` glTF extension format.
+通過解析 ``OMI_physics_body`` glTF 擴充格式中給定的 :ref:`Dictionary<class_Dictionary>`\ ，建立新的 GLTFPhysicsBody 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Creates a new GLTFPhysicsBody instance by parsing the given :ref:`Dictionary<cla
 
 :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>` **from_node**\ (\ body_node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) |static| :ref:`🔗<class_GLTFPhysicsBody_method_from_node>`
 
-Creates a new GLTFPhysicsBody instance from the given Godot :ref:`CollisionObject3D<class_CollisionObject3D>` node.
+從給定的 Godot :ref:`CollisionObject3D<class_CollisionObject3D>` 節點新建 GLTFPhysicsBody 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Creates a new GLTFPhysicsBody instance from the given Godot :ref:`CollisionObjec
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFPhysicsBody_method_to_dictionary>`
 
-Serializes this GLTFPhysicsBody instance into a :ref:`Dictionary<class_Dictionary>`. It will be in the format expected by the ``OMI_physics_body`` glTF extension.
+將這個 GLTFPhysicsBody 實例序列化到 :ref:`Dictionary<class_Dictionary>` 中。使用的是 ``OMI_physics_body`` glTF 擴充所需要的格式。
 
 .. rst-class:: classref-item-separator
 

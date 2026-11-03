@@ -14,7 +14,7 @@ Singleton que conecta el motor con el contexto de JavaScript del navegador en la
 Descripción
 ----------------------
 
-El singleton JavaScriptBridge solo se implementa en la exportación Web. Se utiliza para acceder al contexto de JavaScript del navegador. Esto permite la interacción con páginas incrustadas o la llamada a APIs de JavaScript de terceros.
+El singleton JavaScriptBridge solo se implementa en la exportación Web. Se utiliza para acceder al contexto de JavaScript del navegador. Esto permite la interacción con páginas incrustadas o la llamada a API de JavaScript de terceros.
 
 \ **Nota:** Este singleton puede desactivarse en tiempo de compilación para mejorar la seguridad. De forma predeterminada, el singleton JavaScriptBridge está activado. Las plantillas de exportación oficiales también tienen el singleton JavaScriptBridge activado. Véase :doc:`Compilar para la Web <../engine_details/development/compiling/compiling_for_web>` en la documentación para obtener más información.
 

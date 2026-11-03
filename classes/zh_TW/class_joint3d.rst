@@ -16,14 +16,14 @@ Joint3D
 說明
 ----
 
-Abstract base class for all joints in 3D physics. 3D joints bind together two physics bodies (:ref:`node_a<class_Joint3D_property_node_a>` and :ref:`node_b<class_Joint3D_property_node_b>`) and apply a constraint. If only one body is defined, it is attached to a fixed :ref:`StaticBody3D<class_StaticBody3D>` without collision shapes.
+3D 物理中所有關節的抽象基底類別。3D 關節將兩個物理體（\ :ref:`node_a<class_Joint3D_property_node_a>` 和 :ref:`node_b<class_Joint3D_property_node_b>`\ ）綁定在一起並應用約束。如果僅定義一個物體，則將其附加到固定的 :ref:`StaticBody3D<class_StaticBody3D>` 上，而沒有碰撞形狀。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `3D 貨車鎮演示 <https://godotengine.org/asset-library/asset/2752>`__
+- `3D 貨車鎮演示 <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -75,7 +75,7 @@ Abstract base class for all joints in 3D physics. 3D joints bind together two ph
 - |void| **set_exclude_nodes_from_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_nodes_from_collision**\ (\ )
 
-If ``true``, the two bodies bound together do not collide with each other.
+如果為 ``true``\ ，則綁定在一起的兩個物體不會相互碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -92,9 +92,9 @@ If ``true``, the two bodies bound together do not collide with each other.
 - |void| **set_node_a**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_a**\ (\ )
 
-Path to the first node (A) attached to the joint. The node must inherit :ref:`PhysicsBody3D<class_PhysicsBody3D>`.
+連接到關節的第一個節點（A）的路徑。該節點必須繼承自 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 。
 
-If left empty and :ref:`node_b<class_Joint3D_property_node_b>` is set, the body is attached to a fixed :ref:`StaticBody3D<class_StaticBody3D>` without collision shapes.
+如果留空且設定了 :ref:`node_b<class_Joint3D_property_node_b>`\ ，則該物體將連接到固定的 :ref:`StaticBody3D<class_StaticBody3D>`\ ，且沒有碰撞形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -111,9 +111,9 @@ If left empty and :ref:`node_b<class_Joint3D_property_node_b>` is set, the body 
 - |void| **set_node_b**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_b**\ (\ )
 
-Path to the second node (B) attached to the joint. The node must inherit :ref:`PhysicsBody3D<class_PhysicsBody3D>`.
+連接到關節的第二個節點（B）的路徑。該節點必須繼承自 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 。
 
-If left empty and :ref:`node_a<class_Joint3D_property_node_a>` is set, the body is attached to a fixed :ref:`StaticBody3D<class_StaticBody3D>` without collision shapes.
+如果留空且設定了 :ref:`node_a<class_Joint3D_property_node_a>`\ ，則該物體將連接到固定的 :ref:`StaticBody3D<class_StaticBody3D>`\ ，且沒有碰撞形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -130,9 +130,9 @@ If left empty and :ref:`node_a<class_Joint3D_property_node_a>` is set, the body 
 - |void| **set_solver_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_solver_priority**\ (\ )
 
-The priority used to define which solver is executed first for multiple joints. The lower the value, the higher the priority.
+用於定義多個關節中哪個求解器優先執行的優先級。數值越小，優先級越高。
 
-\ **Note:** Only supported when using GodotPhysics3D. This property is ignored when using Jolt Physics.
+\ **注意：** 僅在使用 GodotPhysics3D 時支援此屬性。如果使用 Jolt Physics，該屬性將被忽略。
 
 .. rst-class:: classref-section-separator
 
@@ -149,7 +149,7 @@ The priority used to define which solver is executed first for multiple joints. 
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_Joint3D_method_get_rid>`
 
-Returns the joint's internal :ref:`RID<class_RID>` from the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+從 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 回傳關節的內部 :ref:`RID<class_RID>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

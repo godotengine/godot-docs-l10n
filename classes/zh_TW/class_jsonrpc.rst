@@ -63,7 +63,7 @@ enum **ErrorCode**: :ref:`🔗<enum_JSONRPC_ErrorCode>`
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **PARSE_ERROR** = ``-32700``
 
-The request could not be parsed as it was not valid by JSON standard (:ref:`JSON.parse()<class_JSON_method_parse>` failed).
+無法解析請求，因為不符合 JSON 標準（\ :ref:`JSON.parse()<class_JSON_method_parse>` 失敗）。
 
 .. _class_JSONRPC_constant_INVALID_REQUEST:
 
@@ -71,7 +71,7 @@ The request could not be parsed as it was not valid by JSON standard (:ref:`JSON
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INVALID_REQUEST** = ``-32600``
 
-A method call was requested but the request's format is not valid.
+請求進行方法呼叫，但是請求格式無效。
 
 .. _class_JSONRPC_constant_METHOD_NOT_FOUND:
 
@@ -87,7 +87,7 @@ A method call was requested but the request's format is not valid.
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INVALID_PARAMS** = ``-32602``
 
-A method call was requested but the given method parameters are not valid. Not used by the built-in JSONRPC.
+請求進行方法呼叫，但是給定的方法參數無效。內建 JSONRPC 未使用。
 
 .. _class_JSONRPC_constant_INTERNAL_ERROR:
 
@@ -95,7 +95,7 @@ A method call was requested but the given method parameters are not valid. Not u
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INTERNAL_ERROR** = ``-32603``
 
-An internal error occurred while processing the request. Not used by the built-in JSONRPC.
+處理請求時發生內部錯誤。內建 JSONRPC 未使用。
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ An internal error occurred while processing the request. Not used by the built-i
 
 - ``code``\ ：這是哪種錯誤對應的錯誤程式碼。請參閱 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` 常數。
 
-- ``message``\ ：關於該錯誤的自訂消息。
+- ``message``\ ：關於該錯誤的自訂訊息。
 
 - ``id``\ ：該錯誤作為回應對應的請求。
 
@@ -180,7 +180,7 @@ An internal error occurred while processing the request. Not used by the built-i
 
 :ref:`Variant<class_Variant>` **process_action**\ (\ action\: :ref:`Variant<class_Variant>`, recurse\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JSONRPC_method_process_action>`
 
-給定採用 JSON-RPC 請求形式的字典：解壓請求並運作它。通過查看名為“method”的字段，並在 JSONRPC 物件中搜尋等效命名的函式來解析方法。如果找到，則呼叫該方法。
+給定採用 JSON-RPC 請求形式的字典：解壓請求並運作它。通過查看名為“method”的欄位，並在 JSONRPC 物件中搜尋等效命名的函式來解析方法。如果找到，則呼叫該方法。
 
 要新增新的受支援方法，請擴充 JSONRPC 類並在你的子類別上呼叫 :ref:`process_action()<class_JSONRPC_method_process_action>`\ 。
 
@@ -210,11 +210,11 @@ An internal error occurred while processing the request. Not used by the built-i
 
 |void| **set_method**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JSONRPC_method_set_method>`
 
-Registers a callback for the given method name.
+為給定的方法名注冊回呼。
 
-- ``name``: The name that clients can use to access the callback.
+- ``name``\ ：用戶端用於存取該回呼的名稱。
 
-- ``callback``: The callback which will handle the specified method.
+- ``callback``\ ：用於處理指定方法的回呼。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

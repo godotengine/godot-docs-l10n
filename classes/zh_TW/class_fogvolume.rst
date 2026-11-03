@@ -14,9 +14,9 @@ FogVolume
 說明
 ----
 
-**FogVolume** 用於將局部霧新增到全域體積霧效果中。如果使用具有負 :ref:`FogMaterial.density<class_FogMaterial_property_density>` 的 :ref:`FogMaterial<class_FogMaterial>`\ ，\ **FogVolume** 也可以從特定區域移除體積霧。
+**FogVolume** 用於將區域霧新增到全域體積霧效果中。如果使用具有負 :ref:`FogMaterial.density<class_FogMaterial_property_density>` 的 :ref:`FogMaterial<class_FogMaterial>`\ ，\ **FogVolume** 也可以從特定區域移除體積霧。
 
-\ **FogVolume** 的性能與它在螢幕上的相對大小以及它所附加的 :ref:`FogMaterial<class_FogMaterial>` 的複雜性直接相關。最好盡可能保持 **FogVolume** 相對較小且簡單。
+\ **FogVolume** 的效能與它在螢幕上的相對大小以及它所附加的 :ref:`FogMaterial<class_FogMaterial>` 的複雜性直接相關。最好盡可能保持 **FogVolume** 相對較小且簡單。
 
 \ **注意：**\ **FogVolume** 只有在 :ref:`Environment.volumetric_fog_enabled<class_Environment_property_volumetric_fog_enabled>` 為 ``true`` 時才會有可見效果。如果不希望霧全域可見（而只是在 **FogVolume** 節點內），請將 :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 設定為 ``0.0``\ 。
 
@@ -99,7 +99,7 @@ FogVolume
 
 當 :ref:`shape<class_FogVolume_property_shape>` 為 :ref:`RenderingServer.FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>` 或 :ref:`RenderingServer.FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>`\ 時，該 **FogVolume** 的大小。
 
-\ **注意：**\ 當相機移動或旋轉時，薄霧體積可能會出現閃爍。這可以通過增加 :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`\ （以性能為代價）或減少 :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>`\ （無性能成本，但以降低霧的範圍為代價）來緩解。或者，\ **FogVolume** 可以做得更厚，並在 :ref:`material<class_FogVolume_property_material>` 中使用較低的密度。
+\ **注意：**\ 當相機移動或旋轉時，薄霧體積可能會出現閃爍。這可以通過增加 :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`\ （以效能為代價）或減少 :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>`\ （無效能成本，但以降低霧的範圍為代價）來緩解。或者，\ **FogVolume** 可以做得更厚，並在 :ref:`material<class_FogVolume_property_material>` 中使用較低的密度。
 
 \ **注意：**\ 如果 :ref:`shape<class_FogVolume_property_shape>` 為 :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>` 或 :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`\ ，圓錐體/圓柱體將被調整以適應該大小。不支援通過 :ref:`size<class_FogVolume_property_size>` 屬性對圓錐體/圓柱體形狀進行非均勻縮放，但可以改為縮放該 **FogVolume** 節點。
 

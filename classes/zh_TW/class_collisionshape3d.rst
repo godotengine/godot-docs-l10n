@@ -14,9 +14,9 @@ CollisionShape3D
 說明
 ----
 
-A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+向 :ref:`CollisionObject3D<class_CollisionObject3D>` 父級提供 :ref:`Shape3D<class_Shape3D>` 並允許對其編輯的節點。可以為 :ref:`Area3D<class_Area3D>` 提供檢測形狀，或將 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 轉換為實體物件。
 
-\ **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its :ref:`shape<class_CollisionShape3D_property_shape>` resource instead.
+\ **警告：**\ 非均勻縮放的 **CollisionShape3D** 可能無法按預期執行。請確保在所有軸上保持其縮放相同並改為調整其 :ref:`shape<class_CollisionShape3D_property_shape>` 資源。
 
 .. rst-class:: classref-introduction-group
 
@@ -83,9 +83,9 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
+碰撞形狀的顏色，在編輯器中顯示，勾選編輯器頂部的 **除錯 > 顯示碰撞形狀** 時也會在執行專案時顯示。
 
-\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
+\ **注意：**\ 預設值為 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`\ 。這裡記錄的 ``Color(0, 0, 0, 0)`` 值是佔位符，不是實際的預設除錯顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The collision shape color that is displayed in the editor, or in the running pro
 - |void| **set_enable_debug_fill**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_debug_fill**\ (\ )
 
-If ``true``, when the shape is displayed, it will show a solid fill color in addition to its wireframe.
+如果為 ``true``\ ，則顯示形狀時除了顯示線框外還會顯示填充顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ If ``true``, when the shape is displayed, it will show a solid fill color in add
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-禁用的碰撞形狀在世界中沒有影響。這個屬性應該用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 改變。
+停用的碰撞形狀在世界中沒有影響。這個屬性應該用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 改變。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ If ``true``, when the shape is displayed, it will show a solid fill color in add
 
 **已棄用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-This method does nothing.
+這個方法甚麼也不做。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

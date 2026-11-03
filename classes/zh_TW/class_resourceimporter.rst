@@ -83,7 +83,7 @@ enum **ImportOrder**: :ref:`🔗<enum_ResourceImporter_ImportOrder>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_build_dependencies**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceImporter_private_method__get_build_dependencies>`
 
-Called when the engine compilation profile editor wants to check what build options an imported resource needs. For example, :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>` has a property called :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`, that depends on the engine to be build with the "msdfgen" module. If that resource happened to be a custom one, it would be handled like this:
+當引擎編譯設定檔案編輯器想要檢查匯入資源所需的建置選項時會呼叫此方法。例如， :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>` 有一個名為 :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>` 的屬性，該屬性要求引擎在建置時必須啟用“msdfgen”模組。如果該資源恰好是自訂的資源，則會像這樣處理：
 
 ::
 

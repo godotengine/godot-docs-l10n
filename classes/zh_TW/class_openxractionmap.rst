@@ -180,7 +180,7 @@ OpenXR 使用類似於 Godots 輸入對應系統的動作系統，將各種型�
 
 :ref:`OpenXRActionSet<class_OpenXRActionSet>` **get_action_set**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_action_set>`
 
-獲取位於該索引的動作集。
+取得位於該索引的動作集。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ OpenXR 使用類似於 Godots 輸入對應系統的動作系統，將各種型�
 
 :ref:`int<class_int>` **get_action_set_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_action_set_count>`
 
-獲取動作對應中動作集的數量。
+取得動作對應中動作集的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ OpenXR 使用類似於 Godots 輸入對應系統的動作系統，將各種型�
 
 :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>` **get_interaction_profile**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_interaction_profile>`
 
-獲取位於該索引的互動配置。
+取得位於該索引的互動配置。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ OpenXR 使用類似於 Godots 輸入對應系統的動作系統，將各種型�
 
 :ref:`int<class_int>` **get_interaction_profile_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionMap_method_get_interaction_profile_count>`
 
-獲取動作對應中互動配置的數量。
+取得動作對應中互動配置的數量。
 
 .. rst-class:: classref-item-separator
 

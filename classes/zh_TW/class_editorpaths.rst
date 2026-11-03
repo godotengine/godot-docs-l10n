@@ -64,9 +64,9 @@ EditorPaths
 
 :ref:`String<class_String>` **get_cache_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_cache_dir>`
 
-Returns the absolute path to the user's cache folder. This folder should be used for temporary data that can be removed safely whenever the editor is closed (such as generated resource thumbnails).
+回傳使用者快取資料夾的絕對路徑。該資料夾應該用於暫時資料，關閉編輯器時應該能夠安全地移除這些資料（例如生成的資源預覽圖）。
 
-\ **Default paths per platform:**\ 
+\ **各平台的預設路徑：**\ 
 
 .. code:: text
 
@@ -84,14 +84,14 @@ Returns the absolute path to the user's cache folder. This folder should be used
 
 :ref:`String<class_String>` **get_config_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_config_dir>`
 
-Returns the absolute path to the user's configuration folder. This folder should be used for *persistent* user configuration files.
+回傳使用者設定資料夾的絕對路徑。該資料夾應該用於\ *持久化*\ 的使用者設定檔案。
 
-\ **Default paths per platform:**\ 
+\ **各平台的預設路徑：**\ 
 
 .. code:: text
 
-    - Windows: %APPDATA%\Godot\                    (same as `get_data_dir()`)
-    - macOS: ~/Library/Application Support/Godot/  (same as `get_data_dir()`)
+    - Windows: %APPDATA%\Godot\                    （同 `get_data_dir()`）
+    - macOS: ~/Library/Application Support/Godot/  （同 `get_data_dir()`）
     - Linux: ~/.config/godot/
 
 .. rst-class:: classref-item-separator
@@ -104,15 +104,15 @@ Returns the absolute path to the user's configuration folder. This folder should
 
 :ref:`String<class_String>` **get_data_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_data_dir>`
 
-Returns the absolute path to the user's data folder. This folder should be used for *persistent* user data files such as installed export templates.
+回傳使用者資料資料夾的絕對路徑。該資料夾應該用於\ *持久化*\ 的使用者資料檔案，例如已安裝的匯出範本。
 
-\ **Default paths per platform:**\ 
+\ **各平台的預設路徑：**\ 
 
 .. code:: text
 
-    - Windows: %APPDATA%\Godot\                    (same as `get_config_dir()`)
-    - macOS: ~/Library/Application Support/Godot/  (same as `get_config_dir()`)
-    - Linux: ~/.local/share/godot/
+    - Windows：%APPDATA%\Godot\                    （同 `get_config_dir()` ）
+    - macOS：~/Library/Application Support/Godot/  （同 `get_config_dir()` ）
+    - Linux：~/.local/share/godot/
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Returns the absolute path to the user's data folder. This folder should be used 
 
 :ref:`String<class_String>` **get_project_settings_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_project_settings_dir>`
 
-Returns the relative path to the editor settings for this project. This is usually ``"res://.godot/editor"``. Projects all have a unique subdirectory inside the settings path where project-specific editor settings are saved.
+回傳此專案特定的編輯器設定的相對路徑。該路徑通常為 ``"res://.godot/editor"``\ 。所有專案在設定路徑內都有一個唯一的子目錄，用於儲存專案特定的編輯器設定。
 
 .. rst-class:: classref-item-separator
 

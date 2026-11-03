@@ -14,7 +14,7 @@ ConfigFile
 說明
 ----
 
-This helper class can be used to store :ref:`Variant<class_Variant>` values on the filesystem using INI-style formatting. The stored values are identified by a section and a key:
+該輔助類可用於使用 INI 樣式格式在檔案系統上儲存 :ref:`Variant<class_Variant>` 值。儲存的值由一個小節和一個鍵標識：
 
 .. code:: text
 
@@ -23,44 +23,44 @@ This helper class can be used to store :ref:`Variant<class_Variant>` values on t
     string_example="Hello World3D!"
     a_vector=Vector3(1, 0, 2)
 
-The stored data can be saved to or parsed from a file, though ConfigFile objects can also be used directly without accessing the filesystem.
+儲存的資料可以被儲存到檔案中或從檔案中解析出來，儘管 ConfigFile 物件也可以直接使用而無需存取檔案系統。
 
-The following example shows how to create a simple **ConfigFile** and save it on disc:
+以下範例顯示了如何建立一個簡單的 **ConfigFile** 並將其儲存在磁碟上：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Create new ConfigFile object.
+    # 建立新的 ConfigFile 物件。
     var config = ConfigFile.new()
 
-    # Store some values.
+    # 儲存一些值。
     config.set_value("Player1", "player_name", "Steve")
     config.set_value("Player1", "best_score", 10)
     config.set_value("Player2", "player_name", "V3geta")
     config.set_value("Player2", "best_score", 9001)
 
-    # Save it to a file (overwrite if already exists).
+    # 將其儲存到檔案中（如果已存在則覆蓋）。
     config.save("user://scores.cfg")
 
  .. code-tab:: csharp
 
-    // Create new ConfigFile object.
+    // 建立新的 ConfigFile 物件。
     var config = new ConfigFile();
 
-    // Store some values.
+    // 儲存一些值。
     config.SetValue("Player1", "player_name", "Steve");
     config.SetValue("Player1", "best_score", 10);
     config.SetValue("Player2", "player_name", "V3geta");
     config.SetValue("Player2", "best_score", 9001);
 
-    // Save it to a file (overwrite if already exists).
+    // 將其儲存到檔案中（如果已存在則覆蓋）。
     config.Save("user://scores.cfg");
 
 
 
-This example shows how the above file could be loaded:
+該範例展示了如何載入上面的檔案：
 
 
 .. tabs::
@@ -70,16 +70,16 @@ This example shows how the above file could be loaded:
     var score_data = {}
     var config = ConfigFile.new()
 
-    # Load data from a file.
+    # 從檔案載入資料。
     var err = config.load("user://scores.cfg")
 
-    # If the file didn't load, ignore it.
+    # 如果檔案沒有載入，忽略它。
     if err != OK:
         return
 
-    # Iterate over all sections.
+    # 迭代所有小節。
     for player in config.get_sections():
-        # Fetch the data for each section.
+        # 取得每個小節的資料。
         var player_name = config.get_value(player, "player_name")
         var player_score = config.get_value(player, "best_score")
         score_data[player_name] = player_score
@@ -89,19 +89,19 @@ This example shows how the above file could be loaded:
     var score_data = new Godot.Collections.Dictionary();
     var config = new ConfigFile();
 
-    // Load data from a file.
+    // 從檔案載入資料。
     Error err = config.Load("user://scores.cfg");
 
-    // If the file didn't load, ignore it.
+    // 如果檔案沒有載入，忽略它。
     if (err != Error.Ok)
     {
         return;
     }
 
-    // Iterate over all sections.
+    // 迭代所有小節。
     foreach (String player in config.GetSections())
     {
-        // Fetch the data for each section.
+        // 取得每個小節的資料。
         var player_name = (String)config.GetValue(player, "player_name");
         var player_score = (int)config.GetValue(player, "best_score");
         score_data[player_name] = player_score;
@@ -109,13 +109,13 @@ This example shows how the above file could be loaded:
 
 
 
-Any operation that mutates the ConfigFile such as :ref:`set_value()<class_ConfigFile_method_set_value>`, :ref:`clear()<class_ConfigFile_method_clear>`, or :ref:`erase_section()<class_ConfigFile_method_erase_section>`, only changes what is loaded in memory. If you want to write the change to a file, you have to save the changes with :ref:`save()<class_ConfigFile_method_save>`, :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>`, or :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>`.
+\ :ref:`set_value()<class_ConfigFile_method_set_value>`\ 、\ :ref:`clear()<class_ConfigFile_method_clear>`\ 、\ :ref:`erase_section()<class_ConfigFile_method_erase_section>` 等修改 ConfigFile 的操作只會改變記憶體中所載入的內容。如果要將更改寫入檔案，則必須使用 :ref:`save()<class_ConfigFile_method_save>`\ 、\ :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>` 或 :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>` 儲存更改。
 
-Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load.
+請記住，小節和屬性名稱不能包含空白。儲存和載入時將忽略空白後的任何內容。
 
-ConfigFiles can also contain manually written comment lines starting with a semicolon (``;``). Those lines will be ignored when parsing the file. Note that comments will be lost when saving the ConfigFile. This can still be useful for dedicated server configuration files, which are typically never overwritten without explicit user action.
+ConfigFile 還可以包含以分號（\ ``;``\ ）開頭的手動編寫的注釋行。解析檔案時將忽略這些行。請注意，儲存 ConfigFile 時注釋將丟失。注釋對於專用伺服器設定檔案仍然很有用，如果沒有明確的使用者操作，這些檔案通常永遠不會被覆蓋。
 
-\ **Note:** The file extension given to a ConfigFile does not have any impact on its formatting or behavior. By convention, the ``.cfg`` extension is used here, but any other extension such as ``.ini`` is also valid. Since neither ``.cfg`` nor ``.ini`` are standardized, Godot's ConfigFile formatting may differ from files written by other programs.
+\ **注意：**\ 為 ConfigFile 指定的檔案副檔名對其格式或行為沒有任何影響。按照慣例，此處使用 ``.cfg`` 副檔名，但 ``.ini`` 等任何其他副檔名也有效。由於 ``.cfg`` 和 ``.ini`` 都不是標準化的格式，Godot 的 ConfigFile 格式可能與其他程式編寫的檔案不同。
 
 .. rst-class:: classref-reftable-group
 

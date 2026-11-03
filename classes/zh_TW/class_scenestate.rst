@@ -142,7 +142,7 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`SceneState<class_SceneState>` **get_base_scene_state**\ (\ ) |const| :ref:`🔗<class_SceneState_method_get_base_scene_state>`
 
-Returns the **SceneState** of the scene that this scene inherits from, or ``null`` if it doesn't inherit from any scene.
+回傳該場景所繼承場景的 **SceneState**\ ，如果未繼承任何場景則回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`String<class_String>` **get_path**\ (\ ) |const| :ref:`🔗<class_SceneState_method_get_path>`
 
-Returns the resource path to the represented :ref:`PackedScene<class_PackedScene>`.
+回傳代表的 :ref:`PackedScene<class_PackedScene>` 的資來源路徑。
 
 .. rst-class:: classref-item-separator
 

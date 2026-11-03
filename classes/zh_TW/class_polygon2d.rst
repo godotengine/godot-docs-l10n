@@ -102,7 +102,7 @@ Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個�
 - |void| **set_antialiased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_antialiased**\ (\ )
 
-如果為 ``true``\ ，則多邊形邊緣將進行抗鋸齒。
+如果為 ``true``\ ，則多邊形邊緣將進行反鋸齒。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個�
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The polygon's fill color. If :ref:`texture<class_Polygon2D_property_texture>` is set, it will be multiplied by this color. It will also be the default color for vertices not set in :ref:`vertex_colors<class_Polygon2D_property_vertex_colors>`.
+該多邊形的填充顏色。如果設定了 :ref:`texture<class_Polygon2D_property_texture>`\ ，它將乘以該顏色。它也將是未在 :ref:`vertex_colors<class_Polygon2D_property_vertex_colors>` 中設定的頂點的預設顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ The polygon's fill color. If :ref:`texture<class_Polygon2D_property_texture>` is
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-The polygon's list of vertices. The final point will be connected to the first.
+多邊形的頂點清單。最後一點將連接到第一個點。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -223,7 +223,7 @@ The polygon's list of vertices. The final point will be connected to the first.
 - |void| **set_polygons**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_polygons**\ (\ )
 
-多邊形數量大於一時的多邊形列表。每個獨立的多邊形都作為 :ref:`PackedInt32Array<class_PackedInt32Array>` 存儲，其中的每個 :ref:`int<class_int>` 都是對 :ref:`polygon<class_Polygon2D_property_polygon>` 某個點的索引。如果為空，則會忽略這個屬性，得到由 :ref:`polygon<class_Polygon2D_property_polygon>` 中所有點構成的單個多邊形，順序與儲存順序一致。
+多邊形數量大於一時的多邊形列表。每個獨立的多邊形都作為 :ref:`PackedInt32Array<class_PackedInt32Array>` 儲存，其中的每個 :ref:`int<class_int>` 都是對 :ref:`polygon<class_Polygon2D_property_polygon>` 某個點的索引。如果為空，則會忽略這個屬性，得到由 :ref:`polygon<class_Polygon2D_property_polygon>` 中所有點構成的單個多邊形，順序與儲存順序一致。
 
 .. rst-class:: classref-item-separator
 
@@ -257,7 +257,7 @@ The polygon's list of vertices. The final point will be connected to the first.
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-The polygon's fill texture. Use :ref:`uv<class_Polygon2D_property_uv>` to set texture coordinates.
+該多邊形的填充紋理。使用 :ref:`uv<class_Polygon2D_property_uv>` 設定紋理座標。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ The polygon's fill texture. Use :ref:`uv<class_Polygon2D_property_uv>` to set te
 - |void| **set_texture_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_texture_offset**\ (\ )
 
-Amount to offset the polygon's :ref:`texture<class_Polygon2D_property_texture>`. If set to ``Vector2(0, 0)``, the texture's origin (its top-left corner) will be placed at the polygon's position.
+多邊形的 :ref:`texture<class_Polygon2D_property_texture>` 紋理的偏移量。如果設定為 ``Vector2(0, 0)``\ ，則紋理的原點（其左上角）將放置在該多邊形的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Amount to offset the polygon's :ref:`texture<class_Polygon2D_property_texture>`.
 - |void| **set_texture_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_texture_scale**\ (\ )
 
-Amount to multiply the :ref:`uv<class_Polygon2D_property_uv>` coordinates when using :ref:`texture<class_Polygon2D_property_texture>`. Larger values make the texture smaller, and vice versa.
+使用 :ref:`texture<class_Polygon2D_property_texture>` 時乘以 :ref:`uv<class_Polygon2D_property_uv>` 座標的量。值越大，紋理越小，反之亦然。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Amount to multiply the :ref:`uv<class_Polygon2D_property_uv>` coordinates when u
 - |void| **set_uv**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_uv**\ (\ )
 
-Texture coordinates for each vertex of the polygon. There should be one UV value per polygon vertex. If there are fewer, undefined vertices will use ``Vector2(0, 0)``.
+多邊形每個頂點的紋理座標。每個多邊形頂點應該有一個 UV 值。如果數量少，則未定義的頂點將使用 ``Vector2(0, 0)``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -344,7 +344,7 @@ Texture coordinates for each vertex of the polygon. There should be one UV value
 - |void| **set_vertex_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_vertex_colors**\ (\ )
 
-Color for each vertex. Colors are interpolated between vertices, resulting in smooth gradients. There should be one per polygon vertex. If there are fewer, undefined vertices will use :ref:`color<class_Polygon2D_property_color>`.
+每個頂點的顏色。顏色在頂點之間插值，從而產生平滑的漸變。每個多邊形頂點應該有一個。如果數量較少，則未定義的頂點將使用 :ref:`color<class_Polygon2D_property_color>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 

@@ -16,7 +16,7 @@ NoiseTexture2D
 
 使用 :ref:`FastNoiseLite<class_FastNoiseLite>` 或其他庫來填充所需大小的紋理資料。\ **NoiseTexture2D** 還能生成法線貼圖紋理。
 
-該類在內部使用 :ref:`Thread<class_Thread>` 生成紋理資料，因此如果生成過程尚未完成，\ :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` 可能會返回 ``null``\ 。在這種情況下，需要等待紋理生成後再存取圖像和生成的位元組資料：
+該類在內部使用 :ref:`Thread<class_Thread>` 生成紋理資料，因此如果生成過程尚未完成，\ :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` 可能會返回 ``null``\ 。在這種情況下，需要等待紋理生成後再存取影像和生成的位元組資料：
 
 ::
 
@@ -169,7 +169,7 @@ NoiseTexture2D
 - |void| **set_in_3d_space**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_in_3d_space**\ (\ )
 
-決定是否在 3D 空間中計算雜訊圖像。可能會導致對比度降低。
+決定是否在 3D 空間中計算雜訊影像。可能會導致對比度降低。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ NoiseTexture2D
 - |void| **set_normalize**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_normalized**\ (\ )
 
-如果為 ``true``\ ，來自雜訊產生器的雜訊圖像，將被正規化到範圍 ``0.0`` 到 ``1.0``\ 。
+如果為 ``true``\ ，來自雜訊產生器的雜訊影像，將被正規化到範圍 ``0.0`` 到 ``1.0``\ 。
 
 關閉正規化會影響對比度，並允許生成非重複的可平鋪雜訊紋理。
 

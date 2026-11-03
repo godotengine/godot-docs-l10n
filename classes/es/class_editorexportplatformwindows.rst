@@ -124,7 +124,7 @@ Descripciones de Propiedades
 
 :ref:`String<class_String>` **application/company_name** :ref:`🔗<class_EditorExportPlatformWindows_property_application/company_name>`
 
-Compañía que produjo la aplicación. Requerido. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Empresa que produjo la aplicación. Requerido. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Archivo de icono del envoltorio de la consola. Si se deja vacío, se recurrirá 
 
 :ref:`String<class_String>` **application/copyright** :ref:`🔗<class_EditorExportPlatformWindows_property_application/copyright>`
 
-Aviso de copyright para el paquete visible para el usuario. Opcional. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Aviso de derechos de autor para el paquete visible para el usuario. Opcional. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 

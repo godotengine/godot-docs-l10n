@@ -16,9 +16,9 @@ InputEventWithModifiers
 說明
 ----
 
-Stores information about mouse, keyboard, and touch gesture input events. This includes information about which modifier keys are pressed, such as :kbd:`Shift` or :kbd:`Alt`. See :ref:`Node._input()<class_Node_private_method__input>`.
+儲存滑鼠、鍵盤、觸摸手勢等輸入事件的相關資訊。包括按下了哪些修飾鍵等資訊，修飾鍵包括 :kbd:`Shift`\ 、\ :kbd:`Alt` 等。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
 
-\ **Note:** Modifier keys are considered modifiers only when used in combination with another key. As a result, their corresponding member variables, such as :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>`, will return ``false`` if the key is pressed on its own.
+\ **注意：**\ 修飾鍵只有在與其他鍵同時按下時才會被認為是修飾鍵。因此，單獨按下修飾鍵時，對應的 :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>` 等成員變數會回傳 ``false``\ 。
 
 .. rst-class:: classref-introduction-group
 

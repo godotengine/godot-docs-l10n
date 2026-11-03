@@ -7,16 +7,16 @@ ResourceImporterImageFont
 
 **繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports a bitmap font where all glyphs have the same width and height.
+匯入點陣圖字型，所有字形使用的都是相同的寬高。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This image-based workflow can be easier to use than :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>`, but it requires all glyphs to have the same width and height, glyph advances and drawing offsets can be customized. This makes **ResourceImporterImageFont** most suited to fixed-width fonts.
+這種基於影像的工作流程比 :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>` 更易於使用，但它要求所有字形具有相同的寬度和高度，字形前進和繪製偏移可以自訂。這使得 **ResourceImporterImageFont** 最適合固定寬度的字型。
 
-See also :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`.
+另見 :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -72,7 +72,7 @@ See also :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`.
 
 :ref:`int<class_int>` **ascent** = ``0`` :ref:`🔗<class_ResourceImporterImageFont_property_ascent>`
 
-Font ascent (number of pixels above the baseline). If set to ``0``, half of the character height is used.
+字型的上高（基線上方的像素數）。如果設為 ``0`` 則使用字元高度的一半。
 
 .. rst-class:: classref-item-separator
 
@@ -96,13 +96,13 @@ Font ascent (number of pixels above the baseline). If set to ``0``, half of the 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **character_ranges** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_character_ranges>`
 
-The character ranges to import from the font image. This is an array that maps each position on the image (in tile coordinates, not pixels). The font atlas is traversed from left to right and top to bottom. Characters can be specified with decimal numbers (126), hexadecimal numbers (``0x007e`` or ``U+007e``), or between single quotes (``'~'``). Ranges can be specified with a hyphen between characters.
+從字型影像匯入的字元範圍。這是一個陣列，能夠對影像上的每一個位置做映射（使用圖塊座標，而非像素座標）。字型圖集是從左到右、從上到下遍歷的。可以使用十進位數字（126）、十六進位數字（\ ``0x007e`` 或 ``U+007e``\ ）、單引號（\ ``'~'``\ ）來指定字元。在字元之間加上連字元指定的就是一個範圍。
 
-For example, ``0-127`` represents the full ASCII range. It can also be written as ``0x0000-0x007f`` (or ``U+0000-U+007f``). As another example, ``' '-'~'`` is equivalent to ``32-126`` and represents the range of printable (visible) ASCII characters.
+例如 ``0-127`` 表示的是完整的 ASCII 範圍。這個範圍也可以寫作 ``0x0000-0x007f``\ （或者 ``U+0000-U+007f``\ ）。再比如，\ ``' '-'~'`` 等價於 ``32-126``\ ，表示的是可輸出（可見）ASCII 字元的範圍。
 
-For any range, the character advance and offset can be customized by appending three space-separated integer values (additional advance, x offset, y offset) to the end. For example ``'a'-'b' 4 5 2`` sets the advance to ``char_width + 4`` and offset to ``Vector2(5, 2)`` for both `a` and `b` characters.
+指定範圍時如果在後面加上三個用空白分隔的整數值，就可以自訂字元的前進量和偏移（額外前進量、X 偏移量、Y 偏移量）。例如 ``'a'-'b' 4 5 2`` 就是將 `a` 和 `b` 這兩個字元的前進量設為 ``char_width + 4`` 並將偏移量設為 ``Vector2(5, 2)``\ 。
 
-\ **Note:** The overall number of characters must not exceed the number of :ref:`columns<class_ResourceImporterImageFont_property_columns>` multiplied by :ref:`rows<class_ResourceImporterImageFont_property_rows>`. Otherwise, the font will fail to import.
+\ **注意：**\ 總字元數必須不超過 :ref:`columns<class_ResourceImporterImageFont_property_columns>` 與 :ref:`rows<class_ResourceImporterImageFont_property_rows>` 的乘積。否則字型將無法匯入。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -116,7 +116,7 @@ For any range, the character advance and offset can be customized by appending t
 
 :ref:`int<class_int>` **columns** = ``1`` :ref:`🔗<class_ResourceImporterImageFont_property_columns>`
 
-精靈表中的列數。
+字型影像中的列數。另見 :ref:`rows<class_ResourceImporterImageFont_property_rows>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ For any range, the character advance and offset can be customized by appending t
 
 :ref:`int<class_int>` **descent** = ``0`` :ref:`🔗<class_ResourceImporterImageFont_property_descent>`
 
-Font descent (number of pixels below the baseline). If set to ``0``, half of the character height is used.
+字型的下深（基線下方的像素數）。如果設為 ``0`` 則使用字元高度的一半。
 
 .. rst-class:: classref-item-separator
 
@@ -176,9 +176,9 @@ Font descent (number of pixels below the baseline). If set to ``0``, half of the
 
 :ref:`PackedStringArray<class_PackedStringArray>` **kerning_pairs** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_kerning_pairs>`
 
-Kerning pairs for the font. Kerning pair adjust the spacing between two characters.
+字型中的字偶清單。字偶的作用是調整特定的兩個字元的間距。
 
-Each string consist of three space separated values: "from" string, "to" string and integer offset. Each combination form the two string for a kerning pair, e.g, ``ab cd -3`` will create kerning pairs ``ac``, ``ad``, ``bc``, and ``bd`` with offset ``-3``. ``\uXXXX`` escape sequences can be used to add Unicode characters.
+每個字串都是由空白分隔的三個值：“from”字串、“to”字串、整數偏移量。兩個字串中的字元兩兩組合成字偶，例如 ``ab cd -3`` 會建立字偶 ``ac``\ 、\ ``ad``\ 、\ ``bc``\ 、\ ``bd``\ ，這些字偶的偏移量都是 ``-3``\ 。可以使用跳脫序列 ``\uXXXX`` 新增 Unicode 字元。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -204,7 +204,7 @@ Each string consist of three space separated values: "from" string, "to" string 
 
 :ref:`int<class_int>` **scaling_mode** = ``2`` :ref:`🔗<class_ResourceImporterImageFont_property_scaling_mode>`
 
-Font scaling mode.
+字型縮放模式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -432,7 +432,7 @@ Gets the action name from its index.
 
 :ref:`int<class_int>` **get_current_action**\ (\ ) :ref:`🔗<class_UndoRedo_method_get_current_action>`
 
-Gets the index of the current action.
+Récupère l'index de l'action actuelle.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ Gets the index of the current action.
 
 :ref:`String<class_String>` **get_current_action_name**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_current_action_name>`
 
-Gets the name of the current action, equivalent to ``get_action_name(get_current_action())``.
+Récupère le nom de l'action actuelle, équivalent à ``get_action_name(get_current_action())``.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Renvoie ``true`` si l'**UndoRedo** engage actuellement l'action, c'est-à-dire e
 
 :ref:`bool<class_bool>` **redo**\ (\ ) :ref:`🔗<class_UndoRedo_method_redo>`
 
-Redo the last action. Returns ``false`` if there was no action to redo.
+Refaire la dernière action. Renvoie ``false`` s'il n'y avait pas d'action à refaire.
 
 .. rst-class:: classref-item-separator
 

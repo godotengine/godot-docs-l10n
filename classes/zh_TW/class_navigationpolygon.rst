@@ -16,9 +16,9 @@ NavigationPolygon
 說明
 ----
 
-A navigation mesh can be created either by baking it with the help of the :ref:`NavigationServer2D<class_NavigationServer2D>`, or by adding vertices and convex polygon indices arrays manually.
+導覽網格可以通過在 :ref:`NavigationServer2D<class_NavigationServer2D>` 的協助下烘焙它來建立，也可以通過手動新增頂點和凸多邊形索引陣列來建立。
 
-To bake a navigation mesh at least one outline needs to be added that defines the outer bounds of the baked area.
+要烘焙導覽網格，至少需要新增一個輪廓來定義烘焙區域的外部邊界。
 
 
 .. tabs::
@@ -41,7 +41,7 @@ To bake a navigation mesh at least one outline needs to be added that defines th
 
 
 
-Adding vertices and polygon indices manually.
+手動新增頂點和多邊形索引。
 
 
 .. tabs::
@@ -73,7 +73,7 @@ Adding vertices and polygon indices manually.
 
 - :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
 
-- `Navigation Polygon 2D Demo <https://godotengine.org/asset-library/asset/2722>`__
+- `2D 導航多邊形演示 <https://godotengine.org/asset-library/asset/2722>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -172,7 +172,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationPolygon_SamplePartitionT
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_CONVEX_PARTITION** = ``0``
 
-Convex partitioning that results in a navigation mesh with convex polygons.
+凸面剖分，生成具有凸多邊形的導覽網格。
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_TRIANGULATE:
 
@@ -180,7 +180,7 @@ Convex partitioning that results in a navigation mesh with convex polygons.
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_TRIANGULATE** = ``1``
 
-Triangulation partitioning that results in a navigation mesh with triangle polygons.
+三角剖分，生成由三角狀多邊形構成的導覽網格。
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_MAX:
 
@@ -256,7 +256,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationPolygon_SourceGeometryMod
 
 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-以遞迴方式掃描組中的節點及其子節點以獲取幾何圖形。該組由 :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>` 指定。
+以遞迴方式掃描組中的節點及其子節點以取得幾何圖形。該組由 :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>` 指定。
 
 .. _class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT:
 
@@ -294,9 +294,9 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationPolygon_SourceGeometryMod
 - |void| **set_agent_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_radius**\ (\ )
 
-The distance to erode/shrink the walkable surface when baking the navigation mesh.
+在烘焙導覽網格時，用於侵蝕/縮小可行走表面的距離。
 
-\ **Note:** The radius must be equal or higher than ``0.0``. If the radius is ``0.0``, it won't be possible to fix invalid outline overlaps and other precision errors during the baking process. As a result, some obstacles may be excluded incorrectly from the final navigation mesh, or may delete the navigation mesh's polygons.
+\ **注意：**\ 半徑必須大於等於 ``0.0``\ 。如果半徑為\ ``0.0``\ ，則無法在烘焙過程中修復無效的輪廓重疊和其他精度錯誤。因此，某些障礙物可能會被錯誤地排除在最終導覽網格之外，也有可能會刪除導覽網格的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ The distance to erode/shrink the walkable surface when baking the navigation mes
 - |void| **set_baking_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_baking_rect**\ (\ )
 
-If the baking :ref:`Rect2<class_Rect2>` has an area the navigation mesh baking will be restricted to its enclosing area.
+如果烘焙的 :ref:`Rect2<class_Rect2>` 存在面積，則導覽網格烘焙將被限制在其封閉區域內。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ If the baking :ref:`Rect2<class_Rect2>` has an area the navigation mesh baking w
 - |void| **set_baking_rect_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_baking_rect_offset**\ (\ )
 
-The position offset applied to the :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` :ref:`Rect2<class_Rect2>`.
+套用至 :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` :ref:`Rect2<class_Rect2>` 的位置偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -347,9 +347,9 @@ The position offset applied to the :ref:`baking_rect<class_NavigationPolygon_pro
 - |void| **set_border_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_border_size**\ (\ )
 
-The size of the non-navigable border around the bake bounding area defined by the :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` :ref:`Rect2<class_Rect2>`.
+由 :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` :ref:`Rect2<class_Rect2>` 定義的烘焙邊界區域周圍的不可導航邊框的大小。
 
-In conjunction with the :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by :ref:`agent_radius<class_NavigationPolygon_property_agent_radius>`.
+與 :ref:`baking_rect<class_NavigationPolygon_property_baking_rect>` 結合使用，邊框大小可用於烘焙圖塊對齊的導覽網格，而圖塊邊緣不會因 :ref:`agent_radius<class_NavigationPolygon_property_agent_radius>` 而縮小。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ In conjunction with the :ref:`baking_rect<class_NavigationPolygon_property_bakin
 - |void| **set_parsed_geometry_type**\ (\ value\: :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>`\ )
 - :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **get_parsed_geometry_type**\ (\ )
 
-Determines which type of nodes will be parsed as geometry.
+決定哪種型別的節點可解析為幾何圖形。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Determines which type of nodes will be parsed as geometry.
 - |void| **set_sample_partition_type**\ (\ value\: :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>`\ )
 - :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **get_sample_partition_type**\ (\ )
 
-Partitioning algorithm for creating the navigation mesh polys.
+建立導覽網格多邊形單元的分割算法。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 - |void| **set_source_geometry_mode**\ (\ value\: :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>`\ )
 - :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **get_source_geometry_mode**\ (\ )
 
-The source of the geometry used when baking.
+烘焙時使用的幾何體來源。
 
 .. rst-class:: classref-section-separator
 
@@ -484,7 +484,7 @@ The source of the geometry used when baking.
 
 |void| **add_outline_at_index**\ (\ outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationPolygon_method_add_outline_at_index>`
 
-將包含輪廓頂點的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，追加到包含所有輪廓的內部陣列。必須調用 :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` 才能將該陣列轉換為引擎將使用的多邊形。
+將一個包含輪廓頂點的 :ref:`PackedVector2Array<class_PackedVector2Array>` 新增到包含固定位置處的所有輪廓的內部陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ The source of the geometry used when baking.
 
 :ref:`NavigationMesh<class_NavigationMesh>` **get_navigation_mesh**\ (\ ) :ref:`🔗<class_NavigationPolygon_method_get_navigation_mesh>`
 
-Returns the :ref:`NavigationMesh<class_NavigationMesh>` resulting from this navigation polygon. This navigation mesh can be used to update the navigation mesh of a region with the :ref:`NavigationServer3D.region_set_navigation_mesh()<class_NavigationServer3D_method_region_set_navigation_mesh>` API directly.
+回傳由該導航多邊形產生的 :ref:`NavigationMesh<class_NavigationMesh>`\ 。該導覽網格可用於使用 :ref:`NavigationServer3D.region_set_navigation_mesh()<class_NavigationServer3D_method_region_set_navigation_mesh>` API 直接更新區塊的導覽網格。
 
 .. rst-class:: classref-item-separator
 
@@ -630,7 +630,7 @@ Returns the :ref:`NavigationMesh<class_NavigationMesh>` resulting from this navi
 
 **已棄用：** Use :ref:`NavigationServer2D.parse_source_geometry_data()<class_NavigationServer2D_method_parse_source_geometry_data>` and :ref:`NavigationServer2D.bake_from_source_geometry_data()<class_NavigationServer2D_method_bake_from_source_geometry_data>` instead.
 
-Creates polygons from the outlines added in the editor or by script.
+從編輯器中新增的輪廓或通過腳本建立多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ Creates polygons from the outlines added in the editor or by script.
 
 |void| **set_parsed_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationPolygon_method_set_parsed_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

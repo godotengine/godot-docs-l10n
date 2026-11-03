@@ -14,17 +14,17 @@ Una ventana modal utilizada para mostrar una lista de opciones.
 Descripción
 ----------------------
 
-**PopupMenu** is a modal window used to display a list of options. Useful for toolbars and context menus.
+**PopupMenu** es una ventana modal utilizada para mostrar una lista de opciones. Útil para barras de harramientas y menús contextuales.
 
-The size of a **PopupMenu** can be limited by using :ref:`Window.max_size<class_Window_property_max_size>`. If the height of the list of items is larger than the maximum height of the **PopupMenu**, a :ref:`ScrollContainer<class_ScrollContainer>` within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to ``0``, the **PopupMenu** height will be limited by its parent rect.
+El tamaño de un **PopupMenu** puede ser limitado utilizando :ref:`Window.max_size<class_Window_property_max_size>`. Si la altura de la lista de items es mayor que la maxima altura de **PopupMenu**, un :ref:`ScrollContainer<class_ScrollContainer>` dentro del popup va a permitir al usuario desplazarse por el contenido. Si no se configura un tamaño maximo, o si esta seteado a ``0``, la altura de el **PopupMenu** será limitada por su padre rect.
 
-All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the last item, ``-2`` to select the second-to-last item, and so on.
+Todos los métodos ``set_*`` permiten índices negativos, ej: ``-1`` para acceder al último ítem, ``-2`` para seleccionar el anteúltimo ítem, y así sucesivamente.
 
-\ **Incremental search:** Like :ref:`ItemList<class_ItemList>` and :ref:`Tree<class_Tree>`, **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **Búsqueda incremental:** Como :ref:`ItemList<class_ItemList>` y :ref:`Tree<class_Tree>`, **PopupMenu** soporta búsqueda dentro de la lista mientras el control tenga el foco. Presiona una tecla que coincida con la primera letra del nombre de un ítem para seleccionar el primer ítem que empiece con la letra dada. Luego de ese punto, hay dos formas para hacer una búsqueda incremental: 1) Presiona la misma tecla nuevamente antes de que termine el tiempo de espera para seleccionar el siguiente ítem que comience con la misma letra. 2) Presiona las teclas que coincidan con el resto de la palabra antes de finalizar el tiempo de espera para seleccionar directamente el ítem en cuestion. Ambas de estas acciones se reiniciarán al principio de la lista si el tiempo de espera finalizó desde que la última pulsación fue registrada. Puedes ajustar la duración del tiempo de espera cambiando :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
 
-\ **Note:** **PopupMenu** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** **PopupMenu** es invisible de forma predeterminada. Para hacerlo visible, llama desde el nodo a uno de los métodos ``popup_*`` de :ref:`Window<class_Window>`, como :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
-\ **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of :ref:`int<class_int>`. This has a range of ``-2^32`` to ``2^32 - 1``, i.e. ``-2147483648`` to ``2147483647``.
+\ **Nota:** Los valores de ID usados para ítems están limitados a 32 bits, no 64 bits completos del :ref:`int<class_int>`. Esto tiene un rango desde ``-2^32`` hasta ``2^32 - 1``, esto es desde ``-2147483648`` hasta ``2147483647``.
 
 .. rst-class:: classref-reftable-group
 
@@ -677,7 +677,7 @@ Sets the minimum number of items required for the search bar to be visible. :ref
 - |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+Si es ``true``, reduce el **PopupMenu** a su altura mínima al mostrarse.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
 - |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
+Si es ``true``, reduce el **PopupMenu** a su anchura mínima al mostrarse.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1109,7 @@ Devuelve un :ref:`Color<class_Color>` que modula el icono del elemento en el ``i
 
 :ref:`int<class_int>` **get_item_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_id>`
 
-Returns the ID of the item at the given ``index``.
+Devuelve el ID del elemento en el ``index`` especificado.
 
 .. rst-class:: classref-item-separator
 

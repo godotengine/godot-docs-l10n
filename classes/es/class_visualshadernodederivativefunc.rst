@@ -225,7 +225,7 @@ Un tipo de operando y valor de retorno.
 - |void| **set_precision**\ (\ value\: :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>`\ )
 - :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **get_precision**\ (\ )
 
-Establece el nivel de precisión que se utilizará para la función derivada. Cuando se utiliza el renderizador de compatibilidad, este ajuste no tiene ningún efecto.
+Establece el nivel de precisión que se utilizará para la función derivada. Cuando se utiliza el renderizador Compatibility, este ajuste no tiene ningún efecto.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,14 +7,14 @@ OpenXRFrameSynthesisExtension
 
 **繼承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-The OpenXR Frame synthesis extension allows for advanced reprojection at low(er) framerates.
+OpenXR 影格合成擴充允許在較低影格率下進行進階重投影。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This class implements the `OpenXR Frame synthesis extension <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__. When enabled in the project settings and supported by the XR runtime in use, frame synthesis uses advanced reprojection techniques to inject additional frames so that your XR experience hits the full frame rate of the device.
+該類實作了 `OpenXR 影格合成擴充 <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__\ 。如果在專案設定中啟用，並且所使用的 XR 執行時也支援時，則影格合成技術會使用先進的重投影技術來插入額外的影格，從而使你的 XR 體驗達到裝置的完整影格率。
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ This class implements the `OpenXR Frame synthesis extension <https://registry.kh
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Enable frame synthesis. When ``true`` motion vector and depth data is provided to the XR runtime.
+啟用影格合成功能。為 ``true`` 時，運動矢量和深度資料將提供給 XR 執行時。
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ Enable frame synthesis. When ``true`` motion vector and depth data is provided t
 - |void| **set_relax_frame_interval**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_relax_frame_interval**\ (\ )
 
-If ``true`` this informs the XR runtime we will be providing frames at a greatly reduced rate. Enable this when you expect your application to run at low framerates and wish to inject multiple reprojected frames.
+如果為 ``true``\ ，則通知 XR 執行時我們將以大大降低的影格率提供影格資料。如果你預計應用程式將以較低的影格率執行，並且希望注入多個重投影影格時，請啟用該選項。
 
 .. rst-class:: classref-section-separator
 
@@ -98,7 +98,7 @@ If ``true`` this informs the XR runtime we will be providing frames at a greatly
 
 :ref:`bool<class_bool>` **is_available**\ (\ ) |const| :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_is_available>`
 
-Returns ``true`` if frame synthesis is enabled in the project settings and the current XR runtime supports frame synthesis. The value returned will only be valid once OpenXR has been initialized.
+如果專案設定中啟用了影格合成功能，並且目前的 XR 執行時支援影格合成，則回傳 ``true``\ 。回傳的值僅在 OpenXR 初始化後才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Returns ``true`` if frame synthesis is enabled in the project settings and the c
 
 |void| **skip_next_frame**\ (\ ) :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_skip_next_frame>`
 
-Queues the next frame to be skipped when supplying motion vector and depth data. Call this after teleporting your player or a similar action has moved the player to prevent incorrect reprojection results due to this movement.
+在提供運動矢量和深度資料時，將下一影格加入佇列以跳過。在玩家瞬移或執行類似操作導致玩家位置發生變化後呼叫該函式，以防止由於該移動導致重投影結果不正確。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

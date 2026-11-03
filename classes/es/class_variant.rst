@@ -12,7 +12,7 @@ El tipo de dato más importante de Godot.
 Descripción
 ----------------------
 
-En programación de computadoras, una clase Variant (variante en español) es una clase que está diseñada para almacenar datos de cualquier tipo. A los lenguajes de programación dinámicos como PHP, Lua, JavaScript y GDScript les gusta usarlos para almacenar datos de variables en el backend. Gracias a las variantes, las variables son capaces de cambiar el tipo de valor que contienen libremente.
+En programación, una clase Variant (variante en español) es una clase que está diseñada para almacenar datos de cualquier tipo. A los lenguajes de programación dinámicos como PHP, Lua, JavaScript y GDScript les gusta usarlos para almacenar datos de variables en el backend. Gracias a las variantes, las variables son capaces de cambiar el tipo de valor que contienen libremente.
 
 
 .. tabs::

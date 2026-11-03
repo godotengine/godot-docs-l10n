@@ -73,7 +73,7 @@ enum **CacheMode**: :ref:`🔗<enum_ResourceFormatLoader_CacheMode>`
 
 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` **CACHE_MODE_IGNORE** = ``0``
 
-Neither the main resource (the one requested to be loaded) nor any of its subresources are retrieved from cache nor stored into it. Dependencies (external resources) are loaded with :ref:`CACHE_MODE_REUSE<class_ResourceFormatLoader_constant_CACHE_MODE_REUSE>`.
+主資源（請求載入的資源）及所有子資源都既不會從快取中檢索也不會儲存到快取中。相依項目（外部資源）使用 :ref:`CACHE_MODE_REUSE<class_ResourceFormatLoader_constant_CACHE_MODE_REUSE>` 載入。
 
 .. _class_ResourceFormatLoader_constant_CACHE_MODE_REUSE:
 
@@ -81,7 +81,7 @@ Neither the main resource (the one requested to be loaded) nor any of its subres
 
 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` **CACHE_MODE_REUSE** = ``1``
 
-The main resource (the one requested to be loaded), its subresources, and its dependencies (external resources) are retrieved from cache if present, instead of loaded. Those not cached are loaded and then stored into the cache. The same rules are propagated recursively down the tree of dependencies (external resources).
+主資源（請求載入的資源）、子資源、相依項目（外部資源）如果在快取中存在，則將從快取中檢索，不進行載入。如果未快取則將進行載入，然後儲存到快取中。相同的規則將沿著相依性關係樹（外部資源）遞歸傳播。
 
 .. _class_ResourceFormatLoader_constant_CACHE_MODE_REPLACE:
 
@@ -89,7 +89,7 @@ The main resource (the one requested to be loaded), its subresources, and its de
 
 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` **CACHE_MODE_REPLACE** = ``2``
 
-Like :ref:`CACHE_MODE_REUSE<class_ResourceFormatLoader_constant_CACHE_MODE_REUSE>`, but the cache is checked for the main resource (the one requested to be loaded) as well as for each of its subresources. Those already in the cache, as long as the loaded and cached types match, have their data refreshed from storage into the already existing instances. Otherwise, they are recreated as completely new objects.
+與 :ref:`CACHE_MODE_REUSE<class_ResourceFormatLoader_constant_CACHE_MODE_REUSE>` 類似，但會檢查主資源（請求載入的資源）及每個子資源的快取。如果在快取中存在，只要載入的型別和快取的型別匹配，就會使用儲存的資料刷新已經存在的實例。否則會重新作為全新的物件建立。
 
 .. _class_ResourceFormatLoader_constant_CACHE_MODE_IGNORE_DEEP:
 
@@ -97,7 +97,7 @@ Like :ref:`CACHE_MODE_REUSE<class_ResourceFormatLoader_constant_CACHE_MODE_REUSE
 
 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` **CACHE_MODE_IGNORE_DEEP** = ``3``
 
-Like :ref:`CACHE_MODE_IGNORE<class_ResourceFormatLoader_constant_CACHE_MODE_IGNORE>`, but propagated recursively down the tree of dependencies (external resources).
+與 :ref:`CACHE_MODE_IGNORE<class_ResourceFormatLoader_constant_CACHE_MODE_IGNORE>` 類似，但沿相依性關係樹（外部資源）遞歸傳播。
 
 .. _class_ResourceFormatLoader_constant_CACHE_MODE_REPLACE_DEEP:
 
@@ -105,7 +105,7 @@ Like :ref:`CACHE_MODE_IGNORE<class_ResourceFormatLoader_constant_CACHE_MODE_IGNO
 
 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` **CACHE_MODE_REPLACE_DEEP** = ``4``
 
-Like :ref:`CACHE_MODE_REPLACE<class_ResourceFormatLoader_constant_CACHE_MODE_REPLACE>`, but propagated recursively down the tree of dependencies (external resources).
+與 :ref:`CACHE_MODE_REPLACE<class_ResourceFormatLoader_constant_CACHE_MODE_REPLACE>` 類似，但沿相依性關係樹（外部資源）遞歸傳播。
 
 .. rst-class:: classref-section-separator
 
@@ -150,13 +150,13 @@ Like :ref:`CACHE_MODE_REPLACE<class_ResourceFormatLoader_constant_CACHE_MODE_REP
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_dependencies**\ (\ path\: :ref:`String<class_String>`, add_types\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_dependencies>`
 
-Should return the dependencies for the resource at the given ``path``. Each dependency is a string composed of one to three sections separated by ``::``, with trailing empty sections omitted:
+應當返迴路徑為 ``path`` 的資源的相依項目。每個相依項目都是由一至三部分構成的字串，使用 ``::`` 分隔，省略末尾為空的部分：
 
-- The first section should contain the UID if the resource has one. Otherwise, it should contain the file path.
+- 如果資源有 UID 則第一部分包含的應當是 UID。否則包含的應當是檔案的路徑。
 
-- The second section should contain the class name of the dependency if ``add_types`` is ``true``. Otherwise, it should be empty.
+- 如果 ``add_types`` 為 ``true``\ ，則第二部分包含的應當是相依項目的類別名稱。否則應當為空。
 
-- The third section should contain the fallback path if the resource has a UID. Otherwise, it should be empty.
+- 如果資源有 UID 則第三部分包含的應當是回退路徑。否則應當為空。
 
 ::
 
@@ -168,7 +168,7 @@ Should return the dependencies for the resource at the given ``path``. Each depe
             "res://script.gd",
         ]
 
-\ **Note:** Custom resource types defined by scripts aren't known by the :ref:`ClassDB<class_ClassDB>`, so ``"Resource"`` can be used for the class name.
+\ **注意：**\ :ref:`ClassDB<class_ClassDB>` 並不知道由腳本定義的自訂資源型別，因此類別名稱可以使用 ``"Resource"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Should return the dependencies for the resource at the given ``path``. Each depe
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_recognized_extensions>`
 
-獲取該載入器能夠讀取的檔的副檔名列表。
+取得該載入器能夠讀取的檔的副檔名列表。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Should return the dependencies for the resource at the given ``path``. Each depe
 
 :ref:`String<class_String>` **_get_resource_type**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_resource_type>`
 
-獲取與給定路徑相關的資源的類別名稱。如果載入器不能處理它，它應該返回 ``""``\ 。
+取得與給定路徑相關的資源的類別名稱。如果載入器不能處理它，它應該返回 ``""``\ 。
 
 \ **注意：**\ :ref:`ClassDB<class_ClassDB>` 不知道腳本定義的自訂資源型別，因此你可能只為它們返回 ``"Resource"``\ 。
 
@@ -218,7 +218,7 @@ Should return the dependencies for the resource at the given ``path``. Each depe
 
 :ref:`int<class_int>` **_get_resource_uid**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_resource_uid>`
 
-Should return the unique ID for the resource associated with the given path. If this method is not overridden, a ``.uid`` file is generated along with the resource file, containing the unique ID.
+應回傳與給定路徑關聯的資源的唯一 ID。如果未覆蓋該方法，則會在資源檔案旁生成一個 ``.uid`` 檔案，該檔案中包含唯一 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Should return the unique ID for the resource associated with the given path. If 
 
 當引擎發現該載入程式相容時載入資源。如果載入的資源是匯入的結果，\ ``original_path`` 將以原始檔案為目標。成功時返回一個 :ref:`Resource<class_Resource>` 物件，失敗時返回一個 :ref:`Error<enum_@GlobalScope_Error>` 常數。
 
-\ ``cache_mode`` 屬性定義載入資源時是否以及如何使用或更新快取。有關詳細信息，請參閱 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>`\ 。
+\ ``cache_mode`` 屬性定義載入資源時是否以及如何使用或更新快取。有關詳細資訊，請參閱 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Should return the unique ID for the resource associated with the given path. If 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_rename_dependencies**\ (\ path\: :ref:`String<class_String>`, renames\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__rename_dependencies>`
 
-如果被實作，將重命名給定資源中的依賴項並保存它。\ ``renames`` 是一個字典 ``{ String => String }``\ ，將舊依賴路徑對應到新路徑。
+如果被實作，將重新命名給定資源中的依賴項並保存它。\ ``renames`` 是一個字典 ``{ String => String }``\ ，將舊依賴路徑對應到新路徑。
 
 成功時返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時返回 :ref:`Error<enum_@GlobalScope_Error>` 常數。
 

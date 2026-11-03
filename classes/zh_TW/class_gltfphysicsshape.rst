@@ -7,14 +7,14 @@ GLTFPhysicsShape
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF physics shape.
+代表 glTF 物理形狀。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_collider`` glTF extensions. This class is an intermediary between the glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
+代表由 ``OMI_physics_shape`` 或 ``OMI_collider`` glTF 擴充定義的物理形狀。這個類是 glTF 資料與 Godot 節點的中介，並且經過了抽象，支援將來新增不同 glTF 物理擴充。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,9 +23,9 @@ Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_coll
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `OMI_physics_shape glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_shape>`__
+- `OMI_physics_shape glTF 擴充 <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_shape>`__
 
-- `OMI_collider glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/Archived/OMI_collider>`__
+- `OMI_collider glTF 擴充 <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/Archived/OMI_collider>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -93,7 +93,7 @@ Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_coll
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The height of the shape, in meters. This is only used when the shape type is ``"capsule"`` or ``"cylinder"``. This value should not be negative, and for ``"capsule"`` it should be at least twice the radius.
+形狀的高度，單位為米。僅在形狀型別為 ``"capsule"`` 或 ``"cylinder"`` 時使用。這個值不能為負數，並且對於 ``"capsule"`` 而言應當至少是半徑的兩倍。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ The height of the shape, in meters. This is only used when the shape type is ``"
 - |void| **set_importer_mesh**\ (\ value\: :ref:`ImporterMesh<class_ImporterMesh>`\ )
 - :ref:`ImporterMesh<class_ImporterMesh>` **get_importer_mesh**\ (\ )
 
-The :ref:`ImporterMesh<class_ImporterMesh>` resource of the shape. This is only used when the shape type is ``"hull"`` (convex hull) or ``"trimesh"`` (concave trimesh).
+形狀的 :ref:`ImporterMesh<class_ImporterMesh>` 資源。僅在形狀型別為 ``"hull"``\ （凸包）和 ``"trimesh"``\ （凹三角網格）時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -127,9 +127,9 @@ The :ref:`ImporterMesh<class_ImporterMesh>` resource of the shape. This is only 
 - |void| **set_is_trigger**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_trigger**\ (\ )
 
-If ``true``, indicates that this shape is a trigger. For Godot, this means that the shape should be a child of an :ref:`Area3D<class_Area3D>` node.
+如果為 ``true``\ ，則表示這個形狀是觸發器。對於 Godot 而言，這意味著該形狀應當是 :ref:`Area3D<class_Area3D>` 節點的子節點。
 
-This is the only variable not used in the :ref:`to_node()<class_GLTFPhysicsShape_method_to_node>` method, it's intended to be used alongside when deciding where to add the generated node as a child.
+這是 :ref:`to_node()<class_GLTFPhysicsShape_method_to_node>` 方法中唯一沒有用到的變數，應該單獨用來確定要將生成的節點新增到哪個節點之下。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ This is the only variable not used in the :ref:`to_node()<class_GLTFPhysicsShape
 - |void| **set_mesh_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mesh_index**\ (\ )
 
-The index of the shape's mesh in the glTF file. This is only used when the shape type is ``"hull"`` (convex hull) or ``"trimesh"`` (concave trimesh).
+形狀網格在 glTF 檔案中的索引。僅在形狀型別為 ``"hull"``\ （凸包）和 ``"trimesh"``\ （凹三角網格）時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ The index of the shape's mesh in the glTF file. This is only used when the shape
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The radius of the shape, in meters. This is only used when the shape type is ``"capsule"``, ``"cylinder"``, or ``"sphere"``. This value should not be negative.
+形狀的半徑，單位為米。僅在形狀型別為 ``"capsule"``\ 、\ ``"cylinder"`` 或 ``"sphere"`` 時使用。這個值不應為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ The radius of the shape, in meters. This is only used when the shape type is ``"
 - |void| **set_shape_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_shape_type**\ (\ )
 
-The type of shape this shape represents. Valid values are ``"box"``, ``"capsule"``, ``"cylinder"``, ``"sphere"``, ``"hull"``, and ``"trimesh"``.
+這個形狀所代表的形狀型別。有效取值有 ``"box"``\ 、\ ``"capsule"``\ 、\ ``"cylinder"``\ 、\ ``"sphere"``\ 、\ ``"hull"``\ 、\ ``"trimesh"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The type of shape this shape represents. Valid values are ``"box"``, ``"capsule"
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-The size of the shape, in meters. This is only used when the shape type is ``"box"``, and it represents the ``"diameter"`` of the box. This value should not be negative.
+形狀的大小，單位為米。僅在碰撞體型別為 ``"box"`` 時使用，代表盒子的 ``"diameter"``\ （直徑）。這個值不應為負數。
 
 .. rst-class:: classref-section-separator
 
@@ -226,7 +226,7 @@ The size of the shape, in meters. This is only used when the shape type is ``"bo
 
 :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>` **from_node**\ (\ shape_node\: :ref:`CollisionShape3D<class_CollisionShape3D>`\ ) |static| :ref:`🔗<class_GLTFPhysicsShape_method_from_node>`
 
-Creates a new GLTFPhysicsShape instance from the given Godot :ref:`CollisionShape3D<class_CollisionShape3D>` node.
+根據給定的 Godot :ref:`CollisionShape3D<class_CollisionShape3D>` 節點新建 GLTFPhysicsShape 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Creates a new GLTFPhysicsShape instance from the given Godot :ref:`CollisionShap
 
 :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>` **from_resource**\ (\ shape_resource\: :ref:`Shape3D<class_Shape3D>`\ ) |static| :ref:`🔗<class_GLTFPhysicsShape_method_from_resource>`
 
-Creates a new GLTFPhysicsShape instance from the given Godot :ref:`Shape3D<class_Shape3D>` resource.
+根據給定的 Godot :ref:`Shape3D<class_Shape3D>` 節點新建 GLTFPhysicsShape 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Creates a new GLTFPhysicsShape instance from the given Godot :ref:`Shape3D<class
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFPhysicsShape_method_to_dictionary>`
 
-Serializes this GLTFPhysicsShape instance into a :ref:`Dictionary<class_Dictionary>` in the format defined by ``OMI_physics_shape``.
+將該 GLTFPhysicsShape 實例序列化為 :ref:`Dictionary<class_Dictionary>`\ ，其格式由 ``OMI_physics_shape`` 定義。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Serializes this GLTFPhysicsShape instance into a :ref:`Dictionary<class_Dictiona
 
 :ref:`Shape3D<class_Shape3D>` **to_resource**\ (\ cache_shapes\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_GLTFPhysicsShape_method_to_resource>`
 
-Converts this GLTFPhysicsShape instance into a Godot :ref:`Shape3D<class_Shape3D>` resource.
+將這個 GLTFPhysicsShape 實例轉換為 Godot :ref:`Shape3D<class_Shape3D>` 節點。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

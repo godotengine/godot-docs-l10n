@@ -10,14 +10,14 @@ InputEventJoypadMotion
 
 **繼承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表遊戲手柄的軸運動（例如搖桿和模擬扳機）。
+代表遊戲控制器的軸運動（例如搖桿和模擬扳機）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-儲存關於搖桿運動的資訊。一個 **InputEventJoypadMotion** 一次代表一個軸。遊戲手柄按鈕見 :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`\ 。
+儲存關於搖桿運動的資訊。一個 **InputEventJoypadMotion** 一次代表一個軸。遊戲控制器按鈕見 :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -60,7 +60,7 @@ InputEventJoypadMotion
 - |void| **set_axis**\ (\ value\: :ref:`JoyAxis<enum_@GlobalScope_JoyAxis>`\ )
 - :ref:`JoyAxis<enum_@GlobalScope_JoyAxis>` **get_axis**\ (\ )
 
-Axis identifier.
+軸標識符。
 
 .. rst-class:: classref-item-separator
 

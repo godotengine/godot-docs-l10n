@@ -9,16 +9,16 @@ RDPipelineShader
 
 **繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Pipeline shader (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+管線著色器（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Wraps a shader resource and allows specialization constants to be applied at pipeline creation time.
+封裝一個著色器資源，並允許在管線建立時應用特化常數。
 
-Used by :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` for ray generation, miss, and hit shaders. The pipeline selects the required shader stage automatically.
+該物件由 :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` 用於光線生成、未命中及命中著色器。管線會自動選擇所需的著色器階段。
 
 .. rst-class:: classref-reftable-group
 
@@ -54,7 +54,7 @@ Used by :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice
 - |void| **set_shader**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_shader**\ (\ )
 
-Shader resource. The required stage is selected by the pipeline.
+著色器資源。管線會自動選擇所需的著色器階段。
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ Shader resource. The required stage is selected by the pipeline.
 - |void| **set_specialization_constants**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] **get_specialization_constants**\ (\ )
 
-Specialization constants applied to the selected shader stage at pipeline creation time.
+在管線建立時，套用至所選著色器階段的特化常數。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

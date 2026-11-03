@@ -65,7 +65,7 @@ CSG 球形形狀。
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-用於算繪球體的材質。
+用於渲染球體的材質。
 
 .. rst-class:: classref-item-separator
 

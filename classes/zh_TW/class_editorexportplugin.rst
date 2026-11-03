@@ -14,9 +14,9 @@ EditorExportPlugin
 說明
 ----
 
-**EditorExportPlugin**\ s are automatically invoked whenever the user exports the project. They can be used to modify scenes and resources during project export based on what :doc:`Feature Tags <../tutorials/export/feature_tags>` are set. For each plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` is called at the beginning of the export process and then :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` is called for each exported file.
+每當使用者匯出專案時，\ **EditorExportPlugin**\ （編輯器匯出外掛）都會被自動呼叫。它們可以根據目前設定的 :doc:`Feature Tags <../tutorials/export/feature_tags>`\ （功能標籤），在匯出專案時用來修改場景和資源。對於每一個外掛，\ :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` 會在匯出過程剛開始時被呼叫，然後 :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` 會為每一個匯出的檔案分別呼叫一次。
 
-Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_EditorPlugin>` and calling its :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` method.
+你可以通過新建一個 :ref:`EditorPlugin<class_EditorPlugin>`\ （編輯器外掛），並呼叫它的 :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` 方法，來注冊一個 **EditorExportPlugin**\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -144,9 +144,9 @@ Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_Edi
 
 :ref:`bool<class_bool>` **_begin_customize_resources**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__begin_customize_resources>`
 
-Return ``true`` if this plugin will customize resources based on the platform and features used.
+如果該外掛將根據所使用的平台和功能自訂資源，則回傳 ``true``\ 。
 
-When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` and :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` will be called and must be implemented.
+啟用後，\ :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` 和 :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` 將被呼叫並且必須被實作。
 
 .. rst-class:: classref-item-separator
 
@@ -158,11 +158,11 @@ When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPl
 
 :ref:`bool<class_bool>` **_begin_customize_scenes**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__begin_customize_scenes>`
 
-Return ``true`` if this plugin will customize scenes based on the platform and features used.
+如果該外掛將根據所使用的平台和功能自訂場景，則回傳 ``true``\ 。
 
-When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will be called and must be implemented.
+啟用後，\ :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` 和 :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` 將被呼叫並且必須被實作。
 
-\ **Note:** :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will only be called for scenes that have been modified since the last export.
+\ **注意：**\ 只會為上一次匯出後發生修改的場景呼叫 :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,13 +174,13 @@ When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPl
 
 :ref:`Resource<class_Resource>` **_customize_resource**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlugin_private_method__customize_resource>`
 
-Customize a resource. If changes are made to it, return the same or a new resource. Otherwise, return ``null``. When a new resource is returned, ``resource`` will be replaced by a copy of the new resource.
+對資源進行自訂。如果進行了修改，請回傳相同的或新的資源，否則請回傳 ``null`` 。如果回傳的是新資源，則會使用新資源的副本替換 ``resource``\ 。
 
-The ``path`` argument is only used when customizing an actual file, otherwise this means that this resource is part of another one and it will be empty.
+\ ``path`` 參數只在自訂實際檔案時使用，否則這個資源是另一個資源的一部分，該參數為空。
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+如果 :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` 回傳 ``true``\ ，則需要實作該方法。
 
-\ **Note:** When customizing any of the following types and returning another resource, the other resource should not be skipped using :ref:`skip()<class_EditorExportPlugin_method_skip>` in :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>`:
+\ **注意：**\ 自訂以下型別並回傳不同資源時，不應在 :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` 中使用 :ref:`skip()<class_EditorExportPlugin_method_skip>` 跳過回傳的資源：
 
 - :ref:`AtlasTexture<class_AtlasTexture>`\ 
 
@@ -204,11 +204,11 @@ Implementing this method is required if :ref:`_begin_customize_resources()<class
 
 :ref:`Node<class_Node>` **_customize_scene**\ (\ scene\: :ref:`Node<class_Node>`, path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlugin_private_method__customize_scene>`
 
-Customize a scene. If changes are made to it, return the same or a new scene. Otherwise, return ``null``. If a new scene is returned, it is up to you to dispose of the old one.
+自訂一個場景。如果對其進行了修改，請回傳同一個場景或者一個全新的場景。如果沒有修改，則回傳 ``null``\ 。如果回傳了一個新場景，你需要自己負責釋放（銷毀）舊的那個場景。
 
-Implementing this method is required if :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` returns ``true``.
+如果 :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` 方法回傳了 ``true``\ ，那麼就必須實作這個方法。
 
-\ **Note:** To change a variable in your scene, use the ``@export`` annotation when declaring it.
+\ **注意：** 如果想修改場景中的某個變數，在聲明它的時候請使用 ``@export`` 注解。
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Implementing this method is required if :ref:`_begin_customize_scenes()<class_Ed
 
 |void| **_end_generate_apple_embedded_project**\ (\ path\: :ref:`String<class_String>`, will_build_archive\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__end_generate_apple_embedded_project>`
 
-This is called after Xcode project generation, but before it is built.
+這會在 Xcode 專案生成之後被呼叫，但在專案實際建置之前。
 
-\ **Note:** Only supported on iOS and visionOS.
+\ **注意：** 僅在 iOS 和 visionOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -282,9 +282,9 @@ This is called after Xcode project generation, but before it is built.
 
 |void| **_export_file**\ (\ path\: :ref:`String<class_String>`, type\: :ref:`String<class_String>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__export_file>`
 
-Virtual method to be overridden by the user. Called for each exported file before :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`. The arguments can be used to identify the file. ``path`` is the path of the file, ``type`` is the :ref:`Resource<class_Resource>` represented by the file (e.g. :ref:`PackedScene<class_PackedScene>`), and ``features`` is the list of features for the export.
+使用者要重寫的虛方法。在 :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` 和 :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` 之前為每個匯出的檔案呼叫。參數可用於識別檔案。\ ``path`` 是檔案的路徑，\ ``type`` 是檔案所代表的 :ref:`Resource<class_Resource>`\ （例如 :ref:`PackedScene<class_PackedScene>`\ ），\ ``features`` 是匯出的特性清單。
 
-Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback will make the file not included in the export.
+在該回呼中呼叫 :ref:`skip()<class_EditorExportPlugin_method_skip>` 將使檔案不包含在匯出中。
 
 .. rst-class:: classref-item-separator
 
@@ -296,9 +296,9 @@ Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_android_dependencies**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_dependencies>`
 
-由使用者重寫的虛擬方法。呼叫此方法是為了檢索此插件提供的Android 依賴項集。每個傳回的Android 依賴項應具有Android 遠端二進位依賴項的格式： ``org.godot.example:my-plugin:0.0.0``\ 
+由使用者重寫的虛擬方法。呼叫此方法是為了檢索此外掛提供的Android 依賴項集。每個傳回的Android 依賴項應具有Android 遠端二進位依賴項的格式： ``org.godot.example:my-plugin:0.0.0``\ 
 
-有關更多信息，請參閱 `有關依賴項的 Android 文件 <https://developer.android.com/build/dependency?agpversion=4.1#dependency-types>`__\ 。
+有關更多資訊，請參閱 `有關依賴項的 Android 文件 <https://developer.android.com/build/dependency?agpversion=4.1#dependency-types>`__\ 。
 
 \ **注意：** 僅在 Android 上受支援，並且需要啟用 :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ 。
 
@@ -312,9 +312,9 @@ Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_android_dependencies_maven_repos**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_dependencies_maven_repos>`
 
-由使用者重寫的虛擬方法。呼叫此方法是為了檢索此插件提供的 Android 依賴項集的 Maven 儲存庫的 URL。
+由使用者重寫的虛擬方法。呼叫此方法是為了檢索此外掛提供的 Android 依賴項集的 Maven 儲存庫的 URL。
 
-有關更多信息，請參閱 `有關依賴管理的 Gradle 檔案 <https://docs.gradle.org/current/userguide/dependency_management.html#sec:maven_repo>`__\ 。
+有關更多資訊，請參閱 `有關依賴管理的 Gradle 檔案 <https://docs.gradle.org/current/userguide/dependency_management.html#sec:maven_repo>`__\ 。
 
 \ **注意：** Google 的 Maven 儲存庫和 Maven Central 儲存庫已預設包含在內。
 
@@ -388,11 +388,11 @@ Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback
 
 :ref:`int<class_int>` **_get_customization_configuration_hash**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_customization_configuration_hash>`
 
-Return a hash based on the configuration passed (for both scenes and resources). This helps keep separate caches for separate export configurations.
+根據傳入的設定（包括場景和資源），回傳一個雜湊值（Hash）。這有助於為不同的匯出設定維護獨立的快取。
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+如果 :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` 回傳了 ``true``\ ，那麼實作這個方法是必須的。
 
-\ **Note:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will not be called when the **EditorExportPlugin** script is modified unless this hash changes too.
+\ **注意：** 除非這個雜湊值也發生改變，否則當 **EditorExportPlugin** 腳本被修改時，\ :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` 和 :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` 將不會被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Implementing this method is required if :ref:`_begin_customize_resources()<class
 
 :ref:`bool<class_bool>` **_get_export_option_visibility**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_export_option_visibility>`
 
-Validates ``option`` and returns the visibility for the specified ``platform``. The default implementation returns ``true`` for all options.
+驗證 ``option`` 並回傳 ``platform`` 平台是否可見。預設實作會為所有選項都回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Validates ``option`` and returns the visibility for the specified ``platform``. 
 
 :ref:`Dictionary<class_Dictionary>` **_get_export_options_overrides**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_export_options_overrides>`
 
-Return a :ref:`Dictionary<class_Dictionary>` of override values for export options, that will be used instead of user-provided values. Overridden options will be hidden from the user interface.
+回傳匯出選項的覆蓋值的 :ref:`Dictionary<class_Dictionary>`\ ，將使用該值代替使用者提供的值。覆蓋的選項將從使用者介面中隱藏。
 
 ::
 
@@ -472,12 +472,12 @@ Return a :ref:`Dictionary<class_Dictionary>` of override values for export optio
 
         func _supports_platform(platform) -> bool:
             if platform is EditorExportPlatformPC:
-                # Run on all desktop platforms including Windows, MacOS and Linux.
+                # 可在所有桌面平台上執行，包括 Windows、MacOS 和 Linux。
                 return true
             return false
 
         func _get_export_options_overrides(platform) -> Dictionary:
-            # Override "Embed PCK" to always be enabled.
+            # 覆蓋“嵌入 PCK”以始終啟用。
             return {
                 "binary_format/embed_pck": true,
             }
@@ -506,7 +506,7 @@ Return a :ref:`Dictionary<class_Dictionary>` of override values for export optio
 
 :ref:`bool<class_bool>` **_should_update_export_options**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__should_update_export_options>`
 
-Return ``true`` if the result of :ref:`_get_export_options()<class_EditorExportPlugin_private_method__get_export_options>` has changed and the export options of the preset corresponding to ``platform`` should be updated.
+如果 :ref:`_get_export_options()<class_EditorExportPlugin_private_method__get_export_options>` 的結果發生了改變，且與 ``platform`` 對應的匯出預設的選項需要更新，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Return ``true`` if the result of :ref:`_get_export_options()<class_EditorExportP
 
 :ref:`bool<class_bool>` **_supports_platform**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__supports_platform>`
 
-Return ``true`` if the plugin supports the given ``platform``.
+如果外掛支援給定的 ``platform``\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -530,11 +530,11 @@ Return ``true`` if the plugin supports the given ``platform``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **_update_android_prebuilt_manifest**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, manifest_data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__update_android_prebuilt_manifest>`
 
-Provide access to the Android prebuilt manifest and allows the plugin to modify it if needed.
+提供對 Android 預建置清單檔案的存取，允許外掛在需要時對其進行修改。
 
-Implementers of this virtual method should take the binary manifest data from ``manifest_data``, copy it, modify it, and then return it with the modifications.
+該虛方法的實現者應該從 ``manifest_data`` 中取得二進位清單資料，對其進行複製、修改等操作，然後回傳修改後的內容。
 
-If no modifications are needed, then an empty :ref:`PackedByteArray<class_PackedByteArray>` should be returned.
+如果不需要修改，則應回傳一個空的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ If no modifications are needed, then an empty :ref:`PackedByteArray<class_Packed
 
 |void| **add_apple_embedded_platform_bundle_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_bundle_file>`
 
-Adds an Apple embedded platform bundle file from the given ``path`` to the exported project.
+將路徑為 ``path`` 的 Apple 嵌入式平台捆綁包檔案新增到匯出的專案中。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Adds an Apple embedded platform bundle file from the given ``path`` to the expor
 
 |void| **add_apple_embedded_platform_cpp_code**\ (\ code\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_cpp_code>`
 
-Adds C++ code to the Apple embedded platform export. The final code is created from the code appended by each active export plugin.
+將 C++ 程式碼新增到 Apple 嵌入式平台匯出中。最終程式碼是根據各個活動匯出外掛附加的程式碼建立的。
 
 .. rst-class:: classref-item-separator
 
@@ -570,11 +570,11 @@ Adds C++ code to the Apple embedded platform export. The final code is created f
 
 |void| **add_apple_embedded_platform_embedded_framework**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_embedded_framework>`
 
-Adds a dynamic library (\*.dylib, \*.framework) to the Linking Phase in the Apple embedded platform's Xcode project and embeds it into the resulting binary.
+將動態庫（\*.dylib、\*.framework）新增到 Apple 嵌入式平台的 Xcode 專案的連結階段，並將其嵌入到生成的二進位檔案中。
 
-\ **Note:** For static libraries (\*.a), this works in the same way as :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>`.
+\ **注意：**\ 對於靜態庫（\*.a），該方法的工作方式與 :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>` 相同。
 
-\ **Note:** This method should not be used for System libraries as they are already present on the device.
+\ **注意：**\ 此方法不該用於系統庫，因為它們已經存在於裝置上。
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ Adds a dynamic library (\*.dylib, \*.framework) to the Linking Phase in the Appl
 
 |void| **add_apple_embedded_platform_framework**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>`
 
-Adds a static library (\*.a) or a dynamic library (\*.dylib, \*.framework) to the Linking Phase to the Apple embedded platform's Xcode project.
+在 Apple 嵌入式平台的 Xcode 專案中連結階段新增靜態庫（\*.a）或動態庫（\*.dylib、\*.framework）。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ Adds a static library (\*.a) or a dynamic library (\*.dylib, \*.framework) to th
 
 |void| **add_apple_embedded_platform_linker_flags**\ (\ flags\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_linker_flags>`
 
-Adds linker flags for the Apple embedded platform export.
+為 Apple 嵌入式平台匯出新增連結器標誌。
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ Adds linker flags for the Apple embedded platform export.
 
 |void| **add_apple_embedded_platform_plist_content**\ (\ plist_content\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_plist_content>`
 
-Adds additional fields to the Apple embedded platform's project Info.plist file.
+向 Apple 嵌入式平台專案的 Info.plist 檔案中新增額外的欄位。
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ Adds additional fields to the Apple embedded platform's project Info.plist file.
 
 |void| **add_apple_embedded_platform_project_static_lib**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>`
 
-Adds a static library from the given ``path`` to the Apple embedded platform project.
+向 Apple 嵌入式平台專案中新增路徑為 ``path`` 的靜態庫。
 
 .. rst-class:: classref-item-separator
 
@@ -634,11 +634,11 @@ Adds a static library from the given ``path`` to the Apple embedded platform pro
 
 |void| **add_file**\ (\ path\: :ref:`String<class_String>`, file\: :ref:`PackedByteArray<class_PackedByteArray>`, remap\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_file>`
 
-Adds a custom file to be exported. ``path`` is the virtual path that can be used to load the file, ``file`` is the binary data of the file.
+新增一個要匯出的自訂檔案。\ ``path`` 是可以用來載入該檔案的虛擬路徑，\ ``file`` 是該檔案的二進位資料。
 
-When called inside :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` and ``remap`` is ``true``, the current file will not be exported, but instead remapped to this custom file. ``remap`` is ignored when called in other places.
+在 :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` 中呼叫時，如果 ``remap`` 為 ``true``\ ，則目前檔案將不會被匯出，而是被重新映射到這個自訂檔案。在其他地方呼叫時會忽略 ``remap``\ 。
 
-\ ``file`` will not be imported, so consider using :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` to remap imported resources.
+\ ``file`` 將不會被匯入，因此請考慮使用 :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` 來重新映射匯入的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ When called inside :ref:`_export_file()<class_EditorExportPlugin_private_method_
 
 **已棄用：** Use :ref:`add_apple_embedded_platform_cpp_code()<class_EditorExportPlugin_method_add_apple_embedded_platform_cpp_code>` instead.
 
-Adds C++ code to the iOS export. The final code is created from the code appended by each active export plugin.
+將 C++ 程式碼新增到 iOS 匯出中。最終的程式碼是根據各個啟用的匯出外掛附加的程式碼建立的。
 
 .. rst-class:: classref-item-separator
 
@@ -680,11 +680,11 @@ Adds C++ code to the iOS export. The final code is created from the code appende
 
 **已棄用：** Use :ref:`add_apple_embedded_platform_embedded_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_embedded_framework>` instead.
 
-Adds a dynamic library (\*.dylib, \*.framework) to Linking Phase in iOS's Xcode project and embeds it into resulting binary.
+將動態庫（\*.dylib、\*.framework）新增到 iOS 的 Xcode 專案的連結階段，並將其嵌入到生成的二進位檔案中。
 
-\ **Note:** For static libraries (\*.a), this works the in same way as :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>`.
+\ **注意：**\ 對於靜態庫（\*.a），該方法的工作方式與 :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>` 相同。
 
-\ **Note:** This method should not be used for System libraries as they are already present on the device.
+\ **注意：**\ 該方法不該用於系統庫，因為它們已經存在於裝置上。
 
 .. rst-class:: classref-item-separator
 
@@ -698,7 +698,7 @@ Adds a dynamic library (\*.dylib, \*.framework) to Linking Phase in iOS's Xcode 
 
 **已棄用：** Use :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>` instead.
 
-Adds a static library (\*.a) or a dynamic library (\*.dylib, \*.framework) to the Linking Phase to the iOS Xcode project.
+在 iOS 的 Xcode 專案中連結階段新增靜態庫（\*.a）或動態庫（\*.dylib、\*.framework）。
 
 .. rst-class:: classref-item-separator
 
@@ -726,7 +726,7 @@ Adds a static library (\*.a) or a dynamic library (\*.dylib, \*.framework) to th
 
 **已棄用：** Use :ref:`add_apple_embedded_platform_plist_content()<class_EditorExportPlugin_method_add_apple_embedded_platform_plist_content>` instead.
 
-Adds additional fields to the iOS project Info.plist file.
+向 iOS 專案的 Info.plist 檔案中新增額外欄位。
 
 .. rst-class:: classref-item-separator
 
@@ -740,7 +740,7 @@ Adds additional fields to the iOS project Info.plist file.
 
 **已棄用：** Use :ref:`add_apple_embedded_platform_project_static_lib()<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>` instead.
 
-Adds a static library from the given ``path`` to the iOS project.
+向 iOS 專案中新增路徑為 ``path`` 的靜態庫。
 
 .. rst-class:: classref-item-separator
 
@@ -782,7 +782,7 @@ Adds a static library from the given ``path`` to the iOS project.
 
 :ref:`EditorExportPlatform<class_EditorExportPlatform>` **get_export_platform**\ (\ ) |const| :ref:`🔗<class_EditorExportPlugin_method_get_export_platform>`
 
-Returns currently used export platform.
+回傳目前使用的匯出平台。
 
 .. rst-class:: classref-item-separator
 
@@ -794,7 +794,7 @@ Returns currently used export platform.
 
 :ref:`EditorExportPreset<class_EditorExportPreset>` **get_export_preset**\ (\ ) |const| :ref:`🔗<class_EditorExportPlugin_method_get_export_preset>`
 
-Returns currently used export preset.
+回傳目前使用的匯出預設。
 
 .. rst-class:: classref-item-separator
 
@@ -818,7 +818,7 @@ Returns currently used export preset.
 
 |void| **skip**\ (\ ) :ref:`🔗<class_EditorExportPlugin_method_skip>`
 
-To be called inside :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>`. Skips the current file, so it's not included in the export.
+在 :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` 中呼叫。跳過目前檔案，因此它不包含在匯出中。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

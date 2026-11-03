@@ -7,16 +7,16 @@ AudioEffectLowPassFilter
 
 **Hérite de :** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a low-pass filter to an audio bus.
+Ajoute un filtre passe-bas à un bus audio.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-A "low-pass" filter attenuates frequencies higher than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows lower frequencies to pass unchanged.
+Supprime les fréquences supérieures à :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` et laisse passer les fréquences inférieures.
 
-This filter can be used to muffle sounds.
+Ce filtre peut être utiliser pour étouffer des sons.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,7 +14,7 @@ VisualShaderNodeFloatConstant
 說明
 ----
 
-Translated to ``float`` in the shader language.
+翻譯為著色器語言中的 ``float``\ 。
 
 .. rst-class:: classref-reftable-group
 

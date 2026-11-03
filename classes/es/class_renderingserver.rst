@@ -3685,11 +3685,11 @@ Objects are displayed semi-transparent with additive blending so you can see whe
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_WIREFRAME** = ``4``
 
-Debug draw draws objects in wireframe.
+El dibujo de depuración dibuja los objetos en wireframe.
 
-\ **Note:** :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Nota:** :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` debe ser llamado antes de cargar cualquier malla para que los wireframes sean visibles cuando se utiliza el renderizador Compatibility.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Nota:** En el renderizador Compatibility, las caras traseras siempre son visibles cuando se utiliza el renderizado en wireframe. En los renderizadores Forward+ y Mobile, los wireframes respetan las propiedades de descarte de caras traseras (backface culling) del material.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -3847,9 +3847,9 @@ Deshabilitar el LOD de la malla. Todas las mallas se dibujan con todo detalle, l
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_OMNI_LIGHTS** = ``20``
 
-Dibuja el clúster :ref:`OmniLight3D<class_OmniLight3D>`. La agrupación por clúster determina dónde se colocan las luces en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para la iluminación.
+Dibuja el clúster de :ref:`OmniLight3D<class_OmniLight3D>`. La agrupación en clústeres determina dónde se colocan las luces en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para calcular la iluminación.
 
-\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS:
 
@@ -3857,9 +3857,9 @@ Dibuja el clúster :ref:`OmniLight3D<class_OmniLight3D>`. La agrupación por cl�
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS** = ``21``
 
-Dibuja el clúster :ref:`SpotLight3D<class_SpotLight3D>`. La agrupación por clúster determina dónde se colocan las luces en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para la iluminación.
+Dibuja el clúster de :ref:`SpotLight3D<class_SpotLight3D>`. La agrupación en clústeres determina dónde se colocan las luces en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para la iluminación.
 
-\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_CLUSTER_DECALS:
 
@@ -3867,9 +3867,9 @@ Dibuja el clúster :ref:`SpotLight3D<class_SpotLight3D>`. La agrupación por cl�
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_DECALS** = ``22``
 
-Dibuja el clúster :ref:`Decal<class_Decal>`. La agrupación por clúster determina dónde se colocan los decals en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para los decals.
+Dibuja el clúster de :ref:`Decal<class_Decal>`. La agrupación en clústeres determina dónde se colocan los decals en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para los decals.
 
-\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES:
 
@@ -3877,9 +3877,9 @@ Dibuja el clúster :ref:`Decal<class_Decal>`. La agrupación por clúster determ
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES** = ``23``
 
-Dibuja el clúster :ref:`ReflectionProbe<class_ReflectionProbe>`. La agrupación por clúster determina dónde se colocan las sondas de reflexión en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para las sondas de reflexión.
+Dibuja el clúster de :ref:`ReflectionProbe<class_ReflectionProbe>`. La agrupación en clústeres determina dónde se colocan las sondas de reflexión en el espacio de la pantalla, lo que permite al motor procesar solo estas porciones de la pantalla para las sondas de reflexión.
 
-\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo es compatible con el método de renderizado Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_OCCLUDERS:
 
@@ -4037,7 +4037,7 @@ Utiliza el mismo muestreo de importancia de alta calidad para procesar el mapa d
 
 Utiliza el algoritmo de filtrado rápido para procesar el mapa de radiancia. En general, esto resulta en una menor calidad, pero en tiempos de ejecución sustancialmente más rápidos. Si necesita una mejor calidad, pero aún necesita actualizar el cielo cada fotograma, considera activar :ref:`ProjectSettings.rendering/reflections/sky_reflections/fast_filter_high_quality<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`.
 
-\ **Nota:** El algoritmo de filtrado rápido está limitado a cubemaps de 256×256, por lo que :ref:`sky_set_radiance_size()<class_RenderingServer_method_sky_set_radiance_size>` debe establecerse en ``256``. De lo contrario, se imprime una advertencia y se ignora el tamaño de radiancia anulado.
+\ **Nota:** El algoritmo de filtrado rápido está limitado a cubemaps de 256×256, por lo que :ref:`sky_set_radiance_size()<class_RenderingServer_method_sky_set_radiance_size>` debe establecerse en ``256``. De lo contrario, se imprime una advertencia y se ignora el tamaño de radiancia sobrescrito.
 
 .. rst-class:: classref-item-separator
 
@@ -4105,7 +4105,7 @@ enum **CompositorEffectCallbackType**: :ref:`🔗<enum_RenderingServer_Composito
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_PRE_OPAQUE** = ``0``
 
-La callback se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
+El callback se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_OPAQUE:
 
@@ -4113,7 +4113,7 @@ La callback se llama antes de nuestro pase de renderizado opaco, pero después d
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_OPAQUE** = ``1``
 
-La callback se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
+El callback se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_SKY:
 
@@ -4121,7 +4121,7 @@ La callback se llama después de nuestro pase de renderizado opaco, pero antes d
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-La callback se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
+El callback se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -4129,7 +4129,7 @@ La callback se llama después de que se renderice nuestro cielo, pero antes de q
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT** = ``3``
 
-La callback se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
+El callback se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT:
 
@@ -4137,7 +4137,7 @@ La callback se llama antes de nuestro pase de renderizado transparente, pero des
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-La callback se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
+El callback se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_ANY:
 
@@ -4191,7 +4191,7 @@ Usar un recurso del cielo para el fondo.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_CANVAS** = ``3``
 
-Usar una capa de canvas especifica como fondo. Esto puede ser útil para instanciar una escena 2D en un mundo 3D.
+Usar una capa de canvas específica como fondo. Esto puede ser útil para instanciar una escena 2D en un mundo 3D.
 
 .. _class_RenderingServer_constant_ENV_BG_KEEP:
 
@@ -8545,7 +8545,7 @@ Cuando :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSe
 
 Cuando :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` es ``gl_compatibility``, el controlador de renderizado es determinado por :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-El controlador de renderizado también es determinado por el argumento de línea de comandos ``--rendering-driver`` que anula esta configuración del proyecto, o por una alternativa automática que se aplica dependiendo del hardware.
+El controlador de renderizado también es determinado por el argumento de línea de comandos ``--rendering-driver`` que sobrescribe esta configuración del proyecto, o por una alternativa automática que se aplica dependiendo del hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -8559,7 +8559,7 @@ El controlador de renderizado también es determinado por el argumento de línea
 
 Devuelve el nombre del método de renderizado actual. Puede ser ``forward_plus``, ``mobile``, o ``gl_compatibility``. Véase también :ref:`get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>`.
 
-El método de renderizado es determinado por :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>`, el argumento de línea de comandos ``--rendering-method`` que anula esta configuración del proyecto, o por una alternativa automática que se aplica dependiendo del hardware.
+El método de renderizado es determinado por :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>`, el argumento de línea de comandos ``--rendering-method`` que sobrescribe esta configuración del proyecto, o por una alternativa automática que se aplica dependiendo del hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -8707,7 +8707,7 @@ Devuelve el nombre del adaptador de vídeo (p. ej., "GeForce GTX 1080/PCIe/SSE2"
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **get_video_adapter_type**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_get_video_adapter_type>`
 
-Devuelve el tipo del adaptador de vídeo. Dado que las tarjetas gráficas dedicadas de una generación dada *normalmente* serán significativamente más rápidas que los gráficos integrados hechos en la misma generación, el tipo de dispositivo puede utilizarse como base para el ajuste automático de la configuración de gráficos. Sin embargo, esto no siempre es cierto, así que asegúrate de proporcionar a los usuarios una forma de anular manualmente la configuración de gráficos.
+Devuelve el tipo del adaptador de vídeo. Dado que las tarjetas gráficas dedicadas de una generación dada *normalmente* serán significativamente más rápidas que los gráficos integrados hechos en la misma generación, el tipo de dispositivo puede utilizarse como base para el ajuste automático de la configuración de gráficos. Sin embargo, esto no siempre es cierto, así que asegúrate de proporcionar a los usuarios una forma de sobrescribir manualmente la configuración de gráficos.
 
 \ **Nota:** Cuando se utiliza el controlador de renderizado OpenGL o cuando se ejecuta en modo sin interfaz gráfica, esta función siempre devuelve :ref:`RenderingDevice.DEVICE_TYPE_OTHER<class_RenderingDevice_constant_DEVICE_TYPE_OTHER>`.
 
@@ -9825,21 +9825,21 @@ See also :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>
 
 |void| **mesh_add_surface_from_arrays**\ (\ mesh\: :ref:`RID<class_RID>`, primitive\: :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>` = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, compress_format\: |bitfield|\[:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\] = 0\ ) :ref:`🔗<class_RenderingServer_method_mesh_add_surface_from_arrays>`
 
-Creates a new surface on the given ``mesh``. :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` will become the surface index for this new surface.
+Crea una nueva superficie sobre el ``mesh`` proporcionado. El valor devuelto por :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` será el índice de superficie de esta nueva superficie.
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+Las superficies se crean para ser renderizadas mediante un ``primitive``, que puede ser cualquiera de los valores definidos en :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+El argumento ``arrays`` es un array de arrays. Cada uno de los elementos :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` contiene un array con parte de los datos de la malla para esta superficie, según se describe en el miembro correspondiente de :ref:`ArrayType<enum_Mesh_ArrayType>`, o ``null`` si no se utiliza en la superficie. Por ejemplo, ``arrays[0]`` es el array de vértices. Este primer subarray de vértices siempre es obligatorio; los demás son opcionales. Añadir un array de índices coloca esta superficie en «modo de índices», donde los arrays de vértices y los demás arrays se usan como fuentes de datos y el array de índices define el orden de los vértices. Todos los subarrays deben tener la misma longitud que el array de vértices (o ser un múltiplo exacto de la longitud del array de vértices, cuando múltiples elementos de un subarray corresponden a un solo vértice) o estar vacíos, excepto :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` si se utiliza.
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+El argumento ``blend_shapes`` es un array de datos de vértices para cada forma de mezcla. Cada elemento es un array con la misma estructura que ``arrays``, pero :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` se establecen si y solo si están establecidos en ``arrays`` y todas las demás entradas son ``null``.
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+El argumento ``lods`` es un diccionario con claves :ref:`float<class_float>` y valores :ref:`PackedInt32Array<class_PackedInt32Array>`. Cada entrada representa un nivel de detalle (LOD) de la superficie. El valor es el array :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` que se utilizará para ese nivel, y la clave es aproximadamente proporcional a la distancia a partir de la cual comienza a utilizarse. Es decir, cuanto mayor sea la clave de un LOD, mayor será la distancia a la cámara necesaria para utilizarlo.
 
-The ``compress_format`` argument is the bitwise OR of, as required: One value of :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_RenderingServer_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+El argumento ``compress_format`` es la combinación mediante OR a nivel de bits de los siguientes valores, según sea necesario: un valor de :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` desplazado a la izquierda por ``ARRAY_FORMAT_CUSTOMn_SHIFT`` para cada canal personalizado en uso, :ref:`ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_RenderingServer_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-See :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` and :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` for higher-level equivalents of this method.
+Consulta :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` y :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` para métodos equivalentes de nivel superior.
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **Nota:** Al usar índices, se recomienda emplear únicamente puntos, líneas o triángulos.
 
 .. rst-class:: classref-item-separator
 
@@ -11557,9 +11557,9 @@ Sets a boot image. The ``color`` defines the background color. The value of ``st
 
 |void| **set_debug_generate_wireframes**\ (\ generate\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_set_debug_generate_wireframes>`
 
-If ``generate`` is ``true``, generates debug wireframes for all meshes that are loaded when using the Compatibility renderer. By default, the engine does not generate debug wireframes at runtime, since they slow down loading of assets and take up VRAM.
+Si ``generate`` es ``true``, genera wireframes de depuración para todas las mallas que se cargan cuando se utiliza el renderizador Compatibility. De forma predeterminada, el motor no genera wireframes de depuración en tiempo de ejecución, ya que ralentizan la carga de los recursos y ocupan VRAM.
 
-\ **Note:** You must call this method before loading any meshes when using the Compatibility renderer. Otherwise, wireframes will not be used.
+\ **Nota:** Debes llamar a este método antes de cargar cualquier malla cuando utilices el renderizador Compatibility, de lo contrario no se utilizarán los wireframes.
 
 .. rst-class:: classref-item-separator
 
@@ -12446,13 +12446,13 @@ Si es ``true``, activa la ventana de visualización, si no, la desactiva.
 
 |void| **viewport_set_anisotropic_filtering_level**\ (\ viewport\: :ref:`RID<class_RID>`, anisotropic_filtering_level\: :ref:`ViewportAnisotropicFiltering<enum_RenderingServer_ViewportAnisotropicFiltering>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_anisotropic_filtering_level>`
 
-Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
+Establece el número máximo de muestras que se tomarán al utilizar el filtrado anisotrópico en las texturas (como potencia de dos). Un mayor número de muestras dará lugar a texturas más nítidas en ángulos oblicuos, pero requerirá más recursos de cálculo. Un valor de ``0`` desactiva por completo el filtrado anisotrópico, incluso en los materiales en los que esté habilitado.
 
-The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+El nivel de filtrado anisotrópico también afecta a los decals y a los proyectores de luz si están configurados para utilizar este tipo de filtrado. Consulta :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` y :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
 
-\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
+\ **Nota:** En 3D, para que este ajuste tenga efecto, establece :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` en :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en los materiales.
 
-\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
+\ **Nota:** En 2D, para que este ajuste tenga efecto, establece :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` en :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` o :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` en el nodo :ref:`CanvasItem<class_CanvasItem>` que muestra la textura (o en :ref:`CanvasTexture<class_CanvasTexture>`). Sin embargo, el filtrado anisotrópico rara vez resulta útil en 2D, por lo que solo debes habilitarlo para texturas 2D si supone una diferencia visual significativa.
 
 .. rst-class:: classref-item-separator
 
@@ -12910,7 +12910,7 @@ If ``true``, use temporal antialiasing. Equivalent to :ref:`ProjectSettings.rend
 
 |void| **viewport_set_use_xr**\ (\ viewport\: :ref:`RID<class_RID>`, use_xr\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_xr>`
 
-If ``true``, the viewport uses augmented or virtual reality technologies. See :ref:`XRInterface<class_XRInterface>`.
+Si es ``true``, el viewport utiliza tecnologías de realidad aumentada o virtual. Véase :ref:`XRInterface<class_XRInterface>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13054,7 +13054,7 @@ Returns the distance field data for the specified voxel GI data instance. See al
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **voxel_gi_get_level_counts**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_level_counts>`
 
-Returns the level counts for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Devuelve los recuentos de niveles para la instancia de datos de Voxel GI especificada. Véase también :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 

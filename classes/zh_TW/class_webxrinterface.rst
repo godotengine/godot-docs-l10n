@@ -14,15 +14,15 @@ WebXRInterface
 說明
 ----
 
-WebXR is an open standard that allows creating VR and AR applications that run in the web browser.
+WebXR 是一種開放標準，允許建立在網路瀏覽器中執行的 VR 和 AR 應用程式。
 
-As such, this interface is only available when running in Web exports.
+因此，此介面僅在 Web 匯出中執行時可用。
 
-WebXR supports a wide range of devices, from the very capable (like Valve Index, HTC Vive, Oculus Rift and Quest) down to the much less capable (like Google Cardboard, Oculus Go, GearVR, or plain smartphones).
+WebXR 支援範圍廣泛的裝置，從功能強大的裝置（如 Valve Index、HTC Vive、Oculus Rift 和 Quest）到功能低得多的裝置（如 Google Cardboard、Oculus Go、GearVR 或普通智能手機）。
 
-Since WebXR is based on JavaScript, it makes extensive use of callbacks, which means that **WebXRInterface** is forced to use signals, where other XR interfaces would instead use functions that return a result immediately. This makes **WebXRInterface** quite a bit more complicated to initialize than other XR interfaces.
+由於 WebXR 基於 JavaScript，它大量使用回呼，這意味著 **WebXRInterface** 被迫使用訊號，而其他 XR 介面將改為使用立即回傳結果的函式。這使得 **WebXRInterface** 的初始化比其他 XR 介面要複雜得多。
 
-Here's the minimum code required to start an immersive VR session:
+以下是啟動沈浸式 VR 會話所需的最少程式碼：
 
 ::
 
@@ -32,22 +32,22 @@ Here's the minimum code required to start an immersive VR session:
     var vr_supported = false
 
     func _ready():
-        # We assume this node has a button as a child.
-        # This button is for the user to consent to entering immersive VR mode.
+        # 我們假設這個節點有一個按鈕作為子節點。
+        # 該按鈕供使用者同意進入沈浸式 VR 模式。
         $Button.pressed.connect(self._on_button_pressed)
 
         webxr_interface = XRServer.find_interface("WebXR")
         if webxr_interface:
-            # WebXR uses a lot of asynchronous callbacks, so we connect to various
-            # signals in order to receive them.
+            # WebXR 使用了很多非同步回呼，所以我們連接各種
+            # 訊號，以便接收它們。
             webxr_interface.session_supported.connect(self._webxr_session_supported)
             webxr_interface.session_started.connect(self._webxr_session_started)
             webxr_interface.session_ended.connect(self._webxr_session_ended)
             webxr_interface.session_failed.connect(self._webxr_session_failed)
 
-            # This returns immediately - our _webxr_session_supported() method
-            # (which we connected to the "session_supported" signal above) will
-            # be called sometime later to let us know if it's supported or not.
+            # 這會立即回傳——我們的 _webxr_session_supported() 方法
+            # （我們連接到上面的“session_supported”訊號）將
+            # 在稍後的某個時間被呼叫，讓我們知道它是否受支援。
             webxr_interface.is_session_supported("immersive-vr")
 
     func _webxr_session_supported(session_mode, supported):
@@ -59,58 +59,58 @@ Here's the minimum code required to start an immersive VR session:
             OS.alert("Your browser doesn't support VR")
             return
 
-        # We want an immersive VR session, as opposed to AR ('immersive-ar') or a
-        # simple 3DoF viewer ('viewer').
+        # 我們想要一個沈浸式 VR 會話，而不是 AR（'immersive-ar'）或
+        # 簡單的 3DoF 查看器（'viewer'）。
         webxr_interface.session_mode = 'immersive-vr'
-        # 'bounded-floor' is room scale, 'local-floor' is a standing or sitting
-        # experience (it puts you 1.6m above the ground if you have 3DoF headset),
-        # whereas as 'local' puts you down at the XROrigin.
-        # This list means it'll first try to request 'bounded-floor', then
-        # fallback on 'local-floor' and ultimately 'local', if nothing else is
-        # supported.
+        # 'bounded-floor' 是房間比例，'local-floor' 是站立或坐著
+        # 的體驗（如果你有 3DoF 頭戴裝置，它會讓你離地 1.6m），
+        # 而“local”會讓你在 XROrigin 下。
+        # 這個清單意味著它會首先嘗試請求“bounded-floor”，然後
+        # 回退到“local-floor”，最後是“local”，如果沒有別的
+        # 支援的話。
         webxr_interface.requested_reference_space_types = 'bounded-floor, local-floor, local'
-        # In order to use 'local-floor' or 'bounded-floor' we must also
-        # mark the features as required or optional. By including 'hand-tracking'
-        # as an optional feature, it will be enabled if supported.
+        # 為了使用“local-floor”或“bounded-floor”，我們還必須
+        # 將功能標記為必需或可選。通過將“手動追蹤”作為可選功能，
+        # 如果支援，它將被啟用。
         webxr_interface.required_features = 'local-floor'
         webxr_interface.optional_features = 'bounded-floor, hand-tracking'
 
-        # This will return false if we're unable to even request the session,
-        # however, it can still fail asynchronously later in the process, so we
-        # only know if it's really succeeded or failed when our
-        # _webxr_session_started() or _webxr_session_failed() methods are called.
+        # 如果我們甚至無法請求會話，這將回傳 false，
+        # 但是，它仍然可以在稍後的過程中非同步失敗，
+        # 因此我們只有在呼叫 _webxr_session_started() 或
+        # _webxr_session_failed() 方法時才知道它是真的成功還是失敗。
         if not webxr_interface.initialize():
             OS.alert("Failed to initialize")
             return
 
     func _webxr_session_started():
         $Button.visible = false
-        # This tells Godot to start rendering to the headset.
+        # 這告訴 Godot 開始渲染到頭戴裝置。
         get_viewport().use_xr = true
-        # This will be the reference space type you ultimately got, out of the
-        # types that you requested above. This is useful if you want the game to
-        # work a little differently in 'bounded-floor' versus 'local-floor'.
+        # 這將是你最終獲得的參考空間型別，與你在上面請求的型別不同。
+        # 如果你希望遊戲在 “bounded-floor” 和 “local-floor”
+        # 中的執行方式有所不同，這將很有用。
         print("Reference space type: ", webxr_interface.reference_space_type)
-        # This will be the list of features that were successfully enabled
-        # (except on browsers that don't support this property).
+        # 這將是成功啟用的功能清單
+        #（不支援該屬性的瀏覽器除外）。
         print("Enabled features: ", webxr_interface.enabled_features)
 
     func _webxr_session_ended():
         $Button.visible = true
-        # If the user exits immersive mode, then we tell Godot to render to the web
-        # page again.
+        # 如果使用者退出沈浸式模式，那麼我們會告訴 Godot
+        # 再次渲染到網頁。
         get_viewport().use_xr = false
 
     func _webxr_session_failed(message):
         OS.alert("Failed to initialize: " + message)
 
-There are a couple ways to handle "controller" input:
+有幾種方法可以處理“控制器”輸入：
 
-- Using :ref:`XRController3D<class_XRController3D>` nodes and their :ref:`XRController3D.button_pressed<class_XRController3D_signal_button_pressed>` and :ref:`XRController3D.button_released<class_XRController3D_signal_button_released>` signals. This is how controllers are typically handled in XR apps in Godot, however, this will only work with advanced VR controllers like the Oculus Touch or Index controllers, for example.
+- 使用 :ref:`XRController3D<class_XRController3D>` 節點及其 :ref:`XRController3D.button_pressed<class_XRController3D_signal_button_pressed>` 和 :ref:`XRController3D.button_released<class_XRController3D_signal_button_released>` 訊號。這是 Godot 中 XR 應用程式通常處理控制器的方式，但是，這僅適用於進階 VR 控制器，例如 Oculus Touch 或 Index 控制器。
 
-- Using the :ref:`select<class_WebXRInterface_signal_select>`, :ref:`squeeze<class_WebXRInterface_signal_squeeze>` and related signals. This method will work for both advanced VR controllers, and non-traditional input sources like a tap on the screen, a spoken voice command or a button press on the device itself.
+- 使用 :ref:`select<class_WebXRInterface_signal_select>`\ 、\ :ref:`squeeze<class_WebXRInterface_signal_squeeze>` 和其他相關訊號。這種方法適用於進階 VR 控制器和非傳統輸入源，例如螢幕上的輕敲、語音命令或裝置本身的按鈕按下。
 
-You can use both methods to allow your game or app to support a wider or narrower set of devices and input methods, or to allow more advanced interactions with more advanced devices.
+你可以使用這兩種方法來讓你的遊戲或應用程式支援更多或更窄的裝置和輸入法集，或者允許與更進階的裝置進行更進階的互動。
 
 .. rst-class:: classref-introduction-group
 
@@ -212,7 +212,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源完成其“主要動作”後發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源完成其“主要動作”時發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源開始其“主要動作”時發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 由 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在該會話啟動成功時發出。
 
-此時，可以安全地執行 ``get_viewport().use_xr = true``\ ，讓 Godot 開始算繪至 XR 裝置。
+此時，可以安全地執行 ``get_viewport().use_xr = true``\ ，讓 Godot 開始渲染至 XR 裝置。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源完成其“主要緊握動作”後發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源完成其“主要緊握動作”時發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 某個輸入源開始其“主要緊握動作”時發出。
 
-請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 取得關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 
 :ref:`TargetRayMode<enum_WebXRInterface_TargetRayMode>` **TARGET_RAY_MODE_UNKNOWN** = ``0``
 
-We don't know the target ray mode.
+不知道目標射線模式。
 
 .. _class_WebXRInterface_constant_TARGET_RAY_MODE_GAZE:
 
@@ -416,11 +416,11 @@ We don't know the target ray mode.
 
 - :ref:`String<class_String>` **get_enabled_features**\ (\ )
 
-A comma-separated list of features that were successfully enabled by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+設定 WebXR 會話時通過 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 成功啟用的功能的逗號分隔清單。
 
-This may include features requested by setting :ref:`required_features<class_WebXRInterface_property_required_features>` and :ref:`optional_features<class_WebXRInterface_property_optional_features>`, and will only be available after :ref:`session_started<class_WebXRInterface_signal_session_started>` has been emitted.
+這可能包括通過設定 :ref:`required_features<class_WebXRInterface_property_required_features>` 和 :ref:`optional_features<class_WebXRInterface_property_optional_features>` 請求的功能，並且僅在發出 :ref:`session_started<class_WebXRInterface_signal_session_started>` 後可用。
 
-\ **Note:** This may not be support by all web browsers, in which case it will be an empty string.
+\ **注意：**\ 並非所有 web 瀏覽器都支援該功能，在這種情況下，它將是一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -437,13 +437,13 @@ This may include features requested by setting :ref:`required_features<class_Web
 - |void| **set_optional_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_optional_features**\ (\ )
 
-A comma-seperated list of optional features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的可選功能清單。
 
-If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.
+如果使用者的瀏覽器或裝置，不支援給定的任一功能，初始化將繼續，但將無法使用所請求的功能。
 
-This doesn't have any effect on the interface when already initialized.
+這對已經初始化的介面沒有任何影響。
 
-See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
+可能的值見 MDN 文件中的 `WebXR 的會話功能 <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -478,13 +478,13 @@ See the MDN documentation on `WebXR's session features <https://developer.mozill
 - |void| **set_requested_reference_space_types**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_requested_reference_space_types**\ (\ )
 
-A comma-seperated list of reference space types used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的參考空間型別清單。
 
-The reference space types are requested in order, and the first one supported by the user's device or browser will be used. The :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` property contains the reference space type that was ultimately selected.
+按順序請求參考空間型別，將使用使用者裝置或瀏覽器支援的第一個。\ :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` 屬性包含最終選擇的參考空間型別。
 
-This doesn't have any effect on the interface when already initialized.
+這對已經初始化的介面沒有任何影響。
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+可能的值來自 `WebXR 的 XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__\ 。如果想要使用特定的參考空間型別，則它必須列在 :ref:`required_features<class_WebXRInterface_property_required_features>` 或 :ref:`optional_features<class_WebXRInterface_property_optional_features>` 中。
 
 .. rst-class:: classref-item-separator
 
@@ -501,13 +501,13 @@ Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozil
 - |void| **set_required_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_required_features**\ (\ )
 
-A comma-seperated list of required features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的所需功能清單。
 
-If a user's browser or device doesn't support one of the given features, initialization will fail and :ref:`session_failed<class_WebXRInterface_signal_session_failed>` will be emitted.
+如果使用者的瀏覽器或裝置不支援給定的任一功能，則初始化將失敗併發出 :ref:`session_failed<class_WebXRInterface_signal_session_failed>` 。
 
-This doesn't have any effect on the interface when already initialized.
+這對已經初始化的介面沒有任何影響。
 
-See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
+可能的值見 MDN 文件中的 `WebXR 的會話功能 <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ See the MDN documentation on `WebXR's session features <https://developer.mozill
 
 - :ref:`String<class_String>` **get_visibility_state**\ (\ )
 
-指示使用者是否可以看到 WebXR 會話的圖像。
+指示使用者是否可以看到 WebXR 會話的影像。
 
 可能的值來自 `WebXR 的 XRVisibilityState <https://developer.mozilla.org/en-US/docs/Web/API/XRVisibilityState>`__\ ，包括 ``"hidden"``\ 、\ ``"visible"`` 和 ``"visible-blurred"``\ 。
 
@@ -601,11 +601,11 @@ See the MDN documentation on `WebXR's session features <https://developer.mozill
 
 :ref:`XRControllerTracker<class_XRControllerTracker>` **get_input_source_tracker**\ (\ input_source_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WebXRInterface_method_get_input_source_tracker>`
 
-Gets an :ref:`XRControllerTracker<class_XRControllerTracker>` for the given ``input_source_id``.
+取得給定 ``input_source_id`` 的 :ref:`XRControllerTracker<class_XRControllerTracker>`\ 。
 
-In the context of WebXR, an input source can be an advanced VR controller like the Oculus Touch or Index controllers, or even a tap on the screen, a spoken voice command or a button press on the device itself. When a non-traditional input source is used, interpret the position and orientation of the :ref:`XRPositionalTracker<class_XRPositionalTracker>` as a ray pointing at the object the user wishes to interact with.
+在 WebXR 情境中，輸入源可以是類似 Oculus Touch 和 Index 控制器的進階 VR 控制器，甚至也可以是螢幕上的點選、語音命令或按下裝置本身的按鈕。當使用非傳統輸入源時，會將 :ref:`XRPositionalTracker<class_XRPositionalTracker>` 的位置和方向解釋為指向使用者希望與之互動的物件的射線。
 
-Use this method to get information about the input source that triggered one of these signals:
+可以使用此方法取得有關觸發以下訊號之一的輸入源的資訊：
 
 - :ref:`selectstart<class_WebXRInterface_signal_selectstart>`\ 
 

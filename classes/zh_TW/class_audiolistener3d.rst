@@ -70,7 +70,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_DISABLED** = ``0``
 
-禁用\ `多普勒效應 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模擬（預設）。
+停用\ `多普勒效應 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模擬（預設）。
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_IDLE_STEP:
 
@@ -78,7 +78,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+通過在 ``_process`` 中追蹤物件位置的變化，來模擬 `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ 。這個監聽器（listener）與那些物件之間的相對速度變化，會影響音訊的聽感（具體表現為改變音訊的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` 屬性）。
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -86,7 +86,7 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_physics_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+通過在 ``_physics_process`` 中追蹤物體位置的變化，來模擬 `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 。該監聽器（listener）與這些物體之間的相對速度變化，會影響音訊的聽感（具體表現為改變音訊的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` 屬性）。
 
 .. rst-class:: classref-section-separator
 
@@ -108,9 +108,9 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-If not :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`, this listener will simulate the `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ for objects changed in particular ``_process`` methods.
+如果不是 :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`\ ，則該監聽器將在特定的 ``_process`` 方法中，為變化的物件模擬\ `多普勒效應 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。
 
-\ **Note:** The Doppler effect will only be heard on :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ s if :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not set to :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
+\ **注意：**\ 多普勒效應僅在 :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` 未設定為 :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` 時才會在 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 上聽到。
 
 .. rst-class:: classref-section-separator
 

@@ -197,9 +197,9 @@ All animations are time-scaled so they stay in sync, with the cycle length dynam
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_CYCLIC_CONSTANT** = ``3``
 
-All animations are time-scaled so they complete one cycle in :ref:`cyclic_length<class_AnimationNodeBlendSpace2D_property_cyclic_length>` seconds, keeping them in sync regardless of their individual lengths.
+Toutes les animations sont dilatées sur le temps pour finir leur cycle en :ref:`cyclic_length<class_AnimationNodeBlendSpace2D_property_cyclic_length>` secondes, conservant leur synchronisation qu'importe leur durées individuelles.
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **Note :** Si vous appliquez :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` au résultat lorsque vous manipulez des animations de différentes durées, la synchronisation sera perdue. Dans ce genre de cas, il est recommandé d'utiliser :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` afin d'ajuster des durées des animations.
 
 .. rst-class:: classref-section-separator
 
@@ -393,9 +393,9 @@ Descriptions des méthodes
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1, name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-Adds a new point with ``name`` that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Ajoute un nouveau point ayant pour nom ``name`` qui représente un nœud ``node`` à une position donnée par ``pos``. Il est possible de l'insérer à l'index spécifié en utilisant l'argument ``at_index``. Si vous utilisez la valeur par défaut pour ``at_index``, le point est inséré à la fin du tableau des points de mélange.
 
-\ **Note:** If no name is provided, safe index is used as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+\ **Note :** Si aucun nom n'est fourni, un index sécurisé est utilisé comme référence. Dans le futur, les noms vides seront obsolètes, il est donc recommandé de passer explicitement un nom.
 
 .. rst-class:: classref-item-separator
 

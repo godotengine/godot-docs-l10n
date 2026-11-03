@@ -38,12 +38,12 @@ AnimationNodeOneShot
     # 替代語法（與上述結果相同）。
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
 
-    # 獲取目前狀態（唯讀）。
+    # 取得目前狀態（唯讀）。
     animation_tree.get("parameters/OneShot/active"))
     # 替代語法（與上述結果相同）。
     animation_tree["parameters/OneShot/active"]
 
-    # 獲取目前內部狀態（唯讀）。
+    # 取得目前內部狀態（唯讀）。
     animation_tree.get("parameters/OneShot/internal_active")
     # 替代語法（與上述結果相同）。
     animation_tree["parameters/OneShot/internal_active"]
@@ -59,10 +59,10 @@ AnimationNodeOneShot
     // 使用淡出的方法中止連接到 “shot”埠的子動畫。
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.FadeOut);
 
-    // 獲取目前狀態（唯讀）。
+    // 取得目前狀態（唯讀）。
     animationTree.Get("parameters/OneShot/active");
 
-    // 獲取目前內部狀態（唯讀）。
+    // 取得目前內部狀態（唯讀）。
     animationTree.Get("parameters/OneShot/internal_active");
 
 
@@ -199,7 +199,7 @@ enum **MixMode**: :ref:`🔗<enum_AnimationNodeOneShot_MixMode>`
 - |void| **set_abort_on_reset**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_aborted_on_reset**\ (\ )
 
-If ``true``, the sub-animation will abort if resumed with a reset after a prior interruption.
+如果為 ``true``\ ，則子動畫在先前中斷後使用重設恢復時，子動畫將會中止。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ If ``true``, the sub-animation will abort if resumed with a reset after a prior 
 
 如果為 ``true``\ ，子動畫結束後會自動重新開始。
 
-換句話說，要開始自動重啟，必須使用 :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 請求播放一次動畫。\ :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` 請求停止自動重啟，但它不會禁用 :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` 本身。因此，\ :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 請求將再次開始自動重啟。
+換句話說，要開始自動重新啟動，必須使用 :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 請求播放一次動畫。\ :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` 請求停止自動重新啟動，但它不會停用 :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` 本身。因此，\ :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 請求將再次開始自動重新啟動。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ If ``true``, the sub-animation will abort if resumed with a reset after a prior 
 - |void| **set_autorestart_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_autorestart_delay**\ (\ )
 
-觸發自動重啟的延遲時間，以秒為單位。
+觸發自動重新啟動的延遲時間，以秒為單位。
 
 .. rst-class:: classref-item-separator
 

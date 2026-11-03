@@ -7,16 +7,16 @@ RDShaderSPIRV
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-SPIR-V intermediate representation as part of an :ref:`RDShaderFile<class_RDShaderFile>` (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+SPIR-V 中間表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**RDShaderSPIRV** represents an :ref:`RDShaderFile<class_RDShaderFile>`'s `SPIR-V <https://www.khronos.org/spir/>`__ code for various shader stages, as well as possible compilation error messages. SPIR-V is a low-level intermediate shader representation. This intermediate representation is not used directly by GPUs for rendering, but it can be compiled into binary shaders that GPUs can understand. Unlike compiled shaders, SPIR-V is portable across GPU models and driver versions.
+**RDShaderSPIRV** 代表 :ref:`RDShaderFile<class_RDShaderFile>` 不同著色器階段的 `SPIR-V <https://www.khronos.org/spir/>`__ 程式碼，以及可能的編譯錯誤訊息。SPIR-V 是一種低階著色器中間表示。這種中間表示無法直接用於 GPU 渲染，但可以被編譯為 GPU 能夠理解的二進位著色器。與編譯後的著色器不同，SPIR-V 可以在不同 GPU 型號以及驅動版本之間移植。
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
@@ -106,7 +106,7 @@ This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the any hit shader stage.
+任意命中著色器階段的 SPIR-V 位元組碼。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -125,7 +125,7 @@ The SPIR-V bytecode for the any hit shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the closest hit shader stage.
+最近命中著色器階段的 SPIR-V 位元組碼。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -182,7 +182,7 @@ The SPIR-V bytecode for the closest hit shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the intersection shader stage.
+相交著色器階段的 SPIR-V 位元組碼。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -201,7 +201,7 @@ The SPIR-V bytecode for the intersection shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the miss shader stage.
+未命中著色器階段的 SPIR-V 位元組碼。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -220,7 +220,7 @@ The SPIR-V bytecode for the miss shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the ray generation shader stage.
+光線生成著色器階段的 SPIR-V 位元組碼。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -296,7 +296,7 @@ The SPIR-V bytecode for the ray generation shader stage.
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the any hit shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“任意命中”著色器階段的編譯錯誤訊息（由 SPIR-V 編譯器和 Godot 設定）。如果這裡為空，則說明著色器編譯成功。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ The compilation error message for the any hit shader stage (set by the SPIR-V co
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the closest hit shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“最近命中”著色器階段的編譯錯誤訊息（由 SPIR-V 編譯器和 Godot 引擎提供）。如果此處為空，則說明著色器編譯成功。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ The compilation error message for the closest hit shader stage (set by the SPIR-
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the intersection shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“相交”著色器階段的編譯錯誤訊息（由 SPIR-V 編譯器和 Godot 引擎提供）。如果此處為空，則說明著色器編譯成功。
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ The compilation error message for the intersection shader stage (set by the SPIR
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the miss shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“未命中”著色器階段的編譯錯誤訊息（由 SPIR-V 編譯器和 Godot 引擎提供）。如果此處為空，則說明著色器編譯成功。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ The compilation error message for the miss shader stage (set by the SPIR-V compi
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the ray generation shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+光線生成著色器階段的編譯錯誤訊息（由 SPIR-V 編譯器和 Godot 設定）。如果此處為空，則表示著色器編譯成功。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ The compilation error message for the ray generation shader stage (set by the SP
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const| :ref:`🔗<class_RDShaderSPIRV_method_get_stage_bytecode>`
 
-等價於獲取 :ref:`bytecode_compute<class_RDShaderSPIRV_property_bytecode_compute>`\ 、\ :ref:`bytecode_fragment<class_RDShaderSPIRV_property_bytecode_fragment>`\ 、\ :ref:`bytecode_tesselation_control<class_RDShaderSPIRV_property_bytecode_tesselation_control>`\ 、\ :ref:`bytecode_tesselation_evaluation<class_RDShaderSPIRV_property_bytecode_tesselation_evaluation>`\ 、\ :ref:`bytecode_vertex<class_RDShaderSPIRV_property_bytecode_vertex>` 的其中之一。
+等價於取得 :ref:`bytecode_compute<class_RDShaderSPIRV_property_bytecode_compute>`\ 、\ :ref:`bytecode_fragment<class_RDShaderSPIRV_property_bytecode_fragment>`\ 、\ :ref:`bytecode_tesselation_control<class_RDShaderSPIRV_property_bytecode_tesselation_control>`\ 、\ :ref:`bytecode_tesselation_evaluation<class_RDShaderSPIRV_property_bytecode_tesselation_evaluation>`\ 、\ :ref:`bytecode_vertex<class_RDShaderSPIRV_property_bytecode_vertex>` 的其中之一。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ The compilation error message for the ray generation shader stage (set by the SP
 
 :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const| :ref:`🔗<class_RDShaderSPIRV_method_get_stage_compile_error>`
 
-返回給定著色器階段 ``stage`` 的編譯錯誤消息。等價於獲取 :ref:`compile_error_compute<class_RDShaderSPIRV_property_compile_error_compute>`\ 、\ :ref:`compile_error_fragment<class_RDShaderSPIRV_property_compile_error_fragment>`\ 、\ :ref:`compile_error_tesselation_control<class_RDShaderSPIRV_property_compile_error_tesselation_control>`\ 、\ :ref:`compile_error_tesselation_evaluation<class_RDShaderSPIRV_property_compile_error_tesselation_evaluation>`\ 、\ :ref:`compile_error_vertex<class_RDShaderSPIRV_property_compile_error_vertex>` 的其中之一。
+返回給定著色器階段 ``stage`` 的編譯錯誤訊息。等價於取得 :ref:`compile_error_compute<class_RDShaderSPIRV_property_compile_error_compute>`\ 、\ :ref:`compile_error_fragment<class_RDShaderSPIRV_property_compile_error_fragment>`\ 、\ :ref:`compile_error_tesselation_control<class_RDShaderSPIRV_property_compile_error_tesselation_control>`\ 、\ :ref:`compile_error_tesselation_evaluation<class_RDShaderSPIRV_property_compile_error_tesselation_evaluation>`\ 、\ :ref:`compile_error_vertex<class_RDShaderSPIRV_property_compile_error_vertex>` 的其中之一。
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ The compilation error message for the ray generation shader stage (set by the SP
 
 |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RDShaderSPIRV_method_set_stage_bytecode>`
 
-設定給定著色器階段 ``stage`` 的 SPIR-V 位元組碼 ``bytecode``\ 。等價於設置 :ref:`bytecode_compute<class_RDShaderSPIRV_property_bytecode_compute>`\ 、\ :ref:`bytecode_fragment<class_RDShaderSPIRV_property_bytecode_fragment>`\ 、\ :ref:`bytecode_tesselation_control<class_RDShaderSPIRV_property_bytecode_tesselation_control>`\ 、\ :ref:`bytecode_tesselation_evaluation<class_RDShaderSPIRV_property_bytecode_tesselation_evaluation>`\ 、\ :ref:`bytecode_vertex<class_RDShaderSPIRV_property_bytecode_vertex>` 的其中之一。
+設定給定著色器階段 ``stage`` 的 SPIR-V 位元組碼 ``bytecode``\ 。等價於設定 :ref:`bytecode_compute<class_RDShaderSPIRV_property_bytecode_compute>`\ 、\ :ref:`bytecode_fragment<class_RDShaderSPIRV_property_bytecode_fragment>`\ 、\ :ref:`bytecode_tesselation_control<class_RDShaderSPIRV_property_bytecode_tesselation_control>`\ 、\ :ref:`bytecode_tesselation_evaluation<class_RDShaderSPIRV_property_bytecode_tesselation_evaluation>`\ 、\ :ref:`bytecode_vertex<class_RDShaderSPIRV_property_bytecode_vertex>` 的其中之一。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ The compilation error message for the ray generation shader stage (set by the SP
 
 |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RDShaderSPIRV_method_set_stage_compile_error>`
 
-設定給定著色器階段 ``stage`` 的編譯錯誤消息。等價於設定 :ref:`compile_error_compute<class_RDShaderSPIRV_property_compile_error_compute>`\ 、\ :ref:`compile_error_fragment<class_RDShaderSPIRV_property_compile_error_fragment>`\ 、\ :ref:`compile_error_tesselation_control<class_RDShaderSPIRV_property_compile_error_tesselation_control>`\ 、\ :ref:`compile_error_tesselation_evaluation<class_RDShaderSPIRV_property_compile_error_tesselation_evaluation>`\ 、\ :ref:`compile_error_vertex<class_RDShaderSPIRV_property_compile_error_vertex>` 的其中之一。
+將指定著色器階段 ``stage`` 的編譯錯誤訊息設為 ``compile_error``\ 。等價於設定 :ref:`compile_error_compute<class_RDShaderSPIRV_property_compile_error_compute>`\ 、\ :ref:`compile_error_fragment<class_RDShaderSPIRV_property_compile_error_fragment>`\ 、\ :ref:`compile_error_tesselation_control<class_RDShaderSPIRV_property_compile_error_tesselation_control>`\ 、\ :ref:`compile_error_tesselation_evaluation<class_RDShaderSPIRV_property_compile_error_tesselation_evaluation>`\ 、\ :ref:`compile_error_vertex<class_RDShaderSPIRV_property_compile_error_vertex>` 的其中之一。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

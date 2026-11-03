@@ -1850,9 +1850,9 @@ Si quieres crear un color desde una String en una expresión constante, usa el c
 
 :ref:`float<class_float>` **get_luminance**\ (\ ) |const| :ref:`🔗<class_Color_method_get_luminance>`
 
-Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
+Devuelve la intensidad lumínica del color como un valor entre 0.0 y 1.0 (inclusivo). Esto resulta útil para determinar si un color es claro u oscuro. Por lo general, los colores con una luminancia inferior a 0.5 pueden considerarse oscuros.
 
-\ **Note:** :ref:`get_luminance()<class_Color_method_get_luminance>` relies on the color using linear encoding to return an accurate relative luminance value. If the color uses the default nonlinear sRGB encoding, use :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` to convert it to linear encoding first.
+\ **Nota:** :ref:`get_luminance()<class_Color_method_get_luminance>` requiere que el color utilice codificación lineal para devolver un valor preciso de luminancia relativa. Si el color utiliza la codificación sRGB no lineal predeterminada, utiliza :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` para convertirlo primero a codificación lineal.
 
 .. rst-class:: classref-item-separator
 
@@ -2008,7 +2008,7 @@ Devuelve el color con sus componentes :ref:`r<class_Color_property_r>`, :ref:`g<
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Color<class_Color>`\ ) |const| :ref:`🔗<class_Color_method_is_equal_approx>`
 
-Returns ``true`` if this color and ``to`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
+Devuelve ``true`` si este color y ``to`` son aproximadamente iguales, ejecutando :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` en cada componente.
 
 .. rst-class:: classref-item-separator
 
@@ -2308,9 +2308,9 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_neq_Color>`
 
-Returns ``true`` if the colors are not exactly equal.
+Devuelve ``true`` si los colores no son exactamente iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera utilizar :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` en su lugar, ya que es más fiable.
 
 .. rst-class:: classref-item-separator
 

@@ -18,7 +18,7 @@ GPUParticlesCollisionSDF3D
 
 有符號的距離場（SDF）允許有效地表示任何形狀的凸面和凹面物件的近似碰撞形狀。它比 :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>` 更靈活，但需要一個烘焙步驟。
 
-\ **烘焙：**\ 可以通過在編輯器中選擇 **GPUParticlesCollisionSDF3D** 節點，然後點擊 3D 視口頂部的\ **烘焙 SDF**\ ，來烘焙有符號的距離場紋理。\ :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` 內的任何\ *可見* :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，無論它們的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 如何，都將被考慮用於烘焙。
+\ **烘焙：**\ 可以通過在編輯器中選擇 **GPUParticlesCollisionSDF3D** 節點，然後點選 3D 視埠頂部的\ **烘焙 SDF**\ ，來烘焙有符號的距離場紋理。\ :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` 內的任何\ *可見* :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，無論它們的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 如何，都將被考慮用於烘焙。
 
 \ **注意：**\ 烘焙 **GPUParticlesCollisionSDF3D** 的 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 只能在編輯器中進行，因為沒有公開的烘焙方法可用於匯出的遊戲專案中。但是，在匯出的遊戲項目中，仍然可以將預先烘焙的 :ref:`Texture3D<class_Texture3D>` 載入到 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 屬性中。
 
@@ -168,7 +168,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_resolution**\ (\ value\: :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>`\ )
 - :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **get_resolution**\ (\ )
 
-用於有符號距離場 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 的烘焙解析度。必須再次烘焙紋理，才能使 :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` 屬性的更改生效。更高的解析度具有更高的性能成本，並且需要更多的時間來烘焙。更高的解析度還會產生更大的烘焙紋理，從而增加 VRAM 和儲存的空間需求。要提高性能並減少烘焙時間，請為表示碰撞的對象使用盡可能低的解析度。
+用於有符號距離場 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 的烘焙解析度。必須再次烘焙紋理，才能使 :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` 屬性的更改生效。更高的解析度具有更高的效能成本，並且需要更多的時間來烘焙。更高的解析度還會產生更大的烘焙紋理，從而增加 VRAM 和儲存的空間需求。要提高效能並減少烘焙時間，請為表示碰撞的對象使用盡可能低的解析度。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 |void| **set_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GPUParticlesCollisionSDF3D_method_set_bake_mask_value>`
 
-基於 ``value``\ ，啟用或禁用 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 中的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
+基於 ``value``\ ，啟用或停用 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 中的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

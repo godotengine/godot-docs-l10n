@@ -186,7 +186,7 @@ WebSocket 伺服器和使用者端的基底類別。
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_client**\ (\ url\: :ref:`String<class_String>`, tls_client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_WebSocketMultiplayerPeer_method_create_client>`
 
-啟動新的多人使用者端，連接至給定的 ``url``\ 。使用 ``wss://`` 協議連接時會校驗主機名稱和 TLS 憑證。傳入 ``tls_client_options`` 可以自訂信任的憑證授權，也可以禁用通用名的驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+啟動新的多人使用者端，連接至給定的 ``url``\ 。使用 ``wss://`` 協議連接時會校驗主機名稱和 TLS 憑證。傳入 ``tls_client_options`` 可以自訂信任的憑證授權，也可以停用通用名的驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
 \ **注意：**\ 推薦指定 URL 的方案部分，即 ``url`` 應該以 ``ws://`` 或 ``wss://`` 開頭。
 

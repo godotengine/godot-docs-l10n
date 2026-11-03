@@ -9,7 +9,7 @@ AudioEffectLimiter
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a soft-clip limiter audio effect to an audio bus.
+Añade un efecto de limitador de corte suave a un bus de audio.
 
 .. rst-class:: classref-introduction-group
 
@@ -69,7 +69,7 @@ Descripciones de Propiedades
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
+El valor máximo permitido de la forma de onda, en decibelios. El valor puede variar entre -20 y -0,1.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
+Aplica una ganancia a las ondas limitadas, en decibelios. El valor puede variar entre 0 y 6.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
+Esta propiedad no tiene efecto en el audio. En su lugar, utiliza :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>`, ya que este efecto limitador está obsoleto.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
+Umbral de volumen a partir del cual el limitador comienza a actuar, en decibelios. El valor puede ir de -30 a 0.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

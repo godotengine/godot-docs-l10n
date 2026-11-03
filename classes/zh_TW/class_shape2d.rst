@@ -18,7 +18,7 @@ Shape2D
 
 所有 2D 形狀的抽象基底類別，針對物理使用設計。
 
-\ **性能：**\ 對圖元形狀進行碰撞偵測很快，尤其是 :ref:`CircleShape2D<class_CircleShape2D>`\ 。\ :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 較慢，\ :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 最慢。
+\ **效能：**\ 對圖元形狀進行碰撞偵測很快，尤其是 :ref:`CircleShape2D<class_CircleShape2D>`\ 。\ :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 較慢，\ :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 最慢。
 
 .. rst-class:: classref-introduction-group
 

@@ -450,7 +450,7 @@ Devuelve filtros de archivos para incluir durante la exportación.
 
 :ref:`Variant<class_Variant>` **get_or_env**\ (\ name\: :ref:`StringName<class_StringName>`, env_var\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_or_env>`
 
-Returns export option value or value of environment variable if it is set.
+Devuelve el valor de la opción de exportación o el valor de la variable de entorno si está configurada.
 
 .. rst-class:: classref-item-separator
 

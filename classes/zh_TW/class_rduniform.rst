@@ -100,7 +100,7 @@ Uniform 的資料型別。
 
 |void| **add_id**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RDUniform_method_add_id>`
 
-Binds the given id to the uniform. The data associated with the id is then used when the uniform is passed to a shader.
+將給定的 id 綁定到該 uniform（統一變數）上。隨後，當該 uniform 被傳遞給著色器時，就會使用與該 id 相關聯的資料。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Binds the given id to the uniform. The data associated with the id is then used 
 
 |void| **clear_ids**\ (\ ) :ref:`🔗<class_RDUniform_method_clear_ids>`
 
-Unbinds all ids currently bound to the uniform.
+解除目前綁定到該 uniform（統一變數）上的所有 id。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Unbinds all ids currently bound to the uniform.
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_ids**\ (\ ) |const| :ref:`🔗<class_RDUniform_method_get_ids>`
 
-Returns an array of all ids currently bound to the uniform.
+回傳目前綁定到該 uniform 的所有 id 的陣列。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

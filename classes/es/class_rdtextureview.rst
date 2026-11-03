@@ -56,7 +56,7 @@ Descripciones de Propiedades
 - |void| **set_format_override**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_format_override**\ (\ )
 
-Sobrescritura opcional para el formato de datos en el que se devolverán los valores muestreados. El :ref:`RDTextureFormat<class_RDTextureFormat>` correspondiente debe haber añadido esto como un formato compartible. El valor predeterminado de :ref:`RenderingDevice.DATA_FORMAT_MAX<class_RenderingDevice_constant_DATA_FORMAT_MAX>` no anula el formato.
+Sobrescritura opcional para el formato de datos en el que se devolverán los valores muestreados. El :ref:`RDTextureFormat<class_RDTextureFormat>` correspondiente debe haber añadido esto como un formato compartible. El valor predeterminado de :ref:`RenderingDevice.DATA_FORMAT_MAX<class_RenderingDevice_constant_DATA_FORMAT_MAX>` no sobrescribe el formato.
 
 .. rst-class:: classref-item-separator
 

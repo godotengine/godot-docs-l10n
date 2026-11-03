@@ -320,7 +320,7 @@ ScriptExtension
 
 :ref:`Variant<class_Variant>` **_get_script_method_argument_count**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_ScriptExtension_private_method__get_script_method_argument_count>`
 
-Return the expected argument count for the given ``method``, or ``null`` if it can't be determined (which will then fall back to the default behavior).
+返回給定 ``method`` 的預期參數數量，如果無法確定，則返回 ``null``\ （然後將回退到預設行為）。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Return the expected argument count for the given ``method``, or ``null`` if it c
 
 :ref:`bool<class_bool>` **_is_abstract**\ (\ ) |virtual| |const| :ref:`🔗<class_ScriptExtension_private_method__is_abstract>`
 
-Returns ``true`` if the script is an abstract script. Abstract scripts cannot be instantiated directly, instead other scripts should inherit them. Abstract scripts will be either unselectable or hidden in the Create New Node dialog (unselectable if there are non-abstract classes inheriting it, otherwise hidden).
+如果腳本為抽象腳本，則回傳 ``true``\ 。抽象腳本無法直接實例化，而是需要用其他腳本繼承。抽象腳本在“建立新節點”對話框中無法選中或不可見（存在非抽象類別繼承時無法選中，否則隱藏）。
 
 .. rst-class:: classref-item-separator
 

@@ -25,7 +25,7 @@ NavigationMesh
 
 - :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
 
-- `3D Navigation Demo <https://godotengine.org/asset-library/asset/2743>`__
+- `3D 導航演示 <https://godotengine.org/asset-library/asset/2743>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -228,7 +228,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-以遞迴方式掃描組中的節點及其子節點以獲取幾何圖形。該組由 :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>` 指定。
+以遞迴方式掃描組中的節點及其子節點以取得幾何圖形。該組由 :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>` 指定。
 
 .. _class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT:
 
@@ -321,11 +321,11 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 - |void| **set_agent_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_radius**\ (\ )
 
-The distance to erode/shrink the walkable area of the heightfield away from obstructions.
+從障礙物處侵蝕/縮小高度場可行走區域的距離。
 
-\ **Note:** While baking, this value will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>`.
+\ **注意：**\ 烘焙過程中會將這個值向上捨入到最接近的 :ref:`cell_size<class_NavigationMesh_property_cell_size>` 的倍數。
 
-\ **Note:** The radius must be equal or higher than ``0.0``. If the radius is ``0.0``, it won't be possible to fix invalid outline overlaps and other precision errors during the baking process. As a result, some obstacles may be excluded incorrectly from the final navigation mesh, or may delete the navigation mesh's polygons.
+\ **注意：**\ 半徑必須大於等於 ``0.0``\ 。如果半徑為 ``0.0``\ ，則無法在烘焙過程中修復無效的輪廓重疊和其他精度錯誤。因此，某些障礙物可能會被錯誤地排除在最終導覽網格之外，或者可能會刪除導覽網格的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -342,11 +342,11 @@ The distance to erode/shrink the walkable area of the heightfield away from obst
 - |void| **set_border_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_border_size**\ (\ )
 
-The size of the non-navigable border around the bake bounding area.
+烘焙區域邊界不可導航的邊框大小。
 
-In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` and a :ref:`edge_max_error<class_NavigationMesh_property_edge_max_error>` value at ``1.0`` or below the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by :ref:`agent_radius<class_NavigationMesh_property_agent_radius>`.
+要烘焙與圖塊對齊的導覽網格，防止圖塊邊緣被 :ref:`agent_radius<class_NavigationMesh_property_agent_radius>` 收縮，請與 :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` 配合使用並將 :ref:`edge_max_error<class_NavigationMesh_property_edge_max_error>` 設為 ``1.0`` 或小於邊框大小的值。
 
-\ **Note:** If this value is not ``0.0``, it will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>` during baking.
+\ **注意：**\ 如果這個值不為 ``0.0``\ ，則會在烘焙時向上取整到 :ref:`cell_size<class_NavigationMesh_property_cell_size>` 的整數倍。
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_parsed_geometry_type**\ (\ value\: :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>`\ )
 - :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **get_parsed_geometry_type**\ (\ )
 
-Determines which type of nodes will be parsed as geometry.
+決定哪種型別的節點可解析為幾何圖形。
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Determines which type of nodes will be parsed as geometry.
 - |void| **set_source_geometry_mode**\ (\ value\: :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>`\ )
 - :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **get_source_geometry_mode**\ (\ )
 
-The source of the geometry used when baking.
+烘焙時使用的幾何體來源。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ The source of the geometry used when baking.
 - |void| **set_sample_partition_type**\ (\ value\: :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>`\ )
 - :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **get_sample_partition_type**\ (\ )
 
-Partitioning algorithm for creating the navigation mesh polys.
+建立導覽網格多邊形單元的分割算法。
 
 .. rst-class:: classref-item-separator
 
@@ -794,7 +794,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMesh_method_set_collision_mask_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` 中的指定層，給定的 ``layer_number`` 在 1 和 32 之間。
+根據 ``value`` 啟用或停用 :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` 中的指定層，給定的 ``layer_number`` 在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

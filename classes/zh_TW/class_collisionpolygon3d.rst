@@ -14,9 +14,9 @@ CollisionPolygon3D
 說明
 ----
 
-A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+向 :ref:`CollisionObject3D<class_CollisionObject3D>` 父級提供加厚多邊形形狀（角柱體）的節點，並允許對其編輯。該多邊形可以是凹多邊形，也可以是凸多邊形。能夠為 :ref:`Area3D<class_Area3D>` 提供檢測形狀，也能夠將 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 變為實體。
 
-\ **Warning:** A non-uniformly scaled :ref:`CollisionShape3D<class_CollisionShape3D>` will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its shape resource instead.
+\ **警告：**\ 非均勻縮放的 :ref:`CollisionShape3D<class_CollisionShape3D>` 可能不會按預期執行。請確保在所有軸上保持其縮放相同並改為調整其形狀資源。
 
 .. rst-class:: classref-reftable-group
 
@@ -60,9 +60,9 @@ A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObj
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
+碰撞形狀的顏色，在編輯器中顯示，勾選編輯器頂部的 **除錯 > 顯示碰撞形狀** 時也會在執行專案時顯示。
 
-\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
+\ **注意：**\ 預設值為 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`\ 。這裡記錄的 ``Color(0, 0, 0, 0)`` 值是佔位符，不是實際的預設除錯顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ The collision shape color that is displayed in the editor, or in the running pro
 - |void| **set_enable_debug_fill**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_debug_fill**\ (\ )
 
-If ``true``, when the shape is displayed, it will show a solid fill color in addition to its wireframe.
+如果為 ``true``\ ，則顯示形狀時除了顯示線框外還會顯示填充顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ If ``true``, when the shape is displayed, it will show a solid fill color in add
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-If ``true``, no collision will be produced. This property should be changed with :ref:`Object.set_deferred()<class_Object_method_set_deferred>`.
+如果為 ``true``\ ，則不會產生碰撞。該屬性應使用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 進行更改。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ If ``true``, no collision will be produced. This property should be changed with
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-Array of vertices which define the 2D polygon in the local XY plane.
+在區域 XY 平面中定義 2D 多邊形的頂點陣列。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 

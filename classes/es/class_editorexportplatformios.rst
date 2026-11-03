@@ -546,7 +546,7 @@ Additional data added to the root ``<dict>`` section of the `Info.plist <https:/
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+ID del equipo de Apple, una cadena única de 10 caracteres. Para encontrar tu ID de equipo, consulta la sección «Detalles de la membresía» en el panel de tu cuenta de desarrollador de Apple o la «Unidad organizativa» de tu certificado de firma de código. Consulta `Cómo encontrar tu ID de equipo <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ El "nombre completo", "nombre común" o hash SHA-1 de la identidad de firma util
 
 :ref:`bool<class_bool>` **application/delete_old_export_files_unconditionally** :ref:`🔗<class_EditorExportPlatformIOS_property_application/delete_old_export_files_unconditionally>`
 
-If ``true``, existing "project name" and "project name.xcodeproj" in the export destination directory will be unconditionally deleted during export.
+Si es ``true``, los elementos "project name" y "project name.xcodeproj" existentes en el directorio de destino de la exportación se eliminarán incondicionalmente durante el proceso de exportación.
 
 .. rst-class:: classref-item-separator
 
@@ -1565,7 +1565,7 @@ A message displayed when requesting access to the device's camera (in English).
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/camera_usage_description_localized>`
 
-A message displayed when requesting access to the device's camera (localized).
+Un mensaje que se muestra al solicitar acceso a la cámara del dispositivo (localizado).
 
 .. rst-class:: classref-item-separator
 

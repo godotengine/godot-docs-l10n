@@ -14,15 +14,15 @@ Time
 說明
 ----
 
-The Time singleton allows converting time between various formats and also getting time information from the system.
+Time 單例可以轉換各種不同格式的時間，也可以從系統取得時間資訊。
 
-This class conforms with as many of the ISO 8601 standards as possible. All dates follow the Proleptic Gregorian calendar. As such, the day before ``1582-10-15`` is ``1582-10-14``, not ``1582-10-04``. The year before 1 AD (aka 1 BC) is number ``0``, with the year before that (2 BC) being ``-1``, etc.
+這個類盡可能多地符合了 ISO 8601 標準。所有日期都遵循“外推格里歷”。因此 ``1582-10-15`` 的前一天是 ``1582-10-14``\ ，而不是 ``1582-10-04``\ 。公元 1 年的前一年（即公元前 1 年）是數字 ``0``\ ，再往前的一年（公元前 2 年）是 ``-1``\ ，以此類推。
 
-Conversion methods assume "the same timezone", and do not handle timezone conversions or DST automatically. Leap seconds are also not handled, they must be done manually if desired. Suffixes such as "Z" are not handled, you need to strip them away manually.
+轉換方法假設“時區相同”，不會自動處理時區或 DST（夏令時）的轉換。不會對閏秒進行處理，如果需要必須手動處理。“Z”等後綴也沒有處理，你需要進行手動剝除。
 
-When getting time information from the system, the time can either be in the local timezone or UTC depending on the ``utc`` parameter. However, the :ref:`get_unix_time_from_system()<class_Time_method_get_unix_time_from_system>` method always uses UTC as it returns the seconds passed since the `Unix epoch <https://en.wikipedia.org/wiki/Unix_time>`__.
+從系統取得時間資訊時，時間可能是本機時間或 UTC 時間，取決於 ``utc`` 參數。不過 :ref:`get_unix_time_from_system()<class_Time_method_get_unix_time_from_system>` 方法始終使用 UTC，因為回傳的是從 `Unix 時間原點 <https://zh.wikipedia.org/zh-cn/UNIX%E6%97%B6%E9%97%B4>`__\ 起經過的秒數。
 
-\ **Important:** The ``_from_system`` methods use the system clock that the user can manually set. **Never use** this method for precise time calculation since its results are subject to automatic adjustments by the user or the operating system. **Always use** :ref:`get_ticks_usec()<class_Time_method_get_ticks_usec>` or :ref:`get_ticks_msec()<class_Time_method_get_ticks_msec>` for precise time calculation instead, since they are guaranteed to be monotonic (i.e. never decrease).
+\ **重要：**\ ``_from_system`` 系列方法使用的是系統始終，使用者可以自行設定。\ **千萬不要**\ 使用該方法進行精確的時間計算，因為計算結果可能受到使用者或作業系統的自動調整的影響。精確時間的計算\ **請始終使用** :ref:`get_ticks_usec()<class_Time_method_get_ticks_usec>` 或 :ref:`get_ticks_msec()<class_Time_method_get_ticks_msec>`\ ，可以保證單調性（即不會變小）。
 
 .. rst-class:: classref-reftable-group
 
@@ -320,11 +320,11 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_datetime_dict_from_datetime_string**\ (\ datetime\: :ref:`String<class_String>`, weekday\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_Time_method_get_datetime_dict_from_datetime_string>`
 
-Converts the given ISO 8601 date and time string (YYYY-MM-DDTHH:MM:SS) to a dictionary of keys: ``year``, ``month``, ``day``, ``weekday``, ``hour``, ``minute``, and ``second``.
+將給定的 ISO 8601 日期和時間字串（YYYY-MM-DDTHH:MM:SS）轉換為字典，包含的鍵為：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``weekday``\ 、\ ``hour``\ 、\ ``minute``\ 、\ ``second``\ 。
 
-If ``weekday`` is ``false``, then the ``weekday`` entry is excluded (the calculation is relatively expensive).
+當 ``weekday`` 為 ``false`` 時，不包含 ``weekday`` 記錄（計算花費相對較大）。
 
-\ **Note:** Any decimal fraction in the time string will be ignored silently.
+\ **注意：**\ 時間字串中的小數會被靜默忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -502,11 +502,11 @@ If ``weekday`` is ``false``, then the ``weekday`` entry is excluded (the calcula
 
 :ref:`Dictionary<class_Dictionary>` **get_time_zone_from_system**\ (\ ) |const| :ref:`🔗<class_Time_method_get_time_zone_from_system>`
 
-Returns the current time zone as a dictionary of keys: ``bias`` and ``name``.
+以字典的形式回傳目前時區，包含的鍵為：\ ``bias`` 和 ``name``\ 。
 
-- ``bias`` is the offset from UTC in minutes, since not all time zones are multiples of an hour from UTC.
+- ``bias`` 是相對於 UTC 的偏移量，單位為分鐘，因為並不是所有時區與 UTC 的時間差都是整數倍小時。
 
-- ``name`` is the localized name of the time zone, according to the OS locale settings of the current user.
+- ``name`` 是時區的在地化名稱，取決於目前使用者的作業系統區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -554,9 +554,9 @@ Returns the current time zone as a dictionary of keys: ``bias`` and ``name``.
 
 :ref:`float<class_float>` **get_unix_time_from_system**\ (\ ) |const| :ref:`🔗<class_Time_method_get_unix_time_from_system>`
 
-Returns the current Unix timestamp in seconds based on the system time in UTC. This method is implemented by the operating system and always returns the time in UTC. The Unix timestamp is the number of seconds passed since 1970-01-01 at 00:00:00, the `Unix epoch <https://en.wikipedia.org/wiki/Unix_time>`__.
+回傳目前的 Unix 時間戳記，以秒為單位，基於 UTC 系統時間。本方法由作業系統實作，回傳的時間總是 UTC 的。Unix 時間戳記是從 `Unix 時間原點 <https://zh.wikipedia.org/zh-cn/UNIX%E6%97%B6%E9%97%B4>`__ 1970-01-01 的 00:00:00 起經過的秒數。
 
-\ **Note:** Unlike other methods that use integer timestamps, this method returns the timestamp as a :ref:`float<class_float>` for sub-second precision.
+\ **注意：**\ 與其他使用整數時間戳記的方法不同，這個方法回傳的是 :ref:`float<class_float>` 型別的時間戳記，可以表示比秒更高的精度。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

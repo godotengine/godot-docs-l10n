@@ -333,7 +333,7 @@ Descripciones de Métodos
 
 |void| **_input_event**\ (\ viewport\: :ref:`Viewport<class_Viewport>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__input_event>`
 
-Acepta :ref:`InputEvent<class_InputEvent>`\ s no gestionados. ``shape_idx`` es el índice hijo del :ref:`Shape2D<class_Shape2D>` clickeado. Conéctate a la :ref:`input_event<class_CollisionObject2D_signal_input_event>` para capturar fácilmente estos eventos.
+Acepta :ref:`InputEvent<class_InputEvent>`\ s no gestionados. ``shape_idx`` es el índice hijo del :ref:`Shape2D<class_Shape2D>` clicado. Conéctate a la :ref:`input_event<class_CollisionObject2D_signal_input_event>` para capturar fácilmente estos eventos.
 
 \ **Nota:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` requiere que :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` sea ``true`` y que al menos un bit de :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` esté establecido.
 

@@ -12,18 +12,18 @@ Dictionary
 說明
 ----
 
-Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
+字典是關聯容器，包含的值（Value）由唯一的鍵（Key）參照。新增新條目時，字典會保持插入順序。在其他編程語言中，這種資料結構有時也稱為雜湊表或關聯陣列。
 
-You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
+在大括號 ``{}`` 中放置用逗號分隔的 ``鍵: 值`` 對清單就可以定義字典。
 
-Creating a dictionary:
+字典的建立：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # Creates an empty dictionary.
+    var my_dict = {} # 建立空字典。
 
     var dict_variable_key = "Another key name"
     var dict_variable_value = "value2"
@@ -34,17 +34,17 @@ Creating a dictionary:
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Alternative Lua-style syntax.
-    # Doesn't require quotes around keys, but only string constants can be used as key names.
-    # Additionally, key names must start with a letter or an underscore.
-    # Here, `some_key` is a string literal, not a variable!
+    # 另一種 Lua 風格語法。
+    # 鍵名不需要加引號，但只能使用字串常數作為鍵名。
+    # 此外，鍵名必須以字母或底線開頭。
+    # 此處的 `some_key` 是字串字面量，不是變數！
     another_dict = {
         some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
+    var myDict = new Godot.Collections.Dictionary(); // 建立空字典。
     var pointsDict = new Godot.Collections.Dictionary
     {
         { "White", 50 },
@@ -54,7 +54,7 @@ Creating a dictionary:
 
 
 
-You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
+你可以通過鍵來存取字典中對應的值。上面的例子中，\ ``points_dict["White"]`` 會回傳 ``50``\ 。你也可以寫 ``points_dict.White``\ ，和前面的寫法是等價的。不過如果用來存取字典的鍵不是固定字串的話（例如數字或者變數），那麼就只能使用方括號語法。
 
 
 .. tabs::
@@ -64,7 +64,7 @@ You can access a dictionary's value by referencing its corresponding key. In the
     @export_enum("White", "Yellow", "Orange") var my_color: String
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # We can't use dot syntax here as `my_color` is a variable.
+        # 無法使用點語法，因為 `my_color` 是變數。
         var points = points_dict[my_color]
 
  .. code-tab:: csharp
@@ -85,9 +85,9 @@ You can access a dictionary's value by referencing its corresponding key. In the
 
 
 
-In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
+在上面的程式碼中，\ ``points`` 會被賦值為與 ``my_color`` 中選中的顏色相對應的值。
 
-Dictionaries can contain more complex data:
+字典可以包含更複雜的資料：
 
 
 .. tabs::
@@ -95,7 +95,7 @@ Dictionaries can contain more complex data:
  .. code-tab:: gdscript
 
     var my_dict = {
-        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
+        "First Array": [1, 2, 3, 4] # 將陣列賦值給字串鍵。
     }
 
  .. code-tab:: csharp
@@ -107,7 +107,7 @@ Dictionaries can contain more complex data:
 
 
 
-To add a key to an existing dictionary, access it like an existing key and assign to it:
+要往已存在的字典中新增鍵，請像鍵已存在一樣進行存取並賦值：
 
 
 .. tabs::
@@ -115,7 +115,7 @@ To add a key to an existing dictionary, access it like an existing key and assig
  .. code-tab:: gdscript
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
-    points_dict["Blue"] = 150 # Add "Blue" as a key and assign 150 as its value.
+    points_dict["Blue"] = 150 # 將 "Blue" 新增為鍵，並將 150 賦為它的值。
 
  .. code-tab:: csharp
 
@@ -125,20 +125,20 @@ To add a key to an existing dictionary, access it like an existing key and assig
         { "Yellow", 75 },
         { "Orange", 100 },
     };
-    pointsDict["Blue"] = 150; // Add "Blue" as a key and assign 150 as its value.
+    pointsDict["Blue"] = 150; // 將 "Blue" 新增為鍵，並將 150 賦為它的值。
 
 
 
-Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
+最後，對於非型別化的字典而言，同一個字典里可以包含不同型別的鍵和值：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This is a valid dictionary.
-    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
-    # Indexing styles can be mixed and matched depending on your needs.
+    # 這是有效的字典。
+    # 要存取下面的 "Nested value"，請使用 `my_dict.sub_dict.sub_key` 或 `my_dict["sub_dict"]["sub_key"]`。
+    # 索引風格可以按需混合使用。
     var my_dict = {
         "String Key": 5,
         4: [1, 2, 3],
@@ -148,8 +148,8 @@ Finally, untyped dictionaries can contain different types of keys and values in 
 
  .. code-tab:: csharp
 
-    // This is a valid dictionary.
-    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    // 這是有效的字典。
+    // 要存取下面的 "Nested value"，請使用 `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`。
     var myDict = new Godot.Collections.Dictionary {
         { "String Key", 5 },
         { 4, new Godot.Collections.Array { 1, 2, 3 } },
@@ -159,7 +159,7 @@ Finally, untyped dictionaries can contain different types of keys and values in 
 
 
 
-The keys of a dictionary can be iterated with the ``for`` keyword:
+字典中的鍵可以用 ``for`` 關鍵字進行遍歷：
 
 
 .. tabs::
@@ -175,27 +175,27 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
     var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
     foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` is the key, `amount` is the value.
+        // `fruit` 為鍵，`amount` 為值。
     }
 
 
 
-To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
+建立\ *型別化字典*\ 可以強制鍵和值所使用的型別。型別化字典能夠包含的鍵和值型別只能是給定型別，也可以是繼承自給定類的型別：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a typed dictionary with String keys and int values.
-    # Attempting to use any other type for keys or values will result in an error.
+    # 建立型別化字典，使用 String 型別的鍵和 int 型別的值。
+    # 嘗試使用其他型別的鍵或值會報錯。
     var typed_dict: Dictionary[String, int] = {
         "some_key": 1,
         "some_other_key": 2,
     }
 
-    # Creates a typed dictionary with String keys and values of any type.
-    # Attempting to use any other type for keys will result in an error.
+    # 建立型別化字典，使用 String 型別的鍵和任意型別的值。
+    # 嘗試使用其他型別的鍵會報錯。
     var typed_dict_key_only: Dictionary[String, Variant] = {
         "some_key": 12.34,
         "some_other_key": "string",
@@ -203,15 +203,15 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
  .. code-tab:: csharp
 
-    // Creates a typed dictionary with String keys and int values.
-    // Attempting to use any other type for keys or values will result in an error.
+    // 建立型別化字典，使用 String 型別的鍵和 int 型別的值。
+    // 嘗試使用其他型別的鍵或值會報錯。
     var typedDict = new Godot.Collections.Dictionary<String, int> {
         {"some_key", 1},
         {"some_other_key", 2},
     };
 
-    // Creates a typed dictionary with String keys and values of any type.
-    // Attempting to use any other type for keys will result in an error.
+    // 建立型別化字典，使用 String 型別的鍵和任意型別的值。
+    // 嘗試使用其他型別的鍵會報錯。
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
         {"some_key", 12.34},
         {"some_other_key", "string"},
@@ -219,11 +219,11 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 
 
-\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **注意：**\ 字典始終按參照傳遞。要取得能獨立於原字典進行修改的字典副本，請使用 :ref:`duplicate()<class_Dictionary_method_duplicate>`\ 。
 
-\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+\ **注意：**\ **不**\ 支援在遍歷字典時清除元素，可能造成無法預知的行為。
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **注意：**\ 在布林情境中，如果字典為空（\ ``{}``\ ），則評估為 ``false``\ 。否則，始終評估為 ``true``\ 。
 
 .. note::
 
@@ -238,7 +238,7 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 - `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `作業系統測試演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -375,7 +375,7 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 :ref:`Dictionary<class_Dictionary>` **Dictionary**\ (\ base\: :ref:`Dictionary<class_Dictionary>`, key_type\: :ref:`int<class_int>`, key_class_name\: :ref:`StringName<class_StringName>`, key_script\: :ref:`Variant<class_Variant>`, value_type\: :ref:`int<class_int>`, value_class_name\: :ref:`StringName<class_StringName>`, value_script\: :ref:`Variant<class_Variant>`\ )
 
-Creates a typed dictionary from the ``base`` dictionary. A typed dictionary can only contain keys and values of the given types, or that inherit from the given classes, as described by this constructor's parameters.
+根據 ``base`` 字典建立型別化字典。型別化字典只能包含給定型別的鍵和值，也可以是繼承自給定的類，由該建構函式的參數描述。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ Creates a typed dictionary from the ``base`` dictionary. A typed dictionary can 
 
 |void| **assign**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_Dictionary_method_assign>`
 
-Assigns elements of another ``dictionary`` into the dictionary. Resizes the dictionary to match ``dictionary``. Performs type conversions if the dictionary is typed.
+將其他 ``dictionary`` 中的元素賦值給該字典中。字典的大小會調整到與 ``dictionary`` 一致。如果為型別化字典則會執行型別轉換。
 
 .. rst-class:: classref-item-separator
 
@@ -426,11 +426,11 @@ Assigns elements of another ``dictionary`` into the dictionary. Resizes the dict
 
 :ref:`Dictionary<class_Dictionary>` **duplicate**\ (\ deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Dictionary_method_duplicate>`
 
-Returns a new copy of the dictionary.
+回傳字典的新副本。
 
-By default, a **shallow** copy is returned: all nested :ref:`Array<class_Array>`, **Dictionary**, and :ref:`Resource<class_Resource>` keys and values are shared with the original dictionary. Modifying any of those in one dictionary will also affect them in the other.
+預設情況下回傳的是\ **淺拷貝**\ ：巢狀的 :ref:`Array<class_Array>`\ 、\ **Dictionary** 和 :ref:`Resource<class_Resource>` 鍵和值與原字典共享。對這些鍵和值的修改會影響另一個字典。
 
-If ``deep`` is ``true``, a **deep** copy is returned: all nested arrays and dictionaries are also duplicated (recursively). Any :ref:`Resource<class_Resource>` is still shared with the original dictionary, though.
+如果 ``deep`` 為 ``true`` 則會回傳\ **深拷貝**\ ：巢狀的陣列和字典也會進行（遞歸的）複製。不過 :ref:`Resource<class_Resource>` 仍然是和原字典共享的。
 
 .. rst-class:: classref-item-separator
 
@@ -442,9 +442,9 @@ If ``deep`` is ``true``, a **deep** copy is returned: all nested arrays and dict
 
 :ref:`Dictionary<class_Dictionary>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Dictionary_method_duplicate_deep>`
 
-Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+深度複製該字典，類似於傳遞 ``true`` 時的 :ref:`duplicate()<class_Dictionary_method_duplicate>` 方法，但可以額外控制子資源的處理方式。
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` 必須是 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` 中的某個值。預設只會（遞歸）複製內部資源。
 
 .. rst-class:: classref-item-separator
 
@@ -484,9 +484,9 @@ Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_meth
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+回傳字典中給定 ``key``\ （鍵）所對應的值。如果該 ``key`` 不存在，則回傳 ``default``\ （預設值）；如果省略了預設值參數，則回傳 ``null``\ 。
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **注意：** 如果 ``default`` 參數的計算成本很高，或者會產生不必要的副作用，建議改用 :ref:`has()<class_Dictionary_method_has>` 方法來判斷：
 
 ::
 
@@ -505,7 +505,7 @@ Returns the corresponding value for the given ``key`` in the dictionary. If the 
 
 :ref:`Variant<class_Variant>` **get_or_add**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_Dictionary_method_get_or_add>`
 
-Gets a value and ensures the key is set. If the ``key`` exists in the dictionary, this behaves like :ref:`get()<class_Dictionary_method_get>`. Otherwise, the ``default`` value is inserted into the dictionary and returned.
+取得一個值並確保設定了鍵。如果 ``key`` 存在於字典中，則其行為類似於 :ref:`get()<class_Dictionary_method_get>`\ 。否則，\ ``default`` 值將被插入到字典中並回傳。
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ Gets a value and ensures the key is set. If the ``key`` exists in the dictionary
 
 :ref:`int<class_int>` **get_typed_key_builtin**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_key_builtin>`
 
-Returns the built-in :ref:`Variant<class_Variant>` type of the typed dictionary's keys as a :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` constant. If the keys are not typed, returns :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`. See also :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>`.
+將型別化字典中鍵的內建 :ref:`Variant<class_Variant>` 型別以 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 常數的形式回傳。如果鍵不是型別化的，則回傳 :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`\ 。另見 :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Returns the built-in :ref:`Variant<class_Variant>` type of the typed dictionary'
 
 :ref:`StringName<class_StringName>` **get_typed_key_class_name**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_key_class_name>`
 
-Returns the **built-in** class name of the typed dictionary's keys, if the built-in :ref:`Variant<class_Variant>` type is :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`. Otherwise, returns an empty :ref:`StringName<class_StringName>`. See also :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>` and :ref:`Object.get_class()<class_Object_method_get_class>`.
+如果型別化字典的鍵的內建 :ref:`Variant<class_Variant>` 型別為 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` 則回傳其\ **內建**\ 類別名稱。否則回傳空 :ref:`StringName<class_StringName>`\ 。另見 :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>` 和 :ref:`Object.get_class()<class_Object_method_get_class>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -541,7 +541,7 @@ Returns the **built-in** class name of the typed dictionary's keys, if the built
 
 :ref:`Variant<class_Variant>` **get_typed_key_script**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_key_script>`
 
-Returns the :ref:`Script<class_Script>` instance associated with this typed dictionary's keys, or ``null`` if it does not exist. See also :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>`.
+回傳與型別化字典的鍵相關聯的 :ref:`Script<class_Script>` 實例，如果不存在則回傳 ``null``\ 。另見 :ref:`is_typed_key()<class_Dictionary_method_is_typed_key>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ Returns the :ref:`Script<class_Script>` instance associated with this typed dict
 
 :ref:`int<class_int>` **get_typed_value_builtin**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_value_builtin>`
 
-Returns the built-in :ref:`Variant<class_Variant>` type of the typed dictionary's values as a :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` constant. If the values are not typed, returns :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`. See also :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>`.
+將型別化字典中值的內建 :ref:`Variant<class_Variant>` 型別以 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 常數的形式回傳。如果值不是型別化的，則回傳 :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`\ 。另見 :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Returns the built-in :ref:`Variant<class_Variant>` type of the typed dictionary'
 
 :ref:`StringName<class_StringName>` **get_typed_value_class_name**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_value_class_name>`
 
-Returns the **built-in** class name of the typed dictionary's values, if the built-in :ref:`Variant<class_Variant>` type is :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`. Otherwise, returns an empty :ref:`StringName<class_StringName>`. See also :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>` and :ref:`Object.get_class()<class_Object_method_get_class>`.
+如果型別化字典的值的內建 :ref:`Variant<class_Variant>` 型別為 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` 則回傳其\ **內建**\ 類別名稱。否則回傳空 :ref:`StringName<class_StringName>`\ 。另見 :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>` 和 :ref:`Object.get_class()<class_Object_method_get_class>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Returns the **built-in** class name of the typed dictionary's values, if the bui
 
 :ref:`Variant<class_Variant>` **get_typed_value_script**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_get_typed_value_script>`
 
-Returns the :ref:`Script<class_Script>` instance associated with this typed dictionary's values, or ``null`` if it does not exist. See also :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>`.
+回傳與型別化字典的值相關聯的 :ref:`Script<class_Script>` 實例，如果不存在則回傳 ``null``\ 。另見 :ref:`is_typed_value()<class_Dictionary_method_is_typed_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ Returns the :ref:`Script<class_Script>` instance associated with this typed dict
 
 :ref:`bool<class_bool>` **has**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Dictionary_method_has>`
 
-Returns ``true`` if the dictionary contains an entry with the given ``key``.
+如果該字典包含給定的鍵 ``key``\ ，則回傳 ``true``\ 。
 
 
 .. tabs::
@@ -601,9 +601,9 @@ Returns ``true`` if the dictionary contains an entry with the given ``key``.
         210 : null,
     }
 
-    print(my_dict.has("Godot")) # Prints true
-    print(my_dict.has(210))     # Prints true
-    print(my_dict.has(4))       # Prints false
+    print(my_dict.has("Godot")) # 輸出 true
+    print(my_dict.has(210))     # 輸出 true
+    print(my_dict.has(4))       # 輸出 false
 
  .. code-tab:: csharp
 
@@ -613,20 +613,20 @@ Returns ``true`` if the dictionary contains an entry with the given ``key``.
         { 210, default },
     };
 
-    GD.Print(myDict.ContainsKey("Godot")); // Prints True
-    GD.Print(myDict.ContainsKey(210));     // Prints True
-    GD.Print(myDict.ContainsKey(4));       // Prints False
+    GD.Print(myDict.ContainsKey("Godot")); // 輸出 True
+    GD.Print(myDict.ContainsKey(210));     // 輸出 True
+    GD.Print(myDict.ContainsKey(4));       // 輸出 False
 
 
 
-In GDScript, this is equivalent to the ``in`` operator:
+在 GDScript 中等價於 ``in`` 運算符：
 
 ::
 
     if "Godot" in { "Godot": 4 }:
-        print("The key is here!") # Will be printed.
+        print("這個鍵存在！") # 會進行輸出。
 
-\ **Note:** This method returns ``true`` as long as the ``key`` exists, even if its corresponding value is ``null``.
+\ **注意：**\ 只要鍵 ``key`` 存在，該方法就會回傳 ``true``\ ，即便這個鍵對應的值為 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -638,12 +638,12 @@ In GDScript, this is equivalent to the ``in`` operator:
 
 :ref:`bool<class_bool>` **has_all**\ (\ keys\: :ref:`Array<class_Array>`\ ) |const| :ref:`🔗<class_Dictionary_method_has_all>`
 
-Returns ``true`` if the dictionary contains all keys in the given ``keys`` array.
+如果該字典包含給定陣列 ``keys`` 中的所有鍵，則回傳 ``true``\ 。
 
 ::
 
     var data = { "width": 10, "height": 20 }
-    data.has_all(["height", "width"]) # Returns true
+    data.has_all(["height", "width"]) # 回傳 true
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ Returns ``true`` if the dictionary contains all keys in the given ``keys`` array
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_hash>`
 
-Returns a hashed 32-bit integer value representing the dictionary contents.
+回傳代表該字典內容的 32 位元整數雜湊值。
 
 
 .. tabs::
@@ -665,21 +665,21 @@ Returns a hashed 32-bit integer value representing the dictionary contents.
     var dict1 = { "A": 10, "B": 2 }
     var dict2 = { "A": 10, "B": 2 }
 
-    print(dict1.hash() == dict2.hash()) # Prints true
+    print(dict1.hash() == dict2.hash()) # 輸出 true
 
  .. code-tab:: csharp
 
     var dict1 = new Godot.Collections.Dictionary { { "A", 10 }, { "B", 2 } };
     var dict2 = new Godot.Collections.Dictionary { { "A", 10 }, { "B", 2 } };
 
-    // Godot.Collections.Dictionary has no Hash() method. Use GD.Hash() instead.
-    GD.Print(GD.Hash(dict1) == GD.Hash(dict2)); // Prints True
+    // Godot.Collections.Dictionary 沒有 Hash() 方法。請改用 GD.Hash()。
+    GD.Print(GD.Hash(dict1) == GD.Hash(dict2)); // 輸出 True
 
 
 
-\ **Note:** Dictionaries with the same entries but in a different order will not have the same hash.
+\ **注意：**\ 如果兩個字典條目相同，但順序不同，則雜湊值也不同。
 
-\ **Note:** Dictionaries with equal hash values are *not* guaranteed to be the same, because of hash collisions. On the contrary, dictionaries with different hash values are guaranteed to be different.
+\ **注意：**\ 雜湊值相同的字典\ *不保證*\ 相同，因為可能存在雜湊碰撞。相對地，雜湊值不同的字典保證不同。
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ Returns a hashed 32-bit integer value representing the dictionary contents.
 
 :ref:`bool<class_bool>` **is_same_typed**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |const| :ref:`🔗<class_Dictionary_method_is_same_typed>`
 
-Returns ``true`` if the dictionary is typed the same as ``dictionary``.
+如果該字典與 ``dictionary`` 的型別相同，則回傳 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -727,7 +727,7 @@ Returns ``true`` if the dictionary is typed the same as ``dictionary``.
 
 :ref:`bool<class_bool>` **is_same_typed_key**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |const| :ref:`🔗<class_Dictionary_method_is_same_typed_key>`
 
-Returns ``true`` if the dictionary's keys are typed the same as ``dictionary``'s keys.
+如果該字典的鍵與 ``dictionary`` 的鍵的型別相同，則回傳 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Returns ``true`` if the dictionary's keys are typed the same as ``dictionary``'s
 
 :ref:`bool<class_bool>` **is_same_typed_value**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |const| :ref:`🔗<class_Dictionary_method_is_same_typed_value>`
 
-Returns ``true`` if the dictionary's values are typed the same as ``dictionary``'s values.
+如果該字典的值與 ``dictionary`` 的值的型別相同，則回傳 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -751,7 +751,7 @@ Returns ``true`` if the dictionary's values are typed the same as ``dictionary``
 
 :ref:`bool<class_bool>` **is_typed**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_is_typed>`
 
-Returns ``true`` if the dictionary is typed. Typed dictionaries can only store keys/values of their associated type and provide type safety for the ``[]`` operator. Methods of typed dictionary still return :ref:`Variant<class_Variant>`.
+如果該字典為型別化字典則回傳 ``true``\ 。型別化字典只能儲存關聯型別的鍵和值，能夠為 ``[]`` 運算符提供型別安全。型別化字典的方法回傳的仍然是 :ref:`Variant<class_Variant>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -763,7 +763,7 @@ Returns ``true`` if the dictionary is typed. Typed dictionaries can only store k
 
 :ref:`bool<class_bool>` **is_typed_key**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_is_typed_key>`
 
-Returns ``true`` if the dictionary's keys are typed.
+如果字典的鍵有型別約束，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -775,7 +775,7 @@ Returns ``true`` if the dictionary's keys are typed.
 
 :ref:`bool<class_bool>` **is_typed_value**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_is_typed_value>`
 
-Returns ``true`` if the dictionary's values are typed.
+如果字典的值有型別約束，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +799,7 @@ Returns ``true`` if the dictionary's values are typed.
 
 |void| **make_read_only**\ (\ ) :ref:`🔗<class_Dictionary_method_make_read_only>`
 
-使該字典唯讀，即禁用字典內容的修改。不適用於巢狀內容，例如內嵌字典的內容。
+使該字典唯讀，即停用字典內容的修改。不適用於巢狀內容，例如內嵌字典的內容。
 
 .. rst-class:: classref-item-separator
 
@@ -811,7 +811,7 @@ Returns ``true`` if the dictionary's values are typed.
 
 |void| **merge**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, overwrite\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Dictionary_method_merge>`
 
-Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys are not copied over, unless ``overwrite`` is ``true``.
+將 ``dictionary`` 中的條目新增到該字典中。預設情況下，不會複製重複的鍵，除非 ``overwrite`` 為 ``true``\ 。
 
 
 .. tabs::
@@ -821,11 +821,11 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
     var dict = { "item": "sword", "quantity": 2 }
     var other_dict = { "quantity": 15, "color": "silver" }
 
-    # Overwriting of existing keys is disabled by default.
+    # 預設情況下停用覆蓋已有鍵。
     dict.merge(other_dict)
     print(dict)  # { "item": "sword", "quantity": 2, "color": "silver" }
 
-    # With overwriting of existing keys enabled.
+    # 啟用覆蓋已有鍵。
     dict.merge(other_dict, true)
     print(dict)  # { "item": "sword", "quantity": 15, "color": "silver" }
 
@@ -843,17 +843,17 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
         ["color"] = "silver",
     };
 
-    // Overwriting of existing keys is disabled by default.
+    // 預設情況下停用覆蓋已有鍵。
     dict.Merge(otherDict);
     GD.Print(dict); // { "item": "sword", "quantity": 2, "color": "silver" }
 
-    // With overwriting of existing keys enabled.
+    // 啟用覆蓋已有鍵。
     dict.Merge(otherDict, true);
     GD.Print(dict); // { "item": "sword", "quantity": 15, "color": "silver" }
 
 
 
-\ **Note:** :ref:`merge()<class_Dictionary_method_merge>` is *not* recursive. Nested dictionaries are considered as keys that can be overwritten or not depending on the value of ``overwrite``, but they will never be merged together.
+\ **注意：**\ :ref:`merge()<class_Dictionary_method_merge>` *不*\ 是遞歸的。巢狀的字典是否可被視為鍵可以被覆蓋，具體取決於 ``overwrite`` 的值，但它們永遠不會被合併在一起。
 
 .. rst-class:: classref-item-separator
 
@@ -865,17 +865,17 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
 
 :ref:`Dictionary<class_Dictionary>` **merged**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, overwrite\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Dictionary_method_merged>`
 
-Returns a copy of this dictionary merged with the other ``dictionary``. By default, duplicate keys are not copied over, unless ``overwrite`` is ``true``. See also :ref:`merge()<class_Dictionary_method_merge>`.
+回傳該字典與 ``dictionary`` 合併後的副本。預設情況下不會複製重複的鍵，除非 ``overwrite`` 為 ``true``\ 。另見 :ref:`merge()<class_Dictionary_method_merge>`\ 。
 
-This method is useful for quickly making dictionaries with default values:
+該方法可以使用預設值快速製作字典：
 
 ::
 
     var base = { "fruit": "apple", "vegetable": "potato" }
     var extra = { "fruit": "orange", "dressing": "vinegar" }
-    # Prints { "fruit": "orange", "vegetable": "potato", "dressing": "vinegar" }
+    # 輸出 { "fruit": "orange", "vegetable": "potato", "dressing": "vinegar" }
     print(extra.merged(base))
-    # Prints { "fruit": "apple", "vegetable": "potato", "dressing": "vinegar" }
+    # 輸出 { "fruit": "apple", "vegetable": "potato", "dressing": "vinegar" }
     print(extra.merged(base, true))
 
 .. rst-class:: classref-item-separator
@@ -888,7 +888,7 @@ This method is useful for quickly making dictionaries with default values:
 
 :ref:`bool<class_bool>` **recursive_equal**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, recursion_count\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Dictionary_method_recursive_equal>`
 
-Returns ``true`` if the two dictionaries contain the same keys and values, inner **Dictionary** and :ref:`Array<class_Array>` keys and values are compared recursively.
+如果兩個字典包含相同的鍵和值，則回傳 ``true``\ ，內部的 **Dictionary** 和 :ref:`Array<class_Array>` 的鍵和值將進行遞歸比較。
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Returns ``true`` if the two dictionaries contain the same keys and values, inner
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Sets the value of the element at the given ``key`` to the given ``value``. Returns ``true`` if the value is set successfully. Fails and returns ``false`` if the dictionary is read-only, or if ``key`` and ``value`` don't match the dictionary's types. This is the same as using the ``[]`` operator (``dict[key] = value``).
+將給定 ``key`` 對應元素的值設定為指定的 ``value``\ 。若設定成功則回傳 ``true``\ 。若字典為只讀，或 ``key`` 與 ``value`` 的型別與字典型別不匹配，則操作失敗並回傳 ``false``\ 。此方法等同於使用 ``[]`` 運算符（即 ``dict[key] = value``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -924,7 +924,7 @@ Sets the value of the element at the given ``key`` to the given ``value``. Retur
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Dictionary_method_sort>`
 
-Sorts the dictionary in ascending order, by key. The final order is dependent on the "less than" (``<``) comparison between keys.
+將字典中的鍵按遞增排列。最終的順序取決於鍵與鍵之間的“小於”比較（\ ``<``\ ）。
 
 
 .. tabs::
@@ -937,7 +937,7 @@ Sorts the dictionary in ascending order, by key. The final order is dependent on
 
 
 
-This method ensures that the dictionary's entries are ordered consistently when :ref:`keys()<class_Dictionary_method_keys>` or :ref:`values()<class_Dictionary_method_values>` are called, or when the dictionary needs to be converted to a string through :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>` or :ref:`JSON.stringify()<class_JSON_method_stringify>`.
+該方法能夠確保字典中條目順序的一致性，適用於呼叫 :ref:`keys()<class_Dictionary_method_keys>` 或 :ref:`values()<class_Dictionary_method_values>` 的情況，以及通過 :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>` 或 :ref:`JSON.stringify()<class_JSON_method_stringify>` 將字典轉換為字串的情況。
 
 .. rst-class:: classref-item-separator
 

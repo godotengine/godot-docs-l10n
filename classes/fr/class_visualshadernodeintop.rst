@@ -89,7 +89,7 @@ Calculates the remainder of two numbers using ``a % b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_MAX** = ``5``
 
-Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.
+Renvoie le plus grand nombre entre deux nombres. Sera traduit en ``max(a,b)`` dans le langage Shader de Godot.
 
 .. _class_VisualShaderNodeIntOp_constant_OP_MIN:
 

@@ -7,18 +7,18 @@ NativeMenu
 
 **繼承：** :ref:`Object<class_Object>`
 
-A server interface for OS native menus.
+作業系統原生選單的伺服器介面。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**NativeMenu** handles low-level access to the OS native global menu bar and popup menus.
+**NativeMenu** 處理對 OS 原生全域選單欄和彈出選單的低級存取。
 
-\ **Note:** This is low-level API, consider using :ref:`MenuBar<class_MenuBar>` with :ref:`MenuBar.prefer_global_menu<class_MenuBar_property_prefer_global_menu>` set to ``true``, and :ref:`PopupMenu<class_PopupMenu>` with :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` set to ``true``.
+\ **注意：**\ 這是低級 API，請考慮使用將 :ref:`MenuBar.prefer_global_menu<class_MenuBar_property_prefer_global_menu>` 設定為 ``true`` 的 :ref:`MenuBar<class_MenuBar>`\ ，以及將 :ref:`PopupMenu.prefer_native_menu<class_PopupMenu_property_prefer_native_menu>` 設定為 ``true`` 的 :ref:`PopupMenu<class_PopupMenu>`\ 。
 
-To create a menu, use :ref:`create_menu()<class_NativeMenu_method_create_menu>`, add menu items using ``add_*_item`` methods. To remove a menu, use :ref:`free_menu()<class_NativeMenu_method_free_menu>`.
+要建立一個選單，請使用 :ref:`create_menu()<class_NativeMenu_method_create_menu>`\ ，使用 ``add_*_item`` 方法新增選單項。要移除一個選單，請使用 :ref:`free_menu()<class_NativeMenu_method_free_menu>`\ 。
 
 ::
 
@@ -33,7 +33,7 @@ To create a menu, use :ref:`create_menu()<class_NativeMenu_method_create_menu>`,
             paste()
 
     func _enter_tree():
-        # Create new menu and add items:
+        # 建立新選單並新增項目：
         menu = NativeMenu.create_menu()
         NativeMenu.add_item(menu, "Cut", _menu_callback, Callable(), "ITEM_CUT")
         NativeMenu.add_item(menu, "Copy", _menu_callback, Callable(), "ITEM_COPY")
@@ -41,11 +41,11 @@ To create a menu, use :ref:`create_menu()<class_NativeMenu_method_create_menu>`,
         NativeMenu.add_item(menu, "Paste", _menu_callback, Callable(), "ITEM_PASTE")
 
     func _on_button_pressed():
-        # Show popup menu at mouse position:
+        # 在滑鼠位置顯示彈出選單：
         NativeMenu.popup(menu, DisplayServer.mouse_get_position())
 
     func _exit_tree():
-        # Remove menu when it's no longer needed:
+        # 當不再需要時移除選單：
         NativeMenu.free_menu(menu)
 
 .. rst-class:: classref-reftable-group
@@ -217,7 +217,7 @@ enum **Feature**: :ref:`🔗<enum_NativeMenu_Feature>`
 
 :ref:`Feature<enum_NativeMenu_Feature>` **FEATURE_GLOBAL_MENU** = ``0``
 
-**NativeMenu** supports native global main menu.
+**NativeMenu** 支援原生全域主選單。
 
 .. _class_NativeMenu_constant_FEATURE_POPUP_MENU:
 
@@ -225,7 +225,7 @@ enum **Feature**: :ref:`🔗<enum_NativeMenu_Feature>`
 
 :ref:`Feature<enum_NativeMenu_Feature>` **FEATURE_POPUP_MENU** = ``1``
 
-**NativeMenu** supports native popup menus.
+**NativeMenu** 支援原生彈出選單。
 
 .. _class_NativeMenu_constant_FEATURE_OPEN_CLOSE_CALLBACK:
 
@@ -233,7 +233,7 @@ enum **Feature**: :ref:`🔗<enum_NativeMenu_Feature>`
 
 :ref:`Feature<enum_NativeMenu_Feature>` **FEATURE_OPEN_CLOSE_CALLBACK** = ``2``
 
-**NativeMenu** supports menu open and close callbacks.
+**NativeMenu** 支援選單打開和關閉回呼。
 
 .. _class_NativeMenu_constant_FEATURE_HOVER_CALLBACK:
 
@@ -241,7 +241,7 @@ enum **Feature**: :ref:`🔗<enum_NativeMenu_Feature>`
 
 :ref:`Feature<enum_NativeMenu_Feature>` **FEATURE_HOVER_CALLBACK** = ``3``
 
-**NativeMenu** supports menu item hover callback.
+**NativeMenu** 支援選單項懸停回呼。
 
 .. _class_NativeMenu_constant_FEATURE_KEY_CALLBACK:
 
@@ -249,7 +249,7 @@ enum **Feature**: :ref:`🔗<enum_NativeMenu_Feature>`
 
 :ref:`Feature<enum_NativeMenu_Feature>` **FEATURE_KEY_CALLBACK** = ``4``
 
-**NativeMenu** supports menu item accelerator/key callback.
+**NativeMenu** 支援選單項加速器/鍵回呼。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ enum **SystemMenus**: :ref:`🔗<enum_NativeMenu_SystemMenus>`
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **INVALID_MENU_ID** = ``0``
 
-Invalid special system menu ID.
+無效的特殊系統選單 ID。
 
 .. _class_NativeMenu_constant_MAIN_MENU_ID:
 
@@ -275,7 +275,7 @@ Invalid special system menu ID.
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **MAIN_MENU_ID** = ``1``
 
-Global main menu ID.
+全域主選單 ID。
 
 .. _class_NativeMenu_constant_APPLICATION_MENU_ID:
 
@@ -283,7 +283,7 @@ Global main menu ID.
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **APPLICATION_MENU_ID** = ``2``
 
-Application (first menu after "Apple" menu on macOS) menu ID.
+應用程式（macOS 上“Apple”選單後的第一個選單）選單 ID。
 
 .. _class_NativeMenu_constant_WINDOW_MENU_ID:
 
@@ -291,7 +291,7 @@ Application (first menu after "Apple" menu on macOS) menu ID.
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **WINDOW_MENU_ID** = ``3``
 
-"Window" menu ID (on macOS this menu includes standard window control items and a list of open windows).
+“視窗”選單 ID（在 macOS 上，該選單包括標準視窗控制項和打開的視窗清單）。
 
 .. _class_NativeMenu_constant_HELP_MENU_ID:
 
@@ -299,7 +299,7 @@ Application (first menu after "Apple" menu on macOS) menu ID.
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **HELP_MENU_ID** = ``4``
 
-"Help" menu ID (on macOS this menu includes help search bar).
+“協助”選單 ID（在 macOS 上，該選單包括協助搜尋欄）。
 
 .. _class_NativeMenu_constant_DOCK_MENU_ID:
 
@@ -307,7 +307,7 @@ Application (first menu after "Apple" menu on macOS) menu ID.
 
 :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` **DOCK_MENU_ID** = ``5``
 
-Dock icon right-click menu ID (on macOS this menu include standard application control items and a list of open windows).
+Dock 圖示右鍵選單 ID（在 macOS 上，該選單包括標準應用程式控制項和打開的視窗清單）。
 
 .. rst-class:: classref-section-separator
 
@@ -324,17 +324,17 @@ Dock icon right-click menu ID (on macOS this menu include standard application c
 
 :ref:`int<class_int>` **add_check_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_check_item>`
 
-Adds a new checkable item with text ``label`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的可勾選選單項，顯示的文字為 ``label``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -346,17 +346,17 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_icon_check_item**\ (\ rid\: :ref:`RID<class_RID>`, icon\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_icon_check_item>`
 
-Adds a new checkable item with text ``label`` and icon ``icon`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的可勾選選單項，顯示的文字為 ``label``\ ，圖示為 ``icon``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -368,17 +368,17 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_icon_item**\ (\ rid\: :ref:`RID<class_RID>`, icon\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_icon_item>`
 
-Adds a new item with text ``label`` and icon ``icon`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的選單項，顯示的文字為 ``label``\ ，圖示為 ``icon``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -390,19 +390,19 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_icon_radio_check_item**\ (\ rid\: :ref:`RID<class_RID>`, icon\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_icon_radio_check_item>`
 
-Adds a new radio-checkable item with text ``label`` and icon ``icon`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的單選選單項，顯示的文字為 ``label``\ ，圖示為 ``icon``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** Radio-checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See :ref:`set_item_checked()<class_NativeMenu_method_set_item_checked>` for more info on how to control it.
+\ **注意：**\ 單選選單項只負責顯示選中標記，並沒有任何內建檢查行為，必須手動進行選中、取消選中的操作。關於如何進行控制的更多資訊見 :ref:`set_item_checked()<class_NativeMenu_method_set_item_checked>`\ 。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -414,17 +414,17 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_item>`
 
-Adds a new item with text ``label`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單新增新的選單項，顯示的文字為 ``label``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -436,21 +436,21 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_multistate_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, max_states\: :ref:`int<class_int>`, default_state\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_multistate_item>`
 
-Adds a new item with text ``label`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的選單項，顯示的文字為 ``label``\ 。
 
-Contrarily to normal binary items, multistate items can have more than two states, as defined by ``max_states``. Each press or activate of the item will increase the state by one. The default value is defined by ``default_state``.
+與常規的二態選單項不同，多狀態選單項的狀態可以多於兩個，由 ``max_states`` 定義。每點選或啟用該選單項一次，狀態就會加一。預設值由 ``default_state`` 定義。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** By default, there's no indication of the current item state, it should be changed manually.
+\ **注意：**\ 預設情況下不會展示目前選單項的狀態，應該手動更改。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -462,19 +462,19 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_radio_check_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>` = Callable(), key_callback\: :ref:`Callable<class_Callable>` = Callable(), tag\: :ref:`Variant<class_Variant>` = null, accelerator\: :ref:`Key<enum_@GlobalScope_Key>` = 0, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_radio_check_item>`
 
-Adds a new radio-checkable item with text ``label`` to the global menu ``rid``.
+向 ID 為 ``rid`` 的全域選單中新增新的單選選單項，顯示的文字為 ``label``\ 。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+還可以定義鍵盤快捷鍵 ``accelerator``\ ，按下後即便該選單按鈕尚未打開，也會進行觸發。\ ``accelerator`` 通常是將 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** Radio-checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See :ref:`set_item_checked()<class_NativeMenu_method_set_item_checked>` for more info on how to control it.
+\ **注意：**\ 單選選單項只負責顯示選中標記，並沒有任何內建檢查行為，必須手動進行選中、取消選中的操作。關於如何進行控制的更多資訊見 :ref:`set_item_checked()<class_NativeMenu_method_set_item_checked>`\ 。
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **注意：**\ ``callback`` 和 ``key_callback`` Callable 均只接受一個 Variant 參數，傳入 Callable 的參數是傳給 ``tag`` 的參數。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** On Windows, ``accelerator`` and ``key_callback`` are ignored.
+\ **注意：**\ 在 Windows 上會忽略 ``accelerator`` 和 ``key_callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -486,11 +486,11 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 :ref:`int<class_int>` **add_separator**\ (\ rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_separator>`
 
-Adds a separator between items to the global menu ``rid``. Separators also occupy an index.
+向 ID 為 ``rid`` 的全域選單中新增分隔符。分隔符也會佔據一個索引號。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -502,11 +502,11 @@ Returns index of the inserted item, it's not guaranteed to be the same as ``inde
 
 :ref:`int<class_int>` **add_submenu_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, submenu_rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_submenu_item>`
 
-Adds an item that will act as a submenu of the global menu ``rid``. The ``submenu_rid`` argument is the RID of the global menu that will be shown when the item is clicked.
+向 ID 為 ``rid`` 的全域選單中新增作為子選單的選單項。\ ``submenu_rid`` 參數為全域選單根選單項的 RID，會在點選該選單項時顯示。
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+回傳插入選單項的索引，不保證與 ``index`` 的值相同。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -518,9 +518,9 @@ Returns index of the inserted item, it's not guaranteed to be the same as ``inde
 
 |void| **clear**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_clear>`
 
-Removes all items from the global menu ``rid``.
+從全域選單中移除所有選單項 ``rid``\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -532,9 +532,9 @@ Removes all items from the global menu ``rid``.
 
 :ref:`RID<class_RID>` **create_menu**\ (\ ) :ref:`🔗<class_NativeMenu_method_create_menu>`
 
-Creates a new global menu object.
+新建全域選單物件。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -546,9 +546,9 @@ Creates a new global menu object.
 
 :ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
 
-Returns the index of the item with the submenu specified by ``submenu_rid``. Indices are automatically assigned to each item by the engine.
+回傳由 ``submenu_rid`` 指定的子選單項的索引。索引是由引擎自動分配給每個選單項的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法僅在 macOS 和 Windows 系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +560,9 @@ Returns the index of the item with the submenu specified by ``submenu_rid``. Ind
 
 :ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine.
+回傳帶有指定 ``tag``\ （標籤）的項目的索引。索引是由引擎自動分配給每個項目的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法僅在 macOS 和 Windows 系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +574,9 @@ Returns the index of the item with the specified ``tag``. Indices are automatica
 
 :ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
 
-Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine.
+回傳帶有指定 ``text``\ （文字）的項目的索引。索引是由引擎自動分配給每個項目的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法僅在 macOS 和 Windows 系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -588,9 +588,9 @@ Returns the index of the item with the specified ``text``. Indices are automatic
 
 |void| **free_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_free_menu>`
 
-Frees a global menu object created by this **NativeMenu**.
+釋放該 **NativeMenu** 所建立的全域選單物件。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -616,9 +616,9 @@ Frees a global menu object created by this **NativeMenu**.
 
 :ref:`Callable<class_Callable>` **get_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_callback>`
 
-Returns the callback of the item at index ``idx``.
+回傳索引為 ``idx`` 的選單項的回呼。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -630,9 +630,9 @@ Returns the callback of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_item_count**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_count>`
 
-Returns number of items in the global menu ``rid``.
+回傳全域選單 ``rid`` 中的選單項的數量。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -644,9 +644,9 @@ Returns number of items in the global menu ``rid``.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_icon>`
 
-Returns the icon of the item at index ``idx``.
+回傳索引為 ``idx`` 的選單項的圖示。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -686,9 +686,9 @@ Returns the icon of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_max_states>`
 
-Returns number of states of a multistate item. See :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` for details.
+回傳多狀態項的狀態數。詳見 :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -700,9 +700,9 @@ Returns number of states of a multistate item. See :ref:`add_multistate_item()<c
 
 :ref:`int<class_int>` **get_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_state>`
 
-Returns the state of a multistate item. See :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` for details.
+回傳多狀態項的狀態。詳見 :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -714,9 +714,9 @@ Returns the state of a multistate item. See :ref:`add_multistate_item()<class_Na
 
 :ref:`RID<class_RID>` **get_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_submenu>`
 
-Returns the submenu ID of the item at index ``idx``. See :ref:`add_submenu_item()<class_NativeMenu_method_add_submenu_item>` for more info on how to add a submenu.
+回傳索引為 ``idx`` 的選單項的子選單 ID。關於如何新增子選單的更多資訊見 :ref:`add_submenu_item()<class_NativeMenu_method_add_submenu_item>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -728,9 +728,9 @@ Returns the submenu ID of the item at index ``idx``. See :ref:`add_submenu_item(
 
 :ref:`Variant<class_Variant>` **get_item_tag**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tag>`
 
-Returns the metadata of the specified item, which might be of any type. You can set it with :ref:`set_item_tag()<class_NativeMenu_method_set_item_tag>`, which provides a simple way of assigning context data to items.
+回傳指定選單項的中繼資料，可能是任何型別。中繼資料可以使用 :ref:`set_item_tag()<class_NativeMenu_method_set_item_tag>` 設定，該方法提供了一種將情境資料分配給選單項的簡單方式。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -742,9 +742,9 @@ Returns the metadata of the specified item, which might be of any type. You can 
 
 :ref:`String<class_String>` **get_item_text**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_text>`
 
-Returns the text of the item at index ``idx``.
+回傳索引為 ``idx`` 的選單項的文字。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -770,9 +770,9 @@ Returns the text of the item at index ``idx``.
 
 :ref:`float<class_float>` **get_minimum_width**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_minimum_width>`
 
-Returns global menu minimum width.
+回傳全域選單的最小寬度。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -784,9 +784,9 @@ Returns global menu minimum width.
 
 :ref:`Callable<class_Callable>` **get_popup_close_callback**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_popup_close_callback>`
 
-Returns global menu close callback.
+回傳全域選單的關閉回呼。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -798,9 +798,9 @@ Returns global menu close callback.
 
 :ref:`Callable<class_Callable>` **get_popup_open_callback**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_popup_open_callback>`
 
-Returns global menu open callback.
+回傳全域選單的打開回呼。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -812,9 +812,9 @@ Returns global menu open callback.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_size>`
 
-Returns global menu size.
+回傳全域選單的大小。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -826,9 +826,9 @@ Returns global menu size.
 
 :ref:`RID<class_RID>` **get_system_menu**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu>`
 
-Returns RID of a special system menu.
+回傳特殊系統選單的 RID。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -840,9 +840,9 @@ Returns RID of a special system menu.
 
 :ref:`String<class_String>` **get_system_menu_name**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_name>`
 
-Returns readable name of a special system menu.
+回傳特殊系統選單的可讀名稱。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -854,9 +854,9 @@ Returns readable name of a special system menu.
 
 :ref:`String<class_String>` **get_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_text>`
 
-Returns the text of the system menu item.
+回傳系統選單項的文字。
 
-\ **Note:** This method is implemented on macOS.
+\ **注意：**\ 該方法在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -868,9 +868,9 @@ Returns the text of the system menu item.
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Feature<enum_NativeMenu_Feature>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_feature>`
 
-Returns ``true`` if the specified ``feature`` is supported by the current **NativeMenu**, ``false`` otherwise.
+如果目前的 **NativeMenu** 支援指定的特性 ``feature``\ ，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -882,9 +882,9 @@ Returns ``true`` if the specified ``feature`` is supported by the current **Nati
 
 :ref:`bool<class_bool>` **has_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_menu>`
 
-Returns ``true`` if ``rid`` is valid global menu.
+如果 ``rid`` 是有效的全域選單，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -896,9 +896,9 @@ Returns ``true`` if ``rid`` is valid global menu.
 
 :ref:`bool<class_bool>` **has_system_menu**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_system_menu>`
 
-Returns ``true`` if a special system menu is supported.
+如果支援特殊系統選單則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -910,9 +910,9 @@ Returns ``true`` if a special system menu is supported.
 
 :ref:`bool<class_bool>` **is_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checkable>`
 
-Returns ``true`` if the item at index ``idx`` is checkable in some way, i.e. if it has a checkbox or radio button.
+如果索引為 ``idx`` 的選單項能夠以某種方式被勾選，即有核取方塊或選項按鈕，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -924,9 +924,9 @@ Returns ``true`` if the item at index ``idx`` is checkable in some way, i.e. if 
 
 :ref:`bool<class_bool>` **is_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checked>`
 
-Returns ``true`` if the item at index ``idx`` is checked.
+如果索引 ``idx`` 處的選單項被勾選，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -938,11 +938,11 @@ Returns ``true`` if the item at index ``idx`` is checked.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_disabled>`
 
-Returns ``true`` if the item at index ``idx`` is disabled. When it is disabled it can't be selected, or its action invoked.
+如果索引 ``idx`` 處的選單項被停用，則回傳 ``true``\ 。停用後，無法選擇它，也無法呼叫其動作。
 
-See :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` for more info on how to disable an item.
+有關如何停用選單項的更多資訊，請參閱 :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -954,11 +954,11 @@ See :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` for mo
 
 :ref:`bool<class_bool>` **is_item_hidden**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_hidden>`
 
-Returns ``true`` if the item at index ``idx`` is hidden.
+如果索引 ``idx`` 處的選單項被隱藏，則回傳 ``true``\ 。
 
-See :ref:`set_item_hidden()<class_NativeMenu_method_set_item_hidden>` for more info on how to hide an item.
+有關如何隱藏選單項的更多資訊，請參閱 :ref:`set_item_hidden()<class_NativeMenu_method_set_item_hidden>`\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -970,11 +970,11 @@ See :ref:`set_item_hidden()<class_NativeMenu_method_set_item_hidden>` for more i
 
 :ref:`bool<class_bool>` **is_item_radio_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_radio_checkable>`
 
-Returns ``true`` if the item at index ``idx`` has radio button-style checkability.
+如果索引為 ``idx`` 的選單項為選項按鈕風格，則回傳 ``true``\ 。
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **注意：**\ 僅為裝飾作用；必須自行為單選組新增勾選、取消勾選的邏輯。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -986,9 +986,9 @@ Returns ``true`` if the item at index ``idx`` has radio button-style checkabilit
 
 :ref:`bool<class_bool>` **is_opened**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_opened>`
 
-Returns ``true`` if the menu is currently opened.
+如果選單目前已打開，則回傳 ``true``\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1000,9 +1000,9 @@ Returns ``true`` if the menu is currently opened.
 
 :ref:`bool<class_bool>` **is_system_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_system_menu>`
 
-Return ``true`` is global menu is a special system menu.
+如果全域選單為特殊系統選單則回傳 ``true`` 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1014,9 +1014,9 @@ Return ``true`` is global menu is a special system menu.
 
 |void| **popup**\ (\ rid\: :ref:`RID<class_RID>`, position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_NativeMenu_method_popup>`
 
-Shows the global menu at ``position`` in the screen coordinates.
+在螢幕座標中的 ``position`` 處顯示全域選單。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1028,11 +1028,11 @@ Shows the global menu at ``position`` in the screen coordinates.
 
 |void| **remove_item**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_remove_item>`
 
-Removes the item at index ``idx`` from the global menu ``rid``.
+從全域選單 ``rid`` 中移除索引 ``idx`` 處的選單項。
 
-\ **Note:** The indices of items after the removed item will be shifted by one.
+\ **注意：**\ 被移除選單項之後的選單項的索引將移動一格。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1044,9 +1044,9 @@ Removes the item at index ``idx`` from the global menu ``rid``.
 
 |void| **set_interface_direction**\ (\ rid\: :ref:`RID<class_RID>`, is_rtl\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_interface_direction>`
 
-Sets the menu text layout direction from right-to-left if ``is_rtl`` is ``true``.
+如果 ``is_rtl`` 為 ``true``\ ，則設定選單文字版面配置方向為從右到左。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1072,11 +1072,11 @@ Sets the menu text layout direction from right-to-left if ``is_rtl`` is ``true``
 
 |void| **set_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_callback>`
 
-Sets the callback of the item at index ``idx``. Callback is emitted when an item is pressed.
+設定索引為 ``idx`` 的選單項的回呼。回呼會在按下選單項時發出。
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **注意：**\ ``callback`` Callable 只接受一個 Variant 參數，傳入 Callable 的參數是建立選單項時傳給 ``tag`` 參數的值。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1088,9 +1088,9 @@ Sets the callback of the item at index ``idx``. Callback is emitted when an item
 
 |void| **set_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checkable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checkable>`
 
-Sets whether the item at index ``idx`` has a checkbox. If ``false``, sets the type of the item to plain text.
+設定索引為 ``idx`` 的選單項是否為核取方塊。如果為 ``false``\ ，則會將該選單項的型別設定為純文字。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1102,9 +1102,9 @@ Sets whether the item at index ``idx`` has a checkbox. If ``false``, sets the ty
 
 |void| **set_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checked>`
 
-Sets the checkstate status of the item at index ``idx``.
+設定索引為 ``idx`` 的選單項的勾選狀態。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1116,9 +1116,9 @@ Sets the checkstate status of the item at index ``idx``.
 
 |void| **set_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_disabled>`
 
-Enables/disables the item at index ``idx``. When it is disabled, it can't be selected and its action can't be invoked.
+啟用/停用索引為 ``idx`` 的選單項。停用狀態下無法被選中，也無法啟用動作。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1130,9 +1130,9 @@ Enables/disables the item at index ``idx``. When it is disabled, it can't be sel
 
 |void| **set_item_hidden**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hidden>`
 
-Hides/shows the item at index ``idx``. When it is hidden, an item does not appear in a menu and its action cannot be invoked.
+隱藏/顯示索引為 ``idx`` 的選單項。當它被隱藏時，項目不會出現在選單中，並且無法呼叫其操作。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1144,11 +1144,11 @@ Hides/shows the item at index ``idx``. When it is hidden, an item does not appea
 
 |void| **set_item_hover_callbacks**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hover_callbacks>`
 
-Sets the callback of the item at index ``idx``. The callback is emitted when an item is hovered.
+設定索引為 ``idx`` 的選單項的回呼。回呼會在選單項被懸停時發出。
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **注意：**\ ``callback`` Callable 需要接受一個 Variant 參數，傳入 Callable 的參數是建立選單項時傳給 ``tag`` 參數的值。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ Sets the callback of the item at index ``idx``. The callback is emitted when an 
 
 |void| **set_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_icon>`
 
-Replaces the :ref:`Texture2D<class_Texture2D>` icon of the specified ``idx``.
+替換指定索引 ``idx`` 的 :ref:`Texture2D<class_Texture2D>` 圖示。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
-\ **Note:** This method is not supported by macOS Dock menu items.
+\ **注意：**\ macOS Dock 選單項不支援該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1190,13 +1190,13 @@ Replaces the :ref:`Texture2D<class_Texture2D>` icon of the specified ``idx``.
 
 :ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
 
-Changes the index of the item at index ``idx`` to be at index ``target_idx``. This can be used to move an item above other items.
+將位於索引 ``idx`` 處的項目，更改其位置至索引 ``target_idx`` 處。這可以用來把一個項目移動到其它項目的前面。
 
-Returns the new index of the moved item, it's not guaranteed to be the same as ``target_idx``.
+回傳被移動項目的新索引，不能保證該回傳值一定與 ``target_idx`` 相同。
 
-\ **Note:** The indices of any items between index ``idx`` and index ``target_idx`` will be shifted by one.
+\ **注意：** 位於索引 ``idx`` 和索引 ``target_idx`` 之間的所有其他項目，其索引都會相應地發生一位的偏移。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法僅在 macOS 和 Windows 系統上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,9 +1224,9 @@ Returns the new index of the moved item, it's not guaranteed to be the same as `
 
 |void| **set_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_max_states>`
 
-Sets number of state of a multistate item. See :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` for details.
+設定多狀態項的狀態數。詳見 :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1238,11 @@ Sets number of state of a multistate item. See :ref:`add_multistate_item()<class
 
 |void| **set_item_radio_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checkable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_radio_checkable>`
 
-Sets the type of the item at the specified index ``idx`` to radio button. If ``false``, sets the type of the item to plain text.
+將索引為 ``idx`` 的選單項設定為選項按鈕風格。如果為 ``false``\ ，則會將該選單項的型別設定為純文字。
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **注意：**\ 僅為裝飾作用；必須自行為單選組新增選中、取消選中的邏輯。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1254,9 +1254,9 @@ Sets the type of the item at the specified index ``idx`` to radio button. If ``f
 
 |void| **set_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, state\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_state>`
 
-Sets the state of a multistate item. See :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` for details.
+設定多狀態項的狀態。詳見 :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>`\ 。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1268,9 +1268,9 @@ Sets the state of a multistate item. See :ref:`add_multistate_item()<class_Nativ
 
 |void| **set_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, submenu_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_submenu>`
 
-Sets the submenu RID of the item at index ``idx``. The submenu is a global menu that would be shown when the item is clicked.
+設定索引 ``idx`` 處選單項的子選單 RID。子選單是一個全域選單，點選該選單項時將顯示該選單。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1282,9 +1282,9 @@ Sets the submenu RID of the item at index ``idx``. The submenu is a global menu 
 
 |void| **set_item_tag**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tag\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tag>`
 
-Sets the metadata of an item, which may be of any type. You can later get it with :ref:`get_item_tag()<class_NativeMenu_method_get_item_tag>`, which provides a simple way of assigning context data to items.
+設定指定選單項的中繼資料，可以是任何型別。後續可以使用 :ref:`get_item_tag()<class_NativeMenu_method_get_item_tag>` 取得，它提供了一種將情境資料分配給項目的簡單方式。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1296,9 +1296,9 @@ Sets the metadata of an item, which may be of any type. You can later get it wit
 
 |void| **set_item_text**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_text>`
 
-Sets the text of the item at index ``idx``.
+設定索引為 ``idx`` 的選單項的文字。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1324,9 +1324,9 @@ Sets the text of the item at index ``idx``.
 
 |void| **set_minimum_width**\ (\ rid\: :ref:`RID<class_RID>`, width\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NativeMenu_method_set_minimum_width>`
 
-Sets the minimum width of the global menu.
+設定全域選單的最小寬度。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1338,11 +1338,11 @@ Sets the minimum width of the global menu.
 
 |void| **set_popup_close_callback**\ (\ rid\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_popup_close_callback>`
 
-Registers callable to emit when the menu is about to show.
+注冊可呼叫體，在選單即將顯示時發出。
 
-\ **Note:** The OS can simulate menu opening to track menu item changes and global shortcuts, in which case the corresponding close callback is not triggered. Use :ref:`is_opened()<class_NativeMenu_method_is_opened>` to check if the menu is currently opened.
+\ **注意：**\ 作業系統可以模擬選單打開來追蹤選單項更改和全域快捷鍵，在這種情況下不會觸發相應的關閉回呼。請使用 :ref:`is_opened()<class_NativeMenu_method_is_opened>` 檢查選單目前是否已打開。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：**\ 該方法在 macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1354,9 +1354,9 @@ Registers callable to emit when the menu is about to show.
 
 |void| **set_popup_open_callback**\ (\ rid\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_popup_open_callback>`
 
-Registers callable to emit after the menu is closed.
+注冊可呼叫函式以在選單關閉後發出。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1368,9 +1368,9 @@ Registers callable to emit after the menu is closed.
 
 |void| **set_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_system_menu_text>`
 
-Sets the text of the system menu item.
+設定系統選單項的文字。
 
-\ **Note:** This method is implemented on macOS.
+\ **注意：**\ 該方法在 macOS 上實作。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,7 +14,7 @@ VisualShaderNodeTransformOp
 說明
 ----
 
-Applies :ref:`operator<class_VisualShaderNodeTransformOp_property_operator>` to two transform (4×4 matrices) inputs.
+對兩個變換（4×4 矩陣）輸入應用 :ref:`operator<class_VisualShaderNodeTransformOp_property_operator>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -143,7 +143,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeTransformOp_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeTransformOp_Operator>` **get_operator**\ (\ )
 
-The type of the operation to be performed on the transforms.
+要對變換執行的運算的型別。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

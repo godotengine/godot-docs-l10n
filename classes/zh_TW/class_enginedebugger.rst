@@ -14,7 +14,7 @@ EngineDebugger
 說明
 ----
 
-**EngineDebugger** 處理編輯器與正在運作的遊戲之間的通信。它會在運作遊戲時啟動，可以通過它收發消息，還負責管理性能分析器。
+**EngineDebugger** 處理編輯器與正在運作的遊戲之間的通信。它會在運作遊戲時啟動，可以通過它收發訊息，還負責管理效能分析器。
 
 .. rst-class:: classref-reftable-group
 
@@ -87,7 +87,7 @@ EngineDebugger
 
 |void| **clear_breakpoints**\ (\ ) :ref:`🔗<class_EngineDebugger_method_clear_breakpoints>`
 
-Clears all breakpoints.
+清除所有斷點。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Clears all breakpoints.
 
 |void| **debug**\ (\ can_continue\: :ref:`bool<class_bool>` = true, is_error_breakpoint\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EngineDebugger_method_debug>`
 
-Starts a debug break in script execution, optionally specifying whether the program can continue based on ``can_continue`` and whether the break was due to a breakpoint.
+在執行腳本時觸發除錯中斷，可以使用 ``can_continue`` 指定程式是否能夠繼續執行，還可以指定該中斷是否是由斷點導致的。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Starts a debug break in script execution, optionally specifying whether the prog
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the current debug depth.
+回傳目前除錯深度。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Returns the current debug depth.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the number of lines that remain.
+回傳剩餘的行數。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Returns the number of lines that remain.
 
 |void| **insert_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_insert_breakpoint>`
 
-Inserts a new breakpoint with the given ``source`` and ``line``.
+使用給定的 ``source`` 和 ``line`` 插入一個新斷點。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Inserts a new breakpoint with the given ``source`` and ``line``.
 
 :ref:`bool<class_bool>` **is_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EngineDebugger_method_is_breakpoint>`
 
-Returns ``true`` if the given ``source`` and ``line`` represent an existing breakpoint.
+如果給定的 ``source`` 和 ``line`` 代表一個已存在的斷點，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns ``true`` if the given ``source`` and ``line`` represent an existing brea
 
 :ref:`bool<class_bool>` **is_skipping_breakpoints**\ (\ ) |const| :ref:`🔗<class_EngineDebugger_method_is_skipping_breakpoints>`
 
-Returns ``true`` if the debugger is skipping breakpoints otherwise ``false``.
+如果除錯器跳過斷點，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Returns ``true`` if the debugger is skipping breakpoints otherwise ``false``.
 
 |void| **line_poll**\ (\ ) :ref:`🔗<class_EngineDebugger_method_line_poll>`
 
-Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught.
+強制除錯器事件的一個處理循環。該方法的目的是當腳本可能過於繁忙時不時地處理事件，以便可以捕獲無限循環之類的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Forces a processing loop of debugger events. The purpose of this method is just 
 
 |void| **profiler_enable**\ (\ name\: :ref:`StringName<class_StringName>`, enable\: :ref:`bool<class_bool>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_EngineDebugger_method_profiler_enable>`
 
-使用給定的 ``name`` 和 ``arguments`` 呼叫分析器中的 ``toggle`` 可呼叫體。會根據 ``enable`` 參數啟用/禁用同一分析器。
+使用給定的 ``name`` 和 ``arguments`` 呼叫分析器中的 ``toggle`` 可呼叫體。會根據 ``enable`` 參數啟用/停用同一分析器。
 
 .. rst-class:: classref-item-separator
 
@@ -259,11 +259,11 @@ Forces a processing loop of debugger events. The purpose of this method is just 
 
 |void| **register_message_capture**\ (\ name\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EngineDebugger_method_register_message_capture>`
 
-Registers a message capture with given ``name``. If ``name`` is "my_message" then messages starting with "my_message:" will be called with the given callable.
+使用名稱 ``name`` 注冊訊息捕獲。如果 ``name`` 為“my_message”則會為“my_message:”開頭的訊息呼叫給定的可呼叫體。
 
-The callable must accept a message string and a data array as argument. The callable should return ``true`` if the message is recognized.
+可呼叫體必須接受訊息字串和資料陣列參數。如果能夠識別該訊息，則可呼叫體應回傳 ``true``\ 。
 
-\ **Note:** The callable will receive the message with the prefix stripped, unlike :ref:`EditorDebuggerPlugin._capture()<class_EditorDebuggerPlugin_private_method__capture>`. See the :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` description for an example.
+\ **注意：**\ 可呼叫體收到的訊息已剝離前綴，這一點與 :ref:`EditorDebuggerPlugin._capture()<class_EditorDebuggerPlugin_private_method__capture>` 不同。範例見 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` 的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The callable must accept a message string and a data array as argument. The call
 
 |void| **remove_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_remove_breakpoint>`
 
-Removes a breakpoint with the given ``source`` and ``line``.
+使用給定的 ``source`` 和 ``line`` 移除一個斷點。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ Removes a breakpoint with the given ``source`` and ``line``.
 
 |void| **script_debug**\ (\ language\: :ref:`ScriptLanguage<class_ScriptLanguage>`, can_continue\: :ref:`bool<class_bool>` = true, is_error_breakpoint\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EngineDebugger_method_script_debug>`
 
-Starts a debug break in script execution, optionally specifying whether the program can continue based on ``can_continue`` and whether the break was due to a breakpoint.
+在執行腳本時觸發除錯中斷，可以使用 ``can_continue`` 指定程式是否能夠繼續執行，還可以指定該中斷是否是由斷點導致的。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Starts a debug break in script execution, optionally specifying whether the prog
 
 |void| **send_message**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_EngineDebugger_method_send_message>`
 
-發送消息，內容為給定的 ``message`` 和 ``data`` 陣列。
+發送訊息，內容為給定的 ``message`` 和 ``data`` 陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Starts a debug break in script execution, optionally specifying whether the prog
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Sets the current debugging depth.
+設定目前除錯深度。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Sets the current debugging depth.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Sets the current debugging lines that remain.
+設定目前剩餘的除錯行。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ Sets the current debugging lines that remain.
 
 |void| **unregister_message_capture**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_unregister_message_capture>`
 
-將具有給定名稱 ``name`` 的消息捕獲解除註冊。
+將具有給定名稱 ``name`` 的訊息捕獲解除註冊。
 
 .. rst-class:: classref-item-separator
 

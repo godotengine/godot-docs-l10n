@@ -14,7 +14,7 @@ VisualShaderNodeUIntParameter
 說明
 ----
 
-無符號 :ref:`int<class_int>` 型別的 :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>`\ 。還可以對值的可接受範圍進行自定義。
+無符號 :ref:`int<class_int>` 型別的 :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>`\ 。還可以對值的可接受範圍進行自訂。
 
 .. rst-class:: classref-reftable-group
 

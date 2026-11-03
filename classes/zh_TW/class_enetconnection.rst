@@ -172,7 +172,7 @@ enum **EventType**: :ref:`🔗<enum_ENetConnection_EventType>`
 
 :ref:`EventType<enum_ENetConnection_EventType>` **EVENT_RECEIVE** = ``3``
 
-A packet has been received from a peer. The array will contain the peer which sent the packet and the channel number upon which the packet was received. The received packet will be queued to the associated :ref:`ENetPacketPeer<class_ENetPacketPeer>`.
+已從對等端接收到一個封包。該陣列將包含發送封包的對等端和接收封包的通道號。接收到的封包將被排隊到關聯的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 \ **注意：**\ 大多數遊戲的網路設計，都涉及頻繁發送許多小封包（每個小於 4 KB）。如果有疑問，建議保留預設壓縮演算法，因為它最適合這些小封包。
 
-\ **注意：**\ 壓縮模式必須在服務端及其所有使用者端上設定為相同的值。如果使用者端上設定的壓縮模式與服務端上設定的不同，則使用者端將無法連接。
+\ **注意：**\ 壓縮模式必須在伺服端及其所有使用者端上設定為相同的值。如果使用者端上設定的壓縮模式與伺服端上設定的不同，則使用者端將無法連接。
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`ENetPacketPeer<class_ENetPacketPeer>` **connect_to_host**\ (\ address\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`, channels\: :ref:`int<class_int>` = 0, data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_connect_to_host>`
 
-Initiates a connection to a foreign ``address`` using the specified ``port`` and allocating the requested ``channels``. Optional ``data`` can be passed during connection in the form of a 32 bit integer.
+使用指定的連接埠 ``port`` 並分配所需的通道 ``channels``\ ，向外部位址 ``address`` 建立連接。可以在連接期間可以傳遞資料 ``data`` ，形式為 32 位元整數。
 
-\ **Note:** You must call either :ref:`create_host()<class_ENetConnection_method_create_host>` or :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` on both ends before calling this method.
+\ **注意：**\ 在呼叫該方法之前，必須在兩端都呼叫 :ref:`create_host()<class_ENetConnection_method_create_host>` 或 :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -297,11 +297,11 @@ Initiates a connection to a foreign ``address`` using the specified ``port`` and
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_host**\ (\ max_peers\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_create_host>`
 
-Creates an ENetHost that allows up to ``max_peers`` connected peers, each allocating up to ``max_channels`` channels, optionally limiting bandwidth to ``in_bandwidth`` and ``out_bandwidth`` (if greater than zero).
+建立一個 ENetHost，允許最多 ``max_peers`` 個已連接的對等端，每個對等端最多分配 ``max_channels`` 個通道，可選擇將頻寬限制為 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大於零）。
 
-This method binds a random available dynamic UDP port on the host machine at the *unspecified* address. Use :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` to specify the address and port.
+該方法在\ *未指定*\ 位址的主機上綁定一個隨機可用的動態 UDP 連接埠。使用 :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` 指定位址和連接埠。
 
-\ **Note:** It is necessary to create a host in both client and server in order to establish a connection.
+\ **注意：**\ 必須在用戶端和伺服器中建立主機才能建立連接。
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ This method binds a random available dynamic UDP port on the host machine at the
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_host_bound**\ (\ bind_address\: :ref:`String<class_String>`, bind_port\: :ref:`int<class_int>`, max_peers\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_create_host_bound>`
 
-Creates an ENetHost bound to the given ``bind_address`` and ``bind_port`` that allows up to ``max_peers`` connected peers, each allocating up to ``max_channels`` channels, optionally limiting bandwidth to ``in_bandwidth`` and ``out_bandwidth`` (if greater than zero).
+建立一個綁定到給定的 ``bind_address`` 和 ``bind_port`` 的 ENetHost，允許最多 ``max_peers`` 個已連接的對等端，每個對等端最多分配 ``max_channels`` 個通道，可選擇將頻寬限制為 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大於零）。
 
-\ **Note:** It is necessary to create a host in both client and server in order to establish a connection.
+\ **注意：**\ 為了建立連接，必須在用戶端和伺服器中建立一個主機。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Creates an ENetHost bound to the given ``bind_address`` and ``bind_port`` that a
 
 :ref:`Error<enum_@GlobalScope_Error>` **dtls_client_setup**\ (\ hostname\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_ENetConnection_method_dtls_client_setup>`
 
-配置此 ENetHost 以使用允許對 ENet 使用者端進行 DTLS 加密的自訂 Godot 擴充。在 :ref:`connect_to_host()<class_ENetConnection_method_connect_to_host>` 之前呼叫它，讓 ENet 連接使用 DTLS 根據 ``hostname`` 驗證伺服器憑證。可以通過可選的 ``client_options`` 參數來自訂受信任的憑證授權，或禁用通用名稱驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+配置此 ENetHost 以使用允許對 ENet 使用者端進行 DTLS 加密的自訂 Godot 擴充。在 :ref:`connect_to_host()<class_ENetConnection_method_connect_to_host>` 之前呼叫它，讓 ENet 連接使用 DTLS 根據 ``hostname`` 驗證伺服器憑證。可以通過可選的 ``client_options`` 參數來自訂受信任的憑證授權，或停用通用名稱驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Creates an ENetHost bound to the given ``bind_address`` and ``bind_port`` that a
 
 :ref:`float<class_float>` **pop_statistic**\ (\ statistic\: :ref:`HostStatistic<enum_ENetConnection_HostStatistic>`\ ) :ref:`🔗<class_ENetConnection_method_pop_statistic>`
 
-Returns and resets host statistics.
+回傳並重設主機統計資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns and resets host statistics.
 
 |void| **refuse_new_connections**\ (\ refuse\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ENetConnection_method_refuse_new_connections>`
 
-將 DTLS 服務端配置為自動斷開新連接。
+將 DTLS 伺服端配置為自動斷開新連接。
 
 \ **注意：**\ 這個方法只有在呼叫了 :ref:`dtls_server_setup()<class_ENetConnection_method_dtls_server_setup>` 後才有用。
 
@@ -439,11 +439,11 @@ Returns and resets host statistics.
 
 :ref:`Array<class_Array>` **service**\ (\ timeout\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_service>`
 
-Waits for events on this connection and shuttles packets between the host and its peers, with the given ``timeout`` (in milliseconds). The returned :ref:`Array<class_Array>` will have 4 elements. An :ref:`EventType<enum_ENetConnection_EventType>`, the :ref:`ENetPacketPeer<class_ENetPacketPeer>` which generated the event, the event associated data (if any), the event associated channel (if any). If the generated event is :ref:`EVENT_RECEIVE<class_ENetConnection_constant_EVENT_RECEIVE>`, the received packet will be queued to the associated :ref:`ENetPacketPeer<class_ENetPacketPeer>`.
+等待該連接上的事件，並在給定的 ``timeout``\ （以毫秒為單位）內，在主機與其對等端之間傳送封包。回傳的 :ref:`Array<class_Array>` 將包含 4 個元素。一個 :ref:`EventType<enum_ENetConnection_EventType>`\ 、生成事件的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 、事件關聯資料（如果有）、事件關聯通道（如果有）。如果生成的事件是 :ref:`EVENT_RECEIVE<class_ENetConnection_constant_EVENT_RECEIVE>`\ ，則接收的封包將被佇列到關聯的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
 
-Call this function regularly to handle connections, disconnections, and to receive new packets.
+定期呼叫該函式來處理連接、斷開連接和接收新封包。
 
-\ **Note:** This method must be called on both ends involved in the event (sending and receiving hosts).
+\ **注意：**\ 必須在事件涉及的兩端（發送和接收主機）呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -455,11 +455,11 @@ Call this function regularly to handle connections, disconnections, and to recei
 
 |void| **socket_send**\ (\ destination_address\: :ref:`String<class_String>`, destination_port\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ENetConnection_method_socket_send>`
 
-Sends a ``packet`` toward a destination from the address and port currently bound by this ENetConnection instance.
+向目標發送封包 ``packet``\ ，發送方是該 ENetConnection 實例目前綁定的位址和連接埠。
 
-This is useful as it serves to establish entries in NAT routing tables on all devices between this bound instance and the public facing internet, allowing a prospective client's connection packets to be routed backward through the NAT device(s) between the public internet and this host.
+這樣能夠在該綁定實例和公共互連網之間的所有裝置的 NAT 路由表中建立相關條目，因此非常有用，能夠讓潛在用戶端的連接封包能夠通過公共互連網和該主機之間的 NAT 裝置進行反向路由。
 
-This requires forward knowledge of a prospective client's address and communication port as seen by the public internet - after any NAT devices have handled their connection request. This information can be obtained by a `STUN <https://en.wikipedia.org/wiki/STUN>`__ service, and must be handed off to your host by an entity that is not the prospective client. This will never work for a client behind a Symmetric NAT due to the nature of the Symmetric NAT routing algorithm, as their IP and Port cannot be known beforehand.
+要求在 NAT 裝置處理連接請求後，預先瞭解公共互連網所看到的潛在用戶端的位址和通信連接埠。這一資訊可以通過 `STUN <https://zh.wikipedia.org/wiki/STUN>`__ 服務取得，必須由非潛在用戶端的實體交給你的主機。由於對稱 NAT 路由算法的性質，這種方法對於對稱 NAT 之後的用戶端無效，因為無法提前得知他們的 IP 和連接埠。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,11 +14,11 @@ MobileVRInterface
 說明
 ----
 
-This is a generic mobile VR implementation where you need to provide details about the phone and HMD used. It does not rely on any existing framework. This is the most basic interface we have. For the best effect, you need a mobile phone with a gyroscope and accelerometer.
+這是一個通用的移動 VR 實作，你需要提供有關所用手機和 HMD 的詳細資訊。它不取決於任何現有框架。這是我們擁有的最基本的介面。為了獲得最佳效果，你需要一部帶有陀螺儀和加速度計的手機。
 
-Note that even though there is no positional tracking, the camera will assume the headset is at a height of 1.85 meters. You can change this by setting :ref:`eye_height<class_MobileVRInterface_property_eye_height>`.
+請注意，即使沒有位置追蹤，相機也會假定頭戴裝置處於 1.85 米的高度。可以通過設定 :ref:`eye_height<class_MobileVRInterface_property_eye_height>` 來更改該設定。
 
-You can initialize this interface as follows:
+可以按如下方式初始化該介面：
 
 ::
 
@@ -26,7 +26,7 @@ You can initialize this interface as follows:
     if interface and interface.initialize():
         get_viewport().use_xr = true
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`, :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`, :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>` and :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>` must be enabled.
+\ **注意：**\ 在 Android 上必須啟用 :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`\ 、\ :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`\ 、\ :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>` 和 :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -182,7 +182,7 @@ k2 鏡頭因數，見 k1。
 - |void| **set_offset_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_offset_rect**\ (\ )
 
-Set the offset rect relative to the area being rendered. A length of 1 represents the whole rendering area on that axis.
+設定相對於正在渲染的區域的偏移矩形。1 的長度表示該軸上的整個渲染區域。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Set the offset rect relative to the area being rendered. A length of 1 represent
 - |void| **set_oversample**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversample**\ (\ )
 
-過取樣設定。由於鏡頭失真，我們必須以比螢幕自然解析度更高的品質算繪我們的緩衝區。介於 1.5 和 2.0 之間的值通常可以提供良好的結果，但會犧牲性能。
+過取樣設定。由於鏡頭失真，我們必須以比螢幕自然解析度更高的品質渲染我們的緩衝區。介於 1.5 和 2.0 之間的值通常可以提供良好的結果，但會犧牲效能。
 
 .. rst-class:: classref-item-separator
 
@@ -216,9 +216,9 @@ Set the offset rect relative to the area being rendered. A length of 1 represent
 - |void| **set_vrs_min_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_min_radius**\ (\ )
 
-The minimum radius around the focal point where full quality is guaranteed if VRS is used as a percentage of screen size.
+如果 VRS 用作螢幕大小的百分比，則焦點周圍可保證完全品質的最小半徑。
 
-\ **Note:** Mobile and Forward+ renderers only. Requires :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
+\ **注意：**\ 僅限 Mobile 和 Forward+ 渲染器。需要將 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 設定為 :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ The minimum radius around the focal point where full quality is guaranteed if VR
 - |void| **set_vrs_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vrs_strength**\ (\ )
 
-The strength used to calculate the VRS density map. The greater this value, the more noticeable VRS is. This improves performance at the cost of quality.
+用於計算 VRS 密度圖的強度。該值越大，VRS 越明顯。這會以犧牲品質為代價來提高效能。
 
-\ **Note:** Mobile and Forward+ renderers only. Requires :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
+\ **注意：**\ 僅限 Mobile 和 Forward+ 渲染器。需要將 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 設定為 :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -9,14 +9,14 @@ DPITexture
 
 **繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG image.
+可自動縮放的 :ref:`Texture2D<class_Texture2D>`\ ，基於 SVG 影像。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG image. **DPITexture**\ s are used to automatically re-rasterize icons and other texture based UI theme elements to match viewport scale and font oversampling. See also :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` ("canvas_items" mode) and :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`.
+可自動縮放的 :ref:`Texture2D<class_Texture2D>`\ ，基於 SVG 影像。\ **DPITexture** 可以對圖示及其他基於紋理的 UI 主題元素自動重新進行柵格化，從而匹配視埠的縮放和字型過取樣設定。另見 :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`\ （“canvas_items”模式）和 :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -80,7 +80,7 @@ An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG imag
 - |void| **set_base_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_base_scale**\ (\ )
 
-Texture scale. ``1.0`` is the original SVG size. Higher values result in a larger image.
+紋理縮放。\ ``1.0`` 是原始 SVG 大小。值越大得到的影像越大。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Texture scale. ``1.0`` is the original SVG size. Higher values result in a large
 - |void| **set_color_map**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_color_map**\ (\ )
 
-If set, remaps texture colors according to :ref:`Color<class_Color>`-:ref:`Color<class_Color>` map.
+設定後，會根據 :ref:`Color<class_Color>`-:ref:`Color<class_Color>` 映射對紋理中的顏色進行重映射。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ If set, remaps texture colors according to :ref:`Color<class_Color>`-:ref:`Color
 - |void| **set_fix_alpha_border**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fix_alpha_border**\ (\ )
 
-If ``true``, puts pixels of the same surrounding color in transition from transparent to opaque areas. For textures displayed with bilinear filtering, this helps to reduce the outline effect when exporting images from an image editor.
+如果設為 ``true``\ ，它會在從透明到不透明的過渡區域，填充周圍相同顏色的像素。對於使用雙線性過濾（bilinear filtering）顯示的紋理，這有助於減少從影像編輯器匯出圖片時產生的邊緣輪廓效應。
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ If ``true``, puts pixels of the same surrounding color in transition from transp
 - |void| **set_premult_alpha**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_premult_alpha**\ (\ )
 
-An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_DPITexture_property_fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+除了使用 :ref:`fix_alpha_border<class_DPITexture_property_fix_alpha_border>` 來修復發黑的邊緣，另一種替代方案是使用預乘 Alpha（premultiplied alpha）。啟用此選項後，紋理會被自動轉換成這種格式。不過，預乘 Alpha 紋理需要配合特定的材質才能正確顯示：
 
-- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- 在 2D 中：需要建立一個 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`\ ，並在使用了該紋理的 :ref:`CanvasItem<class_CanvasItem>` 上，將其混合模式設定為 :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>`\ 。如果你使用的是自訂的 ``canvas_item`` 著色器，則需要在程式碼中加入 ``render_mode blend_premul_alpha;``\ 。
 
-- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- 在 3D 中：需要建立一個 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ ，並在使用了該紋理的材質上，將其混合模式設定為 :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>`\ 。如果你使用的是自訂的 ``spatial`` 著色器，則需要在程式碼中加入 ``render_mode blend_premul_alpha;``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_DPIT
 - |void| **set_saturation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_saturation**\ (\ )
 
-Overrides texture saturation.
+覆蓋紋理飽和度。
 
 .. rst-class:: classref-section-separator
 
@@ -169,7 +169,7 @@ Overrides texture saturation.
 
 :ref:`DPITexture<class_DPITexture>` **create_from_string**\ (\ source\: :ref:`String<class_String>`, scale\: :ref:`float<class_float>` = 1.0, saturation\: :ref:`float<class_float>` = 1.0, color_map\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_DPITexture_method_create_from_string>`
 
-Creates a new **DPITexture** and initializes it by allocating and setting the SVG data to ``source``.
+新建 **DPITexture**\ ，並通過分配記憶體並將 SVG 資料設定為 ``source`` 來對其進行初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Creates a new **DPITexture** and initializes it by allocating and setting the SV
 
 :ref:`RID<class_RID>` **get_scaled_rid**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_scaled_rid>`
 
-Returns the :ref:`RID<class_RID>` of the texture rasterized to match the oversampling of the currently drawn canvas item.
+回傳柵格化後的紋理 :ref:`RID<class_RID>`\ ，與目前繪製的畫布項的過取樣匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the :ref:`RID<class_RID>` of the texture rasterized to match the oversam
 
 :ref:`String<class_String>` **get_source**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_source>`
 
-Returns this SVG texture's source code.
+回傳該 SVG 紋理的原始碼。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns this SVG texture's source code.
 
 |void| **set_source**\ (\ source\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DPITexture_method_set_source>`
 
-Sets this SVG texture's source code.
+設定該 SVG 紋理的原始碼。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

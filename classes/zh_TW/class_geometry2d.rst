@@ -220,9 +220,9 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **bresenham_line**\ (\ from\: :ref:`Vector2i<class_Vector2i>`, to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Geometry2D_method_bresenham_line>`
 
-Returns the `Bresenham line <https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm>`__ between the ``from`` and ``to`` points. A Bresenham line is a series of pixels that draws a line and is always 1-pixel thick on every row and column of the drawing (never more, never less).
+回傳起點 ``from`` 和終點 ``to`` 之間的\ `佈雷森漢姆直線 <https://zh.wikipedia.org/zh-hans/%E5%B8%83%E9%9B%B7%E6%A3%AE%E6%BC%A2%E5%A7%86%E7%9B%B4%E7%B7%9A%E6%BC%94%E7%AE%97%E6%B3%95>`__\ 。佈雷森漢姆直線是由一系列像素點構成的直線，繪製的每一行每一列的粗細都（不多不少）始終為 1 像素。
 
-Example code to draw a line between two :ref:`Marker2D<class_Marker2D>` nodes using a series of :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` calls:
+在兩個 :ref:`Marker2D<class_Marker2D>` 節點之間呼叫一系列 :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` 繪製直線：
 
 ::
 
@@ -390,9 +390,9 @@ Example code to draw a line between two :ref:`Marker2D<class_Marker2D>` nodes us
 
 :ref:`bool<class_bool>` **is_polygon_clockwise**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_is_polygon_clockwise>`
 
-Returns ``true`` if ``polygon``'s vertices are ordered in clockwise order, otherwise returns ``false``.
+如果 ``polygon`` 的頂點按順時針順序排列，則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
-\ **Note:** Assumes a Cartesian coordinate system where ``+x`` is right and ``+y`` is up. If using screen coordinates (``+y`` is down), the result will need to be flipped (i.e. a ``true`` result will indicate counter-clockwise).
+\ **注意：**\ 假設笛卡爾座標系中 ``+x`` 為右，\ ``+y`` 為上。如果使用螢幕座標（\ ``+y`` 為下），則需要翻轉結果（即 ``true`` 結果將標識是逆時針）。
 
 .. rst-class:: classref-item-separator
 
@@ -404,9 +404,9 @@ Returns ``true`` if ``polygon``'s vertices are ordered in clockwise order, other
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
+回傳兩條直線 (``from_a``, ``dir_a``) 和 (``from_b``, ``dir_b``) 之間的交點。回傳一個 :ref:`Vector2<class_Vector2>`\ （二維向量），如果兩條直線平行，則回傳 ``null``\ 。
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+注意：\ ``from`` 和 ``dir`` *並不是* 線段或射線的端點，而是代表該直線上一個已知的點（\ ``from``\ ）和它的斜率/方向（\ ``dir``\ ）。如果你想取得兩條線段之間的交點，請使用 :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`\ 。
 
 
 .. tabs::
@@ -475,13 +475,13 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **offset_polygon**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`, delta\: :ref:`float<class_float>`, join_type\: :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` = 0\ ) :ref:`🔗<class_Geometry2D_method_offset_polygon>`
 
-Inflates or deflates ``polygon`` by ``delta`` units (pixels). If ``delta`` is positive, makes the polygon grow outward. If ``delta`` is negative, shrinks the polygon inward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. Returns an empty array if ``delta`` is negative and the absolute value of it approximately exceeds the minimum bounding rectangle dimensions of the polygon.
+按 ``delta`` 單位（像素）膨脹或縮小 ``polygon``\ 。如果 ``delta`` 為正，則使多邊形向外增長。如果 ``delta`` 為負，則使多邊形向內收縮。回傳一個多邊形陣列，因為膨脹/收縮可能會產生多個離散的多邊形。如果 ``delta`` 為負，且其絕對值大約超過多邊形的最小邊界矩形尺寸，則回傳一個空陣列。
 
-Each polygon's vertices will be rounded as determined by ``join_type``.
+每個多邊形的頂點將根據 ``join_type`` 決定進行捨入。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+該操作可能會產生一個外部多邊形（邊界）和內部多邊形（孔），這可以通過呼叫 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 來區分。
 
-\ **Note:** To translate the polygon's vertices specifically, multiply them to a :ref:`Transform2D<class_Transform2D>`:
+\ **注意：**\ 要具體平移多邊形的頂點，將它們乘以一個 :ref:`Transform2D<class_Transform2D>`\ ：
 
 
 .. tabs::
@@ -491,14 +491,14 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
     var polygon = PackedVector2Array([Vector2(0, 0), Vector2(100, 0), Vector2(100, 100), Vector2(0, 100)])
     var offset = Vector2(50, 50)
     polygon = Transform2D(0, offset) * polygon
-    print(polygon) # Prints [(50.0, 50.0), (150.0, 50.0), (150.0, 150.0), (50.0, 150.0)]
+    print(polygon) # 輸出 [(50.0, 50.0), (150.0, 50.0), (150.0, 150.0), (50.0, 150.0)]
 
  .. code-tab:: csharp
 
     Vector2[] polygon = [new Vector2(0, 0), new Vector2(100, 0), new Vector2(100, 100), new Vector2(0, 100)];
     var offset = new Vector2(50, 50);
     polygon = new Transform2D(0, offset) * polygon;
-    GD.Print((Variant)polygon); // Prints [(50, 50), (150, 50), (150, 150), (50, 150)]
+    GD.Print((Variant)polygon); // 輸出 [(50, 50), (150, 50), (150, 150), (50, 150)]
 
 
 
@@ -512,13 +512,13 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **offset_polyline**\ (\ polyline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, delta\: :ref:`float<class_float>`, join_type\: :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` = 0, end_type\: :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` = 3\ ) :ref:`🔗<class_Geometry2D_method_offset_polyline>`
 
-Inflates or deflates ``polyline`` by ``delta`` units (pixels), producing polygons. If ``delta`` is positive, makes the polyline grow outward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. If ``delta`` is negative, returns an empty array.
+將 ``polyline`` 膨脹或縮小 ``delta`` 個單位（像素），以產生多邊形。如果 ``delta`` 為正，則使折線向外增長。回傳一組多邊形，因為膨脹/收縮可能會產生多個離散的多邊形。如果 ``delta`` 為負，則回傳一個空陣列。
 
-Each polygon's vertices will be rounded as determined by ``join_type``.
+每個多邊形的頂點將由 ``join_type`` 決定進行捨入。
 
-Each polygon's endpoints will be rounded as determined by ``end_type``.
+每個多邊形的端點將由 ``end_type`` 決定進行捨入。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+該操作可能會產生一個外多邊形（邊界）和一個內多邊形（孔），這可以通過呼叫 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 來區分。
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
+檢查兩條線段是否相交，其中線段 ``a`` 位於 ``from_a`` 和 ``to_a`` 之間，線段 ``b`` 位於 ``from_b`` 和 ``to_b`` 之間。如果這兩條線段相交，會將交點作為一個 :ref:`Vector2<class_Vector2>`\ （二維向量）回傳。如果沒有發生相交，則回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -87,7 +87,7 @@ WorldEnvironment
 - |void| **set_compositor**\ (\ value\: :ref:`Compositor<class_Compositor>`\ )
 - :ref:`Compositor<class_Compositor>` **get_compositor**\ (\ )
 
-The default :ref:`Compositor<class_Compositor>` resource to use if none set on the :ref:`Camera3D<class_Camera3D>`.
+:ref:`Camera3D<class_Camera3D>` 上未設定時要使用的預設 :ref:`Compositor<class_Compositor>` 資源。
 
 .. rst-class:: classref-item-separator
 

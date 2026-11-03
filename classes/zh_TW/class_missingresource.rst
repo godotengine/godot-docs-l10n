@@ -14,9 +14,9 @@ MissingResource
 說明
 ----
 
-This is an internal editor class intended for keeping data of resources of unknown type (most likely this type was supplied by an extension that is no longer loaded). It can't be manually instantiated or placed in a scene.
+這是一種編輯器內部類，用於儲存未知型別資源的資料（該型別很有可能是由不再載入的擴充提供的），無法手動實例化，也無法在場景中放置。
 
-\ **Warning:** Ignore missing resources unless you know what you are doing. Existing properties on a missing resource can be freely modified in code, regardless of the type they are intended to be.
+\ **警告：**\ 不清楚有甚麼用就請忽略缺失資源。缺失資源上的已有屬性可以在程式碼中自由修改，無論它們的型別如何。
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ This is an internal editor class intended for keeping data of resources of unkno
 - |void| **set_original_class**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_class**\ (\ )
 
-The name of the class this resource was supposed to be (see :ref:`Object.get_class()<class_Object_method_get_class>`).
+該資源本來的類別名稱（見 :ref:`Object.get_class()<class_Object_method_get_class>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ The name of the class this resource was supposed to be (see :ref:`Object.get_cla
 - |void| **set_recording_properties**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recording_properties**\ (\ )
 
-If set to ``true``, allows new properties to be added on top of the existing ones with :ref:`Object.set()<class_Object_method_set>`.
+如果設定為 ``true``\ ，則允許使用 :ref:`Object.set()<class_Object_method_set>` 在已有屬性之上新增新屬性。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

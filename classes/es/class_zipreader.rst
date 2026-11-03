@@ -143,7 +143,7 @@ Debe llamarse después de :ref:`open()<class_ZIPReader_method_open>`.
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ZIPReader_method_open>`
 
-Abre el archivo zip en la ``path`` dada y lee su índice de archivos.
+Abre el archivo .zip en la ``path`` dada y lee su índice de archivos.
 
 .. rst-class:: classref-item-separator
 

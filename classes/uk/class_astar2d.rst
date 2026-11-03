@@ -182,18 +182,22 @@ AStar2D
 
 \ ``weight_scale`` множиться на результат :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` під час визначення загальної вартості подорожі по сегменту від сусідньої точки до цієї точки. Таким чином, за інших рівних умов алгоритм віддає перевагу точкам із нижчими параметрами ``weight_scale`` для формування шляху.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var astar = AStar2D.new()
     astar.add_point(1, Vector2(1, 0), 4) # Додає точку (1, 0) з weight_scale 4 та id 1
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var astar = new AStar2D();
     astar.AddPoint(1, new Vector2(1, 0), 4); // Додає точку (1, 0) з weight_scale 4 та id 1
-    [/csharp][/codeblocks]
 
- Якщо для заданого [param id] вже існує точка, її позиція та шкала ваги оновлюються до заданих значень.
+
+
+ Якщо для заданого ``id`` вже існує точка, її позиція та шкала ваги оновлюються до заданих значень.
 
 .. rst-class:: classref-item-separator
 
@@ -231,20 +235,24 @@ AStar2D
 
 Створює відрізок між заданими точками. Якщо ``bidirectional`` має значення ``false``, дозволено лише рух від ``id`` до ``to_id``, а не у зворотному напрямку.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     var astar = AStar2D.new()
     astar.add_point(1, Vector2(1, 1))
     astar.add_point(2, Vector2(0, 5))
     astar.connect_points(1, 2, false)
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var astar = new AStar2D();
     astar.AddPoint(1, new Vector2(1, 1));
     astar.AddPoint(2, new Vector2(0, 5));
     astar.ConnectPoints(1, 2, false);
-    [/csharp][/codeblocks]
+
+
 
 .. rst-class:: classref-item-separator
 

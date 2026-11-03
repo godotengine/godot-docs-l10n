@@ -170,16 +170,16 @@ enum **TileAnimationMode**: :ref:`🔗<enum_TileSetAtlasSource_TileAnimationMode
 
 **TRANSFORM_FLIP_H** = ``4096`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`
 
-Represents cell's horizontal flip flag. Should be used directly with :ref:`TileMapLayer<class_TileMapLayer>` to flip placed tiles by altering their alternative IDs.
+代表單元格的水平翻轉標誌。應該直接對 :ref:`TileMapLayer<class_TileMapLayer>` 使用，修改放置圖塊的備選 ID，將其進行翻轉。
 
 ::
 
     var alternate_id = $TileMapLayer.get_cell_alternative_tile(Vector2i(2, 2))
     if not alternate_id & TileSetAtlasSource.TRANSFORM_FLIP_H:
-        # If tile is not already flipped, flip it.
+        # 如果沒有翻轉過就進行翻轉。
         $TileMapLayer.set_cell(Vector2i(2, 2), source_id, atlas_coords, alternate_id | TileSetAtlasSource.TRANSFORM_FLIP_H)
 
-\ **Note:** These transformations can be combined to do the equivalent of 0, 90, 180, and 270 degree rotations, as shown below:
+\ **注意：**\ 可以將這些變換進行組合，從而實現 0、90、180、270 度旋轉，範例如下：
 
 ::
 
@@ -277,7 +277,7 @@ Represents cell's horizontal flip flag. Should be used directly with :ref:`TileM
 - |void| **set_texture_region_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_texture_region_size**\ (\ )
 
-The base tile size in the texture (in pixel). This size must be bigger than or equal to the TileSet's ``tile_size`` value.
+紋理中的基礎圖塊大小（以像素為單位）。該大小必須大於等於 TileSet 中的 ``tile_size`` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ The base tile size in the texture (in pixel). This size must be bigger than or e
 
 如果為 ``true``\ ，則生成一個內部紋理，每個圖塊周圍有一個額外的單圖元填充。紋理填充避免了圖塊之間出現線條狀的常見偽像。
 
-禁用該設定可能會導致性能略有提高，因為在 TileSetAtlasSource 資源被修改時，生成內部紋理需要記憶體和處理時間。
+停用該設定可能會導致效能略有提高，因為在 TileSetAtlasSource 資源被修改時，生成內部紋理需要記憶體和處理時間。
 
 .. rst-class:: classref-section-separator
 
@@ -351,7 +351,7 @@ The base tile size in the texture (in pixel). This size must be bigger than or e
 
 :ref:`Vector2i<class_Vector2i>` **get_atlas_grid_size**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_atlas_grid_size>`
 
-Returns the atlas grid size, which depends on how many tiles can fit in the texture. It thus depends on the :ref:`texture<class_TileSetAtlasSource_property_texture>`'s size, the atlas :ref:`margins<class_TileSetAtlasSource_property_margins>`, and the tiles' :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>`.
+回傳圖集柵格大小，這取決於紋理中可以容納多少個圖塊。因此，它取決於 :ref:`texture<class_TileSetAtlasSource_property_texture>` 的大小，該圖集的 :ref:`margins<class_TileSetAtlasSource_property_margins>` 和該圖塊的 :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Returns the atlas grid size, which depends on how many tiles can fit in the text
 
 :ref:`Texture2D<class_Texture2D>` **get_runtime_texture**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_runtime_texture>`
 
-If :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` is ``false``, returns :ref:`texture<class_TileSetAtlasSource_property_texture>`. Otherwise, returns an internal :ref:`ImageTexture<class_ImageTexture>` created that includes the padding.
+如果 :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` 為 ``false``\ ，則回傳 :ref:`texture<class_TileSetAtlasSource_property_texture>`\ 。否則，建立並回傳包含內邊距的內部 :ref:`ImageTexture<class_ImageTexture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ If :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_paddi
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **get_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_mode>`
 
-Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`set_tile_animation_mode()<class_TileSetAtlasSource_method_set_tile_animation_mode>`.
+回傳 ``atlas_coords`` 處圖塊的圖塊動畫模式。另見 :ref:`set_tile_animation_mode()<class_TileSetAtlasSource_method_set_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`
 
 :ref:`Vector2i<class_Vector2i>` **get_tile_size_in_atlas**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_size_in_atlas>`
 
-返回位於座標 ``atlas_coords`` 的圖塊的大小（使用柵格坐標系）。
+返回位於座標 ``atlas_coords`` 的圖塊的大小（使用柵格座標系）。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`
 
 :ref:`Rect2i<class_Rect2i>` **get_tile_texture_region**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_texture_region>`
 
-返回某個圖塊在合集紋理中的紋理區域。對於動畫圖塊，可以提供 ``frame`` 參數來獲取動畫中不同的影格對應的區域。
+返回某個圖塊在合集紋理中的紋理區域。對於動畫圖塊，可以提供 ``frame`` 參數來取得動畫中不同的影格對應的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_tiles_to_be_removed_on_change**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, margins\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`, texture_region_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_get_tiles_to_be_removed_on_change>`
 
-返回修改以下任意屬性時將會自動移除的圖塊座標 ID 的陣列：\ ``texture``\ 、\ ``margins``\ 、\ ``separation``\ 、\ ``texture_region_size``\ 。可以用來撤銷可能造成圖塊資料丟失的更改。
+返回修改以下任意屬性時將會自動移除的圖塊座標 ID 的陣列：\ ``texture``\ 、\ ``margins``\ 、\ ``separation``\ 、\ ``texture_region_size``\ 。可以用來復原可能造成圖塊資料丟失的更改。
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`
 
 |void| **set_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, mode\: :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_mode>`
 
-Sets the tile animation mode of the tile at ``atlas_coords`` to ``mode``. See also :ref:`get_tile_animation_mode()<class_TileSetAtlasSource_method_get_tile_animation_mode>`.
+將 ``atlas_coords`` 處的圖塊的圖塊動畫模式設定為 ``mode``\ 。另見 :ref:`get_tile_animation_mode()<class_TileSetAtlasSource_method_get_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 

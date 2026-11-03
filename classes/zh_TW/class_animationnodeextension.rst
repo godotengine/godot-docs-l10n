@@ -53,7 +53,7 @@ AnimationNodeExtension
 
 \ :ref:`PackedFloat64Array<class_PackedFloat64Array>` 參數包含播放資訊，依序以浮點數表示以下數值：播放時間與增量、開始與結束時間、是否請求跳轉（大於 ``0`` 的浮點數表示已請求）、跳轉是否來自外部（同樣以大於 ``0`` 表示）、目前的 :ref:`LoopedFlag<enum_Animation_LoopedFlag>` 以及目前的混合權重。
 
-函式必須回傳節點時間資訊的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，順序為：動畫長度、當前時間位置、增量、\ :ref:`LoopMode<enum_Animation_LoopMode>`\ 、動畫是否即將結束（大於 ``0`` 表示是）以及動畫是否為無限（大於 ``0`` 表示是）。回傳陣列必須包含所有這些數值。
+函式必須回傳節點時間資訊的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，順序為：動畫長度、目前時間位置、增量、\ :ref:`LoopMode<enum_Animation_LoopMode>`\ 、動畫是否即將結束（大於 ``0`` 表示是）以及動畫是否為無限（大於 ``0`` 表示是）。回傳陣列必須包含所有這些數值。
 
 .. rst-class:: classref-item-separator
 

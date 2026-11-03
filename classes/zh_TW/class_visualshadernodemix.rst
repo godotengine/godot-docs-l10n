@@ -65,7 +65,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeMix_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_2D_SCALAR** = ``2``
 
-``a`` 和 ``b`` 埠使用 2D 向量型別。\ ``weight`` 端口使用標量型別。
+``a`` 和 ``b`` 埠使用 2D 向量型別。\ ``weight`` 連接埠使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_3D:
 
@@ -81,7 +81,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeMix_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-``a`` 和 ``b`` 埠使用 3D 向量型別。\ ``weight`` 端口使用標量型別。
+``a`` 和 ``b`` 埠使用 3D 向量型別。\ ``weight`` 連接埠使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_4D:
 
@@ -97,7 +97,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeMix_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 端口使用標量型別。
+``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 連接埠使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_MAX:
 

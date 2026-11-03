@@ -12,13 +12,13 @@ PackedFloat32Array
 說明
 ----
 
-An array specifically designed to hold 32-bit floating-point values (float). Packs data tightly, so it saves memory for large array sizes.
+一種專門用來存放 32 位元浮點數值（float）的陣列。它對資料進行了緊密打包，因此在陣列規模很大時能有效節省記憶體。
 
-If you need to pack 64-bit floats tightly, see :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+如果你需要緊密打包 64 位元浮點數，請參考 :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包陣列始終是通過參照傳遞的。如果想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>` 方法。內建屬性和方法\ *不*\ 屬於這種情況。在這些情況下，回傳的打包陣列是一個副本，修改它\ *不*\ 會影響原始值。如果要更新這種型別的內建屬性，需要先修改回傳的陣列，然後再將其重新賦值給該屬性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布林值（boolean）語境下，如果打包陣列為空，它的求值結果為 ``false``\ ；否則，打包陣列的求值結果始終為 ``true``\ 。
 
 .. note::
 
@@ -244,9 +244,9 @@ If you need to pack 64-bit floats tightly, see :ref:`PackedFloat64Array<class_Pa
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat32Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedFloat32Array_method_remove_at>` instead.
+移除陣列中第一次出現的某個值並回傳 ``true``\ 。如果陣列中不存在該值，則甚麼都不會發生並回傳 ``false``\ 。如果要按照索引移除元素，請改用 :ref:`remove_at()<class_PackedFloat32Array_method_remove_at>`\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其它數字不同。因此存在 NaN 時該方法的結果可能不精確。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`float<class_float>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+在陣列中搜尋值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜尋索引。
 
 \ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
@@ -284,9 +284,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`float<class_float>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_get>`
 
-Returns the 32-bit float at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0.0``.
+回傳陣列中索引為 ``index`` 的 32 位元浮點數。如果 ``index`` 越界或為負數，則該方法失敗並回傳 ``0.0``\ 。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+該方法類似於 ``[]`` 運算符（但不等價）。最顯著的區別就是從編輯器中執行時，該方法失敗不會暫停專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -360,9 +360,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat32Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedFloat32Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+設定陣列的大小。如果陣列增大，則預留陣列末端的元素。如果陣列縮小，則將陣列截斷到新的大小。呼叫一次 :ref:`resize()<class_PackedFloat32Array_method_resize>` 然後賦值比逐個新增新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedFloat32Array_method_size>` to find the actual size of the array after resize.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時回傳下列 :ref:`Error<enum_@GlobalScope_Error>` 常數：大小為負數則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失敗則回傳 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。請使用 :ref:`size()<class_PackedFloat32Array_method_size>` 取得調整後的實際大小。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`float<class_float>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+逆序搜尋陣列。還可以傳遞起始搜尋位置索引。如果為負，則起始索引被視為相對於陣列的結尾。
 
 \ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
@@ -454,9 +454,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_to_byte_array>`
 
-Returns a copy of the data converted to a :ref:`PackedByteArray<class_PackedByteArray>`, where each element has been encoded as 4 bytes.
+回傳資料的副本，將其中的每個元素都編碼為 4 個位元組，放入 :ref:`PackedByteArray<class_PackedByteArray>` 中。
 
-The size of the new array will be ``float32_array.size() * 4``.
+新陣列的大小為 ``float32_array.size() * 4``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -485,7 +485,7 @@ The size of the new array will be ``float32_array.size() * 4``.
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **operator +**\ (\ right\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_PackedFloat32Array_operator_sum_PackedFloat32Array>`
 
-返回新的 **PackedFloat32Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高性能，請考慮改用 :ref:`append_array()<class_PackedFloat32Array_method_append_array>`\ 。
+返回新的 **PackedFloat32Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高效能，請考慮改用 :ref:`append_array()<class_PackedFloat32Array_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 

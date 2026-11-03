@@ -14,11 +14,11 @@ CameraFeed
 說明
 ----
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+相機源允許存取連接到裝置的單個物理相機。啟用後，Godot 將開始從該相機捕獲影格，隨後這些影格便可被使用。另見 :ref:`CameraServer<class_CameraServer>`\ 。
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **注意：**\ 很多相機會回傳 YCbCr 影像，這些影像被拆分為兩個紋理，需要在著色器中進行組合。若將環境設定為在背景中顯示相機影像，Godot 會自動執行此操作。
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **注意：**\ 該類目前僅在 Linux、Android、macOS 和 iOS 上實作。在其他平台上 **CameraFeed** 將不可用。若要在 iOS 上取得 **CameraFeed**\ ，請啟用 :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -93,7 +93,7 @@ A camera feed gives you access to a single physical camera attached to your devi
 
 **format_changed**\ (\ ) :ref:`🔗<class_CameraFeed_signal_format_changed>`
 
-Emitted when the format has changed.
+格式發生變化時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ Emitted when the format has changed.
 
 **frame_changed**\ (\ ) :ref:`🔗<class_CameraFeed_signal_frame_changed>`
 
-Emitted when a new frame is available.
+新影像影格可用時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -128,7 +128,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_NOIMAGE** = ``0``
 
-沒有為該源設定圖像。
+沒有為該源設定影像。
 
 .. _class_CameraFeed_constant_FEED_RGB:
 
@@ -136,7 +136,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_RGB** = ``1``
 
-源提供 RGB 圖像。
+源提供 RGB 影像。
 
 .. _class_CameraFeed_constant_FEED_YCBCR:
 
@@ -144,7 +144,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_YCBCR** = ``2``
 
-源提供的 YCbCr 圖像需要轉換成 RGB 圖像。
+源提供的 YCbCr 影像需要轉換成 RGB 影像。
 
 .. _class_CameraFeed_constant_FEED_YCBCR_SEP:
 
@@ -152,7 +152,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_YCBCR_SEP** = ``3``
 
-源提供單獨的 Y 和 CbCr 圖像，需要合併並轉換為 RGB。
+源提供單獨的 Y 和 CbCr 影像，需要合併並轉換為 RGB。
 
 .. _class_CameraFeed_constant_FEED_EXTERNAL:
 
@@ -160,7 +160,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_EXTERNAL** = ``4``
 
-Feed supplies external image.
+源提供外部影像。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-套用於相機圖像的變換。
+套用於相機影像的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 
 - :ref:`Array<class_Array>` **get_formats**\ (\ )
 
-Formats supported by the feed. Each entry is a :ref:`Dictionary<class_Dictionary>` describing format parameters.
+源支援的所有格式。每個條目都是描述格式參數的 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -266,7 +266,7 @@ Formats supported by the feed. Each entry is a :ref:`Dictionary<class_Dictionary
 
 :ref:`bool<class_bool>` **_activate_feed**\ (\ ) |virtual| :ref:`🔗<class_CameraFeed_private_method__activate_feed>`
 
-Called when the camera feed is activated.
+相機源被啟用時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Called when the camera feed is activated.
 
 |void| **_deactivate_feed**\ (\ ) |virtual| :ref:`🔗<class_CameraFeed_private_method__deactivate_feed>`
 
-Called when the camera feed is deactivated.
+相機源失去啟用時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Called when the camera feed is deactivated.
 
 :ref:`Array<class_Array>` **_get_formats**\ (\ ) |virtual| |const| :ref:`🔗<class_CameraFeed_private_method__get_formats>`
 
-Override this method to define supported formats of the camera feed.
+覆蓋該方法以定義相機源支援的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Override this method to define supported formats of the camera feed.
 
 :ref:`bool<class_bool>` **_set_format**\ (\ index\: :ref:`int<class_int>`, parameters\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_CameraFeed_private_method__set_format>`
 
-Override this method to set the format of the camera feed.
+覆蓋該方法以設定相機源的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Override this method to set the format of the camera feed.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **get_datatype**\ (\ ) |const| :ref:`🔗<class_CameraFeed_method_get_datatype>`
 
-返回源圖像的資料型別。
+返回源影像的資料型別。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Override this method to set the format of the camera feed.
 
 :ref:`int<class_int>` **get_texture_tex_id**\ (\ feed_image_type\: :ref:`FeedImage<enum_CameraServer_FeedImage>`\ ) :ref:`🔗<class_CameraFeed_method_get_texture_tex_id>`
 
-Returns the texture backend ID (usable by some external libraries that need a handle to a texture to write data).
+回傳紋理後端的 ID（可用於某些需要通過紋理控制代碼寫入資料的外部庫）。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Returns the texture backend ID (usable by some external libraries that need a ha
 
 |void| **set_external**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraFeed_method_set_external>`
 
-Sets the feed as external feed provided by another library.
+將供給設定為由另一個庫提供的外部供給。
 
 .. rst-class:: classref-item-separator
 
@@ -386,13 +386,13 @@ Sets the feed as external feed provided by another library.
 
 :ref:`bool<class_bool>` **set_format**\ (\ index\: :ref:`int<class_int>`, parameters\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_CameraFeed_method_set_format>`
 
-Sets the feed format parameters for the given ``index`` in the :ref:`formats<class_CameraFeed_property_formats>` array. Returns ``true`` on success. By default, the YUYV encoded stream is transformed to :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`. The YUYV encoded stream output format can be changed by setting ``parameters``'s ``output`` entry to one of the following:
+設定 :ref:`formats<class_CameraFeed_property_formats>` 陣列中給定 ``index`` 的源格式參數。成功時回傳 ``true``\ 。預設情況下，YUYV 編碼的流會轉換為 :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`\ 。YUYV 編碼的流的輸出格式可以通過將 ``parameters`` 的 ``output`` 條目設定為以下之一來更改：
 
-- ``"separate"`` will result in :ref:`FEED_YCBCR_SEP<class_CameraFeed_constant_FEED_YCBCR_SEP>`;
+- ``"separate"`` 得到的是 :ref:`FEED_YCBCR_SEP<class_CameraFeed_constant_FEED_YCBCR_SEP>`\ ；
 
-- ``"grayscale"`` will result in desaturated :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`;
+- ``"grayscale"`` 得到的是降低飽和度的 :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`\ ；
 
-- ``"copy"`` will result in :ref:`FEED_YCBCR<class_CameraFeed_constant_FEED_YCBCR>`.
+- ``"copy"`` 得到的是 :ref:`FEED_YCBCR<class_CameraFeed_constant_FEED_YCBCR>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ Sets the feed format parameters for the given ``index`` in the :ref:`formats<cla
 
 |void| **set_name**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CameraFeed_method_set_name>`
 
-Sets the camera's name.
+設定相機的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Sets the camera's name.
 
 |void| **set_position**\ (\ position\: :ref:`FeedPosition<enum_CameraFeed_FeedPosition>`\ ) :ref:`🔗<class_CameraFeed_method_set_position>`
 
-Sets the position of this camera.
+設定相機的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Sets the position of this camera.
 
 |void| **set_rgb_image**\ (\ rgb_image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_CameraFeed_method_set_rgb_image>`
 
-Sets RGB image for this feed.
+設定該源的 RGB 影像。
 
 .. rst-class:: classref-item-separator
 
@@ -440,7 +440,7 @@ Sets RGB image for this feed.
 
 |void| **set_ycbcr_image**\ (\ ycbcr_image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_CameraFeed_method_set_ycbcr_image>`
 
-Sets YCbCr image for this feed.
+設定該源的 YCbCr 影像。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ Sets YCbCr image for this feed.
 
 |void| **set_ycbcr_images**\ (\ y_image\: :ref:`Image<class_Image>`, cbcr_image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_CameraFeed_method_set_ycbcr_images>`
 
-Sets Y and CbCr images for this feed.
+設定該源的 Y 和 CbCr 影像。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

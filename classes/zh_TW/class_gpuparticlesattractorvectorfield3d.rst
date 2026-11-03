@@ -73,7 +73,7 @@ GPUParticlesAttractorVectorField3D
 
 要使用的 3D 紋理。會在紋理圖元之間進行線性插值。
 
-\ **注意：**\ 為了獲得更好的性能，3D 紋理的解析度應該反映該吸引器的 :ref:`size<class_GPUParticlesAttractorVectorField3D_property_size>`\ 。由於粒子吸引力通常是低頻資料，因此可以將紋理保持在較低解析度，例如 64×64×64。
+\ **注意：**\ 為了獲得更好的效能，3D 紋理的解析度應該反映該吸引器的 :ref:`size<class_GPUParticlesAttractorVectorField3D_property_size>`\ 。由於粒子吸引力通常是低頻資料，因此可以將紋理保持在較低解析度，例如 64×64×64。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

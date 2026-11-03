@@ -91,7 +91,7 @@ If set, generates UV2 UV coordinates applying a padding using the :ref:`uv2_padd
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Sobrescribe el :ref:`AABB<class_AABB>` con uno definido por usuario para el uso con el tronco(frustum). Especialmente util para evitar inesperadas selecciones cuando se use un shader a vertices desplazados.
+Sobrescribe el :ref:`AABB<class_AABB>` con uno definido por usuario para el uso con el tronco (frustum). Especialmente útil para evitar inesperadas selecciones cuando se use un shader a vértices desplazados.
 
 .. rst-class:: classref-item-separator
 

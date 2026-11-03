@@ -7,7 +7,7 @@ FogMaterial
 
 **繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-控制體積霧算繪方式的材質，分配到 :ref:`FogVolume<class_FogVolume>`\ 。
+控制體積霧渲染方式的材質，分配到 :ref:`FogVolume<class_FogVolume>`\ 。
 
 .. rst-class:: classref-introduction-group
 

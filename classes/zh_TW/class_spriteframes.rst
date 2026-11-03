@@ -14,7 +14,7 @@ SpriteFrames
 說明
 ----
 
-:ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 和 :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` 節點的精靈影格庫。包含影格和用於播放的動畫信息。
+:ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 和 :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` 節點的精靈影格庫。包含影格和用於播放的動畫資訊。
 
 .. rst-class:: classref-reftable-group
 
@@ -87,7 +87,7 @@ enum **LoopMode**: :ref:`🔗<enum_SpriteFrames_LoopMode>`
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_NONE** = ``0``
 
-The animation plays once and stops when it reaches the end, or the start if played in reverse.
+動畫只播放一次，播放到末尾時就會停止；如果是倒放，則播放到開頭時停止。
 
 .. _class_SpriteFrames_constant_LOOP_LINEAR:
 
@@ -95,7 +95,7 @@ The animation plays once and stops when it reaches the end, or the start if play
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_LINEAR** = ``1``
 
-The animation restarts from the beginning when it reaches the end, or from the end if played in reverse, repeating continuously.
+當動畫到達結尾時，會從開頭重新開始；如果逆序播放，則從結尾重新開始，從而實現連續不斷的循環。
 
 .. _class_SpriteFrames_constant_LOOP_PINGPONG:
 
@@ -103,9 +103,9 @@ The animation restarts from the beginning when it reaches the end, or from the e
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-The animation alternates direction each time it reaches the end or start, playing forward and then in reverse repeatedly.
+動畫每次到達結尾或開頭時都會交替播放方向，反復進行正向播放和逆向播放。
 
-\ **Note:** Both :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` and :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` play the first/last frame for its duration only once at each end of the animation loop (instead of twice, once per forward/backward animation direction).
+\ **注意：** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 和 :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` 在動畫循環的每一端，僅播放一次首影格/尾影格的完整時長（而不是兩次，即不會在正向和逆向播放方向各播放一次）。
 
 .. rst-class:: classref-section-separator
 
@@ -134,7 +134,7 @@ The animation alternates direction each time it reaches the end or start, playin
 
 |void| **add_frame**\ (\ anim\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`, duration\: :ref:`float<class_float>` = 1.0, at_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_SpriteFrames_method_add_frame>`
 
-Adds a frame to the ``anim`` animation. If ``at_position`` is ``-1``, the frame will be added to the end of the animation. ``duration`` specifies the relative duration, see :ref:`get_frame_duration()<class_SpriteFrames_method_get_frame_duration>` for details.
+向 ``anim`` 動畫中新增一影格。如果 ``at_position`` 為 ``-1``\ ，則該影格會新增至該動畫的末尾。\ ``duration`` 指定的是相對時長，詳見 :ref:`get_frame_duration()<class_SpriteFrames_method_get_frame_duration>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Adds a frame to the ``anim`` animation. If ``at_position`` is ``-1``, the frame 
 
 |void| **duplicate_animation**\ (\ anim_from\: :ref:`StringName<class_StringName>`, anim_to\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_duplicate_animation>`
 
-Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fails if ``anim_to`` already exists, or if ``anim_from`` does not exist.
+將動畫 ``anim_from`` 複製為名叫 ``anim_to`` 的新動畫。如果 ``anim_to`` 已存在或 ``anim_from`` 不存在則會失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 **已棄用：** Use :ref:`get_animation_loop_mode()<class_SpriteFrames_method_get_animation_loop_mode>` instead.
 
-Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise, returns ``false``.
+如果 ``get_animation_loop_mode(anim) == LOOP_LINEAR``\ （即取得到的動畫循環模式為線性循環），則回傳 ``true``\ 。否則，回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise,
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **get_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop_mode>`
 
-Returns the loop mode for the ``anim`` animation.
+回傳 ``anim`` 動畫的循環模式。
 
 .. rst-class:: classref-item-separator
 
@@ -324,9 +324,9 @@ Returns the loop mode for the ``anim`` animation.
 
 **已棄用：** Use :ref:`set_animation_loop_mode()<class_SpriteFrames_method_set_animation_loop_mode>` instead.
 
-If ``loop`` is ``false`` equivalent to ``set_animation_loop_mode(LOOP_NONE)``.
+如果 ``loop`` 為 ``false``\ ，則等同於 ``set_animation_loop_mode(LOOP_NONE)``\ ；
 
-If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
+如果 ``loop`` 為 ``true``\ ，則等同於 ``set_animation_loop_mode(LOOP_LINEAR)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 |void| **set_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`, loop_mode\: :ref:`LoopMode<enum_SpriteFrames_LoopMode>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop_mode>`
 
-Sets the ``loop_mode`` for the ``anim`` animation.
+為 ``anim`` 動畫設定 ``loop_mode``\ （循環模式）。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Sets the ``loop_mode`` for the ``anim`` animation.
 
 |void| **set_frame**\ (\ anim\: :ref:`StringName<class_StringName>`, idx\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`, duration\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_SpriteFrames_method_set_frame>`
 
-Sets the ``texture`` and the ``duration`` of the frame ``idx`` in the ``anim`` animation. ``duration`` specifies the relative duration, see :ref:`get_frame_duration()<class_SpriteFrames_method_get_frame_duration>` for details.
+設定 ``anim`` 動畫中索引為 ``idx`` 的影格的紋理 ``texture`` 和持續時間 ``duration``\ 。\ ``duration`` 指定的是相對時長，詳見 :ref:`get_frame_duration()<class_SpriteFrames_method_get_frame_duration>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -18,9 +18,9 @@ ConvexPolygonShape3D
 
 \ **ConvexPolygonShape3D** 是\ *實心*\ 的，與空心的 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 不同，如果物件完全位於其內部，也能夠偵測到碰撞。因此更適於偵測和物理。
 
-\ **凸分解：**\ 凹多面體可以拆分為多個凸多面體。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗性能為代價），做法是使用多個 **ConvexPolygonShape3D** 節點。要根據網格生成凸分解，請選中 :ref:`MeshInstance3D<class_MeshInstance3D>` 節點，前往出現在視口上方的 **Mesh** 功能表，然後選擇\ **建立多個凸碰撞同級**\ 。或者也可以在腳本中呼叫 :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>`\ ，在運作時執行分解。
+\ **凸分解：**\ 凹多面體可以拆分為多個凸多面體。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗效能為代價），做法是使用多個 **ConvexPolygonShape3D** 節點。要根據網格生成凸分解，請選中 :ref:`MeshInstance3D<class_MeshInstance3D>` 節點，前往出現在視埠上方的 **Mesh** 功能表，然後選擇\ **建立多個凸碰撞同級**\ 。或者也可以在腳本中呼叫 :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>`\ ，在運作時執行分解。
 
-\ **性能：**\ **ConvexPolygonShape3D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 要快，但比 :ref:`SphereShape3D<class_SphereShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
+\ **效能：**\ **ConvexPolygonShape3D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 要快，但比 :ref:`SphereShape3D<class_SphereShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
 
 .. rst-class:: classref-introduction-group
 

@@ -9,14 +9,14 @@ VisualShaderNodeComment
 
 **繼承：** :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Only exists for compatibility. Use :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` as a replacement.
+只是為了相容性而存在。使用 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 作為替代品。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This node was replaced by :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` and only exists to preserve compatibility. In the :ref:`VisualShader<class_VisualShader>` editor it behaves exactly like :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>`.
+該節點已被 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 取代，僅用於保持相容性。在 :ref:`VisualShader<class_VisualShader>` 編輯器中，它的行為與 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 完全相同。
 
 .. rst-class:: classref-reftable-group
 
@@ -50,7 +50,7 @@ This node was replaced by :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFram
 - |void| **set_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_description**\ (\ )
 
-This property only exists to preserve data authored in earlier versions of Godot. It has currently no function.
+該屬性僅用於儲存在早期版本的 Godot 中編寫的資料。它目前沒有任何作用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

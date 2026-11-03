@@ -99,7 +99,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSmoothStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 端口使用標量型別。
+``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 連接埠使用標量型別。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_MAX:
 

@@ -7,7 +7,7 @@ ORMMaterial3D
 
 **繼承：** :ref:`BaseMaterial3D<class_BaseMaterial3D>` **<** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-基於物理的算繪（PBR）材質，可以套用於 3D 物件，可以使用 ORM 紋理。
+基於物理的渲染（PBR）材質，可以套用於 3D 物件，可以使用 ORM 紋理。
 
 .. rst-class:: classref-introduction-group
 

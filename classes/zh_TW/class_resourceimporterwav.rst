@@ -14,9 +14,9 @@ ResourceImporterWAV
 說明
 ----
 
-WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end devices.
+WAV 是未經壓縮的格式，能夠提供比 Ogg Vorbis 和 MP3 更高的品質。解壓時的 CPU 開銷也最低。因此即便在低端裝置上，也能夠同時播放大量的 WAV 聲音。
 
-By default, Godot imports WAV files using the lossy Quite OK Audio compression. You may change this by setting the :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>` property.
+預設情況下，Godot 使用有損的 Quite OK Audio 壓縮匯入 WAV 檔案。可以通過設定 :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>` 屬性來更改。
 
 .. rst-class:: classref-introduction-group
 
@@ -70,13 +70,13 @@ By default, Godot imports WAV files using the lossy Quite OK Audio compression. 
 
 :ref:`int<class_int>` **compress/mode** = ``2`` :ref:`🔗<class_ResourceImporterWAV_property_compress/mode>`
 
-The compression mode to use on import.
+匯入時使用的壓縮模式。
 
-- **PCM (Uncompressed):** Imports audio data without any form of compression, preserving the highest possible quality. It has the lowest CPU cost, but the highest memory usage.
+- **PCM (Uncompressed)：**\ 匯入音訊資料，不進行壓縮，保持盡可能高的品質。CPU 開銷最低，但記憶體佔用最高。
 
-- **IMA ADPCM:** Applies fast, lossy compression during import, noticeably decreasing the quality, but with low CPU cost and memory usage. Does not support seeking and only Forward loop mode is supported.
+- **IMA ADPCM：**\ 匯入時進行快速有損壓縮，顯著降低品質，但是 CPU 開銷和記憶體佔用都較低。不支援跳轉，僅支援 Forward 循環模式。
 
-- **\ `Quite OK Audio <https://qoaformat.org/>`__:** Also applies lossy compression on import, having a slightly higher CPU cost compared to IMA ADPCM, but much higher quality and the lowest memory usage.
+- **\ `Quite OK Audio <https://qoaformat.org/>`__\ ：**\ 匯入時也會進行有損壓縮，CPU 開銷比 IMA ADPCM 略高，但是品質要高很多，記憶體佔用也最低。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ The compression mode to use on import.
 
 :ref:`int<class_int>` **edit/loop_begin** = ``0`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_begin>`
 
-The begin loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file.
+循環起始點，\ :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` 為 **Forward**\ 、\ **Ping-Pong**\ 、或 **Backward** 時使用。設定的是音訊檔案開始之後的取樣數。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The begin loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_
 
 :ref:`int<class_int>` **edit/loop_end** = ``-1`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_end>`
 
-The end loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file. A value of ``-1`` uses the end of the audio file as the end loop point.
+循環結束點，\ :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` 為 **Forward**\ 、\ **Ping-Pong**\ 、或 **Backward** 時使用。設定的是音訊檔案開始之後的取樣數。\ ``-1`` 表示使用音訊檔案的末尾作為循環結束點。
 
 .. rst-class:: classref-item-separator
 
@@ -112,19 +112,19 @@ The end loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_pr
 
 :ref:`int<class_int>` **edit/loop_mode** = ``0`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_mode>`
 
-Controls how audio should loop.
+控制音訊如何循環。
 
-- **Detect From WAV:** Uses loop information from the WAV metadata.
+- **Detect From WAV：**\ 使用 WAV 中繼資料中的循環資訊。
 
-- **Disabled:** Don't loop audio, even if the metadata indicates the file playback should loop.
+- **Disabled：**\ 不循環音訊，即便中繼資料顯示該檔案應該在播放時循環。
 
-- **Forward:** Standard audio looping. Plays the audio forward from the beginning to :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`, then returns to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` and repeats.
+- **Forward：**\ 標準音訊循環。從頭開始正向播放音訊至 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`\ ，然後回到 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` 再進行重複。
 
-- **Ping-Pong:** Plays the audio forward until :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`, then backwards to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`, repeating this cycle.
+- **Ping-Pong：**\ 正向播放音訊至 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`\ ，然後逆向播放至 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`\ ，再重複這一循環。
 
-- **Backward:** Plays the audio backwards from :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>` to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`, then repeats.
+- **Backward：**\ 從 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>` 至 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` 逆向播放音訊，再進行重複。
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **注意：**\ 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，循環音訊到達音訊檔案末尾時不會發出 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 訊號，因為音訊會無限循環播放。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Controls how audio should loop.
 
 如果設定為大於 ``0`` 的值，則強制音訊的取樣率降低到低於或等於 :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>` 中指定的值。
 
-這可以顯著減小某些聲音的檔案大小，而不會影響質量，具體取決於實際聲音的內容。有關詳細信息，請參閱\ `最佳實踐 <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__\ 。
+這可以顯著減小某些聲音的檔案大小，而不會影響質量，具體取決於實際聲音的內容。有關詳細資訊，請參閱\ `最佳實踐 <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__\ 。
 
 .. rst-class:: classref-item-separator
 

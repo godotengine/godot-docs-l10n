@@ -9,14 +9,14 @@ OpenXRStructureBase
 
 **被繼承：** :ref:`OpenXRSpatialContextPersistenceConfig<class_OpenXRSpatialContextPersistenceConfig>`
 
-Object for storing OpenXR structure data.
+用於儲存 OpenXR 結構資料的物件。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Object for storing OpenXR structure data that is passed when calling into OpenXR APIs.
+用於儲存呼叫 OpenXR API 時傳遞的 OpenXR 結構資料的物件。
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ Object for storing OpenXR structure data that is passed when calling into OpenXR
 - |void| **set_next**\ (\ value\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ )
 - :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ )
 
-Setting another structure object here chains these structures together to extend the API functionality. Consult the OpenXR documentation for which structures can be used with a given API call.
+在此設定另一個結構物件可以將這些結構連結起來，從而擴充 API 功能。有關哪些結構可以與特定 API 呼叫一起使用，請參閱 OpenXR 文件。
 
 .. rst-class:: classref-section-separator
 
@@ -95,7 +95,7 @@ Setting another structure object here chains these structures together to extend
 
 :ref:`int<class_int>` **get_structure_type**\ (\ ) :ref:`🔗<class_OpenXRStructureBase_method_get_structure_type>`
 
-Returns the structure type (OpenXR ``XrStructureType``) used for this structure.
+回傳該結構使用的結構型別（OpenXR ``XrStructureType``\ ）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

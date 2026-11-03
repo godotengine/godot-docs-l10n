@@ -151,7 +151,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **get_operator**\ (\ )
 
-An operator to be applied to the inputs.
+要套用至輸入的運算符。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

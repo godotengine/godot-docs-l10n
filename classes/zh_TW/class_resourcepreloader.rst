@@ -14,7 +14,7 @@ ResourcePreloader
 說明
 ----
 
-這個節點可以預載入場景中的子資源，這樣場景載入完成時，所有的資源就都處於就緒可用狀態，可以從預載入器獲取。選中該節點後，可以使用 ResourcePreloader 分頁來新增資源。
+這個節點可以預載入場景中的子資源，這樣場景載入完成時，所有的資源就都處於就緒可用狀態，可以從預載入器取得。選中該節點後，可以使用 ResourcePreloader 分頁來新增資源。
 
 GDScript 提供了簡化的 :ref:`@GDScript.preload()<class_@GDScript_method_preload>` 內建方法，可以在大多數場景使用，\ **ResourcePreloader** 則可用於更高階的場合。
 
@@ -55,7 +55,7 @@ GDScript 提供了簡化的 :ref:`@GDScript.preload()<class_@GDScript_method_pre
 
 |void| **add_resource**\ (\ name\: :ref:`StringName<class_StringName>`, resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_ResourcePreloader_method_add_resource>`
 
-將資源以給定的名稱 ``name`` 新增至預載入器。如果已存在名為 ``name`` 的資源，則新資源會被重命名為 "``name`` N"，這裡的 N 是從 2 開始遞增的數字。
+將資源以給定的名稱 ``name`` 新增至預載入器。如果已存在名為 ``name`` 的資源，則新資源會被重新命名為 "``name`` N"，這裡的 N 是從 2 開始遞增的數字。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ GDScript 提供了簡化的 :ref:`@GDScript.preload()<class_@GDScript_method_pre
 
 |void| **rename_resource**\ (\ name\: :ref:`StringName<class_StringName>`, newname\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ResourcePreloader_method_rename_resource>`
 
-將預載入器中的資源從 ``name`` 重命名為 ``newname``\ 。
+將預載入器中的資源從 ``name`` 重新命名為 ``newname``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

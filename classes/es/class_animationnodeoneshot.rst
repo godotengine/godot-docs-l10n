@@ -235,7 +235,7 @@ En otras palabras, para iniciar el reinicio automático, la animación debe repr
 - |void| **set_autorestart_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_autorestart_delay**\ (\ )
 
-El retardo con el cual un reinicio automatico es lanzado, en segundos.
+El retardo con el cual un reinicio automático es lanzado, en segundos.
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ El retardo con el cual un reinicio automatico es lanzado, en segundos.
 - |void| **set_autorestart_random_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_autorestart_random_delay**\ (\ )
 
-Si :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` es ``true``, un retardo aleatorio adicional (en segundos) entre 0 y este valor sera añadido al [member autorestart_delay.
+Si :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` es ``true``, un retardo aleatorio adicional (en segundos) entre 0 y este valor será añadido al [member autorestart_delay.
 
 .. rst-class:: classref-item-separator
 

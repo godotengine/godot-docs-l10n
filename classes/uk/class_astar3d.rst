@@ -22,9 +22,11 @@ A\* (A star) — це комп’ютерний алгоритм, який ви�
 
 \ **Приклад:** Використовуйте манхеттенську відстань замість евклідової відстані: 
 
-::
+
+.. tabs:: 
+
+ .. code-tab:: gdscript
  
-    [gdscript] 
     class_name MyAStar3D 
     extends AStar3D 
 
@@ -36,9 +38,10 @@ A\* (A star) — це комп’ютерний алгоритм, який ви�
     func _estimate_cost(u, v): 
         var u_pos = get_point_position(u) 
         var v_pos = get_point_position(v) 
-        return abs(u_pos.x - v_pos.x) + abs(u_pos.y - v_pos.y) + abs(u_pos.z - v_pos.z) 
-    [/gdscript] 
-    [csharp] 
+        return abs(u_pos.x - v_pos.x) + abs(u_pos.y - v_pos.y) + abs(u_pos.z - v_pos.z)  
+
+ .. code-tab:: csharp
+ 
     Using Godot;
 
     [Globalclass] 
@@ -58,12 +61,13 @@ A\* (A star) — це комп’ютерний алгоритм, який ви�
             Vector3 toPoint = GetPointPosition(toId); 
             return Mathf.Abs(fromPoint.X - toPoint.X) + Mathf.Abs(fromPoint.Y - toPoint.Y) + Mathf.Abs(fromPoint.Z - toPoint.Z); 
         } 
-    }
-    [/csharp] [/codeblocks] 
+    } 
 
-[method _estimate_cost] має повертати нижню межу відстані, тобто [code]_estimate_cost(u, v) <= _compute_cost(u, v)[/code]. Це слугує підказкою для алгоритму, оскільки спеціальний [method _compute_cost] може бути важким для обчислення. Якщо це не так, змусьте [method _estimate_cost] повертати те саме значення, що й [method _compute_cost], щоб надати алгоритму найточнішу інформацію. 
+ 
 
-Якщо використовуються методи за замовчуванням [method _estimate_cost] і [method _compute_cost] або якщо наданий метод [method _estimate_cost] повертає нижню межу вартості, тоді шляхи, які повертає A*, будуть шляхами з найнижчою вартістю. Тут вартість шляху дорівнює сумі результатів [method _compute_cost] усіх сегментів у шляху, помноженій на [code]weight_scale[/code] кінцевих точок відповідних сегментів. Якщо використовуються методи за замовчуванням і [code]weight_scale[/code]s усіх точок встановлено на [code]1.0[/code], тоді це дорівнює сумі евклідових відстаней усіх сегментів шляху.
+\ :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` має повертати нижню межу відстані, тобто ``_estimate_cost(u, v) <= _compute_cost(u, v)``. Це слугує підказкою для алгоритму, оскільки спеціальний :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` може бути важким для обчислення. Якщо це не так, змусьте :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` повертати те саме значення, що й :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>`, щоб надати алгоритму найточнішу інформацію. 
+
+Якщо використовуються методи за замовчуванням :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` і :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` або якщо наданий метод :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` повертає нижню межу вартості, тоді шляхи, які повертає A\*, будуть шляхами з найнижчою вартістю. Тут вартість шляху дорівнює сумі результатів :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` усіх сегментів у шляху, помноженій на ``weight_scale`` кінцевих точок відповідних сегментів. Якщо використовуються методи за замовчуванням і ``weight_scale``\ s усіх точок встановлено на ``1.0``, тоді це дорівнює сумі евклідових відстаней усіх сегментів шляху.
 
 .. rst-class:: classref-reftable-group
 

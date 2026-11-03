@@ -9,14 +9,14 @@ NavigationLink2D
 
 **繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個鏈接。
+連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個連結。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個鏈接。這兩個位置可以在同一個 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上，也可以是在兩個不同的區塊上。連結可以用來表達沿著導覽多邊形表面行進以外的導覽方法，例如滑鎖、傳送、跳過溝壑等等。
+連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個連結。這兩個位置可以在同一個 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上，也可以是在兩個不同的區塊上。連結可以用來表達沿著導覽多邊形表面行進以外的導覽方法，例如滑鎖、傳送、跳過溝壑等等。
 
 .. rst-class:: classref-introduction-group
 
@@ -133,9 +133,9 @@ NavigationLink2D
 
 連結的結束位置。
 
-連結會搜索導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
+連結會搜尋導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
 
-連結搜索的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
+連結搜尋的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +188,9 @@ NavigationLink2D
 
 連結的起始位置。
 
-連結會搜索導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
+連結會搜尋導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
 
-連結搜索的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
+連結搜尋的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ NavigationLink2D
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_navigation_map>`
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this link.
+回傳該連結使用的目前導航地圖 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns the current navigation map :ref:`RID<class_RID>` used by this link.
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_rid>`
 
-Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+回傳 :ref:`NavigationServer2D<class_NavigationServer2D>` 上該連結的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_global_end_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_global_end_position>`
 
-設定該連結的 :ref:`end_position<class_NavigationLink2D_property_end_position>` 的全域位置。
+使用全域位置 ``position`` 設定相對於連結的結束位置 :ref:`end_position<class_NavigationLink2D_property_end_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_global_start_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_global_start_position>`
 
-設定該連結的 :ref:`start_position<class_NavigationLink2D_property_start_position>` 的全域位置。
+使用全域位置 ``position`` 設定相對於連結的起始位置 :ref:`start_position<class_NavigationLink2D_property_start_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_navigation_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this link should use. By default the link will automatically join the :ref:`World2D<class_World2D>` default navigation map so this function is only required to override the default map.
+設定該連結應使用的導航地圖的 :ref:`RID<class_RID>`\ 。預設情況下，該連結會自動加入 :ref:`World2D<class_World2D>` 預設導航地圖，因此該函式只需要覆蓋預設地圖即可。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

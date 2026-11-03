@@ -14,9 +14,9 @@ AudioStreamOggVorbis
 說明
 ----
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. More info can be found in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
+AudioStreamOggVorbis 類是專用於處理 Ogg Vorbis 檔案格式的特化 :ref:`AudioStream<class_AudioStream>` 類。它提供載入和播放 Ogg Vorbis 檔案以及管理循環和其他播放屬性的功能。更多詳細資訊可參閱 :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`\ 。
 
-This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class, and MP3 files through the :ref:`AudioStreamMP3<class_AudioStreamMP3>` class.
+該類是音訊流系統的一部分，該系統還通過 :ref:`AudioStreamWAV<class_AudioStreamWAV>` 類支援 WAV 檔案，通過 :ref:`AudioStreamMP3<class_AudioStreamMP3>` 類支援 MP3 檔案。
 
 .. rst-class:: classref-introduction-group
 
@@ -85,7 +85,7 @@ This class is part of the audio stream system, which also supports WAV files thr
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+音軌中單節的拍數。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+音軌的長度，單位為節拍。音訊檔案的實際時長可能長於該屬性所指示的值。它定義了音訊用於循環播放、\ :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` 和 :ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 時的結束點。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+音軌的拍速，以每分鐘節拍數計量。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The tempo of the audio track, measured in beats per minute.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Useful for ambient sounds and background music.
+如果為 ``true``\ ，則當音訊流播放至音軌末尾，或者根據 :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>` 指定的節拍數播放至最後一個節拍的末尾時，它將從 :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` 指定的位置重新開始播放。適用於環境音效和背景音樂。
 
 .. rst-class:: classref-item-separator
 

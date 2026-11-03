@@ -131,7 +131,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_DISABLE_DEPTH_TEST** = ``3``
 
-禁用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
+停用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
 
 .. _class_SpriteBase3D_constant_FLAG_FIXED_SIZE:
 
@@ -173,7 +173,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-該模式僅允許完全透明或完全不透明的圖元。除非啟用了某種形式的螢幕空間抗鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。從好的方面來說，當多個透明材質重疊時，該模式不會出現透明度排序問題。這種模式也被稱為 *alpha 測試*\ 或 *1 位透明度*\ 。
+該模式僅允許完全透明或完全不透明的圖元。除非啟用了某種形式的螢幕空間反鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。從好的方面來說，當多個透明材質重疊時，該模式不會出現透明度排序問題。這種模式也被稱為 *alpha 測試*\ 或 *1 位透明度*\ 。
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_OPAQUE_PREPASS:
 
@@ -181,7 +181,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-該模式在深度預算繪階段繪製完全不透明的圖元。這比 :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>` 或 :ref:`ALPHA_CUT_DISCARD<class_SpriteBase3D_constant_ALPHA_CUT_DISCARD>` 慢，但它允許在使用正確排序的同時顯示半透明區域和平滑邊緣。
+該模式在深度預渲染階段繪製完全不透明的圖元。這比 :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>` 或 :ref:`ALPHA_CUT_DISCARD<class_SpriteBase3D_constant_ALPHA_CUT_DISCARD>` 慢，但它允許在使用正確排序的同時顯示半透明區域和平滑邊緣。
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_HASH:
 
@@ -211,7 +211,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-在 Alpha 通道上套用抗鋸齒的臨界值。
+在 Alpha 通道上套用反鋸齒的臨界值。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-要套用的 Alpha 抗鋸齒類型。
+要套用的 Alpha 反鋸齒類型。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 - |void| **set_alpha_cut_mode**\ (\ value\: :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>`\ )
 - :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **get_alpha_cut_mode**\ (\ )
 
-The alpha cutting mode to use for the sprite.
+精靈所使用的 Alpha 剪切模式。
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ Alpha 裁剪丟棄數值的閾值。
 - |void| **set_billboard_mode**\ (\ value\: :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>`\ )
 - :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **get_billboard_mode**\ (\ )
 
-The billboard mode to use for the sprite.
+精靈的公告板模式。
 
-\ **Note:** When billboarding is enabled and the material also casts shadows, billboards will face **the** camera in the scene when rendering shadows. In scenes with multiple cameras, the intended shadow cannot be determined and this will result in undefined behavior. See `GitHub Pull Request #72638 <https://github.com/godotengine/godot/pull/72638>`__ for details.
+\ **注意：**\ 如果啟用了公告板並且材質能夠投射陰影，那麼渲染陰影時公告板面向的是\ **場景中**\ 的相機。如果場景中存在多個相機，則無法確定陰影，會導致未定義的行為。詳見 `GitHub Pull Request #72638 <https://github.com/godotengine/godot/pull/72638>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The billboard mode to use for the sprite.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const|
 
-If ``true``, the texture is rendered at the same size regardless of distance. The texture's size on screen is the same as if the camera was ``1.0`` units away from the texture's origin, regardless of the actual distance from the camera. The :ref:`Camera3D<class_Camera3D>`'s field of view (or :ref:`Camera3D.size<class_Camera3D_property_size>` when in orthogonal/frustum mode) still affects the size the sprite is drawn at.
+如果為 ``true``\ ，則紋理始終以相同的大小渲染，忽略距離。紋理在螢幕上的大小與相機距離紋理原點 ``1.0`` 單位時相同，忽略與相機的實際距離。\ :ref:`Camera3D<class_Camera3D>` 的視野（使用正交/視錐模式時則為 :ref:`Camera3D.size<class_Camera3D_property_size>`\ ）仍然會影響精靈繪製的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -417,11 +417,11 @@ If ``true``, the texture is rendered at the same size regardless of distance. Th
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-A color value used to *multiply* the texture's colors. Can be used for mood-coloring or to simulate the color of ambient light.
+用於\ *乘以*\ 紋理顏色的顏色值。可用於氛圍著色或模擬環境光的顏色。
 
-\ **Note:** Unlike :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` for 2D, colors with values above ``1.0`` (overbright) are not supported.
+\ **注意：**\ 與 2D 的 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` 不同，不支援大於 ``1.0`` 的顏色值（過亮）。
 
-\ **Note:** If a :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>` is defined on the **SpriteBase3D**, the material override must be configured to take vertex colors into account for albedo. Otherwise, the color defined in :ref:`modulate<class_SpriteBase3D_property_modulate>` will be ignored. For a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` must be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function.
+\ **注意：**\ 如果在 **SpriteBase3D** 上定義了 :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`\ ，則必須設定該材質，讓它的反照率考慮頂點顏色。否則 :ref:`modulate<class_SpriteBase3D_property_modulate>` 中定義的顏色將被忽略。對於 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ ，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` 必須為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須將 ``ALBEDO *= COLOR.rgb;``\ ，插入到著色器的 ``fragment()`` 函式中。
 
 .. rst-class:: classref-item-separator
 
@@ -455,9 +455,9 @@ A color value used to *multiply* the texture's colors. Can be used for mood-colo
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The texture's drawing offset.
+紋理繪製偏移。
 
-\ **Note:** When you increase :ref:`offset<class_SpriteBase3D_property_offset>`.y in Sprite3D, the sprite moves upward in world space (i.e., +Y is up).
+\ **注意：**\ 在 Sprite3D 中增大 :ref:`offset<class_SpriteBase3D_property_offset>`.y 會讓精靈在世界中向上移動（即 +Y 朝上）。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ The texture's drawing offset.
 - |void| **set_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_render_priority**\ (\ )
 
-設定該精靈的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+設定該精靈的渲染優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
 
 \ **注意：**\ 僅在 :ref:`alpha_cut<class_SpriteBase3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
 
@@ -529,9 +529,9 @@ The texture's drawing offset.
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **get_texture_filter**\ (\ )
 
-Filter flags for the texture.
+紋理過濾標誌。
 
-\ **Note:** Linear filtering may cause artifacts around the edges, which are especially noticeable on opaque textures. To prevent this, use textures with transparent or identical colors around the edges.
+\ **注意：**\ 線性過濾可能導致邊緣的顯示問題，對不透明紋理尤為明顯。要避免這個問題，請使用具有透明邊緣或邊緣顏色一致的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ Filter flags for the texture.
 
 |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpriteBase3D_method_set_draw_flag>`
 
-If ``true``, the specified flag will be enabled.
+如果為 ``true``\ ，則將啟用指定的標誌。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

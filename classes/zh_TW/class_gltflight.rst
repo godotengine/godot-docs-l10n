@@ -7,14 +7,14 @@ GLTFLight
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF light.
+代表 glTF 燈光。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
+代表由 ``KHR_lights_punctual`` glTF 擴充定義的燈光。
 
 .. rst-class:: classref-introduction-group
 
@@ -23,7 +23,7 @@ Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- `KHR_lights_punctual glTF extension spec <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_lights_punctual>`__
+- `KHR_lights_punctual glTF 擴充規格 <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_lights_punctual>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -89,9 +89,9 @@ Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The :ref:`Color<class_Color>` of the light in linear space. Defaults to white. A black color causes the light to have no effect.
+燈光線上性空間中的 :ref:`Color<class_Color>`\ 。預設為白色。如果為黑色則燈光不會產生任何效果。
 
-This value is linear to match glTF, but will be converted to nonlinear sRGB when creating a Godot :ref:`Light3D<class_Light3D>` node upon import, or converted to linear when exporting a Godot :ref:`Light3D<class_Light3D>` to glTF.
+該值為線性，與 glTF 一致，但是匯入建立 Godot :ref:`Light3D<class_Light3D>` 時會轉換至非線性 sRGB 空間，將 Godot :ref:`Light3D<class_Light3D>` 匯出為 glTF 時會轉換至線性空間。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ This value is linear to match glTF, but will be converted to nonlinear sRGB when
 - |void| **set_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range**\ (\ )
 
-The range of the light, beyond which the light has no effect. glTF lights with no range defined behave like physical lights (which have infinite range). When creating a Godot light, the range is clamped to ``4096.0``.
+燈光的範圍，超過這個範圍燈光無效。沒有定義範圍的 glTF 燈光的行為與物理燈光一樣（範圍無限）。建立 Godot 燈光時，範圍限制在 ``4096.0``\ 。
 
 .. rst-class:: classref-section-separator
 

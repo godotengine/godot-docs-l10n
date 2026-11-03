@@ -616,7 +616,7 @@ Devuelve el acelerador del elemento en el índice ``idx``. Los aceleradores son 
 
 :ref:`Callable<class_Callable>` **get_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_callback>`
 
-Devuelve la callback del elemento en el índice ``idx``.
+Devuelve el callback del elemento en el índice ``idx``.
 
 \ **Nota:** Este método está implementado en macOS y Windows.
 
@@ -938,11 +938,11 @@ Devuelve ``true`` si el elemento en el índice ``idx`` está marcado.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_disabled>`
 
-Returns ``true`` if the item at index ``idx`` is disabled. When it is disabled it can't be selected, or its action invoked.
+Devuelve ``true`` si el elemento en el índice ``idx`` está deshabilitado. Cuando está deshabilitado, no se puede seleccionar ni invocar su acción.
 
-See :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` for more info on how to disable an item.
+Véase :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` para obtener más información sobre cómo deshabilitar un elemento.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1072,11 +1072,11 @@ Establece el acelerador del elemento en el índice ``idx``. ``keycode`` puede se
 
 |void| **set_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_callback>`
 
-Sets the callback of the item at index ``idx``. Callback is emitted when an item is pressed.
+Establece el callback del elemento en el índice ``idx``. El callback se emite cuando se pulsa un elemento.
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** La función ``callback`` Callable necesita aceptar exactamente un parámetro Variant, el parámetro pasado a la función Callable será el valor pasado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1310,9 +1310,9 @@ Establece el texto del elemento en el índice ``idx``.
 
 |void| **set_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tooltip>`
 
-Sets the :ref:`String<class_String>` tooltip of the item at the specified index ``idx``.
+Establece el tooltip :ref:`String<class_String>` del elemento en el índice especificado ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1338,11 +1338,11 @@ Establece el ancho mínimo del menú global.
 
 |void| **set_popup_close_callback**\ (\ rid\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_popup_close_callback>`
 
-Registers callable to emit when the menu is about to show.
+Registra un objeto invocable para que se emita cuando el menú esté a punto de mostrarse.
 
-\ **Note:** The OS can simulate menu opening to track menu item changes and global shortcuts, in which case the corresponding close callback is not triggered. Use :ref:`is_opened()<class_NativeMenu_method_is_opened>` to check if the menu is currently opened.
+\ **Nota:** El sistema operativo puede simular la apertura del menú para rastrear los cambios en los elementos del menú y los atajos globales, en cuyo caso no se activa el callback de cierre correspondiente. Utiliza :ref:`is_opened()<class_NativeMenu_method_is_opened>` para comprobar si el menú está actualmente abierto.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 

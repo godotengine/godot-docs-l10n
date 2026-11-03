@@ -64,7 +64,7 @@ Semaphore
 
 |void| **post**\ (\ count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_Semaphore_method_post>`
 
-Lowers the **Semaphore**, allowing one thread in, or more if ``count`` is specified.
+降低 **Semaphore**\ ，額外允許一個執行緒進入，如果指定了 ``count`` 則可以是更多執行緒。
 
 .. rst-class:: classref-item-separator
 

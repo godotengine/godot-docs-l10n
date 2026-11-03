@@ -208,47 +208,26 @@ ScriptEditor
 
 Підтримувані формати ``topic`` включають ``class_name:class``, ``class_method:class:method``, ``class_constant:class:constant``, ``class_signal:class:signal``, ``class_annotation:class:@annotation``, ``class_property:class:property`` і ``class_theme_item:class:item``, де ``class`` — назва класу, ``method`` — назва методу, ``constant`` — назва константи, ``signal`` — назва сигналу, ``annotation`` — анотація name, ``property`` – це ім’я властивості, а ``item`` – це елемент теми. 
 
-\ ``кодовий блок`` 
-
-# Показує довідку для класу Node. 
-
-class_name:вузол 
-
-# Показує довідку для глобальної функції min. 
-
-# Глобальні об’єкти доступні в просторі імен `@GlobalScope`, показаному тут. 
-
-class_method:@GlobalScope:мін 
-
-# Показує довідку для get_viewport у класі Node. 
-
-class_method:Node:get_viewport 
-
-# Показує довідку для константи введення MOUSE_BUTTON_MIDDLE. 
-
-class_constant:Input:MOUSE_BUTTON_MIDDLE 
-
-# Показує довідку для натиснутого сигналу BaseButton. 
-
-class_signal:BaseButton:натиснуто 
-
-# Показує видиму довідку для властивості CanvasItem. 
-
-class_property:CanvasItem:видимий 
-
-# Показує довідку для експорту анотації GDScript. 
-
-# Анотації мають мати префікс символу `@` в дескрипторі, як показано тут. 
-
-class_annotation:@GDScript:@export 
-
-# Показує довідку для елемента теми GraphNode під назвою panel_selected. 
-
-class_theme_item:GraphNode:panel_selected 
-
-
 ::
-
+ 
+    # Показує довідку для класу Node. 
+    class_name:вузол 
+    # Показує довідку для глобальної функції min. 
+    # Глобальні об’єкти доступні в просторі імен `@GlobalScope`, показаному тут. 
+    class_method:@GlobalScope:мін 
+    # Показує довідку для get_viewport у класі Node. 
+    class_method:Node:get_viewport 
+    # Показує довідку для константи введення MOUSE_BUTTON_MIDDLE. 
+    class_constant:Input:MOUSE_BUTTON_MIDDLE 
+    # Показує довідку для натиснутого сигналу BaseButton. 
+    class_signal:BaseButton:натиснуто 
+    # Показує видиму довідку для властивості CanvasItem. 
+    class_property:CanvasItem:видимий 
+    # Показує довідку для експорту анотації GDScript. 
+    # Анотації мають мати префікс символу `@` в дескрипторі, як показано тут. 
+    class_annotation:@GDScript:@export 
+    # Показує довідку для елемента теми GraphNode під назвою panel_selected. 
+    class_theme_item:GraphNode:panel_selected 
 
 .. rst-class:: classref-item-separator
 

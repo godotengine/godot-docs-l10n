@@ -16,7 +16,7 @@ BoxShape3D
 
 3D 盒子形狀，旨在用於物理學。通常用於為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。
 
-\ **性能：**\ **BoxShape3D** 可以快速偵測碰撞，比 :ref:`CapsuleShape3D<class_CapsuleShape3D>` 和 :ref:`CylinderShape3D<class_CylinderShape3D>` 快，但比 :ref:`SphereShape3D<class_SphereShape3D>` 慢。
+\ **效能：**\ **BoxShape3D** 可以快速偵測碰撞，比 :ref:`CapsuleShape3D<class_CapsuleShape3D>` 和 :ref:`CylinderShape3D<class_CylinderShape3D>` 快，但比 :ref:`SphereShape3D<class_SphereShape3D>` 慢。
 
 .. rst-class:: classref-introduction-group
 

@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+Елемент управління розшириться вліво або вгору, щоб компенсувати зміну його мінімального розміру, якщо цей розмір стане більшим за його поточний розмір по відповідній осі.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+Елемент управління розшириться вправо або вниз, щоб компенсувати зміну, якщо його мінімальний розмір буде встановлено більшим за його поточний розмір по відповідній осі.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+Елемент управління буде розширюватися в обох напрямках однаково, щоб компенсувати зміну його мінімального розміру, якщо він стане більшим за поточний розмір.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Визначає напрямок по горизонтальній осі, у якому елемент управління має розширюватися, якщо його мінімальний розмір по горизонталі буде змінено на величину, більшу за поточний розмір, оскільки елемент управління завжди має мати розмір не менше мінімального.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Визначає напрямок по вертикальній осі, у якому елемент управління має збільшуватися, якщо його мінімальний розмір по вертикалі буде змінено на значення, більше за поточний розмір, оскільки елемент управління завжди має мати розмір не менше мінімального.
 
 .. rst-class:: classref-item-separator
 
@@ -2592,16 +2592,19 @@ Godot викликає цей метод, щоб передати вам ``data`
 
 \ **Примітка:** Якщо перетягування було ініційовано комбінацією клавіш або :ref:`accessibility_drag()<class_Control_method_accessibility_drag>`, ``at_position`` встановлюється на :ref:`Vector2.INF<class_Vector2_constant_INF>`, і як позицію перетягування слід використовувати поточну позицію вибраного елемента/тексту.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     func _can_drop_data(position, data):
     return typeof(data) == TYPE_DICTIONARY та data.has("color")
 
     func _drop_data(position, data):
     var color = data["color"]
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     public override bool _CanDropData(Vector2 atPosition, Variant data)
     {
     return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("color");
@@ -2611,8 +2614,8 @@ Godot викликає цей метод, щоб передати вам ``data`
     {
     Color color = data.AsGodotDictionary()["color"].AsColor();
     }
-    [/csharp]
-    [/блоки коду]
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -4148,9 +4151,9 @@ Godot викликає цей метод для отримання даних, �
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Скидає значення максимального розміру кешу в цьому вузлі та у батьківських вузлах аж до найвищого рівня. Призначений для використання разом із :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` у разі зміни значення, що повертається. Пряме встановлення значення :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` автоматично викликає цей метод.
+Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
 
-\ **Примітка:** Виклик цього методу також викликає :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`, оскільки зміна максимального розміру може вплинути на сукупний мінімальний розмір.
+\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
 
 .. rst-class:: classref-item-separator
 

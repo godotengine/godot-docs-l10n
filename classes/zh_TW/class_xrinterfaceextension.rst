@@ -182,7 +182,7 @@ XR 介面擴充（外掛程式）的基底類別。
 
 :ref:`RID<class_RID>` **_get_color_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_color_texture>`
 
-返回接受算繪結果的顏色紋理（如果適用）。
+返回接受渲染結果的顏色紋理（如果適用）。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ XR 介面擴充（外掛程式）的基底類別。
 
 :ref:`RID<class_RID>` **_get_depth_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_depth_texture>`
 
-返回接受算繪結果的深度紋理（如果適用）。
+返回接受渲染結果的深度紋理（如果適用）。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ XR 介面擴充（外掛程式）的基底類別。
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **_get_play_area**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_play_area>`
 
-Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` that represents the play areas boundaries (if applicable).
+回傳表示遊戲區域邊界的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ （如果適用）。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` that represents th
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **_get_play_area_mode**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_play_area_mode>`
 
-Returns the play area mode that sets up our play area.
+回傳設定遊戲區域的模式。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Returns the play area mode that sets up our play area.
 
 :ref:`Vector2<class_Vector2>` **_get_render_target_size**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_render_target_size>`
 
-返回我們在這個介面上的算繪目標大小，覆蓋標記為 XR 視口的 :ref:`Viewport<class_Viewport>` 的大小。
+返回我們在這個介面上的渲染目標大小，覆蓋標記為 XR 視埠的 :ref:`Viewport<class_Viewport>` 的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Returns the play area mode that sets up our play area.
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **_get_tracking_status**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_tracking_status>`
 
-Returns the current status of our tracking.
+回傳追蹤的目前狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Returns the current status of our tracking.
 
 :ref:`RID<class_RID>` **_get_velocity_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_velocity_texture>`
 
-返回作為算繪目標的速度紋理（如果適用）。
+返回作為渲染目標的速度紋理（如果適用）。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Returns the current status of our tracking.
 
 :ref:`VRSTextureFormat<enum_XRInterface_VRSTextureFormat>` **_get_vrs_texture_format**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_vrs_texture_format>`
 
-Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRInterfaceExtension_private_method__get_vrs_texture>`.
+回傳 :ref:`_get_vrs_texture()<class_XRInterfaceExtension_private_method__get_vrs_texture>` 所回傳紋理的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRI
 
 :ref:`bool<class_bool>` **_pre_draw_viewport**\ (\ render_target\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__pre_draw_viewport>`
 
-如果這是我們的主要 **XRInterfaceExtension**\ ，則在我們開始為每個活動的 XR :ref:`Viewport<class_Viewport>` 處理 :ref:`Viewport<class_Viewport>` 之前呼叫，如果該視口應該被算繪，則返回 ``true``\ 。如果使用者摘下頭戴式裝置，XR 介面可能會返回 ``false``\ ，我們可以暫停算繪。
+如果這是我們的主要 **XRInterfaceExtension**\ ，則在我們開始為每個活動的 XR :ref:`Viewport<class_Viewport>` 處理 :ref:`Viewport<class_Viewport>` 之前呼叫，如果該視埠應該被渲染，則返回 ``true``\ 。如果使用者摘下頭戴式裝置，XR 介面可能會返回 ``false``\ ，我們可以暫停渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRI
 
 |void| **_pre_render**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__pre_render>`
 
-如果這個 **XRInterfaceExtension** 在算繪開始前處於啟動狀態，則會呼叫這個函式，大多數 XR 介面都會在此時進行追蹤同步。
+如果這個 **XRInterfaceExtension** 在渲染開始前處於啟動狀態，則會呼叫這個函式，大多數 XR 介面都會在此時進行追蹤同步。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRI
 
 |void| **add_blit**\ (\ render_target\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, dst_rect\: :ref:`Rect2i<class_Rect2i>`, use_layer\: :ref:`bool<class_bool>`, layer\: :ref:`int<class_int>`, apply_lens_distortion\: :ref:`bool<class_bool>`, eye_center\: :ref:`Vector2<class_Vector2>`, k1\: :ref:`float<class_float>`, k2\: :ref:`float<class_float>`, upscale\: :ref:`float<class_float>`, aspect_ratio\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRInterfaceExtension_method_add_blit>`
 
-將我們的算繪結果傳輸到螢幕上，還可以在此過程中套用鏡頭失真。只能在處理 ``_commit_views`` 時呼叫。
+將我們的渲染結果傳輸到螢幕上，還可以在此過程中套用鏡頭失真。只能在處理 ``_commit_views`` 時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRI
 
 :ref:`RID<class_RID>` **get_render_target_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_XRInterfaceExtension_method_get_render_target_texture>`
 
-如果介面支援，則返回一個紋理的有效 :ref:`RID<class_RID>`\ ，我們應更將目前影格算繪至該紋理。
+如果介面支援，則返回一個紋理的有效 :ref:`RID<class_RID>`\ ，我們應更將目前影格渲染至該紋理。
 
 .. rst-class:: classref-item-separator
 

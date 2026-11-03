@@ -168,7 +168,7 @@ Si es ``true``, el canal alfa en el :ref:`ColorPicker<class_ColorPicker>` visual
 - |void| **set_edit_intensity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_intensity**\ (\ )
 
-If ``true``, the intensity slider in the displayed :ref:`ColorPicker<class_ColorPicker>` will be visible.
+Si es ``true``, el deslizador de intensidad del :ref:`ColorPicker<class_ColorPicker>` mostrado será visible.
 
 .. rst-class:: classref-section-separator
 

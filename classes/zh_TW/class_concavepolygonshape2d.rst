@@ -14,15 +14,15 @@ ConcavePolygonShape2D
 說明
 ----
 
-A 2D polyline shape, intended for use in physics. Used internally in :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` when it's in :ref:`CollisionPolygon2D.BUILD_SEGMENTS<class_CollisionPolygon2D_constant_BUILD_SEGMENTS>` mode.
+一種 2D 折線形狀，用於物理運算。當 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 處於 :ref:`CollisionPolygon2D.BUILD_SEGMENTS<class_CollisionPolygon2D_constant_BUILD_SEGMENTS>` 模式時，會在其內部使用。
 
-Being just a collection of interconnected line segments, **ConcavePolygonShape2D** is the most freely configurable single 2D shape. It can be used to form polygons of any nature, or even shapes that don't enclose an area. However, **ConcavePolygonShape2D** is *hollow* even if the interconnected line segments do enclose an area, which often makes it unsuitable for physics or detection.
+作為一組相互連接線段，\ **ConcavePolygonShape2D** 是最自由的可設定的單一 2D 形狀。它可以用於形成任何性質的多邊形，甚至是不封閉區域的形狀。然而，即使相互連接的線段確實封閉了一個區域，\ **ConcavePolygonShape2D** 仍然是\ *中空的*\ ，這常常使其不適用於物理模擬或碰撞檢測。
 
-\ **Note:** When used for collision, **ConcavePolygonShape2D** is intended to work with static :ref:`CollisionShape2D<class_CollisionShape2D>` nodes like :ref:`StaticBody2D<class_StaticBody2D>` and will likely not behave well for :ref:`CharacterBody2D<class_CharacterBody2D>`\ s or :ref:`RigidBody2D<class_RigidBody2D>`\ s in a mode other than Static.
+\ **注意：**\ 當用於碰撞計算時，\ **ConcavePolygonShape2D** 旨在與 :ref:`StaticBody2D<class_StaticBody2D>` 等靜態 :ref:`CollisionShape2D<class_CollisionShape2D>` 節點一起使用，並且對於 :ref:`CharacterBody2D<class_CharacterBody2D>` 或 :ref:`RigidBody2D<class_RigidBody2D>`\ ，在除靜態模式之外的其他模式下可能表現不佳。
 
-\ **Warning:** Physics bodies that are small have a chance to clip through this shape when moving fast. This happens because on one frame, the physics body may be on the "outside" of the shape, and on the next frame it may be "inside" it. **ConcavePolygonShape2D** is hollow, so it won't detect a collision.
+\ **警告：**\ 較小的物理物體在快速移動時有機會穿過該形狀。發生這種情況是因為在一影格上，物理物體可能位於形狀的“外部”，而在下一影格上，它可能位於形狀的“內部”。由於\ **ConcavePolygonShape2D** 是中空的，因此它不會檢測到碰撞。
 
-\ **Performance:** Due to its complexity, **ConcavePolygonShape2D** is the slowest 2D collision shape to check collisions against. Its use should generally be limited to level geometry. If the polyline is closed, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`'s :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` mode can be used, which decomposes the polygon into convex ones; see :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>`'s documentation for instructions.
+\ **效能：**\ 由於其複雜性， **ConcavePolygonShape2D** 是檢測碰撞最慢的 2D 碰撞形狀。它的使用一般僅限於關卡幾何體。如果折線是閉合的，可以使用 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 的 :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` 模式，它會將多邊形分解成凸多邊形；相關說明請參閱 :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 文件。
 
 .. rst-class:: classref-reftable-group
 

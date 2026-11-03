@@ -45,9 +45,9 @@ CallbackTweener
 
 :ref:`CallbackTweener<class_CallbackTweener>` **set_delay**\ (\ delay\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CallbackTweener_method_set_delay>`
 
-Makes the callback call delayed by given time in seconds.
+讓該回呼延遲給定的時間，單位為秒。
 
-\ **Example:** Call :ref:`Node.queue_free()<class_Node_method_queue_free>` after 2 seconds:
+\ **範例：**\ 在 2 秒後呼叫 :ref:`Node.queue_free()<class_Node_method_queue_free>`\ ：
 
 ::
 

@@ -96,7 +96,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_HIGH** = ``2``
 
-Tracking information is considered accurate and up to date.
+追蹤資訊被認為是準確且最新的。
 
 .. rst-class:: classref-section-separator
 
@@ -169,15 +169,15 @@ Tracking information is considered accurate and up to date.
 - |void| **set_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_name**\ (\ )
 
-The name of this pose. Usually, this name is derived from an action map set up by the user. Godot also suggests some pose names that :ref:`XRInterface<class_XRInterface>` objects are expected to implement:
+姿勢的名稱。姿勢名稱通常派生自使用者設定的動作映射。Godot 也針對姿勢名稱給出了一些建議，希望 :ref:`XRInterface<class_XRInterface>` 能夠實作：
 
-- ``root`` is the root location, often used for tracked objects that do not have further nodes.
+-``root`` 是根位置，通常用於沒有其他節點的被追蹤物體。
 
-- ``aim`` is the tip of a controller with its orientation pointing outwards, often used for raycasts.
+-``aim`` 是控制器的頂端，方向朝外，常用於射線投射。
 
-- ``grip`` is the location where the user grips the controller.
+-``grip`` 是使用者持握控制器的位置。
 
-- ``skeleton`` is the root location for a hand mesh, when using hand tracking and an animated skeleton is supplied by the XR runtime.
+-``skeleton`` 是在使用手部追蹤且 XR 執行時提供的動畫骨架時，手部網格的根位置。
 
 .. rst-class:: classref-item-separator
 

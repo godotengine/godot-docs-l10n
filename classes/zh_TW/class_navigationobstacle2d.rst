@@ -9,18 +9,18 @@ NavigationObstacle2D
 
 **繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-2D obstacle used to affect navigation mesh baking or constrain velocities of avoidance controlled agents.
+用於導航的 2D 障礙物，能夠影響導覽網格的烘焙、約束啟用了避障處理的代理的速度。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An obstacle needs a navigation map and outline :ref:`vertices<class_NavigationObstacle2D_property_vertices>` defined to work correctly. The outlines can not cross or overlap.
+障礙物需要導航地圖和輪廓頂點 :ref:`vertices<class_NavigationObstacle2D_property_vertices>` 才能夠正常工作。輪廓不能交叉或重疊。
 
-Obstacles can be included in the navigation mesh baking process when :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect_navigation_mesh>` is enabled. They do not add walkable geometry, instead their role is to discard other source geometry inside the shape. This can be used to prevent navigation mesh from appearing in unwanted places. If :ref:`carve_navigation_mesh<class_NavigationObstacle2D_property_carve_navigation_mesh>` is enabled the baked shape will not be affected by offsets of the navigation mesh baking, e.g. the agent radius.
+障礙物如果啟用了 :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect_navigation_mesh>`\ ，就會影響導覽網格的烘焙過程。障礙物並不會新增可行走的幾何體，而是負責棄置形狀內的其他來源幾何體。可用於防止導覽網格出現在不需要的位置。如果啟用了 :ref:`carve_navigation_mesh<class_NavigationObstacle2D_property_carve_navigation_mesh>`\ ，烘焙形狀不會受到導覽網格烘焙偏移量的影響，例如代理的半徑。
 
-With :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabled>` the obstacle can constrain the avoidance velocities of avoidance using agents. If the obstacle's vertices are wound in clockwise order, avoidance agents will be pushed in by the obstacle, otherwise, avoidance agents will be pushed out. Obstacles using vertices and avoidance can warp to a new position but should not be moved every single frame as each change requires a rebuild of the avoidance map.
+障礙物如果啟用了 :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabled>`\ ，就能夠約束啟用了避障處理的代理的避障速度。如果障礙物頂點使用順時針纏繞順序，則障礙物會將避障代理推進其內部，否則為推出。使用頂點和避障的障礙物可以瞬移到新的位置，但是不應該每一影格都移動，因為每次更改都需要重新建置避障地圖。
 
 .. rst-class:: classref-introduction-group
 
@@ -93,7 +93,7 @@ With :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabl
 - |void| **set_affect_navigation_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_affect_navigation_mesh**\ (\ )
 
-If enabled and parsed in a navigation mesh baking process the obstacle will discard source geometry inside its :ref:`vertices<class_NavigationObstacle2D_property_vertices>` defined shape.
+如果啟用並在導覽網格烘焙過程中解析，則障礙物將丟棄其 :ref:`vertices<class_NavigationObstacle2D_property_vertices>` 定義形狀內的源幾何體。
 
 .. rst-class:: classref-item-separator
 
@@ -144,11 +144,11 @@ If enabled and parsed in a navigation mesh baking process the obstacle will disc
 - |void| **set_carve_navigation_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_carve_navigation_mesh**\ (\ )
 
-If enabled the obstacle vertices will carve into the baked navigation mesh with the shape unaffected by additional offsets (e.g. agent radius).
+如果啟用，障礙物頂點將雕刻到烘焙的導覽網格中，其形狀不受額外偏移（例如代理半徑）的影響。
 
-It will still be affected by further postprocessing of the baking process, like edge and polygon simplification.
+它仍會受到烘焙過程的後續後處理的影響，例如邊緣和多邊形簡化。
 
-Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect_navigation_mesh>` to be enabled.
+需要啟用 :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect_navigation_mesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 |void| **set_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationObstacle2D_method_set_avoidance_layer_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value`` 啟用或停用 :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

@@ -316,7 +316,7 @@ Inserta un nuevo entero en una posición dada del array. La posición debe ser v
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedInt64Array_method_is_empty>`
 
-Devuelve ``true`` si el array es vacio.
+Devuelve ``true`` si el array está vacío.
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Añade un valor al array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt64Array_method_remove_at>`
 
-Elimina un elemento del array por indice.
+Elimina un elemento del array por índice.
 
 .. rst-class:: classref-item-separator
 

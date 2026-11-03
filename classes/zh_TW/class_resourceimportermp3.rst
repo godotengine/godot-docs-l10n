@@ -62,9 +62,9 @@ MP3 是一種有損音訊格式，在相同位元率下音質不如 :ref:`Resour
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterMP3_property_bar_beats>`
 
-The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音訊軌道中，單個小節（bar）內包含的節拍（beat）數量。這個設定僅對希望使用互動音樂（interactive music）功能的音樂有效，而不適用於音效。
 
-A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **進階匯入設定（Advanced Import Settings）** 對話框中，為 :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` 提供了一個更方便的編輯器。因為它可以讓你在預覽更改效果的同時，免去反復重新匯入音訊的麻煩。
 
 .. rst-class:: classref-item-separator
 
@@ -76,9 +76,9 @@ A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_beat_count>`
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音訊軌道的總長度（以節拍數為單位）。音訊檔案的實際播放時長可能會比這個屬性所指示的時長要長。該設定僅對希望使用互動音樂（interactive music）功能的音樂有效，而不適用於音效。
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **進階匯入設定（Advanced Import Settings）** 對話框中，為 :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` 提供了一個更方便的編輯器。因為它可以讓你在預覽更改效果的同時，免去反復重新匯入音訊的麻煩。
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_bpm>`
 
-The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音訊軌道的 tempo（節奏速度），以每分鐘的節拍數（BPM）為單位進行衡量。這裡填寫的數值應該與創作這首曲子時使用的 BPM 保持一致。這個設定僅對希望使用互動音樂（interactive music）功能的音樂有效，而不適用於音效。
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **進階匯入設定（Advanced Import Settings）** 對話框中，為 :ref:`bpm<class_ResourceImporterMP3_property_bpm>` 提供了一個更方便的編輯器。因為它可以讓你在預覽更改效果的同時，免去反復重新匯入音訊的麻煩。
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` 
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterMP3_property_loop>`
 
-If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`.
+如果啟用，當音訊播放結束（無論是播放到了音訊檔案的末尾，還是根據 :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` 中指定的數量播放到了最後一個節拍的末尾）後，音訊將會從開頭或者從 :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>` 指定的位置重新開始播放。
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **注意：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，對於開啟了循環的音訊，當它播放到音訊檔案末尾時，不會觸發 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>`\ （播放完成）訊號，因為音訊會一直無限循環播放下去。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ If enabled, the audio will begin playing either from the beginning or from :ref:
 
 僅當 :ref:`loop<class_ResourceImporterMP3_property_loop>` 為 ``true`` 時生效。
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+\ **進階匯入設定** 對話框提供了更方便的 :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

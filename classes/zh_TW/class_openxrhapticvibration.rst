@@ -7,14 +7,14 @@ OpenXRHapticVibration
 
 **繼承：** :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Vibration haptic feedback.
+振動觸覺回饋。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This haptic feedback resource makes it possible to define a vibration based haptic feedback pulse that can be triggered through actions in the OpenXR action map.
+該觸覺回饋資源能夠定義基於振動的觸覺回饋脈衝，該脈衝可以通過 OpenXR 動作映射中的動作觸發。
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ This haptic feedback resource makes it possible to define a vibration based hapt
 - |void| **set_amplitude**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_amplitude**\ (\ )
 
-The amplitude of the pulse between ``0.0`` and ``1.0``.
+脈衝的幅度，在 ``0.0`` 和 ``1.0`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ The amplitude of the pulse between ``0.0`` and ``1.0``.
 - |void| **set_duration**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_duration**\ (\ )
 
-The duration of the pulse in nanoseconds. Use ``-1`` for a minimum duration pulse for the current XR runtime.
+脈衝的持續時間，單位為納秒。使用 ``-1`` 表示目前 XR 執行時的最小持續時間脈衝。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ The duration of the pulse in nanoseconds. Use ``-1`` for a minimum duration puls
 - |void| **set_frequency**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_frequency**\ (\ )
 
-The frequency of the pulse in Hz. ``0.0`` will let the XR runtime chose an optimal frequency for the device used.
+脈衝的頻率，單位為赫茲。\ ``0.0`` 會讓 XR 執行時為所使用的裝置選擇最佳頻率。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -269,7 +269,7 @@ enum **DrawOrder**: :ref:`🔗<enum_CPUParticles3D_DrawOrder>`
 
 :ref:`DrawOrder<enum_CPUParticles3D_DrawOrder>` **DRAW_ORDER_LIFETIME** = ``1``
 
-Particles are drawn in order of remaining lifetime. In other words, the particle with the highest lifetime is drawn at the front.
+粒子按照剩餘壽命的順序繪製。換句話說，壽命最長的粒子被繪製在前面。
 
 .. _class_CPUParticles3D_constant_DRAW_ORDER_VIEW_DEPTH:
 
@@ -546,7 +546,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's rotation will be animated along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的旋轉將沿著這個 :ref:`Curve<class_Curve>` 進行動畫。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ Each particle's rotation will be animated along this :ref:`Curve<class_Curve>`. 
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's angular velocity (rotation speed) will vary along this :ref:`Curve<class_Curve>` over its lifetime. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的角速度（旋轉速度）將在其生命週期內沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Each particle's angular velocity (rotation speed) will vary along this :ref:`Cur
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's animation offset will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的動畫偏移將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ Each particle's animation offset will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的動畫速度將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -769,9 +769,9 @@ Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. 
 - |void| **set_color_initial_ramp**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_color_initial_ramp**\ (\ )
 
-Each particle's initial color will vary along this :ref:`Gradient<class_Gradient>` (multiplied with :ref:`color<class_CPUParticles3D_property_color>`).
+每個粒子的初始顏色將沿著該 :ref:`Gradient<class_Gradient>` 變化（乘以 :ref:`color<class_CPUParticles3D_property_color>`\ ）。
 
-\ **Note:** :ref:`color_initial_ramp<class_CPUParticles3D_property_color_initial_ramp>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color_initial_ramp<class_CPUParticles3D_property_color_initial_ramp>` will have no visible effect.
+\ **注意：**\ :ref:`color_initial_ramp<class_CPUParticles3D_property_color_initial_ramp>` 會與粒子網格的頂點顏色相乘。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則 :ref:`color_initial_ramp<class_CPUParticles3D_property_color_initial_ramp>` 將沒有可見效果。
 
 .. rst-class:: classref-item-separator
 
@@ -788,9 +788,9 @@ Each particle's initial color will vary along this :ref:`Gradient<class_Gradient
 - |void| **set_color_ramp**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_color_ramp**\ (\ )
 
-Each particle's color will vary along this :ref:`Gradient<class_Gradient>` over its lifetime (multiplied with :ref:`color<class_CPUParticles3D_property_color>`).
+每個粒子的顏色將在其生命週期內沿該 :ref:`Gradient<class_Gradient>` 變化（乘以 :ref:`color<class_CPUParticles3D_property_color>`\ ）。
 
-\ **Note:** :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` will have no visible effect.
+\ **注意：**\ :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` 會與粒子網格的頂點顏色相乘。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則 :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` 將沒有可見效果。
 
 .. rst-class:: classref-item-separator
 
@@ -807,7 +807,7 @@ Each particle's color will vary along this :ref:`Gradient<class_Gradient>` over 
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+阻尼將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -875,7 +875,7 @@ Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`C
 - |void| **set_draw_order**\ (\ value\: :ref:`DrawOrder<enum_CPUParticles3D_DrawOrder>`\ )
 - :ref:`DrawOrder<enum_CPUParticles3D_DrawOrder>` **get_draw_order**\ (\ )
 
-Particle draw order.
+粒子繪製順序。
 
 .. rst-class:: classref-item-separator
 
@@ -985,9 +985,9 @@ Particle draw order.
 - |void| **set_emission_ring_cone_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_cone_angle**\ (\ )
 
-The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>`. The default angle of 90 degrees results in a ring, while an angle of 0 degrees results in a cone. Intermediate values will result in a ring where one end is larger than the other.
+使用形為 :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>` 的發射器時圓錐體的張角。預設的 90 度角會得到一個環，而 0 度角則會得到椎體。兩者之間的值會得到一端大於另一端的環。
 
-\ **Note:** Depending on :ref:`emission_ring_height<class_CPUParticles3D_property_emission_ring_height>`, the angle may be clamped if the ring's end is reached to form a perfect cone.
+\ **注意：**\ 根據 :ref:`emission_ring_height<class_CPUParticles3D_property_emission_ring_height>` 的不同，圓環的末端形成尖頂時可能會對角度進行限制。
 
 .. rst-class:: classref-item-separator
 
@@ -1055,7 +1055,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPU
 - |void| **set_emission_shape**\ (\ value\: :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>`\ )
 - :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **get_emission_shape**\ (\ )
 
-Particles will be emitted inside this region.
+粒子將在該區域內發射。
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ Particles will be emitted inside this region.
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度算繪。請注意，這並不會降低粒子系統本身的速度。
+粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度渲染。請注意，這並不會降低粒子系統本身的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1191,7 +1191,7 @@ Y/Z 平面中的 :ref:`spread<class_CPUParticles3D_property_spread>` 數量。�
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的色相將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1310,7 +1310,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的線性加速度將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果為 ``true``\ ，粒子使用父節點的座標空間（稱為局部座標）。這將導致粒子在移動或旋轉時，沿著 **CPUParticles3D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **CPUParticles3D** 節點（及其父節點）移動或旋轉。
+如果為 ``true``\ ，粒子使用父節點的座標空間（稱為區域座標）。這將導致粒子在移動或旋轉時，沿著 **CPUParticles3D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **CPUParticles3D** 節點（及其父節點）移動或旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -1412,7 +1412,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的軌道速度將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1531,7 +1531,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的徑向加速度將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1599,7 +1599,7 @@ Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的縮放將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1701,7 +1701,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Sets the random seed used by the particle system. Only effective if :ref:`use_fixed_seed<class_CPUParticles3D_property_use_fixed_seed>` is ``true``.
+設定粒子系統所使用的隨機數種子。僅在 :ref:`use_fixed_seed<class_CPUParticles3D_property_use_fixed_seed>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1769,7 +1769,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-Each particle's tangential acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
+每個粒子的切向加速度將沿著這個 :ref:`Curve<class_Curve>` 變化。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ Each particle's tangential acceleration will vary along this :ref:`Curve<class_C
 - |void| **set_use_fixed_seed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_fixed_seed**\ (\ )
 
-If ``true``, particles will use the same seed for every simulation using the seed defined in :ref:`seed<class_CPUParticles3D_property_seed>`. This is useful for situations where the visual outcome should be consistent across replays, for example when using Movie Maker mode.
+如果為 ``true``\ ，則每次模擬中粒子會使用 :ref:`seed<class_CPUParticles3D_property_seed>` 中定義的種子。適用於需要在重放時保持視覺效果一致的情況，例如使用 Movie Maker 模式時。
 
 .. rst-class:: classref-item-separator
 
@@ -1837,9 +1837,9 @@ If ``true``, particles will use the same seed for every simulation using the see
 - |void| **set_visibility_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_visibility_aabb**\ (\ )
 
-The :ref:`AABB<class_AABB>` that determines the node's region which needs to be visible on screen for the particle system to be active.
+:ref:`AABB<class_AABB>` 確定節點的區域，該區域需要在螢幕上可見才能使粒子系統處於活動狀態。
 
-Grow the box if particles suddenly appear/disappear when the node enters/exits the screen. The :ref:`AABB<class_AABB>` can be grown via code or with the **Particles → Generate AABB** editor tool.
+如果當節點進入/退出螢幕時粒子突然出現/消失，則增大盒子。\ :ref:`AABB<class_AABB>` 可以通過程式碼或使用 **粒子 → 生成 AABB** 編輯器工具來生成。
 
 .. rst-class:: classref-section-separator
 
@@ -1916,7 +1916,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`\ ) |const| :ref:`🔗<class_CPUParticles3D_method_get_particle_flag>`
 
-Returns the enabled state of the given particle flag.
+回傳給定粒子標誌的啟用狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1928,9 +1928,9 @@ Returns the enabled state of the given particle flag.
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CPUParticles3D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+請求粒子在單影格內額外處理指定的時間。
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` 定義了粒子在發射（emitting）開啟狀態下將要模擬的時間。\ ``process_time_residual`` 定義了粒子在發射關閉狀態下，為了維持模擬效果將要額外處理的時間。當把 :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` 設定為 ``0.0`` 並結合使用時，這個方法非常適用於對粒子系統的時間軸進行‘搜尋’（seek，即跳轉到特定時間點）。
 
 .. rst-class:: classref-item-separator
 
@@ -1942,9 +1942,9 @@ Requests the particles to process for extra process time during a single frame.
 
 |void| **restart**\ (\ keep_seed\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CPUParticles3D_method_restart>`
 
-Restarts the particle emitter.
+重啓粒子發射器。
 
-If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful for seeking and playback.
+如果 ``keep_seed`` 為 ``true``\ ，則會保留目前的隨機數種子。適用於跳轉和播放。
 
 .. rst-class:: classref-item-separator
 
@@ -1956,7 +1956,7 @@ If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful 
 
 |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_CPUParticles3D_method_set_param_curve>`
 
-Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter<enum_CPUParticles3D_Parameter>`. Should be a unit :ref:`Curve<class_Curve>`.
+設定 :ref:`Parameter<enum_CPUParticles3D_Parameter>` 指定的參數的 :ref:`Curve<class_Curve>`\ 。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1992,7 +1992,7 @@ Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter
 
 |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CPUParticles3D_method_set_particle_flag>`
 
-Enables or disables the given particle flag.
+啟用或停用給定的粒子標誌。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

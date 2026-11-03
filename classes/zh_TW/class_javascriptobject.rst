@@ -14,37 +14,37 @@ Web 原生 JavaScript 對象的封裝類。
 說明
 ----
 
-JavaScriptObject is used to interact with JavaScript objects retrieved or created via :ref:`JavaScriptBridge.get_interface()<class_JavaScriptBridge_method_get_interface>`, :ref:`JavaScriptBridge.create_object()<class_JavaScriptBridge_method_create_object>`, or :ref:`JavaScriptBridge.create_callback()<class_JavaScriptBridge_method_create_callback>`.
+JavaScriptObject 用於與通過 :ref:`JavaScriptBridge.get_interface()<class_JavaScriptBridge_method_get_interface>`\ 、\ :ref:`JavaScriptBridge.create_object()<class_JavaScriptBridge_method_create_object>` 或 :ref:`JavaScriptBridge.create_callback()<class_JavaScriptBridge_method_create_callback>` 檢索或建立的 JavaScript 物件進行互動。
 
 ::
 
     extends Node
 
-    var _my_js_callback = JavaScriptBridge.create_callback(myCallback) # This reference must be kept
+    var _my_js_callback = JavaScriptBridge.create_callback(myCallback) # 必須保留該參照
     var console = JavaScriptBridge.get_interface("console")
 
     func _init():
-        var buf = JavaScriptBridge.create_object("ArrayBuffer", 10) # new ArrayBuffer(10)
-        print(buf) # Prints [JavaScriptObject:OBJECT_ID]
-        var uint8arr = JavaScriptBridge.create_object("Uint8Array", buf) # new Uint8Array(buf)
+        var buf = JavaScriptBridge.create_object("ArrayBuffer", 10) # 新建 ArrayBuffer(10)
+        print(buf) # 輸出 [JavaScriptObject:OBJECT_ID]
+        var uint8arr = JavaScriptBridge.create_object("Uint8Array", buf) # 新建 Uint8Array(buf)
         uint8arr[1] = 255
-        prints(uint8arr[1], uint8arr.byteLength) # Prints "255 10"
+        prints(uint8arr[1], uint8arr.byteLength) # 輸出“255 10”
 
-        # Prints "Uint8Array(10) [ 0, 255, 0, 0, 0, 0, 0, 0, 0, 0 ]" in the browser's console.
+        # 在瀏覽器控制台中輸出“Uint8Array(10) [ 0, 255, 0, 0, 0, 0, 0, 0, 0, 0 ]”
         console.log(uint8arr)
 
-        # Equivalent of JavaScriptBridge: Array.from(uint8arr).forEach(myCallback)
+        # 等效於 JavaScriptBridge: Array.from(uint8arr).forEach(myCallback)
         JavaScriptBridge.get_interface("Array").from(uint8arr).forEach(_my_js_callback)
 
     func myCallback(args):
-        # Will be called with the parameters passed to the "forEach" callback
+        # 將使用傳遞給“forEach”回呼的參數呼叫
         # [0, 0, [JavaScriptObject:1173]]
         # [255, 1, [JavaScriptObject:1173]]
         # ...
         # [0, 9, [JavaScriptObject:1180]]
         print(args)
 
-\ **Note:** Only available in the Web platform.
+\ **注意：**\ 僅在 Web 平台上可用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

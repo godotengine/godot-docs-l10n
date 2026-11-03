@@ -14,9 +14,9 @@ TileMapPattern
 說明
 ----
 
-This resource holds a set of cells to help bulk manipulations of :ref:`TileMap<class_TileMap>`.
+這個資源存放的是一組單元格，能夠協助進行 :ref:`TileMap<class_TileMap>` 的批量操作。
 
-A pattern always starts at the ``(0, 0)`` coordinates and cannot have cells with negative coordinates.
+圖案始終從 ``(0, 0)`` 座標開始，不能存在負數座標的單元格。
 
 .. rst-class:: classref-reftable-group
 

@@ -9,14 +9,14 @@ OpenXRActionBindingModifier
 
 **被繼承：** :ref:`OpenXRAnalogThresholdModifier<class_OpenXRAnalogThresholdModifier>`
 
-Binding modifier that applies on individual actions related to an interaction profile.
+對互動設定相關的獨立動作應用的綁定修改器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Binding modifier that applies on individual actions related to an interaction profile.
+對互動設定相關的獨立動作應用的綁定修改器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

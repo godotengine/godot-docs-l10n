@@ -14,7 +14,7 @@ XRServer
 說明
 ----
 
-AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責執行所有處理。
+AR/VR 伺服器是我們“進階虛擬實境”解決方案的核心，負責執行所有處理。
 
 .. rst-class:: classref-introduction-group
 
@@ -118,7 +118,7 @@ AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責�
 
 **reference_frame_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_reference_frame_changed>`
 
-Emitted when the reference frame transform changes.
+當參考影格變換更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Emitted when the reference frame transform changes.
 
 **world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
 
-Emitted when the world origin transform changes.
+當世界原點變換發生改變時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -189,7 +189,7 @@ enum **TrackerType**: :ref:`🔗<enum_XRServer_TrackerType>`
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_HEAD** = ``1``
 
-The tracker tracks the location of the player's head. This is usually a location centered between the player's eyes. Note that for handheld AR devices this can be the current location of the device.
+追蹤器追蹤玩家頭部的位置。這通常是玩家眼睛之間的中心位置。請注意，對於手持式 AR 裝置，這可能是該裝置的目前位置。
 
 .. _class_XRServer_constant_TRACKER_CONTROLLER:
 
@@ -221,7 +221,7 @@ The tracker tracks the location of the player's head. This is usually a location
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_HAND** = ``16``
 
-The tracker tracks the location and joints of a hand.
+追蹤器追蹤手部的位置和關節。
 
 .. _class_XRServer_constant_TRACKER_BODY:
 
@@ -229,7 +229,7 @@ The tracker tracks the location and joints of a hand.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_BODY** = ``32``
 
-The tracker tracks the location and joints of a body.
+追蹤器追蹤身體的位置和關節。
 
 .. _class_XRServer_constant_TRACKER_FACE:
 
@@ -237,7 +237,7 @@ The tracker tracks the location and joints of a body.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_FACE** = ``64``
 
-The tracker tracks the expressions of a face.
+追蹤器追蹤面部的表情。
 
 .. _class_XRServer_constant_TRACKER_ANY_KNOWN:
 
@@ -317,9 +317,9 @@ enum **RotationMode**: :ref:`🔗<enum_XRServer_RotationMode>`
 - |void| **set_camera_locked_to_origin**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_camera_locked_to_origin**\ (\ )
 
-If set to ``true``, the scene will be rendered as if the camera is locked to the :ref:`XROrigin3D<class_XROrigin3D>`.
+如果設為 ``true``\ ，則渲染場景時會當作相機鎖定在了 :ref:`XROrigin3D<class_XROrigin3D>`\ 。
 
-\ **Note:** This doesn't provide a very comfortable experience for users. This setting exists for doing benchmarking or automated testing, where you want to control what is rendered via code.
+\ **注意：**\ 這並不能為使用者提供非常舒適的體驗。該設定存在的目的是為了進行基準測試或自動化測試，即希望通過程式碼控制渲染的內容。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ If set to ``true``, the scene will be rendered as if the camera is locked to the
 - |void| **set_world_origin**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_world_origin**\ (\ )
 
-我們的追蹤空間在虛擬世界中的原點。算繪器會用到這個資訊，根據新的追蹤資料來正確放置相機。
+我們的追蹤空間在虛擬世界中的原點。渲染器會用到這個資訊，根據新的追蹤資料來正確放置相機。
 
 \ **注意：**\ 這個屬性由目前的 :ref:`XROrigin3D<class_XROrigin3D>` 節點管理。暴露的目的是方便在 GDExtension 使用。
 
@@ -372,7 +372,7 @@ If set to ``true``, the scene will be rendered as if the camera is locked to the
 - |void| **set_world_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_world_scale**\ (\ )
 
-The scale of the game world compared to the real world. By default, most AR/VR platforms assume that 1 game unit corresponds to 1 real world meter.
+遊戲世界相對於現實世界的縮放。預設情況下，大多數 AR/VR 平台假定 1 個遊戲世界單位等於現實世界的 1 米。
 
 .. rst-class:: classref-section-separator
 
@@ -401,7 +401,7 @@ The scale of the game world compared to the real world. By default, most AR/VR p
 
 |void| **add_tracker**\ (\ tracker\: :ref:`XRTracker<class_XRTracker>`\ ) :ref:`🔗<class_XRServer_method_add_tracker>`
 
-Registers a new :ref:`XRTracker<class_XRTracker>` that tracks a physical object.
+注冊一個追蹤物理物件的新 :ref:`XRTracker<class_XRTracker>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -413,17 +413,17 @@ Registers a new :ref:`XRTracker<class_XRTracker>` that tracks a physical object.
 
 |void| **center_on_hmd**\ (\ rotation_mode\: :ref:`RotationMode<enum_XRServer_RotationMode>`, keep_height\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_XRServer_method_center_on_hmd>`
 
-This is an important function to understand correctly. AR and VR platforms all handle positioning slightly differently.
+正確地理解這個函式非常重要。AR 和 VR 平台處理定位的方式略有不同。
 
-For platforms that do not offer spatial tracking, our origin point ``(0, 0, 0)`` is the location of our HMD, but you have little control over the direction the player is facing in the real world.
+對於不提供空間追蹤的平台，我們的原點 ``(0, 0, 0)`` 是 HMD 的位置，但你幾乎無法控制玩家在現實世界中面對的方向。
 
-For platforms that do offer spatial tracking, our origin point depends very much on the system. For OpenVR, our origin point is usually the center of the tracking space, on the ground. For other platforms, it's often the location of the tracking camera.
+對於提供空間追蹤的平台，我們的原點在很大程度上取決於系統。對於 OpenVR，原點通常是地面上追蹤空間的中心。對於其他平台，它通常是追蹤相機的位置。
 
-This method allows you to center your tracker on the location of the HMD. It will take the current location of the HMD and use that to adjust all your tracking data; in essence, realigning the real world to your player's current position in the game world.
+此方法允許你將追蹤器置於 HMD 的位置。它將取得 HMD 的目前位置並使用它來調整你的所有追蹤資料；從本質上講，將現實世界重新調整到玩家在遊戲世界中的目前位置。
 
-For this method to produce usable results, tracking information must be available. This often takes a few frames after starting your game.
+為了使這種方法產生可用的結果，追蹤資訊必須可用。這通常在開始遊戲後需要幾影格。
 
-You should call this method after a few seconds have passed. For example, when the user requests a realignment of the display holding a designated button on a controller for a short period of time, or when implementing a teleport mechanism.
+你應該在幾秒鐘後呼叫此方法。例如，當使用者請求重新調整顯示時，按住控制器上的指定按鈕一小段時間，或者當實作傳送機制時。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ You should call this method after a few seconds have passed. For example, when t
 
 |void| **clear_reference_frame**\ (\ ) :ref:`🔗<class_XRServer_method_clear_reference_frame>`
 
-Clears the reference frame that was set by previous calls to :ref:`center_on_hmd()<class_XRServer_method_center_on_hmd>`.
+清除之前呼叫 :ref:`center_on_hmd()<class_XRServer_method_center_on_hmd>` 設定的參考影格。
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 |void| **remove_tracker**\ (\ tracker\: :ref:`XRTracker<class_XRTracker>`\ ) :ref:`🔗<class_XRServer_method_remove_tracker>`
 
-Removes this ``tracker``.
+移除該 ``tracker``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

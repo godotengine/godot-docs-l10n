@@ -7,23 +7,23 @@ GLTFAccessor
 
 **繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF accessor.
+代表 glTF 存取器。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-GLTFAccessor is a data structure representing a glTF ``accessor`` that would be found in the ``"accessors"`` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer. An accessor is a typed interpretation of the data in a buffer view.
+GLTFAccessor 是一種表示 glTF 存取器 ``"accessors"`` 的資料結構，可以在 ``"accessors"`` 陣列中找到。緩衝區是二進位資料塊。緩衝區檢視是緩衝區的切片。存取器是對緩衝區檢視中資料的型別化解釋。
 
-Most custom data stored in glTF does not need accessors, only buffer views (see :ref:`GLTFBufferView<class_GLTFBufferView>`). Accessors are for more advanced use cases such as interleaved mesh data encoded for the GPU.
+大多數儲存在 glTF 中的自訂資料不需要存取器，只需要緩衝區檢視（見 :ref:`GLTFBufferView<class_GLTFBufferView>`\ ）。存取器適用於更進階的用例，例如為 GPU 編碼的交錯網格資料。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- `Buffers, BufferViews, and Accessors in Khronos glTF specification <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md>`__
+- `Khronos glTF 規範中的緩衝區、BufferView 和存取器 <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_005_BuffersBufferViewsAccessors.md>`__
 
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
@@ -102,7 +102,7 @@ enum **GLTFAccessorType**: :ref:`🔗<enum_GLTFAccessor_GLTFAccessorType>`
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_SCALAR** = ``0``
 
-Accessor type "SCALAR". For the glTF object model, this can be used to map to a single float, int, or bool value, or a float array.
+“SCALAR”存取器型別。在 glTF 物件模型中可映射為單個 float、int、bool 值或單個 float 陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_VEC2:
 
@@ -110,7 +110,7 @@ Accessor type "SCALAR". For the glTF object model, this can be used to map to a 
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_VEC2** = ``1``
 
-Accessor type "VEC2". For the glTF object model, this maps to "float2", represented in the glTF JSON as an array of two floats.
+“VEC2”存取器型別。在 glTF 物件模型中可映射為“float2”，在 glTF JSON 中表示為包含兩個 float 的陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_VEC3:
 
@@ -118,7 +118,7 @@ Accessor type "VEC2". For the glTF object model, this maps to "float2", represen
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_VEC3** = ``2``
 
-Accessor type "VEC3". For the glTF object model, this maps to "float3", represented in the glTF JSON as an array of three floats.
+“VEC3”存取器型別。在 glTF 物件模型中可映射為“float3”，在 glTF JSON 中表示為包含三個 float 的陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_VEC4:
 
@@ -126,7 +126,7 @@ Accessor type "VEC3". For the glTF object model, this maps to "float3", represen
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_VEC4** = ``3``
 
-Accessor type "VEC4". For the glTF object model, this maps to "float4", represented in the glTF JSON as an array of four floats.
+“VEC4”存取器型別。在 glTF 物件模型中可映射為“float4”，在 glTF JSON 中表示為包含四個 float 的陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_MAT2:
 
@@ -134,7 +134,7 @@ Accessor type "VEC4". For the glTF object model, this maps to "float4", represen
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_MAT2** = ``4``
 
-Accessor type "MAT2". For the glTF object model, this maps to "float2x2", represented in the glTF JSON as an array of four floats.
+“MAT2”存取器型別。在 glTF 物件模型中可映射為“float2x2”，在 glTF JSON 中表示為包含四個 float 的陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_MAT3:
 
@@ -142,7 +142,7 @@ Accessor type "MAT2". For the glTF object model, this maps to "float2x2", repres
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_MAT3** = ``5``
 
-Accessor type "MAT3". For the glTF object model, this maps to "float3x3", represented in the glTF JSON as an array of nine floats.
+“MAT3”存取器型別。在 glTF 物件模型中可映射為“float3x3”，在 glTF JSON 中表示為包含九個 float 的陣列。
 
 .. _class_GLTFAccessor_constant_TYPE_MAT4:
 
@@ -150,7 +150,7 @@ Accessor type "MAT3". For the glTF object model, this maps to "float3x3", repres
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **TYPE_MAT4** = ``6``
 
-Accessor type "MAT4". For the glTF object model, this maps to "float4x4", represented in the glTF JSON as an array of sixteen floats.
+“MAT4”存取器型別。在 glTF 物件模型中可映射為“float4x4”，在 glTF JSON 中表示為包含十六個 float 的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ enum **GLTFComponentType**: :ref:`🔗<enum_GLTFAccessor_GLTFComponentType>`
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_NONE** = ``0``
 
-Component type "NONE". This is not a valid component type, and is used to indicate that the component type is not set.
+元件型別“NONE”。這不是有效的元件型別，用於表示元件型別未設定。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_SIGNED_BYTE:
 
@@ -176,7 +176,7 @@ Component type "NONE". This is not a valid component type, and is used to indica
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_SIGNED_BYTE** = ``5120``
 
-Component type "BYTE". The value is ``0x1400`` which comes from OpenGL. This indicates data is stored in 1-byte or 8-bit signed integers. This is a core part of the glTF specification.
+元件型別“BYTE”。取值 ``0x1400`` 來源於 OpenGL。表示資料的儲存形式為 1 位元組即 8 位元有符號整數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_UNSIGNED_BYTE:
 
@@ -184,7 +184,7 @@ Component type "BYTE". The value is ``0x1400`` which comes from OpenGL. This ind
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_UNSIGNED_BYTE** = ``5121``
 
-Component type "UNSIGNED_BYTE". The value is ``0x1401`` which comes from OpenGL. This indicates data is stored in 1-byte or 8-bit unsigned integers. This is a core part of the glTF specification.
+元件型別“UNSIGNED_BYTE”。取值 ``0x1401`` 來源於 OpenGL。表示資料的儲存形式為 1 位元組即 8 位元無符號整數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_SIGNED_SHORT:
 
@@ -192,7 +192,7 @@ Component type "UNSIGNED_BYTE". The value is ``0x1401`` which comes from OpenGL.
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_SIGNED_SHORT** = ``5122``
 
-Component type "SHORT". The value is ``0x1402`` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit signed integers. This is a core part of the glTF specification.
+元件型別“SHORT”。取值 ``0x1402`` 來源於 OpenGL。表示資料的儲存形式為 2 位元組即 16 位元有符號整數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_UNSIGNED_SHORT:
 
@@ -200,7 +200,7 @@ Component type "SHORT". The value is ``0x1402`` which comes from OpenGL. This in
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_UNSIGNED_SHORT** = ``5123``
 
-Component type "UNSIGNED_SHORT". The value is ``0x1403`` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit unsigned integers. This is a core part of the glTF specification.
+元件型別“UNSIGNED_SHORT”。取值 ``0x1403`` 來源於 OpenGL。表示資料的儲存形式為 2 位元組即 16 位元無符號整數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_SIGNED_INT:
 
@@ -208,7 +208,7 @@ Component type "UNSIGNED_SHORT". The value is ``0x1403`` which comes from OpenGL
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_SIGNED_INT** = ``5124``
 
-Component type "INT". The value is ``0x1404`` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit signed integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including ``KHR_interactivity``.
+元件型別“INT”。取值 ``0x1404`` 來源於 OpenGL。表示資料的儲存形式為 4 位元組即 32 位元有符號整數。這不是 glTF 規範的核心部分，可能並不是所有 glTF 匯入器都支援。\ ``KHR_interactivity`` 等擴充可能支援。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_UNSIGNED_INT:
 
@@ -216,7 +216,7 @@ Component type "INT". The value is ``0x1404`` which comes from OpenGL. This indi
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_UNSIGNED_INT** = ``5125``
 
-Component type "UNSIGNED_INT". The value is ``0x1405`` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit unsigned integers. This is a core part of the glTF specification.
+元件型別“UNSIGNED_INT”。取值 ``0x1405`` 來源於 OpenGL。表示資料的儲存形式為 4 位元組即 32 位元無符號整數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_SINGLE_FLOAT:
 
@@ -224,7 +224,7 @@ Component type "UNSIGNED_INT". The value is ``0x1405`` which comes from OpenGL. 
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_SINGLE_FLOAT** = ``5126``
 
-Component type "FLOAT". The value is ``0x1406`` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit floating-point numbers. This is a core part of the glTF specification.
+元件型別“FLOAT”。取值 ``0x1406`` 來源於 OpenGL。表示資料的儲存形式為 4 位元組即 32 位元浮點數。這是 glTF 規範的核心部分。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_DOUBLE_FLOAT:
 
@@ -232,7 +232,7 @@ Component type "FLOAT". The value is ``0x1406`` which comes from OpenGL. This in
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_DOUBLE_FLOAT** = ``5130``
 
-Component type "DOUBLE". The value is ``0x140A`` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit floating-point numbers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including ``KHR_interactivity``.
+元件型別“DOUBLE”。取值 ``0x140A`` 來源於 OpenGL。表示資料的儲存形式為 8 位元組即 64 位元浮點數。這不是 glTF 規範的核心部分，可能並不是所有 glTF 匯入器都支援。\ ``KHR_interactivity`` 等擴充可能支援。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_HALF_FLOAT:
 
@@ -240,7 +240,7 @@ Component type "DOUBLE". The value is ``0x140A`` which comes from OpenGL. This i
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_HALF_FLOAT** = ``5131``
 
-Component type "HALF_FLOAT". The value is ``0x140B`` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit floating-point numbers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including ``KHR_interactivity``.
+元件型別“HALF_FLOAT”。取值 ``0x140B`` 來源於 OpenGL。表示資料的儲存形式為 2 位元組即 16 位元浮點數。這不是 glTF 規範的核心部分，可能並不是所有 glTF 匯入器都支援。\ ``KHR_interactivity`` 等擴充可能支援。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_SIGNED_LONG:
 
@@ -248,7 +248,7 @@ Component type "HALF_FLOAT". The value is ``0x140B`` which comes from OpenGL. Th
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_SIGNED_LONG** = ``5134``
 
-Component type "LONG". The value is ``0x140E`` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit signed integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including ``KHR_interactivity``.
+元件型別“LONG”。取值 ``0x140E`` 來源於 OpenGL。表示資料的儲存形式為 8 位元組即 64 位元有符號整數。這不是 glTF 規範的核心部分，可能並不是所有 glTF 匯入器都支援。\ ``KHR_interactivity`` 等擴充可能支援。
 
 .. _class_GLTFAccessor_constant_COMPONENT_TYPE_UNSIGNED_LONG:
 
@@ -256,7 +256,7 @@ Component type "LONG". The value is ``0x140E`` which comes from OpenGL. This ind
 
 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **COMPONENT_TYPE_UNSIGNED_LONG** = ``5135``
 
-Component type "UNSIGNED_LONG". The value is ``0x140F`` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit unsigned integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including ``KHR_interactivity``.
+元件型別“UNSIGNED_LONG”。取值 ``0x140F`` 來源於 OpenGL。表示資料的儲存形式為 8 位元組即 64 位元無符號整數。這不是 glTF 規範的核心部分，可能並不是所有 glTF 匯入器都支援。\ ``KHR_interactivity`` 等擴充可能支援。
 
 .. rst-class:: classref-section-separator
 
@@ -278,7 +278,7 @@ Component type "UNSIGNED_LONG". The value is ``0x140F`` which comes from OpenGL.
 - |void| **set_accessor_type**\ (\ value\: :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>`\ )
 - :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **get_accessor_type**\ (\ )
 
-The glTF accessor type, as an enum.
+glTF 存取器型別列舉。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ The glTF accessor type, as an enum.
 - |void| **set_buffer_view**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_buffer_view**\ (\ )
 
-The index of the buffer view this accessor is referencing. If ``-1``, this accessor is not referencing any buffer view.
+該存取器正在參照的緩衝區檢視的索引。如果為 ``-1``\ ，則該存取器未參照任何緩衝區檢視。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ The index of the buffer view this accessor is referencing. If ``-1``, this acces
 - |void| **set_byte_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_byte_offset**\ (\ )
 
-The offset relative to the start of the buffer view in bytes.
+相對於緩衝檢視起點的偏移量，單位為位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ The offset relative to the start of the buffer view in bytes.
 - |void| **set_component_type**\ (\ value\: :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>`\ )
 - :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **get_component_type**\ (\ )
 
-The glTF component type as an enum. See :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` for possible values. Within the core glTF specification, a value of 5125 or "UNSIGNED_INT" must not be used for any accessor that is not referenced by mesh.primitive.indices.
+glTF 元件型別列舉。可能的取值見 :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>`\ 。核心 glTF 規格中，未通過 mesh.primitive.indices 參照的存取器不能使用 5125 或“UNSIGNED_INT”。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ The glTF component type as an enum. See :ref:`GLTFComponentType<enum_GLTFAccesso
 - |void| **set_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_count**\ (\ )
 
-The number of elements referenced by this accessor.
+該存取器參照的元素數量。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ The number of elements referenced by this accessor.
 - |void| **set_max**\ (\ value\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ )
 - :ref:`PackedFloat64Array<class_PackedFloat64Array>` **get_max**\ (\ )
 
-Maximum value of each component in this accessor.
+該存取器中每個元件的最大值。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
 
@@ -382,7 +382,7 @@ Maximum value of each component in this accessor.
 - |void| **set_min**\ (\ value\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ )
 - :ref:`PackedFloat64Array<class_PackedFloat64Array>` **get_min**\ (\ )
 
-Minimum value of each component in this accessor.
+該存取器中每個元件的最小值。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
 
@@ -401,7 +401,7 @@ Minimum value of each component in this accessor.
 - |void| **set_normalized**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_normalized**\ (\ )
 
-Specifies whether integer data values are normalized before usage.
+指定整數資料值在使用前是否進行了正規化。
 
 .. rst-class:: classref-item-separator
 
@@ -418,7 +418,7 @@ Specifies whether integer data values are normalized before usage.
 - |void| **set_sparse_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sparse_count**\ (\ )
 
-Number of deviating accessor values stored in the sparse array.
+儲存在稀疏陣列中的偏差存取器值的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Number of deviating accessor values stored in the sparse array.
 - |void| **set_sparse_indices_buffer_view**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sparse_indices_buffer_view**\ (\ )
 
-The index of the buffer view with sparse indices. The referenced buffer view MUST NOT have its target or byteStride properties defined. The buffer view and the optional byteOffset MUST be aligned to the componentType byte length.
+具有稀疏索引的緩衝檢視的索引。參照的緩衝檢視不得定義其 target 或 byteStride 屬性。緩衝檢視和可選的 byteOffset 必須與 componentType 位元組長度對齊。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ The index of the buffer view with sparse indices. The referenced buffer view MUS
 - |void| **set_sparse_indices_byte_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sparse_indices_byte_offset**\ (\ )
 
-The offset relative to the start of the buffer view in bytes.
+相對於緩衝檢視起點的偏移量，單位為位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ The offset relative to the start of the buffer view in bytes.
 - |void| **set_sparse_indices_component_type**\ (\ value\: :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>`\ )
 - :ref:`GLTFComponentType<enum_GLTFAccessor_GLTFComponentType>` **get_sparse_indices_component_type**\ (\ )
 
-The indices component data type as an enum. Possible values are 5121 for "UNSIGNED_BYTE", 5123 for "UNSIGNED_SHORT", and 5125 for "UNSIGNED_INT".
+索引元件資料型別列舉。取值 5121 為“UNSIGNED_BYTE”、5123 為“UNSIGNED_SHORT”、5125 為“UNSIGNED_INT”。
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ The indices component data type as an enum. Possible values are 5121 for "UNSIGN
 - |void| **set_sparse_values_buffer_view**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sparse_values_buffer_view**\ (\ )
 
-The index of the bufferView with sparse values. The referenced buffer view MUST NOT have its target or byteStride properties defined.
+具有稀疏值的 bufferView 的索引。參照的緩衝檢視不得定義其 target 或 byteStride 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ The index of the bufferView with sparse values. The referenced buffer view MUST 
 - |void| **set_sparse_values_byte_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sparse_values_byte_offset**\ (\ )
 
-The offset relative to the start of the bufferView in bytes.
+相對於 bufferView 起始位置的偏移量，單位為位元組。
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ The offset relative to the start of the bufferView in bytes.
 
 **已棄用：** Use :ref:`accessor_type<class_GLTFAccessor_property_accessor_type>` instead.
 
-The glTF accessor type, as an :ref:`int<class_int>`. Possible values are ``0`` for "SCALAR", ``1`` for "VEC2", ``2`` for "VEC3", ``3`` for "VEC4", ``4`` for "MAT2", ``5`` for "MAT3", and ``6`` for "MAT4".
+glTF 存取器型別 :ref:`int<class_int>`\ 。取值為 ``0`` 表示“SCALAR”、\ ``1`` 表示“VEC2”、\ ``2`` 表示“VEC3”、\ ``3`` 表示“VEC4”、\ ``4`` 表示“MAT2”、\ ``5`` 表示“MAT3”、\ ``6`` 表示“MAT4”。
 
 .. rst-class:: classref-section-separator
 
@@ -539,7 +539,7 @@ The glTF accessor type, as an :ref:`int<class_int>`. Possible values are ``0`` f
 
 :ref:`GLTFAccessor<class_GLTFAccessor>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFAccessor_method_from_dictionary>`
 
-Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+通過解析給定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFAccessor 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFAccessor_method_to_dictionary>`
 
-Serializes this GLTFAccessor instance into a :ref:`Dictionary<class_Dictionary>`.
+將這個 GLTFAccessor 實例序列化為 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,7 +7,7 @@ TextServerAdvanced
 
 **繼承：** :ref:`TextServerExtension<class_TextServerExtension>` **<** :ref:`TextServer<class_TextServer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-高階文字伺服器，使用 HarfBuzz、ICU 和 SIL Graphite 來支援 BiDi、複雜排版和上下文 OpenType 功能。Godot 預設使用。
+高階文字伺服器，使用 HarfBuzz、ICU 和 SIL Graphite 來支援 BiDi、複雜排版和情境 OpenType 功能。Godot 預設使用。
 
 .. rst-class:: classref-introduction-group
 

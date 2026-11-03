@@ -9,14 +9,14 @@ OpenXRCompositionLayerEquirect
 
 **繼承：** :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An OpenXR composition layer that is rendered as an internal slice of a sphere.
+渲染為球體內部切片的 OpenXR 合成圖層。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubViewport>` on an internal slice of a sphere.
+一個 OpenXR 合成層，允許在球體的內部切片上渲染 :ref:`SubViewport<class_SubViewport>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -58,7 +58,7 @@ An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubV
 - |void| **set_central_horizontal_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_central_horizontal_angle**\ (\ )
 
-The central horizontal angle of the sphere. Used to set the width.
+球體的中心水平角度。用於設定寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ The central horizontal angle of the sphere. Used to set the width.
 - |void| **set_fallback_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fallback_segments**\ (\ )
 
-The number of segments to use in the fallback mesh.
+回退網格所使用的段數。
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ The number of segments to use in the fallback mesh.
 - |void| **set_lower_vertical_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lower_vertical_angle**\ (\ )
 
-The lower vertical angle of the sphere. Used (together with :ref:`upper_vertical_angle<class_OpenXRCompositionLayerEquirect_property_upper_vertical_angle>`) to set the height.
+球體的下垂直角度。（與 :ref:`upper_vertical_angle<class_OpenXRCompositionLayerEquirect_property_upper_vertical_angle>` 一起）用於設定高度。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ The lower vertical angle of the sphere. Used (together with :ref:`upper_vertical
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The radius of the sphere.
+球體的半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ The radius of the sphere.
 - |void| **set_upper_vertical_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_upper_vertical_angle**\ (\ )
 
-The upper vertical angle of the sphere. Used (together with :ref:`lower_vertical_angle<class_OpenXRCompositionLayerEquirect_property_lower_vertical_angle>`) to set the height.
+球體的上垂直角度。（與 :ref:`lower_vertical_angle<class_OpenXRCompositionLayerEquirect_property_lower_vertical_angle>` 一起）用於設定高度。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

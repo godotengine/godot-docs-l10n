@@ -335,7 +335,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeVectorFunc_Function>`
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **get_function**\ (\ )
 
-The function to be performed.
+要執行的函式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

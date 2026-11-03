@@ -7,18 +7,18 @@ TextMesh
 
 **繼承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Generate a :ref:`PrimitiveMesh<class_PrimitiveMesh>` from the text.
+根據文字生成 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-Generate a :ref:`PrimitiveMesh<class_PrimitiveMesh>` from the text.
+根據文字生成 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ 。
 
-TextMesh can be generated only when using dynamic fonts with vector glyph contours. Bitmap fonts (including bitmap data in the TrueType/OpenType containers, like color emoji fonts) are not supported.
+使用了矢量字形輪廓的動態字型才能用於生成 TextMesh。不支援點陣圖字型（包括 TrueType/OpenType 容器中的點陣圖資料，例如彩色 Emoji 字型）。
 
-The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the height for the front face, 40% for the back face, 10% for the outer edges and 10% for the inner edges.
+UV 版面配置由 4 個橫條組成，從上到下依次為：正面佔 40% 高度，背面佔 40% 的高度，外面佔 10% 的高度，內側面佔 10% 的高度。
 
 .. rst-class:: classref-introduction-group
 
@@ -93,7 +93,7 @@ The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the heig
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.
+如果設定為 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 以外的值，則文字將在節點的邊界矩形內自動換行。如果你調整節點大小，就會自動更改其高度，從而顯示所有文字。
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_curve_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_curve_step**\ (\ )
 
-Step (in pixels) used to approximate Bézier curves. Lower values result in smoother curves, but is slower to generate and render. Consider adjusting this according to the font size and the typical viewing distance.
+用於近似貝茲曲線的步長（單位為像素）。值越小，曲線越平滑，但生成和渲染速度越慢。請根據字型大小和典型的觀看距離進行調整。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts.
+\ **注意：**\ 更改該屬性會重新生成網格，這是一個耗時的操作，尤其是在字型較大和文字較長時。
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ Step (in pixels) used to approximate Bézier curves. Lower values result in smoo
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Font size of the **TextMesh**'s text. This property works in tandem with :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Higher values will result in a more detailed font, regardless of :ref:`curve_step<class_TextMesh_property_curve_step>` and :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Consider keeping this value below 63 (inclusive) for good performance, and adjust :ref:`pixel_size<class_TextMesh_property_pixel_size>` as needed to enlarge text.
+**TextMesh** 文字的字型大小。該屬性與 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 協同工作。無論 :ref:`curve_step<class_TextMesh_property_curve_step>` 和 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 的值如何，更高的值都會產生更精細的字型。為了獲得良好的效能，請考慮將該值保持在 63（含）以下，並根據需要調整 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 以放大文字。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **注意：**\ 更改該屬性會重新生成網格，這是一個耗時的操作，尤其是在字型較大且文字較長時。要高效地即時更改文字大小，請改為更改節點的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Font size of the **TextMesh**'s text. This property works in tandem with :ref:`p
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Controls the text's horizontal alignment. Supports left, center, right, and fill (also known as justify).
+控制文字的水平對齊方式。支援左對齊、居中對齊、右對齊、填充（即兩端對齊）。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Controls the text's horizontal alignment. Supports left, center, right, and fill
 - |void| **set_justification_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_justification_flags**\ (\ )
 
-Line fill alignment rules.
+行填充對齊規則。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Line fill alignment rules.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行與行之間的額外縱向留白（單位為像素），留白會被新增到行的降部。該值可以為負數。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The text drawing offset (in pixels).
+文字繪製偏移量（單位為像素）。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation. To change the text's position in real-time efficiently, change the node's :ref:`Node3D.position<class_Node3D_property_position>` instead.
+\ **注意：**\ 更改該屬性會重新生成網格，這是一個耗時的操作。要高效地即時更改文字位置，請改為更改節點的 :ref:`Node3D.position<class_Node3D_property_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ The text drawing offset (in pixels).
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-The size of one pixel's width on the text to scale it in 3D. This property works in tandem with :ref:`font_size<class_TextMesh_property_font_size>`.
+用於縮放文字在 3D 空間中單個像素寬度的大小。該屬性與 :ref:`font_size<class_TextMesh_property_font_size>` 協同工作。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **注意：**\ 更改該屬性會重新生成網格，這是一個耗時的操作，尤其是在字型大小較大且文字較長時。要高效地即時更改文字大小，請改為更改節點的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -322,9 +322,9 @@ The size of one pixel's width on the text to scale it in 3D. This property works
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-The text to generate mesh from.
+要從中生成網格的文字。
 
-\ **Note:** Due to being a :ref:`Resource<class_Resource>`, it doesn't follow the rules of :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>`. If disabling translation is desired, it should be done manually with :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`.
+\ **注意：**\ 由於是 :ref:`Resource<class_Resource>`\ ，所以它並不遵循 :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` 的規則。如果需要停用翻譯，則應使用 :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>` 手動完成。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ The text to generate mesh from.
 - |void| **set_vertical_alignment**\ (\ value\: :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>`\ )
 - :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **get_vertical_alignment**\ (\ )
 
-Controls the text's vertical alignment. Supports top, center, and bottom.
+控制文字的垂直對齊方式。支援頂部對齊、居中對齊、底部對齊。
 
 .. rst-class:: classref-item-separator
 

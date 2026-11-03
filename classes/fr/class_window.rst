@@ -795,7 +795,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+Le contenu ne sera pas mis à l'échelle pour correspondre à la taille de la **Window** (:ref:`content_scale_size<class_Window_property_content_scale_size>` est ignoré).
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -2513,7 +2513,7 @@ Renvoie ``true`` si le sur-échantillonnage de la police est activé. Voir :ref:
 
 |void| **move_to_center**\ (\ ) :ref:`🔗<class_Window_method_move_to_center>`
 
-Centers the window in the current screen. If the window is embedded, it is centered in the embedder :ref:`Viewport<class_Viewport>` instead.
+Centre une fenêtre sur l'écran actuel. Si la fenêtre est intégrée, elle est à la place centrée sur le :ref:`Viewport<class_Viewport>` dans lequel elle est intégrée.
 
 .. rst-class:: classref-item-separator
 

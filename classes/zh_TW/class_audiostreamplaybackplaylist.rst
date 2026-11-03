@@ -14,7 +14,7 @@ AudioStreamPlaybackPlaylist
 說明
 ----
 
-Playback component of :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in sequence.
+:ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` 的播放元件。按順序處理多個 :ref:`AudioStream<class_AudioStream>` 的播放。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -183,7 +183,7 @@ Emitida cuando se selecciona un recurso en el inspector.
 
 **restart_requested**\ (\ ) :ref:`🔗<class_EditorInspector_signal_restart_requested>`
 
-Emitida cuando una propiedad que requiere un reinicio para ser aplicada es editada en el inspector. Esto sólo se usa en los ajustes del proyecto y en los ajustes del editor.
+Emitida cuando una propiedad que requiere un reinicio para ser aplicada es editada en el inspector. Esto sólo se usa en la configuración del proyecto y en los ajustes del editor.
 
 .. rst-class:: classref-section-separator
 

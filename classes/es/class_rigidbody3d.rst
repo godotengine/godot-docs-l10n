@@ -37,7 +37,7 @@ Tutoriales
 
 - :doc:`Solución de problemas de física <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `Demo de Ciudad de Camioness en 3D <https://godotengine.org/asset-library/asset/2752>`__
+- `Demo de Ciudad de Camioness en 3D <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 - `Demo de Pruebas de Física en 3D <https://godotengine.org/asset-library/asset/2747>`__
 
@@ -325,7 +325,7 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
+Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de sobrescritura establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
 
 Véase :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` para más detalles sobre la amortiguación.
 
@@ -378,7 +378,7 @@ La velocidad de rotación del RigidBody3D en *radianes* por segundo.
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-If ``true``, the body can enter sleep mode when there is no movement. See :ref:`sleeping<class_RigidBody3D_property_sleeping>`.
+Si es ``true``, el cuerpo puede entrar en modo de suspensión cuando no hay movimiento. Véase :ref:`sleeping<class_RigidBody3D_property_sleeping>`.
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ The body's linear velocity in units per second. Can be used sporadically, but **
 - |void| **set_lock_rotation_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_lock_rotation_enabled**\ (\ )
 
-If ``true``, the body cannot rotate. Gravity and forces only apply linear movement.
+Si es ``true``, el cuerpo no puede rotar. La gravedad y las fuerzas solo generan movimiento lineal.
 
 .. rst-class:: classref-item-separator
 
@@ -914,9 +914,9 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_colliding_bodies**\ (\ ) |const| :ref:`🔗<class_RigidBody3D_method_get_colliding_bodies>`
 
-Returns a list of the bodies colliding with this one. Requires :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to be set high enough to detect all the collisions.
+Devuelve una lista de los cuerpos que colisionan con este. Requiere que :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` sea ``true``, y que :ref:`contacts_reported<class_RigidBody3D_property_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of collisions is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta prueba no es inmediato después de mover los objetos. Para un mejor rendimiento, la lista de superposiciones se actualiza una vez por cuadro y antes del paso de física. Considera la posibilidad de utilizar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 

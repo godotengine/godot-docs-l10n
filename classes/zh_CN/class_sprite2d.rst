@@ -262,7 +262,7 @@ Sprite2D
 - |void| **set_region_filter_clip_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_region_filter_clip_enabled**\ (\ )
 
-如果为 ``true``\ ，则会裁剪 :ref:`region_rect<class_Sprite2D_property_region_rect>` 之外的区域，避免周围纹理像素的出血现象。\ :ref:`region_enabled<class_Sprite2D_property_region_enabled>` 必须为 ``true``\ 。
+如果为 ``true``\ ，则会裁剪 :ref:`region_rect<class_Sprite2D_property_region_rect>` 之外的区域，避免周围纹理像素的渗色。\ :ref:`region_enabled<class_Sprite2D_property_region_enabled>` 必须为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

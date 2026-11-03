@@ -26,7 +26,7 @@ El nodo **PhysicalBone3D** es un cuerpo físico que se puede utilizar para hacer
 Tutoriales
 --------------------
 
-- :doc:`Sistema de Ragdoll <../tutorials/physics/ragdoll_system>`
+- :doc:`Sistema de muñeco de trapo <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
@@ -201,7 +201,7 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
+Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de sobrescritura establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
 
 Véase :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` para más detalles sobre la amortiguación.
 
@@ -411,7 +411,7 @@ Establece el tipo de articulación.
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-Amortigua el movimiento del cuerpo. Por defecto, el cuerpo usará :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` puede añadirse o reemplazar el valor de amortiguación del cuerpo.
+Amortigua el movimiento del cuerpo. Por defecto, el cuerpo usará :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` o cualquier valor de sobrescritura establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` puede añadirse o reemplazar el valor de amortiguación del cuerpo.
 
 Véase :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` para más detalles sobre la amortiguación.
 

@@ -7,7 +7,7 @@ VisualShaderNodeSwitch
 
 **Hérite de :** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A selector function for use within the visual shader graph.
+Une fonction de sélection à utiliser dans le graphe de visual shader.
 
 .. rst-class:: classref-introduction-group
 

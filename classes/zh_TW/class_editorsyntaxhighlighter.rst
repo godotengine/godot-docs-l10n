@@ -51,7 +51,7 @@ EditorSyntaxHighlighter
 
 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` **_create**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorSyntaxHighlighter_private_method__create>`
 
-Virtual method which creates a new instance of the syntax highlighter.
+虛函式，可以建立一個語法醒目標示器新實例。
 
 .. rst-class:: classref-item-separator
 

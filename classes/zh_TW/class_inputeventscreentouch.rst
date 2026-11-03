@@ -80,7 +80,7 @@ InputEventScreenTouch
 - |void| **set_double_tap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_tap**\ (\ )
 
-如果為 ``true``\ ，則觸摸狀態為按兩下。
+如果為 ``true``\ ，則觸摸狀態為雙擊。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ InputEventScreenTouch
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-The touch position in the viewport the node is in, using the coordinate system of this viewport.
+節點所在視埠中的觸摸位置，使用該視埠的座標系。
 
 .. rst-class:: classref-item-separator
 

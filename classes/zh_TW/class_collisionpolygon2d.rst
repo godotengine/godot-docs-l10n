@@ -14,9 +14,9 @@ CollisionPolygon2D
 說明
 ----
 
-A node that provides a polygon shape to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area2D<class_Area2D>`, turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object, or give a hollow shape to a :ref:`StaticBody2D<class_StaticBody2D>`.
+為 :ref:`CollisionObject2D<class_CollisionObject2D>` 父級提供多邊形形狀並允許對其編輯的節點。該多邊形可以是凹多邊形或凸多邊形。它可以為 :ref:`Area2D<class_Area2D>` 提供檢測形狀，將 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 轉換為實體物件，或為 :ref:`StaticBody2D<class_StaticBody2D>` 提供空心形狀。
 
-\ **Warning:** A non-uniformly scaled **CollisionPolygon2D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its polygon instead.
+\ **警告：**\ 非均勻縮放的 **CollisionPolygon2D** 可能不會按預期執行。請確保在所有軸上保持其縮放相同並改為調整其多邊形形狀。
 
 .. rst-class:: classref-reftable-group
 
@@ -91,7 +91,7 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 - |void| **set_build_mode**\ (\ value\: :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>`\ )
 - :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>` **get_build_mode**\ (\ )
 
-Collision build mode.
+碰撞建置模式。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ Collision build mode.
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-If ``true``, no collisions will be detected. This property should be changed with :ref:`Object.set_deferred()<class_Object_method_set_deferred>`.
+如果為 ``true``\ ，則不會檢測到碰撞。該屬性應使用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 進行更改。
 
 .. rst-class:: classref-item-separator
 
@@ -125,11 +125,11 @@ If ``true``, no collisions will be detected. This property should be changed wit
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotation, will collide with other objects.
+如果為 ``true``\ ，則只有面朝上的邊緣才會與其他物件發生碰撞，方向是相對於 **CollisionPolygon2D** 的旋轉而言的。
 
-\ **Note:** This property has no effect if this **CollisionPolygon2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+\ **注意：**\ 如果這個 **CollisionPolygon2D** 是 :ref:`Area2D<class_Area2D>` 節點的子節點，則這個屬性無效。
 
-\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>`.
+\ **注意：**\ 單向碰撞的方向可以通過設定 :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>` 來設定。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotat
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+用於單向碰撞的方向。
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ The direction used for one-way collision.
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-The polygon's list of vertices. Each point will be connected to the next, and the final point will be connected to the first.
+多邊形的頂點清單。每個點都與下一個點相連，最後一個點與第一個點相連。
 
-\ **Note:** The returned vertices are in the local coordinate space of the given **CollisionPolygon2D**.
+\ **注意：**\ 回傳的頂點位於給定的 **CollisionPolygon2D** 的區域座標空間中。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 

@@ -27,7 +27,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 - `Démo d'enregistrement de l'audio du microphone <https://godotengine.org/asset-library/asset/2760>`__
 

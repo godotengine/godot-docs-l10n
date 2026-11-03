@@ -892,25 +892,31 @@ Array
 
 Повертає ``true``, якщо масив містить задане ``value``.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
     print(["усередині", 7].has("усередині")) # Виводить true
     print(["усередині", 7].has("ззовні")) # Виводить false
     print(["усередині", 7].has(7)) # Виводить true
     print(["усередині", 7].has("7")) # Виводить false
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var arr = new Godot.Collections.Array { "усередині", 7 };
      // За конвенціями C# цей метод перейменовано на `Contains`.
     GD.Print(arr.Contains("усередині"));   // Виводить true
     GD.Print(arr.Contains("ззовні"));  // Виводить false
     GD.Print(arr.Contains(7));          // Виводить true
     GD.Print(arr.Contains("7"));        // Виводить false
-    [/csharp][/codeblocks]
 
- У GDScript це еквівалентно оператору [code]in[/code]:
-[codeblock]
+
+
+ У GDScript це еквівалентно оператору ``in``:
+
+::
+
     if 4 in [2, 4, 6, 8]:
          print("4 тут!") # Буде надруковано.
 
@@ -1082,18 +1088,22 @@ Array
 
 Повертає випадковий елемент із масиву. Генерує помилку та повертає ``null``, якщо масив порожній.
 
-::
 
-    [gdscript]
+.. tabs::
+
+ .. code-tab:: gdscript
+
      # Може друкувати 1, 2, 3.25 або «Привіт».
     print([1, 2, 3.25, "Привіт"].pick_random())
-    [/gdscript]
-    [csharp]
+
+ .. code-tab:: csharp
+
     var array = new Godot.Collections.Array { 1, 2, 3.25f, "Привіт" };
     GD.Print(array.PickRandom()); // Може друкувати 1, 2, 3.25 або "Hi".
-    [/csharp][/codeblocks]
 
-[b]Примітка: [/b] Подібно до багатьох подібних функцій у системі (таких як [method @GlobalScope.randi] або [method shuffle]), цей метод використовує звичайне глобальне випадкове початкове число. Щоб отримати передбачуваний результат від цього методу, перегляньте [method @GlobalScope.seed].
+
+
+\ **Примітка: ** Подібно до багатьох подібних функцій у системі (таких як :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` або :ref:`shuffle()<class_Array_method_shuffle>`), цей метод використовує звичайне глобальне випадкове початкове число. Щоб отримати передбачуваний результат від цього методу, перегляньте :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,16 @@ OpenXRRenderModelManager
 
 **繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Helper node that will automatically manage displaying render models.
+輔助節點，能夠自動管理渲染模型的顯示。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-This helper node will automatically manage displaying render models. It will create new :ref:`OpenXRRenderModel<class_OpenXRRenderModel>` nodes as controllers and other hand held devices are detected, and remove those nodes when they are deactivated.
+這個輔助接點會自動管理渲染模型的顯示。檢測到控制器等手持裝置時會新建 :ref:`OpenXRRenderModel<class_OpenXRRenderModel>` 節點，裝置失效時會將對應節點移除。
 
-\ **Note:** If you want more control over this logic you can alternatively call :ref:`OpenXRRenderModelExtension.render_model_get_all()<class_OpenXRRenderModelExtension_method_render_model_get_all>` to obtain a list of active render model ids and create :ref:`OpenXRRenderModel<class_OpenXRRenderModel>` instances for each render model id provided.
+\ **注意：**\ 如果想要進一步控制相關邏輯，你也可以呼叫 :ref:`OpenXRRenderModelExtension.render_model_get_all()<class_OpenXRRenderModelExtension_method_render_model_get_all>` 取得活動渲染模型的 ID 清單，為各個渲染模型 ID 建立 :ref:`OpenXRRenderModel<class_OpenXRRenderModel>` 實例。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ This helper node will automatically manage displaying render models. It will cre
 
 **render_model_added**\ (\ render_model\: :ref:`OpenXRRenderModel<class_OpenXRRenderModel>`\ ) :ref:`🔗<class_OpenXRRenderModelManager_signal_render_model_added>`
 
-Emitted when a render model node is added as a child to this node.
+渲染模型節點新增為該節點的子節點時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Emitted when a render model node is added as a child to this node.
 
 **render_model_removed**\ (\ render_model\: :ref:`OpenXRRenderModel<class_OpenXRRenderModel>`\ ) :ref:`🔗<class_OpenXRRenderModelManager_signal_render_model_removed>`
 
-Emitted when a render model child node is about to be removed from this node.
+渲染模型子節點即將從該節點下移除時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -82,7 +82,7 @@ enum **RenderModelTracker**: :ref:`🔗<enum_OpenXRRenderModelManager_RenderMode
 
 :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>` **RENDER_MODEL_TRACKER_ANY** = ``0``
 
-All active render models are shown regardless of what tracker they relate to.
+顯示所有活動的渲染模型，無論其與甚麼追蹤器相關。
 
 .. _class_OpenXRRenderModelManager_constant_RENDER_MODEL_TRACKER_NONE_SET:
 
@@ -90,7 +90,7 @@ All active render models are shown regardless of what tracker they relate to.
 
 :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>` **RENDER_MODEL_TRACKER_NONE_SET** = ``1``
 
-Only active render models are shown that are not related to any tracker we manage.
+僅顯示與所管理的追蹤器無關的活動渲染模型。
 
 .. _class_OpenXRRenderModelManager_constant_RENDER_MODEL_TRACKER_LEFT_HAND:
 
@@ -98,7 +98,7 @@ Only active render models are shown that are not related to any tracker we manag
 
 :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>` **RENDER_MODEL_TRACKER_LEFT_HAND** = ``2``
 
-Only active render models are shown that are related to the left hand tracker.
+僅顯示與左手追蹤器相關的活動渲染模型。
 
 .. _class_OpenXRRenderModelManager_constant_RENDER_MODEL_TRACKER_RIGHT_HAND:
 
@@ -106,7 +106,7 @@ Only active render models are shown that are related to the left hand tracker.
 
 :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>` **RENDER_MODEL_TRACKER_RIGHT_HAND** = ``3``
 
-Only active render models are shown that are related to the right hand tracker.
+僅顯示與右手追蹤器相關的活動渲染模型。
 
 .. rst-class:: classref-section-separator
 
@@ -128,7 +128,7 @@ Only active render models are shown that are related to the right hand tracker.
 - |void| **set_make_local_to_pose**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_make_local_to_pose**\ (\ )
 
-Position render models local to this pose (this will adjust the position of the render models container node).
+將渲染模型的位置設定為相對於該姿勢（會對渲染模型容器節點的位置進行調整）。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Position render models local to this pose (this will adjust the position of the 
 - |void| **set_tracker**\ (\ value\: :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>`\ )
 - :ref:`RenderModelTracker<enum_OpenXRRenderModelManager_RenderModelTracker>` **get_tracker**\ (\ )
 
-Limits render models to the specified tracker. Include: 0 = All render models, 1 = Render models not related to a tracker, 2 = Render models related to the left hand tracker, 3 = Render models related to the right hand tracker.
+將渲染模型限制到指定的追蹤器：0 = 所有渲染模型，1 = 渲染模型與某個追蹤器無關，2 = 渲染模型與左手追蹤器相關，3 = 渲染模型與右手追蹤器相關。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -308,9 +308,9 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-Якщо не встановлено значення :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`, ця камера імітуватиме ефект Доплера для об'єктів, змінених у певних методах ``_process``.
+Якщо значення не дорівнює :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`, ця камера буде імітувати `ефект Доплера <https://en.wikipedia.org/wiki/Doppler_effect>`__ для об’єктів, зміни яких обробляються певними методами ``_process``.
 
-\ **Примітка:** Ефект Доплера буде чути лише на :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, якщо для :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` не встановлено значення :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
+\ **Примітка:** Ефект Доплера буде чути лише на :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, якщо :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` не встановлено на :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 

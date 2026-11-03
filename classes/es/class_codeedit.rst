@@ -1786,7 +1786,7 @@ Despliega la línea dada si está plegada o si está oculta bajo una línea pleg
 
 |void| **unindent_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_unindent_lines>`
 
-Elimina la indentación de todas las líneas que están seleccionadas o tienen un cursor sobre ellas. Utiliza espacios o una tabulación dependiendo de :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`. Equivalente a la acción :ref:`ProjectSettings.input/ui_text_dedent<class_ProjectSettings_property_input/ui_text_dedent>`. Véase :ref:`indent_lines()<class_CodeEdit_method_indent_lines>`.
+Reduce la sangría de todas las líneas que están seleccionadas o tienen un cursor sobre ellas. Utiliza espacios o una tabulación dependiendo de :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`. Equivalente a la acción :ref:`ProjectSettings.input/ui_text_dedent<class_ProjectSettings_property_input/ui_text_dedent>`. Véase :ref:`indent_lines()<class_CodeEdit_method_indent_lines>`.
 
 .. rst-class:: classref-item-separator
 

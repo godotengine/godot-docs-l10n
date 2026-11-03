@@ -99,9 +99,9 @@ enum **NoiseType**: :ref:`🔗<enum_FastNoiseLite_NoiseType>`
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_VALUE_CUBIC** = ``4``
 
-Similar to value noise (:ref:`TYPE_VALUE<class_FastNoiseLite_constant_TYPE_VALUE>`), but slower. Has more variance in peaks and valleys.
+類似於 Value 噪聲（\ :ref:`TYPE_VALUE<class_FastNoiseLite_constant_TYPE_VALUE>`\ ），但速度較慢。波峰和波谷的變化更大。
 
-Cubic noise can be used to avoid certain artifacts when using value noise to create a bumpmap. In general, you should always use this mode if the value noise is being used for a heightmap or bumpmap.
+在使用 Value 噪聲建立凹凸貼圖時，可以使用三次噪聲來避免某些偽影。一般來說，如果 Value 噪聲用於高度圖或凹凸貼圖，則應始終使用此模式。
 
 .. _class_FastNoiseLite_constant_TYPE_PERLIN:
 
@@ -125,7 +125,7 @@ Cubic noise can be used to avoid certain artifacts when using value noise to cre
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_SIMPLEX** = ``0``
 
-As opposed to :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>`, gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts. Internally uses FastNoiseLite's OpenSimplex2 noise type.
+與 :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>` 不同，漸變存在於單純形點陣中，而不是網格點陣中，從而避免了定向偽影。內部使用 FastNoiseLite 的 OpenSimplex2 噪聲型別。
 
 .. _class_FastNoiseLite_constant_TYPE_SIMPLEX_SMOOTH:
 
@@ -133,7 +133,7 @@ As opposed to :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>`, grad
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_SIMPLEX_SMOOTH** = ``1``
 
-Modified, higher quality version of :ref:`TYPE_SIMPLEX<class_FastNoiseLite_constant_TYPE_SIMPLEX>`, but slower. Internally uses FastNoiseLite's OpenSimplex2S noise type.
+對 :ref:`TYPE_SIMPLEX<class_FastNoiseLite_constant_TYPE_SIMPLEX>` 修改後得到的更高品質版本，但速度較慢。內部使用 FastNoiseLite 的 OpenSimplex2S 噪聲型別。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ enum **CellularDistanceFunction**: :ref:`🔗<enum_FastNoiseLite_CellularDistanc
 
 :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **DISTANCE_HYBRID** = ``3``
 
-Blend of :ref:`DISTANCE_EUCLIDEAN<class_FastNoiseLite_constant_DISTANCE_EUCLIDEAN>` and :ref:`DISTANCE_MANHATTAN<class_FastNoiseLite_constant_DISTANCE_MANHATTAN>` to give curved cell boundaries.
+:ref:`DISTANCE_EUCLIDEAN<class_FastNoiseLite_constant_DISTANCE_EUCLIDEAN>` 和 :ref:`DISTANCE_MANHATTAN<class_FastNoiseLite_constant_DISTANCE_MANHATTAN>` 的混合，以給出彎曲的單元格邊界。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ enum **DomainWarpType**: :ref:`🔗<enum_FastNoiseLite_DomainWarpType>`
 
 :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **DOMAIN_WARP_BASIC_GRID** = ``2``
 
-使用簡單的雜訊柵格（不像其他方法那樣平滑，但性能更高），對域進行扭曲。
+使用簡單的雜訊柵格（不像其他方法那樣平滑，但效能更高），對域進行扭曲。
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ enum **DomainWarpFractalType**: :ref:`🔗<enum_FastNoiseLite_DomainWarpFractalT
 - |void| **set_cellular_distance_function**\ (\ value\: :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>`\ )
 - :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **get_cellular_distance_function**\ (\ )
 
-Determines how the distance to the nearest/second-nearest point is computed.
+確定如何計算到最近/第二最近點的距離。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Determines how the distance to the nearest/second-nearest point is computed.
 - |void| **set_cellular_return_type**\ (\ value\: :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>`\ )
 - :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **get_cellular_return_type**\ (\ )
 
-Return type from cellular noise calculations.
+蜂窩噪聲計算的回傳型別。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Return type from cellular noise calculations.
 - |void| **set_domain_warp_fractal_lacunarity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_fractal_lacunarity**\ (\ )
 
-The change in frequency between octaves, also known as "lacunarity", of the fractal noise which warps the space. Increasing this value results in higher octaves, producing noise with finer details and a rougher appearance.
+扭曲空間的分形噪聲的八度音節之間的頻率變化，也稱為“間隙度”。增加此值，會導致更高的八度音階，從而產生細節更精細、外觀更粗糙的噪聲。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ The change in frequency between octaves, also known as "lacunarity", of the frac
 - |void| **set_domain_warp_fractal_type**\ (\ value\: :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>`\ )
 - :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>` **get_domain_warp_fractal_type**\ (\ )
 
-The method for combining octaves into a fractal which is used to warp the space.
+將八度音階組合成用於扭曲空間的分形的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -528,7 +528,7 @@ The method for combining octaves into a fractal which is used to warp the space.
 - |void| **set_domain_warp_frequency**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_frequency**\ (\ )
 
-扭曲空間的噪音頻率。低頻產生平滑的雜訊，而高頻產生更粗糙、顆粒狀更明顯的噪聲。
+扭曲空間的噪音訊率。低頻產生平滑的雜訊，而高頻產生更粗糙、顆粒狀更明顯的噪聲。
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ The method for combining octaves into a fractal which is used to warp the space.
 - |void| **set_domain_warp_type**\ (\ value\: :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>`\ )
 - :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **get_domain_warp_type**\ (\ )
 
-The warp algorithm.
+扭曲算法。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ The warp algorithm.
 - |void| **set_fractal_type**\ (\ value\: :ref:`FractalType<enum_FastNoiseLite_FractalType>`\ )
 - :ref:`FractalType<enum_FastNoiseLite_FractalType>` **get_fractal_type**\ (\ )
 
-The method for combining octaves into a fractal.
+將八度音階組合成分形的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ The method for combining octaves into a fractal.
 - |void| **set_noise_type**\ (\ value\: :ref:`NoiseType<enum_FastNoiseLite_NoiseType>`\ )
 - :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **get_noise_type**\ (\ )
 
-The noise algorithm used.
+所使用的噪聲算法。
 
 .. rst-class:: classref-item-separator
 

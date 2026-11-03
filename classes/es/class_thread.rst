@@ -31,7 +31,7 @@ Tutoriales
 
 - :doc:`Usando múltiples hilos <../tutorials/performance/using_multiple_threads>`
 
-- :doc:`APIs thread safe <../tutorials/performance/thread_safe_apis>`
+- :doc:`API seguras para hilos <../tutorials/performance/thread_safe_apis>`
 
 - `Demo de Vóxeles en 3D <https://godotengine.org/asset-library/asset/2755>`__
 

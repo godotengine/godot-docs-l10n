@@ -18,7 +18,7 @@ SubViewportContainer
 
 \ **注意：**\ 更改 **SubViewportContainer** 的 :ref:`Control.scale<class_Control_property_scale>`\ ，將導致其內容出現扭曲。要更改其視覺大小，並且不造成失真，請改為調整節點的邊距（如果還不在容器中）。
 
-\ **注意：**\ 該 **SubViewportContainer** 會將滑鼠進入和滑鼠退出通知轉發到子視口。
+\ **注意：**\ 該 **SubViewportContainer** 會將滑鼠進入和滑鼠退出通知轉發到子視埠。
 
 .. rst-class:: classref-reftable-group
 
@@ -70,11 +70,11 @@ SubViewportContainer
 - |void| **set_mouse_target**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_mouse_target_enabled**\ (\ )
 
-Configure, if either the **SubViewportContainer** or alternatively the :ref:`Control<class_Control>` nodes of its :ref:`SubViewport<class_SubViewport>` children should be available as targets of mouse-related functionalities, like identifying the drop target in drag-and-drop operations or cursor shape of hovered :ref:`Control<class_Control>` node.
+設定 **SubViewportContainer** 或其 :ref:`SubViewport<class_SubViewport>` 子節點中的 :ref:`Control<class_Control>` 節點是否應作為滑鼠相關功能的目標，例如在拖放操作中識別放置目標或懸停的 :ref:`Control<class_Control>` 節點的游標形狀。
 
-If ``false``, the :ref:`Control<class_Control>` nodes inside its :ref:`SubViewport<class_SubViewport>` children are considered as targets.
+如果為 ``false``\ ，則視其 :ref:`SubViewport<class_SubViewport>` 子節點中的 :ref:`Control<class_Control>` 節點為目標。
 
-If ``true``, the **SubViewportContainer** itself will be considered as a target.
+如果為 ``true``\ ，則視 **SubViewportContainer** 本身為目標。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ If ``true``, the **SubViewportContainer** itself will be considered as a target.
 - |void| **set_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_stretch_enabled**\ (\ )
 
-如果為 ``true``\ ，子視口將自動調整為該控制項的大小。
+如果為 ``true``\ ，子視埠將自動調整為該控制項的大小。
 
 \ **注意：**\ 如果為 ``true``\ ，則會禁止手動改變其子節點的 :ref:`SubViewport.size<class_SubViewport_property_size>`\ 。
 
@@ -110,9 +110,9 @@ If ``true``, the **SubViewportContainer** itself will be considered as a target.
 - |void| **set_stretch_shrink**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_shrink**\ (\ )
 
-將子視口的有效解析度除以該值，同時保持比例。可以用來加速算繪。
+將子視埠的有效解析度除以該值，同時保持比例。可以用來加速渲染。
 
-例如子視口的大小為 1280×720，當 :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` 被設定為 ``2`` 時，將以 640×360 算繪，同時在該容器中佔據相同大小。
+例如子視埠的大小為 1280×720，當 :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` 被設定為 ``2`` 時，將以 640×360 渲染，同時在該容器中佔據相同大小。
 
 \ **注意：**\ :ref:`stretch<class_SubViewportContainer_property_stretch>` 必須為 ``true``\ ，才能使此屬性生效。
 
@@ -133,7 +133,7 @@ If ``true``, the **SubViewportContainer** itself will be considered as a target.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Virtual method to be implemented by the user. If it returns ``true``, the ``event`` is propagated to :ref:`SubViewport<class_SubViewport>` children. Propagation doesn't happen if it returns ``false``. If the function is not implemented, all events are propagated to SubViewports.
+由使用者實作的虛方法。如果它回傳 ``true``\ ，則 ``event`` 將被傳播到 :ref:`SubViewport<class_SubViewport>` 子級。如果回傳 ``false``\ ，則傳播不會發生。如果未實作該功能，則所有事件都會被傳播到子視埠。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

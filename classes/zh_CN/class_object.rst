@@ -340,11 +340,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-重写此方法以自定义 :ref:`get()<class_Object_method_get>` 的行为。应该返回给定 ``property``\ （属性）的值；如果该 ``property`` 应该按常规方式处理，则返回 ``null``\ 。
+重写此方法以自定义 :ref:`get()<class_Object_method_get>` 的行为。该方法应返回所指定的 ``property`` 的值；若 ``property`` 应按常规方式处理，则返回 ``null``\ 。
 
-结合 :ref:`_set()<class_Object_private_method__set>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，此方法允许定义自定义属性，这在编辑器插件的开发中尤其有用。
+结合使用 :ref:`_set()<class_Object_private_method__set>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，本方法支持定义自定义属性，这对于编辑器插件尤为实用。
 
-\ **注意：** 当获取对象的内置属性，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性时，不会调用此方法。
+\ **注：** 在获取对象的内置属性时（包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性），不会调用此方法。
 
 
 .. tabs::
@@ -388,9 +388,9 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 
 
-\ **注意：** 与其他虚方法不同，每个重写了此方法的脚本都会自动调用它。这意味着不应该通过 GDScript 中的 ``super``\ （或其他语言中的等效关键字）来调用其基类的实现。调用会从层级最底层的子类开始，随后沿着类继承层级向上依次调用。调用链会在第一个返回非 ``null`` 值的类那里停止。
+\ **注：** 与其他虚拟方法不同，此方法会被每个重写它的脚本自动调用。这意味着在 GDScript 或其他语言中，不应通过 ``super`` 调用基类实现。最底层的子类将首先被调用，随后调用沿类层次结构向上传递，直至首个返回非 ``null`` 值的类时，调用链即终止。
 
-\ **警告：** 如果重写了此方法，它必须是线程安全的。否则，当尝试保存包含该对象的资源时，引擎可能会崩溃。
+\ **警告:** 如果此方法被重写，则必须标记为 :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` 。否则，在尝试保存包含该对象的资源时，引擎可能会崩溃。
 
 .. rst-class:: classref-item-separator
 
@@ -402,13 +402,13 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-重写此方法，以向引擎提供一个自定义的额外属性列表来进行处理。
+重写此方法，以提供一套自定义的附加属性列表，供引擎处理。
 
-应该返回一个属性列表，形式为包含字典的 :ref:`Array<class_Array>`\ （数组）。该结果会被添加到 :ref:`get_property_list()<class_Object_method_get_property_list>` 的数组中，并且应该采用相同的格式。每个 :ref:`Dictionary<class_Dictionary>`\ （字典）必须至少包含 ``name``\ （名称）和 ``type``\ （类型）这两个条目。
+应返回一个属性列表，其类型为字典的\ :ref:`Array<class_Array>`\ 。该结果将被添加到\ :ref:`get_property_list()<class_Object_method_get_property_list>`\ 方法返回的数组中，且其格式需与此数组保持一致。每个\ :ref:`Dictionary<class_Dictionary>`\ 必须至少包含\ ``name``\ 和\ ``type``\ 这两个键值条目。
 
-你可以使用 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 和 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 来定制通过此方法添加的属性的默认值。
+您可以使用 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 和 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 来自定义本方法所添加属性的默认值。
 
-下面的示例展示了一个从 ``ZERO`` 到 ``FIVE`` 以单词形式显示的数字列表，其中 ``number_count`` 用于控制列表的大小：
+以下示例展示了从 ``ZERO`` 到 ``FIVE`` 的数值列表以字符串形式呈现，其中 ``number_count`` 用于控制列表的大小：
 
 
 .. tabs::
@@ -517,13 +517,13 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 
 
-\ **注意：** 此方法是为高级用途设计的。对于大多数常见的使用场景，各脚本语言都提供了更简便的方式来处理属性。详见 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`\ 、\ :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`\ 、\ :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` 等注解。如果你只是想自定义已导出的属性，请使用 :ref:`_validate_property()<class_Object_private_method__validate_property>`\ 。
+\ **注：** 本方法适用于高级应用场景。对于大多数常见用例，脚本语言提供了更简便的属性处理方式。请参阅 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`\ 、\ :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`\ 、\ :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` 等说明。如需自定义导出属性，请使用 :ref:`_validate_property()<class_Object_private_method__validate_property>` 方法。
 
-\ **注意：** 如果该对象的脚本没有标记 :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`\ ，此方法在编辑器中将不会被调用。
+\ **注：** 若对象的脚本并非 :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`\ ，则本方法在编辑器中不会被调用。
 
-\ **注意：** 与其他虚方法不同，每个重写了此方法的脚本都会自动调用它。这意味着不应该通过 GDScript 中的 ``super``\ （或其他语言中的等效关键字）来调用其基类的实现。调用会从层级最底层的子类开始，随后沿着类继承层级向上依次进行。
+\ **注：** 与其他虚拟方法不同，此方法会在每个重写该方法的脚本中被自动调用。这意味着在 GDScript 或其他语言中，不应通过 ``super`` 调用基类实现。最底层的子类将首先被调用，随后调用顺序沿类继承链向上推进。
 
-\ **警告：** 如果重写了此方法，它必须是<线程安全的>。否则，当尝试保存包含该对象的资源时，引擎可能会崩溃。
+\ **警告：** 如果此方法被重写，则必须标记为 :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` 。否则，在尝试保存包含该对象的资源时，引擎可能会崩溃。
 
 .. rst-class:: classref-item-separator
 

@@ -7,9 +7,9 @@ AudioEffectPanner
 
 **Hérite de :** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a panner audio effect to an audio bus.
+Ajoute un effet audio de balance à un bus audio.
 
-Pans the sound left or right.
+Balance les sons à gauche ou à droite.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutoriels
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effets audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

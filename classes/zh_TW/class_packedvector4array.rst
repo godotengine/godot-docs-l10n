@@ -5,20 +5,20 @@
 PackedVector4Array
 ==================
 
-A packed array of :ref:`Vector4<class_Vector4>`\ s.
+:ref:`Vector4<class_Vector4>` 緊縮陣列。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An array specifically designed to hold :ref:`Vector4<class_Vector4>`. Packs data tightly, so it saves memory for large array sizes.
+一種專門用於儲存 :ref:`Vector4<class_Vector4>`\ （四維向量）的陣列。它會對資料進行緊密打包，因此在陣列規模較大時能節省記憶體。
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedVector4Array** versus ``Array[Vector4]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **打包陣列、型別化陣列與無型別陣列之間的區別：**\ 與相同型別的型別化陣列（例如 **PackedVector4Array** 對比 ``Array[Vector4]``\ ）相比，打包陣列在迭代和修改時通常速度更快。同時，打包陣列佔用的記憶體也更少。但缺點在於，打包陣列的靈活性較差，因為它們沒有提供像 :ref:`Array.map()<class_Array_method_map>` 這樣豐富的便捷方法。而型別化陣列在迭代和修改速度上，又優於無型別陣列。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedVector4Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包陣列總是通過參照（reference）傳遞。如果你想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_PackedVector4Array_method_duplicate>` 方法。不過，內建屬性和方法的情況\ *並非*\ 如此。在這些情況下，回傳的打包陣列是一個副本，修改它並\ *不會*\ 影響原始值。若要更新此類內建屬性，你需要修改回傳的陣列，然後將其重新賦值給該屬性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布林值情境中，如果打包陣列為空，其計算結果將為 ``false``\ 。否則，打包陣列總是會被計算為 ``true``\ 。
 
 .. note::
 
@@ -129,7 +129,7 @@ An array specifically designed to hold :ref:`Vector4<class_Vector4>`. Packs data
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **PackedVector4Array**\ (\ ) :ref:`🔗<class_PackedVector4Array_constructor_PackedVector4Array>`
 
-Constructs an empty **PackedVector4Array**.
+構造空的 **PackedVector4Array**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Constructs an empty **PackedVector4Array**.
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **PackedVector4Array**\ (\ from\: :ref:`PackedVector4Array<class_PackedVector4Array>`\ )
 
-Constructs a **PackedVector4Array** as a copy of the given **PackedVector4Array**.
+構造給定 **PackedVector4Array** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ Constructs a **PackedVector4Array** as a copy of the given **PackedVector4Array*
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **PackedVector4Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedVector4Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+構造新的 **PackedVector4Array**\ 。也可以傳入需要轉換的通用 :ref:`Array<class_Array>`\ 。
 
-\ **Note:** When initializing a **PackedVector4Array** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Vector4<class_Vector4>` values:
+\ **注意：**\ 使用元素初始化 **PackedVector4Array** 時，必須使用元素為 :ref:`Vector4<class_Vector4>` 的 :ref:`Array<class_Array>` 進行初始化：
 
 ::
 
@@ -184,7 +184,7 @@ Constructs a new **PackedVector4Array**. Optionally, you can pass in a generic :
 
 |void| **append_array**\ (\ array\: :ref:`PackedVector4Array<class_PackedVector4Array>`\ ) :ref:`🔗<class_PackedVector4Array_method_append_array>`
 
-Appends a **PackedVector4Array** at the end of this array.
+在該陣列的末尾追加一個 **PackedVector4Array**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Appends a **PackedVector4Array** at the end of this array.
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_PackedVector4Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedVector4Array_method_remove_at>` instead.
+從陣列中移除首次出現的某個值並回傳 ``true``\ 。如果陣列中不存在該值，則甚麼都不會發生，回傳 ``false``\ 。要根據索引來移除元素，請改用 :ref:`remove_at()<class_PackedVector4Array_method_remove_at>`\ 。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`Vector4<class_Vector4>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedVector4Array_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+在陣列中搜尋值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜尋索引。
 
 \ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
@@ -290,9 +290,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`Vector4<class_Vector4>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector4Array_method_get>`
 
-Returns the :ref:`Vector4<class_Vector4>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector4(0, 0, 0, 0)``.
+回傳陣列中索引為 ``index`` 的 :ref:`Vector4<class_Vector4>`\ 。如果 ``index`` 越界或為負數，則該方法失敗並回傳 ``Vector4(0, 0, 0, 0)``\ 。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+該方法類似於 ``[]`` 運算符（但不等價）。最顯著的區別就是從編輯器中執行時，該方法失敗不會暫停專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_PackedVector4Array_method_push_back>`
 
-Inserts a :ref:`Vector4<class_Vector4>` at the end.
+在末尾插入一個 :ref:`Vector4<class_Vector4>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -366,9 +366,9 @@ Inserts a :ref:`Vector4<class_Vector4>` at the end.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector4Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedVector4Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+設定陣列的大小。如果陣列增大，則預留陣列末端的元素。如果陣列縮小，則將陣列截斷到新的大小。呼叫一次 :ref:`resize()<class_PackedVector4Array_method_resize>` 然後賦值比逐個新增新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedVector4Array_method_size>` to find the actual size of the array after resize.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時回傳下列 :ref:`Error<enum_@GlobalScope_Error>` 常數：大小為負數則回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失敗則回傳 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。請使用 :ref:`size()<class_PackedVector4Array_method_size>` 取得調整後的實際大小。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`Vector4<class_Vector4>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedVector4Array_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+逆序搜尋陣列。還可以傳遞起始搜尋位置索引。如果為負，則起始索引被視為相對於陣列的結尾。
 
 \ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
@@ -406,7 +406,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_PackedVector4Array_method_set>`
 
-Changes the :ref:`Vector4<class_Vector4>` at the given index.
+更改給定索引處的 :ref:`Vector4<class_Vector4>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -430,11 +430,11 @@ Changes the :ref:`Vector4<class_Vector4>` at the given index.
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedVector4Array_method_slice>`
 
-Returns the slice of the **PackedVector4Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedVector4Array**.
+回傳該 **PackedVector4Array** 的切片，是從 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedVector4Array**\ 。
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+\ ``begin`` 和 ``end`` 的絕對值會按陣列大小進行限制，所以 ``end`` 的預設值會切到陣列大小為止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的簡寫）。
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+如果 ``begin`` 或 ``end`` 為負，則表示相對於陣列的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的簡寫）。
 
 .. rst-class:: classref-item-separator
 
@@ -489,7 +489,7 @@ If either ``begin`` or ``end`` are negative, they will be relative to the end of
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **operator +**\ (\ right\: :ref:`PackedVector4Array<class_PackedVector4Array>`\ ) :ref:`🔗<class_PackedVector4Array_operator_sum_PackedVector4Array>`
 
-Returns a new **PackedVector4Array** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedVector4Array_method_append_array>` instead.
+回傳新的 **PackedVector4Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高效能，請考慮改用 :ref:`append_array()<class_PackedVector4Array_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Returns a new **PackedVector4Array** with contents of ``right`` added at the end
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedVector4Array<class_PackedVector4Array>`\ ) :ref:`🔗<class_PackedVector4Array_operator_eq_PackedVector4Array>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal :ref:`Vector4<class_Vector4>`\ s at the corresponding indices.
+如果兩個陣列的內容相同，即對應索引號的 :ref:`Vector4<class_Vector4>` 相等，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`Vector4<class_Vector4>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector4Array_operator_idx_int>`
 
-Returns the :ref:`Vector4<class_Vector4>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+回傳索引為 ``index`` 的 :ref:`Vector4<class_Vector4>`\ 。負數索引能從末尾開始存取元素。使用陣列範圍外的索引會導致出錯。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

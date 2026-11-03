@@ -89,7 +89,7 @@ Sprite3D
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-Current frame to display from sprite sheet. :ref:`hframes<class_Sprite3D_property_hframes>` or :ref:`vframes<class_Sprite3D_property_vframes>` must be greater than 1. This property is automatically adjusted when :ref:`hframes<class_Sprite3D_property_hframes>` or :ref:`vframes<class_Sprite3D_property_vframes>` are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to ``0``.
+目前顯示的精靈表中的影格。\ :ref:`hframes<class_Sprite3D_property_hframes>` 和 :ref:`vframes<class_Sprite3D_property_vframes>` 必須大於 1。\ :ref:`hframes<class_Sprite3D_property_hframes>` 或 :ref:`vframes<class_Sprite3D_property_vframes>` 發生變化時會自動調整該屬性，讓它在視覺上保持指向同一影格（同一行、同一列）。 如果無法保持，則會重設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Current frame to display from sprite sheet. :ref:`hframes<class_Sprite3D_propert
 - |void| **set_hframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hframes**\ (\ )
 
-The number of columns in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite3D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite3D_property_frame>` is reset to ``0``.
+精靈表中的列數。該屬性發生變化時會對 :ref:`frame<class_Sprite3D_property_frame>` 進行調整，在視覺上維持相同的影格（同一行、同一列）。如果無法維持，則會將 :ref:`frame<class_Sprite3D_property_frame>` 重設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ The number of columns in the sprite sheet. When this property is changed, :ref:`
 - |void| **set_vframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vframes**\ (\ )
 
-The number of rows in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite3D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite3D_property_frame>` is reset to ``0``.
+精靈表中的行數。該屬性發生變化時會對 :ref:`frame<class_Sprite3D_property_frame>` 進行調整，在視覺上維持相同的影格（同一行、同一列）。如果無法維持，則會將 :ref:`frame<class_Sprite3D_property_frame>` 重設為 ``0``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

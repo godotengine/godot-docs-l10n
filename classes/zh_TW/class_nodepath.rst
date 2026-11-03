@@ -14,9 +14,9 @@ NodePath
 
 **NodePath** 這個內建 :ref:`Variant<class_Variant>` 類型用來表示節點階層中指向某節點或屬性的路徑。它設計成能有效率地傳遞給許多內建方法（例如 :ref:`Node.get_node()<class_Node_method_get_node>`\ 、\ :ref:`Object.set_indexed()<class_Object_method_set_indexed>`\ 、\ :ref:`Tween.tween_property()<class_Tween_method_tween_property>` 等），而不需直接依賴所指向的節點或屬性。
 
-節點路徑以由斜線（\ ``/``\ ）分隔的節點名稱，以及冒號（\ ``:``\ ）分隔的屬性名稱（也稱為「子名稱」）組成的 :ref:`String<class_String>` 來表示。類似檔案系統路徑，特殊節點名稱 ``".."`` 和 ``"."`` 分別代表父節點和當前節點。
+節點路徑以由斜線（\ ``/``\ ）分隔的節點名稱，以及冒號（\ ``:``\ ）分隔的屬性名稱（也稱為「子名稱」）組成的 :ref:`String<class_String>` 來表示。類似檔案系統路徑，特殊節點名稱 ``".."`` 和 ``"."`` 分別代表父節點和目前節點。
 
-以下範例為相對於當前節點的路徑：
+以下範例為相對於目前節點的路徑：
 
 ::
 
@@ -46,11 +46,11 @@ NodePath
 
 在某些情況下，指向物件屬性時可以省略開頭的 ``:``\ ，例如 :ref:`Object.set_indexed()<class_Object_method_set_indexed>` 與 :ref:`Tween.tween_property()<class_Tween_method_tween_property>`\ ，這些方法會呼叫 :ref:`get_as_property_path()<class_NodePath_method_get_as_property_path>`\ 。不過，一般建議保留 ``:`` 前綴。
 
-節點路徑無法檢查自身是否有效，也可能指向不存在的節點或屬性，其意義完全取決於使用時的上下文。
+節點路徑無法檢查自身是否有效，也可能指向不存在的節點或屬性，其意義完全取決於使用時的情境。
 
 通常你不需特別處理 **NodePath** 類型，因為字串會在需要時自動轉換成此類型。不過在某些情境下自行設定節點路徑很方便，例如匯出的 **NodePath** 屬性讓你可以輕鬆在目前編輯的場景中選擇任一節點。當你在場景樹編輯器移動、重新命名或刪除節點時，這些路徑也會自動更新。另見 :ref:`@GDScript.@export_node_path<class_@GDScript_annotation_@export_node_path>`\ 。
 
-另可參考 :ref:`StringName<class_StringName>`\ ，這是一種設計用來優化字串操作的類型。
+另可參考 :ref:`StringName<class_StringName>`\ ，這是一種設計用來最佳化字串操作的類型。
 
 \ **注意：** 在布林判斷式中，若 **NodePath** 為空（\ ``NodePath("")``\ ），值為 ``false``\ ，否則一律為 ``true``\ 。
 
@@ -164,7 +164,7 @@ NodePath
 
 從 :ref:`String<class_String>` 建立一個 **NodePath**\ 。如果字串開頭有斜線則為絕對路徑（見 :ref:`is_absolute()<class_NodePath_method_is_absolute>`\ ）。
 
-在路徑後方可選擇性地加上「子名稱」（subnames），用來指向屬性，也可多層嵌套。
+在路徑後方可選擇性地加上「子名稱」（subnames），用來指向屬性，也可多層巢狀。
 
 以下這些字串都是有效的節點路徑：
 

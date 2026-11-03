@@ -7,20 +7,20 @@ RenderingDevice
 
 **Hereda:** :ref:`Object<class_Object>`
 
-Abstracción para trabajar con las modernas APIs gráficas de bajo nivel.
+Abstracción para trabajar con las API gráficas modernas de bajo nivel.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-**RenderingDevice** es una abstracción para trabajar con las modernas APIs gráficas de bajo nivel, como Vulkan. En comparación con :ref:`RenderingServer<class_RenderingServer>` (que trabaja con los propios subsistemas de renderizado de Godot), **RenderingDevice** es de un nivel mucho más bajo y permite trabajar más directamente con las APIs gráficas subyacentes. **RenderingDevice** se utiliza en Godot para dar soporte a varias APIs gráficas modernas de bajo nivel, al tiempo que se reduce la cantidad de duplicación de código necesaria. **RenderingDevice** también se puede utilizar en tus propios proyectos para realizar cosas que no están expuestas por :ref:`RenderingServer<class_RenderingServer>` o nodos de alto nivel, como el uso de shaders de cálculo.
+**RenderingDevice** es una abstracción para trabajar con las API gráficas modernas de bajo nivel, como Vulkan. En comparación con :ref:`RenderingServer<class_RenderingServer>` (que trabaja con los propios subsistemas de renderizado de Godot), **RenderingDevice** es de un nivel mucho más bajo y permite trabajar más directamente con las API gráficas subyacentes. **RenderingDevice** se utiliza en Godot para dar soporte a varias API gráficas modernas de bajo nivel, al tiempo que se reduce la cantidad de duplicación de código necesaria. **RenderingDevice** también se puede utilizar en tus propios proyectos para realizar cosas que no están expuestas por :ref:`RenderingServer<class_RenderingServer>` o nodos de alto nivel, como el uso de shaders de cálculo.
 
 Al inicio, Godot crea un **RenderingDevice** global que se puede recuperar utilizando :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>`. Este **RenderingDevice** global realiza el dibujado en la pantalla.
 
 \ **RenderingDevices Locales:** Usando :ref:`RenderingServer.create_local_rendering_device()<class_RenderingServer_method_create_local_rendering_device>`, puedes crear dispositivos de renderizado "secundarios" para realizar operaciones de dibujo y cálculo de GPU en hilos separados.
 
-\ **Nota:** **RenderingDevice** asume un conocimiento intermedio de las APIs gráficas modernas como Vulkan, Direct3D 12, Metal o WebGPU. Estas APIs gráficas son de más bajo nivel que OpenGL o Direct3D 11, lo que requiere que realices lo que antes hacía el propio controlador de gráficos. Si tienes dificultades para entender los conceptos utilizados en esta clase, sigue el `Tutorial de Vulkan <https://vulkan-tutorial.com/>`__ o la `Guía de Vulkan <https://vkguide.dev/>`__. Se recomienda tener conocimientos existentes de OpenGL o Direct3D 11 modernos antes de intentar aprender una API de gráficos de bajo nivel.
+\ **Nota:** **RenderingDevice** asume un conocimiento intermedio de las API gráficas modernas como Vulkan, Direct3D 12, Metal o WebGPU. Estas API gráficas son de más bajo nivel que OpenGL o Direct3D 11, lo que requiere que realices lo que antes hacía el propio controlador de gráficos. Si tienes dificultades para entender los conceptos utilizados en esta clase, sigue el `Tutorial de Vulkan <https://vulkan-tutorial.com/>`__ o la `Guía de Vulkan <https://vkguide.dev/>`__. Se recomienda tener conocimientos existentes de OpenGL o Direct3D 11 modernos antes de intentar aprender una API de gráficos de bajo nivel.
 
 \ **Nota:** **RenderingDevice** no está disponible cuando se ejecuta en modo headless o cuando se utiliza el método de renderizado de Compatibilidad.
 
@@ -1682,7 +1682,7 @@ Formato de datos de profundidad de punto flotante con signo de 32 bits con el va
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_S8_UINT** = ``126``
 
-Formato de datos de plantilla de entero sin signo de 8 bits.
+Formato de datos de esténcil de entero sin signo de 8 bits.
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D16_UNORM_S8_UINT:
 
@@ -1690,7 +1690,7 @@ Formato de datos de plantilla de entero sin signo de 8 bits.
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D16_UNORM_S8_UINT** = ``127``
 
-Formato de datos de profundidad de punto flotante sin signo de 16 bits con valor normalizado, más 8 bits de plantilla en formato de entero sin signo. Los valores para la profundidad están en el rango ``[0.0, 1.0]``. Los valores para la plantilla están en el rango ``[0, 255]``.
+Formato de datos de profundidad de punto flotante sin signo de 16 bits con valor normalizado, más 8 bits de esténcil en formato de entero sin signo. Los valores para la profundidad están en el rango ``[0.0, 1.0]``. Los valores para el esténcil están en el rango ``[0, 255]``.
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D24_UNORM_S8_UINT:
 
@@ -1698,7 +1698,7 @@ Formato de datos de profundidad de punto flotante sin signo de 16 bits con valor
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D24_UNORM_S8_UINT** = ``128``
 
-Formato de datos de profundidad de punto flotante sin signo de 24 bits con valor normalizado, más 8 bits de plantilla en formato de entero sin signo. Los valores para la profundidad están en el rango ``[0.0, 1.0]``. Los valores para la plantilla están en el rango ``[0, 255]``.
+Formato de datos de profundidad de punto flotante sin signo de 24 bits con valor normalizado, más 8 bits de esténcil en formato de entero sin signo. Los valores para la profundidad están en el rango ``[0.0, 1.0]``. Los valores para el esténcil están en el rango ``[0, 255]``.
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D32_SFLOAT_S8_UINT:
 
@@ -1706,7 +1706,7 @@ Formato de datos de profundidad de punto flotante sin signo de 24 bits con valor
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D32_SFLOAT_S8_UINT** = ``129``
 
-Formato de datos de profundidad de punto flotante con signo de 32 bits con el valor almacenado tal cual, más 8 bits de plantilla en formato de entero sin signo. Los valores para la plantilla están en el rango ``[0, 255]``.
+Formato de datos de profundidad de punto flotante con signo de 32 bits con el valor almacenado tal cual, más 8 bits de esténcil en formato de entero sin signo. Los valores para el esténcil están en el rango ``[0, 255]``.
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC1_RGB_UNORM_BLOCK:
 
@@ -2768,7 +2768,7 @@ Realiza 4 muestreos de textura.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_8** = ``3``
 
-Realiza 8 muestreos de textura. No compatible con GPUs móviles (incluyendo Apple Silicon).
+Realiza 8 muestreos de textura. No compatible con GPU móviles (incluyendo Apple Silicon).
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_16:
 
@@ -2776,7 +2776,7 @@ Realiza 8 muestreos de textura. No compatible con GPUs móviles (incluyendo Appl
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_16** = ``4``
 
-Realiza 16 muestreos de textura. No compatible con GPUs móviles y muchas GPUs de escritorio.
+Realiza 16 muestreos de textura. No compatible con GPU móviles y muchas GPU de escritorio.
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_32:
 
@@ -2784,7 +2784,7 @@ Realiza 16 muestreos de textura. No compatible con GPUs móviles y muchas GPUs d
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_32** = ``5``
 
-Realiza 32 muestreos de textura. No compatible con la mayoría de las GPUs.
+Realiza 32 muestreos de textura. No compatible con la mayoría de las GPU.
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_64:
 
@@ -2792,7 +2792,7 @@ Realiza 32 muestreos de textura. No compatible con la mayoría de las GPUs.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_64** = ``6``
 
-Realiza 64 muestreos de textura (este es el más lento pero de mayor calidad para el suavizado). No compatible con la mayoría de las GPUs.
+Realiza 64 muestreos de textura (este es el más lento pero de mayor calidad para el suavizado). No compatible con la mayoría de las GPU.
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_MAX:
 
@@ -2834,7 +2834,7 @@ Texture can be used as a color attachment in a framebuffer.
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT** = ``4``
 
-Texture can be used as a depth/stencil attachment in a framebuffer.
+La textura se puede usar como un adjunto de profundidad/esténcil en un búfer de fotogramas.
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_DEPTH_RESOLVE_ATTACHMENT_BIT:
 
@@ -2842,7 +2842,7 @@ Texture can be used as a depth/stencil attachment in a framebuffer.
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_DEPTH_RESOLVE_ATTACHMENT_BIT** = ``4096``
 
-Texture can be used as a depth/stencil resolve attachment in a framebuffer.
+La textura se puede utilizar como adjunto de resolución de profundidad/esténcil en un búfer de fotogramas.
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_STORAGE_BIT:
 
@@ -3755,7 +3755,7 @@ enum **StencilOperation**: :ref:`🔗<enum_RenderingDevice_StencilOperation>`
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_KEEP** = ``0``
 
-Keep the current stencil value.
+Mantener el valor actual de esténcil.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_ZERO:
 
@@ -3763,7 +3763,7 @@ Keep the current stencil value.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_ZERO** = ``1``
 
-Set the stencil value to ``0``.
+Establecer el valor de esténcil en ``0``.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_REPLACE:
 
@@ -3771,7 +3771,7 @@ Set the stencil value to ``0``.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_REPLACE** = ``2``
 
-Replace the existing stencil value with the new one.
+Reemplazar el valor existente de esténcil con el nuevo.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INCREMENT_AND_CLAMP:
 
@@ -3779,7 +3779,7 @@ Replace the existing stencil value with the new one.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INCREMENT_AND_CLAMP** = ``3``
 
-Increment the existing stencil value and clamp to the maximum representable unsigned value if reached. Stencil bits are considered as an unsigned integer.
+Incrementar el valor de esténcil existente y limitarlo al valor máximo representable sin signo si se alcanza. Los bits de esténcil se consideran un entero sin signo.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_DECREMENT_AND_CLAMP:
 
@@ -3787,7 +3787,7 @@ Increment the existing stencil value and clamp to the maximum representable unsi
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_DECREMENT_AND_CLAMP** = ``4``
 
-Decrement the existing stencil value and clamp to the minimum value if reached. Stencil bits are considered as an unsigned integer.
+Decrementar el valor de esténcil existente y limitarlo al valor mínimo si se alcanza. Los bits de esténcil se consideran un entero sin signo.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INVERT:
 
@@ -3795,7 +3795,7 @@ Decrement the existing stencil value and clamp to the minimum value if reached. 
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INVERT** = ``5``
 
-Bitwise-invert the existing stencil value.
+Invertir bit a bit el valor de esténcil existente.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INCREMENT_AND_WRAP:
 
@@ -3803,7 +3803,7 @@ Bitwise-invert the existing stencil value.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INCREMENT_AND_WRAP** = ``6``
 
-Increment the stencil value and wrap around to ``0`` if reaching the maximum representable unsigned. Stencil bits are considered as an unsigned integer.
+Incrementar el valor de esténcil y volver a ``0`` si se alcanza el valor máximo sin signo representable. Los bits de esténcil se consideran como un entero sin signo.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_DECREMENT_AND_WRAP:
 
@@ -3811,7 +3811,7 @@ Increment the stencil value and wrap around to ``0`` if reaching the maximum rep
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_DECREMENT_AND_WRAP** = ``7``
 
-Decrement the stencil value and wrap around to the maximum representable unsigned if reaching the minimum. Stencil bits are considered as an unsigned integer.
+Decrementar el valor de esténcil y volver al máximo sin signo representable si se alcanza el mínimo. Los bits de esténcil se consideran como un entero sin signo.
 
 .. _class_RenderingDevice_constant_STENCIL_OP_MAX:
 
@@ -7141,7 +7141,7 @@ Compila un shader binario a partir de ``spirv_data`` y devuelve los datos binari
 
 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` **shader_compile_spirv_from_source**\ (\ shader_source\: :ref:`RDShaderSource<class_RDShaderSource>`, allow_cache\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingDevice_method_shader_compile_spirv_from_source>`
 
-Compila un SPIR-V a partir del código fuente del shader en ``shader_source`` y devuelve el SPIR-V como un :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`. Este shader de lenguaje intermedio es portátil entre diferentes modelos de GPU y versiones de controlador, pero no puede ser ejecutado directamente por las GPUs hasta que se compile en un shader binario usando :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>`.
+Compila un SPIR-V a partir del código fuente del shader en ``shader_source`` y devuelve el SPIR-V como un :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`. Este shader de lenguaje intermedio es portátil entre diferentes modelos de GPU y versiones de controlador, pero no puede ser ejecutado directamente por las GPU hasta que se compile en un shader binario usando :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>`.
 
 Si ``allow_cache`` es ``true``, utiliza la caché de shaders generada por Godot. Esto evita un paso de compilación de shader potencialmente largo si el shader ya está en la caché. Si ``allow_cache`` es ``false``, la caché de shaders de Godot se ignora y el shader siempre se volverá a compilar.
 

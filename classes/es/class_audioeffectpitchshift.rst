@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a pitch-shifting audio effect to an audio bus.
+Añade un efecto de audio de cambio de tono a un bus de audio.
 
-Raises or lowers the pitch of the input audio.
+Sube o baja el tono del audio de entrada.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
+Permite modular el tono sin modificar la velocidad. Todas las frecuencias pueden aumentarse o disminuirse con un efecto mínimo en los transitorios.
 
 .. rst-class:: classref-introduction-group
 

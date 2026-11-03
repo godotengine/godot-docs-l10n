@@ -35,9 +35,11 @@ DirAccess
 
 Ось приклад того, як перебирати файли каталогу: 
 
-::
+
+.. tabs:: 
+
+ .. code-tab:: gdscript
  
-    [gdscript] 
     func dir_contents(path): 
         var dir = DirAccess.open(path) 
         if dir: 
@@ -50,9 +52,10 @@ DirAccess
                     print("Знайдено файл: " + ім'я_файлу) 
                 nane_file = dir.get_next() 
         ще: 
-            print("Під час спроби отримати доступ до шляху сталася помилка.") 
-    [/gdscript] 
-    [csharp] 
+            print("Під час спроби отримати доступ до шляху сталася помилка.")  
+
+ .. code-tab:: csharp
+ 
     public void DirContents (string path) 
     {
         використовуючи var dir = DirAccess.Open(path); 
@@ -77,10 +80,11 @@ DirAccess
         { 
             GD.Print("Під час спроби отримати доступ до шляху сталася помилка."); 
         } 
-    }
-    [/csharp] [/codeblocks] 
+    } 
 
-Майте на увазі, що після експорту імена файлів можуть змінитися або бути повторно призначені. Якщо ви хочете побачити фактичний список файлів ресурсів, як він відображається в редакторі, замість цього використовуйте [method ResourceLoader.list_directory].
+ 
+
+Майте на увазі, що після експорту імена файлів можуть змінитися або бути повторно призначені. Якщо ви хочете побачити фактичний список файлів ресурсів, як він відображається в редакторі, замість цього використовуйте :ref:`ResourceLoader.list_directory()<class_ResourceLoader_method_list_directory>`.
 
 .. rst-class:: classref-introduction-group
 

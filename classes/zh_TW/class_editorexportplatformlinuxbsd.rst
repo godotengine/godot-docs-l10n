@@ -71,11 +71,11 @@ Linux/BSD 匯出器。
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_binary_format/architecture>`
 
-Application executable architecture.
+程式可執行檔架構。
 
-Supported architectures: ``x86_32``, ``x86_64``, ``arm64``, ``arm32``, ``rv64``, ``ppc64``, and ``loongarch64``.
+支援的架構有：\ ``x86_32``\ 、\ ``x86_64``\ 、\ ``arm64``\ 、\ ``arm32``\ 、\ ``rv64``\ 、\ ``ppc64``\ 、\ ``loongarch64``\ 。
 
-Official export templates include ``x86_32``, ``x86_64``, ``arm32``, and ``arm64`` binaries only.
+官方匯出範本中僅包含 ``x86_32``\ 、\ ``x86_64``\ 、\ ``arm32``\ 、\ ``arm64`` 的二進位檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -135,9 +135,9 @@ Official export templates include ``x86_32``, ``x86_64``, ``arm32``, and ``arm64
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+如果為 ``true``\ ，則著色器將被編譯並嵌入到應用程式中。此選項僅當使用 Forward+ 或 Mobile 渲染器時才受支援。
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **注意：**\ 匯出為專用伺服器時，由於不執行渲染，著色器烘焙器將始終被停用。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`bool<class_bool>` **texture_format/etc2_astc** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_texture_format/etc2_astc>`
 
-If ``true``, project textures are exported in the ETC2/ASTC format.
+如果為 ``true``\ ，則專案中的紋理在匯出時使用 ETC2/ASTC 格式。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ If ``true``, project textures are exported in the ETC2/ASTC format.
 
 :ref:`bool<class_bool>` **texture_format/s3tc_bptc** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_texture_format/s3tc_bptc>`
 
-If ``true``, project textures are exported in the S3TC/BPTC format.
+如果為 ``true``\ ，則專案中的紋理在匯出時使用 S3TC/BPTC 格式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

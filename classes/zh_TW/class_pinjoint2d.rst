@@ -58,7 +58,7 @@ PinJoint2D
 - |void| **set_angular_limit_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_angular_limit_enabled**\ (\ )
 
-If ``true``, the pin maximum and minimum rotation, defined by :ref:`angular_limit_lower<class_PinJoint2D_property_angular_limit_lower>` and :ref:`angular_limit_upper<class_PinJoint2D_property_angular_limit_upper>` are applied.
+如果為 ``true``\ ，則應用由 :ref:`angular_limit_lower<class_PinJoint2D_property_angular_limit_lower>` 和 :ref:`angular_limit_upper<class_PinJoint2D_property_angular_limit_upper>` 定義的銷的最大和最小旋轉。
 
 .. rst-class:: classref-item-separator
 

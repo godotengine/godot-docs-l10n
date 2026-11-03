@@ -14,15 +14,15 @@ Thread
 說明
 ----
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+處理程序中的執行單元。可以同時在 :ref:`Object<class_Object>` 上執行方法。如果使用共享物件，建議通過 :ref:`Mutex<class_Mutex>` 或 :ref:`Semaphore<class_Semaphore>` 進行同步。
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **警告：**\ 為了確保能夠正確清理，避免崩潰和死鎖，\ **Thread** 的參照計數變為零進行銷毀時，必須滿足以下條件：
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- 它不能有任何已鎖定的 :ref:`Mutex<class_Mutex>` 物件。
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- 它不能在等待任何 :ref:`Semaphore<class_Semaphore>` 物件。
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- 應該已經對其呼叫過 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -139,9 +139,9 @@ enum **Priority**: :ref:`🔗<enum_Thread_Priority>`
 
 :ref:`bool<class_bool>` **is_main_thread**\ (\ ) |static| :ref:`🔗<class_Thread_method_is_main_thread>`
 
-Returns ``true`` if the thread this method was called from is the main thread.
+如果呼叫該方法的執行緒是主執行緒，則回傳 ``true``\ 。
 
-\ **Note:** This is a static method and isn't associated with a specific **Thread** object.
+\ **注意：**\ 這是一個靜態方法，與特定的 **Thread** 物件無關。
 
 .. rst-class:: classref-item-separator
 
@@ -171,13 +171,13 @@ Returns ``true`` if the thread this method was called from is the main thread.
 
 這些檢查是保守的。也就是說，只有在引擎能夠確保安全時才會認為該呼叫是執行緒安全的，檢查通過（因此允許進行呼叫）。
 
-因此，某些情況下用於可能會想要將其禁用（讓 ``enabled`` 為 ``false``\ ），允許某些操作。此時引擎不再保護這些物件的執行緒安全，（通過使用 :ref:`Mutex<class_Mutex>` 等方法來）確保執行緒安全就是使用者自己的責任了。
+因此，某些情況下用於可能會想要將其停用（讓 ``enabled`` 為 ``false``\ ），允許某些操作。此時引擎不再保護這些物件的執行緒安全，（通過使用 :ref:`Mutex<class_Mutex>` 等方法來）確保執行緒安全就是使用者自己的責任了。
 
 \ **注意：**\ 這是引擎的高階用法。建議只有在你知道自己在做什麼，並且沒有其他更安全的方法時才使用這個方法。
 
 \ **注意：**\ 可用於任意 **Thread** 物件中執行的腳本，或者提交至 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 的工作。\ :ref:`Node<class_Node>` 群組處理時執行的程式碼不適用，這種情況下會始終執行檢查。
 
-\ **注意：**\ 即使是在 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 工作中禁用了檢查，也不需要在結束後將其重新啟用。引擎會幫你去啟用。
+\ **注意：**\ 即使是在 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 工作中停用了檢查，也不需要在結束後將其重新啟用。引擎會幫你去啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Returns ``true`` if the thread this method was called from is the main thread.
 
 合併該 **Thread** 並等待其完成。返回傳入 :ref:`start()<class_Thread_method_start>` 的 :ref:`Callable<class_Callable>` 的輸出。
 
-應該在你想要獲取該 **Thread** 所呼叫的方法的返回值時使用，或者在釋放包含該 **Thread** 的實例前使用。
+應該在你想要取得該 **Thread** 所呼叫的方法的返回值時使用，或者在釋放包含該 **Thread** 的實例前使用。
 
 要確定呼叫時是否不會阻塞呼叫執行緒，請檢查 :ref:`is_alive()<class_Thread_method_is_alive>` 是否為 ``false``\ 。
 

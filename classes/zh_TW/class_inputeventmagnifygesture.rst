@@ -14,9 +14,9 @@ InputEventMagnifyGesture
 說明
 ----
 
-Stores the factor of a magnifying touch gesture. This is usually performed when the user pinches the touch screen and used for zooming in/out.
+儲存放大觸摸手勢的係數。通常使用者在觸摸屏上將雙指捏合，就執行了放大手勢，可用於縮放。
 
-\ **Note:** On Android, this requires the :ref:`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>` project setting to be enabled.
+\ **注意：**\ 在 Android 上，這需要啟用 :ref:`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>` 專案設定。
 
 .. rst-class:: classref-introduction-group
 

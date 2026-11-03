@@ -98,7 +98,7 @@ AudioStreamGeneratorPlayback
 
 :ref:`int<class_int>` **get_skips**\ (\ ) |const| :ref:`🔗<class_AudioStreamGeneratorPlayback_method_get_skips>`
 
-傳回因音訊樣本資料緩衝不足而導致播放跳幀的次數。此值會在播放開始時重設。
+傳回因音訊樣本資料緩衝不足而導致播放跳影格的次數。此值會在播放開始時重設。
 
 .. rst-class:: classref-item-separator
 

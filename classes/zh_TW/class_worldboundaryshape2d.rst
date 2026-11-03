@@ -69,7 +69,7 @@ WorldBoundaryShape2D
 - |void| **set_normal**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_normal**\ (\ )
 
-The line's normal, typically a unit vector. Its direction indicates the non-colliding half-plane. Can be of any length but zero. Defaults to :ref:`Vector2.UP<class_Vector2_constant_UP>`.
+該直線的法線，通常是一個單位向量。它的方向表示非碰撞半平面。可以是任意長度，但不能為零。預設為 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

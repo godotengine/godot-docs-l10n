@@ -14,7 +14,7 @@ AnimationNodeBlend3
 說明
 ----
 
-可加入 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的資源。依取值在線性方式下從三段動畫中挑選兩段進行混合。
+可加入 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的資源。依取值線上性方式下從三段動畫中挑選兩段進行混合。
 
 本節點有三個輸入：
 

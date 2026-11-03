@@ -109,7 +109,7 @@ BoneAttachment3D
 - |void| **set_external_skeleton**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_external_skeleton**\ (\ )
 
-The :ref:`NodePath<class_NodePath>` to the external :ref:`Skeleton3D<class_Skeleton3D>` node.
+指向外部 :ref:`Skeleton3D<class_Skeleton3D>` 節點的 :ref:`NodePath<class_NodePath>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -126,9 +126,9 @@ The :ref:`NodePath<class_NodePath>` to the external :ref:`Skeleton3D<class_Skele
 - |void| **set_override_pose**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_override_pose**\ (\ )
 
-Whether the **BoneAttachment3D** node will override the bone pose of the bone it is attached to. When set to ``true``, the **BoneAttachment3D** node can change the pose of the bone. When set to ``false``, the **BoneAttachment3D** will always be set to the bone's transform.
+**BoneAttachment3D** 節點是否會覆蓋所附著骨骼的骨骼姿勢。設定為 ``true`` 時，\ **BoneAttachment3D** 節點能夠更改骨骼的姿勢。設定為 ``false`` 時，\ **BoneAttachment3D** 始終為該骨骼的變換。
 
-\ **Note:** This override performs interruptively in the skeleton update process using signals due to the old design. It may cause unintended behavior when used at the same time with :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`.
+\ **注意：**\ 由於固有的設計，覆蓋是在骨架更新的過程中使用訊號打斷執行的。與 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 一起使用時可能會造成預料之外的行為。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Whether the **BoneAttachment3D** node will override the bone pose of the bone it
 - |void| **set_use_external_skeleton**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_external_skeleton**\ (\ )
 
-Whether the **BoneAttachment3D** node will use an external :ref:`Skeleton3D<class_Skeleton3D>` node rather than attempting to use its parent node as the :ref:`Skeleton3D<class_Skeleton3D>`. When set to ``true``, the **BoneAttachment3D** node will use the external :ref:`Skeleton3D<class_Skeleton3D>` node set in :ref:`external_skeleton<class_BoneAttachment3D_property_external_skeleton>`.
+設定 **BoneAttachment3D** 節點是否使用外部 :ref:`Skeleton3D<class_Skeleton3D>` 節點，而不是嘗試使用其父節點作為 :ref:`Skeleton3D<class_Skeleton3D>`\ 。當設定為 ``true`` 時，\ **BoneAttachment3D** 節點將使用 :ref:`external_skeleton<class_BoneAttachment3D_property_external_skeleton>` 中設定的外部 :ref:`Skeleton3D<class_Skeleton3D>` 節點。
 
 .. rst-class:: classref-section-separator
 
@@ -162,7 +162,7 @@ Whether the **BoneAttachment3D** node will use an external :ref:`Skeleton3D<clas
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) :ref:`🔗<class_BoneAttachment3D_method_get_skeleton>`
 
-Returns the parent or external :ref:`Skeleton3D<class_Skeleton3D>` node if it exists, otherwise returns ``null``.
+如果存在父級或外部 :ref:`Skeleton3D<class_Skeleton3D>` 節點則將其回傳，否則回傳 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Returns the parent or external :ref:`Skeleton3D<class_Skeleton3D>` node if it ex
 
 |void| **on_skeleton_update**\ (\ ) :ref:`🔗<class_BoneAttachment3D_method_on_skeleton_update>`
 
-A function that is called automatically when the :ref:`Skeleton3D<class_Skeleton3D>` is updated. This function is where the **BoneAttachment3D** node updates its position so it is correctly bound when it is *not* set to override the bone pose.
+當 :ref:`Skeleton3D<class_Skeleton3D>` 被更新時自動呼叫的函式。該函式是 **BoneAttachment3D** 節點更新其位置的地方，以便在\ *未*\ 設定為覆蓋骨骼姿勢時正確綁定。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -1644,7 +1644,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 X 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+如果為 ``true``\ ，則 X 軸上存線上性馬達。它將試圖達到目標速度，同時保持在力的限度內。
 
 .. rst-class:: classref-item-separator
 
@@ -1695,7 +1695,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 Y 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+如果為 ``true``\ ，則 Y 軸上存線上性馬達。它將試圖達到目標速度，同時保持在力的限度內。
 
 .. rst-class:: classref-item-separator
 
@@ -1746,7 +1746,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 Z 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+如果為 ``true``\ ，則 Z 軸上存線上性馬達。它將試圖達到目標速度，同時保持在力的限度內。
 
 .. rst-class:: classref-item-separator
 

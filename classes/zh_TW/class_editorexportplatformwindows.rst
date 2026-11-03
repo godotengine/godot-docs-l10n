@@ -14,7 +14,7 @@ Windows 匯出器。
 說明
 ----
 
-The Windows exporter customizes how a Windows build is handled. In the editor's "Export" window, it is created when adding a new "Windows" preset.
+Windows 匯出器可以自訂 Windows 建置的處理方法。在編輯器的“匯出”視窗中，匯出器是在新增“Windows”預設時建立的。
 
 .. rst-class:: classref-introduction-group
 
@@ -160,7 +160,7 @@ The Windows exporter customizes how a Windows build is handled. In the editor's 
 
 :ref:`bool<class_bool>` **application/d3d12_agility_sdk_multiarch** :ref:`🔗<class_EditorExportPlatformWindows_property_application/d3d12_agility_sdk_multiarch>`
 
-If ``true``, and :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>` is set, the Agility SDK DLLs will be stored in arch-specific subdirectories.
+如果為 ``true`` 並且設定了 :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>`\ ，則 Agility SDK DLL 將被儲存在特定於架構的子目錄中。
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ If ``true``, and :ref:`application/export_d3d12<class_EditorExportPlatformWindow
 
 :ref:`int<class_int>` **application/export_d3d12** :ref:`🔗<class_EditorExportPlatformWindows_property_application/export_d3d12>`
 
-If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are exported with the exported application. If set to ``0``, Direct3D 12 libraries are exported only if :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` is set to ``"d3d12"``.
+如果設定為 ``1``\ ，Direct3D 12 執行階段函式庫（Agility SDK、PIX）將隨匯出的應用程式一起匯出。如果設定為 ``0``\ ，則僅當 :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 被設定為 ``"d3d12"`` 時，才會匯出 Direct3D 12 庫。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are export
 
 :ref:`String<class_String>` **application/file_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/file_version>`
 
-檔的版本號。必填。見 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+檔案的版本號。如果留空，則回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。請參閱 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are export
 
 :ref:`String<class_String>` **application/product_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/product_version>`
 
-使用者可見的套用程式版本。必填。見 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+使用者可見的應用程式版本。如果留空，則回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。請參閱 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are export
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformWindows_property_binary_format/architecture>`
 
-Application executable architecture.
+應用程式可執行檔的架構。
 
-Supported architectures: ``x86_32``, ``x86_64``, and ``arm64``.
+支援的架構：\ ``x86_32``\ 、\ ``x86_64``\ 、\ ``arm64``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -470,9 +470,9 @@ Supported architectures: ``x86_32``, ``x86_64``, and ``arm64``.
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformWindows_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+如果為 ``true``\ ，則著色器將被編譯並嵌入到應用程式中。此選項僅當使用 Forward+ 或 Mobile 渲染器時才受支援。
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **注意：**\ 匯出為專用伺服器時，由於不執行渲染，著色器烘焙器將始終被停用。
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`bool<class_bool>` **texture_format/etc2_astc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/etc2_astc>`
 
-If ``true``, project textures are exported in the ETC2/ASTC format.
+如果為 ``true``\ ，則專案中的紋理在匯出時使用 ETC2/ASTC 格式。
 
 .. rst-class:: classref-item-separator
 
@@ -600,7 +600,7 @@ If ``true``, project textures are exported in the ETC2/ASTC format.
 
 :ref:`bool<class_bool>` **texture_format/s3tc_bptc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/s3tc_bptc>`
 
-If ``true``, project textures are exported in the S3TC/BPTC format.
+如果為 ``true``\ ，則專案中的紋理在匯出時使用 S3TC/BPTC 格式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,11 +14,11 @@ InputEventMouseMotion
 說明
 ----
 
-Stores information about a mouse or a pen motion. This includes relative position, absolute position, and velocity. See :ref:`Node._input()<class_Node_private_method__input>`.
+儲存滑鼠或筆的運動資訊。支援相對位置、絕對位置和速度。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
 
-\ **Note:** By default, this event is only emitted once per frame rendered at most. If you need more precise input reporting, set :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` to ``false`` to make events emitted as often as possible. If you use InputEventMouseMotion to draw lines, consider using :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>` as well to avoid visible gaps in lines if the user is moving the mouse quickly.
+\ **注意：**\ 預設情況下，該事件每個渲染影格最多只會發出一個。如果你需要更精確的輸入彙報，請將 :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` 設定為 ``false``\ ，盡可能頻繁地發出事件。如果你使用 InputEventMouseMotion 來畫線，請考慮同時使用 :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>`\ ，避免在使用者快速移動滑鼠時出現可見的線條空隙。
 
-\ **Note:** This event may be emitted even when the mouse hasn't moved, either by the operating system or by Godot itself. If you really need to know if the mouse has moved (e.g. to suppress displaying a tooltip), you should check that ``relative.is_zero_approx()`` is ``false``.
+\ **注意：**\ 即使滑鼠沒有移動，作業系統或 Godot 本身也可能會發出該事件。如果你確實需要知道滑鼠是否移動（例如為了防止顯示工具提示），你應當檢查 ``relative.is_zero_approx()`` 是否為 ``false``\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -111,11 +111,11 @@ Stores information about a mouse or a pen motion. This includes relative positio
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-The mouse position relative to the previous position (position at the last frame).
+滑鼠相對於前一個位置（上一影格時的位置）的位置。
 
-\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
+\ **注意：**\ 因為 **InputEventMouseMotion** 可能只在滑鼠移動時發出，檢查該屬性無法可靠地檢測滑鼠何時停止移動。可能需要一個單獨的短時間計時器。
 
-\ **Note:** :ref:`relative<class_InputEventMouseMotion_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means mouse sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventMouseMotion_property_relative>` in a script that handles mouse aiming with the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode. To avoid this, use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` instead.
+\ **注意：**\ :ref:`relative<class_InputEventMouseMotion_property_relative>` 會根據內容縮放係數自動進行縮放，這個係數是在專案的拉伸模式設定中定義的。也就是說在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 滑鼠模式下，如果在腳本中使用 :ref:`relative<class_InputEventMouseMotion_property_relative>` 來處理滑鼠瞄准，那麼滑鼠的靈敏度就會因解析度的不同而不同。為了避免這種情況，請改用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ The mouse position relative to the previous position (position at the last frame
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-The unscaled mouse position relative to the previous position in the coordinate system of the screen (position at the last frame).
+未縮放的滑鼠位置，該位置相對於螢幕座標系中的前一個位置（上一影格的位置）。
 
-\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
+\ **注意：**\ 因為 **InputEventMouseMotion** 可能只在滑鼠移動時發出，檢查該屬性無法可靠地檢測滑鼠何時停止移動。可能需要一個單獨的短時間計時器。
 
-\ **Note:** This coordinate is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventMouseMotion_property_relative>` for mouse aiming when using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode, regardless of the project's stretch mode.
+\ **注意：**\ 該座標\ *不會*\ 根據內容縮放因子或呼叫 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 進行縮放。當使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 滑鼠模式時，無論專案的拉伸模式如何，對於滑鼠瞄准來說，這都應該優於 :ref:`relative<class_InputEventMouseMotion_property_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -153,9 +153,9 @@ The unscaled mouse position relative to the previous position in the coordinate 
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+以螢幕座標表示的、未經縮放的滑鼠速度，單位為像素/秒。這個速度\ *不會*\ 根據內容縮放因子（content scale factor）或對 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的呼叫進行縮放。
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **注意：** 在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`\ （滑鼠捕獲）模式下，\ :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` 會回傳 ``(0, 0)``\ ，因為此時滑鼠游標是隱藏且鎖定的。如果你想在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 模式下使用滑鼠進行瞄准，請使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ The unscaled mouse velocity in pixels per second in screen coordinates. This vel
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The mouse velocity in pixels per second.
+滑鼠速度，單位為像素/秒。
 
-\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
+\ **注意：** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 會根據內容縮放因子（content scale factor）自動進行縮放，該因子由專案的拉伸模式（stretch mode）設定決定。這意味著，滑鼠靈敏度可能會因為解析度的不同而顯得不一樣。
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **注意：** 在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`\ （滑鼠捕獲）模式下，\ :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 會回傳 ``(0, 0)``\ ，因為此時滑鼠游標是隱藏且鎖定的。如果你想在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 模式下使用滑鼠進行瞄准，請使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

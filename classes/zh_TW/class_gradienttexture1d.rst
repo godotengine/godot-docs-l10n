@@ -14,7 +14,7 @@ GradientTexture1D
 說明
 ----
 
-GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理資料。該漸變紋理將使用從漸變中獲得的顏色從左到右進行填充。這意味著該紋理不一定代表漸變的精確副本，而是以固定步長從漸變中獲得的樣本的插值（見 :ref:`width<class_GradientTexture1D_property_width>`\ ）。另見 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>` 和 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
+從 :ref:`Gradient<class_Gradient>` 取得顏色來填充紋理資料的一維紋理。通過為每個像素取樣漸變來填充紋理。因此，該紋理不一定代表漸變的精確副本，因為如果沒有足夠的像素，它可能會丟失一些顏色。另見 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>` 和 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
 
 .. rst-class:: classref-reftable-group
 

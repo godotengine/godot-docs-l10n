@@ -14,7 +14,7 @@ SeparationRayShape2D
 說明
 ----
 
-A 2D ray shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape2D<class_CollisionShape2D>`. When a **SeparationRayShape2D** collides with an object, it tries to separate itself from it by moving its endpoint to the collision point. For example, a **SeparationRayShape2D** next to a character can allow it to instantly move up when touching stairs.
+2D 射線形狀，旨在用於物理。通常用來為 :ref:`CollisionShape2D<class_CollisionShape2D>` 提供形狀。\ **SeparationRayShape2D** 與某個物件發生碰撞時，會嘗試將其端點移動至碰撞點，來將自己與該物件分離。例如，角色旁邊的 **SeparationRayShape2D** 可以讓角色在接觸樓梯時立即向上移動。
 
 .. rst-class:: classref-reftable-group
 

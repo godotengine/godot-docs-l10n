@@ -14,7 +14,7 @@ Input
 說明
 ----
 
-**Input** 是處理鍵盤按鍵、滑鼠按鈕及移動、遊戲手柄、輸入動作等的單例。動作以及對應的事件可以在\ **專案 > 專案設定**\ 的\ **輸入對應**\ 分頁中設定，也可以使用 :ref:`InputMap<class_InputMap>` 類設定。
+**Input** 是處理鍵盤按鍵、滑鼠按鈕及移動、遊戲控制器、輸入動作等的單例。動作以及對應的事件可以在\ **專案 > 專案設定**\ 的\ **輸入對應**\ 分頁中設定，也可以使用 :ref:`InputMap<class_InputMap>` 類設定。
 
 \ **注意：**\ **Input** 的方法反映的是全域輸入狀態，不受 :ref:`Control.accept_event()<class_Control_method_accept_event>` 和 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 的影響，因為這兩個方法處理的是輸入在 :ref:`SceneTree<class_SceneTree>` 中傳播的方式。
 
@@ -208,7 +208,7 @@ Input
 
 **joy_connection_changed**\ (\ device\: :ref:`int<class_int>`, connected\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Input_signal_joy_connection_changed>`
 
-連接或斷開遊戲手柄裝置時觸發。
+連接或斷開遊戲控制器裝置時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -273,7 +273,7 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_MAX** = ``5``
 
-Max value of the :ref:`MouseMode<enum_Input_MouseMode>`.
+:ref:`MouseMode<enum_Input_MouseMode>` 的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ enum **CursorShape**: :ref:`🔗<enum_Input_CursorShape>`
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_IBEAM** = ``1``
 
-I 形游標。通常用於指示點擊滑鼠後文字游標的位置。
+I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 .. _class_Input_constant_CURSOR_POINTING_HAND:
 
@@ -323,7 +323,7 @@ I 形游標。通常用於指示點擊滑鼠後文字游標的位置。
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_WAIT** = ``4``
 
-Wait cursor. Indicates that the application is busy performing an operation, and that it cannot be used during the operation (e.g. something is blocking its main thread).
+等待游標。表示應用程式正忙於執行某項操作，並且它在操作期間無法使用（例如，某些東西正在阻塞其主執行緒）。
 
 .. _class_Input_constant_CURSOR_BUSY:
 
@@ -331,7 +331,7 @@ Wait cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_BUSY** = ``5``
 
-Busy cursor. Indicates that the application is busy performing an operation, and that it is still usable during the operation.
+忙碌游標。表示應用程式正忙於執行某項操作，並且它在操作期間仍然可用。
 
 .. _class_Input_constant_CURSOR_DRAG:
 
@@ -357,7 +357,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_FORBIDDEN** = ``8``
 
-禁止的游標。表示目前操作是被禁止的（例如，拖動東西時）或某個位置的控制項被禁用。
+禁止的游標。表示目前操作是被禁止的（例如，拖動東西時）或某個位置的控制項被停用。
 
 .. _class_Input_constant_CURSOR_VSIZE:
 
@@ -443,7 +443,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 - |void| **set_emulate_mouse_from_touch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emulating_mouse_from_touch**\ (\ )
 
-If ``true``, sends mouse input events when tapping or swiping on the touchscreen. See also :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`.
+如果為 ``true``\ ，則在點選或滑動觸摸屏時發送滑鼠輸入事件。另見 :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ If ``true``, sends mouse input events when tapping or swiping on the touchscreen
 - |void| **set_emulate_touch_from_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emulating_touch_from_mouse**\ (\ )
 
-If ``true``, sends touch input events when clicking or dragging the mouse. See also :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+如果為 ``true``\ ，則在點選或拖動滑鼠時發送觸摸輸入事件。另見 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ If ``true``, sends touch input events when clicking or dragging the mouse. See a
 - |void| **set_ignore_joypad_on_unfocused_application**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_joypad_on_unfocused_application**\ (\ )
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+如果為 ``true``\ ，當應用程式失去焦點時，遊戲控制器輸入（包括運動傳感器）和 LED 燈光變化將被忽略，且遊戲控制器的振動將被停止。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ If ``true``, joypad input (including motion sensors) and LED light changes will 
 - |void| **set_mouse_mode**\ (\ value\: :ref:`MouseMode<enum_Input_MouseMode>`\ )
 - :ref:`MouseMode<enum_Input_MouseMode>` **get_mouse_mode**\ (\ )
 
-Controls the mouse mode.
+控制滑鼠模式。
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ Controls the mouse mode.
 - |void| **set_use_accumulated_input**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_accumulated_input**\ (\ )
 
-如果為 ``true``\ ，則作業系統發送的相似輸入事件將被累積。當輸入累積被啟用時，在影格期間內所有生成的輸入事件，將在影格完成算繪時被合併並行出。因此，這會將每秒輸入方法被呼叫的數量限制為算繪 FPS。
+如果為 ``true``\ ，則作業系統發送的相似輸入事件將被累積。當輸入累積被啟用時，在影格期間內所有生成的輸入事件，將在影格完成渲染時被合併並行出。因此，這會將每秒輸入方法被呼叫的數量限制為渲染 FPS。
 
-輸入累積可以被禁用，以增加 CPU 使用率為代價，獲得稍微更具精確性/反應性的輸入。在需要徒手繪製線條的套用程式中，輸入累積通常應在使用者繪製線條時被禁用，以獲得與實際輸入非常接近的結果。
+輸入累積可以被停用，以增加 CPU 使用率為代價，獲得稍微更具精確性/反應性的輸入。在需要徒手繪製線條的套用程式中，輸入累積通常應在使用者繪製線條時被停用，以獲得與實際輸入非常接近的結果。
 
 \ **注意：**\ 輸入累積預設是\ *啟用的* 。
 
@@ -574,11 +574,11 @@ Controls the mouse mode.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Clears the calibration information for the specified joypad's motion sensors, if it has any and if they were calibrated.
+清除指定遊戲控制器的運動傳感器的校准資訊，僅當該控制器擁有傳感器且已完成校準時有效。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有關在項目中使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 將目前緩衝區內的所有輸入事件發送給遊戲迴圈。這些事件可能是由於累積輸入（\ :ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`\ ）或敏捷輸入更新（\ :ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`\ ）而被緩衝的結果。
 
-引擎已經會在關鍵的執行點執行此操作，至少每影格一次。然而，在你想要精確控制事件處理時間的高級情況下，這可能是有用的。
+引擎已經會在關鍵的執行點執行此操作，至少每影格一次。然而，在你想要精確控制事件處理時間的進階情況下，這可能是有用的。
 
 .. rst-class:: classref-item-separator
 
@@ -604,13 +604,13 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Vector3<class_Vector3>` **get_accelerometer**\ (\ ) |const| :ref:`🔗<class_Input_method_get_accelerometer>`
 
-Returns the acceleration in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果裝置有加速度計傳感器，則回傳該裝置加速度計傳感器的加速度，單位為 m/s²。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。\
 
-Note this method returns an empty :ref:`Vector3<class_Vector3>` when running from the editor even when your device has an accelerometer. You must export your project to a supported device to read values from the accelerometer.
+請注意，即使你的裝置具有一個加速度計，在從編輯器執行時，該方法也會回傳一個空的 :ref:`Vector3<class_Vector3>`\ 。必須將專案匯出到一個支援的裝置上，才能從加速度計讀取值。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 該方法僅適用於 Android 和 iOS。在其他平台上，它總是回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>` must be enabled.
+\ **注意：**\ 在 Android 上必須啟用 :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -636,9 +636,9 @@ Note this method returns an empty :ref:`Vector3<class_Vector3>` when running fro
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_get_action_strength>`
 
-Returns a value between 0 and 1 representing the intensity of the given action. In a joypad, for example, the further away the axis (analog sticks or L2, R2 triggers) is from the dead zone, the closer the value will be to 1. If the action is mapped to a control that has no axis such as the keyboard, the value returned will be 0 or 1.
+回傳一個介於 0 和 1 之間的值，表示給定動作的強度。例如，在遊戲控制器中，軸（模擬搖桿或 L2、R2 觸發器）離死區越遠，該值將越接近 1。如果動作被映射到一個如鍵盤一樣沒有軸的控制器時，回傳值將為 0 或 1。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
 .. rst-class:: classref-item-separator
 
@@ -650,7 +650,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`float<class_float>` **get_axis**\ (\ negative_action\: :ref:`StringName<class_StringName>`, positive_action\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Input_method_get_axis>`
 
-通過指定兩個動作來獲取軸的輸入，一個是負的，一個是正的。
+通過指定兩個動作來取得軸的輸入，一個是負的，一個是正的。
 
 這是 ``Input.get_action_strength("positive_action")-Input.get_action_strength("negative_action")`` 的簡寫。
 
@@ -664,9 +664,9 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_connected_joypads**\ (\ ) :ref:`🔗<class_Input_method_get_connected_joypads>`
 
-Returns an :ref:`Array<class_Array>` containing the device IDs of all currently connected joypads.
+回傳一個包含所有目前已連接遊戲控制器的裝置 ID 的 :ref:`Array<class_Array>` 陣列。
 
-\ **Note:** The order of connected joypads can not be guaranteed to be the same after a project and/or the editor is restarted, because Godot doesn't save the order of joypad connections. Joypads are registered in the order they are discovered by Godot.
+\ **注意：** 由於 Godot 不會儲存遊戲控制器的連接順序，因此無法保證在專案和/或編輯器重啓後，控制器的順序保持不變。遊戲控制器會按照 Godot 發現它們的順序進行注冊。
 
 .. rst-class:: classref-item-separator
 
@@ -678,7 +678,7 @@ Returns an :ref:`Array<class_Array>` containing the device IDs of all currently 
 
 :ref:`CursorShape<enum_Input_CursorShape>` **get_current_cursor_shape**\ (\ ) |const| :ref:`🔗<class_Input_method_get_current_cursor_shape>`
 
-Returns the currently assigned cursor shape.
+回傳目前指定的游標形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -690,11 +690,11 @@ Returns the currently assigned cursor shape.
 
 :ref:`Vector3<class_Vector3>` **get_gravity**\ (\ ) |const| :ref:`🔗<class_Input_method_get_gravity>`
 
-Returns the gravity in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果裝置有加速度計傳感器，則回傳該裝置有加速度計傳感器的重力，單位為 m/s²。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 該方法僅適用於 Android 和 iOS。在其他平台上，它總是回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>` must be enabled.
+\ **注意：**\ 在 Android 上必須啟用 :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -706,11 +706,11 @@ Returns the gravity in m/s² of the device's accelerometer sensor, if the device
 
 :ref:`Vector3<class_Vector3>` **get_gyroscope**\ (\ ) |const| :ref:`🔗<class_Input_method_get_gyroscope>`
 
-Returns the rotation rate in rad/s around a device's X, Y, and Z axes of the gyroscope sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果裝置有陀螺儀傳感器，則回傳圍繞裝置 X、Y、Z 軸的旋轉速率，單位為 rad/s。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 這個方法只在 Android 和 iOS 上工作。在其他平台上，總是回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>` must be enabled.
+\ **注意：**\ 在 Android 上必須啟用 :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -724,19 +724,19 @@ Returns the rotation rate in rad/s around a device's X, Y, and Z axes of the gyr
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the acceleration, including the force of gravity, in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果遊戲控制器擁有加速度計傳感器且目前已啟用，則回傳該傳感器的加速度（包含重力）數值，單位為 m/s²。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另見 :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+對於握在面前的遊戲控制器，回傳的座標軸定義如下：
 
-+X ... -X: left ... right;
++X ... -X：左 ... 右；
 
-+Y ... -Y: bottom ... top;
++Y ... -Y：下 ... 上；
 
-+Z ... -Z: farther ... closer.
++Z ... -Z：遠 ... 近。
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+重力分量的值被測量為一個長度為 ``9.8`` 的向量，方向背離地心，即負 Y 值。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 此功能僅支援 Windows、Linux 和 macOS 平台。由於作業系統限制，iOS 平台不支援讀取遊戲控制器的加速度計傳感器資料。
 
 .. rst-class:: classref-item-separator
 
@@ -748,7 +748,7 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 :ref:`float<class_float>` **get_joy_axis**\ (\ device\: :ref:`int<class_int>`, axis\: :ref:`JoyAxis<enum_@GlobalScope_JoyAxis>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_axis>`
 
-Returns the current value of the joypad axis at index ``axis``.
+回傳索引為 ``axis`` 的遊戲控制器軸的目前值。
 
 .. rst-class:: classref-item-separator
 
@@ -762,19 +762,19 @@ Returns the current value of the joypad axis at index ``axis``.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the gravity in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果遊戲控制器擁有加速度計傳感器且目前已啟用，則回傳該傳感器測得的重力值（單位為 m/s²）。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另見 :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+對於握在面前的遊戲控制器，回傳的座標軸定義如下：
 
-+X ... -X: left ... right;
++X ... -X：左 ... 右；
 
-+Y ... -Y: bottom ... top;
++Y ... -Y：下 ... 上；
 
-+Z ... -Z: farther ... closer.
++Z ... -Z：遠 ... 近。
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+重力分量的值被測量為一個長度為 ``9.8`` 的向量，方向背離地心，即負 Y 值。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 此功能僅支援 Windows、Linux 和 macOS 平台。由於作業系統限制，iOS 平台不支援讀取遊戲控制器的加速度計傳感器資料。
 
 .. rst-class:: classref-item-separator
 
@@ -786,9 +786,9 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
+在使用控制器重映射的平台上，回傳一個與 SDL 相容的裝置 GUID（例如 ``030000004c050000c405000000010000``\ ）。如果找不到，則回傳一個空字串。Godot 會利用 SDL 內建的映射規則，並結合社區貢獻的映射資料，根據這個 GUID 來確定控制器的名稱和按鍵映射。
 
-On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
+在 Windows 平台上，所有 XInput 控制器的 GUID 都會被 Godot 強制覆蓋為 ``__XINPUT_DEVICE__``\ ，因為它們的映射規則都是完全一樣的。
 
 .. rst-class:: classref-item-separator
 
@@ -802,21 +802,21 @@ On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DE
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the rotation rate in rad/s around a joypad's X, Y, and Z axes of the gyroscope sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果遊戲控制器擁有陀螺儀傳感器且目前已啟用，則回傳該傳感器圍繞控制器 X、Y、Z 軸的旋轉速率（單位為 rad/s）。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另見 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-The rotation is positive in the counter-clockwise direction.
+旋轉方向遵循逆時針為正。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+對於握在面前的遊戲控制器，回傳的座標軸定義如下：
 
-X: Angular speed around the X axis (pitch);
+X：圍繞 X 軸的角速度（俯仰）；
 
-Y: Angular speed around the Y axis (yaw);
+Y：圍繞 Y 軸的角速度（偏航）；
 
-Z: Angular speed around the Z axis (roll).
+Z：圍繞 Z 軸的角速度（翻滾）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad gyroscope and gyroscope calibration in your games.
+有關在項目中如何使用遊戲控制器陀螺儀及陀螺儀校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -828,25 +828,25 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Dictionary<class_Dictionary>` **get_joy_info**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_info>`
 
-Returns a dictionary with extra platform-specific information about the device, e.g. the raw gamepad name from the OS or the Steam Input index.
+回傳一個包含關於該裝置的額外平台特定資訊的字典，例如來自作業系統的原始控制器名稱，或者是 Steam Input 的索引。
 
-On Windows, Linux, macOS, and iOS, the dictionary contains the following fields:
+在 Windows、Linux、macOS 和 iOS 平台上，該字典包含以下欄位：
 
-\ ``raw_name``: The name of the controller as it came from the OS, before getting renamed by the controller database.
+\ ``raw_name``: 控制器在作業系統中原本的原始名稱，也就是在被控制器資料庫重新命名之前的名字。
 
-\ ``vendor_id``: The USB vendor ID of the device.
+\ ``vendor_id``: 裝置的 USB 供應商 ID。
 
-\ ``product_id``: The USB product ID of the device.
+\ ``product_id``: 裝置的 USB 產品 ID。
 
-\ ``serial_number``: The serial number of the device. This key won't be present if the serial number is unavailable.
+\ ``serial_number``: 裝置的序號。如果無法取得序號，則不會包含這個鍵。
 
-The dictionary can also include the following fields under selected platforms:
+在特定的平台上，這個字典還可能包含以下欄位：
 
-\ ``steam_input_index``: The Steam Input gamepad index (Windows, Linux, and macOS only). If the device is not a Steam Input device this key won't be present.
+\ ``steam_input_index``: Steam Input 控制器的索引（僅限 Windows、Linux 和 macOS 平台）。如果該裝置不是 Steam Input 裝置，則不會包含這個鍵。
 
-\ ``xinput_index``: The index of the controller in the XInput system (Windows only). This key won't be present for devices not handled by XInput.
+\ ``xinput_index``: XInput 系統中該控制器的索引（僅限 Windows 平台）。對於不由 XInput 處理的裝置，不會包含這個鍵。
 
-\ **Note:** The returned dictionary is always empty on Android and Web.
+\ **Note:** 在 Android 和 Web 平台上，回傳的字典永遠是空的。
 
 .. rst-class:: classref-item-separator
 
@@ -860,15 +860,15 @@ The dictionary can also include the following fields under selected platforms:
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the calibration information about the specified joypad's motion sensors in the form of a :ref:`Dictionary<class_Dictionary>`, if it has any and if they have been calibrated, otherwise returns an empty :ref:`Dictionary<class_Dictionary>`.
+如果指定的遊戲控制器擁有運動傳感器且已完成校准，則以 :ref:`Dictionary<class_Dictionary>`\ （字典）的形式回傳關於其運動傳感器的校准資訊；否則，回傳一個空的 :ref:`Dictionary<class_Dictionary>`\ 。
 
-The dictionary contains the following fields:
+該字典包含以下欄位：
 
-\ ``gyroscope_offset``: average offset in gyroscope values from :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` in rad/s.
+\ ``gyroscope_offset``\ ：陀螺儀數值相對於 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` 的平均偏移量，單位為 rad/s。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -882,9 +882,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors and they're currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果該控制器配備了運動傳感器，並且目前處於開啟狀態，則回傳該控制器運動傳感器的取樣頻率（單位為赫茲 Hz）。另請參閱 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` 方法。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：**\ 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -896,7 +896,7 @@ Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors 
 
 :ref:`String<class_String>` **get_joy_name**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_name>`
 
-返回位於指定裝置索引的遊戲手柄名稱，例如 ``PS4 Controller``\ 。Godot 使用 `SDL2 遊戲控制器資料庫 <https://github.com/gabomdq/SDL_GameControllerDB>`__\ 來確定遊戲手柄的名稱。
+返回位於指定裝置索引的遊戲控制器名稱，例如 ``PS4 Controller``\ 。Godot 使用 `SDL2 遊戲控制器資料庫 <https://github.com/gabomdq/SDL_GameControllerDB>`__\ 來確定遊戲控制器的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -908,11 +908,11 @@ Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors 
 
 :ref:`float<class_float>` **get_joy_vibration_duration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_duration>`
 
-Returns the duration of the current vibration effect in seconds.
+回傳目前振動效果的持續時間，單位為秒。
 
-\ **Note:** This method returns the same value that was passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and this value does **not** change when the joypad's vibration runs out, it only gets reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **注意：** 此方法回傳的值即為傳遞給 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 的原始數值。當遊戲控制器的振動效果結束時，該數值\ **不會**\ 自動改變，只有在呼叫 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 後才會被重設。
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+如果你想檢查遊戲控制器是否仍在振動，請改用 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns the remaining duration of the current vibration effect in seconds.
+回傳目前震動效果剩餘的持續時間（以秒為單位）。
 
 .. rst-class:: classref-item-separator
 
@@ -938,11 +938,11 @@ Returns the remaining duration of the current vibration effect in seconds.
 
 :ref:`Vector2<class_Vector2>` **get_joy_vibration_strength**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_strength>`
 
-Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
+回傳遊戲控制器振動的強度：x 分量是弱馬達的強度，y 分量是強馬達的強度。
 
-\ **Note:** This method returns the same values that were passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and these values do **not** change when the joypad's vibration runs out, they only get reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **注意：** 此方法回傳的值即為傳遞給 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 的原始數值。當遊戲控制器的振動效果結束時，這些數值\ **不會**\ 自動改變，只有在呼叫 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 後才會被重設。
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+如果你想檢查遊戲控制器是否仍在振動，請改用 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 :ref:`Vector2<class_Vector2>` **get_last_mouse_screen_velocity**\ (\ ) :ref:`🔗<class_Input_method_get_last_mouse_screen_velocity>`
 
-Returns the last mouse velocity in screen coordinates. To provide a precise and jitter-free velocity, mouse velocity is only calculated every 0.1s. Therefore, mouse velocity will lag mouse movements.
+回傳螢幕座標中上次的滑鼠速度。為了提供精確且無抖動的速度，滑鼠速度僅每 0.1 秒計算一次。因此，滑鼠速度將滯後於滑鼠移動。
 
 .. rst-class:: classref-item-separator
 
@@ -978,11 +978,11 @@ Returns the last mouse velocity in screen coordinates. To provide a precise and 
 
 :ref:`Vector3<class_Vector3>` **get_magnetometer**\ (\ ) |const| :ref:`🔗<class_Input_method_get_magnetometer>`
 
-Returns the magnetic field strength in micro-Tesla for all axes of the device's magnetometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果裝置有磁力傳感器，則回傳裝置所有軸的磁場強度，單位為微特斯拉。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 該方法僅適用於 Android 和 iOS。在其他平台上，它總是回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>` must be enabled.
+\ **注意：**\ 在 Android 上必須啟用 :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1006,9 +1006,9 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 :ref:`Vector2<class_Vector2>` **get_vector**\ (\ negative_x\: :ref:`StringName<class_StringName>`, positive_x\: :ref:`StringName<class_StringName>`, negative_y\: :ref:`StringName<class_StringName>`, positive_y\: :ref:`StringName<class_StringName>`, deadzone\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Input_method_get_vector>`
 
-通過指定正負 X 和 Y 軸的四個動作來獲取輸入向量。
+通過指定正負 X 和 Y 軸的四個動作來取得輸入向量。
 
-這個方法在獲取向量輸入時很有用，比如從操縱桿、方向盤、箭頭或 WASD。向量的長度被限制為 1，並且有一個圓形的死區，這對於使用向量輸入進行運動很有用。
+這個方法在取得向量輸入時很有用，比如從操縱桿、方向盤、箭頭或 WASD。向量的長度被限制為 1，並且有一個圓形的死區，這對於使用向量輸入進行運動很有用。
 
 預設情況下，死區根據動作死區的平均值自動計算。然而，你可以把死區覆蓋為任何你想要的值（在 0 到 1 的範圍內）。
 
@@ -1022,9 +1022,9 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+如果該控制器帶有可以改變顏色和/或亮度的 LED 指示燈，則回傳 ``true``\ （真）。另請參閱 :ref:`set_joy_light()<class_Input_method_set_joy_light>` 方法。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1038,11 +1038,11 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
+如果該控制器配備了運動傳感器（包括加速度計和陀螺儀），則回傳 ``true``\ （真）。
 
-\ **Note:** On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 受限於 iOS 系統，不支援讀取控制器的加速度計傳感器資料。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
 
 :ref:`bool<class_bool>` **has_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_vibration>`
 
-Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+如果遊戲控制器支援振動，則回傳 ``true``\ 。另見 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`\ 。
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **注意：** 對於 macOS 系統，僅在 macOS 11 及更高版本中支援振動功能。由於 macOS 的限制，當通過 USB 連接時，僅支援主流品牌的遊戲控制器（不包括 Xbox One 和 Xbox Series X/S 控制器）。
 
 .. rst-class:: classref-item-separator
 
@@ -1068,17 +1068,17 @@ Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibr
 
 :ref:`bool<class_bool>` **is_action_just_pressed**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_pressed>`
 
-Returns ``true`` when the user has *started* pressing the action event in the current frame or physics tick. It will only return ``true`` on the frame or tick that the user pressed down the button.
+當使用者在目前影格或物理週期中\ *開始*\ 按下動作事件時回傳 ``true``\ 。只在使用者按下按鈕的那一影格或週期中為 ``true``\ 。
 
-This is useful for code that needs to run only once when an action is pressed, instead of every frame while it's pressed.
+如果程式碼只需要在動作按下時執行一次，而不是只要處於按下狀態就每影格都需要執行，那麼這個方法就很有用。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* pressed. An action can be pressed and released again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **注意：**\ 回傳 ``true`` 並不意味著該動作\ *仍然*\ 處於按下狀態。動作在按下後是可以很快再釋放的，為了不丟失輸入，這種情況下仍然會回傳 ``true``\ 。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：**\ 由於鍵盤重影，即便該動作的某個鍵處於按下狀態，\ :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 仍可能會回傳 ``false``\ 。詳見文件中的\ `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
-\ **Note:** During input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`), use :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>` instead to query the action state of the current event. See also :ref:`is_action_just_pressed_by_event()<class_Input_method_is_action_just_pressed_by_event>`.
+\ **注意：**\ 在輸入處理期間（例如 :ref:`Node._input()<class_Node_private_method__input>`\ ），請使用 :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>` 來查詢目前事件的動作狀態。另見 :ref:`is_action_just_pressed_by_event()<class_Input_method_is_action_just_pressed_by_event>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1090,15 +1090,15 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_just_pressed_by_event**\ (\ action\: :ref:`StringName<class_StringName>`, event\: :ref:`InputEvent<class_InputEvent>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_pressed_by_event>`
 
-Returns ``true`` when the user has *started* pressing the action event in the current frame or physics tick, and the first event that triggered action press in the current frame/physics tick was ``event``. It will only return ``true`` on the frame or tick that the user pressed down the button.
+當使用者在目前影格或物理週期中\ *開始*\ 按下動作事件，並且在目前影格/物理週期中觸發動作按下的第一個事件是 ``event`` 時，回傳 ``true``\ 。只在使用者按下按鈕的那一影格或週期中為 ``true``\ 。
 
-This is useful for code that needs to run only once when an action is pressed, and the action is processed during input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`).
+如果程式碼只需要在動作按下時執行一次，並且該動作在輸入處理期間（例如 :ref:`Node._input()<class_Node_private_method__input>`\ ）進行處理，那麼這個方法就很有用。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* pressed. An action can be pressed and released again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **注意：**\ 回傳 ``true`` 並不意味著該動作\ *仍然*\ 處於按下狀態。動作在按下後是可以很快再釋放的，為了不丟失輸入，這種情況下仍然會回傳 ``true``\ 。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：**\ 由於鍵盤重影，即便該動作的某個鍵處於按下狀態，\ :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 仍可能會回傳 ``false``\ 。詳見文件中的\ `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1110,13 +1110,13 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_just_released**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_released>`
 
-Returns ``true`` when the user *stops* pressing the action event in the current frame or physics tick. It will only return ``true`` on the frame or tick that the user releases the button.
+當使用者在目前影格或物理週期中\ *停止*\ 按下動作事件時回傳 ``true``\ 。只在使用者松開按鈕的那一影格或週期中為 ``true``\ 。
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* not pressed. An action can be released and pressed again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **注意：**\ 回傳 ``true`` 並不意味著該動作\ *仍然*\ 處於松開狀態。動作在松開後是可以很快再按下的，為了不丟失輸入，這種情況下仍然會回傳 ``true``\ 。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** During input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`), use :ref:`InputEvent.is_action_released()<class_InputEvent_method_is_action_released>` instead to query the action state of the current event. See also :ref:`is_action_just_released_by_event()<class_Input_method_is_action_just_released_by_event>`.
+\ **注意：**\ 在輸入處理期間（例如 :ref:`Node._input()<class_Node_private_method__input>`\ ），請使用 :ref:`InputEvent.is_action_released()<class_InputEvent_method_is_action_released>` 來查詢目前事件的動作狀態。另見 :ref:`is_action_just_released_by_event()<class_Input_method_is_action_just_released_by_event>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1128,13 +1128,13 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_just_released_by_event**\ (\ action\: :ref:`StringName<class_StringName>`, event\: :ref:`InputEvent<class_InputEvent>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_released_by_event>`
 
-Returns ``true`` when the user *stops* pressing the action event in the current frame or physics tick, and the first event that triggered action release in the current frame/physics tick was ``event``. It will only return ``true`` on the frame or tick that the user releases the button.
+當使用者在目前影格或物理週期中\ *停止*\ 按下動作事件，並且在目前影格/物理週期中觸發動作松開的第一個事件是 ``event`` 時，回傳 ``true``\ 。只在使用者松開按鈕的那一影格或週期中為 ``true``\ 。
 
-This is useful when an action is processed during input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`).
+當在輸入處理期間（例如 :ref:`Node._input()<class_Node_private_method__input>`\ ）處理動作時這很有用。
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* not pressed. An action can be released and pressed again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **注意：**\ 回傳 ``true`` 並不意味著該動作\ *仍然*\ 處於松開狀態。動作在松開後是可以很快再按下的，為了不丟失輸入，這種情況下仍然會回傳 ``true``\ 。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1146,11 +1146,11 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_pressed**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_pressed>`
 
-Returns ``true`` if you are pressing the action event.
+如果正在按下操作事件，則回傳 ``true``\ 。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 為 ``false``\ ，則它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：**\ 由於鍵盤重影，\ :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` 可能會回傳 ``false``\ ，即使動作的某個鍵被按下時也是如此。有關詳細資訊，請參閱文件中的 `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1162,7 +1162,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_anything_pressed**\ (\ ) |const| :ref:`🔗<class_Input_method_is_anything_pressed>`
 
-如果任何動作、按鍵、遊戲手柄按鈕、或滑鼠按鈕正被按下，則返回 ``true``\ 。如果動作是通過呼叫 :ref:`action_press()<class_Input_method_action_press>` 以通過程式碼來模擬，該方法也將返回 ``true``\ 。
+如果任何動作、按鍵、遊戲控制器按鈕、或滑鼠按鈕正被按下，則返回 ``true``\ 。如果動作是通過呼叫 :ref:`action_press()<class_Input_method_action_press>` 以通過程式碼來模擬，該方法也將返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_joy_button_pressed**\ (\ device\: :ref:`int<class_int>`, button\: :ref:`JoyButton<enum_@GlobalScope_JoyButton>`\ ) |const| :ref:`🔗<class_Input_method_is_joy_button_pressed>`
 
-Returns ``true`` if you are pressing the joypad button at index ``button``.
+如果你目前正按著控制器上索引為 ``button`` 的按鍵，則回傳 ``true``\ （真）。
 
-\ **Note:** If you want to check if a joypad button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想檢測控制器按鍵是不是剛剛被按下（也就是按下的那一瞬間），請使用 Godot 的輸入動作系統，配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法；或者像下面這樣，改用 :ref:`Node._input()<class_Node_private_method__input>` 方法來處理：
 
 
 .. tabs::
@@ -1209,7 +1209,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_joy_known**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_is_joy_known>`
 
-如果系統知道指定的裝置，則返回 ``true``\ 。這意味著它設定了所有按鈕和軸索引。未知的遊戲手柄預計不會配對這些常數，但仍然可以從中檢索事件。
+如果系統知道指定的裝置，則返回 ``true``\ 。這意味著它設定了所有按鈕和軸索引。未知的遊戲控制器預計不會配對這些常數，但仍然可以從中檢索事件。
 
 .. rst-class:: classref-item-separator
 
@@ -1223,11 +1223,11 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns ``true`` if the joypad's motion sensors have been calibrated.
+如果該控制器的運動傳感器已經完成了校准，則回傳 ``true``\ （真）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想瞭解如何在你的遊戲中使用控制器運動傳感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的範例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1241,11 +1241,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns ``true`` if the joypad's motion sensors are currently being calibrated.
+如果該控制器的運動傳感器目前正在進行校准，則回傳 ``true``\ （真）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想瞭解如何在你的遊戲中使用控制器運動傳感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的範例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1259,11 +1259,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns ``true`` if the requested joypad has motion sensors (accelerometer and gyroscope) and they are currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` and :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
+如果請求的遊戲控制器擁有運動傳感器（加速度計和陀螺儀）且目前已啟用，則回傳 ``true``\ 。另見 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` 和 :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`\ 。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1277,9 +1277,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Returns ``true`` if the joypad is still vibrating after a call to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+如果在呼叫 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 後，遊戲控制器仍在振動，則回傳 ``true``\ 。
 
-Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, this method returns ``false`` after the joypad's vibration runs out.
+與 :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` 和 :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>` 不同，當遊戲控制器的振動結束後，此方法會回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1291,9 +1291,9 @@ Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_s
 
 :ref:`bool<class_bool>` **is_key_label_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_label_pressed>`
 
-Returns ``true`` if you are pressing the key with the ``keycode`` printed on it. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant or any Unicode character code.
+如果正在按下鍵盤上印有 ``keycode`` 標籤的鍵，則回傳 ``true``\ 。你可以傳遞一個 :ref:`Key<enum_@GlobalScope_Key>` 常數或任何 Unicode 字元編碼。
 
-\ **Note:** If you want to check if a key was just pressed by using its label, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通過按鍵的標籤（Label）來檢查該鍵是否剛剛被按下，應使用 Godot 的輸入動作系統配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>`\ ，或者像下面這樣改用 :ref:`Node._input()<class_Node_private_method__input>` 方法：
 
 
 .. tabs::
@@ -1326,13 +1326,13 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
 
 :ref:`bool<class_bool>` **is_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_pressed>`
 
-Returns ``true`` if you are pressing the Latin key in the current keyboard layout. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+如果你目前正按著目前鍵盤版面配置下的某個拉丁字母鍵，則回傳 ``true``\ （真）。你可以傳入一個 :ref:`Key<enum_@GlobalScope_Key>` 列舉常數。
 
-\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+在非遊戲類的應用程式中，才推薦使用 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 而不是 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`\ 。這是因為非遊戲應用中的鍵盤快捷鍵通常取決於使用者的鍵盤版面配置，這樣能確保快捷鍵在不同版面配置下都能按預期工作。如果你不確定該用哪個，那就直接用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 吧。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：** 由於鍵盤“按鍵衝突”（ghosting）現象的存在，即使你按下了某個操作對應的按鍵，\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 也可能會回傳 ``false``\ 。想瞭解更多資訊，可以查看文件中的 `輸入範例 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
-\ **Note:** If you want to check if a key was just pressed by using its keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通過按鍵碼（keycode）來檢測某個鍵是不是剛剛被按下，請使用 Godot 的輸入動作系統配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面這樣改用 :ref:`Node._input()<class_Node_private_method__input>` 方法來處理：
 
 
 .. tabs::
@@ -1365,9 +1365,9 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
 :ref:`bool<class_bool>` **is_mouse_button_pressed**\ (\ button\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ ) |const| :ref:`🔗<class_Input_method_is_mouse_button_pressed>`
 
-Returns ``true`` if you are pressing the mouse button specified with :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
+如果你目前正按著 :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 列舉中指定的滑鼠按鍵，則回傳 ``true``\ （真）。
 
-\ **Note:** If you want to check if a mouse button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想檢測滑鼠按鍵是不是剛剛被按下（也就是按下的那一瞬間），請使用 Godot 的輸入動作系統配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面這樣改用 :ref:`Node._input()<class_Node_private_method__input>` 方法來處理：
 
 
 .. tabs::
@@ -1400,13 +1400,13 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
 
 :ref:`bool<class_bool>` **is_physical_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_physical_key_pressed>`
 
-Returns ``true`` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+如果你目前正按著 101/102 鍵美式 QWERTY 鍵盤上的某個物理按鍵，則回傳 ``true``\ （真）。你可以傳入一個 :ref:`Key<enum_@GlobalScope_Key>` 列舉常數。
 
-\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` for in-game actions, as it will make :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+對於遊戲內的操作，推薦使用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 而不是 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>`\ 。因為使用物理按鍵檢測，無論使用者是甚麼鍵盤版面配置，都能確保 :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` 的版面配置正常工作。同時，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 也能確保鍵盤最上方那一排數字鍵在任何鍵盤版面配置下都能正常響應。如果你不確定該用哪個，那就直接用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 吧。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：** 由於鍵盤“按鍵衝突”（ghosting）現象的存在，即使你按下了某個操作對應的按鍵，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 也可能會回傳 ``false``\ 。想瞭解更多資訊，可以查看文件中的 `輸入範例 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
-\ **Note:** If you want to check if a key was just pressed by using its physical keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通過物理按鍵碼（physical keycode）來檢測某個鍵是不是剛剛被按下，請使用 Godot 的輸入動作系統配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面這樣改用 :ref:`Node._input()<class_Node_private_method__input>` 方法來處理：
 
 
 .. tabs::
@@ -1439,7 +1439,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 |void| **parse_input_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Input_method_parse_input_event>`
 
-Feeds an :ref:`InputEvent<class_InputEvent>` to the game. Can be used to artificially trigger input events from code. Also generates :ref:`Node._input()<class_Node_private_method__input>` calls.
+向遊戲提供一個 :ref:`InputEvent<class_InputEvent>`\ 。可用於通過程式碼人為地觸發輸入事件。也會產生 :ref:`Node._input()<class_Node_private_method__input>` 呼叫。
 
 
 .. tabs::
@@ -1460,7 +1460,7 @@ Feeds an :ref:`InputEvent<class_InputEvent>` to the game. Can be used to artific
 
 
 
-\ **Note:** Calling this function has no influence on the operating system. So for example sending an :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` will not move the OS mouse cursor to the specified position (use :ref:`warp_mouse()<class_Input_method_warp_mouse>` instead) and sending :kbd:`Alt/Cmd + Tab` as :ref:`InputEventKey<class_InputEventKey>` won't toggle between active windows.
+\ **注意：**\ 呼叫該函式不會影響作業系統。因此，發送 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 事件並不會將作業系統的滑鼠游標移動到指定位置（請改用 :ref:`warp_mouse()<class_Input_method_warp_mouse>`\ ），發送 :kbd:`Alt/Cmd + Tab` 對應的 :ref:`InputEventKey<class_InputEventKey>` 也不會觸發目前視窗的切換。
 
 .. rst-class:: classref-item-separator
 
@@ -1472,9 +1472,9 @@ Feeds an :ref:`InputEvent<class_InputEvent>` to the game. Can be used to artific
 
 |void| **remove_joy_mapping**\ (\ guid\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Input_method_remove_joy_mapping>`
 
-Removes all mappings from the internal database that match the given GUID. All currently connected joypads that use this GUID will become unmapped.
+在內部資料庫中移除所有與給定 GUID 匹配的映射。所有目前連接的使用該 GUID 的遊戲控制器將變為未映射狀態。
 
-On Android, Godot will map to an internal fallback mapping.
+在 Android 上，Godot 將映射到一個內部的回退映射。
 
 .. rst-class:: classref-item-separator
 
@@ -1500,17 +1500,17 @@ On Android, Godot will map to an internal fallback mapping.
 
 |void| **set_custom_mouse_cursor**\ (\ image\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_Input_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_Input_method_set_custom_mouse_cursor>`
 
-Sets a custom mouse cursor image, which is only visible inside the game window, for the given mouse ``shape``. The hotspot can also be specified. Passing ``null`` to the image parameter resets to the system cursor.
+為指定的游標形狀 ``shape`` 設定自訂滑鼠游標影像，該影像僅在遊戲視窗內可見。還可以指定熱點。將 ``null`` 傳遞給 image 參數將重設為系統游標。
 
-\ ``image`` can be either :ref:`Texture2D<class_Texture2D>` or :ref:`Image<class_Image>` and its size must be lower than or equal to 256×256. To avoid rendering issues, sizes lower than or equal to 128×128 are recommended.
+\ ``image`` 可以是 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Image<class_Image>`\ ，其大小必須小於等於 256×256。為了避免渲染問題，建議使用小於等於 128×128 的大小。
 
-\ ``hotspot`` must be within ``image``'s size.
+\ ``hotspot`` 必須在 ``image`` 的大小範圍內。
 
-\ **Note:** :ref:`AnimatedTexture<class_AnimatedTexture>`\ s aren't supported as custom mouse cursors. If using an :ref:`AnimatedTexture<class_AnimatedTexture>`, only the first frame will be displayed.
+\ **注意：**\ 不支援使用 :ref:`AnimatedTexture<class_AnimatedTexture>` 作為自訂滑鼠游標。如果使用 :ref:`AnimatedTexture<class_AnimatedTexture>`\ ，則只會顯示第一影格。
 
-\ **Note:** The **Lossless**, **Lossy** or **Uncompressed** compression modes are recommended. The **Video RAM** compression mode can be used, but it will be decompressed on the CPU, which means loading times are slowed down and no memory is saved compared to lossless modes.
+\ **注意：**\ 推薦使用 **Lossless**\ 、\ **Lossy** 或 **Uncompressed** 壓縮模式。\ **Video RAM** 壓縮模式也可以，但會使用 CPU 解壓，拖慢載入，相對於無損模式也並不節省記憶體。
 
-\ **Note:** On the web platform, the maximum allowed cursor image size is 128×128. Cursor images larger than 32×32 will also only be displayed if the mouse cursor image is entirely located within the page for `security reasons <https://chromestatus.com/feature/5825971391299584>`__.
+\ **注意：**\ 在網路平台上，游標影像允許的最大尺寸為 128×128。 出於\ `安全原因 <https://chromestatus.com/feature/5825971391299584>`__\ ，只有當滑鼠游標影像完全位於頁面內時，大於 32×32 的游標影像才會顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -1522,7 +1522,7 @@ Sets a custom mouse cursor image, which is only visible inside the game window, 
 
 |void| **set_default_cursor_shape**\ (\ shape\: :ref:`CursorShape<enum_Input_CursorShape>` = 0\ ) :ref:`🔗<class_Input_method_set_default_cursor_shape>`
 
-設定該視口中使用的預設游標形狀，而不是 :ref:`CURSOR_ARROW<class_Input_constant_CURSOR_ARROW>`\ 。
+設定該視埠中使用的預設游標形狀，而不是 :ref:`CURSOR_ARROW<class_Input_constant_CURSOR_ARROW>`\ 。
 
 \ **注意：**\ 如果要更改 :ref:`Control<class_Control>` 節點的預設游標形狀，請改用 :ref:`Control.mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`\ 。
 
@@ -1566,11 +1566,11 @@ Sets a custom mouse cursor image, which is only visible inside the game window, 
 
 |void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+如果該控制器配備了 LED 指示燈，則將其設定為指定的顏色。另請參閱 :ref:`has_joy_light()<class_Input_method_has_joy_light>` 方法。
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **注意：** 無法從控制器直接取得目前燈光的顏色。如果你需要知道目前設定的顏色，請自行將其單獨儲存起來。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1584,11 +1584,11 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Sets the specified joypad's calibration information. See also :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
+設定指定遊戲控制器的校准資訊。另見 :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`\ 。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1602,13 +1602,13 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Enables or disables the motion sensors (accelerometer and gyroscope), if available, on the specified joypad.
+啟用或停用指定遊戲控制器上的運動傳感器（加速度計和陀螺儀），如果該裝置支援的話。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-It's recommended to disable the motion sensors when they're no longer being used, because otherwise it might drain the controller battery faster.
+建議在不再使用運動傳感器時將其停用，因為否則可能會導致控制器電池消耗得更快。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1650,11 +1650,11 @@ It's recommended to disable the motion sensors when they're no longer being used
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Starts the process of calibrating the specified joypad's gyroscope, if it has one.
+啟動對指定遊戲控制器陀螺儀的校准過程（如果該控制器具備陀螺儀）。
 
-Once a joypad's gyroscope has been calibrated correctly (e.g. laying still on a table without being rotated), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` will return values close or equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` when the joypad is not being rotated.
+一旦遊戲控制器的陀螺儀被正確校准（例如，將其靜止放置在桌面上且未發生旋轉），當控制器未被轉動時，\ :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` 將回傳接近或等於 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` 的值。
 
-Here's an example of how to use joypad gyroscope and gyroscope calibration in your games:
+以下是在遊戲中使用遊戲控制器陀螺儀及陀螺儀校准的範例：
 
 
 .. tabs::
@@ -1758,9 +1758,9 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 
 
-\ **Note:** Accelerometer sensor doesn't usually require calibration.
+\ **注意：** 加速度計傳感器通常不需要校准。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1772,21 +1772,21 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 |void| **start_joy_vibration**\ (\ device\: :ref:`int<class_int>`, weak_magnitude\: :ref:`float<class_float>`, strong_magnitude\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Input_method_start_joy_vibration>`
 
-Starts to vibrate the joypad. See also :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
+開始讓控制器震動。另請參閱 :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` 和 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` 方法。
 
-Joypads usually come with two rumble motors, a strong and a weak one.
+控制器通常配有兩個震動馬達：一個強力馬達和一個弱力馬達。
 
-\ ``weak_magnitude`` is the strength of the weak motor (between ``0.0`` and ``1.0``).
+\ ``weak_magnitude`` 是弱力馬達的強度（取值範圍在 ``0.0`` 到 ``1.0`` 之間）。
 
-\ ``strong_magnitude`` is the strength of the strong motor (between ``0.0`` and ``1.0``).
+\ ``strong_magnitude`` 是強力馬達的強度（取值範圍在 ``0.0`` 到 ``1.0`` 之間）。
 
-\ ``duration`` is the duration of the effect in seconds (a duration of ``0.0`` will try to play the vibration as long as possible, which is about 65 seconds).
+\ ``duration`` 是震動效果的持續時間，單位為秒（如果將持續時間設為 ``0.0``\ ，系統會盡可能長時間地播放震動，大約能持續 65 秒）。
 
-The vibration can be stopped early by calling :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+你可以通過呼叫 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 來提前停止震動。
 
-See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
+另請參閱 :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` 和 :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`\ 。
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **注意：** 在 macOS 平台上，僅 macOS 11 及更高版本支援震動功能。當通過 USB 連接時，受限於 macOS 的系統限制，僅主流品牌的控制器支援震動（Xbox One 和 Xbox Series X/S 控制器除外）。
 
 .. rst-class:: classref-item-separator
 
@@ -1800,11 +1800,11 @@ See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-Stops the calibration process of the specified joypad's motion sensors.
+停止指定控制器運動傳感器的校准過程。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想瞭解如何在你的遊戲中使用控制器運動傳感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的範例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
 
 .. rst-class:: classref-item-separator
 
@@ -1816,7 +1816,7 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 |void| **stop_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_stop_joy_vibration>`
 
-停止使用 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 啟動的遊戲手柄的振動。
+停止使用 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 啟動的遊戲控制器的振動。
 
 .. rst-class:: classref-item-separator
 
@@ -1828,21 +1828,21 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 |void| **vibrate_handheld**\ (\ duration_ms\: :ref:`int<class_int>` = 500, amplitude\: :ref:`float<class_float>` = -1.0\ ) :ref:`🔗<class_Input_method_vibrate_handheld>`
 
-Vibrate the handheld device for the specified duration in milliseconds.
+讓手持裝置（比如手機）按照指定的毫秒數進行震動。
 
-\ ``amplitude`` is the strength of the vibration, as a value between ``0.0`` and ``1.0``. If set to ``-1.0``, the default vibration strength of the device is used.
+\ ``amplitude`` 是震動的強度，取值範圍在 ``0.0`` 到 ``1.0`` 之間。如果設定為 ``-1.0``\ ，則會使用裝置預設的震動強度。
 
-\ **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
+\ **注意：** 該方法僅在 Android、iOS 和 Web 平台上有效，在其他平台上沒有任何效果。
 
-\ **Note:** For Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` requires enabling the ``VIBRATE`` permission in the export preset. Otherwise, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` will have no effect.
+\ **注意：** 在 Android 平台上，\ :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 需要在匯出預設中開啟 ``VIBRATE`` 權限，否則 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 不會生效。
 
-\ **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
+\ **注意：** 在 iOS 平台上，僅 iOS 13 及更高版本支援指定震動時長。
 
-\ **Note:** For Web, the amplitude cannot be changed.
+\ **注意：** 在 Web 平台上，無法更改震動幅度（即 amplitude 參數無效）。
 
-\ **Note:** Some web browsers such as Safari and Firefox for Android do not support :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
+\ **注意：** 部分網頁瀏覽器（如 Safari 和 Firefox for Android）不支援 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`\ 。
 
-\ **Note:** Device settings such as vibration on/off, "do not disturb" mode or specific haptic feedback on/off may prevent :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` effects.
+\ **注意：** 裝置的系統設定（例如震動開關、勿擾模式或特定的觸感回饋開關）可能會阻止 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 產生效果。
 
 .. rst-class:: classref-item-separator
 

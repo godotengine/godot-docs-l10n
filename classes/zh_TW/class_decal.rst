@@ -21,13 +21,13 @@ Decal
 
 裝飾由一個 :ref:`AABB<class_AABB>` 和一組用於指定 :ref:`Color<class_Color>`\ 、法線、ORM（環境光遮蔽、粗糙度、金屬度）和自發光的 :ref:`Texture2D<class_Texture2D>` 組成。裝飾在其 :ref:`AABB<class_AABB>` 內投影，因此改變裝飾的朝向會影響它們投影的方向。預設情況下，裝飾向下投影（即從正 Y 到負 Y）。
 
-與裝飾關聯的 :ref:`Texture2D<class_Texture2D>` 會自動儲存在用於繪製裝飾的紋理合集中，因此可以一次繪制所有裝飾。Godot 使用集群裝飾，這意味著裝飾是儲存在集群資料中的，會在繪製網格時繪製，而不是作為後期處理效果在此之後進行繪製。
+與裝飾關聯的 :ref:`Texture2D<class_Texture2D>` 會自動儲存在用於繪製裝飾的紋理合集中，因此可以一次繪製所有裝飾。Godot 使用集群裝飾，這意味著裝飾是儲存在集群資料中的，會在繪製網格時繪製，而不是作為後期處理效果在此之後進行繪製。
 
 \ **注意：**\ 裝飾不會影響底層材質的透明度，無論其透明度模式如何（Alpha 混合、Alpha 剪切、Alpha 雜湊、不透明預通）。這意味著材質的半透明或透明區域將保持半透明或透明，即使在其上套用不透明裝飾也是如此。
 
-\ **注意：**\ 裝飾僅在支援 Forward+ 和 Mobile 算繪方式，不支援 Compatibility。使用 Mobile 算繪方式時，每個網格資源上最多只能顯示 8 個裝飾。嘗試在單個網格資源上顯示超過 8 個裝飾，將導致裝飾隨著相機移動而閃爍。
+\ **注意：**\ 裝飾僅在支援 Forward+ 和 Mobile 渲染方式，不支援 Compatibility。使用 Mobile 渲染方式時，每個網格資源上最多只能顯示 8 個裝飾。嘗試在單個網格資源上顯示超過 8 個裝飾，將導致裝飾隨著相機移動而閃爍。
 
-\ **注意：**\ 當使用 Mobile 算繪方式時，裝飾只會正確影響其可視 AABB 與該裝飾的 AABB 相交的網格。如果使用著色器變形網格，使其超出網格自身的 AABB，則必須增大網格上的 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。否則，裝飾可能在該網格上不可見。
+\ **注意：**\ 當使用 Mobile 渲染方式時，裝飾只會正確影響其可視 AABB 與該裝飾的 AABB 相交的網格。如果使用著色器變形網格，使其超出網格自身的 AABB，則必須增大網格上的 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。否則，裝飾可能在該網格上不可見。
 
 .. rst-class:: classref-reftable-group
 
@@ -209,7 +209,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_enable_distance_fade**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distance_fade_enabled**\ (\ )
 
-如果為 ``true``\ ，裝飾會在遠離活動的 :ref:`Camera3D<class_Camera3D>` 時平滑地淡出，從 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` 開始。該裝飾將在 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>` 處消失，之後就會被剔除，根本不會發送到著色器。請使用這個選項來減少場景中啟動裝飾的數量，從而提高性能。
+如果為 ``true``\ ，裝飾會在遠離活動的 :ref:`Camera3D<class_Camera3D>` 時平滑地淡出，從 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` 開始。該裝飾將在 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>` 處消失，之後就會被剔除，根本不會發送到著色器。請使用這個選項來減少場景中啟動裝飾的數量，從而提高效能。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 如果裝飾的 :ref:`AABB<class_AABB>` 與目標表面之間的角度變得過大，則淡出裝飾。值為 ``0`` 時在投影裝飾會忽略角度，值為 ``1`` 時會將裝飾限制到幾乎垂直的表面。
 
-\ **注意：**\ 將 :ref:`normal_fade<class_Decal_property_normal_fade>` 設定為大於 ``0.0`` 的值會有較小的性能成本，因為增加了法線角度計算。
+\ **注意：**\ 將 :ref:`normal_fade<class_Decal_property_normal_fade>` 設定為大於 ``0.0`` 的值會有較小的效能成本，因為增加了法線角度計算。
 
 .. rst-class:: classref-item-separator
 
@@ -391,13 +391,13 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
+:ref:`Texture2D<class_Texture2D>`\ （2D紋理），用於儲存貼花的環境光遮蔽（AO）、粗糙度和金屬度。你可以用它來為貼花增添額外的細節。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：** 與 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 不同（它的過濾模式可以針對每個材質單獨調整），\ **Decal** 貼花紋理的過濾模式是在 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 中進行全域設定的。
 
-\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+\ **注意：** 單獨設定這張紋理並不會顯示出可見的貼花，因為 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ （反照率紋理）也必須同時設定。如果你想建立一個純 ORM 貼花（即只改變表面質感，不改變顏色），請將一張反照率紋理載入到 :ref:`texture_albedo<class_Decal_property_texture_albedo>` 中，並將 :ref:`albedo_mix<class_Decal_property_albedo_mix>`\ （反照率混合度）設定為 ``0.0``\ 。此時，反照率紋理的 Alpha 通道將用於決定底層表面的 ORM 貼圖在哪些區域被覆蓋（以及覆蓋的強度）。
 
-\ **Note:** Due to technical limitations, modifying the underlying surface's roughness using :ref:`texture_orm<class_Decal_property_texture_orm>` does *not* affect screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), reflections from :ref:`VoxelGI<class_VoxelGI>`, and reflections from SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Only reflections from :ref:`ReflectionProbe<class_ReflectionProbe>`\ s are affected.
+\ **注意：** 由於技術限制，通過 :ref:`texture_orm<class_Decal_property_texture_orm>` 修改底層表面的粗糙度，\ *不會* 影響螢幕空間反射（\ :ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`\ ）、來自 :ref:`VoxelGI<class_VoxelGI>` 的反射以及來自 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）的反射。只有來自 :ref:`ReflectionProbe<class_ReflectionProbe>`\ （反射探針）的反射會受到影響。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_upper_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_upper_fade**\ (\ )
 
-設定該裝飾的淡出曲線，表示隨著表面遠離 :ref:`AABB<class_AABB>` 中心而逐漸淡出。僅正值有效（負值將被限制到 ``0.0``\ ）。另見 :ref:`upper_fade<class_Decal_property_upper_fade>`\ 。
+設定該裝飾的淡出曲線，表示隨著表面遠離 :ref:`AABB<class_AABB>` 中心而逐漸淡出。僅正值有效（負值將被限制到 ``0.0``\ ）。另見 :ref:`lower_fade<class_Decal_property_lower_fade>`\ 。
 
 .. rst-class:: classref-section-separator
 

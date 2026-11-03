@@ -16,7 +16,7 @@ MeshInstance3D
 說明
 ----
 
-MeshInstance3D is a node that takes a :ref:`Mesh<class_Mesh>` resource and adds it to the current scenario by creating an instance of it. This is the class most often used to render 3D geometry and can be used to instance a single :ref:`Mesh<class_Mesh>` in many places. This allows reusing geometry, which can save on resources. When a :ref:`Mesh<class_Mesh>` has to be instantiated more than thousands of times at close proximity, consider using a :ref:`MultiMesh<class_MultiMesh>` in a :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` instead.
+MeshInstance3D 節點接受 :ref:`Mesh<class_Mesh>` 資源，會為該網格建立一個實例並將該實例新增到目前的場景中。最常用於渲染 3D 幾何體，可以將單個 :ref:`Mesh<class_Mesh>` 在不同的地方實例化。這樣就能夠實現幾何體的復用，從而節省資源。如果需要在比較集中的區域內將某個 :ref:`Mesh<class_Mesh>` 實例化超過幾千次，請考慮改為在 :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` 中使用 :ref:`MultiMesh<class_MultiMesh>`\ 。
 
 .. rst-class:: classref-introduction-group
 
@@ -124,9 +124,9 @@ MeshInstance3D is a node that takes a :ref:`Mesh<class_Mesh>` resource and adds 
 - |void| **set_skeleton_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_skeleton_path**\ (\ )
 
-:ref:`NodePath<class_NodePath>` to the :ref:`Skeleton3D<class_Skeleton3D>` associated with the instance.
+指向與該實例關聯的 :ref:`Skeleton3D<class_Skeleton3D>` 的 :ref:`NodePath<class_NodePath>`\ 。
 
-\ **Note:** The default value of this property has changed in Godot 4.6. Enable :ref:`ProjectSettings.animation/compatibility/default_parent_skeleton_in_mesh_instance_3d<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>` if the old behavior is needed for compatibility.
+\ **注意：**\ 該屬性的預設值在 Godot 4.6 中已更改。如果需要舊版行為以確保相容性，請啟用 :ref:`ProjectSettings.animation/compatibility/default_parent_skeleton_in_mesh_instance_3d<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -160,9 +160,9 @@ MeshInstance3D is a node that takes a :ref:`Mesh<class_Mesh>` resource and adds 
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_mesh_from_current_blend_shape_mix**\ (\ existing\: :ref:`ArrayMesh<class_ArrayMesh>` = null\ ) :ref:`🔗<class_MeshInstance3D_method_bake_mesh_from_current_blend_shape_mix>`
 
-Takes a snapshot from the current :ref:`ArrayMesh<class_ArrayMesh>` with all blend shapes applied according to their current weights and bakes it to the provided ``existing`` mesh. If no ``existing`` mesh is provided a new :ref:`ArrayMesh<class_ArrayMesh>` is created, baked and returned. Mesh surface materials are not copied.
+根據目前權重從目前 :ref:`ArrayMesh<class_ArrayMesh>` 中取得所有混合形狀的快照，並將其烘焙到提供的 ``existing`` 網格中。如果未提供 ``existing`` 網格，則將建立一個新的 :ref:`ArrayMesh<class_ArrayMesh>`\ ，然後烘焙並回傳。不會複製網格表面材質。
 
-\ **Performance:** :ref:`Mesh<class_Mesh>` data needs to be received from the GPU, stalling the :ref:`RenderingServer<class_RenderingServer>` in the process.
+\ **效能：**\ 需要從 GPU 接收 :ref:`Mesh<class_Mesh>` 資料，從而在該過程中拖延了 :ref:`RenderingServer<class_RenderingServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ Takes a snapshot from the current :ref:`ArrayMesh<class_ArrayMesh>` with all ble
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_mesh_from_current_skeleton_pose**\ (\ existing\: :ref:`ArrayMesh<class_ArrayMesh>` = null\ ) :ref:`🔗<class_MeshInstance3D_method_bake_mesh_from_current_skeleton_pose>`
 
-Takes a snapshot of the current animated skeleton pose of the skinned mesh and bakes it to the provided ``existing`` mesh. If no ``existing`` mesh is provided a new :ref:`ArrayMesh<class_ArrayMesh>` is created, baked, and returned. Requires a skeleton with a registered skin to work. Blendshapes are ignored. Mesh surface materials are not copied.
+對蒙皮網格的目前動畫骨架姿勢進行快照，將其烘焙至已有的 ``existing`` 網格。如果未提供 ``existing`` 網格，則會新建一個 :ref:`ArrayMesh<class_ArrayMesh>` 進行烘焙並回傳。骨架需要注冊皮膚才能正常工作。會忽略混合形狀。不會複製網格表面材質。
 
-\ **Performance:** :ref:`Mesh<class_Mesh>` data needs to be retrieved from the GPU, stalling the :ref:`RenderingServer<class_RenderingServer>` in the process.
+\ **效能：**\ :ref:`Mesh<class_Mesh>` 資料需要從 GPU 取得，過程中會讓 :ref:`RenderingServer<class_RenderingServer>` 產生停頓。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Takes a snapshot of the current animated skeleton pose of the skinned mesh and b
 
 如果 ``clean`` 為 ``true``\ （預設值），則重複的頂點和內部頂點會被自動移除。如果不需要，可以將其設定為 ``false``\ ，以加快處理速度。
 
-如果 ``simplify`` 為 ``true``\ ，則該幾何體可以進一步被簡化以減少頂點的數量。預設情況下是禁用的。
+如果 ``simplify`` 為 ``true``\ ，則該幾何體可以進一步被簡化以減少頂點的數量。預設情況下是停用的。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Takes a snapshot of the current animated skeleton pose of the skinned mesh and b
 
 :ref:`SkinReference<class_SkinReference>` **get_skin_reference**\ (\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_skin_reference>`
 
-Returns the internal :ref:`SkinReference<class_SkinReference>` containing the skeleton's :ref:`RID<class_RID>` attached to this RID. See also :ref:`Resource.get_rid()<class_Resource_method_get_rid>`, :ref:`SkinReference.get_skeleton()<class_SkinReference_method_get_skeleton>`, and :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`.
+回傳包含附加到該 RID 的骨架的 :ref:`RID<class_RID>` 的內部 :ref:`SkinReference<class_SkinReference>`\ 。另見 :ref:`Resource.get_rid()<class_Resource_method_get_rid>`\ 、\ :ref:`SkinReference.get_skeleton()<class_SkinReference_method_get_skeleton>` 和 :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns the internal :ref:`SkinReference<class_SkinReference>` containing the sk
 
 :ref:`int<class_int>` **get_surface_override_material_count**\ (\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_surface_override_material_count>`
 
-返回表面覆蓋材質的數量。相當於 :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>`\ 。
+回傳表面覆蓋材質的數量。相當於 :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>`\ 。另見 :ref:`get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Returns the internal :ref:`SkinReference<class_SkinReference>` containing the sk
 
 |void| **set_surface_override_material**\ (\ surface\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_MeshInstance3D_method_set_surface_override_material>`
 
-Sets the override ``material`` for the specified ``surface`` of the :ref:`Mesh<class_Mesh>` resource. This material is associated with this **MeshInstance3D** rather than with :ref:`mesh<class_MeshInstance3D_property_mesh>`.
+設定 :ref:`Mesh<class_Mesh>` 資源的指定 ``surface`` 的覆蓋 ``material``\ 。該材質與該 **MeshInstance3D** 關聯，而不是與 :ref:`mesh<class_MeshInstance3D_property_mesh>` 關聯。
 
-\ **Note:** This assigns the :ref:`Material<class_Material>` associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the :ref:`Mesh<class_Mesh>` resource. To set the material within the :ref:`Mesh<class_Mesh>` resource, use :ref:`Mesh.surface_set_material()<class_Mesh_method_surface_set_material>` instead.
+\ **注意：**\ 這將分配與 **MeshInstance3D** 的表面材質覆蓋屬性關聯的 :ref:`Material<class_Material>`\ ，而不是 :ref:`Mesh<class_Mesh>` 資源內的材質。要在 :ref:`Mesh<class_Mesh>` 資源中設定材質，請改用 :ref:`Mesh.surface_set_material()<class_Mesh_method_surface_set_material>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

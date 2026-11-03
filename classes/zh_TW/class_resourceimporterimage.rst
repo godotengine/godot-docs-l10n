@@ -7,21 +7,21 @@ ResourceImporterImage
 
 **繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports an image for use in scripting, with no rendering capabilities.
+匯入影像供腳本使用，不具有渲染功能。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-此匯入器匯入 :ref:`Image<class_Image>` 資源，而不是 :ref:`CompressedTexture2D<class_CompressedTexture2D>`\ 。如果需要以 2D 或 3D 形式算繪圖像，請改用 :ref:`ResourceImporterTexture<class_ResourceImporterTexture>`\ 。
+此匯入器匯入 :ref:`Image<class_Image>` 資源，而不是 :ref:`CompressedTexture2D<class_CompressedTexture2D>`\ 。如果需要以 2D 或 3D 形式渲染影像，請改用 :ref:`ResourceImporterTexture<class_ResourceImporterTexture>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`匯入影像 <../tutorials/assets_pipeline/importing_images>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

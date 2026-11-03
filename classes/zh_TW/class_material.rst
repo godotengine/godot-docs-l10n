@@ -9,16 +9,16 @@ Material
 
 **被繼承：** :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BlitMaterial<class_BlitMaterial>`, :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`, :ref:`FogMaterial<class_FogMaterial>`, :ref:`PanoramaSkyMaterial<class_PanoramaSkyMaterial>`, :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`, :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`, :ref:`PlaceholderMaterial<class_PlaceholderMaterial>`, :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, :ref:`ShaderMaterial<class_ShaderMaterial>`
 
-Virtual base class for applying visual properties to an object, such as color and roughness.
+用於將如顏色、粗糙度等視覺屬性套用至物件的虛擬基底類別。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**Material** is a base resource used for coloring and shading geometry. All materials inherit from it and almost all :ref:`VisualInstance3D<class_VisualInstance3D>` derived nodes carry a **Material**. A few flags and parameters are shared between all material types and are configured here.
+**Material** 即材質，是一種基礎資源，能夠為幾何體著色。所有的材質都繼承自它，幾乎所有從 :ref:`VisualInstance3D<class_VisualInstance3D>` 派生的節點都帶有 **Material**\ 。有一些標誌和參數是在所有材質型別之間共享的，可以在這裡進行設定。
 
-Importantly, you can inherit from **Material** to create your own custom material type in script or in GDExtension.
+重要的是，你可以繼承 **Material** 以在腳本或 GDExtension 中建立你自己的自訂材質型別。
 
 .. rst-class:: classref-introduction-group
 
@@ -110,11 +110,11 @@ Importantly, you can inherit from **Material** to create your own custom materia
 - |void| **set_next_pass**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_next_pass**\ (\ )
 
-Sets the **Material** to be used for the next pass. This renders the object again using a different material.
+設定下一階段使用的 **Material**\ 。這將使用不同的材質再次渲染物件。
 
-\ **Note:** :ref:`next_pass<class_Material_property_next_pass>` materials are not necessarily drawn immediately after the source **Material**. Draw order is determined by material properties, :ref:`render_priority<class_Material_property_render_priority>`, and distance to camera.
+\ **注意：**\ :ref:`next_pass<class_Material_property_next_pass>` 材質不一定是緊接在源 **Material** 之後繪製的。繪製順序由材質屬性、\ :ref:`render_priority<class_Material_property_render_priority>` 和到相機的距離決定。
 
-\ **Note:** This only applies to :ref:`StandardMaterial3D<class_StandardMaterial3D>`\ s and :ref:`ShaderMaterial<class_ShaderMaterial>`\ s with type "Spatial".
+\ **注意：**\ 僅適用於 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 和“Spatial”型別的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ Sets the **Material** to be used for the next pass. This renders the object agai
 - |void| **set_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_render_priority**\ (\ )
 
-Sets the render priority for objects in 3D scenes. Higher priority objects will be sorted in front of lower priority objects. In other words, all objects with :ref:`render_priority<class_Material_property_render_priority>` ``1`` will render on top of all objects with :ref:`render_priority<class_Material_property_render_priority>` ``0``.
+設定 3D 場景中物體的渲染優先級。優先級高的物體將被排序在優先級低的物體前面。換句話說，所有具有 :ref:`render_priority<class_Material_property_render_priority>` ``1`` 的物件，將在所有具有 :ref:`render_priority<class_Material_property_render_priority>` ``0`` 的物件之上渲染。
 
-\ **Note:** This only applies to :ref:`StandardMaterial3D<class_StandardMaterial3D>`\ s and :ref:`ShaderMaterial<class_ShaderMaterial>`\ s with type "Spatial".
+\ **注意：**\ 僅適用於 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 和“Spatial”型別的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
-\ **Note:** This will not impact how transparent objects are sorted relative to opaque objects or how dynamic meshes will be sorted relative to other opaque meshes. This is because all transparent objects are drawn after all opaque objects and all dynamic opaque meshes are drawn before other opaque meshes.
+\ **注意：**\ 這不會影響透明物件相對於不透明物件的排序方式，或動態網格體相對於其他不透明網格體的排序方式。這是因為所有透明物件都是在所有不透明物件之後繪製的，並且所有動態不透明網格都是在其他不透明網格之前繪製的。
 
 .. rst-class:: classref-section-separator
 
@@ -152,7 +152,7 @@ Sets the render priority for objects in 3D scenes. Higher priority objects will 
 
 :ref:`bool<class_bool>` **_can_do_next_pass**\ (\ ) |virtual| |const| :ref:`🔗<class_Material_private_method__can_do_next_pass>`
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if :ref:`next_pass<class_Material_property_next_pass>` should be shown in the editor or not.
+僅出於覆蓋目的而暴露。你不能直接呼叫該函式。在內部用於確定 :ref:`next_pass<class_Material_property_next_pass>` 是否應顯示在編輯器中。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Only exposed for the purpose of overriding. You cannot call this function direct
 
 :ref:`bool<class_bool>` **_can_use_render_priority**\ (\ ) |virtual| |const| :ref:`🔗<class_Material_private_method__can_use_render_priority>`
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally to determine if :ref:`render_priority<class_Material_property_render_priority>` should be shown in the editor or not.
+僅出於覆蓋目的而暴露。你不能直接呼叫該函式。在內部用於確定 :ref:`render_priority<class_Material_property_render_priority>` 是否應顯示在編輯器中。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Only exposed for the purpose of overriding. You cannot call this function direct
 
 :ref:`Mode<enum_Shader_Mode>` **_get_shader_mode**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Material_private_method__get_shader_mode>`
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally by various editor tools.
+僅出於覆蓋目的而暴露。你不能直接呼叫該函式。由各種編輯器工具內部使用。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Only exposed for the purpose of overriding. You cannot call this function direct
 
 :ref:`RID<class_RID>` **_get_shader_rid**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Material_private_method__get_shader_rid>`
 
-Only exposed for the purpose of overriding. You cannot call this function directly. Used internally by various editor tools. Used to access the RID of the **Material**'s :ref:`Shader<class_Shader>`.
+僅出於覆蓋目的而暴露。你不能直接呼叫該函式。由各種編輯器工具內部使用。用於存取 **Material** 的 :ref:`Shader<class_Shader>` 的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Only exposed for the purpose of overriding. You cannot call this function direct
 
 |void| **inspect_native_shader_code**\ (\ ) :ref:`🔗<class_Material_method_inspect_native_shader_code>`
 
-Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also :ref:`Shader.inspect_native_shader_code()<class_Shader_method_inspect_native_shader_code>`.
+僅在編輯器中執行時可用。打開一個彈出視窗顯示生成的著色器程式碼，包括所有變體和內部著色器程式碼。另見 :ref:`Shader.inspect_native_shader_code()<class_Shader_method_inspect_native_shader_code>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

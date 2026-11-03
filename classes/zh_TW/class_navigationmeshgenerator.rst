@@ -16,15 +16,15 @@ NavigationMeshGenerator
 說明
 ----
 
-This class is responsible for creating and clearing 3D navigation meshes used as :ref:`NavigationMesh<class_NavigationMesh>` resources inside :ref:`NavigationRegion3D<class_NavigationRegion3D>`. The **NavigationMeshGenerator** has very limited to no use for 2D as the navigation mesh baking process expects 3D node types and 3D source geometry to parse.
+該類負責建立和清除用作 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 內的 :ref:`NavigationMesh<class_NavigationMesh>` 資源的 3D 導覽網格。\ **NavigationMeshGenerator** 在 2D 中的用途非常有限，因為導覽網格烘焙過程需要 3D 節點型別和 3D 源幾何體來解析。
 
-The entire navigation mesh baking is best done in a separate thread as the voxelization, collision tests and mesh optimization steps involved are very slow and performance-intensive operations.
+整個導覽網格的烘焙最好在單獨的執行緒中完成，因為所涉及的體素化、碰撞測試和網格最佳化步驟是非常緩慢且效能密集型的操作。
 
-Navigation mesh baking happens in multiple steps and the result depends on 3D source geometry and properties of the :ref:`NavigationMesh<class_NavigationMesh>` resource. In the first step, starting from a root node and depending on :ref:`NavigationMesh<class_NavigationMesh>` properties all valid 3D source geometry nodes are collected from the :ref:`SceneTree<class_SceneTree>`. Second, all collected nodes are parsed for their relevant 3D geometry data and a combined 3D mesh is build. Due to the many different types of parsable objects, from normal :ref:`MeshInstance3D<class_MeshInstance3D>`\ s to :ref:`CSGShape3D<class_CSGShape3D>`\ s or various :ref:`CollisionObject3D<class_CollisionObject3D>`\ s, some operations to collect geometry data can trigger :ref:`RenderingServer<class_RenderingServer>` and :ref:`PhysicsServer3D<class_PhysicsServer3D>` synchronizations. Server synchronization can have a negative effect on baking time or framerate as it often involves :ref:`Mutex<class_Mutex>` locking for thread security. Many parsable objects and the continuous synchronization with other threaded Servers can increase the baking time significantly. On the other hand only a few but very large and complex objects will take some time to prepare for the Servers which can noticeably stall the next frame render. As a general rule the total number of parsable objects and their individual size and complexity should be balanced to avoid framerate issues or very long baking times. The combined mesh is then passed to the Recast Navigation Object to test the source geometry for walkable terrain suitable to :ref:`NavigationMesh<class_NavigationMesh>` agent properties by creating a voxel world around the meshes bounding area.
+導覽網格的烘焙分成若干步進行，最終結果取決於 :ref:`NavigationMesh<class_NavigationMesh>` 資源的 3D 源幾何體和該資源的屬性。第一步是從根節點開始，並根據 :ref:`NavigationMesh<class_NavigationMesh>` 的屬性從 :ref:`SceneTree<class_SceneTree>` 收集所有有效的 3D 源幾何體節點。第二步會對所有收集的節點進行解析，以獲得其相關的 3D 幾何體資料，合併構造成一個 3D 網格。由於可解析的物件型別眾多，從普通的 :ref:`MeshInstance3D<class_MeshInstance3D>` 到 :ref:`CSGShape3D<class_CSGShape3D>` 再到各種 :ref:`CollisionObject3D<class_CollisionObject3D>`\ ，其中某些收集幾何資料的操作可能會觸發 :ref:`RenderingServer<class_RenderingServer>` 和 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 的同步。伺服器同步通常涉及 :ref:`Mutex<class_Mutex>` 鎖定以確保執行緒安全，這會對烘焙時間或影格率產生負面影響。可解析物件過多，以及與多執行緒伺服器之間的連續同步，都會大幅影響烘焙時間。而如果物件數量較少，但都是非常大而且複雜的物件，那麼就會在為伺服器準備資料上花費時間，這可能會明顯拖延下一影格渲染。一般而言，可解析物件的總數與它們各自的大小和複雜度之間應該達到平衡，防止出現影格率問題和超長的烘焙時間。合併後的網格後續會被交給 Recast 導航物件，通過在網格的包圍區域周邊建立體素世界，來測試適合 :ref:`NavigationMesh<class_NavigationMesh>` 代理屬性的可行走地形的源幾何體。
 
-The finalized navigation mesh is then returned and stored inside the :ref:`NavigationMesh<class_NavigationMesh>` for use as a resource inside :ref:`NavigationRegion3D<class_NavigationRegion3D>` nodes.
+最終的導覽網格然後將被回傳並被儲存在 :ref:`NavigationMesh<class_NavigationMesh>` 中，用作 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 節點內的資源。
 
-\ **Note:** Using meshes to not only define walkable surfaces but also obstruct navigation baking does not always work. The navigation baking has no concept of what is a geometry "inside" when dealing with mesh source geometry and this is intentional. Depending on current baking parameters, as soon as the obstructing mesh is large enough to fit a navigation mesh area inside, the baking will generate navigation mesh areas that are inside the obstructing source geometry mesh.
+\ **注意：**\ 使用網格不僅定義可行走的表面的導航烘焙，而且定義障礙的導航烘焙，並不總會有效。在處理網格源幾何體時，導航烘焙沒有甚麼是幾何體“位於內部”的概念，這是有意為之的。根據目前的烘焙參數，一旦障礙網格足夠大，大到足以在內部容納一個導覽網格區域，則烘焙時將生成位於障礙源幾何體網格內部的導覽網格區域。
 
 .. rst-class:: classref-introduction-group
 
@@ -68,7 +68,7 @@ The finalized navigation mesh is then returned and stored inside the :ref:`Navig
 
 **已棄用：** This method is deprecated due to core threading changes. To upgrade existing code, first create a :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>` resource. Use this resource with :ref:`parse_source_geometry_data()<class_NavigationMeshGenerator_method_parse_source_geometry_data>` to parse the :ref:`SceneTree<class_SceneTree>` for nodes that should contribute to the navigation mesh baking. The :ref:`SceneTree<class_SceneTree>` parsing needs to happen on the main thread. After the parsing is finished use the resource with :ref:`bake_from_source_geometry_data()<class_NavigationMeshGenerator_method_bake_from_source_geometry_data>` to bake a navigation mesh.
 
-Bakes the ``navigation_mesh`` with source geometry collected starting from the ``root_node``.
+使用從 ``root_node`` 開始收集的源幾何圖形來烘焙 ``navigation_mesh``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ Bakes the ``navigation_mesh`` with source geometry collected starting from the `
 
 \ **注意：**\ 因為 SceneTree 並不是執行緒安全的，所以這個函式需要在主執行緒執行或使用延遲呼叫。
 
-\ **注意：**\ 從 :ref:`Mesh<class_Mesh>` 資源讀取資料陣列雖然很方便，但會對影格率造成負面影響。這些資料需要從 GPU 獲取，卡住正在處理的 :ref:`RenderingServer<class_RenderingServer>`\ 。出於性能考量，請優先使用碰撞形狀或在程式碼中建立完整的資料陣列等方法。
+\ **注意：**\ 從 :ref:`Mesh<class_Mesh>` 資源讀取資料陣列雖然很方便，但會對影格率造成負面影響。這些資料需要從 GPU 取得，卡住正在處理的 :ref:`RenderingServer<class_RenderingServer>`\ 。出於效能考量，請優先使用碰撞形狀或在程式碼中建立完整的資料陣列等方法。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

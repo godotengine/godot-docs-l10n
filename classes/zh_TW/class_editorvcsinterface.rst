@@ -134,7 +134,7 @@ enum **ChangeType**: :ref:`🔗<enum_EditorVCSInterface_ChangeType>`
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_RENAMED** = ``2``
 
-先前新增的檔已被重命名。
+先前新增的檔已被重新命名。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_DELETED:
 
@@ -209,7 +209,7 @@ enum **TreeArea**: :ref:`🔗<enum_EditorVCSInterface_TreeArea>`
 
 :ref:`bool<class_bool>` **_allow_amends**\ (\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__allow_amends>`
 
-Returns whether or not the plugin allows commit amends.
+回傳該外掛是否允許對提交進行修正（amend）。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Returns whether or not the plugin allows commit amends.
 
 |void| **_commit**\ (\ msg\: :ref:`String<class_String>`, amend\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__commit>`
 
-Commits the currently staged changes and applies the commit ``msg`` to the resulting commit. If ``amend`` is ``true`` the commit will modify the most recent commit instead.
+提交目前已暫存（staged）的更改，並將參數 ``msg`` 作為提交資訊套用至生成的提交記錄中。如果參數 ``amend`` 為 ``true``\ ，則該操作將會修改最近一次的提交記錄（而不是生成一個新的提交）。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **_fetch**\ (\ remote\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__fetch>`
 
-從遠程倉庫 ``remote`` 中抓取新修改，但不將修改寫入目前工作目錄。相當於 ``git fetch``\ 。
+從遠端倉庫 ``remote`` 中抓取新修改，但不將修改寫入目前工作目錄。相當於 ``git fetch``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **_get_branch_list**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_branch_list>`
 
-獲取 :ref:`String<class_String>` 字串的 :ref:`Array<class_Array>` 陣列實例，包含在 VCS 中可用的分支名稱。
+取得 :ref:`String<class_String>` 字串的 :ref:`Array<class_Array>` 陣列實例，包含在 VCS 中可用的分支名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 :ref:`String<class_String>` **_get_current_branch_name**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_current_branch_name>`
 
-獲取 VCS 中定義的目前分支名稱。
+取得 VCS 中定義的目前分支名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **_pull**\ (\ remote\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__pull>`
 
-從遠程倉庫拉取修改。這可能會導致合併衝突。
+從遠端倉庫拉取修改。這可能會導致合併衝突。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **_push**\ (\ remote\: :ref:`String<class_String>`, force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__push>`
 
-將修改推送至遠程倉庫 ``remote``\ 。如果 ``force`` 為 ``true``\ ，則會進行強制推送，覆蓋遠端倉庫中現有的修改歷史。
+將修改推送至遠端倉庫 ``remote``\ 。如果 ``force`` 為 ``true``\ ，則會進行強制推送，覆蓋遠端倉庫中現有的修改歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **_unstage_file**\ (\ file_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__unstage_file>`
 
-將位於 ``file_path`` 的檔從暫存區撤銷到未暫存區。
+將位於 ``file_path`` 的檔從暫存區復原到未暫存區。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 :ref:`Dictionary<class_Dictionary>` **create_commit**\ (\ msg\: :ref:`String<class_String>`, author\: :ref:`String<class_String>`, id\: :ref:`String<class_String>`, unix_timestamp\: :ref:`int<class_int>`, offset_minutes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_commit>`
 
-輔助函式， 用於建立一個提交 :ref:`Dictionary<class_Dictionary>` 項。\ ``msg`` 是該提交的提交消息。\ ``author`` 是單個人類可讀的字串，包含所有作者的詳細資訊，例如 VCS 中配置的電子郵件和名稱。無論 VCS 可能以哪種格式為提交提供識別字，\ ``id`` 是該提交的識別字。\ ``unix_timestamp`` 是該提交被建立時的 UTC Unix 時間戳記。\ ``offset_minutes`` 是該提交建立時目前系統時區的偏移量，單位為分鐘。
+輔助函式， 用於建立一個提交 :ref:`Dictionary<class_Dictionary>` 項。\ ``msg`` 是該提交的提交訊息。\ ``author`` 是單個人類可讀的字串，包含所有作者的詳細資訊，例如 VCS 中配置的電子郵件和名稱。無論 VCS 可能以哪種格式為提交提供識別字，\ ``id`` 是該提交的識別字。\ ``unix_timestamp`` 是該提交被建立時的 UTC Unix 時間戳記。\ ``offset_minutes`` 是該提交建立時目前系統時區的偏移量，單位為分鐘。
 
 .. rst-class:: classref-item-separator
 
@@ -581,7 +581,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **popup_error**\ (\ msg\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorVCSInterface_method_popup_error>`
 
-在編輯器中彈出一條錯誤消息，顯示為來自底層 VCS。使用它來顯示 VCS 特定的錯誤消息。
+在編輯器中彈出一條錯誤訊息，顯示為來自底層 VCS。使用它來顯示 VCS 特定的錯誤訊息。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -146,7 +146,7 @@ If ``true``, the frame will be tinted with the color specified in :ref:`tint_col
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The title of the node.
+Le titre du nœud.
 
 .. rst-class:: classref-section-separator
 

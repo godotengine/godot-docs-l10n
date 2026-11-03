@@ -23,7 +23,7 @@ VehicleWheel3D
 教程
 ----
 
-- `3D 货车镇演示 <https://godotengine.org/asset-library/asset/2752>`__
+- `3D 货车镇演示 <https://store.godotengine.org/asset/godot-foundation/truck-town-demo/>`__
 
 .. rst-class:: classref-reftable-group
 

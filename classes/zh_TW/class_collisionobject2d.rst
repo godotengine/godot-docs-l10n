@@ -141,7 +141,7 @@ CollisionObject2D
 
 當滑鼠指標進入該物件的任何形狀時發出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。請注意，在單個 **CollisionObject2D** 中的不同形狀之間移動，不會導致發出該訊號。
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject2D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject2D** 與所討論的 **CollisionObject2D** 重疊，則也可能不會發出該信號。
+\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject2D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject2D** 與所討論的 **CollisionObject2D** 重疊，則也可能不會發出該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ CollisionObject2D
 
 當滑鼠指標離開該物件的所有形狀時發出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。請注意，在單個 **CollisionObject2D** 中的不同形狀之間移動，不會導致發出該訊號。
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject2D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject2D** 與所討論的 **CollisionObject2D** 重疊，則也可能不會發出該信號。
+\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject2D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject2D** 與所討論的 **CollisionObject2D** 重疊，則也可能不會發出該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 - |void| **set_disable_mode**\ (\ value\: :ref:`DisableMode<enum_CollisionObject2D_DisableMode>`\ )
 - :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **get_disable_mode**\ (\ )
 
-Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+定義 :ref:`Node.process_mode<class_Node_property_process_mode>` 為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時的物理行為。
 
 .. rst-class:: classref-item-separator
 
@@ -333,9 +333,9 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 
 |void| **_input_event**\ (\ viewport\: :ref:`Viewport<class_Viewport>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__input_event>`
 
-Accepts unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``shape_idx`` is the child index of the clicked :ref:`Shape2D<class_Shape2D>`. Connect to :ref:`input_event<class_CollisionObject2D_signal_input_event>` to easily pick up these events.
+接收未處理的 :ref:`InputEvent<class_InputEvent>`\ 。\ ``shape_idx`` 是被點選的 :ref:`Shape2D<class_Shape2D>` 的子索引。連接到 :ref:`input_event<class_CollisionObject2D_signal_input_event>` 即可輕鬆取得這些事件。
 
-\ **Note:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
+\ **注意：**\ :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` 要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 為 ``true``\ ，並且至少要設定一個 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Accepts unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``shape_idx`` is the c
 
 :ref:`Vector2<class_Vector2>` **get_shape_owner_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_shape_owner_one_way_collision_direction>`
 
-Returns the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id``.
+回傳由給定 ``owner_id`` 標識的形狀所有者的 ``one_way_collision_direction``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 :ref:`bool<class_bool>` **is_shape_owner_disabled**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_is_shape_owner_disabled>`
 
-如果為 ``true``\ ，則禁用形狀所有者及其形狀。
+如果為 ``true``\ ，則停用形狀所有者及其形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +647,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 |void| **shape_owner_set_disabled**\ (\ owner_id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_disabled>`
 
-如果為 ``true``\ ，則禁用給定的形狀所有者。
+如果為 ``true``\ ，則停用給定的形狀所有者。
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 |void| **shape_owner_set_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`, direction\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_one_way_collision_direction>`
 
-Sets the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id`` to ``direction``.
+將由給定 ``owner_id`` 標識的形狀所有者的 ``one_way_collision_direction`` 設定為 ``direction``\ 。
 
 .. rst-class:: classref-item-separator
 

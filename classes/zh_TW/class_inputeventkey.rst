@@ -95,9 +95,9 @@ InputEventKey
 - |void| **set_echo**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_echo**\ (\ )
 
-If ``true``, the key was already pressed before this event. An echo event is a repeated key event sent when the user is holding down the key.
+如果為 ``true``\ ，則表示在該事件之前已按下該鍵。回顯事件是使用者按住該鍵時發送的重複按鍵事件。
 
-\ **Note:** The rate at which echo events are sent is typically around 20 events per second (after holding down the key for roughly half a second). However, the key repeat delay/speed can be changed by the user or disabled entirely in the operating system settings. To ensure your project works correctly on all configurations, do not assume the user has a specific key repeat configuration in your project's behavior.
+\ **注意：**\ 發送回顯事件的速率通常約為每秒 20 個事件（按住按鍵約半秒鐘後）。但是，在作業系統設定中，按鍵重複延遲/速度可被使用者修改或者完全停用。為確保你的專案在所有設定下都能正常工作，請不要假設使用者在專案行為中具有特定的按鍵重複設定。
 
 .. rst-class:: classref-item-separator
 
@@ -114,11 +114,11 @@ If ``true``, the key was already pressed before this event. An echo event is a r
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
+表示目前鍵盤版面配置中印在鍵上的在地化標籤，對應於 :ref:`Key<enum_@GlobalScope_Key>` 常數之一或任何有效的 Unicode 字元。按鍵標籤用於按鍵提示。
 
-For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
+對於鍵上只有一個標籤的鍵盤版面配置，它等同於 :ref:`keycode<class_InputEventKey_property_keycode>`\ 。
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
+要獲得 **InputEventKey** 的人類可讀表示，請使用 ``OS.get_keycode_string(event.key_label)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
 
 .. code:: text
 
@@ -142,15 +142,15 @@ To get a human-readable representation of the **InputEventKey**, use ``OS.get_ke
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
+目前鍵盤版面配置中鍵上輸出的拉丁標籤，對應於 :ref:`Key<enum_@GlobalScope_Key>` 常數之一。鍵碼用於表示使用標準拉丁鍵盤的快捷鍵，例如 :kbd:`Ctrl + S` 表示“儲存”快捷鍵。
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
+要獲得 **InputEventKey** 的人類可讀表示，請使用 ``OS.get_keycode_string(event.keycode)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
 
 .. code:: text
 
     +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
+    | Q   | | Q   | - "Q" - 鍵碼
+    |   Й | |  ض | - "Й" 和 "ض" - key_label
     +-----+ +-----+
 
 .. rst-class:: classref-item-separator
@@ -168,7 +168,7 @@ To get a human-readable representation of the **InputEventKey**, use ``OS.get_ke
 - |void| **set_location**\ (\ value\: :ref:`KeyLocation<enum_@GlobalScope_KeyLocation>`\ )
 - :ref:`KeyLocation<enum_@GlobalScope_KeyLocation>` **get_location**\ (\ )
 
-Represents the location of a key which has both left and right versions, such as :kbd:`Shift` or :kbd:`Alt`.
+表示具有左右版本的鍵的位置，例如 :kbd:`Shift` 和 :kbd:`Alt`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ Represents the location of a key which has both left and right versions, such as
 - |void| **set_physical_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_physical_keycode**\ (\ )
 
-Represents the physical location of a key on the 101/102-key US QWERTY keyboard, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Physical key codes meant for game input, such as WASD movement, where only the location of the keys is important.
+代表按鍵在 101/102 鍵的美式鍵盤上的物理位置，對應一個 :ref:`Key<enum_@GlobalScope_Key>` 常數。用於遊戲輸入的物理鍵碼，例如 WASD 移動鍵，其中只有按鍵的位置很重要。
 
-To get a human-readable representation of the **InputEventKey**, use :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` in combination with :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` or :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>`:
+要取得 **InputEventKey** 的人類可讀表示，請搭配使用 :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` 和 :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` 或 :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>` 方法：
 
 
 .. tabs::
@@ -248,9 +248,9 @@ To get a human-readable representation of the **InputEventKey**, use :ref:`OS.ge
 - |void| **set_unicode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_unicode**\ (\ )
 
-The key Unicode character code (when relevant), shifted by modifier keys. Unicode character codes for composite characters and complex scripts may not be available unless IME input mode is active. See :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>` for more information. Unicode character codes are meant for text input.
+按鍵 Unicode 字元程式碼（當相關時），由修飾鍵進行調整。除非 IME 輸入模式處於活動狀態，否則復合字元和複雜文字的 Unicode 字元程式碼可能不可用。有關詳細資訊，請參閱 :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>`\ 。Unicode 字元碼用於文字輸入。
 
-\ **Note:** This property is set by the engine only for a pressed event. If the event is sent by an IME or a virtual keyboard, no corresponding key released event is sent.
+\ **注意：**\ 該屬性由引擎設定僅用於按下事件。如果事件是由 IME 或虛擬鍵盤發送的，則不會發送相應的按鍵釋放事件。
 
 .. rst-class:: classref-section-separator
 
@@ -291,7 +291,7 @@ The key Unicode character code (when relevant), shifted by modifier keys. Unicod
 
 :ref:`String<class_String>` **as_text_location**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_location>`
 
-Returns a :ref:`String<class_String>` representation of the event's :ref:`location<class_InputEventKey_property_location>`. This will be a blank string if the event is not specific to a location.
+回傳事件的 :ref:`location<class_InputEventKey_property_location>` 的 :ref:`String<class_String>` 表示形式。如果該事件不特定於某個位置，則這將是一個空白字串。
 
 .. rst-class:: classref-item-separator
 

@@ -150,11 +150,11 @@ RandomNumberGenerator — это класс для генерации псевд
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a non-negative floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+Возвращает случайное целое число от ``0`` до размера массива, переданного в качестве параметра. Каждое значение в массиве должно быть неотрицательным числом с плавающей запятой, представляющим относительную вероятность того, что оно будет возвращено в качестве индекса. Более высокое значение означает, что значение с большей вероятностью будет возвращено в качестве индекса, в то время как значение ``0`` означает, что оно никогда не будет возвращено в качестве индекса.
 
-For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+Например, если в качестве параметра передан ``[0.5, 1, 1, 2]``, то вероятность возврата ``3`` (индекс значения ``2``) в два раза выше, а вероятность возврата ``0`` (индекс значения ``0.5``) в два раза ниже по сравнению с индексами ``1`` и ``2``.
 
-Prints an error and returns ``-1`` if the array is empty or contains any negative values.
+Выводит ошибку и возвращает ``-1``, если массив пуст или содержит отрицательные значения.
 
 
 .. tabs::
@@ -166,8 +166,8 @@ Prints an error and returns ``-1`` if the array is empty or contains any negativ
     var my_array = ["one", "two", "three", "four"]
     var weights = PackedFloat32Array([0.5, 1, 1, 2])
 
-    # Prints one of the four elements in `my_array`.
-    # It is more likely to print "four", and less likely to print "one".
+    # Выводит один из четырех элементов массива `my_array`.
+    # Вероятнее всего, будет напечатано "four", и менее вероятно — "one".
     print(my_array[rng.rand_weighted(weights)])
 
 

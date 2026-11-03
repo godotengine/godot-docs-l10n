@@ -16,7 +16,7 @@ Texture2D
 說明
 ----
 
-紋理的工作原理是在影片硬體中註冊圖像，該圖像在註冊後就可以在 3D 模型、2D :ref:`Sprite2D<class_Sprite2D>`\ 、GUI :ref:`Control<class_Control>` 中使用。
+紋理的工作原理是在影片硬體中註冊影像，該影像在註冊後就可以在 3D 模型、2D :ref:`Sprite2D<class_Sprite2D>`\ 、GUI :ref:`Control<class_Control>` 中使用。
 
 紋理通常是通過從檔中載入來建立的。見 :ref:`@GDScript.load()<class_@GDScript_method_load>`\ 。
 
@@ -97,7 +97,7 @@ Texture2D
 
 當請求在 :ref:`CanvasItem<class_CanvasItem>` 上繪製整個 **Texture2D** 時呼叫，左上角的偏移量由 ``pos`` 指定。\ ``modulate`` 指定繪製顏色的乘數，\ ``transpose`` 指定繪製是否應按列主順序而不是行主循序執行（會導致順時針旋轉 90 度）。
 
-\ **注意：**\ 僅用於 2D 算繪，不用於 3D。
+\ **注意：**\ 僅用於 2D 渲染，不用於 3D。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Texture2D
 
 請求將 **Texture2D** 繪製到 :ref:`CanvasItem<class_CanvasItem>` 的指定 ``rect`` 上時呼叫。\ ``modulate`` 指定的是繪製時顏色的乘數，而 ``transpose`` 指定的是繪製時是否使用列優先順序，而不是使用行優先順序（產生順時針 90 度旋轉）。
 
-\ **注意：**\ 僅在 2D 算繪時使用，3D 不使用。
+\ **注意：**\ 僅在 2D 渲染時使用，3D 不使用。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Texture2D
 
 請求將 **Texture2D** 由 ``src_rect`` 的座標指定的部分繪製到 :ref:`CanvasItem<class_CanvasItem>` 的指定 ``rect`` 上時呼叫。\ ``modulate`` 指定的是繪製時顏色的乘數，而 ``transpose`` 指定的是繪製時是否使用列優先順序，而不是使用行優先順序（產生順時針 90 度旋轉）。
 
-\ **注意：**\ 僅在 2D 算繪時使用，3D 不使用。
+\ **注意：**\ 僅在 2D 渲染時使用，3D 不使用。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Texture2D
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_format>`
 
-Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
+當呼叫 :ref:`get_format()<class_Texture2D_method_get_format>` 時，此方法會被觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
 
 :ref:`Image<class_Image>` **_get_image**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_image>`
 
-Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
+當呼叫 :ref:`get_image()<class_Texture2D_method_get_image>` 時，此方法會被觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
 
 :ref:`int<class_int>` **_get_mipmap_count**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_mipmap_count>`
 
-Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` is called.
+當呼叫 :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` 時，此方法會被觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` i
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__has_mipmaps>`
 
-Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
+當呼叫 :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` 時，此方法會被觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_format>`
 
-Returns the image format of the texture.
+回該紋理的影像格式。
 
 .. rst-class:: classref-item-separator
 
@@ -305,11 +305,11 @@ Returns the image format of the texture.
 
 :ref:`Image<class_Image>` **get_image**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_image>`
 
-Returns an :ref:`Image<class_Image>` that is a copy of data from this **Texture2D** (a new :ref:`Image<class_Image>` is created each time). :ref:`Image<class_Image>`\ s can be accessed and manipulated directly.
+回傳一個 :ref:`Image<class_Image>`\ ，該物件是這個 **Texture2D** 中資料的副本（每次都會新建一個 :ref:`Image<class_Image>`\ ）。可以直接存取並操作 :ref:`Image<class_Image>`\ 。
 
-\ **Note:** This will return ``null`` if this **Texture2D** is invalid.
+\ **注意：**\ 如果該 **Texture2D** 無效，則會回傳 ``null``\ 。
 
-\ **Note:** This will fetch the texture data from the GPU, which might cause performance problems when overused. Avoid calling :ref:`get_image()<class_Texture2D_method_get_image>` every frame, especially on large textures.
+\ **注意：**\ 這個函式會從 GPU 取得紋理資料，過度使用可能會引起效能問題。請避免每一影格都呼叫 :ref:`get_image()<class_Texture2D_method_get_image>`\ ，尤其是大型紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Returns an :ref:`Image<class_Image>` that is a copy of data from this **Texture2
 
 :ref:`int<class_int>` **get_mipmap_count**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_mipmap_count>`
 
-Returns the number of mipmaps of the texture.
+回傳該紋理的 Mipmap 數量。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Returns the number of mipmaps of the texture.
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_has_mipmaps>`
 
-Returns ``true`` if the texture has mipmaps.
+如果該紋理包含 Mipmap，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

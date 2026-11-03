@@ -81,7 +81,7 @@ CheckBox
 
 :ref:`Color<class_Color>` **checkbox_checked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckBox_theme_color_checkbox_checked_color>`
 
-The color of the checked icon when the checkbox is pressed.
+勾選圖示的顏色，該 **CheckBox** 被按下時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ The color of the checked icon when the checkbox is pressed.
 
 :ref:`Color<class_Color>` **checkbox_unchecked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckBox_theme_color_checkbox_unchecked_color>`
 
-The color of the unchecked icon when the checkbox is not pressed.
+未勾選圖示的顏色，該 **CheckBox** 未被按下時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`int<class_int>` **check_v_offset** = ``0`` :ref:`🔗<class_CheckBox_theme_constant_check_v_offset>`
 
-算繪勾選圖示時使用的垂直偏移量（單位：圖元）。
+渲染勾選圖示時使用的垂直偏移量（單位：圖元）。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled** :ref:`🔗<class_CheckBox_theme_icon_checked_disabled>`
 
-勾選圖示，該 **CheckBox** 被勾選且被禁用時顯示。
+勾選圖示，該 **CheckBox** 被勾選且被停用時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked_disabled** :ref:`🔗<class_CheckBox_theme_icon_radio_checked_disabled>`
 
-勾選圖示，該 **CheckBox** 被配置為選項按鈕、被禁用且未勾選時顯示。
+勾選圖示，該 **CheckBox** 被配置為選項按鈕、被停用且未勾選時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked_disabled** :ref:`🔗<class_CheckBox_theme_icon_radio_unchecked_disabled>`
 
-勾選圖示，該 **CheckBox** 被配置為選項按鈕、被禁用且未勾選時顯示。
+勾選圖示，該 **CheckBox** 被配置為選項按鈕、被停用且未勾選時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ The color of the unchecked icon when the checkbox is not pressed.
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled** :ref:`🔗<class_CheckBox_theme_icon_unchecked_disabled>`
 
-勾選圖示，該 **CheckBox** 未勾選且被禁用時顯示。
+勾選圖示，該 **CheckBox** 未勾選且被停用時顯示。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,16 +7,16 @@ ImmediateMesh
 
 **繼承：** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為手動建立幾何體，而優化的網格。
+為手動建立幾何體，而最佳化的網格。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-A mesh type optimized for creating geometry manually, similar to OpenGL 1.x immediate mode.
+針對手動建立幾何體最佳化的網格型別，與 OpenGL 1.x 的立即模式類似。
 
-Here's a sample on how to generate a triangular face:
+以下是生成三角形面的範例：
 
 
 .. tabs::
@@ -41,7 +41,7 @@ Here's a sample on how to generate a triangular face:
 
 
 
-\ **Note:** Generating complex geometries with **ImmediateMesh** is highly inefficient. Instead, it is designed to generate simple geometry that changes often.
+\ **注意：**\ 使用 **ImmediateMesh** 生成複雜的幾何體極其低效。這種網格的設計目的是用來生成經常變化的簡單幾何體。
 
 .. rst-class:: classref-introduction-group
 
@@ -179,9 +179,9 @@ Here's a sample on how to generate a triangular face:
 
 |void| **surface_set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_tangent>`
 
-Set the tangent attribute that will be pushed with the next vertex.
+設定將與下一個頂點一起推送的切線屬性。
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **注意：**\ 儘管 ``tangent`` 是一個 :ref:`Plane<class_Plane>` ，但它並不直接表示切平面。它的 :ref:`Plane.x<class_Plane_property_x>`\ 、\ :ref:`Plane.y<class_Plane_property_y>` 和 :ref:`Plane.z<class_Plane_property_z>` 表示切線向量，而 :ref:`Plane.d<class_Plane_property_d>` 應該為 ``-1`` 或 ``1``\ 。另見 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`\ 。
 
 .. rst-class:: classref-item-separator
 

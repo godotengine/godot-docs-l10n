@@ -21,7 +21,7 @@ ResourceImporterLayeredTexture
 教學
 ----
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`匯入影像 <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
@@ -68,13 +68,13 @@ ResourceImporterLayeredTexture
 
 :ref:`int<class_int>` **compress/channel_pack** = ``0`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/channel_pack>`
 
-Controls how color channels should be used in the imported texture.
+控制在匯入的紋理中應如何使用顏色通道。
 
-\ **sRGB Friendly:**, prevents the R and RG color formats from being used, as they do not support nonlinear sRGB encoding.
+\ **sRGB 友好：**\ 阻止使用 R 和 RG 顏色格式，因為它們不支援非線性 sRGB 編碼。
 
-\ **Optimized:**, allows the RG color format to be used if the texture does not use the blue channel. This reduces memory usage if the texture's blue channel can be discarded (all pixels must have a blue value of ``0``).
+\ **最佳化：**\ 如果紋理不使用藍色通道，則允許使用 RG 顏色格式。如果可以丟棄紋理的藍色通道（所有像素的藍色值必須為 ``0``\ ），則可以減少記憶體使用量。
 
-\ **Normal Map (RG Channels):** This forces all layers from the texture to be imported with the RG color format, with only the red and green channels preserved. RGTC (Red-Green Texture Compression) compression is able to preserve its detail much better, while using the same amount of memory as a standard RGBA VRAM-compressed texture. This only has an effect on textures with the VRAM Compressed or Basis Universal compression modes. This mode is only available in layered textures (:ref:`Cubemap<class_Cubemap>`, :ref:`CubemapArray<class_CubemapArray>`, :ref:`Texture2DArray<class_Texture2DArray>` and :ref:`Texture3D<class_Texture3D>`).
+\ **法線貼圖（RG 通道）：**\ 這會強制使用 RG 顏色格式匯入紋理中的所有圖層，僅保留紅色和綠色通道。RGTC（紅綠紋理壓縮）壓縮能夠更好地保留細節，同時使用與標準 RGBA VRAM 壓縮紋理相同的記憶體量。這僅對具有 VRAM 壓縮或 Basis Universal 壓縮模式的紋理有影響。該模式僅適用於分層紋理（\ :ref:`Cubemap<class_Cubemap>`\ 、\ :ref:`CubemapArray<class_CubemapArray>`\ 、\ :ref:`Texture2DArray<class_Texture2DArray>` 和 :ref:`Texture3D<class_Texture3D>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（�
 
 \ **Basis Universal：** 品質降低、記憶體使用率低、磁碟大小最小、匯入速度慢。僅用於 3D 場景中的紋理，不適用於 2D 元素。
 
-有關詳細信息，請參閱手冊中的\ `壓縮模式 <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__\ 。
+有關詳細資訊，請參閱手冊中的\ `壓縮模式 <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -158,11 +158,11 @@ BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（�
 
 :ref:`float<class_float>` **compress/rdo_quality_loss** = ``0.0`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/rdo_quality_loss>`
 
-If greater than or equal to ``0.01``, enables Rate-Distortion Optimization (RDO) to reduce file size. Higher values result in smaller file sizes but lower quality.
+如果大於等於 ``0.01``\ ，則會啟用率-失真最佳化（Rate-Distortion Optimization、RDO）來降低檔案大小。值越高檔案大小越小，但品質也越低。
 
-\ **Note:** Enabling RDO makes encoding times significantly longer, especially when the image is large.
+\ **注意：**\ 啟用 RDO 會顯著增加編碼時間，在影像較大時尤為明顯。
 
-See also :ref:`ProjectSettings.rendering/textures/basis_universal/rdo_dict_size<class_ProjectSettings_property_rendering/textures/basis_universal/rdo_dict_size>` and :ref:`ProjectSettings.rendering/textures/basis_universal/zstd_supercompression_level<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression_level>` if you want to reduce the file size further.
+如果想要進一步降低檔案大小，請參閱 :ref:`ProjectSettings.rendering/textures/basis_universal/rdo_dict_size<class_ProjectSettings_property_rendering/textures/basis_universal/rdo_dict_size>` 和 :ref:`ProjectSettings.rendering/textures/basis_universal/zstd_supercompression_level<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression_level>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ See also :ref:`ProjectSettings.rendering/textures/basis_universal/rdo_dict_size<
 
 :ref:`int<class_int>` **compress/uastc_level** = ``0`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/uastc_level>`
 
-The UASTC encoding level. Higher values result in better quality but make encoding times longer.
+UASTC 編碼層級。值越高品質越好，但編碼耗時更長。
 
 .. rst-class:: classref-item-separator
 

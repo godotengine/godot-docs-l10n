@@ -288,7 +288,7 @@ Forma de celda de diamante (para apariencia isométrica). Diseño de coordenadas
 
 :ref:`CellShape<enum_AStarGrid2D_CellShape>` **CELL_SHAPE_ISOMETRIC_DOWN** = ``2``
 
-Diamond cell shape (for isometric look). Cell coordinates layout where the horizontal axis goes down-right, and the vertical one goes down-left.
+Celda con forma de rombo (para una vista isométrica). Disposición de las coordenadas de las celdas en la que el eje horizontal va hacia abajo y a la derecha, y el eje vertical, hacia abajo y a la izquierda.
 
 .. _class_AStarGrid2D_constant_CELL_SHAPE_MAX:
 

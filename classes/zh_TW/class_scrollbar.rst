@@ -81,7 +81,7 @@ ScrollBar
 
 **scrolling**\ (\ ) :ref:`🔗<class_ScrollBar_signal_scrolling>`
 
-當捲軸滾動時發出。
+當捲軸捲動時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ ScrollBar
 
 :ref:`Texture2D<class_Texture2D>` **decrement** :ref:`🔗<class_ScrollBar_theme_icon_decrement>`
 
-作為按鈕使用的圖示，它用於使 **ScrollBar** 向左滾動。滾動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
+作為按鈕使用的圖示，它用於使 **ScrollBar** 向左捲動。捲動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ ScrollBar
 
 :ref:`Texture2D<class_Texture2D>` **increment** :ref:`🔗<class_ScrollBar_theme_icon_increment>`
 
-作為按鈕使用的圖示，它用於使 **ScrollBar** 向右滾動。滾動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
+作為按鈕使用的圖示，它用於使 **ScrollBar** 向右捲動。捲動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
 
 .. rst-class:: classref-item-separator
 

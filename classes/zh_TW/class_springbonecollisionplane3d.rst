@@ -7,14 +7,14 @@ SpringBoneCollisionPlane3D
 
 **繼承：** :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An infinite plane collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的無限延伸的平面碰撞。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-An infinite plane collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`. It is an infinite size XZ plane, and the +Y direction is treated as normal.
+與 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 互動的無限延伸的平面碰撞，是無窮大的 XZ 平面，+Y 方向為法線。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -273,7 +273,7 @@ Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationSer
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_REGION_COUNT** = ``25``
 
-Number of active navigation regions in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Nombre de régions de navigation actives dans le :ref:`NavigationServer2D<class_NavigationServer2D>` et le :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_AGENT_COUNT:
 
@@ -289,7 +289,7 @@ Number of active navigation agents processing avoidance in :ref:`NavigationServe
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_LINK_COUNT** = ``27``
 
-Number of active navigation links in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Nombre de liens de navigation actifs dans le :ref:`NavigationServer2D<class_NavigationServer2D>` et le :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_POLYGON_COUNT:
 

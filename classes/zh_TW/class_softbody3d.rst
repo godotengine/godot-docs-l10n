@@ -14,11 +14,11 @@ SoftBody3D
 說明
 ----
 
-A deformable 3D physics mesh. Used to create elastic or deformable objects such as cloth, rubber, or other flexible materials.
+可形變的 3D 物理網格。用於建立彈性或可形變的物件，例如布料、橡膠或其他柔性材質。
 
-Additionally, **SoftBody3D** is subject to wind forces defined in :ref:`Area3D<class_Area3D>` (see :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`, :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>`, and :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`).
+此外，\ **SoftBody3D** 受 :ref:`Area3D<class_Area3D>` 中定義的風力影響（參見 :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`\ 、\ :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>` 和 :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`\ ）。
 
-\ **Note:** It's recommended to use Jolt Physics when using **SoftBody3D** instead of the default GodotPhysics3D, as Jolt Physics' soft body implementation is faster and more reliable. You can switch the physics engine using the :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` project setting.
+\ **注意：**\ 使用 **SoftBody3D** 時建議使用 Jolt Physics，不要使用預設的 GodotPhysics3D，因為 Jolt Physics 的柔體實作更快更可靠。你可以使用 :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` 專案設定來切換物理引擎。
 
 .. rst-class:: classref-introduction-group
 
@@ -192,7 +192,7 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 - |void| **set_damping_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping_coefficient**\ (\ )
 
-The body's damping coefficient. Higher values will slow down the body more noticeably when forces are applied.
+物體的阻尼係數。當施加力時，較高的值會更明顯地減慢物體的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The body's damping coefficient. Higher values will slow down the body more notic
 - |void| **set_disable_mode**\ (\ value\: :ref:`DisableMode<enum_SoftBody3D_DisableMode>`\ )
 - :ref:`DisableMode<enum_SoftBody3D_DisableMode>` **get_disable_mode**\ (\ )
 
-Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+定義 :ref:`Node.process_mode<class_Node_property_process_mode>` 為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時的物理行為。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 - |void| **set_drag_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_coefficient**\ (\ )
 
-The body's drag coefficient. Higher values increase this body's air resistance.
+物體的阻力係數。較高的值會增加該物體的空氣阻力。
 
-\ **Note:** This value is currently unused by Godot's default physics implementation.
+\ **注意：**\ Godot 的預設物理實作目前未使用該值。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ The body's drag coefficient. Higher values increase this body's air resistance.
 - |void| **set_pressure_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure_coefficient**\ (\ )
 
-The pressure coefficient of this soft body. Simulate pressure build-up from inside this body. Higher values increase the strength of this effect.
+該軟體的壓力係數。模擬物體內部的壓力積聚。較高的值會增加該效果的強度。
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ The pressure coefficient of this soft body. Simulate pressure build-up from insi
 - |void| **set_shrinking_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shrinking_factor**\ (\ )
 
-Scales the rest lengths of **SoftBody3D**'s edge constraints. Positive values shrink the mesh, while negative values expand it. For example, a value of ``0.1`` shortens the edges of the mesh by 10%, while ``-0.1`` expands the edges by 10%.
+縮放 **SoftBody3D** 的邊約束的剩餘長度。正值會收縮網格，負值會擴充網格。例如，值為 ``0.1`` 會將網格的邊縮短 10%，而 ``-0.1`` 則會將邊擴充 10%。
 
-\ **Note:** :ref:`shrinking_factor<class_SoftBody3D_property_shrinking_factor>` is best used on surface meshes with pinned points.
+\ **注意：**\ :ref:`shrinking_factor<class_SoftBody3D_property_shrinking_factor>` 最適用於存在釘固點的表面網格。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Scales the rest lengths of **SoftBody3D**'s edge constraints. Positive values sh
 - |void| **set_simulation_precision**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_simulation_precision**\ (\ )
 
-增加這個值會改善模擬結果，但會影響性能。請小心使用。
+增加這個值會改善模擬結果，但會影響效能。請小心使用。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Scales the rest lengths of **SoftBody3D**'s edge constraints. Positive values sh
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-The SoftBody3D's mass.
+SoftBody3D 的質量。
 
 .. rst-class:: classref-section-separator
 
@@ -378,7 +378,7 @@ The SoftBody3D's mass.
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SoftBody3D_method_apply_central_force>`
 
-Distributes and applies a force to all points. A force is time dependent and meant to be applied every physics update.
+將力分配並施加到所有點上。力是時間相關的，應在每次物理更新時施加。
 
 .. rst-class:: classref-item-separator
 
@@ -390,9 +390,9 @@ Distributes and applies a force to all points. A force is time dependent and mea
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SoftBody3D_method_apply_central_impulse>`
 
-Distributes and applies an impulse to all points.
+將衝量分配並施加到所有點上。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+衝量與時間無關！如果每影格都施加衝量會得到與影格率相關的力。因此只應在模擬一次性衝擊時使用（否則請使用“_force”函式）。
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **apply_force**\ (\ point_index\: :ref:`int<class_int>`, force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SoftBody3D_method_apply_force>`
 
-Applies a force to a point. A force is time dependent and meant to be applied every physics update.
+將力施加到某個點上。力是時間相關的，應在每次物理更新時施加。
 
 .. rst-class:: classref-item-separator
 
@@ -416,9 +416,9 @@ Applies a force to a point. A force is time dependent and meant to be applied ev
 
 |void| **apply_impulse**\ (\ point_index\: :ref:`int<class_int>`, impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SoftBody3D_method_apply_impulse>`
 
-Applies an impulse to a point.
+將衝量施加到某個點上。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+衝量與時間無關！如果每影格都施加衝量會得到與影格率相關的力。因此只應在模擬一次性衝擊時使用（否則請使用“_force”函式）。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 :ref:`RID<class_RID>` **get_physics_rid**\ (\ ) |const| :ref:`🔗<class_SoftBody3D_method_get_physics_rid>`
 
-Returns the internal :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` for this body.
+回傳 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 用於該實體的內部 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ Returns the internal :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<cla
 
 :ref:`Vector3<class_Vector3>` **get_point_transform**\ (\ point_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SoftBody3D_method_get_point_transform>`
 
-返回表面陣列中頂點的局部平移。
+返回表面陣列中頂點的區域平移。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Returns the internal :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<cla
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SoftBody3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_SoftBody3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_SoftBody3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Returns the internal :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<cla
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SoftBody3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_SoftBody3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_SoftBody3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 

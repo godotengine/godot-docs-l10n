@@ -16,9 +16,9 @@ PhysicsDirectSpaceState2D
 說明
 ----
 
-Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. It's used mainly to do queries against objects and areas residing in a given space.
+提供對 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 中物理空間的直接存取。主要用於對駐留在給定空間中的物件和區域進行查詢。
 
-\ **Note:** This class is not meant to be instantiated directly. Use :ref:`World2D.direct_space_state<class_World2D_property_direct_space_state>` to get the world's physics 2D space state.
+\ **注意：**\ 該類不應直接實例化。請使用 :ref:`World2D.direct_space_state<class_World2D_property_direct_space_state>` 取得世界的 2D 物理空間狀態。
 
 .. rst-class:: classref-introduction-group
 
@@ -96,21 +96,21 @@ Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_Phy
 
 :ref:`Dictionary<class_Dictionary>` **get_rest_info**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_get_rest_info>`
 
-Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` object, against the space. If it collides with more than one shape, the nearest one is selected. The returned object is a dictionary containing the following fields:
+根據傳入的 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 物件所定義的形狀，檢測它與物理空間中的碰撞情況。如果該形狀與多個物體發生了碰撞，系統只會選取距離最近的那一個。回傳的結果是一個字典，包含以下欄位：
 
-\ ``collider_id``: The colliding object's ID.
+\ ``collider_id``\ ：發生碰撞的物體的唯一 ID。
 
-\ ``linear_velocity``: The colliding object's velocity :ref:`Vector2<class_Vector2>`. If the object is an :ref:`Area2D<class_Area2D>`, the result is ``(0, 0)``.
+\ ``linear_velocity``\ ：發生碰撞的物體的速度（Vector2 型別）。如果該物體是一個 :ref:`Area2D<class_Area2D>`\ ，結果則為 ``(0, 0)``\ 。
 
-\ ``normal``: The collision normal of the query shape at the intersection point, pointing away from the intersecting object.
+\ ``normal``\ ：在交點處，檢測形狀的碰撞法線，方向背離發生相交的物體。
 
-\ ``point``: The intersection point.
+\ ``point``\ ：具體的碰撞交點座標。
 
-\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
+\ ``rid``\ ：發生相交的物體的 :ref:`RID<class_RID>`\ （資源 ID）。
 
-\ ``shape``: The shape index of the colliding shape.
+\ ``shape``\ ：發生碰撞的碰撞形狀索引。
 
-If the shape did not intersect anything, then an empty dictionary is returned instead.
+如果該形狀沒有與任何物體發生相交，則回傳一個空字典。
 
 .. rst-class:: classref-item-separator
 

@@ -69,7 +69,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Object<class_Object>` **get_collider**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider>`
 
-如果發生了碰撞，則返回相撞物體所附加的 :ref:`Object<class_Object>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+如果發生了碰撞，則返回相撞物體所附加的 :ref:`Object<class_Object>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ PhysicsTestMotionResult3D
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_rid>`
 
-如果發生了碰撞，則返回相撞物體在 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中使用的 :ref:`RID<class_RID>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+如果發生了碰撞，則返回相撞物體在 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中使用的 :ref:`RID<class_RID>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ PhysicsTestMotionResult3D
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_shape>`
 
-如果發生了碰撞，則返回相撞物體形狀的索引，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+如果發生了碰撞，則返回相撞物體形狀的索引，碰撞物體由碰撞索引指定（預設為最深的碰撞）。請參閱 :ref:`CollisionObject3D<class_CollisionObject3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_collider_velocity**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_velocity>`
 
-如果發生了碰撞，則返回相撞物體的速度。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+若發生碰撞，則回傳指定碰撞索引對應之碰撞物體的速度（預設使用穿透最深的碰撞）。
 
 .. rst-class:: classref-item-separator
 

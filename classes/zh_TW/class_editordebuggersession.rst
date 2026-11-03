@@ -14,9 +14,9 @@ EditorDebuggerSession
 說明
 ----
 
-This class cannot be directly instantiated and must be retrieved via an :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`.
+這個類不能直接實例化，必須通過 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` 來取得。
 
-You can add tabs to the session UI via :ref:`add_session_tab()<class_EditorDebuggerSession_method_add_session_tab>`, send messages via :ref:`send_message()<class_EditorDebuggerSession_method_send_message>`, and toggle :ref:`EngineProfiler<class_EngineProfiler>`\ s via :ref:`toggle_profiler()<class_EditorDebuggerSession_method_toggle_profiler>`.
+通過 :ref:`add_session_tab()<class_EditorDebuggerSession_method_add_session_tab>` 可以向會話 UI 新增標籤，通過 :ref:`send_message()<class_EditorDebuggerSession_method_send_message>` 可以發送訊息，通過 :ref:`toggle_profiler()<class_EditorDebuggerSession_method_toggle_profiler>` 可以切換 :ref:`EngineProfiler<class_EngineProfiler>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -112,7 +112,7 @@ You can add tabs to the session UI via :ref:`add_session_tab()<class_EditorDebug
 
 |void| **add_session_tab**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_add_session_tab>`
 
-Adds the given ``control`` to the debug session UI in the debugger bottom panel. The ``control``'s node name will be used as the tab title.
+將控制項 ``control`` 新增到除錯器底部面板的除錯會話 UI 中。\ ``control`` 的節點名稱會作為分頁標題。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Adds the given ``control`` to the debug session UI in the debugger bottom panel.
 
 |void| **send_message**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_EditorDebuggerSession_method_send_message>`
 
-向原生實例發送給定的消息 ``message``\ ，還可以傳入額外的資料 ``data``\ 。如何獲取這些消息見 :ref:`EngineDebugger<class_EngineDebugger>`\ 。
+向原生實例發送給定的訊息 ``message``\ ，還可以傳入額外的資料 ``data``\ 。如何取得這些訊息見 :ref:`EngineDebugger<class_EngineDebugger>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Adds the given ``control`` to the debug session UI in the debugger bottom panel.
 
 |void| **set_breakpoint**\ (\ path\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_set_breakpoint>`
 
-Enables or disables a specific breakpoint based on ``enabled``, updating the Editor Breakpoint Panel accordingly.
+根據 ``enabled`` 啟用或停用指定的斷點，會據此更新“編輯器斷點面板”。
 
 .. rst-class:: classref-item-separator
 

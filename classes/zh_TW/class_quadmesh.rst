@@ -23,7 +23,7 @@ QuadMesh
 
 - `3D 檢視埠 GUI 範例 <https://godotengine.org/asset-library/asset/2807>`__
 
-- `2D in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2803>`__
+- `3D 視埠中的 2D 演示 <https://godotengine.org/asset-library/asset/2803>`__
 
 .. rst-class:: classref-reftable-group
 

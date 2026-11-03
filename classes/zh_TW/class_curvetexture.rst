@@ -14,9 +14,9 @@ CurveTexture
 說明
 ----
 
-A 1D texture where pixel brightness corresponds to points on a unit :ref:`Curve<class_Curve>` resource, either in grayscale or in red. This visual representation simplifies the task of saving curves as image files.
+一維紋理，像素亮度對應於單位 :ref:`Curve<class_Curve>` 資源上的點，可以是灰度圖或紅色圖。這種視覺表達簡化了將曲線儲存為影像檔案的任務。
 
-If you need to store up to 3 curves within a single texture, use :ref:`CurveXYZTexture<class_CurveXYZTexture>` instead. See also :ref:`GradientTexture1D<class_GradientTexture1D>` and :ref:`GradientTexture2D<class_GradientTexture2D>`.
+如果你需要在單個紋理中儲存最多 3 條曲線，請改用 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。另見 :ref:`GradientTexture1D<class_GradientTexture1D>` 和 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -87,7 +87,7 @@ enum **TextureMode**: :ref:`🔗<enum_CurveTexture_TextureMode>`
 - |void| **set_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve**\ (\ )
 
-The :ref:`Curve<class_Curve>` that is rendered onto the texture. Should be a unit :ref:`Curve<class_Curve>`.
+渲染到該紋理上的 :ref:`Curve<class_Curve>`\ 。應當為單位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 

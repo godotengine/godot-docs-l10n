@@ -7,7 +7,7 @@ PhysicsServer3DRenderingServerHandler
 
 **繼承：** :ref:`Object<class_Object>`
 
-用於為 :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` 提供柔體算繪處理器的類。
+用於為 :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` 提供柔體渲染處理器的類。
 
 .. rst-class:: classref-reftable-group
 
@@ -98,7 +98,7 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **set_normal**\ (\ vertex_id\: :ref:`int<class_int>`, normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_method_set_normal>`
 
-Sets the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+在由 ``vertex_id`` 指定的索引處設定該 :ref:`SoftBody3D<class_SoftBody3D>` 頂點的法線。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Sets the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index 
 
 |void| **set_vertex**\ (\ vertex_id\: :ref:`int<class_int>`, vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_method_set_vertex>`
 
-Sets the position for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+在由 ``vertex_id`` 指定的索引處設定該 :ref:`SoftBody3D<class_SoftBody3D>` 頂點的位置。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

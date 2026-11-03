@@ -140,9 +140,9 @@ Determina cómo debe ser redimensionado el canvas por Godot.
 
 :ref:`String<class_String>` **html/custom_html_shell** :ref:`🔗<class_EditorExportPlatformWeb_property_html/custom_html_shell>`
 
-La página HTML personalizada que envuelve la compilación web exportada. Si se deja vacío, se utiliza el shell de HTML predeterminado.
+La página HTML personalizada que envuelve la compilación web exportada. Si se deja vacío, se utiliza la plantilla HTML predeterminada.
 
-Para más información, consulta el tutorial :doc:`Customizing HTML5 Shell <../tutorials/platform/web/customizing_html5_shell>`.
+Para más información, consulta el tutorial :doc:`Personalizar la página HTML de exportación web <../tutorials/platform/web/customizing_html5_shell>`.
 
 .. rst-class:: classref-item-separator
 

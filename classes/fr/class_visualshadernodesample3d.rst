@@ -16,7 +16,7 @@ A base node for nodes which samples 3D textures in the visual shader graph.
 Description
 -----------
 
-A virtual class, use the descendants instead.
+Une classe virtuelle, utilisez plutôt les descendants.
 
 .. rst-class:: classref-reftable-group
 

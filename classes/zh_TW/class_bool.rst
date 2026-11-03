@@ -12,7 +12,7 @@ bool
 說明
 ----
 
-**bool** 是內建 :ref:`Variant<class_Variant>` 型別，只能儲存兩個值之一：\ ``true`` 或 ``false``\ 你可以把它想像成一個可以打開或關閉的開關，或者是一個可以是1或0的二進制數字。
+**bool** 是內建 :ref:`Variant<class_Variant>` 型別，只能儲存兩個值之一：\ ``true`` 或 ``false``\ 你可以把它想像成一個可以打開或關閉的開關，或者是一個可以是1或0的二進位數字。
 
 布林值可以直接用在\ ``if``\ 和其他條件敘述：
 
@@ -62,7 +62,7 @@ bool
 
 
 
-\ **注意：** 在現代程式語言中，邏輯運算子依序求值。如果剩餘條件的結果對最終值沒有影響，則將跳過所有剩餘條件。這個概念被稱為\ `短路評估 <https://en.wikipedia.org/wiki/Short-Circuit_evaluation>`__\ ，可用於避免在某些性能關鍵的情況下評估昂貴的條件。
+\ **注意：** 在現代程式語言中，邏輯運算子依序求值。如果剩餘條件的結果對最終值沒有影響，則將跳過所有剩餘條件。這個概念被稱為\ `短路評估 <https://en.wikipedia.org/wiki/Short-Circuit_evaluation>`__\ ，可用於避免在某些效能關鍵的情況下評估昂貴的條件。
 
 \ **注意：** 依照慣例，傳回布林值的內建方法和屬性通常定義為是非問題、單一形容詞或類似的（\ :ref:`String.is_empty()<class_String_method_is_empty>`\ 、\ :ref:`Node.can_process()<class_Node_method_can_process>`\ 、 :ref:`Camera2D.enabled<class_Camera2D_property_enabled>`\ 等）。
 
@@ -137,7 +137,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
+將 :ref:`float<class_float>` 值轉換為 **bool**\ 。如果 ``from`` 等於 ``0.0``\ （包括 ``-0.0``\ ）則回傳 ``false``\ ，其他值則回傳 ``true``\ （包括 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 和 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``fr
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
+將 :ref:`int<class_int>` 值轉換為 **bool**\ 。如果 ``from`` 等於 ``0`` 則回傳 ``false``\ ，其他值則回傳 ``true``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -164,7 +164,7 @@ Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
+如果一個 **bool** 為 ``true`` 且另一個 **bool** 為 ``false``\ ，則回傳 ``true``\ 。相當於邏輯異或（XOR (NEQ)）。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
+如果左側 **bool** 為 ``false`` 且 ``right`` 為 ``true``\ ，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
+如果兩個 **bool** 都為 ``true``\ ，或兩個 **bool** 都為 ``false``\ ，則回傳 ``true``\ 。等效於邏輯同或（XNOR / EQ）運算。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
+如果左側 **bool** 為 ``true`` 且 ``right`` 為 ``false``\ ，則回傳 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

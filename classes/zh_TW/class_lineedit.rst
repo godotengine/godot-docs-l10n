@@ -17,73 +17,73 @@ LineEdit
 說明
 ----
 
-**LineEdit** provides an input field for editing a single line of text.
+**LineEdit** 提供了用於編輯單行文字的輸入框。
 
-- When the **LineEdit** control is focused using the keyboard arrow keys, it will only gain focus and not enter edit mode.
+- 通過鍵盤方向鍵聚焦 **LineEdit** 時只會獲得焦點，不會進入編輯模式。
 
-- To enter edit mode, click on the control with the mouse, see also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+- 要進入編輯模式，請使用滑鼠點選控制項，另見 :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`\ 。
 
-- To exit edit mode, press ``ui_text_submit`` or ``ui_cancel`` (by default :kbd:`Escape`) actions.
+- 要退出編輯模式，請點選 ``ui_text_submit`` 或 ``ui_cancel``\ （預設為 :kbd:`Escape`\ ）動作。
 
-- Check :ref:`edit()<class_LineEdit_method_edit>`, :ref:`unedit()<class_LineEdit_method_unedit>`, :ref:`is_editing()<class_LineEdit_method_is_editing>`, and :ref:`editing_toggled<class_LineEdit_signal_editing_toggled>` for more information.
+- 詳見 :ref:`edit()<class_LineEdit_method_edit>`\ 、\ :ref:`unedit()<class_LineEdit_method_unedit>`\ 、\ :ref:`is_editing()<class_LineEdit_method_is_editing>`\ 、\ :ref:`editing_toggled<class_LineEdit_signal_editing_toggled>`\ 。
 
-While entering text, it is possible to insert special characters using Unicode, OEM or Windows alt codes:
+輸入文字時，可以使用 Unicode、OEM、Windows Alt 程式碼來插入特殊字元：
 
-- To enter Unicode codepoints, hold :kbd:`Alt` and type the codepoint on the numpad. For example, to enter the character ``á`` (U+00E1), hold :kbd:`Alt` and type :kbd:`+E1` on the numpad (the leading zeroes can be omitted).
+- 輸入 Unicode 碼位時，請按住 :kbd:`Alt` 並通過小鍵盤輸入碼位。例如要輸入字元 ``á``\ （U+00E1），請按住 :kbd:`Alt` 並使用小鍵盤輸入 :kbd:`+E1`\ （前置的零可以省略）。
 
-- To enter OEM codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (OEM 160), hold :kbd:`Alt` and type ``160`` on the numpad.
+- 輸入 OEM 碼位時，請按住 :kbd:`Alt` 並通過小鍵盤輸入碼位。例如要輸入字元 ``á``\ （OEM 160），請按住 :kbd:`Alt` 並使用小鍵盤輸入 ``160``\ 。
 
-- To enter Windows codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (Windows 0225), hold :kbd:`Alt` and type :kbd:`0`, :kbd:`2`, :kbd:`2`, :kbd:`5` on the numpad. The leading zero here must **not** be omitted, as this is how Windows codepoints are distinguished from OEM codepoints.
+- 輸入 Windows 碼位時，請按住 :kbd:`Alt` 並通過小鍵盤輸入碼位。例如要輸入字元 ``á``\ （Windows 0225）請按住 :kbd:`Alt` 並使用小鍵盤輸入 :kbd:`0`\ 、\ :kbd:`2`\ 、\ :kbd:`2`\ 、\ :kbd:`5` 。前置的零\ **不能**\ 省略，因為 Windows 碼位需要用這些零來和 OEM 碼位進行區分。
 
-\ **Important:**\ 
+\ **重要：**\ 
 
-- Focusing the **LineEdit** with ``ui_focus_next`` (by default :kbd:`Tab`) or ``ui_focus_prev`` (by default :kbd:`Shift + Tab`) or :ref:`Control.grab_focus()<class_Control_method_grab_focus>` still enters edit mode (for compatibility).
+- 通過 ``ui_focus_next``\ （預設為 :kbd:`Tab`\ ）、\ ``ui_focus_prev``\ （預設為 :kbd:`Shift + Tab`\ ）或 :ref:`Control.grab_focus()<class_Control_method_grab_focus>` 聚焦 **LineEdit** 仍然會進入編輯模式（出於相容考慮）。
 
-\ **LineEdit** features many built-in shortcuts that are always available (:kbd:`Ctrl` here maps to :kbd:`Cmd` on macOS):
+\ **LineEdit** 提供了很多始終可用的內建快捷鍵（此處的 :kbd:`Ctrl` 在 macOS 上會映射到 :kbd:`Cmd`\ ）：
 
-- :kbd:`Ctrl + C`: Copy
+- :kbd:`Ctrl + C`\ ：複製
 
-- :kbd:`Ctrl + X`: Cut
+- :kbd:`Ctrl + X`\ ：剪切
 
-- :kbd:`Ctrl + V` or :kbd:`Ctrl + Y`: Paste/"yank"
+- :kbd:`Ctrl + V` 或 :kbd:`Ctrl + Y`\ ：複製/“抽取”
 
-- :kbd:`Ctrl + Z`: Undo
+- :kbd:`Ctrl + Z`\ ：復原
 
-- :kbd:`Ctrl + ~`: Swap input direction.
+- :kbd:`Ctrl + ~`\ ：切換輸入方向。
 
-- :kbd:`Ctrl + Shift + Z`: Redo
+- :kbd:`Ctrl + Shift + Z`\ ：取消復原
 
-- :kbd:`Ctrl + U`: Delete text from the caret position to the beginning of the line
+- :kbd:`Ctrl + U`\ ：刪除從文字游標位置到行首的文字
 
-- :kbd:`Ctrl + K`: Delete text from the caret position to the end of the line
+- :kbd:`Ctrl + K`\ ：刪除從文字游標位置到行尾的文字
 
-- :kbd:`Ctrl + A`: Select all text
+- :kbd:`Ctrl + A`\ ：選擇所有文字
 
-- :kbd:`Up Arrow`/:kbd:`Down Arrow`: Move the caret to the beginning/end of the line
+- :kbd:`Up Arrow`/:kbd:`Down Arrow`\ ：將文字游標移動到行首/行尾
 
-On macOS, some extra keyboard shortcuts are available:
+在 macOS 上，有一些額外的鍵盤快捷鍵可用：
 
-- :kbd:`Cmd + F`: Same as :kbd:`Right Arrow`, move the caret one character right
+- :kbd:`Ctrl + F`\ ：同 :kbd:`Right Arrow`\ ，將文字游標向右移動一個字元
 
-- :kbd:`Cmd + B`: Same as :kbd:`Left Arrow`, move the caret one character left
+- :kbd:`Ctrl + B`\ ：同 :kbd:`Left Arrow`\ ，將文字游標向左移動一個字元
 
-- :kbd:`Cmd + P`: Same as :kbd:`Up Arrow`, move the caret to the previous line
+- :kbd:`Ctrl + P`\ ：同 :kbd:`Up Arrow`\ ，將文字游標移動到上一行
 
-- :kbd:`Cmd + N`: Same as :kbd:`Down Arrow`, move the caret to the next line
+- :kbd:`Ctrl + N`\ ：同 :kbd:`Down Arrow`\ ，將文字游標移動到下一行
 
-- :kbd:`Cmd + D`: Same as :kbd:`Delete`, delete the character on the right side of caret
+- :kbd:`Ctrl + D`\ ：同 :kbd:`Delete`\ ，刪除文字游標右側的字元
 
-- :kbd:`Cmd + H`: Same as :kbd:`Backspace`, delete the character on the left side of the caret
+- :kbd:`Ctrl + H`\ ：同 :kbd:`Backspace`\ ，刪除文字游標左側的字元
 
-- :kbd:`Cmd + A`: Same as :kbd:`Home`, move the caret to the beginning of the line
+- :kbd:`Ctrl + A`\ ：同 :kbd:`Home`\ ，將文字游標移動到行首
 
-- :kbd:`Cmd + E`: Same as :kbd:`End`, move the caret to the end of the line
+- :kbd:`Ctrl + E`\ ：同 :kbd:`End`\ ，將文字游標移動到行首尾
 
-- :kbd:`Cmd + Left Arrow`: Same as :kbd:`Home`, move the caret to the beginning of the line
+- :kbd:`Cmd + Left Arrow`\ ：同 :kbd:`Home`\ ，將文字游標移動到行首
 
-- :kbd:`Cmd + Right Arrow`: Same as :kbd:`End`, move the caret to the end of the line
+- :kbd:`Cmd + Right Arrow`\ ：同 :kbd:`End`\ ，將文字游標移動到行尾
 
-\ **Note:** Caret movement shortcuts listed above are not affected by :ref:`shortcut_keys_enabled<class_LineEdit_property_shortcut_keys_enabled>`.
+\ **注意：**\ 上述游標移動快捷鍵不受 :ref:`shortcut_keys_enabled<class_LineEdit_property_shortcut_keys_enabled>` 的影響。
 
 .. rst-class:: classref-reftable-group
 
@@ -292,7 +292,7 @@ On macOS, some extra keyboard shortcuts are available:
 
 **editing_toggled**\ (\ toggled_on\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_LineEdit_signal_editing_toggled>`
 
-Emitted when the **LineEdit** switches in or out of edit mode.
+**LineEdit** 進入退出編輯模式時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Emitted when the **LineEdit** switches in or out of edit mode.
 
 **text_submitted**\ (\ new_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LineEdit_signal_text_submitted>`
 
-Emitted when the user presses the ``ui_text_submit`` action (by default: :kbd:`Enter` or :kbd:`Kp Enter`) while the **LineEdit** has focus.
+當 **LineEdit** 擁有焦點時，使用者按下 ``ui_text_submit`` 動作（預設為 :kbd:`Enter` 或 :kbd:`Kp Enter`\ ）發出。
 
 .. rst-class:: classref-section-separator
 
@@ -367,9 +367,9 @@ enum **MenuItems**: :ref:`🔗<enum_LineEdit_MenuItems>`
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_PASTE** = ``2``
 
-將剪貼板中的文字貼上到選中文字之上（或者文字游標位置）。
+將剪貼簿中的文字貼上到選中文字之上（或者文字游標位置）。
 
-會使用 :ref:`String.strip_escapes()<class_String_method_strip_escapes>` 自動剝離作業系統剪貼板中不可列印的轉義字符。
+會使用 :ref:`String.strip_escapes()<class_String_method_strip_escapes>` 自動剝離作業系統剪貼簿中不可列印的轉義字元。
 
 .. _class_LineEdit_constant_MENU_CLEAR:
 
@@ -393,7 +393,7 @@ enum **MenuItems**: :ref:`🔗<enum_LineEdit_MenuItems>`
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_UNDO** = ``5``
 
-撤銷之前的操作。
+復原之前的操作。
 
 .. _class_LineEdit_constant_MENU_REDO:
 
@@ -401,7 +401,7 @@ enum **MenuItems**: :ref:`🔗<enum_LineEdit_MenuItems>`
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_REDO** = ``6``
 
-反轉最後一個撤銷動作。
+反轉最後一個復原動作。
 
 .. _class_LineEdit_constant_MENU_SUBMENU_TEXT_DIR:
 
@@ -593,7 +593,7 @@ enum **MenuItems**: :ref:`🔗<enum_LineEdit_MenuItems>`
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_EMOJI_AND_SYMBOL** = ``30``
 
-Opens system emoji and symbol picker.
+打開系統 Emoji 和符號拾取器。
 
 .. _class_LineEdit_constant_MENU_MAX:
 
@@ -667,7 +667,7 @@ enum **VirtualKeyboardType**: :ref:`🔗<enum_LineEdit_VirtualKeyboardType>`
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_PASSWORD** = ``6``
 
-用於輸入密碼的虛擬鍵盤。在大多數平臺上，這應該會禁用自動完成和自動首字母大寫功能。
+用於輸入密碼的虛擬鍵盤。在大多數平臺上，這應該會停用自動完成和自動首字母大寫功能。
 
 \ **注意：**\ Web 平臺不支援。與 :ref:`KEYBOARD_TYPE_DEFAULT<class_LineEdit_constant_KEYBOARD_TYPE_DEFAULT>` 的行為相同。
 
@@ -695,7 +695,7 @@ enum **ExpandMode**: :ref:`🔗<enum_LineEdit_ExpandMode>`
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_ORIGINAL_SIZE** = ``0``
 
-Use the original size for the right icon.
+右側圖示使用原始大小。
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_TEXT:
 
@@ -703,7 +703,7 @@ Use the original size for the right icon.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_TEXT** = ``1``
 
-Scale the right icon's size to match the size of the text.
+縮放右側圖示的大小以匹配文字大小。
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT:
 
@@ -711,7 +711,7 @@ Scale the right icon's size to match the size of the text.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_LINE_EDIT** = ``2``
 
-Scale the right icon to fit the LineEdit.
+縮放右側圖示以適應 LineEdit。
 
 .. rst-class:: classref-section-separator
 
@@ -733,7 +733,7 @@ Scale the right icon to fit the LineEdit.
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-The text's horizontal alignment.
+文字的水平對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -750,7 +750,7 @@ The text's horizontal alignment.
 - |void| **set_backspace_deletes_composite_character_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_backspace_deletes_composite_character_enabled**\ (\ )
 
-If ``true`` and :ref:`caret_mid_grapheme<class_LineEdit_property_caret_mid_grapheme>` is ``false``, backspace deletes an entire composite character such as ❤️‍🩹, instead of deleting part of the composite character.
+如果為 ``true`` 且 :ref:`caret_mid_grapheme<class_LineEdit_property_caret_mid_grapheme>` 為 ``false``\ ，則退格鍵會刪除完整的組合字元，例如 ❤️‍🩹，而不是刪除組合字元中的一部分。
 
 .. rst-class:: classref-item-separator
 
@@ -801,7 +801,7 @@ If ``true`` and :ref:`caret_mid_grapheme<class_LineEdit_property_caret_mid_graph
 - |void| **set_caret_column**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_caret_column**\ (\ )
 
-**LineEdit** 中游標的列位置。設定後文字可能會滾動以適應它。
+**LineEdit** 中游標的列位置。設定後文字可能會捲動以適應它。
 
 .. rst-class:: classref-item-separator
 
@@ -818,7 +818,7 @@ If ``true`` and :ref:`caret_mid_grapheme<class_LineEdit_property_caret_mid_graph
 - |void| **set_caret_force_displayed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_caret_force_displayed**\ (\ )
 
-If ``true``, the **LineEdit** will always show the caret, even if not editing or focus is lost.
+如果為 ``true``\ ，則該 **LineEdit** 會始終顯示游標，即使不處於編輯模式或焦點丟失。
 
 .. rst-class:: classref-item-separator
 
@@ -956,7 +956,7 @@ If ``true``, the **LineEdit** will always show the caret, even if not editing or
 - |void| **set_emoji_menu_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emoji_menu_enabled**\ (\ )
 
-If ``true``, "Emoji and Symbols" menu is enabled.
+如果為 ``true``\ ，則啟用“Emoji 和符號”選單。
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ If ``true``, "Emoji and Symbols" menu is enabled.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>`.
+定義 :ref:`right_icon<class_LineEdit_property_right_icon>` 的縮放行為。
 
 .. rst-class:: classref-item-separator
 
@@ -1024,7 +1024,7 @@ Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_righ
 - |void| **set_keep_editing_on_text_submit**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_kept_on_text_submit**\ (\ )
 
-If ``true``, the **LineEdit** will not exit edit mode when text is submitted by pressing ``ui_text_submit`` action (by default: :kbd:`Enter` or :kbd:`Kp Enter`).
+如果為 ``true``\ ，則按下 ``ui_text_submit`` 動作（預設為 :kbd:`Enter` 或 :kbd:`Kp Enter`\ ）提交文字時 **LineEdit** 不會退出編輯模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ If ``true``, the **LineEdit** will not exit edit mode when text is submitted by 
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用於斷行和文字塑形算法的語言程式碼。如果留空，則使用目前區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1058,11 +1058,11 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_max_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_length**\ (\ )
 
-Maximum number of characters that can be entered inside the **LineEdit**. If ``0``, there is no limit.
+**LineEdit** 中可以輸入的最大字元數。如果為 ``0``\ ，則沒有限制。
 
-When a limit is defined, characters that would exceed :ref:`max_length<class_LineEdit_property_max_length>` are truncated. This happens both for existing :ref:`text<class_LineEdit_property_text>` contents when setting the max length, or for new text inserted in the **LineEdit**, including pasting.
+定義限制後，將截斷超過 :ref:`max_length<class_LineEdit_property_max_length>` 的字元。在設定最大長度時，將適用於現有的 :ref:`text<class_LineEdit_property_text>` 內容，以及在 **LineEdit** 中插入、包括貼上進來的新文字。
 
-If any input text is truncated, the :ref:`text_change_rejected<class_LineEdit_signal_text_change_rejected>` signal is emitted with the truncated substring as a parameter:
+如果輸入文字發生截斷，\ :ref:`text_change_rejected<class_LineEdit_signal_text_change_rejected>` 訊號將以截斷後的子字串作為參數發出。
 
 
 .. tabs::
@@ -1071,21 +1071,21 @@ If any input text is truncated, the :ref:`text_change_rejected<class_LineEdit_si
 
     text = "Hello world"
     max_length = 5
-    # `text` becomes "Hello".
+    # `text` 變為 "Hello"。
     max_length = 10
     text += " goodbye"
-    # `text` becomes "Hello good".
-    # `text_change_rejected` is emitted with "bye" as a parameter.
+    # `text` 變為 "Hello good"。
+    # `text_change_rejected` 以 "bye" 作為參數發出。
 
  .. code-tab:: csharp
 
     Text = "Hello world";
     MaxLength = 5;
-    // `Text` becomes "Hello".
+    // `Text` 變為 "Hello"。
     MaxLength = 10;
     Text += " goodbye";
-    // `Text` becomes "Hello good".
-    // `text_change_rejected` is emitted with "bye" as a parameter.
+    // `text` 變為 "Hello good"。
+    // `text_change_rejected` 以 "bye" 作為參數發出。
 
 
 
@@ -1104,7 +1104,7 @@ If any input text is truncated, the :ref:`text_change_rejected<class_LineEdit_si
 - |void| **set_middle_mouse_paste_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_middle_mouse_paste_enabled**\ (\ )
 
-如果為 ``false``\ ，將禁用滑鼠中鍵貼上剪貼板。
+如果為 ``false``\ ，將停用滑鼠中鍵貼上剪貼簿。
 
 \ **注意：**\ 這個方法只在 Linux 上實作。
 
@@ -1157,7 +1157,7 @@ If any input text is truncated, the :ref:`text_change_rejected<class_LineEdit_si
 - |void| **set_right_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_right_icon_scale**\ (\ )
 
-Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` is set to :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
+:ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` 設定為 :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>` 時圖示的縮放比例。
 
 .. rst-class:: classref-item-separator
 
@@ -1191,7 +1191,7 @@ Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon
 - |void| **set_secret_character**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_secret_character**\ (\ )
 
-The character to use to mask secret input. Only a single character can be used as the secret character. If it is longer than one character, only the first one will be used. If it is empty, a space will be used instead.
+用於掩蓋秘密輸入的字元。只能用單個字元作為秘密字元。如果長度超過一個字元，則僅使用第一個字元。如果為空，則使用空白代替。
 
 .. rst-class:: classref-item-separator
 
@@ -1242,7 +1242,7 @@ The character to use to mask secret input. Only a single character can be used a
 - |void| **set_shortcut_keys_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_keys_enabled**\ (\ )
 
-為 ``true`` 時，即使本文選單已被禁用，也會啟用該本文選單的快捷鍵。
+為 ``true`` 時，即使本文選單已被停用，也會啟用該本文選單的快捷鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ The character to use to mask secret input. Only a single character can be used a
 - |void| **set_virtual_keyboard_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_virtual_keyboard_enabled**\ (\ )
 
-If ``true``, the native virtual keyboard is enabled on platforms that support it.
+如果為 ``true``\ ，則會在支援的平台上啟用原生虛擬鍵盤。
 
 .. rst-class:: classref-item-separator
 
@@ -1346,7 +1346,7 @@ If ``true``, the native virtual keyboard is enabled on platforms that support it
 - |void| **set_virtual_keyboard_show_on_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_virtual_keyboard_show_on_focus**\ (\ )
 
-If ``true``, the native virtual keyboard is shown on focus events on platforms that support it.
+如果為 ``true``\ ，則在收到獲得焦點事件時會在支援的平台上顯示原生虛擬鍵盤。
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ If ``true``, the native virtual keyboard is shown on focus events on platforms t
 
 |void| **apply_ime**\ (\ ) :ref:`🔗<class_LineEdit_method_apply_ime>`
 
-Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) and closes the IME if it is open.
+應用\ `輸入法編輯器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 中的文字，如果輸入法編輯器處於打開狀態，還會將其關閉。
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_
 
 |void| **cancel_ime**\ (\ ) :ref:`🔗<class_LineEdit_method_cancel_ime>`
 
-Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) if it is open. Any text in the IME will be lost.
+如果\ `輸入法編輯器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 處於打開狀態，則會將其關閉。輸入法編輯器中的文字會丟失。
 
 .. rst-class:: classref-item-separator
 
@@ -1452,9 +1452,9 @@ Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ 
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Allows entering edit mode whether the **LineEdit** is focused or not. If ``hide_focus`` is ``true``, the focused state will not be shown (see :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+允許進入編輯模式，無論 **LineEdit** 是否獲得焦點。如果 ``hide_focus`` 為 ``true``\ ，則不會顯示焦點狀態（參見 :ref:`Control.grab_focus()<class_Control_method_grab_focus>`\ ）。
 
-See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+另見 :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1466,7 +1466,7 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`PopupMenu<class_PopupMenu>` **get_menu**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_menu>`
 
-返回該 **LineEdit** 的 :ref:`PopupMenu<class_PopupMenu>`\ 。預設情況下，右鍵點擊 **LineEdit** 會顯示該菜單。
+返回該 **LineEdit** 的 :ref:`PopupMenu<class_PopupMenu>`\ 。預設情況下，右鍵點選 **LineEdit** 會顯示該選單。
 
 可以新增自訂功能表專案或移除標準功能表專案。確保你的 ID 不與標準 ID 衝突（請參閱 :ref:`MenuItems<enum_LineEdit_MenuItems>`\ ）。例如：
 
@@ -1525,9 +1525,9 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`int<class_int>` **get_next_composite_character_column**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LineEdit_method_get_next_composite_character_column>`
 
-Returns the correct column at the end of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the start of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+如果游標位於合成字元的開頭，則回傳該字元末尾所在的正確列。合成字元由多個 Unicode 碼位組合而成（例如修復愛心 ❤️‍🩹 的 Unicode 為 ``U+2764 U+FE0F U+200D U+1FA79``\ ）。如果文字游標位於非合成字元字素的內部，也會回傳正確的列。
 
-\ **Note:** To check at caret location use ``get_next_composite_character_column(get_caret_column())``
+\ **注意：**\ 請使用 ``get_next_composite_character_column(get_caret_column())`` 在文字游標的位置進行檢查
 
 .. rst-class:: classref-item-separator
 
@@ -1539,9 +1539,9 @@ Returns the correct column at the end of a composite character like ❤️‍�
 
 :ref:`int<class_int>` **get_previous_composite_character_column**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LineEdit_method_get_previous_composite_character_column>`
 
-Returns the correct column at the start of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the end of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+如果游標位於合成字元的末尾，則回傳該字元開頭所在的正確列。合成字元由多個 Unicode 碼位組合而成（例如修復愛心 ❤️‍🩹 的 Unicode 為 ``U+2764 U+FE0F U+200D U+1FA79``\ ）。如果文字游標位於非合成字元字素的內部，也會回傳正確的列。
 
-\ **Note:** To check at caret location use ``get_previous_composite_character_column(get_caret_column())``
+\ **注意：**\ 請使用 ``get_previous_composite_character_column(get_caret_column())`` 在文字游標的位置進行檢查
 
 .. rst-class:: classref-item-separator
 
@@ -1553,7 +1553,7 @@ Returns the correct column at the start of a composite character like ❤️‍�
 
 :ref:`float<class_float>` **get_scroll_offset**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_scroll_offset>`
 
-返回 :ref:`caret_column<class_LineEdit_property_caret_column>` 引起的滾動偏移量，單位為字元數。
+返回 :ref:`caret_column<class_LineEdit_property_caret_column>` 引起的捲動偏移量，單位為字元數。
 
 .. rst-class:: classref-item-separator
 
@@ -1601,7 +1601,7 @@ Returns the correct column at the start of a composite character like ❤️‍�
 
 :ref:`bool<class_bool>` **has_ime_text**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_ime_text>`
 
-Returns ``true`` if the user has text in the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME).
+如果使用者的\ `輸入法編輯器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 中存在文字，則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1637,7 +1637,7 @@ Returns ``true`` if the user has text in the `Input Method Editor <https://en.wi
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_undo>`
 
-有“撤銷”動作可用時返回 ``true``\ 。
+有“復原”動作可用時返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1661,7 +1661,7 @@ Returns ``true`` if the user has text in the `Input Method Editor <https://en.wi
 
 :ref:`bool<class_bool>` **is_editing**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_is_editing>`
 
-Returns whether the **LineEdit** is being edited.
+回傳 **LineEdit** 是否處於編輯狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ Returns whether the **LineEdit** is being edited.
 
 :ref:`bool<class_bool>` **is_menu_visible**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_is_menu_visible>`
 
-返回選單是否可見。請使用這個方法來代替 ``get_menu().visible``\ ，可以提高性能（因為避免了選單的建立）。
+返回選單是否可見。請使用這個方法來代替 ``get_menu().visible``\ ，可以提高效能（因為避免了選單的建立）。
 
 .. rst-class:: classref-item-separator
 
@@ -1740,7 +1740,7 @@ Returns whether the **LineEdit** is being edited.
 
 |void| **unedit**\ (\ ) :ref:`🔗<class_LineEdit_method_unedit>`
 
-Allows exiting edit mode while preserving focus.
+允許退出編輯模式，保持焦點。
 
 .. rst-class:: classref-section-separator
 
@@ -1841,7 +1841,7 @@ Allows exiting edit mode while preserving focus.
 
 :ref:`Color<class_Color>` **font_uneditable_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_LineEdit_theme_color_font_uneditable_color>`
 
-禁用編輯時的字形顏色。
+停用編輯時的字形顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1877,7 +1877,7 @@ Allows exiting edit mode while preserving focus.
 
 :ref:`int<class_int>` **minimum_character_width** = ``4`` :ref:`🔗<class_LineEdit_theme_constant_minimum_character_width>`
 
-文字的最小水平空間（不包括清除按鈕和內容邊距）。這個值以“M”字元的數量來衡量（即能夠在不滾動的情況下顯示這麼多個“M”字元）。
+文字的最小水平空間（不包括清除按鈕和內容邊距）。這個值以“M”字元的數量來衡量（即能夠在不捲動的情況下顯示這麼多個“M”字元）。
 
 .. rst-class:: classref-item-separator
 
@@ -1891,7 +1891,7 @@ Allows exiting edit mode while preserving focus.
 
 文字輪廓的大小。
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓渲染才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ Allows exiting edit mode while preserving focus.
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LineEdit_theme_style_focus>`
 
-**LineEdit** 擁有 GUI 焦點時使用的背景。\ :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實作這個目的。要禁用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，禁用聚焦的視覺效果會影響使用鍵盤/手柄進行導覽的可用性，所以出於可存取性的原因，不建議這樣做。
+**LineEdit** 擁有 GUI 焦點時使用的背景。\ :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實作這個目的。要停用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，停用聚焦的視覺效果會影響使用鍵盤/控制器進行導覽的可用性，所以出於可存取性的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 

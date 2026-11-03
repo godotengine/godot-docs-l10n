@@ -14,26 +14,26 @@ RichTextEffect
 說明
 ----
 
-A custom effect for a :ref:`RichTextLabel<class_RichTextLabel>`, which can be loaded in the :ref:`RichTextLabel<class_RichTextLabel>` inspector or using :ref:`RichTextLabel.install_effect()<class_RichTextLabel_method_install_effect>`.
+:ref:`RichTextLabel<class_RichTextLabel>` 的自訂效果，可以在 :ref:`RichTextLabel<class_RichTextLabel>` 屬性檢視器中載入或使用 :ref:`RichTextLabel.install_effect()<class_RichTextLabel_method_install_effect>` 載入。
 
-\ **Note:** For a **RichTextEffect** to be usable, a BBCode tag must be defined as a member variable called ``bbcode`` in the script.
+\ **注意：**\ 要使用 **RichTextEffect**\ ，必須在腳本中定義名為 ``bbcode`` 的成員變數作為 BBCode 標籤。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # The RichTextEffect will be usable like this: `[example]Some text[/example]`
+    # 使用 RichTextEffect 的方式是這樣的：`[example]Some text[/example]`
     var bbcode = "example"
 
  .. code-tab:: csharp
 
-    // The RichTextEffect will be usable like this: `[example]Some text[/example]`
+    // 使用 RichTextEffect 的方式是這樣的：`[example]Some text[/example]`
     string bbcode = "example";
 
 
 
-\ **Note:** As soon as a :ref:`RichTextLabel<class_RichTextLabel>` contains at least one **RichTextEffect**, it will continuously process the effect unless the project is paused. This may impact battery life negatively.
+\ **注意：**\ 只要 :ref:`RichTextLabel<class_RichTextLabel>` 包含至少一個 **RichTextEffect**\ ，它就會持續處理效果，除非專案暫停。這可能會對電池壽命產生負面影響。
 
 .. rst-class:: classref-introduction-group
 

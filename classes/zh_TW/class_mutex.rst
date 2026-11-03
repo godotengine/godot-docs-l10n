@@ -14,15 +14,15 @@ Mutex
 說明
 ----
 
-A synchronization mutex (mutual exclusion). This is used to synchronize multiple :ref:`Thread<class_Thread>`\ s, and is equivalent to a binary :ref:`Semaphore<class_Semaphore>`. It guarantees that only one thread can access a critical section at a time.
+同步互斥器（mutex 來源於 mutual exclusion，即互斥）。可用於在多 :ref:`Thread<class_Thread>` 間進行同步，等價於二元 :ref:`Semaphore<class_Semaphore>`\ 。能夠確保同時只有一個執行緒能夠存取臨界區。
 
-This is a reentrant mutex, meaning that it can be locked multiple times by one thread, provided it also unlocks it as many times.
+這是一種可重入的互斥器，也就是說同一個執行緒能夠將其多次上鎖，只要也進行相同次數的解鎖即可。
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, the following conditions must be met:
+\ **警告：**\ 為了能夠正確清理，避免崩潰和死鎖，必須滿足以下條件：
 
-- When a **Mutex**'s reference count reaches zero and it is therefore destroyed, no threads (including the one on which the destruction will happen) must have it locked.
+- **Mutex** 的參照計數到達零，將被銷毀時，必須沒有執行緒將其鎖定（包括發生析構的執行緒）。
 
-- When a :ref:`Thread<class_Thread>`'s reference count reaches zero and it is therefore destroyed, it must not have any mutex locked.
+- :ref:`Thread<class_Thread>` 的參照計數達到零，將被銷毀時，必須沒有鎖定任何互斥器。
 
 .. rst-class:: classref-introduction-group
 
@@ -92,11 +92,11 @@ This is a reentrant mutex, meaning that it can be locked multiple times by one t
 
 |void| **unlock**\ (\ ) :ref:`🔗<class_Mutex_method_unlock>`
 
-Unlocks this **Mutex**, leaving it to other threads.
+解鎖該 **Mutex**\ ，將其留給其他執行緒。
 
-\ **Note:** If a thread called :ref:`lock()<class_Mutex_method_lock>` or :ref:`try_lock()<class_Mutex_method_try_lock>` multiple times while already having ownership of the mutex, it must also call :ref:`unlock()<class_Mutex_method_unlock>` the same number of times in order to unlock it correctly.
+\ **注意：**\ 如果一個執行緒在已經擁有互斥器的情況下多次呼叫 :ref:`lock()<class_Mutex_method_lock>` 或 :ref:`try_lock()<class_Mutex_method_try_lock>`\ ，則也必須呼叫相同次數的 :ref:`unlock()<class_Mutex_method_unlock>` 才能正確解鎖。
 
-\ **Warning:** Calling :ref:`unlock()<class_Mutex_method_unlock>` more times than :ref:`lock()<class_Mutex_method_lock>` on a given thread, thus ending up trying to unlock a non-locked mutex, is wrong and may causes crashes or deadlocks.
+\ **警告：**\ 在給定的執行緒中呼叫 :ref:`unlock()<class_Mutex_method_unlock>` 的次數超過呼叫 :ref:`lock()<class_Mutex_method_lock>` 的次數，導致嘗試解鎖未加鎖的互斥器，是錯誤的行為，可能引起崩潰和死鎖。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,9 +14,9 @@ FontVariation
 說明
 ----
 
-Provides OpenType variations, simulated bold / slant, and additional font settings like OpenType features and extra spacing.
+提供 OpenType 變體，模擬的粗體/斜體，以及 OpenType 特性和額外間距等額外的字型設定。
 
-To use simulated bold font variant:
+要使用模擬的粗體變體：
 
 
 .. tabs::
@@ -39,7 +39,7 @@ To use simulated bold font variant:
 
 
 
-To set the coordinate of multiple variation axes:
+要設定多個變體軸的座標：
 
 ::
 
@@ -133,7 +133,7 @@ To set the coordinate of multiple variation axes:
 - |void| **set_baseline_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_baseline_offset**\ (\ )
 
-Extra baseline offset (as a fraction of font height).
+額外的基線偏移（作為字型高度的一部分）。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Extra baseline offset (as a fraction of font height).
 - |void| **set_palette_custom_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_custom_colors**\ (\ )
 
-An array of colors to override predefined palette. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+用於覆蓋預定義調色板的顏色陣列。在特定位置使用 ``Color(0, 0, 0, 0)`` 以保留預定義調色板中的原有顏色。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -186,7 +186,7 @@ An array of colors to override predefined palette. Use ``Color(0, 0, 0, 0)``, to
 - |void| **set_palette_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_palette_index**\ (\ )
 
-A palette index.
+一個調色板索引。
 
 .. rst-class:: classref-item-separator
 
@@ -307,11 +307,11 @@ A palette index.
 - |void| **set_variation_opentype**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_variation_opentype**\ (\ )
 
-Font OpenType variation coordinates. More info: `OpenType variation tags <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__.
+字型 OpenType 變體座標。詳見：\ `OpenType 變體標籤 <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__\ 。
 
-\ **Note:** This :ref:`Dictionary<class_Dictionary>` uses OpenType tags as keys. Variation axes can be identified both by tags (:ref:`int<class_int>`, e.g. ``0x77678674``) and names (:ref:`String<class_String>`, e.g. ``wght``). Some axes might be accessible by multiple names. For example, ``wght`` refers to the same axis as ``weight``. Tags on the other hand are unique. To convert between names and tags, use :ref:`TextServer.name_to_tag()<class_TextServer_method_name_to_tag>` and :ref:`TextServer.tag_to_name()<class_TextServer_method_tag_to_name>`.
+\ **注意：**\ 這個 :ref:`Dictionary<class_Dictionary>` 使用 OpenType 標籤作為鍵。變體軸既可以用標籤來標識（\ :ref:`int<class_int>`\ ，例如 ``0x77678674``\ ），也可以用名稱來標識（\ :ref:`String<class_String>`\ ，例如 ``wght``\ ）。有些軸可以通過多個名稱來存取。例如，\ ``wght`` 和 ``weight`` 參照的是同一個軸。而標籤則是唯一的。要在名稱和標籤之間轉換，請使用 :ref:`TextServer.name_to_tag()<class_TextServer_method_name_to_tag>` 和 :ref:`TextServer.tag_to_name()<class_TextServer_method_tag_to_name>`\ 。
 
-\ **Note:** To get available variation axes of a font, use :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`.
+\ **注意：**\ 要取得字型的可用變體軸，請使用 :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Font OpenType variation coordinates. More info: `OpenType variation tags <https:
 
 |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontVariation_method_set_spacing>`
 
-Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the font size).
+將 ``spacing`` 的間距設定為 ``value``\ ，單位為像素（與字型大小無關）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

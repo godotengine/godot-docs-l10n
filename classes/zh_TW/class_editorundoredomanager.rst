@@ -7,14 +7,14 @@ EditorUndoRedoManager
 
 **繼承：** :ref:`Object<class_Object>`
 
-管理編輯器中打開場景的撤銷歷史。
+管理編輯器中打開場景的復原歷史。
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-**EditorUndoRedoManager** 是將 :ref:`UndoRedo<class_UndoRedo>` 物件與編輯場景相關聯的管理器。每個場景都有自己的撤銷歷史，\ **EditorUndoRedoManager** 能夠確保編輯器中執行的每個動作都與正確的場景相關聯。與場景無關的動作（對 :ref:`ProjectSettings<class_ProjectSettings>`\ 、外部資源等物件的編輯）使用單獨的全域歷史。
+**EditorUndoRedoManager** 是將 :ref:`UndoRedo<class_UndoRedo>` 物件與編輯場景相關聯的管理器。每個場景都有自己的復原歷史，\ **EditorUndoRedoManager** 能夠確保編輯器中執行的每個動作都與正確的場景相關聯。與場景無關的動作（對 :ref:`ProjectSettings<class_ProjectSettings>`\ 、外部資源等物件的編輯）使用單獨的全域歷史。
 
 用法與 :ref:`UndoRedo<class_UndoRedo>` 基本一致。需要建立並提交動作，然後管理器會自動決定這個動作屬於哪個場景。場景是根據該動作中第一個操作所使用的物件來推斷的。規則如下：
 
@@ -26,7 +26,7 @@ EditorUndoRedoManager
 
 推斷的結果有時並不準確，所以在建立動作時你可以提供自訂的本文物件。
 
-\ **EditorUndoRedoManager** 是為 Godot 編輯器外掛程式使用而設計的。你可以使用 :ref:`EditorPlugin.get_undo_redo()<class_EditorPlugin_method_get_undo_redo>` 獲取。對於非編輯器使用場景或者不需要與編輯器撤銷歷史記錄集成的外掛程式，請改用 :ref:`UndoRedo<class_UndoRedo>`\ 。
+\ **EditorUndoRedoManager** 是為 Godot 編輯器外掛程式使用而設計的。你可以使用 :ref:`EditorPlugin.get_undo_redo()<class_EditorPlugin_method_get_undo_redo>` 取得。對於非編輯器使用場景或者不需要與編輯器復原歷史記錄集成的外掛程式，請改用 :ref:`UndoRedo<class_UndoRedo>`\ 。
 
 管理器的 API 與 :ref:`UndoRedo<class_UndoRedo>` 基本一致，它的文件中有更多範例。主要區別在於 **EditorUndoRedoManager** 的動作使用物件 + 方法名，而不是 :ref:`Callable<class_Callable>`\ 。
 
@@ -93,7 +93,7 @@ EditorUndoRedoManager
 
 **version_changed**\ (\ ) :ref:`🔗<class_EditorUndoRedoManager_signal_version_changed>`
 
-當任何歷史記錄的版本因撤銷或重做呼叫而變化時發出。
+當任何歷史記錄的版本因復原或重做呼叫而變化時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -124,7 +124,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>` **REMOTE_HISTORY** = ``-9``
 
-與遠程屬性檢視器相關的歷史。在即時編輯正在運作的遊戲專案時使用。
+與遠端屬性檢視器相關的歷史。在即時編輯正在運作的遊戲專案時使用。
 
 .. _class_EditorUndoRedoManager_constant_INVALID_HISTORY:
 
@@ -151,7 +151,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 註冊一個方法，當動作被提交（即“做”的動作）時將被呼叫。
 
-如果這是第一次操作，\ ``object`` 將被用於推斷目標撤銷歷史。
+如果這是第一次操作，\ ``object`` 將被用於推斷目標復原歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 為“做”註冊一個屬性值變更。
 
-如果這是第一次操作，\ ``object`` 將被用於推斷目標撤銷歷史。
+如果這是第一次操作，\ ``object`` 將被用於推斷目標復原歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -189,9 +189,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_method**\ (\ object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_method>`
 
-註冊一個方法，當動作被撤銷時（即“撤銷”動作）將被呼叫。
+註冊一個方法，當動作被復原時（即“復原”動作）將被呼叫。
 
-如果這是第一次操作，\ ``object`` 將被用於推斷目標撤銷歷史。
+如果這是第一次操作，\ ``object`` 將被用於推斷目標復原歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_property>`
 
-為“撤銷”註冊一個屬性值變更。
+為“復原”註冊一個屬性值變更。
 
-如果這是第一次操作，\ ``object`` 將被用於推斷目標撤銷歷史。
+如果這是第一次操作，\ ``object`` 將被用於推斷目標復原歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_reference**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_reference>`
 
-為“撤銷”註冊一個引用，如果“撤銷”歷史丟失，則該引用將被擦除。這主要用於通過“做”呼叫（而不是“撤銷”呼叫！）而移除的節點。
+為“復原”註冊一個引用，如果“復原”歷史丟失，則該引用將被擦除。這主要用於通過“做”呼叫（而不是“復原”呼叫！）而移除的節點。
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **clear_history**\ (\ id\: :ref:`int<class_int>` = -99, increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_clear_history>`
 
-Clears the given undo history. You can clear history for a specific scene, global history, or for all histories at once (except :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>`) if ``id`` is :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
+清空給定的復原歷史。你可以只清空特定場景的歷史、全域歷史、或者如果 ``id`` 為 :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`\ ，則可以一次清除所有歷史記錄（\ :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>` 除外）。
 
-If ``increase_version`` is ``true``, the undo history version will be increased, marking it as unsaved. Useful for operations that modify the scene, but don't support undo.
+如果 ``increase_version`` 為 ``true``\ ，則會增加復原歷史版本並將其設為未儲存。適合會修改場景但不支援復原的操作。
 
 ::
 
@@ -239,7 +239,7 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
     var undo_redo = EditorInterface.get_editor_undo_redo()
     undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
 
-\ **Note:** If you want to mark an edited scene as unsaved without clearing its history, use :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>` instead.
+\ **注意：**\ 如果想要將編輯過的場景標記為未儲存且不清除歷史記錄，請改用 :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 |void| **commit_action**\ (\ execute\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_commit_action>`
 
-Commits the action. If ``execute`` is ``true`` (default), all "do" methods/properties are called/set when this function is called.
+提交該動作。如果 ``execute`` 為 ``true``\ （預設值），則該函式被呼叫時所有“做”方法/屬性將被呼叫/設定。
 
 .. rst-class:: classref-item-separator
 
@@ -263,15 +263,15 @@ Commits the action. If ``execute`` is ``true`` (default), all "do" methods/prope
 
 |void| **create_action**\ (\ name\: :ref:`String<class_String>`, merge_mode\: :ref:`MergeMode<enum_UndoRedo_MergeMode>` = 0, custom_context\: :ref:`Object<class_Object>` = null, backward_undo_ops\: :ref:`bool<class_bool>` = false, mark_unsaved\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_create_action>`
 
-Create a new action. After this is called, do all your calls to :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`, :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`, :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>`, and :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>`, then commit the action with :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`.
+建立一個新的動作。呼叫後，請執行所有你需要的 :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`\ 、\ :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`\ 、\ :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>` 和 :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>` 呼叫，然後再用 :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>` 提交這個動作。
 
-The way actions are merged is dictated by the ``merge_mode`` argument.
+動作的合併方式由 ``merge_mode`` 參數決定。
 
-If ``custom_context`` object is provided, it will be used for deducing target history (instead of using the first operation).
+如果提供了 ``custom_context`` 物件，則它將被用於推斷目標歷史（而不是使用第一個操作）。
 
-The way undo operation are ordered in actions is dictated by ``backward_undo_ops``. When ``backward_undo_ops`` is ``false`` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
+動作中復原操作的順序由 ``backward_undo_ops`` 決定。\ ``backward_undo_ops`` 為 ``false`` 時，復原選項的順序和新增順序一致。也就是說，先新增的操作會先復原。
 
-If ``mark_unsaved`` is ``false``, the action will not mark the history as unsaved. This is useful for example for actions that change a selection, or a setting that will be saved automatically. Otherwise, this should be left to ``true`` if the action requires saving by the user or if it can cause data loss when left unsaved.
+如果 ``mark_unsaved`` 為 ``false``\ ，則該動作不會將歷史標記為未儲存。例如，適用於修改選中項的動作，或自動儲存的設定項。否則，如果動作需要使用者進行儲存或不儲存可能導致資料丟失，請將其保持為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ If ``mark_unsaved`` is ``false``, the action will not mark the history as unsave
 
 |void| **force_fixed_history**\ (\ ) :ref:`🔗<class_EditorUndoRedoManager_method_force_fixed_history>`
 
-Forces the next operation (e.g. :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`) to use the action's history rather than guessing it from the object. This is sometimes needed when a history can't be correctly determined, like for a nested resource that doesn't have a path yet.
+強制下一個操作（例如 :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`\ ）使用操作的歷史記錄，而不是從物件中猜測。當無法正確確定歷史記錄時，有時需要這樣做，例如對於尚未有路徑的巢狀資源。
 
-This method should only be used when absolutely necessary, otherwise it might cause invalid history state. For most of complex cases, the ``custom_context`` parameter of :ref:`create_action()<class_EditorUndoRedoManager_method_create_action>` is sufficient.
+僅應在絕對必要時使用該方法，否則可能會導致無效的歷史記錄狀態。對於大多數複雜情況，\ :ref:`create_action()<class_EditorUndoRedoManager_method_create_action>` 的 ``custom_context`` 參數就足夠了。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ This method should only be used when absolutely necessary, otherwise it might ca
 
 \ ``0`` 以上的 ``id`` 被對應到打開的場景分頁（但它與它們的順序不配對）。\ ``0`` 或更低的 ``id`` 具有特殊含義（參閱 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>`\ ）。
 
-最好與 :ref:`get_object_history_id()<class_EditorUndoRedoManager_method_get_object_history_id>` 一起使用。該方法被提供，只是以防需要 :ref:`UndoRedo<class_UndoRedo>` 的一些更高級的方法的情況（但請記住，直接操作 :ref:`UndoRedo<class_UndoRedo>` 物件可能會影響編輯器的穩定性）。
+最好與 :ref:`get_object_history_id()<class_EditorUndoRedoManager_method_get_object_history_id>` 一起使用。該方法被提供，只是以防需要 :ref:`UndoRedo<class_UndoRedo>` 的一些更進階的方法的情況（但請記住，直接操作 :ref:`UndoRedo<class_UndoRedo>` 物件可能會影響編輯器的穩定性）。
 
 .. rst-class:: classref-item-separator
 

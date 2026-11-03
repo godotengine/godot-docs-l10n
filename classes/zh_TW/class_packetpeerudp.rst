@@ -14,21 +14,21 @@ UDP 資料包使用者端。
 說明
 ----
 
-UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
+UDP 封包對等端。可以用來發送和接收原始 UPD 封包和 :ref:`Variant<class_Variant>`\ 。
 
-\ **Example:** Send a packet:
+\ **範例：**\ 發送封包：
 
 ::
 
     var peer = PacketPeerUDP.new()
 
-    # Optionally, you can select the local port used to send the packet.
+    # 可以自行選擇用於發送封包的本機連接埠。
     peer.bind(4444)
 
     peer.set_dest_address("1.1.1.1", 4433)
     peer.put_packet("hello".to_utf8_buffer())
 
-\ **Example:** Listen for packets:
+\ **範例：**\ 監聽封包：
 
 ::
 
@@ -43,9 +43,9 @@ UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref
         if peer.get_available_packet_count() > 0:
             var array_bytes = peer.get_packet()
             var packet_string = array_bytes.get_string_from_ascii()
-            print("Received message: ", packet_string)
+            print("收到訊息：", packet_string)
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **注意：**\ 匯出到 Android 時，請確保在匯出專案和使用一鍵部署前啟用 Android 匯出預設中的 ``INTERNET`` 權限。否則 Android 會阻止所有網路通信。
 
 .. rst-class:: classref-reftable-group
 
@@ -98,13 +98,13 @@ UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ port\: :ref:`int<class_int>`, bind_address\: :ref:`String<class_String>` = "*", recv_buf_size\: :ref:`int<class_int>` = 65536\ ) :ref:`🔗<class_PacketPeerUDP_method_bind>`
 
-Binds this **PacketPeerUDP** to the specified ``port`` and ``bind_address`` with a buffer size ``recv_buf_size``, allowing it to receive incoming packets.
+將該 **PacketPeerUDP** 綁定到指定的 ``port`` 和 ``bind_address``\ ，其緩衝區大小為 ``recv_buf_size``\ ，允許它接收傳入的封包。
 
-If ``bind_address`` is set to ``"*"`` (default), the peer will be bound on all available addresses (both IPv4 and IPv6).
+如果 ``bind_address`` 被設定為 ``"*"``\ （預設），對等端將被綁定到所有可用位址（IPv4 和 IPv6）。
 
-If ``bind_address`` is set to ``"0.0.0.0"`` (for IPv4) or ``"::"`` (for IPv6), the peer will be bound to all available addresses matching that IP type.
+如果 ``bind_address`` 被設定為 ``"0.0.0.0"``\ （對於 IPv4）或 ``"::"``\ （對於 IPv6），對等端將被綁定到匹配該 IP 型別的所有可用位址。
 
-If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::1"``, etc.), the peer will only be bound to the interface with that address (or fail if no interface with the given address exists).
+如果 ``bind_address`` 被設定為任何有效位址（例如 ``"192.168.1.101"``\ 、\ ``"::1"`` 等），對等端將只被綁定到該位址的介面（如果不存在具有給定位址的介面，則失敗）。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::
 
 :ref:`String<class_String>` **get_packet_ip**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_packet_ip>`
 
-返回發送最後一個封包（通過 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的遠程對等體的 IP。
+返回發送最後一個封包（通過 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的遠端對等體的 IP。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::
 
 |void| **set_broadcast_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PacketPeerUDP_method_set_broadcast_enabled>`
 
-啟用或禁用廣播封包的發送（例如：\ ``set_dest_address("255.255.255.255", 4343)``\ 。這個選項在預設情況下是禁用的。
+啟用或停用廣播封包的發送（例如：\ ``set_dest_address("255.255.255.255", 4343)``\ 。這個選項在預設情況下是停用的。
 
 \ **注意：**\ 一些 Android 裝置可能需要 ``CHANGE_WIFI_MULTICAST_STATE`` 許可權和本選項被啟用來接收廣播包。
 
@@ -258,9 +258,9 @@ If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::
 
 :ref:`Error<enum_@GlobalScope_Error>` **wait**\ (\ ) :ref:`🔗<class_PacketPeerUDP_method_wait>`
 
-Waits for a packet to arrive on the bound address. See :ref:`bind()<class_PacketPeerUDP_method_bind>`.
+等待封包到達綁定的位址。見 :ref:`bind()<class_PacketPeerUDP_method_bind>`\ 。
 
-\ **Note:** :ref:`wait()<class_PacketPeerUDP_method_wait>` can't be interrupted once it has been called. This can be worked around by allowing the other party to send a specific "death pill" packet like this:
+\ **注意：**\ :ref:`wait()<class_PacketPeerUDP_method_wait>` 一旦被呼叫就無法中斷。解決方法是讓對方發送一個特定的“毒藥”封包，如下所示：
 
 
 .. tabs::
@@ -268,11 +268,11 @@ Waits for a packet to arrive on the bound address. See :ref:`bind()<class_Packet
  .. code-tab:: gdscript
 
     socket = PacketPeerUDP.new()
-    # Server
+    # 伺服器
     socket.set_dest_address("127.0.0.1", 789)
     socket.put_packet("Time to stop".to_ascii_buffer())
 
-    # Client
+    # 用戶端
     while socket.wait() == OK:
         var data = socket.get_packet().get_string_from_ascii()
         if data == "Time to stop":
@@ -281,11 +281,11 @@ Waits for a packet to arrive on the bound address. See :ref:`bind()<class_Packet
  .. code-tab:: csharp
 
     var socket = new PacketPeerUdp();
-    // Server
+    // 伺服器
     socket.SetDestAddress("127.0.0.1", 789);
     socket.PutPacket("Time to stop".ToAsciiBuffer());
 
-    // Client
+    // 用戶端
     while (socket.Wait() == OK)
     {
         string data = socket.GetPacket().GetStringFromASCII();
