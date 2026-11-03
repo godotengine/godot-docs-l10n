@@ -44,197 +44,201 @@ msgid "Rendering 2D elements in a 3D game"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:26
-msgid "Rendering dynamic textures"
-msgstr ""
-
-#: ../../docs/tutorials/rendering/viewports.rst:27
-msgid "Generating procedural textures at runtime"
+msgid "Rendering dynamic textures (more flexible than :ref:`drawable textures <doc_drawable_textures>`, but with greater overhead)"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/viewports.rst:28
+msgid "Generating procedural textures at runtime"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/viewports.rst:29
 msgid "Rendering multiple cameras in the same scene"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:30
+#: ../../docs/tutorials/rendering/viewports.rst:31
 msgid "What all these use cases have in common is that you are given the ability to draw objects to a texture as if it were another screen and can then choose what to do with the resulting texture."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:34
+#: ../../docs/tutorials/rendering/viewports.rst:35
 msgid "Another kind of Viewports in Godot are :ref:`Windows <class_Window>`. They allow their content to be projected onto a window. While the Root Viewport is a Window, they are less flexible. If you want to use the texture of a Viewport, you'll be working with :ref:`SubViewports <class_SubViewport>` most of the time."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:38
+#: ../../docs/tutorials/rendering/viewports.rst:39
 msgid "Input"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:40
+#: ../../docs/tutorials/rendering/viewports.rst:41
 msgid ":ref:`Viewports <class_Viewport>` are also responsible for delivering properly adjusted and scaled input events to their children nodes. By default :ref:`SubViewports <class_SubViewport>` don't automatically receive input, unless they receive it from their direct :ref:`SubViewportContainer <class_SubViewportContainer>` parent node. In this case, input can be disabled with the :ref:`Disable Input <class_Viewport_property_gui_disable_input>` property."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:48
+#: ../../docs/tutorials/rendering/viewports.rst:49
 msgid "For more information on how Godot handles input, please read the :ref:`Input Event Tutorial <doc_inputevent>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:51
+#: ../../docs/tutorials/rendering/viewports.rst:52
 msgid "Listener"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:53
+#: ../../docs/tutorials/rendering/viewports.rst:54
 msgid "Godot supports 3D sound (in both 2D and 3D nodes). More on this can be found in the :ref:`Audio Streams Tutorial <doc_audio_streams>`. For this type of sound to be audible, the :ref:`Viewport <class_Viewport>` needs to be enabled as a listener (for 2D or 3D). If you are using a :ref:`SubViewport <class_SubViewport>` to display your :ref:`World3D <class_World3D>` or :ref:`World2D <class_World2D>`, don't forget to enable this!"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:60
+#: ../../docs/tutorials/rendering/viewports.rst:61
 msgid "Cameras (2D & 3D)"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:62
-msgid "When using a :ref:`Camera3D <class_Camera3D>` or :ref:`Camera2D <class_Camera2D>`, it will always display on the closest parent :ref:`Viewport <class_Viewport>` (going towards the root). For example, in the following hierarchy:"
+#: ../../docs/tutorials/rendering/viewports.rst:63
+msgid "When using a :ref:`Camera3D <class_Camera3D>` or :ref:`Camera2D <class_Camera2D>`, it will always display on the closest parent :ref:`class_Viewport` (going towards the root). For example, in the following hierarchy:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:69
-msgid "``CameraA`` will display on the Root :ref:`Viewport <class_Viewport>` and it will draw ``MeshA``. ``CameraB`` will be captured by the :ref:`SubViewport <class_SubViewport>` along with ``MeshB``. Even though ``MeshB`` is in the scene hierarchy, it will still not be drawn to the Root Viewport. Similarly, ``MeshA`` will not be visible from the SubViewport because SubViewports only capture nodes below them in the hierarchy."
+#: ../../docs/tutorials/rendering/viewports.rst:70
+msgid "By default, SubViewports use the same *world* as the root Viewport. This means that if you have multiple cameras in the same world, they will all render the same objects. You can adjust this behavior by using a separate :ref:`world <doc_viewports_worlds>` for the SubViewport, which will prevent it from rendering objects in the root Viewport's world (and vice versa)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:75
+#: ../../docs/tutorials/rendering/viewports.rst:76
+msgid "In the above example, ``CameraA`` will display on the Root :ref:`class_Viewport` and it will draw ``MeshA``. ``CameraB`` will be captured by the :ref:`class_SubViewport` along with ``MeshB``. Since ``MeshB`` is part of the scene hierarchy, it will still be drawn to the Root Viewport. Similarly, ``MeshA`` will be visible from the SubViewport as it uses the same world as the root Viewport. If we made the SubViewport use its own world, then ``MeshA`` would be hidden in the SubViewport and ``MeshB`` would be hidden in the Root Viewport."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/viewports.rst:85
 msgid "There can only be one active camera per :ref:`Viewport <class_Viewport>`, so if there is more than one, make sure that the desired one has the :ref:`current <class_Camera3D_property_current>` property set, or make it the current camera by calling:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:88
+#: ../../docs/tutorials/rendering/viewports.rst:98
 msgid "By default, cameras will render all objects in their world. In 3D, cameras can use their :ref:`cull_mask <class_Camera3D_property_cull_mask>` property combined with the :ref:`VisualInstance3D's <class_VisualInstance3D>` :ref:`layer <class_VisualInstance3D_property_layers>` property to restrict which objects are rendered."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:94
+#: ../../docs/tutorials/rendering/viewports.rst:104
 msgid "Scale & stretching"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:96
+#: ../../docs/tutorials/rendering/viewports.rst:106
 msgid ":ref:`SubViewports <class_SubViewport>` have a :ref:`size<class_SubViewport_property_size>` property, which represents the size of the SubViewport in pixels. For SubViewports which are children of :ref:`SubViewportContainers <class_SubViewportContainer>`, these values are overridden, but for all others, this sets their resolution."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:100
+#: ../../docs/tutorials/rendering/viewports.rst:110
 msgid "It is also possible to scale the 2D content and make the :ref:`SubViewport <class_SubViewport>` resolution different from the one specified in size, by calling:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:114
+#: ../../docs/tutorials/rendering/viewports.rst:124
 msgid "For information on scaling and stretching with the Root Viewport visit the :ref:`Multiple Resolutions Tutorial <doc_multiple_resolutions>`"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:117
+#: ../../docs/tutorials/rendering/viewports.rst:129
 msgid "Worlds"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:119
+#: ../../docs/tutorials/rendering/viewports.rst:131
 msgid "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World3D <class_World3D>`. This is basically the universe that links physics and rendering together. Node3D-based nodes will register using the World3D of the closest Viewport. By default, newly created Viewports do not contain a World3D but use the same as their parent Viewport. The Root Viewport always contains a World3D, which is the one objects are rendered to by default."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:126
+#: ../../docs/tutorials/rendering/viewports.rst:138
 msgid "A :ref:`World3D <class_World3D>` can be set in a :ref:`Viewport <class_Viewport>` using the :ref:`World 3D<class_Viewport_property_world_3d>` property, that will separate all children nodes of this :ref:`Viewport <class_Viewport>` and will prevent them from interacting with the parent Viewport's World3D. This is especially useful in scenarios where, for example, you might want to show a separate character in 3D imposed over the game (like in StarCraft)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:133
+#: ../../docs/tutorials/rendering/viewports.rst:145
 msgid "As a helper for situations where you want to create :ref:`Viewports <class_Viewport>` that display single objects and don't want to create a :ref:`World3D <class_World3D>`, Viewport has the option to use its :ref:`Own World3D <class_Viewport_property_own_world_3d>`. This is useful when you want to instantiate 3D characters or objects in :ref:`World2D <class_World2D>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:138
+#: ../../docs/tutorials/rendering/viewports.rst:150
 msgid "For 2D, each :ref:`Viewport <class_Viewport>` always contains its own :ref:`World2D <class_World2D>`. This suffices in most cases, but in case sharing them may be desired, it is possible to do so by setting :ref:`world_2d<class_Viewport_property_world_2d>` on the Viewport through code."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:142
+#: ../../docs/tutorials/rendering/viewports.rst:154
 msgid "For an example of how this works, see the demo projects `3D in 2D <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/2d_in_3d>`_ respectively."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:145
+#: ../../docs/tutorials/rendering/viewports.rst:157
 msgid "Capture"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:147
+#: ../../docs/tutorials/rendering/viewports.rst:159
 msgid "It is possible to query a capture of the :ref:`Viewport <class_Viewport>` contents. For the Root Viewport, this is effectively a screen capture. This is done with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:170
+#: ../../docs/tutorials/rendering/viewports.rst:182
 msgid "But if you use this in ``_ready()`` or from the first frame of the :ref:`Viewport's <class_Viewport>` initialization, you will get an empty texture because there is nothing to get as texture. You can deal with it using (for example):"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:188
+#: ../../docs/tutorials/rendering/viewports.rst:200
 msgid "Viewport Container"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:190
+#: ../../docs/tutorials/rendering/viewports.rst:202
 msgid "If the :ref:`SubViewport <class_SubViewport>` is a child of a :ref:`SubViewportContainer <class_SubViewportContainer>`, it will become active and display anything it has inside. The layout looks like this:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:194
+#: ../../docs/tutorials/rendering/viewports.rst:206
 msgid "The :ref:`SubViewport <class_SubViewport>` will cover the area of its parent :ref:`SubViewportContainer <class_SubViewportContainer>` completely if :ref:`Stretch<class_SubViewportContainer_property_stretch>` is set to ``true`` in the SubViewportContainer."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:199
+#: ../../docs/tutorials/rendering/viewports.rst:211
 msgid "The size of the :ref:`SubViewportContainer <class_SubViewportContainer>` cannot be smaller than the size of the :ref:`SubViewport <class_SubViewport>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:202
+#: ../../docs/tutorials/rendering/viewports.rst:214
 msgid "Rendering"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:204
+#: ../../docs/tutorials/rendering/viewports.rst:216
 msgid "Due to the fact that the :ref:`Viewport <class_Viewport>` is an entryway into another rendering surface, it exposes a few rendering properties that can be different from the project settings. You can choose to use a different level of :ref:`MSAA <class_Viewport_property_msaa_2d>` for each Viewport. The default behavior is ``Disabled``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:208
+#: ../../docs/tutorials/rendering/viewports.rst:220
 msgid "If you know that the :ref:`Viewport <class_Viewport>` is only going to be used for 2D, you can :ref:`Disable 3D<class_Viewport_property_disable_3d>`. Godot will then restrict how the Viewport is drawn. Disabling 3D is slightly faster and uses less memory compared to enabled 3D. It's a good idea to disable 3D if your viewport doesn't render anything in 3D."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:214
+#: ../../docs/tutorials/rendering/viewports.rst:226
 msgid "If you need to render 3D shadows in the viewport, make sure to set the viewport's :ref:`positional_shadow_atlas_size<class_Viewport_property_positional_shadow_atlas_size>` property to a value higher than ``0``. Otherwise, shadows won't be rendered. By default, the equivalent project setting is set to ``4096`` on desktop platforms and ``2048`` on mobile platforms."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:217
+#: ../../docs/tutorials/rendering/viewports.rst:229
 msgid "Godot also provides a way of customizing how everything is drawn inside :ref:`Viewports <class_Viewport>` using :ref:`Debug Draw<class_Viewport_property_debug_draw>`. Debug Draw allows you to specify a mode which determines how the Viewport will display things drawn inside it. Debug Draw is ``Disabled`` by default. Some other options are ``Unshaded``, ``Overdraw``, and ``Wireframe``. For a full list, refer to the :ref:`Viewport Documentation<class_Viewport_property_debug_draw>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:221
+#: ../../docs/tutorials/rendering/viewports.rst:233
 msgid "**Debug Draw = Disabled** (default): The scene is drawn normally."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:225
+#: ../../docs/tutorials/rendering/viewports.rst:237
 msgid "**Debug Draw = Unshaded**: Unshaded draws the scene without using lighting information so all the objects appear flatly colored in their albedo color."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:229
+#: ../../docs/tutorials/rendering/viewports.rst:241
 msgid "**Debug Draw = Overdraw**: Overdraw draws the meshes semi-transparent with an additive blend so you can see how the meshes overlap."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:233
+#: ../../docs/tutorials/rendering/viewports.rst:245
 msgid "**Debug Draw = Wireframe**: Wireframe draws the scene using only the edges of triangles in the meshes."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:239
+#: ../../docs/tutorials/rendering/viewports.rst:251
 msgid "Debug Draw modes are currently **not** supported when using the Compatibility rendering method. They will appear as regular draw modes."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:243
+#: ../../docs/tutorials/rendering/viewports.rst:255
 msgid "Render target"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:245
+#: ../../docs/tutorials/rendering/viewports.rst:257
 msgid "When rendering to a :ref:`SubViewport <class_SubViewport>`, whatever is inside will not be visible in the scene editor. To display the contents, you have to draw the SubViewport's :ref:`ViewportTexture <class_ViewportTexture>` somewhere. This can be requested via code using (for example):"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:262
+#: ../../docs/tutorials/rendering/viewports.rst:274
 msgid "Or it can be assigned in the editor by selecting \"New ViewportTexture\""
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:266
+#: ../../docs/tutorials/rendering/viewports.rst:278
 msgid "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:270
+#: ../../docs/tutorials/rendering/viewports.rst:282
 msgid "Every frame, the :ref:`Viewport's <class_Viewport>` texture is cleared away with the default clear color (or a transparent color if :ref:`Transparent BG<class_Viewport_property_transparent_bg>` is set to ``true``). This can be changed by setting :ref:`Clear Mode<class_SubViewport_property_render_target_clear_mode>` to ``Never`` or ``Next Frame``. As the name implies, Never means the texture will never be cleared, while next frame will clear the texture on the next frame and then set itself to Never."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:275
+#: ../../docs/tutorials/rendering/viewports.rst:287
 msgid "By default, re-rendering of the :ref:`SubViewport <class_SubViewport>` happens when its :ref:`ViewportTexture <class_ViewportTexture>` has been drawn in a frame. If visible, it will be rendered, otherwise, it will not. This behavior can be changed by setting :ref:`Update Mode<class_SubViewport_property_render_target_update_mode>` to ``Never``, ``Once``, ``Always``, or ``When Parent Visible``. Never and Always will never or always re-render respectively. Once will re-render the next frame and change to Never afterwards. This can be used to manually update the Viewport. This flexibility allows users to render an image once and then use the texture without incurring the cost of rendering every frame."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/viewports.rst:283
+#: ../../docs/tutorials/rendering/viewports.rst:295
 msgid "Make sure to check the Viewport demos. They are available in the viewport folder of the demos archive, or at https://github.com/godotengine/godot-demo-projects/tree/master/viewport."
 msgstr ""

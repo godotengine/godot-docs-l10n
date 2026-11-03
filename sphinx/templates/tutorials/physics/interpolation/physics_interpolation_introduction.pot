@@ -80,7 +80,7 @@ msgid "Lock the tick rate, but use interpolation to smooth frames in between phy
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:84
-msgid "This has become one of the most popular approaches to deal with the problem, although it is optional and disabled by default."
+msgid "This has become one of the most popular approaches to deal with the problem. For this, Godot provides a system referred to as **physics interpolation**."
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:87
@@ -172,7 +172,7 @@ msgid "Putting all this together shows that it should be possible to have a nice
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:181
-msgid "But wait, you may have noticed something. If we are interpolating between the current and previous ticks, we are not estimating the position of the object *now*, we are estimating the position of the object in the past. To be exact, we are estimating the position of the object *between 1 and 2 ticks* into the past."
+msgid "But wait, you may have noticed something. If we are interpolating between the current and previous ticks, we are not estimating the position of the object *now*, we are estimating the position of the object in the past. To be exact, we are estimating the position of the object *1 tick* into the past."
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:187
@@ -184,41 +184,45 @@ msgid "What does this mean? This scheme does work, but it does mean we are effec
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:193
-msgid "In practice, most people won't notice this delay, or rather, it is typically not *objectionable*. There are already significant delays involved in games, we just don't typically notice them. The most significant effect is there can be a slight delay to input, which can be a factor in fast twitch games. In some of these fast input situations, you may wish to turn off physics interpolation and use a different scheme, or use a high tick rate, which mitigates these delays."
-msgstr ""
-
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:201
-msgid "Why look into the past? Why not predict the future?"
+msgid "In practice, most people won't notice this delay, or rather, it is typically not *objectionable*. There are already significant delays involved in games, we just don't typically notice them. The most significant effect is there can be a slight delay to input, which can be a factor in fast twitch games. In some of these fast input situations, you may wish to turn off physics interpolation and use a different scheme, particularly for :ref:`class_Camera3D` (see :ref:`doc_advanced_physics_interpolation`), or use a high tick rate, which mitigates these delays."
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:203
+msgid "Why look into the past? Why not predict the future?"
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:205
 msgid "There is an alternative to this scheme, which is: instead of interpolating between the previous and current tick, we use math to *extrapolate* into the future. We try to predict where the object *will be*, rather than show it where it was. This can be done and may be offered as an option in future, but there are some significant downsides:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:209
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:211
 msgid "The prediction may not be correct, especially when an object collides with another object during the physics tick."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:211
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:213
 msgid "Where a prediction was incorrect, the object may extrapolate into an \"impossible\" position, like inside a wall."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:213
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:215
 msgid "Providing the movement speed is slow, these incorrect predictions may not be too much of a problem."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:215
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:217
 msgid "When a prediction was incorrect, the object may have to jump or snap back onto the corrected path. This can be visually jarring."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:219
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:221
 msgid "Fixed timestep interpolation"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:221
-msgid "In Godot this whole system is referred to as physics interpolation, but you may also hear it referred to as **\"fixed timestep interpolation\"**, as it is interpolating between objects moved with a fixed timestep (physics ticks per second). In some ways the second term is more accurate, because it can also be used to interpolate objects that are not driven by physics."
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:223
+msgid "In Godot this whole system is referred to as physics interpolation, but you may also hear it referred to as **\"fixed timestep interpolation\"**, as it involves interpolating between objects moved with a fixed timestep (physics ticks per second). In many ways the second term is more accurate, because the system can also be used to interpolate objects that are not driven by physics."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:227
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:231
+msgid "Physics interpolation is optional, and disabled by default."
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:233
 msgid "Although physics interpolation is usually a good choice, there are exceptions where you may choose not to use Godot's built-in physics interpolation (or use it in a limited fashion). An example category is internet multiplayer games. Multiplayer games often receive tick or timing based information from other players or a server and these may not coincide with local physics ticks, so a custom interpolation technique can often be a better fit."
 msgstr ""

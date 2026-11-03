@@ -43,572 +43,572 @@ msgstr ""
 msgid "Here is a complete class example based on these guidelines:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:109
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:116
 msgid "Formatting"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:112
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:119
 msgid "Encoding and special characters"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:114
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:121
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:115
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:122
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:116
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:123
 msgid "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:117
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:124
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:120
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:127
 msgid "Indentation"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:122
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:129
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:124
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:148
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:171
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:228
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:254
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:310
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:355
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:396
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:428
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:457
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:485
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:512
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:573
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:594
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:613
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:758
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1014
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1050
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:131
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:155
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:178
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:235
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:261
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:317
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:362
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:403
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:435
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:464
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:492
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:519
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:580
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:601
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:620
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:765
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1021
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1057
 msgid "**Good**:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:133
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:158
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:196
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:240
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:262
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:322
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:376
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:405
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:437
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:466
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:494
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:525
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:582
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:602
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:625
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:771
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1029
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1058
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:140
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:165
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:203
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:247
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:269
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:329
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:383
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:412
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:444
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:473
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:501
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:532
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:589
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:609
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:632
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:778
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1036
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1065
 msgid "**Bad**:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:145
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:152
 msgid "Use 2 indent levels to distinguish continuation lines from regular code blocks."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:168
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:175
 msgid "Exceptions to this rule are arrays, dictionaries, and enums. Use a single indentation level to distinguish continuation lines:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:222
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:229
 msgid "Trailing comma"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:224
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:231
 msgid "Use a trailing comma on the last line in arrays, dictionaries, and enums. This results in easier refactoring and better diffs in version control as the last line doesn't need to be modified when adding new elements."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:252
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:259
 msgid "Trailing commas are unnecessary in single-line lists, so don't add them in this case."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:271
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:278
 msgid "Blank lines"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:273
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:280
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:288
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:295
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:292
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:299
 msgid "We use a single line between classes and function definitions in the class reference and in short code snippets in this documentation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:296
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:303
 msgid "Line length"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:298
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:305
 msgid "Keep individual lines of code under 100 characters."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:300
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:307
 msgid "If you can, try to keep lines under 80 characters. This helps to read the code on small displays and with two scripts opened side-by-side in an external text editor. For example, when looking at a differential revision."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:305
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:312
 msgid "One statement per line"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:307
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:314
 msgid "Avoid combining multiple statements on a single line, including conditional statements, to adhere to the GDScript style guidelines for readability."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:332
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:339
 msgid "The only exception to that rule is the ternary operator:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:339
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:346
 msgid "Format multiline statements for readability"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:341
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:348
 msgid "When you have particularly long ``if`` statements or nested ternary expressions, wrapping them over multiple lines improves readability. Since continuation lines are still part of the same expression, 2 indent levels should be used instead of one."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:345
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:352
 msgid "GDScript allows wrapping statements using multiple lines using parentheses or backslashes. Parentheses are favored in this style guide since they make for easier refactoring. With backslashes, you have to ensure that the last line never contains a backslash at the end. With parentheses, you don't have to worry about the last line having a backslash at the end."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:351
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:358
 msgid "When wrapping a conditional expression over multiple lines, the ``and``/``or`` keywords should be placed at the beginning of the line continuation, not at the end of the previous line."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:390
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:397
 msgid "Avoid unnecessary parentheses"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:392
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:399
 msgid "Avoid parentheses in expressions and conditional statements. Unless necessary for order of operations or wrapping over multiple lines, they only reduce readability."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:417
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:424
 msgid "Boolean operators"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:419
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:426
 msgid "Prefer the plain English versions of boolean operators, as they are the most accessible:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:421
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:428
 msgid "Use ``and`` instead of ``&&``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:422
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:429
 msgid "Use ``or`` instead of ``||``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:423
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:430
 msgid "Use ``not`` instead of ``!``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:425
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:432
 msgid "You may also use parentheses around boolean operators to clear any ambiguity. This can make long expressions easier to read."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:447
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:454
 msgid "Comment spacing"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:449
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:456
 msgid "Regular comments (``#``) and documentation comments (``##``) should start with a space, but not code that you comment out. Additionally, code region comments (``#region``/``#endregion``) must follow that precise syntax, so they should not start with a space."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:454
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:461
 msgid "Using a space for regular and documentation comments helps differentiate text comments from disabled code."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:477
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:484
 msgid "In the script editor, to toggle commenting of the selected code, press :kbd:`Ctrl + K`. This shortcut adds/removes a single ``#`` sign before any code on the selected lines."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:481
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:488
 msgid "Prefer writing comments on their own line as opposed to inline comments (comments written on the same line as code). Inline comments are best used for short comments, typically a few words at most:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:503
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:510
 msgid "Whitespace"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:505
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:512
 msgid "Always use one space around operators and after commas. Also, avoid extra spaces in dictionary references and function calls. One exception to this is for single-line dictionary declarations, where a space should be added after the opening brace and before the closing brace. This makes the dictionary easier to visually distinguish from an array, as the ``[]`` characters look close to ``{}`` with most fonts."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:538
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:545
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:547
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:554
 msgid "Quotes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:549
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:556
 msgid "Use double quotes unless single quotes make it possible to escape fewer characters in a given string. See the examples below:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:567
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:574
 msgid "Numbers"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:569
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:576
 msgid "Don't omit the leading or trailing zero in floating-point numbers. Otherwise, this makes them less readable and harder to distinguish from integers at a glance."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:591
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:598
 msgid "Use lowercase for letters in hexadecimal numbers, as their lower height makes the number easier to read."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:610
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:617
 msgid "Take advantage of GDScript's underscores in literals to make large numbers more readable."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:640
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:647
 msgid "Naming conventions"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:642
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:649
 msgid "These naming conventions follow the Godot Engine style. Breaking these will make your code clash with the built-in naming conventions, leading to inconsistent code. As a summary table:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:647
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:654
 msgid "Type"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:647
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:654
 msgid "Convention"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:647
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:654
 msgid "Example"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:649
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:669
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:656
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:676
 msgid "File names"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:649
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:655
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:657
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:659
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:656
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:662
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:664
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:666
 msgid "snake_case"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:649
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:656
 msgid "``yaml_parser.gd``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:651
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:658
 msgid "Class names"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:651
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:653
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:663
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:658
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:660
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "PascalCase"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:651
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:658
 msgid "``class_name YAMLParser``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:653
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:660
 msgid "Node names"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:653
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:660
 msgid "``Camera3D``, ``Player``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:655
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:662
 msgid "Functions"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:655
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:662
 msgid "``func load_level():``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:664
 msgid "Variables"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:664
 msgid "``var particle_effect``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:659
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:724
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:666
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:731
 msgid "Signals"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:659
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:666
 msgid "``signal door_opened``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:661
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:668
 msgid "Constants"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:661
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:665
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:668
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:672
 msgid "CONSTANT_CASE"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:661
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:668
 msgid "``const MAX_SPEED = 200``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:663
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "Enum names"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:663
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "``enum Element``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:665
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:672
 msgid "Enum members"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:665
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:672
 msgid "``{EARTH, WATER, AIR, FIRE}``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:671
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:678
 msgid "Use snake_case for file names. For named classes, convert the PascalCase class name to snake_case:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:686
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:693
 msgid "This is consistent with how C++ files are named in Godot's source code. This also avoids case sensitivity issues that can crop up when exporting a project from Windows to other platforms."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:691
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:698
 msgid "Classes and nodes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:693
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:700
 msgid "Use PascalCase for class and node names:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:699
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:706
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:706
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:713
 msgid "Functions and variables"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:708
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:715
 msgid "Use snake\\_case to name functions and variables:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:715
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:722
 msgid "Prepend a single underscore (\\_) to virtual methods/functions the user must override, private functions, and private variables:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:726
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:733
 msgid "Use the past tense to name signals:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:734
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "Constants and enums"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:736
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:743
 msgid "Write constants with CONSTANT\\_CASE, that is to say in all caps with an underscore (\\_) to separate words:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:743
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:750
 msgid "Use PascalCase for enum *names* and keep them singular, as they represent a type. Use CONSTANT\\_CASE for their members, as they are constants:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:755
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:762
 msgid "Write enums with each item on its own line. This allows adding documentation comments above each item more easily, and also makes for cleaner diffs in version control when items are added or removed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:780
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:787
 msgid "Code order"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:782
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:789
 msgid "This section focuses on code order. For formatting, see :ref:`formatting`. For naming conventions, see :ref:`naming_conventions`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:785
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:792
 msgid "We suggest to organize GDScript code this way:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:815
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:822
 msgid "And put the class methods and variables in the following order depending on their access modifiers:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:822
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:829
 msgid "We optimized the order to make it easy to read the code from top to bottom, to help developers reading the code for the first time understand how it works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:826
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:833
 msgid "This code order follows four rules of thumb:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:828
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:835
 msgid "Properties and signals come first, followed by methods."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:829
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:836
 msgid "Public comes before private."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:830
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:837
 msgid "Virtual callbacks come before the class's interface."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:831
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:838
 msgid "The object's construction and initialization functions, ``_init`` and ``_ready``, come before functions that modify the object at runtime."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:835
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:842
 msgid "Class declaration"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:837
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:844
 msgid "If the code is meant to run in the editor, place the ``@tool`` annotation on the first line of the script."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:840
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:847
 msgid "Follow with the optional ``@icon`` then the ``class_name`` if necessary. You can turn a GDScript file into a global type in your project using ``class_name``. For more information, see :ref:`doc_gdscript_basics_class_name`. If the class is meant to be an :ref:`abstract class <doc_gdscript_basics_abstract_class>`, add ``@abstract`` *before* the ``class_name`` keyword."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:846
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:853
 msgid "Then, add the ``extends`` keyword if the class extends a built-in type."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:848
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:855
 msgid "Following that, you should have the class's optional :ref:`documentation comments <doc_gdscript_documentation_comments>`. You can use that to explain the role of your class to your teammates, how it works, and how other developers should use it, for example."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:863
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:870
 msgid "For inner classes, use single-line declarations:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:875
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:882
 msgid "Signals and properties"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:877
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:884
 msgid "Write signal declarations, followed by properties, that is to say, member variables, after the docstring."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:880
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:887
 msgid "Enums should come after signals, as you can use them as export hints for other properties."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:883
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:890
 msgid "Then, write constants, exported variables, public, private, and onready variables, in that order."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:916
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:923
 msgid "GDScript evaluates ``@onready`` variables right before the ``_ready`` callback. You can use that to cache node dependencies, that is to say, to get child nodes in the scene that your class relies on. This is what the example above shows."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:922
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:929
 msgid "Member variables"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:924
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:931
 msgid "Don't declare member variables if they are only used locally in a method, as it makes the code more difficult to follow. Instead, declare them as local variables in the method's body."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:929
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:936
 msgid "Local variables"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:931
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:938
 msgid "Declare local variables as close as possible to their first use. This makes it easier to follow the code, without having to scroll too much to find where the variable was declared."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:936
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:943
 msgid "Methods and static functions"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:938
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:945
 msgid "After the class's properties come the methods."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:940
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:947
 msgid "Start with the ``_init()`` callback method, that the engine will call upon creating the object in memory. Follow with the ``_ready()`` callback, that Godot calls when it adds a node to the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:944
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:951
 msgid "These functions should come first because they show how the object is initialized."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:947
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:954
 msgid "Other built-in virtual callbacks, like ``_unhandled_input()`` and ``_physics_process``, should come next. These control the object's main loop and interactions with the game engine."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:951
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:958
 msgid "The rest of the class's interface, public and private methods, come after that, in that order."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:988
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:995
 msgid "Static typing"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:990
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:997
 msgid "GDScript supports :ref:`optional static typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:993
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1000
 msgid "Declared types"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:995
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1002
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1001
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1008
 msgid "To declare the return type of a function, use ``-> <type>``:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1008
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1015
 msgid "Inferred types"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1010
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1017
 msgid "In most cases, you can let the compiler infer the type using ``:=``. Prefer ``:=`` when the type is written on the same line as the assignment, otherwise prefer writing the type explicitly."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1026
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1033
 msgid "Include the type hint when the type is ambiguous, and omit the type hint when it's redundant."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1044
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1051
 msgid "In some cases, the type must be stated explicitly, otherwise the behavior will not be as expected because the compiler will only be able to use the function's return type. For example, ``get_node()`` cannot infer a type unless the scene or file of the node is loaded in memory. In this case, you should set the type explicitly."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1068
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1075
 msgid "Alternatively, you can use the ``as`` keyword to cast the return type, and that type will be used to infer the type of the var."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1081
+#: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:1088
 msgid "This option is considered more :ref:`type-safe<doc_gdscript_static_typing_safe_lines>` than type hints, but also less null-safe as it silently casts the variable to ``null`` in case of a type mismatch at runtime, without an error/warning."
 msgstr ""

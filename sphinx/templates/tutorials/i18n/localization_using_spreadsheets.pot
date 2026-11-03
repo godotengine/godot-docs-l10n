@@ -203,21 +203,17 @@ msgid "Godot will treat CSV files as translations by default. It will import the
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:135
-msgid "Importing will also add the translation to the list of translations to load when the game runs, specified in project.godot (or the project settings). Godot allows loading and removing translations at runtime as well."
-msgstr ""
-
-#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:140
 msgid "Select the ``.csv`` file and access the :ui:`Import` dock to define import options. You can toggle the compression of the imported translations, and select the delimiter to use when parsing the CSV file."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:146
+#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:141
 msgid "Be sure to click :button:`Reimport` after any change to these options."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:149
+#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:144
 msgid "Loading the CSV file as a translation"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:151
-msgid "Once a CSV file is imported, it is **not** automatically registered as a translation source for the project. Remember to follow the steps described in :ref:`doc_internationalizing_games_configuring_imported_translation` so that the translation is actually used when running the project."
+#: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:146
+msgid "Once a CSV file is imported, it is **not** automatically registered as a translation source for the project. Remember to follow the steps described in :ref:`doc_internationalizing_games_configuring_imported_translation` so that the translation is actually used when running the project. Godot allows loading and removing translations at runtime as well."
 msgstr ""

@@ -256,178 +256,164 @@ msgid "String format method"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:225
-msgid "There is also another way to format text in GDScript, namely the :ref:`String.format() <class_String_method_format>` method. It replaces all occurrences of a key in the string with the corresponding value. The method can handle arrays or dictionaries for the key/value pairs."
+msgid "There is also another way to format text in GDScript, and that would be the :ref:`String.format() <class_String_method_format>` method. It replaces all occurrences of a key in the string with the corresponding value. The method can handle a dictionary or an array. If an array is passed, the index of each element is used as the key."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:230
-msgid "Arrays can be used as key, index, or mixed style (see below examples). Order only matters when the index or mixed style of Array is used."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:233
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:231
 msgid "A quick example in GDScript:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:246
+msgid "If passing an array, it is also possible to insert other arrays inside. Each nested array must only contain 2 elements, which will be treated as a key-value pair. This behavior is **deprecated** and will be removed in the future."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:251
 msgid "Format method examples"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:253
 msgid "The following are some examples of how to use the various invocations of the ``String.format()``  method."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:254
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:276
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Type**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:254
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:257
 msgid "**Style**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:254
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:276
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:289
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:275
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:288
 msgid "**Example**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:254
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:276
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:289
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:275
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:288
 msgid "**Result**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:256
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:258
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:260
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:259
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:261
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:263
 msgid "Dictionary"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:256
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:262
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:259
 msgid "key"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:256
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:259
 msgid "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:256
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:258
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:260
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:262
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:264
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:266
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:259
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:261
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:263
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:265
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:267
 msgid "Hi, Godette v3.0!"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:258
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:261
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:265
 msgid "index"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:258
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:261
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:260
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:266
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:263
 msgid "mix"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:260
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:263
 msgid "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:262
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:264
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:266
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:265
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:267
 msgid "Array"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:262
-msgid "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\",\"Godette\"]])``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:265
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:266
-msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:267
 msgid "no index"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:267
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:271
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Placeholders can also be customized when using ``String.format``, here's some examples of that functionality."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:278
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:277
 msgid "Infix (default)"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:278
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:277
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:278
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:280
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:282
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:277
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:279
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:281
 msgid "Hi, Godette v3.0"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:280
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Postfix"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:280
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:279
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:282
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:281
 msgid "Prefix"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:282
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:281
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:285
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:284
 msgid "Combining both the ``String.format`` method and the ``%`` operator could be useful, as ``String.format`` does not have a way to manipulate the representation of numbers."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:291
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:290
 msgid "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:291
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:290
 msgid "Hi, Godette v3.11"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:295
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:294
 msgid "String concatenation"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:297
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:296
 msgid "You can also combine strings by *concatenating* them together, using the ``+`` operator."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:311
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:310
 msgid "When using string concatenation, values that are not strings must be converted using the ``str()`` function. There is no way to specify the string format of converted values."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:324
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:323
 msgid "Because of these limitations, format strings or the ``format()`` method are often a better choice. In many cases, string concatenation is also less readable."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:329
+#: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:328
 msgid "In Godot's C++ code, GDScript format strings can be accessed using the ``vformat()`` helper function in the :ref:`Variant<class_Variant>` header."
 msgstr ""

@@ -132,89 +132,93 @@ msgid "The configuration file extension must be ``gdip`` (e.g.: ``MyPlugin.gdip`
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:85
-msgid "The configuration file format is as follow:"
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:119
-msgid "The ``config`` section and fields are required and defined as follow:"
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:121
-msgid "**name**: name of the plugin"
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:123
-msgid "**binary**: this should be the filepath of the plugin library (``a`` or ``xcframework``) file."
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:125
-msgid "The filepath can be relative (e.g.: ``MyPlugin.a``, ``MyPlugin.xcframework``) in which case it's relative to the directory where the ``gdip`` file is located."
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:126
-msgid "The filepath can be absolute: ``res://some_path/MyPlugin.a`` or ``res://some_path/MyPlugin.xcframework``."
+msgid "The configuration file format is as follows:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:127
-msgid "In case you need multitarget library usage, the filename should be ``MyPlugin.a`` and ``.a`` files should be named as ``MyPlugin.release.a`` and ``MyPlugin.debug.a``."
+msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:128
-msgid "In case you use multitarget ``xcframework`` libraries, their filename in the configuration should be ``MyPlugin.xcframework``. The ``.xcframework`` files should be named as ``MyPlugin.release.xcframework`` and ``MyPlugin.debug.xcframework``."
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:129
+msgid "**name**: name of the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:130
-msgid "The ``dependencies`` and ``plist`` sections are optional and defined as follow:"
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:131
+msgid "**binary**: this should be the filepath of the plugin library (``a`` or ``xcframework``) file."
 msgstr ""
 
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:132
-msgid "**dependencies**:"
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:133
+msgid "The filepath can be relative (e.g.: ``MyPlugin.a``, ``MyPlugin.xcframework``) in which case it's relative to the directory where the ``gdip`` file is located."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:134
-msgid "**linked**: contains a list of iOS frameworks that the iOS application should be linked with."
+msgid "The filepath can be absolute: ``res://some_path/MyPlugin.a`` or ``res://some_path/MyPlugin.xcframework``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:135
+msgid "In case you need multitarget library usage, the filename should be ``MyPlugin.a`` and ``.a`` files should be named as ``MyPlugin.release.a`` and ``MyPlugin.debug.a``."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:136
-msgid "**embedded**: contains a list of iOS frameworks or libraries that should be both linked and embedded into the resulting iOS application."
+msgid "In case you use multitarget ``xcframework`` libraries, their filename in the configuration should be ``MyPlugin.xcframework``. The ``.xcframework`` files should be named as ``MyPlugin.release.xcframework`` and ``MyPlugin.debug.xcframework``."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:138
-msgid "**system**: contains a list of iOS system frameworks that are required for plugin."
+msgid "The ``dependencies`` and ``plist`` sections are optional and defined as follow:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:140
-msgid "**capabilities**: contains a list of iOS capabilities that is required for plugin. A list of available capabilities can be found at `Apple UIRequiredDeviceCapabilities documentation page <https://developer.apple.com/documentation/bundleresources/information_property_list/uirequireddevicecapabilities>`_."
+msgid "**dependencies**:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:142
-msgid "**files**: contains a list of files that should be copied on export. This is useful for data files or images."
+msgid "**linked**: contains a list of iOS frameworks that the iOS application should be linked with."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:144
-msgid "**linker_flags**: contains a list of linker flags to add to the Xcode project when exporting the plugin."
+msgid "**embedded**: contains a list of iOS frameworks or libraries that should be both linked and embedded into the resulting iOS application."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:146
-msgid "**plist**: should have keys and values that should be present in ``Info.plist`` file."
+msgid "**system**: contains a list of iOS system frameworks that are required for plugin."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:148
-msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:149
-msgid "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, ``raw``, ``string_input``"
+msgid "**capabilities**: contains a list of iOS capabilities that is required for plugin. A list of available capabilities can be found at `Apple UIRequiredDeviceCapabilities documentation page <https://developer.apple.com/documentation/bundleresources/information_property_list/uirequireddevicecapabilities>`_."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:150
-msgid "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be used."
-msgstr ""
-
-#: ../../docs/tutorials/platform/ios/ios_plugin.rst:151
-msgid "If ``raw`` type is used value for corresponding key will be stored in ``Info.plist`` as is."
+msgid "**files**: contains a list of files that should be copied on export. This is useful for data files or images."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:152
+msgid "**linker_flags**: contains a list of linker flags to add to the Xcode project when exporting the plugin."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:154
+msgid "**spm_packages**: contains a list of Swift Package Manager dependencies, specifying exact versions. Each package should be a `Dictionary` with ``url`` (string), ``version`` (string, exact version), and ``products`` (array of strings, listing the libraries to link)."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:156
+msgid "**plist**: should have keys and values that should be present in ``Info.plist`` file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:158
+msgid "Each line should follow pattern: ``KeyName:KeyType=KeyValue``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:159
+msgid "Supported values for ``KeyType`` are ``string``, ``integer``, ``boolean``, ``raw``, ``string_input``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:160
+msgid "If no type is used (e.g.: ``KeyName=\"KeyValue\"``) ``string`` type will be used."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:161
+msgid "If ``raw`` type is used value for corresponding key will be stored in ``Info.plist`` as is."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:162
 msgid "If ``string_input`` type is used you will be able to modify value in Export window."
 msgstr ""

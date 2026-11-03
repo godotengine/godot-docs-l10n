@@ -19,114 +19,118 @@ msgstr ""
 msgid "Change scenes manually"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:6
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:8
+msgid "This page describes various strategies to optimize scene changes. For a simpler description of how to switch between scenes, see the :ref:`Using SceneTree documentation <doc_scene_tree_changing_current_scene>`."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:12
 msgid "Sometimes it helps to have more control over how you swap scenes around. A :ref:`Viewport <class_Viewport>`'s child nodes will render to the image it generates. This holds true even for nodes outside of the \"current\" scene. Autoloads fall into this category, and also scenes which you instantiate and add to the tree at runtime:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:38
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:44
 msgid "To complete the cycle and swap out the new scene with the old one, you have a choice to make. Many strategies exist for removing a scene from view of the :ref:`Viewport <class_Viewport>`. The tradeoffs involve balancing operation speed and memory consumption, as well as balancing data access and integrity."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:44
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:50
 msgid "**Delete the existing scene.** :ref:`SceneTree.change_scene_to_file() <class_SceneTree_method_change_scene_to_file>` and :ref:`SceneTree.change_scene_to_packed() <class_SceneTree_method_change_scene_to_packed>` will delete the current scene immediately. You can also delete the main scene. Assuming the root node's name is \"Main\", you could do ``get_node(\"/root/Main\").free()`` to delete the whole scene."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:51
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:57
 msgid "Unloads memory."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:53
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:59
 msgid "Pro: RAM is no longer dragging the dead weight."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:55
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:61
 msgid "Con: Returning to that scene is now more expensive since it must be loaded back into memory again (takes time AND memory). Not a problem if returning soon is unnecessary."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:59
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:65
 msgid "Con: No longer have access to that scene's data. Not a problem if using that data soon is unnecessary."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:62
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:68
 msgid "Note: It can be useful to preserve the data in a soon-to-be-deleted scene by re-attaching one or more of its nodes to a different scene, or even directly to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:66
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:72
 msgid "Processing stops."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:68
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:74
 msgid "Pro: No nodes means no processing, physics processing, or input handling. The CPU is available to work on the new scene's contents."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:71
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:77
 msgid "Con: Those nodes' processing and input handling no longer operate. Not a problem if using the updated data is unnecessary."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:74
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:80
 msgid "**Hide the existing scene.** By changing the visibility or collision detection of the nodes, you can hide the entire node sub-tree from the player's perspective. Use :ref:`CanvasItem.hide() <class_CanvasItem_method_hide>` to hide a scene and :ref:`CanvasItem.show() <class_CanvasItem_method_show>` to show it again."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:80
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:86
 msgid "Memory still exists."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:82
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:88
 msgid "Pro: You can still access the data if needed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:84
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:90
 msgid "Pro: There's no need to move any more nodes around to save data."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:86
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:92
 msgid "Con: More data is being kept in memory, which will become a problem on memory-sensitive platforms like web or mobile."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:89
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:95
 msgid "Processing continues."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:91
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:97
 msgid "Pro: Data continues to receive processing updates, so the scene will keep any data within it that relies on delta time or frame data updated."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:95
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:101
 msgid "Pro: Nodes are still members of groups (since groups belong to the :ref:`SceneTree <class_SceneTree>`)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:98
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:104
 msgid "Con: The CPU's attention is now divided between both scenes. Too much load could result in low frame rates. You should be sure to test performance as you go to ensure the target platform can support the load from this approach."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:103
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:109
 msgid "**Remove the existing scene from the tree.** Assign a variable to the existing scene's root node. Then use :ref:`Node.remove_child(Node) <class_Node_method_remove_child>` to detach the entire scene from the tree. To attach it later, use :ref:`Node.add_child(Node) <class_Node_method_add_child>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:109
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:115
 msgid "Memory still exists (similar pros/cons as hiding it from view)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:111
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:117
 msgid "Processing stops (similar pros/cons as deleting it completely)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:113
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:119
 msgid "Pro: This variation of \"hiding\" it is much easier to show/hide. Rather than potentially keeping track of multiple changes to the scene, you only need to call the add/remove_child methods. This is similar to disabling game objects in other engines."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:118
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:124
 msgid "Con: Unlike with hiding it from view only, the data contained within the scene will become stale if it relies on delta time, input, groups, or other data that is derived from :ref:`SceneTree <class_SceneTree>` access."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:123
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:129
 msgid "There are also cases where you may wish to have many scenes present at the same time, such as adding your own singleton at runtime, or preserving a scene's data between scene changes (adding the scene to the root node)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:136
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:142
 msgid "Another case may be displaying multiple scenes at the same time using :ref:`SubViewportContainers <class_SubViewportContainer>`. This is optimal for rendering different content in different parts of the screen (e.g. minimaps, split-screen multiplayer)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/change_scenes_manually.rst:141
+#: ../../docs/tutorials/scripting/change_scenes_manually.rst:147
 msgid "Each option will have cases where it is best appropriate, so you must examine the effects of each approach, and determine what path best fits your unique situation."
 msgstr ""

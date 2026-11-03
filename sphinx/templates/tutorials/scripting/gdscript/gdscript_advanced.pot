@@ -126,7 +126,7 @@ msgid "In static languages, such as C or C++ (and to some extent Java and C#), t
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:113
-msgid "In C# or Java, everything not a built-in type (int, float, sometimes String) is always a pointer or a reference. References are also garbage-collected automatically, which means they are erased when no longer used. Dynamically typed languages tend to use this memory model, too. Some Examples:"
+msgid "In C# or Java, everything not a built-in type (int, float, sometimes String) is always a pointer or a reference. References are also garbage-collected automatically, which means they are erased when no longer used. Dynamically typed languages tend to use this memory model, too. Some examples:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:119
@@ -190,7 +190,7 @@ msgid "In most cases, two-dimensional arrays can often be implemented more easil
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:291
-msgid "Dictionaries can also be used as data markup or quick structures. While GDScript's dictionaries resemble python dictionaries, it also supports Lua style syntax and indexing, which makes it useful for writing initial states and quick structs:"
+msgid "Dictionaries can also be used as data markup or quick structures. While GDScript's dictionaries resemble Python dictionaries, it also supports Lua style syntax and indexing, which makes it useful for writing initial states and quick structs:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:316
@@ -254,7 +254,7 @@ msgid "And it can be used like any other iterator:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:461
-msgid "It is possible but discouraged to store the state in a member variable. Multiple states are necessary in cases such as nested loops where the same iterator instance is used simultaneously. The ``iter`` parameter in ``_iter_init()`` and ``_iter_next()`` is a single-element array so that updates can persist. Whereas in ``_iter_get()``, the state is is not wrapped because it is supposed to be read-only."
+msgid "It is possible but discouraged to store the state in a member variable. Multiple states are necessary in cases such as nested loops where the same iterator instance is used simultaneously. The ``iter`` parameter in ``_iter_init()`` and ``_iter_next()`` is a single-element array so that updates can persist. Whereas in ``_iter_get()``, the state is not wrapped because it is supposed to be read-only."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:468

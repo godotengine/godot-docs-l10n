@@ -479,70 +479,74 @@ msgstr ""
 msgid "It is possible to add custom features to a build; use the relevant field in the *export preset* used to generate it:"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:163
-msgid "Custom feature tags are only used when running the exported project (including with :ref:`doc_one-click_deploy`). They are **not used** when running the project from the editor, even if the export preset marked as **Runnable** for your current platform has custom feature tags defined."
+#: ../../docs/tutorials/export/feature_tags.rst:161
+msgid "You can test custom feature tags without exporting the project using the :menu:`Debug > Customize Run Instances...` dialog. As long as :button:`Enable Multiple Instances` is checked in that dialog (even with the instance count set to 1), custom features defined there will be used when running the project from the editor. Multiple feature tags can be separated by commas:"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:168
+#: ../../docs/tutorials/export/feature_tags.rst:171
+msgid "Custom feature tags defined in an export preset marked as **Runnable** are not used when running the project from the editor."
+msgstr ""
+
+#: ../../docs/tutorials/export/feature_tags.rst:174
 msgid "Custom feature tags are also not used in :ref:`class_EditorExportPlugin` scripts. Instead, feature tags in :ref:`class_EditorExportPlugin` will reflect the device the editor is currently running on."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:173
+#: ../../docs/tutorials/export/feature_tags.rst:179
 msgid "Overriding project settings"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:175
+#: ../../docs/tutorials/export/feature_tags.rst:181
 msgid "Features can be used to override specific configuration values in the *Project Settings*. This allows you to better customize any configuration when doing a build."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:178
+#: ../../docs/tutorials/export/feature_tags.rst:184
 msgid "In the following example, a different icon is added for the demo build of the game (which was customized in a special export preset, which, in turn, includes only demo levels)."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:181
+#: ../../docs/tutorials/export/feature_tags.rst:187
 msgid "The Project Settings panel"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:184
+#: ../../docs/tutorials/export/feature_tags.rst:190
 msgid "The desired configuration is selected, which effectively copies its properties to the panel above (1). The \"demo_build\" feature tag is selected (2). The configuration is added to the project settings (3)."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:186
+#: ../../docs/tutorials/export/feature_tags.rst:192
 msgid "After overriding, a new field is added for this specific configuration."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:192
+#: ../../docs/tutorials/export/feature_tags.rst:198
 msgid "When using the :ref:`project settings \"override.cfg\" functionality <class_ProjectSettings>` (which is unrelated to feature tags), remember that feature tags still apply. Therefore, make sure to *also* override the setting with the desired feature tag(s) if you want them to override base project settings on all platforms and configurations."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:200
+#: ../../docs/tutorials/export/feature_tags.rst:206
 msgid "Default overrides"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:202
+#: ../../docs/tutorials/export/feature_tags.rst:208
 msgid "There are already a lot of settings that come with overrides by default; they can be found in many sections of the project settings."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:208
+#: ../../docs/tutorials/export/feature_tags.rst:214
 msgid "Taking feature tags into account when reading project settings"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:210
+#: ../../docs/tutorials/export/feature_tags.rst:216
 msgid "By default, feature tags are **not** taken into account when reading project settings using the typical approaches (:ref:`ProjectSettings.get_setting<class_ProjectSettings_method_get_setting>` or :ref:`ProjectSettings.get <class_Object_private_method__get>`). Instead, you must use :ref:`ProjectSettings.get_setting_with_override <class_ProjectSettings_method_get_setting>`."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:215
+#: ../../docs/tutorials/export/feature_tags.rst:221
 msgid "For example, with the following project settings:"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:224
+#: ../../docs/tutorials/export/feature_tags.rst:230
 msgid "Using ``ProjectSettings.get_setting(\"section/subsection/example\")`` will return ``\"Release\"`` regardless of whether a debug build is currently running. On the other hand, ``ProjectSettings.get_setting_with_override(\"section/subsection/example\")`` will obey feature tags and will return ``\"Debug\"`` if using a debug build."
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:230
+#: ../../docs/tutorials/export/feature_tags.rst:236
 msgid "Customizing the build"
 msgstr ""
 
-#: ../../docs/tutorials/export/feature_tags.rst:232
+#: ../../docs/tutorials/export/feature_tags.rst:238
 msgid "Feature tags can be used to customize a build process too, by writing a custom **ExportPlugin**. They are also used to specify which shared library is loaded and exported in **GDExtension**."
 msgstr ""

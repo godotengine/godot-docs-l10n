@@ -28,7 +28,7 @@ msgid "Every beginner has been there: \"How do I move my character?\" Depending 
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
-msgid "We'll use :ref:`CharacterBody2D <class_CharacterBody2D>` for these examples, but the principles will apply to other node types (Area2D, RigidBody2D) as well."
+msgid "We'll use :ref:`class_CharacterBody2D` for these examples, but the principles will apply to other node types (Area2D, RigidBody2D) as well."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
@@ -40,7 +40,7 @@ msgid "Each example below uses the same scene setup. Start with a ``CharacterBod
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
-msgid "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add the following input actions (see :ref:`InputEvent <doc_inputevent>` for details):"
+msgid "Open :menu:`Project > Project Settings` and select the :button:`Input Map` tab. Add the following input actions (see :ref:`InputEvent <doc_inputevent>` for details):"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
@@ -56,7 +56,7 @@ msgid "Attach a script to the character body and add the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:85
-msgid "In the ``get_input()`` function, we use :ref:`Input <class_Input>` ``get_vector()`` to check for the four key events and sum return a direction vector."
+msgid "In the ``get_input()`` function, we use :ref:`Input.get_vector() <class_Input_method_get_vector>` to check for the four key events and sum return a direction vector."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:88
@@ -96,7 +96,7 @@ msgid "This style of movement is a variation of the previous one. This time, the
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:220
-msgid "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to point the player towards the mouse's position. Without this function, you could get the same effect by setting the angle like this:"
+msgid "Here we're using the :ref:`Node2D.look_at() <class_Node2D_method_look_at>` method to point the player towards the mouse's position. Without this function, you could get the same effect by setting the angle like this:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:235

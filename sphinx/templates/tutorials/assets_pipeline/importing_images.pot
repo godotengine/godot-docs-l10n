@@ -526,12 +526,12 @@ msgid "Normal map with standard VRAM compression (left) and with RGTC VRAM compr
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:346
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:455
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:494
 msgid "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, which is known as an OpenGL-style normal map. If you've imported a material made to be used with another engine, it may be DirectX-style. In this case, the normal map needs to be converted by enabling the **Normal Map Invert Y** import option."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:351
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:460
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:499
 msgid "More information about normal maps (including a coordinate order table for popular engines) can be found `here <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
 msgstr ""
 
@@ -587,228 +587,258 @@ msgstr ""
 msgid "If set to a value greater than ``-1``, limits the maximum number of mipmaps that can be generated. This can be decreased if you don't want textures to become too low-resolution at extreme distances, at the cost of some graininess."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:410
-msgid "Roughness > Mode"
-msgstr ""
-
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:412
-msgid "The color channel to consider as a roughness map in this texture. Only effective if **Roughness > Src Normal** is not empty."
+msgid "Mipmaps > Preserve Alpha Test Coverage"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:416
-msgid "Roughness > Src Normal"
-msgstr ""
-
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:418
-msgid "The path to the texture to consider as a normal map for roughness filtering on import. Specifying this can help decrease specular aliasing slightly in 3D."
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:414
+msgid "Mipmaps help improve texture quality when viewed at a distance, but they have limitations when used for alpha-tested materials (i.e. materials using the **Alpha Scissor** transparency mode). When a texture is mipmapped, the alpha channel is averaged with neighboring pixels to generate the mipmaps. This can result in a loss of coverage for alpha-tested materials, causing them to appear more transparent than intended at a distance."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:421
+msgid "To resolve this, enable **Preserve Alpha Test Coverage** after enabling mipmaps in the Import dock. This option only has an effect on textures with an alpha channel, and it should only be enabled for textures used in alpha-tested materials. It should be left disabled for all other transparency modes including **Alpha Hash**."
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:427
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:431
+msgid "Preserve Alpha Test Coverage disabled (left) and enabled (right) when viewed up close"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:433
+msgid "The effect depends on the texture resolution, viewport resolution, and viewing distance:"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:435
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:439
+msgid "Preserve Alpha Test Coverage disabled (left) and enabled (right) when viewed from a distance"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:441
+msgid "When enabled, you may also adjust **Mipmaps > Alpha Test Threshold** to tune the look of the texture at a distance. Higher values will preserve opacity more aggressively at greater distances. In most cases, it's recommended to keep this to its default value of ``0.5``, even if the material's **Alpha Scissor Threshold** is set to a value other than ``0.5`` (the values do not have to match)."
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:449
+msgid "Roughness > Mode"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:451
+msgid "The color channel to consider as a roughness map in this texture. Only effective if **Roughness > Src Normal** is not empty."
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:455
+msgid "Roughness > Src Normal"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:457
+msgid "The path to the texture to consider as a normal map for roughness filtering on import. Specifying this can help decrease specular aliasing slightly in 3D."
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:460
 msgid "Roughness filtering on import is only used in 3D rendering, not 2D."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:424
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:463
 msgid "Process > Fix Alpha Border"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:426
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:465
 msgid "This puts pixels of the same surrounding color in transition from transparent to opaque areas. For textures displayed with bilinear filtering, this helps mitigate the outline effect when exporting images from an image editor."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:432
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:471
 msgid "It's recommended to leave this enabled (as it is by default), unless this causes issues for a particular image."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:436
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:475
 msgid "Process > Premult Alpha"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:438
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:477
 msgid "An alternative to fixing darkened borders with **Fix Alpha Border** is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:443
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:482
 msgid "In 2D, a :ref:`class_CanvasItemMaterial` will need to be created and configured to use the **Premultiplied Alpha** blend mode on CanvasItems that use this texture. In :ref:`custom canvas item shaders <doc_canvas_item_shader>`, ``render_mode blend_premul_alpha;`` should be used."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:447
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:486
 msgid "In 3D, a :ref:`class_BaseMaterial3D` will need to be created and configured to use the **Premult Alpha** blend mode on materials that use this texture. In :ref:`custom spatial shaders <doc_spatial_shader>`, ``render_mode blend_premul_alpha;`` should be used."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:453
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:492
 msgid "Process > Normal Map Invert Y"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:465
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:504
 msgid "Process > HDR as sRGB"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:467
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:506
 msgid "Some HDR images you can find online may be broken and contain sRGB color data (instead of linear color data). It is advised not to use those files. If you absolutely have to, enabling this option on will make them look correct."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:473
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:512
 msgid "Enabling **HDR as sRGB** on well-formatted HDR images will cause the resulting image to look too dark, so leave this disabled if unsure."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:477
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:516
 msgid "Process > HDR Clamp Exposure"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:479
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:518
 msgid "Some HDR panorama images you can find online may contain extremely bright pixels, due to being taken from real life sources without any clipping."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:482
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:521
 msgid "While these HDR panorama images are accurate to real life, this can cause the radiance map generated by Godot to contain sparkles when used as a background sky. This can be seen in material reflections (even on rough materials in extreme cases). Enabling **HDR Clamp Exposure** can resolve this using a smart clamping formula that does not introduce *visible* clipping – glow will keep working when looking at the background sky."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:490
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:529
 msgid "Process > Size Limit"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:492
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:531
 msgid "If set to a value greater than ``0``, the size of the texture is limited on import to a value smaller than or equal to the value specified here. For non-square textures, the size limit affects the longer dimension, with the shorter dimension scaled to preserve aspect ratio. Resizing is performed using cubic interpolation."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:498
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:537
 msgid "This can be used to reduce memory usage without affecting the source images, or avoid issues with textures not displaying on mobile/web platforms (as these usually can't display textures larger than 4096×4096)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:505
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:544
 msgid "Detect 3D > Compress To"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:507
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:546
 msgid "This changes the :ref:`doc_importing_images_compress_mode` option that is used when a texture is detected as being used in 3D."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:510
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:549
 msgid "Changing this import option only has an effect if a texture is detected as being used in 3D. Changing this to **Disabled** then reimporting will not change the existing compress mode on a texture (if it's detected to be used in 3D), but choosing **VRAM Compressed** or **Basis Universal** will."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:516
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:555
 msgid "SVG > Scale"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:518
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:530
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:539
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:557
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:569
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:578
 msgid "*This is only available for SVG images.*"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:520
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:559
 msgid "The scale the SVG should be rendered at, with ``1.0`` being the original design size. Higher values result in a larger image. Note that unlike font oversampling, this affects the physical size the SVG is rendered at in 2D. See also **Editor > Scale With Editor Scale** below."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:528
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:567
 msgid "Editor > Scale With Editor Scale"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:532
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:571
 msgid "If true, scales the imported image to match the editor's display scale factor. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:537
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:576
 msgid "Editor > Convert Colors With Editor Theme"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:541
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:580
 msgid "If checked, converts the imported image's colors to match the editor's icon and font color palette. This assumes the image uses the exact same colors as :ref:`Godot's own color palette for editor icons <doc_editor_icons>`, with the source file designed for a dark editor theme. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:550
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:589
 msgid "Importing SVG images with text"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:552
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:591
 msgid "As the SVG library used in Godot doesn't support rasterizing text found in SVG images, text must be converted to a path first. Otherwise, text won't appear in the rasterized image."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:556
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:595
 msgid "There are two ways to achieve this in a non-destructive manner, so you can keep editing the original text afterwards:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:559
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:598
 msgid "Select your text object in Inkscape, then duplicate it in place by pressing :kbd:`Ctrl + D` and use **Path > Object to Path**. Hide the original text object afterwards using the **Layers and Objects** dock."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:562
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:601
 msgid "Use the Inkscape command line to export an SVG from another SVG file with text converted to paths:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:570
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:609
 msgid "Best practices"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:573
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:612
 msgid "Supporting high-resolution texture sizes in 2D without artifacts"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:575
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:614
 msgid "To support :ref:`multiple resolutions <doc_multiple_resolutions>` with crisp visuals at high resolutions, you will need to use high-resolution source images (suited for the highest resolution you wish to support without blurriness, which is typically 4K in modern desktop games)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:580
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:619
 msgid "There are 2 ways to proceed:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:582
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:621
 msgid "Use a high base resolution in the project settings (such as 4K), then use the textures at original scale. This is an easier approach."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:584
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:623
 msgid "Use a low base resolution in the project settings (such as 1080p), then downscale textures when using them. This is often more difficult and can make various calculations in script tedious, so the approach described above is recommended instead."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:589
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:628
 msgid "After doing this, you may notice that textures become grainy at lower viewport resolutions. To resolve this, enable **Mipmaps** on textures used in 2D in the Import dock. This will increase memory usage."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:593
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:632
 msgid "Enabling mipmaps can also make textures appear blurrier, but you can choose to make textures sharper (at the cost of some graininess) by setting **Rendering > Textures > Default Filters > Texture Mipmap Bias** to a negative value."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:599
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:638
 msgid "Use appropriate texture sizes in 3D"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:601
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:640
 msgid "While there's no \"one size fits all\" recommendation, here are some general recommendations for choosing texture sizes in 3D:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:604
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:643
 msgid "The size of a texture should be adjusted to have a consistent texel density compared to surrounding objects. While this cannot be ensured perfectly when sticking to power-of-two texture sizes, it's usually possible to keep texture detail fairly consistent throughout a 3D scene."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:608
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:647
 msgid "The smaller the object appears on screen, the smaller its texture should be. For example, a tree that only appears in the background doesn't need a texture resolution as high as other objects the player may be able to walk close to."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:611
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:650
 msgid "Using power-of-two texture sizes is recommended, but is not required. Textures don't have to be square – sizes such as 1024×512 are acceptable."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:613
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:652
 msgid "There are diminishing returns to using large texture sizes, despite the increased memory usage and loading times. Most modern 3D games not using a pixel art style stick to 2048×2048 textures on average, with 1024×1024 and 512×512 for textures spanning smaller surfaces."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:617
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:656
 msgid "When working with physically-based materials in 3D, you can reduce memory usage and file size without affecting quality too much by using a lower resolution for certain texture maps. This works especially well for textures that only feature low-frequency detail (such as a normal map for a snow texture)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:623
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:662
 msgid "If you have control over how the 3D models are created, these tips are also worth exploring:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:626
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:665
 msgid "When working with 3D models that are mostly symmetrical, you may be able to use mirrored UVs to double the effective texel density. This may look unnatural when used on human faces though."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:629
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:668
 msgid "When working with 3D models using a low-poly style and plain colors, you can rely on vertex colors instead of textures to represent colors on the model's surfaces."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_images.rst:635
+#: ../../docs/tutorials/assets_pipeline/importing_images.rst:674
 msgid "Images can be loaded and saved at runtime using :ref:`runtime file loading and saving <doc_runtime_file_loading_and_saving_images>`, including from an exported project."
 msgstr ""

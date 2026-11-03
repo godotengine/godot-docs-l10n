@@ -44,7 +44,7 @@ msgid "The first thing you need for the editor to identify a new plugin is to cr
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:35
-msgid "In the main toolbar, click the ``Project`` dropdown. Then click ``Project Settings...``. Go to the ``Plugins`` tab and then click on the :button:`Create New Plugin` button in the top-right."
+msgid "In the main toolbar, click the ``Project`` dropdown. Then click ``Project Settings...``. Go to the ``Addons`` tab and then click on the :button:`Create New Plugin` button in the top-right."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:39
@@ -144,77 +144,77 @@ msgid "Since we're trying to add a new custom dock, we need to create the conten
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:318
-msgid "For an editor dock, the root node **must** be a :ref:`Control <class_Control>` or one of its child classes. For this tutorial, you can create a single button. Don't forget to add some text to your button."
+msgid "For an editor dock, the root node **must** be a :ref:`Control <class_Control>` or one of its child classes. When creating the new scene, select **User Interface** in the Create Root Node dialog, as this creates a ``Control`` node for the scene root. For this tutorial, you can create a single button. Don't forget to add some text to your button."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:324
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:326
 msgid "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we created then add it as a dock in the editor. For this, you can rely on the function :ref:`add_dock() <class_EditorPlugin_method_add_dock>` from the :ref:`EditorPlugin <class_EditorPlugin>` class."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:329
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:331
 msgid "You need to select a dock position and define the control to add (which is the scene you just created). Don't forget to **remove the dock** when the plugin is deactivated. The script could look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:412
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:414
 msgid "Note that, while the dock will initially appear at its specified position, the user can freely change its position and save the resulting layout."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:416
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:418
 msgid "Checking the results"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:418
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:420
 msgid "It's now time to check the results of your work. Open the **Project Settings** and click on the **Plugins** tab. Your plugin should be the only one on the list."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:424
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:426
 msgid "You can see the plugin is not enabled. Click the **Enable** checkbox to activate the plugin. The dock should become visible before you even close the settings window. You should now have a custom dock:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:434
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:436
 msgid "Registering autoloads/singletons in plugins"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:436
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:438
 msgid "It is possible for editor plugins to automatically register :ref:`autoloads <doc_singletons_autoload>` when the plugin is enabled. This also includes unregistering the autoload when the plugin is disabled."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:440
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:442
 msgid "This makes setting up plugins faster for users, as they no longer have to manually add autoloads to their project settings if your editor plugin requires the use of an autoload."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:444
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:446
 msgid "Use the following code to register a singleton from an editor plugin:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:489
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:491
 msgid "Using sub-plugins"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:491
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:493
 msgid "Often a plugin adds multiple things, for example a custom node and a panel. In those cases it might be easier to have a separate plugin script for each of those features. Sub-plugins can be used for this."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:495
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:497
 msgid "First create all plugins and sub plugins as normal plugins:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:499
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:501
 msgid "Then move the sub plugins into the main plugin folder:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:503
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:505
 msgid "Godot will hide sub-plugins from the plugin list, so that a user can't enable or disable them. Instead the main plugin script should enable and disable sub-plugins like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:524
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:551
 msgid "Going beyond"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:526
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:553
 msgid "Now that you've learned how to make basic plugins, you can extend the editor in several ways. Lots of functionality can be added to the editor with GDScript; it is a powerful way to create specialized editors without having to delve into C++ modules."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:531
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:558
 msgid "You can make your own plugins to help yourself and share them in the `Asset Library <https://godotengine.org/asset-library/>`_ so that people can benefit from your work."
 msgstr ""

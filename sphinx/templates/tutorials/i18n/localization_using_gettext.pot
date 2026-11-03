@@ -24,7 +24,7 @@ msgid "In addition to importing translations in :ref:`CSV format <doc_localizati
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:11
-msgid "For an introduction to gettext, check out `A Quick Gettext Tutorial <https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`_. It's written with C projects in mind, but much of the advice also applies to Godot (with the exception of ``xgettext``)."
+msgid "For an introduction to gettext, check out `A Quick Gettext Tutorial <https://web.archive.org/web/20260325002553/https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`_. It's written with C projects in mind, but much of the advice also applies to Godot (with the exception of ``xgettext``)."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
@@ -188,7 +188,7 @@ msgid "After updating the PO template, you will have to update message files so 
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:190
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:332
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:362
 msgid "If you want to keep a backup of the original message file (which would be saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
 msgstr ""
 
@@ -241,77 +241,137 @@ msgid "The decompiled file will not include comments or fuzzy strings, as these 
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:249
-msgid "Extracting localizable strings from GDScript files"
+msgid "Extracting localizable strings from project files"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:251
-msgid "The built-in `editor plugin <https://github.com/godotengine/godot/blob/master/modules/gdscript/editor/gdscript_translation_parser_plugin.h>`_ recognizes a variety of patterns in source code to extract localizable strings from GDScript files, including but not limited to the following:"
-msgstr ""
-
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:255
-msgid "``tr()``, ``tr_n()``, ``atr()``, and ``atr_n()`` calls;"
-msgstr ""
-
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:256
-msgid "assigning properties ``text``, ``placeholder_text``, and ``tooltip_text``;"
+msgid "The built-in editor plugins for `PackedScene <https://github.com/godotengine/godot/blob/master/editor/translations/packed_scene_translation_parser_plugin.cpp>`_ and `GDScript <https://github.com/godotengine/godot/blob/master/modules/gdscript/editor/gdscript_translation_parser_plugin.h>`_ recognize a variety of patterns to extract localizable strings."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:257
-msgid "``add_tab()``, ``add_item()``, ``set_tab_title()``, and other calls;"
+msgid "Scene files"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:258
-msgid "``FileDialog`` filters like ``\"*.png ; PNG Images\"``."
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:259
+msgid "In ``.tscn`` or ``.scn`` scene files, these property names are recognized (``*`` is a wildcard):"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:262
-msgid "The argument or right operand must be a constant string, otherwise the plugin will not be able to evaluate the expression and will ignore it."
+msgid "``text`` (except in LineEdit, TextEdit, and CodeEdit nodes);"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:263
+msgid "``*_text`` (e.g., ``placeholder_text``);"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:264
+msgid "``popup/*/text``;"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:265
-msgid "If the plugin extracts unnecessary strings, you can ignore them with the ``NO_TRANSLATE`` comment. You can also provide additional information for translators using the ``TRANSLATORS:`` comment. These comments must be placed either on the same line as the recognized pattern or precede it."
+msgid "``title``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:266
+msgid "``filters``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:267
+msgid "``script``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:268
+msgid "``item_*/text``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:269
+msgid "``accessibility_name``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:270
+msgid "``accessibility_description``."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:272
+msgid "This behavior follows Node's :ref:`Auto Translate <class_Node_property_auto_translate_mode>` and Control's :ref:`Tooltip Auto Translate <class_Control_property_tooltip_auto_translate_mode>` properties. If automatic translation is disabled on a node, then no strings will be extracted for that node."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:277
+msgid "Control's :ref:`Translation Context <class_Control_property_translation_context>` property is also followed when extracting translations from scene files."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:281
+msgid "GDScript files"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:283
-msgid "Using context"
+msgid "In GDScript files, these patterns are recognized:"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:285
-msgid "The ``context`` parameter can be used to differentiate the situation where a translation is used, or to differentiate polysemic words (words with multiple meanings)."
+msgid "``tr()``, ``tr_n()``, ``atr()``, and ``atr_n()`` calls;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:286
+msgid "assigning properties ``text``, ``placeholder_text``, and ``tooltip_text``;"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:287
+msgid "``add_tab()``, ``add_item()``, ``set_tab_title()``, and other calls;"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:288
-msgid "For example:"
+msgid "``FileDialog`` filters like ``\"*.png ; PNG Images\"``."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:297
-msgid "In a gettext PO file, a string with a context can be defined as follows:"
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:292
+msgid "The argument or right operand must be a constant string, otherwise the plugin will not be able to evaluate the expression and will ignore it."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:312
-msgid "Updating PO files"
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:295
+msgid "If the plugin extracts unnecessary strings, you can ignore them with the ``NO_TRANSLATE`` comment. You can also provide additional information for translators using the ``TRANSLATORS:`` comment. These comments must be placed either on the same line as the recognized pattern or precede it."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:314
-msgid "Some time or later, you'll add new content to your game, and there will be new strings that need to be translated. When this happens, you'll need to update the existing PO files to include the new strings."
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:313
+msgid "Using context"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:315
+msgid "The ``context`` parameter can be used to differentiate the situation where a translation is used, or to differentiate polysemic words (words with multiple meanings)."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:318
+msgid "For example:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:327
+msgid "In a gettext PO file, a string with a context can be defined as follows:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:342
+msgid "Updating PO files"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:344
+msgid "Some time or later, you'll add new content to your game, and there will be new strings that need to be translated. When this happens, you'll need to update the existing PO files to include the new strings."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:348
 msgid "First, generate a new POT file containing all the existing strings plus the newly added strings. After that, merge the existing PO files with the new POT file. There are two ways to do this:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:322
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:352
 msgid "Use a gettext editor, and it should have an option to update a PO file from a POT file."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:325
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:355
 msgid "Use the gettext ``msgmerge`` tool:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:336
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:366
 msgid "POT generation custom plugin"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:338
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:368
 msgid "If you have any extra file format to deal with, you could write a custom plugin to parse and extract the strings from the custom file. This custom plugin will extract the strings and write into the POT file when you hit **Generate POT**. To learn more about how to create the translation parser plugin, see :ref:`EditorTranslationParserPlugin <class_EditorTranslationParserPlugin>`."
 msgstr ""

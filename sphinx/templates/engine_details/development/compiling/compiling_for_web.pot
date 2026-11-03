@@ -32,105 +32,109 @@ msgid "To compile export templates for the Web, the following is required:"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:18
-msgid "`Emscripten 4.0.0+ <https://emscripten.org>`__."
+msgid "`Emscripten 6.0.12+ <https://emscripten.org>`__."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:19
-msgid "`Python 3.9+ <https://www.python.org/>`__."
+msgid "`Python 3.10+ <https://www.python.org/>`__."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:20
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:21
+msgid "If using Python 3.10 to 3.13, also run ``pip install --user zstandard`` to install Zstandard support for Python. This is not required on Python 3.14 and above, which include Zstandard support by default."
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:24
 msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`__ build system."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:22
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:26
 msgid "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:25
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:29
 msgid "For a general overview of SCons usage for Godot, see :ref:`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:29
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:33
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:31
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:35
 msgid "Before starting, confirm that ``emcc`` is available in your PATH. This is usually configured by the Emscripten SDK, e.g. when invoking ``emsdk activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:35
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:39
 msgid "Open a terminal and navigate to the root directory of the engine source code. Then instruct SCons to build the Web platform. Specify ``target`` as either ``template_release`` for a release build or ``template_debug`` for a debug build:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:44
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:48
 msgid "By default, the :ref:`JavaScriptBridge singleton <doc_web_javascript_bridge>` will be built into the engine. Official export templates also have the JavaScript singleton enabled. Since ``eval()`` calls can be a security concern, the ``javascript_eval`` option can be used to build without the singleton:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:54
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:58
 msgid "By default, WebWorker threads support is enabled. To disable it and only use a single thread, the ``threads`` option can be used to build the web template without threads support:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:62
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:66
 msgid "The engine will now be compiled to WebAssembly by Emscripten. Once finished, the resulting file will be placed in the ``bin`` subdirectory. Its name is ``godot.web.template_release.wasm32.zip`` for release or ``godot.web.template_debug.wasm32.zip`` for debug."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:67
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:71
 msgid "Finally, rename the zip archive to ``web_release.zip`` for the release template:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:74
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:78
 msgid "And ``web_debug.zip`` for the debug template:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:81
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:85
 msgid "GDExtension"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:83
-msgid "The default export templates do not include GDExtension support for performance and compatibility reasons. See the :ref:`export page <doc_javascript_export_options>` for more info."
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:87
+msgid "The default export templates do not include GDExtension support for performance and compatibility reasons. See the :ref:`web export options <doc_javascript_export_options>` for more info."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:87
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:91
 msgid "You can build the export templates using the option ``dlink_enabled=yes`` to enable GDExtension support:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:95
-msgid "Once finished, the resulting file will be placed in the ``bin`` subdirectory. Its name will have ``_dlink`` added."
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:99
+msgid "Once finished, the resulting file will be placed in the ``bin`` subdirectory. Its name will have ``.dlink`` added."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:98
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:102
 msgid "Finally, rename the zip archives to ``web_dlink_release.zip`` and ``web_dlink_release.zip`` for the release template:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:107
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:111
 msgid "Building the editor"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:109
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:113
 msgid "It is also possible to build a version of the Godot editor that can run in the browser. The editor version is not recommended over the native build. You can build the editor with:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:117
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:121
 msgid "Once finished, the resulting file will be placed in the ``bin`` subdirectory. Its name will be ``godot.web.editor.wasm32.zip``. You can upload the zip content to your web server and visit it with your browser to use the editor."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:121
-msgid "Refer to the :ref:`export page <doc_javascript_export_options>` for the web server requirements."
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:126
-msgid "The Godot repository includes a `Python script to host a local web server <https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py>`__. This can be used to test the web editor locally."
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:125
+msgid "Refer to the :ref:`web export options <doc_javascript_export_options>` for the web server requirements."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:130
+msgid "The Godot repository includes a `Python script to host a local web server <https://raw.githubusercontent.com/godotengine/godot/master/platform/web/serve.py>`__. This can be used to test the web editor locally."
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:134
 msgid "After compiling the editor, extract the ZIP archive that was created in the ``bin/`` folder, then run the following command in the Godot repository root:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:139
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:143
 msgid "This will serve the contents of the ``bin/`` folder and open the default web browser automatically. In the page that opens, access ``godot.editor.html`` and you should be able to test the web editor this way."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:143
+#: ../../docs/engine_details/development/compiling/compiling_for_web.rst:147
 msgid "Note that for production use cases, this Python-based web server should not be used. Instead, you should use an established web server such as Apache or nginx."
 msgstr ""

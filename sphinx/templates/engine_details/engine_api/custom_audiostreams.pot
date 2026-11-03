@@ -36,19 +36,19 @@ msgid "This guide assumes the reader knows how to create C++ modules. If not, re
 msgstr ""
 
 #: ../../docs/engine_details/engine_api/custom_audiostreams.rst:23
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:115
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:346
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:100
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:313
 msgid "References:"
 msgstr ""
 
 #: ../../docs/engine_details/engine_api/custom_audiostreams.rst:25
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:117
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:348
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:102
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:315
 msgid "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h>`__"
 msgstr ""
 
 #: ../../docs/engine_details/engine_api/custom_audiostreams.rst:26
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:349
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:316
 msgid "`scene/audio/audio_stream_player.cpp <https://github.com/godotengine/godot/blob/master/scene/audio/audio_stream_player.cpp>`__"
 msgstr ""
 
@@ -84,50 +84,54 @@ msgstr ""
 msgid "audiostream_mytone.h"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:78
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:74
 msgid "audiostream_mytone.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:121
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:106
 msgid "Create an AudioStreamPlayback"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:123
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:108
 msgid "AudioStreamPlayer uses ``mix`` callback to obtain PCM data. The callback must match sample rate and fill the buffer."
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:125
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:110
 msgid "Since AudioStreamPlayback is controlled by the audio thread, i/o and dynamic memory allocation are forbidden."
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:127
-msgid "audiostreamplayer_mytone.h"
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:112
+msgid "audiostream_playback_mytone.h"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:164
-msgid "audiostreamplayer_mytone.cpp"
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:160
+msgid "audiostream_playback_mytone.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:228
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:260
+msgid "Usage"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:262
+msgid "The ``set_freq`` and ``get_freq`` methods allow direct change of the frequency parameter. But one can also use the more generic way to handle parameters based on properties through ``get/set(\"parameters/Frequency\")``."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:265
+msgid "audiostream_player_mytone.gd"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:303
 msgid "Resampling"
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:230
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:305
 msgid "Godot's AudioServer currently uses 44100 Hz sample rate. When other sample rates are needed such as 48000, either provide one or use AudioStreamPlaybackResampled. Godot provides cubic interpolation for audio resampling."
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:234
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:309
 msgid "Instead of overloading ``mix``, AudioStreamPlaybackResampled uses ``_mix_internal`` to query AudioFrames and ``get_stream_sampling_rate`` to query current mix rate."
 msgstr ""
 
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:237
-msgid "mytone_audiostream_resampled.h"
-msgstr ""
-
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:279
-msgid "mytone_audiostream_resampled.cpp"
-msgstr ""
-
-#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:347
+#: ../../docs/engine_details/engine_api/custom_audiostreams.rst:314
 msgid "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/core/math/audio_frame.h>`__"
 msgstr ""

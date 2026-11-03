@@ -160,7 +160,7 @@ msgid "Visual shader nodes have input and output ports. The input ports are loca
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:118
-msgid "These ports are colored to differentiate type of port:"
+msgid "These ports are colored to differentiate the type of port:"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:127
@@ -300,73 +300,133 @@ msgid "Below are some special nodes that are worth knowing about. The list is no
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:168
-msgid "Expression node"
+msgid "Group node"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:170
-msgid "The ``Expression`` node allows you to write Godot Shading Language (GLSL-like) expressions inside your visual shaders. The node has buttons to add any amount of required input and output ports and can be resized. You can also set up the name and type of each port. The expression you have entered will apply immediately to the material (once the focus leaves the expression text box). Any parsing or compilation errors will be printed to the Output tab. The outputs are initialized to their zero value by default. The node is located under the Special tab and can be used in all shader modes."
+msgid "The ``Group`` node is used to create a group of nodes that is collapsed into a single node. You can see it as an equivalent of creating a function in a text-based shader."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:179
-msgid "The possibilities of this node are almost limitless – you can write complex procedures, and use all the power of text-based shaders, such as loops, the ``discard`` keyword, extended types, etc. For example:"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:174
+msgid "As an example, we'll create a group that accepts two input parameters (also called *input ports*): a color, and an ``invert`` boolean parameter that makes the color inverted if it's set to ``true``. There is one output parameter named ``color2`` (output names can't be identical to input names). This parameter is our modified color that is returned by the node."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:186
-msgid "Reroute node"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:180
+msgid "Start editing the group by clicking the pencil icon in the Group node's title bar:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:188
-msgid "The ``Reroute`` node is used purely for organizational purposes. In a complicated shader with many nodes you may find that the paths between nodes can make things hard to read. Reroute, as its name suggests, allows you to adjust the path between nodes to make things easier to read. You can even have multiple reroute nodes for a single path, which can be used to make right angles."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:185
+msgid "You can add input parameters using :button:`Edit Ports` in the :ui:`Group Input` node:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:196
-msgid "To move a reroute node move your mouse cursor above it, and grab the handle that appears."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:189
+msgid "For this example, we'll add a ``vec4`` parameter for a color that accepts an alpha channel, as well as our ``invert`` boolean mentioned above:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:202
-msgid "Fresnel node"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:194
+msgid "Repeat this operation using the :button:`Edit Ports` button in the :ui:`Group Output` node this time. The dialog looks the same as the dialog used to edit the input ports."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:204
-msgid "The ``Fresnel`` node is designed to accept normal and view vectors and produces a scalar which is the saturated dot product between them. Additionally, you can setup the inversion and the power of equation. The ``Fresnel`` node is great for adding a rim-like lighting effect to objects."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:198
+msgid "Now, add a ``ColorOp`` node between the input and output nodes. Set its mode to :ui:`Difference` and connect the input color to the ``a`` input of the ``ColorOp`` node. Connect the ``inverted`` boolean parameter to the ``b`` input of the ``ColorOp`` node. The boolean is automatically converted to a color (pure black for ``false``, pure white for ``true``). Finally, connect the output of the ``ColorOp`` node to the output node."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:207
+msgid "Once you're done editing the group's contents, you can go back to the main view using the button on the right in the toolbar:"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:212
-msgid "Boolean node"
+msgid "You can rename a group by clicking on the VisualShaderGroup resource that is part of the Group node:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:214
-msgid "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. This property can be used to enable or disable some effect parts with one click."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:217
+msgid "This will open the VisualShaderGroup node resource for editing in the inspector, where the group name can be changed:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:221
-msgid "If node"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:222
+msgid "As a convention, group names should follow the PascalCase naming convention to match the built-in nodes, although this is not strictly required."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:223
-msgid "The ``If`` node allows you to setup a vector which will be returned the result of the comparison between ``a`` and ``b``. There are three vectors which can be returned: ``a == b`` (in that case the tolerance parameter is provided as a comparison threshold – by default it is equal to the minimal value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:225
+msgid "You can adjust the node parameters like any other visual shader node. For this example, we'll use a red color (``(1.0, 0.0, 0.0, 1.0)``) and set the ``invert`` parameter to ``true``:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:232
-msgid "Switch node"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:231
+msgid "In this example, since we've connected the output of the group to the ``Albedo`` built-in, we'll get a cyan-colored box as the red color inverted is cyan:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:234
-msgid "The ``Switch`` node returns a vector if the boolean condition is ``true`` or ``false``. ``Boolean`` was introduced above. If you want to convert a vector to a true boolean, all components of the vector should be non-zero."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:236
+msgid "If we disable the ``invert`` parameter, the box will be red:"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:241
-msgid "Mesh Emitter"
+msgid "Expression node"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:243
-msgid "The ``Mesh Emitter`` node is used for emitting particles from mesh vertices. This is only available for shaders that are in ``Particles`` mode."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/visual_shaders.rst:246
-msgid "Keep in mind that not all 3D objects are mesh files. a glTF file can't be dragged and dropped into the graph. However, you can create an inherited scene from it, save the mesh in that scene as its own file, and use that."
+msgid "The ``Expression`` node allows you to write Godot Shading Language (GLSL-like) expressions inside your visual shaders. The node has buttons to add any amount of required input and output ports and can be resized. You can also set up the name and type of each port. The expression you have entered will apply immediately to the material (once the focus leaves the expression text box). Any parsing or compilation errors will be printed to the Output tab. The outputs are initialized to their zero value by default. The node is located under the Special tab and can be used in all shader modes."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:252
+msgid "The possibilities of this node are almost limitless – you can write complex procedures, and use all the power of text-based shaders, such as loops, the ``discard`` keyword, extended types, etc. For example:"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:259
+msgid "Reroute node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:261
+msgid "The ``Reroute`` node is used purely for organizational purposes. In a complicated shader with many nodes you may find that the paths between nodes can make things hard to read. Reroute, as its name suggests, allows you to adjust the path between nodes to make things easier to read. You can even have multiple reroute nodes for a single path, which can be used to make right angles."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:269
+msgid "To move a reroute node move your mouse cursor above it, and grab the handle that appears."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:275
+msgid "Fresnel node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:277
+msgid "The ``Fresnel`` node is designed to accept normal and view vectors and produces a scalar which is the saturated dot product between them. Additionally, you can set up the inversion and the power of equation. The ``Fresnel`` node is great for adding a rim-like lighting effect to objects."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:285
+msgid "Boolean node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:287
+msgid "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. This property can be used to enable or disable some effect parts with one click."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:294
+msgid "If node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:296
+msgid "The ``If`` node allows you to set up a vector which will be returned the result of the comparison between ``a`` and ``b``. There are three vectors which can be returned: ``a == b`` (in that case the tolerance parameter is provided as a comparison threshold – by default it is equal to the minimal value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:305
+msgid "Switch node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:307
+msgid "The ``Switch`` node returns a vector if the boolean condition is ``true`` or ``false``. ``Boolean`` was introduced above. If you want to convert a vector to a true boolean, all components of the vector should be non-zero."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:314
+msgid "Mesh Emitter"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:316
+msgid "The ``Mesh Emitter`` node is used for emitting particles from mesh vertices. This is only available for shaders that are in ``Particles`` mode."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:319
+msgid "Keep in mind that not all 3D objects are mesh files. A glTF file can't be dragged and dropped into the graph. However, you can create an inherited scene from it, save the mesh in that scene as its own file, and use that."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:325
 msgid "You can also drag and drop obj files into the graph editor to add the node for that specific mesh, other mesh files will not work for this."
 msgstr ""

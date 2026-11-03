@@ -100,7 +100,7 @@ msgid "Hosting considerations"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:72
-msgid "When hosting a server, clients on your :abbr:`LAN (Local Area Network)` can connect using the internal IP address which is usually of the form ``192.168.*.*``. This internal IP address is **not** reachable by non-LAN/Internet clients."
+msgid "When hosting a server, clients on your :abbr:`LAN (Local Area Network)` can connect using the internal IP address which is usually of the form ``192.168.*.*``. This internal IP address is **not** reachable by clients outside the LAN, such as ones that need to connect via the Internet."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:77
@@ -160,237 +160,237 @@ msgid "Responding to connections or disconnections is possible by connecting to 
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:176
-msgid "``peer_connected(id: int)`` This signal is emitted with the newly connected peer's ID on each other peer, and on the new peer multiple times, once with each other peer's ID."
+msgid "``peer_connected(id: int)`` This signal is emitted on all existing peers with ``id`` corresponding to the ID of the newly connected peer. It is also emitted on the new peer once for each existing peer, each time with ``id`` corresponding to that peer's ID."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
-msgid "``peer_disconnected(id: int)`` This signal is emitted on every remaining peer when one disconnects."
-msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:179
-msgid "The rest are only emitted on clients:"
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:178
+msgid "``peer_disconnected(id: int)`` This signal is emitted on every remaining peer when one disconnects, with ``id`` corresponding to the ID of the disconnected peer."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:181
-msgid "``connected_to_server()``"
-msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:182
-msgid "``connection_failed()``"
+msgid "The rest are only emitted on clients:"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:183
-msgid "``server_disconnected()``"
+msgid "``connected_to_server()``"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:184
+msgid "``connection_failed()``"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:185
+msgid "``server_disconnected()``"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:187
 msgid "To get the unique ID of the associated peer:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:197
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:199
 msgid "To check whether the peer is server or client:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:211
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:213
 msgid "Remote procedure calls"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:213
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:215
 msgid "Remote procedure calls, or RPCs, are functions that can be called on other peers. To create one, use the ``@rpc`` annotation before a function definition. To call an RPC, use ``Callable``'s method ``rpc()`` to call in every peer, or ``rpc_id()`` to call in a specific peer."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
 msgid "RPCs will not serialize Objects or Callables."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid "For a remote call to be successful, the sending and receiving node need to have the same ``NodePath``, which means they must have the same name. When using ``add_child()`` for nodes which are expected to use RPCs, set the argument ``force_readable_name`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:253
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:255
 msgid "If a function is annotated with ``@rpc`` on the client script (resp. server script), then this function must also be declared on the server script (resp. client script). Both RPCs must have the same signature which is evaluated with a checksum of **all RPCs**. All RPCs in a script are checked at once, and all RPCs must be declared on both the client scripts and the server scripts, **even functions that are currently not in use**."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:259
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:261
 msgid "The signature of the RPC includes the ``@rpc()`` declaration, the function, return type, **and** the NodePath. If an RPC resides in a script attached to ``/root/Main/Node1``, then it must reside in precisely the same path and node on both the client script and the server script. Function arguments are not checked for matching between the server and client code (example: ``func sendstuff():`` and ``func sendstuff(arg1, arg2):`` **will pass** signature matching)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:266
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:268
 msgid "If these conditions are not met (if all RPCs do not pass signature matching), the script may print an error or cause unwanted behavior. The error message may be unrelated to the RPC function you are currently building and testing."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:270
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:272
 msgid "See further explanation and troubleshooting on `this post <https://github.com/godotengine/godot/issues/57869#issuecomment-1034215138>`__."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:272
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:274
 msgid "The annotation can take a number of arguments, which have default values. ``@rpc`` is equivalent to:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:283
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:285
 msgid "The parameters and their functions are as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:285
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:287
 msgid "``mode``:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:287
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:289
 msgid "``\"authority\"``: Only the multiplayer authority can call remotely. The authority is the server by default, but can be changed per-node using :ref:`Node.set_multiplayer_authority <class_Node_method_set_multiplayer_authority>`."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:290
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:292
 msgid "``\"any_peer\"``: Clients are allowed to call remotely. Useful for transferring user input."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:292
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:294
 msgid "``sync``:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:294
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:296
 msgid "``\"call_remote\"``: The function will not be called on the local peer."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:295
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:297
 msgid "``\"call_local\"``: The function can be called on the local peer. Useful when the server is also a player."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:297
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:299
 msgid "``transfer_mode``:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:299
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
 msgid "``\"unreliable\"`` Packets are not acknowledged, can be lost, and can arrive at any order."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:300
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid "``\"unreliable_ordered\"`` Packets are received in the order they were sent in. This is achieved by ignoring packets that arrive later if another that was sent after them has already been received. Can cause packet loss if used incorrectly."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:303
 msgid "``\"reliable\"`` Resend attempts are sent until packets are acknowledged, and their order is preserved. Has a significant performance penalty."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:303
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
 msgid "``transfer_channel`` is the channel index."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
 msgid "The first 3 can be passed in any order, but ``transfer_channel`` must always be last."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:309
 msgid "The function ``multiplayer.get_remote_sender_id()`` can be used to get the unique id of an rpc sender, when used within the function called by rpc."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "RPC methods must be defined on :ref:`class_Node`-derived classes. Attempting to use high-level RPC calls on methods defined only in non-Node classes (such as Resource) will result in runtime errors."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
 msgid "Channels"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
 msgid "Modern networking protocols support channels, which are separate connections within the connection. This allows for multiple streams of packets that do not interfere with each other."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
 msgid "For example, game chat related messages and some of the core gameplay messages should all be sent reliably, but a gameplay message should not wait for a chat message to be acknowledged. This can be achieved by using different channels."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:353
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:355
 msgid "Channels are also useful when used with the unreliable ordered transfer mode. Sending packets of variable size with this transfer mode can cause packet loss, since packets which are slower to arrive are ignored. Separating them into multiple streams of homogeneous packets by using channels allows ordered transfer with little packet loss, and without the latency penalty caused by reliable mode."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:357
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:359
 msgid "The default channel with index 0 is actually three different channels - one for each transfer mode."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:360
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:362
 msgid "Example lobby implementation"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:362
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:364
 msgid "This is an example lobby that can handle peers joining and leaving, notify UI scenes through signals, and start the game after all clients have loaded the game scene."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:629
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:631
 msgid "The game scene's root node should be named Game. In the script attached to it:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:669
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:671
 msgid "Exporting for dedicated servers"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:671
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:673
 msgid "Once you've made a multiplayer game, you may want to export it to run it on a dedicated server with no GPU available. See :ref:`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:677
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:679
 msgid "The code samples on this page aren't designed to run on a dedicated server. You'll have to modify them so the server isn't considered to be a player. You'll also have to modify the game starting mechanism so that the first player who joins can start the game."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:683
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:685
 msgid "Authentication"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:685
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:687
 msgid "Before hosting your game online to a public audience, you may want to consider adding authentication and protecting your RPCs against unauthenticated access. You can use the :ref:`SceneMultiplayer <class_SceneMultiplayer>`'s built-in authentication mechanism for this."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:688
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:690
 msgid "On the server:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:703
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:705
 msgid "On the client:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:723
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:725
 msgid "As soon as both the client's and the server's :ref:`complete_auth() <class_SceneMultiplayer_method_complete_auth>` methods have been called, the connection is considered to be established and the ``connected_to_server`` and ``peer_connected`` signals fire."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:728
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:730
 msgid "Secure multiplayer design"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:730
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:732
 msgid "Godot's high-level multiplayer API makes it easier to build networked games, but it does not automatically make gameplay logic secure. For competitive or persistent multiplayer games, treat all client input as untrusted."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:734
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:736
 msgid "A common mistake is to let clients authoritatively decide important game states, such as player position, combat results, inventory changes, or match outcomes. This can make cheating much easier, and result in more frequent desynchronization (\"desync\")."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:739
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:741
 msgid "In general, prefer the following patterns:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:741
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:743
 msgid "Use server-authoritative logic for gameplay-critical decisions."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:742
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:744
 msgid "Validate RPC arguments before applying them to the game state."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:743
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:745
 msgid "Avoid trusting client-reported positions, timers, cooldowns, or resource values without checks."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:745
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:747
 msgid "Add safety checks and rate limits to actions that can be triggered frequently."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:747
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:749
 msgid "In short, you should design your networking so that the server remains the source of truth for important states."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:750
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:752
 msgid "For example, instead of accepting a client's final position directly, consider sending player input or movement intent to the authority/server, then validating and applying the result there. This comes with some tradeoffs (such as server-side performance and complexity due to the need for client-side prediction), but will make it much harder for attackers to cheat by sending falsified data."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:757
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:759
 msgid "See `Choosing the right network model for your multiplayer game <https://mas-bandwidth.com/choosing-the-right-network-model-for-your-multiplayer-game/>`__ for more information on different multiplayer models and their security implications."
 msgstr ""

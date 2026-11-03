@@ -159,47 +159,47 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:88
-msgid "Coordinate of pixel center. In screen space. ``xy`` specifies position in viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``."
+msgid "Coordinate of pixel center, in screen space. ``xy`` specifies position in viewport in pixels from the upper-left."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:92
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:91
 msgid "in vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:92
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:91
 msgid "UV from the ``vertex()`` function. This is set to sample all of a source texture."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:95
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:94
 msgid "in vec4 **MODULATE**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:95
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:94
 msgid "``MODULATE`` color passed in by RenderingServer API."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:97
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:96
 msgid "out vec4 **COLOR0**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:97
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:96
 msgid "Output color to blended with the DrawableTexture target. Initialized to ``(0.0, 0.0, 0.0, 0.0)``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:100
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:99
 msgid "out vec4 **COLOR1**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:100
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:103
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:106
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:99
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:102
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:105
 msgid "Output color to blended with an extra DrawableTexture target. Initialized to ``(0.0, 0.0, 0.0, 0.0)``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:103
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:102
 msgid "out vec4 **COLOR2**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:106
+#: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:105
 msgid "out vec4 **COLOR3**"
 msgstr ""

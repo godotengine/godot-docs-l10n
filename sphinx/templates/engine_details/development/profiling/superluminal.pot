@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:5
+msgid "Superluminal"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:7
+msgid "Please see the :ref:`sampling profiler instructions <doc_sampling_profilers>` for more information on how to set up Godot to work with sampling profilers like Superluminal."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:10
+msgid "Superluminal is a commercial profiler with many features and a special focus on game development. It has support for profiling on Windows, Linux, Xbox, and Playstation."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:13
+msgid "While it does not have a free version, it has more advanced features that aren't available in the open source profilers."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:15
+msgid "Here are the steps to use it:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:17
+msgid "Open Superluminal. Set the **Application** field to the Godot executable path. Set the **Working Directory** to the project path."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:20
+msgid "Set the **Commandline Arguments** field based on your needs. Use ``--editor`` if you want to profile the editor, for instance. You can leave it empty for profiling a running project."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:25
+msgid "If needed, you can adjust the **Capture Options**. The defaults are usually fine. You can use this to enable child process profiling, which allows for profiling the editor and running the game from it on the same session."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:29
+msgid "Click on the **Run** button to start profiling. The software will ask for elevated privileges which are necessary to capture the information."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:32
+msgid "Perform the actions you need to profile on the running process."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:34
+msgid "Once done, you can close the executable, or click on the **Start Analyzing** button (which will kill the executable process)."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/superluminal.rst:39
+msgid "The results will be shown on screen. For more information on how to use this, see the `Superluminal documentation <https://www.superluminal.eu/docs/documentation.html#navigating_ui>`__."
+msgstr ""

@@ -80,889 +80,890 @@ msgid "**Alpha** is a good fit for particle effects and VFX."
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:67
-msgid "**Alpha Scissor:** Material is transparent. Semi-transparent areas whose opacity is below **Alpha Scissor Threshold** are not drawn (above this opacity, these are drawn as opaque). This is faster to render than Alpha and doesn't exhibit transparency sorting issues. The downside is that this results in \"all or nothing\" transparency, with no intermediate values possible. Materials using alpha scissor can cast shadows."
+msgid "**Alpha Scissor:** Material is transparent. Semi-transparent areas whose opacity is below **Alpha Scissor Threshold** are not drawn (above this opacity, these are drawn as opaque). This is faster to render than Alpha and doesn't exhibit transparency sorting issues. The downside is that this results in \"all or nothing\" transparency, with no intermediate values possible. Materials using alpha scissor can cast shadows. When using this mode, consider enabling :ref:`Mipmaps > Preserve Alpha Test Coverage <doc_importing_images_mipmaps_preserve_alpha_test_coverage>` on the albedo texture in the Import dock. This improves the consistency of the material's opacity regardless of the distance between the material and the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:74
+#: ../../docs/tutorials/3d/standard_material_3d.rst:79
 msgid "**Alpha Scissor** is ideal for foliage and fences, since these have hard edges and require correct sorting to look good."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:77
+#: ../../docs/tutorials/3d/standard_material_3d.rst:82
 msgid "**Alpha Hash:** Material is transparent. Semi-transparent areas are drawn using dithering. This is also \"all or nothing\" transparency, but dithering helps represent partially opaque areas with limited precision depending on viewport resolution. Materials using alpha hash can cast shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:82
+#: ../../docs/tutorials/3d/standard_material_3d.rst:87
 msgid "**Alpha Hash** is suited for realistic-looking hair, although stylized hair may work better with alpha scissor."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:85
+#: ../../docs/tutorials/3d/standard_material_3d.rst:90
 msgid "**Depth Pre-Pass:** This renders the object's fully opaque pixels via the opaque pipeline first, then renders the rest with alpha blending. This allows transparency sorting to be *mostly* correct (albeit not fully so, as partially transparent regions may still exhibit incorrect sorting). Materials using depth prepass can cast shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:93
+#: ../../docs/tutorials/3d/standard_material_3d.rst:98
 msgid "Godot will automatically force the material to be transparent with alpha blending if *any* of these conditions is met:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:96
+#: ../../docs/tutorials/3d/standard_material_3d.rst:101
 msgid "Setting the transparency mode to **Alpha** (as described here)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:97
+#: ../../docs/tutorials/3d/standard_material_3d.rst:102
 msgid "Setting a blend mode other than the default **Mix**"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:98
+#: ../../docs/tutorials/3d/standard_material_3d.rst:103
 msgid "Enabling **Refraction**, **Proximity Fade**, or **Distance Fade**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:100
+#: ../../docs/tutorials/3d/standard_material_3d.rst:105
 msgid "Comparison between alpha blending (left) and alpha scissor (right) transparency:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:106
+#: ../../docs/tutorials/3d/standard_material_3d.rst:111
 msgid "Alpha-blended transparency has several :ref:`limitations <doc_3d_rendering_limitations_transparency_sorting>`:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:109
+#: ../../docs/tutorials/3d/standard_material_3d.rst:114
 msgid "Alpha-blended materials are significantly slower to render, especially if they overlap."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:111
+#: ../../docs/tutorials/3d/standard_material_3d.rst:116
 msgid "Alpha-blended materials may exhibit sorting issues when transparent surfaces overlap each other. This means that surfaces may render in the incorrect order, with surfaces in the back appearing to be in front of those which are actually closer to the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:115
+#: ../../docs/tutorials/3d/standard_material_3d.rst:120
 msgid "Alpha-blended materials don't cast shadows, although they can receive shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:116
+#: ../../docs/tutorials/3d/standard_material_3d.rst:121
 msgid "Alpha-blended materials don't appear in any reflections (other than reflection probes)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:118
+#: ../../docs/tutorials/3d/standard_material_3d.rst:123
 msgid "Screen-space reflections and sharp SDFGI reflections don't appear on alpha-blended materials. When SDFGI is enabled, rough reflections are used as a fallback regardless of material roughness."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:122
+#: ../../docs/tutorials/3d/standard_material_3d.rst:127
 msgid "Before using the **Alpha** transparency mode, always consider whether another transparency mode is more suited for your needs."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:128
+#: ../../docs/tutorials/3d/standard_material_3d.rst:133
 msgid "Alpha Antialiasing"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:132
-msgid "This property is only visible when the transparency mode is **Alpha Scissor** or **Alpha Hash**."
-msgstr ""
-
 #: ../../docs/tutorials/3d/standard_material_3d.rst:135
-msgid "While alpha scissor and alpha hash materials are faster to render than alpha-blended materials, they exhibit hard edges between opaque and transparent regions. While it's possible to use post-processing-based :ref:`antialiasing techniques <doc_3d_antialiasing>` such as FXAA and TAA, this is not always desired as these techniques tend to make the final result look blurrier or exhibit ghosting artifacts."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:142
-msgid "There are 3 alpha antialiasing modes available:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:144
-msgid "**Disabled:** No alpha antialiasing. Edges of transparent materials will appear aliased unless a post-processing-based antialiasing solution is used."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:146
-msgid "**Alpha Edge Blend:** Results in a smooth transition between opaque and transparent areas. Also known as \"alpha to coverage\"."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:148
-msgid "**Alpha Edge Clip:** Results in a sharp, but still antialiased transition between opaque and transparent areas. Also known as \"alpha to coverage + alpha to one\"."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:152
-msgid "When the alpha antialiasing mode is set to **Alpha Edge Blend** or **Alpha Edge Clip**, a new **Alpha Antialiasing Edge** property becomes visible below in the inspector. This property controls the threshold below which pixels should be made transparent. While you've already defined an alpha scissor threshold (when using **Alpha Scissor** only), this additional threshold is used to smoothly transition between opaque and transparent pixels. **Alpha Antialiasing Edge** must *always* be set to a value that is strictly below the alpha scissor threshold. The default of ``0.3`` is a sensible value with an alpha scissor of threshold of ``0.5``, but remember to adjust this alpha antialiasing edge when modifying the alpha scissor threshold."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:163
-msgid "If you find the antialiasing effect not effective enough, try increasing **Alpha Antialiasing Edge** while making sure it's below **Alpha Scissor Threshold** (if the material uses alpha scissor). On the other hand, if you notice the texture's appearance visibly changing as the camera moves closer to the material, try decreasing **Alpha Antialiasing Edge**."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:171
-msgid "For best results, MSAA 3D should be set to at least 2× in the Project Settings when using alpha antialiasing. This is because this feature relies on alpha to coverage, which is a feature provided by MSAA."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:175
-msgid "Without MSAA, a fixed dithering pattern is applied on the material's edges, which isn't very effective at smoothing out edges (although it can still help a little)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:180
-msgid "Blend Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:182
-msgid "Controls the blend mode for the material. Keep in mind that any mode other than *Mix* forces the object to go through the transparent pipeline."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:185
-msgid "**Mix:** Default blend mode, alpha controls how much the object is visible."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:186
-msgid "**Add:** The final color of the object is added to the color of the screen, nice for flares or some fire-like effects."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:188
-msgid "**Subtract:** The final color of the object is subtracted from the color of the screen."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:190
-msgid "**Multiply:** The final color of the object is multiplied with the color of the screen."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:192
-msgid "**Premultiplied Alpha:** The color of the object is expected to have already been multiplied by the alpha. This behaves like **Add** when the alpha is ``0.0`` (fully transparent) and like **Mix** when the alpha is ``1.0`` (opaque)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:199
-msgid "Cull Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:201
-msgid "Determines which side of the object is not drawn when backfaces are rendered:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:203
-msgid "**Back:** The back of the object is culled when not visible (default)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:204
-msgid "**Front:** The front of the object is culled when not visible."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:205
-msgid "**Disabled:** Used for objects that are double-sided (no culling is performed)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:209
-msgid "By default, Blender has backface culling disabled on materials and will export materials to match how they render in Blender. This means that materials in Godot will have their cull mode set to **Disabled**. This can decrease performance since backfaces will be rendered, even when they are being culled by other faces. To resolve this, enable **Backface Culling** in Blender's Materials tab, then export the scene to glTF again."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:217
-msgid "Depth Draw Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:219
-msgid "Specifies when depth rendering must take place."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:221
-msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:222
-msgid "**Always:** Depth draw is drawn for both opaque and transparent objects."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:223
-msgid "**Never:** No depth draw takes place (do not confuse this with the No Depth Test option below)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:225
-msgid "**Depth Pre-Pass:** For transparent objects, an opaque pass is made first with the opaque parts, then transparency is drawn above. Use this option with transparent grass or tree foliage."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:232
-msgid "No Depth Test"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:234
-msgid "In order for close objects to appear over far away objects, depth testing is performed. Disabling it has the result of objects appearing over (or under) everything else."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:238
-msgid "Disabling this makes the most sense for drawing indicators in world space, and works very well with the *Render Priority* property of Material (see the bottom of this page)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:245
-msgid "Depth Test"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:247
-msgid "This can be used to invert the standard depth test. When set to **Inverted**, the object will only appear when occluded, and will be hidden otherwise."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:250
-msgid "This has no effect if **No Depth Test** is enabled."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:255
-msgid "Shading"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:258
-msgid "Shading mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:260
-msgid "Materials support three shading modes: **Per-Pixel**, **Per-Vertex**, and **Unshaded**."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:263
-msgid "Three spheres showing the Per-Pixel, Per-Vertex, and Unshaded modes."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:267
-msgid "The **Per-Pixel** shading mode calculates lighting for each pixel, and is a good fit for most use cases. However, in some cases you may want to increase performance by using another shading mode."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:271
-msgid "The **Per-Vertex** shading mode, often called \"vertex shading\" or \"vertex lighting\", instead calculates lighting once for each vertex, and interpolates the result between each pixel."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:275
-msgid "On low-end or mobile devices, using per-vertex lighting can considerably increase rendering performance. When rendering several layers of transparency, such as when using particle systems, using per-vertex shading can improve performance, especially when the camera is close to particles."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:280
-msgid "You can also use per-vertex lighting to achieve a retro look."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:282
-msgid "Two cubes with a brick texture, one shaded and one unshaded."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:286
-msgid "Texture from `AmbientCG <https://ambientcg.com/view?id=Bricks051>`__"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:288
-msgid "The **Unshaded** shading mode does not calculate lighting at all. Instead, the **Albedo** color is output directly. Lights will not affect the material at all, and unshaded materials will tend to appear considerably brighter than shaded materials."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:293
-msgid "Rendering unshaded is useful for some specific visual effects. If maximum performance is needed, it can also be used for particles, or low-end or mobile devices."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:298
-msgid "Diffuse Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:300
-msgid "Specifies the algorithm used by diffuse scattering of light when hitting the object. The default is **Burley**. Other modes are also available:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:303
-msgid "**Burley:** Default mode, the original Disney Principled PBS diffuse algorithm."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:304
-msgid "**Lambert:** Is not affected by roughness."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:305
-msgid "**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when roughness increases. Works great for hair and simulating cheap subsurface scattering. This implementation is energy conserving."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:308
-msgid "**Toon:** Provides a hard cut for lighting, with smoothing affected by roughness. It is recommended you disable sky contribution from your environment's ambient light settings or disable ambient light in the StandardMaterial3D to achieve a better effect."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:316
-msgid "Specular Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:318
-msgid "Specifies how the specular blob will be rendered. The specular blob represents the shape of a light source reflected in the object."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:321
-msgid "**SchlickGGX:** The most common blob used by PBR 3D engines nowadays."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:322
-msgid "**Toon:** Creates a toon blob, which changes size depending on roughness."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:323
-msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:328
-msgid "Disable Ambient Light"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:330
-msgid "Makes the object not receive any kind of ambient lighting that would otherwise light it."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:334
-msgid "Disable Fog"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:336
-msgid "Makes the object unaffected by depth-based or volumetric fog. This is useful for particles or other additively blended materials that would otherwise show the shape of the mesh (even in places where it would be invisible without the fog)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:339
-msgid "Disable Specular Occlusion"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:341
-msgid "Makes the object not have its reflections reduced where they would usually be occluded."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:344
-msgid "Vertex Color"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:346
-msgid "This setting allows choosing what is done by default to vertex colors that come from your 3D modeling application. By default, they are ignored."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:350
-msgid "Use as Albedo"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:352
-msgid "Choosing this option means vertex color is used as albedo color."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:355
-msgid "Is sRGB"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:357
-msgid "Most 3D modeling software will likely export vertex colors as sRGB, so toggling this option on will help them look correct."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:361
-msgid "Albedo"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:363
-msgid "*Albedo* is the base color for the material, on which all the other settings operate. When set to *Unshaded*, this is the only color that is visible. In previous versions of Godot, this channel was named *Diffuse*. The change of name mainly happened because, in PBR (Physically Based Rendering), this color affects many more calculations than just the diffuse lighting path."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:369
-msgid "Albedo color and texture can be used together as they are multiplied."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:371
-msgid "*Alpha channel* in albedo color and texture is also used for the object transparency. If you use a color or texture with *alpha channel*, make sure to either enable transparency or *alpha scissoring* for it to work."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:376
-msgid "Metallic"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:378
-msgid "Godot uses a metallic model over competing models due to its simplicity. This parameter defines how reflective the material is. The more reflective, the less diffuse/ambient light affects the material and the more light is reflected. This model is called \"energy-conserving\"."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:383
-msgid "The *Specular* parameter is a general amount for the reflectivity (unlike *Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't touch it unless you need to)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:387
-msgid "The minimum internal reflectivity is ``0.04``, so it's impossible to make a material completely unreflective, just like in real life."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:393
-msgid "Roughness"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:395
-msgid "*Roughness* affects the way reflection happens. A value of ``0`` makes it a perfect mirror while a value of ``1`` completely blurs the reflection (simulating natural microsurfacing). Most common types of materials can be achieved with the right combination of *Metallic* and *Roughness*."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:403
-msgid "Emission"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:405
-msgid "*Emission* specifies how much light is emitted by the material (keep in mind this does not include light surrounding geometry unless :ref:`VoxelGI <doc_using_voxel_gi>` or :ref:`SDFGI <doc_using_sdfgi>` are used). This value is added to the resulting final image and is not affected by other lighting in the scene."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:413
-msgid "Normal map"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:415
-msgid "Normal mapping allows you to set a texture that represents finer shape detail. This does not modify geometry, only the incident angle for light. In Godot, only the red and green channels of normal maps are used for better compression and wider compatibility."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:424
-msgid "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is known as OpenGL style. If you've imported a material made to be used with another engine it may be DirectX style, in which case the normal map needs to be converted so its Y axis is flipped."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:429
-msgid "More information about normal maps (including a coordinate order table for popular engines) can be found `here <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:436
-msgid "Bent normal map"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:438
-msgid "A bent normal map describes the average direction of ambient lighting. Unlike a regular normal map, this is used to improve how a material reacts to lighting rather than add surface detail."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:442
-msgid "This is achieved in two ways:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:444
-msgid "Indirect diffuse lighting is made to match global illumination more closely."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:445
-msgid "If specular occlusion is enabled, it is calculated using the bent normals and ambient occlusion instead of just from ambient light. This includes screen-space ambient occlusion (SSAO) and other sources of ambient occlusion."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:452
-msgid "Godot only uses the red and green channels of a bent normal map for better compression and wider compatibility."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:455
-msgid "When creating a bent normal map, there are three things required for it to work correctly in Godot:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:458
-msgid "A **cosine distribution** of rays has to be used when baking."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:459
-msgid "The texture must be created in **tangent space**."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:460
-msgid "The bent normal map needs to use the X+, Y+, and Z+ coordinates, this is known as OpenGL style. If you've imported a material made to be used with another engine it may be DirectX style, in which case the bent normal map needs to be converted so its Y axis is flipped. This can be achieved by setting the green channel under the **Channel Remap** section to **Inverted Green** in the import dock."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:469
-msgid "A bent normal map is different from a regular normal map. The two are not interchangeable."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:473
-msgid "Rim"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:475
-msgid "Some fabrics have small micro-fur that causes light to scatter around it. Godot emulates this with the *Rim* parameter. Unlike other rim lighting implementations, which just use the emission channel, this one actually takes light into account (no light means no rim). This makes the effect considerably more believable."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:482
-msgid "Rim size depends on roughness, and there is a special parameter to specify how it must be colored. If *Tint* is ``0``, the color of the light is used for the rim. If *Tint* is ``1``, then the albedo of the material is used. Using intermediate values generally works best."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:488
-msgid "Clearcoat"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:491
-msgid "The *Clearcoat* parameter is used to add a secondary pass of transparent coat to the material. This is common in car paint and toys. In practice, it's a smaller specular blob added on top of the existing material."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:498
-msgid "Anisotropy"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:501
-msgid "This changes the shape of the specular blob and aligns it to tangent space. Anisotropy is commonly used with hair, or to make materials such as brushed aluminum more realistic. It works especially well when combined with flowmaps."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:508
-msgid "Ambient Occlusion"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:510
-msgid "It is possible to specify a baked ambient occlusion map. This map affects how much ambient light reaches each surface of the object (it does not affect direct light by default). While it is possible to use Screen-Space Ambient Occlusion (SSAO) to generate ambient occlusion, nothing beats the quality of a well-baked AO map. It is recommended to bake ambient occlusion whenever possible."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:519
-msgid "Height"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:521
-msgid "Setting a height map on a material produces a ray-marched search to emulate the proper displacement of cavities along the view direction. This only creates an illusion of depth, and does not add real geometry — for a height map shape used for physics collision (such as terrain), see :ref:`class_HeightMapShape3D`. It may not work for complex objects, but it produces a realistic depth effect for textures. For best results, *Height* should be used together with normal mapping."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:532
-msgid "Subsurface Scattering"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:534
-msgid "*This is only available in the Forward+ renderer, not the Mobile or Compatibility renderers.*"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:537
-msgid "This effect emulates light that penetrates an object's surface, is scattered, and then comes out. It is useful to create realistic skin, marble, colored liquids, etc."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:544
-msgid "Back Lighting"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:546
-msgid "This controls how much light from the lit side (visible to light) is transferred to the dark side (opposite from the light). This works well for thin objects such as plant leaves, grass, human ears, etc."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:553
-msgid "Refraction"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:555
-msgid "When refraction is enabled, Godot attempts to fetch information from behind the object being rendered. This allows distorting the transparency in a way similar to refraction in real life."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:559
-msgid "Remember to use a transparent albedo texture (or reduce the albedo color's alpha channel) to make refraction visible, as refraction relies on transparency to have a visible effect."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:563
-msgid "Refraction also takes the material roughness into account. Higher roughness values will make the objects behind the refraction look blurrier, which simulates real life behavior. If you can't see behind the object when refraction is enabled and albedo transparency is reduced, decrease the material's **Roughness** value."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:569
-msgid "A normal map can optionally be specified in the **Refraction Texture** property to allow distorting the refraction's direction on a per-pixel basis."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:576
-msgid "Refraction is implemented as a screen-space effect and forces the material to be transparent. This makes the effect relatively fast, but this results in some limitations:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:580
-msgid ":ref:`Transparency sorting <doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:582
-msgid "The refractive material cannot refract onto itself, or onto other transparent materials. A refractive material behind another transparent material will be invisible."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:585
-msgid "Off-screen objects cannot appear in the refraction. This is most noticeable with high refraction strength values."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:587
-msgid "Opaque materials in front of the refractive material will appear to have \"refracted\" edges, even though they shouldn't."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:591
-msgid "Detail"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:593
-msgid "Godot allows using secondary albedo and normal maps to generate a detail texture, which can be blended in many ways. By combining this with secondary UV or triplanar modes, many interesting textures can be achieved."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:599
-msgid "There are several settings that control how detail is used."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:601
-msgid "Mask: The detail mask is a black and white image used to control where the blending takes place on a texture. White is for the detail textures, Black is for the regular material textures, different shades of gray are for partial blending of the material textures and detail textures."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:606
-msgid "Blend Mode: These four modes control how the textures are blended together."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:608
-msgid "Mix: Combines pixel values of both textures. At black, only show the material texture, at white, only show the detail texture. Values of gray create a smooth blend between the two."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:612
-msgid "Add: Adds pixel values of one Texture with the other. Unlike mix mode both textures are completely mixed at white parts of a mask and not at gray parts. The original texture is mostly unchanged at black"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:616
-msgid "Sub: Subtracts pixel values of one texture with the other. The second texture is completely subtracted at white parts of a mask with only a little subtraction in black parts, gray parts being different levels of subtraction based on the exact texture."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:621
-msgid "Mul: Multiplies the RGB channel numbers for each pixel from the top texture with the values for the corresponding pixel from the bottom texture."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:624
-msgid "Albedo: This is where you put an albedo texture you want to blend. If nothing is in this slot it will be interpreted as white by default."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:627
-msgid "Normal: This is where you put a normal texture you want to blend. If nothing is in this slot it will be interpreted as a flat normal map. This can still be used even if the material does not have normal map enabled."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:632
-msgid "UV1 and UV2"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:634
-msgid "Godot supports two UV channels per material. Secondary UV is often useful for ambient occlusion or emission (baked light). UVs can be scaled and offset, which is useful when using repeating textures."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:641
-msgid "Triplanar Mapping"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:643
-msgid "Triplanar mapping is supported for both UV1 and UV2. This is an alternative way to obtain texture coordinates, sometimes called \"Autotexture\". Textures are sampled in X, Y and Z and blended by the normal. Triplanar mapping can be performed in either world space or object space."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:648
-msgid "In the image below, you can see how all primitives share the same material with world triplanar, so the brick texture continues smoothly between them."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:654
-msgid "World Triplanar"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:656
-msgid "When using triplanar mapping, it is computed in object local space. This option makes it use world space instead."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:662
-msgid "Sampling"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:665
-msgid "Filter"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:667
-msgid "The filtering method for the textures used by the material. See :ref:`this page<class_BaseMaterial3D_property_texture_filter>` for a full list of options and their description."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:671
-msgid "Repeat"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:673
-msgid "if the textures used by the material repeat, and how they repeat. See :ref:`this page<class_BaseMaterial3D_property_texture_repeat>` for a full list of options and their description."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:677
-msgid "Shadows"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:680
-msgid "Disable Receive Shadows"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:682
-msgid "Makes the object not receive any kind of shadow that would otherwise be cast onto it."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:686
-msgid "Shadow to Opacity"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:688
-msgid "Lighting modifies the alpha so shadowed areas are opaque and non-shadowed areas are transparent. Useful for overlaying shadows onto a camera feed in AR."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:692
-msgid "Billboard"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:695
-msgid "Billboard Mode"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:697
-msgid "Enables billboard mode for drawing materials. This controls how the object faces the camera:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:700
-msgid "**Disabled:** Billboard mode is disabled."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:701
-msgid "**Enabled:** Billboard mode is enabled. The object's -Z axis will always face the camera's viewing plane."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:703
-msgid "**Y-Billboard:** The object's X axis will always be aligned with the camera's viewing plane."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:704
-msgid "**Particle Billboard:** Most suited for particle systems, because it allows specifying :ref:`flipbook animation <doc_process_material_properties_animation>`."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:709
-msgid "The **Particles Anim** section is only visible when the billboard mode is **Particle Billboard**."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:712
-msgid "Billboard Keep Scale"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:714
-msgid "Enables scaling a mesh in billboard mode."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:719
-msgid "Grow"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:721
-msgid "Grows the object vertices in the direction pointed by their normals:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:725
-msgid "This is commonly used to create cheap outlines. Add a second material pass, make it black and unshaded, reverse culling (Cull Front), and add some grow:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:732
-msgid "For Grow to work as expected, the mesh must have connected faces with shared vertices, or \"smooth shading\". If the mesh has disconnected faces with unique vertices, or \"flat shading\", the mesh will appear to have gaps when using Grow."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:736
-msgid "Note that in Godot 4.5 onwards, stencil buffer-based outlines are available using the **Outline** :ref:`stencil mode <doc_standard_material_3d_stencil>`. This can be used as an alternative to Grow for outlines."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:741
-msgid "Transform"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:744
-msgid "Fixed Size"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:746
-msgid "This causes the object to be rendered at the same size no matter the distance. This is useful mostly for indicators (no depth test and high render priority) and some types of billboards."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:751
-msgid "Use Point Size"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:753
-msgid "This option is only effective when the geometry rendered is made of points (generally it's made of triangles when imported from 3D modeling software). If so, then those points can be resized (see below)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:758
-msgid "Point Size"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:760
-msgid "When drawing points, specify the point size in pixels."
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:763
-msgid "Use Particle Trails"
-msgstr ""
-
-#: ../../docs/tutorials/3d/standard_material_3d.rst:765
+#: ../../docs/tutorials/3d/standard_material_3d.rst:773
 msgid "*This is only available in the Forward+ and Mobile renderers, not the Compatibility renderer.*"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:768
-msgid "If true, enables parts of the shader required for GPUParticles3D trails to function. This also requires using a mesh with appropriate skinning, such as RibbonTrailMesh or TubeTrailMesh. Enabling this feature outside of materials used in GPUParticles3D meshes will break material rendering."
+#: ../../docs/tutorials/3d/standard_material_3d.rst:140
+msgid "This property is only visible when the transparency mode is **Alpha Scissor** or **Alpha Hash**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:774
-msgid "Use Z Clip Scale"
+#: ../../docs/tutorials/3d/standard_material_3d.rst:143
+msgid "While alpha scissor and alpha hash materials are faster to render than alpha-blended materials, they exhibit hard edges between opaque and transparent regions. While it's possible to use post-processing-based :ref:`antialiasing techniques <doc_3d_antialiasing>` such as FXAA and TAA, this is not always desired as these techniques tend to make the final result look blurrier or exhibit ghosting artifacts."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:150
+msgid "There are 3 alpha antialiasing modes available:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:152
+msgid "**Disabled:** No alpha antialiasing. Edges of transparent materials will appear aliased unless a post-processing-based antialiasing solution is used."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:154
+msgid "**Alpha Edge Blend:** Results in a smooth transition between opaque and transparent areas. Also known as \"alpha to coverage\"."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:156
+msgid "**Alpha Edge Clip:** Results in a sharp, but still antialiased transition between opaque and transparent areas. Also known as \"alpha to coverage + alpha to one\"."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:160
+msgid "When the alpha antialiasing mode is set to **Alpha Edge Blend** or **Alpha Edge Clip**, a new **Alpha Antialiasing Edge** property becomes visible below in the inspector. This property controls the threshold below which pixels should be made transparent. While you've already defined an alpha scissor threshold (when using **Alpha Scissor** only), this additional threshold is used to smoothly transition between opaque and transparent pixels. **Alpha Antialiasing Edge** must *always* be set to a value that is strictly below the alpha scissor threshold. The default of ``0.3`` is a sensible value with an alpha scissor of threshold of ``0.5``, but remember to adjust this alpha antialiasing edge when modifying the alpha scissor threshold."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:171
+msgid "If you find the antialiasing effect not effective enough, try increasing **Alpha Antialiasing Edge** while making sure it's below **Alpha Scissor Threshold** (if the material uses alpha scissor). On the other hand, if you notice the texture's appearance visibly changing as the camera moves closer to the material, try decreasing **Alpha Antialiasing Edge**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:179
+msgid "For best results, MSAA 3D should be set to at least 2× in the Project Settings when using alpha antialiasing. This is because this feature relies on alpha to coverage, which is a feature provided by MSAA."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:183
+msgid "Without MSAA, a fixed dithering pattern is applied on the material's edges, which isn't very effective at smoothing out edges (although it can still help a little)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:188
+msgid "Blend Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:190
+msgid "Controls the blend mode for the material. Keep in mind that any mode other than *Mix* forces the object to go through the transparent pipeline."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:193
+msgid "**Mix:** Default blend mode, alpha controls how much the object is visible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:194
+msgid "**Add:** The final color of the object is added to the color of the screen, nice for flares or some fire-like effects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:196
+msgid "**Subtract:** The final color of the object is subtracted from the color of the screen."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:198
+msgid "**Multiply:** The final color of the object is multiplied with the color of the screen."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:200
+msgid "**Premultiplied Alpha:** The color of the object is expected to have already been multiplied by the alpha. This behaves like **Add** when the alpha is ``0.0`` (fully transparent) and like **Mix** when the alpha is ``1.0`` (opaque)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:207
+msgid "Cull Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:209
+msgid "Determines which side of the object is not drawn when backfaces are rendered:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:211
+msgid "**Back:** The back of the object is culled when not visible (default)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:212
+msgid "**Front:** The front of the object is culled when not visible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:213
+msgid "**Disabled:** Used for objects that are double-sided (no culling is performed)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:217
+msgid "By default, Blender has backface culling disabled on materials and will export materials to match how they render in Blender. This means that materials in Godot will have their cull mode set to **Disabled**. This can decrease performance since backfaces will be rendered, even when they are being culled by other faces. To resolve this, enable **Backface Culling** in Blender's Materials tab, then export the scene to glTF again."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:225
+msgid "Depth Draw Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:227
+msgid "Specifies when depth rendering must take place."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:229
+msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:230
+msgid "**Always:** Depth draw is drawn for both opaque and transparent objects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:231
+msgid "**Never:** No depth draw takes place (do not confuse this with the No Depth Test option below)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:233
+msgid "**Depth Pre-Pass:** For transparent objects, an opaque pass is made first with the opaque parts, then transparency is drawn above. Use this option with transparent grass or tree foliage."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:240
+msgid "No Depth Test"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:242
+msgid "In order for close objects to appear over far away objects, depth testing is performed. Disabling it has the result of objects appearing over (or under) everything else."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:246
+msgid "Disabling this makes the most sense for drawing indicators in world space, and works very well with the *Render Priority* property of Material (see the bottom of this page)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:253
+msgid "Depth Test"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:255
+msgid "This can be used to invert the standard depth test. When set to **Inverted**, the object will only appear when occluded, and will be hidden otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:258
+msgid "This has no effect if **No Depth Test** is enabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:263
+msgid "Shading"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:266
+msgid "Shading mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:268
+msgid "Materials support three shading modes: **Per-Pixel**, **Per-Vertex**, and **Unshaded**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:271
+msgid "Three spheres showing the Per-Pixel, Per-Vertex, and Unshaded modes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:275
+msgid "The **Per-Pixel** shading mode calculates lighting for each pixel, and is a good fit for most use cases. However, in some cases you may want to increase performance by using another shading mode."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:279
+msgid "The **Per-Vertex** shading mode, often called \"vertex shading\" or \"vertex lighting\", instead calculates lighting once for each vertex, and interpolates the result between each pixel."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:283
+msgid "On low-end or mobile devices, using per-vertex lighting can considerably increase rendering performance. When rendering several layers of transparency, such as when using particle systems, using per-vertex shading can improve performance, especially when the camera is close to particles."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:288
+msgid "You can also use per-vertex lighting to achieve a retro look."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:290
+msgid "Two cubes with a brick texture, one shaded and one unshaded."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:294
+msgid "Texture from `AmbientCG <https://ambientcg.com/view?id=Bricks051>`__"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:296
+msgid "The **Unshaded** shading mode does not calculate lighting at all. Instead, the **Albedo** color is output directly. Lights will not affect the material at all, and unshaded materials will tend to appear considerably brighter than shaded materials."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:301
+msgid "Rendering unshaded is useful for some specific visual effects. If maximum performance is needed, it can also be used for particles, or low-end or mobile devices."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:306
+msgid "Diffuse Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:308
+msgid "Specifies the algorithm used by diffuse scattering of light when hitting the object. The default is **Burley**. Other modes are also available:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:311
+msgid "**Burley:** Default mode, the original Disney Principled PBS diffuse algorithm."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:312
+msgid "**Lambert:** Is not affected by roughness."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:313
+msgid "**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when roughness increases. Works great for hair and simulating cheap subsurface scattering. This implementation is energy conserving."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:316
+msgid "**Toon:** Provides a hard cut for lighting, with smoothing affected by roughness. It is recommended you disable sky contribution from your environment's ambient light settings or disable ambient light in the StandardMaterial3D to achieve a better effect."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:324
+msgid "Specular Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:326
+msgid "Specifies how the specular blob will be rendered. The specular blob represents the shape of a light source reflected in the object."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:329
+msgid "**SchlickGGX:** The most common blob used by PBR 3D engines nowadays."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:330
+msgid "**Toon:** Creates a toon blob, which changes size depending on roughness."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:331
+msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:336
+msgid "Disable Ambient Light"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:338
+msgid "Makes the object not receive any kind of ambient lighting that would otherwise light it."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:342
+msgid "Disable Fog"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:344
+msgid "Makes the object unaffected by depth-based or volumetric fog. This is useful for particles or other additively blended materials that would otherwise show the shape of the mesh (even in places where it would be invisible without the fog)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:347
+msgid "Disable Specular Occlusion"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:349
+msgid "Makes the object not have its reflections reduced where they would usually be occluded."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:352
+msgid "Vertex Color"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:354
+msgid "This setting allows choosing what is done by default to vertex colors that come from your 3D modeling application. By default, they are ignored."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:358
+msgid "Use as Albedo"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:360
+msgid "Choosing this option means vertex color is used as albedo color."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:363
+msgid "Is sRGB"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:365
+msgid "Most 3D modeling software will likely export vertex colors as sRGB, so toggling this option on will help them look correct."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:369
+msgid "Albedo"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:371
+msgid "*Albedo* is the base color for the material, on which all the other settings operate. When set to *Unshaded*, this is the only color that is visible. In previous versions of Godot, this channel was named *Diffuse*. The change of name mainly happened because, in PBR (Physically Based Rendering), this color affects many more calculations than just the diffuse lighting path."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:377
+msgid "Albedo color and texture can be used together as they are multiplied."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:379
+msgid "*Alpha channel* in albedo color and texture is also used for the object transparency. If you use a color or texture with *alpha channel*, make sure to either enable transparency or *alpha scissoring* for it to work."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:384
+msgid "Metallic"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:386
+msgid "Godot uses a metallic model over competing models due to its simplicity. This parameter defines how reflective the material is. The more reflective, the less diffuse/ambient light affects the material and the more light is reflected. This model is called \"energy-conserving\"."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:391
+msgid "The *Specular* parameter is a general amount for the reflectivity (unlike *Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't touch it unless you need to)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:395
+msgid "The minimum internal reflectivity is ``0.04``, so it's impossible to make a material completely unreflective, just like in real life."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:401
+msgid "Roughness"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:403
+msgid "*Roughness* affects the way reflection happens. A value of ``0`` makes it a perfect mirror while a value of ``1`` completely blurs the reflection (simulating natural microsurfacing). Most common types of materials can be achieved with the right combination of *Metallic* and *Roughness*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:411
+msgid "Emission"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:413
+msgid "*Emission* specifies how much light is emitted by the material (keep in mind this does not include light surrounding geometry unless :ref:`VoxelGI <doc_using_voxel_gi>` or :ref:`SDFGI <doc_using_sdfgi>` are used). This value is added to the resulting final image and is not affected by other lighting in the scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:421
+msgid "Normal map"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:423
+msgid "Normal mapping allows you to set a texture that represents finer shape detail. This does not modify geometry, only the incident angle for light. In Godot, only the red and green channels of normal maps are used for better compression and wider compatibility."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:432
+msgid "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is known as OpenGL style. If you've imported a material made to be used with another engine it may be DirectX style, in which case the normal map needs to be converted so its Y axis is flipped."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:437
+msgid "More information about normal maps (including a coordinate order table for popular engines) can be found `here <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:444
+msgid "Bent normal map"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:446
+msgid "A bent normal map describes the average direction of ambient lighting. Unlike a regular normal map, this is used to improve how a material reacts to lighting rather than add surface detail."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:450
+msgid "This is achieved in two ways:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:452
+msgid "Indirect diffuse lighting is made to match global illumination more closely."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:453
+msgid "If specular occlusion is enabled, it is calculated using the bent normals and ambient occlusion instead of just from ambient light. This includes screen-space ambient occlusion (SSAO) and other sources of ambient occlusion."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:460
+msgid "Godot only uses the red and green channels of a bent normal map for better compression and wider compatibility."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:463
+msgid "When creating a bent normal map, there are three things required for it to work correctly in Godot:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:466
+msgid "A **cosine distribution** of rays has to be used when baking."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:467
+msgid "The texture must be created in **tangent space**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:468
+msgid "The bent normal map needs to use the X+, Y+, and Z+ coordinates, this is known as OpenGL style. If you've imported a material made to be used with another engine it may be DirectX style, in which case the bent normal map needs to be converted so its Y axis is flipped. This can be achieved by setting the green channel under the **Channel Remap** section to **Inverted Green** in the import dock."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:477
+msgid "A bent normal map is different from a regular normal map. The two are not interchangeable."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:481
+msgid "Rim"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:483
+msgid "Some fabrics have small micro-fur that causes light to scatter around it. Godot emulates this with the *Rim* parameter. Unlike other rim lighting implementations, which just use the emission channel, this one actually takes light into account (no light means no rim). This makes the effect considerably more believable."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:490
+msgid "Rim size depends on roughness, and there is a special parameter to specify how it must be colored. If *Tint* is ``0``, the color of the light is used for the rim. If *Tint* is ``1``, then the albedo of the material is used. Using intermediate values generally works best."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:496
+msgid "Clearcoat"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:499
+msgid "The *Clearcoat* parameter is used to add a secondary pass of transparent coat to the material. This is common in car paint and toys. In practice, it's a smaller specular blob added on top of the existing material."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:506
+msgid "Anisotropy"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:509
+msgid "This changes the shape of the specular blob and aligns it to tangent space. Anisotropy is commonly used with hair, or to make materials such as brushed aluminum more realistic. It works especially well when combined with flowmaps."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:516
+msgid "Ambient Occlusion"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:518
+msgid "It is possible to specify a baked ambient occlusion map. This map affects how much ambient light reaches each surface of the object (it does not affect direct light by default). While it is possible to use Screen-Space Ambient Occlusion (SSAO) to generate ambient occlusion, nothing beats the quality of a well-baked AO map. It is recommended to bake ambient occlusion whenever possible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:527
+msgid "Height"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:529
+msgid "Setting a height map on a material produces a ray-marched search to emulate the proper displacement of cavities along the view direction. This only creates an illusion of depth, and does not add real geometry — for a height map shape used for physics collision (such as terrain), see :ref:`class_HeightMapShape3D`. It may not work for complex objects, but it produces a realistic depth effect for textures. For best results, *Height* should be used together with normal mapping."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:540
+msgid "Subsurface Scattering"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:542
+msgid "*This is only available in the Forward+ renderer, not the Mobile or Compatibility renderers.*"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:545
+msgid "This effect emulates light that penetrates an object's surface, is scattered, and then comes out. It is useful to create realistic skin, marble, colored liquids, etc."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:552
+msgid "Back Lighting"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:554
+msgid "This controls how much light from the lit side (visible to light) is transferred to the dark side (opposite from the light). This works well for thin objects such as plant leaves, grass, human ears, etc."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:561
+msgid "Refraction"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:563
+msgid "When refraction is enabled, Godot attempts to fetch information from behind the object being rendered. This allows distorting the transparency in a way similar to refraction in real life."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:567
+msgid "Remember to use a transparent albedo texture (or reduce the albedo color's alpha channel) to make refraction visible, as refraction relies on transparency to have a visible effect."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:571
+msgid "Refraction also takes the material roughness into account. Higher roughness values will make the objects behind the refraction look blurrier, which simulates real life behavior. If you can't see behind the object when refraction is enabled and albedo transparency is reduced, decrease the material's **Roughness** value."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:577
+msgid "A normal map can optionally be specified in the **Refraction Texture** property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:584
+msgid "Refraction is implemented as a screen-space effect and forces the material to be transparent. This makes the effect relatively fast, but this results in some limitations:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:588
+msgid ":ref:`Transparency sorting <doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:590
+msgid "The refractive material cannot refract onto itself, or onto other transparent materials. A refractive material behind another transparent material will be invisible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:593
+msgid "Off-screen objects cannot appear in the refraction. This is most noticeable with high refraction strength values."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:595
+msgid "Opaque materials in front of the refractive material will appear to have \"refracted\" edges, even though they shouldn't."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:599
+msgid "Detail"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:601
+msgid "Godot allows using secondary albedo and normal maps to generate a detail texture, which can be blended in many ways. By combining this with secondary UV or triplanar modes, many interesting textures can be achieved."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:607
+msgid "There are several settings that control how detail is used."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:609
+msgid "Mask: The detail mask is a black and white image used to control where the blending takes place on a texture. White is for the detail textures, Black is for the regular material textures, different shades of gray are for partial blending of the material textures and detail textures."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:614
+msgid "Blend Mode: These four modes control how the textures are blended together."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:616
+msgid "Mix: Combines pixel values of both textures. At black, only show the material texture, at white, only show the detail texture. Values of gray create a smooth blend between the two."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:620
+msgid "Add: Adds pixel values of one Texture with the other. Unlike mix mode both textures are completely mixed at white parts of a mask and not at gray parts. The original texture is mostly unchanged at black"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:624
+msgid "Sub: Subtracts pixel values of one texture with the other. The second texture is completely subtracted at white parts of a mask with only a little subtraction in black parts, gray parts being different levels of subtraction based on the exact texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:629
+msgid "Mul: Multiplies the RGB channel numbers for each pixel from the top texture with the values for the corresponding pixel from the bottom texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:632
+msgid "Albedo: This is where you put an albedo texture you want to blend. If nothing is in this slot it will be interpreted as white by default."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:635
+msgid "Normal: This is where you put a normal texture you want to blend. If nothing is in this slot it will be interpreted as a flat normal map. This can still be used even if the material does not have normal map enabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:640
+msgid "UV1 and UV2"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:642
+msgid "Godot supports two UV channels per material. Secondary UV is often useful for ambient occlusion or emission (baked light). UVs can be scaled and offset, which is useful when using repeating textures."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:649
+msgid "Triplanar Mapping"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:651
+msgid "Triplanar mapping is supported for both UV1 and UV2. This is an alternative way to obtain texture coordinates, sometimes called \"Autotexture\". Textures are sampled in X, Y and Z and blended by the normal. Triplanar mapping can be performed in either world space or object space."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:656
+msgid "In the image below, you can see how all primitives share the same material with world triplanar, so the brick texture continues smoothly between them."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:662
+msgid "World Triplanar"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:664
+msgid "When using triplanar mapping, it is computed in object local space. This option makes it use world space instead."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:670
+msgid "Sampling"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:673
+msgid "Filter"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:675
+msgid "The filtering method for the textures used by the material. See :ref:`this page<class_BaseMaterial3D_property_texture_filter>` for a full list of options and their description."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:679
+msgid "Repeat"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:681
+msgid "if the textures used by the material repeat, and how they repeat. See :ref:`this page<class_BaseMaterial3D_property_texture_repeat>` for a full list of options and their description."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:685
+msgid "Shadows"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:688
+msgid "Disable Receive Shadows"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:690
+msgid "Makes the object not receive any kind of shadow that would otherwise be cast onto it."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:694
+msgid "Shadow to Opacity"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:696
+msgid "Lighting modifies the alpha so shadowed areas are opaque and non-shadowed areas are transparent. Useful for overlaying shadows onto a camera feed in AR."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:700
+msgid "Billboard"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:703
+msgid "Billboard Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:705
+msgid "Enables billboard mode for drawing materials. This controls how the object faces the camera:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:708
+msgid "**Disabled:** Billboard mode is disabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:709
+msgid "**Enabled:** Billboard mode is enabled. The object's -Z axis will always face the camera's viewing plane."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:711
+msgid "**Y-Billboard:** The object's X axis will always be aligned with the camera's viewing plane."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:712
+msgid "**Particle Billboard:** Most suited for particle systems, because it allows specifying :ref:`flipbook animation <doc_process_material_properties_animation>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:717
+msgid "The **Particles Anim** section is only visible when the billboard mode is **Particle Billboard**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:720
+msgid "Billboard Keep Scale"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:722
+msgid "Enables scaling a mesh in billboard mode."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:727
+msgid "Grow"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:729
+msgid "Grows the object vertices in the direction pointed by their normals:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:733
+msgid "This is commonly used to create cheap outlines. Add a second material pass, make it black and unshaded, reverse culling (Cull Front), and add some grow:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:740
+msgid "For Grow to work as expected, the mesh must have connected faces with shared vertices, or \"smooth shading\". If the mesh has disconnected faces with unique vertices, or \"flat shading\", the mesh will appear to have gaps when using Grow."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:744
+msgid "Note that in Godot 4.5 onwards, stencil buffer-based outlines are available using the **Outline** :ref:`stencil mode <doc_standard_material_3d_stencil>`. This can be used as an alternative to Grow for outlines."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:749
+msgid "Transform"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:752
+msgid "Fixed Size"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:754
+msgid "This causes the object to be rendered at the same size no matter the distance. This is useful mostly for indicators (no depth test and high render priority) and some types of billboards."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:759
+msgid "Use Point Size"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:761
+msgid "This option is only effective when the geometry rendered is made of points (generally it's made of triangles when imported from 3D modeling software). If so, then those points can be resized (see below)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:766
+msgid "Point Size"
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:768
+msgid "When drawing points, specify the point size in pixels."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:771
+msgid "Use Particle Trails"
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:776
-msgid "Scales the object being rendered towards the camera to avoid clipping into things like walls. This is intended to be used for objects that are fixed with respect to the camera like player arms, tools, etc. Lighting and shadows will continue to work correctly when this setting is adjusted, but screen-space effects like SSAO and SSR may break with lower scales. Therefore, try to keep this setting as close to 1.0 as possible."
+msgid "If true, enables parts of the shader required for GPUParticles3D trails to function. This also requires using a mesh with appropriate skinning, such as RibbonTrailMesh or TubeTrailMesh. Enabling this feature outside of materials used in GPUParticles3D meshes will break material rendering."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:782
+msgid "Use Z Clip Scale"
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:784
+msgid "Scales the object being rendered towards the camera to avoid clipping into things like walls. This is intended to be used for objects that are fixed with respect to the camera like player arms, tools, etc. Lighting and shadows will continue to work correctly when this setting is adjusted, but screen-space effects like SSAO and SSR may break with lower scales. Therefore, try to keep this setting as close to 1.0 as possible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/standard_material_3d.rst:792
 msgid "Use FOV Override"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:786
+#: ../../docs/tutorials/3d/standard_material_3d.rst:794
 msgid "Overrides the ``Camera3D``'s field of view angle (in degrees)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:790
+#: ../../docs/tutorials/3d/standard_material_3d.rst:798
 msgid "This behaves as if the field of view is set on a ``Camera3D`` with ``Camera3D.keep_aspect`` set to ``Camera3D.KEEP_HEIGHT``. Additionally, it may not look correct on a non-perspective camera where the field of view setting is ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:796
+#: ../../docs/tutorials/3d/standard_material_3d.rst:804
 msgid "Proximity and Distance Fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:798
+#: ../../docs/tutorials/3d/standard_material_3d.rst:806
 msgid "Godot allows materials to fade by proximity to each other as well as depending on the distance from the viewer. Proximity fade is useful for effects such as soft particles or a mass of water with a smooth blending to the shores."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:804
+#: ../../docs/tutorials/3d/standard_material_3d.rst:812
 msgid "Distance fade is useful for light shafts or indicators that are only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:807
+#: ../../docs/tutorials/3d/standard_material_3d.rst:815
 msgid "Keep in mind enabling proximity fade or distance fade with **Pixel Alpha** mode enables alpha blending. Alpha blending is more GPU-intensive and can cause transparency sorting issues. Alpha blending also disables many material features such as the ability to cast shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:814
+#: ../../docs/tutorials/3d/standard_material_3d.rst:822
 msgid "To hide a character when they get too close to the camera, consider using **Pixel Dither** or better, **Object Dither** (which is even faster than **Pixel Dither**)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:818
+#: ../../docs/tutorials/3d/standard_material_3d.rst:826
 msgid "**Pixel Alpha** mode: The actual transparency of a pixel of the object changes with distance to the camera. This is the most effect, but forces the material into the transparency pipeline (which leads, for example, to no shadows)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:824
+#: ../../docs/tutorials/3d/standard_material_3d.rst:832
 msgid "**Pixel Dither** mode: What this does is sort of approximate the transparency by only having a fraction of the pixels rendered."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:829
+#: ../../docs/tutorials/3d/standard_material_3d.rst:837
 msgid "**Object Dither** mode: Like the previous mode, but the calculated transparency is the same across the entire object's surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:837
+#: ../../docs/tutorials/3d/standard_material_3d.rst:845
 msgid "Stencil"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:839
+#: ../../docs/tutorials/3d/standard_material_3d.rst:847
 msgid "Since Godot 4.5, Godot allows materials to make use of the stencil buffer. This feature is commonly used to create outlines and X-ray effects, which can be useful to highlight objects, especially behind walls."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:843
+#: ../../docs/tutorials/3d/standard_material_3d.rst:851
 msgid "The **Outline** and **X-Ray** modes assign a preconfigured stencil material in the material's **Next Pass** property. The **Custom** mode can be used for advanced effects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:849
+#: ../../docs/tutorials/3d/standard_material_3d.rst:857
 msgid "Materials that write to the stencil buffer are always drawn in the transparent pass, so they are subject to the usual :ref:`transparency limitations <doc_3d_rendering_limitations_transparency_sorting>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:855
+#: ../../docs/tutorials/3d/standard_material_3d.rst:863
 msgid "Like with the :ref:`Grow property <ref_standard_material_3d_grow>`, for the stencil outline to work as expected, the mesh must have connected faces with shared vertices, or \"smooth shading\". If the mesh has disconnected faces with unique vertices, or \"flat shading\", the mesh will appear to have gaps when using a stencil outline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:861
+#: ../../docs/tutorials/3d/standard_material_3d.rst:869
 msgid "Stencil outlines render similarly to the Grow property, but won't look identical in every scenario, especially when intersections with opaque surfaces are involved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:865
+#: ../../docs/tutorials/3d/standard_material_3d.rst:873
 msgid "Material Settings"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:868
+#: ../../docs/tutorials/3d/standard_material_3d.rst:876
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:870
+#: ../../docs/tutorials/3d/standard_material_3d.rst:878
 msgid "The rendering order of objects can be changed, although this is mostly useful for transparent objects (or opaque objects that perform depth draw but no color draw, such as cracks on the floor)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:874
+#: ../../docs/tutorials/3d/standard_material_3d.rst:882
 msgid "Objects are sorted by an opaque/transparent queue, then :ref:`render_priority<class_Material_property_render_priority>`, with higher priority being drawn later. Transparent objects are also sorted by depth."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:877
+#: ../../docs/tutorials/3d/standard_material_3d.rst:885
 msgid "Depth testing overrules priority. Priority alone cannot force opaque objects to be drawn over each other."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:880
+#: ../../docs/tutorials/3d/standard_material_3d.rst:888
 msgid "Next Pass"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:882
+#: ../../docs/tutorials/3d/standard_material_3d.rst:890
 msgid "Setting :ref:`next_pass<class_Material_property_next_pass>` on a material will cause an object to be rendered again with that next material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:885
+#: ../../docs/tutorials/3d/standard_material_3d.rst:893
 msgid "Materials are sorted by an opaque/transparent queue, then :ref:`render_priority<class_Material_property_render_priority>`, with higher priority being drawn later."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:890
+#: ../../docs/tutorials/3d/standard_material_3d.rst:898
 msgid "Depth will test equal between both materials unless the grow setting or other vertex transformations are used. Multiple transparent passes should use :ref:`render_priority<class_Material_property_render_priority>` to ensure correct ordering."
 msgstr ""

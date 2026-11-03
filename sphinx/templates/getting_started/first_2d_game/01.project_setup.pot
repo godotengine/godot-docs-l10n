@@ -49,37 +49,29 @@ msgid "Ensure that you have the required dependencies to use C# in Godot. You ne
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:33
-msgid "C++"
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:35
-msgid "The C++ part of this tutorial wasn't rewritten for the new GDExtension system yet."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:37
 msgid "Your project folder should look like this."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:41
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:37
 msgid "This game is designed for portrait mode, so we need to adjust the size of the game window. Click on *Project -> Project Settings* to open the project settings window, in the left column open the *Display -> Window* tab. There, set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``. You can see the \"Project\" menu on the upper left corner."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:49
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:45
 msgid "Also, under the **Stretch** options, set **Mode** to ``canvas_items`` and **Aspect** to ``keep``. This ensures that the game scales consistently on different sized screens."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:55
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:51
 msgid "Organizing the project"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:57
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:53
 msgid "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and ``HUD``, which we will combine into the game's ``Main`` scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:60
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:56
 msgid "In a larger project, it might be useful to create folders to hold the various scenes and their scripts, but for this relatively small game, you can save your scenes and scripts in the project's root folder, identified by ``res://``. You can see your project folders in the FileSystem dock in the lower left corner:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:67
+#: ../../docs/getting_started/first_2d_game/01.project_setup.rst:63
 msgid "With the project in place, we're ready to design the player scene in the next lesson."
 msgstr ""

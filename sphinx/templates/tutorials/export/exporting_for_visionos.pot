@@ -24,9 +24,49 @@ msgid "This page describes how to export a Godot project to visionOS. If you're 
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:12
-msgid "Exporting instructions for visionOS are currently identical to :ref:`doc_compiling_for_ios`, except you should add a **visionOS** export preset instead of **iOS**. See the linked page for details."
+msgid "Exporting instructions for visionOS are very similar to :ref:`doc_exporting_for_ios`. You can refer to it for more details about the Xcode workflow."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:16
+msgid "Requirements"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:18
-msgid "Note that currently, only exporting an application for use on a flat plane within the headset is supported. Immersive experiences are not supported."
+msgid "`Xcode <https://developer.apple.com/xcode/>`_ (from the macOS App Store)."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:19
+msgid "An Apple account, for code-signing (`free for on-device testing <https://developer.apple.com/support/compare-memberships/>`_)."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:23
+msgid "Projects written in C# are currently not supported on visionOS, as the :ref:`.NET runtime <doc_c_sharp_platforms>` does not support visionOS."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:27
+msgid "App Role"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:31
+msgid "The **Window** mode (default) presents your game in a flat window, similar to an iOS app."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:32
+msgid "The **Immersive** mode presents your game as an XR app."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:34
+msgid "For more information about the immersive mode, see :ref:`doc_visionos_intro`."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:37
+msgid "Immersion Mode"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:41
+msgid "The **Mixed** immersion style displays your Godot game on top of the passthrough environment. The **Full** and **Progressive** immersion styles display your game on top of an opaque background and defines a 1.5-meter boundary around the player."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_visionos.rst:45
+msgid "See Apple's `Human Interface Guidelines <https://developer.apple.com/design/human-interface-guidelines/immersive-experiences#Immersion-styles>`_ for more details."
 msgstr ""

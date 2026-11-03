@@ -145,13 +145,21 @@ msgid "Bus rearrangement"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:120
-msgid "Stream Players use bus names to identify a bus, which allows adding, removing and moving buses around while the reference to them is kept. However, if a bus is renamed, the reference will be lost and the Stream Player will output to Master. This system was chosen because rearranging buses is a more common process than renaming them."
+msgid "Stream Players use bus names to identify a bus, which allows adding, removing and moving buses around while the reference to them is kept. However, if a bus is renamed, the reference will be lost and the Stream Player will output to ``Master``. This system was chosen because rearranging buses is a more common process than renaming them."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:127
-msgid "Default bus layout"
+msgid "GUI theme sounds"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:129
+msgid "Sounds played using :ref:`Control theme items <doc_gui_skinning_theme_items>` go through the ``Master`` audio bus by default. This can be changed using the **Audio > Buses > GUI Theme Bus** project setting. Switching to a dedicated audio bus for theme sounds can be useful to let the player adjust their volume separately from the rest of the game, or to add various effects."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:137
+msgid "Default bus layout"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:139
 msgid "The default bus layout is automatically saved to the ``res://default_bus_layout.tres`` file. Custom bus arrangements can be saved and loaded from disk."
 msgstr ""

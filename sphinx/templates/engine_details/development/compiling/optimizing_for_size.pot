@@ -48,8 +48,9 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:78
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:123
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:160
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:178
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:225
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:179
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:201
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:248
 msgid "**Difficulty:** Easy"
 msgstr ""
 
@@ -127,9 +128,10 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:101
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:124
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:161
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:179
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:226
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:258
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:180
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:202
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:249
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:281
 msgid "**Performed in official builds:** No"
 msgstr ""
 
@@ -182,242 +184,259 @@ msgid "Disabling 3D"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:159
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:177
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:178
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:200
 msgid "**Space savings:** Moderate"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:163
-msgid "For 2D games, having the whole 3D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
+msgid "For 2D games or :ref:`applications <doc_creating_applications>`, having the whole 3D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:170
-msgid "Tools must be disabled in order to use this flag, as the editor is not designed to operate without 3D support. Without it, the binary size can be reduced by about 15%."
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:171
+msgid "This can only be used for export template builds, as the editor is not designed to operate without 3D support. With 3D disabled, the binary size can be reduced by about 15%."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:175
-msgid "Disabling advanced GUI objects"
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:176
+msgid "Disabling 2D"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:181
-msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:188
-msgid "This is everything that will be disabled:"
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:182
+msgid "Likewise, for 3D games or :ref:`applications <doc_creating_applications>`, having the whole 2D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:190
-msgid ":ref:`class_AcceptDialog`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:191
-msgid ":ref:`class_CharFXTransform`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:192
-msgid ":ref:`class_CodeEdit`"
+msgid "This disables all 2D nodes derived from :ref:`class_Node2D`. GUI nodes derived from :ref:`class_Control` are still available."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:193
-msgid ":ref:`class_CodeHighlighter`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:194
-msgid ":ref:`class_ColorPicker`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:195
-msgid ":ref:`class_ColorPickerButton`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:196
-msgid ":ref:`class_ConfirmationDialog`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:197
-msgid ":ref:`class_FileDialog`"
+msgid "This can only be used for export template builds, as the editor is not designed to operate without 2D support. With 2D disabled, the binary size can be reduced by about 10%."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:198
-msgid ":ref:`class_FoldableContainer`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:199
-msgid ":ref:`class_FoldableGroup`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:200
-msgid ":ref:`class_GraphEdit`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:201
-msgid ":ref:`class_GraphElement`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:202
-msgid ":ref:`class_GraphFrame`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:203
-msgid ":ref:`class_GraphNode`"
+msgid "Disabling advanced GUI objects"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:204
-msgid ":ref:`class_HSplitContainer`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:205
-msgid ":ref:`class_MenuBar`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:206
-msgid ":ref:`class_MenuButton`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:207
-msgid ":ref:`class_OptionButton`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:208
-msgid ":ref:`class_PopupMenu` (will make all popup menus unavailable in code for classes that use them, like :ref:`class_LineEdit`, even though those classes are still available)"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:210
-msgid ":ref:`class_RichTextEffect`"
+msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:211
-msgid ":ref:`class_RichTextLabel`"
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:212
-msgid ":ref:`class_SpinBox`"
+msgid "This is everything that will be disabled:"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:213
-msgid ":ref:`class_SplitContainer`"
+msgid ":ref:`class_AcceptDialog`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:214
-msgid ":ref:`class_SubViewportContainer`"
+msgid ":ref:`class_CharFXTransform`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:215
-msgid ":ref:`class_SyntaxHighlighter`"
+msgid ":ref:`class_CodeEdit`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:216
-msgid ":ref:`class_TextEdit`"
+msgid ":ref:`class_CodeHighlighter`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:217
-msgid ":ref:`class_Tree`"
+msgid ":ref:`class_ColorPicker`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:218
-msgid ":ref:`class_TreeItem`"
+msgid ":ref:`class_ColorPickerButton`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:219
-msgid ":ref:`class_VSplitContainer`"
+msgid ":ref:`class_ConfirmationDialog`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:220
+msgid ":ref:`class_FileDialog`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:221
+msgid ":ref:`class_FoldableContainer`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:222
-msgid "Disabling physics engines"
+msgid ":ref:`class_FoldableGroup`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:223
+msgid ":ref:`class_GraphEdit`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:224
-msgid "**Space savings:** Low to moderate"
+msgid ":ref:`class_GraphElement`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:225
+msgid ":ref:`class_GraphFrame`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:226
+msgid ":ref:`class_GraphNode`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:227
+msgid ":ref:`class_HSplitContainer`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:228
-msgid "If your 3D project uses Jolt Physics, you can disable GodotPhysics3D at compile-time as it will never be used:"
+msgid ":ref:`class_MenuBar`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:229
+msgid ":ref:`class_MenuButton`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:230
+msgid ":ref:`class_OptionButton`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:231
+msgid ":ref:`class_PopupMenu` (will make all popup menus unavailable in code for classes that use them, like :ref:`class_LineEdit`, even though those classes are still available)"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:233
+msgid ":ref:`class_RichTextEffect`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:234
+msgid ":ref:`class_RichTextLabel`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:235
-msgid "Inversely, if your 3D project uses GodotPhysics3D, you can disable Jolt Physics at compile-time:"
+msgid ":ref:`class_SpinBox`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:236
+msgid ":ref:`class_SplitContainer`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:237
+msgid ":ref:`class_SubViewportContainer`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:238
+msgid ":ref:`class_SyntaxHighlighter`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:239
+msgid ":ref:`class_TextEdit`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:240
+msgid ":ref:`class_Tree`"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:241
+msgid ":ref:`class_TreeItem`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:242
+msgid ":ref:`class_VSplitContainer`"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:245
+msgid "Disabling physics engines"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:247
+msgid "**Space savings:** Low to moderate"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:251
+msgid "If your 3D project uses Jolt Physics, you can disable GodotPhysics3D at compile-time as it will never be used:"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:258
+msgid "Inversely, if your 3D project uses GodotPhysics3D, you can disable Jolt Physics at compile-time:"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:264
 msgid "If your project uses 3D rendering but not physics (or 2D rendering but not physics), you can also disable 2D or 3D physics entirely. Most 3D projects can take advantage of this, as they don't make use of 2D physics:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:254
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:277
 msgid "Disabling unwanted modules"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:256
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:279
 msgid "**Space savings:** Very low to moderate depending on modules"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:257
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:280
 msgid "**Difficulty:** Medium to hard depending on modules"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:260
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:283
 msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:267
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:290
 msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:275
-msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, regex support, ``mp3``/``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:298
+msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, tilemaps for 2D levels, ``mp3``/``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:280
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:303
 msgid "Alternatively, you can supply a list of disabled modules by creating ``custom.py`` at the root of the source, with the contents similar to the following:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:284
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:307
 msgid "custom.py"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:330
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:353
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:333
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:356
 msgid "Optimizing the distribution of your project"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:336
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:359
 msgid "Desktop"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:340
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:363
 msgid "This section is only relevant when distributing the files on a desktop platform that doesn't perform its own compression or packing. As such, this advice is relevant when you distribute ZIP archives on itch.io or GitHub Releases."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:345
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:368
 msgid "Platforms like Steam already apply their own compression scheme, so you don't need to create a ZIP archive to distribute files in the first place."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:348
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:371
 msgid "As an aside, you can look into optimizing the distribution of your project itself. This can be done even without recompiling the export template."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:351
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:374
 msgid "`7-Zip <https://7-zip.org/>`__ can be used to create ZIP archives that are more efficient than usual, while remaining compatible with every ZIP extractor (including Windows' own built-in extractor). ZIP size reduction in a large project can reach dozens of megabytes compared to a typical ZIP compressor, although average savings are in the 1-5 MB range. Creating this ZIP archive will take longer than usual, but it will extract just as fast as any other ZIP archive."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:359
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:382
 msgid "When using the 7-Zip GUI, this is done by creating a ZIP archive with the Ultra compression mode. When using the command line, this is done using the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:368
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:391
 msgid "Web"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:370
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:393
 msgid "Enabling gzip or Brotli compression for all file types from the web export (especially the ``.wasm`` and ``.pck``) can reduce the download size significantly, leading to faster loading times, especially on slow connections."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:374
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:397
 msgid "Creating precompressed gzip or Brotli files with a high compression level can be even more efficient, as long as the web server is configured to serve those files when they exist. When supported, Brotli should be preferred over gzip as it has a greater potential for file size reduction."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:379
+#: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:402
 msgid "See :ref:`doc_exporting_for_web_serving_the_files` for instructions."
 msgstr ""

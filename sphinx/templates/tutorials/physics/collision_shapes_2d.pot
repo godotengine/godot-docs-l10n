@@ -28,137 +28,157 @@ msgid "The types of collision shapes available in 2D in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:9
-msgid "Using an image converted to a polygon as a collision shape."
+msgid "Visualizing collision shapes in-game."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:10
+msgid "Using an image converted to a polygon as a collision shape."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:11
 msgid "Performance considerations regarding 2D collisions."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:12
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:13
 msgid "Godot provides many kinds of collision shapes, with different performance and accuracy tradeoffs."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:15
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:16
 msgid "You can define the shape of a :ref:`class_PhysicsBody2D` by adding one or more :ref:`CollisionShape2Ds <class_CollisionShape2D>` or :ref:`CollisionPolygon2Ds <class_CollisionPolygon2D>` as *direct* child nodes. Indirect child nodes (i.e. children of child nodes) will be ignored and won't be used as collision shapes. Also, note that you must add a :ref:`class_Shape2D` *resource* to collision shape nodes in the Inspector dock."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:24
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:25
 msgid "When you add multiple collision shapes to a single PhysicsBody2D, you don't have to worry about them overlapping. They won't \"collide\" with each other."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:28
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:29
 msgid "Primitive collision shapes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:30
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:31
 msgid "Godot provides the following primitive collision shape types:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:32
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:33
 msgid ":ref:`class_RectangleShape2D`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:33
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:34
 msgid ":ref:`class_CircleShape2D`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:34
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:35
 msgid ":ref:`class_CapsuleShape2D`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:35
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:36
 msgid ":ref:`class_SegmentShape2D`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:36
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:37
 msgid ":ref:`class_SeparationRayShape2D` (designed for characters)"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:37
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:38
 msgid ":ref:`class_WorldBoundaryShape2D` (infinite plane)"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:39
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:40
 msgid "You can represent the collision of most smaller objects using one or more primitive shapes. However, for more complex objects, such as a large ship or a whole level, you may need convex or concave shapes instead. More on that below."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:43
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:44
 msgid "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and CharacterBodies as their behavior is the most reliable. They often provide better performance as well."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:48
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:49
 msgid "Convex collision shapes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:52
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:53
 msgid "Godot currently doesn't offer a built-in way to create 2D convex collision shapes. This section is mainly here for reference purposes."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:55
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:56
 msgid ":ref:`Convex collision shapes <class_ConvexPolygonShape2D>` are a compromise between primitive collision shapes and concave collision shapes. They can represent shapes of any complexity, but with an important caveat. As their name implies, an individual shape can only represent a *convex* shape. For instance, a pyramid is *convex*, but a hollow box is *concave*. To define a concave object with a single collision shape, you need to use a concave collision shape."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:62
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:63
 msgid "Depending on the object's complexity, you may get better performance by using multiple convex shapes instead of a concave collision shape. Godot lets you use *convex decomposition* to generate convex shapes that roughly match a hollow object. Note this performance advantage no longer applies after a certain amount of convex shapes. For large and complex objects such as a whole level, we recommend using concave shapes instead."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:70
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:71
 msgid "Concave or trimesh collision shapes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:72
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:73
 msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape2D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with CharacterBodies or RigidBodies unless the RigidBody's mode is Static."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:80
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:81
 msgid "Even though concave shapes offer the most accurate *collision*, contact reporting can be less precise than primitive shapes."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:83
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:84
 msgid "When not using TileMaps for level design, concave shapes are the best approach for a level's collision."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:86
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:87
 msgid "You can configure the CollisionPolygon2D node's *build mode* in the inspector. If it is set to **Solids** (the default), collisions will include the polygon and its contained area. If it is set to **Segments**, collisions will only include the polygon edges."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:91
-msgid "You can generate a concave collision shape from the editor by selecting a Sprite2D and using the **Sprite2D** menu at the top of the 2D viewport. The Sprite2D menu dropdown exposes an option called **Create CollisionPolygon2D Sibling**. Once you click it, it displays a menu with 3 settings:"
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:93
+msgid "Visualizing collision shapes in-game"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:96
-msgid "**Simplification:** Higher values will result in a less detailed shape, which improves performance at the cost of accuracy."
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:95
+msgid "Use the :ref:`Debug Color <class_CollisionShape2D_property_debug_color>` property in the CollisionShape2D resource to distinguish a shape from others. Turn on the :menu:`Debug > Visible Collision Shapes` menu option to also see them in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:98
-msgid "**Shrink (Pixels):** Higher values will shrink the generated collision polygon relative to the sprite's edges."
-msgstr ""
-
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:100
-msgid "**Grow (Pixels):** Higher values will grow the generated collision polygon relative to the sprite's edges. Note that setting Grow and Shrink to equal values may yield different results than leaving both of them on 0."
-msgstr ""
-
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:106
-msgid "If you have an image with many small details, it's recommended to create a simplified version and use it to generate the collision polygon. This can result in better performance and game feel, since the player won't be blocked by small, decorative details."
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:102
+msgid "If the project setting :ref:`Debug > Shapes > Collision > Draw 2D Outlines <class_ProjectSettings_property_debug/shapes/collision/draw_2d_outlines>` is enabled (which is the default), a solid outline will be derived from the debug color, even if the debug color has full transparency. You can use this to have outline-only debug shapes. This is useful when multiple collision shapes overlap in the same scene, such as a physics collider, a hitbox, and an interaction shape. For example, use ``Color(1, 0, 0, 0)`` for a red outline."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:111
-msgid "To use a separate image for collision polygon generation, create another Sprite2D, generate a collision polygon sibling from it then remove the Sprite2D node. This way, you can exclude small details from the generated collision."
+msgid "Generating collision shapes from images"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:116
-msgid "Performance caveats"
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:113
+msgid "You can generate a concave collision shape from the editor by selecting a Sprite2D and using the **Sprite2D** menu at the top of the 2D viewport. The Sprite2D menu dropdown exposes an option called **Create CollisionPolygon2D Sibling**. Once you click it, it displays a menu with 3 settings:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:118
+msgid "**Simplification:** Higher values will result in a less detailed shape, which improves performance at the cost of accuracy."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:120
+msgid "**Shrink (Pixels):** Higher values will shrink the generated collision polygon relative to the sprite's edges."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:122
+msgid "**Grow (Pixels):** Higher values will grow the generated collision polygon relative to the sprite's edges. Note that setting Grow and Shrink to equal values may yield different results than leaving both of them on 0."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:128
+msgid "If you have an image with many small details, it's recommended to create a simplified version and use it to generate the collision polygon. This can result in better performance and game feel, since the player won't be blocked by small, decorative details."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:133
+msgid "To use a separate image for collision polygon generation, create another Sprite2D, generate a collision polygon sibling from it then remove the Sprite2D node. This way, you can exclude small details from the generated collision."
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:138
+msgid "Performance caveats"
+msgstr ""
+
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:140
 msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and CharacterBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:124
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:146
 msgid "When using a single non-transformed collision shape in a StaticBody, the engine's *broad phase* algorithm can discard inactive PhysicsBodies. The *narrow phase* will then only have to take into account the active bodies' shapes. If a StaticBody has many collision shapes, the broad phase will fail. The narrow phase, which is slower, must then perform a collision check against each shape."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_2d.rst:130
+#: ../../docs/tutorials/physics/collision_shapes_2d.rst:152
 msgid "If you run into performance issues, you may have to make tradeoffs in terms of accuracy. Most games out there don't have a 100% accurate collision. They find creative ways to hide it or otherwise make it unnoticeable during normal gameplay."
 msgstr ""

@@ -31,102 +31,106 @@ msgstr ""
 msgid "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:17
-msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
-msgstr ""
-
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:18
-msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:19
-msgid "Launch Xcode once and install iOS support. If you have already launched Xcode and need to install iOS support, go to *Xcode -> Settings... -> Platforms*."
+msgid "If using Python 3.9 to 3.13, also run ``pip install --user zstandard`` to install Zstandard support for Python. This is not required on Python 3.14 and above, which include Zstandard support by default."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:21
-msgid "Go to *Xcode -> Settings... -> Locations -> Command Line Tools* and select an installed version. Even if one is already selected, re-select it."
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:22
+msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:23
+msgid "Launch Xcode once and install iOS support. If you have already launched Xcode and need to install iOS support, go to *Xcode -> Settings... -> Platforms*."
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:25
+msgid "Go to *Xcode -> Settings... -> Locations -> Command Line Tools* and select an installed version. Even if one is already selected, re-select it."
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:27
 msgid "Download and follow README instructions to build a static ``.xcframework`` from the `MoltenVK SDK <https://github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code>`__."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:26
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:30
 msgid "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install SCons using the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:33
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:37
 msgid "Installing Homebrew will also fetch the Command Line Tools for Xcode automatically if you don't have them already."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:36
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:40
 msgid "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, you can easily install SCons using the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:44
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:48
 msgid "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:47
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:51
 msgid "For a general overview of SCons usage for Godot, see :ref:`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:51
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:55
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:53
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:57
 msgid "Open a Terminal, go to the root folder of the engine source code and type the following to compile a debug build:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:60
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:64
 msgid "To compile a release build:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:66
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:70
 msgid "To create an Xcode project like in the official builds, you need to use the template located in ``misc/dist/apple_embedded_xcode``. The release and debug libraries should be placed in ``libgodot.ios.debug.xcframework`` and ``libgodot.ios.release.xcframework`` respectively. Camera module libraries should be placed in ``libgodot_camera.ios.debug.xcframework`` and ``libgodot_camera.ios.release.xcframework``. This process can be automated by using the ``generate_bundle=yes`` option on the *last* SCons command used to build export templates (so that all binaries can be included)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:75
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:79
 msgid "The MoltenVK static ``.xcframework`` folder must also be placed in the ``apple_embedded_xcode`` folder once it has been created. MoltenVK is always statically linked on iOS; there is no dynamic linking option available, unlike macOS."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:81
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:85
 msgid "The iOS simulator only supports the ``Compatibility`` renderer."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:83
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:87
 msgid "Apple Silicon Macs can run iOS apps natively, so you can run exported iOS projects directly on an Apple Silicon Mac without iOS simulator limitations."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:87
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:91
 msgid "Run"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:89
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:93
 msgid "To run on a device, follow these instructions: :ref:`doc_exporting_for_ios`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:92
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:96
 msgid "iOS exports can run directly on an Apple Silicon Mac. To run exported iOS project on Mac, open exported project in Xcode and select ``My Mac`` in the ``Run Destinations`` dropdown."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:97
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:101
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:100
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:104
 msgid "Fatal error: 'cstdint' file not found"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:102
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:106
 msgid "If you get a compilation error of this form early on, it's likely because the Xcode command line tools installation needs to be repaired after a macOS or Xcode update:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:112
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:116
 msgid "Run these two commands to reinstall Xcode command line tools (enter your administrator password as needed):"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:120
+#: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:124
 msgid "If it still does not work, try updating Xcode from the Mac App Store and try again."
 msgstr ""

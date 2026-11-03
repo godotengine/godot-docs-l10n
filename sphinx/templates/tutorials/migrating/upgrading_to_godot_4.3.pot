@@ -818,7 +818,7 @@ msgid "``AnimationMixer`` replaced its Capture mode with a new Capture feature t
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:271
-msgid "``AnimationNode`` has a reworked process for retrieving the semantic time info. This ensures that time-related behavior works as expected, but changes the blending behavior. Implementors of the ``_process`` virtual method should also note that this method is now deprecated and will be replaced by a new one in the future (`GH-87171`_)."
+msgid "``AnimationNode`` has a reworked process for retrieving the semantic time info. This ensures that time-related behavior works as expected, but changes the blending behavior. It's also worth noting that the ``_process`` virtual method is now deprecated and will be replaced by a new one in the future (`GH-87171`_)."
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:275

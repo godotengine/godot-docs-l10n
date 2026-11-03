@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:4
+msgid "Using Trail3D"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:8
+msgid "The Trail3D node is separate from the :ref:`particle trails <doc_3d_particles_trails>` functionality available in GPUParticles3D."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:12
+msgid "Particle trails are only supported in the Forward+ and Mobile renderers, while Trail3D works with all renderers. However, Trail3D doesn't support displaying trails behind individual particles. Instead, Trail3D is designed for standalone trail effects."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:17
+msgid "Since Godot 4.8, Godot features a :ref:`class_Trail3D` node that can be used to create trails in 3D space. This node is designed to be used for standalone trail effects, such as sword slashes or tire tracks."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:23
+msgid "You can see how trails work in the `3D Trails demo project <https://github.com/godotengine/godot-demo-projects/tree/master/3d/trails>`__."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:27
+msgid "Trail3D properties"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:30
+msgid "Emitting"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:32
+msgid "If enabled, the trail is actively emitting. This can be disabled to stop the trail from emitting new segments, while still allowing the existing segments to fade out over time."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:36
+msgid "If you re-enable the **Emitting** property after disabling it, the trail will reset, which means all existing segments will be cleared. It will then start emitting new segments from the current position of the Trail3D node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:42
+msgid "With the exception of **Emitting**, **Limit Mode**, and **Mesh Alignment**, all other properties can be adjusted at runtime without causing the trail to be reset."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:46
+msgid "The trail is emitted based on the node's movement. If you need to visualize it while changing properties, consider setting its **Limit Mode** to **Length**, then move it around and adjust the properties."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:51
+msgid "Limit Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:53
+msgid "**Time:** The trail fades over a duration set in **Lifetime**. The trail's length is effectively determined by the node's movement speed, with the trail appearing longer at higher speeds."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:56
+msgid "**Length:** The trail's length is fixed and determined by the **Max Length** property. The trail's lifetime is effectively determined by the node's movement speed. If the trail does not move, it remains visible indefinitely."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:62
+msgid "Width"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:64
+msgid "The trail's width in meters."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:67
+msgid "Width Curve"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:69
+msgid "This curve acts as a multiplier for the trail's width along the length of the trail. Use it to create trails that taper off or have a specific shape. The curve's horizontal axis represents the trail's length (with X = 0 being the start of the trail), while the vertical axis represents the width multiplier."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:74
+msgid "The width curve is applied on a per-vertex basis. If the curve appears to be applied incorrectly, try decreasing the **Min Section Length** property to create more vertices along the trail."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:79
+msgid "Color"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:81
+msgid "The trail's color and opacity (determined by the color's alpha channel)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:85
+msgid "For both **Color** and **Color Gradient**, the color is set using vertex colors. If using a custom shader, make sure to multiply ``ALBEDO`` and ``ALPHA`` by ``COLOR.rgb`` and ``COLOR.a`` respectively in ``fragment()``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:89
+msgid "HDR colors from this property are clamped to the SDR range, as vertex colors in Godot are clamped between ``0.0`` and ``1.0`` for each channel. To get brighter colors out of this property, set the material mode to **Custom**, and in the custom shader, add a brightness multiplier ``float`` uniform to the shader and use it to multiply the final color in ``fragment()``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:97
+msgid "Color Gradient"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:99
+msgid "This gradient acts as a multiplier for the trail's color along the length of the trail. Use it to create trails that fade out or change color over time. The gradient's horizontal axis represents the trail's length (with X = 0 being the start of the trail), while the vertical axis represents the color multiplier."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:104
+msgid "The color gradient is applied on a per-vertex basis. If the gradient appears to be applied incorrectly, try decreasing the **Min Section Length** property to create more vertices along the trail."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:109
+msgid "Mesh Alignment"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:111
+msgid "When using the **Local** mode, the generated mesh is aligned to the local space of the trail. This means the mesh rotates and scales based on the trail's movement and orientation. For example, if you are using a :ref:`class_Path3D` + :ref:`class_PathFollow3D` setup to draw a trail along a path, the path's tilt is taken into account. This is generally the mode to use for effects like sword slashes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:117
+msgid "When using the **Billboard** mode, the trail will always face the camera, regardless of its orientation or movement. The node's scale is also ignored. This mode is useful to create effects that need to be visible from any angle, such as smoke or fire trails."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:122
+#: ../../docs/tutorials/3d/using_trail_3d.rst:126
+msgid "Comparison of local and billboard mesh alignment modes (with shading enabled to ease visualization)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:129
+msgid "Material Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:131
+msgid "Controls what material is used to display the trail. The available options are:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:133
+msgid "**Default:** Provides an unshaded material with \"mix\" blending."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:134
+msgid "**Default Additive:** Same as the Default material, but uses additive blending instead. You can use it for energy-based effects such as lasers or magic spells."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:136
+msgid "**Custom:** A user-provided :ref:`spatial shader <doc_spatial_shader>` that can be edited. It is prefilled with a shader that provides the desired billboarding mode, based on the value of the **Mesh Alignment** property at the time you select the **Custom** material mode. You can edit this shader to create your own effects, such as displaying textures or distorting the trail's vertices."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:143
+#: ../../docs/tutorials/3d/using_trail_3d.rst:147
+msgid "Comparison of untextured and textured trails (with GradientTexture2D for tapered or dashed trails)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:149
+#: ../../docs/tutorials/3d/using_trail_3d.rst:153
+msgid "Example of trails using textures and vertex distortion to achieve lightning or smoke effects"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:155
+msgid "There are several examples of custom trail shaders in the `3D Trails demo project <https://github.com/godotengine/godot-demo-projects/tree/master/3d/trails>`__."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:160
+msgid "If you change the **Mesh Alignment** property after switching to the **Custom** material mode, you will need to adapt your custom shader accordingly:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:163
+msgid "If using the **Local** mode, remove the billboarding code below from the ``vertex()`` function."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:164
+msgid "If using the **Billboard** mode, ensure that the billboarding code is present in the ``vertex()`` function:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:186
+msgid "Tiling Mode"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:190
+msgid "This tiling mode only has a visible effect on trails that use a custom shader, as there is currently no way to supply a texture in the default shader."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:194
+msgid "There are two tiling modes available for the Trail3D's UV map:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:196
+msgid "**Unit:** The UV spans the trail's entire length. The UV's aspect ratio will change according to the trail's length, which can cause stretching of the texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:199
+msgid "**Length:** The UV has a fixed length in world space. The UV's aspect ratio is unaffected by the trail's length."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:202
+msgid "In both modes, the **Tiling Multiplier** property can be used to scale the UVs. When using the **Unit** tiling mode, a value of ``1.0`` means that the UVs will span the entire length of the trail, while a value of ``2.0`` will repeat the texture twice along the trail's length. This value can be set to a negative number to flip the UVs."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:208
+msgid "When **Tiling Mode** is set to **Length**, you can also enable **Pin UV** to ensure UVs don't move in world space when the trail moves:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:219
+msgid "Min Section Length"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:221
+msgid "The **Min Section Length** property determines the trail's detail level. Lower values result in a trail with more segments, while higher values create a trail with fewer segments. Trails with more segments will look smoother in curved sections, and allow width/color curves to be represented more accurately."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:226
+msgid "Adjust this value based on the trail's typical movement speed, the desired visual effect, and performance considerations (lower values are more demanding on the CPU and GPU). Trails with shorter lifetimes can generally use lower values, while trails with longer lifetimes may require higher values to avoid excessive segment counts."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:232
+#: ../../docs/tutorials/3d/using_trail_3d.rst:236
+msgid "Comparison of different Min Section Length values on a corkscrew trail effect"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:238
+msgid "A lower value also allows the trail to better follow the object, with less of a visible gap between the object and the beginning of the trail:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:241
+#: ../../docs/tutorials/3d/using_trail_3d.rst:245
+msgid "Comparison of different Min Section Length values on a sword slash effect"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_trail_3d.rst:249
+msgid "There is a hard limit of 65,536 vertices per trail. If this limit is reached, a warning is printed and the trail will look incorrect. In this case, you should increase **Min Section Length**, or decrease the trail's lifetime or maximum length to reduce its vertex count."
+msgstr ""
