@@ -67,12 +67,13 @@
 # cheese <deanlemans5646@gmail.com>, 2026.
 # Belosceani <29642596+Belosceani@users.noreply.github.com>, 2026.
 # Fedde Boersma <feddeboersma123@gmail.com>, 2026.
+# Tycho <tshadow999@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-11-04 00:07+0100\n"
-"PO-Revision-Date: 2026-10-28 04:55+0000\n"
+"PO-Revision-Date: 2026-11-10 04:56+0000\n"
 "Last-Translator: Luka van der Plas "
 "<lukavdplas@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
@@ -82,7 +83,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.11.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -591,7 +592,6 @@ msgid "About this documentation"
 msgstr "Over deze documentatie"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -603,15 +603,15 @@ msgid ""
 "team <https://godotengine.org/teams/#documentation>`_ on `Godot Contributors "
 "Chat <https://chat.godotengine.org/>`_."
 msgstr ""
-"Leden van de Godot Engine gemeenschap zijn constant deze documentatie aan "
-"het schrijven, corrigeren, bewerken en verbeteren. Hiervoor zijn wij ook "
-"altijd opzoek naar nieuwe vrijwilligers. Je kan al helpen door op Github "
-"problemen te melden, of mee te helpen met de documentatie vertalen. Om te "
-"helpen kan je hier terecht: `Manieren om bij te dragen <https://"
-"contributing.godotengine.org/en/latest/organization/how_to_contribute.html>` "
-"en `Documentatie schrijven <https://contributing.godotengine.org/en/latest/"
+"Leden van de Godot Engine gemeenschap zijn constant om deze documentatie te "
+"schrijven, corrigeren, bewerken en verbeteren. Daarbij kunnen we altijd meer "
+"hulp gebruiken. Je kunt ook helpen door op Github problemen te melden, of "
+"mee te helpen met het vertalen van de documentatie. Als je interesse hebt om "
+"mee te helpen, zie `Hoe je kunt bijdragen <https://"
+"contributing.godotengine.org/en/latest/index.html>`__ en `Documentatie "
+"schrijven <https://contributing.godotengine.org/en/latest/development/"
 "documentation/manual/index.html>`__, of neem contact op met het "
-"`Documentationteam <https://godotengine.org/teams/#documentation>`_ op "
+"`Documentatieteam <https://godotengine.org/teams/#documentation>`_ op de "
 "`Godot Contributors Chat <https://chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
@@ -1067,10 +1067,10 @@ msgstr ""
 "en :ref:`class_Line2D` te tekenen, met ondersteuning voor textures."
 
 #: ../../docs/about/list_of_features.rst:152
-#, fuzzy
 msgid ""
 ":ref:`class_AnimatedSprite2D` as a helper for creating animated sprites."
-msgstr "AnimatedSprite2D als hulpmiddel om geanimeerde sprites te maken."
+msgstr ""
+":ref:`class_AnimatedSprite2D` als hulpmiddel om geanimeerde sprites te maken."
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Parallax layers."
@@ -2410,14 +2410,12 @@ msgstr ""
 "te beperken."
 
 #: ../../docs/about/list_of_features.rst:528
-#, fuzzy
 msgid "Supports .NET 10 and higher."
-msgstr "Ondersteunt .NET 8 en hoger."
+msgstr "Ondersteunt .NET 10 en hoger."
 
 #: ../../docs/about/list_of_features.rst:530
-#, fuzzy
 msgid "Full support for the C# 14.0 syntax and features."
-msgstr "Volledige ondersteuning voor de C# 12.0 syntax en functionaliteiten."
+msgstr "Volledige ondersteuning voor de C# 14.0-syntax en- functionaliteiten."
 
 #: ../../docs/about/list_of_features.rst:532
 msgid ""
@@ -3515,8 +3513,8 @@ msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
-":ref:` Exporteer extra PCK-bestanden<doc_exporting_pcks>` die kunnen worden "
-"gelezen door de engine om mods en DLCs te ondersteunen."
+":ref:`Extra PCK-bestanden exporteren<doc_exporting_pcks>` die kunnen worden "
+"gelezen door de engine om mods en DLC's te ondersteunen."
 
 #: ../../docs/about/list_of_features.rst:865
 #: ../../docs/about/docs_changelog.rst:589
@@ -3544,7 +3542,7 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
-":ref:`Low-level toegang tot servers <doc_using_servers>`waarmee de overhead "
+":ref:`Low-level toegang tot servers <doc_using_servers>` waarmee de overhead "
 "van de scèneboom kan worden omzeild, indien nodig."
 
 #: ../../docs/about/list_of_features.rst:872
@@ -3631,14 +3629,12 @@ msgid "Licensed under the permissive MIT license."
 msgstr "Gelicentiëerd onder de vrijblijvende MIT-licentie."
 
 #: ../../docs/about/list_of_features.rst:900
-#, fuzzy
 msgid ""
 "Open development process with `contributions welcome <https://"
 "contributing.godotengine.org/en/latest/index.html>`__."
 msgstr ""
 "Open ontwikkelproces waar `bijdragen welkom zijn <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
+"contributing.godotengine.org/en/latest/index.html>`__."
 
 #: ../../docs/about/list_of_features.rst:904
 msgid ""
@@ -3838,14 +3834,14 @@ msgid "**Operating system**"
 msgstr "**Besturingssysteem**"
 
 #: ../../docs/about/system_requirements.rst:58
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 10, macOS 11 (Intel Macs, Compatibility), macOS "
 "12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
 "distribution released after 2018"
 msgstr ""
-"**Native editor:** Windows 10, macOS 11 (Intel Macs) macOS 13 (Apple Silicon "
-"Macs), Linux-distributie gepubliceerd na 2018"
+"**Native editor:** Windows 10, macOS 11 (Intel Macs, Compatibility) macOS 12 "
+"(Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux-"
+"distributie gepubliceerd na 2018"
 
 #: ../../docs/about/system_requirements.rst:61
 #: ../../docs/about/system_requirements.rst:106
@@ -4046,12 +4042,11 @@ msgstr ""
 "exportsjablonen en cache)"
 
 #: ../../docs/about/system_requirements.rst:146
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 11, macOS 14, Linux distribution released after "
 "2020"
 msgstr ""
-"**Native editor:** Windows 11, macOS 13, Linux-distributie gepubliceerd na "
+"**Native editor:** Windows 11, macOS 14, Linux-distributie gepubliceerd na "
 "2020"
 
 #: ../../docs/about/system_requirements.rst:147
@@ -4204,24 +4199,23 @@ msgid "150 MB (used for the executable, project files, and cache)"
 msgstr "150 MB (voor het uitvoerbestand, projectbestanden en cache)"
 
 #: ../../docs/about/system_requirements.rst:245
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 11 (Intel Macs, Compatibility), "
 "macOS 12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
 "distribution released after 2018"
 msgstr ""
-"**Voor native exports:** Windows 10, macOS 11 (Intel Macs), macOS 13 (Apple "
-"Silicon Macs), Linux-distributie gepubliceerd na 2018"
+"**Voor native exports:** Windows 10, macOS 11 (Intel Macs, Compatibility), "
+"macOS 12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux-"
+"distributie gepubliceerd na 2018"
 
 #: ../../docs/about/system_requirements.rst:248
 #: ../../docs/about/system_requirements.rst:287
-#, fuzzy
 msgid ""
 "**For web exports:** Recent versions of mainstream browsers: Firefox and "
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
 "WebKit derivatives."
 msgstr ""
-"**Web editor:** Recente versies van gangbare browsers: Firefox en "
+"**Voor web-exports:** Recente versies van gangbare browsers: Firefox en "
 "afleidingen (inclusief ESR), Chrome en Chromium-afleidingen, Safari en "
 "WebKit-afleidingen."
 
@@ -4231,9 +4225,8 @@ msgid "**iOS:** SoC with 64-bit ARM CPU"
 msgstr "**iOS:** SoC met 64-bit ARM CPU"
 
 #: ../../docs/about/system_requirements.rst:262
-#, fuzzy
 msgid "*Example: Apple A9 (iPhone 6S)*"
-msgstr "*Voorbeeld: Apple A7 (iPhone 5S)*"
+msgstr "*Voorbeeld: Apple A9 (iPhone 6S)*"
 
 #: ../../docs/about/system_requirements.rst:264
 msgid ""
@@ -4266,9 +4259,8 @@ msgstr ""
 "Metal 3-ondersteuning (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:278
-#, fuzzy
 msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A9 (iPhone 6S)*"
-msgstr "*Voorbeeld: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
+msgstr "*Voorbeeld: Qualcomm Adreno 306, Mali-T628 MP6, Apple A9 (iPhone 6S)*"
 
 #: ../../docs/about/system_requirements.rst:280
 msgid "**For native exports:** 1 GB"
@@ -4332,12 +4324,11 @@ msgid "**For web exports:** 8 GB"
 msgstr "**Voor web exports:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:330
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 11, macOS 14, Linux distribution released "
 "after 2020"
 msgstr ""
-"**Voor native exports:** Windows 11, macOS 13, Linux-distributie "
+"**Voor native exports:** Windows 11, macOS 14, Linux-distributie "
 "gepubliceerd na 2020"
 
 #: ../../docs/about/system_requirements.rst:331
@@ -5486,7 +5477,6 @@ msgstr ""
 "dat de Godot ontwikkelaars gebruiken."
 
 #: ../../docs/about/faq.rst:432
-#, fuzzy
 msgid ""
 "We explain how to work with the engine source, how to edit the "
 "documentation, and what other ways to contribute are there in our "
@@ -5494,9 +5484,9 @@ msgid ""
 "latest/index.html>`__."
 msgstr ""
 "In de `documentatie over bijdragen <https://contributing.godotengine.org/en/"
-"latest/organization/how_to_contribute.html>`__ leggen we uit hoe je met de "
-"broncode van de engine kunt werken, hoe je de documentatie kunt aanpassen, "
-"en op welke andere manieren je kunt bijdragen."
+"latest/index.html>`__ leggen we uit hoe je met de broncode van de engine "
+"kunt werken, hoe je de documentatie kunt aanpassen, en op welke andere "
+"manieren je kunt bijdragen."
 
 #: ../../docs/about/faq.rst:436
 msgid "I have a great idea for Godot. How can I share it?"
@@ -5539,7 +5529,7 @@ msgid ""
 "appreciated!"
 msgstr ""
 "Als je een duidelijk idee hebt voor de engine, voel je dan vrij om het `voor "
-"te stellen <https://github.com/godotengine/godot-proposals/issues>` _. "
+"te stellen <https://github.com/godotengine/godot-proposals/issues>`_. "
 "Probeer hierbij specifiek en concreet te zijn bij het beschrijven van het "
 "probleem en hoe jouw oplossing werkt — enkel uitvoerbare voorstellen kunnen "
 "overwogen worden. Hoewel het niet verplicht is dat je zelf de oplossing ook "
@@ -5620,14 +5610,13 @@ msgstr ""
 "Android en iOS staat gepland voor een toekomstige versie."
 
 #: ../../docs/about/faq.rst:488
-#, fuzzy
 msgid ""
 "You can find sample applications that use Godot as a library in the `migeran/"
 "libgodot GitHub repository <https://github.com/migeran/libgodot>`__."
 msgstr ""
 "Je kunt voorbeeldapplicaties die Godot als library gebruiken, vinden in het "
-"`migeran/libgodot_project GitHub repository <https://github.com/migeran/"
-"libgodot_project>`__."
+"`migeran/libgodot_project GitHub-repository <https://github.com/migeran/"
+"libgodot>`__."
 
 #: ../../docs/about/faq.rst:492
 msgid "What user interface toolkit does Godot use?"
@@ -5940,13 +5929,12 @@ msgid "How can I support Godot development or contribute?"
 msgstr "Hoe kan ik Godot-ontwikkeling steunen of bijdragen?"
 
 #: ../../docs/about/faq.rst:613
-#, fuzzy
 msgid ""
 "See `How to contribute <https://contributing.godotengine.org/en/latest/"
 "index.html>`__."
 msgstr ""
 "Zie `Hoe bij te dragen <https://contributing.godotengine.org/en/latest/"
-"organization/how_to_contribute.html>`__."
+"index.html>`__."
 
 #: ../../docs/about/faq.rst:616
 msgid "Who is working on Godot? How can I contact you?"
@@ -6002,7 +5990,6 @@ msgstr ""
 "het moet nog steeds voldoen aan de originele licentie."
 
 #: ../../docs/about/complying_with_licenses.rst:28
-#, fuzzy
 msgid ""
 "This section covers compliance with licenses from a user perspective. If you "
 "are interested in license compliance as a contributor, you can find "
@@ -6013,9 +6000,9 @@ msgstr ""
 "Deze sectie behandelt overeenstemming met licenties vanuit een "
 "gebruikersperspectief. Als je geïnteresseerd bent in licentieovereenstemming "
 "voor bijdrages, kun je de richtlijnen vinden in de pagina `Best Practices "
-"<https://contributing.godotengine.org/en/latest/engine/guidelines/"
-"best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
-"problems>`__."
+"<https://contributing.godotengine.org/en/latest/development/engine/"
+"best_practices.html#don-t-use-complex-canned-solutions-for-simple-problems>"
+"`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -8953,11 +8940,10 @@ msgstr ""
 "kunt gebruiken in je projecten."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:159
-#, fuzzy
 msgid ""
 "You can learn more about the Asset Store in :ref:`doc_what_is_asset_store`."
 msgstr ""
-"Je kunt meer leren over de Asset-winkel in ref:`doc_what_is_asset_store`."
+"Je kunt meer leren over de Asset-winkel in :ref:`doc_what_is_asset_store`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:164
 msgid "Integrated class reference"
@@ -10438,20 +10424,19 @@ msgid ""
 "Play the game by pressing :kbd:`F5` (:kbd:`Cmd + B` on macOS). You should "
 "see it fall."
 msgstr ""
-"Speel het spel door op :kbd: `F5`(:kbd:`Cmd + B` op macOS) te drukken. Je "
+"Speel het spel door op :kbd:`F5` (:kbd:`Cmd + B` op macOS) te drukken. Je "
 "zou een vallende bal moeten zien."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "Now, we want to create more instances of the Ball node. With the ball still "
 "selected, press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it. "
 "Click and drag the new ball to a different location."
 msgstr ""
 "Nu willen we meer instanties van de \"Ball\"-knoop maken. Druk, terwijl de "
-"bal nog geselecteerd is, op :kbd:`Ctrl + D` (:kbd:`Cmd + D` op macOS) om het "
-"dupliceerd-commando aan te roepen. Klik en sleep om de nieuwe bal naar een "
-"andere plek te verplaatsen."
+"bal nog geselecteerd is, op :kbd:`Ctrl + D` (:kbd:`Cmd + D` op macOS) om de "
+"bal te dupliceren. Klik en sleep om de nieuwe bal naar een andere plek te "
+"verplaatsen."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:108
 msgid "You can repeat this process until you have several in the scene."
@@ -10550,17 +10535,14 @@ msgstr ""
 "door op de het bijbehorende tabblad boven het beeldvenster te klikken."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:153
-#, fuzzy
 msgid ""
 "Select one of the instantiated Ball nodes and, in the :ui:`Inspector`, set "
 "its :inspector:`Gravity Scale` value to ``10``."
 msgstr ""
-"Selecteer een van de geïnstantiëerde \"Ball\"-knopen en pas in "
-"het :ui:`Infopaneel` de waarde :inspector:`Zwaartekrachtschaal` aan naar "
-"``10``."
+"Selecteer een van de geïnstantiëerde \"Ball\"-knopen en pas in het "
+":ui:`Infopaneel` de waarde :inspector:`Zwaartekrachtschaal` aan naar ``10``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:158
-#, fuzzy
 msgid "A gray \"revert\" button appears next to the adjusted property."
 msgstr ""
 "Een grijze \"ongedaan maken\"-knop verschijnt naast de aangepaste eigenschap."
@@ -10656,16 +10638,15 @@ msgstr ""
 "spel. De pijlen wijzen naar de instantiëerder van elke scène."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:201
-#, fuzzy
 msgid ""
 "Once you have a diagram, we recommend creating a scene for each element "
 "listed in it to develop your game. You'll use instantiation, either by code "
 "or directly in the editor, to build your tree of scenes."
 msgstr ""
-"Zodra je een dergelijk schema hebt, wordt het aangeraden om voor elk element "
-"in het schema een scène aan te maken om zo je spel te maken. Met "
-"instantiëren, vanuit code of rechtstreeks vanuit de editor, bouw je de "
-"boomstructuur aan scènes wat het spel vormt."
+"Zodra je een schema hebt, raden we aan dat je voor elk element in het schema "
+"een scène aanmaakt om zo je game te ontwikkelen. Door deze te instantiëren, "
+"vanuit code of rechtstreeks vanuit de editor, bouw je jouw boomstructuur van "
+"scènes."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:205
 msgid ""
@@ -10691,7 +10672,6 @@ msgstr ""
 "assets en geneste elementen:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:216
-#, fuzzy
 msgid ""
 "Imagine we started by creating the room. We could make a couple of different "
 "room scenes, with unique arrangements of furniture in them. Later, we could "
@@ -10702,10 +10682,10 @@ msgid ""
 msgstr ""
 "Stel dat we beginnen met het maken van een kamer. We zouden een paar "
 "verschillende kamerscènes kunnen maken, elk met een unieke opstelling van "
-"meubilair. Later kunnen we een huis-scène maken die de verschillende "
-"kamerinstanties gebruikt als interieur. We kunnen een citadel maken van de "
-"vele geïnstantiëerde huizen, en een groot landschap waarop we het citadel "
-"kunnen plaatsen. Dit zouden allemaal scènes zijn, die één of meer sub-scènes "
+"meubilair. Later kunnen we een huisscène maken die de verschillende "
+"kamerinstanties gebruikt als interieur. We kunnen een bolwerk maken van de "
+"vele geïnstantiëerde huizen, en een groot landschap waarop we het bolwerk "
+"kunnen plaatsen. Dit zouden allemaal scènes zijn, die één of meer subscènes "
 "instantiëren."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:222
@@ -10732,12 +10712,11 @@ msgstr ""
 "animatoren omvatten, die in hun proces allen met de Godot editor werken."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:234
-#, fuzzy
 msgid ""
 "Instantiation, the process of producing an object from a blueprint, has many "
 "handy uses. With scenes, it gives you:"
 msgstr ""
-"Instantiëren, het proces van het maken van een object van een sjabloon, "
+"Instantiëren, het proces van het maken van een object uit een blauwdruk, "
 "heeft veel handige toepassingen. Met scènes krijg je:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:237
@@ -11002,17 +10981,16 @@ msgstr ""
 "download/>`_ pagina van de Godot website."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:116
-#, fuzzy
 msgid ""
 "Since Godot uses .NET 10, in theory, you can use any third-party .NET "
 "library or framework in Godot, as well as any Common Language Infrastructure-"
 "compliant programming language, such as F#, Boo, or ClojureCLR. However, C# "
 "is the only officially supported .NET option."
 msgstr ""
-"Omdat Godot .NET 8 gebruikt, kun je in theorie elke .NET-library of "
+"Omdat Godot .NET 10 gebruikt, kun je in theorie elke .NET-library of -"
 "framework van derden gebruiken in Godot, en daarnaast ook elke Common "
-"Language Infrastructure-conforme programmeertaal, zoals F#, Boo, of "
-"ClojureCLR. C# is wel de enige officiëel ondersteunde .NET-optie."
+"Language Infrastructure-conforme programmeertaal, zoals F#, Boo of "
+"ClojureCLR. Alleen is C# wel de enige officieel ondersteunde .NET-optie."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:121
 msgid ""
@@ -12000,22 +11978,20 @@ msgid "Search for the :ref:`Button <class_button>` node and add it."
 msgstr "Zoek naar de knoop :ref:`Knop <class_button>` en voeg deze toe."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
-#, fuzzy
 msgid ""
 "The node is small by default. Click and drag on the bottom-right handle of "
 "the Button in the viewport to resize it."
 msgstr ""
-"De knoop is standaard klein. Klik en sleep de het handvat rechtsonder aan de "
+"De knoop is standaard klein. Klik en sleep het handvat rechtsonder aan de "
 "knop in het beeldvenster om hem te vergroten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:89
-#, fuzzy
 msgid ""
 "If you don't see the handles, ensure the select tool is active in the "
 "toolbar."
 msgstr ""
-"Als je je de handvaten niet ziet, zorg dan dat het selecteergereedschap "
-"actief is in de werkbalk."
+"Als je de handvaten niet ziet, zorg dan dat het selecteergereedschap actief "
+"is in de werkbalk."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:93
 msgid "Click and drag on the button itself to move it closer to the sprite."
@@ -12109,7 +12085,6 @@ msgstr ""
 "aangemaakt."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:144
-#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
@@ -12117,8 +12092,8 @@ msgid ""
 msgstr ""
 "Met het geavanceerde menu kun je verbinden met elke knoop en elke ingebouwde "
 "functie, argumenten toevoegen aan de terugkoppeling, en opties instellen. Je "
-"kunt deze stand aan- en uitzetten met de "
-"knop :button:`Geavanceerd`rechtsonder in het venster."
+"kunt deze modus aan- en uitzetten met de knop :button:`Geavanceerd` "
+"rechtsonder in het venster."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:151
 msgid ""
@@ -12197,12 +12172,12 @@ msgid "Your complete ``sprite_2d.gd`` code should look like the following."
 msgstr "Jouw volledige ``sprite_2d.gd`` code hoort er nu zo uit te zien."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:256
-#, fuzzy
 msgid ""
 "Run the current scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS), and "
 "click the button to see the sprite start and stop."
 msgstr ""
-"Start de scène en druk op de knop, de sprite zou moeten starten en stoppen."
+"Start de scène door op :kbd:`F6` (:kbd:`Cmd + R` op macOS) te drukken, en "
+"druk op de knop. Je ziet de sprite nu starten en stoppen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:260
 msgid "Connecting a signal via code"
@@ -12226,14 +12201,13 @@ msgstr ""
 "herladen van wapens, en nog meer."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:268
-#, fuzzy
 msgid ""
 "Head back to the 2D workspace. You can either click the \"2D\" text at the "
 "top of the window or press :kbd:`Ctrl + F1` (:kbd:`Ctrl + Cmd + 1` on macOS)."
 msgstr ""
-"Ga terug naar de 2D werkruimte. Dit doe je door bovenaan het venster op de "
-"tekst \"2D\" te klikken, of :kbd:`Ctrl + F1` (:kbd:`Alt + 1` op macOS) in te "
-"toetsen."
+"Ga terug naar de 2D-werkruimte. Dit doe je door bovenaan het venster op de "
+"tekst \"2D\" te klikken, of :kbd:`Ctrl + F1` (:kbd:`Ctrl + Cmd + 1` op "
+"macOS) in te drukken."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:271
 msgid ""
@@ -12434,17 +12408,17 @@ msgstr ""
 "van de parameters horen tussen haakjes:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:523
-#, fuzzy
 msgid ""
 "The signal arguments show up in the editor's Signals dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
-"De parameters van het signaal verschijnen in het Knooptabblad in de editor, "
-"en Godot kan ze gebruiken om callback functies te genereren. Echter, je kan "
-"nog altijd elk aantal parameters meesturen bij het uitzenden van een "
-"signaal. Het is aan jou om ervoor te zorgen dat deze de juiste waarde hebben."
+"De parameters van het signaal verschijnen in het Signalenpaneel van de "
+"editor, en Godot kan ze gebruiken om terugkoppelingsfuncties voor je te "
+"genereren. Echter, je kan nog altijd elk aantal parameters meesturen bij het "
+"uitzenden van een signaal. Het is aan jou om ervoor te zorgen dat deze de "
+"juiste waarde hebben."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:528
 msgid ""
@@ -12592,18 +12566,20 @@ msgid "You can find a completed version of this project at this location:"
 msgstr "Je kunt een complete versie van dit project vinden op:"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:45
-#, fuzzy
 msgid ""
 "`Dodge the Creeps source code (GDScript) <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/2d/dodge_the_creeps>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`Broncode Dodge the Creeps (GDScript) <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/2d/dodge_the_creeps>`__"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:46
-#, fuzzy
 msgid ""
 "`Dodge the Creeps source code (C#) <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/mono/dodge_the_creeps>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`Broncode Dodge the Creeps (C#) <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/mono/dodge_the_creeps>`__"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:49
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:34
@@ -12619,15 +12595,14 @@ msgstr ""
 "de :ref:`doc_step_by_step` al helemaal hebben gevolgd."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:54
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Dodge the Creeps source code <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/2d/dodge_the_creeps>`__."
 msgstr ""
 "Als je al ervaring hebt als programmeur, dan kun je complete demo's hier "
-"bekijken: `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`__."
+"bekijken: `broncode Dodge the Creeps <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/2d/dodge_the_creeps>`__."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:58
 msgid ""
@@ -12710,7 +12685,6 @@ msgid "Your project folder should look like this."
 msgstr "Jouw projectmap hoort er zo uit te zien."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:37
-#, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on *Project -> Project Settings* to open the project "
@@ -12718,11 +12692,12 @@ msgid ""
 "set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``. You "
 "can see the \"Project\" menu on the upper left corner."
 msgstr ""
-"Deze game gaat uit van portretmodus, dus we moeten de grootte van het game "
-"venster aanpassen. Klik op *Project -> Project Settings* om de project "
-"instellingen te openen, waar je in de linkerkolom het *Display -> Window* "
-"venster kan openen. Zet daar \"Viewport Width\" naar ``480`` en \"Viewport "
-"Height\" naar ``720``."
+"Deze game is ontworpen voor portretmodus, dus we moeten de grootte van het "
+"gamevenster aanpassen. Klik op *Project -> Projectinstellingen* om de "
+"projectinstellingen te openen. Open in de linkerkolom het tabblad "
+"*Weergave -> Venster*. Zet daar \"Breedte Beeldvenster\" op ``480`` en "
+"\"Hoogte Beeldvenster\" naar ``720``. Je kunt het \"Project\"-menu vinden in "
+"de linkerbovenhoek."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:45
 msgid ""
@@ -12861,7 +12836,6 @@ msgstr ""
 "aanvullende knopen toevoegen voor meer functionaliteit."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:47
-#, fuzzy
 msgid ""
 "Before we add any children to the ``Player`` node, we want to make sure we "
 "don't accidentally move or resize them by clicking on them. Select the node "
@@ -12870,26 +12844,25 @@ msgid ""
 "any child node is clicked in 2D and 3D view.\""
 msgstr ""
 "Voordat we knopen onder de ``Player``-knoop toevoegen, willen we zeker zijn "
-"dat we die niet kunnen aanpassen door per ongeluk op ze te klikken. "
-"Selecteer de knoop en klik dan rechts van het sloticoontje; de hint zegt "
-"``Zorgt ervoor dat de kinderen van dit object niet geselecteerd kunnen "
-"worden.``"
+"dat we die niet per ongeluk verplaatsen of schalen door erop te klikken. "
+"Selecteer de knoop en klik dan rechts van het sloticoontje. De tooltip "
+"hiervan zegt \"Groepeert de geselecteerde knoop met zijn kinderen. Hiermee "
+"wordt de ouder geselecteerd wanneer je op een kindknoop klikt in 2D- en 3D-"
+"weergave.\""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:55
-#, fuzzy
 msgid ""
 "Save the scene as ``player.tscn``. Click **Scene > Save**, or "
 "press :kbd:`Ctrl + S` on Windows/Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"Sla de scène op. Druk op Scène -> Opslaan of druk op :kbd: `Ctrl + S` op "
-"Windows/Linux of :kbd: `Cmd + S`` op macOS."
+"Sla de scène op as ``player.tscn``. Klik op **Scène > Opslaan** of druk op "
+":kbd:`Ctrl + S` op Windows/Linux of :kbd:`Cmd + S` op macOS."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:71
 msgid "Sprite animation"
 msgstr "Sprite animatie"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:73
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add (:kbd:`Ctrl + A` on Windows/Linux "
 "or :kbd:`Cmd + A` on macOS) a child node :ref:`AnimatedSprite2D "
@@ -12901,16 +12874,15 @@ msgid ""
 "the editor. Make sure ``AnimatedSprite2D`` is selected, then find the "
 "``SpriteFrames`` panel at the bottom of the editor."
 msgstr ""
-"Klik op de ``Player``-knoop en voeg (:kbd:`Ctrl + A`) dan "
-"een :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` toe als kind. "
-"``AnimatedSprite2D`` zal het uiterlijk en animaties regelen van de speler. "
-"Merk op dat er een waarschuwingssymbool naast de knoop staat. Een "
-"``AnimatedSprite2D`` vereist een :ref:`SpriteFrames <class_SpriteFrames>`-"
-"bron, een animatielijst die op het scherm weergegeven kunnen worden. Om er "
-"een te maken, vind eerst de ``Sprite Frames`` eigenschap onder ``Animation`` "
-"in de Inspecteur, daarna druk je op \"[leeg]\", om vervolgens ``Nieuwe "
-"SpriteFrames`` te selecteren . Klik nogmaals om het ``SpriteFrames`` tabblad "
-"te openen:"
+"Klik op de ``Player``-knoop en voeg dan een :ref:`AnimatedSprite2D "
+"<class_AnimatedSprite2D>` toe als kind (:kbd:`Ctrl + A` op Windows/Linux of "
+":kbd:`Cmd + A` op macOS). De ``AnimatedSprite2D`` zal zorgen voor het "
+"uiterlijk en de animaties van de speler. Een ``AnimatedSprite2D`` gebruikt "
+"een :ref:`SpriteFrames <class_SpriteFrames>`-bron; dit is een lijst van de "
+"animaties die de sprite kan weergeven. Voor het gemak wordt deze bron "
+"automatisch aangemaakt en toegewezen aan de ``AnimatedSprite2D`` als je een "
+"nieuwe knoop toevoegt via de editor. Zorg ervoor dat ``AnimatedSprite2D`` is "
+"geselecteerd, en ga dan naar het ``SpriteFrames``-paneel onderaan de editor."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:85
 msgid ""
@@ -12923,19 +12895,15 @@ msgstr ""
 "tweede animatie toe te voegen genaamd ``up``."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:89
-#, fuzzy
 msgid ""
 "Find the player images in the FileSystem dock - they're in the ``art`` "
 "folder you unzipped earlier. Drag the two images for each animation, into "
 "the **Animation Frames** side of the panel for the corresponding animation:"
 msgstr ""
-"Aan de linkerkant is een lijst met animaties. Klik op het \"default\" "
-"element en geef het de naam \"walk\". Klik op de \"Nieuwe animatie\" knop om "
-"de tweede animatie genaamd \"up\" te maken. Zoek de afbeeldingen voor de "
-"spelers op in het bestandensysteem-venster - onder de map ``art`` die uit "
-"het uitgepakte archief kwam. Sleep de twee afbeeldingen voor elke animatie, "
-"genaamd ``playerGrey_up[1/2]`` en ``playerGrey_up[2/2]`` in het "
-"tabblad``Animatiebeelden`` voor de bijbehorende animatie:"
+"Ga naar de spelerafbeeldingen in het Bestandssysteempaneel - ze staan in de "
+"``art``-map die je eerder hebt uitgepakt. Sleep de twee afbeeldingen voor "
+"elke animatie naar de **Animatieframes**-kant van het paneel voor de "
+"bijbehorende animatie:"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:93
 msgid ""
@@ -13032,13 +13000,12 @@ msgstr ""
 "Klik gewoon op \"Maken\":"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:20
-#, fuzzy
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the :menu:`Language` drop down menu before hitting create."
 msgstr ""
-"Als je een script maakt met C# of andere talen, selecteer de taal in het "
-"``taal `` uitvouwmenu voordat je het script aanmaakt."
+"Als je een script maakt met C# of andere talen, selecteer dan de taal in het "
+"uitvouwmenu :menu:`Taal` voordat je op aanmaken drukt."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:25
 msgid ""
@@ -13055,7 +13022,6 @@ msgstr ""
 "hebben:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:50
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -13065,24 +13031,25 @@ msgid ""
 "here, it will override the default value specified in the script (the script "
 "won't be modified)."
 msgstr ""
-"Als je het ``export`` sleutelwoord voor de eerste variabele ``speed`` zet, "
-"kan je de waarde vanuit de Inspecteur stellen. Dit kan handig zijn voor "
-"waardes die je wil bijstellen, net zoals de ingebouwde eigenschappen. Klik "
-"op de ``Player``-knoop , de eigenschap zal nu onder het kopje "
-"``Scriptvariabelen`` staan. Bedenk dat de waarde die je hier instelt, altijd "
-"de waarde in het script overschrijft."
+"Door het ``export`` sleutelwoord te gebruiken voor de eerste variabele "
+"``speed``, kunnen we de waarde instellen vanuit het Infopaneel. Dit kan "
+"handig zijn voor waardes die je wilt kunnen bijstellen, net zoals de "
+"ingebouwde eigenschappen van een knoop. Klik op de ``Player``-knoop ; je "
+"ziet de eigenschap nu verschijnen in het Infopaneel in een nieuwe sectie met "
+"de naam van het script. Denk eraan dat als je de waarde hier aanpast, dit de "
+"standaardwaarde, die in het script is gespecificeerd, overschrijft (het "
+"script wordt niet gewijzigd)."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:59
-#, fuzzy
 msgid ""
 "If you're using C#, you need to (re)build the project assemblies whenever "
 "you want to see new export variables or signals. This build can be manually "
 "triggered by clicking the **Build** button at the top right of the editor."
 msgstr ""
-"Als je C# gebruikt, moet je de projectassemblies (opnieuw) bouwen wanneer je "
-"nieuwe exportvariabelen of signalen wil zien. Deze bouwstap kan handmatig "
-"geactiveerd worden door op \"Bouw project\" te drukken, rechtsboven in het "
-"editorvenster."
+"Als je C# gebruikt moet je de projectassembly's (opnieuw) bouwen wanneer je "
+"nieuwe exportvariabelen of signalen wilt zien. Deze bouwstap kan handmatig "
+"worden geactiveerd door te klikken op de knop **Bouwen** rechtsboven in de "
+"editor."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:68
 msgid ""
@@ -13304,17 +13271,16 @@ msgstr ""
 "(helemaal onderaan, dus niet ingesprongen onder de `else`):"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:249
-#, fuzzy
 msgid ""
 "The ``delta`` parameter in the ``_process()`` function refers to the *frame "
 "length*, which is the amount of time that the previous frame took to "
 "complete. Using this value ensures that your movement will remain consistent "
 "even if the frame rate changes."
 msgstr ""
-"De `delta` parameter van ``_process()`` duidt op de beeldduur - hoeveel tijd "
-"het duurde om het vorige schermbeeld te tekenen. Het gebruik van deze waarde "
-"garandeert dat je beweging constant zal blijven, ook als de "
-"verversingssnelheid verandert."
+"De ``delta``-parameter van de ``_process()``-functie duidt op de "
+"*frameduur*: de hoeveelheid tijd waarin het vorige frame voltooid is. Door "
+"deze waarde te gebruiken, zorg je ervoor dat je beweging consistent blijft, "
+"ook als de framesnelheid verandert."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:254
 msgid ""
@@ -13435,21 +13401,19 @@ msgstr ""
 "het dan toe na ``public partial class Player : Area2D``:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:369
-#, fuzzy
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
 "detect the collision. Select the ``Player`` node and click the :ui:`Signals` "
 "tab next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
-"Dit definieert een zelfverklaard signaal genaamd *hit*, die door de speler "
-"uitgezonden zal worden als het tegen een vijand aanloopt. We zullen een "
-"``Area2D`` gebruiken om deze botsing te detecteren. Selecteer de ``Player`` "
-"knoop en klik op het tabblad Knoop naast het tabblad Inspecteur om een lijst "
-"met signalen te zien die de speler kan uitzenden:"
+"Dit definieert een zelfgedefinieerd signaal genaamd \"hit\", dat we de "
+"speler zullen laten uitzenden als die tegen een vijand aanloopt. We gaan een "
+"``Area2D`` gebruiken om de botsing te detecteren. Selecteer de ``Player``-"
+"knoop en klik op het tabblad :ui:`Signalen` naast het tabblad Infopaneel om "
+"de lijst te zien van signalen die de speler kan uitzenden:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:376
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: "
@@ -13457,13 +13421,11 @@ msgid ""
 "player. Click :button:`Connect...` and the :ui:`Connect a Signal` window "
 "appears."
 msgstr ""
-"Merk op dat ons zelfverklaarde signaal \"hit\" hier ook tussen staat! Omdat "
-"onze vijanden ``RigidBody2D`` knopen zullen zijn, willen we het signaal "
-"``body_entered(body: Node2D)``; dit zal uitgezonden worden als een lichaam "
-"de speler raakt. Klik \"Verbinden..\" en dan weer \"Verbind een Signaal\" in "
-"het volgende venster. We hoeven niets aan deze instellingen te veranderen, "
-"dus klik nogmaals op \"Connect\". Godot zal automatisch een methode in het "
-"script van de speler plaatsen."
+"Merk op dat ons zelfgedefinieerde signaal \"hit\" hier ook tussen staat! "
+"Omdat onze vijanden ``RigidBody2D``-knopen zullen zijn, willen we het "
+"signaal ``body_entered(body: Node2D)``. Dit signaal zal worden uitgezonden "
+"als een lichaam de speler raakt. Klik op :button:`Verbinden..`. Er "
+"verschijnt een venster :ui:`Koppel een Signaal`."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:381
 msgid ""
@@ -13557,14 +13519,12 @@ msgstr ""
 "lijn lopen."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:10
-#, fuzzy
 msgid ""
 "We'll create a ``Mob`` scene, which we can then *instantiate* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"We zullen dit in een scène genaamd ``Mob`` bouwen, die we dan kunnen "
-"*instantiëren* om een gewenst aantal onafhankelijke vijanden in het spel te "
-"brengen."
+"We gaan een ``Mob``-scène aanmaken, die we dan kunnen *instantiëren* om een "
+"gewenst aantal onafhankelijke vijanden in de game te brengen."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:14
 msgid "Node setup"
@@ -13617,18 +13577,16 @@ msgstr ""
 "``0``. Hierdoor valt de Mob niet naar beneden."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:34
-#, fuzzy
 msgid ""
 "In addition, in the ``Mob`` node inspector, under "
 "the :ref:`CollisionObject2D <class_CollisionObject2D>` section, expand the "
 "**Collision** group and uncheck the ``1`` inside the ``Mask`` property. This "
 "will ensure the mobs do not collide with each other."
 msgstr ""
-"In de :ref:`RigidBody2D <class_RigidBody2D>` eigenschappen, zet``Gravity "
-"Scale`` op ``0``, dan zal de vijand niet naar beneden vallen. Vervolgens, in "
-"het :ref:`CollisionObject2D <class_CollisionObject2D>` gedeelte, klik op "
-"``Mask`` en deactiveer het eerste vakje. Nu zullen de vijanden niet met "
-"elkaar botsen."
+"Klap verder, in het infopaneel van de ``Mob``-knoop, onder de sectie "
+":ref:`CollisionObject2D <class_CollisionObject2D>`, de groep **Botsing** uit "
+"en vink de ``1`` uit binnen de eigenschap ``Masker``. Hierdoor zullen de "
+"vijanden niet tegen elkaar botsen."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:42
 msgid ""
@@ -13675,15 +13633,14 @@ msgstr ""
 "``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:58
-#, fuzzy
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation`` property "
 "to ``90`` (under \"Transform\" in the Inspector)."
 msgstr ""
-"Net als in de ``Player`` scène, voeg een ``CapsuleShape2D`` toe voor het "
+"Voeg, net als in de ``Player`` scène, een ``CapsuleShape2D`` toe voor het "
 "botsen. Om de vorm te laten passen bij de afbeelding, moet je de eigenschap "
-"``Rotation Degrees`` (onder \"Transform\" in de inspecteur) op ``90`` zetten."
+"``Rotatie`` (onder \"Transformatie\" in het infopaneel) op ``90`` zetten."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:62
 msgid "Save the scene."
@@ -13694,9 +13651,8 @@ msgid "Enemy script"
 msgstr "Vijand script"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:67
-#, fuzzy
 msgid "Attach a script to the ``Mob`` node like this:"
-msgstr "Voeg een script aan de ``Mob`` toe:"
+msgstr "Voeg als volgt een script toe aan de ``Mob``-knoop:"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:83
 msgid ""
@@ -13757,9 +13713,8 @@ msgstr ""
 "zeggen verwijdert, aan het einde van het frame."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:134
-#, fuzzy
 msgid "This completes the ``Mob`` scene."
-msgstr "Hiermee is de ``Mob`` scène afgerond."
+msgstr "Hiermee is de ``Mob``-scène klaar."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:136
 msgid ""
@@ -13979,14 +13934,12 @@ msgstr ""
 "Selecteer ``mob.tscn``."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:110
-#, fuzzy
 msgid ""
 "Next, select the instance of the ``Player`` scene under ``Main`` node in the "
 "Scene dock, and access the Signals dock on the sidebar."
 msgstr ""
-"Selecteer de spelersinstantie in de scène onder de ``Hoofd (Main)``-knoop in "
-"het Scènepaneel, en pak vervolgens het Knoop-tabblad erbij. Zorg ervoor dat "
-"het signalenvenster geselecteerd is in het Knoop-tabblad."
+"Selecteer dan de instantie van de ``Player``-scène onder de ``Main``-knoop "
+"in het Scènepaneel, en open het Signalenpaneel aan de rechterkant."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:113
 msgid ""
@@ -14031,16 +13984,14 @@ msgstr ""
 "**Koppelen** om een nieuwe signaalkoppeling aan te maken."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:161
-#, fuzzy
 msgid ""
 "Once all three timers have this set up, you should be able to see that each "
 "timer has a Signal connection for their respective ``timeout()`` signal, "
 "showing in green, within their respective Signals tabs:"
 msgstr ""
-"Zodra dit is ingesteld voor alle drie de timers, zou je bij voor elke timer "
-"moeten kunnen zien dat er een Signaalkoppeling is voor het ``timeout()``-"
-"signaal, getoond in het groen, binnen hun respectievelijke Signalen-"
-"tabbladen:"
+"Zodra dit is ingesteld voor alle drie de timers, zou je moeten kunnen zien "
+"dat elke timer een Signaalkoppeling heeft met diens ``timeout()``-signaal, "
+"getoond in het groen, binnen hun respectievelijke Signalen-tabbladen:"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:165
 msgid "(For MobTimer): ``_on_mob_timer_timeout()``"
@@ -14301,7 +14252,6 @@ msgstr "Voeg de tekst ``0`` toe."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:62
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:69
-#, fuzzy
 msgid ""
 "Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
 msgstr ""
@@ -14859,30 +14809,32 @@ msgid "Draw a user interface on a 3D game."
 msgstr "Een gebruikersinterface bovenop een 3D game tekenen."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:32
-#, fuzzy
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
 "series. We'll start slow with detailed instructions and shorten them as we "
 "do similar steps. If you're an experienced programmer, you can browse the "
 "complete demo's source code here:"
 msgstr ""
-"Als je al ervaring hebt als programmeur, dan kun je complete demo's hier "
-"bekijken: `Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`__."
+"Deze handleiding is voor beginners die al de volledige \"Aan de slag\"-serie "
+"hebben gevolgd. We beginnen rustig met gedetailleerde instructies en korten "
+"ze in naarmate we meer vergelijkbare stappen doen. Als je al ervaring hebt "
+"als programmeur, dan kun je de broncode van de complete demo hier bekijken:"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:37
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (GDScript) <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/3d/squash_the_creeps>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`Broncode Squash the Creeps (GDScript) <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/3d/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:38
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (C#) <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/mono/squash_the_creeps>`__"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`Broncode Squash the Creeps (C#) <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/mono/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:42
 msgid ""
@@ -14897,16 +14849,16 @@ msgstr ""
 "basis om deze reeks makkelijker te kunnen volgen."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:47
-#, fuzzy
 msgid ""
 "We prepared some game assets so we can jump straight to the code. You can "
 "download them here: `Squash the Creeps assets <https://github.com/"
 "godotengine/godot-docs-project-starters/releases/download/latest-4.x/"
 "3d_squash_the_creeps_starter.zip>`__."
 msgstr ""
-"Naast deze documentatie kun je misschien ook een kijkje nemen bij "
-"verscheidene`Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"We hebben wat game-assets klaargezet zodat we meteen in de code kunnen "
+"duiken. Je kunt ze hier downloaden: `assets Squash the Creeps <https://"
+"github.com/godotengine/godot-docs-project-starters/releases/download/latest-"
+"4.x/3d_squash_the_creeps_starter.zip>`__."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:51
 msgid ""
@@ -14935,7 +14887,6 @@ msgstr ""
 "het importeren van de start-assets en het instellen van de gamescène."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:9
-#, fuzzy
 msgid ""
 "We've prepared a Godot project with the 3D models and sounds we'll use for "
 "this tutorial, linked in the index page. If you haven't done so yet, you can "
@@ -14943,19 +14894,19 @@ msgid ""
 "godotengine/godot-docs-project-starters/releases/download/latest-4.x/"
 "3d_squash_the_creeps_starter.zip>`_."
 msgstr ""
-"Om te leren hoe instanties maken werkt, beginnen we met het `bal-"
-"voorbeeldproject voor starten met instanties maken <https://github.com/"
-"godotengine/godot-docs-project-starters/releases/download/latest-4.x/"
-"instancing_starter.zip>`_."
+"We hebben een Godot-project voorbereid met de 3D modellen en geluiden die we "
+"gaan gebruiken voor deze handleiding, gelinkt in de indexpagina. Als je dat "
+"nog niet hebt gedaan, kun je hier het archief downloaden: `assets Squash the "
+"Creeps <https://github.com/godotengine/godot-docs-project-starters/releases/"
+"download/latest-4.x/3d_squash_the_creeps_starter.zip>`_."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:13
-#, fuzzy
 msgid ""
 "Once you've downloaded it, extract the .zip archive on your computer. Open "
 "the Godot Project Manager and click the *Import* button."
 msgstr ""
-"Wanneer het gedownload is, pak je het project uit waar je maar wil. Open "
-"vervolgens de Godot Project Beheerder, en klik op de *Import* knop."
+"Download het archief en pak het .zip-archief uit op je computer. Open de "
+"Projectbeheerder van Godot en klik op de knop *Importeren*."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:18
 msgid ""
@@ -14970,9 +14921,8 @@ msgstr ""
 "``project.godot``-bestand dat in de map zit."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:25
-#, fuzzy
 msgid "Click *Import* to open the project in the editor."
-msgstr "Druk op de drie stippen in de linkerbovenhoek, kies **Offline data**."
+msgstr "Klik op *Importeren* om het project te openen in de editor."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:29
 msgid ""
@@ -15000,7 +14950,6 @@ msgstr ""
 "game."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:41
-#, fuzzy
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
 "belong to these models, and a music track."
@@ -15030,12 +14979,11 @@ msgstr ""
 "scène door op :kbd:`Ctrl + A` (:kbd:`Cmd + A` op macOS) te drukken."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:54
-#, fuzzy
 msgid ""
 "Save the scene as ``main.tscn`` by pressing :kbd:`Ctrl + S` (:kbd:`Cmd + S` "
 "on macOS)."
 msgstr ""
-"Sla de scène op als ``main.tscn`` door op :kbd:`Ctrl + s` (:kbd:`Cmd + s` op "
+"Sla de scène op als ``main.tscn`` door op :kbd:`Ctrl + S` (:kbd:`Cmd + S` op "
 "macOS) te drukken."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:56
@@ -15092,7 +15040,6 @@ msgstr ""
 "maakt de vorm ook betrouwbaar voor snel bewegende objecten."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:80
-#, fuzzy
 msgid ""
 "A box's wireframe appears in the viewport with orange dots at the center of "
 "each face. You can click and drag these to edit the shape's extents "
@@ -15101,11 +15048,12 @@ msgid ""
 "*Size* to ``60`` on the X-axis, ``2`` for the Y-axis, and ``60`` for the Z-"
 "axis."
 msgstr ""
-"Een draadmodel verschijnt in het beeldvenster met drie oranje stippen. Je "
-"kunt deze klikken en slepen om de vorm interactief te bewerken. We kunnen de "
-"grootte ook precies instellen in het infopaneel. Klik op de :ref:`BoxShape3D "
-"<class_BoxShape3D>` om de bron uit te breiden. Zet de *Grootte* op ``60`` op "
-"de x-as, ``2`` op de y-as, en ``60`` op de z-as."
+"Er verschijnt een draadmodel in het beeldvenster met oranje stippen op het "
+"midden van elk vlak. Deze kun je aanklikken en slepen om de omvang van de "
+"vorm interactief te bewerken. We kunnen de grootte ook precies instellen in "
+"het infopaneel. Klik op de :ref:`BoxShape3D <class_BoxShape3D>` om de bron "
+"uit te breiden. Zet de *Grootte* op ``60`` op de X-as, ``2`` op de Y-as, en "
+"``60`` op de Z-as."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:89
 msgid ""
@@ -15393,9 +15341,8 @@ msgstr ""
 "``Character``- of de ``Pivot``-knoop."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:83
-#, fuzzy
 msgid "Save the scene as ``player.tscn``."
-msgstr "Sla de scène op als ``player.tscn``"
+msgstr "Sla de scène op als ``player.tscn``."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:85
 msgid ""
@@ -15753,9 +15700,8 @@ msgstr ""
 "bewegen."
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:248
-#, fuzzy
 msgid "Here is the complete ``player.gd`` code for reference."
-msgstr "Hier is het volledige ``sprite_2d.gd``-bestand ter referentie."
+msgstr "Hier is het volledige ``player.gd``-bestand ter referentie."
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:352
 msgid "Testing our player's movement"
@@ -16021,12 +15967,12 @@ msgid "image8"
 msgstr "image8"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:417
-#, fuzzy
 msgid ""
 "You can run the scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS) and "
 "press the arrow keys to move the character."
 msgstr ""
-"Start de scène en druk op de knop, de sprite zou moeten starten en stoppen."
+"Je kunt de scène draaien door op :kbd:`F6` (:kbd:`Cmd + R` op macOS) te "
+"drukken en dan de pijltoetsen indrukken om het karakter te bewegen."
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:420
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
@@ -16442,9 +16388,8 @@ msgstr ""
 "je monsters verschijnen in het game-level."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:250
-#, fuzzy
 msgid "Here is the complete ``mob.gd`` script for reference."
-msgstr "Hier is het volledige ``sprite_2d.gd``-bestand ter referentie."
+msgstr "Hier is het volledige ``mob.gd``-bestand ter referentie."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:4
 msgid "Spawning monsters"
@@ -16559,7 +16504,6 @@ msgstr ""
 "Wijs in het *Infopaneel* een *CylinderMesh* toe aan de eigenschap *Mesh*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:58
-#, fuzzy
 msgid ""
 "Set the top viewport to the top orthogonal view using the menu in the "
 "viewport's top-left corner. Alternatively, you can press the keypad's 7 key."
@@ -16663,13 +16607,12 @@ msgid "image12"
 msgstr "image12"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:105
-#, fuzzy
 msgid ""
 "In the *Inspector*, expand the *Material* section and assign "
 "a :ref:`StandardMaterial3D <class_StandardMaterial3D>` to slot *0*."
 msgstr ""
-"Breid in het *Infopaneel* de *Materiaal*-sectie uit en wijs "
-"een :ref:`StandardMaterial3D <class_StandardMaterial3D>` toe aan slot *0*"
+"Breid in het *Infopaneel* de *Materiaal*-sectie uit en wijs een "
+":ref:`StandardMaterial3D <class_StandardMaterial3D>` toe aan slot *0*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:107
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:214
@@ -17036,13 +16979,13 @@ msgid "Here is the complete ``main.gd`` script so far, for reference."
 msgstr "Hier is het volledige ``main.gd``-script tot nu toe, ter referentie."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
-#, fuzzy
 msgid ""
 "You can test the scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS). You "
 "should see the monsters spawn and move in a straight line."
 msgstr ""
-"Speel het spel door op :kbd: `F5`(:kbd:`Cmd + B` op macOS) te drukken. Je "
-"zou een vallende bal moeten zien."
+"Je kunt de scène testen door op :kbd:`F6` (:kbd:`Cmd + R` op macOS) te "
+"drukken. Als het goed is, zie je de monsters verschijnen en bewegen in een "
+"rechte lijn."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
 msgid "|image25|"
@@ -18271,9 +18214,8 @@ msgstr ""
 "afspeelt bij het begin van de game."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:324
-#, fuzzy
 msgid "Save the scene as ``music_player.tscn``."
-msgstr "Sla de scène op als ``MusicPlayer.tscn``."
+msgstr "Sla de scène op als ``music_player.tscn``."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:326
 msgid ""
@@ -18432,9 +18374,8 @@ msgstr ""
 "(|Autoplay|) in de animatiewerkbalk en de luspijltjes."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:641
-#, fuzzy
 msgid "Autoplay"
-msgstr "Automatisch Laden"
+msgstr "Automatisch afspelen"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:51
 msgid ""
@@ -18472,7 +18413,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:70
 msgid "The float animation"
-msgstr "De drijf animatie"
+msgstr "De drijfanimatie"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:72
 msgid ""
@@ -18656,14 +18597,13 @@ msgstr ""
 "*Infopaneel* waar je een eigenschap *Versoepeling* ziet."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:155
-#, fuzzy
 msgid ""
 "Click and drag on the curve, pulling it towards the left. This will make it "
 "ease-out, that is to say, transition fast initially and slow down as the "
 "time cursor reaches the next keyframe."
 msgstr ""
-"Klik en sleep op de curve en trek deze naar links. Dit maakt dat het "
-"uitvloeit, dat wil zeggen, dat het eerst snel overgaat en dan vertraagt "
+"Klik en sleep op de curve en trek deze naar links. Dit maakt dat die "
+"uitvloeit; dat wil zeggen, dat die eerst snel overgaat en dan vertraagt "
 "naarmate de tijdscursor dichter bij het volgende sleutelframe komt."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:161
@@ -18987,13 +18927,12 @@ msgid "Topics"
 msgstr "Onderwerpen"
 
 #: ../../docs/tutorials/best_practices/introduction_best_practices.rst:6
-#, fuzzy
 msgid ""
 "This series is a collection of best practices to help you work efficiently "
 "with Godot."
 msgstr ""
-"Deze reeks is een verzameling van goede gewoontes om jou te helpen efficiënt "
-"met Godot te werken."
+"Deze reeks is een verzameling van goede gewoontes om jou te helpen om "
+"efficiënt met Godot te werken."
 
 #: ../../docs/tutorials/best_practices/introduction_best_practices.rst:9
 msgid ""
@@ -19898,7 +19837,6 @@ msgstr ""
 "overgeërfde transformatie."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:478
-#, fuzzy
 msgid ""
 "If building a networked game, keep in mind which nodes and gameplay systems "
 "are relevant to all players versus those just pertinent to the authoritative "
@@ -19913,7 +19851,7 @@ msgstr ""
 "bijvoorbeeld niet allemaal een kopie te hebben van de \"PlayerController\"-"
 "logica van elke andere speler - ze hebben alleen die van henzelf nodig. Het "
 "kan dus helpen met het beheren van game-connecties en dergelijke om deze in "
-"een aparte tak van de \"wereld\" te houden."
+"een tak gescheiden van de \"wereld\" te houden."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:485
 msgid ""
@@ -20714,7 +20652,6 @@ msgid "Obtaining object references"
 msgstr "Objectreferenties verkrijgen"
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:18
-#, fuzzy
 msgid ""
 "For all :ref:`Objects <class_Object>`, the most basic way of referencing "
 "them is to get a reference to an existing object from another obtained "
@@ -23555,7 +23492,6 @@ msgstr ""
 "spelen:"
 
 #: ../../docs/tutorials/editor/project_manager.rst:11
-#, fuzzy
 msgid ""
 "To change the editor's language click on the **Settings** Button in the top "
 "right corner:"
@@ -23749,7 +23685,6 @@ msgstr ""
 "assetlib>`, zodat je sneller aan de slag kunt."
 
 #: ../../docs/tutorials/editor/project_manager.rst:104
-#, fuzzy
 msgid ""
 "The first time you open this tab you'll notice that it's asking you to go "
 "online. For privacy reasons the project manager, and Godot editor, can't "
@@ -23764,7 +23699,7 @@ msgstr ""
 "**Online gaan** om internettoegang aan te zetten. Hiermee kan de "
 "projectbeheerder je ook informeren over updates. Als je dit later uit wilt "
 "zetten, kan dat in de instellingen van de projectbeheerder; zet "
-"**Netwerkmodus** op \"Offline\""
+"**Netwerkmodus** op \"Offline\"."
 
 #: ../../docs/tutorials/editor/project_manager.rst:110
 msgid ""
@@ -23795,7 +23730,6 @@ msgid "Managing projects with tags"
 msgstr "Projecten beheren met labels"
 
 #: ../../docs/tutorials/editor/project_manager.rst:123
-#, fuzzy
 msgid ""
 "For users with a lot of projects on one PC it can be a lot to keep track of. "
 "To aid in this Godot allows you to create project tags. To add a tag to a "
@@ -23805,7 +23739,7 @@ msgstr ""
 "Voor gebruikers met veel projecten op één computer kan het moeilijk zijn om "
 "het overzicht te bewaren. Hiervoor kun je in Godot projectlabels aanmaken. "
 "Om een label toe te voegen aan een project, klik je op het project in de "
-"projectbeheerder, en dan op de knop **Labels beheren**"
+"projectbeheerder, en dan op de knop **Labels beheren**."
 
 #: ../../docs/tutorials/editor/project_manager.rst:129
 msgid ""
@@ -24688,7 +24622,6 @@ msgid "Script Panel"
 msgstr "Scriptpaneel"
 
 #: ../../docs/tutorials/editor/script_editor.rst:119
-#, fuzzy
 msgid ""
 "Below the menus, on the left panel, you will see a list of opened files and "
 "documentation pages. Depending on the file type, this list will have an icon "
@@ -24706,8 +24639,8 @@ msgstr ""
 "een C#-script is. |documentation| betekent dat het een ingebouwde "
 "klassereferentie is. Tenslotte betekent |toolscript| dat het een script is "
 "dat nu draait. (Zie :ref:`tool-annotatie <doc_running_code_in_the_editor>` "
-"voor meer hierover.) Als je de cursor over een bestand houdt, zie je een "
-"tooltip met de relatieve locatie in de projectmap."
+"voor meer hierover.) Als je de muisaanwijzer over een bestand houdt, zie je "
+"een tooltip met de relatieve locatie in de projectmap."
 
 #: ../../docs/tutorials/editor/script_editor.rst:112
 msgid "script"
@@ -24780,7 +24713,6 @@ msgstr ""
 "bestanden zien."
 
 #: ../../docs/tutorials/editor/script_editor.rst:145
-#, fuzzy
 msgid ""
 "You can drag a file to change the ordering. Middle-clicking on a file closes "
 "it. Right-clicking on a file provides several options to save or close "
@@ -24789,10 +24721,9 @@ msgstr ""
 "Je kunt een bestand slepen om de volgorde aan te passen. Als je met de "
 "middelste muisknop op een bestand drukt, wordt het gesloten. Klikken met de "
 "rechtermuisknop biedt verschillende opties om bestanden op te slaan of te "
-"sluiten, of om het relatieve pad van het bestand te kopiëren. In dit menu:"
+"sluiten, of om het relatieve pad van het bestand te kopiëren."
 
 #: ../../docs/tutorials/editor/script_editor.rst:149
-#, fuzzy
 msgid ""
 "On this menu, you can also use **Move Up** and **Move Down** to change the "
 "order of the file, or use **Sort** to sort all files alphabetically. "
@@ -24801,13 +24732,13 @@ msgid ""
 "reference documents leaving only script files open. **Show in FileSystem** "
 "finds and highlights the file in the FileSystem dock."
 msgstr ""
-"Je kunt ook **Omhoog verplaatsen** en **Omlaag verplaatsen** om de volgorde "
-"van het bestand aan te passen, of **Sorteren** om alle bestanden alfabetisch "
-"te sorteren. **Bestandenpaneel aan-/uitzetten** verbergt het paneel; je kunt "
-"het weer tonen met het pijltje naar rechts in de statusbalk. **Documentatie "
-"sluiten** sluit alle geopende klassereferentiedocumenten, zodat alleen "
-"scriptbestanden open blijven. **In bestandenverkenner weergeven** vindt en "
-"markeert het bestand in het Bestandenverkennerpaneel."
+"In dit menu kun je ook **Omhoog verplaatsen** en **Omlaag verplaatsen** om "
+"de volgorde van het bestand aan te passen, of **Sorteren** om alle bestanden "
+"alfabetisch te sorteren. **Bestandenpaneel aan-/uitzetten** verbergt het "
+"paneel; je kunt het weer tonen met het pijltje naar rechts in de statusbalk. "
+"**Documentatie sluiten** sluit alle geopende klassereferentiedocumenten, "
+"zodat alleen scriptbestanden open blijven. **In bestandenverkenner "
+"weergeven** vindt en markeert het bestand in het Bestandenverkennerpaneel."
 
 #: ../../docs/tutorials/editor/script_editor.rst:156
 msgid ""
@@ -25533,9 +25464,8 @@ msgstr ""
 "voor meer informatie."
 
 #: ../../docs/tutorials/editor/script_editor.rst:369
-#, fuzzy
 msgid "Coding area"
-msgstr "De speler coderen"
+msgstr "Codegebied"
 
 #: ../../docs/tutorials/editor/script_editor.rst:371
 msgid ""
@@ -25732,14 +25662,14 @@ msgstr ""
 "apart venster."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:57
-#, fuzzy
 msgid ""
 "To split the script editor to its own window, right-click the :ui:`Script` "
 "tab in the top-center of the editor and then click :button:`Make Floating` "
 "in the popup menu:"
 msgstr ""
-"Je kunt de scriptbewerker af te splitsen naar een eigen venster door te "
-"klikken op de bijbehorende knop in de rechterbovenhoek van de scriptbewerker:"
+"Om de scripteditor af te splitsen naar een eigen venster, kun je met de "
+"rechtermuisknop klikken op het tabblad :ui:`Script` midden-bovenaan de "
+"editor, en dan klikken op :button:`Zwevend Maken` in het pop-upmenu:"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:60
 #: ../../docs/tutorials/editor/customizing_editor.rst:64
@@ -25747,13 +25677,13 @@ msgid "Splitting the script editor to its own window"
 msgstr "De scriptbewerker afsplitsen naar een eigen venster"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:66
-#, fuzzy
 msgid ""
 "To split the shader editor to its own window, right-click the :ui:`Shader "
 "Editor` tab and then click :button:`Make Floating` in the popup menu:"
 msgstr ""
-"Je kunt de shaderbewerker af te splitsen naar een eigen venster door de "
-"klikken op de bijbehorende knop in de rechterbovenhoek van de scriptbewerker:"
+"Om de shaderbewerker af te splitsen naar een eigen venster, kun je met de "
+"rechtermuisknop klikken op het tabblad :ui:`Shader-bewerker`, en dan klikken "
+"op :button:`Zwevend Maken` in het pop-upmenu:"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:69
 #: ../../docs/tutorials/editor/customizing_editor.rst:73
@@ -26047,9 +25977,8 @@ msgstr ""
 "niet ook crasht."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:14
-#, fuzzy
 msgid "Configuring game embedding"
-msgstr "Het project configureren"
+msgstr "Game-inbedding configureren"
 
 #: ../../docs/tutorials/editor/game_embedding.rst:16
 msgid "Game embedding can be in one of 3 states:"
@@ -26768,9 +26697,8 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:34
 #: ../../docs/tutorials/editor/using_the_android_editor.rst:26
-#, fuzzy
 msgid "Runtime Permissions"
-msgstr "Vereiste Toestemmingen"
+msgstr "Runtime-toestemmingen"
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:36
 #: ../../docs/tutorials/editor/using_the_android_editor.rst:28
@@ -27750,7 +27678,6 @@ msgid "``--``, ``++``"
 msgstr "``--``, ``++``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:67
-#, fuzzy
 msgid ""
 "|release| Separator for user-provided arguments. Following arguments are not "
 "used by the engine, but can be read "
@@ -27758,7 +27685,8 @@ msgid ""
 msgstr ""
 "|release| Scheidingsteken voor eigen argumenten van de gebruiker. Argumenten "
 "die hierop volgen, worden niet gebruikt door de engine, maar kunnen worden "
-"uitgelezen met ``OS.get_cmdline_user_args()``."
+"uitgelezen met :ref:`OS.get_cmdline_user_args()"
+"<class_OS_method_get_cmdline_user_args>`."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:70
 msgid "``-e``, ``--editor``"
@@ -29665,11 +29593,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:100
 msgid "Features that are used in built-in scripts."
-msgstr ""
+msgstr "Functionaliteiten die worden gebruikt in ingebouwde scripts."
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:101
 msgid "Features that are used in C# scripts."
-msgstr ""
+msgstr "Functionaliteiten die worden gebruikt in C#-scripts."
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:102
 msgid ""
@@ -29836,13 +29764,12 @@ msgid "Advantages of upgrading"
 msgstr "Voordelen van upgraden"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:15
-#, fuzzy
 msgid ""
 "Along with the `new features present in 4.0 <https://godotengine.org/article/"
 "godot-4-0-sets-sail>`__, upgrading gives the following advantages:"
 msgstr ""
-"Samen met de `nieuwe functies in versie 4.0 <https://github.com/godotengine/"
-"godot/blob/master/CHANGELOG.md>`__, geeft upgraden de volgende voordelen:"
+"Naast de `nieuwe functies in versie 4.0 <https://godotengine.org/article/"
+"godot-4-0-sets-sail>`__, heeft upgraden de volgende voordelen:"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:19
 msgid ""
@@ -35685,7 +35612,6 @@ msgstr ""
 "cache (`GH-86715`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:271
-#, fuzzy
 msgid ""
 "``AnimationNode`` has a reworked process for retrieving the semantic time "
 "info. This ensures that time-related behavior works as expected, but changes "
@@ -35695,10 +35621,9 @@ msgid ""
 msgstr ""
 "``AnimationNode`` heeft een herontworpen proces voor het ophalen van de "
 "semantische tijdsinformatie. Hierdoor werkt tijdsgerelateerd gedrag zoals "
-"verwacht, maar verandert het menggedrag. Voor wie de virtuele methode "
-"``_process`` heeft geïmplementeerd: let er ook op dat deze methode nu "
-"verouderd is en in de toekomst door een nieuwe zal worden vervangen "
-"(`GH-87171`_)."
+"verwacht, maar verandert het menggedrag. Het is ook goed om te noemen dat de "
+"virtuele methode ``_process`` nu verouderd is en in de toekomst door een "
+"nieuwe zal worden vervangen (`GH-87171`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:275
 msgid ""
@@ -36230,9 +36155,8 @@ msgid "`GH-99455`_"
 msgstr "`GH-99455`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:125
-#, fuzzy
 msgid "**Shader**"
-msgstr "Shaders"
+msgstr "**Shader**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:126
 msgid ""
@@ -36258,9 +36182,8 @@ msgstr ""
 "``texture`` van ``Texture2D`` naar ``Texture``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:128
-#, fuzzy
 msgid "**VisualShaderNodeCubemap**"
-msgstr "VisualShaderNodeClamp"
+msgstr "**VisualShaderNodeCubemap**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:129
 msgid ""
@@ -36270,9 +36193,8 @@ msgstr ""
 "``TextureLayered``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:130
-#, fuzzy
 msgid "**VisualShaderNodeTexture2DArray**"
-msgstr "VisualShaderNodeTextureUniform"
+msgstr "**VisualShaderNodeTexture2DArray**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:131
 msgid ""
@@ -39982,7 +39904,7 @@ msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. For example:"
 msgstr ""
-"Alleen meestal willen we niet dat *alles* in de game of app wordt meegenomen "
+"Meestal willen we echter niet dat *alles* in de game of app wordt meegenomen "
 "in de canvastransformatie. Bijvoorbeeld:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:30
@@ -41402,13 +41324,12 @@ msgstr ""
 "<doc_physics_introduction>` voor meer informatie."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:49
-#, fuzzy
 msgid ""
 "Now select the ``AnimatedSprite2D``, then look for the SpriteFrames panel at "
 "the bottom of the editor:"
 msgstr ""
-"Selecteer de TileMapLayer-knoop, en open dan het TileMap-paneel aan de "
-"onderkant van de editor:"
+"Selecteer nu de ``AnimatedSprite2D``, en open dan het SpriteFrames-paneel "
+"aan de onderkant van de editor:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:53
 msgid ""
@@ -42072,8 +41993,8 @@ msgid ""
 msgstr ""
 "Deze instelling kan worden gebruikt om het partikelsysteem om op een vaste "
 "FPS te laten renderen. Bijvoorbeeld, als de waarde op ``2`` wordt ingesteld, "
-"renderen de partikels op 2 frames per seconde. Let erop dat dit het partikel "
-"systeem zelf niet vertraagt."
+"renderen de partikels op 2 frames per seconde. Let erop dat dit het "
+"partikelsysteem zelf niet vertraagt."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:210
 msgid ""
@@ -42082,11 +42003,15 @@ msgid ""
 "particle simulation is as smooth as possible. For particles with collision "
 "enabled, this can also improve collision reliability."
 msgstr ""
+"Zet deze waarde op ``0`` om partikels ieder gerenderd frame te simuleren. "
+"Dit kan de GPU-eisen verhogen bij een complexe partikelopzet, maar zorgt "
+"ervoor dat de partikelsimulatie zo vloeiend mogelijk is. Voor partikels "
+"waarbij botsing is ingeschakeld, kan dit ook de betrouwbaarheid van de "
+"botsingen verbeteren."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:216
-#, fuzzy
 msgid "Interpolate"
-msgstr "Interpolatie"
+msgstr "Interpoleren"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:218
 msgid ""
@@ -42095,12 +42020,18 @@ msgid ""
 "Only particle motion is interpolated; scale and color curves are currently "
 "not interpolated."
 msgstr ""
+"Indien ingeschakeld, interpoleert het partikelsysteem de positie van "
+"partikels tussen iedere FPS-tik (zie hierboven). Dit zorgt voor een "
+"vloeiender beeld. Alléén partikelbeweging wordt geïnterpoleerd; schaal- en "
+"kleurcurves worden momenteel niet geïnterpoleerd."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:223
 msgid ""
 "This property has no effect if :inspector:`Fixed FPS` is ``0``, as particles "
 "will be simulated every rendered frame."
 msgstr ""
+"Deze eigenschap heeft geen effect as :inspector:`Vaste FPS` ``0`` is, omdat "
+"partikels dan ieder gerenderd frame worden gesimuleerd."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid ""
@@ -42109,19 +42040,22 @@ msgid ""
 "physics interpolation should not be confused with "
 "the :inspector:`Interpolate` property on GPUParticles2D."
 msgstr ""
+"Godot ondersteunt momenteel geen :ref:`physics-interpolatie "
+"<doc_physics_interpolation_introduction>` voor GPUParticles2D. Let erop dat "
+"physics-interpolatie niet moet worden verward met de eigenschap "
+":inspector:`Interpoleren` op GPUParticles2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
-#, fuzzy
 msgid ""
 "As a workaround, disable physics interpolation for the particles node by "
 "setting :menu:`Node > Physics Interpolation > Mode` at the bottom of the "
 "inspector, or convert the node to CPUParticles2D which supports physics "
 "interpolation."
 msgstr ""
-"Godot 4.3 ondersteunt momenteel geen physics-interpolatie voor 2D partikels. "
-"Om dit te omzeilen, kun je physics-interpolatie uitschakelen voor de "
-"partikelknoop door **Node > Physics-interpolatie > Modus** in te stellen aan "
-"de onderkant van het infopaneel."
+"Als oplossing kun je physics-interpolatie uitzetten voor de partikelknoop "
+"door :menu:`Node > Physics-interpolatie > Modus` in te stellen aan de "
+"onderkant van het infopaneel, of de knoop converteren naar CPUParticles2D, "
+"dat wel physics-interpolatie ondersteunt."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:239
 msgid "Fract Delta"
@@ -43060,15 +42994,14 @@ msgstr ""
 "heb je waarschijnlijk een zelfgedefinieerd besturingselement nodig."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
-#, fuzzy
 msgid ""
 "You can find an example of these methods in action in the `Custom Drawing in "
 "2D demo project <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/2d/custom_drawing>`__."
 msgstr ""
-"Naast deze documentatie kun je misschien ook een kijkje nemen bij "
-"verscheidene`Godot demo projects <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Je kunt een voorbeeld van deze methodes in actie zien in het `demoproject "
+"Custom Drawing in 2D <https://github.com/godotengine/godot-demo-projects/"
+"tree/master/2d/custom_drawing>`__."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
 #: ../../docs/tutorials/math/beziers_and_curves.rst:234
@@ -44554,14 +44487,13 @@ msgstr ""
 "aantal ontwerpen."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
-#, fuzzy
 msgid ""
 "We'll use :ref:`class_CharacterBody2D` for these examples, but the "
 "principles will apply to other node types (Area2D, RigidBody2D) as well."
 msgstr ""
-"Voor deze voorbeelden gebruiken we :ref:`CharacterBody2D "
-"<class_CharacterBody2D>`, maar de principes zijn ook van toepassing voor "
-"andere knooptypen (Area2D, RigidBody2D)."
+"Voor deze voorbeelden gebruiken we :ref:`class_CharacterBody2D`, maar de "
+"principes zijn ook van toepassing voor andere knooptypen (Area2D, "
+"RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/animation/2d_skeletons.rst:31
@@ -44587,15 +44519,14 @@ msgstr ""
 "Sprite2D, of een andere 2D afbeelding die je hebt."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
-#, fuzzy
 msgid ""
 "Open :menu:`Project > Project Settings` and select the :button:`Input Map` "
 "tab. Add the following input actions (see :ref:`InputEvent <doc_inputevent>` "
 "for details):"
 msgstr ""
-"Open ``Project -> Project Settings`` en selecteer het tabblad "
-"\"Invoertoewijzing\". Voeg de volgende invoeracties toe "
-"(zie :ref:`InputEvent <doc_inputevent>` voor details):"
+"Open :menu:`Project -> Projectinstellingen` en selecteer het tabblad "
+":button:`Invoertoewijzing`. Voeg de volgende invoeracties toe (zie "
+":ref:`InputEvent <doc_inputevent>` voor details):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
@@ -44619,15 +44550,14 @@ msgstr ""
 "Voeg een script toe aan het CharacterBody en voeg de volgende code toe:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:85
-#, fuzzy
 msgid ""
 "In the ``get_input()`` function, we use :ref:`Input.get_vector() "
 "<class_Input_method_get_vector>` to check for the four key events and sum "
 "return a direction vector."
 msgstr ""
-"In de functie ``get_input()`` gebruiken we ``get_vector()`` van :ref:`Input "
-"<class_Input>` om de gebeurtenissen van de vier toetsen te controleren en "
-"een opgetelde richtingsvector terug te geven."
+"In de functie ``get_input()`` gebruiken we :ref:`Input.get_vector() "
+"<class_Input_method_get_vector>` om de gebeurtenissen van de vier toetsen te "
+"controleren en een opgetelde richtingsvector terug te geven."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:88
 msgid ""
@@ -44708,16 +44638,15 @@ msgstr ""
 "blijft wel hetzelfde."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:220
-#, fuzzy
 msgid ""
 "Here we're using the :ref:`Node2D.look_at() <class_Node2D_method_look_at>` "
 "method to point the player towards the mouse's position. Without this "
 "function, you could get the same effect by setting the angle like this:"
 msgstr ""
-"Hier gebruiken we de methode ``look_at()`` van :ref:`Node2D <class_Node2D>` "
-"om de speler te laten wijzen naar de positie van de muis. Zonder deze "
-"functie zou je hetzelfde effect kunnen verkrijgen door de hoek als volgt in "
-"te stellen:"
+"Hier gebruiken we de methode :ref:`Node2D.look_at() "
+"<class_Node2D_method_look_at>` om de speler te laten wijzen naar de positie "
+"van de muis. Zonder deze functie zou je hetzelfde effect kunnen verkrijgen "
+"door de hoek als volgt in te stellen:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:235
 msgid "Click-and-move"
@@ -48724,7 +48653,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:6
 msgid "Procedural geometry"
-msgstr ""
+msgstr "Procedurele geometrie"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:8
 msgid ""
@@ -48733,16 +48662,23 @@ msgid ""
 "benefits and drawbacks, so it is best to understand each one and how it can "
 "be useful in a given situation."
 msgstr ""
+"Er zijn veel manieren om geometrie procedureel te genereren in Godot. In "
+"deze tutorialreeks bekijken we er een paar. Elke techniek heeft zijn eigen "
+"voordelen en nadelen, dus het is goed om elke techniek te begrijpen, en te "
+"begrijpen hoe die nuttig kan zijn in een gegeven situatie."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:23
 msgid ""
 "All the procedural geometry generation methods described here run on the "
 "CPU. Godot doesn't support generating geometry on the GPU yet."
 msgstr ""
+"Alle methodes voor procedurele geometriegeneratie die hier zijn beschreven, "
+"draaien op de CPU. Godot ondersteunt nog geen generatie van geometrie op de "
+"GPU."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:27
 msgid "What is geometry?"
-msgstr ""
+msgstr "Wat is geometrie?"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:29
 msgid ""
@@ -48750,10 +48686,13 @@ msgid ""
 "typically represented by an array of positions called \"vertices\". In "
 "Godot, geometry is represented by Meshes."
 msgstr ""
+"Geometrie is een duur woord voor vorm. In computergraphics wordt geometrie "
+"meestal beschreven als een lijst van posities die \"vertices\" heten. In "
+"Godot wordt geometrie beschreven door Meshes."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:33
 msgid "What is a Mesh?"
-msgstr ""
+msgstr "Wat is een Mesh?"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:35
 msgid ""
@@ -48764,6 +48703,12 @@ msgid ""
 "<class_MultiMeshInstance3D>`. While they are all related, they have slightly "
 "different uses."
 msgstr ""
+"Er zijn veel dingen in Godot met mesh in de naam: de :ref:`Mesh <class_Mesh>"
+"`, de :ref:`ArrayMesh <class_ArrayMesh>`, de :ref:`ImmediateMesh "
+"<class_ImmediateMesh>`, de :ref:`MeshInstance3D <class_MeshInstance3D>`, de "
+":ref:`MultiMesh <class_MultiMesh>` en de :ref:`MultiMeshInstance3D "
+"<class_MultiMeshInstance3D>`. Hoewel ze allemaal aan elkaar verwant zijn, "
+"worden ze net anders gebruikt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:42
 msgid ""
@@ -48774,6 +48719,13 @@ msgid ""
 "different parts of your scene with different materials or transformations "
 "(scale, rotation, position etc.)."
 msgstr ""
+"Meshes en ArrayMeshes zijn bronnen die worden getekend met een "
+"MeshInstance3D-knoop. Bronnen zoals Meshes en ArrayMeshes kunnen niet direct "
+"aan de scène worden toegevoegd. Een MeshInstance3D staat voor één instantie "
+"van een mesh in je scène. Je kunt één enkele mesh in meerdere "
+"MeshInstance3D's hergebruiken om die in verschillende delen van je scène te "
+"tekenen met verschillende materialen of transformaties (schaal, rotatie, "
+"positie, enz.)."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:48
 msgid ""
@@ -48785,10 +48737,18 @@ msgid ""
 "array to store different colors and transformations for each instance, but "
 "all the instances of each surface use the same material."
 msgstr ""
+"Als je hetzelfde object vele malen gaat tekenen, kan het helpen om een "
+"MultiMesh met een MultiMeshInstance3D te gebruiken. MultiMeshInstance3D's "
+"kunnen meshes erg goedkoop duizenden keren tekenen, door gebruik te maken "
+"van hardware instancing. Het nadeel van een MultiMeshInstance3D is dat elk "
+"oppervlakte van je mesh is beperkt tot één materiaal voor alle instanties. "
+"Het gebruikt een instantie-array om verschillende kleuren en transformaties "
+"voor iedere instantie op te slaan, maar alle instanties van ieder "
+"oppervlakte gebruiken hetzelfde materiaal."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:56
 msgid "What a Mesh is"
-msgstr ""
+msgstr "Wat een Mesh is"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:58
 msgid ""
@@ -48799,10 +48759,16 @@ msgid ""
 "the user can construct a Mesh manually by passing in an array containing the "
 "surface information."
 msgstr ""
+"Een Mesh bestaat uit één of meerdere oppervlaktes. Een oppervlakte is een "
+"array dat bestaat uit meerdere sub-arrays die vertices, normalen, UVs, etc. "
+"bevatten. Normaal wordt het proces om oppervlaktes en meshes te construeren "
+"verborgen voor de gebruiker in de :ref:`RenderingServer "
+"<class_RenderingServer>`, maar met ArrayMeshes kan de gebruiker een Mesh "
+"handmatig opbouwen door een array mee te geven met de oppervlakte-informatie."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:64
 msgid "Surfaces"
-msgstr ""
+msgstr "Oppervlaktes"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:66
 msgid ""
@@ -48811,10 +48777,14 @@ msgid ""
 "the :ref:`material_override "
 "<class_GeometryInstance3D_property_material_override>` property."
 msgstr ""
+"Ieder oppervlakte heeft zijn eigen materiaal. Je kunt eventueel ook het "
+"materiaal voor alle oppervlaktes in de Mesh overschrijven als je een "
+"MeshInstance3D gebruikt, met de eigenschap :ref:`material_override "
+"<class_GeometryInstance3D_property_material_override>`."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:70
 msgid "Surface array"
-msgstr ""
+msgstr "Oppervlakte-array"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:72
 msgid ""
@@ -48824,6 +48794,12 @@ msgid ""
 "a :ref:`PackedVector3Array <class_PackedVector3Array>` of vertex normals. "
 "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>` for more information."
 msgstr ""
+"Het oppervlakte-array is een array van lengte ``ArrayMesh.ARRAY_MAX``. "
+"Iedere positie in het array wordt gevuld door een sub-array die informatie "
+"per vertex bevat. Bijvoorbeeld, het array op positie "
+"``ArrayMesh.ARRAY_NORMAL`` is een :ref:`PackedVector3Array "
+"<class_PackedVector3Array>` van vertexnormalen. Zie :ref:`Mesh.ArrayType "
+"<enum_Mesh_ArrayType>` voor meer informatie."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:77
 msgid ""
@@ -48838,17 +48814,30 @@ msgid ""
 "have to share vertex data between triangles, which is not always desired "
 "(e.g. when you want per-face normals)."
 msgstr ""
+"Het oppervlakte-array kan geïndexeerd of niet geïndexeerd zijn. Een niet "
+"geïndexeerd array maken kan door gewoon geen array toe te wijzen op de index "
+"``ArrayMesh.ARRAY_INDEX``. Een niet geïndexeerd array slaat unieke "
+"vertexinformatie op voor iedere driehoek, wat betekent dat wanneer twee "
+"driehoeken een vertex delen, de vertex wordt gedupliceerd in de array. Een "
+"geïndexeerd oppervlakte-array slaat alleen vertex-informatie op voor iedere "
+"unieke vertex en slaat verder nog een array van indices op, dat toewijst hoe "
+"de driehoeken kunnen worden opgebouwd uit de vertex-array. Over het algemeen "
+"is het sneller om een geïndexeerd array te gebruiken, maar dat betekent wel "
+"dat je vertexdata tussen driehoeken moet delen, wat niet altijd gewenst is "
+"(bijv. als je normalen per vlak wilt)."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:88
 msgid ""
 "Godot provides different ways of accessing and working with geometry. More "
 "information on each will be provided in the following tutorials."
 msgstr ""
+"Godot biedt verschillende manieren om geometrie op te vragen en ermee te "
+"werken. De volgende handleidingen bieden meer informatie over iedere methode."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:92
 #: ../../docs/engine_details/file_formats/tscn.rst:328
 msgid "ArrayMesh"
-msgstr ""
+msgstr "ArrayMesh"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:94
 msgid ""
@@ -48856,48 +48845,61 @@ msgid ""
 "functions and, most importantly, the ability to construct a Mesh surface "
 "through scripting."
 msgstr ""
+"De ArrayMesh-bron is afgeleid van Mesh om een paar verschillende functies "
+"voor gebruiksgemak toe te voegen en, als belangrijkste, de mogelijkheid om "
+"een Mesh-oppervlakte via een script te construeren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:97
 msgid ""
 "For more information about the ArrayMesh, please see the :ref:`ArrayMesh "
 "tutorial <doc_arraymesh>`."
 msgstr ""
+"Voor meer informatie over de ArrayMesh kun je de :ref:`ArrayMesh-handleiding "
+"<doc_arraymesh>` bekijken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:100
 msgid "MeshDataTool"
-msgstr ""
+msgstr "MeshDataTool"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:102
 msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
 "vertices, faces, and edges that can be modified at runtime."
 msgstr ""
+"De MeshDataTool is een bron die Mesh-data converteert naar arrays van "
+"vertices, vlakken en randen die tijdens runtime kunnen worden gewijzigd."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:105
 msgid ""
 "For more information about the MeshDataTool, please see "
 "the :ref:`MeshDataTool tutorial <doc_meshdatatool>`."
 msgstr ""
+"Voor meer informatie over de MeshDataTool kun je de :ref:`MeshDataTool-"
+"handleiding <doc_meshdatatool>` bekijken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:108
 msgid "SurfaceTool"
-msgstr ""
+msgstr "SurfaceTool"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:110
 msgid ""
 "The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate "
 "mode style interface."
 msgstr ""
+"Met de SurfaceTool kun je Meshes maken met een OpenGL 1.x immediate mode-"
+"achtige interface."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:112
 msgid ""
 "For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
 "tutorial <doc_surfacetool>`."
 msgstr ""
+"Voor meer informatie over de SurfaceTool kun je de :ref:`SurfaceTool-"
+"handleiding <doc_surfacetool>` bekijken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:115
 msgid "ImmediateMesh"
-msgstr ""
+msgstr "ImmediateMesh"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:117
 msgid ""
@@ -48907,6 +48909,11 @@ msgid ""
 "while the SurfaceTool is used to generate a Mesh that you can do whatever "
 "you want with."
 msgstr ""
+"ImmediateMesh is een mesh dat een immediate mode-achtige interface gebruikt "
+"(net als SurfaceTool) om objecten te tekenen. Het verschil tussen "
+"ImmediateMesh en de SurfaceTool is dat ImmediateMesh direct met code "
+"dynamisch wordt getekend, terwijl de SurfaceTool wordt gebruikt om een Mesh "
+"te genereren waarmee je alles kunt doen wat je wilt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:123
 msgid ""
@@ -48915,12 +48922,19 @@ msgid ""
 "It is most useful for adding simple geometry for visual debugging (e.g. by "
 "drawing lines to visualize physics raycasts etc.)."
 msgstr ""
+"ImmediateMesh is handig voor prototypes omdat het een ongecompliceerde API "
+"heeft, maar het is traag omdat de geometrie iedere keer dat je een "
+"verandering maakt, opnieuw wordt gebouwd. Het is vooral handig om eenvoudige "
+"geometrie toe te voegen om visueel fouten op te sporen (bijv. door lijnen te "
+"tekenen om physics-raycasts te visualiseren, enz.)."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:128
 msgid ""
 "For more information about ImmediateMesh, please see the :ref:`ImmediateMesh "
 "tutorial <doc_immediatemesh>`."
 msgstr ""
+"Voor meer informatie over ImmediateMesh kun je de :ref:`ImmediateMesh-"
+"handleiding <doc_immediatemesh>` bekijken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:131
 msgid "Which one should I use?"
@@ -48931,12 +48945,16 @@ msgid ""
 "Which approach you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
 msgstr ""
+"Welke aanpak je gebruikt, hangt af van wat je probeert te doen en wat voor "
+"procedure jou goed bevalt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:135
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
 "(meshes) that don't change over time."
 msgstr ""
+"Zowel SurfaceTool als ArrayMesh zijn uitstekend om statische geometrie "
+"(meshes) te genereren, die niet verandert over de tijd."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:137
 msgid ""
@@ -48944,6 +48962,9 @@ msgid ""
 "is a little more challenging. Additionally, SurfaceTool has a few quality of "
 "life methods such as ``generate_normals()`` and ``index()``."
 msgstr ""
+"Het is iets sneller om een ArrayMesh te gebruiken dan een SurfaceTool, maar "
+"de API is wat uitdagender. Verder heeft SurfaceTool een paar methodes voor "
+"gebruiksgemak zoals ``generate_normals()`` en ``index()``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:140
 msgid ""
@@ -48952,6 +48973,10 @@ msgid ""
 "easier interface that can be slightly faster than generating an ArrayMesh "
 "every frame."
 msgstr ""
+"ImmediateMesh is beperkter dan zowel ArrayMesh als SurfaceTool. Alleen als "
+"het toch al nodig is dat de geometrie ieder frame verandert, biedt het een "
+"veel eenvoudigere interface, die iets sneller kan zijn dan ieder frame een "
+"ArrayMesh genereren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:144
 msgid ""
@@ -48962,16 +48987,25 @@ msgid ""
 "not needed. The MeshDataTool is best used if you are going to be using an "
 "algorithm that requires access to the face or edge array."
 msgstr ""
+"De MeshDataTool is niet snel, maar biedt je toegang tot allerlei soorten "
+"eigenschappen van de mesh die je niet krijgt bij de andere opties (randen, "
+"vlakken, enz.). Dit is ongelooflijk handig als je dat soort data nodig hebt "
+"om de mesh te transformeren, maar het is geen goed idee om deze optie te "
+"gebruiken als die extra informatie niet nodig is. Het is het beste om de "
+"MeshDataTool te gebruiken als je een algoritme gaat gebruiken dat het array "
+"van vlakken of randen nodig heeft."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:4
 msgid "Using the ArrayMesh"
-msgstr ""
+msgstr "De ArrayMesh gebruiken"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:6
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`."
 msgstr ""
+"Deze handleiding beschrijft de basis van het gebruik van een :ref:`ArrayMesh "
+"<class_arraymesh>`."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:8
 msgid ""
@@ -48979,6 +49013,10 @@ msgid ""
 "<class_ArrayMesh_method_add_surface_from_arrays>`, which takes up to five "
 "parameters. The first two are required, while the last three are optional."
 msgstr ""
+"Hiervoor gaan we de functie :ref:`add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>` gebruiken, die tot vijf "
+"parameters neemt. De eerste twee zijn verplicht, en de laatste drie zijn "
+"optioneel."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:11
 msgid ""
@@ -48988,6 +49026,11 @@ msgid ""
 "See :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` for the options "
 "available."
 msgstr ""
+"De eerste parameter is het ``PrimitiveType``, een OpenGL-concept dat de GPU "
+"instrueert hoe de primitieve moet worden geschikt op basis van de gegeven "
+"vertices, d.w.z. of ze voor driehoeken, lijnen, punten, enz. staan. Zie "
+":ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` voor de beschikbare "
+"opties."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:15
 msgid ""
@@ -48997,6 +49040,11 @@ msgid ""
 "PackedVector3Array, PackedInt32Array, etc.) for each type of information "
 "that will be used to build the surface."
 msgstr ""
+"De tweede parameter, ``arrays``, is de daadwerkelijke Array die de "
+"meshinformatie bevat. De array is een gewone Godot-array die wordt "
+"geconstrueerd met lege blokhaakjes ``[]``. Het bevat een ``Packed**Array`` "
+"(bijv. PackedVector3Array, PackedInt32Array, enz.) voor elke soort "
+"informatie die wordt gebruikt om het oppervlakte op te bouwen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:19
 msgid ""
@@ -49004,6 +49052,9 @@ msgid ""
 "they must have within ``arrays``. See :ref:`Mesh.ArrayType "
 "<enum_Mesh_ArrayType>` for a full list."
 msgstr ""
+"Veelgebruikte elementen van ``arrays`` worden hieronder opgenoemd, samen met "
+"de positie die ze moeten hebben binnen ``arrays``. Zie :ref:`Mesh.ArrayType "
+"<enum_Mesh_ArrayType>` voor een volledige lijst."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:327
@@ -49012,25 +49063,27 @@ msgstr "Index"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:30
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType-Enum"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:31
 msgid "Array type"
-msgstr "Array type"
+msgstr "Array-type"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:34
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:35
 msgid ""
 ":ref:`PackedVector3Array <class_PackedVector3Array>` "
 "or :ref:`PackedVector2Array <class_PackedVector2Array>`"
 msgstr ""
+":ref:`PackedVector3Array <class_PackedVector3Array>` of "
+":ref:`PackedVector2Array <class_PackedVector2Array>`"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:38
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:39
 msgid ":ref:`PackedVector3Array <class_PackedVector3Array>`"
@@ -49038,7 +49091,7 @@ msgstr ":ref:`PackedVector3Array <class_PackedVector3Array>`"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:42
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:43
 msgid ""
@@ -49047,10 +49100,14 @@ msgid ""
 "floats. The first 3 floats determine the tangent, and the last float the "
 "binormal direction as -1 or 1."
 msgstr ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>` of "
+":ref:`PackedFloat64Array <class_PackedFloat64Array>` van groepen van 4 "
+"floats. De eerste 3 floats geven de tangens aan, en de laatste float de "
+"binormale richting als -1 of 1."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:47
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:48
 msgid ":ref:`PackedColorArray <class_PackedColorArray>`"
@@ -49152,11 +49209,11 @@ msgstr ":ref:`PackedColorArray <class_PackedColorArray>`"
 #: ../../docs/tutorials/io/binary_serialization_api.rst:608
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:513
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:51
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:52
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:56
@@ -49164,26 +49221,28 @@ msgid ""
 ":ref:`PackedVector2Array <class_PackedVector2Array>` "
 "or :ref:`PackedVector3Array <class_PackedVector3Array>`"
 msgstr ""
+":ref:`PackedVector2Array <class_PackedVector2Array>` of "
+":ref:`PackedVector3Array <class_PackedVector3Array>`"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:54
 #: ../../docs/tutorials/io/binary_serialization_api.rst:57
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:515
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:55
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:58
 #: ../../docs/tutorials/io/binary_serialization_api.rst:67
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:525
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:59
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:60
 msgid ""
@@ -49191,16 +49250,20 @@ msgid ""
 "or :ref:`PackedInt32Array <class_PackedInt32Array>` of groups of 4 ints. "
 "Each group lists indexes of 4 bones that affects a given vertex."
 msgstr ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>` van groepen van 4 "
+"floats of :ref:`PackedInt32Array <class_PackedInt32Array>` van groepen van 4 "
+"ints. Iedere groep geeft indices van 4 botten die een gegeven vertex "
+"beïnvloeden."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:62
 #: ../../docs/tutorials/io/binary_serialization_api.rst:69
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:527
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:63
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:64
 msgid ""
@@ -49209,6 +49272,10 @@ msgid ""
 "floats. Each float lists the amount of weight the corresponding bone in "
 "``ARRAY_BONES`` has on a given vertex."
 msgstr ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>` of "
+":ref:`PackedFloat64Array <class_PackedFloat64Array>` van groepen van 4 "
+"floats. Iedere float geeft de hoeveelheid gewicht die het bijbehorende bot "
+"in ``ARRAY_BONES`` heeft op een gegeven vertex."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:66
 #: ../../docs/tutorials/io/binary_serialization_api.rst:71
@@ -49222,11 +49289,11 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:322
 #: ../../docs/tutorials/io/binary_serialization_api.rst:353
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:67
 msgid "``ARRAY_INDEX``"
-msgstr ""
+msgstr "``ARRAY_INDEX``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:68
 msgid ":ref:`PackedInt32Array <class_PackedInt32Array>`"
@@ -49240,6 +49307,12 @@ msgid ""
 "also possible to create a mesh with only the index array and no vertex "
 "array, but that's beyond the scope of this tutorial."
 msgstr ""
+"In de meeste gevallen dat we een mesh maken, definiëren we die door de "
+"vertexposities. Dus meestal is de array van vertices (op index 0) verplicht, "
+"terwijl de index-array (op index 12) optioneel is en alleen wordt gebruikt "
+"als die is meegegeven. Het is ook mogelijk om een mesh met alleen de index-"
+"array en géén vertex-array te maken, maar dat gaat buiten het bereik van "
+"deze handleiding."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:73
 msgid ""
@@ -49250,6 +49323,13 @@ msgid ""
 "(e.g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These "
 "must be exactly four times larger than the vertex array."
 msgstr ""
+"Alle andere arrays bevatten informatie over de vertices. Ze zijn optioneel "
+"en worden alleen gebruikt als ze worden meegegeven. Sommige van deze arrays "
+"(bijv. ``ARRAY_COLOR``) gebruiken één element per vertex om extra informatie "
+"over vertices te geven. Ze moeten dus dezelfde grootte als de vertex-array "
+"hebben. Andere arrays (bijv. ``ARRAY_TANGENT``) gebruiken vier elementen om "
+"één vertex te beschrijven. Deze moeten dus exact vier keer zo groot als de "
+"vertex-array zijn."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:77
 msgid ""
@@ -49257,10 +49337,13 @@ msgid ""
 "in :ref:`add_surface_from_arrays() "
 "<class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
 msgstr ""
+"Bij normaal gebruik worden de laatste drie parameters in "
+":ref:`add_surface_from_arrays() "
+"<class_arraymesh_method_add_surface_from_arrays>` meestal leeg gelaten."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:80
 msgid "Setting up the ArrayMesh"
-msgstr "ArrayMesh opstellen"
+msgstr "De ArrayMesh opstellen"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:82
 msgid ""
@@ -49269,14 +49352,19 @@ msgid ""
 "adding an ArrayMesh in the editor is not useful, but in this case it allows "
 "us to access the ArrayMesh from code without creating one."
 msgstr ""
+"Maak in de editor een :ref:`MeshInstance3D <class_meshinstance3d>` aan en "
+"voeg er een :ref:`ArrayMesh <class_arraymesh>` aan toe in het infopaneel. "
+"Normaal is het niet nuttig om een ArrayMesh toe te voegen in de editor, maar "
+"in dit geval kunnen we de ArrayMesh aanspreken uit code zonder er een aan te "
+"maken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:86
 msgid "Next, add a script to the MeshInstance3D."
-msgstr ""
+msgstr "Voeg vervolgens een script toe aan de MeshInstance3D."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:88
 msgid "Under ``_ready()``, create a new Array."
-msgstr ""
+msgstr "Maak onder ``_ready()`` een nieuwe Array aan."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:99
 msgid ""
@@ -49284,10 +49372,15 @@ msgid ""
 "hold all the arrays of data that the surface needs. Godot will expect it to "
 "be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
 msgstr ""
+"Dit wordt de array waarin we onze oppervlakte-informatie bewaren - het zal "
+"alle arrays van data bevatten die het oppervlakte nodig heeft. Godot zal "
+"verwachten dat het de grootte ``Mesh.ARRAY_MAX`` heeft, dus pas de grootte "
+"naar behoren aan."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:114
 msgid "Next create the arrays for each data type you will use."
 msgstr ""
+"Maak vervolgens de arrays aan voor ieder datatype dat je gaat gebruiken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:131
 msgid ""
@@ -49295,33 +49388,41 @@ msgid ""
 "mesh by adding each array to ``surface_array`` and then committing to the "
 "mesh."
 msgstr ""
+"Als je je data-arrays hebt gevuld met je geometrie, kun je een mesh aanmaken "
+"door iedere array toe te voegen aan ``surface_array`` en dan aan de mesh toe "
+"te wijzen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:159
 msgid ""
 "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any "
 "primitive type available from mesh."
 msgstr ""
+"In dit voorbeeld hebben we ``Mesh.PRIMITIVE_TRIANGLES`` gebruikt, maar je "
+"kunt ieder type primitieve uit mesh gebruiken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:162
 msgid "Put together, the full code looks like:"
-msgstr ""
+msgstr "Samengebracht ziet de volledige code er zo uit:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:229
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code for generating shapes, starting with a rectangle."
 msgstr ""
+"De code in het midden kan alles zijn wat je wilt. Hieronder geven we wat "
+"voorbeelden om vormen te genereren, beginnend met een rechthoek."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:233
-#, fuzzy
 msgid "Generating a rectangle"
-msgstr "Een boom maken"
+msgstr "Een rechthoek genereren"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:235
 msgid ""
 "Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
 "a rectangle with triangles."
 msgstr ""
+"Omdat we ``Mesh.PRIMITIVE_TRIANGLES`` gebruiken om te renderen, gaan we een "
+"rechthoek construeren met driehoeken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:238
 msgid ""
@@ -49329,16 +49430,21 @@ msgid ""
 "example, we will create a rectangle with its top left point at ``(0, 0, 0)`` "
 "with a width and length of one as shown below:"
 msgstr ""
+"Een rechthoek wordt gevormd door twee driehoeken die vier vertices delen. "
+"Voor ons voorbeeld maken we een rechthoek waarbij de linkerbovenhoek op ``"
+"(0, 0, 0)`` ligt, met een breedte en lengte van één, zoals hieronder getoond:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:241
 msgid "A rectangle made of two triangles sharing four vertices."
-msgstr ""
+msgstr "Een rechthoek bestaande uit twee driehoeken die vier vertices delen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:245
 msgid ""
 "To draw this rectangle, define the coordinates of each vertex in the "
 "``verts`` array."
 msgstr ""
+"Om deze rechthoek te tekenen, definieer je de coördinaten van elke vertex in "
+"de ``verts``-array."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:267
 msgid ""
@@ -49346,6 +49452,9 @@ msgid ""
 "mesh. The values range from 0 to 1. Depending on your texture, you may want "
 "to change these values."
 msgstr ""
+"Met de ``uvs``-array kunnen we beschrijven welke delen van een texture waar "
+"op de mesh moeten vallen. De waarden lopen van 0 tot 1. Afhankelijk van je "
+"texture wil je deze waarden misschien nog aanpassen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:290
 msgid ""
@@ -49353,6 +49462,9 @@ msgid ""
 "and is used in lighting calculations. For this example, we will default to "
 "the ``Vector3.UP`` direction."
 msgstr ""
+"De ``normals``-array wordt gebruikt om de richting te beschrijven waarin de "
+"vertices wijzen, en wordt gebruikt in berekeningen voor belichting. Voor dit "
+"voorbeeld vallen we terug op de richting ``Vector3.UP``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:314
 msgid ""
@@ -49360,6 +49472,10 @@ msgid ""
 "a *clockwise* direction, meaning that we must specify the vertices of a "
 "triangle we want to draw in clockwise order."
 msgstr ""
+"De ``indices``-array definieert de volgorde waarin vertices worden getekend. "
+"Godot rendert in de richting *met de klok mee*, wat betekent dat we de "
+"vertices van een driehoek die we willen tekenen, met de klok mee moeten "
+"specificeren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:318
 msgid ""
@@ -49369,71 +49485,75 @@ msgid ""
 "2, and 1, in the ``verts`` array. These index values are what the "
 "``indices`` array defines."
 msgstr ""
+"Bijvoorbeeld, om de eerste driehoek te tekenen, willen de vertices ``(0, 0, "
+"0)``, ``(1, 0, 0)`` en ``(0, 0, 1)`` tekenen in die volgorde. Dit is "
+"hetzelfde als het tekenen van ``vert[0]``, ``vert[2]`` en ``vert[1]``, "
+"d.w.z. indices 0, 2 en 1, in de ``verts``-array. Deze indexwaarden zijn wat "
+"de ``indices``-array definieert."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:328
 msgid "``verts[Index]``"
-msgstr ""
+msgstr "``verts[Index]``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:329
 msgid "``uvs[Index]``"
-msgstr ""
+msgstr "``uvs[Index]``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:330
 msgid "``normals[Index]``"
-msgstr ""
+msgstr "``normals[Index]``"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:333
 msgid "(0, 0, 0)"
-msgstr ""
+msgstr "(0, 0, 0)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:334
 msgid "(0, 0)"
-msgstr ""
+msgstr "(0, 0)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:335
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:340
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:345
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:350
-#, fuzzy
 msgid "Vector3.UP"
-msgstr "Vector"
+msgstr "Vector3.UP"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:338
 msgid "(0, 0, 1)"
-msgstr ""
+msgstr "(0, 0, 1)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:339
 msgid "(1, 0)"
-msgstr ""
+msgstr "(1, 0)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:343
 msgid "(1, 0, 0)"
-msgstr ""
+msgstr "(1, 0, 0)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:344
 msgid "(0, 1)"
-msgstr ""
+msgstr "(0, 1)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:348
 msgid "(1, 0, 1)"
-msgstr ""
+msgstr "(1, 0, 1)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:349
 msgid "(1, 1)"
-msgstr ""
+msgstr "(1, 1)"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:368
 msgid "Put together, the rectangle generation code looks like:"
-msgstr ""
+msgstr "Samengebracht ziet de code om een rechthoek te genereren er zo uit:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:451
 msgid "For a more complex example, see the sphere generation section below."
 msgstr ""
+"Voor een complexer voorbeeld, zie de sectie over bolgeneratie hieronder."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:454
-#, fuzzy
 msgid "Generating a sphere"
-msgstr "Aan de slag"
+msgstr "Een bol genereren"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:456
 msgid ""
@@ -49444,10 +49564,16 @@ msgid ""
 "are having trouble understanding it or want to learn more about procedural "
 "geometry in general, you can use any tutorial that you find online."
 msgstr ""
+"Hier is voorbeeldcode om een bol te genereren. Hoewel de code wordt "
+"gepresenteerd in GDScript, is er niets Godot-specifieks aan de aanpak om het "
+"te genereren. Deze implementatie is niet speciaal voor ArrayMeshes en is "
+"gewoon een algemene aanpak om een bol te genereren. Als je moeite hebt om "
+"het voorbeeld te begrijpen of meer wilt leren over procedurele geometrie in "
+"het algemeen, kun je iedere handleiding gebruiken die je online kunt vinden."
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:571
 msgid "Saving"
-msgstr ""
+msgstr "Opslaan"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:573
 msgid ""
@@ -49455,10 +49581,13 @@ msgid ""
 "save the ArrayMesh. This is useful when you want to generate a mesh and then "
 "use it later without having to re-generate it."
 msgstr ""
+"Tenslotte kunnen we de klasse :ref:`ResourceSaver <class_resourcesaver>` "
+"gebruiken om de ArrayMesh op te slaan. Dit is nuttig als je een mesh wilt "
+"genereren en dan later gebruiken, zonder die opnieuw te hoeven genereren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:4
 msgid "Using the MeshDataTool"
-msgstr ""
+msgstr "De MeshDataTool gebruiken"
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:6
 msgid ""
@@ -49466,6 +49595,10 @@ msgid ""
 "geometry. But it is helpful for dynamically altering geometry, for example "
 "if you want to write a script to tessellate, simplify, or deform meshes."
 msgstr ""
+"De :ref:`MeshDataTool <class_meshdatatool>` wordt niet gebruikt om geometrie "
+"te genereren, maar is handig om dynamisch geometrie aan te passen, "
+"bijvoorbeeld als je een script wilt schrijven om meshes te betegelen, "
+"vereenvoudigen of vervormen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:9
 msgid ""
@@ -49477,12 +49610,21 @@ msgid ""
 "algorithms. If you do not need this extra information then it may be better "
 "to use an ArrayMesh."
 msgstr ""
+"De MeshDataTool is niet zo snel als het direct aanpassen van arrays met "
+":ref:`ArrayMesh <class_arraymesh>`. Wel biedt het meer informatie en "
+"gereedschap om met meshes te werken dan de ArrayMesh. Wanneer de "
+"MeshDataTool wordt gebruikt, berekent het meshdata die niet beschikbaar is "
+"in ArrayMeshes, zoals vlakken en randen, die nodig zijn voor bepaalde mesh-"
+"algoritmes. Als je deze extra informatie niet nodig hebt, dan kan het beter "
+"zijn om een ArrayMesh te gebruiken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:14
 msgid ""
 "MeshDataTool can only be used on Meshes that use the PrimitiveType "
 "``Mesh.PRIMITIVE_TRIANGLES``."
 msgstr ""
+"MeshDataTool kan alleen worden gebruikt op Meshes die het PrimitiveType "
+"``Mesh.PRIMITIVE_TRIANGLES`` gebruiken."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:16
 msgid ""
@@ -49493,6 +49635,12 @@ msgid ""
 "clear it for you. Alternatively, you can call :ref:`clear() "
 "<class_meshdatatool_method_clear>` yourself before reusing the MeshDataTool."
 msgstr ""
+"We initialiseren de MeshDataTool uit een ArrayMesh door "
+":ref:`create_from_surface() <class_meshdatatool_method_create_from_surface>` "
+"aan te roepen. Als er al data is geïnitialiseerd in de MeshDataTool, wist "
+"het aanroepen van ``create_from_surface()`` die voor je. Je kunt eventueel "
+"ook zelf :ref:`clear() <class_meshdatatool_method_clear>` aanroepen voordat "
+"je de MeshDataTool hergebruikt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:19
 msgid ""
@@ -49500,6 +49648,9 @@ msgid ""
 "created. See :ref:`ArrayMesh tutorial <doc_arraymesh>` for an example of "
 "mesh generation."
 msgstr ""
+"In de voorbeelden hieronder nemen we aan dat er al een ArrayMesh genaamd "
+"``mesh`` is aangemaakt. Zie de :ref:`ArrayMesh-handleiding <doc_arraymesh>` "
+"voor een voorbeeld van meshgeneratie."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:32
 msgid ""
@@ -49507,6 +49658,9 @@ msgid ""
 "calculate two additional arrays, one for edges and one for faces, for a "
 "total of three arrays."
 msgstr ""
+"``create_from_surface()`` gebruikt de vertex-arrays van de ArrayMesh om twee "
+"extra arrays te berekenen, één voor randen en één voor vlakken, dus in "
+"totaal drie arrays."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:35
 msgid ""
@@ -49514,6 +49668,9 @@ msgid ""
 "array contains a reference to the two vertices it is composed of, and up to "
 "two faces that it is contained within."
 msgstr ""
+"Een rand is een verbinding tussen twee vertices. Iedere rand in de randen-"
+"array bevat een referentie naar de twee vertices waaruit die bestaat, en "
+"maximaal twee vlakken die de rand bevatten."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:38
 msgid ""
@@ -49521,24 +49678,34 @@ msgid ""
 "edges. Each face in the face array contains a reference to the three "
 "vertices and three edges it is composed of."
 msgstr ""
+"Een vlak is een driehoek die bestaat uit drie vertices en drie bijbehorende "
+"randen. Ieder vlak in het vlakken-array bevat een referentie naar de drie "
+"vertices en de drie randen waar die uit bestaat."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:41
 msgid ""
 "The vertex array contains edge, face, normal, color, tangent, uv, uv2, bone, "
 "and weight information connected with each vertex."
 msgstr ""
+"De vertex-array bevat informatie over de randen, vlakken, normalen, kleur, "
+"tangens, uv, uv2, botten en gewichten die zijn verbonden aan iedere vertex."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:44
 msgid ""
 "To access information from these arrays you use a function of the form "
 "``get_****()``:"
 msgstr ""
+"Om informatie uit deze arrays op te halen, gebruik je een functie van de "
+"vorm ``get_****()``:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:61
 msgid ""
 "What you choose to do with these functions is up to you. A common use case "
 "is to iterate over all vertices and transform them in some way:"
 msgstr ""
+"Wat je doet met deze functies is aan jou. Een veelgebruikte toepassing is om "
+"te itereren over alle vertices en ze op de een of andere manier te "
+"transformeren:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:81
 msgid ""
@@ -49547,6 +49714,10 @@ msgid ""
 "surface before adding a new one using :ref:`commit_to_surface() "
 "<class_meshdatatool_method_commit_to_surface>`:"
 msgstr ""
+"Deze wijzigingen worden niet in-place uitgevoerd op de ArrayMesh. Als je een "
+"bestaande ArrayMesh dynamisch updatet, verwijder dan eerst het bestaande "
+"oppervlakte voordat je een nieuwe toevoegt met :ref:`commit_to_surface() "
+"<class_meshdatatool_method_commit_to_surface>`:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:95
 msgid ""
@@ -49555,10 +49726,14 @@ msgid ""
 "See :ref:`ArrayMesh tutorial <doc_arraymesh>` for how to generate the base "
 "mesh."
 msgstr ""
+"Hieronder is een volledig voorbeeld dat een bolvormige mesh genaamd ``mesh`` "
+"verandert naar een willekeurig vervormde blob, met bijgewerkte normalen en "
+"vertexkleuren. Zie :ref:`ArrayMesh-handleiding <doc_arraymesh>` voor hoe je "
+"de basismesh kunt genereren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:4
 msgid "Using the SurfaceTool"
-msgstr ""
+msgstr "De SurfaceTool gebruiken"
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:6
 msgid ""
@@ -49567,16 +49742,23 @@ msgid ""
 "<class_ImmediateMesh>` class. You set each per-vertex attribute (e.g. "
 "normal, uv, color) and then when you add a vertex it captures the attributes."
 msgstr ""
+"De :ref:`SurfaceTool <class_surfacetool>` biedt een handige interface om "
+"geometrie te construeren. De interface lijkt op de :ref:`ImmediateMesh "
+"<class_ImmediateMesh>`-klasse. Je stelt ieder vertex-gebonden attribuut in "
+"(bijv. normaal, uv, kleur) en als je dan een vertex toevoegt, worden de "
+"attributen vastgelegd."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:11
 msgid ""
 "The SurfaceTool also provides some useful helper functions like ``index()`` "
 "and ``generate_normals()``."
 msgstr ""
+"De SurfaceTool biedt ook een paar nuttige hulpfuncties zoals ``index()`` en "
+"``generate_normals()``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:13
 msgid "Attributes are added before each vertex is added:"
-msgstr ""
+msgstr "Attributen worden toegevoegd vóór iedere vertex wordt toegevoegd:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:36
 msgid ""
@@ -49586,10 +49768,16 @@ msgid ""
 "appends a new surface to the end of the ArrayMesh. While if nothing is "
 "passed in, ``commit()`` returns an ArrayMesh."
 msgstr ""
+"Als je klaar bent met het genereren van je geometrie met de "
+":ref:`SurfaceTool <class_surfacetool>`, roep je ``commit()`` aan om het "
+"genereren van de mesh te voltooien. Als er een :ref:`ArrayMesh "
+"<class_ArrayMesh>` wordt meegegeven aan ``commit()``, wordt er een nieuw "
+"oppervlakte toegevoegd achteraan de ArrayMesh. Als er niets wordt "
+"meegegeven, geeft ``commit()`` een ArrayMesh terug."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:58
 msgid "The code below creates a triangle without indices."
-msgstr ""
+msgstr "De code hieronder maakt een driehoek zonder indices."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:107
 msgid ""
@@ -49598,6 +49786,10 @@ msgid ""
 "which generates the index array automatically and shrinks the vertex array "
 "to remove duplicate vertices."
 msgstr ""
+"Je kunt eventueel een index-array toevoegen. Dat kan ofwel door ``add_index()"
+"`` aan te roepen en handmatig indices toe te voegen aan de array, of door "
+"``index()`` één keer aan te roepen, wat de index-array automatisch genereert "
+"en de vertex-array inkrimpt om gedupliceerde vertices te verwijderen."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:175
 msgid ""
@@ -49605,6 +49797,9 @@ msgid ""
 "(e.g. because you want to use unique normals or colors per face instead of "
 "per-vertex), you can call ``deindex()``."
 msgstr ""
+"Vergelijkbaar daarmee kun je ``deindex()`` aanroepen als je een index-array "
+"hebt, maar wilt dat iedere vertex uniek is (bijv. omdat je unieke normalen "
+"of kleuren per vlak wilt gebruiken in plaats van per vertex)."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:187
 msgid ""
@@ -49615,6 +49810,12 @@ msgid ""
 "side note, ``generate_normals()`` only works if the primitive type is set to "
 "``Mesh.PRIMITIVE_TRIANGLES``."
 msgstr ""
+"Als je zelf geen normalen definieert, kun je ze toevoegen met "
+"``generate_normals()``. Dit moet worden aangeroepen nadat de geometrie is "
+"gegenereerd, en voordat de mesh wordt vastgelegd met ``commit()`` of "
+"``commit_to_arrays()``. Als je ``generate_normals(true)`` aanroept, worden "
+"de normalen omgekeerd. Terzijde, ``generate_normals()`` werkt alleen als het "
+"primitievetype is ingesteld op ``Mesh.PRIMITIVE_TRIANGLES``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:192
 msgid ""
@@ -49625,6 +49826,12 @@ msgid ""
 "``generate_tangents()``. This method requires that each vertex have UVs and "
 "normals set already."
 msgstr ""
+"Je merkt misschien dat normaaltoewijzing of andere materiaaleigenschappen er "
+"verkeerd uitzien op de gegenereerde mesh. Dit komt doordat normaaltoewijzing "
+"**vereist** dat de mesh *tangenten* bevat, die gescheiden zijn van "
+"*normalen*. Je kunt ofwel handmatig tangenten toevoegen, of ze automatisch "
+"genereren met ``generate_tangents()``. Deze methode vereist dat er voor "
+"iedere vertex al UV's en normalen zijn ingesteld."
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:212
 msgid ""
@@ -49635,6 +49842,12 @@ msgid ""
 "``add_smooth_group()`` needs to be called while building the geometry, e.g. "
 "before the call to ``add_vertex()``."
 msgstr ""
+"Als je normalen genereert, worden ze standaard berekend per vertex (d.w.z. "
+"het worden \"vloeiende normalen\"). Als je platte vertexnormalen wilt "
+"(d.w.z. één enkele normaalvector per vlak), roep dan ``add_smooth_group(i)`` "
+"aan terwijl je vertices toevoegt, waarbij ``i`` een uniek getal per vertex "
+"is. ``add_smooth_group()`` moet worden aangeroepen tijdens het bouwen van de "
+"geometrie, bijv. vóór de aanroep naar ``add_vertex()``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:4
 msgid "Using ImmediateMesh"
@@ -49647,6 +49860,10 @@ msgid ""
 "approachable to use and efficient for meshes which need to be updated every "
 "frame."
 msgstr ""
+"De :ref:`ImmediateMesh <class_ImmediateMesh>` is een handig gereedschap om "
+"dynamische geometrie te maken met een OpenGL 1.x-achtige API. Hierdoor is "
+"het zowel toegankelijk om te gebruiken en efficiënt voor meshes die ieder "
+"frame moeten worden bijgewerkt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:10
 msgid ""
@@ -49654,12 +49871,19 @@ msgid ""
 "inefficient, even if it's done only once. Instead, it is designed to "
 "generate simple geometry that changes every frame."
 msgstr ""
+"Complexe geometrie genereren (duizenden vertices) met deze tool is "
+"inefficiënt, ook als het maar één keer wordt gedaan. In plaats daarvan is de "
+"tool ontworpen om eenvoudige geometrie te genereren die ieder frame "
+"verandert."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:13
 msgid ""
 "First, you need to create a :ref:`MeshInstance3D <class_meshinstance3d>` and "
 "add an :ref:`ImmediateMesh <class_ImmediateMesh>` to it in the Inspector."
 msgstr ""
+"Als eerste moet je een :ref:`MeshInstance3D <class_meshinstance3d>` aanmaken "
+"en er een :ref:`ImmediateMesh <class_ImmediateMesh>` aan toevoegen in het "
+"Infopaneel."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:16
 msgid ""
@@ -49670,6 +49894,12 @@ msgid ""
 "just as efficient as any other kind of mesh as the generated mesh is cached "
 "and reused."
 msgstr ""
+"Voeg vervolgens een script toe aan de MeshInstance3D. De code voor de "
+"ImmediateMesh moet in de ``_process()``-functie komen als je die ieder frame "
+"wilt bijwerken, of in de ``_ready()`` functie als je de mesh één keer wilt "
+"aanmaken en niet bijwerken. Als je een oppervlakte maar één keer genereert, "
+"is de ImmediateMesh net zo efficiënt als iedere andere soort mesh, omdat de "
+"gegenereerde mesh wordt gecachet en hergebruikt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:22
 msgid ""
@@ -49679,6 +49909,12 @@ msgid ""
 "the vertices given whether it is triangles, lines, points, etc. A complete "
 "list can be found under the :ref:`Mesh <class_mesh>` class reference page."
 msgstr ""
+"Om te beginnen met het genereren van geometrie moet je ``surface_begin()`` "
+"aanroepen. ``surface_begin()`` neemt een ``PrimitiveType`` als argument. "
+"``PrimitiveType`` vertelt de GPU hoe de primitieve moet worden geschikt op "
+"basis van de vertices, door aan te geven of het driehoeken, lijnen, punten, "
+"enz. zijn. Een volledige lijst is beschikbaar in de klassereferentiepagina "
+":ref:`Mesh <class_mesh>`."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:28
 msgid ""
@@ -49688,6 +49924,11 @@ msgid ""
 "``surface_set_normal()``). Then you call ``surface_add_vertex()`` to add a "
 "vertex with those attributes. For example:"
 msgstr ""
+"Zodra je ``surface_begin()`` hebt aangeroepen, ben je klaar om vertices toe "
+"te gaan voegen. Je voegt vertices één voor één toe. Eerst voeg je vertex-"
+"specifieke attributen toe, zoals normalen of UV's, met ``surface_set_****()"
+"`` (bijv. ``surface_set_normal()``). Dan roep je ``surface_add_vertex()`` "
+"aan om een vertex met die attributen toe te voegen. Bijvoorbeeld:"
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:42
 msgid ""
@@ -49695,6 +49936,10 @@ msgid ""
 "included in that vertex. If you add an attribute twice before calling "
 "``surface_add_vertex()``, only the second call will be used."
 msgstr ""
+"Alleen attributen die worden toegevoegd vóór de aanroep aan "
+"``surface_add_vertex()`` worden meegenomen in die vertex. Als je een "
+"attribuut twee keer toevoegt voordat je ``surface_add_vertex()`` aanroept, "
+"wordt alleen de tweede aanroep gebruikt."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:46
 msgid ""
@@ -49703,11 +49948,17 @@ msgid ""
 "``surface_begin()`` and ``surface_end()`` multiple times to generate "
 "multiple surfaces for the mesh."
 msgstr ""
+"Als je tenslotte al je vertices hebt toegevoegd, roep je ``surface_end()`` "
+"aan om te signaleren dat je klaar bent met het genereren van het "
+"oppervlakte. Je kunt ``surface_begin()`` en ``surface_end()`` meerdere keren "
+"aanroepen om meerdere oppervlaktes voor de mesh te genereren."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:50
 msgid ""
 "The example code below draws a single triangle in the ``_ready()`` function."
 msgstr ""
+"De voorbeeldcode hieronder tekent een enkele driehoek in de ``_ready()``-"
+"functie."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:78
 msgid ""
@@ -49716,15 +49967,22 @@ msgid ""
 "the ImmediateMesh. If you want to recreate the mesh from scratch each frame, "
 "call ``clear_surfaces()`` before calling ``surface_begin()``."
 msgstr ""
+"De ImmediateMesh kan ook frameoverstijgend worden gebruikt. Iedere keer dat "
+"je ``surface_begin()`` en ``surface_end()`` aanroept, voeg je een nieuw "
+"oppervlakte toe aan de ImmediateMesh. Als je de mesh ieder frame opnieuw uit "
+"het niets wilt aanmaken, roep dan ``clear_surfaces()`` aan voordat je "
+"``surface_begin()`` aanroept."
 
 #: ../../docs/tutorials/3d/procedural_geometry/immediatemesh.rst:101
 msgid ""
 "The above code will dynamically create and draw a single surface each frame."
 msgstr ""
+"De code hierboven maakt en tekent ieder frame dynamisch één enkel "
+"oppervlakte."
 
 #: ../../docs/tutorials/3d/3d_text.rst:4
 msgid "3D text"
-msgstr ""
+msgstr "3D tekst"
 
 #: ../../docs/tutorials/3d/3d_text.rst:9
 msgid ""
@@ -49732,6 +49990,10 @@ msgid ""
 "3D scene and not just in the HUD. Godot provides 2 methods to do this: the "
 "Label3D node and the TextMesh *resource* for a MeshInstance3D node."
 msgstr ""
+"In een project kan het voorkomen dat tekst moet worden aangemaakt als "
+"onderdeel van een 3D scène en niet alleen in de HUD. Godot biedt 2 methoden "
+"om dit te doen: de Label3D-knoop en de TextMesh-*bron* voor een "
+"MeshInstance3D-knoop."
 
 #: ../../docs/tutorials/3d/3d_text.rst:13
 msgid ""
@@ -49740,6 +50002,10 @@ msgid ""
 "\"true\" 3D text in situations where Label3D and TextMesh aren't flexible "
 "enough."
 msgstr ""
+"Verder maakt Godot het mogelijk om Control-knopen te positioneren op basis "
+"van de positie van een 3D punt op de camera. Dit kan worden gebruikt als een "
+"alternatief voor \"echte\" 3D tekst in situaties waar Label3D en TextMesh "
+"niet flexibel genoeg zijn."
 
 #: ../../docs/tutorials/3d/3d_text.rst:19
 msgid ""
@@ -49747,9 +50013,9 @@ msgid ""
 "<https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
 "labels_and_texts>`__."
 msgstr ""
-"Als voorbeeld voor de 3D tekst kan je kijken naar het `3D Labels en Teksten "
-"demo project <https://github.com/godotengine/godot-demo-projects/tree/master/"
-"3d/labels_and_texts>`__."
+"Je kunt 3D tekst in actie zien in het `demoproject 3D Labels en Teksten "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
+"labels_and_texts>`__."
 
 #: ../../docs/tutorials/3d/3d_text.rst:22
 msgid ""
@@ -49758,10 +50024,10 @@ msgid ""
 "<https://github.com/godotengine/godot-demo-projects/tree/master/viewport/"
 "gui_in_3d>`__ demo project."
 msgstr ""
-"Deze pagina vertelt **niet** hoe je een GUI scène met een 3D omgeving laat "
-"zien. Informatie hiervoor vind je in het `GUI in 3D <https://github.com/"
-"godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d>`__ demo "
-"project."
+"Deze pagina vertelt **niet** hoe je een GUI-scène binnen een 3D omgeving "
+"laat zien. Informatie hiervoor vind je in het demoproject `GUI in 3D "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/viewport/"
+"gui_in_3d>`__."
 
 #: ../../docs/tutorials/3d/3d_text.rst:28
 msgid "Label3D"
@@ -49775,13 +50041,18 @@ msgid ""
 "nodes (including support for :abbr:`MSDF (Multi-channel Signed Distance "
 "Font)` font rendering)."
 msgstr ""
+"Label3D gedraagt zich als een Label-knoop, maar in 3D ruimte. Anders dan de "
+"Label-knoop erft de Label3D-knoop **geen** eigenschappen over van een GUI-"
+"thema. Het uiterlijk is wel nog steeds aanpasbaar en gebruikt dezelfde sub-"
+"bron voor lettertypes als Control-knopen (inclusief ondersteuning voor "
+":abbr:`MSDF (Multi-channel Signed Distance Font)`-renderen van lettertypes)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:39
 #: ../../docs/tutorials/3d/3d_text.rst:97
 #: ../../docs/tutorials/3d/3d_text.rst:136
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:19
 msgid "Advantages"
-msgstr ""
+msgstr "Voordelen"
 
 #: ../../docs/tutorials/3d/3d_text.rst:41
 msgid ""
@@ -49790,6 +50061,11 @@ msgid ""
 "(re)generate, especially for long text. This can avoid stuttering during "
 "gameplay on low-end CPUs or mobile."
 msgstr ""
+"Label3D is sneller om te genereren dan TextMesh. Hoewel beide een "
+"cachemechanisme gebruiken om nieuwe glyphs maar één keer te renderen, is "
+"Label3D nog steeds sneller om te (her)genereren, vooral voor lange tekst. "
+"Dit kan haperen tijdens gameplay voorkomen op laagwaardige CPU's of mobiele "
+"toestellen."
 
 #: ../../docs/tutorials/3d/3d_text.rst:45
 msgid ""
@@ -49798,11 +50074,18 @@ msgid ""
 "flexible on that aspect compared to TextMesh, especially for rendering fonts "
 "with self-intersecting outlines or colored fonts (emoji)."
 msgstr ""
+"Label3D kan bitmap-lettertypen en dynamische lettertypen (met of zonder "
+":abbr:`MSDF (Multi-channel Signed Distance Font)` of mipmaps) gebruiken. Dit "
+"maakt het flexibeler in dat aspect vergeleken met TextMesh, vooral voor het "
+"renderen van lettertypes met zelf-kruisende omlijningen of gekleurde "
+"lettertypen (emoji)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:52
 msgid ""
 "See :ref:`doc_gui_using_fonts` for guidelines on configuring font imports."
 msgstr ""
+"Zie :ref:`doc_gui_using_fonts` voor richtlijnen over het configureren van "
+"het importeren van lettertypes."
 
 #: ../../docs/tutorials/3d/3d_text.rst:57
 msgid ""
@@ -49815,6 +50098,15 @@ msgid ""
 "issues can also become apparent when several Label3Ds overlap, especially if "
 "they have outlines."
 msgstr ""
+"Standaard heeft Label3D beperkte interactie met een 3D omgeving. Het kan "
+"worden bedekt door geometrie en belicht door lichtbronnen als de optie "
+"**Geschaduwd** is ingeschakeld. Het werpt echter geen schaduwen, ook niet "
+"als **Schaduw Werpen** op **Aan** is ingesteld in de GeometryInstance3D-"
+"eigenschappen van het Label3D. Dit is omdat de knoop intern een quadmesh "
+"genereert (één glyph per quad) met transparante textures en dezelfde "
+"beperkingen heeft als Sprite3D. Er kunnen ook problemen met "
+"transparantiesortering optreden als verschillende Label3D's overlappen, "
+"vooral als ze omlijningen hebben."
 
 #: ../../docs/tutorials/3d/3d_text.rst:65
 msgid ""
@@ -49823,6 +50115,11 @@ msgid ""
 "transparency mode can preserve text smoothness while allowing the Label3D to "
 "cast shadows, but some transparency sorting issues will remain."
 msgstr ""
+"Dit kan worden gemitigeerd door de transparantiemodus van het Label3D in te "
+"stellen op **Alpha Cut**, ten koste van minder vloeiend tekst renderen. De "
+"transparantiemodus **Opaque Pre-Pass** kan de vloeiendheid van de tekst "
+"behouden en tegelijk het Label3D schaduwen laten werpen, maar er blijven nog "
+"wel problemen met transparantiesortering."
 
 #: ../../docs/tutorials/3d/3d_text.rst:70
 msgid ""
@@ -49830,6 +50127,9 @@ msgid ""
 "<doc_3d_rendering_limitations_transparency_sorting>` section in the 3D "
 "rendering limitations page for more information."
 msgstr ""
+"Zie de sectie :ref:`Transparantiesortering "
+"<doc_3d_rendering_limitations_transparency_sorting>` in de pagina over 3D-"
+"renderbeperkingen voor meer informatie."
 
 #: ../../docs/tutorials/3d/3d_text.rst:73
 msgid ""
@@ -49838,6 +50138,10 @@ msgid ""
 "font <doc_using_fonts_mipmaps>` or :ref:`switch the font to use MSDF "
 "rendering <doc_using_fonts_msdf>`."
 msgstr ""
+"De renderkwaliteit van tekst kan ook verminderen als het Label3D van een "
+"afstand wordt bekeken. Om de renderkwaliteit van de tekst te verbeteren, kun "
+"je :ref:`mipmaps inschakelen op het lettertype <doc_using_fonts_mipmaps>` of "
+":ref:`het lettertype omschakelen naar MSDF-renderen <doc_using_fonts_msdf>`."
 
 #: ../../docs/tutorials/3d/3d_text.rst:78
 msgid "TextMesh"
@@ -49853,38 +50157,55 @@ msgid ""
 "environment. A TextMesh can also have a material applied to it (including "
 "custom shaders)."
 msgstr ""
+"De TextMesh-bron heeft overeenkomsten met Label3D. Ze geven allebei tekst "
+"weer in een 3D scène, en gebruiken dezelfde lettertype-subbron. Alleen in "
+"plaats van transparante quads te genereren, genereert TextMesh 3D geometrie "
+"die de contouren van de glyphs voorstelt en de eigenschappen van een mesh "
+"heeft. Hierdoor is een TextMesh standaard geschaduwd en werpt die "
+"automatisch schaduwen op zijn omgeving. Een TextMesh kan ook een materiaal "
+"toegewezen krijgen (inclusief zelfgedefinieerde shaders)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:89
 msgid ""
 "Here is an example of a texture and how it's applied to the mesh. You can "
 "use the texture below as a reference for the generated mesh's UV map:"
 msgstr ""
+"Hier is een voorbeeld van een texture en hoe die wordt toegepast op de mesh. "
+"Je kunt de texture hieronder als referentie gebruiken voor de gegenereerde "
+"UV-kaart van de mesh:"
 
 #: ../../docs/tutorials/3d/3d_text.rst:99
 msgid "TextMesh has a few advantages over Label3D:"
-msgstr ""
+msgstr "TextMesh heeft een paar voordelen ten opzichte van Label3D:"
 
 #: ../../docs/tutorials/3d/3d_text.rst:101
 msgid "TextMesh can use a texture to modify text color on a per-side basis."
 msgstr ""
+"TextMesh kan een texture gebruiken om tekstkleur per zijde aan te passen."
 
 #: ../../docs/tutorials/3d/3d_text.rst:102
 msgid "TextMesh geometry can have actual depth to it, giving glyphs a 3D look."
 msgstr ""
+"TextMesh-geometrie kan daadwerkelijke diepte hebben, om glyphs een 3D "
+"uiterlijk te geven."
 
 #: ../../docs/tutorials/3d/3d_text.rst:103
 msgid "TextMesh can use custom shaders, unlike Label3D."
 msgstr ""
+"TextMesh kan zelfgedefinieerde shaders gebruiken, in tegenstelling tot "
+"Label3D."
 
 #: ../../docs/tutorials/3d/3d_text.rst:108
 msgid "There are some limitations to TextMesh:"
-msgstr "Er zijn enkele limitaties voor TextMesh:"
+msgstr "Er zijn enkele beperkingen aan TextMesh:"
 
 #: ../../docs/tutorials/3d/3d_text.rst:110
 msgid ""
 "No built-in outline support, unlike Label3D. This can be simulated using "
 "custom shaders though."
 msgstr ""
+"Geen ingebouwde ondersteuning voor omlijningen, in tegenstelling tot "
+"Label3D. Dit kan wel worden gesimuleerd met zelfgedefinieerde shaders."
 
 #: ../../docs/tutorials/3d/3d_text.rst:112
 msgid ""
@@ -49892,6 +50213,9 @@ msgid ""
 "``.woff2``). Bitmap fonts in the ``.fnt`` or ``.font`` formats are **not** "
 "supported."
 msgstr ""
+"Alleen dynamische lettertypes worden ondersteund (``.ttf``, ``.otf``, "
+"``.woff``, ``.woff2``). Bitmap-lettertypes in de formaten ``.fnt`` of "
+"``.font`` worden **niet** ondersteund."
 
 #: ../../docs/tutorials/3d/3d_text.rst:114
 msgid ""
@@ -49900,6 +50224,10 @@ msgid ""
 "Fonts, try downloading the font from the font author's official website "
 "instead."
 msgstr ""
+"Lettertypes met zelf-kruisende omlijningen zullen niet correct renderen. Als "
+"je renderproblemen ziet op lettertypes die je hebt gedownload van websites "
+"zoals Google Fonts, probeer dan om het lettertype in plaats daarvan te "
+"downloaden van de officiële website van de maker."
 
 #: ../../docs/tutorials/3d/3d_text.rst:118
 msgid ""
@@ -49908,10 +50236,15 @@ msgid ""
 "antialiasing method is enabled, text will appear grainy, especially at a "
 "distance. See :ref:`doc_3d_antialiasing` for more information."
 msgstr ""
+"Om anti-alias te gebruiken bij het renderen van de tekst, moet een anti-"
+"aliasmethode voor de volledige scène worden ingeschakeld, zoals MSAA, FXAA "
+"of temporal anti-aliasing (TAA). Als er geen anti-aliasmethode is "
+"ingeschakeld, ziet de tekst er korrelig uit, vooral van een afstand. Zie "
+":ref:`doc_3d_antialiasing` voor meer informatie."
 
 #: ../../docs/tutorials/3d/3d_text.rst:124
 msgid "Projected Label node (or any other Control)"
-msgstr ""
+msgstr "Geprojecteerde Label-knoop (of een andere Control)"
 
 #: ../../docs/tutorials/3d/3d_text.rst:126
 msgid ""
@@ -49922,6 +50255,13 @@ msgid ""
 "method on a Camera3D node in a script's ``_process()`` function. This return "
 "value should then be used to set the ``position`` property of a Control node."
 msgstr ""
+"Er is nog een laatste oplossing die complexer is om op te zetten, maar de "
+"meeste flexibiliteit biedt: een 2D-knoop projecteren in 3D ruimte. Dit kan "
+"worden bereikt met de waarde die wordt teruggegeven door de methode "
+":ref:`unproject_position<class_Camera3D_method_unproject_position>` op een "
+"Camera3D-knoop in de ``_process()`` functie van een script. Deze "
+"teruggegeven waarde moet dan worden gebruikt om de ``position``-eigenschap "
+"van een Control-knoop in te stellen."
 
 #: ../../docs/tutorials/3d/3d_text.rst:132
 msgid ""
@@ -49929,13 +50269,16 @@ msgid ""
 "tree/master/3d/waypoints>`__ demo for an example of this."
 msgstr ""
 "Bekijk de `3D waypoints <https://github.com/godotengine/godot-demo-projects/"
-"tree/master/3d/waypoints>`__ demo als voorbeeld hiervoor."
+"tree/master/3d/waypoints>`__-demo als voorbeeld hiervoor."
 
 #: ../../docs/tutorials/3d/3d_text.rst:138
 msgid ""
 "Any Control node can be used, including Label, RichTextLabel or even nodes "
 "such as Button. This allows for powerful formatting and GUI interaction."
 msgstr ""
+"Iedere Control-knoop kan worden gebruikt, inclusief Label, RichTextLabel, of "
+"zelfs knopen zoals Button. Hiermee is krachtige vormgeving en GUI-interactie "
+"mogelijk."
 
 #: ../../docs/tutorials/3d/3d_text.rst:140
 msgid ""
@@ -49943,12 +50286,18 @@ msgid ""
 "example, this makes it considerably easier to pin Controls to the screen's "
 "edges when they go off-screen (for in-game 3D markers)."
 msgstr ""
+"De script-gebaseerde methode biedt volledige vrijheid in positionering. Dit "
+"maakt het bijvoorbeeld veel makkelijker om Controls vast te zetten op de "
+"randen van het scherm als ze buiten het scherm vallen (voor 3D-markeringen "
+"binnen de game)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:143
 msgid ""
 "Control theming is obeyed. This allows for easier customization that "
 "globally applies to the project."
 msgstr ""
+"Thema's voor Controls worden gevolgd. Dit maakt het makkelijker om "
+"aanpassingen te maken die globaal op het project worden toegepast."
 
 #: ../../docs/tutorials/3d/3d_text.rst:149
 msgid ""
@@ -49957,6 +50306,10 @@ msgid ""
 "collider, but this doesn't allow for partially hiding the control behind a "
 "wall."
 msgstr ""
+"Geprojecteerde Controls kunnen op geen enkele manier worden bedekt door 3D "
+"geometrie. Je kunt een RayCast gebruiken om de control volledig te verbergen "
+"als de doelpositie wordt verborgen door een botser, maar het is hiermee niet "
+"mogelijk om de Control gedeeltelijk te verbergen achter een muur."
 
 #: ../../docs/tutorials/3d/3d_text.rst:153
 msgid ""
@@ -49965,16 +50318,23 @@ msgid ""
 "and TextMesh automatically take care of this, at the cost of less "
 "flexibility (can't set a minimum/maximum text size in pixels)."
 msgstr ""
+"Het is mogelijk om de tekstgrootte aan te passen op basis van de afstand "
+"door de ``scale``-eigenschap van de Control bij te stellen, maar dit moet "
+"handmatig worden gedaan. Label3D en TextMesh zorgen hier automatisch voor, "
+"ten koste van flexibiliteit (kan geen minimale/maximale tekstgrootte in "
+"pixels instellen)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:157
 msgid ""
 "Handling resolution and aspect ratio changes must be taken into account in "
 "the script, which can be challenging."
 msgstr ""
+"Het script moet rekening houden met het afhandelen van veranderingen in "
+"resolutie en hoogte-breedteverhouding, wat uitdagend kan zijn."
 
 #: ../../docs/tutorials/3d/3d_text.rst:161
 msgid "Should I use Label3D, TextMesh or a projected Control?"
-msgstr ""
+msgstr "Moet ik Label3D, TextMesh of een geprojecteerde Control gebruiken?"
 
 #: ../../docs/tutorials/3d/3d_text.rst:163
 msgid ""
@@ -49982,6 +50342,9 @@ msgid ""
 "provides higher rendering quality (especially if 3D antialiasing is "
 "disabled)."
 msgstr ""
+"In de meeste gevallen is Label3D aangeraden, omdat het makkelijker is om op "
+"te zetten en hogere renderkwaliteit biedt (vooral als 3D-anti-alias is "
+"uitgeschakeld)."
 
 #: ../../docs/tutorials/3d/3d_text.rst:166
 msgid ""
@@ -49991,16 +50354,23 @@ msgid ""
 "3D geometry, the text can optionally have depth to it and can also "
 "contribute to global illumination."
 msgstr ""
+"Voor geavanceerde gevallen is TextMesh flexibeler omdat de tekst kan worden "
+"opgemaakt met zelfgedefinieerde shaders. Met zelfgedefinieerde shaders kan "
+"ook de uiteindelijke geometrie aangepast worden, bijvoorbeeld om de tekst te "
+"laten buigen langs een oppervlakte. Omdat de tekst echte 3D geometrie is, "
+"kan die optioneel diepte hebben en ook bijdragen aan globale belichting."
 
 #: ../../docs/tutorials/3d/3d_text.rst:172
 msgid ""
 "If you need features such as BBCode or Control theming support, then using a "
 "projected RichTextLabel node is the only way to go."
 msgstr ""
+"Als je functionaliteiten zoals BBCode of ondersteuning voor Control-thema's "
+"nodig hebt, dan kan dat alleen door een RichTextLabel-knoop te projecteren."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:4
 msgid "3D rendering limitations"
-msgstr ""
+msgstr "3D-renderbeperkingen"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:9
 msgid ""
@@ -50008,10 +50378,13 @@ msgid ""
 "limitations. Godot's renderer is no exception. To work effectively with "
 "those limitations, you need to understand them."
 msgstr ""
+"Omdat ze gericht zijn op prestaties, hebben real-time render-engines veel "
+"beperkingen. Daar is de renderer van Godot geen uitzondering op. Om "
+"effectief met deze beperkingen om te gaan, moet je ze begrijpen."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:14
 msgid "Texture size limits"
-msgstr ""
+msgstr "Beperkingen aan texturegrootte"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:16
 msgid ""
@@ -50019,6 +50392,9 @@ msgid ""
 "on older devices. You can check your target GPU's limitations on "
 "`GPUinfo.org <https://www.gpuinfo.org/>`__."
 msgstr ""
+"Op desktops en laptops zijn textures groter dan 8192×8192 niet altijd "
+"ondersteund op oudere apparaten. Je kunt de beperkingen van je doel-GPU "
+"bekijken op `GPUinfo.org <https://www.gpuinfo.org/>`__."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:20
 msgid ""
@@ -50028,6 +50404,12 @@ msgid ""
 "avoid using textures larger than 4096×4096 and use a power of two size if "
 "the texture needs to repeat."
 msgstr ""
+"Mobiele GPU's zijn meestal beperkt tot textures van 4096×4096. Verder hebben "
+"sommige mobiele GPU's geen ondersteuning voor het herhalen van textures "
+"waarvan de grootte geen macht van twee is. Dus als je wilt dat je texture op "
+"alle platformen goed wordt weergegeven, moet je textures groter dan "
+"4096x4096 vermijden en een macht van twee als grootte gebruiken als de "
+"textures moeten herhalen."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:26
 msgid ""
@@ -50036,10 +50418,15 @@ msgid ""
 "``0``. This will reduce the texture's dimensions on import (preserving "
 "aspect ratio) without affecting the source file."
 msgstr ""
+"Om de grootte van een specifieke texture die misschien te groot is om te "
+"renderen, in te perken, kun je de importeeroptie **Verwerken > "
+"Groottelimiet** instellen op een waarde groter dan ``0``. Hiermee worden de "
+"dimensies van de texture bij het importeren verkleind (maar de hoogte-"
+"breedteverhouding behouden) zonder het bronbestand aan te passen."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:34
 msgid "Color banding"
-msgstr ""
+msgstr "Color banding"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:36
 msgid ""
@@ -50050,6 +50437,11 @@ msgid ""
 "precision is also lower when using the Mobile rendering method compared to "
 "Forward+."
 msgstr ""
+"Bij gebruik van de Forward+- of Mobile-rendermethode rendert de 3D-engine "
+"van Godot intern in HDR. Alleen wordt de gerenderde uitvoer meestal "
+"geschreven naar een lagere precisiebuffer. Dit kan zorgen voor zichtbare "
+"banden, vooral bij materialen zonder texture. Om prestatieredenen is "
+"kleurprecisie ook lager bij de Mobile-rendermethode vergelijken met Forward+."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:43
 msgid ""
@@ -50058,10 +50450,14 @@ msgid ""
 "also applies to 2D rendering, where banding may be visible when using smooth "
 "gradient textures."
 msgstr ""
+"Bij gebruik van de Compatibility-rendermethode wordt er intern geen HDR-"
+"renderen gebruikt en is de kleurprecisie het laagste van alle "
+"rendermethoden. Dit is ook van toepassing op 2D-renderen, waar banden "
+"zichtbaar kunnen zijn bij vloeiende gradiënttextures."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:47
 msgid "There are two main ways to alleviate banding:"
-msgstr ""
+msgstr "Er zijn twee gebruikelijke manieren om banden te verminderen:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid ""
@@ -50071,6 +50467,11 @@ msgid ""
 "applies a fullscreen debanding shader as a post-processing effect and is "
 "very cheap."
 msgstr ""
+"Als je de Forward+- of Forward Mobile-rendermethode gebruikt, kun je "
+":ref:`Debanding Gebruiken<class_ProjectSettings_property_rendering/"
+"anti_aliasing/quality/use_debanding>` inschakelen in **Projectinstellingen > "
+"Renderen > Anti-alias**. Dit past een debanding-shader over het volledige "
+"scherm toe als een nabewerkingseffect en is erg goedkoop."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:53
 msgid ""
@@ -50081,11 +50482,19 @@ msgid ""
 "your project is rendered with low color precision, which means it will work "
 "when using the Mobile and Compatibility rendering methods."
 msgstr ""
+"De andere optie is om wat ruis te bakken in je textures. Dit is vooral "
+"effectief in 2D, bijv. voor vigneteffecten. In 3D kun je ook een "
+"`zelfgedefinieerde debandingshader <https://github.com/fractilegames/godot-"
+"gles2-debanding-material>`__ gebruiken om toe te passen op je *materialen*. "
+"Deze techniek werkt ook als je project wordt gerenderd met lage "
+"kleurprecisie, wat betekent dat het ook werkt bij de Mobile- en "
+"Compatibility-rendermethoden."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:60
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:64
 msgid "Color banding comparison (contrast increased for more visibility)"
 msgstr ""
+"Vergelijking color banding (contrast verhoogd voor betere zichtbaarheid)"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:68
 msgid ""
@@ -50093,10 +50502,13 @@ msgid ""
 "banding_in_games.pdf>`__ for more details about banding and ways to combat "
 "it."
 msgstr ""
+"Zie `Banding in Games: A Noisy Rant (PDF) <https://loopit.dk/"
+"banding_in_games.pdf>`__ voor meer details over banding en manieren om het "
+"tegen te gaan."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:72
 msgid "Depth buffer precision"
-msgstr ""
+msgstr "Dieptebufferprecisie"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:74
 msgid ""
@@ -50107,6 +50519,12 @@ msgid ""
 "occur. This will materialize as textures flickering back and forth as the "
 "camera moves or rotates."
 msgstr ""
+"Om objecten te sorteren in 3D ruimte maken render-engines gebruik van een "
+"*dieptebuffer* (ook wel *Z-buffer* genoemd). Deze buffer heeft een beperkte "
+"precisie: 32-bit op desktop-platformen, 24-bit op mobiele platformen (om "
+"prestatieredenen). Als twee verschillende objecten op dezelfde bufferwaarde "
+"uitkomen, dan ontstaat er Z-competitie. Dit manifesteert zich als textures "
+"die heen en weer flikkeren als de camera beweegt of roteert."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:81
 msgid ""
@@ -78062,6 +78480,7 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_macos.rst:218
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
+"Geeft lees- of schrijftoegang tot de map 'Afbeeldingen' van de gebruiker."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:220
 msgid "Files Music [7]_"
@@ -87567,7 +87986,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:787
 msgid "Newari"
-msgstr ""
+msgstr "Newari"
 
 #: ../../docs/tutorials/i18n/locales.rst:789
 msgid "nhn"
@@ -102602,6 +103021,9 @@ msgid ""
 "need more power, and the ability to profile the Godot engine source code "
 "itself."
 msgstr ""
+"Hoewel de Godot IDE profiler erg handig en nuttig is, heb je soms meer "
+"kracht nodig, evenals de mogelijkheid om de broncode van de Godot engine "
+"zelf te profilen."
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:57
 msgid ""
@@ -125259,7 +125681,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:545
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:263
 msgid "Don't use spaces to align expressions vertically:"
-msgstr ""
+msgstr "Gebruik spaties niet om expressies verticaal uit te lijnen:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:554
 msgid "Quotes"
@@ -135907,7 +136329,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:98
 msgid "``const``: the method does not change any data in the class instance."
-msgstr ""
+msgstr "``const``: de methode wijzigt geen gegevens in de klasse instantie."
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:99
 msgid ""
@@ -142944,8 +143366,9 @@ msgid "**Texture3D**"
 msgstr "**Functionaliteiten:**"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1276
+#, fuzzy
 msgid "**Cubemap**"
-msgstr ""
+msgstr "**Cubemap**"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1276
 #, fuzzy
@@ -151382,7 +151805,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:42
 msgid "**collision_use_scale**"
-msgstr ""
+msgstr "**collision_use_scale**"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:42
 msgid "Scale the particle's size for collisions."
@@ -156196,6 +156619,8 @@ msgstr ":ref:`Constructive Solid Geometry (CSG) hulpmiddelen <doc_csg_tools>`"
 #: ../../docs/tutorials/ui/index.rst:33
 msgid "The following pages explain the basics of using such controls."
 msgstr ""
+"De volgende pagina's leggen de basis uit van het gebruik van dergelijke "
+"bedieningselementen."
 
 #: ../../docs/tutorials/ui/index.rst:46
 msgid "GUI skinning and themes"
@@ -157349,8 +157774,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:248
+#, fuzzy
 msgid "Beyond controls"
-msgstr ""
+msgstr "Buiten controle-knopen"
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:250
 msgid ""
@@ -188007,17 +188433,22 @@ msgid ""
 "and upload a paid version to another website, such as itch. However, the "
 "free version **must not** include pop-up ads for the paid version."
 msgstr ""
+"Ja, het is toegestaan om een gratis versie van je plug-in te uploaden van de "
+"Asset winkel, en een betaalde versie te uploaden bij een andere website, "
+"zoals itch. De gratis versie mag echter **geen** pop-upadvertenties voor de "
+"betaalde versie bevatten."
 
 #: ../../docs/community/channels.rst:4
-#, fuzzy
 msgid "Community channels"
-msgstr "Gemeenschap"
+msgstr "Gemeenschappelijke kanalen"
 
 #: ../../docs/community/channels.rst:6
 msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Dus, waar kan je de Godot community vinden en waar kan je terecht voor "
+"vragen en hulp?"
 
 #: ../../docs/community/channels.rst:8
 #, fuzzy
@@ -188031,17 +188462,19 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:12
 msgid "Language-based communities"
-msgstr ""
+msgstr "Taal gebaseerde gemeenschappen"
 
 #: ../../docs/community/channels.rst:14
 msgid ""
 "See the `User groups <https://godotengine.org/community/user-groups>`_ page "
 "of the website for a list of local communities."
 msgstr ""
+"Zie de `Gebruikers groepen <https://godotengine.org/community/user-groups>`_ "
+"pagina van de website voor een lijst met lokale gemeenschappen."
 
 #: ../../docs/community/tutorials.rst:4
 msgid "Tutorials and resources"
-msgstr ""
+msgstr "Handleidingen en hulpbronnen"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""
@@ -188050,6 +188483,10 @@ msgid ""
 "Store <https://store.godotengine.org/>`_ full of official and community "
 "resources too!"
 msgstr ""
+"Dit is een lijst van externe handleidingen en hulpbronnen gemaakt door de "
+"Godot gemeenschap. Wat betreft bronnen: vergeet niet dat er een officiële "
+"`Godot Asset Store <https://store.godotengine.org/>`_ is, die boordevol "
+"officiële en door de community gemaakte bronnen staat!"
 
 #: ../../docs/community/tutorials.rst:11
 msgid ""
@@ -188068,6 +188505,9 @@ msgid ""
 "UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_ are well-regarded in the community and "
 "often recommended as a gentle introduction to beginners."
 msgstr ""
+"De videohandleidingen over Godot van `GDQuest <https://www.youtube.com/"
+"channel/UCxboW7x0jZqFdvMdCFKTMsQ/playlists>` genieten hoog aanzien in de "
+"gemeenschap en worden vaak aangeraden als introductie voor beginners."
 
 #: ../../docs/community/tutorials.rst:18
 msgid ""
@@ -188077,6 +188517,11 @@ msgid ""
 "learn-godot-gdscript>`__  or `in the browser <https://gdquest.github.io/"
 "learn-gdscript>`__."
 msgstr ""
+"*Learn GDScript from Zero* van GDQuest is een vrij verkrijgbare interactieve "
+"beginnershandleiding om te leren programmeren met de GDScript-"
+"programmeertaal. Ze is als `desktop-applicatie <https://gdquest.itch.io/"
+"learn-godot-gdscript>`__  en `in de webbrowser <https://gdquest.github.io/"
+"learn-gdscript>`__ beschikbaar."
 
 #: ../../docs/community/tutorials.rst:20
 msgid ""
@@ -188086,7 +188531,7 @@ msgstr ""
 
 #: ../../docs/community/tutorials.rst:23
 msgid "Video tutorials"
-msgstr ""
+msgstr "Videohandleidingen"
 
 #: ../../docs/community/tutorials.rst:25
 msgid ""
@@ -188102,26 +188547,30 @@ msgstr "Handleidingen"
 
 #: ../../docs/community/tutorials.rst:31
 msgid "`Catlike Coding by Jasper Flick <https://catlikecoding.com/godot/>`__"
-msgstr ""
+msgstr "`Catlike Coding door Jasper Flick <https://catlikecoding.com/godot/>`__"
 
 #: ../../docs/community/tutorials.rst:32
 msgid "`GDScript website by Andrew Wilkes <https://gdscript.com>`__"
-msgstr ""
+msgstr "`GDScript website door Andrew Wilkes <https://gdscript.com>`__"
 
 #: ../../docs/community/tutorials.rst:33
 msgid ""
 "`Godot Recipes by KidsCanCode <https://kidscancode.org/godot_recipes/4.x/>`__"
 msgstr ""
+"`Godot Recipes door KidsCanCode <https://kidscancode.org/godot_recipes/4.x/>"
+"`__"
 
 #: ../../docs/community/tutorials.rst:34
 msgid ""
 "`GameDev Academy by Zenva <https://gamedevacademy.org/category/godot-"
 "tutorials/godot-4/>`__"
 msgstr ""
+"`GameDev Academy door Zenva <https://gamedevacademy.org/category/godot-"
+"tutorials/godot-4/>`__"
 
 #: ../../docs/community/tutorials.rst:35
 msgid "`Game Dev Artisan website <https://gamedevartisan.com/>`__"
-msgstr ""
+msgstr "`Game Dev Artisan website <https://gamedevartisan.com/>`__"
 
 #: ../../docs/community/tutorials.rst:40
 msgid ""

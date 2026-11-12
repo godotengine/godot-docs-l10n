@@ -312,7 +312,7 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-11-04 00:07+0100\n"
-"PO-Revision-Date: 2026-11-03 22:52+0000\n"
+"PO-Revision-Date: 2026-11-12 17:09+0000\n"
 "Last-Translator: Lewis Bertin <lewis@tactiqual.tech>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
@@ -321,7 +321,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.11.1.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -208384,9 +208384,8 @@ msgstr ""
 "nouveau avec les modifications appropriées."
 
 #: ../../docs/community/asset_store/index.rst:4
-#, fuzzy
 msgid "Asset Store"
-msgstr "Mot-clé d'assertion"
+msgstr "Asset Store"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:4
 #, fuzzy
@@ -208697,45 +208696,40 @@ msgstr ""
 "directement via Godot que nous venons de couvrir."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:4
-#, fuzzy
 msgid "Submitting to the Asset Store"
-msgstr "Soumettre à la bibliothèque d'asset"
+msgstr "Soumettre à l'Asset Store"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:9
-#, fuzzy
 msgid ""
 "This tutorial aims to serve as a guide on how you can submit your own assets "
 "to the `Godot Asset Store <https://store.godotengine.org/>`_ and share them "
 "with the Godot community."
 msgstr ""
-"Ce tutoriel a pour but de vous guider sur la manière de soumettre vos "
-"propres contenus à `Godot Asset Library <https://godotengine.org/asset-"
-"library/asset>`_ et de les partager avec la communauté de Godot."
+"Ce tutoriel vous guide pour soumettre vos propres assets au `Godot Asset "
+"Store <https://store.godotengine.org/>`_ et les partager avec la communauté "
+"Godot."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:13
-#, fuzzy
 msgid ""
 "As mentioned in the :ref:`doc_using_asset_store_website` page, in order to "
 "be able to submit assets to the Asset Store, you need to have a registered "
 "account, and be logged in."
 msgstr ""
-"Comme mentionné dans le document :ref:`doc_using_assetlib`, pour pouvoir "
-"soumettre des assets à l'AssetLib, vous devez avoir un compte enregistré, et "
-"être connecté."
+"Comme indiqué dans la page :ref:`doc_using_asset_store_website`, pour "
+"pouvoir soumettre des assets à l'Asset Store, vous devez disposer d'un "
+"compte enregistré et être connecté."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:26
-#, fuzzy
 msgid ""
 "Generally speaking, most assets people submit to the Asset Store are "
 "accepted. However, in order for your asset to be accepted, there are a few "
 "requirements it needs to meet to be approved."
 msgstr ""
-"En général, la plupart des assets soumis à la librairie d’assets sont "
-"acceptés. Cependant, pour que votre asset soit accepté, il y a quelques "
-"exigences que votre asset doit respecter."
+"De manière générale, la plupart des assets soumis à l'Asset Store sont "
+"acceptés. Toutefois, pour que votre asset soit accepté, il doit remplir "
+"quelques exigences."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:41
-#, fuzzy
 msgid ""
 "The **license** needs to be correct. The license listed on the Asset Store "
 "must match the license in the repository. The repository **must** have a "
@@ -208743,26 +208737,23 @@ msgid ""
 "contain the license text itself and a copyright statement that includes the "
 "year(s) and copyright holder."
 msgstr ""
-"La **licence** doit être correcte. La licence indiquée sur la bibliothèque "
-"de ressources doit correspondre à la licence dans le répertoire. Le dépôt "
-"DOIT avoir un fichier de licence, appelé soit \"LICENSE\" soit "
-"\"LICENSE.md\". Ce fichier doit contenir le texte de la licence lui-même et "
-"une déclaration de copyright qui inclut l'année (les années) et le détenteur "
-"du copyright."
+"La **licence** doit être correcte. La licence indiquée sur l'Asset Store "
+"doit correspondre à celle du dépôt. Le dépôt **doit** contenir un fichier de "
+"licence, nommé soit \"LICENSE\", soit \"LICENSE.md\". Ce fichier doit "
+"contenir le texte de la licence elle-même et une déclaration de copyright "
+"incluant l'année (ou les années) et le titulaire du copyright."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:58
-#, fuzzy
 msgid ""
 "These things are not required for your asset to be approved, but if you "
 "follow these recommendations, you can help make the asset store a better "
 "place for all users."
 msgstr ""
-"Ces choses ne sont pas requises pour que votre asset soit approuvé, mais si "
-"vous suivez ces recommandations, vous pouvez contribuer à faire de la "
-"librairie d’assets un meilleur endroit pour tout utilisateur."
+"Ces éléments ne sont pas obligatoires pour que votre asset soit approuvé, "
+"mais en suivant ces recommandations, vous contribuez à rendre l'Asset Store "
+"plus agréable pour tous les utilisateurs."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:85
-#, fuzzy
 msgid ""
 "Consider adding a **.gitattributes** file to your repository. This file "
 "allows giving extra instructions to Git, such as specifying line endings and "
@@ -208771,45 +208762,48 @@ msgid ""
 "file, preventing them from being downloaded by Asset Store users. These are "
 "common examples of **.gitattributes**:"
 msgstr ""
-"Pensez à ajouter un fichier **.gitattributes** à votre repo. Ce fichier "
+"Pensez à ajouter un fichier **.gitattributes** à votre dépôt. Ce fichier "
 "permet de donner des instructions supplémentaires à Git, comme spécifier les "
-"fins de lignes et lister les fichiers non nécessaires au fonctionnement de "
-"votre asset avec la directive ``export-ignore``. Cette directive supprime "
-"ces fichiers du fichier ZIP résultant et les empêche d'être téléchargés par "
-"les utilisateurs de la bibliothèque d'asset. Pour un plugin typique, "
-"**.gitattributes** peut ressembler à ceci :"
+"fins de ligne et lister les fichiers non nécessaires au fonctionnement de "
+"votre asset grâce à la directive ``export-ignore``. Cette directive retire "
+"ces fichiers de l'archive ZIP obtenue, les empêchant d'être téléchargés par "
+"les utilisateurs de l'Asset Store. Voici des exemples courants de "
+"**.gitattributes** :"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:118
-#, fuzzy
 msgid ""
 "While the Asset Store allows more than just GitHub, consider hosting your "
 "asset's source code on **GitHub**. Other services may not work reliably, and "
 "a lack of familiarity can be a barrier to contributors."
 msgstr ""
-"Bien que la bibliothèque d'assets permette plus que GitHub, pensez à "
-"héberger le code source de votre asset sur **GitHub**. D'autres services "
-"peuvent ne pas fonctionner de manière fiable, et un manque de familiarité "
-"peut constituer un obstacle pour les contributeurs."
+"Bien que l'Asset Store permette davantage que GitHub, pensez à héberger le "
+"code source de votre asset sur **GitHub**. D'autres services peuvent ne pas "
+"fonctionner de manière fiable, et un manque de familiarité peut constituer "
+"un obstacle pour les contributeurs."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:125
 msgid ""
 "Once you are logged in, click on **Upload Asset** on the top right of the "
 "website. It will take you to the following page:"
 msgstr ""
+"Une fois connecté, cliquez sur **Upload Asset** en haut à droite du site. "
+"Vous arriverez sur la page suivante :"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:130
 msgid "Here is a breakdown of each field:"
-msgstr ""
+msgstr "Voici le détail de chaque champ :"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:132
 msgid ""
 "**Publisher**: This is the public name associated with the asset. For "
 "example, the XR Tools asset has the publisher \"Godot XR\"."
 msgstr ""
+"**Publisher** : il s'agit du nom public associé à l'asset. Par exemple, "
+"l'asset XR Tools a pour éditeur \"Godot XR\"."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:135
 msgid "**Publisher Name**: The name of the new publisher you are creating."
-msgstr ""
+msgstr "**Publisher Name** : le nom du nouvel éditeur que vous créez."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:137
 msgid ""
@@ -208817,10 +208811,13 @@ msgid ""
 "example, the XR Tools asset has the following URL: ``https://"
 "store.godotengine.org/asset/godot-xr/godot-xr-tools/``"
 msgstr ""
+"**Publisher URL Slug** : la manière dont l'éditeur apparaît dans son lien. "
+"Par exemple, l'asset XR Tools a l'URL suivante : ``https://"
+"store.godotengine.org/asset/godot-xr/godot-xr-tools/``"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:140
 msgid "The publisher URL Slug in that is \"godot-xr\"."
-msgstr ""
+msgstr "Le slug d'URL de l'éditeur dans ce lien est \"godot-xr\"."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:142
 #, fuzzy
@@ -208962,43 +208959,51 @@ msgstr ""
 "J'ai trouvé un bug sur le site de la boutique, où dois-je le signaler ?"
 
 #: ../../docs/community/asset_store/faq.rst:12
-#, fuzzy
 msgid ""
 "Please report it in the `asset store tracker repository <https://github.com/"
 "godotengine/godot-asset-store-tracker>`_."
 msgstr ""
-"Une copie du `dépôt godot-cpp <https://github.com/godotengine/godot-cpp>`__."
+"Veuillez le signaler dans le `dépôt du tracker de l'Asset Store <https://"
+"github.com/godotengine/godot-asset-store-tracker>`_."
 
 #: ../../docs/community/asset_store/faq.rst:15
 msgid ""
 "Is there anywhere I can suggest new features or improvements to the store "
 "itself?"
 msgstr ""
+"Existe-t-il un endroit où suggérer de nouvelles fonctionnalités ou des "
+"améliorations pour la boutique elle-même ?"
 
 #: ../../docs/community/asset_store/faq.rst:17
-#, fuzzy
 msgid ""
 "Yes! Please open an issue in the `asset store tracker repository <https://"
 "github.com/godotengine/godot-asset-store-tracker>`_."
 msgstr ""
-"Une copie du `dépôt godot-cpp <https://github.com/godotengine/godot-cpp>`__."
+"Oui ! Veuillez ouvrir un ticket dans le `dépôt du tracker de l'Asset Store "
+"<https://github.com/godotengine/godot-asset-store-tracker>`_."
 
 #: ../../docs/community/asset_store/faq.rst:20
 msgid ""
 "How do I report an asset for theft/copyright infringement/malicious code?"
 msgstr ""
+"Comment signaler un asset pour vol, violation du droit d'auteur ou code "
+"malveillant ?"
 
 #: ../../docs/community/asset_store/faq.rst:22
 msgid ""
 "At the bottom of the assets page, below the panel on the right, there is a "
 "\"Flag This Asset\" button. You **must** be logged in to use it."
 msgstr ""
+"En bas de la page de l'asset, sous le panneau de droite, se trouve un bouton "
+"\"Flag This Asset\". Vous **devez** être connecté pour l'utiliser."
 
 #: ../../docs/community/asset_store/faq.rst:26
 msgid ""
 "I can't find an addon I download before when this was the Asset Library, was "
 "everything old removed?"
 msgstr ""
+"Je ne retrouve pas un addon que je téléchargeais auparavant, lorsque c'était "
+"encore l'Asset Library : tout l'ancien contenu a-t-il été supprimé ?"
 
 #: ../../docs/community/asset_store/faq.rst:28
 msgid ""
@@ -209008,27 +209013,35 @@ msgid ""
 "godotengine.org/asset-library/asset>`_ is still online, and you can download "
 "it there."
 msgstr ""
+"L'Asset Store succède à l'Asset Library, mais les assets de l'ancienne "
+"bibliothèque n'ont pas été transférés automatiquement. Si vous ne le trouvez "
+"pas, c'est que son auteur ne l'a pas soumis à nouveau. Pour l'instant, le "
+"`site de l'Asset Library <https://godotengine.org/asset-library/asset>`_ est "
+"toujours en ligne, et vous pouvez l'y télécharger."
 
 #: ../../docs/community/asset_store/faq.rst:34
-#, fuzzy
 msgid "Asset submission questions"
-msgstr "Directives de soumission"
+msgstr "Questions sur la soumission des assets"
 
 #: ../../docs/community/asset_store/faq.rst:37
 msgid "Can I charge money for my assets?"
-msgstr ""
+msgstr "Puis-je faire payer mes assets ?"
 
 #: ../../docs/community/asset_store/faq.rst:39
 msgid ""
 "Not currently, however that is planned and on the `roadmap <https://"
 "store.godotengine.org/roadmap/>`_."
 msgstr ""
+"Pas pour le moment, mais cela est prévu et figure sur la `feuille de route "
+"<https://store.godotengine.org/roadmap/>`_."
 
 #: ../../docs/community/asset_store/faq.rst:42
 msgid ""
 "I consider my addon in the early alpha or beta stage of development, can I "
 "upload it?"
 msgstr ""
+"Mon addon est en phase de développement alpha ou bêta précoce, puis-je le "
+"publier ?"
 
 #: ../../docs/community/asset_store/faq.rst:44
 msgid ""
@@ -209039,12 +209052,22 @@ msgid ""
 "functional. In comparison, an addon that adds numerous buttons to the editor "
 "that don't do anything if you click on them is non-functional."
 msgstr ""
+"Oui. Vous pouvez publier votre addon même si vous estimez qu'il n'a pas "
+"encore atteint le niveau fonctionnel d'une version 1.0. Nous demandons "
+"cependant que les versions publiées sur la boutique soient fonctionnelles. "
+"Par exemple, si vous n'avez implémenté que 4 de vos 10 fonctionnalités, mais "
+"que ces 4 fonctionnent (sans nécessairement être exemptes de bugs), la "
+"version est fonctionnelle. En revanche, un addon qui ajoute à l'éditeur de "
+"nombreux boutons ne faisant rien lorsqu'on clique dessus n'est pas "
+"fonctionnel."
 
 #: ../../docs/community/asset_store/faq.rst:52
 msgid ""
 "Can I link to a Patreon, Ko-Fi, or other 3rd party site to support "
 "development?"
 msgstr ""
+"Puis-je mettre un lien vers Patreon, Ko-Fi ou un autre site tiers pour "
+"soutenir le développement ?"
 
 #: ../../docs/community/asset_store/faq.rst:54
 msgid ""
@@ -209052,19 +209075,24 @@ msgid ""
 "a donation site. If you have multiple then you can link the others in the "
 "description."
 msgstr ""
+"Oui. Pendant la soumission, vous pouvez configurer un bouton de don qui "
+"renvoie vers un site de dons. Si vous en avez plusieurs, vous pouvez "
+"mentionner les autres dans la description."
 
 #: ../../docs/community/asset_store/faq.rst:58
 msgid "Can I submit an addon that only works in Godot 3?"
-msgstr ""
+msgstr "Puis-je soumettre un addon qui ne fonctionne que dans Godot 3 ?"
 
 #: ../../docs/community/asset_store/faq.rst:60
 msgid "Yes."
-msgstr ""
+msgstr "Oui."
 
 #: ../../docs/community/asset_store/faq.rst:63
 msgid ""
 "I have an addon with a Godot 3 and Godot 4 version, do I submit it twice?"
 msgstr ""
+"J'ai un addon en version Godot 3 et en version Godot 4, dois-je le soumettre "
+"deux fois ?"
 
 #: ../../docs/community/asset_store/faq.rst:65
 msgid ""
@@ -209072,6 +209100,9 @@ msgid ""
 "version for a single asset, however be aware that may cause confusion among "
 "users."
 msgstr ""
+"C'est ce que nous recommandons. Vous pouvez aussi le soumettre comme une "
+"seconde version d'un même asset, mais gardez à l'esprit que cela peut prêter "
+"à confusion chez les utilisateurs."
 
 #: ../../docs/community/asset_store/faq.rst:69
 msgid "Is there a size limit?"

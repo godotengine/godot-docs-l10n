@@ -147,13 +147,15 @@
 # ferafiks <ferafiks@proton.me>, 2026.
 # No Normal <d.jochymek12@gmail.com>, 2026.
 # Mask <MaskError66@proton.me>, 2026.
+# Cyprian Klimaszewski <rito12@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-11-04 00:07+0100\n"
-"PO-Revision-Date: 2026-10-26 21:45+0000\n"
-"Last-Translator: Mask <MaskError66@proton.me>\n"
+"PO-Revision-Date: 2026-11-09 12:51+0000\n"
+"Last-Translator: Cyprian Klimaszewski "
+"<rito12@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -162,7 +164,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.11.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -2333,11 +2335,12 @@ msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
 msgstr ":ref:`Klasa pomocnicza geometrii 3D <class_Geometry3D>`."
 
 #: ../../docs/about/list_of_features.rst:466
-#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file, both from the "
 "editor and at runtime from an exported project."
-msgstr "Wsparcie dla eksportu aktualnej sceny jako plik glTF 2.0 z edytora."
+msgstr ""
+"Wsparcie dla eksportu aktualnej sceny jako pliku glTF 2.0, zarówno z "
+"edytora, jak i w czasie działania z wyeksportowanego projektu."
 
 #: ../../docs/about/list_of_features.rst:470
 msgid "3D physics"
@@ -2348,14 +2351,12 @@ msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "Ciała pojazdów (stworzone dla fizyki arcade, nie symulacji)."
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid ":ref:`Soft bodies <doc_soft_body>`."
-msgstr ":ref:`doc_soft_body`"
+msgstr ":ref:`Miękkie ciała <doc_soft_body>`."
 
 #: ../../docs/about/list_of_features.rst:481
-#, fuzzy
 msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
-msgstr ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`Ragdolle <doc_ragdoll_system>`."
 
 #: ../../docs/about/list_of_features.rst:487
 msgid ""
@@ -2389,40 +2390,42 @@ msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* niestandardowe wierzchołki, fragmenty oraz shadery światła."
 
 #: ../../docs/about/list_of_features.rst:495
-#, fuzzy
 msgid "*3D:* Custom vertex, fragment, light, sky, and fog shaders."
 msgstr ""
-"*3D:* Niestandardowe wierzchołki, fragmenty, światło oraz shadery nieba."
+"*3D:* Niestandardowe shadery wierzchołków, fragmentów, światła, nieba i mgły."
 
 #: ../../docs/about/list_of_features.rst:496
 msgid ""
 "Custom shaders can procedurally generate and modify textures in real-time "
 "using :ref:`class_DrawableTexture2D`."
 msgstr ""
+"Niestandardowe shadery mogą proceduralnie generować i modyfikować tekstury w "
+"czasie rzeczywistym za pomocą :ref:`class_DrawableTexture2D`."
 
 #: ../../docs/about/list_of_features.rst:498
-#, fuzzy
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
-":ref:`Shading Language <doc_shading_language>` zawiera szczegółowe "
-"informacje o języku shaderów Godota."
+"Shadery tekstowe korzystające z :ref:`języka shaderów inspirowanego GLSL "
+"<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:499
 msgid ""
 "Syntax highlighting is provided on GitHub by using ``gdshader`` as the "
 "language name in a Markdown code block."
 msgstr ""
+"Podświetlanie składni jest dostępne na GitHubie po użyciu ``gdshader`` jako "
+"nazwy języka w bloku kodu Markdown."
 
 #: ../../docs/about/list_of_features.rst:501
 msgid "Visual shader editor."
 msgstr "Wizualny edytor shaderów."
 
 #: ../../docs/about/list_of_features.rst:503
-#, fuzzy
 msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
-msgstr "Wsparcie dla :ref:`własny import wtyczek <doc_import_plugins>`."
+msgstr ""
+"Wsparcie dla :ref:`wtyczek wizualnych shaderów <doc_visual_shader_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:506
 #: ../../docs/about/docs_changelog.rst:51
@@ -2461,18 +2464,16 @@ msgstr ""
 "transformaty."
 
 #: ../../docs/about/list_of_features.rst:515
-#, fuzzy
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:517
-#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript_reference>` "
 "with :ref:`optional static typing <doc_gdscript_static_typing>`."
 msgstr ""
-":ref:`Wysokopoziomowy język interpretowany <doc_gdscript>` "
-"z :ref:`opcjonalną statyczną typizacją <doc_gdscript_static_typing>`."
+":ref:`Wysokopoziomowy język interpretowany <doc_gdscript_reference>` z "
+":ref:`opcjonalnym statycznym typowaniem <doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:519
 msgid ""
@@ -2486,6 +2487,8 @@ msgid ""
 "Syntax highlighting is provided on GitHub by using ``gdscript`` as the "
 "language name in a Markdown code block."
 msgstr ""
+"Podświetlanie składni jest dostępne na GitHubie po użyciu ``gdscript`` jako "
+"nazwy języka w bloku kodu Markdown."
 
 #: ../../docs/about/list_of_features.rst:522
 msgid ""
@@ -2496,9 +2499,8 @@ msgstr ""
 "asynchroniczne bądź spożytkować wiele rdzeni procesora."
 
 #: ../../docs/about/list_of_features.rst:525
-#, fuzzy
 msgid ":ref:`C#: <doc_c_sharp>`"
-msgstr ":ref:`doc_c_sharp_variant`"
+msgstr ":ref:`C#: <doc_c_sharp>`"
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2507,14 +2509,12 @@ msgstr ""
 "ilość zależności."
 
 #: ../../docs/about/list_of_features.rst:528
-#, fuzzy
 msgid "Supports .NET 10 and higher."
-msgstr "Obsługuje .NET 8 i nowsze."
+msgstr "Obsługuje .NET 10 i nowsze."
 
 #: ../../docs/about/list_of_features.rst:530
-#, fuzzy
 msgid "Full support for the C# 14.0 syntax and features."
-msgstr "Pełne wsparcie dla składni i funkcji C# 10.0."
+msgstr "Pełne wsparcie dla składni i funkcji C# 14.0."
 
 #: ../../docs/about/list_of_features.rst:532
 msgid ""
@@ -2545,9 +2545,8 @@ msgstr ""
 "funkcjonalności IDE."
 
 #: ../../docs/about/list_of_features.rst:541
-#, fuzzy
 msgid "**GDExtension (C, C++, Rust, D, ...):**"
-msgstr "**GDNative (C, C++, Rust, D, ...):**"
+msgstr "**GDExtension (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:543
 msgid ""
@@ -2570,6 +2569,8 @@ msgid ""
 "Official GDExtension bindings for `C <https://github.com/godotengine/godot-"
 "headers>`__ and `C++ <https://github.com/godotengine/godot-cpp>`__."
 msgstr ""
+"Oficjalne powiązania GDExtension dla `C <https://github.com/godotengine/"
+"godot-headers>`__ i `C++ <https://github.com/godotengine/godot-cpp>`__."
 
 #: ../../docs/about/list_of_features.rst:552
 msgid "Use any build system and language features you wish."
@@ -2583,6 +2584,11 @@ msgid ""
 "bindings provided by the community. (Some of these bindings may be "
 "experimental and not production-ready)."
 msgstr ""
+"Aktywnie rozwijane powiązania GDExtension dla `D <https://github.com/godot-"
+"dlang/godot-dlang>`__, `Swift <https://github.com/migueldeicaza/SwiftGodot>"
+"`__ i `Rust <https://github.com/godot-rust/gdextension>`__, dostarczane "
+"przez społeczność. (Niektóre z tych powiązań mogą być eksperymentalne i nie "
+"nadawać się jeszcze do produkcji)."
 
 #: ../../docs/about/list_of_features.rst:559
 #: ../../docs/about/docs_changelog.rst:415
@@ -183498,13 +183504,20 @@ msgid ""
 "Can I upload a free version of a plugin on the Asset Store and a paid "
 "version elsewhere?"
 msgstr ""
+"Czy mogę zamieścić bezpłatną wersję wtyczki na Asset Store i jednocześnie "
+"zamieścić płatną wersję gdzieś indziej?"
 
 #: ../../docs/community/asset_store/faq.rst:91
+#, fuzzy
 msgid ""
 "Yes, you're allowed to upload a free version of a plugin to the Asset Store, "
 "and upload a paid version to another website, such as itch. However, the "
 "free version **must not** include pop-up ads for the paid version."
 msgstr ""
+"Tak, możesz zamieścić bezpłatną wersję wtyczki na Asset Store i jednocześnie "
+"zamieścić płatną wersję na innej stronie, takiej jak itch, podwarunkiem, że "
+"bezpłatna wersja **nie będzie** zawierała wyskakujących reklam płatnej "
+"wersji."
 
 #: ../../docs/community/channels.rst:4
 msgid "Community channels"

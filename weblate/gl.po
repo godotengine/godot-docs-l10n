@@ -11,13 +11,14 @@
 # "Miguel A. Bouzada" <mbouzada@gmail.com>, 2025.
 # ninjum <ninhum@gmx.com>, 2025.
 # Sergio Souto Mourelle <sergiosoutomourelle@gmail.com>, 2025.
+# San Vi <sanvi684@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-11-04 00:07+0100\n"
-"PO-Revision-Date: 2025-11-20 02:57+0000\n"
-"Last-Translator: ninjum <ninhum@gmx.com>\n"
+"PO-Revision-Date: 2026-11-08 06:26+0000\n"
+"Last-Translator: San Vi <sanvi684@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/gl/>\n"
 "Language: gl\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -92,9 +93,8 @@ msgid "Class reference"
 msgstr "Referencia de clase"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Documentación de Godot – rama *4.5*"
+msgstr "Documentación de Godot – rama *master*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -156,17 +156,18 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Para comezar a ler a documentación relevante, selecciona o bloque que "
+"coincida co teu perfil:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"A táboa de contidos na barra lateral permitirache acceder facilmente á "
-"documentación sobre o tema do teu interese. Tamén podes utilizar a función "
-"de procura na esquina superior esquerda."
+"A táboa de contidos na barra lateral permitirache acceder facilmente a "
+"calquera sección da documentación do tema que che interese. Tamén podes usar "
+"a función de procura na esquina superior esquerda."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -500,11 +501,11 @@ msgid ""
 "list Godot communities, which are now listed on the `Godot website <https://"
 "godotengine.org/community/>`_."
 msgstr ""
-"**Comunidade** está dedicada á vida da comunidade de Godot e contén unha "
+"**Comunidade** está dedicada á vida da comunidade de Godot e inclúe unha "
 "lista de titoriais e materiais recomendados de terceiros fóra desta "
-"documentación. Tamén proporciona detalles sobre a Biblioteca de Activos. "
-"Ademais, antes listaba as comunidades de Godot, que agora se atopan no "
-"`sitio web de Godot <https://godotengine.org/community/>`_."
+"documentación. Tamén dá detalles sobre a Tenda de Recursos. Ademais, antes "
+"listaba as comunidades de Godot, que agora se atopan no `sitio web de Godot "
+"<https://godotengine.org/community/>`_."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -606,10 +607,13 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
+#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
+"Para obter información sobre o soporte para videoconsolas, consulta a `sitio "
+"web de Godot <https://godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -725,10 +729,13 @@ msgid "Scene tree editor."
 msgstr "Editor de árbores de escenas."
 
 #: ../../docs/about/list_of_features.rst:70
+#, fuzzy
 msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Editor de scripts incorporado. Tamén admite a edición de ficheiros de texto "
+"e o uso de realzadores de sintaxe personalizados."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -745,8 +752,7 @@ msgstr "GDScript :ref:`depurador <doc_debugger_panel>`."
 #: ../../docs/about/list_of_features.rst:76
 #, fuzzy
 msgid "Supports debugging in threads."
-msgstr ""
-"A compatibilidade coa depuración en fíos está dispoñible desde a versión 4.2."
+msgstr "Admite a depuración en fíos."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -765,18 +771,27 @@ msgstr ""
 "rendemento personalizados <doc_custom_performance_monitors>`."
 
 #: ../../docs/about/list_of_features.rst:82
+#, fuzzy
 msgid ""
 "Supports :ref:`tracing profilers <doc_tracing_profilers>` "
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Admite :ref:`perfiladores de rastrexamento <doc_tracing_profilers>` como "
+":ref:`doc_profiler_tracy` e :ref:`doc_profiler_perfetto` para tarefas de "
+"optimización máis profundas."
 
 #: ../../docs/about/list_of_features.rst:84
+#, fuzzy
 msgid ""
 "Any script can be :ref:`run in the editor <doc_running_code_in_the_editor>` "
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Calquera script pode :ref:`executarse no editor "
+"<doc_running_code_in_the_editor>` e proporcionar funcionalidade "
+"personalizada como botóns nos que se pode premer no inspector, sen "
+"necesidade de crear un complemento (plugin) de editor."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -792,13 +807,13 @@ msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"Os cambios reflectiranse no editor e manteranse despois de pechar o proxecto "
-"en execución."
+"Os cambios *reflectiranse* no editor e *manteranse* despois de pechar o "
+"proxecto en execución."
 
 #: ../../docs/about/list_of_features.rst:92
 #, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "Réplica de cámara en directo."
+msgstr "Réplica de cámara en directo (desactivada por defecto)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -815,31 +830,42 @@ msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
 msgstr ""
-"Os cambios non se reflectirán no editor e non se manterán despois de pechar "
-"o proxecto en execución."
+"Os cambios *non* se reflectirán no editor e *non* se manterán despois de "
+"pechar o proxecto en execución."
 
 #: ../../docs/about/list_of_features.rst:100
+#, fuzzy
 msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"Executar varias instancias do proxecto simultaneamente dende unha soa "
+"instancia do editor (útil para probas cliente/servidor)."
 
 #: ../../docs/about/list_of_features.rst:102
+#, fuzzy
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
 msgstr ""
+":ref:`Integración do xogo <doc_game_embedding>` opcional, que permite "
+"executar o proxecto nun panel dentro do editor."
 
 #: ../../docs/about/list_of_features.rst:104
+#, fuzzy
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
 msgstr ""
+"Selecciona nodos 2D e 3D na mini-ventá (viewport) do proxecto para "
+"inspeccionarlos no editor."
 
 #: ../../docs/about/list_of_features.rst:105
+#, fuzzy
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
 msgstr ""
+"Move a cámara dentro do proxecto usando as substitucións de cámara 2D e 3D."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."

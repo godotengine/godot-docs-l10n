@@ -401,7 +401,7 @@
 # Michael F <meat@qnet.li>, 2025.
 # Кирилл <09plf5@gmail.com>, 2025.
 # Nuar <rainerhoffman1999@gmail.com>, 2025.
-# Deniil <bug@users.noreply.hosted.weblate.org>, 2025.
+# Deniil <bug@users.noreply.hosted.weblate.org>, 2025, 2026.
 # Assemberist <schur.alexandr2015@yandex.ru>, 2025.
 # t0pr0k <roman12022006@gmail.com>, 2025.
 # Igor <igort2004@bk.ru>, 2025.
@@ -460,8 +460,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-11-04 00:07+0100\n"
-"PO-Revision-Date: 2026-11-03 22:52+0000\n"
-"Last-Translator: Deniil <danpko@ya.ru>\n"
+"PO-Revision-Date: 2026-11-08 06:26+0000\n"
+"Last-Translator: Deniil <bug@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -470,7 +470,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.11.1.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -979,7 +979,6 @@ msgid "About this documentation"
 msgstr "О документации"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -991,17 +990,17 @@ msgid ""
 "team <https://godotengine.org/teams/#documentation>`_ on `Godot Contributors "
 "Chat <https://chat.godotengine.org/>`_."
 msgstr ""
-"Члены сообщества разработчиков Godot Engine постоянно пишут, исправляют, "
-"редактируют и улучшают эту документацию. Мы всегда ищем дополнительную "
-"помощь. Вы также можете внести свой вклад, открыв проблемы на Github или "
-"переведя документацию на свой язык. Если вы заинтересованы в помощи, "
-"ознакомьтесь с разделами `Как внести свой вклад <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__ и `Написание документации <https://"
-"contributing.godotengine.org/en/latest/documentation/manual/index.html>`__, "
-"или свяжитесь с командой разработчиков `документации <https://"
-"godotengine.org/teams/#documentation>`_ в `чате участников Godot <https://"
-"chat.godotengine.org/>`_."
+"Участники сообщества Godot Engine постоянно пишут, исправляют, редактируют и "
+"улучшают эту документацию. Мы всегда рады любой помощи. Вы также можете "
+"внести свой вклад, создавая задачи (issues) на GitHub или переводя "
+"документацию на свой родной язык. Если вы хотите помочь, ознакомьтесь с "
+"разделами `\"Как внести свой вклад\" (How to contribute) <https://"
+"contributing.godotengine.org/en/latest/index.html>`__ и `«Написание "
+"документации» (Writing documentation) <https://contributing.godotengine.org/"
+"en/latest/development/documentation/manual/index.html>`__ или свяжитесь с "
+"`Командой по работе с документацией (Documentation team) <https://"
+"godotengine.org/teams/#documentation>`_ в `Чате для участников сообщества "
+"(Godot Contributors Chat) <https://chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
 msgid ""
@@ -1461,11 +1460,11 @@ msgstr ""
 "текстурирования."
 
 #: ../../docs/about/list_of_features.rst:152
-#, fuzzy
 msgid ""
 ":ref:`class_AnimatedSprite2D` as a helper for creating animated sprites."
 msgstr ""
-"AnimatedSprite2D в качестве помощника для создания анимированных спрайтов."
+":ref:`class_AnimatedSprite2D` в качестве вспомогательного средства для "
+"создания анимированных спрайтов."
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Parallax layers."
@@ -2831,14 +2830,12 @@ msgstr ""
 "зависимостей."
 
 #: ../../docs/about/list_of_features.rst:528
-#, fuzzy
 msgid "Supports .NET 10 and higher."
-msgstr "Поддерживает .NET 8 и выше."
+msgstr "Поддерживает .NET 10 и выше."
 
 #: ../../docs/about/list_of_features.rst:530
-#, fuzzy
 msgid "Full support for the C# 14.0 syntax and features."
-msgstr "Полная поддержка синтаксиса и функций C# 12.0."
+msgstr "Полная поддержка синтаксиса и функций C# 14.0."
 
 #: ../../docs/about/list_of_features.rst:532
 msgid ""
@@ -4048,14 +4045,12 @@ msgid "Licensed under the permissive MIT license."
 msgstr "Имеет лицензию MIT."
 
 #: ../../docs/about/list_of_features.rst:900
-#, fuzzy
 msgid ""
 "Open development process with `contributions welcome <https://"
 "contributing.godotengine.org/en/latest/index.html>`__."
 msgstr ""
 "Откройте процесс разработки с пометкой `приветствуется вклад <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
+"contributing.godotengine.org/en/latest/index.html>`__."
 
 #: ../../docs/about/list_of_features.rst:904
 msgid ""
@@ -4252,14 +4247,15 @@ msgid "**Operating system**"
 msgstr "**Операционная система**"
 
 #: ../../docs/about/system_requirements.rst:58
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 10, macOS 11 (Intel Macs, Compatibility), macOS "
 "12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
 "distribution released after 2018"
 msgstr ""
-"**Встроенный редактор:** Windows 10, macOS 11 (совместимость) или macOS 13 "
-"(Apple Silicon Macs), дистрибутивы Linux, выпущенные после 2018 года"
+"**Нативный редактор:** Windows 10, macOS 11 (компьютеры Mac на базе Intel; "
+"поддерживается совместимость), macOS 12 (компьютеры Mac на базе Intel; "
+"версии Forward+ и Mobile), macOS 13 (компьютеры Mac с процессорами Apple "
+"Silicon), дистрибутивы Linux, выпущенные после 2018 года"
 
 #: ../../docs/about/system_requirements.rst:61
 #: ../../docs/about/system_requirements.rst:106
@@ -4268,8 +4264,9 @@ msgid ""
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
 "WebKit derivatives."
 msgstr ""
-"**Web editor:** Последние версии основных браузеров: Firefox и производные "
-"(включая ESR), Chrome и производные Chromium, Safari и производные WebKit."
+"**Онлайн-редактор:** Последние версии основных браузеров: Firefox и "
+"производные (включая ESR), Chrome и производные Chromium, Safari и "
+"производные WebKit."
 
 #: ../../docs/about/system_requirements.rst:67
 msgid ""
@@ -4455,12 +4452,11 @@ msgstr ""
 "экспорта и кэша)"
 
 #: ../../docs/about/system_requirements.rst:146
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 11, macOS 14, Linux distribution released after "
 "2020"
 msgstr ""
-"**Нативный редактор:** Windows 11, macOS 13, дистрибутивы Linux, выпущенные "
+"**Нативный редактор:** Windows 11, macOS 14, дистрибутивы Linux, выпущенные "
 "после 2020 года"
 
 #: ../../docs/about/system_requirements.rst:147
@@ -4608,25 +4604,25 @@ msgid "150 MB (used for the executable, project files, and cache)"
 msgstr "150 Мб (используется для исполняемого файла, файлов проекта и кеша)"
 
 #: ../../docs/about/system_requirements.rst:245
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 11 (Intel Macs, Compatibility), "
 "macOS 12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
 "distribution released after 2018"
 msgstr ""
-"**Для нативного экспорта:** Windows 10, macOS 11 (Intel Macs), macOS 13.0 "
-"(Apple Silicon Macs), дистрибутивы Linux, выпущенные после 2020 года"
+"**Для нативного экспорта:** Windows 10, macOS 11 (Intel Macs, Compatibility)"
+", macOS 12 (Intel Macs, Forward+/Mobile), дистрибутивы Linux, выпущенные "
+"после 2018 года"
 
 #: ../../docs/about/system_requirements.rst:248
 #: ../../docs/about/system_requirements.rst:287
-#, fuzzy
 msgid ""
 "**For web exports:** Recent versions of mainstream browsers: Firefox and "
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
 "WebKit derivatives."
 msgstr ""
-"**Web editor:** Последние версии основных браузеров: Firefox и производные "
-"(включая ESR), Chrome и производные Chromium, Safari и производные WebKit."
+"**Для web-экспорта:** Последние версии основных браузеров: Firefox и "
+"производные (включая ESR), Chrome и производные Chromium, Safari и "
+"производные WebKit."
 
 #: ../../docs/about/system_requirements.rst:260
 #: ../../docs/about/system_requirements.rst:342
@@ -4634,9 +4630,8 @@ msgid "**iOS:** SoC with 64-bit ARM CPU"
 msgstr "**iOS:** SoC с 64-bit ARM процессором"
 
 #: ../../docs/about/system_requirements.rst:262
-#, fuzzy
 msgid "*Example: Apple A9 (iPhone 6S)*"
-msgstr "*Пример: Apple A7 (iPhone 5S)*"
+msgstr "*Пример: Apple A9 (iPhone 6S)*"
 
 #: ../../docs/about/system_requirements.rst:264
 msgid ""
@@ -4669,9 +4664,8 @@ msgstr ""
 "(iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:278
-#, fuzzy
 msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A9 (iPhone 6S)*"
-msgstr "*Пример: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
+msgstr "*Пример: Qualcomm Adreno 306, Mali-T628 MP6, Apple A9 (iPhone 6S)*"
 
 #: ../../docs/about/system_requirements.rst:280
 msgid "**For native exports:** 1 GB"
@@ -4733,12 +4727,11 @@ msgid "**For web exports:** 8 GB"
 msgstr "**Для экспорта в Web:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:330
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 11, macOS 14, Linux distribution released "
 "after 2020"
 msgstr ""
-"**Для нативного экспорта:** Windows 11, macOS 13, дистрибутивы Linux, "
+"**Для нативного экспорта:** Windows 11, macOS 14, дистрибутивы Linux, "
 "выпущенные после 2020 года"
 
 #: ../../docs/about/system_requirements.rst:331
@@ -5524,11 +5517,12 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
-"Переименуйте и переместите бинарный файл Godot в место вашей переменной "
-"среды ``PATH``. Обычно это ``/usr/local/bin/godot`` или ``/usr/bin/godot``. "
-"Для этого требуются права администратора, но это также позволит "
-"вам :ref:`запустить редактор Godot из терминала "
-"<doc_command_line_tutorial>`, введя``godot``."
+"Переименуйте исполняемый файл Godot и переместите его в директорию, которая "
+"включена в вашу переменную окружения ``PATH``. Обычно это ``/usr/local/bin/"
+"godot`` или ``/usr/bin/godot``. Для выполнения этого действия потребуются "
+"права администратора; зато после этого вы сможете :ref:`запускать редактор "
+"Godot из терминала <doc_command_line_tutorial>`, просто введя команду "
+"``godot``."
 
 #: ../../docs/about/faq.rst:284
 msgid ""
@@ -5887,7 +5881,6 @@ msgstr ""
 "разработчики Godot."
 
 #: ../../docs/about/faq.rst:432
-#, fuzzy
 msgid ""
 "We explain how to work with the engine source, how to edit the "
 "documentation, and what other ways to contribute are there in our "
@@ -5895,9 +5888,9 @@ msgid ""
 "latest/index.html>`__."
 msgstr ""
 "Мы объясняем, как работать с исходным кодом движка, как редактировать "
-"документацию и какие еще способы внести свой вклад существуют в нашей "
+"документацию и какие ещё существуют способы внести свой вклад, в нашей "
 "`документации для участников <https://contributing.godotengine.org/en/latest/"
-"organization/how_to_contribute.html>`__."
+"index.html>`__."
 
 #: ../../docs/about/faq.rst:436
 msgid "I have a great idea for Godot. How can I share it?"
@@ -6021,14 +6014,13 @@ msgstr ""
 "будущем."
 
 #: ../../docs/about/faq.rst:488
-#, fuzzy
 msgid ""
 "You can find sample applications that use Godot as a library in the `migeran/"
 "libgodot GitHub repository <https://github.com/migeran/libgodot>`__."
 msgstr ""
 "Вы можете найти приложение-пример (сэмпл), которое использует Godot как "
 "библиотеку в `GitHub репозитории migeran/libgodot_project <https://"
-"github.com/migeran/libgodot_project>`__."
+"github.com/migeran/libgodot>`__."
 
 #: ../../docs/about/faq.rst:492
 msgid "What user interface toolkit does Godot use?"
@@ -6346,13 +6338,12 @@ msgid "How can I support Godot development or contribute?"
 msgstr "Как я могу поддержать разработку Godot или внести свой вклад?"
 
 #: ../../docs/about/faq.rst:613
-#, fuzzy
 msgid ""
 "See `How to contribute <https://contributing.godotengine.org/en/latest/"
 "index.html>`__."
 msgstr ""
-"См. `Как внести свой вклад <https://contributing.godotengine.org/en/latest/"
-"organization/how_to_contribute.html>`__."
+"Ознакомьтесь `Как внести свой вклад <https://contributing.godotengine.org/en/"
+"latest/index.html>`__."
 
 #: ../../docs/about/faq.rst:616
 msgid "Who is working on Godot? How can I contact you?"
@@ -6409,7 +6400,6 @@ msgstr ""
 "изначальной."
 
 #: ../../docs/about/complying_with_licenses.rst:28
-#, fuzzy
 msgid ""
 "This section covers compliance with licenses from a user perspective. If you "
 "are interested in license compliance as a contributor, you can find "
@@ -6420,8 +6410,8 @@ msgstr ""
 "В этом разделе рассматриваются вопросы соблюдения условий лицензий с точки "
 "зрения пользователя. Если вас интересует соблюдение лицензий с позиции "
 "участника разработки, соответствующие рекомендации можно найти на странице "
-"`Лучшие практики <https://contributing.godotengine.org/en/latest/engine/"
-"guidelines/best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
+"`Лучшие практики <https://contributing.godotengine.org/en/latest/development/"
+"engine/best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
 "problems>`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
@@ -9347,12 +9337,11 @@ msgstr ""
 "использования в ваших проектах."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:159
-#, fuzzy
 msgid ""
 "You can learn more about the Asset Store in :ref:`doc_what_is_asset_store`."
 msgstr ""
 "Подробнее об Asset Store можно узнать в разделе "
-"ref:`doc_what_is_asset_store`."
+":ref:`doc_what_is_asset_store`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:164
 msgid "Integrated class reference"
@@ -11402,18 +11391,17 @@ msgstr ""
 "godotengine.org/download/>`_."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:116
-#, fuzzy
 msgid ""
 "Since Godot uses .NET 10, in theory, you can use any third-party .NET "
 "library or framework in Godot, as well as any Common Language Infrastructure-"
 "compliant programming language, such as F#, Boo, or ClojureCLR. However, C# "
 "is the only officially supported .NET option."
 msgstr ""
-"Поскольку Godot использует .NET 8, теоретически вы можете использовать любую "
-"стороннюю библиотеку или фреймворк .NET в Godot, а также любой язык "
-"программирования, совместимый с Common Language Infrastructure, например F#, "
-"Boo или ClojureCLR. Однако C# — единственный официально поддерживаемый "
-"вариант .NET."
+"Поскольку Godot использует .NET 10, теоретически вы можете использовать "
+"любую стороннюю библиотеку или фреймворк .NET в Godot, а также любой язык "
+"программирования, совместимый с Common Language Infrastructure: например F#, "
+"Boo или ClojureCLR. Тем не менее, C# является единственным официально "
+"поддерживаемым вариантом для .NET."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:121
 msgid ""
@@ -13253,7 +13241,6 @@ msgid "Sprite animation"
 msgstr "Анимация спрайтов"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:73
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add (:kbd:`Ctrl + A` on Windows/Linux "
 "or :kbd:`Cmd + A` on macOS) a child node :ref:`AnimatedSprite2D "
@@ -13265,15 +13252,15 @@ msgid ""
 "the editor. Make sure ``AnimatedSprite2D`` is selected, then find the "
 "``SpriteFrames`` panel at the bottom of the editor."
 msgstr ""
-"Щелкните узел ``Player`` и добавьте (:kbd:`Ctrl + A` в Windows/Linux "
-"или :kbd:`Cmd + A` в macOS) дочерний узел :ref:`AnimatedSprite2D "
-"<class_AnimatedSprite2D>`. ``AnimatedSprite2D`` будет управлять внешним "
-"видом и анимацией нашего проигрывателя. Обратите внимание, что рядом с узлом "
-"есть предупреждающий символ. ``AnimatedSprite2D`` требует "
-"ресурс :ref:`SpriteFrames <class_SpriteFrames>`, который представляет собой "
-"список анимаций, которые он может отображать. Убедитесь, что выбран "
-"``AnimatedSprite2D``, а затем найдите свойство ``Sprite Frames`` в разделе "
-"``Animation`` в инспекторе и щелкните \"[empty]\" -> \"New SpriteFrames\":"
+"Выберите узел ``Player`` и добавьте к нему дочерний узел "
+":ref:`AnimatedSprite2D <class_AnimatedSprite2D>` (:kbd:`Ctrl + A` в Windows/"
+"Linux или :kbd:`Cmd + A` в macOS). Узел ``AnimatedSprite2D`` будет отвечать "
+"за внешний вид и анимации нашего игрока. Для работы ``AnimatedSprite2D`` "
+"использует ресурс :ref:`SpriteFrames <class_SpriteFrames>` — набор анимаций, "
+"которые можно воспроизводить. При добавлении нового узла в редакторе этот "
+"ресурс создается и назначается узлу ``AnimatedSprite2D`` автоматически. "
+"Убедитесь, что узел ``AnimatedSprite2D`` выбран, а затем найдите панель "
+"``SpriteFrames`` в нижней части окна редактора."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:85
 msgid ""
@@ -14364,16 +14351,15 @@ msgstr ""
 "создать новое сигнальное подключение."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:161
-#, fuzzy
 msgid ""
 "Once all three timers have this set up, you should be able to see that each "
 "timer has a Signal connection for their respective ``timeout()`` signal, "
 "showing in green, within their respective Signals tabs:"
 msgstr ""
-"После того, как все три таймера установили эту настройку, вы сможете "
-"увидеть, как каждый таймер имеет Signal connection (сигнальное соединение) "
-"для их соответствующего сигнала ```timeout ()``, показывая зеленые, на их "
-"соответствующих вкладках Signals:"
+"После того как все три таймера будут настроены таким образом, вы увидите, "
+"что у каждого из них во вкладке «Signals» имеется подключение для "
+"соответствующего сигнала ```timeout ()`` — оно будет отображаться зелёным "
+"цветом:"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:165
 msgid "(For MobTimer): ``_on_mob_timer_timeout()``"
@@ -15414,7 +15400,6 @@ msgstr ""
 "делает её надёжной в качестве преграды для быстро двигающихся объектов."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:80
-#, fuzzy
 msgid ""
 "A box's wireframe appears in the viewport with orange dots at the center of "
 "each face. You can click and drag these to edit the shape's extents "
@@ -15423,12 +15408,12 @@ msgid ""
 "*Size* to ``60`` on the X-axis, ``2`` for the Y-axis, and ``60`` for the Z-"
 "axis."
 msgstr ""
-"В окне просмотра появится каркас параллелепипеда с тремя оранжевыми точками. "
-"Вы можете нажать на них и перетащить для того, чтобы отредактировать размеры "
-"фигуры в интерактивном режиме. Мы также можем с точностью настроить размер в "
-"инспекторе. Нажмите на :ref:`BoxShape3D <class_BoxShape3D>`, чтобы расширить "
-"источник. Установите его *размер* равным ``60`` по оси X, ``2`` по оси Y и "
-"``60`` по оси Z."
+"Во окне просмотра отображается каркас параллелепипеда, в центре каждой грани "
+"которого находятся оранжевые точки. Вы можете нажать на них и перетаскивать "
+"мышью, чтобы интерактивно изменять размеры фигуры. Также можно задать точные "
+"размеры в инспекторе. Нажмите на :ref:`BoxShape3D <class_BoxShape3D>`, чтобы "
+"развернуть свойства ресурса. Установите параметр *Size* (размер): ``60`` по "
+"оси X, ``2`` по оси Y и ``60`` по оси Z."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:89
 msgid ""
@@ -20163,7 +20148,6 @@ msgstr ""
 "игнорировать унаследованную трансформацию."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:478
-#, fuzzy
 msgid ""
 "If building a networked game, keep in mind which nodes and gameplay systems "
 "are relevant to all players versus those just pertinent to the authoritative "
@@ -20172,11 +20156,13 @@ msgid ""
 "separate branch from the \"world\" can help simplify the management of game "
 "connections and the like."
 msgstr ""
-"При создании сетевой игры помните, какие узлы и игровые системы актуальны "
-"для всех игроков, а какие — только для авторитетного сервера. Например, не "
-"всем пользователям нужна копия логики \"PlayerController\" каждого игрока — "
-"им нужна только их собственная. Размещение их в отдельной ветке от \"мира\" "
-"может помочь упростить управление игровыми соединениями и т. п."
+"При разработке сетевой игры учитывайте, какие узлы и игровые системы должны "
+"быть доступны всем игрокам, а какие — только авторитарному серверу. "
+"Например, нет необходимости, чтобы у каждого пользователя была копия логики "
+"\"PlayerController\" для всех остальных игроков — достаточно иметь только "
+"свою собственную. Выделение таких элементов в отдельную ветку, обособленную "
+"от \"мира\" (игрового пространства), поможет упростить управление сетевыми "
+"соединениями и другими подобными аспектами игры."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:485
 msgid ""
@@ -20962,7 +20948,6 @@ msgid "Obtaining object references"
 msgstr "Получение ссылок на объект"
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:18
-#, fuzzy
 msgid ""
 "For all :ref:`Objects <class_Object>`, the most basic way of referencing "
 "them is to get a reference to an existing object from another obtained "
@@ -23717,7 +23702,7 @@ msgid ""
 msgstr ""
 "Godot предлагает собственный порт редактора, работающий полностью на "
 "устройствах Android. Порт для Android можно загрузить со страницы загрузок "
-"для Android <https://godotengine.org/download/android/>`__. Несмотря на то, "
+"для `Android <https://godotengine.org/download/android/>`__. Несмотря на то, "
 "что мы стремимся к равенству возможностей с настольной версией редактора, "
 "Android-порт имеет ряд нюансов, о которых вам следует знать."
 
@@ -23781,7 +23766,6 @@ msgstr ""
 "игровые проекты:"
 
 #: ../../docs/tutorials/editor/project_manager.rst:11
-#, fuzzy
 msgid ""
 "To change the editor's language click on the **Settings** Button in the top "
 "right corner:"
@@ -23855,7 +23839,7 @@ msgid ""
 "Click the :ui:`Create` button to create the project folder and open it in "
 "the editor."
 msgstr ""
-"Нажмите кнопку :ui:`Создать`, чтобы создать папку проекта и открыть его в "
+"Нажмите кнопку :ui:`Create`, чтобы создать папку проекта и открыть его в "
 "редакторе."
 
 #: ../../docs/tutorials/editor/project_manager.rst:47
@@ -23972,7 +23956,6 @@ msgstr ""
 "вам быстрее приступить к работе."
 
 #: ../../docs/tutorials/editor/project_manager.rst:104
-#, fuzzy
 msgid ""
 "The first time you open this tab you'll notice that it's asking you to go "
 "online. For privacy reasons the project manager, and Godot editor, can't "
@@ -23981,13 +23964,14 @@ msgid ""
 "about updates. If you wish to turn this off in the future go into project "
 "manager settings and change **Network Mode** to \"Offline\"."
 msgstr ""
-"При первом открытии этой вкладки вы заметите, что она просит вас выйти в "
-"интернет. Из соображений конфиденциальности менеджер проекта и редактор "
-"Godot по умолчанию не могут получить доступ к интернету. Чтобы включить "
-"доступ в интернет, нажмите кнопку **Go Online**. Это также позволит "
-"менеджеру проекта уведомлять вас об обновлениях. Если вы захотите отключить "
-"это в будущем, перейдите в настройки менеджера проекта и измените **Network "
-"Mode (Сетевой режим)** на \"Offline\""
+"При первом открытии этой вкладки вы увидите запрос на подключение к сети. В "
+"целях конфиденциальности менеджер проектов (как и сам редактор Godot) по "
+"умолчанию не имеет доступа к интернету. Чтобы разрешить доступ, нажмите "
+"кнопку **Go Online** («Подключиться к сети»). Это также позволит менеджеру "
+"проектов уведомлять вас о наличии обновлений. Если в дальнейшем вы захотите "
+"отключить эту функцию, перейдите в настройки менеджера проектов и измените "
+"параметр **Network Mode** («Сетевой режим») на «Offline» («Автономный режим»)"
+"."
 
 #: ../../docs/tutorials/editor/project_manager.rst:110
 msgid ""
@@ -24018,17 +24002,17 @@ msgid "Managing projects with tags"
 msgstr "Менеджмент проектов с помощью тегов"
 
 #: ../../docs/tutorials/editor/project_manager.rst:123
-#, fuzzy
 msgid ""
 "For users with a lot of projects on one PC it can be a lot to keep track of. "
 "To aid in this Godot allows you to create project tags. To add a tag to a "
 "project click on the project in the project manager, then click on the "
 "**Manage Tags** button."
 msgstr ""
-"Для пользователей с большим количеством проектов на одном ПК может быть "
-"сложно отслеживать все. Чтобы помочь в этом, Godot позволяет создавать теги "
-"проектов. Чтобы добавить тег к проекту, щелкните по проекту в менеджере "
-"проектов, затем щелкните по кнопке **Manage Tags (Управление тегами)**"
+"Если у вас на одном компьютере много проектов, бывает непросто уследить за "
+"всеми ними. Чтобы упростить эту задачу, в Godot предусмотрена возможность "
+"создания тегов для проектов. Чтобы добавить тег к проекту, выберите его в "
+"менеджере проектов, а затем нажмите кнопку **Управление тегами** (Manage "
+"Tags)."
 
 #: ../../docs/tutorials/editor/project_manager.rst:129
 msgid ""
@@ -24488,7 +24472,7 @@ msgid ""
 msgstr ""
 "Если в прикреплённом к узлу скрипте есть экспортируемые переменные, вы также "
 "увидите их в инспекторе. На первом изображении в этом разделе показана "
-"переменная для узла Player: `Action Suffix`. Подробнее об этом см. в "
+"переменная для узла Player: :ui:`Action Suffix`. Подробнее об этом см. в "
 "документе :ref:`doc_gdscript_exports`."
 
 #: ../../docs/tutorials/editor/inspector_dock.rst:125
@@ -24885,8 +24869,8 @@ msgstr ""
 "Многие действия в текстовом редакторе также можно выполнять с помощью "
 "горячих клавиш. Рядом с самими действиями отображаются соответствующие им "
 "комбинации. В самом Godot вы можете найти и переназначить любые горячие "
-"клавиши, перейдя в меню :menu:`Редактор > Настройки редактора... > Горячие "
-"клавиши`."
+"клавиши, перейдя в меню :menu:`Editor > Editor Settings... > Shortcuts` "
+"(Редактор > Настройки редактора... > Горячие клавиши)."
 
 #: ../../docs/tutorials/editor/script_editor.rst:99
 msgid ""
@@ -24901,7 +24885,6 @@ msgid "Script Panel"
 msgstr "Панель Скриптов"
 
 #: ../../docs/tutorials/editor/script_editor.rst:119
-#, fuzzy
 msgid ""
 "Below the menus, on the left panel, you will see a list of opened files and "
 "documentation pages. Depending on the file type, this list will have an icon "
@@ -24912,15 +24895,15 @@ msgid ""
 "<doc_running_code_in_the_editor>` for more on this). Hovering a file will "
 "show a tooltip with its relative location in the project folder."
 msgstr ""
-"Под меню, на левой панели, вы увидите список открытых файлов и страниц "
-"документации. В зависимости от типа файла, этот список будет иметь значок "
-"рядом с именем файла. Например, значок |script| означает, что это GDScript. |"
-"scriptcsharp| означает, что это скрипт C#. |documentation| означает, что это "
-"встроенная ссылка на класс. Наконец, |toolscript| означает, что это текущий "
-"запущенный скрипт (см. :ref:`tool annotation "
-"<doc_running_code_in_the_editor>` для получения дополнительной информации об "
-"этом). При наведении курсора на файл отобразится подсказка с его "
-"относительным местоположением в папке проекта."
+"Под меню, на левой панели, отображается список открытых файлов и страниц "
+"документации. Рядом с названием каждого файла находится значок, указывающий "
+"на его тип. Например, значок |script| означает, что это скрипт на языке "
+"GDScript, а |scriptcsharp| — скрипт на C#. Значок |documentation| указывает "
+"на то, что перед вами встроенная справочная информация по классам. Наконец, "
+"значок |toolscript| обозначает скрипт, который выполняется в данный момент "
+"(подробнее об этом см. в разделе :ref:`аннотация tool "
+"<doc_running_code_in_the_editor>`). Если навести курсор на файл, появится "
+"подсказка с указанием его расположения относительно папки проекта."
 
 #: ../../docs/tutorials/editor/script_editor.rst:112
 msgid "script"
@@ -24992,19 +24975,17 @@ msgstr ""
 "несохраненные файлы."
 
 #: ../../docs/tutorials/editor/script_editor.rst:145
-#, fuzzy
 msgid ""
 "You can drag a file to change the ordering. Middle-clicking on a file closes "
 "it. Right-clicking on a file provides several options to save or close "
 "files, or to copy the relative path of the file."
 msgstr ""
-"Вы можете перетащить файл, чтобы изменить порядок. Щелчок средней кнопкой "
-"мыши по файлу закрывает его. Щелчок правой кнопкой мыши по файлу "
-"предоставляет несколько вариантов сохранения или закрытия файлов или "
-"копирования относительного пути к файлу. В этом меню:"
+"Файлы можно перетаскивать, чтобы изменить их порядок. Щелчок средней кнопкой "
+"мыши по файлу закрывает его. Щелчок правой кнопкой мыши открывает меню с "
+"рядом опций: сохранение или закрытие файлов, а также копирование "
+"относительного пути к файлу."
 
 #: ../../docs/tutorials/editor/script_editor.rst:149
-#, fuzzy
 msgid ""
 "On this menu, you can also use **Move Up** and **Move Down** to change the "
 "order of the file, or use **Sort** to sort all files alphabetically. "
@@ -25013,13 +24994,15 @@ msgid ""
 "reference documents leaving only script files open. **Show in FileSystem** "
 "finds and highlights the file in the FileSystem dock."
 msgstr ""
-"Вы также можете использовать **Переместить вверх** и **Переместить вниз**, "
-"чтобы изменить порядок файлов, или **Сортировать**, чтобы отсортировать все "
-"файлы в алфавитном порядке. **Переключить панель файлов** скрывает панель, "
-"которую можно снова отобразить с помощью стрелки вправо в строке состояния. "
-"**Закрыть документы** закрывает все открытые справочные документы классов, "
-"оставляя открытыми только файлы скриптов. **Показать в файловой системе** "
-"находит и выделяет файл в доке файловой системы."
+"В этом меню также можно воспользоваться функциями **Переместить вверх** "
+"(Move Up) и **Переместить вниз** (Move Down), чтобы изменить порядок файлов, "
+"или функцией **Сортировать** (Sort), чтобы упорядочить все файлы по "
+"алфавиту. Опция **Переключить панель файлов** (Toggle Files Panel) скрывает "
+"панель; чтобы снова отобразить её, воспользуйтесь стрелкой вправо в строке "
+"состояния. Команда **Закрыть документы** (Close Docs) закрывает все открытые "
+"справочные документы, оставляя доступными только файлы скриптов. Функция "
+"**Показать в файловой системе** (Show in FileSystem) находит и выделяет файл "
+"на панели файловой системы."
 
 #: ../../docs/tutorials/editor/script_editor.rst:156
 msgid ""
@@ -25202,9 +25185,9 @@ msgid ""
 "**Theme**: Provides options to import an existing theme, save, or reload it. "
 "Changing theme settings is performed via :ui:`Editor Settings`."
 msgstr ""
-"**Тема**: Предоставляет возможности импорта существующей темы, сохранения "
-"или перезагрузки. Изменение настроек темы выполняется через `Настройки "
-"редактора`."
+"**Theme**: Предоставляет возможности импорта существующей темы, сохранения "
+"или перезагрузки. Изменение настроек темы выполняется через :ui:`Editor "
+"Settings`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:218
 msgid "**Close**: Closes the active script."
@@ -25248,10 +25231,10 @@ msgid ""
 "More on the :ui:`Scripts Panel` is explained :ref:`above "
 "<doc_script_editor_script_panel>`."
 msgstr ""
-"**Переключить панель файлов**: Показывает или скрывает панель скриптов, "
-"расположенную в левой части текстового редактора, что позволяет расширить "
-"доступную область кодирования. Подробнее о `панели скриптов` см. :ref:`выше "
-"<doc_script_editor_script_panel>`."
+"**Toggle Files Panel (Переключить панель файлов)**: Показывает или скрывает "
+"панель скриптов, расположенную в левой части текстового редактора, что "
+"позволяет расширить доступную область кодирования. Подробнее о :ui:`Scripts "
+"Panel` см. :ref:`выше <doc_script_editor_script_panel>`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:230
 msgid "The **Edit** menu provides several options for line operations:"
@@ -25499,8 +25482,9 @@ msgid ""
 "**Convert Case**: Changes the case of the selected text to :ui:`Upper "
 "Case`, :ui:`Lower Case`, or capitalizes each initial letter of the words."
 msgstr ""
-"**Преобразовать регистр**: изменяет регистр выделенного текста на `Верхний "
-"регистр`, `Нижний регистр` или делает заглавными все начальные буквы слов."
+"**Convert Case (Преобразовать регистр)**: изменяет регистр выделенного "
+"текста на :ui:`Upper Case`, :ui:`Lower Case` или делает заглавными все "
+"начальные буквы слов."
 
 #: ../../docs/tutorials/editor/script_editor.rst:291
 msgid "**Syntax Highlighter**: Allows you to choose the syntax highlighter."
@@ -25580,11 +25564,12 @@ msgid ""
 "found, in the **Search Results** tab. Clicking on a result opens the file "
 "and jumps to the respective line."
 msgstr ""
-"*Найти в файлах...*: – открывает окно поиска текста в файлах проекта. При "
-"выборе \"Найти...\" поиск начинается в указанной папке, учитывая расширения "
-"файлов, отмеченные в фильтрах. Результаты отображаются в нижней панели на "
-"вкладке **Результаты поиска** с указанием количества совпадений и общего "
-"числа найденных файлов. Нажатие на результат открывает файл и переходит к "
+"**Find in Files... (Найти в файлах...)**: – открывает окно поиска текста в "
+"файлах проекта. При выборе \"Find...\" (\"Найти...\") поиск начинается в "
+"указанной папке, учитывая расширения файлов, отмеченные в фильтрах. "
+"Результаты отображаются в нижней панели на вкладке **Search Results "
+"(Результаты поиска)** с указанием количества совпадений и общего числа "
+"найденных файлов. Нажатие на результат открывает файл и переходит к "
 "соответствующей строке."
 
 #: ../../docs/tutorials/editor/script_editor.rst:317
@@ -25595,10 +25580,12 @@ msgid ""
 "Results** tab in the bottom panel by (un)checking them and using **Replace "
 "All** button."
 msgstr ""
-"«Заменить в файлах...» — открывает окно для поиска и замены текста в файлах "
-"проекта. После нажатия «Заменить...» можно выбрать, в каких файлах "
-"производить замену: во вкладке «Результаты поиска» (нижняя панель) снимите "
-"или поставьте галочки у нужных файлов и нажмите кнопку «Заменить всё»."
+"**Replace in Files.. (Заменить в файлах...)**: открывает окно для поиска и "
+"замены текста в файлах, расположенных в папке проекта. После нажатия кнопки "
+"**Replace... (Заменить...)** вы можете выбрать, в каких именно файлах "
+"произвести замену: для этого перейдите на вкладку **Search Results "
+"(Результаты поиска)** на нижней панели, отметьте (или снимите отметки с) "
+"нужные файлы и воспользуйтесь кнопкой **Replace All (Заменить всё)**."
 
 #: ../../docs/tutorials/editor/script_editor.rst:324
 msgid "Note that \"Replace in Files\" operation cannot be undone!"
@@ -25911,8 +25898,8 @@ msgid ""
 "This feature is also not available if **Single Window Mode** is enabled in "
 "the Editor Settings."
 msgstr ""
-"Эта функция также недоступна, если в настройках редактора включен режим "
-"\"Одного окна\"."
+"Эта функция также недоступна, если в Настройках Редактора включён **Single "
+"Window Mode (однооконный режим)**."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:55
 msgid ""
@@ -25922,14 +25909,14 @@ msgstr ""
 "в отдельное окно."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:57
-#, fuzzy
 msgid ""
 "To split the script editor to its own window, right-click the :ui:`Script` "
 "tab in the top-center of the editor and then click :button:`Make Floating` "
 "in the popup menu:"
 msgstr ""
-"Чтобы разделить редактор скриптов в отдельное окно, нажмите соответствующую "
-"кнопку в правом верхнем углу редактора скриптов:"
+"Чтобы выделить редактор скриптов в отдельное окно, щелкните правой кнопкой "
+"мыши по вкладке :ui:`Script` в верхней центральной части редактора, а затем "
+"выберите пункт :button:`Make Floating` во всплывающем меню:"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:60
 #: ../../docs/tutorials/editor/customizing_editor.rst:64
@@ -25937,13 +25924,13 @@ msgid "Splitting the script editor to its own window"
 msgstr "Разделение редактора сценариев на отдельные окна"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:66
-#, fuzzy
 msgid ""
 "To split the shader editor to its own window, right-click the :ui:`Shader "
 "Editor` tab and then click :button:`Make Floating` in the popup menu:"
 msgstr ""
-"Чтобы отделить редактор шейдеров в отдельное окно, нажмите соответствующую "
-"кнопку в правом верхнем углу редактора скриптов:"
+"Чтобы выделить редактор шейдеров в отдельное окно, щёлкните правой кнопкой "
+"мыши по вкладке :ui:`Shader Editor` и выберите пункт :button:`Make Floating` "
+"в появившемся меню:"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:69
 #: ../../docs/tutorials/editor/customizing_editor.rst:73
@@ -26023,10 +26010,11 @@ msgid ""
 "**Save**. If you've already saved an editor layout, you can choose to "
 "override an existing layout using the list."
 msgstr ""
-"После внесения изменений откройте меню \"Редактор\" в верхней части "
-"редактора и выберите \"Макеты редактора\" > \"Сохранить\". Введите название "
-"макета и нажмите \"Сохранить\". Если вы уже сохранили макет редактора, вы "
-"можете перезаписать существующий макет, используя список."
+"После внесения изменений откройте меню **Editor** (\"Редактор\") в верхней "
+"части редактора и выберите **Editor Layouts > Save** (\"Макеты редактора\" > "
+"\"Сохранить\"). Введите название макета и нажмите **Save** (\"Сохранить\"). "
+"Если вы уже сохранили макет редактора, вы можете перезаписать существующий "
+"макет, используя список."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:104
 msgid ""
@@ -26059,11 +26047,11 @@ msgid ""
 "in the list of layouts to overwrite until you overwrite it once, but you can "
 "still write its name manually."
 msgstr ""
-"Если вы назовете сохраненный макет `По умолчанию` (с учетом регистра), макет "
-"редактора по умолчанию будет перезаписан. Обратите внимание, что `По "
-"умолчанию` не отображается в списке макетов для перезаписи, пока вы не "
-"перезапишете его один раз, но вы все равно можете ввести его название "
-"вручную."
+"Если вы назовете сохраненный макет ``Default`` (По умолчанию) (с учетом "
+"регистра), макет редактора по умолчанию будет перезаписан. Обратите "
+"внимание, что ``Default`` (По умолчанию) не отображается в списке макетов "
+"для перезаписи, пока вы не перезапишете его один раз, но вы все равно можете "
+"ввести его название вручную."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:120
 msgid ""
@@ -26071,9 +26059,9 @@ msgid ""
 "layout after overriding it. (This option does not appear if you haven't "
 "overridden the default layout yet.)"
 msgstr ""
-"Вы можете вернуться к стандартному макету по умолчанию, удалив макет `По "
-"умолчанию` после его перезаписи. (Этот параметр не отображается, если вы еще "
-"не перезаписи макет по умолчанию.)"
+"Вы можете вернуться к стандартному макету по умолчанию, удалив макет "
+"``Default`` (По умолчанию) после его перезаписи. (Этот параметр не "
+"отображается, если вы еще не перезаписи макет по умолчанию.)"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:124
 msgid ""
@@ -26129,11 +26117,13 @@ msgid ""
 "on your display's DPI and resolution. Due to engine limitations, it only "
 "takes the display-provided scaling factor on macOS, not on Windows or Linux."
 msgstr ""
-"**Интерфейс > Редактор > Язык редактора.** Управляет языком, на котором "
-"отображается редактор. Чтобы упростить изучение руководств на английском "
-"языке, вы можете изменить его на английский, чтобы названия меню были "
-"идентичны именам, указанным в руководствах. Язык также можно изменить в "
-"правом верхнем углу менеджера проектов."
+"**Interface > Editor > Display Scale (Интерфейс > Редактор > Язык редактора)"
+":** Определяет размер отображаемых на экране элементов пользовательского "
+"интерфейса. При выборе настройки по умолчанию **Auto** подходящее значение "
+"подбирается автоматически на основе DPI и разрешения вашего дисплея. Из-за "
+"ограничений движка в операционной системе macOS учитывается коэффициент "
+"масштабирования, предоставляемый самим дисплеем, тогда как в Windows или "
+"Linux это не работает."
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:152
 msgid ""
@@ -27925,15 +27915,15 @@ msgid "``--``, ``++``"
 msgstr "``--``, ``++``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:67
-#, fuzzy
 msgid ""
 "|release| Separator for user-provided arguments. Following arguments are not "
 "used by the engine, but can be read "
 "from :ref:`OS.get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`."
 msgstr ""
-"|release| Разделитель для пользовательских аргументов. Приведенные аргументы "
-"не используются движком, но могут быть прочитаны с помощью "
-"``OS.get_cmdline_user_args()``."
+"|release| Разделитель для аргументов, предоставляемых пользователем. "
+"Последующие аргументы не используются движком, но их можно получить с "
+"помощью :ref:`OS.get_cmdline_user_args()"
+"<class_OS_method_get_cmdline_user_args>`."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:70
 msgid "``-e``, ``--editor``"
@@ -29821,11 +29811,11 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:100
 msgid "Features that are used in built-in scripts."
-msgstr ""
+msgstr "Функции, используемые во встроенных скриптах."
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:101
 msgid "Features that are used in C# scripts."
-msgstr ""
+msgstr "Функциональные возможности, используемые в скриптах на C#."
 
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:102
 msgid ""
@@ -35827,7 +35817,6 @@ msgstr ""
 "(`GH-86715`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:271
-#, fuzzy
 msgid ""
 "``AnimationNode`` has a reworked process for retrieving the semantic time "
 "info. This ensures that time-related behavior works as expected, but changes "
@@ -35835,11 +35824,11 @@ msgid ""
 "method is now deprecated and will be replaced by a new one in the future "
 "(`GH-87171`_)."
 msgstr ""
-"``AnimationNode`` имеет переработанный процесс получения семантической "
-"информации о времени. Это гарантирует, что поведение, связанное со временем, "
-"работает так, как ожидается, но изменяет поведение смешивания. Разработчики "
-"виртуального метода ``_process`` также должны обратить внимание, что этот "
-"метод теперь устарел и в будущем будет заменен новым (`GH-87171`_)."
+"В ``AnimationNode`` переработан механизм получения семантической информации "
+"о времени. Это гарантирует, что поведение, связанное со временем, работает "
+"должным образом, однако при этом меняется принцип смешивания (blending). "
+"Также стоит отметить, что виртуальный метод ``_process`` теперь считается "
+"устаревшим; в будущем он будет заменён новым методом (`GH-87171`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:275
 msgid ""
@@ -41468,12 +41457,12 @@ msgstr ""
 "<doc_physics_introduction>` для получения дополнительной информации."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:49
-#, fuzzy
 msgid ""
 "Now select the ``AnimatedSprite2D``, then look for the SpriteFrames panel at "
 "the bottom of the editor:"
 msgstr ""
-"Нажмите на узел TileMapLayer и откройте панель TileMap внизу редактора:"
+"Теперь выберите ``AnimatedSprite2D``, а затем найдите панель SpriteFrames в "
+"нижней части редактора:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:53
 msgid ""
@@ -42137,11 +42126,15 @@ msgid ""
 "particle simulation is as smooth as possible. For particles with collision "
 "enabled, this can also improve collision reliability."
 msgstr ""
+"Установите значение ``0``, чтобы симуляция частиц происходила для каждого "
+"отрисовываемого кадра. Это может повысить нагрузку на графический процессор "
+"(GPU) при использовании сложных систем частиц, но зато обеспечивает "
+"максимально плавную симуляцию. Кроме того, для частиц с включенной функцией "
+"столкновений это может повысить надежность обработки столкновений."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:216
-#, fuzzy
 msgid "Interpolate"
-msgstr "Интерполяция"
+msgstr "Интерполировать"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:218
 msgid ""
@@ -42150,12 +42143,20 @@ msgid ""
 "Only particle motion is interpolated; scale and color curves are currently "
 "not interpolated."
 msgstr ""
+"При включении этой функции система частиц будет выполнять интерполяцию "
+"положения частиц между каждым фиксированным шагом обновления FPS (см. выше). "
+"Это делает визуальное отображение более плавным. Интерполируется только "
+"перемещение частиц; изменение масштаба и цвета (задаваемое кривыми) в данный "
+"момент не интерполируется."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:223
 msgid ""
 "This property has no effect if :inspector:`Fixed FPS` is ``0``, as particles "
 "will be simulated every rendered frame."
 msgstr ""
+"Этот параметр не оказывает никакого влияния, если для :inspector:`Fixed FPS` "
+"задано значение ``0``, поскольку в этом случае симуляция частиц будет "
+"выполняться для каждого отрисовываемого кадра."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid ""
@@ -42164,19 +42165,22 @@ msgid ""
 "physics interpolation should not be confused with "
 "the :inspector:`Interpolate` property on GPUParticles2D."
 msgstr ""
+"В настоящее время Godot не поддерживает :ref:`физическую интерполяцию "
+"<doc_physics_interpolation_introduction>` для GPUParticles2D. Обратите "
+"внимание, что физическую интерполяцию не следует путать со свойством "
+":inspector:`Interpolate` у узлов GPUParticles2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
-#, fuzzy
 msgid ""
 "As a workaround, disable physics interpolation for the particles node by "
 "setting :menu:`Node > Physics Interpolation > Mode` at the bottom of the "
 "inspector, or convert the node to CPUParticles2D which supports physics "
 "interpolation."
 msgstr ""
-"Godot 4.3 в настоящее время не поддерживает интерполяцию физики для 2D-"
-"частиц. В качестве обходного пути отключите интерполяцию физики для узла "
-"частиц, установив **Node > Physics Interpolation > Mode** в нижней части "
-"инспектора."
+"В качестве обходного пути отключите физическую интерполяцию для узла частиц, "
+"установив соответствующий параметр в разделе :menu:`Node > Physics "
+"Interpolation > Mode` (внизу панели инспектора), либо замените этот узел на "
+"`CPUParticles2D`, который поддерживает физическую интерполяцию."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:239
 msgid "Fract Delta"
@@ -43109,15 +43113,14 @@ msgstr ""
 "элемент управления."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
-#, fuzzy
 msgid ""
 "You can find an example of these methods in action in the `Custom Drawing in "
 "2D demo project <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/2d/custom_drawing>`__."
 msgstr ""
-"Пример игровой консоли, созданной с помощью пользовательского регистратора, "
-"можно найти в `демонстрационном проекте Custom Logging <https://github.com/"
-"godotengine/godot-demo-projects/tree/master/misc/custom_logging>`__."
+"Пример использования этих методов на практике можно найти в демонстрационном "
+"проекте `Custom Drawing in 2D demo project <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/2d/custom_drawing>`__."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
 #: ../../docs/tutorials/math/beziers_and_curves.rst:234
@@ -44586,14 +44589,12 @@ msgstr ""
 "различных способов."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
-#, fuzzy
 msgid ""
 "We'll use :ref:`class_CharacterBody2D` for these examples, but the "
 "principles will apply to other node types (Area2D, RigidBody2D) as well."
 msgstr ""
-"Для этих примеров мы будем использовать :ref:`CharacterBody2D "
-"<class_CharacterBody2D>`, но принципы будут применимы и к другим типам узлов "
-"(Area2D, Rigidbody2D)."
+"В этих примерах мы будем использовать :ref:`class_CharacterBody2D`, однако "
+"описанные принципы применимы и к другим типам узлов (Area2D, RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/animation/2d_skeletons.rst:31
@@ -44619,15 +44620,14 @@ msgstr ""
 "качестве текстуры спрайта или любую другую 2D-картинку, которая у вас есть."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
-#, fuzzy
 msgid ""
 "Open :menu:`Project > Project Settings` and select the :button:`Input Map` "
 "tab. Add the following input actions (see :ref:`InputEvent <doc_inputevent>` "
 "for details):"
 msgstr ""
-"Откройте ``Проект -> Настройки проекта`` и выберите вкладку \"Список "
-"действий\". Добавьте следующие действия (для справки :ref:`InputEvent "
-"<doc_inputevent>`):"
+"Откройте :menu:`Project > Project Settings` и выберите вкладку "
+":button:`Input Map`. Добавьте следующие действия ввода (подробнее см. "
+":ref:`InputEvent <doc_inputevent>`):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
@@ -44650,15 +44650,14 @@ msgid "Attach a script to the character body and add the following code:"
 msgstr "Прикрепите скрипт к CharacterBody2D и добавьте следующий код:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:85
-#, fuzzy
 msgid ""
 "In the ``get_input()`` function, we use :ref:`Input.get_vector() "
 "<class_Input_method_get_vector>` to check for the four key events and sum "
 "return a direction vector."
 msgstr ""
-"В функции ``get_input()`` мы используем :ref:`Input <class_Input>` "
-"``get_vector()`` для проверки четырех ключевых событий и возврата суммы в "
-"виде вектора направления."
+"В функции ``get_input()`` мы используем :ref:`Input.get_vector() "
+"<class_Input_method_get_vector>`, чтобы проверить наличие событий от четырёх "
+"клавиш и получить результирующий вектор направления."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:88
 msgid ""
@@ -44736,15 +44735,15 @@ msgstr ""
 "назад остаются прежними."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:220
-#, fuzzy
 msgid ""
 "Here we're using the :ref:`Node2D.look_at() <class_Node2D_method_look_at>` "
 "method to point the player towards the mouse's position. Without this "
 "function, you could get the same effect by setting the angle like this:"
 msgstr ""
-"Здесь мы используем метод :ref:`Node2D <class_Node2D>` ``look_at()``, чтобы "
-"указать игроку на позицию мыши. Без этой функции можно получить тот же "
-"эффект, установив угол примерно так:"
+"Здесь мы используем метод :ref:`Node2D.look_at() "
+"<class_Node2D_method_look_at>`, чтобы повернуть игрока в сторону позиции "
+"курсора мыши. Того же результата можно добиться и без этой функции — "
+"достаточно задать угол следующим образом:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:235
 msgid "Click-and-move"
@@ -50863,7 +50862,6 @@ msgid "**Alpha** is a good fit for particle effects and VFX."
 msgstr "**Alpha** хорошо подходит для эффектов частиц и визуальных эффектов."
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:67
-#, fuzzy
 msgid ""
 "**Alpha Scissor:** Material is transparent. Semi-transparent areas whose "
 "opacity is below **Alpha Scissor Threshold** are not drawn (above this "
@@ -50876,13 +50874,20 @@ msgid ""
 "texture in the Import dock. This improves the consistency of the material's "
 "opacity regardless of the distance between the material and the camera."
 msgstr ""
-"**Alpha Scissor:** Материал прозрачен. Полупрозрачные области, "
-"непрозрачность которых ниже **Alpha Scissor Threshold**, не отрисовываются "
-"(выше этой непрозрачности они отрисовываются как непрозрачные). Это быстрее "
-"для рендеринга, чем Alpha, и не вызывает проблем с сортировкой прозрачности. "
-"Недостатком является то, что это приводит к прозрачности «все или ничего» "
-"без возможности промежуточных значений. Материалы, использующие альфа-"
-"ножницы, могут отбрасывать тени."
+"**Alpha Scissor:** материал является прозрачным. Полупрозрачные участки, "
+"степень непрозрачности которых \"ниже порогового значения\" (**Alpha Scissor "
+"Threshold**), не отрисовываются (при превышении этого порога они "
+"отображаются как полностью непрозрачные). Такой метод отрисовки работает "
+"быстрее, чем обычная прозрачность (Alpha), и позволяет избежать проблем, "
+"связанных с сортировкой прозрачных объектов. Недостатком является то, что "
+"прозрачность здесь работает по принципу «всё или ничего» — промежуточные "
+"значения непрозрачности невозможны. Материалы с использованием Alpha Scissor "
+"могут отбрасывать тени. При выборе этого режима рекомендуется включить опцию "
+":ref:`Mipmaps > Preserve Alpha Test Coverage "
+"<doc_importing_images_mipmaps_preserve_alpha_test_coverage>` (сохранение "
+"покрытия при альфа-тестировании) для текстуры альбедо на панели импорта "
+"(Import dock). Это позволяет сделать непрозрачность материала более "
+"стабильной, независимо от расстояния между ним и камерой."
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:79
 msgid ""
@@ -53281,14 +53286,12 @@ msgstr ""
 "если вы заметили отсутствие теней, не связанное с проблемами смещения теней."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:266
-#, fuzzy
 msgid "Directional contact shadows"
-msgstr "Направленное отображение теней"
+msgstr "Направленные контактные тени"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:270
-#, fuzzy
 msgid "Contact shadows are only available in the Forward+ renderer."
-msgstr "НЕ работает в рендерере Forward+."
+msgstr "Контактные тени доступны только в механизме рендеринга Forward+."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:272
 msgid ""
@@ -53296,6 +53299,10 @@ msgid ""
 "they are not rendered unless **Rendering > Lights and Shadows > Contact "
 "Shadow > Enabled** is checked in the Project Settings."
 msgstr ""
+"По умолчанию контактные тени *разрешены* для каждого источника света типа "
+"DirectionalLight3D, однако они не будут отображаться, если в настройках "
+"проекта (Project Settings) не установлен флажок **Rendering > Lights and "
+"Shadows > Contact Shadow > Enabled**."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:276
 msgid ""
@@ -53303,6 +53310,10 @@ msgid ""
 "shadows that are rendered in a separate pass. This allows for detailed small-"
 "scale shadows to be rendered, which has several benefits."
 msgstr ""
+"DirectionalLight3D также поддерживает *контактные тени* (contact shadows) — "
+"тени в экранном пространстве, которые отрисовываются в отдельном проходе. "
+"Это позволяет отображать детализированные тени небольшого масштаба, что дает "
+"ряд преимуществ."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:280
 msgid ""
@@ -53310,6 +53321,9 @@ msgid ""
 "in the scene by having shadows become progressively sharper the closer the "
 "surface is to the caster:"
 msgstr ""
+"Объекты получают более качественное контактное затенение: тени становятся "
+"всё более чёткими по мере приближения поверхности к отбрасывающему тень "
+"объекту, благодаря чему предметы выглядят более органично вписанными в сцену:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:286
 msgid ""
@@ -53317,6 +53331,10 @@ msgid ""
 "contact shadows. This is useful for small objects like foliage, debris, and "
 "other small details that would otherwise not cast shadows:"
 msgstr ""
+"Объекты, слишком мелкие для того, чтобы отобразиться в карте теней, всё "
+"равно будут отбрасывать контактные тени. Это полезно для небольших объектов "
+"— например, листвы, обломков и других мелких деталей, которые в противном "
+"случае не отбрасывали бы теней:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:292
 msgid ""
@@ -53324,6 +53342,10 @@ msgid ""
 "performance reasons) will still cast contact shadows, as long as they write "
 "to the depth buffer."
 msgstr ""
+"Объекты, у которых параметр **Geometry > Cast Shadow** установлен в значение "
+"**Off** (как правило, в целях оптимизации производительности), всё равно "
+"будут отбрасывать контактные тени — при условии, что они записывают данные в "
+"буфер глубины."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:296
 msgid ""
@@ -53333,12 +53355,20 @@ msgid ""
 "*receive* contact shadows. Objects with the **Alpha** transparency mode do "
 "not write to the depth buffer, and won't cast or receive contact shadows."
 msgstr ""
+"Объекты, которые являются непрозрачными или используют прозрачность типа «"
+"alpha scissor»/«alpha hash», по умолчанию записывают данные в буфер глубины. "
+"Объекты с режимом прозрачности **Предварительный проход глубины** (Depth Pre-"
+"Pass) также записывают данные в буфер глубины и могут отбрасывать контактные "
+"тени, но они не будут *принимать* контактные тени. Объекты с режимом "
+"прозрачности **Альфа-канал** (Alpha) не записывают данные в буфер глубины и "
+"не будут отбрасывать или принимать контактные тени."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:302
-#, fuzzy
 msgid ""
 "DirectionalLight3D offers several properties to control contact shadows:"
-msgstr "DirectionalLight2D имеет следующие свойства:"
+msgstr ""
+"DirectionalLight3D предоставляет несколько свойств для управления "
+"контактными тенями:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:304
 msgid ""
@@ -53346,6 +53376,10 @@ msgid ""
 "inspector. If unchecked, the light won't cast contact shadows even if the "
 "project setting is enabled."
 msgstr ""
+"**Allowed (Разрешено):** Это флажок в разделе контактных теней (contact "
+"shadows) в окне инспектора. Если он снят, источник света не будет "
+"отбрасывать контактные тени, даже если эта возможность включена в настройках "
+"проекта."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:307
 msgid ""
@@ -53353,6 +53387,9 @@ msgid ""
 "``1.0`` results in opaque contact shadows, while lower values result in less "
 "visible contact shadows."
 msgstr ""
+"**Opacity (Непрозрачность):** Этот параметр определяет, насколько темными "
+"будут контактные тени. Значение ``1.0`` делает контактные тени полностью "
+"непрозрачными, а более низкие значения делают их менее заметными."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:310
 msgid ""
@@ -53362,6 +53399,11 @@ msgid ""
 "foliage, you may want to increase this value to make the shadows appear "
 "softer and more natural."
 msgstr ""
+"**Blur (Размытие):** Этот параметр определяет степень размытости контактных "
+"теней. Значение ``0.0`` делает контактные тени максимально четкими, тогда "
+"как более высокие значения придают им мягкость. Если контактные тени "
+"используются преимущественно для растительности, стоит увеличить это "
+"значение, чтобы тени выглядели мягче и естественнее."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:318
 msgid ""
@@ -53371,6 +53413,13 @@ msgid ""
 "can indirectly *improve* performance, especially with a large number of "
 "small objects (such as grass)."
 msgstr ""
+"Включение контактных теней умеренно увеличивает нагрузку на графический "
+"процессор, однако, как правило, это обходится «дешевле», чем повышение "
+"разрешения карты теней. Поскольку использование контактных теней позволяет "
+"без особого ущерба для качества отключить отбрасывание теней для небольших "
+"объектов, это может косвенно *повысить* производительность — особенно в тех "
+"случаях, когда в сцене присутствует множество мелких объектов (например, "
+"трава)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:324
 msgid ""
@@ -53380,6 +53429,11 @@ msgid ""
 "resolutions and at more grazing light angles), but are more demanding on the "
 "GPU."
 msgstr ""
+"Максимальная длина контактных теней определяется настройкой проекта "
+"**Rendering > Lights and Shadows > Contact Shadow > Shadow Length**. Более "
+"высокие значения обеспечивают лучшее покрытие (особенно при высоком "
+"разрешении в окне просмотра и более пологих углах падения света), но при "
+"этом создают повышенную нагрузку на графический процессор (GPU)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:330
 msgid ""
@@ -53389,6 +53443,13 @@ msgid ""
 "in gaps in thin geometry but may also cause shadows to bleed through "
 "surfaces if set too high."
 msgstr ""
+"Наконец, можно также скорректировать настройку проекта **Rendering > Lights "
+"and Shadows > Contact Shadow > Surface Thickness** (Рендеринг > Света и "
+"тени > Контактные тени > Толщина поверхности). Более высокие значения "
+"увеличивают диапазон глубины, в пределах которого объект считается "
+"перекрывающим свет; это позволяет заполнить просветы в тонкой геометрии, "
+"однако при слишком высоких значениях тени могут начать проступать сквозь "
+"поверхности."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:338
 msgid ""
@@ -53396,6 +53457,10 @@ msgid ""
 "what's visible on screen. Off-screen objects will not cast contact shadows, "
 "and objects occluded by other objects won't cast contact shadows either."
 msgstr ""
+"Поскольку контактные тени отрисовываются в экранном пространстве, их "
+"появление ограничено тем, что отображается на экране. Объекты, находящиеся "
+"за пределами экрана, не отбрасывают контактных теней; то же самое касается "
+"объектов, перекрытых другими объектами."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:345
 msgid "Omni light"
@@ -54876,6 +54941,14 @@ msgid ""
 "<class_ProjectSettings_property_rendering/limits/opengl/max_decals>` in "
 "**Project Settings > Rendering > Limits > OpenGL**."
 msgstr ""
+"При использовании механизма визуализации «Compatibility» на каждый отдельный "
+"*ресурс типа «Mesh» (полигональная сетка)* можно наложить не более 8 "
+"декалей. Если на один меш воздействует большее количество декалей, то "
+"отображены будут не все из них. Максимальное число декалей, которые могут "
+"быть отрисованы в рамках одного вида (view), составляет 64. Этот лимит можно "
+"изменить, отрегулировав параметр :ref:`Max Decals "
+"<class_ProjectSettings_property_rendering/limits/opengl/max_decals>` в "
+"разделе **Project Settings > Rendering > Limits > OpenGL**."
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:4
 msgid "Physical light and camera units"
@@ -57503,6 +57576,8 @@ msgid ""
 "Particle trails are separate from the :ref:`Trail3D node "
 "<doc_using_trail_3d>`."
 msgstr ""
+"Particle trails (Следы частиц) — это не то же самое, что узел :ref:`Trail3D "
+"<doc_using_trail_3d>`."
 
 #: ../../docs/tutorials/3d/particles/trails.rst:11
 msgid ""
@@ -57511,6 +57586,11 @@ msgid ""
 "it's designed for standalone trail effects, such as sword slashes or tire "
 "tracks."
 msgstr ""
+"В отличие от шлейфов, привязанных к частицам, узел Trail3D работает со всеми "
+"средствами визуализации (renderers), однако он не поддерживает создание "
+"шлейфов, следующих за отдельными частицами. Вместо этого он предназначен для "
+"создания самостоятельных эффектов — например, следов от взмаха меча или "
+"следов шин."
 
 #: ../../docs/tutorials/3d/particles/trails.rst:18
 msgid ""
@@ -59152,15 +59232,16 @@ msgstr ""
 "время игры."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:4
-#, fuzzy
 msgid "Using Trail3D"
-msgstr "Использование Area2D"
+msgstr "Использование Trail3D"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:8
 msgid ""
 "The Trail3D node is separate from the :ref:`particle trails "
 "<doc_3d_particles_trails>` functionality available in GPUParticles3D."
 msgstr ""
+"Узел Trail3D отделён от функциональности :ref:`particle trails "
+"<doc_3d_particles_trails>` (шлейфы частиц), доступной в GPUParticles3D."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:12
 msgid ""
@@ -59169,6 +59250,10 @@ msgid ""
 "displaying trails behind individual particles. Instead, Trail3D is designed "
 "for standalone trail effects."
 msgstr ""
+"Следы от частиц поддерживаются только в методах визуализации Forward+ и "
+"Mobile, тогда как Trail3D работает со всеми методами визуализации. Однако "
+"Trail3D не поддерживает отображение следов за отдельными частицами. Вместо "
+"этого Trail3D предназначен для создания самостоятельных эффектов следов."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:17
 msgid ""
@@ -59176,26 +59261,27 @@ msgid ""
 "to create trails in 3D space. This node is designed to be used for "
 "standalone trail effects, such as sword slashes or tire tracks."
 msgstr ""
+"Начиная с версии 4.8, в Godot появился узел :ref:`class_Trail3D`, "
+"предназначенный для создания следов в трёхмерном пространстве. Этот узел "
+"можно использовать для создания самостоятельных эффектов — например, следов "
+"от взмахов меча или следов шин."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:23
-#, fuzzy
 msgid ""
 "You can see how trails work in the `3D Trails demo project <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/3d/trails>`__."
 msgstr ""
-"Вы можете увидеть, как работает 3D-навигация в действии, используя `3D "
-"Navigation demo project <https://github.com/godotengine/godot-demo-projects/"
-"tree/master/3d/navigation>`__."
+"Вы можете посмотреть, как устроены маршруты, в `3D Trails demo project "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/3d/trails>"
+"`__."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:27
-#, fuzzy
 msgid "Trail3D properties"
-msgstr "Свойства трейлов"
+msgstr "Характеристики Trail3D"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:30
-#, fuzzy
 msgid "Emitting"
-msgstr "Предоставление"
+msgstr "Emitting (Испускание)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:32
 msgid ""
@@ -59203,6 +59289,9 @@ msgid ""
 "trail from emitting new segments, while still allowing the existing segments "
 "to fade out over time."
 msgstr ""
+"Если эта функция включена, trail (шлейф) активно создаёт новые элементы. Её "
+"можно отключить, чтобы прекратить появление новых сегментов шлейфа, при этом "
+"уже существующие сегменты будут постепенно исчезать."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:36
 msgid ""
@@ -59210,6 +59299,10 @@ msgid ""
 "will reset, which means all existing segments will be cleared. It will then "
 "start emitting new segments from the current position of the Trail3D node."
 msgstr ""
+"Если вы снова включите свойство **Emitting** после того, как отключили его, "
+"след (trail) будет сброшен — это означает, что все существующие сегменты "
+"будут удалены. После этого начнется создание новых сегментов, исходящих из "
+"текущего положения узла Trail3D."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:42
 msgid ""
@@ -59217,6 +59310,9 @@ msgid ""
 "all other properties can be adjusted at runtime without causing the trail to "
 "be reset."
 msgstr ""
+"За исключением параметров **Emitting**, **Limit Mode** и **Mesh Alignment**, "
+"все остальные свойства можно изменять во время выполнения, не вызывая при "
+"этом сброса шлейфа."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:46
 msgid ""
@@ -59224,11 +59320,14 @@ msgid ""
 "it while changing properties, consider setting its **Limit Mode** to "
 "**Length**, then move it around and adjust the properties."
 msgstr ""
+"След создается в зависимости от перемещения узла. Если вам нужно "
+"визуализировать его в процессе изменения свойств, попробуйте установить для "
+"параметра **Limit Mode** (режим ограничения) значение **Length** (длина), а "
+"затем перемещайте узел и корректируйте свойства."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:51
-#, fuzzy
 msgid "Limit Mode"
-msgstr "Limiter (Ограничитель)"
+msgstr "Limit Mode (Режим ограничения)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:53
 msgid ""
@@ -59236,6 +59335,9 @@ msgid ""
 "length is effectively determined by the node's movement speed, with the "
 "trail appearing longer at higher speeds."
 msgstr ""
+"**Time:** След постепенно исчезает в течение периода, заданного в параметре "
+"**Lifetime** (время жизни). Фактическая длина следа зависит от скорости "
+"движения узла: при более высокой скорости след становится длиннее."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:56
 msgid ""
@@ -59243,18 +59345,22 @@ msgid ""
 "property. The trail's lifetime is effectively determined by the node's "
 "movement speed. If the trail does not move, it remains visible indefinitely."
 msgstr ""
+"**Length:** Длина следа фиксирована и определяется свойством **Max Length** "
+"(Максимальная длина). Фактическая продолжительность существования следа "
+"зависит от скорости движения узла. Если узел не движется, след остается "
+"видимым неограниченно долго."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:62
 msgid "Width"
-msgstr ""
+msgstr "Width (Ширина)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:64
 msgid "The trail's width in meters."
-msgstr ""
+msgstr "Ширина тропы в метрах."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:67
 msgid "Width Curve"
-msgstr ""
+msgstr "Width Curve (Кривая ширины)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:69
 msgid ""
@@ -59264,6 +59370,10 @@ msgid ""
 "the start of the trail), while the vertical axis represents the width "
 "multiplier."
 msgstr ""
+"Эта кривая служит множителем для ширины следа на всем его протяжении. "
+"Используйте её, чтобы создавать следы, которые сужаются или имеют "
+"определённую форму. Горизонтальная ось кривой соответствует длине следа (где "
+"X = 0 — это начало следа), а вертикальная ось — множителю ширины."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:74
 msgid ""
@@ -59271,11 +59381,15 @@ msgid ""
 "applied incorrectly, try decreasing the **Min Section Length** property to "
 "create more vertices along the trail."
 msgstr ""
+"Кривая ширины применяется для каждой вершины в отдельности. Если кажется, "
+"что кривая применяется некорректно, попробуйте уменьшить значение параметра "
+"**Min Section Length** (минимальная длина сегмента), чтобы создать больше "
+"вершин вдоль траектории."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:81
 msgid ""
 "The trail's color and opacity (determined by the color's alpha channel)."
-msgstr ""
+msgstr "Цвет и непрозрачность следа (определяемая альфа-каналом цвета)."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:85
 msgid ""
@@ -59283,6 +59397,10 @@ msgid ""
 "colors. If using a custom shader, make sure to multiply ``ALBEDO`` and "
 "``ALPHA`` by ``COLOR.rgb`` and ``COLOR.a`` respectively in ``fragment()``."
 msgstr ""
+"И в случае с **Color**, и в случае с **Color Gradient** цвет задаётся с "
+"помощью цветов вершин (vertex colors). Если вы используете пользовательский "
+"шейдер (custom shader), убедитесь, что в функции ``fragment()`` вы умножаете "
+"``ALBEDO`` на ``COLOR.rgb``, а ``ALPHA`` — на ``COLOR.a``."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:89
 msgid ""
@@ -59292,11 +59410,17 @@ msgid ""
 "and in the custom shader, add a brightness multiplier ``float`` uniform to "
 "the shader and use it to multiply the final color in ``fragment()``."
 msgstr ""
+"Цвета в формате HDR, заданные в этом свойстве, ограничиваются диапазоном "
+"SDR, поскольку в Godot значения вершинных цветов (vertex colors) для каждого "
+"канала принудительно приводятся к интервалу от ``0.0`` до ``1.0``. Чтобы "
+"получить более яркие цвета, установите режим материала (material mode) в "
+"значение **Custom**, добавьте в пользовательский шейдер униформ типа "
+"``float`` (множитель яркости) и используйте его для умножения итогового "
+"цвета в функции ``fragment()``."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:97
-#, fuzzy
 msgid "Color Gradient"
-msgstr "Цветовая полоса"
+msgstr "Color Gradient (Цветовой градиент)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:99
 msgid ""
@@ -59306,6 +59430,10 @@ msgid ""
 "being the start of the trail), while the vertical axis represents the color "
 "multiplier."
 msgstr ""
+"Этот градиент действует как множитель для цвета следа на всем его "
+"протяжении. Используйте его для создания следов, которые постепенно исчезают "
+"или меняют свой цвет. Горизонтальная ось градиента соответствует длине следа "
+"(где X = 0 — это его начало), а вертикальная ось — множителю цвета."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:104
 msgid ""
@@ -59313,10 +59441,13 @@ msgid ""
 "to be applied incorrectly, try decreasing the **Min Section Length** "
 "property to create more vertices along the trail."
 msgstr ""
+"Цветовой градиент применяется для каждой вершины. Если градиент отображается "
+"некорректно, попробуйте уменьшить значение параметра **Min Section Length** "
+"(минимальная длина секции), чтобы создать больше вершин вдоль траектории."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:109
 msgid "Mesh Alignment"
-msgstr ""
+msgstr "Mesh Alignment (Выравнивание сетки)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:111
 msgid ""
@@ -59327,6 +59458,13 @@ msgid ""
 "along a path, the path's tilt is taken into account. This is generally the "
 "mode to use for effects like sword slashes."
 msgstr ""
+"При использовании режима **Local** (локальный) создаваемая сетка (mesh) "
+"привязывается к локальному пространству следа. Это означает, что сетка "
+"вращается и масштабируется в зависимости от движения и ориентации самого "
+"следа. Например, если для отрисовки следа вдоль пути используется связка "
+":ref:`class_Path3D` + :ref:`class_PathFollow3D`, то учитывается наклон этого "
+"пути. Как правило, именно этот режим лучше всего подходит для создания таких "
+"эффектов, как взмахи мечом."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:117
 msgid ""
@@ -59335,6 +59473,10 @@ msgid ""
 "This mode is useful to create effects that need to be visible from any "
 "angle, such as smoke or fire trails."
 msgstr ""
+"При использовании режима **Billboard** (плоский спрайт) след всегда будет "
+"обращен к камере, независимо от его ориентации или движения. Масштаб узла "
+"при этом также не учитывается. Этот режим полезен для создания эффектов, "
+"которые должны быть видны с любого ракурса — например, следов дыма или огня."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:122
 #: ../../docs/tutorials/3d/using_trail_3d.rst:126
@@ -59342,21 +59484,26 @@ msgid ""
 "Comparison of local and billboard mesh alignment modes (with shading enabled "
 "to ease visualization)"
 msgstr ""
+"Сравнение режимов выравнивания сетки — локального и «билбордного» (с "
+"включенным затенением для облегчения визуализации)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:129
-#, fuzzy
 msgid "Material Mode"
-msgstr "Материалы"
+msgstr "Material Mode (Режим материалов)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:131
 msgid ""
 "Controls what material is used to display the trail. The available options "
 "are:"
 msgstr ""
+"Определяет, какой материал используется для отображения следа. Доступны "
+"следующие варианты:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:133
 msgid "**Default:** Provides an unshaded material with \"mix\" blending."
 msgstr ""
+"**Default:** Предоставляет материал без затенения, с использованием "
+"смешивания типа \"mix\"."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:134
 msgid ""
@@ -59364,6 +59511,9 @@ msgid ""
 "blending instead. You can use it for energy-based effects such as lasers or "
 "magic spells."
 msgstr ""
+"**Default Additive:** Аналогичен материалу Default, но использует аддитивное "
+"смешивание. Его можно применять для создания энергетических эффектов — "
+"например, лазеров или магических заклинаний."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:136
 msgid ""
@@ -59374,6 +59524,14 @@ msgid ""
 "to create your own effects, such as displaying textures or distorting the "
 "trail's vertices."
 msgstr ""
+"**Custom (Пользовательский):** Предоставляемый пользователем "
+":ref:`пространственный шейдер (spatial shader) <doc_spatial_shader>`, "
+"который можно редактировать. Он изначально содержит код шейдера, реализующий "
+"выбранный режим «билбординга» (billboarding) — в зависимости от того, какое "
+"значение было задано для свойства **Mesh Alignment** (выравнивание сетки) в "
+"момент выбора режима материала **Custom**. Вы можете изменять этот шейдер "
+"для создания собственных эффектов, например, для отображения текстур или "
+"искажения вершин следа (трейла)."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:143
 #: ../../docs/tutorials/3d/using_trail_3d.rst:147
@@ -59381,6 +59539,8 @@ msgid ""
 "Comparison of untextured and textured trails (with GradientTexture2D for "
 "tapered or dashed trails)"
 msgstr ""
+"Сравнение нетекстурированных и текстурированных следов (с использованием "
+"GradientTexture2D для создания сужающихся или пунктирных следов)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:149
 #: ../../docs/tutorials/3d/using_trail_3d.rst:153
@@ -59388,17 +59548,18 @@ msgid ""
 "Example of trails using textures and vertex distortion to achieve lightning "
 "or smoke effects"
 msgstr ""
+"Пример создания шлейфов с использованием текстур и искажения вершин для "
+"получения эффектов молнии или дыма"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:155
-#, fuzzy
 msgid ""
 "There are several examples of custom trail shaders in the `3D Trails demo "
 "project <https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
 "trails>`__."
 msgstr ""
-"Вы можете увидеть 3D-текст в действии с помощью `демо-проекта 3D Labels and "
-"Texts <https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
-"labels_and_texts>`__."
+"В демонстрационном проекте `3D Trails demo project <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/trails>`__ представлено "
+"несколько примеров пользовательских шейдеров для создания следов."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:160
 msgid ""
@@ -59406,23 +59567,29 @@ msgid ""
 "**Custom** material mode, you will need to adapt your custom shader "
 "accordingly:"
 msgstr ""
+"Если вы измените свойство **Mesh Alignment** после переключения в режим "
+"материала **Custom**, вам потребуется соответствующим образом адаптировать "
+"свой пользовательский шейдер:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:163
 msgid ""
 "If using the **Local** mode, remove the billboarding code below from the "
 "``vertex()`` function."
 msgstr ""
+"При использовании режима **Local** удалите из функции ``vertex()`` "
+"приведённый ниже код, отвечающий за билбординг."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:164
 msgid ""
 "If using the **Billboard** mode, ensure that the billboarding code is "
 "present in the ``vertex()`` function:"
 msgstr ""
+"При использовании режима **Billboard** убедитесь, что код для реализации "
+"этого режима присутствует в функции ``vertex()``:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:186
-#, fuzzy
 msgid "Tiling Mode"
-msgstr "Режим масштабирования"
+msgstr "Tiling Mode (Режим мозаики)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:190
 msgid ""
@@ -59430,11 +59597,13 @@ msgid ""
 "shader, as there is currently no way to supply a texture in the default "
 "shader."
 msgstr ""
+"Этот режим мозаичного заполнения заметен только для тех шлейфов, в которых "
+"используется пользовательский шейдер, поскольку в стандартном шейдере в "
+"настоящее время нет возможности задать текстуру."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:194
-#, fuzzy
 msgid "There are two tiling modes available for the Trail3D's UV map:"
-msgstr "Для этого доступны четыре макроса:"
+msgstr "Для UV-карты Trail3D доступны два режима мозаичного заполнения:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:196
 msgid ""
@@ -59442,12 +59611,17 @@ msgid ""
 "change according to the trail's length, which can cause stretching of the "
 "texture."
 msgstr ""
+"**Unit (Единица измерения):** UV охватывает всю длину следа. Соотношение "
+"сторон UV будет меняться в зависимости от длины следа, что может привести к "
+"растяжению текстуры."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:199
 msgid ""
 "**Length:** The UV has a fixed length in world space. The UV's aspect ratio "
 "is unaffected by the trail's length."
 msgstr ""
+"**Length (Длина):** UV-координаты имеют фиксированную длину в мировом "
+"пространстве. Соотношение сторон UV-координат не зависит от длины шлейфа."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:202
 msgid ""
@@ -59457,17 +59631,26 @@ msgid ""
 "repeat the texture twice along the trail's length. This value can be set to "
 "a negative number to flip the UVs."
 msgstr ""
+"В обоих режимах для масштабирования UV-координат можно использовать свойство "
+"**Tiling Multiplier** (множитель мозаичного заполнения). При выборе режима "
+"**Unit** значение ``1.0`` означает, что UV-координаты будут распределены по "
+"всей длине шлейфа, а значение ``2.0`` приведет к тому, что текстура "
+"повторится вдоль шлейфа дважды. Этому параметру можно задать отрицательное "
+"значение, чтобы зеркально отразить UV-координаты."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:208
 msgid ""
 "When **Tiling Mode** is set to **Length**, you can also enable **Pin UV** to "
 "ensure UVs don't move in world space when the trail moves:"
 msgstr ""
+"Если для параметра **Tiling Mode** (Режим мозаики) задано значение "
+"**Length** (Длина), можно также включить опцию **Pin UV** (Закрепить UV), "
+"чтобы UV-координаты оставались неподвижными в мировом пространстве при "
+"перемещении шлейфа:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:219
-#, fuzzy
 msgid "Min Section Length"
-msgstr "Длительность анимации"
+msgstr "Min Section Length (Минимальная длина секции)"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:221
 msgid ""
@@ -59477,6 +59660,12 @@ msgid ""
 "smoother in curved sections, and allow width/color curves to be represented "
 "more accurately."
 msgstr ""
+"Свойство **Min Section Length** (минимальная длина сегмента) определяет "
+"уровень детализации шлейфа. Более низкие значения приводят к созданию шлейфа "
+"с бо́льшим количеством сегментов, тогда как более высокие значения — к "
+"созданию шлейфа с меньшим их числом. Шлейфы с бо́льшим количеством сегментов "
+"выглядят более плавными на изгибах и позволяют точнее передавать изменения "
+"ширины или цвета вдоль линии шлейфа."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:226
 msgid ""
@@ -59486,24 +59675,37 @@ msgid ""
 "use lower values, while trails with longer lifetimes may require higher "
 "values to avoid excessive segment counts."
 msgstr ""
+"Настройте это значение, исходя из типичной скорости движения шлейфа, "
+"желаемого визуального эффекта и требований к производительности (более "
+"низкие значения создают повышенную нагрузку на центральный и графический "
+"процессоры). Для шлейфов с коротким временем жизни, как правило, можно "
+"использовать меньшие значения, тогда как для шлейфов с более длительным "
+"временем жизни могут потребоваться более высокие значения, чтобы избежать "
+"чрезмерного количества сегментов."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:232
 #: ../../docs/tutorials/3d/using_trail_3d.rst:236
 msgid ""
 "Comparison of different Min Section Length values on a corkscrew trail effect"
 msgstr ""
+"Сравнение различных значений Минимальной Длины Секции (Min Section Length) "
+"применительно к эффекту трассы типа «штопор»"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:238
 msgid ""
 "A lower value also allows the trail to better follow the object, with less "
 "of a visible gap between the object and the beginning of the trail:"
 msgstr ""
+"Более низкое значение также позволяет следу лучше следовать за объектом с "
+"меньшим видимым зазором между объектом и началом следа:"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:241
 #: ../../docs/tutorials/3d/using_trail_3d.rst:245
 msgid ""
 "Comparison of different Min Section Length values on a sword slash effect"
 msgstr ""
+"Сравнение различных значений Минимальной Длины Сегмента (Min Section Length) "
+"применительно к эффекту удара мечом"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:249
 msgid ""
@@ -59512,6 +59714,11 @@ msgid ""
 "case, you should increase **Min Section Length**, or decrease the trail's "
 "lifetime or maximum length to reduce its vertex count."
 msgstr ""
+"Существует жесткое ограничение: не более 65 536 вершин на один след. При "
+"достижении этого предела выводится предупреждение, а сам след начинает "
+"отображаться некорректно. В таком случае следует увеличить параметр **Min "
+"Section Length** (Минимальная Длина Сегмента) либо уменьшить время жизни или "
+"максимальную длину следа, чтобы сократить количество вершин."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:6
 msgid "High dynamic range lighting"
@@ -61584,8 +61791,8 @@ msgid ""
 msgstr ""
 "**Dynamic (не поддерживается в SDFGI):** меш не учитывается при генерации "
 "SDFGI. Он будет получать непрямое освещение от сцены, но не будет влиять на "
-"непрямое освещение сцены. *При использовании SDFGI этот режим работает "
-"идентично режиму **Disabled**.*"
+"непрямое освещение сцены. При использовании SDFGI этот режим работает "
+"идентично режиму **Disabled**."
 
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:145
 msgid ""
@@ -62588,6 +62795,11 @@ msgid ""
 "lightmap. This is only effective if **Directional** is enabled. "
 "See :ref:`doc_using_lightmap_gi_directional_specular` for more information."
 msgstr ""
+"**Specular Intensity (Интенсивность бликов):** Интенсивность зеркальных "
+"отражений, получаемых из карты освещения (lightmap). Этот параметр действует "
+"только в том случае, если включена опция **Directional** (направленное "
+"освещение). Дополнительные сведения см. в разделе "
+":ref:`doc_using_lightmap_gi_directional_specular`."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:382
 msgid ""
@@ -62712,7 +62924,7 @@ msgstr "**Data > Light Data:** См. :ref:`doc_using_lightmap_gi_data`."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:424
 msgid "Directional specular reflections"
-msgstr ""
+msgstr "Directional specular reflections (Направленные зеркальные отражения)"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:426
 msgid ""
@@ -62720,6 +62932,10 @@ msgid ""
 "in scenes looking flat after baking lightmaps, especially with lights using "
 "the **Static** bake mode."
 msgstr ""
+"По умолчанию LightmapGI не отрисовывает зеркальные отражения. Из-за этого "
+"после запекания карт освещения сцены могут выглядеть плоскими — особенно в "
+"тех случаях, когда для источников света используется режим запекания "
+"**Static**."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:430
 msgid ""
@@ -62730,6 +62946,14 @@ msgid ""
 "cost. A value of ``1.0`` represents the standard specular strength, but you "
 "should experiment with various values to see what works best for your scene."
 msgstr ""
+"Если вы запекали карты освещения с включенным параметром **Directional**, вы "
+"можете включить зеркальные отражения от карты освещения, установив для "
+"**Specular Intensity** значение больше ``0.0``. Это позволяет "
+"визуализировать зеркальные отражения на основе информации о направлении "
+"карты освещения с небольшими затратами производительности. Значение ``1,0`` "
+"представляет собой стандартную силу отражения, но вам следует "
+"поэкспериментировать с различными значениями, чтобы увидеть, что лучше всего "
+"подходит для вашей сцены."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:437
 msgid ""
@@ -62739,11 +62963,19 @@ msgid ""
 "mode, only indirect lighting is baked, so the effect of specular reflections "
 "from the lightmap will be less noticeable."
 msgstr ""
+"Зеркальные отражения в лайтмапах (lightmaps) создают наиболее заметный "
+"визуальный эффект при использовании излучающих объектов или источников света "
+"в режиме запекания **Static**, поскольку в этом случае запекается как "
+"прямое, так и непрямое освещение. Для источников света в режиме запекания "
+"**Dynamic** запекается только непрямое освещение, поэтому эффект зеркальных "
+"отражений, получаемый из лайтмапа, будет выражен слабее."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:443
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:447
 msgid "Comparison between LightmapGI specular intensity set to 0.0 and 1.0"
 msgstr ""
+"Сравнение настроек интенсивности зеркальных отражений (specular intensity) в "
+"LightmapGI: 0.0 и 1.0"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:449
 msgid ""
@@ -62755,6 +62987,17 @@ msgid ""
 "lightmaps, and consider switching to the OIDN denoiser as described in "
 "the :ref:`doc_using_lightmap_gi_denoising` section."
 msgstr ""
+"Этот эффект является приближенным, поскольку направление зеркального "
+"отражения (specular direction) вычисляется лишь на основе данных о "
+"направлении света, содержащихся в карте освещенности (lightmap). Эти данные "
+"представляют собой усредненные значения для всех источников света, "
+"воздействующих на конкретный тексель карты освещенности. В ситуациях, когда "
+"на один тексель влияет сразу несколько источников света, это может привести "
+"к визуальному искажению («искривлению») бликов. Для достижения наилучшего "
+"результата убедитесь, что при запекании карт освещенности включена функция "
+"**Denoiser** (шумоподавления); также рекомендуется использовать алгоритм "
+"OIDN — подробнее об этом см. в разделе "
+":ref:`doc_using_lightmap_gi_denoising`."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:457
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:461
@@ -62762,6 +63005,8 @@ msgid ""
 "Comparison between real-time lighting and baked lighting with specular "
 "reflections from the lightmap"
 msgstr ""
+"Сравнение освещения в реальном времени и «запеченного» освещения со "
+"зеркальными отражениями, полученными из карты освещенности (lightmap)"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:466
 msgid "Using shadowmasking for distant directional shadows"
@@ -63689,6 +63934,13 @@ msgid ""
 "reflection_count>` in **Project Settings > Rendering > Reflections > "
 "Reflection Atlas**."
 msgstr ""
+"При использовании визуализатора Forward+ для отрисовки зон отражения "
+"(reflection probes) в Godot применяется метод *кластеризации*. По умолчанию "
+"в дереве сцены может одновременно находиться и отображаться до 64 зон "
+"отражения. Этот лимит можно увеличить до 256, изменив параметр "
+":ref:`Reflection Count <class_ProjectSettings_property_rendering/reflections/"
+"reflection_atlas/reflection_count>` в разделе **Project Settings > "
+"Rendering > Reflections > Reflection Atlas**."
 
 #: ../../docs/tutorials/3d/global_illumination/reflection_probes.rst:186
 #, fuzzy
@@ -76543,7 +76795,7 @@ msgid ""
 msgstr ""
 "Выберите узел ``VideoStreamPlayer`` в сцене и перейдите к его свойствам. В "
 "разделе :menu:`CanvasItem > Material` создайте новый шейдер с именем "
-"\"ChromaKeyShader.gdshader\"."
+"\"ChromaKeyShader.gdshader.\""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:291
 msgid ""
@@ -88579,9 +88831,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:39
-#, fuzzy
 msgid "The feature can be enabled from two locations:"
-msgstr "Регион можно включить/отключить."
+msgstr "Эту функцию можно включить двумя способами:"
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:41
 msgid "From the Project menu, select :menu:`Setup Android Build...`."
@@ -96293,7 +96544,6 @@ msgid "Extracting localizable strings from project files"
 msgstr "Извлечение локализуемых строк из файлов GDScript"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:251
-#, fuzzy
 msgid ""
 "The built-in editor plugins for `PackedScene <https://github.com/godotengine/"
 "godot/blob/master/editor/translations/"
@@ -96302,10 +96552,12 @@ msgid ""
 "gdscript_translation_parser_plugin.h>`_ recognize a variety of patterns to "
 "extract localizable strings."
 msgstr ""
-"Встроенный `плагин редактора <https://github.com/godotengine/godot/blob/"
-"master/modules/gdscript/editor/gdscript_translation_parser_plugin.h>`_ "
-"распознает различные шаблоны в исходном коде для извлечения локализуемых "
-"строк из файлов GDScript, включая, помимо прочего, следующие:"
+"Встроенные в редактор плагины для `PackedScene <https://github.com/"
+"godotengine/godot/blob/master/editor/translations/"
+"packed_scene_translation_parser_plugin.cpp>`_ и `GDScript <https://"
+"github.com/godotengine/godot/blob/master/modules/gdscript/editor/"
+"gdscript_translation_parser_plugin.h>`_ распознают различные шаблоны для "
+"извлечения строк, подлежащих локализации."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:257
 #, fuzzy
@@ -96356,9 +96608,8 @@ msgid "``accessibility_name``;"
 msgstr "``--accessibility <mode>``"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:270
-#, fuzzy
 msgid "``accessibility_description``."
-msgstr "``<brief_description>``"
+msgstr "``accessibility_description``."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:272
 msgid ""
@@ -123918,8 +124169,8 @@ msgid ""
 "This property is the maximum angle before a surface is no longer considered "
 "a \"floor.\""
 msgstr ""
-"Этот параметр — максимальный угол, после которого поверхность перестаёт "
-"считаться «полом»."
+"Этот параметр определяет максимальный угол, при превышении которого "
+"поверхность перестаёт считаться \"полом.\""
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:117
 msgid ""
@@ -125726,9 +125977,8 @@ msgid "The types of collision shapes available in 2D in Godot."
 msgstr "Типы форм столкновений, доступные в 2D в Godot."
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:9
-#, fuzzy
 msgid "Visualizing collision shapes in-game."
-msgstr "Формы столкновения цилиндров нестабильны"
+msgstr "Визуализация форм столкновений в игре."
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:10
 msgid "Using an image converted to a polygon as a collision shape."
@@ -125963,9 +126213,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:111
-#, fuzzy
 msgid "Generating collision shapes from images"
-msgstr "Создание треугольных форм столкновения для любой сетки из редактора."
+msgstr "Создание форм для обработки столкновений на основе изображений"
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:113
 msgid ""
@@ -130467,7 +130716,6 @@ msgstr ""
 "самостоятельно."
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:118
-#, fuzzy
 msgid ""
 "Using `GodotHost#getHostPlugins(...) <https://github.com/m4gr3d/Godot-"
 "Android-Samples/blob/master/apps/gltf_viewer/src/main/java/fhuyakou/godot/"
@@ -130478,13 +130726,12 @@ msgid ""
 "<doc_signals>` to the embedded Godot project scripts."
 msgstr ""
 "Используя `GodotHost#getHostPlugins(...) <https://github.com/m4gr3d/Godot-"
-"Android-Samples/blob/0e3440f357f8be5b4c63a4fe75766793199a99d0/apps/"
-"gltf_viewer/src/main/java/fhuyakou/godot/app/android/gltfviewer/"
-"MainActivity.kt#L55>`_, пример приложения создает `экземпляр GodotPlugin "
-"среды выполнения <https://github.com/m4gr3d/Godot-Android-Samples/blob/"
-"master/apps/gltf_viewer/src/main/java/fhuyakou/godot/app/android/gltfviewer/"
-"AppPlugin.kt>`_, который используется для отправки :ref:`signals "
-"<doc_signals>` к логике ``gdscript``"
+"Android-Samples/blob/master/apps/gltf_viewer/src/main/java/fhuyakou/godot/"
+"app/android/gltfviewer/MainActivity.kt#L55>`_, пример приложения создает "
+"`экземпляр GodotPlugin среды выполнения <https://github.com/m4gr3d/Godot-"
+"Android-Samples/blob/master/apps/gltf_viewer/src/main/java/fhuyakou/godot/"
+"app/android/gltfviewer/AppPlugin.kt>`_, который используется для отправки "
+":ref:`signals <doc_signals>` к скриптам встроенного проекта Godot."
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:120
 #, fuzzy
@@ -130718,9 +130965,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:258
-#, fuzzy
 msgid "``<path_to_godot_project>`` is the path to the Godot project"
-msgstr "**godot_project_to_export** - это название проекта Godot."
+msgstr "``<path_to_godot_project>`` — это путь к проекту Godot"
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:260
 msgid ""
@@ -132500,9 +132746,8 @@ msgstr ""
 "не даст никакого эффекта, если движок завис или зациклился."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:275
-#, fuzzy
 msgid "Editor-Only."
-msgstr "Редактор"
+msgstr "Только для редактора."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:277
 msgid "Adds a new EditorDebuggerSession connected via the given port."
@@ -132868,9 +133113,8 @@ msgstr ""
 "Менеджером Проекта и Редактором, а также для запуска игры."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:478
-#, fuzzy
 msgid "The Process ID to terminate."
-msgstr "Процессуальный материал"
+msgstr "Идентификатор процесса, который нужно завершить."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:483
 msgid "A callback function for being notified when the Godot instance quits."
@@ -202878,13 +203122,12 @@ msgid "XR on visionOS"
 msgstr "Экспорт для visionOS"
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:6
-#, fuzzy
 msgid ""
 "To use the XR mode on visionOS, start by :ref:`setting up XR "
 "<doc_setting_up_xr>`:"
 msgstr ""
-"Это наиболее распространённое использование XR в Godot. См. :ref:`Настройка "
-"XR <doc_setting_up_xr>` для начала работы."
+"Чтобы использовать режим XR в visionOS, начните с :ref:`Настройки XR "
+"<doc_setting_up_xr>`:"
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:8
 #, fuzzy
@@ -202892,14 +203135,12 @@ msgid "enable **XR shaders**."
 msgstr "Затем выберите **Others**."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:9
-#, fuzzy
 msgid "add an :ref:`class_XROrigin3D`."
-msgstr ":ref:`class_string`"
+msgstr "добавте :ref:`class_XROrigin3D`."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:10
-#, fuzzy
 msgid "add an :ref:`class_XRCamera3D`."
-msgstr ":ref:`class_CapsuleShape3D`"
+msgstr "добавте :ref:`class_XRCamera3D`."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:12
 msgid ""
