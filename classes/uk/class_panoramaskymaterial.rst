@@ -16,7 +16,7 @@ PanoramaSkyMaterial
 
 З посиланням на ресурс :ref:`Sky<class_Sky>`, який використовується для малювання фону. **PanoramaSkyMaterial** функції, подібні до Skyboxes в інших двигунах, крім цього використовується еквайрингова карта неба замість :ref:`Cubemap<class_Cubemap>`.
 
-Використовуючи панораму HDR, рекомендується для точного, якісного відображення. Godot підтримує Radiance HDR (``.hdr``) і OpenEXR (``.exr``) формати зображень для цієї мети.
+Використовуючи панораму HDR, рекомендується для точного, якісного відображення. Godot підтримує Radiance HDR (\ ``.hdr``) і OpenEXR (\ ``.exr``) формати зображень для цієї мети.
 
 Ви можете використовувати `this tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ для перетворення кубічної карти на еквайскутну мапу.
 

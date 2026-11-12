@@ -16,21 +16,21 @@ Una interfaz de servidor para acceso de navegación 2D de bajo nivel.
 Descripción
 ----------------------
 
-NavigationServer2D es el servidor que gestiona los mapas, regiones y agentes de navegación. No gestiona la navegación A\* desde :ref:`AStar2D<class_AStar2D>` o :ref:`AStarGrid2D<class_AStarGrid2D>`.
+NavigationServer2D is the server that handles navigation maps, regions, and agents. It does not handle A\* navigation from :ref:`AStar2D<class_AStar2D>` or :ref:`AStarGrid2D<class_AStarGrid2D>`.
 
-Los mapas se dividen en regiones, que se componen de polígonos de navegación. Juntos, definen las áreas transitables en el mundo 2D.
+Maps are divided into regions, which are composed of navigation polygons. Together, they define the traversable areas in the 2D world.
 
-\ **Nota:** La mayoría de los cambios de **NavigationServer2D** surten efecto después del siguiente fotograma de física y no inmediatamente. Esto incluye todos los cambios realizados en mapas, regiones o agentes por nodos relacionados con la navegación en el árbol de escenas o realizados a través de scripts.
+\ **Note:** Most **NavigationServer2D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions, or agents by navigation-related nodes in the scene tree or made through scripts.
 
-Para que dos regiones se conecten entre sí, deben compartir un borde similar. Se considera que un borde está conectado a otro si ambos vértices están a una distancia inferior a ``edge_connection_margin`` del vértice del otro borde respectivo.
+For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
 
-Puedes asignar capas de navegación a las regiones con :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>`, que luego se pueden verificar al solicitar una ruta con :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`. Esto se puede utilizar para permitir o denegar ciertas áreas para algunos objetos.
+You may assign navigation layers to regions with :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>`, which then can be checked upon when requesting a path with :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`. This can be used to allow or deny certain areas for some objects.
 
-Para utilizar el sistema de evitación de colisiones, puedes utilizar agentes. Puedes establecer la velocidad objetivo de un agente, luego los servidores emitirán una callback con una velocidad modificada.
+To use the collision avoidance system, you may use agents. You can set an agent's target velocity, then the servers will emit a callback with a modified velocity.
 
-\ **Nota:** El sistema de evitación de colisiones ignora las regiones. El uso directo de la velocidad modificada puedes mover un agente fuera del área transitable. Esta es una limitación del sistema de evitación de colisiones, cualquier situación más compleja puedes requerir el uso del motor de física.
+\ **Note:** The collision avoidance system ignores regions. Using the modified velocity directly may move an agent outside of the traversable area. This is a limitation of the collision avoidance system, any more complex situation may require the use of the physics engine.
 
-Este servidor realiza un seguimiento de cualquier llamada y la ejecuta durante la fase de sincronización. Esto significa que puedes solicitar cualquier cambio en el mapa, utilizando cualquier hilo, sin preocuparte.
+This server keeps tracks of any call and executes them during the sync phase. This means that you can request any change to the map, using any thread, without worrying.
 
 .. rst-class:: classref-introduction-group
 
@@ -828,7 +828,7 @@ Establece el radio del agente.
 
 |void| **agent_set_time_horizon_agents**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_time_horizon_agents>`
 
-La cantidad mínima de tiempo durante la cual las velocidades del agente que son calculadas por la simulación son seguras con respecto a otros agentes. Cuanto mayor sea este número, antes responderá este agente a la presencia de otros agentes, pero menos libertad tendrá este agente para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to other agents. The larger this number, the sooner this agent will respond to the presence of other agents, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ La cantidad mínima de tiempo durante la cual las velocidades del agente que son
 
 |void| **agent_set_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_time_horizon_obstacles>`
 
-La cantidad mínima de tiempo durante la cual las velocidades del agente que son calculadas por la simulación son seguras con respecto a los obstáculos estáticos de evitación. Cuanto mayor sea este número, antes responderá este agente a la presencia de obstáculos estáticos de evitación, pero menos libertad tendrá este agente para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to static avoidance obstacles. The larger this number, the sooner this agent will respond to the presence of static avoidance obstacles, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +852,7 @@ La cantidad mínima de tiempo durante la cual las velocidades del agente que son
 
 |void| **agent_set_velocity**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_velocity>`
 
-Establece ``velocity`` como la nueva velocidad deseada para el ``agent`` especificado. La simulación de evitación intentará cumplir con esta velocidad si es posible, pero la modificará para evitar colisiones con otros agentes y obstáculos. Cuando un agente se teletransporta a una nueva posición lejana, usa :ref:`agent_set_velocity_forced()<class_NavigationServer2D_method_agent_set_velocity_forced>` en su lugar para restablecer el estado de velocidad interno.
+Sets ``velocity`` as the new wanted velocity for the specified ``agent``. The avoidance simulation will try to achieve this velocity if possible, but will adjust it to avoid colliding with other agents and obstacles. When an agent is teleported to a new position far away, use :ref:`agent_set_velocity_forced()<class_NavigationServer2D_method_agent_set_velocity_forced>` instead to reset the internal velocity state.
 
 .. rst-class:: classref-item-separator
 
@@ -1154,7 +1154,7 @@ Establece el :ref:`RID<class_RID>` del mapa de navegación para el enlace.
 
 |void| **link_set_navigation_layers**\ (\ link\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2D_method_link_set_navigation_layers>`
 
-Establece las capas de navegación del enlace. Esto permite seleccionar enlaces de una solicitud de ruta (cuando se usa :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`).
+Sets the given ``link``'s navigation layers to ``navigation_layers``. This allows selecting links from a path request (when using :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1216,13 +1216,13 @@ Crea un nuevo mapa.
 
 **Obsoleto:** This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.
 
-Esta función fuerza inmediatamente la sincronización del ``map`` de navegación especificado :ref:`RID<class_RID>`. Por defecto, los mapas de navegación solo se sincronizan al final de cada fotograma de física. Esta función se puede utilizar para (re)calcular inmediatamente todas las mallas de navegación y las conexiones de región del mapa de navegación. Esto permite consultar un camino de navegación para un mapa cambiado inmediatamente y en el mismo fotograma (varias veces si es necesario).
+This function immediately forces synchronization of the specified navigation ``map`` :ref:`RID<class_RID>`. By default navigation maps are only synchronized at the end of each physics frame. This function can be used to immediately (re)calculate all the navigation meshes and region connections of the navigation map. This makes it possible to query a navigation path for a changed map immediately and in the same frame (multiple times if needed).
 
-Debido a restricciones técnicas, la cola de comandos actual de NavigationServer se vaciará. Esto significa que todos los comandos de actualización ya en cola para este fotograma de física se ejecutarán, incluso aquellos destinados a otros mapas, regiones y agentes que no forman parte del mapa especificado. El costoso cálculo de las mallas de navegación y las conexiones de región de un mapa solo se realizará para el mapa especificado. Otros mapas recibirán la sincronización normal al final del fotograma de física. Si el mapa especificado recibe cambios después de la actualización forzada, también se actualizará de nuevo cuando los otros mapas reciban su actualización.
+Due to technical restrictions the current NavigationServer command queue will be flushed. This means all already queued update commands for this physics frame will be executed, even those intended for other maps, regions, and agents not part of the specified map. The expensive computation of the navigation meshes and region connections of a map will only be done for the specified map. Other maps will receive the normal synchronization at the end of the physics frame. Should the specified map receive changes after the forced update it will update again as well when the other maps receive their update.
 
-El procesamiento de evitación y el envío de las señales de ``safe_velocity`` no se ven afectados por esta función y continúan ocurriendo para todos los mapas y agentes al final del fotograma de física.
+Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected by this function and continues to happen for all maps and agents at the end of the physics frame.
 
-\ **Nota:** Un gran poder conlleva una gran responsabilidad. Esta función solo debe ser utilizada por usuarios que realmente sepan lo que están haciendo y tengan una buena razón para ello. Forzar una actualización inmediata de un mapa de navegación requiere bloquear el NavigationServer y vaciar toda la cola de comandos del NavigationServer. Esto no solo puede afectar gravemente al rendimiento de un juego, sino que también puede introducir errores si se utiliza de forma inapropiada sin mucha previsión.
+\ **Note:** With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
 
 .. rst-class:: classref-item-separator
 
@@ -1234,7 +1234,7 @@ El procesamiento de evitación y el envío de las señales de ``safe_velocity`` 
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_agents**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_agents>`
 
-Devuelve todos los :ref:`RID<class_RID>` de agentes de navegación que están actualmente asignados al ``map`` de navegación solicitado.
+Returns all navigation agent :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1332,7 +1332,7 @@ Devuelve todos los :ref:`RID<class_RID>` de enlaces de navegación que están ac
 
 :ref:`float<class_float>` **map_get_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_merge_rasterizer_cell_scale>`
 
-Devuelve la escala de celda interna del rasterizador de fusión del mapa.
+Returns the map's internal merge rasterizer cell scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1384,7 +1384,7 @@ Si ``uniformly`` es ``false``, solo se elige una región aleatoria y un polígon
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_regions**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_regions>`
 
-Devuelve todos los :ref:`RID<class_RID>` de las regiones de navegación que están actualmente asignadas al ``map`` de navegación solicitado.
+Returns all navigation region :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1636,7 +1636,7 @@ Si ``enabled`` es ``true``, el ``obstacle`` proporcionado afecta la evitación u
 
 |void| **obstacle_set_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2D_method_obstacle_set_avoidance_layers>`
 
-Establece la máscara de bits ``avoidance_layers`` del obstáculo.
+Sets the given ``obstacle``'s avoidance layers to ``layers``.
 
 .. rst-class:: classref-item-separator
 
@@ -2118,9 +2118,9 @@ Si es ``true``, habilita el modo de depuración en NavigationServer.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **simplify_path**\ (\ path\: :ref:`PackedVector2Array<class_PackedVector2Array>`, epsilon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_simplify_path>`
 
-Devuelve una versión simplificada de ``path`` con menos puntos de ruta críticos eliminados. La cantidad de simplificación está en unidades del mundo y está controlada por ``epsilon``. La simplificación utiliza una variante del algoritmo de Ramer-Douglas-Peucker para la decimación de puntos de curva.
+Returns a simplified version of ``path`` with less critical path points removed. The simplification amount is in world units and controlled by ``epsilon``. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
-La simplificación de la ruta puede ser útil para mitigar varios problemas de seguimiento de la ruta que pueden surgir con ciertos tipos de agentes y comportamientos de script. P.ej. agentes de "dirección" o evitación en "campos abiertos".
+Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 
 .. rst-class:: classref-item-separator
 

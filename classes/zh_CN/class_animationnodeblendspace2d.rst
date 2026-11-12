@@ -14,11 +14,30 @@ AnimationNodeBlendSpace2D
 描述
 ----
 
-:ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 使用的资源。
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace2D** 代表放置 :ref:`AnimationRootNode<class_AnimationRootNode>` 的虚拟 2D 空间。输出的是使用 :ref:`Vector2<class_Vector2>` 权重对相邻的三个动画进行线性混合的结果。此处的“相邻”指的是构成包含当前值的三角形的三个 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
+\ **AnimationNodeBlendSpace2D** represents a virtual 2D space on which :ref:`AnimationRootNode<class_AnimationRootNode>`\ s are placed. Outputs the linear blend of the three adjacent animations using a :ref:`Vector2<class_Vector2>` weight. Adjacent in this context means the three :ref:`AnimationRootNode<class_AnimationRootNode>`\ s making up the triangle that contains the current value.
 
-你可以使用 :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` 向混合空间中添加顶点，将 :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` 设为 ``true`` 可以将其自动三角形化。否则，请使用 :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` 和 :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` 手动对混合空间进行三角形化。
+You can add vertices to the blend space with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and automatically triangulate it by setting :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` to ``true``. Otherwise, use :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` and :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` to triangulate the blend space by hand.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

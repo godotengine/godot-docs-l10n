@@ -45,6 +45,8 @@ ScriptEditorBase
 
 **edited_script_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_edited_script_changed>`
 
+**已棄用：** This signal should only be used internally.
+
 校驗腳本後發出。
 
 .. rst-class:: classref-item-separator
@@ -56,6 +58,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **go_to_help**\ (\ what\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_help>`
+
+**已棄用：** This signal should only be used internally. See :ref:`ScriptEditor.goto_help()<class_ScriptEditor_method_goto_help>` instead.
 
 使用者請求特定的文件頁面時發出。
 
@@ -69,6 +73,8 @@ ScriptEditorBase
 
 **go_to_method**\ (\ script\: :ref:`Object<class_Object>`, method\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_method>`
 
+**已棄用：** This signal should only be used internally.
+
 使用者請求查看腳本中的指定方法時發出，類似於 :ref:`request_open_script_at_line<class_ScriptEditorBase_signal_request_open_script_at_line>`\ 。
 
 .. rst-class:: classref-item-separator
@@ -80,6 +86,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **name_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_name_changed>`
+
+**已棄用：** This signal should only be used internally.
 
 校驗腳本後，或者所編輯資源發生更改時發出。
 
@@ -93,6 +101,8 @@ ScriptEditorBase
 
 **replace_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_replace_in_files_requested>`
 
+**已棄用：** This signal should only be used internally.
+
 使用者請求在檔案系統中搜尋與替換文字時發出。
 
 .. rst-class:: classref-item-separator
@@ -104,6 +114,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **request_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_help>`
+
+**已棄用：** This signal should only be used internally.
 
 使用者請求本文幫助時發出。
 
@@ -117,6 +129,8 @@ ScriptEditorBase
 
 **request_open_script_at_line**\ (\ script\: :ref:`Object<class_Object>`, line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_open_script_at_line>`
 
+**已棄用：** This signal should only be used internally. See :ref:`EditorInterface.edit_script()<class_EditorInterface_method_edit_script>` instead.
+
 使用者請求查看腳本中的指定行時發出，類似於 :ref:`go_to_method<class_ScriptEditorBase_signal_go_to_method>`\ 。
 
 .. rst-class:: classref-item-separator
@@ -129,7 +143,9 @@ ScriptEditorBase
 
 **request_save_history**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_history>`
 
-使用者進行本文跳轉，並且該條目在同一個腳本中時發出。
+**已棄用：** This signal should only be used internally.
+
+Emitted when the editor requests to save a new history navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +157,9 @@ ScriptEditorBase
 
 **request_save_previous_state**\ (\ state\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_previous_state>`
 
-當使用者更改目前腳本或在同一腳本內將文字游標移動 10 列或更多列時發出。
+**已棄用：** This signal should only be used internally.
+
+Emitted when the editor requests an update to its navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -152,6 +170,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **search_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_search_in_files_requested>`
+
+**已棄用：** This signal should only be used internally.
 
 使用者請求在檔案系統中搜尋文字時發出。
 

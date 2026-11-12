@@ -31,27 +31,29 @@ Proprietà
 .. table::
    :widths: auto
 
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`compress/channel_pack<class_ResourceImporterLayeredTexture_property_compress/channel_pack>`         | ``0``     |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`compress/hdr_compression<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`   | ``1``     |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`compress/high_quality<class_ResourceImporterLayeredTexture_property_compress/high_quality>`         | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`compress/lossy_quality<class_ResourceImporterLayeredTexture_property_compress/lossy_quality>`       | ``0.7``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`compress/mode<class_ResourceImporterLayeredTexture_property_compress/mode>`                         | ``1``     |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`compress/rdo_quality_loss<class_ResourceImporterLayeredTexture_property_compress/rdo_quality_loss>` | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`compress/uastc_level<class_ResourceImporterLayeredTexture_property_compress/uastc_level>`           | ``0``     |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`mipmaps/generate<class_ResourceImporterLayeredTexture_property_mipmaps/generate>`                   | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`mipmaps/limit<class_ResourceImporterLayeredTexture_property_mipmaps/limit>`                         | ``-1``    |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`     | :ref:`slices/arrangement<class_ResourceImporterLayeredTexture_property_slices/arrangement>`               | ``1``     |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------+-----------+
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`compress/channel_pack<class_ResourceImporterLayeredTexture_property_compress/channel_pack>`           | ``0``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`compress/hdr_compression<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`     | ``1``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`   | :ref:`compress/high_quality<class_ResourceImporterLayeredTexture_property_compress/high_quality>`           | ``false`` |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`compress/high_quality_mode<class_ResourceImporterLayeredTexture_property_compress/high_quality_mode>` | ``0``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>` | :ref:`compress/lossy_quality<class_ResourceImporterLayeredTexture_property_compress/lossy_quality>`         | ``0.7``   |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`compress/mode<class_ResourceImporterLayeredTexture_property_compress/mode>`                           | ``1``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>` | :ref:`compress/rdo_quality_loss<class_ResourceImporterLayeredTexture_property_compress/rdo_quality_loss>`   | ``0.0``   |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`compress/uastc_level<class_ResourceImporterLayeredTexture_property_compress/uastc_level>`             | ``0``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`   | :ref:`mipmaps/generate<class_ResourceImporterLayeredTexture_property_mipmaps/generate>`                     | ``true``  |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`mipmaps/limit<class_ResourceImporterLayeredTexture_property_mipmaps/limit>`                           | ``-1``    |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`     | :ref:`slices/arrangement<class_ResourceImporterLayeredTexture_property_slices/arrangement>`                 | ``1``     |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-section-separator
 
@@ -94,7 +96,7 @@ Controlla come bisogna comprimere in VRAM le immagini HDR.
 
 \ **Always:** Forza la compressione in VRAM anche per le texture HDR con un canale alfa. Per eseguire questa operazione, il canale alfa viene scartato durante l'importazione.
 
-\ **Nota:** Efficace solo su immagini Radiance HDR (``.hdr``) e OpenEXR (``.exr``).
+\ **Nota:** Efficace solo su immagini Radiance HDR (\ ``.hdr``) e OpenEXR (\ ``.exr``).
 
 .. rst-class:: classref-item-separator
 
@@ -111,6 +113,28 @@ Se ``true``, utilizza la compressione BPTC sulle piattaforme desktop e la compre
 Se ``false``, utilizza la compressione S3TC sulle piattaforme desktop e ETC2 sulle piattaforme mobili/web, la quale è più veloce ma di qualità inferiore. Quando si utilizza il S3TC, DXT1 (BC1) è utilizzato per le texture opache e DXT5 (BC3) è utilizzato per le texture trasparenti o a mappa normale (RGTC).
 
 BPTC e ASTC supportano la compressione in VRAM per le texture HDR, ma S3TC ed ETC2 no (vedi :ref:`compress/hdr_compression<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterLayeredTexture_property_compress/high_quality_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **compress/high_quality_mode** = ``0`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/high_quality_mode>`
+
+Controls the priorities of the VRAM compression when :ref:`compress/high_quality<class_ResourceImporterLayeredTexture_property_compress/high_quality>` is enabled.
+
+\ **Automatic:** Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+\ **Max Quality:** Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+\ **Compressed:** Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+\ **Max Compression:** Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+\ **Note:** Currently, only the ASTC compressor uses this setting. Other compressors will ignore it.
 
 .. rst-class:: classref-item-separator
 

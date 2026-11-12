@@ -438,7 +438,7 @@ La notifica di processo nella quale si aggiornano le animazioni.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-Se ``true``, la fusione usa l'algoritmo deterministico. Il peso totale non è normalizzato e il risultato è accumulato con un valore iniziale (``0`` o una animazione ``"RESET"`` se presente).
+Se ``true``, la fusione usa l'algoritmo deterministico. Il peso totale non è normalizzato e il risultato è accumulato con un valore iniziale (\ ``0`` o una animazione ``"RESET"`` se presente).
 
 Ciò significa che se la quantità totale della fusione è ``0.0``, il risultato è uguale all'animazione ``"RESET"``.
 

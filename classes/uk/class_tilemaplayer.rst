@@ -1,5 +1,8 @@
 :github_url: hide
 
+.. meta::
+	:keywords: gridmap
+
 .. _class_TileMapLayer:
 
 TileMapLayer
@@ -168,9 +171,9 @@ Node для 2D кахельних карт.
 
 **changed**\ (\ ) :ref:`🔗<class_TileMapLayer_signal_changed>`
 
-Випробувано, коли це зміни властивостей **TileMapLayer**. Це включає в себе модифіковані клітини, властивості, або зміни, внесені до його призначення :ref:`TileSet<class_TileSet>`.
+Emitted when this **TileMapLayer**'s properties changes, including changes to its assigned :ref:`TileSet<class_TileSet>`.
 
-\ **Примітка:** Цей сигнал може бути вказаний дуже часто, коли пакетне моделювання **TileMapLayer**. Уникайте виконання комплексної обробки в підключеній функції і розглянемо затримку його до кінця кадру замість (тобто виклику :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
+\ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
 
 .. rst-class:: classref-section-separator
 
@@ -377,7 +380,11 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 
 Сирі дані черепиці як байтовий масив.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +471,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 
 Викликається з об'єктом :ref:`TileData<class_TileData>`, який буде використано внутрішньо **TileMapLayer**, що дозволяє його модифікацію під час виконання.
 
-Цей метод викликається лише тоді, коли реалізовано метод :ref:`use_tile_data_runtime_update()<class_TileMapLayer_method_use_tile_data_runtime_update>`, і повертає ``true`` для заданого тайла ``coords``.
+Цей метод викликається лише тоді, коли реалізовано метод :ref:`_use_tile_data_runtime_update()<class_TileMapLayer_private_method__use_tile_data_runtime_update>`, і повертає ``true`` для заданого тайла ``coords``.
 
 \ **Попередження:** Підресурси об'єкта ``tile_data`` такі ж, як і в TileSet. Їх модифікація може вплинути на весь TileSet. Натомість переконайтеся, що ці ресурси продубльовані.
 

@@ -270,7 +270,7 @@ RenderingDevice
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                      | :ref:`texture_create_shared<class_RenderingDevice_method_texture_create_shared>`\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`RID<class_RID>`                                      | :ref:`texture_create_shared_from_slice<class_RenderingDevice_method_texture_create_shared_from_slice>`\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   | :ref:`RID<class_RID>`                                      | :ref:`texture_create_shared_from_slice<class_RenderingDevice_method_texture_create_shared_from_slice>`\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0, layers\: :ref:`int<class_int>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>`              | :ref:`texture_get_data<class_RenderingDevice_method_texture_get_data>`\ (\ texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -279,6 +279,8 @@ RenderingDevice
    | :ref:`RDTextureFormat<class_RDTextureFormat>`              | :ref:`texture_get_format<class_RenderingDevice_method_texture_get_format>`\ (\ texture\: :ref:`RID<class_RID>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                      | :ref:`texture_get_native_handle<class_RenderingDevice_method_texture_get_native_handle>`\ (\ texture\: :ref:`RID<class_RID>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+   +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` | :ref:`texture_get_nearest_supported_samples<class_RenderingDevice_method_texture_get_nearest_supported_samples>`\ (\ format\: :ref:`RDTextureFormat<class_RDTextureFormat>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                    | :ref:`texture_is_discardable<class_RenderingDevice_method_texture_is_discardable>`\ (\ texture\: :ref:`RID<class_RID>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
    +------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -392,11 +394,11 @@ enum **DriverResource**: :ref:`🔗<enum_RenderingDevice_DriverResource>`
 
 Певний об'єкт пристрою на основі фізичного пристрою (параметр ``rid`` ігнорується).
 
-- Vulkan: Ресурс драйвера пристрою Vulkan (``VkDevice``).
+- Vulkan: Ресурс драйвера пристрою Vulkan (\ ``VkDevice``).
 
-- D3D12: Ресурс драйвера пристрою D3D12 (``ID3D12Device``).
+- D3D12: Ресурс драйвера пристрою D3D12 (\ ``ID3D12Device``).
 
-- Metal: Ресурс драйвера пристрою Metal (``MTLDevice``).
+- Metal: Ресурс драйвера пристрою Metal (\ ``MTLDevice``).
 
 .. _class_RenderingDevice_constant_DRIVER_RESOURCE_PHYSICAL_DEVICE:
 
@@ -2420,7 +2422,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2432,7 +2434,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2444,7 +2446,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2456,7 +2458,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2468,7 +2470,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2480,7 +2482,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2492,7 +2494,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2504,7 +2506,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2516,7 +2518,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2528,7 +2530,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2540,7 +2542,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2552,7 +2554,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2564,7 +2566,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2576,7 +2578,7 @@ VRAM-compressed не відзначає формат даних плавленн
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -3008,6 +3010,14 @@ enum **TextureSliceType**: :ref:`🔗<enum_RenderingDevice_TextureSliceType>`
 
 3-вимірний текстурний розріз.
 
+.. _class_RenderingDevice_constant_TEXTURE_SLICE_2D_ARRAY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` **TEXTURE_SLICE_2D_ARRAY** = ``3``
+
+2-dimensional texture array slice.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -3228,7 +3238,7 @@ flags **StorageBufferUsage**: :ref:`🔗<enum_RenderingDevice_StorageBufferUsage
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -3279,7 +3289,7 @@ flags **BufferCreationBits**: :ref:`🔗<enum_RenderingDevice_BufferCreationBits
 
 **Експериментальний:** Ця константа може бути змінена або усунута у наступних версіях.
 
-Дозволяє використовувати цей буфер як вхідні дані для операції побудови структури прискорення. Спочатку необхідно перевірити, чи підтримує це графічний процесор:
+Allows usage of this buffer as input data for an acceleration structure build operation. You must first check that the GPU supports it:
 
 
 .. tabs::
@@ -3837,7 +3847,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_NEVER** = ``0``
 
-"Нещодавні" порівняння (на відміну від :ref:`COMARE_OP_ALWAYS<class_RenderingDevice_constant_COMARE_OP_ALWAYS>`).
+"Нещодавні" порівняння (на відміну від :ref:`COMPARE_OP_ALWAYS<class_RenderingDevice_constant_COMPARE_OP_ALWAYS>`).
 
 .. _class_RenderingDevice_constant_COMPARE_OP_LESS:
 
@@ -4235,7 +4245,7 @@ enum **BlendOperation**: :ref:`🔗<enum_RenderingDevice_BlendOperation>`
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_ADD** = ``0``
 
-Додаткова робота блендера (``source + призначення``).
+Додаткова робота блендера (\ ``source + призначення``).
 
 .. _class_RenderingDevice_constant_BLEND_OP_SUBTRACT:
 
@@ -4243,7 +4253,7 @@ enum **BlendOperation**: :ref:`🔗<enum_RenderingDevice_BlendOperation>`
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_SUBTRACT** = ``1``
 
-Субтрактивна робота блендера (``source - призначення``).
+Субтрактивна робота блендера (\ ``source - призначення``).
 
 .. _class_RenderingDevice_constant_BLEND_OP_REVERSE_SUBTRACT:
 
@@ -4251,7 +4261,7 @@ enum **BlendOperation**: :ref:`🔗<enum_RenderingDevice_BlendOperation>`
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_REVERSE_SUBTRACT** = ``2``
 
-Зворотна субтрактивна робота блендера (``destination - джерело``).
+Зворотна субтрактивна робота блендера (\ ``destination - джерело``).
 
 .. _class_RenderingDevice_constant_BLEND_OP_MINIMUM:
 
@@ -4311,7 +4321,7 @@ flags **PipelineDynamicStateFlags**: :ref:`🔗<enum_RenderingDevice_PipelineDyn
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -4323,7 +4333,7 @@ flags **PipelineDynamicStateFlags**: :ref:`🔗<enum_RenderingDevice_PipelineDyn
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -4335,7 +4345,7 @@ flags **PipelineDynamicStateFlags**: :ref:`🔗<enum_RenderingDevice_PipelineDyn
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -4347,7 +4357,7 @@ flags **PipelineDynamicStateFlags**: :ref:`🔗<enum_RenderingDevice_PipelineDyn
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -4359,7 +4369,7 @@ flags **PipelineDynamicStateFlags**: :ref:`🔗<enum_RenderingDevice_PipelineDyn
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -4834,6 +4844,14 @@ enum **Features**: :ref:`🔗<enum_RenderingDevice_Features>`
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_HDR_OUTPUT** = ``13``
 
 Підтримка виведення зображення з високим динамічним діапазоном (HDR).
+
+.. _class_RenderingDevice_constant_SUPPORTS_RASTERIZATION_RATE_MAP:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_RASTERIZATION_RATE_MAP** = ``14``
+
+Support for rasterization rate maps. The current implementation targets Metal on Apple platforms. This allows for foveated rendering, which is used by the visionOS XR module.
 
 .. rst-class:: classref-item-separator
 
@@ -6345,7 +6363,7 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 :ref:`int<class_int>` **get_captured_timestamp_gpu_time**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamp_gpu_time>`
 
-Повертає часовий запас у часі GPU для рендерингу, визначеного індексом ``index`` (в мікросекундах з моменту запуску двигуна). Дивись також :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>` і :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`.
+Returns the timestamp in GPU time for the rendering step specified by ``index`` (in nanoseconds since the engine started). See also :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>` and :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7319,7 +7337,7 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 :ref:`RID<class_RID>` **texture_create_from_extension**\ (\ type\: :ref:`TextureType<enum_RenderingDevice_TextureType>`, format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, samples\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>`, usage_flags\: |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\], image\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_from_extension>`
 
-Повертає RID для існуючого ``image`` (``VkImage``) із заданими значеннями ``type``, ``format``, ``samples``, ``usage_flags``, ``width``, ``height``, ``depth``, ``layers`` та ``mipmaps``. Це можна використовувати, щоб дозволити Godot рендерити зображення на сторонні зображення.
+Повертає RID для існуючого ``image`` (\ ``VkImage``) із заданими значеннями ``type``, ``format``, ``samples``, ``usage_flags``, ``width``, ``height``, ``depth``, ``layers`` та ``mipmaps``. Це можна використовувати, щоб дозволити Godot рендерити зображення на сторонні зображення.
 
 .. rst-class:: classref-item-separator
 
@@ -7343,15 +7361,13 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 .. rst-class:: classref-method
 
-:ref:`RID<class_RID>` **texture_create_shared_from_slice**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared_from_slice>`
+:ref:`RID<class_RID>` **texture_create_shared_from_slice**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0, layers\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared_from_slice>`
 
-Створює спільну текстуру, використовуючи вказаний параметр ``view`` та інформацію про текстуру з параметрів ``layer`` та ``mipmap`` параметра ``mipmaps``. Кількість включених mipmap з оригінальної текстури можна контролювати за допомогою параметра ``mipmaps``. Актуально лише для текстур з кількома шарами, таких як 3D-текстури, масиви текстур та кубічні карти. Для одношарових текстур використовуйте метод :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`.
+Creates a shared texture using the specified ``view`` and the texture information from ``with_texture``'s ``layer`` and ``mipmap``. The number of included mipmaps from the original texture can be controlled using the ``mipmaps`` parameter. The ``layers`` parameter controls the number of included layers from the original texture for 2D texture arrays, and must be ``0`` for all other texture types. If ``layers`` is ``0`` for a 2D texture array, ``layer`` must also be ``0``, and all available layers will be included. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`.
 
-Для 2D-текстур (які мають лише один шар), ``layer`` має бути ``0``.
+For 2D textures (which only have one layer), ``layer`` must be ``0``.
 
-\ **Примітка:** Розрізання шарів підтримується лише для 2D-масивів текстур, а не для 3D-текстур або кубічних карт.
-
-Це буде автоматично звільнено після звільнення параметра ``with_texture``.
+This will be freed automatically when the ``with_texture`` is freed.
 
 .. rst-class:: classref-item-separator
 
@@ -7423,6 +7439,18 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 Повертає внутрішню графічну ручку для цього об'єкта текстури. Для використання при спілкуванні з сторонніми API в основному з GDExtension.
 
 \ **Примітка:** Ця функція повертає ``uint64_t``, які внутрішні карти на ``GLuint`` (OpenGL) або ``VkImage`` (Vulkan).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RenderingDevice_method_texture_get_nearest_supported_samples:
+
+.. rst-class:: classref-method
+
+:ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **texture_get_nearest_supported_samples**\ (\ format\: :ref:`RDTextureFormat<class_RDTextureFormat>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_get_nearest_supported_samples>`
+
+Returns the sample count that :ref:`texture_create()<class_RenderingDevice_method_texture_create>` will use for ``format``. This is :ref:`RDTextureFormat.samples<class_RDTextureFormat_property_samples>` if the driver supports that sample count for the format and usage, otherwise the nearest lower supported sample count. Use this to know the actual sample count in advance, for example when choosing a matching sample count for shaders or pipelines.
 
 .. rst-class:: classref-item-separator
 

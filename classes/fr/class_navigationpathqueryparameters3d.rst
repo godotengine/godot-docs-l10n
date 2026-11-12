@@ -112,7 +112,7 @@ Applies a funnel algorithm to the raw path corridor found by the pathfinding alg
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters3D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Centers every path position in the middle of the traveled navigation mesh polygon edge. This creates better paths for tile- or gridbased layouts that restrict the movement to the cells center.
+Centers every position in the middle of the traveled navigation mesh's polygon edge. This creates better paths for tile- or grid-based layouts that restrict the movement to the cells' centers.
 
 .. _class_NavigationPathQueryParameters3D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -385,7 +385,7 @@ L'algorithme de recherche de chemin utilisé dans la recherche de chemin.
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Le montant de simplification du chemin en unités du monde.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 

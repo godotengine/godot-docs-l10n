@@ -7,7 +7,7 @@ VisualShaderNodeUVFunc
 
 **Hérite de :** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Contains functions to modify texture coordinates (``uv``) to be used within the visual shader graph.
+Contains functions to modify texture coordinates (\ ``uv``) to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 

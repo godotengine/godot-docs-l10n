@@ -169,7 +169,7 @@ NavigationObstacle3D
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-Устанавливает высоту препятствия, используемую при 2D-избегании. 2D-избегание с использованием игнорирования агентом препятствий, которые находятся ниже или выше него.
+Sets the obstacle height used in 2D avoidance. 2D avoidance using agents ignore obstacles that are below or above them.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ NavigationObstacle3D
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-Если ``true``, препятствие влияет на 3D-избегание с использованием агентов с препятствием :ref:`radius<class_NavigationObstacle3D_property_radius>`.
+If ``true`` the obstacle affects 3D avoidance using agents with obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
 
-Если ``false``, препятствие влияет на 2D-избегание с использованием агентов как с препятствием :ref:`vertices<class_NavigationObstacle3D_property_vertices>`, так и с препятствием :ref:`radius<class_NavigationObstacle3D_property_radius>`.
+If ``false`` the obstacle affects 2D avoidance using agents with both obstacle :ref:`vertices<class_NavigationObstacle3D_property_vertices>` as well as obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,9 @@ NavigationObstacle3D
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Устанавливает желаемую скорость для препятствия, чтобы другие агенты могли лучше предсказать препятствие, если оно перемещается со скоростью регулярно (каждый кадр) вместо того, чтобы деформироваться в новое положение. Влияет только на избегание для препятствий :ref:`radius<class_NavigationObstacle3D_property_radius>`. Ничего не делает для статических вершин препятствий.
+The wanted velocity for the obstacle, used by other agents to better predict the obstacle if it is moved with a velocity regularly (every frame), instead of warped to a new position.
+
+\ **Note:** This property only affects avoidance for the obstacle's :ref:`radius<class_NavigationObstacle3D_property_radius>`. Does nothing for the obstacle's static vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -239,9 +241,13 @@ NavigationObstacle3D
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vertices**\ (\ )
 
-Контурные вершины препятствия. Если вершины закручены по часовой стрелке, агенты будут вдавлены препятствием, в противном случае они будут вытолкнуты. Контуры не могут пересекаться или накладываться друг на друга. Если вершины, использующие препятствие, деформируются в новое положение, агенты не могут предсказать это движение и могут оказаться в ловушке внутри препятствия.
+The outline vertices of the obstacle. If the vertices are winded in clockwise order, agents will be pushed in by the obstacle, otherwise they will be pushed out. Outlines cannot be crossed or overlap. If the obstacle is warped to a new position, agents cannot predict this movement and may get trapped inside the obstacle.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

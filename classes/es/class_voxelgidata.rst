@@ -16,7 +16,7 @@ Descripción
 
 **VoxelGIData** contiene datos procesados de iluminación global de vóxeles para usar en un nodo :ref:`VoxelGI<class_VoxelGI>`. **VoxelGIData** también ofrece varias propiedades para ajustar la apariencia final de la iluminación global. Estas propiedades se pueden ajustar en tiempo de ejecución sin tener que volver a procesar el nodo :ref:`VoxelGI<class_VoxelGI>`.
 
-\ **Nota:** Para evitar que los archivos de escena basados en texto (``.tscn``) crezcan demasiado y se vuelvan lentos de cargar y guardar, guarda siempre **VoxelGIData** en un archivo de recursos binario externo (``.res``) en lugar de incrustarlo dentro de la escena. Esto se puede hacer haciendo clic en la flecha desplegable junto al recurso **VoxelGIData**, eligiendo **Editar**, haciendo clic en el icono del disquete en la parte superior del Inspector y luego eligiendo **Guardar como...**.
+\ **Nota:** Para evitar que los archivos de escena basados en texto (\ ``.tscn``) crezcan demasiado y se vuelvan lentos de cargar y guardar, guarda siempre **VoxelGIData** en un archivo de recursos binario externo (\ ``.res``) en lugar de incrustarlo dentro de la escena. Esto se puede hacer haciendo clic en la flecha desplegable junto al recurso **VoxelGIData**, eligiendo **Editar**, haciendo clic en el icono del disquete en la parte superior del Inspector y luego eligiendo **Guardar como...**.
 
 .. rst-class:: classref-introduction-group
 
@@ -110,7 +110,7 @@ El sesgo normal que se utilizará para la iluminación indirecta y los reflejos.
 - |void| **set_dynamic_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dynamic_range**\ (\ )
 
-El rango dinámico que se utilizará (``1.0`` representa un brillo de escena de bajo rango dinámico). Se pueden usar valores más altos para proporcionar una iluminación indirecta más brillante, a costa de bandas de color más visibles en áreas oscuras (tanto en la iluminación indirecta como en los reflejos). Para evitar las bandas de color, se recomienda usar el valor más bajo que no provoque el recorte visible de la luz.
+El rango dinámico que se utilizará (\ ``1.0`` representa un brillo de escena de bajo rango dinámico). Se pueden usar valores más altos para proporcionar una iluminación indirecta más brillante, a costa de bandas de color más visibles en áreas oscuras (tanto en la iluminación indirecta como en los reflejos). Para evitar las bandas de color, se recomienda usar el valor más bajo que no provoque el recorte visible de la luz.
 
 .. rst-class:: classref-item-separator
 

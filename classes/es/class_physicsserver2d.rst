@@ -497,9 +497,9 @@ Constante para establecer/obtener si el vector de gravedad de un área es una di
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Constante para establecer/obtener la distancia a la que la fuerza de la gravedad es igual a la gravedad controlada por :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. Por ejemplo, en un planeta de 100 píxeles de radio con una gravedad superficial de 4.0 px/s², establece la gravedad a 4.0 y la distancia de unidad a 100.0. La gravedad tendrá una caída de acuerdo con la ley del inverso del cuadrado, por lo que en el ejemplo, a 200 píxeles del centro la gravedad será de 1.0 px/s² (el doble de la distancia, 1/4 de la gravedad), a 50 píxeles será de 16.0 px/s² (la mitad de la distancia, 4 veces la gravedad), y así sucesivamente.
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-Lo anterior solo es cierto cuando la distancia de unidad es un número positivo. Cuando la distancia de unidad se establece en 0.0, la gravedad será constante independientemente de la distancia. El valor por defecto de este parámetro es ``0.0``.
+The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is ``0.0``.
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 
@@ -827,7 +827,7 @@ enum **JointType**: :ref:`🔗<enum_PhysicsServer2D_JointType>`
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **JOINT_TYPE_PIN** = ``0``
 
-Constante para crear articulaciones de alfileres.
+Constante para crear articulaciones de pasador.
 
 .. _class_PhysicsServer2D_constant_JOINT_TYPE_GROOVE:
 
@@ -2002,7 +2002,7 @@ La detección de colisión continua intenta predecir dónde colisionaría un cue
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_force_integration_callback>`
 
-Sets the body's custom force integration callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback.
+Sets the body's custom force integration callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (\ ``Callable()``) to clear the custom callback.
 
 The function ``callable`` will be called every physics tick, before the standard force integration (see :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). It can be used for example to update the body's linear and angular velocity based on contact with other bodies.
 
@@ -2154,7 +2154,7 @@ Sets the value of a body's state.
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state_sync_callback>`
 
-Sets the body's state synchronization callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the callback.
+Sets the body's state synchronization callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (\ ``Callable()``) to clear the callback.
 
 The function ``callable`` will be called every physics frame, assuming that the body was active during the previous physics tick, and can be used to fetch the latest state from the physics server.
 
@@ -2376,7 +2376,7 @@ Makes the joint a groove joint.
 
 |void| **joint_make_pin**\ (\ joint\: :ref:`RID<class_RID>`, anchor\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_make_pin>`
 
-Makes the joint a pin joint. If ``body_b`` is an empty :ref:`RID<class_RID>`, then ``body_a`` is pinned to the point ``anchor`` (given in global coordinates); otherwise, ``body_a`` is pinned to ``body_b`` at the point ``anchor`` (given in global coordinates). To set the parameters which are specific to the pin joint, see :ref:`pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>`.
+Convierte la articulación en una articulación de pasador. Si ``body_b`` es un :ref:`RID<class_RID>` vacío, ``body_a`` queda fijado al punto ``anchor`` (expresado en coordenadas globales); de lo contrario, ``body_a`` queda fijado a ``body_b`` en el punto ``anchor`` (expresado en coordenadas globales). Para establecer los parámetros específicos de la articulación de pasador, consulta :ref:`pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2400,7 +2400,7 @@ Sets the value of the given joint parameter.
 
 :ref:`bool<class_bool>` **pin_joint_get_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_pin_joint_get_flag>`
 
-Gets a pin joint flag.
+Obtiene un indicador de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 
@@ -2412,7 +2412,7 @@ Gets a pin joint flag.
 
 :ref:`float<class_float>` **pin_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_pin_joint_get_param>`
 
-Returns the value of a pin joint parameter.
+Devuelve el valor de un parámetro de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 
@@ -2424,7 +2424,7 @@ Returns the value of a pin joint parameter.
 
 |void| **pin_joint_set_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_pin_joint_set_flag>`
 
-Sets a pin joint flag.
+Establece un indicador de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 
@@ -2436,7 +2436,7 @@ Sets a pin joint flag.
 
 |void| **pin_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_pin_joint_set_param>`
 
-Sets a pin joint parameter.
+Establece un parámetro de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 

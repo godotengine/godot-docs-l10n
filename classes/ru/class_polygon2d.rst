@@ -206,7 +206,11 @@ Polygon2D определяется набором точек. Каждая то�
 
 Список вершин полигона. Конечная точка будет соединена с первой.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ Polygon2D определяется набором точек. Каждая то�
 
 Координаты текстуры для каждой вершины полигона. Должно быть одно значение UV на вершину полигона. Если их меньше, неопределенные вершины будут использовать ``Vector2(0, 0)``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Polygon2D определяется набором точек. Каждая то�
 
 Цвет для каждой вершины. Цвета интерполируются между вершинами, что приводит к плавным градиентам. Должен быть один на вершину полигона. Если их меньше, неопределенные вершины будут использовать :ref:`color<class_Polygon2D_property_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

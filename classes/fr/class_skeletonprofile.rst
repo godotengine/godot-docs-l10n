@@ -175,9 +175,9 @@ Descriptions des propriétés
 - |void| **set_bone_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_size**\ (\ )
 
-La quantité d'os dans la section re-ciblage de l'éditeur :ref:`BoneMap<class_BoneMap>`. Par exemple, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` a 56 os.
+The amount of bones in retargeting section's :ref:`BoneMap<class_BoneMap>` editor. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` has 56 bones.
 
-La taille des éléments dans la :ref:`BoneMap<class_BoneMap>` set met à jour lors de la modification de cette propriété dans son **SkeletonProfile** assigné.
+The size of elements in :ref:`BoneMap<class_BoneMap>` updates when changing this property in its assigned **SkeletonProfile**.
 
 .. rst-class:: classref-item-separator
 

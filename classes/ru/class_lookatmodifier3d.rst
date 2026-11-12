@@ -85,6 +85,8 @@ LookAtModifier3D
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`                           | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>`                     |                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>`                       | ``true``             |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
 
@@ -466,7 +468,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_rotation_axis**\ (\ value\: :ref:`Axis<enum_Vector3_Axis>`\ )
 - :ref:`Axis<enum_Vector3_Axis>` **get_primary_rotation_axis**\ (\ )
 
-Ось первого вращения. Этот :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` работает, компонуя вращение по углам Эйлера, чтобы предотвратить вращение :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+The axis of the first rotation. This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` works by compositing the rotation by Euler angles to prevent to rotate the :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+
+\ **Note:** Since **LookAtModifier3D** never modifies the twist when :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>` is ``false`` and :ref:`relative<class_LookAtModifier3D_property_relative>` is ``true``, the twist is not fixed even if :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +487,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-Относительная опция. Если ``true``, вращение применяется относительно позы. Если ``false``, вращение применяется относительно остального. Это означает замену текущей позы результатом **LookAtModifier3D**.
-
-\ **Примечание:** Эта опция влияет на базовый угол для :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Поскольку **LookAtModifier3D** в значительной степени основан на вращении Эйлера, ось, определяющая ограничение, и фактическое вращение тесно связаны.
+The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +606,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_symmetry_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limitation_symmetry**\ (\ )
 
-Если ``true``, ограничения распространяются от кости симметрично.
+If ``true``, the limitations are spread from the bone symmetrically.
 
-Если ``false``, ограничение можно указать отдельно для каждой стороны костной опоры.
+If ``false``, the limitation can be specified separately for each side of the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -667,6 +669,27 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 ----
 
+.. _class_LookAtModifier3D_property_use_rest_for_limitation:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **use_rest_for_limitation** :ref:`🔗<class_LookAtModifier3D_property_use_rest_for_limitation>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_rest_for_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_using_rest_for_limitation**\ (\ )
+
+If ``true``, the angle limitation and the rotation axes are applied based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`.
+
+If ``false``, the angle limitation is applied based on the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
+
+\ **Note:** The limitation is applied to the rotation computed by this modifier. If the reference pose is rotated around the same axis, the limitation behaves as if it also limits the rotation of the reference pose. A rotation that this modifier does not change, such as the twist, is not limited.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_LookAtModifier3D_property_use_secondary_rotation:
 
 .. rst-class:: classref-property
@@ -707,9 +730,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 :ref:`bool<class_bool>` **is_interpolating**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_is_interpolating>`
 
-Возвращает ``true``, если выполняется интерполяция на основе времени. Если ``true``, это эквивалентно :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>`, возвращающему ``0.0``. 
+Returns ``true`` if time-based interpolation is running. If ``false``, it is equivalent to :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` returning ``0.0``.
 
-Это полезно для определения того, можно ли безопасно удалить **LookAtModifier3D**.
+This is useful to determine whether a **LookAtModifier3D** can be removed safely.
 
 .. rst-class:: classref-item-separator
 

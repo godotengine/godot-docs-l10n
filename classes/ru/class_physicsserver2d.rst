@@ -497,9 +497,9 @@ enum **AreaParameter**: :ref:`🔗<enum_PhysicsServer2D_AreaParameter>`
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Константа для установки/получения расстояния, на котором сила гравитации равна силе гравитации, контролируемой :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. Например, на планете радиусом 100 пикселей с поверхностной гравитацией 4,0 px/s² установите гравитацию 4,0 и единичное расстояние 100,0. Гравитация будет спадать в соответствии с законом обратных квадратов, поэтому в этом примере на расстоянии 200 пикселей от центра гравитация будет 1,0 px/s² (в два раза больше расстояния, 1/4 гравитации), на расстоянии 50 пикселей она будет 16,0 px/s² (в два раза больше расстояния, 4x гравитации) и т. д.
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-Вышеуказанное верно только тогда, когда единичное расстояние является положительным числом. Когда единичное расстояние установлено равным 0,0, гравитация будет постоянной независимо от расстояния. Значение этого параметра по умолчанию равно ``0.0``.
+The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is ``0.0``.
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 
@@ -2002,7 +2002,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_force_integration_callback>`
 
-Устанавливает функцию обратного вызова интегрирования силы тела на ``callable``. Используйте пустой :ref:`Callable<class_Callable>` (``Callable()``), чтобы очистить пользовательский обратный вызов.
+Устанавливает функцию обратного вызова интегрирования силы тела на ``callable``. Используйте пустой :ref:`Callable<class_Callable>` (\ ``Callable()``), чтобы очистить пользовательский обратный вызов.
 
 Функция ``callable`` будет вызываться каждый физический тик перед стандартным интегрированием силы (см. :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Ее можно использовать, например, для обновления линейной и угловой скорости тела на основе контакта с другими телами.
 
@@ -2154,7 +2154,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state_sync_callback>`
 
-Устанавливает функцию обратного вызова синхронизации состояния тела на ``callable``. Используйте пустой :ref:`Callable<class_Callable>` (``Callable()``), чтобы очистить обратный вызов.
+Устанавливает функцию обратного вызова синхронизации состояния тела на ``callable``. Используйте пустой :ref:`Callable<class_Callable>` (\ ``Callable()``), чтобы очистить обратный вызов.
 
 Функция ``callable`` будет вызываться каждый физический кадр, предполагая, что тело было активно во время предыдущего физического тика, и может использоваться для получения последнего состояния с физического сервера.
 

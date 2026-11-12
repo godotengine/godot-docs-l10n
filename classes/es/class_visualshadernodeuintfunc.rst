@@ -14,7 +14,7 @@ Una función entera escalar sin signo que se utilizará dentro del grafo de shad
 Descripción
 ----------------------
 
-Acepta un escalar entero sin signo (``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
+Acepta un escalar entero sin signo (\ ``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

@@ -158,7 +158,11 @@ Si définit à ``true``, les polices en italique ou oblique sont préférées.
 
 Tableau de noms de familles de polices à chercher, la première police correspondante est utilisée.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

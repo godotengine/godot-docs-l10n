@@ -350,9 +350,7 @@ enum **GroupCallFlags**: :ref:`🔗<enum_SceneTree_GroupCallFlags>`
 - |void| **set_debug_collisions_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_collisions_hint**\ (\ )
 
-Якщо значення ``true``, форми зіткнень будуть видимими під час запуску гри з редактора для цілей налагодження.
-
-\ **Примітка:** Цю властивість не призначено для зміни під час виконання. Зміна значення :ref:`debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` під час роботи проєкту не матиме бажаного ефекту.
+If ``true``, collision shapes will be visible when running the game from the editor for debugging purposes.
 
 .. rst-class:: classref-item-separator
 

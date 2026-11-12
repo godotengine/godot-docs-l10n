@@ -118,6 +118,8 @@ Vector2
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2<class_Vector2>` | :ref:`from_angle<class_Vector2_method_from_angle>`\ (\ angle\: :ref:`float<class_float>`\ ) |static|                                                                                                                                                                                                                                                             |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`inverse<class_Vector2_method_inverse>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                       |
+   +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_equal_approx<class_Vector2_method_is_equal_approx>`\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const|                                                                                                                                                                                                                                                   |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_finite<class_Vector2_method_is_finite>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                   |
@@ -570,7 +572,7 @@ Constructs a new **Vector2** з ``x`` і ``y``.
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate>`
 
-Виконує кубічну інтерполяцію між цим вектором і ``b``, використовуючи ``pre_a`` і ``post_b`` як контрольні точки, та повертає результат у позиції ``weight``. ``weight`` знаходиться в діапазоні від 0.0 до 1.0 і визначає ступінь інтерполяції.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -582,9 +584,9 @@ Constructs a new **Vector2** з ``x`` і ``y``.
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate_in_time>`
 
-Виконує кубічну інтерполяцію між цим вектором і ``b``, використовуючи ``pre_a`` і ``post_b`` як контрольні точки, та повертає результат у позиції ``weight``. ``weight`` знаходиться в діапазоні від 0.0 до 1.0 і визначає ступінь інтерполяції.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-Може виконувати плавнішу інтерполяцію, ніж :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>`), завдяки використанню значень часу.
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -675,6 +677,18 @@ Constructs a new **Vector2** з ``x`` і ``y``.
     print(Vector2.from_angle(PI / 2)) # Виводить (0.0, 1.0)
 
 \ **Примітка:** Довжина повернутого **Vector2** становить *приблизно* ``1.0``, але не гарантується, що вона буде точно ``1.0`` через проблеми з точністю чисел з плаваючою комою. Викличте :ref:`normalized()<class_Vector2_method_normalized>` для повернутого **Vector2**, якщо вам потрібен одиничний вектор.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Vector2_method_inverse:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **inverse**\ (\ ) |const| :ref:`🔗<class_Vector2_method_inverse>`
+
+Returns the inverse of the vector. This is the same as ``Vector2(1.0 / v.x, 1.0 / v.y)``.
 
 .. rst-class:: classref-item-separator
 

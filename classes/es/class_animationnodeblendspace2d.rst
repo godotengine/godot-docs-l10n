@@ -14,11 +14,30 @@ Un conjunto de :ref:`AnimationRootNode<class_AnimationRootNode>`\ s colocados en
 Descripción
 ----------------------
 
-Un recurso utilizado por :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace2D** representa un espacio virtual 2D sobre el que se colocan los :ref:`AnimationRootNode<class_AnimationRootNode>`. Genera la mezcla lineal de las tres animaciones adyacentes mediante un peso :ref:`Vector2<class_Vector2>`. En este contexto, "adyacente" se refiere a los tres :ref:`AnimationRootNode<class_AnimationRootNode>` que forman el triángulo que contiene el valor actual.
+\ **AnimationNodeBlendSpace2D** represents a virtual 2D space on which :ref:`AnimationRootNode<class_AnimationRootNode>`\ s are placed. Outputs the linear blend of the three adjacent animations using a :ref:`Vector2<class_Vector2>` weight. Adjacent in this context means the three :ref:`AnimationRootNode<class_AnimationRootNode>`\ s making up the triangle that contains the current value.
 
-Puedes añadir vértices al espacio de mezcla con :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` y triangularlo automáticamente configurando :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` a ``true``. De lo contrario, utiliza :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` y :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` para triangular el espacio de mezcla manualmente.
+You can add vertices to the blend space with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and automatically triangulate it by setting :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` to ``true``. Otherwise, use :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` and :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` to triangulate the blend space by hand.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

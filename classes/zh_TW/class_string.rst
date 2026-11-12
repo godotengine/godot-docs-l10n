@@ -456,9 +456,9 @@ String
 
 :ref:`String<class_String>` **c_unescape**\ (\ ) |const| :ref:`🔗<class_String_method_c_unescape>`
 
-返回該字串的副本，轉義字元均使用本義代替。支援的轉義序列有 ``\'``\ 、\ ``\"``\ 、\ ``\\``\ 、\ ``\a``\ 、\ ``\b``\ 、\ ``\f``\ 、\ ``\n``\ 、\ ``\r``\ 、\ ``\t``\ 、\ ``\v``\ 。
+Returns a copy of the string with escaped characters replaced by their meanings. Supported escape sequences are ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
 
-\ **注意：**\ 與 GDScript 解析器不同，這個方法不支援 ``\uXXXX`` 轉義序列。
+\ **Note:** Unlike the GDScript parser, this method doesn't support the ``\uXXXX`` escape sequence.
 
 .. rst-class:: classref-item-separator
 
@@ -978,9 +978,9 @@ String
 
 :ref:`String<class_String>` **indent**\ (\ prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_indent>`
 
-使用前綴 ``prefix`` 將該字串中的每一行進行縮進。空行不縮進。移除縮進請參閱 :ref:`dedent()<class_String_method_dedent>`\ 。
+Indents every line of the string with the given ``prefix``. Empty lines are not indented. See also :ref:`dedent()<class_String_method_dedent>` to remove indentation.
 
-例如，該字串可以用 ``"\t\t"`` 縮進兩個定位停駐點，用 ``"    "`` 縮進四個空格。
+For example, the string can be indented with two tabulations using ``"\t\t"``, or four spaces using ``"    "``.
 
 .. rst-class:: classref-item-separator
 
@@ -1919,9 +1919,9 @@ String
 
 :ref:`String<class_String>` **strip_edges**\ (\ left\: :ref:`bool<class_bool>` = true, right\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_String_method_strip_edges>`
 
-從該字串的開頭和結尾剝離所有不可列印的字元。其中包括空格、定位字元（\ ``\t``\ ）以及分行符號（\ ``\n`` ``\r``\ ）。
+Strips all non-printable characters from the beginning and the end of the string. These include spaces, tabulations (\ ``\t``), and newlines (\ ``\n`` ``\r``).
 
-如果 ``left`` 為 ``false``\ ，會忽略該字串的開頭。與此類似，如果 ``right`` 為 ``false``\ ，則會忽略該字串的結尾。
+If ``left`` is ``false``, ignores the string's beginning. Likewise, if ``right`` is ``false``, ignores the string's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1933,7 +1933,7 @@ String
 
 :ref:`String<class_String>` **strip_escapes**\ (\ ) |const| :ref:`🔗<class_String_method_strip_escapes>`
 
-從該字串中剝離所有轉義字元。其中包括 ASCII 表第一頁的所有不可列印控制字元（值為 0 到 32），例如定位字元（C 中的 ``\t``\ ）和分行符號（\ ``\n`` 和 ``]\r``) 字元，但\ *不包括*\ 空格。
+Strips all escape characters from the string. These include all non-printable control characters of the first page of the ASCII table (values from 0 to 31), such as tabulation (\ ``\t``) and newline (\ ``\n``, ``\r``) characters, but *not* spaces.
 
 .. rst-class:: classref-item-separator
 

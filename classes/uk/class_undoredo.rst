@@ -468,9 +468,9 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-Зроблено версію. Щоразу нова акція виконана, номер версії **UndoRedo** збільшений автоматично.
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-Це корисно в основному, щоб перевірити, якщо щось змінено з збереженої версії.
+This is useful mostly to check if something changed from a saved version. The initial version is ``1``.
 
 .. rst-class:: classref-item-separator
 

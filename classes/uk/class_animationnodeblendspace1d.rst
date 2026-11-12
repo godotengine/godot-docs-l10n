@@ -14,11 +14,30 @@ AnimationNodeBlendSpace1D
 Опис
 --------
 
-Ресурс, що використовується :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace1D** представляє віртуальну вісь, на яку можна додати будь-який тип :ref:`AnimationRootNode<class_AnimationRootNode>` за допомогою :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Виводить лінійне змішування двох :ref:`AnimationRootNode<class_AnimationRootNode>`, розташованих поруч з поточним значенням.
+\ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s can be added using :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Outputs the linear blend of the two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s adjacent to the current value.
 
-Ви можете задати ширину осі за допомогою :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` та :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+You can set the extents of the axis with :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` and :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

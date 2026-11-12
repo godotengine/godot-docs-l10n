@@ -66,7 +66,11 @@ Ogg 資料包序列。
 
 包含該封包序列中每個頁面的細微性位置。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

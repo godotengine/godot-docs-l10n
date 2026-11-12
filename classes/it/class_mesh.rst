@@ -594,6 +594,14 @@ Flag usato per indicare che la mesh intenzionalmente non contiene alcun array di
 
 Flag usato per indicare che una mesh sta usando attributi compressi (vertici, normali, tangenti, UV). Quando questa forma di compressione è abilitata, le posizioni dei vertici saranno compresse in un attributo RGBA16UNORM e ridimensionate nello shader dei vertici. La normale e la tangente saranno compresse in un RG16UNORM che rappresenta un asse e un float a 16 bit memorizzato nel canale A del vertice. Gli UV utilizzeranno float normalizzati a 16 bit anziché float con segno a 32 bit completi. Quando si utilizza questa modalità di compressione, è necessario utilizzare vertici, normali e tangenti o solo vertici. Non è possibile utilizzare normali senza tangenti. Gli importatori abiliteranno automaticamente questa compressione se possibile.
 
+.. _class_Mesh_constant_ARRAY_FLAG_USE_STORAGE_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_STORAGE_BUFFER** = ``1073741824``
+
+Flag used to mark that the surface's vertex, attribute, skin, and index buffers must be created with the storage-buffer usage bit so they can be bound as storage buffers in compute shaders. This is required to write into them from a compute pipeline through the :ref:`RID<class_RID>`\ s returned by :ref:`RenderingServer.mesh_surface_get_vertex_buffer_rd_rid()<class_RenderingServer_method_mesh_surface_get_vertex_buffer_rd_rid>` and the matching methods for the attribute, skin, and index buffers. Has no effect on the OpenGL backend, which does not expose :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>`\ s.
+
 .. rst-class:: classref-item-separator
 
 ----

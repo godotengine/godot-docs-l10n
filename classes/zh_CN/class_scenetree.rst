@@ -350,9 +350,7 @@ enum **GroupCallFlags**: :ref:`🔗<enum_SceneTree_GroupCallFlags>`
 - |void| **set_debug_collisions_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_collisions_hint**\ (\ )
 
-如果为 ``true``\ ，从编辑器中运行游戏时会显示碰撞形状，方便调试。
-
-\ **注意：**\ 这个属性不应在运行时更改。在运行项目时更改 :ref:`debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 的值不会有想要的效果。
+If ``true``, collision shapes will be visible when running the game from the editor for debugging purposes.
 
 .. rst-class:: classref-item-separator
 

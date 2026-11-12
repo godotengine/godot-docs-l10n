@@ -83,6 +83,14 @@ Modo de mezcla multiplicativo.
 
 Sin modo de mezcla, copia directa en color.
 
+.. _class_BlitMaterial_constant_BLEND_MODE_PREMULTIPLIED_ALPHA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_PREMULTIPLIED_ALPHA** = ``5``
+
+Modo de mezcla Mix. Se supone que los colores se premultiplican por el valor alfa (opacidad).
+
 .. rst-class:: classref-section-separator
 
 ----

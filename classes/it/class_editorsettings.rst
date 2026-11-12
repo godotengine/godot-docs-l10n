@@ -58,6 +58,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`               | :ref:`asset_store/available_urls<class_EditorSettings_property_asset_store/available_urls>`                                                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`asset_store/show_incompatible_assets<class_EditorSettings_property_asset_store/show_incompatible_assets>`                                                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`asset_store/use_threads<class_EditorSettings_property_asset_store/use_threads>`                                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`debugger/auto_switch_to_remote_scene_tree<class_EditorSettings_property_debugger/auto_switch_to_remote_scene_tree>`                                                                                         |
@@ -103,6 +105,8 @@ Proprietà
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/auto_expand_to_selected<class_EditorSettings_property_docks/scene_tree/auto_expand_to_selected>`                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/center_node_on_reparent<class_EditorSettings_property_docks/scene_tree/center_node_on_reparent>`                                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/derive_script_globals_by_name<class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/hide_filtered_out_parents<class_EditorSettings_property_docks/scene_tree/hide_filtered_out_parents>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -496,6 +500,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/editor/appearance/expand_to_title<class_EditorSettings_property_interface/editor/appearance/expand_to_title>`                                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`interface/editor/appearance/max_sticky_tree_items<class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items>`                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/appearance/project_manager_screen<class_EditorSettings_property_interface/editor/appearance/project_manager_screen>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/editor/appearance/show_renderer_selector<class_EditorSettings_property_interface/editor/appearance/show_renderer_selector>`                                                                       |
@@ -529,6 +535,8 @@ Proprietà
    | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`                                                                                   |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>`                                                                                                 |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/main_screen_dock_tab_style<class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style>`                                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`interface/editor/fonts/code_font<class_EditorSettings_property_interface/editor/fonts/code_font>`                                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -573,8 +581,6 @@ Proprietà
    | :ref:`int<class_int>`                             | :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`interface/editors/derive_script_globals_by_name<class_EditorSettings_property_interface/editors/derive_script_globals_by_name>`                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/inspector/auto_unfold_foreign_scenes<class_EditorSettings_property_interface/inspector/auto_unfold_foreign_scenes>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -780,6 +786,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`text_editor/appearance/whitespace/line_spacing<class_EditorSettings_property_text_editor/appearance/whitespace/line_spacing>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/diagnostics/enable_tooltips<class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips>`                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/documentation/enable_tooltips<class_EditorSettings_property_text_editor/behavior/documentation/enable_tooltips>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/files/auto_reload_and_parse_scripts_on_save<class_EditorSettings_property_text_editor/behavior/files/auto_reload_and_parse_scripts_on_save>`                                           |
@@ -801,6 +809,8 @@ Proprietà
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/files/trim_trailing_whitespace_on_save<class_EditorSettings_property_text_editor/behavior/files/trim_trailing_whitespace_on_save>`                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/general/empty_selection_clipboard<class_EditorSettings_property_text_editor/behavior/general/empty_selection_clipboard>`                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`text_editor/behavior/general/find_in_file_extensions<class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions>`                                                                   |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/indent/auto_indent<class_EditorSettings_property_text_editor/behavior/indent/auto_indent>`                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -869,6 +879,8 @@ Proprietà
    | :ref:`int<class_int>`                             | :ref:`text_editor/help/help_title_font_size<class_EditorSettings_property_text_editor/help/help_title_font_size>`                                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/show_help_index<class_EditorSettings_property_text_editor/help/show_help_index>`                                                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/show_property_setters_and_getters<class_EditorSettings_property_text_editor/help/show_property_setters_and_getters>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/sort_functions_alphabetically<class_EditorSettings_property_text_editor/help/sort_functions_alphabetically>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -940,6 +952,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/engine_type_color<class_EditorSettings_property_text_editor/theme/highlighting/engine_type_color>`                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/error_underline_color<class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color>`                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/executing_line_color<class_EditorSettings_property_text_editor/theme/highlighting/executing_line_color>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/folded_code_region_color<class_EditorSettings_property_text_editor/theme/highlighting/folded_code_region_color>`                                                             |
@@ -991,6 +1005,8 @@ Proprietà
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/user_type_color<class_EditorSettings_property_text_editor/theme/highlighting/user_type_color>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/warning_color<class_EditorSettings_property_text_editor/theme/highlighting/warning_color>`                                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/warning_underline_color<class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color>`                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/word_highlighted_color<class_EditorSettings_property_text_editor/theme/highlighting/word_highlighted_color>`                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1105,6 +1121,20 @@ Descrizioni delle proprietà
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
 Un elenco degli URL disponibili che si possono scegliere nell'Asset Store per recuperare i dati degli asset. La chiave è il nome e il valore è l'URL.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_asset_store/show_incompatible_assets:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **asset_store/show_incompatible_assets** :ref:`🔗<class_EditorSettings_property_asset_store/show_incompatible_assets>`
+
+If ``true``, the Asset Store will show asset releases that are not compatible with the current engine version.
+
+\ **Warning:** Using such assets may result in errors and crashes.
 
 .. rst-class:: classref-item-separator
 
@@ -1389,6 +1419,18 @@ Se ``true``, il pannello dell'albero di scene espanderà automaticamente i nodi 
 :ref:`bool<class_bool>` **docks/scene_tree/center_node_on_reparent** :ref:`🔗<class_EditorSettings_property_docks/scene_tree/center_node_on_reparent>`
 
 Se ``true``, il nuovo nodo creato quando si cambiano i genitori dei nodi verrà posizionato nella posizione media dei nodi selezionati.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **docks/scene_tree/derive_script_globals_by_name** :ref:`🔗<class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name>`
+
+Se ``true``, quando si estende uno script, il nome della classe globale dello script viene inserito nella finestra di dialogo di creazione dello script, se esiste. Se ``false``, il percorso del file dello script viene sempre inserito.
 
 .. rst-class:: classref-item-separator
 
@@ -2800,7 +2842,7 @@ Il colore moltiplicatore per il gradiente del VU meter in cui l'audio non arriva
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2814,7 +2856,7 @@ Il colore moltiplicatore per il gradiente del VU meter in cui l'audio non arriva
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2828,7 +2870,7 @@ Il colore moltiplicatore per il gradiente del VU meter in cui l'audio non arriva
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2842,7 +2884,7 @@ Il colore moltiplicatore per il gradiente del VU meter in cui l'audio non arriva
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3530,22 +3572,22 @@ Porta utilizzata per il server di file quando si esporta il progetto con un file
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-Il percorso all'eseguibile di Blender utilizzato per convertire i file di scena 3D di Blender ``.blend`` nel formato glTF 2.0 durante l'importazione. È richiesto Blender 3.0 o versione successiva.
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-Per abilitare questa funzionalità per un progetto specifico, usa :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-Se questa impostazione è vuota, i percorsi predefiniti di Blender verranno rilevati e utilizzati automaticamente se presenti in questo ordine:
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3789,11 +3831,11 @@ L'accumulo di input può essere disabilitato per ottenere un input leggermente p
 
 Modalità di supporto per l'accessibilità nell'editor:
 
-- **Auto** (``0``): il supporto per l'accessibilità è abilitato, ma gli aggiornamenti alle informazioni di accessibilità sono elaborati solo se è attiva un'applicazione assistiva (come un lettore dello schermo o un display Braille) (predefinito).
+- **Auto** (\ ``0``): il supporto per l'accessibilità è abilitato, ma gli aggiornamenti alle informazioni di accessibilità sono elaborati solo se è attiva un'applicazione assistiva (come un lettore dello schermo o un display Braille) (predefinito).
 
-- **Always active** (``1``): il supporto per l'accessibilità è abilitato e gli aggiornamenti alle informazioni di accessibilità sono sempre elaborati, a prescindere dallo stato delle applicazioni assistive.
+- **Always active** (\ ``1``): il supporto per l'accessibilità è abilitato e gli aggiornamenti alle informazioni di accessibilità sono sempre elaborati, a prescindere dallo stato delle applicazioni assistive.
 
-- **Disabled** (``2``): il supporto per l'accessibilità è completamente disabilitato.
+- **Disabled** (\ ``2``): il supporto per l'accessibilità è completamente disabilitato.
 
 \ **Nota:** Gli strumenti di debug per l'accessibilità, come Accessibility Insights per Windows, Accessibility Inspector (macOS) o AT-SPI Browser (Linux/BSD), non contano come applicazioni assistive. Per testare l'editor con questi strumenti, usa **Always Active**.
 
@@ -3900,6 +3942,18 @@ Il monitor preferito per visualizzare l'editor. Se **Auto**, l'editor ricorderà
 Espande il contenuto della finestra dell'editor principale al titolo, se supportato dal :ref:`DisplayServer<class_DisplayServer>`. Vedi :ref:`DisplayServer.WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>`.
 
 Specifico per la piattaforma macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **interface/editor/appearance/max_sticky_tree_items** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items>`
+
+The maximum number of tree items allowed to stick to the top while its children are in view. A value of ``0`` disables sticking.
 
 .. rst-class:: classref-item-separator
 
@@ -4133,6 +4187,18 @@ Stile delle schede dei pannelli dell'editor, tranne i pannelli inferiori.
 
 ----
 
+.. _class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **interface/editor/docks/main_screen_dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style>`
+
+Tab style of editor docks located at the editor's main screen.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_interface/editor/fonts/code_font:
 
 .. rst-class:: classref-property
@@ -4353,9 +4419,9 @@ Sostituisce il driver per i tablet utilizzato dall'editor.
 
 :ref:`String<class_String>` **interface/editor/localization/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/localization/editor_language>`
 
-La lingua da usare per l'interfaccia dell'editor. Se impostata su **Auto**, la lingua è determinata automaticamente in base alle impostazioni locali del sistema. Vedi anche :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
+The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
 
-Le traduzioni sono fornite dalla community. Se noti un errore, `contribuisci alle traduzioni dell'editor su Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/development/translations.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -4422,18 +4488,6 @@ La quantità di sospensione tra i frame nell'editor (in microsecondi). Valori pi
 Quando la finestra dell'editor non è in primo piano, la quantità di sospensione tra i frame quando è abilitata la modalità di utilizzo a basso consumo (in microsecondi). Valori più alti porteranno a un utilizzo inferiore della CPU/GPU, il che può migliorare la durata della batteria sui laptop (oltre a migliorare le prestazioni del progetto in esecuzione se l'editor deve ridisegnare continuamente). Tuttavia, valori più alti risulteranno in un editor meno reattivo. Il valore predefinito è impostato per limitare l'editor a 10 FPS quando la finestra dell'editor non è in primo piano. Vedi anche :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
 
 \ **Nota:** Questa impostazione è ignorata se :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` è ``true``, poiché abilitando tale impostazione si disabilita la modalità a basso consumo.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EditorSettings_property_interface/editors/derive_script_globals_by_name:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **interface/editors/derive_script_globals_by_name** :ref:`🔗<class_EditorSettings_property_interface/editors/derive_script_globals_by_name>`
-
-Se ``true``, quando si estende uno script, il nome della classe globale dello script viene inserito nella finestra di dialogo di creazione dello script, se esiste. Se ``false``, il percorso del file dello script viene sempre inserito.
 
 .. rst-class:: classref-item-separator
 
@@ -4645,7 +4699,11 @@ Se ``true``, le sotto-risorse possono essere modificate nella vista attuale dell
 
 Lista di risorse che dovrebbero essere sempre aperte in una nuova vista dell'ispettore, anche se :ref:`interface/inspector/open_resources_in_current_inspector<class_EditorSettings_property_interface/inspector/open_resources_in_current_inspector>` è ``true``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -4657,7 +4715,7 @@ Lista di risorse che dovrebbero essere sempre aperte in una nuova vista dell'isp
 
 :ref:`bool<class_bool>` **interface/inspector/show_low_level_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/inspector/show_low_level_opentype_features>`
 
-Se ``true``, visualizza le funzionalità OpenType segnate come "nascoste" (``hidden``) dal file font nell'editor di :ref:`Font<class_Font>`.
+Se ``true``, visualizza le funzionalità OpenType segnate come "nascoste" (\ ``hidden``) dal file font nell'editor di :ref:`Font<class_Font>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5770,6 +5828,18 @@ Lo spazio da aggiungere tra le righe (in pixel). Una spaziatura più grande tra 
 
 ----
 
+.. _class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **text_editor/behavior/diagnostics/enable_tooltips** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips>`
+
+If ``true``, warning and error messages will appear in tooltips when hovering over code.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/behavior/documentation/enable_tooltips:
 
 .. rst-class:: classref-property
@@ -5908,6 +5978,24 @@ Se ``true``, la copia o il taglio senza selezione vengono eseguiti su tutte le r
 
 ----
 
+.. _class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions:
+
+.. rst-class:: classref-property
+
+:ref:`PackedStringArray<class_PackedStringArray>` **text_editor/behavior/general/find_in_file_extensions** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions>`
+
+Text-based file extensions to include in the editor's "Find in Files" feature. You can add e.g. ``tscn`` if you wish to also parse your scene files, especially if you use built-in scripts which are serialized in the scene files.
+
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/behavior/indent/auto_indent:
 
 .. rst-class:: classref-property
@@ -6026,7 +6114,7 @@ Se ``true``, consente di scorrere oltre la fine del file.
 
 Se ``true``, abilita un'animazione di scorrimento fluida quando si usa la rotellina del mouse per scorrere. Vedi :ref:`text_editor/behavior/navigation/v_scroll_speed<class_EditorSettings_property_text_editor/behavior/navigation/v_scroll_speed>` per controllare la velocità di questa animazione.
 
-\ **Nota:** :ref:`text_editor/behavior/navigation/smooth_scrolling<class_EditorSettings_property_text_editor/behavior/navigation/smooth_scrolling>` attualmente si comporta male nei progetti in cui :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` è stato notevolmente aumentato rispetto al suo valore predefinito (``60``). In questo caso, si consiglia di disabilitare questa impostazione.
+\ **Nota:** :ref:`text_editor/behavior/navigation/smooth_scrolling<class_EditorSettings_property_text_editor/behavior/navigation/smooth_scrolling>` attualmente si comporta male nei progetti in cui :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` è stato notevolmente aumentato rispetto al suo valore predefinito (\ ``60``). In questo caso, si consiglia di disabilitare questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -6062,7 +6150,7 @@ Se ``true``, utilizza i caratteri in :ref:`text_editor/behavior/navigation/custo
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/use_default_word_separators** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/use_default_word_separators>`
 
-Se ``true``, utilizza i caratteri in ```!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, la tabella di punteggiatura generale Unicode e la tabella di punteggiatura Unicode CJK come separatori di parole per la navigazione e le operazioni tra parole. Se ``false``, viene utilizzato un sottoinsieme di questi caratteri e non include i caratteri ``<>$~^=+|``. Questo è in aggiunta ai caratteri personalizzati se anche :ref:`text_editor/behavior/navigation/use_custom_word_separators<class_EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators>` è abilitato. Questi caratteri servono per determinare dove finisce una parola. La navigazione e le operazioni tra parole includono il doppio clic su una parola o la pressione prolungata di :kbd:`Ctrl` (:kbd:`Cmd` su macOS) mentre si premono :kbd:`sinistra`, :kbd:`destra`, :kbd:`backspace`, o :kbd:`cancella`.
+If ``true``, uses the characters in ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If ``false``, a subset of these characters are used and does not include the characters ``<>$~^=+|``. This is in addition to custom characters if :ref:`text_editor/behavior/navigation/use_custom_word_separators<class_EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators>` is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while pressing :kbd:`left`, :kbd:`right`, :kbd:`backspace`, or :kbd:`delete`.
 
 .. rst-class:: classref-item-separator
 
@@ -6132,7 +6220,7 @@ Se ``true``, aggiunge automaticamente la :doc:`tipizzazione statica di GDScript 
 
 :ref:`bool<class_bool>` **text_editor/completion/auto_brace_complete** :ref:`🔗<class_EditorSettings_property_text_editor/completion/auto_brace_complete>`
 
-Se ``true``, inserisce automaticamente la parentesi di chiusura corrispondente quando la parentesi di apertura viene inserita tramite digitazione o completamento automatico. Inoltre, rimuove automaticamente la parentesi di chiusura quando si preme :kbd:`Backspace` sulla parentesi di apertura. Ciò include le parentesi (``()``, ``[]``, ``{}``), virgolette di stringa (``''``, ``""``) e commenti (``/**/``) se il linguaggio lo supporta.
+Se ``true``, inserisce automaticamente la parentesi di chiusura corrispondente quando la parentesi di apertura viene inserita tramite digitazione o completamento automatico. Inoltre, rimuove automaticamente la parentesi di chiusura quando si preme :kbd:`Backspace` sulla parentesi di apertura. Ciò include le parentesi (\ ``()``, ``[]``, ``{}``), virgolette di stringa (\ ``''``, ``""``) e commenti (\ ``/**/``) se il linguaggio lo supporta.
 
 .. rst-class:: classref-item-separator
 
@@ -6264,7 +6352,11 @@ Percorso all'eseguibile dell'editor di testo utilizzato per modificare i file di
 
 :ref:`bool<class_bool>` **text_editor/external/use_external_editor** :ref:`🔗<class_EditorSettings_property_text_editor/external/use_external_editor>`
 
-Se ``true``, utilizza un editor esterno invece dell'Editor di script integrato. Vedi anche :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` e :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`.
+If ``true``, uses an external editor instead of the built-in Script Editor. See also :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` and :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`.
+
+.. classref_note::
+
+    Even with this option disabled, it is possible to open specific files with the external editor configured in the above settings by right-clicking a file in the FileSystem dock and selecting **Open in External Program**.
 
 .. rst-class:: classref-item-separator
 
@@ -6325,6 +6417,18 @@ La dimensione del font da utilizzare per le intestazioni nella guida dell'editor
 :ref:`bool<class_bool>` **text_editor/help/show_help_index** :ref:`🔗<class_EditorSettings_property_text_editor/help/show_help_index>`
 
 Se ``true``, visualizza un indice a sinistra della guida dell'editor (nella posizione in cui verrebbe visualizzata la panoramica dei membri durante la modifica di uno script).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_text_editor/help/show_property_setters_and_getters:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **text_editor/help/show_property_setters_and_getters** :ref:`🔗<class_EditorSettings_property_text_editor/help/show_property_setters_and_getters>`
+
+If ``true``, shows property setters and getters from the editor help.
 
 .. rst-class:: classref-item-separator
 
@@ -6766,6 +6870,18 @@ Il colore dei tipi del motore nell'editor di script (:ref:`Object<class_Object>`
 
 ----
 
+.. _class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color:
+
+.. rst-class:: classref-property
+
+:ref:`Color<class_Color>` **text_editor/theme/highlighting/error_underline_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color>`
+
+The script editor's color for the squiggly lines shown under code producing errors.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/theme/highlighting/executing_line_color:
 
 .. rst-class:: classref-property
@@ -7032,7 +7148,7 @@ Il colore utilizzato dall'editor di script per i segnaposto di stringa, come ``%
 
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/symbol_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/symbol_color>`
 
-Il colore nell'editor di script per gli operatori (``( ) [ ] { } + - * /``, ...).
+Il colore nell'editor di script per gli operatori (\ ``( ) [ ] { } + - * /``, ...).
 
 .. rst-class:: classref-item-separator
 
@@ -7081,6 +7197,18 @@ Il colore dell'editor di script per i tipi definiti dall'utente (che usano ``cla
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/warning_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/warning_color>`
 
 Il colore di sfondo nell'editor di script per le righe con avvertimenti. Dovrebbe essere impostato su un colore traslucido in modo che si possa visualizzare sopra altri modificatori di colore di riga come :ref:`text_editor/theme/highlighting/current_line_color<class_EditorSettings_property_text_editor/theme/highlighting/current_line_color>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color:
+
+.. rst-class:: classref-property
+
+:ref:`Color<class_Color>` **text_editor/theme/highlighting/warning_underline_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color>`
+
+The script editor's color for the squiggly lines shown under code producing warnings.
 
 .. rst-class:: classref-item-separator
 

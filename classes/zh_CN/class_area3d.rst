@@ -472,9 +472,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-重力强度等于 :ref:`gravity<class_Area3D_property_gravity>` 的距离。例如，在一个半径为 100 米、表面重力为 4.0 m/s² 的行星上，将 :ref:`gravity<class_Area3D_property_gravity>` 设置为 4.0，将单位距离设置为 100.0。重力会根据平方反比定律衰减，因此在该示例中，距中心 200 米处的重力将为 1.0 m/s²（距离的两倍，重力的 1/4），在 50 米处为 16.0 m/s²（距离的一半，重力的 4 倍），依此类推。
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area3D_property_gravity>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the :ref:`gravity<class_Area3D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4× the gravity), and so on.
 
-仅当单位距离为正数时，上述情况才成立。当该属性被设置为 0.0 时，无论距离如何，重力都将保持不变。
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 

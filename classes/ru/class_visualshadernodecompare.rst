@@ -109,7 +109,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_TRANSFORM** = ``7``
 
-Тип преобразования (``mat4``).
+Тип преобразования (\ ``mat4``).
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_MAX:
 
@@ -135,7 +135,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_EQUAL** = ``0``
 
-Сравнение на равенство (``a == b``).
+Сравнение на равенство (\ ``a == b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_NOT_EQUAL:
 
@@ -143,7 +143,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_NOT_EQUAL** = ``1``
 
-Сравнение для неравенства (``a != b``).
+Сравнение для неравенства (\ ``a != b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN:
 
@@ -151,7 +151,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN** = ``2``
 
-Сравнение на большее, чем (``a > b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Сравнение на большее, чем (\ ``a > b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN_EQUAL:
 
@@ -159,7 +159,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN_EQUAL** = ``3``
 
-Сравнение на большее или равное (``a >= b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Сравнение на большее или равное (\ ``a >= b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN:
 
@@ -167,7 +167,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN** = ``4``
 
-Сравнение для меньше чем (``a < b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Сравнение для меньше чем (\ ``a < b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN_EQUAL:
 
@@ -175,7 +175,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN_EQUAL** = ``5``
 
-Сравнение на «меньше или равно» (``a <= b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Сравнение на «меньше или равно» (\ ``a <= b``). Не может использоваться, если :ref:`type<class_VisualShaderNodeCompare_property_type>` установлен на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` или :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_MAX:
 

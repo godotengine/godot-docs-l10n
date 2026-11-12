@@ -16,9 +16,11 @@ ConfirmationDialog
 Опис
 --------
 
-Діалогове вікно, яке використовується для підтвердження дій. Це вікно схоже на :ref:`AcceptDialog<class_AcceptDialog>`, але натискання кнопки «Скасувати» може мати інший результат, ніж натискання кнопки «ОК». Порядок розташування двох кнопок залежить від операційної системи.
+A dialog used for confirmation of actions. This window is similar to :ref:`AcceptDialog<class_AcceptDialog>`, but pressing its Cancel button can have a different outcome from pressing the OK button. The order of the two buttons varies depending on the host OS.
 
-Щоб скасувати дію, можна використовувати:
+\ **Note:** The dialog controls the size of its buttons, any manual size changes will be overridden. Use the :ref:`AcceptDialog.buttons_min_width<class_AcceptDialog_theme_constant_buttons_min_width>` and :ref:`AcceptDialog.buttons_min_height<class_AcceptDialog_theme_constant_buttons_min_height>` theme constants instead.
+
+To get cancel action, you can use:
 
 
 .. tabs::
@@ -33,7 +35,7 @@ ConfirmationDialog
 
 
 
-\ **Примітка:** :ref:`AcceptDialog<class_AcceptDialog>` за замовчуванням невидимий. Щоб зробити його видимим, викличте один із методів ``popup_*`` з :ref:`Window<class_Window>` на вузлі, наприклад, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Note:** :ref:`AcceptDialog<class_AcceptDialog>` is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,8 +51,6 @@ ConfirmationDialog
    | :ref:`Vector2i<class_Vector2i>` | min_size                                                                        | ``Vector2i(200, 70)`` (overrides :ref:`Window<class_Window_property_min_size>`) |
    +---------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>` | size                                                                            | ``Vector2i(200, 100)`` (overrides :ref:`Window<class_Window_property_size>`)    |
-   +---------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`     | title                                                                           | ``"Please Confirm..."`` (overrides :ref:`Window<class_Window_property_title>`)  |
    +---------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group

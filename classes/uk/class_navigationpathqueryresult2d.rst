@@ -110,7 +110,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 Отриманий масив шляху з навігаційного запиту. Усі позиції масиву шляху в глобальних координатах. Без індивідуальних параметрів запиту, це той самий шлях, який повернув :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 ``ObjectID`` :ref:`Object<class_Object>`, які керують регіонами і зв'язують кожну точку шляху.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 Тип навігаційної примітивності (регіон або посилання), що кожен пункт шляху проходить через.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

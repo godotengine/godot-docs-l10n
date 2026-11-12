@@ -85,7 +85,7 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_BONE** = ``0``
 
-El objetivo de referencia es un hueso. En este caso, el espacio del objetivo de referencia es el espacio local.
+The reference target is a bone. In this case, the reference target space is local space.
 
 .. _class_BoneConstraint3D_constant_REFERENCE_TYPE_NODE:
 
@@ -93,9 +93,9 @@ El objetivo de referencia es un hueso. En este caso, el espacio del objetivo de 
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_NODE** = ``1``
 
-El objetivo de referencia es un :ref:`Node3D<class_Node3D>`. En este caso, el espacio del objetivo de referencia es el espacio del modelo.
+The reference target is a :ref:`Node3D<class_Node3D>`. In this case, the reference target space is model space.
 
-En otras palabras, las coordenadas del objetivo de referencia se tratan como si estuviera ubicado directamente debajo de :ref:`Skeleton3D<class_Skeleton3D>`, que a su vez es antecesor del **BoneConstraint3D**.
+In other words, the reference target's coordinates are treated as if it was placed directly under the :ref:`Skeleton3D<class_Skeleton3D>` parent of the **BoneConstraint3D**.
 
 .. rst-class:: classref-section-separator
 
@@ -190,7 +190,7 @@ Este hueso solo será referenciado y no modificado por este modificador.
 
 Returns the reference node path of the setting at ``index``.
 
-This node will be only referenced and not modified by this modifier.
+This node will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -262,9 +262,9 @@ Establece el hueso de aplicación del ajuste en ``index`` a ``bone_name``. Este 
 
 |void| **set_reference_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone>`
 
-Establece el hueso de referencia del ajuste en ``index`` a ``bone``.
+Sets the reference bone of the setting at ``index`` to ``bone``.
 
-Este hueso solo será referenciado y no modificado por este modificador.
+This bone will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ Este hueso solo será referenciado y no modificado por este modificador.
 
 |void| **set_reference_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone_name>`
 
-Establece el hueso de referencia del ajuste en ``index`` a ``bone_name``.
+Sets the reference bone of the setting at ``index`` to ``bone_name``.
 
-Este hueso solo será referenciado y no modificado por este modificador.
+This bone will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Este hueso solo será referenciado y no modificado por este modificador.
 
 Sets the reference node path of the setting at ``index`` to ``node``.
 
-This node will be only referenced and not modified by this modifier.
+This node will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 

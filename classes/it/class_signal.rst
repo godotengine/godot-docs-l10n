@@ -310,9 +310,9 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **connect**\ (\ callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Signal_method_connect>`
 
-Collega questo segnale al chiamabile ``callable``. È possibile aggiungere anche ``flags`` facoltativi per configurare il comportamento della connessione (vedi le costanti di :ref:`ConnectFlags<enum_Object_ConnectFlags>`). È possibile fornire argomenti aggiuntivi al ``callable`` connesso tramite :ref:`Callable.bind()<class_Callable_method_bind>`.
+Connects this signal to the specified ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). You can provide additional arguments to the connected ``callable`` by using :ref:`Callable.bind()<class_Callable_method_bind>`. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the signal was successfully connected, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the :ref:`Callable<class_Callable>` is null or invalid.
 
-Un segnale può essere connesso solo una volta allo stesso :ref:`Callable<class_Callable>`. Se il segnale è già connesso, restituisce :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` e invia un messaggio di errore, a meno che il segnale non sia connesso con :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. Per evitare ciò, usa prima :ref:`is_connected()<class_Signal_method_is_connected>` per verificare le connessioni esistenti.
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and prints an error, unless the signal is connected with :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Signal_method_is_connected>` first to check for existing connections.
 
 ::
 
@@ -322,7 +322,7 @@ Un segnale può essere connesso solo una volta allo stesso :ref:`Callable<class_
     func _on_pressed(button):
         print(button.name, " was pressed")
 
-\ **Nota:** Se l'oggetto del ``callable`` è liberato, la connessione sarà persa.
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Un segnale può essere connesso solo una volta allo stesso :ref:`Callable<class_
 
 |void| **disconnect**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Signal_method_disconnect>`
 
-Disconnette questo segnale dal :ref:`Callable<class_Callable>` specificato. Se la connessione non esiste, genera un errore. Usa :ref:`is_connected()<class_Signal_method_is_connected>` per assicurarti che la connessione esista.
+Disconnects this signal from the specified :ref:`Callable<class_Callable>`. If the connection does not exist, prints an error. Use :ref:`is_connected()<class_Signal_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 

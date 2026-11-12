@@ -348,7 +348,9 @@ VideoStreamPlayer
 
 :ref:`Texture2D<class_Texture2D>` **get_video_texture**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_video_texture>`
 
-将当前帧作为 :ref:`Texture2D<class_Texture2D>` 返回。
+Returns the video playback texture.
+
+The texture will be continually updated as the video plays, so call :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` to get a still frame.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +376,9 @@ VideoStreamPlayer
 
 |void| **play**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_play>`
 
-从头开始播放视频。如果视频处于暂停状态，不会取消暂停。
+Starts the video playback from the beginning, unless the video is already playing.
+
+\ **Note:** If the video is paused, this will not unpause the video.
 
 .. rst-class:: classref-item-separator
 

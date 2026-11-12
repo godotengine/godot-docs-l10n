@@ -85,7 +85,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -145,7 +145,11 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 Збірки верхньорівневих шляхів, до яких може бути пов'язана ця дія.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -239,7 +239,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_device_architecture**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_device_architecture>`
 
-返回一键部署的设备架构。
+Returns device architecture for remote deploy.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_option_icon**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_icon>`
 
-返回一键部署菜单中指定 ``device`` 设备的条目图标。该图标应为 16×16 像素，并根据当前编辑器的缩放进行调整（见 :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`\ ）。
+Returns the item icon for the specified ``device`` in the remote deploy menu. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_label**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_label>`
 
-返回 ``device`` 设备的一键部署菜单项标签。
+Returns remote deploy menu item label for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_tooltip**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_tooltip>`
 
-返回 ``device`` 设备的一键部署菜单项工具提示。
+Returns remote deploy menu item tooltip for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ EditorExportPlatformExtension
 
 :ref:`int<class_int>` **_get_options_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_count>`
 
-返回一键部署菜单中可用的设备（或其他选项）的数量。
+Returns the number of devices (or other options) available in the remote deploy menu.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-返回一键部署菜单按钮的工具提示。
+Returns tooltip of the remote deploy menu button.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_run_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_run_icon>`
 
-返回一键部署菜单按钮的图标。该图标应为 16×16 像素，并根据当前编辑器缩放进行调整（见 :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`\ ）。
+Returns the icon of the remote deploy menu button. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ EditorExportPlatformExtension
 
 :ref:`bool<class_bool>` **_poll_export**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__poll_export>`
 
-如果一键部署选项发生更改，编辑器界面需要更新，则返回 ``true``\ 。
+Returns ``true`` if remote deploy options are changed and editor interface should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ EditorExportPlatformExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_run**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, device\: :ref:`int<class_int>`, debug_flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__run>`
 
-选择 ``device`` 一键部署菜单选项时调用该方法。
+This method is called when ``device`` remote deploy menu option is selected.
 
-实现时应当将项目导出到临时位置，然后将其上传至 ``device`` 设备并运行，也可以执行与该菜单项相关的其他动作。
+Implementation should export project to a temporary location, upload and run it on the specific ``device``, or perform another action associated with the menu item.
 
 .. rst-class:: classref-item-separator
 

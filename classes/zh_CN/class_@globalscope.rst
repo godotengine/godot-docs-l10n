@@ -110,6 +110,8 @@
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`TextServerManager<class_TextServerManager>`                 | :ref:`TextServerManager<class_@GlobalScope_property_TextServerManager>`                 |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`TextureStreaming<class_TextureStreaming>`                   | :ref:`TextureStreaming<class_@GlobalScope_property_TextureStreaming>`                   |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`ThemeDB<class_ThemeDB>`                                     | :ref:`ThemeDB<class_@GlobalScope_property_ThemeDB>`                                     |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Time<class_Time>`                                           | :ref:`Time<class_@GlobalScope_property_Time>`                                           |
@@ -2220,7 +2222,7 @@ Z 键。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETLEFT** = ``91``
 
-左中括号（\ ``[lb]``\ ）键。
+Left bracket (\ ``[``) key.
 
 .. _class_@GlobalScope_constant_KEY_BACKSLASH:
 
@@ -2236,7 +2238,7 @@ Z 键。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETRIGHT** = ``93``
 
-右中括号（\ ``[rb]``\ ）键。
+Right bracket (\ ``]``) key.
 
 .. _class_@GlobalScope_constant_KEY_ASCIICIRCUM:
 
@@ -3970,11 +3972,19 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 与 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>` 类似，但是属性以原始路径的形式存储，不使用 UID。这意味着移动文件后引用可能损坏。请尽量使用 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`\ 。
 
+.. _class_@GlobalScope_constant_PROPERTY_HINT_AUDIO_BUS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_AUDIO_BUS** = ``45``
+
+Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property is the name of an audio bus. This allows the selection of predefined bus names registered with the audio server.
+
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``45``
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``46``
 
 代表 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` 枚举的大小。
 
@@ -5442,6 +5452,18 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 ----
 
+.. _class_@GlobalScope_property_TextureStreaming:
+
+.. rst-class:: classref-property
+
+:ref:`TextureStreaming<class_TextureStreaming>` **TextureStreaming** :ref:`🔗<class_@GlobalScope_property_TextureStreaming>`
+
+The :ref:`TextureStreaming<class_TextureStreaming>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_property_ThemeDB:
 
 .. rst-class:: classref-property
@@ -5946,9 +5968,9 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, pre\: :ref:`float<class_float>`, post\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`, to_t\: :ref:`float<class_float>`, pre_t\: :ref:`float<class_float>`, post_t\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_cubic_interpolate_angle_in_time>`
 
-根据 ``weight`` 定义的系数，以及 ``pre`` 和 ``post`` 值，在两个旋转值之间的最短路径进行三次插值。另见 :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`\ 。
+Cubic interpolates between two rotation values with shortest path by the factor defined in ``weight`` with ``pre`` and ``post`` values. See also :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
-它可以根据时间值执行比 :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>` 更平滑的插值。
+It can perform smoother interpolation than :ref:`cubic_interpolate_angle()<class_@GlobalScope_method_cubic_interpolate_angle>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -6735,30 +6757,30 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-以尽可能最佳的方式将一个或多个任意类型的参数转换为字符串，并将其打印到控制台。
+Converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
-支持以下 BBCode 标签： ``b``\ 、\ ``i``\ 、\ ``u``\ 、\ ``s``\ 、\ ``indent``\ 、\ ``code``\ 、\ ``url``\ 、\ ``center``\ 、\ ``right``\ 、\ ``color``\ 、\ ``bgcolor``\ 、\ ``fgcolor``\ 。
+The following BBCode tags are supported: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
 
-URL 标签仅支持在 URL 标签中包含 URL，不支持使用不同标题的 URL。
+URL tags support both URLs wrapped by a URL tag and URLs with a different title (\ ``[url=address]text[/url]``). Support for URLs with a different title varies across terminal emulators. Most modern terminal emulators support them, but Terminal.app and conhost (the legacy Windows console) do not.
 
-当打印到标准输出时，支持的 BBCode 子集被转换为 ANSI 转义码以供终端仿真器显示。对 ANSI 转义码的支持可能因终端仿真器而异，尤其是斜体和删除线。在标准输出中，\ ``code`` 会使用较弱的文本表示，但字体不变。不支持的标签在标准输出中会原样保留。
+When printing to standard output, the supported subset of BBCode is converted to ANSI escape codes for the terminal emulator to display. Support for ANSI escape codes varies across terminal emulators, especially for italic and strikethrough. In standard output, ``code`` is represented with faint text but without any font change. Unsupported tags are left as-is in standard output.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Hello world![/b][/color]") # 输出“Hello world!”，使用绿色的粗体。
+    print_rich("[color=green][b]Hello world![/b][/color]") # Prints "Hello world!", in green with a bold font.
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // 输出“Hello world!”，使用绿色的粗体。
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Prints "Hello world!", in green with a bold font.
 
 
 
-\ **注意：**\ 请考虑使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 来打印错误和警告消息，而不是 :ref:`print()<class_@GlobalScope_method_print>` 或 :ref:`print_rich()<class_@GlobalScope_method_print_rich>`\ 。这将它们与用于调试目的的打印消息区分开来，同时还会在打印错误或警告时显示堆栈跟踪。
+\ **Note:** Consider using :ref:`push_error()<class_@GlobalScope_method_push_error>` and :ref:`push_warning()<class_@GlobalScope_method_push_warning>` to print error and warning messages instead of :ref:`print()<class_@GlobalScope_method_print>` or :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
-\ **注意：**\ 在编辑器中显示的输出支持可点击的 ``[url=address]文本[/url]`` 标签。点击时， ``[url]`` 标签的 ``address`` 值由 :ref:`OS.shell_open()<class_OS_method_shell_open>` 处理。
+\ **Note:** Output displayed in the editor supports clickable ``[url=address]text[/url]`` tags. The ``[url]`` tag's ``address`` value is handled by :ref:`OS.shell_open()<class_OS_method_shell_open>` when clicked.
 
 .. rst-class:: classref-item-separator
 

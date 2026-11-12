@@ -432,15 +432,15 @@ Callable
 
 :ref:`bool<class_bool>` **is_custom**\ (\ ) |const| :ref:`🔗<class_Callable_method_is_custom>`
 
-如果该 **Callable** 是自定义可调用对象，则返回 ``true``\ 。使用自定义可调用对象：
+Returns ``true`` if this **Callable** is a custom callable. Custom callables are used:
 
-- 用于绑定/解除绑定参数（参见 :ref:`bind()<class_Callable_method_bind>` 和 :ref:`unbind()<class_Callable_method_unbind>`\ ）；
+- for binding/unbinding arguments (see :ref:`bind()<class_Callable_method_bind>` and :ref:`unbind()<class_Callable_method_unbind>`);
 
-- 用于表示内置 :ref:`Variant<class_Variant>` 类型的方法（参见 :ref:`create()<class_Callable_method_create>`\ ）；
+- for representing methods of built-in :ref:`Variant<class_Variant>` types (see :ref:`create()<class_Callable_method_create>`);
 
-- 用于在 GDScript 中表示全局、lambda 和 RPC 函数；
+- for representing global and lambda functions in GDScript;
 
-- 用于核心、GDExtension 和 C# 中的其他目的。
+- for other purposes in the core, GDExtension, and C#.
 
 .. rst-class:: classref-item-separator
 

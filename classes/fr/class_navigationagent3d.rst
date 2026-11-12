@@ -719,7 +719,7 @@ N'affecte pas la recherche de chemin normale. Pour changer le rayon de recherche
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Le montant de simplification du chemin en unités du monde.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ Si elle est définie, un nouveau chemin de navigation de la position actuelle de
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-La quantité minimale de temps pour laquelle les vitesses de cet agent, calculées avec l'algorithme d'évitement de collision, sont sûres par rapport aux autres agents. Plus le nombre est élevé, plus tôt l'agent répondra à d'autres agents, mais moins il aura la liberté de choisir sa vitesse. Une valeur trop élevée ralentira considérablement le mouvement de l'agent. Doit être positif.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ La quantité minimale de temps pour laquelle les vitesses de cet agent, calculé
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-La quantité minimale de temps pour laquelle les vitesses de cet agent, calculées avec l'algorithme d'évitement de collision, sont sûres par rapport aux obstacle d'évitement statiques. Plus le nombre est élevé, plus tôt l'agent répondra aux obstacles d'évitement statiques, mais moins il aura la liberté de choisir sa vitesse. Une valeur trop élevée ralentira considérablement le mouvement de l'agent. Doit être positif.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ Renvoie si le masque spécifié du masque de bits :ref:`avoidance_mask<class_Nav
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_current_navigation_path>`
 
-Renvoie le chemin actuel de cet agent du début à la fin dans les coordonnées globales. Le chemin ne se met à jour que lorsque la position cible est changée ou que l'agent requiert un nouveau chemin. Le tableau du chemin n'est pas destiné à être utilisé pour modifier directement le chemin car l'agent a sa propre logique de chemin interne qui serait corrompue en changeant le tableau du chemin manuellement. Utilisez plutôt :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` une fois à chaque trame de physique pour recevoir le point suivant du chemin pour le mouvement de l'agent car cette fonction met également à jour la logique interne du chemin.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

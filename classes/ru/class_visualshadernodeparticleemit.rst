@@ -14,7 +14,7 @@ VisualShaderNodeParticleEmit
 Описание
 ----------------
 
-Этот узел внутренне вызывает метод шейдера ``emit_subparticle``. Он испустит частицу из настроенного суб-передатчика и также позволяет настроить способ ее испускания. Требуется суб-передатчика, назначенный узлу частиц с этим шейдером.
+This node calls the internal ``emit_subparticle`` method. It will emit a particle from the configured sub-emitter and also allows to customize how it's emitted. Requires a sub-emitter assigned to the particles node that is using this shader.
 
 .. rst-class:: classref-reftable-group
 

@@ -667,7 +667,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`int<class_int>` **_forward_3d_gui_input**\ (\ viewport_camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_gui_input>`
 
-Викликається, коли в поточній відредагованій сцені є кореневий вузол, :ref:`_handles()<class_EditorPlugin_private_method__handles>` реалізовано, а :ref:`InputEvent<class_InputEvent>` відбувається у 3D-окні перегляду. Повернене значення вирішує, чи споживається :ref:`InputEvent<class_InputEvent>` чи пересилається іншим **EditorPlugin**. Параметри див. AfterGUInput. 
+Викликається, коли в поточній відредагованій сцені є кореневий вузол, :ref:`_handles()<class_EditorPlugin_private_method__handles>` реалізовано, а :ref:`InputEvent<class_InputEvent>` відбувається у 3D-окні перегляду. Повернене значення вирішує, чи споживається :ref:`InputEvent<class_InputEvent>` чи пересилається іншим **EditorPlugin**. Параметри див. :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>`. 
 
 
 .. tabs:: 
@@ -840,7 +840,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_breakpoints**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_breakpoints>`
 
-Для редакторів, які редагують об'єкти на основі скриптів. Ви можете повернути список точок перерви у форматі (``script:line``), наприклад: ``res://path_to_script.gd:25``.
+Для редакторів, які редагують об'єкти на основі скриптів. Ви можете повернути список точок перерви у форматі (\ ``script:line``), наприклад: ``res://path_to_script.gd:25``.
 
 .. rst-class:: classref-item-separator
 
@@ -851,6 +851,8 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 .. rst-class:: classref-method
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
+
+**Застаріло:** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` of a main screen dock.
 
 Переопределите цей метод у своєму плагіні, щоб повернути об’єкт типу :ref:`Texture2D<class_Texture2D>` і надати йому іконку.
 
@@ -891,9 +893,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-Переопределите цей метод у своєму плагіні, щоб вказати назву плагіна, яка відображатиметься в редакторі Godot.
+Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
 
-У плагінів головного екрану ця назва з’являється у верхній частині екрана, праворуч від кнопок «2D», «3D», «Скрипт», «Гра» та «Магазин ресурсів».
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+
+\ **Note:** Main screen plugins should instead use :ref:`EditorDock.title<class_EditorDock_property_title>` of a main screen dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,32 +1005,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-Повертає ``true``, якщо це плагін редактора головного екрану (він відображається у списку робочих просторів разом із **2D**, **3D**, **Script**, **Game** та **Asset Store**).
+**Застаріло:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_MAIN_SCREEN<class_EditorDock_constant_DOCK_SLOT_MAIN_SCREEN>`.
 
-Коли робоча область плагіна вибрана, інші плагіни головного екрану будуть приховані, але ваш плагін не з'явиться автоматично. Його потрібно додати як дочірній елемент :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` і зробити видимим всередині :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
+Return ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
 
-Використовуйте :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` та :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>`, щоб налаштувати зовнішній вигляд кнопки плагіна.
-
-::
-
-    var plugin_control
-
-    func _enter_tree():
-     plugin_control = preload("my_plugin_control.tscn").instantiate()
-     EditorInterface.get_editor_main_screen().add_child(plugin_control)
-     plugin_control.hide()
-
-    func _has_main_screen():
-     return true
-
-    func _make_visible(visible):
-     plugin_control.visible = visible
-
-    func _get_plugin_name():
-     return "My Super Cool Plugin 3000"
-
-    func _get_plugin_icon():
-     return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+You can add a main screen dock by using :ref:`EditorDock<class_EditorDock>` with :ref:`EditorDock.DOCK_LAYOUT_MAIN_SCREEN<class_EditorDock_constant_DOCK_LAYOUT_MAIN_SCREEN>` as available layout.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,13 +1131,13 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Button<class_Button>` **add_control_to_bottom_panel**\ (\ control\: :ref:`Control<class_Control>`, title\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>` = null\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_bottom_panel>`
 
-**Застаріло:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
+**Застаріло:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_BOTTOM<class_EditorDock_constant_DOCK_SLOT_BOTTOM>`.
 
-Додає елемент керування до нижньої панелі (разом із Output, Debug, Animation тощо). Повертає посилання на кнопку, яка знаходиться поза деревом сцени. Ви самі вирішуєте, чи приховувати/показувати кнопку за потреби. Коли ваш плагін деактивовано, обов’язково видаліть свій власний елемент керування за допомогою :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` та звільніть його за допомогою :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` – це ярлик, який при активації перемикатиме видимість нижньої панелі. Об’єкт shortcut встановлюється лише тоді, коли цей елемент керування додано до нижньої панелі.
+\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
 
-\ **Примітка** Дивіться стандартні ярлики нижньої панелі редактора в налаштуваннях редактора для натхнення. За домовленістю, всі вони використовують модифікатор :kbd:`Alt`.
+\ **Note:** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use the :kbd:`Alt` modifier.
 
 .. rst-class:: classref-item-separator
 

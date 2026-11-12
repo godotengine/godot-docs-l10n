@@ -169,7 +169,11 @@ To set the coordinate of multiple variation axes:
 
 Массив цветов для переопределения предопределенной палитры. Используйте ``Color(0, 0, 0, 0)``, чтобы сохранить цвет предопределенной палитры в определенной позиции.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -66,9 +66,9 @@ Image
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                        | :ref:`clear_mipmaps<class_Image_method_clear_mipmaps>`\ (\ )                                                                                                                                                                                                                       |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress<class_Image_method_compress>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ )                                                 |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress<class_Image_method_compress>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ )                                           |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress_from_channels<class_Image_method_compress_from_channels>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ )                           |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress_from_channels<class_Image_method_compress_from_channels>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ )                     |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`           | :ref:`compute_image_metrics<class_Image_method_compute_image_metrics>`\ (\ compared_image\: :ref:`Image<class_Image>`, use_luma\: :ref:`bool<class_bool>`\ )                                                                                                                       |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -100,7 +100,7 @@ Image
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                        | :ref:`flip_y<class_Image_method_flip_y>`\ (\ )                                                                                                                                                                                                                                     |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`generate_mipmaps<class_Image_method_generate_mipmaps>`\ (\ renormalize\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                                  |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`generate_mipmaps<class_Image_method_generate_mipmaps>`\ (\ renormalize\: :ref:`bool<class_bool>` = false, preserve_alpha_test_coverage\: :ref:`bool<class_bool>` = false, alpha_test_threshold\: :ref:`float<class_float>` = 0.5\ )                                          |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>` | :ref:`get_data<class_Image_method_get_data>`\ (\ ) |const|                                                                                                                                                                                                                         |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -638,11 +638,27 @@ OpenGL 纹理格式 ``GL_RGBA16UI`` 包含四个分量，每个分量都是一�
 
 \ **注意：**\ 使用 :ref:`get_pixel()<class_Image_method_get_pixel>` 进行采样时，返回的 :ref:`Color<class_Color>` 值需要除以 ``65535`` 才能获得正确的颜色值。
 
+.. _class_Image_constant_FORMAT_ASTC_6x6:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Format<enum_Image_Format>` **FORMAT_ASTC_6x6** = ``47``
+
+`Adaptive Scalable Texture Compression <https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression>`__. This implements the 6×6 (medium quality) mode.
+
+.. _class_Image_constant_FORMAT_ASTC_6x6_HDR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Format<enum_Image_Format>` **FORMAT_ASTC_6x6_HDR** = ``48``
+
+Same format as :ref:`FORMAT_ASTC_6x6<class_Image_constant_FORMAT_ASTC_6x6>`, but with the hint to let the GPU know it is used for HDR.
+
 .. _class_Image_constant_FORMAT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Format<enum_Image_Format>` **FORMAT_MAX** = ``47``
+:ref:`Format<enum_Image_Format>` **FORMAT_MAX** = ``49``
 
 代表 :ref:`Format<enum_Image_Format>` 枚举的大小。
 
@@ -686,15 +702,15 @@ enum **Interpolation**: :ref:`🔗<enum_Image_Interpolation>`
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_TRILINEAR** = ``3``
 
-在两个最适合的多级渐远纹理级别上分别执行双线性采样，然后在采样结果之间进行线性插值。
+Performs bilinear separately on the two most-suited mipmap levels, then linearly interpolates between them.
 
-它比 :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>` 慢，但能产生更高质量的效果，减少锯齿伪影。
+It's slower than :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>`, but produces higher-quality results with far fewer aliasing artifacts.
 
-如果图像没有多级渐远纹理，它们将被生成并在内部使用，但不会在生成的图像之上生成多级渐远纹理。
+If the image does not have mipmaps, they will be generated and used internally, but no mipmaps will be generated on the resulting image.
 
-\ **注意：**\ 如果你打算缩放原始图像的多个副本，最好事先对其调用 :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`\ ，以避免在生成它们时反复浪费处理能力。
+\ **Note:** If you intend to scale multiple copies of the original image, it's better to call :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` on it in advance, to avoid wasting processing power in generating them again and again.
 
-另一方面，如果图像已经有了多级渐远纹理，其将被使用，并为生成的图像生成新的一组。
+On the other hand, if the image already has mipmaps, they will be used, and a new set will be generated for the resulting image.
 
 .. _class_Image_constant_INTERPOLATE_LANCZOS:
 
@@ -892,6 +908,56 @@ enum **CompressSource**: :ref:`🔗<enum_Image_CompressSource>`
 
 ----
 
+.. _enum_Image_CompressProfile:
+
+.. rst-class:: classref-enumeration
+
+enum **CompressProfile**: :ref:`🔗<enum_Image_CompressProfile>`
+
+.. _class_Image_constant_COMPRESS_PROFILE_AUTOMATIC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_AUTOMATIC** = ``0``
+
+Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX_QUALITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX_QUALITY** = ``1``
+
+Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_COMPRESSED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_COMPRESSED** = ``2``
+
+Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX_COMPRESSION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX_COMPRESSION** = ``3``
+
+Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX** = ``4``
+
+Represents the size of the :ref:`CompressProfile<enum_Image_CompressProfile>` enum.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _enum_Image_ASTCFormat:
 
 .. rst-class:: classref-enumeration
@@ -983,7 +1049,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 |void| **blend_rect**\ (\ src\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blend_rect>`
 
-将 ``src`` 图像上的 ``src_rect`` 与该图像的坐标 ``dst`` 处进行 Alpha 混合，将根据两个图像的边界进行裁剪。该图像和 ``src`` 图像\ **必须**\ 具有相同的格式。具有非正大小的 ``src_rect`` 将被视为空。
+Alpha-blends ``src_rect`` from ``src`` image to this image at coordinates ``dst``, clipped accordingly to both image bounds. This image and ``src`` image **must** have the same format. ``src_rect`` with non-positive size is treated as empty.
+
+\ **Note:** Simultaneously reading and writing to the same image reference may lead to unexpected results.
 
 .. rst-class:: classref-item-separator
 
@@ -1055,15 +1123,15 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **compress**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress>`
+:ref:`Error<enum_@GlobalScope_Error>` **compress**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ ) :ref:`🔗<class_Image_method_compress>`
 
-使用 VRAM 压缩格式压缩图像以减少内存的使用。当图像被压缩时，不能直接访问像素数据。如果选择的压缩模式不可用，则返回错误。
+Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
 
-\ ``source`` 参数有助于为 DXT 和 ETC2 格式选择最佳压缩方法。对于 ASTC 压缩，它会被忽略。
+The ``source`` parameter helps to pick the best compression method for DXT and ETC2 formats. It is ignored for ASTC compression.
 
-\ ``astc_format`` 参数仅在使用 ASTC 压缩时才会生效；对于其他格式，它将被忽略。
+The ``profile`` lets the user pick whether the compression should prioritize quality or a smaller size. Only ASTC compression uses this currently.
 
-\ **注意：**\ :ref:`compress()<class_Image_method_compress>` 仅在编辑器构建中受支持。在导出的项目中运行时，该方法始终返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
+\ **Note:** :ref:`compress()<class_Image_method_compress>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,15 +1141,15 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **compress_from_channels**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress_from_channels>`
+:ref:`Error<enum_@GlobalScope_Error>` **compress_from_channels**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ ) :ref:`🔗<class_Image_method_compress_from_channels>`
 
-使用 VRAM 压缩格式压缩图像以减少内存的使用。当图像被压缩时，不能直接访问像素数据。如果选择的压缩模式不可用，则返回错误。
+Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
 
-这是 :ref:`compress()<class_Image_method_compress>` 的一种替代方法，允许用户提供使用的通道，以便压缩器选择最佳的 DXT 和 ETC2 格式。对于其他格式（非 DXT 或 ETC2），该参数将被忽略。
+This is an alternative to :ref:`compress()<class_Image_method_compress>` that lets the user supply the channels used in order for the compressor to pick the best DXT, ETC2, and ASTC formats. For other formats (non DXT, ETC2, or ASTC), this argument is ignored.
 
-\ ``astc_format`` 参数仅在使用 ASTC 压缩时才会生效；对于其他格式，它将被忽略。
+The ``profile`` lets the user pick whether the compression should prioritize quality or a smaller size. Only ASTC compression uses this currently.
 
-\ **注意：**\ :ref:`compress_from_channels()<class_Image_method_compress_from_channels>` 仅在编辑器构建中受支持。在导出的项目中运行时，该方法始终返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
+\ **Note:** :ref:`compress_from_channels()<class_Image_method_compress_from_channels>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,11 +1343,15 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **generate_mipmaps**\ (\ renormalize\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Image_method_generate_mipmaps>`
+:ref:`Error<enum_@GlobalScope_Error>` **generate_mipmaps**\ (\ renormalize\: :ref:`bool<class_bool>` = false, preserve_alpha_test_coverage\: :ref:`bool<class_bool>` = false, alpha_test_threshold\: :ref:`float<class_float>` = 0.5\ ) :ref:`🔗<class_Image_method_generate_mipmaps>`
 
-为图像生成多级渐远纹理（Mipmap）。多级渐远纹理是预先计算好的图像的低分辨率副本，如果图像在渲染时需要按比例缩小，则会自动使用这些副本。它们有助于在渲染时提高图像质量和性能。如果图像被压缩，或采用自定义格式，或图像的宽度或高度为 ``0``\ ，则该方法返回错误。在为法线纹理生成多级渐远纹理时启用 ``renormalize`` 能够确保得到的所有向量值都是归一化的。
+Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is ``0``. Enabling ``renormalize`` when generating mipmaps for normal map textures will make sure all resulting vector values are normalized.
 
-调用 :ref:`has_mipmaps()<class_Image_method_has_mipmaps>` 或 :ref:`get_mipmap_count()<class_Image_method_get_mipmap_count>` 能够检查图像是否使用多级渐远纹理。在已拥有多级渐远纹理的图像上调用 :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` 将替换该图像中已有的多级渐远纹理。
+It is possible to check if the image has mipmaps by calling :ref:`has_mipmaps()<class_Image_method_has_mipmaps>` or :ref:`get_mipmap_count()<class_Image_method_get_mipmap_count>`. Calling :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` on an image that already has mipmaps will replace existing mipmaps in the image.
+
+If ``preserve_alpha_test_coverage`` is ``true`` it automatically adjusts alpha values to maintain consistent coverage when alpha testing is used. This is especially useful for hair, foliage, or other alpha-tested materials, as it prevents fading or popping artifacts across mipmap levels (LODs). This option is intended for color textures and clamps the alpha channel in the 0.0 - 1.0 range.
+
+The ``alpha_test_threshold`` parameter is the alpha threshold used when preserving alpha test coverage across mipmap levels. The coverage is measured at mipmap 0 using the setting and the lower mipmaps are adjusted to match that coverage. Higher values preserve more detail, lower values create softer edges. Note that this threshold is independent from the ``Alpha Scissor Threshold`` set on the material and they both may need to be tuned for optimal results.
 
 .. rst-class:: classref-item-separator
 
@@ -1487,7 +1559,7 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 |void| **linear_to_srgb**\ (\ ) :ref:`🔗<class_Image_method_linear_to_srgb>`
 
-使用查找表将整个图像从线性编码转换为非线性 sRGB 编码。仅适用于 :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` 或 :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式的图像。
+Converts the entire image from linear encoding to nonlinear sRGB encoding. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>`, :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`, :ref:`FORMAT_RGBH<class_Image_constant_FORMAT_RGBH>`, or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` format.
 
 .. rst-class:: classref-item-separator
 
@@ -1989,9 +2061,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 |void| **srgb_to_linear**\ (\ ) :ref:`🔗<class_Image_method_srgb_to_linear>`
 
-使用查找表将非线性 sRGB 编码的原始数据转换为线性编码。仅适用于 :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` 或 :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式的图像。
+Converts the raw data from nonlinear sRGB encoding to linear encoding. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>`, :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`, :ref:`FORMAT_RGBH<class_Image_constant_FORMAT_RGBH>`, or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` format.
 
-\ **注意：**\ 该方法所需的 8 位格式不适合存储线性编码值；在较暗的颜色值中会丢失大量颜色信息。为了保持图像质量，不应使用该方法。
+\ **Note:** The 8-bit formats are not suitable for storing linearly encoded values; a significant amount of color information will be lost in darker values. Use this function on images that use a floating point format instead.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

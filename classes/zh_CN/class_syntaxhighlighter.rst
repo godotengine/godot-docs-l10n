@@ -111,11 +111,11 @@ SyntaxHighlighter
 
 :ref:`Dictionary<class_Dictionary>` **get_line_syntax_highlighting**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SyntaxHighlighter_method_get_line_syntax_highlighting>`
 
-返回索引为 ``line`` 的行的语法高亮数据。如果尚未缓存该行，则会先调用 :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` 来计算相关数据。
+Returns the syntax highlighting data for the line at index ``line``. If the line is not cached, calls :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` first to calculate the data.
 
-每个条目都是将列号映射到嵌套的 :ref:`Dictionary<class_Dictionary>`\ 。列号代表区域的开始位置，当前区域在遇到其他区域或行尾时结束。嵌套的 :ref:`Dictionary<class_Dictionary>` 中包含该区域的数据，目前仅支持 ``color`` 字段。
+Each entry is a column number containing a nested :ref:`Dictionary<class_Dictionary>`. The column number denotes the start of a region, the region will end if another region is found, or at the end of the line. The nested :ref:`Dictionary<class_Dictionary>` contains the data for that region. Currently only the key ``"color"`` is supported.
 
-\ **示例：**\ 可能的返回值，表示第 ``0`` 列到第 ``4`` 列应当为红色，第 ``5`` 列至行尾应当为绿色：
+\ **Example:** Possible return value. This means columns ``0`` to ``4`` should be red, and columns ``5`` to the end of the line should be green:
 
 ::
 
@@ -127,6 +127,61 @@ SyntaxHighlighter
             "color": Color(0, 1, 0)
         }
     }
+
+\ **Example:** Sample implementation. Colors the word ``Godot`` blue.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    func _get_line_syntax_highlighting(line: int) -> Dictionary:
+        var pattern_text = "Godot"
+        var result = Dictionary()
+        var text_edit = get_text_edit()
+        var line_text = text_edit.get_line(line)
+
+        var pos = line_text.find(pattern_text)
+        while pos != -1:
+            result[pos] = { "color": Color(0.0, 0.0, 1.0) }
+            var end_pos = pos + pattern_text.length()
+            pos = line_text.find(pattern_text, end_pos)
+            if pos != end_pos:
+                result[end_pos] = { "color": Color(1.0, 1.0, 1.0) }
+
+        return result
+
+ .. code-tab:: csharp
+
+    public override Dictionary _GetLineSyntaxHighlighting(int line)
+    {
+        string patternText = "Godot";
+        Dictionary result = new Dictionary();
+        TextEdit textEdit = GetTextEdit();
+        string lineText = textEdit.GetLine(line);
+
+        var pos = lineText.Find(patternText);
+        while (pos != -1)
+        {
+            result[pos] = new Dictionary()
+            {
+                { "color", new Color(0.0f, 0.0f, 1.0f) }
+            };
+            var endPos = pos + patternText.Length;
+            pos = lineText.Find(patternText, endPos);
+            if (pos != endPos)
+            {
+                result[endPos] = new Dictionary()
+                {
+                    { "color", new Color(1.0f, 1.0f, 1.0f) }
+                };
+            }
+        }
+
+        return result;
+    }
+
+
 
 .. rst-class:: classref-item-separator
 

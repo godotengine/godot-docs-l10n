@@ -79,7 +79,11 @@ RDFramebufferPass
 
 Цветовые вложения в порядке, начиная с 0. Если это вложение не используется шейдером, передайте ATTACHMENT_UNUSED для пропуска.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,11 @@ RDFramebufferPass
 
 Используется для многопроходных кадровых буферов (более одного прохода рендеринга). Преобразует вложение во входные данные. Убедитесь, что вы также правильно указали его в :ref:`RDUniform<class_RDUniform>` для набора uniform.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +142,11 @@ RDFramebufferPass
 
 Вложения, которые необходимо сохранить в этом проходе (в противном случае они будут стерты).
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +165,11 @@ RDFramebufferPass
 
 Если цветовые вложения являются мультисэмплированными, могут быть предоставлены немультисэмплированные разрешающие вложения.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

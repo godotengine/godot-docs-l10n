@@ -16,9 +16,11 @@ AcceptDialog
 Описание
 ----------------
 
-По умолчанию **AcceptDialog** позволяет только принять или закрыть диалоговое окно, результат один и тот же. Однако сигналы :ref:`confirmed<class_AcceptDialog_signal_confirmed>` и :ref:`canceled<class_AcceptDialog_signal_canceled>` позволяют сделать эти два действия разными, а метод :ref:`add_button()<class_AcceptDialog_method_add_button>` позволяет добавлять пользовательские кнопки и действия.
+The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the :ref:`confirmed<class_AcceptDialog_signal_confirmed>` and :ref:`canceled<class_AcceptDialog_signal_canceled>` signals allow to make the two actions different, and the :ref:`add_button()<class_AcceptDialog_method_add_button>` method allows to add custom buttons and actions.
 
-\ **Примечание:** **AcceptDialog** по умолчанию невидим. Чтобы сделать его видимым, вызовите один из методов ``popup_*`` из :ref:`Window<class_Window>` узла, например, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Note:** The dialog controls the size of its buttons, any manual size changes will be overridden. Use the :ref:`buttons_min_width<class_AcceptDialog_theme_constant_buttons_min_width>` and :ref:`buttons_min_height<class_AcceptDialog_theme_constant_buttons_min_height>` theme constants instead.
+
+\ **Note:** **AcceptDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -46,8 +48,6 @@ AcceptDialog
    | :ref:`bool<class_bool>`     | minimize_disabled                                                                 | ``true`` (overrides :ref:`Window<class_Window_property_minimize_disabled>`)  |
    +-----------------------------+-----------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`ok_button_text<class_AcceptDialog_property_ok_button_text>`                 | ``""``                                                                       |
-   +-----------------------------+-----------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`String<class_String>` | title                                                                             | ``"Alert!"`` (overrides :ref:`Window<class_Window_property_title>`)          |
    +-----------------------------+-----------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`     | transient                                                                         | ``true`` (overrides :ref:`Window<class_Window_property_transient>`)          |
    +-----------------------------+-----------------------------------------------------------------------------------+------------------------------------------------------------------------------+

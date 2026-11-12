@@ -14,11 +14,11 @@ Una classe wrapper per un `ENetPeer <http://enet.bespin.org/group__peer.html>`__
 Descrizione
 ----------------------
 
-Un'implementazione PacketPeer che rappresenta un peer di un :ref:`ENetConnection<class_ENetConnection>`.
+A PacketPeer implementation representing a peer of an :ref:`ENetConnection<class_ENetConnection>`.
 
-Questa classe non può essere istanziata direttamente, ma può essere recuperata durante :ref:`ENetConnection.service()<class_ENetConnection_method_service>` o tramite :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
+This class cannot be instantiated directly but can be retrieved during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` or via :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

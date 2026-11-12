@@ -58,6 +58,8 @@ Shader
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                        | :ref:`set_default_texture_parameter<class_Shader_method_set_default_texture_parameter>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture<class_Texture>`, index\: :ref:`int<class_int>` = 0\ ) |
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`set_include_path<class_Shader_method_set_include_path>`\ (\ path\: :ref:`String<class_String>`\ )                                                                                                               |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -218,6 +220,18 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 \ **注意：**\ ``name`` 必須與程式碼中的 uniform 名稱完全配對。
 
 \ **注意：**\ 如果使用取樣器陣列，則使用 ``index`` 存取指定的紋理。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Shader_method_set_include_path:
+
+.. rst-class:: classref-method
+
+|void| **set_include_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Shader_method_set_include_path>`
+
+Sets the include path for this shader. Used only if the shader does not have a resource path set, for example when created by code.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -60,13 +60,13 @@ ParallaxLayer 必须是 :ref:`ParallaxBackground<class_ParallaxBackground>` 节�
 - |void| **set_mirroring**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_mirroring**\ (\ )
 
-**ParallaxLayer** 重复绘制的间隔，单位为像素。用于创建无限滚动的背景。如果将某个轴设置为 ``0``\ ，那么 **ParallaxLayer** 就只会在那个方向上绘制一次。
+The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Useful for creating an infinitely scrolling background. If an axis is set to ``0``, the **ParallaxLayer** will be drawn only once along that direction.
 
-\ **注意：**\ 如果想要在重复时让子节点显示的 :ref:`Texture2D<class_Texture2D>` 进行像素级对齐，那么就应当在设置间隔时考虑纹理所使用的缩放。例如你使用 :ref:`Sprite2D<class_Sprite2D>` 节点将 600×600 的纹理进行 ``0.5`` 的缩放，然后希望纹理横向重复，那么就应该将“Mirroring”设置为 ``Vector2(300, 0)``\ 。
+\ **Note:** If you want the repetition to pixel-perfect match a :ref:`Texture2D<class_Texture2D>` displayed by a child node, you should account for any scale applied to the texture when defining this interval. For example, if you use a child :ref:`Sprite2D<class_Sprite2D>` scaled to ``0.5`` to display a 600×600 texture, and want this sprite to be repeated continuously horizontally, you should set the mirroring to ``Vector2(300, 0)``.
 
-\ **注意：**\ 如果视口的某个轴比对应重复轴的两倍还要大，那么就无法无限重复，因为时差图层同一时间只能将该图层绘制两份。计算可见窗口时依据的是父级 :ref:`ParallaxBackground<class_ParallaxBackground>` 的位置，而不是图层自身的位置。因此，使用镜像时，\ **请勿**\ 改变 **ParallaxLayer** 相对于父节点的位置。如果需要修改背景的位置，请改为设置 :ref:`ParallaxBackground<class_ParallaxBackground>` 父节点的 :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` 属性。
+\ **Note:** If the length of the viewport axis is bigger than twice the repeated axis size, it will not repeat infinitely, as the parallax layer only draws 2 instances of the layer at any given time. The visibility window is calculated from the parent :ref:`ParallaxBackground<class_ParallaxBackground>`'s position, not the layer's own position. So, if you use mirroring, **do not** change the **ParallaxLayer** position relative to its parent. Instead, if you need to adjust the background's position, set the :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` property in the parent :ref:`ParallaxBackground<class_ParallaxBackground>`.
 
-\ **注意：**\ 虽然这个属性的名叫 Mirroring，是“镜像”的意思，但是并不会对图层做镜像，只会进行重复。
+\ **Note:** Despite the name, the layer will not be mirrored, it will only be repeated.
 
 .. rst-class:: classref-item-separator
 

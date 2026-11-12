@@ -1287,7 +1287,7 @@ The :ref:`MultiplayerAPI<class_MultiplayerAPI>` instance associated with this no
 
 The name of the node. This name must be unique among the siblings (other child nodes from the same parent). When set to an existing sibling's name, the node is automatically renamed.
 
-\ **Note:** When changing the name, the following characters will be replaced with an underscore: (``.`` ``:`` ``@`` ``/`` ``"`` ``%``). In particular, the ``@`` character is reserved for auto-generated names. See also :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
+\ **Note:** When changing the name, the following characters will be replaced with an underscore: (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``). In particular, the ``@`` character is reserved for auto-generated names. See also :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,7 +2077,7 @@ Returns an :ref:`Array<class_Array>` of group names that the node has been added
 
 \ **Note:** To improve performance, the order of group names is *not* guaranteed and may vary between project runs. Therefore, do not rely on the group order.
 
-\ **Note:** This method may also return some group names starting with an underscore (``_``). These are internally used by the engine. To avoid conflicts, do not use custom groups starting with underscores. To exclude internal groups, see the following code snippet:
+\ **Note:** This method may also return some group names starting with an underscore (\ ``_``). These are internally used by the engine. To avoid conflicts, do not use custom groups starting with underscores. To exclude internal groups, see the following code snippet:
 
 
 .. tabs::
@@ -2449,7 +2449,7 @@ Devuelve el :ref:`Viewport<class_Viewport>` ancestro más cercano del nodo, si e
 
 :ref:`Window<class_Window>` **get_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_window>`
 
-Devuelve la :ref:`Window<class_Window>` que contiene a este nodo. Si el nodo está en la ventana principal, esto es equivalente a obtener el nodo raíz (``get_tree().get_root()``).
+Devuelve la :ref:`Window<class_Window>` que contiene a este nodo. Si el nodo está en la ventana principal, esto es equivalente a obtener el nodo raíz (\ ``get_tree().get_root()``).
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ Envía una solicitud de llamada a procedimiento remoto (RPC) para el ``method`` 
 
 Puede devolver :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si la llamada es exitosa, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si los argumentos pasados en el ``method`` no coinciden, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` si no se puede obtener el :ref:`multiplayer<class_Node_property_multiplayer>` del nodo (como cuando el nodo no está dentro del árbol), o :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` si la conexión de :ref:`multiplayer<class_Node_property_multiplayer>` no está disponible.
 
-\ **Nota:** Solo puedes usar RPCs de forma segura en los clientes después de haber recibido la señal :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` de la :ref:`MultiplayerAPI<class_MultiplayerAPI>`. También es necesario realizar un seguimiento del estado de la conexión, ya sea mediante las señales de la :ref:`MultiplayerAPI<class_MultiplayerAPI>` como :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` o comprobando (``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
+\ **Nota:** Solo puedes usar RPCs de forma segura en los clientes después de haber recibido la señal :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` de la :ref:`MultiplayerAPI<class_MultiplayerAPI>`. También es necesario realizar un seguimiento del estado de la conexión, ya sea mediante las señales de la :ref:`MultiplayerAPI<class_MultiplayerAPI>` como :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` o comprobando (\ ``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
 
 .. rst-class:: classref-item-separator
 
@@ -2989,7 +2989,7 @@ Changes the RPC configuration for the given ``method``. ``config`` should either
 
 - ``channel``: an :ref:`int<class_int>` representing the channel to send the RPC on.
 
-\ **Note:** In GDScript, this method corresponds to the :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` annotation, with various parameters passed (``@rpc(any)``, ``@rpc(authority)``...). See also the :doc:`high-level multiplayer <../tutorials/networking/high_level_multiplayer>` tutorial.
+\ **Note:** In GDScript, this method corresponds to the :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` annotation, with various parameters passed (\ ``@rpc(any)``, ``@rpc(authority)``...). See also the :doc:`high-level multiplayer <../tutorials/networking/high_level_multiplayer>` tutorial.
 
 .. rst-class:: classref-item-separator
 

@@ -357,7 +357,9 @@ enum **InterpolationType**: :ref:`🔗<enum_Animation_InterpolationType>`
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_CUBIC** = ``2``
 
-Кубічна інтерполяція. Виглядає більш плавно, ніж лінійна інтерполяція, але більш затратна. Використовуйте значення :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>` для складних 3D-анімацій, імпортованих із зовнішнього програмного забезпечення, навіть якщо це вимагає використання більшої частоти кадрів анімації.
+Cubic interpolation. This looks smoother than linear interpolation, but is more expensive to interpolate. Stick to :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>` for complex 3D animations imported from external software, even if it requires using a higher animation framerate in return.
+
+\ **Note:** If the last and first keys have different values and are close to the ends of the track, a huge overshoot in interpolation may occur if :ref:`track_set_interpolation_loop_wrap()<class_Animation_method_track_set_interpolation_loop_wrap>` is set to ``true``.
 
 .. _class_Animation_constant_INTERPOLATION_LINEAR_ANGLE:
 
@@ -378,6 +380,24 @@ enum **InterpolationType**: :ref:`🔗<enum_Animation_InterpolationType>`
 Кубічна інтерполяція з обертанням по найкоротшому шляху.
 
 \ **Примітка:** Значення результату завжди нормалізоване і може не збігатися зі значенням ключа.
+
+.. _class_Animation_constant_INTERPOLATION_MAKIMA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_MAKIMA** = ``5``
+
+Modified Akima interpolation. Like :ref:`INTERPOLATION_CUBIC<class_Animation_constant_INTERPOLATION_CUBIC>`, this produces a smooth curve through the keys, but it overshoots less and stays flat where three or more adjacent keys have the same value. It uses two keys on each side of the current segment, so it is slightly more expensive than cubic interpolation.
+
+.. _class_Animation_constant_INTERPOLATION_MAKIMA_ANGLE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_MAKIMA_ANGLE** = ``6``
+
+Modified Akima interpolation with shortest path rotation.
+
+\ **Note:** The result value is always normalized and may not match the key value.
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +908,9 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`float<class_float>` **blend_shape_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_blend_shape_track_interpolate>`
 
-Повертає інтерпольоване значення форми змішування в заданий час (у секундах). ``track_idx`` має бути індексом доріжки форми змішування.
+Returns the interpolated blend shape value at the given time (in seconds). The ``track_idx`` must be the index of a blend shape track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1116,9 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`Vector3<class_Vector3>` **position_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_position_track_interpolate>`
 
-Повертає інтерпольоване значення позиції в заданий час (у секундах). ``track_idx`` має бути індексом 3D-треку позиції.
+Returns the interpolated position value at the given time (in seconds). The ``track_idx`` must be the index of a 3D position track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,7 +1166,9 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`Quaternion<class_Quaternion>` **rotation_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_rotation_track_interpolate>`
 
-Повертає інтерпольоване значення обертання в заданий час (у секундах). ``track_idx`` має бути індексом 3D-доріжки обертання.
+Returns the interpolated rotation value at the given time (in seconds). The ``track_idx`` must be the index of a 3D rotation track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,7 +1192,9 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`Vector3<class_Vector3>` **scale_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_scale_track_interpolate>`
 
-Повертає інтерпольоване значення масштабу в заданий час (у секундах). Параметр ``track_idx`` має бути індексом доріжки 3D-масштабування.
+Returns the interpolated scale value at the given time (in seconds). The ``track_idx`` must be the index of a 3D scale track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1436,7 +1464,9 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 |void| **track_set_interpolation_loop_wrap**\ (\ track_idx\: :ref:`int<class_int>`, interpolation\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_track_set_interpolation_loop_wrap>`
 
-Якщо ``true``, доріжка в ``track_idx`` обертає цикл інтерполяції.
+If ``true``, the track at ``track_idx`` wraps the interpolation loop.
+
+\ **Note:** If ``interpolation`` is ``true``, the animation interpolates between the last and first key of the track. If the last key is placed exactly at the end of the animation, it is ignored as being placed outside the looped animation range.
 
 .. rst-class:: classref-item-separator
 
@@ -1534,9 +1564,11 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`Variant<class_Variant>` **value_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_value_track_interpolate>`
 
-Повертає інтерпольоване значення в заданий час (у секундах). ``track_idx`` має бути індексом доріжки значення.
+Returns the interpolated value at the given time (in seconds). The ``track_idx`` must be the index of a value track.
 
-\ ``backward`` головним чином впливає на напрямок пошуку ключа треку з :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`, перетвореною :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>`, щоб відповідати результату :ref:`track_find_key()<class_Animation_method_track_find_key>`.
+If ``backward`` is ``true``, the keys are retrieved on the reversed timeline, so the base key is the key after ``time_sec``. This changes the result only for :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` and :ref:`INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`; the other interpolation types give the same result as forward.
+
+\ **Note:** :ref:`AnimationMixer<class_AnimationMixer>` always passes ``false`` for continuous tracks with playback API.
 
 .. rst-class:: classref-item-separator
 

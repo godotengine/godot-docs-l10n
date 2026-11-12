@@ -38,6 +38,8 @@ Propiedades
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>`                                     | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`compress/high_quality_mode<class_ResourceImporterTexture_property_compress/high_quality_mode>`                           | ``0``     |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`float<class_float>`   | :ref:`compress/lossy_quality<class_ResourceImporterTexture_property_compress/lossy_quality>`                                   | ``0.7``   |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>`                                                     | ``0``     |
@@ -54,9 +56,13 @@ Propiedades
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`editor/scale_with_editor_scale<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`                   | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`mipmaps/alpha_test_threshold<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`                       | ``0.5``   |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`mipmaps/generate<class_ResourceImporterTexture_property_mipmaps/generate>`                                               | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`mipmaps/limit<class_ResourceImporterTexture_property_mipmaps/limit>`                                                     | ``-1``    |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`mipmaps/preserve_alpha_test_coverage<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`       | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`process/channel_remap/alpha<class_ResourceImporterTexture_property_process/channel_remap/alpha>`                         | ``3``     |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -124,7 +130,7 @@ Controla cómo se debe realizar la compresión VRAM para las imágenes HDR.
 
 \ **Siempre:** Fuerza la compresión VRAM incluso para texturas HDR con un canal alfa. Para realizar esto, el canal alfa se descarta en la importación.
 
-\ **Nota:** Solo es efectivo en imágenes Radiance HDR (``.hdr``) y OpenEXR (``.exr``).
+\ **Nota:** Solo es efectivo en imágenes Radiance HDR (\ ``.hdr``) y OpenEXR (\ ``.exr``).
 
 .. rst-class:: classref-item-separator
 
@@ -141,6 +147,28 @@ Si es ``true``, usa la compresión BPTC en plataformas de escritorio y la compre
 Si es ``false``, usa la compresión S3TC más rápida pero de menor calidad en plataformas de escritorio y ETC2 en plataformas móviles/web. Cuando se usa S3TC, DXT1 (BC1) se usa para texturas opacas y DXT5 (BC3) se usa para texturas transparentes o mapas normales (RGTC).
 
 BPTC y ASTC admiten la compresión VRAM para texturas HDR, pero S3TC y ETC2 no (ver :ref:`compress/hdr_compression<class_ResourceImporterTexture_property_compress/hdr_compression>`).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterTexture_property_compress/high_quality_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **compress/high_quality_mode** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/high_quality_mode>`
+
+Controls the priorities of the VRAM compression when :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>` is enabled.
+
+\ **Automatic:** Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+\ **Max Quality:** Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+\ **Compressed:** Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+\ **Max Compression:** Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+\ **Note:** Currently, only the ASTC compressor uses this setting. Other compressors will ignore it.
 
 .. rst-class:: classref-item-separator
 
@@ -266,6 +294,18 @@ If ``true``, scales the imported image to match :ref:`EditorSettings.interface/e
 
 ----
 
+.. _class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **mipmaps/alpha_test_threshold** = ``0.5`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`
+
+The alpha threshold used when preserving alpha test coverage across mipmap levels. The coverage is measured at mipmap 0 using the setting and the lower mipmaps are adjusted to match that coverage. Higher values preserve more detail, lower values create softer edges. Note that this threshold is independent from the ``Alpha Scissor Threshold`` set on the material and they both may need to be tuned for optimal results.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ResourceImporterTexture_property_mipmaps/generate:
 
 .. rst-class:: classref-property
@@ -298,6 +338,18 @@ Sin implementar. Esto actualmente no tiene ningún efecto cuando se cambia.
 
 ----
 
+.. _class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **mipmaps/preserve_alpha_test_coverage** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`
+
+If ``true``, automatically adjusts alpha values to maintain consistent coverage when alpha testing is used. This is especially useful for hair, foliage, or other alpha-tested materials, as it prevents fading or popping artifacts across mipmap levels (LODs). This option is intended for color textures and clamps the alpha channel in the 0.0 - 1.0 range.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ResourceImporterTexture_property_process/channel_remap/alpha:
 
 .. rst-class:: classref-property
@@ -314,15 +366,15 @@ Especifica la fuente de datos del canal alfa de la imagen de salida.
 
 \ **Alfa:** Utiliza los valores del canal alfa de la imagen de origen.
 
-\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (``1.0 - R``).
+\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (\ ``1.0 - R``).
 
-\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (``1.0 - G``).
+\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (\ ``1.0 - G``).
 
-\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (``1.0 - B``).
+\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (\ ``1.0 - B``).
 
-\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (``1.0 - A``).
+\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (\ ``1.0 - A``).
 
-\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
+\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (\ ``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
 
 \ **Cero:** Establece el valor del canal de color a ``0.0``.
 
@@ -348,15 +400,15 @@ Especifica la fuente de datos del canal azul de la imagen de salida.
 
 \ **Alfa:** Utiliza los valores del canal alfa de la imagen de origen.
 
-\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (``1.0 - R``).
+\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (\ ``1.0 - R``).
 
-\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (``1.0 - G``).
+\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (\ ``1.0 - G``).
 
-\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (``1.0 - B``).
+\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (\ ``1.0 - B``).
 
-\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (``1.0 - A``).
+\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (\ ``1.0 - A``).
 
-\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
+\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (\ ``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
 
 \ **Cero:** Establece el valor del canal de color a ``0.0``.
 
@@ -382,15 +434,15 @@ Especifica la fuente de datos del canal verde de la imagen de salida.
 
 \ **Alfa:** Utiliza los valores del canal alfa de la imagen de origen.
 
-\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (``1.0 - R``).
+\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (\ ``1.0 - R``).
 
-\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (``1.0 - G``).
+\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (\ ``1.0 - G``).
 
-\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (``1.0 - B``).
+\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (\ ``1.0 - B``).
 
-\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (``1.0 - A``).
+\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (\ ``1.0 - A``).
 
-\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
+\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (\ ``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
 
 \ **Cero:** Establece el valor del canal de color a ``0.0``.
 
@@ -416,15 +468,15 @@ Especifica la fuente de datos del canal rojo de la imagen de salida.
 
 \ **Alfa:** Utiliza los valores del canal alfa de la imagen de origen.
 
-\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (``1.0 - R``).
+\ **Rojo Invertido:** Utiliza los valores invertidos del canal rojo de la imagen de origen (\ ``1.0 - R``).
 
-\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (``1.0 - G``).
+\ **Verde Invertido:** Utiliza los valores invertidos del canal verde de la imagen de origen (\ ``1.0 - G``).
 
-\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (``1.0 - B``).
+\ **Azul Invertido:** Utiliza los valores invertidos del canal azul de la imagen de origen (\ ``1.0 - B``).
 
-\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (``1.0 - A``).
+\ **Alfa Invertido:** Utiliza los valores invertidos del canal alfa de la imagen de origen (\ ``1.0 - A``).
 
-\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
+\ **Sin usar:** Establece el valor del canal de color al valor predeterminado (\ ``1.0`` para alfa, ``0.0`` para rojo, verde o azul).
 
 \ **Cero:** Establece el valor del canal de color a ``0.0``.
 

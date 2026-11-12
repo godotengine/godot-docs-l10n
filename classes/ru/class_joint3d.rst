@@ -130,9 +130,13 @@ Joint3D
 - |void| **set_solver_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_solver_priority**\ (\ )
 
-Приоритет, используемый для определения того, какой решатель будет выполнен первым для нескольких соединений. Чем ниже значение, тем выше приоритет.
+The priority specifies how accurately a joint is solved. Generally, higher values improve accuracy. This has very different implementations between Godot Physics and Jolt Physics:
 
-\ **Примечание:** Поддерживается только при использовании GodotPhysics3D. Это свойство игнорируется при использовании Jolt Physics.
+\ **Godot Physics:** *Values above 1 have a performance impact*. Joint is solved ``max(1, solver_priority) * iterations`` times. A value of ``4`` would solve the same joint *4× additional times per physics step*.
+
+\ **Jolt Physics:** Aside from sorting the joints, there is no performance impact with higher values. Joints with *high* priorities are solved *later*. A value of ``4`` would solve *after priorities of 0, 1, 2, and 3*. Later joints have the final say between the two bodies they connect.
+
+Negative values are not allowed and will be silently ``max(0, solver_priority)`` when set.
 
 .. rst-class:: classref-section-separator
 

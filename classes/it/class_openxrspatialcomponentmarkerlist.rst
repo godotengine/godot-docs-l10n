@@ -79,7 +79,7 @@ Marcatore basato su un codice QR micro.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_ARUCO** = ``3``
 
-Marcatore basato su un codice Aruco.
+Marker based on an ArUco code.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_APRIL_TAG:
 
@@ -124,7 +124,7 @@ Restituisce un buffer di tipo :ref:`String<class_String>` o :ref:`PackedByteArra
 
 :ref:`int<class_int>` **get_marker_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_id>`
 
-Restituisce l'ID del marcatore per il marcatore all'indice ``index``. Applicabile solo ai marcatori Aruco o April Tag.
+Returns the marker ID for the marker at this ``index``. Only applicable for ArUco or April Tag markers.
 
 .. rst-class:: classref-item-separator
 

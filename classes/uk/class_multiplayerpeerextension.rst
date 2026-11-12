@@ -234,7 +234,7 @@ MultiplayerPeerExtension
 
 :ref:`int<class_int>` **_get_unique_id**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_unique_id>`
 
-Викликається, коли запитується унікальний ідентифікатор цього :ref:`MultiplayerPeer<class_MultiplayerPeer>` (див. method ``MultiplayerPeer.get_unique_id``). Значення має бути в діапазоні від ``1`` до ``2147483647``.
+Викликається, коли запитується унікальний ідентифікатор цього :ref:`MultiplayerPeer<class_MultiplayerPeer>` (див. метод :ref:`MultiplayerPeer.get_unique_id()<class_MultiplayerPeer_method_get_unique_id>`). Значення має бути в діапазоні від ``1`` до ``2147483647``.
 
 .. rst-class:: classref-item-separator
 

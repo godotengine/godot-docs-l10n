@@ -14,27 +14,27 @@ CopyTransformModifier3D
 Опис
 --------
 
-Застосуйте скопійоване перетворення набору кісток за допомогою методу :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` до набору кісток за допомогою методу :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` з обробкою його деякими масками та опціями.
+Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
 
-Існує 4 способи застосування перетворення, залежно від комбінації методів :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` та :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
+There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
 
-\ **Відносне + Адитивне:**\ 
+\ **Relative + Additive:**\ 
 
-- Витягніть опорну позу відносно решти та додайте її до пози застосованої кістки.
+- Extract reference pose relative to the rest and add it to the apply bone's pose.
 
-\ **Відносне + Неадитивне:**\ 
+\ **Relative + Not Additive:**\ 
 
-- Витягніть опорну позу відносно решти та додайте її до решти застосованої кістки.
+- Extract reference pose relative to the rest and add it to the apply bone's rest.
 
-\ **Не відносне + Адитивне:**\ 
+\ **Not Relative + Additive:**\ 
 
-- Абсолютно витягніть опорну позу та додайте її до пози застосованої кістки.
+- Extract reference pose absolutely and add it to the apply bone's pose.
 
-\ **Не відносне + Неадитивне:**\ 
+\ **Not Relative + Not Additive:**\ 
 
-- Абсолютно витягніть опорну позу, і поза застосованої кістки замінюється нею.
+- Extract reference pose absolutely and the apply bone's pose is replaced with it.
 
- **Примітка:** Відносний параметр доступний лише у випадку, якщо :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` має значення :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. Див. також :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **Note:** The relative and global options are only available when :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -77,6 +77,8 @@ CopyTransformModifier3D
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_axis_z_inverted<class_CopyTransformModifier3D_method_is_axis_z_inverted>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                              |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                                        | :ref:`is_global<class_CopyTransformModifier3D_method_is_global>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                                |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_position_copying<class_CopyTransformModifier3D_method_is_position_copying>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                            |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_relative<class_CopyTransformModifier3D_method_is_relative>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                            |
@@ -108,6 +110,8 @@ CopyTransformModifier3D
    | |void|                                                                         | :ref:`set_copy_rotation<class_CopyTransformModifier3D_method_set_copy_rotation>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                     |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                         | :ref:`set_copy_scale<class_CopyTransformModifier3D_method_set_copy_scale>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                           |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                         | :ref:`set_global<class_CopyTransformModifier3D_method_set_global>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                                   |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                         | :ref:`set_invert_flags<class_CopyTransformModifier3D_method_set_invert_flags>`\ (\ index\: :ref:`int<class_int>`, axis_flags\: |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\]\ )       |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -354,6 +358,18 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 ----
 
+.. _class_CopyTransformModifier3D_method_is_global:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_global**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_global>`
+
+Returns ``true`` if the global option is enabled in the setting at ``index``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_CopyTransformModifier3D_method_is_position_copying:
 
 .. rst-class:: classref-method
@@ -408,11 +424,11 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_additive>`
 
-Встановлює опцію адитивного перетворення в налаштуванні ``index`` на ``enabled``. Це головним чином впливає на процес застосування перетворення до :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
+Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
 
-Якщо встановити ``enabled`` на ``true``, оброблене перетворення додається до пози поточної застосованої кістки.
+If ``enabled`` is ``true``, the processed transform is added to the pose of the current apply bone.
 
-Якщо встановити ``enabled`` на ``false``, поза поточної застосованої кістки замінюється обробленим перетворенням. Однак, якщо встановити :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` на ``true``, перетворення здійснюється відносно до спокою.
+If ``enabled`` is ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +452,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_x_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_enabled>`
 
-Якщо встановити ``enabled`` на ``true``, вісь X буде скопійована.
+If ``enabled`` is ``true``, the X-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +464,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_x_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_inverted>`
 
-Якщо встановити ``enabled`` на ``true``, вісь X буде інвертована.
+If ``enabled`` is ``true``, the X-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +476,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_y_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_enabled>`
 
-Якщо встановити ``enabled`` на ``true``, вісь Y буде скопійована.
+If ``enabled`` is ``true``, the Y-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +488,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_y_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_inverted>`
 
-Якщо встановити ``enabled`` на ``true``, вісь Y буде інвертована.
+If ``enabled`` is ``true``, the Y-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +500,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_z_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_enabled>`
 
-Якщо встановити ``enabled`` на ``true``, вісь Z буде скопійована.
+If ``enabled`` is ``true``, the Z-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +512,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_z_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_inverted>`
 
-Якщо встановити ``enabled`` на ``true``, вісь Z буде інвертована.
+If ``enabled`` is ``true``, the Z-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +538,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_position**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_position>`
 
-Якщо встановити ``enabled`` на ``true``, позицію буде скопійовано.
+If ``enabled`` is ``true``, the position will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +550,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_rotation**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_rotation>`
 
-Якщо встановити ``enabled`` на ``true``, обертання буде скопійовано.
+If ``enabled`` is ``true``, the rotation will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +562,25 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_scale**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_scale>`
 
-Якщо встановити ``enabled`` на ``true``, масштаб буде скопійовано.
+If ``enabled`` is ``true``, the scale will be copied.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CopyTransformModifier3D_method_set_global:
+
+.. rst-class:: classref-method
+
+|void| **set_global**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_global>`
+
+Sets the global option in the setting at ``index`` to ``enabled``.
+
+If ``enabled`` is ``true``, the global pose of the reference bone is extracted and applied so that the global pose of the apply bone coincides with it.
+
+If ``enabled`` is ``false``, the local pose of the reference bone is extracted and applied to the local pose of the apply bone.
+
+\ **Note:** If the parent of the reference bone has a non-uniform scale, the reference bone is sheared as seen from global space. Since the local pose cannot bring in the shear, the scale may not be applied as intended.
 
 .. rst-class:: classref-item-separator
 
@@ -574,11 +608,11 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_relative>`
 
-Встановлює відносний параметр у налаштуванні ``index`` на ``enabled``.
+Sets relative option in the setting at ``index`` to ``enabled``.
 
-Якщо встановити ``enabled`` на ``true``, витягнуте та застосоване перетворення є відносним до решти.
+If ``enabled`` is ``true``, the extracted and applying transform is relative to the rest.
 
-Якщо встановити ``enabled`` на ``false``, витягнуте перетворення є абсолютним.
+If ``enabled`` is ``false``, the extracted transform is absolute.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

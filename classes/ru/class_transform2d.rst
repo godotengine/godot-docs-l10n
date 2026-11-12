@@ -348,7 +348,7 @@ Transform2D
 
 :ref:`Vector2<class_Vector2>` **basis_xform**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Transform2D_method_basis_xform>`
 
-Возвращает копию вектора ``v``, преобразованного (умноженного) на матрицу базиса преобразования. В отличие от оператора умножения (``*``), этот метод игнорирует :ref:`origin<class_Transform2D_property_origin>`.
+Возвращает копию вектора ``v``, преобразованного (умноженного) на матрицу базиса преобразования. В отличие от оператора умножения (\ ``*``), этот метод игнорирует :ref:`origin<class_Transform2D_property_origin>`.
 
 .. rst-class:: classref-item-separator
 

@@ -330,7 +330,7 @@ Constructs a **Projection** як копія даної **Projection**.
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ x_axis\: :ref:`Vector4<class_Vector4>`, y_axis\: :ref:`Vector4<class_Vector4>`, z_axis\: :ref:`Vector4<class_Vector4>`, w_axis\: :ref:`Vector4<class_Vector4>`\ )
 
-Constructs a Projection від 4 :ref:`Vector4<class_Vector4>` значення (метри матриці матриці).
+Створює Projection із чотирьох значень :ref:`Vector4<class_Vector4>`, які представляють стовпці матриці.
 
 .. rst-class:: classref-section-separator
 

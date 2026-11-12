@@ -122,7 +122,11 @@ GLTFNode
 
 Индексы дочерних узлов в :ref:`GLTFState<class_GLTFState>`. Если у этого узла glTF нет дочерних узлов, это будет пустой массив.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -111,15 +111,15 @@ Successivamente richiama il metodo sovrascrivibile :ref:`_clear_highlighting_cac
 
 :ref:`Dictionary<class_Dictionary>` **get_line_syntax_highlighting**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SyntaxHighlighter_method_get_line_syntax_highlighting>`
 
-Restituisce i dati di evidenziazione della sintassi per una singola riga. Se la riga non è memorizzata nella cache, chiama :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` per calcolare i dati.
+Returns the syntax highlighting data for the line at index ``line``. If the line is not cached, calls :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` first to calculate the data.
 
-Il :ref:`Dictionary<class_Dictionary>` restituito è il numero di colonna da :ref:`Dictionary<class_Dictionary>`. Il numero di colonna indica l'inizio di una regione, la regione terminerà se si trova un'altra regione o alla fine della riga. Il :ref:`Dictionary<class_Dictionary>` innestato contiene i dati per quella regione, attualmente è supportata solo la chiave ``"color"``.
+Each entry is a column number containing a nested :ref:`Dictionary<class_Dictionary>`. The column number denotes the start of a region, the region will end if another region is found, or at the end of the line. The nested :ref:`Dictionary<class_Dictionary>` contains the data for that region. Currently only the key ``"color"`` is supported.
 
-\ **Esempio:** Possibile valore restituito. Ciò significa che le colonne da ``0`` a ``4`` dovrebbero essere rosse e le colonne da ``5`` alla fine della riga dovrebbero essere verdi:
+\ **Example:** Possible return value. This means columns ``0`` to ``4`` should be red, and columns ``5`` to the end of the line should be green:
 
 ::
 
-    var color_map = {
+    {
         0: {
             "color": Color(1, 0, 0)
         },
@@ -127,6 +127,61 @@ Il :ref:`Dictionary<class_Dictionary>` restituito è il numero di colonna da :re
             "color": Color(0, 1, 0)
         }
     }
+
+\ **Example:** Sample implementation. Colors the word ``Godot`` blue.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    func _get_line_syntax_highlighting(line: int) -> Dictionary:
+        var pattern_text = "Godot"
+        var result = Dictionary()
+        var text_edit = get_text_edit()
+        var line_text = text_edit.get_line(line)
+
+        var pos = line_text.find(pattern_text)
+        while pos != -1:
+            result[pos] = { "color": Color(0.0, 0.0, 1.0) }
+            var end_pos = pos + pattern_text.length()
+            pos = line_text.find(pattern_text, end_pos)
+            if pos != end_pos:
+                result[end_pos] = { "color": Color(1.0, 1.0, 1.0) }
+
+        return result
+
+ .. code-tab:: csharp
+
+    public override Dictionary _GetLineSyntaxHighlighting(int line)
+    {
+        string patternText = "Godot";
+        Dictionary result = new Dictionary();
+        TextEdit textEdit = GetTextEdit();
+        string lineText = textEdit.GetLine(line);
+
+        var pos = lineText.Find(patternText);
+        while (pos != -1)
+        {
+            result[pos] = new Dictionary()
+            {
+                { "color", new Color(0.0f, 0.0f, 1.0f) }
+            };
+            var endPos = pos + patternText.Length;
+            pos = lineText.Find(patternText, endPos);
+            if (pos != endPos)
+            {
+                result[endPos] = new Dictionary()
+                {
+                    { "color", new Color(1.0f, 1.0f, 1.0f) }
+                };
+            }
+        }
+
+        return result;
+    }
+
+
 
 .. rst-class:: classref-item-separator
 

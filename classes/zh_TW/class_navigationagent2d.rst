@@ -679,7 +679,7 @@ NavigationAgent2D
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-以世界單位表示的路徑簡化量。
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ NavigationAgent2D
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-考慮其他代理的前提下，該代理的速度的最短安全時間，這個速度是通過碰撞躲避演算法計算的。數值越大，代理回應其他代理的速度就越快，但選擇速度的自由度也就越小。太高的取值會大大降低代理的移動速度。必須為正數。
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ NavigationAgent2D
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-考慮靜態避障障礙物的前提下，該代理的速度的最短安全時間，這個速度是通過碰撞躲避演算法計算的。數值越大，代理回應靜態避障障礙物的速度就越快，但選擇速度的自由度也就越小。太高的取值會大大降低代理的移動速度。必須為正數。
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ NavigationAgent2D
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent2D_method_get_current_navigation_path>`
 
-返回這個代理從起點到終點的目前路徑，使用全域座標。該路徑只會在目標位置發生變化，或者代理要求重新計算路徑時更新。路徑陣列不套用於直接路徑移動，因為代理有自己的內部路徑邏輯，手動更改路徑陣列可能會破壞該邏輯。每個物理影格上使用一次預期的 :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>`\ ，來接收用於該代理移動的下一個路徑點，因為該函式還會更新內部路徑邏輯。
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

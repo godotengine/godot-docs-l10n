@@ -101,7 +101,7 @@ Crea un riferimento a un :ref:`Callable<class_Callable>` che può essere utilizz
 
 :ref:`Variant<class_Variant>` **create_object**\ (\ object\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_JavaScriptBridge_method_create_object>`
 
-Crea un nuovo oggetto JavaScript usando il costruttore ``new``. ``object`` deve essere una proprietà valida della finestra (``window``) di JavaScript . Vedi :ref:`JavaScriptObject<class_JavaScriptObject>` per l'utilizzo.
+Crea un nuovo oggetto JavaScript usando il costruttore ``new``. ``object`` deve essere una proprietà valida della finestra (\ ``window``) di JavaScript . Vedi :ref:`JavaScriptObject<class_JavaScriptObject>` per l'utilizzo.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Forza la sincronizzazione del file system persistente (se abilitato).
 
 :ref:`JavaScriptObject<class_JavaScriptObject>` **get_interface**\ (\ interface\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaScriptBridge_method_get_interface>`
 
-Restituisce un'interfaccia a un oggetto JavaScript che può essere utilizzato dagli script. Il parametro ``interface`` deve essere una proprietà valida della finestra (``window``) di JavaScript. Il callback deve accettare un singolo argomento :ref:`Array<class_Array>`, che conterrà gli argomenti (``arguments``) di JavaScript. Vedi :ref:`JavaScriptObject<class_JavaScriptObject>` per l'utilizzo.
+Restituisce un'interfaccia a un oggetto JavaScript che può essere utilizzato dagli script. Il parametro ``interface`` deve essere una proprietà valida della finestra (\ ``window``) di JavaScript. Il callback deve accettare un singolo argomento :ref:`Array<class_Array>`, che conterrà gli argomenti (\ ``arguments``) di JavaScript. Vedi :ref:`JavaScriptObject<class_JavaScriptObject>` per l'utilizzo.
 
 .. rst-class:: classref-item-separator
 

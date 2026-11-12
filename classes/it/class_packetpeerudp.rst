@@ -14,21 +14,21 @@ Peer di pacchetto UDP.
 Descrizione
 ----------------------
 
-Peer di un pacchetto UDP. Può essere utilizzato per inviare e ricevere pacchetti UDP grezzi e :ref:`Variant<class_Variant>`.
+UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
-\ **Esempio:** Invia un pacchetto:
+\ **Example:** Send a packet:
 
 ::
 
     var peer = PacketPeerUDP.new()
 
-    # Facoltativamente, è possibile selezionare la porta locale utilizzata per inviare il pacchetto.
+    # Optionally, you can select the local port used to send the packet.
     peer.bind(4444)
 
     peer.set_dest_address("1.1.1.1", 4433)
-    peer.put_packet("ciao".to_utf8_buffer())
+    peer.put_packet("hello".to_utf8_buffer())
 
-\ **Esempio:** Ascolta per i pacchetti:
+\ **Example:** Listen for packets:
 
 ::
 
@@ -43,9 +43,9 @@ Peer di un pacchetto UDP. Può essere utilizzato per inviare e ricevere pacchett
         if peer.get_available_packet_count() > 0:
             var array_bytes = peer.get_packet()
             var packet_string = array_bytes.get_string_from_ascii()
-            print("Messaggio ricevuto: ", packet_string)
+            print("Received message: ", packet_string)
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

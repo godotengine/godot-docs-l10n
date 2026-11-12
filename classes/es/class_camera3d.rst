@@ -361,17 +361,17 @@ La distancia al límite de recorte lejano (far culling) de esta cámara, relativ
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-El ángulo del campo de visión de la cámara (en grados). Solo es aplicable en modo perspectiva. Dado que :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` bloquea un eje, :ref:`fov<class_Camera3D_property_fov>` establece el ángulo del campo de visión del otro eje.
+The camera's field of view (also known as FOV), as an angle in degrees. Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, this property sets the field of view on the other axis.
 
-Como referencia, el valor predeterminado del campo de visión vertical (``75.0``) es equivalente a un FOV horizontal de:
+For reference, the default angle for the vertical FOV (\ ``75.0``) is equivalent to a horizontal FOV of:
 
-- ~91.31 grados en un viewport de 4:3
+- ~91.31 degrees in a 4:3 viewport
 
-- ~101.67 grados en un viewport de 16:10
+- ~101.67 degrees in a 16:10 viewport
 
-- ~107.51 grados en un viewport de 16:9
+- ~107.51 degrees in a 16:9 viewport
 
-- ~121.63 grados en un viewport de 21:9
+- ~121.63 degrees in a 21:9 viewport
 
 .. rst-class:: classref-item-separator
 

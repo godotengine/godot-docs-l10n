@@ -14,7 +14,7 @@ Un marqueur dans l'éditeur pour une position 2D quelconque.
 Description
 -----------
 
-Aide de position 2D générique pour l'édition. Il ressemble à un :ref:`Node2D<class_Node2D>` ordinaire, mais il apparaît en permanence comme une croix dans l'éditeur 2D. Vous pouvez définir la taille visuelle de la croix en utilisant le manipulateur dans l'éditeur 2D lorsque le nœud est sélectionné.
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

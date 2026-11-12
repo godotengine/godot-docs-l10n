@@ -913,7 +913,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 \ **Примечание:** :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` умножает цвета вершин сетки частиц. Чтобы иметь видимый эффект на :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *должен* быть ``true``. Для :ref:`ShaderMaterial<class_ShaderMaterial>` ``ALBEDO *= COLOR.rgb;`` должен быть вставлен в функцию шейдера ``fragment()``. В противном случае :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` не будет иметь видимого эффекта.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -932,7 +936,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 Задает направление, в котором будут испускаться частицы при использовании :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +959,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 Устанавливает начальные позиции для создания частиц при использовании :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` или :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

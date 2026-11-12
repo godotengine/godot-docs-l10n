@@ -14,13 +14,13 @@ WebRTCMultiplayerPeer
 描述
 ----
 
-这个类构建了一个完整的 :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` 网状结构（每个对等端有一个连接），可用作 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。
+This class constructs a full mesh of :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` (one connection for each peer) that can be used as a :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`.
 
-可以通过 :ref:`add_peer()<class_WebRTCMultiplayerPeer_method_add_peer>` 添加每个 :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>`\ ，或通过 :ref:`remove_peer()<class_WebRTCMultiplayerPeer_method_remove_peer>` 移除它们。必须在 :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态下添加对等端，以允许它创建适当的通道。这个类不会创建提交或设置描述，它只会轮询它们，并通知连接和断开连接。
+You can add each :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` via :ref:`add_peer()<class_WebRTCMultiplayerPeer_method_add_peer>` or remove them via :ref:`remove_peer()<class_WebRTCMultiplayerPeer_method_remove_peer>`. Peers must be added in :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` state to allow it to create the appropriate channels. This class will not create offers nor set descriptions, it will only poll them, and notify connections and disconnections.
 
-当通过 :ref:`create_client()<class_WebRTCMultiplayerPeer_method_create_client>` 或 :ref:`create_server()<class_WebRTCMultiplayerPeer_method_create_server>` 创建对等端时， :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>` 方法将返回 ``true``\ ，在 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实现支持时启用对等端交换和数据包中继。
+When creating the peer via :ref:`create_client()<class_WebRTCMultiplayerPeer_method_create_client>` or :ref:`create_server()<class_WebRTCMultiplayerPeer_method_create_server>` the :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>` method will return ``true`` enabling peer exchange and packet relaying when supported by the :ref:`MultiplayerAPI<class_MultiplayerAPI>` implementation.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用了 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -63,9 +63,9 @@ WebRTCMultiplayerPeer
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_peer**\ (\ peer\: :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>`, peer_id\: :ref:`int<class_int>`, unreliable_lifetime\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_WebRTCMultiplayerPeer_method_add_peer>`
 
-以给定的 ``peer_id`` 添加一个新的对等端到网状结构。该 :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` 必须处于 :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态。
+Add a new peer to the mesh with the given ``peer_id``. The :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` must be in state :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-将为可靠的、不可靠的和有序的传输创建三个通道。在创建不可靠和有序通道时，\ ``unreliable_lifetime`` 的值将被传递给 ``"maxPacketLifetime"``\ 选项（见 :ref:`WebRTCPeerConnection.create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ）。
+Three channels will be created for reliable, unreliable, and ordered transport. The value of ``unreliable_lifetime`` will be passed to the ``"maxPacketLifeTime"`` option when creating unreliable and ordered channels (see :ref:`WebRTCPeerConnection.create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`).
 
 .. rst-class:: classref-item-separator
 

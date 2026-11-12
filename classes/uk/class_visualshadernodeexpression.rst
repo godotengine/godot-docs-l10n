@@ -18,7 +18,7 @@ VisualShaderNodeExpression
 
 Користувальницьке слово Godot Shading, з індивідуальним числом вхідних і вихідних портів.
 
-Заданий код безпосередньо вводиться до функції графа (``vertex``, `` фрагмент``, або ``light``), тому його не можна використовувати для позначення функцій, змін, уніформ або глобальних констанцій. Дивитися :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` для таких глобальних визначеннях.
+Заданий код безпосередньо вводиться до функції графа (\ ``vertex``, `` фрагмент``, або ``light``), тому його не можна використовувати для позначення функцій, змін, уніформ або глобальних констанцій. Дивитися :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` для таких глобальних визначеннях.
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ VisualShaderNodeExpression
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-Вираз у мові Godot Shading, яка буде вводитися на старті функції графа (``vertex``, `` фрагмент``, або ``light``, і таким чином не можна використовувати для позначення функцій, різних форм, уніформ або глобальних констанцій.
+Вираз у мові Godot Shading, яка буде вводитися на старті функції графа (\ ``vertex``, `` фрагмент``, або ``light``, і таким чином не можна використовувати для позначення функцій, різних форм, уніформ або глобальних констанцій.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

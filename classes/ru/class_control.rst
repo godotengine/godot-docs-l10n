@@ -7,7 +7,7 @@ Control
 
 **Наследует:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Наследуется от:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
+**Наследуется от:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
 
 Базовый класс для всех элементов управления GUI. Адаптирует свое положение и размер на основе родительского элемента управления.
 
@@ -240,6 +240,8 @@ Godot распространяет события ввода через обла
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_icon_override<class_Control_method_add_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )                                                                                             |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`add_theme_sound_override<class_Control_method_add_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                         |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_stylebox_override<class_Control_method_add_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ )                                                                                      |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`begin_bulk_theme_override<class_Control_method_begin_bulk_theme_override>`\ (\ )                                                                                                                                                                                  |
@@ -308,6 +310,8 @@ Godot распространяет события ввода через обла
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Texture2D<class_Texture2D>`                            | :ref:`get_theme_icon<class_Control_method_get_theme_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`get_theme_sound<class_Control_method_get_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`                              | :ref:`get_theme_stylebox<class_Control_method_get_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                  | :ref:`get_tooltip<class_Control_method_get_tooltip>`\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const|                                                                                                                                         |
@@ -338,6 +342,10 @@ Godot распространяет события ввода через обла
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_icon_override<class_Control_method_has_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound<class_Control_method_has_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound_override<class_Control_method_has_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox<class_Control_method_has_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox_override<class_Control_method_has_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                          |
@@ -345,6 +353,8 @@ Godot распространяет события ввода через обла
    | :ref:`bool<class_bool>`                                      | :ref:`is_drag_successful<class_Control_method_is_drag_successful>`\ (\ ) |const|                                                                                                                                                                                        |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_layout_rtl<class_Control_method_is_layout_rtl>`\ (\ ) |const|                                                                                                                                                                                                  |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`play_theme_sound<class_Control_method_play_theme_sound>`\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`release_focus<class_Control_method_release_focus>`\ (\ )                                                                                                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -357,6 +367,8 @@ Godot распространяет события ввода через обла
    | |void|                                                       | :ref:`remove_theme_font_size_override<class_Control_method_remove_theme_font_size_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_icon_override<class_Control_method_remove_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                    |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`remove_theme_sound_override<class_Control_method_remove_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_stylebox_override<class_Control_method_remove_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1035,6 +1047,18 @@ flags **SizeFlags**: :ref:`🔗<enum_Control_SizeFlags>`
 
 Сообщает родительскому :ref:`Container<class_Container>` о необходимости выровнять узел по его концу, либо по нижнему, либо по правому краю. Является взаимоисключающим с :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` и другими флагами размера сжатия, но может использоваться с :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` в некоторых контейнерах. Используйте с :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` и :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
 
+.. _class_Control_constant_SIZE_MAXIMIZE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_MAXIMIZE** = ``16``
+
+Tells the parent :ref:`Container<class_Container>` to use the node's :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` when doing minimum size calculations. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+
+\ **Note:** Setting this flag does not necessarily mean the node will be resized to its maximum size, as the parent container may not have enough space to do so.
+
+\ **Note:** If this node is a child of a Container that enables the :ref:`size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` property on its children for layout, nodes with this flag set will be given priority in stretching. If multiple nodes have this flag set, their relative stretch ratios will still be respected.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1089,7 +1113,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-Если минимальный размер элемента управления превысит его текущий размер по соответствующей оси, он увеличится влево или вверх.
+The control will grow/shrink to the left or top if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1121,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-Если минимальный размер элемента управления превысит его текущий размер по соответствующей оси, он будет увеличиваться вправо или вниз.
+The control will grow/shrink to the right or bottom if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1129,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-Размер элемента будет увеличиваться в обоих направлениях одинаково, чтобы компенсировать изменение его минимального размера, если он превысит текущий размер.
+The control will grow/shrink in both directions equally if its size is changed to be larger/smaller than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1649,11 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-Максимальный размер ограничивающего прямоугольника этого элемента управления. Если задано значение больше или равное ``(0, 0)``, ограничивающий прямоугольник узла никогда не превысит этот размер. Значение меньше ``(0, 0)`` означает отсутствие максимального размера.
+The maximum size of the node's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size. This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` if the two conflict.
 
-\ **Примечание:** Окончательный эффективный максимальный размер может зависеть от размера родительского контейнера и распространяемых максимальных размеров. См. также: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **Note:** The final effective maximum size may be subject to the parent's maximum size (via :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>`), so it is recommended to use :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` instead of :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`. Likewise, use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` to account for the maximum size.
 
-\ **Примечание:** Не все подтипы **Control** корректно обрабатывают пользовательский максимальный размер, что может привести к неожиданному поведению, если содержимое элемента управления превышает этот размер.
-
-\ **Примечание:** Это значение имеет приоритет над :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. Например, если вы установите :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` равным ``(100, 100)`` и :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` равным ``(200, 200)``, результирующий размер будет ``(100, 100)``.
-
-\ **Примечание:** Рекомендуется использовать :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` вместо :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` при использовании этого свойства, поскольку первый учитывает ограничения максимального размера при вычислении минимального размера, а второй — нет.
+\ **Note:** Not all **Control** subtypes handle this gracefully, and their contents may extend beyond the bounding rectangle. Set :ref:`clip_contents<class_Control_property_clip_contents>` to ``true`` to prevent child controls from rendering outside of this size, especially when this node is a :ref:`Container<class_Container>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1845,7 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Управляет направлением роста элемента управления по горизонтальной оси, если его минимальный горизонтальный размер превышает текущий размер, поскольку элемент управления всегда должен иметь размер не меньше минимального.
+Controls the direction on the horizontal axis in which the control should grow or shrink if its horizontal size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1862,7 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Управляет направлением роста элемента управления по вертикальной оси, если его минимальный вертикальный размер превышает текущий размер, поскольку элемент управления всегда должен иметь размер не меньше минимального.
+Controls the direction on the vertical axis in which the control should grow or shrink if its vertical size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -2750,9 +2770,9 @@ Godot вызывает этот метод для получения данны�
 
 |void| **_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Control_private_method__gui_input>`
 
-Виртуальный метод, реализуемый пользователем. Переопределите этот метод для обработки и принятия ввода в элементах пользовательского интерфейса. См. также :ref:`accept_event()<class_Control_method_accept_event>`.
+Virtual method to be implemented by the user. Override this method to handle and accept inputs on UI elements. See also :ref:`accept_event()<class_Control_method_accept_event>`.
 
-\ **Пример:** Щелкните элемент управления, чтобы напечатать сообщение:
+\ **Example:** Click on the control to print a message:
 
 
 .. tabs::
@@ -2779,19 +2799,19 @@ Godot вызывает этот метод для получения данны�
 
 
 
-Если ``event`` наследует :ref:`InputEventMouse<class_InputEventMouse>`, этот метод **не** будет вызван, когда:
+If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this method will **not** be called when:
 
-- элемент управления :ref:`mouse_filter<class_Control_property_mouse_filter>` установлен на :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- the control's :ref:`mouse_filter<class_Control_property_mouse_filter>` is set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- элемент управления перекрыт другим элементом управления сверху, у которого :ref:`mouse_filter<class_Control_property_mouse_filter>` не установлен на :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- the control is obstructed by another control on top, that doesn't have :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- родительский элемент управления имеет :ref:`mouse_filter<class_Control_property_mouse_filter>` установлен на :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` или принял событие;
+- a child of the control received the event and has :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` or has accepted the event;
 
-- родительский элемент управления имеет :ref:`clip_contents<class_Control_property_clip_contents>`, а положение ``event`` находится вне прямоугольника родителя;
+- the control's parent has :ref:`clip_contents<class_Control_property_clip_contents>` enabled and the ``event``'s position is outside the parent's rectangle;
 
-- положение ``event`` находится вне элемента управления (см. :ref:`_has_point()<class_Control_private_method__has_point>`).
+- the ``event``'s position is outside the control (see :ref:`_has_point()<class_Control_private_method__has_point>`).
 
-\ **Примечание:** Положение ``event`` определяется относительно начала координат этого элемента управления.
+\ **Note:** The ``event``'s position is relative to this control's origin.
 
 .. rst-class:: classref-item-separator
 
@@ -3023,6 +3043,20 @@ Godot вызывает этот метод для получения данны�
 Создает локальное переопределение для значка темы с указанным ``name``. Локальные переопределения всегда имеют приоритет при извлечении элементов темы для элемента управления. Переопределение можно удалить с помощью :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>`.
 
 См. также :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_add_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **add_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_add_theme_sound_override>`
+
+Creates a local override for a theme sound with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_sound_override()<class_Control_method_remove_theme_sound_override>`.
+
+See also :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3542,6 +3576,20 @@ Godot вызывает этот метод для получения данны�
 
 ----
 
+.. _class_Control_method_get_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`AudioStream<class_AudioStream>` **get_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_sound>`
+
+Returns a sound from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_get_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3771,6 +3819,34 @@ Godot вызывает этот метод для получения данны�
 
 ----
 
+.. _class_Control_method_has_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound>`
+
+Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_has_theme_sound_override:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound_override>`
+
+Returns ``true`` if there is a local override for a theme sound with the specified ``name`` in this **Control** node.
+
+See :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_has_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3820,6 +3896,20 @@ Godot вызывает этот метод для получения данны�
 :ref:`bool<class_bool>` **is_layout_rtl**\ (\ ) |const| :ref:`🔗<class_Control_method_is_layout_rtl>`
 
 Возвращает ``true``, если макет справа налево. См. также :ref:`layout_direction<class_Control_property_layout_direction>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_play_theme_sound:
+
+.. rst-class:: classref-method
+
+|void| **play_theme_sound**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_play_theme_sound>`
+
+Plays the sound from the ``stream`` resource non-positionally in the bus specified by the :ref:`ProjectSettings.audio/buses/gui_theme_bus<class_ProjectSettings_property_audio/buses/gui_theme_bus>` project setting. Typically, the ``stream`` resource is obtained using :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
+
+\ **Note:** This method should only be used to play UI-related sounds. It should not be used to play general game sounds, as it offers very limited control. Use the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` nodes for general game audio instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3892,6 +3982,18 @@ Godot вызывает этот метод для получения данны�
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_icon_override>`
 
 Удаляет локальное переопределение для значка темы с указанным ``name``, ранее добавленное :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` или через панель инспектора.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_remove_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **remove_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_sound_override>`
+
+Removes a local override for a theme sound with the specified ``name`` previously added by :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>` or via the Inspector dock.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,9 +4253,9 @@ Godot вызывает этот метод для получения данны�
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Делает недействительным кэш максимального размера в данном узле, а также в дочерних узлах, у которых свойство :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` установлено в ``false``. Метод предназначен для использования совместно с :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` в тех случаях, когда возвращаемое им значение меняется. Присвоение значения свойству :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` автоматически вызывает данный метод.
 
-\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
+\ **Примечание:** Вызов этого метода также приводит к вызову :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`, поскольку изменение максимального размера может повлиять на совокупный минимальный размер.
 
 .. rst-class:: classref-item-separator
 

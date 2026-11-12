@@ -175,7 +175,7 @@ enum **ConnectionState**: :ref:`🔗<enum_WebRTCPeerConnection_ConnectionState>`
 
 :ref:`ConnectionState<enum_WebRTCPeerConnection_ConnectionState>` **STATE_CLOSED** = ``5``
 
-З'єднання з'єднання закрито (після виклику ``методиком близько``.
+З’єднання з віддаленим вузлом закрито (наприклад, після виклику :ref:`close()<class_WebRTCPeerConnection_method_close>`).
 
 .. rst-class:: classref-item-separator
 
@@ -310,27 +310,27 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` **create_data_channel**\ (\ label\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_WebRTCPeerConnection_method_create_data_channel>`
 
-Повертає новий :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (або ``null`` у разі невдачі) із заданим ``label`` та опціонально налаштованим через словник ``options``. Цей метод можна викликати лише тоді, коли з'єднання перебуває в стані :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
+Returns a new :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (or ``null`` on failure) with given ``label`` and optionally configured via the ``options`` dictionary. This method can only be called when the connection is in state :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-Існує два способи створити робочий канал даних: або викликати :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` лише на одному з вузлів та прослуховувати :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` на іншому, або викликати :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` на обох вузлах, з однаковими значеннями, та опцією ``"negotiated"``, встановленою на ``true``.
+There are two ways to create a working data channel: either call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on only one of the peer and listen to :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` on the other, or call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on both peers, with the same values, and the ``"negotiated"`` option set to ``true``.
 
-Дійсні ``options``:
+Valid ``options`` are:
 
 ::
 
     {
-        "negotiated": true, # Якщо встановлено значення true (за замовчуванням вимкнено), це означає, що канал узгоджується поза діапазоном. Також потрібно встановити "id". "data_channel_received" не буде викликано.
-        "id": 1, # Коли "negotiated" має значення true, це значення також має бути встановлене на однакове значення на обох вузлах.
+        "negotiated": true, # When set to true (default off), means the channel is negotiated out of band. "id" must be set too. "data_channel_received" will not be called.
+        "id": 1, # When "negotiated" is true this value must also be set to the same value on both peer.
 
-        # Можна вказати лише один з maxRetransmits та maxPacketLifeTime, а не обидва одночасно. Вони роблять канал ненадійним (але також кращим у режимі реального часу).
-        "maxRetransmits": 1, # Вкажіть максимальну кількість спроб повторної передачі пакетів, яку зробить вузол, якщо вони не будуть підтверджені.
-        "maxPacketLifeTime": 100, # Вкажіть максимальний час (у мілісекундах), після якого повторна передача непідтверджених пакетів може бути припинена.
-        "ordered": true, # У ненадійному режимі (тобто встановлено значення "maxRetransmits" або "maxPacketLifetime"), значення "ordered" (за замовчуванням true) вказує, чи потрібно примусово встановлювати порядок пакетів.
+        # Only one of maxRetransmits and maxPacketLifeTime can be specified, not both. They make the channel unreliable (but also better at real time).
+        "maxRetransmits": 1, # Specify the maximum number of attempt the peer will make to retransmits packets if they are not acknowledged.
+        "maxPacketLifeTime": 100, # Specify the maximum amount of time before giving up retransmitions of unacknowledged packets (in milliseconds).
+        "ordered": true, # When in unreliable mode (i.e. either "maxRetransmits" or "maxPacketLifeTime" is set), "ordered" (true by default) specify if packet ordering is to be enforced.
 
-        "protocol": "my-custom-protocol", # Рядок спеціального підпротоколу для цього каналу.
+        "protocol": "my-custom-protocol", # A custom sub-protocol string for this channel.
     }
 
-\ **Примітка:** Ви повинні зберегти посилання на канали, створені таким чином, інакше їх буде закрито.
+\ **Note:** You must keep a reference to channels created this way, or it will be closed.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 Створює нову SDP пропозицію, щоб запустити підключення WebRTC з віддаленим літцем. Принаймні один :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` повинен бути створений перед тим, як викликати цей метод.
 
-Якщо ця функція повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, :ref:`Session_description_created<class_WebRTCPeerConnection_signal_Session_description_created>` буде викликано, коли сеанс готовий надсилати.
+Якщо ця функція повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` буде викликано, коли сеанс готовий надсилати.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 Встановлює SDP опис пульта дистанційного керування. Це має бути викликано значеннями, що створюються віддаленими однолітками і отримані над сервером сигналізації.
 
-Якщо ``type`` is ``"offer"`` одноліток випромінює :ref:`Session_description_created<class_WebRTCPeerConnection_signal_Session_description_created>` з відповідною відповідь.
+Якщо ``type`` is ``"offer"`` одноліток випромінює :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` з відповідною відповідь.
 
 Якщо ``type`` is ``"answer""`` одноліток почне випромінювати :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`.
 

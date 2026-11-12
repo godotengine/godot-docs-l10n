@@ -29,6 +29,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/additional_plist_content<class_EditorExportPlatformVisionOS_property_application/additional_plist_content>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/app_role<class_EditorExportPlatformVisionOS_property_application/app_role>`                                                                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/app_store_team_id<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/bundle_identifier<class_EditorExportPlatformVisionOS_property_application/bundle_identifier>`                                                                           |
@@ -46,6 +48,8 @@ Proprietà
    | :ref:`bool<class_bool>`                           | :ref:`application/export_project_only<class_EditorExportPlatformVisionOS_property_application/export_project_only>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`application/icon_interpolation<class_EditorExportPlatformVisionOS_property_application/icon_interpolation>`                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/immersion_style<class_EditorExportPlatformVisionOS_property_application/immersion_style>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/min_visionos_version<class_EditorExportPlatformVisionOS_property_application/min_visionos_version>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,10 +73,6 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`capabilities/additional<class_EditorExportPlatformVisionOS_property_capabilities/additional>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_a12<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`                                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_gaming_tier<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/debug<class_EditorExportPlatformVisionOS_property_custom_template/debug>`                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/release<class_EditorExportPlatformVisionOS_property_custom_template/release>`                                                                                       |
@@ -91,7 +91,17 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`icons/icon_1024x1024_tinted<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024_tinted>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_back_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`                                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_front_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`                                                                     |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_middle_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`modules/camera<class_EditorExportPlatformVisionOS_property_modules/camera>`                                                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/accessory_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/accessory_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/active_keyboard_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -383,6 +393,10 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/file_timestamp_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/hand_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/hand_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`privacy/microphone_usage_description<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/microphone_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description_localized>`                                         |
@@ -432,13 +446,25 @@ Ulteriori dati aggiunti alla sezione radice ``<dict>`` del file `Info.plist <htt
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/app_role:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/app_role** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_role>`
+
+The application role on the visionOS platform. It can be ``Window`` for running a 3D game on a 2D window, or ``Immersive`` for an XR experience.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/app_store_team_id:
 
 .. rst-class:: classref-property
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`
 
-ID team Apple, una stringa univoca di 10 caratteri. Per individuare il tuo ID team, controlla la sezione "Dettagli abbonamento" nella dashboard del tuo account sviluppatore Apple o "Unità organizzativa" del tuo certificato di firma del codice. Consulta `Individuare l’ID team <https://developer.apple.com/it/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +476,7 @@ ID team Apple, una stringa univoca di 10 caratteri. Per individuare il tuo ID te
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/bundle_identifier>`
 
-Identificatore univoco dell'applicazione in un formato DNS inverso, può contenere solo caratteri alfanumerici (``A-Z``, ``a-z`` e ``0-9``), trattini (``-``) e punti (``.``).
+Identificatore univoco dell'applicazione in un formato DNS inverso, può contenere solo caratteri alfanumerici (\ ``A-Z``, ``a-z`` e ``0-9``), trattini (\ ``-``) e punti (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -540,6 +566,18 @@ Metodo di interpolazione utilizzato per ridimensionare l'icona dell'applicazione
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/immersion_style:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/immersion_style** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/immersion_style>`
+
+Initial immersion style, only applicable if you have chosen the ``Immersive`` app role. It can be ``Full`` for a VR experience; ``Mixed`` for a mixed reality experience where the rendered content is displayed along with the real environment; or ``Progressive`` for a portal style experience where the user controls the immersion level. Change it at runtime with :ref:`VisionOSXRInterface.immersion_style<class_VisionOSXRInterface_property_immersion_style>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/min_visionos_version:
 
 .. rst-class:: classref-property
@@ -548,7 +586,7 @@ Metodo di interpolazione utilizzato per ridimensionare l'icona dell'applicazione
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +598,9 @@ Metodo di interpolazione utilizzato per ridimensionare l'icona dell'applicazione
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_debug>`
 
-Nome del profilo di provisioning. Imposta PROVISIONING_PROFILE_SPECIFIER di XCode per il debug. `Usato per il provisioning manuale <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Si può sovrascrivere con la variabile di ambiente ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +612,9 @@ Si può sovrascrivere con la variabile di ambiente ``GODOT_APPLE_PLATFORM_PROFIL
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_release>`
 
-Nome del profilo di provisioning. Imposta PROVISIONING_PROFILE_SPECIFIER di XCode per il rilascio. `Usato per il provisioning manuale <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Si può sovrascrivere con la variabile di ambiente ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +654,7 @@ Si può sovrascrivere con la variabile di ambiente ``GODOT_APPLE_PLATFORM_PROVIS
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/short_version>`
 
-Versione dell'applicazione visibile all'utente, può contenere solo caratteri numerici (``0-9``) e punti (``.``). Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Versione dell'applicazione visibile all'utente, può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``). Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Nota:** Questo valore è utilizzato per il valore di *Identity > Version* nel progetto Xcode generato.
 
@@ -642,7 +680,7 @@ Un codice creatore di quattro caratteri specifico del pacchetto. Facoltativo.
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/version>`
 
-La versione dell'applicazione leggibile da computer, nel formato ``major.minor.patch``. Può contenere solo caratteri numerici (``0-9``) e punti (``.``). È necessario incrementarla a ogni nuova versione inviata all'App Store. Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+La versione dell'applicazione leggibile da computer, nel formato ``major.minor.patch``. Può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``). È necessario incrementarla a ogni nuova versione inviata all'App Store. Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Nota:** Questo valore è utilizzato per il valore di *Identity > Version* nel progetto Xcode generato.
 
@@ -656,7 +694,7 @@ La versione dell'applicazione leggibile da computer, nel formato ``major.minor.p
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformVisionOS_property_architectures/arm64>`
 
-Se ``true``, i binari per ``arm64`` sono inclusi nel progetto esportato.
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -682,35 +720,11 @@ Se ``true``, le funzionalità di rete relative all'accesso Wi-Fi sono abilitate.
 
 Ulteriori dati aggiunti all'array ``UIRequiredDeviceCapabilities`` del file ``Info.plist``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
-.. rst-class:: classref-item-separator
 
-----
+.. classref_note::
 
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_a12:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_a12** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`
-
-Richiede le prestazioni grafiche e le funzionalità dei chip A12 Bionic e successivi (dispositivi che supportano tutte le funzionalità del rendering Vulkan).
-
-Attivando questa opzione si limitano i dispositivi supportati a: iPhone XS, iPhone XR, iPad Mini (5a generazione), iPad Air (3a generazione), iPad (8a generazione) e successivi.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_gaming_tier** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`
-
-Richiede le prestazioni grafiche e le funzionalità dei chip A17 Pro e successivi.
-
-Attivando questa opzione si limitano i dispositivi supportati a: iPhone 15 Pro e successivi.
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +813,7 @@ Ambiente per il servizio Apple Push Notification. Consulta `aps-environment <htt
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`
 
-File icona base dell'applicazione usata per generare le altre icone. Se lasciato vuoto, verrà utilizzata :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Consulta `Icone delle app <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -829,6 +843,42 @@ File icona base dell'applicazione usata per generare le altre icone, versione ti
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_back_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`
+
+Back layer of the visionOS app icon. visionOS app icons are composed of three stacked layers (front/middle/back) rendered with parallax. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_front_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`
+
+Front layer of the visionOS app icon. Should be a 1024x1024 image. Falls back to :ref:`icons/icon_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`, then :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>` when empty. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_middle_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`
+
+Middle layer of the visionOS app icon. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_modules/camera:
 
 .. rst-class:: classref-property
@@ -841,13 +891,37 @@ Se ``true``, il modulo del :ref:`CameraServer<class_CameraServer>` è incluso ne
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/accessory_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`
+
+A message displayed when requesting access to controller tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/accessory_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`
+
+A message displayed when requesting access to controller tracking on visionOS (localized).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons:
 
 .. rst-class:: classref-property
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`
 
-I motivi per cui l'app utilizza l'API della tastiera attiva. Consulta `Descrivere l'uso dell'API per i motivi richiesti <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1389,7 @@ Indica se l'app utilizza gli ID dei dispositivi per il tracciamento.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collected>`
 
-Indica se l'app raccoglie l'indirizzo email.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1401,7 @@ Indica se l'app raccoglie l'indirizzo email.
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-I motivi per cui l'app raccoglie l'indirizzo email. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1413,7 @@ I motivi per cui l'app raccoglie l'indirizzo email. Consulta `Descrivere l'uso d
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Indica se l'app collega l'indirizzo email all'identità dell'utente.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1425,7 @@ Indica se l'app collega l'indirizzo email all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Indica se l'app utilizza l'indirizzo email per il tracciamento.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2131,7 +2205,7 @@ Indica se l'app utilizza i dati sulle prestazioni per il tracciamento.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collected>`
 
-Indica se l'app raccoglie il numero di telefono.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2143,7 +2217,7 @@ Indica se l'app raccoglie il numero di telefono.
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-I motivi per cui l'app raccoglie il numero di telefono. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2155,7 +2229,7 @@ I motivi per cui l'app raccoglie il numero di telefono. Consulta `Descrivere l'u
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Indica se l'app collega il numero di telefono all'identità dell'utente.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2167,7 +2241,7 @@ Indica se l'app collega il numero di telefono all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Indica se l'app utilizza il numero di telefono per il tracciamento.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2301,7 @@ Indica se l'app utilizza foto o video per il tracciamento.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collected>`
 
-Indica se l'app raccoglie l'indirizzo fisico.
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2239,7 +2313,7 @@ Indica se l'app raccoglie l'indirizzo fisico.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-I motivi per cui l'app raccoglie l'indirizzo fisico. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2251,7 +2325,7 @@ I motivi per cui l'app raccoglie l'indirizzo fisico. Consulta `Descrivere l'uso 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Indica se l'app collega l'indirizzo fisico all'identità dell'utente.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2337,7 @@ Indica se l'app collega l'indirizzo fisico all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Indica se l'app utilizza l'indirizzo fisico per il tracciamento.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2563,7 +2637,7 @@ Indica se l'app utilizza gli ID utente per il tracciamento.
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/disk_space_access_reasons>`
 
-I motivi per cui l'app utilizza l'API per lo spazio libero su disco. Consulta `Descrivere l'uso dell'API per i motivi richiesti <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2575,7 +2649,31 @@ I motivi per cui l'app utilizza l'API per lo spazio libero su disco. Consulta `D
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`
 
-I motivi per cui l'app utilizza l'API timestamp/metadati dei file. Consulta `Descrivere l'uso dell'API per i motivi richiesti <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/hand_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`
+
+A message displayed when requesting access to hand tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/hand_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`
+
+A message displayed when requesting access to hand tracking on visionOS (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2733,7 @@ Un messaggio visualizzato quando si richiede l'accesso alla libreria di foto del
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/system_boot_time_access_reasons>`
 
-I motivi per cui l'app utilizza l'API del tempo di avvio del sistema/tempo assoluto. Consulta `Descrivere l'uso dell'API per i motivi richiesti <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2649,7 +2747,11 @@ I motivi per cui l'app utilizza l'API del tempo di avvio del sistema/tempo assol
 
 La lista dei domini su Internet a cui si collega l'app che sono coinvolti nel tracciamento. Consulta `File manifesto sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,7 +2775,7 @@ Indica se l' app utilizza dati per il tracciamento. Consulta `File manifesto sul
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/user_defaults_access_reasons>`
 
-I motivi per cui l'app utilizza l'API predefinita dell'utente. Consulta `Descrivere l'uso dell'API per i motivi richiesti <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ ENetPacketPeer
 描述
 ----
 
-表示 :ref:`ENetConnection<class_ENetConnection>` 对等端的 PacketPeer 实现。
+A PacketPeer implementation representing a peer of an :ref:`ENetConnection<class_ENetConnection>`.
 
-该类无法被直接实例化，但可以在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，或通过 :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>` 进行检索。
+This class cannot be instantiated directly but can be retrieved during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` or via :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署之前，请确保在 Android 导出预设中，启用了 ``INTERNET`` 权限。否则，Android 将阻止任何类型的网络通信。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

@@ -529,11 +529,11 @@ Font
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_variation_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_variation_list>`
 
-Возвращает список поддерживаемых `координат вариантов <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, каждая координата возвращается как ``tag: Vector3i(min_value,max_value,default_value)``.
+Returns list of supported `variation coordinates <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, each coordinate is returned as ``tag: Vector3i(min_value,max_value,default_value)``.
 
-Вариации шрифта позволяют непрерывно изменять характеристики глифов вдоль некоторой заданной оси дизайна, такой как толщина, ширина или наклон.
+Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.
 
-Чтобы распечатать доступные оси вариаций переменного шрифта:
+To print available variation axes of a variable font:
 
 ::
 
@@ -545,7 +545,7 @@ Font
         var values = variation_list[tag]
         print("variation axis: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
 
-\ **Примечание:** Чтобы задать и получить координаты вариации :ref:`FontVariation<class_FontVariation>`, используйте :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
+\ **Note:** To set and get variation coordinates of a :ref:`FontVariation<class_FontVariation>`, use :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
 
 .. rst-class:: classref-item-separator
 

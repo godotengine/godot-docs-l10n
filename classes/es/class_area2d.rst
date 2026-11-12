@@ -450,9 +450,9 @@ Si la gravedad es un punto (ver :ref:`gravity_point<class_Area2D_property_gravit
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-La distancia a la que la fuerza de gravedad es igual a :ref:`gravity<class_Area2D_property_gravity>`. Por ejemplo, en un planeta de 100 píxeles de radio con una gravedad superficial de 4.0 px/s², establezca la :ref:`gravity<class_Area2D_property_gravity>` a 4.0 y la unidad de distancia a 100.0. La gravedad disminuirá según la ley del cuadrado inverso, entonces en este ejemplo, a 200 pixeles del centro la gravedad será 1.0 px/s² (doble de distancia, 1/4 más gravedad), a 50 píxeles será 16.0 px/s² (mitad de distancia, 4 veces más gravedad), y así sucesivamente.
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area2D_property_gravity>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the :ref:`gravity<class_Area2D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-Lo anterior es cierto solo cuando la unidad de distancia es un número positivo. Cuando está establecido a 0.0, la gravedad será constante independientemente de la distancia.
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 

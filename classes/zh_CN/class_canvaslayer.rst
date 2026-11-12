@@ -291,7 +291,7 @@ CanvasLayer
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-返回从 **CanvasLayer** 坐标系到 :ref:`Viewport<class_Viewport>` 坐标系的变换。
+Returns the transform from the **CanvasLayer**'s coordinate system to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 

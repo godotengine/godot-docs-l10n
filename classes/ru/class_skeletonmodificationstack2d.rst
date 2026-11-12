@@ -86,7 +86,7 @@ SkeletonModificationStack2D
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-Если ``true``, то будут вызваны модификации в стеке. Это обрабатывается автоматически через узел :ref:`Skeleton2D<class_Skeleton2D>`.
+If ``true``, the modifications in the stack will be called. This is handled automatically through the :ref:`Skeleton2D<class_Skeleton2D>` node.
 
 .. rst-class:: classref-item-separator
 

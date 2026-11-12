@@ -913,7 +913,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 \ **注意：**\ :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 會與粒子網格的頂點顏色相乘。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則 :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 不會產生可見效果。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -932,7 +936,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 設定使用 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 時粒子發射的方向。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +959,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 設定使用 :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 時出生粒子的初始位置。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

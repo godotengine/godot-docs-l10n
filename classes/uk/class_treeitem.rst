@@ -553,7 +553,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_mode>`
 
-Повертаємо режим автоматичного відновлення тексту в даній ``column``. За замовчуванням це :ref:`TextServer. AUTOWRAP_OFF<class_TextServer_constant_ AUTOWRAP_OFF>`.
+Повертаємо режим автоматичного відновлення тексту в даній ``column``. За замовчуванням це :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1353,7 +1353,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |void| **set_autowrap_mode**\ (\ column\: :ref:`int<class_int>`, autowrap_mode\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_mode>`
 
-Встановлює режим автозберігання в даній ``column``. Якщо встановити щось інше, ніж :ref:`TextServer. AUTOWRAP_OFF<class_TextServer_constant_ AUTOWRAP_OFF>`, текст загортається всередині прямокутника комірки.
+Встановлює режим автозберігання в даній ``column``. Якщо встановити щось інше, ніж :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, текст загортається всередині прямокутника комірки.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1527,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Встановлює власний зворотний виклик для малювання вказаного стовпця. Щоб скасувати власний зворотний виклик, використовуйте порожній об’єкт :ref:`Callable<class_Callable>` (``Callable()``). Для використання цієї функції комірка повинна перебувати в режимі :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`.
+Встановлює власний зворотний виклик для малювання вказаного стовпця. Щоб скасувати власний зворотний виклик, використовуйте порожній об’єкт :ref:`Callable<class_Callable>` (\ ``Callable()``). Для використання цієї функції комірка повинна перебувати в режимі :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`.
 
 \ ``callback`` повинен приймати два аргументи: **TreeItem**, що відображається, та його положення і розмір у вигляді :ref:`Rect2<class_Rect2>`.
 

@@ -610,7 +610,7 @@ enum **Axis**: :ref:`🔗<enum_Vector3_Axis>`
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate>`
 
-Виконує кубічну інтерполяцію між цим вектором і ``b``, використовуючи ``pre_a`` і ``post_b`` як контрольні точки, та повертає результат у позиції ``weight``. ``weight`` знаходиться в діапазоні від 0.0 до 1.0 і визначає ступінь інтерполяції.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -622,9 +622,9 @@ enum **Axis**: :ref:`🔗<enum_Vector3_Axis>`
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate_in_time>`
 
-Виконує кубічну інтерполяцію між цим вектором і ``b``, використовуючи ``pre_a`` і ``post_b`` як контрольні точки, та повертає результат у позиції ``weight``. ``weight`` знаходиться в діапазоні від 0.0 до 1.0 і визначає ступінь інтерполяції.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-Може виконувати плавнішу інтерполяцію, ніж :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>`), завдяки використанню значень часу.
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,9 @@ enum **Axis**: :ref:`🔗<enum_Vector3_Axis>`
 
 :ref:`Vector3<class_Vector3>` **direction_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_direction_to>`
 
-Повертає нормалізований вектор, що вказує від цього вектора до ``to``. Це еквівалентно виразу ``(b - a).normalized()``.
+Повертає нормалізований вектор, що вказує з цього вектора на ``to``.
+
+\ ``a.direction_to(b)`` еквівалентно ``(b - a).normalized()``. Див. також :ref:`normalized()<class_Vector3_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 

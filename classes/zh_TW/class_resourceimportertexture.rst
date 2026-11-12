@@ -38,6 +38,8 @@ ResourceImporterTexture
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>`                                     | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`compress/high_quality_mode<class_ResourceImporterTexture_property_compress/high_quality_mode>`                           | ``0``     |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`float<class_float>`   | :ref:`compress/lossy_quality<class_ResourceImporterTexture_property_compress/lossy_quality>`                                   | ``0.7``   |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>`                                                     | ``0``     |
@@ -54,9 +56,13 @@ ResourceImporterTexture
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`editor/scale_with_editor_scale<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`                   | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`mipmaps/alpha_test_threshold<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`                       | ``0.5``   |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`mipmaps/generate<class_ResourceImporterTexture_property_mipmaps/generate>`                                               | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`mipmaps/limit<class_ResourceImporterTexture_property_mipmaps/limit>`                                                     | ``-1``    |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`mipmaps/preserve_alpha_test_coverage<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`       | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`process/channel_remap/alpha<class_ResourceImporterTexture_property_process/channel_remap/alpha>`                         | ``3``     |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -124,7 +130,7 @@ ResourceImporterTexture
 
 \ **總是：** 強制 VRAM 壓縮，即使對於具有 Alpha 通道的 HDR 紋理也是如此。為此，在匯入時將丟棄 Alpha 通道。
 
-\ **注意：** 僅對 Radiance HDR (``.hdr``) 和 OpenEXR (``.exr``) 影像有效。
+\ **注意：** 僅對 Radiance HDR (\ ``.hdr``) 和 OpenEXR (\ ``.exr``) 影像有效。
 
 .. rst-class:: classref-item-separator
 
@@ -141,6 +147,28 @@ ResourceImporterTexture
 如果 ``false``\ ，則在桌面平台上使用速度更快但品質較低的 S3TC 壓縮，在行動裝置/Web 平台上使用 ETC2。使用 S3TC 時，DXT1 (BC1) 用於不透明紋理，DXT5 (BC3) 用於透明或法線貼圖 (RGTC) 紋理。
 
 BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（請參閱\ :ref:`compress/hdr_compression<class_ResourceImporterTexture_property_compress/hdr_compression>`\ ）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterTexture_property_compress/high_quality_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **compress/high_quality_mode** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/high_quality_mode>`
+
+Controls the priorities of the VRAM compression when :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>` is enabled.
+
+\ **Automatic:** Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+\ **Max Quality:** Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+\ **Compressed:** Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+\ **Max Compression:** Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+\ **Note:** Currently, only the ASTC compressor uses this setting. Other compressors will ignore it.
 
 .. rst-class:: classref-item-separator
 
@@ -266,6 +294,18 @@ UASTC 編碼層級。值越高品質越好，但編碼耗時更長。
 
 ----
 
+.. _class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **mipmaps/alpha_test_threshold** = ``0.5`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`
+
+The alpha threshold used when preserving alpha test coverage across mipmap levels. The coverage is measured at mipmap 0 using the setting and the lower mipmaps are adjusted to match that coverage. Higher values preserve more detail, lower values create softer edges. Note that this threshold is independent from the ``Alpha Scissor Threshold`` set on the material and they both may need to be tuned for optimal results.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ResourceImporterTexture_property_mipmaps/generate:
 
 .. rst-class:: classref-property
@@ -293,6 +333,18 @@ mipmap 的缺點是它們會增加約 33% 的記憶體使用量。
 :ref:`int<class_int>` **mipmaps/limit** = ``-1`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/limit>`
 
 未實作。目前變更後無效。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **mipmaps/preserve_alpha_test_coverage** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`
+
+If ``true``, automatically adjusts alpha values to maintain consistent coverage when alpha testing is used. This is especially useful for hair, foliage, or other alpha-tested materials, as it prevents fading or popping artifacts across mipmap levels (LODs). This option is intended for color textures and clamps the alpha channel in the 0.0 - 1.0 range.
 
 .. rst-class:: classref-item-separator
 

@@ -29,6 +29,8 @@ visionOS 导出器。
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/additional_plist_content<class_EditorExportPlatformVisionOS_property_application/additional_plist_content>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/app_role<class_EditorExportPlatformVisionOS_property_application/app_role>`                                                                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/app_store_team_id<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/bundle_identifier<class_EditorExportPlatformVisionOS_property_application/bundle_identifier>`                                                                           |
@@ -46,6 +48,8 @@ visionOS 导出器。
    | :ref:`bool<class_bool>`                           | :ref:`application/export_project_only<class_EditorExportPlatformVisionOS_property_application/export_project_only>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`application/icon_interpolation<class_EditorExportPlatformVisionOS_property_application/icon_interpolation>`                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/immersion_style<class_EditorExportPlatformVisionOS_property_application/immersion_style>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/min_visionos_version<class_EditorExportPlatformVisionOS_property_application/min_visionos_version>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,10 +73,6 @@ visionOS 导出器。
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`capabilities/additional<class_EditorExportPlatformVisionOS_property_capabilities/additional>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_a12<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`                                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_gaming_tier<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/debug<class_EditorExportPlatformVisionOS_property_custom_template/debug>`                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/release<class_EditorExportPlatformVisionOS_property_custom_template/release>`                                                                                       |
@@ -91,7 +91,17 @@ visionOS 导出器。
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`icons/icon_1024x1024_tinted<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024_tinted>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_back_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`                                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_front_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`                                                                     |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_middle_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`modules/camera<class_EditorExportPlatformVisionOS_property_modules/camera>`                                                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/accessory_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/accessory_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/active_keyboard_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -383,6 +393,10 @@ visionOS 导出器。
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/file_timestamp_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/hand_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/hand_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`privacy/microphone_usage_description<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/microphone_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description_localized>`                                         |
@@ -432,13 +446,25 @@ visionOS 导出器。
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/app_role:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/app_role** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_role>`
+
+The application role on the visionOS platform. It can be ``Window`` for running a 3D game on a 2D window, or ``Immersive`` for an XR experience.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/app_store_team_id:
 
 .. rst-class:: classref-property
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`
 
-Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，请检查 Apple 开发者帐户仪表板中的“会员详细信息”部分，或代码签名证书的“组织单位”。见 `查找你的团队 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +488,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/code_sign_identity_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/code_sign_identity_debug>`
 
-用于调试导出的签名身份的“全名”、“通用名”或 SHA-1 哈希值。
+用于调试导出的签名身份的“全名”“通用名”或 SHA-1 哈希值。
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +500,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/code_sign_identity_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/code_sign_identity_release>`
 
-用于发布导出的签名身份的“全名”、“通用名”或 SHA-1 哈希值。
+用于发布导出的签名身份的“全名”“通用名”或 SHA-1 哈希值。
 
 .. rst-class:: classref-item-separator
 
@@ -540,6 +566,18 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/immersion_style:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/immersion_style** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/immersion_style>`
+
+Initial immersion style, only applicable if you have chosen the ``Immersive`` app role. It can be ``Full`` for a VR experience; ``Mixed`` for a mixed reality experience where the rendered content is displayed along with the real environment; or ``Progressive`` for a portal style experience where the user controls the immersion level. Change it at runtime with :ref:`VisionOSXRInterface.immersion_style<class_VisionOSXRInterface_property_immersion_style>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/min_visionos_version:
 
 .. rst-class:: classref-property
@@ -548,7 +586,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +598,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_debug>`
 
-预置描述文件的名称。设置调试时 XCode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用于手动描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +612,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_release>`
 
-预置描述文件的名称。设置发布时 XCode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用于手动描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +694,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformVisionOS_property_architectures/arm64>`
 
-如果为 ``true``\ ，\ ``arm64`` 二进制文件将包含在导出的项目中。
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -682,35 +720,11 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 添加到 ``Info.plist`` 文件的 ``UIRequiredDeviceCapabilities`` 数组中的额外数据。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
-.. rst-class:: classref-item-separator
 
-----
+.. classref_note::
 
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_a12:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_a12** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`
-
-需要 A12 Bionic 及更高版本芯片（支持所有 Vulkan 渲染器功能的设备）的图形性能和功能。
-
-启用该选项会将支持的设备限制为：iPhone XS、iPhone XR、iPad Mini（第 5 代）、iPad Air（第 3 代）、iPad（第 8 代）及更新版本。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_gaming_tier** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`
-
-需要 A17 Pro 及更高版本芯片的图形性能和功能。
-
-启用该选项将支持的设备限制为：iPhone 15 Pro 及更新版本。
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +813,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`
 
-用于生成其他图标的基础应用程序图标。如果留空则会回退到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__\ 。
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -829,6 +843,42 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_back_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`
+
+Back layer of the visionOS app icon. visionOS app icons are composed of three stacked layers (front/middle/back) rendered with parallax. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_front_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`
+
+Front layer of the visionOS app icon. Should be a 1024x1024 image. Falls back to :ref:`icons/icon_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`, then :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>` when empty. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_middle_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`
+
+Middle layer of the visionOS app icon. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_modules/camera:
 
 .. rst-class:: classref-property
@@ -841,13 +891,37 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/accessory_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`
+
+A message displayed when requesting access to controller tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/accessory_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`
+
+A message displayed when requesting access to controller tracking on visionOS (localized).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons:
 
 .. rst-class:: classref-property
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`
 
-你的应用使用活动键盘 API 的原因。请参阅 `描述所需原因 API 的使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1389,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collected>`
 
-表示你的应用是否会收集电子邮件地址。
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1401,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-你的应用程序收集电子邮件地址的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1413,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-表示你的应用是否会将电子邮件地址链接到用户的身份。
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1425,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-表示你的应用是否会将电子邮件地址用于追踪。
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2131,7 +2205,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collected>`
 
-表示你的应用是否会收集电话号码。
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2143,7 +2217,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-你的应用程序收集电话号码的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2155,7 +2229,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-表示你的应用是否会将电话号码链接到用户的身份。
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2167,7 +2241,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-表示你的应用是否会将电话号码用于追踪。
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2301,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collected>`
 
-表示你的应用是否会收集实际住址。
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2239,7 +2313,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-你的应用收集实际住址的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2251,7 +2325,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-表示你的应用是否会将实际住址链接到用户的身份。
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2337,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-表示你的应用是否会将实际住址用于追踪。
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2563,7 +2637,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/disk_space_access_reasons>`
 
-你的 app 使用磁盘空间清理 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2575,7 +2649,31 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`
 
-你的 app 使用文件时间戳/元数据 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/hand_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`
+
+A message displayed when requesting access to hand tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/hand_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`
+
+A message displayed when requesting access to hand tracking on visionOS (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2733,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/system_boot_time_access_reasons>`
 
-你的 app 使用系统启动时间/绝对时间 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2649,7 +2747,11 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 你的应用程序连接到的参与跟踪的互联网域列表。请参阅 `隐私清单文件 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,7 +2775,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/user_defaults_access_reasons>`
 
-你的 app 使用用户默认值 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 

@@ -152,7 +152,7 @@ NavigationLink2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-Когда поиск пути заходит на эту ссылку из навигационной сетки другого региона, значение :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` добавляется к расстоянию пути для определения кратчайшего пути.
+When pathfinding enters this link from another region's navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
 
 .. rst-class:: classref-item-separator
 

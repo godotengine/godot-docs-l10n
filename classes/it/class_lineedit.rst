@@ -17,73 +17,77 @@ Un campo di input per testo su una sola riga.
 Descrizione
 ----------------------
 
-**LineEdit** fornisce un campo di input per modificare una singola riga di testo.
+**LineEdit** provides an input field for editing a single line of text.
 
-- Quando il controllo **LineEdit** è focalizzato usando i tasti freccia della tastiera, otterrà solo il focus e non entrerà in modalità di modifica.
+- When the **LineEdit** control is focused using the keyboard arrow keys, it will only gain focus and not enter edit mode.
 
-- Per entrare in modalità di modifica, clicca sul controllo con il mouse, vedi anche :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+- To enter edit mode, click on the control with the mouse, see also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
 
-- Per uscire dalla modalità di modifica, premi ``ui_text_submit`` o ``ui_cancel`` (come predefinito le azioni con :kbd:`Escape`).
+- To exit edit mode, press ``ui_text_submit`` or ``ui_cancel`` (by default :kbd:`Escape`) actions.
 
-- Consulta :ref:`edit()<class_LineEdit_method_edit>`, :ref:`unedit()<class_LineEdit_method_unedit>`, :ref:`is_editing()<class_LineEdit_method_is_editing>` e :ref:`editing_toggled<class_LineEdit_signal_editing_toggled>` per maggiori informazioni.
+- Check :ref:`edit()<class_LineEdit_method_edit>`, :ref:`unedit()<class_LineEdit_method_unedit>`, :ref:`is_editing()<class_LineEdit_method_is_editing>`, and :ref:`editing_toggled<class_LineEdit_signal_editing_toggled>` for more information.
 
-Durante l'inserimento del testo, è possibile inserire caratteri speciali attraverso i codici alt Unicode, OEM o Windows:
+While entering text, it is possible to insert special characters using Unicode, OEM or Windows alt codes:
 
-- Per inserire codici Unicode, tenere premuto :kbd:`Alt` e digitare il codice sul tastierino numerico. Ad esempio, per inserire il carattere ``á`` (U+00E1), tenere premuto :kbd:`Alt` e digitare :kbd:`+E1` sul tastierino numerico (gli zeri iniziali si possono omettere).
+- To enter Unicode codepoints, hold :kbd:`Alt` and type the codepoint on the numpad. For example, to enter the character ``á`` (U+00E1), hold :kbd:`Alt` and type :kbd:`+E1` on the numpad (the leading zeroes can be omitted).
 
-- Per inserire codici OEM, tenere premuto :kbd:`Alt` e digitare il codice sul tastierino numerico. Ad esempio, per inserire il carattere ``á`` (OEM 160), tenere premuto :kbd:`Alt` e digitare ``160`` sul tastierino numerico.
+- To enter OEM codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (OEM 160), hold :kbd:`Alt` and type ``160`` on the numpad.
 
-- Per inserire i codici Windows, tenere premuto :kbd:`Alt` e digitare il codice sul tastierino numerico. Ad esempio, per inserire il carattere ``á`` (Windows 0225), tenere premuto :kbd:`Alt` e digitare :kbd:`0`, :kbd:`2`, :kbd:`2`, :kbd:`5` sul tastierino numerico. Lo zero iniziale qui **non** si deve omettere, poiché è questo il modo in cui i codici di Windows si distinguono dai codici OEM.
+- To enter Windows codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (Windows 0225), hold :kbd:`Alt` and type :kbd:`0`, :kbd:`2`, :kbd:`2`, :kbd:`5` on the numpad. The leading zero here must **not** be omitted, as this is how Windows codepoints are distinguished from OEM codepoints.
 
-\ **Importante:**\ 
+\ **Important:**\ 
 
-- Ottenere il focus del **LineEdit** con ``ui_focus_next`` (predefinito su :kbd:`Tab`) o ``ui_focus_prev`` (predefinito su :kbd:`Maiusc + Tab`) o :ref:`Control.grab_focus()<class_Control_method_grab_focus>` attiva comunque la modalità di modifica (per compatibilità).
+- Focusing the **LineEdit** with ``ui_focus_next`` (by default :kbd:`Tab`) or ``ui_focus_prev`` (by default :kbd:`Shift + Tab`) or :ref:`Control.grab_focus()<class_Control_method_grab_focus>` still enters edit mode (for compatibility).
 
-\ **LineEdit** fornisce un campo di input per modificare una singola riga di testo. Include molte scorciatoie integrate che sono sempre disponibili (:kbd:`Ctrl` qui corrisponde a :kbd:`Cmd` su macOS):
+\ **LineEdit** features many built-in shortcuts that are always available (:kbd:`Ctrl` here maps to :kbd:`Cmd` on macOS):
 
-- :kbd:`Ctrl + C`: copia
+- :kbd:`Ctrl + C`: Copy
 
-- :kbd:`Ctrl + X`: taglia
+- :kbd:`Ctrl + X`: Cut
 
-- :kbd:`Ctrl + V` o :kbd:`Ctrl + Y`: incolla/"strappa"
+- :kbd:`Ctrl + V` or :kbd:`Ctrl + Y`: Paste/"yank"
 
-- :kbd:`Ctrl + Z`: annulla
+- :kbd:`Ctrl + Z`: Undo
 
-- :kbd:`Ctrl + ~`: inverti la direzione di input.
+- :kbd:`Ctrl + ~`: Swap input direction.
 
-- :kbd:`Ctrl + Maiusc + Z`: ripeti
+- :kbd:`Ctrl + Shift + Z`: Redo
 
-- :kbd:`Ctrl + U`: elimina il testo dalla posizione del cursore all'inizio della riga
+- :kbd:`Ctrl + U`: Delete text from the caret position to the beginning of the line
 
-- :kbd:`Ctrl + K`: elimina il testo dalla posizione del cursore alla fine della riga
+- :kbd:`Ctrl + K`: Delete text from the caret position to the end of the line
 
-- :kbd:`Ctrl + A`: seleziona tutto il testo
+- :kbd:`Ctrl + A`: Select all text
 
-- :kbd:`Freccia su`/:kbd:`Freccia giù`: sposta il cursore all'inizio/fine della riga
+- :kbd:`Up Arrow`/:kbd:`Down Arrow`: Move the caret to the beginning/end of the line
 
-Su macOS sono disponibili alcune scorciatoie da tastiera aggiuntive:
+On macOS, some extra keyboard shortcuts are available:
 
-- :kbd:`Cmd + F`: uguale a :kbd:`Freccia destra`, sposta il cursore di un carattere a destra
+- :kbd:`Cmd + F`: Same as :kbd:`Right Arrow`, move the caret one character right
 
-- :kbd:`Cmd + B`: uguale a :kbd:`Freccia sinistra`, sposta il cursore di un carattere a sinistra
+- :kbd:`Cmd + B`: Same as :kbd:`Left Arrow`, move the caret one character left
 
-- :kbd:`Cmd + P`: uguale a :kbd:`Freccia su`, sposta il cursore alla riga precedente
+- :kbd:`Cmd + P`: Same as :kbd:`Up Arrow`, move the caret to the previous line
 
-- :kbd:`Cmd + N`: uguale a :kbd:`Freccia giù`, sposta il cursore alla riga successiva
+- :kbd:`Cmd + N`: Same as :kbd:`Down Arrow`, move the caret to the next line
 
-- :kbd:`Cmd + D`: uguale a :kbd:`Elimina`, elimina il carattere sul lato destro del cursore
+- :kbd:`Cmd + D`: Same as :kbd:`Delete`, delete the character on the right side of caret
 
-- :kbd:`Cmd + H`: uguale a :kbd:`Backspace`, elimina il carattere sul lato sinistro del cursore
+- :kbd:`Cmd + H`: Same as :kbd:`Backspace`, delete the character on the left side of the caret
 
-- :kbd:`Cmd + A`: uguale a :kbd:`Home`, sposta il cursore all'inizio della riga
+- :kbd:`Cmd + A`: Same as :kbd:`Home`, move the caret to the beginning of the line
 
-- :kbd:`Cmd + E`: uguale a :kbd:`End`, sposta il cursore alla fine della riga
+- :kbd:`Cmd + E`: Same as :kbd:`End`, move the caret to the end of the line
 
-- :kbd:`Cmd + Freccia sinistra`: uguale a :kbd:`Home`, sposta il cursore all'inizio della riga
+- :kbd:`Cmd + Left Arrow`: Same as :kbd:`Home`, move the caret to the beginning of the line
 
-- :kbd:`Cmd + Freccia destra`: uguale a :kbd:`End`, sposta il cursore alla fine della riga
+- :kbd:`Cmd + Right Arrow`: Same as :kbd:`End`, move the caret to the end of the line
 
-\ **Nota:** Le scorciatoie per il movimento del cursore elencate sopra non sono influenzate da :ref:`shortcut_keys_enabled<class_LineEdit_property_shortcut_keys_enabled>`.
+\ **Note:** Caret movement shortcuts listed above are not affected by :ref:`shortcut_keys_enabled<class_LineEdit_property_shortcut_keys_enabled>`.
+
+.. classref_note::
+
+    Column numbers are *zero-based*, like elements of an array. For example, :ref:`caret_column<class_LineEdit_property_caret_column>` being ``0`` indicates the caret is on the first column (i.e., before the first character).
 
 .. rst-class:: classref-reftable-group
 
@@ -239,43 +243,55 @@ Proprietà del tema
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`caret_color<class_LineEdit_theme_color_caret_color>`                               | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`clear_button_color<class_LineEdit_theme_color_clear_button_color>`                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`clear_button_color_pressed<class_LineEdit_theme_color_clear_button_color_pressed>` | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_color<class_LineEdit_theme_color_font_color>`                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_LineEdit_theme_color_font_outline_color>`                 | ``Color(0, 0, 0, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_placeholder_color<class_LineEdit_theme_color_font_placeholder_color>`         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_selected_color<class_LineEdit_theme_color_font_selected_color>`               | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_uneditable_color<class_LineEdit_theme_color_font_uneditable_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`selection_color<class_LineEdit_theme_color_selection_color>`                       | ``Color(0.5, 0.5, 0.5, 1)``         |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`caret_width<class_LineEdit_theme_constant_caret_width>`                            | ``1``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`minimum_character_width<class_LineEdit_theme_constant_minimum_character_width>`    | ``4``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_LineEdit_theme_constant_outline_size>`                          | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_LineEdit_theme_font_font>`                                              |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_LineEdit_theme_font_size_font_size>`                               |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`clear<class_LineEdit_theme_icon_clear>`                                            |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_LineEdit_theme_style_focus>`                                           |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal<class_LineEdit_theme_style_normal>`                                         |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`read_only<class_LineEdit_theme_style_read_only>`                                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`caret_color<class_LineEdit_theme_color_caret_color>`                               | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`clear_button_color<class_LineEdit_theme_color_clear_button_color>`                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`clear_button_color_pressed<class_LineEdit_theme_color_clear_button_color_pressed>` | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_color<class_LineEdit_theme_color_font_color>`                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_outline_color<class_LineEdit_theme_color_font_outline_color>`                 | ``Color(0, 0, 0, 1)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_placeholder_color<class_LineEdit_theme_color_font_placeholder_color>`         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_selected_color<class_LineEdit_theme_color_font_selected_color>`               | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_uneditable_color<class_LineEdit_theme_color_font_uneditable_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`selection_color<class_LineEdit_theme_color_selection_color>`                       | ``Color(0.5, 0.5, 0.5, 1)``         |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`caret_width<class_LineEdit_theme_constant_caret_width>`                            | ``1``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`minimum_character_width<class_LineEdit_theme_constant_minimum_character_width>`    | ``4``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`outline_size<class_LineEdit_theme_constant_outline_size>`                          | ``0``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Font<class_Font>`               | :ref:`font<class_LineEdit_theme_font_font>`                                              |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`font_size<class_LineEdit_theme_font_size_font_size>`                               |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`clear<class_LineEdit_theme_icon_clear>`                                            |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`caret_move_rejected_sound<class_LineEdit_theme_sound_caret_move_rejected_sound>`   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`caret_moved_sound<class_LineEdit_theme_sound_caret_moved_sound>`                   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_LineEdit_theme_sound_focus_sound>`                               |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`text_change_rejected_sound<class_LineEdit_theme_sound_text_change_rejected_sound>` |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`text_changed_sound<class_LineEdit_theme_sound_text_changed_sound>`                 |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`text_submitted_sound<class_LineEdit_theme_sound_text_submitted_sound>`             |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`focus<class_LineEdit_theme_style_focus>`                                           |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`normal<class_LineEdit_theme_style_normal>`                                         |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`read_only<class_LineEdit_theme_style_read_only>`                                   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -1007,7 +1023,7 @@ Se ``true``, la **LineEdit** non visualizza decorazioni.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Definisce il comportamento di ridimensionamento di :ref:`right_icon<class_LineEdit_property_right_icon>`.
+Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>` and the :ref:`clear<class_LineEdit_theme_icon_clear>` button.
 
 .. rst-class:: classref-item-separator
 
@@ -1877,7 +1893,7 @@ La larghezza del cursore in pixel. È possibile usare valori più grandi per mig
 
 :ref:`int<class_int>` **minimum_character_width** = ``4`` :ref:`🔗<class_LineEdit_theme_constant_minimum_character_width>`
 
-Spazio orizzontale minimo per il testo (senza contare il pulsante di cancellazione e i margini del contenuto). Questo valore è misurato in conteggio di caratteri 'M' (cioè questo numero di caratteri 'M' può essere visualizzato senza scorrere).
+Minimum horizontal space for the text (not counting the clear button and content margins). This value is measured in count of 'W' characters (i.e. this number of 'W' characters can be displayed without scrolling).
 
 .. rst-class:: classref-item-separator
 
@@ -1928,6 +1944,78 @@ Dimensione del font per il testo del **LineEdit**.
 :ref:`Texture2D<class_Texture2D>` **clear** :ref:`🔗<class_LineEdit_theme_icon_clear>`
 
 La texture per il pulsante di cancellazione. Vedi :ref:`clear_button_enabled<class_LineEdit_property_clear_button_enabled>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_caret_move_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **caret_move_rejected_sound** :ref:`🔗<class_LineEdit_theme_sound_caret_move_rejected_sound>`
+
+Played when the caret is attempted to be moved using the arrow keys, :kbd:`Home`, :kbd:`End`, :kbd:`Page Up`, or :kbd:`Page Down`, but the caret doesn't actually move since it's already at the beginning/end of the text.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_caret_moved_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **caret_moved_sound** :ref:`🔗<class_LineEdit_theme_sound_caret_moved_sound>`
+
+Played when the caret is moved using the arrow keys, :kbd:`Home`, :kbd:`End`, :kbd:`Page Up`, :kbd:`Page Down`, or mouse clicks.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_LineEdit_theme_sound_focus_sound>`
+
+Played when this **LineEdit** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_text_change_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **text_change_rejected_sound** :ref:`🔗<class_LineEdit_theme_sound_text_change_rejected_sound>`
+
+Played when a text change is rejected (for instance, when pressing Backspace while there is no text or when :ref:`max_length<class_LineEdit_property_max_length>` is exceeded).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_text_changed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **text_changed_sound** :ref:`🔗<class_LineEdit_theme_sound_text_changed_sound>`
+
+Played when text is successfully changed through keyboard input (physical or virtual).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LineEdit_theme_sound_text_submitted_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **text_submitted_sound** :ref:`🔗<class_LineEdit_theme_sound_text_submitted_sound>`
+
+Played when text is submitted using the ``ui_text_submit`` action.
 
 .. rst-class:: classref-item-separator
 

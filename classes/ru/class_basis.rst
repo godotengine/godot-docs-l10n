@@ -744,9 +744,9 @@ Basis
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-Возвращает этот базис, где каждая ось масштабирована по соответствующему компоненту в заданном ``scale``.
+Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
 
-Столбцы базисной матрицы умножаются на компоненты ``scale``. Эта операция является локальной (относительной) шкалой.
+The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
 
 
 .. tabs::
@@ -760,9 +760,9 @@ Basis
     )
     my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(my_basis.x) # Выводит (0.0, 0.0, 0.0)
-    print(my_basis.y) # Выводит (4.0, 4.0, 4.0)
-    print(my_basis.z) # Выводит (-6.0, -6.0, -6.0)
+    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
+    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
+    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -773,9 +773,9 @@ Basis
     );
     myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // Выводит (0, 0, 0)
-    GD.Print(myBasis.Y); // Выводит (4, 4, 4)
-    GD.Print(myBasis.Z); // Выводит (-6, -6, -6)
+    GD.Print(myBasis.X); // Prints (0, 0, 0)
+    GD.Print(myBasis.Y); // Prints (4, 4, 4)
+    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
 
 
 

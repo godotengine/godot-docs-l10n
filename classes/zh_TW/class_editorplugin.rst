@@ -852,6 +852,8 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
+**已棄用：** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` of a main screen dock.
+
 在你的外掛中覆寫此方法並回傳一個 :ref:`Texture2D<class_Texture2D>`\ （2D紋理），就可以為你的外掛設定一個圖示。
 
 對於主螢幕外掛（Main Screen Plugins）來說，這個圖示會顯示在螢幕頂部的工具列上，位於“2D”、“3D”、“腳本”、“遊戲”和“素材商店”這些按鈕的右側。
@@ -891,9 +893,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-在你的外掛中覆寫此方法，以提供該外掛在 Godot 編輯器中顯示的名稱。
+Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
 
-對於主螢幕外掛（Main Screen Plugins）來說，這個名稱會顯示在螢幕頂部的工具列上，位於“2D”、“3D”、“腳本”、“遊戲”和“素材商店”這些按鈕的右側。
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+
+\ **Note:** Main screen plugins should instead use :ref:`EditorDock.title<class_EditorDock_property_title>` of a main screen dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,32 +1005,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-如果這是一個主螢幕編輯器外掛，則回傳 ``true``\ （它會和工作區選擇器里的 **2D**\ 、\ **3D**\ 、\ **腳本**\ 、\ **遊戲** 以及 **素材商店** 排在一起）。
+**已棄用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_MAIN_SCREEN<class_EditorDock_constant_DOCK_SLOT_MAIN_SCREEN>`.
 
-當該外掛的工作區被選中時，其他主螢幕外掛會被隱藏，但你的外掛並不會自動顯示出來。它需要被新增為 :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` 的子節點，並在 :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` 方法中將其設定為可見。
+Return ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
 
-可以使用 :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` 和 :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` 來自訂外掛按鈕的外觀。
-
-::
-
-    var plugin_control
-
-    func _enter_tree():
-        plugin_control = preload("my_plugin_control.tscn").instantiate()
-        EditorInterface.get_editor_main_screen().add_child(plugin_control)
-        plugin_control.hide()
-
-    func _has_main_screen():
-        return true
-
-    func _make_visible(visible):
-        plugin_control.visible = visible
-
-    func _get_plugin_name():
-        return "My Super Cool Plugin 3000"
-
-    func _get_plugin_icon():
-        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+You can add a main screen dock by using :ref:`EditorDock<class_EditorDock>` with :ref:`EditorDock.DOCK_LAYOUT_MAIN_SCREEN<class_EditorDock_constant_DOCK_LAYOUT_MAIN_SCREEN>` as available layout.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,13 +1131,13 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Button<class_Button>` **add_control_to_bottom_panel**\ (\ control\: :ref:`Control<class_Control>`, title\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>` = null\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_bottom_panel>`
 
-**已棄用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
+**已棄用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_BOTTOM<class_EditorDock_constant_DOCK_SLOT_BOTTOM>`.
 
-將控制項新增到底部面板（與輸出、除錯、動畫等面板並列）。回傳一個按鈕的參照。這個按鈕在場景樹外，需要你視情況自行隱藏/顯示。當外掛停用時，請務必使用 :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` 移除自訂控制項，並使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 將其釋放。
+Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` 為快捷鍵，啟用時將切換底部面板的可見性。此快捷鍵物件僅在該控制項被新增到底部面板時才被設定。
+\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
 
-\ **注意：**\ 請將編輯器設定中預設的底部面板快捷鍵作為設計參考。按照慣例，它們均使用 :kbd:`Alt` 修飾鍵。
+\ **Note:** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use the :kbd:`Alt` modifier.
 
 .. rst-class:: classref-item-separator
 

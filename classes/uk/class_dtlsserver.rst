@@ -210,7 +210,7 @@ DTLSServer
 
 Спробуйте розпочати ручку DTLS із заданою ``udp_peer``, яка повинна бути вже підключена (див. :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`).
 
-\ **Примітка:** Ви повинні перевірити, що стан повернення PacketPeerUDP є :ref:`PacketPeerDTLS. STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_ STATUS_HANDSHAKING>`, оскільки це нормально, що 50% нових з'єднань буде недійсним через обмін cookie.
+\ **Примітка:** Ви повинні перевірити, що стан повернення PacketPeerUDP є :ref:`PacketPeerDTLS.STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_STATUS_HANDSHAKING>`, оскільки це нормально, що 50% нових з'єднань буде недійсним через обмін cookie.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

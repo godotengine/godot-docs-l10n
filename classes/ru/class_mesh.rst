@@ -594,6 +594,14 @@ flags **ArrayFormat**: :ref:`🔗<enum_Mesh_ArrayFormat>`
 
 Флаг, используемый для обозначения того, что сетка использует сжатые атрибуты (вершины, нормали, касательные, UV). Когда включена эта форма сжатия, позиции вершин будут упакованы в атрибут RGBA16UNORM и масштабированы в вершинном шейдере. Нормаль и касательная будут упакованы в RG16UNORM, представляющий ось, и 16-битное число с плавающей точкой, сохраненное в A-канале вершины. UV будут использовать 16-битные нормализованные числа с плавающей точкой вместо полных 32-битных знаковых чисел с плавающей точкой. При использовании этого режима сжатия необходимо использовать либо для вершины, нормали и касательные, либо только вершины. Вы не можете использовать нормали без касательных. Импортеры автоматически включат это сжатие, если смогут.
 
+.. _class_Mesh_constant_ARRAY_FLAG_USE_STORAGE_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_STORAGE_BUFFER** = ``1073741824``
+
+Flag used to mark that the surface's vertex, attribute, skin, and index buffers must be created with the storage-buffer usage bit so they can be bound as storage buffers in compute shaders. This is required to write into them from a compute pipeline through the :ref:`RID<class_RID>`\ s returned by :ref:`RenderingServer.mesh_surface_get_vertex_buffer_rd_rid()<class_RenderingServer_method_mesh_surface_get_vertex_buffer_rd_rid>` and the matching methods for the attribute, skin, and index buffers. Has no effect on the OpenGL backend, which does not expose :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>`\ s.
+
 .. rst-class:: classref-item-separator
 
 ----

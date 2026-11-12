@@ -12,13 +12,13 @@ PackedByteArray
 Описание
 ----------------
 
-Массив, специально разработанный для хранения байтов. Плотно упаковывает данные, экономя память при больших размерах массивов.
+An array specifically designed to hold bytes (integers between ``0`` and ``255``). Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** также предоставляет методы для кодирования/декодирования различных типов в/из байтов. Способ кодирования значений является деталью реализации и не должен использоваться при взаимодействии с внешними приложениями.
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Это *не* относится к встроенным свойствам и методам. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова присвойте его свойству.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
 
-\ **Примечание:** В логическом контексте упакованный массив будет оцениваться как ``false``, если он пуст. В противном случае упакованный массив всегда будет иметь значение ``true``.
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 
@@ -241,7 +241,25 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Создает новый **PackedByteArray**. При желании можно передать общий :ref:`Array<class_Array>`, который будет преобразован.
+Constructs a new **PackedByteArray** from a generic :ref:`Array<class_Array>`.
+
+Boolean ``false`` and ``true`` are converted to ``0`` and ``1`` respectively.
+
+Integers from the generic Array outside the byte range will overflow and roll over.
+
+Floating-point numbers from the generic Array are converted to integers by truncating the decimal part. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Strings from the generic Array are converted to integers using :ref:`String.to_int()<class_String_method_to_int>`, with ``0`` as a fallback value if no integer can be parsed from the string. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Other values from the generic Array that cannot be converted into an integer are initialized to ``0``.
+
+::
+
+    print(PackedByteArray([true, false])) # Prints [1, 0]
+    print(PackedByteArray([-1, 0, 255, 256, 300])) # Prints [255, 0, 255, 0, 44]
+    print(PackedByteArray([-1.0, 0.0, 1.0, 1.9, 2.0, 500.0])) # Prints [255, 0, 1, 1, 2, 244]
+    print(PackedByteArray(["", "10", "123.456", "-1 but valid", "invalid"])) # Prints [0, 10, 123, 255, 0]
+    print(PackedByteArray([Object.new(), Callable(), Signal()])) # Prints [0, 0, 0]
 
 .. rst-class:: classref-section-separator
 
@@ -538,13 +556,13 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress_dynamic**\ (\ max_output_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress_dynamic>`
 
-Возвращает новый **PackedByteArray** с распакованными данными. Установите режим сжатия, используя одну из констант :ref:`CompressionMode<enum_FileAccess_CompressionMode>`. **Этот метод принимает только режимы сжатия brotli, gzip и deflate.**\ 
+Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-Этот метод потенциально медленнее, чем :ref:`decompress()<class_PackedByteArray_method_decompress>`, так как ему может потребоваться повторно выделить свой выходной буфер несколько раз во время распаковки, тогда как :ref:`decompress()<class_PackedByteArray_method_decompress>` знает размер своего выходного буфера с самого начала.
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows the size of its output buffer from the beginning.
 
-GZIP имеет максимальный коэффициент сжатия 1032:1, что означает, что вполне возможно, что небольшая сжатая полезная нагрузка распакуется в потенциально очень большой вывод. Чтобы защититься от этого, вы можете указать максимальный размер, который эта функция может выделить в байтах, с помощью ``max_output_size``. Передача -1 разрешит неограниченный вывод. Если передано любое положительное значение, и распаковка превысит это количество в байтах, будет возвращена ошибка.
+GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
-\ **Примечание:** Не гарантируется, что декомпрессия будет работать с данными, не сжатыми Godot, например, если данные, сжатые с помощью режима сжатия deflate, не имеют контрольной суммы или заголовка.
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +718,7 @@ GZIP имеет максимальный коэффициент сжатия 103
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-Кодирует :ref:`Variant<class_Variant>` по индексу ``byte_offset`` байт. Должно быть выделено достаточно места в зависимости от размера закодированного варианта. Если ``allow_objects`` равно ``false``, значения, полученные из :ref:`Object<class_Object>`, не допускаются и будут сериализованы как только идентификаторы.
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only. Returns the length of the encoded data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +846,7 @@ GZIP имеет максимальный коэффициент сжатия 103
 
 :ref:`String<class_String>` **get_string_from_wchar**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_wchar>`
 
-Преобразует массив широких символов (``wchar_t``, UTF-16 в Windows, UTF-32 на других платформах) в :ref:`String<class_String>`. Возвращает пустую строку, если исходный массив не является допустимой широкой строкой. Это обратный метод :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
+Преобразует массив широких символов (\ ``wchar_t``, UTF-16 в Windows, UTF-32 на других платформах) в :ref:`String<class_String>`. Возвращает пустую строку, если исходный массив не является допустимой широкой строкой. Это обратный метод :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +909,7 @@ GZIP имеет максимальный коэффициент сжатия 103
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_insert>`
 
-Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (``idx == size()``).
+Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +945,7 @@ GZIP имеет максимальный коэффициент сжатия 103
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-Удаляет элемент из массива по индексу.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

@@ -83,6 +83,14 @@ enum **BlendMode**: :ref:`🔗<enum_BlitMaterial_BlendMode>`
 
 无混合模式，直接进行颜色复制。
 
+.. _class_BlitMaterial_constant_BLEND_MODE_PREMULTIPLIED_ALPHA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_PREMULTIPLIED_ALPHA** = ``5``
+
+混合混合模式。假定颜色已预先乘以 Alpha 值（不透明度）。
+
 .. rst-class:: classref-section-separator
 
 ----

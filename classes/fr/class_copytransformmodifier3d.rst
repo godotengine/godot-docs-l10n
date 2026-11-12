@@ -14,27 +14,27 @@ Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` qui applique une transfor
 Description
 -----------
 
-Applique la transformation copiée de l'os défini par :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` à l'os défini par :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` sur l'axe spécifique avec le ré-associe selon quelques options.
+Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
 
-Il y a 4 façons d'appliquer la transformation, selon la combinaison de :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` et :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
+There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
 
-\ **Relatif + Additif :**\ 
+\ **Relative + Additive:**\ 
 
-- Extrait la pose de référence relative au reste et l'ajoute à la pose de l'os appliqué.
+- Extract reference pose relative to the rest and add it to the apply bone's pose.
 
-\ **Relatif + Non Additif :**\ 
+\ **Relative + Not Additive:**\ 
 
-- Extrait la pose de référence relative au reste et l'ajoute au repos de l'os appliqué.
+- Extract reference pose relative to the rest and add it to the apply bone's rest.
 
-\ **Non relatif + Additif :**\ 
+\ **Not Relative + Additive:**\ 
 
-- Extrait la pose de référence de manière absolue et l'ajoute à la pose de l'os appliqué.
+- Extract reference pose absolutely and add it to the apply bone's pose.
 
-\ **Non relatif + Non Additif :**\ 
+\ **Not Relative + Not Additive:**\ 
 
-- Extrait la pose de référence de manière absolue et remplace la pose de l'os appliqué par celle-ci.
+- Extract reference pose absolutely and the apply bone's pose is replaced with it.
 
-\ **Note :** L'option relative n'est disponible que dans le cas :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` est :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. Voir aussi :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **Note:** The relative and global options are only available when :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -77,6 +77,8 @@ Méthodes
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_axis_z_inverted<class_CopyTransformModifier3D_method_is_axis_z_inverted>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                              |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                                        | :ref:`is_global<class_CopyTransformModifier3D_method_is_global>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                                |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_position_copying<class_CopyTransformModifier3D_method_is_position_copying>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                            |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                        | :ref:`is_relative<class_CopyTransformModifier3D_method_is_relative>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                            |
@@ -108,6 +110,8 @@ Méthodes
    | |void|                                                                         | :ref:`set_copy_rotation<class_CopyTransformModifier3D_method_set_copy_rotation>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                     |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                         | :ref:`set_copy_scale<class_CopyTransformModifier3D_method_set_copy_scale>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                           |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                         | :ref:`set_global<class_CopyTransformModifier3D_method_set_global>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                                   |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                         | :ref:`set_invert_flags<class_CopyTransformModifier3D_method_set_invert_flags>`\ (\ index\: :ref:`int<class_int>`, axis_flags\: |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\]\ )       |
    +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -354,6 +358,18 @@ Renvoie ``true`` si les drapeaux d'inversion ont le drapeau pour l'axe Z dans le
 
 ----
 
+.. _class_CopyTransformModifier3D_method_is_global:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_global**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_global>`
+
+Returns ``true`` if the global option is enabled in the setting at ``index``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_CopyTransformModifier3D_method_is_position_copying:
 
 .. rst-class:: classref-method
@@ -408,11 +424,11 @@ Renvoie ``true`` si les drapeaux de copie ont le drapeau pour l'échelle dans le
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_additive>`
 
-Définit l'option Additive dans le paramètre à l'index ``index`` à la valeur ``enabled``. Cela affecte principalement le processus d'application de la transformation à l'os de :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
+Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
 
-Si ``enabled`` est défini à ``true``, la transformation traitée est ajoutée à la pose de l'os appliqué actuel.
+If ``enabled`` is ``true``, the processed transform is added to the pose of the current apply bone.
 
-Si ``enabled`` est défini à ``false``, la pose de l'os appliqué actuel est remplacée par la transformation traitée. Toutefois, si :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` est défini à ``true``, la transformation est relative au repos.
+If ``enabled`` is ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +452,7 @@ Définit les drapeaux pour copier les axes. Si le drapeau est valide, l'axe est 
 
 |void| **set_axis_x_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_enabled>`
 
-Si ``enabled`` vaut ``true``, l'axe X sera copié.
+If ``enabled`` is ``true``, the X-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +464,7 @@ Si ``enabled`` vaut ``true``, l'axe X sera copié.
 
 |void| **set_axis_x_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_inverted>`
 
-Si ``enabled`` vaut ``true``, l'axe X sera inversé.
+If ``enabled`` is ``true``, the X-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +476,7 @@ Si ``enabled`` vaut ``true``, l'axe X sera inversé.
 
 |void| **set_axis_y_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_enabled>`
 
-Si ``enabled`` vaut ``true``, l'axe Y sera copié.
+If ``enabled`` is ``true``, the Y-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +488,7 @@ Si ``enabled`` vaut ``true``, l'axe Y sera copié.
 
 |void| **set_axis_y_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_inverted>`
 
-Si ``enabled`` vaut ``true``, l'axe Y sera inversé.
+If ``enabled`` is ``true``, the Y-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +500,7 @@ Si ``enabled`` vaut ``true``, l'axe Y sera inversé.
 
 |void| **set_axis_z_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_enabled>`
 
-Si ``enabled`` vaut ``true``, l'axe Z sera copié.
+If ``enabled`` is ``true``, the Z-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +512,7 @@ Si ``enabled`` vaut ``true``, l'axe Z sera copié.
 
 |void| **set_axis_z_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_inverted>`
 
-Si ``enabled`` vaut ``true``, l'axe Z sera inversé.
+If ``enabled`` is ``true``, the Z-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +538,7 @@ Définit les drapeaux pour traiter les opérations de transformation. Si le drap
 
 |void| **set_copy_position**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_position>`
 
-Si ``enabled`` est défini à ``true``, la position sera copiée.
+If ``enabled`` is ``true``, the position will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +550,7 @@ Si ``enabled`` est défini à ``true``, la position sera copiée.
 
 |void| **set_copy_rotation**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_rotation>`
 
-Si ``enabled`` est défini à ``true``, la rotation sera copiée.
+If ``enabled`` is ``true``, the rotation will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +562,25 @@ Si ``enabled`` est défini à ``true``, la rotation sera copiée.
 
 |void| **set_copy_scale**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_scale>`
 
-Si ``enabled`` est défini à ``true``, l'échelle sera copiée.
+If ``enabled`` is ``true``, the scale will be copied.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CopyTransformModifier3D_method_set_global:
+
+.. rst-class:: classref-method
+
+|void| **set_global**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_global>`
+
+Sets the global option in the setting at ``index`` to ``enabled``.
+
+If ``enabled`` is ``true``, the global pose of the reference bone is extracted and applied so that the global pose of the apply bone coincides with it.
+
+If ``enabled`` is ``false``, the local pose of the reference bone is extracted and applied to the local pose of the apply bone.
+
+\ **Note:** If the parent of the reference bone has a non-uniform scale, the reference bone is sheared as seen from global space. Since the local pose cannot bring in the shear, the scale may not be applied as intended.
 
 .. rst-class:: classref-item-separator
 
@@ -576,9 +610,9 @@ Définit les drapeaux pour inverser les axes. Si le drapeau est valide, l'axe es
 
 Sets relative option in the setting at ``index`` to ``enabled``.
 
-If sets ``enabled`` to ``true``, the extracted and applying transform is relative to the rest.
+If ``enabled`` is ``true``, the extracted and applying transform is relative to the rest.
 
-If sets ``enabled`` to ``false``, the extracted transform is absolute.
+If ``enabled`` is ``false``, the extracted transform is absolute.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

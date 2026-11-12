@@ -19,7 +19,7 @@ Descrizione
 
 Il nodo **PhysicalBone3D** è un corpo fisico che serve per far reagire le ossa in uno :ref:`Skeleton3D<class_Skeleton3D>` alla fisica.
 
-\ **Nota:** Per rilevare le ossa fisiche con i raycast, la proprietà :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` del :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` genitore deve essere ``true`` e l'osso dello :ref:`Skeleton3D<class_Skeleton3D>` deve essere assegnato correttamente a **PhysicalBone3D**; ciò significa che :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` dovrebbe restituire un ID valido (``>= 0``).
+\ **Nota:** Per rilevare le ossa fisiche con i raycast, la proprietà :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` del :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` genitore deve essere ``true`` e l'osso dello :ref:`Skeleton3D<class_Skeleton3D>` deve essere assegnato correttamente a **PhysicalBone3D**; ciò significa che :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` dovrebbe restituire un ID valido (\ ``>= 0``).
 
 .. rst-class:: classref-introduction-group
 
@@ -86,6 +86,8 @@ Metodi
    | |void|                  | :ref:`apply_impulse<class_PhysicalBone3D_method_apply_impulse>`\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`   | :ref:`get_bone_id<class_PhysicalBone3D_method_get_bone_id>`\ (\ ) |const|                                                                                                   |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`   | :ref:`get_joint_rid<class_PhysicalBone3D_method_get_joint_rid>`\ (\ ) |const|                                                                                               |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`get_simulate_physics<class_PhysicalBone3D_method_get_simulate_physics>`\ (\ )                                                                                         |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -526,6 +528,18 @@ Un impulso è indipendente dal tempo! Applicare un impulso a ogni frame risulter
 :ref:`int<class_int>` **get_bone_id**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_bone_id>`
 
 Restituisce l'identificatore unico del PhysicsBone3D.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PhysicalBone3D_method_get_joint_rid:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_joint_rid**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_joint_rid>`
+
+Restituisce il :ref:`RID<class_RID>` interno del giunto dal :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
 .. rst-class:: classref-item-separator
 

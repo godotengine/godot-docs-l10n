@@ -14,11 +14,9 @@ XRCamera3D
 說明
 ----
 
-一個根據 XR 追蹤資料自動定位自身的相機節點。
+A camera node which automatically positions itself based on XR tracking data.
 
-與 :ref:`XRController3D<class_XRController3D>` 相比，渲染執行緒能夠存取更新的追蹤資料，因此 **XRCamera3D** 節點的位置可能會比用於渲染的位置滯後幾毫秒。
-
-\ **注意：** 如果 :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` 為 ``true``\ ，則大多數相機屬性都會被啟用的 :ref:`XRInterface<class_XRInterface>` 重寫。唯一可信的屬性是近裁面和遠裁面。
+\ **Note:** Due to the nature of headsets, camera positioning needs to update every frame even when your game is paused. :ref:`Node.process_mode<class_Node_property_process_mode>` must be set to :ref:`Node.PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -35,9 +33,37 @@ XRCamera3D
 .. table::
    :widths: auto
 
-   +---------------------------------------------------------------------+----------------------------+-------------------------------------------------------------------------------+
-   | :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` | physics_interpolation_mode | ``2`` (overrides :ref:`Node<class_Node_property_physics_interpolation_mode>`) |
-   +---------------------------------------------------------------------+----------------------------+-------------------------------------------------------------------------------+
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` | physics_interpolation_mode                        | ``2`` (overrides :ref:`Node<class_Node_property_physics_interpolation_mode>`) |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`ProcessMode<enum_Node_ProcessMode>`                           | process_mode                                      | ``3`` (overrides :ref:`Node<class_Node_property_process_mode>`)               |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`                                 | :ref:`tracker<class_XRCamera3D_property_tracker>` | ``&"head"``                                                                   |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+屬性說明
+--------
+
+.. _class_XRCamera3D_property_tracker:
+
+.. rst-class:: classref-property
+
+:ref:`StringName<class_StringName>` **tracker** = ``&"head"`` :ref:`🔗<class_XRCamera3D_property_tracker>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
+- :ref:`StringName<class_StringName>` **get_tracker**\ (\ )
+
+The name of the camera tracker we're bound to. Which trackers are available is not known during design time.
+
+The default tracker refers to the HMD position of the main player. Consult the documentation of the :ref:`XRInterface<class_XRInterface>` for any additional trackers. There may be additional tracked headsets for multiplayer systems or a tracker may be available for a physical camera in a mixed reality scenario.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

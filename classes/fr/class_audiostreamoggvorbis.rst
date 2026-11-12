@@ -189,7 +189,7 @@ Contient les données Ogg brutes pour ce flux.
 
 Contient des tags définis par l'utilisateur si trouvés dans les données Ogg Vorbis.
 
-Les tags couramment utilisés incluent ``title``, ``artist``, ``album``, ``tracknumber``, et ``date`` (``date`` n'a pas un format de data standard).
+Les tags couramment utilisés incluent ``title``, ``artist``, ``album``, ``tracknumber``, et ``date`` (\ ``date`` n'a pas un format de data standard).
 
 \ **Note :** Aucun tag n'est * garanti* d'être présent dans chaque fichier, alors assurez-vous de tenir compte des clés qui n'existent pas toujours.
 

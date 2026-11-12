@@ -26,175 +26,187 @@ Generic6DOFJoint3D
 .. table::
    :widths: auto
 
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/damping<class_Generic6DOFJoint3D_property_angular_limit_x/damping>`                       | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_limit_x/enabled<class_Generic6DOFJoint3D_property_angular_limit_x/enabled>`                       | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/erp<class_Generic6DOFJoint3D_property_angular_limit_x/erp>`                               | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/force_limit<class_Generic6DOFJoint3D_property_angular_limit_x/force_limit>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_x/lower_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/restitution<class_Generic6DOFJoint3D_property_angular_limit_x/restitution>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/softness<class_Generic6DOFJoint3D_property_angular_limit_x/softness>`                     | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_x/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_x/upper_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/damping<class_Generic6DOFJoint3D_property_angular_limit_y/damping>`                       | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_limit_y/enabled<class_Generic6DOFJoint3D_property_angular_limit_y/enabled>`                       | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/erp<class_Generic6DOFJoint3D_property_angular_limit_y/erp>`                               | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/force_limit<class_Generic6DOFJoint3D_property_angular_limit_y/force_limit>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_y/lower_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/restitution<class_Generic6DOFJoint3D_property_angular_limit_y/restitution>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/softness<class_Generic6DOFJoint3D_property_angular_limit_y/softness>`                     | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_y/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_y/upper_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/damping<class_Generic6DOFJoint3D_property_angular_limit_z/damping>`                       | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_limit_z/enabled<class_Generic6DOFJoint3D_property_angular_limit_z/enabled>`                       | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/erp<class_Generic6DOFJoint3D_property_angular_limit_z/erp>`                               | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/force_limit<class_Generic6DOFJoint3D_property_angular_limit_z/force_limit>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_z/lower_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/restitution<class_Generic6DOFJoint3D_property_angular_limit_z/restitution>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/softness<class_Generic6DOFJoint3D_property_angular_limit_z/softness>`                     | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_limit_z/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_z/upper_angle>`               | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_motor_x/enabled<class_Generic6DOFJoint3D_property_angular_motor_x/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_x/force_limit<class_Generic6DOFJoint3D_property_angular_motor_x/force_limit>`               | ``300.0`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_x/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_x/target_velocity>`       | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_motor_y/enabled<class_Generic6DOFJoint3D_property_angular_motor_y/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_y/force_limit<class_Generic6DOFJoint3D_property_angular_motor_y/force_limit>`               | ``300.0`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_y/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_y/target_velocity>`       | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_motor_z/enabled<class_Generic6DOFJoint3D_property_angular_motor_z/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_z/force_limit<class_Generic6DOFJoint3D_property_angular_motor_z/force_limit>`               | ``300.0`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_motor_z/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_z/target_velocity>`       | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_x/damping<class_Generic6DOFJoint3D_property_angular_spring_x/damping>`                     | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_spring_x/enabled<class_Generic6DOFJoint3D_property_angular_spring_x/enabled>`                     | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_x/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_x/equilibrium_point>` | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_x/stiffness<class_Generic6DOFJoint3D_property_angular_spring_x/stiffness>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_y/damping<class_Generic6DOFJoint3D_property_angular_spring_y/damping>`                     | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_spring_y/enabled<class_Generic6DOFJoint3D_property_angular_spring_y/enabled>`                     | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_y/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_y/equilibrium_point>` | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_y/stiffness<class_Generic6DOFJoint3D_property_angular_spring_y/stiffness>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_z/damping<class_Generic6DOFJoint3D_property_angular_spring_z/damping>`                     | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`angular_spring_z/enabled<class_Generic6DOFJoint3D_property_angular_spring_z/enabled>`                     | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_z/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_z/equilibrium_point>` | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`angular_spring_z/stiffness<class_Generic6DOFJoint3D_property_angular_spring_z/stiffness>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_x/damping<class_Generic6DOFJoint3D_property_linear_limit_x/damping>`                         | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_limit_x/enabled<class_Generic6DOFJoint3D_property_linear_limit_x/enabled>`                         | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_x/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_x/lower_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_x/restitution<class_Generic6DOFJoint3D_property_linear_limit_x/restitution>`                 | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_x/softness<class_Generic6DOFJoint3D_property_linear_limit_x/softness>`                       | ``0.7``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_x/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_x/upper_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_y/damping<class_Generic6DOFJoint3D_property_linear_limit_y/damping>`                         | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_limit_y/enabled<class_Generic6DOFJoint3D_property_linear_limit_y/enabled>`                         | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_y/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_y/lower_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_y/restitution<class_Generic6DOFJoint3D_property_linear_limit_y/restitution>`                 | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_y/softness<class_Generic6DOFJoint3D_property_linear_limit_y/softness>`                       | ``0.7``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_y/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_y/upper_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_z/damping<class_Generic6DOFJoint3D_property_linear_limit_z/damping>`                         | ``1.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_limit_z/enabled<class_Generic6DOFJoint3D_property_linear_limit_z/enabled>`                         | ``true``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_z/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_z/lower_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_z/restitution<class_Generic6DOFJoint3D_property_linear_limit_z/restitution>`                 | ``0.5``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_z/softness<class_Generic6DOFJoint3D_property_linear_limit_z/softness>`                       | ``0.7``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_limit_z/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_z/upper_distance>`           | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_motor_x/enabled<class_Generic6DOFJoint3D_property_linear_motor_x/enabled>`                         | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_x/force_limit<class_Generic6DOFJoint3D_property_linear_motor_x/force_limit>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_x/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_x/target_velocity>`         | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_motor_y/enabled<class_Generic6DOFJoint3D_property_linear_motor_y/enabled>`                         | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_y/force_limit<class_Generic6DOFJoint3D_property_linear_motor_y/force_limit>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_y/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_y/target_velocity>`         | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_motor_z/enabled<class_Generic6DOFJoint3D_property_linear_motor_z/enabled>`                         | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_z/force_limit<class_Generic6DOFJoint3D_property_linear_motor_z/force_limit>`                 | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_motor_z/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_z/target_velocity>`         | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_x/damping<class_Generic6DOFJoint3D_property_linear_spring_x/damping>`                       | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_spring_x/enabled<class_Generic6DOFJoint3D_property_linear_spring_x/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_x/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_x/equilibrium_point>`   | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_x/stiffness<class_Generic6DOFJoint3D_property_linear_spring_x/stiffness>`                   | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_y/damping<class_Generic6DOFJoint3D_property_linear_spring_y/damping>`                       | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_spring_y/enabled<class_Generic6DOFJoint3D_property_linear_spring_y/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_y/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_y/equilibrium_point>`   | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_y/stiffness<class_Generic6DOFJoint3D_property_linear_spring_y/stiffness>`                   | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_z/damping<class_Generic6DOFJoint3D_property_linear_spring_z/damping>`                       | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`   | :ref:`linear_spring_z/enabled<class_Generic6DOFJoint3D_property_linear_spring_z/enabled>`                       | ``false`` |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_z/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_z/equilibrium_point>`   | ``0.0``   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>` | :ref:`linear_spring_z/stiffness<class_Generic6DOFJoint3D_property_linear_spring_z/stiffness>`                   | ``0.01``  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-----------+
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_drive_x/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_x/torque_limit>`             | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_drive_y/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_y/torque_limit>`             | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_drive_z/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_z/torque_limit>`             | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/damping<class_Generic6DOFJoint3D_property_angular_limit_x/damping>`                       | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_limit_x/enabled<class_Generic6DOFJoint3D_property_angular_limit_x/enabled>`                       | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/erp<class_Generic6DOFJoint3D_property_angular_limit_x/erp>`                               | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/force_limit<class_Generic6DOFJoint3D_property_angular_limit_x/force_limit>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_x/lower_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/restitution<class_Generic6DOFJoint3D_property_angular_limit_x/restitution>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/softness<class_Generic6DOFJoint3D_property_angular_limit_x/softness>`                     | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_x/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_x/upper_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/damping<class_Generic6DOFJoint3D_property_angular_limit_y/damping>`                       | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_limit_y/enabled<class_Generic6DOFJoint3D_property_angular_limit_y/enabled>`                       | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/erp<class_Generic6DOFJoint3D_property_angular_limit_y/erp>`                               | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/force_limit<class_Generic6DOFJoint3D_property_angular_limit_y/force_limit>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_y/lower_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/restitution<class_Generic6DOFJoint3D_property_angular_limit_y/restitution>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/softness<class_Generic6DOFJoint3D_property_angular_limit_y/softness>`                     | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_y/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_y/upper_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/damping<class_Generic6DOFJoint3D_property_angular_limit_z/damping>`                       | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_limit_z/enabled<class_Generic6DOFJoint3D_property_angular_limit_z/enabled>`                       | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/erp<class_Generic6DOFJoint3D_property_angular_limit_z/erp>`                               | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/force_limit<class_Generic6DOFJoint3D_property_angular_limit_z/force_limit>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/lower_angle<class_Generic6DOFJoint3D_property_angular_limit_z/lower_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/restitution<class_Generic6DOFJoint3D_property_angular_limit_z/restitution>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/softness<class_Generic6DOFJoint3D_property_angular_limit_z/softness>`                     | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_limit_z/upper_angle<class_Generic6DOFJoint3D_property_angular_limit_z/upper_angle>`               | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_motor_x/enabled<class_Generic6DOFJoint3D_property_angular_motor_x/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_x/force_limit<class_Generic6DOFJoint3D_property_angular_motor_x/force_limit>`               | ``300.0``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_x/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_x/target_velocity>`       | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_motor_y/enabled<class_Generic6DOFJoint3D_property_angular_motor_y/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_y/force_limit<class_Generic6DOFJoint3D_property_angular_motor_y/force_limit>`               | ``300.0``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_y/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_y/target_velocity>`       | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_motor_z/enabled<class_Generic6DOFJoint3D_property_angular_motor_z/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_z/force_limit<class_Generic6DOFJoint3D_property_angular_motor_z/force_limit>`               | ``300.0``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_motor_z/target_velocity<class_Generic6DOFJoint3D_property_angular_motor_z/target_velocity>`       | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_x/damping<class_Generic6DOFJoint3D_property_angular_spring_x/damping>`                     | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_spring_x/enabled<class_Generic6DOFJoint3D_property_angular_spring_x/enabled>`                     | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_x/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_x/equilibrium_point>` | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_x/stiffness<class_Generic6DOFJoint3D_property_angular_spring_x/stiffness>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_y/damping<class_Generic6DOFJoint3D_property_angular_spring_y/damping>`                     | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_spring_y/enabled<class_Generic6DOFJoint3D_property_angular_spring_y/enabled>`                     | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_y/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_y/equilibrium_point>` | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_y/stiffness<class_Generic6DOFJoint3D_property_angular_spring_y/stiffness>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_z/damping<class_Generic6DOFJoint3D_property_angular_spring_z/damping>`                     | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`angular_spring_z/enabled<class_Generic6DOFJoint3D_property_angular_spring_z/enabled>`                     | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_z/equilibrium_point<class_Generic6DOFJoint3D_property_angular_spring_z/equilibrium_point>` | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`angular_spring_z/stiffness<class_Generic6DOFJoint3D_property_angular_spring_z/stiffness>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_drive_x/force_limit<class_Generic6DOFJoint3D_property_linear_drive_x/force_limit>`                 | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_drive_y/force_limit<class_Generic6DOFJoint3D_property_linear_drive_y/force_limit>`                 | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_drive_z/force_limit<class_Generic6DOFJoint3D_property_linear_drive_z/force_limit>`                 | ``3.4028235e+38`` |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_x/damping<class_Generic6DOFJoint3D_property_linear_limit_x/damping>`                         | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_limit_x/enabled<class_Generic6DOFJoint3D_property_linear_limit_x/enabled>`                         | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_x/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_x/lower_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_x/restitution<class_Generic6DOFJoint3D_property_linear_limit_x/restitution>`                 | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_x/softness<class_Generic6DOFJoint3D_property_linear_limit_x/softness>`                       | ``0.7``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_x/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_x/upper_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_y/damping<class_Generic6DOFJoint3D_property_linear_limit_y/damping>`                         | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_limit_y/enabled<class_Generic6DOFJoint3D_property_linear_limit_y/enabled>`                         | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_y/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_y/lower_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_y/restitution<class_Generic6DOFJoint3D_property_linear_limit_y/restitution>`                 | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_y/softness<class_Generic6DOFJoint3D_property_linear_limit_y/softness>`                       | ``0.7``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_y/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_y/upper_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_z/damping<class_Generic6DOFJoint3D_property_linear_limit_z/damping>`                         | ``1.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_limit_z/enabled<class_Generic6DOFJoint3D_property_linear_limit_z/enabled>`                         | ``true``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_z/lower_distance<class_Generic6DOFJoint3D_property_linear_limit_z/lower_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_z/restitution<class_Generic6DOFJoint3D_property_linear_limit_z/restitution>`                 | ``0.5``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_z/softness<class_Generic6DOFJoint3D_property_linear_limit_z/softness>`                       | ``0.7``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_limit_z/upper_distance<class_Generic6DOFJoint3D_property_linear_limit_z/upper_distance>`           | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_motor_x/enabled<class_Generic6DOFJoint3D_property_linear_motor_x/enabled>`                         | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_x/force_limit<class_Generic6DOFJoint3D_property_linear_motor_x/force_limit>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_x/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_x/target_velocity>`         | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_motor_y/enabled<class_Generic6DOFJoint3D_property_linear_motor_y/enabled>`                         | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_y/force_limit<class_Generic6DOFJoint3D_property_linear_motor_y/force_limit>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_y/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_y/target_velocity>`         | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_motor_z/enabled<class_Generic6DOFJoint3D_property_linear_motor_z/enabled>`                         | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_z/force_limit<class_Generic6DOFJoint3D_property_linear_motor_z/force_limit>`                 | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_motor_z/target_velocity<class_Generic6DOFJoint3D_property_linear_motor_z/target_velocity>`         | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_x/damping<class_Generic6DOFJoint3D_property_linear_spring_x/damping>`                       | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_spring_x/enabled<class_Generic6DOFJoint3D_property_linear_spring_x/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_x/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_x/equilibrium_point>`   | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_x/stiffness<class_Generic6DOFJoint3D_property_linear_spring_x/stiffness>`                   | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_y/damping<class_Generic6DOFJoint3D_property_linear_spring_y/damping>`                       | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_spring_y/enabled<class_Generic6DOFJoint3D_property_linear_spring_y/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_y/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_y/equilibrium_point>`   | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_y/stiffness<class_Generic6DOFJoint3D_property_linear_spring_y/stiffness>`                   | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_z/damping<class_Generic6DOFJoint3D_property_linear_spring_z/damping>`                       | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`   | :ref:`linear_spring_z/enabled<class_Generic6DOFJoint3D_property_linear_spring_z/enabled>`                       | ``false``         |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_z/equilibrium_point<class_Generic6DOFJoint3D_property_linear_spring_z/equilibrium_point>`   | ``0.0``           |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>` | :ref:`linear_spring_z/stiffness<class_Generic6DOFJoint3D_property_linear_spring_z/stiffness>`                   | ``0.01``          |
+   +---------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -204,31 +216,39 @@ Generic6DOFJoint3D
 .. table::
    :widths: auto
 
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`   | :ref:`get_flag_x<class_Generic6DOFJoint3D_method_get_flag_x>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`   | :ref:`get_flag_y<class_Generic6DOFJoint3D_method_get_flag_y>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`   | :ref:`get_flag_z<class_Generic6DOFJoint3D_method_get_flag_z>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>` | :ref:`get_param_x<class_Generic6DOFJoint3D_method_get_param_x>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>` | :ref:`get_param_y<class_Generic6DOFJoint3D_method_get_param_y>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>` | :ref:`get_param_z<class_Generic6DOFJoint3D_method_get_param_z>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_flag_x<class_Generic6DOFJoint3D_method_set_flag_x>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_flag_y<class_Generic6DOFJoint3D_method_set_flag_y>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_flag_z<class_Generic6DOFJoint3D_method_set_flag_z>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_param_x<class_Generic6DOFJoint3D_method_set_param_x>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_param_y<class_Generic6DOFJoint3D_method_set_param_y>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                    | :ref:`set_param_z<class_Generic6DOFJoint3D_method_set_param_z>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
-   +---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`clear_angular_target_rotation<class_Generic6DOFJoint3D_method_clear_angular_target_rotation>`\ (\ )                                                     |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Quaternion<class_Quaternion>` | :ref:`get_angular_target_rotation<class_Generic6DOFJoint3D_method_get_angular_target_rotation>`\ (\ ) |const|                                                 |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`get_flag_x<class_Generic6DOFJoint3D_method_get_flag_x>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`get_flag_y<class_Generic6DOFJoint3D_method_get_flag_y>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`get_flag_z<class_Generic6DOFJoint3D_method_get_flag_z>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|                                 |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`           | :ref:`get_param_x<class_Generic6DOFJoint3D_method_get_param_x>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`           | :ref:`get_param_y<class_Generic6DOFJoint3D_method_get_param_y>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`           | :ref:`get_param_z<class_Generic6DOFJoint3D_method_get_param_z>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|                            |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`has_target_rotation<class_Generic6DOFJoint3D_method_has_target_rotation>`\ (\ ) |const|                                                                 |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_angular_target_rotation<class_Generic6DOFJoint3D_method_set_angular_target_rotation>`\ (\ target_rotation\: :ref:`Quaternion<class_Quaternion>`\ )  |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_flag_x<class_Generic6DOFJoint3D_method_set_flag_x>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_flag_y<class_Generic6DOFJoint3D_method_set_flag_y>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_flag_z<class_Generic6DOFJoint3D_method_set_flag_z>`\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )        |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_param_x<class_Generic6DOFJoint3D_method_set_param_x>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_param_y<class_Generic6DOFJoint3D_method_set_param_y>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`set_param_z<class_Generic6DOFJoint3D_method_set_param_z>`\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -299,6 +319,8 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_MOTOR_FORCE_LIMIT** = ``6``
 
+**Застаріло:** Use :ref:`PARAM_LINEAR_DRIVE_FORCE_LIMIT<class_Generic6DOFJoint3D_constant_PARAM_LINEAR_DRIVE_FORCE_LIMIT>` instead, which applies in both spring and motor modes.
+
 Максимальна сила лінійного двигуна буде застосовуватися при спробі досягнення цілей швидкості.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_SPRING_STIFFNESS:
@@ -309,7 +331,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -321,7 +343,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -333,7 +355,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -407,6 +429,8 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_MOTOR_FORCE_LIMIT** = ``18``
 
+**Застаріло:** Use :ref:`PARAM_ANGULAR_DRIVE_TORQUE_LIMIT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_DRIVE_TORQUE_LIMIT>` instead, which applies in both spring and motor modes.
+
 Максимальне прискорення двигуна на осі.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_STIFFNESS:
@@ -417,7 +441,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -429,7 +453,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -441,15 +465,39 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
+
+.. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_DRIVE_FORCE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_DRIVE_FORCE_LIMIT** = ``22``
+
+The maximum force the joint can apply along this linear axis.
+
+Used by both the spring drive and the linear motor; supersedes :ref:`PARAM_LINEAR_MOTOR_FORCE_LIMIT<class_Generic6DOFJoint3D_constant_PARAM_LINEAR_MOTOR_FORCE_LIMIT>` when set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_DRIVE_TORQUE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_DRIVE_TORQUE_LIMIT** = ``23``
+
+The maximum torque the joint can apply around this angular axis.
+
+Used by both the spring drive and the angular motor; supersedes :ref:`PARAM_ANGULAR_MOTOR_FORCE_LIMIT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_MOTOR_FORCE_LIMIT>` when set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_MAX** = ``22``
+:ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_MAX** = ``24``
 
 Представляємо розмір параметра :ref:`Param<enum_Generic6DOFJoint3D_Param>`.
 
@@ -487,7 +535,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -499,9 +547,17 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
+
+.. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_ANGULAR_MOTOR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_ANGULAR_MOTOR** = ``4``
+
+If enabled, there is a rotational or angular motor across these axes.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_MOTOR:
 
@@ -509,7 +565,9 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_MOTOR** = ``4``
 
-Якщо увімкнено, є обертальний двигун через ці осі.
+**Застаріло:** Use :ref:`FLAG_ENABLE_ANGULAR_MOTOR<class_Generic6DOFJoint3D_constant_FLAG_ENABLE_ANGULAR_MOTOR>` instead.
+
+If enabled, there is a rotational or angular motor across these axes.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_LINEAR_MOTOR:
 
@@ -535,6 +593,63 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 Описи властивостей
 ------------------------------------
+
+.. _class_Generic6DOFJoint3D_property_angular_drive_x/torque_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **angular_drive_x/torque_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_angular_drive_x/torque_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum torque the joint can apply around the X angular axis. Used by both the spring drive and the angular motor; supersedes :ref:`angular_motor_x/force_limit<class_Generic6DOFJoint3D_property_angular_motor_x/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_property_angular_drive_y/torque_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **angular_drive_y/torque_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_angular_drive_y/torque_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum torque the joint can apply around the Y angular axis. Used by both the spring drive and the angular motor; supersedes :ref:`angular_motor_y/force_limit<class_Generic6DOFJoint3D_property_angular_motor_y/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_property_angular_drive_z/torque_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **angular_drive_z/torque_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_angular_drive_z/torque_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum torque the joint can apply around the Z angular axis. Used by both the spring drive and the angular motor; supersedes :ref:`angular_motor_z/force_limit<class_Generic6DOFJoint3D_property_angular_motor_z/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_Generic6DOFJoint3D_property_angular_limit_x/damping:
 
@@ -974,6 +1089,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
+**Застаріло:** Use :ref:`angular_drive_x/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_x/torque_limit>` instead, which applies in both spring and motor modes.
+
 Максимальне прискорення двигуна на осі X.
 
 .. rst-class:: classref-item-separator
@@ -1024,6 +1141,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+**Застаріло:** Use :ref:`angular_drive_y/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_y/torque_limit>` instead, which applies in both spring and motor modes.
 
 Максимальне прискорення двигуна в осі Y.
 
@@ -1076,6 +1195,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
+**Застаріло:** Use :ref:`angular_drive_z/torque_limit<class_Generic6DOFJoint3D_property_angular_drive_z/torque_limit>` instead, which applies in both spring and motor modes.
+
 Максимальне прискорення двигуна при осі Z.
 
 .. rst-class:: classref-item-separator
@@ -1112,7 +1233,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1252,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1150,7 +1271,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1169,7 +1290,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1309,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1207,7 +1328,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1226,7 +1347,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1245,7 +1366,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1264,7 +1385,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1283,7 +1404,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1302,7 +1423,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1321,7 +1442,64 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_property_linear_drive_x/force_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **linear_drive_x/force_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_linear_drive_x/force_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum force the joint can apply along the X linear axis. Used by both the spring drive and the linear motor; supersedes :ref:`linear_motor_x/force_limit<class_Generic6DOFJoint3D_property_linear_motor_x/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_property_linear_drive_y/force_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **linear_drive_y/force_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_linear_drive_y/force_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum force the joint can apply along the Y linear axis. Used by both the spring drive and the linear motor; supersedes :ref:`linear_motor_y/force_limit<class_Generic6DOFJoint3D_property_linear_motor_y/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_property_linear_drive_z/force_limit:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **linear_drive_z/force_limit** = ``3.4028235e+38`` :ref:`🔗<class_Generic6DOFJoint3D_property_linear_drive_z/force_limit>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+The maximum force the joint can apply along the Z linear axis. Used by both the spring drive and the linear motor; supersedes :ref:`linear_motor_z/force_limit<class_Generic6DOFJoint3D_property_linear_motor_z/force_limit>` when explicitly set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
 
 .. rst-class:: classref-item-separator
 
@@ -1661,6 +1839,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
+**Застаріло:** Use :ref:`linear_drive_x/force_limit<class_Generic6DOFJoint3D_property_linear_drive_x/force_limit>` instead, which applies in both spring and motor modes.
+
 Максимальна сила лінійного двигуна може застосовуватися на осі X, намагаючись досягти цільової швидкості.
 
 .. rst-class:: classref-item-separator
@@ -1711,6 +1891,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
+
+**Застаріло:** Use :ref:`linear_drive_y/force_limit<class_Generic6DOFJoint3D_property_linear_drive_y/force_limit>` instead, which applies in both spring and motor modes.
 
 Максимальна сила лінійного двигуна може застосовуватися на осі Y, намагаючись досягти цільової швидкості.
 
@@ -1763,6 +1945,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
+**Застаріло:** Use :ref:`linear_drive_z/force_limit<class_Generic6DOFJoint3D_property_linear_drive_z/force_limit>` instead, which applies in both spring and motor modes.
+
 Максимальна сила лінійного двигуна може застосовуватися на осі Z, намагаючись досягти цільової швидкості.
 
 .. rst-class:: classref-item-separator
@@ -1799,7 +1983,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1818,7 +2002,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1837,7 +2021,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1856,7 +2040,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1875,7 +2059,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1894,7 +2078,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1913,7 +2097,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1932,7 +2116,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +2135,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1970,7 +2154,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -1989,7 +2173,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2008,7 +2192,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-section-separator
 
@@ -2019,6 +2203,30 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 Описи методів
 --------------------------
 
+.. _class_Generic6DOFJoint3D_method_clear_angular_target_rotation:
+
+.. rst-class:: classref-method
+
+|void| **clear_angular_target_rotation**\ (\ ) :ref:`🔗<class_Generic6DOFJoint3D_method_clear_angular_target_rotation>`
+
+Clears the quaternion angular target. After clearing, the joint is driven by :ref:`PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT>` on each axis as configured.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_method_get_angular_target_rotation:
+
+.. rst-class:: classref-method
+
+:ref:`Quaternion<class_Quaternion>` **get_angular_target_rotation**\ (\ ) |const| :ref:`🔗<class_Generic6DOFJoint3D_method_get_angular_target_rotation>`
+
+Returns the joint's current angular target as a body-space quaternion. If no explicit target was set via :ref:`set_angular_target_rotation()<class_Generic6DOFJoint3D_method_set_angular_target_rotation>`, the value is derived from :ref:`PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT>` on backends that support it; other backends return the identity quaternion.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Generic6DOFJoint3D_method_get_flag_x:
 
 .. rst-class:: classref-method
@@ -2027,7 +2235,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2041,7 +2249,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2055,7 +2263,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2069,7 +2277,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2291,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2097,7 +2305,33 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_method_has_target_rotation:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_target_rotation**\ (\ ) |const| :ref:`🔗<class_Generic6DOFJoint3D_method_has_target_rotation>`
+
+Returns ``true`` if a quaternion angular target was explicitly set via :ref:`set_angular_target_rotation()<class_Generic6DOFJoint3D_method_set_angular_target_rotation>` and has not been cleared. Returns ``false`` when the joint is driven by :ref:`PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT>` only.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Generic6DOFJoint3D_method_set_angular_target_rotation:
+
+.. rst-class:: classref-method
+
+|void| **set_angular_target_rotation**\ (\ target_rotation\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Generic6DOFJoint3D_method_set_angular_target_rotation>`
+
+Sets the target angular orientation as a body-space quaternion describing the desired orientation of body B relative to body A. Replaces any previously set target and supersedes :ref:`PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT<class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT>` until :ref:`clear_angular_target_rotation()<class_Generic6DOFJoint3D_method_clear_angular_target_rotation>` is called.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
 
 .. rst-class:: classref-item-separator
 
@@ -2111,7 +2345,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2125,7 +2359,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2139,7 +2373,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2153,7 +2387,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2167,7 +2401,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2181,7 +2415,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

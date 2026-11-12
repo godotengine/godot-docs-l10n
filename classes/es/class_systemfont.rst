@@ -158,7 +158,11 @@ Si se establece en ``true``, se prefiere la fuente cursiva u oblicua.
 
 Array de nombres de familias de fuentes a buscar, se utiliza la primera fuente encontrada que coincida.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

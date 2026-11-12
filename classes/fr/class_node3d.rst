@@ -1078,7 +1078,7 @@ Ajoute la translation ``offset`` donnée à la position du nœud, dans l'espace 
 
 \ **Note :** Préférez utiliser :ref:`translate_object_local()<class_Node3D_method_translate_object_local>`, car cette méthode peut être changée dans une version future.
 
-\ **Note :** Malgré la convention de dénomination, cette opération n'est **pas** calculée dans l'espace parent pour des raisons de compatibilité. Pour translater dans l'espace parent, ajoutez ``offset`` à la :ref:`position<class_Node3D_property_position>` (``node_3d.position += offset``).
+\ **Note :** Malgré la convention de dénomination, cette opération n'est **pas** calculée dans l'espace parent pour des raisons de compatibilité. Pour translater dans l'espace parent, ajoutez ``offset`` à la :ref:`position<class_Node3D_property_position>` (\ ``node_3d.position += offset``).
 
 .. rst-class:: classref-item-separator
 

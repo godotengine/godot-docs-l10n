@@ -14,15 +14,15 @@ HTTPRequest
 描述
 ----
 
-一个具备发送 HTTP 请求能力的节点。它在内部使用了 :ref:`HTTPClient<class_HTTPClient>`\ 。
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-可用于发起 HTTP 请求，例如通过 HTTP 下载或上传文件及网页内容。
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **警告：** 关于各种限制（尤其是 TLS 安全性方面），请参阅 :ref:`HTTPClient<class_HTTPClient>` 上的相关说明和警告。
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **注意：** 导出到 Android 平台时，请务必在导出项目或使用一键部署之前，在 Android 导出预设中启用 ``INTERNET``\ （网络访问）权限。否则，Android 系统会拦截任何形式的网络通信。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **示例：** 调用一个 REST API 并打印其返回的其中一个字段：
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,52 +30,52 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点，并连接它的完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行一个 GET 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
+        # Perform a GET request. The URL below returns JSON as of writing.
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # 执行一个 POST 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
-        # 注意：不要使用单个 HTTPRequest 节点同时发起多个请求。
-        # 下面提供的代码片段仅供参考。
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
         var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时被调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # 将打印出 HTTPRequest 节点所使用的用户代理字符串（该字符串由 httpbin.org 识别）。
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点，并连接它的完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行一个 GET 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
+        // Perform a GET request. The URL below returns JSON as of writing.
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
             GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // 执行一个 POST 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
-        // 注意：不要使用单个 HTTPRequest 节点同时发起多个请求。
-        // 下面提供的代码片段仅供参考。
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
         string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -87,20 +87,20 @@ HTTPRequest
         }
     }
 
-    // 在 HTTP 请求完成时被调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // 将打印出 HTTPRequest 节点所使用的用户代理字符串（该字符串由 httpbin.org 识别）。
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **示例：** 使用 **HTTPRequest** 加载一张图片并显示它：
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,17 +108,17 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点，并连接它的完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行 HTTP 请求。编写（这段代码）时，下方的 URL 会返回一张 PNG 格式的图片。
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时被调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
             push_error("Image couldn't be downloaded. Try a different image.")
@@ -130,7 +130,7 @@ HTTPRequest
 
         var texture = ImageTexture.create_from_image(image)
 
-        # 在 TextureRect 节点中显示这张图片。
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,12 +139,12 @@ HTTPRequest
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点，并连接它的完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行 HTTP 请求。在编写（这段代码）时，下方的 URL 会返回一张 PNG 格式的图片。
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
@@ -152,7 +152,7 @@ HTTPRequest
         }
     }
 
-    // 当 HTTP 请求完成时被调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
@@ -168,7 +168,7 @@ HTTPRequest
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // 在 TextureRect 节点中显示这张图片。
+        // Display the image in a TextureRect node.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ HTTPRequest
 
 
 
-\ **注意：** **HTTPRequest** 节点会自动处理响应体（response bodies）的解压缩。除非你已经手动指定了，否则引擎会自动为你发出的每一个请求添加一个 ``Accept-Encoding`` 请求头。因此，任何带有 ``Content-Encoding: gzip`` 响应头的返回数据，都会被自动解压缩，并以未压缩的字节形式直接交给你。
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 
@@ -195,21 +195,25 @@ HTTPRequest
 .. table::
    :widths: auto
 
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                 | ``true``  |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`         | ``-1``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>` | ``65536`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`             | ``""``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`             | ``8``     |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                         | ``0.0``   |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                 | ``false`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                         | ``true``  |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`                 | ``-1``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>`         | ``65536`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`                     | ``""``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`     | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`                     | ``8``     |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                                 | ``0.0``   |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                         | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -415,6 +419,25 @@ HTTPRequest 无法写入下载文件。
 
 ----
 
+.. _class_HTTPRequest_property_append_to_download_file:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **append_to_download_file** = ``false`` :ref:`🔗<class_HTTPRequest_property_append_to_download_file>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_append_to_download_file**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_appending_to_download_file**\ (\ )
+
+If ``true`` and the server responds with HTTP status code ``206 Partial Content``, the response body will be appended to the existing :ref:`download_file<class_HTTPRequest_property_download_file>` instead of overwriting it. If the server responds with ``200 OK`` (e.g. if it does not support range requests), the file will be overwritten as usual.
+
+This is useful for resuming interrupted downloads when used together with an HTTP ``Range`` header in the request. See also :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_HTTPRequest_property_body_size_limit:
 
 .. rst-class:: classref-property
@@ -463,6 +486,25 @@ HTTPRequest 无法写入下载文件。
 - :ref:`String<class_String>` **get_download_file**\ (\ )
 
 要下载到的文件。将任何接收到的文件输出到其中。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HTTPRequest_property_keep_partial_download:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **keep_partial_download** = ``false`` :ref:`🔗<class_HTTPRequest_property_keep_partial_download>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_keep_partial_download**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_keeping_partial_download**\ (\ )
+
+If ``true``, the partially downloaded file set via :ref:`download_file<class_HTTPRequest_property_download_file>` will not be deleted when the request fails or is canceled. This allows resuming an interrupted download later by sending a new request with an HTTP ``Range`` header and :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` set to ``true``.
+
+If ``false`` (the default), incomplete download files are automatically deleted on failure or cancellation.
 
 .. rst-class:: classref-item-separator
 

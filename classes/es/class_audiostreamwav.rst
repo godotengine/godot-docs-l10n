@@ -184,7 +184,11 @@ Contiene los datos de audio en bytes.
 
 \ **Nota:** Si :ref:`format<class_AudioStreamWAV_property_format>` está configurado en :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`, esta propiedad espera datos de un archivo QOA completo.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +313,7 @@ Si es ``true``, el audio es estéreo.
 
 Contiene las etiquetas definidas por el usuario si se encuentran en los datos WAV.
 
-Las etiquetas más comunes incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (``date`` no tiene un formato de fecha estándar).
+Las etiquetas más comunes incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (\ ``date`` no tiene un formato de fecha estándar).
 
 \ **Nota:** Ninguna etiqueta está *garantizada* en todos los archivos, por lo que se debe tener en cuenta que las claves pueden no existir siempre.
 

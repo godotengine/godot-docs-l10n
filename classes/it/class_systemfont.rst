@@ -158,7 +158,11 @@ Se impostato su ``true``, i font in italico o in obliquo sono preferiti.
 
 Array di nomi di famiglie di font da ricercare; è utilizzato il primo font corrispondente.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

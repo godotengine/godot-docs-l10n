@@ -546,7 +546,7 @@ Données additionnelles ajoutées à la section ``<dict>`` racine afin d'obtenir
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple Team ID, chaîne unique de 10 caractères. Pour localiser votre Team ID, regardez "Membership details" dans votre tableau de bord du compte de développeur Apple, ou "Organizational Unit" de votre certificat de signature de code. Voir `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Apple Team ID, chaîne unique de 10 caractères. Pour localiser votre Team ID, r
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformIOS_property_application/bundle_identifier>`
 
-Identificateur d'application unique dans un format DNS inverse, ne peut contenir que des caractères alphanumériques (``A-Z``, ``a-z``, et ``0-9``), des traits d'union (``-``), et des points (``.``).
+Identificateur d'application unique dans un format DNS inverse, ne peut contenir que des caractères alphanumériques (\ ``A-Z``, ``a-z``, et ``0-9``), des traits d'union (\ ``-``), et des points (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ Méthode d'interpolation utilisée pour redimensionner l'icône de l'application
 
 :ref:`String<class_String>` **application/min_ios_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/min_ios_version>`
 
-Version minimale d'iOS requise pour que cette application fonctionne dans le format ``major.minor.patch`` ou ``major.minor``, ne peut contenir que des caractères numériques (``0-9``) et des points (``.``).
+Version minimale d'iOS requise pour que cette application fonctionne dans le format ``major.minor.patch`` ou ``major.minor``, ne peut contenir que des caractères numériques (\ ``0-9``) et des points (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ Version minimale d'iOS requise pour que cette application fonctionne dans le for
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_debug>`
 
-Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
 Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
@@ -680,7 +680,7 @@ Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_S
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_release>`
 
-Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
 Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
@@ -722,7 +722,7 @@ Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROVISION
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/short_version>`
 
-Application version visible to the user. Can only contain numeric characters (``0-9``) and periods (``.``). Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
+Application version visible to the user. Can only contain numeric characters (\ ``0-9``) and periods (\ ``.``). Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
 \ **Note:** This value is used for the *Identity > Version* value in the generated Xcode project.
 
@@ -760,7 +760,7 @@ Famille d'appareils pris en charge.
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/version>`
 
-Machine-readable application version in the ``major.minor.patch`` format. Can only contain numeric characters (``0-9``) and periods (``.``). This must be incremented with every new release pushed to the App Store. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
+Machine-readable application version in the ``major.minor.patch`` format. Can only contain numeric characters (\ ``0-9``) and periods (\ ``.``). This must be incremented with every new release pushed to the App Store. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
 \ **Note:** This value is used for the *Identity > Build* value in the generated Xcode project.
 
@@ -774,7 +774,7 @@ Machine-readable application version in the ``major.minor.patch`` format. Can on
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformIOS_property_architectures/arm64>`
 
-Si ``true``, les binaires ``arm64`` sont incluses dans le projet exporté.
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -800,7 +800,11 @@ If ``true``, networking features related to Wi-Fi access are enabled. See `Requi
 
 Additional data added to the ``UIRequiredDeviceCapabilities`` array of the ``Info.plist`` file.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +921,7 @@ Environment for Apple Push Notification service. See `aps-environment <https://d
 
 :ref:`String<class_String>` **icons/app_store_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024>`
 
-App Store application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+App Store application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +957,7 @@ App Store application icon file, tinted version. See `App icons <https://develop
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024>`
 
-Base application icon used to generate other icons. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +993,7 @@ Base application icon used to generate other icons, tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/ios_128x128** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128>`
 
-iOS application 64x64 icon file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,7 +1005,7 @@ iOS application 64x64 icon file (2x DPI). If left empty, it will fallback to :re
 
 :ref:`String<class_String>` **icons/ios_128x128_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_dark>`
 
-iOS application 64x64 icon file (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1013,7 +1017,7 @@ iOS application 64x64 icon file (2x DPI), dark version. See `App icons <https://
 
 :ref:`String<class_String>` **icons/ios_128x128_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_tinted>`
 
-iOS application 64x64 icon file (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1029,7 @@ iOS application 64x64 icon file (2x DPI), tinted version. See `App icons <https:
 
 :ref:`String<class_String>` **icons/ios_136x136** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136>`
 
-iOS application 68x68 icon file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1037,7 +1041,7 @@ iOS application 68x68 icon file (2x DPI). If left empty, it will fallback to :re
 
 :ref:`String<class_String>` **icons/ios_136x136_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_dark>`
 
-iOS application 68x68 icon file (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1049,7 +1053,7 @@ iOS application 68x68 icon file (2x DPI), dark version. See `App icons <https://
 
 :ref:`String<class_String>` **icons/ios_136x136_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_tinted>`
 
-iOS application 68x68 icon file (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1061,7 +1065,7 @@ iOS application 68x68 icon file (2x DPI), tinted version. See `App icons <https:
 
 :ref:`String<class_String>` **icons/ios_192x192** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192>`
 
-iOS application 64x64 icon file (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1077,7 @@ iOS application 64x64 icon file (3x DPI). If left empty, it will fallback to :re
 
 :ref:`String<class_String>` **icons/ios_192x192_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_dark>`
 
-iOS application 64x64 icon file (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1089,7 @@ iOS application 64x64 icon file (3x DPI), dark version. See `App icons <https://
 
 :ref:`String<class_String>` **icons/ios_192x192_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_tinted>`
 
-iOS application 64x64 icon file (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1097,7 +1101,7 @@ iOS application 64x64 icon file (3x DPI), tinted version. See `App icons <https:
 
 :ref:`String<class_String>` **icons/ipad_152x152** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152>`
 
-Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1113,7 @@ Home screen application icon file on iPad (2x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/ipad_152x152_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_dark>`
 
-Home screen application icon file on iPad (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1125,7 @@ Home screen application icon file on iPad (2x DPI), dark version. See `App icons
 
 :ref:`String<class_String>` **icons/ipad_152x152_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_tinted>`
 
-Home screen application icon file on iPad (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1137,7 @@ Home screen application icon file on iPad (2x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/ipad_167x167** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167>`
 
-Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ Home screen application icon file on iPad (3x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/ipad_167x167_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_dark>`
 
-Home screen application icon file on iPad (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1161,7 @@ Home screen application icon file on iPad (3x DPI), dark version. See `App icons
 
 :ref:`String<class_String>` **icons/ipad_167x167_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_tinted>`
 
-Home screen application icon file on iPad (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1169,7 +1173,7 @@ Home screen application icon file on iPad (3x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/iphone_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120>`
 
-Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1185,7 @@ Home screen application icon file on iPhone (2x DPI). If left empty, it will fal
 
 :ref:`String<class_String>` **icons/iphone_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_dark>`
 
-Home screen application icon file on iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1197,7 @@ Home screen application icon file on iPhone (2x DPI), dark version. See `App ico
 
 :ref:`String<class_String>` **icons/iphone_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_tinted>`
 
-Home screen application icon file on iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1209,7 @@ Home screen application icon file on iPhone (2x DPI), tinted version. See `App i
 
 :ref:`String<class_String>` **icons/iphone_180x180** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180>`
 
-Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1221,7 @@ Home screen application icon file on iPhone (3x DPI). If left empty, it will fal
 
 :ref:`String<class_String>` **icons/iphone_180x180_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_dark>`
 
-Home screen application icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1233,7 @@ Home screen application icon file on iPhone (3x DPI), dark version. See `App ico
 
 :ref:`String<class_String>` **icons/iphone_180x180_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_tinted>`
 
-Home screen application icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1245,7 @@ Home screen application icon file on iPhone (3x DPI), tinted version. See `App i
 
 :ref:`String<class_String>` **icons/notification_40x40** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40>`
 
-Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1257,7 @@ Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/notification_40x40_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_dark>`
 
-Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1265,7 +1269,7 @@ Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons
 
 :ref:`String<class_String>` **icons/notification_40x40_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_tinted>`
 
-Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,7 +1281,7 @@ Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/notification_60x60** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60>`
 
-Notification icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,7 +1293,7 @@ Notification icon file on iPhone (3x DPI). If left empty, it will fallback to :r
 
 :ref:`String<class_String>` **icons/notification_60x60_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_dark>`
 
-Notification icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1305,7 @@ Notification icon file on iPhone (3x DPI), dark version. See `App icons <https:/
 
 :ref:`String<class_String>` **icons/notification_60x60_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_tinted>`
 
-Notification icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1313,7 +1317,7 @@ Notification icon file on iPhone (3x DPI), tinted version. See `App icons <https
 
 :ref:`String<class_String>` **icons/notification_76x76** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76>`
 
-Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1325,7 +1329,7 @@ Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/notification_76x76_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_dark>`
 
-Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1341,7 @@ Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons
 
 :ref:`String<class_String>` **icons/notification_76x76_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_tinted>`
 
-Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1353,7 @@ Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/notification_114x114** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114>`
 
-Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1365,7 @@ Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/notification_114x114_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_dark>`
 
-Notification icon file on iPad and iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1377,7 @@ Notification icon file on iPad and iPhone (3x DPI), dark version. See `App icons
 
 :ref:`String<class_String>` **icons/notification_114x114_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_tinted>`
 
-Notification icon file on iPad and iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1385,7 +1389,7 @@ Notification icon file on iPad and iPhone (3x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/settings_58x58** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58>`
 
-Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1401,7 @@ Application settings icon file on iPad and iPhone (2x DPI). If left empty, it wi
 
 :ref:`String<class_String>` **icons/settings_58x58_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_dark>`
 
-Application settings icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1413,7 @@ Application settings icon file on iPad and iPhone (2x DPI), dark version. See `A
 
 :ref:`String<class_String>` **icons/settings_58x58_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_tinted>`
 
-Application settings icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1425,7 @@ Application settings icon file on iPad and iPhone (2x DPI), tinted version. See 
 
 :ref:`String<class_String>` **icons/settings_87x87** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87>`
 
-Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1433,7 +1437,7 @@ Application settings icon file on iPhone (3x DPI). If left empty, it will fallba
 
 :ref:`String<class_String>` **icons/settings_87x87_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_dark>`
 
-Application settings icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1445,7 +1449,7 @@ Application settings icon file on iPhone (3x DPI), dark version. See `App icons 
 
 :ref:`String<class_String>` **icons/settings_87x87_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_tinted>`
 
-Application settings icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1457,7 +1461,7 @@ Application settings icon file on iPhone (3x DPI), tinted version. See `App icon
 
 :ref:`String<class_String>` **icons/spotlight_80x80** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80>`
 
-Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1469,7 +1473,7 @@ Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback
 
 :ref:`String<class_String>` **icons/spotlight_80x80_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_dark>`
 
-Spotlight icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1481,7 +1485,7 @@ Spotlight icon file on iPad and iPhone (2x DPI), dark version. See `App icons <h
 
 :ref:`String<class_String>` **icons/spotlight_80x80_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_tinted>`
 
-Spotlight icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1493,7 +1497,7 @@ Spotlight icon file on iPad and iPhone (2x DPI), tinted version. See `App icons 
 
 :ref:`String<class_String>` **icons/spotlight_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120>`
 
-Spotlight icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1505,7 +1509,7 @@ Spotlight icon file on iPad and iPhone (3x DPI). If left empty, it will fallback
 
 :ref:`String<class_String>` **icons/spotlight_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_dark>`
 
-Spotlight icon file on iPad and iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1517,7 +1521,7 @@ Spotlight icon file on iPad and iPhone (3x DPI), dark version. See `App icons <h
 
 :ref:`String<class_String>` **icons/spotlight_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`
 
-Spotlight icon file on iPad and iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1541,7 +1545,7 @@ If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the expo
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`
 
-The reasons your app use active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2009,7 +2013,7 @@ Indicates whether your app uses device IDs for tracking.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collected>`
 
-Indique si votre application collecte une adresse mail.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2021,7 +2025,7 @@ Indique si votre application collecte une adresse mail.
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-The reasons your app collects email address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2037,7 @@ The reasons your app collects email address. See `Describing data use in privacy
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Indicates whether your app links email address to the user's identity.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2049,7 @@ Indicates whether your app links email address to the user's identity.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Indicates whether your app uses email address for tracking.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2825,7 +2829,7 @@ Indicates whether your app uses performance data for tracking.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collected>`
 
-Indique si votre application collecte un numéro de téléphone.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2837,7 +2841,7 @@ Indique si votre application collecte un numéro de téléphone.
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-The reasons your app collects phone number. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2849,7 +2853,7 @@ The reasons your app collects phone number. See `Describing data use in privacy 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Indicates whether your app links phone number to the user's identity.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2861,7 +2865,7 @@ Indicates whether your app links phone number to the user's identity.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Indicates whether your app uses phone number for tracking.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2921,7 +2925,7 @@ Indique si votre application utilise des photos ou des vidéos pour le suivi.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collected>`
 
-Indique si votre application recueille une adresse physique.
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2933,7 +2937,7 @@ Indique si votre application recueille une adresse physique.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-The reasons your app collects physical address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2945,7 +2949,7 @@ The reasons your app collects physical address. See `Describing data use in priv
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Indicates whether your app links physical address to the user's identity.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2957,7 +2961,7 @@ Indicates whether your app links physical address to the user's identity.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Indicates whether your app uses physical address for tracking.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3257,7 +3261,7 @@ Indicates whether your app uses user IDs for tracking.
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/disk_space_access_reasons>`
 
-The reasons your app use free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3269,7 +3273,7 @@ The reasons your app use free disk space API. See `Describing use of required re
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/file_timestamp_access_reasons>`
 
-The reasons your app use file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3329,7 +3333,7 @@ A message displayed when requesting access to the user's photo library (localize
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/system_boot_time_access_reasons>`
 
-The reasons your app use system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3343,7 +3347,11 @@ The reasons your app use system boot time / absolute time API. See `Describing u
 
 The list of internet domains your app connects to that engage in tracking. See `Privacy manifest files <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3375,7 @@ Indicates whether your app uses data for tracking. See `Privacy manifest files <
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/user_defaults_access_reasons>`
 
-The reasons your app use user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3405,7 +3413,7 @@ A custom background color of the storyboard launch screen.
 
 :ref:`String<class_String>` **storyboard/custom_image@2x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@2x>`
 
-Application launch screen image file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
+Application launch screen image file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3417,7 +3425,7 @@ Application launch screen image file (2x DPI). If left empty, it will fallback t
 
 :ref:`String<class_String>` **storyboard/custom_image@3x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@3x>`
 
-Application launch screen image file (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
+Application launch screen image file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3441,7 +3449,7 @@ Launch screen image scaling mode.
 
 :ref:`bool<class_bool>` **storyboard/use_custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/use_custom_bg_color>`
 
-If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise ``application/boot_splash/bg_color`` project setting is used.
+If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise the ``application/boot_splash/bg_color`` project setting is used.
 
 .. rst-class:: classref-item-separator
 

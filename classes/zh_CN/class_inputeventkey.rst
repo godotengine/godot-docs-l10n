@@ -114,18 +114,18 @@ InputEventKey
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-表示当前键盘布局中印在键上的本地化标签，对应于 :ref:`Key<enum_@GlobalScope_Key>` 常量之一或任何有效的 Unicode 字符。按键标签用于按键提示。
+Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
 
-对于键上只有一个标签的键盘布局，它等同于 :ref:`keycode<class_InputEventKey_property_keycode>`\ 。
+For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
 
-要获得 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.key_label)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 
@@ -142,16 +142,16 @@ InputEventKey
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-当前键盘布局中键上打印的拉丁标签，对应于 :ref:`Key<enum_@GlobalScope_Key>` 常量之一。键码用于表示使用标准拉丁键盘的快捷键，例如 :kbd:`Ctrl + S` 表示“保存”快捷键。
+Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
 
-要获得 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.keycode)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - 键码
-    |   Й | |  ض | - "Й" 和 "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 

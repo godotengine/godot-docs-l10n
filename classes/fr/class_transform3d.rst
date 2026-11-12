@@ -284,7 +284,7 @@ Construit une **Transform3D** à partir de la :ref:`Basis<class_Basis>` et du :r
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ from\: :ref:`Projection<class_Projection>`\ )
 
-Construit une **Transform3D** depuis une :ref:`Projection<class_Projection>`. Comme **Transform3D** est une matrice 3×4 et :ref:`Projection<class_Projection>` est une matrice 4×4, cette opération coupe la dernière ligne de la matrice de projection (``from.x.w``, ``from.y.w``, ``from.z.w``, et ``from.w.w`` ne sont pas inclus dans la nouvelle transformation).
+Construit une **Transform3D** depuis une :ref:`Projection<class_Projection>`. Comme **Transform3D** est une matrice 3×4 et :ref:`Projection<class_Projection>` est une matrice 4×4, cette opération coupe la dernière ligne de la matrice de projection (\ ``from.x.w``, ``from.y.w``, ``from.z.w``, et ``from.w.w`` ne sont pas inclus dans la nouvelle transformation).
 
 .. rst-class:: classref-item-separator
 

@@ -127,7 +127,7 @@ CollisionObject2D
 
 **input_event**\ (\ viewport\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_signal_input_event>`
 
-Викликається, коли відбувається подія введення. Потрібно, щоб :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` мав значення ``true`` та щоб був встановлений принаймні один біт :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`. Див. :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` для отримання детальної інформації.
+Emitted when an unhandled input event occurs. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. See :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` for details.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **DISABLE_MODE_KEEP_ACTIVE** = ``2``
 
-Коли :ref:`Node.process_mode<class_Node_property_process_mode>` встановлюється на :ref:`Node. PROCESS_MODE_DISABLED<class_Node_constant_ PROCESS_MODE_DISABLED>`, не впливає на фізичне моделювання.
+Коли :ref:`Node.process_mode<class_Node_property_process_mode>` встановлюється на :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, не впливає на фізичне моделювання.
 
 .. rst-class:: classref-section-separator
 
@@ -244,9 +244,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-Фізика шарів цієї CollisionObject2D є в. Об'єкти Collision можуть існувати в одному або декількох 32 різних шарів. Дивись також :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`.
+The physics layers this CollisionObject2D is in. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`. For an easier way to change this value from a script, see :ref:`set_collision_layer_value()<class_CollisionObject2D_method_set_collision_layer_value>`.
 
-\ **Примітка:** Об'єкт A може виявити контакт з об'єктом B тільки якщо об'єкт B знаходиться в будь-якому з шарів, які об'єкт A сканування. Див. `Коллізійні шари та маски <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ в документації для отримання додаткової інформації.
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -263,9 +263,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-Фізика шарів цього CollisionObject2D сканування. Об'єкти Collision можуть відсканувати один або більше 32 різних шарів. Дивись також :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`.
+The physics layers this CollisionObject2D scans. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`. For an easier way to change this value from a script, see :ref:`set_collision_mask_value()<class_CollisionObject2D_method_set_collision_mask_value>`.
 
-\ **Примітка:** Об'єкт A може виявити контакт з об'єктом B тільки якщо об'єкт B знаходиться в будь-якому з шарів, які об'єкт A сканування. Див. `Коллізійні шари та маски <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ в документації для отримання додаткової інформації.
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -333,9 +333,13 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 |void| **_input_event**\ (\ viewport\: :ref:`Viewport<class_Viewport>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__input_event>`
 
-Приймає необроблені :ref:`InputEvent<class_InputEvent>`-и. ``shape_idx`` є індексом нащадка натиснутого :ref:`Shape2D<class_Shape2D>`. Підключіться до :ref:`input_event<class_CollisionObject2D_signal_input_event>`, щоб легко обробляти ці події.
+Detects unhandled mouse and touch :ref:`InputEvent<class_InputEvent>`\ s through ``event`` when they happen while hovering over the object. Gesture events are not detected. ``viewport`` is the :ref:`Viewport<class_Viewport>` that the event originated in (for viewports other than the main one to be detected, :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>` needs to be set to ``true``). ``shape_idx`` is the index of the detected shape from :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Примітка:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` вимагає :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>`, щоб бути ``true`` та принаймні один :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`.
+See also :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, :ref:`shape_find_owner()<class_CollisionObject2D_method_shape_find_owner>`, and :ref:`shape_owner_get_owner()<class_CollisionObject2D_method_shape_owner_get_owner>`.
+
+\ **Note:** :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` events are triggered if the drag events started while hovering the object, or when the object is in the path of the drag event.
+
+\ **Note:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +411,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_layer_value>`
 
-Повертаємо, чи не вказаний шар :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`, враховуючи ``layer_number`` між 1 і 32.
+Returns whether or not the specified layer of the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject2D**'s collision layer compared to assigning the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +423,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_mask_value>`
 
-Повертаємо, чи не вказаний шар :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`, враховуючи ``layer_number`` між 1 і 32.
+Returns whether or not the specified layer of the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject2D**'s collision mask compared to assigning the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` property directly.
 
 .. rst-class:: classref-item-separator
 

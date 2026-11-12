@@ -14,9 +14,9 @@ StreamPeerTLS
 Описание
 ----------------
 
-Потоковый одноранговый узел, который обрабатывает соединения TLS. Этот объект может использоваться для подключения к серверу TLS или принятия одного клиентского соединения TLS.
+A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
 
-\ **Примечание:** При экспорте в Android обязательно включите разрешение ``INTERNET`` в предустановке экспорта Android перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

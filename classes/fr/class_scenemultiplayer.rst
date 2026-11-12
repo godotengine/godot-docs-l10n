@@ -14,15 +14,15 @@ Implémentation d'API multijoueur de haut niveau.
 Description
 -----------
 
-Cette classe est l'implémentation par défaut de :ref:`MultiplayerAPI<class_MultiplayerAPI>`, utilisée pour fournir des fonctionnalités multijoueur dans le moteur.
+This class is the default implementation of :ref:`MultiplayerAPI<class_MultiplayerAPI>`, used to provide multiplayer functionalities in Godot Engine.
 
-Cette implémentation prend en charge les RPCs via :ref:`Node.rpc()<class_Node_method_rpc>` et :ref:`Node.rpc_id()<class_Node_method_rpc_id>` et exige que :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` reçoive un :ref:`Node<class_Node>` (il échouera pour les autres types d'objets).
+This implementation supports RPCs via :ref:`Node.rpc()<class_Node_method_rpc>` and :ref:`Node.rpc_id()<class_Node_method_rpc_id>` and requires :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` to be passed a :ref:`Node<class_Node>` (it will fail for other object types).
 
-Cette implémentation fournit également à :ref:`SceneTree<class_SceneTree>` de la réplication via les nœuds :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` et :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`, et la ressource :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`.
+This implementation additionally provide :ref:`SceneTree<class_SceneTree>` replication via the :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` and :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` nodes, and the :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` resource.
 
-\ **Note :** Le protocole de l'API multijoueur de haut niveau est un détail d'implémentation et n'est pas destiné à être utilisé par des serveurs non-Godot. Il peut changer sans préavis.
+\ **Note:** The high-level multiplayer API protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **Note :** Lors de l'export vers Android, assurez-vous d'activer l'autorisation ``INTERNET`` dans le préréglage d'export Android avant d'exporter le projet ou d'utiliser le déploiement en un clic. Sinon, les communications réseau de tout type seront bloquées par Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

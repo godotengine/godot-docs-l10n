@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAruco
 
 **Hérite de :** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for Aruco markers.
+Configuration header for ArUco markers.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Configuration header for Aruco markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect Aruco markers.
+Configuration header for ArUco markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect ArUco markers.
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_50** = ``1``
 
-4 by 4 pixel Aruco marker dictionary with 50 IDs.
+4 by 4 pixel ArUco marker dictionary with 50 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_100:
 
@@ -71,7 +71,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_100** = ``2``
 
-4 by 4 pixel Aruco marker dictionary with 100 IDs.
+4 by 4 pixel ArUco marker dictionary with 100 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_250:
 
@@ -79,7 +79,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_250** = ``3``
 
-4 by 4 pixel Aruco marker dictionary with 250 IDs.
+4 by 4 pixel ArUco marker dictionary with 250 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_4X4_1000:
 
@@ -87,7 +87,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_4X4_1000** = ``4``
 
-4 by 4 pixel Aruco marker dictionary with 1000 IDs.
+4 by 4 pixel ArUco marker dictionary with 1000 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_50:
 
@@ -95,7 +95,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_50** = ``5``
 
-5 by 5 pixel Aruco marker dictionary with 50 IDs.
+5 by 5 pixel ArUco marker dictionary with 50 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_100:
 
@@ -103,7 +103,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_100** = ``6``
 
-5 by 5 pixel Aruco marker dictionary with 100 IDs.
+5 by 5 pixel ArUco marker dictionary with 100 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_250:
 
@@ -111,7 +111,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_250** = ``7``
 
-5 by 5 pixel Aruco marker dictionary with 250 IDs.
+5 by 5 pixel ArUco marker dictionary with 250 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_5X5_1000:
 
@@ -119,7 +119,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_5X5_1000** = ``8``
 
-5 by 5 pixel Aruco marker dictionary with 1000 IDs.
+5 by 5 pixel ArUco marker dictionary with 1000 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_50:
 
@@ -127,7 +127,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_50** = ``9``
 
-6 by 6 pixel Aruco marker dictionary with 50 IDs.
+6 by 6 pixel ArUco marker dictionary with 50 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_100:
 
@@ -135,7 +135,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_100** = ``10``
 
-6 by 6 pixel Aruco marker dictionary with 100 IDs.
+6 by 6 pixel ArUco marker dictionary with 100 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_250:
 
@@ -143,7 +143,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_250** = ``11``
 
-6 by 6 pixel Aruco marker dictionary with 250 IDs.
+6 by 6 pixel ArUco marker dictionary with 250 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_6X6_1000:
 
@@ -151,7 +151,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_6X6_1000** = ``12``
 
-6 by 6 pixel Aruco marker dictionary with 1000 IDs.
+6 by 6 pixel ArUco marker dictionary with 1000 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_50:
 
@@ -159,7 +159,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_50** = ``13``
 
-7 by 7 pixel Aruco marker dictionary with 50 IDs.
+7 by 7 pixel ArUco marker dictionary with 50 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_100:
 
@@ -167,7 +167,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_100** = ``14``
 
-7 by 7 pixel Aruco marker dictionary with 100 IDs.
+7 by 7 pixel ArUco marker dictionary with 100 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_250:
 
@@ -175,7 +175,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_250** = ``15``
 
-7 by 7 pixel Aruco marker dictionary with 250 IDs.
+7 by 7 pixel ArUco marker dictionary with 250 IDs.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAruco_constant_ARUCO_DICT_7X7_1000:
 
@@ -183,7 +183,7 @@ enum **ArucoDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationAruco_Ar
 
 :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **ARUCO_DICT_7X7_1000** = ``16``
 
-7 by 7 pixel Aruco marker dictionary with 1000 IDs.
+7 by 7 pixel ArUco marker dictionary with 1000 IDs.
 
 .. rst-class:: classref-section-separator
 
@@ -205,7 +205,7 @@ Descriptions des propriétés
 - |void| **set_aruco_dict**\ (\ value\: :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>`\ )
 - :ref:`ArucoDict<enum_OpenXRSpatialCapabilityConfigurationAruco_ArucoDict>` **get_aruco_dict**\ (\ )
 
-Dictionary to use to decode Aruco markers.
+Dictionary to use to decode ArUco markers.
 
 \ **Note:** Must be set before using this configuration to create a spatial context.
 

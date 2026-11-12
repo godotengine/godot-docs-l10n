@@ -310,27 +310,27 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` **create_data_channel**\ (\ label\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_WebRTCPeerConnection_method_create_data_channel>`
 
-返回新的 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ ，或在失败时返回 ``null``\ ，具有给定的 ``label``\ ，并通过 ``options`` 字典进行配置。这个方法只有在连接处于 :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态时才能被调用。
+Returns a new :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (or ``null`` on failure) with given ``label`` and optionally configured via the ``options`` dictionary. This method can only be called when the connection is in state :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-有两种方法来创建工作数据通道：要么只在其中一个对等端上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，并在另一个对等端上监听\ :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>`\ ，要么在两个对等端上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，数值相同，并将 ``"negotiated"`` 选项设置为 ``true``\ 。
+There are two ways to create a working data channel: either call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on only one of the peer and listen to :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` on the other, or call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on both peers, with the same values, and the ``"negotiated"`` option set to ``true``.
 
-有效的 ``options`` 是：
+Valid ``options`` are:
 
 ::
 
     {
-        "negotiated": true, # 当设置为 "true"时，默认关闭，意味着该通道是在频带外协商的。"id"也必须被设置。"data_channel_received" 将不会被调用。
-        "id":1, # 当 "negotiated"为真时，这个值也必须被设置为两个对等端的相同值。
+        "negotiated": true, # When set to true (default off), means the channel is negotiated out of band. "id" must be set too. "data_channel_received" will not be called.
+        "id": 1, # When "negotiated" is true this value must also be set to the same value on both peer.
 
-        # 只能指定maxRetransmits和maxPacketLifeTime中的一个，不能同时指定。它们会使信道变得不可靠，但在实时性方面会更好。
-        "maxRetransmits":1, # 指定对等端在数据包未被确认时尝试重传的最大次数。
-        "maxPacketLifeTime":100, # 指定放弃重传未被确认的数据包之前的最大时间，以毫秒为单位。
-        "ordered": true, # 当处于不可靠模式时，即 "maxRetransmits "或 "maxPacketLifetime "被设置，"ordered"指定是否要强制执行数据包排序，默认为true。
+        # Only one of maxRetransmits and maxPacketLifeTime can be specified, not both. They make the channel unreliable (but also better at real time).
+        "maxRetransmits": 1, # Specify the maximum number of attempt the peer will make to retransmits packets if they are not acknowledged.
+        "maxPacketLifeTime": 100, # Specify the maximum amount of time before giving up retransmitions of unacknowledged packets (in milliseconds).
+        "ordered": true, # When in unreliable mode (i.e. either "maxRetransmits" or "maxPacketLifeTime" is set), "ordered" (true by default) specify if packet ordering is to be enforced.
 
-        "protocol":"my-custom-protocol", # 这个通道的自定义子协议字符串。
+        "protocol": "my-custom-protocol", # A custom sub-protocol string for this channel.
     }
 
-\ **注意：**\ 你必须保持对以这种方式创建的通道的引用，否则它将被关闭。
+\ **Note:** You must keep a reference to channels created this way, or it will be closed.
 
 .. rst-class:: classref-item-separator
 

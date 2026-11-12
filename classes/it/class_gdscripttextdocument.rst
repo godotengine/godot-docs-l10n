@@ -27,10 +27,6 @@ Metodi
    :widths: auto
 
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`codeLens<class_GDScriptTextDocument_method_codeLens>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                    |
-   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`colorPresentation<class_GDScriptTextDocument_method_colorPresentation>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                  |
-   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`           | :ref:`completion<class_GDScriptTextDocument_method_completion>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`declaration<class_GDScriptTextDocument_method_declaration>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                              |
@@ -48,8 +44,6 @@ Metodi
    | :ref:`Array<class_Array>`           | :ref:`documentLink<class_GDScriptTextDocument_method_documentLink>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                            |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`           | :ref:`documentSymbol<class_GDScriptTextDocument_method_documentSymbol>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                        |
-   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`foldingRange<class_GDScriptTextDocument_method_foldingRange>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                            |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`hover<class_GDScriptTextDocument_method_hover>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                          |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -78,30 +72,6 @@ Metodi
 
 Descrizioni dei metodi
 --------------------------------------------
-
-.. _class_GDScriptTextDocument_method_codeLens:
-
-.. rst-class:: classref-method
-
-:ref:`Array<class_Array>` **codeLens**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_codeLens>`
-
-**Deprecato:** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_GDScriptTextDocument_method_colorPresentation:
-
-.. rst-class:: classref-method
-
-:ref:`Array<class_Array>` **colorPresentation**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_colorPresentation>`
-
-**Deprecato:** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
-
-.. rst-class:: classref-item-separator
-
-----
 
 .. _class_GDScriptTextDocument_method_completion:
 
@@ -204,18 +174,6 @@ Descrizioni dei metodi
 .. rst-class:: classref-method
 
 :ref:`Array<class_Array>` **documentSymbol**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_documentSymbol>`
-
-**Deprecato:** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_GDScriptTextDocument_method_foldingRange:
-
-.. rst-class:: classref-method
-
-:ref:`Array<class_Array>` **foldingRange**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_foldingRange>`
 
 **Deprecato:** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
 

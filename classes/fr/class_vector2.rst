@@ -118,6 +118,8 @@ Méthodes
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2<class_Vector2>` | :ref:`from_angle<class_Vector2_method_from_angle>`\ (\ angle\: :ref:`float<class_float>`\ ) |static|                                                                                                                                                                                                                                                             |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`inverse<class_Vector2_method_inverse>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                       |
+   +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_equal_approx<class_Vector2_method_is_equal_approx>`\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const|                                                                                                                                                                                                                                                   |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_finite<class_Vector2_method_is_finite>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                   |
@@ -570,7 +572,7 @@ C'est l'aire signée du parallélogramme formé par les deux vecteurs. Si le sec
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate>`
 
-Effectue une interpolation cubique entre ce vecteur et ``b`` en utilisant ``pre_a`` et ``post_b`` comme poignées, et renvoie le résultat à la position ``weight``. ``weight`` est dans l'intervalle de 0,0 à 1,0, représentant le montant d'interpolation.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -582,9 +584,9 @@ Effectue une interpolation cubique entre ce vecteur et ``b`` en utilisant ``pre_
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate_in_time>`
 
-Effectue une interpolation cubique entre ce vecteur et ``b`` en utilisant ``pre_a`` et ``post_b`` comme poignées, et renvoie le résultat à la position ``weight``. ``weight`` est dans l'intervalle de 0,0 à 1,0, représentant la quantité d'interpolation.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-Elle peut effectuer une interpolation plus lisse que :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` pour les valeurs temporelles.
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -675,6 +677,18 @@ Crée un **Vector2** unitaire tourné de l'``angle`` donné en radians. Ceci éq
     print(Vector2.from_angle(PI / 2)) # Affiche (0.0, 1.0)
 
 \ **Note :** La longueur du **Vector2** renvoyé est *approximativement* ``1.0``, mais elle n'est pas garantie d'être exactement ``1.0`` en raison de problèmes de précision flottants. Appelez :ref:`normalized()<class_Vector2_method_normalized>` sur le **Vector2** renvoyé si vous avez besoin d'un vecteur unitaire.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Vector2_method_inverse:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **inverse**\ (\ ) |const| :ref:`🔗<class_Vector2_method_inverse>`
+
+Returns the inverse of the vector. This is the same as ``Vector2(1.0 / v.x, 1.0 / v.y)``.
 
 .. rst-class:: classref-item-separator
 

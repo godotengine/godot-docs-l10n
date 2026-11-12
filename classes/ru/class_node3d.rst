@@ -1078,7 +1078,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 \ **Примечание:** Вместо этого предпочтительнее использовать :ref:`translate_object_local()<class_Node3D_method_translate_object_local>`, так как этот метод может быть изменен в будущем выпуске.
 
-\ **Примечание:** Несмотря на соглашение об именовании, эта операция **не** вычисляется в родительском пространстве по соображениям совместимости. Чтобы перевести в родительском пространстве, добавьте ``offset`` к :ref:`position<class_Node3D_property_position>` (``node_3d.position += offset``).
+\ **Примечание:** Несмотря на соглашение об именовании, эта операция **не** вычисляется в родительском пространстве по соображениям совместимости. Чтобы перевести в родительском пространстве, добавьте ``offset`` к :ref:`position<class_Node3D_property_position>` (\ ``node_3d.position += offset``).
 
 .. rst-class:: classref-item-separator
 

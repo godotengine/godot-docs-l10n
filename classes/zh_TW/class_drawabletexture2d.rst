@@ -81,9 +81,9 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-一種具有四個分量、每個分量位元深度度均為 8 位元的 OpenGL RGBA 紋理格式。
+OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
-當向其進行繪製時，會執行從 sRGB 到線性顏色空間的轉換。
+When drawn to, a linear to sRGB color encoding conversion is performed.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 

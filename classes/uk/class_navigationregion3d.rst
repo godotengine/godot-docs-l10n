@@ -18,7 +18,7 @@ NavigationRegion3D
 
 Ви можете використовувати для трафаретизації.
 
-Два регіони можуть бути підключені один до одного, якщо вони діляться схожим краєм. Ви можете встановити мінімальну відстань між двома вершинами, необхідні для підключення двох країв за допомогою :ref:`NavigationServer3D.map_set_connection_margin()<class_NavigationServer3D_method_map_set_connection_margin>`.
+Два регіони можуть бути підключені один до одного, якщо вони діляться схожим краєм. Ви можете встановити мінімальну відстань між двома вершинами, необхідні для підключення двох країв за допомогою :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`.
 
 \ **Примітка:** Навігаційні сітки перекриття двох регіонів недостатньо для підключення двох регіонів. Вони повинні поділитися схожим краєм.
 
@@ -153,7 +153,7 @@ NavigationRegion3D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-При навігаційній сітці даного регіону з інших регіонів навігаційній сітці додається значення :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` для визначення найкоротшого шляху.
+When pathfinding enters this region's navigation mesh from another region's navigation mesh, this property's value is added to the path distance used to determine the shortest path.
 
 .. rst-class:: classref-item-separator
 

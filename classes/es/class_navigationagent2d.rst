@@ -679,7 +679,7 @@ Does not affect normal pathfinding. To change an actor's pathfinding radius bake
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-The path simplification amount in worlds units.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ Si se establece, se solicita un nuevo camino de navegación desde la posición a
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-La cantidad mínima de tiempo durante la cual las velocidades de este agente, que se calculan con el algoritmo de evitación de colisiones, son seguras con respecto a otros agentes. Cuanto mayor sea el número, antes responderá el agente a otros agentes, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ La cantidad mínima de tiempo durante la cual las velocidades de este agente, qu
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-La cantidad mínima de tiempo durante la cual las velocidades de este agente, calculadas con el algoritmo de evitación de colisiones, son seguras con respecto a los obstáculos de evitación estáticos. Cuanto mayor sea el número, antes responderá el agente a los obstáculos de evitación estáticos, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Returns whether or not the specified mask of the :ref:`avoidance_mask<class_Navi
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent2D_method_get_current_navigation_path>`
 
-Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` once every physics frame to receive the next path point for the agents movement as this function also updates the internal path logic.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

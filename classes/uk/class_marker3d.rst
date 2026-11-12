@@ -14,7 +14,7 @@ Marker3D
 Опис
 --------
 
-Генетична 3D позиція підказка для редагування. Це так само, як звичайний :ref:`Node3D<class_Node3D>`, але він відображає як хрест в редакторі 3D в усі часи.
+Generic 3D position hint for editing. This is like a plain :ref:`Node3D<class_Node3D>`, but it displays as a cross in the 3D editor.
 
 .. rst-class:: classref-reftable-group
 

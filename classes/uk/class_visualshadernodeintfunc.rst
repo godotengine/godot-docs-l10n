@@ -14,7 +14,7 @@ VisualShaderNodeIntFunc
 Опис
 --------
 
-Прийміть ціле скаляра (``x``) в вхідний порт і перетворюйте його відповідно до функції :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
+Прийміть ціле скаляра (\ ``x``) в вхідний порт і перетворюйте його відповідно до функції :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

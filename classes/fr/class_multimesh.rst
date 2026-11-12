@@ -189,9 +189,13 @@ Descriptions des propriétés
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +211,11 @@ Descriptions des propriétés
 
 Tableau contenant chaque :ref:`Color<class_Color>` utilisée par toutes les instances de ce maillage.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +248,11 @@ AABB personnalisée pour cette ressource MultiMesh. Définir ceci manuellement e
 
 Tableau contenant chaque valeur de données personnalisées utilisées par toutes les instances de ce maillage, en tant que :ref:`PackedColorArray<class_PackedColorArray>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +327,11 @@ Lors de l'utilisation de faibles vitesses de tics de physique (généralement in
 
 Tableau contenant chaque valeur de :ref:`Transform2D<class_Transform2D>` utilisées par toutes les instances de ce maillage, en tant que :ref:`PackedVector2Array<class_PackedVector2Array>`. Chaque transformation est divisée en 3 valeurs :ref:`Vector2<class_Vector2>` correspondant aux ``x``, ``y``, et ``origin`` de la transformation.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +347,11 @@ Tableau contenant chaque valeur de :ref:`Transform2D<class_Transform2D>` utilis�
 
 Tableau contenant chaque valeur de :ref:`Transform3D<class_Transform3D>` utilisées par toutes les instances de ce maillage, en tant que :ref:`PackedVector3Array<class_PackedVector3Array>`. Chaque transformation est divisée en 4 valeurs :ref:`Vector3<class_Vector3>` correspondant aux valeurs ``x``, ``y``, ``z``, et ``origin`` de la transformation.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +544,7 @@ Définit la couleur d'une instance spécifique en *multipliant* les couleurs des
 
 \ **Note :** Chaque composante est stockée sur 32 bits dans les méthodes de rendu Forward+ et Mobile, mais est compactée sur 16 bits dans la méthode de rendu Compatiblité.
 
-Pour que la couleur soit modifiée, assurez-vous que :ref:`use_colors<class_MultiMesh_property_use_colors>` vaille ``true`` sur le **MultiMesh** et que :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` vaille ``true`` dans le matériau. Si vous avez l'intention de définir une couleur absolue au lieu de teinter, assurez-vous que la couleur d'albedo du matériau soit définie à un blanc pur (``Color(1, 1, 1)``).
+Pour que la couleur soit modifiée, assurez-vous que :ref:`use_colors<class_MultiMesh_property_use_colors>` vaille ``true`` sur le **MultiMesh** et que :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` vaille ``true`` dans le matériau. Si vous avez l'intention de définir une couleur absolue au lieu de teinter, assurez-vous que la couleur d'albedo du matériau soit définie à un blanc pur (\ ``Color(1, 1, 1)``).
 
 .. rst-class:: classref-item-separator
 

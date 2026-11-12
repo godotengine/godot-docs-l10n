@@ -29,6 +29,8 @@ EditorExportPlatformVisionOS
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/additional_plist_content<class_EditorExportPlatformVisionOS_property_application/additional_plist_content>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/app_role<class_EditorExportPlatformVisionOS_property_application/app_role>`                                                                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/app_store_team_id<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/bundle_identifier<class_EditorExportPlatformVisionOS_property_application/bundle_identifier>`                                                                           |
@@ -46,6 +48,8 @@ EditorExportPlatformVisionOS
    | :ref:`bool<class_bool>`                           | :ref:`application/export_project_only<class_EditorExportPlatformVisionOS_property_application/export_project_only>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`application/icon_interpolation<class_EditorExportPlatformVisionOS_property_application/icon_interpolation>`                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`application/immersion_style<class_EditorExportPlatformVisionOS_property_application/immersion_style>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`application/min_visionos_version<class_EditorExportPlatformVisionOS_property_application/min_visionos_version>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,10 +73,6 @@ EditorExportPlatformVisionOS
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`capabilities/additional<class_EditorExportPlatformVisionOS_property_capabilities/additional>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_a12<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`                                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`capabilities/performance_gaming_tier<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`                                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/debug<class_EditorExportPlatformVisionOS_property_custom_template/debug>`                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`custom_template/release<class_EditorExportPlatformVisionOS_property_custom_template/release>`                                                                                       |
@@ -91,7 +91,17 @@ EditorExportPlatformVisionOS
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`icons/icon_1024x1024_tinted<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024_tinted>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_back_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`                                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_front_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`                                                                     |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`icons/icon_middle_layer_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`modules/camera<class_EditorExportPlatformVisionOS_property_modules/camera>`                                                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/accessory_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`                                             |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/accessory_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/active_keyboard_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -383,6 +393,10 @@ EditorExportPlatformVisionOS
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/file_timestamp_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`privacy/hand_tracking_usage_description<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`                                                       |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/hand_tracking_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`privacy/microphone_usage_description<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description>`                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`               | :ref:`privacy/microphone_usage_description_localized<class_EditorExportPlatformVisionOS_property_privacy/microphone_usage_description_localized>`                                         |
@@ -432,13 +446,25 @@ EditorExportPlatformVisionOS
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/app_role:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/app_role** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_role>`
+
+The application role on the visionOS platform. It can be ``Window`` for running a 3D game on a 2D window, or ``Immersive`` for an XR experience.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/app_store_team_id:
 
 .. rst-class:: classref-property
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/app_store_team_id>`
 
-Apple Team ID, унікальний 10-символьний рядок. Щоб знайти свій Team ID, перевірте "Membership details" у вашому обліковому записі Apple розробника, або "Organizational Unit" вашого сертифіката для підписки коду. Дивитися `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +476,7 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/bundle_identifier>`
 
-Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (``A-Z``, ``a-z``, а ``0-9``), гіфени (``-``), а також періоди (`` і ``).
+Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (\ ``A-Z``, ``a-z``, а ``0-9``), гіфени (\ ``-``), а також періоди (\ `` і ``).
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +488,7 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/code_sign_identity_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/code_sign_identity_debug>`
 
-"Повний ім'я", "Ім'я комона" або SHA-1 хеш реєстраційної ідентичності, що використовується для експорту debug.
+«Повне ім’я», «Загальне ім’я» або хеш SHA-1 ідентифікатора підпису, який використовується для експорту налагодження.
 
 .. rst-class:: classref-item-separator
 
@@ -540,6 +566,18 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_application/immersion_style:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **application/immersion_style** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/immersion_style>`
+
+Initial immersion style, only applicable if you have chosen the ``Immersive`` app role. It can be ``Full`` for a VR experience; ``Mixed`` for a mixed reality experience where the rendered content is displayed along with the real environment; or ``Progressive`` for a portal style experience where the user controls the immersion level. Change it at runtime with :ref:`VisionOSXRInterface.immersion_style<class_VisionOSXRInterface_property_immersion_style>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_application/min_visionos_version:
 
 .. rst-class:: classref-property
@@ -548,7 +586,7 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +598,9 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_debug>`
 
-Ім'я профілю налаштування. Встановлює XCode PROVISIONING_PROFILE_SPECIFIER для налагодження. `Використовується для ручного налаштування <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Можна перевизначити змінною середовища ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +612,9 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_release>`
 
-Ім'я профілю налаштування. Встановлює XCode PROVISIONING_PROFILE_SPECIFIER для випуску. `Використовується для ручного налаштування <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Можна перевизначити змінною середовища ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +654,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/short_version>`
 
-Версія програми, видима для користувача. Може містити тільки цифрові символи (``0-9``) і крапки (``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, видима для користувача. Може містити тільки цифрові символи (\ ``0-9``) і крапки (\ ``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для параметра *Identity > Version* у створеному проекті Xcode.
 
@@ -642,7 +680,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/version>`
 
-Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (``0-9``) та крапки (``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (\ ``0-9``) та крапки (\ ``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для значення *Identity > Build* у згенерованому проекті Xcode.
 
@@ -656,7 +694,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformVisionOS_property_architectures/arm64>`
 
-``true``, ``arm64`` binaries включено до експортованого проекту.
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -682,35 +720,11 @@ UUID профілю забезпечення. Якщо залишити поро
 
 Додаткові дані додано до масиву ``UIRequiredDeviceCapabilities`` файлу ``Info.plist``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
-.. rst-class:: classref-item-separator
 
-----
+.. classref_note::
 
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_a12:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_a12** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`
-
-Вимагає графіку виконання та особливості A12 Bionic та пізніх чіпів (розробки, що підтримують всі функції рендерера Vulkan).
-
-Увімкнення цього параметра підтримуваних пристроїв до: iPhone XS, iPhone XR, IPad Mini (5th gen.), IPad Air (3 gen.), IPad (8 gen) і newer.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **capabilities/performance_gaming_tier** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_gaming_tier>`
-
-Вимагає графіку виконання і особливості A17 Pro і пізніх чіпів.
-
-Увімкніть цей параметр обмеження підтримуваних пристроїв до: iPhone 15 Pro та newer.
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +813,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`
 
-Значок базової програми, який використовується для створення інших значків. Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -829,6 +843,42 @@ UUID профілю забезпечення. Якщо залишити поро
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_back_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_back_layer_1024x1024>`
+
+Back layer of the visionOS app icon. visionOS app icons are composed of three stacked layers (front/middle/back) rendered with parallax. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_front_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_front_layer_1024x1024>`
+
+Front layer of the visionOS app icon. Should be a 1024x1024 image. Falls back to :ref:`icons/icon_1024x1024<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024>`, then :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>` when empty. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **icons/icon_middle_layer_1024x1024** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_middle_layer_1024x1024>`
+
+Middle layer of the visionOS app icon. Should be a 1024x1024 image. See `App icons <https://developer.apple.com/design/human-interface-guidelines/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_modules/camera:
 
 .. rst-class:: classref-property
@@ -841,13 +891,37 @@ UUID профілю забезпечення. Якщо залишити поро
 
 ----
 
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/accessory_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description>`
+
+A message displayed when requesting access to controller tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/accessory_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/accessory_tracking_usage_description_localized>`
+
+A message displayed when requesting access to controller tracking on visionOS (localized).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons:
 
 .. rst-class:: classref-property
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`
 
-Причини використання програми активного API клавіатури. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1389,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collected>`
 
-Повідомляє, чи працює ваша заявка.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1401,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-Причини вашого додатку збирає адресу електронної пошти. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1413,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Повідомляємо, що адреса електронної пошти вашого додатку до ідентичності користувача.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1425,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2131,7 +2205,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collected>`
 
-Повідомляє, чи працює ваш додаток.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2143,7 +2217,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-Причини вашого додатку збирає номер телефону. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2155,7 +2229,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Повідомляє, чи працює ваш номер телефону для користувача.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2167,7 +2241,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Введіть номер мобільного, який Ви вказали при укладаннi договору з банком - для ідентифікації.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2301,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collected>`
 
-Повідомляє, чи працює ваша заявка фізична адреса.
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2239,7 +2313,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-Причини вашого додатку збирає фізична адреса. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2251,7 +2325,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Повідомляємо, що фізична адреса вашого додатку до ідентичності користувача.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2337,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2563,7 +2637,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/disk_space_access_reasons>`
 
-Причини використання вашого додатка безкоштовний інтерфейс дискового простору. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2575,7 +2649,31 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/file_timestamp_access_reasons>`
 
-Причини використання вашого додатка файл timestamp/metadata API. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **privacy/hand_tracking_usage_description** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description>`
+
+A message displayed when requesting access to hand tracking on visionOS (in English).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized:
+
+.. rst-class:: classref-property
+
+:ref:`Dictionary<class_Dictionary>` **privacy/hand_tracking_usage_description_localized** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/hand_tracking_usage_description_localized>`
+
+A message displayed when requesting access to hand tracking on visionOS (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2733,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/system_boot_time_access_reasons>`
 
-Причини часу завантаження програми / абсолютний час API. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2649,7 +2747,11 @@ UUID профілю забезпечення. Якщо залишити поро
 
 Список інтернет- доменів вашого додатка підключається до того, що за допомогою відстеження. Див. `Privacy проявляються файли <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,7 +2775,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/user_defaults_access_reasons>`
 
-Причини використання вашого додатка API за замовчуванням. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2699,7 +2801,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **user_data/accessible_from_files_app** :ref:`🔗<class_EditorExportPlatformVisionOS_property_user_data/accessible_from_files_app>`
 
-Якщо ``true``, папка "Документи" можна отримати через додаток "Файли". Див. `LSПідтримкаВідкривання документівInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
+Якщо ``true``, папка "Документи" можна отримати через додаток "Файли". Див. `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
 
 .. rst-class:: classref-item-separator
 

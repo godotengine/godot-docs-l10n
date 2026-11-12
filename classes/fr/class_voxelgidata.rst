@@ -16,7 +16,7 @@ Description
 
 **VoxelGIData** contient de l'illumination global de voxel pré-calculée pour utiliser dans un nœud :ref:`VoxelGI<class_VoxelGI>`. **VoxelGIData** offre également plusieurs propriétés pour ajuster l'apparence finale de l'illumination globale. Ces propriétés peuvent être ajustées durant l'exécution sans avoir à pré-calculer le nœud :ref:`VoxelGI<class_VoxelGI>` à nouveau.
 
-\ **Note :** Pour éviter que les fichiers de scène basés sur du texte (``.tscn``) ne grandissent trop et deviennent lents pour charger et s'enregistrer, sauvegardez toujours **VoxelGIData** en un fichier de ressources binaire externe (``.res``) au lieu de l'intégrer à la scène. Cela peut être fait en cliquant sur la flèche descendante à côté de la ressource **VoxelGIData**, choisir **Édition**, cliquer sur l'icône de disquette en haut de l'inspecteur puis choisir **Enregistrer sous...**.
+\ **Note :** Pour éviter que les fichiers de scène basés sur du texte (\ ``.tscn``) ne grandissent trop et deviennent lents pour charger et s'enregistrer, sauvegardez toujours **VoxelGIData** en un fichier de ressources binaire externe (\ ``.res``) au lieu de l'intégrer à la scène. Cela peut être fait en cliquant sur la flèche descendante à côté de la ressource **VoxelGIData**, choisir **Édition**, cliquer sur l'icône de disquette en haut de l'inspecteur puis choisir **Enregistrer sous...**.
 
 .. rst-class:: classref-introduction-group
 
@@ -110,7 +110,7 @@ Le biais des normales à utiliser pour l'éclairage indirect et les réflexions.
 - |void| **set_dynamic_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dynamic_range**\ (\ )
 
-La plage dynamique à utiliser (``1.0`` représente une luminosité de la scène à plage dynamique basse). Des valeurs plus élevées peuvent être utilisées pour fournir un éclairage indirect plus lumineux, au coût de bandes de couleur plus visibles dans les zones sombres (à la fois dans l'éclairage indirect et dans les réflexions). Pour éviter les bandes des couleurs, il est recommandé d'utiliser la valeur la plus basse qui n'entraîne pas de coupure visible dans la lumière.
+La plage dynamique à utiliser (\ ``1.0`` représente une luminosité de la scène à plage dynamique basse). Des valeurs plus élevées peuvent être utilisées pour fournir un éclairage indirect plus lumineux, au coût de bandes de couleur plus visibles dans les zones sombres (à la fois dans l'éclairage indirect et dans les réflexions). Pour éviter les bandes des couleurs, il est recommandé d'utiliser la valeur la plus basse qui n'entraîne pas de coupure visible dans la lumière.
 
 .. rst-class:: classref-item-separator
 

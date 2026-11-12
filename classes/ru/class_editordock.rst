@@ -9,7 +9,7 @@ EditorDock
 
 **Наследует:** :ref:`MarginContainer<class_MarginContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Наследуется от:** :ref:`FileSystemDock<class_FileSystemDock>`
+**Наследуется от:** :ref:`FileSystemDock<class_FileSystemDock>`, :ref:`ScriptEditor<class_ScriptEditor>`
 
 Встраиваемый контейнер для редактора.
 
@@ -61,33 +61,35 @@ EditorDock — это узел :ref:`Container<class_Container>`, который
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                     | accessibility_region                                                  | ``true`` (overrides :ref:`Container<class_Container_property_accessibility_region>`) |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\] | :ref:`available_layouts<class_EditorDock_property_available_layouts>` | ``5``                                                                                |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                     | :ref:`closable<class_EditorDock_property_closable>`                   | ``false``                                                                            |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`DockSlot<enum_EditorDock_DockSlot>`                   | :ref:`default_slot<class_EditorDock_property_default_slot>`           | ``-1``                                                                               |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>`                           | :ref:`dock_icon<class_EditorDock_property_dock_icon>`                 |                                                                                      |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`Shortcut<class_Shortcut>`                             | :ref:`dock_shortcut<class_EditorDock_property_dock_shortcut>`         |                                                                                      |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                     | :ref:`force_show_icon<class_EditorDock_property_force_show_icon>`     | ``false``                                                                            |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                     | :ref:`global<class_EditorDock_property_global>`                       | ``true``                                                                             |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`StringName<class_StringName>`                         | :ref:`icon_name<class_EditorDock_property_icon_name>`                 | ``&""``                                                                              |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                                 | :ref:`layout_key<class_EditorDock_property_layout_key>`               | ``""``                                                                               |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                                 | :ref:`title<class_EditorDock_property_title>`                         | ``""``                                                                               |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`Color<class_Color>`                                   | :ref:`title_color<class_EditorDock_property_title_color>`             | ``Color(0, 0, 0, 0)``                                                                |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                     | :ref:`transient<class_EditorDock_property_transient>`                 | ``false``                                                                            |
-   +-------------------------------------------------------------+-----------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | accessibility_region                                                      | ``true`` (overrides :ref:`Container<class_Container_property_accessibility_region>`) |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | :ref:`allow_switch_screen<class_EditorDock_property_allow_switch_screen>` | ``false``                                                                            |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\] | :ref:`available_layouts<class_EditorDock_property_available_layouts>`     | ``5``                                                                                |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | :ref:`closable<class_EditorDock_property_closable>`                       | ``false``                                                                            |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`DockSlot<enum_EditorDock_DockSlot>`                   | :ref:`default_slot<class_EditorDock_property_default_slot>`               | ``-1``                                                                               |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                           | :ref:`dock_icon<class_EditorDock_property_dock_icon>`                     |                                                                                      |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`Shortcut<class_Shortcut>`                             | :ref:`dock_shortcut<class_EditorDock_property_dock_shortcut>`             |                                                                                      |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | :ref:`force_show_icon<class_EditorDock_property_force_show_icon>`         | ``false``                                                                            |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | :ref:`global<class_EditorDock_property_global>`                           | ``true``                                                                             |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`                         | :ref:`icon_name<class_EditorDock_property_icon_name>`                     | ``&""``                                                                              |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                 | :ref:`layout_key<class_EditorDock_property_layout_key>`                   | ``""``                                                                               |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                 | :ref:`title<class_EditorDock_property_title>`                             | ``""``                                                                               |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`                                   | :ref:`title_color<class_EditorDock_property_title_color>`                 | ``Color(0, 0, 0, 0)``                                                                |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                     | :ref:`transient<class_EditorDock_property_transient>`                     | ``false``                                                                            |
+   +-------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -103,6 +105,8 @@ EditorDock — это узел :ref:`Container<class_Container>`, который
    | |void| | :ref:`_save_layout_to_config<class_EditorDock_private_method__save_layout_to_config>`\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| |const| |
    +--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void| | :ref:`_update_layout<class_EditorDock_private_method__update_layout>`\ (\ layout\: :ref:`int<class_int>`\ ) |virtual|                                                                              |
+   +--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`_update_layout_and_slot<class_EditorDock_private_method__update_layout_and_slot>`\ (\ layout\: :ref:`int<class_int>`, slot\: :ref:`int<class_int>`\ ) |virtual|                              |
    +--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void| | :ref:`close<class_EditorDock_method_close>`\ (\ )                                                                                                                                                  |
    +--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -126,7 +130,7 @@ EditorDock — это узел :ref:`Container<class_Container>`, который
 
 **closed**\ (\ ) :ref:`🔗<class_EditorDock_signal_closed>`
 
-Событие возникает при закрытии панели Dock с помощью кнопки «Закрыть» во всплывающем окне контекста, до того, как панель будет удалена из родительского элемента. См. :ref:`closable<class_EditorDock_property_closable>`.
+Emitted when the dock is closed, before it's removed from its parent. The dock can be closed using Close button in the dock popup, using :ref:`close()<class_EditorDock_method_close>`, or as a result of a layout change.
 
 .. rst-class:: classref-item-separator
 
@@ -179,13 +183,21 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 Позволяет сделать док-станцию плавающей (открывается как отдельное окно).
 
+.. _class_EditorDock_constant_DOCK_LAYOUT_MAIN_SCREEN:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_MAIN_SCREEN** = ``8``
+
+Allows using the dock as main screen.
+
 .. _class_EditorDock_constant_DOCK_LAYOUT_ALL:
 
 .. rst-class:: classref-enumeration-constant
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_ALL** = ``7``
 
-Позволяет разместить док-станцию во всех доступных слотах.
+Allows placing the dock in all available slots, except in main screen.
 
 .. rst-class:: classref-item-separator
 
@@ -293,11 +305,19 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 Док слот расположен внизу, под нижней панелью, с правой стороны.
 
+.. _class_EditorDock_constant_DOCK_SLOT_MAIN_SCREEN:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAIN_SCREEN** = ``11``
+
+The editor's main screen.
+
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAX** = ``11``
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAX** = ``12``
 
 Представляет размер перечисления :ref:`DockSlot<enum_EditorDock_DockSlot>`.
 
@@ -309,6 +329,23 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 Описания свойств
 --------------------------------
+
+.. _class_EditorDock_property_allow_switch_screen:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **allow_switch_screen** = ``false`` :ref:`🔗<class_EditorDock_property_allow_switch_screen>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_allow_switch_screen**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_allow_switch_screen**\ (\ )
+
+If ``true`` and this dock is docked in the main screen, selecting a node in the scene tree can switch away from this dock. The selected node needs to be handled by another main screen dock (2D, 3D) for the switch to happen.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_EditorDock_property_available_layouts:
 
@@ -551,11 +588,30 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 |void| **_update_layout**\ (\ layout\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__update_layout>`
 
+**Устарело:** Use :ref:`_update_layout_and_slot()<class_EditorDock_private_method__update_layout_and_slot>` instead.
+
 Реализуйте этот метод для обработки переключения макета для этой панели DockLayout. ``layout`` — одна из констант :ref:`DockLayout<enum_EditorDock_DockLayout>`.
 
 ::
 
     func _update_layout(layout):
+        box_container.vertical = (layout == DOCK_LAYOUT_VERTICAL)
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorDock_private_method__update_layout_and_slot:
+
+.. rst-class:: classref-method
+
+|void| **_update_layout_and_slot**\ (\ layout\: :ref:`int<class_int>`, slot\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__update_layout_and_slot>`
+
+Implement this method to handle the layout/slot switching for this dock. ``layout`` is one of the :ref:`DockLayout<enum_EditorDock_DockLayout>` constants, and ``slot`` is one of the :ref:`DockSlot<enum_EditorDock_DockSlot>` ones.
+
+::
+
+    func _update_layout_and_slot(layout, slot):
         box_container.vertical = (layout == DOCK_LAYOUT_VERTICAL)
 
 .. rst-class:: classref-item-separator

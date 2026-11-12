@@ -110,7 +110,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 Результирующий массив путей из навигационного запроса. Все позиции массива путей находятся в глобальных координатах. Без настраиваемых параметров запроса это тот же путь, который возвращается :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 ``ObjectID`` :ref:`Object<class_Object>`, которые управляют регионами и связями, через которые проходит каждая точка пути.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 Тип навигационного примитива (регион или ссылка), через который проходит каждая точка пути.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

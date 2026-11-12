@@ -161,7 +161,11 @@ enum **ColorSpace**: :ref:`🔗<enum_Gradient_ColorSpace>`
 
 \ **Примітка:** налаштування цієї властивості оновлює всі кольори одночасно. Щоб оновити будь-який колір окремо, використовуйте :ref:`set_color()<class_Gradient_method_set_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +222,11 @@ enum **ColorSpace**: :ref:`🔗<enum_Gradient_ColorSpace>`
 
 \ **Примітка:** встановлення цієї властивості оновлює всі зміщення одночасно. Щоб оновити будь-яке зсув окремо, використовуйте :ref:`set_offset()<class_Gradient_method_set_offset>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

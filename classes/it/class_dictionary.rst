@@ -223,7 +223,7 @@ Per imporre un determinato tipo per le chiavi e i valori, è possibile creare un
 
 \ **Nota:** Rimuovere elementi durante un'iterazione su un dizionario **non** è supportato e causerà comportamenti imprevedibili.
 
-\ **Nota:** In un contesto booleano, un dizionario sarà valutato come ``false`` se è vuoto (``{}``). Altrimenti, un dizionario sarà sempre valutato come ``true``.
+\ **Nota:** In un contesto booleano, un dizionario sarà valutato come ``false`` se è vuoto (\ ``{}``). Altrimenti, un dizionario sarà sempre valutato come ``true``.
 
 .. note::
 
@@ -900,7 +900,7 @@ Restituisce ``true`` se i due dizionari contengono le stesse chiavi e valori, le
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Imposta il valore dell'elemento alla chiave ``key`` sul valore ``value``. Restituisce ``true`` se il valore è impostato correttamente. Fallisce e restituisce ``false`` se il dizionario è di sola lettura o se ``key`` e ``value`` non corrispondono ai tipi del dizionario. Questo equivale a usare l'operatore ``[]`` (``dict[key] = value``).
+Imposta il valore dell'elemento alla chiave ``key`` sul valore ``value``. Restituisce ``true`` se il valore è impostato correttamente. Fallisce e restituisce ``false`` se il dizionario è di sola lettura o se ``key`` e ``value`` non corrispondono ai tipi del dizionario. Questo equivale a usare l'operatore ``[]`` (\ ``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 
@@ -912,7 +912,7 @@ Imposta il valore dell'elemento alla chiave ``key`` sul valore ``value``. Restit
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_size>`
 
-Restituisce il numero di voci nel dizionario. I dizionari vuoti (``{ }``) restituiscono sempre ``0``. Vedi anche :ref:`is_empty()<class_Dictionary_method_is_empty>`.
+Restituisce il numero di voci nel dizionario. I dizionari vuoti (\ ``{ }``) restituiscono sempre ``0``. Vedi anche :ref:`is_empty()<class_Dictionary_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -924,7 +924,7 @@ Restituisce il numero di voci nel dizionario. I dizionari vuoti (``{ }``) restit
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Dictionary_method_sort>`
 
-Ordina il dizionario in ordine crescente, per chiave. L'ordine finale dipende dal confronto "minore di" (``<``) tra le chiavi.
+Ordina il dizionario in ordine crescente, per chiave. L'ordine finale dipende dal confronto "minore di" (\ ``<``) tra le chiavi.
 
 
 .. tabs::

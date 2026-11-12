@@ -45,6 +45,8 @@ ScriptEditorBase
 
 **edited_script_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_edited_script_changed>`
 
+**Устарело:** This signal should only be used internally.
+
 Выдается после проверки скрипта.
 
 .. rst-class:: classref-item-separator
@@ -56,6 +58,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **go_to_help**\ (\ what\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_help>`
+
+**Устарело:** This signal should only be used internally. See :ref:`ScriptEditor.goto_help()<class_ScriptEditor_method_goto_help>` instead.
 
 Генерируется, когда пользователь запрашивает определенную страницу документации.
 
@@ -69,6 +73,8 @@ ScriptEditorBase
 
 **go_to_method**\ (\ script\: :ref:`Object<class_Object>`, method\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_method>`
 
+**Устарело:** This signal should only be used internally.
+
 Генерируется, когда пользователь запрашивает просмотр определенного метода скрипта, аналогично :ref:`request_open_script_at_line<class_ScriptEditorBase_signal_request_open_script_at_line>`.
 
 .. rst-class:: classref-item-separator
@@ -80,6 +86,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **name_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_name_changed>`
+
+**Устарело:** This signal should only be used internally.
 
 Выдается после проверки скрипта или при изменении редактируемого ресурса.
 
@@ -93,6 +101,8 @@ ScriptEditorBase
 
 **replace_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_replace_in_files_requested>`
 
+**Устарело:** This signal should only be used internally.
+
 Генерируется, когда пользователь запрашивает поиск и замену текста в файловой системе.
 
 .. rst-class:: classref-item-separator
@@ -104,6 +114,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **request_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_help>`
+
+**Устарело:** This signal should only be used internally.
 
 Генерируется, когда пользователь запрашивает контекстную помощь.
 
@@ -117,6 +129,8 @@ ScriptEditorBase
 
 **request_open_script_at_line**\ (\ script\: :ref:`Object<class_Object>`, line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_open_script_at_line>`
 
+**Устарело:** This signal should only be used internally. See :ref:`EditorInterface.edit_script()<class_EditorInterface_method_edit_script>` instead.
+
 Генерируется, когда пользователь запрашивает просмотр определенной строки скрипта, аналогично :ref:`go_to_method<class_ScriptEditorBase_signal_go_to_method>`.
 
 .. rst-class:: classref-item-separator
@@ -129,7 +143,9 @@ ScriptEditorBase
 
 **request_save_history**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_history>`
 
-Вызывается, когда контекстный переход (goto) пользователя и элемент находятся в одном и том же скрипте.
+**Устарело:** This signal should only be used internally.
+
+Emitted when the editor requests to save a new history navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +157,9 @@ ScriptEditorBase
 
 **request_save_previous_state**\ (\ state\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_previous_state>`
 
-Вызывается, когда пользователь изменяет текущий скрипт или перемещает курсор на 10 или более столбцов в пределах одного скрипта.
+**Устарело:** This signal should only be used internally.
+
+Emitted when the editor requests an update to its navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -152,6 +170,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **search_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_search_in_files_requested>`
+
+**Устарело:** This signal should only be used internally.
 
 Генерируется, когда пользователь запрашивает поиск текста в файловой системе.
 

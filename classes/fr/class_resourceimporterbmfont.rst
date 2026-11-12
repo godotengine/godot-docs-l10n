@@ -7,7 +7,7 @@ ResourceImporterBMFont
 
 **Hérite de :** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Importe une police matricielle dans le format (``.fnt``) BMFont.
+Importe une police matricielle dans le format (\ ``.fnt``) BMFont.
 
 .. rst-class:: classref-introduction-group
 

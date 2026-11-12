@@ -14,11 +14,11 @@ Un material que define un cielo simple para un recurso :ref:`Sky<class_Sky>`.
 Descripción
 ----------------------
 
-**ProceduralSkyMaterial** provides a way to create an effective background quickly by defining procedural parameters for the sun, the sky and the ground. The sky and ground are defined by a main color, a color at the horizon, and an easing curve to interpolate between them. Suns are described by a position in the sky, a color, and a max angle from the sun at which the easing curve ends. The max angle therefore defines the size of the sun in the sky.
+**ProceduralSkyMaterial** proporciona una forma de crear rápidamente un fondo atractivo mediante la definición de parámetros procedimentales para el sol, el cielo y el suelo. El cielo y el suelo se definen mediante un color principal, un color en el horizonte y una curva de suavizado para interpolar entre ambos. Los soles se describen mediante una posición en el cielo, un color y un ángulo máximo con respecto al sol, en el que termina la curva de suavizado. Por tanto, el ángulo máximo define el tamaño del sol en el cielo.
 
-\ **ProceduralSkyMaterial** supports up to 4 suns, using the color, and energy, direction, and angular distance of the first four :ref:`DirectionalLight3D<class_DirectionalLight3D>` nodes in the scene. This means that the suns are defined individually by the properties of their corresponding :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s and globally by :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` and :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>`.
+\ **ProceduralSkyMaterial** admite hasta 4 soles y utiliza el color, la energía, la dirección y la distancia angular de los cuatro primeros nodos :ref:`DirectionalLight3D<class_DirectionalLight3D>` de la escena. Esto significa que los soles se definen individualmente mediante las propiedades de sus correspondientes nodos :ref:`DirectionalLight3D<class_DirectionalLight3D>` y, globalmente, mediante :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` y :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>`.
 
-\ **ProceduralSkyMaterial** uses a lightweight shader to draw the sky and is therefore suited for real-time updates. This makes it a great option for a sky that is simple and computationally cheap, but unrealistic. If you need a more realistic procedural option, use :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`.
+\ **ProceduralSkyMaterial** utiliza un shader ligero para dibujar el cielo, por lo que es adecuado para actualizaciones en tiempo real. Esto lo convierte en una excelente opción para crear un cielo sencillo y poco exigente desde el punto de vista computacional, aunque poco realista. Si necesitas una opción procedimental más realista, utiliza :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`.
 
 .. rst-class:: classref-reftable-group
 

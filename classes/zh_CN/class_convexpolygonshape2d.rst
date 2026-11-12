@@ -70,7 +70,11 @@ ConvexPolygonShape2D
 
 \ **警告：**\ 请务必将这个属性设置为能够形成凸包的顶点列表。可以使用 :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` 从任意顶点集生成凸包。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

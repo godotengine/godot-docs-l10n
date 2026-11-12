@@ -197,7 +197,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 Текстурний фільтр зчитує дані з найближчого пікселя та змішує їх між двома міп-картами (або використовує найближчу міп-карту, якщо :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` має значення ``true``) на основі кута між поверхнею та полем зору камери. Це робить текстуру пікселізованою зблизька та гладкою здалеку. Анізотропна фільтрація покращує якість текстури на поверхнях, які майже розташовані на одній лінії з камерою, але трохи повільніша. Рівень анізотропної фільтрації можна змінити, налаштувавши :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
-\ **Примітка:** Цей текстурний фільтр рідко корисний у 2D-проектах. У цьому випадку зазвичай доречніше значення :ref:`FILTER_NEAREST_MIMPAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIMPAP>`.
+\ **Примітка:** Цей текстурний фільтр рідко корисний у 2D-проектах. У цьому випадку зазвичай доречніше значення :ref:`FILTER_NEAREST_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP>`.
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP_ANISOTROPIC:
 
@@ -207,7 +207,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 Текстурний фільтр змішує найближчі 4 пікселі та змішує 2 міп-карти (або використовує найближчу міп-карту, якщо :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` має значення ``true``) на основі кута між поверхнею та полем зору камери. Це робить текстуру гладкою зблизька та гладкою здалеку. Анізотропна фільтрація покращує якість текстури на поверхнях, які майже розташовані на одній лінії з камерою, але трохи повільніша. Рівень анізотропної фільтрації можна змінити, налаштувавши :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
-\ **Примітка:** Цей текстурний фільтр рідко корисний у 2D-проектах. У цьому випадку зазвичай доречніше значення :ref:`FILTER_LINEAR_MIMPAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIMPAP>`.
+\ **Примітка:** Цей текстурний фільтр рідко корисний у 2D-проектах. У цьому випадку зазвичай доречніше значення :ref:`FILTER_LINEAR_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP>`.
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_MAX:
 

@@ -218,7 +218,7 @@ MobileVRInterface
 
 Мінімальний радіус навколо вогнища, де повна якість гарантована, якщо VRS використовується як відсоток розміру екрану.
 
-\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport. VRS_XR<class_Viewport_constant_ VRS_XR>`.
+\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ MobileVRInterface
 
 Потужність використовується для розрахунку карти щільності VRS. Чим більше це значення, тим більш помітні VRS. Це покращує продуктивність за вартістю якості.
 
-\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport. VRS_XR<class_Viewport_constant_ VRS_XR>`.
+\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

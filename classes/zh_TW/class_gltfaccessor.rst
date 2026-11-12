@@ -365,7 +365,11 @@ glTF 元件型別列舉。可能的取值見 :ref:`GLTFComponentType<enum_GLTFAc
 
 該存取器中每個元件的最大值。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +388,11 @@ glTF 元件型別列舉。可能的取值見 :ref:`GLTFComponentType<enum_GLTFAc
 
 該存取器中每個元件的最小值。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat64Array<class_PackedFloat64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

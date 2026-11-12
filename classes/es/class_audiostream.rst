@@ -169,7 +169,9 @@ Devuelve los parámetros controlables de este flujo. Este array contiene diccion
 
 :ref:`String<class_String>` **_get_stream_name**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_stream_name>`
 
-Sobrescribe este método para proporcionar el nombre que aparecerá en el menú de visibilidad del gizmo.
+**Obsoleto:** This method is not used by the engine.
+
+Override this method to customize the name assigned to this audio stream.
 
 .. rst-class:: classref-item-separator
 

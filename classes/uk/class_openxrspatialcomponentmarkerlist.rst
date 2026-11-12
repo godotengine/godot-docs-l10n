@@ -79,7 +79,7 @@ enum **MarkerType**: :ref:`🔗<enum_OpenXRSpatialComponentMarkerList_MarkerType
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_ARUCO** = ``3``
 
-Маркер на основі коду Aruco.
+Marker based on an ArUco code.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_APRIL_TAG:
 
@@ -124,7 +124,7 @@ enum **MarkerType**: :ref:`🔗<enum_OpenXRSpatialComponentMarkerList_MarkerType
 
 :ref:`int<class_int>` **get_marker_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_id>`
 
-Повертає ідентифікатор маркера за цим ``index``. Застосовується лише для маркерів Aruco або April Tag.
+Returns the marker ID for the marker at this ``index``. Only applicable for ArUco or April Tag markers.
 
 .. rst-class:: classref-item-separator
 

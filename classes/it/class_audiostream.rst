@@ -169,7 +169,9 @@ Restituite i parametri controllabili di questo flusso. Questo array contiene diz
 
 :ref:`String<class_String>` **_get_stream_name**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_stream_name>`
 
-Sovrascrivi questo metodo per personalizzare il nome assegnato a questo flusso audio. Non usato dal motore.
+**Deprecato:** This method is not used by the engine.
+
+Override this method to customize the name assigned to this audio stream.
 
 .. rst-class:: classref-item-separator
 

@@ -169,7 +169,9 @@ AudioStream
 
 :ref:`String<class_String>` **_get_stream_name**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_stream_name>`
 
-重寫此方法以自訂此音訊流所使用的名稱（引擎本身不會使用）。
+**已棄用：** This method is not used by the engine.
+
+Override this method to customize the name assigned to this audio stream.
 
 .. rst-class:: classref-item-separator
 

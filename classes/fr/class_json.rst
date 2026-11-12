@@ -14,45 +14,45 @@ Classe d'aide pour créer et interpréter des données JSON.
 Description
 -----------
 
-La classe **JSON** permet à tous les types de données d'être convertis en et d'une chaîne JSON. Ceci est utile pour la sérialisation de données, par exemple pour enregistrer dans un fichier ou envoyer sur le réseau.
+The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
 
-\ :ref:`stringify()<class_JSON_method_stringify>` est utilisée pour convertir tout type de données en une chaîne JSON.
+\ :ref:`stringify()<class_JSON_method_stringify>` is used to convert any data type into a JSON string.
 
-\ :ref:`parse()<class_JSON_method_parse>` est utilisée pour convertir des données JSON existantes en un :ref:`Variant<class_Variant>` qui peut être utilisé dans Godot. Si parsé avec succès, utilisez :ref:`data<class_JSON_property_data>` pour récupérer le :ref:`Variant<class_Variant>` et utilisez :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` pour vérifier si le type du Variant est celui que vous attendez. Les objets JSON sont convertis en un :ref:`Dictionary<class_Dictionary>`, mais les données JSON peuvent être utilisées pour stocker des :ref:`Array<class_Array>`\ s, des nombres, des :ref:`String<class_String>`\ s et même seulement un booléen.
+\ :ref:`parse()<class_JSON_method_parse>` is used to convert any existing JSON data into a :ref:`Variant<class_Variant>` that can be used within Godot. If successfully parsed, use :ref:`data<class_JSON_property_data>` to retrieve the :ref:`Variant<class_Variant>`, and use :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` to check if the Variant's type is what you expect. JSON Objects are converted into a :ref:`Dictionary<class_Dictionary>`, but JSON data can be used to store :ref:`Array<class_Array>`\ s, numbers, :ref:`String<class_String>`\ s and even just a boolean.
 
 ::
 
-    var donnees_a_envoyer = ["a", "b", "c"]
-    var chaine_json = JSON.stringify(donnees_a_envoyer)
-    # Sauvegarder les données
+    var data_to_send = ["a", "b", "c"]
+    var json_string = JSON.stringify(data_to_send)
+    # Save data
     # ...
-    # Récupérer les données
+    # Retrieve data
     var json = JSON.new()
-    var erreur = json.parse(chaine_json)
-    if erreur == OK:
-        var donnees_recues = json.data
-        if typeof(donnees_recues) == TYPE_ARRAY:
-            print(donnees_recues) # Affiche le tableau.
+    var error = json.parse(json_string)
+    if error == OK:
+        var data_received = json.data
+        if typeof(data_received) == TYPE_ARRAY:
+            print(data_received) # Prints the array.
         else:
-            print("Données inattendues")
+            print("Unexpected data")
     else:
-        print("Erreur du parsing JSON : ", json.get_error_message(), " dans ", json_string, " à la ligne ", json.get_error_line())
+        print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
 
-Alternativement, vous pouvez parser des chaînes en utilisant la méthode statique :ref:`parse_string()<class_JSON_method_parse_string>`, mais il ne gère pas les erreurs.
+Alternatively, you can parse strings using the static :ref:`parse_string()<class_JSON_method_parse_string>` method, but it doesn't handle errors.
 
 ::
 
-    var donnes = JSON.parse_string(chaine_json) # Renvoie null si le parsing a echoué.
+    var data = JSON.parse_string(json_string) # Returns null if parsing failed.
 
-\ **Note :** Les deux méthodes de parsing ne sont pas entièrement conformes à la spécification JSON :
+\ **Note:** Both parse methods do not fully comply with the JSON specification:
 
-- Les virgules de fin dans les tableaux ou les objets sont ignorées, au lieu de causer une erreur de parsing.
+- Trailing commas in arrays or objects are ignored, instead of causing a parser error.
 
-- Les caractères de nouvelle ligne et de tabulations sont acceptés en caractères alphabétiques et sont traités comme leurs séquences d'échappement correspondantes ``\n`` et ``\t``.
+- New line and tab characters are accepted in string literals, and are treated like their corresponding escape sequences ``\n`` and ``\t``.
 
-- Les chiffres sont parsés en utilisant :ref:`String.to_float()<class_String_method_to_float>` qui est généralement plus laxiste que la spécification JSON.
+- Numbers are parsed using :ref:`String.to_float()<class_String_method_to_float>` which is generally more lax than the JSON specification.
 
-- Certaines erreurs, telles que les séquences Unicode invalides, ne provoquent pas d'erreur de parsing. Au lieu de cela, la chaîne est nettoyée et une erreur est affichée dans la console.
+- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleaned up and an error is logged to the console.
 
 .. rst-class:: classref-reftable-group
 
@@ -216,51 +216,51 @@ Essaie de parser le ``json_string`` fourni et renvoie les données parsées. Ren
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Convertit une variable :ref:`Variant<class_Variant>` en texte JSON et renvoie le résultat. Utile pour sérialiser les données pour les enregistrer ou les envoyer à travers le réseau.
+Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
 
-\ **Note :** Les spécifications du JSON ne définissent pas de types entier ou flottant, et ne définissent que le type commun *number*. Donc, convertir un Variant en JSON transformera tous les nombres en type :ref:`float<class_float>`.
+If ``sort_keys`` is ``true``, the keys of any :ref:`Dictionary<class_Dictionary>`\ s are sorted alphabetically when converting to JSON. If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
 
-\ **Note :** Si ``full_precision`` vaut ``true``, lors de la conversion des flottants, les chiffres non fiables sont convertis avec les chiffres fiables pour garantir un décodage exact.
+\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
 
-La paramètre ``indent`` contrôle si et comment le JSON doit être indenté, la chaine de caractères utilisé pour ce paramètre sera utilisé pour l'indentation de la sortie, et même les espaces ``"   "`` fonctionneront. ``\t`` et ``\n`` peuvent aussi être utilisé pour la tabulation, ou pour le retour à la ligne, respectivement.
+The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively. If set to an empty string, the JSON will be on a single line with no spacing, which allows for smaller file sizes.
 
-\ **Avertissement :** Les nombres non-finis ne sont pas gérés par JSON. Toute occurrences de :ref:`@GDScript.INF<class_@GDScript_constant_INF>` sera remplacée par ``1e99999``, et négatif :ref:`@GDScript.INF<class_@GDScript_constant_INF>` sera remplacé par ``-1e99999``, mais ils pourront être interprétés correctement par la plupart des analyseurs JSON. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` sera remplacé par ``null``, et ne sera pas interprété en NaN par les analyseurs JSON. Si vous attendez des nombres non-finis, considérez de passer vos données par :ref:`from_native()<class_JSON_method_from_native>` avant toute opération.
+\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
 
-\ **Exemples de sortie :**\ 
+\ **Example output:**\ 
 
 ::
 
-    ## JSON.print(my_dictionary)
-    {"name" :"mon_dictionnaire","version" :"1.0.0","entities" :[{"name" :"élément_0","value" :"valeur_0"},{"name" :"élément_1","value" :"valeur_1"}]}
+    ## JSON.stringify(my_dictionary, "", false)
+    {"name":"my_dictionary","version":"1.0.0","entities":[{"name":"entity_0","value":"value_0"},{"name":"entity_1","value":"value_1"}]}
 
-    ## JSON.print(my_dictionary, "\t")
+    ## JSON.stringify(my_dictionary, "\t", false)
     {
-        "name" : "mon_dictionnaire",
-        "version" : "1.0.0",
-        "entities" : [
+        "name": "my_dictionary",
+        "version": "1.0.0",
+        "entities": [
             {
-                "name" : "élément_0",
-                "value" : "valeur_0"
+                "name": "entity_0",
+                "value": "value_0"
             },
             {
-                "name" : "élément_1",
-                "value" : "valeur_1"
+                "name": "entity_1",
+                "value": "value_1"
             }
         ]
     }
 
-    ## JSON.print(my_dictionary, "...")
+    ## JSON.stringify(my_dictionary, "...", false)
     {
-    ..."name" : "mon_dictionnaire",
-    ..."version" : "1.0.0",
-    ..."entities" : [
+    ..."name": "my_dictionary",
+    ..."version": "1.0.0",
+    ..."entities": [
     ......{
-    ........."name" : "élément_0",
-    ........."value" : "valeur_0"
+    ........."name": "entity_0",
+    ........."value": "value_0"
     ......},
     ......{
-    ........."name" : "élément_1",
-    ........."value" : "valeur_1"
+    ........."name": "entity_1",
+    ........."value": "value_1"
     ......}
     ...]
     }

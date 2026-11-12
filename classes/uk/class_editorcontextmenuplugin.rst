@@ -14,9 +14,9 @@ EditorContextMenuPlugin
 Опис
 --------
 
-**EditorContextMenuPlugin** дозволяє додавати спеціальні параметри в контекстне меню редактора.
+**EditorContextMenuPlugin** allows for the addition of custom options in the editor's context menu. Register them with :ref:`EditorPlugin.add_context_menu_plugin()<class_EditorPlugin_method_add_context_menu_plugin>`.
 
-Наразі контекстні меню підтримуються для трьох часто використовуваних областей: файлової системи, дерева сцен і панелі списку сценаріїв редактора.
+See :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` for the list of available areas where context menu plugins are supported.
 
 .. rst-class:: classref-reftable-group
 
@@ -26,6 +26,8 @@ EditorContextMenuPlugin
 .. table::
    :widths: auto
 
+   +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`_get_menu_options<class_EditorContextMenuPlugin_private_method__get_menu_options>`\ (\ data\: :ref:`Dictionary<class_Dictionary>`\[:ref:`StringName<class_StringName>`, :ref:`Variant<class_Variant>`\]\ ) |virtual|                                  |
    +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void| | :ref:`_popup_menu<class_EditorContextMenuPlugin_private_method__popup_menu>`\ (\ paths\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual|                                                                                                     |
    +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -59,7 +61,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCENE_TREE** = ``0``
 
-Контекстне меню док-станції Scene. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` зі списком шляхів до поточних вибраних вузлів, тоді як зворотний виклик опції отримає список поточних вибраних вузлів.
+Context menu of Scene dock. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_nodes": Array[Node]`` - The list of currently selected nodes (same as :ref:`EditorSelection.get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`).
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_FILESYSTEM:
 
@@ -67,7 +71,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_FILESYSTEM** = ``1``
 
-Контекстне меню дока файлової системи. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` та опцію зворотного виклику зі списком шляхів до вибраних файлів.
+Context menu of FileSystem dock. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_files": PackedStringArray`` - The list of selected files.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_SCRIPT_EDITOR:
 
@@ -75,7 +81,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCRIPT_EDITOR** = ``2``
 
-Контекстне меню вкладок скрипти редактора скрипт. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` із шляхом до поточного редагованого скрипту, тоді як зворотний виклик опції отримає посилання на цей скрипт.
+Context menu of Script editor's script tabs and Shader editor's shader tabs. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_resource": Resource`` - The currently selected resource. Can be a :ref:`Script<class_Script>`, a :ref:`Shader<class_Shader>`, a text file, or ``null`` in case of help pages.
+
+\ ``&"path": String`` - The path of the selected file. If a help page is selected, the path will be the name of the opened class, prefixed with ``help:``.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_FILESYSTEM_CREATE:
 
@@ -83,12 +93,16 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_FILESYSTEM_CREATE** = ``3``
 
-Підменю "Створити..." контекстного меню дока файлової системи або розділ "Нове" головного контекстного меню після натискання на порожнє місце. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` та опцію зворотного виклику зі шляхом до поточної вибраної папки. Після натискання на порожнє місце список шляхів для методу popup буде порожнім.
+The "Create..." submenu of FileSystem dock's context menu, or the "New" section of the main context menu when empty space is clicked. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"base_directory": String`` - Path to the base directory where a file should be created.
+
+\ ``&"needs_prefix": bool`` - Whether the option needs a "New" prefix (for consistency with native options).
 
 ::
 
-    func _popup_menu(paths):
-        if paths.is_empty():
+    func _get_menu_options(data):
+        if data["needs_prefix"]:
             add_context_menu_item("New Image File...", create_image)
         else:
             add_context_menu_item("Image File...", create_image)
@@ -99,14 +113,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCRIPT_EDITOR_CODE** = ``4``
 
-Контекстне меню редактора коду редактора скриптів Script Editor. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` із шляхом до вузла :ref:`CodeEdit<class_CodeEdit>`. Ви можете отримати його за допомогою цього коду:
+Context menu of Script editor's code editor. The data :ref:`Dictionary<class_Dictionary>` contains:
 
-::
+\ ``&"code_edit": CodeEdit`` - The code editor instance.
 
-    func _popup_menu(paths):
-        var code_edit = Engine.get_main_loop().root.get_node(paths[0]);
-
-Зворотний виклик опції отримає посилання на цей вузол. Ви можете використовувати методи :ref:`CodeEdit<class_CodeEdit>` для пошуку символів тощо.
+\ ``&"file_path": String`` - Path to the currently edited file.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_SCENE_TABS:
 
@@ -114,7 +125,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCENE_TABS** = ``5``
 
-Контекстне меню вкладок сцени. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` буде викликано з шляхом до клацнутої сцени, або порожнім :ref:`PackedStringArray<class_PackedStringArray>`, якщо меню було відкрито на порожньому місці. Зворотний виклик опції отримає шлях до клацнутої сцени або порожній :ref:`String<class_String>`, якщо не було клацання.
+Context menu of scene tabs. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_scene": String`` - Scene path of the selected/clicked scene tab. Empty if empty space was clicked.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_2D_EDITOR:
 
@@ -122,14 +135,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_2D_EDITOR** = ``6``
 
-Контекстне меню основного контекстного меню правої кнопки миші 2D-редактора. Буде викликано :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` зі шляхами до всіх вузлів :ref:`CanvasItem<class_CanvasItem>` під курсором. Ви можете отримати їх за допомогою цього коду:
+Context menu of the 2D editor's viewport. The data :ref:`Dictionary<class_Dictionary>` contains:
 
-::
+\ ``&"hovered_nodes": Array[CanvasItem]`` - The :ref:`CanvasItem<class_CanvasItem>` nodes under the cursor.
 
-    func _popup_menu(paths):
-        var canvas_item = Engine.get_main_loop().root.get_node(paths[0]); # Замініть 0 на потрібний індекс.
-
-Масив paths порожній, якщо під курсором не було жодної вершини. Зворотний виклик опції отримає типізований масив вузлів :ref:`CanvasItem<class_CanvasItem>`.
+\ ``&"mouse_position": Vector2`` - The local mouse position in the 2D scene.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_INSPECTOR_PROPERTY:
 
@@ -137,7 +147,13 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
 
-Контекстне меню інспекторів, що викликається клацанням правою кнопкою миші. Метод :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` буде викликано з масивом із двох елементів: першим буде ідентифікатор об’єкта, другим — назва властивості. Об’єкт можна отримати за його ідентифікатором за допомогою методу :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` після перетворення ідентифікатора у ціле число. Функція-обробник callback отримає об’єкт EditorProperty безпосередньо.
+Context menu of an editor property in the inspector. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"property": EditorProperty`` - The clicked :ref:`EditorProperty<class_EditorProperty>` object.
+
+\ ``&"object": Object`` - The object edited by the inspector.
+
+\ ``&"property_name": StringName`` - The name of the object's property that was clicked.
 
 .. rst-class:: classref-section-separator
 
@@ -148,13 +164,27 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 Описи методів
 --------------------------
 
+.. _class_EditorContextMenuPlugin_private_method__get_menu_options:
+
+.. rst-class:: classref-method
+
+|void| **_get_menu_options**\ (\ data\: :ref:`Dictionary<class_Dictionary>`\[:ref:`StringName<class_StringName>`, :ref:`Variant<class_Variant>`\]\ ) |virtual| :ref:`🔗<class_EditorContextMenuPlugin_private_method__get_menu_options>`
+
+Called when creating a context menu, custom options can be added by using the :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>` or :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>` functions. ``data`` contains the context data, which differs depending on the context menu slot. See the descriptions of :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` for more information.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorContextMenuPlugin_private_method__popup_menu:
 
 .. rst-class:: classref-method
 
 |void| **_popup_menu**\ (\ paths\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_EditorContextMenuPlugin_private_method__popup_menu>`
 
-Спеціальні параметри, що викликаються під час створення контекстного меню, можна додати за допомогою функцій :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>` або :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>`. ``paths`` містить поточні вибрані шляхи (залежно від меню), які можна використовувати для умовного додавання параметрів.
+**Застаріло:** Use :ref:`_get_menu_options()<class_EditorContextMenuPlugin_private_method__get_menu_options>` instead.
+
+**Note:** Implementing this method makes the shortcut callbacks receive legacy data (for compatibility reasons).
 
 .. rst-class:: classref-item-separator
 
@@ -166,14 +196,14 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_menu_item**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_menu_item>`
 
-Додайте спеціальний параметр до контекстного меню зазначеного слота плагіна. Коли опцію активовано, буде викликано ``callback``. Зворотний виклик повинен приймати один аргумент :ref:`Array<class_Array>`; вміст масиву залежить від слота контекстного меню. 
+Add custom option to the context menu of the plugin's specified slot. ``callback`` should be a method that takes a single argument of type :ref:`Dictionary<class_Dictionary>`. It will be called when the option is activated and the data received in the callback is the same as in :ref:`_get_menu_options()<class_EditorContextMenuPlugin_private_method__get_menu_options>`.
 
 ::
- 
-    func _popup_menu(path): 
-        add_context_menu_item("File Custom options", handle, ICON)  
 
-Якщо ви хочете призначити ярлик для пункту меню, замість цього використовуйте :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>`.
+    func _get_menu_options(data):
+        add_context_menu_item("File Custom options", handle, ICON)
+
+If you want to assign shortcut to the menu item, use :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -185,15 +215,15 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_menu_item_from_shortcut**\ (\ name\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>`
 
-Додайте спеціальну опцію в контекстне меню зазначеного слота плагіна. Параметру буде призначено ``shortcut`` і повторно використовуватиметься зворотний виклик. Ярлик потрібно попередньо зареєструвати за допомогою :ref:`add_menu_shortcut()<class_EditorContextMenuPlugin_method_add_menu_shortcut>`.
+Add custom option to the context menu of the plugin's specified slot. The option will have the ``shortcut`` assigned and reuse its callback. The shortcut has to be registered beforehand with :ref:`add_menu_shortcut()<class_EditorContextMenuPlugin_method_add_menu_shortcut>`.
 
 ::
 
     func _init():
-    add_menu_shortcut(SHORTCUT, marker)
+        add_menu_shortcut(SHORTCUT, handle)
 
-    func _popup_menu(paths):
-    add_context_menu_item_from_shortcut("File Custom options", SHORTCUT, ICON)
+    func _get_menu_options(paths):
+        add_context_menu_item_from_shortcut("File Custom options", SHORTCUT, ICON)
 
 .. rst-class:: classref-item-separator
 
@@ -205,17 +235,17 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_submenu_item**\ (\ name\: :ref:`String<class_String>`, menu\: :ref:`PopupMenu<class_PopupMenu>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_submenu_item>`
 
-Додайте підменю до контекстного меню зазначеного слота плагіна. Підменю не обробляється автоматично, вам потрібно самостійно підключитися до його сигналів. Крім того, підменю звільняється при кожному спливаючому вікні, тому створюйте нове :ref:`PopupMenu<class_PopupMenu>` щоразу.
+Add a submenu to the context menu of the plugin's specified slot. The submenu is not automatically handled, you need to connect to its signals yourself. Also the submenu is freed on every popup, so provide a new :ref:`PopupMenu<class_PopupMenu>` every time.
 
 ::
 
-    func _popup_menu(paths):
-    var popup_menu = PopupMenu.new()
-    popup_menu.add_item("Blue")
-    popup_menu.add_item("While")
-    popup_menu.id_pressed.connect(_on_color_submenu_option)
+    func _get_menu_options(data):
+        var popup_menu = PopupMenu.new()
+        popup_menu.add_item("Blue")
+        popup_menu.add_item("White")
+        popup_menu.id_pressed.connect(_on_color_submenu_option)
 
-    add_context_submenu_item("Set Node Color node", popup_menu)
+        add_context_submenu_item("Set Node Color", popup_menu)
 
 .. rst-class:: classref-item-separator
 
@@ -227,12 +257,12 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_menu_shortcut**\ (\ shortcut\: :ref:`Shortcut<class_Shortcut>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_menu_shortcut>`
 
-Реєструє ярлик, пов’язаний із контекстним меню плагіна. Цей метод слід викликати один раз (наприклад, у плагіні :ref:`Object._init()<class_Object_private_method__init>`). ``callback`` буде викликано, коли користувач натискає вказаний ``shortcut`` під час дії контексту меню (наприклад, у фокусі док-станція FileSystem). Зворотний виклик повинен приймати один аргумент :ref:`Array<class_Array>`; вміст масиву залежить від слота контекстного меню.
+Registers a shortcut associated with the plugin's context menu. This method should be called once (e.g. in the plugin's :ref:`Object._init()<class_Object_private_method__init>`). ``callback`` will be called when user presses the specified ``shortcut`` while the menu's context is in effect (e.g. FileSystem dock is focused). Callback should take single data :ref:`Dictionary<class_Dictionary>`, same as in :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>`.
 
 ::
 
     func _init():
-    add_menu_shortcut(SHORTCUT, marker)
+        add_menu_shortcut(SHORTCUT, handle)
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

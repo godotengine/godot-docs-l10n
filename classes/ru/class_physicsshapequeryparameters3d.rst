@@ -14,7 +14,9 @@ PhysicsShapeQueryParameters3D
 Описание
 ----------------
 
-Изменяя различные свойства этого объекта, такие как форма, вы можете настраивать параметры методов :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`.
+By changing various properties of this object, such as the shape, you can configure the parameters for :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`'s methods.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

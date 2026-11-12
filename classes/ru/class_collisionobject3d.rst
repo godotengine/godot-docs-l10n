@@ -113,7 +113,7 @@ CollisionObject3D
 
 **input_event**\ (\ camera\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_signal_input_event>`
 
-Генерируется, когда объект получает необработанное :ref:`InputEvent<class_InputEvent>`. ``event_position`` — это местоположение указателя мыши в мировом пространстве на поверхности фигуры с индексом ``shape_idx``, а ``normal`` — это вектор нормали поверхности в этой точке.
+Emitted when an unhandled input event occurs. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set. See :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` for details.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-Физические слои, в которых находится CollisionObject3D ****. Объекты столкновений могут существовать в одном или нескольких из 32 различных слоев. См. также :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`.
+The physics layers this CollisionObject3D **is in**. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`. For an easier way to change this value from a script, see :ref:`set_collision_layer_value()<class_CollisionObject3D_method_set_collision_layer_value>`.
 
-\ **Примечание:** Объект A может обнаружить контакт с объектом B, только если объект B находится в любом из слоев, которые сканирует объект A. См. `Слои и маски столкновений <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ в документации для получения дополнительной информации.
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-Слои физики этот CollisionObject3D **сканирует**. Объекты столкновений могут сканировать один или несколько из 32 различных слоев. См. также :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`.
+The physics layers this CollisionObject3D **scans**. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`. For an easier way to change this value from a script, see :ref:`set_collision_mask_value()<class_CollisionObject3D_method_set_collision_mask_value>`.
 
-\ **Примечание:** Объект A может обнаружить контакт с объектом B, только если объект B находится в любом из слоев, которые сканирует объект A. См. `Слои и маски столкновений <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ в документации для получения дополнительной информации.
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,13 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **_input_event**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject3D_private_method__input_event>`
 
-Получает необработанные :ref:`InputEvent<class_InputEvent>`. ``event_position`` — это местоположение указателя мыши в мировом пространстве на поверхности фигуры с индексом ``shape_idx``, а ``normal`` — это вектор нормали поверхности в этой точке. Подключитесь к сигналу :ref:`input_event<class_CollisionObject3D_signal_input_event>`, чтобы легко получить эти события.
+Detects unhandled mouse and touch :ref:`InputEvent<class_InputEvent>`\ s through ``event`` when they happen while hovering over the object. Gesture events are not detected. ``camera`` is the :ref:`Camera3D<class_Camera3D>` that the event originated in (for cameras inside viewports other than the main one to be detected, the parent :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>` needs to be set to ``true``). ``event_position`` is the position hit by a raycast from the camera to the mouse, in global space. ``normal`` is the normal vector of the surface at that point in world space. ``shape_idx`` is the index of the detected shape from :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
-\ **Примечание:** :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` требует, чтобы :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` был ``true`` и был установлен хотя бы один бит :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`.
+See also :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, :ref:`shape_find_owner()<class_CollisionObject3D_method_shape_find_owner>`, and :ref:`shape_owner_get_owner()<class_CollisionObject3D_method_shape_owner_get_owner>`.
+
+\ **Note:** :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` events are triggered if the drag events started while hovering the object, or when the object is in the path of the drag event.
+
+\ **Note:** :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +438,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_layer_value>`
 
-На основе ``value`` включает или отключает указанный слой в :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`, учитывая ``layer_number`` от 1 до 32.
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject3D**'s collision layer compared to assigning the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +450,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_mask_value>`
 
-На основе ``value`` включает или отключает указанный слой в :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` при заданном ``layer_number`` от 1 до 32.
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject3D**'s collision mask compared to assigning the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` property directly.
 
 .. rst-class:: classref-item-separator
 

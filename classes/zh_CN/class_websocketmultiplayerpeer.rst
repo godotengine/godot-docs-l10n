@@ -14,9 +14,9 @@ WebSocket 服务器和客户端的基类。
 描述
 ----
 
-用于 WebSocket 服务器和客户端的基类，可以用作 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的多人对等端。
+Base class for WebSocket server and client, allowing them to be used as multiplayer peer for the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **注意：**\ 导出到安卓时，在导出项目或使用一键部署之前，请务必在安卓导出预设中开启 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,11 @@ WebSocket 服务器和客户端的基类。
 
 握手过程中要使用的额外标头。详见 :ref:`WebSocketPeer.handshake_headers<class_WebSocketPeer_property_handshake_headers>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +173,11 @@ WebSocket 服务器和客户端的基类。
 
 支持的 WebSocket 子协议。详见 :ref:`WebSocketPeer.supported_protocols<class_WebSocketPeer_property_supported_protocols>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

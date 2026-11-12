@@ -110,7 +110,11 @@ Descriptions des propriétés
 
 Le tableau du chemin résultant de la requête de navigation. Toutes les positions du tableau du chemin sont dans les coordonnées globales. Sans paramètres de requête personnalisés, il s'agit du même chemin que celui renvoyé par :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ Renvoie la longueur du chemin.
 
 Les ``ObjectID``\ s des :ref:`Object<class_Object>`\ s qui gèrent les régions et les liens de chaque point que le chemin traverse.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ Les :ref:`RID<class_RID>`\ s des régions et des liens de chaque point que le ch
 
 Le type de primitive de navigation (région ou lien) que chaque point du chemin traverse.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

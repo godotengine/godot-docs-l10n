@@ -75,6 +75,8 @@ Godot 编辑器的接口。
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                    | :ref:`get_current_path<class_EditorInterface_method_get_current_path>`\ (\ ) |const|                                                                                                                                                                                                                                                                                           |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EditorDock<class_EditorDock>`                            | :ref:`get_dock_by_name<class_EditorInterface_method_get_dock_by_name>`\ (\ name\: :ref:`String<class_String>`\ )                                                                                                                                                                                                                                                               |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Node<class_Node>`                                        | :ref:`get_edited_scene_root<class_EditorInterface_method_get_edited_scene_root>`\ (\ ) |const|                                                                                                                                                                                                                                                                                 |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                    | :ref:`get_editor_language<class_EditorInterface_method_get_editor_language>`\ (\ ) |const|                                                                                                                                                                                                                                                                                     |
@@ -117,6 +119,8 @@ Godot 编辑器的接口。
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`EditorResourcePreview<class_EditorResourcePreview>`      | :ref:`get_resource_previewer<class_EditorInterface_method_get_resource_previewer>`\ (\ ) |const|                                                                                                                                                                                                                                                                               |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>`            | :ref:`get_scene_paint_2d<class_EditorInterface_method_get_scene_paint_2d>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`ScriptEditor<class_ScriptEditor>`                        | :ref:`get_script_editor<class_EditorInterface_method_get_script_editor>`\ (\ ) |const|                                                                                                                                                                                                                                                                                         |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>`              | :ref:`get_selected_paths<class_EditorInterface_method_get_selected_paths>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
@@ -126,6 +130,8 @@ Godot 编辑器的接口。
    | :ref:`PackedStringArray<class_PackedStringArray>`              | :ref:`get_unsaved_scenes<class_EditorInterface_method_get_unsaved_scenes>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                         | :ref:`inspect_object<class_EditorInterface_method_inspect_object>`\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                              |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                        | :ref:`is_exiting<class_EditorInterface_method_is_exiting>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                       |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                        | :ref:`is_multi_window_enabled<class_EditorInterface_method_is_multi_window_enabled>`\ (\ ) |const|                                                                                                                                                                                                                                                                             |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -366,6 +372,18 @@ Godot 编辑器的接口。
 
 ----
 
+.. _class_EditorInterface_method_get_dock_by_name:
+
+.. rst-class:: classref-method
+
+:ref:`EditorDock<class_EditorDock>` **get_dock_by_name**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_get_dock_by_name>`
+
+Returns an :ref:`EditorDock<class_EditorDock>` with the specified ``name``. ``name`` must match the original (untranslated) title of the tab in question exactly (e.g., ``2D``, ``Scene``, ``Audio``). Returns ``null`` if the dock was not found.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInterface_method_get_edited_scene_root:
 
 .. rst-class:: classref-method
@@ -396,11 +414,9 @@ Godot 编辑器的接口。
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_editor_main_screen**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_main_screen>`
 
-返回负责主屏幕插件和工具的编辑器控件。将其与实现了 :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>` 的插件一起使用。
+**已弃用：** This method no longer returns the main screen. Only used for legacy main screen plugins.
 
-\ **注意：**\ 该节点是一个 :ref:`VBoxContainer<class_VBoxContainer>`\ ，这意味着如果向其添加 :ref:`Control<class_Control>` 子节点，则需要将子节点的 :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` 设置为 :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>`\ ，以使其使用全部可用空间。
-
-\ **警告：**\ 移除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+Returns the editor control responsible for legacy main screen plugins and tools.
 
 .. rst-class:: classref-item-separator
 
@@ -630,6 +646,20 @@ Godot 编辑器的接口。
 
 ----
 
+.. _class_EditorInterface_method_get_scene_paint_2d:
+
+.. rst-class:: classref-method
+
+:ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>` **get_scene_paint_2d**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_scene_paint_2d>`
+
+Returns the editor's :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>` instance.
+
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInterface_method_get_script_editor:
 
 .. rst-class:: classref-method
@@ -687,6 +717,18 @@ Godot 编辑器的接口。
 |void| **inspect_object**\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_inspect_object>`
 
 在编辑器的检查器面板中显示给定 ``object`` 的属性。如果 ``inspector_only`` 为 ``true`` ，插件将不会试图编辑 ``object``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorInterface_method_is_exiting:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_exiting**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_exiting>`
+
+Returns ``true`` if the editor is currently exiting.
 
 .. rst-class:: classref-item-separator
 
@@ -1079,6 +1121,8 @@ Godot 编辑器的接口。
 .. rst-class:: classref-method
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
+
+**已弃用：** Use :ref:`get_dock_by_name()<class_EditorInterface_method_get_dock_by_name>` with :ref:`EditorDock.make_visible()<class_EditorDock_method_make_visible>` instead.
 
 将编辑器的当前主屏幕切换为 ``name`` 参数中指定的界面。\ ``name`` 必须与对应标签页的标题完全匹配（例如，对于默认标签页，应使用 ``2D``\ 、\ ``3D``\ 、\ ``Script``\ 、\ ``Game`` 或 ``Asset Store``\ ）。
 

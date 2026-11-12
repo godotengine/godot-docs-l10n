@@ -144,9 +144,9 @@ El actual :ref:`Material<class_Material>` de la malla primitiva.
 - |void| **set_uv2_padding**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv2_padding**\ (\ )
 
-Si :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` está activado, especifica el relleno en píxeles aplicado a lo largo de las costuras de la malla. Los valores de relleno más bajos permiten hacer un mejor uso de la textura del lightmap (lo que resulta en una mayor densidad de texeles), pero pueden introducir sangrado visible del lightmap a lo largo de los bordes.
+If :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` is set, specifies the padding in pixels applied along seams of the mesh. Lower padding values allow making better use of the lightmap texture (resulting in higher texel density), but may introduce visible lightmap bleeding along edges.
 
-Si el tamaño de la textura del lightmap no se puede determinar al generar la malla, UV2 se calcula asumiendo un tamaño de textura de 1024x1024.
+If the size of the lightmap texture can't be determined when generating the mesh, UV2 is calculated assuming a texture size of 1024×1024.
 
 .. rst-class:: classref-section-separator
 

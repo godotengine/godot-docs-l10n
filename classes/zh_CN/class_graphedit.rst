@@ -317,9 +317,9 @@ GraphEdit
 
 **delete_nodes_request**\ (\ nodes\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\]\ ) :ref:`🔗<class_GraphEdit_signal_delete_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_graph_delete`` 动作（默认为 :kbd:`Delete`\ ）时触发。
+Emitted when this **GraphEdit** captures a ``ui_graph_delete`` action (:kbd:`Delete` by default, or :kbd:`Backspace`/:kbd:`Delete` on macOS).
 
-\ ``nodes`` 是应被移除的节点的名称的数组。这些通常包括所有选定的节点。
+\ ``nodes`` is an array of node names that should be removed. These usually include all selected nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -1657,7 +1657,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 .. container:: contribute
 
-	There is currently no description for this theme property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this theme property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 

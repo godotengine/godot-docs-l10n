@@ -26,11 +26,17 @@ OpenXRSpatialPlaneTrackingCapability
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`is_supported<class_OpenXRSpatialPlaneTrackingCapability_method_is_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                                        |
-   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` | :ref:`start_entity_discovery<class_OpenXRSpatialPlaneTrackingCapability_method_start_entity_discovery>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) |
-   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TrackingState<enum_OpenXRSpatialEntityExtension_TrackingState>` | :ref:`get_built_in_tracking_state<class_OpenXRSpatialPlaneTrackingCapability_method_get_built_in_tracking_state>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                          |
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`is_supported<class_OpenXRSpatialPlaneTrackingCapability_method_is_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`start_built_in_tracking<class_OpenXRSpatialPlaneTrackingCapability_method_start_built_in_tracking>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                  |
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`                   | :ref:`start_entity_discovery<class_OpenXRSpatialPlaneTrackingCapability_method_start_entity_discovery>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) |
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                | :ref:`stop_built_in_tracking<class_OpenXRSpatialPlaneTrackingCapability_method_stop_built_in_tracking>`\ (\ clear_trackers\: :ref:`bool<class_bool>` = true\ )                                                                                                                                                                                                                                                                                                                                                   |
+   +-----------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -41,6 +47,18 @@ OpenXRSpatialPlaneTrackingCapability
 方法說明
 --------
 
+.. _class_OpenXRSpatialPlaneTrackingCapability_method_get_built_in_tracking_state:
+
+.. rst-class:: classref-method
+
+:ref:`TrackingState<enum_OpenXRSpatialEntityExtension_TrackingState>` **get_built_in_tracking_state**\ (\ ) :ref:`🔗<class_OpenXRSpatialPlaneTrackingCapability_method_get_built_in_tracking_state>`
+
+Returns the state of the built-in tracking system.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OpenXRSpatialPlaneTrackingCapability_method_is_supported:
 
 .. rst-class:: classref-method
@@ -48,6 +66,18 @@ OpenXRSpatialPlaneTrackingCapability
 :ref:`bool<class_bool>` **is_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialPlaneTrackingCapability_method_is_supported>`
 
 如果目前裝置支援平面追蹤功能，則回傳 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRSpatialPlaneTrackingCapability_method_start_built_in_tracking:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **start_built_in_tracking**\ (\ ) :ref:`🔗<class_OpenXRSpatialPlaneTrackingCapability_method_start_built_in_tracking>`
+
+Starts the built-in plane tracking logic. This will fail if built-in tracking is already enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -70,6 +100,18 @@ OpenXRSpatialPlaneTrackingCapability
 \ ``user_callback`` 在非空時，通常會被呼叫兩次，並傳入兩個參數。第一個參數是發現快照（discovery snapshot）的 :ref:`RID<class_RID>`\ ，第二個參數是一個布林值：\ ``false`` 表示發現快照即將被處理，\ ``true`` 表示發現快照已處理完畢且 ``component_data`` 包含有效資料。如果遇到錯誤，則會跳過第二次呼叫。
 
 回傳的 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 與 :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 的回傳值相同。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRSpatialPlaneTrackingCapability_method_stop_built_in_tracking:
+
+.. rst-class:: classref-method
+
+|void| **stop_built_in_tracking**\ (\ clear_trackers\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_OpenXRSpatialPlaneTrackingCapability_method_stop_built_in_tracking>`
+
+Stops the built-in plane tracking logic.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

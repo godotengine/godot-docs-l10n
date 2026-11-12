@@ -410,7 +410,7 @@ Elimina el punto ``idx`` de la curva. Envía un error a la consola si ``idx`` es
 
 :ref:`Vector3<class_Vector3>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve3D_method_sample>`
 
-Devuelve la posición entre el vértice ``idx`` y el vértice ``idx + 1``, donde ``t`` controla si el punto es el primer vértice (``t = 0.0``), el último vértice (``t = 1.0``) o un punto intermedio. Los valores de ``t`` fuera del rango (``0.0 <= t <= 1.0``) dan resultados extraños pero predecibles.
+Devuelve la posición entre el vértice ``idx`` y el vértice ``idx + 1``, donde ``t`` controla si el punto es el primer vértice (\ ``t = 0.0``), el último vértice (\ ``t = 1.0``) o un punto intermedio. Los valores de ``t`` fuera del rango (\ ``0.0 <= t <= 1.0``) dan resultados extraños pero predecibles.
 
 Si ``idx`` está fuera de los límites, se trunca al primer o último vértice y se ignora ``t``. Si la curva no tiene puntos, la función envía un error a la consola y devuelve ``(0, 0, 0)``.
 

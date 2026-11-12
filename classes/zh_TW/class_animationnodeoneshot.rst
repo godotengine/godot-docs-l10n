@@ -14,56 +14,73 @@ AnimationNodeOneShot
 說明
 ----
 
-新增到 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的資源。這個動畫節點將執行子動畫並在完成後返回。可以自訂淡入和淡出的混合時間以及篩檢程式。
+A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. This animation node will execute a sub-animation and return once it finishes. Blend times for fading in and out can be customized, as well as filters.
 
-在設定請求並更改動畫播放後，一次性節點會在下一個處理影格中通過將其 ``request`` 值設定為 :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>` 來自動清除請求。
+After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its ``request`` value to :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 播放連接到 “shot” 埠的子動畫。
+    # Play child animation connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
-    # 替代語法（與上述結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE
 
-    # 中止連接到 “shot” 埠的子動畫。
+    # Abort child animation connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT)
-    # 替代語法（與上述結果相同）。
-    animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
+    # Alternative syntax (same result as above).
+    animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT
 
-    # 使用淡出的方法中止連接到 “shot”埠的子動畫。
+    # Abort child animation with fading out connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT)
-    # 替代語法（與上述結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
 
-    # 取得目前狀態（唯讀）。
-    animation_tree.get("parameters/OneShot/active"))
-    # 替代語法（與上述結果相同）。
+    # Get current state (read-only).
+    animation_tree.get("parameters/OneShot/active")
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/active"]
 
-    # 取得目前內部狀態（唯讀）。
+    # Get current internal state (read-only).
     animation_tree.get("parameters/OneShot/internal_active")
-    # 替代語法（與上述結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/internal_active"]
 
  .. code-tab:: csharp
 
-    // 播放連接到 “shot” 埠的子動畫。
+    // Play child animation connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Fire);
 
-    // 中止連接到 “shot” 埠的子動畫。
+    // Abort child animation connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Abort);
 
-    // 使用淡出的方法中止連接到 “shot”埠的子動畫。
+    // Abort child animation with fading out connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.FadeOut);
 
-    // 取得目前狀態（唯讀）。
+    // Get current state (read-only).
     animationTree.Get("parameters/OneShot/active");
 
-    // 取得目前內部狀態（唯讀）。
+    // Get current internal state (read-only).
     animationTree.Get("parameters/OneShot/internal_active");
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverOneShot<class_AnimationNodeObserverOneShot>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/OneShot/observer")
+    observer.started.connect(on_one_shot_started)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/OneShot/observer").As<AnimationNodeObserverOneShot>();
+    observer.Started += OnOneShotStarted;
 
 
 

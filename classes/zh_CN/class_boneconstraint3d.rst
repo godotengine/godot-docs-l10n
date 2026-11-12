@@ -85,7 +85,7 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_BONE** = ``0``
 
-参考目标是骨骼。在这种情况下，参考目标的空间是局部空间。
+The reference target is a bone. In this case, the reference target space is local space.
 
 .. _class_BoneConstraint3D_constant_REFERENCE_TYPE_NODE:
 
@@ -93,9 +93,9 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_NODE** = ``1``
 
-参考目标是一个 :ref:`Node3D<class_Node3D>`\ 。在这种情况下，参考目标的空间是模型空间。
+The reference target is a :ref:`Node3D<class_Node3D>`. In this case, the reference target space is model space.
 
-换言之，参考目标的坐标被视为它直接位于该 **BoneConstraint3D** 的父节点 :ref:`Skeleton3D<class_Skeleton3D>` 下方。
+In other words, the reference target's coordinates are treated as if it was placed directly under the :ref:`Skeleton3D<class_Skeleton3D>` parent of the **BoneConstraint3D**.
 
 .. rst-class:: classref-section-separator
 
@@ -188,9 +188,9 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 :ref:`NodePath<class_NodePath>` **get_reference_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_node>`
 
-返回位于 ``index`` 处的设置的参考节点路径。
+Returns the reference node path of the setting at ``index``.
 
-该节点仅会被该修改器参考而不会被修改。
+This node will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -262,9 +262,9 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 |void| **set_reference_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone>`
 
-将索引为 ``index`` 的设置的参考骨骼设置为 ``bone``\ 。
+Sets the reference bone of the setting at ``index`` to ``bone``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 |void| **set_reference_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone_name>`
 
-将索引为 ``index`` 的设置的参考骨骼名称设置为 ``bone_name``\ 。
+Sets the reference bone of the setting at ``index`` to ``bone_name``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -290,9 +290,9 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 |void| **set_reference_node**\ (\ index\: :ref:`int<class_int>`, node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_node>`
 
-将索引为 ``index`` 的设置的参考节点路径设置为 ``node``\ 。
+Sets the reference node path of the setting at ``index`` to ``node``.
 
-该节点仅会被该修改器参考而不会被修改。
+This node will only be referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 

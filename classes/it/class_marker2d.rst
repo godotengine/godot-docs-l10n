@@ -14,7 +14,7 @@ Un marcatore nell'editor per una posizione 2D qualunque.
 Descrizione
 ----------------------
 
-Un marcatore nell'editor per una posizione 2D qualunque. È come un semplice :ref:`Node2D<class_Node2D>`, ma appare sempre come una croce nell'editor 2D. Puoi impostare la dimensione visiva della croce usando il gizmo nell'editor 2D mentre il nodo è selezionato.
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

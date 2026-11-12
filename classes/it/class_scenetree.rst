@@ -350,9 +350,7 @@ Il nodo radice della scena principale attualmente caricata, solitamente come fig
 - |void| **set_debug_collisions_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_collisions_hint**\ (\ )
 
-Se ``true``, le forme di collisione saranno visibili durante l'esecuzione del gioco dall'editor a scopo di debug.
-
-\ **Nota:** Questa proprietà non è progettata per essere modificata in fase di esecuzione. Modificare il valore di :ref:`debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` mentre il progetto è in esecuzione non avrà l'effetto desiderato.
+If ``true``, collision shapes will be visible when running the game from the editor for debugging purposes.
 
 .. rst-class:: classref-item-separator
 

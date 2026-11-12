@@ -144,9 +144,9 @@ PrimitiveMesh
 - |void| **set_uv2_padding**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv2_padding**\ (\ )
 
-如果设置了 :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>`\ ，则指定沿网格接缝被应用的以像素为单位的填充。较低的填充值允许更好地利用光照贴图纹理（导致更高的纹素密度），但可能会沿边缘引入可见的光照贴图渗色。
+If :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` is set, specifies the padding in pixels applied along seams of the mesh. Lower padding values allow making better use of the lightmap texture (resulting in higher texel density), but may introduce visible lightmap bleeding along edges.
 
-如果在生成网格时无法确定光照贴图纹理的大小，则计算 UV2 时假定纹理大小为 1024x1024。
+If the size of the lightmap texture can't be determined when generating the mesh, UV2 is calculated assuming a texture size of 1024×1024.
 
 .. rst-class:: classref-section-separator
 

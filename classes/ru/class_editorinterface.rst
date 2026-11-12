@@ -75,6 +75,8 @@ EditorInterface
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                    | :ref:`get_current_path<class_EditorInterface_method_get_current_path>`\ (\ ) |const|                                                                                                                                                                                                                                                                                           |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EditorDock<class_EditorDock>`                            | :ref:`get_dock_by_name<class_EditorInterface_method_get_dock_by_name>`\ (\ name\: :ref:`String<class_String>`\ )                                                                                                                                                                                                                                                               |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Node<class_Node>`                                        | :ref:`get_edited_scene_root<class_EditorInterface_method_get_edited_scene_root>`\ (\ ) |const|                                                                                                                                                                                                                                                                                 |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                    | :ref:`get_editor_language<class_EditorInterface_method_get_editor_language>`\ (\ ) |const|                                                                                                                                                                                                                                                                                     |
@@ -117,6 +119,8 @@ EditorInterface
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`EditorResourcePreview<class_EditorResourcePreview>`      | :ref:`get_resource_previewer<class_EditorInterface_method_get_resource_previewer>`\ (\ ) |const|                                                                                                                                                                                                                                                                               |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>`            | :ref:`get_scene_paint_2d<class_EditorInterface_method_get_scene_paint_2d>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`ScriptEditor<class_ScriptEditor>`                        | :ref:`get_script_editor<class_EditorInterface_method_get_script_editor>`\ (\ ) |const|                                                                                                                                                                                                                                                                                         |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>`              | :ref:`get_selected_paths<class_EditorInterface_method_get_selected_paths>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
@@ -126,6 +130,8 @@ EditorInterface
    | :ref:`PackedStringArray<class_PackedStringArray>`              | :ref:`get_unsaved_scenes<class_EditorInterface_method_get_unsaved_scenes>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                         | :ref:`inspect_object<class_EditorInterface_method_inspect_object>`\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                              |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                        | :ref:`is_exiting<class_EditorInterface_method_is_exiting>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                       |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                        | :ref:`is_multi_window_enabled<class_EditorInterface_method_is_multi_window_enabled>`\ (\ ) |const|                                                                                                                                                                                                                                                                             |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -366,6 +372,18 @@ EditorInterface
 
 ----
 
+.. _class_EditorInterface_method_get_dock_by_name:
+
+.. rst-class:: classref-method
+
+:ref:`EditorDock<class_EditorDock>` **get_dock_by_name**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_get_dock_by_name>`
+
+Returns an :ref:`EditorDock<class_EditorDock>` with the specified ``name``. ``name`` must match the original (untranslated) title of the tab in question exactly (e.g., ``2D``, ``Scene``, ``Audio``). Returns ``null`` if the dock was not found.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInterface_method_get_edited_scene_root:
 
 .. rst-class:: classref-method
@@ -396,11 +414,9 @@ EditorInterface
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_editor_main_screen**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_main_screen>`
 
-Возвращает элемент управления редактора, отвечающий за плагины и инструменты главного экрана. Используйте его с плагинами, реализующими :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>`.
+**Устарело:** This method no longer returns the main screen. Only used for legacy main screen plugins.
 
-\ **Примечание:** Этот узел является :ref:`VBoxContainer<class_VBoxContainer>`, что означает, что если вы добавляете к нему дочерний элемент :ref:`Control<class_Control>`, вам необходимо установить :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` дочернего элемента на :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>`, чтобы он использовал все доступное пространство.
-
-\ **Предупреждение:** Удаление и освобождение этого узла сделает часть редактора бесполезной и может привести к сбою.
+Returns the editor control responsible for legacy main screen plugins and tools.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +440,7 @@ EditorInterface
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-Возвращает фактический масштаб пользовательского интерфейса редактора (``1.0`` соответствует 100% масштабу). Это можно использовать для настройки положения и размеров элементов интерфейса, добавленных плагинами.
+Возвращает фактический масштаб пользовательского интерфейса редактора (\ ``1.0`` соответствует 100% масштабу). Это можно использовать для настройки положения и размеров элементов интерфейса, добавленных плагинами.
 
 \ **Примечание:** Это значение устанавливается через параметры :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` и :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. Для корректного применения изменений необходимо перезапустить редактор.
 
@@ -630,6 +646,20 @@ EditorInterface
 
 ----
 
+.. _class_EditorInterface_method_get_scene_paint_2d:
+
+.. rst-class:: classref-method
+
+:ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>` **get_scene_paint_2d**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_scene_paint_2d>`
+
+Returns the editor's :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>` instance.
+
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInterface_method_get_script_editor:
 
 .. rst-class:: classref-method
@@ -687,6 +717,18 @@ EditorInterface
 |void| **inspect_object**\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_inspect_object>`
 
 Показывает заданное свойство для заданного ``object`` в доке Inspector редактора. Если ``inspector_only`` равно ``true``, плагины не будут пытаться редактировать ``object``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorInterface_method_is_exiting:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_exiting**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_exiting>`
+
+Returns ``true`` if the editor is currently exiting.
 
 .. rst-class:: classref-item-separator
 
@@ -1079,6 +1121,8 @@ EditorInterface
 .. rst-class:: classref-method
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
+
+**Устарело:** Use :ref:`get_dock_by_name()<class_EditorInterface_method_get_dock_by_name>` with :ref:`EditorDock.make_visible()<class_EditorDock_method_make_visible>` instead.
 
 Устанавливает текущий главный экран редактора на тот, который указан в ``name``. ``name`` должен точно соответствовать названию соответствующей вкладки (например, ``2D``, ``3D``, ``Script``, ``Game`` или ``Asset Store`` для вкладок по умолчанию).
 

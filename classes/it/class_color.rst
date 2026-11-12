@@ -1899,7 +1899,7 @@ Se si desidera utilizzare la notazione esadecimale in un'espressione costante, u
 
 Restituisce il **Color** associato all'intero ``hex`` fornito in formato RGBA a 64 bit (16 bit per canale). Questo metodo è l'inverso di :ref:`to_rgba64()<class_Color_method_to_rgba64>`.
 
-In GDScript e C#, l':ref:`int<class_int>` è meglio visualizzato con la notazione esadecimale (``"0x"`` prefisso, che lo rende ``"0xRRRRGGGGBBBBAAAA"``).
+In GDScript e C#, l':ref:`int<class_int>` è meglio visualizzato con la notazione esadecimale (\ ``"0x"`` prefisso, che lo rende ``"0xRRRRGGGGBBBBAAAA"``).
 
 .. rst-class:: classref-item-separator
 
@@ -1911,7 +1911,7 @@ In GDScript e C#, l':ref:`int<class_int>` è meglio visualizzato con la notazion
 
 :ref:`Color<class_Color>` **html**\ (\ rgba\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html>`
 
-Restituisce un nuovo colore da ``rgba``, una stringa di colore esadecimale HTML. ``rgba`` non è sensibile alle maiuscole e minuscole e può essere preceduto da un cancelletto (``#``).
+Restituisce un nuovo colore da ``rgba``, una stringa di colore esadecimale HTML. ``rgba`` non è sensibile alle maiuscole e minuscole e può essere preceduto da un cancelletto (\ ``#``).
 
 \ ``rgba`` deve essere una stringa di colore esadecimale valida a tre o sei cifre e può contenere un valore di canale alfa. Se ``rgba`` non contiene un valore di canale alfa, è applicato un valore di canale alfa di 1,0. Se ``rgba`` non è valido, restituisce un colore vuoto.
 
@@ -1942,7 +1942,7 @@ Restituisce un nuovo colore da ``rgba``, una stringa di colore esadecimale HTML.
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-Restituisce ``true`` se ``color`` è una stringa di colore esadecimale HTML valida. La stringa deve essere un valore esadecimale (senza distinzione tra maiuscole e minuscole) di 3, 4, 6 o 8 cifre e può essere preceduta da un cancelletto (``#``). Questo metodo è identico a :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
+Restituisce ``true`` se ``color`` è una stringa di colore esadecimale HTML valida. La stringa deve essere un valore esadecimale (senza distinzione tra maiuscole e minuscole) di 3, 4, 6 o 8 cifre e può essere preceduta da un cancelletto (\ ``#``). Questo metodo è identico a :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
@@ -1979,7 +1979,7 @@ Restituisce ``true`` se ``color`` è una stringa di colore esadecimale HTML vali
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-Restituisce il colore con i suoi componenti :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` e :ref:`b<class_Color_property_b>` invertiti (``(1 - r, 1 - g, 1 - b, a)``).
+Restituisce il colore con i suoi componenti :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` e :ref:`b<class_Color_property_b>` invertiti (\ ``(1 - r, 1 - g, 1 - b, a)``).
 
 
 .. tabs::
@@ -2218,7 +2218,7 @@ Restituisce il colore convertito in un intero a 64 bit in formato ARGB (ogni com
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-Restituisce il colore convertito in un :ref:`String<class_String>` di colore esadecimale HTML in formato RGBA, senza il prefisso cancelletto (``#``).
+Restituisce il colore convertito in un :ref:`String<class_String>` di colore esadecimale HTML in formato RGBA, senza il prefisso cancelletto (\ ``#``).
 
 Impostando ``with_alpha`` su ``false``, si esclude l'alfa dalla stringa esadecimale, utilizzando il formato RGB anziché il formato RGBA.
 

@@ -1,14 +1,11 @@
 :github_url: hide
 
-.. meta::
-	:keywords: gridmap
-
 .. _class_TileMap:
 
 TileMap
 =======
 
-**Застаріло:** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the top-right corner and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
+**Застаріло:** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the toolbar and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
 
 **Успадковує:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
@@ -353,7 +350,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 
 Викликається з об'єктом TileData, який буде використано внутрішньо TileMap, що дозволяє його модифікацію під час виконання.
 
-Цей метод викликається лише тоді, коли реалізовано метод :ref:`use_tile_data_runtime_update()<class_TileMap_method_use_tile_data_runtime_update>`, і повертає ``true`` для заданих параметрів тайла ``coords`` та ``layer``.
+Цей метод викликається лише тоді, коли реалізовано метод :ref:`_use_tile_data_runtime_update()<class_TileMap_private_method__use_tile_data_runtime_update>`, і повертає ``true`` для заданих параметрів тайла ``coords`` та ``layer``.
 
 \ **Попередження:** Підресурси об'єкта ``tile_data`` такі ж, як і в TileSet. Їх модифікація може вплинути на весь TileSet. Натомість обов'язково дублюйте ці ресурси.
 

@@ -184,7 +184,11 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 \ **Примітка:** Якщо для параметра :ref:`format<class_AudioStreamWAV_property_format>` встановлено значення :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`, ця властивість очікує даних із повного файлу QOA.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +313,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 Містить визначені користувачем теги, якщо вони є в даних WAV.
 
-Зазвичай використовуються такі теги: ``назва``, ``виконавець``, ``альбом``, ``tracknumber``, and ``date`` (``date`` не має стандартного формату дати).
+Зазвичай використовуються такі теги: ``назва``, ``виконавець``, ``альбом``, ``tracknumber``, and ``date`` (\ ``date`` не має стандартного формату дати).
 
 \ **Примітка:** Жоден тег не *гарантовано* присутній у кожному файлі, тому обов’язково враховуйте, що ключі не завжди існують.
 

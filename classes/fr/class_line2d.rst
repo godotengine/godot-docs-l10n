@@ -343,7 +343,11 @@ Le style des connexions entre les segments de la polyligne.
 
 Les points de la polyline, interprétés dans les coordonnées 2D locales. Les segments sont dessinés entre les points adjacents dans ce tableau.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

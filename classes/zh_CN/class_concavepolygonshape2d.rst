@@ -58,7 +58,11 @@ ConcavePolygonShape2D
 
 顶点数组，构成 **ConcavePolygonShape2D** 的线段。该（长度能被二整除的）数组自然两两分组（每组代表一条线段）；每组都由一条线段的起点和终点构成。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

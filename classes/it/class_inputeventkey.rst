@@ -114,18 +114,18 @@ Se ``true``, il tasto era già stato premuto prima di questo evento. Un evento e
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-Rappresenta l'etichetta localizzata stampata sul tasto nel layout di tastiera attuale, che corrisponde a una delle costanti di :ref:`Key<enum_@GlobalScope_Key>` o a qualsiasi carattere Unicode valido. Le etichette dei tasti sono pensate per i suggerimenti.
+Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
 
-Per i layout di tastiera con una singola etichetta sul tasto, è equivalente a :ref:`keycode<class_InputEventKey_property_keycode>`.
+For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
 
-Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, utilizza ``OS.get_keycode_string(event.key_label)`` dove ``event`` è l'**InputEventKey**.
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" e "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 
@@ -142,16 +142,16 @@ Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, ut
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-Etichetta latina stampata sul tasto nel layout di tastiera attuale, che corrisponde a una delle costanti di :ref:`Key<enum_@GlobalScope_Key>`. I codici dei tasti sono pensati per le scorciatoie espresse con una tastiera latina standard, come :kbd:`Ctrl + S` per una scorciatoia "Salva".
+Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
 
-Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, usa ``OS.get_keycode_string(event.keycode)`` dove ``event`` è l'**InputEventKey**.
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 

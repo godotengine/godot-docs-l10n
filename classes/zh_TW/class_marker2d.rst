@@ -14,7 +14,7 @@ Marker2D
 說明
 ----
 
-用於編輯的通用 2D 位置提示。類似於普通的 :ref:`Node2D<class_Node2D>`\ ，但它始終在 2D 編輯器中顯示十字。該節點處於選中狀態時，可以使用 2D 編輯器中的小工具來設定十字的視覺大小。
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

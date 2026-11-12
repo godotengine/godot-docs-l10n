@@ -96,9 +96,9 @@
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-Позитивна нескінченність з рухомою комою. Це результат ділення з рухомою комою, коли дільник має вигляд ``0.0``. Для від'ємної нескінченності використовуйте ``-INF``. Ділення на ``-0.0`` призведе до від'ємної нескінченності, якщо чисельник додатний, тому ділення на ``0.0`` - це не те саме, що ділення на ``-0.0`` (незважаючи на те, що ``0.0 == -0.0`` повертає ``true``).
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **Попередження:** Числова нескінченність це концепція лише для чисел з рухомою комою і не має еквівалента для цілих чисел. Ділення цілого числа на ``0`` не дасть :ref:`INF<class_@GDScript_constant_INF>`, а призведе до помилки під час виконання.
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-«Не число», недійсне значення з плаваючою комою. Його повертають деякі недійсні операції, такі як ділення числа з плаваючою комою ``0.0`` на ``0.0``.
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` має спеціальні властивості, зокрема те, що ``!=`` завжди повертає ``true``, тоді як інші оператори порівняння завжди повертають ``false``. Це вірно навіть під час порівняння з самим собою (``NAN == NAN`` повертає ``false`` та ``NAN != NAN`` повертає ``true``). Через це необхідно використовувати :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>`, щоб перевірити, чи число дорівнює :ref:`NAN<class_@GDScript_constant_NAN>`.
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **Попередження:** «Не число» – це поняття лише для чисел з плаваючою комою та не має еквівалента для цілих чисел. Ділення цілого числа ``0`` на ``0`` не призведе до :ref:`NAN<class_@GDScript_constant_NAN>`, а натомість призведе до помилки під час виконання.
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,34 +282,34 @@
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Експортуйте :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>` або :ref:`PackedStringArray<class_PackedStringArray>` як пронумерований список параметрів (або масив параметрів). Якщо властивість є :ref:`int<class_int>`, тоді зберігається індекс значення, у тому ж порядку, що надаються значення. Ви можете додавати явні значення за допомогою двокрапки. Якщо властивість є :ref:`String<class_String>`, тоді значення зберігається.
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
- Дивіться також :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
-
-::
-
-     @export_enum("Warrior", "Wizard", "Thief") var character_class: int
-     @export_enum("Slow:30", "Medium:60", "Very fast:200") var character_speed: int
-     @export_enum("Rebecca", "Mary", "Leah") var character_name: string
-
-     @export_enum("Sword", "Spear", "Mace"") var character_items: Array[int]
-     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
-
- Якщо ви хочете встановити початкове значення, ви повинні вказати його явно:
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
-     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
+    @export_enum("Warrior", "Magician", "Thief") var character_class: int
+    @export_enum("Slow:30", "Average:60", "Very Fast:200") var character_speed: int
+    @export_enum("Rebecca", "Mary", "Leah") var character_name: String
 
- Якщо ви хочете використовувати іменовані переліки GDScript, замість цього використовуйте :ref:`@export<class_@GDScript_annotation_@export>`:
+    @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
+    @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
+
+If you want to set an initial value, you must specify it explicitly:
+
+::
+
+    @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
+
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 
     enum CharacterName {REBECCA, MARY, LEAH}
-     @export var character_name: Symbol name
+    @export var character_name: CharacterName
 
-    enum CharacterItem {SWORD, SCRIPT, MACE}
-     @export var character_items: Array[CharacterItem]
+    enum CharacterItem {SWORD, SPEAR, MACE}
+    @export var character_items: Array[CharacterItem]
 
 .. rst-class:: classref-item-separator
 
@@ -752,7 +752,7 @@
     @export var car_label = "Speedy" 
     @export var car_number = 3  
 
-\ **Примітка:** Підгрупи не можуть бути вкладеними, але ви можете використовувати роздільник похилої риски (``/``), щоб досягти бажаного ефекту: 
+\ **Примітка:** Підгрупи не можуть бути вкладеними, але ви можете використовувати роздільник похилої риски (\ ``/``), щоб досягти бажаного ефекту: 
 
 ::
  
@@ -1001,7 +1001,7 @@
 
 **Застаріло:** Use :ref:`Color.from_rgba8()<class_Color_method_from_rgba8>` instead.
 
-Повертає :ref:`Color<class_Color>` сформований з червоного (``r8``), зеленого (``g8``), синього (``b8``), і, за бажання, альфа (``a8``) цілочисельних каналів, кожен з яких поділений на ``255.0`` для кінцевого значення.
+Повертає :ref:`Color<class_Color>` сформований з червоного (``r8``), зеленого (``g8``), синього (``b8``), і, за бажання, альфа (``a8``) цілочисельних каналів, кожен з яких поділений на ``255.0`` для кінцевого значення. Використання :ref:`Color8()<class_@GDScript_method_Color8>` замість стандартного конструктора :ref:`Color<class_Color>` корисне, коли потрібно точно відтворити значення кольору в :ref:`Image<class_Image>`.
 
 ::
 
@@ -1191,7 +1191,7 @@
 
 \ **Примітка:** Якщо ``value`` та/або ``type`` є звільненими об’єктами (див. :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), або ``type`` не є одним із наведених вище варіантів, цей метод викличе помилку виконання.
 
-Див. також :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, ``methodObject.get_script``, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (та інші методи :ref:`Array()<class_@GDScript_method_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (та інші методи :ref:`Dictionary<class_Dictionary>`).
+Див. також :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (та інші методи :ref:`Array<class_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (та інші методи :ref:`Dictionary<class_Dictionary>`).
 
 .. rst-class:: classref-item-separator
 

@@ -161,7 +161,11 @@ sRGB 色彩空间。
 
 \ **注意：**\ 设置该属性会一次性更新所有颜色。单独更改某个颜色请使用 :ref:`set_color()<class_Gradient_method_set_color>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +222,11 @@ sRGB 色彩空间。
 
 \ **注意：**\ 设置该属性会一次性更新所有偏移量。单独更改某个偏移量请使用 :ref:`set_offset()<class_Gradient_method_set_offset>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

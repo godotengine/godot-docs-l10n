@@ -16,9 +16,9 @@ PacketPeer
 Опис
 --------
 
-Пакети Peer - анотація та базовий клас для протоколів пакетів (наприклад, UDP). Надання API для відправки та отримання пакетів як сирих, так і змінних. Це дозволяє легко перенести дані за протоколом, не маючи даних кодування, як низькорівневі байти або турбуватися про мережевий замовлення.
+PacketPeer is an abstraction and base class for packet-based protocols (such as UDP). It provides an API for sending and receiving packets both as raw data or variables. This makes it easy to transfer data over a protocol, without having to encode data as low-level bytes or having to worry about network ordering.
 
-\ **Примітка:** При експорті до Android, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою однієї кнопки розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -131,7 +131,7 @@ PacketPeer
 
 Отримує варіант. Якщо ``allow_objects`` є ``true``, декодування об'єктів дозволено.
 
-Внутрішнє використання такого ж механізму декодування, як методу :ref:`GlobalScope.bytes_to_var()<class_GlobalScope_method_bytes_to_var>`.
+Внутрішнє використання такого ж механізму декодування, як методу :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>`.
 
 \ **Попередження:** Десеріалізовані об'єкти можуть містити код, який отримує виконану. Не використовуйте цей параметр, якщо послідовний об'єкт виходить з ненадійних джерел, щоб уникнути загроз потенційної безпеки, таких як віддалене виконання коду.
 
@@ -159,7 +159,7 @@ PacketPeer
 
 Відправляється :ref:`Variant<class_Variant>` як пакет. Якщо ``full_objects`` є ``true``, кодування об'єктів дозволено (і може потенційно включати код).
 
-Внутрішня, це використовує той же механізм кодування, як :ref:`GlobalScope.var_to_bytes()<class_GlobalScope_method_var_to_bytes>`.
+Внутрішня, це використовує той же механізм кодування, як :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

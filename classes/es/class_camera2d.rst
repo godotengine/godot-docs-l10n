@@ -276,7 +276,7 @@ Si es ``true``, la cámara solo se mueve cuando alcanza los márgenes de arrastr
 - |void| **set_drag_horizontal_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_horizontal_offset**\ (\ )
 
-El desplazamiento de arrastre horizontal relativo de la cámara entre los márgenes de arrastre derecho (``-1``) e izquierdo (``1``).
+El desplazamiento de arrastre horizontal relativo de la cámara entre los márgenes de arrastre derecho (\ ``-1``) e izquierdo (\ ``1``).
 
 \ **Nota:** Se utiliza para establecer el desplazamiento de arrastre horizontal inicial, determinar el desplazamiento actual u forzar el desplazamiento actual. No se actualiza automáticamente cuando :ref:`drag_horizontal_enabled<class_Camera2D_property_drag_horizontal_enabled>` es ``true`` o se modifican los márgenes de arrastre.
 
@@ -363,7 +363,7 @@ If ``true``, the camera only moves when reaching the vertical (top and bottom) d
 - |void| **set_drag_vertical_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_vertical_offset**\ (\ )
 
-El desplazamiento vertical relativo de arrastre (drag offset) de la cámara entre los márgenes de arrastre inferior (``-1``) y superior (``1``).
+El desplazamiento vertical relativo de arrastre (drag offset) de la cámara entre los márgenes de arrastre inferior (\ ``-1``) y superior (\ ``1``).
 
 \ **Nota:** Se utiliza para establecer el desplazamiento vertical inicial de arrastre; determinar el desplazamiento actual; o forzar el desplazamiento actual. No se actualiza automáticamente cuando :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` es ``true`` o se cambian los márgenes de arrastre.
 

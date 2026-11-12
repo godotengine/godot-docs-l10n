@@ -96,7 +96,7 @@ ResourceImporterImageFont
 
 :ref:`PackedStringArray<class_PackedStringArray>` **character_ranges** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_character_ranges>`
 
-Діапазони символів для імпорту з зображення шрифту. Це масив, який відображає кожну позицію на зображенні (у координатах плитки, а не в пікселях). Атлас шрифту переміщується зліва направо та зверху вниз. Символи можна вказувати десятковими числами (126), шістнадцятковими числами (``0x007e`` або ``U+007e``) або між одинарними лапками (``'~'``). Діапазони можна вказувати з дефісом між символами.
+Діапазони символів для імпорту з зображення шрифту. Це масив, який відображає кожну позицію на зображенні (у координатах плитки, а не в пікселях). Атлас шрифту переміщується зліва направо та зверху вниз. Символи можна вказувати десятковими числами (126), шістнадцятковими числами (\ ``0x007e`` або ``U+007e``) або між одинарними лапками (\ ``'~'``). Діапазони можна вказувати з дефісом між символами.
 
 Наприклад, ``0-127`` представляє повний діапазон ASCII. Його також можна записати як ``0x0000-0x007f`` (або ``U+0000-U+007f``). Як інший приклад, ``' '-'~'`` еквівалентно ``32-126`` та представляє діапазон друкованих (видимих) символів ASCII. 
 
@@ -104,7 +104,11 @@ ResourceImporterImageFont
 
 \ **Примітка:** Загальна кількість символів не повинна перевищувати кількість :ref:`columns<class_ResourceImporterImageFont_property_columns>`, помножену на ``рядків-членів``. В іншому випадку шрифт не вдасться імпортувати.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +184,11 @@ ResourceImporterImageFont
 
 Кожен рядок складається з трьох просторових роздільних значень: "з" рядка, "на" рядок і ціле офсет. Кожне поєднання формує два рядки для кермової пари, наприклад, ``ab cd -3`` створить кермові пари ``ac``, ``ad``, ``bc``, і ``bd`` з офсетом ``-3``. ``\uXXXX`` можна використовувати для додавання символів Unicode.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

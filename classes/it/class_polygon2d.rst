@@ -206,7 +206,11 @@ Lo scostamento applicato a ciascun vertice.
 
 La lista dei vertici del poligono. Il punto finale sarà collegato al primo.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ La quantità per moltiplicare le coordinate :ref:`uv<class_Polygon2D_property_uv
 
 Coordinate della texture per ogni vertice del poligono. Dovrebbe esserci un valore UV per ogni vertice del poligono. Se ce ne sono di meno, i vertici non definiti utilizzeranno ``Vector2(0, 0)``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Coordinate della texture per ogni vertice del poligono. Dovrebbe esserci un valo
 
 Colore per ogni vertice. I colori sono interpolati tra i vertici, risultando in gradienti uniformi. Dovrebbe essercene uno per ogni vertice del poligono. Se ce ne sono di meno, i vertici non definiti utilizzeranno :ref:`color<class_Polygon2D_property_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

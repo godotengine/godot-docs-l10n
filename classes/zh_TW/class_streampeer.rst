@@ -16,9 +16,9 @@ StreamPeer
 說明
 ----
 
-StreamPeer 是一種抽象基底類別，常用於流式協議（例如 TCP）。它提供了通過流發送資料的 API，將資料作為原始資料或字串處理。
+StreamPeer is an abstract base class mostly used for stream-based protocols (such as TCP). It provides an API for sending and receiving data through streams as raw data or strings.
 
-\ **注意：**\ 匯出到安卓時，在匯出專案或使用一鍵部署之前，請務必在安卓匯出預設中，開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

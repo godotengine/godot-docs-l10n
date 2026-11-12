@@ -343,7 +343,11 @@ enum **LineTextureMode**: :ref:`🔗<enum_Line2D_LineTextureMode>`
 
 Точки полилинии, интерпретированные в локальных 2D-координатах. Сегменты рисуются между соседними точками в этом массиве.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

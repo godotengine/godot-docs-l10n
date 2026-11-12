@@ -85,7 +85,7 @@ Emesso quando cambia la next-chain, tramite :ref:`add_next()<class_OpenXRSpatial
 
 .. container:: contribute
 
-	There is currently no description for this signal. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this signal. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-section-separator
 

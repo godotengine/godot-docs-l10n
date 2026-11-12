@@ -58,7 +58,11 @@ ConcavePolygonShape2D
 
 頂點陣列，構成 **ConcavePolygonShape2D** 的線段。該（長度能被二整除的）陣列自然兩兩群組（每組代表一條線段）；每組都由一條線段的起點和終點構成。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -191,9 +191,11 @@ AES режим дешифрования электронной кодовой к
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-Получить текущее IV состояние для данного контекста (IV обновляется при вызове :ref:`update()<class_AESContext_method_update>`). Обычно эта функция вам не нужна.
+**Устарело:** Extracting the IV state is no longer supported
 
-\ **Примечание:** Эта функция имеет смысл только тогда, когда контекст запущен с :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` или :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>`.
+Returns an empty :ref:`PackedByteArray<class_PackedByteArray>`.
+
+\ **Note:** This method used to return the active IV state as modified by one or more :ref:`update()<class_AESContext_method_update>` calls. This is no longer supported.
 
 .. rst-class:: classref-item-separator
 

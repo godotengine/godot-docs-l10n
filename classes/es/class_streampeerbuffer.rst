@@ -74,7 +74,11 @@ Descripciones de Propiedades
 
 El búfer de datos subyacente. Establecer este valor reinicia el cursor.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

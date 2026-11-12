@@ -752,15 +752,26 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`Tween<class_Tween>` **set_parallel**\ (\ parallel\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Tween_method_set_parallel>`
 
-Если ``parallel`` равен ``true``, то :ref:`Tweener<class_Tweener>`, добавленный после этого метода, по умолчанию будет выполняться одновременно, а не последовательно.
+If ``parallel`` is ``true``, the :ref:`Tweener<class_Tweener>`\ s appended after this method will by default run simultaneously, as opposed to sequentially.
 
-\ **Примечание:** Как и в случае с :ref:`parallel()<class_Tween_method_parallel>`, tweener, добавленный непосредственно перед этим методом, также будет частью параллельного шага.
+\ **Note:** Just like with :ref:`parallel()<class_Tween_method_parallel>`, the tweener added right before this method will also be part of the parallel step.
 
-::
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     tween.tween_property(self, "position", Vector2(300, 0), 0.5)
     tween.set_parallel()
-    tween.tween_property(self, "modulate", Color.GREEN, 0.5) # Работает вместе с позиционным твином.
+    tween.tween_property(self, "modulate", Color.GREEN, 0.5) # Runs together with the position tweener.
+
+ .. code-tab:: csharp
+
+    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5f);
+    tween.SetParallel();
+    tween.TweenProperty(this, "modulate", Colors.Green, 0.5f); // Runs together with the position tweener.
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -812,16 +823,28 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`Tween<class_Tween>` **set_trans**\ (\ trans\: :ref:`TransitionType<enum_Tween_TransitionType>`\ ) :ref:`🔗<class_Tween_method_set_trans>`
 
-Устанавливает тип перехода по умолчанию для :ref:`PropertyTweener<class_PropertyTweener>` и :ref:`MethodTweener<class_MethodTweener>`, добавленных после этого метода.
+Sets the default transition type for :ref:`PropertyTweener<class_PropertyTweener>`\ s and :ref:`MethodTweener<class_MethodTweener>`\ s appended after this method.
 
-Перед вызовом этого метода тип перехода по умолчанию — :ref:`TRANS_LINEAR<class_Tween_constant_TRANS_LINEAR>`.
+Before this method is called, the default transition type is :ref:`TRANS_LINEAR<class_Tween_constant_TRANS_LINEAR>`.
 
-::
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     var tween = create_tween()
-    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Использует TRANS_LINEAR.
+    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Uses TRANS_LINEAR.
     tween.set_trans(Tween.TRANS_SINE)
-    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Использует TRANS_SINE.
+    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Uses TRANS_SINE.
+
+ .. code-tab:: csharp
+
+    Tween tween = CreateTween();
+    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5f); // Uses TransitionType.Linear.
+    tween.SetTrans(Tween.TransitionType.Sine);
+    tween.TweenProperty(this, "rotation_degrees", 45.0f, 0.5f); // Uses TransitionType.Sine.
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -833,27 +856,48 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 |void| **stop**\ (\ ) :ref:`🔗<class_Tween_method_stop>`
 
-Останавливает tweening и сбрасывает **Tween** в его начальное состояние. Это не удалит никакие добавленные :ref:`Tweener<class_Tweener>`.
+Stops the tweening and resets the **Tween** to its initial state. This will not remove any appended :ref:`Tweener<class_Tweener>`\ s.
 
-\ **Примечание:** Это *не* сбрасывает цели :ref:`PropertyTweener<class_PropertyTweener>` к их значениям, когда **Tween** был запущен впервые.
+\ **Note:** This does *not* reset targets of :ref:`PropertyTweener<class_PropertyTweener>`\ s to their values when the **Tween** first started.
 
-::
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     var tween = create_tween()
 
-    # Будет изменяться от 0 до 500 за 1 секунду.
+    # Will move from 0 to 500 over 1 second.
     position.x = 0.0
     tween.tween_property(self, "position:x", 500, 1.0)
 
-    # Когда таймер закончит отсчет, будет (примерно) 250.
+    # Will be at (about) 250 when the timer finishes.
     await get_tree().create_timer(0.5).timeout
 
-    # Теперь будет двигаться от (примерно) 250 до 500 за 1 секунду,
-    # таким образом, с половинной скоростью, чем раньше.
+    # Will now move from (about) 250 to 500 over 1 second,
+    # thus at half the speed as before.
     tween.stop()
     tween.play()
 
-\ **Примечание:** Если Tween остановлен и не привязан ни к одному узлу, он будет существовать бесконечно, пока не будет запущен вручную или не станет недействительным. Если вы потеряете ссылку на такой Tween, вы можете восстановить его с помощью :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
+ .. code-tab:: csharp
+
+    Tween tween = CreateTween();
+
+    // Will move from 0 to 500 over 1 second.
+    Position = Position with { X = 0.0f };
+    tween.TweenProperty(this, "position:x", 500.0f, 1.0f);
+
+    // Will be at (about) 250 when the timer finishes.
+    await ToSignal(GetTree().CreateTimer(0.5f), Timer.SignalName.Timeout);
+
+    // Will now move from (about) 250 to 500 over 1 second,
+    // thus at half the speed as before.
+    tween.Stop();
+    tween.Play();
+
+
+
+\ **Note:** If a Tween is stopped and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
 
 .. rst-class:: classref-item-separator
 
@@ -865,24 +909,39 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`AwaitTweener<class_AwaitTweener>` **tween_await**\ (\ signal\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Tween_method_tween_await>`
 
-Создаёт и добавляет :ref:`AwaitTweener<class_AwaitTweener>`. Этот метод можно использовать для ожидания сигнала и создания асинхронных анимаций или кат-сцен.
+Creates and appends an :ref:`AwaitTweener<class_AwaitTweener>`. This method can be used to await a signal to be emitted and create asynchronous animations or cutscenes.
 
-Анимация не перейдёт к следующему шагу, пока не будет испущен ожидаемый сигнал или соединение не станет недействительным (например, в результате освобождения целевого объекта). Если вы знаете, что сигнал может не испуститься, используйте :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`.
+The animation will not progress to the next step until the awaited signal is emitted or the connection becomes invalid (e.g. as a result of freeing the target object). If you know that the emission may not happen, use :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`.
 
-\ **Примечание:** Ожидаемый сигнал должен испускаться во время шага, когда :ref:`AwaitTweener<class_AwaitTweener>` активен.
+\ **Note:** The awaited signal should be emitted during the step when :ref:`AwaitTweener<class_AwaitTweener>` is active.
 
-\ **Пример:** Объект запускает себя и взрывается при столкновении или через 4 секунды.
+\ **Example:** An object launches itself and explodes upon collision or after 4 seconds.
 
-::
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     var tween = create_tween()
     tween.tween_callback(launch)
     tween.tween_await(collided).set_timeout(4.0)
     tween.tween_callback(explode)
 
-\ **Пример:** Персонаж идёт к определённой точке, говорит несколько фраз и возвращается назад, когда игрок закрывает окно сообщения.
+ .. code-tab:: csharp
 
-::
+    Tween tween = CreateTween();
+    tween.TweenCallback(Callable.From(Launch));
+    tween.TweenAwait(new Signal(this, SignalName.Collided)).SetTimeout(4.0f);
+    tween.TweenCallback(Callable.From(Explode));
+
+
+
+\ **Example:** A character walks to a specific point, says some lines and walks back when the player closes the message box.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     var tween = create_tween()
     tween.tween_callback(walk_to.bind(600.0))
@@ -891,13 +950,35 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
     tween.tween_await(dialogue_closed)
     tween.tween_callback(walk_to.bind(0.0))
 
-\ **Примечание:** Если вы ожидаете сигнал от обратного вызова, вызванного в том же **Tween**, убедитесь, что сигнал испускается *после* начала ожидания. Если это невозможно гарантировать, вы можете ожидать и испускать сигнал на одном шаге:
+ .. code-tab:: csharp
 
-::
+    Tween tween = CreateTween();
+    tween.TweenCallback(Callable.From(() => WalkTo(600.0f)));
+    tween.TweenAwait(new Signal(this, SignalName.DestinationReached));
+    tween.TweenCallback(Callable.From(() => SayDialogue("Good day, sir!")));
+    tween.TweenAwait(new Signal(this, SignalName.DialogueClosed));
+    tween.TweenCallback(Callable.From(() => WalkTo(0.0f)));
+
+
+
+\ **Note:** If you are awaiting a signal from a callback called in the same **Tween**, make sure the signal is emitted *after* the await starts. If it can't be reasonably guaranteed, you can await and emit in the same step:
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
 
     var tween = create_tween()
     tween.tween_await(signal)
     tween.parallel().tween_callback(method_that_emits_signal)
+
+ .. code-tab:: csharp
+
+    Tween tween = CreateTween();
+    tween.TweenAwait(new Signal(this, SignalName.Signal));
+    tween.Parallel().TweenCallback(Callable.From(MethodThatEmitsSignal));
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -1128,24 +1209,42 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`SubtweenTweener<class_SubtweenTweener>` **tween_subtween**\ (\ subtween\: :ref:`Tween<class_Tween>`\ ) :ref:`🔗<class_Tween_method_tween_subtween>`
 
-Создает и добавляет :ref:`SubtweenTweener<class_SubtweenTweener>`. Этот метод можно использовать для вложения ``subtween`` в этот **Tween**, что позволяет создавать более сложные и компонуемые последовательности.
+Creates and appends a :ref:`SubtweenTweener<class_SubtweenTweener>`. This method can be used to nest ``subtween`` within this **Tween**, allowing for the creation of more complex and composable sequences.
 
-::
 
-    # Subtween вращает объект.
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    # Subtween will rotate the object.
     var subtween = create_tween()
     subtween.tween_property(self, "rotation_degrees", 45.0, 1.0)
     subtween.tween_property(self, "rotation_degrees", 0.0, 1.0)
 
-    # Родительский tween выполнит subtween как один из своих шагов.
+    # Parent tween will execute the subtween as one of its steps.
     var tween = create_tween()
     tween.tween_property(self, "position:x", 500, 3.0)
     tween.tween_subtween(subtween)
     tween.tween_property(self, "position:x", 300, 2.0)
 
-\ **Примечание:** Методы :ref:`pause()<class_Tween_method_pause>`, :ref:`stop()<class_Tween_method_stop>` и :ref:`set_loops()<class_Tween_method_set_loops>` могут привести к тому, что родительский **Tween** застрянет на шаге subtween; для получения дополнительной информации см. документацию по этим методам.
+ .. code-tab:: csharp
 
-\ **Примечание:** Режимы паузы и обработки, установленные :ref:`set_pause_mode()<class_Tween_method_set_pause_mode>` и :ref:`set_process_mode()<class_Tween_method_set_process_mode>` в ``subtween``, будут переопределены настройками родительского **Tween**.
+    // Subtween will rotate the object.
+    Tween subtween = CreateTween();
+    subtween.TweenProperty(this, "rotation_degrees", 45.0f, 1.0f);
+    subtween.TweenProperty(this, "rotation_degrees", 0.0f, 1.0f);
+
+    // Parent tween will execute the subtween as one of its steps.
+    Tween tween = CreateTween();
+    tween.TweenProperty(this, "position:x", 500.0f, 3.0f);
+    tween.TweenSubtween(subtween);
+    tween.TweenProperty(this, "position:x", 300.0f, 2.0f);
+
+
+
+\ **Note:** The methods :ref:`pause()<class_Tween_method_pause>`, :ref:`stop()<class_Tween_method_stop>`, and :ref:`set_loops()<class_Tween_method_set_loops>` can cause the parent **Tween** to get stuck on the subtween step; see the documentation for those methods for more information.
+
+\ **Note:** The pause and process modes set by :ref:`set_pause_mode()<class_Tween_method_set_pause_mode>` and :ref:`set_process_mode()<class_Tween_method_set_process_mode>` on ``subtween`` will be overridden by the parent **Tween**'s settings.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

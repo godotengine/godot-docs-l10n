@@ -94,15 +94,19 @@ bool
 .. table::
    :widths: auto
 
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator !=<class_bool_operator_neq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ ) |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator \<<class_bool_operator_lt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator ==<class_bool_operator_eq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator ><class_bool_operator_gt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
-   +-------------------------+-----------------------------------------------------------------------------------------+
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator !=<class_bool_operator_neq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator \<<class_bool_operator_lt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator \<=<class_bool_operator_lte_bool>`\ (\ right\: :ref:`bool<class_bool>`\ ) |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator ==<class_bool_operator_eq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator ><class_bool_operator_gt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )    |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator >=<class_bool_operator_gte_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
+   +-------------------------+------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -184,6 +188,18 @@ bool
 
 ----
 
+.. _class_bool_operator_lte_bool:
+
+.. rst-class:: classref-operator
+
+:ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lte_bool>`
+
+Returns ``true`` if the left **bool** is ``false``, or if both **bool**\ s are ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_bool_operator_eq_bool:
 
 .. rst-class:: classref-operator
@@ -203,6 +219,18 @@ bool
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
 如果左侧 **bool** 为 ``true`` 且 ``right`` 为 ``false``\ ，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_bool_operator_gte_bool:
+
+.. rst-class:: classref-operator
+
+:ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gte_bool>`
+
+Returns ``true`` if the left **bool** is ``true``, or if both **bool**\ s are ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

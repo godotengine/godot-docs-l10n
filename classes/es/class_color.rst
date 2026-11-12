@@ -1866,7 +1866,7 @@ Devuelve la intensidad lumínica del color como un valor entre 0.0 y 1.0 (inclus
 
 Devuelve el **Color** asociado con el entero ``hex`` proporcionado en formato RGBA de 32 bits (8 bits por canal). Este método es el inverso de :ref:`to_rgba32()<class_Color_method_to_rgba32>`.
 
-En GDScript y C#, el :ref:`int<class_int>` se visualiza mejor con notación hexadecimal (``"0x"`` prefijo, haciéndolo ``"0xRRGGBBAA"``).
+En GDScript y C#, el :ref:`int<class_int>` se visualiza mejor con notación hexadecimal (\ ``"0x"`` prefijo, haciéndolo ``"0xRRGGBBAA"``).
 
 
 .. tabs::
@@ -1899,7 +1899,7 @@ Si quieres usar la notación hexadecimal en una expresión constante, usa el con
 
 Devuelve el **Color** asociado con el entero ``hex`` proporcionado en formato RGBA de 64 bits (16 bits por canal). Este método es el inverso de :ref:`to_rgba64()<class_Color_method_to_rgba64>`.
 
-En GDScript y C#, el :ref:`int<class_int>` se visualiza mejor con la notación hexadecimal (``"0x"`` prefijo, haciéndolo ``"0xRRRRGGGGBBBBAAAA"``).
+En GDScript y C#, el :ref:`int<class_int>` se visualiza mejor con la notación hexadecimal (\ ``"0x"`` prefijo, haciéndolo ``"0xRRRRGGGGBBBBAAAA"``).
 
 .. rst-class:: classref-item-separator
 
@@ -1911,7 +1911,7 @@ En GDScript y C#, el :ref:`int<class_int>` se visualiza mejor con la notación h
 
 :ref:`Color<class_Color>` **html**\ (\ rgba\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html>`
 
-Devuelve un nuevo color de ``rgba``, una string de color hexadecimal HTML. ``rgba`` no distingue entre mayúsculas y minúsculas, y puede tener el prefijo de un signo hash (``#``).
+Devuelve un nuevo color de ``rgba``, una string de color hexadecimal HTML. ``rgba`` no distingue entre mayúsculas y minúsculas, y puede tener el prefijo de un signo hash (\ ``#``).
 
 \ ``rgba`` debe ser una string de color hexadecimal válida de tres o seis dígitos, y puede contener un valor de canal alfa. Si ``rgba`` no contiene un valor de canal alfa, se aplica un valor de canal alfa de 1.0. Si ``rgba`` no es válido, devuelve un color vacío.
 
@@ -1942,7 +1942,7 @@ Devuelve un nuevo color de ``rgba``, una string de color hexadecimal HTML. ``rgb
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-Devuelve ``true`` si ``color`` es una string hexadecimal HTML válida.La string debe ser un valor hexadecimal (insensible a mayúsculas y minúsculas) de 3, 4, 6 u 8 dígitos, y puede tener el prefijo de un signo hash (``#``).Este método es idéntico a :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
+Devuelve ``true`` si ``color`` es una string hexadecimal HTML válida.La string debe ser un valor hexadecimal (insensible a mayúsculas y minúsculas) de 3, 4, 6 u 8 dígitos, y puede tener el prefijo de un signo hash (\ ``#``).Este método es idéntico a :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
@@ -1979,7 +1979,7 @@ Devuelve ``true`` si ``color`` es una string hexadecimal HTML válida.La string 
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-Devuelve el color con sus componentes :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` y :ref:`b<class_Color_property_b>` invertidos (``(1 - r, 1 - g, 1 - b, a)``).
+Devuelve el color con sus componentes :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` y :ref:`b<class_Color_property_b>` invertidos (\ ``(1 - r, 1 - g, 1 - b, a)``).
 
 
 .. tabs::
@@ -2218,7 +2218,7 @@ Devuelve el color convertido a un entero de 64 bits en formato ARGB (cada compon
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-Devuelve el color convertido a una :ref:`String<class_String>` de color hexadecimal HTML en formato RGBA, sin el prefijo hash (``#``).
+Devuelve el color convertido a una :ref:`String<class_String>` de color hexadecimal HTML en formato RGBA, sin el prefijo hash (\ ``#``).
 
 Si estableces ``with_alpha`` a ``false``, se excluye el alfa de la string hexadecimal, usando el formato RGB en lugar del formato RGBA.
 

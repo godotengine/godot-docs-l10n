@@ -291,7 +291,7 @@ Restituisce il RID del canvas utilizzato da questo livello.
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-Restituisce la trasformazione dal sistema di coordinate del **CanvasLayer** al sistema di coordinate della :ref:`Viewport<class_Viewport>`.
+Returns the transform from the **CanvasLayer**'s coordinate system to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 

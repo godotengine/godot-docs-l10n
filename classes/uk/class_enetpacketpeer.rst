@@ -14,11 +14,11 @@ ENetPacketPeer
 Опис
 --------
 
-Пакети Впровадження піару, що представляє одноліток :ref:`ENetConnection<class_ENetConnection>`.
+A PacketPeer implementation representing a peer of an :ref:`ENetConnection<class_ENetConnection>`.
 
-Цей клас не може бути миттєвий, але може бути відновлений під час :ref:`ENetConnection.service()<class_ENetConnection_method_service>` або через :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
+This class cannot be instantiated directly but can be retrieved during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` or via :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
 
-\ **Примітка:** При експорті до Android, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою однієї кнопки розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 
@@ -180,7 +180,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_LOSS** = ``0``
 
-Збиток цінного пакета надійного пакету як співвідношення стосовно :ref:`PACKET_LOS_SCALE<class_ENetPacketPeer_constant_PACKET_LOS_SCALE>`.
+Збиток цінного пакета надійного пакету як співвідношення стосовно :ref:`PACKET_LOSS_SCALE<class_ENetPacketPeer_constant_PACKET_LOSS_SCALE>`.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_LOSS_VARIANCE:
 

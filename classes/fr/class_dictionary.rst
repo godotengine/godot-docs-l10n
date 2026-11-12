@@ -223,7 +223,7 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 \ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (\ ``{}``). Otherwise, a dictionary will always evaluate to ``true``.
 
 .. note::
 
@@ -900,7 +900,7 @@ Renvoie ``true`` si les deux dictionnaires contiennent les mêmes clés et valeu
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Définit la valeur de l'élément à la clé ``key`` donnée à la valeur ``value`` donnée. Renvoie ``true`` si la valeur a été définie avec succès. Échoue et renvoie ``false`` si le dictionnaire est en lecture-seule, ou si ``key`` et ``value`` ne correspondent pas aux types du dictionnaire. Ceci est identique à l'utilisation de l'opérateur ``[]`` (``dict[key] = value``).
+Définit la valeur de l'élément à la clé ``key`` donnée à la valeur ``value`` donnée. Renvoie ``true`` si la valeur a été définie avec succès. Échoue et renvoie ``false`` si le dictionnaire est en lecture-seule, ou si ``key`` et ``value`` ne correspondent pas aux types du dictionnaire. Ceci est identique à l'utilisation de l'opérateur ``[]`` (\ ``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 
@@ -912,7 +912,7 @@ Définit la valeur de l'élément à la clé ``key`` donnée à la valeur ``valu
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_size>`
 
-Renvoie le nombre d'entrées dans le dictionnaire. Les dictionnaires vides (``{ }``) renvoient toujours ``0``. Voir aussi :ref:`is_empty()<class_Dictionary_method_is_empty>`.
+Renvoie le nombre d'entrées dans le dictionnaire. Les dictionnaires vides (\ ``{ }``) renvoient toujours ``0``. Voir aussi :ref:`is_empty()<class_Dictionary_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -924,7 +924,7 @@ Renvoie le nombre d'entrées dans le dictionnaire. Les dictionnaires vides (``{ 
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Dictionary_method_sort>`
 
-Trie le dictionnaire en ordre ascendant, par clé. L'ordre final dépend de la comparaison "inférieur à" (``<``) entre les clés..
+Trie le dictionnaire en ordre ascendant, par clé. L'ordre final dépend de la comparaison "inférieur à" (\ ``<``) entre les clés..
 
 
 .. tabs::

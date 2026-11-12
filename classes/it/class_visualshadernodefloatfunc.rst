@@ -14,7 +14,7 @@ Una funzione scalare in virgola mobile da utilizzare all'interno del grafico di 
 Descrizione
 ----------------------
 
-Accetta uno scalare in virgola mobile (``x``) sulla porta di ingresso e lo trasforma a seconda della :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
+Accetta uno scalare in virgola mobile (\ ``x``) sulla porta di ingresso e lo trasforma a seconda della :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

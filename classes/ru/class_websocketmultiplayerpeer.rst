@@ -14,9 +14,9 @@ WebSocketMultiplayerPeer
 Описание
 ----------------
 
-Базовый класс для сервера и клиента WebSocket, позволяющий использовать их в качестве многопользовательского однорангового узла для :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+Base class for WebSocket server and client, allowing them to be used as multiplayer peer for the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **Примечание:** При экспорте в Android обязательно включите разрешение ``INTERNET`` в предустановке экспорта Android перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,11 @@ WebSocketMultiplayerPeer
 
 Дополнительные заголовки для использования во время рукопожатия. См. :ref:`WebSocketPeer.handshake_headers<class_WebSocketPeer_property_handshake_headers>` для получения более подробной информации.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +173,11 @@ WebSocketMultiplayerPeer
 
 Поддерживаемые подпротоколы WebSocket. Подробнее см. :ref:`WebSocketPeer.supported_protocols<class_WebSocketPeer_property_supported_protocols>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

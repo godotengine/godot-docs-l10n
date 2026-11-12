@@ -2214,7 +2214,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 Значение ``0.0`` отключает глобальный объемный туман, позволяя :ref:`FogVolume<class_FogVolume>`\ s отображать объемный туман в определенных областях.
 
-Чтобы объемный туман работал как решение объемного *освещения*, установите :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` на самое низкое ненулевое значение (``0.0001``), а затем увеличьте :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` источников света до значений между ``10000`` и ``100000``, чтобы компенсировать очень низкую плотность.
+Чтобы объемный туман работал как решение объемного *освещения*, установите :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` на самое низкое ненулевое значение (\ ``0.0001``), а затем увеличьте :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` источников света до значений между ``10000`` и ``100000``, чтобы компенсировать очень низкую плотность.
 
 .. rst-class:: classref-item-separator
 

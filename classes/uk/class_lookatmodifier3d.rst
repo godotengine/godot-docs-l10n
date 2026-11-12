@@ -85,6 +85,8 @@ LookAtModifier3D
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`                           | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>`                     |                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>`                       | ``true``             |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
 
@@ -381,7 +383,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-Граничний кут основного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` має значення ``true``, у радіанах.
+Граничний кут основного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` має значення ``true``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +417,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-Граничний кут від'ємної сторони основного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
+Граничний кут від'ємної сторони основного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +451,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-Граничний кут позитивної сторони первинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
+Граничний кут позитивної сторони первинного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +468,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_rotation_axis**\ (\ value\: :ref:`Axis<enum_Vector3_Axis>`\ )
 - :ref:`Axis<enum_Vector3_Axis>` **get_primary_rotation_axis**\ (\ )
 
-Вісь першого повороту. Цей :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` працює, об’єднуючи обертання за кутами Ейлера, щоб запобігти обертанню :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+The axis of the first rotation. This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` works by compositing the rotation by Euler angles to prevent to rotate the :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+
+\ **Note:** Since **LookAtModifier3D** never modifies the twist when :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>` is ``false`` and :ref:`relative<class_LookAtModifier3D_property_relative>` is ``true``, the twist is not fixed even if :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +487,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-Параметр «Relative». Якщо ``true``, обертання застосовується відносно пози. Якщо ``false``, обертання застосовується відносно решти. Це означає заміну поточної пози на результат роботи **LookAtModifier3D**.
-
-\ **Примітка:** Ця опція впливає на базовий кут для :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Оскільки **LookAtModifier3D** сильно залежить від обертання за Ейлером, вісь, що визначає обмеження, та фактичне обертання тісно пов'язані між собою.
+The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +521,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-Граничний кут вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` має значення ``true``, у радіанах.
+Граничний кут вторинного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` має значення ``true``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +555,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-Граничний кут від'ємної сторони вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
+Граничний кут від'ємної сторони вторинного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +589,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-Граничний кут позитивної сторони вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
+Граничний кут позитивної сторони вторинного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +606,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_symmetry_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limitation_symmetry**\ (\ )
 
-Якщо ``true``, обмеження поширюються від кістки симетрично.
+If ``true``, the limitations are spread from the bone symmetrically.
 
-Якщо ``false``, обмеження можна вказати окремо для кожної сторони опори для кістки.
+If ``false``, the limitation can be specified separately for each side of the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -667,6 +669,27 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 ----
 
+.. _class_LookAtModifier3D_property_use_rest_for_limitation:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **use_rest_for_limitation** :ref:`🔗<class_LookAtModifier3D_property_use_rest_for_limitation>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_rest_for_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_using_rest_for_limitation**\ (\ )
+
+If ``true``, the angle limitation and the rotation axes are applied based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`.
+
+If ``false``, the angle limitation is applied based on the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
+
+\ **Note:** The limitation is applied to the rotation computed by this modifier. If the reference pose is rotated around the same axis, the limitation behaves as if it also limits the rotation of the reference pose. A rotation that this modifier does not change, such as the twist, is not limited.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_LookAtModifier3D_property_use_secondary_rotation:
 
 .. rst-class:: classref-property
@@ -707,9 +730,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 :ref:`bool<class_bool>` **is_interpolating**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_is_interpolating>`
 
-Повертає ``true``, якщо виконується інтерполяція на основі часу. Якщо ``true``, це еквівалентно тому, як :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` повертає ``0.0``.
+Returns ``true`` if time-based interpolation is running. If ``false``, it is equivalent to :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` returning ``0.0``.
 
-Це корисно для визначення, чи можна безпечно видалити **LookAtModifier3D**.
+This is useful to determine whether a **LookAtModifier3D** can be removed safely.
 
 .. rst-class:: classref-item-separator
 

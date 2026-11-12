@@ -835,9 +835,9 @@ Restituisce la dimensione del file in byte. Per una pipe, restituisce il numero 
 
 :ref:`String<class_String>` **get_line**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_line>`
 
-Restituisce la riga successiva del file come :ref:`String<class_String>`. La stringa restituita non include caratteri di nuova riga (``\n``) o di ritorno a capo (``\r``), ma include qualsiasi altro spazio vuoto iniziale o finale. Questo fa avanzare il cursore del file fino a dopo il carattere di nuova riga alla fine della riga.
+Returns the next line of the file as a :ref:`String<class_String>`. The returned string doesn't include newline (\ ``\n``) or carriage return (\ ``\r``) characters, but does include any other leading or trailing whitespace. This advances the file cursor to after the newline character at the end of the line.
 
-Il testo è interpretato come codificato in UTF-8.
+Text is interpreted as being UTF-8 encoded.
 
 .. rst-class:: classref-item-separator
 
@@ -1408,9 +1408,9 @@ Memorizza un numero in virgola mobile a 16 bit nel file. Questo fa avanzare il c
 
 :ref:`bool<class_bool>` **store_line**\ (\ line\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_line>`
 
-Memorizza la riga ``line`` nel file, seguita da un carattere di nuova riga (``\n``), codificando il testo come UTF-8. Questo fa avanzare il cursore del file della lunghezza della riga, dopo il carattere di nuova riga. La quantità di byte scritti dipende dai byte codificati in UTF-8, che può essere diversa da :ref:`String.length()<class_String_method_length>` il quale conta il numero di codici UTF-32. Restituisce ``true`` se l'operazione ha successo.
+Stores ``line`` in the file followed by a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the line, after the newline character. The amount of bytes written depends on the UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **Nota:** se si verifica un errore, il valore risultante dell'indicatore di posizione del file è indeterminato.
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,11 +1452,11 @@ Se si utilizza una build di Godot compilata con l'opzione ``precision=single`` (
 
 :ref:`bool<class_bool>` **store_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_string>`
 
-Memorizza la stringa ``string`` nel file senza un carattere di ritorno a capo (``\n``), codificando il testo come UTF-8. Questo fa avanzare il cursore del file della lunghezza della stringa in byte codificati in UTF-8, che può essere diversa da :ref:`String.length()<class_String_method_length>` il quale conta il numero di codici UTF-32. Restituisce ``true`` se l'operazione ha successo.
+Stores ``string`` in the file without a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the string in UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **Nota:** Questo metodo è progettato per scrivere file di testo. La stringa è memorizzata come buffer codificato in UTF-8, senza la lunghezza della stringa o lo zero di terminazione. Ciò significa che non può essere recuperata facilmente. Se si desidera memorizzare una stringa recuperabile in un file binario, considera di usare :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`. Per recuperare stringhe da un file di testo, è possibile usare ``get_buffer(length).get_string_from_utf8()`` (se si conosce la lunghezza) o :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
+\ **Note:** This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>` instead. For retrieving strings from a text file, you can use ``get_buffer(length).get_string_from_utf8()`` (if you know the length) or :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
 
-\ **Nota:** Se si verifica un errore, il valore risultante dell'indicatore di posizione nel file non può essere determinato.
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 

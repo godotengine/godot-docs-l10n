@@ -9,6 +9,15 @@ AccessibilityServer
 
 Une interface serveur pour les menus natifs d'OS.
 
+.. rst-class:: classref-introduction-group
+
+Description
+-----------
+
+**AccessibilityServer** handles screen reader support.
+
+\ **Note:** **AccessibilityServer** is implemented on Android, Linux, macOS, and Windows.
+
 .. rst-class:: classref-reftable-group
 
 Méthodes

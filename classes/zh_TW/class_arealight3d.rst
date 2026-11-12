@@ -151,11 +151,11 @@ AreaLight3D
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-一個可選的紋理，用於作為光源。在執行時（Runtime）更改紋理可能會影響效能，因為引擎需要將其繪製到面光源圖集（area light atlas）中，並生成帶有濾波的 Mipmap。
+An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
 
-如果沒有指定紋理，面光源將在其表面發射均勻的光線。
+If no texture is assigned, the area light emits uniform light across its surface.
 
-\ **注意：** 面光來源紋理僅在 Forward+ 和 Mobile 渲染模式下受支援，在 Compatibility（相容）模式下不受支援。為了減少在執行時切換紋理帶來的效能開銷，請確保面光來源紋理的每個維度（寬度和高度）都是 128 像素的倍數，或者是 2 的冪次方。這樣可以省去一個縮放（scaling）步驟，從而加快紋理的切換速度。為了達到最佳效果，紋理不一定非得是正方形的。最佳紋理尺寸的範例包括 32x64、128x128 和 256x384。
+\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

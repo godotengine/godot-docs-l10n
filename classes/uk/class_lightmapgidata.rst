@@ -226,7 +226,7 @@ enum **ShadowmaskMode**: :ref:`🔗<enum_LightmapGIData_ShadowmaskMode>`
 
 |void| **set_uses_spherical_harmonics**\ (\ uses_spherical_harmonics\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_LightmapGIData_method_set_uses_spherical_harmonics>`
 
-Якщо ``use_spherical_harmonics`` є ``true``, розповідає двигун для обробки даних Lightmap, якби він був запечена з спрямованою інформацією.
+Якщо ``uses_spherical_harmonics`` є ``true``, розповідає двигун для обробки даних Lightmap, якби він був запечена з спрямованою інформацією.
 
 \ **Примітка:** Зміна цього значення на вже запечених мапаках не спричиняє їх запікання знову. Це означає, що зовнішній вигляд матеріалу буде виглядати некоректно до того, як світлокарти запечені знову, в якому випадку значення, встановлене тут, відкидається в цілому **LightmapGIData** ресурс замінюється на блискавку.
 

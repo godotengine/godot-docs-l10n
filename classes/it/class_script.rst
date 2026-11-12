@@ -191,7 +191,9 @@ Restituisce il tipo base dello script.
 
 :ref:`Variant<class_Variant>` **get_property_default_value**\ (\ property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Script_method_get_property_default_value>`
 
-Restituisce il valore predefinito della proprietà specificata.
+Returns the default value of the specified property.
+
+\ **Note:** In GDScript and C#, this method returns ``null`` outside of editor builds.
 
 .. rst-class:: classref-item-separator
 

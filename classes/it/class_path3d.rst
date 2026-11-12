@@ -16,7 +16,7 @@ Descrizione
 
 Può avere nodi :ref:`PathFollow3D<class_PathFollow3D>` figli che si muovono lungo la :ref:`Curve3D<class_Curve3D>`. Vedi :ref:`PathFollow3D<class_PathFollow3D>` per ulteriori informazioni sull'utilizzo.
 
-Nota che Il percorso è considerato relativo ai nodi spostati (figli di :ref:`PathFollow3D<class_PathFollow3D>`). Pertanto, la curva dovrebbe solitamente iniziare con un vettore zero (``(0, 0, 0)``).
+Nota che Il percorso è considerato relativo ai nodi spostati (figli di :ref:`PathFollow3D<class_PathFollow3D>`). Pertanto, la curva dovrebbe solitamente iniziare con un vettore zero (\ ``(0, 0, 0)``).
 
 .. rst-class:: classref-reftable-group
 

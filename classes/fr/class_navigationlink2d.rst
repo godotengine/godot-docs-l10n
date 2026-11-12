@@ -152,7 +152,7 @@ La distance de recherche du lien est contrôlée par :ref:`NavigationServer2D.ma
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-Lorsque la recherche de chemin entre dans ce lien à partir du maillage de navigation d'une autre région, la valeur de :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` est ajoutée à la distance du chemin pour déterminer le chemin le plus court.
+When pathfinding enters this link from another region's navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
 
 .. rst-class:: classref-item-separator
 

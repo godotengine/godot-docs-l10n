@@ -86,7 +86,7 @@ SkeletonModificationStack2D
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-如果为 ``true``\ ，则会调用该堆栈中的修改器。这是通过 :ref:`Skeleton2D<class_Skeleton2D>` 节点自动处理的。
+If ``true``, the modifications in the stack will be called. This is handled automatically through the :ref:`Skeleton2D<class_Skeleton2D>` node.
 
 .. rst-class:: classref-item-separator
 

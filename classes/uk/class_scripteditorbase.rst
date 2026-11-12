@@ -45,6 +45,8 @@ ScriptEditorBase
 
 **edited_script_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_edited_script_changed>`
 
+**Застаріло:** This signal should only be used internally.
+
 Випробувано після перевірки сценарію.
 
 .. rst-class:: classref-item-separator
@@ -56,6 +58,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **go_to_help**\ (\ what\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_help>`
+
+**Застаріло:** This signal should only be used internally. See :ref:`ScriptEditor.goto_help()<class_ScriptEditor_method_goto_help>` instead.
 
 Випробувано, коли користувач запитує конкретну сторінку документації.
 
@@ -69,6 +73,8 @@ ScriptEditorBase
 
 **go_to_method**\ (\ script\: :ref:`Object<class_Object>`, method\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_method>`
 
+**Застаріло:** This signal should only be used internally.
+
 Увімкнено, коли запит користувача для перегляду певного методу скрипту, аналогічного :ref:`request_open_script_at_line<class_ScriptEditorBase_signal_request_open_script_at_line>`.
 
 .. rst-class:: classref-item-separator
@@ -80,6 +86,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **name_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_name_changed>`
+
+**Застаріло:** This signal should only be used internally.
 
 Увімкнено після перевірки сценаріїв або коли змінився редагований ресурс.
 
@@ -93,6 +101,8 @@ ScriptEditorBase
 
 **replace_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_replace_in_files_requested>`
 
+**Застаріло:** This signal should only be used internally.
+
 Випробувано, коли запит користувача знайти і замінити текст у файловій системі.
 
 .. rst-class:: classref-item-separator
@@ -104,6 +114,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **request_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_help>`
+
+**Застаріло:** This signal should only be used internally.
 
 Увімкнено, коли користувач запитує контекстну допомогу.
 
@@ -117,6 +129,8 @@ ScriptEditorBase
 
 **request_open_script_at_line**\ (\ script\: :ref:`Object<class_Object>`, line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_open_script_at_line>`
 
+**Застаріло:** This signal should only be used internally. See :ref:`EditorInterface.edit_script()<class_EditorInterface_method_edit_script>` instead.
+
 Увімкнено, коли запит користувача для перегляду певного рядка скрипта, схожого на :ref:`go_to_method<class_ScriptEditorBase_signal_go_to_method>`.
 
 .. rst-class:: classref-item-separator
@@ -129,7 +143,9 @@ ScriptEditorBase
 
 **request_save_history**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_history>`
 
-Увімкніть, коли контекстний запис користувача та пункт знаходиться в одному скрипті.
+**Застаріло:** This signal should only be used internally.
+
+Emitted when the editor requests to save a new history navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +157,9 @@ ScriptEditorBase
 
 **request_save_previous_state**\ (\ state\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_previous_state>`
 
-Увімкнено, коли користувач змінює поточний скрипт або переміщує догляд за 10 або більше стовпчиків в одному скрипті.
+**Застаріло:** This signal should only be used internally.
+
+Emitted when the editor requests an update to its navigation point.
 
 .. rst-class:: classref-item-separator
 
@@ -152,6 +170,8 @@ ScriptEditorBase
 .. rst-class:: classref-signal
 
 **search_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_search_in_files_requested>`
+
+**Застаріло:** This signal should only be used internally.
 
 Увімкніть запит користувача для пошуку тексту в файловій системі.
 

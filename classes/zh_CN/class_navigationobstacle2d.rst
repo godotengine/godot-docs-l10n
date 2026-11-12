@@ -182,7 +182,9 @@ NavigationObstacle2D
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-设置该障碍物的期望速度，这样如果（每帧）一直使用相同的速度移动而不是直接跳到某个位置，那么其他代理就能够更好地预测该障碍物的行为。仅影响该障碍物 :ref:`radius<class_NavigationObstacle2D_property_radius>` 的避障。不会影响障碍物的静态顶点。
+The wanted velocity for the obstacle, used by other agents to better predict the obstacle if it is moved with a velocity regularly (every frame), instead of warped to a new position.
+
+\ **Note:** This property only affects avoidance for the obstacle's :ref:`radius<class_NavigationObstacle2D_property_radius>`. Does nothing for the obstacle's static vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -199,9 +201,13 @@ NavigationObstacle2D
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ )
 
-该障碍物的轮廓顶点。如果这些顶点是按照顺时针顺序缠绕的，那么障碍物就会将其他代理向内推，否则就会向外推。轮廓不能交叉或重叠。如果这些顶点直接跳到了新的位置，那么其他代理可能无法预测这种行为，导致被困在障碍物内。
+The outline vertices of the obstacle. If the vertices are winded in clockwise order, agents will be pushed in by the obstacle, otherwise they will be pushed out. Outlines cannot be crossed or overlap. If the obstacle is warped to a new position, agents cannot predict this movement and may get trapped inside the obstacle.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

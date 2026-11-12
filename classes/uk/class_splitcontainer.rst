@@ -378,7 +378,11 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 
  **Примітка:** Якщо зміщення розділення призводять до перекриття вузлів :ref:`Control<class_Control>`, перший розділення матиме пріоритет під час визначення позицій.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +530,7 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 
 :ref:`int<class_int>` **autohide** = ``1`` :ref:`🔗<class_SplitContainer_theme_constant_autohide>`
 
-Логічне значення. Якщо ``1`` (``true``), граббери автоматично приховаються, коли вони не знаходяться під курсором. Якщо ``0`` (``false``), граббери завжди видимі. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` має бути :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
+Логічне значення. Якщо ``1`` (\ ``true``), граббери автоматично приховаються, коли вони не знаходяться під курсором. Якщо ``0`` (\ ``false``), граббери завжди видимі. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` має бути :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
 
 .. rst-class:: classref-item-separator
 

@@ -206,7 +206,11 @@ Polygon2D визначається набором точок. Кожна точ�
 
 Перелік вершин полігону. Остаточний пункт буде підключений до першого.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ Polygon2D визначається набором точок. Кожна точ�
 
 Географічні координати тексту для кожної вершини полігону. УФ має бути одне значення для полігонної вершини. Якщо є менше, не визначені вершини будуть використовуватися ``Vector2(0, 0)``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Polygon2D визначається набором точок. Кожна точ�
 
 Колір для кожної вершини. Кольори міжполіровані між вершинами, що призводить до гладких градієнтів. Для полігону слід бути одним. Якщо є менше, не визначені вершини будуть використовуватися :ref:`color<class_Polygon2D_property_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

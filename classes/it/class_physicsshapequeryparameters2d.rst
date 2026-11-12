@@ -14,7 +14,9 @@ Fornisce parametri per i metodi di :ref:`PhysicsDirectSpaceState2D<class_Physics
 Descrizione
 ----------------------
 
-Modificando varie proprietà di questo oggetto, come la forma, è possibile configurare i parametri per i metodi di :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`.
+By changing various properties of this object, such as the shape, you can configure the parameters for :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`'s methods.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

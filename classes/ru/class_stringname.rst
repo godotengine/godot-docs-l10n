@@ -22,7 +22,7 @@ StringName
 
 \ **Примечание:** В C# для использования методов, перечисленных на этой странице, требуется явное преобразование в ``System.String``. Используйте метод ``ToString()``, чтобы преобразовать **StringName** в строку, а затем используйте эквивалентные методы в ``System.String`` или ``StringExtensions``.
 
-\ **Примечание:** В логическом контексте **StringName** будет оцениваться как ``false``, если он пуст (``StringName("")``). В противном случае **StringName** всегда будет оцениваться как ``true``.
+\ **Примечание:** В логическом контексте **StringName** будет оцениваться как ``false``, если он пуст (\ ``StringName("")``). В противном случае **StringName** всегда будет оцениваться как ``true``.
 
 .. note::
 
@@ -427,9 +427,9 @@ StringName
 
 :ref:`String<class_String>` **c_unescape**\ (\ ) |const| :ref:`🔗<class_StringName_method_c_unescape>`
 
-Возвращает копию строки с экранированными символами, замененными их значениями. Поддерживаемые экранированные последовательности: ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
+Returns a copy of the string with escaped characters replaced by their meanings. Supported escape sequences are ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
 
-\ **Примечание:** В отличие от парсера GDScript, этот метод не поддерживает экранированную последовательность ``\uXXXX``.
+\ **Note:** Unlike the GDScript parser, this method doesn't support the ``\uXXXX`` escape sequence.
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ StringName
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_StringName_method_capitalize>`
 
-Изменяет внешний вид строки: заменяет подчеркивания (``_``) пробелами, добавляет пробелы перед заглавными буквами в середине слова, преобразует все буквы в строчные, затем преобразует первую букву и каждую букву после пробела в заглавные.
+Изменяет внешний вид строки: заменяет подчеркивания (\ ``_``) пробелами, добавляет пробелы перед заглавными буквами в середине слова, преобразует все буквы в строчные, затем преобразует первую букву и каждую букву после пробела в заглавные.
 
 
 .. tabs::
@@ -590,7 +590,7 @@ StringName
 
 :ref:`int<class_int>` **filecasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filecasecmp_to>`
 
-Как :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, но отдает приоритет строкам, начинающимся с точек (``.``) и подчеркиваний (``_``) перед любым другим символом. Полезно при сортировке папок или имен файлов.
+Как :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, но отдает приоритет строкам, начинающимся с точек (\ ``.``) и подчеркиваний (\ ``_``) перед любым другим символом. Полезно при сортировке папок или имен файлов.
 
 Чтобы получить результат :ref:`bool<class_bool>` из сравнения строк, используйте вместо этого оператор ``==``. См. также :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`, :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>` и :ref:`casecmp_to()<class_StringName_method_casecmp_to>`.
 
@@ -604,7 +604,7 @@ StringName
 
 :ref:`int<class_int>` **filenocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filenocasecmp_to>`
 
-Как :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, но отдает приоритет строкам, начинающимся с точек (``.``) и подчеркиваний (``_``) перед любым другим символом. Полезно при сортировке папок или имен файлов.
+Как :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, но отдает приоритет строкам, начинающимся с точек (\ ``.``) и подчеркиваний (\ ``_``) перед любым другим символом. Полезно при сортировке папок или имен файлов.
 
 Чтобы получить результат :ref:`bool<class_bool>` из сравнения строк, используйте вместо этого оператор ``==``. См. также :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`, :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` и :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`.
 
@@ -751,7 +751,7 @@ StringName
 
 :ref:`String<class_String>` **get_extension**\ (\ ) |const| :ref:`🔗<class_StringName_method_get_extension>`
 
-Если строка является допустимым именем файла или путем, возвращает расширение файла без начальной точки (``.``). В противном случае возвращает пустую строку.
+Если строка является допустимым именем файла или путем, возвращает расширение файла без начальной точки (\ ``.``). В противном случае возвращает пустую строку.
 
 ::
 
@@ -905,9 +905,9 @@ StringName
 
 :ref:`String<class_String>` **indent**\ (\ prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_indent>`
 
-Делает отступ каждой строки с заданным ``prefix``. Пустые строки не имеют отступа. См. также :ref:`dedent()<class_StringName_method_dedent>` для удаления отступа.
+Indents every line of the string with the given ``prefix``. Empty lines are not indented. See also :ref:`dedent()<class_StringName_method_dedent>` to remove indentation.
 
-Например, отступ строки можно сделать двумя табуляциями с помощью ``"\t\t"`` или четырьмя пробелами с помощью ``" "``.
+For example, the string can be indented with two tabulations using ``"\t\t"``, or four spaces using ``"    "``.
 
 .. rst-class:: classref-item-separator
 
@@ -945,7 +945,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_empty>`
 
-Возвращает ``true``, если длина строки равна ``0`` (``""``), то есть пуста. См. также :ref:`length()<class_StringName_method_length>`.
+Возвращает ``true``, если длина строки равна ``0`` (\ ``""``), то есть пуста. См. также :ref:`length()<class_StringName_method_length>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1002,7 +1002,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_ascii_identifier**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_ascii_identifier>`
 
-Возвращает ``true``, если эта строка является допустимым идентификатором ASCII. Допустимый идентификатор ASCII может содержать только буквы, цифры и подчеркивания (``_``), а первый символ не может быть цифрой.
+Возвращает ``true``, если эта строка является допустимым идентификатором ASCII. Допустимый идентификатор ASCII может содержать только буквы, цифры и подчеркивания (\ ``_``), а первый символ не может быть цифрой.
 
 ::
 
@@ -1023,7 +1023,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_filename>`
 
-Возвращает ``true``, если эта строка является допустимым именем файла. Допустимое имя файла не может быть пустым, начинаться или заканчиваться пробелами или содержать недопустимые символы (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+Возвращает ``true``, если эта строка является допустимым именем файла. Допустимое имя файла не может быть пустым, начинаться или заканчиваться пробелами или содержать недопустимые символы (\ ``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
 
 .. rst-class:: classref-item-separator
 
@@ -1035,7 +1035,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_float**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_float>`
 
-Возвращает ``true``, если эта строка представляет допустимое число с плавающей точкой. Допустимое число с плавающей точкой может содержать только цифры, одну десятичную точку (``.``) и букву экспоненты (``e``). Оно также может иметь префикс в виде положительного (``+``) или отрицательного (``-``) знака. Любое допустимое целое число также является допустимым числом с плавающей точкой (см. :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). См. также :ref:`to_float()<class_StringName_method_to_float>`.
+Возвращает ``true``, если эта строка представляет допустимое число с плавающей точкой. Допустимое число с плавающей точкой может содержать только цифры, одну десятичную точку (\ ``.``) и букву экспоненты (\ ``e``). Оно также может иметь префикс в виде положительного (\ ``+``) или отрицательного (\ ``-``) знака. Любое допустимое целое число также является допустимым числом с плавающей точкой (см. :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). См. также :ref:`to_float()<class_StringName_method_to_float>`.
 
 ::
 
@@ -1054,7 +1054,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_hex_number**\ (\ with_prefix\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_StringName_method_is_valid_hex_number>`
 
-Возвращает ``true``, если эта строка является допустимым шестнадцатеричным числом. Допустимое шестнадцатеричное число содержит только цифры или буквы от ``A`` до ``F`` (как заглавные, так и строчные) и может иметь префикс в виде положительного (``+``) или отрицательного (``-``) знака.
+Возвращает ``true``, если эта строка является допустимым шестнадцатеричным числом. Допустимое шестнадцатеричное число содержит только цифры или буквы от ``A`` до ``F`` (как заглавные, так и строчные) и может иметь префикс в виде положительного (\ ``+``) или отрицательного (\ ``-``) знака.
 
 Если ``with_prefix`` равен ``true``, шестнадцатеричное число должно иметь префикс ``"0x"``, чтобы считаться допустимым.
 
@@ -1076,7 +1076,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_html_color**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_html_color>`
 
-Возвращает ``true``, если эта строка является допустимым цветом в шестнадцатеричной нотации HTML. Строка должна быть шестнадцатеричным значением (см. :ref:`is_valid_hex_number()<class_StringName_method_is_valid_hex_number>`) из 3, 4, 6 или 8 цифр и может иметь префикс в виде знака решетки (``#``). Другие нотации HTML для цветов, такие как имена или ``hsl()``, не считаются допустимыми. См. также :ref:`Color.html()<class_Color_method_html>`.
+Возвращает ``true``, если эта строка является допустимым цветом в шестнадцатеричной нотации HTML. Строка должна быть шестнадцатеричным значением (см. :ref:`is_valid_hex_number()<class_StringName_method_is_valid_hex_number>`) из 3, 4, 6 или 8 цифр и может иметь префикс в виде знака решетки (\ ``#``). Другие нотации HTML для цветов, такие как имена или ``hsl()``, не считаются допустимыми. См. также :ref:`Color.html()<class_Color_method_html>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1090,7 +1090,7 @@ StringName
 
 **Устарело:** Use :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>` instead.
 
-Возвращает ``true``, если эта строка является допустимым идентификатором. Допустимый идентификатор может содержать только буквы, цифры и подчеркивания (``_``), а первый символ не может быть цифрой.
+Возвращает ``true``, если эта строка является допустимым идентификатором. Допустимый идентификатор может содержать только буквы, цифры и подчеркивания (\ ``_``), а первый символ не может быть цифрой.
 
 ::
 
@@ -1109,7 +1109,7 @@ StringName
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_int>`
 
-Возвращает ``true``, если эта строка представляет допустимое целое число. Допустимое целое число содержит только цифры и может иметь префикс в виде положительного (``+``) или отрицательного (``-``) знака. См. также :ref:`to_int()<class_StringName_method_to_int>`.
+Возвращает ``true``, если эта строка представляет допустимое целое число. Допустимое целое число содержит только цифры и может иметь префикс в виде положительного (\ ``+``) или отрицательного (\ ``-``) знака. См. также :ref:`to_int()<class_StringName_method_to_int>`.
 
 ::
 
@@ -1229,7 +1229,7 @@ StringName
 
 :ref:`int<class_int>` **length**\ (\ ) |const| :ref:`🔗<class_StringName_method_length>`
 
-Возвращает количество символов в строке. Пустые строки (``""``) всегда возвращают ``0``. См. также :ref:`is_empty()<class_StringName_method_is_empty>`.
+Возвращает количество символов в строке. Пустые строки (\ ``""``) всегда возвращают ``0``. См. также :ref:`is_empty()<class_StringName_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ StringName
 
 :ref:`bool<class_bool>` **match**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_match>`
 
-Соответствует ли простое выражение (также называемое «глоб» или «глоббинг»), где ``*`` соответствует нулю или более произвольным символам, а ``?`` соответствует любому одиночному символу, кроме точки (``.``). Пустая строка или пустое выражение всегда оценивается как ``false``.
+Соответствует ли простое выражение (также называемое «глоб» или «глоббинг»), где ``*`` соответствует нулю или более произвольным символам, а ``?`` соответствует любому одиночному символу, кроме точки (\ ``.``). Пустая строка или пустое выражение всегда оценивается как ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1279,7 +1279,7 @@ StringName
 
 :ref:`bool<class_bool>` **matchn**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_matchn>`
 
-Соответствует ли простое **выражение без учета регистра**, где ``*`` соответствует нулю или более произвольным символам, а ``?`` соответствует любому одиночному символу, кроме точки (``.``). Пустая строка или пустое выражение всегда оцениваются как ``false``.
+Соответствует ли простое **выражение без учета регистра**, где ``*`` соответствует нулю или более произвольным символам, а ``?`` соответствует любому одиночному символу, кроме точки (\ ``.``). Пустая строка или пустое выражение всегда оцениваются как ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1751,9 +1751,9 @@ StringName
 
 :ref:`String<class_String>` **strip_edges**\ (\ left\: :ref:`bool<class_bool>` = true, right\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_StringName_method_strip_edges>`
 
-Удаляет все непечатаемые символы из начала и конца строки. К ним относятся пробелы, табуляции (``\t``) и переводы строк (``\n`` ``\r``).
+Strips all non-printable characters from the beginning and the end of the string. These include spaces, tabulations (\ ``\t``), and newlines (\ ``\n`` ``\r``).
 
-Если ``left`` равен ``false``, игнорирует начало строки. Аналогично, если ``right`` равен ``false``, игнорирует конец строки.
+If ``left`` is ``false``, ignores the string's beginning. Likewise, if ``right`` is ``false``, ignores the string's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1765,7 +1765,7 @@ StringName
 
 :ref:`String<class_String>` **strip_escapes**\ (\ ) |const| :ref:`🔗<class_StringName_method_strip_escapes>`
 
-Удаляет все экранированные символы из строки. К ним относятся все непечатаемые управляющие символы первой страницы таблицы ASCII (значения от 0 до 31), такие как символы табуляции (``\t``) и новой строки (``\n``, ``\r``), но *не* пробелы.
+Strips all escape characters from the string. These include all non-printable control characters of the first page of the ASCII table (values from 0 to 31), such as tabulation (\ ``\t``) and newline (\ ``\n``, ``\r``) characters, but *not* spaces.
 
 .. rst-class:: classref-item-separator
 
@@ -1813,7 +1813,7 @@ StringName
 
 :ref:`float<class_float>` **to_float**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_float>`
 
-Преобразует строку, представляющую десятичное число, в :ref:`float<class_float>`. Этот метод останавливается на первом нечисловом символе, за исключением первой десятичной точки (``.``) и буквы экспоненты (``e``). См. также :ref:`is_valid_float()<class_StringName_method_is_valid_float>`.
+Преобразует строку, представляющую десятичное число, в :ref:`float<class_float>`. Этот метод останавливается на первом нечисловом символе, за исключением первой десятичной точки (\ ``.``) и буквы экспоненты (\ ``e``). См. также :ref:`is_valid_float()<class_StringName_method_is_valid_float>`.
 
 ::
 
@@ -1833,7 +1833,7 @@ StringName
 
 :ref:`int<class_int>` **to_int**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_int>`
 
-Преобразует строку, представляющую целое число, в :ref:`int<class_int>`. Этот метод удаляет все нечисловые символы и останавливается на первой десятичной точке (``.``). См. также :ref:`is_valid_int()<class_StringName_method_is_valid_int>`.
+Преобразует строку, представляющую целое число, в :ref:`int<class_int>`. Этот метод удаляет все нечисловые символы и останавливается на первой десятичной точке (\ ``.``). См. также :ref:`is_valid_int()<class_StringName_method_is_valid_int>`.
 
 ::
 
@@ -2004,7 +2004,7 @@ StringName
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_wchar_buffer>`
 
-Преобразует строку в `широкий символ <https://en.wikipedia.org/wiki/Wide_character>`__ (``wchar_t``, UTF-16 в Windows, UTF-32 на других платформах), закодированный :ref:`PackedByteArray<class_PackedByteArray>`. Это обратный метод :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
+Преобразует строку в `широкий символ <https://en.wikipedia.org/wiki/Wide_character>`__ (\ ``wchar_t``, UTF-16 в Windows, UTF-32 на других платформах), закодированный :ref:`PackedByteArray<class_PackedByteArray>`. Это обратный метод :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2138,7 +2138,7 @@ StringName
 
 :ref:`String<class_String>` **validate_node_name**\ (\ ) |const| :ref:`🔗<class_StringName_method_validate_node_name>`
 
-Возвращает копию строки, в которой все символы, недопустимые в :ref:`Node.name<class_Node_property_name>` (``.`` ``:`` ``@`` ``/`` ``"`` ``%``), заменены на подчеркивания.
+Возвращает копию строки, в которой все символы, недопустимые в :ref:`Node.name<class_Node_property_name>` (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``), заменены на подчеркивания.
 
 .. rst-class:: classref-item-separator
 
@@ -2150,7 +2150,7 @@ StringName
 
 :ref:`String<class_String>` **xml_escape**\ (\ escape_quotes\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_StringName_method_xml_escape>`
 
-Возвращает копию строки со специальными символами, экранированными с использованием стандарта XML. Если ``escape_quotes`` равен ``true``, символы одинарной кавычки (``'``) и двойной кавычки (``"``) также экранируются.
+Возвращает копию строки со специальными символами, экранированными с использованием стандарта XML. Если ``escape_quotes`` равен ``true``, символы одинарной кавычки (\ ``'``) и двойной кавычки (\ ``"``) также экранируются.
 
 .. rst-class:: classref-item-separator
 

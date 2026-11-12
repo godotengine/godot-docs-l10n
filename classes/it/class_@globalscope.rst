@@ -110,6 +110,8 @@ Proprietà
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`TextServerManager<class_TextServerManager>`                 | :ref:`TextServerManager<class_@GlobalScope_property_TextServerManager>`                 |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`TextureStreaming<class_TextureStreaming>`                   | :ref:`TextureStreaming<class_@GlobalScope_property_TextureStreaming>`                   |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`ThemeDB<class_ThemeDB>`                                     | :ref:`ThemeDB<class_@GlobalScope_property_ThemeDB>`                                     |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Time<class_Time>`                                           | :ref:`Time<class_@GlobalScope_property_Time>`                                           |
@@ -1756,7 +1758,7 @@ Tasto spazio (la barra spaziatrice).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EXCLAM** = ``33``
 
-Tasto punto esclamativo (``!``).
+Tasto punto esclamativo (\ ``!``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTEDBL:
 
@@ -1764,7 +1766,7 @@ Tasto punto esclamativo (``!``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTEDBL** = ``34``
 
-Tasto virgolette doppie (``"``).
+Tasto virgolette doppie (\ ``"``).
 
 .. _class_@GlobalScope_constant_KEY_NUMBERSIGN:
 
@@ -1772,7 +1774,7 @@ Tasto virgolette doppie (``"``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_NUMBERSIGN** = ``35``
 
-Tasto cancelletto o *hash* (``#``).
+Tasto cancelletto o *hash* (\ ``#``).
 
 .. _class_@GlobalScope_constant_KEY_DOLLAR:
 
@@ -1780,7 +1782,7 @@ Tasto cancelletto o *hash* (``#``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_DOLLAR** = ``36``
 
-Tasto simbolo del dollaro (``$``).
+Tasto simbolo del dollaro (\ ``$``).
 
 .. _class_@GlobalScope_constant_KEY_PERCENT:
 
@@ -1788,7 +1790,7 @@ Tasto simbolo del dollaro (``$``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERCENT** = ``37``
 
-Tasto simbolo di percentuale (``%``).
+Tasto simbolo di percentuale (\ ``%``).
 
 .. _class_@GlobalScope_constant_KEY_AMPERSAND:
 
@@ -1796,7 +1798,7 @@ Tasto simbolo di percentuale (``%``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AMPERSAND** = ``38``
 
-Tasto "e" commerciale (``%``).
+Tasto "e" commerciale (\ ``%``).
 
 .. _class_@GlobalScope_constant_KEY_APOSTROPHE:
 
@@ -1804,7 +1806,7 @@ Tasto "e" commerciale (``%``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_APOSTROPHE** = ``39``
 
-Tasto apostrofo (``'``).
+Tasto apostrofo (\ ``'``).
 
 .. _class_@GlobalScope_constant_KEY_PARENLEFT:
 
@@ -1812,7 +1814,7 @@ Tasto apostrofo (``'``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PARENLEFT** = ``40``
 
-Tasto parentesi tonda aperta (``(``).
+Tasto parentesi tonda aperta (\ ``(``).
 
 .. _class_@GlobalScope_constant_KEY_PARENRIGHT:
 
@@ -1820,7 +1822,7 @@ Tasto parentesi tonda aperta (``(``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PARENRIGHT** = ``41``
 
-Tasto parentesi tonda chiusa (``)``).
+Tasto parentesi tonda chiusa (\ ``)``).
 
 .. _class_@GlobalScope_constant_KEY_ASTERISK:
 
@@ -1828,7 +1830,7 @@ Tasto parentesi tonda chiusa (``)``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASTERISK** = ``42``
 
-Tasto asterisco (``*``).
+Tasto asterisco (\ ``*``).
 
 .. _class_@GlobalScope_constant_KEY_PLUS:
 
@@ -1836,7 +1838,7 @@ Tasto asterisco (``*``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PLUS** = ``43``
 
-Tasto simbolo più (``+``).
+Tasto simbolo più (\ ``+``).
 
 .. _class_@GlobalScope_constant_KEY_COMMA:
 
@@ -1844,7 +1846,7 @@ Tasto simbolo più (``+``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COMMA** = ``44``
 
-Tasto virgola (``,``).
+Tasto virgola (\ ``,``).
 
 .. _class_@GlobalScope_constant_KEY_MINUS:
 
@@ -1852,7 +1854,7 @@ Tasto virgola (``,``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MINUS** = ``45``
 
-Tasto simbolo meno (``-``).
+Tasto simbolo meno (\ ``-``).
 
 .. _class_@GlobalScope_constant_KEY_PERIOD:
 
@@ -1860,7 +1862,7 @@ Tasto simbolo meno (``-``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERIOD** = ``46``
 
-Tasto punto (``.``).
+Tasto punto (\ ``.``).
 
 .. _class_@GlobalScope_constant_KEY_SLASH:
 
@@ -1868,7 +1870,7 @@ Tasto punto (``.``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SLASH** = ``47``
 
-Tasto barra (``/``).
+Tasto barra (\ ``/``).
 
 .. _class_@GlobalScope_constant_KEY_0:
 
@@ -1956,7 +1958,7 @@ Tasto numero 9.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COLON** = ``58``
 
-Tasto due punti (``:``).
+Tasto due punti (\ ``:``).
 
 .. _class_@GlobalScope_constant_KEY_SEMICOLON:
 
@@ -1964,7 +1966,7 @@ Tasto due punti (``:``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SEMICOLON** = ``59``
 
-Tasto punto e virgola (``;``).
+Tasto punto e virgola (\ ``;``).
 
 .. _class_@GlobalScope_constant_KEY_LESS:
 
@@ -1972,7 +1974,7 @@ Tasto punto e virgola (``;``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_LESS** = ``60``
 
-Tasto simbolo di minore (``<``).
+Tasto simbolo di minore (\ ``<``).
 
 .. _class_@GlobalScope_constant_KEY_EQUAL:
 
@@ -1980,7 +1982,7 @@ Tasto simbolo di minore (``<``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EQUAL** = ``61``
 
-Tasto simbolo di uguale (``=``).
+Tasto simbolo di uguale (\ ``=``).
 
 .. _class_@GlobalScope_constant_KEY_GREATER:
 
@@ -1988,7 +1990,7 @@ Tasto simbolo di uguale (``=``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_GREATER** = ``62``
 
-Tasto simbolo di maggiore (``>``).
+Tasto simbolo di maggiore (\ ``>``).
 
 .. _class_@GlobalScope_constant_KEY_QUESTION:
 
@@ -1996,7 +1998,7 @@ Tasto simbolo di maggiore (``>``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUESTION** = ``63``
 
-Tasto punto interrogativo (``?``).
+Tasto punto interrogativo (\ ``?``).
 
 .. _class_@GlobalScope_constant_KEY_AT:
 
@@ -2004,7 +2006,7 @@ Tasto punto interrogativo (``?``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AT** = ``64``
 
-Tasto chiocciola o "a" commerciale (``@``).
+Tasto chiocciola o "a" commerciale (\ ``@``).
 
 .. _class_@GlobalScope_constant_KEY_A:
 
@@ -2220,7 +2222,7 @@ Tasto Z.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETLEFT** = ``91``
 
-Tasto parentesi quadra aperta (``[lb]``).
+Left bracket (\ ``[``) key.
 
 .. _class_@GlobalScope_constant_KEY_BACKSLASH:
 
@@ -2228,7 +2230,7 @@ Tasto parentesi quadra aperta (``[lb]``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BACKSLASH** = ``92``
 
-Tasto barra rovesciata (``\``).
+Tasto barra rovesciata (\ ``\``).
 
 .. _class_@GlobalScope_constant_KEY_BRACKETRIGHT:
 
@@ -2236,7 +2238,7 @@ Tasto barra rovesciata (``\``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETRIGHT** = ``93``
 
-Tasto parentesi quadra chiusa (``[rb]``).
+Right bracket (\ ``]``) key.
 
 .. _class_@GlobalScope_constant_KEY_ASCIICIRCUM:
 
@@ -2244,7 +2246,7 @@ Tasto parentesi quadra chiusa (``[rb]``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIICIRCUM** = ``94``
 
-Tasto accento circonflesso (``^``).
+Tasto accento circonflesso (\ ``^``).
 
 .. _class_@GlobalScope_constant_KEY_UNDERSCORE:
 
@@ -2252,7 +2254,7 @@ Tasto accento circonflesso (``^``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_UNDERSCORE** = ``95``
 
-Tasto trattino basso (``_``).
+Tasto trattino basso (\ ``_``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTELEFT:
 
@@ -2260,7 +2262,7 @@ Tasto trattino basso (``_``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTELEFT** = ``96``
 
-Tasto apice inverso (`````).
+Tasto apice inverso (\ `````).
 
 .. _class_@GlobalScope_constant_KEY_BRACELEFT:
 
@@ -2268,7 +2270,7 @@ Tasto apice inverso (`````).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACELEFT** = ``123``
 
-Tasto parentesi graffa aperta (``{``).
+Tasto parentesi graffa aperta (\ ``{``).
 
 .. _class_@GlobalScope_constant_KEY_BAR:
 
@@ -2276,7 +2278,7 @@ Tasto parentesi graffa aperta (``{``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BAR** = ``124``
 
-Tasto barra verticale o *pipe* (``|``).
+Tasto barra verticale o *pipe* (\ ``|``).
 
 .. _class_@GlobalScope_constant_KEY_BRACERIGHT:
 
@@ -2284,7 +2286,7 @@ Tasto barra verticale o *pipe* (``|``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACERIGHT** = ``125``
 
-Tasto parentesi graffa chiusa (``}``).
+Tasto parentesi graffa chiusa (\ ``}``).
 
 .. _class_@GlobalScope_constant_KEY_ASCIITILDE:
 
@@ -2292,7 +2294,7 @@ Tasto parentesi graffa chiusa (``}``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIITILDE** = ``126``
 
-Tasto tilde (``~``).
+Tasto tilde (\ ``~``).
 
 .. _class_@GlobalScope_constant_KEY_YEN:
 
@@ -2300,7 +2302,7 @@ Tasto tilde (``~``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_YEN** = ``165``
 
-Tasto simbolo del yen (``¥``).
+Tasto simbolo del yen (\ ``¥``).
 
 .. _class_@GlobalScope_constant_KEY_SECTION:
 
@@ -2308,7 +2310,7 @@ Tasto simbolo del yen (``¥``).
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SECTION** = ``167``
 
-Tasto segno di sezione (``§``).
+Tasto segno di sezione (\ ``§``).
 
 .. rst-class:: classref-item-separator
 
@@ -2420,7 +2422,7 @@ enum **KeyLocation**: :ref:`🔗<enum_@GlobalScope_KeyLocation>`
 
 :ref:`KeyLocation<enum_@GlobalScope_KeyLocation>` **KEY_LOCATION_UNSPECIFIED** = ``0``
 
-Utilizzato per i tasti che appaiono solo una volta, o quando un confronto non ha bisogno di distinguere tra le versioni di sinistra (``LEFT``) e destra (``RIGHT``).
+Utilizzato per i tasti che appaiono solo una volta, o quando un confronto non ha bisogno di distinguere tra le versioni di sinistra (\ ``LEFT``) e destra (\ ``RIGHT``).
 
 Per esempio, quando si utilizza :ref:`InputEvent.is_match()<class_InputEvent_method_is_match>`, un evento che ha :ref:`KEY_LOCATION_UNSPECIFIED<class_@GlobalScope_constant_KEY_LOCATION_UNSPECIFIED>` corrisponderà a qualsiasi :ref:`KeyLocation<enum_@GlobalScope_KeyLocation>` sull'evento passato.
 
@@ -3574,7 +3576,7 @@ Suggerisce che una proprietà di tipo vettore dovrebbe consentire di collegare l
 
 Indica che una proprietà :ref:`int<class_int>` è una maschera di bit con flag che hanno nomi.
 
-La stringa indicativa è un elenco separato da virgole di nomi come ``"Bit0,Bit1,Bit2,Bit3"``. Gli spazi vuoti **non** sono rimossi da entrambe le estremità di un nome. Il primo nome nell'elenco ha un valore 1, il prossimo 2, poi 4, 8, 16 e così via. È possibile specificare valori espliciti appendendo ``:integer`` al nome, ad esempio ``"A:4,B:8,C:16"``. Si possono anche combinare diversi flag assieme (``"A:4,B:8,AB:12,C:16"``).
+La stringa indicativa è un elenco separato da virgole di nomi come ``"Bit0,Bit1,Bit2,Bit3"``. Gli spazi vuoti **non** sono rimossi da entrambe le estremità di un nome. Il primo nome nell'elenco ha un valore 1, il prossimo 2, poi 4, 8, 16 e così via. È possibile specificare valori espliciti appendendo ``:integer`` al nome, ad esempio ``"A:4,B:8,C:16"``. Si possono anche combinare diversi flag assieme (\ ``"A:4,B:8,AB:12,C:16"``).
 
 \ **Nota:** Un valore di flag deve essere almeno ``1`` e al massimo ``2 ** 32 - 1``.
 
@@ -3970,11 +3972,19 @@ Indica che una proprietà di tipo :ref:`String<class_String>` o :ref:`StringName
 
 Come :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`, con la differenza che il file sarà memorizzato come percorso non elaborato. Ciò significa che potrebbe non essere più valido quando il file viene spostato. Si consiglia di utilizzare :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>` se possibile.
 
+.. _class_@GlobalScope_constant_PROPERTY_HINT_AUDIO_BUS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_AUDIO_BUS** = ``45``
+
+Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property is the name of an audio bus. This allows the selection of predefined bus names registered with the audio server.
+
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``45``
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``46``
 
 Rappresenta la dimensione dell'enumerazione :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`.
 
@@ -4692,7 +4702,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_EQUAL** = ``0``
 
-Operatore uguaglianza (``==``).
+Operatore uguaglianza (\ ``==``).
 
 .. _class_@GlobalScope_constant_OP_NOT_EQUAL:
 
@@ -4700,7 +4710,7 @@ Operatore uguaglianza (``==``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT_EQUAL** = ``1``
 
-Operatore disuguaglianza (``==``).
+Operatore disuguaglianza (\ ``==``).
 
 .. _class_@GlobalScope_constant_OP_LESS:
 
@@ -4708,7 +4718,7 @@ Operatore disuguaglianza (``==``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS** = ``2``
 
-Operatore minore (``<``).
+Operatore minore (\ ``<``).
 
 .. _class_@GlobalScope_constant_OP_LESS_EQUAL:
 
@@ -4716,7 +4726,7 @@ Operatore minore (``<``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS_EQUAL** = ``3``
 
-Operatore minore o uguale (``<=``).
+Operatore minore o uguale (\ ``<=``).
 
 .. _class_@GlobalScope_constant_OP_GREATER:
 
@@ -4724,7 +4734,7 @@ Operatore minore o uguale (``<=``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER** = ``4``
 
-Operatore maggiore (``>``).
+Operatore maggiore (\ ``>``).
 
 .. _class_@GlobalScope_constant_OP_GREATER_EQUAL:
 
@@ -4732,7 +4742,7 @@ Operatore maggiore (``>``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER_EQUAL** = ``5``
 
-Operatore maggiore o uguale (``>=``).
+Operatore maggiore o uguale (\ ``>=``).
 
 .. _class_@GlobalScope_constant_OP_ADD:
 
@@ -4740,7 +4750,7 @@ Operatore maggiore o uguale (``>=``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_ADD** = ``6``
 
-Operatore addizione (``+``).
+Operatore addizione (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_SUBTRACT:
 
@@ -4748,7 +4758,7 @@ Operatore addizione (``+``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SUBTRACT** = ``7``
 
-Operatore sottrazione (``-``).
+Operatore sottrazione (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_MULTIPLY:
 
@@ -4756,7 +4766,7 @@ Operatore sottrazione (``-``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MULTIPLY** = ``8``
 
-Operatore moltiplicazione (``*``).
+Operatore moltiplicazione (\ ``*``).
 
 .. _class_@GlobalScope_constant_OP_DIVIDE:
 
@@ -4764,7 +4774,7 @@ Operatore moltiplicazione (``*``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_DIVIDE** = ``9``
 
-Operatore divisione (``/``).
+Operatore divisione (\ ``/``).
 
 .. _class_@GlobalScope_constant_OP_NEGATE:
 
@@ -4772,7 +4782,7 @@ Operatore divisione (``/``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NEGATE** = ``10``
 
-Operatore negazione unaria (``-``).
+Operatore negazione unaria (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_POSITIVE:
 
@@ -4780,7 +4790,7 @@ Operatore negazione unaria (``-``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POSITIVE** = ``11``
 
-Operatore addizione unaria (``+``).
+Operatore addizione unaria (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_MODULE:
 
@@ -4788,7 +4798,7 @@ Operatore addizione unaria (``+``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MODULE** = ``12``
 
-Operatore resto/modulo (``%``).
+Operatore resto/modulo (\ ``%``).
 
 .. _class_@GlobalScope_constant_OP_POWER:
 
@@ -4796,7 +4806,7 @@ Operatore resto/modulo (``%``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POWER** = ``13``
 
-Operatore potenza (``**``).
+Operatore potenza (\ ``**``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_LEFT:
 
@@ -4804,7 +4814,7 @@ Operatore potenza (``**``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_LEFT** = ``14``
 
-Operatore scorrimento dei bit a sinistra (``<<``).
+Operatore scorrimento dei bit a sinistra (\ ``<<``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_RIGHT:
 
@@ -4812,7 +4822,7 @@ Operatore scorrimento dei bit a sinistra (``<<``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_RIGHT** = ``15``
 
-Operatore scorrimento dei bit a destra (``>>``).
+Operatore scorrimento dei bit a destra (\ ``>>``).
 
 .. _class_@GlobalScope_constant_OP_BIT_AND:
 
@@ -4820,7 +4830,7 @@ Operatore scorrimento dei bit a destra (``>>``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_AND** = ``16``
 
-Operatore AND bit-a-bit (``&``).
+Operatore AND bit-a-bit (\ ``&``).
 
 .. _class_@GlobalScope_constant_OP_BIT_OR:
 
@@ -4828,7 +4838,7 @@ Operatore AND bit-a-bit (``&``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_OR** = ``17``
 
-Operatore OR bit-a-bit (``|``).
+Operatore OR bit-a-bit (\ ``|``).
 
 .. _class_@GlobalScope_constant_OP_BIT_XOR:
 
@@ -4836,7 +4846,7 @@ Operatore OR bit-a-bit (``|``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_XOR** = ``18``
 
-Operatore XOR bit-a-bit (``^``).
+Operatore XOR bit-a-bit (\ ``^``).
 
 .. _class_@GlobalScope_constant_OP_BIT_NEGATE:
 
@@ -4844,7 +4854,7 @@ Operatore XOR bit-a-bit (``^``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_NEGATE** = ``19``
 
-Operatore NOT bit-a-bit (``~``).
+Operatore NOT bit-a-bit (\ ``~``).
 
 .. _class_@GlobalScope_constant_OP_AND:
 
@@ -4852,7 +4862,7 @@ Operatore NOT bit-a-bit (``~``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_AND** = ``20``
 
-Operatore AND logico (``and`` oppure ``&&``).
+Operatore AND logico (\ ``and`` oppure ``&&``).
 
 .. _class_@GlobalScope_constant_OP_OR:
 
@@ -4860,7 +4870,7 @@ Operatore AND logico (``and`` oppure ``&&``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_OR** = ``21``
 
-Operatore logico OR (``or`` oppure ``||``).
+Operatore logico OR (\ ``or`` oppure ``||``).
 
 .. _class_@GlobalScope_constant_OP_XOR:
 
@@ -4876,7 +4886,7 @@ Operatore XOR logico (non implementato in GDScript).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT** = ``23``
 
-Operatore NOT logico (``not`` oppure ``!``).
+Operatore NOT logico (\ ``not`` oppure ``!``).
 
 .. _class_@GlobalScope_constant_OP_IN:
 
@@ -4884,7 +4894,7 @@ Operatore NOT logico (``not`` oppure ``!``).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_IN** = ``24``
 
-Operatore IN logico (``in``).
+Operatore IN logico (\ ``in``).
 
 .. _class_@GlobalScope_constant_OP_MAX:
 
@@ -5442,6 +5452,18 @@ Il singleton :ref:`TextServerManager<class_TextServerManager>`.
 
 ----
 
+.. _class_@GlobalScope_property_TextureStreaming:
+
+.. rst-class:: classref-property
+
+:ref:`TextureStreaming<class_TextureStreaming>` **TextureStreaming** :ref:`🔗<class_@GlobalScope_property_TextureStreaming>`
+
+The :ref:`TextureStreaming<class_TextureStreaming>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_property_ThemeDB:
 
 .. rst-class:: classref-property
@@ -5946,9 +5968,9 @@ Esegue un interpolazione cubica tra due valori di rotazione con il percorso più
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, pre\: :ref:`float<class_float>`, post\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`, to_t\: :ref:`float<class_float>`, pre_t\: :ref:`float<class_float>`, post_t\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_cubic_interpolate_angle_in_time>`
 
-Esegue un interpolazione cubica tra due valori di rotazione con il percorso più breve dal fattore definito in ``weight`` con valori ``pre`` e ``post``. Vedi anche :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
+Cubic interpolates between two rotation values with shortest path by the factor defined in ``weight`` with ``pre`` and ``post`` values. See also :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
-Può eseguire un interpolazione più fluida di :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>` dai valori di tempo.
+It can perform smoother interpolation than :ref:`cubic_interpolate_angle()<class_@GlobalScope_method_cubic_interpolate_angle>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -6619,7 +6641,7 @@ Restituisce la più piccola potenza di 2 che è maggiore o uguale a ``value``.
     nearest_po2(0)  # Restituisce 0 (potrebbe essere inaspettato)
     nearest_po2(-1) # Restituisce 0 (potrebbe essere inaspettato)
 
-\ **Attenzione:** A causa del modo in cui è implementata, questa funzione restituisce ``0`` invece di ``1`` per i valori minori o uguali a ``0``, eccetto quando ``value`` è l'intero di 64 bit più piccolo (``-9223372036854775808``) dove ``value`` viene restituito senza cambiamenti.
+\ **Attenzione:** A causa del modo in cui è implementata, questa funzione restituisce ``0`` invece di ``1`` per i valori minori o uguali a ``0``, eccetto quando ``value`` è l'intero di 64 bit più piccolo (\ ``-9223372036854775808``) dove ``value`` viene restituito senza cambiamenti.
 
 .. rst-class:: classref-item-separator
 
@@ -6735,30 +6757,30 @@ Converte uno o più argomenti di qualunque tipo in una stringa e li stampa nella
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-Converte uno o più argomenti di qualsiasi tipo in stringa nel miglior modo possibile e li stampa nella console.
+Converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
-I seguenti tag BBCode sono supportati: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
+The following BBCode tags are supported: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
 
-I tag URL supportano solo gli URL avvolti da un tag URL, non URL con un titolo diverso.
+URL tags support both URLs wrapped by a URL tag and URLs with a different title (\ ``[url=address]text[/url]``). Support for URLs with a different title varies across terminal emulators. Most modern terminal emulators support them, but Terminal.app and conhost (the legacy Windows console) do not.
 
-Quando si stampa all'output standard, il sottoinsieme supportato di BBCode viene convertito in codici di escape ANSI da visualizzare per l'emulatore del terminale. Il supporto per i codici di escape ANSI varia tra diversi emulatori di terminali, soprattutto per il corsivo e la barratura. Nell'output standard, ``code`` è rappresentato con testo schiarito ma senza alcun cambiamento di font. I tag non supportati vengono lasciati così come sono nell'output standard.
+When printing to standard output, the supported subset of BBCode is converted to ANSI escape codes for the terminal emulator to display. Support for ANSI escape codes varies across terminal emulators, especially for italic and strikethrough. In standard output, ``code`` is represented with faint text but without any font change. Unsupported tags are left as-is in standard output.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Ciao mondo![/b][/color]") # Stampa "Ciao mondo!", in verde con font in grassetto.
+    print_rich("[color=green][b]Hello world![/b][/color]") # Prints "Hello world!", in green with a bold font.
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Ciao mondo![/b][/color]"); // Stampa "Ciao mondo!", in verde con font in grassetto.
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Prints "Hello world!", in green with a bold font.
 
 
 
-\ **Nota:** Considera l'utilizzo di :ref:`push_error()<class_@GlobalScope_method_push_error>` e di :ref:`push_warning()<class_@GlobalScope_method_push_warning>` per stampare messaggi di errore e di avviso invece di :ref:`print()<class_@GlobalScope_method_print>` o :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. Ciò li distingue dai messaggi stampati usati per scopi di debug, e visualizzano anche uno stack trace quando viene stampato un errore o un avviso.
+\ **Note:** Consider using :ref:`push_error()<class_@GlobalScope_method_push_error>` and :ref:`push_warning()<class_@GlobalScope_method_push_warning>` to print error and warning messages instead of :ref:`print()<class_@GlobalScope_method_print>` or :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
-\ **Nota:** L'output visualizzato nell'editor supporta tag cliccabili ``[url=address]text[/url]``\ ``. Il valore di [code]address`` del tag ``[url]`` viene gestito da :ref:`OS.shell_open()<class_OS_method_shell_open>` al clic.
+\ **Note:** Output displayed in the editor supports clickable ``[url=address]text[/url]`` tags. The ``[url]`` tag's ``address`` value is handled by :ref:`OS.shell_open()<class_OS_method_shell_open>` when clicked.
 
 .. rst-class:: classref-item-separator
 

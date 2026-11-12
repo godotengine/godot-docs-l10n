@@ -26,19 +26,72 @@ OpenXRSpatialMarkerTrackingCapability
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                              | :ref:`do_entity_update<class_OpenXRSpatialMarkerTrackingCapability_method_do_entity_update>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ )                                                                           |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`is_april_tag_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                    |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`is_aruco_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                            |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`is_micro_qrcode_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                              |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`is_qrcode_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                          |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` | :ref:`start_entity_discovery<class_OpenXRSpatialMarkerTrackingCapability_method_start_entity_discovery>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) |
-   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                | :ref:`do_entity_update<class_OpenXRSpatialMarkerTrackingCapability_method_do_entity_update>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ )                                                                           |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TrackingState<enum_OpenXRSpatialEntityExtension_TrackingState>` | :ref:`get_built_in_tracking_state<class_OpenXRSpatialMarkerTrackingCapability_method_get_built_in_tracking_state>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                          |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`is_april_tag_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                    |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`is_aruco_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                            |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`is_micro_qrcode_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                              |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`is_qrcode_supported<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                                          |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`start_built_in_tracking<class_OpenXRSpatialMarkerTrackingCapability_method_start_built_in_tracking>`\ (\ marker_types\: |bitfield|\[:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>`\]\ )                                                                                                                                                                                                                                                                                 |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`                   | :ref:`start_entity_discovery<class_OpenXRSpatialMarkerTrackingCapability_method_start_entity_discovery>`\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                | :ref:`stop_built_in_tracking<class_OpenXRSpatialMarkerTrackingCapability_method_stop_built_in_tracking>`\ (\ clear_trackers\: :ref:`bool<class_bool>` = true\ )                                                                                                                                                                                                                                                                                                                                                   |
+   +-----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+枚举
+----
+
+.. _enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags:
+
+.. rst-class:: classref-enumeration
+
+flags **MarkerTypeFlags**: :ref:`🔗<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>`
+
+.. _class_OpenXRSpatialMarkerTrackingCapability_constant_MARKER_QR_CODE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>` **MARKER_QR_CODE** = ``1``
+
+QR Code.
+
+.. _class_OpenXRSpatialMarkerTrackingCapability_constant_MARKER_MICRO_QR_CODE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>` **MARKER_MICRO_QR_CODE** = ``2``
+
+Micro QR Code.
+
+.. _class_OpenXRSpatialMarkerTrackingCapability_constant_MARKER_ARUCO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>` **MARKER_ARUCO** = ``4``
+
+ArUco marker.
+
+.. _class_OpenXRSpatialMarkerTrackingCapability_constant_MARKER_APRIL_TAG:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>` **MARKER_APRIL_TAG** = ``8``
+
+April tag.
 
 .. rst-class:: classref-section-separator
 
@@ -67,6 +120,18 @@ OpenXRSpatialMarkerTrackingCapability
 
 ----
 
+.. _class_OpenXRSpatialMarkerTrackingCapability_method_get_built_in_tracking_state:
+
+.. rst-class:: classref-method
+
+:ref:`TrackingState<enum_OpenXRSpatialEntityExtension_TrackingState>` **get_built_in_tracking_state**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_get_built_in_tracking_state>`
+
+Returns the state of the built-in tracking system.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported:
 
 .. rst-class:: classref-method
@@ -85,7 +150,7 @@ OpenXRSpatialMarkerTrackingCapability
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-如果当前设备支持 Aruco 标记跟踪，则返回 ``true``\ 。
+Returns ``true`` if ArUco marker tracking is supported by the current device.
 
 .. rst-class:: classref-item-separator
 
@@ -115,6 +180,18 @@ OpenXRSpatialMarkerTrackingCapability
 
 ----
 
+.. _class_OpenXRSpatialMarkerTrackingCapability_method_start_built_in_tracking:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **start_built_in_tracking**\ (\ marker_types\: |bitfield|\[:ref:`MarkerTypeFlags<enum_OpenXRSpatialMarkerTrackingCapability_MarkerTypeFlags>`\]\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_start_built_in_tracking>`
+
+Starts the built-in marker tracking logic for the specified marker types. This will fail if built-in tracking is already enabled.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OpenXRSpatialMarkerTrackingCapability_method_start_entity_discovery:
 
 .. rst-class:: classref-method
@@ -132,6 +209,18 @@ OpenXRSpatialMarkerTrackingCapability
 \ ``user_callback`` 在非空时，通常会被调用两次，并传入两个参数。第一个参数是发现快照（discovery snapshot）的 :ref:`RID<class_RID>`\ ，第二个参数是一个布尔值：\ ``false`` 表示发现快照即将被处理，\ ``true`` 表示发现快照已处理完毕且 ``component_data`` 包含有效数据。如果遇到错误，则会跳过第二次调用。
 
 返回的 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 与 :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 的返回值相同。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRSpatialMarkerTrackingCapability_method_stop_built_in_tracking:
+
+.. rst-class:: classref-method
+
+|void| **stop_built_in_tracking**\ (\ clear_trackers\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_stop_built_in_tracking>`
+
+Stops the built-in marker tracking logic.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

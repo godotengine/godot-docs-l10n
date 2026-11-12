@@ -310,19 +310,19 @@ Signal
 
 :ref:`int<class_int>` **connect**\ (\ callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Signal_method_connect>`
 
-Соединяет этот сигнал с указанным ``callable``. Дополнительно можно указать ``flags`` для настройки поведения соединения (см. константы :ref:`ConnectFlags<enum_Object_ConnectFlags>`). Вы можете передать дополнительные аргументы в связанный ``callable``, используя :ref:`Callable.bind()<class_Callable_method_bind>`. 
+Connects this signal to the specified ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). You can provide additional arguments to the connected ``callable`` by using :ref:`Callable.bind()<class_Callable_method_bind>`. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the signal was successfully connected, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the :ref:`Callable<class_Callable>` is null or invalid.
 
-Сигнал может быть соединён с одним и тем же :ref:`Callable<class_Callable>` только один раз. Если сигнал уже соединён, метод вернёт :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` и сгенерирует ошибку, за исключением случая, когда сигнал соединён с флагом :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. Чтобы избежать этого, сначала используйте :ref:`is_connected()<class_Signal_method_is_connected>` для проверки существующих соединений. 
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and prints an error, unless the signal is connected with :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Signal_method_is_connected>` first to check for existing connections.
 
 ::
- 
-    for button in $Buttons.get_children(): 
-        button.pressed.connect(_on_pressed.bind(button)) 
 
-    func _on_pressed(button): 
-        print(button.name, " was pressed")  
+    for button in $Buttons.get_children():
+        button.pressed.connect(_on_pressed.bind(button))
 
-\ **Примечание:** Если объект ``callable`` освобождён, соединение будет потеряно.
+    func _on_pressed(button):
+        print(button.name, " was pressed")
+
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Signal
 
 |void| **disconnect**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Signal_method_disconnect>`
 
-Отключает этот сигнал от указанного :ref:`Callable<class_Callable>`. Если соединение не существует, генерирует ошибку. Используйте :ref:`is_connected()<class_Signal_method_is_connected>`, чтобы убедиться, что соединение существует.
+Disconnects this signal from the specified :ref:`Callable<class_Callable>`. If the connection does not exist, prints an error. Use :ref:`is_connected()<class_Signal_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 

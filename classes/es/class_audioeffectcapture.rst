@@ -132,7 +132,7 @@ Obtiene las siguientes ``frames`` muestras del búfer de anillo interno.
 
 Devuelve un :ref:`PackedVector2Array<class_PackedVector2Array>` que contiene exactamente ``frames`` muestras si están disponibles, o un :ref:`PackedVector2Array<class_PackedVector2Array>` vacío si no hay datos suficientes.
 
-Las muestras son PCM de punto flotante con signo entre ``-1`` y ``1``. Tendrás que escalarlas si quieres usarlas como muestras de enteros de 8 o 16 bits. (``v = 0x7fff * samples[0].x``)
+Las muestras son PCM de punto flotante con signo entre ``-1`` y ``1``. Tendrás que escalarlas si quieres usarlas como muestras de enteros de 8 o 16 bits. (\ ``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 

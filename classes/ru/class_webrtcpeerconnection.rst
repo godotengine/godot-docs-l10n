@@ -310,27 +310,27 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` **create_data_channel**\ (\ label\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_WebRTCPeerConnection_method_create_data_channel>`
 
-Возвращает новый :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (или ``null`` при неудаче) с заданной ``label`` и опционально настроенным через словарь ``options``. Этот метод может быть вызван только тогда, когда соединение находится в состоянии :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
+Returns a new :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (or ``null`` on failure) with given ``label`` and optionally configured via the ``options`` dictionary. This method can only be called when the connection is in state :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-Существует два способа создания рабочего канала данных: либо вызвать :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` только на одном из одноранговых узлов и прослушивать :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` на другом, либо вызвать :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` на обоих одноранговых узлах с одинаковыми значениями и параметром ``"negotiated"``, установленным на ``true``. 
+There are two ways to create a working data channel: either call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on only one of the peer and listen to :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` on the other, or call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on both peers, with the same values, and the ``"negotiated"`` option set to ``true``.
 
-Допустимые ``options``:
+Valid ``options`` are:
 
 ::
 
     {
-        "negotiated": true, # Если установлено значение true (по умолчанию отключено), это означает, что канал согласовывается вне диапазона. Также необходимо задать «id». «data_channel_received» не будет вызываться.
-        "id": 1, # Если «negotiated» имеет значение true, это значение также должно быть установлено на одно и то же значение на обоих одноранговых узлах.
+        "negotiated": true, # When set to true (default off), means the channel is negotiated out of band. "id" must be set too. "data_channel_received" will not be called.
+        "id": 1, # When "negotiated" is true this value must also be set to the same value on both peer.
 
-        # Можно указать только один из maxRetransmits и maxPacketLifeTime, но не оба. Они делают канал ненадежным (но также лучше в реальном времени).
-        "maxRetransmits": 1, # Укажите максимальное количество попыток, которые одноранговый узел предпримет для повторной передачи пакетов, если они не подтверждены.
-        "maxPacketLifeTime": 100, # Укажите максимальный промежуток времени до прекращения повторной передачи неподтвержденных пакетов (в миллисекундах).
-        "ordered": true, # В ненадежном режиме (т. е. установлено либо «maxRetransmits», либо «maxPacketLifetime») «ordered» (по умолчанию true) указывает, следует ли принудительно применять упорядочивание пакетов.
+        # Only one of maxRetransmits and maxPacketLifeTime can be specified, not both. They make the channel unreliable (but also better at real time).
+        "maxRetransmits": 1, # Specify the maximum number of attempt the peer will make to retransmits packets if they are not acknowledged.
+        "maxPacketLifeTime": 100, # Specify the maximum amount of time before giving up retransmitions of unacknowledged packets (in milliseconds).
+        "ordered": true, # When in unreliable mode (i.e. either "maxRetransmits" or "maxPacketLifeTime" is set), "ordered" (true by default) specify if packet ordering is to be enforced.
 
-        "protocol": "my-custom-protocol", # Пользовательская строка под-протокола для этого канала.
+        "protocol": "my-custom-protocol", # A custom sub-protocol string for this channel.
     }
 
-\ **Примечание:** Вы должны сохранить ссылку на каналы, созданные таким образом, иначе они будут закрыты.
+\ **Note:** You must keep a reference to channels created this way, or it will be closed.
 
 .. rst-class:: classref-item-separator
 

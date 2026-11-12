@@ -1287,7 +1287,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 節點的名稱。該名稱在同一父節點下必須唯一。若設定為已存在的兄弟節點名稱，該節點會自動重新命名。
 
-\ **注意：**\ 更改名稱時，下列字元會被取代為底線：(``.`` ``:`` ``@`` ``/`` ``"`` ``%``)。特別是 ``@`` 保留給自動產生名稱。詳見 :ref:`String.validate_node_name()<class_String_method_validate_node_name>`\ 。
+\ **注意：**\ 更改名稱時，下列字元會被取代為底線：(\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``)。特別是 ``@`` 保留給自動產生名稱。詳見 :ref:`String.validate_node_name()<class_String_method_validate_node_name>`\ 。
 
 .. rst-class:: classref-item-separator
 

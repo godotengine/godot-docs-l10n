@@ -14,66 +14,60 @@ RegEx
 Опис
 --------
 
-Регулярний вираз (або regex) – це компактна мова, яку можна використовувати для розпізнавання рядків, що відповідають певному шаблону, такому як URL-адреси, адреси електронної пошти, повні речення тощо. Наприклад, регулярний вираз ``ab[0-9]`` знайде будь-який рядок, який складається з ``ab``, за яким йде будь-яке число від ``0`` до ``9``. Для більш детального ознайомлення ви можете легко знайти різні навчальні посібники та детальні пояснення в Інтернеті.
+A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of ``ab[0-9]`` would find any string that is ``ab`` followed by any number from ``0`` to ``9``. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
 
-Для початку об'єкт RegEx потрібно скомпілювати з використанням шаблону пошуку за допомогою методу ``compile``, перш ніж його можна буде використовувати. Крім того, статичний метод :ref:`create_from_string()<class_RegEx_method_create_from_string>` можна використовувати для створення та компіляції об'єкта RegEx за один виклик методу.
+To begin, the RegEx object needs to be compiled with the search pattern using :ref:`compile()<class_RegEx_method_compile>` before it can be used. Alternatively, the static method :ref:`create_from_string()<class_RegEx_method_create_from_string>` can be used to create and compile a RegEx object in a single method call.
 
- 
 ::
 
+    var regex = RegEx.new()
+    regex.compile("\\w-(\\d+)")
+    # Shorthand to create and compile a regex (used in the examples below):
+    var regex2 = RegEx.create_from_string("\\w-(\\d+)")
 
-var regex = RegEx.new()
+The search pattern must be escaped first for GDScript before it is escaped for the expression. For example, ``compile("\\d+")`` would be read by RegEx as ``\d+``. Similarly, ``compile("\"(?:\\\\.|[^\"])*\"")`` would be read as ``"(?:\\.|[^"])*"``. In GDScript, you can also use raw string literals (r-strings). For example, ``compile(r'"(?:\\.|[^"])*"')`` would be read the same.
 
-regex.compile("\\w-(\\d+)")
-
-# Скорочений запис для створення та компіляції регулярного виразу (використовується в прикладах нижче):
-
-var regex2 = RegEx.create_from_string("\\w-(\\d+)")
-
-
-Шаблон пошуку має бути екранований для GDScript, перш ніж він буде екранований для виразу. Наприклад, ``compile("\\d+")`` буде прочитано RegEx як ``\d+``. Аналогічно, ``compile("\"(?:\\\\.|[^\"])*\"")`` буде прочитано як ``"(?:\\.|[^"])*"``. У GDScript також можна використовувати необроблені рядкові літерали (r-рядки). Наприклад, ``compile(r'"(?:\\.|[^"])*"')`` буде прочитано так само.
-
-Використовуючи :ref:`search()<class_RegEx_method_search>`, ви можете знайти шаблон у заданому тексті. Якщо шаблон знайдено, повертається :ref:`RegExMatch<class_RegExMatch>`, і ви можете отримати детальну інформацію про результати за допомогою таких методів, як :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` та :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>`.
+Using :ref:`search()<class_RegEx_method_search>`, you can find the pattern within the given text. If a pattern is found, :ref:`RegExMatch<class_RegExMatch>` is returned and you can retrieve details of the results using methods such as :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` and :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>`.
 
 ::
 
     var regex = RegEx.create_from_string("\\w-(\\d+)")
     var result = regex.search("abc n-0123")
     if result:
-    print(result.get_string()) # Виводить "n-0123"
+        print(result.get_string()) # Prints "n-0123"
 
-Результати захоплення груп ``()`` можна отримати, передавши номер групи різним методам у :ref:`RegExMatch<class_RegExMatch>`. Група 0 є групою за замовчуванням і завжди посилатиметься на весь шаблон. У наведеному вище прикладі виклик ``result.get_string(1)`` видасть вам ``0123``.
+The results of capturing groups ``()`` can be retrieved by passing the group number to the various methods in :ref:`RegExMatch<class_RegExMatch>`. Group 0 is the default and will always refer to the entire pattern. In the above example, calling ``result.get_string(1)`` would give you ``0123``.
 
-Ця версія RegEx також підтримує іменовані групи захоплення, імена яких можна використовувати для отримання результатів. Якщо дві або більше груп мають однакову назву, назва посилатиметься лише на першу з них, яка відповідає.
+This version of RegEx also supports named capturing groups, and the names can be used to retrieve the results. If two or more groups have the same name, the name would only refer to the first one with a match.
 
 ::
 
     var regex = RegEx.create_from_string("d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)")
-    var result = regex.search("число дорівнює x2f")
+    var result = regex.search("the number is x2f")
     if result:
-    print(result.get_string("digit")) # Виводить "2f"
+        print(result.get_string("digit")) # Prints "2f"
 
-Якщо вам потрібно обробити кілька результатів, :ref:`search_all()<class_RegEx_method_search_all>` генерує список усіх результатів, що не перекриваються. Для зручності це можна поєднати з циклом ``for``.
-
-::
-
-    # Виводить "01 03 0 3f  42"
-    for result in regex.search_all("d01, d03, d0c, x3f та x42"):
-    print(result.get_string("digit"))
-
-\ **Приклад:** Розділити рядок за допомогою RegEx:
+If you need to process multiple results, :ref:`search_all()<class_RegEx_method_search_all>` generates a list of all non-overlapping results. This can be combined with a ``for`` loop for convenience.
 
 ::
 
-    var regex = RegEx.create_from_string("\\S+") # Клас символів пробілу з запереченням.
+    # Prints "01 03 0 3f 42"
+    for result in regex.search_all("d01, d03, d0c, x3f and x42"):
+        print(result.get_string("digit"))
+
+\ **Example:** Split a string using a RegEx:
+
+::
+
+    var regex = RegEx.create_from_string("\\S+") # Negated whitespace character class.
     var results = []
-    for result in regex.search_all("Один Два \n\tТри"):
-    results.push_back(result.get_string())
-    print(results) # Виводить ["Один", "Два", "Три"]
+    for result in regex.search_all("One  Two \n\tThree"):
+        results.push_back(result.get_string())
+    print(results) # Prints ["One", "Two", "Three"]
 
-\ **Примітка:** Реалізація регулярних виразів Godot базується на бібліотеці `PCRE2 <https://www.pcre.org/>`__. Ви можете переглянути повний довідник зі шаблоном `тут <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__.
+\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://pcre2project.github.io/pcre2/>`__ library. You can view the full pattern reference `here <https://pcre2project.github.io/pcre2/doc/pcre2pattern/>`__.
 
-\ **Порада:** Ви можете використовувати `Regexr <https://regexr.com/>`__ для перевірки регулярних виразів онлайн.
+\ **Tip:** You can use `Regexr <https://regexr.com/>`__ to test regular expressions online.
 
 .. rst-class:: classref-reftable-group
 
@@ -204,9 +198,9 @@ var regex2 = RegEx.create_from_string("\\w-(\\d+)")
 
 :ref:`RegExMatch<class_RegExMatch>` **search**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search>`
 
-Шукає в тексті скомпільований шаблон. Повертає контейнер :ref:`RegExMatch<class_RegExMatch>` першого збігу, якщо знайдено, інакше ``null``.
+Searches the text for the compiled pattern. Returns a :ref:`RegExMatch<class_RegExMatch>` container of the first matching result if found, otherwise ``null``.
 
-Регіон для пошуку можна вказати за допомогою ``offset`` та ``end``. Це корисно під час пошуку іншого збігу в тому ж ``subject`` шляхом повторного виклику цього методу після попереднього успіху. Зверніть увагу, що встановлення цих параметрів відрізняється від передачі скороченого рядка. Наприклад, початковий якір ``^`` не залежить від ``offset``, а символ перед ``offset`` буде перевірено на межу слова ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -218,9 +212,9 @@ var regex2 = RegEx.create_from_string("\\w-(\\d+)")
 
 :ref:`Array<class_Array>`\[:ref:`RegExMatch<class_RegExMatch>`\] **search_all**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search_all>`
 
-Шукає в тексті скомпільований шаблон. Повертає масив контейнерів :ref:`RegExMatch<class_RegExMatch>` для кожного результату, що не перекривається. Якщо результатів не знайдено, повертається порожній масив.
+Searches the text for the compiled pattern. Returns an array of :ref:`RegExMatch<class_RegExMatch>` containers for each non-overlapping result. If no results were found, an empty array is returned instead.
 
-Регіон для пошуку можна вказати за допомогою ``offset`` та ``end``. Це корисно під час пошуку іншого збігу в тому ж ``subject`` шляхом повторного виклику цього методу після попереднього успіху. Зверніть увагу, що встановлення цих параметрів відрізняється від передачі скороченого рядка. Наприклад, початковий якір ``^`` не залежить від ``offset``, а символ перед ``offset`` буде перевірено на межу слова ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -232,9 +226,9 @@ var regex2 = RegEx.create_from_string("\\w-(\\d+)")
 
 :ref:`String<class_String>` **sub**\ (\ subject\: :ref:`String<class_String>`, replacement\: :ref:`String<class_String>`, all\: :ref:`bool<class_bool>` = false, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_sub>`
 
-Шукає в тексті скомпільований шаблон і замінює його вказаним рядком. Екранні символи та зворотні посилання, такі як ``$1`` та ``$name``, розгортаються та вирішуються. За замовчуванням замінюється лише перший екземпляр, але його можна змінити для всіх екземплярів (глобальна заміна).
+Searches the text for the compiled pattern and replaces it with the specified string. Escapes and backreferences such as ``$1`` and ``$name`` are expanded and resolved. By default, only the first instance is replaced, but it can be changed for all instances (global replacement).
 
-Регіон для пошуку можна вказати за допомогою ``offset`` та ``end``. Це корисно під час пошуку іншого збігу в тому ж ``subject`` шляхом повторного виклику цього методу після попереднього успіху. Зверніть увагу, що встановлення цих параметрів відрізняється від передачі скороченого рядка. Наприклад, початковий якір ``^`` не залежить від ``offset``, а символ перед ``offset`` буде перевірено на межу слова ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

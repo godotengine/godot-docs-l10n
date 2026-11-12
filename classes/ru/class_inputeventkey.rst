@@ -114,18 +114,18 @@ InputEventKey
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-Представляет локализованную метку, напечатанную на клавише в текущей раскладке клавиатуры, которая соответствует одной из констант :ref:`Key<enum_@GlobalScope_Key>` или любому допустимому символу Unicode. Метки клавиш предназначены для подсказок при нажатии клавиш.
+Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
 
-Для раскладок клавиатуры с одной меткой на клавише это эквивалентно :ref:`keycode<class_InputEventKey_property_keycode>`.
+For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
 
-Чтобы получить удобочитаемое представление **InputEventKey**, используйте ``OS.get_keycode_string(event.key_label)``, где ``event`` — это **InputEventKey**.
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 
@@ -142,16 +142,16 @@ InputEventKey
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-Латинская метка, напечатанная на клавише в текущей раскладке клавиатуры, соответствует одной из констант :ref:`Key<enum_@GlobalScope_Key>`. Коды клавиш предназначены для сочетаний клавиш, выражаемых с помощью стандартной латинской клавиатуры, например, :kbd:`Ctrl + S` для сочетания клавиш «Сохранить».
+Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
 
-Чтобы получить удобочитаемое представление **InputEventKey**, используйте ``OS.get_keycode_string(event.keycode)``, где ``event`` — это **InputEventKey**.
+To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
 
 .. code:: text
 
-    +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
-    +-----+ +-----+
+    ┌─────┐ ┌─────┐
+    │ Q   │ │ Q   │ - "Q" - keycode
+    │   Й │ │  ض │ - "Й" and "ض" - key_label
+    └─────┘ └─────┘
 
 .. rst-class:: classref-item-separator
 

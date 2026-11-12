@@ -789,9 +789,9 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 :ref:`Array<class_Array>` **get_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_alternative_level_tile_proxy>`
 
-Возвращает альтернативный уровень proxy для указанных идентификаторов. Возвращаемый массив содержит три целевых идентификатора proxy (исходный ID, ID координат atlas и альтернативный ID тайла).
+Returns the alternative-level proxy for the given identifiers. The returned array contains the three proxies' target identifiers (source ID, atlas coordinate ID, and alternative tile ID).
 
-Если TileSet не имеет proxy для указанных идентификаторов, возвращает пустой массив.
+If the TileSet has no proxy for the given identifiers, returns an empty Array.
 
 .. rst-class:: classref-item-separator
 

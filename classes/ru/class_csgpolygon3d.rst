@@ -417,7 +417,11 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 \ **Примечание:** Если в :ref:`polygon<class_CSGPolygon3D_property_polygon>` определены только 1 или 2 точки, сетка не будет создана.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

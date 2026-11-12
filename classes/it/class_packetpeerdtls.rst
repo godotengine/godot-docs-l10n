@@ -14,11 +14,11 @@ Peer di pacchetto DTLS.
 Descrizione
 ----------------------
 
-Questa classe rappresenta una connessione DTLS a un peer. Può essere utilizzata per connettersi a un server DTLS ed è restituita da :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Attenzione:** La revoca del certificato TLS e il pinning del certificato non sono attualmente supportati. I certificati revocati sono accettati a patto che siano validi altrimenti. Se questo è un problema, potresti voler utilizzare certificati gestiti automaticamente con un breve periodo di validità.
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-reftable-group
 

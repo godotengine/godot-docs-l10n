@@ -14,42 +14,59 @@ AnimationNodeTransition
 說明
 ----
 
-適用於不需要較進階的 :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 的情況的簡易狀態機。可將動畫接到輸入，並指定過渡時間。
+Simple state machine for cases which don't require a more advanced :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`. Animations can be connected to the inputs and transition times can be specified.
 
-設定請求並變更動畫播放後，過渡節點會在下一個處理影格將其 ``transition_request`` 值設為空字串，藉此自動清除請求。
+After setting the request and changing the animation playback, the transition node automatically clears the request on the next process frame by setting its ``transition_request`` value to empty.
 
-\ **注意：** 使用交叉淡入時，\ ``current_state`` 與 ``current_index`` 會在淡入一開始就即刻切換到下一個狀態。
+\ **Note:** When using a cross-fade, ``current_state`` and ``current_index`` change to the next state immediately after the cross-fade begins.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 播放連接至 "state_2" 埠的子動畫。
+    # Play child animation connected to "state_2" port.
     animation_tree.set("parameters/Transition/transition_request", "state_2")
-    # 另一種寫法（結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/transition_request"] = "state_2"
 
-    # 取得目前狀態名稱（唯讀）。
+    # Get current state name (read-only).
     animation_tree.get("parameters/Transition/current_state")
-    # 另一種寫法（結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/current_state"]
 
-    # 取得目前狀態索引（唯讀）。
+    # Get current state index (read-only).
     animation_tree.get("parameters/Transition/current_index")
-    # 另一種寫法（結果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/current_index"]
 
  .. code-tab:: csharp
 
-    // 播放連接至 "state_2" 埠的子動畫。
+    // Play child animation connected to "state_2" port.
     animationTree.Set("parameters/Transition/transition_request", "state_2");
 
-    // 取得目前狀態名稱（唯讀）。
+    // Get current state name (read-only).
     animationTree.Get("parameters/Transition/current_state");
 
-    // 取得目前狀態索引（唯讀）。
+    // Get current state index (read-only).
     animationTree.Get("parameters/Transition/current_index");
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverTransition<class_AnimationNodeObserverTransition>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = animation_tree.get("parameters/Transition/observer")
+    observer.state_started.connect(on_state_started)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/Transition/observer").As<AnimationNodeObserverTransition>();
+    observer.StateStarted += OnStateStarted;
 
 
 

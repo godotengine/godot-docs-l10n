@@ -67,8 +67,30 @@ GUI 按鈕的抽象基底類別。
    +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                   | :ref:`is_hovered<class_BaseButton_method_is_hovered>`\ (\ ) |const|                                                  |
    +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |void|                                    | :ref:`press<class_BaseButton_method_press>`\ (\ )                                                                    |
+   +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
    | |void|                                    | :ref:`set_pressed_no_signal<class_BaseButton_method_set_pressed_no_signal>`\ (\ pressed\: :ref:`bool<class_bool>`\ ) |
    +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
+主題屬性
+--------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`click_margin<class_BaseButton_theme_constant_click_margin>`                  | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_BaseButton_theme_sound_focus_sound>`                       |       |
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`hover_sound<class_BaseButton_theme_sound_hover_sound>`                       |       |
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_disabled_sound<class_BaseButton_theme_sound_pressed_disabled_sound>` |       |
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_sound<class_BaseButton_theme_sound_pressed_sound>`                   |       |
+   +---------------------------------------+------------------------------------------------------------------------------------+-------+
 
 .. rst-class:: classref-section-separator
 
@@ -450,6 +472,20 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 ----
 
+.. _class_BaseButton_method_press:
+
+.. rst-class:: classref-method
+
+|void| **press**\ (\ ) :ref:`🔗<class_BaseButton_method_press>`
+
+Presses the button. This causes the corresponding virtual method to be called and the corresponding signal to be emitted, depending on :ref:`toggle_mode<class_BaseButton_property_toggle_mode>`. If :ref:`disabled<class_BaseButton_property_disabled>` is ``true``, nothing happens.
+
+\ **Note:** This method does not change the visual state of the button and does not grab focus to the button.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_BaseButton_method_set_pressed_no_signal:
 
 .. rst-class:: classref-method
@@ -459,6 +495,71 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 變更按鈕的 :ref:`button_pressed<class_BaseButton_property_button_pressed>` 狀態而不觸發 :ref:`toggled<class_BaseButton_signal_toggled>`\ 。當你只想改變狀態而不送出按下事件（例如在初始化場景時）可使用此方法。僅在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 為 ``true`` 時有效。
 
 \ **注意：** 這個方法不會將 :ref:`button_group<class_BaseButton_property_button_group>` 內的其他按鈕彈起。
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+主題屬性說明
+------------
+
+.. _class_BaseButton_theme_constant_click_margin:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **click_margin** = ``0`` :ref:`🔗<class_BaseButton_theme_constant_click_margin>`
+
+Defines the margin around the button's area that still counts as a valid click. This is useful to make it easier to click small buttons.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_BaseButton_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_BaseButton_theme_sound_focus_sound>`
+
+Played when this **BaseButton** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_BaseButton_theme_sound_hover_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **hover_sound** :ref:`🔗<class_BaseButton_theme_sound_hover_sound>`
+
+Played when the button is hovered with the mouse.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_BaseButton_theme_sound_pressed_disabled_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_disabled_sound** :ref:`🔗<class_BaseButton_theme_sound_pressed_disabled_sound>`
+
+Played when the button is pressed with any input method, but has :ref:`disabled<class_BaseButton_property_disabled>` set to ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_BaseButton_theme_sound_pressed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_sound** :ref:`🔗<class_BaseButton_theme_sound_pressed_sound>`
+
+Played when the button is pressed with any input method.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -18,7 +18,7 @@ NavigationRegion2D
 
 Урочиста область 2D на основі :ref:`NavigationPolygon<class_NavigationPolygon>`, що :ref:`NavigationAgent2D<class_NavigationAgent2D>` може використовуватися для допінгу.
 
-Два регіони можуть бути підключені один до одного, якщо вони діляться схожим краєм. Ви можете встановити мінімальну відстань між двома вершинами, необхідні для підключення двох країв за допомогою :ref:`NavigationServer2D.map_set_connection_margin()<class_NavigationServer2D_method_map_set_connection_margin>`.
+Два регіони можуть бути підключені один до одного, якщо вони діляться схожим краєм. Ви можете встановити мінімальну відстань між двома вершинами, необхідні для підключення двох країв за допомогою :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`.
 
 \ **Примітка:** Перекриття двох регіонів навігаційних полігонів недостатньо для підключення двох регіонів. Вони повинні поділитися схожим краєм.
 
@@ -153,7 +153,7 @@ NavigationRegion2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-При навігаційній сітці даного регіону з інших регіонів навігаційній сітці додається значення :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` для визначення найкоротшого шляху.
+When pathfinding enters this region's navigation mesh from another region's navigation mesh, this property's value is added to the path distance used to determine the shortest path.
 
 .. rst-class:: classref-item-separator
 

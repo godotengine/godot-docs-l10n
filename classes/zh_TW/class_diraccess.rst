@@ -385,7 +385,7 @@ DirAccess
 
 :ref:`String<class_String>` **get_current_dir**\ (\ include_drive\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_DirAccess_method_get_current_dir>`
 
-返回目前打開目錄的絕對路徑（例如 ``res://資料夾`` 或 ``C:\tmp\資料夾``\ ）。
+Returns the absolute path to the currently opened directory (e.g. ``res://folder`` or ``C:\tmp\folder``).
 
 .. rst-class:: classref-item-separator
 
@@ -711,9 +711,9 @@ DirAccess
 
 :ref:`DirAccess<class_DirAccess>` **open**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_open>`
 
-新建 **DirAccess** 物件並打開檔案系統中的某個現存目錄。\ ``path`` 參數可以是在專案樹中（\ ``res://folder``\ ）、使用者目錄中（\ ``user://folder``\ ），也可以是使用者檔案系統的絕對路徑（例如 ``/tmp/folder`` 或 ``C:\tmp\folder``\ ）。
+Creates a new **DirAccess** object and opens an existing directory of the filesystem. The ``path`` argument can be within the project tree (\ ``res://folder``), the user directory (\ ``user://folder``) or an absolute path of the user filesystem (e.g. ``/tmp/folder`` or ``C:\tmp\folder``).
 
-如果打開目錄失敗，則返回 ``null``\ 。你可以使用 :ref:`get_open_error()<class_DirAccess_method_get_open_error>` 來查看發生的錯誤。
+Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
 
 .. rst-class:: classref-item-separator
 

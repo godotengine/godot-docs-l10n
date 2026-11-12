@@ -14,29 +14,29 @@ ConvertTransformModifier3D
 描述
 ----
 
-从通过 :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` 指定的骨骼上复制变换，将所复制的变换沿特定轴应用到通过 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 设置的骨骼上，并可使用一些选项对这个变换进行调整。
+Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` about the specific axis with remapping it with some options.
 
-根据 :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>`\ （相对）和 :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`\ （叠加）的组合，有四种方式可以应用该变换：
+There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`.
 
-\ **相对 + 叠加**\ ：
+\ **Relative + Additive:**\ 
 
-- 提取相对于静止姿态的参考姿态，并将其添加到目标骨骼的姿态上。
+- Extract reference pose relative to the rest and add it to the apply bone's pose.
 
-\ **相对 + 非叠加：**\ 
+\ **Relative + Not Additive:**\ 
 
-- 提取相对于静止姿态的参考姿态，并将其添加到目标骨骼的静止姿态上。
+- Extract reference pose relative to the rest and add it to the apply bone's rest.
 
-\ **非相对 + 叠加：**\ 
+\ **Not Relative + Additive:**\ 
 
-- 提取参考姿态的绝对姿态，并将其添加到目标骨骼的姿态上。
+- Extract reference pose absolutely and add it to the apply bone's pose.
 
-\ **非相对 + 非叠加**\ ：
+\ **Not Relative + Not Additive:**\ 
 
-- 提取参考姿态的绝对姿态，并将其替换目标骨骼的姿态。
+- Extract reference pose absolutely and the apply bone's pose is replaced with it.
 
-\ **注意：**\ 相对选项仅当 :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` 为 :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>` 时可用。另见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
+\ **Note:** The relative and global options are only available when :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
-\ **注意：**\ 如果旋转角度大于 ``180`` 度且轴受到约束，则可能会发生翻转。
+\ **Note:** If there is a rotation greater than ``180`` degrees with constrained axes, flipping may occur.
 
 .. rst-class:: classref-reftable-group
 
@@ -77,6 +77,8 @@ ConvertTransformModifier3D
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                             | :ref:`is_additive<class_ConvertTransformModifier3D_method_is_additive>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                                                 |
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`is_global<class_ConvertTransformModifier3D_method_is_global>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                                                     |
+   +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                             | :ref:`is_relative<class_ConvertTransformModifier3D_method_is_relative>`\ (\ index\: :ref:`int<class_int>`\ ) |const|                                                                                                                 |
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                              | :ref:`set_additive<class_ConvertTransformModifier3D_method_set_additive>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                                                    |
@@ -88,6 +90,8 @@ ConvertTransformModifier3D
    | |void|                                                              | :ref:`set_apply_range_min<class_ConvertTransformModifier3D_method_set_apply_range_min>`\ (\ index\: :ref:`int<class_int>`, range_min\: :ref:`float<class_float>`\ )                                                                  |
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                              | :ref:`set_apply_transform_mode<class_ConvertTransformModifier3D_method_set_apply_transform_mode>`\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ )         |
+   +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_global<class_ConvertTransformModifier3D_method_set_global>`\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ )                                                                                        |
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                              | :ref:`set_reference_axis<class_ConvertTransformModifier3D_method_set_reference_axis>`\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ )                                                                    |
    +---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -278,6 +282,18 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 ----
 
+.. _class_ConvertTransformModifier3D_method_is_global:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_global**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_is_global>`
+
+Returns ``true`` if the global option is enabled in the setting at ``index``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ConvertTransformModifier3D_method_is_relative:
 
 .. rst-class:: classref-method
@@ -296,11 +312,11 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_additive>`
 
-将索引为 ``index`` 的设置的叠加选项设置为 ``enabled``\ 。主要影响对 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 施加变换的过程。
+Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则会将处理后的变换叠加到当前应用骨骼的姿势之上。
+If ``enabled`` is ``true``, the processed transform is added to the pose of the current apply bone.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则会将当前应用骨骼的姿势替换为处理后的变换。不过如果将 :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` 设为 ``true``\ ，则该变换是相对于放松姿势的。
+If ``enabled`` is ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
 
 .. rst-class:: classref-item-separator
 
@@ -349,6 +365,24 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 |void| **set_apply_transform_mode**\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_transform_mode>`
 
 设置重映射目标变换的操作。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ConvertTransformModifier3D_method_set_global:
+
+.. rst-class:: classref-method
+
+|void| **set_global**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_global>`
+
+Sets the global option in the setting at ``index`` to ``enabled``.
+
+If ``enabled`` is ``true``, the global pose of the reference bone is used as the remapping source.
+
+If ``enabled`` is ``false``, the local pose of the reference bone is used as the remapping source.
+
+\ **Note:** If the parent of the reference bone has a non-uniform scale, the reference bone is sheared as seen from global space. Since the local pose cannot bring in the shear, the scale may not be applied as intended.
 
 .. rst-class:: classref-item-separator
 
@@ -408,11 +442,11 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_relative>`
 
-将索引为 ``index`` 的设置的相对选项设置为 ``enabled``\ 。
+Sets relative option in the setting at ``index`` to ``enabled``.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则提取并应用的变换是相对于放松姿势的。
+If ``enabled`` is ``true``, the extracted and applying transform is relative to the rest.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则提取到的变换是绝对的。
+If ``enabled`` is ``false``, the extracted transform is absolute.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

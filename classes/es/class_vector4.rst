@@ -419,7 +419,7 @@ Devuelve un nuevo vector con todos los componentes restringidos entre ``min`` y 
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate>`
 
-Realiza una interpolación cúbica entre este vector y ``b`` usando ``pre_a`` y ``post_b`` como manejadores, y devuelve el resultado en la posición ``weight``. ``weight`` está en el rango de 0.0 a 1.0, representando la cantidad de interpolación.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -431,9 +431,9 @@ Realiza una interpolación cúbica entre este vector y ``b`` usando ``pre_a`` y 
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate_in_time>`
 
-Realiza una interpolación cúbica entre este vector y ``b`` usando ``pre_a`` y ``post_b`` como manejadores, y devuelve el resultado en la posición ``weight``. ``weight`` está en el rango de 0.0 a 1.0, representando la cantidad de interpolación.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-Puede realizar una interpolación más suave que :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` por los valores de tiempo.
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,9 @@ Puede realizar una interpolación más suave que :ref:`cubic_interpolate()<class
 
 :ref:`Vector4<class_Vector4>` **direction_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_direction_to>`
 
-Devuelve el vector normalizado que apunta desde este vector a ``to``. Esto es equivalente a usar ``(to - self).normalized()``.
+Returns the normalized vector pointing from this vector to ``to``.
+
+\ ``a.direction_to(b)`` is equivalent to ``(b - a).normalized()``. See also :ref:`normalized()<class_Vector4_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 

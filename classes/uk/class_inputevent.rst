@@ -177,9 +177,9 @@ InputEvent
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_get_action_strength>`
 
-Повертає значення між 0,0 і 1,0 в залежності від стану даної дії. Корисно для отримання значення подій типу :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
+Returns a value between ``0.0`` and ``1.0`` depending on the given action's state. Useful for getting the value of events of type :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-Якщо ``exact_match`` є ``false``, він ігнорує додаткові модифікатори введення для :ref:`InputEventKey<class_InputEventKey>` і :ref:`InputEventMouseButton<class_InputEventMouseButton>` події, і напрямок для :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` події.
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 

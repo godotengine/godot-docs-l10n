@@ -14,11 +14,30 @@ Un ensemble d':ref:`AnimationRootNode<class_AnimationRootNode>`\ s placés sur u
 Description
 -----------
 
-Une ressource utilisée par :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace1D** représente un axe virtuel sur lequel tout type d':ref:`AnimationRootNode<class_AnimationRootNode>` peut être ajouté en utilisant :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Produit le mélange linéaire des deux :ref:`AnimationRootNode<class_AnimationRootNode>` adjacents à la valeur courante.
+\ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s can be added using :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Outputs the linear blend of the two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s adjacent to the current value.
 
-Vous pouvez définir la plage de l'axe avec :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` et :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+You can set the extents of the axis with :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` and :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

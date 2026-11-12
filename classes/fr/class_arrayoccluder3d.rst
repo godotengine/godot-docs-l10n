@@ -75,7 +75,11 @@ La position d'index de l'occulteur. Les indices déterminent quels points du tab
 
 \ **Note :** L'occulteur est toujours mis à jour après avoir défini cette valeur. Si vous créez des occulteurs de façon procédurale, envisagez d'utiliser :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` à la place pour éviter de mettre à jour l'occulteur deux fois lorsqu'il est créé.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +100,11 @@ Les positions des sommets de l'occulteur dans les coordonnées 3D locales.
 
 \ **Note :** L'occulteur est toujours mis à jour après avoir défini cette valeur. Si vous créez des occulteur de façon procédurale, envisagez d'utiliser :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` pour éviter de mettre à jour l'occulteur deux fois lorsqu'il est créé.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

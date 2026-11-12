@@ -191,9 +191,11 @@ Ferme ce contexte AES afin qu’il puisse être recommencé. Voir :ref:`start()<
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-Obtient l'état IV actuel pour ce contexte (L'IV est mis à jour en appelant :ref:`update()<class_AESContext_method_update>`). Vous n'avez généralement pas besoin de cette fonction.
+**Obsolète :** Extracting the IV state is no longer supported
 
-\ **Note :** Cette fonction a seulement du sens quand le contexte est initialisé avec :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` ou :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>`.
+Returns an empty :ref:`PackedByteArray<class_PackedByteArray>`.
+
+\ **Note:** This method used to return the active IV state as modified by one or more :ref:`update()<class_AESContext_method_update>` calls. This is no longer supported.
 
 .. rst-class:: classref-item-separator
 

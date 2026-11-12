@@ -210,7 +210,7 @@ SkeletonIK3D используется для вращения всех кост�
 - |void| **set_target_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_target_transform**\ (\ )
 
-Первая цель цепи IK, где размещается кончик кости, и, если :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` равно ``true``, как поворачивается кончик кости. Если доступен путь :ref:`target_node<class_SkeletonIK3D_property_target_node>`, то вместо этого используется преобразование узлов, а это свойство игнорируется.
+The first target of the IK chain where the tip bone is placed and, if :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` is ``true``, how the tip bone is rotated. If :ref:`target_node<class_SkeletonIK3D_property_target_node>` points to a valid node, that node's transform is used instead and this property is ignored.
 
 .. rst-class:: classref-item-separator
 

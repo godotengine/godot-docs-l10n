@@ -81,9 +81,9 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-Формат текстури OpenGL RGBA з чотирма компонентами, кожен із яких має розрядність 8 біт.
+OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
-Під час виведення на екран виконується перетворення з колірного простору sRGB у лінійний.
+When drawn to, a linear to sRGB color encoding conversion is performed.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 

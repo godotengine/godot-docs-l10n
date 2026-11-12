@@ -78,6 +78,8 @@ Propiedades
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` | :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>`                     | ``0``                 |
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`float<class_float>`                                 | :ref:`specular_intensity<class_LightmapGI_property_specular_intensity>`               | ``0.0``               |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`bool<class_bool>`                                   | :ref:`supersampling<class_LightmapGI_property_supersampling>`                         | ``false``             |
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`float<class_float>`                                 | :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>`           | ``2.0``               |
@@ -152,7 +154,7 @@ enum **GenerateProbes**: :ref:`🔗<enum_LightmapGI_GenerateProbes>`
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_DISABLED** = ``0``
 
-No generar sondas de lightmaps para iluminar objetos dinámicos.
+Don't generate additional lightmap probes for lighting dynamic objects. Probes will still be generated on each corner of the LightmapGI's bounds (8 probes total), so that interpolation works correctly when using additional :ref:`LightmapProbe<class_LightmapProbe>` nodes.
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_4:
 
@@ -291,6 +293,14 @@ El procesado del lightmap falló porque el lightmap es demasiado pequeño.
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_ATLAS_TOO_SMALL** = ``11``
 
 El procesado del lightmap falló porque el lightmap no pudo caber en un atlas.
+
+.. _class_LightmapGI_constant_BAKE_ERROR_TEXTURE_EXCEEDS_DEVICE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_TEXTURE_EXCEEDS_DEVICE_LIMIT** = ``12``
+
+Lightmap baking failed as the baking process requires a texture larger than the maximum texture size supported by the rendering device. This can happen when :ref:`supersampling<class_LightmapGI_property_supersampling>` is enabled with a high :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>`.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +612,9 @@ El :ref:`LightmapGIData<class_LightmapGIData>` asociado a este nodo **LightmapGI
 - |void| **set_max_texture_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_texture_size**\ (\ )
 
-El tamaño máximo de textura para el atlas de texturas generado. Los valores más altos darán como resultado la generación de menos divisiones, pero es posible que no funcionen en todo el hardware como resultado de las limitaciones de hardware en los tamaños de textura. Deja :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` en su valor predeterminado de ``16384`` si no estás seguro.
+The maximum texture size for the generated texture atlas. Higher values will result in fewer slices being generated, but may not work on all hardware as a result of hardware limitations on texture sizes. Leave :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` at its default value of ``16384`` if unsure.
+
+\ **Note:** If :ref:`supersampling<class_LightmapGI_property_supersampling>` is enabled, the texture atlas used while baking may be up to :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` times larger than :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>`, since it's downsampled before saving.
 
 .. rst-class:: classref-item-separator
 
@@ -647,6 +659,25 @@ La política de máscara de sombras a utilizar para sombras direccionales en obj
 El enmascaramiento de sombras permite a los nodos :ref:`DirectionalLight3D<class_DirectionalLight3D>` proyectar sombras incluso fuera del rango definido por su propiedad :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Esto se logra procesando una textura que contiene un mapa de sombras para la luz direccional, y luego usando esta textura de acuerdo con el modo de máscara de sombras actual.
 
 \ **Nota:** La textura de máscara de sombras solo se crea si :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` no es :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>`. Para ver una diferencia, debes procesar los lightmaps nuevamente después de cambiar de :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` a cualquier otro modo.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LightmapGI_property_specular_intensity:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **specular_intensity** = ``0.0`` :ref:`🔗<class_LightmapGI_property_specular_intensity>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_specular_intensity**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_specular_intensity**\ (\ )
+
+The strength of the lightmap's approximated specular lobe. This helps make lightmapped scenes look closer to real-time lighting, which is particularly noticeable for lights that use the :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` bake mode. Only effective if :ref:`directional<class_LightmapGI_property_directional>` is ``true``.
+
+\ **Note:** The lightmap is only able to represent one light direction per texel, which means that the specular direction may appear to be incorrect in certain cases. This can manifest as specular lobes appearing to warp around as the camera moves.
 
 .. rst-class:: classref-item-separator
 

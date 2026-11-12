@@ -85,6 +85,8 @@ Metodi
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_class_enum_bitfield<class_ClassDB_method_is_class_enum_bitfield>`\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const|                     |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                          | :ref:`is_class_exposed<class_ClassDB_method_is_class_exposed>`\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                               |
+   +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_parent_class<class_ClassDB_method_is_parent_class>`\ (\ class\: :ref:`StringName<class_StringName>`, inherits\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                 |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -499,6 +501,20 @@ Restituisce se la classe ``class`` è abilitata o meno.
 :ref:`bool<class_bool>` **is_class_enum_bitfield**\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_enum_bitfield>`
 
 Restituisce se la classe ``class`` (o le sue classi antenate se ``no_inheritance`` è ``false``) ha un'enumerazione chiamata ``enum`` che è un bitfield.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ClassDB_method_is_class_exposed:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_class_exposed**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_exposed>`
+
+Returns whether this ``class`` is exposed or not.
+
+Godot uses internal and platform specific classes at run time. **ClassDB** is able to work with those and lists them like any other class. This method can be used to filter them out if your use-case requires it.
 
 .. rst-class:: classref-item-separator
 

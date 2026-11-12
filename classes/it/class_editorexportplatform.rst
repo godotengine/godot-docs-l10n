@@ -270,13 +270,15 @@ Crea un progetto completo al percorso ``path`` per la preimpostazione ``preset``
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project_files**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, save_cb\: :ref:`Callable<class_Callable>`, shared_cb\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project_files>`
 
-Esporta file di progetto per la preimpostazione specificata. Questo metodo può essere utilizzato per implementare un formato di esportazione personalizzato, diverso da PCK e ZIP. Uno dei callback viene chiamato per ogni file esportato.
+Exports project files for the specified preset. This method can be used to implement custom export format, other than PCK and ZIP. One of the callbacks is called for each exported file.
 
-\ ``save_cb`` viene chiamato per tutti i file esportati e ha i seguenti argomenti: ``file_path: String``, ``file_data: PackedByteArray``, ``file_index: int``, ``file_count: int``, ``encryption_include_filters: PackedStringArray``, ``encryption_exclude_filters: PackedStringArray``, ``encryption_key: PackedByteArray``.
+\ ``save_cb`` is called for all exported files and have the following arguments: ``info: Dictionary``, ``file_data: PackedByteArray``. The ``info`` dictionary contains the following values: ``path: String``, ``source_path: String``, ``file_index: int``, ``file_count: int``.
 
-\ ``shared_cb`` viene chiamato per le librerie native condivise/statiche esportate e ha i seguenti argomenti: ``file_path: String``, ``tags: PackedStringArray``, ``target_folder: String``.
+\ ``shared_cb`` is called for exported native shared/static libraries and have the following arguments: ``file_path: String``, ``tags: PackedStringArray``, ``target_folder: String``.
 
-\ **Nota:** ``file_index`` e ``file_count`` sono pensati solo per monitorare il progresso e non sono necessariamente univoci e precisi.
+\ **Note:** ``file_index`` and ``file_count`` are intended for progress tracking only and aren't necessarily unique and precise.
+
+\ **Note:** The signature of ``save_cb`` changed in Godot 4.8. There is compatibility code to automatically handle the `previous signature <https://docs.godotengine.org/en/4.7/classes/class_editorexportplatform.html#class-editorexportplatform-method-export-project-files>`__ if the passed callable has 7 arguments.
 
 .. rst-class:: classref-item-separator
 

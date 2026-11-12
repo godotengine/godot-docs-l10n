@@ -96,9 +96,9 @@
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-Положительная бесконечность с плавающей точкой. Это результат деления с плавающей точкой, когда делитель равен ``0.0``. Для отрицательной бесконечности, используйте ``-INF``. Деление на ``-0.0`` приведет к отрицательной бесконечности, если числитель положительный, поэтому деление на ``0.0`` не то же самое, что деление на ``-0.0`` (несмотря на то, что ``0.0 == -0.0`` возвращает ``true``).
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **Внимание:** Числовая бесконечность является понятием только для чисел с плавающей точкой и не имеет эквивалента для целых чисел. Деление целого числа на ``0`` не приведет к :ref:`INF<class_@GDScript_constant_INF>` и вместо этого приведет к ошибке времени выполнения.
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-"Не число" (или NaN), недопустимое значение с плавающей точкой. Его возвращают некоторые некорректные операции, такие как деление числа с плавающей точкой ``0.0`` на ``0.0``.
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` обладает особыми свойствами, включая то, что ``!=`` всегда возвращает ``true``, пока другие операторы сравнения всегда возвращают ``false``. Это справедливо даже при сравнении самой константы с собой (``NAN == NAN`` возвращает ``false`` и ``NAN != NAN`` возвращает ``true``). Из-за этой особенности необходимо использовать :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>`, чтобы проверить, что число равно :ref:`NAN<class_@GDScript_constant_NAN>`.
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **Внимание:** "Не число" (или NaN) является понятием только для чисел с плавающей точкой и не имеет эквивалента для целых чисел. Деление целого числа ``0`` на ``0`` не приведет к :ref:`NAN<class_@GDScript_constant_NAN>` и вместо этого приведет к ошибке времени выполнения.
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,9 +282,9 @@
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Экспортируйте свойство :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>` или :ref:`PackedStringArray<class_PackedStringArray>` как перечисленный список параметров (или массив параметров). Если свойство имеет тип :ref:`int<class_int>`, то индекс значения сохраняется в том же порядке, в котором указаны значения. Вы можете добавлять явные значения с помощью двоеточия. Если свойство имеет тип :ref:`String<class_String>`, то значение сохраняется.
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
-См. также :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
@@ -295,13 +295,13 @@
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-Если вы хотите задать начальное значение, вы должны указать его явно:
+If you want to set an initial value, you must specify it explicitly:
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-Если вы хотите использовать именованные перечисления GDScript, то вместо этого используйте :ref:`@export<class_@GDScript_annotation_@export>`:
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 
@@ -752,7 +752,7 @@
     @export var car_label = "Speedy"
     @export var car_number = 3
 
-\ **Примечание:** Подгруппы не могут быть вложенными, но вы можете использовать разделитель слеш (``/``) для достижения желаемого эффекта:
+\ **Примечание:** Подгруппы не могут быть вложенными, но вы можете использовать разделитель слеш (\ ``/``) для достижения желаемого эффекта:
 
 ::
 

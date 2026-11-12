@@ -83,6 +83,14 @@ Mode de fusion multiplicatif.
 
 No blending mode, direct color copy.
 
+.. _class_BlitMaterial_constant_BLEND_MODE_PREMULTIPLIED_ALPHA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_PREMULTIPLIED_ALPHA** = ``5``
+
+Le mode de mélange. Les couleurs sont supposées être prémultipliées par leur opacité.
+
 .. rst-class:: classref-section-separator
 
 ----

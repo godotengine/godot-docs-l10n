@@ -419,7 +419,7 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate>`
 
-Выполняет кубическую интерполяцию между этим вектором и ``b``, используя ``pre_a`` и ``post_b`` в качестве дескрипторов, и возвращает результат в позиции ``weight``. ``weight`` находится в диапазоне от 0,0 до 1,0, представляя величину интерполяции.
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -431,9 +431,9 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate_in_time>`
 
-Выполняет кубическую интерполяцию между этим вектором и ``b``, используя ``pre_a`` и ``post_b`` в качестве дескрипторов, и возвращает результат в позиции ``weight``. ``weight`` находится в диапазоне от 0,0 до 1,0, представляя величину интерполяции. 
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-Он может выполнять более плавную интерполяцию, чем :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` по значениям времени.
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector4_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,9 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`Vector4<class_Vector4>` **direction_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_direction_to>`
 
-Возвращает нормализованный вектор, указывающий из этого вектора на ``to``. Это эквивалентно использованию ``(b - a).normalized()``.
+Возвращает нормализованный вектор, указывающий из этого вектора на ``to``.
+
+\ ``a.direction_to(b)`` эквивалентно ``(b - a).normalized()``. См. также :ref:`normalized()<class_Vector4_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 

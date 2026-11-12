@@ -110,6 +110,8 @@
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`TextServerManager<class_TextServerManager>`                 | :ref:`TextServerManager<class_@GlobalScope_property_TextServerManager>`                 |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`TextureStreaming<class_TextureStreaming>`                   | :ref:`TextureStreaming<class_@GlobalScope_property_TextureStreaming>`                   |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`ThemeDB<class_ThemeDB>`                                     | :ref:`ThemeDB<class_@GlobalScope_property_ThemeDB>`                                     |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Time<class_Time>`                                           | :ref:`Time<class_@GlobalScope_property_Time>`                                           |
@@ -2220,7 +2222,7 @@ Z 鍵。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETLEFT** = ``91``
 
-左中括號（\ ``[lb]``\ ）鍵。
+Left bracket (\ ``[``) key.
 
 .. _class_@GlobalScope_constant_KEY_BACKSLASH:
 
@@ -2236,7 +2238,7 @@ Z 鍵。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETRIGHT** = ``93``
 
-右中括號（\ ``[rb]``\ ）鍵。
+Right bracket (\ ``]``) key.
 
 .. _class_@GlobalScope_constant_KEY_ASCIICIRCUM:
 
@@ -3974,11 +3976,19 @@ hint_string 可用逗號分隔以下選項：
 
 與 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>` 類似，但是屬性以原始路徑的形式儲存，不使用 UID。這意味著移動檔案後參照可能損壞。請盡量使用 :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`\ 。
 
+.. _class_@GlobalScope_constant_PROPERTY_HINT_AUDIO_BUS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_AUDIO_BUS** = ``45``
+
+Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property is the name of an audio bus. This allows the selection of predefined bus names registered with the audio server.
+
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``45``
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``46``
 
 代表 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` 列舉的大小。
 
@@ -5446,6 +5456,18 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 ----
 
+.. _class_@GlobalScope_property_TextureStreaming:
+
+.. rst-class:: classref-property
+
+:ref:`TextureStreaming<class_TextureStreaming>` **TextureStreaming** :ref:`🔗<class_@GlobalScope_property_TextureStreaming>`
+
+The :ref:`TextureStreaming<class_TextureStreaming>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_property_ThemeDB:
 
 .. rst-class:: classref-property
@@ -5952,9 +5974,9 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, pre\: :ref:`float<class_float>`, post\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`, to_t\: :ref:`float<class_float>`, pre_t\: :ref:`float<class_float>`, post_t\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_cubic_interpolate_angle_in_time>`
 
-以三次曲線插值法，根據 ``weight``\ 、\ ``pre``\ 、\ ``post`` 於兩個旋轉值間進行最短路徑插值。詳見 :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`\ 。
+Cubic interpolates between two rotation values with shortest path by the factor defined in ``weight`` with ``pre`` and ``post`` values. See also :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
-此方法針對角度（旋轉）插值可提供比 :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>` 更平滑的結果。
+It can perform smoother interpolation than :ref:`cubic_interpolate_angle()<class_@GlobalScope_method_cubic_interpolate_angle>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -6635,7 +6657,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
     nearest_po2(0)  # 返回 0（可能出乎意料）
     nearest_po2(-1) # 返回 0（可能出乎意料）
 
-\ **警告：**\ 由於其實現，此方法返回\ ``0``\ 而不是\ ``1``\ 對於小於或等於的值\ ``0``\ ，但 ``value`` 是最小的負 64 位整數除外 (``-9223372036854775808``\ ），在這種情況下，返回 ``value`` 不變。
+\ **警告：**\ 由於其實現，此方法返回\ ``0``\ 而不是\ ``1``\ 對於小於或等於的值\ ``0``\ ，但 ``value`` 是最小的負 64 位整數除外 (\ ``-9223372036854775808``\ ），在這種情況下，返回 ``value`` 不變。
 
 .. rst-class:: classref-item-separator
 
@@ -6751,30 +6773,30 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-以盡可能最佳的方式將一個或多個任意型別的參數轉換為字串，並將其輸出到控制台。
+Converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
-支援以下 BBCode 標籤： ``b``\ 、\ ``i``\ 、\ ``u``\ 、\ ``s``\ 、\ ``indent``\ 、\ ``code``\ 、\ ``url``\ 、\ ``center``\ 、\ ``right``\ 、\ ``color``\ 、\ ``bgcolor``\ 、\ ``fgcolor``\ 。
+The following BBCode tags are supported: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
 
-URL 標籤僅支援在 URL 標籤中包含 URL，不支援使用不同標題的 URL。
+URL tags support both URLs wrapped by a URL tag and URLs with a different title (\ ``[url=address]text[/url]``). Support for URLs with a different title varies across terminal emulators. Most modern terminal emulators support them, but Terminal.app and conhost (the legacy Windows console) do not.
 
-當輸出到標準輸出時，支援的 BBCode 子集被轉換為 ANSI 跳脫碼以供終端仿真器顯示。對 ANSI 跳脫碼的支援可能因終端仿真器而異，尤其是斜體和刪除線。在標準輸出中，\ ``code`` 會使用較弱的文字表示，但字型不變。不支援的標籤在標準輸出中會原樣保留。
+When printing to standard output, the supported subset of BBCode is converted to ANSI escape codes for the terminal emulator to display. Support for ANSI escape codes varies across terminal emulators, especially for italic and strikethrough. In standard output, ``code`` is represented with faint text but without any font change. Unsupported tags are left as-is in standard output.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Hello world![/b][/color]") # 輸出“Hello world!”，使用綠色的粗體。
+    print_rich("[color=green][b]Hello world![/b][/color]") # Prints "Hello world!", in green with a bold font.
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // 輸出“Hello world!”，使用綠色的粗體。
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Prints "Hello world!", in green with a bold font.
 
 
 
-\ **注意：**\ 請考慮使用 :ref:`push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`push_warning()<class_@GlobalScope_method_push_warning>` 來輸出錯誤和警告訊息，而不是 :ref:`print()<class_@GlobalScope_method_print>` 或 :ref:`print_rich()<class_@GlobalScope_method_print_rich>`\ 。這將它們與用於除錯目的的輸出訊息區分開來，同時還會在輸出錯誤或警告時顯示堆疊追蹤。
+\ **Note:** Consider using :ref:`push_error()<class_@GlobalScope_method_push_error>` and :ref:`push_warning()<class_@GlobalScope_method_push_warning>` to print error and warning messages instead of :ref:`print()<class_@GlobalScope_method_print>` or :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
-\ **注意：**\ 在編輯器中顯示的輸出支援可點選的 ``[url=address]文字[/url]`` 標籤。點選時， ``[url]`` 標籤的 ``address`` 值由 :ref:`OS.shell_open()<class_OS_method_shell_open>` 處理。
+\ **Note:** Output displayed in the editor supports clickable ``[url=address]text[/url]`` tags. The ``[url]`` tag's ``address`` value is handled by :ref:`OS.shell_open()<class_OS_method_shell_open>` when clicked.
 
 .. rst-class:: classref-item-separator
 

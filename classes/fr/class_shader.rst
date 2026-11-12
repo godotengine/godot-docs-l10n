@@ -58,6 +58,8 @@ Méthodes
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                        | :ref:`set_default_texture_parameter<class_Shader_method_set_default_texture_parameter>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture<class_Texture>`, index\: :ref:`int<class_int>` = 0\ ) |
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`set_include_path<class_Shader_method_set_include_path>`\ (\ path\: :ref:`String<class_String>`\ )                                                                                                               |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -218,6 +220,18 @@ Définit la texture par défaut à utiliser avec un uniform de texture. La valeu
 \ **Note :** ``name`` doit correspondre exactement au nom de l'uniform dans le code.
 
 \ **Note :** Si le tableau d'échantillonneur est utilisé, utilisez ``index`` pour accéder à la texture spécifiée.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Shader_method_set_include_path:
+
+.. rst-class:: classref-method
+
+|void| **set_include_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Shader_method_set_include_path>`
+
+Sets the include path for this shader. Used only if the shader does not have a resource path set, for example when created by code.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

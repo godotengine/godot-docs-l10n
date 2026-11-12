@@ -361,17 +361,17 @@ La distance jusqu'au plan de coupe lointain pour cette caméra par rapport à so
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-L'angle du champ de vision de la caméra (en degrés). Seulement disponible en mode perspective. Comme :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` verrouille un axe, :ref:`fov<class_Camera3D_property_fov>` définit l'angle du champ de vision de l'autre axe.
+The camera's field of view (also known as FOV), as an angle in degrees. Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, this property sets the field of view on the other axis.
 
-Pour référence, l'angle de champ de vision par défaut (``75.0``) est équivalent à un champ de vision horizontal de :
+For reference, the default angle for the vertical FOV (\ ``75.0``) is equivalent to a horizontal FOV of:
 
-- ~91.31 degrés pour une fenêtre avec un ratio de 4:3
+- ~91.31 degrees in a 4:3 viewport
 
-- ~101.67 degrés pour une fenêtre avec un ratio de 6:10
+- ~101.67 degrees in a 16:10 viewport
 
-- ~107.51 degrés pour une fenêtre avec un ratio de 16:9
+- ~107.51 degrees in a 16:9 viewport
 
-- ~121.63 degrés pour une fenêtre avec un ratio de 21:9
+- ~121.63 degrees in a 21:9 viewport
 
 .. rst-class:: classref-item-separator
 

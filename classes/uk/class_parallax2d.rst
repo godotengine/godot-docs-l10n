@@ -16,7 +16,7 @@ Parallax2D
 
 **Parallax2D** використовується для створення ефекту паралаксу. Ви можете переїхати на різну швидкість відносно руху камери за допомогою :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Це створює ілюзію глибини в грі 2D. Якщо потрібна ручна прокрутка, позиція :ref:`Camera2D<class_Camera2D>` може ігноруватися :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
 
-\ **Примітка:** Будь-які зміни до положення цієї вершини, зроблені після того, як він надходить до дерева сцени, буде перейменувати, якщо :ref:`ignore_camera_scrolll<class_Parallax2D_property_ignore_camera_scrolll>` ``false`` або :ref:`screen_offset<class_Parallax2D_property_screen_offset>` змінено.
+\ **Примітка:** Будь-які зміни до положення цієї вершини, зроблені після того, як він надходить до дерева сцени, буде перейменувати, якщо :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` ``false`` або :ref:`screen_offset<class_Parallax2D_property_screen_offset>` змінено.
 
 .. rst-class:: classref-introduction-group
 

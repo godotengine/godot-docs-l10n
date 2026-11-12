@@ -14,7 +14,7 @@ Una función escalar de punto flotante que se utilizará dentro del gráfico de 
 Descripción
 ----------------------
 
-Acepta un escalar de punto flotante (``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
+Acepta un escalar de punto flotante (\ ``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

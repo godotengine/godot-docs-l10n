@@ -387,13 +387,13 @@ Gets the Godot ресурсний тип, пов'язаний з цим нава
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-Імпортує ``source_file`` із зазначеними параметрами імпорту ``options``. У разі успішного імпорту має повертати :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`; інші значення вказують на помилку.
+Imports ``source_file`` with the specified import ``options``. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful.
 
-Імпортований ресурс має бути збережений у ``save_path + "." + _get_save_extension()``. Якщо для :doc:`тегу функції <../tutorials/export/feature_tags>` бажано використовувати інший варіант, збережіть цей варіант у ``save_path + "." + tag + "." + _get_save_extension()`` та додайте тег функції до ``platform_variants``.
+The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
 
-Якщо у файловій системі ресурсів (``res://``) генеруються додаткові файли ресурсів, додайте їх повний шлях до ``gen_files``, щоб редактор знав, що вони залежать від ``source_file``.
+If additional resource files are generated in the resource filesystem (\ ``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
 
-Цей метод необхідно перевизначити для виконання власне імпорту. Приклад перевизначення цього методу дивіться в описі цього класу.
+This method must be overridden to do the actual importing work. See this class's description for an example of overriding this method.
 
 .. rst-class:: classref-item-separator
 

@@ -61,15 +61,19 @@ Méthodes
 .. table::
    :widths: auto
 
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`add_title_bar_control<class_FoldableContainer_method_add_title_bar_control>`\ (\ control\: :ref:`Control<class_Control>`\ )       |
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`expand<class_FoldableContainer_method_expand>`\ (\ )                                                                              |
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`fold<class_FoldableContainer_method_fold>`\ (\ )                                                                                  |
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`remove_title_bar_control<class_FoldableContainer_method_remove_title_bar_control>`\ (\ control\: :ref:`Control<class_Control>`\ ) |
-   +--------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`add_title_bar_control<class_FoldableContainer_method_add_title_bar_control>`\ (\ control\: :ref:`Control<class_Control>`\ )       |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`expand<class_FoldableContainer_method_expand>`\ (\ )                                                                              |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`fold<class_FoldableContainer_method_fold>`\ (\ )                                                                                  |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Control<class_Control>` | :ref:`get_title_bar_control<class_FoldableContainer_method_get_title_bar_control>`\ (\ index\: :ref:`int<class_int>`\ ) |const|         |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`         | :ref:`get_title_bar_control_count<class_FoldableContainer_method_get_title_bar_control_count>`\ (\ ) |const|                            |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`remove_title_bar_control<class_FoldableContainer_method_remove_title_bar_control>`\ (\ control\: :ref:`Control<class_Control>`\ ) |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -79,43 +83,51 @@ Propriétés du thème
 .. table::
    :widths: auto
 
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`collapsed_font_color<class_FoldableContainer_theme_color_collapsed_font_color>`               | ``Color(1, 1, 1, 1)``             |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_color<class_FoldableContainer_theme_color_font_color>`                                   | ``Color(0.875, 0.875, 0.875, 1)`` |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_FoldableContainer_theme_color_font_outline_color>`                   | ``Color(1, 1, 1, 1)``             |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`hover_font_color<class_FoldableContainer_theme_color_hover_font_color>`                       | ``Color(0.95, 0.95, 0.95, 1)``    |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`             | :ref:`h_separation<class_FoldableContainer_theme_constant_h_separation>`                            | ``2``                             |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_FoldableContainer_theme_constant_outline_size>`                            | ``0``                             |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_FoldableContainer_theme_font_font>`                                                |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_FoldableContainer_theme_font_size_font_size>`                                 |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`expanded_arrow<class_FoldableContainer_theme_icon_expanded_arrow>`                            |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`expanded_arrow_mirrored<class_FoldableContainer_theme_icon_expanded_arrow_mirrored>`          |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`folded_arrow<class_FoldableContainer_theme_icon_folded_arrow>`                                |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`folded_arrow_mirrored<class_FoldableContainer_theme_icon_folded_arrow_mirrored>`              |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_FoldableContainer_theme_style_focus>`                                             |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_FoldableContainer_theme_style_panel>`                                             |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`title_collapsed_hover_panel<class_FoldableContainer_theme_style_title_collapsed_hover_panel>` |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`title_collapsed_panel<class_FoldableContainer_theme_style_title_collapsed_panel>`             |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`title_hover_panel<class_FoldableContainer_theme_style_title_hover_panel>`                     |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`title_panel<class_FoldableContainer_theme_style_title_panel>`                                 |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`collapsed_font_color<class_FoldableContainer_theme_color_collapsed_font_color>`               | ``Color(1, 1, 1, 1)``             |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_color<class_FoldableContainer_theme_color_font_color>`                                   | ``Color(0.875, 0.875, 0.875, 1)`` |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_outline_color<class_FoldableContainer_theme_color_font_outline_color>`                   | ``Color(1, 1, 1, 1)``             |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`hover_font_color<class_FoldableContainer_theme_color_hover_font_color>`                       | ``Color(0.95, 0.95, 0.95, 1)``    |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`h_separation<class_FoldableContainer_theme_constant_h_separation>`                            | ``2``                             |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`icon_max_width<class_FoldableContainer_theme_constant_icon_max_width>`                        | ``0``                             |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`outline_size<class_FoldableContainer_theme_constant_outline_size>`                            | ``0``                             |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Font<class_Font>`               | :ref:`font<class_FoldableContainer_theme_font_font>`                                                |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`font_size<class_FoldableContainer_theme_font_size_font_size>`                                 |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`expanded_arrow<class_FoldableContainer_theme_icon_expanded_arrow>`                            |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`expanded_arrow_mirrored<class_FoldableContainer_theme_icon_expanded_arrow_mirrored>`          |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`folded_arrow<class_FoldableContainer_theme_icon_folded_arrow>`                                |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`folded_arrow_mirrored<class_FoldableContainer_theme_icon_folded_arrow_mirrored>`              |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`expanded_sound<class_FoldableContainer_theme_sound_expanded_sound>`                           |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_FoldableContainer_theme_sound_focus_sound>`                                 |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`folded_sound<class_FoldableContainer_theme_sound_folded_sound>`                               |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`focus<class_FoldableContainer_theme_style_focus>`                                             |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`panel<class_FoldableContainer_theme_style_panel>`                                             |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`title_collapsed_hover_panel<class_FoldableContainer_theme_style_title_collapsed_hover_panel>` |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`title_collapsed_panel<class_FoldableContainer_theme_style_title_collapsed_panel>`             |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`title_hover_panel<class_FoldableContainer_theme_style_title_hover_panel>`                     |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`title_panel<class_FoldableContainer_theme_style_title_panel>`                                 |                                   |
+   +---------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -353,6 +365,32 @@ Folds the container and emits :ref:`folding_changed<class_FoldableContainer_sign
 
 ----
 
+.. _class_FoldableContainer_method_get_title_bar_control:
+
+.. rst-class:: classref-method
+
+:ref:`Control<class_Control>` **get_title_bar_control**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FoldableContainer_method_get_title_bar_control>`
+
+Returns the title bar :ref:`Control<class_Control>` at the given ``index``, or ``null`` if the index is out of bounds.
+
+Use :ref:`get_title_bar_control_count()<class_FoldableContainer_method_get_title_bar_control_count>` to get the total number of title bar controls.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FoldableContainer_method_get_title_bar_control_count:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_title_bar_control_count**\ (\ ) |const| :ref:`🔗<class_FoldableContainer_method_get_title_bar_control_count>`
+
+Returns the number of controls added to the title bar via :ref:`add_title_bar_control()<class_FoldableContainer_method_add_title_bar_control>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_FoldableContainer_method_remove_title_bar_control:
 
 .. rst-class:: classref-method
@@ -425,6 +463,18 @@ La couleur de survolement de la police du titre.
 :ref:`int<class_int>` **h_separation** = ``2`` :ref:`🔗<class_FoldableContainer_theme_constant_h_separation>`
 
 La séparation horizontale entre l'icône et le texte du titre, et entre les contrôles de la barre du titre.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FoldableContainer_theme_constant_icon_max_width:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_FoldableContainer_theme_constant_icon_max_width>`
+
+The maximum allowed width of the **FoldableContainer**'s icon. The height is adjusted according to the icon's ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -509,6 +559,44 @@ L'icône du titre utilisée lorsqu'il est replié (pour une mise en page de gauc
 :ref:`Texture2D<class_Texture2D>` **folded_arrow_mirrored** :ref:`🔗<class_FoldableContainer_theme_icon_folded_arrow_mirrored>`
 
 L'icône du titre utilisée lorsqu'il est replié (pour une mise en page de droite-à-gauche).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FoldableContainer_theme_sound_expanded_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **expanded_sound** :ref:`🔗<class_FoldableContainer_theme_sound_expanded_sound>`
+
+Played when the container is expanded with any input method.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FoldableContainer_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_FoldableContainer_theme_sound_focus_sound>`
+
+Played when this **FoldableContainer** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FoldableContainer_theme_sound_folded_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **folded_sound** :ref:`🔗<class_FoldableContainer_theme_sound_folded_sound>`
+
+Played when the container is folded with any input method.
+
+\ **Note:** This does not play if the container is folded as a result of being part of a :ref:`FoldableGroup<class_FoldableGroup>` and another container in the same group was expanded.
 
 .. rst-class:: classref-item-separator
 

@@ -30,9 +30,9 @@ Godot 內建的 **MovieWriter** 有 3 個：
 
 \ **注意：**\ MovieWriter 既可以在編輯器中使用，也可以在匯出的專案中使用，但這個功能\ *不應*\ 用來讓最終使用者錄制遊戲影片。希望錄制遊戲影片的玩家應該安裝 `OBS Studio <https://obsproject.com/>`__ 或 `SimpleScreenRecorder <https://www.maartenbaert.be/simplescreenrecorder/>`__ 等工具。
 
-\ **注意：**\ MJPEG 支援（(``.avi`` 檔案副檔名）取決於 ``jpg`` 模組，需要在編譯時啟用（預設行為）。
+\ **注意：**\ MJPEG 支援（(\ ``.avi`` 檔案副檔名）取決於 ``jpg`` 模組，需要在編譯時啟用（預設行為）。
 
-\ **注意：**\ OGV 支援（(``.ogv`` 檔案副檔名）取決於 ``theora`` 模組，需要在編譯時啟用（預設行為）。Theora 壓縮僅在編輯器二進位檔案中可用。
+\ **注意：**\ OGV 支援（(\ ``.ogv`` 檔案副檔名）取決於 ``theora`` 模組，需要在編譯時啟用（預設行為）。Theora 壓縮僅在編輯器二進位檔案中可用。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ Godot 內建的 **MovieWriter** 有 3 個：
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`_write_end<class_MovieWriter_private_method__write_end>`\ (\ ) |virtual| |required|                                                                                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_write_frame<class_MovieWriter_private_method__write_frame>`\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const void*``\ ) |virtual| |required|                                       |
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_write_frame<class_MovieWriter_private_method__write_frame>`\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const int32_t*``\ ) |virtual| |required|                                    |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`add_writer<class_MovieWriter_method_add_writer>`\ (\ writer\: :ref:`MovieWriter<class_MovieWriter>`\ ) |static|                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -154,7 +154,7 @@ Godot 內建的 **MovieWriter** 有 3 個：
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **_write_frame**\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const void*``\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_frame>`
+:ref:`Error<enum_@GlobalScope_Error>` **_write_frame**\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const int32_t*``\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_frame>`
 
 在每個渲染的影格結束時被呼叫。應寫入 ``frame_image`` 和 ``audio_frame_block`` 函式參數。
 

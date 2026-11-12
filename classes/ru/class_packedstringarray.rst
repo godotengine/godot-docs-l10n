@@ -317,7 +317,7 @@ PackedStringArray
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_insert>`
 
-Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (``idx == size()``).
+Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ PackedStringArray
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_method_remove_at>`
 
-Удаляет элемент из массива по индексу.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

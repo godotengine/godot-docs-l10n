@@ -14,7 +14,7 @@ Sugerencia de la posición 2D genérica para editar.
 Descripción
 ----------------------
 
-Indicación de posición 2D genérica para la edición. Es como un :ref:`Node2D<class_Node2D>` normal, pero se muestra como una cruz en el editor 2D en todo momento. Puedes establecer el tamaño visual de la cruz utilizando el gizmo en el editor 2D mientras el nodo está seleccionado.
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

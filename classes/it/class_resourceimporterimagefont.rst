@@ -96,7 +96,7 @@ Margine applicato attorno a ogni glifo importato. Se l'immagine del tuo font con
 
 :ref:`PackedStringArray<class_PackedStringArray>` **character_ranges** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_character_ranges>`
 
-Gli intervalli dei caratteri da importare dall'immagine del font. Questo è un array che mappa ogni posizione sull'immagine (in coordinate di cella, non in pixel). L'atlante del font viene percorso da sinistra verso destra e dall'alto verso il basso. I caratteri si possono specificare con numeri decimali (126), numeri esadecimali (``0x007e`` o ``U+007e``) o tra virgolette singole (``'~'``). Gli intervalli si possono specificare con un trattino tra i caratteri.
+Gli intervalli dei caratteri da importare dall'immagine del font. Questo è un array che mappa ogni posizione sull'immagine (in coordinate di cella, non in pixel). L'atlante del font viene percorso da sinistra verso destra e dall'alto verso il basso. I caratteri si possono specificare con numeri decimali (126), numeri esadecimali (\ ``0x007e`` o ``U+007e``) o tra virgolette singole (\ ``'~'``). Gli intervalli si possono specificare con un trattino tra i caratteri.
 
 Ad esempio, ``0-127`` rappresenta l'intervallo ASCII completo. Si può anche scrivere come ``0x0000-0x007f`` (o ``U+0000-U+007f``). Come un altro esempio, ``' '-'~'`` equivale a ``32-127`` e rappresenta l'intervallo di caratteri ASCII stampabili (visibili).
 
@@ -104,7 +104,11 @@ Per qualsiasi intervallo, è possibile personalizzare l'avanzamento e l'offset d
 
 \ **Nota:** Il numero totale di caratteri non deve superare il numero di :ref:`columns<class_ResourceImporterImageFont_property_columns>` moltiplicato per :ref:`rows<class_ResourceImporterImageFont_property_rows>`. Altrimenti, non sarà possibile importare il font.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +184,11 @@ Coppie di crenatura per il font. Le coppie di crenatura regolano la spaziatura t
 
 Ogni stringa è composta da tre valori separati da spazi: stringa "da", stringa "a" e offset intero. Ogni combinazione forma le due stringhe per una coppia di crenatura, ad esempio, ``ab cd -3`` creerà le coppie di crenatura ``ac``, ``ad``, ``bc`` e ``bd`` con un'offset di ``-3``. È possibile usare le sequenze di escape ``\uXXXX`` per aggiungere caratteri Unicode.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

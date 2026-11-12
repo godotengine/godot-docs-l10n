@@ -387,13 +387,13 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-使用导入选项 ``options`` 导入源文件 ``source_file``\ 。如果导入成功应返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，其他值表示失败。
+Imports ``source_file`` with the specified import ``options``. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful.
 
-导入的资源应保存至 ``save_path + "." + _get_save_extension()``\ 。如果希望针对某个\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 优先使用不同的版本，请将该版本的资源保存至 ``save_path + "." + 标签 + "." + _get_save_extension()``\ ，并将该特性标签添加至 ``platform_variants``\ 。
+The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
 
-如果在资源文件系统（\ ``res://``\ ）中生成了额外的资源文件，请将其完整路径添加至 ``gen_files``\ ，从而使编辑器得知这些文件依赖于 ``source_file``\ 。
+If additional resource files are generated in the resource filesystem (\ ``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
 
-必须覆盖这个方法进行实际的导入工作。覆盖示例见这个类的描述。
+This method must be overridden to do the actual importing work. See this class's description for an example of overriding this method.
 
 .. rst-class:: classref-item-separator
 

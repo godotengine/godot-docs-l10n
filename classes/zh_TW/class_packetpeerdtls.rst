@@ -14,11 +14,11 @@ DTLS 資料包使用者端。
 說明
 ----
 
-這個類表示 DTLS 對等體連接。它可以用來連接到 DTLS 伺服器，由 :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>` 返回。
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
 
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署前，請確保在 Android 匯出預設中啟用 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **警告：**\ 目前不支援 TLS 憑證復原和憑證綁定。只要復原的憑證在其他方面有效，就會被接受。如果這是一個問題，可以使用有效期較短的自動管理憑證。
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-reftable-group
 

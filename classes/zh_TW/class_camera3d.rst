@@ -361,17 +361,17 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-相機的視野角度（單位為度）。僅適用於透視模式。由於 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` 鎖定一個軸，因此 :ref:`fov<class_Camera3D_property_fov>` 設定另一個軸的視角。
+The camera's field of view (also known as FOV), as an angle in degrees. Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, this property sets the field of view on the other axis.
 
-作為參考，預設的垂直視野值（\ ``70.0``\ ）相當於以下水平 FOV：
+For reference, the default angle for the vertical FOV (\ ``75.0``) is equivalent to a horizontal FOV of:
 
-- 在 4:3 視埠中約 91.31 度
+- ~91.31 degrees in a 4:3 viewport
 
-- 在 16:10 視埠中約 101.67 度
+- ~101.67 degrees in a 16:10 viewport
 
-- 在 16:9 視埠中約 107.51 度
+- ~107.51 degrees in a 16:9 viewport
 
-- 在 21:9 視埠中約 121.63 度
+- ~121.63 degrees in a 21:9 viewport
 
 .. rst-class:: classref-item-separator
 

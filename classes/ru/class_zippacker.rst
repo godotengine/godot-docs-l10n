@@ -120,7 +120,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_DEFAULT** = ``-1``
 
-Запустите файл с уровнем сжатия Deflate по умолчанию (``6``). Это хороший компромисс между скоростью и размером файла.
+Запустите файл с уровнем сжатия Deflate по умолчанию (\ ``6``). Это хороший компромисс между скоростью и размером файла.
 
 .. _class_ZIPPacker_constant_COMPRESSION_NONE:
 
@@ -136,7 +136,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_FAST** = ``1``
 
-Запустите файл с самым быстрым уровнем сжатия Deflate (``1``). Это обеспечивает быстрое сжатие, но приводит к увеличению размера файла по сравнению с :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Скорость распаковки обычно не зависит от выбранного уровня сжатия.
+Запустите файл с самым быстрым уровнем сжатия Deflate (\ ``1``). Это обеспечивает быстрое сжатие, но приводит к увеличению размера файла по сравнению с :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Скорость распаковки обычно не зависит от выбранного уровня сжатия.
 
 .. _class_ZIPPacker_constant_COMPRESSION_BEST:
 
@@ -144,7 +144,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_BEST** = ``9``
 
-Создайте файл с оптимальным уровнем сжатия Deflate (``9``). Этот вариант сжатия медленнее, но размер файла меньше, чем у :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Скорость распаковки, как правило, не зависит от выбранного уровня сжатия.
+Создайте файл с оптимальным уровнем сжатия Deflate (\ ``9``). Этот вариант сжатия медленнее, но размер файла меньше, чем у :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Скорость распаковки, как правило, не зависит от выбранного уровня сжатия.
 
 .. rst-class:: classref-section-separator
 

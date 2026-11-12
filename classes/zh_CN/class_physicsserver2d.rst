@@ -497,9 +497,9 @@ enum **AreaParameter**: :ref:`🔗<enum_PhysicsServer2D_AreaParameter>`
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-常量，用于设置/获取重力强度等于 :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>` 控制的重力的距离。例如，在一个半径为 100 像素且表面重力为 4.0 px/s² 的行星上，将重力设置为 4.0，将单位距离设置为 100.0。重力将根据平方反比定律衰减，因此在该示例中，距离中心 200 像素处的重力将为 1.0 px/s²（距离的两倍，重力的 1/4），距离中心 50 像素处重力为 16.0 px/s²（距离的一半，重力的 4 倍），依此类推。
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-仅当单位距离为正数时，上述情况才成立。当单位距离设置为 0.0 时，重力将与距离无关。该参数的默认值为 ``0.0``\ 。
+The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is ``0.0``.
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 

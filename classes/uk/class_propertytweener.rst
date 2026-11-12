@@ -203,7 +203,7 @@ PropertyTweener
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_PropertyTweener_method_set_ease>`
 
-Встановлює тип використовуваного зондування з Tween. EaseType. Якщо не встановлено, що зменшення за замовчуванням використовується з :ref:`Tween<class_Tween>`, який містить цей Tweener.
+Встановлює тип використовуваного зондування з :ref:`EaseType<enum_Tween_EaseType>`. Якщо не встановлено, що зменшення за замовчуванням використовується з :ref:`Tween<class_Tween>`, який містить цей Tweener.
 
 .. rst-class:: classref-item-separator
 

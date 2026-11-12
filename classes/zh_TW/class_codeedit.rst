@@ -14,9 +14,13 @@ CodeEdit
 說明
 ----
 
-CodeEdit 是一種專門用於編輯純文字程式碼檔的 :ref:`TextEdit<class_TextEdit>`\ 。它包含了許多程式碼編輯器中的常見功能，如行號、折行、程式碼補全、縮進管理以及字串/注釋管理。
+CodeEdit is a specialized :ref:`TextEdit<class_TextEdit>` designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.
 
-\ **注意：**\ 無論使用什麼區域設定，\ **CodeEdit** 預設總是使用從左至右的文字方向來正確顯示原始程式碼。
+\ **Note:** Regardless of locale, **CodeEdit** will by default always use left-to-right text direction to correctly display source code.
+
+.. classref_note::
+
+    Being a subclass of :ref:`TextEdit<class_TextEdit>`, line and column numbers are *zero-based*, like elements of an array. For example, the first line of text can be retrieved by ``get_line(0)``, the second line by ``get_line(1)``, and so on.
 
 .. rst-class:: classref-reftable-group
 

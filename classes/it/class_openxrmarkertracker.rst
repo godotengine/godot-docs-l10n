@@ -16,7 +16,7 @@ Spatial entity tracker for our spatial entity marker tracking extension.
 Descrizione
 ----------------------
 
-Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or Aruco code, and map their location to our virtual space.
+Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or ArUco code, and map their location to our virtual space.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ Le dimensioni limite per questo marcatore.
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-L'ID del marcatore per questo marcatore, viene restituito solo per i marcatori Aruco e April Tag. Chiama :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` per i marcatori QRCode.
+The marker ID for this marker, this is only returned for ArUco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
 
 .. rst-class:: classref-item-separator
 

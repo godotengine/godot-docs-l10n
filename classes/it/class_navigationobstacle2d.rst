@@ -182,7 +182,9 @@ Imposta il raggio di evitamento per l'ostacolo.
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Imposta la velocità desiderata per l'ostacolo in modo che altri agenti possano prevedere meglio l'ostacolo se viene spostato con una velocità regolare (ogni frame) invece di essere deformato in una nuova posizione. Influisce solo sull'evitamento entro il :ref:`radius<class_NavigationObstacle2D_property_radius>` degli ostacoli. Non fa nulla per i vertici statici degli ostacoli.
+The wanted velocity for the obstacle, used by other agents to better predict the obstacle if it is moved with a velocity regularly (every frame), instead of warped to a new position.
+
+\ **Note:** This property only affects avoidance for the obstacle's :ref:`radius<class_NavigationObstacle2D_property_radius>`. Does nothing for the obstacle's static vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -199,9 +201,13 @@ Imposta la velocità desiderata per l'ostacolo in modo che altri agenti possano 
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ )
 
-I vertici del contorno dell'ostacolo. Se i vertici sono avvolti in senso orario gli agenti saranno spinti dentro dall'ostacolo, altrimenti saranno spinti fuori. I contorni non possono essere incrociati o sovrapposti. Se i vertici che utilizzano l'ostacolo vengono deformati in una nuova posizione, gli agenti non possono prevedere questo movimento e potrebbero rimanere intrappolati all'interno dell'ostacolo.
+The outline vertices of the obstacle. If the vertices are winded in clockwise order, agents will be pushed in by the obstacle, otherwise they will be pushed out. Outlines cannot be crossed or overlap. If the obstacle is warped to a new position, agents cannot predict this movement and may get trapped inside the obstacle.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

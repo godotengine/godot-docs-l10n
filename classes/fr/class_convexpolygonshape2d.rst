@@ -70,7 +70,11 @@ La liste des sommets du polygone qui forment une enveloppe convexe. Peut être d
 
 \ **Attention :** Définissez seulement cette propriété à une liste de points qui forment une enveloppe convexe. Utilisez :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` pour générer l'enveloppe convexe d'un ensemble arbitraire de points.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

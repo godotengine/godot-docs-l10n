@@ -223,9 +223,9 @@ Metodi
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                                               | :ref:`get_base_color<class_DisplayServer_method_get_base_color>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`\[:ref:`Rect2<class_Rect2>`\]                  | :ref:`get_display_cutouts<class_DisplayServer_method_get_display_cutouts>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+   | :ref:`Array<class_Array>`\[:ref:`Rect2<class_Rect2>`\]                  | :ref:`get_display_cutouts<class_DisplayServer_method_get_display_cutouts>`\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Rect2i<class_Rect2i>`                                             | :ref:`get_display_safe_area<class_DisplayServer_method_get_display_safe_area>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+   | :ref:`Rect2i<class_Rect2i>`                                             | :ref:`get_display_safe_area<class_DisplayServer_method_get_display_safe_area>`\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                   | :ref:`get_keyboard_focus_screen<class_DisplayServer_method_get_keyboard_focus_screen>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -349,6 +349,8 @@ Metodi
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`help_set_search_callbacks<class_DisplayServer_method_help_set_search_callbacks>`\ (\ search_callback\: :ref:`Callable<class_Callable>`, action_callback\: :ref:`Callable<class_Callable>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                  | :ref:`hide_toast_notification<class_DisplayServer_method_hide_toast_notification>`\ (\ id\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>`                                         | :ref:`ime_get_selection<class_DisplayServer_method_ime_get_selection>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                             | :ref:`ime_get_text<class_DisplayServer_method_ime_get_text>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -422,6 +424,8 @@ Metodi
    | |void|                                                                  | :ref:`screen_set_keep_on<class_DisplayServer_method_screen_set_keep_on>`\ (\ enable\: :ref:`bool<class_bool>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`screen_set_orientation<class_DisplayServer_method_screen_set_orientation>`\ (\ orientation\: :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>`, screen\: :ref:`int<class_int>` = -1\ )                                                                                                                                                                                                                                                                                                                                                                                                         |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                   | :ref:`send_toast_notification<class_DisplayServer_method_send_toast_notification>`\ (\ title\: :ref:`String<class_String>`, text\: :ref:`String<class_String>`, image\: :ref:`Texture2D<class_Texture2D>`, callback\: :ref:`Callable<class_Callable>`\ )                                                                                                                                                                                                                                                                                                                                                          |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_hardware_keyboard_connection_change_callback<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`\ (\ callable\: :ref:`Callable<class_Callable>`\ )                                                                                                                                                                                                                                                                                                                                                                                                                            |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -563,6 +567,8 @@ Metodi
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`window_set_ime_position<class_DisplayServer_method_window_set_ime_position>`\ (\ position\: :ref:`Vector2i<class_Vector2i>`, window_id\: :ref:`int<class_int>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                  | :ref:`window_set_ime_rect<class_DisplayServer_method_window_set_ime_rect>`\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, window_id\: :ref:`int<class_int>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`window_set_input_event_callback<class_DisplayServer_method_window_set_input_event_callback>`\ (\ callback\: :ref:`Callable<class_Callable>`, window_id\: :ref:`int<class_int>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`window_set_input_text_callback<class_DisplayServer_method_window_set_input_text_callback>`\ (\ callback\: :ref:`Callable<class_Callable>`, window_id\: :ref:`int<class_int>` = 0\ )                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -615,13 +621,11 @@ Segnali
 
 .. rst-class:: classref-signal
 
-**orientation_changed**\ (\ orientation\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_signal_orientation_changed>`
+**orientation_changed**\ (\ orientation\: :ref:`SensorOrientation<enum_DisplayServer_SensorOrientation>`\ ) :ref:`🔗<class_DisplayServer_signal_orientation_changed>`
 
-Emesso quando l'orientamento del dispositivo cambia. ``orientation`` è il nuovo orientamento.
+Emitted when the screen orientation changes. ``orientation`` is the new orientation.
 
-Restituisce ``1`` per l'orientamento verticale, ``2`` per l'orientamento orizzontale e ``0`` se l'orientamento non è definito.
-
-\ **Nota:** Questo metodo è implementato su Android e iOS.
+\ **Note:** This method is implemented on Android and iOS.
 
 .. rst-class:: classref-section-separator
 
@@ -929,6 +933,14 @@ Il server di visualizzazione supporta l'output HDR. **Linux (X11/Wayland), macOS
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_PIP_MODE** = ``36``
 
 Il server di visualizzazione supporta mettere l'applicazione in modalità picture-in-picture. **Android**
+
+.. _class_DisplayServer_constant_FEATURE_EMBEDDED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_EMBEDDED** = ``37``
+
+Display server is embedding windows to another process. **macOS**
 
 .. rst-class:: classref-item-separator
 
@@ -2002,9 +2014,11 @@ Nasconde il cursore del mouse se è visibile.
 
 :ref:`MouseMode<enum_DisplayServer_MouseMode>` **MOUSE_MODE_CAPTURED** = ``2``
 
-Cattura il mouse. Il mouse sarà nascosto e la sua posizione sarà ristretta al centro della finestra del gestore delle finestre.
+Captures the mouse. The mouse will be hidden and its position locked at the center of the window manager's window.
 
-\ **Nota:** Se si desidera elaborare il movimento del mouse in questa modalità, bisogna usare :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>`.
+\ **Note:** If you want to process the mouse's movement in this mode, you need to use :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>` or :ref:`InputEventMouseMotion.screen_relative<class_InputEventMouseMotion_property_screen_relative>`.
+
+\ **Note:** Even when captured, the mouse cursor is still able to press buttons if they overlap with the center of the window.
 
 .. _class_DisplayServer_constant_MOUSE_MODE_CONFINED:
 
@@ -2095,6 +2109,40 @@ Orientamento verticale automatico (predefinito o invertito a seconda del sensore
 :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>` **SCREEN_SENSOR** = ``6``
 
 Orientamento automatico orizzontale o verticale (predefinito o inverso a seconda del sensore).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_DisplayServer_SensorOrientation:
+
+.. rst-class:: classref-enumeration
+
+enum **SensorOrientation**: :ref:`🔗<enum_DisplayServer_SensorOrientation>`
+
+.. _class_DisplayServer_constant_SENSOR_ORIENTATION_UNDEFINED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SensorOrientation<enum_DisplayServer_SensorOrientation>` **SENSOR_ORIENTATION_UNDEFINED** = ``0``
+
+Unspecified screen sensor orientation.
+
+.. _class_DisplayServer_constant_SENSOR_ORIENTATION_PORTRAIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SensorOrientation<enum_DisplayServer_SensorOrientation>` **SENSOR_ORIENTATION_PORTRAIT** = ``1``
+
+Portrait orientation (either standard portrait or reverse portrait).
+
+.. _class_DisplayServer_constant_SENSOR_ORIENTATION_LANDSCAPE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SensorOrientation<enum_DisplayServer_SensorOrientation>` **SENSOR_ORIENTATION_LANDSCAPE** = ``2``
+
+Landscape orientation (either standard landscape or reverse landscape).
 
 .. rst-class:: classref-item-separator
 
@@ -2600,9 +2648,9 @@ Usa :ref:`window_get_safe_title_margins()<class_DisplayServer_method_window_get_
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Tutti gli eventi del mouse saranno passati alla finestra sottostante della stessa applicazione.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Nota:** Questo flag è implementato su Linux (X11), macOS e Windows.
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2850,6 +2898,40 @@ Rappresenta la dimensione dell'enumerazione :ref:`WindowResizeEdge<enum_DisplayS
 
 ----
 
+.. _enum_DisplayServer_NotificationStatus:
+
+.. rst-class:: classref-enumeration
+
+enum **NotificationStatus**: :ref:`🔗<enum_DisplayServer_NotificationStatus>`
+
+.. _class_DisplayServer_constant_NOTIFICATION_ACTIVATED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`NotificationStatus<enum_DisplayServer_NotificationStatus>` **NOTIFICATION_ACTIVATED** = ``0``
+
+User activates a toast notification through a click or touch.
+
+.. _class_DisplayServer_constant_NOTIFICATION_DISMISSED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`NotificationStatus<enum_DisplayServer_NotificationStatus>` **NOTIFICATION_DISMISSED** = ``1``
+
+A toast notification expires or is explicitly dismissed by the user.
+
+.. _class_DisplayServer_constant_NOTIFICATION_FAILED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`NotificationStatus<enum_DisplayServer_NotificationStatus>` **NOTIFICATION_FAILED** = ``2``
+
+Attempts to raise a toast notification failed.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _enum_DisplayServer_VSyncMode:
 
 .. rst-class:: classref-enumeration
@@ -2862,7 +2944,11 @@ enum **VSyncMode**: :ref:`🔗<enum_DisplayServer_VSyncMode>`
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_DISABLED** = ``0``
 
-Nessuna sincronizzazione verticale, il che significa che il motore visualizzerà i frame il più velocemente possibile (potrebbe essere visibile un tearing). Il frame rate è illimitato (a prescindere da :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+No vertical synchronization, which means the engine will display frames as fast as possible (tearing may be visible). Framerate is unlimited (regardless of :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+
+.. classref_note::
+
+    Since the framerate may reach very high values, this can lead to audible coil whine depending on the hardware. To avoid this, cap the framerate with :ref:`Engine.max_fps<class_Engine_property_max_fps>` (lower values result in less coil whine).
 
 .. _class_DisplayServer_constant_VSYNC_ENABLED:
 
@@ -2886,9 +2972,13 @@ Si comporta come :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLE
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_MAILBOX** = ``3``
 
-Visualizza l'immagine più recente nella coda su intervalli di oscuramento verticale, mentre renderizza sulle altre immagini (non è visibile alcun tearing). Il frame rate è illimitato (a prescindere da :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+Displays the most recent image in the queue on vertical blanking intervals, while rendering to the other images (no tearing is visible). Framerate is unlimited (regardless of :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
 
-Sebbene non sia garantito, le immagini possono essere renderizzate il più velocemente possibile, il che può ridurre il ritardo degli input (chiamato anche modalità V-Sync "veloce"). :ref:`VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` funziona meglio quando vengono renderizzati almeno il doppio dei frame rispetto alla frequenza di aggiornamento del display. Si comporta come :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` quando si utilizza il metodo di rendering Compatibilità.
+Although not guaranteed, the images can be rendered as fast as possible, which may reduce input lag (also called "Fast" V-Sync mode). :ref:`VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` works best when at least twice as many frames as the display refresh rate are rendered. Behaves like :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` when using the Compatibility rendering method.
+
+.. classref_note::
+
+    Since the framerate may reach very high values, this can lead to audible coil whine depending on the hardware. To avoid this, cap the framerate with :ref:`Engine.max_fps<class_Engine_property_max_fps>` (lower values result in less coil whine).
 
 .. rst-class:: classref-item-separator
 
@@ -3133,6 +3223,14 @@ L'ID che fa riferimento a una finestra inesistente. Questo viene restituito da a
 
 ID che fa riferimento a un indicatore di stato inesistente dell'applicazione.
 
+.. _class_DisplayServer_constant_INVALID_NOTIFICATION_ID:
+
+.. rst-class:: classref-constant
+
+**INVALID_NOTIFICATION_ID** = ``-1`` :ref:`🔗<class_DisplayServer_constant_INVALID_NOTIFICATION_ID>`
+
+The ID that refers to a nonexistent toast notification.
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -3264,11 +3362,11 @@ Restituisce ``true`` se ``id`` è un elemento di accessibilità valido.
 
 :ref:`int<class_int>` **accessibility_screen_reader_active**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_screen_reader_active>`
 
-Restituisce ``1`` se è attivo un lettore dello schermo, un display Braille o un'altra applicazione assistiva, ``0`` in caso contrario. Restituisce ``-1`` se lo stato è sconosciuto.
+Returns ``1`` if a screen reader, Braille display or other assistive app is active, ``0`` otherwise. Returns ``-1`` if status is unknown.
 
-\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
+\ **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
-\ **Nota:** Gli strumenti di debug per l'accessibilità, come Accessibility Insights per Windows, Accessibility Inspector (macOS) o AT-SPI Browser (Linux/BSD), non contano come applicazioni assistive e non influiscono su questo valore. Per testare la tua applicazione con questi strumenti, imposta :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` su ``1``.
+\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps and will not affect this value. To test your project with these tools, set :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` to ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -3316,9 +3414,9 @@ Imposta i limiti esterni (con decorazioni) e interni (senza decorazioni) della f
 
 :ref:`int<class_int>` **accessibility_should_increase_contrast**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_should_increase_contrast>`
 
-Restituisce ``1`` se si dovrebbe utilizzare un tema ad alto contrasto per l'interfaccia utente, ``0`` altrimenti. Restituisce ``-1`` se lo stato è sconosciuto.
+Returns ``1`` if a high-contrast user interface theme should be used, ``0`` otherwise. Returns ``-1`` if status is unknown.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland, GNOME), macOS e Windows.
+\ **Note:** This method is implemented on Android, Linux (X11/Wayland, GNOME), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -3330,9 +3428,9 @@ Restituisce ``1`` se si dovrebbe utilizzare un tema ad alto contrasto per l'inte
 
 :ref:`int<class_int>` **accessibility_should_reduce_animation**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_should_reduce_animation>`
 
-Restituisce ``1`` se si dovrebbero disabilitare flash, lampeggi e altri contenuti in movimento che possono causare crisi epilettiche negli utenti con epilessia fotosensibile, ``0`` altrimenti. Restituisce ``-1`` se lo stato è sconosciuto.
+Returns ``1`` if flashing, blinking, and other moving content that can cause seizures in users with photosensitive epilepsy should be disabled, ``0`` otherwise. Returns ``-1`` if status is unknown.
 
-\ **Nota:** Questo metodo è implementato su macOS e Windows.
+\ **Note:** This method is implemented on Android, macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -4464,7 +4562,7 @@ Visualizza la finestra di dialogo nativa del sistema operativo per selezionare f
 
 Ogni stringa di filtro nell'array ``filters`` deve essere formattata in questo modo: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Il testo descrittivo del filtro è facoltativo e può essere omesso. È consigliato impostare sia l'estensione file sia il tipo MIME. Vedi anche :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-I callback hanno i seguenti argomenti: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **Su Android,** il terzo argomento (``selected_filter_index``) del callback è sempre ``0``.
+I callback hanno i seguenti argomenti: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **Su Android,** il terzo argomento (\ ``selected_filter_index``) del callback è sempre ``0``.
 
 \ **Nota:** Questo metodo è implementato se il server di visualizzazione ha la funzionalità :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Le piattaforme supportate includono Linux (X11/Wayland), Windows, macOS e Android.
 
@@ -4586,11 +4684,15 @@ Restituisce il colore di base del tema del sistema operativo (colore predefinito
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>`\[:ref:`Rect2<class_Rect2>`\] **get_display_cutouts**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_cutouts>`
+:ref:`Array<class_Array>`\[:ref:`Rect2<class_Rect2>`\] **get_display_cutouts**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_cutouts>`
 
-Restituisce un :ref:`Array<class_Array>` di :ref:`Rect2<class_Rect2>`, ognuno dei quali è il rettangolo di delimitazione per un ritaglio o una tacca sul display. Si trattano di aree non funzionali su schermi edge-to-edge utilizzate da fotocamere e sensori. Restituisce un array vuoto se il dispositivo non ha ritagli. Vedi anche :ref:`get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>`.
+Returns an :ref:`Array<class_Array>` of :ref:`Rect2<class_Rect2>`, each of which is the bounding rectangle for a display cutout or notch. These are non-functional areas on edge-to-edge screens used by cameras and sensors. Returns an empty array if the device does not have cutouts. See also :ref:`get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>`.
 
-\ **Nota:** Attualmente implementato solo su Android. Altre piattaforme restituiranno un array vuoto anche se hanno ritagli o tacche sul display.
+\ **Note:** The returned rectangles are relative to the physical screen and not the virtual desktop.
+
+\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+
+\ **Note:** Currently only implemented on Android and macOS. Other platforms will return an empty array even if they do have display cutouts or notches.
 
 .. rst-class:: classref-item-separator
 
@@ -4600,11 +4702,15 @@ Restituisce un :ref:`Array<class_Array>` di :ref:`Rect2<class_Rect2>`, ognuno de
 
 .. rst-class:: classref-method
 
-:ref:`Rect2i<class_Rect2i>` **get_display_safe_area**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_safe_area>`
+:ref:`Rect2i<class_Rect2i>` **get_display_safe_area**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_safe_area>`
 
-Restituisce l'area non oscurata del display in cui si dovrebbero renderizzare i controlli interattivi. Vedi anche :ref:`get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>`.
+Returns the unobscured area of the display where interactive controls should be rendered. See also :ref:`get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>`.
 
-\ **Nota:** Attualmente implementato solo su Android e iOS. Su altre piattaforme, ``screen_get_usable_rect(SCREEN_OF_MAIN_WINDOW)`` verrà restituito come alternativa. Vedi anche :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`.
+\ **Note:** The returned rectangle is relative to the physical screen and not the virtual desktop.
+
+\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+
+\ **Note:** Currently only implemented on Android, iOS, and macOS. On other platforms, ``screen_get_usable_rect(SCREEN_OF_MAIN_WINDOW)`` will be returned as a fallback. See also :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4698,16 +4804,16 @@ Restituisce ``true`` se le posizioni dei pulsanti **OK** e **Annulla** sono scam
 
 :ref:`int<class_int>` **get_window_at_screen_position**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_get_window_at_screen_position>`
 
-Restituisce l'ID della finestra nella posizione ``position`` (in pixel) sullo schermo. Nelle configurazioni multi-monitor, la posizione sullo schermo è relativa all'area del desktop virtuale. Nelle configurazioni multi-monitor con diverse risoluzioni o orientamenti dello schermo, l'origine potrebbe essere posizionata all'esterno di qualsiasi display in questo modo:
+Returns the ID of the window at the specified screen ``position`` (in pixels). On multi-monitor setups, the screen position is relative to the virtual desktop area. On multi-monitor setups with different screen resolutions or orientations, the origin may be located outside any display like this:
 
 .. code:: text
 
-    * (0, 0)        +-------+
-                    |       |
-    +-------------+ |       |
-    |             | |       |
-    |             | |       |
-    +-------------+ +-------+
+    * (0, 0)        ┌───────┐
+                    │       │
+    ┌─────────────┐ │       │
+    │             │ │       │
+    │             │ │       │
+    └─────────────┘ └───────┘
 
 .. rst-class:: classref-item-separator
 
@@ -5737,6 +5843,20 @@ Imposta i callback di ricerca del sistema nativo di aiuto.
 
 ----
 
+.. _class_DisplayServer_method_hide_toast_notification:
+
+.. rst-class:: classref-method
+
+|void| **hide_toast_notification**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_method_hide_toast_notification>`
+
+Hides the toast notification with ``id`` returned by :ref:`send_toast_notification()<class_DisplayServer_method_send_toast_notification>`.
+
+\ **Note:** This method is only implemented on Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DisplayServer_method_ime_get_selection:
 
 .. rst-class:: classref-method
@@ -5851,9 +5971,9 @@ Restituisce l'indice del layout di tastiera attivo.
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_keycode_from_physical**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_keycode_from_physical>`
 
-Converte un ``keycode`` fisico (US QWERTY) a uno nel layout di tastiera attivo.
+Converts a physical (US QWERTY) ``keycode`` to one in the active keyboard layout.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5865,9 +5985,9 @@ Converte un ``keycode`` fisico (US QWERTY) a uno nel layout di tastiera attivo.
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_label_from_physical**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_label_from_physical>`
 
-Converte un ``keycode`` fisico (US QWERTY) a un'etichetta localizzata sul tasto nel layout di tastiera attivo.
+Converts a physical (US QWERTY) ``keycode`` to localized label printed on the key in the active keyboard layout.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5879,9 +5999,9 @@ Converte un ``keycode`` fisico (US QWERTY) a un'etichetta localizzata sul tasto 
 
 :ref:`int<class_int>` **keyboard_get_layout_count**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_count>`
 
-Restituisce il numero di layout di tastiera.
+Returns the number of keyboard layouts.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5893,9 +6013,9 @@ Restituisce il numero di layout di tastiera.
 
 :ref:`String<class_String>` **keyboard_get_layout_language**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_language>`
 
-Restituisce il codice lingua con lo standard ISO-639/BCP-4 del layout di tastiera all'indice ``index``.
+Returns the ISO-639/BCP-47 language code of the keyboard layout at position ``index``.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5907,9 +6027,9 @@ Restituisce il codice lingua con lo standard ISO-639/BCP-4 del layout di tastier
 
 :ref:`String<class_String>` **keyboard_get_layout_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_name>`
 
-Restituisce il nome localizzato del layout di tastiera all'indice ``index``.
+Returns the localized name of the keyboard layout at position ``index``.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5921,9 +6041,9 @@ Restituisce il nome localizzato del layout di tastiera all'indice ``index``.
 
 |void| **keyboard_set_current_layout**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_method_keyboard_set_current_layout>`
 
-Imposta il layout di tastiera attivo.
+Sets the active keyboard layout.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11/Wayland), macOS, e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6160,20 +6280,20 @@ Restituisce il colore del pixel alla posizione ``position`` dello schermo. Nelle
 
 :ref:`Vector2i<class_Vector2i>` **screen_get_position**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_position>`
 
-Restituisce la posizione dell'angolo in alto a sinistra dello schermo in pixel. Restituisce :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` se ``screen`` non è valido. Nelle configurazioni multi-monitor, la posizione dello schermo è relativa all'area del desktop virtuale. Nelle configurazioni multi-monitor con diverse risoluzioni o orientamenti dello schermo, l'origine può essere posizionata all'esterno di qualsiasi display in questo modo:
+Returns the screen's top-left corner position in pixels. Returns :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>` if ``screen`` is invalid. On multi-monitor setups, the screen position is relative to the virtual desktop area. On multi-monitor setups with different screen resolutions or orientations, the origin might be located outside any display like this:
 
 .. code:: text
 
-    * (0, 0)        +-------+
-                    |       |
-    +-------------+ |       |
-    |             | |       |
-    |             | |       |
-    +-------------+ +-------+
+    * (0, 0)        ┌───────┐
+                    │       │
+    ┌─────────────┐ │       │
+    │             │ │       │
+    │             │ │       │
+    └─────────────┘ └───────┘
 
-Vedi anche :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
+See also :ref:`screen_get_size()<class_DisplayServer_method_screen_get_size>`.
 
-\ **Nota:** È possibile utilizzare una delle seguenti costanti per ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6217,7 +6337,7 @@ Returns the scale factor of the specified screen by index. Returns ``1.0`` if ``
 
 \ **Note:** On Linux (Wayland), the returned value is accurate only when ``screen`` is :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`. Due to API limitations, passing a direct index will return a rounded-up integer, if the screen has a fractional scale (e.g. ``1.25`` would get rounded up to ``2.0``).
 
-\ **Note:** This method is implemented on Android, iOS, Web, macOS, and Linux (Wayland). On other platforms, this method always returns ``1.0``.
+\ **Note:** This method is implemented on Android, iOS, Web, macOS, Linux, and Windows. On other platforms, this method always returns ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -6295,13 +6415,27 @@ Imposta l'orientamento dello schermo all'indice ``screen`` su ``orientation``. V
 
 ----
 
+.. _class_DisplayServer_method_send_toast_notification:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **send_toast_notification**\ (\ title\: :ref:`String<class_String>`, text\: :ref:`String<class_String>`, image\: :ref:`Texture2D<class_Texture2D>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_send_toast_notification>`
+
+Displays a toast notification with ``title``, ``text``, and optionally ``image``. ``image`` should be square, have a maximum edge length of 512 pixels, and should not exceed 4 MB when encoded as PNG. ``callback`` should accept two arguments: :ref:`int<class_int>` (notification ID) and :ref:`NotificationStatus<enum_DisplayServer_NotificationStatus>`. Returns the notification ID or :ref:`INVALID_NOTIFICATION_ID<class_DisplayServer_constant_INVALID_NOTIFICATION_ID>` if it failed.
+
+\ **Note:** This method is only implemented on Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DisplayServer_method_set_hardware_keyboard_connection_change_callback:
 
 .. rst-class:: classref-method
 
 |void| **set_hardware_keyboard_connection_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`
 
-Imposta il callback che deve essere richiamato quando la tastiera hardware è connessa/disconnessa. ``callable`` deve accettare un singolo parametro :ref:`bool<class_bool>` che indica se la tastiera è connessa (``true``) o disconnessa (``false``).
+Imposta il callback che deve essere richiamato quando la tastiera hardware è connessa/disconnessa. ``callable`` deve accettare un singolo parametro :ref:`bool<class_bool>` che indica se la tastiera è connessa (\ ``true``) o disconnessa (\ ``false``).
 
 \ **Nota:** Questo metodo è implementato solo su Android.
 
@@ -6959,7 +7093,7 @@ Restituisce la posizione della finestra specificata sullo schermo, includendo i 
 
 :ref:`Vector3i<class_Vector3i>` **window_get_safe_title_margins**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_safe_title_margins>`
 
-Restituisce i margini sinistri (``x``), i margini destri (``y``) e l'altezza (``z``) del titolo che sono sicuri da usare (non contengono pulsanti o altri elementi) quando è impostato il flag :ref:`WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>`.
+Restituisce i margini sinistri (\ ``x``), i margini destri (\ ``y``) e l'altezza (\ ``z``) del titolo che sono sicuri da usare (non contengono pulsanti o altri elementi) quando è impostato il flag :ref:`WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7175,11 +7309,13 @@ Sposta la finestra specificata da ``window_id`` nello schermo ``screen``. Vedi a
 
 |void| **window_set_drop_files_callback**\ (\ callback\: :ref:`Callable<class_Callable>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_drop_files_callback>`
 
-Imposta il ``callback`` che deve essere richiamato quando i file vengono eliminati dal gestore di file del sistema operativo alla finestra specificata da ``window_id``. ``callback`` deve accettare un argomento :ref:`PackedStringArray<class_PackedStringArray>`, che è la lista dei file eliminati.
+Sets the ``callback`` that should be called when files are dropped from the operating system's file manager to the window specified by ``window_id``. ``callback`` should take one :ref:`PackedStringArray<class_PackedStringArray>` argument, which is the list of dropped files.
 
-\ **Attenzione:** Solo per utenti avanzati! L'aggiunta di tale callback a un nodo :ref:`Window<class_Window>` sovrascriverà la sua implementazione predefinita, il che può introdurre bug.
+\ **Warning:** Advanced users only! Adding such a callback to a :ref:`Window<class_Window>` node will override its default implementation, which can introduce bugs.
 
-\ **Nota:** Questo metodo è implementato su Windows, macOS, Linux (X11/Wayland) e Web.
+\ **Note:** This method is implemented on Windows, macOS, Linux (X11/Wayland), and Web.
+
+\ **Note:** On the web platform, the files are dropped to a temporary folder and will be removed automatically after the callback.
 
 .. rst-class:: classref-item-separator
 
@@ -7281,6 +7417,20 @@ Imposta la posizione del popup `Input Method Editor <https://en.wikipedia.org/wi
 
 ----
 
+.. _class_DisplayServer_method_window_set_ime_rect:
+
+.. rst-class:: classref-method
+
+|void| **window_set_ime_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_ime_rect>`
+
+Sets a rectangle which should not be obstructed by the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ popup for the specified ``window_id``. Only effective if :ref:`window_set_ime_active()<class_DisplayServer_method_window_set_ime_active>` was set to ``true`` for the specified ``window_id``.
+
+\ **Note:** This method is implemented only on Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DisplayServer_method_window_set_input_event_callback:
 
 .. rst-class:: classref-method
@@ -7365,40 +7515,40 @@ Imposta la modalità di finestra per la finestra specificata su ``mode``.
 
 |void| **window_set_mouse_passthrough**\ (\ region\: :ref:`PackedVector2Array<class_PackedVector2Array>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_mouse_passthrough>`
 
-Imposta una regione poligonale della finestra che accetta eventi dal mouse. Gli eventi dal mouse al di fuori della regione passeranno attraverso (passthrough).
+Sets a polygonal region of the window which accepts mouse events. Mouse events outside the region will be passed through.
 
-Impostando un array vuoto il supporto per il passthrough verrà disabilitato (tutti gli eventi del mouse saranno intercettati dalla finestra, il che è il comportamento predefinito).
+Passing an empty array will disable passthrough support (all mouse events will be intercepted by the window, which is the default behavior).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Imposta la regione, usando il nodo Path2D.
+    # Set region, using Path2D node.
     DisplayServer.window_set_mouse_passthrough($Path2D.curve.get_baked_points())
 
-    # Imposta la regione, usando il nodo Polygon2D.
+    # Set region, using Polygon2D node.
     DisplayServer.window_set_mouse_passthrough($Polygon2D.polygon)
 
-    # Reimposta la regione sul valore predefinito.
+    # Reset region to default.
     DisplayServer.window_set_mouse_passthrough([])
 
  .. code-tab:: csharp
 
-    // Imposta la regione, usando il nodo Path2D.
+    // Set region, using Path2D node.
     DisplayServer.WindowSetMousePassthrough(GetNode<Path2D>("Path2D").Curve.GetBakedPoints());
 
-    // Imposta la regione, usando il nodo Polygon2D.
+    // Set region, using Polygon2D node.
     DisplayServer.WindowSetMousePassthrough(GetNode<Polygon2D>("Polygon2D").Polygon);
 
-    // Reimposta la regione sul valore predefinito.
-    DisplayServer.WindowSetMousePassthrough(new Vector2[] {});
+    // Reset region to default.
+    DisplayServer.WindowSetMousePassthrough([]);
 
 
 
-\ **Nota:** Su Windows, la parte di una finestra che si trova all'esterno della regione non è disegnata, mentre su Linux (X11) e macOS lo è.
+\ **Note:** On Windows, the portion of a window that lies outside the region is not drawn, while on Linux (X11) and macOS it is.
 
-\ **Nota:** Questo metodo è implementato su Linux (X11), macOS e Windows.
+\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -7422,22 +7572,22 @@ Imposta il riquadro di delimitazione del controllo o della voce di menu utilizza
 
 |void| **window_set_position**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_position>`
 
-Imposta la posizione della finestra specificata su ``position``. Nelle configurazioni multi-monitor, la posizione dello schermo è relativa all'area del desktop virtuale. Nelle configurazioni multi-monitor con diverse risoluzioni o orientamenti dello schermo, l'origine può essere posizionata all'esterno di qualsiasi display in questo modo:
+Sets the position of the given window to ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area. On multi-monitor setups with different screen resolutions or orientations, the origin may be located outside any display like this:
 
 .. code:: text
 
-    * (0, 0)        +-------+
-                    |       |
-    +-------------+ |       |
-    |             | |       |
-    |             | |       |
-    +-------------+ +-------+
+    * (0, 0)        ┌───────┐
+                    │       │
+    ┌─────────────┐ │       │
+    │             │ │       │
+    │             │ │       │
+    └─────────────┘ └───────┘
 
-Vedi anche :ref:`window_get_position()<class_DisplayServer_method_window_get_position>` e :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`.
+See also :ref:`window_get_position()<class_DisplayServer_method_window_get_position>` and :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`.
 
-\ **Nota:** Si consiglia di modificare questo valore utilizzando invece :ref:`Window.position<class_Window_property_position>`.
+\ **Note:** It's recommended to change this value using :ref:`Window.position<class_Window_property_position>` instead.
 
-\ **Nota:** Su Linux (Wayland): questo metodo è un no-op.
+\ **Note:** On Linux (Wayland): this method is a no-op.
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,7 @@ Marker3D
 Описание
 ----------------
 
-Общая подсказка положения 3D для редактирования. Это как обычный :ref:`Node3D<class_Node3D>`, но он всегда отображается в виде крестика в 3D-редакторе.
+Generic 3D position hint for editing. This is like a plain :ref:`Node3D<class_Node3D>`, but it displays as a cross in the 3D editor.
 
 .. rst-class:: classref-reftable-group
 

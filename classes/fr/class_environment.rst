@@ -2214,7 +2214,7 @@ La densité *exponentielle* de base du brouillard volumétrique. Définissez cec
 
 Une valeur de ``0.0`` désactive le brouillard volumétrique global tout en permettant à des :ref:`FogVolume<class_FogVolume>`\ s d'afficher du brouillard volumétrique dans des zones spécifiques.
 
-Pour que le brouillard volumétrique fonctionne comme une solution d'*éclairage* volumique, définissez :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` à la valeur non nulle la plus basse (``0.0001``) puis augmentez la valeur des :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` des lumières à des valeurs entre ``10000`` et ``100000`` pour compenser la très faible densité.
+Pour que le brouillard volumétrique fonctionne comme une solution d'*éclairage* volumique, définissez :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` à la valeur non nulle la plus basse (\ ``0.0001``) puis augmentez la valeur des :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` des lumières à des valeurs entre ``10000`` et ``100000`` pour compenser la très faible densité.
 
 .. rst-class:: classref-item-separator
 

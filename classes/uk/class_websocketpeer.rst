@@ -208,11 +208,15 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 - |void| **set_handshake_headers**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_handshake_headers**\ (\ )
 
-Додаткові заголовки HTTP, які будуть відправлені під час роботи WebSocket.
+The extra HTTP headers to be sent during the WebSocket handshake.
 
-\ **Примітка:** Не підтримується в Інтернет-експорту через обмеження браузера.
+\ **Note:** Not supported in Web exports due to browser restrictions.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +305,11 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 
 Під-протоколи WebSocket допускаються під час роботи з WebSocket.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 
@@ -318,9 +326,9 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`\ ) :ref:`🔗<class_WebSocketPeer_method_accept_stream>`
 
-Приймає з'єднання, що виконує HTTP-підказку як сервер WebSocket. ``stream`` повинен бути дійсним TCP потік, отриманий через :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>`, або потік TLS, прийнятий через :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>`.
+Accepts a peer connection performing the HTTP handshake as a WebSocket server. The ``stream`` must be a valid TCP stream retrieved via :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>`, or a TLS stream accepted via :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>`.
 
-\ **Note:** Не підтримується в Інтернет-експортах з урахуванням обмежень браузера.
+\ **Note:** Not supported in Web exports due to browser restrictions.
 
 .. rst-class:: classref-item-separator
 

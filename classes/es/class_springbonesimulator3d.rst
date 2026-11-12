@@ -824,9 +824,9 @@ Devuelve ``true`` si el hueso final se extiende para tener una cola.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_reset>`
 
-Restablece un estado de simulación con respecto a la pose actual del hueso.
+Resets a simulating state with respect to the current bone pose.
 
-Es útil para evitar que el resultado de la simulación se vuelva violento. Por ejemplo, llamar a esto inmediatamente después de una llamada a :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` sin un desvanecimiento, o dentro de la anterior :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` señal si su condición cambia significativamente.
+It is useful to prevent the simulation result getting violent. For example, calling this immediately after a call to :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` without a fading, or within the previous :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` signal if its condition changes significantly.
 
 .. rst-class:: classref-item-separator
 

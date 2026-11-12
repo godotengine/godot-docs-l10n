@@ -129,6 +129,8 @@ macOS 匯出器。
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`                                                                             |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`                                                                                 |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`display/high_res<class_EditorExportPlatformMacOS_property_display/high_res>`                                                                                                     |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`export/distribution_type<class_EditorExportPlatformMacOS_property_export/distribution_type>`                                                                                     |
@@ -594,7 +596,7 @@ App Store 的套用程式分類。
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-套用程式圖示檔。如果留空，則會退回至 :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`\ ，繼而退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +716,7 @@ macOS 26 Liquid Glass 圖示原始檔。使用 `Icon Composer <https://developer
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請檢查 Apple 開發者帳戶儀錶板中的“會員詳細資訊”部分，或程式碼簽章憑證的“組織單位”。見 `搜尋你的團隊 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +770,11 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 要額外傳給程式碼簽章工具的命令列參數的陣列。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +803,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/address_book** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/address_book>`
 
-啟用後允許存取使用者位址簿中的聯繫人，如果啟用，還應該在 :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` 選項中提供用途資訊。請參閱 `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__\ 。
+Enable to allow access to contacts in the user's address book, if it's enabled you should also provide a usage message in the :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` option. See `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +949,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`Array<class_Array>` **codesign/entitlements/app_sandbox/helper_executables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/helper_executables>`
 
-要嵌入套用組合包的輔助可執行檔列表。沙盒套用僅限於執行這些可執行檔。見 `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__\ 。
+List of helper executables to be embedded in the app bundle. Sandboxed apps are limited to execute only these executables. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +997,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/audio_input** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/audio_input>`
 
-需要使用麥克風或其他音訊輸入源時啟用，啟用時還應在 :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` 選項中提供用途資訊。請參閱 `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__\ 。
+Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide a usage message in the :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` option. See `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1003,7 +1009,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/calendars** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/calendars>`
 
-啟用後允許存取使用者的日曆，啟用時還應在 :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` 選項中提供用途資訊。請參閱 `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__\ 。
+Enable to allow access to the user's calendar, if it's enabled you should also provide a usage message in the :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` option. See `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1021,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/camera** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/camera>`
 
-需要使用相機時啟用，啟用時還應在 :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` 選項中提供用途資訊。請參閱 `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__\ 。
+Enable if you need to use the camera, if it's enabled you should also provide a usage message in the :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` option. See `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1033,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-自訂權利 ``.plist`` 檔，如果指定，則會忽略匯出配置中的其他權利。
+Custom entitlements ``.plist`` file, if specified the rest of the entitlements in the export config are ignored.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1069,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/location** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/location>`
 
-需要使用位置服務中的位置資訊時啟用，啟用時還應在 :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` 選項中提供用途資訊。請參閱 `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__\ 。
+Enable if you need to use location information from Location Services, if it's enabled you should also provide a usage message in the :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` option. See `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1081,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **codesign/entitlements/photos_library** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/photos_library>`
 
-啟用後允許存取使用者的照片庫，啟用時還應在 :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` 選項中提供用途訊息。請參閱 `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__\ 。
+Enable to allow access to the user's Photos library, if it's enabled you should also provide a usage message in the :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` option. See `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1093,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-用於對 ``.app`` 組合包進行簽章的簽章身份的“全名”“通用名”或 SHA-1 雜湊。
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1105,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **codesign/installer_identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/installer_identity>`
 
-用於對通過 App Store 分發的 ``.pkg`` 安裝器進行簽章的簽章身份的“全名”“通用名”或 SHA-1 雜湊，使用 ``3rd Party Mac Developer Installer: Name.`` 身份。
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.pkg`` installer package for App Store distribution, use ``3rd Party Mac Developer Installer: Name.`` identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1150,6 +1156,22 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`
 
 啟用後，會在匯出後的套用程式旁建立一個封裝程式，可以用來以帶命令行輸出的形式運作該套用程式。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformMacOS_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol bundle (\ ``.dSYM``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols bundle. This bundle must have the same name as the export template archive and an additional ``.dSYM`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.dSYM.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 
@@ -1771,7 +1793,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collected>`
 
-表示你的應用是否會收集電子郵件位址。
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1783,7 +1805,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-你的應用程式收集電子郵件位址的原因。請參閱 `描述隱私清單中的資料使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1817,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-表示你的應用是否會將電子郵件位址連結到使用者的身份。
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1829,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-表示你的應用是否會將電子郵件位址用於追蹤。
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2587,7 +2609,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collected>`
 
-表示你的應用是否會收集電話號碼。
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2621,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-你的應用程式收集電話號碼的原因。請參閱 `描述隱私清單中的資料使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2633,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-表示你的應用是否會將電話號碼連結到使用者的身份。
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2645,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-表示你的應用是否會將電話號碼用於追蹤。
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2695,7 +2717,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-你的應用收集實際住址的原因。見\ `《在隱私清單中描述資料用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2707,7 +2729,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-表示你的應用是否會將實際住址連結到使用者的身份。
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2719,7 +2741,7 @@ Apple ID 針對套用的密碼。
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-表示你的應用是否會將實際住址用於追蹤。
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3213,7 +3235,11 @@ Apple ID 針對套用的密碼。
 
 你的應用程式連接到的參與追蹤的互連網域清單。請參閱 `隱私清單檔案 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,9 @@ Décrit le mouvement et la collision résultant de :ref:`PhysicsServer3D.body_te
 Description
 -----------
 
-Décrit le mouvement et la collision résultant de :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+Describes the motion and collision result from :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

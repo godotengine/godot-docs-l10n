@@ -14,9 +14,13 @@ CodeEdit
 Опис
 --------
 
-CodeEdit — це спеціалізований :ref:`TextEdit<class_TextEdit>`, призначений для редагування файлів звичайного текстового коду. Він має багато функцій, які зазвичай зустрічаються в редакторах коду, наприклад номери рядків, згортання рядків, завершення коду, керування відступами та керування рядками/коментарями.
+CodeEdit is a specialized :ref:`TextEdit<class_TextEdit>` designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.
 
-\ **Примітка:** Незалежно від мови **CodeEdit** за замовчуванням завжди використовуватиме напрямок тексту зліва направо для правильного відображення вихідного коду.
+\ **Note:** Regardless of locale, **CodeEdit** will by default always use left-to-right text direction to correctly display source code.
+
+.. classref_note::
+
+    Being a subclass of :ref:`TextEdit<class_TextEdit>`, line and column numbers are *zero-based*, like elements of an array. For example, the first line of text can be retrieved by ``get_line(0)``, the second line by ``get_line(1)``, and so on.
 
 .. rst-class:: classref-reftable-group
 

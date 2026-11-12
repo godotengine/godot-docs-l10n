@@ -18,7 +18,7 @@ Certaines méthodes de chaîne ont des variations correspondantes. ``n`` (:ref:`
 
 Pour convertir tout :ref:`Variant<class_Variant>` en ou à partir d'une chaîne, voir :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>`, :ref:`@GlobalScope.str_to_var()<class_@GlobalScope_method_str_to_var>`, et :ref:`@GlobalScope.var_to_str()<class_@GlobalScope_method_var_to_str>`.
 
-\ **Note :** Dans un contexte booléen, une chaîne s’évaluera à ``false`` si elle est vide (``"``). Sinon, une chaîne s’évaluera toujours à ``true``.
+\ **Note :** Dans un contexte booléen, une chaîne s’évaluera à ``false`` si elle est vide (\ ``"``). Sinon, une chaîne s’évaluera toujours à ``true``.
 
 .. note::
 
@@ -340,7 +340,7 @@ Descriptions des constructeurs
 
 :ref:`String<class_String>` **String**\ (\ ) :ref:`🔗<class_String_constructor_String>`
 
-Construit une chaîne **String** vide (``""``).
+Construit une chaîne **String** vide (\ ``""``).
 
 .. rst-class:: classref-item-separator
 
@@ -456,9 +456,9 @@ Renvoie une copie de la chaîne de caractères avec les caractères spéciaux é
 
 :ref:`String<class_String>` **c_unescape**\ (\ ) |const| :ref:`🔗<class_String_method_c_unescape>`
 
-Renvoie une copie de la chaîne avec les caractères d'échappement remplacés par leurs significations. Les caractères d'échappement supportés sont : ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
+Returns a copy of the string with escaped characters replaced by their meanings. Supported escape sequences are ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
 
-\ **Note :** Contrairement au parseur GDScript, cette méthode ne supporte pas la séquence d'échappement de caractères Unicode ``\uXXXX``.
+\ **Note:** Unlike the GDScript parser, this method doesn't support the ``\uXXXX`` escape sequence.
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Renvoie une copie de la chaîne avec les caractères d'échappement remplacés p
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
+Returns a copy of the string with changed appearance. Replaces underscores (\ ``_``) and hyphens (\ ``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
 
 
 .. tabs::
@@ -640,7 +640,7 @@ Renvoie une chaîne avec les ``chars`` premiers caractères effacés à partir d
 
 :ref:`int<class_int>` **filecasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_filecasecmp_to>`
 
-Comme :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>` mais priorise les chaînes commençant par des points (``.``) et des tirets bas (``_``)) avant tout autre caractère. Utile lors du tri des dossiers ou des noms de fichiers.
+Comme :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>` mais priorise les chaînes commençant par des points (\ ``.``) et des tirets bas (\ ``_``)) avant tout autre caractère. Utile lors du tri des dossiers ou des noms de fichiers.
 
 Pour obtenir un résultat booléen :ref:`bool<class_bool>` d’une comparaison de chaîne, utilisez plutôt l’opérateur ``=``. Voir aussi :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>`, :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>`, et :ref:`casecmp_to()<class_String_method_casecmp_to>`.
 
@@ -654,7 +654,7 @@ Pour obtenir un résultat booléen :ref:`bool<class_bool>` d’une comparaison d
 
 :ref:`int<class_int>` **filenocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_filenocasecmp_to>`
 
-Comme :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>` mais priorise les chaînes commençant par des points (``.``) et des tirets bas (``_``)) avant tout autre caractère. Utile lors du tri des dossiers ou des noms de fichiers.
+Comme :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>` mais priorise les chaînes commençant par des points (\ ``.``) et des tirets bas (\ ``_``)) avant tout autre caractère. Utile lors du tri des dossiers ou des noms de fichiers.
 
 Pour obtenir un résultat booléen :ref:`bool<class_bool>` d’une comparaison de chaîne, utilisez plutôt l’opérateur ``=``. Voir aussi :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>`, :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, et :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`.
 
@@ -801,7 +801,7 @@ Si la chaîne est un chemin de fichier valide, renvoie le chemin de fichier comp
 
 :ref:`String<class_String>` **get_extension**\ (\ ) |const| :ref:`🔗<class_String_method_get_extension>`
 
-Si la chaîne est un nom ou un chemin de fichier valide, renvoie l'extension de fichier sans le point du début (``.``). Sinon, renvoie une chaîne vide.
+Si la chaîne est un nom ou un chemin de fichier valide, renvoie l'extension de fichier sans le point du début (\ ``.``). Sinon, renvoie une chaîne vide.
 
 ::
 
@@ -978,9 +978,9 @@ Le résultat est au `format de préfixe CEI <https://fr.wikipedia.org/wiki/Pr%C3
 
 :ref:`String<class_String>` **indent**\ (\ prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_indent>`
 
-Indente chaque ligne de la chaîne avec le préfixe ``prefix`` donné. Les lignes vides ne sont pas indentées. Voir aussi :ref:`dedent()<class_String_method_dedent>` pour supprimer l'indentation.
+Indents every line of the string with the given ``prefix``. Empty lines are not indented. See also :ref:`dedent()<class_String_method_dedent>` to remove indentation.
 
-Par exemple, la chaîne peut être indentée avec deux tabulations en utilisant ``"\t\t"``, ou quatre espaces utilisant ``"    "``.
+For example, the string can be indented with two tabulations using ``"\t\t"``, or four spaces using ``"    "``.
 
 .. rst-class:: classref-item-separator
 
@@ -1018,7 +1018,7 @@ Cela inclut tous les chemins commençant par ``"res://"``, ``"user://"``, ``"C:\
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_String_method_is_empty>`
 
-Renvoie ``true`` si la longueur de la chaîne est de ``0`` (``""``). Voir aussi :ref:`length()<class_String_method_length>`.
+Renvoie ``true`` si la longueur de la chaîne est de ``0`` (\ ``""``). Voir aussi :ref:`length()<class_String_method_length>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Renvoie ``true`` si tous les caractères de cette chaîne peuvent être trouvés
 
 :ref:`bool<class_bool>` **is_valid_ascii_identifier**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_ascii_identifier>`
 
-Renvoie ``true`` si cette chaîne est un identifiant ASCII valide. Un identifiant ASCII valide ne peut contenir que des lettres, des chiffres et des tirets bas (``_``) et le premier caractère ne peut pas être un chiffre.
+Renvoie ``true`` si cette chaîne est un identifiant ASCII valide. Un identifiant ASCII valide ne peut contenir que des lettres, des chiffres et des tirets bas (\ ``_``) et le premier caractère ne peut pas être un chiffre.
 
 ::
 
@@ -1096,7 +1096,7 @@ Voir aussi :ref:`is_valid_unicode_identifier()<class_String_method_is_valid_unic
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_filename>`
 
-Renvoie ``true`` si cette chaîne est un nom de fichier valide. Un nom de fichier valide ne peut pas être vide, commencer ou finir avec des espaces, ou contenir des caractères qui ne sont pas autorisés (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+Renvoie ``true`` si cette chaîne est un nom de fichier valide. Un nom de fichier valide ne peut pas être vide, commencer ou finir avec des espaces, ou contenir des caractères qui ne sont pas autorisés (\ ``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
 
 .. rst-class:: classref-item-separator
 
@@ -1108,7 +1108,7 @@ Renvoie ``true`` si cette chaîne est un nom de fichier valide. Un nom de fichie
 
 :ref:`bool<class_bool>` **is_valid_float**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_float>`
 
-Renvoie ``true`` si cette chaîne représente un nombre à virgule flottante valide. Un flottant valide ne peut contenir que des chiffres, un point décimal (``.``), et la lettre d'exposant (``e``). Il peut également être préfixé avec un signe positif (``+``) ou négatif (``-``). Tout entier valide est également un flottant valide (voir :ref:`is_valid_int()<class_String_method_is_valid_int>`). Voir aussi :ref:`to_float()<class_String_method_to_float>`.
+Renvoie ``true`` si cette chaîne représente un nombre à virgule flottante valide. Un flottant valide ne peut contenir que des chiffres, un point décimal (\ ``.``), et la lettre d'exposant (\ ``e``). Il peut également être préfixé avec un signe positif (\ ``+``) ou négatif (\ ``-``). Tout entier valide est également un flottant valide (voir :ref:`is_valid_int()<class_String_method_is_valid_int>`). Voir aussi :ref:`to_float()<class_String_method_to_float>`.
 
 ::
 
@@ -1127,7 +1127,7 @@ Renvoie ``true`` si cette chaîne représente un nombre à virgule flottante val
 
 :ref:`bool<class_bool>` **is_valid_hex_number**\ (\ with_prefix\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_String_method_is_valid_hex_number>`
 
-Renvoie ``true`` si cette chaîne est un nombre hexadécimal valide. Un nombre hexadécimal valide ne contient que des chiffres ou des lettres de ``A`` à ``F`` (en majuscule ou minuscule), et peut être préfixé avec un signe positif (``+``) ou négatif (``-``).
+Renvoie ``true`` si cette chaîne est un nombre hexadécimal valide. Un nombre hexadécimal valide ne contient que des chiffres ou des lettres de ``A`` à ``F`` (en majuscule ou minuscule), et peut être préfixé avec un signe positif (\ ``+``) ou négatif (\ ``-``).
 
 Si ``with_prefix`` vaut ``true``, le nombre hexadécimal doit être préfixé par ``"0x"`` pour être considéré valide.
 
@@ -1149,7 +1149,7 @@ Si ``with_prefix`` vaut ``true``, le nombre hexadécimal doit être préfixé pa
 
 :ref:`bool<class_bool>` **is_valid_html_color**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_html_color>`
 
-Renvoie ``true`` si cette chaîne est une couleur valide dans la notation HTML hexadécimale. La chaîne doit être une valeur hexadécimale (voir :ref:`is_valid_hex_number()<class_String_method_is_valid_hex_number>`) de 3, 4, 6 ou 8 chiffres, et peut être préfixée par un signe de croisillon (``#``). D'autres notations HTML pour les couleurs, telles que les noms ou ``hsl()``, ne sont pas considérées valides. Voir aussi :ref:`Color.html()<class_Color_method_html>`.
+Renvoie ``true`` si cette chaîne est une couleur valide dans la notation HTML hexadécimale. La chaîne doit être une valeur hexadécimale (voir :ref:`is_valid_hex_number()<class_String_method_is_valid_hex_number>`) de 3, 4, 6 ou 8 chiffres, et peut être préfixée par un signe de croisillon (\ ``#``). D'autres notations HTML pour les couleurs, telles que les noms ou ``hsl()``, ne sont pas considérées valides. Voir aussi :ref:`Color.html()<class_Color_method_html>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1163,7 +1163,7 @@ Renvoie ``true`` si cette chaîne est une couleur valide dans la notation HTML h
 
 **Obsolète :** Use :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_identifier>` instead.
 
-Renvoie ``true`` si cette chaîne est un identifiant valide. Un identifiant valide ne peut contenir que des lettres, des chiffres et des tirets du bas (``_``), et le premier caractère ne peut pas être un chiffre.
+Renvoie ``true`` si cette chaîne est un identifiant valide. Un identifiant valide ne peut contenir que des lettres, des chiffres et des tirets du bas (\ ``_``), et le premier caractère ne peut pas être un chiffre.
 
 ::
 
@@ -1182,7 +1182,7 @@ Renvoie ``true`` si cette chaîne est un identifiant valide. Un identifiant vali
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_int>`
 
-Renvoie ``true`` si cette chaîne représente un entier valide. Un entier valide ne contient que des chiffres et peut être préfixé avec un signe positif (``+``) ou négatif (``-``). Voir aussi :ref:`to_int()<class_String_method_to_int>`.
+Renvoie ``true`` si cette chaîne représente un entier valide. Un entier valide ne contient que des chiffres et peut être préfixé avec un signe positif (\ ``+``) ou négatif (\ ``-``). Voir aussi :ref:`to_int()<class_String_method_to_int>`.
 
 ::
 
@@ -1302,7 +1302,7 @@ Renvoie les ``length`` premiers caractères du début de la chaîne. Si ``length
 
 :ref:`int<class_int>` **length**\ (\ ) |const| :ref:`🔗<class_String_method_length>`
 
-Renvoie le nombre de caractères dans la chaîne. Les chaînes vides (``"``) renvoient toujours ``0``. Voir aussi :ref:`is_empty()<class_String_method_is_empty>`.
+Renvoie le nombre de caractères dans la chaîne. Les chaînes vides (\ ``"``) renvoient toujours ``0``. Voir aussi :ref:`is_empty()<class_String_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1340,7 +1340,7 @@ Retire un ensemble de caractères définis dans ``chars`` du début de la chaîn
 
 :ref:`bool<class_bool>` **match**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_match>`
 
-Fait une correspondance simple de l'expression (aussi appelé "glob" ou "globbing"), où ``*`` correspond à 0 ou plus caractères arbitraires, et ``?`` correspond à n'importe quel caractère unique sauf un point (``.``). Une chaîne ou expression vide est toujours évaluée à ``false``.
+Fait une correspondance simple de l'expression (aussi appelé "glob" ou "globbing"), où ``*`` correspond à 0 ou plus caractères arbitraires, et ``?`` correspond à n'importe quel caractère unique sauf un point (\ ``.``). Une chaîne ou expression vide est toujours évaluée à ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1352,7 +1352,7 @@ Fait une correspondance simple de l'expression (aussi appelé "glob" ou "globbin
 
 :ref:`bool<class_bool>` **matchn**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_matchn>`
 
-Fait une correspondance simple **sensible à la casse** de l'expression, où ``*`` correspond à 0 ou plus caractères arbitraires, et ``?`` correspond à n'importe quel caractère unique sauf un point (``.``). Une chaîne ou expression vide est toujours évaluée à ``false``.
+Fait une correspondance simple **sensible à la casse** de l'expression, où ``*`` correspond à 0 ou plus caractères arbitraires, et ``?`` correspond à n'importe quel caractère unique sauf un point (\ ``.``). Une chaîne ou expression vide est toujours évaluée à ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1472,7 @@ Les zéros de fin ne sont pas inclus dans la chaîne. Le dernier chiffre est arr
 
 Convertit le nombre ``number`` donné en une représentation en chaîne, avec la ``base`` donnée.
 
-Par défaut, ``base`` est définie en décimal (``10``). D'autres bases communes en programmation sont par exemple le binaire (``2``), l'`octal <https://fr.wikipedia.org/wiki/Syst%C3%A8me_octal>`__ (``8``), et l'hexadécimal (``16``).
+Par défaut, ``base`` est définie en décimal (\ ``10``). D'autres bases communes en programmation sont par exemple le binaire (\ ``2``), l'`octal <https://fr.wikipedia.org/wiki/Syst%C3%A8me_octal>`__ (\ ``8``), et l'hexadécimal (\ ``16``).
 
 Si ``capitalize_hex`` vaut ``true``, les chiffres supérieurs à 9 sont représentés en majuscules.
 
@@ -1521,7 +1521,7 @@ Convertit le nombre ``number`` donné en une représentation en chaîne, en nota
 
 Convertit le :ref:`int<class_int>` non signé donné en une représentation en chaîne, avec la ``base`` donnée.
 
-Par défaut, ``base`` est définie en décimal (``10``). D'autres bases communes en programmation sont par exemple le binaire (``2``), l'`octal <https://fr.wikipedia.org/wiki/Syst%C3%A8me_octal>`__ (``8``), et l'hexadécimal (``16``).
+Par défaut, ``base`` est définie en décimal (\ ``10``). D'autres bases communes en programmation sont par exemple le binaire (\ ``2``), l'`octal <https://fr.wikipedia.org/wiki/Syst%C3%A8me_octal>`__ (\ ``8``), et l'hexadécimal (\ ``16``).
 
 Si ``capitalize_hex`` vaut ``true``, les chiffres supérieurs à 9 sont représentés en majuscules.
 
@@ -1919,9 +1919,9 @@ Si ``allow_empty`` vaut ``false``, les conversions de :ref:`float<class_float>` 
 
 :ref:`String<class_String>` **strip_edges**\ (\ left\: :ref:`bool<class_bool>` = true, right\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_String_method_strip_edges>`
 
-Retire tous les caractères non-imprimables du début et de la fin de la chaîne. Il s'agit d'espaces, de tabulations (``\t``), et de caractères de nouvelle ligne (``\n`` ``\r``).
+Strips all non-printable characters from the beginning and the end of the string. These include spaces, tabulations (\ ``\t``), and newlines (\ ``\n`` ``\r``).
 
-Si ``left`` vaut ``false``, ignore le début de la chaîne. De même, si ``right`` vaut ``false``, ignore la fin de la chaîne.
+If ``left`` is ``false``, ignores the string's beginning. Likewise, if ``right`` is ``false``, ignores the string's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1933,7 +1933,7 @@ Si ``left`` vaut ``false``, ignore le début de la chaîne. De même, si ``right
 
 :ref:`String<class_String>` **strip_escapes**\ (\ ) |const| :ref:`🔗<class_String_method_strip_escapes>`
 
-Retire tous les caractères d'échappement de la chaîne. Il s'agit de tous les caractères de contrôle non-imprimables de la première page de la table ASCII (valeurs de 0 à 31), tels que les tabulations (``\t``) et les caractères de nouvelle ligne (``\n``, ``\r``), mais *pas* les espaces.
+Strips all escape characters from the string. These include all non-printable control characters of the first page of the ASCII table (values from 0 to 31), such as tabulation (\ ``\t``) and newline (\ ``\n``, ``\r``) characters, but *not* spaces.
 
 .. rst-class:: classref-item-separator
 
@@ -2172,7 +2172,7 @@ Convertit la chaîne en un tableau :ref:`PackedByteArray<class_PackedByteArray>`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer**\ (\ ) |const| :ref:`🔗<class_String_method_to_wchar_buffer>`
 
-Convertit la chaîne de caractères en un :ref:`PackedByteArray<class_PackedByteArray>` encodé en `caractères larges <https://en.wikipedia.org/wiki/Wide_character>`__ (``wchar_t``, UTF-16 sur Windows, UTF-32 sur les autres plates-formes). C'est l'inverse de :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
+Convertit la chaîne de caractères en un :ref:`PackedByteArray<class_PackedByteArray>` encodé en `caractères larges <https://en.wikipedia.org/wiki/Wide_character>`__ (\ ``wchar_t``, UTF-16 sur Windows, UTF-32 sur les autres plates-formes). C'est l'inverse de :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2306,7 +2306,7 @@ Renvoie une copie de la chaîne avec tous les caractères qui ne sont pas autori
 
 :ref:`String<class_String>` **validate_node_name**\ (\ ) |const| :ref:`🔗<class_String_method_validate_node_name>`
 
-Renvoie une copie de la chaîne avec tous les caractères qui ne sont pas autorisés dans :ref:`Node.name<class_Node_property_name>` (``.`` ``:`` ``@`` ``/`` ``"`` ``%``) remplacés par des tirets du bas.
+Renvoie une copie de la chaîne avec tous les caractères qui ne sont pas autorisés dans :ref:`Node.name<class_Node_property_name>` (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``) remplacés par des tirets du bas.
 
 .. rst-class:: classref-item-separator
 
@@ -2318,7 +2318,7 @@ Renvoie une copie de la chaîne avec tous les caractères qui ne sont pas autori
 
 :ref:`String<class_String>` **xml_escape**\ (\ escape_quotes\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_String_method_xml_escape>`
 
-Renvoie une copie de la chaîne avec les caractères spéciaux échappés en utilisant la norme XML. Si ``escape_quotes`` vaut ``true``, les caractères de guillemet simples (``'``) et doubles (``"``) sont également échappés.
+Renvoie une copie de la chaîne avec les caractères spéciaux échappés en utilisant la norme XML. Si ``escape_quotes`` vaut ``true``, les caractères de guillemet simples (\ ``'``) et doubles (\ ``"``) sont également échappés.
 
 .. rst-class:: classref-item-separator
 

@@ -432,15 +432,15 @@ Callable
 
 :ref:`bool<class_bool>` **is_custom**\ (\ ) |const| :ref:`🔗<class_Callable_method_is_custom>`
 
-Возвращает ``true``, если этот **Callable** является пользовательским вызываемым. Пользовательские вызываемые используются:
+Returns ``true`` if this **Callable** is a custom callable. Custom callables are used:
 
-- для привязки/отмены привязки аргументов (см. :ref:`bind()<class_Callable_method_bind>` и :ref:`unbind()<class_Callable_method_unbind>`);
+- for binding/unbinding arguments (see :ref:`bind()<class_Callable_method_bind>` and :ref:`unbind()<class_Callable_method_unbind>`);
 
-- для представления методов встроенных типов :ref:`Variant<class_Variant>` (см. :ref:`create()<class_Callable_method_create>`);
+- for representing methods of built-in :ref:`Variant<class_Variant>` types (see :ref:`create()<class_Callable_method_create>`);
 
-- для представления глобальных, лямбда-функций и функций RPC в GDScript;
+- for representing global and lambda functions in GDScript;
 
-- для других целей в ядре, GDExtension и C#.
+- for other purposes in the core, GDExtension, and C#.
 
 .. rst-class:: classref-item-separator
 

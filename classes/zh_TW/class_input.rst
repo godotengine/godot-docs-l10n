@@ -80,6 +80,8 @@ Input
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`CursorShape<enum_Input_CursorShape>`                              | :ref:`get_current_cursor_shape<class_Input_method_get_current_cursor_shape>`\ (\ ) |const|                                                                                                                                                                                                                          |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Quaternion<class_Quaternion>`                                     | :ref:`get_device_orientation<class_Input_method_get_device_orientation>`\ (\ ) |const|                                                                                                                                                                                                                              |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector3<class_Vector3>`                                           | :ref:`get_gravity<class_Input_method_get_gravity>`\ (\ ) |const|                                                                                                                                                                                                                                                    |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector3<class_Vector3>`                                           | :ref:`get_gyroscope<class_Input_method_get_gyroscope>`\ (\ ) |const|                                                                                                                                                                                                                                                |
@@ -101,6 +103,14 @@ Input
    | :ref:`float<class_float>`                                               | :ref:`get_joy_motion_sensors_rate<class_Input_method_get_joy_motion_sensors_rate>`\ (\ device\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                    |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                             | :ref:`get_joy_name<class_Input_method_get_joy_name>`\ (\ device\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                          |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                   | :ref:`get_joy_num_touchpads<class_Input_method_get_joy_num_touchpads>`\ (\ device\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                           | :ref:`get_joy_touchpad_finger_position<class_Input_method_get_joy_touchpad_finger_position>`\ (\ device\: :ref:`int<class_int>`, finger\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const|                                                                                                    |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                               | :ref:`get_joy_touchpad_finger_pressure<class_Input_method_get_joy_touchpad_finger_pressure>`\ (\ device\: :ref:`int<class_int>`, finger\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const|                                                                                                    |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedInt32Array<class_PackedInt32Array>`                         | :ref:`get_joy_touchpad_fingers<class_Input_method_get_joy_touchpad_fingers>`\ (\ device\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const|                                                                                                                                                    |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                                               | :ref:`get_joy_vibration_duration<class_Input_method_get_joy_vibration_duration>`\ (\ device\: :ref:`int<class_int>`\ )                                                                                                                                                                                              |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -140,6 +150,8 @@ Input
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`is_joy_known<class_Input_method_is_joy_known>`\ (\ device\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                          |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                                 | :ref:`is_joy_motion_sensors_auto_calibration_enabled<class_Input_method_is_joy_motion_sensors_auto_calibration_enabled>`\ (\ device\: :ref:`int<class_int>`\ ) |const|                                                                                                                                              |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`is_joy_motion_sensors_calibrated<class_Input_method_is_joy_motion_sensors_calibrated>`\ (\ device\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                          |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`is_joy_motion_sensors_calibrating<class_Input_method_is_joy_motion_sensors_calibrating>`\ (\ device\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                        |
@@ -166,11 +178,15 @@ Input
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_default_cursor_shape<class_Input_method_set_default_cursor_shape>`\ (\ shape\: :ref:`CursorShape<enum_Input_CursorShape>` = 0\ )                                                                                                                                                                          |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                  | :ref:`set_device_orientation<class_Input_method_set_device_orientation>`\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )                                                                                                                                                                                         |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_gravity<class_Input_method_set_gravity>`\ (\ value\: :ref:`Vector3<class_Vector3>`\ )                                                                                                                                                                                                                     |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_gyroscope<class_Input_method_set_gyroscope>`\ (\ value\: :ref:`Vector3<class_Vector3>`\ )                                                                                                                                                                                                                 |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_joy_light<class_Input_method_set_joy_light>`\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ )                                                                                                                                                                                     |
+   +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                  | :ref:`set_joy_motion_sensors_auto_calibration_enabled<class_Input_method_set_joy_motion_sensors_auto_calibration_enabled>`\ (\ device\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ )                                                                                                                  |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_joy_motion_sensors_calibration<class_Input_method_set_joy_motion_sensors_calibration>`\ (\ device\: :ref:`int<class_int>`, calibration_info\: :ref:`Dictionary<class_Dictionary>`\ )                                                                                                                      |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -247,9 +263,11 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_CAPTURED** = ``2``
 
-捕獲滑鼠。滑鼠將被隱藏，其位置被鎖定在視窗管理器視窗的中心。
+Captures the mouse. The mouse will be hidden and its position locked at the center of the window manager's window.
 
-\ **注意：**\ 如果你想在這種模式下處理滑鼠的移動，則需要使用 :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>`\ 。
+\ **Note:** If you want to process the mouse's movement in this mode, you need to use :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>` or :ref:`InputEventMouseMotion.screen_relative<class_InputEventMouseMotion_property_screen_relative>`.
+
+\ **Note:** Even when captured, the mouse cursor is still able to press buttons if they overlap with the center of the window.
 
 .. _class_Input_constant_MOUSE_MODE_CONFINED:
 
@@ -532,11 +550,11 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 |void| **action_press**\ (\ action\: :ref:`StringName<class_StringName>`, strength\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Input_method_action_press>`
 
-這將類比按下指定的按鍵動作。
+Simulates pressing the specified input action.
 
-強度可以用於非布耳運算的動作，它的範圍在 0 到 1 之間，代表給定動作的力度。
+The ``strength`` can be used for non-boolean actions, it's ranged between ``0.0`` and ``1.0`` representing the intensity of the given action.
 
-\ **注意：**\ 這個方法不會引起任何 :ref:`Node._input()<class_Node_private_method__input>` 呼叫。它旨在與 :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` 和 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 一起使用。如果你想模擬 ``_input``\ ，請使用 :ref:`parse_input_event()<class_Input_method_parse_input_event>` 代替。
+\ **Note:** This method will not cause any :ref:`Node._input()<class_Node_private_method__input>` calls. It is intended to be used with :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` and :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>`. If you want to simulate ``_input``, use :ref:`parse_input_event()<class_Input_method_parse_input_event>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +566,7 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 |void| **action_release**\ (\ action\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Input_method_action_release>`
 
-如果已按下指定操作，那麼將釋放它。
+Releases the specified input action, if the action is currently pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -560,7 +578,9 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 |void| **add_joy_mapping**\ (\ mapping\: :ref:`String<class_String>`, update_existing\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Input_method_add_joy_mapping>`
 
-在對應資料庫中新增新的對應條目（SDL2 格式）。可選更新已連接的裝置。
+Adds a new joypad mapping entry (in SDL format) to the mapping database, and optionally updates the already connected devices.
+
+\ **Note:** See `SDL documentation <https://wiki.libsdl.org/SDL3/SDL_AddGamepadMapping#remarks>`__ for more information about the SDL controller mapping format.
 
 .. rst-class:: classref-item-separator
 
@@ -590,9 +610,9 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 |void| **flush_buffered_events**\ (\ ) :ref:`🔗<class_Input_method_flush_buffered_events>`
 
-將目前緩衝區內的所有輸入事件發送給遊戲迴圈。這些事件可能是由於累積輸入（\ :ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`\ ）或敏捷輸入更新（\ :ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`\ ）而被緩衝的結果。
+Sends all buffered input events to the game loop. These events may have been buffered as a result of accumulated input (:ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`) or agile input flushing (:ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`).
 
-引擎已經會在關鍵的執行點執行此操作，至少每影格一次。然而，在你想要精確控制事件處理時間的進階情況下，這可能是有用的。
+The engine will already do this itself at key execution points (at least once per frame). However, this can be useful in advanced cases where you want precise control over the timing of event handling.
 
 .. rst-class:: classref-item-separator
 
@@ -622,9 +642,9 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 :ref:`float<class_float>` **get_action_raw_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_get_action_raw_strength>`
 
-返回一個介於 0 和 1 之間的值，表示給定動作的原始強度，忽略動作的死區。在大多數情況下，應該改用 :ref:`get_action_strength()<class_Input_method_get_action_strength>`\ 。
+Returns a value between ``0.0`` and ``1.0`` representing the raw intensity of the given action, ignoring the action's deadzone. In most cases, you should use :ref:`get_action_strength()<class_Input_method_get_action_strength>` instead.
 
-如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 
@@ -636,9 +656,9 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_get_action_strength>`
 
-回傳一個介於 0 和 1 之間的值，表示給定動作的強度。例如，在遊戲控制器中，軸（模擬搖桿或 L2、R2 觸發器）離死區越遠，該值將越接近 1。如果動作被映射到一個如鍵盤一樣沒有軸的控制器時，回傳值將為 0 或 1。
+Returns a value between ``0.0`` and ``1.0`` representing the intensity of the given action. In a joypad, for example, the further away the axis (analog sticks or L2, R2 triggers) is from the dead zone, the closer the value will be to ``1.0``. If the action is mapped to a control that has no axis such as the keyboard, the value returned will be ``0.0`` or ``1.0``.
 
-如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 
@@ -650,9 +670,9 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 :ref:`float<class_float>` **get_axis**\ (\ negative_action\: :ref:`StringName<class_StringName>`, positive_action\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Input_method_get_axis>`
 
-通過指定兩個動作來取得軸的輸入，一個是負的，一個是正的。
+Returns axis input value by specifying two actions, one negative and one positive.
 
-這是 ``Input.get_action_strength("positive_action")-Input.get_action_strength("negative_action")`` 的簡寫。
+This is a shorthand for writing ``Input.get_action_strength("positive_action") - Input.get_action_strength("negative_action")``.
 
 .. rst-class:: classref-item-separator
 
@@ -679,6 +699,32 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 :ref:`CursorShape<enum_Input_CursorShape>` **get_current_cursor_shape**\ (\ ) |const| :ref:`🔗<class_Input_method_get_current_cursor_shape>`
 
 回傳目前指定的游標形狀。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Input_method_get_device_orientation:
+
+.. rst-class:: classref-method
+
+:ref:`Quaternion<class_Quaternion>` **get_device_orientation**\ (\ ) |const| :ref:`🔗<class_Input_method_get_device_orientation>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns the device's orientation as a :ref:`Quaternion<class_Quaternion>`, using hardware-level sensor fusion for stable, drift-free results. If the device does not support orientation sensing, the method returns :ref:`Quaternion.IDENTITY<class_Quaternion_constant_IDENTITY>`.
+
+The returned quaternion represents the rotation from the device coordinate frame to the world coordinate frame. In portrait mode, the device's coordinate system is: X right, Y up, Z towards viewer.
+
+\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Quaternion.IDENTITY<class_Quaternion_constant_IDENTITY>`.
+
+\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_device_orientation<class_ProjectSettings_property_input_devices/sensors/enable_device_orientation>` must be enabled.
+
+::
+
+    var orientation := Input.get_device_orientation()
+    var euler := orientation.get_euler()
+    var roll := euler.z  # Device roll angle in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -724,19 +770,19 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-如果遊戲控制器擁有加速度計傳感器且目前已啟用，則回傳該傳感器的加速度（包含重力）數值，單位為 m/s²。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另見 :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
+Returns the acceleration, including the force of gravity, in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-對於握在面前的遊戲控制器，回傳的座標軸定義如下：
+For a joypad held in front of you, the returned axes are defined as follows:
 
-+X ... -X：左 ... 右；
++X ... -X: left ... right;
 
-+Y ... -Y：下 ... 上；
++Y ... -Y: bottom ... top;
 
-+Z ... -Z：遠 ... 近。
++Z ... -Z: farther ... closer.
 
-重力分量的值被測量為一個長度為 ``9.8`` 的向量，方向背離地心，即負 Y 值。
+The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
 
-\ **注意：** 此功能僅支援 Windows、Linux 和 macOS 平台。由於作業系統限制，iOS 平台不支援讀取遊戲控制器的加速度計傳感器資料。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -762,19 +808,19 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-如果遊戲控制器擁有加速度計傳感器且目前已啟用，則回傳該傳感器測得的重力值（單位為 m/s²）。否則，該方法回傳 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另見 :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
+Returns the gravity in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-對於握在面前的遊戲控制器，回傳的座標軸定義如下：
+For a joypad held in front of you, the returned axes are defined as follows:
 
-+X ... -X：左 ... 右；
++X ... -X: left ... right;
 
-+Y ... -Y：下 ... 上；
++Y ... -Y: bottom ... top;
 
-+Z ... -Z：遠 ... 近。
++Z ... -Z: farther ... closer.
 
-重力分量的值被測量為一個長度為 ``9.8`` 的向量，方向背離地心，即負 Y 值。
+The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
 
-\ **注意：** 此功能僅支援 Windows、Linux 和 macOS 平台。由於作業系統限制，iOS 平台不支援讀取遊戲控制器的加速度計傳感器資料。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -786,9 +832,7 @@ I 形游標。通常用於指示點選滑鼠後文字游標的位置。
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-在使用控制器重映射的平台上，回傳一個與 SDL 相容的裝置 GUID（例如 ``030000004c050000c405000000010000``\ ）。如果找不到，則回傳一個空字串。Godot 會利用 SDL 內建的映射規則，並結合社區貢獻的映射資料，根據這個 GUID 來確定控制器的名稱和按鍵映射。
-
-在 Windows 平台上，所有 XInput 控制器的 GUID 都會被 Godot 強制覆蓋為 ``__XINPUT_DEVICE__``\ ，因為它們的映射規則都是完全一樣的。
+Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
 
 .. rst-class:: classref-item-separator
 
@@ -896,7 +940,77 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 :ref:`String<class_String>` **get_joy_name**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_name>`
 
-返回位於指定裝置索引的遊戲控制器名稱，例如 ``PS4 Controller``\ 。Godot 使用 `SDL2 遊戲控制器資料庫 <https://github.com/gabomdq/SDL_GameControllerDB>`__\ 來確定遊戲控制器的名稱。
+Returns the name of the joypad at the specified device index, e.g. ``PS4 Controller``. Godot uses the `SDL game controller database <https://github.com/gabomdq/SDL_GameControllerDB>`__ to determine gamepad names.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Input_method_get_joy_num_touchpads:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_joy_num_touchpads**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_num_touchpads>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns the number of touchpads on the specified joypad, if it has any. Otherwise, the method returns ``0``.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Input_method_get_joy_touchpad_finger_position:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_joy_touchpad_finger_position**\ (\ device\: :ref:`int<class_int>`, finger\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Input_method_get_joy_touchpad_finger_position>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns the position of the specified finger on the specified touchpad on the joypad. The X and Y values, if the specified finger is touching the specified touchpad, are in the range from ``0.0`` to ``1.0``, with ``(0.0, 0.0)`` representing the top-left corner of the touchpad and ``(1.0, 1.0)`` representing the bottom-right corner.
+
+If the joypad doesn't have the specified touchpad or the specified finger is not currently touching the touchpad, this method returns ``Vector2(-1.0, -1.0)``.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Input_method_get_joy_touchpad_finger_pressure:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_joy_touchpad_finger_pressure**\ (\ device\: :ref:`int<class_int>`, finger\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Input_method_get_joy_touchpad_finger_pressure>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns the pressure of the specified finger on the specified touchpad on the joypad. The return value, if the specified finger is touching the specified touchpad, is in the range from ``0.0`` to ``1.0``.
+
+If the joypad doesn't have the specified touchpad or the specified finger is not currently touching the touchpad, this method returns ``-1.0``.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Input_method_get_joy_touchpad_fingers:
+
+.. rst-class:: classref-method
+
+:ref:`PackedInt32Array<class_PackedInt32Array>` **get_joy_touchpad_fingers**\ (\ device\: :ref:`int<class_int>`, touchpad\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Input_method_get_joy_touchpad_fingers>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns an array of finger IDs that are currently touching the specified touchpad on the joypad. If the joypad doesn't have the specified touchpad or no fingers are currently touching this touchpad, this method returns an empty array.
+
+\ **Note:** To retrieve the positions of the touchpad fingers, use :ref:`get_joy_touchpad_finger_position()<class_Input_method_get_joy_touchpad_finger_position>`.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,11 +1120,11 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 :ref:`Vector2<class_Vector2>` **get_vector**\ (\ negative_x\: :ref:`StringName<class_StringName>`, positive_x\: :ref:`StringName<class_StringName>`, negative_y\: :ref:`StringName<class_StringName>`, positive_y\: :ref:`StringName<class_StringName>`, deadzone\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Input_method_get_vector>`
 
-通過指定正負 X 和 Y 軸的四個動作來取得輸入向量。
+Returns an input vector by specifying four actions for the positive and negative X and Y axes.
 
-這個方法在取得向量輸入時很有用，比如從操縱桿、方向盤、箭頭或 WASD。向量的長度被限制為 1，並且有一個圓形的死區，這對於使用向量輸入進行運動很有用。
+This method is useful when getting vector input, such as from a joystick, directional pad, arrows, or WASD. The vector has its length limited to ``1.0`` and has a circular deadzone, which is useful for using vector input as movement.
 
-預設情況下，死區根據動作死區的平均值自動計算。然而，你可以把死區覆蓋為任何你想要的值（在 0 到 1 的範圍內）。
+By default, the deadzone is automatically calculated from the average of the action deadzones. However, you can override the deadzone to be whatever you want (on the range of ``0.0`` to ``1.0``).
 
 .. rst-class:: classref-item-separator
 
@@ -1038,11 +1152,9 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-如果該控制器配備了運動傳感器（包括加速度計和陀螺儀），則回傳 ``true``\ （真）。
+Returns ``true`` if the joypad has motion sensors (gyroscope and/or accelerometer).
 
-\ **注意：** 受限於 iOS 系統，不支援讀取控制器的加速度計傳感器資料。
-
-\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1215,6 +1327,22 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 ----
 
+.. _class_Input_method_is_joy_motion_sensors_auto_calibration_enabled:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_joy_motion_sensors_auto_calibration_enabled**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_is_joy_motion_sensors_auto_calibration_enabled>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Returns ``true`` if automatic calibration is enabled on the joypad's motion sensors. Automatic calibration is enabled by default. See also :ref:`set_joy_motion_sensors_auto_calibration_enabled()<class_Input_method_set_joy_motion_sensors_auto_calibration_enabled>`.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Input_method_is_joy_motion_sensors_calibrated:
 
 .. rst-class:: classref-method
@@ -1241,11 +1369,11 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-如果該控制器的運動傳感器目前正在進行校准，則回傳 ``true``\ （真）。
+Returns ``true`` if the joypad's motion sensors are currently being manually calibrated.
 
-想瞭解如何在你的遊戲中使用控制器運動傳感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的範例。
+See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
 
-\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1259,11 +1387,11 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-如果請求的遊戲控制器擁有運動傳感器（加速度計和陀螺儀）且目前已啟用，則回傳 ``true``\ 。另見 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` 和 :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`\ 。
+Returns ``true`` if the requested joypad has motion sensors (gyroscope and/or accelerometer) and they are currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` and :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
 
-有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
+See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
 
-\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1532,6 +1660,20 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 ----
 
+.. _class_Input_method_set_device_orientation:
+
+.. rst-class:: classref-method
+
+|void| **set_device_orientation**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Input_method_set_device_orientation>`
+
+Sets the device orientation quaternion. Can be used for debugging on devices without a hardware sensor, for example in an editor on a PC.
+
+\ **Note:** This value can be immediately overwritten by the hardware sensor value on Android and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Input_method_set_gravity:
 
 .. rst-class:: classref-method
@@ -1576,6 +1718,26 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 ----
 
+.. _class_Input_method_set_joy_motion_sensors_auto_calibration_enabled:
+
+.. rst-class:: classref-method
+
+|void| **set_joy_motion_sensors_auto_calibration_enabled**\ (\ device\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Input_method_set_joy_motion_sensors_auto_calibration_enabled>`
+
+**實驗性：** 此方法可能在未來版本中變更或移除。
+
+Enables or disables automatic calibration of the joypad's gyroscope. Automatic calibration is enabled by default, so most games don't need to call this or perform any calibration.
+
+While enabled, the gyroscope calibration is continuously refined whenever the joypad is detected to be held still, easing corrections in gradually. This removes the need for a dedicated calibration step in most games and keeps up with calibration drift, e.g. from the controller warming up during play.
+
+When automatic calibration is disabled, the last calibrated values remain in effect.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Input_method_set_joy_motion_sensors_calibration:
 
 .. rst-class:: classref-method
@@ -1602,13 +1764,15 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-啟用或停用指定遊戲控制器上的運動傳感器（加速度計和陀螺儀），如果該裝置支援的話。
+Enables or disables the motion sensors (gyroscope and/or accelerometer), if available, on the specified joypad.
 
-有關在項目中如何使用遊戲控制器運動傳感器及校准的範例，請參見 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
+While the motion sensors are enabled, the gyroscope is calibrated automatically by default; see :ref:`set_joy_motion_sensors_auto_calibration_enabled()<class_Input_method_set_joy_motion_sensors_auto_calibration_enabled>`.
 
-建議在不再使用運動傳感器時將其停用，因為否則可能會導致控制器電池消耗得更快。
+See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
 
-\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
+It's recommended to disable the motion sensors when they're no longer being used, because otherwise it might drain the controller battery faster.
+
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1634,9 +1798,9 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 :ref:`bool<class_bool>` **should_ignore_device**\ (\ vendor_id\: :ref:`int<class_int>`, product_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_should_ignore_device>`
 
-查詢是否要忽略輸入裝置。可以透過設定環境變數 ``SDL_GAMECONTROLLER_IGNORE_DEVICES`` 來忽略裝置。閱讀 `SDL 檔案 <https://wiki .libsdl.org/SDL2>`__ 以了解更多資訊。
+Queries whether an input device should be ignored or not. Devices can be ignored by setting the environment variable ``SDL_GAMECONTROLLER_IGNORE_DEVICES``. See `SDL documentation <https://wiki.libsdl.org/SDL3/SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES>`__ for more information.
 
-\ **注意：** 某些第三方工具可以新增忽略裝置列表。例如，\ *SteamInput* 從實體裝置建立虛擬裝置以進行重新對應。為了避免處理相同輸入裝置兩次，原始裝置將新增到忽略列表中。
+\ **Note:** Some 3rd party tools can contribute to the list of ignored devices. For example, *SteamInput* creates virtual devices from physical devices for remapping purposes. To avoid handling the same input device twice, the original device is added to the ignore list.
 
 .. rst-class:: classref-item-separator
 
@@ -1650,11 +1814,13 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-啟動對指定遊戲控制器陀螺儀的校准過程（如果該控制器具備陀螺儀）。
+Starts the process of manually calibrating the specified joypad's gyroscope, if it has one.
 
-一旦遊戲控制器的陀螺儀被正確校准（例如，將其靜止放置在桌面上且未發生旋轉），當控制器未被轉動時，\ :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` 將回傳接近或等於 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` 的值。
+Once a joypad's gyroscope has been calibrated correctly (e.g. laying still on a table without being rotated), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` will return values close or equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` when the joypad is not being rotated.
 
-以下是在遊戲中使用遊戲控制器陀螺儀及陀螺儀校准的範例：
+Since the gyroscope is calibrated automatically by default (see :ref:`set_joy_motion_sensors_auto_calibration_enabled()<class_Input_method_set_joy_motion_sensors_auto_calibration_enabled>`), most games don't need to calibrate manually. If automatic calibration is enabled, it's paused while the manual calibration is in progress, and resumes when :ref:`stop_joy_motion_sensors_calibration()<class_Input_method_stop_joy_motion_sensors_calibration>` is called.
+
+Here's an example of how to use joypad gyroscope and gyroscope calibration in your games:
 
 
 .. tabs::
@@ -1758,9 +1924,9 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 
 
-\ **注意：** 加速度計傳感器通常不需要校准。
+\ **Note:** Accelerometer sensor doesn't usually require calibration.
 
-\ **注意：** 此功能僅支援 Windows、Linux、macOS 和 iOS 平台。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1772,21 +1938,21 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 |void| **start_joy_vibration**\ (\ device\: :ref:`int<class_int>`, weak_magnitude\: :ref:`float<class_float>`, strong_magnitude\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Input_method_start_joy_vibration>`
 
-開始讓控制器震動。另請參閱 :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` 和 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` 方法。
+Starts vibrating the joypad. See also :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
-控制器通常配有兩個震動馬達：一個強力馬達和一個弱力馬達。
+Joypads usually come with two rumble motors, a strong and a weak one.
 
-\ ``weak_magnitude`` 是弱力馬達的強度（取值範圍在 ``0.0`` 到 ``1.0`` 之間）。
+\ ``weak_magnitude`` is the strength of the weak motor (between ``0.0`` and ``1.0``).
 
-\ ``strong_magnitude`` 是強力馬達的強度（取值範圍在 ``0.0`` 到 ``1.0`` 之間）。
+\ ``strong_magnitude`` is the strength of the strong motor (between ``0.0`` and ``1.0``).
 
-\ ``duration`` 是震動效果的持續時間，單位為秒（如果將持續時間設為 ``0.0``\ ，系統會盡可能長時間地播放震動，大約能持續 65 秒）。
+\ ``duration`` is the duration of the effect in seconds (a duration of ``0.0`` will try to play the vibration as long as possible, which is about 65 seconds).
 
-你可以通過呼叫 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 來提前停止震動。
+The vibration can be stopped early by calling :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-另請參閱 :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` 和 :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`\ 。
+See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
 
-\ **注意：** 在 macOS 平台上，僅 macOS 11 及更高版本支援震動功能。當通過 USB 連接時，受限於 macOS 的系統限制，僅主流品牌的控制器支援震動（Xbox One 和 Xbox Series X/S 控制器除外）。
+\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
 
 .. rst-class:: classref-item-separator
 
@@ -1800,11 +1966,11 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 **實驗性：** 此方法可能在未來版本中變更或移除。
 
-停止指定控制器運動傳感器的校准過程。
+Stops the manual calibration process of the specified joypad's motion sensors.
 
-想瞭解如何在你的遊戲中使用控制器運動傳感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的範例。
+See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
 
-\ **注意：** 該功能僅在 Windows、Linux、macOS 和 iOS 平台上受支援。
+\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1828,21 +1994,21 @@ Z：圍繞 Z 軸的角速度（翻滾）。
 
 |void| **vibrate_handheld**\ (\ duration_ms\: :ref:`int<class_int>` = 500, amplitude\: :ref:`float<class_float>` = -1.0\ ) :ref:`🔗<class_Input_method_vibrate_handheld>`
 
-讓手持裝置（比如手機）按照指定的毫秒數進行震動。
+Starts vibrating the handheld device for the specified duration in milliseconds.
 
-\ ``amplitude`` 是震動的強度，取值範圍在 ``0.0`` 到 ``1.0`` 之間。如果設定為 ``-1.0``\ ，則會使用裝置預設的震動強度。
+\ ``amplitude`` is the strength of the vibration, as a value between ``0.0`` and ``1.0``. If set to ``-1.0``, the default vibration strength of the device is used.
 
-\ **注意：** 該方法僅在 Android、iOS 和 Web 平台上有效，在其他平台上沒有任何效果。
+\ **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
 
-\ **注意：** 在 Android 平台上，\ :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 需要在匯出預設中開啟 ``VIBRATE`` 權限，否則 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 不會生效。
+\ **Note:** For Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` requires enabling the ``VIBRATE`` permission in the export preset. Otherwise, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` will have no effect.
 
-\ **注意：** 在 iOS 平台上，僅 iOS 13 及更高版本支援指定震動時長。
+\ **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
 
-\ **注意：** 在 Web 平台上，無法更改震動幅度（即 amplitude 參數無效）。
+\ **Note:** For Web, the amplitude cannot be changed.
 
-\ **注意：** 部分網頁瀏覽器（如 Safari 和 Firefox for Android）不支援 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`\ 。
+\ **Note:** Some web browsers such as Safari and Firefox for Android do not support :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
 
-\ **注意：** 裝置的系統設定（例如震動開關、勿擾模式或特定的觸感回饋開關）可能會阻止 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 產生效果。
+\ **Note:** Device settings such as vibration on/off, "do not disturb" mode or specific haptic feedback on/off may prevent :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` effects.
 
 .. rst-class:: classref-item-separator
 

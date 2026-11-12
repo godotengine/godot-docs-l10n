@@ -789,9 +789,9 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 :ref:`Array<class_Array>` **get_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_alternative_level_tile_proxy>`
 
-返回給定識別字的備選級代理。返回的陣列包含三個代理的目標識別字（源 ID、合集座標 ID 和備選圖塊 ID）。
+Returns the alternative-level proxy for the given identifiers. The returned array contains the three proxies' target identifiers (source ID, atlas coordinate ID, and alternative tile ID).
 
-如果該 TileSet 沒有給定識別字的代理，則返回空陣列。
+If the TileSet has no proxy for the given identifiers, returns an empty Array.
 
 .. rst-class:: classref-item-separator
 

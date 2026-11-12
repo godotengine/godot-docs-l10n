@@ -7,7 +7,7 @@ ResourceImporterBMFont
 
 **Наследует:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Импортирует растровый шрифт в формате BMFont (``.fnt``).
+Импортирует растровый шрифт в формате BMFont (\ ``.fnt``).
 
 .. rst-class:: classref-introduction-group
 

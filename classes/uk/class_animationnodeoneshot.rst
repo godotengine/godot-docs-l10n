@@ -14,56 +14,73 @@ AnimationNodeOneShot
 Опис
 --------
 
-Ресурс для додавання до :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Цей вузол анімації виконає субанімацію і повернеться після її завершення. Можна налаштувати час змішування для зникання і з'являння, а також фільтри.
+A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. This animation node will execute a sub-animation and return once it finishes. Blend times for fading in and out can be customized, as well as filters.
 
-Після встановлення запиту і зміни відтворення анімації, вузол однократної анімації автоматично очистить запит на наступному кадрі процесу, встановивши значення ``request`` у :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>`.
+After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its ``request`` value to :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Відтворити дочірню анімацію, підключену до порту "shot".
+    # Play child animation connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
-    # Альтернативний синтаксис (той самий результат, що і вище).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE
 
-    # Перериваємо дочірню анімацію, підключену до порту "shot".
+    # Abort child animation connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT)
-    # Альтернативний синтаксис (той самий результат, що і вище).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT
 
-    # Перериває дочірню анімацію зі згасанням, підключену до порту "shot".
+    # Abort child animation with fading out connected to "shot" port.
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT)
-    # Альтернативний синтаксис (той самий результат, що й вище).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
 
-    # Отримати поточний стан (тільки для читання).
+    # Get current state (read-only).
     animation_tree.get("parameters/OneShot/active")
-    # Альтернативний синтаксис (той самий результат, що й вище).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/active"]
 
-    # Отримати поточний внутрішній стан (тільки для читання).
+    # Get current internal state (read-only).
     animation_tree.get("parameters/OneShot/internal_active")
-    # Альтернативний синтаксис (той самий результат, що і вище).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/OneShot/internal_active"]
 
  .. code-tab:: csharp
 
-    // Відтворити дочірню анімацію, підключену до порту "shot".
+    // Play child animation connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Fire);
 
-    // Перериваємо дочірню анімацію, підключену до порту "shot".
+    // Abort child animation connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Abort);
 
-    // Перериваємо дочірню анімацію зі згасанням, підключену до порту "shot".
+    // Abort child animation with fading out connected to "shot" port.
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.FadeOut);
 
-    // Отримати поточний стан (тільки для читання).
+    // Get current state (read-only).
     animationTree.Get("parameters/OneShot/active");
 
-    // Отримати поточний внутрішній стан (тільки для читання).
+    // Get current internal state (read-only).
     animationTree.Get("parameters/OneShot/internal_active");
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverOneShot<class_AnimationNodeObserverOneShot>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/OneShot/observer")
+    observer.started.connect(on_one_shot_started)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/OneShot/observer").As<AnimationNodeObserverOneShot>();
+    observer.Started += OnOneShotStarted;
 
 
 

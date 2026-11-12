@@ -361,17 +361,17 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-Кут огляду камери (у градусах). Застосовується лише в режимі перспективи. Оскільки :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` блокує одну вісь, :ref:`fov<class_Camera3D_property_fov>` встановлює кут поля зору іншої осі.
+The camera's field of view (also known as FOV), as an angle in degrees. Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, this property sets the field of view on the other axis.
 
- Для довідки, стандартне значення вертикального поля зору (``75.0``) еквівалентно горизонтальному куту зору:
+For reference, the default angle for the vertical FOV (\ ``75.0``) is equivalent to a horizontal FOV of:
 
- - ~91,31 градусів у вікні перегляду 4:3
+- ~91.31 degrees in a 4:3 viewport
 
- - ~101,67 градусів у вікні огляду 16:10
+- ~101.67 degrees in a 16:10 viewport
 
- - ~107,51 градусів у вікні перегляду 16:9
+- ~107.51 degrees in a 16:9 viewport
 
- - ~121,63 градусів у вікні перегляду 21:9
+- ~121.63 degrees in a 21:9 viewport
 
 .. rst-class:: classref-item-separator
 

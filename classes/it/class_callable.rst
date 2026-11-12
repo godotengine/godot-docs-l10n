@@ -432,15 +432,15 @@ Restituisce il valore hash a 32 bit dell'oggetto di questo **Callable**.
 
 :ref:`bool<class_bool>` **is_custom**\ (\ ) |const| :ref:`🔗<class_Callable_method_is_custom>`
 
-Restituisce ``true`` se questo **Callable** è un chiamabile personalizzato. I chiamabili personalizzati sono utilizzati:
+Returns ``true`` if this **Callable** is a custom callable. Custom callables are used:
 
-- per associare o disassociare argomenti (vedi :ref:`bind()<class_Callable_method_bind>` e :ref:`unbind()<class_Callable_method_unbind>`);
+- for binding/unbinding arguments (see :ref:`bind()<class_Callable_method_bind>` and :ref:`unbind()<class_Callable_method_unbind>`);
 
-- per rappresentare metodi di tipi :ref:`Variant<class_Variant>` incorporati (vedi :ref:`create()<class_Callable_method_create>`);
+- for representing methods of built-in :ref:`Variant<class_Variant>` types (see :ref:`create()<class_Callable_method_create>`);
 
-- per rappresentare funzioni globali, lambda, e RPC in GDScript;
+- for representing global and lambda functions in GDScript;
 
-- per altri scopi nel core, GDExtension, e C#.
+- for other purposes in the core, GDExtension, and C#.
 
 .. rst-class:: classref-item-separator
 

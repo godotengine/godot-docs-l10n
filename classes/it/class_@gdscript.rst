@@ -96,9 +96,9 @@ La costante del cerchio, la circonferenza del cerchio di raggio unitario in radi
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-L'infinità positiva rappresentata in virgola mobile. Questo è il risultato della divisione in virgola mobile quando il divisore è ``0.0``. Per infinità negativa, utilizza ``-INF``. Dividere per ``-0.0`` risulterà in infinità negativa se è il numeratore è positivo, quindi dividere per ``0.0`` non è lo stesso di dividere per ``-0.0`` (nonostante ``0.0 == -0.0`` ritorni ``true``).
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **Attenzione:** L'infinità numerica è solo un concetto per numeri in virgola mobile, e non ha equivalenti per i numeri interi. Dividere un numero intero per ``0`` non produrrà :ref:`INF<class_@GDScript_constant_INF>` ma risulterà in un errore durante l'esecuzione.
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@ L'infinità positiva rappresentata in virgola mobile. Questo è il risultato del
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-"Not a Number", indica un valore in virgola mobile non valido. È restituito da alcune operazioni non valide, come la divisione in virgola mobile di ``0.0`` per ``0.0``.
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` ha proprietà particolari, tra cui quella di restituire sempre ``true`` per l'operatore ``!=``, e per gli altri operatori di uguaglianza restituisce sempre ``false`` . Ciò si applica anche nei confronti con se stesso (``NAN == NAN`` restituisce ``false`` e ``NAN != NAN`` restituisce ``true``). Per questo motivo, è necessario utilizzare :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` per verificare se un numero è uguale a :ref:`NAN<class_@GDScript_constant_NAN>`.
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **Attenzione:** "Not a Number" è solo un concetto per numeri in virgola mobile, e non ha equivalenti per i numeri interi. Dividere uno ``0`` intero per ``0`` non produrrà :ref:`NAN<class_@GDScript_constant_NAN>` ma risulterà in un errore durante l'esecuzione.
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,9 +282,9 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROP
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Esporta una proprietà di tipo :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[\], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, o :ref:`PackedStringArray<class_PackedStringArray>` come un elenco enumerato di opzioni (o un array di opzioni). Se la proprietà è un :ref:`int<class_int>`, viene memorizzato l'indice del valore, nello stesso ordine che sono stati forniti i valori. È possibile aggiungere valori espliciti utilizzando i due punti. Se la proprietà è un :ref:`String<class_String>`, il valore è memorizzato.
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
-Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
@@ -295,13 +295,13 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PRO
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-Se si desidera impostare un valore iniziale, è necessario specificarlo esplicitamente:
+If you want to set an initial value, you must specify it explicitly:
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-Se si desidera utilizzare le enumerazioni di GDScript con nome, utilizza invece :ref:`@export<class_@GDScript_annotation_@export>`:
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 
@@ -752,7 +752,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constan
     @export var car_label = "Speedy"
     @export var car_number = 3
 
-\ **Nota:** I sottogruppi non possono essere annidati, ma è possibile usare il separatore barra (``/``) per ottenere l'effetto desiderato:
+\ **Nota:** I sottogruppi non possono essere annidati, ma è possibile usare il separatore barra (\ ``/``) per ottenere l'effetto desiderato:
 
 ::
 
@@ -1021,7 +1021,7 @@ Restituisce un :ref:`Color<class_Color>` costruito da rosso (``r8``), verde (``g
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Verifica che la condizione ``condition`` sia vera (``true``). Se ``condition`` è falsa (``false``), è generato un errore e il metodo attuale restituisce un valore predefinito. Quando in esecuzione dall'editor, gli errori dalle asserzioni provocano anche un interruzione dal debugger. Lo si può usare come una forma più potente di :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` per riportare errori agli sviluppatori del progetto o agli utenti di estensioni.
+Verifica che la condizione ``condition`` sia vera (\ ``true``). Se ``condition`` è falsa (\ ``false``), è generato un errore e il metodo attuale restituisce un valore predefinito. Quando in esecuzione dall'editor, gli errori dalle asserzioni provocano anche un interruzione dal debugger. Lo si può usare come una forma più potente di :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` per riportare errori agli sviluppatori del progetto o agli utenti di estensioni.
 
 L'argomento facoltativo ``message`` è mostrato in aggiunta al generico messaggio "Assertion failed" (Asserzione fallita). Si può usare per fornire più dettagli sul motivo per cui l'asserzione non è riuscita.
 

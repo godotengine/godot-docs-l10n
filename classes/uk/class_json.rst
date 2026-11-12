@@ -14,45 +14,45 @@ JSON
 Опис
 --------
 
-Клас **JSON** дозволяє конвертувати всі типи даних у рядок JSON і з нього. Це корисно для серіалізації даних, напр. щоб зберегти у файл або надіслати через мережу. 
+The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
 
-\ :ref:`stringify()<class_JSON_method_stringify>` використовується для перетворення будь-якого типу даних у рядок JSON. 
+\ :ref:`stringify()<class_JSON_method_stringify>` is used to convert any data type into a JSON string.
 
-\ :ref:`parse()<class_JSON_method_parse>` використовується для перетворення будь-яких наявних даних JSON у :ref:`Variant<class_Variant>`, який можна використовувати в Godot. У разі успішного аналізу скористайтеся :ref:`data<class_JSON_property_data>`, щоб отримати :ref:`Variant<class_Variant>`, і використовуйте :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, щоб перевірити, чи відповідає тип Варіанта тому, що ви очікуєте. Об’єкти JSON перетворюються на :ref:`Dictionary<class_Dictionary>`, але дані JSON можна використовувати для зберігання :ref:`Array<class_Array>`, чисел, :ref:`String<class_String>` і навіть просто логічних значень. 
-
-::
- 
-    var data_to_send = ["a", "b", "c"] 
-    var json_string = JSON.stringify(data_to_send) 
-    # Збереження даних 
-    # ... 
-    # Отримати дані 
-    var json = JSON.new() 
-    var error = json.parse(json_string) 
-    if error == OK: 
-        var data_received = json.data 
-        if typeof(data_received) == TYPE_ARRAY: 
-            print(data_received) # Друкує масив. 
-        else: 
-            print("Неочікувані дані") 
-    else: 
-        print("Помилка аналізу JSON: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())  
-
-Крім того, ви можете аналізувати рядки за допомогою статичного методу :ref:`parse_string()<class_JSON_method_parse_string>`, але він не обробляє помилки. 
+\ :ref:`parse()<class_JSON_method_parse>` is used to convert any existing JSON data into a :ref:`Variant<class_Variant>` that can be used within Godot. If successfully parsed, use :ref:`data<class_JSON_property_data>` to retrieve the :ref:`Variant<class_Variant>`, and use :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` to check if the Variant's type is what you expect. JSON Objects are converted into a :ref:`Dictionary<class_Dictionary>`, but JSON data can be used to store :ref:`Array<class_Array>`\ s, numbers, :ref:`String<class_String>`\ s and even just a boolean.
 
 ::
- 
-    var data = JSON.parse_string(json_string) # Повертає null, якщо розбір не вдався.  
 
-\ **Примітка:** Обидва методи аналізу не повністю відповідають специфікації JSON: 
+    var data_to_send = ["a", "b", "c"]
+    var json_string = JSON.stringify(data_to_send)
+    # Save data
+    # ...
+    # Retrieve data
+    var json = JSON.new()
+    var error = json.parse(json_string)
+    if error == OK:
+        var data_received = json.data
+        if typeof(data_received) == TYPE_ARRAY:
+            print(data_received) # Prints the array.
+        else:
+            print("Unexpected data")
+    else:
+        print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
 
-— Кінцеві коми в масивах або об’єктах ігноруються, замість того, щоб викликати помилку аналізатора. 
+Alternatively, you can parse strings using the static :ref:`parse_string()<class_JSON_method_parse_string>` method, but it doesn't handle errors.
 
-- Нові символи рядка та табуляції приймаються в рядкових літералах і обробляються як їхні відповідні керуючі послідовності ``\n`` і ``\t``. 
+::
 
-- Числа аналізуються за допомогою :ref:`String.to_float()<class_String_method_to_float>`, який зазвичай більш м’який, ніж специфікація JSON. 
+    var data = JSON.parse_string(json_string) # Returns null if parsing failed.
 
-- Певні помилки, такі як недійсні послідовності Unicode, не викликають помилки синтаксичного аналізатора. Натомість рядок очищається, а помилка реєструється на консолі.
+\ **Note:** Both parse methods do not fully comply with the JSON specification:
+
+- Trailing commas in arrays or objects are ignored, instead of causing a parser error.
+
+- New line and tab characters are accepted in string literals, and are treated like their corresponding escape sequences ``\n`` and ``\t``.
+
+- Numbers are parsed using :ref:`String.to_float()<class_String_method_to_float>` which is generally more lax than the JSON specification.
+
+- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleaned up and an error is logged to the console.
 
 .. rst-class:: classref-reftable-group
 
@@ -216,24 +216,24 @@ JSON
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Перетворює змінну :ref:`Variant<class_Variant>` на текст JSON та повертає результат. Корисно для серіалізації даних для зберігання або надсилання через мережу.
+Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
 
-\ **Примітка:** Специфікація JSON не визначає цілочисельні або числові типи з плаваючою комою, а лише числовий тип *number*. Тому перетворення Variant на текст JSON перетворить усі числові значення на типи :ref:`float<class_float>`.
+If ``sort_keys`` is ``true``, the keys of any :ref:`Dictionary<class_Dictionary>`\ s are sorted alphabetically when converting to JSON. If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
 
-\ **Примітка:** Якщо ``full_precision`` має значення ``true``, під час перетворення чисел з плаваючою комою в рядок перетворюються ненадійні цифри на додаток до надійних, щоб гарантувати точне декодування.
+\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
 
-Параметр ``indent`` контролює, чи буде щось відступне і як; його вміст буде використано там, де має бути відступ у виводі. Навіть пробіли, такі як ``" "``, працюватимуть. ``\t`` та ``\n`` також можна використовувати для відступу табуляції або для створення нового рядка для кожного відступу відповідно.
+The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively. If set to an empty string, the JSON will be on a single line with no spacing, which allows for smaller file sizes.
 
-\ **Попередження:** Нескінченні числа не підтримуються в JSON. Будь-які входження :ref:`@GDScript.INF<class_@GDScript_constant_INF>` будуть замінені на ``1e99999``, а від'ємне значення :ref:`@GDScript.INF<class_@GDScript_constant_INF>` буде замінено на ``-1e99999``, але більшість JSON-парсерів правильно інтерпретуватимуть їх як нескінченність. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` буде замінено на ``null`` і не буде інтерпретовано як NaN в JSON-парсерах. Якщо ви очікуєте нескінченні числа, спочатку передайте свої дані через :ref:`from_native()<class_JSON_method_from_native>`.
+\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
 
-\ **Приклад виводу:**\ 
+\ **Example output:**\ 
 
 ::
 
-    ## JSON.stringify(my_dictionary)
+    ## JSON.stringify(my_dictionary, "", false)
     {"name":"my_dictionary","version":"1.0.0","entities":[{"name":"entity_0","value":"value_0"},{"name":"entity_1","value":"value_1"}]}
 
-    ## JSON.stringify(my_dictionary, "\t")
+    ## JSON.stringify(my_dictionary, "\t", false)
     {
         "name": "my_dictionary",
         "version": "1.0.0",
@@ -249,7 +249,7 @@ JSON
         ]
     }
 
-    ## JSON.stringify(my_dictionary, "...")
+    ## JSON.stringify(my_dictionary, "...", false)
     {
     ..."name": "my_dictionary",
     ..."version": "1.0.0",

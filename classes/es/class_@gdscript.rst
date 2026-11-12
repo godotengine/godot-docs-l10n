@@ -96,9 +96,9 @@ La constante del círculo, la circunferencia de la unidad círculo en radianes. 
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-Infinito positivo de punto flotante. Este es el resultado de la división de punto flotante cuando el divisor es ``0.0``. Para infinito negativo, usa ``-INF``. Dividir por ``-0.0`` resultará en infinito negativo si el numerador es positivo, por lo que dividir por ``0.0`` no es lo mismo que dividir por ``-0.0`` (a pesar de que ``0.0 == -0.0`` devuelve ``true``).
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **Advertencia:** El infinito numérico es solo un concepto aplicable a los números de punto flotante y no tiene equivalente para los enteros. Dividir un número entero entre ``0`` no resultará en :ref:`INF<class_@GDScript_constant_INF>` y causará un error en tiempo de ejecución en su lugar.
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@ Infinito positivo de punto flotante. Este es el resultado de la división de pun
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-"No es un Número", un valor de punto flotante inválido. Es devuelto por algunas operaciones inválidas, como dividir ``0.0`` de punto flotante entre ``0.0``.
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` tiene propiedades especiales, incluyendo que ``!=`` siempre devuelve ``true``, mientras que los demás operadores de comparación siempre devuelven ``false``. Esto es cierto incluso al compararlo consigo mismo (``NAN == NAN`` devuelve ``false`` y ``NAN != NAN`` devuelve ``true``).
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **Advertencia:** "No es un Número" es solo un concepto aplicable a los números de punto flotante y no tiene equivalente para los enteros. Dividir un entero ``0`` entre ``0`` no resultará en :ref:`NAN<class_@GDScript_constant_NAN>` y causará un error en tiempo de ejecución en su lugar.
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,9 +282,9 @@ Véase también :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Exporta una propiedad :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, o :ref:`PackedStringArray<class_PackedStringArray>` como una lista enumerada de opciones (o un array de opciones). Si la propiedad es un :ref:`int<class_int>`, entonces se guarda el índice del valor en el mismo orden en el que se proporcionan los valores. Se pueden añadir valores explícitos usando dos puntos (:). Si la propiedad es una :ref:`String<class_String>`, entonces se guarda el valor.
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
-Véase también :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
@@ -295,13 +295,13 @@ Véase también :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constan
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-Si queres asignar un valor inicial, lo debes especificar explícitamente:
+If you want to set an initial value, you must specify it explicitly:
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-Si quieres usar enums de GDSCript con nombre, entonces en cambio usa :ref:`@export<class_@GDScript_annotation_@export>`:
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 
@@ -752,7 +752,7 @@ También consulte :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_
     @export var car_label = "Speedy"
     @export var car_number = 3
 
-\ **Nota:** Los subgrupos no se pueden anidar, pero puedes usar el separador de barra (``/``) para lograr el efecto deseado:
+\ **Nota:** Los subgrupos no se pueden anidar, pero puedes usar el separador de barra (\ ``/``) para lograr el efecto deseado:
 
 ::
 
@@ -1313,7 +1313,7 @@ Véase también :ref:`print_stack()<class_@GDScript_method_print_stack>`, :ref:`
 
 |void| **print_stack**\ (\ ) :ref:`🔗<class_@GDScript_method_print_stack>`
 
-Imprime un stack trace en la ubicación actual del código.
+Imprime una traza de pila en la ubicación actual del código.
 
 La salida en la consola puede verse de la siguiente manera:
 

@@ -35,7 +35,7 @@ Los booleanos pueden utilizarse directamente en ``if`` y otras sentencias condic
 
 
 
-Todos los operadores de comparación devuelven booleanos (``==``, ``>``, ``<=``, etc.). Como tal, no es necesario comparar los booleanos entre sí. No es necesario añadir ``== true`` o ``== false``.
+Todos los operadores de comparación devuelven booleanos (\ ``==``, ``>``, ``<=``, etc.). Como tal, no es necesario comparar los booleanos entre sí. No es necesario añadir ``== true`` o ``== false``.
 
 Los booleanos pueden combinarse con los operadores lógicos ``and``, ``or``, ``not`` para crear condiciones complejas:
 
@@ -94,15 +94,19 @@ Operadores
 .. table::
    :widths: auto
 
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator !=<class_bool_operator_neq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ ) |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator \<<class_bool_operator_lt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator ==<class_bool_operator_eq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
-   +-------------------------+-----------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`operator ><class_bool_operator_gt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
-   +-------------------------+-----------------------------------------------------------------------------------------+
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator !=<class_bool_operator_neq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator \<<class_bool_operator_lt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator \<=<class_bool_operator_lte_bool>`\ (\ right\: :ref:`bool<class_bool>`\ ) |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator ==<class_bool_operator_eq_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )   |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator ><class_bool_operator_gt_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )    |
+   +-------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`operator >=<class_bool_operator_gte_bool>`\ (\ right\: :ref:`bool<class_bool>`\ )  |
+   +-------------------------+------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -184,6 +188,18 @@ Devuelve ``true`` si el **bool** de la izquierda es ``false`` y ``right`` es ``t
 
 ----
 
+.. _class_bool_operator_lte_bool:
+
+.. rst-class:: classref-operator
+
+:ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lte_bool>`
+
+Returns ``true`` if the left **bool** is ``false``, or if both **bool**\ s are ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_bool_operator_eq_bool:
 
 .. rst-class:: classref-operator
@@ -203,6 +219,18 @@ Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
 Devuelve ``true`` si el **bool** de la izquierda es ``true`` y ``right`` es ``false``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_bool_operator_gte_bool:
+
+.. rst-class:: classref-operator
+
+:ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gte_bool>`
+
+Returns ``true`` if the left **bool** is ``true``, or if both **bool**\ s are ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

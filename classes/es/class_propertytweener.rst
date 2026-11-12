@@ -144,7 +144,7 @@ Makes the **PropertyTweener** use the current property value (i.e. at the time o
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_custom_interpolator**\ (\ interpolator_method\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PropertyTweener_method_set_custom_interpolator>`
 
-Allows interpolating the value with a custom easing function. The provided ``interpolator_method`` will be called with a value ranging from ``0.0`` to ``1.0`` and is expected to return a value within the same range (values outside the range can be used for overshoot). The return value of the method is then used for interpolation between initial and final value. Note that the parameter passed to the method is still subject to the tweener's own easing.
+Permite interpolar el valor mediante una función de suavizado personalizada. Se llamará al método ``interpolator_method`` proporcionado con un valor comprendido entre ``0.0`` y ``1.0`` y se espera que devuelva un valor dentro del mismo intervalo (se pueden utilizar valores fuera del intervalo para producir un efecto de sobrepaso). El valor devuelto por el método se utiliza entonces para interpolar entre el valor inicial y el valor final. Ten en cuenta que el parámetro que se pasa al método sigue estando sujeto al propio suavizado del tweener.
 
 
 .. tabs::
@@ -155,7 +155,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
 
     func _ready():
         var tween = create_tween()
-        # Interpolate the value using a custom curve.
+        # Interpola el valor mediante una curva personalizada.
         tween.tween_property(self, "position:x", 300, 1).as_relative().set_custom_interpolator(tween_curve)
 
     func tween_curve(v):
@@ -169,7 +169,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
     public override void _Ready()
     {
         Tween tween = CreateTween();
-        // Interpolate the value using a custom curve.
+        // Interpola el valor mediante una curva personalizada.
         Callable tweenCurveCallable = Callable.From<float, float>(TweenCurve);
         tween.TweenProperty(this, "position:x", 300.0f, 1.0f).AsRelative().SetCustomInterpolator(tweenCurveCallable);
     }
@@ -203,7 +203,7 @@ Establece el tiempo en segundos después del cual el **PropertyTweener** comenza
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_PropertyTweener_method_set_ease>`
 
-Establece el tipo de easing usado de :ref:`EaseType<enum_Tween_EaseType>`. Si no se establece, se usa el easing por defecto del :ref:`Tween<class_Tween>` que contiene este Tweener.
+Establece el tipo de suavizado que se utilizará de :ref:`EaseType<enum_Tween_EaseType>`. Si no se establece, se usa el suavizado predeterminado del :ref:`Tween<class_Tween>` que contiene este Tweener.
 
 .. rst-class:: classref-item-separator
 

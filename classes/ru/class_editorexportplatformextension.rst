@@ -239,7 +239,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_device_architecture**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_device_architecture>`
 
-Возвращает архитектуру устройства для развертывания в один клик.
+Returns device architecture for remote deploy.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_option_icon**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_icon>`
 
-Возвращает значок элемента для указанного ``device`` в меню быстрого развёртывания. Размер значка должен быть 16×16 пикселей с учётом текущего масштаба редактора (см. :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the item icon for the specified ``device`` in the remote deploy menu. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_label**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_label>`
 
-Возвращает метку элемента меню «Развернуть одним щелчком» для указанного ``device``.
+Returns remote deploy menu item label for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_tooltip**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_tooltip>`
 
-Возвращает всплывающую подсказку элемента меню развертывания одним щелчком для указанного ``device``.
+Returns remote deploy menu item tooltip for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ EditorExportPlatformExtension
 
 :ref:`int<class_int>` **_get_options_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_count>`
 
-Возвращает количество устройств (или других параметров), доступных в меню развертывания одним щелчком мыши.
+Returns the number of devices (or other options) available in the remote deploy menu.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-Возвращает подсказку кнопки развертывания меню одним щелчком.
+Returns tooltip of the remote deploy menu button.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_run_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_run_icon>`
 
-Возвращает значок кнопки быстрого развёртывания меню. Размер значка должен быть 16×16 пикселей с учётом текущего масштаба редактора (см. :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the icon of the remote deploy menu button. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ EditorExportPlatformExtension
 
 :ref:`bool<class_bool>` **_poll_export**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__poll_export>`
 
-Возвращает ``true``, если параметры развертывания в один клик изменены и интерфейс редактора необходимо обновить.
+Returns ``true`` if remote deploy options are changed and editor interface should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ EditorExportPlatformExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_run**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, device\: :ref:`int<class_int>`, debug_flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__run>`
 
-Этот метод вызывается, когда выбрана опция меню развертывания одним щелчком ``device``. 
+This method is called when ``device`` remote deploy menu option is selected.
 
-Реализация должна экспортировать проект во временное местоположение, загрузить и запустить его на определенном ``device`` или выполнить другое действие, связанное с элементом меню.
+Implementation should export project to a temporary location, upload and run it on the specific ``device``, or perform another action associated with the menu item.
 
 .. rst-class:: classref-item-separator
 

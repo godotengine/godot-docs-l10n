@@ -50,27 +50,41 @@ Slider
 .. table::
    :widths: auto
 
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`center_grabber<class_Slider_theme_constant_center_grabber>`              | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`grabber_offset<class_Slider_theme_constant_grabber_offset>`              | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`tick_offset<class_Slider_theme_constant_tick_offset>`                    | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber<class_Slider_theme_icon_grabber>`                                |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_disabled<class_Slider_theme_icon_grabber_disabled>`              |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_highlight<class_Slider_theme_icon_grabber_highlight>`            |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`tick<class_Slider_theme_icon_tick>`                                      |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area<class_Slider_theme_style_grabber_area>`                     |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area_highlight<class_Slider_theme_style_grabber_area_highlight>` |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`slider<class_Slider_theme_style_slider>`                                 |       |
-   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`center_grabber<class_Slider_theme_constant_center_grabber>`                        | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`grabber_max_size<class_Slider_theme_constant_grabber_max_size>`                    | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`grabber_offset<class_Slider_theme_constant_grabber_offset>`                        | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`tick_max_size<class_Slider_theme_constant_tick_max_size>`                          | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`tick_offset<class_Slider_theme_constant_tick_offset>`                              | ``0`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`grabber<class_Slider_theme_icon_grabber>`                                          |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`grabber_disabled<class_Slider_theme_icon_grabber_disabled>`                        |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`grabber_highlight<class_Slider_theme_icon_grabber_highlight>`                      |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`tick<class_Slider_theme_icon_tick>`                                                |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_ended_sound<class_Slider_theme_sound_drag_ended_sound>`                       |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_started_sound<class_Slider_theme_sound_drag_started_sound>`                   |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_Slider_theme_sound_focus_sound>`                                 |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`value_change_rejected_sound<class_Slider_theme_sound_value_change_rejected_sound>` |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`value_changed_sound<class_Slider_theme_sound_value_changed_sound>`                 |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`grabber_area<class_Slider_theme_style_grabber_area>`                               |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`grabber_area_highlight<class_Slider_theme_style_grabber_area_highlight>`           |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`slider<class_Slider_theme_style_slider>`                                           |       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------+
 
 .. rst-class:: classref-section-separator
 
@@ -259,6 +273,18 @@ enum **TickPosition**: :ref:`🔗<enum_Slider_TickPosition>`
 
 ----
 
+.. _class_Slider_theme_constant_grabber_max_size:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **grabber_max_size** = ``0`` :ref:`🔗<class_Slider_theme_constant_grabber_max_size>`
+
+The maximum allowed size of the **Slider**'s grabber icon. The grabber texture is scaled down so its widest axis is :ref:`grabber_max_size<class_Slider_theme_constant_grabber_max_size>` and the other axis is scaled keeping the original ratio.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Slider_theme_constant_grabber_offset:
 
 .. rst-class:: classref-themeproperty
@@ -266,6 +292,18 @@ enum **TickPosition**: :ref:`🔗<enum_Slider_TickPosition>`
 :ref:`int<class_int>` **grabber_offset** = ``0`` :ref:`🔗<class_Slider_theme_constant_grabber_offset>`
 
 Вертикальний або горизонтальний зміщувач.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_constant_tick_max_size:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **tick_max_size** = ``0`` :ref:`🔗<class_Slider_theme_constant_tick_max_size>`
+
+The maximum allowed size of the **Slider**'s tick icons. The tick texture is scaled down so its widest axis is :ref:`tick_max_size<class_Slider_theme_constant_tick_max_size>` and the other axis is scaled keeping the original ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -326,6 +364,66 @@ enum **TickPosition**: :ref:`🔗<enum_Slider_TickPosition>`
 :ref:`Texture2D<class_Texture2D>` **tick** :ref:`🔗<class_Slider_theme_icon_tick>`
 
 Текстура для позначок, видима, коли :ref:`tick_count<class_Slider_property_tick_count>` більше 0.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_sound_drag_ended_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_ended_sound** :ref:`🔗<class_Slider_theme_sound_drag_ended_sound>`
+
+Played when mouse or touch drag ends. This is also used by :ref:`SpinBox<class_SpinBox>` when dragging over its arrows, or :ref:`ColorPicker<class_ColorPicker>` when dragging over its color wheel/rectangle.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_sound_drag_started_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_started_sound** :ref:`🔗<class_Slider_theme_sound_drag_started_sound>`
+
+Played when mouse or touch drag begins. This is also used by :ref:`SpinBox<class_SpinBox>` when dragging over its arrows, or :ref:`ColorPicker<class_ColorPicker>` when dragging over its color wheel/rectangle.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_Slider_theme_sound_focus_sound>`
+
+Played when this **Slider** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_sound_value_change_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **value_change_rejected_sound** :ref:`🔗<class_Slider_theme_sound_value_change_rejected_sound>`
+
+Played when the value is attempted to be changed through keyboard or gamepad input, but the value is already at the minimum (or maximum).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_sound_value_changed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **value_changed_sound** :ref:`🔗<class_Slider_theme_sound_value_changed_sound>`
+
+Played when the value is changed through keyboard or gamepad input. If the value is already at the minimum (or maximum), :ref:`value_change_rejected_sound<class_Slider_theme_sound_value_change_rejected_sound>` is played instead.
 
 .. rst-class:: classref-item-separator
 

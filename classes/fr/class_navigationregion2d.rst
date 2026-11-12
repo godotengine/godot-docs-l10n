@@ -153,7 +153,7 @@ Détermine si la **NavigationRegion2D** est activée ou désactivée.
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-Lorsque la recherche de chemin entre dans le maillage de navigation de cette région depuis le maillage de navigation d'une autre région, la valeur :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` est ajoutée à la distance du chemin pour déterminer le chemin le plus court.
+When pathfinding enters this region's navigation mesh from another region's navigation mesh, this property's value is added to the path distance used to determine the shortest path.
 
 .. rst-class:: classref-item-separator
 

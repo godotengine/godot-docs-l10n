@@ -206,7 +206,11 @@ Le décalage appliqué à chaque sommet.
 
 La liste des sommets du polygone. Le dernier point sera connecté au premier.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ Montant pour multiplier les coordonnées :ref:`uv<class_Polygon2D_property_uv>` 
 
 Coordonnées de texture pour chaque sommet du polygone. Il devrait y avoir une valeur UV par sommet du polygone. S'il y en a moins, les sommets indéfinis utiliseront ``Vector2(0, 0)``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Coordonnées de texture pour chaque sommet du polygone. Il devrait y avoir une v
 
 Couleur pour chaque sommet. Les couleurs sont interpolées entre les sommets, résultant en des gradients lisses. Il devrait y en avoir une par sommet du polygone. S'il y en a moins, les sommets indéfinis utiliseront :ref:`color<class_Polygon2D_property_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

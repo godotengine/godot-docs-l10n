@@ -546,7 +546,7 @@ iOS 匯出器。
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請檢查 Apple 開發者帳戶儀錶板中的“會員詳細資訊”部分，或程式碼簽章憑證的“組織單位”。見 `搜尋你的團隊 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -666,9 +666,9 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_debug>`
 
-預置描述檔案的名稱。設定除錯時 Xcode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用於手動描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用環境變數 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -680,9 +680,9 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_release>`
 
-預置描述檔案的名稱。設定發佈時 Xcode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用於手動描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用環境變數 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -774,7 +774,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformIOS_property_architectures/arm64>`
 
-如果為 ``true``\ ，\ ``arm64`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -800,7 +800,11 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 新增到 ``Info.plist`` 檔案的 ``UIRequiredDeviceCapabilities`` 陣列中的額外資料。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +921,7 @@ Apple 推送通知服務的環境。見 `aps-environment <https://developer.appl
 
 :ref:`String<class_String>` **icons/app_store_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024>`
 
-App Store 套用程式圖示檔。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+App Store application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +957,7 @@ App Store 應用程式圖示檔案，著色版本。見 `App 圖示 <https://dev
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024>`
 
-用於生成其他圖示的基礎應用程式圖示。如果留空則會回退到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__\ 。
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +993,7 @@ App Store 應用程式圖示檔案，著色版本。見 `App 圖示 <https://dev
 
 :ref:`String<class_String>` **icons/ios_128x128** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128>`
 
-iOS 應用程式 64x64 圖示檔案（2x DPI）。如果留空，則會回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,7 +1005,7 @@ iOS 應用程式 64x64 圖示檔案（2x DPI）。如果留空，則會回退至
 
 :ref:`String<class_String>` **icons/ios_128x128_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_dark>`
 
-iOS 應用程式 64x64 圖示檔案（2x DPI）,暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1013,7 +1017,7 @@ iOS 應用程式 64x64 圖示檔案（2x DPI）,暗色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ios_128x128_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_tinted>`
 
-iOS 應用程式 64x64 圖示檔案（2x DPI）,著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1029,7 @@ iOS 應用程式 64x64 圖示檔案（2x DPI）,著色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ios_136x136** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136>`
 
-iOS 應用程式 68x68 圖示檔案（2x DPI）。如果留空，則會回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68×68 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1037,7 +1041,7 @@ iOS 應用程式 68x68 圖示檔案（2x DPI）。如果留空，則會回退至
 
 :ref:`String<class_String>` **icons/ios_136x136_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_dark>`
 
-iOS 應用程式 68x68 圖示檔案（2x DPI）,暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68×68 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1049,7 +1053,7 @@ iOS 應用程式 68x68 圖示檔案（2x DPI）,暗色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ios_136x136_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_tinted>`
 
-iOS 應用程式 68x68 圖示檔案（2x DPI）,著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68×68 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1061,7 +1065,7 @@ iOS 應用程式 68x68 圖示檔案（2x DPI）,著色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ios_192x192** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192>`
 
-iOS 應用程式 64x64 圖示檔案（3x DPI）。如果留空，則會回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1077,7 @@ iOS 應用程式 64x64 圖示檔案（3x DPI）。如果留空，則會回退至
 
 :ref:`String<class_String>` **icons/ios_192x192_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_dark>`
 
-iOS 應用程式 64x64 圖示檔案（3x DPI）,暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1089,7 @@ iOS 應用程式 64x64 圖示檔案（3x DPI）,暗色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ios_192x192_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_tinted>`
 
-iOS 應用程式 64x64 圖示檔案（3x DPI）,著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64×64 icon file (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1097,7 +1101,7 @@ iOS 應用程式 64x64 圖示檔案（3x DPI）,著色版本。見 `App 圖示 <
 
 :ref:`String<class_String>` **icons/ipad_152x152** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152>`
 
-iPad 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1113,7 @@ iPad 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回至
 
 :ref:`String<class_String>` **icons/ipad_152x152_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_dark>`
 
-iPad 主螢幕應用程式圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1125,7 @@ iPad 主螢幕應用程式圖示檔案（2x DPI），暗色版本。見 `App 圖
 
 :ref:`String<class_String>` **icons/ipad_152x152_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_tinted>`
 
-iPad 主螢幕應用程式圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1137,7 @@ iPad 主螢幕應用程式圖示檔案（2x DPI），著色版本。見 `App 圖
 
 :ref:`String<class_String>` **icons/ipad_167x167** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167>`
 
-iPad 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ iPad 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回至
 
 :ref:`String<class_String>` **icons/ipad_167x167_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_dark>`
 
-iPad 主螢幕應用程式圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1161,7 @@ iPad 主螢幕應用程式圖示檔案（3x DPI），暗色版本。見 `App 圖
 
 :ref:`String<class_String>` **icons/ipad_167x167_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_tinted>`
 
-iPad 主螢幕應用程式圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1169,7 +1173,7 @@ iPad 主螢幕應用程式圖示檔案（3x DPI），著色版本。見 `App 圖
 
 :ref:`String<class_String>` **icons/iphone_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120>`
 
-iPhone 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1185,7 @@ iPhone 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回�
 
 :ref:`String<class_String>` **icons/iphone_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_dark>`
 
-iPhone 主螢幕應用程式圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1197,7 @@ iPhone 主螢幕應用程式圖示檔案（2x DPI），暗色版本。見 `App �
 
 :ref:`String<class_String>` **icons/iphone_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_tinted>`
 
-iPhone 主螢幕應用程式圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1209,7 @@ iPhone 主螢幕應用程式圖示檔案（2x DPI），著色版本。見 `App �
 
 :ref:`String<class_String>` **icons/iphone_180x180** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180>`
 
-iPhone 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1221,7 @@ iPhone 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回�
 
 :ref:`String<class_String>` **icons/iphone_180x180_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_dark>`
 
-iPhone 主螢幕應用程式圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1233,7 @@ iPhone 主螢幕應用程式圖示檔案（3x DPI），暗色版本。見 `App �
 
 :ref:`String<class_String>` **icons/iphone_180x180_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_tinted>`
 
-iPhone 主螢幕應用程式圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1245,7 @@ iPhone 主螢幕應用程式圖示檔案（3x DPI），著色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_40x40** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40>`
 
-iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1257,7 @@ iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回�
 
 :ref:`String<class_String>` **icons/notification_40x40_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_dark>`
 
-iPad 和 iPhone 上的通知圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1265,7 +1269,7 @@ iPad 和 iPhone 上的通知圖示檔案（2x DPI），暗色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_40x40_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_tinted>`
 
-iPad 和 iPhone 上的通知圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,7 +1281,7 @@ iPad 和 iPhone 上的通知圖示檔案（2x DPI），著色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_60x60** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60>`
 
-iPad 和 iPhone 上的通知圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,7 +1293,7 @@ iPad 和 iPhone 上的通知圖示檔（3x DPI）。如果留空，則會退回�
 
 :ref:`String<class_String>` **icons/notification_60x60_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_dark>`
 
-iPhone 上的通知圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1305,7 @@ iPhone 上的通知圖示檔案（3x DPI），暗色版本。見 `App 圖示 <ht
 
 :ref:`String<class_String>` **icons/notification_60x60_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_tinted>`
 
-iPhone 上的通知圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1313,7 +1317,7 @@ iPhone 上的通知圖示檔案（3x DPI），著色版本。見 `App 圖示 <ht
 
 :ref:`String<class_String>` **icons/notification_76x76** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76>`
 
-iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1325,7 +1329,7 @@ iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回�
 
 :ref:`String<class_String>` **icons/notification_76x76_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_dark>`
 
-iPad 和 iPhone 上的通知圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1341,7 @@ iPad 和 iPhone 上的通知圖示檔案（2x DPI），暗色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_76x76_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_tinted>`
 
-iPad 和 iPhone 上的通知圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1353,7 @@ iPad 和 iPhone 上的通知圖示檔案（2x DPI），著色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_114x114** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114>`
 
-iPad 和 iPhone 上的通知圖示檔案（3x DPI）。如果留空，則會回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1365,7 @@ iPad 和 iPhone 上的通知圖示檔案（3x DPI）。如果留空，則會回�
 
 :ref:`String<class_String>` **icons/notification_114x114_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_dark>`
 
-iPad 和 iPhone 上的通知圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1377,7 @@ iPad 和 iPhone 上的通知圖示檔案（3x DPI），暗色版本。見 `App �
 
 :ref:`String<class_String>` **icons/notification_114x114_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_tinted>`
 
-iPad 和 iPhone 上的通知圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1385,7 +1389,7 @@ iPad 和 iPhone 上的通知圖示檔案（3x DPI），著色版本。見 `App �
 
 :ref:`String<class_String>` **icons/settings_58x58** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58>`
 
-iPad 和 iPhone 上的套用程式設定圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1401,7 @@ iPad 和 iPhone 上的套用程式設定圖示檔（2x DPI）。如果留空，�
 
 :ref:`String<class_String>` **icons/settings_58x58_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_dark>`
 
-iPad 和 iPhone 上的應用程式設定圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1413,7 @@ iPad 和 iPhone 上的應用程式設定圖示檔案（2x DPI），暗色版本�
 
 :ref:`String<class_String>` **icons/settings_58x58_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_tinted>`
 
-iPad 和 iPhone 上的應用程式設定圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1425,7 @@ iPad 和 iPhone 上的應用程式設定圖示檔案（2x DPI），著色版本�
 
 :ref:`String<class_String>` **icons/settings_87x87** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87>`
 
-iPhone 上的套用程式設定圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1433,7 +1437,7 @@ iPhone 上的套用程式設定圖示檔（3x DPI）。如果留空，則會退�
 
 :ref:`String<class_String>` **icons/settings_87x87_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_dark>`
 
-iPhone 上的應用程式設定圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1445,7 +1449,7 @@ iPhone 上的應用程式設定圖示檔案（3x DPI），暗色版本。見 `Ap
 
 :ref:`String<class_String>` **icons/settings_87x87_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_tinted>`
 
-iPhone 上的應用程式設定圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1457,7 +1461,7 @@ iPhone 上的應用程式設定圖示檔案（3x DPI），著色版本。見 `Ap
 
 :ref:`String<class_String>` **icons/spotlight_80x80** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1469,7 +1473,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔（2x DPI）。如果留空，則會�
 
 :ref:`String<class_String>` **icons/spotlight_80x80_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_dark>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔案（2x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1481,7 +1485,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（2x DPI），暗色版本。見 
 
 :ref:`String<class_String>` **icons/spotlight_80x80_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_tinted>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔案（2x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1493,7 +1497,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（2x DPI），著色版本。見 
 
 :ref:`String<class_String>` **icons/spotlight_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI）。如果留空，則會回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1505,7 +1509,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI）。如果留空，則�
 
 :ref:`String<class_String>` **icons/spotlight_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_dark>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），暗色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1517,7 +1521,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），暗色版本。見 
 
 :ref:`String<class_String>` **icons/spotlight_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1541,7 +1545,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`
 
-你的應用使用活動鍵盤 API 的原因。請參閱 `描述所需原因 API 的使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2009,7 +2013,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collected>`
 
-表示你的應用是否會收集電子郵件位址。
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2021,7 +2025,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-你的應用程式收集電子郵件位址的原因。請參閱 `描述隱私清單中的資料使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2037,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-表示你的應用是否會將電子郵件位址連結到使用者的身份。
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2049,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-表示你的應用是否會將電子郵件位址用於追蹤。
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2825,7 +2829,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collected>`
 
-表示你的應用是否會收集電話號碼。
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2837,7 +2841,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-你的應用程式收集電話號碼的原因。請參閱 `描述隱私清單中的資料使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2849,7 +2853,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-表示你的應用是否會將電話號碼連結到使用者的身份。
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2861,7 +2865,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-表示你的應用是否會將電話號碼用於追蹤。
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2921,7 +2925,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collected>`
 
-表示你的應用是否會收集實際住址。
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2933,7 +2937,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-你的應用收集實際住址的原因。見\ `《在隱私清單中描述資料用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2945,7 +2949,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-表示你的應用是否會將實際住址連結到使用者的身份。
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2957,7 +2961,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-表示你的應用是否會將實際住址用於追蹤。
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3257,7 +3261,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/disk_space_access_reasons>`
 
-你的 app 使用磁碟空間清理 API 的原因。見\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3269,7 +3273,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/file_timestamp_access_reasons>`
 
-你的 app 使用檔案時間戳記/中繼資料 API 的原因。見\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3329,7 +3333,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/system_boot_time_access_reasons>`
 
-你的 app 使用系統啟動時間/絕對時間 API 的原因。見\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3343,7 +3347,11 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 你的應用程式連接到的參與追蹤的互連網域清單。請參閱 `隱私清單檔案 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3375,7 @@ iPad 和 iPhone 上的“聚焦”圖示檔案（3x DPI），著色版本。見 
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/user_defaults_access_reasons>`
 
-你的 app 使用使用者預設值 API 的原因。見\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3405,7 +3413,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@2x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@2x>`
 
-套用程式啟動畫面影像檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3417,7 +3425,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@3x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@3x>`
 
-套用程式啟動畫面影像檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3441,7 +3449,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`bool<class_bool>` **storyboard/use_custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/use_custom_bg_color>`
 
-如果為 ``true``\ ，則會將 :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` 用作啟動螢幕的背景色，否則會使用專案設定 ``application/boot_splash/bg_color``\ 。
+If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise the ``application/boot_splash/bg_color`` project setting is used.
 
 .. rst-class:: classref-item-separator
 

@@ -25,7 +25,7 @@ Tutoriales
 
 - `OMI_physics_shape glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_shape>`__
 
-- `OMI_collider glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/Archived/OMI_collider>`__
+- `Extensión gITF OMI_collider <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/Archived/OMI_collider>`__
 
 .. rst-class:: classref-reftable-group
 

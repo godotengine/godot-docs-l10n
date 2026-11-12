@@ -151,11 +151,11 @@ L'étendue (largeur et hauteur) de la zone est en mètres.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-Une texture optionnelle à utiliser comme source lumineuse. La modification de la texture en exécution peut impacter la performance, comme elle doit être dessinée sur la carte de la lumière avec des mipmaps filtrés.
+An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
 
-Si aucune texture n'est attribuée, la lumière de zone émet une lumière uniforme au travers sa surface.
+If no texture is assigned, the area light emits uniform light across its surface.
 
-\ **Note :** Les textures de la lumière de zone ne sont supportées que dans les méthodes pour les rendus Forward+ et Mobile, pas pour Compatibilité. Afin de réduire l'impact sur la performance sur la bascule de texture en exécution, assurez-vous que chaque dimension de la texture de zone est un multiple de 128 pixels, ou une puissance de deux. Cela évite le besoin de transmettre une échelle, ce qui ralentit les changement de texture. Les textures n'ont pas besoin d'être nécessairement carrées pour être idéales. Les exemples de tailles de textures idéales incluent 32x64, 128x128 et 256x384.
+\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

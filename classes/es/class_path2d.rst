@@ -16,7 +16,7 @@ Descripción
 
 Puede tener nodos hijos :ref:`PathFollow2D<class_PathFollow2D>` moviéndose a lo largo de la :ref:`Curve2D<class_Curve2D>`. Mira :ref:`PathFollow2D<class_PathFollow2D>` para más información sobre su uso.
 
-\ **Nota:** La ruta se considera relativa a los nodos movidos (hijos de :ref:`PathFollow2D<class_PathFollow2D>`). Por lo tanto, la curva debería empezar normalmente con un vector cero (``(0, 0)``).
+\ **Nota:** La ruta se considera relativa a los nodos movidos (hijos de :ref:`PathFollow2D<class_PathFollow2D>`). Por lo tanto, la curva debería empezar normalmente con un vector cero (\ ``(0, 0)``).
 
 .. rst-class:: classref-reftable-group
 

@@ -1679,9 +1679,9 @@ Si ``true``, le viewport utilisera une copie unique du :ref:`World3D<class_World
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-Si ``true``, les objets rendus par le viewport deviennent des sujets du processus de sélection par la souris.
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **Note :** Le nombre d'objets pouvant être choisis simultanément est limité à 64 et ils sont sélectionnés dans un ordre non déterministe, qui peut être différent à chaque processus de sélection.
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ Si ``true``, les objets rendus par le viewport deviennent des sujets du processu
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Si ``true``, le signal input_event ne sera envoyé qu'à un objet physique dans le processus de sélection de la souris. Si vous voulez obtenir l'objet du haut seulement, vous devez également activer :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Si ``false``, un signal input_event sera envoyé à tous les objets physiques dans le processus de sélection de la souris.
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-Ceci s'applique à la sélection d'objets CanvasItem 2D uniquement.
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ Ceci s'applique à la sélection d'objets CanvasItem 2D uniquement.
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Si ``true``, les objets reçoivent des événements de sélection de souris triés d'abord par leur :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` puis par leur position dans l'arborescence de scène. Si ``false``, l'ordre est indéterminé.
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **Note :** Ce paramètre est désactivé par défaut en raison de son coût de calcul coûteux potentiel.
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **Note :** Le tri s'effectue après avoir sélectionné les objets sélectionnables. En raison de la limitation de 64 objets récupérables simultanément, il n'est pas garanti que l'objet avec le plus haut :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` reçoive l'événement de sélection.
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ La quantité de sous-division du quatrième quadrant de l'atlas de l'ombre.
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-La résolution de l'atlas des ombres (utilisé pour les SpotLights et OmniLights). La valeur est arrondie à la puissance de 2 la plus proche.
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **Note :** Si cela est défini à ``0``, aucune ombre positionnelle ne sera visible du tout. Cela peut améliorer considérablement les performances sur les systèmes bas de gamme en réduisant à la fois la charge CPU et GPU (car il faut moins de draw calls pour dessiner la scène sans ombres).
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ Renvoie la transformation d'étirement 2D automatiquement calculée, en tenant c
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Renvoie la texture du viewport.
+Returns the viewport's texture.
 
-\ **Note :** Lorsque vous essayez de stocker la texture actuelle (par exemple dans un fichier), elle peut être complètement noire ou périmée si elle est utilisée trop tôt, surtout lorsqu'elle est utilisée par ex. dans :ref:`Node._ready()<class_Node_private_method__ready>`. Pour vous assurer que la texture que vous obtenez est correcte, vous pouvez attendre le signal :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
+\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
 
 
 .. tabs::
@@ -2415,7 +2415,7 @@ Renvoie la texture du viewport.
 
     func _ready():
         await RenderingServer.frame_post_draw
-        $Viewport.get_texture().get_image().save_png("user://Capture_d_ecran.png")
+        $Viewport.get_texture().get_image().save_png("user://Screenshot.png")
 
  .. code-tab:: csharp
 
@@ -2423,12 +2423,12 @@ Renvoie la texture du viewport.
     {
         await ToSignal(RenderingServer.Singleton, RenderingServer.SignalName.FramePostDraw);
         var viewport = GetNode<Viewport>("Viewport");
-        viewport.GetTexture().GetImage().SavePng("user://Capture_d_ecran.png");
+        viewport.GetTexture().GetImage().SavePng("user://Screenshot.png");
     }
 
 
 
-\ **Note :** Lorsque :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` vaut ``true``, la texture renvoyée sera une image HDR encodée dans l'espace linéaire.
+\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
 
 .. rst-class:: classref-item-separator
 

@@ -14,13 +14,13 @@ WebRTCMultiplayerPeer
 Описание
 ----------------
 
-Этот класс создает полную сетку :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` (одно соединение для каждого пира), которую можно использовать как :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`.
+This class constructs a full mesh of :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` (one connection for each peer) that can be used as a :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`.
 
-Вы можете добавить каждый :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` с помощью :ref:`add_peer()<class_WebRTCMultiplayerPeer_method_add_peer>` или удалить их с помощью :ref:`remove_peer()<class_WebRTCMultiplayerPeer_method_remove_peer>`. Пиры должны быть добавлены в :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` состоянии, чтобы позволить ему создавать соответствующие каналы. Этот класс не будет создавать предложения или задавать описания, он будет только опрашивать их и уведомлять о подключениях и отключениях.
+You can add each :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` via :ref:`add_peer()<class_WebRTCMultiplayerPeer_method_add_peer>` or remove them via :ref:`remove_peer()<class_WebRTCMultiplayerPeer_method_remove_peer>`. Peers must be added in :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` state to allow it to create the appropriate channels. This class will not create offers nor set descriptions, it will only poll them, and notify connections and disconnections.
 
-При создании пира с помощью :ref:`create_client()<class_WebRTCMultiplayerPeer_method_create_client>` или :ref:`create_server()<class_WebRTCMultiplayerPeer_method_create_server>` метод :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>` вернет ``true``, что позволит обмениваться пирами и ретранслировать пакеты, если поддерживается реализацией :ref:`MultiplayerAPI<class_MultiplayerAPI>`. 
+When creating the peer via :ref:`create_client()<class_WebRTCMultiplayerPeer_method_create_client>` or :ref:`create_server()<class_WebRTCMultiplayerPeer_method_create_server>` the :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>` method will return ``true`` enabling peer exchange and packet relaying when supported by the :ref:`MultiplayerAPI<class_MultiplayerAPI>` implementation.
 
-\ **Примечание:** При экспорте в Android убедитесь, что в настройках экспорта Android включено разрешение ``INTERNET`` перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -63,9 +63,9 @@ WebRTCMultiplayerPeer
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_peer**\ (\ peer\: :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>`, peer_id\: :ref:`int<class_int>`, unreliable_lifetime\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_WebRTCMultiplayerPeer_method_add_peer>`
 
-Добавьте нового пира в сетку с заданным ``peer_id``. :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` должен находиться в состоянии :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
+Add a new peer to the mesh with the given ``peer_id``. The :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>` must be in state :ref:`WebRTCPeerConnection.STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-Будут созданы три канала для надежного, ненадежного и упорядоченного транспорта. Значение ``unreliable_lifetime`` будет передано в параметр ``"maxPacketLifetime"`` при создании ненадежных и упорядоченных каналов (см. :ref:`WebRTCPeerConnection.create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`).
+Three channels will be created for reliable, unreliable, and ordered transport. The value of ``unreliable_lifetime`` will be passed to the ``"maxPacketLifeTime"`` option when creating unreliable and ordered channels (see :ref:`WebRTCPeerConnection.create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`).
 
 .. rst-class:: classref-item-separator
 

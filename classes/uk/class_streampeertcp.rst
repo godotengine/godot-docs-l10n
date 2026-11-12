@@ -14,9 +14,9 @@ StreamPeerTCP
 Опис
 --------
 
-Потоковий одноліток, який ручить з'єднанням TCP. Цей об'єкт може бути використаний для підключення до серверів TCP, або також повертається сервером TCP.
+A stream peer that handles TCP connections. This object can be used to connect to TCP servers, or also is returned by a TCP server.
 
-\ **Примітка:** При експорті до Android, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою однієї кнопки розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

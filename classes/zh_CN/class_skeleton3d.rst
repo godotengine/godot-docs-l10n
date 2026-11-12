@@ -100,6 +100,8 @@ Skeleton3D
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Transform3D<class_Transform3D>`                            | :ref:`get_bone_rest<class_Skeleton3D_method_get_bone_rest>`\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                         |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector3<class_Vector3>`                                    | :ref:`get_bone_skin_scale<class_Skeleton3D_method_get_bone_skin_scale>`\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const|                                                                                                                                             |
+   +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`StringName<class_StringName>`                              | :ref:`get_concatenated_bone_names<class_Skeleton3D_method_get_concatenated_bone_names>`\ (\ ) |const|                                                                                                                                                               |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedInt32Array<class_PackedInt32Array>`                  | :ref:`get_parentless_bones<class_Skeleton3D_method_get_parentless_bones>`\ (\ ) |const|                                                                                                                                                                             |
@@ -122,9 +124,9 @@ Skeleton3D
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`SkinReference<class_SkinReference>`                        | :ref:`register_skin<class_Skeleton3D_method_register_skin>`\ (\ skin\: :ref:`Skin<class_Skin>`\ )                                                                                                                                                                   |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                                           | :ref:`reset_bone_pose<class_Skeleton3D_method_reset_bone_pose>`\ (\ bone_idx\: :ref:`int<class_int>`\ )                                                                                                                                                             |
+   | |void|                                                           | :ref:`reset_bone_pose<class_Skeleton3D_method_reset_bone_pose>`\ (\ bone_idx\: :ref:`int<class_int>`, reset_bone_skin_scale\: :ref:`bool<class_bool>` = false\ )                                                                                                    |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                                           | :ref:`reset_bone_poses<class_Skeleton3D_method_reset_bone_poses>`\ (\ )                                                                                                                                                                                             |
+   | |void|                                                           | :ref:`reset_bone_poses<class_Skeleton3D_method_reset_bone_poses>`\ (\ reset_bone_skin_scale\: :ref:`bool<class_bool>` = false\ )                                                                                                                                    |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`set_bone_enabled<class_Skeleton3D_method_set_bone_enabled>`\ (\ bone_idx\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>` = true\ )                                                                                                                 |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -147,6 +149,8 @@ Skeleton3D
    | |void|                                                           | :ref:`set_bone_pose_scale<class_Skeleton3D_method_set_bone_pose_scale>`\ (\ bone_idx\: :ref:`int<class_int>`, scale\: :ref:`Vector3<class_Vector3>`\ )                                                                                                              |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`set_bone_rest<class_Skeleton3D_method_set_bone_rest>`\ (\ bone_idx\: :ref:`int<class_int>`, rest\: :ref:`Transform3D<class_Transform3D>`\ )                                                                                                                   |
+   +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                           | :ref:`set_bone_skin_scale<class_Skeleton3D_method_set_bone_skin_scale>`\ (\ bone_idx\: :ref:`int<class_int>`, skin_scale\: :ref:`Vector3<class_Vector3>`\ )                                                                                                         |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`unparent_bone_and_rest<class_Skeleton3D_method_unparent_bone_and_rest>`\ (\ bone_idx\: :ref:`int<class_int>`\ )                                                                                                                                               |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -438,7 +442,7 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -672,6 +676,18 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 ----
 
+.. _class_Skeleton3D_method_get_bone_skin_scale:
+
+.. rst-class:: classref-method
+
+:ref:`Vector3<class_Vector3>` **get_bone_skin_scale**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_skin_scale>`
+
+Returns the skin scale of the bone at ``bone_idx``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Skeleton3D_method_get_concatenated_bone_names:
 
 .. rst-class:: classref-method
@@ -828,7 +844,7 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 .. rst-class:: classref-method
 
-|void| **reset_bone_pose**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton3D_method_reset_bone_pose>`
+|void| **reset_bone_pose**\ (\ bone_idx\: :ref:`int<class_int>`, reset_bone_skin_scale\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Skeleton3D_method_reset_bone_pose>`
 
 将 ``bone_idx`` 骨骼设置为放松姿势。
 
@@ -840,7 +856,7 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 .. rst-class:: classref-method
 
-|void| **reset_bone_poses**\ (\ ) :ref:`🔗<class_Skeleton3D_method_reset_bone_poses>`
+|void| **reset_bone_poses**\ (\ reset_bone_skin_scale\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Skeleton3D_method_reset_bone_poses>`
 
 将所有骨骼都设置为放松姿势。
 
@@ -985,6 +1001,22 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 |void| **set_bone_rest**\ (\ bone_idx\: :ref:`int<class_int>`, rest\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_rest>`
 
 设置骨骼 ``bone_idx`` 的放松变换。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Skeleton3D_method_set_bone_skin_scale:
+
+.. rst-class:: classref-method
+
+|void| **set_bone_skin_scale**\ (\ bone_idx\: :ref:`int<class_int>`, skin_scale\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_skin_scale>`
+
+Sets the skin scale of the bone at ``bone_idx`` to ``skin_scale``. This scale does not affect bone children. This is useful for modifying the visual thickness of a skin.
+
+Even if the skin is visually deformed, neither scaling nor repositioning of the bones occurs. This means that you may need to adjust the origin of the child bone to synchronize its joint position with the scaling by using :ref:`BoneSpaceAdjuster3D<class_BoneSpaceAdjuster3D>`.
+
+\ **Note:** The skin scaling may corrupt the appearance of the gizmo for some SkeletonModifier classes, such as SpringBoneSimulator and IKModifier3D, which rely on bone lengths for skinning.
 
 .. rst-class:: classref-item-separator
 

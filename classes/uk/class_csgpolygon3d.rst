@@ -170,7 +170,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 :ref:`PathIntervalType<enum_CSGPolygon3D_PathIntervalType>` **PATH_INTERVAL_SUBDIVIDE** = ``1``
 
-Коли :ref:`mode<class_CSGPolygon3D_property_mode>` встановлюється до :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, :ref:`path_interva<class_CSGPolygon3D_property_path_interva>` буде піддано полігонам по шляху.
+Коли :ref:`mode<class_CSGPolygon3D_property_mode>` встановлюється до :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, :ref:`path_interval<class_CSGPolygon3D_property_path_interval>` буде піддано полігонам по шляху.
 
 .. rst-class:: classref-section-separator
 
@@ -417,7 +417,11 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 \ **Note:** Якщо в ``пам'ятний полігон`` визначаються лише 1 або 2 точки.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

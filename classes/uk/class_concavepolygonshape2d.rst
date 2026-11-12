@@ -58,7 +58,11 @@ ConcavePolygonShape2D
 
 Масив точок, які складають **ConcavePolygonShape2D**. масив (від довжини дівидимого по два) природним чином розділений на пари (один пара для кожного сегмента); кожна пара складається з початкової точки сегмента і кінцевої точки сегмента.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,21 +14,21 @@ UDP 数据包客户端。
 描述
 ----
 
-UDP 数据包对等端。可以用来发送和接收原始 UPD 数据包和 :ref:`Variant<class_Variant>`\ 。
+UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
-\ **示例：**\ 发送数据包：
+\ **Example:** Send a packet:
 
 ::
 
     var peer = PacketPeerUDP.new()
 
-    # 可以自行选择用于发送数据包的本地端口。
+    # Optionally, you can select the local port used to send the packet.
     peer.bind(4444)
 
     peer.set_dest_address("1.1.1.1", 4433)
     peer.put_packet("hello".to_utf8_buffer())
 
-\ **示例：**\ 监听数据包：
+\ **Example:** Listen for packets:
 
 ::
 
@@ -43,9 +43,9 @@ UDP 数据包对等端。可以用来发送和接收原始 UPD 数据包和 :ref
         if peer.get_available_packet_count() > 0:
             var array_bytes = peer.get_packet()
             var packet_string = array_bytes.get_string_from_ascii()
-            print("收到消息：", packet_string)
+            print("Received message: ", packet_string)
 
-\ **注意：**\ 导出到 Android 时，请确保在导出项目和使用一键部署前启用 Android 导出预设中的 ``INTERNET`` 权限。否则 Android 会阻止所有网络通信。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

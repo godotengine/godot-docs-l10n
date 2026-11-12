@@ -118,9 +118,9 @@ Descripciones de Métodos
 
 |void| **_draw_editor_gizmo**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModification2D_private_method__draw_editor_gizmo>`
 
-Usado para dibujar gizmos de modificación **solo para el editor**. Esta función solo será llamada en el editor de Godot y puede ser sobreescrita para dibujar gizmos personalizados.
+Used for drawing **editor-only** modification gizmos. This function will only be called in the Godot editor and can be overridden to draw custom gizmos.
 
-\ **Nota:** Necesitarás usar el Skeleton2D de :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` y sus funciones de dibujo, ya que el recurso **SkeletonModification2D** no puede dibujar por sí solo.
+\ **Note:** You will need to use the Skeleton2D from :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` and its draw functions, as the **SkeletonModification2D** resource cannot draw on its own.
 
 .. rst-class:: classref-item-separator
 

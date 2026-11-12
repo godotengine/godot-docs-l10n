@@ -16,21 +16,21 @@ NavigationServer3D
 說明
 ----
 
-NavigationServer3D 是處理導航地圖、區塊、代理的伺服器。它不處理來自 :ref:`AStar3D<class_AStar3D>` 的 A\* 導航。
+NavigationServer3D is the server that handles navigation maps, regions, and agents. It does not handle A\* navigation from :ref:`AStar3D<class_AStar3D>`.
 
-地圖分為多個區塊，這些區塊由導覽網格組成。它們共同定義了 3D 世界中的可導航區域。
+Maps are divided into regions, which are composed of navigation meshes. Together, they define the navigable areas in the 3D world.
 
-\ **注意：**\ 大多數 **NavigationServer3D** 的更改都是在下一個物理影格進行的，不會立即生效。包括所有對地圖、區塊、代理的更改，無論是通過場景樹中導航相關的節點作出的更改，還是通過腳本作出的更改。
+\ **Note:** Most **NavigationServer3D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions, or agents by navigation-related nodes in the scene tree or made through scripts.
 
-兩個區塊必須共享一條相似的邊才能相連。如果一條邊的兩個頂點與另一條邊上相應頂點的距離都小於 ``edge_connection_margin``\ ，那麼就會認為這兩條邊是相連的。
+For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
 
-可以使用 :ref:`region_set_navigation_layers()<class_NavigationServer3D_method_region_set_navigation_layers>` 為區塊分配導航層，使用 :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>` 請求路徑時會對導航層進行檢查。可用於針對某些物件允許或禁止特定的區域。
+You may assign navigation layers to regions with :ref:`region_set_navigation_layers()<class_NavigationServer3D_method_region_set_navigation_layers>`, which then can be checked upon when requesting a path with :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`. This can be used to allow or deny certain areas for some objects.
 
-使用碰撞躲避系統就需要使用代理。你可以為代理設定目標速度，然後伺服器就會發出回呼，提供修改後的速度。
+To use the collision avoidance system, you may use agents. You can set an agent's target velocity, then the servers will emit a callback with a modified velocity.
 
-\ **注意：**\ 碰撞躲避系統會忽略區塊。直接使用修改後的速度可能會將代理移動到可達區域之外。這是碰撞躲避系統的缺陷，更複雜的場合可能需要使用物理引擎。
+\ **Note:** The collision avoidance system ignores regions. Using the modified velocity directly may move an agent outside of the traversable area. This is a limitation of the collision avoidance system, any more complex situation may require the use of the physics engine.
 
-伺服器會對所有呼叫進行追蹤，並在同步階段執行。這意味著你可以放心地從任何執行緒請求對地圖作出任何修改。
+This server keeps tracks of any call and executes them during the sync phase. This means that you can request any change to the map, using any thread, without worrying.
 
 .. rst-class:: classref-introduction-group
 
@@ -898,7 +898,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_time_horizon_agents**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_agents>`
 
-考慮其他代理的前提下，該代理的速度的最短安全時間，這個速度是通過模擬得到的。數值越大，代理回應其他代理的速度就越快，但該代理選擇速度的自由度也就越小。太高的取值會大大降低代理的移動速度。必須為正數。
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to other agents. The larger this number, the sooner this agent will respond to the presence of other agents, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_obstacles>`
 
-考慮其他靜態避障障礙物的前提下，該代理的速度的最短安全時間，這個速度是通過仿真得到的。數值越大，代理回應存在的靜態避障障礙物的速度就越快，但該代理選擇速度的自由度也就越小。太高的取值會大大降低代理的移動速度。必須為正數。
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to static avoidance obstacles. The larger this number, the sooner this agent will respond to the presence of static avoidance obstacles, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -922,11 +922,11 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_use_3d_avoidance**\ (\ agent\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_use_3d_avoidance>`
 
-設定在啟用避障功能時，代理是使用 2D 避障還是 3D 避障。
+Sets if the agent uses the 2D avoidance or the 3D avoidance while avoidance is enabled.
 
-如果設為 ``true``\ ，代理將在 3D 空間中計算 xyz 三個軸的避障速度。這適用於那些發生在空中、水下或太空中的遊戲。使用 3D 避障的代理只會躲避其他同樣使用 3D 避障的代理。它只會對基於半徑的避障障礙物產生反應，並會忽略任何基於頂點的障礙物。
+If ``true`` the agent calculates avoidance velocities in 3D for the XYZ axes, e.g. for games that take place in the air, underwater, or space. The 3D agent only avoids other 3D avoidance agents. The 3D agent only reacts to radius based avoidance obstacles. The 3D agent ignores any vertices based obstacles. The 3D agent only avoids other 3D agents.
 
-如果設為 ``false``\ ，代理將僅在 xz 平面上計算 2D 避障速度，並忽略 y 軸（高度）。使用 2D 避障的代理只會躲避其他同樣使用 2D 避障的代理。它會對基於半徑的避障障礙物產生反應，也會對基於頂點的避障障礙物產生反應。使用 2D 避障的代理會忽略那些位於其目前位置下方或上方（包含代理自身在 2D 避障中的高度範圍）的其他 2D 代理或障礙物。
+If ``false`` the agent calculates avoidance velocities in 2D along the xz-axes ignoring the y-axis. The 2D agent only avoids other 2D avoidance agents. The 2D agent reacts to radius avoidance obstacles. The 2D agent reacts to vertex based avoidance obstacles. The 2D agent only avoids other 2D agents. 2D agents will ignore other 2D agents or obstacles that are below their current position or above their current position including the agent's height in 2D avoidance.
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +938,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_velocity**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_velocity>`
 
-將 ``velocity`` 設定為指定代理 ``agent`` 的新的需求速度。避障模擬會盡可能嘗試滿足這個速度，但為了躲避與其他代理和障礙物的碰撞也會對它進行修改。將代理傳送至新的位置時，請使用 :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>` 重設內部模擬速度。
+Sets ``velocity`` as the new wanted velocity for the specified ``agent``. The avoidance simulation will try to achieve this velocity if possible, but will adjust it to avoid colliding with other agents and obstacles. When an agent is teleported to a new position far away, use :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>` instead to reset the internal velocity state.
 
 .. rst-class:: classref-item-separator
 
@@ -1240,7 +1240,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **link_set_navigation_layers**\ (\ link\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_link_set_navigation_layers>`
 
-設定該連結的導覽層。這允許從路徑請求中選擇連結（當使用 :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>` 時）。
+Sets the given ``link``'s navigation layers to ``navigation_layers``. This allows selecting links from a path request (when using :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1302,13 +1302,13 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 **已棄用：** This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.
 
-該函式將立即強制指定的導航 ``map`` :ref:`RID<class_RID>` 的同步。預設情況下，導航地圖僅在每個物理影格結束時同步。該函式可用於立即（重新）計算該導航地圖的所有導覽網格和區塊連接。這使得可以在同一影格中對修改後的地圖的導航路徑立即執行查詢（如果需要，可以執行多次）。
+This function immediately forces synchronization of the specified navigation ``map`` :ref:`RID<class_RID>`. By default navigation maps are only synchronized at the end of each physics frame. This function can be used to immediately (re)calculate all the navigation meshes and region connections of the navigation map. This makes it possible to query a navigation path for a changed map immediately and in the same frame (multiple times if needed).
 
-由於技術上的限制，目前的 NavigationServer 命令佇列將被衝刷。這意味著所有已在目前物理影格中入隊的更新命令都會被執行，即使是那些用於其他地圖、不屬於指定地圖的區塊和代理的更新命令。 昂貴計算的導覽網格和地圖的區塊連接將僅針對指定地圖進行。其他地圖將在物理影格結束時接收正常同步。如果指定的地圖在強制更新後又收到了修改，則它將在其他地圖收到更新時再次更新。
+Due to technical restrictions the current NavigationServer command queue will be flushed. This means all already queued update commands for this physics frame will be executed, even those intended for other maps, regions, and agents not part of the specified map. The expensive computation of the navigation meshes and region connections of a map will only be done for the specified map. Other maps will receive the normal synchronization at the end of the physics frame. Should the specified map receive changes after the forced update it will update again as well when the other maps receive their update.
 
-避障處理和 ``safe_velocity`` 訊號的分發不受該函式影響，仍繼續發生在物理影格結束時的所有地圖和代理上。
+Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected by this function and continues to happen for all maps and agents at the end of the physics frame.
 
-\ **注意：**\ 能力越大，責任越大。該函式僅該用於使用者真正知道自己在做甚麼並且有充分理由的情況。強制立即更新導航地圖需要鎖定 NavigationServer 並衝刷整個 NavigationServer 命令佇列。這不僅會嚴重影響遊戲的效能，而且如果缺乏遠見且使用不當，還會引入 bug。
+\ **Note:** With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_agents**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_agents>`
 
-返回所有與請求的導覽地圖 ``map`` 關聯的導覽代理的 :ref:`RID<class_RID>`\ 。
+Returns all navigation agent :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`float<class_float>` **map_get_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_merge_rasterizer_cell_scale>`
 
-回傳地圖的內部合併柵格化器的單元格縮放。
+Returns the map's internal merge rasterizer cell scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_regions**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_regions>`
 
-返回目前分配給所請求的導覽 ``map`` 的所有導覽區塊的 :ref:`RID<class_RID>`\ 。
+Returns all navigation region :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **obstacle_set_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_obstacle_set_avoidance_layers>`
 
-設定障礙物的避障層 ``avoidance_layers`` 位元遮罩。
+Sets the given ``obstacle``'s avoidance layers to ``layers``.
 
 .. rst-class:: classref-item-separator
 
@@ -2366,9 +2366,9 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **simplify_path**\ (\ path\: :ref:`PackedVector3Array<class_PackedVector3Array>`, epsilon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_simplify_path>`
 
-回傳 ``path`` 的簡化版本，其中移除了不太重要的路徑點。簡化量以世界單位表示，由 ``epsilon`` 控制。簡化使用 Ramer-Douglas-Peucker 算法的變體進行曲線點抽取。
+Returns a simplified version of ``path`` with less critical path points removed. The simplification amount is in world units and controlled by ``epsilon``. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
-路徑簡化有助於緩解某些代理型別和腳本行為可能出現的各種路徑追蹤問題。例如“轉向”代理或“開放場”中的避讓。
+Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 
 .. rst-class:: classref-item-separator
 

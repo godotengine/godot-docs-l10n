@@ -322,6 +322,8 @@ TextServer
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`get_name<class_TextServer_method_get_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                                         |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                      | :ref:`get_short_name<class_TextServer_method_get_short_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                             |
+   +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>`                    | :ref:`get_support_data<class_TextServer_method_get_support_data>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                                         |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`get_support_data_filename<class_TextServer_method_get_support_data_filename>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                       |
@@ -852,7 +854,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_MANDATORY** = ``1``
 
-Разрыв строки выполняется в местах, где присутствуют обязательные символы разрыва строки (например, ``"\n"``).
+Break the line at the line mandatory break characters (e.g. ``"\n"``).
 
 .. _class_TextServer_constant_BREAK_WORD_BOUND:
 
@@ -902,9 +904,9 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_START_EDGE_SPACES** = ``64``
 
-Удалите пробелы и символы переноса строки из начала сегментов разорванной строки.
+Remove spaces and line break characters from the start of broken line segments.
 
-Например, после переноса строки второй сегмент следующего текста ``test \n next`` будет ``next`` если флаг установлен, и `` next``, если он не установлен.
+E.g, after line breaking, the second segment of the following text ``test  \n  next``, is ``next`` if the flag is set, and ``  next`` if it is not.
 
 .. _class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES:
 
@@ -912,9 +914,9 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_END_EDGE_SPACES** = ``128``
 
-Удалите пробелы и символы переноса строки из конца разорванных сегментов строки.
+Remove spaces and line break characters from the end of broken line segments.
 
-Например, после переноса строки первый сегмент следующего текста ``test \n next`` будет ``test`` если флаг установлен, и ``test \n``, если он не установлен.
+E.g, after line breaking, the first segment of the following text ``test  \n  next``, is ``test`` if the flag is set, and ``test  \n`` if it is not.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,7 +1150,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_BREAK_HARD** = ``16``
 
-Графема является обязательной точкой останова (например, ``"\n"``).
+Grapheme is mandatory break point (e.g. ``"\n"``).
 
 .. _class_TextServer_constant_GRAPHEME_IS_BREAK_SOFT:
 
@@ -3404,6 +3406,18 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 :ref:`String<class_String>` **get_name**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_name>`
 
 Возвращает имя интерфейса сервера.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServer_method_get_short_name:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_short_name**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_short_name>`
+
+Returns the short name of the server interface. This short name can be used as a value for the ``--text-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` (the full name is also supported for compatibility, but it must be quoted if it contains spaces).
 
 .. rst-class:: classref-item-separator
 

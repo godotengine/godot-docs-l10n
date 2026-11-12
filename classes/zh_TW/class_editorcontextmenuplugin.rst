@@ -14,9 +14,9 @@ EditorContextMenuPlugin
 說明
 ----
 
-**EditorContextMenuPlugin** 能夠在編輯器的情境選單中新增自訂的選項。
+**EditorContextMenuPlugin** allows for the addition of custom options in the editor's context menu. Register them with :ref:`EditorPlugin.add_context_menu_plugin()<class_EditorPlugin_method_add_context_menu_plugin>`.
 
-目前支援三個常用區域的情境選單：檔案系統、場景樹、編輯器腳本清單面板。
+See :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` for the list of available areas where context menu plugins are supported.
 
 .. rst-class:: classref-reftable-group
 
@@ -26,6 +26,8 @@ EditorContextMenuPlugin
 .. table::
    :widths: auto
 
+   +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`_get_menu_options<class_EditorContextMenuPlugin_private_method__get_menu_options>`\ (\ data\: :ref:`Dictionary<class_Dictionary>`\[:ref:`StringName<class_StringName>`, :ref:`Variant<class_Variant>`\]\ ) |virtual|                                  |
    +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void| | :ref:`_popup_menu<class_EditorContextMenuPlugin_private_method__popup_menu>`\ (\ paths\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual|                                                                                                     |
    +--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -59,7 +61,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCENE_TREE** = ``0``
 
-“場景”面板的情境選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 時提供的是目前所選節點路徑的清單，可選回呼接收的是目前所選節點清單。
+Context menu of Scene dock. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_nodes": Array[Node]`` - The list of currently selected nodes (same as :ref:`EditorSelection.get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`).
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_FILESYSTEM:
 
@@ -67,7 +71,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_FILESYSTEM** = ``1``
 
-“檔案系統”面板的情境選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 和可選回呼時提供的是目前所選檔案路徑的清單。
+Context menu of FileSystem dock. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_files": PackedStringArray`` - The list of selected files.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_SCRIPT_EDITOR:
 
@@ -75,7 +81,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCRIPT_EDITOR** = ``2``
 
-“腳本”編輯器中腳本分頁的情境選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 時提供的是目前編輯腳本的路徑，可選回呼接收的是該腳本的參照。
+Context menu of Script editor's script tabs and Shader editor's shader tabs. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_resource": Resource`` - The currently selected resource. Can be a :ref:`Script<class_Script>`, a :ref:`Shader<class_Shader>`, a text file, or ``null`` in case of help pages.
+
+\ ``&"path": String`` - The path of the selected file. If a help page is selected, the path will be the name of the opened class, prefixed with ``help:``.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_FILESYSTEM_CREATE:
 
@@ -83,15 +93,19 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_FILESYSTEM_CREATE** = ``3``
 
-“檔案系統”面板情境選單的“建立...”子選單，或是點選空白位置的主情境選單中的“新建”部分。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 和可選回呼時提供的是目前所選資料夾的路徑。點選空白區域時，為彈出方法提供的路徑清單為空。
+The "Create..." submenu of FileSystem dock's context menu, or the "New" section of the main context menu when empty space is clicked. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"base_directory": String`` - Path to the base directory where a file should be created.
+
+\ ``&"needs_prefix": bool`` - Whether the option needs a "New" prefix (for consistency with native options).
 
 ::
 
-    func _popup_menu(paths):
-        if paths.is_empty():
-            add_context_menu_item("新建影像檔案...", create_image)
+    func _get_menu_options(data):
+        if data["needs_prefix"]:
+            add_context_menu_item("New Image File...", create_image)
         else:
-            add_context_menu_item("影像檔案...", create_image)
+            add_context_menu_item("Image File...", create_image)
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_SCRIPT_EDITOR_CODE:
 
@@ -99,14 +113,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCRIPT_EDITOR_CODE** = ``4``
 
-“腳本”編輯器中程式碼編輯器的情境選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 時提供的是指向 :ref:`CodeEdit<class_CodeEdit>` 的路徑。你可以使用這段程式碼取得該節點：
+Context menu of Script editor's code editor. The data :ref:`Dictionary<class_Dictionary>` contains:
 
-::
+\ ``&"code_edit": CodeEdit`` - The code editor instance.
 
-    func _popup_menu(paths):
-        var code_edit = Engine.get_main_loop().root.get_node(paths[0]);
-
-可選回呼接收的是該節點的參照。你可以使用 :ref:`CodeEdit<class_CodeEdit>` 的方法執行符號查詢等操作。
+\ ``&"file_path": String`` - Path to the currently edited file.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_SCENE_TABS:
 
@@ -114,7 +125,9 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCENE_TABS** = ``5``
 
-場景分頁的情境選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 時提供的點選場景的路徑，在空白區域打開選單時為空的 :ref:`PackedStringArray<class_PackedStringArray>`\ 。可選回呼接收的是點選場景的路徑，未點選場景時為空的 :ref:`String<class_String>`\ 。
+Context menu of scene tabs. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"selected_scene": String`` - Scene path of the selected/clicked scene tab. Empty if empty space was clicked.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_2D_EDITOR:
 
@@ -122,14 +135,11 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_2D_EDITOR** = ``6``
 
-2D 編輯器的基本右鍵選單。呼叫 :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 時提供的是游標下所有 :ref:`CanvasItem<class_CanvasItem>` 的路徑。你可以使用這段程式碼取得這些節點：
+Context menu of the 2D editor's viewport. The data :ref:`Dictionary<class_Dictionary>` contains:
 
-::
+\ ``&"hovered_nodes": Array[CanvasItem]`` - The :ref:`CanvasItem<class_CanvasItem>` nodes under the cursor.
 
-    func _popup_menu(paths):
-        var canvas_item = Engine.get_main_loop().root.get_node(paths[0]); # 將 0 替換為想要的索引。
-
-游標下沒有節點時路徑陣列為空。可選回呼接收的是型別為 :ref:`CanvasItem<class_CanvasItem>` 節點的型別化陣列。
+\ ``&"mouse_position": Vector2`` - The local mouse position in the 2D scene.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_INSPECTOR_PROPERTY:
 
@@ -137,7 +147,13 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
 
-屬性檢視器右鍵選單的情境選單。\ :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 將被呼叫，並傳入一個包含兩項的陣列：第一項是物件的 ID，第二項是屬性名稱。可以通過 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 從 ID 取得物件，但需要先將其轉換為整數。選項回呼將直接接收 EditorProperty。
+Context menu of an editor property in the inspector. The data :ref:`Dictionary<class_Dictionary>` contains:
+
+\ ``&"property": EditorProperty`` - The clicked :ref:`EditorProperty<class_EditorProperty>` object.
+
+\ ``&"object": Object`` - The object edited by the inspector.
+
+\ ``&"property_name": StringName`` - The name of the object's property that was clicked.
 
 .. rst-class:: classref-section-separator
 
@@ -148,13 +164,27 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 方法說明
 --------
 
+.. _class_EditorContextMenuPlugin_private_method__get_menu_options:
+
+.. rst-class:: classref-method
+
+|void| **_get_menu_options**\ (\ data\: :ref:`Dictionary<class_Dictionary>`\[:ref:`StringName<class_StringName>`, :ref:`Variant<class_Variant>`\]\ ) |virtual| :ref:`🔗<class_EditorContextMenuPlugin_private_method__get_menu_options>`
+
+Called when creating a context menu, custom options can be added by using the :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>` or :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>` functions. ``data`` contains the context data, which differs depending on the context menu slot. See the descriptions of :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` for more information.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorContextMenuPlugin_private_method__popup_menu:
 
 .. rst-class:: classref-method
 
 |void| **_popup_menu**\ (\ paths\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_EditorContextMenuPlugin_private_method__popup_menu>`
 
-建立情境選單時呼叫，可以使用 :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>` 或 :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>` 函式新增自訂選項。\ ``paths`` 包含目前選中的路徑（取決於選單），可以借此有選擇地新增選項。
+**已棄用：** Use :ref:`_get_menu_options()<class_EditorContextMenuPlugin_private_method__get_menu_options>` instead.
+
+**Note:** Implementing this method makes the shortcut callbacks receive legacy data (for compatibility reasons).
 
 .. rst-class:: classref-item-separator
 
@@ -166,14 +196,14 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_menu_item**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_menu_item>`
 
-在外掛指定槽位的情境選單中新增自訂選項。啟用該選項時會呼叫 ``callback``\ 。回呼應當接受一個 :ref:`Array<class_Array>` 參數；該陣列的內容取決於情境選單槽位。
+Add custom option to the context menu of the plugin's specified slot. ``callback`` should be a method that takes a single argument of type :ref:`Dictionary<class_Dictionary>`. It will be called when the option is activated and the data received in the callback is the same as in :ref:`_get_menu_options()<class_EditorContextMenuPlugin_private_method__get_menu_options>`.
 
 ::
 
-    func _popup_menu(paths):
-        add_context_menu_item("檔案自訂選項", handle, ICON)
+    func _get_menu_options(data):
+        add_context_menu_item("File Custom options", handle, ICON)
 
-如果你想要為選單項設定快捷鍵，請改用 :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>`\ 。
+If you want to assign shortcut to the menu item, use :ref:`add_context_menu_item_from_shortcut()<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -185,15 +215,15 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_menu_item_from_shortcut**\ (\ name\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_menu_item_from_shortcut>`
 
-在外掛指定槽位的情境選單中新增自訂選項。該選項會設定快捷鍵 ``shortcut`` 並重用其回呼。快捷鍵必須事先用 :ref:`add_menu_shortcut()<class_EditorContextMenuPlugin_method_add_menu_shortcut>` 注冊。
+Add custom option to the context menu of the plugin's specified slot. The option will have the ``shortcut`` assigned and reuse its callback. The shortcut has to be registered beforehand with :ref:`add_menu_shortcut()<class_EditorContextMenuPlugin_method_add_menu_shortcut>`.
 
 ::
 
     func _init():
         add_menu_shortcut(SHORTCUT, handle)
 
-    func _popup_menu(paths):
-        add_context_menu_item_from_shortcut("檔案自訂選項", SHORTCUT, ICON)
+    func _get_menu_options(paths):
+        add_context_menu_item_from_shortcut("File Custom options", SHORTCUT, ICON)
 
 .. rst-class:: classref-item-separator
 
@@ -205,17 +235,17 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_context_submenu_item**\ (\ name\: :ref:`String<class_String>`, menu\: :ref:`PopupMenu<class_PopupMenu>`, icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_context_submenu_item>`
 
-在外掛指定槽位的情境選單中新增子選單。子選單不會自動處理，你需要自行連接訊號。另外每次彈出後都會釋放子選單，所以每次都需要提供新的 :ref:`PopupMenu<class_PopupMenu>`\ 。
+Add a submenu to the context menu of the plugin's specified slot. The submenu is not automatically handled, you need to connect to its signals yourself. Also the submenu is freed on every popup, so provide a new :ref:`PopupMenu<class_PopupMenu>` every time.
 
 ::
 
-    func _popup_menu(paths):
+    func _get_menu_options(data):
         var popup_menu = PopupMenu.new()
-        popup_menu.add_item("藍色")
-        popup_menu.add_item("白色")
+        popup_menu.add_item("Blue")
+        popup_menu.add_item("White")
         popup_menu.id_pressed.connect(_on_color_submenu_option)
 
-        add_context_submenu_item("設定節點顏色", popup_menu)
+        add_context_submenu_item("Set Node Color", popup_menu)
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +257,7 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 |void| **add_menu_shortcut**\ (\ shortcut\: :ref:`Shortcut<class_Shortcut>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_menu_shortcut>`
 
-為外掛的情境選單注冊快捷鍵。該方法只應呼叫一次（例如在外掛的 :ref:`Object._init()<class_Object_private_method__init>` 中呼叫）。當使用者按下 ``shortcut`` 快捷鍵且選單情境有效時就會呼叫 ``callback``\ （例如聚焦“檔案系統”面板）。回呼應接受一個 :ref:`Array<class_Array>` 參數；陣列內容取決於具體的情境選單槽位。
+Registers a shortcut associated with the plugin's context menu. This method should be called once (e.g. in the plugin's :ref:`Object._init()<class_Object_private_method__init>`). ``callback`` will be called when user presses the specified ``shortcut`` while the menu's context is in effect (e.g. FileSystem dock is focused). Callback should take single data :ref:`Dictionary<class_Dictionary>`, same as in :ref:`add_context_menu_item()<class_EditorContextMenuPlugin_method_add_context_menu_item>`.
 
 ::
 

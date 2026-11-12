@@ -14,9 +14,9 @@ Clase base para el servidor y cliente de WebSocket.
 Descripción
 ----------------------
 
-Clase base para el servidor y el cliente de WebSocket, que permite utilizarlos como pares multijugador para la :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+Base class for WebSocket server and client, allowing them to be used as multiplayer peer for the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el preajuste de exportación de Android antes de exportar el proyecto o utilizar la implementación con un solo clic. De lo contrario, la comunicación de red de cualquier tipo será bloqueada por Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,11 @@ Descripciones de Propiedades
 
 Las cabeceras adicionales que se usarán durante el establecimiento de comunicación. Véase :ref:`WebSocketPeer.handshake_headers<class_WebSocketPeer_property_handshake_headers>` para más detalles.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +173,11 @@ El tamaño del búfer de salida para los pares conectados. Véase :ref:`WebSocke
 
 Los subprotocolos WebSocket soportados. Véase :ref:`WebSocketPeer.supported_protocols<class_WebSocketPeer_property_supported_protocols>` para más detalles.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

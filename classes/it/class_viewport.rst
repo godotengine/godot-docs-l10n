@@ -1679,9 +1679,9 @@ Se ``true``, la viewport utilizzerà una copia unica del :ref:`World3D<class_Wor
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-Se ``true``, gli oggetti renderizzati dalla viewport diventano soggetti al processo di selezione del mouse.
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **Nota:** Il numero di oggetti selezionabili simultaneamente è limitato a 64 e sono selezionati in un ordine non deterministico, che può essere diverso in ogni processo di selezione.
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ Se ``true``, gli oggetti renderizzati dalla viewport diventano soggetti al proce
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Se ``true``, il segnale input_event verrà inviato solo a un oggetto fisico nel processo di selezione del mouse. Se vuoi ottenere solo l'oggetto più in alto, devi anche abilitare :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Se ``false``, un segnale input_event verrà inviato a tutti gli oggetti fisici nel processo di selezione del mouse.
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-Questo si applica solo alla selezione degli oggetti CanvasItem in 2D.
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ Questo si applica solo alla selezione degli oggetti CanvasItem in 2D.
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Se ``true``, gli oggetti ricevono eventi di selezione del mouse ordinati principalmente in base al loro :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e secondariamente in base alla loro posizione nell'albero di scene. Se ``false``, l'ordine non è determinato.
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **Nota:** Questa impostazione è disabilitata per impostazione predefinita a causa del suo potenziale costo computazionale elevato.
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **Nota:** L'ordinamento avviene dopo aver selezionato gli oggetti selezionabili. A causa della limitazione di 64 oggetti selezionabili contemporaneamente, non è garantito che l'oggetto con il :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` più alto riceva l'evento di selezione.
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ La quantità di suddivisione del quarto quadrante sull'atlante delle ombre.
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-La risoluzione dell'atlante delle ombre (utilizzata per luci omnidirezionali e spot). Il valore è arrotondato alla potenza di 2 più vicina.
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **Nota:** Se impostato su ``0``, non saranno visibili ombre posizionali. Ciò può migliorare significativamente le prestazioni sui sistemi di fascia bassa, riducendo sia il carico della CPU sia il carico della GPU (poiché servono meno chiamate di disegno per disegnare la scena senza ombre).
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ Restituisce la trasformazione di allungamento 2D calcolata automaticamente, tene
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Restituisce la texture della viewport.
+Returns the viewport's texture.
 
-\ **Nota:** Quando si tenta di memorizzare la texture attuale (ad esempio in un file), potrebbe essere completamente nera o obsoleta se questo metodo è chiamato troppo presto, specialmente se chiamato ad esempio in :ref:`Node._ready()<class_Node_private_method__ready>`. Per assicurarti che la texture ottenuta sia corretta, puoi attendere il segnale :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
+\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
 
 
 .. tabs::
@@ -2428,7 +2428,7 @@ Restituisce la texture della viewport.
 
 
 
-\ **Nota:** Quando :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true`` la texture restituita sarà un'immagine HDR in codifica lineare.
+\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ SubViewportContainer
 Описание
 ----------------
 
-Контейнер, отображающий содержимое базовых дочерних узлов :ref:`SubViewport<class_SubViewport>`. Он использует объединенный размер :ref:`SubViewport<class_SubViewport>` в качестве минимального размера, если только не включено :ref:`stretch<class_SubViewportContainer_property_stretch>`.
+A container that displays the contents of underlying :ref:`SubViewport<class_SubViewport>` child nodes. It uses the combined size of the :ref:`SubViewport<class_SubViewport>`\ s as minimum size, unless :ref:`stretch<class_SubViewportContainer_property_stretch>` is enabled.
 
-\ **Примечание:** Изменение :ref:`Control.scale<class_Control_property_scale>` **SubViewportContainer** приведет к искажению его содержимого. Чтобы изменить его визуальный размер без искажения, вместо этого отрегулируйте поля узла (если он еще не находится в контейнере).
+\ **Note:** Changing a **SubViewportContainer**'s :ref:`Control.scale<class_Control_property_scale>` will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's offset properties instead (if it's not already in a container).
 
-\ **Примечание:** **SubViewportContainer** пересылает уведомления о входе и выходе мыши в свои подчиненные окна просмотра.
+\ **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
 
 .. rst-class:: classref-reftable-group
 

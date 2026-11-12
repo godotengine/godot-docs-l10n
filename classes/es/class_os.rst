@@ -108,6 +108,8 @@ Métodos
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`get_name<class_OS_method_get_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                     |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_preferred_locales<class_OS_method_get_preferred_locales>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                           |
+   +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_exit_code<class_OS_method_get_process_exit_code>`\ (\ pid\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                              |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_id<class_OS_method_get_process_id>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                         |
@@ -226,6 +228,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
+**Obsoleto:** This constant is not used by the engine.
+
 The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically uses features from Vulkan 1.1, 1.2, and 1.3 if available.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
@@ -233,6 +237,8 @@ The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically us
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_OPENGL3** = ``1``
+
+**Obsoleto:** This constant is not used by the engine.
 
 The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platforms, OpenGL ES 3.0 on mobile devices, and WebGL 2.0 on Web.
 
@@ -242,6 +248,8 @@ The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platfo
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
+**Obsoleto:** This constant is not used by the engine.
+
 El controlador de renderizado Direct3D 12. Requiere el nivel de característica 12_0 y soporte para Shader Model 6.0.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
@@ -249,6 +257,8 @@ El controlador de renderizado Direct3D 12. Requiere el nivel de característica 
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_METAL** = ``3``
+
+**Obsoleto:** This constant is not used by the engine.
 
 El controlador de renderizado de Metal.
 
@@ -505,13 +515,13 @@ Crashea el motor (o el editor si se llama desde un script ``@tool``). Véase tam
 
 :ref:`int<class_int>` **create_instance**\ (\ arguments\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_OS_method_create_instance>`
 
-Crea una nueva instancia de Godot que se ejecuta de forma independiente. Los ``arguments`` se utilizan en el orden dado y separados por un espacio.
+Creates a new instance of Godot that runs independently. The ``arguments`` are used in the given order and separated by a space.
 
-Si el proceso se crea correctamente, este método devuelve el ID del nuevo proceso, que puedes usar para monitorizarlo (y potencialmente terminarlo con :ref:`kill()<class_OS_method_kill>`). Si el proceso no puede crearse, este método devuelve ``-1``.
+If the process is successfully created, this method returns the new process's ID, which you can use to monitor the process (and potentially terminate it with :ref:`kill()<class_OS_method_kill>`). If the process cannot be created, this method returns ``-1``.
 
-Véase :ref:`create_process()<class_OS_method_create_process>` si deseas ejecutar un proceso diferente.
+See :ref:`create_process()<class_OS_method_create_process>` if you wish to run a different process.
 
-\ **Nota:** Este método está implementado en Android, Linux, macOS y Windows.
+\ **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +800,7 @@ Se puede configurar :ref:`ProjectSettings.editor/run/main_run_args<class_Project
 
 
 
-\ **Nota:** No se recomienda pasar directamente argumentos personalizados del usuario, ya que el motor puede descartarlos o modificarlos. En su lugar, pase el doble guión estándar de UNIX (``--``) y luego los argumentos personalizados, los cuales el motor ignorará por diseño. Estos pueden leerse mediante el método :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Nota:** No se recomienda pasar directamente argumentos personalizados del usuario, ya que el motor puede descartarlos o modificarlos. En su lugar, pase el doble guión estándar de UNIX (\ ``--``) y luego los argumentos personalizados, los cuales el motor ignorará por diseño. Estos pueden leerse mediante el método :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -991,9 +1001,9 @@ Returns the host OS locale as a :ref:`String<class_String>` of the form ``langua
 
 - ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
 
-- ``VARIANT`` - language variant, region and sort order. The variant can have any number of underscored keywords.
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
 
-- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order and numbering system information.
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
 
 If you want only the language code and not the fully specified locale from the OS, you can use :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
 
@@ -1144,6 +1154,30 @@ Returns the name of the host platform.
 
 ----
 
+.. _class_OS_method_get_preferred_locales:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_preferred_locales**\ (\ ) |const| :ref:`🔗<class_OS_method_get_preferred_locales>`
+
+Returns an array of locales preferred by the user, in order of preference. Each locale is as a :ref:`String<class_String>` on the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
+
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
+
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
+
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
+
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
+
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
+
+\ **Note:** This method is implemented on macOS, iOS, and Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OS_method_get_process_exit_code:
 
 .. rst-class:: classref-method
@@ -1194,9 +1228,9 @@ Devuelve el número de núcleos de CPU *lógicos* disponibles en la máquina hos
 
 :ref:`String<class_String>` **get_processor_name**\ (\ ) |const| :ref:`🔗<class_OS_method_get_processor_name>`
 
-Devuelve el nombre completo del modelo de CPU en la máquina host (p. ej. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
+Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
 
-\ **Nota:** Este método sólo está implementado en Windows, macOS, Linux e iOS. En Android y Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` devuelve una string vacía.
+\ **Note:** This method is only implemented on Windows, macOS, Linux, Android (API level 31+), and iOS. On Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` returns an empty string.
 
 .. rst-class:: classref-item-separator
 

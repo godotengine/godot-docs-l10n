@@ -110,7 +110,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 导航查询的路径数组结果。所有的路径数组位置都使用全局坐标。未自定义查询参数时，与 :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` 返回的路径相同。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 管理路径上的各个点所经过的地区和链接的 :ref:`Object<class_Object>` 的 ``ObjectID``\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 路径上的各个点所经过的导航图元类型（地区或链接）。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

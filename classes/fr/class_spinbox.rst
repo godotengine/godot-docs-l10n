@@ -48,7 +48,7 @@ See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
 
 \ **Note:** With the **SpinBox**'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.
 
-\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
+\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background and audio feedback on its text field, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
 
 \ **Note:** If you want to implement drag and drop for the underlying :ref:`LineEdit<class_LineEdit>`, you can use :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` on the node returned by :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
 
@@ -60,27 +60,33 @@ Propriétés
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` | :ref:`alignment<class_SpinBox_property_alignment>`                           | ``0``                                                                        |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                           | :ref:`custom_arrow_round<class_SpinBox_property_custom_arrow_round>`         | ``false``                                                                    |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                                         | :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>`           | ``0.0``                                                                      |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                           | :ref:`editable<class_SpinBox_property_editable>`                             | ``true``                                                                     |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                                       | :ref:`prefix<class_SpinBox_property_prefix>`                                 | ``""``                                                                       |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                           | :ref:`select_all_on_focus<class_SpinBox_property_select_all_on_focus>`       | ``false``                                                                    |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\]            | size_flags_vertical                                                          | ``1`` (overrides :ref:`Control<class_Control_property_size_flags_vertical>`) |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                                         | step                                                                         | ``1.0`` (overrides :ref:`Range<class_Range_property_step>`)                  |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                                       | :ref:`suffix<class_SpinBox_property_suffix>`                                 | ``""``                                                                       |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                           | :ref:`update_on_text_changed<class_SpinBox_property_update_on_text_changed>` | ``false``                                                                    |
-   +-------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` | :ref:`alignment<class_SpinBox_property_alignment>`                                   | ``0``                                                                        |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`custom_arrow_round<class_SpinBox_property_custom_arrow_round>`                 | ``false``                                                                    |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                         | :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>`                   | ``0.0``                                                                      |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`editable<class_SpinBox_property_editable>`                                     | ``true``                                                                     |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                       | :ref:`format<class_SpinBox_property_format>`                                         | ``""``                                                                       |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`             | :ref:`format_auto_translate_mode<class_SpinBox_property_format_auto_translate_mode>` | ``2``                                                                        |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                       | :ref:`plural_format<class_SpinBox_property_plural_format>`                           |                                                                              |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                       | :ref:`prefix<class_SpinBox_property_prefix>`                                         | ``""``                                                                       |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`select_all_on_focus<class_SpinBox_property_select_all_on_focus>`               | ``false``                                                                    |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\]            | size_flags_vertical                                                                  | ``1`` (overrides :ref:`Control<class_Control_property_size_flags_vertical>`) |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                         | step                                                                                 | ``1.0`` (overrides :ref:`Range<class_Range_property_step>`)                  |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                       | :ref:`suffix<class_SpinBox_property_suffix>`                                         | ``""``                                                                       |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`update_on_text_changed<class_SpinBox_property_update_on_text_changed>`         | ``false``                                                                    |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -104,69 +110,77 @@ Propriétés du thème
 .. table::
    :widths: auto
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`down_disabled_icon_modulate<class_SpinBox_theme_color_down_disabled_icon_modulate>`              | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`down_hover_icon_modulate<class_SpinBox_theme_color_down_hover_icon_modulate>`                    | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`down_icon_modulate<class_SpinBox_theme_color_down_icon_modulate>`                                | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`down_pressed_icon_modulate<class_SpinBox_theme_color_down_pressed_icon_modulate>`                | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`up_disabled_icon_modulate<class_SpinBox_theme_color_up_disabled_icon_modulate>`                  | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`up_hover_icon_modulate<class_SpinBox_theme_color_up_hover_icon_modulate>`                        | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`up_icon_modulate<class_SpinBox_theme_color_up_icon_modulate>`                                    | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`up_pressed_icon_modulate<class_SpinBox_theme_color_up_pressed_icon_modulate>`                    | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`buttons_vertical_separation<class_SpinBox_theme_constant_buttons_vertical_separation>`           | ``0``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`buttons_width<class_SpinBox_theme_constant_buttons_width>`                                       | ``16``                              |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`field_and_buttons_separation<class_SpinBox_theme_constant_field_and_buttons_separation>`         | ``2``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`set_min_buttons_width_from_icons<class_SpinBox_theme_constant_set_min_buttons_width_from_icons>` | ``1``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`down<class_SpinBox_theme_icon_down>`                                                             |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`down_disabled<class_SpinBox_theme_icon_down_disabled>`                                           |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`down_hover<class_SpinBox_theme_icon_down_hover>`                                                 |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`down_pressed<class_SpinBox_theme_icon_down_pressed>`                                             |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`up<class_SpinBox_theme_icon_up>`                                                                 |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`up_disabled<class_SpinBox_theme_icon_up_disabled>`                                               |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`up_hover<class_SpinBox_theme_icon_up_hover>`                                                     |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`up_pressed<class_SpinBox_theme_icon_up_pressed>`                                                 |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`updown<class_SpinBox_theme_icon_updown>`                                                         |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`down_background<class_SpinBox_theme_style_down_background>`                                      |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`down_background_disabled<class_SpinBox_theme_style_down_background_disabled>`                    |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`down_background_hovered<class_SpinBox_theme_style_down_background_hovered>`                      |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`down_background_pressed<class_SpinBox_theme_style_down_background_pressed>`                      |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`field_and_buttons_separator<class_SpinBox_theme_style_field_and_buttons_separator>`              |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`up_background<class_SpinBox_theme_style_up_background>`                                          |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`up_background_disabled<class_SpinBox_theme_style_up_background_disabled>`                        |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`up_background_hovered<class_SpinBox_theme_style_up_background_hovered>`                          |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`up_background_pressed<class_SpinBox_theme_style_up_background_pressed>`                          |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`up_down_buttons_separator<class_SpinBox_theme_style_up_down_buttons_separator>`                  |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`down_disabled_icon_modulate<class_SpinBox_theme_color_down_disabled_icon_modulate>`              | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`down_hover_icon_modulate<class_SpinBox_theme_color_down_hover_icon_modulate>`                    | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`down_icon_modulate<class_SpinBox_theme_color_down_icon_modulate>`                                | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`down_pressed_icon_modulate<class_SpinBox_theme_color_down_pressed_icon_modulate>`                | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`up_disabled_icon_modulate<class_SpinBox_theme_color_up_disabled_icon_modulate>`                  | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`up_hover_icon_modulate<class_SpinBox_theme_color_up_hover_icon_modulate>`                        | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`up_icon_modulate<class_SpinBox_theme_color_up_icon_modulate>`                                    | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`up_pressed_icon_modulate<class_SpinBox_theme_color_up_pressed_icon_modulate>`                    | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`buttons_vertical_separation<class_SpinBox_theme_constant_buttons_vertical_separation>`           | ``0``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`buttons_width<class_SpinBox_theme_constant_buttons_width>`                                       | ``16``                              |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`field_and_buttons_separation<class_SpinBox_theme_constant_field_and_buttons_separation>`         | ``2``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`icon_max_width<class_SpinBox_theme_constant_icon_max_width>`                                     | ``0``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`set_min_buttons_width_from_icons<class_SpinBox_theme_constant_set_min_buttons_width_from_icons>` | ``1``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`down<class_SpinBox_theme_icon_down>`                                                             |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`down_disabled<class_SpinBox_theme_icon_down_disabled>`                                           |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`down_hover<class_SpinBox_theme_icon_down_hover>`                                                 |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`down_pressed<class_SpinBox_theme_icon_down_pressed>`                                             |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`up<class_SpinBox_theme_icon_up>`                                                                 |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`up_disabled<class_SpinBox_theme_icon_up_disabled>`                                               |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`up_hover<class_SpinBox_theme_icon_up_hover>`                                                     |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`up_pressed<class_SpinBox_theme_icon_up_pressed>`                                                 |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`updown<class_SpinBox_theme_icon_updown>`                                                         |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_SpinBox_theme_sound_focus_sound>`                                              |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_disabled_sound<class_SpinBox_theme_sound_pressed_disabled_sound>`                        |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_sound<class_SpinBox_theme_sound_pressed_sound>`                                          |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`down_background<class_SpinBox_theme_style_down_background>`                                      |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`down_background_disabled<class_SpinBox_theme_style_down_background_disabled>`                    |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`down_background_hovered<class_SpinBox_theme_style_down_background_hovered>`                      |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`down_background_pressed<class_SpinBox_theme_style_down_background_pressed>`                      |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`field_and_buttons_separator<class_SpinBox_theme_style_field_and_buttons_separator>`              |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`up_background<class_SpinBox_theme_style_up_background>`                                          |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`up_background_disabled<class_SpinBox_theme_style_up_background_disabled>`                        |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`up_background_hovered<class_SpinBox_theme_style_up_background_hovered>`                          |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`up_background_pressed<class_SpinBox_theme_style_up_background_pressed>`                          |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`up_down_buttons_separator<class_SpinBox_theme_style_up_down_buttons_separator>`                  |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -247,6 +261,65 @@ Si ``true``, la **SpinBox** sera modifiable. Sinon, elle sera en lecture seule.
 
 ----
 
+.. _class_SpinBox_property_format:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **format** = ``""`` :ref:`🔗<class_SpinBox_property_format>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_format**\ (\ value\: :ref:`String<class_String>`\ )
+- :ref:`String<class_String>` **get_format**\ (\ )
+
+The formatting of the displayed numeric value, using the same rules as :ref:`String<class_String>`'s ``%`` operator (see :doc:`GDScript format strings <../tutorials/scripting/gdscript/gdscript_format_string>`). If empty, the value is displayed with no special formatting. If the format string is invalid, the **SpinBox** will display ``"<Invalid>"``, with the error message available as a configuration warning.
+
+The following format strings can be used as examples:
+
+- ``"(%s)"`` displays as a number in parentheses (e.g. ``(6.9)``).
+
+- ``"%d ms"`` displays as an integer with milliseconds unit (e.g. ``420 ms``).
+
+- ``"%0.2f%%"`` displays as a percentage, with 2 decimal places of precision (e.g. ``21.37%``).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SpinBox_property_format_auto_translate_mode:
+
+.. rst-class:: classref-property
+
+:ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **format_auto_translate_mode** = ``2`` :ref:`🔗<class_SpinBox_property_format_auto_translate_mode>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_format_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
+- :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_format_auto_translate_mode**\ (\ )
+
+Auto-translation mode for the :ref:`format<class_SpinBox_property_format>`. Useful when the format has a word that can be translated.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SpinBox_property_plural_format:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **plural_format** :ref:`🔗<class_SpinBox_property_plural_format>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_plural_format**\ (\ value\: :ref:`String<class_String>`\ )
+- :ref:`String<class_String>` **get_plural_format**\ (\ )
+
+Plural version of :ref:`format<class_SpinBox_property_format>`. Used only if :ref:`format<class_SpinBox_property_format>` is not empty and :ref:`format_auto_translate_mode<class_SpinBox_property_format_auto_translate_mode>` is not disabled. If either :ref:`format<class_SpinBox_property_format>` or this contain ``%s`` the other must also use it. See also :ref:`Object.tr_n()<class_Object_method_tr_n>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_SpinBox_property_prefix:
 
 .. rst-class:: classref-property
@@ -258,7 +331,9 @@ Si ``true``, la **SpinBox** sera modifiable. Sinon, elle sera en lecture seule.
 - |void| **set_prefix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_prefix**\ (\ )
 
-Ajoute la chaîne de caractères de préfixe spécifiée avant la valeur numérique de la **SpinBox**.
+**Obsolète :** Use :ref:`format<class_SpinBox_property_format>` instead.
+
+Adds the specified prefix string before the numerical value of the **SpinBox**. This is used only if :ref:`format<class_SpinBox_property_format>` is empty.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +367,9 @@ Si ``true``, la **SpinBox** sélectionnera tout le texte lorsque le :ref:`LineEd
 - |void| **set_suffix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_suffix**\ (\ )
 
-Ajoute la chaîne de caractères de suffixe spécifiée avant la valeur numérique de la **SpinBox**.
+**Obsolète :** Use :ref:`format<class_SpinBox_property_format>` instead.
+
+Adds the specified suffix string after the numerical value of the **SpinBox**. This is used only if :ref:`format<class_SpinBox_property_format>` is empty.
 
 .. rst-class:: classref-item-separator
 
@@ -485,6 +562,18 @@ Largeur de la séparation horizontale entre le champ de saisie de texte (:ref:`L
 
 ----
 
+.. _class_SpinBox_theme_constant_icon_max_width:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_SpinBox_theme_constant_icon_max_width>`
+
+The maximum allowed width of the **SpinBox**'s up and down icons. The height is adjusted according to the icon's ratio.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_SpinBox_theme_constant_set_min_buttons_width_from_icons:
 
 .. rst-class:: classref-themeproperty
@@ -600,6 +689,42 @@ Icône du bouton haut lorsque le bouton est appuyé.
 :ref:`Texture2D<class_Texture2D>` **updown** :ref:`🔗<class_SpinBox_theme_icon_updown>`
 
 Texture unique représentant à la fois les icônes des boutons haut et bas. Elle est affichée au milieu des boutons et ne change pas lors d'une interaction. Si une icône valide est assignée, elle remplacera :ref:`up<class_SpinBox_theme_icon_up>` et :ref:`down<class_SpinBox_theme_icon_down>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SpinBox_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_SpinBox_theme_sound_focus_sound>`
+
+Played when this **SpinBox** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SpinBox_theme_sound_pressed_disabled_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_disabled_sound** :ref:`🔗<class_SpinBox_theme_sound_pressed_disabled_sound>`
+
+Played when the up or down button is pressed while the **SpinBox** is disabled due to :ref:`editable<class_SpinBox_property_editable>` being ``false``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SpinBox_theme_sound_pressed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_sound** :ref:`🔗<class_SpinBox_theme_sound_pressed_sound>`
+
+Played when the up or down button is pressed.
 
 .. rst-class:: classref-item-separator
 

@@ -19,11 +19,11 @@ MultiplayerPeer
 說明
 ----
 
-管理與一個或多個作為伺服器或使用者端的遠端對等體的連接，並為每個對等體分配唯一的 ID。另請參閱 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
+Manages the connection with one or more remote peers acting as server or client and assigning unique IDs to each of them. See also :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **注意：**\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 協議是一個實作細節，並不打算由非 Godot 伺服器使用。它可能會更改，恕不另行通知。
+\ **Note:** The :ref:`MultiplayerAPI<class_MultiplayerAPI>` protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **注意：**\ 當匯出到 Android 時，在匯出專案或使用一鍵部署之前，確保在 Android 匯出預設中啟用了 ``INTERNET`` 許可權。否則，任何型別的網路通信都會被安卓阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

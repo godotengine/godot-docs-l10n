@@ -18,7 +18,7 @@ VisualShaderNodeExpression
 
 Пользовательское выражение Godot Shading Language с пользовательским числом входных и выходных портов.
 
-Предоставленный код напрямую внедряется в соответствующую шейдерную функцию графа (``vertex``, ``fragment`` или ``light``), поэтому его нельзя использовать для объявления функций, variationings, uniforms или глобальных констант. См. :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` для таких глобальных определений.
+Предоставленный код напрямую внедряется в соответствующую шейдерную функцию графа (\ ``vertex``, ``fragment`` или ``light``), поэтому его нельзя использовать для объявления функций, variationings, uniforms или глобальных констант. См. :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` для таких глобальных определений.
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ VisualShaderNodeExpression
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-Выражение на языке шейдеров Godot, которое будет введено в начало соответствующей шейдерной функции графа (``vertex``, ``fragment`` или ``light``) и, таким образом, не может использоваться для объявления функций, переменных, униформ или глобальных констант.
+Выражение на языке шейдеров Godot, которое будет введено в начало соответствующей шейдерной функции графа (\ ``vertex``, ``fragment`` или ``light``) и, таким образом, не может использоваться для объявления функций, переменных, униформ или глобальных констант.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

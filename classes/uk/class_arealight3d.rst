@@ -151,11 +151,11 @@ AreaLight3D
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-Додаткова текстура, яку можна використовувати як джерело світла. Зміна текстури під час виконання може вплинути на продуктивність, оскільки її потрібно відтворити в атласі площинного світла з використанням відфільтрованих міпмап.
+An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
 
-Якщо текстура не призначена, площинне світло випромінює рівномірне світло по всій своїй поверхні.
+If no texture is assigned, the area light emits uniform light across its surface.
 
-\ **Примітка:** Текстури площинного світла підтримуються лише в методах рендерингу «Forward+» та «Mobile», але не в методі «Compatibility». Щоб зменшити вплив на продуктивність при зміні текстур під час виконання, переконайтеся, що кожен розмір площинної текстури є кратним 128 пікселів або степенем числа 2. Це усуває необхідність у проході масштабування, що уповільнює зміну текстур. Текстури не обов'язково мають бути квадратними, щоб бути оптимальними. Прикладами оптимальних розмірів текстур є 32x64, 128x128 та 256x384.
+\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

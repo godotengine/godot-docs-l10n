@@ -14,7 +14,9 @@ PhysicsShapeQueryParameters3D
 說明
 ----
 
-可以通過修改這個物件的形狀等屬性來為 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` 的方法設定參數。
+By changing various properties of this object, such as the shape, you can configure the parameters for :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`'s methods.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

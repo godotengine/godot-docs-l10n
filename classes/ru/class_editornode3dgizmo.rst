@@ -69,6 +69,8 @@ Gizmo для редактирования объектов :ref:`Node3D<class_No
    +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedInt32Array<class_PackedInt32Array>`               | :ref:`get_subgizmo_selection<class_EditorNode3DGizmo_method_get_subgizmo_selection>`\ (\ ) |const|                                                                                                                                                                                                                               |
    +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                       | :ref:`is_selected<class_EditorNode3DGizmo_method_is_selected>`\ (\ ) |const|                                                                                                                                                                                                                                                     |
+   +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                       | :ref:`is_subgizmo_selected<class_EditorNode3DGizmo_method_is_subgizmo_selected>`\ (\ id\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                       |
    +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                        | :ref:`set_hidden<class_EditorNode3DGizmo_method_set_hidden>`\ (\ hidden\: :ref:`bool<class_bool>`\ )                                                                                                                                                                                                                             |
@@ -93,7 +95,7 @@ Gizmo для редактирования объектов :ref:`Node3D<class_No
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -364,6 +366,18 @@ Gizmo для редактирования объектов :ref:`Node3D<class_No
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_subgizmo_selection**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_get_subgizmo_selection>`
 
 Возвращает список выбранных в данный момент подэлементов. Может использоваться для выделения выбранных элементов во время :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorNode3DGizmo_method_is_selected:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_selected**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_is_selected>`
+
+Returns ``true`` if this gizmo is currently selected. Can be used to write custom visualization logic during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 

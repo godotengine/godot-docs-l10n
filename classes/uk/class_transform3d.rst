@@ -198,7 +198,7 @@ Transform3D
 
 **FLIP_Y** = ``Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)`` :ref:`🔗<class_Transform3D_constant_FLIP_Y>`
 
-**Transform3D** з дзеркалами наноситься перпендикулярно до площини XZ. Його :ref:`basis<class_Transform3D_property_basis>` дорівнює :ref:`Basis. FLIP_Y<class_Basis_constant_ FLIP_Y>`.
+**Transform3D** з дзеркалами наноситься перпендикулярно до площини XZ. Його :ref:`basis<class_Transform3D_property_basis>` дорівнює :ref:`Basis.FLIP_Y<class_Basis_constant_FLIP_Y>`.
 
 .. _class_Transform3D_constant_FLIP_Z:
 
@@ -284,7 +284,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ from\: :ref:`Projection<class_Projection>`\ )
 
-Створює **Transform3D** з :ref:`Projection<class_Projection>`. Оскільки **Transform3D** — це матриця 3×4, а :ref:`Projection<class_Projection>` — матриця 4×4, ця операція обрізає останній рядок матриці проекцій (``from.x.w``, ``from.y.w``, ``from.z.w`` та ``from.w.w`` не включені до нового перетворення).
+Створює **Transform3D** з :ref:`Projection<class_Projection>`. Оскільки **Transform3D** — це матриця 3×4, а :ref:`Projection<class_Projection>` — матриця 4×4, ця операція обрізає останній рядок матриці проекцій (\ ``from.x.w``, ``from.y.w``, ``from.z.w`` та ``from.w.w`` не включені до нового перетворення).
 
 .. rst-class:: classref-item-separator
 

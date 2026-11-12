@@ -42,29 +42,39 @@ ScrollBar
 .. table::
    :widths: auto
 
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement<class_ScrollBar_theme_icon_decrement>`                     |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement_highlight<class_ScrollBar_theme_icon_decrement_highlight>` |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement_pressed<class_ScrollBar_theme_icon_decrement_pressed>`     |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment<class_ScrollBar_theme_icon_increment>`                     |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment_highlight<class_ScrollBar_theme_icon_increment_highlight>` |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment_pressed<class_ScrollBar_theme_icon_increment_pressed>`     |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber<class_ScrollBar_theme_style_grabber>`                        |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_highlight<class_ScrollBar_theme_style_grabber_highlight>`    |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_pressed<class_ScrollBar_theme_style_grabber_pressed>`        |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`scroll<class_ScrollBar_theme_style_scroll>`                          |
-   +-----------------------------------+----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`scroll_focus<class_ScrollBar_theme_style_scroll_focus>`              |
-   +-----------------------------------+----------------------------------------------------------------------------+
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`                 | :ref:`icon_max_size<class_ScrollBar_theme_constant_icon_max_size>`                          | ``0`` |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`decrement<class_ScrollBar_theme_icon_decrement>`                                      |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`decrement_highlight<class_ScrollBar_theme_icon_decrement_highlight>`                  |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`decrement_pressed<class_ScrollBar_theme_icon_decrement_pressed>`                      |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`increment<class_ScrollBar_theme_icon_increment>`                                      |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`increment_highlight<class_ScrollBar_theme_icon_increment_highlight>`                  |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`increment_pressed<class_ScrollBar_theme_icon_increment_pressed>`                      |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_ended_sound<class_ScrollBar_theme_sound_drag_ended_sound>`                       |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_started_sound<class_ScrollBar_theme_sound_drag_started_sound>`                   |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`value_change_rejected_sound<class_ScrollBar_theme_sound_value_change_rejected_sound>` |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`value_changed_sound<class_ScrollBar_theme_sound_value_changed_sound>`                 |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`grabber<class_ScrollBar_theme_style_grabber>`                                         |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`grabber_highlight<class_ScrollBar_theme_style_grabber_highlight>`                     |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`grabber_pressed<class_ScrollBar_theme_style_grabber_pressed>`                         |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`scroll<class_ScrollBar_theme_style_scroll>`                                           |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`scroll_focus<class_ScrollBar_theme_style_scroll_focus>`                               |       |
+   +---------------------------------------+---------------------------------------------------------------------------------------------+-------+
 
 .. rst-class:: classref-section-separator
 
@@ -113,6 +123,18 @@ ScrollBar
 
 Описи тематичної нерухомості
 --------------------------------------------------------
+
+.. _class_ScrollBar_theme_constant_icon_max_size:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **icon_max_size** = ``0`` :ref:`🔗<class_ScrollBar_theme_constant_icon_max_size>`
+
+The maximum allowed size of the **ScrollBar**'s increment and decrement icons. The texture is scaled down so its widest axis is :ref:`icon_max_size<class_ScrollBar_theme_constant_icon_max_size>` and the other axis is scaled keeping the original ratio.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_ScrollBar_theme_icon_decrement:
 
@@ -181,6 +203,54 @@ ScrollBar
 :ref:`Texture2D<class_Texture2D>` **increment_pressed** :ref:`🔗<class_ScrollBar_theme_icon_increment_pressed>`
 
 Переглянуто при натисканні кнопки підняття.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollBar_theme_sound_drag_ended_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_ended_sound** :ref:`🔗<class_ScrollBar_theme_sound_drag_ended_sound>`
+
+Played when mouse or touch drag ends.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollBar_theme_sound_drag_started_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_started_sound** :ref:`🔗<class_ScrollBar_theme_sound_drag_started_sound>`
+
+Played when mouse or touch drag begins.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollBar_theme_sound_value_change_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **value_change_rejected_sound** :ref:`🔗<class_ScrollBar_theme_sound_value_change_rejected_sound>`
+
+Played when the value is attempted to be changed through keyboard or gamepad input, but the value is already at the minimum (or maximum).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollBar_theme_sound_value_changed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **value_changed_sound** :ref:`🔗<class_ScrollBar_theme_sound_value_changed_sound>`
+
+Played when the value is changed through keyboard or gamepad input. If the value is already at the minimum (or maximum), :ref:`value_change_rejected_sound<class_ScrollBar_theme_sound_value_change_rejected_sound>` is played instead.
 
 .. rst-class:: classref-item-separator
 

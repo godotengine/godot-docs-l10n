@@ -529,11 +529,11 @@ Restituisce la lista delle funzionalità OpenType supportate dal font.
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_variation_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_variation_list>`
 
-Restituisce la lista delle `coordinate di variazione <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__ supportate, ogni coordinata viene restituita come ``tag: Vector3i(min_value,max_value,default_value)``.
+Returns list of supported `variation coordinates <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, each coordinate is returned as ``tag: Vector3i(min_value,max_value,default_value)``.
 
-Le variazioni dei font consentono di cambiare continuamente le caratteristiche dei glifi lungo un determinato asse di strutturazione, come peso, larghezza o inclinazione.
+Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.
 
-Per stampare gli assi di variazione disponibili in un font variabile:
+To print available variation axes of a variable font:
 
 ::
 
@@ -543,9 +543,9 @@ Per stampare gli assi di variazione disponibili in un font variabile:
     for tag in variation_list:
         var name = TextServerManager.get_primary_interface().tag_to_name(tag)
         var values = variation_list[tag]
-        print("asse di variazione: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
+        print("variation axis: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
 
-\ **Nota:** Per impostare e ottenere le coordinate di variazione di un :ref:`FontVariation<class_FontVariation>`, usa :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
+\ **Note:** To set and get variation coordinates of a :ref:`FontVariation<class_FontVariation>`, use :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
 
 .. rst-class:: classref-item-separator
 

@@ -14,25 +14,25 @@ Cliente de protocolo de transferencia de hipertexto de bajo nivel.
 Descripción
 ----------------------
 
-Cliente de protocolo de transferencia de hipertexto (a veces llamado "Agente de usuario"). Se utiliza para hacer peticiones HTTP para descargar contenido web, cargar archivos y otros datos o para comunicarse con diversos servicios, entre otros casos de uso.
+Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
 
-Véase :ref:`HTTPRequest<class_HTTPRequest>` para una alternativa de nivel superior.
+See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
 
-\ **Nota:** Este cliente solo necesita conectarse a un host una vez (véase :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) para enviar varias solicitudes. Debido a esto, los métodos que toman URLs normalmente toman solo la parte después del host en lugar de la URL completa, ya que el cliente ya está conectado a un host. Véase :ref:`request()<class_HTTPClient_method_request>` para ver un ejemplo completo y para empezar.
+\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
 
-Un **HTTPClient** debería ser reutilizado entre múltiples peticiones o para conectar a diferentes hosts en lugar de crear un cliente por petición. Admite la Seguridad de la Capa de Transporte (TLS), incluyendo la verificación de certificados de servidor. Los códigos de estado HTTP en el rango de 2xx indican éxito, 3xx redirección (es decir, "intentarlo de nuevo, pero por aquí"), 4xx algo estaba mal con la solicitud, y 5xx algo salió mal en el lado del servidor.
+An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
-Para más información sobre HTTP, consulta la `documentación de MDN sobre HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (o lee la `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ para obtenerla directamente de la fuente).
+For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
 
-\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el preajuste de exportación de Android antes de exportar el proyecto o usar el despliegue con un clic. De lo contrario, cualquier tipo de comunicación de red será bloqueada por Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Nota:** Se recomienda usar cifrado de transporte (TLS) y evitar el envío de información sensible (como credenciales de inicio de sesión) en los parámetros URL de las solicitudes HTTP GET. Considera usar solicitudes HTTP POST o encabezados HTTP para dicha información en su lugar.
+\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
-\ **Nota:** Al realizar peticiones HTTP desde un proyecto exportado a la Web, ten en cuenta que el servidor remoto podría no permitir peticiones de orígenes externos debido a `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. Si alojas el servidor en cuestión, deberías modificar su backend para permitir peticiones de orígenes externos añadiendo la cabecera HTTP ``Access-Control-Allow-Origin: *``.
+\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
 
-\ **Nota:** El soporte de TLS está actualmente limitado a TLSv1.2 y TLSv1.3. Intentar conectarse a un servidor que solo soporta versiones TLS más antiguas (inseguras) devolverá un error.
+\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
 
-\ **Advertencia:** La revocación de certificados TLS y el anclaje de certificados no están actualmente soportados. Los certificados revocados se aceptan siempre que sean válidos de otra manera. Si esto es una preocupación, puedes querer usar certificados gestionados automáticamente con un período de validez corto.
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-introduction-group
 
@@ -1067,7 +1067,7 @@ Lee un trozo de la respuesta.
 
 Envía una solicitud HTTP al host conectado usando el ``method`` dado.
 
-El parámetro URL normalmente es solo la parte después del host, así que para ``https://ejemplo.com/index.php``, sería ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (``host:port``).
+El parámetro URL normalmente es solo la parte después del host, así que para ``https://ejemplo.com/index.php``, sería ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (\ ``host:port``).
 
 \ ``headers`` son los encabezados de la solicitud HTTP.
 
@@ -1106,7 +1106,7 @@ Para crear una solicitud POST con cadenas de consulta que se envíen al servidor
 
 Envía una solicitud HTTP sin procesar al host conectado con el ``method`` dado.
 
-El parámetro URL es normalmente solo la parte después del host, así que para ``https://example.com/index.php``, es ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (``host:port``).
+El parámetro URL es normalmente solo la parte después del host, así que para ``https://example.com/index.php``, es ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (\ ``host:port``).
 
 \ ``headers`` son las cabeceras de la solicitud HTTP.
 

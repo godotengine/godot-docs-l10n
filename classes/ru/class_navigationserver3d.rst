@@ -16,21 +16,21 @@ NavigationServer3D
 Описание
 ----------------
 
-NavigationServer3D — это сервер, который обрабатывает навигационные карты, регионы и агентов. Он не обрабатывает навигацию A\* из :ref:`AStar3D<class_AStar3D>`.
+NavigationServer3D is the server that handles navigation maps, regions, and agents. It does not handle A\* navigation from :ref:`AStar3D<class_AStar3D>`.
 
-Карты делятся на регионы, которые состоят из навигационных сеток. Вместе они определяют навигационные области в трехмерном мире.
+Maps are divided into regions, which are composed of navigation meshes. Together, they define the navigable areas in the 3D world.
 
-\ **Примечание:** Большинство изменений **NavigationServer3D** вступают в силу после следующего физического кадра, а не немедленно. Это включает все изменения, внесенные в карты, регионы или агентов узлами, связанными с навигацией, в дереве сцены или выполненные через скрипты.
+\ **Note:** Most **NavigationServer3D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions, or agents by navigation-related nodes in the scene tree or made through scripts.
 
-Чтобы два региона были соединены друг с другом, они должны иметь общее ребро. Ребро считается соединенным с другим, если обе его две вершины находятся на расстоянии меньшем, чем ``edge_connection_margin`` до вершины соответствующего другого ребра.
+For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
 
-Вы можете назначить навигационные слои областям с помощью :ref:`region_set_navigation_layers()<class_NavigationServer3D_method_region_set_navigation_layers>`, которые затем можно проверить при запросе пути с помощью :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`. Это можно использовать для разрешения или запрета определенных областей для некоторых объектов.
+You may assign navigation layers to regions with :ref:`region_set_navigation_layers()<class_NavigationServer3D_method_region_set_navigation_layers>`, which then can be checked upon when requesting a path with :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`. This can be used to allow or deny certain areas for some objects.
 
-Чтобы использовать систему избежания столкновений, вы можете использовать агентов. Вы можете установить целевую скорость агента, затем серверы отправят обратный вызов с измененной скоростью.
+To use the collision avoidance system, you may use agents. You can set an agent's target velocity, then the servers will emit a callback with a modified velocity.
 
-\ **Примечание:** Система избежания столкновений игнорирует области. Использование измененной скорости напрямую может переместить агента за пределы проходимой области. Это ограничение системы избежания столкновений, любая более сложная ситуация может потребовать использования физического движка.
+\ **Note:** The collision avoidance system ignores regions. Using the modified velocity directly may move an agent outside of the traversable area. This is a limitation of the collision avoidance system, any more complex situation may require the use of the physics engine.
 
-Этот сервер отслеживает все вызовы и выполняет их во время фазы синхронизации. Это означает, что вы можете запросить любое изменение карты, используя любой поток, не беспокоясь.
+This server keeps tracks of any call and executes them during the sync phase. This means that you can request any change to the map, using any thread, without worrying.
 
 .. rst-class:: classref-introduction-group
 
@@ -898,7 +898,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_time_horizon_agents**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_agents>`
 
-Минимальное количество времени, в течение которого скорости агента, вычисленные симуляцией, безопасны по отношению к другим агентам. Чем больше это число, тем скорее этот агент отреагирует на присутствие других агентов, но тем меньше у него свободы в выборе своих скоростей. Слишком большое значение значительно замедлит движение агентов. Должно быть положительным.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to other agents. The larger this number, the sooner this agent will respond to the presence of other agents, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_obstacles>`
 
-Минимальное количество времени, в течение которого скорости агента, вычисленные симуляцией, безопасны относительно статических препятствий для избегания. Чем больше это число, тем скорее этот агент отреагирует на наличие статических препятствий для избегания, но тем меньше у этого агента свободы в выборе своих скоростей. Слишком большое значение значительно замедлит движение агентов. Должно быть положительным.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to static avoidance obstacles. The larger this number, the sooner this agent will respond to the presence of static avoidance obstacles, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -922,11 +922,11 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_use_3d_avoidance**\ (\ agent\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_use_3d_avoidance>`
 
-Устанавливает, использует ли агент 2D-избегание или 3D-избегание, когда включено избегание.
+Sets if the agent uses the 2D avoidance or the 3D avoidance while avoidance is enabled.
 
-Если ``true``, агент вычисляет скорости избегания в 3D для оси xyz, например, для игр, которые происходят в воздухе, под водой или в космосе. 3D-использующий агент избегает только других 3D-использующих агентов. 3D-использующий агент реагирует только на препятствия избегания на основе радиуса. 3D-использующий агент игнорирует любые препятствия на основе вершин. 3D-использующий агент избегает только других 3D-использующих агентов.
+If ``true`` the agent calculates avoidance velocities in 3D for the XYZ axes, e.g. for games that take place in the air, underwater, or space. The 3D agent only avoids other 3D avoidance agents. The 3D agent only reacts to radius based avoidance obstacles. The 3D agent ignores any vertices based obstacles. The 3D agent only avoids other 3D agents.
 
-Если ``false``, агент вычисляет скорости избегания в 2D вдоль оси xz, игнорируя ось y. 2D-использующий агент избегает только других 2D-использующих агентов. 2D-использующий агент реагирует на препятствия избегания на основе радиуса. Агент 2D using реагирует на препятствия, основанные на вершинах. Агент 2D using избегает только других агентов 2D using. Агенты 2D using будут игнорировать других агентов 2D using или препятствия, которые находятся ниже их текущего положения или выше их текущего положения, включая высоту агентов в 2D Avoidance.
+If ``false`` the agent calculates avoidance velocities in 2D along the xz-axes ignoring the y-axis. The 2D agent only avoids other 2D avoidance agents. The 2D agent reacts to radius avoidance obstacles. The 2D agent reacts to vertex based avoidance obstacles. The 2D agent only avoids other 2D agents. 2D agents will ignore other 2D agents or obstacles that are below their current position or above their current position including the agent's height in 2D avoidance.
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +938,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_velocity**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_velocity>`
 
-Устанавливает ``velocity`` как новую желаемую скорость для указанного ``agent``. Симуляция избегания попытается достичь этой скорости, если это возможно, но изменит ее, чтобы избежать столкновения с другими агентами и препятствиями. Когда агент телепортируется в новое положение, используйте также :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>`, чтобы сбросить внутреннюю скорость симуляции.
+Sets ``velocity`` as the new wanted velocity for the specified ``agent``. The avoidance simulation will try to achieve this velocity if possible, but will adjust it to avoid colliding with other agents and obstacles. When an agent is teleported to a new position far away, use :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>` instead to reset the internal velocity state.
 
 .. rst-class:: classref-item-separator
 
@@ -1240,7 +1240,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **link_set_navigation_layers**\ (\ link\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_link_set_navigation_layers>`
 
-Установить навигационные слои ссылок. Это позволяет выбирать ссылки из запроса пути (при использовании :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`).
+Sets the given ``link``'s navigation layers to ``navigation_layers``. This allows selecting links from a path request (when using :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1302,13 +1302,13 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 **Устарело:** This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.
 
-Эта функция немедленно принудительно синхронизирует указанную навигационную ``map`` :ref:`RID<class_RID>`. По умолчанию навигационные карты синхронизируются только в конце каждого физического кадра. Эту функцию можно использовать для немедленного (пере)расчета всех навигационных сеток и связей регионов навигационной карты. Это позволяет немедленно запросить навигационный путь для измененной карты в том же кадре (несколько раз, если необходимо).
+This function immediately forces synchronization of the specified navigation ``map`` :ref:`RID<class_RID>`. By default navigation maps are only synchronized at the end of each physics frame. This function can be used to immediately (re)calculate all the navigation meshes and region connections of the navigation map. This makes it possible to query a navigation path for a changed map immediately and in the same frame (multiple times if needed).
 
-Из-за технических ограничений текущая очередь команд NavigationServer будет очищена. Это означает, что будут выполнены все уже поставленные в очередь команды обновления для этого физического кадра, даже те, которые предназначены для других карт, регионов и агентов, не являющихся частью указанной карты. Дорогостоящие вычисления навигационных сеток и связей регионов карты будут выполнены только для указанной карты. Другие карты получат обычную синхронизацию в конце физического кадра. Если указанная карта получит изменения после принудительного обновления, она также обновится снова, когда другие карты получат свое обновление.
+Due to technical restrictions the current NavigationServer command queue will be flushed. This means all already queued update commands for this physics frame will be executed, even those intended for other maps, regions, and agents not part of the specified map. The expensive computation of the navigation meshes and region connections of a map will only be done for the specified map. Other maps will receive the normal synchronization at the end of the physics frame. Should the specified map receive changes after the forced update it will update again as well when the other maps receive their update.
 
-Обработка уклонения и отправка сигналов ``safe_velocity`` не затрагивается этой функцией и продолжает происходить для всех карт и агентов в конце физического кадра.
+Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected by this function and continues to happen for all maps and agents at the end of the physics frame.
 
-\ **Примечание:** С большой силой приходит большая ответственность. Эту функцию должны использовать только пользователи, которые действительно знают, что они делают, и имеют на это вескую причину. Принудительное немедленное обновление навигационной карты требует блокировки NavigationServer и очистки всей очереди команд NavigationServer. Это может не только серьезно повлиять на производительность игры, но и привести к ошибкам, если использовать их ненадлежащим образом без особой дальновидности.
+\ **Note:** With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_agents**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_agents>`
 
-Возвращает все навигационные агенты :ref:`RID<class_RID>`, которые в данный момент назначены запрошенной навигационной карте ``map``.
+Returns all navigation agent :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`float<class_float>` **map_get_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_merge_rasterizer_cell_scale>`
 
-Возвращает внутренний масштаб ячеек растеризатора слияния карты.
+Returns the map's internal merge rasterizer cell scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_regions**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_regions>`
 
-Возвращает все регионы навигации :ref:`RID<class_RID>`, которые в данный момент назначены запрошенной навигационной карте ``map``.
+Returns all navigation region :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **obstacle_set_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_obstacle_set_avoidance_layers>`
 
-Установите битовую маску ``avoidance_layers`` препятствий.
+Sets the given ``obstacle``'s avoidance layers to ``layers``.
 
 .. rst-class:: classref-item-separator
 
@@ -2366,9 +2366,9 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **simplify_path**\ (\ path\: :ref:`PackedVector3Array<class_PackedVector3Array>`, epsilon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_simplify_path>`
 
-Возвращает упрощенную версию ``path`` с удаленными менее критическими точками пути. Величина упрощения указывается в единицах измерения мира и контролируется ``epsilon``. Упрощение использует вариант алгоритма Рамера-Дугласа-Пейкера для прореживания точек кривой.
+Returns a simplified version of ``path`` with less critical path points removed. The simplification amount is in world units and controlled by ``epsilon``. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
-Упрощение пути может быть полезно для смягчения различных проблем следования пути, которые могут возникнуть с определенными типами агентов и поведением сценария. Например, «рулевые» агенты или избегание в «открытых полях».
+Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 
 .. rst-class:: classref-item-separator
 

@@ -824,9 +824,9 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_reset>`
 
-Сбрасывает состояние симуляции относительно текущей позы кости.
+Resets a simulating state with respect to the current bone pose.
 
-Полезно для предотвращения резкого изменения результата симуляции. Например, вызов этого метода сразу после вызова :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` без затухания или в предыдущем сигнале :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>`, если его состояние существенно изменилось.
+It is useful to prevent the simulation result getting violent. For example, calling this immediately after a call to :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` without a fading, or within the previous :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` signal if its condition changes significantly.
 
 .. rst-class:: classref-item-separator
 

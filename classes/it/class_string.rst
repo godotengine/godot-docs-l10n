@@ -18,7 +18,7 @@ Alcuni metodi di stringa hanno variazioni corrispondenti. Le variazioni con suff
 
 Per convertire qualsiasi :ref:`Variant<class_Variant>` in o da una stringa, vedi :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>`, :ref:`@GlobalScope.str_to_var()<class_@GlobalScope_method_str_to_var>` e :ref:`@GlobalScope.var_to_str()<class_@GlobalScope_method_var_to_str>`.
 
-\ **Nota:** In un contesto booleano, una stringa sarà valutata come ``false`` se è vuota (``""``). Altrimenti, una stringa sarà sempre valutata come ``true``.
+\ **Nota:** In un contesto booleano, una stringa sarà valutata come ``false`` se è vuota (\ ``""``). Altrimenti, una stringa sarà sempre valutata come ``true``.
 
 .. note::
 
@@ -340,7 +340,7 @@ Descrizioni dei costruttori
 
 :ref:`String<class_String>` **String**\ (\ ) :ref:`🔗<class_String_constructor_String>`
 
-Costruisce un **String** vuoto (``""``).
+Costruisce un **String** vuoto (\ ``""``).
 
 .. rst-class:: classref-item-separator
 
@@ -456,9 +456,9 @@ Restituisce una copia della stringa con i caratteri speciali sottoposti a escape
 
 :ref:`String<class_String>` **c_unescape**\ (\ ) |const| :ref:`🔗<class_String_method_c_unescape>`
 
-Restituisce una copia della stringa con i caratteri di escape sostituiti dai loro significati. Le sequenze di escape supportate sono ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
+Returns a copy of the string with escaped characters replaced by their meanings. Supported escape sequences are ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
 
-\ **Nota:** A differenza del parser di GDScript, questo metodo non supporta la sequenza di escape ``\uXXXX``.
+\ **Note:** Unlike the GDScript parser, this method doesn't support the ``\uXXXX`` escape sequence.
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Restituisce una copia della stringa con i caratteri di escape sostituiti dai lor
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Restituisce una copia della stringa cambiandogli l'aspetto: sostituisce i trattini bassi (``_``) e i trattini (``-``) con spazi, aggiunge spazi prima delle lettere maiuscole nel mezzo di una parola, converte tutte le lettere in minuscole, e infine converte la prima e ciascuna successiva a uno spazio in maiuscolo.
+Restituisce una copia della stringa cambiandogli l'aspetto: sostituisce i trattini bassi (\ ``_``) e i trattini (\ ``-``) con spazi, aggiunge spazi prima delle lettere maiuscole nel mezzo di una parola, converte tutte le lettere in minuscole, e infine converte la prima e ciascuna successiva a uno spazio in maiuscolo.
 
 
 .. tabs::
@@ -640,7 +640,7 @@ Restituisce una stringa con ``chars`` caratteri cancellati a partire dalla posiz
 
 :ref:`int<class_int>` **filecasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_filecasecmp_to>`
 
-Come :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>` ma dà priorità alle stringhe che iniziano con punti (``.``) e caratteri di sottolineatura (``_``) prima di qualsiasi altro carattere. Utile quando si ordinano le cartelle o i nomi di file.
+Come :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>` ma dà priorità alle stringhe che iniziano con punti (\ ``.``) e caratteri di sottolineatura (\ ``_``) prima di qualsiasi altro carattere. Utile quando si ordinano le cartelle o i nomi di file.
 
 Per ottenere un risultato :ref:`bool<class_bool>` da un confronto di stringhe, usa invece l'operatore ``==``. Vedi anche :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>`, :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>` e :ref:`casecmp_to()<class_String_method_casecmp_to>`.
 
@@ -654,7 +654,7 @@ Per ottenere un risultato :ref:`bool<class_bool>` da un confronto di stringhe, u
 
 :ref:`int<class_int>` **filenocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_filenocasecmp_to>`
 
-Come :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>` ma dà priorità alle stringhe che iniziano con punti (``.``) e caratteri di sottolineatura (``_``) prima di qualsiasi altro carattere. Utile quando si ordinano le cartelle o i nomi di file.
+Come :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>` ma dà priorità alle stringhe che iniziano con punti (\ ``.``) e caratteri di sottolineatura (\ ``_``) prima di qualsiasi altro carattere. Utile quando si ordinano le cartelle o i nomi di file.
 
 Per ottenere un risultato :ref:`bool<class_bool>` da un confronto di stringhe, usa invece l'operatore ``==``. Vedi anche :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>`, :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>` e :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`.
 
@@ -801,7 +801,7 @@ Se la stringa è un percorso di file valido, restituisce il percorso completo de
 
 :ref:`String<class_String>` **get_extension**\ (\ ) |const| :ref:`🔗<class_String_method_get_extension>`
 
-Se la stringa è un nome o un percorso di file valido, restituisce l'estensione del file senza il punto iniziale (``.``). Altrimenti, restituisce una stringa vuota.
+Se la stringa è un nome o un percorso di file valido, restituisce l'estensione del file senza il punto iniziale (\ ``.``). Altrimenti, restituisce una stringa vuota.
 
 ::
 
@@ -978,9 +978,9 @@ Il risultato è in `formato per prefissi binari <https://it.wikipedia.org/wiki/P
 
 :ref:`String<class_String>` **indent**\ (\ prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_indent>`
 
-Rientra ogni riga della stringa con il prefisso ``prefix`` specificato. Le righe vuote non sono rientrate. Vedi anche :ref:`dedent()<class_String_method_dedent>` per rimuovere l'indentazione.
+Indents every line of the string with the given ``prefix``. Empty lines are not indented. See also :ref:`dedent()<class_String_method_dedent>` to remove indentation.
 
-Ad esempio, la stringa può essere rientrata con due tabulazioni usando ``"\t\t"``, o quattro spazi usando ``"    "``.
+For example, the string can be indented with two tabulations using ``"\t\t"``, or four spaces using ``"    "``.
 
 .. rst-class:: classref-item-separator
 
@@ -1018,7 +1018,7 @@ Ciò include tutti i percorsi che iniziano con ``"res://"``, ``"user://"``, ``"C
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_String_method_is_empty>`
 
-Restituisce ``true`` se la lunghezza della stringa è ``0`` (``""``). Vedi anche :ref:`length()<class_String_method_length>`.
+Restituisce ``true`` se la lunghezza della stringa è ``0`` (\ ``""``). Vedi anche :ref:`length()<class_String_method_length>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Restituisce ``true`` se è possibile trovare tutti i caratteri di questa stringa
 
 :ref:`bool<class_bool>` **is_valid_ascii_identifier**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_ascii_identifier>`
 
-Restituisce ``true`` se questa stringa è un identificatore ASCII valido. Un identificatore ASCII valido può contenere solo lettere, cifre e trattini bassi (``_``) e il primo carattere non può essere una cifra.
+Restituisce ``true`` se questa stringa è un identificatore ASCII valido. Un identificatore ASCII valido può contenere solo lettere, cifre e trattini bassi (\ ``_``) e il primo carattere non può essere una cifra.
 
 ::
 
@@ -1096,7 +1096,7 @@ Vedi anche :ref:`is_valid_unicode_identifier()<class_String_method_is_valid_unic
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_filename>`
 
-Restituisce ``true`` se questa stringa è un nome di file valido. Un nome di file valido non può essere vuoto, iniziare o finire con caratteri di spazio, o contenere caratteri non consentiti (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+Restituisce ``true`` se questa stringa è un nome di file valido. Un nome di file valido non può essere vuoto, iniziare o finire con caratteri di spazio, o contenere caratteri non consentiti (\ ``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
 
 .. rst-class:: classref-item-separator
 
@@ -1108,7 +1108,7 @@ Restituisce ``true`` se questa stringa è un nome di file valido. Un nome di fil
 
 :ref:`bool<class_bool>` **is_valid_float**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_float>`
 
-Restituisce ``true`` se questa stringa rappresenta un numero in virgola mobile valido. Un float valido può contenere solo cifre, un punto decimale (``.``) e la lettera esponente (``e``). Può anche essere preceduto da un segno positivo (``+``) o negativo (``-``). Qualsiasi intero valido è anche un float valido (vedi :ref:`is_valid_int()<class_String_method_is_valid_int>`). Vedi anche :ref:`to_float()<class_String_method_to_float>`.
+Restituisce ``true`` se questa stringa rappresenta un numero in virgola mobile valido. Un float valido può contenere solo cifre, un punto decimale (\ ``.``) e la lettera esponente (\ ``e``). Può anche essere preceduto da un segno positivo (\ ``+``) o negativo (\ ``-``). Qualsiasi intero valido è anche un float valido (vedi :ref:`is_valid_int()<class_String_method_is_valid_int>`). Vedi anche :ref:`to_float()<class_String_method_to_float>`.
 
 ::
 
@@ -1127,7 +1127,7 @@ Restituisce ``true`` se questa stringa rappresenta un numero in virgola mobile v
 
 :ref:`bool<class_bool>` **is_valid_hex_number**\ (\ with_prefix\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_String_method_is_valid_hex_number>`
 
-Restituisce ``true`` se questa stringa è un numero esadecimale valido. Un numero esadecimale valido contiene solo cifre o lettere da ``A`` a ``F`` (sia maiuscole sia minuscole) e può essere preceduto da un segno positivo (``+``) o negativo (``-``).
+Restituisce ``true`` se questa stringa è un numero esadecimale valido. Un numero esadecimale valido contiene solo cifre o lettere da ``A`` a ``F`` (sia maiuscole sia minuscole) e può essere preceduto da un segno positivo (\ ``+``) o negativo (\ ``-``).
 
 Se ``with_prefix`` è ``true``, il numero esadecimale deve essere preceduto da ``"0x"`` per essere considerato valido.
 
@@ -1149,7 +1149,7 @@ Se ``with_prefix`` è ``true``, il numero esadecimale deve essere preceduto da `
 
 :ref:`bool<class_bool>` **is_valid_html_color**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_html_color>`
 
-Restituisce ``true`` se questa stringa è un colore valido in notazione HTML esadecimale. La stringa deve essere un valore esadecimale (vedi :ref:`is_valid_hex_number()<class_String_method_is_valid_hex_number>`) di 3, 4, 6 o 8 cifre e può essere preceduta da un cancelletto (``#``). Altre notazioni HTML per i colori, come nomi o ``hsl()``, non sono considerate valide. Vedi anche :ref:`Color.html()<class_Color_method_html>`.
+Restituisce ``true`` se questa stringa è un colore valido in notazione HTML esadecimale. La stringa deve essere un valore esadecimale (vedi :ref:`is_valid_hex_number()<class_String_method_is_valid_hex_number>`) di 3, 4, 6 o 8 cifre e può essere preceduta da un cancelletto (\ ``#``). Altre notazioni HTML per i colori, come nomi o ``hsl()``, non sono considerate valide. Vedi anche :ref:`Color.html()<class_Color_method_html>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1163,7 +1163,7 @@ Restituisce ``true`` se questa stringa è un colore valido in notazione HTML esa
 
 **Deprecato:** Use :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_identifier>` instead.
 
-Restituisce ``true`` se questa stringa è un identificatore valido. Un identificatore valido può contenere solo lettere, cifre e trattini bassi (``_``) e il primo carattere non può essere una cifra.
+Restituisce ``true`` se questa stringa è un identificatore valido. Un identificatore valido può contenere solo lettere, cifre e trattini bassi (\ ``_``) e il primo carattere non può essere una cifra.
 
 ::
 
@@ -1182,7 +1182,7 @@ Restituisce ``true`` se questa stringa è un identificatore valido. Un identific
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_int>`
 
-Restituisce ``true`` se questa stringa rappresenta un numero intero valido. Un numero intero valido contiene solo cifre e può essere preceduto da un segno positivo (``+``) o negativo (``-``). Vedi anche :ref:`to_int()<class_String_method_to_int>`.
+Restituisce ``true`` se questa stringa rappresenta un numero intero valido. Un numero intero valido contiene solo cifre e può essere preceduto da un segno positivo (\ ``+``) o negativo (\ ``-``). Vedi anche :ref:`to_int()<class_String_method_to_int>`.
 
 ::
 
@@ -1302,7 +1302,7 @@ Restituisce i primi ``length`` caratteri dall'inizio della stringa. Se ``length`
 
 :ref:`int<class_int>` **length**\ (\ ) |const| :ref:`🔗<class_String_method_length>`
 
-Restituisce il numero di caratteri nella stringa. Le stringhe vuote (``""``) restituiscono sempre ``0``. Vedi anche :ref:`is_empty()<class_String_method_is_empty>`.
+Restituisce il numero di caratteri nella stringa. Le stringhe vuote (\ ``""``) restituiscono sempre ``0``. Vedi anche :ref:`is_empty()<class_String_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1340,7 +1340,7 @@ Rimuove un insieme di caratteri definiti in ``chars`` dall'inizio della stringa.
 
 :ref:`bool<class_bool>` **match**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_match>`
 
-Esegue una corrispondenza di espressione semplice (chiamata anche "glob" o "globbing"), dove ``*`` corrisponde a zero o più caratteri arbitrari e ``?`` corrisponde a qualsiasi singolo carattere tranne un punto (``.``). Una stringa vuota o un'espressione vuota viene sempre valutata come ``false``.
+Esegue una corrispondenza di espressione semplice (chiamata anche "glob" o "globbing"), dove ``*`` corrisponde a zero o più caratteri arbitrari e ``?`` corrisponde a qualsiasi singolo carattere tranne un punto (\ ``.``). Una stringa vuota o un'espressione vuota viene sempre valutata come ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1352,7 +1352,7 @@ Esegue una corrispondenza di espressione semplice (chiamata anche "glob" o "glob
 
 :ref:`bool<class_bool>` **matchn**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_matchn>`
 
-Esegue una corrispondenza di espressione semplice (chiamata anche "glob" o "globbing") **senza distinzione tra le maiuscole e le minuscole**, dove ``*`` corrisponde a zero o più caratteri arbitrari e ``?`` corrisponde a qualsiasi singolo carattere tranne un punto (``.``). Una stringa vuota o un'espressione vuota viene sempre valutata come ``false``.
+Esegue una corrispondenza di espressione semplice (chiamata anche "glob" o "globbing") **senza distinzione tra le maiuscole e le minuscole**, dove ``*`` corrisponde a zero o più caratteri arbitrari e ``?`` corrisponde a qualsiasi singolo carattere tranne un punto (\ ``.``). Una stringa vuota o un'espressione vuota viene sempre valutata come ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1472,7 @@ Gli zeri finali non sono inclusi nella stringa. L'ultima cifra viene arrotondata
 
 Converte il numero ``number`` in una rappresentazione di stringa, con la ``base`` specificata.
 
-Per impostazione predefinita, ``base`` è impostato su decimale (``10``). Altre basi comuni nella programmazione includono binario (``2``), `ottale <https://it.wikipedia.org/wiki/Sistema_numerico_ottale>`__ (``8``), esadecimale (``16``).
+Per impostazione predefinita, ``base`` è impostato su decimale (\ ``10``). Altre basi comuni nella programmazione includono binario (\ ``2``), `ottale <https://it.wikipedia.org/wiki/Sistema_numerico_ottale>`__ (\ ``8``), esadecimale (\ ``16``).
 
 Se ``capitalize_hex`` è ``true``, le cifre superiori a 9 sono rappresentate in maiuscolo.
 
@@ -1521,7 +1521,7 @@ Converte il numero ``number`` in una rappresentazione di stringa, in notazione s
 
 Converte il numero senza segno ``number`` in una rappresentazione di stringa, con la ``base`` specificata.
 
-Per impostazione predefinita, ``base`` è impostato su decimale (``10``). Altre basi comuni nella programmazione includono binario (``2``), `ottale <https://it.wikipedia.org/wiki/Sistema_numerico_ottale>`__ (``8``), esadecimale (``16``).
+Per impostazione predefinita, ``base`` è impostato su decimale (\ ``10``). Altre basi comuni nella programmazione includono binario (\ ``2``), `ottale <https://it.wikipedia.org/wiki/Sistema_numerico_ottale>`__ (\ ``8``), esadecimale (\ ``16``).
 
 Se ``capitalize_hex`` è ``true``, le cifre superiori a 9 sono rappresentate in maiuscolo.
 
@@ -1919,9 +1919,9 @@ Se ``allow_empty`` è ``false``, le conversioni :ref:`float<class_float>` vuote 
 
 :ref:`String<class_String>` **strip_edges**\ (\ left\: :ref:`bool<class_bool>` = true, right\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_String_method_strip_edges>`
 
-Rimuove tutti i caratteri non stampabili dall'inizio e alla fine della stringa. Questi includono spazi, tabulazioni (``\t``) e nuove righe (``\n`` ``\r``).
+Strips all non-printable characters from the beginning and the end of the string. These include spaces, tabulations (\ ``\t``), and newlines (\ ``\n`` ``\r``).
 
-Se ``left`` è ``false``, ignora l'inizio della stringa. Allo stesso modo, se ``right`` è ``false``, ignora la fine della stringa.
+If ``left`` is ``false``, ignores the string's beginning. Likewise, if ``right`` is ``false``, ignores the string's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1933,7 +1933,7 @@ Se ``left`` è ``false``, ignora l'inizio della stringa. Allo stesso modo, se ``
 
 :ref:`String<class_String>` **strip_escapes**\ (\ ) |const| :ref:`🔗<class_String_method_strip_escapes>`
 
-Rimuove tutti i caratteri di escape dalla stringa. Questi includono tutti i caratteri di controllo non stampabili della prima pagina della tabella ASCII (valori da 0 a 31), come i caratteri di tabulazione (``\t``) e di nuova riga (``\n``, ``\r``), ma *non* gli spazi.
+Strips all escape characters from the string. These include all non-printable control characters of the first page of the ASCII table (values from 0 to 31), such as tabulation (\ ``\t``) and newline (\ ``\n``, ``\r``) characters, but *not* spaces.
 
 .. rst-class:: classref-item-separator
 
@@ -1981,7 +1981,7 @@ Restituisce la stringa convertita in ``camelCase``.
 
 :ref:`float<class_float>` **to_float**\ (\ ) |const| :ref:`🔗<class_String_method_to_float>`
 
-Converte la stringa che rappresenta un numero decimale in un :ref:`float<class_float>`. Questo metodo si ferma sul primo carattere non numerico, eccetto il primo punto decimale (``.``) e la lettera di esponente (``e``). Vedi anche :ref:`is_valid_float()<class_String_method_is_valid_float>`.
+Converte la stringa che rappresenta un numero decimale in un :ref:`float<class_float>`. Questo metodo si ferma sul primo carattere non numerico, eccetto il primo punto decimale (\ ``.``) e la lettera di esponente (\ ``e``). Vedi anche :ref:`is_valid_float()<class_String_method_is_valid_float>`.
 
 ::
 
@@ -2001,7 +2001,7 @@ Converte la stringa che rappresenta un numero decimale in un :ref:`float<class_f
 
 :ref:`int<class_int>` **to_int**\ (\ ) |const| :ref:`🔗<class_String_method_to_int>`
 
-Converte la stringa che rappresenta un numero intero in un :ref:`int<class_int>`. Questo metodo rimuove qualsiasi carattere non numerico e si ferma al primo punto decimale (``.``). Vedi anche :ref:`is_valid_int()<class_String_method_is_valid_int>`.
+Converte la stringa che rappresenta un numero intero in un :ref:`int<class_int>`. Questo metodo rimuove qualsiasi carattere non numerico e si ferma al primo punto decimale (\ ``.``). Vedi anche :ref:`is_valid_int()<class_String_method_is_valid_int>`.
 
 ::
 
@@ -2172,7 +2172,7 @@ Converte la stringa in un :ref:`PackedByteArray<class_PackedByteArray>` codifica
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer**\ (\ ) |const| :ref:`🔗<class_String_method_to_wchar_buffer>`
 
-Converte la stringa in un :ref:`PackedByteArray<class_PackedByteArray>` codificato in `carattere largo <https://en.wikipedia.org/wiki/Wide_character>`__ (``wchar_t``, UTF-16 su Windows, UTF-32 su altre piattaforme). Questo è l'inverso di :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
+Converte la stringa in un :ref:`PackedByteArray<class_PackedByteArray>` codificato in `carattere largo <https://en.wikipedia.org/wiki/Wide_character>`__ (\ ``wchar_t``, UTF-16 su Windows, UTF-32 su altre piattaforme). Questo è l'inverso di :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2306,7 +2306,7 @@ Restituisce una copia della stringa in cui tutti i caratteri non consentiti in :
 
 :ref:`String<class_String>` **validate_node_name**\ (\ ) |const| :ref:`🔗<class_String_method_validate_node_name>`
 
-Restituisce una copia della stringa con tutti i caratteri non consentiti in :ref:`Node.name<class_Node_property_name>` (``.`` ``:`` ``@`` ``/`` ``"`` ``%``) sostituiti con trattini bassi.
+Restituisce una copia della stringa con tutti i caratteri non consentiti in :ref:`Node.name<class_Node_property_name>` (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``) sostituiti con trattini bassi.
 
 .. rst-class:: classref-item-separator
 
@@ -2318,7 +2318,7 @@ Restituisce una copia della stringa con tutti i caratteri non consentiti in :ref
 
 :ref:`String<class_String>` **xml_escape**\ (\ escape_quotes\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_String_method_xml_escape>`
 
-Restituisce una copia della stringa con caratteri speciali sottoposti a escape attraverso lo standard XML. Se ``escape_quotes`` è ``true``, anche i caratteri di virgolette singole (``'``) e virgolette doppie (``"``) vengono sottoposti a escape.
+Restituisce una copia della stringa con caratteri speciali sottoposti a escape attraverso lo standard XML. Se ``escape_quotes`` è ``true``, anche i caratteri di virgolette singole (\ ``'``) e virgolette doppie (\ ``"``) vengono sottoposti a escape.
 
 .. rst-class:: classref-item-separator
 

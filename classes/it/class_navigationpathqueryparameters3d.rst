@@ -112,7 +112,7 @@ Applica un algoritmo a imbuto al corridoio del percorso grezzo trovato dall'algo
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters3D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Centra ogni posizione del percorso al centro del bordo del poligono della mesh di navigazione del percorso. Ciò crea percorsi migliori per i layout basati su tasselli o griglie che limitano il movimento al centro delle celle.
+Centers every position in the middle of the traveled navigation mesh's polygon edge. This creates better paths for tile- or grid-based layouts that restrict the movement to the cells' centers.
 
 .. _class_NavigationPathQueryParameters3D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -385,7 +385,7 @@ Algoritmo di ricerca del percorso utilizzato nella ricerca del percorso.
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-La quantità di semplificazione del percorso in unità mondiali.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 

@@ -1287,7 +1287,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 Имя узла. Это имя должно быть уникальным среди сестринских узлов (других дочерних узлов того же родителя). При установке на имя существующего сестринского узла узел автоматически переименовывается.
 
-\ **Примечание:** При изменении имени следующие символы будут заменены подчеркиванием: (``.`` ``:`` ``@`` ``/`` ``"`` ``%``). В частности, символ ``@`` зарезервирован для автоматически сгенерированных имен. См. также :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
+\ **Примечание:** При изменении имени следующие символы будут заменены подчеркиванием: (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``). В частности, символ ``@`` зарезервирован для автоматически сгенерированных имен. См. также :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,7 +2077,7 @@ Tween автоматически запустится на следующем к
 
 \ **Примечание:** Для повышения производительности порядок имен групп *не* гарантирован и может меняться между запусками проекта. Поэтому не полагайтесь на порядок групп.
 
-\ **Примечание:** Этот метод также может возвращать некоторые имена групп, начинающиеся с подчеркивания (``_``). Они используются движком внутри. Чтобы избежать конфликтов, не используйте пользовательские группы, начинающиеся с подчеркивания. Чтобы исключить внутренние группы, см. следующий фрагмент кода:
+\ **Примечание:** Этот метод также может возвращать некоторые имена групп, начинающиеся с подчеркивания (\ ``_``). Они используются движком внутри. Чтобы избежать конфликтов, не используйте пользовательские группы, начинающиеся с подчеркивания. Чтобы исключить внутренние группы, см. следующий фрагмент кода:
 
 
 .. tabs::
@@ -2449,7 +2449,7 @@ Tween автоматически запустится на следующем к
 
 :ref:`Window<class_Window>` **get_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_window>`
 
-Возвращает :ref:`Window<class_Window>`, содержащее этот узел. Если узел находится в главном окне, это эквивалентно получению корневого узла (``get_tree().get_root()``).
+Возвращает :ref:`Window<class_Window>`, содержащее этот узел. Если узел находится в главном окне, это эквивалентно получению корневого узла (\ ``get_tree().get_root()``).
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ Tween автоматически запустится на следующем к
 
 Может возвращать :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, если вызов успешен, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`, если аргументы, переданные в ``method``, не совпадают, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`, если :ref:`multiplayer<class_Node_property_multiplayer>` узла не может быть извлечен (например, когда узел не находится внутри дерева), :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`, если соединение :ref:`multiplayer<class_Node_property_multiplayer>` недоступно.
 
-\ **Примечание:** Вы можете безопасно использовать RPC на клиентах только после получения сигнала :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` от :ref:`MultiplayerAPI<class_MultiplayerAPI>`. Вам также необходимо отслеживать состояние соединения, либо по сигналам :ref:`MultiplayerAPI<class_MultiplayerAPI>`, таким как :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>`, либо путем проверки (``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
+\ **Примечание:** Вы можете безопасно использовать RPC на клиентах только после получения сигнала :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` от :ref:`MultiplayerAPI<class_MultiplayerAPI>`. Вам также необходимо отслеживать состояние соединения, либо по сигналам :ref:`MultiplayerAPI<class_MultiplayerAPI>`, таким как :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>`, либо путем проверки (\ ``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
 
 .. rst-class:: classref-item-separator
 
@@ -2989,7 +2989,7 @@ Tween автоматически запустится на следующем к
 
 - ``channel``: :ref:`int<class_int>`, представляющий канал для отправки RPC.
 
-\ **Примечание:** В GDScript этот метод соответствует аннотации :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` с различными переданными параметрами (``@rpc(any)``, ``@rpc(authority)``...). См. также учебник :doc:`высокоуровневый многопользовательский режим <../tutorials/networking/high_level_multiplayer>`.
+\ **Примечание:** В GDScript этот метод соответствует аннотации :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` с различными переданными параметрами (\ ``@rpc(any)``, ``@rpc(authority)``...). См. также учебник :doc:`высокоуровневый многопользовательский режим <../tutorials/networking/high_level_multiplayer>`.
 
 .. rst-class:: classref-item-separator
 

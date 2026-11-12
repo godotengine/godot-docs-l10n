@@ -136,7 +136,7 @@ Si es ``true``, cada valor de profundidad generado se desplazará por alguna can
 - |void| **set_depth_bias_slope_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_slope_factor**\ (\ )
 
-Una escala constante aplicada a la pendiente de la profundidad de cada polígono. Se aplica antes de :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
+A constant scale applied to the slope of each polygon's depth. Applied before :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ El número de puntos de control a utilizar al dibujar un parche con la teselaci�
 - |void| **set_wireframe**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_wireframe**\ (\ )
 
-Si es ``true``, realiza el renderizado de alambre para los triángulos en lugar de renderizado plano o texturizado.
+Si es ``true``, renderiza los triángulos en modo de estructura alámbrica en lugar de un renderizado plano o texturizado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

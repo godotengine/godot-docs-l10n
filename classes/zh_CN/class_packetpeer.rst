@@ -16,9 +16,9 @@ PacketPeer
 描述
 ----
 
-PacketPeer 是基于数据包的协议（如 UDP）的抽象和基类。它提供了用于发送和接收数据包的 API，可以发送原始数据或变量。这使得在协议之间传输数据变得容易，不必将数据编码为低级字节或担心网络排序问题。
+PacketPeer is an abstraction and base class for packet-based protocols (such as UDP). It provides an API for sending and receiving packets both as raw data or variables. This makes it easy to transfer data over a protocol, without having to encode data as low-level bytes or having to worry about network ordering.
 
-\ **注意：**\ 导出到安卓时，在导出项目或使用一键部署之前，请务必在安卓导出预设中，开启 ``INTERNET`` 权限。否则，任何类型的网络通信，都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

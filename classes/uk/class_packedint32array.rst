@@ -302,7 +302,7 @@ Constructs a new **PackedInt32Array**. Додатково ви можете пр
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_insert>`
 
-Вставте нове ціле місце в даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (``idx == розмір()``).
+Вставте нове ціле місце в даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (\ ``idx == розмір()``).
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Constructs a new **PackedInt32Array**. Додатково ви можете пр
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_remove_at>`
 
-Видаляє елемент з масиву за індексом.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

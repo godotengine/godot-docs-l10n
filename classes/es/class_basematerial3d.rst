@@ -186,11 +186,13 @@ Propiedades
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`Texture2D<class_Texture2D>`                               | :ref:`orm_texture<class_BaseMaterial3D_property_orm_texture>`                                                     |                       |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                           | :ref:`particles_anim_h_frames<class_BaseMaterial3D_property_particles_anim_h_frames>`                             |                       |
+   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`                               | ``false``             |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_loop<class_BaseMaterial3D_property_particles_anim_loop>`                                     |                       |
+   | :ref:`int<class_int>`                                           | :ref:`particles_anim_h_frames<class_BaseMaterial3D_property_particles_anim_h_frames>`                             | ``1``                 |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                           | :ref:`particles_anim_v_frames<class_BaseMaterial3D_property_particles_anim_v_frames>`                             |                       |
+   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_loop<class_BaseMaterial3D_property_particles_anim_loop>`                                     | ``false``             |
+   +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`                                           | :ref:`particles_anim_v_frames<class_BaseMaterial3D_property_particles_anim_v_frames>`                             | ``1``                 |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`float<class_float>`                                       | :ref:`point_size<class_BaseMaterial3D_property_point_size>`                                                       | ``1.0``               |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -618,7 +620,7 @@ El material utilizará los valores alfa de la textura para la transparencia. Est
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_SCISSOR** = ``2``
 
-El material cortará todos los valores por debajo de un umbral, el resto permanecerá opaco. Las porciones opacas se renderizarán en el pre-paso de profundidad. Esto es más rápido de renderizar que la mezcla alfa, pero más lento que el renderizado opaco. Esto también admite la proyección de sombras.
+The material will cut off all values below a threshold, the rest will remain opaque. The opaque portions will be rendered in the depth prepass. This is faster to render than alpha blending, but slower than opaque rendering. This also supports casting shadows. For textures using this mode see the ``Preserve Alpha Test Coverage`` option in the texture import settings to improve distant rendering and popping.
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_HASH:
 
@@ -800,11 +802,19 @@ Constante para establecer :ref:`detail_enabled<class_BaseMaterial3D_property_det
 
 Constante para establecer :ref:`bent_normal_enabled<class_BaseMaterial3D_property_bent_normal_enabled>`.
 
+.. _class_BaseMaterial3D_constant_FEATURE_PARTICLES_ANIMATION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_PARTICLES_ANIMATION** = ``13``
+
+Constant for setting :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`.
+
 .. _class_BaseMaterial3D_constant_FEATURE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_MAX** = ``13``
+:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_MAX** = ``14``
 
 Representa el tamaño del enum :ref:`Feature<enum_BaseMaterial3D_Feature>`.
 
@@ -1331,6 +1341,8 @@ El eje X del objeto siempre estará de cara a la cámara.
 Used for particle systems when assigned to :ref:`GPUParticles3D<class_GPUParticles3D>` and :ref:`CPUParticles3D<class_CPUParticles3D>` nodes (flipbook animation). Enables ``particles_anim_*`` properties.
 
 The :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` or :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` should also be set to a value bigger than zero for the animation to play.
+
+For animations without bilboarding, see :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2959,18 +2971,39 @@ Textura de oclusión/rugosidad/metálica a utilizar. Este es un reemplazo más e
 
 ----
 
+.. _class_BaseMaterial3D_property_particles_anim_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **particles_anim_enabled** = ``false`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
+
+If ``true``, enables ``particles_anim_*`` properties. The :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` or :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` should also be set to a value bigger than zero for the animation to play.
+
+\ **Note:** For compatibility reasons, this property is ignored and always enabled when :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_BaseMaterial3D_property_particles_anim_h_frames:
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **particles_anim_h_frames** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_h_frames>`
+:ref:`int<class_int>` **particles_anim_h_frames** = ``1`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_h_frames>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-The number of horizontal frames in the particle sprite sheet. Only enabled when using :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. See :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+The number of horizontal frames in the particle sprite sheet.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2980,14 +3013,16 @@ The number of horizontal frames in the particle sprite sheet. Only enabled when 
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **particles_anim_loop** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_loop>`
+:ref:`bool<class_bool>` **particles_anim_loop** = ``false`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_loop>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_anim_loop**\ (\ )
 
-If ``true``, particle animations are looped. Only enabled when using :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. See :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+If ``true``, particle animations are looped.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2997,14 +3032,16 @@ If ``true``, particle animations are looped. Only enabled when using :ref:`BILLB
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **particles_anim_v_frames** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_v_frames>`
+:ref:`int<class_int>` **particles_anim_v_frames** = ``1`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_v_frames>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-Número de fotogramas verticales en la hoja de sprites de partículas. Solo se habilita al usar :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. Véase :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+The number of vertical frames in the particle sprite sheet.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 

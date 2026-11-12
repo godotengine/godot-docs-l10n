@@ -128,6 +128,8 @@ WebXR підтримує широкий спектр пристроїв, від 
    :widths: auto
 
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`disable_webxr_layers<class_WebXRInterface_property_disable_webxr_layers>`                       |
+   +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`enabled_features<class_WebXRInterface_property_enabled_features>`                               |
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`optional_features<class_WebXRInterface_property_optional_features>`                             |
@@ -212,7 +214,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Після того, як один з джерел вводу закінчив свою «примірну дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +228,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Увімкнено, коли один з джерел вводу закінчив свою «примірну дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +242,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Увімкнено, коли один з джерел введення почав свою «примірну дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +310,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Після того, як один з джерел вводу закінчив свою «примірну стискну дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +324,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Увімкнено, коли одна з джерел вводу завершила свою «прозору дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +338,7 @@ WebXR підтримує широкий спектр пристроїв, від 
 
 Увімкнено, коли одна з джерел вводу розпочала свою «примірну дію».
 
-Використовуйте :ref:`Get_input_source_tracker()<class_WebXRInterface_method_Get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
+Використовуйте :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` і :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` для отримання додаткової інформації про джерело введення.
 
 .. rst-class:: classref-item-separator
 
@@ -406,6 +408,27 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 Описи властивостей
 ------------------------------------
 
+.. _class_WebXRInterface_property_disable_webxr_layers:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **disable_webxr_layers** :ref:`🔗<class_WebXRInterface_property_disable_webxr_layers>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_disable_webxr_layers**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_disable_webxr_layers**\ (\ )
+
+If ``true``, the WebXR Layers API won't be used even when the browser supports it.
+
+Godot falls back to this mode automatically when the browser doesn't support WebXR Layers and the polyfill isn't in use.
+
+This doesn't have any effect on the interface when already initialized.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_WebXRInterface_property_enabled_features:
 
 .. rst-class:: classref-property
@@ -416,11 +439,11 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 
 - :ref:`String<class_String>` **get_enabled_features**\ (\ )
 
-Список функцій, розділених комами, які були успішно ввімкнені методом ``XRInterface.initialize`` під час налаштування сеансу WebXR.
+A comma-separated list of features that were successfully enabled by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Це може включати функції, запитувані шляхом встановлення параметрів :ref:`required_features<class_WebXRInterface_property_required_features>` та :ref:`optional_features<class_WebXRInterface_property_optional_features>`, і будуть доступні лише після генерації сигналу ``session_started``.
+This may include features requested by setting :ref:`required_features<class_WebXRInterface_property_required_features>` and :ref:`optional_features<class_WebXRInterface_property_optional_features>`, and will only be available after :ref:`session_started<class_WebXRInterface_signal_session_started>` has been emitted.
 
-\ **Примітка:** Це може не підтримуватися всіма веббраузерами, і в такому разі це буде порожній рядок.
+\ **Note:** This may not be supported by all web browsers, in which case it will be an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -437,13 +460,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_optional_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_optional_features**\ (\ )
 
-Розділений комами список опціональних функцій, які використовуються :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` під час налаштування сеансу WebXR.
+A comma-separated list of optional features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Якщо браузер або пристрій користувача не підтримує одну з зазначених функцій, ініціалізація продовжиться, але ви не зможете використовувати запитувану функцію.
+If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.
 
-Це не впливає на інтерфейс, якщо він вже ініціалізований.
+This doesn't have any effect on the interface when already initialized.
 
-Перелік можливих значень див. у документації MDN про `функції сеансу WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__.
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -478,13 +501,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_requested_reference_space_types**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_requested_reference_space_types**\ (\ )
 
-Список типів просторів посилань, розділених комами, що використовуються методом ``XRInterface.initialize`` під час налаштування сеансу WebXR.
+A comma-separated list of reference space types used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Типи просторів посилань запитуються по порядку, і буде використано перший, який підтримується пристроєм або браузером користувача. Властивість :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` містить тип простору посилань, який був вибраний зрештою.
+The reference space types are requested in order, and the first one supported by the user's device or browser will be used. The :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` property contains the reference space type that was ultimately selected.
 
-Це не впливає на інтерфейс, коли він вже ініціалізований.
+This doesn't have any effect on the interface when already initialized.
 
-Можливі значення взяті з `WebXR XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. Якщо ви хочете використовувати певний тип простору посилань, він має бути вказаний у :ref:`required_features<class_WebXRInterface_property_required_features>` або :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 .. rst-class:: classref-item-separator
 
@@ -501,13 +524,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_required_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_required_features**\ (\ )
 
-Розділений комами список необхідних функцій, які використовуються :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` під час налаштування сеансу WebXR.
+A comma-separated list of required features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Якщо браузер або пристрій користувача не підтримує одну з зазначених функцій, ініціалізація не відбудеться і буде видано :ref:`session_failed<class_WebXRInterface_signal_session_failed>`.
+If a user's browser or device doesn't support one of the given features, initialization will fail and :ref:`session_failed<class_WebXRInterface_signal_session_failed>` will be emitted.
 
-Це не впливає на інтерфейс, якщо він вже ініціалізований.
+This doesn't have any effect on the interface when already initialized.
 
-Перелік можливих значень див. у документації MDN про `функції сеансу WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__.
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 

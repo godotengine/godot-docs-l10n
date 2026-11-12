@@ -75,7 +75,7 @@ Registra un oggetto OpenXR Future in modo da monitorarne il completamento. ``fut
 
 Facoltativamente, è possibile specificare ``on_success``, il quale sarà invocato al completamento corretto del futuro.
 
-In alternativa, è possibile usare l'oggetto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` restituito per attendere (``await``) il suo segnale :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>`.
+In alternativa, è possibile usare l'oggetto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` restituito per attendere (\ ``await``) il suo segnale :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>`.
 
 ::
 

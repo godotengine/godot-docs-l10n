@@ -152,7 +152,7 @@ NavigationLink2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-當尋路從其他地區的導覽網格進入該連結時，\ :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` 會加到路徑距離中，用於確定最短路徑。
+When pathfinding enters this link from another region's navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
 
 .. rst-class:: classref-item-separator
 

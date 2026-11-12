@@ -357,7 +357,9 @@ Interpolation linéaire.
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_CUBIC** = ``2``
 
-Interpolation cubique. Cela donne un aspect plus lisse que l'interpolation linéaire, mais est plus cher à interpoler. Restez avec :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>` pour des animations 3D complexes importées de logiciels externes, même si cela nécessite l'utilisation d'une fréquence d'images d'animation plus élevé en retour.
+Cubic interpolation. This looks smoother than linear interpolation, but is more expensive to interpolate. Stick to :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>` for complex 3D animations imported from external software, even if it requires using a higher animation framerate in return.
+
+\ **Note:** If the last and first keys have different values and are close to the ends of the track, a huge overshoot in interpolation may occur if :ref:`track_set_interpolation_loop_wrap()<class_Animation_method_track_set_interpolation_loop_wrap>` is set to ``true``.
 
 .. _class_Animation_constant_INTERPOLATION_LINEAR_ANGLE:
 
@@ -378,6 +380,24 @@ Interpolation linéaire avec la rotation au chemin le plus court.
 Interpolation cubique avec la rotation au chemin le plus court.
 
 \ **Note :** La valeur du résultat est toujours normalisée et peut ne pas correspondre à la valeur de la clé.
+
+.. _class_Animation_constant_INTERPOLATION_MAKIMA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_MAKIMA** = ``5``
+
+Modified Akima interpolation. Like :ref:`INTERPOLATION_CUBIC<class_Animation_constant_INTERPOLATION_CUBIC>`, this produces a smooth curve through the keys, but it overshoots less and stays flat where three or more adjacent keys have the same value. It uses two keys on each side of the current segment, so it is slightly more expensive than cubic interpolation.
+
+.. _class_Animation_constant_INTERPOLATION_MAKIMA_ANGLE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_MAKIMA_ANGLE** = ``6``
+
+Modified Akima interpolation with shortest path rotation.
+
+\ **Note:** The result value is always normalized and may not match the key value.
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +908,9 @@ Insère une clé dans une piste de blend shape donnée. Renvoie l'index de la cl
 
 :ref:`float<class_float>` **blend_shape_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_blend_shape_track_interpolate>`
 
-Renvoie la valeur de la blend shape interpolée au moment donné (en secondes). Le paramètre ``track_idx`` doit être l'index d'une piste de blend shape.
+Returns the interpolated blend shape value at the given time (in seconds). The ``track_idx`` must be the index of a blend shape track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1116,9 @@ Insère une clé dans une piste de position 3D donnée. Renvoie l'index de la cl
 
 :ref:`Vector3<class_Vector3>` **position_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_position_track_interpolate>`
 
-Renvoie la valeur de la position interpolée au temps donné (en secondes). Le paramètre ``track_idx`` doit être l'index d'une piste de position 3D.
+Returns the interpolated position value at the given time (in seconds). The ``track_idx`` must be the index of a 3D position track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,7 +1166,9 @@ Insère une clé dans une piste de rotation 3D donnée. Renvoie l'index de la cl
 
 :ref:`Quaternion<class_Quaternion>` **rotation_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_rotation_track_interpolate>`
 
-Renvoie la valeur de la rotation interpolée au temps donné (en secondes). Le paramètre ``track_idx`` doit être l'index d'une piste de rotation 3D.
+Returns the interpolated rotation value at the given time (in seconds). The ``track_idx`` must be the index of a 3D rotation track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,7 +1192,9 @@ Insère une clé dans une piste d'échelle 3D donnée. Renvoie l'index de la cl�
 
 :ref:`Vector3<class_Vector3>` **scale_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_scale_track_interpolate>`
 
-Renvoie la valeur d'échelle interpolée au temps donné (en secondes). Le paramètre ``track_idx`` doit être l'index d'une piste d'échelle 3D.
+Returns the interpolated scale value at the given time (in seconds). The ``track_idx`` must be the index of a 3D scale track.
+
+\ **Note:** If ``backward`` is ``true``, the keys are retrieved on the reversed timeline. See also :ref:`value_track_interpolate()<class_Animation_method_value_track_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1436,7 +1464,9 @@ Définit la piste donnée comme importée ou non.
 
 |void| **track_set_interpolation_loop_wrap**\ (\ track_idx\: :ref:`int<class_int>`, interpolation\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_track_set_interpolation_loop_wrap>`
 
-Si ``true``, la piste d'index ``track_idx`` enveloppe la boucle d'interpolation.
+If ``true``, the track at ``track_idx`` wraps the interpolation loop.
+
+\ **Note:** If ``interpolation`` is ``true``, the animation interpolates between the last and first key of the track. If the last key is placed exactly at the end of the animation, it is ignored as being placed outside the looped animation range.
 
 .. rst-class:: classref-item-separator
 
@@ -1534,9 +1564,11 @@ Renvoie le mode de mise à jour d'une piste de valeur.
 
 :ref:`Variant<class_Variant>` **value_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_value_track_interpolate>`
 
-Renvoie la valeur interpolée au temps donné (en secondes). Le paramètre ``track_idx`` doit être l'index d'une piste de valeur.
+Returns the interpolated value at the given time (in seconds). The ``track_idx`` must be the index of a value track.
 
-Le paramètre ``backward`` affecte principalement la direction de la récupération de clé de la piste avec :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` converti par :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` pour correspondre au résultat de :ref:`track_find_key()<class_Animation_method_track_find_key>`.
+If ``backward`` is ``true``, the keys are retrieved on the reversed timeline, so the base key is the key after ``time_sec``. This changes the result only for :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` and :ref:`INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`; the other interpolation types give the same result as forward.
+
+\ **Note:** :ref:`AnimationMixer<class_AnimationMixer>` always passes ``false`` for continuous tracks with playback API.
 
 .. rst-class:: classref-item-separator
 

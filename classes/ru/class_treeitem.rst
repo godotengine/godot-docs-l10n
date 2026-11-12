@@ -1527,7 +1527,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Устанавливает пользовательский обратный вызов отрисовки для данного столбца. Используйте пустой :ref:`Callable<class_Callable>` (``Callable()``), чтобы очистить пользовательский обратный вызов. Ячейка должна находиться в :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`, чтобы использовать эту функцию.
+Устанавливает пользовательский обратный вызов отрисовки для данного столбца. Используйте пустой :ref:`Callable<class_Callable>` (\ ``Callable()``), чтобы очистить пользовательский обратный вызов. Ячейка должна находиться в :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`, чтобы использовать эту функцию.
 
 \ ``callback`` должен принимать два аргумента: **TreeItem**, который отрисовывается, и его положение и размер как :ref:`Rect2<class_Rect2>`.
 

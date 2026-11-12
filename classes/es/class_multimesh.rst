@@ -189,9 +189,13 @@ Descripciones de Propiedades
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +211,11 @@ Descripciones de Propiedades
 
 Array que contiene cada :ref:`Color<class_Color>` usado por todas las instancias de esta malla.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +248,11 @@ AABB personalizado para este recurso MultiMesh. Establecer esto manualmente evit
 
 Array que contiene cada valor de datos personalizado usado por todas las instancias de esta malla, como un :ref:`PackedColorArray<class_PackedColorArray>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +327,11 @@ Cuando uses bajas tasas de tick de física (típicamente por debajo de 20) o alt
 
 Array que contiene cada valor :ref:`Transform2D<class_Transform2D>` usado por todas las instancias de esta malla, como un :ref:`PackedVector2Array<class_PackedVector2Array>`. Cada transformación se divide en 3 valores :ref:`Vector2<class_Vector2>` correspondientes a ``x``, ``y``, y ``origin`` de las transformaciones.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +347,11 @@ Array que contiene cada valor :ref:`Transform2D<class_Transform2D>` usado por to
 
 Array que contiene cada valor :ref:`Transform3D<class_Transform3D>` usado por todas las instancias de esta malla, como un :ref:`PackedVector3Array<class_PackedVector3Array>`. Cada transformación se divide en 4 valores :ref:`Vector3<class_Vector3>` correspondientes a ``x``, ``y``, ``z``, y ``origin`` de las transformaciones.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +544,7 @@ Sets the color of a specific instance by *multiplying* the mesh's existing verte
 
 \ **Note:** Each component is stored in 32 bits in the Forward+ and Mobile rendering methods, but is packed into 16 bits in the Compatibility rendering method.
 
-For the color to take effect, ensure that :ref:`use_colors<class_MultiMesh_property_use_colors>` is ``true`` on the **MultiMesh** and :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` is ``true`` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (``Color(1, 1, 1)``).
+For the color to take effect, ensure that :ref:`use_colors<class_MultiMesh_property_use_colors>` is ``true`` on the **MultiMesh** and :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` is ``true`` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (\ ``Color(1, 1, 1)``).
 
 .. rst-class:: classref-item-separator
 

@@ -2214,7 +2214,7 @@ Densità di base *esponenziale* della nebbia volumetrica. Impostala sulla densit
 
 Un valore di ``0.0`` disabilita la nebbia volumetrica globale mentre consente ai :ref:`FogVolume<class_FogVolume>` di visualizzare la nebbia volumetrica in aree specifiche.
 
-Per far funzionare la nebbia volumetrica come una soluzione di *illuminazione* volumetrica, imposta :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` sul valore più basso diverso da zero (``0.0001``), quindi aumenta la proprietà :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` delle luci a valori compresi tra ``10000`` e ``100000`` per compensare la densità molto bassa.
+Per far funzionare la nebbia volumetrica come una soluzione di *illuminazione* volumetrica, imposta :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` sul valore più basso diverso da zero (\ ``0.0001``), quindi aumenta la proprietà :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` delle luci a valori compresi tra ``10000`` e ``100000`` per compensare la densità molto bassa.
 
 .. rst-class:: classref-item-separator
 

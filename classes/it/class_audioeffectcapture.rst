@@ -132,7 +132,7 @@ Ottiene i prossimi ``frames`` campioni dal buffer circolare interno.
 
 Restituisce un :ref:`PackedVector2Array<class_PackedVector2Array>` contenente esattamente ``frames`` campioni se disponibili, o un :ref:`PackedVector2Array<class_PackedVector2Array>` vuoto se non erano disponibili abbastanza dati.
 
-I campioni sono valori PCM in virgola mobile con segno tra ``-1`` e ``1``. Dovrai scalarli se vuoi utilizzarli come campioni interi da 8 o 16 bit. (``v = 0x7fff * samples[0].x``)
+I campioni sono valori PCM in virgola mobile con segno tra ``-1`` e ``1``. Dovrai scalarli se vuoi utilizzarli come campioni interi da 8 o 16 bit. (\ ``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 

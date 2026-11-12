@@ -14,7 +14,7 @@ Una función escalar entera para ser usada dentro del grafo de shader visual.
 Descripción
 ----------------------
 
-Acepta un escalar entero (``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
+Acepta un escalar entero (\ ``x``) en el puerto de entrada y lo transforma de acuerdo con :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

@@ -14,15 +14,15 @@ SceneMultiplayer
 說明
 ----
 
-這個類是 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的預設實作，用於在 Godot 引擎中提供多人遊戲功能。
+This class is the default implementation of :ref:`MultiplayerAPI<class_MultiplayerAPI>`, used to provide multiplayer functionalities in Godot Engine.
 
-該實作通過 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 來支援 RPC，需要向 :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` 傳遞一個 :ref:`Node<class_Node>`\ （傳入其他物件型別會導致失敗）。
+This implementation supports RPCs via :ref:`Node.rpc()<class_Node_method_rpc>` and :ref:`Node.rpc_id()<class_Node_method_rpc_id>` and requires :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` to be passed a :ref:`Node<class_Node>` (it will fail for other object types).
 
-該實作還提供了 :ref:`SceneTree<class_SceneTree>` 複製功能，使用的是 :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` 和 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 節點，以及 :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` 資源，。
+This implementation additionally provide :ref:`SceneTree<class_SceneTree>` replication via the :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` and :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` nodes, and the :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` resource.
 
-\ **注意：**\ 高階多人遊戲 API 協議屬於實作細節，並不打算提供給非 Godot 伺服器使用。對協議的更改可能不會進行提前通知。
+\ **Note:** The high-level multiplayer API protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署之前，請務必在安卓匯出預設中開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

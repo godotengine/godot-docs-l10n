@@ -310,9 +310,9 @@ Signal
 
 :ref:`int<class_int>` **connect**\ (\ callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Signal_method_connect>`
 
-將訊號連接到可呼叫體 ``callable``\ 。還可以新增 ``flags`` 對連接的行為進行設定（見 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常數）。可以使用 :ref:`Callable.bind()<class_Callable_method_bind>` 為連接的 ``callable`` 提供額外的參數。
+Connects this signal to the specified ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). You can provide additional arguments to the connected ``callable`` by using :ref:`Callable.bind()<class_Callable_method_bind>`. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the signal was successfully connected, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the :ref:`Callable<class_Callable>` is null or invalid.
 
-一個訊號只能和同一個 :ref:`Callable<class_Callable>` 連接一次。如果訊號已連接，則會回傳 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 並生成錯誤，除非訊號是用 :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>` 連接的。要防止這個問題，請先使用 :ref:`is_connected()<class_Signal_method_is_connected>` 檢查已有連接。
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and prints an error, unless the signal is connected with :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Signal_method_is_connected>` first to check for existing connections.
 
 ::
 
@@ -320,9 +320,9 @@ Signal
         button.pressed.connect(_on_pressed.bind(button))
 
     func _on_pressed(button):
-        print(button.name, " 被按了一下")
+        print(button.name, " was pressed")
 
-\ **注意：**\ 如果 ``callable`` 的物件被釋放，連接會丟失。
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Signal
 
 |void| **disconnect**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Signal_method_disconnect>`
 
-將該訊號與給定的 :ref:`Callable<class_Callable>` 斷開連接。如果該連接不存在，則會生成錯誤。請使用 :ref:`is_connected()<class_Signal_method_is_connected>` 來確保連接存在。
+Disconnects this signal from the specified :ref:`Callable<class_Callable>`. If the connection does not exist, prints an error. Use :ref:`is_connected()<class_Signal_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 

@@ -7,7 +7,7 @@ VisualShaderNodeUVFunc
 
 **Наследует:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Содержит функции для изменения координат текстуры (``uv``), которые будут использоваться в графе визуального шейдера.
+Содержит функции для изменения координат текстуры (\ ``uv``), которые будут использоваться в графе визуального шейдера.
 
 .. rst-class:: classref-introduction-group
 

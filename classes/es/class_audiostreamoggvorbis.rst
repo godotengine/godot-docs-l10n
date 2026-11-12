@@ -189,7 +189,7 @@ Contiene los datos Ogg sin procesar para esta transmisión.
 
 Contiene etiquetas definidas por el usuario si se encuentran en los datos de Ogg Vorbis.
 
-Las etiquetas utilizadas habitualmente incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (``date`` no tiene un formato de fecha estándar).
+Las etiquetas utilizadas habitualmente incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (\ ``date`` no tiene un formato de fecha estándar).
 
 \ **Nota:** No se *garantiza* que todas las etiquetas estén presentes en cada archivo, así que asegúrate de tener en cuenta que las claves no siempre existen.
 

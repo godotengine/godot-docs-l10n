@@ -169,7 +169,11 @@ FontVariation
 
 Масив кольорів для заміни стандартної палітри. Використовуйте ``Color(0, 0, 0, 0)``, щоб зберегти колір стандартної палітри на певній позиції.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

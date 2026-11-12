@@ -14,7 +14,7 @@ Fournit des paramètres communs pour personnaliser le texte dans un :ref:`Label<
 Description
 -----------
 
-**LabelSettings** est une ressource qui fournit des paramètres communs pour personnaliser le texte dans un :ref:`Label<class_Label>`. Elle prendra la priorité sur les propriétés définies dans :ref:`Control.theme<class_Control_property_theme>`. La ressource peut être partagée entre plusieurs étiquettes et changée à la volée, de sorte que ce soit une façon commode et flexible de configurer un style de texte.
+**LabelSettings** is a resource that provides common settings to customize the text in a :ref:`Label<class_Label>`. It will take priority over the properties defined in :ref:`Control.theme<class_Control_property_theme>`. The resource can be shared between multiple labels and changed on the fly, making it a convenient and flexible way to set up text style.
 
 .. rst-class:: classref-reftable-group
 

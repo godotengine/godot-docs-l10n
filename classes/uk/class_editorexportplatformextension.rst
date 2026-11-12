@@ -239,7 +239,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_device_architecture**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_device_architecture>`
 
-Повертає архітектуру пристрою для розгортання одним клацанням миші.
+Returns device architecture for remote deploy.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_option_icon**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_icon>`
 
-Повертає піктограму елемента для вказаного ``device`` в меню розгортання одним кліком. Піктограма має бути розміром 16×16 пікселів, скоригована відповідно до поточного масштабу редактора (див. :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the item icon for the specified ``device`` in the remote deploy menu. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_label**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_label>`
 
-Повертає мітку пункту меню розгортання одним клацанням миші для вказаного ``device``.
+Returns remote deploy menu item label for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_option_tooltip**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_tooltip>`
 
-Повертає підказку до пункту меню розгортання одним клацанням миші для вказаного ``device``.
+Returns remote deploy menu item tooltip for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ EditorExportPlatformExtension
 
 :ref:`int<class_int>` **_get_options_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_count>`
 
-Повертає кількість пристроїв (або інших опцій), доступних в меню розгортання одним клацанням миші.
+Returns the number of devices (or other options) available in the remote deploy menu.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ EditorExportPlatformExtension
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-Повертає підказку кнопки меню розгортання одним клацанням миші.
+Returns tooltip of the remote deploy menu button.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ EditorExportPlatformExtension
 
 :ref:`Texture2D<class_Texture2D>` **_get_run_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_run_icon>`
 
-Повертає піктограму кнопки меню розгортання одним кліком. Піктограма має бути розміром 16×16 пікселів, скоригована відповідно до поточного масштабу редактора (див. :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the icon of the remote deploy menu button. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ EditorExportPlatformExtension
 
 :ref:`bool<class_bool>` **_poll_export**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__poll_export>`
 
-Повертає ``true``, якщо параметри розгортання одним клацанням миші змінено та інтерфейс редактора потрібно оновити.
+Returns ``true`` if remote deploy options are changed and editor interface should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ EditorExportPlatformExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_run**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, device\: :ref:`int<class_int>`, debug_flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__run>`
 
-Цей метод викликається, коли вибрано опцію розгортання одним кліком у меню ``device``.
+This method is called when ``device`` remote deploy menu option is selected.
 
-Реалізація повинна експортувати проект у тимчасове місце, завантажити та запустити його на певному пристрої ``device`` або виконати іншу дію, пов’язану з елементом меню.
+Implementation should export project to a temporary location, upload and run it on the specific ``device``, or perform another action associated with the menu item.
 
 .. rst-class:: classref-item-separator
 

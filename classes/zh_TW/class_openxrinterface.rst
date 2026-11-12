@@ -60,6 +60,8 @@ OpenXR 介面允許 Godot 與 OpenXR 運作時進行互動，並使建立 XR 體
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                                                | :ref:`get_action_sets<class_OpenXRInterface_method_get_action_sets>`\ (\ ) |const|                                                                                                                                            |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>`         | :ref:`get_active_view_configuration<class_OpenXRInterface_method_get_active_view_configuration>`\ (\ ) |const|                                                                                                                |
+   +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                                                | :ref:`get_available_display_refresh_rates<class_OpenXRInterface_method_get_available_display_refresh_rates>`\ (\ ) |const|                                                                                                    |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector3<class_Vector3>`                                            | :ref:`get_hand_joint_angular_velocity<class_OpenXRInterface_method_get_hand_joint_angular_velocity>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`, joint\: :ref:`HandJoints<enum_OpenXRInterface_HandJoints>`\ ) |const| |
@@ -77,6 +79,8 @@ OpenXR 介面允許 Godot 與 OpenXR 運作時進行互動，並使建立 XR 體
    | :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>`         | :ref:`get_hand_tracking_source<class_OpenXRInterface_method_get_hand_tracking_source>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const|                                                                           |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>`             | :ref:`get_motion_range<class_OpenXRInterface_method_get_motion_range>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const|                                                                                           |
+   +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                            | :ref:`get_recommended_target_size<class_OpenXRInterface_method_get_recommended_target_size>`\ (\ ) |const|                                                                                                                    |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`SessionState<enum_OpenXRInterface_SessionState>`                   | :ref:`get_session_state<class_OpenXRInterface_method_get_session_state>`\ (\ )                                                                                                                                                |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -346,6 +350,56 @@ OpenXR 已準備好開始會話。進入該狀態時會發出 :ref:`session_begu
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_EXITING** = ``8``
 
 OpenXR 實例即將被銷毀，正在退出。更改為該狀態時會發出 :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_OpenXRInterface_ViewConfiguration:
+
+.. rst-class:: classref-enumeration
+
+enum **ViewConfiguration**: :ref:`🔗<enum_OpenXRInterface_ViewConfiguration>`
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_MONO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_MONO** = ``0``
+
+Our XR output configuration is monoscopic.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_STEREO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_STEREO** = ``1``
+
+Our XR output configuration is stereoscopic.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_STEREO_WITH_INSET:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_STEREO_WITH_INSET** = ``2``
+
+Our XR output configuration is stereoscopic with an additional foveated inset render.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_UNSET:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_UNSET** = ``254``
+
+Our XR output configuration has not yet been determined.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_UNKNOWN:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_UNKNOWN** = ``255``
+
+Our XR output configuration is unknown.
 
 .. rst-class:: classref-item-separator
 
@@ -1008,6 +1062,20 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 
 ----
 
+.. _class_OpenXRInterface_method_get_active_view_configuration:
+
+.. rst-class:: classref-method
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **get_active_view_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_active_view_configuration>`
+
+Gets the active view configuration.
+
+\ **Note:** This will only return a valid value after OpenXR is initialized.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OpenXRInterface_method_get_available_display_refresh_rates:
 
 .. rst-class:: classref-method
@@ -1125,6 +1193,20 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>` **get_motion_range**\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_motion_range>`
 
 如果啟用了手部追蹤並且支援運動範圍，則取得\ ``hand`` 目前配置的運動範圍。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRInterface_method_get_recommended_target_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_recommended_target_size**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_recommended_target_size>`
+
+Returns the recommended render target size from the OpenXR runtime.
+
+This may not match the current render target size returned by :ref:`XRInterface.get_render_target_size()<class_XRInterface_method_get_render_target_size>`.
 
 .. rst-class:: classref-item-separator
 

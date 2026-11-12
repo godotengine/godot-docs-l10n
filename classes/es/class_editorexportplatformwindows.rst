@@ -88,6 +88,8 @@ Propiedades
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`shader_baker/enabled<class_EditorExportPlatformWindows_property_shader_baker/enabled>`                                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`ssh_remote_deploy/cleanup_script<class_EditorExportPlatformWindows_property_ssh_remote_deploy/cleanup_script>`               |
@@ -320,7 +322,11 @@ Si es ``true``, los recursos del proyecto se incrustan en el ejecutable.
 
 Array de los argumentos adicionales de línea de comandos pasados a la herramienta de firma de código. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -459,6 +465,22 @@ Ruta a la plantilla de exportación personalizada. Si se deja vacío, se utiliza
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
 Si es ``true``, se exporta un ejecutable contenedor de consola junto con el ejecutable principal, lo que permite ejecutar el proyecto con la salida de consola habilitada.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformWindows_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol file (\ ``.debugsymbols``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols file. This file must have the same name as the export template binary and an additional ``.debugsymbols`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.debugsymbols.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 

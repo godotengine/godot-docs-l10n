@@ -14,60 +14,60 @@ RegEx
 說明
 ----
 
-正則運算式（或稱 regex）是一種緊湊的語言，可用於識別遵循特定模式的字串，如 URL、電子郵件位址、完整句子等。例如正則運算式 ``ab[0-9]`` 可以找到 ``ab`` 後面跟著 ``0`` 到 ``9`` 的任何數字的字串。要想更深入地瞭解，你可以很容易地在互連網上找到各種教學和詳細解釋。
+A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of ``ab[0-9]`` would find any string that is ``ab`` followed by any number from ``0`` to ``9``. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
 
-首先，在使用 RegEx 物件之前，需要用 :ref:`compile()<class_RegEx_method_compile>` 對其進行搜尋模式的編譯。或者，可以使用靜態方法 :ref:`create_from_string()<class_RegEx_method_create_from_string>` 在單次方法呼叫中建立並編譯一個 RegEx 物件。
+To begin, the RegEx object needs to be compiled with the search pattern using :ref:`compile()<class_RegEx_method_compile>` before it can be used. Alternatively, the static method :ref:`create_from_string()<class_RegEx_method_create_from_string>` can be used to create and compile a RegEx object in a single method call.
 
 ::
 
     var regex = RegEx.new()
     regex.compile("\\w-(\\d+)")
-    # 用於建立和編譯正則運算式的簡寫（如下例所示）：
+    # Shorthand to create and compile a regex (used in the examples below):
     var regex2 = RegEx.create_from_string("\\w-(\\d+)")
 
-在為運算式跳脫之前，必須先為 GDScript 跳脫搜尋模式。例如，\ ``compile("\\d+")`` 會被 RegEx 讀成 ``\d+``\ 。同樣，\ ``compile("\"(?:\\\\.|[^\"])*\")`` 會被讀作 ``"(?:\\.|[^"])*"``\ 。在 GDScript 中，你還可以使用原始字串文字（r-字串）。例如，\ ``compile(r'"(?:\\.|[^"])*"')`` 將被讀取為相同的。
+The search pattern must be escaped first for GDScript before it is escaped for the expression. For example, ``compile("\\d+")`` would be read by RegEx as ``\d+``. Similarly, ``compile("\"(?:\\\\.|[^\"])*\"")`` would be read as ``"(?:\\.|[^"])*"``. In GDScript, you can also use raw string literals (r-strings). For example, ``compile(r'"(?:\\.|[^"])*"')`` would be read the same.
 
-使用 :ref:`search()<class_RegEx_method_search>`\ ，你可以在給定的文字中匹配模式。如果匹配到一個模式，將回傳 :ref:`RegExMatch<class_RegExMatch>`\ ，你可以使用 :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` 和 :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>` 等方法檢索結果的細節。
+Using :ref:`search()<class_RegEx_method_search>`, you can find the pattern within the given text. If a pattern is found, :ref:`RegExMatch<class_RegExMatch>` is returned and you can retrieve details of the results using methods such as :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` and :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>`.
 
 ::
 
     var regex = RegEx.create_from_string("\\w-(\\d+)")
     var result = regex.search("abc n-0123")
     if result:
-        print(result.get_string()) # 輸出“n-0123”
+        print(result.get_string()) # Prints "n-0123"
 
-捕獲組的結果 ``()`` 可以通過向 :ref:`RegExMatch<class_RegExMatch>` 中的各種方法傳遞組號來檢索。預設是組 0，並且將總是指整個模式。在上面的例子中，呼叫 ``result.get_string(1)`` 會得到 ``0123``\ 。
+The results of capturing groups ``()`` can be retrieved by passing the group number to the various methods in :ref:`RegExMatch<class_RegExMatch>`. Group 0 is the default and will always refer to the entire pattern. In the above example, calling ``result.get_string(1)`` would give you ``0123``.
 
-這個版本的 RegEx 也支援命名的捕獲組，名稱可以用來檢索結果。如果兩個或更多的組有相同的名稱，那麼這個名稱將只指第一個有匹配的組。
+This version of RegEx also supports named capturing groups, and the names can be used to retrieve the results. If two or more groups have the same name, the name would only refer to the first one with a match.
 
 ::
 
     var regex = RegEx.create_from_string("d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)")
-    var result = regex.search("數字是 x2f")
+    var result = regex.search("the number is x2f")
     if result:
-        print(result.get_string("digit")) # 輸出“2f”
+        print(result.get_string("digit")) # Prints "2f"
 
-如果你需要處理多個結果，\ :ref:`search_all()<class_RegEx_method_search_all>` 會生成一個所有不重疊的結果清單。為了方便起見，這可以和一個 ``for`` 循環結合起來。
+If you need to process multiple results, :ref:`search_all()<class_RegEx_method_search_all>` generates a list of all non-overlapping results. This can be combined with a ``for`` loop for convenience.
 
 ::
 
+    # Prints "01 03 0 3f 42"
     for result in regex.search_all("d01, d03, d0c, x3f and x42"):
         print(result.get_string("digit"))
-    # 會輸出 01 03 0 3f 42
 
-\ **範例：**\ 使用 RegEx 分割字串：
+\ **Example:** Split a string using a RegEx:
 
 ::
 
-    var regex = RegEx.create_from_string("\\S+") # 非空白字元類。
+    var regex = RegEx.create_from_string("\\S+") # Negated whitespace character class.
     var results = []
     for result in regex.search_all("One  Two \n\tThree"):
         results.push_back(result.get_string())
-    print(results) # 輸出 ["One", "Two", "Three"]
+    print(results) # Prints ["One", "Two", "Three"]
 
-\ **注意：**\ Godot 的 regex 實作基於的是 `PCRE2 <https://www.pcre.org/>`__\ 。你可以查看完整的模式參考\ `這裡 <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__\ 。
+\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://pcre2project.github.io/pcre2/>`__ library. You can view the full pattern reference `here <https://pcre2project.github.io/pcre2/doc/pcre2pattern/>`__.
 
-\ **提示：**\ 你可以使用 `Regexr <https://regexr.com/>`__ 來線上測試正則運算式。
+\ **Tip:** You can use `Regexr <https://regexr.com/>`__ to test regular expressions online.
 
 .. rst-class:: classref-reftable-group
 
@@ -198,9 +198,9 @@ RegEx
 
 :ref:`RegExMatch<class_RegExMatch>` **search**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search>`
 
-在文字中搜尋編譯後的模式。如果找到，則將首個配對結果放在 :ref:`RegExMatch<class_RegExMatch>` 容器中返回，否則返回 ``null``\ 。
+Searches the text for the compiled pattern. Returns a :ref:`RegExMatch<class_RegExMatch>` container of the first matching result if found, otherwise ``null``.
 
-可以使用 ``offset`` 和 ``end`` 指定要搜尋的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜尋另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字元。
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ RegEx
 
 :ref:`Array<class_Array>`\[:ref:`RegExMatch<class_RegExMatch>`\] **search_all**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search_all>`
 
-在文字中搜尋編譯後的模式。返回 :ref:`RegExMatch<class_RegExMatch>` 容器的陣列，其中每個容器包含的是互不重疊的配對結果。如果沒有找到結果，則返回一個空陣列。
+Searches the text for the compiled pattern. Returns an array of :ref:`RegExMatch<class_RegExMatch>` containers for each non-overlapping result. If no results were found, an empty array is returned instead.
 
-可以使用 ``offset`` 和 ``end`` 指定要搜尋的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜尋另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字元。
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ RegEx
 
 :ref:`String<class_String>` **sub**\ (\ subject\: :ref:`String<class_String>`, replacement\: :ref:`String<class_String>`, all\: :ref:`bool<class_bool>` = false, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_sub>`
 
-在文字中搜尋編譯後的模式，並將其替換為指定的字串。諸如 ``$1`` 和 ``$name`` 等轉義和反向引用會被擴充和解析。預設情況下，只有第一個實例被替換，但可以修改為針對所有實例（全域替換）。
+Searches the text for the compiled pattern and replaces it with the specified string. Escapes and backreferences such as ``$1`` and ``$name`` are expanded and resolved. By default, only the first instance is replaced, but it can be changed for all instances (global replacement).
 
-可以使用 ``offset`` 和 ``end`` 指定要搜尋的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜尋另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字元。
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

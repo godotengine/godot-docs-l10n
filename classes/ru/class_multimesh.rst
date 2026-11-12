@@ -189,9 +189,13 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +211,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 Массив, содержащий каждый :ref:`Color<class_Color>`, используемый всеми экземплярами этой сетки.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +248,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 Массив, содержащий каждое пользовательское значение данных, используемое всеми экземплярами этой сетки, как :ref:`PackedColorArray<class_PackedColorArray>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +327,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 Массив, содержащий каждое значение :ref:`Transform2D<class_Transform2D>`, используемое всеми экземплярами этой сетки, как :ref:`PackedVector2Array<class_PackedVector2Array>`. Каждое преобразование делится на 3 значения :ref:`Vector2<class_Vector2>`, соответствующих ``x``, ``y`` и ``origin`` преобразований.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +347,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 Массив, содержащий каждое значение :ref:`Transform3D<class_Transform3D>`, используемое всеми экземплярами этой сетки, как :ref:`PackedVector3Array<class_PackedVector3Array>`. Каждое преобразование делится на 4 значения :ref:`Vector3<class_Vector3>`, соответствующих ``x``, ``y``, ``z`` и ``origin`` преобразований.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +544,7 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 \ **Примечание:** Каждый компонент хранится в 32 битах в методах рендеринга Forward+ и Mobile, но упакован в 16 бит в методе рендеринга Compatibility.
 
-Чтобы цвет вступил в силу, убедитесь, что :ref:`use_colors<class_MultiMesh_property_use_colors>` имеет значение ``true`` на **MultiMesh** и :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` имеет значение ``true`` на материале. Если вы собираетесь установить абсолютный цвет вместо тонировки, убедитесь, что цвет альбедо материала установлен на чистый белый (``Color(1, 1, 1)``).
+Чтобы цвет вступил в силу, убедитесь, что :ref:`use_colors<class_MultiMesh_property_use_colors>` имеет значение ``true`` на **MultiMesh** и :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` имеет значение ``true`` на материале. Если вы собираетесь установить абсолютный цвет вместо тонировки, убедитесь, что цвет альбедо материала установлен на чистый белый (\ ``Color(1, 1, 1)``).
 
 .. rst-class:: classref-item-separator
 

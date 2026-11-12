@@ -83,6 +83,14 @@ Modalità di fusione moltiplicativa.
 
 Nessuna modalità di fusione, copia diretta del colore.
 
+.. _class_BlitMaterial_constant_BLEND_MODE_PREMULTIPLIED_ALPHA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_PREMULTIPLIED_ALPHA** = ``5``
+
+Modalità di fusione mista. Si presuppone che i colori siano premoltiplicati per il valore alfa (opacità).
+
 .. rst-class:: classref-section-separator
 
 ----

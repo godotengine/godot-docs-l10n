@@ -19,19 +19,23 @@ TextEdit
 描述
 ----
 
-多行文本编辑器，还提供了一部分用于编辑代码的工具，例如对语法高亮的支持。如果需要更高级的代码编辑工具，见 :ref:`CodeEdit<class_CodeEdit>`\ 。
+A multiline text editor. It also has limited facilities for editing code, such as syntax highlighting support. For more advanced facilities for editing code, see :ref:`CodeEdit<class_CodeEdit>`.
 
-输入文本时，可以使用 Unicode、OEM、Windows Alt 代码来插入特殊字符：
+While entering text, it is possible to insert special characters using Unicode, OEM or Windows alt codes:
 
-- 输入 Unicode 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （U+00E1），请按住 :kbd:`Alt` 并使用小键盘输入 :kbd:`+E1`\ （前置的零可以省略）。
+- To enter Unicode codepoints, hold :kbd:`Alt` and type the codepoint on the numpad. For example, to enter the character ``á`` (U+00E1), hold :kbd:`Alt` and type :kbd:`+E1` on the numpad (the leading zeroes can be omitted).
 
-- 输入 OEM 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （OEM 160），请按住 :kbd:`Alt` 并使用小键盘输入 ``160``\ 。
+- To enter OEM codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (OEM 160), hold :kbd:`Alt` and type ``160`` on the numpad.
 
-- 输入 Windows 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （Windows 0225）请按住 :kbd:`Alt` 并使用小键盘输入 :kbd:`0`\ 、\ :kbd:`2`\ 、\ :kbd:`2`\ 、\ :kbd:`5` 。前置的零\ **不能**\ 省略，因为 Windows 码位需要用这些零来和 OEM 码位进行区分。
+- To enter Windows codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (Windows 0225), hold :kbd:`Alt` and type :kbd:`0`, :kbd:`2`, :kbd:`2`, :kbd:`5` on the numpad. The leading zero here must **not** be omitted, as this is how Windows codepoints are distinguished from OEM codepoints.
 
-\ **注意：**\ 大多数与视口、文本光标、编辑相关的方法都包含一个名叫 ``caret_index`` 的光标索引参数，用于支持 :ref:`caret_multiple<class_TextEdit_property_caret_multiple>`\ 。该参数的取值应为：\ ``-1`` 表示所有光标，\ ``0`` 表示主光标，大于 ``0`` 表示次级光标，取创建顺序。
+\ **Note:** Most viewport, caret, and edit methods contain a ``caret_index`` argument for :ref:`caret_multiple<class_TextEdit_property_caret_multiple>` support. The argument should be one of the following: ``-1`` for all carets, ``0`` for the main caret, or greater than ``0`` for secondary carets in the order they were created.
 
-\ **注意：**\ 按住 :kbd:`Alt` 时，垂直滚轮的滚动速度为原来的 5 倍。同样适用于 Godot 的脚本编辑器。
+\ **Note:** When holding down :kbd:`Alt`, the vertical scroll wheel will scroll 5 times as fast as it would normally do. This also works in the Godot script editor.
+
+.. classref_note::
+
+    Line and column numbers are *zero-based*, like elements of an array. For example, the first line of text can be retrieved by ``get_line(0)``, the second line by ``get_line(1)``, and so on.
 
 .. rst-class:: classref-reftable-group
 
@@ -115,6 +119,8 @@ TextEdit
    | :ref:`float<class_float>`                                         | :ref:`scroll_vertical<class_TextEdit_property_scroll_vertical>`                                                             | ``0.0``                                                                             |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                           | :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>`                                                         | ``true``                                                                            |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`selection_handle_enabled<class_TextEdit_property_selection_handle_enabled>`                                           | ``true``                                                                            |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                           | :ref:`shortcut_keys_enabled<class_TextEdit_property_shortcut_keys_enabled>`                                                 | ``true``                                                                            |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -481,55 +487,65 @@ TextEdit
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`background_color<class_TextEdit_theme_color_background_color>`                     | ``Color(0, 0, 0, 0)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`caret_background_color<class_TextEdit_theme_color_caret_background_color>`         | ``Color(0, 0, 0, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`caret_color<class_TextEdit_theme_color_caret_color>`                               | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`current_line_color<class_TextEdit_theme_color_current_line_color>`                 | ``Color(0.25, 0.25, 0.26, 0.8)``    |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_color<class_TextEdit_theme_color_font_color>`                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_TextEdit_theme_color_font_outline_color>`                 | ``Color(0, 0, 0, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_placeholder_color<class_TextEdit_theme_color_font_placeholder_color>`         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_readonly_color<class_TextEdit_theme_color_font_readonly_color>`               | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_selected_color<class_TextEdit_theme_color_font_selected_color>`               | ``Color(0, 0, 0, 0)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`search_result_border_color<class_TextEdit_theme_color_search_result_border_color>` | ``Color(0.3, 0.3, 0.3, 0.4)``       |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`search_result_color<class_TextEdit_theme_color_search_result_color>`               | ``Color(0.3, 0.3, 0.3, 1)``         |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`selection_color<class_TextEdit_theme_color_selection_color>`                       | ``Color(0.5, 0.5, 0.5, 1)``         |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`word_highlighted_color<class_TextEdit_theme_color_word_highlighted_color>`         | ``Color(0.5, 0.5, 0.5, 0.25)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`caret_width<class_TextEdit_theme_constant_caret_width>`                            | ``1``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`line_spacing<class_TextEdit_theme_constant_line_spacing>`                          | ``4``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_TextEdit_theme_constant_outline_size>`                          | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`wrap_offset<class_TextEdit_theme_constant_wrap_offset>`                            | ``10``                              |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_TextEdit_theme_font_font>`                                              |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_TextEdit_theme_font_size_font_size>`                               |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`space<class_TextEdit_theme_icon_space>`                                            |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`tab<class_TextEdit_theme_icon_tab>`                                                |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_TextEdit_theme_style_focus>`                                           |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal<class_TextEdit_theme_style_normal>`                                         |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`read_only<class_TextEdit_theme_style_read_only>`                                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`background_color<class_TextEdit_theme_color_background_color>`                     | ``Color(0, 0, 0, 0)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`caret_background_color<class_TextEdit_theme_color_caret_background_color>`         | ``Color(0, 0, 0, 1)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`caret_color<class_TextEdit_theme_color_caret_color>`                               | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`current_line_color<class_TextEdit_theme_color_current_line_color>`                 | ``Color(0.25, 0.25, 0.26, 0.8)``    |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_color<class_TextEdit_theme_color_font_color>`                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_outline_color<class_TextEdit_theme_color_font_outline_color>`                 | ``Color(0, 0, 0, 1)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_placeholder_color<class_TextEdit_theme_color_font_placeholder_color>`         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_readonly_color<class_TextEdit_theme_color_font_readonly_color>`               | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_selected_color<class_TextEdit_theme_color_font_selected_color>`               | ``Color(0, 0, 0, 0)``               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`search_result_border_color<class_TextEdit_theme_color_search_result_border_color>` | ``Color(0.3, 0.3, 0.3, 0.4)``       |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`search_result_color<class_TextEdit_theme_color_search_result_color>`               | ``Color(0.3, 0.3, 0.3, 1)``         |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`selection_color<class_TextEdit_theme_color_selection_color>`                       | ``Color(0.5, 0.5, 0.5, 1)``         |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`word_highlighted_color<class_TextEdit_theme_color_word_highlighted_color>`         | ``Color(0.5, 0.5, 0.5, 0.25)``      |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`caret_width<class_TextEdit_theme_constant_caret_width>`                            | ``1``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`line_spacing<class_TextEdit_theme_constant_line_spacing>`                          | ``4``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`outline_size<class_TextEdit_theme_constant_outline_size>`                          | ``0``                               |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`wrap_offset<class_TextEdit_theme_constant_wrap_offset>`                            | ``10``                              |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Font<class_Font>`               | :ref:`font<class_TextEdit_theme_font_font>`                                              |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`font_size<class_TextEdit_theme_font_size_font_size>`                               |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`space<class_TextEdit_theme_icon_space>`                                            |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`tab<class_TextEdit_theme_icon_tab>`                                                |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`caret_move_rejected_sound<class_TextEdit_theme_sound_caret_move_rejected_sound>`   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`caret_moved_sound<class_TextEdit_theme_sound_caret_moved_sound>`                   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_TextEdit_theme_sound_focus_sound>`                               |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`text_change_rejected_sound<class_TextEdit_theme_sound_text_change_rejected_sound>` |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`text_changed_sound<class_TextEdit_theme_sound_text_changed_sound>`                 |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`focus<class_TextEdit_theme_style_focus>`                                           |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`normal<class_TextEdit_theme_style_normal>`                                         |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`read_only<class_TextEdit_theme_style_read_only>`                                   |                                     |
+   +---------------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -1717,6 +1733,23 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 ----
 
+.. _class_TextEdit_property_selection_handle_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **selection_handle_enabled** = ``true`` :ref:`🔗<class_TextEdit_property_selection_handle_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_selection_handle_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_selection_handle_enabled**\ (\ )
+
+If ``true``, enables the handles used for text selection. These handles are only visible on touchscreen and can be dragged to adjust the selected text range.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TextEdit_property_shortcut_keys_enabled:
 
 .. rst-class:: classref-property
@@ -2165,7 +2198,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TextEdit_method_clear>`
 
-执行对 **TextEdit** 的完全重置，包括撤消历史。
+Clears all text and related state. This clears the text content, selections, carets, and gutter line data. If :ref:`editable<class_TextEdit_property_editable>` is ``false``, clears the undo history, otherwise preserves it. Does **not** reset other values (such as :ref:`placeholder_text<class_TextEdit_property_placeholder_text>`, font, colors) to their defaults.
 
 .. rst-class:: classref-item-separator
 
@@ -2219,7 +2252,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 |void| **cut**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_cut>`
 
-剪切当前选区。可以使用 :ref:`_cut()<class_TextEdit_private_method__cut>` 覆盖。
+Cuts the current selection. Can be overridden with :ref:`_cut()<class_TextEdit_private_method__cut>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3036,7 +3069,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 :ref:`int<class_int>` **get_tab_size**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_tab_size>`
 
-返回该 **TextEdit** 的制表符大小。
+Returns the **TextEdit**'s tab size.
 
 .. rst-class:: classref-item-separator
 
@@ -3120,7 +3153,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 :ref:`String<class_String>` **get_word_at_pos**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_word_at_pos>`
 
-返回位于 ``position`` 的单词。
+Returns the word at ``position`` (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -4277,6 +4310,66 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 :ref:`Texture2D<class_Texture2D>` **tab** :ref:`🔗<class_TextEdit_theme_icon_tab>`
 
 为制表符文本字符，设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_theme_sound_caret_move_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **caret_move_rejected_sound** :ref:`🔗<class_TextEdit_theme_sound_caret_move_rejected_sound>`
+
+Played when a caret is attempted to be moved using the arrow keys, :kbd:`Home`, :kbd:`End`, :kbd:`Page Up`, or :kbd:`Page Down`, but none of the carets actually move since they're already at the beginning/end of the text.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_theme_sound_caret_moved_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **caret_moved_sound** :ref:`🔗<class_TextEdit_theme_sound_caret_moved_sound>`
+
+Played when a caret is moved using the arrow keys, :kbd:`Home`, :kbd:`End`, :kbd:`Page Up`, :kbd:`Page Down`, or mouse clicks.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_TextEdit_theme_sound_focus_sound>`
+
+Played when this **TextEdit** receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_theme_sound_text_change_rejected_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **text_change_rejected_sound** :ref:`🔗<class_TextEdit_theme_sound_text_change_rejected_sound>`
+
+Played when a text change is rejected (for instance, when pressing Backspace while there is no text).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_theme_sound_text_changed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **text_changed_sound** :ref:`🔗<class_TextEdit_theme_sound_text_changed_sound>`
+
+Played when text is successfully changed through keyboard input (physical or virtual). Calling methods that alter the text programmatically will also play this sound (but not setting the :ref:`text<class_TextEdit_property_text>` property or calling :ref:`clear()<class_TextEdit_method_clear>`).
 
 .. rst-class:: classref-item-separator
 

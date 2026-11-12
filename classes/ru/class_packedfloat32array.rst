@@ -312,7 +312,7 @@ PackedFloat32Array
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat32Array_method_insert>`
 
-Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (``idx == size()``).
+Вставляет новый элемент в указанную позицию в массиве. Позиция должна быть допустимой или в конце массива (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ PackedFloat32Array
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat32Array_method_remove_at>`
 
-Удаляет элемент из массива по индексу.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

@@ -26,17 +26,19 @@ ThemeDB
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------+---------+
-   | :ref:`float<class_float>`         | :ref:`fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` | ``1.0`` |
-   +-----------------------------------+------------------------------------------------------------------------+---------+
-   | :ref:`Font<class_Font>`           | :ref:`fallback_font<class_ThemeDB_property_fallback_font>`             |         |
-   +-----------------------------------+------------------------------------------------------------------------+---------+
-   | :ref:`int<class_int>`             | :ref:`fallback_font_size<class_ThemeDB_property_fallback_font_size>`   | ``16``  |
-   +-----------------------------------+------------------------------------------------------------------------+---------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`fallback_icon<class_ThemeDB_property_fallback_icon>`             |         |
-   +-----------------------------------+------------------------------------------------------------------------+---------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`fallback_stylebox<class_ThemeDB_property_fallback_stylebox>`     |         |
-   +-----------------------------------+------------------------------------------------------------------------+---------+
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`             | :ref:`fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` | ``1.0`` |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`Font<class_Font>`               | :ref:`fallback_font<class_ThemeDB_property_fallback_font>`             |         |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`int<class_int>`                 | :ref:`fallback_font_size<class_ThemeDB_property_fallback_font_size>`   | ``16``  |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`fallback_icon<class_ThemeDB_property_fallback_icon>`             |         |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`fallback_sound<class_ThemeDB_property_fallback_sound>`           |         |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`fallback_stylebox<class_ThemeDB_property_fallback_stylebox>`     |         |
+   +---------------------------------------+------------------------------------------------------------------------+---------+
 
 .. rst-class:: classref-reftable-group
 
@@ -147,6 +149,23 @@ ThemeDB
 - :ref:`Texture2D<class_Texture2D>` **get_fallback_icon**\ (\ )
 
 Значок (иконка) резервного копирования каждого узла :ref:`Control<class_Control>` и ресурса :ref:`Theme<class_Theme>`. Используется, когда для элемента управления недоступно другое значение.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ThemeDB_property_fallback_sound:
+
+.. rst-class:: classref-property
+
+:ref:`AudioStream<class_AudioStream>` **fallback_sound** :ref:`🔗<class_ThemeDB_property_fallback_sound>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_fallback_sound**\ (\ value\: :ref:`AudioStream<class_AudioStream>`\ )
+- :ref:`AudioStream<class_AudioStream>` **get_fallback_sound**\ (\ )
+
+The fallback sound of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
 
 .. rst-class:: classref-item-separator
 

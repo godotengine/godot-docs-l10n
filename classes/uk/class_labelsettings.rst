@@ -14,7 +14,7 @@ LabelSettings
 Опис
 --------
 
-**LabelSettings** є ресурсом, який надає загальні налаштування для налаштування тексту в :ref:`Label<class_Label>`. Виконайте пріоритет над властивостями, визначеними в ``члені Control.theme``. Ресурс може бути розділений між декількома етикетками і змінено на літа, тому це зручний і гнучкий спосіб налаштування текстового стилю.
+**LabelSettings** is a resource that provides common settings to customize the text in a :ref:`Label<class_Label>`. It will take priority over the properties defined in :ref:`Control.theme<class_Control_property_theme>`. The resource can be shared between multiple labels and changed on the fly, making it a convenient and flexible way to set up text style.
 
 .. rst-class:: classref-reftable-group
 

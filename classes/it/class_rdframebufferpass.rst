@@ -79,7 +79,11 @@ Descrizioni delle proprietà
 
 Allegati di colore in ordine a partire da 0. Se questo allegato non è utilizzato dallo shader, passa ATTACHMENT_UNUSED per saltare.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,11 @@ Allegato di profondità. ATTACHMENT_UNUSED dovrebbe essere usato se nessun buffe
 
 Utilizzato per i framebuffer multipassaggio (più di un passaggio di rendering). Converte un allegato in un input. Assicurati di fornirlo correttamente anche in :ref:`RDUniform<class_RDUniform>` per il set di uniformi.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +142,11 @@ Utilizzato per i framebuffer multipassaggio (più di un passaggio di rendering).
 
 Allegati da conservare in questo passaggio (altrimenti saranno cancellati).
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +165,11 @@ Allegati da conservare in questo passaggio (altrimenti saranno cancellati).
 
 Se gli allegati di colore sono multicampionati, è possibile fornire allegati di risoluzione non multicampionati.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

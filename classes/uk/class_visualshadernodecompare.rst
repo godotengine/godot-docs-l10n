@@ -109,7 +109,7 @@ A 2D векторний тип.
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_TRANSFORM** = ``7``
 
-(``mat4``) type.
+(\ ``mat4``) type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_MAX:
 
@@ -135,7 +135,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_EQUAL** = ``0``
 
-Порівняння для рівності (``a == b``).
+Порівняння для рівності (\ ``a == b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_NOT_EQUAL:
 
@@ -143,7 +143,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_NOT_EQUAL** = ``1``
 
-Порівняння нерівності (``a != b``).
+Порівняння нерівності (\ ``a != b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN:
 
@@ -151,7 +151,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN** = ``2``
 
-Порівняння більше (``a > b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Порівняння більше (\ ``a > b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN_EQUAL:
 
@@ -159,7 +159,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN_EQUAL** = ``3``
 
-Порівняння для більш ніж або рівних (``a >= b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Порівняння для більш ніж або рівних (\ ``a >= b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN:
 
@@ -167,7 +167,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN** = ``4``
 
-Порівняння менше (``a < b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Порівняння менше (\ ``a < b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN_EQUAL:
 
@@ -175,7 +175,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN_EQUAL** = ``5``
 
-Порівняння менш ніж або рівних (``a <= b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
+Порівняння менш ніж або рівних (\ ``a <= b``). Не можна використовувати, якщо :ref:`type<class_VisualShaderNodeCompare_property_type>` встановити на :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` або :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_MAX:
 

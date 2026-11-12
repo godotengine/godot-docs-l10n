@@ -378,7 +378,11 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 
 \ **Примечание:** Если смещения при разделении приводят к перекрытию узлов :ref:`Control<class_Control>`, то при определении позиций приоритет будет иметь первое разделение.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +530,7 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 
 :ref:`int<class_int>` **autohide** = ``1`` :ref:`🔗<class_SplitContainer_theme_constant_autohide>`
 
-Логическое Bool значение. Если ``1`` (``true``), элементы захвата будут автоматически скрываться, когда они не находятся под курсором. Если ``0`` (``false``), элементы захвата всегда видны. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` должен быть :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
+Логическое Bool значение. Если ``1`` (\ ``true``), элементы захвата будут автоматически скрываться, когда они не находятся под курсором. Если ``0`` (\ ``false``), элементы захвата всегда видны. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` должен быть :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
 
 .. rst-class:: classref-item-separator
 

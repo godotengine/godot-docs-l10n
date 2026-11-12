@@ -5,7 +5,7 @@
 Object
 ======
 
-**派生：** :ref:`AccessibilityServer<class_AccessibilityServer>`, :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
+**派生：** :ref:`AccessibilityServer<class_AccessibilityServer>`, :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`TextureStreaming<class_TextureStreaming>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
 
 引擎中所有其他类的基类。
 
@@ -563,7 +563,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-初始化迭代器。\ ``iter`` 用于存储迭代的状态。由于 GDScript 不支持通过引用传递参数，因此使用一个单元素数组作为包装。只要迭代器还没有到达末尾，就返回 ``true``\ 。
+Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. This array should not be resized. Returns ``true`` so long as the iterator has not reached the end.
 
 ::
 
@@ -592,9 +592,9 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
         for x in my_range:
             print(x) # Prints 2, 3, 4.
 
-\ **注意：** 避免将迭代器的状态存储在成员变量中，请改用 ``iter`` 参数。否则，你将无法在嵌套循环中重复使用同一个迭代器实例。
+\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
 
-更多详情请参阅 `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__\ 。
+See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **_iter_next**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_next>`
 
-将迭代器移动到下一次迭代。\ ``iter`` 存储迭代状态。由于 GDScript 不支持按引用传递参数，这里使用单元素数组作为包装器。只要迭代器尚未到达末尾就会返回 ``true``\ 。
+Moves the iterator to the next iteration. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. This array should not be resized. Returns ``true`` so long as the iterator has not reached the end.
 
 .. rst-class:: classref-item-separator
 
@@ -1008,15 +1008,15 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Object_method_connect>`
 
-将名为 ``signal`` 的信号与可调用体 ``callable`` 连接。还可以通过 ``flags`` 添加标志，配置连接行为（见 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常量）。
+Connects a ``signal`` by name to a ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the signal was successfully connected, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the :ref:`Callable<class_Callable>` is null, invalid, or if the signal doesn't exist on the object.
 
-一个信号与同一个 :ref:`Callable<class_Callable>` 只能连接一次。如果信号已连接，则该方法会返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 并报错误，除非信号是使用 :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>` 连接的。要防止出现这种情况，请先使用 :ref:`is_connected()<class_Object_method_is_connected>` 检查是否已存在连接。
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and prints an error, unless the signal is connected with :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Object_method_is_connected>` first to check for existing connections.
 
-\ **注意：**\ 如果 ``callable`` 的对象被释放，连接就会丢失。
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
-\ **注意：**\ 在 GDScript 中，通常建议使用 :ref:`Signal.connect()<class_Signal_method_connect>` 来连接信号。
+\ **Note:** In GDScript, it is generally recommended to connect signals with :ref:`Signal.connect()<class_Signal_method_connect>` instead.
 
-\ **注意：**\ 该方法以及所有其他与信号相关的方法都是线程安全的。
+\ **Note:** This method, and all other signal-related methods, are thread-safe.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,7 +1028,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **disconnect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Object_method_disconnect>`
 
-按名称从给定的 ``callable`` 断开 ``signal``\ 。如果连接不存在，则生成一个错误。使用 :ref:`is_connected()<class_Object_method_is_connected>` 确保该连接存在。
+Disconnects a ``signal`` by name from a given ``callable``. If the connection does not exist, prints an error. Use :ref:`is_connected()<class_Object_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1197,11 +1197,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **get_meta**\ (\ name\: :ref:`StringName<class_StringName>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Object_method_get_meta>`
 
-返回该对象的元数据中名称为 ``name`` 的条目。如果不存在该条目，则返回 ``default``\ 。如果 ``default`` 为 ``null``\ ，则还会生成错误。
+Returns the object's metadata value for the given entry ``name``. If the entry does not exist, returns ``default``. If ``default`` is ``null``, an error is also generated.
 
-\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,11 +1361,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **has_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_meta>`
 
-如果找到名称为 ``name`` 的元数据条目，则返回 ``true``\ 。另见 :ref:`get_meta()<class_Object_method_get_meta>`\ 、\ :ref:`set_meta()<class_Object_method_set_meta>` 和 :ref:`remove_meta()<class_Object_method_remove_meta>`\ 。
+Returns ``true`` if a metadata entry is found with the given ``name``. See also :ref:`get_meta()<class_Object_method_get_meta>`, :ref:`set_meta()<class_Object_method_set_meta>` and :ref:`remove_meta()<class_Object_method_remove_meta>`.
 
-\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,11 +1571,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **remove_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Object_method_remove_meta>`
 
-从对象的元数据中移除名称为 ``name`` 的条目。另见 :ref:`has_meta()<class_Object_method_has_meta>`\ 、\ :ref:`get_meta()<class_Object_method_get_meta>` 和 :ref:`set_meta()<class_Object_method_set_meta>`\ 。
+Removes the given entry ``name`` from the object's metadata. See also :ref:`has_meta()<class_Object_method_has_meta>`, :ref:`get_meta()<class_Object_method_get_meta>` and :ref:`set_meta()<class_Object_method_set_meta>`.
 
-\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1728,13 +1728,13 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **set_meta**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_meta>`
 
-添加或更改对象元数据中名称为 ``name`` 的条目。元数据值 ``value`` 可以是任何 :ref:`Variant<class_Variant>`\ ，尽管某些类型无法正确序列化。
+Adds or changes the entry ``name`` inside the object's metadata. The metadata ``value`` can be any :ref:`Variant<class_Variant>`, although some types cannot be serialized correctly.
 
-如果 ``value`` 为 ``null``\ ，则该条目被移除。等价于使用 :ref:`remove_meta()<class_Object_method_remove_meta>`\ 。另见 :ref:`has_meta()<class_Object_method_has_meta>` 和 :ref:`get_meta()<class_Object_method_get_meta>`\ 。
+If ``value`` is ``null``, the entry is removed. This is the equivalent of using :ref:`remove_meta()<class_Object_method_remove_meta>`. See also :ref:`has_meta()<class_Object_method_has_meta>` and :ref:`get_meta()<class_Object_method_get_meta>`.
 
-\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 

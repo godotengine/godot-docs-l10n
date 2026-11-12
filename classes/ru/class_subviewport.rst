@@ -7,6 +7,8 @@ SubViewport
 
 **Наследует:** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
+**Наследуется от:** :ref:`OpenXRFoveatedInsetViewport<class_OpenXRFoveatedInsetViewport>`
+
 Интерфейс к игровому миру, который не создает окно и не выводит изображение на экран напрямую.
 
 .. rst-class:: classref-introduction-group

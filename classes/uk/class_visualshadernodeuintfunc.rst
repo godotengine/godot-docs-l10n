@@ -14,7 +14,7 @@ VisualShaderNodeUIntFunc
 Опис
 --------
 
-Прийміть невизнаний загальний скаляр (``x``) до вхідного порту і перетворюйте його відповідно до функції :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
+Прийміть невизнаний загальний скаляр (\ ``x``) до вхідного порту і перетворюйте його відповідно до функції :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

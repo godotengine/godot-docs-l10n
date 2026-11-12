@@ -14,15 +14,15 @@ Un nodo con la capacità di inviare richieste HTTP(S).
 Descrizione
 ----------------------
 
-Un nodo capace di inviare richieste HTTP. Utilizza :ref:`HTTPClient<class_HTTPClient>` internamente.
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricare file o contenuti Web tramite HTTP.
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **Attenzione:** Consulta le note e gli avvertimenti su :ref:`HTTPClient<class_HTTPClient>` per le limitazioni, in particolare per quanto riguarda la sicurezza TLS.
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Esempio:** Contatta un'API REST e stampa uno dei sui campi restituiti:
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,52 +30,52 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
  .. code-tab:: gdscript
 
     func _ready():
-        # Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Effettua una richiesta GET. L'URL sottostante restituisce JSON al momento.
-        var error = http_request.request("https://placehold.co/512.png")
+        # Perform a GET request. The URL below returns JSON as of writing.
+        var error = http_request.request("https://httpbin.org/get")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # Effettua una richiesta POST. L'URL sottostante restituisce JSON al momento.
-        # Nota: non effettuare richieste simultanee utilizzando un singolo nodo HTTPRequest.
-        # Il pezzo di codice sottostante è fornito solo per riferimento.
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
         var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
-            push_error("Si è verificato un errore nella richiesta HTTP.")
+            push_error("An error occurred in the HTTP request.")
 
-    # Chiamato quando la richiesta HTTP è completata.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Stamperà la stringa dell'agente utente utilizzata dal nodo HTTPRequest (come riconosciuto da httpbin.org).
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Effettua una richiesta GET. L'URL sottostante restituisce JSON al momento.
-        Error error = httpRequest.Request("https://placehold.co/512.png");
+        // Perform a GET request. The URL below returns JSON as of writing.
+        Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
-            GD.PushError("Si è verificato un errore nella richiesta HTTP.");
+            GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // Effettua una richiesta POST. L'URL sottostante restituisce JSON al momento.
-        // Nota: non effettuare richieste simultanee utilizzando un singolo nodo HTTPRequest.
-        // Il pezzo di codice sottostante è fornito solo per riferimento.
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
         string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -87,20 +87,20 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
         }
     }
 
-    // Chiamato quando la richiesta HTTP è completata.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Stamperà la stringa dell'agente utente utilizzata dal nodo HTTPRequest (come riconosciuto da httpbin.org).
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Esempio:** Carica e visualizza un'immagine tramite **HTTPRequest**:
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,29 +108,29 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
  .. code-tab:: gdscript
 
     func _ready():
-        # Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Effettua la richiesta HTTP. L'URL sottostante restituisce un'immagine PNG al momento.
-        var error = http_request.request("https://via.placeholder.com/512")
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
+        var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
-            push_error("Si è verificato un errore nella richiesta HTTP.")
+            push_error("An error occurred in the HTTP request.")
 
-    # Chiamato quando la richiesta HTTP è completata.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
-            push_error("Impossibile scaricare l'immagine. Prova un'immagine diversa.")
+            push_error("Image couldn't be downloaded. Try a different image.")
 
         var image = Image.new()
         var error = image.load_png_from_buffer(body)
         if error != OK:
-            push_error("Impossibile caricare l'immagine.")
+            push_error("Couldn't load the image.")
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Visualizza l'immagine in un nodo TextureRect.
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,36 +139,36 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
 
     public override void _Ready()
     {
-        // Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Effettua la richiesta HTTP. L'URL sottostante restituisce un'immagine PNG al momento.
-        Error error = httpRequest.Request("https://via.placeholder.com/512");
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
+        Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
-            GD.PushError("Si è verificato un errore nella richiesta HTTP.");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // Chiamato quando la richiesta HTTP è completata.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
         {
-            GD.PushError("Impossibile scaricare l'immagine. Prova un'immagine diversa.");
+            GD.PushError("Image couldn't be downloaded. Try a different image.");
         }
         var image = new Image();
         Error error = image.LoadPngFromBuffer(body);
         if (error != Error.Ok)
         {
-            GD.PushError("Impossibile caricare l'immagine.");
+            GD.PushError("Couldn't load the image.");
         }
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // Visualizza l'immagine in un nodo TextureRect.
+        // Display the image in a TextureRect node.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
 
 
 
-\ **Nota:** I nodi **HTTPRequest** gestiranno automaticamente la decompressione dei corpi delle risposte. Un'intestazione ``Accept-Encoding`` sarà aggiunta automaticamente a ciascuna delle tue richieste, a meno che non ne sia già stata specificata una. Qualsiasi risposta con un'intestazione ``Content-Encoding: gzip`` sarà automaticamente decompressa e consegnata come byte non compressi.
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 
@@ -195,21 +195,25 @@ Proprietà
 .. table::
    :widths: auto
 
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                 | ``true``  |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`         | ``-1``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>` | ``65536`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`             | ``""``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`             | ``8``     |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                         | ``0.0``   |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                 | ``false`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                         | ``true``  |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`                 | ``-1``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>`         | ``65536`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`                     | ``""``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`     | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`                     | ``8``     |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                                 | ``0.0``   |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                         | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -415,6 +419,25 @@ Se ``false`` nessuna intestazione sarà aggiunta e nessuna decompressione sarà 
 
 ----
 
+.. _class_HTTPRequest_property_append_to_download_file:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **append_to_download_file** = ``false`` :ref:`🔗<class_HTTPRequest_property_append_to_download_file>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_append_to_download_file**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_appending_to_download_file**\ (\ )
+
+If ``true`` and the server responds with HTTP status code ``206 Partial Content``, the response body will be appended to the existing :ref:`download_file<class_HTTPRequest_property_download_file>` instead of overwriting it. If the server responds with ``200 OK`` (e.g. if it does not support range requests), the file will be overwritten as usual.
+
+This is useful for resuming interrupted downloads when used together with an HTTP ``Range`` header in the request. See also :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_HTTPRequest_property_body_size_limit:
 
 .. rst-class:: classref-property
@@ -463,6 +486,25 @@ Imposta questo su un valore inferiore (ad esempio 4096 per 4 KiB) quando si scar
 - :ref:`String<class_String>` **get_download_file**\ (\ )
 
 Il file in cui scaricare. Invierà qualsiasi file ricevuto in esso.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HTTPRequest_property_keep_partial_download:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **keep_partial_download** = ``false`` :ref:`🔗<class_HTTPRequest_property_keep_partial_download>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_keep_partial_download**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_keeping_partial_download**\ (\ )
+
+If ``true``, the partially downloaded file set via :ref:`download_file<class_HTTPRequest_property_download_file>` will not be deleted when the request fails or is canceled. This allows resuming an interrupted download later by sending a new request with an HTTP ``Range`` header and :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` set to ``true``.
+
+If ``false`` (the default), incomplete download files are automatically deleted on failure or cancellation.
 
 .. rst-class:: classref-item-separator
 

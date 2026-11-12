@@ -129,6 +129,8 @@ EditorExportPlatformMacOS
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`                                                                             |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`                                                                                 |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`display/high_res<class_EditorExportPlatformMacOS_property_display/high_res>`                                                                                                     |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`export/distribution_type<class_EditorExportPlatformMacOS_property_export/distribution_type>`                                                                                     |
@@ -546,7 +548,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/bundle_identifier>`
 
-Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (``A-Z``, ``a-z``, а ``0-9``), гіфени (``-``), а також періоди (`` і ``).
+Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (\ ``A-Z``, ``a-z``, а ``0-9``), гіфени (\ ``-``), а також періоди (\ `` і ``).
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +596,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-Файл значка програми. Якщо залишити порожнім, буде використано файл :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, а потім :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+Application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +636,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/min_macos_version_arm64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_arm64>`
 
-Мінімальна версія macOS, необхідна для роботи цієї програми на Apple Silicon Mac, у форматі ``major.minor.patch`` або ``major.minor``, може містити лише цифри (``0-9``) і крапки (``.``).
+Мінімальна версія macOS, необхідна для роботи цієї програми на Apple Silicon Mac, у форматі ``major.minor.patch`` або ``major.minor``, може містити лише цифри (\ ``0-9``) і крапки (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +648,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/min_macos_version_x86_64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_x86_64>`
 
-Мінімальна версія macOS, необхідна для роботи цієї програми на Intel Mac, у форматі ``major.minor.patch`` або ``major.minor``, може містити лише цифри (``0-9``) і крапки (``.``).
+Мінімальна версія macOS, необхідна для роботи цієї програми на Intel Mac, у форматі ``major.minor.patch`` або ``major.minor``, може містити лише цифри (\ ``0-9``) і крапки (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -658,7 +660,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/short_version>`
 
-Версія програми, видима для користувача. Може містити тільки цифрові символи (``0-9``) і крапки (``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, видима для користувача. Може містити тільки цифрові символи (\ ``0-9``) і крапки (\ ``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для параметра *Identity > Version* у створеному проекті Xcode.
 
@@ -684,7 +686,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/version>`
 
-Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (``0-9``) та крапки (``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (\ ``0-9``) та крапки (\ ``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для значення *Identity > Build* у згенерованому проекті Xcode.
 
@@ -700,7 +702,7 @@ EditorExportPlatformMacOS
 
 Застосувати архітектуру.
 
-\ ``x86_64``, ``arm64``, і ``universal`` (``x86_64 + arm64``).
+\ ``x86_64``, ``arm64``, і ``universal`` (\ ``x86_64 + arm64``).
 
 Офіційні шаблони експорту включають в себе ``універсал``.
 
@@ -714,7 +716,7 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-Apple Team ID, унікальний 10-символьний рядок. Щоб знайти свій Team ID, перевірте "Membership details" у вашому обліковому записі Apple розробника, або "Organizational Unit" вашого сертифіката для підписки коду. Дивитися `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +770,11 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 Проведення додаткових аргументів командного рядка, переданих на інструмент реєстрації коду.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +803,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/address_book** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/address_book>`
 
-Увімкніть, щоб дозволити доступ до контактів у адресній книзі користувача, якщо це ввімкнено, ви також повинні надати повідомлення про використання в :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`. `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
+Enable to allow access to contacts in the user's address book, if it's enabled you should also provide a usage message in the :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` option. See `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +949,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`Array<class_Array>` **codesign/entitlements/app_sandbox/helper_executables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/helper_executables>`
 
-Список використаних інструментів для вбудовування в пакет додатків. Додаток Sandboxed обмежений, щоб виконати тільки ці виконувані. Див. `Підібравши інструмент командного рядка в пісочниці  <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
+List of helper executables to be embedded in the app bundle. Sandboxed apps are limited to execute only these executables. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +997,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/audio_input** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/audio_input>`
 
-Увімкнути, якщо вам потрібно використовувати мікрофон або інші джерела введення аудіо, якщо це ввімкнено, ви також повинні надати повідомлення про використання в параметрі ``пам'ятати конфіденційність / microphone_usage_description``. `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
+Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide a usage message in the :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` option. See `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1003,7 +1009,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/calendars** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/calendars>`
 
-Увімкнути, щоб дозволити доступ до календаря користувача, якщо це ввімкнено, ви також повинні надати повідомлення про використання в параметрі ``пам'ятна конфіденційність/calendar_usage_description``. `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
+Enable to allow access to the user's calendar, if it's enabled you should also provide a usage message in the :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` option. See `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1021,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/camera** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/camera>`
 
-Увімкнути, якщо потрібно використовувати камеру, якщо це ввімкнено, ви також повинні надати повідомлення про використання в параметрі ``пам'ятна конфіденційність / камера_usage_description``. `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
+Enable if you need to use the camera, if it's enabled you should also provide a usage message in the :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` option. See `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1033,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-Призначені для користувача коди ``.plist`` файл, якщо вказано решту кодів в конфігурації експорту.
+Custom entitlements ``.plist`` file, if specified the rest of the entitlements in the export config are ignored.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1069,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/location** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/location>`
 
-Увімкнути, якщо вам потрібно використовувати інформацію про місцезнаходження з Послуг Місцезнаходження, якщо це ввімкнено, ви також повинні надати повідомлення про використання в ``пам'яті конфіденційності / локації_description`` варіант. `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
+Enable if you need to use location information from Location Services, if it's enabled you should also provide a usage message in the :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` option. See `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1081,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`bool<class_bool>` **codesign/entitlements/photos_library** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/photos_library>`
 
-Увімкнути, щоб дозволити доступ до бібліотеки фотографій користувачів, якщо це можливо, ви також повинні надати повідомлення про використання в :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>`. `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
+Enable to allow access to the user's Photos library, if it's enabled you should also provide a usage message in the :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` option. See `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1093,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-"Повний ім'я", "Ім'я комона" або SHA-1 хеш фірмового стилю, який використовується для входу ``.app``.
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1105,7 @@ PKCS #12 файл сертифіката, який використовуєть�
 
 :ref:`String<class_String>` **codesign/installer_identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/installer_identity>`
 
-"Повний ім'я", "Ім'я комона" або SHA-1 хеш фірмового стилю, який використовується для входу ``.pkg`` пакет інсталятора для розподілу додатків, використання ``3rd Партія Mac Розробник Встановлення: Назва `` ідентичність.
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.pkg`` installer package for App Store distribution, use ``3rd Party Mac Developer Installer: Name.`` identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1150,6 +1156,22 @@ PKCS #12 файл сертифіката, який використовуєть�
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`
 
 Якщо увімкнено обгортку, яка може бути використана для запуску програми з виходом консолі, створюється поряд з експортованою програмою.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformMacOS_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol bundle (\ ``.dSYM``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols bundle. This bundle must have the same name as the export template archive and an additional ``.dSYM`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.dSYM.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 
@@ -1771,7 +1793,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collected>`
 
-Повідомляє, чи працює ваша заявка.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1783,7 +1805,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-Причини вашого додатку збирає адресу електронної пошти. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1817,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Повідомляємо, що адреса електронної пошти вашого додатку до ідентичності користувача.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1829,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2587,7 +2609,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collected>`
 
-Повідомляє, чи працює ваш додаток.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2621,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-Причини вашого додатку збирає номер телефону. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2633,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Повідомляє, чи працює ваш номер телефону для користувача.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2645,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Введіть номер мобільного, який Ви вказали при укладаннi договору з банком - для ідентифікації.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2695,7 +2717,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-Причини вашого додатку збирає фізична адреса. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2707,7 +2729,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Повідомляємо, що фізична адреса вашого додатку до ідентичності користувача.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2719,7 +2741,7 @@ Apple ID додаток-специфічний пароль.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3213,7 +3235,11 @@ Apple ID додаток-специфічний пароль.
 
 Список інтернет- доменів вашого додатка підключається до того, що за допомогою відстеження. Див. `Privacy проявляються файли <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

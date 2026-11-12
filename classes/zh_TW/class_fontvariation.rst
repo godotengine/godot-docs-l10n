@@ -169,7 +169,11 @@ FontVariation
 
 用於覆蓋預定義調色板的顏色陣列。在特定位置使用 ``Color(0, 0, 0, 0)`` 以保留預定義調色板中的原有顏色。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

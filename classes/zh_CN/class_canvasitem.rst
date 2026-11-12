@@ -654,7 +654,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
 - :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
 
-如果启用，该 **CanvasItem**\ （2D 画布项）的过采样将随缩放比例自动调整。
+If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale. This makes fonts and :ref:`DPITexture<class_DPITexture>` images automatically re-render to match the actual scale they are drawn at, for crisper visuals. This has a performance impact on the CPU every time the node's scale changes, so it is disabled by default.
+
+\ **Note:** For :ref:`Control<class_Control>` nodes with :ref:`Control.offset_transform_enabled<class_Control_property_offset_transform_enabled>` set to ``true``, scale-based oversampling is only effective if :ref:`Control.offset_transform_visual_only<class_Control_property_offset_transform_visual_only>` is ``false``. This ensures there is no performance overhead when using visual-only offset transforms (as often used in animations).
 
 .. rst-class:: classref-item-separator
 
@@ -777,9 +779,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-该 **CanvasItem** 由 :ref:`Viewport<class_Viewport>` 节点渲染的渲染层。如果 **CanvasItem** 及其所有父级都与 :ref:`Viewport<class_Viewport>` 的画布剔除遮罩共享同一图层，则该 :ref:`Viewport<class_Viewport>` 将渲染它。
+The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask. For an easier way to change this value from a script, see :ref:`set_visibility_layer_bit()<class_CanvasItem_method_set_visibility_layer_bit>`.
 
-\ **注意：**\ **CanvasItem** 不会继承其父级的可见性图层。这意味着，如果父 **CanvasItem** 没有与其子节点相同的全部层，则即使父节点和子节点的 :ref:`visible<class_CanvasItem_property_visible>` 都设置为 ``true``\ ，该子节点也可能不可见。例如，如果父节点具有图层 1，而子节点具有图层 2，则在画布剔除遮罩设置为图层 1 或图层 2 （见 :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`\ ）的 :ref:`Viewport<class_Viewport>` 中，该子节点将不可见。为了确保父节点和子节点都可见，父节点必须同时具有图层 1 和图层 2，或者子节点必须将 :ref:`top_level<class_CanvasItem_property_top_level>` 设置为 ``true``\ 。
+\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -815,11 +817,13 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_y_sort_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_y_sort_enabled**\ (\ )
 
-如果为 ``true``\ ，则该节点及其子 **CanvasItem** 节点中 Y 位置较高的节点会渲染在 Y 位置较低的节点的前面。如果为 ``false``\ ，则该节点及其子 **CanvasItem** 节点会按照场景树的顺序正常渲染。
+If ``true``, this and child **CanvasItem** nodes with a higher Y position are rendered in front of nodes with a lower Y position. If ``false``, this and child **CanvasItem** nodes are rendered normally in scene tree order.
 
-如果父节点（“A”）启用了 Y 排序，而子节点（“B”）没有启用，那么子节点（“B”）会进行排序，但它自己的子节点（“C1”“C2”等）会渲染在与子节点（“B”）相同的 Y 位置。这样你就可以在不修改场景树的前提下组织场景的渲染顺序了。
+With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.
 
-只有 :ref:`z_index<class_CanvasItem_property_z_index>` 相同的节点才会互相进行排序。
+Nodes sort relative to each other only if they are on the same :ref:`z_index<class_CanvasItem_property_z_index>`.
+
+\ **Note:** Y-sorting does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -855,9 +859,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_z_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_index**\ (\ )
 
-节点的绘制顺序。Z 索引较高的节点会显示在其他节点的前面。必须在 :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` 和 :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` 之间（含两端）。
+The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` and :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
 
-\ **注意：**\ Z 索引\ **不会**\ 影响 **CanvasItem** 节点的处理顺序和输入事件的处理顺序。\ :ref:`Control<class_Control>` 节点尤其需要注意这一点。
+\ **Note:** The Z index does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-section-separator
 
@@ -940,15 +944,15 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-绘制圆形，\ ``position`` 定义在局部空间。另见 :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`\ 、\ :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`\ 、\ :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 、\ :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 。
+Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-如果 ``filled`` 为 ``true``\ ，则圆形将使用指定的 ``color`` 填充。如果 ``filled`` 为 ``false``\ ，则圆形将被绘制为具有指定的 ``color`` 和 ``width`` 的笔划。
+If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
 
-如果 ``width`` 为负，则将绘制两点图元而不是四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **注意：**\ ``width`` 只有在 ``filled`` 为 ``false`` 时才有效。
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -976,15 +980,15 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_dashed_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, dash\: :ref:`float<class_float>` = 2.0, aligned\: :ref:`bool<class_bool>` = true, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_dashed_line>`
 
-使用给定的颜色和宽度，从一个 2D 点到另一个点绘制一条虚线。\ ``from`` 位置和 ``to`` 位置定义在局部空间。另见 :ref:`draw_line()<class_CanvasItem_method_draw_line>`\ 、\ :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` 和 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 。
+Draws a dashed line from a 2D point to another, with a given color and width. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
 
-如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条部分将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ ``dash`` 是每一段的长度，单位为像素，段与段之间的留空使用相同的长度。如果 ``aligned`` 为 ``true``\ ，则可能会缩短第一段和最后一段的长度，使得虚线的两端精确地落在 ``from`` 和 ``to`` 所定义的位置。\ ``aligned`` 为 ``true`` 时虚线两端始终是对称的。如果 ``aligned`` 为 ``false``\ ，则每一段的长度都相同，但是虚线长度无法被段长度整除时，末尾可能看上去不完整。\ ``aligned`` 为 ``false`` 时只会绘制完整的段。
+\ ``dash`` is the length of each dash in pixels, with the gap between each dash being the same length. If ``aligned`` is ``true``, the length of the first and last dashes may be shortened or lengthened to allow the line to begin and end at the precise points defined by ``from`` and ``to``. Both ends are always symmetrical when ``aligned`` is ``true``. If ``aligned`` is ``false``, all dashes will have the same length, but the line may appear incomplete at the end due to the dash length not dividing evenly into the line length. Only full dashes are drawn when ``aligned`` is ``false``.
 
-如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1113,11 +1117,11 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_multiline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline>`
 
-使用一致的宽度 ``width`` 和颜色 ``color`` 绘制多条断开的线段。\ ``points`` 数组中相邻的两个点定义一条线段，即第 i 条线段由端点 ``points[2 * i]`` 和 ``points[2 * i + 1]`` 组成，这些点定义在局部空间。绘制大量线段时，这种方法比使用 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制相连的线段，请改用 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 。
+Draws multiple disconnected lines with a uniform ``width`` and ``color``. Each line is defined by two consecutive points from ``points`` array in local space, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` instead.
 
-如果 ``width`` 为负数，则会绘制由两个点组成的图元，不使用四个点组成的图元。此时如果 CanvasItem 发生缩放，则线段仍然会很细。如果不想要这样的行为，请传入 ``1.0`` 等正数 ``width``\ 。
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1129,11 +1133,11 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_multiline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline_colors>`
 
-使用一致的宽度 ``width`` 分段颜色绘制多条断开的线段。\ ``points`` 数组中相邻的两个点定义一条线段，即第 i 条线段由端点 ``points[2 * i]`` 和 ``points[2 * i + 1]`` 组成，这些点定义在局部空间，使用的颜色为 ``colors[i]``\ 。绘制大量线段时，这种方法比使用 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制相连的线段，请改用 :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`\ 。
+Draws multiple disconnected lines with a uniform ``width`` and segment-by-segment coloring. Each segment is defined by two consecutive points from ``points`` array in local space and a corresponding color from ``colors`` array, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints and has ``colors[i]`` color. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` instead.
 
-如果 ``width`` 为负数，则会绘制由两个点组成的图元，不使用四个点组成的图元。此时如果 CanvasItem 发生缩放，则线段仍然会很细。如果不想要这样的行为，请传入 ``1.0`` 等正数 ``width``\ 。
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_multiline_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_multiline_string>`
 
-使用 ``font`` 字体分若干行绘制 ``text`` 文本，以局部空间中的 ``pos`` 作为左上角。文本颜色会与 ``modulate`` 相乘。如果 ``width`` 大于等于 0，则文本超出该宽度的部分会被裁剪。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
+Breaks ``text`` into lines and draws it using the specified ``font`` at the ``pos`` in local space. ``pos.x`` indicates the left side of the column of text (including the full ``width`` even if the text is narrower, and regardless of ``alignment``); ``pos.y`` indicates the vertical position of the baseline of the first line of text. The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,15 +1245,15 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_rect>`
 
-绘制一个矩形。如果 ``filled`` 为 ``true``\ ，则矩形将使用指定的 ``color`` 填充。如果 ``filled`` 为 ``false``\ ，则矩形将被绘制为具有指定的 ``color`` 和 ``width`` 的笔划。\ ``rect`` 使用局部空间指定。另见 :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`\ 。
+Draws a rectangle. If ``filled`` is ``true``, the rectangle will be filled with the ``color`` specified. If ``filled`` is ``false``, the rectangle will be drawn as a stroke with the ``color`` and ``width`` specified. The ``rect`` is specified in local space. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **注意：**\ ``width`` 只有在 ``filled`` 为 ``false`` 时才有效。
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
-\ **注意：**\ 使用负 ``width`` 绘制的未填充矩形可能不会完美显示。例如，由于线条的重叠，角可能会缺失或变亮（对于半透明的 ``color``\ ）。
+\ **Note:** Unfilled rectangles drawn with a negative ``width`` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent ``color``).
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1476,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-返回从该 **CanvasItem** 的局部坐标系到 :ref:`Viewport<class_Viewport>` 坐标系的变换。
+Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -1734,7 +1738,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-设置或清除渲染可见层上的单个位。这简化了对该 **CanvasItem** 的可见层的编辑。
+Set/clear individual bits on the rendering visibility layer (``layer`` is between ``0`` and ``31``). This simplifies editing this **CanvasItem**'s visibility layer compared to assigning the :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 

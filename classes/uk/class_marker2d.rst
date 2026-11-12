@@ -14,7 +14,7 @@ Marker2D
 Опис
 --------
 
-Генетична 2D позиція підказка для редагування. Це так само, як звичайний :ref:`Node2D<class_Node2D>`, але він відображає як хрест в редакторі 2D в усі часи. Ви можете встановити візуальний розмір хреста, використовуючи gizmo в редакторі 2D, в той час як вибраний вузол.
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

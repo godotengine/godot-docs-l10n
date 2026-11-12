@@ -87,6 +87,8 @@ PhysicalBone3D
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`   | :ref:`get_bone_id<class_PhysicalBone3D_method_get_bone_id>`\ (\ ) |const|                                                                                                   |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`   | :ref:`get_joint_rid<class_PhysicalBone3D_method_get_joint_rid>`\ (\ ) |const|                                                                                               |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`get_simulate_physics<class_PhysicalBone3D_method_get_simulate_physics>`\ (\ )                                                                                         |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`is_simulating_physics<class_PhysicalBone3D_method_is_simulating_physics>`\ (\ )                                                                                       |
@@ -526,6 +528,18 @@ PhysicsBone3D 應用了六自由度關節。
 :ref:`int<class_int>` **get_bone_id**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_bone_id>`
 
 回傳 PhysicsBone3D 的唯一標識符。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PhysicalBone3D_method_get_joint_rid:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_joint_rid**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_joint_rid>`
+
+從 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 回傳關節的內部 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 

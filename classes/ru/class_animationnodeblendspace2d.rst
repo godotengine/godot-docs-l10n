@@ -14,11 +14,30 @@ AnimationNodeBlendSpace2D
 Описание
 ----------------
 
-Ресурс, используемый :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace2D** представляет собой виртуальное 2D-пространство, на котором размещены :ref:`AnimationRootNode<class_AnimationRootNode>`. Выводит линейное смешивание трех смежных анимаций с использованием веса :ref:`Vector2<class_Vector2>`. Смежный в этом контексте означает три :ref:`AnimationRootNode<class_AnimationRootNode>`, составляющие треугольник, содержащий текущее значение.
+\ **AnimationNodeBlendSpace2D** represents a virtual 2D space on which :ref:`AnimationRootNode<class_AnimationRootNode>`\ s are placed. Outputs the linear blend of the three adjacent animations using a :ref:`Vector2<class_Vector2>` weight. Adjacent in this context means the three :ref:`AnimationRootNode<class_AnimationRootNode>`\ s making up the triangle that contains the current value.
 
-Вы можете добавить вершины в пространство смешивания с помощью :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` и автоматически триангулировать его, установив :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` на ``true``. В противном случае используйте :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` и :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` для триангуляции пространства смешивания вручную.
+You can add vertices to the blend space with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and automatically triangulate it by setting :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` to ``true``. Otherwise, use :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` and :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` to triangulate the blend space by hand.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

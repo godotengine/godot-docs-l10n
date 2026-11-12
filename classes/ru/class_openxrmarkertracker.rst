@@ -16,7 +16,7 @@ OpenXRMarkerTracker
 Описание
 ----------------
 
-Трекер пространственных объектов для нашего расширения OpenXR для отслеживания маркеров пространственных объектов. Эти трекеры идентифицируют объекты в нашем реальном пространстве, обнаруженные визуальным маркером, таким как QR-код или код Aruco, и сопоставляют их местоположение с нашим виртуальным пространством.
+Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or ArUco code, and map their location to our virtual space.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ OpenXRMarkerTracker
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-Идентификатор маркера (ID) возвращается только для маркеров Aruco и April Tag. Для получения QR-кодов маркеров вызовите метод :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>`.
+The marker ID for this marker, this is only returned for ArUco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
 
 .. rst-class:: classref-item-separator
 

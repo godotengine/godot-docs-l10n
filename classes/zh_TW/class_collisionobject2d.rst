@@ -127,7 +127,7 @@ CollisionObject2D
 
 **input_event**\ (\ viewport\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_signal_input_event>`
 
-當輸入事件發生時發出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。詳見 :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>`\ 。
+Emitted when an unhandled input event occurs. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. See :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` for details.
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-此 CollisionObject2D 所在的實體層。碰撞物件可以存在於 32 個不同層中的一個或多個中。另見 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`\ 。
+The physics layers this CollisionObject2D is in. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`. For an easier way to change this value from a script, see :ref:`set_collision_layer_value()<class_CollisionObject2D_method_set_collision_layer_value>`.
 
-\ **注意：**\ 只有當物件 B 在物件 A 掃描的任何層中時，物件 A 才能偵測到與物件 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -263,9 +263,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-此 CollisionObject2D 掃描的實體層。碰撞物件可以掃描 32 個不同層中的一個或多個。另見 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`\ 。
+The physics layers this CollisionObject2D scans. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`. For an easier way to change this value from a script, see :ref:`set_collision_mask_value()<class_CollisionObject2D_method_set_collision_mask_value>`.
 
-\ **注意：**\ 只有當物件 B 在物件 A 掃描的任何層中時，物件 A 才能偵測到與物件 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -333,9 +333,13 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 |void| **_input_event**\ (\ viewport\: :ref:`Viewport<class_Viewport>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__input_event>`
 
-接收未處理的 :ref:`InputEvent<class_InputEvent>`\ 。\ ``shape_idx`` 是被點選的 :ref:`Shape2D<class_Shape2D>` 的子索引。連接到 :ref:`input_event<class_CollisionObject2D_signal_input_event>` 即可輕鬆取得這些事件。
+Detects unhandled mouse and touch :ref:`InputEvent<class_InputEvent>`\ s through ``event`` when they happen while hovering over the object. Gesture events are not detected. ``viewport`` is the :ref:`Viewport<class_Viewport>` that the event originated in (for viewports other than the main one to be detected, :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>` needs to be set to ``true``). ``shape_idx`` is the index of the detected shape from :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **注意：**\ :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` 要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 為 ``true``\ ，並且至少要設定一個 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
+See also :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, :ref:`shape_find_owner()<class_CollisionObject2D_method_shape_find_owner>`, and :ref:`shape_owner_get_owner()<class_CollisionObject2D_method_shape_owner_get_owner>`.
+
+\ **Note:** :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` events are triggered if the drag events started while hovering the object, or when the object is in the path of the drag event.
+
+\ **Note:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +411,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_layer_value>`
 
-返回 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject2D**'s collision layer compared to assigning the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +423,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_mask_value>`
 
-返回 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject2D**'s collision mask compared to assigning the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` property directly.
 
 .. rst-class:: classref-item-separator
 

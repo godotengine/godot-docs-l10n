@@ -733,11 +733,13 @@ Imposta le proprietà di questo nodo in modo che corrispondano a un dato nodo :r
 
 |void| **emit_particle**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`, velocity\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, custom\: :ref:`Color<class_Color>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GPUParticles2D_method_emit_particle>`
 
-Emette una singola particella. L'applicazione della trasformazione (``xform``), la velocità (``velocity``), il colore (``color``) e ``custom`` dipende dal valore di ``flags``. Vedi :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`.
+Emits a single particle. Whether ``xform``, ``velocity``, ``color`` and ``custom`` are applied depends on the value of ``flags``. See :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`.
 
-Il ParticleProcessMaterial predefinito sovrascriverà ``color`` e utilizzerà il contenuto di ``custom`` come ``(rotazione, tempo iniziale, animazione, tempo di vita)``.
+The default ParticleProcessMaterial needs to have :ref:`ParticleProcessMaterial.particle_flag_preserve_color<class_ParticleProcessMaterial_property_particle_flag_preserve_color>` set to ``true`` to correctly use the color given from this function.
 
-\ **Nota:** :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` è supportato solo sui metodi di rendering Forward+ e Mobile, non su Compatibilità.
+Additionally, it will use the contents of ``custom`` as ``(rotation, lifetime, animation, lifetime randomness)``.
+
+\ **Note:** :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` is only supported on the Forward+ and Mobile rendering methods, not Compatibility.
 
 .. rst-class:: classref-item-separator
 

@@ -118,9 +118,9 @@ SkeletonModification2D
 
 |void| **_draw_editor_gizmo**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModification2D_private_method__draw_editor_gizmo>`
 
-用于绘制\ **编辑器专用**\ 的修改器小工具。此函数只会在 Godot 编辑器中调用，并且可以被覆盖，来绘制自定义小工具。
+Used for drawing **editor-only** modification gizmos. This function will only be called in the Godot editor and can be overridden to draw custom gizmos.
 
-\ **注意：**\ 你需要使用来自 :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` 的 Skeleton2D 及其绘制函数，因为 **SkeletonModification2D** 资源本身无法进行绘制。
+\ **Note:** You will need to use the Skeleton2D from :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` and its draw functions, as the **SkeletonModification2D** resource cannot draw on its own.
 
 .. rst-class:: classref-item-separator
 

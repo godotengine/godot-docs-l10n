@@ -68,6 +68,8 @@ Méthodes
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`clear_icon<class_Theme_method_clear_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                                                                                 |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                            | :ref:`clear_sound<class_Theme_method_clear_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                                                                               |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`clear_stylebox<class_Theme_method_clear_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                                                                         |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`clear_theme_item<class_Theme_method_clear_theme_item>`\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                   |
@@ -104,6 +106,12 @@ Méthodes
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_icon_type_list<class_Theme_method_get_icon_type_list>`\ (\ ) |const|                                                                                                                                                                                       |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>`             | :ref:`get_sound<class_Theme_method_get_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                           |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_sound_list<class_Theme_method_get_sound_list>`\ (\ theme_type\: :ref:`String<class_String>`\ ) |const|                                                                                                                                                     |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_sound_type_list<class_Theme_method_get_sound_type_list>`\ (\ ) |const|                                                                                                                                                                                     |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`                   | :ref:`get_stylebox<class_Theme_method_get_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                     |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_stylebox_list<class_Theme_method_get_stylebox_list>`\ (\ theme_type\: :ref:`String<class_String>`\ ) |const|                                                                                                                                               |
@@ -138,6 +146,8 @@ Méthodes
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`has_icon<class_Theme_method_has_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                             |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`has_sound<class_Theme_method_has_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                           |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`has_stylebox<class_Theme_method_has_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                     |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`has_theme_item<class_Theme_method_has_theme_item>`\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const|                                               |
@@ -158,6 +168,8 @@ Méthodes
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`rename_icon<class_Theme_method_rename_icon>`\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                               |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                            | :ref:`rename_sound<class_Theme_method_rename_sound>`\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                             |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`rename_stylebox<class_Theme_method_rename_stylebox>`\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ )                                                       |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`rename_theme_item<class_Theme_method_rename_theme_item>`\ (\ data_type\: :ref:`DataType<enum_Theme_DataType>`, old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |
@@ -173,6 +185,8 @@ Méthodes
    | |void|                                            | :ref:`set_font_size<class_Theme_method_set_font_size>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ )                                                                        |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`set_icon<class_Theme_method_set_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )                                                                        |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                            | :ref:`set_sound<class_Theme_method_set_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, sound\: :ref:`AudioStream<class_AudioStream>`\ )                                                                    |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                            | :ref:`set_stylebox<class_Theme_method_set_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, texture\: :ref:`StyleBox<class_StyleBox>`\ )                                                                  |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -244,11 +258,19 @@ Theme's icon :ref:`Texture2D<class_Texture2D>` item type.
 
 Le type :ref:`StyleBox<class_StyleBox>` du thème.
 
+.. _class_Theme_constant_DATA_TYPE_SOUND:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DataType<enum_Theme_DataType>` **DATA_TYPE_SOUND** = ``6``
+
+Theme's :ref:`AudioStream<class_AudioStream>` item type.
+
 .. _class_Theme_constant_DATA_TYPE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`DataType<enum_Theme_DataType>` **DATA_TYPE_MAX** = ``6``
+:ref:`DataType<enum_Theme_DataType>` **DATA_TYPE_MAX** = ``7``
 
 La valeur maximale pour l’énumération DateType.
 
@@ -414,6 +436,20 @@ Fails if it doesn't exist. Use :ref:`has_font_size()<class_Theme_method_has_font
 Removes the icon property defined by ``name`` and ``theme_type``, if it exists.
 
 Fails if it doesn't exist. Use :ref:`has_icon()<class_Theme_method_has_icon>` to check for existence.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Theme_method_clear_sound:
+
+.. rst-class:: classref-method
+
+|void| **clear_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_clear_sound>`
+
+Removes the sound property defined by ``name`` and ``theme_type``, if it exists.
+
+Fails if it doesn't exist. Use :ref:`has_sound()<class_Theme_method_has_sound>` to check for existence.
 
 .. rst-class:: classref-item-separator
 
@@ -655,6 +691,44 @@ Returns a list of all unique theme type names for icon properties. Use :ref:`get
 
 ----
 
+.. _class_Theme_method_get_sound:
+
+.. rst-class:: classref-method
+
+:ref:`AudioStream<class_AudioStream>` **get_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Theme_method_get_sound>`
+
+Returns the sound property defined by ``name`` and ``theme_type``, if it exists.
+
+Returns the engine fallback sound value if the property doesn't exist (see :ref:`ThemeDB.fallback_sound<class_ThemeDB_property_fallback_sound>`). Use :ref:`has_sound()<class_Theme_method_has_sound>` to check for existence.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Theme_method_get_sound_list:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_sound_list**\ (\ theme_type\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Theme_method_get_sound_list>`
+
+Returns a list of names for sound properties defined with ``theme_type``. Use :ref:`get_sound_type_list()<class_Theme_method_get_sound_type_list>` to get a list of possible theme type names.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Theme_method_get_sound_type_list:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_sound_type_list**\ (\ ) |const| :ref:`🔗<class_Theme_method_get_sound_type_list>`
+
+Returns a list of all unique theme type names for sound properties. Use :ref:`get_type_list()<class_Theme_method_get_type_list>` to get a list of all unique theme types.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Theme_method_get_stylebox:
 
 .. rst-class:: classref-method
@@ -885,6 +959,20 @@ Returns ``false`` if it doesn't exist. Use :ref:`set_icon()<class_Theme_method_s
 
 ----
 
+.. _class_Theme_method_has_sound:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Theme_method_has_sound>`
+
+Returns ``true`` if the sound property defined by ``name`` and ``theme_type`` exists.
+
+Returns ``false`` if it doesn't exist. Use :ref:`set_sound()<class_Theme_method_set_sound>` to define it.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Theme_method_has_stylebox:
 
 .. rst-class:: classref-method
@@ -1023,6 +1111,20 @@ Fails if it doesn't exist, or if a similar property with the new name already ex
 
 ----
 
+.. _class_Theme_method_rename_sound:
+
+.. rst-class:: classref-method
+
+|void| **rename_sound**\ (\ old_name\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Theme_method_rename_sound>`
+
+Renames the sound property defined by ``old_name`` and ``theme_type`` to ``name``, if it exists.
+
+Fails if it doesn't exist, or if a similar property with the new name already exists. Use :ref:`has_sound()<class_Theme_method_has_sound>` to check for existence, and :ref:`clear_sound()<class_Theme_method_clear_sound>` to remove the existing property.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Theme_method_rename_stylebox:
 
 .. rst-class:: classref-method
@@ -1127,6 +1229,18 @@ Creates or changes the value of the icon property defined by ``name`` and ``them
 
 ----
 
+.. _class_Theme_method_set_sound:
+
+.. rst-class:: classref-method
+
+|void| **set_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>`, sound\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Theme_method_set_sound>`
+
+Creates or changes the value of the sound property defined by ``name`` and ``theme_type``. Use :ref:`clear_sound()<class_Theme_method_clear_sound>` to remove the property.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Theme_method_set_stylebox:
 
 .. rst-class:: classref-method
@@ -1166,8 +1280,6 @@ Marks ``theme_type`` as a variation of ``base_type``.
 This adds ``theme_type`` as a suggested option for :ref:`Control.theme_type_variation<class_Control_property_theme_type_variation>` on a :ref:`Control<class_Control>` that is of the ``base_type`` class.
 
 Variations can also be nested, i.e. ``base_type`` can be another variation. If a chain of variations ends with a ``base_type`` matching the class of the :ref:`Control<class_Control>`, the whole chain is going to be suggested as options.
-
-\ **Note:** Suggestions only show up if this theme resource is set as the project default theme. See :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -308,7 +308,7 @@ Supprime le point d'index ``idx`` de la courbe. Affiche une erreur dans la conso
 
 :ref:`Vector2<class_Vector2>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_sample>`
 
-Renvoie la position entre le sommet d'index ``idx`` et le sommet d'index ``idx + 1``, où ``t`` contrôle si le point est le premier sommet (``t = 0,0``), le dernier sommet (``t = 1.0``), ou entre les deux. Les valeurs de ``t`` en dehors de l'intervalle (``0.0 >= t <=1``) donnent des résultats inattendus, mais prévisibles.
+Renvoie la position entre le sommet d'index ``idx`` et le sommet d'index ``idx + 1``, où ``t`` contrôle si le point est le premier sommet (\ ``t = 0,0``), le dernier sommet (\ ``t = 1.0``), ou entre les deux. Les valeurs de ``t`` en dehors de l'intervalle (\ ``0.0 >= t <=1``) donnent des résultats inattendus, mais prévisibles.
 
 Si ``idx`` est hors limites, il est tronqué au premier ou au dernier sommet, et ``t`` est ignoré. Si la courbe n'a pas de points, la fonction affiche une erreur dans la console, et renvoie ``(0, 0)``.
 

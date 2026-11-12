@@ -85,6 +85,8 @@ ClassDB
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_class_enum_bitfield<class_ClassDB_method_is_class_enum_bitfield>`\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const|                     |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                          | :ref:`is_class_exposed<class_ClassDB_method_is_class_exposed>`\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                               |
+   +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_parent_class<class_ClassDB_method_is_parent_class>`\ (\ class\: :ref:`StringName<class_StringName>`, inherits\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                 |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -499,6 +501,20 @@ GDExtension 編輯器型別。
 :ref:`bool<class_bool>` **is_class_enum_bitfield**\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_enum_bitfield>`
 
 回傳類 ``class`` 是否有名為 ``enum`` 的位域列舉（如果 ``no_inheritance`` 為 ``false`` 則還會檢查其祖類）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ClassDB_method_is_class_exposed:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_class_exposed**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_exposed>`
+
+Returns whether this ``class`` is exposed or not.
+
+Godot uses internal and platform specific classes at run time. **ClassDB** is able to work with those and lists them like any other class. This method can be used to filter them out if your use-case requires it.
 
 .. rst-class:: classref-item-separator
 

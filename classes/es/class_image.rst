@@ -66,9 +66,9 @@ Métodos
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                        | :ref:`clear_mipmaps<class_Image_method_clear_mipmaps>`\ (\ )                                                                                                                                                                                                                       |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress<class_Image_method_compress>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ )                                                 |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress<class_Image_method_compress>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ )                                           |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress_from_channels<class_Image_method_compress_from_channels>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ )                           |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`compress_from_channels<class_Image_method_compress_from_channels>`\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ )                     |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`           | :ref:`compute_image_metrics<class_Image_method_compute_image_metrics>`\ (\ compared_image\: :ref:`Image<class_Image>`, use_luma\: :ref:`bool<class_bool>`\ )                                                                                                                       |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -100,7 +100,7 @@ Métodos
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                        | :ref:`flip_y<class_Image_method_flip_y>`\ (\ )                                                                                                                                                                                                                                     |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`generate_mipmaps<class_Image_method_generate_mipmaps>`\ (\ renormalize\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                                  |
+   | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`generate_mipmaps<class_Image_method_generate_mipmaps>`\ (\ renormalize\: :ref:`bool<class_bool>` = false, preserve_alpha_test_coverage\: :ref:`bool<class_bool>` = false, alpha_test_threshold\: :ref:`float<class_float>` = 0.5\ )                                          |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>` | :ref:`get_data<class_Image_method_get_data>`\ (\ ) |const|                                                                                                                                                                                                                         |
    +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -446,7 +446,7 @@ Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/ope
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_R11** = ``26``
 
-`Formato de compresión de textura Ericsson 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``R11_EAC`` variant), que proporciona un canal de datos sin firmar.
+`Formato de compresión de textura Ericsson 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (\ ``R11_EAC`` variant), que proporciona un canal de datos sin firmar.
 
 .. _class_Image_constant_FORMAT_ETC2_R11S:
 
@@ -462,7 +462,7 @@ Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/ope
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RG11** = ``28``
 
-`Formato de compresión de textura de Ericsson 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RG11_EAC`` variant), que proporciona dos canales de datos sin firmar.
+`Formato de compresión de textura de Ericsson 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (\ ``RG11_EAC`` variant), que proporciona dos canales de datos sin firmar.
 
 .. _class_Image_constant_FORMAT_ETC2_RG11S:
 
@@ -478,7 +478,7 @@ Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/ope
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGB8** = ``30``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGB8`` variant), which is a follow-up of ETC1 and compresses RGB888 data.
+`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (\ ``RGB8`` variant), which is a follow-up of ETC1 and compresses RGB888 data.
 
 \ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
 
@@ -488,7 +488,7 @@ Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/ope
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGBA8** = ``31``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGBA8``\ variant), which compresses RGBA8888 data with full alpha support.
+`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (\ ``RGBA8``\ variant), which compresses RGBA8888 data with full alpha support.
 
 \ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
 
@@ -498,7 +498,7 @@ Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/ope
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGB8A1** = ``32``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGB8_PUNCHTHROUGH_ALPHA1`` variant), which compresses RGBA data to make alpha either fully transparent or fully opaque.
+`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (\ ``RGB8_PUNCHTHROUGH_ALPHA1`` variant), which compresses RGBA data to make alpha either fully transparent or fully opaque.
 
 \ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
 
@@ -638,11 +638,27 @@ Formato de textura OpenGL ``GL_RGBA16UI`` donde hay cuatro componentes, cada uno
 
 \ **Nota:** Al muestrear usando :ref:`get_pixel()<class_Image_method_get_pixel>`, los :ref:`Color<class_Color>`\ s devueltos deben ser divididos por ``65535`` para obtener el valor de color correcto.
 
+.. _class_Image_constant_FORMAT_ASTC_6x6:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Format<enum_Image_Format>` **FORMAT_ASTC_6x6** = ``47``
+
+`Adaptive Scalable Texture Compression <https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression>`__. This implements the 6×6 (medium quality) mode.
+
+.. _class_Image_constant_FORMAT_ASTC_6x6_HDR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Format<enum_Image_Format>` **FORMAT_ASTC_6x6_HDR** = ``48``
+
+Same format as :ref:`FORMAT_ASTC_6x6<class_Image_constant_FORMAT_ASTC_6x6>`, but with the hint to let the GPU know it is used for HDR.
+
 .. _class_Image_constant_FORMAT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Format<enum_Image_Format>` **FORMAT_MAX** = ``47``
+:ref:`Format<enum_Image_Format>` **FORMAT_MAX** = ``49``
 
 Representa el tamaño del enum :ref:`Format<enum_Image_Format>`.
 
@@ -692,7 +708,7 @@ It's slower than :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BIL
 
 If the image does not have mipmaps, they will be generated and used internally, but no mipmaps will be generated on the resulting image.
 
-\ **Note:** If you intend to scale multiple copies of the original image, it's better to call :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`] on it in advance, to avoid wasting processing power in generating them again and again.
+\ **Note:** If you intend to scale multiple copies of the original image, it's better to call :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` on it in advance, to avoid wasting processing power in generating them again and again.
 
 On the other hand, if the image already has mipmaps, they will be used, and a new set will be generated for the resulting image.
 
@@ -892,6 +908,56 @@ La textura de la fuente (antes de la compresión) es una textura normal (por eje
 
 ----
 
+.. _enum_Image_CompressProfile:
+
+.. rst-class:: classref-enumeration
+
+enum **CompressProfile**: :ref:`🔗<enum_Image_CompressProfile>`
+
+.. _class_Image_constant_COMPRESS_PROFILE_AUTOMATIC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_AUTOMATIC** = ``0``
+
+Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX_QUALITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX_QUALITY** = ``1``
+
+Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_COMPRESSED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_COMPRESSED** = ``2``
+
+Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX_COMPRESSION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX_COMPRESSION** = ``3``
+
+Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+.. _class_Image_constant_COMPRESS_PROFILE_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CompressProfile<enum_Image_CompressProfile>` **COMPRESS_PROFILE_MAX** = ``4``
+
+Represents the size of the :ref:`CompressProfile<enum_Image_CompressProfile>` enum.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _enum_Image_ASTCFormat:
 
 .. rst-class:: classref-enumeration
@@ -983,7 +1049,9 @@ Ajusta el ``brightness`` (brillo), ``contrast`` (contraste) y la ``saturation`` 
 
 |void| **blend_rect**\ (\ src\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blend_rect>`
 
-Mezcla el alfa ``src_rect`` de la imagen ``src`` a esta imagen en las coordenadas ``dst``, recortada de acuerdo con los límites de ambas imágenes. Esta imagen y la imagen ``src`` **deben** tener el mismo formato. ``src_rect`` con tamaño no positivo se trata como vacío.
+Alpha-blends ``src_rect`` from ``src`` image to this image at coordinates ``dst``, clipped accordingly to both image bounds. This image and ``src`` image **must** have the same format. ``src_rect`` with non-positive size is treated as empty.
+
+\ **Note:** Simultaneously reading and writing to the same image reference may lead to unexpected results.
 
 .. rst-class:: classref-item-separator
 
@@ -1055,13 +1123,13 @@ Elimina los mipmaps de la imagen.
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **compress**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress>`
+:ref:`Error<enum_@GlobalScope_Error>` **compress**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ ) :ref:`🔗<class_Image_method_compress>`
 
 Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
 
 The ``source`` parameter helps to pick the best compression method for DXT and ETC2 formats. It is ignored for ASTC compression.
 
-The ``astc_format`` parameter is only taken into account when using ASTC compression; it is ignored for all other formats.
+The ``profile`` lets the user pick whether the compression should prioritize quality or a smaller size. Only ASTC compression uses this currently.
 
 \ **Note:** :ref:`compress()<class_Image_method_compress>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
@@ -1073,13 +1141,13 @@ The ``astc_format`` parameter is only taken into account when using ASTC compres
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **compress_from_channels**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress_from_channels>`
+:ref:`Error<enum_@GlobalScope_Error>` **compress_from_channels**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, profile\: :ref:`CompressProfile<enum_Image_CompressProfile>` = 0\ ) :ref:`🔗<class_Image_method_compress_from_channels>`
 
 Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
 
-This is an alternative to :ref:`compress()<class_Image_method_compress>` that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.
+This is an alternative to :ref:`compress()<class_Image_method_compress>` that lets the user supply the channels used in order for the compressor to pick the best DXT, ETC2, and ASTC formats. For other formats (non DXT, ETC2, or ASTC), this argument is ignored.
 
-The ``astc_format`` parameter is only taken into account when using ASTC compression; it is ignored for all other formats.
+The ``profile`` lets the user pick whether the compression should prioritize quality or a smaller size. Only ASTC compression uses this currently.
 
 \ **Note:** :ref:`compress_from_channels()<class_Image_method_compress_from_channels>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
@@ -1275,11 +1343,15 @@ Voltea la imagen verticalmente.
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **generate_mipmaps**\ (\ renormalize\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Image_method_generate_mipmaps>`
+:ref:`Error<enum_@GlobalScope_Error>` **generate_mipmaps**\ (\ renormalize\: :ref:`bool<class_bool>` = false, preserve_alpha_test_coverage\: :ref:`bool<class_bool>` = false, alpha_test_threshold\: :ref:`float<class_float>` = 0.5\ ) :ref:`🔗<class_Image_method_generate_mipmaps>`
 
-Genera mipmaps para la imagen. Los mipmaps son copias precalculadas de menor resolución de la imagen que se utilizan automáticamente si la imagen necesita ser reducida cuando se renderiza. Esto ayuda a mejorar la calidad de la imagen y el rendimiento al renderizar. Este método devuelve un error si la imagen está comprimida, en un formato personalizado o si el ancho/alto de la imagen es ``0``. Habilitar ``renormalize`` al generar mipmaps para texturas de mapas normales asegurará que todos los valores vectoriales resultantes estén normalizados.
+Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is ``0``. Enabling ``renormalize`` when generating mipmaps for normal map textures will make sure all resulting vector values are normalized.
 
-Es posible verificar si la imagen tiene mipmaps llamando a :ref:`has_mipmaps()<class_Image_method_has_mipmaps>` o :ref:`get_mipmap_count()<class_Image_method_get_mipmap_count>`. Llamar a :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` en una imagen que ya tiene mipmaps reemplazará los mipmaps existentes en la imagen.
+It is possible to check if the image has mipmaps by calling :ref:`has_mipmaps()<class_Image_method_has_mipmaps>` or :ref:`get_mipmap_count()<class_Image_method_get_mipmap_count>`. Calling :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>` on an image that already has mipmaps will replace existing mipmaps in the image.
+
+If ``preserve_alpha_test_coverage`` is ``true`` it automatically adjusts alpha values to maintain consistent coverage when alpha testing is used. This is especially useful for hair, foliage, or other alpha-tested materials, as it prevents fading or popping artifacts across mipmap levels (LODs). This option is intended for color textures and clamps the alpha channel in the 0.0 - 1.0 range.
+
+The ``alpha_test_threshold`` parameter is the alpha threshold used when preserving alpha test coverage across mipmap levels. The coverage is measured at mipmap 0 using the setting and the lower mipmaps are adjusted to match that coverage. Higher values preserve more detail, lower values create softer edges. Note that this threshold is independent from the ``Alpha Scissor Threshold`` set on the material and they both may need to be tuned for optimal results.
 
 .. rst-class:: classref-item-separator
 
@@ -1487,7 +1559,7 @@ Devuelve ``true`` si todos los píxeles de la imagen tienen un valor alfa de 0. 
 
 |void| **linear_to_srgb**\ (\ ) :ref:`🔗<class_Image_method_linear_to_srgb>`
 
-Convierte toda la imagen de codificación lineal a codificación sRGB no lineal utilizando una tabla de búsqueda. Solo funciona en imágenes con formatos :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` o :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`.
+Converts the entire image from linear encoding to nonlinear sRGB encoding. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>`, :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`, :ref:`FORMAT_RGBH<class_Image_constant_FORMAT_RGBH>`, or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` format.
 
 .. rst-class:: classref-item-separator
 
@@ -1989,9 +2061,9 @@ Reduce la imagen por un factor de 2 en cada eje (esto divide el número de píxe
 
 |void| **srgb_to_linear**\ (\ ) :ref:`🔗<class_Image_method_srgb_to_linear>`
 
-Convierte los datos sin procesar de la codificación sRGB no lineal a la codificación lineal usando una tabla de búsqueda. Solo funciona en imágenes con formatos :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` o :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`.
+Converts the raw data from nonlinear sRGB encoding to linear encoding. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>`, :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`, :ref:`FORMAT_RGBH<class_Image_constant_FORMAT_RGBH>`, or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` format.
 
-\ **Nota:** Los formatos de 8 bits requeridos por este método no son adecuados para almacenar valores codificados linealmente; se perderá una cantidad significativa de información de color en los valores más oscuros. Para mantener la calidad de la imagen, este método no debe usarse.
+\ **Note:** The 8-bit formats are not suitable for storing linearly encoded values; a significant amount of color information will be lost in darker values. Use this function on images that use a floating point format instead.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

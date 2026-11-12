@@ -7,7 +7,7 @@ DampedSpringJoint2D
 
 **Hereda:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Una unión física que conecta dos cuerpos físicos 2D con una fuerza similar a la de un resorte.
+Una articulación física que conecta dos cuerpos físicos 2D con una fuerza similar a la de un resorte.
 
 .. rst-class:: classref-introduction-group
 
@@ -54,7 +54,7 @@ Descripciones de Propiedades
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-La relación de amortiguación (damping ratio) de la unión de resorte (spring joint). Un valor entre ``0`` y ``1``. Cuando los dos cuerpos se mueven en direcciones diferentes, el sistema intenta alinearlos de nuevo con el eje del resorte. Un valor alto de :ref:`damping<class_DampedSpringJoint2D_property_damping>` obliga a los cuerpos conectados a alinearse más rápido.
+El coeficiente de amortiguación de la articulación de muelle. Un valor entre ``0`` y ``1``. Cuando los dos cuerpos se mueven en direcciones diferentes, el sistema intenta alinearlos de nuevo con el eje del muelle. Un valor alto de :ref:`damping<class_DampedSpringJoint2D_property_damping>` obliga a los cuerpos conectados a alinearse más rápido.
 
 .. rst-class:: classref-item-separator
 

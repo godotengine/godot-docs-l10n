@@ -468,9 +468,9 @@ Devuelve cuántos elementos hay en el historial.
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-Consigue la versión. Cada vez que se comete una nueva acción, el número de versión de **UndoRedo**\ s se incrementa automáticamente.
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-Esto es útil sobre todo para comprobar si algo cambió de una versión guardada.
+This is useful mostly to check if something changed from a saved version. The initial version is ``1``.
 
 .. rst-class:: classref-item-separator
 

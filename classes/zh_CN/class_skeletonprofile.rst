@@ -175,9 +175,9 @@ enum **TailDirection**: :ref:`🔗<enum_SkeletonProfile_TailDirection>`
 - |void| **set_bone_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_size**\ (\ )
 
-重定向部分的 :ref:`BoneMap<class_BoneMap>` 编辑器中的骨骼数量。例如，\ :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 有 56 块骨头。
+The amount of bones in retargeting section's :ref:`BoneMap<class_BoneMap>` editor. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` has 56 bones.
 
-\ :ref:`BoneMap<class_BoneMap>` 中元素的大小在其分配的 **SkeletonProfile** 中更改该属性时更新。
+The size of elements in :ref:`BoneMap<class_BoneMap>` updates when changing this property in its assigned **SkeletonProfile**.
 
 .. rst-class:: classref-item-separator
 

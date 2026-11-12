@@ -19,7 +19,7 @@ PhysicalBone3D
 
 Вузол **PhysicalBone3D** — це фізичний об’єкт, за допомогою якого можна зробити так, щоб кістки в :ref:`Skeleton3D<class_Skeleton3D>` реагували на фізичні ефекти.
 
-\ **Примітка:** Щоб виявити фізичні кістки за допомогою raycasts, властивість :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` батьківського :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` має бути ``true``, а кістка :ref:`Skeleton3D<class_Skeleton3D>` має бути правильно прив’язана до **PhysicalBone3D**; це означає, що :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` повинен повертати дійсний ідентифікатор (``>= 0``).
+\ **Примітка:** Щоб виявити фізичні кістки за допомогою raycasts, властивість :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` батьківського :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` має бути ``true``, а кістка :ref:`Skeleton3D<class_Skeleton3D>` має бути правильно прив’язана до **PhysicalBone3D**; це означає, що :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` повинен повертати дійсний ідентифікатор (\ ``>= 0``).
 
 .. rst-class:: classref-introduction-group
 
@@ -86,6 +86,8 @@ PhysicalBone3D
    | |void|                  | :ref:`apply_impulse<class_PhysicalBone3D_method_apply_impulse>`\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`   | :ref:`get_bone_id<class_PhysicalBone3D_method_get_bone_id>`\ (\ ) |const|                                                                                                   |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`   | :ref:`get_joint_rid<class_PhysicalBone3D_method_get_joint_rid>`\ (\ ) |const|                                                                                               |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`get_simulate_physics<class_PhysicalBone3D_method_get_simulate_physics>`\ (\ )                                                                                         |
    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -526,6 +528,18 @@ enum **JointType**: :ref:`🔗<enum_PhysicalBone3D_JointType>`
 :ref:`int<class_int>` **get_bone_id**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_bone_id>`
 
 Повертає унікальний ідентифікатор PhysicsBone3D.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PhysicalBone3D_method_get_joint_rid:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_joint_rid**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_joint_rid>`
+
+Повертаємо внутрішній суглоб :ref:`RID<class_RID>` з :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
 .. rst-class:: classref-item-separator
 

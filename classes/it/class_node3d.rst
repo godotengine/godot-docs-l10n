@@ -1078,7 +1078,7 @@ Aggiunge la traslazione ``offset`` alla posizione del nodo, nello spazio locale 
 
 \ **Nota:** Si consiglia di utilizzare invece il metodo :ref:`translate_object_local()<class_Node3D_method_translate_object_local>`, poiché questo metodo potrebbe cambiare in una versione futura.
 
-\ **Nota:** Nonostante la convenzione di denominazione, questa operazione **non** è calcolata nello spazio padre per motivi di compatibilità. Per traslare nello spazio padre, aggiungere ``offset`` alla :ref:`position<class_Node3D_property_position>` (``node_3d.position += offset``).
+\ **Nota:** Nonostante la convenzione di denominazione, questa operazione **non** è calcolata nello spazio padre per motivi di compatibilità. Per traslare nello spazio padre, aggiungere ``offset`` alla :ref:`position<class_Node3D_property_position>` (\ ``node_3d.position += offset``).
 
 .. rst-class:: classref-item-separator
 

@@ -719,7 +719,7 @@ NavigationAgent3D
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Величина упрощения пути в мировых единицах.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ NavigationAgent3D
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-Минимальное количество времени, в течение которого скорости этого агента, вычисленные с помощью алгоритма избегания столкновений, безопасны по отношению к другим агентам. Чем больше число, тем скорее агент отреагирует на других агентов, но тем меньше свободы в выборе своих скоростей. Слишком большое значение значительно замедлит движение агентов. Должно быть положительным.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ NavigationAgent3D
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-Минимальное количество времени, в течение которого скорости этого агента, вычисленные с помощью алгоритма избегания столкновений, безопасны по отношению к статическим препятствиям избегания. Чем больше число, тем скорее агент отреагирует на статические препятствия избегания, но тем меньше свободы в выборе своих скоростей. Слишком большое значение значительно замедлит движение агентов. Должно быть положительным.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ NavigationAgent3D
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_current_navigation_path>`
 
-Возвращает текущий путь этого агента от начала до конца в глобальных координатах. Путь обновляется только при изменении целевой позиции или при необходимости повторного пути агента. Массив путей не предназначен для использования при прямом движении по пути, так как у агента есть собственная внутренняя логика пути, которая будет изменена при изменении массива путей вручную. Используйте предполагаемый :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` один раз в каждом физическом кадре, чтобы получить следующую точку пути для движения агентов, так как эта функция также обновляет внутреннюю логику пути.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

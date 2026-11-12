@@ -343,7 +343,11 @@ enum **LineTextureMode**: :ref:`🔗<enum_Line2D_LineTextureMode>`
 
 折线的点，以局部 2D 坐标解释。在该数组中的相邻点之间绘制线段。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

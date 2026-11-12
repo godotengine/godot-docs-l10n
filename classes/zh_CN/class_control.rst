@@ -7,7 +7,7 @@ Control
 
 **继承：** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
+**派生：** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
 
 所有 GUI 控件的基类。根据其父控件调整其位置和大小。
 
@@ -240,6 +240,8 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_icon_override<class_Control_method_add_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )                                                                                             |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`add_theme_sound_override<class_Control_method_add_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                         |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_stylebox_override<class_Control_method_add_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ )                                                                                      |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`begin_bulk_theme_override<class_Control_method_begin_bulk_theme_override>`\ (\ )                                                                                                                                                                                  |
@@ -308,6 +310,8 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Texture2D<class_Texture2D>`                            | :ref:`get_theme_icon<class_Control_method_get_theme_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`get_theme_sound<class_Control_method_get_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`                              | :ref:`get_theme_stylebox<class_Control_method_get_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                  | :ref:`get_tooltip<class_Control_method_get_tooltip>`\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const|                                                                                                                                         |
@@ -338,6 +342,10 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_icon_override<class_Control_method_has_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound<class_Control_method_has_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound_override<class_Control_method_has_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox<class_Control_method_has_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox_override<class_Control_method_has_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                          |
@@ -345,6 +353,8 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
    | :ref:`bool<class_bool>`                                      | :ref:`is_drag_successful<class_Control_method_is_drag_successful>`\ (\ ) |const|                                                                                                                                                                                        |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_layout_rtl<class_Control_method_is_layout_rtl>`\ (\ ) |const|                                                                                                                                                                                                  |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`play_theme_sound<class_Control_method_play_theme_sound>`\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`release_focus<class_Control_method_release_focus>`\ (\ )                                                                                                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -357,6 +367,8 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
    | |void|                                                       | :ref:`remove_theme_font_size_override<class_Control_method_remove_theme_font_size_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_icon_override<class_Control_method_remove_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                    |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`remove_theme_sound_override<class_Control_method_remove_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_stylebox_override<class_Control_method_remove_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1035,6 +1047,18 @@ flags **SizeFlags**: :ref:`🔗<enum_Control_SizeFlags>`
 
 告诉父级 :ref:`Container<class_Container>` 将节点与其末端对齐，即底部或右侧。它与 :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` 以及其他收缩大小标志互斥，但可以在某些容器中与 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` 一起使用。与 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>` 一起使用。
 
+.. _class_Control_constant_SIZE_MAXIMIZE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_MAXIMIZE** = ``16``
+
+Tells the parent :ref:`Container<class_Container>` to use the node's :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` when doing minimum size calculations. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+
+\ **Note:** Setting this flag does not necessarily mean the node will be resized to its maximum size, as the parent container may not have enough space to do so.
+
+\ **Note:** If this node is a child of a Container that enables the :ref:`size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` property on its children for layout, nodes with this flag set will be given priority in stretching. If multiple nodes have this flag set, their relative stretch ratios will still be respected.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1089,7 +1113,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-当控件在相应轴上的最小尺寸被修改为大于其当前尺寸时，控件将向左或向上生长以补足尺寸。
+The control will grow/shrink to the left or top if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1121,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-当控件在相应轴上的最小尺寸被修改为大于其当前尺寸时，控件将向右或向下生长以补足尺寸。
+The control will grow/shrink to the right or bottom if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1129,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-当控件的最小尺寸被修改为大于其当前尺寸时，控件将向两个方向等量生长以补足尺寸。
+The control will grow/shrink in both directions equally if its size is changed to be larger/smaller than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1649,11 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-该 Control（控件）边界矩形的最大尺寸。如果设置为大于或等于 ``(0, 0)`` 的值，则该节点的边界矩形将永远不会超过这个尺寸；小于 ``(0, 0)`` 的值，则表示没有最大尺寸限制。
+The maximum size of the node's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size. This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` if the two conflict.
 
-\ **注意：** 最终生效的最大尺寸可能会受到父级 Container（容器）的尺寸限制以及传递而来的最大尺寸的影响。另请参阅：\ :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`\ 。
+\ **Note:** The final effective maximum size may be subject to the parent's maximum size (via :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>`), so it is recommended to use :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` instead of :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`. Likewise, use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` to account for the maximum size.
 
-\ **注意：** 并非所有的 Control 子类都能完美地处理自定义最大尺寸，如果控件的内容超出了这个尺寸，可能会导致意外的行为。
-
-\ **注意：** 该值的优先级高于 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ 。例如，如果你将 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 设置为 ``(100, 100)``\ ，并将 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 设置为 ``(200, 200)``\ ，最终得出的尺寸将会是 ``(100, 100)``\ 。
-
-\ **注意：** 当使用此属性时，建议使用 :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` 而不是 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ ，因为前者在计算最小尺寸时会尊重最大尺寸的限制，而后者不会。
+\ **Note:** Not all **Control** subtypes handle this gracefully, and their contents may extend beyond the bounding rectangle. Set :ref:`clip_contents<class_Control_property_clip_contents>` to ``true`` to prevent child controls from rendering outside of this size, especially when this node is a :ref:`Container<class_Container>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1845,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-当控件的水平最小尺寸被修改为大于其当前尺寸时，控制该控件在水平轴上的生长方向。因为控件的尺寸始终不能小于其最小尺寸。
+Controls the direction on the horizontal axis in which the control should grow or shrink if its horizontal size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1862,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-当控件的垂直最小尺寸被修改为大于其当前尺寸时，控制该控件在垂直轴上的生长方向。因为控件的尺寸始终不能小于其最小尺寸。
+Controls the direction on the vertical axis in which the control should grow or shrink if its vertical size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -2750,9 +2770,9 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 
 |void| **_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Control_private_method__gui_input>`
 
-由用户实现的虚方法。使用此方法处理和接受 UI 元素上的输入。另见 :ref:`accept_event()<class_Control_method_accept_event>`\ 。
+Virtual method to be implemented by the user. Override this method to handle and accept inputs on UI elements. See also :ref:`accept_event()<class_Control_method_accept_event>`.
 
-\ **示例：**\ 点击控件时输出一段消息：
+\ **Example:** Click on the control to print a message:
 
 
 .. tabs::
@@ -2762,7 +2782,7 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
     func _gui_input(event):
         if event is InputEventMouseButton:
             if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-                print("我已被点击 D:")
+                print("I've been clicked D:")
 
  .. code-tab:: csharp
 
@@ -2772,26 +2792,26 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
         {
             if (mb.ButtonIndex == MouseButton.Left && mb.Pressed)
             {
-                GD.Print("我已被点击 D:");
+                GD.Print("I've been clicked D:");
             }
         }
     }
 
 
 
-如果 ``event`` 继承自 :ref:`InputEventMouse<class_InputEventMouse>`\ ，则符合下列条件时\ **不会**\ 调用该方法：
+If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this method will **not** be called when:
 
-- 控件的 :ref:`mouse_filter<class_Control_property_mouse_filter>` 为 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ；
+- the control's :ref:`mouse_filter<class_Control_property_mouse_filter>` is set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- 控件被上方的其他控件阻挡，且该控件没有将 :ref:`mouse_filter<class_Control_property_mouse_filter>` 设置为 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ；
+- the control is obstructed by another control on top, that doesn't have :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- 控件父节点的 :ref:`mouse_filter<class_Control_property_mouse_filter>` 为 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` 或已接受该事件；
+- a child of the control received the event and has :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` or has accepted the event;
 
-- 控件父节点启用了 :ref:`clip_contents<class_Control_property_clip_contents>` 且 ``event`` 的位置在父节点矩形范围之外；
+- the control's parent has :ref:`clip_contents<class_Control_property_clip_contents>` enabled and the ``event``'s position is outside the parent's rectangle;
 
-- ``event`` 的位置在控件范围之外（见 :ref:`_has_point()<class_Control_private_method__has_point>`\ ）。
+- the ``event``'s position is outside the control (see :ref:`_has_point()<class_Control_private_method__has_point>`).
 
-\ **注意：**\ ``event`` 的位置相对于该控件的原点。
+\ **Note:** The ``event``'s position is relative to this control's origin.
 
 .. rst-class:: classref-item-separator
 
@@ -3023,6 +3043,20 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 为名称为 ``name`` 的主题图标创建本地覆盖项。为控件获取主题项目时，本地覆盖项始终优先。覆盖项可以使用 :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>` 移除。
 
 另见 :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_add_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **add_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_add_theme_sound_override>`
+
+Creates a local override for a theme sound with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_sound_override()<class_Control_method_remove_theme_sound_override>`.
+
+See also :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3542,6 +3576,20 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 
 ----
 
+.. _class_Control_method_get_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`AudioStream<class_AudioStream>` **get_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_sound>`
+
+Returns a sound from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_get_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3771,6 +3819,34 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 
 ----
 
+.. _class_Control_method_has_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound>`
+
+Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_has_theme_sound_override:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound_override>`
+
+Returns ``true`` if there is a local override for a theme sound with the specified ``name`` in this **Control** node.
+
+See :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_has_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3820,6 +3896,20 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 :ref:`bool<class_bool>` **is_layout_rtl**\ (\ ) |const| :ref:`🔗<class_Control_method_is_layout_rtl>`
 
 如果从右至左排版，则返回 ``true``\ 。另见 :ref:`layout_direction<class_Control_property_layout_direction>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_play_theme_sound:
+
+.. rst-class:: classref-method
+
+|void| **play_theme_sound**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_play_theme_sound>`
+
+Plays the sound from the ``stream`` resource non-positionally in the bus specified by the :ref:`ProjectSettings.audio/buses/gui_theme_bus<class_ProjectSettings_property_audio/buses/gui_theme_bus>` project setting. Typically, the ``stream`` resource is obtained using :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
+
+\ **Note:** This method should only be used to play UI-related sounds. It should not be used to play general game sounds, as it offers very limited control. Use the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` nodes for general game audio instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3892,6 +3982,18 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_icon_override>`
 
 移除名为 ``name`` 的主题图标本地覆盖项，该覆盖项由 :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` 或检查器面板添加。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_remove_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **remove_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_sound_override>`
+
+Removes a local override for a theme sound with the specified ``name`` previously added by :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>` or via the Inspector dock.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,9 +4253,9 @@ Godot 调用该方法来获取数据，该数据可以被拖放到那些期望�
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in child nodes with :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` set to ``false``. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+使最大尺寸缓存在本节点及 :ref:`CanvasItem.top_level<class_CanvasItem_property_top_level>` 属性设为 ``false`` 的子节点中失效。当 :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` 的返回值发生变化时，应配合该方法使用。直接设置 :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` 时，会自动调用该方法。
 
-\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
+\ **注意：** 调用该方法也会调用 :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`\ ，因为组合后的最小尺寸可能会受最大尺寸变化的影响。
 
 .. rst-class:: classref-item-separator
 

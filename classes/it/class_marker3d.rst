@@ -14,7 +14,7 @@ Un marcatore nell'editor per una posizione 3D qualunque.
 Descrizione
 ----------------------
 
-Un marcatore nell'editor per una posizione 3D qualunque. È come un semplice :ref:`Node3D<class_Node3D>`, ma appare sempre come una croce nell'editor 3D.
+Generic 3D position hint for editing. This is like a plain :ref:`Node3D<class_Node3D>`, but it displays as a cross in the 3D editor.
 
 .. rst-class:: classref-reftable-group
 

@@ -110,7 +110,11 @@ Descripciones de Propiedades
 
 El array de ruta resultante de la consulta de navegación. Todas las posiciones del array de ruta están en coordenadas globales. Sin parámetros de consulta personalizados, esta es la misma ruta que la devuelta por :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ Devuelve la longitud de la ruta.
 
 Los ``ObjectID``\ s de los :ref:`Object<class_Object>`\ s que gestionan las regiones y los enlaces por los que pasa cada punto de la ruta.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ Los :ref:`RID<class_RID>`\ s de las regiones y los enlaces por los que pasa cada
 
 El tipo de primitiva de navegación (región o enlace) por la que pasa cada punto de la ruta.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

@@ -110,6 +110,8 @@
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`TextServerManager<class_TextServerManager>`                 | :ref:`TextServerManager<class_@GlobalScope_property_TextServerManager>`                 |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`TextureStreaming<class_TextureStreaming>`                   | :ref:`TextureStreaming<class_@GlobalScope_property_TextureStreaming>`                   |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`ThemeDB<class_ThemeDB>`                                     | :ref:`ThemeDB<class_@GlobalScope_property_ThemeDB>`                                     |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Time<class_Time>`                                           | :ref:`Time<class_@GlobalScope_property_Time>`                                           |
@@ -1756,7 +1758,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EXCLAM** = ``33``
 
-Клавиша восклицательного знака (``!``).
+Клавиша восклицательного знака (\ ``!``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTEDBL:
 
@@ -1764,7 +1766,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTEDBL** = ``34``
 
-Двойная кавычка (``"``).
+Двойная кавычка (\ ``"``).
 
 .. _class_@GlobalScope_constant_KEY_NUMBERSIGN:
 
@@ -1772,7 +1774,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_NUMBERSIGN** = ``35``
 
-Знак числа или клавиша *решетки* (``#``).
+Знак числа или клавиша *решетки* (\ ``#``).
 
 .. _class_@GlobalScope_constant_KEY_DOLLAR:
 
@@ -1780,7 +1782,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_DOLLAR** = ``36``
 
-Клавиша со знаком доллара (``$``).
+Клавиша со знаком доллара (\ ``$``).
 
 .. _class_@GlobalScope_constant_KEY_PERCENT:
 
@@ -1788,7 +1790,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERCENT** = ``37``
 
-Клавиша знака процента (``%``).
+Клавиша знака процента (\ ``%``).
 
 .. _class_@GlobalScope_constant_KEY_AMPERSAND:
 
@@ -1796,7 +1798,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AMPERSAND** = ``38``
 
-Клавиша амперсанда (``&``).
+Клавиша амперсанда (\ ``&``).
 
 .. _class_@GlobalScope_constant_KEY_APOSTROPHE:
 
@@ -1804,7 +1806,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_APOSTROPHE** = ``39``
 
-Клавиша апострофа (``'``).
+Клавиша апострофа (\ ``'``).
 
 .. _class_@GlobalScope_constant_KEY_PARENLEFT:
 
@@ -1812,7 +1814,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PARENLEFT** = ``40``
 
-Клавиша левой скобки (``(``).
+Клавиша левой скобки (\ ``(``).
 
 .. _class_@GlobalScope_constant_KEY_PARENRIGHT:
 
@@ -1820,7 +1822,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PARENRIGHT** = ``41``
 
-Клавиша правой скобки (``(``).
+Клавиша правой скобки (\ ``(``).
 
 .. _class_@GlobalScope_constant_KEY_ASTERISK:
 
@@ -1828,7 +1830,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASTERISK** = ``42``
 
-Клавиша звездочки (знак сноски, умножения) (``*``).
+Клавиша звездочки (знак сноски, умножения) (\ ``*``).
 
 .. _class_@GlobalScope_constant_KEY_PLUS:
 
@@ -1836,7 +1838,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PLUS** = ``43``
 
-Клавиша плюс (``+``).
+Клавиша плюс (\ ``+``).
 
 .. _class_@GlobalScope_constant_KEY_COMMA:
 
@@ -1844,7 +1846,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COMMA** = ``44``
 
-Клавиша запятая (``,``).
+Клавиша запятая (\ ``,``).
 
 .. _class_@GlobalScope_constant_KEY_MINUS:
 
@@ -1852,7 +1854,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MINUS** = ``45``
 
-Клавиша минус (``-``).
+Клавиша минус (\ ``-``).
 
 .. _class_@GlobalScope_constant_KEY_PERIOD:
 
@@ -1860,7 +1862,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERIOD** = ``46``
 
-Клавиша точки (``.``).
+Клавиша точки (\ ``.``).
 
 .. _class_@GlobalScope_constant_KEY_SLASH:
 
@@ -1868,7 +1870,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SLASH** = ``47``
 
-Клавиша слэш (деления) (``/``).
+Клавиша слэш (деления) (\ ``/``).
 
 .. _class_@GlobalScope_constant_KEY_0:
 
@@ -1956,7 +1958,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COLON** = ``58``
 
-Клавиша двоеточия (``:``).
+Клавиша двоеточия (\ ``:``).
 
 .. _class_@GlobalScope_constant_KEY_SEMICOLON:
 
@@ -1964,7 +1966,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SEMICOLON** = ``59``
 
-Клавиша точки с запятой (``;``).
+Клавиша точки с запятой (\ ``;``).
 
 .. _class_@GlobalScope_constant_KEY_LESS:
 
@@ -1972,7 +1974,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_LESS** = ``60``
 
-Клавиша знака «меньше» (``<``).
+Клавиша знака «меньше» (\ ``<``).
 
 .. _class_@GlobalScope_constant_KEY_EQUAL:
 
@@ -1980,7 +1982,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EQUAL** = ``61``
 
-Клавиша знака равенства (``=``).
+Клавиша знака равенства (\ ``=``).
 
 .. _class_@GlobalScope_constant_KEY_GREATER:
 
@@ -1988,7 +1990,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_GREATER** = ``62``
 
-Клавиша знака «больше» (``>``).
+Клавиша знака «больше» (\ ``>``).
 
 .. _class_@GlobalScope_constant_KEY_QUESTION:
 
@@ -1996,7 +1998,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUESTION** = ``63``
 
-Клавиша со знаком вопроса (``?``).
+Клавиша со знаком вопроса (\ ``?``).
 
 .. _class_@GlobalScope_constant_KEY_AT:
 
@@ -2004,7 +2006,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AT** = ``64``
 
-Клавиша at (``@``).
+Клавиша at (\ ``@``).
 
 .. _class_@GlobalScope_constant_KEY_A:
 
@@ -2220,7 +2222,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETLEFT** = ``91``
 
-Клавиша левой скобки (``[lb]``).
+Left bracket (\ ``[``) key.
 
 .. _class_@GlobalScope_constant_KEY_BACKSLASH:
 
@@ -2228,7 +2230,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BACKSLASH** = ``92``
 
-Клавиша обратной косой черты (Backslash key) (``\``).
+Клавиша обратной косой черты (Backslash key) (\ ``\``).
 
 .. _class_@GlobalScope_constant_KEY_BRACKETRIGHT:
 
@@ -2236,7 +2238,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETRIGHT** = ``93``
 
-Клавиша правой скобки (``[rb]``).
+Right bracket (\ ``]``) key.
 
 .. _class_@GlobalScope_constant_KEY_ASCIICIRCUM:
 
@@ -2244,7 +2246,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIICIRCUM** = ``94``
 
-Клавиша курсора (``^``).
+Клавиша курсора (\ ``^``).
 
 .. _class_@GlobalScope_constant_KEY_UNDERSCORE:
 
@@ -2252,7 +2254,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_UNDERSCORE** = ``95``
 
-Клавиша подчеркивания (``_``).
+Клавиша подчеркивания (\ ``_``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTELEFT:
 
@@ -2260,7 +2262,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTELEFT** = ``96``
 
-Клавиша обратного апострофа (`````).
+Клавиша обратного апострофа (\ `````).
 
 .. _class_@GlobalScope_constant_KEY_BRACELEFT:
 
@@ -2268,7 +2270,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACELEFT** = ``123``
 
-Клавиша левой фигурной скобки (``{``).
+Клавиша левой фигурной скобки (\ ``{``).
 
 .. _class_@GlobalScope_constant_KEY_BAR:
 
@@ -2276,7 +2278,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BAR** = ``124``
 
-Вертикальная черта или *pipe* (``|``).
+Вертикальная черта или *pipe* (\ ``|``).
 
 .. _class_@GlobalScope_constant_KEY_BRACERIGHT:
 
@@ -2284,7 +2286,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACERIGHT** = ``125``
 
-Клавиша правой фигурной скобки (``}``).
+Клавиша правой фигурной скобки (\ ``}``).
 
 .. _class_@GlobalScope_constant_KEY_ASCIITILDE:
 
@@ -2292,7 +2294,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIITILDE** = ``126``
 
-Клавиша тильда (``~``).
+Клавиша тильда (\ ``~``).
 
 .. _class_@GlobalScope_constant_KEY_YEN:
 
@@ -2300,7 +2302,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_YEN** = ``165``
 
-Клавиша символа йены (``¥``).
+Клавиша символа йены (\ ``¥``).
 
 .. _class_@GlobalScope_constant_KEY_SECTION:
 
@@ -2308,7 +2310,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SECTION** = ``167``
 
-Клавиша знака раздела (``§``).
+Клавиша знака раздела (\ ``§``).
 
 .. rst-class:: classref-item-separator
 
@@ -3574,7 +3576,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 Подсказка указывает, что свойство типа :ref:`int<class_int>` представляет собой битовую маску с именованными битовыми флагами.
 
-Строка подсказки представляет собой список имен, разделенных запятыми, например, ``"Bit0,Bit1,Bit2,Bit3"``. Пробелы **не** удаляются с обоих концов имени. Первое имя в списке имеет значение 1, следующее — 2, затем 4, 8, 16 и так далее. Явные значения также можно указать, добавив к имени ``:integer``, например, ``"A:4,B:8,C:16"``. Вы также можете комбинировать несколько флагов (``"A:4,B:8,AB:12,C:16"``).
+Строка подсказки представляет собой список имен, разделенных запятыми, например, ``"Bit0,Bit1,Bit2,Bit3"``. Пробелы **не** удаляются с обоих концов имени. Первое имя в списке имеет значение 1, следующее — 2, затем 4, 8, 16 и так далее. Явные значения также можно указать, добавив к имени ``:integer``, например, ``"A:4,B:8,C:16"``. Вы также можете комбинировать несколько флагов (\ ``"A:4,B:8,AB:12,C:16"``).
 
 \ **Примечание:** Значение флага должно быть не менее ``1`` и не более ``2 ** 32 - 1``.
 
@@ -3970,11 +3972,19 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 Аналогично :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`, но свойство хранится как необработанный путь, а не UID. Это означает, что ссылка будет повреждена при перемещении файла. По возможности используйте :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`.
 
+.. _class_@GlobalScope_constant_PROPERTY_HINT_AUDIO_BUS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_AUDIO_BUS** = ``45``
+
+Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property is the name of an audio bus. This allows the selection of predefined bus names registered with the audio server.
+
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``45``
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``46``
 
 Представляет размер перечисления :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`.
 
@@ -4692,7 +4702,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_EQUAL** = ``0``
 
-Оператор "Равно" (``==``).
+Оператор "Равно" (\ ``==``).
 
 .. _class_@GlobalScope_constant_OP_NOT_EQUAL:
 
@@ -4700,7 +4710,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT_EQUAL** = ``1``
 
-Оператор "Не равно" (``!=``).
+Оператор "Не равно" (\ ``!=``).
 
 .. _class_@GlobalScope_constant_OP_LESS:
 
@@ -4708,7 +4718,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS** = ``2``
 
-Оператор "Меньше чем" (``<``).
+Оператор "Меньше чем" (\ ``<``).
 
 .. _class_@GlobalScope_constant_OP_LESS_EQUAL:
 
@@ -4716,7 +4726,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS_EQUAL** = ``3``
 
-Оператор "Меньше чем или равно" (``<=``).
+Оператор "Меньше чем или равно" (\ ``<=``).
 
 .. _class_@GlobalScope_constant_OP_GREATER:
 
@@ -4724,7 +4734,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER** = ``4``
 
-Оператор "Больше чем" (``>``).
+Оператор "Больше чем" (\ ``>``).
 
 .. _class_@GlobalScope_constant_OP_GREATER_EQUAL:
 
@@ -4732,7 +4742,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER_EQUAL** = ``5``
 
-Оператор "Больше чем или равно" (``>=``).
+Оператор "Больше чем или равно" (\ ``>=``).
 
 .. _class_@GlobalScope_constant_OP_ADD:
 
@@ -4740,7 +4750,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_ADD** = ``6``
 
-Оператор сложения (``+``).
+Оператор сложения (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_SUBTRACT:
 
@@ -4748,7 +4758,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SUBTRACT** = ``7``
 
-Оператор вычитания (``-``).
+Оператор вычитания (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_MULTIPLY:
 
@@ -4756,7 +4766,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MULTIPLY** = ``8``
 
-Оператор умножения (``*``).
+Оператор умножения (\ ``*``).
 
 .. _class_@GlobalScope_constant_OP_DIVIDE:
 
@@ -4764,7 +4774,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_DIVIDE** = ``9``
 
-Оператор деления (``/``).
+Оператор деления (\ ``/``).
 
 .. _class_@GlobalScope_constant_OP_NEGATE:
 
@@ -4772,7 +4782,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NEGATE** = ``10``
 
-Унарный оператор отрицания (``-``).
+Унарный оператор отрицания (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_POSITIVE:
 
@@ -4780,7 +4790,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POSITIVE** = ``11``
 
-Унарный оператор "Плюс" (``+``).
+Унарный оператор "Плюс" (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_MODULE:
 
@@ -4788,7 +4798,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MODULE** = ``12``
 
-Оператор остатка/модуля (``%``).
+Оператор остатка/модуля (\ ``%``).
 
 .. _class_@GlobalScope_constant_OP_POWER:
 
@@ -4796,7 +4806,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POWER** = ``13``
 
-Оператор power (``**``).
+Оператор power (\ ``**``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_LEFT:
 
@@ -4804,7 +4814,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_LEFT** = ``14``
 
-Оператор сдвига влево (``<<``).
+Оператор сдвига влево (\ ``<<``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_RIGHT:
 
@@ -4812,7 +4822,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_RIGHT** = ``15``
 
-Оператор сдвига вправо (``>>``).
+Оператор сдвига вправо (\ ``>>``).
 
 .. _class_@GlobalScope_constant_OP_BIT_AND:
 
@@ -4820,7 +4830,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_AND** = ``16``
 
-Побитовый оператор И (``&``).
+Побитовый оператор И (\ ``&``).
 
 .. _class_@GlobalScope_constant_OP_BIT_OR:
 
@@ -4828,7 +4838,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_OR** = ``17``
 
-Побитовый оператор ИЛИ (``|``).
+Побитовый оператор ИЛИ (\ ``|``).
 
 .. _class_@GlobalScope_constant_OP_BIT_XOR:
 
@@ -4836,7 +4846,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_XOR** = ``18``
 
-Побитовый оператор Исключающее ИЛИ (``^``).
+Побитовый оператор Исключающее ИЛИ (\ ``^``).
 
 .. _class_@GlobalScope_constant_OP_BIT_NEGATE:
 
@@ -4844,7 +4854,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_NEGATE** = ``19``
 
-Побитовый оператор НЕ (``~``).
+Побитовый оператор НЕ (\ ``~``).
 
 .. _class_@GlobalScope_constant_OP_AND:
 
@@ -4852,7 +4862,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_AND** = ``20``
 
-Оператор "Логическое И" (``and`` или ``&&``).
+Оператор "Логическое И" (\ ``and`` или ``&&``).
 
 .. _class_@GlobalScope_constant_OP_OR:
 
@@ -4860,7 +4870,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_OR** = ``21``
 
-Логический оператор ИЛИ (``or`` или ``||``).
+Логический оператор ИЛИ (\ ``or`` или ``||``).
 
 .. _class_@GlobalScope_constant_OP_XOR:
 
@@ -4876,7 +4886,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT** = ``23``
 
-Логический оператор НЕ (``not`` или ``!``).
+Логический оператор НЕ (\ ``not`` или ``!``).
 
 .. _class_@GlobalScope_constant_OP_IN:
 
@@ -4884,7 +4894,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_IN** = ``24``
 
-Логический оператор В (``in``).
+Логический оператор В (\ ``in``).
 
 .. _class_@GlobalScope_constant_OP_MAX:
 
@@ -5442,6 +5452,18 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 ----
 
+.. _class_@GlobalScope_property_TextureStreaming:
+
+.. rst-class:: classref-property
+
+:ref:`TextureStreaming<class_TextureStreaming>` **TextureStreaming** :ref:`🔗<class_@GlobalScope_property_TextureStreaming>`
+
+The :ref:`TextureStreaming<class_TextureStreaming>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_property_ThemeDB:
 
 .. rst-class:: classref-property
@@ -5946,9 +5968,9 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, pre\: :ref:`float<class_float>`, post\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`, to_t\: :ref:`float<class_float>`, pre_t\: :ref:`float<class_float>`, post_t\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_cubic_interpolate_angle_in_time>`
 
-Кубическая интерполяция между двумя значениями вращения с кратчайшим путем по коэффициенту, определенному в ``weight`` со значениями ``pre`` и ``post``. См. также :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
+Cubic interpolates between two rotation values with shortest path by the factor defined in ``weight`` with ``pre`` and ``post`` values. See also :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
-Он может выполнять более плавную интерполяцию, чем :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>` по значениям времени.
+It can perform smoother interpolation than :ref:`cubic_interpolate_angle()<class_@GlobalScope_method_cubic_interpolate_angle>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -6619,7 +6641,7 @@ Prints:
     nearest_po2(0) # Возвращает 0 (может быть неожиданным)
     nearest_po2(-1) # Возвращает 0 (может быть неожиданным)
 
-\ **Предупреждение:** Из-за своей реализации этот метод возвращает ``0`` вместо ``1`` для значений, меньших или равных ``0``, за исключением ``value``, являющегося наименьшим отрицательным 64-битным целым числом (``-9223372036854775808``), в этом случае ``value`` возвращается без изменений.
+\ **Предупреждение:** Из-за своей реализации этот метод возвращает ``0`` вместо ``1`` для значений, меньших или равных ``0``, за исключением ``value``, являющегося наименьшим отрицательным 64-битным целым числом (\ ``-9223372036854775808``), в этом случае ``value`` возвращается без изменений.
 
 .. rst-class:: classref-item-separator
 
@@ -6735,30 +6757,30 @@ Prints:
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-Преобразует один или несколько аргументов любого типа в строку наилучшим возможным способом и выводит их в консоль.
+Converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
-Поддерживаются следующие теги BBCode: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
+The following BBCode tags are supported: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
 
-Теги URL поддерживают только URL, заключенные в тег URL, а не URL с другим заголовком.
+URL tags support both URLs wrapped by a URL tag and URLs with a different title (\ ``[url=address]text[/url]``). Support for URLs with a different title varies across terminal emulators. Most modern terminal emulators support them, but Terminal.app and conhost (the legacy Windows console) do not.
 
-При печати в стандартный вывод поддерживаемое подмножество BBCode преобразуется в escape-коды ANSI для отображения эмулятором терминала. Поддержка escape-кодов ANSI различается в разных эмуляторах терминала, особенно для курсива и зачеркивания. В стандартном выводе ``code`` представлен тусклым текстом, но без изменения шрифта. Неподдерживаемые теги остаются как есть в стандартном выводе.
+When printing to standard output, the supported subset of BBCode is converted to ANSI escape codes for the terminal emulator to display. Support for ANSI escape codes varies across terminal emulators, especially for italic and strikethrough. In standard output, ``code`` is represented with faint text but without any font change. Unsupported tags are left as-is in standard output.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Hello world![/b][/color]") # Выводит "Hello world!", зеленым цветом жирным шрифтом.
+    print_rich("[color=green][b]Hello world![/b][/color]") # Prints "Hello world!", in green with a bold font.
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Выводит "Hello world!", зеленым цветом жирным шрифтом.
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Prints "Hello world!", in green with a bold font.
 
 
 
-\ **Примечание:** Рассмотрите возможность использования :ref:`push_error()<class_@GlobalScope_method_push_error>` и :ref:`push_warning()<class_@GlobalScope_method_push_warning>` для печати сообщений об ошибках и предупреждений вместо :ref:`print()<class_@GlobalScope_method_print>` или :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. Это отличает их от сообщений печати, используемых в целях отладки, а также отображает трассировку стека при печати ошибки или предупреждения.
+\ **Note:** Consider using :ref:`push_error()<class_@GlobalScope_method_push_error>` and :ref:`push_warning()<class_@GlobalScope_method_push_warning>` to print error and warning messages instead of :ref:`print()<class_@GlobalScope_method_print>` or :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
-\ **Примечание:** Вывод, отображаемый в редакторе, поддерживает кликабельные теги ``[url=address]text[/url]``. Значение ``address`` тега ``[url]`` обрабатывается :ref:`OS.shell_open()<class_OS_method_shell_open>` при клике.
+\ **Note:** Output displayed in the editor supports clickable ``[url=address]text[/url]`` tags. The ``[url]`` tag's ``address`` value is handled by :ref:`OS.shell_open()<class_OS_method_shell_open>` when clicked.
 
 .. rst-class:: classref-item-separator
 

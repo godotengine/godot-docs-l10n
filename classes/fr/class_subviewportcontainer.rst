@@ -14,11 +14,11 @@ Un conteneur utilisé pour afficher le contenu d'un :ref:`SubViewport<class_SubV
 Description
 -----------
 
-Un conteneur qui affiche le contenu des nœuds enfants :ref:`SubViewport<class_SubViewport>` sous-jacents. Il utilise la taille combinée des :ref:`SubViewport<class_SubViewport>` comme taille minimale, à moins que :ref:`stretch<class_SubViewportContainer_property_stretch>` ne soit activé.
+A container that displays the contents of underlying :ref:`SubViewport<class_SubViewport>` child nodes. It uses the combined size of the :ref:`SubViewport<class_SubViewport>`\ s as minimum size, unless :ref:`stretch<class_SubViewportContainer_property_stretch>` is enabled.
 
-\ **Note :** Modifier l'échelle :ref:`Control.scale<class_Control_property_scale>` d'un **SubViewportContainer** fera apparaître son contenu comme déformé. Pour changer sa taille visuelle sans causer de déformation, ajustez les marges du nœud à la place (s'il n'est pas déjà dans un conteneur).
+\ **Note:** Changing a **SubViewportContainer**'s :ref:`Control.scale<class_Control_property_scale>` will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's offset properties instead (if it's not already in a container).
 
-\ **Note :** Le **SubViewportContainer** transmet les notifications d'entrée et de sortie de la souris à ses sub-viewports.
+\ **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
 
 .. rst-class:: classref-reftable-group
 

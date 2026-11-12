@@ -58,11 +58,21 @@ Godot 编辑器用于编辑数值的控件。
 .. table::
    :widths: auto
 
-   +-----------------------------------+---------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`updown<class_EditorSpinSlider_theme_icon_updown>`                   |
-   +-----------------------------------+---------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`updown_disabled<class_EditorSpinSlider_theme_icon_updown_disabled>` |
-   +-----------------------------------+---------------------------------------------------------------------------+
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`label_color<class_EditorSpinSlider_theme_color_label_color>`                          | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`read_only_label_color<class_EditorSpinSlider_theme_color_read_only_label_color>`      | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`line_edit_margin<class_EditorSpinSlider_theme_constant_line_edit_margin>`             | ``0``                 |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`line_edit_margin_empty<class_EditorSpinSlider_theme_constant_line_edit_margin_empty>` | ``0``                 |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`updown<class_EditorSpinSlider_theme_icon_updown>`                                     |                       |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`updown_disabled<class_EditorSpinSlider_theme_icon_updown_disabled>`                   |                       |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`label_bg<class_EditorSpinSlider_theme_style_label_bg>`                                |                       |
+   +-----------------------------------+---------------------------------------------------------------------------------------------+-----------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -320,6 +330,54 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 主题属性说明
 ------------
 
+.. _class_EditorSpinSlider_theme_color_label_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **label_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_EditorSpinSlider_theme_color_label_color>`
+
+Font color of the left label (see :ref:`label<class_EditorSpinSlider_property_label>`).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSpinSlider_theme_color_read_only_label_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **read_only_label_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_EditorSpinSlider_theme_color_read_only_label_color>`
+
+Font color of the left label, when :ref:`read_only<class_EditorSpinSlider_property_read_only>` is enabled.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSpinSlider_theme_constant_line_edit_margin:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **line_edit_margin** = ``0`` :ref:`🔗<class_EditorSpinSlider_theme_constant_line_edit_margin>`
+
+Left margin of the internal :ref:`LineEdit<class_LineEdit>`, used to align text.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSpinSlider_theme_constant_line_edit_margin_empty:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **line_edit_margin_empty** = ``0`` :ref:`🔗<class_EditorSpinSlider_theme_constant_line_edit_margin_empty>`
+
+Left margin of the internal :ref:`LineEdit<class_LineEdit>`, when :ref:`label<class_EditorSpinSlider_property_label>` is empty.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSpinSlider_theme_icon_updown:
 
 .. rst-class:: classref-themeproperty
@@ -339,6 +397,18 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 :ref:`Texture2D<class_Texture2D>` **updown_disabled** :ref:`🔗<class_EditorSpinSlider_theme_icon_updown_disabled>`
 
 控件只读或禁用时，代表上下按钮的单张纹理。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSpinSlider_theme_style_label_bg:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **label_bg** :ref:`🔗<class_EditorSpinSlider_theme_style_label_bg>`
+
+Background stylebox for the left label, displayed when :ref:`flat<class_EditorSpinSlider_property_flat>` is enabled.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

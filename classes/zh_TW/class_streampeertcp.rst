@@ -14,9 +14,9 @@ StreamPeerTCP
 說明
 ----
 
-處理 TCP 連接的流對等體。該物件可用於連接 TCP 伺服器，也可以由 TCP 伺服器返回。
+A stream peer that handles TCP connections. This object can be used to connect to TCP servers, or also is returned by a TCP server.
 
-\ **注意：**\ 匯出到安卓時，在匯出專案或使用一鍵部署之前，請務必在安卓匯出預設中，開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

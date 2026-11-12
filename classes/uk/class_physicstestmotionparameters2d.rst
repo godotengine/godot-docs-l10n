@@ -14,7 +14,9 @@ PhysicsTestMotionParameters2D
 Опис
 --------
 
-При зміні різних властивостей цього об'єкта, таких як рух, можна налаштувати параметри для :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
+By changing various properties of this object, such as the motion, you can configure the parameters for :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

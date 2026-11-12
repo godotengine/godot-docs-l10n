@@ -594,6 +594,14 @@ flags **ArrayFormat**: :ref:`🔗<enum_Mesh_ArrayFormat>`
 
 用於標記網格正在使用的壓縮的屬性（頂點、法線、切線、UV）的標誌。啟用這種形式的壓縮後，頂點位置將被打包到 RGBA16UNORM 屬性中，並在頂點著色器中進行縮放。法線和切線將被打包到表示一個軸的 RG16UNORM 中，並在頂點的 A 通道中儲存一個 16 位元浮點數。UV 將使用 16 位元標準化浮點數而不是完整的 32 位元有符號浮點數。使用該壓縮模式時，必須使用頂點、法線和切線或僅使用頂點。你無法使用沒有切線的法線。如果可以的話，匯入器將自動啟用這種壓縮。
 
+.. _class_Mesh_constant_ARRAY_FLAG_USE_STORAGE_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_STORAGE_BUFFER** = ``1073741824``
+
+Flag used to mark that the surface's vertex, attribute, skin, and index buffers must be created with the storage-buffer usage bit so they can be bound as storage buffers in compute shaders. This is required to write into them from a compute pipeline through the :ref:`RID<class_RID>`\ s returned by :ref:`RenderingServer.mesh_surface_get_vertex_buffer_rd_rid()<class_RenderingServer_method_mesh_surface_get_vertex_buffer_rd_rid>` and the matching methods for the attribute, skin, and index buffers. Has no effect on the OpenGL backend, which does not expose :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>`\ s.
+
 .. rst-class:: classref-item-separator
 
 ----

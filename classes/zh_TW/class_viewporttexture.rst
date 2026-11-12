@@ -14,22 +14,17 @@ ViewportTexture
 說明
 ----
 
-**ViewportTexture** 以動態 :ref:`Texture2D<class_Texture2D>` 的形式提供 :ref:`Viewport<class_Viewport>` 的內容，可以用來結合 :ref:`Control<class_Control>`\ 、\ :ref:`Node2D<class_Node2D>`\ 、\ :ref:`Node3D<class_Node3D>` 等節點的渲染。例如你可以用該紋理在 :ref:`TextureRect<class_TextureRect>` 中顯示 3D 場景，也可以在 :ref:`Sprite3D<class_Sprite3D>` 中顯示 2D 覆蓋層。
+A **ViewportTexture** provides the content of a :ref:`Viewport<class_Viewport>` as a dynamic :ref:`Texture2D<class_Texture2D>`. This can be used to combine the rendering of :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>` and :ref:`Node3D<class_Node3D>` nodes. For example, you can use this texture to display a 3D scene inside a :ref:`TextureRect<class_TextureRect>`, or a 2D overlay in a :ref:`Sprite3D<class_Sprite3D>`.
 
-要在程式碼中取得 **ViewportTexture**\ ，請在目標視埠上使用 :ref:`Viewport.get_texture()<class_Viewport_method_get_texture>` 方法。
+To get a **ViewportTexture** in code, use the :ref:`Viewport.get_texture()<class_Viewport_method_get_texture>` method on the target viewport.
 
-\ **注意：**\ **ViewportTexture** 始終是區域於其場景的（見 :ref:`Resource.resource_local_to_scene<class_Resource_property_resource_local_to_scene>`\ ）。如果場景根節點尚未就緒，就可能回傳不正確的資料（見 :ref:`Node.ready<class_Node_signal_ready>`\ ）。
+\ **Note:** A **ViewportTexture** is always local to its scene (see :ref:`Resource.resource_local_to_scene<class_Resource_property_resource_local_to_scene>`). If the scene root is not ready, it may return incorrect data (see :ref:`Node.ready<class_Node_signal_ready>`).
 
-\ **注意：**\ 實例化包含高解析度 **ViewportTexture** 的場景可能引起顯著的卡頓。
+\ **Note:** Instantiating scenes containing a high-resolution **ViewportTexture** may cause noticeable stutter.
 
-\ **注意：**\ 如果使用的 :ref:`Viewport<class_Viewport>` 將 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 設為了 ``true``\ ，則回傳的紋理將是使用線性編碼的 HDR 影像。這種影像在螢幕上直接顯示時看上去比較暗。要將其轉換為非線性 sRGB 編碼，可以執行以下操作：
+\ **Note:** When using a :ref:`Viewport<class_Viewport>` with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` set to ``true``, the returned texture will be an HDR image that uses linear encoding. This may look darker than normal when displayed directly on screen. To convert to nonlinear sRGB encoding, use :ref:`Image.linear_to_srgb()<class_Image_method_linear_to_srgb>`.
 
-::
-
-    img.convert(Image.FORMAT_RGBA8)
-    img.linear_to_srgb()
-
-\ **注意：**\ :ref:`Decal<class_Decal>`\ 、\ :ref:`Light3D<class_Light3D>`\ 、\ :ref:`PointLight2D<class_PointLight2D>` 等節點並不支援直接使用 **ViewportTexture**\ 。要在這些節點中使用 **ViewportTexture** 的紋理資料，你需要對 **ViewportTexture** 呼叫 :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` 取得 :ref:`ImageTexture<class_ImageTexture>`\ ，將這個結果傳給 :ref:`ImageTexture.create_from_image()<class_ImageTexture_method_create_from_image>`\ 。這種轉換操作比較慢，因此不應該每影格都執行。
+\ **Note:** Some nodes such as :ref:`Decal<class_Decal>`, :ref:`Light3D<class_Light3D>`, and :ref:`PointLight2D<class_PointLight2D>` do not support using **ViewportTexture** directly. To use texture data from a **ViewportTexture** in these nodes, you need to create an :ref:`ImageTexture<class_ImageTexture>` by calling :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` on the **ViewportTexture** and passing the result to :ref:`ImageTexture.create_from_image()<class_ImageTexture_method_create_from_image>`. This conversion is a slow operation, so it should not be performed every frame.
 
 .. rst-class:: classref-introduction-group
 

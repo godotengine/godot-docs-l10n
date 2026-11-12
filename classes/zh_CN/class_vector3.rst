@@ -610,7 +610,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate>`
 
-返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -622,9 +622,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate_in_time>`
 
-返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-通过使用时间值，可以比 :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` 进行更平滑的插值。
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **direction_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_direction_to>`
 
-返回从该向量指向 ``to`` 的归一化向量。相当于使用 ``(b - a).normalized()``\ 。
+返回从该向量指向 ``to`` 的归一化向量。
+
+\ ``a.direction_to(b)`` 等价于 ``(b - a).normalized()``\ 。另见 :ref:`normalized()<class_Vector3_method_normalized>`\ 。
 
 .. rst-class:: classref-item-separator
 

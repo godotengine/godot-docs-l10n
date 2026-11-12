@@ -189,7 +189,7 @@ Contiene il dati Ogg grezzi per questo flusso.
 
 Contiene tag definiti dall'utente se presenti nei dati Ogg Vorbis.
 
-I tag comunemente utilizzati includono ``title``, ``artist``, ``album``, ``tracknumber`` e ``date`` (``date`` non ha un formato di data standard).
+I tag comunemente utilizzati includono ``title``, ``artist``, ``album``, ``tracknumber`` e ``date`` (\ ``date`` non ha un formato di data standard).
 
 \ **Nota:** Nessun tag è *garantito* a essere presente in ogni file, quindi assicurati di tenere conto di chiavi che non esistono sempre.
 

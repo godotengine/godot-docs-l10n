@@ -38,6 +38,8 @@ Proprietà
    +-------------------------------+--------------------------------------------------------------------+-------------------+
    | :ref:`int<class_int>`         | :ref:`index<class_InputEventScreenTouch_property_index>`           | ``0``             |
    +-------------------------------+--------------------------------------------------------------------+-------------------+
+   | :ref:`bool<class_bool>`       | :ref:`long_press<class_InputEventScreenTouch_property_long_press>` | ``false``         |
+   +-------------------------------+--------------------------------------------------------------------+-------------------+
    | :ref:`Vector2<class_Vector2>` | :ref:`position<class_InputEventScreenTouch_property_position>`     | ``Vector2(0, 0)`` |
    +-------------------------------+--------------------------------------------------------------------+-------------------+
    | :ref:`bool<class_bool>`       | :ref:`pressed<class_InputEventScreenTouch_property_pressed>`       | ``false``         |
@@ -98,6 +100,25 @@ Se ``true``, lo stato del tocco è un doppio tocco.
 - :ref:`int<class_int>` **get_index**\ (\ )
 
 L'indice di tocco nel caso di un evento multi-touch. Un indice = un dito.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_InputEventScreenTouch_property_long_press:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **long_press** = ``false`` :ref:`🔗<class_InputEventScreenTouch_property_long_press>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_long_press**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_long_press**\ (\ )
+
+If ``true``, the touch's state is a long press.
+
+\ **Note:** This is only supported on Android and iOS.
 
 .. rst-class:: classref-item-separator
 

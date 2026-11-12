@@ -110,7 +110,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult3D_PathSegmen
 
 導覽查詢的路徑陣列結果。所有的路徑陣列位置都使用全域座標。未自訂查詢參數時，與 :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>` 返回的路徑相同。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult3D_PathSegmen
 
 管理路徑上的各個點所經過的地區和連結的 :ref:`Object<class_Object>` 的 ``ObjectID``\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult3D_PathSegmen
 
 路徑上的各個點所經過的導覽圖元型別（地區或連結）。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

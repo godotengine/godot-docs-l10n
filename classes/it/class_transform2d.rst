@@ -348,7 +348,7 @@ Restituisce la versione invertita di questa trasformazione. A differenza di :ref
 
 :ref:`Vector2<class_Vector2>` **basis_xform**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Transform2D_method_basis_xform>`
 
-Restituisce una copia del vettore ``v``, trasformato (moltiplicato) per la matrice della base di trasformazione. A differenza dell'operatore di moltiplicazione (``*``), questo metodo ignora l':ref:`origin<class_Transform2D_property_origin>`.
+Restituisce una copia del vettore ``v``, trasformato (moltiplicato) per la matrice della base di trasformazione. A differenza dell'operatore di moltiplicazione (\ ``*``), questo metodo ignora l':ref:`origin<class_Transform2D_property_origin>`.
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,7 @@ Description
 
 The **NodePath** built-in :ref:`Variant<class_Variant>` type represents a path to a node or property in a hierarchy of nodes. It is designed to be efficiently passed into many built-in methods (such as :ref:`Node.get_node()<class_Node_method_get_node>`, :ref:`Object.set_indexed()<class_Object_method_set_indexed>`, :ref:`Tween.tween_property()<class_Tween_method_tween_property>`, etc.) without a hard dependence on the node or property they point to.
 
-A node path is represented as a :ref:`String<class_String>` composed of slash-separated (``/``) node names and colon-separated (``:``) property names (also called "subnames"). Similar to a filesystem path, ``".."`` and ``"."`` are special node names. They refer to the parent node and the current node, respectively.
+A node path is represented as a :ref:`String<class_String>` composed of slash-separated (\ ``/``) node names and colon-separated (\ ``:``) property names (also called "subnames"). Similar to a filesystem path, ``".."`` and ``"."`` are special node names. They refer to the parent node and the current node, respectively.
 
 The following examples are paths relative to the current node:
 
@@ -52,7 +52,7 @@ You usually do not have to worry about the **NodePath** type, as strings are aut
 
 See also :ref:`StringName<class_StringName>`, which is a similar type designed for optimized strings.
 
-\ **Note:** In a boolean context, a **NodePath** will evaluate to ``false`` if it is empty (``NodePath("")``). Otherwise, a **NodePath** will always evaluate to ``true``.
+\ **Note:** In a boolean context, a **NodePath** will evaluate to ``false`` if it is empty (\ ``NodePath("")``). Otherwise, a **NodePath** will always evaluate to ``true``.
 
 .. note::
 
@@ -204,7 +204,7 @@ Descriptions des méthodes
 
 :ref:`NodePath<class_NodePath>` **get_as_property_path**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_as_property_path>`
 
-Renvoie une copie de ce chemin de nœud avec un deux-points (``:``) en préfixe, le transformant en un chemin de propriété pur sans nom de nœud (relatif au nœud actuel).
+Renvoie une copie de ce chemin de nœud avec un deux-points (\ ``:``) en préfixe, le transformant en un chemin de propriété pur sans nom de nœud (relatif au nœud actuel).
 
 
 .. tabs::
@@ -239,7 +239,7 @@ Renvoie une copie de ce chemin de nœud avec un deux-points (``:``) en préfixe,
 
 :ref:`StringName<class_StringName>` **get_concatenated_names**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_names>`
 
-Renvoie tous les noms de nœuds concaténés avec un caractère slash (``/``) en un seul :ref:`StringName<class_StringName>`.
+Renvoie tous les noms de nœuds concaténés avec un caractère slash (\ ``/``) en un seul :ref:`StringName<class_StringName>`.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Renvoie tous les noms de nœuds concaténés avec un caractère slash (``/``) en
 
 :ref:`StringName<class_StringName>` **get_concatenated_subnames**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_subnames>`
 
-Renvoie tous les sous-noms de propriété concaténés avec un deux-points (``:``) en un seul :ref:`StringName<class_StringName>`.
+Renvoie tous les sous-noms de propriété concaténés avec un deux-points (\ ``:``) en un seul :ref:`StringName<class_StringName>`.
 
 
 .. tabs::
@@ -352,7 +352,7 @@ Renvoie le nom de la propriété indiquée par l'index ``idx``, à partir de 0. 
 
 :ref:`int<class_int>` **get_subname_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_subname_count>`
 
-Renvoie le nombre de noms de propriété (« sous-noms ») dans le chemin. Chaque sous-nom dans le chemin de nœud est listé après un deux-points (``:``).
+Renvoie le nombre de noms de propriété (« sous-noms ») dans le chemin. Chaque sous-nom dans le chemin de nœud est listé après un deux-points (\ ``:``).
 
 Par exemple, ``"Niveau/RigidBody2D/Sprite2D:texture:resource_name"`` contient 2 sous-noms.
 
@@ -380,7 +380,7 @@ Renvoie la valeur de hachage sur 32 bits représentant le contenu du chemin de n
 
 :ref:`bool<class_bool>` **is_absolute**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_absolute>`
 
-Renvoie ``true`` si le chemin de nœud est absolu. Contrairement à un chemin relatif, un chemin absolu est représenté par un caractère de slash de départ (``/``) et commence toujours du :ref:`SceneTree<class_SceneTree>`. Il peut être utilisé pour accéder de façon fiable à des nœuds depuis le nœuds racine (par exemple ``"/root/Global"`` si un chargement automatique (autoload) nommé «Global» existe).
+Renvoie ``true`` si le chemin de nœud est absolu. Contrairement à un chemin relatif, un chemin absolu est représenté par un caractère de slash de départ (\ ``/``) et commence toujours du :ref:`SceneTree<class_SceneTree>`. Il peut être utilisé pour accéder de façon fiable à des nœuds depuis le nœuds racine (par exemple ``"/root/Global"`` si un chargement automatique (autoload) nommé «Global» existe).
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Renvoie ``true`` si le chemin de nœud est absolu. Contrairement à un chemin re
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_empty>`
 
-Renvoie ``true`` si le chemin de nœud a été construit à partir d'un :ref:`String<class_String>` vide (``"``).
+Renvoie ``true`` si le chemin de nœud a été construit à partir d'un :ref:`String<class_String>` vide (\ ``"``).
 
 .. rst-class:: classref-item-separator
 

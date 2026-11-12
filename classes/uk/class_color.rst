@@ -1824,7 +1824,7 @@ Constructs a **Color** або з HTML-коду або з стандартизо�
 
 :ref:`Color<class_Color>` **from_rgbe9995**\ (\ rgbe\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_Color_method_from_rgbe9995>`
 
-Decodes a **Color** з цілого формату RGBE9995. Див. :ref:`Image. FORMAT_RGBE9995<class_Image_constant_ FORMAT_RGBE9995>`.
+Decodes a **Color** з цілого формату RGBE9995. Див. :ref:`Image.FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1866,7 +1866,7 @@ Decodes a **Color** з цілого формату RGBE9995. Див. :ref:`Image
 
 Повертає **Color**, пов'язаний з наданим ``каблук`` цілим в форматі 32-bit RGBA (8 біт на канал). Цей метод є інверсом :ref:`to_rgba32()<class_Color_method_to_rgba32>`.
 
-У GDScript і C#, :ref:`int<class_int>` краще візуалізувати з шістнадцятковим позначенням (``"0x"`` префікс, що робить його ``"0xRGBBAA""``.
+У GDScript і C#, :ref:`int<class_int>` краще візуалізувати з шістнадцятковим позначенням (\ ``"0x"`` префікс, що робить його ``"0xRGBBAA""``.
 
 
 .. tabs::
@@ -1899,7 +1899,7 @@ Decodes a **Color** з цілого формату RGBE9995. Див. :ref:`Image
 
 Повертає **Color**, пов'язаний з наданим ``каблук`` цілим в форматі 64-bit RGBA (16 біт на канал). Цей метод є інверсом :ref:`to_rgba64()<class_Color_method_to_rgba64>`.
 
-У GDScript і C#, :ref:`int<class_int>` краще візуалізувати з Hexadecimal позначення (``"0x"`` префікс, що робить його ``"0xRRRRGGGBBBBAAAA""``.
+У GDScript і C#, :ref:`int<class_int>` краще візуалізувати з Hexadecimal позначення (\ ``"0x"`` префікс, що робить його ``"0xRRRRGGGBBBBAAAA""``.
 
 .. rst-class:: classref-item-separator
 
@@ -1942,7 +1942,7 @@ I\ ``Повертає новий колір з [param rgba], HTML hexadecimal st
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-``true`` if ``color`` є дійсним HTML шістнадцятковим кольором рядка. Підсумок повинен бути шестигранним значенням (власно-нечутливим) або 3, 4, 6 або 8 цифр, і може бути префіксований знаком хешу (``#``). Цей метод ідентичний :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
+``true`` if ``color`` є дійсним HTML шістнадцятковим кольором рядка. Підсумок повинен бути шестигранним значенням (власно-нечутливим) або 3, 4, 6 або 8 цифр, і може бути префіксований знаком хешу (\ ``#``). Цей метод ідентичний :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
@@ -1979,7 +1979,7 @@ I\ ``Повертає новий колір з [param rgba], HTML hexadecimal st
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-Повертає колір з його :ref:`р<class_Color_property_р>`, :ref:`r<class_Color_property_r>`, і :ref:`g<class_Color_property_g>` компоненти інвертовані (``(1 - р, 1 - б, а)``).
+Повертає колір з його :ref:`р<class_Color_property_р>`, :ref:`r<class_Color_property_r>`, і :ref:`g<class_Color_property_g>` компоненти інвертовані (\ ``(1 - р, 1 - б, а)``).
 
 
 .. tabs::
@@ -2218,7 +2218,7 @@ I\ ``Повертає новий колір з [param rgba], HTML hexadecimal st
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-Повертає колір, перетворений на HTML шістнадцятковий колір :ref:`String<class_String>` в форматі RGBA, без хешу (``#``) префікс.
+Повертає колір, перетворений на HTML шістнадцятковий колір :ref:`String<class_String>` в форматі RGBA, без хешу (\ ``#``) префікс.
 
 Встановлення ``with_alpha`` to ``false``, виключає альфа з шістнадцяткового рядка, використовуючи формат RGB замість формату RGBA
 

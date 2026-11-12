@@ -81,9 +81,9 @@ Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
+OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
-Se disegnata su, viene effettuata una conversione da sRGB a spazio colore lineare.
+When drawn to, a linear to sRGB color encoding conversion is performed.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 

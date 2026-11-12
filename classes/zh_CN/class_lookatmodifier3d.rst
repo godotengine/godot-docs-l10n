@@ -85,6 +85,8 @@ LookAtModifier3D
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`                           | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>`                     |                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`bool<class_bool>`                             | :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>`                       | ``true``             |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
 
@@ -466,7 +468,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_rotation_axis**\ (\ value\: :ref:`Axis<enum_Vector3_Axis>`\ )
 - :ref:`Axis<enum_Vector3_Axis>` **get_primary_rotation_axis**\ (\ )
 
-主旋转轴。该 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 会使用欧拉角对旋转进行合成，防止围绕 :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>` 旋转。
+The axis of the first rotation. This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` works by compositing the rotation by Euler angles to prevent to rotate the :ref:`forward_axis<class_LookAtModifier3D_property_forward_axis>`.
+
+\ **Note:** Since **LookAtModifier3D** never modifies the twist when :ref:`use_secondary_rotation<class_LookAtModifier3D_property_use_secondary_rotation>` is ``false`` and :ref:`relative<class_LookAtModifier3D_property_relative>` is ``true``, the twist is not fixed even if :ref:`use_rest_for_limitation<class_LookAtModifier3D_property_use_rest_for_limitation>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +487,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-相对（Relative）选项。如果设为 ``true``\ ，旋转将基于当前姿态（pose）进行叠加；如果设为 ``false``\ ，旋转将基于初始姿态（rest）进行计算。这意味着会用 **LookAtModifier3D** 的计算结果直接替换掉当前的姿态。
-
-\ **注意：** 此选项会影响 :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`\ （使用角度限制）的基准角度。由于 **LookAtModifier3D** 严重依赖欧拉角（Euler rotation）来进行计算，因此决定限制范围的轴向与实际发生的旋转是紧密绑定的。
+The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +606,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_symmetry_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limitation_symmetry**\ (\ )
 
-如果 ``true``\ ，则限制对称地分布在骨骼两侧。
+If ``true``, the limitations are spread from the bone symmetrically.
 
-如果 ``false``\ ，则可以为骨骼放松时的每一侧单独指定限制。
+If ``false``, the limitation can be specified separately for each side of the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -667,6 +669,27 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 ----
 
+.. _class_LookAtModifier3D_property_use_rest_for_limitation:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **use_rest_for_limitation** :ref:`🔗<class_LookAtModifier3D_property_use_rest_for_limitation>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_rest_for_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_using_rest_for_limitation**\ (\ )
+
+If ``true``, the angle limitation and the rotation axes are applied based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`.
+
+If ``false``, the angle limitation is applied based on the reference pose. In here, the reference pose is the bone pose immediately before processing this modifier.
+
+\ **Note:** The limitation is applied to the rotation computed by this modifier. If the reference pose is rotated around the same axis, the limitation behaves as if it also limits the rotation of the reference pose. A rotation that this modifier does not change, such as the twist, is not limited.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_LookAtModifier3D_property_use_secondary_rotation:
 
 .. rst-class:: classref-property
@@ -707,9 +730,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 :ref:`bool<class_bool>` **is_interpolating**\ (\ ) |const| :ref:`🔗<class_LookAtModifier3D_method_is_interpolating>`
 
-如果正在执行基于时间的插值则返回 ``true``\ 。如果为 ``true``\ ，则等价于 :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` 返回 ``0.0``\ 。
+Returns ``true`` if time-based interpolation is running. If ``false``, it is equivalent to :ref:`get_interpolation_remaining()<class_LookAtModifier3D_method_get_interpolation_remaining>` returning ``0.0``.
 
-适用于确定是否能够安全移除 **LookAtModifier3D**\ 。
+This is useful to determine whether a **LookAtModifier3D** can be removed safely.
 
 .. rst-class:: classref-item-separator
 

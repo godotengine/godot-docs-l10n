@@ -14,7 +14,9 @@ PhysicsTestMotionParameters3D
 Описание
 ----------------
 
-Изменяя различные свойства этого объекта, такие как движение, вы можете настроить параметры для :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+By changing various properties of this object, such as the motion, you can configure the parameters for :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

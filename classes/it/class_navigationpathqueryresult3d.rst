@@ -110,7 +110,11 @@ Descrizioni delle proprietà
 
 L'array del percorso risultante dalla ricerca di navigazione. Tutte le posizioni dell'array del percorso sono in coordinate globali. Senza parametri di ricerca personalizzati, questo è lo stesso percorso restituito da :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +150,11 @@ Restituisce la lunghezza del percorso.
 
 Gli ``ObjectID`` degli :ref:`Object<class_Object>` che gestiscono le regioni e collegano ogni punto del percorso.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +190,11 @@ I :ref:`RID<class_RID>` delle regioni e dei collegamenti attraversati da ogni pu
 
 Il tipo di primitiva di navigazione (regione o collegamento) che attraversa ogni punto del percorso.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

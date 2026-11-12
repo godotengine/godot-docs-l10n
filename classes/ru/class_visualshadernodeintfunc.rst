@@ -14,7 +14,7 @@ VisualShaderNodeIntFunc
 Описание
 ----------------
 
-Принять целочисленный скаляр (``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
+Принять целочисленный скаляр (\ ``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

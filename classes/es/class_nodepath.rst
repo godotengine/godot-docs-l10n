@@ -14,7 +14,7 @@ Descripción
 
 El tipo :ref:`Variant<class_Variant>` integrado **NodePath** representa una ruta a un nodo o propiedad en una jerarquía de nodos. Está diseñado para pasarse de manera eficiente a muchos métodos integrados (como :ref:`Node.get_node()<class_Node_method_get_node>`, :ref:`Object.set_indexed()<class_Object_method_set_indexed>`, :ref:`Tween.tween_property()<class_Tween_method_tween_property>`, etc.) sin una dependencia estricta del nodo o propiedad al que apuntan.
 
-Una ruta de nodo se representa como una :ref:`String<class_String>` compuesta por nombres de nodo separados por barras (``/``) y nombres de propiedad separados por dos puntos (``:``) (también llamados "subnombres"). De manera similar a una ruta de sistema de archivos, ``".."`` y ``"."`` son nombres de nodo especiales. Hacen referencia al nodo superior y al nodo actual, respectivamente.
+Una ruta de nodo se representa como una :ref:`String<class_String>` compuesta por nombres de nodo separados por barras (\ ``/``) y nombres de propiedad separados por dos puntos (\ ``:``) (también llamados "subnombres"). De manera similar a una ruta de sistema de archivos, ``".."`` y ``"."`` son nombres de nodo especiales. Hacen referencia al nodo superior y al nodo actual, respectivamente.
 
 Los siguientes ejemplos son rutas relativas al nodo actual:
 
@@ -52,7 +52,7 @@ Normalmente no hay que preocuparse por el tipo **NodePath**, ya que las strings 
 
 Véase también :ref:`StringName<class_StringName>`, que es un tipo similar diseñado para strings optimizadas.
 
-\ **Nota:** En un contexto booleano, un **NodePath** se evaluará como ``false`` si está vacío (``NodePath("")``). De lo contrario, un **NodePath** siempre se evaluará como ``true``.
+\ **Nota:** En un contexto booleano, un **NodePath** se evaluará como ``false`` si está vacío (\ ``NodePath("")``). De lo contrario, un **NodePath** siempre se evaluará como ``true``.
 
 .. note::
 
@@ -204,7 +204,7 @@ Descripciones de Métodos
 
 :ref:`NodePath<class_NodePath>` **get_as_property_path**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_as_property_path>`
 
-Returns a copy of this node path with a colon character (``:``) prefixed, transforming it to a pure property path with no node names (relative to the current node).
+Returns a copy of this node path with a colon character (\ ``:``) prefixed, transforming it to a pure property path with no node names (relative to the current node).
 
 
 .. tabs::
@@ -239,7 +239,7 @@ Returns a copy of this node path with a colon character (``:``) prefixed, transf
 
 :ref:`StringName<class_StringName>` **get_concatenated_names**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_names>`
 
-Devuelve todos los nombres de nodo concatenados con una barra inclinada (``/``) como un solo :ref:`StringName<class_StringName>`.
+Devuelve todos los nombres de nodo concatenados con una barra inclinada (\ ``/``) como un solo :ref:`StringName<class_StringName>`.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Devuelve todos los nombres de nodo concatenados con una barra inclinada (``/``) 
 
 :ref:`StringName<class_StringName>` **get_concatenated_subnames**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_subnames>`
 
-Returns all property subnames concatenated with a colon character (``:``) as a single :ref:`StringName<class_StringName>`.
+Returns all property subnames concatenated with a colon character (\ ``:``) as a single :ref:`StringName<class_StringName>`.
 
 
 .. tabs::
@@ -352,7 +352,7 @@ Returns the property name indicated by ``idx``, starting from 0. If ``idx`` is o
 
 :ref:`int<class_int>` **get_subname_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_subname_count>`
 
-Devuelve el número de nombres de propiedades ("subnombres") en la ruta. Cada subnombre en la ruta del nodo se lista después de un carácter de dos puntos (``:``).
+Devuelve el número de nombres de propiedades ("subnombres") en la ruta. Cada subnombre en la ruta del nodo se lista después de un carácter de dos puntos (\ ``:``).
 
 Por ejemplo, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contiene 2 subnombres.
 
@@ -380,7 +380,7 @@ Devuelve el valor hash de 32 bits que representa el contenido de la ruta del nod
 
 :ref:`bool<class_bool>` **is_absolute**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_absolute>`
 
-Devuelve ``true`` si la ruta del nodo es absoluta. A diferencia de una ruta relativa, una ruta absoluta se representa con un carácter de barra inicial (``/``) y siempre comienza desde el :ref:`SceneTree<class_SceneTree>`. Se puede utilizar para acceder de forma fiable a los nodos desde el nodo raíz (por ejemplo, ``"/root/Global"`` si existe una autocarga llamada "Global").
+Devuelve ``true`` si la ruta del nodo es absoluta. A diferencia de una ruta relativa, una ruta absoluta se representa con un carácter de barra inicial (\ ``/``) y siempre comienza desde el :ref:`SceneTree<class_SceneTree>`. Se puede utilizar para acceder de forma fiable a los nodos desde el nodo raíz (por ejemplo, ``"/root/Global"`` si existe una autocarga llamada "Global").
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Devuelve ``true`` si la ruta del nodo es absoluta. A diferencia de una ruta rela
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_empty>`
 
-Devuelve ``true`` si la ruta del nodo ha sido construida a partir de una :ref:`String<class_String>` vacía (``""``).
+Devuelve ``true`` si la ruta del nodo ha sido construida a partir de una :ref:`String<class_String>` vacía (\ ``""``).
 
 .. rst-class:: classref-item-separator
 

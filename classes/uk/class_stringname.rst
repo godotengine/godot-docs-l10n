@@ -22,7 +22,7 @@ StringName
 
 \ **Примітка.** У C# для використання методів, перелічених на цій сторінці, потрібне явне перетворення в ``System.String``. Використовуйте метод ``ToString()``, щоб привести **StringName** до рядка, а потім використовуйте еквівалентні методи в ``System.String`` або ``StringExtensions``. 
 
-\ **Примітка.** У логічному контексті **StringName** матиме значення ``false``, якщо він порожній (``StringName("")``). В іншому випадку **StringName** завжди матиме значення ``true``.
+\ **Примітка.** У логічному контексті **StringName** матиме значення ``false``, якщо він порожній (\ ``StringName("")``). В іншому випадку **StringName** завжди матиме значення ``true``.
 
 .. note::
 
@@ -427,9 +427,9 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **c_unescape**\ (\ ) |const| :ref:`🔗<class_StringName_method_c_unescape>`
 
-Повертає копію рядка з втечу символи, заміщеними їх значеннями. Підтримані послідовності втечу ``\'``, ``\"``, ``\\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
+Returns a copy of the string with escaped characters replaced by their meanings. Supported escape sequences are ``\'``, ``\"``, ``\\``, ``\a``, ``\b``, ``\f``, ``\n``, ``\r``, ``\t``, ``\v``.
 
-\ **Примітка:** На відміну від парсера GDScript, цей метод не підтримує ``\uXXXX`` послідовність втечу.
+\ **Note:** Unlike the GDScript parser, this method doesn't support the ``\uXXXX`` escape sequence.
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_StringName_method_capitalize>`
 
-Змінює зовнішній вигляд рядка: замінює підкреслення (``_``) пробілами, додає пробіли перед великими літерами в середині слова, перетворює всі літери на малі, потім перетворює першу та кожну наступну за пробілом у верхній регістр. 
+Змінює зовнішній вигляд рядка: замінює підкреслення (\ ``_``) пробілами, додає пробіли перед великими літерами в середині слова, перетворює всі літери на малі, потім перетворює першу та кожну наступну за пробілом у верхній регістр. 
 
 
 .. tabs:: 
@@ -590,7 +590,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`int<class_int>` **filecasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filecasecmp_to>`
 
-Подібно до :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, але надає пріоритет рядкам, що починаються з крапок (``.``) та символів підкреслення (``_``) перед будь-яким іншим символом. Корисно під час сортування папок або імен файлів.
+Подібно до :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`, але надає пріоритет рядкам, що починаються з крапок (\ ``.``) та символів підкреслення (\ ``_``) перед будь-яким іншим символом. Корисно під час сортування папок або імен файлів.
 
 Щоб отримати результат :ref:`bool<class_bool>` з порівняння рядків, використовуйте оператор ``==``. Див. також :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>`, :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>` та :ref:`casecmp_to()<class_StringName_method_casecmp_to>`.
 
@@ -604,7 +604,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`int<class_int>` **filenocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_filenocasecmp_to>`
 
-Подібно до :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, але надає пріоритет рядкам, що починаються з крапок (``.``) та символів підкреслення (``_``) перед будь-яким іншим символом. Корисно під час сортування папок або імен файлів.
+Подібно до :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`, але надає пріоритет рядкам, що починаються з крапок (\ ``.``) та символів підкреслення (\ ``_``) перед будь-яким іншим символом. Корисно під час сортування папок або імен файлів.
 
 Щоб отримати результат :ref:`bool<class_bool>` з порівняння рядків, використовуйте оператор ``==``. Див. також :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>`, :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` та :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`.
 
@@ -751,7 +751,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **get_extension**\ (\ ) |const| :ref:`🔗<class_StringName_method_get_extension>`
 
-Якщо рядок є дійсним ім’ям файлу або шляхом, повертає розширення файлу без початкової крапки (``.``). В іншому випадку повертає порожній рядок. 
+Якщо рядок є дійсним ім’ям файлу або шляхом, повертає розширення файлу без початкової крапки (\ ``.``). В іншому випадку повертає порожній рядок. 
 
 ::
  
@@ -905,9 +905,9 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **indent**\ (\ prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_indent>`
 
-Змінює відступ кожного рядка за допомогою заданого префікса ``prefix``. Порожні рядки не мають відступів. Див. також :ref:`dedent()<class_StringName_method_dedent>` для видалення відступів.
+Indents every line of the string with the given ``prefix``. Empty lines are not indented. See also :ref:`dedent()<class_StringName_method_dedent>` to remove indentation.
 
-Наприклад, рядок може бути відступлений двома табуляціями за допомогою ``"\t\t"`` або чотирма пробілами за допомогою ``" "``.
+For example, the string can be indented with two tabulations using ``"\t\t"``, or four spaces using ``"    "``.
 
 .. rst-class:: classref-item-separator
 
@@ -945,7 +945,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_empty>`
 
-Повертає ``true``, якщо довжина рядка ``0`` (``"""``). Дивись також :ref:`length()<class_StringName_method_length>`.
+Повертає ``true``, якщо довжина рядка ``0`` (\ ``"""``). Дивись також :ref:`length()<class_StringName_method_length>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1002,7 +1002,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_ascii_identifier**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_ascii_identifier>`
 
-Повертає ``true``, якщо цей рядок є дійсним ідентифікатором ASCII. Дійсний ідентифікатор ASCII може містити лише літери, цифри та підкреслення (``_``), а перший символ не може бути цифрою. 
+Повертає ``true``, якщо цей рядок є дійсним ідентифікатором ASCII. Дійсний ідентифікатор ASCII може містити лише літери, цифри та підкреслення (\ ``_``), а перший символ не може бути цифрою. 
 
 ::
  
@@ -1023,7 +1023,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_filename>`
 
-Повертає ``true``, якщо цей рядок є коректним іменем файлу. Коректне ім'я файлу не може бути порожнім, починатися або закінчуватися пробілами або містити заборонені символи (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+Повертає ``true``, якщо цей рядок є коректним іменем файлу. Коректне ім'я файлу не може бути порожнім, починатися або закінчуватися пробілами або містити заборонені символи (\ ``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
 
 .. rst-class:: classref-item-separator
 
@@ -1035,7 +1035,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_float**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_float>`
 
-Повертає ``true``, якщо цей рядок представляє дійсне число з плаваючою комою. Правильний float може містити лише цифри, одну десяткову крапку (``.``) і літеру експоненти (``e``). Перед ним також може бути позитивний (``+``) або негативний (``-``) знак. Будь-яке дійсне ціле число також є дійсним float (див. :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). Дивіться також :ref:`to_float()<class_StringName_method_to_float>`. 
+Повертає ``true``, якщо цей рядок представляє дійсне число з плаваючою комою. Правильний float може містити лише цифри, одну десяткову крапку (\ ``.``) і літеру експоненти (\ ``e``). Перед ним також може бути позитивний (\ ``+``) або негативний (\ ``-``) знак. Будь-яке дійсне ціле число також є дійсним float (див. :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). Дивіться також :ref:`to_float()<class_StringName_method_to_float>`. 
 
 ::
  
@@ -1054,7 +1054,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_hex_number**\ (\ with_prefix\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_StringName_method_is_valid_hex_number>`
 
-Повертає ``true``, якщо цей рядок є дійсним шістнадцятковим числом. Дійсне шістнадцяткове число містить лише цифри або літери ``A`` до ``F`` (великі або малі) і може мати перед собою позитивний (``+``) або негативний (``-``) знак. 
+Повертає ``true``, якщо цей рядок є дійсним шістнадцятковим числом. Дійсне шістнадцяткове число містить лише цифри або літери ``A`` до ``F`` (великі або малі) і може мати перед собою позитивний (\ ``+``) або негативний (\ ``-``) знак. 
 
 Якщо ``with_prefix`` має значення ``true``, шістнадцяткове число має мати префікс ``"0x"``, щоб вважатися дійсним. 
 
@@ -1076,7 +1076,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_html_color**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_html_color>`
 
-Повертаємо ``true``, якщо цей рядок є дійсним кольором в шестигранному HTML позначення. Рядок повинен бути шестигранним значенням (див. :ref:`is_valid_hex_number()<class_StringName_method_is_valid_hex_number>`) або 3, 4, 6 або 8 цифр, і може бути попередньофіксований знаком хеш (``#``. Інші HTML позначення для кольорів, таких як імена або ``hsl()``, не вважаються дійсними. Дивитися також :ref:`Color.html()<class_Color_method_html>`.
+Повертаємо ``true``, якщо цей рядок є дійсним кольором в шестигранному HTML позначення. Рядок повинен бути шестигранним значенням (див. :ref:`is_valid_hex_number()<class_StringName_method_is_valid_hex_number>`) або 3, 4, 6 або 8 цифр, і може бути попередньофіксований знаком хеш (\ ``#``. Інші HTML позначення для кольорів, таких як імена або ``hsl()``, не вважаються дійсними. Дивитися також :ref:`Color.html()<class_Color_method_html>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1090,7 +1090,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 **Застаріло:** Use :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>` instead.
 
-Повертає ``true``, якщо цей рядок є дійсним ідентифікатором. Правильний ідентифікатор може містити лише літери, цифри та підкреслення (``_``), а перший символ не може бути цифрою. 
+Повертає ``true``, якщо цей рядок є дійсним ідентифікатором. Правильний ідентифікатор може містити лише літери, цифри та підкреслення (\ ``_``), а перший символ не може бути цифрою. 
 
 ::
  
@@ -1109,7 +1109,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_int>`
 
-Повертає ``true``, якщо цей рядок представляє дійсне ціле число. Дійсне ціле число містить лише цифри та може мати перед собою позитивний (``+``) або негативний (``-``) знак. Дивіться також :ref:`to_int()<class_StringName_method_to_int>`. 
+Повертає ``true``, якщо цей рядок представляє дійсне ціле число. Дійсне ціле число містить лише цифри та може мати перед собою позитивний (\ ``+``) або негативний (\ ``-``) знак. Дивіться також :ref:`to_int()<class_StringName_method_to_int>`. 
 
 ::
  
@@ -1229,7 +1229,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`int<class_int>` **length**\ (\ ) |const| :ref:`🔗<class_StringName_method_length>`
 
-Повертає кількість символів у рядку. Порожні рядки (``""``) завжди повертають ``0``. Дивіться також :ref:`is_empty()<class_StringName_method_is_empty>`.
+Повертає кількість символів у рядку. Порожні рядки (\ ``""``) завжди повертають ``0``. Дивіться також :ref:`is_empty()<class_StringName_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **match**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_match>`
 
-Чи є простий виразний матч (також називається "glob" або "globbing"), де ``*`` відповідає нульовим або більш довільним символам і ``? `` відповідає будь-якому символу, крім періоду (`` ``. Порожня рядок або порожня експресія завжди оцінюється до ``false``.
+Чи є простий виразний матч (також називається "glob" або "globbing"), де ``*`` відповідає нульовим або більш довільним символам і ``? `` відповідає будь-якому символу, крім періоду (\ `` ``. Порожня рядок або порожня експресія завжди оцінюється до ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1279,7 +1279,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`bool<class_bool>` **matchn**\ (\ expr\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_matchn>`
 
-Чи є простий **case-insensitive** вираз матч, де `` *`` відповідає нульовим або більш довільним символам і ``? `` відповідає будь-якому символу, крім періоду (`` ``. Порожня рядок або порожня експресія завжди оцінюється до ``false``.
+Чи є простий **case-insensitive** вираз матч, де `` *`` відповідає нульовим або більш довільним символам і ``? `` відповідає будь-якому символу, крім періоду (\ `` ``. Порожня рядок або порожня експресія завжди оцінюється до ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1751,9 +1751,9 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **strip_edges**\ (\ left\: :ref:`bool<class_bool>` = true, right\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_StringName_method_strip_edges>`
 
-Роздягання всіх немаркованих символів з початку і кінця рядка. До них відносяться пробіли, вкладки (``\t``), а також нові лінії (``\n`` ``\r``).
+Strips all non-printable characters from the beginning and the end of the string. These include spaces, tabulations (\ ``\t``), and newlines (\ ``\n`` ``\r``).
 
-Якщо ``зліва`` ``false``, ігнорує початок рядка. Так само, якщо ``right`` ``false``, ігнорує кінець рядка.
+If ``left`` is ``false``, ignores the string's beginning. Likewise, if ``right`` is ``false``, ignores the string's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1765,7 +1765,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **strip_escapes**\ (\ ) |const| :ref:`🔗<class_StringName_method_strip_escapes>`
 
-Смуги всі символи втечу з рядка. До них відносяться всі немарковані символи керування першої сторінки таблиці ASCII (значення від 0 до 31), такі як таблифікація (``\t``) та нова лінія (``\n``, ``\r``) символи, але *not*.
+Strips all escape characters from the string. These include all non-printable control characters of the first page of the ASCII table (values from 0 to 31), such as tabulation (\ ``\t``) and newline (\ ``\n``, ``\r``) characters, but *not* spaces.
 
 .. rst-class:: classref-item-separator
 
@@ -1813,7 +1813,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`float<class_float>` **to_float**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_float>`
 
-Перетворює рядок, що представляє десяткове число, у :ref:`float<class_float>`. Цей метод зупиняється на першому нечисловому символі, за винятком першої десяткової коми (``.``) і літери експоненти (``e``). Дивіться також :ref:`is_valid_float()<class_StringName_method_is_valid_float>`. 
+Перетворює рядок, що представляє десяткове число, у :ref:`float<class_float>`. Цей метод зупиняється на першому нечисловому символі, за винятком першої десяткової коми (\ ``.``) і літери експоненти (\ ``e``). Дивіться також :ref:`is_valid_float()<class_StringName_method_is_valid_float>`. 
 
 ::
  
@@ -1833,7 +1833,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`int<class_int>` **to_int**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_int>`
 
-Перетворює рядок, що представляє ціле число, на :ref:`int<class_int>`. Цей метод видаляє будь-який нечисловий символ і зупиняється на першій десятковій комі (``.``). Дивіться також :ref:`is_valid_int()<class_StringName_method_is_valid_int>`. 
+Перетворює рядок, що представляє ціле число, на :ref:`int<class_int>`. Цей метод видаляє будь-який нечисловий символ і зупиняється на першій десятковій комі (\ ``.``). Дивіться також :ref:`is_valid_int()<class_StringName_method_is_valid_int>`. 
 
 ::
  
@@ -2004,7 +2004,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_to_wchar_buffer>`
 
-Перетворює рядок на `широкий характер <https://en.wikipedia.org/wiki/Wide_character>`__ (``wchar_t``, UTF-16 на Windows, UTF-32 на інших платформах) закодовано :ref:`PackedByteArray<class_PackedByteArray>`. This is the inverse of :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
+Перетворює рядок на `широкий характер <https://en.wikipedia.org/wiki/Wide_character>`__ (\ ``wchar_t``, UTF-16 на Windows, UTF-32 на інших платформах) закодовано :ref:`PackedByteArray<class_PackedByteArray>`. This is the inverse of :ref:`PackedByteArray.get_string_from_wchar()<class_PackedByteArray_method_get_string_from_wchar>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2138,7 +2138,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **validate_node_name**\ (\ ) |const| :ref:`🔗<class_StringName_method_validate_node_name>`
 
-Повертає копію рядка з усіма символами, які не дозволені в :ref:`Node.name<class_Node_property_name>` (``.`` ``:`` ``@`` ``/`` ``"`` ``%``) замінено підкресленням.
+Повертає копію рядка з усіма символами, які не дозволені в :ref:`Node.name<class_Node_property_name>` (\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``) замінено підкресленням.
 
 .. rst-class:: classref-item-separator
 
@@ -2150,7 +2150,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`String<class_String>` **xml_escape**\ (\ escape_quotes\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_StringName_method_xml_escape>`
 
-Повертає копію рядка зі спеціальними символами, екранованими за допомогою стандарту XML. Якщо ``escape_quotes`` має значення ``true``, символи одинарних лапок (``'``) і подвійних лапок (``"``) також екрануються.
+Повертає копію рядка зі спеціальними символами, екранованими за допомогою стандарту XML. Якщо ``escape_quotes`` має значення ``true``, символи одинарних лапок (\ ``'``) і подвійних лапок (\ ``"``) також екрануються.
 
 .. rst-class:: classref-item-separator
 

@@ -112,7 +112,7 @@ Aplica un algoritmo de embudo al corredor de ruta sin procesar encontrado por el
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters3D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Centra cada posición de la ruta en el medio del borde del polígono de la malla de navegación recorrido. Esto crea mejores rutas para diseños basados en tiles o cuadrículas que restringen el movimiento al centro de las celdas.
+Centers every position in the middle of the traveled navigation mesh's polygon edge. This creates better paths for tile- or grid-based layouts that restrict the movement to the cells' centers.
 
 .. _class_NavigationPathQueryParameters3D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -385,7 +385,7 @@ The pathfinding algorithm used in the path query.
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-The path simplification amount in worlds units.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 

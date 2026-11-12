@@ -840,7 +840,7 @@ Questo metodo deve restituire ``false`` per inoltrare l':ref:`InputEvent<class_I
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_breakpoints**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_breakpoints>`
 
-Questo è per gli editor che modificano oggetti basati su script. È possibile restituire un elenco di punti di interruzione nel formato (``script:riga``), ad esempio: ``res://percorso_dello_script.gd:25``.
+Questo è per gli editor che modificano oggetti basati su script. È possibile restituire un elenco di punti di interruzione nel formato (\ ``script:riga``), ad esempio: ``res://percorso_dello_script.gd:25``.
 
 .. rst-class:: classref-item-separator
 
@@ -851,6 +851,8 @@ Questo è per gli editor che modificano oggetti basati su script. È possibile r
 .. rst-class:: classref-method
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
+
+**Deprecato:** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` of a main screen dock.
 
 Sovrascrivi questo metodo nella tua estensione per restituire una :ref:`Texture2D<class_Texture2D>` per fornirgli un'icona.
 
@@ -891,9 +893,11 @@ Idealmente, l'icona dell'estensione dovrebbe essere bianca con uno sfondo traspa
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-Sovrascrivi questo metodo nella tua estensione per fornire il nome dell'estensione quando viene visualizzato nell'editor Godot.
+Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
 
-Per le estensioni della schermata principale, il nome appare nella parte superiore dello schermo, a destra dei pulsanti "2D", "3D", "Script", "Gioco" e "Asset Store".
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+
+\ **Note:** Main screen plugins should instead use :ref:`EditorDock.title<class_EditorDock_property_title>` of a main screen dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,32 +1005,11 @@ Implementa questa funzione se la tua estensione modifica un tipo specifico di og
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-Restituisce ``true`` se questo è un'estensione dell'editor per la schermata principale (va nel selettore dell'area di lavoro insieme a **2D**, **3D**, **Script**, **Gioco** e **Asset Store**).
+**Deprecato:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_MAIN_SCREEN<class_EditorDock_constant_DOCK_SLOT_MAIN_SCREEN>`.
 
-Quando l'area di lavoro dell'estensione è selezionata, le altre estensioni nella schermata principale saranno nascosti, ma l'estensione non apparirà automaticamente. Deve essere aggiunta come figlio di :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` e resa visibile all'interno di :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
+Return ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
 
-Usa :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` e :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` per personalizzare l'aspetto del pulsante dell'estensione.
-
-::
-
-    var plugin_control
-
-    func _enter_tree():
-        plugin_control = preload("my_plugin_control.tscn").instantiate()
-        EditorInterface.get_editor_main_screen().add_child(plugin_control)
-        plugin_control.hide()
-
-    func _has_main_screen():
-        return true
-
-    func _make_visible(visible):
-        plugin_control.visible = visible
-
-    func _get_plugin_name():
-        return "My Super Cool Plugin 3000"
-
-    func _get_plugin_icon():
-        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+You can add a main screen dock by using :ref:`EditorDock<class_EditorDock>` with :ref:`EditorDock.DOCK_LAYOUT_MAIN_SCREEN<class_EditorDock_constant_DOCK_LAYOUT_MAIN_SCREEN>` as available layout.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,13 +1131,13 @@ Aggiunge un'estensione al menu contestuale. ``slot`` è il menu contestuale in c
 
 :ref:`Button<class_Button>` **add_control_to_bottom_panel**\ (\ control\: :ref:`Control<class_Control>`, title\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>` = null\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_bottom_panel>`
 
-**Deprecato:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
+**Deprecato:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`EditorDock.DOCK_SLOT_BOTTOM<class_EditorDock_constant_DOCK_SLOT_BOTTOM>`.
 
-Aggiunge un controllo al pannello inferiore (insieme a Output, Debug, Animazione, ecc.). Restituisce un riferimento a un pulsante che è fuori dall'albero di scene. Sta a te nascondere/mostrare il pulsante quando necessario. Quando l'estensione è disattivata, assicurati di rimuovere il tuo controllo personalizzato con :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` e liberarlo con :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` è una scorciatoia che, una volta attivata, cambia la visibilità del pannello inferiore. L'oggetto scorciatoia viene impostato solo quando questo controllo viene aggiunto al pannello inferiore.
+\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
 
-\ **Note** Vedi i tasti di scelta rapida predefiniti del pannello inferiore nelle Impostazioni dell'editor per ispirazione. Per convenzione, usano tutti il modificatore :kbd:`Alt`.
+\ **Note:** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use the :kbd:`Alt` modifier.
 
 .. rst-class:: classref-item-separator
 

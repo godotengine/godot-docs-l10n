@@ -14,9 +14,9 @@ StreamPeerTLS
 Опис
 --------
 
-Потоковий одноліток, який ручить підключенням TLS. Цей об'єкт може бути використаний для підключення до сервера TLS або прийняття єдиного підключення клієнтів TLS.
+A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
 
-\ **Примітка:** При експорті до Android, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою однієї кнопки розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

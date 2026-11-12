@@ -136,7 +136,7 @@ RDPipelineRasterizationState
 - |void| **set_depth_bias_slope_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_slope_factor**\ (\ )
 
-套用至每個多邊形深度斜率的恆定縮放。在 :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>` 之前應用。
+A constant scale applied to the slope of each polygon's depth. Applied before :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
 
 .. rst-class:: classref-item-separator
 

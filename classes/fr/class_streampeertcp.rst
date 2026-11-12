@@ -14,9 +14,9 @@ Un pair de flux qui gère des connexions TCP.
 Description
 -----------
 
-Un pair de flux qui gère des connexions TCP. Cet objet peut être utilisé pour se connecter à des serveurs TCP, ou est également renvoyé par un serveur TCP.
+A stream peer that handles TCP connections. This object can be used to connect to TCP servers, or also is returned by a TCP server.
 
-\ **Note :** Lors de l'export vers Android, assurez-vous d'activer la permission ``INTERNET`` dans le préréglage d'export Android avant d'exporter le projet ou en utilisant le déploiement en un clic. Sinon, la communication réseau de tout type sera bloquée par Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

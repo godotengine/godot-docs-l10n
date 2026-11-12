@@ -75,9 +75,11 @@ Descripciones de Propiedades
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-Si es ``true``, el solucionador recupera el eje del hueso de la pose del hueso en cada fotograma.
+If ``true``, the solver retrieves the bone axis from the bone pose every frame.
 
-Si es ``false``, el solucionador recupera el eje del hueso de la posición de reposo del hueso y lo guarda en caché, lo que aumenta ligeramente el rendimiento, pero los cambios de posición en la pose del hueso realizados antes de procesar este **IKModifier3D** se ignoran.
+If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+
+\ **Note:** The rendered gizmo's forward vector (a line between parent and child joints) will only respect the bone pose when this modifier is active.
 
 .. rst-class:: classref-section-separator
 

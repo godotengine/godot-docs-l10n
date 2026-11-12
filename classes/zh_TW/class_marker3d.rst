@@ -14,7 +14,7 @@ Marker3D
 說明
 ----
 
-用於編輯的通用 3D 位置提示。類似於普通的 :ref:`Node3D<class_Node3D>`\ ，但它始終在 3D 編輯器中顯示十字。
+Generic 3D position hint for editing. This is like a plain :ref:`Node3D<class_Node3D>`, but it displays as a cross in the 3D editor.
 
 .. rst-class:: classref-reftable-group
 

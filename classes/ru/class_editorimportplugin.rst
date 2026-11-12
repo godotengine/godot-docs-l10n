@@ -387,13 +387,13 @@ EditorImportPlugins работают, связываясь с определен
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-Импортирует ``source_file`` с указанным импортом ``options``. Должен возвращать :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, если импорт выполнен успешно, другие значения указывают на сбой.
+Imports ``source_file`` with the specified import ``options``. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful.
 
-Импортированный ресурс должен быть сохранен в ``save_path + "." + _get_save_extension()``. Если для :doc:`тега feature <../tutorials/export/feature_tags>` предпочтителен другой вариант, сохраните вариант в ``save_path + "." + tag + "." + _get_save_extension()`` и добавьте тег feature в ``platform_variants``.
+The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
 
-Если в файловой системе ресурсов (``res://``) генерируются дополнительные файлы ресурсов, добавьте их полный путь в ``gen_files``, чтобы редактор знал, что они зависят от ``source_file``.
+If additional resource files are generated in the resource filesystem (\ ``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
 
-Этот метод необходимо переопределить для выполнения фактической работы по импорту. Пример переопределения этого метода см. в описании этого класса.
+This method must be overridden to do the actual importing work. See this class's description for an example of overriding this method.
 
 .. rst-class:: classref-item-separator
 

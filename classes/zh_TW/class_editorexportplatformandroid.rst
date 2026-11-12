@@ -57,6 +57,8 @@ EditorExportPlatformAndroid
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`gradle_build/min_sdk<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`                                                     |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`gradle_build/minification<class_EditorExportPlatformAndroid_property_gradle_build/minification>`                                           |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`gradle_build/target_sdk<class_EditorExportPlatformAndroid_property_gradle_build/target_sdk>`                                               |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`                                   |
@@ -607,7 +609,7 @@ EditorExportPlatformAndroid
 
 :ref:`int<class_int>` **gradle_build/export_format** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/export_format>`
 
-應用程式匯出格式（\*.apk 或 \*.aab）。
+Application export format (\ ``*.apk``, ``*.aab``, or ``*.aar``).
 
 .. rst-class:: classref-item-separator
 
@@ -632,6 +634,22 @@ Gradle 建置目錄的路徑。如果留空，則將使用 ``res://android``\ �
 :ref:`String<class_String>` **gradle_build/min_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`
 
 執行該應用所需的最低 Android API 等級（Gradle 建置時使用）。見 `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformAndroid_property_gradle_build/minification:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **gradle_build/minification** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/minification>`
+
+If ``true``, enables R8 code minification and obfuscation for release Gradle builds.
+
+This reduces application size, removes unused bytecode, and complies with Google Play Console optimization guidelines.
+
+\ **Note:** Only applies to release builds (**Export With Debug** unchecked) and requires :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1487,7 +1505,11 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 自訂許可權字串陣列。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

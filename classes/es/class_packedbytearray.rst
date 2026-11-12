@@ -12,7 +12,7 @@ Un array empaquetado de bytes.
 Descripción
 ----------------------
 
-An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
+An array specifically designed to hold bytes (integers between ``0`` and ``255``). Packs data tightly, so it saves memory for large array sizes.
 
 \ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
@@ -241,7 +241,25 @@ Construye un **PackedByteArray** como una copia del **PackedByteArray** dado.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Construye un nuevo **PackedByteArray**. Opcionalmente, puedes pasarle un :ref:`Array<class_Array>` genérico que se convertirá.
+Constructs a new **PackedByteArray** from a generic :ref:`Array<class_Array>`.
+
+Boolean ``false`` and ``true`` are converted to ``0`` and ``1`` respectively.
+
+Integers from the generic Array outside the byte range will overflow and roll over.
+
+Floating-point numbers from the generic Array are converted to integers by truncating the decimal part. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Strings from the generic Array are converted to integers using :ref:`String.to_int()<class_String_method_to_int>`, with ``0`` as a fallback value if no integer can be parsed from the string. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Other values from the generic Array that cannot be converted into an integer are initialized to ``0``.
+
+::
+
+    print(PackedByteArray([true, false])) # Prints [1, 0]
+    print(PackedByteArray([-1, 0, 255, 256, 300])) # Prints [255, 0, 255, 0, 44]
+    print(PackedByteArray([-1.0, 0.0, 1.0, 1.9, 2.0, 500.0])) # Prints [255, 0, 1, 1, 2, 244]
+    print(PackedByteArray(["", "10", "123.456", "-1 but valid", "invalid"])) # Prints [0, 10, 123, 255, 0]
+    print(PackedByteArray([Object.new(), Callable(), Signal()])) # Prints [0, 0, 0]
 
 .. rst-class:: classref-section-separator
 
@@ -540,7 +558,7 @@ Devuelve un nuevo **PackedByteArray** con los datos descomprimidos. Establece ``
 
 Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows it's output buffer size from the beginning.
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows the size of its output buffer from the beginning.
 
 GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
@@ -700,7 +718,7 @@ Codifica un número entero sin signo de 64 bits como bytes en el índice de ``by
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-Codifica un :ref:`Variant<class_Variant>` en el índice de ``byte_offset`` bytes. Se debe asignar un espacio suficiente, dependiendo del tamaño del variant codificado. Si ``allow_objects`` es ``false``, los valores derivados de :ref:`Object<class_Object>` no están permitidos y, en su lugar, se serializarán como ID-only.
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only. Returns the length of the encoded data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +846,7 @@ Convierte un array codificado en UTF-32 a :ref:`String<class_String>`. Devuelve 
 
 :ref:`String<class_String>` **get_string_from_wchar**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_wchar>`
 
-Convierte un array codificado con caracteres anchos (``wchar_t``, UTF-16 en Windows, UTF-32 en otras plataformas) a :ref:`String<class_String>`. Devuelve una string vacía si el array de origen no es una string ancha válida. Esto es lo inverso de :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
+Convierte un array codificado con caracteres anchos (\ ``wchar_t``, UTF-16 en Windows, UTF-32 en otras plataformas) a :ref:`String<class_String>`. Devuelve una string vacía si el array de origen no es una string ancha válida. Esto es lo inverso de :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +909,7 @@ Devuelve una representación hexadecimal de este array como una :ref:`String<cla
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_insert>`
 
-Inserta un nuevo elemento en una posición determinada del array. La posición debe ser válida, o al final del array (``idx == size()``).
+Inserta un nuevo elemento en una posición determinada del array. La posición debe ser válida, o al final del array (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +945,7 @@ Concatena un elemen al final del array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-Elimina un elemento del array por índice.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

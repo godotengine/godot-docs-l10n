@@ -46,6 +46,8 @@ Proprietà
    +--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`StringName<class_StringName>`              | :ref:`autoplay<class_AnimationPlayer_property_autoplay>`                                                           | ``&""``   |
    +--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                          | :ref:`clear_cache_on_stop<class_AnimationPlayer_property_clear_cache_on_stop>`                                     | ``true``  |
+   +--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`StringName<class_StringName>`              | :ref:`current_animation<class_AnimationPlayer_property_current_animation>`                                         | ``&""``   |
    +--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`float<class_float>`                        | :ref:`current_animation_length<class_AnimationPlayer_property_current_animation_length>`                           |           |
@@ -285,6 +287,23 @@ Se in riproduzione, la chiave dell'animazione attuale, altrimenti, l'ultima anim
 - :ref:`StringName<class_StringName>` **get_autoplay**\ (\ )
 
 La chiave dell'animazione da riprodurre quando la scena è caricata.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AnimationPlayer_property_clear_cache_on_stop:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **clear_cache_on_stop** = ``true`` :ref:`🔗<class_AnimationPlayer_property_clear_cache_on_stop>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_clear_cache_on_stop_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_clear_cache_on_stop_enabled**\ (\ )
+
+If ``true``, the animation track cache is cleared when the animation is stopped or the playback queue becomes empty. If ``false``, the track cache is preserved, which can improve performance when animations are frequently started and stopped.
 
 .. rst-class:: classref-item-separator
 
@@ -694,9 +713,11 @@ L'opzione ``from_end`` ha effetto solo quando si passa a una nuova traccia di an
 
 |void| **play_backwards**\ (\ name\: :ref:`StringName<class_StringName>` = &"", custom_blend\: :ref:`float<class_float>` = -1\ ) :ref:`🔗<class_AnimationPlayer_method_play_backwards>`
 
-Riproduce l'animazione con la chiave ``name`` al rovescio.
+Plays the animation with key ``name`` in reverse.
 
-Questo metodo è una abbreviazione per :ref:`play()<class_AnimationPlayer_method_play>` con ``custom_speed = -1.0`` e ``from_end = true``, quindi vedi la sua descrizione per ulteriori informazioni.
+This method is a shorthand for :ref:`play()<class_AnimationPlayer_method_play>` with ``custom_speed = -1.0`` and ``from_end = true``, so see its description for more information.
+
+\ **Note:** Continuous tracks, including value tracks with :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>`, are simply interpolated on the reversed timeline, while value tracks with :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` apply a key only in the frame it is passed, so the value held between two keys can differ from forward playback.
 
 .. rst-class:: classref-item-separator
 

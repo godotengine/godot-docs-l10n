@@ -16,7 +16,7 @@ OpenXRMarkerTracker
 描述
 ----
 
-用于 OpenXR 空间实体标记跟踪扩展的空间实体跟踪器。这些跟踪器可以识别现实空间中由诸如二维码或 Aruco 码等视觉标记检测到的实体，并将它们的位置映射到虚拟空间。
+Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or ArUco code, and map their location to our virtual space.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ OpenXRMarkerTracker
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-该标记的标记 ID，仅适用于 Aruco 和 AprilTag 标记。对于二维码标记，请调用 :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>`\ 。
+The marker ID for this marker, this is only returned for ArUco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
 
 .. rst-class:: classref-item-separator
 

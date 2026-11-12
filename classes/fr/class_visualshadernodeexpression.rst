@@ -18,7 +18,7 @@ Description
 
 Custom Godot Shading Language expression, with a custom number of input and output ports.
 
-The provided code is directly injected into the graph's matching shader function (``vertex``, ``fragment``, or ``light``), so it cannot be used to declare functions, varyings, uniforms, or global constants. See :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` for such global definitions.
+The provided code is directly injected into the graph's matching shader function (\ ``vertex``, ``fragment``, or ``light``), so it cannot be used to declare functions, varyings, uniforms, or global constants. See :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` for such global definitions.
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ Descriptions des propriétés
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-An expression in Godot Shading Language, which will be injected at the start of the graph's matching shader function (``vertex``, ``fragment``, or ``light``), and thus cannot be used to declare functions, varyings, uniforms, or global constants.
+An expression in Godot Shading Language, which will be injected at the start of the graph's matching shader function (\ ``vertex``, ``fragment``, or ``light``), and thus cannot be used to declare functions, varyings, uniforms, or global constants.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

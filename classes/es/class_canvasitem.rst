@@ -654,7 +654,9 @@ El color aplicado a este **CanvasItem**. Esta propiedad afecta a los **CanvasIte
 - |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
 - :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
 
-Si está habilitado, el oversampling para este **CanvasItem** se ajusta automáticamente con la escala.
+If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale. This makes fonts and :ref:`DPITexture<class_DPITexture>` images automatically re-render to match the actual scale they are drawn at, for crisper visuals. This has a performance impact on the CPU every time the node's scale changes, so it is disabled by default.
+
+\ **Note:** For :ref:`Control<class_Control>` nodes with :ref:`Control.offset_transform_enabled<class_Control_property_offset_transform_enabled>` set to ``true``, scale-based oversampling is only effective if :ref:`Control.offset_transform_visual_only<class_Control_property_offset_transform_visual_only>` is ``false``. This ensures there is no performance overhead when using visual-only offset transforms (as often used in animations).
 
 .. rst-class:: classref-item-separator
 
@@ -777,9 +779,9 @@ Si es ``true``, el :ref:`material<class_CanvasItem_property_material>` del eleme
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-La capa de renderizado en la que este **CanvasItem** es dibujado por nodos :ref:`Viewport<class_Viewport>`. Un :ref:`Viewport<class_Viewport>` dibujará un **CanvasItem** si comparte una capa con su máscara de recorte del lienzo y todos sus padres comparten también esa capa.
+The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask. For an easier way to change this value from a script, see :ref:`set_visibility_layer_bit()<class_CanvasItem_method_set_visibility_layer_bit>`.
 
-\ **Nota:** Un **CanvasItem** no hereda las capas de visibilidad de sus padres. Esto significa que si un **CanvasItem** padre no tiene todas las mismas capas que su hijo, el hijo puede no ser visible incluso si tanto el padre como el hijo tienen :ref:`visible<class_CanvasItem_property_visible>` configurado en ``true``. Por ejemplo, si un padre tiene la capa 1 y un hijo tiene la capa 2, el hijo no será visible en un :ref:`Viewport<class_Viewport>` con la máscara de recorte del lienzo configurada en la capa 1 o 2 (ver :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Para asegurar que tanto el padre como el hijo sean visibles, el padre debe tener ambas capas 1 y 2, o el hijo debe tener :ref:`top_level<class_CanvasItem_property_top_level>` configurado en ``true``.
+\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -815,11 +817,13 @@ If ``true``, this **CanvasItem** may be drawn. Whether this **CanvasItem** is ac
 - |void| **set_y_sort_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_y_sort_enabled**\ (\ )
 
-Si es ``true``, este y los nodos **CanvasItem** hijos con una posición Y mayor se renderizan por delante de los nodos con una posición Y menor. Si ``false``, este y los nodos **CanvasItem** hijos se renderizan normalmente en orden del árbol de escena.
+If ``true``, this and child **CanvasItem** nodes with a higher Y position are rendered in front of nodes with a lower Y position. If ``false``, this and child **CanvasItem** nodes are rendered normally in scene tree order.
 
-Con el Y-sort activado en un nodo padre ('A') pero desactivado en un nodo hijo ('B'), el nodo hijo ('B') se ordena pero sus propios hijos ('C1', 'C2', etc.) se renderizan juntos en la misma posición Y que el nodo hijo ('B'). Esto permite organizar el orden de renderizado de una escena sin modificar el árbol de escenas.
+With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.
 
-Los nodos solo se ordenan entre sí si están en el mismo :ref:`z_index<class_CanvasItem_property_z_index>`.
+Nodes sort relative to each other only if they are on the same :ref:`z_index<class_CanvasItem_property_z_index>`.
+
+\ **Note:** Y-sorting does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +842,7 @@ Los nodos solo se ordenan entre sí si están en el mismo :ref:`z_index<class_Ca
 
 Si es ``true``, el índice Z final de este nodo es relativo al índice Z de su padre.
 
-Por ejemplo, si :ref:`z_index<class_CanvasItem_property_z_index>` es ``2`` y el índice Z final de su padre es ``3``, entonces el índice Z final de este nodo será ``5`` (``2 + 3``).
+Por ejemplo, si :ref:`z_index<class_CanvasItem_property_z_index>` es ``2`` y el índice Z final de su padre es ``3``, entonces el índice Z final de este nodo será ``5`` (\ ``2 + 3``).
 
 .. rst-class:: classref-item-separator
 
@@ -855,9 +859,9 @@ Por ejemplo, si :ref:`z_index<class_CanvasItem_property_z_index>` es ``2`` y el 
 - |void| **set_z_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_index**\ (\ )
 
-El orden en el que se dibuja este nodo. Un nodo con un índice Z más alto se mostrará delante de los demás. Debe estar entre :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` y :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
+The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` and :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
 
-\ **Nota:** El índice Z **no** afecta el orden en el que se procesan los nodos **CanvasItem** ni la forma en que se manejan los eventos de entrada. Esto es especialmente importante tenerlo en cuenta para los nodos :ref:`Control<class_Control>`.
+\ **Note:** The Z index does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-section-separator
 
@@ -940,15 +944,15 @@ Draws a string first character outline using a custom font. If ``oversampling`` 
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Dibuja un círculo, con ``position`` definido en el espacio local. Véase también :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` y :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-Si ``filled`` es ``true``, el círculo se rellenará con el ``color`` especificado. Si ``filled`` es ``false``, el círculo se dibujará como un trazo con el ``color`` y ``width`` especificados.
+If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
 
-Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Nota:** ``width`` solo es efectivo si ``filled`` es ``false``.
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -976,15 +980,15 @@ Dibuja un polígono coloreado de cualquier número de puntos, convexo o cóncavo
 
 |void| **draw_dashed_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, dash\: :ref:`float<class_float>` = 2.0, aligned\: :ref:`bool<class_bool>` = true, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_dashed_line>`
 
-Dibuja una línea discontinua desde un punto 2D hasta otro, con un color y ancho dados. Las posiciones ``from`` y ``to`` se definen en el espacio local. Véase también :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` y :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+Draws a dashed line from a 2D point to another, with a given color and width. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
 
-Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las partes de la línea permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ ``dash`` es la longitud de cada guion en píxeles, siendo la brecha entre cada guion de la misma longitud. Si ``aligned`` es ``true``, la longitud del primer y último guion puede acortarse o alargarse para permitir que la línea comience y termine en los puntos precisos definidos por ``from`` y ``to``. Ambos extremos son siempre simétricos cuando ``aligned`` es ``true``. Si ``aligned`` es ``false``, todos los guiones tendrán la misma longitud, pero la línea puede parecer incompleta al final debido a que la longitud del guion no divide uniformemente la longitud de la línea. Solo se dibujan guiones completos cuando ``aligned`` es ``false``.
+\ ``dash`` is the length of each dash in pixels, with the gap between each dash being the same length. If ``aligned`` is ``true``, the length of the first and last dashes may be shortened or lengthened to allow the line to begin and end at the precise points defined by ``from`` and ``to``. Both ends are always symmetrical when ``aligned`` is ``true``. If ``aligned`` is ``false``, all dashes will have the same length, but the line may appear incomplete at the end due to the dash length not dividing evenly into the line length. Only full dashes are drawn when ``aligned`` is ``false``.
 
-Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1113,11 +1117,11 @@ El valor de ``pixel_range`` debe ser el mismo que se utilizó durante la generac
 
 |void| **draw_multiline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline>`
 
-Dibuja múltiples líneas desconectadas con un ``width`` y ``color`` uniformes. Cada línea se define por dos puntos consecutivos del array ``points`` en el espacio local, es decir, el segmento i-ésimo consiste en los puntos finales ``points[2 * i]`` y ``points[2 * i + 1]``. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas interconectadas, usa :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` en su lugar.
+Draws multiple disconnected lines with a uniform ``width`` and ``color``. Each line is defined by two consecutive points from ``points`` array in local space, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` instead.
 
-Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1129,11 +1133,11 @@ Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cua
 
 |void| **draw_multiline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline_colors>`
 
-Dibuja múltiples líneas desconectadas con un ``width`` uniforme y coloración segmento por segmento. Cada segmento se define por dos puntos consecutivos del array ``points`` en el espacio local y un color correspondiente del array ``colors``, es decir, el segmento i-ésimo consiste en los puntos finales ``points[2 * i]`` y ``points[2 * i + 1]`` y tiene el color ``colors[i]``. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas interconectadas, usa :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` en su lugar.
+Draws multiple disconnected lines with a uniform ``width`` and segment-by-segment coloring. Each segment is defined by two consecutive points from ``points`` array in local space and a corresponding color from ``colors`` array, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints and has ``colors[i]`` color. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` instead.
 
-Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cua
 
 |void| **draw_multiline_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_multiline_string>`
 
-Breaks ``text`` into lines and draws it using the specified ``font`` at the ``pos`` in local space (top-left corner). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Breaks ``text`` into lines and draws it using the specified ``font`` at the ``pos`` in local space. ``pos.x`` indicates the left side of the column of text (including the full ``width`` even if the text is narrower, and regardless of ``alignment``); ``pos.y`` indicates the vertical position of the baseline of the first line of text. The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,15 +1245,15 @@ Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for
 
 |void| **draw_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_rect>`
 
-Dibuja un rectángulo. Si ``filled`` es ``true``, el rectángulo se rellenará con el ``color`` especificado. Si ``filled`` es ``false``, el rectángulo se dibujará como un trazo con el ``color`` y ``width`` especificados. El ``rect`` se especifica en el espacio local. Véase también :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Draws a rectangle. If ``filled`` is ``true``, the rectangle will be filled with the ``color`` specified. If ``filled`` is ``false``, the rectangle will be drawn as a stroke with the ``color`` and ``width`` specified. The ``rect`` is specified in local space. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Nota:** ``width`` solo es efectivo si ``filled`` es ``false``.
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
-\ **Nota:** Los rectángulos sin relleno dibujados con un ``width`` negativo pueden no mostrarse perfectamente. Por ejemplo, las esquinas pueden faltar o ser más brillantes debido a la superposición de líneas (para un ``color`` translúcido).
+\ **Note:** Unfilled rectangles drawn with a negative ``width`` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent ``color``).
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1476,7 @@ Devuelve la matriz de transformación global de este elemento, es decir, la tran
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-Devuelve la transformación del sistema de coordenadas local de este **CanvasItem** al sistema de coordenadas del :ref:`Viewport<class_Viewport>`.
+Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -1734,7 +1738,7 @@ Si es ``true``, el nodo recibirá :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Can
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-Establece o borra bits individuales en la capa de visibilidad de renderizado. Esto simplifica la edición de la capa de visibilidad de este **CanvasItem**.
+Set/clear individual bits on the rendering visibility layer (``layer`` is between ``0`` and ``31``). This simplifies editing this **CanvasItem**'s visibility layer compared to assigning the :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 

@@ -314,7 +314,7 @@ Renvoie ``true`` si le tableau contient la valeur ``value``.
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_insert>`
 
-Insérer un nouvel élément à une position donnée dans le tableau. La position doit être valide, ou à la fin du tableau (``idx == size()``).
+Insérer un nouvel élément à une position donnée dans le tableau. La position doit être valide, ou à la fin du tableau (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Ajoute un élément à la fin du tableau.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat64Array_method_remove_at>`
 
-Retire l'élément du tableau à l'index donné.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

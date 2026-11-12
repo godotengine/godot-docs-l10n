@@ -16,7 +16,7 @@ Description
 
 Base class for WebSocket server and client, allowing them to be used as multiplayer peer for the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,11 @@ Descriptions des propriétés
 
 Les en-têtes supplémentaires à utiliser pendant la poignée de main. Voir :ref:`WebSocketPeer.handshake_headers<class_WebSocketPeer_property_handshake_headers>` pour plus de détails.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +173,11 @@ The outbound buffer size for connected peers. See :ref:`WebSocketPeer.outbound_b
 
 The supported WebSocket sub-protocols. See :ref:`WebSocketPeer.supported_protocols<class_WebSocketPeer_property_supported_protocols>` for more details.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

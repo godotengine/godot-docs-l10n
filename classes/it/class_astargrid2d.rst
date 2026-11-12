@@ -561,7 +561,7 @@ Se il punto ``from_id`` non è disabilitato, non esiste un percorso valido verso
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_point_data_in_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_get_point_data_in_region>`
 
-Restituisce un array di dizionari con i dati dei punti (``id``: :ref:`Vector2i<class_Vector2i>`, ``position``: :ref:`Vector2<class_Vector2>`, ``solid``: :ref:`bool<class_bool>`, ``weight_scale``: :ref:`float<class_float>`) all'interno della regione ``region``.
+Restituisce un array di dizionari con i dati dei punti (\ ``id``: :ref:`Vector2i<class_Vector2i>`, ``position``: :ref:`Vector2<class_Vector2>`, ``solid``: :ref:`bool<class_bool>`, ``weight_scale``: :ref:`float<class_float>`) all'interno della regione ``region``.
 
 .. rst-class:: classref-item-separator
 

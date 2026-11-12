@@ -276,7 +276,7 @@ Si ``true``, la caméra ne bouge que lorsqu'elle atteint les marges horizontales
 - |void| **set_drag_horizontal_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_horizontal_offset**\ (\ )
 
-Le décalage de glissage horizontal relatif de la caméra entre les marges de glissage droite (``-1``) et gauche (``1``).
+Le décalage de glissage horizontal relatif de la caméra entre les marges de glissage droite (\ ``-1``) et gauche (\ ``1``).
 
 \ **Note :** Utilisé pour régler le décalage initial du glissement horizontal, déterminer le décalage actuel, ou forcer le décalage actuel. Il n'est pas automatiquement mis à jour lorsque :ref:`drag_horizontal_enabled<class_Camera2D_property_drag_horizontal_enabled>` vaut ``true`` ou que les marges sont modifiées.
 
@@ -363,7 +363,7 @@ Si ``true``, la caméra ne bouge que lorsqu'elle atteint les marges verticales (
 - |void| **set_drag_vertical_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_vertical_offset**\ (\ )
 
-Le décalage de glissement vertical relatif de la caméra entre le bas (``-1``) et le dessus (``1``)) des marges de glissement.
+Le décalage de glissement vertical relatif de la caméra entre le bas (\ ``-1``) et le dessus (\ ``1``)) des marges de glissement.
 
 \ **Note :** Utilisé pour régler le décalage initial du glissement vertical, déterminer le décalage courant, ou forcer le décalage courant. Il n'est pas automatiquement mis à jour lorsque :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` vaut ``true`` ou que les marges de glissement sont modifiées.
 

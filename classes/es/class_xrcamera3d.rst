@@ -14,11 +14,9 @@ Un nodo de cámara que se posiciona automáticamente basándose en datos de rast
 Descripción
 ----------------------
 
-Un nodo de cámara que se posiciona automáticamente según los datos de rastreo XR.
+A camera node which automatically positions itself based on XR tracking data.
 
-A diferencia de :ref:`XRController3D<class_XRController3D>`, el hilo de renderizado tiene acceso a datos de seguimiento más actualizados, por lo que la ubicación del nodo **XRCamera3D** puede presentar un ligero desfase (de unos pocos milisegundos) respecto a la utilizada para el renderizado.
-
-\ **Nota:** Si :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` es ``true``, la mayoría de las propiedades de la cámara son reemplazadas por la :ref:`XRInterface<class_XRInterface>` activa. Las únicas propiedades fiables son los planos cercano y lejano.
+\ **Note:** Due to the nature of headsets, camera positioning needs to update every frame even when your game is paused. :ref:`Node.process_mode<class_Node_property_process_mode>` must be set to :ref:`Node.PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -35,9 +33,37 @@ Propiedades
 .. table::
    :widths: auto
 
-   +---------------------------------------------------------------------+----------------------------+-------------------------------------------------------------------------------+
-   | :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` | physics_interpolation_mode | ``2`` (overrides :ref:`Node<class_Node_property_physics_interpolation_mode>`) |
-   +---------------------------------------------------------------------+----------------------------+-------------------------------------------------------------------------------+
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` | physics_interpolation_mode                        | ``2`` (overrides :ref:`Node<class_Node_property_physics_interpolation_mode>`) |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`ProcessMode<enum_Node_ProcessMode>`                           | process_mode                                      | ``3`` (overrides :ref:`Node<class_Node_property_process_mode>`)               |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`                                 | :ref:`tracker<class_XRCamera3D_property_tracker>` | ``&"head"``                                                                   |
+   +---------------------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Descripciones de Propiedades
+--------------------------------------------------------
+
+.. _class_XRCamera3D_property_tracker:
+
+.. rst-class:: classref-property
+
+:ref:`StringName<class_StringName>` **tracker** = ``&"head"`` :ref:`🔗<class_XRCamera3D_property_tracker>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
+- :ref:`StringName<class_StringName>` **get_tracker**\ (\ )
+
+The name of the camera tracker we're bound to. Which trackers are available is not known during design time.
+
+The default tracker refers to the HMD position of the main player. Consult the documentation of the :ref:`XRInterface<class_XRInterface>` for any additional trackers. There may be additional tracked headsets for multiplayer systems or a tracker may be available for a physical camera in a mixed reality scenario.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

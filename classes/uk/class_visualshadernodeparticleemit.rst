@@ -14,7 +14,7 @@ VisualShaderNodeParticleEmit
 Опис
 --------
 
-Цей вузол внутрішніх дзвінків ``emit_subparticle`` метод шейдера. Він випромінює частинку з настроченого під-випромінювача, а також дозволяє налаштовувати, як його вдається. Вимагає суб-екміттера, призначеного для вузла частинок з цим відтінком.
+This node calls the internal ``emit_subparticle`` method. It will emit a particle from the configured sub-emitter and also allows to customize how it's emitted. Requires a sub-emitter assigned to the particles node that is using this shader.
 
 .. rst-class:: classref-reftable-group
 

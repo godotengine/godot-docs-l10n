@@ -75,9 +75,11 @@ IKModifier3D
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-Якщо ``true``, розв'язувач отримує вісь кістки з пози кістки кожного кадру.
+If ``true``, the solver retrieves the bone axis from the bone pose every frame.
 
-Якщо ``false``, розв'язувач отримує вісь кістки з залишку кістки та кешує її, що дещо підвищує продуктивність, але зміни положення в позі кістки, внесені до обробки цього **IKModifier3D**, ігноруються.
+If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+
+\ **Note:** The rendered gizmo's forward vector (a line between parent and child joints) will only respect the bone pose when this modifier is active.
 
 .. rst-class:: classref-section-separator
 

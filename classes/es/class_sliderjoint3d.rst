@@ -7,14 +7,14 @@ SliderJoint3D
 
 **Hereda:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Una unión física que restringe el movimiento de un cuerpo físico 3D a lo largo de un eje en relación con otro cuerpo físico.
+Una articulacion física que restringe el movimiento de un cuerpo físico 3D a lo largo de un eje en relación con otro cuerpo físico.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Una unión física que restringe el movimiento de un cuerpo físico 3D a lo largo de un eje en relación con otro cuerpo físico. Por ejemplo, el Cuerpo A podría ser un :ref:`StaticBody3D<class_StaticBody3D>` que representa la base de un pistón, mientras que el Cuerpo B podría ser un :ref:`RigidBody3D<class_RigidBody3D>` que representa la cabeza del pistón, moviéndose arriba y abajo.
+Una articulación física que restringe el movimiento de un cuerpo físico 3D a lo largo de un eje en relación con otro cuerpo físico. Por ejemplo, el Cuerpo A podría ser un :ref:`StaticBody3D<class_StaticBody3D>` que representa la base de un pistón, mientras que el Cuerpo B podría ser un :ref:`RigidBody3D<class_RigidBody3D>` que representa la cabeza del pistón, moviéndose arriba y abajo.
 
 .. rst-class:: classref-reftable-group
 

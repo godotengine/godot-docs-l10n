@@ -824,9 +824,9 @@ Restituisce ``true`` se l'osso finale è prolungato per avere una coda.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_reset>`
 
-Reimposta uno stato di simulazione rispetto alla posa d'ossa attuale.
+Resets a simulating state with respect to the current bone pose.
 
-È utile per evitare che il risultato della simulazione diventi brusco. Ad esempio, chiamandolo subito dopo una chiamata a :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` senza dissolvenza, o all'interno del precedente segnale :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` se la sua condizione cambia in modo significativo.
+It is useful to prevent the simulation result getting violent. For example, calling this immediately after a call to :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` without a fading, or within the previous :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` signal if its condition changes significantly.
 
 .. rst-class:: classref-item-separator
 

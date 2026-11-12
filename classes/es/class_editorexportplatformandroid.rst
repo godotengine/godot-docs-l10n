@@ -57,6 +57,8 @@ Propiedades
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`gradle_build/min_sdk<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`                                                     |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`gradle_build/minification<class_EditorExportPlatformAndroid_property_gradle_build/minification>`                                           |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`gradle_build/target_sdk<class_EditorExportPlatformAndroid_property_gradle_build/target_sdk>`                                               |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`                                   |
@@ -607,7 +609,7 @@ Por ejemplo, la clave ``android:windowSwipeToDismiss`` con el valor ``false`` se
 
 :ref:`int<class_int>` **gradle_build/export_format** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/export_format>`
 
-Formato de exportación de la aplicación (\*.apk o \*.aab).
+Application export format (\ ``*.apk``, ``*.aab``, or ``*.aar``).
 
 .. rst-class:: classref-item-separator
 
@@ -632,6 +634,22 @@ Ruta al directorio de compilación de Gradle. Si se deja vacío, se utilizará `
 :ref:`String<class_String>` **gradle_build/min_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`
 
 Nivel mínimo de API de Android requerido para que la aplicación se ejecute (utilizado durante la compilación de Gradle). Véase `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformAndroid_property_gradle_build/minification:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **gradle_build/minification** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/minification>`
+
+If ``true``, enables R8 code minification and obfuscation for release Gradle builds.
+
+This reduces application size, removes unused bytecode, and complies with Google Play Console optimization guidelines.
+
+\ **Note:** Only applies to release builds (**Export With Debug** unchecked) and requires :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`.
 
 .. rst-class:: classref-item-separator
 
@@ -915,7 +933,7 @@ Si es ``true``, la firma del paquete está habilitada.
 
 :ref:`String<class_String>` **package/unique_name** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/unique_name>`
 
-Identificador único de la aplicación en un formato de DNS inverso. El formato de DNS inverso debe coincidir preferiblemente con un nombre de dominio que controles, pero esto no es estrictamente obligatorio. Por ejemplo, si eres dueño de ``example.com``, el nombre único de tu paquete debería ser preferiblemente de la forma ``com.example.mygame``. Este identificador solo puede contener caracteres alfanuméricos en minúsculas (``a-z`` y ``0-9``), guiones bajos (``_``) y puntos (``.``). Cada componente del formato de DNS inverso debe comenzar con una letra: por ejemplo, ``com.example.8game`` no es válido.
+Identificador único de la aplicación en un formato de DNS inverso. El formato de DNS inverso debe coincidir preferiblemente con un nombre de dominio que controles, pero esto no es estrictamente obligatorio. Por ejemplo, si eres dueño de ``example.com``, el nombre único de tu paquete debería ser preferiblemente de la forma ``com.example.mygame``. Este identificador solo puede contener caracteres alfanuméricos en minúsculas (\ ``a-z`` y ``0-9``), guiones bajos (\ ``_``) y puntos (\ ``.``). Cada componente del formato de DNS inverso debe comenzar con una letra: por ejemplo, ``com.example.8game`` no es válido.
 
 Si ``$genname`` está presente en el valor, se reemplazará por el nombre del proyecto convertido a minúsculas. Si hay caracteres no válidos en el nombre del proyecto, se eliminarán. Si todos los caracteres en el nombre del proyecto se eliminan, ``$genname`` se reemplaza por ``noname``.
 
@@ -1487,7 +1505,11 @@ Permite activar/desactivar las notificaciones de actualización de la ubicación
 
 Array de strings de permisos personalizados.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

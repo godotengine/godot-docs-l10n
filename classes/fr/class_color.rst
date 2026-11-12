@@ -1866,7 +1866,7 @@ Renvoie l'intensité lumineuse de la couleur, en tant que valeur entre 0.0 et 1.
 
 Renvoie la **Color** associée à l'entier ``hex`` fourni en format RGBA 32 bits (8 bits par canal). Cette méthode est l'inverse de :ref:`to_rgba32()<class_Color_method_to_rgba32>`.
 
-En GDScript et C#, la meilleure façon de visualiser l':ref:`int<class_int>` est avec la notation hexadécimale (``"0x"``, ce qui fait ``"0xRRGGBBAA"``).
+En GDScript et C#, la meilleure façon de visualiser l':ref:`int<class_int>` est avec la notation hexadécimale (\ ``"0x"``, ce qui fait ``"0xRRGGBBAA"``).
 
 
 .. tabs::
@@ -1911,7 +1911,7 @@ En GDScript et en C#, l’entier :ref:`int<class_int>` est mieux visualisé avec
 
 :ref:`Color<class_Color>` **html**\ (\ rgba\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html>`
 
-Renvoie une nouvelle couleur depuis ``rgba``, une chaîne de couleur hexadécimale HTML. ``rgba`` n'est pas sensible à la casse et peut être préfixée par un signe de croisillon (``#``).
+Renvoie une nouvelle couleur depuis ``rgba``, une chaîne de couleur hexadécimale HTML. ``rgba`` n'est pas sensible à la casse et peut être préfixée par un signe de croisillon (\ ``#``).
 
 \ ``rgba`` doit être une chaîne de couleur hexadécimale à trois ou six chiffres valide, et peut contenir une valeur de canal alpha. Si ``rgba`` ne contient pas de valeur de canal alpha, une valeur de canal alpha de 1,0 est appliquée. Si ``rgba`` est invalide, renvoie une couleur vide.
 
@@ -1942,7 +1942,7 @@ Renvoie une nouvelle couleur depuis ``rgba``, une chaîne de couleur hexadécima
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-Renvoie ``true`` si ``color`` est une chaîne de couleur hexadécimale HTML valide. La chaîne doit être une valeur hexadécimale (insensible à la casse) de 3, 4, 6 ou 8 chiffres, et peut être préfixée par un signe de croisillon (``#``). Cette méthode est identique à :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
+Renvoie ``true`` si ``color`` est une chaîne de couleur hexadécimale HTML valide. La chaîne doit être une valeur hexadécimale (insensible à la casse) de 3, 4, 6 ou 8 chiffres, et peut être préfixée par un signe de croisillon (\ ``#``). Cette méthode est identique à :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
@@ -1979,7 +1979,7 @@ Renvoie ``true`` si ``color`` est une chaîne de couleur hexadécimale HTML vali
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-Renvoie la couleur avec ses composantes :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` et :ref:`b<class_Color_property_b>` inversées (``(1 - r, 1 - g, 1 - b, a)``).
+Renvoie la couleur avec ses composantes :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` et :ref:`b<class_Color_property_b>` inversées (\ ``(1 - r, 1 - g, 1 - b, a)``).
 
 
 .. tabs::
@@ -2218,7 +2218,7 @@ Renvoie la couleur convertie en entier 64 bits en format ABGR (chaque composante
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-Renvoie la couleur convertie en une :ref:`String<class_String>` de couleur hexadécimale HTML en format RGBA, sans le préfixe croisillon (``#``).
+Renvoie la couleur convertie en une :ref:`String<class_String>` de couleur hexadécimale HTML en format RGBA, sans le préfixe croisillon (\ ``#``).
 
 Définir ``with_alpha`` à ``false`` exclut l’alpha de la chaîne hexadécimale, en utilisant un format RGB, au lieu de RGBA.
 

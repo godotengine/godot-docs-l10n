@@ -7,7 +7,7 @@ PanelContainer
 
 **繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
+**被繼承：** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`
 
 保證子控制項在 :ref:`StyleBox<class_StyleBox>` 區域內的容器。
 

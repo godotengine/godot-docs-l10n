@@ -14,38 +14,38 @@ PacketPeerUDP
 Опис
 --------
 
-Одноранговий пакет UDP. Може використовуватися для надсилання й отримання необроблених UDP-пакетів, а також :ref:`Variant<class_Variant>`\ s. 
+UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
-\ **Приклад:** Надіслати пакет: 
-
-::
- 
-    var peer = PacketPeerUDP.new() 
-
-    # За бажанням ви можете вибрати локальний порт, який використовується для надсилання пакету. 
-    peer.bind(4444) 
-
-    peer.set_dest_address("1.1.1.1", 4433) 
-    peer.put_packet("привіт".to_utf8_buffer())  
-
-\ **Приклад:** Прослуховування пакетів: 
+\ **Example:** Send a packet:
 
 ::
- 
-    var peer 
 
-    func _ready(): 
-        peer = PacketPeerUDP.new() 
-        peer.bind(4433) 
+    var peer = PacketPeerUDP.new()
+
+    # Optionally, you can select the local port used to send the packet.
+    peer.bind(4444)
+
+    peer.set_dest_address("1.1.1.1", 4433)
+    peer.put_packet("hello".to_utf8_buffer())
+
+\ **Example:** Listen for packets:
+
+::
+
+    var peer
+
+    func _ready():
+        peer = PacketPeerUDP.new()
+        peer.bind(4433)
 
 
-    func _process(_delta): 
-        if peer.get_available_packet_count() > 0: 
-            var array_bytes = peer.get_packet() 
-            var packet_string = array_bytes.get_string_from_ascii() 
-            print("Отримано повідомлення: ", пакет_рядок)  
+    func _process(_delta):
+        if peer.get_available_packet_count() > 0:
+            var array_bytes = peer.get_packet()
+            var packet_string = array_bytes.get_string_from_ascii()
+            print("Received message: ", packet_string)
 
-\ **Примітка.** Під час експорту в Android переконайтеся, що ви ввімкнули дозвіл ``INTERNET`` у попередньому налаштуванні експорту Android перед експортом проекту або використанням розгортання одним клацанням миші. Інакше будь-який мережевий зв’язок буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

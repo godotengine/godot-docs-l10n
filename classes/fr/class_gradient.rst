@@ -161,7 +161,11 @@ Les couleurs du gradient en tant que :ref:`PackedColorArray<class_PackedColorArr
 
 \ **Note :** Définir cette propriété met à jour toutes les couleurs à la fois. Pour mettre à jour n'importe quelle couleur individuellement, utilisez :ref:`set_color()<class_Gradient_method_set_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +222,11 @@ Les décalages du gradient en tant que :ref:`PackedFloat32Array<class_PackedFloa
 
 \ **Note :** Définir cette propriété met à jour tous les décalages en même temps. Pour mettre à jour tout décalage individuellement, utilisez :ref:`set_offset()<class_Gradient_method_set_offset>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

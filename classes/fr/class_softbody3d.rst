@@ -14,11 +14,11 @@ Un maillage 3D physique déformable.
 Description
 -----------
 
-Un maillage physique 3D déformable. Utilisé pour créer des objets élastiques ou déformables tels que du tissu, du caoutchouc ou d'autres matériaux flexibles.
+A deformable 3D physics mesh. Used to create elastic or deformable objects such as cloth, rubber, or other flexible materials.
 
-En outre, **SoftBody3D** est soumis aux forces du vent définies dans :ref:`Area3D<class_Area3D>` (voir :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`, :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>`, et :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`).
+Additionally, **SoftBody3D** is subject to wind forces defined in :ref:`Area3D<class_Area3D>` (see :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`, :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>`, and :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`).
 
-\ **Note :** Il est recommandé d'utiliser Jolt Physics lors de l'utilisation de **SoftBody3D** au lieu du GodotPhysics3D par défaut, car l'implémentation du corps souple de Jolt Physics est plus rapide et plus fiable. Vous pouvez changer le moteur de physique en utilisant le paramètre de projet :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`.
+\ **Note:** It's recommended to use Jolt Physics when using **SoftBody3D** instead of GodotPhysics3D, as Jolt Physics' soft body implementation is faster and more reliable. Jolt Physics is the default for projects created with Godot 4.6 or later. For projects created with older Godot versions, you can switch the physics engine using the :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` project setting.
 
 .. rst-class:: classref-introduction-group
 
@@ -49,6 +49,8 @@ Propriétés
    | :ref:`float<class_float>`                       | :ref:`linear_stiffness<class_SoftBody3D_property_linear_stiffness>`               | ``0.5``          |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
    | :ref:`NodePath<class_NodePath>`                 | :ref:`parent_collision_ignore<class_SoftBody3D_property_parent_collision_ignore>` | ``NodePath("")`` |
+   +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+   | :ref:`int<class_int>`                           | :ref:`point_count<class_SoftBody3D_property_point_count>`                         |                  |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
    | :ref:`float<class_float>`                       | :ref:`pressure_coefficient<class_SoftBody3D_property_pressure_coefficient>`       | ``0.0``          |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
@@ -263,6 +265,22 @@ Des valeurs plus élevées entraîneront un corps plus rigide, tandis que des va
 - :ref:`NodePath<class_NodePath>` **get_parent_collision_ignore**\ (\ )
 
 :ref:`NodePath<class_NodePath>` vers un :ref:`CollisionObject3D<class_CollisionObject3D>` avec lequel ce SoftBody3D devrait éviter de chevaucher ("clipping").
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SoftBody3D_property_point_count:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **point_count** :ref:`🔗<class_SoftBody3D_property_point_count>`
+
+.. rst-class:: classref-property-setget
+
+- :ref:`int<class_int>` **get_point_count**\ (\ )
+
+The number of vertices (points) on the soft body mesh.
 
 .. rst-class:: classref-item-separator
 

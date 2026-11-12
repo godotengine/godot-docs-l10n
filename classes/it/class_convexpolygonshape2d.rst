@@ -70,7 +70,11 @@ La lista dei vertici del poligono che formano un inviluppo convesso. Può essere
 
 \ **Attenzione:** Imposta questa proprietà solo su una lista di punti che formano effettivamente un inviluppo convesso. Utilizza :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` per generare l'inviluppo convesso da un insieme arbitrario di punti.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

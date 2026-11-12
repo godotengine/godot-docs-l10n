@@ -229,7 +229,7 @@ Curve3D
 - |void| **set_up_vector_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_up_vector_enabled**\ (\ )
 
-Якщо ``true``, крива запікати вектори, які використовуються для орієнтації. Це використовується, коли :ref:`PathFollow3D.rotation_mode<class_PathFollow3D_property_rotation_mode>` встановлюється до :ref:`PathFollow3D. ROTATION_ORIENTED<class_PathFollow3D_constant_ ROTATION_ORIENTED>` Змінює кеш, щоб бути переведеним.
+Якщо ``true``, крива запікати вектори, які використовуються для орієнтації. Це використовується, коли :ref:`PathFollow3D.rotation_mode<class_PathFollow3D_property_rotation_mode>` встановлюється до :ref:`PathFollow3D.ROTATION_ORIENTED<class_PathFollow3D_constant_ROTATION_ORIENTED>` Змінює кеш, щоб бути переведеним.
 
 .. rst-class:: classref-section-separator
 
@@ -410,7 +410,7 @@ Curve3D
 
 :ref:`Vector3<class_Vector3>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve3D_method_sample>`
 
-Повертає позицію між вершиною ``idx`` і вершиною ``idx + 1``, де ``t`` контролює, якщо точка є першою вершиною (``t = 0.0``), останнього вершини (``t = 1.0``), або між. Значення ``t`` за межі (``0.0>= т <=1``) дають дивний, але передбачуваний результат.
+Повертає позицію між вершиною ``idx`` і вершиною ``idx + 1``, де ``t`` контролює, якщо точка є першою вершиною (\ ``t = 0.0``), останнього вершини (\ ``t = 1.0``), або між. Значення ``t`` за межі (\ ``0.0>= т <=1``) дають дивний, але передбачуваний результат.
 
 Якщо ``idx`` є з меж, він truncated to the first or last vertex, і ``t`` ігнорується. Якщо крива не має точок, функція надсилає помилку в консолі, і повертає ``(0, 0, 0)``.
 

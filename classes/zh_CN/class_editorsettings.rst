@@ -58,6 +58,8 @@ EditorSettings
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`               | :ref:`asset_store/available_urls<class_EditorSettings_property_asset_store/available_urls>`                                                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`asset_store/show_incompatible_assets<class_EditorSettings_property_asset_store/show_incompatible_assets>`                                                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`asset_store/use_threads<class_EditorSettings_property_asset_store/use_threads>`                                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`debugger/auto_switch_to_remote_scene_tree<class_EditorSettings_property_debugger/auto_switch_to_remote_scene_tree>`                                                                                         |
@@ -103,6 +105,8 @@ EditorSettings
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/auto_expand_to_selected<class_EditorSettings_property_docks/scene_tree/auto_expand_to_selected>`                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/center_node_on_reparent<class_EditorSettings_property_docks/scene_tree/center_node_on_reparent>`                                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/derive_script_globals_by_name<class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/hide_filtered_out_parents<class_EditorSettings_property_docks/scene_tree/hide_filtered_out_parents>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -496,6 +500,8 @@ EditorSettings
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/editor/appearance/expand_to_title<class_EditorSettings_property_interface/editor/appearance/expand_to_title>`                                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`interface/editor/appearance/max_sticky_tree_items<class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items>`                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/appearance/project_manager_screen<class_EditorSettings_property_interface/editor/appearance/project_manager_screen>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/editor/appearance/show_renderer_selector<class_EditorSettings_property_interface/editor/appearance/show_renderer_selector>`                                                                       |
@@ -529,6 +535,8 @@ EditorSettings
    | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`                                                                                   |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>`                                                                                                 |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`interface/editor/docks/main_screen_dock_tab_style<class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style>`                                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`interface/editor/fonts/code_font<class_EditorSettings_property_interface/editor/fonts/code_font>`                                                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -573,8 +581,6 @@ EditorSettings
    | :ref:`int<class_int>`                             | :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`                                             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`interface/editors/derive_script_globals_by_name<class_EditorSettings_property_interface/editors/derive_script_globals_by_name>`                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`interface/inspector/auto_unfold_foreign_scenes<class_EditorSettings_property_interface/inspector/auto_unfold_foreign_scenes>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -780,6 +786,8 @@ EditorSettings
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`text_editor/appearance/whitespace/line_spacing<class_EditorSettings_property_text_editor/appearance/whitespace/line_spacing>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/diagnostics/enable_tooltips<class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips>`                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/documentation/enable_tooltips<class_EditorSettings_property_text_editor/behavior/documentation/enable_tooltips>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/files/auto_reload_and_parse_scripts_on_save<class_EditorSettings_property_text_editor/behavior/files/auto_reload_and_parse_scripts_on_save>`                                           |
@@ -801,6 +809,8 @@ EditorSettings
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/files/trim_trailing_whitespace_on_save<class_EditorSettings_property_text_editor/behavior/files/trim_trailing_whitespace_on_save>`                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/general/empty_selection_clipboard<class_EditorSettings_property_text_editor/behavior/general/empty_selection_clipboard>`                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`text_editor/behavior/general/find_in_file_extensions<class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions>`                                                                   |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/behavior/indent/auto_indent<class_EditorSettings_property_text_editor/behavior/indent/auto_indent>`                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -869,6 +879,8 @@ EditorSettings
    | :ref:`int<class_int>`                             | :ref:`text_editor/help/help_title_font_size<class_EditorSettings_property_text_editor/help/help_title_font_size>`                                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/show_help_index<class_EditorSettings_property_text_editor/help/show_help_index>`                                                                                                           |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/show_property_setters_and_getters<class_EditorSettings_property_text_editor/help/show_property_setters_and_getters>`                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`text_editor/help/sort_functions_alphabetically<class_EditorSettings_property_text_editor/help/sort_functions_alphabetically>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -940,6 +952,8 @@ EditorSettings
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/engine_type_color<class_EditorSettings_property_text_editor/theme/highlighting/engine_type_color>`                                                                           |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/error_underline_color<class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color>`                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/executing_line_color<class_EditorSettings_property_text_editor/theme/highlighting/executing_line_color>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/folded_code_region_color<class_EditorSettings_property_text_editor/theme/highlighting/folded_code_region_color>`                                                             |
@@ -991,6 +1005,8 @@ EditorSettings
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/user_type_color<class_EditorSettings_property_text_editor/theme/highlighting/user_type_color>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/warning_color<class_EditorSettings_property_text_editor/theme/highlighting/warning_color>`                                                                                   |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/warning_underline_color<class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color>`                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`text_editor/theme/highlighting/word_highlighted_color<class_EditorSettings_property_text_editor/theme/highlighting/word_highlighted_color>`                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1105,6 +1121,20 @@ EditorSettings
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
 一个包含所有可用 URL 的列表，这些 URL 可在 Asset Store（资源商店）中被选中，用来获取资源数据。其中，键（key）是名称，值（value）是对应的 URL 地址。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_asset_store/show_incompatible_assets:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **asset_store/show_incompatible_assets** :ref:`🔗<class_EditorSettings_property_asset_store/show_incompatible_assets>`
+
+If ``true``, the Asset Store will show asset releases that are not compatible with the current engine version.
+
+\ **Warning:** Using such assets may result in errors and crashes.
 
 .. rst-class:: classref-item-separator
 
@@ -1389,6 +1419,18 @@ EditorSettings
 :ref:`bool<class_bool>` **docks/scene_tree/center_node_on_reparent** :ref:`🔗<class_EditorSettings_property_docks/scene_tree/center_node_on_reparent>`
 
 如果为 ``true``\ ，则重新设置节点父级时创建的新节点，将位于所选节点的平均位置。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **docks/scene_tree/derive_script_globals_by_name** :ref:`🔗<class_EditorSettings_property_docks/scene_tree/derive_script_globals_by_name>`
+
+如果为 ``true``\ ，则扩展脚本时如果脚本存在全局类名，就会在脚本创建对话框中插入该类名。如果为 ``false`` 则始终插入脚本的文件路径。
 
 .. rst-class:: classref-item-separator
 
@@ -2800,7 +2842,7 @@ VU 表渐变中，音频信号未达到区域的倍增器（Multiplier）颜色�
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2814,7 +2856,7 @@ VU 表渐变中，音频信号未达到区域的倍增器（Multiplier）颜色�
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2828,7 +2870,7 @@ VU 表渐变中，音频信号未达到区域的倍增器（Multiplier）颜色�
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2842,7 +2884,7 @@ VU 表渐变中，音频信号未达到区域的倍增器（Multiplier）颜色�
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3530,11 +3572,11 @@ SSH 可执行文件的路径（用于向桌面平台进行远程部署）。如�
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-这里需要填写 Blender 可执行文件的路径，用于在导入时将 Blender 3D 场景文件（\ ``.blend``\ ）转换为 glTF 2.0 格式。系统要求安装 Blender 3.0 或更高版本。
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-如果想为你的特定项目启用此功能，请使用 :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` 选项。
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-如果这项设置为空，系统会自动检测并使用 Blender 的默认路径（如果存在的话），检测顺序如下：
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
 \ **Windows:**\ 
 
@@ -3905,6 +3947,18 @@ Blender 进程的最大空闲运行时间（单位为秒）。
 
 ----
 
+.. _class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **interface/editor/appearance/max_sticky_tree_items** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/max_sticky_tree_items>`
+
+The maximum number of tree items allowed to stick to the top while its children are in view. A value of ``0`` disables sticking.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_interface/editor/appearance/project_manager_screen:
 
 .. rst-class:: classref-property
@@ -4133,6 +4187,18 @@ Blender 进程的最大空闲运行时间（单位为秒）。
 
 ----
 
+.. _class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **interface/editor/docks/main_screen_dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/docks/main_screen_dock_tab_style>`
+
+Tab style of editor docks located at the editor's main screen.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_interface/editor/fonts/code_font:
 
 .. rst-class:: classref-property
@@ -4353,9 +4419,9 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`String<class_String>` **interface/editor/localization/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/localization/editor_language>`
 
-用于编辑器界面的语言。如果设置为 **Auto**\ ，则语言将根据系统区域设置自动确定。另见 :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`\ 。
+The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
 
-翻译由社区提供。如果发现错误，请\ `在 Weblate 上为编辑器翻译作出贡献！ <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/development/translations.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -4422,18 +4488,6 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 当编辑器窗口失去焦点（比如你切出去看网页了），并且在启用了“低处理器使用率模式”的情况下，每一帧之间的休眠时间（单位：微秒）。数值越高，CPU 和 GPU 的占用率就越低，这有助于延长笔记本电脑的电池续航（另外，如果编辑器需要持续重绘，开启这个也能提升正在运行的项目的性能）。不过，数值越高也会导致编辑器在后台时的响应速度变慢。默认值的设定，是为了在编辑器窗口失去焦点时，将其帧率限制在 10 FPS。相关设置还可以参考：\ :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`\ （该选项控制的是编辑器在前台时的休眠时间）。
 
 \ **注意：** 如果 :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>`\ （持续更新）选项被设为 ``true``\ ，此设置将会被忽略。因为开启“持续更新”会直接禁用低功耗模式。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_EditorSettings_property_interface/editors/derive_script_globals_by_name:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **interface/editors/derive_script_globals_by_name** :ref:`🔗<class_EditorSettings_property_interface/editors/derive_script_globals_by_name>`
-
-如果为 ``true``\ ，则扩展脚本时如果脚本存在全局类名，就会在脚本创建对话框中插入该类名。如果为 ``false`` 则始终插入脚本的文件路径。
 
 .. rst-class:: classref-item-separator
 
@@ -4645,7 +4699,11 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 即便 :ref:`interface/inspector/open_resources_in_current_inspector<class_EditorSettings_property_interface/inspector/open_resources_in_current_inspector>` 为 ``true``\ ，也应该在新的检查器视图中打开的资源的列表。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -5770,6 +5828,18 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 ----
 
+.. _class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **text_editor/behavior/diagnostics/enable_tooltips** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/diagnostics/enable_tooltips>`
+
+If ``true``, warning and error messages will appear in tooltips when hovering over code.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/behavior/documentation/enable_tooltips:
 
 .. rst-class:: classref-property
@@ -5903,6 +5973,24 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 :ref:`bool<class_bool>` **text_editor/behavior/general/empty_selection_clipboard** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/general/empty_selection_clipboard>`
 
 如果为 ``true``\ ，未选中内容时进行复制或剪切会对光标所在行进行操作。否则需要先选中才能进行复制和剪切。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions:
+
+.. rst-class:: classref-property
+
+:ref:`PackedStringArray<class_PackedStringArray>` **text_editor/behavior/general/find_in_file_extensions** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/general/find_in_file_extensions>`
+
+Text-based file extensions to include in the editor's "Find in Files" feature. You can add e.g. ``tscn`` if you wish to also parse your scene files, especially if you use built-in scripts which are serialized in the scene files.
+
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -6062,7 +6150,7 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/use_default_word_separators** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/use_default_word_separators>`
 
-如果为 ``true``\ ，则使用 ```!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``\ 、Unicode 通用标点符号表和 Unicode CJK 标点符号表中的字符作为单词导航和操作的单词分隔符。如果为 ``false``\ ，则使用这些字符的子集，不包括字符 ``<>$~^=+|``\ 。如果还启用了 :ref:`text_editor/behavior/navigation/use_custom_word_separators<class_EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators>`\ ，则这是自定义字符的补充。这些字符用于确定单词的结束位置。单词导航和操作包括双击单词或按住 :kbd:`Ctrl`\ （在 macOS 上为 :kbd:`Cmd`\ ）同时按 :kbd:`left`\ 、\ :kbd:`right`\ 、\ :kbd:`backspace` 或 :kbd:`delete`\ 。
+If ``true``, uses the characters in ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, the Unicode General Punctuation table, and the Unicode CJK Punctuation table as word separators for word navigation and operations. If ``false``, a subset of these characters are used and does not include the characters ``<>$~^=+|``. This is in addition to custom characters if :ref:`text_editor/behavior/navigation/use_custom_word_separators<class_EditorSettings_property_text_editor/behavior/navigation/use_custom_word_separators>` is also enabled. These characters are used to determine where a word stops. Word navigation and operations include double-clicking on a word or holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while pressing :kbd:`left`, :kbd:`right`, :kbd:`backspace`, or :kbd:`delete`.
 
 .. rst-class:: classref-item-separator
 
@@ -6264,7 +6352,11 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`bool<class_bool>` **text_editor/external/use_external_editor** :ref:`🔗<class_EditorSettings_property_text_editor/external/use_external_editor>`
 
-如果为 ``true``\ ，则会使用外部编辑器，不使用内置脚本编辑器。另见 :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` 和 :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`\ 。
+If ``true``, uses an external editor instead of the built-in Script Editor. See also :ref:`text_editor/external/exec_path<class_EditorSettings_property_text_editor/external/exec_path>` and :ref:`text_editor/external/exec_flags<class_EditorSettings_property_text_editor/external/exec_flags>`.
+
+.. classref_note::
+
+    Even with this option disabled, it is possible to open specific files with the external editor configured in the above settings by right-clicking a file in the FileSystem dock and selecting **Open in External Program**.
 
 .. rst-class:: classref-item-separator
 
@@ -6325,6 +6417,18 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 :ref:`bool<class_bool>` **text_editor/help/show_help_index** :ref:`🔗<class_EditorSettings_property_text_editor/help/show_help_index>`
 
 如果为 ``true``\ ，则在编辑器帮助的左侧显示目录（编辑脚本时出现成员概览的位置）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_text_editor/help/show_property_setters_and_getters:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **text_editor/help/show_property_setters_and_getters** :ref:`🔗<class_EditorSettings_property_text_editor/help/show_property_setters_and_getters>`
+
+If ``true``, shows property setters and getters from the editor help.
 
 .. rst-class:: classref-item-separator
 
@@ -6766,6 +6870,18 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 ----
 
+.. _class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color:
+
+.. rst-class:: classref-property
+
+:ref:`Color<class_Color>` **text_editor/theme/highlighting/error_underline_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/error_underline_color>`
+
+The script editor's color for the squiggly lines shown under code producing errors.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/theme/highlighting/executing_line_color:
 
 .. rst-class:: classref-property
@@ -7081,6 +7197,18 @@ GDScript 语法高亮器对 :ref:`StringName<class_StringName>` 字面量所使�
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/warning_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/warning_color>`
 
 脚本编辑器中，有警告的行的背景色。应设置为半透明颜色，从而将其显示在其他的行颜色修饰之上，例如 :ref:`text_editor/theme/highlighting/current_line_color<class_EditorSettings_property_text_editor/theme/highlighting/current_line_color>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color:
+
+.. rst-class:: classref-property
+
+:ref:`Color<class_Color>` **text_editor/theme/highlighting/warning_underline_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/warning_underline_color>`
+
+The script editor's color for the squiggly lines shown under code producing warnings.
 
 .. rst-class:: classref-item-separator
 

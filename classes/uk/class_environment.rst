@@ -825,7 +825,7 @@ Multiplier для фонової енергії. Збільшити, щоб зр
 - |void| **set_bg_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bg_intensity**\ (\ )
 
-Люмінант фону вимірюється в нітах (кандельа на квадратний метр). Тільки використовується при включенні :ref:`ProjectSettings.rendering/lights_and_shadows/use_phys_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_phys_light_units>`. Значення за замовчуванням дорівнює небі в середні дні.
+Люмінант фону вимірюється в нітах (кандельа на квадратний метр). Тільки використовується при включенні :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>`. Значення за замовчуванням дорівнює небі в середні дні.
 
 .. rst-class:: classref-item-separator
 
@@ -2214,7 +2214,7 @@ Y для використання для SDFGI клітин. Низьке зна
 
 Значення ``0.0`` вимикає глобальний об’ємний туман, але дозволяє :ref:`FogVolume<class_FogVolume>` відображати об’ємний туман у певних областях.
 
-Щоб об’ємний туман працював як рішення для об’ємного *освітлення*, встановіть :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` на найнижче ненульове значення (``0,0001``), а потім збільште кількість вогнів :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` до значень від ``10000`` до ``100000``, щоб компенсувати дуже низьку щільність.
+Щоб об’ємний туман працював як рішення для об’ємного *освітлення*, встановіть :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` на найнижче ненульове значення (\ ``0,0001``), а потім збільште кількість вогнів :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` до значень від ``10000`` до ``100000``, щоб компенсувати дуже низьку щільність.
 
 .. rst-class:: classref-item-separator
 

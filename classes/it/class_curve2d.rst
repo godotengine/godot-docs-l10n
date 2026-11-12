@@ -308,7 +308,7 @@ Elimina il punto all'indice ``idx`` dalla curva. Invia un errore alla console se
 
 :ref:`Vector2<class_Vector2>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_sample>`
 
-Restituisce la posizione tra il vertice ``idx`` e il vertice ``idx + 1``, dove ``t`` controlla se il punto è il primo vertice (``t = 0.0``), l'ultimo vertice (``t = 1.0``) o intermedio. I valori di ``t`` al di fuori dell'intervallo (``0,0 >= t <=1``) danno risultati strani, ma prevedibili.
+Restituisce la posizione tra il vertice ``idx`` e il vertice ``idx + 1``, dove ``t`` controlla se il punto è il primo vertice (\ ``t = 0.0``), l'ultimo vertice (\ ``t = 1.0``) o intermedio. I valori di ``t`` al di fuori dell'intervallo (\ ``0,0 >= t <=1``) danno risultati strani, ma prevedibili.
 
 Se ``idx`` è fuori dai limiti, viene troncato al primo o all'ultimo vertice e ``t`` viene ignorato. Se la curva non ha punti, la funzione invia un errore alla console e restituisce ``(0, 0)``.
 
@@ -359,7 +359,7 @@ Simile a :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, ma restituisc
 
 :ref:`Vector2<class_Vector2>` **samplef**\ (\ fofs\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_samplef>`
 
-Restituisce la posizione sul vertice ``fofs``. Chiama :ref:`sample()<class_Curve2D_method_sample>` utilizzando la parte intera di ``fofs`` come indice (``idx``) e la sua parte frazionaria come ``t``.
+Restituisce la posizione sul vertice ``fofs``. Chiama :ref:`sample()<class_Curve2D_method_sample>` utilizzando la parte intera di ``fofs`` come indice (\ ``idx``) e la sua parte frazionaria come ``t``.
 
 .. rst-class:: classref-item-separator
 

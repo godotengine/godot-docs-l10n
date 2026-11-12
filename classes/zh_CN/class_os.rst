@@ -108,6 +108,8 @@ OS
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`get_name<class_OS_method_get_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                     |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_preferred_locales<class_OS_method_get_preferred_locales>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                           |
+   +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_exit_code<class_OS_method_get_process_exit_code>`\ (\ pid\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                              |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_id<class_OS_method_get_process_id>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                         |
@@ -226,6 +228,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
+**已弃用：** This constant is not used by the engine.
+
 Vulkan 渲染驱动器。它需要 Vulkan 1.0 的支持，并且如果系统可用，会自动使用 Vulkan 1.1、1.2 和 1.3 中的新特性。
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
@@ -233,6 +237,8 @@ Vulkan 渲染驱动器。它需要 Vulkan 1.0 的支持，并且如果系统可�
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_OPENGL3** = ``1``
+
+**已弃用：** This constant is not used by the engine.
 
 OpenGL 3 渲染驱动。在桌面平台上使用 OpenGL 3.3 核心配置，在移动设备上使用 OpenGL ES 3.0，在 Web 上使用 WebGL 2.0。
 
@@ -242,6 +248,8 @@ OpenGL 3 渲染驱动。在桌面平台上使用 OpenGL 3.3 核心配置，在�
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
+**已弃用：** This constant is not used by the engine.
+
 Direct3D 12 渲染驱动。它需要 12_0 特性等级（Feature Level）和 Shader Model 6.0 的支持。
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
@@ -249,6 +257,8 @@ Direct3D 12 渲染驱动。它需要 12_0 特性等级（Feature Level）和 Sha
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_METAL** = ``3``
+
+**已弃用：** This constant is not used by the engine.
 
 Metal 渲染驱动。
 
@@ -505,13 +515,13 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`int<class_int>` **create_instance**\ (\ arguments\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_OS_method_create_instance>`
 
-创建一个独立运行的 Godot 新实例。\ ``arguments`` 按给定顺序使用，并以空格分隔。
+Creates a new instance of Godot that runs independently. The ``arguments`` are used in the given order and separated by a space.
 
-如果进程创建成功，则该方法将返回新的进程 ID，可以使用它来监视该进程（并可能使用 :ref:`kill()<class_OS_method_kill>` 终止它）。如果进程无法创建，则该方法将返回 ``-1``\ 。
+If the process is successfully created, this method returns the new process's ID, which you can use to monitor the process (and potentially terminate it with :ref:`kill()<class_OS_method_kill>`). If the process cannot be created, this method returns ``-1``.
 
-如果你希望运行不同的进程，请参阅 :ref:`create_process()<class_OS_method_create_process>`\ 。
+See :ref:`create_process()<class_OS_method_create_process>` if you wish to run a different process.
 
-\ **注意：**\ 该方法在 Android、Linux、macOS 和 Windows 上实现。
+\ **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -983,19 +993,19 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_locale**\ (\ ) |const| :ref:`🔗<class_OS_method_get_locale>`
 
-以 ``language_Script_COUNTRY_VARIANT@extra`` 形式的 :ref:`String<class_String>` 返回主机操作系统区域设置。\ ``language`` 之后的每个子字符串都是可选的，并且可能不存在。
+Returns the host OS locale as a :ref:`String<class_String>` of the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
 
-- ``language`` - 2 个或 3 个字母的\ `语言代码 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__\ ，小写。
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
 
-- ``Script`` - 4 个字母的\ `文字代码 <https://en.wikipedia.org/wiki/ISO_15924>`__\ ，首字母大写。
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
 
-- ``COUNTRY`` - 2 个或 3 个字母的\ `国家地区代码 <https://en.wikipedia.org/wiki/ISO_3166-1>`__\ ，大写。
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
 
-- ``VARIANT`` - 语言变体，地区和排序顺序。变体可以有任意数量的带下划线的关键字。
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
 
-- ``extra`` - 分号分隔的附加关键字列表。这可能包含货币、日历、排序顺序和编号系统信息。
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
 
-如果你只需要语言代码而不是操作系统中完全指定的区域设置，则可以使用 :ref:`get_locale_language()<class_OS_method_get_locale_language>`\ 。
+If you want only the language code and not the fully specified locale from the OS, you can use :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1144,6 +1154,30 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 ----
 
+.. _class_OS_method_get_preferred_locales:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_preferred_locales**\ (\ ) |const| :ref:`🔗<class_OS_method_get_preferred_locales>`
+
+Returns an array of locales preferred by the user, in order of preference. Each locale is as a :ref:`String<class_String>` on the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
+
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
+
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
+
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
+
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
+
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
+
+\ **Note:** This method is implemented on macOS, iOS, and Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OS_method_get_process_exit_code:
 
 .. rst-class:: classref-method
@@ -1194,9 +1228,9 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_processor_name**\ (\ ) |const| :ref:`🔗<class_OS_method_get_processor_name>`
 
-返回主机上 CPU 型号的全名（例如 ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``\ ）。
+Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
 
-\ **注意：**\ 该方法仅在 Windows、macOS、Linux 和 iOS 上实现。在 Android 和 Web 上，\ :ref:`get_processor_name()<class_OS_method_get_processor_name>` 返回空字符串。
+\ **Note:** This method is only implemented on Windows, macOS, Linux, Android (API level 31+), and iOS. On Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` returns an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -1410,21 +1444,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_user_data_dir**\ (\ ) |const| :ref:`🔗<class_OS_method_get_user_data_dir>`
 
-返回写入用户数据的绝对目录路径（Godot 中的 ``user://`` 目录）。该路径取决于项目名称和 :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`\ 。
+Returns the absolute directory path where user data is written (the ``user://`` directory in Godot). The path depends on the project name and :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`.
 
-- 在 Windows 上，这是 ``%AppData%\Godot\app_userdata\[project_name]``\ ；如果已设置 ``use_custom_user_dir``\ ，则为 ``%AppData%\[custom_name]``\ 。\ ``%AppData%`` 扩展为 ``%UserProfile%\AppData\Roaming``\ 。
+- On Windows, this is ``%AppData%\Godot\app_userdata\[project_name]``, or ``%AppData%\[custom_name]`` if ``use_custom_user_dir`` is set. ``%AppData%`` expands to ``%UserProfile%\AppData\Roaming``.
 
-- 在 macOS 上，这是 ``~/Library/Application Support/Godot/app_userdata/[project_name]``\ ；如果已设置 ``use_custom_user_dir``\ ，则为 ``~/Library/Application Support/[custom_name]`` 。
+- On macOS, this is ``~/Library/Application Support/Godot/app_userdata/[project_name]``, or ``~/Library/Application Support/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- 在 Linux 和 BSD 上，这是 ``~/.local/share/godot/app_userdata/[project_name]``\ ；如果已设置 ``use_custom_user_dir``\ ，则为 ``~/.local/share/[custom_name]``\ 。
+- On Linux and BSD, this is ``~/.local/share/godot/app_userdata/[project_name]``, or ``~/.local/share/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- 在 Android 和 iOS 上，这是内部存储或外部存储中的沙盒目录，具体取决于用户的配置。
+- On Android and iOS, this is a sandboxed directory in either internal or external storage, depending on the user's configuration.
 
-- 在 Web 上，这是由浏览器管理的虚拟目录。
+- On Web, this is a virtual directory managed by the browser.
 
-如果项目名称为空，则 ``[project_name]`` 将回退为 ``[unnamed project]``\ 。
+If the project name is empty, ``[project_name]`` falls back to ``[unnamed project]``.
 
-请勿与 :ref:`get_data_dir()<class_OS_method_get_data_dir>` 混淆，后者返回的是\ *全局*\ （非项目特定的）用户主目录。
+Not to be confused with :ref:`get_data_dir()<class_OS_method_get_data_dir>`, which returns the *global* (non-project-specific) user home directory.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,19 +1798,19 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **read_string_from_stdin**\ (\ buffer_size\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_OS_method_read_string_from_stdin>`
 
-从标准输入读取用户输入。这个操作可能导致\ *阻塞* ，如果是在主线程上调用的 :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>`\ ，就会导致窗口冻结。
+Reads a user input as a UTF-8 encoded string from the standard input. This operation can be *blocking*, which causes the window to freeze if :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>` is called on the main thread.
 
-- 如果标准输入是控制台，则该方法会阻塞到程序在标准输入中接收到一个断行为止（通常由用户按下 :kbd:`Enter` 触发）。
+- If standard input is console, this method will block until the program receives a line break in standard input (usually by the user pressing :kbd:`Enter`).
 
-- 如果标准输入是管道，则该方法会阻塞至读取指定量的数据或管道断开为止。
+- If standard input is pipe, this method will block until a specific amount of data is read or pipe is closed.
 
-- 如果标准输入是文件，则该方法会读取指定量的数据（到达文件末尾时会则更少）并立即返回。
+- If standard input is a file, this method will read a specific amount of data (or less if end-of-file is reached) and return immediately.
 
-\ **注意：**\ 该方法会自动将 ``\r\n`` 换行替换为 ``\n`` 并移除字符串末尾的换行。读取未经处理的数据请使用 :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>`\ 。
+\ **Note:** This method automatically replaces ``\r\n`` line breaks with ``\n`` and removes them from the end of the string. Use :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` to read the unprocessed data.
 
-\ **注意：**\ 该方法在 Linux、macOS 和 Windows 上实现。
+\ **Note:** This method is implemented on Linux, macOS, and Windows.
 
-\ **注意：**\ 使用导出的 Windows 版本时，如需访问终端，请运行控制台包装器可执行文件。如果标准输入为控制台，不使用控制台包装器运行时调用该方法会导致卡死。如果标准输入为管道或文件，则可以不使用控制台包装器。如果你需要具有控制台支持的单个可执行文件，请使用启用 ``windows_subsystem=console`` 标志编译的自定义构建。
+\ **Note:** On exported Windows builds, run the console wrapper executable to access the terminal. If standard input is console, calling this method without console wrapped will freeze permanently. If standard input is pipe or file, it can be used without console wrapper. If you need a single executable with full console support, use a custom build compiled with the ``windows_subsystem=console`` flag.
 
 .. rst-class:: classref-item-separator
 
@@ -1912,21 +1946,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-请求操作系统使用最合适的程序，打开由 ``uri`` 指定的资源。 例如：
+Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` 在 Windows 上，会在用户的“下载”文件夹中打开文件资源管理器。
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` 在 Windows 上同样有效，并且也会在用户的“下载”文件夹中打开文件资源管理器。
+- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("https://godotengine.org")`` 会在默认的网络浏览器中打开 Godot 的官方网站。
+- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
 
-- ``OS.shell_open("mailto:example@example.com")`` 会打开默认的电子邮件客户端，并将“收件人（To）”字段自动填写为 ``mailto:example@example.com``\ 。有关可以添加的其他字段列表，请参阅 `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__\ 。
+- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
 
-使用 :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` 转换 ``res://`` 或 ``user://`` 将项目路径转换为系统路径，以便在此方法中使用。
+Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
 
-\ **Note:** 使用 :ref:`String.uri_encode()<class_String_method_uri_encode>` 以一种 URL 安全且可移植的方式，对 URL 内的字符进行编码。这对于换行符来说尤其必要。否则，在导出到 Web 平台的项目中，\ :ref:`shell_open()<class_OS_method_shell_open>` 可能无法正常工作。
+\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
 
-\ **Note:** 此方法已在 Android、iOS、Web、Linux、macOS 和 Windows 平台上实现。
+\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

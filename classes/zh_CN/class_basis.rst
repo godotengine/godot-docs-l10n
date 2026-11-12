@@ -744,9 +744,9 @@ Basis
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-返回该基，其中每个轴都按给定的 ``scale`` 中的相应分量缩放。
+Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
 
-该基矩阵的列乘以 ``scale`` 的分量。该操作是局部缩放（相对于自身）。
+The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
 
 
 .. tabs::
@@ -760,9 +760,9 @@ Basis
     )
     my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(my_basis.x) # 输出 (0.0, 0.0, 0.0)
-    print(my_basis.y) # 输出 (4.0, 4.0, 4.0)
-    print(my_basis.z) # 输出 (-6.0, -6.0, -6.0)
+    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
+    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
+    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -773,9 +773,9 @@ Basis
     );
     myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // 输出 (0, 0, 0)
-    GD.Print(myBasis.Y); // 输出 (4, 4, 4)
-    GD.Print(myBasis.Z); // 输出 (-6, -6, -6)
+    GD.Print(myBasis.X); // Prints (0, 0, 0)
+    GD.Print(myBasis.Y); // Prints (4, 4, 4)
+    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
 
 
 

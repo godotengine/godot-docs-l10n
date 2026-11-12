@@ -1287,7 +1287,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 Назва вузла. Ця назва повинна бути унікальною серед муфт (інші дочірні вузли з одного батька). При налаштуванні до існуючої ім'я зв'язку вузол автоматично перейменований.
 
-\ **Примітка:** При зміні назви будуть замінені наступні символи: (`` `` ``:`` `` @`` ``/`` ``"`` ``%``). ```` символ зарезервований для автоматично сформованих імен. Дивись також :ref:`string.validate_node_name()<class_string_method_validate_node_name>`.
+\ **Примітка:** При зміні назви будуть замінені наступні символи: (\ `` `` ``:`` `` @`` ``/`` ``"`` ``%``). ```` символ зарезервований для автоматично сформованих імен. Дивись також :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2075,7 +2075,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 \ **Примітка:** Щоб покращити продуктивність, порядок назв груп *не* гарантований і може змінюватися між запусками проекту. Тому не покладайтеся на груповий порядок. 
 
-\ **Примітка: ** Цей метод також може повертати назви деяких груп, які починаються з підкреслення (``_``). Вони використовуються внутрішньо двигуном. Щоб уникнути конфліктів, не використовуйте спеціальні групи, які починаються з підкреслення. Щоб виключити внутрішні групи, перегляньте такий фрагмент коду: 
+\ **Примітка: ** Цей метод також може повертати назви деяких груп, які починаються з підкреслення (\ ``_``). Вони використовуються внутрішньо двигуном. Щоб уникнути конфліктів, не використовуйте спеціальні групи, які починаються з підкреслення. Щоб виключити внутрішні групи, перегляньте такий фрагмент коду: 
 
 
 .. tabs:: 
@@ -2447,7 +2447,7 @@ Fetches a вершина :ref:`NodePath<class_NodePath>`. Подібно до :r
 
 :ref:`Window<class_Window>` **get_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_window>`
 
-Повертаємо :ref:`Window<class_Window>`, що містить цей вузол. Якщо вершина знаходиться в головному вікні, це еквівалентно отримання кореневого вузла (``get_tree().get_root()``).
+Повертаємо :ref:`Window<class_Window>`, що містить цей вузол. Якщо вершина знаходиться в головному вікні, це еквівалентно отримання кореневого вузла (\ ``get_tree().get_root()``).
 
 .. rst-class:: classref-item-separator
 
@@ -2965,7 +2965,7 @@ May print, for example:
 
 Може повернутися :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, якщо виклик успішний, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`, якщо аргументи пропущені в ``method`` не відповідають, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`, якщо вершина :ref:`multiplayer<class_Node_property_multiplayer>` не може бути fetched (наприклад, коли вершина не всередині дерева), :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` якщо :ref:`multiplayer<class_Node_property_multiplayer>` підключення не доступний.
 
-\ **Примітка:** Ви можете використовувати тільки RPC на клієнтів після отримання :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` сигнал від :ref:`MultiplayerAPI<class_MultiplayerAPI>`. Також потрібно стежити за станом з'єднання, або за сигналами :ref:`MultiplayerAPI<class_MultiplayerAPI>`, такими як :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` або за допомогою перевірки (``get_multiplayer().peer.get_connection_status()==== Коннекція ``.
+\ **Примітка:** Ви можете використовувати тільки RPC на клієнтів після отримання :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` сигнал від :ref:`MultiplayerAPI<class_MultiplayerAPI>`. Також потрібно стежити за станом з'єднання, або за сигналами :ref:`MultiplayerAPI<class_MultiplayerAPI>`, такими як :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` або за допомогою перевірки (\ ``get_multiplayer().peer.get_connection_status()==== Коннекція ``.
 
 .. rst-class:: classref-item-separator
 
@@ -2987,7 +2987,7 @@ May print, for example:
 
 - ``канал``: :ref:`int<class_int>`, що представляє канал для надсилання на RPC.
 
-\ **Note:** У GDScript цей метод відповідає анотаціям :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` анотація, з різними параметрами, що пройшли (``@rpc(будього)``, ``@rpc(авторитет)``. Дивись також :doc:`Високий рівень мультиплеер <../tutorials/networking/high_level_multiplayer>` підручник.
+\ **Note:** У GDScript цей метод відповідає анотаціям :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` анотація, з різними параметрами, що пройшли (\ ``@rpc(будього)``, ``@rpc(авторитет)``. Дивись також :doc:`Високий рівень мультиплеер <../tutorials/networking/high_level_multiplayer>` підручник.
 
 .. rst-class:: classref-item-separator
 

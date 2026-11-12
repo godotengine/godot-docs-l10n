@@ -14,21 +14,21 @@ PacketPeerUDP
 Описание
 ----------------
 
-UDP-пакетный узел. Может использоваться для отправки и получения необработанных UDP-пакетов, а также :ref:`Variant<class_Variant>`-ы.
+UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
-\ **Пример:** Отправка пакета:
+\ **Example:** Send a packet:
 
 ::
 
     var peer = PacketPeerUDP.new()
 
-    # При желании вы можете выбрать локальный порт, используемый для отправки пакета.
+    # Optionally, you can select the local port used to send the packet.
     peer.bind(4444)
 
     peer.set_dest_address("1.1.1.1", 4433)
     peer.put_packet("hello".to_utf8_buffer())
 
-\ **Пример:** Прослушивание пакетов:
+\ **Example:** Listen for packets:
 
 ::
 
@@ -45,7 +45,7 @@ UDP-пакетный узел. Может использоваться для о
             var packet_string = array_bytes.get_string_from_ascii()
             print("Received message: ", packet_string)
 
-\ **Примечание:** При экспорте в Android убедитесь, что в настройках экспорта Android включено разрешение ``INTERNET`` перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

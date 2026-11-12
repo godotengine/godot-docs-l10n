@@ -14,25 +14,25 @@ HTTPClient
 說明
 ----
 
-超文字傳輸協議用戶端（有時稱為“使用者代理”）。用於發出 HTTP 請求以下載網路內容，上傳檔案和其他資料或與各種服務通信，以及其他用例。
+Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
 
-請參閱 :ref:`HTTPRequest<class_HTTPRequest>` 節點以取得更進階別的替代方案。
+See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
 
-\ **注意：**\ 這個用戶端只需要連接一個主機一次（見\ :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`\ ），就可以發送多個請求。因此，使用 URL 的方法通常只使用主機後面的部分而不是完整的 URL，因為用戶端已經連接到主機。請參閱 :ref:`request()<class_HTTPClient_method_request>` 以取得完整範例並開始使用。
+\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
 
-\ **HTTPClient** 應該在多個請求之間重用或連接到不同的主機，而不是為每個請求建立一個用戶端。支援傳輸層安全 (TLS)，包括伺服器憑證驗證。2xx 範圍內的 HTTP 狀態程式碼表示成功，3xx 表示重新導向（即“再試一次，但在這裡”），4xx 表示請求有問題，5xx 表示伺服器端出了問題。
+An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
-有關 HTTP 的更多資訊，請參閱 `MDN 上 HTTP 的文件 <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__\ （或閱讀 `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__\ ，直接從根源瞭解）。
+For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
 
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署前，請確保在 Android 匯出預設中啟用 ``INTERNET`` 權限。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **注意：**\ 建議使用傳輸加密（TLS）並避免在 HTTP GET URL 參數中發送敏感資訊（例如登入憑據）。考慮改用 HTTP POST 請求或 HTTP 標頭來取得此類資訊。
+\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
-\ **注意：**\ 當從匯出到 Web 的專案執行 HTTP 請求時，請記住，由於 `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__\ ，遠端伺服器可能不允許來自站外的請求。如果托管到有問題的伺服器，應該修改其後台，以通過新增 ``Access-Control-Allow-Origin: *`` HTTP 標頭來允許來自站外的請求。
+\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
 
-\ **注意：**\ TLS 支援目前僅限於 TLSv1.2 和 TLSv1.3。嘗試連接到僅支援較早（不安全）TLS 版本伺服器時將回傳一個錯誤。
+\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
 
-\ **警告：**\ 目前不支援 TLS 憑證復原和憑證綁定。只要吊銷的憑證在其他方面有效，就會被接受。如果這是一個問題，你可能希望使用有效期較短的自動管理的憑證。
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-introduction-group
 
@@ -1065,7 +1065,7 @@ HTTP 狀態碼 ``511 Network Authentication Required``\ 。使用者端需要身
 
 使用 ``method`` 方法向已連接的伺服器發送 HTTP 請求。
 
-URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (``host:port``)。
+URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (\ ``host:port``)。
 
 \ ``headers`` 是 HTTP 請求的報頭。
 
@@ -1104,7 +1104,7 @@ URL 參數通常只是主機名後面的部分，所以對於 ``https://example.
 
 使用 ``method`` 方法向已連接的伺服器發送原始 HTTP 請求。
 
-URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (``host:port``)。
+URL 參數通常只是主機名後面的部分，所以對於 ``https://example.com/index.php`` 來說就是 ``/index.php``\ 。當向 HTTP 代理伺服器發送請求時，它應該是一個絕對 URL。對於 :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` 請求，\ ``*`` 也是允許的。對於 :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` 請求，它應該是權限元件 (\ ``host:port``)。
 
 \ ``headers`` 是 HTTP 請求的報頭。
 

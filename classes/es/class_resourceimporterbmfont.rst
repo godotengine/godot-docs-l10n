@@ -7,7 +7,7 @@ ResourceImporterBMFont
 
 **Hereda:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Importa una fuente de mapa de bits en el formato BMFont (``.fnt``).
+Importa una fuente de mapa de bits en el formato BMFont (\ ``.fnt``).
 
 .. rst-class:: classref-introduction-group
 

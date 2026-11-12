@@ -206,7 +206,11 @@ Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個�
 
 多邊形的頂點清單。最後一點將連接到第一個點。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個�
 
 多邊形每個頂點的紋理座標。每個多邊形頂點應該有一個 UV 值。如果數量少，則未定義的頂點將使用 ``Vector2(0, 0)``\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個�
 
 每個頂點的顏色。顏色在頂點之間插值，從而產生平滑的漸變。每個多邊形頂點應該有一個。如果數量較少，則未定義的頂點將使用 :ref:`color<class_Polygon2D_property_color>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

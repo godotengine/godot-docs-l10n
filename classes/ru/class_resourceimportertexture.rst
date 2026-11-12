@@ -38,6 +38,8 @@ ResourceImporterTexture
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>`                                     | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`compress/high_quality_mode<class_ResourceImporterTexture_property_compress/high_quality_mode>`                           | ``0``     |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`float<class_float>`   | :ref:`compress/lossy_quality<class_ResourceImporterTexture_property_compress/lossy_quality>`                                   | ``0.7``   |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>`                                                     | ``0``     |
@@ -54,9 +56,13 @@ ResourceImporterTexture
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`editor/scale_with_editor_scale<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`                   | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`mipmaps/alpha_test_threshold<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`                       | ``0.5``   |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`     | :ref:`mipmaps/generate<class_ResourceImporterTexture_property_mipmaps/generate>`                                               | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`mipmaps/limit<class_ResourceImporterTexture_property_mipmaps/limit>`                                                     | ``-1``    |
+   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`mipmaps/preserve_alpha_test_coverage<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`       | ``false`` |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`       | :ref:`process/channel_remap/alpha<class_ResourceImporterTexture_property_process/channel_remap/alpha>`                         | ``3``     |
    +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -124,7 +130,7 @@ ResourceImporterTexture
 
 \ **Всегда:** Принудительно применять сжатие VRAM даже для HDR-текстур с альфа-каналом. Для этого альфа-канал отбрасывается при импорте.
 
-\ **Примечание:** Эффективно только для изображений Radiance HDR (``.hdr``) и OpenEXR (``.exr``).
+\ **Примечание:** Эффективно только для изображений Radiance HDR (\ ``.hdr``) и OpenEXR (\ ``.exr``).
 
 .. rst-class:: classref-item-separator
 
@@ -141,6 +147,28 @@ ResourceImporterTexture
 Если ``false``, используется более быстрое, но менее качественное сжатие S3TC на настольных платформах и ETC2 на мобильных/веб-платформах. При использовании S3TC для непрозрачных текстур используется DXT1 (BC1), а для прозрачных или текстур карты нормалей (RGTC) — DXT5 (BC3).
 
 BPTC и ASTC поддерживают сжатие VRAM для текстур HDR, но S3TC и ETC2 — нет (см. :ref:`compress/hdr_compression<class_ResourceImporterTexture_property_compress/hdr_compression>`).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterTexture_property_compress/high_quality_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **compress/high_quality_mode** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/high_quality_mode>`
+
+Controls the priorities of the VRAM compression when :ref:`compress/high_quality<class_ResourceImporterTexture_property_compress/high_quality>` is enabled.
+
+\ **Automatic:** Automatically adjusts the quality level based on the number of unique color channels present in the image. For ASTC, this corresponds to picking 8×8 when only one channel is detected (R, L), 6×6 when two channels are detected (RG, LA), and 4×4 in all other cases.
+
+\ **Max Quality:** Prioritizes highest quality over compression. For ASTC, this corresponds to using a 4×4 block size.
+
+\ **Compressed:** Prioritizes some compression over quality. For ASTC, this corresponds to using a 6×6 block size.
+
+\ **Max Compression:** Prioritizes highest compression over quality. For ASTC, this corresponds to using an 8×8 block size.
+
+\ **Note:** Currently, only the ASTC compressor uses this setting. Other compressors will ignore it.
 
 .. rst-class:: classref-item-separator
 
@@ -266,6 +294,18 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 ----
 
+.. _class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **mipmaps/alpha_test_threshold** = ``0.5`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/alpha_test_threshold>`
+
+The alpha threshold used when preserving alpha test coverage across mipmap levels. The coverage is measured at mipmap 0 using the setting and the lower mipmaps are adjusted to match that coverage. Higher values preserve more detail, lower values create softer edges. Note that this threshold is independent from the ``Alpha Scissor Threshold`` set on the material and they both may need to be tuned for optimal results.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ResourceImporterTexture_property_mipmaps/generate:
 
 .. rst-class:: classref-property
@@ -298,6 +338,18 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 ----
 
+.. _class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **mipmaps/preserve_alpha_test_coverage** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/preserve_alpha_test_coverage>`
+
+If ``true``, automatically adjusts alpha values to maintain consistent coverage when alpha testing is used. This is especially useful for hair, foliage, or other alpha-tested materials, as it prevents fading or popping artifacts across mipmap levels (LODs). This option is intended for color textures and clamps the alpha channel in the 0.0 - 1.0 range.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ResourceImporterTexture_property_process/channel_remap/alpha:
 
 .. rst-class:: classref-property
@@ -314,15 +366,15 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 \ **Alpha:** Использовать значения из альфа-канала исходного изображения.
 
-\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (``1.0 - R``).
+\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (\ ``1.0 - R``).
 
-\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (``1.0 - G``).
+\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (\ ``1.0 - G``).
 
-\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (``1.0 - B``).
+\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (\ ``1.0 - B``).
 
-\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (``1.0 - A``).
+\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (\ ``1.0 - A``).
 
-\ **Unused:** Установить значение цветового канала по умолчанию (``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
+\ **Unused:** Установить значение цветового канала по умолчанию (\ ``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
 
 \ **Zero:** Установить значение цветового канала на ``0.0``.
 
@@ -348,15 +400,15 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 \ **Alpha:** Использовать значения из альфа-канала исходного изображения.
 
-\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (``1.0 - R``).
+\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (\ ``1.0 - R``).
 
-\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (``1.0 - G``).
+\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (\ ``1.0 - G``).
 
-\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (``1.0 - B``).
+\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (\ ``1.0 - B``).
 
-\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (``1.0 - A``).
+\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (\ ``1.0 - A``).
 
-\ **Unused:** Установить значение цветового канала по умолчанию (``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
+\ **Unused:** Установить значение цветового канала по умолчанию (\ ``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
 
 \ **Zero:** Установить значение цветового канала на ``0.0``.
 
@@ -382,15 +434,15 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 \ **Alpha:** Использовать значения из альфа-канала исходного изображения.
 
-\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (``1.0 - R``).
+\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (\ ``1.0 - R``).
 
-\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (``1.0 - G``).
+\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (\ ``1.0 - G``).
 
-\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (``1.0 - B``).
+\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (\ ``1.0 - B``).
 
-\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (``1.0 - A``).
+\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (\ ``1.0 - A``).
 
-\ **Unused:** Установить значение цветового канала по умолчанию (``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
+\ **Unused:** Установить значение цветового канала по умолчанию (\ ``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
 
 \ **Zero:** Установить значение цветового канала на ``0.0``.
 
@@ -416,15 +468,15 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 \ **Alpha:** Использовать значения из альфа-канала исходного изображения.
 
-\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (``1.0 - R``).
+\ **Red Inverted:** Использовать инвертированные значения из красного канала исходного изображения (\ ``1.0 - R``).
 
-\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (``1.0 - G``).
+\ **Green Inverted:** Использовать инвертированные значения из зеленого канала исходного изображения (\ ``1.0 - G``).
 
-\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (``1.0 - B``).
+\ **Blue Inverted:** Использовать инвертированные значения из синего канала исходного изображения (\ ``1.0 - B``).
 
-\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (``1.0 - A``).
+\ **Alpha Inverted:** Использовать инвертированные значения из альфа-канала исходного изображения (\ ``1.0 - A``).
 
-\ **Unused:** Установить значение цветового канала по умолчанию (``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
+\ **Unused:** Установить значение цветового канала по умолчанию (\ ``1.0`` для альфа, ``0.0`` для красного, зеленого или синего).
 
 \ **Zero:** Установить значение цветового канала на ``0.0``.
 

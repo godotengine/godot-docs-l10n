@@ -175,9 +175,9 @@ enum **TailDirection**: :ref:`🔗<enum_SkeletonProfile_TailDirection>`
 - |void| **set_bone_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_size**\ (\ )
 
-Кількість кісток у редакторі :ref:`BoneMap<class_BoneMap>` розділу перенацілювання. Наприклад, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` має 56 кісток.
+The amount of bones in retargeting section's :ref:`BoneMap<class_BoneMap>` editor. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` has 56 bones.
 
-Розмір елементів у :ref:`BoneMap<class_BoneMap>` оновлюється, коли змінюється ця властивість у призначеному йому **SkeletonProfile**.
+The size of elements in :ref:`BoneMap<class_BoneMap>` updates when changing this property in its assigned **SkeletonProfile**.
 
 .. rst-class:: classref-item-separator
 

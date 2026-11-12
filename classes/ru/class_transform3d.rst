@@ -284,7 +284,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ from\: :ref:`Projection<class_Projection>`\ )
 
-Создает **Transform3D** из :ref:`Projection<class_Projection>`. Поскольку **Transform3D** — это матрица 3×4, а :ref:`Projection<class_Projection>` — это матрица 4×4, эта операция обрезает последнюю строку матрицы проекции (``from.x.w``, ``from.y.w``, ``from.z.w`` и ``from.w.w`` не включены в новое преобразование).
+Создает **Transform3D** из :ref:`Projection<class_Projection>`. Поскольку **Transform3D** — это матрица 3×4, а :ref:`Projection<class_Projection>` — это матрица 4×4, эта операция обрезает последнюю строку матрицы проекции (\ ``from.x.w``, ``from.y.w``, ``from.z.w`` и ``from.w.w`` не включены в новое преобразование).
 
 .. rst-class:: classref-item-separator
 

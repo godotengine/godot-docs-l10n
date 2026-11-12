@@ -12,7 +12,7 @@ Una estructura de datos incorporada que contiene una secuencia de elementos.
 Descripción
 ----------------------
 
-Una estructura de datos de tipo array que puede contener una secuencia de elementos de cualquier tipo :ref:`Variant<class_Variant>` de forma predeterminada. Opcionalmente, los valores pueden restringirse a un tipo específico creando un *array tipado*. Se accede a los elementos mediante un índice numérico que comienza en ``0``. Los índices negativos se utilizan para contar desde el final (``-1`` es el último elemento, ``-2`` es el penúltimo, etc.).
+Una estructura de datos de tipo array que puede contener una secuencia de elementos de cualquier tipo :ref:`Variant<class_Variant>` de forma predeterminada. Opcionalmente, los valores pueden restringirse a un tipo específico creando un *array tipado*. Se accede a los elementos mediante un índice numérico que comienza en ``0``. Los índices negativos se utilizan para contar desde el final (\ ``-1`` es el último elemento, ``-2`` es el penúltimo, etc.).
 
 
 .. tabs::
@@ -53,7 +53,7 @@ Una estructura de datos de tipo array que puede contener una secuencia de elemen
 
 \ **Nota:** **No** está soportado eliminar elementos mientras se itera sobre arrays, y hacerlo dará como resultado un comportamiento impredecible.
 
-\ **Nota:** En un contexto booleano, un array se evaluará como ``false`` si está vacío (``[]``). De lo contrario, un array siempre se evaluará como ``true``.
+\ **Nota:** En un contexto booleano, un array se evaluará como ``false`` si está vacío (\ ``[]``). De lo contrario, un array siempre se evaluará como ``true``.
 
 \ **Diferencias entre arrays empaquetados, tipados y no tipados:** Los arrays empaquetados suelen ser más rápidos de iterar y modificar que un array tipado del mismo tipo (por ejemplo, :ref:`PackedInt64Array<class_PackedInt64Array>` frente a ``Array[int]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, son menos flexibles, ya que no ofrecen tantos métodos auxiliares como :ref:`map()<class_Array_method_map>`. A su vez, los arrays tipados son más rápidos de iterar y modificar que los arrays no tipados.
 
@@ -106,9 +106,9 @@ Métodos
    :widths: auto
 
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`             | :ref:`all<class_Array_method_all>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`bool<class_bool>`             | :ref:`all<class_Array_method_all>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`             | :ref:`any<class_Array_method_any>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`bool<class_bool>`             | :ref:`any<class_Array_method_any>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`append<class_Array_method_append>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                                   |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -134,11 +134,11 @@ Métodos
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`fill<class_Array_method_fill>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                                       |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`filter<class_Array_method_filter>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                        |
+   | :ref:`Array<class_Array>`           | :ref:`filter<class_Array_method_filter>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                      |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`               | :ref:`find<class_Array_method_find>`\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                                              |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`               | :ref:`find_custom<class_Array_method_find_custom>`\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                            |
+   | :ref:`int<class_int>`               | :ref:`find_custom<class_Array_method_find_custom>`\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`front<class_Array_method_front>`\ (\ ) |const|                                                                                                                                                    |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -166,7 +166,7 @@ Métodos
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`make_read_only<class_Array_method_make_read_only>`\ (\ )                                                                                                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`map<class_Array_method_map>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`Array<class_Array>`           | :ref:`map<class_Array_method_map>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`max<class_Array_method_max>`\ (\ ) |const|                                                                                                                                                        |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -184,7 +184,7 @@ Métodos
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`push_front<class_Array_method_push_front>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                           |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`       | :ref:`reduce<class_Array_method_reduce>`\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const|                                                          |
+   | :ref:`Variant<class_Variant>`       | :ref:`reduce<class_Array_method_reduce>`\ (\ callable\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const|                                                        |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`remove_at<class_Array_method_remove_at>`\ (\ position\: :ref:`int<class_int>`\ )                                                                                                                  |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -194,7 +194,7 @@ Métodos
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`               | :ref:`rfind<class_Array_method_rfind>`\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                                           |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`               | :ref:`rfind_custom<class_Array_method_rfind_custom>`\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                         |
+   | :ref:`int<class_int>`               | :ref:`rfind_custom<class_Array_method_rfind_custom>`\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                       |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`set<class_Array_method_set>`\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ )                                                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -419,11 +419,11 @@ Descripciones de Métodos
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **all**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
+:ref:`bool<class_bool>` **all**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
 
-Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve ``true`` si el :ref:`Callable<class_Callable>` devuelve ``true`` para *todos* los elementos del arreglo. Si el :ref:`Callable<class_Callable>` devuelve ``false`` para uno o más elementos, este método devuelve ``false``.
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *all* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for one array element or more, this method returns ``false``.
 
-El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y devolver un :ref:`bool<class_bool>`.
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
 
 
 .. tabs::
@@ -434,13 +434,13 @@ El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>
         return number > 5
 
     func _ready():
-        print([6, 10, 6].all(greater_than_5)) # Imprime true (3/3 elementos evalúan a true).
-        print([4, 10, 4].all(greater_than_5)) # Imprime false (1/3 elementos evalúan a true).
-        print([4, 4, 4].all(greater_than_5))  # Imprime false (0/3 elementos evalúan a true).
-        print([].all(greater_than_5))         # Imprime true (0/0 elementos evalúan a true).
+        print([6, 10, 6].all(greater_than_5)) # Prints true (3/3 elements evaluate to true).
+        print([4, 10, 4].all(greater_than_5)) # Prints false (1/3 elements evaluate to true).
+        print([4, 4, 4].all(greater_than_5))  # Prints false (0/3 elements evaluate to true).
+        print([].all(greater_than_5))         # Prints true (0/0 elements evaluate to true).
 
-        # Igual que la primera línea de arriba, pero usando una función lambda.
-        print([6, 10, 6].all(func(element): return element > 5)) # Imprime true
+        # Same as the first line above, but using a lambda function.
+        print([6, 10, 6].all(func(element): return element > 5)) # Prints true
 
  .. code-tab:: csharp
 
@@ -451,26 +451,26 @@ El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>
 
     public override void _Ready()
     {
-        // Imprime True (3/3 elementos evalúan a true).
+        // Prints True (3/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
-        // Imprime False (1/3 elementos evalúan a true).
+        // Prints False (1/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
-        // Imprime False (0/3 elementos evalúan a true).
+        // Prints False (0/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
-        // Imprime True (0/0 elementos evalúan a true).
+        // Prints True (0/0 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
-        // Igual que la primera línea de arriba, pero usando una función lambda.
-        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Imprime True
+        // Same as the first line above, but using a lambda function.
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Prints True
     }
 
 
 
-Véase también :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
+See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **Nota:** A diferencia de depender del tamaño de un arreglo devuelto por :ref:`filter()<class_Array_method_filter>`, este método devuelve el resultado lo antes posible para mejorar el rendimiento (especialmente con arreglos grandes).
+\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
 
-\ **Nota:** Para un arreglo vacío, este método `siempre <https://es.wikipedia.org/wiki/Vacuous_truth>`__ devuelve ``true``.
+\ **Note:** For an empty array, this method `always <https://en.wikipedia.org/wiki/Vacuous_truth>`__ returns ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -480,11 +480,11 @@ Véase también :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **any**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
+:ref:`bool<class_bool>` **any**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
 
-Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve ``true`` si el :ref:`Callable<class_Callable>` devuelve ``true`` para *uno o más* elementos del arreglo. Si el :ref:`Callable<class_Callable>` devuelve ``false`` para todos los elementos, este método devuelve ``false``.
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *one or more* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for all elements in the array, this method returns ``false``.
 
-El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y devolver un :ref:`bool<class_bool>`.
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
 
 ::
 
@@ -492,19 +492,19 @@ El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>
         return number > 5
 
     func _ready():
-        print([6, 10, 6].any(greater_than_5)) # Imprime true (3 elementos evalúan a true).
-        print([4, 10, 4].any(greater_than_5)) # Imprime true (1 elemento evalúa a true).
-        print([4, 4, 4].any(greater_than_5))  # Imprime false (0 elementos evalúan a true).
-        print([].any(greater_than_5))         # Imprime false (0 elementos evalúan a true).
+        print([6, 10, 6].any(greater_than_5)) # Prints true (3 elements evaluate to true).
+        print([4, 10, 4].any(greater_than_5)) # Prints true (1 elements evaluate to true).
+        print([4, 4, 4].any(greater_than_5))  # Prints false (0 elements evaluate to true).
+        print([].any(greater_than_5))         # Prints false (0 elements evaluate to true).
 
-        # Igual que la primera línea de arriba, pero usando una función lambda.
-        print([6, 10, 6].any(func(number): return number > 5)) # Imprime true
+        # Same as the first line above, but using a lambda function.
+        print([6, 10, 6].any(func(number): return number > 5)) # Prints true
 
-Véase también :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
+See also :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **Nota:** A diferencia de depender del tamaño de un arreglo devuelto por :ref:`filter()<class_Array_method_filter>`, este método devuelve el resultado lo antes posible para mejorar el rendimiento (especialmente con arreglos grandes).
+\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
 
-\ **Nota:** Para un arreglo vacío, este método siempre devuelve ``false``.
+\ **Note:** For an empty array, this method always returns ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ Asigna los elementos de otro ``array`` en el array. Cambia el tamaño del array 
 
 Devuelve el último elemento del array. Si el array está vacío, falla y devuelve ``null``. Véase también :ref:`front()<class_Array_method_front>`.
 
-\ **Nota:** A diferencia del ``[]`` operador (``array[-1]``), se genera un error sin detener la ejecución del proyecto.
+\ **Nota:** A diferencia del ``[]`` operador (\ ``array[-1]``), se genera un error sin detener la ejecución del proyecto.
 
 .. rst-class:: classref-item-separator
 
@@ -745,11 +745,11 @@ Este método se puede combinar a menudo con :ref:`resize()<class_Array_method_re
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>` **filter**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
+:ref:`Array<class_Array>` **filter**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
 
-Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve un nuevo **Array** filtrado.
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns a new, filtered **Array**.
 
-El parámetro ``method`` recibe como argumento uno de los elementos del arreglo y debe devolver ``true`` para agregar el elemento al arreglo filtrado, o ``false`` para excluirlo.
+The ``callable`` receives one of the array elements as an argument, and should return ``true`` to add the element to the filtered array, or ``false`` to exclude it.
 
 ::
 
@@ -757,12 +757,12 @@ El parámetro ``method`` recibe como argumento uno de los elementos del arreglo 
         return number % 2 == 0
 
     func _ready():
-        print([1, 4, 5, 8].filter(is_even)) # Imprime [4, 8]
+        print([1, 4, 5, 8].filter(is_even)) # Prints [4, 8]
 
-        # Igual que arriba, pero usando una función lambda.
+        # Same as above, but using a lambda function.
         print([1, 4, 5, 8].filter(func(number): return number % 2 == 0))
 
-Véase también :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
+See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
 .. rst-class:: classref-item-separator
 
@@ -776,7 +776,7 @@ Véase también :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_me
 
 Devuelve el índice de la **primera** aparición de ``what`` en este arreglo, o ``-1`` si no existe ninguna. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
 
-\ **Nota:** Si solo desea comprobar si el arreglo contiene ``what``, utilice :ref:`has()<class_Array_method_has>` (``Contains`` en C#). En GDScript, también puede usar el operador ``in``.
+\ **Nota:** Si solo desea comprobar si el arreglo contiene ``what``, utilice :ref:`has()<class_Array_method_has>` (\ ``Contains`` en C#). En GDScript, también puede usar el operador ``in``.
 
 \ **Nota:** Por razones de rendimiento, la búsqueda está influenciada por el :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` de ``what``. Por ejemplo, ``7`` (:ref:`int<class_int>`) y ``7.0`` (:ref:`float<class_float>`) no se consideran iguales para este método.
 
@@ -788,13 +788,13 @@ Devuelve el índice de la **primera** aparición de ``what`` en este arreglo, o 
 
 .. rst-class:: classref-method
 
-:ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
+:ref:`int<class_int>` **find_custom**\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
+Returns the index of the **first** element in the array that causes ``callable`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` es un callable que recibe un elemento del arreglo y devuelve un :ref:`bool<class_bool>`.
+\ ``callable`` takes an element of the array and returns a :ref:`bool<class_bool>`.
 
-\ **Nota:** Si solo desea comprobar si el arreglo contiene *algún* elemento que satisfaga ``method``, utilice :ref:`any()<class_Array_method_any>`.
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``callable``, use :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -805,14 +805,14 @@ Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` 
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Imprime 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
 
-    # Otro ejemplo usando `bind() para pasar un parámetro adicional:
+    # Another example using `bind()` to pass an additional parameter:
     func is_specific_number(number, expected):
         return number == expected
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Imprime 2
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 
@@ -962,7 +962,7 @@ Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito,
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_Array_method_is_empty>`
 
-Devuelve ``true`` si el array está vacío (``[]``). Véase también :ref:`size()<class_Array_method_size>`.
+Devuelve ``true`` si el array está vacío (\ ``[]``). Véase también :ref:`size()<class_Array_method_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1031,11 +1031,11 @@ En GDScript, los arrays son automáticamente de solo lectura si se declaran con 
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>` **map**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
+:ref:`Array<class_Array>` **map**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
 
-Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve un nuevo arreglo con los valores devueltos por ``method``.
+Calls the given :ref:`Callable<class_Callable>` for each element in the array and returns a new array filled with values returned by the ``callable``.
 
-El ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y puede devolver cualquier :ref:`Variant<class_Variant>`.
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and can return any :ref:`Variant<class_Variant>`.
 
 ::
 
@@ -1043,12 +1043,12 @@ El ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el eleme
         return number * 2
 
     func _ready():
-        print([1, 2, 3].map(double)) # Imprime [2, 4, 6]
+        print([1, 2, 3].map(double)) # Prints [2, 4, 6]
 
-        # Igual que arriba, pero usando una función lambda.
+        # Same as above, but using a lambda function.
         print([1, 2, 3].map(func(element): return element * 2))
 
-Véase también :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` y :ref:`all()<class_Array_method_all>`.
+See also :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` and :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1179,11 +1179,11 @@ Añade un elemento al comienzo del array. Véase también :ref:`push_back()<clas
 
 .. rst-class:: classref-method
 
-:ref:`Variant<class_Variant>` **reduce**\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
+:ref:`Variant<class_Variant>` **reduce**\ (\ callable\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
 
-Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo, acumula el resultado en ``accum`` y luego lo devuelve.
+Calls the given :ref:`Callable<class_Callable>` for each element in array, accumulates the result in ``accum``, then returns it.
 
-El ``method`` recibe dos argumentos: el valor actual de ``accum`` y el elemento actual del arreglo. Si ``accum`` es ``null`` (como por defecto), la iteración comenzará desde el segundo elemento, utilizando el primero como valor inicial de ``accum``.
+The ``callable`` takes two arguments: the current value of ``accum`` and the current array element. If ``accum`` is ``null`` (as by default), the iteration will start from the second element, with the first one used as initial value of ``accum``.
 
 ::
 
@@ -1191,13 +1191,13 @@ El ``method`` recibe dos argumentos: el valor actual de ``accum`` y el elemento 
         return accum + number
 
     func _ready():
-        print([1, 2, 3].reduce(sum, 0))  # Imprime 6
-        print([1, 2, 3].reduce(sum, 10)) # Imprime 16
+        print([1, 2, 3].reduce(sum, 0))  # Prints 6
+        print([1, 2, 3].reduce(sum, 10)) # Prints 16
 
-        # Igual que arriba, pero usando una función lambda.
+        # Same as above, but using a lambda function.
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 
-Si :ref:`max()<class_Array_method_max>` no es adecuado, este método también puede utilizarse para implementar un comparador personalizado:
+If :ref:`max()<class_Array_method_max>` is not desirable, this method may also be used to implement a custom comparator:
 
 ::
 
@@ -1205,12 +1205,12 @@ Si :ref:`max()<class_Array_method_max>` no es adecuado, este método también pu
         var arr = [Vector2i(5, 0), Vector2i(3, 4), Vector2i(1, 2)]
 
         var longest_vec = arr.reduce(func(max, vec): return vec if is_length_greater(vec, max) else max)
-        print(longest_vec) # Imprime (3, 4)
+        print(longest_vec) # Prints (3, 4)
 
     func is_length_greater(a, b):
         return a.length() > b.length()
 
-Este método también puede utilizarse para contar cuántos elementos de un arreglo cumplen cierta condición, de forma similar a :ref:`count()<class_Array_method_count>`:
+This method can also be used to count how many elements in an array satisfy a certain condition, similar to :ref:`count()<class_Array_method_count>`:
 
 ::
 
@@ -1219,11 +1219,11 @@ Este método también puede utilizarse para contar cuántos elementos de un arre
 
     func _ready():
         var arr = [1, 2, 3, 4, 5]
-        # Si el elemento actual es par, incrementa el contador; de lo contrario, lo deja igual.
+        # If the current element is even, increment count, otherwise leave count the same.
         var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
-        print(even_count) # Imprime 2
+        print(even_count) # Prints 2
 
-Véase también :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>` y :ref:`all()<class_Array_method_all>`.
+See also :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>`, and :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,9 +1289,9 @@ Devuelve el índice de la **última** aparición de ``what`` en este arreglo, o 
 
 .. rst-class:: classref-method
 
-:ref:`int<class_int>` **rfind_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
+:ref:`int<class_int>` **rfind_custom**\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
 
-Devuelve el índice del **último** elemento que produce que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hacia el comienzo del arreglo. Este método es el inverso de :ref:`find_custom()<class_Array_method_find_custom>`.
+Returns the index of the **last** element of the array that causes ``callable`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find_custom()<class_Array_method_find_custom>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ Devuelve el índice del **último** elemento que produce que ``method`` devuelva
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_set>`
 
-Asigna el ``value`` al elemento en el ``index`` indicado. Esto no cambia el tamaño del arreglo; únicamente modifica el valor en un índice que ya existe. Es equivalente a usar el operador ``[]`` (``array[index] = value``).
+Asigna el ``value`` al elemento en el ``index`` indicado. Esto no cambia el tamaño del arreglo; únicamente modifica el valor en un índice que ya existe. Es equivalente a usar el operador ``[]`` (\ ``array[index] = value``).
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Reordena todos los elementos del arreglo en un orden aleatorio.
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Array_method_size>`
 
-Devuelve el número de elementos en el array. Si el array está vacío (``[]``), devuelve ``0``. Ver también :ref:`is_empty()<class_Array_method_is_empty>`.
+Devuelve el número de elementos en el array. Si el array está vacío (\ ``[]``), devuelve ``0``. Ver también :ref:`is_empty()<class_Array_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1370,7 +1370,7 @@ Si ``deep`` es ``true``, todos los elementos anidados de tipo **Array** y :ref:`
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Array_method_sort>`
 
-Ordena el arreglo en orden ascendente. El orden final depende de la comparación "menor que" (``<``) entre los elementos.
+Ordena el arreglo en orden ascendente. El orden final depende de la comparación "menor que" (\ ``<``) entre los elementos.
 
 
 .. tabs::

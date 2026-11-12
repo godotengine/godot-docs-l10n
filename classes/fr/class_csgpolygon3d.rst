@@ -417,7 +417,11 @@ Le tableau de points qui définit le polygone 2D extrudé. Cela peut être un po
 
 \ **Note :** Si seulement 1 ou 2 points sont définis dans :ref:`polygon<class_CSGPolygon3D_property_polygon>`, aucun maillage ne sera généré.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -65,7 +65,7 @@ If you need to process multiple results, :ref:`search_all()<class_RegEx_method_s
         results.push_back(result.get_string())
     print(results) # Prints ["One", "Two", "Three"]
 
-\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://www.pcre.org/>`__ library. You can view the full pattern reference `here <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__.
+\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://pcre2project.github.io/pcre2/>`__ library. You can view the full pattern reference `here <https://pcre2project.github.io/pcre2/doc/pcre2pattern/>`__.
 
 \ **Tip:** You can use `Regexr <https://regexr.com/>`__ to test regular expressions online.
 
@@ -198,9 +198,9 @@ Renvoie si cet objet a un motif de recherche valide assigné.
 
 :ref:`RegExMatch<class_RegExMatch>` **search**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search>`
 
-Cherche le texte pour le motif compilé. Renvoie un conteneur :ref:`RegExMatch<class_RegExMatch>` du premier résultat correspondant si trouvé, sinon ``null``.
+Searches the text for the compiled pattern. Returns a :ref:`RegExMatch<class_RegExMatch>` container of the first matching result if found, otherwise ``null``.
 
-La région dans laquelle rechercher peut être spécifiée avec ``offset`` et ``end``. Ceci est utile lors d'une recherche d'un autre correspondance dans le même objet ``subject`` en appelant cette méthode à nouveau après un succès précédent. Notez que définir ces paramètres diffère du passage d'une chaîne raccourcie. Par exemple, l'ancre de démarrage ``^`` n'est pas affectée par ``offset``, et le caractère avant ``offset`` sera vérifié pour la limite de mot ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ La région dans laquelle rechercher peut être spécifiée avec ``offset`` et ``
 
 :ref:`Array<class_Array>`\[:ref:`RegExMatch<class_RegExMatch>`\] **search_all**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search_all>`
 
-Cherche le texte pour le motif compilé. Renvoie un tableau de conteneurs :ref:`RegExMatch<class_RegExMatch>` pour chaque résultat ne se superposant pas. Si aucun résultat n'est trouvé, un tableau vide est renvoyé à la place.
+Searches the text for the compiled pattern. Returns an array of :ref:`RegExMatch<class_RegExMatch>` containers for each non-overlapping result. If no results were found, an empty array is returned instead.
 
-La région dans laquelle rechercher peut être spécifiée avec ``offset`` et ``end``. Ceci est utile lors d'une recherche d'un autre correspondance dans le même objet ``subject`` en appelant cette méthode à nouveau après un succès précédent. Notez que définir ces paramètres diffère du passage d'une chaîne raccourcie. Par exemple, l'ancre de démarrage ``^`` n'est pas affectée par ``offset``, et le caractère avant ``offset`` sera vérifié pour la limite de mot ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ La région dans laquelle rechercher peut être spécifiée avec ``offset`` et ``
 
 :ref:`String<class_String>` **sub**\ (\ subject\: :ref:`String<class_String>`, replacement\: :ref:`String<class_String>`, all\: :ref:`bool<class_bool>` = false, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_sub>`
 
-Cherche le texte pour le motif compilé et le remplace par la chaîne spécifiée. les séquences d'échappement et les références arrières telles que ``$1`` et ``$name`` sont étendues et résolues. Par défaut, seule la première instance est remplacée, mais cela peut être changé pour toutes les instances (remplacement global).
+Searches the text for the compiled pattern and replaces it with the specified string. Escapes and backreferences such as ``$1`` and ``$name`` are expanded and resolved. By default, only the first instance is replaced, but it can be changed for all instances (global replacement).
 
-La région dans laquelle rechercher peut être spécifiée avec ``offset`` et ``end``. Ceci est utile lors d'une recherche d'un autre correspondance dans le même objet ``subject`` en appelant cette méthode à nouveau après un succès précédent. Notez que définir ces paramètres diffère du passage d'une chaîne raccourcie. Par exemple, l'ancre de démarrage ``^`` n'est pas affectée par ``offset``, et le caractère avant ``offset`` sera vérifié pour la limite de mot ``\b``.
+The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

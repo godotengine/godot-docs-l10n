@@ -320,7 +320,7 @@ Restituisce ``true`` se l'array contiene ``value``.
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PackedVector3Array_method_insert>`
 
-Inserisce un nuovo elemento in una determinata posizione nell'array. La posizione deve essere valida o alla fine dell'array (``idx == size()``).
+Inserisce un nuovo elemento in una determinata posizione nell'array. La posizione deve essere valida o alla fine dell'array (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Inserisce un :ref:`Vector3<class_Vector3>` alla fine.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector3Array_method_remove_at>`
 
-Rimuove un elemento dall'array in base all'indice.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

@@ -120,7 +120,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_DEFAULT** = ``-1``
 
-Запустіть файл зі стандартним рівнем стиснення Deflate (``6``). Це хороший компроміс між швидкістю та розміром файлу.
+Запустіть файл зі стандартним рівнем стиснення Deflate (\ ``6``). Це хороший компроміс між швидкістю та розміром файлу.
 
 .. _class_ZIPPacker_constant_COMPRESSION_NONE:
 
@@ -136,7 +136,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_FAST** = ``1``
 
-Розпочніть стиснення файлу з найшвидшим рівнем стиснення Deflate (``1``). Це швидко стискає файли, але призводить до більших розмірів, ніж :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Швидкість розпакування зазвичай не залежить від вибраного рівня стиснення.
+Розпочніть стиснення файлу з найшвидшим рівнем стиснення Deflate (\ ``1``). Це швидко стискає файли, але призводить до більших розмірів, ніж :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Швидкість розпакування зазвичай не залежить від вибраного рівня стиснення.
 
 .. _class_ZIPPacker_constant_COMPRESSION_BEST:
 
@@ -144,7 +144,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_BEST** = ``9``
 
-Розпочніть стиснення файлу з найкращим рівнем стиснення Deflate (``9``). Це повільно стискає файл, але призводить до менших розмірів файлів, ніж :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Швидкість розпакування зазвичай не залежить від вибраного рівня стиснення.
+Розпочніть стиснення файлу з найкращим рівнем стиснення Deflate (\ ``9``). Це повільно стискає файл, але призводить до менших розмірів файлів, ніж :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. Швидкість розпакування зазвичай не залежить від вибраного рівня стиснення.
 
 .. rst-class:: classref-section-separator
 

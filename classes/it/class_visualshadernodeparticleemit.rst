@@ -14,7 +14,7 @@ Un nodo di visual shader che costringe a emettere una particella da un sotto-eme
 Descrizione
 ----------------------
 
-Questo nodo chiama internamente il metodo di shader ``emit_subparticle``. Emetterà una particella dal sottoemettitore configurato e permette anche di personalizzare come essa è emessa. Richiede un sottoemettitore assegnato al nodo di particelle con questo shader.
+This node calls the internal ``emit_subparticle`` method. It will emit a particle from the configured sub-emitter and also allows to customize how it's emitted. Requires a sub-emitter assigned to the particles node that is using this shader.
 
 .. rst-class:: classref-reftable-group
 

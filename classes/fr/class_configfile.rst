@@ -113,7 +113,7 @@ Toutes les opérations qui modifient le ConfigFile comme :ref:`set_value()<class
 
 Notez que les noms des sections et des propriétés ne peuvent contenir des espaces. Tous les caractères après un espace seront ignorés à la sauvegarde et au chargement.
 
-Les ConfigFiles peuvent aussi contenir des lignes de commentaire écrites manuellement qui doivent commencer par un point-virgule (``;``). Ces lignes sont ignorées durant le parsing d'un fichier. À noter que ces commentaires seront perdus durant l'enregistrement d'un ConfigFile. Ils peuvent toujours servir pour les fichiers de configuration sur les serveurs, qui ne sont typiquement jamais modifiés sans action explicite de l'utilisateur.
+Les ConfigFiles peuvent aussi contenir des lignes de commentaire écrites manuellement qui doivent commencer par un point-virgule (\ ``;``). Ces lignes sont ignorées durant le parsing d'un fichier. À noter que ces commentaires seront perdus durant l'enregistrement d'un ConfigFile. Ils peuvent toujours servir pour les fichiers de configuration sur les serveurs, qui ne sont typiquement jamais modifiés sans action explicite de l'utilisateur.
 
 \ **Note :** L'extension du nom de fichier donné à un ConfigFile n'a aucun impact sur son format ou son comportement. Par convention, l'extension ``.cfg`` est utilisée ici, mais n'importe quelle autre extension comme ``.ini`` est aussi valide. Comme ni ``.cfg`` ni ``.ini`` ne sont standardisés, le format des ConfigFile de Godot peuvent différer de ceux écrits par d'autres programmes.
 

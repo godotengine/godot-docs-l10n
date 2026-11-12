@@ -291,7 +291,7 @@ CanvasLayer
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-Повертає перетворення з системи координат **CanvasLayer** у систему координат :ref:`Viewport<class_Viewport>`.
+Returns the transform from the **CanvasLayer**'s coordinate system to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 

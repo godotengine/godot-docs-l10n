@@ -641,7 +641,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-Максимальна анімація зсуву, яка відповідає індексу кадрів в фактурі. ``0`` є першим кадром, ``1`` є останній. Див. :ref:`CanvasItemMaterial.article_animation<class_CanvasItemMaterial_property_article_animation>`.
+Максимальна анімація зсуву, яка відповідає індексу кадрів в фактурі. ``0`` є першим кадром, ``1`` є останній. Див. :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 Максимальна швидкість анімації частинок. Швидкість анімації ``1`` означає, що частинки змусять завершити ``0`` до ``1`` зсувний цикл протягом життя ``2`` та ``2`` цикли і т.д.
 
-З швидкістю анімації більше ``1``, пам'ятайте, що ввімкнено :ref:`CanvasItemMaterial.article_anim_loop<class_CanvasItemMaterial_property_article_anim_loop>` властивість, якщо ви хочете анімацію повторити.
+З швидкістю анімації більше ``1``, пам'ятайте, що ввімкнено :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` властивість, якщо ви хочете анімацію повторити.
 
 .. rst-class:: classref-item-separator
 
@@ -866,7 +866,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 Налаштовує :ref:`Color<class_Color>` для модуляції частинок при використанні :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` або :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -885,7 +889,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 При використанні :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` ввімкнено частинки.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +912,11 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 Налаштовує початкові позиції для спавних частинок при використанні :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` або :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

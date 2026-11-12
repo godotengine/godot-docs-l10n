@@ -111,22 +111,77 @@ SyntaxHighlighter
 
 :ref:`Dictionary<class_Dictionary>` **get_line_syntax_highlighting**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SyntaxHighlighter_method_get_line_syntax_highlighting>`
 
-Повертає дані підсвічування синтаксису для рядка за індексом ``line``. Якщо рядок не кешується, спочатку викликається :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` для обчислення даних. 
+Returns the syntax highlighting data for the line at index ``line``. If the line is not cached, calls :ref:`_get_line_syntax_highlighting()<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` first to calculate the data.
 
-Кожен запис є номером стовпця, що містить вкладений :ref:`Dictionary<class_Dictionary>`. Номер стовпця позначає початок регіону, регіон закінчується, якщо знайдено інший регіон, або в кінці рядка. Вкладений :ref:`Dictionary<class_Dictionary>` містить дані для цього регіону. Наразі підтримується лише ключ ``"колір"``. 
+Each entry is a column number containing a nested :ref:`Dictionary<class_Dictionary>`. The column number denotes the start of a region, the region will end if another region is found, or at the end of the line. The nested :ref:`Dictionary<class_Dictionary>` contains the data for that region. Currently only the key ``"color"`` is supported.
 
-\ **Приклад:** Можливе повернуте значення. Це означає, що стовпці ``0`` до ``4`` мають бути червоними, а стовпці ``5`` до кінця рядка мають бути зеленими: 
+\ **Example:** Possible return value. This means columns ``0`` to ``4`` should be red, and columns ``5`` to the end of the line should be green:
 
 ::
- 
+
     {
-        0: { 
-            "color": Color(1, 0, 0) 
-        }, 
-        5: { 
-            "color": Color(0, 1, 0) 
-        } 
+        0: {
+            "color": Color(1, 0, 0)
+        },
+        5: {
+            "color": Color(0, 1, 0)
+        }
     }
+
+\ **Example:** Sample implementation. Colors the word ``Godot`` blue.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    func _get_line_syntax_highlighting(line: int) -> Dictionary:
+        var pattern_text = "Godot"
+        var result = Dictionary()
+        var text_edit = get_text_edit()
+        var line_text = text_edit.get_line(line)
+
+        var pos = line_text.find(pattern_text)
+        while pos != -1:
+            result[pos] = { "color": Color(0.0, 0.0, 1.0) }
+            var end_pos = pos + pattern_text.length()
+            pos = line_text.find(pattern_text, end_pos)
+            if pos != end_pos:
+                result[end_pos] = { "color": Color(1.0, 1.0, 1.0) }
+
+        return result
+
+ .. code-tab:: csharp
+
+    public override Dictionary _GetLineSyntaxHighlighting(int line)
+    {
+        string patternText = "Godot";
+        Dictionary result = new Dictionary();
+        TextEdit textEdit = GetTextEdit();
+        string lineText = textEdit.GetLine(line);
+
+        var pos = lineText.Find(patternText);
+        while (pos != -1)
+        {
+            result[pos] = new Dictionary()
+            {
+                { "color", new Color(0.0f, 0.0f, 1.0f) }
+            };
+            var endPos = pos + patternText.Length;
+            pos = lineText.Find(patternText, endPos);
+            if (pos != endPos)
+            {
+                result[endPos] = new Dictionary()
+                {
+                    { "color", new Color(1.0f, 1.0f, 1.0f) }
+                };
+            }
+        }
+
+        return result;
+    }
+
+
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,7 @@ LabelSettings
 說明
 ----
 
-**LabelSettings** 是一種提供在 :ref:`Label<class_Label>` 中自訂文字的常見設定的資源。優先於 :ref:`Control.theme<class_Control_property_theme>` 中定義的屬性。該資源可以在多個標籤之間共用，可以隨時替換，因此可以方便、靈活地設定文字樣式。
+**LabelSettings** is a resource that provides common settings to customize the text in a :ref:`Label<class_Label>`. It will take priority over the properties defined in :ref:`Control.theme<class_Control_property_theme>`. The resource can be shared between multiple labels and changed on the fly, making it a convenient and flexible way to set up text style.
 
 .. rst-class:: classref-reftable-group
 

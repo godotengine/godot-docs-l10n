@@ -544,7 +544,7 @@ Renvoie ``true`` si le shader a un varying avec le nom ``name`` donné.
 
 :ref:`bool<class_bool>` **is_node_connection**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_is_node_connection>`
 
-Renvoie ``true`` si le nœud et le port de connexion spécifiés existent.
+Returns ``true`` if the specified node and port connection exists.
 
 .. rst-class:: classref-item-separator
 

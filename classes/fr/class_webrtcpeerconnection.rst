@@ -20,7 +20,7 @@ A WebRTC connection between the local computer and a remote peer. Provides an in
 
 Setting up a WebRTC connection between two peers may not seem a trivial task, but it can be broken down into 3 main steps:
 
-- The peer that wants to initiate the connection (``A`` from now on) creates an offer and sends it to the other peer (``B`` from now on).
+- The peer that wants to initiate the connection (\ ``A`` from now on) creates an offer and sends it to the other peer (\ ``B`` from now on).
 
 - ``B`` receives the offer, generates an answer, and sends it to ``A``.
 
@@ -310,27 +310,27 @@ Ferme la connexion de ce pair et tous les canaux de données lui étant associé
 
 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` **create_data_channel**\ (\ label\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_WebRTCPeerConnection_method_create_data_channel>`
 
-Renvoie un nouveau :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (ou ``null`` lors d'un échec) avec une étiquette ``label`` donnée et optionnellement configuré via le dictionnaire ``options``. Cette méthode peut seulement être appelée lorsque la connexion est dans l'état :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
+Returns a new :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` (or ``null`` on failure) with given ``label`` and optionally configured via the ``options`` dictionary. This method can only be called when the connection is in state :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>`.
 
-Il y a deux façons de créer un canal de données fonctionnel : soit appeler :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` sur un seul de ses pairs et écouter :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` sur l'autre, ou appeler :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` sur les deux pairs, avec les mêmes valeurs, et l'option ``"negotiated"`` définie à ``true``..
+There are two ways to create a working data channel: either call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on only one of the peer and listen to :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>` on the other, or call :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>` on both peers, with the same values, and the ``"negotiated"`` option set to ``true``.
 
-Les ``options`` valides sont : 
+Valid ``options`` are:
 
 ::
 
     {
-        "negotiated": true, # Quand défini à true (false par défaut), signifie que le canal est négocié hors bande. "id" doit être aussi défini. "data_channel_received" ne sera pas appelé.
-        "id": 1, # Quand "negotiated" vaut true, cette valeur doit aussi être définie à la même valeur sur les deux pairs.
+        "negotiated": true, # When set to true (default off), means the channel is negotiated out of band. "id" must be set too. "data_channel_received" will not be called.
+        "id": 1, # When "negotiated" is true this value must also be set to the same value on both peer.
 
-        # Seul un entre maxRetransmits et maxPacketLifeTime peut être spécifié, pas les deux. Ils rendent le canal moins fiable (mais aussi meilleur en temps réel).
-        "maxRetransmits": 1, # Spécifiez le nombre maximum d'essais que le pair va faire pour retransmettre les paquets s'ils ne sont pas reconnus.
-        "maxPacketLifeTime": 100, # Spécifiez la quantité maximale de temps avant de renoncer à des retransmissions de paquets non reconnus (en millisecondes).
-        "ordered": true, # Quand en mode non fiable (c.-à-d. "maxRetransmits" ou "maxPacketLifetime" est défini), "ordered" (true par défaut) spécifie si l'ordre des paquets doit être imposée.
+        # Only one of maxRetransmits and maxPacketLifeTime can be specified, not both. They make the channel unreliable (but also better at real time).
+        "maxRetransmits": 1, # Specify the maximum number of attempt the peer will make to retransmits packets if they are not acknowledged.
+        "maxPacketLifeTime": 100, # Specify the maximum amount of time before giving up retransmitions of unacknowledged packets (in milliseconds).
+        "ordered": true, # When in unreliable mode (i.e. either "maxRetransmits" or "maxPacketLifeTime" is set), "ordered" (true by default) specify if packet ordering is to be enforced.
 
-        "protocol": "my-custom-protocol", # Une chaîne de sous-protocole personnalisée pour ce canal.
+        "protocol": "my-custom-protocol", # A custom sub-protocol string for this channel.
     }
 
-\ **Note :** Vous devez garder une référence aux canaux créés de cette façon, ou ils seront fermés.
+\ **Note:** You must keep a reference to channels created this way, or it will be closed.
 
 .. rst-class:: classref-item-separator
 

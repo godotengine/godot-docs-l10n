@@ -189,9 +189,13 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +211,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 包含該網格所有實例使用的每種 :ref:`Color<class_Color>` 的陣列。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +248,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 包含該網格的所有實例所使用的每個自訂資料值的陣列，作為 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +327,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 包含該網格的所有實例所使用的每個 :ref:`Transform2D<class_Transform2D>` 值的陣列，作為 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。每個變換被分為 3 個 :ref:`Vector2<class_Vector2>` 值，分別對應於變換的 ``x``\ 、\ ``y`` 和 ``origin``\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +347,11 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 包含該網格的所有實例所使用的每個 :ref:`Transform3D<class_Transform3D>` 值的陣列，作為 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。每個變換被分為 4 個 :ref:`Vector3<class_Vector3>` 值，分別對應於變換的 ``x``\ 、\ ``y``\ 、\ ``z`` 和 ``origin``\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +544,7 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 \ **注意：**\ 各分量在 Forward+ 和 Mobile 渲染方法中都是使用 32 位元儲存的，而在 Compatibility 渲染方法中則為 16 位元。
 
-要使顏色生效，請確保該 **MultiMesh** 上的 :ref:`use_colors<class_MultiMesh_property_use_colors>` 為 ``true``\ ，並且材質上的 :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` 為 ``true``\ 。如果打算設定絕對顏色而不是著色，請確保材質的反照率顏色被設定為純白色 (``Color(1, 1, 1)``)。
+要使顏色生效，請確保該 **MultiMesh** 上的 :ref:`use_colors<class_MultiMesh_property_use_colors>` 為 ``true``\ ，並且材質上的 :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` 為 ``true``\ 。如果打算設定絕對顏色而不是著色，請確保材質的反照率顏色被設定為純白色 (\ ``Color(1, 1, 1)``)。
 
 .. rst-class:: classref-item-separator
 

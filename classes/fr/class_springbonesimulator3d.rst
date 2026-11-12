@@ -824,9 +824,9 @@ Renvoie ``true`` si l'os final est prolongé pour avoir une queue.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_reset>`
 
-Réinitialise un état de simulation par rapport à la pose d'os actuelle.
+Resets a simulating state with respect to the current bone pose.
 
-Ceci est utile pour empêcher le résultat de la simulation de devenir violent. Par exemple, appelez ceci immédiatement après un appel à :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` sans fondu, ou dans le signal :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` précédent si sa condition change considérablement.
+It is useful to prevent the simulation result getting violent. For example, calling this immediately after a call to :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` without a fading, or within the previous :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` signal if its condition changes significantly.
 
 .. rst-class:: classref-item-separator
 

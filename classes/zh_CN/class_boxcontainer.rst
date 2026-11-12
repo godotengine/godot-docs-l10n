@@ -33,11 +33,13 @@ BoxContainer
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------+---------------------------------------------------------+-----------+
-   | :ref:`AlignmentMode<enum_BoxContainer_AlignmentMode>` | :ref:`alignment<class_BoxContainer_property_alignment>` | ``0``     |
-   +-------------------------------------------------------+---------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                               | :ref:`vertical<class_BoxContainer_property_vertical>`   | ``false`` |
-   +-------------------------------------------------------+---------------------------------------------------------+-----------+
+   +-------------------------------------------------------+---------------------------------------------------------------+-----------+
+   | :ref:`AlignmentMode<enum_BoxContainer_AlignmentMode>` | :ref:`alignment<class_BoxContainer_property_alignment>`       | ``0``     |
+   +-------------------------------------------------------+---------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                               | :ref:`reverse_sort<class_BoxContainer_property_reverse_sort>` | ``false`` |
+   +-------------------------------------------------------+---------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                               | :ref:`vertical<class_BoxContainer_property_vertical>`         | ``false`` |
+   +-------------------------------------------------------+---------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -123,6 +125,23 @@ enum **AlignmentMode**: :ref:`🔗<enum_BoxContainer_AlignmentMode>`
 - :ref:`AlignmentMode<enum_BoxContainer_AlignmentMode>` **get_alignment**\ (\ )
 
 该容器子节点的对齐方式（必须是 :ref:`ALIGNMENT_BEGIN<class_BoxContainer_constant_ALIGNMENT_BEGIN>`\ 、\ :ref:`ALIGNMENT_CENTER<class_BoxContainer_constant_ALIGNMENT_CENTER>`\ 、\ :ref:`ALIGNMENT_END<class_BoxContainer_constant_ALIGNMENT_END>` 之一）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_BoxContainer_property_reverse_sort:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **reverse_sort** = ``false`` :ref:`🔗<class_BoxContainer_property_reverse_sort>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_reverse_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_reverse_sort**\ (\ )
+
+If ``true``, the **BoxContainer** will arrange its children in reverse order.
 
 .. rst-class:: classref-item-separator
 

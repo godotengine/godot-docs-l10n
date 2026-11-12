@@ -387,13 +387,13 @@ Ottiene il nome da visualizzare nella finestra di importazione. Dovresti sceglie
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-Importa ``source_file`` con le opzioni di importazione ``options``. Dovrebbe restituire :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` se l'importazione ha avuto successo, altri valori indicano un errore.
+Imports ``source_file`` with the specified import ``options``. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful.
 
-La risorsa importata si dovrebbe salvare in ``save_path + "." + _get_save_extension()``. Se si preferisce una variante diversa per un :doc:`tag di funzionalità <../tutorials/export/feature_tags>`, salvare la variante in ``save_path + "." + tag + "." + _get_save_extension()`` e aggiungere il tag di funzionalità a ``platform_variants``.
+The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
 
-Se vengono generati file di risorse aggiuntivi nel file system delle risorse (``res://``), aggiungere il loro percorso completo a ``gen_files`` in modo che l'editor sappia che dipendono da ``source_file``.
+If additional resource files are generated in the resource filesystem (\ ``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
 
-Questo metodo si deve sovrascrivere per eseguire l'importazione effettiva. Per un esempio di come sovrascrivere questo metodo, vedere la descrizione di questa classe.
+This method must be overridden to do the actual importing work. See this class's description for an example of overriding this method.
 
 .. rst-class:: classref-item-separator
 

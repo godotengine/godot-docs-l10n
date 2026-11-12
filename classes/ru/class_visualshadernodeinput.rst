@@ -84,7 +84,7 @@ VisualShaderNodeInput
 - |void| **set_input_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_name**\ (\ )
 
-Одна из нескольких входных констант в нижнем регистре, например: «vertex» (``VERTEX``) или «point_size» (``POINT_SIZE``).
+Одна из нескольких входных констант в нижнем регистре, например: «vertex» (\ ``VERTEX``) или «point_size» (\ ``POINT_SIZE``).
 
 .. rst-class:: classref-section-separator
 

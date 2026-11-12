@@ -544,7 +544,7 @@ Varying 的型別為 :ref:`Transform2D<class_Transform2D>`\ 。
 
 :ref:`bool<class_bool>` **is_node_connection**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_is_node_connection>`
 
-如果指定的節點和埠連接存在，返回 ``true``\ 。
+Returns ``true`` if the specified node and port connection exists.
 
 .. rst-class:: classref-item-separator
 

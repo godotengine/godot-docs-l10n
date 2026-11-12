@@ -527,11 +527,11 @@ Font
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_variation_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_variation_list>`
 
-回傳支援的\ `變體座標 <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__\ 清單，座標以 ``tag: Vector3i(min_value,max_value,default_value)`` 的形式回傳。
+Returns list of supported `variation coordinates <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, each coordinate is returned as ``tag: Vector3i(min_value,max_value,default_value)``.
 
-字型變體能夠沿著某個給定的設計軸對字形的特性進行連續的變化，例如字重、寬度、斜度。
+Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.
 
-要輸出可變字型的可用變體軸：
+To print available variation axes of a variable font:
 
 ::
 
@@ -541,9 +541,9 @@ Font
     for tag in variation_list:
         var name = TextServerManager.get_primary_interface().tag_to_name(tag)
         var values = variation_list[tag]
-        print("變體軸：%s (%d)\n\t最小值、最大值、預設值：%s" % [name, tag, values])
+        print("variation axis: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
 
-\ **注意：**\ :ref:`FontVariation<class_FontVariation>` 變體座標的設定和取得請使用 :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`\ 。
+\ **Note:** To set and get variation coordinates of a :ref:`FontVariation<class_FontVariation>`, use :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
 
 .. rst-class:: classref-item-separator
 

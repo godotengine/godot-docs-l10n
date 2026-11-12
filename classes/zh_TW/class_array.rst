@@ -106,9 +106,9 @@ Array
    :widths: auto
 
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`             | :ref:`all<class_Array_method_all>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`bool<class_bool>`             | :ref:`all<class_Array_method_all>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`             | :ref:`any<class_Array_method_any>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`bool<class_bool>`             | :ref:`any<class_Array_method_any>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`append<class_Array_method_append>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                                   |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -134,11 +134,11 @@ Array
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`fill<class_Array_method_fill>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                                       |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`filter<class_Array_method_filter>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                        |
+   | :ref:`Array<class_Array>`           | :ref:`filter<class_Array_method_filter>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                      |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`               | :ref:`find<class_Array_method_find>`\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                                              |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`               | :ref:`find_custom<class_Array_method_find_custom>`\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                            |
+   | :ref:`int<class_int>`               | :ref:`find_custom<class_Array_method_find_custom>`\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const|                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`front<class_Array_method_front>`\ (\ ) |const|                                                                                                                                                    |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -166,7 +166,7 @@ Array
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`make_read_only<class_Array_method_make_read_only>`\ (\ )                                                                                                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`           | :ref:`map<class_Array_method_map>`\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                              |
+   | :ref:`Array<class_Array>`           | :ref:`map<class_Array_method_map>`\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                                                            |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`       | :ref:`max<class_Array_method_max>`\ (\ ) |const|                                                                                                                                                        |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -184,7 +184,7 @@ Array
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`push_front<class_Array_method_push_front>`\ (\ value\: :ref:`Variant<class_Variant>`\ )                                                                                                           |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`       | :ref:`reduce<class_Array_method_reduce>`\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const|                                                          |
+   | :ref:`Variant<class_Variant>`       | :ref:`reduce<class_Array_method_reduce>`\ (\ callable\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const|                                                        |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`remove_at<class_Array_method_remove_at>`\ (\ position\: :ref:`int<class_int>`\ )                                                                                                                  |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -194,7 +194,7 @@ Array
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`               | :ref:`rfind<class_Array_method_rfind>`\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                                           |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`               | :ref:`rfind_custom<class_Array_method_rfind_custom>`\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                         |
+   | :ref:`int<class_int>`               | :ref:`rfind_custom<class_Array_method_rfind_custom>`\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const|                                                       |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                              | :ref:`set<class_Array_method_set>`\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ )                                                                                          |
    +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -419,11 +419,11 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **all**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
+:ref:`bool<class_bool>` **all**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
 
-對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ 。若該 :ref:`Callable<class_Callable>` 對陣列中 *所有* 元素皆回傳 ``true``\ ，本方法便回傳 ``true``\ ；只要有任一元素回傳 ``false``\ ，就會回傳 ``false``\ 。
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *all* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for one array element or more, this method returns ``false``.
 
-\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素）並回傳 :ref:`bool<class_bool>`\ 。
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
 
 
 .. tabs::
@@ -434,13 +434,13 @@ Array
         return number > 5
 
     func _ready():
-        print([6, 10, 6].all(greater_than_5)) # 印出 true（3/3 個元素為 true）
-        print([4, 10, 4].all(greater_than_5)) # 印出 false（1/3 個元素為 true）
-        print([4, 4, 4].all(greater_than_5))  # 印出 false（0/3 個元素為 true）
-        print([].all(greater_than_5))         # 印出 true（0/0 個元素為 true）
+        print([6, 10, 6].all(greater_than_5)) # Prints true (3/3 elements evaluate to true).
+        print([4, 10, 4].all(greater_than_5)) # Prints false (1/3 elements evaluate to true).
+        print([4, 4, 4].all(greater_than_5))  # Prints false (0/3 elements evaluate to true).
+        print([].all(greater_than_5))         # Prints true (0/0 elements evaluate to true).
 
-        # 與上方第一行相同，但以 Lambda 撰寫。
-        print([6, 10, 6].all(func(element): return element > 5)) # 印出 true
+        # Same as the first line above, but using a lambda function.
+        print([6, 10, 6].all(func(element): return element > 5)) # Prints true
 
  .. code-tab:: csharp
 
@@ -451,26 +451,26 @@ Array
 
     public override void _Ready()
     {
-        // 印出 True（3/3 個元素為 true）。
+        // Prints True (3/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
-        // 印出 False（1/3 個元素為 true）。
+        // Prints False (1/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
-        // 印出 False（0/3 個元素為 true）。
+        // Prints False (0/3 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
-        // 印出 True（0/0 個元素為 true）。
+        // Prints True (0/0 elements evaluate to true).
         GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
-        // 與上方第一行相同，但以 Lambda 撰寫。
-        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // 印出 True
+        // Same as the first line above, but using a lambda function.
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Prints True
     }
 
 
 
-另請參閱 :ref:`any()<class_Array_method_any>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
+See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **注意：**\ 與依賴 :ref:`filter()<class_Array_method_filter>` 回傳陣列大小的作法不同，此方法會在第一時間就結束，以提升效能（大量陣列尤然）。
+\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
 
-\ **注意：**\ 對空陣列來說，此方法\ `永遠 <https://en.wikipedia.org/wiki/Vacuous_truth>`__\ 回傳 ``true``\ 。
+\ **Note:** For an empty array, this method `always <https://en.wikipedia.org/wiki/Vacuous_truth>`__ returns ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -480,11 +480,11 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **any**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
+:ref:`bool<class_bool>` **any**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
 
-對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ 。若該 :ref:`Callable<class_Callable>` 對陣列中 *至少一個* 元素回傳 ``true``\ ，本方法便回傳 ``true``\ ；若所有元素皆回傳 ``false``\ ，則回傳 ``false``\ 。
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *one or more* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for all elements in the array, this method returns ``false``.
 
-\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素）並回傳 :ref:`bool<class_bool>`\ 。
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
 
 ::
 
@@ -492,19 +492,19 @@ Array
         return number > 5
 
     func _ready():
-        print([6, 10, 6].any(greater_than_5)) # 印出 true（3 個元素為 true）
-        print([4, 10, 4].any(greater_than_5)) # 印出 true（1 個元素為 true）
-        print([4, 4, 4].any(greater_than_5))  # 印出 false（0 個元素為 true）
-        print([].any(greater_than_5))         # 印出 false（0 個元素為 true）
+        print([6, 10, 6].any(greater_than_5)) # Prints true (3 elements evaluate to true).
+        print([4, 10, 4].any(greater_than_5)) # Prints true (1 elements evaluate to true).
+        print([4, 4, 4].any(greater_than_5))  # Prints false (0 elements evaluate to true).
+        print([].any(greater_than_5))         # Prints false (0 elements evaluate to true).
 
-        # 與上方第一行相同，但以 Lambda 撰寫。
-        print([6, 10, 6].any(func(number): return number > 5)) # 印出 true
+        # Same as the first line above, but using a lambda function.
+        print([6, 10, 6].any(func(number): return number > 5)) # Prints true
 
-另請參閱 :ref:`all()<class_Array_method_all>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
+See also :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **注意：**\ 與依賴 :ref:`filter()<class_Array_method_filter>` 回傳陣列大小的作法不同，此方法會在第一時間就結束，以提升效能（大量陣列尤然）。
+\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
 
-\ **注意：**\ 對空陣列來說，本方法一律回傳 ``false``\ 。
+\ **Note:** For an empty array, this method always returns ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -744,11 +744,11 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>` **filter**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
+:ref:`Array<class_Array>` **filter**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
 
-對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，並依其回傳值產生新的過濾後陣列。
+Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns a new, filtered **Array**.
 
-\ ``method`` 會收到一個陣列元素，當其回傳 ``true`` 時該元素會被保留；回傳 ``false`` 時則被排除。
+The ``callable`` receives one of the array elements as an argument, and should return ``true`` to add the element to the filtered array, or ``false`` to exclude it.
 
 ::
 
@@ -756,12 +756,12 @@ Array
         return number % 2 == 0
 
     func _ready():
-        print([1, 4, 5, 8].filter(is_even)) # 印出 [4, 8]
+        print([1, 4, 5, 8].filter(is_even)) # Prints [4, 8]
 
-        # 與上例相同，但以 Lambda 撰寫。
+        # Same as above, but using a lambda function.
         print([1, 4, 5, 8].filter(func(number): return number % 2 == 0))
 
-另請參閱 :ref:`any()<class_Array_method_any>`\ 、\ :ref:`all()<class_Array_method_all>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
+See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
 
 .. rst-class:: classref-item-separator
 
@@ -787,13 +787,13 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
+:ref:`int<class_int>` **find_custom**\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-回傳陣列中使得 ``method`` 回傳 ``true`` 的\ **第一個**\ 元素的索引，若元素不存在則回傳 ``-1``\ 。搜尋的起始位置可以由 ``from`` 指定，搜尋將繼續直至陣列結束。
+Returns the index of the **first** element in the array that causes ``callable`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` 是可呼叫物件，接受陣列元素，回傳的是 :ref:`bool<class_bool>`\ 。
+\ ``callable`` takes an element of the array and returns a :ref:`bool<class_bool>`.
 
-\ **注意：**\ 如果你只想知道陣列中是否包含\ *任何*\ 能夠滿足 ``method`` 的東西，請使用 :ref:`any()<class_Array_method_any>`\ 。
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``callable``, use :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -804,14 +804,14 @@ Array
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # 輸出 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
 
-    # 另一個使用 `bind()` 傳遞額外參數的範例：
+    # Another example using `bind()` to pass an additional parameter:
     func is_specific_number(number, expected):
         return number == expected
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # 輸出 2
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 
@@ -1029,11 +1029,11 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`Array<class_Array>` **map**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
+:ref:`Array<class_Array>` **map**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
 
-為陣列中的每個元素呼叫給定的 :ref:`Callable<class_Callable>` 並回傳一個新陣列，其中填充了該 ``method`` 回傳的值。
+Calls the given :ref:`Callable<class_Callable>` for each element in the array and returns a new array filled with values returned by the ``callable``.
 
-\ ``method`` 應該採用一個 :ref:`Variant<class_Variant>` 參數（目前陣列元素）並且可以回傳任意 :ref:`Variant<class_Variant>`\ 。
+The ``callable`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and can return any :ref:`Variant<class_Variant>`.
 
 ::
 
@@ -1041,12 +1041,12 @@ Array
         return number * 2
 
     func _ready():
-        print([1, 2, 3].map(double)) # 輸出 [2, 4, 6]
+        print([1, 2, 3].map(double)) # Prints [2, 4, 6]
 
-        # 與上面相同，但使用 lambda 函式。
+        # Same as above, but using a lambda function.
         print([1, 2, 3].map(func(element): return element * 2))
 
-另請參見 :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`reduce()<class_Array_method_reduce>`\ 、\ :ref:`any()<class_Array_method_any>` 和 :ref:`all()<class_Array_method_all>`\ 。
+See also :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` and :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1177,11 +1177,11 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`Variant<class_Variant>` **reduce**\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
+:ref:`Variant<class_Variant>` **reduce**\ (\ callable\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
 
-為陣列中的每個元素呼叫給定的 :ref:`Callable<class_Callable>`\ ，將結果累積在 ``accum`` 中，然後將其回傳。
+Calls the given :ref:`Callable<class_Callable>` for each element in array, accumulates the result in ``accum``, then returns it.
 
-\ ``method`` 接受兩個參數：\ ``accum`` 的目前值，以及目前的陣列元素。如果 ``accum`` 為 ``null``\ （預設值），則會從第二個元素開始迭代，將第一個元素作為 ``accum`` 的初始值。
+The ``callable`` takes two arguments: the current value of ``accum`` and the current array element. If ``accum`` is ``null`` (as by default), the iteration will start from the second element, with the first one used as initial value of ``accum``.
 
 ::
 
@@ -1189,13 +1189,13 @@ Array
         return accum + number
 
     func _ready():
-        print([1, 2, 3].reduce(sum, 0))  # 輸出 6
-        print([1, 2, 3].reduce(sum, 10)) # 輸出 16
+        print([1, 2, 3].reduce(sum, 0))  # Prints 6
+        print([1, 2, 3].reduce(sum, 10)) # Prints 16
 
-        # 與上面相同，但是使用 lambda 函式。
+        # Same as above, but using a lambda function.
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 
-如果 :ref:`max()<class_Array_method_max>` 無法滿足需求，也可以使用該方法來實作自訂比較器：
+If :ref:`max()<class_Array_method_max>` is not desirable, this method may also be used to implement a custom comparator:
 
 ::
 
@@ -1203,12 +1203,12 @@ Array
         var arr = [Vector2i(5, 0), Vector2i(3, 4), Vector2i(1, 2)]
 
         var longest_vec = arr.reduce(func(max, vec): return vec if is_length_greater(vec, max) else max)
-        print(longest_vec) # 輸出 (3, 4)
+        print(longest_vec) # Prints (3, 4)
 
     func is_length_greater(a, b):
         return a.length() > b.length()
 
-該方法還可以用來計算陣列中滿足特定條件元素的數量，與 :ref:`count()<class_Array_method_count>` 類似：
+This method can also be used to count how many elements in an array satisfy a certain condition, similar to :ref:`count()<class_Array_method_count>`:
 
 ::
 
@@ -1217,11 +1217,11 @@ Array
 
     func _ready():
         var arr = [1, 2, 3, 4, 5]
-        # 目前元素為偶數則增加計數器，否則保持計數不變。
+        # If the current element is even, increment count, otherwise leave count the same.
         var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
-        print(even_count) # 輸出 2
+        print(even_count) # Prints 2
 
-另見 :ref:`map()<class_Array_method_map>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`any()<class_Array_method_any>`\ 、\ :ref:`all()<class_Array_method_all>`\ 。
+See also :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>`, and :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1287,9 +1287,9 @@ Array
 
 .. rst-class:: classref-method
 
-:ref:`int<class_int>` **rfind_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
+:ref:`int<class_int>` **rfind_custom**\ (\ callable\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
 
-回傳陣列中最後一個令 ``method`` 回傳 ``true`` 的元素索引；若無則回傳 ``-1``\ 。可用 ``from`` 指定搜尋起點，搜尋方向會往陣列開頭進行。本方法與 :ref:`find_custom()<class_Array_method_find_custom>` 相反。
+Returns the index of the **last** element of the array that causes ``callable`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find_custom()<class_Array_method_find_custom>`.
 
 .. rst-class:: classref-item-separator
 

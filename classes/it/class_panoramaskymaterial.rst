@@ -16,7 +16,7 @@ Descrizione
 
 Una risorsa referenziata in una risorsa :ref:`Sky<class_Sky>` che serve per disegnare uno sfondo. **PanoramaSkyMaterial** funziona in modo simile agli skybox in altri motori, tranne che utilizza una mappa di cielo equirettangolare invece di una :ref:`Cubemap<class_Cubemap>`.
 
-L'utilizzo di un panorama HDR è fortemente consigliato per riflessi accurati e di alta qualità. Godot supporta i formati di immagine Radiance HDR (``.hdr``) e OpenEXR (``.exr``) per questo scopo.
+L'utilizzo di un panorama HDR è fortemente consigliato per riflessi accurati e di alta qualità. Godot supporta i formati di immagine Radiance HDR (\ ``.hdr``) e OpenEXR (\ ``.exr``) per questo scopo.
 
 È possibile utilizzare `questo strumento <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ per convertire una cubemap in una mappa di cielo equirettangolare.
 

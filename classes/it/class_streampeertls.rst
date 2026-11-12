@@ -14,9 +14,9 @@ Un peer di flusso che gestisce le connessioni TLS.
 Descrizione
 ----------------------
 
-Un peer di flusso che gestisce le connessioni TLS. Questo oggetto può essere utilizzato per connettersi a un server TLS o accettare una singola connessione client TLS.
+A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

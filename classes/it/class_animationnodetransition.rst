@@ -14,42 +14,59 @@ Una transizione all'interno di un :ref:`AnimationTree<class_AnimationTree>` che 
 Descrizione
 ----------------------
 
-Macchina a stati semplice per i casi che non richiedono un :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` più avanzato. Le animazioni possono essere collegate agli ingressi e i tempi di transizione possono essere specificati.
+Simple state machine for cases which don't require a more advanced :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`. Animations can be connected to the inputs and transition times can be specified.
 
-Dopo aver impostato la richiesta e cambiata la riproduzione dell'animazione, il nodo di transizione cancella automaticamente la richiesta al prossimo frame di processo svuotato il suo valore di ``transition_request``.
+After setting the request and changing the animation playback, the transition node automatically clears the request on the next process frame by setting its ``transition_request`` value to empty.
 
-\ **Nota:** Quando si usa una dissolvenza incrociata, ``current_state`` e ``current_index`` cambiano allo stato successivo immediatamente dopo l'inizio della dissolvenza.
+\ **Note:** When using a cross-fade, ``current_state`` and ``current_index`` change to the next state immediately after the cross-fade begins.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Riproduce l'animazione figlia collegata alla porta "state_2".
+    # Play child animation connected to "state_2" port.
     animation_tree.set("parameters/Transition/transition_request", "state_2")
-    # Sintassi alternativa (stesso risultato di sopra).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/transition_request"] = "state_2"
 
-    # Ottiene il nome dello stato attuale (di sola lettura).
+    # Get current state name (read-only).
     animation_tree.get("parameters/Transition/current_state")
-    # Sintassi alternativa (stesso risultato di sopra).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/current_state"]
 
-    # Ottiene l'indice dello stato attuale (di sola lettura).
+    # Get current state index (read-only).
     animation_tree.get("parameters/Transition/current_index")
-    # Sintassi alternativa (stesso risultato di sopra).
+    # Alternative syntax (same result as above).
     animation_tree["parameters/Transition/current_index"]
 
  .. code-tab:: csharp
 
-    // Riproduce l'animazione figlia collegata alla porta "state_2".
+    // Play child animation connected to "state_2" port.
     animationTree.Set("parameters/Transition/transition_request", "state_2");
 
-    // Ottiene il nome dello stato attuale (di sola lettura).
+    // Get current state name (read-only).
     animationTree.Get("parameters/Transition/current_state");
 
-    // Ottiene l'indice dello stato attuale (di sola lettura).
+    // Get current state index (read-only).
     animationTree.Get("parameters/Transition/current_index");
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverTransition<class_AnimationNodeObserverTransition>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = animation_tree.get("parameters/Transition/observer")
+    observer.state_started.connect(on_state_started)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/Transition/observer").As<AnimationNodeObserverTransition>();
+    observer.StateStarted += OnStateStarted;
 
 
 

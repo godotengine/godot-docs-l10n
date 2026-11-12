@@ -169,7 +169,7 @@ NavigationObstacle3D
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-設定 2D 避障所使用的障礙物高度。使用 2D 避障的代理會忽略在其之上或之下的障礙物。
+Sets the obstacle height used in 2D avoidance. 2D avoidance using agents ignore obstacles that are below or above them.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ NavigationObstacle3D
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-如果為 ``true``\ ，則該障礙物會影響 3D 避障，使用的是代理的障礙物半徑 :ref:`radius<class_NavigationObstacle3D_property_radius>`\ 。
+If ``true`` the obstacle affects 3D avoidance using agents with obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
 
-如果為 ``false``\ ，則該障礙物會影響 2D 避障，使用的是代理的障礙物頂點 :ref:`vertices<class_NavigationObstacle3D_property_vertices>` 和障礙物半徑 :ref:`radius<class_NavigationObstacle3D_property_radius>`\ 。
+If ``false`` the obstacle affects 2D avoidance using agents with both obstacle :ref:`vertices<class_NavigationObstacle3D_property_vertices>` as well as obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,9 @@ NavigationObstacle3D
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-設定該障礙物的期望速度，這樣如果（每影格）一直使用相同的速度移動而不是直接跳到某個位置，那麼其他代理就能夠更好地預測該障礙物的行為。僅影響該障礙物 :ref:`radius<class_NavigationObstacle3D_property_radius>` 的避障。不會影響障礙物的靜態頂點。
+The wanted velocity for the obstacle, used by other agents to better predict the obstacle if it is moved with a velocity regularly (every frame), instead of warped to a new position.
+
+\ **Note:** This property only affects avoidance for the obstacle's :ref:`radius<class_NavigationObstacle3D_property_radius>`. Does nothing for the obstacle's static vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -239,9 +241,13 @@ NavigationObstacle3D
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vertices**\ (\ )
 
-該障礙物的輪廓頂點。如果這些頂點是按照順時針順序纏繞的，那麼障礙物就會將其他代理向內推，否則就會向外推。輪廓不能交叉或重疊。如果這些頂點直接跳到了新的位置，那麼其他代理可能無法預測這種行為，導致被困在障礙物內。
+The outline vertices of the obstacle. If the vertices are winded in clockwise order, agents will be pushed in by the obstacle, otherwise they will be pushed out. Outlines cannot be crossed or overlap. If the obstacle is warped to a new position, agents cannot predict this movement and may get trapped inside the obstacle.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

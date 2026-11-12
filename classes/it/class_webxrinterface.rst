@@ -128,6 +128,8 @@ Proprietà
    :widths: auto
 
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`disable_webxr_layers<class_WebXRInterface_property_disable_webxr_layers>`                       |
+   +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`enabled_features<class_WebXRInterface_property_enabled_features>`                               |
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`optional_features<class_WebXRInterface_property_optional_features>`                             |
@@ -406,6 +408,27 @@ Il raggio di destinazione ha origine dal touch screen, il mouse o un altro dispo
 Descrizioni delle proprietà
 ------------------------------------------------------
 
+.. _class_WebXRInterface_property_disable_webxr_layers:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **disable_webxr_layers** :ref:`🔗<class_WebXRInterface_property_disable_webxr_layers>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_disable_webxr_layers**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_disable_webxr_layers**\ (\ )
+
+If ``true``, the WebXR Layers API won't be used even when the browser supports it.
+
+Godot falls back to this mode automatically when the browser doesn't support WebXR Layers and the polyfill isn't in use.
+
+This doesn't have any effect on the interface when already initialized.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_WebXRInterface_property_enabled_features:
 
 .. rst-class:: classref-property
@@ -416,11 +439,11 @@ Descrizioni delle proprietà
 
 - :ref:`String<class_String>` **get_enabled_features**\ (\ )
 
-Un elenco separato da virgole di funzionalità che sono state abilitate correttamente da :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` durante la configurazione della sessione WebXR.
+A comma-separated list of features that were successfully enabled by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Questo può includere funzionalità richieste impostando :ref:`required_features<class_WebXRInterface_property_required_features>` e :ref:`optional_features<class_WebXRInterface_property_optional_features>` e sarà disponibile solo dopo l'emissione di :ref:`session_started<class_WebXRInterface_signal_session_started>`.
+This may include features requested by setting :ref:`required_features<class_WebXRInterface_property_required_features>` and :ref:`optional_features<class_WebXRInterface_property_optional_features>`, and will only be available after :ref:`session_started<class_WebXRInterface_signal_session_started>` has been emitted.
 
-\ **Nota:** Questo potrebbe non essere supportato da tutti i browser Web, nel qual caso sarà una stringa vuota.
+\ **Note:** This may not be supported by all web browsers, in which case it will be an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -437,13 +460,13 @@ Questo può includere funzionalità richieste impostando :ref:`required_features
 - |void| **set_optional_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_optional_features**\ (\ )
 
-Un elenco separato da virgole di funzionalità opzionali utilizzate da :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` durante la configurazione della sessione WebXR.
+A comma-separated list of optional features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Se il browser o il dispositivo di un utente non supporta una delle funzionalità fornite, l'inizializzazione continuerà, ma non sarà possibile utilizzare la funzionalità richiesta.
+If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.
 
-Ciò non ha alcun effetto sull'interfaccia quando è già inizializzata.
+This doesn't have any effect on the interface when already initialized.
 
-Consultare la documentazione MDN sulle `funzionalità di sessione WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ per una lista di possibili valori.
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -478,13 +501,13 @@ I valori possibili provengono da `XRReferenceSpaceType di WebXR <https://develop
 - |void| **set_requested_reference_space_types**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_requested_reference_space_types**\ (\ )
 
-Un elenco separato da virgole di tipi di spazio di riferimento utilizzati da :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` durante la configurazione della sessione WebXR.
+A comma-separated list of reference space types used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-I tipi di spazio di riferimento sono richiesti in ordine, e sarà utilizzato il primo supportato dal dispositivo o dal browser dell'utente. La proprietà :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` contiene il tipo di spazio di riferimento che è stato infine selezionato.
+The reference space types are requested in order, and the first one supported by the user's device or browser will be used. The :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` property contains the reference space type that was ultimately selected.
 
-Ciò non ha alcun effetto sull'interfaccia quando è già inizializzata.
+This doesn't have any effect on the interface when already initialized.
 
-I valori possibili provengono da `XRReferenceSpaceType di WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. Se si desidera utilizzare un particolare tipo di spazio di riferimento, deve essere elencato in :ref:`required_features<class_WebXRInterface_property_required_features>` o :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 .. rst-class:: classref-item-separator
 
@@ -501,13 +524,13 @@ I valori possibili provengono da `XRReferenceSpaceType di WebXR <https://develop
 - |void| **set_required_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_required_features**\ (\ )
 
-Un elenco separato da virgole delle funzionalità richieste utilizzate da :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` durante la configurazione della sessione WebXR.
+A comma-separated list of required features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-Se il browser o il dispositivo di un utente non supporta una delle funzionalità fornite, l'inizializzazione fallirà e verrà emesso :ref:`session_failed<class_WebXRInterface_signal_session_failed>`.
+If a user's browser or device doesn't support one of the given features, initialization will fail and :ref:`session_failed<class_WebXRInterface_signal_session_failed>` will be emitted.
 
-Ciò non ha alcun effetto sull'interfaccia quando è già inizializzata.
+This doesn't have any effect on the interface when already initialized.
 
-Consultare la documentazione MDN sulle `funzionalità di sessione WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ per una lista di possibili valori.
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 

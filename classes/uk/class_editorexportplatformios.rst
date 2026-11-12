@@ -546,7 +546,7 @@ EditorExportPlatformIOS
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple Team ID, унікальний 10-символьний рядок. Щоб знайти свій Team ID, перевірте "Membership details" у вашому обліковому записі Apple розробника, або "Organizational Unit" вашого сертифіката для підписки коду. Дивитися `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformIOS_property_application/bundle_identifier>`
 
-Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (``A-Z``, ``a-z``, а ``0-9``), гіфени (``-``), а також періоди (`` і ``).
+Унікальний ідентифікатор програми у форматі зворотних-DNS, може містити лише альфа-нумеричні символи (\ ``A-Z``, ``a-z``, а ``0-9``), гіфени (\ ``-``), а також періоди (\ `` і ``).
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/min_ios_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/min_ios_version>`
 
-Мінімальна версія iOS, яка необхідна для запуску в форматі ``major.minor.patch`` або ``major.minor``, може містити тільки числові символи (``0-9``) і періоди (`` і ``).
+Мінімальна версія iOS, яка необхідна для запуску в форматі ``major.minor.patch`` або ``major.minor``, може містити тільки числові символи (\ ``0-9``) і періоди (\ `` і ``).
 
 .. rst-class:: classref-item-separator
 
@@ -666,9 +666,9 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_debug>`
 
-Ім'я профілю налаштування. Встановлює Xcode PROVISIONING_PROFILE_SPECIFIER для налагодження. `Використовується для ручного налаштування <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Можна перевизначити змінною середовища ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -680,9 +680,9 @@ Apple Team ID, унікальний 10-символьний рядок. Щоб �
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_release>`
 
-Ім'я профілю забезпечення. Встановлює Xcode PROVISIONING_PROFILE_SPECIFIER для випуску. `Використовується для ручного забезпечення <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Name of the provisioning profile. Sets Xcode ``PROVISIONING_PROFILE_SPECIFIER`` for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Можна перевизначити змінною середовища ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -722,7 +722,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/short_version>`
 
-Версія програми, видима для користувача. Може містити тільки цифрові символи (``0-9``) і крапки (``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, видима для користувача. Може містити тільки цифрові символи (\ ``0-9``) і крапки (\ ``.``). Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для параметра *Identity > Version* у створеному проекті Xcode.
 
@@ -760,7 +760,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/version>`
 
-Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (``0-9``) та крапки (``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Версія програми, що зчитується машиною, у форматі ``major.minor.patch``. Може містити тільки цифрові символи (\ ``0-9``) та крапки (\ ``.``). Ця версія повинна збільшуватися з кожним новим випуском, що надсилається до App Store. Якщо поле залишено порожнім, використовується значення :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Примітка:** Це значення використовується для значення *Identity > Build* у згенерованому проекті Xcode.
 
@@ -774,7 +774,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformIOS_property_architectures/arm64>`
 
-``true``, ``arm64`` binaries включено до експортованого проекту.
+If ``true``, ``arm64`` binaries are included in the exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -800,7 +800,11 @@ UUID профілю забезпечення. Якщо залишити поро
 
 Додаткові дані додано до масиву ``UIRequiredDeviceCapabilities`` файлу ``Info.plist``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +921,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/app_store_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024>`
 
-Файл іконки додатків App Store. Якщо ліва порожня, вона повернеться до :ref:`ПроектуНалаштування.application/config/icon<class_ПроектуНалаштування_member_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+App Store application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +957,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024>`
 
-Значок базової програми, який використовується для створення інших значків. Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Base application icon used to generate other icons. If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +993,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_128x128** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128>`
 
-Файл значка програми iOS 64x64 (2x DPI). Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,7 +1005,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_128x128_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_dark>`
 
-Файл значка програми iOS 64x64 (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1013,7 +1017,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_128x128_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_tinted>`
 
-Файл значка програми iOS 64x64 (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1029,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_136x136** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136>`
 
-Файл значка програми iOS 68x68 (2x DPI). Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1037,7 +1041,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_136x136_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_dark>`
 
-Файл значка програми iOS 68x68 (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1049,7 +1053,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_136x136_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_tinted>`
 
-Файл значка програми iOS 68x68 (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 68×68 icon file (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1061,7 +1065,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_192x192** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192>`
 
-Файл значка програми iOS 64x64 (3x DPI). Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1077,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_192x192_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_dark>`
 
-Файл значка програми iOS 64x64 (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1089,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ios_192x192_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_tinted>`
 
-Файл значка програми iOS 64x64 (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+iOS application 64×64 icon file (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1097,7 +1101,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_152x152** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152>`
 
-Файл іконки на екрані iPad (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1113,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_152x152_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_dark>`
 
-Файл значка програми головного екрана на iPad (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1125,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_152x152_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_tinted>`
 
-Файл значка програми головного екрана на iPad (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1137,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_167x167** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167>`
 
-Файл іконки на екрані iPad (3x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_167x167_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_dark>`
 
-Файл значка програми головного екрана на iPad (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1161,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/ipad_167x167_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_tinted>`
 
-Файл значка додатка головного екрана на iPad (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPad (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1169,7 +1173,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120>`
 
-Файл іконки на екрані iPhone (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1185,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_dark>`
 
-Файл значка програми головного екрана на iPhone (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1197,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_tinted>`
 
-Файл значка додатка головного екрана на iPhone (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1209,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_180x180** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180>`
 
-Файл іконки на екрані iPhone (3x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1221,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_180x180_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_dark>`
 
-Файл значка програми головного екрана на iPhone (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1233,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/iphone_180x180_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_tinted>`
 
-Файл значка додатка головного екрана на iPhone (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Home screen application icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1245,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_40x40** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40>`
 
-Ім'я файл іконки IPad і iPhone (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1257,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_40x40_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_dark>`
 
-Файл значка сповіщень на iPad і iPhone (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1265,7 +1269,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_40x40_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_tinted>`
 
-Файл значків сповіщень на iPad і iPhone (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,7 +1281,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_60x60** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60>`
 
-Ім'я файл іконки iPhone (3x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,7 +1293,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_60x60_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_dark>`
 
-Файл значка сповіщення на iPhone (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1305,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_60x60_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_tinted>`
 
-Файл значка сповіщень на iPhone (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1313,7 +1317,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_76x76** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76>`
 
-Ім'я файл іконки IPad і iPhone (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1325,7 +1329,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_76x76_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_dark>`
 
-Файл значка сповіщень на iPad і iPhone (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1341,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_76x76_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_tinted>`
 
-Файл значків сповіщень на iPad і iPhone (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1353,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_114x114** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114>`
 
-Файл значка сповіщення на iPad і iPhone (3x DPI). Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1365,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_114x114_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_dark>`
 
-Файл значка сповіщень на iPad і iPhone (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1377,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/notification_114x114_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_tinted>`
 
-Файл значків сповіщень на iPad і iPhone (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Notification icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1385,7 +1389,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_58x58** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58>`
 
-Файл іконки додатків на iPad і iPhone (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1401,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_58x58_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_dark>`
 
-Файл значка налаштувань програми на iPad і iPhone (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1413,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_58x58_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_tinted>`
 
-Файл значка налаштувань програми на iPad і iPhone (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1425,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_87x87** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87>`
 
-Ім'я файла іконки додатків на iPhone (3x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1433,7 +1437,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_87x87_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_dark>`
 
-Файл значка налаштувань програми на iPhone (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1445,7 +1449,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/settings_87x87_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_tinted>`
 
-Файл значка налаштувань програми на iPhone (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Application settings icon file on iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1457,7 +1461,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_80x80** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80>`
 
-Імя файла іконки Spotlight на IPad і iPhone (2x DPI). Якщо ліва порожня, вона повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. ` Ікона підказка  <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1469,7 +1473,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_80x80_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_dark>`
 
-Файл піктограми Spotlight на iPad і iPhone (2x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1481,7 +1485,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_80x80_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_tinted>`
 
-Файл піктограми Spotlight на iPad і iPhone (2x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (2× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1493,7 +1497,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120>`
 
-Файл піктограми Spotlight на iPad і iPhone (3x DPI). Якщо залишити пустим, він повернеться до :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1505,7 +1509,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_dark>`
 
-Файл піктограми Spotlight на iPad і iPhone (3x DPI), темна версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1517,7 +1521,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **icons/spotlight_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`
 
-Файл піктограми Spotlight на iPad та iPhone (3x DPI), тонована версія. Див. `Значки додатків <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Spotlight icon file on iPad and iPhone (3× DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1541,7 +1545,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`
 
-Причини використання програми активного API клавіатури. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2009,7 +2013,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collected>`
 
-Повідомляє, чи працює ваша заявка.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2021,7 +2025,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-Причини вашого додатку збирає адресу електронної пошти. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2037,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Повідомляємо, що адреса електронної пошти вашого додатку до ідентичності користувача.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2049,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2825,7 +2829,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collected>`
 
-Повідомляє, чи працює ваш додаток.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2837,7 +2841,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-Причини вашого додатку збирає номер телефону. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2849,7 +2853,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Повідомляє, чи працює ваш номер телефону для користувача.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2861,7 +2865,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Введіть номер мобільного, який Ви вказали при укладаннi договору з банком - для ідентифікації.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2921,7 +2925,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collected>`
 
-Повідомляє, чи працює ваша заявка фізична адреса.
+Indicates whether your app collects physical addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -2933,7 +2937,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-Причини вашого додатку збирає фізична адреса. Див. `Describing data use in Privacy проявляється <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2945,7 +2949,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Повідомляємо, що фізична адреса вашого додатку до ідентичності користувача.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2957,7 +2961,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Повідомляє, чи використовує ваш додаток для відстеження.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3257,7 +3261,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/disk_space_access_reasons>`
 
-Причини використання вашого додатка безкоштовний інтерфейс дискового простору. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3269,7 +3273,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/file_timestamp_access_reasons>`
 
-Причини використання вашого додатка файл timestamp/metadata API. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3329,7 +3333,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/system_boot_time_access_reasons>`
 
-Причини часу завантаження програми / абсолютний час API. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3343,7 +3347,11 @@ UUID профілю забезпечення. Якщо залишити поро
 
 Список інтернет- доменів вашого додатка підключається до того, що за допомогою відстеження. Див. `Privacy проявляються файли <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3375,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/user_defaults_access_reasons>`
 
-Причини використання вашого додатка API за замовчуванням. Див. `Describing використання необхідної причини API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_required_reason_api>`__.
+The reasons your app uses user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3405,7 +3413,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **storyboard/custom_image@2x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@2x>`
 
-Файл зображення екрана запуску програми (2x DPI). Якщо залишити поле порожнім, буде використано файл :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
+Application launch screen image file (2× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3417,7 +3425,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`String<class_String>` **storyboard/custom_image@3x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@3x>`
 
-Файл зображення екрана запуску програми (3x DPI). Якщо залишити поле порожнім, буде використано файл :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
+Application launch screen image file (3× DPI). If left empty, it will fall back to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3441,7 +3449,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **storyboard/use_custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/use_custom_bg_color>`
 
-Якщо ``true``, то як колір фону екрана запуску використовується :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>`, інакше використовується налаштування проекту ``application/boot_splash/bg_color``.
+If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise the ``application/boot_splash/bg_color`` project setting is used.
 
 .. rst-class:: classref-item-separator
 
@@ -3453,7 +3461,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **user_data/accessible_from_files_app** :ref:`🔗<class_EditorExportPlatformIOS_property_user_data/accessible_from_files_app>`
 
-Якщо ``true``, папка "Документи" можна отримати через додаток "Файли". Див. `LSПідтримкаВідкривання документівInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
+Якщо ``true``, папка "Документи" можна отримати через додаток "Файли". Див. `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
 
 .. rst-class:: classref-item-separator
 

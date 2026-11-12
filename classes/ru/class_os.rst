@@ -108,6 +108,8 @@ OS
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`get_name<class_OS_method_get_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                     |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_preferred_locales<class_OS_method_get_preferred_locales>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                           |
+   +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_exit_code<class_OS_method_get_process_exit_code>`\ (\ pid\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                              |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_id<class_OS_method_get_process_id>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                         |
@@ -226,6 +228,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
+**Устарело:** This constant is not used by the engine.
+
 Драйвер рендеринга Vulkan. Он требует поддержки Vulkan 1.0 и автоматически использует функции Vulkan 1.1, 1.2 и 1.3, если они доступны.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
@@ -233,6 +237,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_OPENGL3** = ``1``
+
+**Устарело:** This constant is not used by the engine.
 
 Драйвер рендеринга OpenGL 3. Он использует OpenGL 3.3 Core Profile на настольных платформах, OpenGL ES 3.0 на мобильных устройствах и WebGL 2.0 на веб-устройствах.
 
@@ -242,6 +248,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
+**Устарело:** This constant is not used by the engine.
+
 Драйвер рендеринга Direct3D 12. Для его работы требуется уровень функциональности 12_0 и поддержка Shader Model 6.0.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
@@ -249,6 +257,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_METAL** = ``3``
+
+**Устарело:** This constant is not used by the engine.
 
 Драйвер рендеринга Metal.
 
@@ -505,13 +515,13 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`int<class_int>` **create_instance**\ (\ arguments\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_OS_method_create_instance>`
 
-Создает новый экземпляр Godot, который запускается независимо. ``arguments`` используются в указанном порядке и разделяются пробелом.
+Creates a new instance of Godot that runs independently. The ``arguments`` are used in the given order and separated by a space.
 
-Если процесс успешно создан, этот метод возвращает идентификатор нового процесса, который можно использовать для мониторинга процесса (и потенциального завершения его с помощью :ref:`kill()<class_OS_method_kill>`). Если процесс не может быть создан, этот метод возвращает ``-1``.
+If the process is successfully created, this method returns the new process's ID, which you can use to monitor the process (and potentially terminate it with :ref:`kill()<class_OS_method_kill>`). If the process cannot be created, this method returns ``-1``.
 
-См. :ref:`create_process()<class_OS_method_create_process>`, если вы хотите запустить другой процесс.
+See :ref:`create_process()<class_OS_method_create_process>` if you wish to run a different process.
 
-\ **Примечание:** Этот метод реализован в Android, Linux, macOS и Windows.
+\ **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -767,7 +777,7 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
             arguments[key_value[0].trim_prefix("--")] = key_value[1]
         else:
             # Параметры без аргументов будут присутствовать в словаре,
-                    # со значением, установленным в пустую строку.
+            # со значением, установленным в пустую строку.
             arguments[argument.trim_prefix("--")] = ""
 
  .. code-tab:: csharp
@@ -783,14 +793,14 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
         else
         {
             // Параметры без аргументов будут присутствовать в словаре,
-                    // со значением, установленным в пустую строку.
+            // со значением, установленным в пустую строку.
             arguments[argument.TrimPrefix("--")] = "";
         }
     }
 
 
 
-\ **Примечание:** Не рекомендуется передавать пользовательские аргументы напрямую, так как движок может их проигнорировать или изменить. Вместо этого передавайте стандартный двойной дефис UNIX (``--``), а затем пользовательские аргументы, которые движок по умолчанию игнорирует. Их можно прочитать с помощью :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Примечание:** Не рекомендуется передавать пользовательские аргументы напрямую, так как движок может их проигнорировать или изменить. Вместо этого передавайте стандартный двойной дефис UNIX (\ ``--``), а затем пользовательские аргументы, которые движок по умолчанию игнорирует. Их можно прочитать с помощью :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -983,19 +993,19 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_locale**\ (\ ) |const| :ref:`🔗<class_OS_method_get_locale>`
 
-Возвращает локаль ОС хоста как :ref:`String<class_String>` в форме ``language_Script_COUNTRY_VARIANT@extra``. Каждая подстрока после ``language`` является необязательной и может отсутствовать.
+Returns the host OS locale as a :ref:`String<class_String>` of the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
 
-- ``language`` - 2-х или 3-х буквенный `код языка <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ в нижнем регистре.
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
 
-- ``Script`` - 4-х буквенный `код скрипта <https://en.wikipedia.org/wiki/ISO_15924>`__ в верхнем регистре.
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
 
-- ``COUNTRY`` - 2-х или 3-х буквенный `код страны <https://en.wikipedia.org/wiki/ISO_3166-1>`__ в верхнем регистре.
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
 
-- ``VARIANT`` - языковой вариант, регион и порядок сортировки. Вариант может иметь любое количество подчеркнутых ключевых слов.
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
 
-- ``extra`` - список дополнительных ключевых слов, разделенных точкой с запятой. Это может включать информацию о валюте, календаре, порядке сортировки и системе нумерации.
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
 
-Если вам нужен только код языка, а не полностью указанная локаль из ОС, вы можете использовать :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
+If you want only the language code and not the fully specified locale from the OS, you can use :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1144,6 +1154,30 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 ----
 
+.. _class_OS_method_get_preferred_locales:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_preferred_locales**\ (\ ) |const| :ref:`🔗<class_OS_method_get_preferred_locales>`
+
+Returns an array of locales preferred by the user, in order of preference. Each locale is as a :ref:`String<class_String>` on the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
+
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
+
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
+
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
+
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
+
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
+
+\ **Note:** This method is implemented on macOS, iOS, and Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OS_method_get_process_exit_code:
 
 .. rst-class:: classref-method
@@ -1194,9 +1228,9 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_processor_name**\ (\ ) |const| :ref:`🔗<class_OS_method_get_processor_name>`
 
-Возвращает полное имя модели ЦП на хост-компьютере (например, ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
+Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
 
-\ **Примечание:** Этот метод реализован только в Windows, macOS, Linux и iOS. На Android и в Интернете :ref:`get_processor_name()<class_OS_method_get_processor_name>` возвращает пустую строку.
+\ **Note:** This method is only implemented on Windows, macOS, Linux, Android (API level 31+), and iOS. On Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` returns an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -1410,21 +1444,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **get_user_data_dir**\ (\ ) |const| :ref:`🔗<class_OS_method_get_user_data_dir>`
 
-Возвращает абсолютный путь к каталогу, в который записываются пользовательские данные (каталог ``user://`` в Godot). Путь зависит от имени проекта и :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`.
+Returns the absolute directory path where user data is written (the ``user://`` directory in Godot). The path depends on the project name and :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`.
 
-- В Windows это ``%AppData%\Godot\app_userdata\[project_name]`` или ``%AppData%\[custom_name]``, если задано ``use_custom_user_dir``. ``%AppData%`` расширяется до ``%UserProfile%\AppData\Roaming``.
+- On Windows, this is ``%AppData%\Godot\app_userdata\[project_name]``, or ``%AppData%\[custom_name]`` if ``use_custom_user_dir`` is set. ``%AppData%`` expands to ``%UserProfile%\AppData\Roaming``.
 
-- В macOS это ``~/Library/Application Support/Godot/app_userdata/[project_name]`` или ``~/Library/Application Support/[custom_name]``, если задано ``use_custom_user_dir``.
+- On macOS, this is ``~/Library/Application Support/Godot/app_userdata/[project_name]``, or ``~/Library/Application Support/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- В Linux и BSD это ``~/.local/share/godot/app_userdata/[project_name]`` или ``~/.local/share/[custom_name]``, если задано ``use_custom_user_dir``.
+- On Linux and BSD, this is ``~/.local/share/godot/app_userdata/[project_name]``, or ``~/.local/share/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- В Android и iOS это изолированный каталог во внутреннем или внешнем хранилище в зависимости от конфигурации пользователя.
+- On Android and iOS, this is a sandboxed directory in either internal or external storage, depending on the user's configuration.
 
-- В Web это виртуальный каталог, управляемый браузером.
+- On Web, this is a virtual directory managed by the browser.
 
-Если имя проекта пустое, ``[project_name]`` возвращается к ``[unnamed project]``.
+If the project name is empty, ``[project_name]`` falls back to ``[unnamed project]``.
 
-Не путать с :ref:`get_data_dir()<class_OS_method_get_data_dir>`, который возвращает *глобальный* (не относящийся к проекту) домашний каталог пользователя.
+Not to be confused with :ref:`get_data_dir()<class_OS_method_get_data_dir>`, which returns the *global* (non-project-specific) user home directory.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,19 +1798,19 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`String<class_String>` **read_string_from_stdin**\ (\ buffer_size\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_OS_method_read_string_from_stdin>`
 
-Считывает пользовательский ввод как строку в кодировке UTF-8 из стандартного ввода. Эта операция может быть *блокирующей*, что приводит к замораживанию окна, если :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>` вызывается в основном потоке.
+Reads a user input as a UTF-8 encoded string from the standard input. This operation can be *blocking*, which causes the window to freeze if :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>` is called on the main thread.
 
-- Если стандартный ввод — консоль, этот метод будет блокироваться до тех пор, пока программа не получит разрыв строки в стандартном вводе (обычно нажатием пользователем :kbd:`Enter`).
+- If standard input is console, this method will block until the program receives a line break in standard input (usually by the user pressing :kbd:`Enter`).
 
-- Если стандартный ввод — канал, этот метод будет блокироваться до тех пор, пока не будет прочитано определенное количество данных или канал не будет закрыт.
+- If standard input is pipe, this method will block until a specific amount of data is read or pipe is closed.
 
-- Если стандартный ввод — файл, этот метод прочитает определенное количество данных (или меньше, если достигнут конец файла) и немедленно вернет управление.
+- If standard input is a file, this method will read a specific amount of data (or less if end-of-file is reached) and return immediately.
 
-\ **Примечание:** Этот метод автоматически заменяет разрывы строк ``\r\n`` на ``\n`` и удаляет их из конца строки. Используйте :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` для чтения необработанных данных.
+\ **Note:** This method automatically replaces ``\r\n`` line breaks with ``\n`` and removes them from the end of the string. Use :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` to read the unprocessed data.
 
-\ **Примечание:** Этот метод реализован в Linux, macOS и Windows.
+\ **Note:** This method is implemented on Linux, macOS, and Windows.
 
-\ **Примечание:** В экспортированных сборках Windows запустите исполняемый файл оболочки консоли, чтобы получить доступ к терминалу. Если стандартный ввод — консоль, вызов этого метода без оболочки консоли зависнет навсегда. Если стандартный ввод — канал или файл, его можно использовать без оболочки консоли. Если вам нужен один исполняемый файл с полной поддержкой консоли, используйте пользовательскую сборку, скомпилированную с флагом ``windows_subsystem=console``.
+\ **Note:** On exported Windows builds, run the console wrapper executable to access the terminal. If standard input is console, calling this method without console wrapped will freeze permanently. If standard input is pipe or file, it can be used without console wrapper. If you need a single executable with full console support, use a custom build compiled with the ``windows_subsystem=console`` flag.
 
 .. rst-class:: classref-item-separator
 
@@ -1912,21 +1946,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-Запрашивает у ОС открытие ресурса, указанного параметром ``uri``, с помощью наиболее подходящей программы. Например:
+Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` в Windows открывает проводник файлов в папке «Загрузки» пользователя.
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` также работает в Windows и открывает проводник файлов в папке «Загрузки» пользователя.
+- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("https://godotengine.org")`` открывает веб-браузер по умолчанию на официальном сайте Godot.
+- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
 
-- ``OS.shell_open("mailto:example@example.com")`` открывает почтовый клиент по умолчанию с полем «Кому», установленным на ``example@example.com``. См. `RFC 2368 - Схема URL-адресов mailto <https://datatracker.ietf.org/doc/html/rfc2368>`__ для списка полей, которые можно добавить.
+- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
 
-Используйте :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` для преобразования пути проекта ``res://`` или ``user://`` в системный путь для использования с этим методом.
+Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
 
-\ **Примечание:** Используйте :ref:`String.uri_encode()<class_String_method_uri_encode>` для кодирования символов в URL-адресах безопасным и переносимым способом. Это особенно необходимо для переносов строк. В противном случае :ref:`shell_open()<class_OS_method_shell_open>` может работать некорректно в проекте, экспортированном на веб-платформу.
+\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
 
-\ **Примечание:** Этот метод реализован на Android, iOS, Web, Linux, macOS и Windows.
+\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

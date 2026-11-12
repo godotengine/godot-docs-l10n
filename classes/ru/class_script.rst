@@ -191,7 +191,9 @@ Script
 
 :ref:`Variant<class_Variant>` **get_property_default_value**\ (\ property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Script_method_get_property_default_value>`
 
-Возвращает значение по умолчанию указанного свойства.
+Returns the default value of the specified property.
+
+\ **Note:** In GDScript and C#, this method returns ``null`` outside of editor builds.
 
 .. rst-class:: classref-item-separator
 

@@ -302,7 +302,7 @@ Restituisce ``true`` se l'array contiene ``value``.
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_insert>`
 
-Inserisce un nuovo intero in una posizione specificata nell'array. La posizione deve essere valida o alla fine dell'array (``idx == size()``).
+Inserisce un nuovo intero in una posizione specificata nell'array. La posizione deve essere valida o alla fine dell'array (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Accoda un valore all'array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_remove_at>`
 
-Rimuove un elemento dall'array in base all'indice.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

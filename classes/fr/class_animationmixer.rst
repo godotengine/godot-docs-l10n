@@ -438,7 +438,7 @@ La notification de processus dans laquelle mettre à jour les animations.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-Si ``true``, le mélange utilise l'algorithme déterministe. Le poids total n'est pas normalisé et le résultat est accumulé avec une valeur initiale (``0`` ou une animation ``"RESET"`` si elle est présente).
+Si ``true``, le mélange utilise l'algorithme déterministe. Le poids total n'est pas normalisé et le résultat est accumulé avec une valeur initiale (\ ``0`` ou une animation ``"RESET"`` si elle est présente).
 
 Cela signifie que si la quantité totale du mélange est de ``0.0``, le résultat est égal à l'animation ``"RESET"``.
 

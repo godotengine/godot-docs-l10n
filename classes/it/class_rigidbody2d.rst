@@ -130,6 +130,10 @@ Metodi
    +----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                    | :ref:`get_contact_count<class_RigidBody2D_method_get_contact_count>`\ (\ ) |const|                                                                                            |
    +----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                            | :ref:`get_velocity_at_local_position<class_RigidBody2D_method_get_velocity_at_local_position>`\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const|                  |
+   +----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                            | :ref:`get_velocity_at_position<class_RigidBody2D_method_get_velocity_at_position>`\ (\ global_point\: :ref:`Vector2<class_Vector2>`\ ) |const|                                |
+   +----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                   | :ref:`set_axis_velocity<class_RigidBody2D_method_set_axis_velocity>`\ (\ axis_velocity\: :ref:`Vector2<class_Vector2>`\ )                                                     |
    +----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -963,6 +967,38 @@ Restituisce una lista dei corpi in collisione con questo corpo. Richiede che :re
 Restituisce il numero di contatti che questo corpo ha con altri corpi. Per impostazione predefinita, restituisce 0 a meno che i corpi non siano configurati per monitorare i contatti (vedi :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>`).
 
 \ **Nota:** Per recuperare i corpi in collisione, usa :ref:`get_colliding_bodies()<class_RigidBody2D_method_get_colliding_bodies>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RigidBody2D_method_get_velocity_at_local_position:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_RigidBody2D_method_get_velocity_at_local_position>`
+
+Returns the body's velocity at the given relative position.
+
+\ ``local_position`` is the offset from the body origin in global coordinates.
+
+See also :ref:`get_velocity_at_position()<class_RigidBody2D_method_get_velocity_at_position>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RigidBody2D_method_get_velocity_at_position:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_velocity_at_position**\ (\ global_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_RigidBody2D_method_get_velocity_at_position>`
+
+Returns the body's velocity at the given global position.
+
+This is equivalent to ``get_velocity_at_local_position(global_point - global_position)``.
+
+See also :ref:`get_velocity_at_local_position()<class_RigidBody2D_method_get_velocity_at_local_position>`.
 
 .. rst-class:: classref-item-separator
 

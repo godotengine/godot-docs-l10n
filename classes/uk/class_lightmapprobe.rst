@@ -16,7 +16,7 @@ LightmapProbe
 
 **LightmapProbe** являє собою позицію одного ручного розміщення зонда для динамічного освітлення об'єкта з :ref:`LightmapGI<class_LightmapGI>`. Lightmap зондує вплив на освітлення :ref:`GeometryInstance3D<class_GeometryInstance3D>`-деревих вузлів, які мають їх :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`, встановлених до :ref:`GeometryInstance3D.GI_MODE_DYNAMIC<class_GeometryInstance3D_constant_GI_MODE_DYNAMIC>`.
 
-Зазвичай, :ref:`LightmapGI<class_LightmapGI>` зонди розміщуються автоматично, встановлюючи :ref:`LightmapGI.generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` на значення, відмінне від :ref:`LightmapGI. GENERATE_PROBES_DISABLED<class_LightmapGI_constant_ GENERATE_PROBES_DISABLED>`. При створенні **LightmapProbe** вузли перед випіканням Lightmaps ви можете додати більше зон в певні області для більш детальної інформації, або вимкнути автоматичне генерування і спиратися тільки на вручну розміщені зонди замість.
+Зазвичай, :ref:`LightmapGI<class_LightmapGI>` зонди розміщуються автоматично, встановлюючи :ref:`LightmapGI.generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` на значення, відмінне від :ref:`LightmapGI.GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>`. При створенні **LightmapProbe** вузли перед випіканням Lightmaps ви можете додати більше зон в певні області для більш детальної інформації, або вимкнути автоматичне генерування і спиратися тільки на вручну розміщені зонди замість.
 
 \ **Примітка:** **LightmapProbe** вершини, які розміщуються після випікання Lightmap ігноруються динамічними об'єктами. Після створення або модифікації **LightmapProbe** для зон, які повинні бути ефективними.
 

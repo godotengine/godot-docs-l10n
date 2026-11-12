@@ -1679,9 +1679,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-如果为 ``true``\ ，则视口中渲染的对象会成为鼠标拾取过程中的候选。
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **注意：**\ 同时能够被拾取的对象最多只有 64 个，选择的顺序是不确定的，每次拾取可能都不相同。
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-如果为 ``true``\ ，则鼠标拾取的过程中只会将 input_event 信号发送给一个物理对象。如果你只希望获取最顶层的对象，就必须同时启用 :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`\ 。
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-如果为 ``false``\ ，则鼠标拾取的过程中会将 input_event 信号发送给所有物理对象。
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-仅适用于 2D CanvasItem 对象的拾取。
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-如果为 ``true``\ ，则对象会按照固定的顺序接收鼠标拾取事件，首先会按各自的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 排序，然后按它们在场景树中的位置排序。如果为 ``false``\ ，则顺序不确定。
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **注意：**\ 默认情况下禁用此设置，因为它可能会产生昂贵的计算成本。
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **注意：**\ 排序发生在选择可拾取对象之后。因为同时能够被拾取的对象最多只有 64 个，所以无法保证 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 最大的对象能够接收到拾取事件。
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-阴影图集的分辨率（用于全向灯和聚光灯）。该值将向上舍入到最接近的 2 次幂。
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **注意：**\ 如果设置为 ``0``\ ，将根本看不到任何阴影（包括定向阴影）。可以通过降低 CPU 和 GPU 负载来显著提升在低端系统上的性能（因为绘制不带阴影的场景需要的绘制调用更少）。
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-返回该视口的纹理
+Returns the viewport's texture.
 
-\ **注意：**\ 保存当前纹理时（例如保存到文件中），如果时机过早则可能是全黑或过时的图片，尤其是在 :ref:`Node._ready()<class_Node_private_method__ready>` 等函数中使用时。要确保获得正确的纹理，你可以等待 :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` 信号。
+\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
 
 
 .. tabs::
@@ -2428,7 +2428,7 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 
 
-\ **注意：**\ :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，返回的纹理将是使用线性编码的 HDR 图像。
+\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
 
 .. rst-class:: classref-item-separator
 

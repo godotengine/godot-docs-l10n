@@ -275,7 +275,7 @@ La región que se usará de la :ref:`texture<class_StyleBoxTexture_property_text
 
 Esto equivale a envolver primero la :ref:`texture<class_StyleBoxTexture_property_texture>` en una :ref:`AtlasTexture<class_AtlasTexture>` con la misma región.
 
-Si está vacío (``Rect2(0, 0, 0, 0)``), se usa toda la :ref:`texture<class_StyleBoxTexture_property_texture>`.
+Si está vacío (\ ``Rect2(0, 0, 0, 0)``), se usa toda la :ref:`texture<class_StyleBoxTexture_property_texture>`.
 
 .. rst-class:: classref-item-separator
 

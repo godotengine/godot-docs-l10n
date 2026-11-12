@@ -113,7 +113,7 @@ CollisionObject3D
 
 **input_event**\ (\ camera\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_signal_input_event>`
 
-當物件收到未處理的 :ref:`InputEvent<class_InputEvent>` 時發出。\ ``event_position`` 是滑鼠指針在索引為 ``shape_idx`` 的形狀表面上的世界空間位置，\ ``normal`` 是表面在該點的法向量。
+Emitted when an unhandled input event occurs. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set. See :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` for details.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-該 CollisionObject3D **所在的**\ 實體層。碰撞物件可以存在於 32 個不同層中的一層或多層。另見 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`\ 。
+The physics layers this CollisionObject3D **is in**. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`. For an easier way to change this value from a script, see :ref:`set_collision_layer_value()<class_CollisionObject3D_method_set_collision_layer_value>`.
 
-\ **注意：**\ 只有當物件 B 位於物件 A 掃描的任何層中時，物件 A 才能偵測到與對象 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-該 CollisionObject3D **掃描的**\ 實體層。碰撞物件可以掃描 32 個不同層中的一層或多層。另見 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`\ 。
+The physics layers this CollisionObject3D **scans**. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`. For an easier way to change this value from a script, see :ref:`set_collision_mask_value()<class_CollisionObject3D_method_set_collision_mask_value>`.
 
-\ **注意：**\ 只有當物件 B 位於物件 A 掃描的任何層中時，物件 A 才能偵測到與對象 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,13 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **_input_event**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`, event_position\: :ref:`Vector3<class_Vector3>`, normal\: :ref:`Vector3<class_Vector3>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject3D_private_method__input_event>`
 
-接收未處理的 :ref:`InputEvent<class_InputEvent>`\ 。\ ``event_position`` 是滑鼠指針在索引為 ``shape_idx`` 的形狀表面上的世界空間位置，\ ``normal`` 是該點表面的法向量。連接到 :ref:`input_event<class_CollisionObject3D_signal_input_event>` 訊號即可輕鬆取得這些事件。
+Detects unhandled mouse and touch :ref:`InputEvent<class_InputEvent>`\ s through ``event`` when they happen while hovering over the object. Gesture events are not detected. ``camera`` is the :ref:`Camera3D<class_Camera3D>` that the event originated in (for cameras inside viewports other than the main one to be detected, the parent :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>` needs to be set to ``true``). ``event_position`` is the position hit by a raycast from the camera to the mouse, in global space. ``normal`` is the normal vector of the surface at that point in world space. ``shape_idx`` is the index of the detected shape from :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
-\ **注意：**\ :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` 要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true``\ ，並且至少要設定一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
+See also :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, :ref:`shape_find_owner()<class_CollisionObject3D_method_shape_find_owner>`, and :ref:`shape_owner_get_owner()<class_CollisionObject3D_method_shape_owner_get_owner>`.
+
+\ **Note:** :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` events are triggered if the drag events started while hovering the object, or when the object is in the path of the drag event.
+
+\ **Note:** :ref:`_input_event()<class_CollisionObject3D_private_method__input_event>` requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +438,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或停用 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject3D**'s collision layer compared to assigning the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +450,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或停用 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32. This simplifies editing this **CollisionObject3D**'s collision mask compared to assigning the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` property directly.
 
 .. rst-class:: classref-item-separator
 

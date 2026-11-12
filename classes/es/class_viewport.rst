@@ -725,11 +725,11 @@ Los objetos se muestran semitransparentes con mezcla aditiva para que puedas ver
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Objects are displayed as wireframe models.
+Los objetos se muestran como modelos de estructura alámbrica.
 
-\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Nota:** Se debe llamar a :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` antes de cargar cualquier malla para que las estructuras alámbricas sean visibles al utilizar el renderizador de Compatibility.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Nota:** En el renderizador Compatibility, las caras posteriores siempre son visibles al utilizar el modo de estructura alámbrica. En los renderizadores Forward+ y Mobile, la visualización de las estructuras alámbricas respeta las propiedades de eliminación de caras posteriores del material.
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -1679,9 +1679,9 @@ Si es ``true``, el viewport utilizará una copia única del :ref:`World3D<class_
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-Si es ``true``, los objetos renderizados por el viewport se convierten en sujetos del proceso de selección del ratón.
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **Nota:** El número de objetos seleccionables simultáneamente está limitado a 64 y se seleccionan en un orden no determinista, que puede ser diferente en cada proceso de selección.
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ Si es ``true``, los objetos renderizados por el viewport se convierten en sujeto
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Si es ``true``, la señal input_event solo se enviará a un objeto físico en el proceso de selección del ratón. Si quieres obtener solo el objeto superior, también debes habilitar :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Si es ``false``, se enviará una señal input_event a todos los objetos físicos en el proceso de selección del ratón.
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-Esto se aplica solo a la selección de objetos 2D CanvasItem.
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ Esto se aplica solo a la selección de objetos 2D CanvasItem.
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Si es ``true``, los objetos reciben los eventos de selección del ratón ordenados principalmente por su :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` y secundariamente por su posición en el árbol de escenas. Si es ``false``, el orden es indeterminado.
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **Nota:** Esta configuración está deshabilitada por defecto debido a su potencial costo computacional.
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **Nota:** La ordenación ocurre después de seleccionar los objetos seleccionables. Debido a la limitación de 64 objetos seleccionables simultáneamente, no se garantiza que el objeto con el :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` más alto reciba el evento de selección.
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ La cantidad de subdivisión del cuarto cuadrante en el atlas de las sombras.
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-La resolución del atlas de las sombras (usado para luces omni y spot). El valor se redondea a la potencia de 2 más cercana.
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **Nota:** Si se establece a ``0``, ninguna sombra posicional será visible. Esto puede mejorar el rendimiento significativamente en sistemas de gama baja al reducir tanto la carga de la CPU como la de la GPU (ya que se necesitan menos llamadas de dibujado para dibujar la escena sin sombras).
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 

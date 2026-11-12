@@ -392,7 +392,7 @@ Devuelve ``true`` si ``point`` está dentro de ``polygon`` o si está situado ex
 
 Devuelve ``true`` si los vértices de ``polygon`` están ordenados en el sentido de las agujas del reloj, de lo contrario devuelve ``false``.
 
-\ **Nota:** Asume un sistema de coordenadas cartesianas donde ``+x`` está a la derecha y ``+y`` está arriba. Si usas coordenadas de pantalla (``+y`` está abajo), el resultado tendrá que ser invertido (es decir, un resultado ``true`` indicará el sentido contrario a las agujas del reloj).
+\ **Nota:** Asume un sistema de coordenadas cartesianas donde ``+x`` está a la derecha y ``+y`` está arriba. Si usas coordenadas de pantalla (\ ``+y`` está abajo), el resultado tendrá que ser invertido (es decir, un resultado ``true`` indicará el sentido contrario a las agujas del reloj).
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Devuelve ``true`` si los vértices de ``polygon`` están ordenados en el sentido
 
 Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (\ ``dir``) and a known point (\ ``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::

@@ -122,7 +122,11 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 
 :ref:`GLTFState<class_GLTFState>` 中子节点的索引。如果该 glTF 节点没有子节点，则这将是一个空数组。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

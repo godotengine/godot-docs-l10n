@@ -197,7 +197,7 @@ Le type de forme que cette forme représente. Les valeurs valides sont ``"box"``
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-La taille de la forme, en mètres. Ceci est utilisé uniquement lorsque le type de forme est ``"box"``, et elle représente le diamètre (``"diameter"``) de la boîte. Cette valeur ne devrait pas être négative.
+La taille de la forme, en mètres. Ceci est utilisé uniquement lorsque le type de forme est ``"box"``, et elle représente le diamètre (\ ``"diameter"``) de la boîte. Cette valeur ne devrait pas être négative.
 
 .. rst-class:: classref-section-separator
 

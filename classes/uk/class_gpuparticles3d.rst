@@ -495,7 +495,7 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -928,11 +928,13 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 |void| **emit_particle**\ (\ xform\: :ref:`Transform3D<class_Transform3D>`, velocity\: :ref:`Vector3<class_Vector3>`, color\: :ref:`Color<class_Color>`, custom\: :ref:`Color<class_Color>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GPUParticles3D_method_emit_particle>`
 
-Випромінює одну частинку. Чи застосовуються ``xform``, ``velocity``, ``color`` і ``custom``, залежить від значення ``flags``. Див. :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>`. 
+Emits a single particle. Whether ``xform``, ``velocity``, ``color`` and ``custom`` are applied depends on the value of ``flags``. See :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>`.
 
-За замовчуванням ParticleProcessMaterial перезапише ``color`` і використає вміст ``custom`` як ``(rotation, age, animation, lifetime)``. 
+The default ParticleProcessMaterial needs to have :ref:`ParticleProcessMaterial.particle_flag_preserve_color<class_ParticleProcessMaterial_property_particle_flag_preserve_color>` set to ``true`` to correctly use the color given from this function.
 
-\ **Примітка:** :ref:`emit_particle()<class_GPUParticles3D_method_emit_particle>` підтримується лише методами візуалізації Forward+ і Mobile, а не Compatibility.
+Additionally, it will use the contents of ``custom`` as ``(rotation, lifetime, animation, lifetime randomness)``.
+
+\ **Note:** :ref:`emit_particle()<class_GPUParticles3D_method_emit_particle>` is only supported on the Forward+ and Mobile rendering methods, not Compatibility.
 
 .. rst-class:: classref-item-separator
 

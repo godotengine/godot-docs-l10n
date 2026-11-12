@@ -343,7 +343,11 @@ Lo stile dei collegamenti tra i segmenti della polilinea.
 
 I punti della polilinea, interpretati in coordinate 2D locali. I segmenti sono disegnati tra i punti adiacenti in questo array.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

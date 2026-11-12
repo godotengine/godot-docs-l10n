@@ -242,7 +242,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 Кліпи ``polygon_a`` проти ``polygon_b`` і повертає масив кліпованих полігонів. Це виконує :ref:`OPERATION_DIFFERENCE<class_Geometry2D_constant_OPERATION_DIFFERENCE>` між полігонами. Повертає порожній масив, якщо ``polygon_b`` повністю перекриття ``polygon_a``.
 
-Якщо ``polygon_b`` закривається ``polygon_a``, повертає зовнішній полігон (кордонний) і внутрішній полігон (отримка), який може відрізнятися за допомогою виклику :ref:`_polygon_clockwise()<class_Geometry2D_private_method__polygon_clockwise>`.
+Якщо ``polygon_b`` закривається ``polygon_a``, повертає зовнішній полігон (кордонний) і внутрішній полігон (отримка), який може відрізнятися за допомогою виклику :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 Мутуально виключає поширену площу, визначену перехрестям ``polygon_a`` і ``polygon_b`` (див. :ref:`intersect_polygons()<class_Geometry2D_method_intersect_polygons>`) і повертає масив виключених полігонів. Це виконує :ref:`OPERATION_XOR<class_Geometry2D_constant_OPERATION_XOR>` між полігонами. Іншими словами, повертає всі, але загальна площа між полігонами.
 
-Операція може призвести до зовнішнього полігону (кордонного) і внутрішнього полігону (холоща) виробництва, який може відрізнятися за допомогою виклику :ref:`_polygon_clockwise()<class_Geometry2D_private_method__polygon_clockwise>`.
+Операція може призвести до зовнішнього полігону (кордонного) і внутрішнього полігону (холоща) виробництва, який може відрізнятися за допомогою виклику :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 Інтерсекти ``polygon_a`` з ``polygon_b`` і повертає масив інтерсекційних полігонів. Це виконує :ref:`OPERATION_INTERSECTION<class_Geometry2D_constant_OPERATION_INTERSECTION>` між полігонами. Іншими словами, повертає загальну площу, поділений полігонами. Повертає порожній масив, якщо не відбувається перетин.
 
-Операція може призвести до зовнішнього полігону (кордонного) і внутрішнього полігону (холоща) виробництва, який може відрізнятися за допомогою виклику :ref:`_polygon_clockwise()<class_Geometry2D_private_method__polygon_clockwise>`.
+Операція може призвести до зовнішнього полігону (кордонного) і внутрішнього полігону (холоща) виробництва, який може відрізнятися за допомогою виклику :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 Повертаємо ``true``, якщо ``polygon`` будуть замовлені годинниковим замовленням, інакше повертає ``false``.
 
-\ **Примітка:** Припустимо, що система координації коробки, де `` +x`` є правою і `` +y``. Якщо використовувати координати екрана (`` +y`` вниз), то результат буде потрібно розбити (тобто ``true`` результат буде вказувати на проти годинникової стрілки.
+\ **Примітка:** Припустимо, що система координації коробки, де `` +x`` є правою і `` +y``. Якщо використовувати координати екрана (\ `` +y`` вниз), то результат буде потрібно розбити (тобто ``true`` результат буде вказувати на проти годинникової стрілки.
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 Повертає точку перетину двох прямих (``from_a``, ``dir_a``) та (``from_b``, ``dir_b``). Повертає :ref:`Vector2<class_Vector2>` або ``null``, якщо прямі паралельні.
 
-\ ``from`` та ``dir`` — це *не* кінцеві точки відрізка або променя, а нахил (``dir``) та відома точка (``from``) на цій лінії. Щоб отримати точку перетину двох відрізків, використовуйте :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` та ``dir`` — це *не* кінцеві точки відрізка або променя, а нахил (\ ``dir``) та відома точка (\ ``from``) на цій лінії. Щоб отримати точку перетину двох відрізків, використовуйте :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -463,7 +463,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 ``polygon_a`` і ``polygon_b`` і повертає масив зливних полігонів. Це виконує :ref:`OPERATION_UNION<class_Geometry2D_constant_OPERATION_UNION>` між полігонами.
 
-Операція може призвести до зовнішнього полігону (корпусного) і декількох внутрішніх полігонів (холок) виробництва яких можна відрізняти за допомогою виклику :ref:`_polygon_clockwise()<class_Geometry2D_private_method__polygon_clockwise>`.
+Операція може призвести до зовнішнього полігону (корпусного) і декількох внутрішніх полігонів (холок) виробництва яких можна відрізняти за допомогою виклику :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
 
 .. rst-class:: classref-item-separator
 

@@ -63,7 +63,7 @@ Establece el tiempo en segundos después del cual el **MethodTweener** comenzar�
 
 :ref:`MethodTweener<class_MethodTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_MethodTweener_method_set_ease>`
 
-Establece el tipo de easing usado de :ref:`EaseType<enum_Tween_EaseType>`. Si no se establece, se usa el easing por defecto del :ref:`Tween<class_Tween>` que contiene este Tweener.
+Establece el tipo de suavizado que se utilizará de :ref:`EaseType<enum_Tween_EaseType>`. Si no se establece, se usa el suavizado predeterminado del :ref:`Tween<class_Tween>` que contiene este Tweener.
 
 .. rst-class:: classref-item-separator
 

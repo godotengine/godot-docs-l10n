@@ -223,7 +223,7 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 \ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (\ ``{}``). Otherwise, a dictionary will always evaluate to ``true``.
 
 .. note::
 
@@ -900,7 +900,7 @@ Devuelve ``true`` si los dos diccionarios contienen las mismas claves y valores.
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Establece el valor del elemento en la clave ``key`` dada al valor ``value`` dado. Devuelve ``true`` si el valor se establece con éxito. Falla y devuelve ``false`` si el diccionario es de solo lectura, o si ``key`` y ``value`` no coinciden con los tipos del diccionario. Esto es lo mismo que usar el operador ``[]`` (``dict[key] = value``).
+Establece el valor del elemento en la clave ``key`` dada al valor ``value`` dado. Devuelve ``true`` si el valor se establece con éxito. Falla y devuelve ``false`` si el diccionario es de solo lectura, o si ``key`` y ``value`` no coinciden con los tipos del diccionario. Esto es lo mismo que usar el operador ``[]`` (\ ``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 
@@ -912,7 +912,7 @@ Establece el valor del elemento en la clave ``key`` dada al valor ``value`` dado
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_size>`
 
-Devuelve el número de entradas en el diccionario. Los diccionarios vacíos (``{ }``) siempre devuelven ``0``. Véase también :ref:`is_empty()<class_Dictionary_method_is_empty>`.
+Devuelve el número de entradas en el diccionario. Los diccionarios vacíos (\ ``{ }``) siempre devuelven ``0``. Véase también :ref:`is_empty()<class_Dictionary_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -924,7 +924,7 @@ Devuelve el número de entradas en el diccionario. Los diccionarios vacíos (``{
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Dictionary_method_sort>`
 
-Ordena el diccionario en orden ascendente, por clave. El orden final depende de la comparación "menos que" (``<``) entre claves.
+Ordena el diccionario en orden ascendente, por clave. El orden final depende de la comparación "menos que" (\ ``<``) entre claves.
 
 
 .. tabs::

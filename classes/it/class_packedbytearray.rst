@@ -12,13 +12,13 @@ Un array compatto di byte.
 Descrizione
 ----------------------
 
-Un array specificamente progettato per contenere byte. Impacchetta i dati in modo compatto, in modo da risparmiare memoria per array di grandi dimensioni.
+An array specifically designed to hold bytes (integers between ``0`` and ``255``). Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** fornisce anche metodi per codificare/decodificare vari tipi da/a byte. Il modo in cui i valori sono codificati è un dettaglio di implementazione e non ci si dovrebbe dipendere quando si interagisce con applicazioni esterne.
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **Nota:** Gli array impacchettati sono sempre passati per riferimento. Per ottenere una copia di un array che si può modificare indipendentemente dall'array originale, usa :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Questo *non* è il caso per le proprietà e per i metodi integrati. In tali casi l'array impacchettato restituito è una copia, e modificarlo *non* influenzerà il valore originale. Per aggiornare una proprietà integrata di questo tipo è necessario modificare l'array restituito e poi riassegnarlo alla proprietà.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
 
-\ **Nota:** In un contesto booleano, un array impacchettato sarà valutato come ``false`` se è vuoto. Altrimenti, un array impacchettato sarà sempre valutato come ``true``.
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 
@@ -241,7 +241,25 @@ Costruisce un **PackedByteArray** come copia del **PackedByteArray** specificato
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Costruisce un nuovo **PackedByteArray**. È possibile passare un :ref:`Array<class_Array>` generico che sarà convertito.
+Constructs a new **PackedByteArray** from a generic :ref:`Array<class_Array>`.
+
+Boolean ``false`` and ``true`` are converted to ``0`` and ``1`` respectively.
+
+Integers from the generic Array outside the byte range will overflow and roll over.
+
+Floating-point numbers from the generic Array are converted to integers by truncating the decimal part. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Strings from the generic Array are converted to integers using :ref:`String.to_int()<class_String_method_to_int>`, with ``0`` as a fallback value if no integer can be parsed from the string. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Other values from the generic Array that cannot be converted into an integer are initialized to ``0``.
+
+::
+
+    print(PackedByteArray([true, false])) # Prints [1, 0]
+    print(PackedByteArray([-1, 0, 255, 256, 300])) # Prints [255, 0, 255, 0, 44]
+    print(PackedByteArray([-1.0, 0.0, 1.0, 1.9, 2.0, 500.0])) # Prints [255, 0, 1, 1, 2, 244]
+    print(PackedByteArray(["", "10", "123.456", "-1 but valid", "invalid"])) # Prints [0, 10, 123, 255, 0]
+    print(PackedByteArray([Object.new(), Callable(), Signal()])) # Prints [0, 0, 0]
 
 .. rst-class:: classref-section-separator
 
@@ -538,13 +556,13 @@ Restituisce un nuovo **PackedByteArray** con i dati decompressi. Imposta ``buffe
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress_dynamic**\ (\ max_output_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress_dynamic>`
 
-Restituisce un nuovo **PackedByteArray** con i dati decompressi. Imposta la modalità di compressione usando una delle costanti di :ref:`CompressionMode<enum_FileAccess_CompressionMode>`. **Questo metodo accetta solo le modalità di compressione brotli, gzip e deflate.**\ 
+Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-Questo metodo è potenzialmente più lento di :ref:`decompress()<class_PackedByteArray_method_decompress>`, poiché potrebbe dover riallocare il suo buffer di output più volte durante la decompressione, mentre :ref:`decompress()<class_PackedByteArray_method_decompress>` conosce la dimensione del suo buffer di output dall'inizio.
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows the size of its output buffer from the beginning.
 
-GZIP ha un rapporto di compressione massimo di 1032:1, il che significa che è molto probabile che un piccolo payload compresso si decomprima in un output potenzialmente molto grande. Per proteggersi da questo, puoi fornire una dimensione massima che questa funzione può allocare in byte tramite ``max_output_size``. Passando -1 sarà consentito un output illimitato. Se viene passato un valore positivo e la decompressione supera tale quantità in byte, verrà restituito un errore.
+GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
-\ **Nota:** Non è garantito che la decompressione funzioni con dati non compressi da Godot, ad esempio se i dati compressi con la modalità di compressione deflate non hanno un checksum o un'intestazione.
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +718,7 @@ Codifica un numero intero senza segno a 64 bit all'indice di ``byte_offset`` byt
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-Codifica una :ref:`Variant<class_Variant>` all'indice di ``byte_offset`` byte. Deve essere allocato uno spazio sufficiente, a seconda della dimensione della variante codificata. Se ``allow_objects`` è ``false``, i valori derivati da :ref:`Object<class_Object>` non sono consentiti e soltanto i loro ID saranno serializzati.
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only. Returns the length of the encoded data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +846,7 @@ Converte un array codificato con UTF-32 in :ref:`String<class_String>`. Restitui
 
 :ref:`String<class_String>` **get_string_from_wchar**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_wchar>`
 
-Converte un array codificato con caratteri estesi (``wchar_t``, UTF-16 su Windows, UTF-32 su altre piattaforme) in :ref:`String<class_String>`. Restituisce una stringa vuota se l'array sorgente non è una stringa estesa valida. Questo è l'inverso di :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
+Converte un array codificato con caratteri estesi (\ ``wchar_t``, UTF-16 su Windows, UTF-32 su altre piattaforme) in :ref:`String<class_String>`. Restituisce una stringa vuota se l'array sorgente non è una stringa estesa valida. Questo è l'inverso di :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +909,7 @@ Restituisce una rappresentazione esadecimale di questo array come :ref:`String<c
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_insert>`
 
-Inserisce un nuovo elemento in una determinata posizione nell'array. La posizione deve essere valida o alla fine dell'array (``idx == size()``).
+Inserisce un nuovo elemento in una determinata posizione nell'array. La posizione deve essere valida o alla fine dell'array (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +945,7 @@ Appende un elemento alla fine dell'array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-Rimuove un elemento dall'array in base all'indice.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 
@@ -1043,7 +1061,7 @@ Restituisce una copia dei dati convertiti in un :ref:`PackedColorArray<class_Pac
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **to_float32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float32_array>`
 
-Restituisce una copia dei dati convertiti in un :ref:`PackedFloat32Array<class_PackedFloat32Array>`, dove ogni blocco di 4 byte è stato convertito in un float a 32 bit (``float`` in C++).
+Restituisce una copia dei dati convertiti in un :ref:`PackedFloat32Array<class_PackedFloat32Array>`, dove ogni blocco di 4 byte è stato convertito in un float a 32 bit (\ ``float`` in C++).
 
 La dimensione dell'array in input deve essere un multiplo di 4 (dimensione di float a 32 bit). La dimensione del nuovo array sarà ``byte_array.size() / 4``.
 
@@ -1059,7 +1077,7 @@ Se non è possibile convertire i dati originali convertiti in float a 32 bit, i 
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **to_float64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float64_array>`
 
-Restituisce una copia dei dati convertiti in un :ref:`PackedFloat32Array<class_PackedFloat32Array>`, dove ogni blocco di 8 byte è stato convertito in un float a 64 bit (``double`` in C++).
+Restituisce una copia dei dati convertiti in un :ref:`PackedFloat32Array<class_PackedFloat32Array>`, dove ogni blocco di 8 byte è stato convertito in un float a 64 bit (\ ``double`` in C++).
 
 La dimensione dell'array in input deve essere un multiplo di 8 (dimensione di double a 64 bit). La dimensione del nuovo array sarà ``byte_array.size() / 8``.
 
@@ -1075,7 +1093,7 @@ Se non è possibile convertire i dati originali in float a 64 bit, i dati risult
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **to_int32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int32_array>`
 
-Restituisce una copia dei dati convertiti in un :ref:`PackedInt32Array<class_PackedInt32Array>`, dove ogni blocco di 4 byte è stato convertito in un intero con segno a 32 bit (``int32_t`` in C++).
+Restituisce una copia dei dati convertiti in un :ref:`PackedInt32Array<class_PackedInt32Array>`, dove ogni blocco di 4 byte è stato convertito in un intero con segno a 32 bit (\ ``int32_t`` in C++).
 
 La dimensione dell'array in input deve essere un multiplo di 4 (dimensione di intero a 32 bit). La dimensione del nuovo array sarà ``byte_array.size() / 4``.
 
@@ -1091,7 +1109,7 @@ Se non è possibile convertire i dati originali in interi con segno a 32 bit, i 
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **to_int64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int64_array>`
 
-Restituisce una copia dei dati convertiti in un :ref:`PackedInt32Array<class_PackedInt32Array>`, dove ogni blocco di 8 byte è stato convertito in un intero con segno a 64 bit (``int64_t`` in C++).
+Restituisce una copia dei dati convertiti in un :ref:`PackedInt32Array<class_PackedInt32Array>`, dove ogni blocco di 8 byte è stato convertito in un intero con segno a 64 bit (\ ``int64_t`` in C++).
 
 La dimensione dell'array in input deve essere un multiplo di 8 (dimensione di intero a 64 bit). La dimensione del nuovo array sarà ``byte_array.size() / 8``.
 

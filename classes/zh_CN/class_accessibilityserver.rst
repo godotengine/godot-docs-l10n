@@ -9,6 +9,15 @@ AccessibilityServer
 
 用于屏幕阅读器支持的服务器接口。
 
+.. rst-class:: classref-introduction-group
+
+描述
+----
+
+**AccessibilityServer** handles screen reader support.
+
+\ **Note:** **AccessibilityServer** is implemented on Android, Linux, macOS, and Windows.
+
 .. rst-class:: classref-reftable-group
 
 方法

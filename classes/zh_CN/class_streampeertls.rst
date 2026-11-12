@@ -14,9 +14,9 @@ StreamPeerTLS
 描述
 ----
 
-处理 TLS 连接的流对等端。此对象可用于连接到 TLS 服务器或接受单个 TLS 客户端连接。
+A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
 
-\ **注意：**\ 当导出到 Android 时，确保在导出项目或使用一键部署之前，在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何形式的网络通信都会被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

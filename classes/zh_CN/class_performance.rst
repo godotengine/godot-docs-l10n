@@ -539,11 +539,19 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航障碍物的数量。
 
+.. _class_Performance_constant_RENDER_STREAMING_TEXTURE_MEM_USED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Monitor<enum_Performance_Monitor>` **RENDER_STREAMING_TEXTURE_MEM_USED** = ``59``
+
+The amount of memory used by texture streaming (in bytes). This represents the current VRAM usage of streamed textures at their currently loaded mipmap levels.
+
 .. _class_Performance_constant_MONITOR_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Monitor<enum_Performance_Monitor>` **MONITOR_MAX** = ``59``
+:ref:`Monitor<enum_Performance_Monitor>` **MONITOR_MAX** = ``60``
 
 代表 :ref:`Monitor<enum_Performance_Monitor>` 枚举的大小。
 

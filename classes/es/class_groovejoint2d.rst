@@ -7,14 +7,14 @@ GrooveJoint2D
 
 **Hereda:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Una unión física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo.
+Una articulación física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Una unión física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo. Por ejemplo, un :ref:`StaticBody2D<class_StaticBody2D>` que representa una base de pistón puede adjuntarse a un :ref:`RigidBody2D<class_RigidBody2D>` que representa la cabeza del pistón, moviéndose hacia arriba y abajo.
+Una articulación física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo. Por ejemplo, un :ref:`StaticBody2D<class_StaticBody2D>` que representa una base de pistón puede adjuntarse a un :ref:`RigidBody2D<class_RigidBody2D>` que representa la cabeza del pistón, moviéndose hacia arriba y abajo.
 
 .. rst-class:: classref-reftable-group
 
@@ -67,7 +67,7 @@ La posición de anclaje inicial del cuerpo B definida por el origen de la junta 
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-La longitud del surco. La ranura va desde el origen de la unión hacia :ref:`length<class_GrooveJoint2D_property_length>` a lo largo del eje Y local de la unión.
+La longitud de la ranura. La ranura va desde el origen de la articulación hacia :ref:`length<class_GrooveJoint2D_property_length>` a lo largo del eje Y local de la articulación.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

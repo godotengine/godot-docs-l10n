@@ -151,11 +151,11 @@ Le estremità (larghezza e altezza) dell'area in metri.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-Una texture opzionale da utilizzare come sorgente luminosa. Modificare la texture in fase di esecuzione potrebbe influire sulle prestazioni, poiché deve essere disegnata sull'atlante delle luci d'area con mipmap filtrate.
+An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
 
-Se nessuna texture è assegnata, la luce d'area emette luce uniforme sulla sua superficie.
+If no texture is assigned, the area light emits uniform light across its surface.
 
-\ **Nota:** Le texture per le luci d'area sono supportate solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità. Per ridurre l'impatto sulle prestazioni del cambio di texture in fase di esecuzione, assicurarti che ogni dimensione di una texture d'area sia un multiplo di 128 pixel o una potenza di due. Questo elimina la necessità di un passaggio di ridimensionamento, il che rallenta il cambio della texture. Le texture non devono necessariamente essere quadrate per essere ottimali. Esempi di dimensioni ottimali per le texture includono 32x64, 128x128 e 256x384.
+\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

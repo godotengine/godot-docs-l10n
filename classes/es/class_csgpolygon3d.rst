@@ -417,7 +417,11 @@ La matriz de puntos que define el polígono 2D que se extruye. Esto puede ser un
 
 \ **Nota:** Si solo se definen 1 o 2 puntos en :ref:`polygon<class_CSGPolygon3D_property_polygon>`, no se generará ninguna malla.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

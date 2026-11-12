@@ -79,7 +79,11 @@ Descripciones de Propiedades
 
 Adjuntos de color en orden a partir de 0. Si este adjunto no es utilizado por el shader, pasa ATTACHMENT_UNUSED para omitir.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,11 @@ Adjunto de profundidad. ATTACHMENT_UNUSED debe ser usado si no se requiere ning�
 
 Utilizado para búferes de fotogramas multipase (más de un pase de renderizado). Convierte un adjunto en una entrada. Asegúrate de suministrarlo también correctamente en el :ref:`RDUniform<class_RDUniform>` para el conjunto de variables uniformes.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +142,11 @@ Utilizado para búferes de fotogramas multipase (más de un pase de renderizado)
 
 Adjuntos a preservar en este pase (de lo contrario, se borran).
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +165,11 @@ Adjuntos a preservar en este pase (de lo contrario, se borran).
 
 If the color attachments are multisampled, non-multisampled resolve attachments can be provided.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

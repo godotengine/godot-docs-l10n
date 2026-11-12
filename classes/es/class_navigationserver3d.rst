@@ -16,11 +16,11 @@ Una interfaz de servidor para el acceso de navegación 3D de bajo nivel.
 Descripción
 ----------------------
 
-NavigationServer3D is the server that handles navigation maps, regions and agents. It does not handle A\* navigation from :ref:`AStar3D<class_AStar3D>`.
+NavigationServer3D is the server that handles navigation maps, regions, and agents. It does not handle A\* navigation from :ref:`AStar3D<class_AStar3D>`.
 
 Maps are divided into regions, which are composed of navigation meshes. Together, they define the navigable areas in the 3D world.
 
-\ **Note:** Most **NavigationServer3D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions or agents by navigation-related nodes in the scene tree or made through scripts.
+\ **Note:** Most **NavigationServer3D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions, or agents by navigation-related nodes in the scene tree or made through scripts.
 
 For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
 
@@ -898,7 +898,7 @@ Establece el radio del agente.
 
 |void| **agent_set_time_horizon_agents**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_agents>`
 
-La cantidad mínima de tiempo durante la cual las velocidades del agente que son calculadas por la simulación son seguras con respecto a otros agentes. Cuanto mayor sea este número, antes responderá este agente a la presencia de otros agentes, pero menos libertad tendrá este agente para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to other agents. The larger this number, the sooner this agent will respond to the presence of other agents, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ La cantidad mínima de tiempo durante la cual las velocidades del agente que son
 
 |void| **agent_set_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_time_horizon_obstacles>`
 
-La cantidad mínima de tiempo durante la cual las velocidades del agente que son calculadas por la simulación son seguras con respecto a los obstáculos estáticos de evitación. Cuanto mayor sea este número, antes responderá este agente a la presencia de obstáculos estáticos de evitación, pero menos libertad tendrá este agente para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
+The minimal amount of time for which the agent's velocities that are computed by the simulation are safe with respect to static avoidance obstacles. The larger this number, the sooner this agent will respond to the presence of static avoidance obstacles, but the less freedom this agent has in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -922,11 +922,11 @@ La cantidad mínima de tiempo durante la cual las velocidades del agente que son
 
 |void| **agent_set_use_3d_avoidance**\ (\ agent\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_use_3d_avoidance>`
 
-Establece si el agente usa la evitación 2D o la evitación 3D mientras la evitación está habilitada.
+Sets if the agent uses the 2D avoidance or the 3D avoidance while avoidance is enabled.
 
-Si es ``true``, el agente calcula las velocidades de evitación en 3D para el eje xyz, p. ej., para juegos que tienen lugar en el aire, bajo el agua o en el espacio. El agente que usa 3D solo evita a otros agentes que usan la evitación 3D. El agente que usa 3D solo reacciona a los obstáculos de evitación basados en el radio. El agente que usa 3D ignora cualquier obstáculo basado en vértices. El agente que usa 3D solo evita a otros agentes que usan 3D.
+If ``true`` the agent calculates avoidance velocities in 3D for the XYZ axes, e.g. for games that take place in the air, underwater, or space. The 3D agent only avoids other 3D avoidance agents. The 3D agent only reacts to radius based avoidance obstacles. The 3D agent ignores any vertices based obstacles. The 3D agent only avoids other 3D agents.
 
-Si es ``false``, el agente calcula las velocidades de evitación en 2D a lo largo del eje xz ignorando el eje y. El agente que usa 2D solo evita a otros agentes que usan la evitación 2D. El agente que usa 2D reacciona a los obstáculos de evitación basados en el radio. El agente que usa 2D reacciona a los obstáculos basados en vértices. El agente que usa 2D solo evita a otros agentes que usan 2D. Los agentes que usan 2D ignorarán a otros agentes u obstáculos que estén por debajo de su posición actual o por encima de su posición actual, incluida la altura de los agentes en la evitación 2D.
+If ``false`` the agent calculates avoidance velocities in 2D along the xz-axes ignoring the y-axis. The 2D agent only avoids other 2D avoidance agents. The 2D agent reacts to radius avoidance obstacles. The 2D agent reacts to vertex based avoidance obstacles. The 2D agent only avoids other 2D agents. 2D agents will ignore other 2D agents or obstacles that are below their current position or above their current position including the agent's height in 2D avoidance.
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +938,7 @@ Si es ``false``, el agente calcula las velocidades de evitación en 2D a lo larg
 
 |void| **agent_set_velocity**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_velocity>`
 
-Establece ``velocity`` como la nueva velocidad deseada para el ``agent`` especificado. La simulación de evitación intentará cumplir con esta velocidad si es posible, pero la modificará para evitar la colisión con otros agentes y obstáculos. Cuando un agente es teletransportado a una nueva posición, use también :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>` para restablecer la velocidad de simulación interna.
+Sets ``velocity`` as the new wanted velocity for the specified ``agent``. The avoidance simulation will try to achieve this velocity if possible, but will adjust it to avoid colliding with other agents and obstacles. When an agent is teleported to a new position far away, use :ref:`agent_set_velocity_forced()<class_NavigationServer3D_method_agent_set_velocity_forced>` instead to reset the internal velocity state.
 
 .. rst-class:: classref-item-separator
 
@@ -1240,7 +1240,7 @@ Establece el :ref:`RID<class_RID>` del mapa de navegación para el enlace.
 
 |void| **link_set_navigation_layers**\ (\ link\: :ref:`RID<class_RID>`, navigation_layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_link_set_navigation_layers>`
 
-Establece las capas de navegación de los enlaces. Esto permite seleccionar enlaces de una solicitud de ruta (cuando se usa :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`).
+Sets the given ``link``'s navigation layers to ``navigation_layers``. This allows selecting links from a path request (when using :ref:`map_get_path()<class_NavigationServer3D_method_map_get_path>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1302,13 +1302,13 @@ Crea un nuevo mapa.
 
 **Obsoleto:** This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.
 
-Esta función fuerza inmediatamente la sincronización del ``map`` de navegación especificado :ref:`RID<class_RID>`. Por defecto, los mapas de navegación solo se sincronizan al final de cada fotograma de física. Esta función se puede utilizar para (re)calcular inmediatamente todas las mallas de navegación y las conexiones de región del mapa de navegación. Esto permite consultar un camino de navegación para un mapa cambiado inmediatamente y en el mismo fotograma (varias veces si es necesario).
+This function immediately forces synchronization of the specified navigation ``map`` :ref:`RID<class_RID>`. By default navigation maps are only synchronized at the end of each physics frame. This function can be used to immediately (re)calculate all the navigation meshes and region connections of the navigation map. This makes it possible to query a navigation path for a changed map immediately and in the same frame (multiple times if needed).
 
-Debido a restricciones técnicas, la cola de comandos actual de NavigationServer se vaciará. Esto significa que todos los comandos de actualización ya en cola para este fotograma de física se ejecutarán, incluso aquellos destinados a otros mapas, regiones y agentes que no forman parte del mapa especificado. El costoso cálculo de las mallas de navegación y las conexiones de región de un mapa solo se realizará para el mapa especificado. Otros mapas recibirán la sincronización normal al final del fotograma de física. Si el mapa especificado recibe cambios después de la actualización forzada, también se actualizará de nuevo cuando los otros mapas reciban su actualización.
+Due to technical restrictions the current NavigationServer command queue will be flushed. This means all already queued update commands for this physics frame will be executed, even those intended for other maps, regions, and agents not part of the specified map. The expensive computation of the navigation meshes and region connections of a map will only be done for the specified map. Other maps will receive the normal synchronization at the end of the physics frame. Should the specified map receive changes after the forced update it will update again as well when the other maps receive their update.
 
-El procesamiento de evitación y el envío de las señales de ``safe_velocity`` no se ven afectados por esta función y continúan ocurriendo para todos los mapas y agentes al final del fotograma de física.
+Avoidance processing and dispatch of the ``safe_velocity`` signals is unaffected by this function and continues to happen for all maps and agents at the end of the physics frame.
 
-\ **Nota:** Un gran poder conlleva una gran responsabilidad. Esta función solo debe ser utilizada por usuarios que realmente sepan lo que están haciendo y tengan una buena razón para ello. Forzar una actualización inmediata de un mapa de navegación requiere bloquear el NavigationServer y vaciar toda la cola de comandos del NavigationServer. Esto no solo puede afectar gravemente al rendimiento de un juego, sino que también puede introducir errores si se utiliza de forma inapropiada sin mucha previsión.
+\ **Note:** With great power comes great responsibility. This function should only be used by users that really know what they are doing and have a good reason for it. Forcing an immediate update of a navigation map requires locking the NavigationServer and flushing the entire NavigationServer command queue. Not only can this severely impact the performance of a game but it can also introduce bugs if used inappropriately without much foresight.
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ El procesamiento de evitación y el envío de las señales de ``safe_velocity`` 
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_agents**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_agents>`
 
-Devuelve todos los :ref:`RID<class_RID>` de agentes de navegación que están actualmente asignados al ``map`` de navegación solicitado.
+Returns all navigation agent :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ Devuelve todos los :ref:`RID<class_RID>` de enlaces de navegación que están ac
 
 :ref:`float<class_float>` **map_get_merge_rasterizer_cell_scale**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_merge_rasterizer_cell_scale>`
 
-Devuelve la escala de celda interna del rasterizador de fusión del mapa.
+Returns the map's internal merge rasterizer cell scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ Si ``uniformly`` es ``false``, solo se elige una región aleatoria y un polígon
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **map_get_regions**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_regions>`
 
-Devuelve todos los :ref:`RID<class_RID>` de las regiones de navegación que están actualmente asignadas al ``map`` de navegación solicitado.
+Returns all navigation region :ref:`RID<class_RID>`\ s that are currently assigned to the requested navigation ``map``.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ Si ``enabled`` es ``true``, el ``obstacle`` proporcionado afecta la evitación u
 
 |void| **obstacle_set_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3D_method_obstacle_set_avoidance_layers>`
 
-Establece la máscara de bits ``avoidance_layers`` del obstáculo.
+Sets the given ``obstacle``'s avoidance layers to ``layers``.
 
 .. rst-class:: classref-item-separator
 
@@ -2366,9 +2366,9 @@ Si es ``true``, habilita el modo de depuración en NavigationServer.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **simplify_path**\ (\ path\: :ref:`PackedVector3Array<class_PackedVector3Array>`, epsilon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer3D_method_simplify_path>`
 
-Devuelve una versión simplificada de ``path`` con menos puntos de ruta críticos eliminados. La cantidad de simplificación está en unidades del mundo y está controlada por ``epsilon``. La simplificación utiliza una variante del algoritmo de Ramer-Douglas-Peucker para la decimación de puntos de curva.
+Returns a simplified version of ``path`` with less critical path points removed. The simplification amount is in world units and controlled by ``epsilon``. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
-La simplificación de la ruta puede ser útil para mitigar varios problemas de seguimiento de la ruta que pueden surgir con ciertos tipos de agentes y comportamientos de script. P.ej. agentes de "dirección" o evitación en "campos abiertos".
+Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 
 .. rst-class:: classref-item-separator
 

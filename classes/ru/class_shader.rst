@@ -58,6 +58,8 @@ Shader
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                        | :ref:`set_default_texture_parameter<class_Shader_method_set_default_texture_parameter>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture<class_Texture>`, index\: :ref:`int<class_int>` = 0\ ) |
    +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                        | :ref:`set_include_path<class_Shader_method_set_include_path>`\ (\ path\: :ref:`String<class_String>`\ )                                                                                                               |
+   +-------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -218,6 +220,18 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 \ **Примечание:** ``name`` должно точно соответствовать имени униформы текстуры в коде.
 
 \ **Примечание:** Если используется массив сэмплера, используйте ``index`` для доступа к указанной текстуре.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Shader_method_set_include_path:
+
+.. rst-class:: classref-method
+
+|void| **set_include_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Shader_method_set_include_path>`
+
+Sets the include path for this shader. Used only if the shader does not have a resource path set, for example when created by code.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,7 +14,7 @@ VisualShaderNodeParticleEmit
 描述
 ----
 
-该节点在内部调用 ``emit_subparticle`` 着色器方法。它将从配置的子发射器发射一个粒子，还允许自定义其发射方式。需要使用该着色器将子发射器分配给粒子节点。
+This node calls the internal ``emit_subparticle`` method. It will emit a particle from the configured sub-emitter and also allows to customize how it's emitted. Requires a sub-emitter assigned to the particles node that is using this shader.
 
 .. rst-class:: classref-reftable-group
 

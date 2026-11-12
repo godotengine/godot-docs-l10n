@@ -112,7 +112,7 @@ enum **PathPostProcessing**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Центри кожного шляху положення в середині проїзної навігаційної сітки полігон краю. Це створює кращі доріжки для кахельних або сітчастих макетів, які обмежують рух до центру клітин.
+Centers every position in the middle of the traveled navigation mesh's polygon edge. This creates better paths for tile- or grid-based layouts that restrict the movement to the cells' centers.
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -385,7 +385,7 @@ flags **PathMetadataFlags**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Сума спрощення шляху у світових підрозділах.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 

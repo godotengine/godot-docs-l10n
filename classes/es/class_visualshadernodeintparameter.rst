@@ -151,7 +151,11 @@ Si es ``true``, el nodo tendrá un valor por defecto personalizado.
 
 Los nombres utilizados para la selección del enum en el editor. :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` debe ser :ref:`HINT_ENUM<class_VisualShaderNodeIntParameter_constant_HINT_ENUM>` para que esto tenga efecto.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

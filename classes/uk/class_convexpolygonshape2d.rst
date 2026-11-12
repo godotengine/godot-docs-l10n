@@ -70,7 +70,11 @@ ConvexPolygonShape2D
 
 \ **Попередження:** Встановлюйте цю властивість тільки для списку точок, які дійсно утворюють опуклу оболонку. Використовуйте :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` для генерації опуклої оболонки з довільного набору точок.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

@@ -14,11 +14,11 @@ DTLS 数据包客户端。
 描述
 ----
 
-这个类表示 DTLS 对等端连接。它可以用来连接到 DTLS 服务器，由 :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>` 返回。
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **警告：**\ 目前不支持 TLS 证书撤销和证书绑定。只要撤销的证书在其他方面有效，就会被接受。如果这是一个问题，可以使用有效期较短的自动管理证书。
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-reftable-group
 

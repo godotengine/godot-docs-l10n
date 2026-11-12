@@ -1,5 +1,8 @@
 :github_url: hide
 
+.. meta::
+	:keywords: gridmap
+
 .. _class_TileMapLayer:
 
 TileMapLayer
@@ -168,9 +171,9 @@ TileMapLayer
 
 **changed**\ (\ ) :ref:`🔗<class_TileMapLayer_signal_changed>`
 
-**TileMapLayer** 的属性发生改变时发出。包括对单元格和属性的修改以及对所分配的 :ref:`TileSet<class_TileSet>` 的修改。
+Emitted when this **TileMapLayer**'s properties changes, including changes to its assigned :ref:`TileSet<class_TileSet>`.
 
-\ **注意：**\ 批量修改 **TileMapLayer** 时可能频繁发出该信号。请勿在连接的函数中执行复杂的处理，建议延迟到帧末尾再进行这些操作（即调用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ ）。
+\ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
 
 .. rst-class:: classref-section-separator
 
@@ -377,7 +380,11 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 
 字节数组形式的图块地图原始数据。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

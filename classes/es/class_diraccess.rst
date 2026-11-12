@@ -385,7 +385,7 @@ Para un equivalente estático, utiliza :ref:`FileAccess.file_exists()<class_File
 
 :ref:`String<class_String>` **get_current_dir**\ (\ include_drive\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_DirAccess_method_get_current_dir>`
 
-Devuelve la ruta absoluta del directorio abierto actualmente (por ejemplo, ``res://folder`` o ``C:\tmp\folder``).
+Returns the absolute path to the currently opened directory (e.g. ``res://folder`` or ``C:\tmp\folder``).
 
 .. rst-class:: classref-item-separator
 
@@ -711,9 +711,9 @@ Versión estática de :ref:`make_dir_recursive()<class_DirAccess_method_make_dir
 
 :ref:`DirAccess<class_DirAccess>` **open**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_open>`
 
-Crea un nuevo objeto **DirAccess** y abre un directorio existente del sistema de archivos. El argumento ``path`` puede estar dentro del árbol del proyecto (``res://folder``), el directorio de usuario (``user://folder``) o una ruta absoluta del sistema de archivos de usuario (por ejemplo, ``/tmp/folder`` o ``C:\tmp\folder``).
+Creates a new **DirAccess** object and opens an existing directory of the filesystem. The ``path`` argument can be within the project tree (\ ``res://folder``), the user directory (\ ``user://folder``) or an absolute path of the user filesystem (e.g. ``/tmp/folder`` or ``C:\tmp\folder``).
 
-Devuelve ``null`` si falló la apertura del directorio. Puedes usar :ref:`get_open_error()<class_DirAccess_method_get_open_error>` para verificar el error ocurrido.
+Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
 
 .. rst-class:: classref-item-separator
 

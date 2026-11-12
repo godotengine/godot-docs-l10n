@@ -108,6 +108,8 @@ Metodi
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`get_name<class_OS_method_get_name>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                     |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_preferred_locales<class_OS_method_get_preferred_locales>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                           |
+   +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_exit_code<class_OS_method_get_process_exit_code>`\ (\ pid\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                              |
    +---------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_process_id<class_OS_method_get_process_id>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                         |
@@ -226,6 +228,8 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
+**Deprecato:** This constant is not used by the engine.
+
 Il driver di rendering Vulkan. Richiede il supporto per Vulkan 1.0 e utilizza automaticamente le funzionalità di Vulkan 1.1, 1.2 e 1.3, se disponibili.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
@@ -233,6 +237,8 @@ Il driver di rendering Vulkan. Richiede il supporto per Vulkan 1.0 e utilizza au
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_OPENGL3** = ``1``
+
+**Deprecato:** This constant is not used by the engine.
 
 Il driver di rendering OpenGL 3. Utilizza OpenGL 3.3 Core Profile su piattaforme desktop, OpenGL ES 3.0 su dispositivi mobili e WebGL 2.0 su Web.
 
@@ -242,6 +248,8 @@ Il driver di rendering OpenGL 3. Utilizza OpenGL 3.3 Core Profile su piattaforme
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
+**Deprecato:** This constant is not used by the engine.
+
 Il driver di rendering Direct3D 12. Richiede il livello di funzionalità 12_0 e il supporto per Shader Model 6.0.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
@@ -249,6 +257,8 @@ Il driver di rendering Direct3D 12. Richiede il livello di funzionalità 12_0 e 
 .. rst-class:: classref-enumeration-constant
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_METAL** = ``3``
+
+**Deprecato:** This constant is not used by the engine.
 
 Il driver di rendering Metal.
 
@@ -505,13 +515,13 @@ Arresta il motore (o l'editor se richiamato all'interno di uno script ``@tool``)
 
 :ref:`int<class_int>` **create_instance**\ (\ arguments\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_OS_method_create_instance>`
 
-Crea una nuova istanza di Godot che viene eseguita in modo indipendente. Gli argomenti ``arguments`` sono utilizzati nell'ordine specificato e separati da uno spazio.
+Creates a new instance of Godot that runs independently. The ``arguments`` are used in the given order and separated by a space.
 
-Se il processo viene creato correttamente, questo metodo restituisce l'ID del nuovo processo, che puoi utilizzare per monitorare il processo (e potenzialmente terminarlo con :ref:`kill()<class_OS_method_kill>`). Se il processo non può essere creato, questo metodo restituisce ``-1``.
+If the process is successfully created, this method returns the new process's ID, which you can use to monitor the process (and potentially terminate it with :ref:`kill()<class_OS_method_kill>`). If the process cannot be created, this method returns ``-1``.
 
-Consulta :ref:`create_process()<class_OS_method_create_process>` se desideri eseguire un processo diverso.
+See :ref:`create_process()<class_OS_method_create_process>` if you wish to run a different process.
 
-\ **Nota:** Questo metodo è implementato su Android, Linux, macOS e Windows.
+\ **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +800,7 @@ Puoi impostare :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSetti
 
 
 
-\ **Nota:** Non è consigliabile passare direttamente argomenti utente personalizzati, poiché il motore potrebbe scartarli o modificarli. Invece, passa il doppio trattino UNIX standard (``--``) e poi gli argomenti personalizzati, che il motore ignorerà per impostazione predefinita. Questi possono essere letti tramite :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Nota:** Non è consigliabile passare direttamente argomenti utente personalizzati, poiché il motore potrebbe scartarli o modificarli. Invece, passa il doppio trattino UNIX standard (\ ``--``) e poi gli argomenti personalizzati, che il motore ignorerà per impostazione predefinita. Questi possono essere letti tramite :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -983,19 +993,19 @@ Vedi anche :ref:`find_keycode_from_string()<class_OS_method_find_keycode_from_st
 
 :ref:`String<class_String>` **get_locale**\ (\ ) |const| :ref:`🔗<class_OS_method_get_locale>`
 
-Restituisce le impostazioni locali del sistema operativo host sotto forma di :ref:`String<class_String>` nel formato ``language_Script_COUNTRY_VARIANT@extra``. Ogni sottostringa dopo ``language`` è facoltativa e potrebbe non esistere.
+Returns the host OS locale as a :ref:`String<class_String>` of the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
 
-- ``language`` - `codice lingua <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ di 2 o 3 lettere, in minuscolo.
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
 
-- ``Script`` - `codice alfabeto <https://en.wikipedia.org/wiki/ISO_15924>`__ di 4 lettere, in maiuscolo.
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
 
-- ``COUNTRY`` - `codice paese <https://en.wikipedia.org/wiki/ISO_3166-1>`__ di 2 o 3 lettere, in maiuscolo.
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
 
-- ``VARIANT`` - variante di lingua, regione e ordinamento. La variante può avere un numero qualsiasi di parole chiave con trattini bassi in mezzo.
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
 
-- ``extra`` - elenco separato da punto e virgola di parole chiave aggiuntive. Questo può includere informazioni su valuta, calendario, ordinamento e sistema di numerazione.
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
 
-Se vuoi solo il codice della lingua e non le impostazioni locali completamente specificate dal sistema operativo, puoi usare :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
+If you want only the language code and not the fully specified locale from the OS, you can use :ref:`get_locale_language()<class_OS_method_get_locale_language>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1144,6 +1154,30 @@ Restituisce il nome della piattaforma host.
 
 ----
 
+.. _class_OS_method_get_preferred_locales:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_preferred_locales**\ (\ ) |const| :ref:`🔗<class_OS_method_get_preferred_locales>`
+
+Returns an array of locales preferred by the user, in order of preference. Each locale is as a :ref:`String<class_String>` on the form ``language_Script_COUNTRY_VARIANT@extra``. Every substring after ``language`` is optional and may not exist.
+
+- ``language`` - 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, in lower case.
+
+- ``Script`` - 4-letter `script code <https://en.wikipedia.org/wiki/ISO_15924>`__, in title case.
+
+- ``COUNTRY`` - 2 or 3-letter `country code <https://en.wikipedia.org/wiki/ISO_3166-1>`__, in upper case.
+
+- ``VARIANT`` - language variant, region, and sort order. The variant can have any number of underscored keywords.
+
+- ``extra`` - semicolon separated list of additional key words. This may include currency, calendar, sort order, and numbering system information.
+
+\ **Note:** This method is implemented on macOS, iOS, and Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_OS_method_get_process_exit_code:
 
 .. rst-class:: classref-method
@@ -1194,9 +1228,9 @@ Restituisce il numero di core CPU *logici* disponibili sulla macchina host. Sull
 
 :ref:`String<class_String>` **get_processor_name**\ (\ ) |const| :ref:`🔗<class_OS_method_get_processor_name>`
 
-Restituisce il nome completo del modello di CPU sulla macchina host (ad esempio ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
+Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"``).
 
-\ **Nota:** Questo metodo è implementato solo su Windows, macOS, Linux e iOS. Su Android e Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` restituisce una stringa vuota.
+\ **Note:** This method is only implemented on Windows, macOS, Linux, Android (API level 31+), and iOS. On Web, :ref:`get_processor_name()<class_OS_method_get_processor_name>` returns an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -1410,21 +1444,21 @@ Restituisce una stringa univoca per il dispositivo.
 
 :ref:`String<class_String>` **get_user_data_dir**\ (\ ) |const| :ref:`🔗<class_OS_method_get_user_data_dir>`
 
-Restituisce il percorso assoluto della cartella in cui sono scritti i dati utente (la cartella ``user://`` in Godot). Il percorso dipende dal nome del progetto e da :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`.
+Returns the absolute directory path where user data is written (the ``user://`` directory in Godot). The path depends on the project name and :ref:`ProjectSettings.application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>`.
 
-- Su Windows, questo è ``%AppData%\Godot\app_userdata\[project_name]``, o ``%AppData%\[custom_name]`` se ``use_custom_user_dir`` è impostato. ``%AppData%`` si espande in ``%UserProfile%\AppData\Roaming``.
+- On Windows, this is ``%AppData%\Godot\app_userdata\[project_name]``, or ``%AppData%\[custom_name]`` if ``use_custom_user_dir`` is set. ``%AppData%`` expands to ``%UserProfile%\AppData\Roaming``.
 
-- Su macOS, questo è ``~/Library/Application Support/Godot/app_userdata/[project_name]``, o ``~/Library/Application Support/[custom_name]`` se ``use_custom_user_dir`` è impostato.
+- On macOS, this is ``~/Library/Application Support/Godot/app_userdata/[project_name]``, or ``~/Library/Application Support/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- Su Linux e BSD, questo è ``~/.local/share/godot/app_userdata/[project_name]``, o ``~/.local/share/[custom_name]`` se ``use_custom_user_dir`` è impostato.
+- On Linux and BSD, this is ``~/.local/share/godot/app_userdata/[project_name]``, or ``~/.local/share/[custom_name]`` if ``use_custom_user_dir`` is set.
 
-- Su Android e iOS, questa è una cartella in sandbox in una memoria interna o esterna, a seconda della configurazione dell'utente.
+- On Android and iOS, this is a sandboxed directory in either internal or external storage, depending on the user's configuration.
 
-- Sul Web, questa è una cartella virtuale gestita dal browser.
+- On Web, this is a virtual directory managed by the browser.
 
-Se il nome del progetto è vuoto, ``[project_name]`` ricorre a ``[unnamed project]``.
+If the project name is empty, ``[project_name]`` falls back to ``[unnamed project]``.
 
-Da non confondere con :ref:`get_data_dir()<class_OS_method_get_data_dir>`, che restituisce la cartella home dell'utente *globale* (non specifica del progetto).
+Not to be confused with :ref:`get_data_dir()<class_OS_method_get_data_dir>`, which returns the *global* (non-project-specific) user home directory.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,19 +1798,19 @@ Legge l'input dell'utente dall'input standard come dati grezzi. Questa operazion
 
 :ref:`String<class_String>` **read_string_from_stdin**\ (\ buffer_size\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_OS_method_read_string_from_stdin>`
 
-Legge l'input dell'utente dall'input standard come stringa codificata in UTF-8. Questa operazione può è *bloccante*, il che causa il blocco della finestra se :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>` viene chiamato sul thread principale.
+Reads a user input as a UTF-8 encoded string from the standard input. This operation can be *blocking*, which causes the window to freeze if :ref:`read_string_from_stdin()<class_OS_method_read_string_from_stdin>` is called on the main thread.
 
-- Se l'input standard è una console, questo metodo si bloccherà finché il programma non riceverà un'interruzione di riga nell'input standard (solitamente quando l'utente preme :kbd:`Invio`).
+- If standard input is console, this method will block until the program receives a line break in standard input (usually by the user pressing :kbd:`Enter`).
 
-- Se l'input standard è una pipe, questo metodo si bloccherà finché non verrà letta una quantità specifica di dati o la pipe verrà chiusa.
+- If standard input is pipe, this method will block until a specific amount of data is read or pipe is closed.
 
-- Se l'input standard è un file, questo metodo leggerà una quantità specifica di dati (o meno se viene raggiunta la fine del file) e restituirà immediatamente.
+- If standard input is a file, this method will read a specific amount of data (or less if end-of-file is reached) and return immediately.
 
-\ **Nota:** Questo metodo sostituisce automaticamente le interruzioni di riga ``\r\n`` con ``\n`` e le rimuove dalla fine della stringa. Usa :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` per leggere i dati non elaborati.
+\ **Note:** This method automatically replaces ``\r\n`` line breaks with ``\n`` and removes them from the end of the string. Use :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` to read the unprocessed data.
 
-\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
+\ **Note:** This method is implemented on Linux, macOS, and Windows.
 
-\ **Nota:** Nelle build Windows esportate, esegui l'eseguibile wrapper della console per accedere al terminale. Altrimenti, l'input standard non funzionerà correttamente. Se hai bisogno di un singolo eseguibile con supporto per la console, usa una build personalizzata compilata con il flag ``windows_subsystem=console``.
+\ **Note:** On exported Windows builds, run the console wrapper executable to access the terminal. If standard input is console, calling this method without console wrapped will freeze permanently. If standard input is pipe or file, it can be used without console wrapper. If you need a single executable with full console support, use a custom build compiled with the ``windows_subsystem=console`` flag.
 
 .. rst-class:: classref-item-separator
 
@@ -1912,21 +1946,21 @@ Questo può essere utile quando i file possono essere aperti da altre applicazio
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-Richiede al sistema operativo di aprire una risorsa identificata da ``uri`` con il programma più appropriato. Ad esempio:
+Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` su Windows apre l'esploratore file nella cartella Download dell'utente.
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` funziona inoltre su Windows e apre l'esploratore file nella cartella Download dell'utente.
+- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("https://godotengine.org")`` apre il browser Web predefinito sul sito Web ufficiale di Godot.
+- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
 
-- ``OS.shell_open("mailto:example@example.com")`` apre il client di posta elettronica predefinito con il campo "Destinatario" impostato su ``example@example.com``. Consulta `RFC 2368 - Lo schema URL mailto <https://datatracker.ietf.org/doc/html/rfc2368>`__ per un elenco di campi che è possibile aggiungere.
+- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
 
-Usa :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` per convertire un percorso di progetto ``res://`` o ``user://`` in un percorso di sistema da usare con questo metodo.
+Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
 
-\ **Nota:** Usa :ref:`String.uri_encode()<class_String_method_uri_encode>` per codificare i caratteri all'interno degli URL in un modo URL-safe e portabile. Ciò è particolarmente necessario per le interruzioni di riga. Altrimenti, :ref:`shell_open()<class_OS_method_shell_open>` potrebbe non funzionare correttamente in un progetto esportato sulla piattaforma Web.
+\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
 
-\ **Nota:** Questo metodo è implementato su Android, iOS, Web, Linux, macOS e Windows.
+\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

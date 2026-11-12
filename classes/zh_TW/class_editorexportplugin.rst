@@ -100,6 +100,8 @@ EditorExportPlugin
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`add_apple_embedded_platform_project_static_lib<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>`\ (\ path\: :ref:`String<class_String>`\ )                                                                                                    |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                           | :ref:`add_apple_embedded_platform_spm_package<class_EditorExportPlugin_method_add_apple_embedded_platform_spm_package>`\ (\ url\: :ref:`String<class_String>`, version\: :ref:`String<class_String>`, products\: :ref:`PackedStringArray<class_PackedStringArray>`\ )              |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`add_file<class_EditorExportPlugin_method_add_file>`\ (\ path\: :ref:`String<class_String>`, file\: :ref:`PackedByteArray<class_PackedByteArray>`, remap\: :ref:`bool<class_bool>`\ )                                                                                         |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`add_ios_bundle_file<class_EditorExportPlugin_method_add_ios_bundle_file>`\ (\ path\: :ref:`String<class_String>`\ )                                                                                                                                                          |
@@ -623,6 +625,20 @@ EditorExportPlugin
 |void| **add_apple_embedded_platform_project_static_lib**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>`
 
 向 Apple 嵌入式平台專案中新增路徑為 ``path`` 的靜態庫。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlugin_method_add_apple_embedded_platform_spm_package:
+
+.. rst-class:: classref-method
+
+|void| **add_apple_embedded_platform_spm_package**\ (\ url\: :ref:`String<class_String>`, version\: :ref:`String<class_String>`, products\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_spm_package>`
+
+Adds a Swift Package Manager package to the Apple embedded platform's Xcode project. The ``url`` is the URL of the package, ``version`` is the version requirement (e.g. "1.0.0"), and ``products`` is an array of product names to include from the package.
+
+\ **Note:** Only supported on iOS and visionOS.
 
 .. rst-class:: classref-item-separator
 

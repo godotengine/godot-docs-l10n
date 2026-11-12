@@ -41,7 +41,7 @@ PackedScene
 
  
 
-\ **Приклад:** Збережіть вузол з іншими власниками. У наступному прикладі створено 3 об’єкти: :ref:`Node2D<class_Node2D>` (``вузол``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) і :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``колізія`` є дочірнім елементом ``body``, який є дочірнім для ``node``. Тільки ``body`` належить ``node``, тому :ref:`pack()<class_PackedScene_method_pack>` збереже лише ці два вузли, але не ``колізію``. 
+\ **Приклад:** Збережіть вузол з іншими власниками. У наступному прикладі створено 3 об’єкти: :ref:`Node2D<class_Node2D>` (\ ``вузол``), :ref:`RigidBody2D<class_RigidBody2D>` (\ ``body``) і :ref:`CollisionObject2D<class_CollisionObject2D>` (\ ``collision``). ``колізія`` є дочірнім елементом ``body``, який є дочірнім для ``node``. Тільки ``body`` належить ``node``, тому :ref:`pack()<class_PackedScene_method_pack>` збереже лише ці два вузли, але не ``колізію``. 
 
 
 .. tabs:: 

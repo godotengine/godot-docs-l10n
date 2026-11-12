@@ -7,7 +7,7 @@ PanelContainer
 
 **Hereda:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Heredado por:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
+**Heredado por:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`
 
 Un container que mantiene sus controles hijos dentro del área de un :ref:`StyleBox<class_StyleBox>`.
 

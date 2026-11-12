@@ -14,7 +14,9 @@ Proporciona parámetros para :ref:`PhysicsDirectSpaceState2D.intersect_ray()<cla
 Descripción
 ----------------------
 
-Al cambiar varias propiedades de este objeto, como la posición del rayo, puedes configurar los parámetros para :ref:`PhysicsDirectSpaceState2D.intersect_ray()<class_PhysicsDirectSpaceState2D_method_intersect_ray>`.
+By changing various properties of this object, such as the ray position, you can configure the parameters for :ref:`PhysicsDirectSpaceState2D.intersect_ray()<class_PhysicsDirectSpaceState2D_method_intersect_ray>`.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

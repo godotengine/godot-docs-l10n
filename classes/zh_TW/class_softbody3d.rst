@@ -14,11 +14,11 @@ SoftBody3D
 說明
 ----
 
-可形變的 3D 物理網格。用於建立彈性或可形變的物件，例如布料、橡膠或其他柔性材質。
+A deformable 3D physics mesh. Used to create elastic or deformable objects such as cloth, rubber, or other flexible materials.
 
-此外，\ **SoftBody3D** 受 :ref:`Area3D<class_Area3D>` 中定義的風力影響（參見 :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`\ 、\ :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>` 和 :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`\ ）。
+Additionally, **SoftBody3D** is subject to wind forces defined in :ref:`Area3D<class_Area3D>` (see :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`, :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>`, and :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`).
 
-\ **注意：**\ 使用 **SoftBody3D** 時建議使用 Jolt Physics，不要使用預設的 GodotPhysics3D，因為 Jolt Physics 的柔體實作更快更可靠。你可以使用 :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` 專案設定來切換物理引擎。
+\ **Note:** It's recommended to use Jolt Physics when using **SoftBody3D** instead of GodotPhysics3D, as Jolt Physics' soft body implementation is faster and more reliable. Jolt Physics is the default for projects created with Godot 4.6 or later. For projects created with older Godot versions, you can switch the physics engine using the :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` project setting.
 
 .. rst-class:: classref-introduction-group
 
@@ -49,6 +49,8 @@ SoftBody3D
    | :ref:`float<class_float>`                       | :ref:`linear_stiffness<class_SoftBody3D_property_linear_stiffness>`               | ``0.5``          |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
    | :ref:`NodePath<class_NodePath>`                 | :ref:`parent_collision_ignore<class_SoftBody3D_property_parent_collision_ignore>` | ``NodePath("")`` |
+   +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+   | :ref:`int<class_int>`                           | :ref:`point_count<class_SoftBody3D_property_point_count>`                         |                  |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
    | :ref:`float<class_float>`                       | :ref:`pressure_coefficient<class_SoftBody3D_property_pressure_coefficient>`       | ``0.0``          |
    +-------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
@@ -263,6 +265,22 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 - :ref:`NodePath<class_NodePath>` **get_parent_collision_ignore**\ (\ )
 
 指向 :ref:`CollisionObject3D<class_CollisionObject3D>` 的 :ref:`NodePath<class_NodePath>`\ ，這個 SoftBody3D 應該避免穿過它。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SoftBody3D_property_point_count:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **point_count** :ref:`🔗<class_SoftBody3D_property_point_count>`
+
+.. rst-class:: classref-property-setget
+
+- :ref:`int<class_int>` **get_point_count**\ (\ )
+
+The number of vertices (points) on the soft body mesh.
 
 .. rst-class:: classref-item-separator
 

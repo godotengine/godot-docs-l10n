@@ -75,9 +75,11 @@ IKModifier3D
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-如果为 ``true``\ ，求解器会在每一帧从骨骼姿势中检索骨骼轴。
+If ``true``, the solver retrieves the bone axis from the bone pose every frame.
 
-如果为 ``false``\ ，求解器会从骨骼静止状态中检索骨骼轴并进行缓存，这会略微提高性能，但在处理该 **IKModifier3D** 之前对骨骼姿势进行的任何位置更改都将被忽略。
+If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+
+\ **Note:** The rendered gizmo's forward vector (a line between parent and child joints) will only respect the bone pose when this modifier is active.
 
 .. rst-class:: classref-section-separator
 

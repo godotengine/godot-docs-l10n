@@ -14,7 +14,9 @@ PhysicsShapeQueryParameters2D
 描述
 ----
 
-可以通过修改这个对象的形状等属性来为 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` 的方法配置参数。
+By changing various properties of this object, such as the shape, you can configure the parameters for :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`'s methods.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 

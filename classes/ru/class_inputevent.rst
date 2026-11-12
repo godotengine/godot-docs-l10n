@@ -177,9 +177,9 @@ ID Идентификатор устройства, используемый д�
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_get_action_strength>`
 
-Возвращает значение от 0,0 до 1,0 в зависимости от состояния заданных действий. Полезно для получения значения событий типа :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
+Returns a value between ``0.0`` and ``1.0`` depending on the given action's state. Useful for getting the value of events of type :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-Если ``exact_match`` равен ``false``, он игнорирует дополнительные модификаторы ввода для событий :ref:`InputEventKey<class_InputEventKey>` и :ref:`InputEventMouseButton<class_InputEventMouseButton>`, а также направление для событий :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,30 @@ AnimationNodeBlendSpace1D
 描述
 ----
 
-可添加到 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的资源。
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace1D** 代表一个虚拟轴，可以使用 :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>` 在上面添加任何类型的 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。输出的是最接近当前值的两个 :ref:`AnimationRootNode<class_AnimationRootNode>` 之间的线性混合。
+\ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s can be added using :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Outputs the linear blend of the two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s adjacent to the current value.
 
-可以使用 :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` 和 :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>` 来扩展轴的范围。
+You can set the extents of the axis with :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` and :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+
+
+
+Optionally, signals can be used by setting an :ref:`AnimationNodeObserverBlendSpace<class_AnimationNodeObserverBlendSpace>` through :ref:`AnimationTree<class_AnimationTree>`.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var observer = tree.get("parameters/BlendSpace/observer")
+    observer.closest_point_changed.connect(on_closest_point_changed)
+
+ .. code-tab:: csharp
+
+    var observer = animationTree.Get("parameters/BlendSpace/observer").As<AnimationNodeObserverBlendSpace>();
+    observer.ClosestPointChanged += OnClosestPointChanged;
+
+
 
 .. rst-class:: classref-introduction-group
 

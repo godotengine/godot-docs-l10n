@@ -1911,7 +1911,7 @@ Color
 
 :ref:`Color<class_Color>` **html**\ (\ rgba\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html>`
 
-Возвращает новый цвет из ``rgba``, шестнадцатеричной строки цвета HTML. ``rgba`` не чувствителен к регистру и может иметь префикс в виде знака решетки (``#``).
+Возвращает новый цвет из ``rgba``, шестнадцатеричной строки цвета HTML. ``rgba`` не чувствителен к регистру и может иметь префикс в виде знака решетки (\ ``#``).
 
 \ ``rgba`` должен быть допустимой трехзначной или шестизначной шестнадцатеричной строкой цвета и может содержать значение альфа-канала. Если ``rgba`` не содержит значение альфа-канала, применяется значение альфа-канала 1.0. Если ``rgba`` недопустим, возвращает пустой цвет.
 
@@ -1942,7 +1942,7 @@ Color
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-Возвращает ``true``, если ``color`` является допустимой шестнадцатеричной строкой цвета HTML. Строка должна быть шестнадцатеричным значением (без учета регистра) из 3, 4, 6 или 8 цифр и может иметь префикс в виде знака решетки (``#``). Этот метод идентичен :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
+Возвращает ``true``, если ``color`` является допустимой шестнадцатеричной строкой цвета HTML. Строка должна быть шестнадцатеричным значением (без учета регистра) из 3, 4, 6 или 8 цифр и может иметь префикс в виде знака решетки (\ ``#``). Этот метод идентичен :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
@@ -1979,7 +1979,7 @@ Color
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-Возвращает цвет с инвертированными компонентами :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` и :ref:`b<class_Color_property_b>`. (``(1 - r, 1 - g, 1 - b, a)``).
+Возвращает цвет с инвертированными компонентами :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>` и :ref:`b<class_Color_property_b>`. (\ ``(1 - r, 1 - g, 1 - b, a)``).
 
 
 .. tabs::
@@ -2218,7 +2218,7 @@ Color
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-Возвращает цвет, преобразованный в шестнадцатеричный цвет HTML :ref:`String<class_String>` в формате RGBA, без префикса решетки (``#``). 
+Возвращает цвет, преобразованный в шестнадцатеричный цвет HTML :ref:`String<class_String>` в формате RGBA, без префикса решетки (\ ``#``). 
 
 Установка ``with_alpha`` в ``false`` исключает альфа из шестнадцатеричной строки, используя формат RGB вместо формата RGBA.
 

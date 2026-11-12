@@ -706,7 +706,7 @@ Devuelve ``true`` si el cuerpo colisionó solo con una pared en la última llama
 
 Mueve el cuerpo en función de :ref:`velocity<class_CharacterBody2D_property_velocity>`. Si el cuerpo colisiona con otro, se deslizará a lo largo del otro cuerpo (por defecto solo en el suelo) en lugar de detenerse inmediatamente. Si el otro cuerpo es un **CharacterBody2D** o :ref:`RigidBody2D<class_RigidBody2D>`, también se verá afectado por el motion del otro cuerpo. Puedes usar esto para crear plataformas en movimiento y rotación, o para hacer que los nodos empujen a otros nodos.
 
-Este método debe utilizarse en :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (o en un método llamado por :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), ya que utiliza automáticamente el value del ``delta`` del physics step en los cálculos. De lo contrario, la simulación se ejecutará a una velocidad incorrecta.
+Este método debe utilizarse en :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (o en un método llamado por :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), ya que utiliza automáticamente el value del ``delta`` del paso de física en los cálculos. De lo contrario, la simulación se ejecutará a una velocidad incorrecta.
 
 Modifica :ref:`velocity<class_CharacterBody2D_property_velocity>` si se produjo una colisión de deslizamiento. Para obtener la colisión más reciente llama a :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`; para información detallada sobre las colisiones que se hayan producido, usa :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
 

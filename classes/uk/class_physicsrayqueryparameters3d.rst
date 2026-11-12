@@ -14,7 +14,9 @@ PhysicsRayQueryParameters3D
 Опис
 --------
 
-При зміні різних властивостей цього об'єкта, таких як положення про променя, можна налаштувати параметри для :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`.
+By changing various properties of this object, such as the ray position, you can configure the parameters for :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`.
+
+\ **Note:** For optimal performance results, it is recommended to create this object in advance, store it, and reuse it for every subsequent query.
 
 .. rst-class:: classref-reftable-group
 
@@ -125,7 +127,7 @@ PhysicsRayQueryParameters3D
 - |void| **set_exclude**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude**\ (\ )
 
-Список об'єктів :ref:`RID<class_RID>`, які будуть виключені з зіткнення. Використовуйте :ref:`CollisionObject2D.get_rid()<class_CollisionObject2D_method_get_rid>`, щоб отримати :ref:`RID<class_RID>`, пов'язаний з :ref:`CollisionObject2D<class_CollisionObject2D>`-derived node.
+Список об'єктів :ref:`RID<class_RID>`, які будуть виключені з зіткнення. Використовуйте :ref:`CollisionObject3D.get_rid()<class_CollisionObject3D_method_get_rid>`, щоб отримати :ref:`RID<class_RID>`, пов'язаний з :ref:`CollisionObject2D<class_CollisionObject2D>`-derived node.
 
 \ **Примітка:** Повернутий масив копіюється і будь-які зміни до нього не будуть оновлювати оригінальну вартість майна. Для оновлення значення потрібно змінити повернутий масив, а потім знову призначити його в власність.
 

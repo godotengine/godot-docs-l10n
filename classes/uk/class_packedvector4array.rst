@@ -318,7 +318,7 @@ Constructs a **PackedVector4Array** як копія даної **PackedVector4Ar
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_PackedVector4Array_method_insert>`
 
-Вставте новий елемент на даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (``idx == розмір()``).
+Вставте новий елемент на даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (\ ``idx == розмір()``).
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Constructs a **PackedVector4Array** як копія даної **PackedVector4Ar
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector4Array_method_remove_at>`
 
-Видаляє елемент з масиву за індексом.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

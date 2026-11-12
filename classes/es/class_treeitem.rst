@@ -1527,7 +1527,7 @@ El método llamado ``callback`` debe aceptar dos argumentos: el **TreeItem** que
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Establece el callback de dibujo personalizado de la columna dada. Utiliza un :ref:`Callable<class_Callable>` vacío (``Callable()``) para borrar el callback personalizado. La celda debe estar en :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` para usar esta función.
+Establece el callback de dibujo personalizado de la columna dada. Utiliza un :ref:`Callable<class_Callable>` vacío (\ ``Callable()``) para borrar el callback personalizado. La celda debe estar en :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` para usar esta función.
 
 El ``callback`` debe aceptar dos argumentos: el **TreeItem** que se dibuja y su posición y tamaño mediante un :ref:`Rect2<class_Rect2>`.
 

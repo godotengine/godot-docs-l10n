@@ -14,9 +14,9 @@ PacketPeerStream
 說明
 ----
 
-PacketStreamPeer 提供了一個在流中使用封包的包裝器。這樣就能夠在基於封包的程式碼中使用 StreamPeer。PacketPeerStream 在 StreamPeer 的基礎上實作了自訂協議，因此使用者不應該直接讀取或寫入被包裝的 StreamPeer。
+PacketStreamPeer provides a wrapper for working using packets over a stream. This allows for using packet based code with StreamPeers. PacketPeerStream implements a custom protocol over the StreamPeer, so the user should not read or write to the wrapped StreamPeer directly.
 
-\ **注意：**\ 匯出到安卓時，在匯出專案、或使用一鍵部署之前，請務必在安卓匯出預設中，開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信，都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -56,7 +56,7 @@ PacketStreamPeer 提供了一個在流中使用封包的包裝器。這樣就能
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ PacketStreamPeer 提供了一個在流中使用封包的包裝器。這樣就能
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 

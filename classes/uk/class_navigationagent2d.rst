@@ -679,7 +679,7 @@ A 2D агент, який використовується для шляхуфі
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Сума спрощення шляху у світових підрозділах.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ A 2D агент, який використовується для шляхуфі
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-Мінімальна кількість часу, для яких це пов’язано з алгоритмом зіткнень, безпечні для інших агентів. Чим більший номер, тим швидше агент відповідав іншим агентам, але меншу свободу при виборі його оксамитовості. Дуже висока вартість значно сповільнить рух агентів. Потрібні бути позитивними.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ A 2D агент, який використовується для шляхуфі
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-Мінімальна кількість часу, для яких це пов’язано з алгоритмом зіткнень, безпечні щодо статичних перешкод уникає. Чим більший номер, тим швидше агент відповідав на статичні перешкоди уникнення, але меншу свободу при виборі своїх опонентів. Дуже висока вартість значно сповільнить рух агентів. Потрібні бути позитивними.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ A 2D агент, який використовується для шляхуфі
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent2D_method_get_current_navigation_path>`
 
-Повертає поточний шлях агента від початку до завершення глобальних координат. При зміні цільової позиції, або агент вимагає репатії. Масштаб шляху не призначений для використання в прямій дорозі, оскільки агент має свою внутрішню логіку шляху, яка буде пошкоджена шляхом зміни масиву шляху вручну. Використовуйте призначені :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` один раз кожен кадр фізики, щоб отримати наступний шлях для руху агентів, оскільки ця функція також оновлюється логіку внутрішнього шляху.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

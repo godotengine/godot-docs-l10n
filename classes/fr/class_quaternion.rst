@@ -551,7 +551,7 @@ Effectue une interpolation linéaire sphérique avec le quaternion ``to`` et un 
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate>`
 
-Effectue une interpolation sphérique cubique entre les quaternions ``pre_a``, ce vecteur, ``b``, et ``post_b``, par la quantité ``weight`` donnée.
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
 .. rst-class:: classref-item-separator
 
@@ -563,9 +563,9 @@ Effectue une interpolation sphérique cubique entre les quaternions ``pre_a``, c
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate_in_time**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate_in_time>`
 
-Effectue une interpolation sphérique cubique entre les quaternions ``pre_a``, ce vecteur, ``b``, et ``post_b``, par la quantité ``weight`` donnée.
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
-Elle peut effectuer une interpolation plus lisse que :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` pour les valeurs temporelles.
+It can perform smoother interpolation than :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-section-separator
 

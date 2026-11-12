@@ -168,7 +168,7 @@ A 3D форма, яка спрощує область простору для в
 
 - :ref:`Array<class_Array>` **get_collision_result**\ (\ )
 
-Повертає повну інформацію про зіткнення від зіткнення. Повернуто дані так само, як і в методі :ref:`PhysicsDirectSpaceState2D.get_rest_info()<class_PhysicsDirectSpaceState2D_method_get_rest_info>`.
+Повертає повну інформацію про зіткнення від зіткнення. Повернуто дані так само, як і в методі :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>`.
 
 .. rst-class:: classref-item-separator
 

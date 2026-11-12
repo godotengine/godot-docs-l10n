@@ -14,7 +14,7 @@ Descrizione
 
 Il tipo di :ref:`Variant<class_Variant>` incorporato **NodePath** rappresenta un percorso verso un nodo o una proprietà in una gerarchia di nodi. È progettato per essere passato efficientemente a molti metodi integrati (come :ref:`Node.get_node()<class_Node_method_get_node>`, :ref:`Object.set_indexed()<class_Object_method_set_indexed>`, :ref:`Tween.tween_property()<class_Tween_method_tween_property>`, ecc.) senza una dipendenza rigida al nodo o alla proprietà a cui puntano.
 
-Un percorso di nodo è rappresentato come una :ref:`String<class_String>` composta da nomi di nodi separati da barra (``/``) e nomi di proprietà separati da due punti (``:``) (chiamati anche "sotto-nomi"). Simili a un percorso di file system, ``".."`` e ``"."`` sono nomi di nodo speciali. Si riferiscono rispettivamente al nodo padre e al nodo attuale.
+Un percorso di nodo è rappresentato come una :ref:`String<class_String>` composta da nomi di nodi separati da barra (\ ``/``) e nomi di proprietà separati da due punti (\ ``:``) (chiamati anche "sotto-nomi"). Simili a un percorso di file system, ``".."`` e ``"."`` sono nomi di nodo speciali. Si riferiscono rispettivamente al nodo padre e al nodo attuale.
 
 Gli esempi seguenti sono percorsi relativi al nodo attuale:
 
@@ -52,7 +52,7 @@ Di solito non devi preoccuparti del tipo **NodePath**, poiché le stringhe vengo
 
 Vedi anche :ref:`StringName<class_StringName>`, che è un tipo simile progettato per stringhe ottimizzate.
 
-\ **Nota:** In un contesto booleano, un **NodePath** sarà valutato come ``false`` se è vuoto (``NodePath("")``). Altrimenti, un **NodePath** sarà sempre valutato come ``true``.
+\ **Nota:** In un contesto booleano, un **NodePath** sarà valutato come ``false`` se è vuoto (\ ``NodePath("")``). Altrimenti, un **NodePath** sarà sempre valutato come ``true``.
 
 .. note::
 
@@ -204,7 +204,7 @@ Descrizioni dei metodi
 
 :ref:`NodePath<class_NodePath>` **get_as_property_path**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_as_property_path>`
 
-Restituisce una copia di questo percorso del nodo con un carattere due punti (``:``) come prefisso, trasformandolo in un percorso di proprietà puro senza nomi di nodo (relativo al nodo attuale).
+Restituisce una copia di questo percorso del nodo con un carattere due punti (\ ``:``) come prefisso, trasformandolo in un percorso di proprietà puro senza nomi di nodo (relativo al nodo attuale).
 
 
 .. tabs::
@@ -239,7 +239,7 @@ Restituisce una copia di questo percorso del nodo con un carattere due punti (``
 
 :ref:`StringName<class_StringName>` **get_concatenated_names**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_names>`
 
-Restituisce tutti i nomi dei nodi concatenati con un carattere barra (``/``) come un singolo :ref:`StringName<class_StringName>`.
+Restituisce tutti i nomi dei nodi concatenati con un carattere barra (\ ``/``) come un singolo :ref:`StringName<class_StringName>`.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Restituisce tutti i nomi dei nodi concatenati con un carattere barra (``/``) com
 
 :ref:`StringName<class_StringName>` **get_concatenated_subnames**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_subnames>`
 
-Restituisce tutti i sotto-nomi di proprietà concatenati con un carattere due punti (``:``) come un singolo :ref:`StringName<class_StringName>`.
+Restituisce tutti i sotto-nomi di proprietà concatenati con un carattere due punti (\ ``:``) come un singolo :ref:`StringName<class_StringName>`.
 
 
 .. tabs::
@@ -352,7 +352,7 @@ Restituisce il nome di proprietà indicato dall'indice ``idx``, a partire da 0. 
 
 :ref:`int<class_int>` **get_subname_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_subname_count>`
 
-Restituisce il numero di nomi di proprietà ("sotto-nomi") nel percorso. Ogni sottonome nel percorso del nodo è elencato dopo un carattere due punti (``:``).
+Restituisce il numero di nomi di proprietà ("sotto-nomi") nel percorso. Ogni sottonome nel percorso del nodo è elencato dopo un carattere due punti (\ ``:``).
 
 Ad esempio, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contiene 2 sottonomi.
 
@@ -380,7 +380,7 @@ Restituisce il valore di hash a 32 bit che rappresenta il contenuto del percorso
 
 :ref:`bool<class_bool>` **is_absolute**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_absolute>`
 
-Restituisce ``true`` se il percorso del nodo è assoluto. A differenza di un percorso relativo, un percorso assoluto è rappresentato da un carattere barra iniziale (``/``) e parte sempre dal :ref:`SceneTree<class_SceneTree>`. Può essere utilizzato per accedere in modo affidabile ai nodi dal nodo radice (ad esempio ``"/root/Global"`` se esiste un autoload denominato "Global").
+Restituisce ``true`` se il percorso del nodo è assoluto. A differenza di un percorso relativo, un percorso assoluto è rappresentato da un carattere barra iniziale (\ ``/``) e parte sempre dal :ref:`SceneTree<class_SceneTree>`. Può essere utilizzato per accedere in modo affidabile ai nodi dal nodo radice (ad esempio ``"/root/Global"`` se esiste un autoload denominato "Global").
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Restituisce ``true`` se il percorso del nodo è assoluto. A differenza di un per
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_empty>`
 
-Restituisce ``true`` se il percorso di nodo è stato costruito da una stringa vuota (``""``).
+Restituisce ``true`` se il percorso di nodo è stato costruito da una stringa vuota (\ ``""``).
 
 .. rst-class:: classref-item-separator
 

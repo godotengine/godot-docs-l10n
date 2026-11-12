@@ -744,38 +744,38 @@ Les lignes de la matrice de la base sont multipliées par les composants de ``sc
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-Renvoie cette base avec les composantes de chaque axe redimensionnées par les composantes correspondantes de l'échelle ``scale`` donnée.
+Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
 
-Les colonnes de la matrice de la base sont multipliées par les composantes de ``scale``. Cette opération est une échelle locale (relative à elle même).
+The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var ma_base = Basis(
+    var my_basis = Basis(
         Vector3(1, 1, 1),
         Vector3(2, 2, 2),
         Vector3(3, 3, 3)
     )
-    ma_base = ma_base.scaled_local(Vector3(0, 2, -2))
+    my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(ma_base.x) # Affiche (0.0, 0.0, 0.0)
-    print(ma_base.y) # Affiche (4.0, 4.0, 4.0)
-    print(ma_base.z) # Affiche (-6.0, -6.0, -6.0)
+    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
+    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
+    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
-    var maBase = new Basis(
+    var myBasis = new Basis(
         new Vector3(1.0f, 1.0f, 1.0f),
         new Vector3(2.0f, 2.0f, 2.0f),
         new Vector3(3.0f, 3.0f, 3.0f)
     );
-    maBase = maBase.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
+    myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(maBase.X); // Affiche (0, 0, 0)
-    GD.Print(maBase.Y); // Affiche (4, 4, 4)
-    GD.Print(maBase.Z); // Affiche (-6, -6, -6)
+    GD.Print(myBasis.X); // Prints (0, 0, 0)
+    GD.Print(myBasis.Y); // Prints (4, 4, 4)
+    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
 
 
 

@@ -61,7 +61,7 @@ OpenXRSpatialQueryResultData
 
 :ref:`int<class_int>` **get_entity_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_id>`
 
-Повертає ідентифікатор сутності (``XrSpatialEntityIdEXT``) для сутності за адресою ``index``.
+Повертає ідентифікатор сутності (\ ``XrSpatialEntityIdEXT``) для сутності за адресою ``index``.
 
 .. rst-class:: classref-item-separator
 

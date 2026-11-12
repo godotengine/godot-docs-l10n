@@ -110,6 +110,8 @@
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`TextServerManager<class_TextServerManager>`                 | :ref:`TextServerManager<class_@GlobalScope_property_TextServerManager>`                 |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`TextureStreaming<class_TextureStreaming>`                   | :ref:`TextureStreaming<class_@GlobalScope_property_TextureStreaming>`                   |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`ThemeDB<class_ThemeDB>`                                     | :ref:`ThemeDB<class_@GlobalScope_property_ThemeDB>`                                     |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Time<class_Time>`                                           | :ref:`Time<class_@GlobalScope_property_Time>`                                           |
@@ -1756,7 +1758,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EXCLAM** = ``33``
 
-Клавіша зі знаком оклику (``!``).
+Клавіша зі знаком оклику (\ ``!``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTEDBL:
 
@@ -1764,7 +1766,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTEDBL** = ``34``
 
-Ключ подвійних лапок (``"``).
+Ключ подвійних лапок (\ ``"``).
 
 .. _class_@GlobalScope_constant_KEY_NUMBERSIGN:
 
@@ -1772,7 +1774,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_NUMBERSIGN** = ``35``
 
-Цифровий знак або клавіша *hash* (``#``).
+Цифровий знак або клавіша *hash* (\ ``#``).
 
 .. _class_@GlobalScope_constant_KEY_DOLLAR:
 
@@ -1780,7 +1782,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_DOLLAR** = ``36``
 
-Знак долара (``$``) ключ.
+Знак долара (\ ``$``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_PERCENT:
 
@@ -1788,7 +1790,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERCENT** = ``37``
 
-Клавіша знака відсотка (``%``).
+Клавіша знака відсотка (\ ``%``).
 
 .. _class_@GlobalScope_constant_KEY_AMPERSAND:
 
@@ -1796,7 +1798,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AMPERSAND** = ``38``
 
-Амперсанд (``&``) ключ.
+Амперсанд (\ ``&``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_APOSTROPHE:
 
@@ -1804,7 +1806,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_APOSTROPHE** = ``39``
 
-Клавіша апостроф (``'``).
+Клавіша апостроф (\ ``'``).
 
 .. _class_@GlobalScope_constant_KEY_PARENLEFT:
 
@@ -1820,7 +1822,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PARENRIGHT** = ``41``
 
-Права дужка (``)``).
+Права дужка (\ ``)``).
 
 .. _class_@GlobalScope_constant_KEY_ASTERISK:
 
@@ -1828,7 +1830,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASTERISK** = ``42``
 
-Клавіша зірочка (``*``).
+Клавіша зірочка (\ ``*``).
 
 .. _class_@GlobalScope_constant_KEY_PLUS:
 
@@ -1836,7 +1838,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PLUS** = ``43``
 
-Плюс (``+``).
+Плюс (\ ``+``).
 
 .. _class_@GlobalScope_constant_KEY_COMMA:
 
@@ -1844,7 +1846,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COMMA** = ``44``
 
-Кома (``,``) ключ.
+Кома (\ ``,``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_MINUS:
 
@@ -1852,7 +1854,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MINUS** = ``45``
 
-Клавіша мінус (``-``).
+Клавіша мінус (\ ``-``).
 
 .. _class_@GlobalScope_constant_KEY_PERIOD:
 
@@ -1860,7 +1862,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_PERIOD** = ``46``
 
-Період (``.``) ключ.
+Період (\ ``.``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_SLASH:
 
@@ -1868,7 +1870,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SLASH** = ``47``
 
-Слеш (``/``).
+Слеш (\ ``/``).
 
 .. _class_@GlobalScope_constant_KEY_0:
 
@@ -1956,7 +1958,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_COLON** = ``58``
 
-Колон (``:``) ключ.
+Колон (\ ``:``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_SEMICOLON:
 
@@ -1964,7 +1966,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SEMICOLON** = ``59``
 
-Крапка з комою (``;``) клавіша.
+Крапка з комою (\ ``;``) клавіша.
 
 .. _class_@GlobalScope_constant_KEY_LESS:
 
@@ -1972,7 +1974,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_LESS** = ``60``
 
-Клавіша зі знаком «менше» (``<``).
+Клавіша зі знаком «менше» (\ ``<``).
 
 .. _class_@GlobalScope_constant_KEY_EQUAL:
 
@@ -1980,7 +1982,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_EQUAL** = ``61``
 
-Клавіша знака рівності (``=``).
+Клавіша знака рівності (\ ``=``).
 
 .. _class_@GlobalScope_constant_KEY_GREATER:
 
@@ -1988,7 +1990,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_GREATER** = ``62``
 
-Ключ із знаком «більше» (``>``).
+Ключ із знаком «більше» (\ ``>``).
 
 .. _class_@GlobalScope_constant_KEY_QUESTION:
 
@@ -1996,7 +1998,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUESTION** = ``63``
 
-Клавіша знака питання (``?``).
+Клавіша знака питання (\ ``?``).
 
 .. _class_@GlobalScope_constant_KEY_AT:
 
@@ -2004,7 +2006,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_AT** = ``64``
 
-Знак (``@``) ключ.
+Знак (\ ``@``) ключ.
 
 .. _class_@GlobalScope_constant_KEY_A:
 
@@ -2220,7 +2222,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETLEFT** = ``91``
 
-Ліва квадратна дужка (``[lb]``).
+Left bracket (\ ``[``) key.
 
 .. _class_@GlobalScope_constant_KEY_BACKSLASH:
 
@@ -2228,7 +2230,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BACKSLASH** = ``92``
 
-Клавіша зворотної косої риски (``\``).
+Клавіша зворотної косої риски (\ ``\``).
 
 .. _class_@GlobalScope_constant_KEY_BRACKETRIGHT:
 
@@ -2236,7 +2238,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACKETRIGHT** = ``93``
 
-Права дужка (``[rb]``).
+Right bracket (\ ``]``) key.
 
 .. _class_@GlobalScope_constant_KEY_ASCIICIRCUM:
 
@@ -2244,7 +2246,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIICIRCUM** = ``94``
 
-Клавіша вставки (``^``).
+Клавіша вставки (\ ``^``).
 
 .. _class_@GlobalScope_constant_KEY_UNDERSCORE:
 
@@ -2252,7 +2254,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_UNDERSCORE** = ``95``
 
-Клавіша підкреслення (``_``).
+Клавіша підкреслення (\ ``_``).
 
 .. _class_@GlobalScope_constant_KEY_QUOTELEFT:
 
@@ -2260,7 +2262,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_QUOTELEFT** = ``96``
 
-Клавіша зворотної галочки (`````).
+Клавіша зворотної галочки (\ `````).
 
 .. _class_@GlobalScope_constant_KEY_BRACELEFT:
 
@@ -2268,7 +2270,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACELEFT** = ``123``
 
-Клавіша лівої фігурної дужки (``{``).
+Клавіша лівої фігурної дужки (\ ``{``).
 
 .. _class_@GlobalScope_constant_KEY_BAR:
 
@@ -2276,7 +2278,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BAR** = ``124``
 
-Клавіша вертикальної смуги або *трубки* (``|``).
+Клавіша вертикальної смуги або *трубки* (\ ``|``).
 
 .. _class_@GlobalScope_constant_KEY_BRACERIGHT:
 
@@ -2284,7 +2286,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BRACERIGHT** = ``125``
 
-Права дужка (``}``).
+Права дужка (\ ``}``).
 
 .. _class_@GlobalScope_constant_KEY_ASCIITILDE:
 
@@ -2292,7 +2294,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ASCIITILDE** = ``126``
 
-Клавіша тильди (``~``).
+Клавіша тильди (\ ``~``).
 
 .. _class_@GlobalScope_constant_KEY_YEN:
 
@@ -2300,7 +2302,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_YEN** = ``165``
 
-Символ ієни (``¥``).
+Символ ієни (\ ``¥``).
 
 .. _class_@GlobalScope_constant_KEY_SECTION:
 
@@ -2308,7 +2310,7 @@ Shift + клавіша Tab.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SECTION** = ``167``
 
-Клавіша знака розділу (``§``).
+Клавіша знака розділу (\ ``§``).
 
 .. rst-class:: classref-item-separator
 
@@ -3574,7 +3576,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 Підказує, що властивість :ref:`int<class_int>` є бітовою маскою з іменованими бітовими прапорцями.
 
-Рядок підказки – це список імен, розділених комами, наприклад, ``"Bit0,Bit1,Bit2,Bit3"``. Пробіли **не** видаляються з жодного кінця імені. Перше ім'я у списку має значення 1, наступне 2, потім 4, 8, 16 тощо. Явні значення також можна вказати, додавши ``:integer`` до імені, наприклад, ``"A:4,B:8,C:16"``. Ви також можете поєднувати кілька прапорців (``"A:4,B:8,AB:12,C:16"``).
+Рядок підказки – це список імен, розділених комами, наприклад, ``"Bit0,Bit1,Bit2,Bit3"``. Пробіли **не** видаляються з жодного кінця імені. Перше ім'я у списку має значення 1, наступне 2, потім 4, 8, 16 тощо. Явні значення також можна вказати, додавши ``:integer`` до імені, наприклад, ``"A:4,B:8,C:16"``. Ви також можете поєднувати кілька прапорців (\ ``"A:4,B:8,AB:12,C:16"``).
 
 \ **Примітка:** Значення прапора має бути щонайменше ``1`` і щонайбільше ``2 ** 32 - 1``.
 
@@ -3970,11 +3972,19 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 Як і :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`, але властивість зберігається як необроблений шлях, а не як UID. Це означає, що посилання буде пошкоджено, якщо ви перемістите файл. Рекомендується використовувати :ref:`PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`, коли це можливо.
 
+.. _class_@GlobalScope_constant_PROPERTY_HINT_AUDIO_BUS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_AUDIO_BUS** = ``45``
+
+Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property is the name of an audio bus. This allows the selection of predefined bus names registered with the audio server.
+
 .. _class_@GlobalScope_constant_PROPERTY_HINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``45``
+:ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MAX** = ``46``
 
 Відображає розмір переліку :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`.
 
@@ -4692,7 +4702,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_EQUAL** = ``0``
 
-Оператор рівності (``==``).
+Оператор рівності (\ ``==``).
 
 .. _class_@GlobalScope_constant_OP_NOT_EQUAL:
 
@@ -4700,7 +4710,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT_EQUAL** = ``1``
 
-Оператор нерівності (``!=``).
+Оператор нерівності (\ ``!=``).
 
 .. _class_@GlobalScope_constant_OP_LESS:
 
@@ -4708,7 +4718,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS** = ``2``
 
-Оператор Менше за (``<``).
+Оператор Менше за (\ ``<``).
 
 .. _class_@GlobalScope_constant_OP_LESS_EQUAL:
 
@@ -4716,7 +4726,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_LESS_EQUAL** = ``3``
 
-Оператор Менше або дорівнює (``<=``).
+Оператор Менше або дорівнює (\ ``<=``).
 
 .. _class_@GlobalScope_constant_OP_GREATER:
 
@@ -4724,7 +4734,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER** = ``4``
 
-Оператор Більше за (``>``).
+Оператор Більше за (\ ``>``).
 
 .. _class_@GlobalScope_constant_OP_GREATER_EQUAL:
 
@@ -4732,7 +4742,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_GREATER_EQUAL** = ``5``
 
-Оператор Більше або дорівнює (``>=``).
+Оператор Більше або дорівнює (\ ``>=``).
 
 .. _class_@GlobalScope_constant_OP_ADD:
 
@@ -4740,7 +4750,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_ADD** = ``6``
 
-Оператор додавання (``+``).
+Оператор додавання (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_SUBTRACT:
 
@@ -4748,7 +4758,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SUBTRACT** = ``7``
 
-Оператор віднімання (``-``).
+Оператор віднімання (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_MULTIPLY:
 
@@ -4756,7 +4766,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MULTIPLY** = ``8``
 
-Оператор множення (``*``).
+Оператор множення (\ ``*``).
 
 .. _class_@GlobalScope_constant_OP_DIVIDE:
 
@@ -4764,7 +4774,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_DIVIDE** = ``9``
 
-Оператор ділення (``/``).
+Оператор ділення (\ ``/``).
 
 .. _class_@GlobalScope_constant_OP_NEGATE:
 
@@ -4772,7 +4782,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NEGATE** = ``10``
 
-Оператор унарний мінус (``-``).
+Оператор унарний мінус (\ ``-``).
 
 .. _class_@GlobalScope_constant_OP_POSITIVE:
 
@@ -4780,7 +4790,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POSITIVE** = ``11``
 
-Оператор Унарний плюс (``+``).
+Оператор Унарний плюс (\ ``+``).
 
 .. _class_@GlobalScope_constant_OP_MODULE:
 
@@ -4788,7 +4798,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_MODULE** = ``12``
 
-Оператор залишку/модуля (``%``).
+Оператор залишку/модуля (\ ``%``).
 
 .. _class_@GlobalScope_constant_OP_POWER:
 
@@ -4796,7 +4806,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_POWER** = ``13``
 
-Оператор піднесення до степеня (``**``).
+Оператор піднесення до степеня (\ ``**``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_LEFT:
 
@@ -4804,7 +4814,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_LEFT** = ``14``
 
-Оператор зсуву вліво (``<<``).
+Оператор зсуву вліво (\ ``<<``).
 
 .. _class_@GlobalScope_constant_OP_SHIFT_RIGHT:
 
@@ -4812,7 +4822,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_SHIFT_RIGHT** = ``15``
 
-Оператор зсуву вправо (``>>``).
+Оператор зсуву вправо (\ ``>>``).
 
 .. _class_@GlobalScope_constant_OP_BIT_AND:
 
@@ -4820,7 +4830,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_AND** = ``16``
 
-Оператор бітового І (AND) (``&``).
+Оператор бітового І (AND) (\ ``&``).
 
 .. _class_@GlobalScope_constant_OP_BIT_OR:
 
@@ -4828,7 +4838,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_OR** = ``17``
 
-Оператор бітового АБО (OR) (``|``).
+Оператор бітового АБО (OR) (\ ``|``).
 
 .. _class_@GlobalScope_constant_OP_BIT_XOR:
 
@@ -4836,7 +4846,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_XOR** = ``18``
 
-Оператор Виключної диз'юкції (XOR) (``^``).
+Оператор Виключної диз'юкції (XOR) (\ ``^``).
 
 .. _class_@GlobalScope_constant_OP_BIT_NEGATE:
 
@@ -4844,7 +4854,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_BIT_NEGATE** = ``19``
 
-Оператор бітового НЕ (NOT) (``~``).
+Оператор бітового НЕ (NOT) (\ ``~``).
 
 .. _class_@GlobalScope_constant_OP_AND:
 
@@ -4852,7 +4862,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_AND** = ``20``
 
-Оператор логічного І (``and`` або ``&&``).
+Оператор логічного І (\ ``and`` або ``&&``).
 
 .. _class_@GlobalScope_constant_OP_OR:
 
@@ -4860,7 +4870,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_OR** = ``21``
 
-Оператор логічного АБО (``or`` чи ``||``).
+Оператор логічного АБО (\ ``or`` чи ``||``).
 
 .. _class_@GlobalScope_constant_OP_XOR:
 
@@ -4876,7 +4886,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT** = ``23``
 
-Оператор логічного НЕ (``not`` або ``!``).
+Оператор логічного НЕ (\ ``not`` або ``!``).
 
 .. _class_@GlobalScope_constant_OP_IN:
 
@@ -4884,7 +4894,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_IN** = ``24``
 
-Оператор логічного В (``in``).
+Оператор логічного В (\ ``in``).
 
 .. _class_@GlobalScope_constant_OP_MAX:
 
@@ -5442,6 +5452,18 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 ----
 
+.. _class_@GlobalScope_property_TextureStreaming:
+
+.. rst-class:: classref-property
+
+:ref:`TextureStreaming<class_TextureStreaming>` **TextureStreaming** :ref:`🔗<class_@GlobalScope_property_TextureStreaming>`
+
+The :ref:`TextureStreaming<class_TextureStreaming>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_property_ThemeDB:
 
 .. rst-class:: classref-property
@@ -5946,9 +5968,9 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, pre\: :ref:`float<class_float>`, post\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`, to_t\: :ref:`float<class_float>`, pre_t\: :ref:`float<class_float>`, post_t\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_cubic_interpolate_angle_in_time>`
 
-Cubic інтерполює між двома значеннями обертання з найкоротшим шляхом за коефіцієнтом, визначеним у ``weight`` зі значеннями ``pre`` і ``post``. Дивіться також :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
+Cubic interpolates between two rotation values with shortest path by the factor defined in ``weight`` with ``pre`` and ``post`` values. See also :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`.
 
- Він може виконувати більш плавну інтерполяцію, ніж :ref:`cubic_interpolate()<class_@GlobalScope_method_cubic_interpolate>` за значеннями часу.
+It can perform smoother interpolation than :ref:`cubic_interpolate_angle()<class_@GlobalScope_method_cubic_interpolate_angle>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -6608,7 +6630,7 @@ Cubic інтерполює між двома значеннями обертан
 
 :ref:`int<class_int>` **nearest_po2**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_nearest_po2>`
 
-Повертає найменший цілий степінь числа 2, який більший або дорівнює ``value param``.\ **
+Повертає найменший цілий степінь числа 2, який більший або дорівнює ``value``.
 
 ::
 
@@ -6619,7 +6641,7 @@ Cubic інтерполює між двома значеннями обертан
     nearest_po2(0)  # Returns 0 (це може бути неочікувано)
     nearest_po2(-1) # Returns 0 (це може бути неочікувано)
 
-\ **Попередження:** Через свою реалізацію цей метод повертає ``0``, а не ``1`` для значень, менших або рівних ``0``, за винятком випадку, коли ``value`` є найменшим від'ємним 64-бітним цілим (``-9223372036854775808``), у цьому випадку ``value`` повертається без змін.
+\ **Попередження:** Через свою реалізацію цей метод повертає ``0``, а не ``1`` для значень, менших або рівних ``0``, за винятком випадку, коли ``value`` є найменшим від'ємним 64-бітним цілим (\ ``-9223372036854775808``), у цьому випадку ``value`` повертається без змін.
 
 .. rst-class:: classref-item-separator
 
@@ -6735,30 +6757,30 @@ Cubic інтерполює між двома значеннями обертан
 
 |void| **print_rich**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GlobalScope_method_print_rich>`
 
-Перетворює один або декілька аргументів будь-якого типу на рядок найкращим чином та виводить їх у консоль.
+Converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
-Підтримуються такі теги BBCode: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
+The following BBCode tags are supported: ``b``, ``i``, ``u``, ``s``, ``indent``, ``code``, ``url``, ``center``, ``right``, ``color``, ``bgcolor``, ``fgcolor``.
 
-Теги URL підтримують лише URL-адреси, обгорнуті тегом URL, а не URL-адреси з іншим заголовком.
+URL tags support both URLs wrapped by a URL tag and URLs with a different title (\ ``[url=address]text[/url]``). Support for URLs with a different title varies across terminal emulators. Most modern terminal emulators support them, but Terminal.app and conhost (the legacy Windows console) do not.
 
-Під час виводу на стандартний вивід підтримувана підмножина BBCode перетворюється на ANSI-кодові екранування для відображення в емуляторі терміналу. Підтримка ANSI-кодових екранування відрізняється залежно від емулятора терміналу, особливо для курсиву та закреслення. У стандартному виводі ``code`` представлено тьмяним текстом, але без зміни шрифту. Непідтримувані теги залишаються як є у стандартному виводі.
+When printing to standard output, the supported subset of BBCode is converted to ANSI escape codes for the terminal emulator to display. Support for ANSI escape codes varies across terminal emulators, especially for italic and strikethrough. In standard output, ``code`` is represented with faint text but without any font change. Unsupported tags are left as-is in standard output.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print_rich("[color=green][b]Привіт, світе![/b][/color]") # Виводить "Привіт, світе!" зеленим шрифтом жирним шрифтом.
+    print_rich("[color=green][b]Hello world![/b][/color]") # Prints "Hello world!", in green with a bold font.
 
  .. code-tab:: csharp
 
-    GD.PrintRich("[color=green][b]Привіт, світе![/b][/color]"); // Виводить "Привіт, світе!" зеленим шрифтом жирним шрифтом.
+    GD.PrintRich("[color=green][b]Hello world![/b][/color]"); // Prints "Hello world!", in green with a bold font.
 
 
 
-\ **Примітка:** Рекомендується використовувати :ref:`push_error()<class_@GlobalScope_method_push_error>` та :ref:`push_warning()<class_@GlobalScope_method_push_warning>` для виведення повідомлень про помилки та попередження замість :ref:`print()<class_@GlobalScope_method_print>` або :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. Це відрізняє їх від повідомлень друку, що використовуються для налагодження, а також відображає трасування стека, коли виводиться помилка або попередження.
+\ **Note:** Consider using :ref:`push_error()<class_@GlobalScope_method_push_error>` and :ref:`push_warning()<class_@GlobalScope_method_push_warning>` to print error and warning messages instead of :ref:`print()<class_@GlobalScope_method_print>` or :ref:`print_rich()<class_@GlobalScope_method_print_rich>`. This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
-\ **Примітка:** Вивід, що відображається в редакторі, підтримує клікабельні теги ``[url=адреса]текст[/url]``. Значення тегу ``адреса`` ``[url]`` обробляється методом :ref:`OS.shell_open()<class_OS_method_shell_open>` після кліку.
+\ **Note:** Output displayed in the editor supports clickable ``[url=address]text[/url]`` tags. The ``[url]`` tag's ``address`` value is handled by :ref:`OS.shell_open()<class_OS_method_shell_open>` when clicked.
 
 .. rst-class:: classref-item-separator
 
@@ -7404,7 +7426,7 @@ Cubic інтерполює між двома значеннями обертан
 
  Дивіться також :ref:`ceil()<class_@GlobalScope_method_ceil>`, :ref:`floor()<class_@GlobalScope_method_floor>` і :ref:`round()<class_@GlobalScope_method_round>`.
 
-\ **Примітка:** Для кращої безпеки типу використовуйте :ref:`snappedf()<class_@GlobalScope_method_snappedf>`, :ref:`snappedi()<class_@GlobalScope_method_snappedi>`, :ref:`Vector2.snapped()<class_Vector2_method_snapped>`, :ref:`Vector2i.snapped()<class_Vector2i_method_snapped>`, :ref:`Vector3.snapped()<class_Vector3_method_snapped>`, :ref:`Vector3i. snapped()<class_Vector3i_method_ snapped>`, :ref:`Vector4.snapped()<class_Vector4_method_snapped>` або :ref:`Vector4i.snapped()<class_Vector4i_method_snapped>`.
+\ **Примітка:** Для кращої безпеки типу використовуйте :ref:`snappedf()<class_@GlobalScope_method_snappedf>`, :ref:`snappedi()<class_@GlobalScope_method_snappedi>`, :ref:`Vector2.snapped()<class_Vector2_method_snapped>`, :ref:`Vector2i.snapped()<class_Vector2i_method_snapped>`, :ref:`Vector3.snapped()<class_Vector3_method_snapped>`, :ref:`Vector3i.snapped()<class_Vector3i_method_snapped>`, :ref:`Vector4.snapped()<class_Vector4_method_snapped>` або :ref:`Vector4i.snapped()<class_Vector4i_method_snapped>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7597,7 +7619,7 @@ Cubic інтерполює між двома значеннями обертан
 
 :ref:`String<class_String>` **type_string**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_type_string>`
 
-Повертає зрозумілу людині назву заданого ``типу параметра``, використовуючи значення :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
+Повертає зрозумілу людині назву заданого ``type``, використовуючи значення :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
 ::
 

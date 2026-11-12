@@ -144,9 +144,9 @@ PrimitiveMesh
 - |void| **set_uv2_padding**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv2_padding**\ (\ )
 
-Якщо :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` встановлюється, виділяє накидку в пікселях, нанесених по швах сітки. Низькі значення наповнювача дозволяють краще використовувати текстуру Lightmap (регуляція в більшій щільності текселя), але може вводити видимі кровотечі Lightmap по краях.
+If :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` is set, specifies the padding in pixels applied along seams of the mesh. Lower padding values allow making better use of the lightmap texture (resulting in higher texel density), but may introduce visible lightmap bleeding along edges.
 
-Якщо розмір текстури маляра не можна визначити при генеруванні сітки, УФ2 розраховується, що припустимо текстуру розміром 1024x1024.
+If the size of the lightmap texture can't be determined when generating the mesh, UV2 is calculated assuming a texture size of 1024×1024.
 
 .. rst-class:: classref-section-separator
 

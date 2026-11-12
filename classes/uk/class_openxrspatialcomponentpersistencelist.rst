@@ -47,7 +47,7 @@ OpenXRSpatialComponentPersistenceList
 
 :ref:`int<class_int>` **get_persistent_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_state>`
 
-Повертає постійний стан (``XrSpatialPersistenceStateEXT``) для сутності за цим ``index``.
+Повертає постійний стан (\ ``XrSpatialPersistenceStateEXT``) для сутності за цим ``index``.
 
 .. rst-class:: classref-item-separator
 

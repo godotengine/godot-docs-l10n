@@ -317,9 +317,9 @@ Emesso quando questo **GraphEdit** cattura un'azione ``ui_cut`` (:kbd:`Ctrl + X`
 
 **delete_nodes_request**\ (\ nodes\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\]\ ) :ref:`🔗<class_GraphEdit_signal_delete_nodes_request>`
 
-Emesso quando questo **GraphEdit** cattura un'azione ``ui_graph_delete`` (:kbd:`Delete` per impostazione predefinita).
+Emitted when this **GraphEdit** captures a ``ui_graph_delete`` action (:kbd:`Delete` by default, or :kbd:`Backspace`/:kbd:`Delete` on macOS).
 
-\ ``nodes`` è un array di nomi di nodi che dovrebbero essere rimossi. Questi solitamente includono tutti i nodi selezionati.
+\ ``nodes`` is an array of node names that should be removed. These usually include all selected nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -1657,7 +1657,7 @@ L'icona per il pulsante di ripristino dello zoom.
 
 .. container:: contribute
 
-	There is currently no description for this theme property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this theme property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 

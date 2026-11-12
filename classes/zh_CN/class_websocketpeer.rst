@@ -208,11 +208,15 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 - |void| **set_handshake_headers**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_handshake_headers**\ (\ )
 
-在 WebSocket 握手过程中要发送的额外 HTTP 标头。
+The extra HTTP headers to be sent during the WebSocket handshake.
 
-\ **注意：**\ 由于浏览器的限制，在 Web 导出中不支持。
+\ **Note:** Not supported in Web exports due to browser restrictions.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +305,11 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 
 WebSocket 握手期间允许的 WebSocket 子协议。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-section-separator
 
@@ -318,9 +326,9 @@ WebSocket 握手期间允许的 WebSocket 子协议。
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`\ ) :ref:`🔗<class_WebSocketPeer_method_accept_stream>`
 
-以 WebSocket 服务器的名义，接受正在执行 HTTP 握手的对等端连接。\ ``stream`` 必须是从 :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>` 获取的有效 TCP 流，或者是从 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 接受的 TLS 流。
+Accepts a peer connection performing the HTTP handshake as a WebSocket server. The ``stream`` must be a valid TCP stream retrieved via :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>`, or a TLS stream accepted via :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>`.
 
-\ **注意：**\ 由于浏览器的限制，Web 导出中不支持此方法。
+\ **Note:** Not supported in Web exports due to browser restrictions.
 
 .. rst-class:: classref-item-separator
 

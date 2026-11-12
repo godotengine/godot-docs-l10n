@@ -129,6 +129,8 @@ Proprietà
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`                                                                             |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`                                                                                 |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`display/high_res<class_EditorExportPlatformMacOS_property_display/high_res>`                                                                                                     |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`export/distribution_type<class_EditorExportPlatformMacOS_property_export/distribution_type>`                                                                                     |
@@ -546,7 +548,7 @@ Categoria dell'applicazione per l'App Store.
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/bundle_identifier>`
 
-Identificatore univoco dell'applicazione in un formato DNS inverso, può contenere solo caratteri alfanumerici (``A-Z``, ``a-z`` e ``0-9``), trattini (``-``) e punti (``.``).
+Identificatore univoco dell'applicazione in un formato DNS inverso, può contenere solo caratteri alfanumerici (\ ``A-Z``, ``a-z`` e ``0-9``), trattini (\ ``-``) e punti (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +596,7 @@ Se impostato su ``1``, le librerie ANGLE sono esportate con l'applicazione espor
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-File dell'icona dell'applicazione. Se lasciato vuoto, ricadrà su :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, e poi su :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+Application icon file. If left empty, it will fall back to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +636,7 @@ File sorgente dell'icona Liquid Glass per macOS 26. Usa `Icon Composer <https://
 
 :ref:`String<class_String>` **application/min_macos_version_arm64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_arm64>`
 
-Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Apple Silicon, nel formato ``major.minor.patch`` o ``major.minor``, può contenere solo caratteri numerici (``0-9``) e punti (``.``).
+Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Apple Silicon, nel formato ``major.minor.patch`` o ``major.minor``, può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +648,7 @@ Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Appl
 
 :ref:`String<class_String>` **application/min_macos_version_x86_64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_x86_64>`
 
-Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Intel, nel formato ``major.minor.patch`` o ``major.minor``, può contenere solo caratteri numerici (``0-9``) e punti (``.``).
+Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Intel, nel formato ``major.minor.patch`` o ``major.minor``, può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -658,7 +660,7 @@ Versione minima di macOS richiesta per eseguire questa applicazione sui Mac Inte
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/short_version>`
 
-Versione dell'applicazione visibile all'utente, può contenere solo caratteri numerici (``0-9``) e punti (``.``). Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+Versione dell'applicazione visibile all'utente, può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``). Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Nota:** Questo valore è utilizzato per il valore di *Identity > Version* nel progetto Xcode generato.
 
@@ -684,7 +686,7 @@ Un codice creatore di quattro caratteri specifico del pacchetto. Facoltativo.
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/version>`
 
-La versione dell'applicazione leggibile da computer, nel formato ``major.minor.patch``. Può contenere solo caratteri numerici (``0-9``) e punti (``.``). È necessario incrementarla a ogni nuova versione inviata all'App Store. Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
+La versione dell'applicazione leggibile da computer, nel formato ``major.minor.patch``. Può contenere solo caratteri numerici (\ ``0-9``) e punti (\ ``.``). È necessario incrementarla a ogni nuova versione inviata all'App Store. Se lasciato vuoto, ricade su :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`.
 
 \ **Nota:** Questo valore è utilizzato per il valore di *Identity > Version* nel progetto Xcode generato.
 
@@ -700,7 +702,7 @@ La versione dell'applicazione leggibile da computer, nel formato ``major.minor.p
 
 Architettura dell'eseguibile dell'applicazione.
 
-Architetture supportate: ``x86_64``, ``arm64``, e ``universal`` (``x86_64 + arm64``).
+Architetture supportate: ``x86_64``, ``arm64``, e ``universal`` (\ ``x86_64 + arm64``).
 
 I modelli di esportazione ufficiali includono solo i binari ``universal``.
 
@@ -714,7 +716,7 @@ I modelli di esportazione ufficiali includono solo i binari ``universal``.
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-ID team Apple, una stringa univoca di 10 caratteri. Per individuare il tuo ID team, controlla la sezione "Dettagli abbonamento" nella dashboard del tuo account sviluppatore Apple o "Unità organizzativa" del tuo certificato di firma del codice. Consulta `Individuare l’ID team <https://developer.apple.com/it/help/account/manage-your-team/locate-your-team-id>`__.
+Apple Team ID, unique 10-character string. To locate your Team ID check the "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +770,11 @@ Strumento da utilizzare per la firma del codice.
 
 Array degli argomenti aggiuntivi della riga di comando passati allo strumento di firma del codice.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +803,7 @@ Ulteriori dati aggiunti alla sezione radice ``<dict>`` del file `.entitlements <
 
 :ref:`bool<class_bool>` **codesign/entitlements/address_book** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/address_book>`
 
-Abilita per consentire l'accesso ai contatti nella rubrica dell'utente; se abilitato, dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`. Consulta `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
+Enable to allow access to contacts in the user's address book, if it's enabled you should also provide a usage message in the :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` option. See `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +949,7 @@ Consente l'accesso in lettura o scrittura alle posizioni selezionate dall'utente
 
 :ref:`Array<class_Array>` **codesign/entitlements/app_sandbox/helper_executables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/helper_executables>`
 
-Elenco di helper eseguibili da incorporare nel pacchetto dell'app. Le app in sandbox sono limitate a eseguire solo questi eseguibili. Consulta `Incorporare uno strumento da riga di comando in un'app in sandbox <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
+List of helper executables to be embedded in the app bundle. Sandboxed apps are limited to execute only these executables. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +997,7 @@ Abilita per consentire all'app di inviare eventi Apple ad altre app. Consulta `c
 
 :ref:`bool<class_bool>` **codesign/entitlements/audio_input** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/audio_input>`
 
-Abilita se hai bisogno di utilizzare il microfono o altre fonti di input audio, se è abilitato dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>`. Consulta `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
+Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide a usage message in the :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` option. See `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1003,7 +1009,7 @@ Abilita se hai bisogno di utilizzare il microfono o altre fonti di input audio, 
 
 :ref:`bool<class_bool>` **codesign/entitlements/calendars** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/calendars>`
 
-Abilita per consentire l'accesso al calendario dell'utente, se abilitato dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>`. Consulta `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
+Enable to allow access to the user's calendar, if it's enabled you should also provide a usage message in the :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` option. See `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1021,7 @@ Abilita per consentire l'accesso al calendario dell'utente, se abilitato dovrest
 
 :ref:`bool<class_bool>` **codesign/entitlements/camera** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/camera>`
 
-Abilita se hai bisogno di usare la fotocamera, se è abilitata dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>`. Consulta `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
+Enable if you need to use the camera, if it's enabled you should also provide a usage message in the :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` option. See `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1033,7 @@ Abilita se hai bisogno di usare la fotocamera, se è abilitata dovresti anche fo
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-File dei diritti personalizzati ``.plist``, se specificato, il resto dei diritti nella configurazione di esportazione sono ignorati.
+Custom entitlements ``.plist`` file, if specified the rest of the entitlements in the export config are ignored.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1069,7 @@ Consente all'app di caricare librerie e framework arbitrari (non firmati con lo 
 
 :ref:`bool<class_bool>` **codesign/entitlements/location** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/location>`
 
-Abilita se hai bisogno di usare le informazioni sulla posizione dai Servizi di localizzazione; se è abilitato, dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>`. Consulta `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
+Enable if you need to use location information from Location Services, if it's enabled you should also provide a usage message in the :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` option. See `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1081,7 @@ Abilita se hai bisogno di usare le informazioni sulla posizione dai Servizi di l
 
 :ref:`bool<class_bool>` **codesign/entitlements/photos_library** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/photos_library>`
 
-Abilita per consentire l'accesso alla libreria Foto dell'utente; se è abilitato, dovresti anche fornire un messaggio di utilizzo nell'opzione :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>`. Consulta `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
+Enable to allow access to the user's Photos library, if it's enabled you should also provide a usage message in the :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` option. See `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1093,7 @@ Abilita per consentire l'accesso alla libreria Foto dell'utente; se è abilitato
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-Il "Nome completo", il "Nome comune" o l'hash SHA-1 dell'identità di firma utilizzata per firmare il pacchetto ``.app``.
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1105,7 @@ Il "Nome completo", il "Nome comune" o l'hash SHA-1 dell'identità di firma util
 
 :ref:`String<class_String>` **codesign/installer_identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/installer_identity>`
 
-Il "Nome completo", il "Nome comune" o l'hash SHA-1 dell'identità di firma utilizzato per firmare il pacchetto di installazione ``.pkg`` per la distribuzione sull'App Store, usa l'identità ``3rd Party Mac Developer Installer: Name.``.
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used to sign ``.pkg`` installer package for App Store distribution, use ``3rd Party Mac Developer Installer: Name.`` identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1150,6 +1156,22 @@ Percorso al modello di esportazione personalizzato. Se lasciato vuoto, viene uti
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`
 
 Se abilitato, insieme all'applicazione esportata viene creato un wrapper che può essere utilizzato per eseguire l'applicazione con l'output della console.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformMacOS_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol bundle (\ ``.dSYM``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols bundle. This bundle must have the same name as the export template archive and an additional ``.dSYM`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.dSYM.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 
@@ -1771,7 +1793,7 @@ Indica se l'app utilizza gli ID dei dispositivi per il tracciamento.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collected>`
 
-Indica se l'app raccoglie l'indirizzo email.
+Indicates whether your app collects email addresses.
 
 .. rst-class:: classref-item-separator
 
@@ -1783,7 +1805,7 @@ Indica se l'app raccoglie l'indirizzo email.
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-I motivi per cui l'app raccoglie l'indirizzo email. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects email addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1817,7 @@ I motivi per cui l'app raccoglie l'indirizzo email. Consulta `Descrivere l'uso d
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-Indica se l'app collega l'indirizzo email all'identità dell'utente.
+Indicates whether your app links email addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1829,7 @@ Indica se l'app collega l'indirizzo email all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-Indica se l'app utilizza l'indirizzo email per il tracciamento.
+Indicates whether your app uses email addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2587,7 +2609,7 @@ Indica se l'app utilizza i dati sulle prestazioni per il tracciamento.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collected>`
 
-Indica se l'app raccoglie il numero di telefono.
+Indicates whether your app collects phone numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2621,7 @@ Indica se l'app raccoglie il numero di telefono.
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-I motivi per cui l'app raccoglie il numero di telefono. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects phone numbers. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2633,7 @@ I motivi per cui l'app raccoglie il numero di telefono. Consulta `Descrivere l'u
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-Indica se l'app collega il numero di telefono all'identità dell'utente.
+Indicates whether your app links phone numbers to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2645,7 @@ Indica se l'app collega il numero di telefono all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-Indica se l'app utilizza il numero di telefono per il tracciamento.
+Indicates whether your app uses phone numbers for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2695,7 +2717,7 @@ Indica se l'app raccoglie l'indirizzo fisico.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-I motivi per cui l'app raccoglie l'indirizzo fisico. Consulta `Descrivere l'uso dei dati nei manifesti sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+The reasons your app collects physical addresses. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2707,7 +2729,7 @@ I motivi per cui l'app raccoglie l'indirizzo fisico. Consulta `Descrivere l'uso 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-Indica se l'app collega l'indirizzo fisico all'identità dell'utente.
+Indicates whether your app links physical addresses to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2719,7 +2741,7 @@ Indica se l'app collega l'indirizzo fisico all'identità dell'utente.
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-Indica se l'app utilizza l'indirizzo fisico per il tracciamento.
+Indicates whether your app uses physical addresses for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3213,7 +3235,11 @@ Messaggio visualizzato quando si richiede l'accesso alle unità rimovibili dell'
 
 La lista dei domini su Internet a cui si collega l'app che sono coinvolti nel tracciamento. Consulta `File manifesto sulla privacy <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

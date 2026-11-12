@@ -169,7 +169,11 @@ Un insieme di tag di funzionalità OpenType. Ulteriori informazioni: `Tag di fun
 
 Un array di colori per sovrascrivere la tavolozza predefinita. Usa ``Color(0, 0, 0, 0)`` per mantenere il colore della tavolozza predefinita in una posizione specifica.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

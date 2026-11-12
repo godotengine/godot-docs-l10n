@@ -75,7 +75,11 @@ La posición del índice del oclusor. Los índices determinan qué puntos del ar
 
 \ **Nota:** El oclusor siempre se actualiza después de establecer este valor. Si estás creando oclusores por procedimiento, considera usar :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` en su lugar para evitar actualizar el oclusor dos veces cuando se crea.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +100,11 @@ Las posiciones de los vértices del oclusor en coordenadas 3D locales.
 
 \ **Nota:** El oclusor siempre se actualiza después de establecer este valor. Si estás creando oclusores por procedimiento, considera usar :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` en su lugar para evitar actualizar el oclusor dos veces cuando se crea.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

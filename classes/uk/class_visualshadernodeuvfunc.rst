@@ -7,7 +7,7 @@ VisualShaderNodeUVFunc
 
 **Успадковує:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Містить функції для зміни координат текстури (``uv``) для використання в графі візуального відтінку.
+Містить функції для зміни координат текстури (\ ``uv``) для використання в графі візуального відтінку.
 
 .. rst-class:: classref-introduction-group
 

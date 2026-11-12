@@ -16,7 +16,7 @@ VideoStreamPlayer
 
 Элемент управления, используемый для воспроизведения ресурсов :ref:`VideoStream<class_VideoStream>`.
 
-Поддерживаемые форматы видео: `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) и любой формат, предоставляемый через плагин GDExtension.
+Поддерживаемые форматы видео: `Ogg Theora <https://www.theora.org/>`__ (\ ``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) и любой формат, предоставляемый через плагин GDExtension.
 
 \ **Предупреждение:** В Интернете воспроизведение видео *будет* работать плохо из-за отсутствия архитектурно-специфических оптимизаций сборки.
 
@@ -348,7 +348,9 @@ VideoStreamPlayer
 
 :ref:`Texture2D<class_Texture2D>` **get_video_texture**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_video_texture>`
 
-Возвращает текущий кадр как :ref:`Texture2D<class_Texture2D>`.
+Returns the video playback texture.
+
+The texture will be continually updated as the video plays, so call :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` to get a still frame.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +376,9 @@ VideoStreamPlayer
 
 |void| **play**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_play>`
 
-Начинает воспроизведение видео с начала. Если видео приостановлено, это не возобновит его воспроизведение.
+Starts the video playback from the beginning, unless the video is already playing.
+
+\ **Note:** If the video is paused, this will not unpause the video.
 
 .. rst-class:: classref-item-separator
 

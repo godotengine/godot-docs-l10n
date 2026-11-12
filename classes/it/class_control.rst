@@ -7,7 +7,7 @@ Control
 
 **Eredita:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Ereditato da:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
+**Ereditato da:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`ScenePaint2DEditor<class_ScenePaint2DEditor>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`, :ref:`VirtualJoystick<class_VirtualJoystick>`
 
 Classe di base per tutti i controlli della GUI. Adatta la sua posizione e dimensioni in base al suo controllo padre.
 
@@ -240,6 +240,8 @@ Metodi
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_icon_override<class_Control_method_add_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )                                                                                             |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`add_theme_sound_override<class_Control_method_add_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                         |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`add_theme_stylebox_override<class_Control_method_add_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ )                                                                                      |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`begin_bulk_theme_override<class_Control_method_begin_bulk_theme_override>`\ (\ )                                                                                                                                                                                  |
@@ -308,6 +310,8 @@ Metodi
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Texture2D<class_Texture2D>`                            | :ref:`get_theme_icon<class_Control_method_get_theme_icon>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`get_theme_sound<class_Control_method_get_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`                              | :ref:`get_theme_stylebox<class_Control_method_get_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                  | :ref:`get_tooltip<class_Control_method_get_tooltip>`\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const|                                                                                                                                         |
@@ -338,6 +342,10 @@ Metodi
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_icon_override<class_Control_method_has_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound<class_Control_method_has_theme_sound>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                          |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`has_theme_sound_override<class_Control_method_has_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox<class_Control_method_has_theme_stylebox>`\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const|                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`has_theme_stylebox_override<class_Control_method_has_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                          |
@@ -345,6 +353,8 @@ Metodi
    | :ref:`bool<class_bool>`                                      | :ref:`is_drag_successful<class_Control_method_is_drag_successful>`\ (\ ) |const|                                                                                                                                                                                        |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_layout_rtl<class_Control_method_is_layout_rtl>`\ (\ ) |const|                                                                                                                                                                                                  |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`play_theme_sound<class_Control_method_play_theme_sound>`\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ )                                                                                                                                                    |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`release_focus<class_Control_method_release_focus>`\ (\ )                                                                                                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -357,6 +367,8 @@ Metodi
    | |void|                                                       | :ref:`remove_theme_font_size_override<class_Control_method_remove_theme_font_size_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                          |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_icon_override<class_Control_method_remove_theme_icon_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                    |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                       | :ref:`remove_theme_sound_override<class_Control_method_remove_theme_sound_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                                  |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                       | :ref:`remove_theme_stylebox_override<class_Control_method_remove_theme_stylebox_override>`\ (\ name\: :ref:`StringName<class_StringName>`\ )                                                                                                                            |
    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1035,6 +1047,18 @@ Indica al :ref:`Container<class_Container>` genitore di centrare il nodo nello s
 
 Indica al :ref:`Container<class_Container>` genitore di allineare il nodo con la sua fine, ossia il bordo inferiore oppure destro. È mutuamente esclusivo con :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` e altri flag di restringimento delle dimensioni, ma può essere usato con :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` in alcuni contenitori. Da utilizzare con :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` e :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
 
+.. _class_Control_constant_SIZE_MAXIMIZE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_MAXIMIZE** = ``16``
+
+Tells the parent :ref:`Container<class_Container>` to use the node's :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` when doing minimum size calculations. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+
+\ **Note:** Setting this flag does not necessarily mean the node will be resized to its maximum size, as the parent container may not have enough space to do so.
+
+\ **Note:** If this node is a child of a Container that enables the :ref:`size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` property on its children for layout, nodes with this flag set will be given priority in stretching. If multiple nodes have this flag set, their relative stretch ratios will still be respected.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1089,7 +1113,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+The control will grow/shrink to the left or top if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1121,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+The control will grow/shrink to the right or bottom if its size is changed to be larger/smaller than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1129,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+The control will grow/shrink in both directions equally if its size is changed to be larger/smaller than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1649,11 @@ Abilita se il rendering dei figli basati su :ref:`CanvasItem<class_CanvasItem>` 
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-Le dimensioni massime del rettangolo di delimitazione di questo Control. Se impostate su un valore maggiore o uguale a ``(0, 0)``, il rettangolo di delimitazione del nodo non supererà mai queste dimensioni. Un valore inferiore a ``(0, 0)`` indica che ci sono dimensioni massime.
+The maximum size of the node's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size. This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` if the two conflict.
 
-\ **Nota:** Le dimensioni massime effettive finale possono essere soggette alle dimensioni del Container padre e alle dimensioni massime propagate. Vedi anche: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **Note:** The final effective maximum size may be subject to the parent's maximum size (via :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>`), so it is recommended to use :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` instead of :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`. Likewise, use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` to account for the maximum size.
 
-\ **Nota:** Non tutti i sottotipi di **Control** gestiscono correttamente le dimensioni massime personalizzate, il che potrebbe portare a comportamenti imprevisti se il contenuto del controllo supera queste dimensioni.
-
-\ **Nota:** Questo valore ha la priorità su :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. Ad esempio, se si imposta :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` su ``(100, 100)`` e :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` su ``(200, 200)``, le dimensioni risultanti saranno ``(100, 100)``.
-
-\ **Nota:** Si consiglia di usare :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` anziché :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` quando si usa questa proprietà, poiché il primo rispetta i limiti delle dimensioni massime per calcolare le dimensioni minime, mentre il secondo no.
+\ **Note:** Not all **Control** subtypes handle this gracefully, and their contents may extend beyond the bounding rectangle. Set :ref:`clip_contents<class_Control_property_clip_contents>` to ``true`` to prevent child controls from rendering outside of this size, especially when this node is a :ref:`Container<class_Container>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1845,7 @@ Posizione globale del nodo, relativa al mondo (solitamente relativa al :ref:`Can
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Controls the direction on the horizontal axis in which the control should grow or shrink if its horizontal size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1862,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+Controls the direction on the vertical axis in which the control should grow or shrink if its vertical size is changed.
 
 .. rst-class:: classref-item-separator
 
@@ -2750,9 +2770,9 @@ Restituisce la modalità di traduzione automatica nella posizione specificata da
 
 |void| **_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Control_private_method__gui_input>`
 
-Metodo virtuale da implementare dall'utente. Sovrascrivi questo metodo per gestire e accettare gli input sugli elementi dell'UI. Vedi anche :ref:`accept_event()<class_Control_method_accept_event>`.
+Virtual method to be implemented by the user. Override this method to handle and accept inputs on UI elements. See also :ref:`accept_event()<class_Control_method_accept_event>`.
 
-\ **Esempio:** Clicca sul controllo per stampare un messaggio.
+\ **Example:** Click on the control to print a message:
 
 
 .. tabs::
@@ -2762,7 +2782,7 @@ Metodo virtuale da implementare dall'utente. Sovrascrivi questo metodo per gesti
     func _gui_input(event):
         if event is InputEventMouseButton:
             if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-                print("Sono stato cliccato! D:")
+                print("I've been clicked D:")
 
  .. code-tab:: csharp
 
@@ -2772,26 +2792,26 @@ Metodo virtuale da implementare dall'utente. Sovrascrivi questo metodo per gesti
         {
             if (mb.ButtonIndex == MouseButton.Left && mb.Pressed)
             {
-                GD.Print("Sono stato cliccato! D:");
+                GD.Print("I've been clicked D:");
             }
         }
     }
 
 
 
-Se ``event`` eredita :ref:`InputEventMouse<class_InputEventMouse>`, questo metodo **non** verrà chiamato quando:
+If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this method will **not** be called when:
 
-- il :ref:`mouse_filter<class_Control_property_mouse_filter>` del controllo è impostato su :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- the control's :ref:`mouse_filter<class_Control_property_mouse_filter>` is set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- il controllo è ostruito da un altro controllo sopra di esso, che non ha :ref:`mouse_filter<class_Control_property_mouse_filter>` impostato su :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
+- the control is obstructed by another control on top, that doesn't have :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`;
 
-- il genitore del controllo ha :ref:`mouse_filter<class_Control_property_mouse_filter>` impostato su :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` o ha accettato l'evento;
+- a child of the control received the event and has :ref:`mouse_filter<class_Control_property_mouse_filter>` set to :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>` or has accepted the event;
 
-- il genitore del controllo ha :ref:`clip_contents<class_Control_property_clip_contents>` abilitato e la posizione del ``event`` è all'esterno del rettangolo del genitore;
+- the control's parent has :ref:`clip_contents<class_Control_property_clip_contents>` enabled and the ``event``'s position is outside the parent's rectangle;
 
-- la posizione di ``event`` è all'esterno del controllo (vedi :ref:`_has_point()<class_Control_private_method__has_point>`).
+- the ``event``'s position is outside the control (see :ref:`_has_point()<class_Control_private_method__has_point>`).
 
-\ **Nota:** La posizione di ``event`` è relativa all'origine di questo controllo.
+\ **Note:** The ``event``'s position is relative to this control's origin.
 
 .. rst-class:: classref-item-separator
 
@@ -3023,6 +3043,20 @@ Vedi anche :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>
 Crea una sostituzione locale per un'icona di tema con il nome ``name``. Le sostituzioni locali hanno sempre la precedenza quando si recuperano elementi del tema per il controllo. Una sostituzione può essere rimossa con :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>`.
 
 Vedi anche :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_add_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **add_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`, audio\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_add_theme_sound_override>`
+
+Creates a local override for a theme sound with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_sound_override()<class_Control_method_remove_theme_sound_override>`.
+
+See also :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3542,6 +3576,20 @@ Vedi :ref:`get_theme_color()<class_Control_method_get_theme_color>` per i dettag
 
 ----
 
+.. _class_Control_method_get_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`AudioStream<class_AudioStream>` **get_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_sound>`
+
+Returns a sound from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_get_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3771,6 +3819,34 @@ Vedi :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_overrid
 
 ----
 
+.. _class_Control_method_has_theme_sound:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound>`
+
+Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a sound item with the specified ``name`` and ``theme_type``.
+
+See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_has_theme_sound_override:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_sound_override>`
+
+Returns ``true`` if there is a local override for a theme sound with the specified ``name`` in this **Control** node.
+
+See :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_has_theme_stylebox:
 
 .. rst-class:: classref-method
@@ -3820,6 +3896,20 @@ Meglio usata con :ref:`Node.NOTIFICATION_DRAG_END<class_Node_constant_NOTIFICATI
 :ref:`bool<class_bool>` **is_layout_rtl**\ (\ ) |const| :ref:`🔗<class_Control_method_is_layout_rtl>`
 
 Restituisce ``true`` se il layout è da destra a sinistra. Vedi anche :ref:`layout_direction<class_Control_property_layout_direction>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_play_theme_sound:
+
+.. rst-class:: classref-method
+
+|void| **play_theme_sound**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_Control_method_play_theme_sound>`
+
+Plays the sound from the ``stream`` resource non-positionally in the bus specified by the :ref:`ProjectSettings.audio/buses/gui_theme_bus<class_ProjectSettings_property_audio/buses/gui_theme_bus>` project setting. Typically, the ``stream`` resource is obtained using :ref:`get_theme_sound()<class_Control_method_get_theme_sound>`.
+
+\ **Note:** This method should only be used to play UI-related sounds. It should not be used to play general game sounds, as it offers very limited control. Use the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` nodes for general game audio instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3892,6 +3982,18 @@ Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_icon_override>`
 
 Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` o tramite il pannello Ispettore.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Control_method_remove_theme_sound_override:
+
+.. rst-class:: classref-method
+
+|void| **remove_theme_sound_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_sound_override>`
+
+Removes a local override for a theme sound with the specified ``name`` previously added by :ref:`add_theme_sound_override()<class_Control_method_add_theme_sound_override>` or via the Inspector dock.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ SubViewportContainer
 說明
 ----
 
-顯示其 :ref:`SubViewport<class_SubViewport>` 子節點內容的容器。除非啟用 :ref:`stretch<class_SubViewportContainer_property_stretch>`\ ，否則會使用 :ref:`SubViewport<class_SubViewport>` 的大小作為最小尺寸。
+A container that displays the contents of underlying :ref:`SubViewport<class_SubViewport>` child nodes. It uses the combined size of the :ref:`SubViewport<class_SubViewport>`\ s as minimum size, unless :ref:`stretch<class_SubViewportContainer_property_stretch>` is enabled.
 
-\ **注意：**\ 更改 **SubViewportContainer** 的 :ref:`Control.scale<class_Control_property_scale>`\ ，將導致其內容出現扭曲。要更改其視覺大小，並且不造成失真，請改為調整節點的邊距（如果還不在容器中）。
+\ **Note:** Changing a **SubViewportContainer**'s :ref:`Control.scale<class_Control_property_scale>` will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's offset properties instead (if it's not already in a container).
 
-\ **注意：**\ 該 **SubViewportContainer** 會將滑鼠進入和滑鼠退出通知轉發到子視埠。
+\ **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
 
 .. rst-class:: classref-reftable-group
 

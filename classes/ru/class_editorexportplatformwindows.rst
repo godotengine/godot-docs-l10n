@@ -88,6 +88,8 @@ EditorExportPlatformWindows
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`shader_baker/enabled<class_EditorExportPlatformWindows_property_shader_baker/enabled>`                                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`ssh_remote_deploy/cleanup_script<class_EditorExportPlatformWindows_property_ssh_remote_deploy/cleanup_script>`               |
@@ -320,7 +322,11 @@ EditorExportPlatformWindows
 
 Массив дополнительных аргументов командной строки, переданных в инструмент подписи кода. См. `Инструмент подписи <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -459,6 +465,22 @@ URL сервера отметок времени. Если оставить пу
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
 Если ``true``, исполняемый файл оболочки консоли экспортируется вместе с основным исполняемым файлом, что позволяет запустить проект с включенным выводом на консоль.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformWindows_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol file (\ ``.debugsymbols``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols file. This file must have the same name as the export template binary and an additional ``.debugsymbols`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.debugsymbols.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 

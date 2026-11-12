@@ -122,7 +122,11 @@ Si este nodo glTF es una cámara, el índice de la :ref:`GLTFCamera<class_GLTFCa
 
 Los índices de los nodos hijo en el :ref:`GLTFState<class_GLTFState>`. Si este nodo glTF no tiene hijos, esto será un array vacío.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ Rastreador de entidad espacial para nuestra extensión de seguimiento de marcado
 Descripción
 ----------------------
 
-Rastreador de entidad espacial para nuestra extensión de seguimiento de marcadores de entidad espacial de OpenXR. Estos rastreadores identifican entidades en nuestro espacio real detectadas por un marcador visual como un código QR o Aruco, y mapean su ubicación a nuestro espacio virtual.
+Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or ArUco code, and map their location to our virtual space.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ El tamaño de los límites de este marcador.
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-The marker ID for this marker, this is only returned for Aruco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
+The marker ID for this marker, this is only returned for ArUco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
 
 .. rst-class:: classref-item-separator
 

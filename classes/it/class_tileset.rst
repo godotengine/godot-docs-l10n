@@ -789,9 +789,9 @@ Cancella i tile proxy.
 
 :ref:`Array<class_Array>` **get_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_alternative_level_tile_proxy>`
 
-Restituisce il proxy di livello alternativo per gli identificatori specificati. L'array restituito contiene i tre identificatori di destinazione del proxy (ID sorgente, ID coordinate atlante e ID tassello alternativo).
+Returns the alternative-level proxy for the given identifiers. The returned array contains the three proxies' target identifiers (source ID, atlas coordinate ID, and alternative tile ID).
 
-Se il TileSet non ha un proxy per gli identificatori specificati, restituisce un Array vuoto.
+If the TileSet has no proxy for the given identifiers, returns an empty Array.
 
 .. rst-class:: classref-item-separator
 

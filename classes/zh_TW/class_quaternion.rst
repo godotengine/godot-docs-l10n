@@ -551,7 +551,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate>`
 
-在四元數 ``pre_a``\ 、這個向量、\ ``b`` 以及 ``post_b`` 之間按照給定的 ``weight`` 進行球面三次插值。
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
 .. rst-class:: classref-item-separator
 
@@ -563,9 +563,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate_in_time**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate_in_time>`
 
-在四元數 ``pre_a``\ 、該向量、\ ``b`` 和 ``post_b`` 之間，按給定量 ``weight`` 執行三次球面插值。
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
-它可以根據時間值執行比 :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` 更平滑的插值。
+It can perform smoother interpolation than :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-section-separator
 

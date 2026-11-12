@@ -77,7 +77,11 @@ GLTFMesh 处理从 glTF 文件导入的 3D 网格数据，包括混合通道、�
 
 float 数组，代表网格的混合权重。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

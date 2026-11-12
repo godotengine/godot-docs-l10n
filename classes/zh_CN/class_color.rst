@@ -1942,7 +1942,7 @@ Color
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-如果 ``color`` 是一个有效的 HTML 十六进制颜色字符串，则返回 ``true``\ 。该字符串必须是一个由 3、4、6 或 8 位数字组成的十六进制值（不区分大小写），并且可以以井号 (``#``) 作为前缀。该方法与 :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>` 相同。
+如果 ``color`` 是一个有效的 HTML 十六进制颜色字符串，则返回 ``true``\ 。该字符串必须是一个由 3、4、6 或 8 位数字组成的十六进制值（不区分大小写），并且可以以井号 (\ ``#``) 作为前缀。该方法与 :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>` 相同。
 
 
 .. tabs::

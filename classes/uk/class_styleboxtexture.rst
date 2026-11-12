@@ -275,7 +275,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 Це еквівалентно попередньому обгортанню :ref:`texture<class_StyleBoxTexture_property_texture>` в :ref:`AtlasTexture<class_AtlasTexture>` з тим самим регіоном.
 
-Якщо порожнє (``Rect2(0, 0, 0, 0)``), використовується вся :ref:`texture<class_StyleBoxTexture_property_texture>`.
+Якщо порожнє (\ ``Rect2(0, 0, 0, 0)``), використовується вся :ref:`texture<class_StyleBoxTexture_property_texture>`.
 
 .. rst-class:: classref-item-separator
 

@@ -348,7 +348,7 @@ Constructs **Transform2D** з заданого кута (в редисках), �
 
 :ref:`Vector2<class_Vector2>` **basis_xform**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Transform2D_method_basis_xform>`
 
-Повертає копію вектора ``v``, перетворена (multiplied) матрицею перетворення. На відміну від оператора мультиплікації (``*``, цей метод ігнорує :ref:`origin<class_Transform2D_property_origin>`.
+Повертає копію вектора ``v``, перетворена (multiplied) матрицею перетворення. На відміну від оператора мультиплікації (\ ``*``, цей метод ігнорує :ref:`origin<class_Transform2D_property_origin>`.
 
 .. rst-class:: classref-item-separator
 

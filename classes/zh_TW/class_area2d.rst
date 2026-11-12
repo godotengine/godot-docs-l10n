@@ -450,9 +450,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-當距離等於此值時，重力大小即為 :ref:`gravity<class_Area2D_property_gravity>`\ 。例如：若行星半徑為 100 像素且表面重力為 4.0 px/s²，請將 :ref:`gravity<class_Area2D_property_gravity>` 設為 4.0，單位距離設為 100.0。重力將依平方反比定律遞減，故於 200 像素處重力為 1.0 px/s²（距離加倍，重力變 1/4），於 50 像素處重力為 16.0 px/s²（距離減半，重力變 4 倍），依此類推。
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area2D_property_gravity>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the :ref:`gravity<class_Area2D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-僅當此值為正數時上述規則才適用；若設為 0.0，重力將與距離無關而保持常數。
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 

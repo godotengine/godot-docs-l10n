@@ -14,9 +14,13 @@ Un éditeur de texte multi-ligne conçu pour l'édition de code.
 Description
 -----------
 
-CodeEdit est un :ref:`TextEdit<class_TextEdit>` spécialisé, conçu pour l'édition de fichiers de code bruts. Il a de nombreuses fonctionnalités communément trouvées dans les éditeurs de code tels que les numéros de ligne, le repliage de ligne, la complétion du code, la gestion de l'indentation et la gestion des chaînes/commentaires.
+CodeEdit is a specialized :ref:`TextEdit<class_TextEdit>` designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.
 
-\ **Note :** Peu importe la langue, **CodeEdit** utilisera par défaut toujours une direction du texte de gauche à droite pour afficher correctement le code source.
+\ **Note:** Regardless of locale, **CodeEdit** will by default always use left-to-right text direction to correctly display source code.
+
+.. classref_note::
+
+    Being a subclass of :ref:`TextEdit<class_TextEdit>`, line and column numbers are *zero-based*, like elements of an array. For example, the first line of text can be retrieved by ``get_line(0)``, the second line by ``get_line(1)``, and so on.
 
 .. rst-class:: classref-reftable-group
 

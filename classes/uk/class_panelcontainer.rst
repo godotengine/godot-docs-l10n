@@ -7,7 +7,7 @@ PanelContainer
 
 **Успадковує:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Успадковано від:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
+**Успадковано від:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`
 
 Контейнер, який зберігає свої дитячі елементи в рамках :ref:`StyleBox<class_StyleBox>`.
 

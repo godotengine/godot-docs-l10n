@@ -14,15 +14,15 @@ HTTPRequest
 Опис
 --------
 
-Вузол із можливістю надсилання HTTP-запитів. Внутрішньо використовує :ref:`HTTPClient<class_HTTPClient>`.
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-Може використовуватися для надсилання HTTP-запитів, тобто для завантаження або вивантаження файлів чи веб-вмісту через HTTP.
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **Попередження:** Ознайомтеся з примітками та попередженнями щодо :ref:`HTTPClient<class_HTTPClient>`, щоб дізнатися про обмеження, особливо стосовно безпеки TLS.
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **Примітка:** Під час експортування на Android переконайтеся, що у налаштуваннях експорту для Android увімкнено дозвіл ``INTERNET`` перед експортуванням проєкту або використанням розгортання одним кліком. Інакше будь-яка мережева комунікація буде заблокована Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Приклад:** Зверніться до REST API та виведіть одне з повернутих полів:
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -100,7 +100,7 @@ HTTPRequest
 
 
 
-\ **Приклад:** Завантажте зображення за допомогою **HTTPRequest** і відобразіть його:
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -176,7 +176,7 @@ HTTPRequest
 
 
 
-\ **Примітка:** Вузли **HTTPRequest** автоматично розпаковують тіло відповіді. Заголовок ``Accept-Encoding`` автоматично додаватиметься до кожного вашого запиту, якщо він ще не вказаний. Будь-яка відповідь із заголовком ``Content-Encoding: gzip`` автоматично розпаковуватиметься та надсилатиметься вам у вигляді нестиснених байтів.
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 
@@ -195,21 +195,25 @@ HTTPRequest
 .. table::
    :widths: auto
 
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                 | ``true``  |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`         | ``-1``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>` | ``65536`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`             | ``""``    |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`             | ``8``     |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                         | ``0.0``   |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                 | ``false`` |
-   +-----------------------------+----------------------------------------------------------------------------+-----------+
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`                         | ``true``  |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`                 | ``-1``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`download_chunk_size<class_HTTPRequest_property_download_chunk_size>`         | ``65536`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`String<class_String>` | :ref:`download_file<class_HTTPRequest_property_download_file>`                     | ``""``    |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`     | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`int<class_int>`       | :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`                     | ``8``     |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`   | :ref:`timeout<class_HTTPRequest_property_timeout>`                                 | ``0.0``   |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`     | :ref:`use_threads<class_HTTPRequest_property_use_threads>`                         | ``false`` |
+   +-----------------------------+------------------------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
@@ -415,6 +419,25 @@ HTTPRequest не може писати на файл завантаження.
 
 ----
 
+.. _class_HTTPRequest_property_append_to_download_file:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **append_to_download_file** = ``false`` :ref:`🔗<class_HTTPRequest_property_append_to_download_file>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_append_to_download_file**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_appending_to_download_file**\ (\ )
+
+If ``true`` and the server responds with HTTP status code ``206 Partial Content``, the response body will be appended to the existing :ref:`download_file<class_HTTPRequest_property_download_file>` instead of overwriting it. If the server responds with ``200 OK`` (e.g. if it does not support range requests), the file will be overwritten as usual.
+
+This is useful for resuming interrupted downloads when used together with an HTTP ``Range`` header in the request. See also :ref:`keep_partial_download<class_HTTPRequest_property_keep_partial_download>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_HTTPRequest_property_body_size_limit:
 
 .. rst-class:: classref-property
@@ -463,6 +486,25 @@ HTTPRequest не може писати на файл завантаження.
 - :ref:`String<class_String>` **get_download_file**\ (\ )
 
 Файл для завантаження. Виводити будь-який отриманий файл в нього.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_HTTPRequest_property_keep_partial_download:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **keep_partial_download** = ``false`` :ref:`🔗<class_HTTPRequest_property_keep_partial_download>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_keep_partial_download**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_keeping_partial_download**\ (\ )
+
+If ``true``, the partially downloaded file set via :ref:`download_file<class_HTTPRequest_property_download_file>` will not be deleted when the request fails or is canceled. This allows resuming an interrupted download later by sending a new request with an HTTP ``Range`` header and :ref:`append_to_download_file<class_HTTPRequest_property_append_to_download_file>` set to ``true``.
+
+If ``false`` (the default), incomplete download files are automatically deleted on failure or cancellation.
 
 .. rst-class:: classref-item-separator
 

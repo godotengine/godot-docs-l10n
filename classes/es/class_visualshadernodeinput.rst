@@ -84,7 +84,7 @@ Descripciones de Propiedades
 - |void| **set_input_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_name**\ (\ )
 
-Una de las varias constantes de entrada en minúsculas como: "vertex" (``VERTEX``) o "point_size" (``POINT_SIZE``).
+Una de las varias constantes de entrada en minúsculas como: "vertex" (\ ``VERTEX``) o "point_size" (\ ``POINT_SIZE``).
 
 .. rst-class:: classref-section-separator
 

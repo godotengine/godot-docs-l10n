@@ -16,9 +16,9 @@ StreamPeer
 Опис
 --------
 
-StreamPeer є абстрактним базовим класом в основному використовується для потокових протоколів (наприклад, TCP). Надання API для відправки та отримання даних через струмки, як сирі дані або рядки.
+StreamPeer is an abstract base class mostly used for stream-based protocols (such as TCP). It provides an API for sending and receiving data through streams as raw data or strings.
 
-\ **Note:** При експорті до Android, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою одного кліка розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
@@ -565,7 +565,7 @@ Gets ASCII string з tote-length ``bytes`` від потоку. Якщо ``bytes
 
 Поставить Варіант в потік. Якщо ``full_objects`` є ``true`` кодування об'єктів дозволено (і може потенційно включати код).
 
-Внутрішня, це використовує той же механізм кодування, як :ref:`GlobalScope.var_to_bytes()<class_GlobalScope_method_var_to_bytes>`.
+Внутрішня, це використовує той же механізм кодування, як :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -70,7 +70,11 @@ La lista de vértices del polígono que forman una envolvente convexa. Puede est
 
 \ **Advertencia:** Solo establece esta propiedad en una lista de puntos que realmente formen una envolvente convexa. Utiliza :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` para generar la envolvente convexa de un conjunto arbitrario de puntos.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

@@ -7,7 +7,7 @@ VisualShaderNodeUVFunc
 
 **Hereda:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Contiene funciones para modificar las coordenadas de textura (``uv``) que se utilizarán dentro del gráfico de shader visual.
+Contiene funciones para modificar las coordenadas de textura (\ ``uv``) que se utilizarán dentro del gráfico de shader visual.
 
 .. rst-class:: classref-introduction-group
 

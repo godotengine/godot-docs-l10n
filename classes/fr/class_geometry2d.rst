@@ -392,7 +392,7 @@ Renvoie ``true`` si ``point`` est à l'intérieur du polygone ``polygon`` ou s'i
 
 Renvoie ``true`` si les sommets du polygone ``polygon`` sont triés dans le sens des aiguilles d'une montre, sinon renvoie ``false``.
 
-\ **Note :** Suppose un système de coordonnées cartésiennes où ``+x`` est la droite et ``+y`` est le haut. Si on utilise des coordonnées de l'écran (``+y`` est le bas), le résultat devra être inversé (c.-à-d. un résultat ``true`` indiquera le sens inverse des aiguilles d'une montre).
+\ **Note :** Suppose un système de coordonnées cartésiennes où ``+x`` est la droite et ``+y`` est le haut. Si on utilise des coordonnées de l'écran (\ ``+y`` est le bas), le résultat devra être inversé (c.-à-d. un résultat ``true`` indiquera le sens inverse des aiguilles d'une montre).
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Renvoie ``true`` si les sommets du polygone ``polygon`` sont triés dans le sens
 
 Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (\ ``dir``) and a known point (\ ``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::

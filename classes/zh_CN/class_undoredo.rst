@@ -468,9 +468,9 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-获取版本。每次提交一个新的操作，\ **UndoRedo** 的版本号都会自动增加。
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-这主要用于检查保存的版本是否发生了更改。
+This is useful mostly to check if something changed from a saved version. The initial version is ``1``.
 
 .. rst-class:: classref-item-separator
 

@@ -96,9 +96,9 @@
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-正浮点无穷大。这是除数为 ``0.0`` 时浮点除法的结果。对于负无穷大，使用 ``-INF``\ 。如果分子为正，除以 ``-0.0`` 将导致负无穷大，因此除以 ``0.0`` 与除以 ``-0.0`` 不同（尽管 ``0.0 == -0.0`` 返回 ``true``\ ）。
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **警告：**\ 数值无穷大只是浮点数的一个概念，对于整数来说没有对应的概念。将整数除以 ``0`` 不会产生 :ref:`INF<class_@GDScript_constant_INF>`\ ，而是会产生一个运行时错误。
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-“Not a Number”（非数）是一个无效的浮点数值。部分无效运算会返回这个值，例如将浮点数 ``0.0`` 除以 ``0.0``\ 。
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` 有许多特殊的性质，包括 ``!=`` 始终返回 ``true``\ ，而其他比较运算符都始终返回 ``false``\ 。即便是和自己比较也是如此（\ ``NAN == NAN`` 返回 ``false``\ ，而 ``NAN != NAN`` 返回 ``true``\ ）。因此，你必须使用 :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` 来判断数值是否等于 :ref:`NAN<class_@GDScript_constant_NAN>`\ 。
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **警告：**\ “非数”只是浮点数的概念，整数中没有对应的概念。将整数 ``0`` 除以 ``0`` 不会得到 :ref:`NAN<class_@GDScript_constant_NAN>`\ ，而是会产生运行时错误。
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,9 +282,9 @@
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-导出 :ref:`int<class_int>`\ 、\ :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \]、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \]、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>`\ 、\ :ref:`PackedInt64Array<class_PackedInt64Array>` 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作枚举选项列表（或选项的数组）。如果属性为 :ref:`int<class_int>`\ ，则存储的是值的索引，与值的顺序相同。你可以使用冒号来显式添加枚举项的取值。如果属性为 :ref:`String<class_String>`\ ，则存储的是值。
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
-另见 :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`\ 。
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
@@ -295,13 +295,13 @@
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-如果需要设置初始值，则必须显式指定：
+If you want to set an initial value, you must specify it explicitly:
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-如果需要使用具名 GDScript 枚举，请改用 :ref:`@export<class_@GDScript_annotation_@export>`\ ：
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 

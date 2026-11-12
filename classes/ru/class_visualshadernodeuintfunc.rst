@@ -14,7 +14,7 @@ VisualShaderNodeUIntFunc
 Описание
 ----------------
 
-Принять беззнаковый целочисленный скаляр (``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
+Принять беззнаковый целочисленный скаляр (\ ``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

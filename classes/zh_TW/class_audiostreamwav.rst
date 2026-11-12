@@ -184,7 +184,11 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 \ **注意：** 若 :ref:`format<class_AudioStreamWAV_property_format>` 為 :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`\ ，此屬性需包含完整 QOA 檔的資料。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

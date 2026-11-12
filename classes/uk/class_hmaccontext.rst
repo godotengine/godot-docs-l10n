@@ -107,7 +107,7 @@ HMACContext
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_start>`
 
-Returns the resulting HMAC. If HMAC fails, an empty :ref:`PackedByteArray<class_PackedByteArray>` is returned.
+Ініціалізує HMACContext. Цей метод не можна викликати повторно для того самого HMACContext, доки не буде викликано :ref:`finish()<class_HMACContext_method_finish>`.
 
 .. rst-class:: classref-item-separator
 

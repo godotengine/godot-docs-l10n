@@ -14,33 +14,33 @@ Una forma di heightmap 3D utilizzata per le collisioni fisiche.
 Descrizione
 ----------------------
 
-Una forma heightmap 3D, progettata per l'uso in fisica per fornire una forma a una :ref:`CollisionShape3D<class_CollisionShape3D>`. Questo tipo è più comunemente utilizzato per terreni con vertici disposti in una griglia a larghezza fissa.
+A 3D heightmap shape, intended for use in physics to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. This type is most commonly used for terrain with vertices placed in a fixed-width grid.
 
-L'heightmap è rappresentata come una griglia 2D di valori di altezza, che rappresentano la posizione dei punti nella griglia sull'asse Y. I punti nella griglia sono distribuiti 1 unità tra loro sugli assi X e Z e la griglia è centrata sull'origine del nodo :ref:`CollisionShape3D<class_CollisionShape3D>`. Internamente, ogni quadrato della griglia è diviso in due triangoli.
+The heightmap is represented as a 2D grid of height values, which represent the position of grid points on the Y axis. Grid points are spaced 1 unit apart on the X and Z axes, and the grid is centered on the origin of the :ref:`CollisionShape3D<class_CollisionShape3D>` node. Internally, each grid square is divided into two triangles.
 
-Data la natura dell'heightmap, non si può utilizzare per modellare sporgenze o grotte, che richiederebbero più vertici nella stessa posizione verticale. È possibile creare fori assegnando :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` all'altezza dei vertici desiderati (ciò è supportato sia in GodotPhysics3D sia in Jolt Physics). È quindi possibile inserire mesh con una propria collisione separata per creare sporgenze, grotte e così via.
+Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` to the height of the desired vertices. You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
 
-\ **Prestazioni:** **HeightMapShape3D** è più veloce per verificare le collisioni rispetto a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, ma è notevolmente più lento di forme primitive come :ref:`BoxShape3D<class_BoxShape3D>`.
+\ **Performance:** **HeightMapShape3D** is faster to check collisions against than :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is significantly slower than primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`.
 
-Una forma di collisione heightmap può anche essere creata usando un :ref:`Image<class_Image>` di riferimento:
+A heightmap collision shape can also be built by using an :ref:`Image<class_Image>` reference:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var heightmap_texture: Texture = ResourceLoader.load("res://heightmap_image.exr")
-    var heightmap_image: Image = heightmap_texture.get_image()
+    var heightmap_texture = ResourceLoader.load("res://heightmap_image.exr")
+    var heightmap_image = heightmap_texture.get_image()
     heightmap_image.convert(Image.FORMAT_RF)
 
-    var height_min: float = 0.0
-    var height_max: float = 10.0
+    var height_min = 0.0
+    var height_max = 10.0
 
     update_map_data_from_image(heightmap_image, height_min, height_max)
 
 
 
-\ **Nota:** Se è necessario utilizzare una spaziatura diversa da 1 unità, è possibile regolare la :ref:`Node3D.scale<class_Node3D_property_scale>` della forma. Tuttavia, tenere presente che GodotPhysics3D non supporta il ridimensionamento non uniforme: bisognerà ridimensionare l'asse Y della stessa quantità degli assi X e Z, il che significa che i valori in :ref:`map_data<class_HeightMapShape3D_property_map_data>` dovranno essere pre-scalati dall'inverso di tale scala. Si noti inoltre che GodotPhysics3D non supporta proprio il ridimensionamento per i corpi dinamici (ovvero, nodi :ref:`RigidBody3D<class_RigidBody3D>` non congelati); per utilizzare un **HeightMapShape3D** ridimensionato con questi, sarà necessario utilizzare Jolt Physics.
+\ **Note:** If you need to use a spacing different than 1 unit, you can adjust the :ref:`Node3D.scale<class_Node3D_property_scale>` of the shape. However, keep in mind that GodotPhysics3D does not support non-uniform scaling: you'll need to scale the Y axis by the same amount as the X and Z axes, which means the values in :ref:`map_data<class_HeightMapShape3D_property_map_data>` will need to be pre-scaled by the inverse of that scale. Also note that GodotPhysics3D does not support scaling at all for dynamic bodies (that is, non-frozen :ref:`RigidBody3D<class_RigidBody3D>` nodes); to use a scaled **HeightMapShape3D** with those, you will need to use Jolt Physics.
 
 .. rst-class:: classref-reftable-group
 
@@ -96,7 +96,11 @@ Descrizioni delle proprietà
 
 Dati della heightmap. La dimensione dell'array deve essere uguale a :ref:`map_width<class_HeightMapShape3D_property_map_width>` moltiplicato per :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

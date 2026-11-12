@@ -594,6 +594,14 @@ Bandera utilizada para marcar que la malla no contiene intencionalmente ningún 
 
 Bandera utilizada para marcar que una malla está utilizando atributos comprimidos (vértices, normales, tangentes, UVs). Cuando esta forma de compresión está habilitada, las posiciones de los vértices se empaquetarán en un atributo RGBA16UNORM y se escalarán en el sombreador de vértices. La normal y la tangente se empaquetarán en un RG16UNORM representando un eje, y un float de 16 bits almacenado en el canal A del vértice. Los UVs utilizarán floats normalizados de 16 bits en lugar de floats completos de 32 bits con signo. Cuando utilices este modo de compresión debes usar vértices, normales y tangentes o solo vértices. No puedes usar normales sin tangentes. Los importadores habilitarán automáticamente esta compresión si pueden.
 
+.. _class_Mesh_constant_ARRAY_FLAG_USE_STORAGE_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_STORAGE_BUFFER** = ``1073741824``
+
+Flag used to mark that the surface's vertex, attribute, skin, and index buffers must be created with the storage-buffer usage bit so they can be bound as storage buffers in compute shaders. This is required to write into them from a compute pipeline through the :ref:`RID<class_RID>`\ s returned by :ref:`RenderingServer.mesh_surface_get_vertex_buffer_rd_rid()<class_RenderingServer_method_mesh_surface_get_vertex_buffer_rd_rid>` and the matching methods for the attribute, skin, and index buffers. Has no effect on the OpenGL backend, which does not expose :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>`\ s.
+
 .. rst-class:: classref-item-separator
 
 ----

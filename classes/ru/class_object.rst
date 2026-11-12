@@ -5,7 +5,7 @@
 Object
 ======
 
-**Наследуется от:** :ref:`AccessibilityServer<class_AccessibilityServer>`, :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
+**Наследуется от:** :ref:`AccessibilityServer<class_AccessibilityServer>`, :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`TextureStreaming<class_TextureStreaming>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
 
 Базовый класс для всех остальных классов в движке.
 
@@ -565,7 +565,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Инициализирует итератор. ``iter`` хранит состояние итерации. Поскольку GDScript не поддерживает передачу аргументов по ссылке, в качестве обертки используется массив из одного элемента. Возвращает ``true``, пока итератор не достигнет конца.
+Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. This array should not be resized. Returns ``true`` so long as the iterator has not reached the end.
 
 ::
 
@@ -592,11 +592,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
     func _ready():
         var my_range = MyRange.new(2, 5)
         for x in my_range:
-            print(x) # Выводит 2, 3, 4.
+            print(x) # Prints 2, 3, 4.
 
-\ **Примечание:** Избегайте хранения состояния итератора в переменной-члене класса, используйте вместо этого параметр ``iter``. В противном случае вы не сможете повторно использовать один и тот же экземпляр итератора во вложенных циклах.
+\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
 
-См. также `онлайн-документацию <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
+See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -608,7 +608,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **_iter_next**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_next>`
 
-Перемещает итератор на следующую итерацию. ``iter`` сохраняет состояние итерации. Поскольку GDScript не поддерживает передачу аргументов по ссылке, в качестве оболочки используется одноэлементный массив. Возвращает ``true`` до тех пор, пока итератор не достигнет конца.
+Moves the iterator to the next iteration. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. This array should not be resized. Returns ``true`` so long as the iterator has not reached the end.
 
 .. rst-class:: classref-item-separator
 
@@ -1010,15 +1010,15 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Object_method_connect>`
 
-Соединяет ``signal`` по имени с ``callable``. Для настройки поведения соединения можно также добавить необязательные ``flags`` (см. константы :ref:`ConnectFlags<enum_Object_ConnectFlags>`).
+Connects a ``signal`` by name to a ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the signal was successfully connected, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the :ref:`Callable<class_Callable>` is null, invalid, or if the signal doesn't exist on the object.
 
-К одному и тому же :ref:`Callable<class_Callable>` сигнал может быть подключен только один раз. Если сигнал уже подключен, этот метод возвращает :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` и генерирует ошибку, если только сигнал не подключен с :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. Чтобы предотвратить это, сначала используйте :ref:`is_connected()<class_Object_method_is_connected>` для проверки существующих соединений.
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and prints an error, unless the signal is connected with :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Object_method_is_connected>` first to check for existing connections.
 
-\ **Примечание:** Если объект ``callable`` освобождается, соединение будет потеряно.
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
-\ **Примечание:** В GDScript обычно рекомендуется подключать сигналы с помощью :ref:`Signal.connect()<class_Signal_method_connect>`.
+\ **Note:** In GDScript, it is generally recommended to connect signals with :ref:`Signal.connect()<class_Signal_method_connect>` instead.
 
-\ **Примечание:** Этот метод, как и все другие методы, связанные с сигналами, являются потокобезопасными.
+\ **Note:** This method, and all other signal-related methods, are thread-safe.
 
 .. rst-class:: classref-item-separator
 
@@ -1030,7 +1030,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **disconnect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Object_method_disconnect>`
 
-Отключает ``signal`` по имени от заданного ``callable``. Если соединение не существует, генерирует ошибку. Используйте :ref:`is_connected()<class_Object_method_is_connected>`, чтобы убедиться, что соединение существует.
+Disconnects a ``signal`` by name from a given ``callable``. If the connection does not exist, prints an error. Use :ref:`is_connected()<class_Object_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,7 +1148,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **get_indexed**\ (\ property_path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Object_method_get_indexed>`
 
-Получает свойство объекта, индексированное заданным ``property_path``. Путь должен быть :ref:`NodePath<class_NodePath>` относительно текущего объекта и может использовать символ двоеточия (``:``) для доступа к вложенным свойствам.
+Получает свойство объекта, индексированное заданным ``property_path``. Путь должен быть :ref:`NodePath<class_NodePath>` относительно текущего объекта и может использовать символ двоеточия (\ ``:``) для доступа к вложенным свойствам.
 
 \ **Примеры:** ``"position:x"`` или ``"material:next_pass:blend_mode"``.
 
@@ -1199,11 +1199,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **get_meta**\ (\ name\: :ref:`StringName<class_StringName>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Object_method_get_meta>`
 
-Возвращает значение метаданных объекта для заданной записи ``name``. Если запись не существует, возвращает ``default``. Если ``default`` равен ``null``, также генерируется ошибка.
+Returns the object's metadata value for the given entry ``name``. If the entry does not exist, returns ``default``. If ``default`` is ``null``, an error is also generated.
 
-\ **Примечание:** Имя метаданных должно быть допустимым идентификатором согласно методу :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>`.
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **Примечание:** Метаданные, имя которых начинается с подчеркивания (``_``), считаются доступными только для редактора. Метаданные, доступные только для редактора, не отображаются в Инспекторе и не должны редактироваться, хотя их все равно можно найти с помощью этого метода.
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1363,11 +1363,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`bool<class_bool>` **has_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_meta>`
 
-Возвращает ``true``, если найдена запись метаданных с указанным ``name``. См. также :ref:`get_meta()<class_Object_method_get_meta>`, :ref:`set_meta()<class_Object_method_set_meta>` и :ref:`remove_meta()<class_Object_method_remove_meta>`.
+Returns ``true`` if a metadata entry is found with the given ``name``. See also :ref:`get_meta()<class_Object_method_get_meta>`, :ref:`set_meta()<class_Object_method_set_meta>` and :ref:`remove_meta()<class_Object_method_remove_meta>`.
 
-\ **Примечание:** Имя метаданных должно быть допустимым идентификатором согласно методу :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>`.
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **Примечание:** Метаданные, имя которых начинается с подчеркивания (``_``), считаются доступными только для редактора. Доступные только для редактора метаданные не отображаются в Инспекторе и не должны редактироваться, хотя их все равно можно найти с помощью этого метода.
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1573,11 +1573,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **remove_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Object_method_remove_meta>`
 
-Удаляет указанную запись ``name`` из метаданных объекта. См. также :ref:`has_meta()<class_Object_method_has_meta>`, :ref:`get_meta()<class_Object_method_get_meta>` и :ref:`set_meta()<class_Object_method_set_meta>`.
+Removes the given entry ``name`` from the object's metadata. See also :ref:`has_meta()<class_Object_method_has_meta>`, :ref:`get_meta()<class_Object_method_get_meta>` and :ref:`set_meta()<class_Object_method_set_meta>`.
 
-\ **Примечание:** Имя метаданных должно быть допустимым идентификатором согласно методу :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>`.
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **Примечание:** Метаданные, имя которых начинается с подчеркивания (``_``), считаются доступными только для редактора. Доступные только для редактора метаданные не отображаются в Инспекторе и не должны редактироваться, хотя их все равно можно найти с помощью этого метода.
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 
@@ -1685,7 +1685,7 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **set_indexed**\ (\ property_path\: :ref:`NodePath<class_NodePath>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_indexed>`
 
-Назначает новое ``value`` свойству, идентифицированному ``property_path``. Путь должен быть :ref:`NodePath<class_NodePath>` относительно этого объекта и может использовать символ двоеточия (``:``) для доступа к вложенным свойствам.
+Назначает новое ``value`` свойству, идентифицированному ``property_path``. Путь должен быть :ref:`NodePath<class_NodePath>` относительно этого объекта и может использовать символ двоеточия (\ ``:``) для доступа к вложенным свойствам.
 
 
 .. tabs::
@@ -1730,13 +1730,13 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 |void| **set_meta**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_meta>`
 
-Добавляет или изменяет запись ``name`` внутри метаданных объекта. Метаданные ``value`` могут быть любым :ref:`Variant<class_Variant>`, хотя некоторые типы не могут быть сериализованы правильно.
+Adds or changes the entry ``name`` inside the object's metadata. The metadata ``value`` can be any :ref:`Variant<class_Variant>`, although some types cannot be serialized correctly.
 
-Если ``value`` равно ``null``, запись удаляется. Это эквивалентно использованию :ref:`remove_meta()<class_Object_method_remove_meta>`. См. также :ref:`has_meta()<class_Object_method_has_meta>` и :ref:`get_meta()<class_Object_method_get_meta>`.
+If ``value`` is ``null``, the entry is removed. This is the equivalent of using :ref:`remove_meta()<class_Object_method_remove_meta>`. See also :ref:`has_meta()<class_Object_method_has_meta>` and :ref:`get_meta()<class_Object_method_get_meta>`.
 
-\ **Примечание:** Имя метаданных должно быть допустимым идентификатором согласно методу :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>`.
+\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_unicode_identifier()<class_StringName_method_is_valid_unicode_identifier>` method.
 
-\ **Примечание:** Метаданные, имя которых начинается с подчеркивания (``_``), считаются доступными только для редактора. Метаданные, доступные только для редактора, не отображаются в Инспекторе и не должны редактироваться, хотя их все равно можно найти с помощью этого метода.
+\ **Note:** Metadata that has a name starting with an underscore (\ ``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
 
 .. rst-class:: classref-item-separator
 

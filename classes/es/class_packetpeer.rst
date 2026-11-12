@@ -16,9 +16,9 @@ Abstracción y clase base para protocolos basados en paquetes.
 Descripción
 ----------------------
 
-PacketPeer es una abstracción y clase base para protocolos basados en paquetes (como UDP). Proporciona una API para enviar y recibir paquetes tanto como datos en bruto o variables. Esto facilita la transferencia de datos a través de un protocolo, sin tener que codificar los datos como bytes de bajo nivel o tener que preocuparse por el ordenamiento de la red.
+PacketPeer is an abstraction and base class for packet-based protocols (such as UDP). It provides an API for sending and receiving packets both as raw data or variables. This makes it easy to transfer data over a protocol, without having to encode data as low-level bytes or having to worry about network ordering.
 
-\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el preajuste de exportación de Android antes de exportar el proyecto o usar la implementación con un clic. De lo contrario, Android bloqueará cualquier tipo de comunicación de red.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

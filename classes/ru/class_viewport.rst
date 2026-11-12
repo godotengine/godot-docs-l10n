@@ -1679,9 +1679,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-Если ``true``, объекты, отображаемые областью просмотра, становятся предметами процесса выбора мышью.
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **Примечание:** Количество одновременно выбираемых объектов ограничено 64, и они выбираются в неопределенном порядке, который может быть разным в каждом процессе выбора.
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Если ``true``, сигнал input_event будет отправлен только одному физическому объекту в процессе выбора мыши. Если вы хотите получить только верхний объект, вы также должны включить :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Если ``false``, сигнал input_event будет отправлен всем физическим объектам в процессе выбора мыши.
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-Это применимо только к выбору объекта 2D CanvasItem.
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Если ``true``, объекты получают события выбора мыши, отсортированные в первую очередь по их :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` и во вторую очередь по их положению в дереве сцены. Если ``false``, порядок не определен.
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **Примечание:** Этот параметр отключен по умолчанию из-за его потенциально дорогостоящих вычислительных затрат.
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **Примечание:** Сортировка происходит после выбора выбираемых объектов. Из-за ограничения в 64 одновременно выбираемых объекта не гарантируется, что объект с наивысшим :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` получит событие выбора.
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-Разрешение теневого атласа (используется для всенаправленного и точечного освещения). Значение округляется до ближайшей степени 2.
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **Примечание:** Если установлено значение ``0``, позиционные тени вообще не будут видны. Это может значительно повысить производительность на слабых системах за счет снижения нагрузки как на ЦП, так и на ГП (поскольку для отрисовки сцены без теней требуется меньше вызовов отрисовки).
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Возвращает текстуру области просмотра.
+Returns the viewport's texture.
 
-\ **Примечание:** При попытке сохранить текущую текстуру (например, в файл) она может оказаться полностью чёрной или устаревшей, если используется слишком рано, особенно если используется, например, в :ref:`Node._ready()<class_Node_private_method__ready>`. Чтобы убедиться в правильности полученной текстуры, можно дождаться сигнала :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
+\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
 
 
 .. tabs::
@@ -2428,7 +2428,7 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 
 
-\ **Примечание:** Если :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` имеет значение ``true``, возвращаемая текстура будет представлять собой HDR-изображение, использующее линейное кодирование.
+\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
 
 .. rst-class:: classref-item-separator
 

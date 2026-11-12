@@ -472,9 +472,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-Відстань, на якій сила гравітації дорівнює :ref:`gravity<class_Area3D_property_gravity>`. Наприклад, на планеті радіусом 100 метрів з поверхневою гравітацією 4.0 м/с², встановіть :ref:`gravity<class_Area3D_property_gravity>` на 4.0 і одиницю відстані на 100.0. Гравітація буде спадати за законом оберненого квадрата, тому в нашому прикладі на відстані 200 метрів від центру гравітація буде 1.0 м/с² (вдвічі більша відстань, 1/4 гравітації), на відстані 50 метрів - 16.0 м/с² (вдвічі менша відстань, 4x гравітації), і так далі.
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area3D_property_gravity>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the :ref:`gravity<class_Area3D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4× the gravity), and so on.
 
-Вищесказане справедливе лише тоді, коли одиниця відстані є додатним числом. Якщо цей параметр встановлено на 0.0, сила тяжіння буде постійною незалежно від відстані.
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 

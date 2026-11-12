@@ -227,7 +227,7 @@ Per maggiori informazioni, consulta la `tabella dell'elenco dei byte di stato de
 
 L'indice del tono di questo messaggio MIDI. Questo valore varia da ``0`` a ``127``.
 
-Su un pianoforte, il **Do centrale** è ``60``, seguito da un **Do diesis** (``61``), quindi un **Re** (``62``) e così via. Ogni ottava è divisa in offset di 12. Consulta la colonna "Numero di note MIDI" della `tabella delle frequenze dei tasti del pianoforte <https://en.wikipedia.org/wiki/Piano_key_frequencies>`__ per un elenco completo.
+Su un pianoforte, il **Do centrale** è ``60``, seguito da un **Do diesis** (\ ``61``), quindi un **Re** (\ ``62``) e così via. Ogni ottava è divisa in offset di 12. Consulta la colonna "Numero di note MIDI" della `tabella delle frequenze dei tasti del pianoforte <https://en.wikipedia.org/wiki/Piano_key_frequencies>`__ per un elenco completo.
 
 .. rst-class:: classref-item-separator
 

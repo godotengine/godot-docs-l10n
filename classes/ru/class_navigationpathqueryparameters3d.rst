@@ -112,7 +112,7 @@ enum **PathPostProcessing**: :ref:`🔗<enum_NavigationPathQueryParameters3D_Pat
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters3D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Центрирует каждую позицию пути в середине пройденного края полигона навигационной сетки. Это создает лучшие пути для макетов на основе тайлов или сетки, которые ограничивают движение центром ячеек.
+Centers every position in the middle of the traveled navigation mesh's polygon edge. This creates better paths for tile- or grid-based layouts that restrict the movement to the cells' centers.
 
 .. _class_NavigationPathQueryParameters3D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -385,7 +385,7 @@ flags **PathMetadataFlags**: :ref:`🔗<enum_NavigationPathQueryParameters3D_Pat
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-Величина упрощения пути в мировых единицах.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 

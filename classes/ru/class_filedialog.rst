@@ -16,9 +16,9 @@ FileDialog
 Описание
 ----------------
 
-**FileDialog** — это предустановленный диалог, используемый для выбора файлов и каталогов в файловой системе. Он поддерживает маски фильтров. **FileDialog** автоматически устанавливает заголовок окна в соответствии с :ref:`file_mode<class_FileDialog_property_file_mode>`. Если вы хотите использовать пользовательский заголовок, отключите эту функцию, установив :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` в ``false``.
+**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`, if :ref:`Window.title<class_Window_property_title>` is empty.
 
-\ **Примечание:** **FileDialog** по умолчанию невидим. Чтобы сделать его видимым, вызовите один из методов ``popup_*`` из :ref:`Window<class_Window>` узла, например, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Note:** **FileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -43,6 +43,8 @@ FileDialog
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`DisplayMode<enum_FileDialog_DisplayMode>`   | :ref:`display_mode<class_FileDialog_property_display_mode>`                               | ``0``                                                                                    |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`drive_selector_enabled<class_FileDialog_property_drive_selector_enabled>`           | ``true``                                                                                 |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`favorites_enabled<class_FileDialog_property_favorites_enabled>`                     | ``true``                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`file_filter_toggle_enabled<class_FileDialog_property_file_filter_toggle_enabled>`   | ``true``                                                                                 |
@@ -55,6 +57,8 @@ FileDialog
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`filters<class_FileDialog_property_filters>`                                         | ``PackedStringArray()``                                                                  |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`filters_enabled<class_FileDialog_property_filters_enabled>`                         | ``true``                                                                                 |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`folder_creation_enabled<class_FileDialog_property_folder_creation_enabled>`         | ``true``                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden_files_toggle_enabled>` | ``true``                                                                                 |
@@ -62,6 +66,8 @@ FileDialog
    | :ref:`bool<class_bool>`                           | :ref:`layout_toggle_enabled<class_FileDialog_property_layout_toggle_enabled>`             | ``true``                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>`               | ``true``                                                                                 |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`navigation_buttons_enabled<class_FileDialog_property_navigation_buttons_enabled>`   | ``true``                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`option_count<class_FileDialog_property_option_count>`                               | ``0``                                                                                    |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
@@ -80,8 +86,6 @@ FileDialog
    | :ref:`bool<class_bool>`                           | :ref:`show_hidden_files<class_FileDialog_property_show_hidden_files>`                     | ``false``                                                                                |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>`                   | size                                                                                      | ``Vector2i(640, 360)`` (overrides :ref:`Window<class_Window_property_size>`)             |
-   +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                       | title                                                                                     | ``"Save a File"`` (overrides :ref:`Window<class_Window_property_title>`)                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`use_native_dialog<class_FileDialog_property_use_native_dialog>`                     | ``false``                                                                                |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
@@ -332,7 +336,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_RESOURCES** = ``0``
 
-Диалоговое окно позволяет получить доступ только к файлам, находящимся по пути :ref:`Resource<class_Resource>` (``res://``).
+Диалоговое окно позволяет получить доступ только к файлам, находящимся по пути :ref:`Resource<class_Resource>` (\ ``res://``).
 
 .. _class_FileDialog_constant_ACCESS_USERDATA:
 
@@ -340,7 +344,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_USERDATA** = ``1``
 
-Диалоговое окно позволяет получить доступ только к файлам, находящимся по пути к данным пользователя (``user://``).
+Диалоговое окно позволяет получить доступ только к файлам, находящимся по пути к данным пользователя (\ ``user://``).
 
 .. _class_FileDialog_constant_ACCESS_FILESYSTEM:
 
@@ -392,9 +396,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_HIDDEN_FILES** = ``0``
 
-Включает/выключает видимость кнопки «Избранное» и списка избранного в левой части диалогового окна.
+If enabled, shows the toggle hidden files button.
 
-Эквивалентно :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden_files_toggle_enabled>`.
+Equivalent to :ref:`hidden_files_toggle_enabled<class_FileDialog_property_hidden_files_toggle_enabled>`.
 
 .. _class_FileDialog_constant_CUSTOMIZATION_CREATE_FOLDER:
 
@@ -475,6 +479,36 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 Если эта опция включена, в контекстном меню отобразится пункт «Удалить», позволяющий перемещать файлы и папки в корзину.
 
 Эквивалентно :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
+
+.. _class_FileDialog_constant_CUSTOMIZATION_NAVIGATION_BUTTONS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_NAVIGATION_BUTTONS** = ``9``
+
+If enabled, shows the go back/forward buttons on the toolbar.
+
+Equivalent to :ref:`navigation_buttons_enabled<class_FileDialog_property_navigation_buttons_enabled>`.
+
+.. _class_FileDialog_constant_CUSTOMIZATION_DRIVE_SELECTOR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_DRIVE_SELECTOR** = ``10``
+
+If enabled, shows the drive select dropdown next to the current path.
+
+Equivalent to :ref:`drive_selector_enabled<class_FileDialog_property_drive_selector_enabled>`.
+
+.. _class_FileDialog_constant_CUSTOMIZATION_FILTERS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_FILTERS** = ``11``
+
+If enabled, shows the file extension filter dropdown next to the file name.
+
+Equivalent to :ref:`filters_enabled<class_FileDialog_property_filters_enabled>`.
 
 .. rst-class:: classref-section-separator
 
@@ -591,6 +625,23 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 ----
 
+.. _class_FileDialog_property_drive_selector_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **drive_selector_enabled** = ``true`` :ref:`🔗<class_FileDialog_property_drive_selector_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
+
+If ``true``, shows the drive select dropdown next to the current path.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_FileDialog_property_favorites_enabled:
 
 .. rst-class:: classref-property
@@ -693,7 +744,28 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 \ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают MIME-типы.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FileDialog_property_filters_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **filters_enabled** = ``true`` :ref:`🔗<class_FileDialog_property_filters_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
+
+If ``true``, shows the file extension filter dropdown next to the file name.
 
 .. rst-class:: classref-item-separator
 
@@ -761,7 +833,26 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 - |void| **set_mode_overrides_title**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_mode_overriding_title**\ (\ )
 
-Если ``true``, изменение свойства :ref:`file_mode<class_FileDialog_property_file_mode>` соответствующим образом установит заголовок окна (например, установка :ref:`file_mode<class_FileDialog_property_file_mode>` на :ref:`FILE_MODE_OPEN_FILE<class_FileDialog_constant_FILE_MODE_OPEN_FILE>` изменит заголовок окна на «Открыть файл»).
+**Устарело:** The title is automatically overridden when :ref:`Window.title<class_Window_property_title>` is empty.
+
+Has no effect and always equals to ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FileDialog_property_navigation_buttons_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **navigation_buttons_enabled** = ``true`` :ref:`🔗<class_FileDialog_property_navigation_buttons_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
+
+If ``true``, shows the go back/forward buttons on the toolbar.
 
 .. rst-class:: classref-item-separator
 
@@ -822,7 +913,11 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 \ **Примечание:** ``index`` — это значение в диапазоне ``0 .. option_count - 1``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -911,17 +1006,19 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-Если ``true`` и если это поддерживается текущим :ref:`DisplayServer<class_DisplayServer>`, вместо пользовательского диалогового окна будет использоваться собственное диалоговое окно ОС.
+If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
 
-\ **Примечание:** На Android это поддерживается только при использовании :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. Для режимов доступа :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` и :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` система будет использовать пользовательское диалоговое окно FileDialog.
+\ **Note:** Native dialogs can emit the following signals: :ref:`dir_selected<class_FileDialog_signal_dir_selected>`, :ref:`file_selected<class_FileDialog_signal_file_selected>`, :ref:`files_selected<class_FileDialog_signal_files_selected>`, and :ref:`AcceptDialog.canceled<class_AcceptDialog_signal_canceled>`.
 
-\ **Примечание:** В Linux и macOS изолированные приложения всегда используют собственные диалоговые окна для доступа к файловой системе хоста.
+\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
 
-\ **Примечание:** В macOS изолированные приложения сохраняют закладки с ограниченным доступом, чтобы сохранить доступ к открытым папкам в нескольких сессиях. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
+\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
 
-\ **Примечание:** Собственные диалоговые окна изолированы от базового процесса, свойства диалогового окна файла нельзя изменить после его отображения.
+\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
 
-\ **Примечание:** Это свойство игнорируется в :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+
+\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
 
 .. rst-class:: classref-section-separator
 

@@ -78,6 +78,8 @@ LightmapGI
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` | :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>`                     | ``0``                 |
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`float<class_float>`                                 | :ref:`specular_intensity<class_LightmapGI_property_specular_intensity>`               | ``0.0``               |
+   +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`bool<class_bool>`                                   | :ref:`supersampling<class_LightmapGI_property_supersampling>`                         | ``false``             |
    +-----------------------------------------------------------+---------------------------------------------------------------------------------------+-----------------------+
    | :ref:`float<class_float>`                                 | :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>`           | ``2.0``               |
@@ -152,7 +154,7 @@ enum **GenerateProbes**: :ref:`🔗<enum_LightmapGI_GenerateProbes>`
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_DISABLED** = ``0``
 
-不要为光照动态对象生成光照贴图探针。
+Don't generate additional lightmap probes for lighting dynamic objects. Probes will still be generated on each corner of the LightmapGI's bounds (8 probes total), so that interpolation works correctly when using additional :ref:`LightmapProbe<class_LightmapProbe>` nodes.
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_4:
 
@@ -291,6 +293,14 @@ enum **BakeError**: :ref:`🔗<enum_LightmapGI_BakeError>`
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_ATLAS_TOO_SMALL** = ``11``
 
 由于光照贴图无法放入图集，因此光照贴图烘焙失败。
+
+.. _class_LightmapGI_constant_BAKE_ERROR_TEXTURE_EXCEEDS_DEVICE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_TEXTURE_EXCEEDS_DEVICE_LIMIT** = ``12``
+
+Lightmap baking failed as the baking process requires a texture larger than the maximum texture size supported by the rendering device. This can happen when :ref:`supersampling<class_LightmapGI_property_supersampling>` is enabled with a high :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>`.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +612,9 @@ enum **EnvironmentMode**: :ref:`🔗<enum_LightmapGI_EnvironmentMode>`
 - |void| **set_max_texture_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_texture_size**\ (\ )
 
-生成的纹理图集的最大纹理大小。更高的值将导致生成的切片更少，但由于硬件对纹理大小的限制，可能无法在所有硬件上工作。如果不确定，请将 :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` 保留为其默认值 ``16384``\ 。
+The maximum texture size for the generated texture atlas. Higher values will result in fewer slices being generated, but may not work on all hardware as a result of hardware limitations on texture sizes. Leave :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` at its default value of ``16384`` if unsure.
+
+\ **Note:** If :ref:`supersampling<class_LightmapGI_property_supersampling>` is enabled, the texture atlas used while baking may be up to :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` times larger than :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>`, since it's downsampled before saving.
 
 .. rst-class:: classref-item-separator
 
@@ -647,6 +659,25 @@ enum **EnvironmentMode**: :ref:`🔗<enum_LightmapGI_EnvironmentMode>`
 使用阴影遮罩的 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 节点即便超出了 :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 所定义的范围也能够投射阴影。原理是为平行光烘焙包含阴影贴图的纹理，然后根据当前的阴影遮罩模式使用这张纹理。
 
 \ **注意：**\ :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` 非 :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` 时才会创建阴影遮罩纹理。要看到区别，请将 :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` 改为其他模式，然后重新烘焙光照贴图。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LightmapGI_property_specular_intensity:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **specular_intensity** = ``0.0`` :ref:`🔗<class_LightmapGI_property_specular_intensity>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_specular_intensity**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_specular_intensity**\ (\ )
+
+The strength of the lightmap's approximated specular lobe. This helps make lightmapped scenes look closer to real-time lighting, which is particularly noticeable for lights that use the :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` bake mode. Only effective if :ref:`directional<class_LightmapGI_property_directional>` is ``true``.
+
+\ **Note:** The lightmap is only able to represent one light direction per texel, which means that the specular direction may appear to be incorrect in certain cases. This can manifest as specular lobes appearing to warp around as the camera moves.
 
 .. rst-class:: classref-item-separator
 

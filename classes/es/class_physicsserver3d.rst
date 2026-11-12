@@ -223,9 +223,13 @@ Métodos
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`free_rid<class_PhysicsServer3D_method_free_rid>`\ (\ rid\: :ref:`RID<class_RID>`\ )                                                                                                                                                                                                           |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Quaternion<class_Quaternion>`                               | :ref:`generic_6dof_joint_get_angular_target_rotation<class_PhysicsServer3D_method_generic_6dof_joint_get_angular_target_rotation>`\ (\ joint\: :ref:`RID<class_RID>`\ ) |const|                                                                                                                     |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                           | :ref:`generic_6dof_joint_get_flag<class_PhysicsServer3D_method_generic_6dof_joint_get_flag>`\ (\ joint\: :ref:`RID<class_RID>`, axis\: :ref:`Axis<enum_Vector3_Axis>`, flag\: :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>`\ ) |const|                                         |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                                         | :ref:`generic_6dof_joint_get_param<class_PhysicsServer3D_method_generic_6dof_joint_get_param>`\ (\ joint\: :ref:`RID<class_RID>`, axis\: :ref:`Axis<enum_Vector3_Axis>`, param\: :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>`\ ) |const|                                    |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                            | :ref:`generic_6dof_joint_set_angular_target_rotation<class_PhysicsServer3D_method_generic_6dof_joint_set_angular_target_rotation>`\ (\ joint\: :ref:`RID<class_RID>`, target_rotation\: :ref:`Quaternion<class_Quaternion>`\ )                                                                      |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`generic_6dof_joint_set_flag<class_PhysicsServer3D_method_generic_6dof_joint_set_flag>`\ (\ joint\: :ref:`RID<class_RID>`, axis\: :ref:`Axis<enum_Vector3_Axis>`, flag\: :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>`, enable\: :ref:`bool<class_bool>`\ )               |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -965,6 +969,8 @@ La velocidad que el motor lineal de la articulación intentará alcanzar.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_MOTOR_FORCE_LIMIT** = ``6``
 
+**Obsoleto:** Use :ref:`G6DOF_JOINT_LINEAR_DRIVE_FORCE_LIMIT<class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_DRIVE_FORCE_LIMIT>` instead, which applies in both spring and motor modes.
+
 La máxima fuerza que el motor lineal puede aplicar mientras intenta alcanzar la velocidad objetivo.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_SPRING_STIFFNESS:
@@ -975,7 +981,7 @@ La máxima fuerza que el motor lineal puede aplicar mientras intenta alcanzar la
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -987,7 +993,7 @@ La máxima fuerza que el motor lineal puede aplicar mientras intenta alcanzar la
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -999,7 +1005,7 @@ La máxima fuerza que el motor lineal puede aplicar mientras intenta alcanzar la
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1083,6 +1089,8 @@ La velocidad del objetivo para el motor en los ejes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_MOTOR_FORCE_LIMIT** = ``18``
 
+**Obsoleto:** Use :ref:`G6DOF_JOINT_ANGULAR_DRIVE_TORQUE_LIMIT<class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_DRIVE_TORQUE_LIMIT>` instead, which applies in both spring and motor modes.
+
 Aceleración máxima para el motor en los ejes.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_SPRING_STIFFNESS:
@@ -1093,7 +1101,7 @@ Aceleración máxima para el motor en los ejes.
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1105,7 +1113,7 @@ Aceleración máxima para el motor en los ejes.
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1117,15 +1125,39 @@ Aceleración máxima para el motor en los ejes.
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
+
+.. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_DRIVE_FORCE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_DRIVE_FORCE_LIMIT** = ``22``
+
+The maximum force the joint can apply along this linear axis.
+
+Used by both the spring drive and the linear motor; supersedes :ref:`G6DOF_JOINT_LINEAR_MOTOR_FORCE_LIMIT<class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_MOTOR_FORCE_LIMIT>` when set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
+
+.. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_DRIVE_TORQUE_LIMIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_DRIVE_TORQUE_LIMIT** = ``23``
+
+The maximum torque the joint can apply around this angular axis.
+
+Used by both the spring drive and the angular motor; supersedes :ref:`G6DOF_JOINT_ANGULAR_MOTOR_FORCE_LIMIT<class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_MOTOR_FORCE_LIMIT>` when set.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_MAX** = ``22``
+:ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_MAX** = ``24``
 
 Representa el tamaño del enum :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>`.
 
@@ -1163,7 +1195,7 @@ Si se configura, es posible el movimiento de rotación.
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1175,9 +1207,17 @@ Si se configura, es posible el movimiento de rotación.
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
+
+.. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_ANGULAR_MOTOR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_ANGULAR_MOTOR** = ``4``
+
+If set, there is a rotational or angular motor across these axes.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_MOTOR:
 
@@ -1185,7 +1225,9 @@ Si se configura, es posible el movimiento de rotación.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_MOTOR** = ``4``
 
-Si se activa, hay un motor de rotación a través de estos ejes.
+**Obsoleto:** Use :ref:`G6DOF_JOINT_FLAG_ENABLE_ANGULAR_MOTOR<class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_ANGULAR_MOTOR>` instead.
+
+If set, there is a rotational or angular motor across these axes.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_LINEAR_MOTOR:
 
@@ -1349,7 +1391,7 @@ Constante para establecer/obtener si el vector de gravedad de un área es una di
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4x the gravity), and so on.
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4× the gravity), and so on.
 
 The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
@@ -1847,7 +1889,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1859,7 +1901,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1871,7 +1913,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1883,7 +1925,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1895,7 +1937,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -1907,7 +1949,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. container:: contribute
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 
 
@@ -2170,7 +2212,7 @@ By counting (or keeping track of) the shapes that enter and exit, it can be dete
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2220,7 +2262,7 @@ Sustituye una forma de área dada por otra. La forma antigua es seleccionada por
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2418,7 +2460,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **body_attach_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_attach_object_instance_id>`
 
-Asigna el área a un descendiente de :ref:`Object<class_Object>`, para que pueda existir en el árbol de nodos.
+Assigns the body to a descendant of :ref:`Object<class_Object>`, so it can exist in the node tree.
 
 .. rst-class:: classref-item-separator
 
@@ -2642,7 +2684,7 @@ Devuelve un estado corporal.
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2718,7 +2760,7 @@ Restaura la inercia y el centro de masa por defecto basados en las formas para c
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2820,7 +2862,7 @@ La detección de colisión continua trata de predecir dónde colisionará un cue
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_force_integration_callback>`
 
-Establece la función de callback de integración de fuerza personalizada del cuerpo a ``callable``. Usa un :ref:`Callable<class_Callable>` vacío (``Callable()``) para limpiar el callback personalizado.
+Establece la función de callback de integración de fuerza personalizada del cuerpo a ``callable``. Usa un :ref:`Callable<class_Callable>` vacío (\ ``Callable()``) para limpiar el callback personalizado.
 
 La función ``callable`` será llamada en cada tick de físicas, antes de la integración de fuerza estándar (véase :ref:`body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`). Puede ser usada, por ejemplo, para actualizar la velocidad lineal y angular del cuerpo basada en el contacto con otros cuerpos.
 
@@ -2918,7 +2960,7 @@ Sustituye una forma corporal dada por otra. La forma antigua es seleccionada por
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -2966,7 +3008,7 @@ Establece un estado corporal.
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_state_sync_callback>`
 
-Establece la función de callback de sincronización de estado del cuerpo a ``callable``. Usa un :ref:`Callable<class_Callable>` vacío (``Callable()``) para limpiar el callback.
+Establece la función de callback de sincronización de estado del cuerpo a ``callable``. Usa un :ref:`Callable<class_Callable>` vacío (\ ``Callable()``) para limpiar el callback.
 
 La función ``callable`` será llamada cada fotograma de física, asumiendo que el cuerpo estuvo activo durante el tick de física anterior, y puede ser usada para obtener el último estado del servidor de física.
 
@@ -3100,6 +3142,20 @@ Destruye cualquiera de los objetos creados por PhysicsServer3D. Si el :ref:`RID<
 
 ----
 
+.. _class_PhysicsServer3D_method_generic_6dof_joint_get_angular_target_rotation:
+
+.. rst-class:: classref-method
+
+:ref:`Quaternion<class_Quaternion>` **generic_6dof_joint_get_angular_target_rotation**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_generic_6dof_joint_get_angular_target_rotation>`
+
+Returns the target angular orientation of a generic 6DOF joint as a body-space quaternion describing the desired orientation of body B relative to body A.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends return the identity quaternion.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_PhysicsServer3D_method_generic_6dof_joint_get_flag:
 
 .. rst-class:: classref-method
@@ -3119,6 +3175,20 @@ Devuelve el valor de una bandera de una articulación genérica de 6 grados de l
 :ref:`float<class_float>` **generic_6dof_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, axis\: :ref:`Axis<enum_Vector3_Axis>`, param\: :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_generic_6dof_joint_get_param>`
 
 Devuelve el valor de un parámetro de una articulación genérica de 6 grados de libertad (6DOF).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PhysicsServer3D_method_generic_6dof_joint_set_angular_target_rotation:
+
+.. rst-class:: classref-method
+
+|void| **generic_6dof_joint_set_angular_target_rotation**\ (\ joint\: :ref:`RID<class_RID>`, target_rotation\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_PhysicsServer3D_method_generic_6dof_joint_set_angular_target_rotation>`
+
+Sets the target angular orientation of a generic 6DOF joint as a body-space quaternion describing the desired orientation of body B relative to body A.
+
+\ **Note:** Only for Jolt backend. Other 3D physics backends may ignore this value.
 
 .. rst-class:: classref-item-separator
 
@@ -3228,7 +3298,7 @@ Establece un parámetro de una articulación de bisagra (hinge).
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3242,7 +3312,7 @@ Establece un parámetro de una articulación de bisagra (hinge).
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3306,7 +3376,7 @@ Devuelve si los cuerpos unidos a la :ref:`Joint3D<class_Joint3D>` colisionarán 
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3318,7 +3388,7 @@ Devuelve si los cuerpos unidos a la :ref:`Joint3D<class_Joint3D>` colisionarán 
 
 |void| **joint_make_generic_6dof**\ (\ joint\: :ref:`RID<class_RID>`, body_A\: :ref:`RID<class_RID>`, local_ref_A\: :ref:`Transform3D<class_Transform3D>`, body_B\: :ref:`RID<class_RID>`, local_ref_B\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_make_generic_6dof>`
 
-Convierte la unión en una unión genérica de seis grados de libertad (6DOF). Usa :ref:`generic_6dof_joint_set_flag()<class_PhysicsServer3D_method_generic_6dof_joint_set_flag>` y :ref:`generic_6dof_joint_set_param()<class_PhysicsServer3D_method_generic_6dof_joint_set_param>` para establecer las banderas y parámetros de la unión respectivamente.
+Convierte la articulación en una articulación genérica de seis grados de libertad (6DOF). Utiliza :ref:`generic_6dof_joint_set_flag()<class_PhysicsServer3D_method_generic_6dof_joint_set_flag>` y :ref:`generic_6dof_joint_set_param()<class_PhysicsServer3D_method_generic_6dof_joint_set_param>` para establecer sus indicadores y parámetros de la articulación, respectivamente.
 
 .. rst-class:: classref-item-separator
 
@@ -3332,7 +3402,7 @@ Convierte la unión en una unión genérica de seis grados de libertad (6DOF). U
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3346,7 +3416,7 @@ Convierte la unión en una unión genérica de seis grados de libertad (6DOF). U
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3360,7 +3430,7 @@ Convierte la unión en una unión genérica de seis grados de libertad (6DOF). U
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 
@@ -3410,7 +3480,7 @@ Devuelve la posición de la articulación en el espacio local del cuerpo b de la
 
 :ref:`float<class_float>` **pin_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_pin_joint_get_param>`
 
-Gets a pin joint parameter.
+Obtiene un parámetro de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 
@@ -3446,7 +3516,7 @@ Establece la posición de la articulación en el espacio local del cuerpo b de l
 
 |void| **pin_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_pin_joint_set_param>`
 
-Sets a pin joint parameter.
+Establece un parámetro de la articulación de pasador.
 
 .. rst-class:: classref-item-separator
 

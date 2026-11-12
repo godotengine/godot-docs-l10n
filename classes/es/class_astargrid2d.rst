@@ -561,7 +561,7 @@ Si el punto ``from_id`` no está desactivado, no hay una ruta válida al objetiv
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_point_data_in_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_get_point_data_in_region>`
 
-Devuelve un array de diccionarios con información de los puntos (``id``: :ref:`Vector2i<class_Vector2i>`, ``position``: :ref:`Vector2<class_Vector2>`, ``solid``: :ref:`bool<class_bool>`, ``weight_scale``: :ref:`float<class_float>`) dentro de una ``region``.
+Devuelve un array de diccionarios con información de los puntos (\ ``id``: :ref:`Vector2i<class_Vector2i>`, ``position``: :ref:`Vector2<class_Vector2>`, ``solid``: :ref:`bool<class_bool>`, ``weight_scale``: :ref:`float<class_float>`) dentro de una ``region``.
 
 .. rst-class:: classref-item-separator
 

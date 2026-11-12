@@ -75,7 +75,11 @@ ArrayOccluder3D
 
 \ **注意：**\ 設定此值後遮擋物會立即更新。若以程式化方式建立遮擋物，建議改用 :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` 以避免建立過程中更新兩次。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +100,11 @@ ArrayOccluder3D
 
 \ **注意：**\ 設定此值後遮擋物會立即更新。若以程式化方式建立遮擋物，建議改用 :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` 以避免建立過程中更新兩次。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

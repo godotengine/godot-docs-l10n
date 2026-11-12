@@ -14,7 +14,7 @@ VisualShaderNodeFloatFunc
 Описание
 ----------------
 
-Принять скаляр с плавающей точкой (``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
+Принять скаляр с плавающей точкой (\ ``x``) на входной порт и преобразовать его в соответствии с :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

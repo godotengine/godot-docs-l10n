@@ -1033,7 +1033,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX** = ``5``
 
-Представляємо розмір defaultCanvasItemTextureFilter enum.
+Представляємо розмір :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -1083,7 +1083,7 @@ enum **DefaultCanvasItemTextureRepeat**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX** = ``4``
 
-Представляємо розмір defaultCanvasItemTextureRepeat enum.
+Представляємо розмір :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -1679,9 +1679,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-Якщо ``true``, об'єкти, що надавалися переглядом, стають предметами процесу підбору мишки.
+If ``true``, the objects rendered by viewport become subjects of mouse picking process.
 
-\ **Примітка:** Кількість одночасно відібраних об'єктів обмежена 64 і вони вибираються в нестандартному порядку, який може відрізнятися в кожному процесі пікірування.
+\ **Note:** The number of :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input is limited to 64 and they are selected in a non-deterministic order. The number of pickable 3D objects is not limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Якщо ``true``, вхідний сигнал буде відправлений лише на один об'єкт фізики в процесі пікування мишки. Якщо ви хочете отримати верхній об'єкт тільки, ви також повинні включити :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Якщо ``false``, вхідний сигнал буде відправлений на всі об'єкти фізики в процесі пікування мишки.
+If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
 
-Це стосується лише вибору об'єкта 2D CanvasItem.
+This applies to :ref:`CanvasItem<class_CanvasItem>` picking only.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,11 +1719,11 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Якщо ``true``, об'єкти отримують мишу забір подій, відсортовані в першу чергу їх :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` і по-друге за їх позицією в дереві сцени. Якщо ``false``, замовлення не визначено.
+If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is non-deterministic.
 
-\ **Примітка:** Цей параметр відключається за замовчуванням через його потенційні дорогі обчислювальні витрати.
+\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
-\ **Примітка:** Сортування відбувається після вибору забірних об'єктів. Завдяки обмеженням 64 одночасно відібраних об'єктів, не гарантується, що об'єкт з найвищою :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` отримує пікірувальний захід.
+\ **Note:** Sorting happens after selecting the pickable objects. If surpassing the maximum of 64 :ref:`CanvasItem<class_CanvasItem>`\ s pickable by a single input, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-Вирішення тінейських атласів (використовуються для омні та точкових світильників). Вартість зараховується до найближчої потужності 2.
+The shadow atlas's resolution (used for omni and spot lights). The final value is rounded up to the nearest power of 2.
 
-\ **Примітка:** Якщо це встановлено до ``0``, на всіх не буде видно положення тіней. Це може значно поліпшити продуктивність на низьких рівнях систем, зменшуючи навантаження процесора та GPU (як менше, кількість дзвінків потрібно для малювання сцени без тіней).
+\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Повертає текстуру області перегляду.
+Returns the viewport's texture.
 
-\ **Примітка:** Під час спроби зберегти поточну текстуру (наприклад, у файлі), вона може бути повністю чорною або застарілою, якщо її використати занадто рано, особливо, наприклад, у методі ``Node._ready``. Щоб переконатися, що отримана текстура правильна, можна зачекати сигнал :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
+\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
 
 
 .. tabs::
@@ -2428,7 +2428,7 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 
 
-\ **Примітка:** Коли :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` має значення ``true``, повернена текстура буде HDR-зображенням з використанням лінійного кодування.
+\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
 
 .. rst-class:: classref-item-separator
 

@@ -108,7 +108,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 任意命中着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +131,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 最近命中着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +154,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 计算着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +177,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 片段着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +200,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 相交着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +223,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 未命中着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +246,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 光线生成着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +269,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 曲面细分控制着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +292,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 曲面细分求值着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +315,11 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 
 顶点着色器阶段的 SPIR-V 字节码。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

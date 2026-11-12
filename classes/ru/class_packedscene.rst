@@ -41,7 +41,7 @@ PackedScene
 
 
 
-\ **Пример:** Сохраните узел с разными владельцами. Следующий пример создает 3 объекта: :ref:`Node2D<class_Node2D>` (``node``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) и :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``collision`` является дочерним элементом ``body``, который является дочерним элементом ``node``. Только ``body`` принадлежит ``node``, и :ref:`pack()<class_PackedScene_method_pack>` сохранит только эти два узла, но не ``collision``.
+\ **Пример:** Сохраните узел с разными владельцами. Следующий пример создает 3 объекта: :ref:`Node2D<class_Node2D>` (\ ``node``), :ref:`RigidBody2D<class_RigidBody2D>` (\ ``body``) и :ref:`CollisionObject2D<class_CollisionObject2D>` (\ ``collision``). ``collision`` является дочерним элементом ``body``, который является дочерним элементом ``node``. Только ``body`` принадлежит ``node``, и :ref:`pack()<class_PackedScene_method_pack>` сохранит только эти два узла, но не ``collision``.
 
 
 .. tabs::

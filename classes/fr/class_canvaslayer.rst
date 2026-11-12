@@ -291,7 +291,7 @@ Renvoie le RID du canevas utilisé par ce calque.
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-Renvoie la transformation du système de coordonnées du **CanvasLayer** vers le système de coordonnées du :ref:`Viewport<class_Viewport>`.
+Returns the transform from the **CanvasLayer**'s coordinate system to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 

@@ -186,11 +186,13 @@ BaseMaterial3D
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`Texture2D<class_Texture2D>`                               | :ref:`orm_texture<class_BaseMaterial3D_property_orm_texture>`                                                     |                       |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                           | :ref:`particles_anim_h_frames<class_BaseMaterial3D_property_particles_anim_h_frames>`                             |                       |
+   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`                               | ``false``             |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_loop<class_BaseMaterial3D_property_particles_anim_loop>`                                     |                       |
+   | :ref:`int<class_int>`                                           | :ref:`particles_anim_h_frames<class_BaseMaterial3D_property_particles_anim_h_frames>`                             | ``1``                 |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                           | :ref:`particles_anim_v_frames<class_BaseMaterial3D_property_particles_anim_v_frames>`                             |                       |
+   | :ref:`bool<class_bool>`                                         | :ref:`particles_anim_loop<class_BaseMaterial3D_property_particles_anim_loop>`                                     | ``false``             |
+   +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`                                           | :ref:`particles_anim_v_frames<class_BaseMaterial3D_property_particles_anim_v_frames>`                             | ``1``                 |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`float<class_float>`                                       | :ref:`point_size<class_BaseMaterial3D_property_point_size>`                                                       | ``1.0``               |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -618,7 +620,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_SCISSOR** = ``2``
 
-該材質會將所有低於閾值的值截斷，其餘部分保持不透明。不透明部分會在深度預通道中渲染。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。
+The material will cut off all values below a threshold, the rest will remain opaque. The opaque portions will be rendered in the depth prepass. This is faster to render than alpha blending, but slower than opaque rendering. This also supports casting shadows. For textures using this mode see the ``Preserve Alpha Test Coverage`` option in the texture import settings to improve distant rendering and popping.
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_HASH:
 
@@ -800,11 +802,19 @@ enum **Feature**: :ref:`🔗<enum_BaseMaterial3D_Feature>`
 
 用於設定 :ref:`bent_normal_enabled<class_BaseMaterial3D_property_bent_normal_enabled>` 的常數。
 
+.. _class_BaseMaterial3D_constant_FEATURE_PARTICLES_ANIMATION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_PARTICLES_ANIMATION** = ``13``
+
+Constant for setting :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`.
+
 .. _class_BaseMaterial3D_constant_FEATURE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_MAX** = ``13``
+:ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_MAX** = ``14``
 
 代表 :ref:`Feature<enum_BaseMaterial3D_Feature>` 列舉的大小。
 
@@ -1328,9 +1338,11 @@ enum **BillboardMode**: :ref:`🔗<enum_BaseMaterial3D_BillboardMode>`
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_PARTICLES** = ``3``
 
-當此材質被指派給 :ref:`GPUParticles3D<class_GPUParticles3D>` 或 :ref:`CPUParticles3D<class_CPUParticles3D>` 節點時，將用於粒子系統的翻頁動畫，並啟用 ``particles_anim_*`` 屬性。
+Used for particle systems when assigned to :ref:`GPUParticles3D<class_GPUParticles3D>` and :ref:`CPUParticles3D<class_CPUParticles3D>` nodes (flipbook animation). Enables ``particles_anim_*`` properties.
 
-為了讓動畫播放，\ :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` 或 :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` 必須設為大於 0 的值。
+The :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` or :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` should also be set to a value bigger than zero for the animation to play.
+
+For animations without bilboarding, see :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2959,18 +2971,39 @@ Alpha 剪刀將丟棄值的閾值。較高的值將導致更多像素被丟棄�
 
 ----
 
+.. _class_BaseMaterial3D_property_particles_anim_enabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **particles_anim_enabled** = ``false`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_enabled>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
+
+If ``true``, enables ``particles_anim_*`` properties. The :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` or :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` should also be set to a value bigger than zero for the animation to play.
+
+\ **Note:** For compatibility reasons, this property is ignored and always enabled when :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_BaseMaterial3D_property_particles_anim_h_frames:
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **particles_anim_h_frames** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_h_frames>`
+:ref:`int<class_int>` **particles_anim_h_frames** = ``1`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_h_frames>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-粒子精靈表中的水平影格數。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
+The number of horizontal frames in the particle sprite sheet.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2980,14 +3013,16 @@ Alpha 剪刀將丟棄值的閾值。較高的值將導致更多像素被丟棄�
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **particles_anim_loop** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_loop>`
+:ref:`bool<class_bool>` **particles_anim_loop** = ``false`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_loop>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_anim_loop**\ (\ )
 
-如果為 ``true``\ ，則循環粒子動畫。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
+If ``true``, particle animations are looped.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2997,14 +3032,16 @@ Alpha 剪刀將丟棄值的閾值。較高的值將導致更多像素被丟棄�
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **particles_anim_v_frames** :ref:`🔗<class_BaseMaterial3D_property_particles_anim_v_frames>`
+:ref:`int<class_int>` **particles_anim_v_frames** = ``1`` :ref:`🔗<class_BaseMaterial3D_property_particles_anim_v_frames>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-粒子精靈表中的垂直影格數。僅在使用 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 時啟用。見 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`\ 。
+The number of vertical frames in the particle sprite sheet.
+
+Only enabled when :ref:`particles_anim_enabled<class_BaseMaterial3D_property_particles_anim_enabled>` is ``true`` or :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is set to :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 

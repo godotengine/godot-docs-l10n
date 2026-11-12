@@ -264,7 +264,7 @@ Engine
 
 \ **Примітка:** Це не впливає на швидкість відтворення аудіо. Використовуйте :ref:`AudioServer.playback_speed_scale<class_AudioServer_property_playback_speed_scale>` для налаштування швидкості відтворення аудіо незалежно від :ref:`time_scale<class_Engine_property_time_scale>`.
 
-\ **Примітка:** Це не автоматично регулюється :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. З значеннями вище ``1.0`` фізичний моделювання може стати менш точним, оскільки кожен фізичний кліщ буде розтягувати більший період часу двигуна. Якщо ви модифікуєте :ref:`time_s ale<class_Engine_property_time_s ale>` для прискорення моделювання великим фактором, розглянемо також збільшення :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`, щоб зробити моделювання більш надійним.
+\ **Примітка:** Це не автоматично регулюється :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. З значеннями вище ``1.0`` фізичний моделювання може стати менш точним, оскільки кожен фізичний кліщ буде розтягувати більший період часу двигуна. Якщо ви модифікуєте :ref:`time_scale<class_Engine_property_time_scale>` для прискорення моделювання великим фактором, розглянемо також збільшення :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`, щоб зробити моделювання більш надійним.
 
 .. rst-class:: classref-section-separator
 

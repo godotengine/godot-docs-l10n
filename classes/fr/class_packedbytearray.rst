@@ -12,7 +12,7 @@ Un tableau compacté d'octets.
 Description
 -----------
 
-An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
+An array specifically designed to hold bytes (integers between ``0`` and ``255``). Packs data tightly, so it saves memory for large array sizes.
 
 \ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
@@ -241,7 +241,25 @@ Construit un **PackedByteArray** comme une copie du **PackedByteArray** donné.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Construit un nouveau **PackedByteArray**. Optionnellement, vous pouvez passer un :ref:`Array<class_Array>` générique qui sera converti.
+Constructs a new **PackedByteArray** from a generic :ref:`Array<class_Array>`.
+
+Boolean ``false`` and ``true`` are converted to ``0`` and ``1`` respectively.
+
+Integers from the generic Array outside the byte range will overflow and roll over.
+
+Floating-point numbers from the generic Array are converted to integers by truncating the decimal part. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Strings from the generic Array are converted to integers using :ref:`String.to_int()<class_String_method_to_int>`, with ``0`` as a fallback value if no integer can be parsed from the string. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Other values from the generic Array that cannot be converted into an integer are initialized to ``0``.
+
+::
+
+    print(PackedByteArray([true, false])) # Prints [1, 0]
+    print(PackedByteArray([-1, 0, 255, 256, 300])) # Prints [255, 0, 255, 0, 44]
+    print(PackedByteArray([-1.0, 0.0, 1.0, 1.9, 2.0, 500.0])) # Prints [255, 0, 1, 1, 2, 244]
+    print(PackedByteArray(["", "10", "123.456", "-1 but valid", "invalid"])) # Prints [0, 10, 123, 255, 0]
+    print(PackedByteArray([Object.new(), Callable(), Signal()])) # Prints [0, 0, 0]
 
 .. rst-class:: classref-section-separator
 
@@ -538,13 +556,13 @@ Renvoie un nouveau **PackedByteArray** avec les données décompressées. Défin
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress_dynamic**\ (\ max_output_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress_dynamic>`
 
-Renvoie un nouveau **PackedByteArray** avec les données décompressées. Réglez le mode de compression en utilisant l'une des constantes de :ref:`CompressionMode<enum_FileAccess_CompressionMode>`. **Cette méthode n'accepte que les modes de compression brotli, gzip et deflate**\ 
+Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-Cette méthode est potentiellement plus lente que :ref:`decompress()<class_PackedByteArray_method_decompress>`, car elle peut avoir à réaffecter son tampon de sortie plusieurs fois en décompressant, alors que :ref:`decompress()<class_PackedByteArray_method_decompress>` sait sa taille du tampon de sortie du début.
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows the size of its output buffer from the beginning.
 
-GZIP a un rapport de compression maximal de 1032:1, ce qui signifie qu'il est très possible pour une petite charge utile comprimée de décompresser en une sortie potentiellement très grande. Pour éviter cela, vous pouvez fournir une taille maximale que cette fonction est autorisée à attribuer en octets via ``max_output_size``. Passer -1 permettra une sortie non limitée. Si une valeur positive est passée et que la décompression dépasse ce montant en octets, une erreur sera renvoyée.
+GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
-\ **Note :** La décompression n'est pas garantie de marcher avec des données non compressées par Godot, par exemple si les données compressées avec le mode de compression deflate n'ont pas de checksum ou d'entête.
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +718,7 @@ Encode un entier non-signé de 64 bits en octets à l'index du ``byte_offset``-�
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-Encode un :ref:`Variant<class_Variant>` en octets à l'index du ``byte_offset``-ème octet. Une taille suffisante doit être allouée, selon la taille du variant encodé. Si ``allow_objects`` vaut ``false``, les valeurs dérivées d':ref:`Object<class_Object>` ne sont pas permises et seront sérialisées en tant qu'ID seulement.
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only. Returns the length of the encoded data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +846,7 @@ Convertit le tableau encodé UTF-32 en :ref:`String<class_String>`. Renvoie une 
 
 :ref:`String<class_String>` **get_string_from_wchar**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_wchar>`
 
-Convertit un tableau de caractères larges (``wchar_t``, UTF-16 sur Windows, UTF-32 sur d'autres plates-formes) en :ref:`String<class_String>`. Renvoie une chaîne vide si le tableau source n'est pas une chaîne large valide. C'est l'inverse de :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
+Convertit un tableau de caractères larges (\ ``wchar_t``, UTF-16 sur Windows, UTF-32 sur d'autres plates-formes) en :ref:`String<class_String>`. Renvoie une chaîne vide si le tableau source n'est pas une chaîne large valide. C'est l'inverse de :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +909,7 @@ Renvoie une représentation hexadécimale de ce tableau en tant que :ref:`String
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_insert>`
 
-Insérer un nouvel élément à une position donnée dans le tableau. La position doit être valide, ou à la fin du tableau (``idx == size()``).
+Insérer un nouvel élément à une position donnée dans le tableau. La position doit être valide, ou à la fin du tableau (\ ``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +945,7 @@ Ajoute un élément à la fin du tableau.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-Retire l'élément du tableau à l'index donné.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 
@@ -1043,7 +1061,7 @@ Returns a copy of the data converted to a :ref:`PackedColorArray<class_PackedCol
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **to_float32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float32_array>`
 
-Renvoie une copie des données converties en un tableau :ref:`PackedFloat32Array<class_PackedFloat32Array>`, où chaque bloc de 4 octets a été converti en un flottant de 32 bits (``float`` en C++).
+Renvoie une copie des données converties en un tableau :ref:`PackedFloat32Array<class_PackedFloat32Array>`, où chaque bloc de 4 octets a été converti en un flottant de 32 bits (\ ``float`` en C++).
 
 La taille du tableau d'entrée doit être un multiple de 4 (taille d'un flottant 32 bits). La taille du nouveau tableau sera de ``byte_array.size() / 4``.
 
@@ -1059,7 +1077,7 @@ Si les données d'origine ne peuvent pas être converties en flottants 32 bits, 
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **to_float64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float64_array>`
 
-Renvoie une copie des données converties en un tableau :ref:`PackedFloat64Array<class_PackedFloat64Array>`, où chaque bloc de 8 octets a été converti en un flottant de 64 bits (``double`` en C++, :ref:`float<class_float>` pour Godot).
+Renvoie une copie des données converties en un tableau :ref:`PackedFloat64Array<class_PackedFloat64Array>`, où chaque bloc de 8 octets a été converti en un flottant de 64 bits (\ ``double`` en C++, :ref:`float<class_float>` pour Godot).
 
 La taille du tableau d'entrée doit être un multiple de 8 (taille d'un flottant 64 bits). La taille du nouveau tableau sera de ``byte_array.size() / 8``.
 
@@ -1075,7 +1093,7 @@ Si les données d'origine ne peuvent pas être converties en flottants 64 bits, 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **to_int32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int32_array>`
 
-Renvoie une copie des données converties en un tableau :ref:`PackedInt32Array<class_PackedInt32Array>`, où chaque bloc de 4 octets a été converti en un entier signé 32 bits (``int32_t`` en C++)
+Renvoie une copie des données converties en un tableau :ref:`PackedInt32Array<class_PackedInt32Array>`, où chaque bloc de 4 octets a été converti en un entier signé 32 bits (\ ``int32_t`` en C++)
 
 La taille du tableau d'entrée doit être un multiple de 4 (taille d'un entier 32 bits). La taille du nouveau tableau sera de ``byte_array.size() / 4``.
 
@@ -1091,7 +1109,7 @@ Si les données d'origine ne peuvent pas être converties en entiers signés 32 
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **to_int64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int64_array>`
 
-Renvoie une copie des données converties en un tableau :ref:`PackedInt64Array<class_PackedInt64Array>`, où chaque bloc de 8 octets a été converti en un entier signé 64 bits (``int64_t`` en C++, :ref:`int<class_int>` dans Godot)
+Renvoie une copie des données converties en un tableau :ref:`PackedInt64Array<class_PackedInt64Array>`, où chaque bloc de 8 octets a été converti en un entier signé 64 bits (\ ``int64_t`` en C++, :ref:`int<class_int>` dans Godot)
 
 La taille du tableau d'entrée doit être un multiple de 8 (taille d'un entier 64 bits). La taille du nouveau tableau sera de ``byte_array.size() / 8``.
 

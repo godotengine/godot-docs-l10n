@@ -174,7 +174,7 @@ AnimationNodeStateMachinePlayback
 
 :ref:`float<class_float>` **get_fading_from_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_length>`
 
-Повертає тривалість стану відтворення вузла з ``методу get_fading_from_node``. Повертає ``0``, якщо не відбувається згасання анімації.
+Повертає тривалість стану відтворення вузла з :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Повертає ``0``, якщо не відбувається згасання анімації.
 
 .. rst-class:: classref-item-separator
 

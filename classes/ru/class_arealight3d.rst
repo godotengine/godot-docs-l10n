@@ -151,11 +151,11 @@ AreaLight3D
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-Дополнительная текстура для использования в качестве источника света. Изменение текстуры во время выполнения может повлиять на производительность, поскольку она должна быть отрисована в атласе источников света с фильтрованными мипмапами.
+An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
 
-Если текстура не назначена, источник света излучает равномерный свет по всей своей поверхности.
+If no texture is assigned, the area light emits uniform light across its surface.
 
-\ **Примечание:** Текстуры источников света поддерживаются только в методах рендеринга Forward+ и Mobile, а не в Compatibility. Чтобы уменьшить влияние на производительность при переключении текстур во время выполнения, убедитесь, что каждый размер текстуры области либо кратен 128 пикселям, либо является степенью двойки. Это устраняет необходимость в проходе масштабирования, который замедляет изменение текстур. Текстуры не обязательно должны быть квадратными для оптимальной производительности. Примеры оптимальных размеров текстур включают 32x64, 128x128 и 256x384.
+\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

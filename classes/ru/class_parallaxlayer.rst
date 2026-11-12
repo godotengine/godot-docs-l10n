@@ -60,13 +60,13 @@ ParallaxLayer должен быть дочерним элементом узла
 - |void| **set_mirroring**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_mirroring**\ (\ )
 
-Интервал в пикселях, с которым **ParallaxLayer** отрисовывается повторно. Полезно для создания бесконечно прокручивающегося фона. Если ось установлена на ``0``, **ParallaxLayer** будет отрисован только один раз вдоль этого направления.
+The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Useful for creating an infinitely scrolling background. If an axis is set to ``0``, the **ParallaxLayer** will be drawn only once along that direction.
 
-\ **Примечание:** Если вы хотите, чтобы повторение с точностью до пикселя соответствовало :ref:`Texture2D<class_Texture2D>`, отображаемому дочерним узлом, вы должны учитывать любой масштаб, примененный к текстуре при определении этого интервала. Например, если вы используете дочерний :ref:`Sprite2D<class_Sprite2D>`, масштабированный до ``0.5``, для отображения текстуры 600x600 и хотите, чтобы этот спрайт непрерывно повторялся по горизонтали, вы должны установить зеркалирование на ``Vector2(300, 0)``.
+\ **Note:** If you want the repetition to pixel-perfect match a :ref:`Texture2D<class_Texture2D>` displayed by a child node, you should account for any scale applied to the texture when defining this interval. For example, if you use a child :ref:`Sprite2D<class_Sprite2D>` scaled to ``0.5`` to display a 600×600 texture, and want this sprite to be repeated continuously horizontally, you should set the mirroring to ``Vector2(300, 0)``.
 
-\ **Примечание:** Если длина оси области просмотра больше, чем в два раза превышает размер повторяющейся оси, она не будет повторяться бесконечно, поскольку слой параллакса рисует только 2 экземпляра слоя в любой момент времени. Окно видимости рассчитывается на основе позиции родительского элемента :ref:`ParallaxBackground<class_ParallaxBackground>`, а не собственной позиции слоя. Поэтому, если вы используете зеркалирование, **не** изменяйте позицию **ParallaxLayer** относительно его родителя. Вместо этого, если вам нужно настроить позицию фона, задайте свойство :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` в родительском элементе :ref:`ParallaxBackground<class_ParallaxBackground>`.
+\ **Note:** If the length of the viewport axis is bigger than twice the repeated axis size, it will not repeat infinitely, as the parallax layer only draws 2 instances of the layer at any given time. The visibility window is calculated from the parent :ref:`ParallaxBackground<class_ParallaxBackground>`'s position, not the layer's own position. So, if you use mirroring, **do not** change the **ParallaxLayer** position relative to its parent. Instead, if you need to adjust the background's position, set the :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` property in the parent :ref:`ParallaxBackground<class_ParallaxBackground>`.
 
-\ **Примечание:** Несмотря на название, слой не будет зеркальным, он будет только повторяться.
+\ **Note:** Despite the name, the layer will not be mirrored, it will only be repeated.
 
 .. rst-class:: classref-item-separator
 

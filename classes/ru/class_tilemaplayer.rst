@@ -1,5 +1,8 @@
 :github_url: hide
 
+.. meta::
+	:keywords: gridmap
+
 .. _class_TileMapLayer:
 
 TileMapLayer
@@ -168,9 +171,9 @@ TileMapLayer
 
 **changed**\ (\ ) :ref:`🔗<class_TileMapLayer_signal_changed>`
 
-Выдается при изменении свойств этого **TileMapLayer**. Сюда входят измененные ячейки, свойства или изменения, внесенные в назначенный ему :ref:`TileSet<class_TileSet>`.
+Emitted when this **TileMapLayer**'s properties changes, including changes to its assigned :ref:`TileSet<class_TileSet>`.
 
-\ **Примечание:** Этот сигнал может выдаваться очень часто при пакетном изменении **TileMapLayer**. Избегайте выполнения сложной обработки в подключенной функции и рассмотрите возможность отсрочки ее до конца кадра (т. е. вызова :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
+\ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
 
 .. rst-class:: classref-section-separator
 
@@ -377,7 +380,11 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 
 Необработанные данные карты плиток в виде массива байтов.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

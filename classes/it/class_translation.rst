@@ -221,7 +221,7 @@ Restituisce il numero di messaggi esistenti.
 
 Restituisce le chiavi di tutti i messaggi, ovvero il contesto e le stringhe non tradotte di ciascun messaggio.
 
-\ **Nota:** Se un messaggio non utilizza un contesto, l'elemento corrispondente è la stringa non tradotta. Altrimenti, l'elemento corrispondente è il contesto e la stringa non tradotta separati dal carattere EOT (``U+0004``). Questo è fatto per motivi di compatibilità.
+\ **Nota:** Se un messaggio non utilizza un contesto, l'elemento corrispondente è la stringa non tradotta. Altrimenti, l'elemento corrispondente è il contesto e la stringa non tradotta separati dal carattere EOT (\ ``U+0004``). Questo è fatto per motivi di compatibilità.
 
 ::
 

@@ -1,5 +1,8 @@
 :github_url: hide
 
+.. meta::
+	:keywords: gridmap
+
 .. _class_TileMapLayer:
 
 TileMapLayer
@@ -168,9 +171,9 @@ Segnali
 
 **changed**\ (\ ) :ref:`🔗<class_TileMapLayer_signal_changed>`
 
-Emesso quando cambiano le proprietà di questo **TileMapLayer**. Ciò include celle modificate, proprietà o modifiche apportate al :ref:`TileSet<class_TileSet>` assegnato.
+Emitted when this **TileMapLayer**'s properties changes, including changes to its assigned :ref:`TileSet<class_TileSet>`.
 
-\ **Nota:** Questo segnale può essere emesso molto spesso quando si modifica in blocco un **TileMapLayer**. Evitare di eseguire elaborazioni complesse in una funzione connessa e considerare di ritardarla alla fine del frame (ad esempio chiamando :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
+\ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
 
 .. rst-class:: classref-section-separator
 
@@ -377,7 +380,11 @@ La dimensione dei quadranti non si applica a un **TileMapLayer** ordinato per Y,
 
 I dati grezzi della mappa dei tasselli come array di byte.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

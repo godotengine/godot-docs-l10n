@@ -104,7 +104,11 @@ ResourceImporterImageFont
 
 \ **注意：**\ 總字元數必須不超過 :ref:`columns<class_ResourceImporterImageFont_property_columns>` 與 :ref:`rows<class_ResourceImporterImageFont_property_rows>` 的乘積。否則字型將無法匯入。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +184,11 @@ ResourceImporterImageFont
 
 每個字串都是由空白分隔的三個值：“from”字串、“to”字串、整數偏移量。兩個字串中的字元兩兩組合成字偶，例如 ``ab cd -3`` 會建立字偶 ``ac``\ 、\ ``ad``\ 、\ ``bc``\ 、\ ``bd``\ ，這些字偶的偏移量都是 ``-3``\ 。可以使用跳脫序列 ``\uXXXX`` 新增 Unicode 字元。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

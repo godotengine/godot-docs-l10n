@@ -551,7 +551,7 @@ Z-компонента кватерниона. Это значение вдол�
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate>`
 
-Выполняет сферическую кубическую интерполяцию между кватернионами ``pre_a``, данным вектором, ``b`` и ``post_b`` на заданную величину ``weight``.
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
 .. rst-class:: classref-item-separator
 
@@ -563,9 +563,9 @@ Z-компонента кватерниона. Это значение вдол�
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate_in_time**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate_in_time>`
 
-Выполняет сферическую кубическую интерполяцию между кватернионами ``pre_a``, этим вектором, ``b`` и ``post_b`` на заданную величину ``weight``.
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this quaternion, ``b``, and ``post_b``, by the given amount ``weight``.
 
-Он может выполнять более плавную интерполяцию, чем ``methodspheric_cubic_interpolate`` по значениям времени.
+It can perform smoother interpolation than :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-section-separator
 

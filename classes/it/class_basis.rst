@@ -744,9 +744,9 @@ Le righe della matrice base sono moltiplicate per i componenti di ``scale``. Que
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-Restituisce questa base con i componenti di ciascun asse ridimensionati in base ai componenti di ``scale``.
+Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
 
-Le righe della matrice base sono moltiplicate per i componenti di ``scale``. Questa operazione è una scala locale (relativa a se stesso).
+The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
 
 
 .. tabs::
@@ -758,11 +758,11 @@ Le righe della matrice base sono moltiplicate per i componenti di ``scale``. Que
         Vector3(2, 2, 2),
         Vector3(3, 3, 3)
     )
-    my_basis = my_basis.scaled(Vector3(0, 2, -2))
+    my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(my_basis.x) # Stampa (0.0, 0.0, 0.0)
-    print(my_basis.y) # Stampa (4.0, 4.0, 4.0)
-    print(my_basis.z) # Stampa (-6.0, -6.0, -6.0)
+    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
+    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
+    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -771,11 +771,11 @@ Le righe della matrice base sono moltiplicate per i componenti di ``scale``. Que
         new Vector3(2.0f, 2.0f, 2.0f),
         new Vector3(3.0f, 3.0f, 3.0f)
     );
-    myBasis = myBasis.Scaled(new Vector3(0.0f, 2.0f, -2.0f));
+    myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // Stampa (0, 0, 0)
-    GD.Print(myBasis.Y); // Stampa (4, 4, 4)
-    GD.Print(myBasis.Z); // Stampa (-6, -6, -6)
+    GD.Print(myBasis.X); // Prints (0, 0, 0)
+    GD.Print(myBasis.Y); // Prints (4, 4, 4)
+    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
 
 
 

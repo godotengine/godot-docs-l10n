@@ -127,7 +127,11 @@ enum **CullMode**: :ref:`🔗<enum_OccluderPolygon2D_CullMode>`
 
 具有多边形顶点位置索引的 :ref:`Vector2<class_Vector2>` 数组。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

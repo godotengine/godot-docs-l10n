@@ -14,9 +14,9 @@ TCPServer
 Опис
 --------
 
-Сервер TCP. Послухайте підключення до порту і повертає :ref:`StreamPeerTCP<class_StreamPeerTCP>`, коли він отримує вхідне підключення.
+A TCP server. Listens to connections on a port and returns a :ref:`StreamPeerTCP<class_StreamPeerTCP>` when it gets an incoming connection.
 
-\ **Примітка:** При експорті на Андроїд, переконайтеся, що ввімкнути ``INTERNET`` дозвіл на експорт Android перед експортуванням проекту або за допомогою однієї кнопки розгортання. Інакше, мережевий зв'язок будь-якого роду буде заблокований Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

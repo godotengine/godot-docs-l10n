@@ -329,7 +329,7 @@ DirAccess
 
 :ref:`bool<class_bool>` **current_is_dir**\ (\ ) |const| :ref:`🔗<class_DirAccess_method_current_is_dir>`
 
-Повертаємо вашу увагу на те, що поточний елемент, оброблений останнім :ref:`get_next()<class_DirAccess_method_get_next>`, є каталогом (`` і `` та ``. `` вважаються каталогами.
+Повертаємо вашу увагу на те, що поточний елемент, оброблений останнім :ref:`get_next()<class_DirAccess_method_get_next>`, є каталогом (\ `` і `` та ``. `` вважаються каталогами.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ DirAccess
 
 :ref:`String<class_String>` **get_current_dir**\ (\ include_drive\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_DirAccess_method_get_current_dir>`
 
-Повертає абсолютний шлях до відкритого каталогу (наприклад, ``res://folder`` або ``C:\tmp\folder``).
+Returns the absolute path to the currently opened directory (e.g. ``res://folder`` or ``C:\tmp\folder``).
 
 .. rst-class:: classref-item-separator
 
@@ -711,9 +711,9 @@ DirAccess
 
 :ref:`DirAccess<class_DirAccess>` **open**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_open>`
 
-Створює новий об'єкт **DirAccess** і відкриває існуючий каталог файлової системи. Шлях ``path`` може бути в дереві проєкту (``res://folder``), каталозі користувача (``user://folder``) або бути абсолютним шляхом файлової системи користувача (наприклад, ``/tmp/folder`` або ``C:\tmp\folder``).
+Creates a new **DirAccess** object and opens an existing directory of the filesystem. The ``path`` argument can be within the project tree (\ ``res://folder``), the user directory (\ ``user://folder``) or an absolute path of the user filesystem (e.g. ``/tmp/folder`` or ``C:\tmp\folder``).
 
-Повертає ``null`` при невдачі під час відкриття каталогу. Ви можете використовувати :ref:`get_open_error()<class_DirAccess_method_get_open_error>` для перевірки помилки, яка сталася.
+Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
 
 .. rst-class:: classref-item-separator
 

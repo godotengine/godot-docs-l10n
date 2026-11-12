@@ -206,7 +206,11 @@ El desplazamiento se aplicó a cada vértice.
 
 La lista de vértices del polígono. El punto final estará conectado al primero.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +331,11 @@ Cantidad por la que multiplicar las coordenadas :ref:`uv<class_Polygon2D_propert
 
 Las coordenadas de textura para cada vértice del polígono. Debería haber un valor UV por vértice del polígono. Si hay menos, los vértices no definidos usarán ``Vector2(0, 0)``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +354,11 @@ Las coordenadas de textura para cada vértice del polígono. Debería haber un v
 
 Color para cada vértice. Los colores se interpolan entre los vértices, lo que resulta en gradientes suaves. Debería haber uno por vértice del polígono. Si hay menos, los vértices no definidos usarán :ref:`color<class_Polygon2D_property_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-section-separator
 

@@ -149,6 +149,8 @@ ParticleProcessMaterial
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_inherit_emitter_scale<class_ParticleProcessMaterial_property_particle_flag_inherit_emitter_scale>` | ``false``               |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_preserve_color<class_ParticleProcessMaterial_property_particle_flag_preserve_color>`               | ``false``               |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>`                           | ``false``               |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`radial_accel_curve<class_ParticleProcessMaterial_property_radial_accel_curve>`                                   |                         |
@@ -496,11 +498,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_DAMPING_AS_FRICTION** = ``3``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
-
-
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_damping_as_friction<class_ParticleProcessMaterial_property_particle_flag_damping_as_friction>`.
 
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_INHERIT_EMITTER_SCALE:
 
@@ -508,17 +506,21 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_INHERIT_EMITTER_SCALE** = ``4``
 
-.. container:: contribute
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_inherit_emitter_scale<class_ParticleProcessMaterial_property_particle_flag_inherit_emitter_scale>`.
 
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+.. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_PRESERVE_COLOR:
 
+.. rst-class:: classref-enumeration-constant
 
+:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_PRESERVE_COLOR** = ``5``
+
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_preserve_color<class_ParticleProcessMaterial_property_particle_flag_preserve_color>`.
 
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``5``
+:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``6``
 
 Представляємо розмір :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` enum.
 
@@ -858,7 +860,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-Максимальна анімація зсуву, яка відповідає індексу кадрів в фактурі. ``0`` є першим кадром, ``1`` є останній. Див. :ref:`CanvasItemMaterial.article_animation<class_CanvasItemMaterial_property_article_animation>`.
+Максимальна анімація зсуву, яка відповідає індексу кадрів в фактурі. ``0`` є першим кадром, ``1`` є останній. Див. :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -911,7 +913,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 Максимальна швидкість анімації частинок. Швидкість анімації ``1`` означає, що частинки змусять завершити ``0`` до ``1`` зсувний цикл протягом життя ``2`` та ``2`` цикли і т.д.
 
-З швидкістю анімації більше ``1``, пам'ятайте, що ввімкнено :ref:`CanvasItemMaterial.article_anim_loop<class_CanvasItemMaterial_property_article_anim_loop>` властивість, якщо ви хочете анімацію повторити.
+З швидкістю анімації більше ``1``, пам'ятайте, що ввімкнено :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` властивість, якщо ви хочете анімацію повторити.
 
 .. rst-class:: classref-item-separator
 
@@ -945,7 +947,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 - |void| **set_attractor_interaction_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_attractor_interaction_enabled**\ (\ )
 
-Якщо ``true``, ввімкнено взаємодію з деталями. У 3D, атракціон тільки відбувається в межах області, визначеної :ref:`GPUParticles3D<class_GPUParticles3D>` вершини :ref:`GPUPaarticle3D.visibility_aabb<class_GPUPaarticle3D_member_visibility_aabb>`.
+Якщо ``true``, ввімкнено взаємодію з деталями. У 3D, атракціон тільки відбувається в межах області, визначеної :ref:`GPUParticles3D<class_GPUParticles3D>` вершини :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>`.
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +1000,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 Режим зіткнення частинок.
 
-\ **Примітка:** 3D-частинки можуть поєднуватися з :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` вершинами, не :ref:`PhysicsBody3D<class_PhysicsBody3D>` вершинами. Щоб зробити частинки колоїду з різними об'єктами, можна додати :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` вершини, як діти :ref:`PhysicsBody3D<class_PhysicsBody3D>`. У 3D зіткнеться тільки в межах області, визначеної :ref:`GPUParticles3D<class_GPUParticles3D>` вершини :ref:`GPUPaarticle3D.visibility_aabb<class_GPUPaarticle3D_member_visibility_aabb>`.
+\ **Примітка:** 3D-частинки можуть поєднуватися з :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` вершинами, не :ref:`PhysicsBody3D<class_PhysicsBody3D>` вершинами. Щоб зробити частинки колоїду з різними об'єктами, можна додати :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` вершини, як діти :ref:`PhysicsBody3D<class_PhysicsBody3D>`. У 3D зіткнеться тільки в межах області, визначеної :ref:`GPUParticles3D<class_GPUParticles3D>` вершини :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>`.
 
 \ **Примітка:** 2D частинки можуть поєднуватися з вузлами :ref:`LightOccluder2D<class_LightOccluder2D>`, не :ref:`PhysicsBody2D<class_PhysicsBody2D>`.
 
@@ -1796,6 +1798,23 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 Якщо ``true``, частинки успадковуватимуть масштаб емітера.
 
 \ **Примітка:** Це не впливає на результат, якщо :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` має значення ``true``, оскільки на частинки в локальному просторі вже впливає масштаб емітера.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_particle_flag_preserve_color:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **particle_flag_preserve_color** = ``false`` :ref:`🔗<class_ParticleProcessMaterial_property_particle_flag_preserve_color>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
+
+If ``true``, preserves the color given by manual emission. To use when using :ref:`GPUParticles3D.emit_particle()<class_GPUParticles3D_method_emit_particle>` or when working with subemitters.
 
 .. rst-class:: classref-item-separator
 

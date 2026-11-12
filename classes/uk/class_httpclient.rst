@@ -14,25 +14,25 @@ HTTPClient
 Опис
 --------
 
-Клієнт протоколу передачі гіпертексту (іноді його називають "Агент користувача"). Використовується для здійснення HTTP-запитів для завантаження веб-контенту, файлів та інших даних або для зв'язку з різними службами, серед інших випадків використання.
+Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
 
-Див. вузол :ref:`HTTPRequest<class_HTTPRequest>` для альтернативи вищого рівня.
+See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
 
-\ **Примітка:** Цьому клієнту потрібно лише один раз підключитися до хоста (див. :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`), щоб надіслати кілька запитів. Через це методи, які приймають URL-адреси, зазвичай приймають лише частину після хоста, а не повну URL-адресу, оскільки клієнт вже підключений до хоста. Див. :ref:`request()<class_HTTPClient_method_request>` для повного прикладу та початку роботи.
+\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
 
-\ **HTTPClient** слід повторно використовувати між кількома запитами або для підключення до різних хостів, замість створення одного клієнта на запит. Підтримує безпеку транспортного рівня (TLS), включаючи перевірку сертифіката сервера. Коди стану HTTP у діапазоні 2xx вказують на успіх, 3xx – перенаправлення (тобто "спробуйте ще раз, але тут"), 4xx – щось пішло не так із запитом, а 5xx – щось пішло не так на стороні сервера.
+An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
- Щоб отримати додаткову інформацію про HTTP, див. `документацію MDN щодо HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (або прочитайте `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__, щоб отримати її безпосередньо з джерела).
+For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
 
-\ **Примітка:** Під час експорту на Android переконайтеся, що ви ввімкнули дозвіл ``INTERNET`` у попередньому налаштуванні експорту Android перед експортом проекту або використанням розгортання одним клацанням миші. В іншому випадку Android блокуватиме будь-який мережевий зв'язок.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Примітка:** Рекомендується використовувати транспортне шифрування (TLS) та уникати надсилання конфіденційної інформації (наприклад, облікових даних для входу) у параметрах URL-адреси HTTP GET. Натомість розгляньте можливість використання запитів HTTP POST або заголовків HTTP для такої інформації.
+\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
-\ **Примітка:** Під час виконання HTTP-запитів із проекту, експортованого в Інтернет, пам’ятайте, що віддалений сервер може не дозволяти запити із сторонніх джерел через `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. Якщо ви розміщуєте відповідний сервер, вам слід змінити його серверну частину, щоб дозволити запити із сторонніх джерел, додавши HTTP-заголовок ``Access-Control-Allow-Origin: *``.
+\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
 
-\ **Примітка:** Підтримка TLS наразі обмежена TLSv1.2 та TLSv1.3. Спроба підключитися до сервера, який підтримує лише старіші (незахищені) версії TLS, поверне помилку.
+\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
 
-\ **Попередження:** Відкликання та закріплення сертифіката TLS наразі не підтримуються. Відкликані сертифікати приймаються, якщо вони дійсні. Якщо це вас турбує, ви можете використовувати автоматично керовані сертифікати з коротким терміном дії.
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-introduction-group
 
@@ -1067,7 +1067,7 @@ enum **ResponseCode**: :ref:`🔗<enum_HTTPClient_ResponseCode>`
 
 Надсилає HTTP-запит на підключений хост із заданим ``method``.
 
-Параметр URL зазвичай є лише частиною, що йде після імені хосту, тож для ``https://example.com/index.php`` це ``/index.php``. При надсиланні запитів на HTTP-проксі-сервер це має бути абсолютний URL. Для запитів типу :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також допускається використання ``*``. Для запитів типу :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент авторитету (``host:port``).
+Параметр URL зазвичай є лише частиною, що йде після імені хосту, тож для ``https://example.com/index.php`` це ``/index.php``. При надсиланні запитів на HTTP-проксі-сервер це має бути абсолютний URL. Для запитів типу :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також допускається використання ``*``. Для запитів типу :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент авторитету (\ ``host:port``).
 
 \ ``headers`` — це заголовки HTTP-запиту.
 
@@ -1106,7 +1106,7 @@ enum **ResponseCode**: :ref:`🔗<enum_HTTPClient_ResponseCode>`
 
 Надсилає необроблений HTTP-запит на підключений хост за допомогою заданого методу ``method``.
 
-Параметр URL зазвичай є лише частиною після імені хоста, тому для ``https://example.com/index.php`` це ``/index.php``. Під час надсилання запитів на HTTP-проксі-сервер це має бути абсолютна URL-адреса. Для запитів :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також дозволено ``*``. Для запитів :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент авторитету (``host:port``).
+Параметр URL зазвичай є лише частиною після імені хоста, тому для ``https://example.com/index.php`` це ``/index.php``. Під час надсилання запитів на HTTP-проксі-сервер це має бути абсолютна URL-адреса. Для запитів :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` також дозволено ``*``. Для запитів :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` це має бути компонент авторитету (\ ``host:port``).
 
 \ ``headers`` – це заголовки HTTP-запиту.
 

@@ -497,9 +497,9 @@ Costante per impostare/ottenere se il vettore di gravità di un'area è una dire
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Costante per impostare/ottenere la distanza alla quale la forza di gravità è uguale alla gravità controllata da :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. Ad esempio, su un pianeta con un raggio di 100 pixel, con una gravità superficiale di 4,0 px/s², imposta la gravità su 4,0 e la distanza unitaria su 100,0. La gravità avrà un calo secondo la legge dell'inverso del quadrato, quindi nell'esempio, a 200 pixel dal centro la gravità sarà 1,0 px/s² (il doppio della distanza, 1/4 della gravità), a 50 pixel sarà 16,0 px/s² (la metà della distanza, 4 volte la gravità) e così via.
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-Quanto sopra è vero solo quando la distanza unitaria è un numero positivo. Quando la distanza unitaria è impostata su 0,0, la gravità sarà costante a prescindere dalla distanza. Il valore predefinito di questo parametro è ``0,0``.
+The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is ``0.0``.
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 
@@ -2002,7 +2002,7 @@ Il rilevamento continuo delle collisioni cerca di prevedere dove un corpo in mov
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_force_integration_callback>`
 
-Imposta la funzione di callback per l'integrazione personalizzata della forza del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback personalizzato.
+Imposta la funzione di callback per l'integrazione personalizzata della forza del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (\ ``Callable()``) per cancellare il callback personalizzato.
 
 La funzione ``callable`` sarà chiamata a ogni tick di fisica, prima dell'integrazione standard delle forze (vedi :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Può servire, ad esempio, per aggiornare la velocità lineare e angolare del corpo in base al contatto con altri corpi.
 
@@ -2154,7 +2154,7 @@ Imposta il valore di uno stato di un corpo.
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state_sync_callback>`
 
-Imposta la funzione di callback per la sincronizzazione dello stato del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback.
+Imposta la funzione di callback per la sincronizzazione dello stato del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (\ ``Callable()``) per cancellare il callback.
 
 La funzione ``callable`` sarà chiamata a ogni frame di fisica, supponendo che il corpo fosse attivo durante il tick di fisica precedente, e può servire per recuperare lo stato più recente dal server di fisica.
 

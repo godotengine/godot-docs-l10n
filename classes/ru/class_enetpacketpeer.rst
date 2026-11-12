@@ -14,11 +14,11 @@ ENetPacketPeer
 Описание
 ----------------
 
-Реализация PacketPeer, представляющая одноранговый узел :ref:`ENetConnection<class_ENetConnection>`.
+A PacketPeer implementation representing a peer of an :ref:`ENetConnection<class_ENetConnection>`.
 
-Этот класс не может быть создан напрямую, но может быть извлечен во время :ref:`ENetConnection.service()<class_ENetConnection_method_service>` или через :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
+This class cannot be instantiated directly but can be retrieved during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` or via :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
 
-\ **Примечание:** При экспорте в Android обязательно включите разрешение ``INTERNET`` в предустановке экспорта Android перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 

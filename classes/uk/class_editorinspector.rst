@@ -65,9 +65,13 @@ EditorInspector
    +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Object<class_Object>`                   | :ref:`get_edited_object<class_EditorInspector_method_get_edited_object>`\ (\ )                                                                                                                                                                                                                                                                                                                                                |
    +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`                 | :ref:`get_property_clipboard<class_EditorInspector_method_get_property_clipboard>`\ (\ ) |static|                                                                                                                                                                                                                                                                                                                             |
+   +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                   | :ref:`get_selected_path<class_EditorInspector_method_get_selected_path>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                                                        |
    +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`EditorProperty<class_EditorProperty>`   | :ref:`instantiate_property_editor<class_EditorInspector_method_instantiate_property_editor>`\ (\ object\: :ref:`Object<class_Object>`, type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, path\: :ref:`String<class_String>`, hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`, hint_text\: :ref:`String<class_String>`, usage\: :ref:`int<class_int>`, wide\: :ref:`bool<class_bool>` = false\ ) |static| |
+   +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                        | :ref:`set_property_clipboard<class_EditorInspector_method_set_property_clipboard>`\ (\ value\: :ref:`Variant<class_Variant>`\ ) |static|                                                                                                                                                                                                                                                                                      |
    +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
@@ -268,6 +272,18 @@ EditorInspector
 
 ----
 
+.. _class_EditorInspector_method_get_property_clipboard:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **get_property_clipboard**\ (\ ) |static| :ref:`🔗<class_EditorInspector_method_get_property_clipboard>`
+
+Gets the value currently in the property clipboard.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInspector_method_get_selected_path:
 
 .. rst-class:: classref-method
@@ -287,6 +303,18 @@ EditorInspector
 :ref:`EditorProperty<class_EditorProperty>` **instantiate_property_editor**\ (\ object\: :ref:`Object<class_Object>`, type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, path\: :ref:`String<class_String>`, hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`, hint_text\: :ref:`String<class_String>`, usage\: :ref:`int<class_int>`, wide\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_EditorInspector_method_instantiate_property_editor>`
 
 Створює редактор властивостей, який може використовуватися інтерфейсом користувача плагіна для редагування вказаної властивості ``object``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorInspector_method_set_property_clipboard:
+
+.. rst-class:: classref-method
+
+|void| **set_property_clipboard**\ (\ value\: :ref:`Variant<class_Variant>`\ ) |static| :ref:`🔗<class_EditorInspector_method_set_property_clipboard>`
+
+Sets the property clipboard's content to the given value.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

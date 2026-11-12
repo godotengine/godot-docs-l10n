@@ -281,7 +281,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 - |void| **set_collision_base_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_base_size**\ (\ )
 
-Multiplier для радіусу зіткнення частинок. ``1.0`` відповідає розміру спрайта. Якщо з'являються частинки, щоб мити в грунт, коли з'єднання, збільшити це значення. Якщо частинки з'являються до плавлення при співвідношенні, знижують це значення. Тільки ефективний, якщо :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` є :ref:`ParticleProcessMaterial. COLLISION_RIGID<class_ParticleProcessMaterial_constant_ COLLISION_RIGID>` або :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`.
+Multiplier для радіусу зіткнення частинок. ``1.0`` відповідає розміру спрайта. Якщо з'являються частинки, щоб мити в грунт, коли з'єднання, збільшити це значення. Якщо частинки з'являються до плавлення при співвідношенні, знижують це значення. Тільки ефективний, якщо :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` є :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` або :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`.
 
 \ **Примітки:** Завжди мають сферичну форму зіткнення.
 
@@ -733,11 +733,13 @@ Multiplier для радіусу зіткнення частинок. ``1.0`` в
 
 |void| **emit_particle**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`, velocity\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, custom\: :ref:`Color<class_Color>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GPUParticles2D_method_emit_particle>`
 
-Випромінює одну частинку. Чи застосовуються ``xform``, ``velocity``, ``color`` і ``custom``, залежить від значення ``flags``. Див. :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`. 
+Emits a single particle. Whether ``xform``, ``velocity``, ``color`` and ``custom`` are applied depends on the value of ``flags``. See :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>`.
 
-За замовчуванням ParticleProcessMaterial перезапише ``color`` і використає вміст ``custom`` як ``(rotation, age, animation, lifetime)``. 
+The default ParticleProcessMaterial needs to have :ref:`ParticleProcessMaterial.particle_flag_preserve_color<class_ParticleProcessMaterial_property_particle_flag_preserve_color>` set to ``true`` to correctly use the color given from this function.
 
-\ **Примітка:** :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` підтримується лише методами візуалізації Forward+ і Mobile, а не Compatibility.
+Additionally, it will use the contents of ``custom`` as ``(rotation, lifetime, animation, lifetime randomness)``.
+
+\ **Note:** :ref:`emit_particle()<class_GPUParticles2D_method_emit_particle>` is only supported on the Forward+ and Mobile rendering methods, not Compatibility.
 
 .. rst-class:: classref-item-separator
 

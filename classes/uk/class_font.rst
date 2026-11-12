@@ -529,23 +529,23 @@ Font
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_variation_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_variation_list>`
 
-Повертає список підтримуваних `варіантних координат <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, кожна координата повертається як ``тег: Vector3i(min_value,max_value,default_value)``. 
+Returns list of supported `variation coordinates <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__, each coordinate is returned as ``tag: Vector3i(min_value,max_value,default_value)``.
 
-Варіації шрифту дозволяють безперервно змінювати характеристики гліфа вздовж певної заданої осі дизайну, наприклад товщину, ширину чи нахил. 
+Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.
 
-Щоб надрукувати доступні осі варіацій змінного шрифту: 
+To print available variation axes of a variable font:
 
 ::
- 
-    var fv = FontVariation.new() 
-    fv.base_font = load("res://RobotoFlex.ttf") 
-    var variation_list = fv.get_supported_variation_list() 
-    для тегу в variation_list: 
-        var name = TextServerManager.get_primary_interface().tag_to_name(tag) 
-        var valve = variation_list[тег] 
-        print("вісь варіації: %s (%d)\n\tmin, max, за замовчуванням: %s" % [назва, тег, значення])  
 
-\ **Примітка:** щоб установити та отримати координати варіації :ref:`FontVariation<class_FontVariation>`, використовуйте :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
+    var fv = FontVariation.new()
+    fv.base_font = load("res://RobotoFlex.ttf")
+    var variation_list = fv.get_supported_variation_list()
+    for tag in variation_list:
+        var name = TextServerManager.get_primary_interface().tag_to_name(tag)
+        var values = variation_list[tag]
+        print("variation axis: %s (%d)\n\tmin, max, default: %s" % [name, tag, values])
+
+\ **Note:** To set and get variation coordinates of a :ref:`FontVariation<class_FontVariation>`, use :ref:`FontVariation.variation_opentype<class_FontVariation_property_variation_opentype>`.
 
 .. rst-class:: classref-item-separator
 

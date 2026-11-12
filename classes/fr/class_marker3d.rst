@@ -14,7 +14,7 @@ Aide de position 3D générique pour l'édition.
 Description
 -----------
 
-Aide de position 3D générique pour l'édition. Il ressemble à un :ref:`Node3D<class_Node3D>` ordinaire, mais il apparaît en permanence comme une croix dans l'éditeur 3D.
+Generic 3D position hint for editing. This is like a plain :ref:`Node3D<class_Node3D>`, but it displays as a cross in the 3D editor.
 
 .. rst-class:: classref-reftable-group
 

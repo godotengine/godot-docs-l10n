@@ -16,7 +16,7 @@ Descripción
 
 Este recurso describe una transición de color definiendo un conjunto de puntos coloreados y cómo interpolar entre ellos.
 
-Véase también :ref:`Curve<class_Curve>` que soporta métodos de interpolación más complejos, pero no soporta colores.
+Véase también :ref:`Curve<class_Curve>` que soporta métodos de suavizado más complejos, pero no soporta colores.
 
 .. rst-class:: classref-reftable-group
 
@@ -161,7 +161,11 @@ Los colores del gradiente como un :ref:`PackedColorArray<class_PackedColorArray>
 
 \ **Nota:** Establecer esta propiedad actualiza todos los colores a la vez. Para actualizar cualquier color individualmente, use :ref:`set_color()<class_Gradient_method_set_color>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +222,11 @@ Los desplazamientos del gradiente como un :ref:`PackedFloat32Array<class_PackedF
 
 \ **Nota:** Establecer esta propiedad actualiza todos los desplazamientos a la vez. Para actualizar cualquier desplazamiento individualmente, use :ref:`set_offset()<class_Gradient_method_set_offset>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-section-separator
 

@@ -210,7 +210,7 @@ IK解算器使用的反覆運算迴圈的數量，以產生更準確（和優雅
 - |void| **set_target_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_target_transform**\ (\ )
 
-放置尖端骨骼的 IK 鏈的第一個目標，如果 :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` 是 ``true``\ ，尖端骨骼的旋轉方式。如果 :ref:`target_node<class_SkeletonIK3D_property_target_node>` 路徑可用，則使用節點變換，並忽略此屬性。
+The first target of the IK chain where the tip bone is placed and, if :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` is ``true``, how the tip bone is rotated. If :ref:`target_node<class_SkeletonIK3D_property_target_node>` points to a valid node, that node's transform is used instead and this property is ignored.
 
 .. rst-class:: classref-item-separator
 

@@ -7,7 +7,7 @@ PanelContainer
 
 **Наследует:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Наследуется от:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
+**Наследуется от:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`
 
 Контейнер, который хранит свои дочерние элементы управления в области :ref:`StyleBox<class_StyleBox>`.
 

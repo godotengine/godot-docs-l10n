@@ -654,7 +654,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
 - :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
 
-Якщо ця опція увімкнена, наддискретизація для цього **CanvasItem** автоматично коригується відповідно до масштабу.
+If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale. This makes fonts and :ref:`DPITexture<class_DPITexture>` images automatically re-render to match the actual scale they are drawn at, for crisper visuals. This has a performance impact on the CPU every time the node's scale changes, so it is disabled by default.
+
+\ **Note:** For :ref:`Control<class_Control>` nodes with :ref:`Control.offset_transform_enabled<class_Control_property_offset_transform_enabled>` set to ``true``, scale-based oversampling is only effective if :ref:`Control.offset_transform_visual_only<class_Control_property_offset_transform_visual_only>` is ``false``. This ensures there is no performance overhead when using visual-only offset transforms (as often used in animations).
 
 .. rst-class:: classref-item-separator
 
@@ -777,9 +779,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-Рендерний шар, у якому цей **CanvasItem** рендерирується вузлами :ref:`Viewport<class_Viewport>`. :ref:`Viewport<class_Viewport>` відображатиме **CanvasItem**, якщо він і всі його батьки мають спільний шар із маскою canvas cull від :ref:`Viewport<class_Viewport>`.
+The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask. For an easier way to change this value from a script, see :ref:`set_visibility_layer_bit()<class_CanvasItem_method_set_visibility_layer_bit>`.
 
-\ **Примітка:** A **CanvasItem** не успадковує рівні видимості своїх батьків. Це означає, що якщо батько **CanvasItem** не має всіх тих самих шарів, що й його дитина, дитина може бути невидимою, навіть якщо і батьки, і дитина мають :ref:`visible<class_CanvasItem_property_visible>` встановлено на ``true``. Наприклад, якщо у батька є шар 1, а у дитини шар 2, дитина не буде видно в :ref:`Viewport<class_Viewport>` з маскою canvas cull, налаштованою на рівень 1 або 2 (див. :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Щоб переконатися, що батьки та дитина видимі, батько повинен мати обидва шари 1 і 2, або дитина повинна встановити :ref:`top_level<class_CanvasItem_property_top_level>` на ``true``.
+\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -815,11 +817,13 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_y_sort_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_y_sort_enabled**\ (\ )
 
-Якщо ``true``, цей і дочірній вузли **CanvasItem** з вищою позицією Y відображаються перед вузлами з нижчою позицією Y. Якщо ``false``, цей і дочірній вузли **CanvasItem** відображаються зазвичай у порядку дерева сцен.
+If ``true``, this and child **CanvasItem** nodes with a higher Y position are rendered in front of nodes with a lower Y position. If ``false``, this and child **CanvasItem** nodes are rendered normally in scene tree order.
 
- Якщо Y-сортування ввімкнено на батьківському вузлі ('A'), але вимкнено на дочірньому вузлі ('B'), дочірній вузол ('B') сортується, але його дочірні вузли ('C1', 'C2' тощо) відображаються разом у тій же позиції Y, що й дочірній вузол ('B'). Це дозволяє організовувати порядок візуалізації сцени без зміни дерева сцени.
+With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.
 
- Вузли сортуються відносно один одного, лише якщо вони знаходяться на одному ``члені z_index``.
+Nodes sort relative to each other only if they are on the same :ref:`z_index<class_CanvasItem_property_z_index>`.
+
+\ **Note:** Y-sorting does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +842,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 Якщо ``true``, кінцевий Z-індекс цього вузла залежить від Z-індексу його батьківського вузла.
 
-Наприклад, якщо :ref:`z_index<class_CanvasItem_property_z_index>` дорівнює ``2``, а кінцевий Z-індекс його батьківського вузла дорівнює ``3``, тоді кінцевий Z-індекс цього вузла буде ``5`` (``2 + 3``).
+Наприклад, якщо :ref:`z_index<class_CanvasItem_property_z_index>` дорівнює ``2``, а кінцевий Z-індекс його батьківського вузла дорівнює ``3``, тоді кінцевий Z-індекс цього вузла буде ``5`` (\ ``2 + 3``).
 
 .. rst-class:: classref-item-separator
 
@@ -855,9 +859,9 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 - |void| **set_z_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_index**\ (\ )
 
-Порядок, у якому цей вузол малюється. Вузол з вищим Z-індексом відображатиметься попереду інших. Має бути між :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` та :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (включно).
+The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` and :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
 
-\ **Примітка:** Z-індекс **не** впливає на порядок обробки вузлів **CanvasItem** або на спосіб обробки вхідних подій. Це особливо важливо пам’ятати для вузлів :ref:`Control<class_Control>`.
+\ **Note:** The Z index does **not** affect the order in which **CanvasItem** nodes are processed, or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
 
 .. rst-class:: classref-section-separator
 
@@ -940,15 +944,15 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Малює коло, де ``position`` визначено в локальному просторі. Див. також :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` та :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-Якщо ``filled`` має значення ``true``, коло буде заповнено заданим ``color``. Якщо ``filled`` має значення ``false``, коло буде намальовано як обведення із заданими ``color`` та ``width``.
+If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
 
-Якщо ``width`` має від'ємне значення, то замість чотириточкових будуть намальовані двоточкові примітиви. Це означає, що при масштабуванні CanvasItem лінії залишатимуться тонкими. Якщо така поведінка небажана, то передайте додатне значення ``width``, наприклад, ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-Якщо ``antialiased`` має значення ``true``, до межі будуть прикріплені напівпрозорі "пір'я", що зробить контури гладкими.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Примітка:** ``width`` ефективний лише тоді, коли ``filled`` має значення ``false``.
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -976,15 +980,15 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 |void| **draw_dashed_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, dash\: :ref:`float<class_float>` = 2.0, aligned\: :ref:`bool<class_bool>` = true, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_dashed_line>`
 
-Малює пунктирну лінію від однієї 2D точки до іншої, заданого кольору та ширини. Позиції ``from`` та ``to`` визначаються в локальному просторі. Див. також :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` та :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+Draws a dashed line from a 2D point to another, with a given color and width. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
 
-Якщо ``width`` є від'ємним, то замість чотириточкової примітиви буде намальована двоточкова. Це означає, що при масштабуванні CanvasItem частини лінії залишаться тонкими. Якщо така поведінка не є бажаною, то передайте додатне значення ``width``, наприклад ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ ``dash`` — це довжина кожної риски в пікселях, причому відстань між кожною рискою має однакову довжину. Якщо ``aligned`` дорівнює ``true``, довжина першої та останньої рисок може бути скорочена або подовжена, щоб лінія починалася та закінчувалася в точних точках, визначених ``from`` та ``to``. Обидва кінці завжди симетричні, коли ``aligned`` дорівнює ``true``. Якщо ``aligned`` дорівнює ``false``, всі риски матимуть однакову довжину, але лінія може виглядати неповною в кінці, оскільки довжина риски не ділиться рівно на довжину лінії. Коли ``aligned`` дорівнює ``false``, малюються тільки повні риски.
+\ ``dash`` is the length of each dash in pixels, with the gap between each dash being the same length. If ``aligned`` is ``true``, the length of the first and last dashes may be shortened or lengthened to allow the line to begin and end at the precise points defined by ``from`` and ``to``. Both ends are always symmetrical when ``aligned`` is ``true``. If ``aligned`` is ``false``, all dashes will have the same length, but the line may appear incomplete at the end due to the dash length not dividing evenly into the line length. Only full dashes are drawn when ``aligned`` is ``false``.
 
-Якщо ``antialiased`` має значення ``true``, до межі будуть додані напівпрозорі «пір'я», що зроблять контури гладкими.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Примітка:** ``antialiased`` діє тільки в тому випадку, якщо ``width`` більше ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1113,11 +1117,11 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 |void| **draw_multiline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline>`
 
-Малює кілька роз'єднаних ліній з однаковою ``width`` і ``color``. Кожна лінія визначається двома послідовними точками з масиву ``points`` у локальному просторі, тобто i-й сегмент складається з ``points[2 * i]``, ``points[2 * i + 1]`` кінцевих точок. При малювання великої кількості ліній це швидше, ніж використання окремих викликів :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Для малювання взаємопов'язаних ліній використовуйте замість цього :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+Draws multiple disconnected lines with a uniform ``width`` and ``color``. Each line is defined by two consecutive points from ``points`` array in local space, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` instead.
 
-Якщо ``width`` є від'ємним, то замість чотириточкових примітивів будуть намальовані двоточкові. Це означає, що при масштабуванні CanvasItem лінії залишаться тонкими. Якщо така поведінка небажана, передайте позитивне значення ``width``, наприклад ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **Примітка:** ``antialiased`` діє тільки в тому випадку, якщо ``width`` більше ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1129,11 +1133,11 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 |void| **draw_multiline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline_colors>`
 
-Малює кілька роз'єднаних ліній з однаковою шириною ``width`` і забарвленням по сегментах. Кожен сегмент визначається двома послідовними точками з масиву ``points`` у локальному просторі та відповідним кольором з масиву ``colors``, тобто i-й сегмент складається з ``points[2 * i]``, ``points[2 * i + 1] `` кінцевих точок і має колір ``colors[i]``. При малювання великої кількості ліній це швидше, ніж використання окремих викликів :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Для малювання взаємопов'язаних ліній використовуйте замість цього :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`.
+Draws multiple disconnected lines with a uniform ``width`` and segment-by-segment coloring. Each segment is defined by two consecutive points from ``points`` array in local space and a corresponding color from ``colors`` array, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints and has ``colors[i]`` color. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` instead.
 
-Якщо ``width`` є від'ємним, то замість чотириточкових примітивів будуть намальовані двоточкові. Це означає, що при масштабуванні CanvasItem лінії залишаться тонкими. Якщо така поведінка небажана, передайте позитивне значення ``width``, наприклад ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-\ **Примітка:** ``antialiased`` діє тільки в тому випадку, якщо ``width`` більше ``0.0``.
+\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1149,7 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 |void| **draw_multiline_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_multiline_string>`
 
-Розбиває ``text`` на рядки і малює його, використовуючи вказаний ``font`` в ``pos`` в локальному просторі (верхній лівий кут). Колір тексту буде помножений на ``modulate``. Якщо ``width`` більше або дорівнює 0, текст буде обрізаний, якщо він перевищує вказану ширину. Якщо ``oversampling`` більше нуля, воно використовується як коефіцієнт передискретизації шрифту, в іншому випадку використовуються налаштування передискретизації вікна перегляду.
+Breaks ``text`` into lines and draws it using the specified ``font`` at the ``pos`` in local space. ``pos.x`` indicates the left side of the column of text (including the full ``width`` even if the text is narrower, and regardless of ``alignment``); ``pos.y`` indicates the vertical position of the baseline of the first line of text. The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,15 +1245,15 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 |void| **draw_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_rect>`
 
-Малює прямокутник. Якщо ``filled`` має значення ``true``, прямокутник буде заповнений вказаним ``color``. Якщо ``filled`` має значення ``false``, прямокутник буде намальований як контур із вказаними ``color`` та ``width``. ``rect`` вказується в локальному просторі. Див. також :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Draws a rectangle. If ``filled`` is ``true``, the rectangle will be filled with the ``color`` specified. If ``filled`` is ``false``, the rectangle will be drawn as a stroke with the ``color`` and ``width`` specified. The ``rect`` is specified in local space. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-Якщо ``width`` є від'ємним, то замість чотириточкових примітивів будуть намальовані двоточкові. Це означає, що при масштабуванні CanvasItem лінії залишаться тонкими. Якщо така поведінка не є бажаною, то передайте додатне значення ``width``, наприклад ``1.0``.
+If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
 
-Якщо ``antialiased`` дорівнює ``true``, до межі будуть додані напівпрозорі «пір'я», що зробить контури гладкими.
+If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
 
-\ **Примітка:** ``width`` діє тільки якщо ``filled`` має значення ``false``.
+\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
 
-\ **Примітка:** Незаповнені прямокутники, намальовані з від'ємним ``width``, можуть відображатися неідеально. Наприклад, кути можуть бути відсутніми або яскравішими через перекриття ліній (для напівпрозорого ``color``).
+\ **Note:** Unfilled rectangles drawn with a negative ``width`` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent ``color``).
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1476,7 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-Повертає перетворення з локальної системи координат цього **CanvasItem** у систему координат :ref:`Viewport<class_Viewport>`.
+Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`'s coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -1734,7 +1738,7 @@ Draws a textured rectangle region of the multichannel signed distance field text
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-Встановити/очистити окремі біти на шарі видимості візуалізації. Це спрощує редагування шару видимості цього **CanvasItem**.
+Set/clear individual bits on the rendering visibility layer (``layer`` is between ``0`` and ``31``). This simplifies editing this **CanvasItem**'s visibility layer compared to assigning the :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` property directly.
 
 .. rst-class:: classref-item-separator
 

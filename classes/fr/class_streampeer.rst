@@ -16,9 +16,9 @@ Classe de base abstraite pour interagir avec des flux.
 Description
 -----------
 
-StreamPeer est une classe de base abstraite principalement utilisée pour les protocoles orientés flux (comme le TCP). Elle fournit une API pour l'envoi et la réception de données à travers des flux comme des données brutes ou des chaînes de caractères.
+StreamPeer is an abstract base class mostly used for stream-based protocols (such as TCP). It provides an API for sending and receiving data through streams as raw data or strings.
 
-\ **Note :** Lors de l'export vers Android, assurez-vous d'activer la permission ``INTERNET`` dans le préréglage d'export Android avant d'exporter le projet ou d'utiliser un déploiement en un clic. Sinon, la communication réseau de tout type sera bloquée par Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

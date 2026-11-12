@@ -18,7 +18,7 @@ Descrizione
 
 Espressione personalizzata nel Godot Shading Language, con un numero personalizzato di porte di ingresso e uscita.
 
-Il codice fornito è iniettato direttamente nella funzione dello shader corrispondente del grafico (``vertex``, ``fragment`` o ``light``), quindi non può essere utilizzato per dichiarare funzioni, varying, uniformi o costanti globali. Vedi :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` per tali definizioni globali.
+Il codice fornito è iniettato direttamente nella funzione dello shader corrispondente del grafico (\ ``vertex``, ``fragment`` o ``light``), quindi non può essere utilizzato per dichiarare funzioni, varying, uniformi o costanti globali. Vedi :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` per tali definizioni globali.
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ Descrizioni delle proprietà
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-Un'espressione nel Godot Shading Language, che sarà iniettata all'inizio della funzione dello shader corrispondente del grafico (``vertex``, ``fragment`` o ``light``) e quindi non può essere utilizzata per dichiarare funzioni, varying, uniformi o costanti globali.
+Un'espressione nel Godot Shading Language, che sarà iniettata all'inizio della funzione dello shader corrispondente del grafico (\ ``vertex``, ``fragment`` o ``light``) e quindi non può essere utilizzata per dichiarare funzioni, varying, uniformi o costanti globali.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

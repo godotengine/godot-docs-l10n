@@ -14,7 +14,7 @@ Marker2D
 Описание
 ----------------
 
-Общая подсказка положения 2D для редактирования. Это как обычный :ref:`Node2D<class_Node2D>`, но он отображается как крест в 2D-редакторе все время. Вы можете задать визуальный размер креста, используя гизмо в 2D-редакторе, когда выбран узел.
+Generic 2D position hint for editing. This is like a plain :ref:`Node2D<class_Node2D>`, but it displays as a cross in the 2D editor.
 
 .. rst-class:: classref-reftable-group
 

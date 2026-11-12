@@ -96,7 +96,7 @@ Margin применяется вокруг каждого импортирова
 
 :ref:`PackedStringArray<class_PackedStringArray>` **character_ranges** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_character_ranges>`
 
-Диапазоны символов для импорта из изображения шрифта. Это массив, который отображает каждую позицию на изображении (в координатах тайлов, а не пикселей). Атлас шрифта обходится слева направо и сверху вниз. Символы могут быть указаны десятичными числами (126), шестнадцатеричными числами (``0x007e`` или ``U+007e``) или в одинарных кавычках (``'~'``). Диапазоны могут быть указаны с дефисом между символами.
+Диапазоны символов для импорта из изображения шрифта. Это массив, который отображает каждую позицию на изображении (в координатах тайлов, а не пикселей). Атлас шрифта обходится слева направо и сверху вниз. Символы могут быть указаны десятичными числами (126), шестнадцатеричными числами (\ ``0x007e`` или ``U+007e``) или в одинарных кавычках (\ ``'~'``). Диапазоны могут быть указаны с дефисом между символами.
 
 Например, ``0-127`` представляет полный диапазон ASCII. Его также можно записать как ``0x0000-0x007f`` (или ``U+0000-U+007f``). В качестве еще одного примера, ``' '-'~'`` эквивалентно ``32-126`` и представляет собой диапазон печатных (видимых) символов ASCII.
 
@@ -104,7 +104,11 @@ Margin применяется вокруг каждого импортирова
 
 \ **Примечание:** Общее количество символов не должно превышать количество :ref:`columns<class_ResourceImporterImageFont_property_columns>`, умноженное на :ref:`rows<class_ResourceImporterImageFont_property_rows>`. В противном случае импорт шрифта завершится неудачей.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +184,11 @@ Margin применяется вокруг каждого импортирова
 
 Каждая строка состоит из трех значений, разделенных пробелами: строка «from», строка «to» и смещение целого числа. Каждая комбинация образует две строки для кернинговой пары, например, ``ab cd -3`` создаст кернинговые пары ``ac``, ``ad``, ``bc`` и ``bd`` со смещением ``-3``. Для добавления символов Unicode можно использовать escape-последовательности ``\uXXXX``.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 

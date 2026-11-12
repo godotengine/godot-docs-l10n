@@ -19,11 +19,11 @@ Classe astratta per :ref:`PacketPeer<class_PacketPeer>` specializzati utilizzati
 Descrizione
 ----------------------
 
-Gestisce la connessione con uno o più peer remoti che agiscono come server o client e assegna ID univoci a ciascuno di essi. Vedi anche :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+Manages the connection with one or more remote peers acting as server or client and assigning unique IDs to each of them. See also :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **Nota:** Il protocollo della :ref:`MultiplayerAPI<class_MultiplayerAPI>` è un dettaglio di implementazione e non è pensato per essere utilizzato da server non Godot. Potrebbe cambiare senza preavviso.
+\ **Note:** The :ref:`MultiplayerAPI<class_MultiplayerAPI>` protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 
@@ -246,7 +246,7 @@ Se ``true``, questo **MultiplayerPeer** rifiuta nuove connessioni.
 
 Il canale da usare per inviare pacchetti. Molte API di rete come ENet e WebRTC consentono la creazione di più canali indipendenti che si comportano, in un certo senso, come connessioni separate. Ciò significa che i dati affidabili bloccheranno solo la consegna di altri pacchetti su quel canale e l'ordinamento sarà solo in base al canale su cui il pacchetto viene inviato. Usare canali diversi per inviare aggiornamenti **diversi e indipendenti** di stato è un modo comune per ottimizzare l'utilizzo della rete e ridurre la latenza nei giochi molto dinamici.
 
-\ **Nota:** Il canale predefinito (``0``) funziona in realtà come 3 canali separati (uno per ogni :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`) in modo che :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` e :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` non interagiscano tra loro per impostazione predefinita. Fai riferimento alla documentazione specifica dell'API di rete (ad esempio ENet o WebRTC) per imparare come impostare correttamente i canali.
+\ **Nota:** Il canale predefinito (\ ``0``) funziona in realtà come 3 canali separati (uno per ogni :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`) in modo che :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` e :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` non interagiscano tra loro per impostazione predefinita. Fai riferimento alla documentazione specifica dell'API di rete (ad esempio ENet o WebRTC) per imparare come impostare correttamente i canali.
 
 .. rst-class:: classref-item-separator
 

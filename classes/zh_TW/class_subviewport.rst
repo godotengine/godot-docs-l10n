@@ -7,6 +7,8 @@ SubViewport
 
 **繼承：** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
+**被繼承：** :ref:`OpenXRFoveatedInsetViewport<class_OpenXRFoveatedInsetViewport>`
+
 遊戲世界的介面，不會建立視窗，也不會直接繪製到螢幕上。
 
 .. rst-class:: classref-introduction-group

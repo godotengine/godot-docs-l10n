@@ -378,7 +378,11 @@ Se nessuno dei nodi :ref:`Control<class_Control>` prima del trascinatore è espa
 
 \ **Nota:** Se gli offset di suddivisione fanno sovrapporre i nodi :ref:`Control<class_Control>`, la prima suddivisione avrà la priorità per risolvere le posizioni.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +530,7 @@ Il colore del trascinatore di tocco quando premuto.
 
 :ref:`int<class_int>` **autohide** = ``1`` :ref:`🔗<class_SplitContainer_theme_constant_autohide>`
 
-Valore booleano. Se ``1`` (``true``), i trascinatori si nasconderanno automaticamente quando non si trovano sotto il cursore. Se ``0`` (``false``), i trascinatori sono sempre visibili. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` deve essere :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
+Valore booleano. Se ``1`` (\ ``true``), i trascinatori si nasconderanno automaticamente quando non si trovano sotto il cursore. Se ``0`` (\ ``false``), i trascinatori sono sempre visibili. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` deve essere :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
 
 .. rst-class:: classref-item-separator
 

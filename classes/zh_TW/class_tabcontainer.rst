@@ -50,6 +50,8 @@ TabContainer
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`FocusMode<enum_Control_FocusMode>`          | :ref:`tab_focus_mode<class_TabContainer_property_tab_focus_mode>`                             | ``2``     |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`SizingMode<enum_TabBar_SizingMode>`         | :ref:`tab_sizing<class_TabContainer_property_tab_sizing>`                                     | ``0``     |
+   +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`                           | :ref:`tab_{index}/disabled<class_TabContainer_property_tab_{index}/disabled>`                 | ``false`` |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`                           | :ref:`tab_{index}/hidden<class_TabContainer_property_tab_{index}/hidden>`                     | ``false`` |
@@ -139,69 +141,81 @@ TabContainer
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`drop_mark_color<class_TabContainer_theme_color_drop_mark_color>`             | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_disabled_color<class_TabContainer_theme_color_font_disabled_color>`     | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_hovered_color<class_TabContainer_theme_color_font_hovered_color>`       | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_TabContainer_theme_color_font_outline_color>`       | ``Color(0, 0, 0, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_selected_color<class_TabContainer_theme_color_font_selected_color>`     | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_unselected_color<class_TabContainer_theme_color_font_unselected_color>` | ``Color(0.7, 0.7, 0.7, 1)``         |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`icon_disabled_color<class_TabContainer_theme_color_icon_disabled_color>`     | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`icon_hovered_color<class_TabContainer_theme_color_icon_hovered_color>`       | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`icon_selected_color<class_TabContainer_theme_color_icon_selected_color>`     | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`icon_unselected_color<class_TabContainer_theme_color_icon_unselected_color>` | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`icon_max_width<class_TabContainer_theme_constant_icon_max_width>`            | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`icon_separation<class_TabContainer_theme_constant_icon_separation>`          | ``4``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_TabContainer_theme_constant_outline_size>`                | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`side_margin<class_TabContainer_theme_constant_side_margin>`                  | ``8``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`tab_separation<class_TabContainer_theme_constant_tab_separation>`            | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_TabContainer_theme_font_font>`                                    |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_TabContainer_theme_font_size_font_size>`                     |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement<class_TabContainer_theme_icon_decrement>`                          |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement_highlight<class_TabContainer_theme_icon_decrement_highlight>`      |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`drop_mark<class_TabContainer_theme_icon_drop_mark>`                          |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment<class_TabContainer_theme_icon_increment>`                          |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment_highlight<class_TabContainer_theme_icon_increment_highlight>`      |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`menu<class_TabContainer_theme_icon_menu>`                                    |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`menu_highlight<class_TabContainer_theme_icon_menu_highlight>`                |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_TabContainer_theme_style_panel>`                                 |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_disabled<class_TabContainer_theme_style_tab_disabled>`                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>`                         |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_hovered<class_TabContainer_theme_style_tab_hovered>`                     |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_selected<class_TabContainer_theme_style_tab_selected>`                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_unselected<class_TabContainer_theme_style_tab_unselected>`               |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tabbar_background<class_TabContainer_theme_style_tabbar_background>`         |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`drop_mark_color<class_TabContainer_theme_color_drop_mark_color>`               | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_disabled_color<class_TabContainer_theme_color_font_disabled_color>`       | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_hovered_color<class_TabContainer_theme_color_font_hovered_color>`         | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_outline_color<class_TabContainer_theme_color_font_outline_color>`         | ``Color(0, 0, 0, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_selected_color<class_TabContainer_theme_color_font_selected_color>`       | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`font_unselected_color<class_TabContainer_theme_color_font_unselected_color>`   | ``Color(0.7, 0.7, 0.7, 1)``         |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`icon_disabled_color<class_TabContainer_theme_color_icon_disabled_color>`       | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`icon_hovered_color<class_TabContainer_theme_color_icon_hovered_color>`         | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`icon_selected_color<class_TabContainer_theme_color_icon_selected_color>`       | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`icon_unselected_color<class_TabContainer_theme_color_icon_unselected_color>`   | ``Color(1, 1, 1, 1)``               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`icon_max_width<class_TabContainer_theme_constant_icon_max_width>`              | ``0``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`icon_separation<class_TabContainer_theme_constant_icon_separation>`            | ``4``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`outline_size<class_TabContainer_theme_constant_outline_size>`                  | ``0``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`side_margin<class_TabContainer_theme_constant_side_margin>`                    | ``8``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`tab_separation<class_TabContainer_theme_constant_tab_separation>`              | ``0``                               |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Font<class_Font>`               | :ref:`font<class_TabContainer_theme_font_font>`                                      |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`font_size<class_TabContainer_theme_font_size_font_size>`                       |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`decrement<class_TabContainer_theme_icon_decrement>`                            |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`decrement_highlight<class_TabContainer_theme_icon_decrement_highlight>`        |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`drop_mark<class_TabContainer_theme_icon_drop_mark>`                            |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`increment<class_TabContainer_theme_icon_increment>`                            |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`increment_highlight<class_TabContainer_theme_icon_increment_highlight>`        |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`menu<class_TabContainer_theme_icon_menu>`                                      |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`     | :ref:`menu_highlight<class_TabContainer_theme_icon_menu_highlight>`                  |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_ended_sound<class_TabContainer_theme_sound_drag_ended_sound>`             |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`drag_started_sound<class_TabContainer_theme_sound_drag_started_sound>`         |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`focus_sound<class_TabContainer_theme_sound_focus_sound>`                       |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`hover_sound<class_TabContainer_theme_sound_hover_sound>`                       |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_disabled_sound<class_TabContainer_theme_sound_pressed_disabled_sound>` |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`AudioStream<class_AudioStream>` | :ref:`pressed_sound<class_TabContainer_theme_sound_pressed_sound>`                   |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`panel<class_TabContainer_theme_style_panel>`                                   |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tab_disabled<class_TabContainer_theme_style_tab_disabled>`                     |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>`                           |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tab_hovered<class_TabContainer_theme_style_tab_hovered>`                       |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tab_selected<class_TabContainer_theme_style_tab_selected>`                     |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tab_unselected<class_TabContainer_theme_style_tab_unselected>`                 |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`       | :ref:`tabbar_background<class_TabContainer_theme_style_tabbar_background>`           |                                     |
+   +---------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -387,9 +401,11 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 - |void| **set_current_tab**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_current_tab**\ (\ )
 
-目前分頁的索引。設定後，此索引的 :ref:`Control<class_Control>` 節點的 ``visible`` 屬性會被設為 ``true``\ ，其他所有都設定為 ``false``\ 。
+The current tab index. When set, this index's :ref:`Control<class_Control>` node's ``visible`` property is set to ``true`` and all others are set to ``false``.
 
-設為 ``-1`` 表示不選中任何分頁。
+A value of ``-1`` means that no tab is selected.
+
+\ **Note:** Setting this property before the **TabContainer** is in the scene tree will not switch the current tab, even if the index is within bounds (but the property will still be assigned). The actual switch will happen when the container enters the tree.
 
 .. rst-class:: classref-item-separator
 
@@ -477,6 +493,23 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_tab_focus_mode**\ (\ )
 
 該介面的遊玩區域模式。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_property_tab_sizing:
+
+.. rst-class:: classref-property
+
+:ref:`SizingMode<enum_TabBar_SizingMode>` **tab_sizing** = ``0`` :ref:`🔗<class_TabContainer_property_tab_sizing>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_tab_sizing**\ (\ value\: :ref:`SizingMode<enum_TabBar_SizingMode>`\ )
+- :ref:`SizingMode<enum_TabBar_SizingMode>` **get_tab_sizing**\ (\ )
+
+The sizing strategy used to determine tab widths.
 
 .. rst-class:: classref-item-separator
 
@@ -1235,6 +1268,78 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 :ref:`Texture2D<class_Texture2D>` **menu_highlight** :ref:`🔗<class_TabContainer_theme_icon_menu_highlight>`
 
 當游標懸停時功能表按鈕的圖示（見 :ref:`set_popup()<class_TabContainer_method_set_popup>`\ ）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_drag_ended_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_ended_sound** :ref:`🔗<class_TabContainer_theme_sound_drag_ended_sound>`
+
+Played when a tab is done being dragged to rearrange it. Can only be heard if :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>` is ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_drag_started_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **drag_started_sound** :ref:`🔗<class_TabContainer_theme_sound_drag_started_sound>`
+
+Played when a tab is beginning to be dragged to rearrange it. Can only be heard if :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>` is ``true``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_focus_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **focus_sound** :ref:`🔗<class_TabContainer_theme_sound_focus_sound>`
+
+Played when this :ref:`TabBar<class_TabBar>` receives keyboard or gamepad-induced focus. Mouse or touch-induced focus does not play a focus sound.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_hover_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **hover_sound** :ref:`🔗<class_TabContainer_theme_sound_hover_sound>`
+
+Played when a tab is hovered with the mouse.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_pressed_disabled_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_disabled_sound** :ref:`🔗<class_TabContainer_theme_sound_pressed_disabled_sound>`
+
+Played when the tab close button is pressed while the tab is disabled, or when pressing the previous/next tab navigation buttons when already at the beginning/end of the list.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_theme_sound_pressed_sound:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`AudioStream<class_AudioStream>` **pressed_sound** :ref:`🔗<class_TabContainer_theme_sound_pressed_sound>`
+
+Played when the tab close or previous/next tab navigation buttons are pressed.
 
 .. rst-class:: classref-item-separator
 

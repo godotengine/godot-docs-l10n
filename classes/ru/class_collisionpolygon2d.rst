@@ -184,7 +184,11 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 
 \ **Примечание:** Возвращаемые вершины находятся в локальном координатном пространстве заданного **CollisionPolygon2D**.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

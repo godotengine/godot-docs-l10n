@@ -191,9 +191,11 @@ AES 密碼塊連結解密模式。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-取得此本文的目前 IV 狀態（呼叫 :ref:`update()<class_AESContext_method_update>` 時會更新 IV）。通常不需要此函式。
+**已棄用：** Extracting the IV state is no longer supported
 
-\ **注意：**\ 僅當本文以 :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` 或 :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>` 開頭時，此函式才有意義。
+Returns an empty :ref:`PackedByteArray<class_PackedByteArray>`.
+
+\ **Note:** This method used to return the active IV state as modified by one or more :ref:`update()<class_AESContext_method_update>` calls. This is no longer supported.
 
 .. rst-class:: classref-item-separator
 

@@ -60,13 +60,13 @@ Descrizioni delle proprietà
 - |void| **set_mirroring**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_mirroring**\ (\ )
 
-L'intervallo, in pixel, in cui il **ParallaxLayer** è disegnato ripetutamente. Utile per creare uno sfondo a scorrimento infinito. Se un asse è impostato su ``0``, il **ParallaxLayer** sarà disegnato solo una volta lungo quella direzione.
+The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Useful for creating an infinitely scrolling background. If an axis is set to ``0``, the **ParallaxLayer** will be drawn only once along that direction.
 
-\ **Nota:** Se vuoi che la ripetizione corrisponda pixel per pixel a un :ref:`Texture2D<class_Texture2D>` visualizzato da un nodo figlio, dovresti tenere conto di qualsiasi scala applicata alla texture quando definisci questo intervallo. Ad esempio, se usi un figlio :ref:`Sprite2D<class_Sprite2D>` ridimensionato a ``0.5`` per visualizzare una texture 600x600 e vuoi che questo sprite sia ripetuto continuamente in orizzontale, dovresti impostare il rispecchiamento su ``Vector2(300, 0)``.
+\ **Note:** If you want the repetition to pixel-perfect match a :ref:`Texture2D<class_Texture2D>` displayed by a child node, you should account for any scale applied to the texture when defining this interval. For example, if you use a child :ref:`Sprite2D<class_Sprite2D>` scaled to ``0.5`` to display a 600×600 texture, and want this sprite to be repeated continuously horizontally, you should set the mirroring to ``Vector2(300, 0)``.
 
-\ **Nota:** Se la lunghezza dell'asse della viewport è maggiore del doppio della dimensione dell'asse ripetuto, non si ripeterà all'infinito, poiché il livello di parallasse disegna solo 2 istanze del livello alla volta. La finestra di visibilità è calcolata dalla posizione del :ref:`ParallaxBackground<class_ParallaxBackground>` genitore, non dalla posizione del livello stesso. Quindi, se utilizzi il rispecchiamento, **non** modificare la posizione del **ParallaxLayer** rispetto al suo genitore. Invece, se hai bisogno di regolare la posizione dello sfondo, imposta la proprietà :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` nel :ref:`ParallaxBackground<class_ParallaxBackground>` genitore.
+\ **Note:** If the length of the viewport axis is bigger than twice the repeated axis size, it will not repeat infinitely, as the parallax layer only draws 2 instances of the layer at any given time. The visibility window is calculated from the parent :ref:`ParallaxBackground<class_ParallaxBackground>`'s position, not the layer's own position. So, if you use mirroring, **do not** change the **ParallaxLayer** position relative to its parent. Instead, if you need to adjust the background's position, set the :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` property in the parent :ref:`ParallaxBackground<class_ParallaxBackground>`.
 
-\ **Nota:** Nonostante il nome, il livello non sarà specchiato, sarà solo ripetuto.
+\ **Note:** Despite the name, the layer will not be mirrored, it will only be repeated.
 
 .. rst-class:: classref-item-separator
 

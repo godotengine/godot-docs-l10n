@@ -14,21 +14,21 @@ UDP 資料包使用者端。
 說明
 ----
 
-UDP 封包對等端。可以用來發送和接收原始 UPD 封包和 :ref:`Variant<class_Variant>`\ 。
+UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
-\ **範例：**\ 發送封包：
+\ **Example:** Send a packet:
 
 ::
 
     var peer = PacketPeerUDP.new()
 
-    # 可以自行選擇用於發送封包的本機連接埠。
+    # Optionally, you can select the local port used to send the packet.
     peer.bind(4444)
 
     peer.set_dest_address("1.1.1.1", 4433)
     peer.put_packet("hello".to_utf8_buffer())
 
-\ **範例：**\ 監聽封包：
+\ **Example:** Listen for packets:
 
 ::
 
@@ -43,9 +43,9 @@ UDP 封包對等端。可以用來發送和接收原始 UPD 封包和 :ref:`Vari
         if peer.get_available_packet_count() > 0:
             var array_bytes = peer.get_packet()
             var packet_string = array_bytes.get_string_from_ascii()
-            print("收到訊息：", packet_string)
+            print("Received message: ", packet_string)
 
-\ **注意：**\ 匯出到 Android 時，請確保在匯出專案和使用一鍵部署前啟用 Android 匯出預設中的 ``INTERNET`` 權限。否則 Android 會阻止所有網路通信。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

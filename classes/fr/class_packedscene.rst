@@ -41,7 +41,7 @@ Peut être utilisé pour enregistrer un nœud dans un fichier. À l'enregistreme
 
 
 
-\ **Exemple :** Enregistrement d'un nœud avec différents propriétaires. L'exemple suivant crée 3 objets : :ref:`Node2D<class_Node2D>` (``node``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) et :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``collision`` est un enfant de ``body`` qui est un enfant de ``node``. Seul ``body`` est la propriété de ``node`` et :ref:`pack()<class_PackedScene_method_pack>` n'enregistrera alors que ces deux nœuds, mais pas ``collision``.
+\ **Exemple :** Enregistrement d'un nœud avec différents propriétaires. L'exemple suivant crée 3 objets : :ref:`Node2D<class_Node2D>` (\ ``node``), :ref:`RigidBody2D<class_RigidBody2D>` (\ ``body``) et :ref:`CollisionObject2D<class_CollisionObject2D>` (\ ``collision``). ``collision`` est un enfant de ``body`` qui est un enfant de ``node``. Seul ``body`` est la propriété de ``node`` et :ref:`pack()<class_PackedScene_method_pack>` n'enregistrera alors que ces deux nœuds, mais pas ``collision``.
 
 
 .. tabs::

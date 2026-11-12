@@ -339,7 +339,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **dtls_client_setup**\ (\ hostname\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_ENetConnection_method_dtls_client_setup>`
 
-Налаштуйте це ENetHost для використання користувацького розширення Godot, що дозволяє шифрування DTLS для клієнтів ENet. Введіть номер мобільного, який Ви вказали при укладаннi договору з банком - для ідентифікації. Ви можете пройти додаткові параметри параметра ``Client_options`` для налаштування перевірених органів з сертифікації або відключення загальної перевірки назв. :ref:`TLSOptions.client()<class_TLSOptions_method_client>` і :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+Налаштовує цей ENetHost для використання власного розширення Godot, що забезпечує шифрування DTLS для клієнтів ENet. Викличте цей метод перед :ref:`connect_to_host()<class_ENetConnection_method_connect_to_host>`, щоб підключення ENet використовувало DTLS та перевіряло сертифікат сервера за значенням ``hostname``. Необов’язковий параметр ``client_options`` дозволяє налаштувати довірені центри сертифікації або вимкнути перевірку загального імені. Див. :ref:`TLSOptions.client()<class_TLSOptions_method_client>` та :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
 
 .. rst-class:: classref-item-separator
 

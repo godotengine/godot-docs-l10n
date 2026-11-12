@@ -14,7 +14,7 @@ Una funzione intera scalare da utilizzare all'interno del grafico di visual shad
 Descrizione
 ----------------------
 
-Accetti un scalare intero (``x``) alla porta di ingresso e la trasforma secondo :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
+Accetti un scalare intero (\ ``x``) alla porta di ingresso e la trasforma secondo :ref:`function<class_VisualShaderNodeIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

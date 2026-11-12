@@ -60,6 +60,8 @@ OpenXRInterface
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                                                | :ref:`get_action_sets<class_OpenXRInterface_method_get_action_sets>`\ (\ ) |const|                                                                                                                                            |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>`         | :ref:`get_active_view_configuration<class_OpenXRInterface_method_get_active_view_configuration>`\ (\ ) |const|                                                                                                                |
+   +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                                                | :ref:`get_available_display_refresh_rates<class_OpenXRInterface_method_get_available_display_refresh_rates>`\ (\ ) |const|                                                                                                    |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector3<class_Vector3>`                                            | :ref:`get_hand_joint_angular_velocity<class_OpenXRInterface_method_get_hand_joint_angular_velocity>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`, joint\: :ref:`HandJoints<enum_OpenXRInterface_HandJoints>`\ ) |const| |
@@ -77,6 +79,8 @@ OpenXRInterface
    | :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>`         | :ref:`get_hand_tracking_source<class_OpenXRInterface_method_get_hand_tracking_source>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const|                                                                           |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>`             | :ref:`get_motion_range<class_OpenXRInterface_method_get_motion_range>`\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const|                                                                                           |
+   +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                            | :ref:`get_recommended_target_size<class_OpenXRInterface_method_get_recommended_target_size>`\ (\ ) |const|                                                                                                                    |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`SessionState<enum_OpenXRInterface_SessionState>`                   | :ref:`get_session_state<class_OpenXRInterface_method_get_session_state>`\ (\ )                                                                                                                                                |
    +--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -319,7 +323,7 @@ OpenXR готовий розпочати наш сеанс. При перехо�
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_FOCUSED** = ``5``
 
-Програма синхронізувала свій цикл кадрів із середовищем виконання, ми виводимо вивід користувачеві та отримуємо вхідний сигнал XR. :ref:`session_focused<class_OpenXRInterface_signal_session_focused>` випромінюється, коли ми переходимо в цей стан.
+Програма синхронізувала свій цикл кадрів із середовищем виконання, ми виводимо вивід користувачеві та отримуємо вхідний сигнал XR. :ref:`session_focussed<class_OpenXRInterface_signal_session_focussed>` випромінюється, коли ми переходимо в цей стан.
 
 \ **Примітка:** Це стан, у якому буде OpenXR, коли користувач зможе повноцінно взаємодіяти з вашою грою.
 
@@ -346,6 +350,56 @@ OpenXR готовий розпочати наш сеанс. При перехо�
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_EXITING** = ``8``
 
 Екземпляр OpenXR ось-ось буде знищено, і ми виходимо з програми. При переході в цей стан випромінюється сигнал :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_OpenXRInterface_ViewConfiguration:
+
+.. rst-class:: classref-enumeration
+
+enum **ViewConfiguration**: :ref:`🔗<enum_OpenXRInterface_ViewConfiguration>`
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_MONO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_MONO** = ``0``
+
+Our XR output configuration is monoscopic.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_STEREO:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_STEREO** = ``1``
+
+Our XR output configuration is stereoscopic.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_STEREO_WITH_INSET:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_STEREO_WITH_INSET** = ``2``
+
+Our XR output configuration is stereoscopic with an additional foveated inset render.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_UNSET:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_UNSET** = ``254``
+
+Our XR output configuration has not yet been determined.
+
+.. _class_OpenXRInterface_constant_VIEW_CONFIGURATION_UNKNOWN:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **VIEW_CONFIGURATION_UNKNOWN** = ``255``
+
+Our XR output configuration is unknown.
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +1020,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 
 Мінімальний радіус навколо вогнища, де повна якість гарантована, якщо VRS використовується як відсоток розміру екрану.
 
-\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport. VRS_XR<class_Viewport_constant_ VRS_XR>`.
+\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -985,7 +1039,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 
 Потужність використовується для розрахунку карти щільності VRS. Чим більше це значення, тим більш помітні VRS. Це покращує продуктивність за вартістю якості.
 
-\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport. VRS_XR<class_Viewport_constant_ VRS_XR>`.
+\ **Примітка:** Мобільні та переадресні + рендерери тільки. Потрібні :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` бути встановленими на :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1003,6 +1057,20 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 :ref:`Array<class_Array>` **get_action_sets**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_action_sets>`
 
 Повертає список наборів дій, зареєстрованих Godot (завантажено з карти дій на runtime).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRInterface_method_get_active_view_configuration:
+
+.. rst-class:: classref-method
+
+:ref:`ViewConfiguration<enum_OpenXRInterface_ViewConfiguration>` **get_active_view_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_active_view_configuration>`
+
+Gets the active view configuration.
+
+\ **Note:** This will only return a valid value after OpenXR is initialized.
 
 .. rst-class:: classref-item-separator
 
@@ -1125,6 +1193,20 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 :ref:`HandMotionRange<enum_OpenXRInterface_HandMotionRange>` **get_motion_range**\ (\ hand\: :ref:`Hand<enum_OpenXRInterface_Hand>`\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_motion_range>`
 
 Якщо підтриманий ручний відстеження і діапазон руху, отримує в даний час налаштований діапазон руху для ``hand``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRInterface_method_get_recommended_target_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_recommended_target_size**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_recommended_target_size>`
+
+Returns the recommended render target size from the OpenXR runtime.
+
+This may not match the current render target size returned by :ref:`XRInterface.get_render_target_size()<class_XRInterface_method_get_render_target_size>`.
 
 .. rst-class:: classref-item-separator
 

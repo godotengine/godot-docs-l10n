@@ -118,6 +118,8 @@ Vector2
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2<class_Vector2>` | :ref:`from_angle<class_Vector2_method_from_angle>`\ (\ angle\: :ref:`float<class_float>`\ ) |static|                                                                                                                                                                                                                                                             |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`inverse<class_Vector2_method_inverse>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                       |
+   +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_equal_approx<class_Vector2_method_is_equal_approx>`\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const|                                                                                                                                                                                                                                                   |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`is_finite<class_Vector2_method_is_finite>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                   |
@@ -570,7 +572,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate>`
 
-返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -582,9 +584,9 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate_in_time>`
 
-回傳該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控點。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
-通過使用時間值，可以比 :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` 進行更平滑的插值。
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector2_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -675,6 +677,18 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
     print(Vector2.from_angle(PI / 2)) # 輸出 (0.0, 1.0)
 
 \ **注意：**\ 回傳的 **Vector2** 的長度\ *約等於* ``1.0``\ ，由於浮點數精度問題，不保證精確等於 ``1.0``\ 。如果需要單位向量，請呼叫回傳的 **Vector2** 的 :ref:`normalized()<class_Vector2_method_normalized>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Vector2_method_inverse:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **inverse**\ (\ ) |const| :ref:`🔗<class_Vector2_method_inverse>`
+
+Returns the inverse of the vector. This is the same as ``Vector2(1.0 / v.x, 1.0 / v.y)``.
 
 .. rst-class:: classref-item-separator
 

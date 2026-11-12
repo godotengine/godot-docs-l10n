@@ -120,7 +120,7 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_DEFAULT** = ``-1``
 
-Inicia un archivo con el nivel de compresión predeterminado de Deflate (``6``). Este es un buen equilibrio entre velocidad y tamaño de archivo.
+Inicia un archivo con el nivel de compresión predeterminado de Deflate (\ ``6``). Este es un buen equilibrio entre velocidad y tamaño de archivo.
 
 .. _class_ZIPPacker_constant_COMPRESSION_NONE:
 
@@ -136,7 +136,7 @@ Inicia un archivo sin compresión. Este modo de compresión, también conocido c
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_FAST** = ``1``
 
-Inicia un archivo con el nivel de compresión Deflate más rápido (``1``). Esto permite una compresión rápida, pero resulta en archivos de mayor tamaño que :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. La velocidad de descompresión generalmente no se ve afectada por el nivel de compresión seleccionado.
+Inicia un archivo con el nivel de compresión Deflate más rápido (\ ``1``). Esto permite una compresión rápida, pero resulta en archivos de mayor tamaño que :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. La velocidad de descompresión generalmente no se ve afectada por el nivel de compresión seleccionado.
 
 .. _class_ZIPPacker_constant_COMPRESSION_BEST:
 
@@ -144,7 +144,7 @@ Inicia un archivo con el nivel de compresión Deflate más rápido (``1``). Esto
 
 :ref:`CompressionLevel<enum_ZIPPacker_CompressionLevel>` **COMPRESSION_BEST** = ``9``
 
-Inicia un archivo con el mejor nivel de compresión de Deflate (``9``). Esto es lento de comprimir, pero resulta en archivos más pequeños que :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. La velocidad de descompresión generalmente no se ve afectada por el nivel de compresión seleccionado.
+Inicia un archivo con el mejor nivel de compresión de Deflate (\ ``9``). Esto es lento de comprimir, pero resulta en archivos más pequeños que :ref:`COMPRESSION_DEFAULT<class_ZIPPacker_constant_COMPRESSION_DEFAULT>`. La velocidad de descompresión generalmente no se ve afectada por el nivel de compresión seleccionado.
 
 .. rst-class:: classref-section-separator
 

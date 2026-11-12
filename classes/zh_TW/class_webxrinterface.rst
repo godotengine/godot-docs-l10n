@@ -128,6 +128,8 @@ WebXR 支援範圍廣泛的裝置，從功能強大的裝置（如 Valve Index�
    :widths: auto
 
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`     | :ref:`disable_webxr_layers<class_WebXRInterface_property_disable_webxr_layers>`                       |
+   +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`enabled_features<class_WebXRInterface_property_enabled_features>`                               |
    +-----------------------------+-------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>` | :ref:`optional_features<class_WebXRInterface_property_optional_features>`                             |
@@ -406,6 +408,27 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 屬性說明
 --------
 
+.. _class_WebXRInterface_property_disable_webxr_layers:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **disable_webxr_layers** :ref:`🔗<class_WebXRInterface_property_disable_webxr_layers>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_disable_webxr_layers**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_disable_webxr_layers**\ (\ )
+
+If ``true``, the WebXR Layers API won't be used even when the browser supports it.
+
+Godot falls back to this mode automatically when the browser doesn't support WebXR Layers and the polyfill isn't in use.
+
+This doesn't have any effect on the interface when already initialized.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_WebXRInterface_property_enabled_features:
 
 .. rst-class:: classref-property
@@ -416,11 +439,11 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 
 - :ref:`String<class_String>` **get_enabled_features**\ (\ )
 
-設定 WebXR 會話時通過 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 成功啟用的功能的逗號分隔清單。
+A comma-separated list of features that were successfully enabled by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-這可能包括通過設定 :ref:`required_features<class_WebXRInterface_property_required_features>` 和 :ref:`optional_features<class_WebXRInterface_property_optional_features>` 請求的功能，並且僅在發出 :ref:`session_started<class_WebXRInterface_signal_session_started>` 後可用。
+This may include features requested by setting :ref:`required_features<class_WebXRInterface_property_required_features>` and :ref:`optional_features<class_WebXRInterface_property_optional_features>`, and will only be available after :ref:`session_started<class_WebXRInterface_signal_session_started>` has been emitted.
 
-\ **注意：**\ 並非所有 web 瀏覽器都支援該功能，在這種情況下，它將是一個空字串。
+\ **Note:** This may not be supported by all web browsers, in which case it will be an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -437,13 +460,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_optional_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_optional_features**\ (\ )
 
-:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的可選功能清單。
+A comma-separated list of optional features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-如果使用者的瀏覽器或裝置，不支援給定的任一功能，初始化將繼續，但將無法使用所請求的功能。
+If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.
 
-這對已經初始化的介面沒有任何影響。
+This doesn't have any effect on the interface when already initialized.
 
-可能的值見 MDN 文件中的 `WebXR 的會話功能 <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__\ 。
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -478,13 +501,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_requested_reference_space_types**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_requested_reference_space_types**\ (\ )
 
-:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的參考空間型別清單。
+A comma-separated list of reference space types used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-按順序請求參考空間型別，將使用使用者裝置或瀏覽器支援的第一個。\ :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` 屬性包含最終選擇的參考空間型別。
+The reference space types are requested in order, and the first one supported by the user's device or browser will be used. The :ref:`reference_space_type<class_WebXRInterface_property_reference_space_type>` property contains the reference space type that was ultimately selected.
 
-這對已經初始化的介面沒有任何影響。
+This doesn't have any effect on the interface when already initialized.
 
-可能的值來自 `WebXR 的 XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__\ 。如果想要使用特定的參考空間型別，則它必須列在 :ref:`required_features<class_WebXRInterface_property_required_features>` 或 :ref:`optional_features<class_WebXRInterface_property_optional_features>` 中。
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 .. rst-class:: classref-item-separator
 
@@ -501,13 +524,13 @@ enum **TargetRayMode**: :ref:`🔗<enum_WebXRInterface_TargetRayMode>`
 - |void| **set_required_features**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_required_features**\ (\ )
 
-:ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在設定 WebXR 會話時使用的以逗號分隔的所需功能清單。
+A comma-separated list of required features used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
 
-如果使用者的瀏覽器或裝置不支援給定的任一功能，則初始化將失敗併發出 :ref:`session_failed<class_WebXRInterface_signal_session_failed>` 。
+If a user's browser or device doesn't support one of the given features, initialization will fail and :ref:`session_failed<class_WebXRInterface_signal_session_failed>` will be emitted.
 
-這對已經初始化的介面沒有任何影響。
+This doesn't have any effect on the interface when already initialized.
 
-可能的值見 MDN 文件中的 `WebXR 的會話功能 <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__\ 。
+See the MDN documentation on `WebXR's session features <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ for a list of possible values.
 
 .. rst-class:: classref-item-separator
 

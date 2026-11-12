@@ -14,15 +14,15 @@ HeightMapShape3D
 Описание
 ----------------
 
-Трехмерная карта высот, предназначенная для использования в физике в качестве формы для :ref:`CollisionShape3D<class_CollisionShape3D>`. Этот тип чаще всего используется для ландшафта с вершинами, расположенными в сетке фиксированной ширины.
+A 3D heightmap shape, intended for use in physics to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. This type is most commonly used for terrain with vertices placed in a fixed-width grid.
 
-Карта высот представлена в виде двумерной сетки значений высот, которые представляют положение точек сетки по оси Y. Точки сетки расположены на расстоянии 1 единицы друг от друга по осям X и Z, а сетка центрирована в начале координат узла :ref:`CollisionShape3D<class_CollisionShape3D>`. Внутри каждый квадрат сетки разделен на два треугольника.
+The heightmap is represented as a 2D grid of height values, which represent the position of grid points on the Y axis. Grid points are spaced 1 unit apart on the X and Z axes, and the grid is centered on the origin of the :ref:`CollisionShape3D<class_CollisionShape3D>` node. Internally, each grid square is divided into two triangles.
 
-Из-за особенностей карты высот ее нельзя использовать для моделирования нависаний или пещер, что потребовало бы наличия нескольких вершин в одном и том же вертикальном положении. Проемы можно проделать через столкновение, присвоив :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` высоте нужных вершин (это поддерживается как в GodotPhysics3D, так и в Jolt Physics). Затем можно вставлять сетки с собственными отдельными коллизиями для создания нависающих элементов, пещер и так далее.
+Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` to the height of the desired vertices. You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
 
-\ **Производительность:** **HeightMapShape3D** быстрее проверяет коллизии, чем :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, но значительно медленнее, чем примитивные формы, такие как :ref:`BoxShape3D<class_BoxShape3D>`.
+\ **Performance:** **HeightMapShape3D** is faster to check collisions against than :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is significantly slower than primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`.
 
-Форму коллизии карты высот также можно создать, используя ссылку на :ref:`Image<class_Image>`:
+A heightmap collision shape can also be built by using an :ref:`Image<class_Image>` reference:
 
 
 .. tabs::
@@ -40,7 +40,7 @@ HeightMapShape3D
 
 
 
-\ **Примечание:** Если вам нужно использовать интервал, отличный от 1 единицы, вы можете настроить :ref:`Node3D.scale<class_Node3D_property_scale>` фигуры. Однако имейте в виду, что GodotPhysics3D не поддерживает неравномерное масштабирование: вам потребуется масштабировать ось Y на ту же величину, что и оси X и Z, а это значит, что значения в :ref:`map_data<class_HeightMapShape3D_property_map_data>` должны быть предварительно масштабированы на величину, обратную этому масштабу. Также обратите внимание, что GodotPhysics3D вообще не поддерживает масштабирование для динамических тел (то есть, незамороженных узлов :ref:`RigidBody3D<class_RigidBody3D>`); чтобы использовать масштабированный **HeightMapShape3D** с ними, вам потребуется использовать Jolt Physics.
+\ **Note:** If you need to use a spacing different than 1 unit, you can adjust the :ref:`Node3D.scale<class_Node3D_property_scale>` of the shape. However, keep in mind that GodotPhysics3D does not support non-uniform scaling: you'll need to scale the Y axis by the same amount as the X and Z axes, which means the values in :ref:`map_data<class_HeightMapShape3D_property_map_data>` will need to be pre-scaled by the inverse of that scale. Also note that GodotPhysics3D does not support scaling at all for dynamic bodies (that is, non-frozen :ref:`RigidBody3D<class_RigidBody3D>` nodes); to use a scaled **HeightMapShape3D** with those, you will need to use Jolt Physics.
 
 .. rst-class:: classref-reftable-group
 
@@ -96,7 +96,11 @@ HeightMapShape3D
 
 Данные карты высот. Размер массива должен быть равен :ref:`map_width<class_HeightMapShape3D_property_map_width>` умноженному на :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
 .. rst-class:: classref-item-separator
 

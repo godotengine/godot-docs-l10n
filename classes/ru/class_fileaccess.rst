@@ -835,9 +835,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`String<class_String>` **get_line**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_line>`
 
-Возвращает следующую строку файла как :ref:`String<class_String>`. Возвращаемая строка не содержит символов перевода строки (``\n``) или возврата каретки (``\r``), но содержит любые другие начальные или конечные пробелы. Это перемещает файловый курсор в положение после символа перевода строки в конце строки.
+Returns the next line of the file as a :ref:`String<class_String>`. The returned string doesn't include newline (\ ``\n``) or carriage return (\ ``\r``) characters, but does include any other leading or trailing whitespace. This advances the file cursor to after the newline character at the end of the line.
 
-Текст интерпретируется как текст в кодировке UTF-8.
+Text is interpreted as being UTF-8 encoded.
 
 .. rst-class:: classref-item-separator
 
@@ -1408,9 +1408,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`bool<class_bool>` **store_line**\ (\ line\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_line>`
 
-Сохраняет в файле ``line``, за которым следует символ новой строки (``\n``), кодируя текст в формате UTF-8. Это перемещает файловый курсор на длину строки после символа новой строки. Количество записанных байтов зависит от количества байтов в кодировке UTF-8, которое может отличаться от :ref:`String.length()<class_String_method_length>`, который подсчитывает количество кодовых точек UTF-32. Возвращает ``true`` в случае успешного выполнения операции.
+Stores ``line`` in the file followed by a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the line, after the newline character. The amount of bytes written depends on the UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **Примечание:** В случае ошибки результирующее значение индикатора позиции файла не определено.
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,11 +1452,11 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`bool<class_bool>` **store_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_string>`
 
-Сохраняет ``string`` в файле без символа новой строки (``\n``), кодируя текст в формате UTF-8. Это перемещает курсор файла на длину строки в байтах в кодировке UTF-8, которая может отличаться от :ref:`String.length()<class_String_method_length>`, который подсчитывает количество кодовых точек UTF-32. Возвращает ``true`` в случае успешного выполнения операции.
+Stores ``string`` in the file without a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the string in UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **Примечание:** Этот метод предназначен для записи текстовых файлов. Строка хранится в виде буфера в кодировке UTF-8 без указания длины строки и завершающего нуля, что затрудняет её обратную загрузку. Если вы хотите сохранить извлекаемую строку в двоичном файле, рассмотрите возможность использования :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`. Для извлечения строк из текстового файла можно использовать метод ``get_buffer(length).get_string_from_utf8()`` (если известна длина) или :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
+\ **Note:** This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>` instead. For retrieving strings from a text file, you can use ``get_buffer(length).get_string_from_utf8()`` (if you know the length) or :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
 
-\ **Примечание:** В случае ошибки результирующее значение индикатора позиции файла не определено.
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 

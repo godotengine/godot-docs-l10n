@@ -14,45 +14,45 @@ Clase auxiliar para crear y analizar datos JSON.
 Descripción
 ----------------------
 
-La clase **JSON** permite que todos los tipos de datos se conviertan a y desde una string JSON. Esto es útil para serializar datos, por ejemplo, para guardar en un archivo o enviar a través de la red.
+The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
 
-\ :ref:`stringify()<class_JSON_method_stringify>` se usa para convertir cualquier tipo de dato en una string JSON.
+\ :ref:`stringify()<class_JSON_method_stringify>` is used to convert any data type into a JSON string.
 
-\ :ref:`parse()<class_JSON_method_parse>` se usa para convertir cualquier dato JSON existente en un :ref:`Variant<class_Variant>` que se pueda usar dentro de Godot. Si se parsea con éxito, usa :ref:`data<class_JSON_property_data>` para recuperar el :ref:`Variant<class_Variant>`, y usa :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` para comprobar si el tipo del Variant es el que esperas. Los objetos JSON se convierten en un :ref:`Dictionary<class_Dictionary>`, pero los datos JSON se pueden usar para almacenar :ref:`Array<class_Array>`\ s, números, :ref:`String<class_String>`\ s e incluso simplemente un booleano.
+\ :ref:`parse()<class_JSON_method_parse>` is used to convert any existing JSON data into a :ref:`Variant<class_Variant>` that can be used within Godot. If successfully parsed, use :ref:`data<class_JSON_property_data>` to retrieve the :ref:`Variant<class_Variant>`, and use :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` to check if the Variant's type is what you expect. JSON Objects are converted into a :ref:`Dictionary<class_Dictionary>`, but JSON data can be used to store :ref:`Array<class_Array>`\ s, numbers, :ref:`String<class_String>`\ s and even just a boolean.
 
 ::
 
     var data_to_send = ["a", "b", "c"]
     var json_string = JSON.stringify(data_to_send)
-    # Guardar datos
+    # Save data
     # ...
-    # Recuperar datos
+    # Retrieve data
     var json = JSON.new()
     var error = json.parse(json_string)
     if error == OK:
         var data_received = json.data
         if typeof(data_received) == TYPE_ARRAY:
-            print(data_received) # Imprime el array.
+            print(data_received) # Prints the array.
         else:
-            print("Datos inesperados")
+            print("Unexpected data")
     else:
-        print("Error de análisis JSON: ", json.get_error_message(), " en ", json_string, " en la línea ", json.get_error_line())
+        print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
 
-Alternativamente, puedes parsear cadenas usando el método estático :ref:`parse_string()<class_JSON_method_parse_string>`, pero no maneja errores.
+Alternatively, you can parse strings using the static :ref:`parse_string()<class_JSON_method_parse_string>` method, but it doesn't handle errors.
 
 ::
 
-    var data = JSON.parse_string(json_string) # Devuelve null si el análisis falló.
+    var data = JSON.parse_string(json_string) # Returns null if parsing failed.
 
-\ **Nota:** Ambos métodos de análisis no cumplen completamente con la especificación JSON:
+\ **Note:** Both parse methods do not fully comply with the JSON specification:
 
-- Las comas finales en arrays u objetos se ignoran, en lugar de causar un error de análisis.
+- Trailing commas in arrays or objects are ignored, instead of causing a parser error.
 
-- Se aceptan caracteres de nueva línea y tabulación en literales de string, y se tratan como sus secuencias de escape correspondientes ``\n`` y ``\t``.
+- New line and tab characters are accepted in string literals, and are treated like their corresponding escape sequences ``\n`` and ``\t``.
 
-- Los números se parsean usando :ref:`String.to_float()<class_String_method_to_float>`, que es generalmente más laxo que la especificación JSON.
+- Numbers are parsed using :ref:`String.to_float()<class_String_method_to_float>` which is generally more lax than the JSON specification.
 
-- Ciertos errores, como secuencias Unicode inválidas, no causan un error de análisis. En su lugar, la string se limpia y se registra un error en la consola.
+- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleaned up and an error is logged to the console.
 
 .. rst-class:: classref-reftable-group
 
@@ -216,24 +216,24 @@ Intenta analizar la ``json_string`` proporcionada y devuelve los datos analizado
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Convierte una variable :ref:`Variant<class_Variant>` a texto JSON y devuelve el resultado. Útil para serializar datos para almacenar o enviar a través de la red.
+Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
 
-\ **Nota:** La especificación JSON no define tipos enteros o floats, sino solo un tipo *número*. Por lo tanto, convertir una Variant a texto JSON convertirá todos los valores numéricos a tipos :ref:`float<class_float>`.
+If ``sort_keys`` is ``true``, the keys of any :ref:`Dictionary<class_Dictionary>`\ s are sorted alphabetically when converting to JSON. If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
 
-\ **Nota:** Si ``full_precision`` es ``true``, al convertir floats a string, los dígitos no fiables se convierten a string además de los dígitos fiables para garantizar una decodificación exacta.
+\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
 
-El parámetro ``indent`` controla si y cómo se indenta algo; su contenido se utilizará donde deba haber una indentación en la salida. Incluso espacios como ``"   "`` funcionarán. ``\t`` y ``\n`` también pueden usarse para una indentación de tabulación, o para hacer un salto de línea para cada indentación respectivamente.
+The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively. If set to an empty string, the JSON will be on a single line with no spacing, which allows for smaller file sizes.
 
-\ **Advertencia:** Los números no finitos no son compatibles con JSON. Cualquier ocurrencia de :ref:`@GDScript.INF<class_@GDScript_constant_INF>` será reemplazada por ``1e99999``, y :ref:`@GDScript.INF<class_@GDScript_constant_INF>` negativo será reemplazado por ``-1e99999``, pero la mayoría de los analizadores JSON los interpretarán correctamente como infinito. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` será reemplazado por ``null``, y no se interpretará como NaN en los analizadores JSON. Si esperas números no finitos, considera pasar tus datos por :ref:`from_native()<class_JSON_method_from_native>` primero.
+\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
 
-\ **Ejemplo de salida:**\ 
+\ **Example output:**\ 
 
 ::
 
-    ## JSON.stringify(my_dictionary)
+    ## JSON.stringify(my_dictionary, "", false)
     {"name":"my_dictionary","version":"1.0.0","entities":[{"name":"entity_0","value":"value_0"},{"name":"entity_1","value":"value_1"}]}
 
-    ## JSON.stringify(my_dictionary, "\t")
+    ## JSON.stringify(my_dictionary, "\t", false)
     {
         "name": "my_dictionary",
         "version": "1.0.0",
@@ -249,7 +249,7 @@ El parámetro ``indent`` controla si y cómo se indenta algo; su contenido se ut
         ]
     }
 
-    ## JSON.stringify(my_dictionary, "...")
+    ## JSON.stringify(my_dictionary, "...", false)
     {
     ..."name": "my_dictionary",
     ..."version": "1.0.0",

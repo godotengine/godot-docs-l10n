@@ -135,7 +135,7 @@ NavigationLink2D
 
 Ця позиція буде шукати найближчий полігон в навігаційній сітці, щоб прикріпити до.
 
-Відстань посилання буде здійснюватися за допомогою :ref:`NavigationServer2D.map_set_connection_radius()<class_NavigationServer2D_method_map_set_connection_radius>`.
+Відстань посилання буде здійснюватися за допомогою :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ NavigationLink2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-При дотриманні цього посилання з іншої локальної навігаційної сітки, значення :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` додається до дистанції для визначення найкоротшого шляху.
+When pathfinding enters this link from another region's navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ NavigationLink2D
 
 Ця позиція буде шукати найближчий полігон в навігаційній сітці, щоб прикріпити до.
 
-Відстань посилання буде здійснюватися за допомогою :ref:`NavigationServer2D.map_set_connection_radius()<class_NavigationServer2D_method_map_set_connection_radius>`.
+Відстань посилання буде здійснюватися за допомогою :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 

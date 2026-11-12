@@ -468,9 +468,9 @@ Restituisce quanti elementi sono presenti nella cronologia.
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-Ottiene la versione. Ogni volta che viene compiuta una nuova azione, il numero di versione di **UndoRedo** viene incrementato automaticamente.
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-Questo è utile soprattutto per controllare se qualcosa è cambiato rispetto a una versione salvata.
+This is useful mostly to check if something changed from a saved version. The initial version is ``1``.
 
 .. rst-class:: classref-item-separator
 

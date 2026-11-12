@@ -136,7 +136,7 @@ Se ``true``, ogni valore di profondità generato sarà compensato di una certa q
 - |void| **set_depth_bias_slope_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_bias_slope_factor**\ (\ )
 
-Una scala costante applicata alla pendenza della profondità di ogni poligono. Applicata prima di :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
+A constant scale applied to the slope of each polygon's depth. Applied before :ref:`depth_bias_constant_factor<class_RDPipelineRasterizationState_property_depth_bias_constant_factor>`.
 
 .. rst-class:: classref-item-separator
 

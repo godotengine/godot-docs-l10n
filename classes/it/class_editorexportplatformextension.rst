@@ -239,7 +239,7 @@ Restituisce il protocollo utilizzato per il debug remoto. L'implementazione pred
 
 :ref:`String<class_String>` **_get_device_architecture**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_device_architecture>`
 
-Restituisce l'architettura del dispositivo per la distribuzione con un clic.
+Returns device architecture for remote deploy.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Restituisce il nome della piattaforma d'esportazione.
 
 :ref:`Texture2D<class_Texture2D>` **_get_option_icon**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_icon>`
 
-Restituisce l'icona della voce per il dispositivo ``device`` nel menu di distribuzione con un clic. L'icona dovrebbe essere 16×16 pixel, adattata alla scala attuale dell'editor (vedi :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the item icon for the specified ``device`` in the remote deploy menu. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Restituisce l'icona della voce per il dispositivo ``device`` nel menu di distrib
 
 :ref:`String<class_String>` **_get_option_label**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_label>`
 
-Restituisce l'etichetta della voce nel menu di distribuzione con un clic per il dispositivo ``device``.
+Returns remote deploy menu item label for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Restituisce l'etichetta della voce nel menu di distribuzione con un clic per il 
 
 :ref:`String<class_String>` **_get_option_tooltip**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_tooltip>`
 
-Restituisce il suggerimento della voce nel menu di distribuzione con un clic per il dispositivo ``device``.
+Returns remote deploy menu item tooltip for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Restituisce il suggerimento della voce nel menu di distribuzione con un clic per
 
 :ref:`int<class_int>` **_get_options_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_count>`
 
-Restituisce il numero di dispositivi (o altre opzioni) disponibili nel menu di distribuzione con un clic.
+Returns the number of devices (or other options) available in the remote deploy menu.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Restituisce il numero di dispositivi (o altre opzioni) disponibili nel menu di d
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-Restituisce il suggerimento del pulsante del menu di distribuzione con un clic.
+Returns tooltip of the remote deploy menu button.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Restituisce un array di funzionalità specifiche della piattaforma per il ``pres
 
 :ref:`Texture2D<class_Texture2D>` **_get_run_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_run_icon>`
 
-Restituisce l'icona per il menu di distribuzione con un clic. L'icona dovrebbe essere 16×16, adattata alla scala attuale dell'editor (vedi :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
+Returns the icon of the remote deploy menu button. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Restituisce ``true`` se il file specificato è un eseguibile valido (eseguibile 
 
 :ref:`bool<class_bool>` **_poll_export**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__poll_export>`
 
-Restituisce ``true`` se le opzioni di distribuzione con un clic sono cambiate e l'interfaccia dell'editor si dovrebbe aggiornare.
+Returns ``true`` if remote deploy options are changed and editor interface should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ Restituisce ``true`` se le opzioni di distribuzione con un clic sono cambiate e 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_run**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, device\: :ref:`int<class_int>`, debug_flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__run>`
 
-Questo metodo viene chiamato quando viene selezionata l'opzione per il dispositivo ``device`` nel menu di distribuzione con un clic.
+This method is called when ``device`` remote deploy menu option is selected.
 
-L'implementazione dovrebbe esportare il progetto in una posizione temporanea, caricarlo ed eseguirlo sul dispositivo ``device`` oppure eseguire un'altra azione associata alla voce del menu.
+Implementation should export project to a temporary location, upload and run it on the specific ``device``, or perform another action associated with the menu item.
 
 .. rst-class:: classref-item-separator
 

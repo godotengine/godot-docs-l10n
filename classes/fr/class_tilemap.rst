@@ -1,14 +1,11 @@
 :github_url: hide
 
-.. meta::
-	:keywords: gridmap
-
 .. _class_TileMap:
 
 TileMap
 =======
 
-**Obsolète :** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the top-right corner and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
+**Obsolète :** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the toolbar and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
 
 **Hérite de :** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 

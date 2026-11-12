@@ -679,7 +679,7 @@ Non influisce sulla ricerca normale del percorso. Per modificare il raggio di ri
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-La quantità di semplificazione del percorso in unità mondiali.
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ Se impostato, viene richiesto un nuovo percorso di navigazione dalla posizione a
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evitamento delle collisioni, sono sicure rispetto ad altri agenti. Maggiore è il numero, più presto l'agente risponderà ad altri agenti, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ La quantità minima di tempo per cui le velocità di questo agente, calcolate co
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evitamento delle collisioni, sono sicure rispetto agli ostacoli di evitamento statici. Maggiore è il numero, più presto l'agente risponderà agli ostacoli di evitamento statici, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Restituisce se la maschera specificata di :ref:`avoidance_mask<class_NavigationA
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent2D_method_get_current_navigation_path>`
 
-Restituisce il percorso attuale di questo agente dall'inizio alla fine in coordinate globali. Il percorso si aggiorna solo quando la posizione di destinazione viene modificata o l'agente richiede di cambiare il percorso. L'array del percorso non si dovrebbe utilizzare nel movimento diretto del percorso, in quanto l'agente ha la sua logica interna del percorso che verrebbe danneggiata se si modifica manualmente l'array del percorso. Utilizza il metodo previsto :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` una volta per ogni frame di fisica per ricevere il punto successivo del percorso per il movimento dell'agente poiché tale funzione aggiorna anche la logica interna del percorso.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent2D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

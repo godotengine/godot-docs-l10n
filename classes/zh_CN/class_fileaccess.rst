@@ -835,9 +835,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`String<class_String>` **get_line**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_line>`
 
-以 :ref:`String<class_String>` 的形式返回文件中的下一行。返回的字符串不包含换行符（\ ``\n``\ ）和回车符（\ ``\r``\ ），但是会包含开头和结尾的其他空白字符。文件游标前进至行尾的换行符之后。
+Returns the next line of the file as a :ref:`String<class_String>`. The returned string doesn't include newline (\ ``\n``) or carriage return (\ ``\r``) characters, but does include any other leading or trailing whitespace. This advances the file cursor to after the newline character at the end of the line.
 
-文本按照 UTF-8 编码规则进行解析。
+Text is interpreted as being UTF-8 encoded.
 
 .. rst-class:: classref-item-separator
 
@@ -1408,9 +1408,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`bool<class_bool>` **store_line**\ (\ line\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_line>`
 
-将 ``line`` 存储到文件中，后跟一个换行符（\ ``\n``\ ），文本使用 UTF-8 编码。文件游标前进该行长度，至换行符后。写入的字节数取决于 UTF-8 编码后的字节，可能与 :ref:`String.length()<class_String_method_length>` 不同，后者计算的是 UTF-32 码位的数量。如果操作成功则返回 ``true``\ 。
+Stores ``line`` in the file followed by a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the line, after the newline character. The amount of bytes written depends on the UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **注意：**\ 出错时，文件位置标识符的取值不确定。
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,11 +1452,11 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`bool<class_bool>` **store_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_string>`
 
-将 ``string`` 存储到文件中，不带换行符（\ ``\n``\ ），文本使用 UTF-8 编码。文件游标的前进量为 UTF-8 编码后的字节数，可能与 :ref:`String.length()<class_String_method_length>` 不同，后者计算的是 UTF-32 码位的数量。如果操作成功则返回 ``true``\ 。
+Stores ``string`` in the file without a newline character (\ ``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the string in UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
 
-\ **注意：**\ 该方法适用于写入文本文件。字符串以 UTF-8 编码的缓冲区形式存储，不带字符串长度，不以零结尾，加载并非易事。如果你想要在二进制文件中存储便于读取的字符串，请考虑改用 :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`\ 。从文本文件中读取字符串可以使用 ``get_buffer(length).get_string_from_utf8()``\ （前提是知道长度）或 :ref:`get_as_text()<class_FileAccess_method_get_as_text>`\ 。
+\ **Note:** This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>` instead. For retrieving strings from a text file, you can use ``get_buffer(length).get_string_from_utf8()`` (if you know the length) or :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
 
-\ **注意：**\ 出错时，文件位置标识符的取值不确定。
+\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
 .. rst-class:: classref-item-separator
 

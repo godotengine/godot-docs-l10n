@@ -16,7 +16,7 @@ Descrizione
 
 **VoxelGIData** contiene l'illuminazione globale precalcolata con voxel, per l'uso in un nodo :ref:`VoxelGI<class_VoxelGI>`. **VoxelGIData** offre anche varie proprietà per regolare l'aspetto finale dell'illuminazione globale. È possibile regolare queste proprietà in fase di esecuzione, senza dover precalcolare nuovamente il nodo :ref:`VoxelGI<class_VoxelGI>`.
 
-\ **Nota:** Per evitare che i file di scena basati su testo (``.tscn``) diventino troppo grandi, quindi lenti da caricare e salvare, salva un **VoxelGIData** sempre in un file di risorsa binaria esterna (``.res``)) invece di incorporarlo nella scena. Ciò può essere fatto cliccando sulla freccia a tendina accanto alla risorsa **VoxelGIData**, scegliendo **Modifica**, cliccando sull'icona del disco floppy nella parte superiore dell'ispettore e infine scegliendo **Salva come...**.
+\ **Nota:** Per evitare che i file di scena basati su testo (\ ``.tscn``) diventino troppo grandi, quindi lenti da caricare e salvare, salva un **VoxelGIData** sempre in un file di risorsa binaria esterna (\ ``.res``)) invece di incorporarlo nella scena. Ciò può essere fatto cliccando sulla freccia a tendina accanto alla risorsa **VoxelGIData**, scegliendo **Modifica**, cliccando sull'icona del disco floppy nella parte superiore dell'ispettore e infine scegliendo **Salva come...**.
 
 .. rst-class:: classref-introduction-group
 
@@ -110,7 +110,7 @@ Il bias di normali da utilizzare per l'illuminazione e i riflessi indiretti. I v
 - |void| **set_dynamic_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dynamic_range**\ (\ )
 
-La gamma dinamica da utilizzare (``1.0`` rappresenta una bassa gamma dinamica di luminosità della scena). I valori più elevati possono essere utilizzati per fornire un'illuminazione indiretta più luminosa, al costo di banding dei colori più pronunciato in aree scure (sia per l'illuminazione indiretta sia per i riflessi). Per evitare il banding dei colori, si consiglia di utilizzare il valore più basso che non risulta in un ritaglio di luce notabile.
+La gamma dinamica da utilizzare (\ ``1.0`` rappresenta una bassa gamma dinamica di luminosità della scena). I valori più elevati possono essere utilizzati per fornire un'illuminazione indiretta più luminosa, al costo di banding dei colori più pronunciato in aree scure (sia per l'illuminazione indiretta sia per i riflessi). Per evitare il banding dei colori, si consiglia di utilizzare il valore più basso che non risulta in un ritaglio di luce notabile.
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ Description
 
 Un contrôle utilisé pour la lecture des ressources :ref:`VideoStream<class_VideoStream>`.
 
-Les formats vidéo supportés sont `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) et tout format exposé par un plugin GDExtension.
+Les formats vidéo supportés sont `Ogg Theora <https://www.theora.org/>`__ (\ ``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) et tout format exposé par un plugin GDExtension.
 
 \ **Attention :** Sur le Web, la lecture vidéo *se produira* mal en raison de l'absence d'optimisations d'assemblies spécifiques à l'architecture.
 
@@ -348,7 +348,9 @@ Renvoie le nom du flux vidéo, ou ``"<No Stream>"`` si aucun flux vidéo n'est a
 
 :ref:`Texture2D<class_Texture2D>` **get_video_texture**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_video_texture>`
 
-Renvoie la trame actuelle en une :ref:`Texture<class_Texture>`.
+Returns the video playback texture.
+
+The texture will be continually updated as the video plays, so call :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` to get a still frame.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +376,9 @@ Renvoie ``true`` si la vidéo joue.
 
 |void| **play**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_play>`
 
-Commence la lecture vidéo dès le début. Si la vidéo est en pause, cela ne la fera pas reprendre.
+Starts the video playback from the beginning, unless the video is already playing.
+
+\ **Note:** If the video is paused, this will not unpause the video.
 
 .. rst-class:: classref-item-separator
 

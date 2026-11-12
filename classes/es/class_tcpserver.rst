@@ -14,9 +14,9 @@ Un servidor TCP.
 Descripción
 ----------------------
 
-Un servidor TCP. Escucha las conexiones en un puerto y devuelve un :ref:`StreamPeerTCP<class_StreamPeerTCP>` cuando recibe una conexión entrante.
+A TCP server. Listens to connections on a port and returns a :ref:`StreamPeerTCP<class_StreamPeerTCP>` when it gets an incoming connection.
 
-\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el preajuste de exportación de Android antes de exportar el proyecto o usar el despliegue con un solo clic. De lo contrario, cualquier tipo de comunicación de red será bloqueada por Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

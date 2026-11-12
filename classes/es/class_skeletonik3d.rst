@@ -210,7 +210,7 @@ El nombre del hueso raíz actual, el primer hueso de la cadena de IK.
 - |void| **set_target_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_target_transform**\ (\ )
 
-Primer objetivo de la cadena de IK donde se coloca el hueso de la punta y, si :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` es ``true``, cómo se rota el hueso de la punta. Si hay una ruta de :ref:`target_node<class_SkeletonIK3D_property_target_node>` disponible, se utiliza la transformación del nodo en su lugar y se ignora esta propiedad.
+The first target of the IK chain where the tip bone is placed and, if :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` is ``true``, how the tip bone is rotated. If :ref:`target_node<class_SkeletonIK3D_property_target_node>` points to a valid node, that node's transform is used instead and this property is ignored.
 
 .. rst-class:: classref-item-separator
 

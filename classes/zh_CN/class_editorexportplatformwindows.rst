@@ -88,6 +88,8 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`debug/export_console_wrapper<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`debug/export_debug_symbols<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`shader_baker/enabled<class_EditorExportPlatformWindows_property_shader_baker/enabled>`                                       |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`ssh_remote_deploy/cleanup_script<class_EditorExportPlatformWindows_property_ssh_remote_deploy/cleanup_script>`               |
@@ -320,7 +322,11 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 要传给代码签名工具的额外命令行参数的数据。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
 
-**Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
+
+
+.. classref_note::
+
+    The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -459,6 +465,22 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
 如果为 ``true``\ ，则会在导出主可执行文件的同时导出一个控制台封装可执行文件，能够在运行项目时启用控制台输出。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformWindows_property_debug/export_debug_symbols:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **debug/export_debug_symbols** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_debug_symbols>`
+
+If ``true``, a debug symbol file (\ ``.debugsymbols``) is exported alongside the main executable.
+
+\ **Note:** This requires a separate debug symbols file. This file must have the same name as the export template binary and an additional ``.debugsymbols`` extension, and must be present in the same directory as the export template binary, or in a ZIP archive with a ``.debugsymbols.zip`` extension.
+
+\ **Note:** If debug symbols are embedded in the export template binary, they will remain embedded in the exported project binary regardless of this option, so it should be disabled in that case.
 
 .. rst-class:: classref-item-separator
 

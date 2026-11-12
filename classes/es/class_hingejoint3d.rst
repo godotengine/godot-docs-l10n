@@ -7,14 +7,14 @@ HingeJoint3D
 
 **Hereda:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Una unión física que restringe la rotación de un cuerpo físico 3D alrededor de un eje con respecto a otro cuerpo físico.
+Una articulación física que restringe la rotación de un cuerpo físico 3D alrededor de un eje con respecto a otro cuerpo físico.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Una unión física que restringe la rotación de un cuerpo físico 3D alrededor de un eje con respecto a otro cuerpo físico. Por ejemplo, el Cuerpo A puede ser un :ref:`StaticBody3D<class_StaticBody3D>` que representa la bisagra de una puerta alrededor de la cual gira un :ref:`RigidBody3D<class_RigidBody3D>`.
+Una articulación física que restringe la rotación de un cuerpo físico 3D alrededor de un eje con respecto a otro cuerpo físico. Por ejemplo, el Cuerpo A puede ser un :ref:`StaticBody3D<class_StaticBody3D>` que representa la bisagra de una puerta alrededor de la cual gira un :ref:`RigidBody3D<class_RigidBody3D>`.
 
 .. rst-class:: classref-reftable-group
 

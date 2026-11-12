@@ -7,7 +7,7 @@ PanelContainer
 
 **继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
+**派生：** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`
 
 保证子控件在 :ref:`StyleBox<class_StyleBox>` 区域内的容器。
 

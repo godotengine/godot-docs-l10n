@@ -320,7 +320,7 @@ Constructs a **PackedVector3Array** як копія даної **PackedVector3Ar
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PackedVector3Array_method_insert>`
 
-Вставте новий елемент на даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (``idx == розмір()``).
+Вставте новий елемент на даній позиції в масиві. Посада повинна бути дійсна, або в кінці масиву (\ ``idx == розмір()``).
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Constructs a **PackedVector3Array** як копія даної **PackedVector3Ar
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector3Array_method_remove_at>`
 
-Видаляє елемент з масиву за індексом.
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

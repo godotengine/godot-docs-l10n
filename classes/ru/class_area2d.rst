@@ -450,9 +450,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-Расстояние, на котором сила гравитации равна :ref:`gravity<class_Area2D_property_gravity>`. Например, на планете радиусом 100 пикселей с поверхностной силой гравитации 4,0 px/s² установите :ref:`gravity<class_Area2D_property_gravity>` на 4,0, а единичное расстояние на 100,0. Сила гравитации будет уменьшаться в соответствии с законом обратных квадратов, поэтому в этом примере на расстоянии 200 пикселей от центра сила гравитации будет равна 1,0 px/s² (в два раза больше расстояния, 1/4 силы гравитации), на расстоянии 50 пикселей она будет равна 16,0 px/s² (в два раза больше расстояния, 4x силы гравитации) и т. д. 
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area2D_property_gravity>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the :ref:`gravity<class_Area2D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4× the gravity), and so on.
 
-Вышесказанное верно только в том случае, если единичное расстояние является положительным числом. Если установлено значение 0,0, сила гравитации будет постоянной независимо от расстояния.
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 

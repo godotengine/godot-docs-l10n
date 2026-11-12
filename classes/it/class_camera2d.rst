@@ -276,7 +276,7 @@ Se ``true``, la telecamera si muove solo quando raggiunge i margini di trascinam
 - |void| **set_drag_horizontal_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_horizontal_offset**\ (\ )
 
-Offset di trascinamento orizzontale relativo della telecamera tra i margini di trascinamento destro (``-1``) e sinistro (``1``).
+Offset di trascinamento orizzontale relativo della telecamera tra i margini di trascinamento destro (\ ``-1``) e sinistro (\ ``1``).
 
 \ **Nota:** Utilizzato per impostare l'offset di trascinamento orizzontale iniziale; determinare l'offset attuale; o forzare l'offset attuale. Non viene aggiornato automaticamente quando :ref:`drag_horizontal_enabled<class_Camera2D_property_drag_horizontal_enabled>` è ``true`` o i margini di trascinamento vengono modificati.
 
@@ -363,7 +363,7 @@ Se ``true``, la telecamera si muove solo quando raggiunge i margini di trascinam
 - |void| **set_drag_vertical_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_vertical_offset**\ (\ )
 
-Offset di trascinamento verticale relativo della telecamera tra i margini di trascinamento inferiore (``-1``) e superiore (``1``).
+Offset di trascinamento verticale relativo della telecamera tra i margini di trascinamento inferiore (\ ``-1``) e superiore (\ ``1``).
 
 \ **Nota:** Utilizzato per impostare l'offset di trascinamento verticale iniziale; determinare l'offset attuale; o forzare l'offset attuale. Non viene aggiornato automaticamente quando :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` è ``true`` o i margini di trascinamento vengono modificati.
 

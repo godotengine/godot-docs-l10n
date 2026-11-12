@@ -169,7 +169,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RG_HALF** = ``2``
 
-Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>` як половина точності плавок, і використовувати тільки червоні і зелені кольорові канали. Див. :ref:`Mesh. ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ ARRAY_CUSTOM_RG_HALF>`.
+Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>` як половина точності плавок, і використовувати тільки червоні і зелені кольорові канали. Див. :ref:`Mesh.ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`.
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA_HALF:
 
@@ -177,7 +177,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA_HALF** = ``3``
 
-Зберігати дані, передані в :ref:`set_custom()<class_SurfaceTool_method_set_custom>` як половина точності плавок і використовує всі кольорові канали. Див. :ref:`Mesh. ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ ARRAY_CUSTOM_RGBA_HALF>`.
+Зберігати дані, передані в :ref:`set_custom()<class_SurfaceTool_method_set_custom>` як половина точності плавок і використовує всі кольорові канали. Див. :ref:`Mesh.ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`.
 
 .. _class_SurfaceTool_constant_CUSTOM_R_FLOAT:
 
@@ -185,7 +185,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_R_FLOAT** = ``4``
 
-Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повно прецизійних плавок, і використовує тільки червоний колірний канал. Див. :ref:`Mesh. ARRAY_CUSTOM_R_FLOAT<class_Mesh_constant_ ARRAY_CUSTOM_R_FLOAT>`.
+Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повно прецизійних плавок, і використовує тільки червоний колірний канал. Див. :ref:`Mesh.ARRAY_CUSTOM_R_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_R_FLOAT>`.
 
 .. _class_SurfaceTool_constant_CUSTOM_RG_FLOAT:
 
@@ -193,7 +193,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RG_FLOAT** = ``5``
 
-Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повноточні плавки, і використовувати тільки червоні і зелені кольорові канали. Див. :ref:`Mesh. ARRAY_CUSTOM_RG_FLOAT<class_Mesh_constant_ ARRAY_CUSTOM_RG_FLOAT>`.
+Зберігати дані, передані до :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повноточні плавки, і використовувати тільки червоні і зелені кольорові канали. Див. :ref:`Mesh.ARRAY_CUSTOM_RG_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RG_FLOAT>`.
 
 .. _class_SurfaceTool_constant_CUSTOM_RGB_FLOAT:
 
@@ -201,7 +201,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGB_FLOAT** = ``6``
 
-Зберігати дані, передані в :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повноточні плавки, і використовувати тільки червоні, зелені і сині кольорові канали. Див. :ref:`Mesh. ARRAY_CUSTOM_RGB_FLOAT<class_Mesh_constant_ ARRAY_CUSTOM_RGB_FLOAT>`.
+Зберігати дані, передані в :ref:`set_custom()<class_SurfaceTool_method_set_custom>`, як повноточні плавки, і використовувати тільки червоні, зелені і сині кольорові канали. Див. :ref:`Mesh.ARRAY_CUSTOM_RGB_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RGB_FLOAT>`.
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA_FLOAT:
 
@@ -310,7 +310,7 @@ enum **SkinWeightCount**: :ref:`🔗<enum_SurfaceTool_SkinWeightCount>`
 
 |void| **begin**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`\ ) :ref:`🔗<class_SurfaceTool_method_begin>`
 
-Зателефонуйте перед додаванням будь-яких вершин. Примітивний тип як аргумент (наприклад, :ref:`Mesh. PRIMITIVE_TRIANGLES<class_Mesh_constant_ PRIMITIVE_TRIANGLES>`.
+Зателефонуйте перед додаванням будь-яких вершин. Примітивний тип як аргумент (наприклад, :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
 
 .. rst-class:: classref-item-separator
 

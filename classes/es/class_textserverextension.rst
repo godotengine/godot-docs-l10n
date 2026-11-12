@@ -299,6 +299,8 @@ Métodos
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`                              | :ref:`_font_supported_variation_list<class_TextServerExtension_private_method__font_supported_variation_list>`\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const|                                                                                                                                                                                                                                                         |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                          | :ref:`_font_validate<class_TextServerExtension_private_method__font_validate>`\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const|                                                                                                                                                                                                                                                                                         |
+   +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`_format_number<class_TextServerExtension_private_method__format_number>`\ (\ number\: :ref:`String<class_String>`, language\: :ref:`String<class_String>`\ ) |virtual| |const|                                                                                                                                                                                                                                             |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`_free_rid<class_TextServerExtension_private_method__free_rid>`\ (\ rid\: :ref:`RID<class_RID>`\ ) |virtual| |required|                                                                                                                                                                                                                                                                                                     |
@@ -308,6 +310,8 @@ Métodos
    | :ref:`Vector2<class_Vector2>`                                    | :ref:`_get_hex_code_box_size<class_TextServerExtension_private_method__get_hex_code_box_size>`\ (\ size\: :ref:`int<class_int>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                              |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`_get_name<class_TextServerExtension_private_method__get_name>`\ (\ ) |virtual| |required| |const|                                                                                                                                                                                                                                                                                                                          |
+   +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                      | :ref:`_get_short_name<class_TextServerExtension_private_method__get_short_name>`\ (\ ) |virtual| |const|                                                                                                                                                                                                                                                                                                                         |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>`                    | :ref:`_get_support_data<class_TextServerExtension_private_method__get_support_data>`\ (\ ) |virtual| |const|                                                                                                                                                                                                                                                                                                                     |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2169,6 +2173,18 @@ Devuelve el diccionario de las coordenadas de variación OpenType admitidas.
 
 ----
 
+.. _class_TextServerExtension_private_method__font_validate:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **_font_validate**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_validate>`
+
+Returns ``true`` if the font data is valid.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TextServerExtension_private_method__format_number:
 
 .. rst-class:: classref-method
@@ -2228,6 +2244,18 @@ Devuelve el tamaño del carácter de reemplazo (cuadro con el código hexadecima
 :ref:`String<class_String>` **_get_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__get_name>`
 
 Devuelve el nombre de la interfaz del servidor.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServerExtension_private_method__get_short_name:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **_get_short_name**\ (\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__get_short_name>`
+
+Returns the short name of the server interface. By convention, this should return a lowercase string that follows the ``snake_case`` naming scheme.
 
 .. rst-class:: classref-item-separator
 
@@ -2349,7 +2377,7 @@ Devuelve ``true`` si ``string`` es un identificador válido.
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/development/documentation/class_reference.html>`__!
 
 .. rst-class:: classref-item-separator
 

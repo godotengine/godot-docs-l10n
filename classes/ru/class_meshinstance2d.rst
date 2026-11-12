@@ -18,8 +18,6 @@ MeshInstance2D
 
 Если :ref:`Mesh<class_Mesh>` необходимо создать более тысячи раз близко друг к другу, рассмотрите возможность использования :ref:`MultiMesh<class_MultiMesh>` в :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`.
 
-
-
 \ **MeshInstance2D** можно создать из существующего :ref:`Sprite2D<class_Sprite2D>` с помощью инструмента на панели инструментов редактора. Выберите узел :ref:`Sprite2D<class_Sprite2D>`, затем выберите **Sprite2D > Преобразовать в MeshInstance2D** в верхней части области просмотра 2D-редактора.
 
 .. rst-class:: classref-introduction-group

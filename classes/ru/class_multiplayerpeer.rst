@@ -19,11 +19,11 @@ MultiplayerPeer
 Описание
 ----------------
 
-Управляет соединением с одним или несколькими удаленными узлами, выступающими в качестве сервера или клиента, и назначает каждому из них уникальные идентификаторы. См. также :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+Manages the connection with one or more remote peers acting as server or client and assigning unique IDs to each of them. See also :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-\ **Примечание:** Протокол :ref:`MultiplayerAPI<class_MultiplayerAPI>` является деталью реализации и не предназначен для использования серверами, отличными от Godot. Он может быть изменен без уведомления.
+\ **Note:** The :ref:`MultiplayerAPI<class_MultiplayerAPI>` protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **Примечание:** При экспорте в Android обязательно включите разрешение ``INTERNET`` в предустановке экспорта Android перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-introduction-group
 
@@ -246,7 +246,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 Канал, используемый для отправки пакетов. Многие сетевые API, такие как ENet и WebRTC, позволяют создавать несколько независимых каналов, которые ведут себя, в некотором роде, как отдельные соединения. Это означает, что надежные данные будут блокировать только доставку других пакетов по этому каналу, а упорядочивание будет осуществляться только в отношении канала, по которому отправляется пакет. Использование разных каналов для отправки **различных и независимых** обновлений состояния является распространенным способом оптимизации использования сети и уменьшения задержки в динамичных играх.
 
-\ **Примечание:** Канал по умолчанию (``0``) фактически работает как 3 отдельных канала (по одному для каждого :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`), так что :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` и :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` по умолчанию не взаимодействуют друг с другом. Обратитесь к документации конкретного сетевого API (например, ENet или WebRTC), чтобы узнать, как правильно настроить каналы.
+\ **Примечание:** Канал по умолчанию (\ ``0``) фактически работает как 3 отдельных канала (по одному для каждого :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`), так что :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` и :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` по умолчанию не взаимодействуют друг с другом. Обратитесь к документации конкретного сетевого API (например, ENet или WebRTC), чтобы узнать, как правильно настроить каналы.
 
 .. rst-class:: classref-item-separator
 

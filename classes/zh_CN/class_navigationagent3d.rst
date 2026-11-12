@@ -719,7 +719,7 @@ NavigationAgent3D
 - |void| **set_simplify_epsilon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_simplify_epsilon**\ (\ )
 
-以世界单位表示的路径简化量。
+The path simplification amount in world units.
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ NavigationAgent3D
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-考虑其他代理的前提下，该代理的速度的最短安全时间，这个速度是通过碰撞躲避算法计算的。数值越大，代理响应其他代理的速度就越快，但选择速度的自由度也就越小。太高的取值会大大降低代理的移动速度。必须为正数。
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ NavigationAgent3D
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-考虑静态避障障碍物的前提下，该代理的速度的最短安全时间，这个速度是通过碰撞躲避算法计算的。数值越大，代理响应静态避障障碍物的速度就越快，但选择速度的自由度也就越小。太高的取值会大大降低代理的移动速度。必须为正数。
+The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agent movement considerably. Must be positive.
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ NavigationAgent3D
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_current_navigation_path**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_current_navigation_path>`
 
-返回这个代理从起点到终点的当前路径，使用全局坐标。该路径只会在目标位置发生变化，或者代理要求重新计算路径时更新。路径数组不应用于直接路径移动，因为代理有自己的内部路径逻辑，手动更改路径数组可能会破坏该逻辑。每个物理帧上使用一次预期的 :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`\ ，来接收用于该代理移动的下一个路径点，因为该函数还会更新内部路径逻辑。
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` once every physics frame to receive the next path point for the agent's movement as this function also updates the internal path logic.
 
 .. rst-class:: classref-item-separator
 

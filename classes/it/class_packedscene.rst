@@ -41,7 +41,7 @@ Può servire per salvare un nodo in un file. Durante il salvataggio, il nodo e t
 
 
 
-\ **Esempio:** Salva un nodo con proprietari diversi: L'esempio seguente crea 3 oggetti: :ref:`Node2D<class_Node2D>` (``node``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) e :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``collision`` è un figlio di ``body`` che è un figlio di ``node``. Solo ``body`` è posseduto da ``node`` e :ref:`pack()<class_PackedScene_method_pack>` salverà quindi solo quei due nodi, ma non ``collision``.
+\ **Esempio:** Salva un nodo con proprietari diversi: L'esempio seguente crea 3 oggetti: :ref:`Node2D<class_Node2D>` (\ ``node``), :ref:`RigidBody2D<class_RigidBody2D>` (\ ``body``) e :ref:`CollisionObject2D<class_CollisionObject2D>` (\ ``collision``). ``collision`` è un figlio di ``body`` che è un figlio di ``node``. Solo ``body`` è posseduto da ``node`` e :ref:`pack()<class_PackedScene_method_pack>` salverà quindi solo quei due nodi, ma non ``collision``.
 
 
 .. tabs::

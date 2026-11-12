@@ -16,7 +16,7 @@ Descrizione
 
 I valori separati da virgole sono un formato per memorizzare tabelle in testo semplice. La semplicità del formato lo rende facile da modificare in qualsiasi editor di testo o di fogli di calcolo. Ciò lo rende una scelta comune per la localizzazione dei videogiochi.
 
-Nel file CSV utilizzato per la traduzione, la prima colonna contiene identificatori di stringa e la prima riga funge da intestazione. L'intestazione della prima colonna può contenere qualsiasi valore. Le intestazioni rimanenti indicano la lingua per quella colonna. Le colonne le cui intestazioni iniziano con un trattino basso (``_``) saranno ignorate.
+Nel file CSV utilizzato per la traduzione, la prima colonna contiene identificatori di stringa e la prima riga funge da intestazione. L'intestazione della prima colonna può contenere qualsiasi valore. Le intestazioni rimanenti indicano la lingua per quella colonna. Le colonne le cui intestazioni iniziano con un trattino basso (\ ``_``) saranno ignorate.
 
 \ **File CSV di esempio:**\ 
 

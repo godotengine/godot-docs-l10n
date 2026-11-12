@@ -392,7 +392,7 @@ Restituisce ``true`` se il punto ``point`` è all'interno del poligono (``polygo
 
 Restituisce ``true`` se i vertici di ``polygon`` sono ordinati in senso orario, altrimenti restituisce ``false``.
 
-\ **Nota:** Suppone un sistema di coordinate cartesiane in cui ``+x`` punta a destra e ``+y`` punta in alto. Se si utilizzano le coordinate dello schermo (``+y`` è verso il basso), il risultato dovrà essere capovolto (vale a dire che un risultato ``true`` indicherà il senso antiorario).
+\ **Nota:** Suppone un sistema di coordinate cartesiane in cui ``+x`` punta a destra e ``+y`` punta in alto. Se si utilizzano le coordinate dello schermo (\ ``+y`` è verso il basso), il risultato dovrà essere capovolto (vale a dire che un risultato ``true`` indicherà il senso antiorario).
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Restituisce ``true`` se i vertici di ``polygon`` sono ordinati in senso orario, 
 
 Restituisce il punto di intersezione tra le due linee (``from_a``, ``dir_a``) e (``from_b``, ``dir_b``). Restituisce un :ref:`Vector2<class_Vector2>` o ``null`` se le linee sono parallele.
 
-\ ``from`` e ``dir`` non sono *estremi* di un segmento di linea o raggio, ma la pendenza (``dir``) e un punto noto (``from``) su quella linea. Per ottenere l'intersezione tra due segmenti, usa :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` e ``dir`` non sono *estremi* di un segmento di linea o raggio, ma la pendenza (\ ``dir``) e un punto noto (\ ``from``) su quella linea. Per ottenere l'intersezione tra due segmenti, usa :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::

@@ -16,7 +16,7 @@ Descrizione
 
 Un controllo utilizzato per la riproduzione di risorse :ref:`VideoStream<class_VideoStream>`.
 
-I formati video supportati sono `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) e qualsiasi formato esposto tramite un estensione in GDExtension.
+I formati video supportati sono `Ogg Theora <https://www.theora.org/>`__ (\ ``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`) e qualsiasi formato esposto tramite un estensione in GDExtension.
 
 \ **Attenzione:** Sul Web, la riproduzione video *avrà* prestazioni scadenti a causa della mancanza di ottimizzazioni in assembly specifiche per l'architettura.
 
@@ -348,7 +348,9 @@ Restituisce il nome del flusso video oppure ``"<No Stream>"`` se nessun flusso v
 
 :ref:`Texture2D<class_Texture2D>` **get_video_texture**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_video_texture>`
 
-Restituisce il fotogramma attuale sotto forma di una :ref:`Texture2D<class_Texture2D>`.
+Returns the video playback texture.
+
+The texture will be continually updated as the video plays, so call :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` to get a still frame.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +376,9 @@ Restituisce ``true`` se il video è in riproduzione.
 
 |void| **play**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_play>`
 
-Avvia la riproduzione del video dall'inizio. Se il video è in pausa, questo non lo farà riprendere.
+Starts the video playback from the beginning, unless the video is already playing.
+
+\ **Note:** If the video is paused, this will not unpause the video.
 
 .. rst-class:: classref-item-separator
 

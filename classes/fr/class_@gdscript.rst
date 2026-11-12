@@ -96,9 +96,9 @@ La constante du cercle, c'est à dire la circonférence du cercle unité en radi
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-L'infini positif représenté en virgule flottante. C'est le résultat d'un nombre à virgule flottante divisé par ``0.0``. L'infini négatif est représenté par ``-INF``. Diviser par ``-0.0`` donnera une infinité négative si le numérateur est positif, donc diviser par ``0.0`` n'est pas la même chose que de diviser par ``-0.0`` (même si ``0.0 == -0.0`` est toujours ``true``).
+Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
 
-\ **Attention :** L'infini numérique est un concept qui n'existe que pour les nombres à virgule flottante, et n'a pas d'équivalent pour les entiers. Diviser un nombre entier par ``0`` ne résultera pas en :ref:`INF<class_@GDScript_constant_INF>` et entraînera toujours une erreur d'exécution.
+\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead. Casting ``INF`` or ``-INF`` to an integer (\ ``int(INF)`` or equivalent) is **undefined behavior**.
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@ L'infini positif représenté en virgule flottante. C'est le résultat d'un nomb
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-"Not a Number" (littéralement : pas un nombre), un nombre flottant (nombre à virgule) invalide. Il est renvoyé par certaines opérations invalides, comme la division flottante de ``0.0`` par ``0.0``.
+"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` a des propriétés spéciales, notamment que ``!=`` renvoie toujours ``true``, tandis que les autres opérateurs renverront toujours ``false``. Cela est vrai même en le comparant à lui-même (``NAN == NAN`` renvoie ``false`` et ``NAN != NAN`` renvoie ``true``). À cause de cela, vous devez utiliser :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` pour vérifier si un nombre est égal à :ref:`NAN<class_@GDScript_constant_NAN>`.
+\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (\ ``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
 
-\ **Attention :** "Not a Number" est un concept seulement pour les nombres flottants et n'a pas d’équivalent pour les nombres entiers. Diviser un nombre entier ``0`` par ``0`` ne donnera pas un :ref:`NAN<class_@GDScript_constant_NAN>` et résultera à la place en une erreur d’exécution.
+\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead. Casting ``NAN`` to an integer (\ ``int(NAN)`` or equivalent) is **undefined behavior**.
 
 .. rst-class:: classref-section-separator
 
@@ -282,9 +282,9 @@ Voir aussi :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROP
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Exportez une propriété :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>` ou :ref:`PackedStringArray<class_PackedStringArray>` sous forme de liste énumérée d'options (ou de tableau d'options). Si la propriété est un :ref:`int<class_int>`, l'index de la valeur est stocké, dans le même ordre que les valeurs fournies. Vous pouvez ajouter des valeurs explicites à l'aide de deux points. Si la propriété est un :ref:`String<class_String>`, la valeur est stockée.
+Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`StringName<class_StringName>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`Array<class_Array>`\ \[:ref:`StringName<class_StringName>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
 
-Voir également :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
+See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
 ::
 
@@ -295,21 +295,21 @@ Voir également :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constan
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-Si vous souhaitez définir une valeur initiale, vous devez la spécifier explicitement :
+If you want to set an initial value, you must specify it explicitly:
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-Si vous souhaitez utiliser des énumérations GDScript nommées, alors utilisez :ref:`@export<class_@GDScript_annotation_@export>` à la place :
+If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
 
 ::
 
     enum CharacterName {REBECCA, MARY, LEAH}
-    @export var character_name : CharacterName
+    @export var character_name: CharacterName
 
     enum CharacterItem {SWORD, SPEAR, MACE}
-    @export var character_items : Array[CharacterItem]
+    @export var character_items: Array[CharacterItem]
 
 .. rst-class:: classref-item-separator
 
@@ -752,7 +752,7 @@ Voir également :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_co
     @export var car_label = "Speedy"
     @export var car_number = 3
 
-\ **Note :** Les sous-groupes ne peuvent pas être imbriqués, mais vous pouvez utiliser l'opérateur slash (``/``) pour obtenir l'effet désiré :
+\ **Note :** Les sous-groupes ne peuvent pas être imbriqués, mais vous pouvez utiliser l'opérateur slash (\ ``/``) pour obtenir l'effet désiré :
 
 ::
 
@@ -1021,7 +1021,7 @@ Renvoie une :ref:`Color<class_Color>` construite à partir des niveaux de rouge 
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Vérifie que la ``condition`` est vraie (``true``). Si la ``condition`` est fausse (``false``), une erreur est générée et la méthode courante retourne une valeur par défaut. Lors de l'exécution à partir de l'éditeur, si des vérifications échouent cela provoque aussi un arrêt du débogueur. Cela peut être utilisé comme une alternative plus radicale à :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` pour signaler des erreurs aux développeurs de projet ou utilisateurs de plugins.
+Vérifie que la ``condition`` est vraie (\ ``true``). Si la ``condition`` est fausse (\ ``false``), une erreur est générée et la méthode courante retourne une valeur par défaut. Lors de l'exécution à partir de l'éditeur, si des vérifications échouent cela provoque aussi un arrêt du débogueur. Cela peut être utilisé comme une alternative plus radicale à :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` pour signaler des erreurs aux développeurs de projet ou utilisateurs de plugins.
 
 Un ``message`` facultatif peut être affiché en plus du message générique "Vérification échouée". Vous pouvez l'utiliser pour fournir des détails supplémentaires sur la raison de l'échec de l'assertion.
 

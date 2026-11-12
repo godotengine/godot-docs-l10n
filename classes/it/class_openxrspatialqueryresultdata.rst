@@ -61,7 +61,7 @@ Restituisce il numero di entità recuperate.
 
 :ref:`int<class_int>` **get_entity_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_id>`
 
-Restituisce l'ID di entità (``XrSpatialEntityIdEXT``) per l'entità associata all'indice ``index``.
+Restituisce l'ID di entità (\ ``XrSpatialEntityIdEXT``) per l'entità associata all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 

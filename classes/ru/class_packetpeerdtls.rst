@@ -14,11 +14,11 @@ PacketPeerDTLS
 Описание
 ----------------
 
-Этот класс представляет одноранговое соединение DTLS. Его можно использовать для подключения к серверу DTLS, и он возвращается :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
 
-\ **Примечание:** При экспорте в Android обязательно включите разрешение ``INTERNET`` в предустановке экспорта Android перед экспортом проекта или использованием развертывания в один клик. В противном случае сетевое взаимодействие любого рода будет заблокировано Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Предупреждение:** Отзыв сертификата TLS и закрепление сертификата в настоящее время не поддерживаются. Отозванные сертификаты принимаются, если они в остальном действительны. Если это вызывает беспокойство, вы можете использовать автоматически управляемые сертификаты с коротким сроком действия.
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-reftable-group
 

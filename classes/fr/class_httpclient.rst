@@ -14,25 +14,25 @@ Client de protocole de transfert hypertexte de bas niveau.
 Description
 -----------
 
-Client de protocole de transfert hypertexte (parfois appelé "User Agent"). Utilisé pour faire des requêtes HTTP pour télécharger du contenu web, téléverser des fichiers et d'autres données ou communiquer avec divers services, ou pour d'autres cas d'utilisation.
+Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
 
-Voir le nœud :ref:`HTTPRequest<class_HTTPRequest>` pour une alternative de plus haut-niveau.
+See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
 
-\ **Note :** Ce client doit seulement se connecter à un hôte une fois (voir :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) pour envoyer plusieurs requêtes. En raison de cela, les méthodes qui prennent des URL prennent généralement juste la partie après l'hôte au lieu de l'URL complète, puisque le client est déjà connecté à l'hôte. Voir :ref:`request()<class_HTTPClient_method_request>` pour un exemple complet pour pouvoir démarrer.
+\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
 
-Un **HTTPClient** devrait être réutilisé entre plusieurs requêtes ou pour se connecter à différents hôtes au lieu de créer un client par requête. Supporte le protocole Transport Layer Security (TLS), y compris la vérification du certificat du serveur. Les codes de statut HTTP de la plage 2xx indiquent un succès, 3xx une redirection (c.-à-d. "essayez à nouveau, mais ici"), 4xx que quelque chose ne va pas avec la requête, et 5xx qu'un problème est survenu du côté du serveur.
+An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
-Pour plus d'informations sur HTTP, voir `la documentation de MDN sur HTTP <https://developer.mozilla.org/fr/docs/Web/HTTP>`__ (ou lire le `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ pour l'avoir directement depuis la source).
+For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
 
-\ **Note :** Lors de l'export vers Android, assurez-vous d'activer la permission ``INTERNET`` dans le préréglage d'export Android avant d'exporter le projet ou en utilisant le déploiement en un clic. Sinon, la communication réseau de tout type sera bloquée par Android.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Note :** Il est recommandé d'utiliser le chiffrement du transport (TLS) et d'éviter d'envoyer des informations sensibles (comme des identifiants de connexion) dans les paramètres d'URL GET HTTP. Envisagez d'utiliser des requêtes HTTP POST ou des en-têtes HTTP pour ces informations à la place.
+\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
-\ **Note :** Lorsque vous effectuez des requêtes HTTP d'un projet exporté vers le Web, gardez à l'esprit que le serveur distant peut ne pas autoriser des requêtes d'origine étrangère en raison du `CORS <https://developer.mozilla.org/fr/docs/Web/HTTP/CORS>`__. Si vous hébergez le serveur en question, vous devez modifier son backend pour autoriser les requêtes d'origine étrangère en ajoutant l'en-tête HTTP ``Access-Control-Allow-Origin: *``.
+\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
 
-\ **Note :** Le support TLS est actuellement limité à TLSv1.1 et TLSv1.3. Tenter de se connecter à un serveur qui ne supporte que des versions plus vieilles (non sécurisées) de TLS renverra une erreur.
+\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
 
-\ **Avertissement :** La révocation de certificat TLS et le pinning de certificat ne sont actuellement pas supportés. Les certificats révoqués sont acceptés tant qu'ils sont sinon valides. Si c'est un problème, vous pourriez vouloir utiliser des certificats gérés automatiquement avec une courte période de validité.
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-introduction-group
 
@@ -1067,7 +1067,7 @@ Lit une partie de la réponse.
 
 Envoie une requête HTTP à l'hôte connecté avec la méthode ``method`` donnée.
 
-Le paramètre de l'URL est généralement juste la partie après l'hôte, donc pour ``https://example.com/index.php``, il s'agit de ``/index.php``. Lors de l'envoi de requêtes vers un serveur proxy HTTP, elle devrait être une URL absolue. Pour les requêtes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, ``*`` est aussi autorisé. Pour les requêtes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, elle devrait être le composant d'autorité (``host:port``).
+Le paramètre de l'URL est généralement juste la partie après l'hôte, donc pour ``https://example.com/index.php``, il s'agit de ``/index.php``. Lors de l'envoi de requêtes vers un serveur proxy HTTP, elle devrait être une URL absolue. Pour les requêtes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, ``*`` est aussi autorisé. Pour les requêtes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, elle devrait être le composant d'autorité (\ ``host:port``).
 
 \ ``headers`` sont des en-têtes de requête HTTP.
 
@@ -1106,7 +1106,7 @@ Pour créer une requête POST avec des chaînes de requête à envoyer sur le se
 
 Envoie une requête HTTP brute à l'hôte connecté avec la méthode ``method`` donnée.
 
-Le paramètre URL est généralement juste la partie après le nom de l'hôte, donc pour ``http://example.com/index.php``, il s'agit de ``/index.php``. Lors de l'envoi de requêtes vers un serveur de proxy HTTP, cela devrait être une URL absolue. Pour les requêtes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, ``*`` est également autorisé. Pour les requêtes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, cela devrait être le composant d'autorité (``host:port``).
+Le paramètre URL est généralement juste la partie après le nom de l'hôte, donc pour ``http://example.com/index.php``, il s'agit de ``/index.php``. Lors de l'envoi de requêtes vers un serveur de proxy HTTP, cela devrait être une URL absolue. Pour les requêtes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, ``*`` est également autorisé. Pour les requêtes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, cela devrait être le composant d'autorité (\ ``host:port``).
 
 \ ``headers`` sont les en-têtes de la requête HTTP.
 

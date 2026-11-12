@@ -12,13 +12,13 @@ PackedByteArray
 說明
 ----
 
-一種專門用來存放位元組（byte）的陣列。它對資料進行了緊密打包，因此在陣列規模很大時能有效節省記憶體。\ **PackedByteArray** 還提供了多種方法，用於將各種型別的資料編碼為位元組，或者從位元組中解碼出資料。
+An array specifically designed to hold bytes (integers between ``0`` and ``255``). Packs data tightly, so it saves memory for large array sizes.
 
-這些數值的編碼方式屬於內部實作細節，在與外部應用程式互動時，不應對其產生相依性。
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **注意：** 打包陣列（Packed arrays）始終是通過參照傳遞的。如果想取得一個可以獨立於原陣列進行修改的副本，請使用 :ref:`duplicate()<class_PackedByteArray_method_duplicate>` 方法。不過，內建屬性和方法\ *不*\ 屬於這種情況。在這些情況下，回傳的打包陣列是一個副本，修改它\ *不會*\ 影響原始值。如果要更新這種型別的內建屬性，需要先修改回傳的陣列，然後再將其重新賦值給該屬性。
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
 
-\ **注意：** 在布林值（boolean）語境下，如果打包陣列為空，它的求值結果為 ``false``\ ；否則，打包陣列的求值結果始終為 ``true``\ 。
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 
@@ -241,7 +241,25 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-建構新 **PackedByteArray**\ 。你還可以傳入通用 :ref:`Array<class_Array>` 進行轉換。
+Constructs a new **PackedByteArray** from a generic :ref:`Array<class_Array>`.
+
+Boolean ``false`` and ``true`` are converted to ``0`` and ``1`` respectively.
+
+Integers from the generic Array outside the byte range will overflow and roll over.
+
+Floating-point numbers from the generic Array are converted to integers by truncating the decimal part. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Strings from the generic Array are converted to integers using :ref:`String.to_int()<class_String_method_to_int>`, with ``0`` as a fallback value if no integer can be parsed from the string. If the resulting integer is outside the byte range, it will overflow and roll over.
+
+Other values from the generic Array that cannot be converted into an integer are initialized to ``0``.
+
+::
+
+    print(PackedByteArray([true, false])) # Prints [1, 0]
+    print(PackedByteArray([-1, 0, 255, 256, 300])) # Prints [255, 0, 255, 0, 44]
+    print(PackedByteArray([-1.0, 0.0, 1.0, 1.9, 2.0, 500.0])) # Prints [255, 0, 1, 1, 2, 244]
+    print(PackedByteArray(["", "10", "123.456", "-1 but valid", "invalid"])) # Prints [0, 10, 123, 255, 0]
+    print(PackedByteArray([Object.new(), Callable(), Signal()])) # Prints [0, 0, 0]
 
 .. rst-class:: classref-section-separator
 
@@ -538,13 +556,13 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress_dynamic**\ (\ max_output_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress_dynamic>`
 
-回傳新的 **PackedByteArray**\ ，其中的資料已解壓。請將壓縮模式設定為 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常數。\ **這個方法只接受 brotli、gzip 和 deflate 壓縮模式。**\ 
+Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-這個方法可能比 :ref:`decompress()<class_PackedByteArray_method_decompress>` 慢，因為在解壓時可能需要多次重新分配輸出緩衝區，而 :ref:`decompress()<class_PackedByteArray_method_decompress>` 則在一開始就知道輸出緩衝區的大小。
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows the size of its output buffer from the beginning.
 
-GZIP 的最大壓縮率為 1032:1，這意味著較小的壓縮後負載很有可能解壓出非常巨大的輸出。為了防止這種情況，你可以通過 ``max_output_size`` 提供允許這個函式分配的最大位元組數。傳入 -1 則不限制輸出。傳入正數且解壓超過該位元組數時，會回傳錯誤。
+GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
-\ **注意：**\ 不保證解壓縮可以處理未經 Godot 壓縮的資料，例如，如果使用 deflate 壓縮模式壓縮的資料缺少校驗和或標頭。
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +718,7 @@ GZIP 的最大壓縮率為 1032:1，這意味著較小的壓縮後負載很有�
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-將 :ref:`Variant<class_Variant>` 編碼為位元組序列，起始位置位元組偏移量為 ``byte_offset``\ 。必須分配有足夠的空間，空間大小取決於編碼後變體的大小。如果 ``allow_objects`` 為 ``false``\ ，則不允許衍生自 :ref:`Object<class_Object>` 的值，只會將其 ID 進行序列化。
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only. Returns the length of the encoded data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +945,7 @@ GZIP 的最大壓縮率為 1032:1，這意味著較小的壓縮後負載很有�
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-從陣列中刪除位於索引的元素。
+Removes an element from the array by index. If ``index`` is out-of-bounds or negative, this method fails.
 
 .. rst-class:: classref-item-separator
 

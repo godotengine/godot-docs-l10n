@@ -16,7 +16,7 @@ Path2D
 
 Може мати :ref:`PathFollow2D<class_PathFollow2D>` дочірні вершини, що переміщаються вздовж :ref:`Curve2D<class_Curve2D>`. Детальніше про використання :ref:`PathFollow2D<class_PathFollow2D>`\ 
 
-\ **Примітка:** Шлях вважається відносно рухомих вузлів (діти :ref:`PathFollow2D<class_PathFollow2D>`). Як так, крива повинна зазвичай почати з нульового вектора (``(0, 0)``).
+\ **Примітка:** Шлях вважається відносно рухомих вузлів (діти :ref:`PathFollow2D<class_PathFollow2D>`). Як так, крива повинна зазвичай почати з нульового вектора (\ ``(0, 0)``).
 
 .. rst-class:: classref-reftable-group
 

@@ -191,9 +191,11 @@ enum **Mode**: :ref:`🔗<enum_AESContext_Mode>`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-Отримати поточний стан IV для цього контексту (IV оновлюється при виклику :ref:`update()<class_AESContext_method_update>`). Зазвичай ця функція не потрібна.
+**Застаріло:** Extracting the IV state is no longer supported
 
-\ **Примітка:** Ця функція має сенс лише тоді, коли контекст запущено з :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` або :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>`.
+Returns an empty :ref:`PackedByteArray<class_PackedByteArray>`.
+
+\ **Note:** This method used to return the active IV state as modified by one or more :ref:`update()<class_AESContext_method_update>` calls. This is no longer supported.
 
 .. rst-class:: classref-item-separator
 

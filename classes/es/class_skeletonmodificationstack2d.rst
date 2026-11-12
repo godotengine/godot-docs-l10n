@@ -86,7 +86,7 @@ Descripciones de Propiedades
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-Si es ``true``, se llamará a las modificaciones en la pila. Esto se maneja automáticamente a través del nodo :ref:`Skeleton2D<class_Skeleton2D>`.
+If ``true``, the modifications in the stack will be called. This is handled automatically through the :ref:`Skeleton2D<class_Skeleton2D>` node.
 
 .. rst-class:: classref-item-separator
 

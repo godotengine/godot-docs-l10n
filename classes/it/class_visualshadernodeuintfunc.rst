@@ -14,7 +14,7 @@ Una funzione di intero scalare non firmato da utilizzare all'interno del grafico
 Descrizione
 ----------------------
 
-Accetti un intero scalare senza segno (``x``) alla porta in ingresso e lo trasforma secondo alla funzione :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
+Accetti un intero scalare senza segno (\ ``x``) alla porta in ingresso e lo trasforma secondo alla funzione :ref:`function<class_VisualShaderNodeUIntFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 

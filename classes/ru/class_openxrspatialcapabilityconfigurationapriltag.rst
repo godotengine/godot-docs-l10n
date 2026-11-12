@@ -79,7 +79,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_36H10** = ``3``
 
-6 by 6 bits, minimum Hamming distance between any two codes = 10, 2320 codes.
+6 на 6 бит, минимальное расстояние Хэмминга между любыми двумя кодами = 10, 2320 кодов.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_36H11:
 

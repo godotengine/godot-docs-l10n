@@ -14,9 +14,9 @@ TCP 伺服器。
 說明
 ----
 
-TCP 伺服器。監聽埠上的連接，並在獲得傳入連接時返回 :ref:`StreamPeerTCP<class_StreamPeerTCP>`\ 。
+A TCP server. Listens to connections on a port and returns a :ref:`StreamPeerTCP<class_StreamPeerTCP>` when it gets an incoming connection.
 
-\ **注意：**\ 匯出到安卓時，在匯出專案或使用一鍵部署之前，請務必在安卓匯出預設中開啟 ``INTERNET`` 許可權。否則 Android 會阻止任何形式的網路通信。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using remote deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 

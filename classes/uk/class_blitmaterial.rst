@@ -83,6 +83,14 @@ enum **BlendMode**: :ref:`🔗<enum_BlitMaterial_BlendMode>`
 
 Без режиму накладання, пряме копіювання кольору.
 
+.. _class_BlitMaterial_constant_BLEND_MODE_PREMULTIPLIED_ALPHA:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_PREMULTIPLIED_ALPHA** = ``5``
+
+Режим змішування Mix. Передбачається, що кольори попередньо помножені на значення альфа (непрозорість).
+
 .. rst-class:: classref-section-separator
 
 ----
