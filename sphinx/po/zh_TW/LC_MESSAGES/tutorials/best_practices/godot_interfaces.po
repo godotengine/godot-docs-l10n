@@ -20,11 +20,25 @@ msgid ""
 msgstr ""
 "我們常常會需要為了一些功能而讓腳本仰賴其他物件。這個過程可以分為兩個部分："
 
+msgid "Obtaining a reference to the object that presumably has the features."
+msgstr "取得指向據推測具有相應特徵的物件的參照。"
+
 msgid "Accessing the data or logic from the object."
 msgstr "從該物件存取資料或邏輯。"
 
 msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr "本篇教學接下來的部分將介紹各種達成此目的的方法。"
+
+msgid "Obtaining object references"
+msgstr "取得物件參照"
+
+msgid ""
+"For all :ref:`Objects <class_Object>`, the most basic way of referencing "
+"them is to get a reference to an existing object from another obtained "
+"instance."
+msgstr ""
+"對於所有 :ref:`Object <class_Object>`，最基本的參照方法是透過已取得的另一個執"
+"行個體，取得現有物件的參照。"
 
 msgid ""
 "The same principle applies for :ref:`RefCounted <class_RefCounted>` objects. "

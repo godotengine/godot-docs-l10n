@@ -124,8 +124,27 @@ msgstr ""
 "Como o AudioStreamPlayback é controlado pela thread de áudio, a E/S e a "
 "alocação dinâmica de memória são proibidas."
 
+msgid "audiostream_playback_mytone.h"
+msgstr "audiostream_playback_mytone.h"
+
+msgid "audiostream_playback_mytone.cpp"
+msgstr "audiostream_playback_mytone.cpp"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid ""
+"The ``set_freq`` and ``get_freq`` methods allow direct change of the "
+"frequency parameter. But one can also use the more generic way to handle "
+"parameters based on properties through ``get/set(\"parameters/Frequency\")``."
+msgstr ""
+"Os métodos ``set_freq`` e ``get_freq`` permitem alterar diretamente o "
+"parâmetro de frequência. Mas também é possível usar a forma mais genérica de "
+"manipular parâmetros baseados em propriedades através de ``get/"
+"set(\"parameters/Frequency\")``."
+
+msgid "audiostream_player_mytone.gd"
+msgstr "audiostream_player_mytone.gd"
 
 msgid "Resampling"
 msgstr "Reamostragem"

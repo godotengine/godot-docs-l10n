@@ -78,8 +78,22 @@ msgid ""
 "available. Most of the time, this is the only thing you need to think about. "
 "Godot's renderers are **Forward+**, **Mobile**, and **Compatibility**."
 msgstr ""
-"*算繪器*（或稱*算繪方法*）會決定哪些功能可用。大多數情況下，你只需考慮這一"
+"*算繪器*（或稱 *算繪方法*）會決定哪些功能可用。大多數情況下，你只需考慮這一"
 "點。Godot 目前有三種算繪器：**Forward+**、**Mobile** 和 **相容性**。"
+
+msgid ""
+"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
+"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
+"drivers. Not every GPU supports every rendering driver, and therefore not "
+"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
+"low-level graphics APIs, and require newer hardware. OpenGL is an older "
+"graphics API that runs on most hardware."
+msgstr ""
+"*渲染驅動程式* 通過圖形 API 向 GPU 指示應執行的操作。Godot 支援使用 "
+"**OpenGL** 、 **Vulkan** 、**Direct3D 12** 和 **Metal** 等渲染驅動程式。並非"
+"所有 GPU 都支援所有渲染驅動程式，因此並非所有 GPU 都支援所有渲染器。Vulkan、"
+"Direct3D 12 和 Metal 是現代的低級圖形 API，需要更新型的硬體支援；而 OpenGL 是"
+"一款較早的圖形 API，可在大多數硬體上執行。"
 
 msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
@@ -87,12 +101,19 @@ msgid ""
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
 "renderers\"."
 msgstr ""
-"RenderingDevice 是一種*算繪後端*，它是算繪器與繪圖驅動程式間的抽象層。"
+"RenderingDevice 是一種 *算繪後端*，它是算繪器與繪圖驅動程式間的抽象層。"
 "Forward+ 與 Mobile 算繪器會使用 RenderingDevice，因此有時也被稱為「基於 "
 "RenderingDevice 的算繪器」。"
 
 msgid "Choosing a renderer"
 msgstr "選擇算繪器"
+
+msgid ""
+"Choosing a renderer is a complex question, and depends on your hardware and "
+"which platforms you are developing for. As a starting point:"
+msgstr ""
+"選擇渲染器是一個複雜的問題，其具體選擇取決於您的硬體設定以及您所針對的開發平"
+"台。作為入門參考："
 
 msgid "Choose **Forward+** if:"
 msgstr "若符合以下條件，建議選擇 **Forward+**："
@@ -115,12 +136,24 @@ msgid "Choose **Mobile** if:"
 msgstr "若符合以下條件，建議選擇 **Mobile**："
 
 msgid ""
+"You are developing for newer mobile devices, desktop XR, standalone XR, or "
+"desktop."
+msgstr "您正在為新型行動裝置、桌面 XR、獨立 XR 或桌面平台進行開發。"
+
+msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
 msgstr "你希望使用進階算繪功能，但會受限於行動裝置硬體效能。"
 
 msgid "Choose **Compatibility** if:"
 msgstr "若有以下需求，請選擇 **相容性**："
+
+msgid ""
+"You are developing for older mobile devices, or older desktop devices. The "
+"Compatibility renderer supports the widest range of hardware."
+msgstr ""
+"您正在為較舊的行動裝置或較舊的桌面裝置進行開發。相容性渲染器支援最廣泛的硬體"
+"裝置範圍。"
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -140,6 +173,17 @@ msgid ""
 "You want the best performance possible on all devices and don't need "
 "advanced rendering features."
 msgstr "你希望在所有裝置上獲得最佳效能，且不需要進階算繪功能。"
+
+msgid ""
+"Keep in mind every game is unique, and this is only a starting point. For "
+"example, you might choose to use the Compatibility renderer even though you "
+"have the latest GPU, so you can support the widest range of hardware. Or you "
+"might want to use the Forward+ renderer for a 2D game, so you can use "
+"advanced features like compute shaders."
+msgstr ""
+"請記住，每個遊戲都各有不同，以上僅供參考。例如，即便你擁有最新的 GPU，也可能"
+"想要選擇 Compatibility 渲染器，以支援最廣泛的硬體。或者，你可能想為 2D 遊戲使"
+"用 Forward+ 渲染器，從而使用計算著色器等進階特性。"
 
 msgid "Switching between renderers"
 msgstr "切換算繪器"
@@ -268,6 +312,12 @@ msgstr "⚠️ 支援，但效能優化有限。建議改用 Mobile 或相容性
 msgid "XR"
 msgstr "XR"
 
+msgid "⚠️ Supported, but not recommended. Use Mobile instead."
+msgstr "⚠ 支援，但不推薦。請使用 Mobile。"
+
+msgid "✔️ Yes. Recommended for desktop and standalone headsets."
+msgstr "✔ 是。推薦用於台式機及獨立式耳機。"
+
 msgid "Web"
 msgstr "Web"
 
@@ -355,6 +405,17 @@ msgstr "詳情請參考 :ref:`doc_lights_and_shadows`。"
 msgid "Lighting approach"
 msgstr "光源處理方式"
 
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr "前向單次渲染。帶有陰影的燈光採用多通道方法，並且混合精度較低。"
+
+msgid "Forward single-pass."
+msgstr "前向單次渲染。"
+
+msgid "Clustered forward."
+msgstr "叢集式前向算繪。"
+
 msgid "Maximum OmniLights"
 msgstr "OmniLight 最大數量"
 
@@ -391,6 +452,9 @@ msgstr "DirectionalLight 支援 PCSS"
 msgid "Light projector textures"
 msgstr "光影投影紋理"
 
+msgid "Contact shadows"
+msgstr "接觸陰影"
+
 msgid "Global Illumination"
 msgstr "全域照明"
 
@@ -406,6 +470,9 @@ msgstr "✔️ 支援，每個 Mesh 可用 2 個。"
 
 msgid "✔️ Supported, 8 per mesh."
 msgstr "✔️ 支援，每個 Mesh 可用 8 個。"
+
+msgid "✔️ Supported, up to 256 in scene (64 by default)."
+msgstr "✔️ 支援，場景中最多 256 個（預設為 64 個）。"
 
 msgid "LightmapGI"
 msgstr "LightmapGI"
@@ -466,6 +533,9 @@ msgstr "詳情請參考 :ref:`doc_3d_antialiasing`。"
 msgid "MSAA 3D"
 msgstr "3D MSAA"
 
+msgid "⚠️ Supported, but no alpha to coverage."
+msgstr "⚠️ 支援，但不支援 Alpha to Coverage。"
+
 msgid "MSAA 2D"
 msgstr "2D MSAA"
 
@@ -477,6 +547,9 @@ msgstr "FSR2"
 
 msgid "FXAA"
 msgstr "FXAA"
+
+msgid "SMAA"
+msgstr "SMAA"
 
 msgid "SSAA"
 msgstr "SSAA"
@@ -490,6 +563,9 @@ msgstr "StandardMaterial 功能"
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "詳情請參考 :ref:`doc_standard_material_3d`。"
 
+msgid "Subsurface scattering"
+msgstr "次表面散射"
+
 msgid "Shader features"
 msgstr "著色器功能"
 
@@ -502,6 +578,9 @@ msgstr "螢幕紋理"
 msgid "Depth texture"
 msgstr "深度紋理"
 
+msgid "Normal/Roughness buffer"
+msgstr "法線/粗糙度緩衝區"
+
 msgid "Compute shaders"
 msgstr "運算著色器"
 
@@ -511,14 +590,54 @@ msgstr "⚠️ 支援，但舊裝置效能可能受影響。"
 msgid "Other features"
 msgstr "其他功能"
 
+msgid "Color precision"
+msgstr "顏色精度"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8。低動態範圍，中等精度。"
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr "RGB10A2。中等動態範圍，低精度。如果啟用了 2D HDR，則使用 RGBA16F。"
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F。高動態範圍，精度良好。"
+
+msgid "Depth precision"
+msgstr "深度精度"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 位元，無反轉 Z。中等精度。"
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 位元，帶反轉 Z。中等精度。"
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32 位元，帶反轉 Z。精度高。"
+
+msgid "Debanding"
+msgstr "去色帶"
+
 msgid "Variable rate shading"
 msgstr "可變速率著色"
 
 msgid "Decals"
 msgstr "貼花"
 
+msgid "✔️ Supported. 8 per surface, 64 per view (adjustable)."
+msgstr "✔️ 支援。每個表面 8 個，每個視圖 64 個（可調整）。"
+
+msgid "✔️ Supported. 8 per surface."
+msgstr "✔️ 支援，每個表面最多 8 個。"
+
+msgid "✔️ Supported. No limit per surface (clustered)."
+msgstr "✔️ 支援，每個表面無上限（叢集化）。"
+
 msgid "Particle trails"
 msgstr "粒子軌跡"
+
+msgid "Particle SDF collision"
+msgstr "粒子 SDF 碰撞"
 
 msgid "Depth of field blur"
 msgstr "景深模糊"
@@ -528,6 +647,9 @@ msgstr "自適應與 Mailbox 垂直同步模式"
 
 msgid "2D HDR Viewport"
 msgstr "2D HDR 檢視區"
+
+msgid "HDR output"
+msgstr "HDR 輸出"
 
 msgid "RenderingDevice access"
 msgstr "RenderingDevice 存取"

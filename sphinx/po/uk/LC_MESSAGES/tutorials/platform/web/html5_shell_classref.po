@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Web export JavaScript reference"
+msgstr "Довідник з JavaScript для експорту веб-даних"
+
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -49,6 +52,13 @@ msgstr "Статичні методи"
 msgid "Promise"
 msgstr "Обіцяю"
 
+msgid ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+msgstr ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+
 msgid "void"
 msgstr "Void"
 
@@ -65,8 +75,40 @@ msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 
+msgid ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+msgstr ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+
+msgid ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+msgstr ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+
+msgid ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+msgstr ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+
+msgid ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+msgstr ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+
+msgid ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+msgstr ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+
 msgid "Array.<string>"
 msgstr "Array.<string>"
+
+msgid ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
+msgstr ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
 
 msgid "Instance Methods"
 msgstr "Методи екземплярів"
@@ -105,6 +147,23 @@ msgstr ""
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
+msgid ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+msgstr ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+
+msgid ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+msgstr ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+
+msgid ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+msgstr ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+
 msgid "Create a new Engine instance with the given configuration."
 msgstr "Створіть новий екземпляр Engine із заданою конфігурацією."
 
@@ -122,6 +181,9 @@ msgstr "Завантажте двигун із зазначеного базов
 
 msgid "Base path of the engine to load."
 msgstr "Базовий шлях двигуна до завантаження."
+
+msgid "The file size if known."
+msgstr "Розмір файлу, якщо він відомий."
 
 msgid "Returns"
 msgstr "Повернення"
@@ -154,6 +216,56 @@ msgstr "Основна версія WebGL, яку потрібно переві�
 
 msgid "If the given major version of WebGL is available."
 msgstr "Якщо дана основна версія WebGL доступна."
+
+msgid "Check whether the Fetch API available and supports streaming responses."
+msgstr ""
+"Перевірити, чи доступний Fetch API та чи підтримує він потокові відповіді."
+
+msgid "If the Fetch API is available and supports streaming responses."
+msgstr "Якщо Fetch API доступний і підтримує потокові відповіді."
+
+msgid "Check whether the engine is running in a Secure Context."
+msgstr "Перевірити, чи працює рушій у захищеному контексті (Secure Context)."
+
+msgid "If the engine is running in a Secure Context."
+msgstr "Якщо рушій працює в захищеному контексті (Secure Context)."
+
+msgid ""
+"Check whether the engine is cross origin isolated. This value is dependent "
+"on Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy headers sent "
+"by the server."
+msgstr ""
+"Перевірити, чи ізольовано рушій від інших джерел (cross-origin isolation). "
+"Це значення залежить від заголовків Cross-Origin-Opener-Policy і Cross-"
+"Origin-Embedder-Policy, які надсилає сервер."
+
+msgid "Check whether SharedBufferArray is available."
+msgstr "Перевірити, чи доступний SharedBufferArray."
+
+msgid ""
+"Most browsers require the page to be running in a secure context, and the "
+"the server to provide specific CORS headers for SharedArrayBuffer to be "
+"available."
+msgstr ""
+"Для доступності SharedArrayBuffer більшість браузерів вимагає запуску "
+"сторінки в захищеному контексті, а також надсилання сервером певних "
+"заголовків CORS."
+
+msgid "If SharedArrayBuffer is available."
+msgstr "Якщо SharedArrayBuffer доступний."
+
+msgid "Check whether the AudioContext supports AudioWorkletNodes."
+msgstr "Перевірити, чи підтримує AudioContext вузли AudioWorkletNode."
+
+msgid "If AudioWorkletNode is available."
+msgstr "Якщо AudioWorkletNode доступний."
+
+msgid "Return an array of missing required features (as string)."
+msgstr ""
+"Повернути масив назв відсутніх обов’язкових можливостей у вигляді рядків."
+
+msgid "A list of human-readable missing features."
+msgstr "Усі функції візуалізації."
 
 msgid "**Instance Methods**"
 msgstr "**Методи екземплярів**"
@@ -296,6 +408,33 @@ msgstr ""
 "Це схоже на натискання користувачем кнопки закриття в диспетчері вікон і не "
 "матиме жодного ефекту, якщо система вийшла з ладу або застрягла в циклі."
 
+msgid "Forcibly exit the current instance."
+msgstr "Запит на вихід поточного екземпляра."
+
+msgid ""
+"This is akin to terminating the process on a regular OS, and *may* be able "
+"to terminate the engine and free resources even if the engine has crashed, "
+"or is stuck in a loop."
+msgstr ""
+"Це схоже на завершення процесу в звичайній операційній системі і *може* "
+"дозволити завершити роботу движка та звільнити ресурси навіть у тому "
+"випадку, якщо движок завис або застряг у циклі."
+
+msgid "Editor-Only."
+msgstr "Тільки для редактора."
+
+msgid "Adds a new EditorDebuggerSession connected via the given port."
+msgstr "Додає новий EditorDebuggerSession, під'єднаний через указаний порт."
+
+msgid "The port used for the debugger session."
+msgstr "Порт, який використовується для сеансу налагодження."
+
+msgid "Install the progressive-web app service worker."
+msgstr "Встановіть сервісний робочий процес прогресивного веб-додатка."
+
+msgid "The service worker registration promise."
+msgstr "Об’єкт Promise, який повертає реєстрація сервіс-воркера."
+
 msgid "Engine configuration"
 msgstr "Конфігурація движка"
 
@@ -346,11 +485,32 @@ msgstr ":js:attr:`canvasResizePolicy`"
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
+msgid ":js:attr:`focusCanvas`"
+msgstr ":js:attr:`focusCanvas`"
+
+msgid ":js:attr:`experimentalVK`"
+msgstr ":js:attr:`experimentalVK`"
+
+msgid ":js:attr:`serviceWorker`"
+msgstr ":js:attr:`serviceWorker`"
+
+msgid "MessagePort"
+msgstr "Повідомлення"
+
+msgid ":js:attr:`debugPort`"
+msgstr ":js:attr:`debugPort`"
+
+msgid ":js:attr:`pid`"
+msgstr ":js:attr:`pid`"
+
 msgid "function"
 msgstr "функція"
 
 msgid ":js:attr:`onExecute`"
 msgstr ":js:attr:`onExecute`"
+
+msgid ":js:attr:`onTerminatePID`"
+msgstr ":js:attr:`onTerminatePID`"
 
 msgid ":js:attr:`onExit`"
 msgstr ":js:attr:`onExit`"
@@ -376,6 +536,10 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**Опис нерухомості**"
+
+msgid ""
+"Whether to unload the engine automatically after the instance is initialized."
+msgstr "Чи розвантажувати механізм автоматично після ініціалізації екземпляра."
 
 msgid "value"
 msgstr "значення"
@@ -469,8 +633,36 @@ msgstr ""
 msgid "``[]``"
 msgstr "``[]``"
 
+msgid ""
+"When enabled, the game canvas will automatically grab the focus when the "
+"engine starts."
+msgstr ""
+"Якщо ввімкнено, полотно гри автоматично отримуватиме фокус під час запуску "
+"рушія."
+
+msgid ""
+"When enabled, this will turn on experimental virtual keyboard support on "
+"mobile."
+msgstr ""
+"Якщо ввімкнено, активується експериментальна підтримка віртуальної "
+"клавіатури на мобільних пристроях."
+
 msgid "``false``"
 msgstr "``false``"
+
+msgid "The progressive web app service worker to install."
+msgstr "Сервіс-воркер прогресивного вебзастосунку, який потрібно встановити."
+
+msgid ""
+"A MessagePort used to send debug messages when using protocol messageport://"
+msgstr ""
+"MessagePort, що використовується для надсилання повідомлень налагодження під "
+"час роботи з протоколом messageport://"
+
+msgid "The Process ID assigned to this instance (useful for debugging)."
+msgstr ""
+"Ідентифікатор процесу, призначений цьому екземпляру (корисний для "
+"налагодження)."
 
 msgid "``0``"
 msgstr "``0``"
@@ -490,6 +682,19 @@ msgstr "Шлях, який Godot хоче здійснити."
 
 msgid "The arguments of the \"command\" to execute."
 msgstr "Аргументи «команди» для виконання."
+
+msgid "A callback function for handling Godot's ``OS.kill`` calls."
+msgstr "Функція зворотного виклику для обробки викликів ``OS.execute`` Godot."
+
+msgid ""
+"This is for example used in the Web Editor template to forcefully terminate "
+"a running game instance."
+msgstr ""
+"Це, наприклад, використовується в шаблоні веб-редактора для перемикання між "
+"менеджером проекту та редактором, а також для запуску гри."
+
+msgid "The Process ID to terminate."
+msgstr "Ідентифікатор процесу, який потрібно завершити."
 
 msgid "A callback function for being notified when the Godot instance quits."
 msgstr ""

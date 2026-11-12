@@ -35,6 +35,15 @@ msgstr ""
 "шаблони експорту. Компіляція Android APK вручну здебільшого корисна для "
 "власних збірок або спеціальних пакетів для розгортача."
 
+msgid ""
+"Also, you still need to follow the steps mentioned in "
+"the :ref:`doc_exporting_for_android_manual_android_build_setup` tutorial "
+"before attempting to build a custom export template."
+msgstr ""
+"Крім того, перед тим, як приступити до створення власного шаблону експорту, "
+"вам все одно потрібно виконати кроки, описані в "
+"посібнику :ref:`doc_exporting_for_android_manual_android_build_setup`."
+
 msgid "Requirements"
 msgstr "Вимоги"
 
@@ -43,6 +52,15 @@ msgstr "Для компіляції під Windows, Linux або macOS необ�
 
 msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
 msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
+
+msgid ""
+"If using Python 3.9 to 3.13, also run ``pip install --user zstandard`` to "
+"install Zstandard support for Python. This is not required on Python 3.14 "
+"and above, which include Zstandard support by default."
+msgstr ""
+"Якщо ви використовуєте Python 3.9–3.13, також виконайте ``pip install --user "
+"zstandard``, щоб установити підтримку Zstandard для Python. У Python 3.14 та "
+"новіших версіях це не потрібно, оскільки підтримка Zstandard уже вбудована."
 
 msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""

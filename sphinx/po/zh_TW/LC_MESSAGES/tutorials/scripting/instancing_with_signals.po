@@ -14,6 +14,23 @@ msgstr ""
 msgid "Signal"
 msgstr "訊號"
 
+msgid "Instantiation with signals"
+msgstr "基於訊號的實例化"
+
+msgid ""
+"Signals provide a way to decouple game objects, allowing you to avoid "
+"forcing a fixed arrangement of nodes. One sign that a signal might be called "
+"for is when you find yourself using ``get_parent()``. Referring directly to "
+"a node's parent means that you can't easily move that node to another "
+"location in the scene tree. This can be especially problematic when you are "
+"instantiating objects at runtime and may want to place them in an arbitrary "
+"location in the running scene tree."
+msgstr ""
+"訊號機制提供了一種解耦遊戲物件的方法，使您能夠避免強制採用固定的節點版面配"
+"置。當您使用 ``get_parent()`` 時，便可能需要引入訊號機制。直接參照某個節點的"
+"父節點意味著您無法輕鬆地將該節點移動到場景樹中的其他位置；在執行時實例化物件"
+"且希望將它們放置在執行中場景樹的任意位置時，這種情況尤為棘手。"
+
 msgid "Below we'll consider an example of such a situation: firing bullets."
 msgstr "下面我們將舉一個這種情境的例子：發射子彈。"
 

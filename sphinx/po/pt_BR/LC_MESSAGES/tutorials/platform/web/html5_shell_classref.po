@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Web export JavaScript reference"
+msgstr "Referência JavaScript de exportação para a Web"
+
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -50,6 +53,13 @@ msgstr "Métodos Estáticos"
 msgid "Promise"
 msgstr "Promesa"
 
+msgid ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+msgstr ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+
 msgid "void"
 msgstr "void"
 
@@ -66,8 +76,40 @@ msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 
+msgid ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+msgstr ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+
+msgid ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+msgstr ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+
+msgid ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+msgstr ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+
+msgid ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+msgstr ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+
+msgid ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+msgstr ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+
 msgid "Array.<string>"
 msgstr "Matriz.<string>"
+
+msgid ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
+msgstr ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
 
 msgid "Instance Methods"
 msgstr "Métodos de Instância"
@@ -106,6 +148,23 @@ msgstr ""
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
+msgid ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+msgstr ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+
+msgid ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+msgstr ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+
+msgid ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+msgstr ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+
 msgid "Create a new Engine instance with the given configuration."
 msgstr "Criar uma nova instância de Engine com a configuração dada."
 
@@ -123,6 +182,9 @@ msgstr "Carrega o motor a partir do caminho base especificado."
 
 msgid "Base path of the engine to load."
 msgstr "O caminho base do motor a ser carregado."
+
+msgid "The file size if known."
+msgstr "O tamanho do arquivo, se conhecido."
 
 msgid "Returns"
 msgstr "Retorna"
@@ -155,6 +217,55 @@ msgstr "A versão principal do WebGL a ser verificada."
 
 msgid "If the given major version of WebGL is available."
 msgstr "Se a versão principal especificada do WebGL estiver disponível."
+
+msgid "Check whether the Fetch API available and supports streaming responses."
+msgstr ""
+"Verifique se a Fetch API está disponível e suporta respostas em streaming."
+
+msgid "If the Fetch API is available and supports streaming responses."
+msgstr "Se a Fetch API estiver disponível e suportar respostas em streaming."
+
+msgid "Check whether the engine is running in a Secure Context."
+msgstr "Verifique se o engine está rodando em um Contexto Seguro."
+
+msgid "If the engine is running in a Secure Context."
+msgstr "Se o engine estiver rodando em um Contexto Seguro."
+
+msgid ""
+"Check whether the engine is cross origin isolated. This value is dependent "
+"on Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy headers sent "
+"by the server."
+msgstr ""
+"Verifique se o engine está isolado de origem cruzada (cross origin "
+"isolated). Este valor depende dos cabeçalhos Cross-Origin-Opener-Policy e "
+"Cross-Origin-Embedder-Policy enviados pelo servidor."
+
+msgid "Check whether SharedBufferArray is available."
+msgstr "Verifique se o SharedBufferArray está disponível."
+
+msgid ""
+"Most browsers require the page to be running in a secure context, and the "
+"the server to provide specific CORS headers for SharedArrayBuffer to be "
+"available."
+msgstr ""
+"A maioria dos navegadores exige que a página seja executada em um contexto "
+"seguro e que o servidor forneça cabeçalhos CORS específicos para que o "
+"SharedArrayBuffer esteja disponível."
+
+msgid "If SharedArrayBuffer is available."
+msgstr "Se o SharedArrayBuffer estiver disponível."
+
+msgid "Check whether the AudioContext supports AudioWorkletNodes."
+msgstr "Verifique se o AudioContext suporta AudioWorkletNodes."
+
+msgid "If AudioWorkletNode is available."
+msgstr "Se o AudioWorkletNode estiver disponível."
+
+msgid "Return an array of missing required features (as string)."
+msgstr "Retornar um array de recursos obrigatórios ausentes (como string)."
+
+msgid "A list of human-readable missing features."
+msgstr "Uma lista de recursos ausentes legíveis por humanos."
 
 msgid "**Instance Methods**"
 msgstr "**Métodos de instância**"
@@ -305,6 +416,34 @@ msgstr ""
 "janelas e não terá efeito se o motor tiver travado ou estiver travado em um "
 "loop."
 
+msgid "Forcibly exit the current instance."
+msgstr "Forçar a saída da instância atual."
+
+msgid ""
+"This is akin to terminating the process on a regular OS, and *may* be able "
+"to terminate the engine and free resources even if the engine has crashed, "
+"or is stuck in a loop."
+msgstr ""
+"Isso é equivalente a encerrar o processo em um SO normal e *pode* conseguir "
+"encerrar o engine e liberar recursos mesmo que o engine tenha travado ou "
+"esteja preso em um loop."
+
+msgid "Editor-Only."
+msgstr "Somente para o editor."
+
+msgid "Adds a new EditorDebuggerSession connected via the given port."
+msgstr ""
+"Adiciona uma nova EditorDebuggerSession conectada através da porta fornecida."
+
+msgid "The port used for the debugger session."
+msgstr "A porta usada para a sessão do depurador."
+
+msgid "Install the progressive-web app service worker."
+msgstr "Instalar o service worker de aplicativo web progressivo."
+
+msgid "The service worker registration promise."
+msgstr "A promessa de registro do service worker."
+
 msgid "Engine configuration"
 msgstr "Configuração da engine"
 
@@ -355,11 +494,32 @@ msgstr ":js:attr:`canvasResizePolicy`"
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
+msgid ":js:attr:`focusCanvas`"
+msgstr ":js:attr:`focusCanvas`"
+
+msgid ":js:attr:`experimentalVK`"
+msgstr ":js:attr:`experimentalVK`"
+
+msgid ":js:attr:`serviceWorker`"
+msgstr ":js:attr:`serviceWorker`"
+
+msgid "MessagePort"
+msgstr "MessagePort"
+
+msgid ":js:attr:`debugPort`"
+msgstr ":js:attr:`debugPort`"
+
+msgid ":js:attr:`pid`"
+msgstr ":js:attr:`pid`"
+
 msgid "function"
 msgstr "função"
 
 msgid ":js:attr:`onExecute`"
 msgstr ":js:attr:`onExecute`"
+
+msgid ":js:attr:`onTerminatePID`"
+msgstr ":js:attr:`onTerminatePID`"
 
 msgid ":js:attr:`onExit`"
 msgstr ":js:attr:`onExit`"
@@ -385,6 +545,12 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**Descrições de propriedade**"
+
+msgid ""
+"Whether to unload the engine automatically after the instance is initialized."
+msgstr ""
+"Se deve descarregar o engine automaticamente após a inicialização da "
+"instância."
 
 msgid "value"
 msgstr "Valor"
@@ -485,8 +651,34 @@ msgstr ""
 msgid "``[]``"
 msgstr "``[]``"
 
+msgid ""
+"When enabled, the game canvas will automatically grab the focus when the "
+"engine starts."
+msgstr ""
+"Quando ativado, o canvas do jogo capturará o foco automaticamente quando o "
+"engine iniciar."
+
+msgid ""
+"When enabled, this will turn on experimental virtual keyboard support on "
+"mobile."
+msgstr ""
+"Quando ativado, isso ligará o suporte experimental a teclado virtual em "
+"dispositivos móveis."
+
 msgid "``false``"
 msgstr "``false``"
+
+msgid "The progressive web app service worker to install."
+msgstr "O service worker de aplicativo web progressivo para instalar."
+
+msgid ""
+"A MessagePort used to send debug messages when using protocol messageport://"
+msgstr ""
+"Um MessagePort usado para enviar mensagens de depuração ao usar o protocolo "
+"messageport://"
+
+msgid "The Process ID assigned to this instance (useful for debugging)."
+msgstr "O ID do processo atribuído a esta instância (útil para depuração)."
 
 msgid "``0``"
 msgstr "``0``"
@@ -507,6 +699,20 @@ msgstr "O caminho que o Godot deseja que seja executado."
 
 msgid "The arguments of the \"command\" to execute."
 msgstr "Os argumentos do \"comando\" a ser executado."
+
+msgid "A callback function for handling Godot's ``OS.kill`` calls."
+msgstr ""
+"Uma função de callback para lidar com as chamadas ``OS.kill`` do Godot."
+
+msgid ""
+"This is for example used in the Web Editor template to forcefully terminate "
+"a running game instance."
+msgstr ""
+"Isto é usado, por exemplo, no template do Editor Web para encerrar à força "
+"uma instância de jogo em execução."
+
+msgid "The Process ID to terminate."
+msgstr "O ID do processo para encerrar."
 
 msgid "A callback function for being notified when the Godot instance quits."
 msgstr ""

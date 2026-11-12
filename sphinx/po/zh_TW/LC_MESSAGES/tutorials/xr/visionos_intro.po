@@ -11,8 +11,290 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "XR on visionOS"
+msgstr "visionOS 上的 XR"
+
+msgid ""
+"To use the XR mode on visionOS, start by :ref:`setting up XR "
+"<doc_setting_up_xr>`:"
+msgstr ""
+"若要在 visionOS 上使用 XR 模式，請先 :ref:`設定 XR <doc_setting_up_xr>`："
+
+msgid "enable **XR shaders**."
+msgstr "啟用 **XR shaders**。"
+
+msgid "add an :ref:`class_XROrigin3D`."
+msgstr "新增 :ref:`class_XROrigin3D`。"
+
+msgid "add an :ref:`class_XRCamera3D`."
+msgstr "新增 :ref:`class_XRCamera3D`。"
+
+msgid ""
+"You can initialize the visionOS XR interface similarly to any "
+"other :ref:`class_XRInterface`. In your viewport, enable ``use_xr``, enable "
+"``use_hdr_2d``, and set ``vrs_mode`` to ``Viewport.VRS_XR``."
+msgstr ""
+"你可以像其他 :ref:`class_XRInterface` 一樣初始化 visionOS XR 介面。在視埠中啟"
+"用 ``use_xr`` 與 ``use_hdr_2d``，並將 ``vrs_mode`` 設為 ``Viewport.VRS_XR``。"
+
+msgid "Hand and controller tracking"
+msgstr "手部與控制器追蹤"
+
+msgid ""
+"You can enable hand and controller tracking in the project settings. "
+"visionOS will show a prompt asking for authorization when the game is "
+"launched. You can customize the prompt's message, in the export settings, to "
+"explain why your game needs hand or controller tracking."
+msgstr ""
+"你可以在專案設定中啟用手部與控制器追蹤。遊戲啟動時，visionOS 會顯示授權提示。"
+"你可以在匯出設定中自訂提示文字，說明遊戲為何需要追蹤手部或控制器。"
+
+msgid ""
+"The Godot nodes to use controller and hand tracking are the same as the "
+"other XRInterfaces: :ref:`class_XRController3D`, :ref:`class_XRHandTracker`, "
+"and :ref:`class_XRHandModifier3D`."
+msgstr ""
+"Godot 使用控制器與手部追蹤的節點，與其他 XRInterface 相"
+"同：:ref:`class_XRController3D`、:ref:`class_XRHandTracker` "
+"及 :ref:`class_XRHandModifier3D`。"
+
+msgid "Transparent background"
+msgstr "透明背景"
+
+msgid ""
+"When using **Mixed** immersion, the game is displayed as alpha-premultiplied "
+"on top of your physical surroundings. To get a fully transparent background, "
+"use a black background color with an alpha of 0. Any color other than black "
+"will render as additive on top of passthrough, even if alpha is 0."
+msgstr ""
+"使用 **Mixed** 沉浸模式時，遊戲會以預乘 Alpha 的形式疊加在實際周遭環境上。若"
+"要完全透明的背景，請使用 Alpha 值為 0 的黑色背景。即使 Alpha 為 0，使用黑色以"
+"外的背景顏色，也會以加法混合方式疊加在透視影像上。"
+
+msgid "Here are examples of different background modes:"
+msgstr "以下是不同背景模式的範例："
+
+msgid "Background Color"
+msgstr "背景顏色"
+
 msgid "Result"
 msgstr "結果"
 
+msgid "Color(0, 0, 0, 0)"
+msgstr "Color(0, 0, 0, 0)"
+
+msgid "Passthrough"
+msgstr "環境透視"
+
+msgid "Color(0, 0, 0, 1)"
+msgstr "Color(0, 0, 0, 1)"
+
+msgid "Opaque Black"
+msgstr "不透明黑色"
+
+msgid "Color(0, 0, 0, 0.9)"
+msgstr "Color(0, 0, 0, 0.9)"
+
+msgid "Dimmed Passthrough"
+msgstr "變暗的環境透視"
+
+msgid "Color(0.5, 0.25, 0, 0.5)"
+msgstr "Color(0.5, 0.25, 0, 0.5)"
+
+msgid "Orange semi-transparent"
+msgstr "半透明橘色"
+
+msgid "Color(1.0, 0.5, 0, 0)"
+msgstr "Color(1.0, 0.5, 0, 0)"
+
+msgid "Orange additive"
+msgstr "橘色加法混合"
+
+msgid ""
+"If you are using a colored background (either a flat color or a custom sky), "
+"make sure to :ref:`write to the depth buffer <doc_visionos_sky_depth_write>`."
+msgstr ""
+"如果使用彩色背景（純色或自訂天空），請確保 :ref:`寫入深度緩衝區 "
+"<doc_visionos_sky_depth_write>`。"
+
+msgid "Mobile renderer"
+msgstr "Mobile 算繪器"
+
+msgid ""
+"The immersive mode on visionOS only supports the Mobile renderer. The game "
+"will fall back to the Mobile renderer, even if your project is configured to "
+"use Forward+."
+msgstr ""
+"visionOS 的沉浸模式僅支援 Mobile 算繪器。即使專案設定使用 Forward+，遊戲仍會"
+"退回使用 Mobile 算繪器。"
+
+msgid ""
+"However, you might want to increase the :ref:`quality of shadows "
+"<doc_lights_and_shadows_shadow_filter_mode>` in the **Project Settings** "
+"since Godot's default quality for shadows is lower on mobile."
+msgstr ""
+"不過，你可能需要在 **Project Settings** 中提高 :ref:`陰影品質 "
+"<doc_lights_and_shadows_shadow_filter_mode>`，因為 Godot 在行動平台上的預設陰"
+"影品質較低。"
+
+msgid "Depth Re-projection"
+msgstr "深度重新投影"
+
+msgid ""
+"visionOS uses the depth buffer of your rendered scene to re-project frames "
+"when the game doesn't render at the display's refresh rate. Be mindful of "
+"this when rendering transparent objects: write to the depth buffer for "
+"opaque parts that should be re-projected but do not write to the depth "
+"buffer for transparent or invisible objects that are less opaque than their "
+"background."
+msgstr ""
+"當遊戲無法以顯示器的更新率算繪時，visionOS 會利用算繪場景的深度緩衝區重新投影"
+"畫格。算繪透明物件時須留意：應讓需要重新投影的不透明部分寫入深度緩衝區，但比"
+"背景更透明或不可見的物件不應寫入深度。"
+
+msgid ""
+"For transparent objects on top of the passthrough background (such as "
+"particles or :ref:`glow <doc_environment_and_post_processing_glow>`), make "
+"sure that at least one layer is writing depth, to avoid having :ref:`the "
+"content be discarded <doc_visionos_sky_depth_write>`."
+msgstr ""
+"對於疊加在透視背景上的透明物件（例如粒子或 :ref:`輝光 "
+"<doc_environment_and_post_processing_glow>`），請確保至少有一個圖層會寫入深度"
+"資訊，以免 :ref:`內容遭到捨棄 <doc_visionos_sky_depth_write>`。"
+
 msgid "Troubleshooting"
 msgstr "疑難排解"
+
+msgid "Block-shaped artifacts around edges"
+msgstr "邊緣周圍的方塊狀瑕疵"
+
+msgid ""
+"If you see block-shaped artifacts around the edges, this is because Godot's "
+"sky shader does not write to depth and visionOS only displays content that "
+"has written depth."
+msgstr ""
+"如果邊緣周圍出現方塊狀瑕疵，是因為 Godot 的天空著色器不會寫入深度，而 "
+"visionOS 只會顯示已寫入深度的內容。"
+
+msgid "Fix this by doing one of the following:"
+msgstr "可透過下列任一方式修正："
+
+msgid "Make the sky black if you want a transparent background."
+msgstr "若要透明背景，請將天空設為黑色。"
+
+msgid ""
+"Add a full-screen quad that writes depth to the background, if you want to "
+"render a virtual sky (opaque or semi-transparent)."
+msgstr ""
+"若要算繪虛擬天空（不透明或半透明），請加入會將深度寫入背景的全螢幕四邊形。"
+
+msgid ""
+"To write depth to the sky, add a :ref:`class_MeshInstance3D` with the "
+"following shader:"
+msgstr ""
+"若要讓天空寫入深度，請新增具有下列著色器的 :ref:`class_MeshInstance3D`："
+
+msgid "depth.gdshader"
+msgstr "depth.gdshader"
+
+msgid "And the following geometry:"
+msgstr "以及下列幾何體："
+
+msgid "|depth_geometry|"
+msgstr "|depth_geometry|"
+
+msgid "depth_geometry"
+msgstr "depth_geometry"
+
+msgid "|depth_material|"
+msgstr "|depth_material|"
+
+msgid "depth_material"
+msgstr "depth_material"
+
+msgid "This object does the following:"
+msgstr "此物件會執行下列操作："
+
+msgid "renders in ``[-1.0; 1.0]`` in screen space."
+msgstr "在螢幕空間的 ``[-1.0; 1.0]`` 範圍內算繪。"
+
+msgid ""
+"writes depth to ``0.00000001`` and alpha to ``1.0`` (or another alpha if you "
+"want semi-transparency)."
+msgstr ""
+"將深度寫入為 ``0.00000001``，Alpha 寫入為 ``1.0``（如果想要半透明，可以使用其"
+"他 Alpha 值）。"
+
+msgid "renders as the first transparent object."
+msgstr "作為第一個透明物件算繪。"
+
+msgid "never gets culled."
+msgstr "永遠不會被剔除。"
+
+msgid ""
+"This is similar to doing :ref:`post-processing "
+"<doc_advanced_postprocessing>` in Godot, but is just writing depth and alpha."
+msgstr ""
+"這類似在 Godot 中執行 :ref:`後製處理 <doc_advanced_postprocessing>`，但只寫入"
+"深度與 Alpha。"
+
+msgid "Camera near plane"
+msgstr "攝影機近裁切平面"
+
+msgid ""
+"visionOS (and more specifically `CompositorServices <https://"
+"developer.apple.com/documentation/compositorservices>`_) requires the near "
+"plane of the :ref:`class_XRCamera3D` to be at least 0.1 meters."
+msgstr ""
+"visionOS（更精確地說，是 `CompositorServices <https://developer.apple.com/"
+"documentation/compositorservices>`_）要求 :ref:`class_XRCamera3D` 的近裁切平"
+"面至少為 0.1 公尺。"
+
+msgid "If you use a value below 0.1, the scene won't render. To solve this:"
+msgstr "如果使用小於 0.1 的值，場景將無法算繪。若要解決此問題："
+
+msgid "increase the near value of you *XRCamera3D* to be ``0.1`` or greater."
+msgstr "將 *XRCamera3D* 的近裁切值提高至 ``0.1`` 或以上。"
+
+msgid ""
+"take into account the *world_scale* (including floating-point precision "
+"errors): ``znear = 0.1 * world_scale + margin``."
+msgstr ""
+"考量 *world_scale*（包括浮點精度誤差）：``znear = 0.1 * world_scale + "
+"margin``。"
+
+msgid ""
+"make sure that the *XRCamera3D* is the current camera, because Godot derives "
+"the near/far planes from the camera on your viewport, which might not be the "
+"*XRCamera3D*. You can check the current camera with "
+"``get_viewport().get_camera_3d()``."
+msgstr ""
+"確保 *XRCamera3D* 是目前使用的攝影機，因為 Godot 會從視埠的攝影機取得遠近裁切"
+"平面資訊，而該攝影機不一定是 *XRCamera3D*。可透過 "
+"``get_viewport().get_camera_3d()`` 檢查目前的攝影機。"
+
+msgid "Crash after freezing for 2 seconds"
+msgstr "凍結 2 秒後當機"
+
+msgid ""
+"On visionOS, the OS kills CompositorServices apps if they hang for more than "
+"2 seconds (except on the first frame)."
+msgstr ""
+"在 visionOS 上，如果 CompositorServices 應用程式無回應超過 2 秒（第一個畫格除"
+"外），作業系統就會終止該應用程式。"
+
+msgid ""
+"Godot does not currently support loading shaders in the background without "
+"freezing the render thread; you can fix this error by loading all your "
+"shaders upfront in the first scene of your Godot game."
+msgstr ""
+"Godot 目前不支援在背景載入著色器而不凍結算繪執行緒。你可以在 Godot 遊戲的第一"
+"個場景中預先載入所有著色器，來避免這個錯誤。"
+
+msgid ""
+"The 2 seconds timeout does not apply when the app is attached to Xcode. So "
+"make sure to test your game without launching from Xcode, before sharing it "
+"with more people, especially if it has long loading times."
+msgstr ""
+"應用程式附加至 Xcode 時，不會套用 2 秒的逾時限制。因此，在與更多人分享遊戲之"
+"前，務必測試不透過 Xcode 啟動的情況，尤其是載入時間較長的遊戲。"

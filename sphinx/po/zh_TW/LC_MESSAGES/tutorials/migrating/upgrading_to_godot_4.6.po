@@ -11,8 +11,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "從 Godot 4.5 升級到 Godot 4.6"
+
+msgid ""
+"For most games and apps made with 4.5 it should be relatively safe to "
+"migrate to 4.6. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"對於大多數使用 4.5 製作的遊戲和應用程式來說，遷移到 4.6 應該相對安全。本頁旨"
+"在介紹遷移專案時需要注意的所有事項。"
+
 msgid "Breaking changes"
 msgstr "做出更改"
+
+msgid ""
+"If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你要從 4.5 遷移到 4.6，這裡列出的破壞性更改可能會影響到你。變更按領域/系"
+"統進行了分組。"
 
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
@@ -55,14 +73,36 @@ msgstr "簡介"
 msgid "**FileAccess**"
 msgstr "**FileAccess**"
 
+msgid ""
+"Method ``create_temp`` changes ``mode_flags`` parameter type from ``int`` to "
+"``FileAccess.ModeFlags``"
+msgstr ""
+"方法 ``create_temp`` 將 ``mode_flags`` 參數的型別從 ``int`` 更改為 "
+"``FileAccess.ModeFlags``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "| ✔️相容|"
 
+msgid "`GH-114053`_"
+msgstr "`GH-114053`_"
+
+msgid "Method ``get_as_text`` removes ``skip_cr`` parameter"
+msgstr "方法 ``get_as_text`` 移除了 ``skip_cr`` 參數"
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "效能"
+
+msgid "Method ``add_custom_monitor`` adds a new ``type`` optional parameter"
+msgstr "方法 ``add_custom_monitor`` 新增了一個可選參數 ``type``"
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "動畫"
@@ -70,11 +110,95 @@ msgstr "動畫"
 msgid "**AnimationPlayer**"
 msgstr "**動畫播放器（AnimationPlayer）**"
 
+msgid ""
+"Property ``assigned_animation`` changes type from ``String`` to "
+"``StringName``"
+msgstr "屬性 ``assigned_animation`` 的型別從 ``String`` 改為 ``StringName``"
+
 msgid "|❌|"
 msgstr "|❌|"
 
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
+msgid "Property ``autoplay`` changes type from ``String`` to ``StringName``"
+msgstr "屬性 ``autoplay`` 型別從 ``String`` 改為 ``StringName``"
+
+msgid ""
+"Property ``current_animation`` changes type from ``String`` to ``StringName``"
+msgstr "屬性 ``current_animation`` 的型別從 ``String`` 改為 ``StringName``"
+
+msgid ""
+"Method ``get_queue`` changes return type from ``PackedStringArray`` to "
+"``StringName[]``"
+msgstr ""
+"``get_queue`` 方法的回傳型別從 ``PackedStringArray`` 變為 ``StringName[]``"
+
+msgid ""
+"Signal ``current_animation_changed`` changes ``name`` parameter type from "
+"``String`` to ``StringName``"
+msgstr ""
+"訊號 ``current_animation_changed`` 將參數 ``name`` 的型別從 ``String`` 變為 "
+"``StringName``"
+
 msgid "3D"
 msgstr "3D"
+
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
+msgid ""
+"Method ``get_end_bone_direction`` changes return type from "
+"``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"方法 ``get_end_bone_direction`` 的回傳型別從 "
+"``SpringBoneSimulator3D.BoneDirection`` 變為 "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
+
+msgid ""
+"Method ``get_joint_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"方法 ``get_joint_rotation_axis`` 的回傳型別從 "
+"``SpringBoneSimulator3D.RotationAxis`` 變為 "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``get_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"方法 ``get_rotation_axis`` 的回傳型別從 "
+"``SpringBoneSimulator3D.RotationAxis`` 變為 "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_end_bone_direction`` changes ``bone_direction`` parameter type "
+"from ``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"方法 ``set_end_bone_direction`` 將參數 ``bone_direction`` 的型別從 "
+"``SpringBoneSimulator3D.BoneDirection`` 變為 "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid ""
+"Method ``set_joint_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"方法 ``set_joint_rotation_axis`` 將參數 ``axis`` 的型別從 "
+"``SpringBoneSimulator3D.RotationAxis`` 更改為 "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"方法 ``set_rotation_axis`` 將參數 ``axis`` 的型別從 "
+"``SpringBoneSimulator3D.RotationAxis`` 更改為 "
+"``SkeletonModifier3D.RotationAxis``"
 
 msgid "Rendering"
 msgstr "算繪"
@@ -82,23 +206,255 @@ msgstr "算繪"
 msgid "**DisplayServer**"
 msgstr "**DisplayServer**"
 
+msgid ""
+"Method ``accessibility_create_sub_text_edit_elements`` adds a new "
+"``is_last_line`` optional parameter"
+msgstr ""
+"方法 ``accessibility_create_sub_text_edit_elements`` 新增了一個新的可選參數 "
+"``is_last_line``"
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid ""
+"Method ``tts_speak`` changes ``utterance_id`` parameter type metadata from "
+"``int32`` to ``int64``"
+msgstr ""
+"方法 ``tts_speak`` 將參數 ``utterance_id`` 的型別從 ``int32`` 更改為 "
+"``int64``"
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
 msgid "GUI nodes"
 msgstr "建立節點"
+
+msgid "**Control**"
+msgstr "**Control**"
+
+msgid "Method ``grab_focus`` adds a new ``hide_focus`` optional parameter"
+msgstr "方法 ``grab_focus`` 新增了一個新的可選參數 ``hide_focus``"
+
+msgid "`GH-110250`_"
+msgstr "`GH-110250`_"
+
+msgid ""
+"Method ``has_focus`` adds a new ``ignore_hidden_focus`` optional parameter"
+msgstr "方法 ``has_focus`` 新增了一個新的可選參數 ``ignore_hidden_focus``"
+
+msgid "**FileDialog**"
+msgstr "**FileDialog**"
+
+msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
+msgstr "方法 ``add_filter`` 新增了一個新的可選參數 ``mime_type``"
+
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "**LineEdit**"
+msgstr "**LineEdit**"
+
+msgid "Method ``edit`` adds a new ``hide_focus`` optional parameter"
+msgstr "方法 ``edit`` 新增了一個新的可選參數 ``hide_focus``"
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "**SplitContainer**"
+
+msgid ""
+"Method ``clamp_split_offset`` adds a new ``priority_index`` optional "
+"parameter"
+msgstr "方法 ``clamp_split_offset`` 新增了一個新的可選參數 ``priority_index``"
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
 
 msgid "Networking"
 msgstr "網路"
 
+msgid "**StreamPeerTCP**"
+msgstr "**StreamPeerTCP**"
+
+msgid ""
+"Method ``disconnect_from_host`` moved to base class ``StreamPeerSocket``"
+msgstr "方法 ``disconnect_from_host`` 移至基底類別 ``StreamPeerSocket``"
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "Method ``get_status`` moved to base class ``StreamPeerSocket``"
+msgstr "方法 ``get_status`` 移至基底類別 ``StreamPeerSocket``"
+
+msgid "Method ``poll`` moved to base class ``StreamPeerSocket``"
+msgstr "方法 ``poll`` 移至基底類別 ``StreamPeerSocket``"
+
+msgid "**TCPServer**"
+msgstr "**TCPServer**"
+
+msgid "Method ``is_connection_available`` moved to base class ``SocketServer``"
+msgstr "方法 ``is_connection_available`` 移至基底類別 ``SocketServer``"
+
+msgid "Method ``is_listening`` moved to base class ``SocketServer``"
+msgstr "方法 ``is_listening`` 移至基底類別 ``SocketServer``"
+
+msgid "Method ``stop`` moved to base class ``SocketServer``"
+msgstr "方法 ``stop`` 移至基底類別 ``SocketServer``"
+
 msgid "OpenXR"
 msgstr "OpenXR"
+
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid ""
+"Method ``_get_requested_extensions`` adds a new ``xr_version`` parameter"
+msgstr ""
+"方法 ``_get_requested_extensions`` 新增了一個新的可選參數 ``xr_version``"
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
+
+msgid ""
+"Method ``_set_instance_create_info_and_get_next_pointer`` adds  a new "
+"``xr_version`` parameter"
+msgstr ""
+"方法 ``_set_instance_create_info_and_get_next_pointer`` 新增了一個新的可選參"
+"數 ``xr_version``"
 
 msgid "N/A"
 msgstr "N/A"
 
+msgid ""
+"The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
+"GDExtensions. The method ``_set_instance_create_info_and_get_next_pointer`` "
+"has a ``void*`` parameter so it's not exposed to scripting."
+msgstr ""
+"``OpenXRExtensionWrapper`` 型別旨在從 GDExtensions 中細分為子類。方法 "
+"``_set_instance_create_info_and_get_next_pointer`` 有一個 ``void*`` 參數，所"
+"以不會暴露在腳本中。"
+
 msgid "Editor"
 msgstr "編輯器"
 
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPreset**"
+
+msgid ""
+"Method ``get_script_export_mode`` changes return type from ``int`` to "
+"``EditorExportPreset.ScriptExportMode``"
+msgstr ""
+"方法 ``get_script_export_mode`` 的回傳型別從 ``int`` 變為 "
+"``EditorExportPreset.ScriptExportMode``"
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**EditorFileDialog**"
+
+msgid "Method ``add_filter`` moved to base class ``FileDialog``"
+msgstr "方法 ``add_filter`` 移至基底類別 ``FileDialog``"
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "Method ``add_option`` moved to base class ``FileDialog``"
+msgstr "方法 ``add_option`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``add_side_menu`` removed"
+msgstr "移除了 ``add_side_menu`` 方法"
+
 msgid "|❌ with stub|"
 msgstr "|❌ 待兼容|"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
+
+msgid "Method ``clear_filename_filter`` moved to base class ``FileDialog``"
+msgstr "方法 ``clear_filename_filter`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``clear_filters`` moved to base class ``FileDialog``"
+msgstr "方法 ``clear_filters`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_filename_filter`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_filename_filter`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_line_edit`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_line_edit`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_option_default`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_option_default`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_option_name`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_option_name`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_option_values`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_option_values`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_selected_options`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_selected_options`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``get_vbox`` moved to base class ``FileDialog``"
+msgstr "方法 ``get_vbox`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``invalidate`` moved to base class ``FileDialog``"
+msgstr "方法 ``invalidate`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``popup_file_dialog`` moved to base class ``FileDialog``"
+msgstr "方法 ``popup_file_dialog`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``set_filename_filter`` moved to base class ``FileDialog``"
+msgstr "方法 ``set_filename_filter`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``set_option_default`` moved to base class ``FileDialog``"
+msgstr "方法 ``set_option_default`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``set_option_name`` moved to base class ``FileDialog``"
+msgstr "方法 ``set_option_name`` 移至基底類別 ``FileDialog``"
+
+msgid "Method ``set_option_values`` moved to base class ``FileDialog``"
+msgstr "方法 ``set_option_values`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``access`` moved to base class ``FileDialog``"
+msgstr "屬性 ``access`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``current_dir`` moved to base class ``FileDialog``"
+msgstr "屬性 ``current_dir`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``current_file`` moved to base class ``FileDialog``"
+msgstr "屬性 ``current_file`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``current_path`` moved to base class ``FileDialog``"
+msgstr "屬性 ``current_path`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``display_mode`` moved to base class ``FileDialog``"
+msgstr "屬性 ``display_mode`` 移動到基底類別 ``FileDialog``"
+
+msgid "Property ``file_mode`` moved to base class ``FileDialog``"
+msgstr "屬性 ``file_mode`` 移動到基底類別 ``FileDialog``"
+
+msgid "Property ``filters`` moved to base class ``FileDialog``"
+msgstr "屬性 ``filters`` 移至基底類別 ``FileDialog``"
+
+msgid "Property ``option_count`` moved to base class ``FileDialog``"
+msgstr "屬性 ``option_count`` 移動到基底類別 ``FileDialog``"
+
+msgid "Property ``show_hidden_files`` moved to base class ``FileDialog``"
+msgstr "屬性 ``show_hidden_files`` 移至基底類別 ``FileDialog``"
+
+msgid "Signal ``dir_selected`` moved to base class ``FileDialog``"
+msgstr "訊號 ``dir_selected`` 移動到基底類別 ``FileDialog``"
+
+msgid "Signal ``filename_filter_changed`` moved to base class ``FileDialog``"
+msgstr "訊號 ``filename_filter_changed`` 移動到基底類別 ``FileDialog``"
+
+msgid "Signal ``file_selected`` moved to base class ``FileDialog``"
+msgstr "訊號 ``file_selected`` 移動到基底類別 ``FileDialog``"
+
+msgid "Signal ``files_selected`` moved to base class ``FileDialog``"
+msgstr "訊號 ``files_selected`` 移動到基底類別 ``FileDialog``"
 
 msgid "Behavior changes"
 msgstr "做出更改"
@@ -106,11 +462,206 @@ msgstr "做出更改"
 msgid "Android"
 msgstr "Android"
 
+msgid ""
+"The source sets configuration for Android export templates has been updated "
+"to match the default Android Studio project structure (`GH-110829`_). This "
+"affects the directory layout of the Android project:"
+msgstr ""
+"Android 匯出範本的源集設定已更新，以匹配預設的 Android Studio 專案結構"
+"（ `GH-110829`_ ）。這會影響 Android 專案的目錄版面配置："
+
+msgid ""
+"Files previously in ``[Project root]/android/build/src/`` are now in "
+"``[Project root]/android/build/src/main/java/``."
+msgstr ""
+"之前位於 ``[專案根目錄]/android/build/src/`` 中的檔案現在位於 ``[專案根目錄]/"
+"android/build/src/main/java/`` 中。"
+
+msgid ""
+"Android manifest file and assets directory have been moved to ``src/main/`` "
+"subdirectories."
+msgstr "Android 清單檔案和素材目錄已移至 ``src/main/`` 子目錄。"
+
+msgid ""
+"For example, ``GodotApp.java`` moved from ``src/com/godot/game/"
+"GodotApp.java`` to ``src/main/java/com/godot/game/GodotApp.java``."
+msgstr ""
+"例如， ``GodotApp.java`` 從 ``src/com/godot/game/GodotApp.java`` 移動到了 "
+"``src/main/java/com/godot/game/GodotApp.java`` 。"
+
+msgid "The :ref:`doc_tscn_file_format` has changed in two ways in Godot 4.6:"
+msgstr "在 Godot 4.6 中，:ref:`doc_tscn_file_format` 發生了兩處改動："
+
+msgid ""
+"``load_steps`` is no longer written in scene files (`GH-103352`_). This "
+"attribute wasn't used by the editor."
+msgstr ""
+"場景檔案中將不再寫入 ``load_steps`` 屬性（`GH-103352`_）。因為這個屬性編輯器"
+"實際上並沒有用到。"
+
+msgid ""
+"Unique node IDs are now saved to scene files to help track nodes when they "
+"are moved or renamed (`GH-106837`_). This makes scene refactoring "
+"significantly more robust."
+msgstr ""
+"現在，場景檔案中會儲存唯一的節點 ID，以便在節點被移動或重新命名時進行追蹤"
+"（`GH-106837`_）。這讓場景重構變得穩健（可靠）得多。"
+
+msgid ""
+"The changes are backwards-compatible and forwards-compatible, which means "
+"scenes saved in Godot 4.5 can still be loaded in Godot 4.6 and vice-versa "
+"(regardless of other incompatible changes performed in the scene itself)."
+msgstr ""
+"這些變更具有向後相容性和向前相容性，這意味著在 Godot 4.5 中儲存的場景仍可載入"
+"到 Godot 4.6 中，反之亦然（無論場景本身是否進行了其他不相容的修改）。"
+
+msgid ""
+"As a result, when saving a scene that was last edited in Godot 4.5 in Godot "
+"4.6, significant diffs will occur in version control programs. These diffs "
+"are expected."
+msgstr ""
+"因此，當你在 Godot 4.6 中儲存一個上次在 Godot 4.5 里編輯過的場景時，版本控制"
+"軟體（比如 Git）里會出現大量的差異（diffs）。這些差異是預期之內的正常現象。"
+
+msgid ""
+"As a reminder, you can upgrade all files in a project to the latest format "
+"using :menu:`Project > Tools > Upgrade Project Files...` in the editor, then "
+"committing the changes to version control. This allows you to avoid large "
+"diffs later on when editing scenes."
+msgstr ""
+"溫馨提醒一下，你可以在編輯器的選單欄里點擊 :menu:`Project > Tools > Upgrade "
+"Project Files...` （專案 > 工具 > 升級專案檔案...），將專案中的所有檔案一鍵升"
+"級到最新的格式，然後再把這些改動提交到版本控制系統中。這樣做能讓你在後續編輯"
+"場景時，避免出現大量不必要的差異（diffs）。"
+
+msgid ""
+"The default blend mode for Glow is now Screen, which looks more correct but "
+"is significantly brighter than the previous Soft Light mode (`GH-110671`_)."
+msgstr ""
+"Glow（輝光）的預設混合模式現在改成了 Screen（濾色）。這種模式看起來更自然、更"
+"準確，但會比之前的 Soft Light（柔光）模式明顯亮得多（`GH-110671`_）。"
+
+msgid ""
+"Several other glow defaults were changed to ensure the glow didn't become "
+"too strong, but you will likely need to tweak glow properties in Environment "
+"after upgrading."
+msgstr ""
+"為了確保輝光效果不會變得過於強烈，官方還調整了其他幾項輝光的預設參數。但即便"
+"如此，在升級引擎後，你很可能還是需要手動微調一下 Environment（環境）中的輝光"
+"屬性。"
+
+msgid ""
+"In addition, glow's Soft Light blend mode now always behaves as it did "
+"previously with ``use_hdr_2d``, regardless of the Viewport's ``use_hdr_2d`` "
+"setting (`GH-109971`_)."
+msgstr ""
+"此外，輝光（glow）的“柔光（Soft Light）”混合模式現在的表現將始終與之前開啟 "
+"``use_hdr_2d`` 時的表現保持一致，而不再受 Viewport（視埠）的 ``use_hdr_2d`` "
+"設定影響 (`GH-109971`_)。"
+
+msgid ""
+"When using the Mobile renderer, the rewritten glow effect will look "
+"significantly different to the previous one for performance reasons "
+"(`GH-110077`_). You may need to further adjust glow settings in Environment "
+"to achieve a similar look to before."
+msgstr ""
+"當使用 Mobile（行動平台）渲染器時，出於效能最佳化的考慮，重寫的輝光效果在視覺"
+"上會與之前的版本有顯著差異（`GH-110077`_）。你可能需要進一步調整 Environment"
+"（環境）中的輝光設定，才能達到和以前類似的視覺效果。"
+
+msgid ""
+"Volumetric fog blending has been changed to be more physically accurate "
+"(`GH-112494`_). This will cause volumetric fog to appear brighter in most "
+"scenes."
+msgstr ""
+"體積霧的混合方式經過了調整，現在更加符合物理規律（`GH-112494`_）。這會導致在"
+"大多數場景中，體積霧看起來會比以前更亮。"
+
+msgid ""
+"To compensate for this, you will need to decrease volumetric fog density or "
+"brightness in Environment, or decrease the **Volumetric Fog Energy** "
+"property on specific lights."
+msgstr ""
+"為了抵消這種影響，你需要降低 Environment（環境）中的體積霧密度或亮度，或者調"
+"低特定燈光上的 **Volumetric Fog Energy** （體積霧能量）屬性。"
+
 msgid "Navigation"
 msgstr "導覽"
 
+msgid ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` and ``AStarGrid2D.get_point_path`` will now "
+"return an empty path when ``from_id`` is a disabled/solid point "
+"(`GH-113988`_)."
+msgstr ""
+"現在，當 ``from_id`` 是一個停用/實心點時， ``AStar2D.get_point_path`` 、 "
+"``AStar3D.get_point_path`` 、 ``AStarGrid2D.get_id_path`` 和 "
+"``AStarGrid2D.get_point_path`` 將回傳一個空路徑 (`GH-113988`_)。"
+
+msgid "Changed defaults"
+msgstr "預設值更改"
+
+msgid ""
+"The following default values have been changed. If your project relies on "
+"the previous defaults, you may need to explicitly set them to the old values."
+msgstr ""
+"以下預設值已更改 。如果你的專案取決於之前的預設值，則可能需要將其顯式設定為舊"
+"的值。"
+
+msgid ""
+"The default rendering driver on Windows for **newly created** projects is "
+"now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in "
+"Project Settings under ``rendering/rendering_device/driver.windows``."
+msgstr ""
+"Windows 系統上 **新建** 專案的預設渲染驅動程式現在是 :abbr:`D3D12 (Direct3D "
+"12)` (`GH-113213`_)。可以在專案設定的 ``rendering/rendering_device/"
+"driver.windows`` 下更改此設定。"
+
+msgid ""
+"The default 3D physics engine for **newly created** projects is now Jolt "
+"Physics (`GH-105737`_). This can be changed in Project Settings under "
+"``physics/3d/physics_engine``."
+msgstr ""
+"**新建專案** 的預設 3D 物理引擎現在是 Jolt Physics ( `GH-105737`_ )。可以在專"
+"案設定的 ``physics/3d/physics_engine`` 下更改此設定。"
+
+msgid "Member"
+msgstr "成員"
+
+msgid "Old Value"
+msgstr "舊值"
+
+msgid "New Value"
+msgstr "新值"
+
 msgid "**MeshInstance3D**"
 msgstr "**使用泛型方法**"
+
+msgid "Property ``skeleton``"
+msgstr "屬性 ``skeleton``"
+
+msgid "NodePath(\"..\")"
+msgstr "NodePath(\"..\")"
+
+msgid "NodePath(\"\")"
+msgstr "NodePath(\"\")"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
+
+msgid ""
+"The default value of ``skeleton`` has changed. Enable ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project "
+"Settings if the old behavior is needed for compatibility."
+msgstr ""
+"``骨骼`` 的預設值已更改 。如果為實現相容性需要舊的行為 ，請在專案設定中啟用 "
+"``animation/ compatibility /default_parent_skeleton_in_mesh_instance_3d`` 。"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "屬性 ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -118,11 +669,101 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "屬性 ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "**Environment**"
+msgstr "**Environment**"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "屬性 ``glow_blend_mode``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "屬性 ``glow_intensity``"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "Property ``glow_levels/2``"
+msgstr "屬性 ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "Property ``glow_levels/3``"
+msgstr "屬性 ``glow_levels/3``"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``glow_levels/4``"
+msgstr "屬性 ``glow_levels/4``"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "Property ``glow_levels/5``"
+msgstr "屬性 ``glow_levels/5``"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "屬性 ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "屬性/參數"
+
 msgid "**PopupMenu**"
 msgstr "**彈出選單（PopupMenu）**"
+
+msgid "Property ``submenu_popup_delay``"
+msgstr "屬性 ``submenu_popup_delay``"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSVTranslation**"
+
+msgid "Property ``compress``"
+msgstr "屬性 ``compress``"
+
+msgid "true"
+msgstr "true"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

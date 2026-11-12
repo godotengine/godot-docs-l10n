@@ -63,6 +63,12 @@ msgstr ""
 "要讓 CLion 正確載入 ``compile_commands.json``，你必須先在 CLion 設定好 "
 "Visual Studio 工具鏈。"
 
+msgid "Navigate to **Settings > Build, Execution, Deployment > Toolchains**"
+msgstr "前往 **設定 > 建置、執行與部署 > 工具鏈**"
+
+msgid "Click the **+** button and select ``Visual Studio``"
+msgstr "點擊 **+** 按鈕，然後選擇 ``Visual Studio``"
+
 msgid ""
 "CLion will attempt to detect your Visual Studio installation. If it is "
 "unsuccessful, use the file icon to the right of ``Toolset:`` to select the "
@@ -92,6 +98,11 @@ msgstr ""
 
 msgid "To add a custom build target that invokes SCons for compilation:"
 msgstr "新增以 SCons 編譯的自訂建置目標："
+
+msgid ""
+"Open CLion and navigate to **Settings > Build, Execution, Deployment > "
+"Custom Build Targets**"
+msgstr "打開 CLion，然後導航至 **設定 > 建置、執行與部署 > 自訂建置目標**"
 
 msgid "Click **Add target** and give the target a name, e.g. ``Godot debug``."
 msgstr "點擊 **Add target** 並命名（例如 ``Godot debug``）。"
@@ -198,6 +209,12 @@ msgstr ""
 
 msgid "You can configure CLion to ignore those files:"
 msgstr "你可以設定 CLion 來忽略這些檔案："
+
+msgid ""
+"Open CLion and navigate to **Settings > Editor > File Types > Ignored Files "
+"and Folders**"
+msgstr ""
+"打開 CLion，然後導航至 **設定 > 編輯器 > 檔案型別 > 忽略的檔案和資料夾**"
 
 msgid ""
 "Click the **+** button to add ``*.o`` and ``*.a`` to the list. In Windows, "

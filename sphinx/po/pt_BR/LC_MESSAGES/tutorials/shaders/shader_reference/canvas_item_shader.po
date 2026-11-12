@@ -443,6 +443,15 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
+msgid ""
+"Coordinate of pixel center, in pixels. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0, 0)``. Multiply by "
+"``SCREEN_PIXEL_SIZE`` for values from ``0.0`` to ``1.0``."
+msgstr ""
+"Coordenada do centro do pixel, em pixels. ``xy`` especifica a posição na "
+"viewport. O canto superior esquerdo da viewport é a origem, ``(0, 0)``. "
+"Multiplique por ``SCREEN_PIXEL_SIZE`` para valores de ``0.0`` a ``1.0``."
+
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 

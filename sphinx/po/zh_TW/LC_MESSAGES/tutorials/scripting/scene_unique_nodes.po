@@ -71,6 +71,14 @@ msgid "Same-scene limitation"
 msgstr "同場景限制"
 
 msgid ""
+"A scene unique node can only be retrieved by a node inside the same scene. "
+"To demonstrate this limitation, consider this example **Player** scene that "
+"instantiates a **Sword** scene:"
+msgstr ""
+"唯一場景節點僅能被同一場景內的節點檢索到。為說明這一限制，請參考以下範例： "
+"**Player** 場景會實例化一個 **Sword** 場景："
+
+msgid ""
 "Here are the results of ``get_node()`` calls inside the **Player** script:"
 msgstr "以下是在 **Player** 腳本內呼叫 ``get_node()`` 的結果："
 

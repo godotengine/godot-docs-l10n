@@ -123,11 +123,17 @@ msgstr "Emacs"
 msgid "``emacs +{line}:{col} {file}``"
 msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
+msgid "Sublime Text/Zed"
+msgstr "Sublime Text/Zed"
+
 msgid "``{project} {file}:{line}:{col}``"
 msgstr "``{project} {file}:{line}:{col}``"
 
 msgid "Visual Studio*"
 msgstr "Visual Studio*"
+
+msgid "``/edit \"{file}\"``"
+msgstr "``/edit \"{file}\"``"
 
 msgid ""
 "\\*: Arguments are not automatically detected, so you must fill them in "
@@ -153,7 +159,7 @@ msgstr ""
 msgid ""
 "For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "Visual Studio 必須指向 ``code.cmd`` 檔案。"
+msgstr "使用 Emacs 伺服器模式時，可以呼叫 ``emacsclient``，而不是 ``emacs``。"
 
 msgid ""
 "For Visual Studio, you will have to open the solution file ``.sln`` manually "

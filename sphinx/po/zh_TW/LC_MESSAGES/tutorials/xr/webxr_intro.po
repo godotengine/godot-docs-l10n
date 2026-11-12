@@ -11,8 +11,84 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "WebXR"
+msgstr "WebXR"
+
+msgid ""
+"WebXR is a web standard for delivering XR experiences right from a web "
+"browser, without the user needing to install anything. Godot has built-in "
+"support for WebXR."
+msgstr ""
+"WebXR 是一項 Web 標準，允許使用者直接通過瀏覽器體驗 XR 應用，無需安裝任何軟"
+"體。Godot 已內建對 WebXR 的支援。"
+
+msgid ""
+"As this uses the HTML export WebXR requires the use of the compatibility "
+"renderer. Godot currently requires multiview support for stereo rendering "
+"which is not available on all WebXR capable devices."
+msgstr ""
+"由於此操作涉及 HTML 匯出功能，WebXR 需要使用相容性渲染器。Godot 目前要求支援"
+"多檢視立體渲染，而這一功能並非所有支援 WebXR 的裝置都具備。"
+
 msgid "Setup"
 msgstr "設定"
+
+msgid ""
+"Setting up WebXR is a little different because your application always "
+"starts as a normal non-XR webpage. We thus define a 2D UI on our main page "
+"that includes a button that will switch to XR."
+msgstr ""
+"WebXR 的設定略有不同，因為您的應用程式始終以常規的非 XR 網頁形式啟動。因此，"
+"我們在主頁面上定義了一個 2D 使用者介面，其中包含一個可切換至 XR 模式的按鈕。"
+
+msgid "We will need the following code to make things work:"
+msgstr "我們需要以下程式碼來使系統正常執行："
+
+msgid ""
+"Make sure the \"Enable WebXR\" button's ``button_pressed`` signal calls the "
+"``_on_enter_webxr_button_pressed`` method."
+msgstr ""
+"確保“啟用 WebXR”按鈕的 ``button_pressed`` 訊號呼叫了 "
+"``_on_enter_webxr_button_pressed`` 方法。"
+
+msgid ""
+"In the code above we attempt to use the ``local-floor`` reference spaces. "
+"This reference spaces assumes gameplay where we need to know the player's "
+"height from the floor."
+msgstr ""
+"在上述程式碼中，我們嘗試使用 ``local-floor`` 參考空間。該參考空間適用於需要取"
+"得玩家距地面高度的遊戲場景。"
+
+msgid ""
+"For games where the player is seated inside of a vehicle, such as flight "
+"sims or racing games, the reference space ``local`` may be more appropriate."
+msgstr ""
+"對於玩家 seated 在車輛內的遊戲（例如飛行模擬遊戲或賽車遊戲），使用參考空間 "
+"``local`` 可能更為合適。"
+
+msgid "Controller input"
+msgstr "控制器輸入"
+
+msgid ""
+"The input system in WebXR works against a fixed set of inputs that obfuscate "
+"the actual hardware being used. In order to allow for code to be portable "
+"between a WebXR and OpenXR application these inputs are mapped to actions "
+"that overlap with the default action map used by our OpenXR interface."
+msgstr ""
+"WebXR 的輸入系統基於一組固定的輸入介面，這些介面用於掩蓋實際使用的硬體裝置。"
+"為實現 WebXR 與 OpenXR 應用程式之間的程式碼可移植性，這些輸入介面被映射到與我"
+"們 OpenXR 介面所使用的預設操作映射相重疊的操作上。"
+
+msgid ""
+"There are small differences such as WebXR separating touchpad and "
+"thumbsticks as separate inputs, instead of the primary and secondary input "
+"setup found in our default OpenXR action map."
+msgstr ""
+"存在一些細微差異，例如 WebXR 將觸控板與拇指搖桿作為獨立輸入裝置進行區分，而非"
+"採用我們在預設 OpenXR 操作映射中所採用的“主/次輸入”設定。"
+
+msgid "The core inputs are available for WebXR:"
+msgstr "核心輸入介面適用於 WebXR："
 
 msgid "Name"
 msgstr "Name"
@@ -23,8 +99,103 @@ msgstr "型別"
 msgid "Description"
 msgstr "說明"
 
+msgid "trigger_click"
+msgstr "trigger_click"
+
 msgid "Boolean"
 msgstr "布林"
 
+msgid "``true`` if the trigger is pressed"
+msgstr "``true`` 若觸發器被按下"
+
+msgid "trigger"
+msgstr "trigger"
+
 msgid "Float"
 msgstr "浮點數"
+
+msgid "Trigger value between 0.0 and 1.0"
+msgstr "觸發值範圍為 0.0 至 1.0"
+
+msgid "grip_click"
+msgstr "grip_click"
+
+msgid "``true`` if the grip button is pressed"
+msgstr "``true`` 若按下握把按鈕"
+
+msgid "grip"
+msgstr "grip"
+
+msgid "Grip value between 0.0 and 1.0"
+msgstr "抓握值範圍為 0.0 至 1.0"
+
+msgid "touchpad_click"
+msgstr "touchpad_click"
+
+msgid "``true`` if the touchpad is pressed"
+msgstr "``true`` 若觸摸板被按下"
+
+msgid "thumbstick_click"
+msgstr "thumbstick_click"
+
+msgid "``true`` if the thumbstick is pressed"
+msgstr "``true`` 若拇指搖桿被按下"
+
+msgid "ax_button"
+msgstr "ax_button"
+
+msgid "``true`` if the A or X button is pressed"
+msgstr "``true`` 當按下 A 或 X 按鍵時"
+
+msgid "by_button"
+msgstr "by_button"
+
+msgid "``true`` if the B or Y button is pressed"
+msgstr "``true`` 若按下 B 或 Y 按鈕"
+
+msgid "touchpad_x"
+msgstr "touchpad_x"
+
+msgid "Finger movement on the touchpad in the X direction"
+msgstr "在觸摸板上進行向X軸方向的手指移動"
+
+msgid "touchpad_y"
+msgstr "touchpad_y"
+
+msgid "Finger movement on the touchpad in the Y direction"
+msgstr "在觸控板上進行沿Y軸方向的手指移動"
+
+msgid "touchpad"
+msgstr "touchpad"
+
+msgid "Vector2"
+msgstr "Vector2"
+
+msgid "Touchpad input as a Vector2"
+msgstr "觸控板輸入（以 Vector2 形式）"
+
+msgid "thumbstick_x"
+msgstr "thumbstick_x"
+
+msgid "Thumbstick movement in the X direction"
+msgstr "拇指搖桿沿X軸方向移動"
+
+msgid "thumbstick_y"
+msgstr "thumbstick_y"
+
+msgid "Thumbstick movement in the Y direction"
+msgstr "拇指搖桿沿Y軸方向移動"
+
+msgid "thumbstick"
+msgstr "thumbstick"
+
+msgid "Thumbstick input as a Vector2"
+msgstr "拇指搖桿輸入（以 Vector2 形式）"
+
+msgid ""
+"WebXR also exposes ``aim`` and ``grip`` poses that respectively identify a "
+"forward facing location at the tip of the controller and a position on the "
+"controller grip."
+msgstr ""
+"WebXR 還提供了 ``aim`` 和 ``grip`` 兩種姿態資料，分別用於標識控制器尖端處的正"
+"前方位置以及控制器握把上的位置。"

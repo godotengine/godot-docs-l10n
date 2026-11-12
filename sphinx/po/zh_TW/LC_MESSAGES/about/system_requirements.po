@@ -50,6 +50,9 @@ msgstr "*範例：Intel Core 2 Duo E8200、AMD FX-4100、Snapdragon X Elite*"
 msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
 msgstr "**macOS：** x86_64 或 ARM CPU（Apple Silicon）"
 
+msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
+msgstr "*範例：英特爾第七代（Kaby Lake）處理器、蘋果M1芯片*"
+
 msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv7 or ARMv8 CPU"
@@ -97,8 +100,25 @@ msgstr "**網頁編輯器：** 8 GB"
 msgid "**Storage**"
 msgstr "**儲存空間**"
 
+msgid ""
+"200 MB (used for the executable, project files, and cache). Exporting "
+"projects requires downloading export templates separately (up to 1.5 GB "
+"after installation, depending on the target platforms chosen)."
+msgstr ""
+"200 MB（用於可執行檔、專案檔案及快取）。匯出專案需單獨下載匯出範本（安裝後總"
+"量可達 1.5 GB，具體取決於所選目標平台）。"
+
 msgid "**Operating system**"
 msgstr "**作業系統**"
+
+msgid ""
+"**Native editor:** Windows 10, macOS 11 (Intel Macs, Compatibility), macOS "
+"12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
+"distribution released after 2018"
+msgstr ""
+"**原生編輯器：** Windows 10、macOS 11（Intel Mac，相容性模式）、macOS 12"
+"（Intel Mac，Forward+/Mobile）、macOS 13（Apple Silicon Mac），以及 2018 年後"
+"發行的 Linux 發行版"
 
 msgid ""
 "**Web editor:** Recent versions of mainstream browsers: Firefox and "
@@ -164,6 +184,13 @@ msgid "**Web editor:** 6 GB"
 msgstr "**網頁編輯器：** 6 GB"
 
 msgid ""
+"**Native editor:** Android 7.0 (Compatibility) or Android 9.0 (Forward+/"
+"Mobile)"
+msgstr ""
+"**原生編輯器：**\\ Android 7.0（相容渲染器）、Android 9.0（Forward+/移動渲染"
+"器）"
+
+msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
 "the Godot editor on a simple 2D or 3D project:"
 msgstr ""
@@ -218,6 +245,17 @@ msgstr "**原生編輯器：** 8 GB"
 msgid "**Web editor:** 12 GB"
 msgstr "**網頁編輯器：** 12 GB"
 
+msgid ""
+"2 GB (used for the executable, project files, all export templates, and "
+"cache)"
+msgstr "2 GB（用於可執行檔、專案檔案、所有匯出範本及快取）"
+
+msgid ""
+"**Native editor:** Windows 11, macOS 14, Linux distribution released after "
+"2020"
+msgstr ""
+"**原生編輯器：** Windows 11、macOS 14，以及 2020 年後發行的 Linux 發行版"
+
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr "**網頁編輯器：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
 
@@ -248,6 +286,9 @@ msgstr "**相容性算繪器：** 具備完整 OpenGL ES 3.2 支援 GPU 的 SoC"
 
 msgid "**Native editor:** 6 GB"
 msgstr "**原生編輯器：** 6 GB"
+
+msgid "**Native editor:** Android 11.0"
+msgstr "**原生編輯器：** Android 11.0"
 
 msgid ""
 "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "
@@ -314,8 +355,31 @@ msgstr "**針對原生匯出：** 2 GB"
 msgid "**For web exports:** 4 GB"
 msgstr "**針對網頁匯出：** 4 GB"
 
+msgid "150 MB (used for the executable, project files, and cache)"
+msgstr "150 MB（用於可執行檔、專案檔案及快取）"
+
+msgid ""
+"**For native exports:** Windows 10, macOS 11 (Intel Macs, Compatibility), "
+"macOS 12 (Intel Macs, Forward+/Mobile), macOS 13 (Apple Silicon Macs), Linux "
+"distribution released after 2018"
+msgstr ""
+"**針對原生匯出：** Windows 10、macOS 11（Intel Mac，相容性模式）、macOS 12"
+"（Intel Mac，Forward+/Mobile）、macOS 13（Apple Silicon Mac），以及 2018 年後"
+"發行的 Linux 發行版"
+
+msgid ""
+"**For web exports:** Recent versions of mainstream browsers: Firefox and "
+"derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
+"WebKit derivatives."
+msgstr ""
+"**針對網頁匯出：** 主流瀏覽器的近期版本：Firefox 及其衍生版（含 ESR）、"
+"Chrome 和 Chromium 衍生版，以及 Safari 和 WebKit 衍生版。"
+
 msgid "**iOS:** SoC with 64-bit ARM CPU"
 msgstr "**iOS：** 具備 64 位元 ARM CPU 的 SoC"
+
+msgid "*Example: Apple A9 (iPhone 6S)*"
+msgstr "*範例：Apple A9（iPhone 6S）*"
 
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
@@ -331,6 +395,9 @@ msgstr ""
 "*範例（Vulkan）：Qualcomm Adreno 505、Mali-G71 MP2、Apple A12（iPhone XR/XS）"
 "*"
 
+msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
+msgstr "*範例（Metal）：Apple A12（iPhone XR/XS）*"
+
 msgid ""
 "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
 "Metal 3 support (iOS/iPadOS)"
@@ -338,11 +405,23 @@ msgstr ""
 "**行動裝置算繪器：** 具備完整 Vulkan 1.0 支援或支援 Metal 3（iOS/iPadOS）的 "
 "SoC（內含 GPU）"
 
+msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A9 (iPhone 6S)*"
+msgstr "*範例：Qualcomm Adreno 306、Mali-T628 MP6、Apple A9（iPhone 6S）*"
+
 msgid "**For native exports:** 1 GB"
 msgstr "**針對原生匯出：** 1 GB"
 
 msgid "**For web exports:** 2 GB"
 msgstr "**針對網頁匯出：** 2 GB"
+
+msgid ""
+"**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
+"Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
+"with Metal)"
+msgstr ""
+"**原生匯出支援：** Android 7.0（相容）、Android 9.0（Forward+/Mobile）、iOS "
+"15.0（Forward+/Mobile（支援 Vulkan））、iOS 16.0（Forward+/Mobile（支援 "
+"Metal））"
 
 msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
@@ -378,6 +457,12 @@ msgid "**For web exports:** 8 GB"
 msgstr "**針對網頁匯出：** 8 GB"
 
 msgid ""
+"**For native exports:** Windows 11, macOS 14, Linux distribution released "
+"after 2020"
+msgstr ""
+"**針對原生匯出：** Windows 11、macOS 14，以及 2020 年後發行的 Linux 發行版"
+
+msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr "**針對網頁匯出：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
 
@@ -400,6 +485,9 @@ msgid ""
 msgstr ""
 "**行動裝置算繪器：** 具備完整 Vulkan 1.2 支援或支援 Metal 3（iOS/iPadOS）的 "
 "SoC（內含 GPU）"
+
+msgid "**For native exports:** Android 9.0, iOS 16.0"
+msgstr "**適用於原生匯出：** Android 9.0、iOS 16.0"
 
 msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "

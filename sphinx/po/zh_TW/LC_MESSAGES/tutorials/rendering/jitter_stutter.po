@@ -50,13 +50,14 @@ msgid ""
 msgstr "一款在正常幀率下運作且沒有異常現象的遊戲，畫面會相當流暢："
 
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
-msgstr "出現*抖動*的遊戲會有持續微小晃動的現象："
+msgstr "出現 *抖動* 的遊戲會有持續微小晃動的現象："
 
 msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
 "*stop* or *roll back a frame* every few seconds:"
 msgstr ""
-"而出現*卡頓*的遊戲則大致上保持流暢，但每隔幾秒就會*停頓*或*倒退一個影格*："
+"而出現 *卡頓* 的遊戲則大致上保持流暢，但每隔幾秒就會 *停頓* 或 *倒退一個影格"
+"*："
 
 msgid "Jitter"
 msgstr "抖動"
@@ -357,8 +358,8 @@ msgstr ""
 "Window > V-Sync > Swapchain Image Count** 專案設定調整為 ``2`` 即啟用雙緩衝。"
 "不過，雙緩衝在無法達到螢幕刷新率時（如 CPU/GPU 效能不足），幀率會變得不穩定。"
 "例如 60 Hz 螢幕下，若三緩衝時遊戲幀率約 55 FPS，雙緩衝則會瞬間降到 30 FPS，然"
-"後再回升至 60 FPS。因此，僅建議在目標硬體能*穩定*輸出滿幀率時，才使用雙緩衝 "
-"V-Sync。"
+"後再回升至 60 FPS。因此，僅建議在目標硬體能 *穩定* 輸出滿幀率時，才使用雙緩"
+"衝 V-Sync。"
 
 msgid ""
 "Increasing the number of physics iterations per second can also reduce "
@@ -423,6 +424,104 @@ msgid "Hardware/OS-specific"
 msgstr "針對硬體／作業系統的建議"
 
 msgid ""
+"If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled, then cap the framerate in the "
+"project settings to a slightly lower value than your monitor's maximum "
+"refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-"
+"on/>`__."
+msgstr ""
+"若您的顯示器支援該功能，可考慮啟用可變刷新率（G-Sync/FreeSync）同時保持 V-"
+"Sync 為開啟狀態；隨後根據 `this page <https://blurbusters.com/howto-low-lag-"
+"vsync-on/>`__. 的建議，在專案設定中將影格率上限設為略低於顯示器最大刷新率的數"
+"值。"
+
+msgid ""
+"This may be counterintuitive at first, but capping the FPS below the maximum "
+"refresh rate range ensures that the OS never has to wait for vertical "
+"blanking to finish. This leads to *similar* input lag as V-Sync disabled "
+"with the same framerate cap (usually less than 1 ms greater), but without "
+"any tearing."
+msgstr ""
+"這乍看可能有違直覺，但將 FPS 限制在最大刷新率範圍之下，可確保作業系統無需等待"
+"垂直同步完成。由此產生的輸入延遲與停用 V-Sync 且採用相同影格率限制時的延遲 *"
+"相近* （通常相差不到 1 毫秒），且不會出現畫面撕裂現象。"
+
+msgid ""
+"The formula used to determine the framerate cap is ``refresh - (refresh * "
+"refresh / 3600.0)`` where ``refresh`` is the monitor's refresh rate in Hz. "
+"This table shows the framerate cap to use for common refresh rates (the cap "
+"is rounded down to the nearest integer):"
+msgstr ""
+"用於確定影格率上限的計算公式為 ``refresh - (refresh * refresh / 3600.0)`` ，"
+"其中 ``refresh`` 表示顯示器的刷新率（單位：Hz）。本表列出了適用於常見刷新率的"
+"影格率上限值（該值已向下取整至最接近的整數）："
+
+msgid "Refresh rate"
+msgstr "刷新率"
+
+msgid "Framerate cap"
+msgstr "影格率上限"
+
+msgid "60 Hz"
+msgstr "60 Hz"
+
+msgid "58 FPS"
+msgstr "58 FPS"
+
+msgid "75 Hz"
+msgstr "75 Hz"
+
+msgid "73 FPS"
+msgstr "73 FPS"
+
+msgid "120 Hz"
+msgstr "120 Hz"
+
+msgid "115 FPS"
+msgstr "115 FPS"
+
+msgid "144 Hz"
+msgstr "144 Hz"
+
+msgid "138 FPS"
+msgstr "138 FPS"
+
+msgid "165 Hz"
+msgstr "165 Hz"
+
+msgid "157 FPS"
+msgstr "157 FPS"
+
+msgid "240 Hz"
+msgstr "240 Hz"
+
+msgid "224 FPS"
+msgstr "224 FPS"
+
+msgid "360 Hz"
+msgstr "360 Hz"
+
+msgid "324 FPS"
+msgstr "324 FPS"
+
+msgid "480 Hz"
+msgstr "480 Hz"
+
+msgid "416 FPS"
+msgstr "416 FPS"
+
+msgid ""
+"This framerate cap can be set by changing the **Application > Run > Max "
+"FPS** project setting or assigning ``Engine.max_fps`` at runtime in a "
+"script. At higher refresh rates, a lower cap is needed to ensure timing "
+"inaccuracies don't cause the display to engage V-Sync (which would increase "
+"input lag)."
+msgstr ""
+"此影格率上限可通過修改 **應用程式 > 執行 > 最大 FPS** 專案設定，或在執行時通"
+"過腳本為 ``Engine.max_fps`` 設定該上限來設定。在較高刷新率下，需設定較低的影"
+"格率上限，以確保時序誤差不會導致顯示器啟用垂直同步（這會增加輸入延遲）。"
+
+msgid ""
 "On some platforms, you can also opt into a low-latency mode in the graphics "
 "driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** "
 "setting will give you the lowest possible latency, at the cost of slightly "
@@ -481,8 +580,8 @@ msgid ""
 "input device's polling rate (especially for mice)."
 msgstr ""
 "若您要回報輸入延遲問題，請附上用高速相機（如手機的慢動作錄影）拍攝的影片。影"
-"片**必須**同時錄到螢幕與輸入裝置，以便計算從輸入到畫面反應的影格數。請同時註"
-"明顯示器刷新率與輸入裝置（特別是滑鼠）的輪詢率。"
+"片 **必須** 同時錄到螢幕與輸入裝置，以便計算從輸入到畫面反應的影格數。請同時"
+"註明顯示器刷新率與輸入裝置（特別是滑鼠）的輪詢率。"
 
 msgid ""
 "Also, make sure to use the correct term (jitter, stutter, input lag) based "

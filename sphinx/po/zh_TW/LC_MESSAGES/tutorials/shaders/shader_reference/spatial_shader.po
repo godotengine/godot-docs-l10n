@@ -14,6 +14,19 @@ msgstr ""
 msgid "Spatial shaders"
 msgstr "空間著色器"
 
+msgid ""
+"Spatial shaders are used for shading 3D objects. They are the most complex "
+"type of shader Godot offers. Spatial shaders are highly configurable with "
+"different render modes and different rendering options (e.g. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Rim lighting, etc.). Users can "
+"optionally write vertex, fragment, and light processor functions to affect "
+"how objects are drawn."
+msgstr ""
+"空間著色器（Spatial shaders）用於對 3D 物體進行著色。它們是 Godot 提供的最複"
+"雜的一類著色器。空間著色器具有高度的可設定性，擁有不同的渲染模式和多樣的渲染"
+"選項（例如次表面散射、透光、環境光遮蔽、邊緣光等）。開發者可以選擇性地編寫頂"
+"點、片段和光照處理函式，來控制物體的具體繪製方式。"
+
 msgid "Render modes"
 msgstr "算繪模式"
 
@@ -91,6 +104,25 @@ msgstr "**depth_test_disabled**"
 msgid "Disable depth testing."
 msgstr "停用深度測試。"
 
+msgid "**depth_test_default**"
+msgstr "**預設深度測試**"
+
+msgid ""
+"Depth test will discard the pixel if it is behind other pixels. In Forward+ "
+"only, the pixel is also discarded if it's at the exact same depth as another "
+"pixel."
+msgstr ""
+"深度測試會在像素位於其他像素後方時將其丟棄。僅在 Forward+ 渲染器中，當像素與"
+"另一像素處於完全相同的深度時，該像素也會被丟棄。"
+
+msgid "**depth_test_inverted**"
+msgstr "**反向深度測試**"
+
+msgid ""
+"Depth test will discard the pixel if it is in front of other pixels. Useful "
+"for stencil effects."
+msgstr "深度測試會在像素位於其他像素前方時將其丟棄。此行為適用於範本效果。"
+
 msgid "**sss_mode_skin**"
 msgstr "**sss_mode_skin**"
 
@@ -127,6 +159,20 @@ msgstr "僅顯示反照率，不進行任何燈光或陰影計算，提升渲染
 
 msgid "**wireframe**"
 msgstr "**wireframe**"
+
+msgid ""
+"Geometry draws using lines (useful for troubleshooting). When using the "
+"Compatibility renderer, you must call "
+"``RenderingServer.set_debug_generate_wireframes(true)`` *before* the mesh is "
+"loaded for wireframe rendering to work. In the Compatibility renderer, "
+"backface culling is always disabled in wireframe mode, while in the Forward+ "
+"and Mobile renderers, the cull mode is respected."
+msgstr ""
+"幾何體使用線條進行繪製（這對故障排查非常有用）。當使用相容渲染器"
+"（Compatibility renderer）時，你必須在網格（mesh）載入 *之前* 呼叫 "
+"``RenderingServer.set_debug_generate_wireframes(true)`` ，線框渲染才會生效。"
+"在相容渲染器中，線框模式總是會停用背面剔除（backface culling）；而在 "
+"Forward+ 和 Mobile 渲染器中，則會正常遵循（網格原本的）剔除模式。"
 
 msgid "**debug_shadow_splits**"
 msgstr "**debug_shadow_splits**"
@@ -243,6 +289,9 @@ msgstr "使用頂點光照（取代逐像素光照）。"
 msgid "**particle_trails**"
 msgstr "**particle_trails**"
 
+msgid "Enables the trails when used on particle geometry."
+msgstr "當套用至粒子幾何體時，啟用拖尾效果。"
+
 msgid "**alpha_to_coverage**"
 msgstr "**alpha_to_coverage**"
 
@@ -263,6 +312,129 @@ msgid ""
 "Disable receiving depth-based or volumetric fog. Useful for ``blend_add`` "
 "materials like particles."
 msgstr "停用基於深度或體積的霧氣接收。對於如粒子的 ``blend_add`` 材質很有用。"
+
+msgid "Stencil modes"
+msgstr "範本模式"
+
+msgid ""
+"Stencil support is experimental, use at your own risk. We will try to not "
+"break compatibility as much as possible, but if significant flaws are found "
+"in the API, it may change in the next minor version."
+msgstr ""
+"範本支援目前處於實驗階段，請謹慎使用。我們會盡可能保持相容性，但如果發現 API "
+"存在重大缺陷，可能會在下一個次要版本中進行更改。"
+
+msgid ""
+"Stencil operations are a set of operations that allow writing to an "
+"efficient buffer in an hardware-accelerated manner. This is generally used "
+"to mask in or out parts of the scene."
+msgstr ""
+"範本操作是一組允許以硬體加速方式寫入高效緩衝區的操作。通常用於對場景的特定部"
+"分進行遮罩顯示或隱藏。"
+
+msgid "Some of the most well-known uses are:"
+msgstr "一些最常見的用途包括："
+
+msgid ""
+"Outlines: Mask out the inner mesh that is being outlined to avoid inner "
+"outlines."
+msgstr "輪廓線：遮罩掉正在繪製輪廓的內部網格，以避免出現內部輪廓。"
+
+msgid "X-Ray: Display a mesh behind other objects."
+msgstr "X 射線：顯示被其他物體遮擋的網格。"
+
+msgid ""
+"Portals: Draw geometry that is normally \"impossible\" (non-Euclidian) by "
+"masking objects."
+msgstr "傳送門：通過遮罩物體，繪製通常“不可能”實現的（非歐幾里得）幾何體。"
+
+msgid ""
+"You can only read from the stencil buffer in the transparent pass. Any "
+"attempt to read in the opaque pass will fail, as it's currently not "
+"supported behavior."
+msgstr ""
+"只能在透明渲染通道中讀取範本緩衝。在 opaque 渲染通道中嘗試讀取將會失敗，因為"
+"目前不支援該行為。"
+
+msgid ""
+"Note that for compositor effects, the main renderer's stencil buffer can't "
+"be copied to a custom texture."
+msgstr "請注意，對於合成器效果，主渲染器的範本緩衝無法複製到自訂紋理中。"
+
+msgid "Stencil mode"
+msgstr "範本模式"
+
+msgid "**read**"
+msgstr "**讀**"
+
+msgid "Read from the stencil buffer."
+msgstr "從範本緩衝讀取。"
+
+msgid "**write**"
+msgstr "**寫**"
+
+msgid "Write reference value to the stencil buffer."
+msgstr "將參考值寫入範本緩衝區。"
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_depth_fail**"
+
+msgid "Write reference value to the stencil buffer if the depth test fails."
+msgstr "如果深度測試失敗，則將參考值寫入範本緩衝區。"
+
+msgid "**compare_always**"
+msgstr "**始終通過比較**"
+
+msgid "Always pass stencil test."
+msgstr "始終通過範本測試。"
+
+msgid "**compare_equal**"
+msgstr "**compare_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is equal to the stencil buffer "
+"value."
+msgstr "當參考值等於範本緩衝中的值時，通過範本測試。"
+
+msgid "**compare_not_equal**"
+msgstr "**compare_not_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is not equal to the stencil buffer "
+"value."
+msgstr "如果參考值不等於範本緩衝區的值，則通過範本測試。"
+
+msgid "**compare_less**"
+msgstr "**小於時通過比較**"
+
+msgid ""
+"Pass stencil test if the reference value is less than the stencil buffer "
+"value."
+msgstr "如果參考值小於範本緩衝區的值，則通過範本測試。"
+
+msgid "**compare_less_or_equal**"
+msgstr "**compare_less_or_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is less than or equal to the "
+"stencil buffer value."
+msgstr "如果參考值小於或等於範本緩衝區的值，則通過範本測試。"
+
+msgid "**compare_greater**"
+msgstr "**大於時通過比較**"
+
+msgid ""
+"Pass stencil test if the reference value is greater than the stencil buffer "
+"value."
+msgstr "如果參考值大於範本緩衝區的值，則通過範本測試。"
+
+msgid "**compare_greater_or_equal**"
+msgstr "**compare_greater_or_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is greater than or equal to the "
+"stencil buffer value."
+msgstr "如果參考值大於或等於範本緩衝區的值，則通過範本測試。"
 
 msgid "Built-ins"
 msgstr "內建變數"
@@ -301,14 +473,51 @@ msgstr "內建變數"
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"自引擎啟動以來的全域時間，以秒為單位。它每經過 ``3,600`` 秒就會重設循環一次"
+"（這個時長可以通過 :ref:`rollover<class_ProjectSettings_property_rendering/"
+"limits/time/time_rollover_secs>` 設定來修改）。它"
+"受 :ref:`time_scale<class_Engine_property_time_scale>` （時間縮放/遊戲速度）"
+"的影響，但不受暫停（pausing）的影響。如果你需要一個不受 time_scale 影響的 "
+"``TIME`` 變數，可以新增你自己的 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>` ，並在每一影格更新它。"
+
 msgid "in float **PI**"
 msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"常數 ``PI`` （值為 ``3.141592`` ）。它是圓的周長與直徑的比值，也是轉半圈（180"
+"度）所包含的弧度數。"
 
 msgid "in float **TAU**"
 msgstr "in float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"常數 ``TAU`` （值為 ``6.283185`` ）。它等同於 ``PI * 2`` ，也就是一個完整圓周"
+"（整圈）所包含的弧度數。"
+
 msgid "in float **E**"
 msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr "常數 ``E`` （值為 ``2.718281`` ）。即歐拉數，自然對數的底數。"
 
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in bool **OUTPUT_IS_SRGB**"
@@ -329,6 +538,28 @@ msgid ""
 msgstr ""
 "裁剪空間的遠端 z 值。在 Forward+ 或行動算繪器中為 0.0，在相容性算繪器中為 "
 "-1.0。"
+
+msgid "in bool **IS_MULTIVIEW**"
+msgstr "在布林值 **IS_MULTIVIEW** 中"
+
+msgid ""
+"``true`` when output is stereoscopic (XR), ``false`` when output is "
+"monoscopic."
+msgstr ""
+"當輸出為立體（XR）時回傳 ``true`` ，當輸出為單目（普通平面）時回傳 "
+"``false`` 。"
+
+msgid "in bool **IN_SHADOW_PASS**"
+msgstr "在布林值 **IN_SHADOW_PASS** 中"
+
+msgid ""
+"``true`` when the shader is being rendered in a shadow mapping pass, "
+"``false`` otherwise. This can be used to render objects differently in "
+"shadow maps compared to their regular rendering."
+msgstr ""
+"當著色器正在陰影貼圖（shadow mapping）渲染通道中進行渲染時，回傳 ``true`` ；"
+"否則回傳 ``false`` 。這可以讓你在陰影貼圖中的物體呈現出與常規渲染時不同的外"
+"觀。"
 
 msgid "Vertex built-ins"
 msgstr "頂點階段內建變數"
@@ -382,6 +613,23 @@ msgstr ""
 "在產生實體（instancing）時，``INSTANCE_CUSTOM`` 變數包含自訂實例資料。用於粒"
 "子時內容通常如下："
 
+msgid "**x**: Current rotation angle in radians."
+msgstr "**x**：目前旋轉角度（弧度）。"
+
+msgid "**z**: Current animation frame."
+msgstr "**z**：目前動畫影格。"
+
+msgid "**y / w** (division): Lifetime fraction from ``0.0`` to ``1.0``."
+msgstr "**y / w** （除法）：從 ``0.0`` 到 ``1.0`` 的壽命佔比。"
+
+msgid ""
+"This allows you to easily adjust the shader to a particle system using "
+"default particle material. When writing a custom particle shader, this value "
+"can be used as desired."
+msgstr ""
+"這讓你能輕鬆地基於預設粒子材質，將 Shader（著色器）適配到粒子系統上。在編寫自"
+"訂粒子 Shader 時，你可以隨心所欲地利用這個值。"
+
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
 
@@ -403,6 +651,11 @@ msgstr "視圖空間到世界空間的轉換。"
 msgid "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
 msgstr "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
 
+msgid ""
+"View space to world space transform of the camera used to draw the current "
+"viewport."
+msgstr "用於繪製目前視埠的攝影機，從檢視空間到世界空間的變換。"
+
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
@@ -423,6 +676,11 @@ msgstr "節點位置（視圖空間）。"
 
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "in vec3 **CAMERA_POSITION_WORLD**"
+
+msgid ""
+"Camera position, in world space. Represents the midpoint of the two eyes "
+"when in multiview/stereo rendering."
+msgstr "世界空間中的相機位置。在多檢視/立體渲染時，表示兩眼的中點。"
 
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
 msgstr "in vec3 **CAMERA_DIRECTION_WORLD**"
@@ -473,6 +731,13 @@ msgstr "右眼用常數，值永遠為 1。"
 msgid "in vec3 **EYE_OFFSET**"
 msgstr "in vec3 **EYE_OFFSET**"
 
+msgid ""
+"Position offset for the eye being rendered, in view space. Only applicable "
+"for multiview rendering."
+msgstr ""
+"目前正在渲染的（單只）眼睛在檢視空間下的位置偏移量。僅適用於多檢視"
+"（Multiview）渲染。"
+
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
 
@@ -511,6 +776,10 @@ msgstr "副法線向量（模型空間），如啟用 ``world_vertex_coords`` �
 msgid "out vec4 **POSITION**"
 msgstr "out vec4 **POSITION**"
 
+msgid ""
+"If written to on any branch, overrides final vertex position in clip space."
+msgstr "如果在任何分支中被寫入（賦值），它將覆蓋裁剪空間中的最終頂點位置。"
+
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
@@ -525,6 +794,17 @@ msgstr "UV2 次通道。"
 
 msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
+
+msgid ""
+"Color from vertices. Limited to values between ``0.0`` and ``1.0`` for each "
+"channel and 8 bits per channel precision (256 possible levels). Alpha "
+"channel is supported. Values outside the allowed range are clamped, and "
+"values may be rounded due to precision limitations. Use ``CUSTOM0``-"
+"``CUSTOM3`` to pass data with more precision if needed."
+msgstr ""
+"來自頂點的顏色。每個通道的值限制在 ``0.0`` 到 ``1.0`` 之間，精度為每通道 8 位"
+"元（256 個可能的層級）。支援 Alpha 通道。超出允許範圍的值會被鉗制，且由於精度"
+"限制，值可能會被捨入。如需更高精度，請使用 ``CUSTOM0``-``CUSTOM3`` 傳遞資料。"
 
 msgid "out float **ROUGHNESS**"
 msgstr "out float **ROUGHNESS**"
@@ -601,6 +881,21 @@ msgstr "in vec4 **CUSTOM3**"
 msgid "Custom value from vertex primitive."
 msgstr "來自頂點原始資料的自訂值。"
 
+msgid "out float **Z_CLIP_SCALE**"
+msgstr "out float **Z_CLIP_SCALE**"
+
+msgid ""
+"If written to on any branch, scales the vertex towards the camera to avoid "
+"clipping into things like walls. Lighting and shadows will continue to work "
+"correctly when this is written to, but screen-space effects like SSAO and "
+"SSR may break with lower scales. Try to keep this value as close to ``1.0`` "
+"as possible."
+msgstr ""
+"如果在任何分支中對其進行了寫入（賦值），它會將頂點向相機方向進行縮放，以避免"
+"穿模到牆壁等物體里。當寫入該值時，光照和陰影依然能正常工作，但如果縮放比例設"
+"定得過低，螢幕空間特效（如 SSAO 環境光遮蔽和 SSR 螢幕空間反射）可能會出現異"
+"常。盡量讓該值保持在接近 ``1.0`` 的水平。"
+
 msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
 "and is better suited when floating point issues may arise. For example, if "
@@ -636,6 +931,17 @@ msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``VIEWPORT_SIZE``. ``z`` specifies fragment depth. "
+"It is also used as the output value for the fragment depth unless ``DEPTH`` "
+"is written to."
+msgstr ""
+"螢幕空間中的像素中心座標。``xy`` 指定在視窗中的位置，視埠左上角為原點 "
+"``(0.0, 0.0)``，右下角為 ``VIEWPORT_SIZE``。``z`` 指定片段深度；除非寫入 "
+"``DEPTH``，否則也會作為片段深度的輸出值。"
 
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
@@ -728,6 +1034,9 @@ msgstr ""
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
+msgid "Screen UV coordinate for the current pixel."
+msgstr "目前像素的螢幕 UV 座標。"
+
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr "sampler2D **DEPTH_TEXTURE**"
 
@@ -738,6 +1047,15 @@ msgstr ""
 
 msgid "out float **DEPTH**"
 msgstr "out float **DEPTH**"
+
+msgid ""
+"Custom depth value (range ``[0.0, 1.0]``). If ``DEPTH`` is written to in any "
+"shader branch, then you are responsible for setting ``DEPTH`` for **all** "
+"other branches. Otherwise, the graphics API will leave them uninitialized."
+msgstr ""
+"自訂深度值（取值範圍 ``[0.0, 1.0]`` ）。如果在 Shader 的任意一個分支中寫入了 "
+"``DEPTH`` ，那麼你就必須負責為 **所有** 其他分支設定 ``DEPTH`` 。否則，圖形 "
+"API 會使其保持未初始化狀態。"
 
 msgid ""
 "Normal that comes from the ``vertex()`` function, in view space. If "
@@ -763,11 +1081,38 @@ msgstr ""
 msgid "out vec3 **NORMAL_MAP**"
 msgstr "out vec3 **NORMAL_MAP**"
 
+msgid ""
+"Set normal here in tangent space if reading normal from a texture instead of "
+"``NORMAL``. The blue channel is ignored, as it's reconstructed in the engine "
+"instead. This allows normal maps with :abbr:`RGTC (Red-Green Texture "
+"Compression)` compression to work."
+msgstr ""
+"如果你是從紋理中讀取法線，而不是直接使用 ``NORMAL`` ，請在這裡（切線空間）設"
+"定法線。藍色通道會被忽略，因為它會在引擎內部被重新計算出來。這種做法可以讓使"
+"用了 :abbr:`RGTC (Red-Green Texture Compression)` 壓縮的法線貼圖正常工作。"
+
 msgid "out float **NORMAL_MAP_DEPTH**"
 msgstr "out float **NORMAL_MAP_DEPTH**"
 
 msgid "Depth from ``NORMAL_MAP``. Defaults to ``1.0``."
 msgstr "``NORMAL_MAP`` 的深度值，預設為 1.0。"
+
+msgid "out vec3 **BENT_NORMAL_MAP**"
+msgstr "輸出 vec3 **NORMAL_MAP**"
+
+msgid ""
+"Set bent normal map here in tangent space to enable :ref:`bent normals "
+"<doc_standard_material_3d_bent_normal_map>`. This is used to improve "
+"specular occlusion, and requires a specially authored bent normal map. The "
+"blue channel is ignored, as it's reconstructed in the engine instead. This "
+"allows bent normal maps with :abbr:`RGTC (Red-Green Texture Compression)` "
+"compression to work."
+msgstr ""
+"在這裡（切線空間）設定彎曲法線貼圖，以啟用 :ref:`bent normals "
+"<doc_standard_material_3d_bent_normal_map>` （彎曲法線）功能。這主要用於改善"
+"高光遮蔽（specular occlusion）的效果，並且需要你專門製作一張彎曲法線貼圖。藍"
+"色通道會被忽略，因為它會在引擎內部被重新計算出來。這種做法可以讓使用"
+"了 :abbr:`RGTC (Red-Green Texture Compression)` 壓縮的彎曲法線貼圖正常工作。"
 
 msgid "out vec3 **ALBEDO**"
 msgstr "out vec3 **ALBEDO**"
@@ -778,8 +1123,22 @@ msgstr "反照率（預設白色）。基底色。"
 msgid "out float **ALPHA**"
 msgstr "out float **ALPHA**"
 
+msgid ""
+"Alpha (range ``[0.0, 1.0]``). If read from or written to, the material will "
+"go to the transparent pipeline."
+msgstr ""
+"Alpha（取值範圍 ``[0.0, 1.0]`` ）。如果對其進行讀取或寫入操作，該材質將會進入"
+"透明渲染管線。"
+
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
+
+msgid ""
+"If written to on any branch, values below a certain amount of alpha are "
+"discarded."
+msgstr ""
+"如果在任何分支中對其進行了寫入（賦值），透明度（Alpha）低於特定數值的像素將會"
+"被丟棄。"
 
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "out float **ALPHA_HASH_SCALE**"
@@ -831,6 +1190,9 @@ msgstr ""
 msgid "out float **METALLIC**"
 msgstr "out float **METALLIC**"
 
+msgid "Metallic (range ``[0.0, 1.0]``)."
+msgstr "金屬度（範圍為 ``[0.0, 1.0]`` ）。"
+
 msgid "out float **SPECULAR**"
 msgstr "out float **SPECULAR**"
 
@@ -839,11 +1201,28 @@ msgid ""
 "disables reflections."
 msgstr "鏡面反射強度（非物理準確）。預設 0.5，設為 0.0 可停用反射。"
 
+msgid "Roughness (range ``[0.0, 1.0]``)."
+msgstr "粗糙度（範圍為 ``[0.0, 1.0]`` ）。"
+
 msgid "out float **RIM**"
 msgstr "out float **RIM**"
 
+msgid ""
+"Rim (range ``[0.0, 1.0]``). If used, Godot calculates rim lighting. Rim size "
+"depends on ``ROUGHNESS``."
+msgstr ""
+"邊緣光強度（取值範圍為 ``[0.0, 1.0]`` ）。如果使用了該參數，Godot 就會計算邊"
+"緣光效果。邊緣光的大小取決於 ``ROUGHNESS`` （粗糙度）。"
+
 msgid "out float **RIM_TINT**"
 msgstr "out float **RIM_TINT**"
+
+msgid ""
+"Rim Tint, range from ``0.0`` (white) to ``1.0`` (albedo). If used, Godot "
+"calculates rim lighting."
+msgstr ""
+"邊緣光色調，取值範圍從 ``0.0`` （白色）到 ``1.0`` （反照率/固有色）。如果使用"
+"了該參數，Godot 就會計算邊緣光效果。"
 
 msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
@@ -854,6 +1233,12 @@ msgid ""
 msgstr ""
 "在現有鏡面反射上新增小範圍的高光。如有使用，Godot 會自動計算 Clearcoat（透明"
 "漆層）。"
+
+msgid "out float **CLEARCOAT_ROUGHNESS**"
+msgstr "out float **CLEARCOAT_ROUGHNESS**"
+
+msgid "The roughness of the clearcoat. If used, Godot calculates clearcoat."
+msgstr "面漆的粗糙度；若啟用，Godot 將計算面漆參數。"
 
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
@@ -894,6 +1279,13 @@ msgstr "次表面散射穿透深度，值越高效果越深入物件內部。"
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
 
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces."
+msgstr ""
+"當該參數設定為高於 ``0.0`` 時，可增強地下散射透射率；這樣一來，即使在直射光照"
+"射的表面上也能觀察到該效果。"
+
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "inout vec3 **BACKLIGHT**"
 
@@ -915,6 +1307,13 @@ msgstr "環境遮蔽強度。用於搭配預先烘焙的 AO。"
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr "out float **AO_LIGHT_AFFECT**"
 
+msgid ""
+"How much ambient occlusion affects direct light (range ``[0.0, 1.0]``, "
+"default ``0.0``)."
+msgstr ""
+"環境光遮蔽（Ambient Occlusion）對直射光的影響程度（取值範圍為 ``[0.0, "
+"1.0]`` ，預設值為 ``0.0`` ）。"
+
 msgid "out vec3 **EMISSION**"
 msgstr "out vec3 **EMISSION**"
 
@@ -924,11 +1323,34 @@ msgstr "自發光顏色（HDR 可超過 ``(1.0, 1.0, 1.0)`` ）。"
 msgid "out vec4 **FOG**"
 msgstr "out vec4 **FOG**"
 
+msgid ""
+"If written to on any branch, blends final pixel color with ``FOG.rgb`` based "
+"on ``FOG.a``."
+msgstr ""
+"如果在任何分支中對其進行了寫入（賦值），最終的像素顏色將會根據 ``FOG.a`` （霧"
+"效的透明度/濃度）與 ``FOG.rgb`` （霧效的顏色）進行混合。"
+
 msgid "out vec4 **RADIANCE**"
 msgstr "out vec4 **RADIANCE**"
 
+msgid ""
+"If written to on any branch, blends environment map radiance with "
+"``RADIANCE.rgb`` based on ``RADIANCE.a``."
+msgstr ""
+"如果在任何分支中對其進行了寫入（賦值），環境貼圖的光照強度（radiance）將會根"
+"據 ``RADIANCE.a`` （透明度/混合係數）與 ``RADIANCE.rgb`` （自訂的光照顏色）進"
+"行混合。"
+
 msgid "out vec4 **IRRADIANCE**"
 msgstr "out vec4 **IRRADIANCE**"
+
+msgid ""
+"If written to on any branch, blends environment map irradiance with "
+"``IRRADIANCE.rgb`` based on ``IRRADIANCE.a``."
+msgstr ""
+"如果在任何分支中對其進行了寫入（賦值），環境貼圖的輻照度（irradiance）將會根"
+"據 ``IRRADIANCE.a`` （Alpha通道/混合係數）與 ``IRRADIANCE.rgb`` （自訂的輻照"
+"度顏色）進行混合。"
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -1071,6 +1493,13 @@ msgstr "out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "鏡面反射光輸出。"
+
+msgid ""
+"Alpha (range ``[0.0, 1.0]``). If written to on any branch, the material will "
+"go through the transparent pipeline."
+msgstr ""
+"Alpha（取值範圍 ``[0.0, 1.0]`` ）。如果在任何分支中對其進行了寫入（賦值），該"
+"材質就會走透明渲染管線。"
 
 msgid ""
 "Transparent materials also cannot cast shadows or appear in "

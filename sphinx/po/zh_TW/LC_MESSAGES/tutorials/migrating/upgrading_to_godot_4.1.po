@@ -425,7 +425,7 @@ msgid "**AnimationTrackEditPlugin**"
 msgstr "動畫軌編輯器"
 
 msgid "Type ``AnimationTrackEditPlugin`` removed"
-msgstr "動畫軌編輯器"
+msgstr "已移除型別 ``AnimationTrackEditPlugin``。"
 
 msgid "`GH-76413`_"
 msgstr "`GH-76413`_"
@@ -467,6 +467,11 @@ msgstr "**EditorUndoRedoManager**"
 
 msgid "Behavior changes"
 msgstr "做出更改"
+
+msgid ""
+"In 4.1, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr "4.1 引入了一些行為的更改，你可能需要調整專案。"
 
 msgid "**SubViewportContainer**"
 msgstr "建立內容"
@@ -537,6 +542,12 @@ msgid ""
 msgstr ""
 "第一個參數從 ``const GDExtensionInterface *p_interface`` 改為 "
 "``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
+
+msgid ""
+"The constructor for the ``init_obj`` variable now receives "
+"``p_get_proc_address`` as its first parameter"
+msgstr ""
+"``init_obj`` 變數的建構函式現在將 ``p_get_proc_address`` 作為其第一個參數"
 
 msgid ""
 "You also need to add an extra ``compatibility_minimum`` line to your "

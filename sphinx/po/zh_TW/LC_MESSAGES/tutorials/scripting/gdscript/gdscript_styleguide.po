@@ -246,6 +246,14 @@ msgstr ""
 "碼。"
 
 msgid ""
+"In the script editor, to toggle commenting of the selected code, "
+"press :kbd:`Ctrl + K`. This shortcut adds/removes a single ``#`` sign before "
+"any code on the selected lines."
+msgstr ""
+"在腳本編輯器中，要切換所選程式碼的注釋狀態，請按下 :kbd:`Ctrl + K` 。此快速鍵"
+"會在所選行中的任意程式碼前新增或刪除一個 ``#`` 符號。"
+
+msgid ""
 "Prefer writing comments on their own line as opposed to inline comments "
 "(comments written on the same line as code). Inline comments are best used "
 "for short comments, typically a few words at most:"
@@ -414,6 +422,11 @@ msgstr "函式與變數"
 
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "函式與變數名稱請使用 snake\\_case："
+
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods/functions the user must "
+"override, private functions, and private variables:"
+msgstr "在使用者必須覆寫的方法/函式、私有函式及私有變數前新增單個底線（\\_）："
 
 msgid "Use the past tense to name signals:"
 msgstr "訊號使用過去式來命名："

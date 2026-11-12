@@ -236,6 +236,22 @@ msgstr "如分頁位置、*StyleBox* 等設定，可於 *TabContainer* 的主題
 msgid "Split Container"
 msgstr "分割容器"
 
+msgid ""
+"Arranges child controls vertically or horizontally and creates grabbers "
+"between them (via :ref:`HSplitContainer <class_HSplitContainer>` "
+"and :ref:`VSplitContainer <class_VSplitContainer>`). Respects both "
+"horizontal and vertical expand flags, as well as *Stretch Ratio*."
+msgstr ""
+"將子控制項垂直或水平排列，並在它們之間建立可拖動的分割條（通"
+"過 :ref:`HSplitContainer <class_HSplitContainer>` 和 :ref:`VSplitContainer "
+"<class_VSplitContainer>` 實現）。它同時支援水平和垂直方向的擴充（expand）標"
+"誌，以及 拉伸比例（*Stretch Ratio*）。"
+
+msgid ""
+"The grabbers can be dragged around to change the size relation between the "
+"children:"
+msgstr "可以通過拖動分割條（grabbers）來改變子控制項之間的大小比例。"
+
 msgid "PanelContainer"
 msgstr "PanelContainer"
 
@@ -291,6 +307,19 @@ msgstr ""
 
 msgid "AspectRatioContainer"
 msgstr "比例容器"
+
+msgid ""
+"A container type that arranges its child controls in a way that preserves "
+"their proportions automatically when the container is resized. "
+"(via :ref:`AspectRatioContainer <class_AspectRatioContainer>`). It has "
+"multiple stretch modes, providing options for adjusting the child controls' "
+"sizes relative to the container: **Width Controls Height**, **Height "
+"Controls Width**, **Fit**, and **Cover**."
+msgstr ""
+"一種容器型別，其子控制項的版面配置方式可在容器尺寸調整時自動保持其比例。（參"
+"見 :ref:`AspectRatioContainer <class_AspectRatioContainer>`）。該容器支援多種"
+"伸縮模式，可為調整子控制項相對於容器的尺寸提供多種選項： **寬度控制高度** 、 "
+"**高度控制寬度** 、 **適配** 及 **覆蓋** 。"
 
 msgid ""
 "It is useful when you have a container that needs to be dynamic and "

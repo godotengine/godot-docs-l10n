@@ -129,6 +129,13 @@ msgstr ""
 "內建資源與外部資源的切換會在你儲存場景時發生。在上述例子中，如果你將 path 設"
 "為空字串並儲存，Godot 會把圖片嵌入到 ``.tscn`` 場景檔案內。"
 
+msgid ""
+"Even if you save a built-in resource, when you instantiate a scene multiple "
+"times, the engine will only load one copy of it."
+msgstr ""
+"即使您節省了內建資源，當您多次實例化同一場景時，引擎也僅會載入該場景的一個副"
+"本。"
+
 msgid "Loading resources from code"
 msgstr "從程式碼載入資源"
 
@@ -144,6 +151,13 @@ msgid ""
 msgstr ""
 "你也可以使用 ``preload`` 預載資源。和 ``load`` 不同，這個函式會在編譯階段就從"
 "硬碟讀取檔案並載入。因此，``preload`` 不能使用變數路徑，只能用常數字串。"
+
+msgid ""
+"Preloaded resources will only be freed on exit. However, users should not "
+"rely on this behavior, as it may change in the near future."
+msgstr ""
+"預先載入的資源只會在程式結束時釋放。不過，使用者不應依賴此行為，因為這項行為"
+"可能在不久的將來變更。"
 
 msgid "Loading scenes"
 msgstr "載入場景"

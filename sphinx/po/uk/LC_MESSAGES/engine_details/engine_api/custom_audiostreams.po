@@ -124,8 +124,27 @@ msgstr ""
 "Оскільки AudioStreamPlayback контролюється звуковим потоком, введення/"
 "виведення та динамічний розподіл пам’яті заборонені."
 
+msgid "audiostream_playback_mytone.h"
+msgstr "audiostreamplayer_mytone.h"
+
+msgid "audiostream_playback_mytone.cpp"
+msgstr "audiostreamplayer_mytone.cpp"
+
 msgid "Usage"
 msgstr "Використання"
+
+msgid ""
+"The ``set_freq`` and ``get_freq`` methods allow direct change of the "
+"frequency parameter. But one can also use the more generic way to handle "
+"parameters based on properties through ``get/set(\"parameters/Frequency\")``."
+msgstr ""
+"Методи ``set_freq`` і ``get_freq`` дають змогу безпосередньо змінювати "
+"параметр частоти. Але можна також використовувати загальніший спосіб "
+"керування параметрами на основі властивостей через ``get/set(\"parameters/"
+"Frequency\")``."
+
+msgid "audiostream_player_mytone.gd"
+msgstr "audiostreamplayer_mytone.h"
 
 msgid "Resampling"
 msgstr "Зміна частоти"

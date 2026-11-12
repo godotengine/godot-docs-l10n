@@ -205,6 +205,24 @@ msgstr "內建變數"
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"自引擎啟動以來的全域時間，以秒為單位。它每經過 ``3,600`` 秒就會重設循環一次"
+"（這個時長可以通過 :ref:`rollover<class_ProjectSettings_property_rendering/"
+"limits/time/time_rollover_secs>` 設定來修改）。它"
+"受 :ref:`time_scale<class_Engine_property_time_scale>` （時間縮放/遊戲速度）"
+"的影響，但不受暫停（pausing）的影響。如果你需要一個不受 time_scale 影響的 "
+"``TIME`` 變數，可以新增你自己的 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>` ，並在每一影格更新它。"
+
 msgid "in vec3 **POSITION**"
 msgstr "in vec3 **POSITION**"
 
@@ -214,14 +232,30 @@ msgstr "相機在世界座標中的位置。"
 msgid "samplerCube **RADIANCE**"
 msgstr "samplerCube **RADIANCE**"
 
+msgid ""
+"Radiance cubemap. Can only be read from during the background pass. Check ``!"
+"AT_CUBEMAP_PASS`` before using."
+msgstr ""
+"輻射立方體貼圖（Radiance cubemap）。只能在背景渲染通道（background pass）中讀"
+"取。使用前請檢查 ``!AT_CUBEMAP_PASS`` 。"
+
 msgid "in bool **AT_HALF_RES_PASS**"
 msgstr "in bool **AT_HALF_RES_PASS**"
+
+msgid "``true`` when rendering to the half resolution pass."
+msgstr "當正在渲染半解析度通道時，該值為 ``true`` 。"
 
 msgid "in bool **AT_QUARTER_RES_PASS**"
 msgstr "in bool **AT_QUARTER_RES_PASS**"
 
+msgid "``true`` when rendering to the quarter resolution pass."
+msgstr "當正在渲染四分之一解析度通道時，該值為 ``true`` 。"
+
 msgid "in bool **AT_CUBEMAP_PASS**"
 msgstr "in bool **AT_CUBEMAP_PASS**"
+
+msgid "``true`` when rendering to the radiance cubemap."
+msgstr "當正在渲染輻射立方體貼圖（radiance cubemap）時，該值為 ``true`` 。"
 
 msgid "in bool **LIGHTX_ENABLED**"
 msgstr "in bool **LIGHTX_ENABLED**"
@@ -264,11 +298,30 @@ msgstr ""
 msgid "in float **PI**"
 msgstr "in float **PI**"
 
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"常數 ``PI`` （值為 ``3.141592`` ）。它是圓的周長與直徑的比值，也是轉半圈（180"
+"度）所包含的弧度數。"
+
 msgid "in float **TAU**"
 msgstr "in float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"常數 ``TAU`` （值為 ``6.283185`` ）。它等同於 ``PI * 2`` ，也就是一個完整圓周"
+"（整圈）所包含的弧度數。"
+
 msgid "in float **E**"
 msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr "常數 ``E`` （值為 ``2.718281`` ）。即歐拉數，自然對數的底數。"
 
 msgid "Sky built-ins"
 msgstr "天空內建變數"
@@ -276,8 +329,18 @@ msgstr "天空內建變數"
 msgid "in vec3 **EYEDIR**"
 msgstr "in vec3 **EYEDIR**"
 
+msgid ""
+"Normalized direction of the current pixel. Use this as your basic direction "
+"for procedural effects."
+msgstr "目前像素的正規化方向。在製作程式化特效時，可以用它作為基礎的方向參考。"
+
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
+
+msgid ""
+"Screen UV coordinate for the current pixel. Used to map a texture to the "
+"full screen."
+msgstr "目前像素的螢幕 UV 座標。用於將紋理映射到整個螢幕上。"
 
 msgid "in vec2 **SKY_COORDS**"
 msgstr "in vec2 **SKY_COORDS**"
@@ -288,8 +351,21 @@ msgstr "球面 UV。用於將全景紋理貼圖到天空。"
 msgid "in vec4 **HALF_RES_COLOR**"
 msgstr "in vec4 **HALF_RES_COLOR**"
 
+msgid ""
+"Color value of the corresponding pixel from the half resolution pass. Uses "
+"linear filter."
+msgstr ""
+"來自半解析度（half resolution）渲染通道的對應像素顏色值。使用線性濾波。"
+
 msgid "in vec4 **QUARTER_RES_COLOR**"
 msgstr "in vec4 **QUARTER_RES_COLOR**"
+
+msgid ""
+"Color value of the corresponding pixel from the quarter resolution pass. "
+"Uses linear filter."
+msgstr ""
+"來自四分之一解析度（quarter resolution）渲染通道的對應像素顏色值。使用線性濾"
+"波。"
 
 msgid "out vec3 **COLOR**"
 msgstr "out vec3 **COLOR**"

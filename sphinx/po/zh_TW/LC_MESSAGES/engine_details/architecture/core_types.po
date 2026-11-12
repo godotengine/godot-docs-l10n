@@ -26,6 +26,14 @@ msgstr "本參考資料將依序列出這些型別，幫助使用者更好地理
 msgid "Allocating memory"
 msgstr "記憶體分配"
 
+msgid ""
+"Godot has many tricks for ensuring memory safety and tracking memory usage. "
+"Because of this, the regular C and C++ library calls should not be used. "
+"Instead, a few replacements are provided."
+msgstr ""
+"Godot 有許多確保記憶體安全和追蹤記憶體使用情況的技巧。因此，不應使用常規的 C "
+"和 C++ 庫呼叫。取而代之的是幾個替代方案。"
+
 msgid "For C-style allocation, Godot provides a few macros:"
 msgstr "對於 C 風格分配，Godot 提供了一些巨集："
 
@@ -42,6 +50,15 @@ msgid ""
 "These are equivalent to ``new``, ``delete``, ``new[]``, and ``delete[]`` "
 "respectively."
 msgstr "這些巨集分別對應於 ``new``、``delete``、``new[]`` 與 ``delete[]``。"
+
+msgid ""
+"``memnew``/``memdelete`` also use a little C++ magic to automatically call "
+"post-init and pre-release functions. For example, this is used to notify "
+"Objects right after they are created, and right before they are deleted."
+msgstr ""
+"``memnew``/``memdelete`` 還利用了一些 C++ 的“魔法”來自動呼叫後初始化（post-"
+"init）和預釋放（pre-release）函式。例如，這用於在物件剛建立後以及即將被刪除前"
+"通知它們。"
 
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
@@ -83,6 +100,13 @@ msgstr "|string| 📜"
 
 msgid "``std::string``"
 msgstr "``std::string``"
+
+msgid ""
+"**Use this as the \"default\" string type.** ``String`` uses UTF-32 encoding "
+"to simplify processing thanks to its fixed character size."
+msgstr ""
+"**請作為“預設”字串型別使用。**\\ ``String`` 使用 UTF-32 編碼，字元大小固定，"
+"從而簡化了處理過程。"
 
 msgid "|vector|"
 msgstr "|vector|"
@@ -131,6 +155,19 @@ msgid ""
 "are referenced frequently and used in multiple locations in the engine."
 msgstr ""
 "使用字串駐留以加速比較。適合用在經常被引用、且在引擎多處使用的靜態字串。"
+
+msgid "|char_string|, |char16_string|"
+msgstr "|char_string|, |char16_string|"
+
+msgid "``std::u8string`` ``std::u16string``"
+msgstr "``std::u8string`` ``std::u16string``"
+
+msgid ""
+"``String``-likes that use ``char`` and ``char16_t``, respectively. These are "
+"aliases of ``CharStringT<T>``; ``wchar_t`` and others are also supported."
+msgstr ""
+"``String`` -like 型別分別使用 ``char`` 和 ``char16_t`` ；這些均為 "
+"``CharStringT<T>`` 的別名；此外還支援 ``wchar_t`` 等其他型別。"
 
 msgid "|local_vector|"
 msgstr "|local_vector|"
@@ -209,6 +246,17 @@ msgstr "|span|"
 msgid "``std::span``"
 msgstr "``std::span``"
 
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. ``Span`` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"用於對連續陣列進行只讀存取，且無需複製任何資料。請注意， ``Span`` 是一款高效"
+"能 API：它不採用您在其他 Godot 容器中常見的參數正確性檢查方式；請謹慎使用。 "
+"``Span`` 可通過大多數類陣列容器（例如 ``vector.span()`` ）建置。"
+
 msgid "|rb_set|"
 msgstr "|rb_set|"
 
@@ -255,6 +303,15 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black_tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"一種使用 `紅黑樹 <https://en.wikipedia.org/wiki/Red-black_tree>`__ 來尋找鍵"
+"（key）的 Map 型別。由於 ``RBMap`` 的效能優勢尚未得到證實，因此建議優先使用其"
+"他型別。"
+
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
 
@@ -278,6 +335,169 @@ msgstr "|pair|"
 
 msgid "``std::pair``"
 msgstr "``std::pair``"
+
+msgid ""
+"Stores a single pair. See also ``KeyValue`` in the same file, which uses "
+"read-only keys."
+msgstr ""
+"它用來儲存單一的一對資料。另外也可以看看同一個檔案里的 ``KeyValue`` ，不過 "
+"KeyValue 里的鍵（key）是只讀的。"
+
+msgid "Relocation safety"
+msgstr "重定位安全性"
+
+msgid ""
+"Godot's containers assume their elements are `trivially relocatable <https://"
+"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
+msgstr ""
+"Godot 的容器（Containers）假設其內部元素是 `trivially relocatable <https://"
+"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__。"
+
+msgid ""
+"This means that, if you store data types in it that have pointers to "
+"themselves, or are otherwise `not trivially relocatable <https://open-"
+"std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-"
+"samples>`__, Godot might crash. Note that storing **pointers to** objects "
+"that are not trivially relocatable, such as some Object subclasses, is "
+"unproblematic and supported."
+msgstr ""
+"這意味著，如果你在裡面儲存的資料型別包含指向自身的指針，或者由於其他原因導致"
+"它不是 `not trivially relocatable <https://open-std.org/JTC1/SC22/WG21/docs/"
+"papers/2020/p1144r5.html#non-trivial-samples>`__ ，Godot 可能會崩潰。不過請注"
+"意，儲存 **指向** 那些‘非簡單可重定位’物件（比如某些 Object 的子類）的指針，"
+"則是完全沒有問題的，並且受到支援。"
+
+msgid ""
+"The reason to assume trivial relocatability is that it allows us to make use "
+"of important optimization techniques, such as relocation by ``memcpy`` or "
+"``realloc``."
+msgstr ""
+"之所以要假設（某型別）具備平凡可重定位性，是因為這樣我們就能利用一些重要的最"
+"佳化技術，比如直接通過 ``memcpy`` 或 ``realloc`` 來進行重定位。"
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ 追蹤此決"
+"定。"
+
+msgid "Multithreading / Concurrency"
+msgstr "多執行緒 / 併發"
+
+msgid ""
+"You can find more information on multithreading strategies "
+"at :ref:`doc_using_multiple_threads`."
+msgstr ""
+"你可以在這裡找到更多關於多執行緒策略的資訊 :ref:`doc_using_multiple_threads`."
+
+msgid ""
+"None of Godot's containers are thread-safe. When you expect multiple threads "
+"to access them, you must use multithread protections."
+msgstr ""
+"Godot 的所有容器（Containers）都不是執行緒安全的。如果你預計會有多個執行緒同"
+"時存取它們，就必須自行使用多執行緒保護機制。"
+
+msgid ""
+"Note that some of the types listed here are also available through the "
+"bindings, but the binding types are wrapped with :ref:`class_RefCounted` "
+"(found in the ``CoreBind::`` namespace). Prefer the primitives listed here "
+"when possible, for efficiency reasons."
+msgstr ""
+"請注意，這裡列出的某些型別也可以通過綁定（bindings）來使用，但這些綁定型別都"
+"被 :ref:`class_RefCounted` (found in the ``CoreBind::`` namespace)包裹了一"
+"層。出於效率考慮，請盡可能優先使用這裡列出的原生基礎型別。"
+
+msgid "|mutex|"
+msgstr "|mutex|"
+
+msgid "``std::recursive_mutex``"
+msgstr "``std::recursive_mutex``"
+
+msgid "Recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"遞歸互斥鎖（Recursive mutex）型別。請使用 ``MutexLock lock(mutex)`` 語法來對"
+"它進行加鎖。"
+
+msgid "|binary_mutex|"
+msgstr "|binary_mutex|"
+
+msgid "``std::mutex``"
+msgstr "``std::mutex``"
+
+msgid "Non-recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"非遞歸互斥鎖（Non-recursive mutex）型別。請使用 ``MutexLock lock(mutex)`` 語"
+"法來對它進行加鎖。"
+
+msgid "|rw_lock|"
+msgstr "|rw_lock|"
+
+msgid "``std::shared_mutex``"
+msgstr "``std::shared_mutex``"
+
+msgid ""
+"Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "
+"lock(mutex)`` to lock it."
+msgstr ""
+"一種能識別“讀/寫”狀態的互斥鎖型別。請使用 ``RWLockRead lock(mutex)`` 或者 "
+"``RWLockWrite lock(mutex)`` 的語法來對它進行加鎖。"
+
+msgid "|safe_binary_mutex|"
+msgstr "|safe_binary_mutex|"
+
+msgid ""
+"Recursive mutex type that can be used with ``ConditionVariable``. Use "
+"``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"一種可以與 ``ConditionVariable`` 搭配使用的遞歸互斥鎖型別。使用 ``MutexLock "
+"lock(mutex)`` 來對它進行加鎖。"
+
+msgid "|condition_variable|"
+msgstr "|condition_variable|"
+
+msgid "``std::condition_variable``"
+msgstr "``std::condition_variable``"
+
+msgid "Condition variable type, used with ``SafeBinaryMutex``."
+msgstr "條件變數型別，需配合 ``SafeBinaryMutex`` 一起使用。"
+
+msgid "|semaphore|"
+msgstr "|semaphore|"
+
+msgid "``std::counting_semaphore``"
+msgstr "``std::counting_semaphore``"
+
+msgid "Counting semaphore type."
+msgstr "計數 semaphore 型別。"
+
+msgid "|safe_numeric|"
+msgstr "|safe_numeric|"
+
+msgid "``std::atomic``"
+msgstr "``std::atomic``"
+
+msgid "Templated atomic type, designed for numbers."
+msgstr "專為數字設計的、基於範本的原子型別。"
+
+msgid "|safe_flag|"
+msgstr "|safe_flag|"
+
+msgid "``std::atomic_bool``"
+msgstr "``std::atomic_bool``"
+
+msgid "Bool atomic type."
+msgstr "布林（Bool）原子型別。"
+
+msgid "|safe_ref_count|"
+msgstr "|safe_ref_count|"
+
+msgid ""
+"Atomic type designed for reference counting. Will refuse to increment the "
+"reference count if it is 0."
+msgstr ""
+"這是一種專為參照計數設計的原子型別。如果目前的參照計數已經是 0，它將拒絕（或"
+"者說無法）再執行遞增操作。"
 
 msgid "Math types"
 msgstr "數學型別"

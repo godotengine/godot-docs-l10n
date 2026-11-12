@@ -11,6 +11,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Texture blit shaders"
+msgstr "紋理複製著色器"
+
+msgid ""
+"Texture blit shaders are used to define the behavior of blit calls on "
+"a :ref:`DrawableTexture2D <doc_drawable_textures>`."
+msgstr ""
+"紋理複製著色器用於定義在 :ref:`DrawableTexture2D <doc_drawable_textures>` 上"
+"執行複製呼叫時的行為。"
+
+msgid ""
+"Texture blit shaders only have one processing function, the ``blit()`` "
+"function, which runs for every pixel of the source texture inside the rect "
+"given to ``blit_rect()``."
+msgstr ""
+"紋理複製著色器僅包含一項處理功能——即 ``blit()`` 函式；該函式會針對 "
+"``blit_rect()`` 所接收的矩形區域內來源紋理中的每個像素進行處理。"
+
+msgid ""
+"See :ref:`doc_drawable_textures` for more information on how to use texture "
+"blit shaders as part of a DrawableTexture."
+msgstr ""
+"有關如何將紋理複製著色器作為 `DrawableTexture` 的一部分使用的更多資訊，請參"
+"閱 :ref:`doc_drawable_textures` 。"
+
 msgid "Render modes"
 msgstr "算繪模式"
 
@@ -23,8 +48,14 @@ msgstr "說明"
 msgid "**blend_disabled**"
 msgstr "**blend_disabled**"
 
+msgid "Disable blending, values (including alpha) are written as-is. Default."
+msgstr "停用混合模式，數值（包括 Alpha 通道）按原樣寫入。預設設定。"
+
 msgid "**blend_mix**"
 msgstr "**blend_mix**"
+
+msgid "Mix blend mode (alpha is transparency)."
+msgstr "混合模式（Alpha 為透明度）。"
 
 msgid "**blend_add**"
 msgstr "**blend_add**"
@@ -43,6 +74,9 @@ msgstr "**blend_mul**"
 
 msgid "Multiplicative blend mode."
 msgstr "乘法混合模式。"
+
+msgid "There is no premultiplied alpha blend mode for Texture blit shaders."
+msgstr "Texture Blit 著色器不支援預乘 Alpha 混合模式。"
 
 msgid "Built-ins"
 msgstr "內建變數"
@@ -71,17 +105,111 @@ msgstr "內建變數"
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"自引擎啟動以來的全域時間，以秒為單位。它每經過 ``3,600`` 秒就會重設循環一次"
+"（這個時長可以通過 :ref:`rollover<class_ProjectSettings_property_rendering/"
+"limits/time/time_rollover_secs>` 設定來修改）。它"
+"受 :ref:`time_scale<class_Engine_property_time_scale>` （時間縮放/遊戲速度）"
+"的影響，但不受暫停（pausing）的影響。如果你需要一個不受 time_scale 影響的 "
+"``TIME`` 變數，可以新增你自己的 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>` ，並在每一影格更新它。"
+
 msgid "in float **PI**"
 msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"常數 ``PI`` （值為 ``3.141592`` ）。它是圓的周長與直徑的比值，也是轉半圈（180"
+"度）所包含的弧度數。"
 
 msgid "in float **TAU**"
 msgstr "in float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+"``TAU`` 常數（``6.283185``）：相當於 ``PI * 2`` 且代表完整轉數所對應的弧度"
+"數。"
+
 msgid "in float **E**"
 msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr "``E`` 常數（ ``2.718281`` ）：即歐拉數，也是自然對數的底數。"
+
+msgid "Blit built-ins"
+msgstr "Blit 內建功能"
+
+msgid "Source textures"
+msgstr "來源紋理"
+
+msgid ""
+"Texture blit shaders have up to 4 source textures bound as inputs. These can "
+"be accessed with a ``sampler2D`` using ``hint_blit_source0``, "
+"``hint_blit_source1``, ``hint_blit_source2``, and ``hint_blit_source3``."
+msgstr ""
+"紋理複製著色器最多可綁定 4 個來源紋理作為輸入；這些紋理可通過 ``sampler2D`` "
+"使用 ``hint_blit_source0`` 、 ``hint_blit_source1`` 、 ``hint_blit_source2`` "
+"和 ``hint_blit_source3`` 進行存取。"
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
+msgid ""
+"Coordinate of pixel center, in screen space. ``xy`` specifies position in "
+"viewport in pixels from the upper-left."
+msgstr ""
+"螢幕空間中的像素中心座標。``xy`` 指定從視埠左上角起算、以像素為單位的位置。"
+
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
+
+msgid ""
+"UV from the ``vertex()`` function. This is set to sample all of a source "
+"texture."
+msgstr "來自 ``vertex()`` 函式的 UV 座標。該設定用於對整個來源紋理進行取樣。"
+
+msgid "in vec4 **MODULATE**"
+msgstr "in vec4 **MODULATE**"
+
+msgid "``MODULATE`` color passed in by RenderingServer API."
+msgstr "``MODULATE`` 由 RenderingServer API 傳入的顏色。"
+
+msgid "out vec4 **COLOR0**"
+msgstr "out vec4 **COLOR0**"
+
+msgid ""
+"Output color to blended with the DrawableTexture target. Initialized to "
+"``(0.0, 0.0, 0.0, 0.0)``."
+msgstr ""
+"輸出顏色將與 DrawableTexture 目標進行混合。初始值為 ``(0.0,0.0,0.0,0.0)`` 。"
+
+msgid "out vec4 **COLOR1**"
+msgstr "out vec4 **COLOR1**"
+
+msgid ""
+"Output color to blended with an extra DrawableTexture target. Initialized to "
+"``(0.0, 0.0, 0.0, 0.0)``."
+msgstr ""
+"輸出顏色將與另一個 DrawableTexture 目標進行混合；該目標預設初始化為 "
+"``(0.0,0.0,0.0,0.0)`` 。"
+
+msgid "out vec4 **COLOR2**"
+msgstr "out vec4 **COLOR2**"
+
+msgid "out vec4 **COLOR3**"
+msgstr "out vec4 **COLOR3**"

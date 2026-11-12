@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Web export JavaScript reference"
+msgstr "網頁匯出的 JavaScript 參考文件"
+
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -47,6 +50,13 @@ msgstr "靜態方法"
 msgid "Promise"
 msgstr "Promise"
 
+msgid ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+msgstr ""
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
+
 msgid "void"
 msgstr "void"
 
@@ -63,8 +73,40 @@ msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 
+msgid ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+msgstr ":js:attr:`isFetchAvailable <Engine.isFetchAvailable>` **(** **)**"
+
+msgid ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+msgstr ":js:attr:`isSecureContext <Engine.isSecureContext>` **(** **)**"
+
+msgid ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+msgstr ""
+":js:attr:`isCrossOriginIsolated <Engine.isCrossOriginIsolated>` **(** **)**"
+
+msgid ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+msgstr ""
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
+
+msgid ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+msgstr ""
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
+
 msgid "Array.<string>"
 msgstr "字串陣列"
+
+msgid ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
+msgstr ""
+":js:attr:`getMissingFeatures <Engine.getMissingFeatures>` **(** *[ Object "
+"supportedFeatures ]* **)**"
 
 msgid "Instance Methods"
 msgstr "實例方法"
@@ -103,6 +145,23 @@ msgstr ""
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
+msgid ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+msgstr ":js:attr:`forceQuit <Engine.prototype.forceQuit>` **(** **)**"
+
+msgid ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+msgstr ""
+":js:attr:`addDebuggerSession <Engine.prototype.addDebuggerSession>` **(** "
+"MessagePort port **)**"
+
+msgid ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+msgstr ""
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
+
 msgid "Create a new Engine instance with the given configuration."
 msgstr "以指定的組態建立新的 Engine 實例。"
 
@@ -120,6 +179,9 @@ msgstr "從指定的基礎路徑載入引擎。"
 
 msgid "Base path of the engine to load."
 msgstr "要載入引擎的基礎路徑。"
+
+msgid "The file size if known."
+msgstr "檔案大小（如果已知）。"
 
 msgid "Returns"
 msgstr "回傳"
@@ -149,6 +211,52 @@ msgstr "要檢查的 WebGL 主要版本。"
 msgid "If the given major version of WebGL is available."
 msgstr "如果指定的 WebGL 主要版本可用則為 true。"
 
+msgid "Check whether the Fetch API available and supports streaming responses."
+msgstr "檢查 Fetch API 是否可用且支援串流回應。"
+
+msgid "If the Fetch API is available and supports streaming responses."
+msgstr "如果 Fetch API 可用且支援串流回應。"
+
+msgid "Check whether the engine is running in a Secure Context."
+msgstr "檢查引擎是否在安全內容環境（Secure Context）中執行。"
+
+msgid "If the engine is running in a Secure Context."
+msgstr "如果引擎在安全內容環境中執行。"
+
+msgid ""
+"Check whether the engine is cross origin isolated. This value is dependent "
+"on Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy headers sent "
+"by the server."
+msgstr ""
+"檢查引擎是否與跨來源資源隔離。此值取決於伺服器傳送的 Cross-Origin-Opener-"
+"Policy 和 Cross-Origin-Embedder-Policy 標頭。"
+
+msgid "Check whether SharedBufferArray is available."
+msgstr "檢查 SharedBufferArray 是否可用。"
+
+msgid ""
+"Most browsers require the page to be running in a secure context, and the "
+"the server to provide specific CORS headers for SharedArrayBuffer to be "
+"available."
+msgstr ""
+"大多數瀏覽器都要求網頁在安全內容環境中執行，且伺服器提供特定的 CORS 標頭，才"
+"能使用 SharedArrayBuffer。"
+
+msgid "If SharedArrayBuffer is available."
+msgstr "如果 SharedArrayBuffer 可用。"
+
+msgid "Check whether the AudioContext supports AudioWorkletNodes."
+msgstr "檢查 AudioContext 是否支援 AudioWorkletNodes。"
+
+msgid "If AudioWorkletNode is available."
+msgstr "如果 AudioWorkletNode 可用。"
+
+msgid "Return an array of missing required features (as string)."
+msgstr "傳回缺少的必要功能清單（字串陣列）。"
+
+msgid "A list of human-readable missing features."
+msgstr "缺少的功能清單，以人類可讀的文字表示。"
+
 msgid "**Instance Methods**"
 msgstr "實例方法"
 
@@ -158,6 +266,9 @@ msgid ""
 msgstr ""
 "初始化引擎實例。如尚未載入引擎，可選擇傳入基礎路徑以進行載入。詳"
 "見 :js:meth:`Engine.load`。"
+
+msgid "A Promise that resolves once the engine is loaded and initialized."
+msgstr "該 Promise 在引擎載入並初始化後立即解析。"
 
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
@@ -220,6 +331,9 @@ msgstr "若頁面上找不到 Canvas，或組態未指定 Canvas，則會啟動�
 msgid "An optional configuration override."
 msgstr "（可選）組態覆寫參數。"
 
+msgid "A Promise that resolves once the engine started."
+msgstr "該 Promise 在引擎啟動後立即解析。"
+
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr "以給定的組態覆寫（如有）啟動遊戲實例。"
@@ -243,6 +357,9 @@ msgstr ""
 "此方法要求初始組態（或覆寫參數）必須同時設置 :js:attr:`executable` "
 "與 :js:attr:`mainPack` 屬性（通常由編輯器在匯出時自動設定）。"
 
+msgid "A Promise that resolves once the game started."
+msgstr "該承諾在遊戲開始後即告履行。"
+
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
 "instance's file system."
@@ -264,6 +381,32 @@ msgid ""
 msgstr ""
 "這就像使用者在視窗管理員中按下關閉按鈕一樣。若引擎已當機或陷入無窮迴圈，將不"
 "會有任何效果。"
+
+msgid "Forcibly exit the current instance."
+msgstr "強制結束目前的執行個體。"
+
+msgid ""
+"This is akin to terminating the process on a regular OS, and *may* be able "
+"to terminate the engine and free resources even if the engine has crashed, "
+"or is stuck in a loop."
+msgstr ""
+"這類似在一般作業系統中終止處理程序；即使引擎已當機或陷入迴圈，也 *可能* 可以"
+"終止引擎並釋放資源。"
+
+msgid "Editor-Only."
+msgstr "僅限編輯器使用。"
+
+msgid "Adds a new EditorDebuggerSession connected via the given port."
+msgstr "新增透過指定連接埠連線的 EditorDebuggerSession。"
+
+msgid "The port used for the debugger session."
+msgstr "除錯器工作階段使用的連接埠。"
+
+msgid "Install the progressive-web app service worker."
+msgstr "安裝漸進式網頁應用程式的 Service Worker。"
+
+msgid "The service worker registration promise."
+msgstr "Service Worker 註冊作業的 Promise。"
 
 msgid "Engine configuration"
 msgstr "Engine 組態"
@@ -314,11 +457,32 @@ msgstr ":js:attr:`canvasResizePolicy`"
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
+msgid ":js:attr:`focusCanvas`"
+msgstr ":js:attr:`focusCanvas`"
+
+msgid ":js:attr:`experimentalVK`"
+msgstr ":js:attr:`experimentalVK`"
+
+msgid ":js:attr:`serviceWorker`"
+msgstr ":js:attr:`serviceWorker`"
+
+msgid "MessagePort"
+msgstr "MessagePort"
+
+msgid ":js:attr:`debugPort`"
+msgstr ":js:attr:`debugPort`"
+
+msgid ":js:attr:`pid`"
+msgstr ":js:attr:`pid`"
+
 msgid "function"
 msgstr "函式"
 
 msgid ":js:attr:`onExecute`"
 msgstr ":js:attr:`onExecute`"
+
+msgid ":js:attr:`onTerminatePID`"
+msgstr ":js:attr:`onTerminatePID`"
 
 msgid ":js:attr:`onExit`"
 msgstr ":js:attr:`onExit`"
@@ -342,6 +506,10 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**屬性說明**"
+
+msgid ""
+"Whether to unload the engine automatically after the instance is initialized."
+msgstr "執行個體初始化後，是否自動卸載引擎。"
 
 msgid "value"
 msgstr "值"
@@ -389,6 +557,13 @@ msgid ""
 msgstr "Canvas 調整大小策略，決定 Godot 如何調整畫布尺寸。"
 
 msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from JavaScript code in your template."
+msgstr ""
+"``0`` 表示 Godot 不會進行任何尺寸調整。當您需要通過範本中的 JavaScript 程式碼"
+"來控制畫布尺寸時，此設定非常實用。"
+
+msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
@@ -418,8 +593,28 @@ msgstr ""
 msgid "``[]``"
 msgstr "``[]``"
 
+msgid ""
+"When enabled, the game canvas will automatically grab the focus when the "
+"engine starts."
+msgstr "啟用後，引擎啟動時會自動將焦點移至遊戲畫布。"
+
+msgid ""
+"When enabled, this will turn on experimental virtual keyboard support on "
+"mobile."
+msgstr "啟用後，會開啟實驗性的行動裝置虛擬鍵盤支援。"
+
 msgid "``false``"
 msgstr "``false``"
+
+msgid "The progressive web app service worker to install."
+msgstr "要安裝的漸進式網頁應用程式 Service Worker。"
+
+msgid ""
+"A MessagePort used to send debug messages when using protocol messageport://"
+msgstr "使用 messageport:// 通訊協定時，用來傳送除錯訊息的 MessagePort。"
+
+msgid "The Process ID assigned to this instance (useful for debugging)."
+msgstr "指派給此執行個體的處理程序 ID（便於除錯）。"
 
 msgid "``0``"
 msgstr "``0``"
@@ -439,6 +634,17 @@ msgstr "Godot 要執行的路徑。"
 
 msgid "The arguments of the \"command\" to execute."
 msgstr "要執行之「命令」的參數。"
+
+msgid "A callback function for handling Godot's ``OS.kill`` calls."
+msgstr "處理 Godot ``OS.kill`` 呼叫的回呼函式。"
+
+msgid ""
+"This is for example used in the Web Editor template to forcefully terminate "
+"a running game instance."
+msgstr "例如，網頁編輯器範本會使用它來強制終止執行中的遊戲執行個體。"
+
+msgid "The Process ID to terminate."
+msgstr "要終止的處理程序 ID。"
 
 msgid "A callback function for being notified when the Godot instance quits."
 msgstr "當 Godot 實例結束時會被呼叫的回呼函式。"

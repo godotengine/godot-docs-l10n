@@ -65,6 +65,9 @@ msgid ""
 "generation:"
 msgstr "在 scons 指令中加入額外參數，以要求產生 solution 檔："
 
+msgid "Add ``vsproj=yes dev_build=yes`` to the scons command"
+msgstr "在 scons 命令中新增 ``vsproj=yes dev_build=yes``"
+
 msgid ""
 "The ``vsproj`` parameter signals that you want Visual Studio solution "
 "generated. The ``dev_build`` parameter ensures the debug symbols are "
@@ -72,6 +75,13 @@ msgid ""
 msgstr ""
 "``vsproj`` 參數代表要產生 Visual Studio solution，``dev_build`` 會包含偵錯符"
 "號，讓你能逐步除錯。"
+
+msgid ""
+"Each SCons run only generates the ``.generated.props`` file for a single "
+"Solution Configuration. Please run SCons once per target you plan to use:"
+msgstr ""
+"每次執行 SCons 僅為單個解決方案設定生成 ``.generated. props`` 檔案。請針對您"
+"計劃使用的每個目標分別執行一次 SCons："
 
 msgid "Open the generated ``godot.sln`` in Rider."
 msgstr "在 Rider 中開啟產生出的 ``godot.sln``。"
@@ -146,6 +156,18 @@ msgstr ""
 
 msgid "Debug visualizers"
 msgstr "偵錯視覺化器"
+
+msgid ""
+"Debug visualizers customize how complex data structures are displayed during "
+"debugging. The \"natvis\" (short for \"Native Visualization\") files built-"
+"in with Godot are automatically used."
+msgstr ""
+"除錯視覺化工具可自訂在除錯過程中複雜資料結構的顯示方式。Godot 內建的 "
+"“natvis”（“Native Visualization” 的縮寫）檔案將被自動使用。"
+
+msgid "On macOS and Linux, natvis support requires Rider 2026.2 or later."
+msgstr ""
+"在 macOS 和 Linux 系統上，使用 natvis 功能需安裝 Rider 2026.2 或更高版本。"
 
 msgid "Unit testing"
 msgstr "單元測試"

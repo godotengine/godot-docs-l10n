@@ -428,6 +428,16 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
+msgid ""
+"Coordinate of pixel center, in pixels. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0, 0)``. Multiply by "
+"``SCREEN_PIXEL_SIZE`` for values from ``0.0`` to ``1.0``."
+msgstr ""
+"Координати центру пікселя, у пікселях. ``xy`` визначає положення в межах "
+"області відображення. Лівий верхній кут області відображення є початком "
+"координат, ``(0, 0)``. Для значень у діапазоні від ``0.0`` до ``1.0`` слід "
+"помножити на ``SCREEN_PIXEL_SIZE``."
+
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "In vec2 **SCREEN_PIXEL_SIZE**"
 

@@ -118,8 +118,25 @@ msgstr ""
 "由於 AudioStreamPlayback 受音訊執行緒控制，因此禁止進行 I/O 或動態記憶體分"
 "配。"
 
+msgid "audiostream_playback_mytone.h"
+msgstr "audiostream_playback_mytone.h"
+
+msgid "audiostream_playback_mytone.cpp"
+msgstr "audiostream_playback_mytone.cpp"
+
 msgid "Usage"
 msgstr "用法"
+
+msgid ""
+"The ``set_freq`` and ``get_freq`` methods allow direct change of the "
+"frequency parameter. But one can also use the more generic way to handle "
+"parameters based on properties through ``get/set(\"parameters/Frequency\")``."
+msgstr ""
+"``set_freq`` 和 ``get_freq`` 方法允許直接修改頻率參數，但也可以透過更通用的屬"
+"性方式，使用 ``get/set(\"parameters/Frequency\")`` 存取參數。"
+
+msgid "audiostream_player_mytone.gd"
+msgstr "audiostream_player_mytone.gd"
 
 msgid "Resampling"
 msgstr "重新取樣"

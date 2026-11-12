@@ -36,6 +36,15 @@ msgstr ""
 "principalmente para builds personalizados ou pacotes personalizados para o "
 "implantador."
 
+msgid ""
+"Also, you still need to follow the steps mentioned in "
+"the :ref:`doc_exporting_for_android_manual_android_build_setup` tutorial "
+"before attempting to build a custom export template."
+msgstr ""
+"Além disso, você ainda precisa seguir as etapas mencionadas no "
+"tutorial :ref:`doc_exporting_for_android_manual_android_build_setup` antes "
+"de tentar criar um template de exportação personalizado."
+
 msgid "Requirements"
 msgstr "Requisitos"
 
@@ -44,6 +53,16 @@ msgstr "Para compilar no Windows, Linux ou macOS, é necessário o seguinte:"
 
 msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
 msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
+
+msgid ""
+"If using Python 3.9 to 3.13, also run ``pip install --user zstandard`` to "
+"install Zstandard support for Python. This is not required on Python 3.14 "
+"and above, which include Zstandard support by default."
+msgstr ""
+"Se estiver usando o Python 3.9 a 3.13, execute também ``pip install --user "
+"zstandard`` para instalar o suporte ao Zstandard para o Python. Isso não é "
+"necessário no Python 3.14 e superior, que incluem suporte ao Zstandard por "
+"padrão."
 
 msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""
