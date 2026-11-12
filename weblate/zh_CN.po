@@ -506,7 +506,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2026-11-04 00:07+0100\n"
+"POT-Creation-Date: 2026-11-12 18:18+0100\n"
 "PO-Revision-Date: 2026-10-27 05:59+0000\n"
 "Last-Translator: shuangxu <shuangxu@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -85833,11 +85833,11 @@ msgstr ""
 "fallback>`\\ ，如果为空则回退到 ``en``\\ 。不管怎样，出于各种原因（例如翻译质"
 "量或玩家偏好），建议让玩家能够在游戏中更改语言。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:85
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:99
 msgid "Locale vs. language"
 msgstr "区域设置与语言"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:87
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:101
 msgid ""
 "A :ref:`locale <doc_locales>` is commonly a combination of a language with a "
 "region or country, but can also contain information like a script or a "
@@ -85846,34 +85846,34 @@ msgstr ""
 ":ref:`区域设置 <doc_locales>`\\ 通常是语言与国家或地区的组合，但也可能包含文"
 "字、变体等信息。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:90
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:104
 #: ../../docs/tutorials/inputs/input_examples.rst:29
 msgid "Examples:"
 msgstr "示例："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:92
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
 msgid "``en``: English language"
 msgstr "``en``\\ ：英语语言"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:93
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid "``en_GB``: English in Great Britain / British English"
 msgstr "``en_GB``\\ ：英国英语 / 英式英语"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:94
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:108
 msgid "``en_US``: English in the USA / American English"
 msgstr "``en_US``\\ ：美国英语 / 美式英语"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:95
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:109
 msgid "``en_DE``: English in Germany"
 msgstr "``en_DE``\\ ：德国英语"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:97
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
 msgid ""
 "Indie games generally only need to care about language, but read on for more "
 "information."
 msgstr "独立游戏通常只需关注语言，但请继续阅读以了解更多信息。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:100
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:114
 msgid ""
 "Why locales exist can be illustrated through the USA and Great Britain. Both "
 "speak the same language (English), yet differ in many aspects:"
@@ -85881,19 +85881,19 @@ msgstr ""
 "美国和英国的例子可以说明区域设置存在的必要性。两者使用同一种语言（英语），但"
 "在许多方面存在差异："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:105
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:119
 msgid "Spelling: e.g. gray (USA), grey (GB)"
 msgstr "拼写：例如 gray（美国）、grey（英国）"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:120
 msgid "Use of words: e.g. eggplant (USA), aubergine (GB)"
 msgstr "用词：例如 eggplant（美国）、aubergine（英国）"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:121
 msgid "Units or currencies: e.g. feet/inches (USA), metres/cm (GB)"
 msgstr "单位或货币：例如英尺/英寸（美国）、米/厘米（英国）"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:125
 msgid ""
 "It can get more complex however. Imagine you offer different content in "
 "Europe and in China (e.g. in an MMO). You will need to translate each of "
@@ -85903,11 +85903,11 @@ msgstr ""
 "然而情况可能还要复杂。假设你在欧洲和中国提供不同的内容（例如在 MMO 中）。你需"
 "要将这些内容变体分别翻译成多种语言，并相应地进行存储和加载。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:116
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:130
 msgid "Converting keys to text"
 msgstr "将键转换为文本"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:118
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:132
 msgid ""
 "Some controls, such as :ref:`Button <class_Button>` and :ref:`Label "
 "<class_Label>`, will automatically fetch a translation if their text matches "
@@ -85920,7 +85920,7 @@ msgstr ""
 "的文本是 ``MAIN_SCREEN_GREETING1``\\ ，并且该键存在于当前翻译中，则文本将被自"
 "动翻译。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:123
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:137
 msgid ""
 "This automatic translation behavior may be undesirable in certain cases. For "
 "instance, when using a Label to display a player's name, you most likely "
@@ -85932,7 +85932,7 @@ msgstr ""
 "玩家名称与翻译键匹配，你很可能不希望翻译该名称。要禁用特定节点的自动翻译，请"
 "在检查器中将\\ :ui:`Auto Translate > Mode`\\ 设置为 ``Disabled``\\ 。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:129
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:143
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
 "used. This will just look up the text in the translations and convert it if "
@@ -85941,7 +85941,7 @@ msgstr ""
 "在代码中，可以使用 :ref:`Object.tr() <class_Object_method_tr>` 函数。这将仅在"
 "翻译中查找文本，如果找到则进行转换："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:145
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:163
 msgid ""
 "If no text is displayed after changing the language, try to use a different "
 "font. The default project font only supports a subset of the Latin-1 "
@@ -85951,7 +85951,7 @@ msgstr ""
 "如果更改语言后没有显示任何文本，请尝试使用不同的字体。默认项目字体仅支持 "
 "Latin-1 字符集的子集，无法用于显示俄语、中文等语言。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:149
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:167
 msgid ""
 "A good resource for multilingual fonts is `Noto Fonts <https://"
 "www.google.com/get/noto/>`__. Make sure to download the correct variation if "
@@ -85960,7 +85960,7 @@ msgstr ""
 "`Noto Fonts <https://www.google.com/get/noto/>`__ 是一个不错的多语言字体资"
 "源。如果你使用的是不太常见的语言，请确保下载正确的变体。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:153
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:171
 msgid ""
 "Once you've downloaded the font, load the TTF file into a DynamicFont "
 "resource and use it as a custom font of your Control node. For better "
@@ -85971,14 +85971,15 @@ msgstr ""
 "定义字体。为了更好地重用，请将新的 Theme 资源关联到根 Control 节点，并在主题"
 "中将 DynamicFont 定义为默认字体。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:159
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:177
 msgid "Placeholders"
 msgstr "占位符"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:161
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:179
+#, fuzzy
 msgid ""
 "To feature placeholders in your translated strings, "
-"use :ref:`doc_gdscript_printf` or the equivalent feature in C#. This lets "
+"use :ref:`doc_gdscript_printf` or ``string.Format()`` in C#. This lets "
 "translators move the location of the placeholder in the string freely, which "
 "allows translations to sound more natural. Named placeholders with the "
 "``String.format()`` function should be used whenever possible, as they also "
@@ -85989,11 +85990,11 @@ msgstr ""
 "然。应尽可能使用 ``String.format()`` 函数的命名占位符，因为它还允许翻译者选择"
 "占位符出现的\\ *顺序*\\ ："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:182
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:209
 msgid "Translation contexts"
 msgstr "翻译上下文"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:184
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
 msgid ""
 "If you're using plain English as source strings (rather than message codes "
 "``LIKE_THIS``), you may run into ambiguities when you have to translate the "
@@ -86007,11 +86008,11 @@ msgstr ""
 "选择指定\\ *翻译上下文*\\ 来解决这种歧义，即使源字符串相同，也允许目标语言使"
 "用不同的字符串："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:238
 msgid "Pluralization"
 msgstr "复数形式"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:213
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:240
 msgid ""
 "Most languages require different strings depending on whether an object is "
 "in singular or plural form. However, hardcoding the \"is plural\" condition "
@@ -86021,7 +86022,7 @@ msgstr ""
 "大多数语言根据对象是单数还是复数形式需要不同的字符串。但是，根据对象数量是否"
 "大于 1 来硬编码“是否为复数”条件并不适用于所有语言。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:217
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:244
 msgid ""
 "Some languages have more than two plural forms, and the rules on the number "
 "of objects required for each plural form vary. Godot offers support for "
@@ -86030,7 +86031,7 @@ msgstr ""
 "某些语言有两种以上的复数形式，并且每种复数形式所需的对象数量规则也各不相同。"
 "Godot 提供了对\\ *复数形式*\\ 的支持，以便目标区域设置可以自动处理此问题。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:221
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:248
 msgid ""
 "Pluralization is meant to be used with positive (or zero) integer numbers "
 "only. Negative and floating-point values usually represent physical entities "
@@ -86039,15 +86040,15 @@ msgstr ""
 "复数形式仅适用于正整数（或零）。负数和浮点值通常表示物理实体，这种情况下单数"
 "和复数并不明确适用。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:236
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:263
 msgid "This can be combined with a context if needed:"
 msgstr "如有需要，可以与上下文结合使用："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:250
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:277
 msgid "Making controls resizable"
 msgstr "使控件可调整大小"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:252
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:279
 msgid ""
 "The same text in different languages can vary greatly in length. For this, "
 "make sure to read the tutorial on :ref:`doc_size_and_anchors`, as "
@@ -86060,7 +86061,7 @@ msgstr ""
 "助。\\ :ref:`容器 <class_Container>` 可能很有用，\\ :ref:`标签 "
 "<class_Label>` 中的文本换行选项也可能会有所帮助。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:258
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:285
 msgid ""
 "To check whether your UI can accommodate translations with longer strings "
 "than the original, you can enable :ref:`pseudolocalization "
@@ -86075,7 +86076,7 @@ msgstr ""
 "替换为更长的版本，同时还将原始字符串中的某些字符替换为带重音符号的版本（但仍"
 "然可读）。占位符保持原样，以便在启用伪本地化时它们继续工作。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:266
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:293
 msgid ""
 "For example, the string ``Hello world, this is %s!`` becomes ``[Ĥéłłô ŵôŕłd́, "
 "ŧh̀íš íš %s!]`` when pseudolocalization is enabled."
@@ -86083,12 +86084,12 @@ msgstr ""
 "例如，当启用伪本地化时，字符串 ``Hello world, this is %s!`` 会变为 ``[Ĥéłłô "
 "ŵôŕłd́, ŧh̀íš íš %s!]``\\ 。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:269
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
 msgid ""
 "While looking strange at first, pseudolocalization has several benefits:"
 msgstr "虽然乍一看很奇怪，但伪本地化有几个好处："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:271
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
 msgid ""
 "It lets you spot non-localizable strings quickly, so you can go over them "
 "and make them localizable (if it makes sense to do so)."
@@ -86096,7 +86097,7 @@ msgstr ""
 "它可以让你快速发现不可本地化的字符串，这样你就可以检查它们并使它们可本地化"
 "（如果这样做有意义的话）。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:273
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:300
 msgid ""
 "It lets you check UI elements that can't fit long strings. Many languages "
 "will feature much longer translations than the source text, so it's "
@@ -86105,7 +86106,7 @@ msgstr ""
 "它可以让你检查无法容纳长字符串的 UI 元素。许多语言的翻译会比源文本长得多，因"
 "此确保你的 UI 能够容纳比平时更长的字符串非常重要。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:276
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:303
 msgid ""
 "It lets you check whether your font contains all the characters required to "
 "support various languages. However, since the goal of pseudolocalization is "
@@ -86117,17 +86118,17 @@ msgstr ""
 "的目标是保持原始字符串的可读性，因此它并不能有效检查字体是否支持 :abbr:`CJK"
 "（中文、日文、韩文）` 或从右到左语言。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:282
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
 msgid ""
 "The project settings allow you to tune pseudolocalization behavior, so that "
 "you can disable parts of it if desired."
 msgstr "项目设置允许你调整伪本地化行为，以便你可以根据需要禁用其中的某些部分。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:286
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:313
 msgid "TranslationServer"
 msgstr "TranslationServer"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:288
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
 msgid ""
 "Godot has a server handling low-level translation management called "
 "the :ref:`TranslationServer <class_TranslationServer>`. Translations can be "
@@ -86138,11 +86139,11 @@ msgstr ""
 "<class_TranslationServer>`\\ 。可以在运行时添加或删除翻译；当前语言也可以在运"
 "行时更改。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:323
 msgid "Bidirectional text and UI mirroring"
 msgstr "双向文本和 UI 镜像"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
 msgid ""
 "Arabic and Hebrew are written from right to left (except for the numbers and "
 "Latin words mixed in), and the user interface for these languages should be "
@@ -86152,7 +86153,7 @@ msgstr ""
 "阿拉伯语和希伯来语是从右到左书写的（除了混合其中的数字和拉丁单词），这些语言"
 "的用户界面也应该被镜像。在某些语言中，字形的形状会根据周围的字符而变化。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:302
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:329
 msgid ""
 "Support for bidirectional writing systems and UI mirroring is transparent, "
 "you don't usually need to change anything or have any knowledge of the "
@@ -86161,27 +86162,27 @@ msgstr ""
 "对双向书写系统和 UI 镜像的支持是透明的，你通常不需要更改任何内容或了解特定的"
 "书写系统。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:305
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:332
 msgid ""
 "For RTL languages, Godot will automatically do the following changes to the "
 "UI:"
 msgstr "对于 RTL（从右到左）语言，Godot 将自动对 UI 进行以下更改："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:307
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:334
 msgid "Mirrors left/right anchors and margins."
 msgstr "镜像左右锚点和边距。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:308
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:335
 msgid "Swaps left and right text alignment."
 msgstr "交换左右文本对齐方式。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:336
 msgid ""
 "Mirrors horizontal order of the child controls in the containers, and items "
 "in Tree/ItemList controls."
 msgstr "镜像容器中子控件的水平顺序以及 Tree/ItemList 控件中的项目。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:311
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:338
 msgid ""
 "Uses mirrored order of the internal control elements (e.g., OptionButton "
 "dropdown button, CheckBox/CheckButton alignment, List column order, TreeItem "
@@ -86192,21 +86193,21 @@ msgstr ""
 "对齐方式、列表列顺序、TreeItem 图标和连接线对齐方式）。在某些情况下，镜像控件"
 "使用单独的主题样式。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:342
 msgid "Coordinate system is **not** mirrored."
 msgstr "坐标系\\ **不会**\\ 被镜像。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:316
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:343
 msgid "Non-UI nodes (sprites, etc.) are **not** affected."
 msgstr "非 UI 节点（精灵等）\\ **不会**\\ 受到影响。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:318
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:345
 msgid ""
 "It is possible to override text and control layout direction by using the "
 "following control properties:"
 msgstr "可以使用以下控件属性来覆盖文本和控件布局方向："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:321
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:348
 msgid ""
 "``text_direction``, sets the base text direction. When set to \"auto\", the "
 "direction depends on the first strong directional character in the text "
@@ -86215,11 +86216,11 @@ msgstr ""
 "``text_direction``\\ ，设置基础文本方向。当设置为“auto”时，方向取决于文本中根"
 "据 Unicode 双向算法的第一个强方向字符。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:324
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
 msgid "``language``, overrides the current project locale."
 msgstr "``language``\\ ，覆盖当前项目区域设置。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:352
 msgid ""
 "The ``structured_text_bidi_override`` property and "
 "``_structured_text_parser`` callback, enable special handling for structured "
@@ -86228,11 +86229,11 @@ msgstr ""
 "``structured_text_bidi_override`` 属性和 ``_structured_text_parser`` 回调，可"
 "以对结构化文本进行特殊处理。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:327
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:354
 msgid "``layout_direction``, overrides control mirroring."
 msgstr "``layout_direction``\\ ，覆盖控件镜像。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:333
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:360
 msgid ""
 "You can see how right-to-left typesetting works in action using the `BiDI "
 "and Font Features demo project <https://github.com/godotengine/godot-demo-"
@@ -86242,11 +86243,11 @@ msgstr ""
 "demo-projects/tree/master/gui/bidi_and_font_features>`__\\ 来查看从右到左排版"
 "的实际工作方式。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:337
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:364
 msgid "Adding break iterator data to exported project"
 msgstr "将分词迭代器数据添加到导出的项目中"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:339
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:366
 msgid ""
 "Some languages are written without spaces. In those languages, word and line "
 "breaking require more than rules over character sequences. Godot includes "
@@ -86257,7 +86258,7 @@ msgstr ""
 "规则。Godot 包含基于 ICU 规则和字典的分词迭代器数据，但默认情况下这些数据不包"
 "含在导出的项目中。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:344
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:371
 msgid ""
 "To include it, go to :menu:`Project > Project Settings > General > "
 "Internationalization > Locale` and enable :ui:`Include Text Server Data`, "
@@ -86267,11 +86268,11 @@ msgstr ""
 "`\\ ，启用\\ :ui:`包括文本服务器数据`\\ ，然后导出项目。分词迭代器数据的大小"
 "约为 4 MB。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:349
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:376
 msgid "Structured text BiDi override"
 msgstr "结构化文本 BiDi 覆盖"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:378
 msgid ""
 "Unicode BiDi algorithm is designed to work with natural text and it's "
 "incapable of handling text with the higher level order, like file names, "
@@ -86280,7 +86281,7 @@ msgstr ""
 "Unicode BiDi 算法设计用于处理自然文本，它无法处理具有更高级别顺序的文本，例如"
 "文件名、URI、电子邮件地址、正则表达式或源代码。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:357
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
 msgid ""
 "For example, the path for this shown directory structure will be displayed "
 "incorrectly (top \"LineEdit\" control). \"File\" type structured text "
@@ -86292,17 +86293,17 @@ msgstr ""
 "结构化文本覆盖会将文本拆分为段，然后对每个段分别应用 BiDi 算法以正确显示任何"
 "语言的目录名称并保留文件夹的正确顺序（底部的“LineEdit”控件）。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:362
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:389
 msgid ""
 "Custom callbacks provide a way to override BiDi for the other types of "
 "structured text."
 msgstr "自定义回调提供了一种为其他类型的结构化文本覆盖 BiDi 的方法。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:365
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:392
 msgid "Localizing numbers"
 msgstr "数字的本地化"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:367
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
 msgid ""
 "Controls specifically designed for number input or output (e.g. ProgressBar, "
 "SpinBox) will use localized numbering system automatically, for the other "
@@ -86318,11 +86319,11 @@ msgstr ""
 "换为本地化的数字系统，并使用 :ref:`TextServer.parse_number(string, language) "
 "<class_TextServer_method_parse_number>` 将其转换回来。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:375
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:402
 msgid "Localizing icons and images"
 msgstr "图标和图像的本地化"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:377
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:404
 msgid ""
 "Icons with left and right pointing arrows which may need to be reversed for "
 "Arabic and Hebrew locales, in case they indicate movement or direction (e.g. "
@@ -86331,17 +86332,17 @@ msgstr ""
 "阿拉伯语和希伯来语区域设置中，带有左右指向箭头的图标如果指示移动或方向（例如"
 "后退/前进按钮），则可能需要反转。否则它们可以保持不变。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:382
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:409
 msgid "Testing translations"
 msgstr "测试翻译"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:411
 msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides three ways to do this."
 msgstr "你可能想要在发布前测试项目的翻译。Godot 为此提供了三种方法。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:387
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
 msgid ""
 "Under :menu:`Project > Project Settings > General > Internationalization > "
 "Locale` (with advanced settings enabled) is a :ui:`Test` property. Set this "
@@ -86354,7 +86355,7 @@ msgstr ""
 "代码。当项目运行时（无论是从编辑器运行还是导出后运行），Godot 将使用该区域设"
 "置运行项目。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:421
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "
 "version control when it is set to a non-empty value. Therefore, it should be "
@@ -86363,7 +86364,7 @@ msgstr ""
 "请记住，由于这是一个项目设置，当设置为非空值时，它会显示在版本控制中。因此，"
 "在将更改提交到版本控制之前，应将其设置回空值。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:398
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:425
 msgid ""
 "Second, from within the editor go to the top bar and click on :button:`View` "
 "on the top bar, then go down to :ui:`Preview Translation` and select the "
@@ -86372,13 +86373,13 @@ msgstr ""
 "第二，在编辑器中，转到顶部工具栏并点击\\ :button:`视图`\\ ，然后向下转到"
 "\\ :ui:`预览翻译`\\ 并选择你想要预览的语言。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:403
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:430
 msgid ""
 "All text in scenes in the editor should now be displayed using the selected "
 "language."
 msgstr "编辑器场景中的所有文本现在都会以所选语言显示。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:405
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:432
 msgid ""
 "Translations can also be tested when :ref:`running Godot from the command "
 "line <doc_command_line_tutorial>`. For example, to test a game in French, "
@@ -86387,11 +86388,11 @@ msgstr ""
 "第三，还可以\\ :ref:`从命令行运行 Godot <doc_command_line_tutorial>` 来测试翻"
 "译。例如，要使用法语测试游戏，可以提供以下参数："
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:441
 msgid "Translating the project name"
 msgstr "翻译项目名称"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:416
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:443
 msgid ""
 "The project name becomes the app name when exporting to different operating "
 "systems and platforms. To specify the project name in more than one language "
@@ -86407,7 +86408,7 @@ msgstr ""
 "按钮。这将把你带到一个页面，你可以在其中为项目名称翻译选择语言（以及如果需"
 "要，选择国家）。完成后，你就可以输入本地化的名称。"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:427
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:454
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
@@ -106424,12 +106425,14 @@ msgstr ""
 "分类以减少成本. 同时, 排序也是有成本的."
 
 #: ../../docs/tutorials/performance/index.rst:25
+#, fuzzy
 msgid ""
 "In 3D physics, a similar situation happens. The best algorithms to handle "
-"large amounts of physics objects (such as SAP) are slow at insertion/removal "
-"of objects and raycasting. Algorithms that allow faster insertion and "
-"removal, as well as raycasting, will not be able to handle as many active "
-"objects."
+"large amounts of physics objects, such as `Sweep And Prune <https://"
+"en.wikipedia.org/wiki/Sweep_and_prune>`_ (SAP), are slow at insertion/"
+"removal of objects and raycasting. Algorithms that allow faster insertion "
+"and removal, as well as raycasting, will not be able to handle as many "
+"active objects."
 msgstr ""
 "在3D物理中, 也有类似的情况发生. 处理大量物理对象的最佳算法(如SAP)在插入/移除"
 "对象和射线传输方面都很慢. 允许更快的插入和移除以及射线传输的算法, 将无法处理"
@@ -117697,7 +117700,7 @@ msgstr ""
 "AndroidManifest.xml>`_\\ ："
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:106
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:254
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:253
 msgid "Where:"
 msgstr "其中："
 
@@ -118774,50 +118777,50 @@ msgstr ""
 "如果使用 ``gradle``\\ ，请在应用的 gradle 构建文件的 ``dependency`` 部分添加"
 "以下内容。确保将 ``<version>`` 更新为 Godot Android 库的最新版本："
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:215
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:214
 msgid ""
 "The export Godot project ``AAR`` binaries have dependencies on the "
 "``androidx-fragment`` and ``androidx-core-splashscreen`` libraries, so they "
 "need to be included in the Android project dependencies as well."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:217
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:216
 msgid ""
 "Add the following to the ``dependency`` section of the app's gradle build "
 "file:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:224
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:223
 msgid ""
 "The final step is to configure the build flow, such that the Godot project "
 "is built and exported every time the sample app is built. To do so, add the "
 "following code snippet to the app's gradle build file:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:256
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:255
 msgid ""
 "``<absolute_path_to_godot_binary>`` is the absolute path to the Godot editor "
 "binary"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:258
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:257
 #, fuzzy
 msgid "``<path_to_godot_project>`` is the path to the Godot project"
 msgstr "**godot_project_to_export** 是 Godot 项目的名称。"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:260
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:259
 msgid ""
 "``<android_export_preset_name>`` is the name of the Android export preset "
 "configured in the Godot project"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:262
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:261
 msgid ""
 "``<export_path_relative_to_workingDir>`` is the ``Export Path`` configured "
 "in the Godot project **relative to the project path or absolute**"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:264
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:263
 #, fuzzy
 msgid ""
 "Once this is completed, build and run the Android app. If set up correctly, "
@@ -118829,7 +118832,7 @@ msgstr ""
 "中查找要加载的项目文件（除非配置中要求查找 ``main pack``\\ ），然后开始运行项"
 "目。"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:267
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:266
 msgid ""
 "While the app is running on device, you can check `Android logcat <https://"
 "developer.android.com/studio/debug/logcat>`_ to investigate any errors or "
@@ -118838,7 +118841,7 @@ msgstr ""
 "应用在设备上运行时，你可以通过 `Android logcat <https://"
 "developer.android.com/studio/debug/logcat>`_ 来调查报错和崩溃的情况。"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:269
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:268
 msgid ""
 "For reference, check the `build and install instructions <https://github.com/"
 "m4gr3d/Godot-Android-Samples/blob/master/apps/gltf_viewer/README.md>`_ for "
@@ -185141,7 +185144,8 @@ msgid "April tag"
 msgstr "April 标签"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1519
-msgid "``april_tag_is_supported``"
+#, fuzzy
+msgid "``is_april_tag_supported``"
 msgstr "``april_tag_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1520
@@ -185153,7 +185157,8 @@ msgid "Aruco"
 msgstr "Aruco"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1522
-msgid "``aruco_is_supported``"
+#, fuzzy
+msgid "``is_aruco_supported``"
 msgstr "``aruco_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1523
@@ -185165,7 +185170,8 @@ msgid "QR code"
 msgstr "二维码"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1525
-msgid "``qrcode_is_supported``"
+#, fuzzy
+msgid "``is_qrcode_supported``"
 msgstr "``qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1526
@@ -185177,7 +185183,8 @@ msgid "Micro QR code"
 msgstr "微型二维码"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1528
-msgid "``micro_qrcode_is_supported``"
+#, fuzzy
+msgid "``is_micro_qrcode_supported``"
 msgstr "``micro_qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1529
@@ -192287,9 +192294,10 @@ msgid "If no errors are printed and everything goes well, you're done!"
 msgstr "如果没有打印错误并且一切顺利，那么就完成了！"
 
 #: ../../docs/engine_details/architecture/unit_testing.rst:435
+#, fuzzy
 msgid ""
 "Make sure the output does have the expected values before submitting a pull "
-"request. If ``--gdscript-generate-tests`` produces ``*.out`` files which are "
+"request. If ``gdscript-generate-tests`` produces ``*.out`` files which are "
 "unrelated to newly added tests, you should revert those files back and only "
 "commit ``*.out`` files for new tests."
 msgstr ""
@@ -197044,12 +197052,18 @@ msgstr ""
 "从顶部菜单选择 **Run > Run 'editor'** 或\\ `点击运行图标 <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:59
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:117
+#, fuzzy
+msgid "Build with the terminal using the following command:"
+msgstr "运行以下命令："
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
 msgid "To debug the ``editor`` module:"
 msgstr "要调试 ``editor`` 模块："
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:126
 msgid ""
 "Open the **Build Variants** window using **View > Tools Windows > Build "
 "Variants** from the top menu."
@@ -197057,7 +197071,7 @@ msgstr ""
 "从顶部菜单栏选择 **查看 > 工具窗口 > 构建变体（View > Tools Windows > Build "
 "Variants）** ，即可打开 **Build Variants（构建变体）** 窗口。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:62
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:71
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:editor`` entry is set to one of the **Debug** "
@@ -197067,8 +197081,8 @@ msgstr ""
 "激活的构建变体）** 这一列下，``:editor`` 这一项被设置为了某个 **Debug（调试）"
 "** 版本的变体。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:77
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:133
 msgid ""
 "Open the **Run/Debug Configurations** window by clicking on **Run > Edit "
 "Configurations...** on the top menu."
@@ -197076,7 +197090,7 @@ msgstr ""
 "点击顶部菜单栏的 **运行 > 编辑配置...（Run > Edit Configurations...）** ，即"
 "可打开 **运行/调试配置（Run/Debug Configurations）** 窗口。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:69
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:78
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``editor`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -197085,7 +197099,7 @@ msgstr ""
 "在 **运行/调试配置** 窗口中，选择 ``editor`` 条目，并在 **调试器** 下确保 **"
 "调试类型** 设置为 ``Dual (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/tools/debug`` directory."
@@ -197093,7 +197107,7 @@ msgstr ""
 "在 **Symbol Directories（符号目录）** 部分，点击 ``+`` 号，然后添加 "
 "``platform/android/java/lib/libs/tools/debug`` 目录。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:76
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:85
 msgid ""
 "Select **Run > Debug 'editor'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -197101,31 +197115,69 @@ msgstr ""
 "从顶部菜单选择 **Run > Debug 'editor'** 或\\ `点击调试图标 <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
 msgid "Building & debugging the app module"
 msgstr "应用模块的构建与调试"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:81
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:90
 msgid ""
-"The ``app`` module requires the presence of a Godot project in its "
-"``assets`` directory (``<Godot root directory>/platform/android/java/app/src/"
-"main/assets``) to run. This is usually handled by the Godot Editor during "
-"the export process. While developing in Android Studio, it's necessary to "
-"manually add a Godot project under that directory to replicate the export "
-"process. Once that's done, you can follow the instructions below to run/"
-"debug the ``app`` module:"
+"The ``app`` module is an empty shell which is filled by the Godot Editor "
+"during the export process. As such for development, the ``app`` module "
+"requires the presence of a manually exported Godot project to run."
 msgstr ""
-"``app`` 模块要想正常运行，必须在它的 ``assets`` 目录下（即 ``<Godot root "
-"directory>/platform/android/java/app/src/main/assets`` ）包含一个 Godot 项"
-"目。通常情况下，这一步是由 Godot 编辑器在导出项目时自动完成的。但在 Android "
-"Studio 中进行开发时，为了模拟这个导出过程，你需要手动在这个目录下放入一个 "
-"Godot 项目。完成这一步后，你就可以按照下面的说明来运行或调试 ``app`` 模块了："
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:86
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:93
+msgid ""
+"Follow these steps to configure and manually export a Godot project to use "
+"with the ``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:95
+#, fuzzy
+msgid ""
+"Within the Godot Editor export window, create a new Android export preset."
+msgstr "在\\ ``导出``\\ 窗口中，创建一个 ``Android 导出预设``"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+msgid ""
+"Enable :ui:`Gradle Build > Use Gradle Build` in the Android export preset."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:97
+msgid "Set the :ui:`Gradle Build > Export Format` to :ui:`Export AAR`."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+msgid ""
+"Set the :ui:`Export Path` for the generated ``AAR`` to ``<Godot root "
+"directory>/platform/android/java/app/libs/exportedProjectAAR/``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+msgid "Make sure :ui:`Package > Show in App Library` is enabled."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:100
+msgid "Configure any other export options that makes sense for the project."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:101
+msgid ""
+"Click on :button:`Export Project...`, and export the project to the "
+"specified ``Export Path``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:103
+msgid ""
+"Now that's done, you can follow the instructions below to run/debug the "
+"``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
 msgid "To build the ``app`` module:"
 msgstr "要构建 ``app`` 模块："
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
 msgid ""
 "Select the `Run/Debug Configurations drop down <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_ and select "
@@ -197134,7 +197186,7 @@ msgstr ""
 "点击 `运行/调试配置下拉菜单 <https://developer.android.com/studio/run/"
 "rundebugconfig#running>`_ ，然后选择 ``app`` 。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:94
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
 msgid ""
 "Select **Run > Run 'app'** from the top menu or `click the Run icon <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -197142,11 +197194,11 @@ msgstr ""
 "从顶部菜单栏选择 **运行 > 运行 'app'（Run > Run 'app'）** ，或者 `点击运行图"
 "标 <https://developer.android.com/studio/run/rundebugconfig#running>`_。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:124
 msgid "To debug the ``app`` module:"
 msgstr "要调试 ``app`` 模块："
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:127
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:app`` entry is set to one of the **Debug** variants."
@@ -197155,7 +197207,7 @@ msgstr ""
 "前激活的构建变体）** 这一列下， ``:app`` 这一项被设置为了某个 **Debug（调试）"
 "** 版本的变体。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:106
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:134
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``app`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -197164,7 +197216,7 @@ msgstr ""
 "在 **运行/调试配置** 窗口中，选择 ``app`` 条目，然后在 **调试器** 下确保 **调"
 "试类型** 设置为 ``Dual (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:135
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/debug`` directory."
@@ -197172,7 +197224,7 @@ msgstr ""
 "在 **Symbol Directories（符号目录）** 部分，点击 ``+`` 号，然后添加 "
 "``platform/android/java/lib/libs/debug`` 目录。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:141
 msgid ""
 "Select **Run > Debug 'app'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -197180,7 +197232,7 @@ msgstr ""
 "从顶部菜单栏选择 **运行 > 调试 'app'（Run > Debug 'app'）** ，或者 `点击调试"
 "图标 <https://developer.android.com/studio/run/rundebugconfig#running>`_。"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:116
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:144
 msgid ""
 "If you run into any issues, ask for help in `Godot's Android dev channel "
 "<https://chat.godotengine.org/channel/android>`__."

@@ -332,7 +332,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2026-11-04 00:07+0100\n"
+"POT-Creation-Date: 2026-11-12 18:18+0100\n"
 "PO-Revision-Date: 2026-11-07 04:42+0000\n"
 "Last-Translator: Joel Gomes da Silva "
 "<joelgomes1994@users.noreply.hosted.weblate.org>\n"
@@ -6233,8 +6233,8 @@ msgstr ""
 "Se você estiver interessado na conformidade de licenças como colaborador, "
 "poderá encontrar diretrizes na página `Melhores práticas <https://"
 "contributing.godotengine.org/en/latest/development/engine/"
-"best_practices.html#don-t-use-complex-canned-solutions-for-simple-problems>"
-"`__."
+"best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
+"problems>`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -13060,14 +13060,14 @@ msgid ""
 "the editor. Make sure ``AnimatedSprite2D`` is selected, then find the "
 "``SpriteFrames`` panel at the bottom of the editor."
 msgstr ""
-"Clique no nó ``Player`` e adicione (:kbd:`Ctrl + A` no Windows/Linux ou "
-":kbd:`Cmd + A` no macOS) um nó filho :ref:`AnimatedSprite2D "
+"Clique no nó ``Player`` e adicione (:kbd:`Ctrl + A` no Windows/Linux "
+"ou :kbd:`Cmd + A` no macOS) um nó filho :ref:`AnimatedSprite2D "
 "<class_AnimatedSprite2D>`. O ``AnimatedSprite2D`` gerenciará a aparência e "
-"as animações do nosso jogador. Um ``AnimatedSprite2D`` usa um recurso "
-":ref:`SpriteFrames <class_SpriteFrames>`, que é uma lista das animações que "
-"ele pode exibir. Por conveniência, esse recurso é criado e atribuído "
-"automaticamente ao ``AnimatedSprite2D`` ao adicionar um novo nó no editor. "
-"Certifique-se de que o ``AnimatedSprite2D`` esteja selecionado e, em "
+"as animações do nosso jogador. Um ``AnimatedSprite2D`` usa um "
+"recurso :ref:`SpriteFrames <class_SpriteFrames>`, que é uma lista das "
+"animações que ele pode exibir. Por conveniência, esse recurso é criado e "
+"atribuído automaticamente ao ``AnimatedSprite2D`` ao adicionar um novo nó no "
+"editor. Certifique-se de que o ``AnimatedSprite2D`` esteja selecionado e, em "
 "seguida, encontre o painel ``SpriteFrames`` na parte inferior do editor."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:85
@@ -25714,8 +25714,8 @@ msgid ""
 "in the popup menu:"
 msgstr ""
 "Para separar o editor de scripts em sua própria janela, clique com o botão "
-"direito na aba :ui:`Script` no topo central do editor e clique em "
-":button:`Make Floating` no menu flutuante:"
+"direito na aba :ui:`Script` no topo central do editor e clique "
+"em :button:`Make Floating` no menu flutuante:"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:60
 #: ../../docs/tutorials/editor/customizing_editor.rst:64
@@ -27721,8 +27721,8 @@ msgid ""
 "from :ref:`OS.get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`."
 msgstr ""
 "|release| Separador para argumentos fornecidos pelo usuário. Os argumentos "
-"seguintes não são usados pelo engine, mas podem ser lidos em "
-":ref:`OS.get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`."
+"seguintes não são usados pelo engine, mas podem ser lidos "
+"em :ref:`OS.get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:70
 msgid "``-e``, ``--editor``"
@@ -41981,8 +41981,8 @@ msgid ""
 msgstr ""
 "Atualmente, o Godot não oferece suporte a :ref:`interpolação de física "
 "<doc_physics_interpolation_introduction>` para GPUParticles2D. Note que a "
-"interpolação de física não deve ser confundida com a propriedade "
-":inspector:`Interpolate` em GPUParticles2D."
+"interpolação de física não deve ser confundida com a "
+"propriedade :inspector:`Interpolate` em GPUParticles2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid ""
@@ -50723,8 +50723,8 @@ msgstr ""
 "de renderizar do que o Alpha e não apresenta problemas de ordenação de "
 "transparência. A desvantagem é que isso resulta em uma transparência de "
 "\"tudo ou nada\", sem valores intermediários possíveis. Materiais que usam "
-"alpha scissor podem projetar sombras. Ao usar este modo, considere ativar "
-":ref:`Mipmaps > Preserve Alpha Test Coverage "
+"alpha scissor podem projetar sombras. Ao usar este modo, considere "
+"ativar :ref:`Mipmaps > Preserve Alpha Test Coverage "
 "<doc_importing_images_mipmaps_preserve_alpha_test_coverage>` na textura "
 "albedo no painel Import. Isso melhora a consistência da opacidade do "
 "material, independentemente da distância entre o material e a câmera."
@@ -59364,10 +59364,11 @@ msgid ""
 msgstr ""
 "Ao usar o modo **Local**, a malha gerada é alinhada ao espaço local do "
 "rastro. Isso significa que a malha gira e escala com base no movimento e na "
-"orientação do rastro. Por exemplo, se você estiver usando uma configuração "
-":ref:`class_Path3D` + :ref:`class_PathFollow3D` para desenhar um rastro ao "
-"longo de um caminho, a inclinação do caminho será levada em consideração. "
-"Este é geralmente o modo a ser usado para efeitos como cortes de espada."
+"orientação do rastro. Por exemplo, se você estiver usando uma "
+"configuração :ref:`class_Path3D` + :ref:`class_PathFollow3D` para desenhar "
+"um rastro ao longo de um caminho, a inclinação do caminho será levada em "
+"consideração. Este é geralmente o modo a ser usado para efeitos como cortes "
+"de espada."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:117
 msgid ""
@@ -62710,8 +62711,8 @@ msgid ""
 "See :ref:`doc_using_lightmap_gi_directional_specular` for more information."
 msgstr ""
 "**Specular Intensity:** A intensidade dos reflexos especulares do lightmap. "
-"Isso só é efetivo se **Directional** estiver ativado. Consulte "
-":ref:`doc_using_lightmap_gi_directional_specular` para obter mais "
+"Isso só é efetivo se **Directional** estiver ativado. "
+"Consulte :ref:`doc_using_lightmap_gi_directional_specular` para obter mais "
 "informações."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:382
@@ -62911,8 +62912,8 @@ msgstr ""
 "lightmap. Isso pode fazer com que os lóbulos especulares pareçam distorcidos "
 "quando várias fontes de luz afetam um único texel. Para obter melhores "
 "resultados, certifique-se de que **Denoiser** esteja ativado ao gerar "
-"lightmaps e considere mudar para o denoiser OIDN, conforme descrito na seção "
-":ref:`doc_using_lightmap_gi_denoising`."
+"lightmaps e considere mudar para o denoiser OIDN, conforme descrito na "
+"seção :ref:`doc_using_lightmap_gi_denoising`."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:457
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:461
@@ -67277,8 +67278,8 @@ msgstr ""
 "<class_Viewport_property_msaa_3d>`, :ref:`screen_space_aa "
 "<class_Viewport_property_screen_space_aa>` e :ref:`use_taa "
 "<class_Viewport_property_use_taa>`. Os valores disponíveis para essas "
-"propriedades são definidos nos enums :ref:`MSAA <enum_Viewport_MSAA>` e "
-":ref:`ScreenSpaceAA <enum_Viewport_ScreenSpaceAA>`."
+"propriedades são definidos nos enums :ref:`MSAA <enum_Viewport_MSAA>` "
+"e :ref:`ScreenSpaceAA <enum_Viewport_ScreenSpaceAA>`."
 
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:46
 msgid ""
@@ -67759,9 +67760,9 @@ msgid ""
 "screen_space_roughness_limiter/limit>` settings respectively."
 msgstr ""
 "Se desejar, o ``amount`` e o ``limit`` podem ser configurados nas "
-"Configurações do Projeto, alterando os valores das configurações "
-":ref:`Rendering > Anti Aliasing > Screen Space Roughness Limiter > Amount "
-"<class_ProjectSettings_property_rendering/anti_aliasing/"
+"Configurações do Projeto, alterando os valores das "
+"configurações :ref:`Rendering > Anti Aliasing > Screen Space Roughness "
+"Limiter > Amount <class_ProjectSettings_property_rendering/anti_aliasing/"
 "screen_space_roughness_limiter/amount>` e :ref:`Rendering > Anti Aliasing > "
 "Screen Space Roughness Limiter > Limit "
 "<class_ProjectSettings_property_rendering/anti_aliasing/"
@@ -84171,10 +84172,10 @@ msgid ""
 msgstr ""
 "Sons reproduzidos usando :ref:`Control theme items "
 "<doc_gui_skinning_theme_items>` passam pelo barramento de áudio ``Master`` "
-"por padrão. Isso pode ser alterado usando a configuração de projeto "
-"**Audio > Buses > GUI Theme Bus**. Mudar para um barramento de áudio "
-"dedicado para sons de temas pode ser útil para permitir que o jogador ajuste "
-"o volume separadamente do resto do jogo ou para adicionar vários efeitos."
+"por padrão. Isso pode ser alterado usando a configuração de projeto **Audio "
+"> Buses > GUI Theme Bus**. Mudar para um barramento de áudio dedicado para "
+"sons de temas pode ser útil para permitir que o jogador ajuste o volume "
+"separadamente do resto do jogo ou para adicionar vários efeitos."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:137
 msgid "Default bus layout"
@@ -89864,8 +89865,8 @@ msgid ""
 "to :ref:`doc_exporting_for_ios`. You can refer to it for more details about "
 "the Xcode workflow."
 msgstr ""
-"As instruções de exportação para o visionOS são muito semelhantes a "
-":ref:`doc_exporting_for_ios`. Você pode consultá-las para obter mais "
+"As instruções de exportação para o visionOS são muito semelhantes "
+"a :ref:`doc_exporting_for_ios`. Você pode consultá-las para obter mais "
 "detalhes sobre o fluxo de trabalho do Xcode."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:18
@@ -89886,8 +89887,8 @@ msgid ""
 "Projects written in C# are currently not supported on visionOS, as "
 "the :ref:`.NET runtime <doc_c_sharp_platforms>` does not support visionOS."
 msgstr ""
-"Projetos escritos em C# atualmente não são suportados no visionOS, pois o "
-":ref:`.NET runtime <doc_c_sharp_platforms>` não suporta o visionOS."
+"Projetos escritos em C# atualmente não são suportados no visionOS, pois "
+"o :ref:`.NET runtime <doc_c_sharp_platforms>` não suporta o visionOS."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:27
 msgid "App Role"
@@ -89909,8 +89910,8 @@ msgstr "O modo **Imersivo** apresenta seu jogo como um app XR."
 msgid ""
 "For more information about the immersive mode, see :ref:`doc_visionos_intro`."
 msgstr ""
-"Para obter mais informações sobre o modo imersivo, consulte "
-":ref:`doc_visionos_intro`."
+"Para obter mais informações sobre o modo imersivo, "
+"consulte :ref:`doc_visionos_intro`."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:37
 msgid "Immersion Mode"
@@ -91489,10 +91490,10 @@ msgid ""
 "need to install a C++ toolchain or clone the Godot source code."
 msgstr ""
 "A parte nativa do template (a biblioteca ``.so`` incluída no binário "
-"exportado) permanece pré-compilada. Isso significa que, ao contrário de "
-":ref:`compilar um template de exportação personalizado para Android "
-"<doc_compiling_for_android>`, você não precisa instalar uma ferramenta de "
-"C++ (toolchain) ou clonar o código-fonte do Godot."
+"exportado) permanece pré-compilada. Isso significa que, ao contrário "
+"de :ref:`compilar um template de exportação personalizado para Android "
+"<doc_compiling_for_android>`, você não precisa instalar uma ferramenta de C+"
+"+ (toolchain) ou clonar o código-fonte do Godot."
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:22
 msgid ""
@@ -95284,11 +95285,11 @@ msgstr ""
 "jogadores alterem o idioma no jogo é recomendado por vários motivos (por "
 "exemplo, qualidade da tradução ou preferência do jogador)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:85
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:99
 msgid "Locale vs. language"
 msgstr "Localidade (Locale) vs. idioma"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:87
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:101
 msgid ""
 "A :ref:`locale <doc_locales>` is commonly a combination of a language with a "
 "region or country, but can also contain information like a script or a "
@@ -95298,28 +95299,28 @@ msgstr ""
 "idioma com uma região ou país, mas também pode conter informações como um "
 "script ou uma variante."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:90
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:104
 #: ../../docs/tutorials/inputs/input_examples.rst:29
 msgid "Examples:"
 msgstr "Exemplos:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:92
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
 msgid "``en``: English language"
 msgstr "``en``: Idioma inglês"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:93
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid "``en_GB``: English in Great Britain / British English"
 msgstr "``en_GB``: Inglês na Grã-Bretanha / Inglês britânico"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:94
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:108
 msgid "``en_US``: English in the USA / American English"
 msgstr "``en_US``: Inglês nos EUA / Inglês americano"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:95
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:109
 msgid "``en_DE``: English in Germany"
 msgstr "``en_DE``: Inglês na Alemanha"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:97
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
 msgid ""
 "Indie games generally only need to care about language, but read on for more "
 "information."
@@ -95327,7 +95328,7 @@ msgstr ""
 "Jogos indie geralmente precisam apenas se preocupar com o idioma, mas "
 "continue lendo para obter mais informações."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:100
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:114
 msgid ""
 "Why locales exist can be illustrated through the USA and Great Britain. Both "
 "speak the same language (English), yet differ in many aspects:"
@@ -95336,21 +95337,21 @@ msgstr ""
 "e da Grã-Bretanha. Ambos falam o mesmo idioma (inglês), mas diferem em "
 "muitos aspectos:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:105
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:119
 msgid "Spelling: e.g. gray (USA), grey (GB)"
 msgstr "Ortografia: por exemplo, gray (EUA), grey (Grã-Bretanha)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:120
 msgid "Use of words: e.g. eggplant (USA), aubergine (GB)"
 msgstr "Uso de palavras: por exemplo, eggplant (EUA), aubergine (Grã-Bretanha)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:121
 msgid "Units or currencies: e.g. feet/inches (USA), metres/cm (GB)"
 msgstr ""
 "Unidades ou moedas: por exemplo, pés/polegadas (EUA), metros/cm (Grã-"
 "Bretanha)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:125
 msgid ""
 "It can get more complex however. Imagine you offer different content in "
 "Europe and in China (e.g. in an MMO). You will need to translate each of "
@@ -95362,11 +95363,11 @@ msgstr ""
 "precisará traduzir cada uma dessas variações de conteúdo para vários idiomas "
 "e armazená-las e carregá-las de acordo."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:116
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:130
 msgid "Converting keys to text"
 msgstr "Convertendo chaves em texto"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:118
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:132
 msgid ""
 "Some controls, such as :ref:`Button <class_Button>` and :ref:`Label "
 "<class_Label>`, will automatically fetch a translation if their text matches "
@@ -95380,7 +95381,7 @@ msgstr ""
 "``MAIN_SCREEN_GREETING1`` e essa chave existir na tradução atual, então o "
 "texto será traduzido automaticamente."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:123
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:137
 msgid ""
 "This automatic translation behavior may be undesirable in certain cases. For "
 "instance, when using a Label to display a player's name, you most likely "
@@ -95395,7 +95396,7 @@ msgstr ""
 "automática em um nó específico, defina :ui:`Auto Translate > Mode` para "
 "``Desabilitado`` no inspetor."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:129
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:143
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
 "used. This will just look up the text in the translations and convert it if "
@@ -95405,7 +95406,7 @@ msgstr ""
 "usada. Isso apenas pesquisará o texto nas traduções e o converterá se "
 "encontrado:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:145
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:163
 msgid ""
 "If no text is displayed after changing the language, try to use a different "
 "font. The default project font only supports a subset of the Latin-1 "
@@ -95417,7 +95418,7 @@ msgstr ""
 "conjunto de caracteres Latin-1, que não pode ser usado para exibir idiomas "
 "como o russo ou o chinês."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:149
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:167
 msgid ""
 "A good resource for multilingual fonts is `Noto Fonts <https://"
 "www.google.com/get/noto/>`__. Make sure to download the correct variation if "
@@ -95427,7 +95428,7 @@ msgstr ""
 "www.google.com/get/noto/>`__. Certifique-se de baixar a variação correta se "
 "estiver usando um idioma menos comum."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:153
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:171
 msgid ""
 "Once you've downloaded the font, load the TTF file into a DynamicFont "
 "resource and use it as a custom font of your Control node. For better "
@@ -95439,14 +95440,15 @@ msgstr ""
 "melhor reutilizabilidade, associe um novo recurso Theme ao seu nó Control "
 "raiz e defina a DynamicFont como a Default Font (Fonte Padrão) no tema."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:159
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:177
 msgid "Placeholders"
 msgstr "Lugar reservado"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:161
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:179
+#, fuzzy
 msgid ""
 "To feature placeholders in your translated strings, "
-"use :ref:`doc_gdscript_printf` or the equivalent feature in C#. This lets "
+"use :ref:`doc_gdscript_printf` or ``string.Format()`` in C#. This lets "
 "translators move the location of the placeholder in the string freely, which "
 "allows translations to sound more natural. Named placeholders with the "
 "``String.format()`` function should be used whenever possible, as they also "
@@ -95460,11 +95462,11 @@ msgstr ""
 "permitem que os tradutores escolham a *ordem* em que os placeholders "
 "aparecem:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:182
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:209
 msgid "Translation contexts"
 msgstr "Contextos de tradução"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:184
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
 msgid ""
 "If you're using plain English as source strings (rather than message codes "
 "``LIKE_THIS``), you may run into ambiguities when you have to translate the "
@@ -95481,11 +95483,11 @@ msgstr ""
 "idiomas de destino usem strings diferentes, mesmo que a string de origem "
 "seja idêntica:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:238
 msgid "Pluralization"
 msgstr "Pluralização"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:213
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:240
 msgid ""
 "Most languages require different strings depending on whether an object is "
 "in singular or plural form. However, hardcoding the \"is plural\" condition "
@@ -95496,7 +95498,7 @@ msgstr ""
 "no formato singular ou plural. No entanto, hardcodar a condição \"é plural\" "
 "dependendo apenas se há mais de 1 objeto não é válido em todos os idiomas."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:217
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:244
 msgid ""
 "Some languages have more than two plural forms, and the rules on the number "
 "of objects required for each plural form vary. Godot offers support for "
@@ -95507,7 +95509,7 @@ msgstr ""
 "oferece suporte para *pluralização* para que as localidades de destino "
 "possam lidar com isso automaticamente."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:221
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:248
 msgid ""
 "Pluralization is meant to be used with positive (or zero) integer numbers "
 "only. Negative and floating-point values usually represent physical entities "
@@ -95518,15 +95520,15 @@ msgstr ""
 "entidades físicas para as quais o singular e o plural não se aplicam "
 "claramente."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:236
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:263
 msgid "This can be combined with a context if needed:"
 msgstr "Isso pode ser combinado com um contexto, se necessário:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:250
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:277
 msgid "Making controls resizable"
 msgstr "Tornando os controles redimensionáveis"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:252
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:279
 msgid ""
 "The same text in different languages can vary greatly in length. For this, "
 "make sure to read the tutorial on :ref:`doc_size_and_anchors`, as "
@@ -95540,7 +95542,7 @@ msgstr ""
 "<class_Container>` pode ser útil, assim como as opções de quebra de texto "
 "disponíveis em :ref:`Label <class_Label>`."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:258
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:285
 msgid ""
 "To check whether your UI can accommodate translations with longer strings "
 "than the original, you can enable :ref:`pseudolocalization "
@@ -95559,7 +95561,7 @@ msgstr ""
 "legíveis). Os placeholders são mantidos como estão, de modo que continuam "
 "funcionando quando a pseudolocalização está ativada."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:266
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:293
 msgid ""
 "For example, the string ``Hello world, this is %s!`` becomes ``[Ĥéłłô ŵôŕłd́, "
 "ŧh̀íš íš %s!]`` when pseudolocalization is enabled."
@@ -95567,13 +95569,13 @@ msgstr ""
 "Por exemplo, a string ``Hello world, this is %s!`` torna-se ``[Ĥéłłô ŵôŕłd́, "
 "ŧh̀íš íš %s!]`` quando a pseudolocalização está ativada."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:269
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
 msgid ""
 "While looking strange at first, pseudolocalization has several benefits:"
 msgstr ""
 "Embora pareça estranha no início, a pseudolocalização traz vários benefícios:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:271
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
 msgid ""
 "It lets you spot non-localizable strings quickly, so you can go over them "
 "and make them localizable (if it makes sense to do so)."
@@ -95581,7 +95583,7 @@ msgstr ""
 "Ela permite detectar rapidamente strings não localizáveis, para que você "
 "possa revisá-las e torná-las localizáveis (se fizer sentido fazer isso)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:273
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:300
 msgid ""
 "It lets you check UI elements that can't fit long strings. Many languages "
 "will feature much longer translations than the source text, so it's "
@@ -95592,7 +95594,7 @@ msgstr ""
 "longas do que o texto original, por isso é importante garantir que sua "
 "interface possa acomodar strings mais longas que o habitual."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:276
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:303
 msgid ""
 "It lets you check whether your font contains all the characters required to "
 "support various languages. However, since the goal of pseudolocalization is "
@@ -95606,7 +95608,7 @@ msgstr ""
 "eficaz para verificar se uma fonte oferece suporte a idiomas :abbr:`CJK "
 "(Chinês, Japonês, Coreano)` ou que são escritos da direita para a esquerda."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:282
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
 msgid ""
 "The project settings allow you to tune pseudolocalization behavior, so that "
 "you can disable parts of it if desired."
@@ -95614,11 +95616,11 @@ msgstr ""
 "As configurações do projeto permitem que você ajuste o comportamento da "
 "pseudolocalização, de modo que você pode desativar partes dela se desejar."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:286
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:313
 msgid "TranslationServer"
 msgstr "TranslationServer"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:288
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
 msgid ""
 "Godot has a server handling low-level translation management called "
 "the :ref:`TranslationServer <class_TranslationServer>`. Translations can be "
@@ -95630,12 +95632,12 @@ msgstr ""
 "Traduções podem ser adicionadas ou removidas em tempo de execução; o idioma "
 "atual também pode ser alterado em tempo de execução."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:323
 msgid "Bidirectional text and UI mirroring"
 msgstr ""
 "Texto bidirecional e espelhamento de interface de usuário (UI mirroring)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
 msgid ""
 "Arabic and Hebrew are written from right to left (except for the numbers and "
 "Latin words mixed in), and the user interface for these languages should be "
@@ -95647,7 +95649,7 @@ msgstr ""
 "para esses idiomas também deve ser espelhada. Em alguns idiomas, o formato "
 "de um glifo muda dependendo dos caracteres ao redor."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:302
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:329
 msgid ""
 "Support for bidirectional writing systems and UI mirroring is transparent, "
 "you don't usually need to change anything or have any knowledge of the "
@@ -95657,7 +95659,7 @@ msgstr ""
 "é transparente; normalmente você não precisa alterar nada ou ter qualquer "
 "conhecimento do sistema de escrita específico."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:305
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:332
 msgid ""
 "For RTL languages, Godot will automatically do the following changes to the "
 "UI:"
@@ -95665,15 +95667,15 @@ msgstr ""
 "Para idiomas RTL (da direita para a esquerda), o Godot aplicará "
 "automaticamente as seguintes alterações na interface do usuário:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:307
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:334
 msgid "Mirrors left/right anchors and margins."
 msgstr "Espelha as âncoras e margens esquerdas/direitas."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:308
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:335
 msgid "Swaps left and right text alignment."
 msgstr "Inverte o alinhamento de texto à esquerda e à direita."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:336
 msgid ""
 "Mirrors horizontal order of the child controls in the containers, and items "
 "in Tree/ItemList controls."
@@ -95681,7 +95683,7 @@ msgstr ""
 "Espelha a ordem horizontal dos nós de controle filhos nos containers e dos "
 "itens nos controles Tree/ItemList."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:311
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:338
 msgid ""
 "Uses mirrored order of the internal control elements (e.g., OptionButton "
 "dropdown button, CheckBox/CheckButton alignment, List column order, TreeItem "
@@ -95694,16 +95696,16 @@ msgstr ""
 "linhas de conexão). Em alguns casos, controles espelhados usam estilos de "
 "tema separados."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:342
 msgid "Coordinate system is **not** mirrored."
 msgstr "Sistema de Coordenadas **não** está espelhado."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:316
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:343
 msgid "Non-UI nodes (sprites, etc.) are **not** affected."
 msgstr ""
 "Nós que não pertencem à interface (sprites, etc.) **não** são afetados."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:318
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:345
 msgid ""
 "It is possible to override text and control layout direction by using the "
 "following control properties:"
@@ -95711,7 +95713,7 @@ msgstr ""
 "É possível sobrescrever a direção do texto e do layout do controle usando as "
 "seguintes propriedades de controle:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:321
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:348
 msgid ""
 "``text_direction``, sets the base text direction. When set to \"auto\", the "
 "direction depends on the first strong directional character in the text "
@@ -95721,11 +95723,11 @@ msgstr ""
 "\"auto\", a direção depende do primeiro caractere com direção forte no "
 "texto, de acordo com o Algoritmo Bidirecional Unicode."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:324
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
 msgid "``language``, overrides the current project locale."
 msgstr "``language``, sobrescreve a localidade atual do projeto."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:352
 msgid ""
 "The ``structured_text_bidi_override`` property and "
 "``_structured_text_parser`` callback, enable special handling for structured "
@@ -95735,11 +95737,11 @@ msgstr ""
 "``_structured_text_parser`` ativam o tratamento especial para textos "
 "estruturados."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:327
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:354
 msgid "``layout_direction``, overrides control mirroring."
 msgstr "``layout_direction``, sobrescreve o espelhamento do controle."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:333
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:360
 msgid ""
 "You can see how right-to-left typesetting works in action using the `BiDI "
 "and Font Features demo project <https://github.com/godotengine/godot-demo-"
@@ -95750,11 +95752,11 @@ msgstr ""
 "github.com/godotengine/godot-demo-projects/tree/master/gui/"
 "bidi_and_font_features>`__."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:337
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:364
 msgid "Adding break iterator data to exported project"
 msgstr "Adicionando dados de quebra de linha ao projeto exportado"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:339
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:366
 msgid ""
 "Some languages are written without spaces. In those languages, word and line "
 "breaking require more than rules over character sequences. Godot includes "
@@ -95766,7 +95768,7 @@ msgstr ""
 "O Godot inclui dados do iterador de quebras baseados em dicionários e regras "
 "da ICU, mas esses dados não são incluídos por padrão em projetos exportados."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:344
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:371
 msgid ""
 "To include it, go to :menu:`Project > Project Settings > General > "
 "Internationalization > Locale` and enable :ui:`Include Text Server Data`, "
@@ -95777,11 +95779,11 @@ msgstr ""
 "depois exporte o projeto. Os dados do iterador de quebras têm cerca de 4 MB "
 "de tamanho."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:349
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:376
 msgid "Structured text BiDi override"
 msgstr "Sobrescrita de BiDi em texto estruturado"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:378
 msgid ""
 "Unicode BiDi algorithm is designed to work with natural text and it's "
 "incapable of handling text with the higher level order, like file names, "
@@ -95792,7 +95794,7 @@ msgstr ""
 "nomes de arquivos, URIs, endereços de e-mail, expressões regulares ou código-"
 "fonte."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:357
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
 msgid ""
 "For example, the path for this shown directory structure will be displayed "
 "incorrectly (top \"LineEdit\" control). \"File\" type structured text "
@@ -95807,7 +95809,7 @@ msgstr ""
 "nomes dos diretórios em qualquer idioma e preservar a ordem correta das "
 "pastas (controle \"LineEdit\" inferior)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:362
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:389
 msgid ""
 "Custom callbacks provide a way to override BiDi for the other types of "
 "structured text."
@@ -95815,11 +95817,11 @@ msgstr ""
 "Callbacks customizados fornecem uma maneira de sobrescrever o BiDi para "
 "outros tipos de texto estruturado."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:365
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:392
 msgid "Localizing numbers"
 msgstr "Localização de números"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:367
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
 msgid ""
 "Controls specifically designed for number input or output (e.g. ProgressBar, "
 "SpinBox) will use localized numbering system automatically, for the other "
@@ -95838,11 +95840,11 @@ msgstr ""
 "e :ref:`TextServer.parse_number(string, language) "
 "<class_TextServer_method_parse_number>` para convertê-los de volta."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:375
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:402
 msgid "Localizing icons and images"
 msgstr "Localização de ícones e imagens"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:377
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:404
 msgid ""
 "Icons with left and right pointing arrows which may need to be reversed for "
 "Arabic and Hebrew locales, in case they indicate movement or direction (e.g. "
@@ -95853,11 +95855,11 @@ msgstr ""
 "movimento ou direção (por exemplo, botões de voltar/avançar). Caso "
 "contrário, eles podem permanecer os mesmos."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:382
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:409
 msgid "Testing translations"
 msgstr "Testando traduções"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:411
 msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides three ways to do this."
@@ -95865,7 +95867,7 @@ msgstr ""
 "Você pode querer testar a tradução de um projeto antes de lançá-lo. O Godot "
 "oferece três maneiras de fazer isso."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:387
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
 msgid ""
 "Under :menu:`Project > Project Settings > General > Internationalization > "
 "Locale` (with advanced settings enabled) is a :ui:`Test` property. Set this "
@@ -95880,7 +95882,7 @@ msgstr ""
 "essa localidade quando o projeto for executado (seja a partir do editor ou "
 "quando exportado)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:421
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "
 "version control when it is set to a non-empty value. Therefore, it should be "
@@ -95891,7 +95893,7 @@ msgstr ""
 "ele deve ser definido como um valor vazio antes de confirmar as alterações "
 "no controle de versão."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:398
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:425
 msgid ""
 "Second, from within the editor go to the top bar and click on :button:`View` "
 "on the top bar, then go down to :ui:`Preview Translation` and select the "
@@ -95901,7 +95903,7 @@ msgstr ""
 "em :button:`View`, depois desça até :ui:`Preview Translation` e selecione o "
 "idioma que deseja pré-visualizar."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:403
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:430
 msgid ""
 "All text in scenes in the editor should now be displayed using the selected "
 "language."
@@ -95909,7 +95911,7 @@ msgstr ""
 "Todo o texto nas cenas do editor agora deve ser exibido no idioma "
 "selecionado."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:405
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:432
 msgid ""
 "Translations can also be tested when :ref:`running Godot from the command "
 "line <doc_command_line_tutorial>`. For example, to test a game in French, "
@@ -95919,11 +95921,11 @@ msgstr ""
 "de comando <doc_command_line_tutorial>`. Por exemplo, para testar um jogo em "
 "francês, o seguinte argumento pode ser fornecido:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:441
 msgid "Translating the project name"
 msgstr "Traduzindo o nome do projeto"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:416
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:443
 msgid ""
 "The project name becomes the app name when exporting to different operating "
 "systems and platforms. To specify the project name in more than one language "
@@ -95942,7 +95944,7 @@ msgstr ""
 "necessário) para a tradução do nome do projeto. Após fazer isso, você poderá "
 "digitar o nome localizado."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:427
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:454
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
@@ -96279,9 +96281,9 @@ msgid ""
 msgstr ""
 "Uma vez que um arquivo CSV é importado, ele **não** é registrado "
 "automaticamente como uma fonte de tradução para o projeto. Lembre-se de "
-"seguir os passos descritos em "
-":ref:`doc_internationalizing_games_configuring_imported_translation` so que "
-"a tradução seja efetivamente usada ao executar o projeto. O Godot também "
+"seguir os passos descritos "
+"em :ref:`doc_internationalizing_games_configuring_imported_translation` so "
+"que a tradução seja efetivamente usada ao executar o projeto. O Godot também "
 "permite carregar e remover traduções em tempo de execução."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:4
@@ -105446,8 +105448,8 @@ msgid ""
 "editor's :menu:`View` menu:"
 msgstr ""
 "Você pode visualizar a pseudolocalização sem executar o projeto ativando a "
-"caixa de seleção :button:`Preview Translation > Pseudolocalization` no menu "
-":menu:`View` do editor 2D:"
+"caixa de seleção :button:`Preview Translation > Pseudolocalization` no "
+"menu :menu:`View` do editor 2D:"
 
 #: ../../docs/tutorials/i18n/pseudolocalization.rst:44
 msgid ""
@@ -111925,9 +111927,9 @@ msgid ""
 "as :ref:`NavigationRegion2D<class_NavigationRegion2D>` "
 "and :ref:`NavigationRegion3D<class_NavigationRegion3D>` respectively."
 msgstr ""
-"Versões 2D e 3D estão disponíveis como "
-":ref:`NavigationRegion2D<class_NavigationRegion2D>` e "
-":ref:`NavigationRegion3D<class_NavigationRegion3D>` respectivamente."
+"Versões 2D e 3D estão disponíveis "
+"como :ref:`NavigationRegion2D<class_NavigationRegion2D>` "
+"e :ref:`NavigationRegion3D<class_NavigationRegion3D>` respectivamente."
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:12
 msgid ""
@@ -117456,12 +117458,14 @@ msgstr ""
 "material para reduzir os custos. Ao mesmo tempo, a ordenação tem um custo."
 
 #: ../../docs/tutorials/performance/index.rst:25
+#, fuzzy
 msgid ""
 "In 3D physics, a similar situation happens. The best algorithms to handle "
-"large amounts of physics objects (such as SAP) are slow at insertion/removal "
-"of objects and raycasting. Algorithms that allow faster insertion and "
-"removal, as well as raycasting, will not be able to handle as many active "
-"objects."
+"large amounts of physics objects, such as `Sweep And Prune <https://"
+"en.wikipedia.org/wiki/Sweep_and_prune>`_ (SAP), are slow at insertion/"
+"removal of objects and raycasting. Algorithms that allow faster insertion "
+"and removal, as well as raycasting, will not be able to handle as many "
+"active objects."
 msgstr ""
 "Na física 3D, uma situação semelhante acontece. Os melhores algoritmos para "
 "lidar com grandes quantidades de objetos físicos (como o SAP) são lentos na "
@@ -128049,9 +128053,9 @@ msgstr ""
 "efeito mais significativo é que pode haver um pequeno atraso na entrada, o "
 "que pode ser um fator em jogos de reflexos rápidos. Em algumas dessas "
 "situações de entrada rápida, convém desativar a interpolação física e usar "
-"um esquema diferente, particularmente para :ref:`class_Camera3D` (consulte "
-":ref:`doc_advanced_physics_interpolation`), ou usar uma taxa de ticks alta, "
-"o que mitiga esses atrasos."
+"um esquema diferente, particularmente para :ref:`class_Camera3D` "
+"(consulte :ref:`doc_advanced_physics_interpolation`), ou usar uma taxa de "
+"ticks alta, o que mitiga esses atrasos."
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:203
 msgid "Why look into the past? Why not predict the future?"
@@ -128639,8 +128643,8 @@ msgstr ""
 "pela física para os filhos na árvore de cena. Isso podia resultar em "
 "\"clunking\" no primeiro filho com ``physics_interpolation_mode`` ``Off``. "
 "Por causa disso, tutoriais antigos frequentemente recomendavam especificar "
-"câmeras não interpoladas no espaço global (definindo, por exemplo, "
-":ref:`Node3D.top_level<class_Node3D_property_top_level>`). Esse "
+"câmeras não interpoladas no espaço global (definindo, por "
+"exemplo, :ref:`Node3D.top_level<class_Node3D_property_top_level>`). Esse "
 "comportamento foi corrigido no Godot 4.5."
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:46
@@ -129731,8 +129735,8 @@ msgid ""
 "via :ref:`doc_android_gradle_build`"
 msgstr ""
 "Permite que projetos Godot para Android aproveitem componentes, bibliotecas "
-"e ferramentas dos ecossistemas Android, Java e Kotlin via "
-":ref:`doc_android_gradle_build`"
+"e ferramentas dos ecossistemas Android, Java e Kotlin "
+"via :ref:`doc_android_gradle_build`"
 
 #: ../../docs/tutorials/platform/android/android_library.rst:11
 msgid "Provides the ability to make the engine portable and embeddable:"
@@ -130112,7 +130116,7 @@ msgstr ""
 "plugin com os seguintes metadados:"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:106
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:254
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:253
 msgid "Where:"
 msgstr "Onde:"
 
@@ -130841,7 +130845,8 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:27
 msgid "Below we break down the steps used to create the GLTF Viewer app."
-msgstr "Abaixo detalhamos os passos usados para criar o aplicativo GLTF Viewer."
+msgstr ""
+"Abaixo detalhamos os passos usados para criar o aplicativo GLTF Viewer."
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:31
 msgid ""
@@ -130954,8 +130959,8 @@ msgid ""
 "use_hidden_project_data_directory>` in the Project Settings."
 msgstr ""
 "Se o seu sistema de build não suporta diretórios ocultos, você pode "
-"configurar o projeto Godot para não usar diretórios ocultos desmarcando "
-":ref:`Application > Config > Use Hidden Project Data Directory "
+"configurar o projeto Godot para não usar diretórios ocultos "
+"desmarcando :ref:`Application > Config > Use Hidden Project Data Directory "
 "<class_ProjectSettings_property_application/config/"
 "use_hidden_project_data_directory>` nas Project Settings."
 
@@ -131046,8 +131051,9 @@ msgstr ""
 "app/android/gltfviewer/MainActivity.kt#L55>`_, o aplicativo de exemplo cria "
 "uma `instância GodotPlugin de tempo de execução <https://github.com/m4gr3d/"
 "Godot-Android-Samples/blob/master/apps/gltf_viewer/src/main/java/fhuyakou/"
-"godot/app/android/gltfviewer/AppPlugin.kt>`_ que é usada para enviar "
-":ref:`sinais <doc_signals>` para os scripts do projeto Godot incorporado."
+"godot/app/android/gltfviewer/AppPlugin.kt>`_ que é usada para "
+"enviar :ref:`sinais <doc_signals>` para os scripts do projeto Godot "
+"incorporado."
 
 #: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:120
 msgid ""
@@ -131260,7 +131266,7 @@ msgstr ""
 "aplicativo, onde ``<godot_project_export_path>`` aponta para o diretório de "
 "exportação do projeto Godot:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:215
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:214
 msgid ""
 "The export Godot project ``AAR`` binaries have dependencies on the "
 "``androidx-fragment`` and ``androidx-core-splashscreen`` libraries, so they "
@@ -131271,7 +131277,7 @@ msgstr ""
 "portanto, elas também precisam ser incluídas nas dependências do projeto "
 "Android."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:217
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:216
 msgid ""
 "Add the following to the ``dependency`` section of the app's gradle build "
 "file:"
@@ -131279,7 +131285,7 @@ msgstr ""
 "Adicione o seguinte à seção ``dependency`` do arquivo de build do Gradle do "
 "aplicativo:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:224
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:223
 msgid ""
 "The final step is to configure the build flow, such that the Godot project "
 "is built and exported every time the sample app is built. To do so, add the "
@@ -131290,7 +131296,7 @@ msgstr ""
 "compilado. Para fazer isso, adicione o seguinte trecho de código ao arquivo "
 "de build do gradle do app:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:256
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:255
 msgid ""
 "``<absolute_path_to_godot_binary>`` is the absolute path to the Godot editor "
 "binary"
@@ -131298,11 +131304,11 @@ msgstr ""
 "``<absolute_path_to_godot_binary>`` é o caminho absoluto para o binário do "
 "editor Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:258
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:257
 msgid "``<path_to_godot_project>`` is the path to the Godot project"
 msgstr "``<path_to_godot_project>`` é o caminho para o projeto Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:260
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:259
 msgid ""
 "``<android_export_preset_name>`` is the name of the Android export preset "
 "configured in the Godot project"
@@ -131310,7 +131316,7 @@ msgstr ""
 "``<android_export_preset_name>`` é o nome da predefinição de exportação para "
 "Android configurada no projeto Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:262
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:261
 msgid ""
 "``<export_path_relative_to_workingDir>`` is the ``Export Path`` configured "
 "in the Godot project **relative to the project path or absolute**"
@@ -131318,7 +131324,7 @@ msgstr ""
 "``<export_path_relative_to_workingDir>`` é o ``Export Path`` configurado no "
 "projeto Godot **relativo ao caminho do projeto ou absoluto**"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:264
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:263
 msgid ""
 "Once this is completed, build and run the Android app. If set up correctly, "
 "the host Activity will initialize the Godot Engine on startup, and run the "
@@ -131328,7 +131334,7 @@ msgstr ""
 "configurada corretamente, a Activity host inicializará o Godot Engine na "
 "inicialização e executará o projeto Godot embutido."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:267
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:266
 msgid ""
 "While the app is running on device, you can check `Android logcat <https://"
 "developer.android.com/studio/debug/logcat>`_ to investigate any errors or "
@@ -131338,7 +131344,7 @@ msgstr ""
 "verificar o `logcat do Android <https://developer.android.com/studio/debug/"
 "logcat>`_ para investigar quaisquer erros ou falhas."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:269
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:268
 msgid ""
 "For reference, check the `build and install instructions <https://github.com/"
 "m4gr3d/Godot-Android-Samples/blob/master/apps/gltf_viewer/README.md>`_ for "
@@ -132612,8 +132618,8 @@ msgid ""
 ":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
 "**)**"
 msgstr ""
-":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* **)"
-"**"
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:32
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:61
@@ -132677,16 +132683,16 @@ msgid ""
 ":js:attr:`isSharedArrayBufferAvailable "
 "<Engine.isSharedArrayBufferAvailable>` **(** **)**"
 msgstr ""
-":js:attr:`isSharedArrayBufferAvailable <Engine.isSharedArrayBufferAvailable>"
-"` **(** **)**"
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:44
 msgid ""
 ":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
 "**)**"
 msgstr ""
-":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** **)"
-"**"
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:46
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:173
@@ -132764,8 +132770,8 @@ msgid ""
 ":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
 "**(** **)**"
 msgstr ""
-":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` **"
-"(** **)**"
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:74
 msgid "Create a new Engine instance with the given configuration."
@@ -132863,9 +132869,9 @@ msgid ""
 "on Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy headers sent "
 "by the server."
 msgstr ""
-"Verifique se o engine está isolado de origem cruzada (cross origin isolated)"
-". Este valor depende dos cabeçalhos Cross-Origin-Opener-Policy e Cross-"
-"Origin-Embedder-Policy enviados pelo servidor."
+"Verifique se o engine está isolado de origem cruzada (cross origin "
+"isolated). Este valor depende dos cabeçalhos Cross-Origin-Opener-Policy e "
+"Cross-Origin-Embedder-Policy enviados pelo servidor."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:144
 msgid "Check whether SharedBufferArray is available."
@@ -133450,7 +133456,8 @@ msgstr "Os argumentos do \"comando\" a ser executado."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:474
 msgid "A callback function for handling Godot's ``OS.kill`` calls."
-msgstr "Uma função de callback para lidar com as chamadas ``OS.kill`` do Godot."
+msgstr ""
+"Uma função de callback para lidar com as chamadas ``OS.kill`` do Godot."
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:476
 msgid ""
@@ -136695,8 +136702,9 @@ msgid ""
 "as \"unsaved\" (i.e. with an asterisk next to the name). This way, you also "
 "get a confirmation when trying to close the scene with unsaved changes."
 msgstr ""
-"No exemplo acima, também chamamos :ref:`EditorInterface.mark_scene_as_unsaved"
-"() <class_EditorInterface_method_mark_scene_as_unsaved>` após qualquer "
+"No exemplo acima, também "
+"chamamos :ref:`EditorInterface.mark_scene_as_unsaved() "
+"<class_EditorInterface_method_mark_scene_as_unsaved>` após qualquer "
 "modificação que afete o estado da cena. Isso permite que o editor exiba a "
 "cena como \"não salva\" (ou seja, com um asterisco ao lado do nome). Dessa "
 "forma, você também recebe uma confirmação ao tentar fechar a cena com "
@@ -137791,9 +137799,9 @@ msgid ""
 "would be hidden in the Root Viewport."
 msgstr ""
 "No exemplo acima, ``CameraA`` será exibida no :ref:`class_Viewport` raiz e "
-"desenhará ``MeshA``. ``CameraB`` será capturada pelo "
-":ref:`class_SubViewport` junto com ``MeshB``. Como ``MeshB`` faz parte da "
-"hierarquia da cena, ele ainda será desenhado no Viewport raiz. Da mesma "
+"desenhará ``MeshA``. ``CameraB`` será capturada "
+"pelo :ref:`class_SubViewport` junto com ``MeshB``. Como ``MeshB`` faz parte "
+"da hierarquia da cena, ele ainda será desenhado no Viewport raiz. Da mesma "
 "forma, ``MeshA`` estará visível no SubViewport, pois ele usa o mesmo mundo "
 "que o Viewport raiz. Se fizéssemos o SubViewport usar seu próprio mundo, "
 "então ``MeshA`` ficaria oculto no SubViewport e ``MeshB`` ficaria oculto no "
@@ -151129,11 +151137,11 @@ msgid ""
 "method can handle a dictionary or an array. If an array is passed, the index "
 "of each element is used as the key."
 msgstr ""
-"Há também outra maneira de formatar texto em GDScript, que seria o método "
-":ref:`String.format() <class_String_method_format>`. Ele substitui todas as "
-"ocorrências de uma chave na string pelo valor correspondente. O método pode "
-"lidar com um dicionário ou um array. Se um array for passado, o índice de "
-"cada elemento será usado como a chave."
+"Há também outra maneira de formatar texto em GDScript, que seria o "
+"método :ref:`String.format() <class_String_method_format>`. Ele substitui "
+"todas as ocorrências de uma chave na string pelo valor correspondente. O "
+"método pode lidar com um dicionário ou um array. Se um array for passado, o "
+"índice de cada elemento será usado como a chave."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:231
 msgid "A quick example in GDScript:"
@@ -151525,8 +151533,8 @@ msgid ""
 "requires .NET 10 or later."
 msgstr ""
 "Baixe e instale a versão estável mais recente do SDK na `página de download "
-"do .NET <https://dotnet.microsoft.com/download>`__. O Godot 4.8 requer o "
-".NET 10 ou posterior."
+"do .NET <https://dotnet.microsoft.com/download>`__. O Godot 4.8 requer "
+"o .NET 10 ou posterior."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:50
 msgid ""
@@ -170581,9 +170589,9 @@ msgid ""
 "disabling :ref:`PROPERTY_USAGE_STORAGE "
 "<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` in GDScript."
 msgstr ""
-"O valor do uniform não é salvo no arquivo de recurso "
-":ref:`class_ShaderMaterial`. Útil para uniforms que são definidos em tempo "
-"de execução, especialmente a partir de um script ``@tool``. Este é o "
+"O valor do uniform não é salvo no arquivo de "
+"recurso :ref:`class_ShaderMaterial`. Útil para uniforms que são definidos em "
+"tempo de execução, especialmente a partir de um script ``@tool``. Este é o "
 "equivalente a desativar :ref:`PROPERTY_USAGE_STORAGE "
 "<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` no GDScript."
 
@@ -170599,8 +170607,8 @@ msgid ""
 "<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>` in GDScript."
 msgstr ""
 "O uniform não é exibido no inspetor do editor. Útil para uniforms que devem "
-"ser definidos apenas por código. Este é o equivalente a desativar "
-":ref:`PROPERTY_USAGE_EDITOR "
+"ser definidos apenas por código. Este é o equivalente a "
+"desativar :ref:`PROPERTY_USAGE_EDITOR "
 "<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>` em GDScript."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:929
@@ -184214,8 +184222,8 @@ msgid ""
 "You can add input parameters using :button:`Edit Ports` in the :ui:`Group "
 "Input` node:"
 msgstr ""
-"Você pode adicionar parâmetros de entrada usando :button:`Edit Ports` no nó "
-":ui:`Group Input`:"
+"Você pode adicionar parâmetros de entrada usando :button:`Edit Ports` no "
+"nó :ui:`Group Input`:"
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:189
 msgid ""
@@ -184291,8 +184299,8 @@ msgid ""
 "``invert`` parameter to ``true``:"
 msgstr ""
 "Você pode ajustar os parâmetros do nó como qualquer outro nó de shader "
-"visual. Para este exemplo, usaremos uma cor vermelha (``(1.0, 0.0, 0.0, 1.0)"
-"``) e definiremos o parâmetro ``invert`` como ``true``:"
+"visual. Para este exemplo, usaremos uma cor vermelha (``(1.0, 0.0, 0.0, "
+"1.0)``) e definiremos o parâmetro ``invert`` como ``true``:"
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:231
 msgid ""
@@ -188319,8 +188327,8 @@ msgid ""
 "<class_Object_private_method__notification>` virtual method:"
 msgstr ""
 "Os Controls também têm muitas notificações úteis para as quais não existe "
-"callback dedicado, mas que podem ser verificadas com o método virtual "
-":ref:`_notification() <class_Object_private_method__notification>`:"
+"callback dedicado, mas que podem ser verificadas com o método "
+"virtual :ref:`_notification() <class_Object_private_method__notification>`:"
 
 #: ../../docs/tutorials/ui/gui_navigation.rst:4
 msgid "Keyboard/Controller Navigation and Focus"
@@ -188711,8 +188719,8 @@ msgid ""
 msgstr ""
 "Um recurso :ref:`AudioStream <class_AudioStream>` que é reproduzido quando "
 "ocorre uma ação específica, como um botão receber o foco do cursor ou ser "
-"pressionado. Por padrão, os sons reproduzidos por este sistema passam pelo "
-":ref:`barramento de áudio <doc_audio_buses>` ``Master``. Isso pode ser "
+"pressionado. Por padrão, os sons reproduzidos por este sistema passam "
+"pelo :ref:`barramento de áudio <doc_audio_buses>` ``Master``. Isso pode ser "
 "alterado usando a configuração de projeto **Audio > Buses > GUI Theme Bus**."
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:105
@@ -192279,8 +192287,8 @@ msgid ""
 "Indents ``{text}`` once. The indentation width is the same as "
 "with :bbcode:`[ul]` or :bbcode:`[ol]`, but without a bullet point."
 msgstr ""
-"Indenta ``{text}`` uma vez. A largura da indentação é a mesma que com "
-":bbcode:`[ul]` ou :bbcode:`[ol]`, mas sem um marcador de lista."
+"Indenta ``{text}`` uma vez. A largura da indentação é a mesma que "
+"com :bbcode:`[ul]` ou :bbcode:`[ol]`, mas sem um marcador de lista."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:324
 msgid ":bbcode:`[indent]{text}[/indent]`"
@@ -192499,9 +192507,9 @@ msgid ""
 "outline_size={size} outline_color={color} margins={left},{top},{right},"
 "{bottom}]{text}[/dropcap]`"
 msgstr ""
-":bbcode:`[dropcap font={font} font_size={size} color={color} outline_size="
-"{size} outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]`"
+":bbcode:`[dropcap font={font} font_size={size} color={color} "
+"outline_size={size} outline_color={color} margins={left},{top},{right},"
+"{bottom}]{text}[/dropcap]`"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "**opentype_features**"
@@ -193174,8 +193182,8 @@ msgid ""
 "node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
 "to a script function."
 msgstr ""
-"Para lidar com tags :bbcode:`[url]` clicadas, conecte o sinal "
-":ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` do nó "
+"Para lidar com tags :bbcode:`[url]` clicadas, conecte o "
+"sinal :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` do nó "
 "``RichTextLabel`` a uma função de script."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:599
@@ -193440,9 +193448,9 @@ msgid ""
 "text and table (``top``, ``center``, ``baseline``, and ``bottom``), which "
 "can be used in any combination."
 msgstr ""
-"Quando um valor de alinhamento vertical é fornecido com a tag "
-":bbcode:`[img]` ou :bbcode:`[table]`, a imagem/tabela tentará se alinhar com "
-"o texto ao redor. O alinhamento é realizado usando um ponto vertical da "
+"Quando um valor de alinhamento vertical é fornecido com a "
+"tag :bbcode:`[img]` ou :bbcode:`[table]`, a imagem/tabela tentará se alinhar "
+"com o texto ao redor. O alinhamento é realizado usando um ponto vertical da "
 "imagem e um ponto vertical do texto. Existem 3 pontos possíveis na imagem "
 "(``top``, ``center`` e ``bottom``) e 4 pontos possíveis no texto e na tabela "
 "(``top``, ``center``, ``baseline`` e ``bottom``), que podem ser usados em "
@@ -193772,11 +193780,12 @@ msgid ""
 msgstr ""
 "Por padrão, a tag :bbcode:`[ul]` usa o glifo Unicode \"Bullet\" ``U+2022`` "
 "como o caractere de marcador. Esse comportamento é semelhante ao de "
-"navegadores web. O caractere de marcador pode ser personalizado usando "
-":bbcode:`[ul bullet={bullet}]`. Se fornecido, este parâmetro ``{bullet}`` "
-"deve ser uma string sem aspas envolventes (por exemplo, :bbcode:`[bullet=*]`)"
-". Você pode adicionar espaços extras após o caractere de marcador para "
-"aumentar o espaçamento entre o marcador e o texto do item da lista."
+"navegadores web. O caractere de marcador pode ser personalizado "
+"usando :bbcode:`[ul bullet={bullet}]`. Se fornecido, este parâmetro "
+"``{bullet}`` deve ser uma string sem aspas envolventes (por "
+"exemplo, :bbcode:`[bullet=*]`). Você pode adicionar espaços extras após o "
+"caractere de marcador para aumentar o espaçamento entre o marcador e o texto "
+"do item da lista."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1067
 msgid ""
@@ -193934,8 +193943,8 @@ msgid ""
 "Tornado makes the text move around in a circle. Its tag format "
 "is :bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
 msgstr ""
-"Tornado faz o texto se mover em círculo. O formato da tag é "
-":bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
+"Tornado faz o texto se mover em círculo. O formato da tag "
+"é :bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1143
 msgid ""
@@ -194187,9 +194196,9 @@ msgstr ""
 "Finalmente, ``env`` é um :ref:`class_Dictionary` de parâmetros atribuídos a "
 "um determinado efeito personalizado. Você pode usar :ref:`get() "
 "<class_Dictionary_method_get>` com um valor padrão opcional para recuperar "
-"cada parâmetro, se especificado pelo usuário. Por exemplo, "
-":bbcode:`[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]` teria "
-"parâmetros ``spread`` do tipo float e ``color`` do tipo Color em seu "
+"cada parâmetro, se especificado pelo usuário. Por "
+"exemplo, :bbcode:`[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]` "
+"teria parâmetros ``spread`` do tipo float e ``color`` do tipo Color em seu "
 "Dicionário ``env``. Veja abaixo mais exemplos de uso."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1248
@@ -198117,8 +198126,8 @@ msgid ""
 "on :ref:`class_viewport` must be set to ``VRS_XR`` for foveation to take "
 "effect."
 msgstr ""
-"Ao usar o renderizador Mobile e Forward+, a propriedade ``vrs_mode`` em "
-":ref:`class_viewport` deve ser definida como ``VRS_XR`` para que a "
+"Ao usar o renderizador Mobile e Forward+, a propriedade ``vrs_mode`` "
+"em :ref:`class_viewport` deve ser definida como ``VRS_XR`` para que a "
 "focalização (foveation) entre em vigor."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:185
@@ -203346,7 +203355,8 @@ msgid "April tag"
 msgstr "April tag"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1519
-msgid "``april_tag_is_supported``"
+#, fuzzy
+msgid "``is_april_tag_supported``"
 msgstr "``april_tag_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1520
@@ -203358,7 +203368,8 @@ msgid "Aruco"
 msgstr "Aruco"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1522
-msgid "``aruco_is_supported``"
+#, fuzzy
+msgid "``is_aruco_supported``"
 msgstr "``aruco_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1523
@@ -203370,7 +203381,8 @@ msgid "QR code"
 msgstr "Código QR"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1525
-msgid "``qrcode_is_supported``"
+#, fuzzy
+msgid "``is_qrcode_supported``"
 msgstr "``qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1526
@@ -203382,7 +203394,8 @@ msgid "Micro QR code"
 msgstr "Micro código QR"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1528
-msgid "``micro_qrcode_is_supported``"
+#, fuzzy
+msgid "``is_micro_qrcode_supported``"
 msgstr "``micro_qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1529
@@ -203858,10 +203871,10 @@ msgid ""
 "sure that at least one layer is writing depth, to avoid having :ref:`the "
 "content be discarded <doc_visionos_sky_depth_write>`."
 msgstr ""
-"Para objetos transparentes sobre o fundo de passthrough (como partículas ou "
-":ref:`glow <doc_environment_and_post_processing_glow>`), certifique-se de "
-"que pelo menos uma camada esteja gravando profundidade, para evitar que "
-":ref:`o conteúdo seja descartado <doc_visionos_sky_depth_write>`."
+"Para objetos transparentes sobre o fundo de passthrough (como partículas "
+"ou :ref:`glow <doc_environment_and_post_processing_glow>`), certifique-se de "
+"que pelo menos uma camada esteja gravando profundidade, para evitar "
+"que :ref:`o conteúdo seja descartado <doc_visionos_sky_depth_write>`."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:97
 msgid "Block-shaped artifacts around edges"
@@ -203999,8 +204012,8 @@ msgid ""
 msgstr ""
 "certifique-se de que o *XRCamera3D* seja a câmera atual, pois o Godot deriva "
 "os planos near/far da câmera na sua viewport, o que pode não ser o "
-"*XRCamera3D*. Você pode verificar a câmera atual com ``get_viewport()"
-".get_camera_3d()``."
+"*XRCamera3D*. Você pode verificar a câmera atual com "
+"``get_viewport().get_camera_3d()``."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:171
 msgid "Crash after freezing for 2 seconds"
@@ -211067,9 +211080,10 @@ msgid "If no errors are printed and everything goes well, you're done!"
 msgstr "Se nenhum erro for impresso e tudo corra bem, você terminou!"
 
 #: ../../docs/engine_details/architecture/unit_testing.rst:435
+#, fuzzy
 msgid ""
 "Make sure the output does have the expected values before submitting a pull "
-"request. If ``--gdscript-generate-tests`` produces ``*.out`` files which are "
+"request. If ``gdscript-generate-tests`` produces ``*.out`` files which are "
 "unrelated to newly added tests, you should revert those files back and only "
 "commit ``*.out`` files for new tests."
 msgstr ""
@@ -215600,8 +215614,8 @@ msgid ""
 msgstr ""
 "Os métodos ``set_freq`` e ``get_freq`` permitem alterar diretamente o "
 "parâmetro de frequência. Mas também é possível usar a forma mais genérica de "
-"manipular parâmetros baseados em propriedades através de ``get/set"
-"(\"parameters/Frequency\")``."
+"manipular parâmetros baseados em propriedades através de ``get/"
+"set(\"parameters/Frequency\")``."
 
 #: ../../docs/engine_details/engine_api/custom_audiostreams.rst:265
 msgid "audiostream_player_mytone.gd"
@@ -216368,12 +216382,18 @@ msgstr ""
 "Selecione **Run > Run 'editor'** no menu superior ou `clique no ícone de Run "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:59
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:117
+#, fuzzy
+msgid "Build with the terminal using the following command:"
+msgstr "Execute o seguinte comando:"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
 msgid "To debug the ``editor`` module:"
 msgstr "Para depurar o módulo ``editor``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:126
 msgid ""
 "Open the **Build Variants** window using **View > Tools Windows > Build "
 "Variants** from the top menu."
@@ -216381,7 +216401,7 @@ msgstr ""
 "Abra a janela **Build Variants** usando **View > Tools Windows > Build "
 "Variants** no menu superior."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:62
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:71
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:editor`` entry is set to one of the **Debug** "
@@ -216391,8 +216411,8 @@ msgstr ""
 "Variant**, a entrada ``:editor`` esteja definida para uma das variantes de "
 "**Debug**."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:77
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:133
 msgid ""
 "Open the **Run/Debug Configurations** window by clicking on **Run > Edit "
 "Configurations...** on the top menu."
@@ -216400,7 +216420,7 @@ msgstr ""
 "Abra a janela **Run/Debug Configurations** clicando em **Run > Edit "
 "Configurations...** no menu superior."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:69
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:78
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``editor`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -216410,7 +216430,7 @@ msgstr ""
 "sob **Debugger**, certifique-se de que o **Debug Type** esteja definido como "
 "``Dual (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/tools/debug`` directory."
@@ -216418,7 +216438,7 @@ msgstr ""
 "Clique no sinal ``+`` sob a seção **Symbol Directories** e adicione o "
 "diretório ``platform/android/java/lib/libs/tools/debug``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:76
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:85
 msgid ""
 "Select **Run > Debug 'editor'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -216426,33 +216446,78 @@ msgstr ""
 "Selecione **Run > Debug 'editor'** no menu superior ou `clique no ícone de "
 "Debug <https://developer.android.com/studio/run/rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
 msgid "Building & debugging the app module"
 msgstr "Compilando e depurando o módulo app"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:81
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:90
 msgid ""
-"The ``app`` module requires the presence of a Godot project in its "
-"``assets`` directory (``<Godot root directory>/platform/android/java/app/src/"
-"main/assets``) to run. This is usually handled by the Godot Editor during "
-"the export process. While developing in Android Studio, it's necessary to "
-"manually add a Godot project under that directory to replicate the export "
-"process. Once that's done, you can follow the instructions below to run/"
-"debug the ``app`` module:"
+"The ``app`` module is an empty shell which is filled by the Godot Editor "
+"during the export process. As such for development, the ``app`` module "
+"requires the presence of a manually exported Godot project to run."
 msgstr ""
-"O módulo ``app`` requer a presença de um projeto do Godot em seu diretório "
-"``assets`` (``<Diretório raiz do Godot>/platform/android/java/app/src/main/"
-"assets``) para ser executado. Isso geralmente é gerenciado pelo Editor do "
-"Godot durante o processo de exportação. Ao desenvolver no Android Studio, é "
-"necessário adicionar manualmente um projeto do Godot sob esse diretório para "
-"replicar o processo de exportação. Uma vez feito isso, você pode seguir as "
-"instruções abaixo para executar/depurar o módulo ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:86
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:93
+msgid ""
+"Follow these steps to configure and manually export a Godot project to use "
+"with the ``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:95
+#, fuzzy
+msgid ""
+"Within the Godot Editor export window, create a new Android export preset."
+msgstr ""
+"Dentro da janela de exportação do Editor Godot, crie uma nova predefinição "
+"de exportação para Android"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+#, fuzzy
+msgid ""
+"Enable :ui:`Gradle Build > Use Gradle Build` in the Android export preset."
+msgstr ""
+"Ative ``Gradle Build > Use Gradle Build`` na predefinição de exportação do "
+"Android"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:97
+#, fuzzy
+msgid "Set the :ui:`Gradle Build > Export Format` to :ui:`Export AAR`."
+msgstr "Defina o ``Gradle Build > Export Format`` como ``Export AAR``"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+msgid ""
+"Set the :ui:`Export Path` for the generated ``AAR`` to ``<Godot root "
+"directory>/platform/android/java/app/libs/exportedProjectAAR/``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+msgid "Make sure :ui:`Package > Show in App Library` is enabled."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:100
+#, fuzzy
+msgid "Configure any other export options that makes sense for the project."
+msgstr ""
+"Configure quaisquer outras opções de exportação que façam sentido para o seu "
+"projeto e, em seguida, feche a janela de exportação"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:101
+msgid ""
+"Click on :button:`Export Project...`, and export the project to the "
+"specified ``Export Path``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:103
+msgid ""
+"Now that's done, you can follow the instructions below to run/debug the "
+"``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
 msgid "To build the ``app`` module:"
 msgstr "Para compilar o módulo ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
 msgid ""
 "Select the `Run/Debug Configurations drop down <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_ and select "
@@ -216462,7 +216527,7 @@ msgstr ""
 "developer.android.com/studio/run/rundebugconfig#running>`_ e selecione "
 "``app``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:94
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
 msgid ""
 "Select **Run > Run 'app'** from the top menu or `click the Run icon <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -216470,11 +216535,11 @@ msgstr ""
 "Selecione **Run > Run 'app'** no menu superior ou `clique no ícone Run "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:124
 msgid "To debug the ``app`` module:"
 msgstr "Para depurar o módulo ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:127
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:app`` entry is set to one of the **Debug** variants."
@@ -216483,7 +216548,7 @@ msgstr ""
 "Variant**, a entrada ``:app`` esteja definida para uma das variantes de "
 "**Debug**."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:106
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:134
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``app`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -216493,7 +216558,7 @@ msgstr ""
 "**Debugger**, certifique-se de que o **Debug Type** esteja definido como "
 "``Dual (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:135
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/debug`` directory."
@@ -216501,7 +216566,7 @@ msgstr ""
 "Clique no sinal ``+`` sob a seção **Symbol Directories** e adicione o "
 "diretório ``platform/android/java/lib/libs/debug``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:141
 msgid ""
 "Select **Run > Debug 'app'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -216509,7 +216574,7 @@ msgstr ""
 "Selecione **Run > Debug 'app'** no menu superior ou `clique no ícone Debug "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:116
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:144
 msgid ""
 "If you run into any issues, ask for help in `Godot's Android dev channel "
 "<https://chat.godotengine.org/channel/android>`__."
@@ -221523,9 +221588,9 @@ msgid ""
 "the :ref:`doc_exporting_for_android_manual_android_build_setup` tutorial "
 "before attempting to build a custom export template."
 msgstr ""
-"Além disso, você ainda precisa seguir as etapas mencionadas no tutorial "
-":ref:`doc_exporting_for_android_manual_android_build_setup` antes de tentar "
-"criar um template de exportação personalizado."
+"Além disso, você ainda precisa seguir as etapas mencionadas no "
+"tutorial :ref:`doc_exporting_for_android_manual_android_build_setup` antes "
+"de tentar criar um template de exportação personalizado."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:27
 msgid "For compiling under Windows, Linux or macOS, the following is required:"

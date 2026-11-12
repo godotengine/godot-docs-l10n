@@ -62,7 +62,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2026-11-04 00:07+0100\n"
+"POT-Creation-Date: 2026-11-12 18:18+0100\n"
 "PO-Revision-Date: 2026-11-09 12:51+0000\n"
 "Last-Translator: ghKoty <ghkoty@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
@@ -5117,10 +5117,10 @@ msgid ""
 "to make the shortcut available for all users."
 msgstr ""
 "Зберегти `цей файл .desktop <https://raw.githubusercontent.com/godotengine/"
-"godot/master/misc/dist/linux/org.godotengine.Godot.desktop>`__ до ``$HOME/"
-".local/share/applications/``. If Якщо у вас є права адміністратора, ви також "
-"можете зберегти файл ``.desktop`` у ``/usr/local/share/applications``, щоб "
-"зробити ярлик доступним для всіх користувачів."
+"godot/master/misc/dist/linux/org.godotengine.Godot.desktop>`__ до "
+"``$HOME/.local/share/applications/``. If Якщо у вас є права адміністратора, "
+"ви також можете зберегти файл ``.desktop`` у ``/usr/local/share/"
+"applications``, щоб зробити ярлик доступним для всіх користувачів."
 
 #: ../../docs/about/faq.rst:295
 msgid "Is the Godot editor a portable application?"
@@ -5584,8 +5584,8 @@ msgid ""
 "libgodot GitHub repository <https://github.com/migeran/libgodot>`__."
 msgstr ""
 "Зразки програм, що використовують Godot як бібліотеку, можна знайти в "
-"репозиторії GitHub `migeran/libgodot <https://github.com/migeran/libgodot>"
-"`__."
+"репозиторії GitHub `migeran/libgodot <https://github.com/migeran/"
+"libgodot>`__."
 
 #: ../../docs/about/faq.rst:492
 msgid "What user interface toolkit does Godot use?"
@@ -5970,8 +5970,8 @@ msgstr ""
 "зору користувача. Якщо вас цікавить дотримання ліцензійних вимог як учасника "
 "проекту, ви можете ознайомитися з рекомендаціями на сторінці `Кращі практики "
 "<https://contributing.godotengine.org/en/latest/development/engine/"
-"best_practices.html#don-t-use-complex-canned-solutions-for-simple-problems>"
-"`__»."
+"best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
+"problems>`__»."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -6236,8 +6236,8 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
-"Godot використовує систему версій `Semantic Versioning <https://semver.org/>"
-"`__ з ``major.minor.patch``, але тлумачення кожного терміну адаптоване до "
+"Godot використовує систему версій `Semantic Versioning <https://semver.org/"
+">`__ з ``major.minor.patch``, але тлумачення кожного терміну адаптоване до "
 "складності ігрового движка:"
 
 #: ../../docs/about/release_policy.rst:20
@@ -12769,12 +12769,12 @@ msgid ""
 "the editor. Make sure ``AnimatedSprite2D`` is selected, then find the "
 "``SpriteFrames`` panel at the bottom of the editor."
 msgstr ""
-"Клацніть на вузлі ``Player`` і додайте (:kbd:`Ctrl + A` у Windows/Linux або "
-":kbd:`Cmd + A` у macOS) дочірній вузол :ref:`AnimatedSprite2D "
+"Клацніть на вузлі ``Player`` і додайте (:kbd:`Ctrl + A` у Windows/Linux "
+"або :kbd:`Cmd + A` у macOS) дочірній вузол :ref:`AnimatedSprite2D "
 "<class_AnimatedSprite2D>`. ``AnimatedSprite2D`` відповідатиме за зовнішній "
-"вигляд та анімації нашого гравця. ``AnimatedSprite2D`` використовує ресурс "
-":ref:`SpriteFrames <class_SpriteFrames>`, який є списком анімацій, що він "
-"може відображати. Для зручності цей ресурс автоматично створюється та "
+"вигляд та анімації нашого гравця. ``AnimatedSprite2D`` використовує "
+"ресурс :ref:`SpriteFrames <class_SpriteFrames>`, який є списком анімацій, що "
+"він може відображати. Для зручності цей ресурс автоматично створюється та "
 "прив’язується до ``AnimatedSprite2D`` під час додавання нового вузла в "
 "редакторі. Переконайтеся, що вибрано ``AnimatedSprite2D``, а потім знайдіть "
 "панель ``SpriteFrames`` у нижній частині редактора."
@@ -13861,8 +13861,8 @@ msgid ""
 msgstr ""
 "Після того як усі три таймери будуть налаштовані таким чином, ви повинні "
 "побачити, що кожен таймер має з’єднання «Signal» для відповідного сигналу "
-"``timeout()``, яке відображається зеленим кольором на відповідній вкладці «"
-"Signals»:"
+"``timeout()``, яке відображається зеленим кольором на відповідній вкладці "
+"«Signals»:"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:165
 msgid "(For MobTimer): ``_on_mob_timer_timeout()``"
@@ -19619,9 +19619,10 @@ msgid ""
 msgstr ""
 "Створюючи мережеву гру, майте на увазі, які вузли та ігрові системи "
 "стосуються всіх гравців, а не ті, що стосуються лише авторитетного сервера. "
-"Наприклад, не всім користувачам потрібно мати копію логіки «PlayerController"
-"» кожного гравця — їм потрібна лише власна. Зберігання їх в окремій гілці "
-"від «світу» може допомогти спростити керування підключеннями до гри тощо."
+"Наприклад, не всім користувачам потрібно мати копію логіки "
+"«PlayerController» кожного гравця — їм потрібна лише власна. Зберігання їх в "
+"окремій гілці від «світу» може допомогти спростити керування підключеннями "
+"до гри тощо."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:485
 msgid ""
@@ -24320,8 +24321,8 @@ msgid ""
 msgstr ""
 "Під меню, на лівій панелі, ви побачите список відкритих файлів і сторінок "
 "документації. Залежно від типу файлу цей список матиме піктограму поруч із "
-"назвою файлу. Наприклад, |script| значок означає, що це GDScript. "
-"|scriptcsharp| означає, що це скрипт C#. |documentation| означає, що це "
+"назвою файлу. Наприклад, |script| значок означає, що це GDScript. |"
+"scriptcsharp| означає, що це скрипт C#. |documentation| означає, що це "
 "вбудоване посилання на клас. Нарешті |toolscript| означає, що це поточний "
 "скрипт (див. :ref:`tool annotation <doc_running_code_in_the_editor>`, щоб "
 "дізнатися більше про це). Якщо навести курсор на файл, з’явиться спливаюча "
@@ -24414,12 +24415,12 @@ msgid ""
 "reference documents leaving only script files open. **Show in FileSystem** "
 "finds and highlights the file in the FileSystem dock."
 msgstr ""
-"Ви також можете скористатися кнопками **«Перемістити вгору»** та **«"
-"Перемістити вниз»**, щоб змінити порядок файлів, або натиснути **«Сортувати"
-"»**, щоб відсортувати всі файли за алфавітом. **«Сховати панель файлів»** "
-"приховує панель, яку можна знову відобразити за допомогою стрілки вправо на "
-"панелі стану. **Закрити документи** файли скриптів. **Показати у файловій "
-"системі** знаходить і виділяє файл у доці «Файлова система»."
+"Ви також можете скористатися кнопками **«Перемістити вгору»** та "
+"**«Перемістити вниз»**, щоб змінити порядок файлів, або натиснути "
+"**«Сортувати»**, щоб відсортувати всі файли за алфавітом. **«Сховати панель "
+"файлів»** приховує панель, яку можна знову відобразити за допомогою стрілки "
+"вправо на панелі стану. **Закрити документи** файли скриптів. **Показати у "
+"файловій системі** знаходить і виділяє файл у доці «Файлова система»."
 
 #: ../../docs/tutorials/editor/script_editor.rst:156
 msgid ""
@@ -27326,8 +27327,7 @@ msgid ""
 msgstr ""
 "|release| Роздільник для аргументів, наданих користувачем. Наведені нижче "
 "аргументи не використовуються двигуном, але їх можна отримати за допомогою "
-"функції :ref:`OS.get_cmdline_user_args()"
-"<class_OS_method_get_cmdline_user_args>`."
+"функції :ref:`OS.get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:70
 msgid "``-e``, ``--editor``"
@@ -43896,9 +43896,9 @@ msgid ""
 "tab. Add the following input actions (see :ref:`InputEvent <doc_inputevent>` "
 "for details):"
 msgstr ""
-"Відкрийте :menu:`Project > Project Settings` та виберіть вкладку "
-":button:`Input Map`. Додайте наступні дії вводу (докладніше див. "
-":ref:`InputEvent <doc_inputevent>`):"
+"Відкрийте :menu:`Project > Project Settings` та виберіть "
+"вкладку :button:`Input Map`. Додайте наступні дії вводу (докладніше "
+"див. :ref:`InputEvent <doc_inputevent>`):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
@@ -58581,9 +58581,9 @@ msgid ""
 "``ALPHA`` by ``COLOR.rgb`` and ``COLOR.a`` respectively in ``fragment()``."
 msgstr ""
 "Для **Color** і **Color Gradient** колір установлюється через кольори "
-"вершин. Якщо використовується власний шейдер, переконайтеся, що в ``fragment"
-"()`` значення ``ALBEDO`` та ``ALPHA`` множаться відповідно на ``COLOR.rgb`` "
-"і ``COLOR.a``."
+"вершин. Якщо використовується власний шейдер, переконайтеся, що в "
+"``fragment()`` значення ``ALBEDO`` та ``ALPHA`` множаться відповідно на "
+"``COLOR.rgb`` і ``COLOR.a``."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:89
 msgid ""
@@ -58640,10 +58640,10 @@ msgid ""
 msgstr ""
 "У режимі **Local** згенерована сітка вирівнюється відносно локального "
 "простору сліду. Це означає, що вона обертається й масштабується відповідно "
-"до руху та орієнтації сліду. Наприклад, якщо ви використовуєте зв'язку "
-":ref:`class_Path3D` + :ref:`class_PathFollow3D` для створення сліду вздовж "
-"шляху, враховуватиметься нахил шляху. Цей режим зазвичай підходить для "
-"ефектів помаху меча."
+"до руху та орієнтації сліду. Наприклад, якщо ви використовуєте "
+"зв'язку :ref:`class_Path3D` + :ref:`class_PathFollow3D` для створення сліду "
+"вздовж шляху, враховуватиметься нахил шляху. Цей режим зазвичай підходить "
+"для ефектів помаху меча."
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:117
 msgid ""
@@ -58851,7 +58851,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_trail_3d.rst:236
 msgid ""
 "Comparison of different Min Section Length values on a corkscrew trail effect"
-msgstr "Порівняння різних значень Min Section Length для спіралеподібного сліду"
+msgstr ""
+"Порівняння різних значень Min Section Length для спіралеподібного сліду"
 
 #: ../../docs/tutorials/3d/using_trail_3d.rst:238
 msgid ""
@@ -63133,10 +63134,11 @@ msgstr ""
 "елементів*, які можуть бути присутніми в поточному полі зору камери. "
 "Кластеризованим елементом є всенаправлене світло, точкове світло, площинне "
 "світло, :ref:`декаль <doc_using_decals>` або :ref:`зонд відбиття "
-"<doc_reflection_probes>`. Це обмеження можна збільшити, змінивши значення "
-":ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/"
-"cluster_builder/max_clustered_elements>` у розділі **Налаштування проєкту > "
-"Рендеринг > Обмеження > Кластерний конструктор**."
+"<doc_reflection_probes>`. Це обмеження можна збільшити, змінивши "
+"значення :ref:`Max Clustered "
+"Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/"
+"max_clustered_elements>` у розділі **Налаштування проєкту > Рендеринг > "
+"Обмеження > Кластерний конструктор**."
 
 #: ../../docs/tutorials/3d/global_illumination/reflection_probes.rst:193
 msgid ""
@@ -66505,13 +66507,13 @@ msgid ""
 "and :ref:`ScreenSpaceAA <enum_Viewport_ScreenSpaceAA>` enums."
 msgstr ""
 "Згладжування можна налаштувати у вікні :ref:`параметрів проєкту "
-"<doc_project_settings>` або змінити з коду за допомогою властивостей "
-":ref:`class_Viewport`, наприклад :ref:`msaa_3d "
+"<doc_project_settings>` або змінити з коду за допомогою "
+"властивостей :ref:`class_Viewport`, наприклад :ref:`msaa_3d "
 "<class_Viewport_property_msaa_3d>`, :ref:`screen_space_aa "
 "<class_Viewport_property_screen_space_aa>` і :ref:`use_taa "
 "<class_Viewport_property_use_taa>`. Доступні значення цих властивостей "
-"визначено в переліках :ref:`MSAA <enum_Viewport_MSAA>` та "
-":ref:`ScreenSpaceAA <enum_Viewport_ScreenSpaceAA>`."
+"визначено в переліках :ref:`MSAA <enum_Viewport_MSAA>` "
+"та :ref:`ScreenSpaceAA <enum_Viewport_ScreenSpaceAA>`."
 
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:46
 msgid ""
@@ -88039,9 +88041,9 @@ msgid ""
 "that may need it."
 msgstr ""
 "Починаючи з Godot 4.8, редактор підтримує автоматичне налаштування Android "
-"SDK та Java SDK. Інструкції з ручного налаштування залишилися в розділі "
-":ref:`doc_exporting_for_android_manual_android_build_setup` для тих, кому "
-"вони можуть знадобитися."
+"SDK та Java SDK. Інструкції з ручного налаштування залишилися в "
+"розділі :ref:`doc_exporting_for_android_manual_android_build_setup` для тих, "
+"кому вони можуть знадобитися."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:39
 msgid "The feature can be enabled from two locations:"
@@ -88879,8 +88881,8 @@ msgid ""
 "to :ref:`doc_exporting_for_ios`. You can refer to it for more details about "
 "the Xcode workflow."
 msgstr ""
-"Інструкції з експорту для visionOS дуже схожі на "
-":ref:`doc_exporting_for_ios`. Детальнішу інформацію про робочий процес у "
+"Інструкції з експорту для visionOS дуже схожі "
+"на :ref:`doc_exporting_for_ios`. Детальнішу інформацію про робочий процес у "
 "Xcode можна знайти в цьому документі."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:18
@@ -88903,9 +88905,9 @@ msgid ""
 "Projects written in C# are currently not supported on visionOS, as "
 "the :ref:`.NET runtime <doc_c_sharp_platforms>` does not support visionOS."
 msgstr ""
-"Проєкти, написані на C#, наразі не підтримуються у visionOS, оскільки "
-":ref:`середовище виконання .NET <doc_c_sharp_platforms>` не підтримує "
-"visionOS."
+"Проєкти, написані на C#, наразі не підтримуються у visionOS, "
+"оскільки :ref:`середовище виконання .NET <doc_c_sharp_platforms>` не "
+"підтримує visionOS."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:27
 msgid "App Role"
@@ -88927,8 +88929,8 @@ msgstr "Режим **Immersive** показує гру як XR-застосун�
 msgid ""
 "For more information about the immersive mode, see :ref:`doc_visionos_intro`."
 msgstr ""
-"Докладнішу інформацію про режим повного занурення див. у "
-":ref:`doc_visionos_intro`."
+"Докладнішу інформацію про режим повного занурення див. "
+"у :ref:`doc_visionos_intro`."
 
 #: ../../docs/tutorials/export/exporting_for_visionos.rst:37
 msgid "Immersion Mode"
@@ -94286,11 +94288,11 @@ msgstr ""
 "гравцям змінювати мову в грі з різних причин (наприклад, якість перекладу "
 "або уподобання гравця)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:85
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:99
 msgid "Locale vs. language"
 msgstr "Локаль проти мови"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:87
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:101
 msgid ""
 "A :ref:`locale <doc_locales>` is commonly a combination of a language with a "
 "region or country, but can also contain information like a script or a "
@@ -94299,28 +94301,28 @@ msgstr ""
 ":ref:`locale <doc_locales>` зазвичай поєднує мову з регіоном або країною, "
 "але також може містити інформацію, як-от шрифт або варіант."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:90
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:104
 #: ../../docs/tutorials/inputs/input_examples.rst:29
 msgid "Examples:"
 msgstr "Приклади:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:92
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
 msgid "``en``: English language"
 msgstr "``en``: англійська мова"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:93
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid "``en_GB``: English in Great Britain / British English"
 msgstr "``en_GB``: англійська у Великобританії / британська англійська"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:94
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:108
 msgid "``en_US``: English in the USA / American English"
 msgstr "``en_US``: англійська в США / американська англійська"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:95
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:109
 msgid "``en_DE``: English in Germany"
 msgstr "``en_DE``: англійська в Німеччині"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:97
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
 msgid ""
 "Indie games generally only need to care about language, but read on for more "
 "information."
@@ -94328,7 +94330,7 @@ msgstr ""
 "Інді-ігри зазвичай потребують лише мови, але читайте далі, щоб дізнатися "
 "більше."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:100
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:114
 msgid ""
 "Why locales exist can be illustrated through the USA and Great Britain. Both "
 "speak the same language (English), yet differ in many aspects:"
@@ -94337,21 +94339,21 @@ msgstr ""
 "Британії. Обидві країни розмовляють однією мовою (англійською), але "
 "відрізняються багатьма аспектами:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:105
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:119
 msgid "Spelling: e.g. gray (USA), grey (GB)"
 msgstr "Орфографія: наприклад, gray (США), grey (Велика Британія)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:106
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:120
 msgid "Use of words: e.g. eggplant (USA), aubergine (GB)"
 msgstr ""
 "Використання слів: наприклад, eggplant (США), aubergine (Велика Британія)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:121
 msgid "Units or currencies: e.g. feet/inches (USA), metres/cm (GB)"
 msgstr ""
 "Одиниці або валюти: наприклад, feet/inches (США), metres/cm (Велика Британія)"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:111
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:125
 msgid ""
 "It can get more complex however. Imagine you offer different content in "
 "Europe and in China (e.g. in an MMO). You will need to translate each of "
@@ -94362,11 +94364,11 @@ msgstr ""
 "Європі та Китаї (наприклад, у MMO). Вам потрібно буде перекласти кожну з цих "
 "варіацій вмісту багатьма мовами, зберігати та завантажувати їх відповідно."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:116
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:130
 msgid "Converting keys to text"
 msgstr "Перетворення ключів на текст"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:118
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:132
 msgid ""
 "Some controls, such as :ref:`Button <class_Button>` and :ref:`Label "
 "<class_Label>`, will automatically fetch a translation if their text matches "
@@ -94380,7 +94382,7 @@ msgstr ""
 "``MAIN_SCREEN_GREETING1``, і цей ключ існує в поточному перекладі, то текст "
 "буде автоматично перекладено."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:123
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:137
 msgid ""
 "This automatic translation behavior may be undesirable in certain cases. For "
 "instance, when using a Label to display a player's name, you most likely "
@@ -94395,7 +94397,7 @@ msgstr ""
 "певному вузлі, встановіть для параметра :ui:`Auto Translate > Mode` значення "
 "``Disabled`` в інспекторі."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:129
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:143
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
 "used. This will just look up the text in the translations and convert it if "
@@ -94405,7 +94407,7 @@ msgstr ""
 "<class_Object_method_tr>`. Вона просто буде шукати текст у перекладах і "
 "конвертувати його, якщо він знайдений:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:145
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:163
 msgid ""
 "If no text is displayed after changing the language, try to use a different "
 "font. The default project font only supports a subset of the Latin-1 "
@@ -94417,7 +94419,7 @@ msgstr ""
 "символів Latin-1, який не можна використовувати для відображення таких мов, "
 "як російська чи китайська."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:149
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:167
 msgid ""
 "A good resource for multilingual fonts is `Noto Fonts <https://"
 "www.google.com/get/noto/>`__. Make sure to download the correct variation if "
@@ -94427,7 +94429,7 @@ msgstr ""
 "www.google.com/get/noto/>`__. Переконайтеся, що ви завантажили правильний "
 "варіант, якщо ви використовуєте менш поширену мову."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:153
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:171
 msgid ""
 "Once you've downloaded the font, load the TTF file into a DynamicFont "
 "resource and use it as a custom font of your Control node. For better "
@@ -94439,14 +94441,15 @@ msgstr ""
 "повторного використання зв’яжіть новий ресурс теми з кореневим вузлом "
 "керування та визначте DynamicFont як шрифт за замовчуванням у темі."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:159
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:177
 msgid "Placeholders"
 msgstr "Заповнювачі"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:161
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:179
+#, fuzzy
 msgid ""
 "To feature placeholders in your translated strings, "
-"use :ref:`doc_gdscript_printf` or the equivalent feature in C#. This lets "
+"use :ref:`doc_gdscript_printf` or ``string.Format()`` in C#. This lets "
 "translators move the location of the placeholder in the string freely, which "
 "allows translations to sound more natural. Named placeholders with the "
 "``String.format()`` function should be used whenever possible, as they also "
@@ -94460,11 +94463,11 @@ msgstr ""
 "оскільки вони також дозволяють перекладачам вибирати *порядок*, у якому "
 "з’являються заповнювачі:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:182
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:209
 msgid "Translation contexts"
 msgstr "Контексти перекладу"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:184
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
 msgid ""
 "If you're using plain English as source strings (rather than message codes "
 "``LIKE_THIS``), you may run into ambiguities when you have to translate the "
@@ -94480,11 +94483,11 @@ msgstr ""
 "вирішити цю двозначність і дозволити цільовим мовам використовувати різні "
 "рядки, навіть якщо вихідний рядок ідентичний:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:211
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:238
 msgid "Pluralization"
 msgstr "Множинність"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:213
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:240
 msgid ""
 "Most languages require different strings depending on whether an object is "
 "in singular or plural form. However, hardcoding the \"is plural\" condition "
@@ -94495,7 +94498,7 @@ msgstr ""
 "множині. Однак жорстке кодування умови \"є множини\" залежно від того, чи "
 "існує більше ніж 1 об’єкт, не є дійсним для всіх мов."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:217
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:244
 msgid ""
 "Some languages have more than two plural forms, and the rules on the number "
 "of objects required for each plural form vary. Godot offers support for "
@@ -94505,7 +94508,7 @@ msgstr ""
 "об’єктів, необхідних для кожної форми множини, відрізняються. Godot пропонує "
 "підтримку *множини*, щоб цільові локалі могли виконувати це автоматично."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:221
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:248
 msgid ""
 "Pluralization is meant to be used with positive (or zero) integer numbers "
 "only. Negative and floating-point values usually represent physical entities "
@@ -94516,15 +94519,15 @@ msgstr ""
 "представляють фізичні об’єкти, для яких однина та множина не застосовуються "
 "однозначно."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:236
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:263
 msgid "This can be combined with a context if needed:"
 msgstr "За потреби це можна поєднати з контекстом:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:250
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:277
 msgid "Making controls resizable"
 msgstr "Контроль розміру"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:252
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:279
 msgid ""
 "The same text in different languages can vary greatly in length. For this, "
 "make sure to read the tutorial on :ref:`doc_size_and_anchors`, as "
@@ -94538,7 +94541,7 @@ msgstr ""
 "бути :ref:`Container <class_Container>`, як і параметри обтікання текстом, "
 "доступні в :ref:`Label <class_Label>`."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:258
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:285
 msgid ""
 "To check whether your UI can accommodate translations with longer strings "
 "than the original, you can enable :ref:`pseudolocalization "
@@ -94557,7 +94560,7 @@ msgstr ""
 "залишаються без змін, щоб вони продовжували працювати, коли увімкнено "
 "псевдолокалізацію."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:266
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:293
 msgid ""
 "For example, the string ``Hello world, this is %s!`` becomes ``[Ĥéłłô ŵôŕłd́, "
 "ŧh̀íš íš %s!]`` when pseudolocalization is enabled."
@@ -94565,13 +94568,13 @@ msgstr ""
 "Наприклад, рядок ``Hello world, this is %s!`` стає ``[Ĥéłłô ŵôŕłd́, ŧh̀íš íš "
 "%s!]``, коли псевдолокалізацію ввімкнено."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:269
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
 msgid ""
 "While looking strange at first, pseudolocalization has several benefits:"
 msgstr ""
 "Хоча на перший погляд виглядає дивно, псевдолокалізація має кілька переваг:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:271
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
 msgid ""
 "It lets you spot non-localizable strings quickly, so you can go over them "
 "and make them localizable (if it makes sense to do so)."
@@ -94579,7 +94582,7 @@ msgstr ""
 "Це дозволяє швидко помітити нелокалізовані рядки, тож ви можете переглянути "
 "їх і зробити їх локалізованими (якщо це має сенс)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:273
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:300
 msgid ""
 "It lets you check UI elements that can't fit long strings. Many languages "
 "will feature much longer translations than the source text, so it's "
@@ -94590,7 +94593,7 @@ msgstr ""
 "вихідний текст, тому важливо переконатися, що ваш інтерфейс користувача може "
 "вміщувати довші, ніж зазвичай, рядки."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:276
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:303
 msgid ""
 "It lets you check whether your font contains all the characters required to "
 "support various languages. However, since the goal of pseudolocalization is "
@@ -94604,7 +94607,7 @@ msgstr ""
 "чи підтримує шрифт :abbr:`CJK (китайська, японська, корейська)` або мови з "
 "написанням справа наліво."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:282
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
 msgid ""
 "The project settings allow you to tune pseudolocalization behavior, so that "
 "you can disable parts of it if desired."
@@ -94612,11 +94615,11 @@ msgstr ""
 "Параметри проекту дозволяють вам налаштувати поведінку псевдолокалізації, "
 "щоб за бажанням ви могли вимкнути її частини."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:286
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:313
 msgid "TranslationServer"
 msgstr "Сервер Перекладу"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:288
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
 msgid ""
 "Godot has a server handling low-level translation management called "
 "the :ref:`TranslationServer <class_TranslationServer>`. Translations can be "
@@ -94628,11 +94631,11 @@ msgstr ""
 "додавати або видаляти під час виконання; поточну мову також можна змінити "
 "під час виконання."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:296
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:323
 msgid "Bidirectional text and UI mirroring"
 msgstr "Двонаправлений текст та дзеркальне відображення інтерфейсу користувача"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:298
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
 msgid ""
 "Arabic and Hebrew are written from right to left (except for the numbers and "
 "Latin words mixed in), and the user interface for these languages should be "
@@ -94644,7 +94647,7 @@ msgstr ""
 "дзеркальним. У деяких мовах форма гліфа змінюється залежно від навколишніх "
 "символів."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:302
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:329
 msgid ""
 "Support for bidirectional writing systems and UI mirroring is transparent, "
 "you don't usually need to change anything or have any knowledge of the "
@@ -94654,22 +94657,22 @@ msgstr ""
 "користувача є прозорою, зазвичай вам не потрібно нічого змінювати або знати "
 "про конкретну систему письма."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:305
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:332
 msgid ""
 "For RTL languages, Godot will automatically do the following changes to the "
 "UI:"
 msgstr ""
 "Для мов RTL Godot автоматично внесе такі зміни в інтерфейс користувача:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:307
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:334
 msgid "Mirrors left/right anchors and margins."
 msgstr "Дзеркальні ліві/праві прив’язки та поля."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:308
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:335
 msgid "Swaps left and right text alignment."
 msgstr "Міняє місцями вирівнювання тексту по лівому та правому краю."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:309
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:336
 msgid ""
 "Mirrors horizontal order of the child controls in the containers, and items "
 "in Tree/ItemList controls."
@@ -94677,7 +94680,7 @@ msgstr ""
 "Віддзеркалює горизонтальний порядок дочірніх елементів керування в "
 "контейнерах і елементи в елементах керування Tree/ItemList."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:311
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:338
 msgid ""
 "Uses mirrored order of the internal control elements (e.g., OptionButton "
 "dropdown button, CheckBox/CheckButton alignment, List column order, TreeItem "
@@ -94690,16 +94693,16 @@ msgstr ""
 "деяких випадках дзеркальні елементи керування використовують окремі стилі "
 "тем."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:315
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:342
 msgid "Coordinate system is **not** mirrored."
 msgstr "Система координат **не** дзеркально відображена."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:316
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:343
 msgid "Non-UI nodes (sprites, etc.) are **not** affected."
 msgstr ""
 "Вузли, що не є інтерфейсом користувача (спрайти тощо), **не** зазнають змін."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:318
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:345
 msgid ""
 "It is possible to override text and control layout direction by using the "
 "following control properties:"
@@ -94707,7 +94710,7 @@ msgstr ""
 "Можна змінити текст і керувати напрямком макета за допомогою таких "
 "властивостей елемента керування:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:321
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:348
 msgid ""
 "``text_direction``, sets the base text direction. When set to \"auto\", the "
 "direction depends on the first strong directional character in the text "
@@ -94717,11 +94720,11 @@ msgstr ""
 "значення \"auto\", напрямок залежить від першого символу строгого напрямку в "
 "тексті відповідно до двонаправленого алгоритму Unicode."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:324
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
 msgid "``language``, overrides the current project locale."
 msgstr "``language``, замінює поточну локалізацію проєкту."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:325
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:352
 msgid ""
 "The ``structured_text_bidi_override`` property and "
 "``_structured_text_parser`` callback, enable special handling for structured "
@@ -94731,11 +94734,11 @@ msgstr ""
 "``_structured_text_parser`` забезпечують спеціальну обробку структурованого "
 "тексту."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:327
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:354
 msgid "``layout_direction``, overrides control mirroring."
 msgstr "``layout_direction``, замінює дзеркальне відображення керування."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:333
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:360
 msgid ""
 "You can see how right-to-left typesetting works in action using the `BiDI "
 "and Font Features demo project <https://github.com/godotengine/godot-demo-"
@@ -94745,11 +94748,11 @@ msgstr ""
 "`демонстраційний проект BiDI та Font Features <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/gui/bidi_and_font_features>`__."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:337
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:364
 msgid "Adding break iterator data to exported project"
 msgstr "Додавання даних ітератора розриву до експортованого проекту"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:339
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:366
 msgid ""
 "Some languages are written without spaces. In those languages, word and line "
 "breaking require more than rules over character sequences. Godot includes "
@@ -94761,7 +94764,7 @@ msgstr ""
 "ICU та дані ітератора розриву на основі словника, але ці дані за "
 "замовчуванням не включаються до експортованих проектів."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:344
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:371
 msgid ""
 "To include it, go to :menu:`Project > Project Settings > General > "
 "Internationalization > Locale` and enable :ui:`Include Text Server Data`, "
@@ -94772,11 +94775,11 @@ msgstr ""
 "Data`, а потім експортуйте проєкт. Розмір даних ітератора розриву становить "
 "близько 4 МБ."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:349
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:376
 msgid "Structured text BiDi override"
 msgstr "Перевизначення структурованого тексту BiDi"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:351
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:378
 msgid ""
 "Unicode BiDi algorithm is designed to work with natural text and it's "
 "incapable of handling text with the higher level order, like file names, "
@@ -94786,7 +94789,7 @@ msgstr ""
 "обробляти текст із порядком вищого рівня, як-от імена файлів, URI, адреси "
 "електронної пошти, регулярні вирази чи вихідний код."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:357
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
 msgid ""
 "For example, the path for this shown directory structure will be displayed "
 "incorrectly (top \"LineEdit\" control). \"File\" type structured text "
@@ -94801,7 +94804,7 @@ msgstr ""
 "каталогів будь-якою мовою та збереження правильного порядку папок (нижній "
 "елемент керування \"LineEdit\")."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:362
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:389
 msgid ""
 "Custom callbacks provide a way to override BiDi for the other types of "
 "structured text."
@@ -94809,11 +94812,11 @@ msgstr ""
 "Користувальницькі зворотні виклики забезпечують спосіб замінити BiDi для "
 "інших типів структурованого тексту."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:365
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:392
 msgid "Localizing numbers"
 msgstr "Локалізація чисел"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:367
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
 msgid ""
 "Controls specifically designed for number input or output (e.g. ProgressBar, "
 "SpinBox) will use localized numbering system automatically, for the other "
@@ -94832,11 +94835,11 @@ msgstr ""
 "нумерації та :ref:`TextServer.parse_number(string, language) "
 "<class_TextServer_method_parse_number>`, щоб перетворити його назад."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:375
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:402
 msgid "Localizing icons and images"
 msgstr "Локалізація значків і зображень"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:377
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:404
 msgid ""
 "Icons with left and right pointing arrows which may need to be reversed for "
 "Arabic and Hebrew locales, in case they indicate movement or direction (e.g. "
@@ -94847,11 +94850,11 @@ msgstr ""
 "напрямок (наприклад, кнопки назад/вперед). В іншому випадку вони можуть "
 "залишитися такими ж."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:382
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:409
 msgid "Testing translations"
 msgstr "Тестування перекладів"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:384
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:411
 msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides three ways to do this."
@@ -94859,7 +94862,7 @@ msgstr ""
 "Можливо, вам варто протестувати переклад проєкту перед його публікацією. "
 "Godot пропонує три способи зробити це."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:387
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
 msgid ""
 "Under :menu:`Project > Project Settings > General > Internationalization > "
 "Locale` (with advanced settings enabled) is a :ui:`Test` property. Set this "
@@ -94873,7 +94876,7 @@ msgstr ""
 "ви хочете протестувати. Godot запустить проєкт із цією локаллю під час "
 "запуску проєкту (або з редактора, або під час експорту)."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:394
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:421
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "
 "version control when it is set to a non-empty value. Therefore, it should be "
@@ -94884,7 +94887,7 @@ msgstr ""
 "він повинен бути повернутий назад до порожнього значення, перед внесенням "
 "змін до керування версіями."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:398
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:425
 msgid ""
 "Second, from within the editor go to the top bar and click on :button:`View` "
 "on the top bar, then go down to :ui:`Preview Translation` and select the "
@@ -94894,13 +94897,13 @@ msgstr ""
 "натисніть :button:`View` на верхній панелі, потім перейдіть до :ui:`Preview "
 "Translation` та виберіть мову, яку ви хочете переглянути."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:403
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:430
 msgid ""
 "All text in scenes in the editor should now be displayed using the selected "
 "language."
 msgstr "Весь текст у сценах редактора тепер має відображатися вибраною мовою."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:405
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:432
 msgid ""
 "Translations can also be tested when :ref:`running Godot from the command "
 "line <doc_command_line_tutorial>`. For example, to test a game in French, "
@@ -94910,11 +94913,11 @@ msgstr ""
 "<doc_command_line_tutorial>`. Наприклад, щоб перевірити гру французькою "
 "мовою, можна надати такий аргумент:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:414
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:441
 msgid "Translating the project name"
 msgstr "Переклад назви проекту"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:416
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:443
 msgid ""
 "The project name becomes the app name when exporting to different operating "
 "systems and platforms. To specify the project name in more than one language "
@@ -94932,7 +94935,7 @@ msgstr ""
 "вибрати мову (і країну, якщо потрібно) для перекладу назви вашого проєкту. "
 "Після цього ви можете ввести локалізовану назву."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:427
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:454
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
@@ -95268,8 +95271,8 @@ msgid ""
 "loading and removing translations at runtime as well."
 msgstr ""
 "Після імпорту CSV-файлу він **не** автоматично реєструється як джерело "
-"перекладу для проєкту. Пам’ятайте, що слід виконати кроки, описані в "
-":ref:`doc_internationalizing_games_configuring_imported_translation`, щоб "
+"перекладу для проєкту. Пам’ятайте, що слід виконати кроки, описані "
+"в :ref:`doc_internationalizing_games_configuring_imported_translation`, щоб "
 "переклад фактично використовувався під час запуску проєкту."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:4
@@ -95297,9 +95300,9 @@ msgid ""
 "``xgettext``)."
 msgstr ""
 "Для знайомства з gettext, перегляньте `Короткий Посібник з Gettext <https://"
-"www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>"
-"`_. Він написаний для проектів на С, але велика частина порад підійде і для "
-"Godot (за винятком ``xgettext``)."
+"www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-"
+"tutorial.html>`_. Він написаний для проектів на С, але велика частина порад "
+"підійде і для Godot (за винятком ``xgettext``)."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
 msgid ""
@@ -110837,8 +110840,9 @@ msgid ""
 "as :ref:`NavigationRegion2D<class_NavigationRegion2D>` "
 "and :ref:`NavigationRegion3D<class_NavigationRegion3D>` respectively."
 msgstr ""
-"Версії 2D і 3D доступні як :ref:`NavigationRegion2D<class_NavigationRegion2D>"
-"` і :ref:`NavigationRegion3D<class_NavigationRegion3D>` відповідно."
+"Версії 2D і 3D доступні "
+"як :ref:`NavigationRegion2D<class_NavigationRegion2D>` "
+"і :ref:`NavigationRegion3D<class_NavigationRegion3D>` відповідно."
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:12
 msgid ""
@@ -116248,12 +116252,14 @@ msgstr ""
 "сортуються за матеріалами, щоб зменшити час. Але сортування теж вимагає часу."
 
 #: ../../docs/tutorials/performance/index.rst:25
+#, fuzzy
 msgid ""
 "In 3D physics, a similar situation happens. The best algorithms to handle "
-"large amounts of physics objects (such as SAP) are slow at insertion/removal "
-"of objects and raycasting. Algorithms that allow faster insertion and "
-"removal, as well as raycasting, will not be able to handle as many active "
-"objects."
+"large amounts of physics objects, such as `Sweep And Prune <https://"
+"en.wikipedia.org/wiki/Sweep_and_prune>`_ (SAP), are slow at insertion/"
+"removal of objects and raycasting. Algorithms that allow faster insertion "
+"and removal, as well as raycasting, will not be able to handle as many "
+"active objects."
 msgstr ""
 "У тривимірній фізиці відбувається подібна ситуація. Найкращі алгоритми для "
 "обробки великої кількості фізичних об’єктів (наприклад, SAP) повільні при "
@@ -126772,8 +126778,8 @@ msgstr ""
 "невелика затримка введення, що може мати значення в іграх, які вимагають "
 "швидких реакцій. У деяких таких ситуаціях, що вимагають швидкого введення, "
 "ви можете вимкнути фізичну інтерполяцію та використовувати іншу схему, "
-"зокрема для :ref:`class_Camera3D` (див. "
-":ref:`doc_advanced_physics_interpolation`), або використовувати високу "
+"зокрема для :ref:`class_Camera3D` "
+"(див. :ref:`doc_advanced_physics_interpolation`), або використовувати високу "
 "частоту оновлень, що зменшує ці затримки."
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:203
@@ -127354,9 +127360,9 @@ msgstr ""
 "трансформації з фізичною інтерполяцією. Це могло спричиняти ривки першого "
 "дочірнього вузла, для якого ``physics_interpolation_mode`` було встановлено "
 "в ``Off``. Через це в старих посібниках часто рекомендували використовувати "
-"неінтерпольовані камери у глобальному просторі (наприклад, установивши "
-":ref:`Node3D.top_level<class_Node3D_property_top_level>`). У Godot 4.5 цю "
-"поведінку виправлено."
+"неінтерпольовані камери у глобальному просторі (наприклад, "
+"установивши :ref:`Node3D.top_level<class_Node3D_property_top_level>`). У "
+"Godot 4.5 цю поведінку виправлено."
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:46
 msgid ""
@@ -127549,17 +127555,17 @@ msgid ""
 "camera with the mouse and *without* interpolation."
 msgstr ""
 "Камера третьої особи може подібним чином визначати погляд (цільове "
-"розташування) камери за допомогою "
-":ref:`Node3D.get_global_transform_interpolated<class_Node3D_method_get_global_transform_interpolated>"
-"`, але позиціонувати камеру за допомогою погляду миші *без* інтерполяції."
+"розташування) камери за "
+"допомогою :ref:`Node3D.get_global_transform_interpolated<class_Node3D_method_get_global_transform_interpolated>`, "
+"але позиціонувати камеру за допомогою погляду миші *без* інтерполяції."
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:156
 msgid ""
 "Usually you can do this with a subscene arranged something like this: "
 "*(where ``physics_interpolation_mode`` is specified in square brackets)*"
 msgstr ""
-"Зазвичай це можна зробити за допомогою підсцени, побудованої приблизно так: *"
-"(де ``physics_interpolation_mode`` вказано в квадратних дужках)*"
+"Зазвичай це можна зробити за допомогою підсцени, побудованої приблизно так: "
+"*(де ``physics_interpolation_mode`` вказано в квадратних дужках)*"
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:166
 msgid ""
@@ -128428,8 +128434,8 @@ msgid ""
 "via :ref:`doc_android_gradle_build`"
 msgstr ""
 "Дозволяє проектам Godot для Android використовувати компоненти, бібліотеки "
-"та інструменти з екосистем Android, Java та Kotlin за допомогою "
-":ref:`doc_android_gradle_build`"
+"та інструменти з екосистем Android, Java та Kotlin за "
+"допомогою :ref:`doc_android_gradle_build`"
 
 #: ../../docs/tutorials/platform/android/android_library.rst:11
 msgid "Provides the ability to make the engine portable and embeddable:"
@@ -128805,7 +128811,7 @@ msgstr ""
 "AndroidManifest.xml>`_ такими метаданими:"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:106
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:254
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:253
 msgid "Where:"
 msgstr "Де:"
 
@@ -129941,7 +129947,7 @@ msgstr ""
 "Додайте наступне до розділу ``dependency`` файлу збірки Gradle додатка, де "
 "``<godot_project_export_path>`` вказує на каталог експорту проєкту Godot:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:215
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:214
 msgid ""
 "The export Godot project ``AAR`` binaries have dependencies on the "
 "``androidx-fragment`` and ``androidx-core-splashscreen`` libraries, so they "
@@ -129951,7 +129957,7 @@ msgstr ""
 "``androidx-fragment`` і ``androidx-core-splashscreen``, тому їх також "
 "потрібно додати до залежностей Android-проєкту."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:217
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:216
 msgid ""
 "Add the following to the ``dependency`` section of the app's gradle build "
 "file:"
@@ -129959,7 +129965,7 @@ msgstr ""
 "Додайте наведений нижче код до розділу ``dependency`` файлу збирання Gradle "
 "застосунку:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:224
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:223
 msgid ""
 "The final step is to configure the build flow, such that the Godot project "
 "is built and exported every time the sample app is built. To do so, add the "
@@ -129969,7 +129975,7 @@ msgstr ""
 "та експортувався під час кожного збирання зразкового застосунку. Для цього "
 "додайте наведений фрагмент до файлу збирання Gradle застосунку:"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:256
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:255
 msgid ""
 "``<absolute_path_to_godot_binary>`` is the absolute path to the Godot editor "
 "binary"
@@ -129977,11 +129983,11 @@ msgstr ""
 "``<absolute_path_to_godot_binary>`` — це абсолютний шлях до виконуваного "
 "файлу редактора Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:258
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:257
 msgid "``<path_to_godot_project>`` is the path to the Godot project"
 msgstr "``<path_to_godot_project>`` - це шлях до проєкту Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:260
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:259
 msgid ""
 "``<android_export_preset_name>`` is the name of the Android export preset "
 "configured in the Godot project"
@@ -129989,7 +129995,7 @@ msgstr ""
 "``<android_export_preset_name>`` — це назва пресета експорту для Android, "
 "налаштованого в проєкті Godot"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:262
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:261
 msgid ""
 "``<export_path_relative_to_workingDir>`` is the ``Export Path`` configured "
 "in the Godot project **relative to the project path or absolute**"
@@ -129998,7 +130004,7 @@ msgstr ""
 "налаштований у проєкті Godot **відносно шляху до проєкту або в абсолютному "
 "вираженні**"
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:264
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:263
 msgid ""
 "Once this is completed, build and run the Android app. If set up correctly, "
 "the host Activity will initialize the Godot Engine on startup, and run the "
@@ -130008,7 +130014,7 @@ msgstr ""
 "Якщо все налаштовано правильно, головна Activity ініціалізує Godot Engine "
 "під час запуску та запустить вбудований проєкт Godot."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:267
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:266
 msgid ""
 "While the app is running on device, you can check `Android logcat <https://"
 "developer.android.com/studio/debug/logcat>`_ to investigate any errors or "
@@ -130018,7 +130024,7 @@ msgstr ""
 "<https://developer.android.com/studio/debug/logcat>`_, щоб дослідити будь-"
 "які помилки чи збої."
 
-#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:269
+#: ../../docs/tutorials/platform/android/embedding_in_android_projects.rst:268
 msgid ""
 "For reference, check the `build and install instructions <https://github.com/"
 "m4gr3d/Godot-Android-Samples/blob/master/apps/gltf_viewer/README.md>`_ for "
@@ -130869,8 +130875,8 @@ msgid ""
 "(array of strings, listing the libraries to link)."
 msgstr ""
 "**spm_packages**: містить список залежностей Swift Package Manager із "
-"точними версіями. Кожен пакет має бути `Dictionary` з полями ``url`` (рядок)"
-", ``version`` (рядок, точна версія) і ``products`` (масив рядків із "
+"точними версіями. Кожен пакет має бути `Dictionary` з полями ``url`` "
+"(рядок), ``version`` (рядок, точна версія) і ``products`` (масив рядків із "
 "бібліотеками, які потрібно під'єднати)."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:156
@@ -131276,8 +131282,8 @@ msgid ""
 ":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
 "**)**"
 msgstr ""
-":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* **)"
-"**"
+":js:attr:`load <Engine.load>` **(** string basePath *[, number size=0 ]* "
+"**)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:32
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:61
@@ -131341,16 +131347,16 @@ msgid ""
 ":js:attr:`isSharedArrayBufferAvailable "
 "<Engine.isSharedArrayBufferAvailable>` **(** **)**"
 msgstr ""
-":js:attr:`isSharedArrayBufferAvailable <Engine.isSharedArrayBufferAvailable>"
-"` **(** **)**"
+":js:attr:`isSharedArrayBufferAvailable "
+"<Engine.isSharedArrayBufferAvailable>` **(** **)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:44
 msgid ""
 ":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
 "**)**"
 msgstr ""
-":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** **)"
-"**"
+":js:attr:`isAudioWorkletAvailable <Engine.isAudioWorkletAvailable>` **(** "
+"**)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:46
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:173
@@ -131428,8 +131434,8 @@ msgid ""
 ":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
 "**(** **)**"
 msgstr ""
-":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` **"
-"(** **)**"
+":js:attr:`installServiceWorker <Engine.prototype.installServiceWorker>` "
+"**(** **)**"
 
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:74
 msgid "Create a new Engine instance with the given configuration."
@@ -133129,8 +133135,8 @@ msgid ""
 msgstr ""
 "Для дока редактора кореневий вузол **повинен** бути :ref:`Control "
 "<class_Control>` або одним із його дочірніх класів. Під час створення нової "
-"сцени у діалоговому вікні «Створити кореневий вузол» виберіть **«"
-"Користувацький інтерфейс»**, оскільки це створить вузол ``Control`` як "
+"сцени у діалоговому вікні «Створити кореневий вузол» виберіть "
+"**«Користувацький інтерфейс»**, оскільки це створить вузол ``Control`` як "
 "корінь сцени. Для цього підручника ви можете створити одну кнопку. Не "
 "забудьте додати текст до вашої кнопки."
 
@@ -135334,11 +135340,11 @@ msgid ""
 "as \"unsaved\" (i.e. with an asterisk next to the name). This way, you also "
 "get a confirmation when trying to close the scene with unsaved changes."
 msgstr ""
-"У наведеному вище прикладі ми також викликаємо "
-":ref:`EditorScript.mark_scene_as_unsaved() "
+"У наведеному вище прикладі ми також "
+"викликаємо :ref:`EditorScript.mark_scene_as_unsaved() "
 "<class_EditorInterface_method_mark_scene_as_unsaved>` після будь-якої зміни, "
-"що впливає на стан сцени. Це дозволяє редактору відображати сцену як «"
-"незбережену» (тобто із зірочкою поруч із назвою). Таким чином, ви також "
+"що впливає на стан сцени. Це дозволяє редактору відображати сцену як "
+"«незбережену» (тобто із зірочкою поруч із назвою). Таким чином, ви також "
 "отримуєте підтвердження при спробі закрити сцену із незбереженими змінами."
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:705
@@ -136411,9 +136417,9 @@ msgid ""
 "following hierarchy:"
 msgstr ""
 "Якщо використовується :ref:`Camera3D <class_Camera3D>` або :ref:`Camera2D "
-"<class_Camera2D>`, він завжди відображатиметься на найближчому батьківському "
-":ref:`Viewport <class_Viewport>` (прямуючи до кореня). Наприклад, у такій "
-"ієрархії:"
+"<class_Camera2D>`, він завжди відображатиметься на найближчому "
+"батьківському :ref:`Viewport <class_Viewport>` (прямуючи до кореня). "
+"Наприклад, у такій ієрархії:"
 
 #: ../../docs/tutorials/rendering/viewports.rst:70
 msgid ""
@@ -136426,9 +136432,9 @@ msgid ""
 msgstr ""
 "Типово SubViewport використовують той самий *світ*, що й кореневий Viewport. "
 "Отже, якщо в одному світі є кілька камер, усі вони відображатимуть ті самі "
-"об'єкти. Цю поведінку можна змінити, призначивши SubViewport окремий "
-":ref:`світ <doc_viewports_worlds>`. Тоді він не відображатиме об'єкти зі "
-"світу кореневого Viewport, і навпаки."
+"об'єкти. Цю поведінку можна змінити, призначивши SubViewport "
+"окремий :ref:`світ <doc_viewports_worlds>`. Тоді він не відображатиме "
+"об'єкти зі світу кореневого Viewport, і навпаки."
 
 #: ../../docs/tutorials/rendering/viewports.rst:76
 msgid ""
@@ -136441,14 +136447,15 @@ msgid ""
 "own world, then ``MeshA`` would be hidden in the SubViewport and ``MeshB`` "
 "would be hidden in the Root Viewport."
 msgstr ""
-"У наведеному вище прикладі ``CameraA`` відображатиметься у кореневому "
-":ref:`class_Viewport` і буде відображати ``MeshA``. ``CameraB`` буде "
-"охоплена :ref:`class_SubViewport` разом із «/``MeshB``. Оскільки ``MeshB`` є "
-"частиною ієрархії сцени, вона все одно відображатиметься у кореневому вікні "
-"перегляду. Аналогічно, ``MeshA`` буде видима у SubViewport, оскільки вона "
-"використовує той самий світ, що й кореневий Viewport. Якби ми налаштували "
-"SubViewport так, щоб він використовував власний світ, то ``MeshA`` була б "
-"прихована у SubViewport, а ``MeshB`` — у кореневому Viewport."
+"У наведеному вище прикладі ``CameraA`` відображатиметься у "
+"кореневому :ref:`class_Viewport` і буде відображати ``MeshA``. ``CameraB`` "
+"буде охоплена :ref:`class_SubViewport` разом із «/``MeshB``. Оскільки "
+"``MeshB`` є частиною ієрархії сцени, вона все одно відображатиметься у "
+"кореневому вікні перегляду. Аналогічно, ``MeshA`` буде видима у SubViewport, "
+"оскільки вона використовує той самий світ, що й кореневий Viewport. Якби ми "
+"налаштували SubViewport так, щоб він використовував власний світ, то "
+"``MeshA`` була б прихована у SubViewport, а ``MeshB`` — у кореневому "
+"Viewport."
 
 #: ../../docs/tutorials/rendering/viewports.rst:85
 msgid ""
@@ -149678,8 +149685,8 @@ msgid ""
 "method can handle a dictionary or an array. If an array is passed, the index "
 "of each element is used as the key."
 msgstr ""
-"Існує також інший спосіб форматування тексту в GDScript, а саме метод "
-":ref:`String.format() <class_String_method_format>`. Він замінює всі "
+"Існує також інший спосіб форматування тексту в GDScript, а саме "
+"метод :ref:`String.format() <class_String_method_format>`. Він замінює всі "
 "входження ключа в рядку відповідним значенням. Метод може обробляти масиви "
 "або словники для пар ключ/значення."
 
@@ -150071,8 +150078,8 @@ msgid ""
 msgstr ""
 "Завантажте та встановіть останню стабільну версію SDK зі сторінки "
 "завантаження `.NET <https://dotnet.microsoft.com/download>`__. Для Godot 4.5 "
-"потрібен .NET 8 або пізнішої версії, але для експорту в Android потрібен "
-".NET 9 або пізнішої версії."
+"потрібен .NET 8 або пізнішої версії, але для експорту в Android "
+"потрібен .NET 9 або пізнішої версії."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:50
 msgid ""
@@ -160045,8 +160052,8 @@ msgid ""
 msgstr ""
 "Якщо ви шукаєте поради щодо написання високоякісної документації, сміливо "
 "звертайтеся до `керівних принципів документації» Godot. <https://"
-"contributing.godotengine.org/en/latest/documentation/guidelines/index.html>"
-"`__."
+"contributing.godotengine.org/en/latest/documentation/guidelines/"
+"index.html>`__."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_docs_system.rst:63
 msgid "Publishing documentation online"
@@ -168943,10 +168950,10 @@ msgid ""
 "disabling :ref:`PROPERTY_USAGE_STORAGE "
 "<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` in GDScript."
 msgstr ""
-"Значення уніформної змінної не зберігається у файлі ресурсу "
-":ref:`class_ShaderMaterial`. Це корисно для уніформних змінних, значення "
-"яких установлюються під час виконання, особливо зі скриптів ``@tool``. У "
-"GDScript це відповідає вимкненню :ref:`PROPERTY_USAGE_STORAGE "
+"Значення уніформної змінної не зберігається у файлі "
+"ресурсу :ref:`class_ShaderMaterial`. Це корисно для уніформних змінних, "
+"значення яких установлюються під час виконання, особливо зі скриптів "
+"``@tool``. У GDScript це відповідає вимкненню :ref:`PROPERTY_USAGE_STORAGE "
 "<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:921
@@ -182418,8 +182425,8 @@ msgid ""
 "You can add input parameters using :button:`Edit Ports` in the :ui:`Group "
 "Input` node:"
 msgstr ""
-"Вхідні параметри можна додати кнопкою :button:`Edit Ports` у вузлі "
-":ui:`Group Input`:"
+"Вхідні параметри можна додати кнопкою :button:`Edit Ports` у "
+"вузлі :ui:`Group Input`:"
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:189
 msgid ""
@@ -182435,8 +182442,8 @@ msgid ""
 "the :ui:`Group Output` node this time. The dialog looks the same as the "
 "dialog used to edit the input ports."
 msgstr ""
-"Повторіть цю дію, цього разу натиснувши :button:`Edit Ports` у вузлі "
-":ui:`Group Output`. Діалогове вікно має такий самий вигляд, як і вікно "
+"Повторіть цю дію, цього разу натиснувши :button:`Edit Ports` у "
+"вузлі :ui:`Group Output`. Діалогове вікно має такий самий вигляд, як і вікно "
 "редагування вхідних портів."
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:198
@@ -186876,9 +186883,9 @@ msgid ""
 msgstr ""
 "Ресурс :ref:`AudioStream <class_AudioStream>`, який відтворюється під час "
 "певної дії, наприклад наведення курсора на кнопку або її натискання. Типово "
-"звуки цієї системи проходять через аудіошину ``Master`` (див. "
-":ref:`аудіошини <doc_audio_buses>`). Це можна змінити параметром проєкту "
-"**Audio > Buses > GUI Theme Bus**."
+"звуки цієї системи проходять через аудіошину ``Master`` "
+"(див. :ref:`аудіошини <doc_audio_buses>`). Це можна змінити параметром "
+"проєкту **Audio > Buses > GUI Theme Bus**."
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:105
 msgid "Theme types"
@@ -189969,8 +189976,8 @@ msgid ""
 "For example, :bbcode:`BBCode [color=green]test[/color]` would render the "
 "word \"test\" with a green color."
 msgstr ""
-"Наприклад, :bbcode:`BBCode [color=green]test[/color]` відобразить слово «test"
-"» зеленим кольором."
+"Наприклад, :bbcode:`BBCode [color=green]test[/color]` відобразить слово "
+"«test» зеленим кольором."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 msgid ""
@@ -190426,8 +190433,8 @@ msgid ""
 "Indents ``{text}`` once. The indentation width is the same as "
 "with :bbcode:`[ul]` or :bbcode:`[ol]`, but without a bullet point."
 msgstr ""
-"Зробити відступ ``{text}`` на один рівень. Ширина відступу така сама, як у "
-":bbcode:`[ul]` або :bbcode:`[ol]`, але без маркерів."
+"Зробити відступ ``{text}`` на один рівень. Ширина відступу така сама, як "
+"у :bbcode:`[ul]` або :bbcode:`[ol]`, але без маркерів."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:324
 msgid ":bbcode:`[indent]{text}[/indent]`"
@@ -190646,9 +190653,9 @@ msgid ""
 "outline_size={size} outline_color={color} margins={left},{top},{right},"
 "{bottom}]{text}[/dropcap]`"
 msgstr ""
-":bbcode:`[dropcap font={font} font_size={size} color={color} outline_size="
-"{size} outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]`"
+":bbcode:`[dropcap font={font} font_size={size} color={color} "
+"outline_size={size} outline_color={color} margins={left},{top},{right},"
+"{bottom}]{text}[/dropcap]`"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "**opentype_features**"
@@ -190989,16 +190996,16 @@ msgid ""
 ":bbcode:`[lrm]` (left-to-right mark), :bbcode:`[rlm]` (right-to-left "
 "mark), :bbcode:`[lre]` (left-to-right embedding),"
 msgstr ""
-":bbcode:`[lrm]` (позначка «зліва направо»), :bbcode:`[rlm]` (позначка «"
-"справа наліво»), :bbcode:`[lre]` (вбудовування «зліва направо»),"
+":bbcode:`[lrm]` (позначка «зліва направо»), :bbcode:`[rlm]` (позначка "
+"«справа наліво»), :bbcode:`[lre]` (вбудовування «зліва направо»),"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid ""
 ":bbcode:`[rle]` (right-to-left embedding), :bbcode:`[lro]` (left-to-right "
 "override), :bbcode:`[rlo]` (right-to-left override),"
 msgstr ""
-":bbcode:`[rle]` (вбудовування «зправа наліво»), :bbcode:`[lro]` (перекриття «"
-"зліва направо»), :bbcode:`[rlo]` (перекриття «зправа наліво»),"
+":bbcode:`[rle]` (вбудовування «зправа наліво»), :bbcode:`[lro]` (перекриття "
+"«зліва направо»), :bbcode:`[rlo]` (перекриття «зправа наліво»),"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid ""
@@ -191302,8 +191309,9 @@ msgid ""
 "URLs in a web browser."
 msgstr ""
 "За замовчуванням теги :bbcode:`[url]` не виконують жодних дій при "
-"натисканні. Це зроблено для того, щоб забезпечити гнучке використання тегів "
-":bbcode:`[url]`, а не обмежувати їх лише відкриттям URL-адрес у веб-браузері."
+"натисканні. Це зроблено для того, щоб забезпечити гнучке використання "
+"тегів :bbcode:`[url]`, а не обмежувати їх лише відкриттям URL-адрес у веб-"
+"браузері."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:596
 msgid ""
@@ -191311,8 +191319,8 @@ msgid ""
 "node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
 "to a script function."
 msgstr ""
-"Щоб обробити кліки на тегах :bbcode:`[url]`, підключіть сигнал "
-":ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` вузла "
+"Щоб обробити кліки на тегах :bbcode:`[url]`, підключіть "
+"сигнал :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` вузла "
 "``RichTextLabel`` до функції скрипта."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:599
@@ -191580,8 +191588,8 @@ msgid ""
 "text and table (``top``, ``center``, ``baseline``, and ``bottom``), which "
 "can be used in any combination."
 msgstr ""
-"Якщо значення вертикального вирівнювання вказано у тегах :bbcode:`[img]` або "
-":bbcode:`[table]`, зображення/таблиця спробують вирівнятися відносно "
+"Якщо значення вертикального вирівнювання вказано у тегах :bbcode:`[img]` "
+"або :bbcode:`[table]`, зображення/таблиця спробують вирівнятися відносно "
 "навколишнього тексту. Вирівнювання здійснюється за допомогою вертикальної "
 "точки зображення та вертикальної точки тексту. На зображенні є 3 можливі "
 "точки (``top``, ``center`` та ``bottom``), а на тексті та в таблиці — 4 "
@@ -191825,11 +191833,11 @@ msgid ""
 "are supported as well."
 msgstr ""
 "Для прозорих кольорів у форматі RGB можна використовувати будь-який 8-"
-"значний шістнадцятковий код RGBA, наприклад: "
-":bbcode:`[color=#ffffff88]translucent white[/color]`. Зверніть увагу, що "
-"канал прозорості є **останньою** складовою коду кольору, а не першою. Також "
-"підтримуються короткі коди кольорів RGBA, такі як ``#6f28`` (еквівалент "
-"``#66ff2288``)."
+"значний шістнадцятковий код RGBA, "
+"наприклад: :bbcode:`[color=#ffffff88]translucent white[/color]`. Зверніть "
+"увагу, що канал прозорості є **останньою** складовою коду кольору, а не "
+"першою. Також підтримуються короткі коди кольорів RGBA, такі як ``#6f28`` "
+"(еквівалент ``#66ff2288``)."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1001
 msgid "Cell options"
@@ -191906,13 +191914,13 @@ msgid ""
 "after the bullet character to increase the spacing between the bullet and "
 "the list item text."
 msgstr ""
-"За замовчуванням тег :bbcode:`[ul]` використовує символ Unicode ``U+2022`` «"
-"Маркер» як маркер. Ця поведінка аналогічна до поведінки веб-браузерів. "
-"Символ маркеру можна налаштувати за допомогою :bbcode:`[ul bullet={bullet}"
-"]`. Якщо цей параметр ``{bullet}`` вказано, він повинен бути рядком без "
-"лапок (наприклад, :bbcode:`[bullet=*]`). Ви можете додати пробіли після "
-"символу маркеру, щоб збільшити відступ між маркером та текстом елемента "
-"списку."
+"За замовчуванням тег :bbcode:`[ul]` використовує символ Unicode ``U+2022`` "
+"«Маркер» як маркер. Ця поведінка аналогічна до поведінки веб-браузерів. "
+"Символ маркеру можна налаштувати за допомогою :bbcode:`[ul "
+"bullet={bullet}]`. Якщо цей параметр ``{bullet}`` вказано, він повинен бути "
+"рядком без лапок (наприклад, :bbcode:`[bullet=*]`). Ви можете додати пробіли "
+"після символу маркеру, щоб збільшити відступ між маркером та текстом "
+"елемента списку."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1067
 msgid ""
@@ -192040,8 +192048,8 @@ msgid ""
 "Wave makes the text go up and down. Its tag format is :bbcode:`[wave "
 "amp=50.0 freq=5.0 connected=1]{text}[/wave]`."
 msgstr ""
-"Функція «Wave» забезпечує вертикальне коливання тексту. Формат тегу: "
-":bbcode:`[wave amp=50.0 freq=5.0 connected=1]{text}[/wave]`."
+"Функція «Wave» забезпечує вертикальне коливання тексту. Формат "
+"тегу: :bbcode:`[wave amp=50.0 freq=5.0 connected=1]{text}[/wave]`."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1127
 msgid ""
@@ -192071,8 +192079,8 @@ msgid ""
 "Tornado makes the text move around in a circle. Its tag format "
 "is :bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
 msgstr ""
-"Функція «Tornado» змушує текст рухатися по колу. Формат тегу: "
-":bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
+"Функція «Tornado» змушує текст рухатися по колу. Формат "
+"тегу: :bbcode:`[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1143
 msgid ""
@@ -192320,12 +192328,12 @@ msgid ""
 "its ``env`` Dictionary. See below for more usage examples."
 msgstr ""
 "Нарешті, ``env`` — це :ref:`class_Dictionary`, що містить параметри, "
-"призначені для певного користувацького ефекту. Ви можете використовувати "
-":ref:`get() <class_Dictionary_method_get>` з опціональним значенням за "
-"замовчуванням, щоб отримати кожен параметр, якщо він вказаний користувачем. "
-"Наприклад, :bbcode:`[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]` "
-"матиме у своєму словнику ``env`` параметри типу float ``spread`` та Color "
-"``color``. Дивіться нижче для інших прикладів використання."
+"призначені для певного користувацького ефекту. Ви можете "
+"використовувати :ref:`get() <class_Dictionary_method_get>` з опціональним "
+"значенням за замовчуванням, щоб отримати кожен параметр, якщо він вказаний "
+"користувачем. Наприклад, :bbcode:`[custom_fx spread=0.5 color=#FFFF00]test[/"
+"custom_fx]` матиме у своєму словнику ``env`` параметри типу float ``spread`` "
+"та Color ``color``. Дивіться нижче для інших прикладів використання."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1248
 msgid ""
@@ -201359,7 +201367,8 @@ msgid "April tag"
 msgstr "Квітневий тег"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1519
-msgid "``april_tag_is_supported``"
+#, fuzzy
+msgid "``is_april_tag_supported``"
 msgstr "``april_tag_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1520
@@ -201371,7 +201380,8 @@ msgid "Aruco"
 msgstr "Аруко"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1522
-msgid "``aruco_is_supported``"
+#, fuzzy
+msgid "``is_aruco_supported``"
 msgstr "``aruco_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1523
@@ -201383,7 +201393,8 @@ msgid "QR code"
 msgstr "QR-код"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1525
-msgid "``qrcode_is_supported``"
+#, fuzzy
+msgid "``is_qrcode_supported``"
 msgstr "``qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1526
@@ -201395,7 +201406,8 @@ msgid "Micro QR code"
 msgstr "Мікро QR-код"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1528
-msgid "``micro_qrcode_is_supported``"
+#, fuzzy
+msgid "``is_micro_qrcode_supported``"
 msgstr "``micro_qrcode_is_supported``"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1529
@@ -201694,8 +201706,8 @@ msgid ""
 "To use the XR mode on visionOS, start by :ref:`setting up XR "
 "<doc_setting_up_xr>`:"
 msgstr ""
-"Щоб скористатися режимом XR у visionOS, спочатку виконайте "
-":ref:`налаштування XR <doc_setting_up_xr>`:"
+"Щоб скористатися режимом XR у visionOS, спочатку "
+"виконайте :ref:`налаштування XR <doc_setting_up_xr>`:"
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:8
 msgid "enable **XR shaders**."
@@ -201715,9 +201727,9 @@ msgid ""
 "other :ref:`class_XRInterface`. In your viewport, enable ``use_xr``, enable "
 "``use_hdr_2d``, and set ``vrs_mode`` to ``Viewport.VRS_XR``."
 msgstr ""
-"Інтерфейс XR visionOS можна ініціалізувати так само, як будь-який інший "
-":ref:`class_XRInterface`. У вашій області перегляду ввімкніть ``use_xr`` і "
-"``use_hdr_2d`` та встановіть ``vrs_mode`` у ``Viewport.VRS_XR``."
+"Інтерфейс XR visionOS можна ініціалізувати так само, як будь-який "
+"інший :ref:`class_XRInterface`. У вашій області перегляду ввімкніть "
+"``use_xr`` і ``use_hdr_2d`` та встановіть ``vrs_mode`` у ``Viewport.VRS_XR``."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:27
 msgid "Hand and controller tracking"
@@ -201742,8 +201754,9 @@ msgid ""
 "and :ref:`class_XRHandModifier3D`."
 msgstr ""
 "Для відстеження контролерів і рук використовуються ті самі вузли Godot, що й "
-"для інших інтерфейсів XR: :ref:`class_XRController3D`, "
-":ref:`class_XRHandTracker` і :ref:`class_XRHandModifier3D`."
+"для інших інтерфейсів "
+"XR: :ref:`class_XRController3D`, :ref:`class_XRHandTracker` "
+"і :ref:`class_XRHandModifier3D`."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:39
 msgid "Transparent background"
@@ -201869,10 +201882,10 @@ msgid ""
 "sure that at least one layer is writing depth, to avoid having :ref:`the "
 "content be discarded <doc_visionos_sky_depth_write>`."
 msgstr ""
-"Для прозорих об'єктів поверх тла реального оточення (наприклад частинок або "
-":ref:`світіння <doc_environment_and_post_processing_glow>`) переконайтеся, "
-"що принаймні один шар записує дані глибини, щоб уникнути :ref:`відкидання "
-"вмісту <doc_visionos_sky_depth_write>`."
+"Для прозорих об'єктів поверх тла реального оточення (наприклад частинок "
+"або :ref:`світіння <doc_environment_and_post_processing_glow>`) "
+"переконайтеся, що принаймні один шар записує дані глибини, щоб "
+"уникнути :ref:`відкидання вмісту <doc_visionos_sky_depth_write>`."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:97
 msgid "Block-shaped artifacts around edges"
@@ -201979,8 +201992,9 @@ msgid ""
 "plane of the :ref:`class_XRCamera3D` to be at least 0.1 meters."
 msgstr ""
 "visionOS (а точніше, `CompositorServices <https://developer.apple.com/"
-"documentation/compositorservices>`_) вимагає, щоб ближня площина відсікання "
-":ref:`class_XRCamera3D` була розташована не ближче ніж за 0,1 метра."
+"documentation/compositorservices>`_) вимагає, щоб ближня площина "
+"відсікання :ref:`class_XRCamera3D` була розташована не ближче ніж за 0,1 "
+"метра."
 
 #: ../../docs/tutorials/xr/visionos_intro.rst:162
 msgid "If you use a value below 0.1, the scene won't render. To solve this:"
@@ -205433,8 +205447,9 @@ msgid ""
 msgstr ""
 "Метою цієї сторінки є документування рішень щодо дизайну, прийнятих з метою "
 "найкращого відповідності `філософії дизайну Godot <https://"
-"contributing.godotengine.org/en/latest/engine/guidelines/best_practices.html>"
-"`__, а також надання відправної точки для нових учасників процесу рендерингу."
+"contributing.godotengine.org/en/latest/engine/guidelines/"
+"best_practices.html>`__, а також надання відправної точки для нових "
+"учасників процесу рендерингу."
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:13
 msgid ""
@@ -208972,9 +208987,10 @@ msgid "If no errors are printed and everything goes well, you're done!"
 msgstr "Якщо помилки не друкуються і все йде добре, готово!"
 
 #: ../../docs/engine_details/architecture/unit_testing.rst:435
+#, fuzzy
 msgid ""
 "Make sure the output does have the expected values before submitting a pull "
-"request. If ``--gdscript-generate-tests`` produces ``*.out`` files which are "
+"request. If ``gdscript-generate-tests`` produces ``*.out`` files which are "
 "unrelated to newly added tests, you should revert those files back and only "
 "commit ``*.out`` files for new tests."
 msgstr ""
@@ -214207,12 +214223,18 @@ msgstr ""
 "піктограму Виконати <https://developer.android.com/studio/run/"
 "rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:59
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:117
+#, fuzzy
+msgid "Build with the terminal using the following command:"
+msgstr "Виконайте таку команду:"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
 msgid "To debug the ``editor`` module:"
 msgstr "Щоб налагодити модуль ``редактор``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:61
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:126
 msgid ""
 "Open the **Build Variants** window using **View > Tools Windows > Build "
 "Variants** from the top menu."
@@ -214220,7 +214242,7 @@ msgstr ""
 "Відкрийте вікно **Варіанти збірки** за допомогою **Перегляд > Вікна "
 "інструментів > Варіанти збірки** у верхньому меню."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:62
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:71
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:editor`` entry is set to one of the **Debug** "
@@ -214229,8 +214251,8 @@ msgstr ""
 "У вікні **Варіанти збірки** переконайтеся, що в стовпці **Активний варіант "
 "збірки** для запису ``:editor`` вибрано один із варіантів **Debug**."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:68
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:77
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:133
 msgid ""
 "Open the **Run/Debug Configurations** window by clicking on **Run > Edit "
 "Configurations...** on the top menu."
@@ -214238,7 +214260,7 @@ msgstr ""
 "Відкрийте вікно **Запуск/налагодження конфігурацій**, натиснувши **Виконати "
 "> Редагувати конфігурації...** у верхньому меню."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:69
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:78
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``editor`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -214248,7 +214270,7 @@ msgstr ""
 "в розділі **Налагоджувач** переконайтеся, що для **Типу налагодження** "
 "встановлено значення ``Подвійний (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:70
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/tools/debug`` directory."
@@ -214256,7 +214278,7 @@ msgstr ""
 "Натисніть на знак ``+`` у розділі **Каталоги символів** і додайте каталог "
 "``platform/android/java/lib/libs/tools/debug``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:76
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:85
 msgid ""
 "Select **Run > Debug 'editor'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -214265,32 +214287,79 @@ msgstr ""
 "`натисніть піктограму налагодження <https://developer.android.com/studio/run/"
 "rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:79
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
 msgid "Building & debugging the app module"
 msgstr "Створення та налагодження модуля програми"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:81
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:90
 msgid ""
-"The ``app`` module requires the presence of a Godot project in its "
-"``assets`` directory (``<Godot root directory>/platform/android/java/app/src/"
-"main/assets``) to run. This is usually handled by the Godot Editor during "
-"the export process. While developing in Android Studio, it's necessary to "
-"manually add a Godot project under that directory to replicate the export "
-"process. Once that's done, you can follow the instructions below to run/"
-"debug the ``app`` module:"
+"The ``app`` module is an empty shell which is filled by the Godot Editor "
+"during the export process. As such for development, the ``app`` module "
+"requires the presence of a manually exported Godot project to run."
 msgstr ""
-"Для роботи модуля ``app`` потрібна наявність проекту Godot у його каталозі "
-"``assets`` (``<кореневий каталог Godot>/platform/android/java/app/src/main/"
-"assets``). Зазвичай це обробляється редактором Godot під час процесу "
-"експорту. Під час розробки в Android Studio необхідно вручну додати проект "
-"Godot у цей каталог, щоб відтворити процес експорту. Після цього ви можете "
-"виконати наведені нижче інструкції для запуску/налагодження модуля ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:86
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:93
+msgid ""
+"Follow these steps to configure and manually export a Godot project to use "
+"with the ``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:95
+#, fuzzy
+msgid ""
+"Within the Godot Editor export window, create a new Android export preset."
+msgstr ""
+"У вікні експорту редактора Godot створіть нову пресет для експорту на Android"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+#, fuzzy
+msgid ""
+"Enable :ui:`Gradle Build > Use Gradle Build` in the Android export preset."
+msgstr ""
+"Улаштування експорту для Android увімкніть опцію ``Gradle Build > Use Gradle "
+"Build``"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:97
+#, fuzzy
+msgid "Set the :ui:`Gradle Build > Export Format` to :ui:`Export AAR`."
+msgstr ""
+"Встановіть для параметра ``Gradle Build > Export Format`` значення ``Export "
+"AAR``"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:98
+msgid ""
+"Set the :ui:`Export Path` for the generated ``AAR`` to ``<Godot root "
+"directory>/platform/android/java/app/libs/exportedProjectAAR/``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+msgid "Make sure :ui:`Package > Show in App Library` is enabled."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:100
+#, fuzzy
+msgid "Configure any other export options that makes sense for the project."
+msgstr ""
+"Налаштуйте будь-які інші параметри експорту, які є доцільними для вашого "
+"проєкту, а потім закрийте вікно експорту"
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:101
+msgid ""
+"Click on :button:`Export Project...`, and export the project to the "
+"specified ``Export Path``."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:103
+msgid ""
+"Now that's done, you can follow the instructions below to run/debug the "
+"``app`` module:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:105
 msgid "To build the ``app`` module:"
 msgstr "Щоб створити модуль ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:88
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
 msgid ""
 "Select the `Run/Debug Configurations drop down <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_ and select "
@@ -214300,7 +214369,7 @@ msgstr ""
 "developer.android.com/studio/run/rundebugconfig#running>`_ та виберіть "
 "``app``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:94
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
 msgid ""
 "Select **Run > Run 'app'** from the top menu or `click the Run icon <https://"
 "developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -214309,11 +214378,11 @@ msgstr ""
 "значок запуску <https://developer.android.com/studio/run/"
 "rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:96
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:124
 msgid "To debug the ``app`` module:"
 msgstr "Щоб налагодити модуль ``app``:"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:99
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:127
 msgid ""
 "In the **Build Variants** window, make sure that in the **Active Build "
 "Variant** column, the ``:app`` entry is set to one of the **Debug** variants."
@@ -214321,7 +214390,7 @@ msgstr ""
 "У вікні **Варіанти збірки** переконайтеся, що в стовпці **Активний варіант "
 "збірки** для запису ``:app`` вибрано один із варіантів **Debug**."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:106
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:134
 msgid ""
 "In the **Run/Debug Configurations** window, select the ``app`` entry, and "
 "under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + "
@@ -214331,7 +214400,7 @@ msgstr ""
 "в розділі **Налагоджувач** переконайтеся, що для **Типу налагодження** "
 "встановлено значення ``Подвійний (Java + Native)``"
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:107
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:135
 msgid ""
 "Click the ``+`` sign under the **Symbol Directories** section, and add the "
 "``platform/android/java/lib/libs/debug`` directory."
@@ -214339,7 +214408,7 @@ msgstr ""
 "Натисніть на знак ``+`` у розділі **Каталоги символів** і додайте каталог "
 "``platform/android/java/lib/libs/debug``."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:113
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:141
 msgid ""
 "Select **Run > Debug 'app'** from the top menu or `click the Debug icon "
 "<https://developer.android.com/studio/run/rundebugconfig#running>`_."
@@ -214348,7 +214417,7 @@ msgstr ""
 "піктограму налагодження <https://developer.android.com/studio/run/"
 "rundebugconfig#running>`_."
 
-#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:116
+#: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:144
 msgid ""
 "If you run into any issues, ask for help in `Godot's Android dev channel "
 "<https://chat.godotengine.org/channel/android>`__."
@@ -214855,11 +214924,12 @@ msgid ""
 msgstr ""
 "Перед редагуванням будь-яких файлів пам'ятайте, що весь код повинен "
 "відповідати `рекомендаціям щодо стилю коду <https://"
-"contributing.godotengine.org/en/latest/engine/guidelines/code_style.html>"
-"`__. Однією з важливих відмінностей Godot є використання табуляції для "
-"відступів. Тому основним налаштуванням редактора за замовчуванням, яке "
-"потрібно змінити в Code::Blocks, є увімкнення табуляції для відступів. Це "
-"налаштування можна знайти, вибравши **Налаштування > Редактор**."
+"contributing.godotengine.org/en/latest/engine/guidelines/"
+"code_style.html>`__. Однією з важливих відмінностей Godot є використання "
+"табуляції для відступів. Тому основним налаштуванням редактора за "
+"замовчуванням, яке потрібно змінити в Code::Blocks, є увімкнення табуляції "
+"для відступів. Це налаштування можна знайти, вибравши **Налаштування > "
+"Редактор**."
 
 #: ../../docs/engine_details/development/configuring_an_ide/code_blocks.rst:123
 msgid ""
@@ -215162,8 +215232,8 @@ msgid ""
 "cpp_usage_guidelines.html>`__ and the IDE should help them follow it."
 msgstr ""
 "Розробники повинні дотримуватися стилю коду проекту `<https://"
-"contributing.godotengine.org/en/latest/engine/guidelines/code_style.html>"
-"`__, а IDE має допомагати їм у цьому."
+"contributing.godotengine.org/en/latest/engine/guidelines/"
+"code_style.html>`__, а IDE має допомагати їм у цьому."
 
 #: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:97
 msgid "Open **Preferences > C++ > Code Style**."
@@ -219329,8 +219399,8 @@ msgid ""
 "before attempting to build a custom export template."
 msgstr ""
 "Крім того, перед тим, як приступити до створення власного шаблону експорту, "
-"вам все одно потрібно виконати кроки, описані в посібнику "
-":ref:`doc_exporting_for_android_manual_android_build_setup`."
+"вам все одно потрібно виконати кроки, описані в "
+"посібнику :ref:`doc_exporting_for_android_manual_android_build_setup`."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:27
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
